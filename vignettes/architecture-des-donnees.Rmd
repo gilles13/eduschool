@@ -2,7 +2,7 @@
 title: "Architecture des données"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{title}
+  %\VignetteIndexEntry{Architecture des données}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

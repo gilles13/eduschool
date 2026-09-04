@@ -12,7 +12,7 @@ test_that("le catalogue des diagrammes est cohérent", {
   )
 
   expect_true(all(attendus %in% x$diagramme_id))
-  expect_false(anyDuplicated(x$diagramme_id))
+  expect_false(anyDuplicated(x$diagramme_id) > 0L)
 })
 
 test_that("les diagrammes SVG sont autonomes", {

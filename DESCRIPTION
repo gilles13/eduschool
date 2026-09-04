@@ -1,14 +1,14 @@
 Package: eduschool
 Type: Package
 Title: Référentiels scolaires français et outils de révision
-Version: 0.10.2
+Version: 0.10.3
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
 Description: Fournit des référentiels structurés sur les programmes scolaires
     français, une base documentaire pédagogique et des outils simples pour
     générer des exercices et des fiches de révision. Les données sont stockées
     sous forme de fichiers CSV et Markdown installés avec le package. DuckDB
     peut être utilisé comme moteur relationnel sans être requis pour les
-    consultations simples. Un complément à https://eduscol.education.gouv.fr
+    consultations simples. Un complément à https://eduscol.education.gouv.fr.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
@@ -23,3 +23,4 @@ Suggests:
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 URL: https://gilles13.github.io/eduschool/
+Config/roxygen2/version: 8.1.0

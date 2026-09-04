@@ -2,7 +2,7 @@
 title: "Prise en main de eduschool"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{title}
+  %\VignetteIndexEntry{Prise en main de eduschool}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

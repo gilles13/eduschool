@@ -1,6 +1,6 @@
 test_that("les notions et documents sont cohérents", {
   n = notions()
-  expect_false(anyDuplicated(n$notion_id))
+  expect_false(anyDuplicated(n$notion_id) > 0L)
   expect_true(all(vapply(n$notion_id, function(id) file.exists(eduschool::eduschool_path("documentation", n$document[n$notion_id == id][1])), logical(1))))
 })
 

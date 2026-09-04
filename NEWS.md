@@ -1,3 +1,12 @@
+# eduschool 0.10.3
+
+## Ergonomie des sorties
+
+- Ajout de l'ouverture optionnelle des fichiers générés avec `ouvrir = TRUE`.
+- Prise en charge de Linux, macOS et Windows avec l'application associée au type de fichier.
+- Harmonisation du comportement des sorties PDF, HTML et SVG.
+- Amélioration du diagnostic lorsque l'environnement LaTeX est incomplet.
+
 # eduschool 0.10.2
 
 ## Documentation visuelle

@@ -2,7 +2,7 @@
 title: "Documentation pédagogique"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{title}
+  %\VignetteIndexEntry{Documentation pédagogique}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

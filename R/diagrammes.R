@@ -26,24 +26,24 @@ diagrammes_disponibles = function() {
       "documentation", "documentation", "package", "package"
     ),
     titre = c(
-      "Parcours scolaires modélisés dans eduschool",
+      "Parcours scolaires mod\u00e9lis\u00e9s dans eduschool",
       "Prise en main de eduschool",
-      "Programmes, capacités et notions",
-      "Architecture du système d'information eduschool",
-      "Chaîne de documentation pédagogique",
-      "Exercices et fiches de révision",
-      "Chaîne de contrôle et de test du package",
-      "Développement et publication"
+      "Programmes, capacit\u00e9s et notions",
+      "Architecture du syst\u00e8me d'information eduschool",
+      "Cha\u00eene de documentation p\u00e9dagogique",
+      "Exercices et fiches de r\u00e9vision",
+      "Cha\u00eene de contr\u00f4le et de test du package",
+      "D\u00e9veloppement et publication"
     ),
     description = c(
-      "Collège, seconde générale et technologique, voie générale et séries technologiques.",
-      "Chemin court entre les référentiels, la consultation, les rappels, les exercices et DuckDB.",
-      "Relations entre programmes, capacités, notions, rappels et exercices.",
-      "Relations entre référentiels CSV, API R, DuckDB, documentation, exercices et sorties.",
-      "Séparation entre sources officielles, capacités, notions, prérequis et rappels pédagogiques.",
-      "Du choix d'une capacité à la génération déterministe d'exercices et de rapports.",
-      "Contrôles des données, tests unitaires, construction du package et documentation.",
-      "Cycle de travail depuis une modification jusqu'au commit et à la publication pkgdown."
+      "Coll\u00e8ge, seconde g\u00e9n\u00e9rale et technologique, voie g\u00e9n\u00e9rale et s\u00e9ries technologiques.",
+      "Chemin court entre les r\u00e9f\u00e9rentiels, la consultation, les rappels, les exercices et DuckDB.",
+      "Relations entre programmes, capacit\u00e9s, notions, rappels et exercices.",
+      "Relations entre r\u00e9f\u00e9rentiels CSV, API R, DuckDB, documentation, exercices et sorties.",
+      "S\u00e9paration entre sources officielles, capacit\u00e9s, notions, pr\u00e9requis et rappels p\u00e9dagogiques.",
+      "Du choix d'une capacit\u00e9 \u00e0 la g\u00e9n\u00e9ration d\u00e9terministe d'exercices et de rapports.",
+      "Contr\u00f4les des donn\u00e9es, tests unitaires, construction du package et documentation.",
+      "Cycle de travail depuis une modification jusqu'au commit et \u00e0 la publication pkgdown."
     ),
     stringsAsFactors = FALSE
   )
@@ -58,9 +58,14 @@ diagrammes_disponibles = function() {
 #' @param type Identifiant du diagramme. Voir [diagrammes_disponibles()].
 #' @param fichier Chemin du fichier SVG à produire. Si `NULL`, le fichier est
 #'   créé sous `rapports/sorties/diagrammes/` dans le répertoire de travail.
+#' @param ouvrir Ouvrir le fichier avec l'application associée après sa création.
 #' @return Invisiblement, le chemin absolu du fichier SVG produit.
 #' @export
-produire_diagramme_svg = function(type = "parcours_scolaire", fichier = NULL) {
+produire_diagramme_svg = function(
+  type = "parcours_scolaire",
+  fichier = NULL,
+  ouvrir = FALSE
+) {
   .verifier_type_diagramme(type)
 
   if (is.null(fichier)) {
@@ -72,7 +77,9 @@ produire_diagramme_svg = function(type = "parcours_scolaire", fichier = NULL) {
   graphe = .construire_diagramme(type)
   .ecrire_svg(graphe, fichier)
 
-  invisible(normalizePath(fichier, winslash = "/", mustWork = TRUE))
+  fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
+  if (isTRUE(ouvrir)) .ouvrir_fichier(fichier)
+  invisible(fichier)
 }
 
 #' Produire un diagramme HTML
@@ -83,7 +90,7 @@ produire_diagramme_svg = function(type = "parcours_scolaire", fichier = NULL) {
 #' @param type Identifiant du diagramme. Voir [diagrammes_disponibles()].
 #' @param fichier Chemin du fichier HTML à produire. Si `NULL`, le fichier est
 #'   créé sous `rapports/sorties/diagrammes/` dans le répertoire de travail.
-#' @param ouvrir Ouvrir le fichier dans le navigateur après sa création.
+#' @param ouvrir Ouvrir le fichier avec l'application associée après sa création.
 #' @return Invisiblement, le chemin absolu du fichier HTML produit.
 #' @export
 produire_diagramme_html = function(
@@ -105,7 +112,7 @@ produire_diagramme_html = function(
   .ecrire_page_svg(graphe = graphe, svg = svg, fichier = fichier, logo = logo)
 
   fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
-  if (isTRUE(ouvrir)) utils::browseURL(fichier)
+  if (isTRUE(ouvrir)) .ouvrir_fichier(fichier)
   invisible(fichier)
 }
 
@@ -240,7 +247,7 @@ generer_documentation_visuelle = function(
     exercices_revisions = .graphe_exercices_revisions(),
     tests_package = .graphe_tests_package(),
     developpement = .graphe_developpement(),
-    stop("Diagramme non implémenté : ", type, call. = FALSE)
+    stop("Diagramme non impl\u00e9ment\u00e9 : ", type, call. = FALSE)
   )
 }
 
@@ -318,7 +325,7 @@ generer_documentation_visuelle = function(
     label = c(
       lib("6E"), lib("5E"), lib("4E"), lib("3E"),
       paste(strwrap(lib("2GT"), width = 24), collapse = "\n"),
-      "Voie générale", lib("1G"), lib("TG"), "Voie technologique"
+      "Voie g\u00e9n\u00e9rale", lib("1G"), lib("TG"), "Voie technologique"
     ),
     x = c(50, 300, 520, 740, 970, 1230, 1460, 1690, 1230),
     y = c(280, 280, 280, 280, 280, 130, 130, 130, 430),
@@ -342,7 +349,7 @@ generer_documentation_visuelle = function(
       seq_len(n),
       function(j) {
         lignes = strwrap(techno$libelle[[j]], width = 24)
-        paste(c(techno$serie_id[[j]], lignes, "Première → Terminale"), collapse = "\n")
+        paste(c(techno$serie_id[[j]], lignes, "Premi\u00e8re \u2192 Terminale"), collapse = "\n")
       },
       character(1)
     )
@@ -357,9 +364,9 @@ generer_documentation_visuelle = function(
   groups = .groupes(
     id = c("C3", "C4", "CYCLE_TERMINAL"),
     label = c(
-      lib_cycle("C3", "Cycle 3 – cycle de consolidation"),
-      lib_cycle("C4", "Cycle 4 – cycle des approfondissements"),
-      lib_cycle("CYCLE_TERMINAL", "Cycle terminal du lycée")
+      lib_cycle("C3", "Cycle 3 \u2013 cycle de consolidation"),
+      lib_cycle("C4", "Cycle 4 \u2013 cycle des approfondissements"),
+      lib_cycle("CYCLE_TERMINAL", "Cycle terminal du lyc\u00e9e")
     ),
     x = c(25, 275, 1200),
     y = c(210, 210, 55),
@@ -375,12 +382,12 @@ generer_documentation_visuelle = function(
     nodes = nodes,
     edges = edges,
     note = paste(
-      "La sixième appartient au cycle 3 ; la cinquième, la quatrième et",
-      "la troisième au cycle 4. Le cycle terminal regroupe les classes de",
-      "première et terminale des voies générale et technologique. La seconde",
-      "générale et technologique est représentée entre le collège et le cycle",
-      "terminal. Le schéma reflète le périmètre actuellement modélisé dans",
-      "eduschool et ne décrit pas encore toutes les voies possibles."
+      "La sixi\u00e8me appartient au cycle 3 ; la cinqui\u00e8me, la quatri\u00e8me et",
+      "la troisi\u00e8me au cycle 4. Le cycle terminal regroupe les classes de",
+      "premi\u00e8re et terminale des voies g\u00e9n\u00e9rale et technologique. La seconde",
+      "g\u00e9n\u00e9rale et technologique est repr\u00e9sent\u00e9e entre le coll\u00e8ge et le cycle",
+      "terminal. Le sch\u00e9ma refl\u00e8te le p\u00e9rim\u00e8tre actuellement mod\u00e9lis\u00e9 dans",
+      "eduschool et ne d\u00e9crit pas encore toutes les voies possibles."
     )
   )
   graphe$groups = groups
@@ -391,8 +398,8 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("PKG", "REF", "CONS", "DOC", "EXO", "DB", "SORTIE"),
     c(
-      "library(eduschool)", "Référentiels\nCSV", "Consultation\ndes programmes",
-      "Rappels et\nnotions", "Exercices\ndéterministes", "DuckDB\nsi nécessaire",
+      "library(eduschool)", "R\u00e9f\u00e9rentiels\nCSV", "Consultation\ndes programmes",
+      "Rappels et\nnotions", "Exercices\nd\u00e9terministes", "DuckDB\nsi n\u00e9cessaire",
       "Fiches, rapports\net analyses"
     ),
     c(40, 300, 600, 600, 900, 600, 1220),
@@ -411,8 +418,8 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("PROG", "ITEM", "CAP", "NOT", "RAP", "PRE", "EXO"),
     c(
-      "Programmes", "Éléments de\nprogramme", "Capacités", "Notions",
-      "Rappels Markdown", "Prérequis", "Modèles\nd'exercices"
+      "Programmes", "\u00c9l\u00e9ments de\nprogramme", "Capacit\u00e9s", "Notions",
+      "Rappels Markdown", "Pr\u00e9requis", "Mod\u00e8les\nd'exercices"
     ),
     c(40, 290, 540, 800, 1060, 800, 1320),
     c(220, 220, 220, 220, 100, 350, 220),
@@ -430,9 +437,9 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("CSV", "PROG", "DOC", "EXO", "DB", "API", "CONS", "REV", "GEN", "DIA", "OUT"),
     c(
-      "Référentiels CSV", "Programmes et\ncapacités", "Documentation\nMarkdown",
-      "Modèles\nd'exercices", "DuckDB\noptionnel", "API R\neduschool",
-      "Consultation", "Fiches de\nrévision", "Génération\nd'exercices",
+      "R\u00e9f\u00e9rentiels CSV", "Programmes et\ncapacit\u00e9s", "Documentation\nMarkdown",
+      "Mod\u00e8les\nd'exercices", "DuckDB\noptionnel", "API R\neduschool",
+      "Consultation", "Fiches de\nr\u00e9vision", "G\u00e9n\u00e9ration\nd'exercices",
       "Diagrammes\nHTML / SVG", "Sorties\nutilisateur"
     ),
     c(40, 40, 40, 40, 340, 650, 970, 970, 970, 970, 1280),
@@ -452,8 +459,8 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("OFF", "CAP", "NOT", "PRE", "RAP", "EXO", "FICHE"),
     c(
-      "Sources et\nprogrammes officiels", "Capacités", "Notions\npédagogiques",
-      "Prérequis", "Rappels\nMarkdown", "Modèles\nd'exercices", "Révision\nutilisateur"
+      "Sources et\nprogrammes officiels", "Capacit\u00e9s", "Notions\np\u00e9dagogiques",
+      "Pr\u00e9requis", "Rappels\nMarkdown", "Mod\u00e8les\nd'exercices", "R\u00e9vision\nutilisateur"
     ),
     c(40, 330, 600, 900, 900, 1190, 1480),
     c(220, 220, 220, 90, 350, 220, 220),
@@ -471,7 +478,7 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("NIV", "CAP", "MOD", "GEN", "SEED", "FICHE", "RAP"),
     c(
-      "Niveau", "Capacité", "Modèle\nd'exercice", "Moteur de\ngénération",
+      "Niveau", "Capacit\u00e9", "Mod\u00e8le\nd'exercice", "Moteur de\ng\u00e9n\u00e9ration",
       "seed\nreproductible", "Fiche\nd'exercices", "Rapport HTML / PDF"
     ),
     c(40, 290, 540, 820, 820, 1110, 1390),
@@ -489,7 +496,7 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("MOD", "LOAD", "DATA", "TEST", "CHECK", "DOC", "COMMIT"),
     c(
-      "Modification", "devtools::load_all()", "Contrôles de\ncohérence",
+      "Modification", "devtools::load_all()", "Contr\u00f4les de\ncoh\u00e9rence",
       "devtools::test()", "devtools::check()", "pkgdown::build_site()",
       "Commit / push"
     ),
@@ -506,7 +513,7 @@ generer_documentation_visuelle = function(
   nodes = .noeuds(
     c("BR", "PATCH", "LOAD", "TEST", "CHECK", "SVG", "PKG", "COMMIT", "MERGE"),
     c(
-      "Branche de\nfonctionnalité", "Patch / modification", "load_all()", "Tests",
+      "Branche de\nfonctionnalit\u00e9", "Patch / modification", "load_all()", "Tests",
       "R CMD check", "SVG et\nvignettes", "pkgdown", "Commit / push", "Fusion master"
     ),
     c(40, 300, 560, 820, 1080, 1080, 1340, 1600, 1860),
