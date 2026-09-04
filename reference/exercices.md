@@ -1,21 +1,48 @@
-# Générer des exercices
+# Generer un exercice
 
-Génère des exercices mathématiques reproductibles à partir du catalogue
-du package.
+Generer un exercice
 
 ## Usage
 
 ``` r
-generer_exercice(modele_id, niveau_id, capacite_id = NA_character_, difficulte = 1, seed = NULL)
-generer_lot_exercices(modele_id, niveau_id, n = 10, capacite_id = NA_character_, difficulte = 1, seed = 1)
-generer_fiche(niveau_id, capacite_id = NULL, n = 10, difficulte = 1, seed = 1)
+generer_exercice(
+  modele_id, niveau_id, capacite_id = NA_character_,
+  difficulte = 1, seed = NULL, afficher = FALSE
+)
+generer_lot_exercices(
+  modele_id, niveau_id, n = 10, capacite_id = NA_character_,
+  difficulte = 1, seed = 1, afficher = FALSE
+)
+generer_fiche(
+  niveau_id, capacite_id = NULL, n = 10,
+  difficulte = 1, seed = 1, afficher = FALSE
+)
+
+generer_lot_exercices(
+  modele_id,
+  niveau_id,
+  n = 10,
+  capacite_id = NA_character_,
+  difficulte = 1,
+  seed = 1,
+  afficher = FALSE
+)
+
+generer_fiche(
+  niveau_id,
+  capacite_id = NULL,
+  n = 10,
+  difficulte = 1,
+  seed = 1,
+  afficher = FALSE
+)
 ```
 
 ## Arguments
 
 - modele_id:
 
-  Identifiant du modèle d'exercice.
+  Identifiant du modele d'exercice.
 
 - niveau_id:
 
@@ -23,15 +50,19 @@ generer_fiche(niveau_id, capacite_id = NULL, n = 10, difficulte = 1, seed = 1)
 
 - capacite_id:
 
-  Identifiant de capacité facultatif.
+  Identifiant de capacite facultatif.
 
 - difficulte:
 
-  Niveau de difficulté.
+  Niveau de difficulte.
 
 - seed:
 
-  Graine aléatoire pour rendre la génération reproductible.
+  Graine aleatoire pour rendre la generation reproductible.
+
+- afficher:
+
+  Afficher directement l'enonce genere.
 
 - n:
 
@@ -39,4 +70,4 @@ generer_fiche(niveau_id, capacite_id = NULL, n = 10, difficulte = 1, seed = 1)
 
 ## Value
 
-Un exercice sous forme de liste ou une liste d'exercices.
+Un exercice ou une liste d'exercices.

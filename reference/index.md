@@ -25,7 +25,7 @@
 - [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
-  : Générer des exercices
+  : Generer un exercice
 - [`genere_resume()`](https://gilles13.github.io/eduschool/reference/genere_resume.md)
   : Generer un resume pedagogique lisible
 - [`generer_diagrammes_documentation()`](https://gilles13.github.io/eduschool/reference/generer_diagrammes_documentation.md)

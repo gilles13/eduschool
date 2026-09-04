@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.7</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,22 +54,20 @@
 
     
     
-<p>Cette vignette utilise la <strong>sixième</strong> comme fil
-conducteur pour montrer comment interroger <code>eduschool</code>. Les
-mêmes fonctions sont conçues pour les autres niveaux à mesure que leur
-couverture documentaire est enrichie.</p>
+<p>Cette vignette montre quelques usages simples
+d’<code>eduschool</code> en prenant la <strong>sixième</strong> comme
+exemple.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
-<h2 id="la-carte-didentité-pédagogique-de-la-6e">La carte d’identité pédagogique de la 6e<a class="anchor" aria-label="anchor" href="#la-carte-didentit%C3%A9-p%C3%A9dagogique-de-la-6e"></a>
+<h2 id="résumer-une-classe">Résumer une classe<a class="anchor" aria-label="anchor" href="#r%C3%A9sumer-une-classe"></a>
 </h2>
-<p>La fonction <code><a href="../reference/genere_resume.html">genere_resume()</a></code> fournit une vue
-volontairement courte : matière, horaire, grands thèmes et notions
-essentielles. Elle est conçue pour être lue directement dans une
-vignette ou dans le site pkgdown.</p>
+<p>La fonction <code><a href="../reference/genere_resume.html">genere_resume()</a></code> donne directement les
+informations les plus utiles : les matières, les horaires, les grands
+thèmes et quelques notions essentielles.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">r</span> <span class="op">=</span> <span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
-<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">r</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
 <col width="10%">
@@ -164,14 +162,9 @@ Terre et environnement</td>
 </tr>
 </tbody>
 </table>
-<p>Cette synthèse est construite à partir des CSV du package : elle
-n’est pas un tableau écrit spécialement pour cette vignette. Les
-fonctions plus techniques comme <code><a href="../reference/resume_niveau.html">resume_niveau()</a></code>,
-<code><a href="../reference/themes_niveau.html">themes_niveau()</a></code> et <code><a href="../reference/notions_niveau.html">notions_niveau()</a></code> restent
-disponibles lorsque l’on souhaite explorer les données en détail.</p>
-<p>On peut aussi se concentrer immédiatement sur une matière :</p>
+<p>On peut limiter immédiatement la synthèse à une matière :</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span>, matiere <span class="op">=</span> <span class="st">"MAT"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span>, matiere <span class="op">=</span> <span class="st">"maths"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
@@ -199,11 +192,15 @@ quantité ; Pourcentages ; Premiers raisonnements algébriques ; …</td>
 </table>
 </div>
 <div class="section level2">
-<h2 id="les-horaires">Les horaires<a class="anchor" aria-label="anchor" href="#les-horaires"></a>
+<h2 id="explorer-sans-afficher-des-tableaux-trop-longs">Explorer sans afficher des tableaux trop longs<a class="anchor" aria-label="anchor" href="#explorer-sans-afficher-des-tableaux-trop-longs"></a>
 </h2>
+<p>Les fonctions détaillées restent disponibles. Dans une vignette, il
+est souvent plus lisible de n’en montrer qu’un aperçu.</p>
+<p>Par exemple, les premières lignes des horaires :</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">h</span> <span class="op">=</span> <span class="fu"><a href="../reference/horaires_niveau.html">horaires_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
-<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">h</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"libelle"</span>, <span class="st">"volume"</span>, <span class="st">"unite"</span><span class="op">)</span><span class="op">]</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/horaires_niveau.html">horaires_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"libelle"</span>, <span class="st">"volume"</span>, <span class="st">"unite"</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
 <col width="71%">
@@ -247,30 +244,14 @@ civique</td>
 <td align="left">4.0</td>
 <td align="left">HEURE_SEMAINE</td>
 </tr>
-<tr class="odd">
-<td align="left">Mathématiques</td>
-<td align="left">4.5</td>
-<td align="left">HEURE_SEMAINE</td>
-</tr>
-<tr class="even">
-<td align="left">SVT et physique-chimie</td>
-<td align="left">3.0</td>
-<td align="left">HEURE_SEMAINE</td>
-</tr>
 </tbody>
 </table>
-</div>
-<div class="section level2">
-<h2 id="les-grands-thèmes-étudiés">Les grands thèmes étudiés<a class="anchor" aria-label="anchor" href="#les-grands-th%C3%A8mes-%C3%A9tudi%C3%A9s"></a>
-</h2>
+<p>Ou quelques thèmes du programme :</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">t</span> <span class="op">=</span> <span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
-<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">t</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">8</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
-<colgroup>
-<col width="13%">
-<col width="86%">
-</colgroup>
 <thead><tr class="header">
 <th align="left">discipline_id</th>
 <th align="left">libelle</th>
@@ -308,479 +289,149 @@ civique</td>
 <td align="left">MAT</td>
 <td align="left">Nombres entiers et décimaux</td>
 </tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Fractions et pourcentages</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Premiers raisonnements algébriques</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Longueurs et périmètres</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Aires</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Volumes</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Horaires et durées</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Configurations planes</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Vision dans l’espace</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Organisation et gestion de données</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Probabilités</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Proportionnalité en contexte</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Instructions, séquences et répétitions</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Lecture et compréhension</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Culture littéraire et artistique</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Écriture</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Oral</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Vocabulaire</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Grammaire et orthographe</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">La longue histoire de l’humanité et des migrations</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Récits fondateurs, croyances et citoyenneté dans la
-Méditerranée antique</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">L’empire romain dans le monde antique</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Habiter une métropole</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">Habiter un espace de faible densité</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Habiter les littoraux</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">Le monde habité</td>
-</tr>
-<tr class="even">
-<td align="left">SCI</td>
-<td align="left">Matière, mouvement, énergie, information</td>
-</tr>
-<tr class="odd">
-<td align="left">SCI</td>
-<td align="left">Le vivant, sa diversité et les fonctions qui le
-caractérisent</td>
-</tr>
-<tr class="even">
-<td align="left">SCI</td>
-<td align="left">Les objets techniques au cœur de la société</td>
-</tr>
-<tr class="odd">
-<td align="left">SCI</td>
-<td align="left">La Terre, une planète peuplée par des êtres
-vivants</td>
-</tr>
-<tr class="even">
-<td align="left">ARTS</td>
-<td align="left">La matérialité de la production plastique et la
-sensibilité aux constituants de l’œuvre</td>
-</tr>
-<tr class="odd">
-<td align="left">MUS</td>
-<td align="left">Chanter et interpréter</td>
-</tr>
-<tr class="even">
-<td align="left">MUS</td>
-<td align="left">Écouter, comparer et commenter</td>
-</tr>
-<tr class="odd">
-<td align="left">MUS</td>
-<td align="left">Explorer, imaginer et créer</td>
-</tr>
-<tr class="even">
-<td align="left">MUS</td>
-<td align="left">Échanger, partager et argumenter</td>
-</tr>
-<tr class="odd">
-<td align="left">EPS</td>
-<td align="left">S’exprimer devant les autres par une prestation
-artistique ou acrobatique</td>
-</tr>
-<tr class="even">
-<td align="left">EPS</td>
-<td align="left">Conduire et maîtriser un affrontement collectif ou
-interindividuel</td>
-</tr>
-<tr class="odd">
-<td align="left">EPS</td>
-<td align="left">Produire une performance optimale, mesurable</td>
-</tr>
-<tr class="even">
-<td align="left">EPS</td>
-<td align="left">Adapter ses déplacements à des environnements
-variés</td>
-</tr>
-<tr class="odd">
-<td align="left">ARTS</td>
-<td align="left">La représentation plastique et les dispositifs de
-présentation</td>
-</tr>
-<tr class="even">
-<td align="left">ARTS</td>
-<td align="left">Les fabrications et la relation entre l’objet et
-l’espace</td>
-</tr>
 </tbody>
 </table>
+<p>Les tableaux complets restent accessibles en appelant directement les
+fonctions sans <code><a href="https://rdrr.io/r/utils/head.html" class="external-link">head()</a></code>.</p>
 </div>
 <div class="section level2">
-<h2 id="les-notions-à-connaître">Les notions à connaître<a class="anchor" aria-label="anchor" href="#les-notions-%C3%A0-conna%C3%AEtre"></a>
+<h2 id="aller-un-peu-plus-loin-en-mathématiques">Aller un peu plus loin en mathématiques<a class="anchor" aria-label="anchor" href="#aller-un-peu-plus-loin-en-math%C3%A9matiques"></a>
 </h2>
+<p>On peut consulter quelques capacités de mathématiques de 6e :</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">n</span> <span class="op">=</span> <span class="fu"><a href="../reference/notions_niveau.html">notions_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
-<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">n</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/capacites.html">capacites</a></span><span class="op">(</span><span class="st">"6E"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span>, version_id <span class="op">=</span> <span class="st">"2026_2027"</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <thead><tr class="header">
-<th align="left">discipline_id</th>
+<th align="left">item_id</th>
 <th align="left">libelle</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td align="left">LVE</td>
-<td align="left">Repères culturels</td>
+<td align="left">ITM_MAT_C3_6E_C01</td>
+<td align="left">Lire, écrire et comparer de grands nombres</td>
 </tr>
 <tr class="even">
-<td align="left">LVE</td>
-<td align="left">Compréhension en langue vivante</td>
+<td align="left">ITM_MAT_C3_6E_C02</td>
+<td align="left">Utiliser différentes écritures d’un nombre décimal</td>
 </tr>
 <tr class="odd">
-<td align="left">LVE</td>
-<td align="left">Expression et interaction</td>
+<td align="left">ITM_MAT_C3_6E_C03</td>
+<td align="left">Multiplier des nombres décimaux</td>
 </tr>
 <tr class="even">
-<td align="left">LVE</td>
-<td align="left">Outils linguistiques</td>
+<td align="left">ITM_MAT_C3_6E_C04</td>
+<td align="left">Choisir une opération adaptée à un problème</td>
 </tr>
 <tr class="odd">
-<td align="left">EMC</td>
-<td align="left">Laïcité</td>
+<td align="left">ITM_MAT_C3_6E_C05</td>
+<td align="left">Interpréter une fraction comme quotient</td>
 </tr>
 <tr class="even">
-<td align="left">EMC</td>
-<td align="left">Droits et vie privée</td>
-</tr>
-<tr class="odd">
-<td align="left">EMC</td>
-<td align="left">Intérêt général et représentation</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Nombres entiers et décimaux</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Fractions : sens et représentations</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Addition et soustraction de fractions</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Fraction d’une quantité</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Pourcentages</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Premiers raisonnements algébriques</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Longueurs et périmètres</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Aires</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Volumes</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Horaires et durées</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Configurations planes</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Vision dans l’espace</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Organisation et gestion de données</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Probabilités</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Proportionnalité</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Instructions, séquences et répétitions</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Lecture et compréhension</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Culture littéraire</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Écriture</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Expression orale</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Vocabulaire</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Grammaire et orthographe</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Préhistoire et migrations</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">Méditerranée antique</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Empire romain</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">Habiter une métropole</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Espaces de faible densité</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">Littoraux</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Répartition de la population</td>
-</tr>
-<tr class="odd">
-<td align="left">SCI</td>
-<td align="left">Matière et énergie</td>
-</tr>
-<tr class="even">
-<td align="left">SCI</td>
-<td align="left">Le vivant</td>
-</tr>
-<tr class="odd">
-<td align="left">SCI</td>
-<td align="left">Objets techniques</td>
-</tr>
-<tr class="even">
-<td align="left">SCI</td>
-<td align="left">Terre et environnement</td>
-</tr>
-<tr class="odd">
-<td align="left">ARTS</td>
-<td align="left">Matérialité et œuvre</td>
-</tr>
-<tr class="even">
-<td align="left">MUS</td>
-<td align="left">Chanter et interpréter</td>
-</tr>
-<tr class="odd">
-<td align="left">MUS</td>
-<td align="left">Écoute musicale</td>
-</tr>
-<tr class="even">
-<td align="left">MUS</td>
-<td align="left">Création musicale</td>
-</tr>
-<tr class="odd">
-<td align="left">MUS</td>
-<td align="left">Échange et argumentation musicale</td>
-</tr>
-<tr class="even">
-<td align="left">EPS</td>
-<td align="left">Expression artistique et acrobatique</td>
-</tr>
-<tr class="odd">
-<td align="left">EPS</td>
-<td align="left">Affrontement collectif ou individuel</td>
-</tr>
-<tr class="even">
-<td align="left">EPS</td>
-<td align="left">Performance mesurable</td>
-</tr>
-<tr class="odd">
-<td align="left">EPS</td>
-<td align="left">Déplacements en environnement varié</td>
-</tr>
-<tr class="even">
-<td align="left">ARTS</td>
-<td align="left">Représentation plastique</td>
-</tr>
-<tr class="odd">
-<td align="left">ARTS</td>
-<td align="left">Objet et espace</td>
+<td align="left">ITM_MAT_C3_6E_C06</td>
+<td align="left">Placer une fraction sur une demi-droite graduée</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section level2">
-<h2 id="aller-plus-loin-en-mathématiques">Aller plus loin en mathématiques<a class="anchor" aria-label="anchor" href="#aller-plus-loin-en-math%C3%A9matiques"></a>
-</h2>
-<p>Les mathématiques disposent d’une granularité plus fine. On peut
-consulter les capacités, retrouver les notions qui leur sont associées,
-puis remonter leurs prérequis.</p>
+<p>Pour une capacité donnée, <code>eduschool</code> permet ensuite de
+retrouver les notions et les prérequis associés :</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="../reference/capacites.html">capacites</a></span><span class="op">(</span><span class="st">"6E"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span>, version_id <span class="op">=</span> <span class="st">"2026_2027"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="co">#&gt;             item_id                                            libelle</span></span>
-<span><span class="co">#&gt; 1 ITM_MAT_C3_6E_C01         Lire, écrire et comparer de grands nombres</span></span>
-<span><span class="co">#&gt; 2 ITM_MAT_C3_6E_C02 Utiliser différentes écritures d’un nombre décimal</span></span>
-<span><span class="co">#&gt; 3 ITM_MAT_C3_6E_C03                    Multiplier des nombres décimaux</span></span>
-<span><span class="co">#&gt; 4 ITM_MAT_C3_6E_C04        Choisir une opération adaptée à un problème</span></span>
-<span><span class="co">#&gt; 5 ITM_MAT_C3_6E_C05            Interpréter une fraction comme quotient</span></span>
-<span><span class="co">#&gt; 6 ITM_MAT_C3_6E_C06    Placer une fraction sur une demi-droite graduée</span></span></code></pre></div>
-<p>Pour une capacité liée à la proportionnalité :</p>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="5%">
+<col width="10%">
+<col width="6%">
+<col width="8%">
+<col width="10%">
+<col width="34%">
+<col width="24%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">notion_id</th>
+<th align="left">capacite_id</th>
+<th align="left">role</th>
+<th align="left">discipline_id</th>
+<th align="left">libelle</th>
+<th align="left">description</th>
+<th align="left">document</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td align="left">MAT_PROP</td>
+<td align="left">ITM_MAT_C3_6E_C31</td>
+<td align="left">PRINCIPALE</td>
+<td align="left">MAT</td>
+<td align="left">Proportionnalité</td>
+<td align="left">Reconnaître et traiter une situation de
+proportionnalité.</td>
+<td align="left">rappels/mathematiques/proportionnalite.md</td>
+</tr></tbody>
+</table>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span><span class="op">)</span></span>
-<span><span class="co">#&gt;   notion_id       capacite_id       role discipline_id          libelle</span></span>
-<span><span class="co">#&gt; 1  MAT_PROP ITM_MAT_C3_6E_C31 PRINCIPALE           MAT Proportionnalité</span></span>
-<span><span class="co">#&gt;                                                 description</span></span>
-<span><span class="co">#&gt; 1 Reconnaître et traiter une situation de proportionnalité.</span></span>
-<span><span class="co">#&gt;                                    document</span></span>
-<span><span class="co">#&gt; 1 rappels/mathematiques/proportionnalite.md</span></span>
-<span><span class="fu"><a href="../reference/prerequis_capacite.html">prerequis_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span>, recursif <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co">#&gt;                          notion_id discipline_id                     libelle</span></span>
-<span><span class="co">#&gt; 63 MAT_NOMBRES_ENTIERS_ET_DECIMAUX           MAT Nombres entiers et décimaux</span></span>
-<span><span class="co">#&gt;                                                                        description</span></span>
-<span><span class="co">#&gt; 63 Repères, méthodes et automatismes essentiels sur : Nombres entiers et décimaux.</span></span>
-<span><span class="co">#&gt;                                                document</span></span>
-<span><span class="co">#&gt; 63 rappels/mathematiques/nombres_entiers_et_decimaux.md</span></span></code></pre></div>
-<p>Le mode récursif remonte toute la chaîne de prérequis connue dans le
-graphe pédagogique du package.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/prerequis_capacite.html">prerequis_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span>, recursif <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="15%">
+<col width="6%">
+<col width="13%">
+<col width="38%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">notion_id</th>
+<th align="left">discipline_id</th>
+<th align="left">libelle</th>
+<th align="left">description</th>
+<th align="left">document</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td align="left">MAT_NOMBRES_ENTIERS_ET_DECIMAUX</td>
+<td align="left">MAT</td>
+<td align="left">Nombres entiers et décimaux</td>
+<td align="left">Repères, méthodes et automatismes essentiels sur :
+Nombres entiers et décimaux.</td>
+<td align="left">rappels/mathematiques/nombres_entiers_et_decimaux.md</td>
+</tr></tbody>
+</table>
 </div>
 <div class="section level2">
-<h2 id="consulter-un-rappel">Consulter un rappel<a class="anchor" aria-label="anchor" href="#consulter-un-rappel"></a>
+<h2 id="générer-directement-des-exercices">Générer directement des exercices<a class="anchor" aria-label="anchor" href="#g%C3%A9n%C3%A9rer-directement-des-exercices"></a>
 </h2>
+<p>Pour un premier usage, il n’est pas nécessaire d’affecter la sortie à
+un objet. Avec <code>afficher = TRUE</code>, les énoncés sont imprimés
+immédiatement :</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/chercher_notions.html">chercher_notions</a></span><span class="op">(</span><span class="st">"fraction"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span><span class="op">)</span></span>
-<span><span class="co">#&gt;            notion_id discipline_id                               libelle</span></span>
-<span><span class="co">#&gt; 40  MAT_FRACTION_ADD           MAT Addition et soustraction de fractions</span></span>
-<span><span class="co">#&gt; 41  MAT_FRACTION_QTE           MAT               Fraction d’une quantité</span></span>
-<span><span class="co">#&gt; 42 MAT_FRACTION_SENS           MAT   Fractions : sens et représentations</span></span>
-<span><span class="co">#&gt; 76   MAT_POURCENTAGE           MAT                          Pourcentages</span></span>
-<span><span class="co">#&gt;                                                                         description</span></span>
-<span><span class="co">#&gt; 40 Additionner et soustraire des fractions en utilisant des écritures équivalentes.</span></span>
-<span><span class="co">#&gt; 41                             Calculer et interpréter une fraction d’une quantité.</span></span>
-<span><span class="co">#&gt; 42                     Comprendre une fraction comme nombre, quotient et opérateur.</span></span>
-<span><span class="co">#&gt; 76                            Relier pourcentage, fraction, proportion et quantité.</span></span>
-<span><span class="co">#&gt;                                       document</span></span>
-<span><span class="co">#&gt; 40 rappels/mathematiques/addition_fractions.md</span></span>
-<span><span class="co">#&gt; 41  rappels/mathematiques/fraction_quantite.md</span></span>
-<span><span class="co">#&gt; 42     rappels/mathematiques/fractions_sens.md</span></span>
-<span><span class="co">#&gt; 76       rappels/mathematiques/pourcentages.md</span></span></code></pre></div>
-<p>Un rappel peut ensuite être lu avec
-<code><a href="../reference/obtenir_rappel.html">obtenir_rappel()</a></code>.</p>
-</div>
-<div class="section level2">
-<h2 id="générer-des-exercices">Générer des exercices<a class="anchor" aria-label="anchor" href="#g%C3%A9n%C3%A9rer-des-exercices"></a>
-</h2>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">fiche</span> <span class="op">=</span> <span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
 <span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
 <span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
-<span>  n <span class="op">=</span> <span class="fl">5</span>,</span>
+<span>  n <span class="op">=</span> <span class="fl">3</span>,</span>
 <span>  difficulte <span class="op">=</span> <span class="fl">1</span>,</span>
-<span>  seed <span class="op">=</span> <span class="fl">2026</span></span>
-<span><span class="op">)</span></span></code></pre></div>
+<span>  seed <span class="op">=</span> <span class="fl">2026</span>,</span>
+<span>  afficher <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span>
+<span><span class="co">#&gt; Exercice 1</span></span>
+<span><span class="co">#&gt; Calculer et simplifier : 1/6 + 1/6</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Exercice 2</span></span>
+<span><span class="co">#&gt; Calculer et simplifier : 7/12 + 11/12</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Exercice 3</span></span>
+<span><span class="co">#&gt; Calculer et simplifier : 3/6 + 1/6</span></span></code></pre></div>
+<p>Si l’on souhaite ensuite réutiliser les exercices pour produire un
+document ou un corrigé, on peut bien sûr conserver le résultat dans un
+objet.</p>
 </div>
 <div class="section level2">
-<h2 id="requêtes-relationnelles-avancées">Requêtes relationnelles avancées<a class="anchor" aria-label="anchor" href="#requ%C3%AAtes-relationnelles-avanc%C3%A9es"></a>
+<h2 id="et-ensuite">Et ensuite ?<a class="anchor" aria-label="anchor" href="#et-ensuite"></a>
 </h2>
-<p>Pour les analyses qui dépassent les fonctions de consultation, les
-mêmes CSV peuvent être chargés dans DuckDB.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">con</span> <span class="op">=</span> <span class="fu"><a href="../reference/ouvrir_base.html">ouvrir_base</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbListTables.html" class="external-link">dbListTables</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span>
-<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbDisconnect.html" class="external-link">dbDisconnect</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span></code></pre></div>
-<p>La sixième constitue ici un exemple : l’objectif
-d’<code>eduschool</code> est que cette même démarche puisse
-progressivement être appliquée à chaque niveau scolaire.</p>
+<p>La vignette de prise en main et les autres articles du site
+présentent les programmes, les rappels pédagogiques, les exercices et
+les outils plus avancés.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
