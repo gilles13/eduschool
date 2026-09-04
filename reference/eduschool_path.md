@@ -1,7 +1,7 @@
-# Localiser une ressource eduschool
+# Chemin vers une ressource installée
 
-Localise une ressource aussi bien dans un package installé que dans un
-arbre source en développement.
+Retourne le chemin d'une ressource distribuée avec eduschool. Cette
+fonction fonctionne aussi depuis un arbre source non encore installé.
 
 ## Usage
 
@@ -13,12 +13,8 @@ eduschool_path(..., must_work = TRUE)
 
 - ...:
 
-  Composantes du chemin sous `inst/`.
+  Composantes du chemin à l'intérieur de \`inst/\`.
 
 - must_work:
 
-  Produire une erreur si la ressource n'existe pas.
-
-## Value
-
-Un chemin de fichier.
+  Erreur si la ressource n'existe pas.

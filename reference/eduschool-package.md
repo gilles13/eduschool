@@ -1,10 +1,20 @@
-# eduschool : référentiels scolaires et outils de révision
+# eduschool : référentiels scolaires et révisions
 
-Package R pour consulter des référentiels scolaires français, relier
-programmes, capacités et notions pédagogiques, et générer des exercices
-reproductibles.
+\`eduschool\` organise des référentiels scolaires français, une base
+documentaire pédagogique et des générateurs d'exercices reproductibles.
+Les consultations simples utilisent les CSV installés avec le package ;
+DuckDB est disponible pour les usages relationnels plus avancés.
 
-## Details
+## See also
 
-Les ressources persistantes sont distribuées sous forme de CSV et
-Markdown. Les consultations simples n'exigent pas de connexion DuckDB.
+Useful links:
+
+- <https://gilles13.github.io/eduschool/>
+
+## Author
+
+**Maintainer**: Gilles FIDANI <gillesfidani@gmail.com>
+
+Authors:
+
+- Gilles FIDANI <gillesfidani@gmail.com>

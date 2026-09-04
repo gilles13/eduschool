@@ -17,6 +17,6 @@ prerequis_capacite("ITM_MAT_C3_6E_C31", recursif = TRUE)
 
 Les rappels sont des fichiers Markdown installés avec le package et
 accessibles par
-[`obtenir_rappel()`](https://gilles13.github.io/eduschool/reference/documentation.md).
+[`obtenir_rappel()`](https://gilles13.github.io/eduschool/reference/obtenir_rappel.md).
 Cette séparation permettra ultérieurement une personnalisation sans
 modifier les référentiels officiels.

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,31 +40,73 @@
 
       <dl><dt>
 
-          <code><a href="diagrammes.html">diagrammes_disponibles()</a></code> <code><a href="diagrammes.html">produire_diagramme_html()</a></code> <code><a href="diagrammes.html">produire_diagramme_svg()</a></code> <code><a href="diagrammes.html">diagramme_parcours_scolaire()</a></code> <code><a href="diagrammes.html">diagramme_package()</a></code> <code><a href="diagrammes.html">generer_diagrammes_documentation()</a></code> <code><a href="diagrammes.html">generer_documentation_visuelle()</a></code>
+          <code><a href="capacites.html">capacites()</a></code>
 
         </dt>
-        <dd>Diagrammes HTML et SVG de eduschool</dd>
+        <dd>Capacités d'un programme</dd>
 
         <dt>
 
-          <code><a href="documentation.html">notions()</a></code> <code><a href="documentation.html">notions_capacite()</a></code> <code><a href="documentation.html">prerequis_notion()</a></code> <code><a href="documentation.html">prerequis_capacite()</a></code> <code><a href="documentation.html">obtenir_rappel()</a></code> <code><a href="documentation.html">rappels_capacite()</a></code> <code><a href="documentation.html">chercher_notions()</a></code> <code><a href="documentation.html">couverture_documentation()</a></code>
+          <code><a href="chercher_notions.html">chercher_notions()</a></code>
 
         </dt>
-        <dd>Consulter la documentation pédagogique</dd>
+        <dd>Rechercher des notions</dd>
 
         <dt>
 
-          <code><a href="eduschool-package.html">eduschool-package</a></code> <code><a href="eduschool-package.html">eduschool</a></code>
+          <code><a href="couverture_documentation.html">couverture_documentation()</a></code>
 
         </dt>
-        <dd>eduschool : référentiels scolaires et outils de révision</dd>
+        <dd>Couverture de la documentation</dd>
+
+        <dt>
+
+          <code><a href="diagramme_package.html">diagramme_package()</a></code>
+
+        </dt>
+        <dd>Produire un diagramme technique du package</dd>
+
+        <dt>
+
+          <code><a href="diagramme_parcours_scolaire.html">diagramme_parcours_scolaire()</a></code>
+
+        </dt>
+        <dd>Produire le diagramme des parcours scolaires</dd>
+
+        <dt>
+
+          <code><a href="diagrammes_disponibles.html">diagrammes_disponibles()</a></code>
+
+        </dt>
+        <dd>Diagrammes disponibles</dd>
+
+        <dt>
+
+          <code><a href="disciplines.html">disciplines()</a></code>
+
+        </dt>
+        <dd>Disciplines</dd>
+
+        <dt>
+
+          <code><a href="eduschool_init.html">eduschool_init()</a></code>
+
+        </dt>
+        <dd>Initialiser un contexte eduschool</dd>
 
         <dt>
 
           <code><a href="eduschool_path.html">eduschool_path()</a></code>
 
         </dt>
-        <dd>Localiser une ressource eduschool</dd>
+        <dd>Chemin vers une ressource installée</dd>
+
+        <dt>
+
+          <code><a href="enseignements.html">enseignements()</a></code>
+
+        </dt>
+        <dd>Enseignements</dd>
 
         <dt>
 
@@ -75,17 +117,101 @@
 
         <dt>
 
-          <code><a href="ouvrir_base.html">ouvrir_base()</a></code> <code><a href="ouvrir_base.html">eduschool_init()</a></code>
+          <code><a href="generer_diagrammes_documentation.html">generer_diagrammes_documentation()</a></code>
 
         </dt>
-        <dd>Ouvrir une base DuckDB</dd>
+        <dd>Générer les SVG utilisés par la documentation</dd>
 
         <dt>
 
-          <code><a href="programmes.html">programmes()</a></code> <code><a href="programmes.html">capacites()</a></code>
+          <code><a href="generer_documentation_visuelle.html">generer_documentation_visuelle()</a></code>
 
         </dt>
-        <dd>Consulter les programmes et capacités</dd>
+        <dd>Générer toute la documentation visuelle</dd>
+
+        <dt>
+
+          <code><a href="niveaux.html">niveaux()</a></code>
+
+        </dt>
+        <dd>Niveaux scolaires</dd>
+
+        <dt>
+
+          <code><a href="notions.html">notions()</a></code>
+
+        </dt>
+        <dd>Notions documentaires</dd>
+
+        <dt>
+
+          <code><a href="notions_capacite.html">notions_capacite()</a></code>
+
+        </dt>
+        <dd>Notions associées à une capacité</dd>
+
+        <dt>
+
+          <code><a href="obtenir_rappel.html">obtenir_rappel()</a></code>
+
+        </dt>
+        <dd>Lire le rappel pédagogique d'une notion</dd>
+
+        <dt>
+
+          <code><a href="ouvrir_base.html">ouvrir_base()</a></code>
+
+        </dt>
+        <dd>Ouvrir une base DuckDB eduschool</dd>
+
+        <dt>
+
+          <code><a href="prerequis_capacite.html">prerequis_capacite()</a></code>
+
+        </dt>
+        <dd>Prérequis des notions associées à une capacité</dd>
+
+        <dt>
+
+          <code><a href="prerequis_notion.html">prerequis_notion()</a></code>
+
+        </dt>
+        <dd>Prérequis d'une notion</dd>
+
+        <dt>
+
+          <code><a href="print.eduschool_context.html">print(<i>&lt;eduschool_context&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Afficher un contexte eduschool</dd>
+
+        <dt>
+
+          <code><a href="produire_diagramme_html.html">produire_diagramme_html()</a></code>
+
+        </dt>
+        <dd>Produire un diagramme HTML</dd>
+
+        <dt>
+
+          <code><a href="produire_diagramme_svg.html">produire_diagramme_svg()</a></code>
+
+        </dt>
+        <dd>Produire un diagramme SVG</dd>
+
+        <dt>
+
+          <code><a href="programmes.html">programmes()</a></code>
+
+        </dt>
+        <dd>Programmes</dd>
+
+        <dt>
+
+          <code><a href="rappels_capacite.html">rappels_capacite()</a></code>
+
+        </dt>
+        <dd>Rappels associés à une capacité</dd>
 
         <dt>
 
@@ -96,10 +222,17 @@
 
         <dt>
 
-          <code><a href="referentiels.html">niveaux()</a></code> <code><a href="referentiels.html">voies()</a></code> <code><a href="referentiels.html">series()</a></code> <code><a href="referentiels.html">disciplines()</a></code> <code><a href="referentiels.html">enseignements()</a></code>
+          <code><a href="series.html">series()</a></code>
 
         </dt>
-        <dd>Consulter les référentiels</dd>
+        <dd>Séries scolaires</dd>
+
+        <dt>
+
+          <code><a href="voies.html">voies()</a></code>
+
+        </dt>
+        <dd>Voies scolaires</dd>
       </dl></div>
   </main></div>
 

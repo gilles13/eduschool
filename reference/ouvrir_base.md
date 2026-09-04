@@ -1,30 +1,20 @@
-# Ouvrir une base DuckDB
+# Ouvrir une base DuckDB eduschool
 
-Ouvre une connexion DuckDB et, si demandé, y importe les référentiels du
-package.
+La base peut être en mémoire ou persistante. Si \`importer\` vaut TRUE,
+les principaux CSV du package sont copiés dans DuckDB.
 
 ## Usage
 
 ``` r
 ouvrir_base(fichier = ":memory:", importer = TRUE)
-eduschool_init(fichier_base = ":memory:", importer = TRUE)
 ```
 
 ## Arguments
 
 - fichier:
 
-  Chemin du fichier DuckDB ou `":memory:"`.
-
-- fichier_base:
-
-  Chemin du fichier DuckDB ou `":memory:"`.
+  Chemin du fichier DuckDB, ou \`:memory:\`.
 
 - importer:
 
-  Importer les CSV distribués dans DuckDB.
-
-## Value
-
-`ouvrir_base()` retourne une connexion DBI ; `eduschool_init()` retourne
-un contexte contenant cette connexion.
+  Importer les tables distribuées avec le package.
