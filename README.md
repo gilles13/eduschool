@@ -67,11 +67,11 @@ fiche = generer_fiche(
 - des modèles permettant de générer des exercices et des fiches de révision ;
 - une couche relationnelle optionnelle avec DuckDB pour les consultations plus complexes ;
 - des diagrammes HTML et SVG pour représenter les parcours scolaires et l'architecture du système ;
-- des vignettes et un site pkgdown pour documenter l'utilisation du package.
+- des vignettes et un site `pkgdown` pour documenter l'utilisation du package.
 
 ## Documentation
 
-Pour découvrir le package, commencer par la vignette `prise-en-main`.
+Pour découvrir le *package*, commencer par la vignette `prise-en-main`.
 
 Les autres vignettes présentent notamment les parcours scolaires, les programmes et capacités, la documentation pédagogique, la génération d'exercices, l'architecture des données et le fonctionnement interne du package.
 
@@ -81,39 +81,7 @@ Depuis RStudio, les vignettes installées peuvent être consultées avec :
 browseVignettes("eduschool")
 ```
 
-Le site pkgdown constitue également la documentation utilisateur publiée du package.
+Le site pkgdown constitue également la documentation utilisateur publiée du *package*.
 
 Le dossier `documentation/` contient les documents techniques destinés au développement et à la maintenance du projet.
 
-## DuckDB
-
-DuckDB est disponible lorsque les requêtes deviennent plus complexes, mais il n'est pas nécessaire pour consulter les référentiels, les rappels ou générer des exercices :
-
-```r
-con = ouvrir_base()
-DBI::dbListTables(con)
-DBI::dbDisconnect(con)
-```
-
-Aucun argument `shared_home` n'est utilisé.
-
-## Développement
-
-Pour travailler directement sur les sources du package depuis RStudio :
-
-```r
-devtools::load_all()
-devtools::test()
-```
-
-La documentation du site peut être reconstruite avec :
-
-```r
-pkgdown::build_site()
-```
-
-## Versionnement
-
-Le dépôt Git est la référence du projet. Les ZIP ne constituent plus le mode normal de développement et servent uniquement à transmettre ponctuellement un instantané.
-
-Les conventions utilisées pour le versionnement sont décrites dans `documentation/versionnement-git.md`.
