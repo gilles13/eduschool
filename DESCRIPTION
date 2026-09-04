@@ -1,7 +1,7 @@
 Package: eduschool
 Type: Package
 Title: Référentiels scolaires français et outils de révision
-Version: 0.10.7
+Version: 0.10.8
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
 Description: Fournit des référentiels structurés sur les programmes scolaires
     français, une base documentaire pédagogique et des outils simples pour
@@ -14,11 +14,11 @@ Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports:
     DBI,
-    duckdb
+    duckdb,
+    rmarkdown
 Suggests:
     testthat (>= 3.0.0),
     knitr,
-    rmarkdown,
     roxygen2
 Config/testthat/edition: 3
 VignetteBuilder: knitr

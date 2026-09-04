@@ -1,0 +1,57 @@
+---
+title: ""
+params:
+  exercices: !r list()
+  titre: "Fiche d'exercices"
+  sous_titre: ""
+  instructions: ""
+  corriges: false
+  afficher_metadonnees: false
+  logo: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, results = "asis")
+exercices = params$exercices
+```
+
+```{r logo, out.width="30%", fig.align="center"}
+if (nzchar(params$logo) && file.exists(params$logo)) {
+  knitr::include_graphics(params$logo)
+}
+```
+
+# `r params$titre`
+
+```{r introduction, results='asis'}
+if (nzchar(params$sous_titre)) cat("*", params$sous_titre, "*\n\n", sep = "")
+if (!is.null(params$instructions) && nzchar(params$instructions)) {
+  cat("**Consigne générale :** ", params$instructions, "\n\n", sep = "")
+}
+```
+
+```{r exercices, results='asis'}
+for (i in seq_along(exercices)) {
+  ex = exercices[[i]]
+  cat("## Exercice ", i, "\n\n", sep = "")
+
+  if (isTRUE(params$corriges)) {
+    cat(ex$correction, "\n\n")
+    if (!is.null(ex$reponse) && nzchar(as.character(ex$reponse))) {
+      cat("**Réponse :** ", as.character(ex$reponse), "\n\n", sep = "")
+    }
+  } else {
+    cat(ex$enonce, "\n\n")
+  }
+
+  if (isTRUE(params$afficher_metadonnees)) {
+    meta = c(
+      if (!is.null(ex$modele_id)) paste0("modèle: ", ex$modele_id),
+      if (!is.null(ex$capacite_id) && !is.na(ex$capacite_id) && nzchar(ex$capacite_id)) paste0("capacité: ", ex$capacite_id),
+      if (!is.null(ex$difficulte)) paste0("difficulté: ", ex$difficulte),
+      if (!is.null(ex$seed) && !is.na(ex$seed)) paste0("seed: ", ex$seed)
+    )
+    if (length(meta)) cat("*", paste(meta, collapse = " — "), "*\n\n", sep = "")
+  }
+}
+```

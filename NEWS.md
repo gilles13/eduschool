@@ -1,3 +1,12 @@
+# eduschool 0.10.8
+
+## Fiches HTML et PDF
+
+- ajout de `produire_fiche()` et `produire_corrige()` pour envoyer directement la sortie de `generer_fiche()` vers un document ;
+- ajout d'un template R Markdown commun aux sorties HTML et PDF ;
+- ajout de `format = "auto"` : PDF lorsque LaTeX est disponible, HTML sinon ;
+- mise a jour du README et des vignettes pour presenter le nouveau flux avec le pipe natif `|>`.
+
 # eduschool 0.10.7
 
 ## Premiers pas

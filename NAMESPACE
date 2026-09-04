@@ -48,3 +48,5 @@ export(notions_niveau)
 export(resume_niveau)
 
 export(genere_resume)
+export(produire_fiche)
+export(produire_corrige)
