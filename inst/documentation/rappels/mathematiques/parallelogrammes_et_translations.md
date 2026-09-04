@@ -1,34 +1,72 @@
 # Parallélogrammes et translations
 
-## À connaître
+## Parallélogramme
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Parallélogrammes et translations**.
+Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles.
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Il possède plusieurs propriétés utiles :
 
-## Méthode
+- ses côtés opposés ont la même longueur ;
+- ses angles opposés ont la même mesure ;
+- ses diagonales se coupent en leur milieu.
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Réciproquement, certaines de ces propriétés permettent de montrer qu'un quadrilatère est un parallélogramme.
+
+## Translation
+
+Une translation déplace tous les points d'une figure de la même manière : même direction, même sens et même longueur.
+
+On peut décrire le déplacement qui envoie \(A\) sur \(B\) par le vecteur \(\overrightarrow{AB}\).
+
+Une translation conserve :
+
+- les longueurs ;
+- les angles ;
+- l'alignement ;
+- le parallélisme ;
+- les aires.
+
+L'image d'une figure par translation a donc la même forme et la même taille.
+
+## Construire l'image d'un point
+
+Pour construire l'image \(M'\) de \(M\) par la translation qui transforme \(A\) en \(B\) :
+
+1. tracer par \(M\) une parallèle à \((AB)\) ;
+2. reporter la longueur \(AB\) dans le même sens ;
+3. placer \(M'\).
+
+On obtient :
+
+\[
+MM'=AB
+\]
+
+et les segments \([MM']\) et \([AB]\) sont parallèles et de même sens.
+
+## Exemple de raisonnement
+
+Si \(ABCD\) est un parallélogramme, alors ses diagonales \([AC]\) et \([BD]\) se coupent en leur milieu.
+
+Inversement, si les diagonales d'un quadrilatère se coupent en leur milieu, alors ce quadrilatère est un parallélogramme.
+
+Cette réciproque est souvent plus efficace que de démontrer séparément deux parallélismes.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- reconnaître les propriétés caractéristiques d'un parallélogramme ;
+- distinguer une propriété directe de sa réciproque ;
+- construire l'image d'un point par translation ;
+- reconnaître les éléments conservés par une translation ;
+- repérer des segments parallèles et de même longueur dans une construction.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
+- confondre parallélogramme et rectangle ;
+- croire que des diagonales de même longueur suffisent à caractériser un parallélogramme ;
+- changer le sens du déplacement pendant une translation ;
+- mesurer sur le dessin au lieu d'utiliser les propriétés.
 
 ## Pour réviser
 
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+Tracer un parallélogramme quelconque, coder toutes les égalités de longueurs connues, puis construire l'image d'un point extérieur par la translation qui transforme un sommet en un autre.

@@ -1,34 +1,89 @@
 # Géométrie plane
 
-## À connaître
+## Idée centrale
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Géométrie plane**.
+La géométrie plane combine des propriétés de figures, des longueurs, des angles et des raisonnements logiques. Une figure est un support au raisonnement : elle ne remplace jamais les hypothèses.
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+## Triangle rectangle et trigonométrie
 
-## Méthode
+Dans un triangle rectangle, pour un angle aigu \(\alpha\) :
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+\[
+\cos(\alpha)
+=
+\frac{\text{côté adjacent}}{\text{hypoténuse}},
+\]
+
+\[
+\sin(\alpha)
+=
+\frac{\text{côté opposé}}{\text{hypoténuse}},
+\]
+
+\[
+\tan(\alpha)
+=
+\frac{\text{côté opposé}}{\text{côté adjacent}}.
+\]
+
+La première étape consiste toujours à repérer l'hypoténuse, puis à identifier les côtés par rapport à **l'angle étudié**.
+
+## Exemple travaillé
+
+Dans un triangle \(ABC\) rectangle en \(A\), on connaît :
+
+\[
+AB=8\text{ cm},\qquad BC=10\text{ cm}.
+\]
+
+Pour calculer l'angle \(\widehat{B}\), \(AB\) est le côté adjacent et \(BC\) l'hypoténuse :
+
+\[
+\cos(\widehat B)=\frac{8}{10}=0{,}8.
+\]
+
+Donc :
+
+\[
+\widehat B=\arccos(0{,}8)\approx36{,}9^\circ.
+\]
+
+## Angles et parallélisme
+
+Avec deux droites parallèles coupées par une sécante, les égalités d'angles alternes-internes ou correspondants permettent de calculer des angles ou de justifier un parallélisme.
+
+Dans un triangle :
+
+\[
+\widehat A+\widehat B+\widehat C=180^\circ.
+\]
+
+## Rédiger une démonstration
+
+Une démonstration courte suit souvent le schéma :
+
+1. **je sais que** : rappeler les hypothèses utiles ;
+2. **or** : citer la propriété ;
+3. **donc** : écrire la conclusion.
+
+La rédaction doit partir des données et d'une propriété, et non de l'apparence de la figure.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- connaître la somme des angles d'un triangle ;
+- repérer hypoténuse, côté adjacent et côté opposé ;
+- choisir entre sinus, cosinus et tangente ;
+- régler la calculatrice en degrés pour les exercices usuels ;
+- citer une propriété avant de l'utiliser dans une démonstration.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
+- confondre côté adjacent et côté opposé quand l'angle change ;
+- utiliser la trigonométrie dans un triangle non rectangle ;
+- oublier l'unité « degré » pour un angle ;
+- arrondir pendant les calculs intermédiaires ;
+- déduire qu'une propriété est vraie simplement parce que la figure « ressemble » au cas attendu.
 
 ## Pour réviser
 
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+Dessiner un triangle rectangle, choisir chacun de ses deux angles aigus et nommer, pour chaque angle, le côté adjacent et le côté opposé. Faire ensuite un calcul de longueur et un calcul d'angle.

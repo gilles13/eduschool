@@ -1,34 +1,103 @@
 # Fonctions et représentations
 
-## À connaître
+## Idée centrale
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonctions et représentations**.
+Une fonction associe à une valeur \(x\) **au plus une valeur** notée \(f(x)\).
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+On peut décrire une même fonction de plusieurs façons :
 
-## Méthode
+- par une formule ;
+- par un tableau de valeurs ;
+- par une courbe ;
+- par un programme de calcul ;
+- par une situation concrète.
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Savoir passer d'une représentation à une autre est une compétence centrale.
+
+## Image et antécédent
+
+Si :
+
+\[
+f(3)=7,
+\]
+
+alors **7 est l'image de 3** par \(f\), et **3 est un antécédent de 7**.
+
+Une valeur peut avoir plusieurs antécédents, mais un nombre \(x\) donné ne peut avoir qu'une seule image par une fonction donnée.
+
+## Lire une courbe
+
+Pour déterminer graphiquement \(f(2)\) :
+
+1. partir de 2 sur l'axe horizontal ;
+2. rejoindre verticalement la courbe ;
+3. lire l'ordonnée correspondante.
+
+Pour chercher les antécédents de 4 :
+
+1. partir de 4 sur l'axe vertical ;
+2. suivre horizontalement jusqu'à la courbe ;
+3. lire les abscisses des points d'intersection.
+
+Il peut n'y avoir aucun antécédent, un seul ou plusieurs.
+
+## Construire un tableau de valeurs
+
+Pour :
+
+\[
+f(x)=2x-3,
+\]
+
+on obtient par exemple :
+
+| \(x\) | -1 | 0 | 2 | 5 |
+|---:|---:|---:|---:|---:|
+| \(f(x)\) | -5 | -3 | 1 | 7 |
+
+Chaque valeur est obtenue en remplaçant \(x\) dans la formule.
+
+## Exemple travaillé
+
+Avec \(g(x)=x^2-4\) :
+
+\[
+g(3)=3^2-4=5.
+\]
+
+Donc 5 est l'image de 3.
+
+Pour chercher les antécédents de 5, on résout :
+
+\[
+x^2-4=5,
+\]
+
+soit :
+
+\[
+x^2=9.
+\]
+
+Les antécédents sont donc \(-3\) et 3.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- calculer une image à partir d'une formule ;
+- lire une image dans un tableau ou sur une courbe ;
+- chercher un ou plusieurs antécédents ;
+- compléter un tableau de valeurs ;
+- utiliser correctement le vocabulaire image/antécédent.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
+- inverser image et antécédent ;
+- croire qu'une valeur ne peut avoir qu'un seul antécédent ;
+- lire les axes dans le mauvais sens ;
+- confondre \(f(x)\) avec \(f\times x\) ;
+- oublier les parenthèses lors du remplacement d'un nombre négatif.
 
 ## Pour réviser
 
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+À partir d'une même fonction, effectuer successivement quatre tâches : calculer une image, remplir un tableau, placer quelques points de la courbe et chercher graphiquement un antécédent.
