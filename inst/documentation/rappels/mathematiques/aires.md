@@ -1,34 +1,49 @@
 # Aires
 
-## À connaître
+L'aire mesure la surface occupée par une figure plane. Elle s'exprime avec une unité **au carré** : cm², m², km², etc.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Aires**.
+## Formules usuelles
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Rectangle :
 
-## Méthode
+$$A=L\times l.$$
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Carré :
 
-## Automatismes à maîtriser
+$$A=c^2.$$
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+Triangle :
+
+$$A=\frac{b\times h}{2},$$
+
+où $h$ est une hauteur relative à la base $b$.
+
+Disque :
+
+$$A=\pi r^2.$$
+
+## Méthode pour une figure composée
+
+1. décomposer la figure en figures usuelles ;
+2. calculer séparément leurs aires ;
+3. additionner ou soustraire selon la construction ;
+4. conserver une unité commune.
+
+## Exemple
+
+L'aire d'un triangle de base 8 cm et de hauteur 5 cm vaut :
+
+$$\frac{8\times5}{2}=20\text{ cm}^2.$$
+
+## Conversions
+
+Lorsqu'on passe d'une unité d'aire à l'unité immédiatement voisine, le facteur est 100 et non 10. Ainsi :
+
+$$1\text{ m}^2=10\,000\text{ cm}^2.$$
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- confondre aire et périmètre ;
+- oublier de diviser par 2 pour l'aire d'un triangle ;
+- prendre un côté quelconque pour hauteur sans vérifier la perpendicularité ;
+- convertir des unités d'aire comme des unités de longueur.

@@ -1,34 +1,41 @@
 # Nombres rationnels
 
+Un nombre rationnel est un nombre qui peut s'écrire sous la forme $a/b$, où $a$ et $b$ sont des entiers et $b \neq 0$.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Nombres rationnels**.
+Une même valeur admet plusieurs écritures fractionnaires :
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+$$\frac{3}{4}=\frac{6}{8}=\frac{75}{100}=0,75.$$
 
-## Méthode
+Simplifier une fraction consiste à diviser son numérateur et son dénominateur par un même diviseur non nul.
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+## Comparer des rationnels
 
-## Automatismes à maîtriser
+On peut :
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- utiliser une droite graduée ;
+- comparer à 0, à 1 ou à $1/2$ ;
+- réduire au même dénominateur ;
+- utiliser une écriture décimale lorsqu'elle est simple et exacte.
+
+Exemple : $5/6 > 3/4$ car $5/6=10/12$ et $3/4=9/12$.
+
+## Signe d'un quotient
+
+Deux nombres de même signe donnent un quotient positif ; deux nombres de signes différents donnent un quotient négatif.
+
+$$\frac{-6}{5}=-\frac65=\frac{6}{-5}.$$
+
+## Automatismes
+
+- reconnaître des fractions équivalentes ;
+- simplifier par 2, 3, 5 ou 10 ;
+- placer des rationnels simples sur une droite graduée ;
+- comparer des fractions à 0, $1/2$ et 1.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- simplifier en soustrayant le même nombre au numérateur et au dénominateur ;
+- oublier que le dénominateur ne peut jamais être nul ;
+- croire qu'un grand dénominateur produit toujours une grande fraction.

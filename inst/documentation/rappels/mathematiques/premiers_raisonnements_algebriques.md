@@ -1,34 +1,42 @@
 # Premiers raisonnements algébriques
 
-## À connaître
+L'algèbre permet de raisonner sur un nombre encore inconnu ou sur une règle valable pour plusieurs nombres.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Premiers raisonnements algébriques**.
+## Nombre inconnu
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Dans un problème, on peut représenter la quantité cherchée par une lettre ou une case.
 
-## Méthode
+Exemple : « Je pense à un nombre, je le triple puis j'ajoute 5 et j'obtiens 26. »
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+On peut écrire :
 
-## Automatismes à maîtriser
+$$3x+5=26.$$
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+À ce niveau, on peut aussi raisonner en remontant les opérations : $26-5=21$, puis $21\div3=7$.
+
+## Motifs et régularités
+
+Une suite de figures peut suivre une règle. Le but est d'identifier ce qui reste fixe et ce qui évolue.
+
+Exemple : si la figure numéro $n$ contient toujours $2n+1$ objets, la formule permet de prévoir directement le nombre d'objets de n'importe quelle figure.
+
+## Tester une conjecture
+
+Quelques exemples peuvent faire apparaître une règle, mais ils ne suffisent pas toujours à la prouver. Il faut distinguer :
+
+- observer une régularité ;
+- formuler une conjecture ;
+- expliquer pourquoi elle est vraie dans tous les cas concernés.
+
+## Automatismes
+
+- effectuer les opérations inverses ;
+- traduire « le double de », « trois de plus que », « la moitié de » ;
+- calculer une expression simple pour une valeur donnée ;
+- repérer une régularité numérique ou géométrique.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- choisir une lettre différente pour une même quantité ;
+- confondre $3x$ avec $3+x$ ;
+- croire qu'une règle est démontrée parce qu'elle fonctionne sur deux ou trois exemples.

@@ -1,34 +1,40 @@
 # Probabilités
 
-## À connaître
+Une expérience aléatoire est une expérience dont on ne peut pas prévoir avec certitude l'issue avant de la réaliser.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Probabilités**.
+## Vocabulaire
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- issue : résultat possible ;
+- univers : ensemble de toutes les issues ;
+- événement : ensemble d'une ou plusieurs issues ;
+- événement certain : probabilité 1 ;
+- événement impossible : probabilité 0.
 
-## Méthode
+Une probabilité est toujours comprise entre 0 et 1.
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+## Équiprobabilité
 
-## Automatismes à maîtriser
+Lorsque toutes les issues sont également probables :
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+$$P(A)=\frac{\text{nombre d'issues favorables à }A}{\text{nombre total d'issues}}.$$
+
+## Exemple
+
+On lance un dé équilibré à six faces. L'événement « obtenir un nombre pair » correspond aux issues 2, 4 et 6 :
+
+$$P(\text{pair})=\frac36=\frac12.$$
+
+## Fréquence et probabilité
+
+Lorsqu'une expérience aléatoire est répétée un grand nombre de fois, la fréquence observée d'un événement tend généralement à se stabiliser autour de sa probabilité théorique. Sur un petit nombre d'essais, des écarts importants restent possibles.
+
+## Vérifications
+
+- une probabilité négative ou supérieure à 1 est impossible ;
+- la somme des probabilités de toutes les issues élémentaires vaut 1.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- croire qu'un événement qui n'est pas encore arrivé « doit » arriver au prochain essai ;
+- confondre fréquence observée et probabilité théorique ;
+- appliquer la formule d'équiprobabilité lorsque les issues ne sont pas équiprobables.

@@ -1,34 +1,36 @@
 # Horaires et durées
 
-## À connaître
+Un horaire indique un instant ; une durée mesure le temps écoulé entre deux instants. Les calculs de durées ne suivent pas un système décimal : **1 h = 60 min** et **1 min = 60 s**.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Horaires et durées**.
+## Calculer une durée
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Pour aller de 9 h 47 à 11 h 15, on peut décomposer :
 
-## Méthode
+- de 9 h 47 à 10 h : 13 min ;
+- de 10 h à 11 h : 1 h ;
+- de 11 h à 11 h 15 : 15 min.
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+La durée totale est donc 1 h 28 min.
 
-## Automatismes à maîtriser
+## Convertir
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+$2\text{ h }30\text{ min}=150\text{ min}$ car $2\times60+30=150$.
+
+Inversement, 195 min = 3 h 15 min car $195=3\times60+15$.
+
+## Durées décimales
+
+$1,5$ h signifie 1 heure et une demi-heure, donc 1 h 30 min. En revanche, $1,30$ h ne signifie pas 1 h 30 min.
+
+## Automatismes
+
+- connaître les équivalences entre h, min et s ;
+- compléter à l'heure suivante ;
+- convertir des durées simples ;
+- calculer un horaire d'arrivée ou de départ.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- traiter les minutes comme des centièmes d'heure ;
+- soustraire directement les minutes lorsque cela conduit à une valeur négative sans effectuer de conversion ;
+- confondre un horaire avec une durée.

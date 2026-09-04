@@ -1,34 +1,44 @@
 # Longueurs et périmètres
 
-## À connaître
+Une longueur mesure une distance. Le périmètre d'une figure plane est la **longueur de son contour**.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Longueurs et périmètres**.
+## Unités de longueur
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Les unités usuelles sont km, m, dm, cm et mm. Avant d'additionner des longueurs, elles doivent être exprimées dans la même unité.
 
-## Méthode
+## Périmètres usuels
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Rectangle de longueur $L$ et largeur $l$ :
 
-## Automatismes à maîtriser
+$$P=2(L+l).$$
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+Carré de côté $c$ :
+
+$$P=4c.$$
+
+Cercle de rayon $r$ :
+
+$$P=2\pi r,$$
+
+ou, avec le diamètre $d$ : $P=\pi d$.
+
+## Figure composée
+
+Pour une figure composée, repérer uniquement les segments ou arcs qui appartiennent au contour extérieur. Certains segments utilisés pour découper la figure ne font pas partie du périmètre.
+
+## Exemple
+
+Un rectangle de 8 cm sur 3 cm a pour périmètre :
+
+$$2\times(8+3)=22\text{ cm}.$$
+
+## Vérification
+
+Le périmètre s'exprime avec une unité de **longueur**, jamais en cm² ou m².
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- confondre aire et périmètre ;
+- oublier un côté d'une figure composée ;
+- utiliser le rayon à la place du diamètre dans $\pi d$ ;
+- additionner des longueurs exprimées dans des unités différentes.

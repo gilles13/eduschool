@@ -1,34 +1,56 @@
-# Opérations
+# Opérations et priorités de calcul
 
-## À connaître
+Les quatre opérations usuelles sont l'addition, la soustraction, la multiplication et la division. Le choix de l'opération dépend du **sens du problème**, pas seulement des nombres présents dans l'énoncé.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Opérations**.
+## Vocabulaire
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- addition : somme ;
+- soustraction : différence ;
+- multiplication : produit ;
+- division : quotient.
 
-## Méthode
+## Priorités opératoires
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Dans une expression sans parenthèses :
 
-## Automatismes à maîtriser
+1. on effectue d'abord les multiplications et divisions ;
+2. puis les additions et soustractions ;
+3. à priorité égale, on calcule de gauche à droite.
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+Les parenthèses indiquent ce qui doit être calculé en premier.
+
+## Exemple
+
+$$18 - 3 \times 4 = 18 - 12 = 6.$$
+
+En revanche :
+
+$$(18-3)\times4 = 15\times4 = 60.$$
+
+Les parenthèses changent donc le résultat.
+
+## Choisir une opération dans un problème
+
+Avant de calculer, reformuler la question : cherche-t-on un total, une différence, plusieurs groupes identiques, la taille d'une part ou le nombre de parts ?
+
+Exemple : 84 cartes sont réparties également entre 7 joueurs. On cherche la taille d'une part : $84 \div 7 = 12$.
+
+## Vérifier un calcul
+
+- estimer l'ordre de grandeur avant ou après le calcul ;
+- vérifier qu'une division donne un résultat cohérent ;
+- pour une division euclidienne, contrôler : dividende = diviseur × quotient + reste.
+
+## Automatismes
+
+- tables de multiplication ;
+- compléments à 10, 100 et 1 000 ;
+- doubles, moitiés, triples et quarts simples ;
+- multiplication/division par 10, 100 et 1 000 ;
+- priorités opératoires élémentaires.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- calculer systématiquement de gauche à droite sans respecter les priorités ;
+- choisir une opération à partir d'un mot isolé de l'énoncé ;
+- oublier les parenthèses lors de la traduction d'une phrase en expression.

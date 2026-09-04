@@ -1,34 +1,43 @@
 # Puissances
 
-## À connaître
+Une puissance permet d'écrire de façon compacte un produit de facteurs égaux.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Puissances**.
+## Définition
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Pour un entier $n \geq 1$ :
 
-## Méthode
+$$a^n = \underbrace{a\times a\times\cdots\times a}_{n\text{ facteurs}}.$$
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Le nombre $a$ est la base et $n$ l'exposant. Pour $a\neq0$, on pose $a^0=1$.
 
-## Automatismes à maîtriser
+## Exemples
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+$$2^4=2\times2\times2\times2=16.$$
+
+$$10^3=1000, \qquad 10^{-2}=0,01.$$
+
+## Règles utiles
+
+Pour une même base non nulle :
+
+$$a^m\times a^n=a^{m+n}$$
+
+et, lorsque le quotient a un sens,
+
+$$\frac{a^m}{a^n}=a^{m-n}.$$
+
+## Puissances de 10
+
+Les puissances de 10 sont utiles pour écrire des nombres très grands ou très petits et préparer l'écriture scientifique.
+
+## Priorité
+
+La puissance est calculée avant une multiplication ou une addition. Ainsi :
+
+$$3+2^3=3+8=11.$$
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- $2^3$ n'est pas $2\times3$ ;
+- $a^m+a^n$ ne se simplifie pas en $a^{m+n}$ ;
+- $(-2)^4=16$, tandis que $-2^4=-16$ : les parenthèses sont importantes.

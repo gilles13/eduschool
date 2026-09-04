@@ -1,3 +1,11 @@
+# eduschool 0.10.1
+
+## Documentation pédagogique
+
+- Enrichissement d’un premier noyau de fiches de révision de 6e et 5e.
+- Ajout de méthodes, exemples travaillés, automatismes, contrôles de cohérence et erreurs fréquentes.
+- Ajout de conventions de rédaction pour guider les futures fiches pédagogiques.
+
 # eduschool 0.10.0
 
 - Première architecture de package R.

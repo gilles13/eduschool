@@ -1,34 +1,37 @@
 # Angles
 
-## À connaître
+Un angle est formé par deux demi-droites de même origine. Sa mesure s'exprime généralement en degrés.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Angles**.
+## Repères
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- angle aigu : inférieur à $90^\circ$ ;
+- angle droit : égal à $90^\circ$ ;
+- angle obtus : compris entre $90^\circ$ et $180^\circ$ ;
+- angle plat : égal à $180^\circ$.
 
-## Méthode
+## Mesurer avec un rapporteur
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+1. placer le centre du rapporteur sur le sommet ;
+2. aligner le zéro avec l'un des côtés ;
+3. choisir la bonne graduation en vérifiant si l'angle est aigu ou obtus ;
+4. lire la mesure au niveau du second côté.
 
-## Automatismes à maîtriser
+## Relations utiles en 5e
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+Lorsque deux droites sont parallèles et coupées par une sécante, certaines paires d'angles ont la même mesure. Ces relations servent à déterminer des angles inconnus et à justifier un parallélisme.
+
+La somme des angles d'un triangle vaut :
+
+$$180^\circ.$$
+
+## Exemple
+
+Dans un triangle, deux angles mesurent $48^\circ$ et $67^\circ$. Le troisième mesure :
+
+$$180-48-67=65^\circ.$$
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- lire la mauvaise échelle du rapporteur ;
+- considérer que la longueur des côtés influence la mesure de l'angle ;
+- affirmer que deux angles sont égaux uniquement parce qu'ils « ont l'air » égaux sur la figure.

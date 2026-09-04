@@ -1,34 +1,36 @@
 # Triangles
 
-## À connaître
+Un triangle est défini par trois sommets non alignés. Les propriétés de ses côtés et de ses angles permettent de le construire et de le caractériser.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Triangles**.
+## Triangles particuliers
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- triangle isocèle : deux côtés de même longueur ; les angles à la base ont même mesure ;
+- triangle équilatéral : trois côtés de même longueur ; ses trois angles mesurent $60^\circ$ ;
+- triangle rectangle : un angle droit.
 
-## Méthode
+## Somme des angles
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Dans tout triangle :
 
-## Automatismes à maîtriser
+$$A+B+C=180^\circ.$$
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+## Construire un triangle
+
+Pour construire un triangle à partir de longueurs et/ou d'angles :
+
+1. tracer d'abord un côté connu ;
+2. utiliser le compas pour reporter une longueur ;
+3. utiliser le rapporteur pour reporter un angle ;
+4. contrôler les données sur la figure obtenue.
+
+## Inégalité triangulaire
+
+Pour construire un triangle non aplati, la longueur du plus grand côté doit être strictement inférieure à la somme des deux autres.
+
+Ainsi, 3 cm, 4 cm et 8 cm ne permettent pas de construire un triangle car $8>3+4$.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- se fier à l'apparence d'une figure au lieu aux données ;
+- confondre hauteur, médiane, médiatrice et bissectrice ;
+- oublier que l'ordre des lettres est important pour nommer un angle.

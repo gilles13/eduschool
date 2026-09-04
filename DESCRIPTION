@@ -1,7 +1,7 @@
 Package: eduschool
 Type: Package
 Title: Référentiels scolaires français et outils de révision
-Version: 0.10.0
+Version: 0.10.1
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
 Description: Fournit des référentiels structurés sur les programmes scolaires
     français, une base documentaire pédagogique et des outils simples pour

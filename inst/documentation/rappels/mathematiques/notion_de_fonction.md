@@ -1,34 +1,44 @@
 # Notion de fonction
 
-## À connaître
+Une fonction associe à chaque nombre admissible $x$ un unique nombre, appelé **image de $x$**.
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Notion de fonction**.
+On peut noter :
 
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+$$f:x\mapsto f(x).$$
 
-## Méthode
+## Image et antécédent
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Si $f(3)=7$ :
 
-## Automatismes à maîtriser
+- 7 est l'image de 3 par $f$ ;
+- 3 est un antécédent de 7 par $f$.
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+Une valeur peut avoir plusieurs antécédents, mais un nombre $x$ ne peut pas avoir deux images différentes par une même fonction.
+
+## Représentations
+
+Une fonction peut être donnée par :
+
+- une formule ;
+- un tableau de valeurs ;
+- une courbe ;
+- un programme de calcul ;
+- une situation concrète.
+
+## Exemple
+
+Pour $f(x)=2x+1$ :
+
+$$f(4)=2\times4+1=9.$$
+
+Pour rechercher un antécédent de 9, on cherche $x$ tel que $2x+1=9$, donc $x=4$.
+
+## Lire une courbe
+
+Pour lire une image, on part de l'abscisse puis on rejoint la courbe avant de lire l'ordonnée. Pour un antécédent, on part de l'ordonnée et on cherche les points de la courbe correspondants.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- confondre image et antécédent ;
+- croire que $f(x)$ signifie $f\times x$ ;
+- oublier qu'une image est unique alors qu'un nombre peut avoir plusieurs antécédents.
