@@ -30,3 +30,7 @@ importFrom(DBI,dbIsValid)
 importFrom(DBI,dbWriteTable)
 
 S3method(print,eduschool_context)
+export(diagramme_package)
+export(diagramme_parcours_scolaire)
+export(diagrammes_disponibles)
+export(produire_diagramme_html)
