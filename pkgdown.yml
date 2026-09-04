@@ -1,0 +1,13 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  architecture-des-donnees: architecture-des-donnees.html
+  documentation-pedagogique: documentation-pedagogique.html
+  exercices-et-revisions: exercices-et-revisions.html
+  prise-en-main: prise-en-main.html
+  programmes-et-capacites: programmes-et-capacites.html
+last_built: 2026-09-04T09:08Z
+urls:
+  reference: https://gilles13.github.io/eduschool/reference
+  article: https://gilles13.github.io/eduschool/articles
