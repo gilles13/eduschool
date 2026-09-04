@@ -11,7 +11,9 @@ navbar:
     right: github
 articles:
 - title: Prise en main
-  contents: prise-en-main
+  contents: 
+  - prise-en-main
+  - exemple-classe-6e
 - title: Parcours scolaires
   contents:
   - parcours-scolaires
