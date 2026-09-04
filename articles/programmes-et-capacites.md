@@ -1,5 +1,10 @@
 # Programmes et capacités
 
+![Relations entre programmes, capacités et
+notions](../reference/figures/programmes_capacites.svg)
+
+Relations entre programmes, capacités et notions
+
 Les référentiels sont consultables sans connexion préalable.
 [`programmes()`](https://gilles13.github.io/eduschool/reference/programmes.md)
 filtre les programmes et

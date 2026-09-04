@@ -1,5 +1,10 @@
 # Documentation pédagogique
 
+![Organisation de la documentation
+pédagogique](../reference/figures/documentation_pedagogique.svg)
+
+Organisation de la documentation pédagogique
+
 La documentation est séparée des programmes officiels. Une notion
 pédagogique peut être reliée à plusieurs capacités.
 

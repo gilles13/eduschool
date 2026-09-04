@@ -1,5 +1,10 @@
 # Prise en main de eduschool
 
+![Du référentiel à une fiche de
+révision](../reference/figures/prise_en_main.svg)
+
+Du référentiel à une fiche de révision
+
 ## Objectif
 
 Cette vignette présente le chemin le plus court pour utiliser le

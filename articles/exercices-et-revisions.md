@@ -1,5 +1,10 @@
 # Exercices et révisions
 
+![Chaîne de génération des exercices et
+révisions](../reference/figures/exercices_revisions.svg)
+
+Chaîne de génération des exercices et révisions
+
 Le moteur d’exercices est déterministe lorsqu’un `seed` est fourni.
 
 ``` r

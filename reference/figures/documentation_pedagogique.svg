@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1750" height="520" viewBox="0 0 1750 520" role="img" aria-labelledby="title desc">
+<title id="title">Chaîne de documentation pédagogique</title>
+<desc id="desc">Séparation entre sources officielles, capacités, notions, prérequis et rappels pédagogiques.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker>
+
+<style><![CDATA[
+.edge { fill:none; stroke:#59636e; stroke-width:2.2; marker-end:url(#arrow); }
+.edge-label { font:13px system-ui,sans-serif; fill:#4a5560; }
+.node rect { stroke-width:1.8; rx:12; ry:12; }
+.node text { font:15px system-ui,sans-serif; fill:#17212b; text-anchor:middle; dominant-baseline:middle; }
+.normal rect { fill:#f7f9fb; stroke:#77828d; }.source rect,.niveau rect { fill:#eef5ff; stroke:#5e7fa7; }.database rect { fill:#f2f0ff; stroke:#7667a8; }.documentation rect,.serie rect { fill:#fff6e8; stroke:#a77b3f; }.accent rect,.voie rect { fill:#eaf8f0; stroke:#4f8b68; }.sortie rect { fill:#f4f7ea; stroke:#788d49; }
+.group rect { stroke-width:1.5; stroke-dasharray:7 5; rx:18; ry:18; }.group-title { font:600 15px system-ui,sans-serif; fill:#34404b; }.cycle3 rect { fill:#f5f9ff; stroke:#91a9c5; }.cycle4 rect { fill:#f4faf6; stroke:#88aa94; }.cycle_terminal rect { fill:#fffaf0; stroke:#b89a68; }
+]]></style>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<path class="edge" d="M 270 256 L 300 256 L 300 256 L 330 256"/>
+<path class="edge" d="M 520 256 L 560 256 L 560 256 L 600 256"/>
+<path class="edge" d="M 820 256 L 860 256 L 860 126 L 900 126"/>
+<path class="edge" d="M 820 256 L 860 256 L 860 386 L 900 386"/>
+<path class="edge" d="M 1110 386 L 1150 386 L 1150 256 L 1190 256"/>
+<path class="edge" d="M 1410 256 L 1445 256 L 1445 256 L 1480 256"/>
+<path class="edge" d="M 900 126 L 860 126 L 860 256 L 820 256"/>
+<text class="edge-label" x="860" y="185" text-anchor="middle">structure</text>
+<g class="node source" id="OFF">
+<rect x="40" y="220" width="230" height="72" rx="14" ry="14"/>
+<text x="155" y="246.5">Sources et</text>
+<text x="155" y="265.5">programmes officiels</text>
+</g>
+<g class="node accent" id="CAP">
+<rect x="330" y="220" width="190" height="72" rx="14" ry="14"/>
+<text x="425" y="256">Capacités</text>
+</g>
+<g class="node normal" id="NOT">
+<rect x="600" y="220" width="220" height="72" rx="14" ry="14"/>
+<text x="710" y="246.5">Notions</text>
+<text x="710" y="265.5">pédagogiques</text>
+</g>
+<g class="node normal" id="PRE">
+<rect x="900" y="90" width="190" height="72" rx="14" ry="14"/>
+<text x="995" y="126">Prérequis</text>
+</g>
+<g class="node documentation" id="RAP">
+<rect x="900" y="350" width="210" height="72" rx="14" ry="14"/>
+<text x="1005" y="376.5">Rappels</text>
+<text x="1005" y="395.5">Markdown</text>
+</g>
+<g class="node normal" id="EXO">
+<rect x="1190" y="220" width="220" height="72" rx="14" ry="14"/>
+<text x="1300" y="246.5">Modèles</text>
+<text x="1300" y="265.5">d’exercices</text>
+</g>
+<g class="node sortie" id="FICHE">
+<rect x="1480" y="220" width="210" height="72" rx="14" ry="14"/>
+<text x="1585" y="246.5">Révision</text>
+<text x="1585" y="265.5">utilisateur</text>
+</g>
+</svg>

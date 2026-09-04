@@ -2,6 +2,14 @@
 
 ## All functions
 
+- [`diagrammes_disponibles()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  [`produire_diagramme_html()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  [`produire_diagramme_svg()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  [`diagramme_parcours_scolaire()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  [`diagramme_package()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  [`generer_diagrammes_documentation()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  [`generer_documentation_visuelle()`](https://gilles13.github.io/eduschool/reference/diagrammes.md)
+  : Diagrammes HTML et SVG de eduschool
 - [`notions()`](https://gilles13.github.io/eduschool/reference/documentation.md)
   [`notions_capacite()`](https://gilles13.github.io/eduschool/reference/documentation.md)
   [`prerequis_notion()`](https://gilles13.github.io/eduschool/reference/documentation.md)

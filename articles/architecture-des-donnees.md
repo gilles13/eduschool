@@ -1,5 +1,10 @@
 # Architecture des données
 
+![Architecture générale du mini-SI
+eduschool](../reference/figures/architecture_si.svg)
+
+Architecture générale du mini-SI eduschool
+
 Les données distribuées sont conservées sous `inst/` et retrouvées avec
 [`eduschool_path()`](https://gilles13.github.io/eduschool/reference/eduschool_path.md).
 Les consultations simples utilisent directement les CSV; DuckDB reste
