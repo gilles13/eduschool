@@ -1,5 +1,48 @@
 # Changelog
 
+## eduschool 0.10.5
+
+### Collège — couverture transdisciplinaire
+
+- extension des synthèses pédagogiques aux classes de 5e, 4e et 3e pour
+  l’ensemble des enseignements obligatoires ;
+- prise en compte des millésimes effectivement applicables en 2026-2027,
+  notamment pour le français, les mathématiques et les langues vivantes
+  ;
+- ajout de thèmes et de capacités représentatives en
+  histoire-géographie, EMC, physique-chimie, SVT, technologie, EPS, arts
+  plastiques et éducation musicale ;
+- ajout de notions documentaires transdisciplinaires permettant à
+  [`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
+  de produire des sorties utiles sur tout le collège.
+
+### Sixième transdisciplinaire
+
+- enrichissement des programmes de 6e dans l’ensemble des enseignements
+  obligatoires ;
+- ajout de thèmes et de quelques capacités représentatives hors
+  mathématiques ;
+- ajout de notions pédagogiques reliées aux capacités ;
+- ajout des fonctions
+  [`horaires_niveau()`](https://gilles13.github.io/eduschool/reference/horaires_niveau.md),
+  [`themes_niveau()`](https://gilles13.github.io/eduschool/reference/themes_niveau.md),
+  [`notions_niveau()`](https://gilles13.github.io/eduschool/reference/notions_niveau.md)
+  et
+  [`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
+  ;
+- ajout de la vignette vitrine « Explorer une classe de 6e avec
+  eduschool » ;
+- premiers enrichissements du graphe de prérequis en mathématiques.
+
+### Graphe de prérequis de sixième
+
+- enrichissement raisonné des prérequis mathématiques de 6e ;
+- ajout de relations sur les fractions, grandeurs, géométrie, données,
+  probabilités et algorithmique ;
+- distinction entre prérequis requis et notions simplement utiles ;
+- ajout de contrôles de cohérence des références et de l’absence de
+  cycle dans le graphe.
+
 ## eduschool 0.10.4
 
 ### Programmes du lycée — lot 1
@@ -92,12 +135,36 @@
 ## eduschool 0.10.0
 
 - Première architecture de package R.
+
 - Ressources déplacées sous `inst/`.
+
 - Nouvelle résolution des chemins avec
   [`eduschool_path()`](https://gilles13.github.io/eduschool/reference/eduschool_path.md).
+
 - Consultation des référentiels et de la documentation sans état global.
+
 - DuckDB devient une couche optionnelle de requête.
+
 - Ajout d’une documentation utilisateur, de documentation mainteneur et
   de tests `testthat`.
+
 - Ajout d’une stratégie de transition vers un développement piloté par
-  Git.
+  Git. \## eduschool 0.10.5 — lot 4 : lycée complet
+
+- couverture synthétique des enseignements communs de seconde, première
+  et terminale ;
+
+- couverture représentative des principales spécialités de la voie
+  générale ;
+
+- couverture du tronc commun de la voie technologique ;
+
+- ajout de thèmes, capacités et notions documentaires pour les
+  disciplines hors mathématiques ;
+
+- [`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
+  distingue désormais les programmes par enseignement, ce qui évite de
+  mélanger histoire-géographie et HGGSP, par exemple ;
+
+- ajout de la version 2026-2027 des horaires de terminale afin que les
+  synthèses par défaut couvrent bien l’année scolaire courante.

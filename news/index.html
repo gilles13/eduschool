@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +29,32 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.10.5" id="eduschool-0105">eduschool 0.10.5<a class="anchor" aria-label="anchor" href="#eduschool-0105"></a></h2>
+<div class="section level3">
+<h3 id="collège--couverture-transdisciplinaire-0-10-5">Collège — couverture transdisciplinaire<a class="anchor" aria-label="anchor" href="#coll%C3%A8ge--couverture-transdisciplinaire-0-10-5"></a></h3>
+<ul><li>extension des synthèses pédagogiques aux classes de 5e, 4e et 3e pour l’ensemble des enseignements obligatoires ;</li>
+<li>prise en compte des millésimes effectivement applicables en 2026-2027, notamment pour le français, les mathématiques et les langues vivantes ;</li>
+<li>ajout de thèmes et de capacités représentatives en histoire-géographie, EMC, physique-chimie, SVT, technologie, EPS, arts plastiques et éducation musicale ;</li>
+<li>ajout de notions documentaires transdisciplinaires permettant à <code><a href="../reference/resume_niveau.html">resume_niveau()</a></code> de produire des sorties utiles sur tout le collège.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="sixième-transdisciplinaire-0-10-5">Sixième transdisciplinaire<a class="anchor" aria-label="anchor" href="#sixi%C3%A8me-transdisciplinaire-0-10-5"></a></h3>
+<ul><li>enrichissement des programmes de 6e dans l’ensemble des enseignements obligatoires ;</li>
+<li>ajout de thèmes et de quelques capacités représentatives hors mathématiques ;</li>
+<li>ajout de notions pédagogiques reliées aux capacités ;</li>
+<li>ajout des fonctions <code><a href="../reference/horaires_niveau.html">horaires_niveau()</a></code>, <code><a href="../reference/themes_niveau.html">themes_niveau()</a></code>, <code><a href="../reference/notions_niveau.html">notions_niveau()</a></code> et <code><a href="../reference/resume_niveau.html">resume_niveau()</a></code> ;</li>
+<li>ajout de la vignette vitrine « Explorer une classe de 6e avec eduschool » ;</li>
+<li>premiers enrichissements du graphe de prérequis en mathématiques.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="graphe-de-prérequis-de-sixième-0-10-5">Graphe de prérequis de sixième<a class="anchor" aria-label="anchor" href="#graphe-de-pr%C3%A9requis-de-sixi%C3%A8me-0-10-5"></a></h3>
+<ul><li>enrichissement raisonné des prérequis mathématiques de 6e ;</li>
+<li>ajout de relations sur les fractions, grandeurs, géométrie, données, probabilités et algorithmique ;</li>
+<li>distinction entre prérequis requis et notions simplement utiles ;</li>
+<li>ajout de contrôles de cohérence des références et de l’absence de cycle dans le graphe.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.10.4" id="eduschool-0104">eduschool 0.10.4<a class="anchor" aria-label="anchor" href="#eduschool-0104"></a></h2>
 <div class="section level3">
@@ -101,13 +127,19 @@
 </div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.10.0" id="eduschool-0100">eduschool 0.10.0<a class="anchor" aria-label="anchor" href="#eduschool-0100"></a></h2>
-<ul><li>Première architecture de package R.</li>
-<li>Ressources déplacées sous <code>inst/</code>.</li>
-<li>Nouvelle résolution des chemins avec <code><a href="../reference/eduschool_path.html">eduschool_path()</a></code>.</li>
-<li>Consultation des référentiels et de la documentation sans état global.</li>
-<li>DuckDB devient une couche optionnelle de requête.</li>
-<li>Ajout d’une documentation utilisateur, de documentation mainteneur et de tests <code>testthat</code>.</li>
-<li>Ajout d’une stratégie de transition vers un développement piloté par Git.</li>
+<ul><li><p>Première architecture de package R.</p></li>
+<li><p>Ressources déplacées sous <code>inst/</code>.</p></li>
+<li><p>Nouvelle résolution des chemins avec <code><a href="../reference/eduschool_path.html">eduschool_path()</a></code>.</p></li>
+<li><p>Consultation des référentiels et de la documentation sans état global.</p></li>
+<li><p>DuckDB devient une couche optionnelle de requête.</p></li>
+<li><p>Ajout d’une documentation utilisateur, de documentation mainteneur et de tests <code>testthat</code>.</p></li>
+<li><p>Ajout d’une stratégie de transition vers un développement piloté par Git. ## eduschool 0.10.5 — lot 4 : lycée complet</p></li>
+<li><p>couverture synthétique des enseignements communs de seconde, première et terminale ;</p></li>
+<li><p>couverture représentative des principales spécialités de la voie générale ;</p></li>
+<li><p>couverture du tronc commun de la voie technologique ;</p></li>
+<li><p>ajout de thèmes, capacités et notions documentaires pour les disciplines hors mathématiques ;</p></li>
+<li><p><code><a href="../reference/resume_niveau.html">resume_niveau()</a></code> distingue désormais les programmes par enseignement, ce qui évite de mélanger histoire-géographie et HGGSP, par exemple ;</p></li>
+<li><p>ajout de la version 2026-2027 des horaires de terminale afin que les synthèses par défaut couvrent bien l’année scolaire courante.</p></li>
 </ul></div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>

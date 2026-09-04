@@ -30,12 +30,16 @@
   : Générer les SVG utilisés par la documentation
 - [`generer_documentation_visuelle()`](https://gilles13.github.io/eduschool/reference/generer_documentation_visuelle.md)
   : Générer toute la documentation visuelle
+- [`horaires_niveau()`](https://gilles13.github.io/eduschool/reference/horaires_niveau.md)
+  : Horaires d'un niveau scolaire
 - [`niveaux()`](https://gilles13.github.io/eduschool/reference/niveaux.md)
   : Niveaux scolaires
 - [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
   : Notions documentaires
 - [`notions_capacite()`](https://gilles13.github.io/eduschool/reference/notions_capacite.md)
   : Notions associées à une capacité
+- [`notions_niveau()`](https://gilles13.github.io/eduschool/reference/notions_niveau.md)
+  : Notions documentées pour un niveau
 - [`obtenir_rappel()`](https://gilles13.github.io/eduschool/reference/obtenir_rappel.md)
   : Lire le rappel pédagogique d'une notion
 - [`ouvrir_base()`](https://gilles13.github.io/eduschool/reference/ouvrir_base.md)
@@ -60,7 +64,11 @@
   [`libelle_niveau`](https://gilles13.github.io/eduschool/reference/rapports.md)
   [`libelle_capacite`](https://gilles13.github.io/eduschool/reference/rapports.md)
   : Produire des fiches et corrigés
+- [`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
+  : Résumé pédagogique d'un niveau
 - [`series()`](https://gilles13.github.io/eduschool/reference/series.md)
   : Séries scolaires
+- [`themes_niveau()`](https://gilles13.github.io/eduschool/reference/themes_niveau.md)
+  : Grands thèmes étudiés à un niveau
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :
   Voies scolaires
