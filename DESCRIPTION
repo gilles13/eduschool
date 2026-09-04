@@ -22,3 +22,4 @@ Suggests:
     roxygen2
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+URL: https://gilles13.github.io/eduschool/

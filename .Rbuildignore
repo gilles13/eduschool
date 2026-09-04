@@ -4,3 +4,6 @@
 ^docs$
 ^launcher\.R$
 ^VERSION$
+^_pkgdown\.yml$
+^pkgdown$
+^\.github$

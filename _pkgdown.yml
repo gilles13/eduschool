@@ -1,0 +1,22 @@
+url: https://gilles13.github.io/eduschool/
+template:
+  bootstrap: 5
+navbar:
+  structure:
+    left:
+    - intro
+    - reference
+    - articles
+    - news
+    right: github
+articles:
+- title: Prise en main
+  contents: prise-en-main
+- title: Utiliser eduschool
+  contents:
+  - programmes-et-capacites
+  - documentation-pedagogique
+  - exercices-et-revisions
+- title: Comprendre les données
+  contents: architecture-des-donnees
+
