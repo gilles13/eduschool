@@ -1,5 +1,36 @@
 # Changelog
 
+## eduschool 0.10.2
+
+### Documentation visuelle
+
+- Ajout de diagrammes HTML et SVG pour représenter les parcours
+  scolaires et l’architecture du package.
+- Ajout d’un moteur SVG natif en R, sans dépendance à Node.js, npm ou
+  Mermaid CLI.
+- Ajout de la représentation des cycles scolaires dans le diagramme des
+  parcours.
+- Ajout de visuels réutilisables dans `man/figures/`.
+
+### Vignettes et documentation
+
+- Illustration des vignettes avec les nouveaux diagrammes SVG.
+- Ajout de vignettes consacrées aux parcours scolaires et au
+  développement du package.
+- Réorganisation de la documentation pkgdown.
+- Simplification du README et de l’installation depuis RStudio avec
+  `remotes::install_github()`.
+
+### Maintenance du projet
+
+- Nettoyage de l’ancienne infrastructure de chargement du projet.
+- Suppression de `launcher.R` et de `dev/session.R`.
+- Conservation d’un workflow de contrôle avec `dev/check.R`.
+
+### Documentation pédagogique
+
+- Poursuite de l’enrichissement des fiches de révision du collège.
+
 ## eduschool 0.10.1
 
 ### Documentation pédagogique
