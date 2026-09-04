@@ -1,5 +1,4 @@
 url: https://gilles13.github.io/eduschool/
-destination: pkgdown
 template:
   bootstrap: 5
 navbar:
