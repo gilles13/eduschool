@@ -18,7 +18,7 @@ LCA;FRA;Langues et cultures de l'Antiquité;OPTION
 LCE;LVE;Langues et cultures européennes;OPTION
 LCR;LVR;Langues et cultures régionales;OPTION
 CHANT_CHORAL;MUS;Chant choral;OPTION
-PHILO;FRA;Philosophie;DISCIPLINAIRE
+PHILO;PHILO;Philosophie;DISCIPLINAIRE
 HG_LYCEE;HG;Histoire-géographie;DISCIPLINAIRE
 LVA_LVB;LVE;Langues vivantes A et B;DISCIPLINAIRE
 SES;SES;Sciences économiques et sociales;DISCIPLINAIRE

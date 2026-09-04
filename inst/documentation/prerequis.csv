@@ -15,3 +15,20 @@ MAT_PROBABILITES_CONDITIONNELLES_ET_INDEPENDANCE;MAT_PROBABILITES;REQUIS;Notion 
 MAT_TRIGONOMETRIE;MAT_TRIANGLES;UTILE;Notion utile pour aborder ce thème.
 MAT_VARIABLES_ALEATOIRES_REELLES;MAT_PROBABILITES;REQUIS;Notion utile pour aborder ce thème.
 MAT_VARIATIONS_ET_COURBES_REPRESENTATIVES_DES_FONCTIONS;MAT_DERIVATION;REQUIS;Notion utile pour aborder ce thème.
+MAT_PROP;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;REQUIS;La proportionnalité mobilise les calculs sur les nombres entiers et décimaux.
+MAT_FRACTION_SENS;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;REQUIS;Comprendre les fractions s’appuie sur la maîtrise des nombres entiers et des écritures décimales.
+MAT_PREMIERS_RAISONNEMENTS_ALGEBRIQUES;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;REQUIS;Les premiers raisonnements algébriques mobilisent les calculs et les relations entre nombres.
+MAT_LONGUEURS_ET_PERIMETRES;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;REQUIS;Mesurer et calculer des longueurs ou des périmètres nécessite de calculer avec des nombres entiers et décimaux.
+MAT_AIRES;MAT_LONGUEURS_ET_PERIMETRES;REQUIS;Le calcul d’aires s’appuie sur la maîtrise des longueurs et des unités associées.
+MAT_AIRES;MAT_CONFIGURATIONS_PLANES;UTILE;Reconnaître les figures planes facilite le choix et l’application des formules d’aire.
+MAT_VOLUMES;MAT_AIRES;UTILE;Le passage des aires aux volumes aide à comprendre la mesure de l’espace en trois dimensions.
+MAT_VOLUMES;MAT_VISION_DANS_L_ESPACE;REQUIS;Comprendre un volume suppose de savoir interpréter des objets et assemblages dans l’espace.
+MAT_HORAIRES_ET_DUREES;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;REQUIS;Les calculs de durées mobilisent les opérations sur les nombres et les conversions simples.
+MAT_CONFIGURATIONS_PLANES;MAT_ANGLES;REQUIS;Les constructions et raisonnements sur les figures planes mobilisent la notion d’angle.
+MAT_CONFIGURATIONS_PLANES;MAT_TRIANGLES;UTILE;La connaissance des triangles soutient l’étude de nombreuses configurations planes de sixième.
+MAT_TRIANGLES;MAT_ANGLES;UTILE;Comparer et raisonner sur les triangles mobilise fréquemment leurs angles.
+MAT_VISION_DANS_L_ESPACE;MAT_CONFIGURATIONS_PLANES;UTILE;Passer d’un objet spatial à ses représentations planes mobilise des repères de géométrie plane.
+MAT_ORGANISATION_ET_GESTION_DE_DONNEES;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;REQUIS;Lire et organiser des données numériques suppose de savoir comparer et manipuler les nombres.
+MAT_PROBABILITES;MAT_FRACTION_SENS;UTILE;Les fractions donnent un support numérique naturel pour exprimer des probabilités simples.
+MAT_PROBABILITES;MAT_ORGANISATION_ET_GESTION_DE_DONNEES;UTILE;Tableaux et représentations de données facilitent l’analyse d’expériences aléatoires simples.
+MAT_INSTRUCTIONS_SEQUENCES_ET_REPETITIONS;MAT_NOMBRES_ENTIERS_ET_DECIMAUX;UTILE;Les premiers algorithmes de calcul mobilisent fréquemment les nombres entiers et décimaux.

@@ -504,3 +504,493 @@ ITM_MAT_EXP_2019_03_02_01;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_03_02;TG;1;CAPACITE;
 ITM_MAT_EXP_2019_03_02_02;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_03_02;TG;2;CAPACITE;Traduire un système linéaire ou une évolution discrète sous forme matricielle.;Capacité attendue reformulée à partir du programme officiel.;SRC_BO_2019_08_MATH_OPTIONS
 ITM_MAT_EXP_2019_03_02_03;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_03_02;TG;3;CAPACITE;Résoudre un système linéaire par des opérations élémentaires ou à l’aide d’une matrice inverse lorsque cela est possible.;Capacité attendue reformulée à partir du programme officiel.;SRC_BO_2019_08_MATH_OPTIONS
 ITM_MAT_EXP_2019_03_02_04;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_03_02;TG;4;CAPACITE;Étudier une suite de vecteurs définie par une relation matricielle dans un problème de modélisation.;Capacité attendue reformulée à partir du programme officiel.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_FRA_6E_00;PRG_FRA_C3_2025;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_01;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;1;THEME;Lecture et compréhension;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_01_C01;PRG_FRA_C3_2025;ITM_FRA_6E_01;6E;1;CAPACITE;Lire avec fluidité et comprendre des textes, documents et images.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_02;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;2;THEME;Culture littéraire et artistique;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_02_C01;PRG_FRA_C3_2025;ITM_FRA_6E_02;6E;1;CAPACITE;Lire des œuvres et construire des repères littéraires et artistiques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_03;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;3;THEME;Écriture;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_03_C01;PRG_FRA_C3_2025;ITM_FRA_6E_03;6E;1;CAPACITE;Produire, réviser et améliorer des écrits variés.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_04;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;4;THEME;Oral;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_04_C01;PRG_FRA_C3_2025;ITM_FRA_6E_04;6E;1;CAPACITE;Écouter, prendre la parole et participer à des échanges.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_05;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;5;THEME;Vocabulaire;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_05_C01;PRG_FRA_C3_2025;ITM_FRA_6E_05;6E;1;CAPACITE;Enrichir le lexique et comprendre la formation et le sens des mots.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_06;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;6;THEME;Grammaire et orthographe;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_06_C01;PRG_FRA_C3_2025;ITM_FRA_6E_06;6E;1;CAPACITE;Identifier les constituants de la phrase et maîtriser les accords essentiels.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_16_FR_C3
+ITM_HG_6E_00;PRG_HG_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_01;PRG_HG_C3_2020;ITM_HG_6E_00;6E;1;THEME;La longue histoire de l’humanité et des migrations;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_01_C01;PRG_HG_C3_2020;ITM_HG_6E_01;6E;1;CAPACITE;Situer les premières sociétés humaines et les grandes migrations dans le temps et l’espace.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_02;PRG_HG_C3_2020;ITM_HG_6E_00;6E;2;THEME;Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_02_C01;PRG_HG_C3_2020;ITM_HG_6E_02;6E;1;CAPACITE;Identifier des repères sur les mondes grec, romain et les récits fondateurs.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_03;PRG_HG_C3_2020;ITM_HG_6E_00;6E;3;THEME;L’empire romain dans le monde antique;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_03_C01;PRG_HG_C3_2020;ITM_HG_6E_03;6E;1;CAPACITE;Caractériser l’Empire romain, ses territoires et ses héritages.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_04;PRG_HG_C3_2020;ITM_HG_6E_00;6E;4;THEME;Habiter une métropole;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_04_C01;PRG_HG_C3_2020;ITM_HG_6E_04;6E;1;CAPACITE;Décrire les manières d’habiter et les paysages d’une métropole.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_05;PRG_HG_C3_2020;ITM_HG_6E_00;6E;5;THEME;Habiter un espace de faible densité;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_05_C01;PRG_HG_C3_2020;ITM_HG_6E_05;6E;1;CAPACITE;Comparer différentes formes d’habiter les espaces de faible densité.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_06;PRG_HG_C3_2020;ITM_HG_6E_00;6E;6;THEME;Habiter les littoraux;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_06_C01;PRG_HG_C3_2020;ITM_HG_6E_06;6E;1;CAPACITE;Identifier les usages, aménagements et contraintes des espaces littoraux.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_07;PRG_HG_C3_2020;ITM_HG_6E_00;6E;7;THEME;Le monde habité;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_07_C01;PRG_HG_C3_2020;ITM_HG_6E_07;6E;1;CAPACITE;Décrire les grands foyers de population et les espaces faiblement peuplés.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_SCI_6E_00;PRG_SCI_C3_2023;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_01;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;1;THEME;Matière, mouvement, énergie, information;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_01_C01;PRG_SCI_C3_2023;ITM_SCI_6E_01;6E;1;CAPACITE;Décrire des états et transformations de la matière ainsi que des formes d’énergie.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_02;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;2;THEME;Le vivant, sa diversité et les fonctions qui le caractérisent;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_02_C01;PRG_SCI_C3_2023;ITM_SCI_6E_02;6E;1;CAPACITE;Identifier des caractéristiques du vivant, de sa diversité et de son fonctionnement.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_03;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;3;THEME;Les objets techniques au cœur de la société;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_03_C01;PRG_SCI_C3_2023;ITM_SCI_6E_03;6E;1;CAPACITE;Décrire le besoin, le fonctionnement et l’évolution d’objets techniques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_04;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;4;THEME;La Terre, une planète peuplée par des êtres vivants;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_04_C01;PRG_SCI_C3_2023;ITM_SCI_6E_04;6E;1;CAPACITE;Relier phénomènes terrestres, environnement et conditions de vie.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2023_25_MENE2314101A
+ITM_LVE_6E_00;PRG_LVE_COLLEGE_2025;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_01;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;1;THEME;Repères culturels;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_01_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_01;6E;1;CAPACITE;Découvrir des personnes, modes de vie, lieux, récits et formes artistiques des aires linguistiques étudiées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_02;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;2;THEME;Compréhension;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_02_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_02;6E;1;CAPACITE;Comprendre des messages oraux et écrits simples adaptés au niveau visé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_03;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;3;THEME;Expression et interaction;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_03_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_03;6E;1;CAPACITE;S’exprimer et interagir de façon simple à l’oral et à l’écrit.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_04;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;4;THEME;Outils linguistiques;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_04_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_04;6E;1;CAPACITE;Mobiliser lexique, phonologie et structures grammaticales de base.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_EMC_6E_00;PRG_EMC_2024;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_01;PRG_EMC_2024;ITM_EMC_6E_00;6E;1;THEME;Représenter les autres et servir l’intérêt général;Grand thème étudié en sixième.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_01_C01;PRG_EMC_2024;ITM_EMC_6E_01;6E;1;CAPACITE;Comprendre la représentation, la responsabilité et la recherche de l’intérêt général.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_02;PRG_EMC_2024;ITM_EMC_6E_00;6E;2;THEME;La laïcité à l’École;Grand thème étudié en sixième.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_02_C01;PRG_EMC_2024;ITM_EMC_6E_02;6E;1;CAPACITE;Comprendre la finalité des règles et le principe de laïcité à l’École.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_03;PRG_EMC_2024;ITM_EMC_6E_00;6E;3;THEME;Droits de la personne et vie privée;Grand thème étudié en sixième.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_03_C01;PRG_EMC_2024;ITM_EMC_6E_03;6E;1;CAPACITE;Identifier des droits de la personne et respecter la vie privée d’autrui.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EPS_6E_00;PRG_EPS_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_01;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_01_C01;PRG_EPS_C3_2020;ITM_EPS_6E_01;6E;1;CAPACITE;S’engager pour produire une performance mesurable et connaître ses résultats.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_02;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_02_C01;PRG_EPS_C3_2020;ITM_EPS_6E_02;6E;1;CAPACITE;Choisir et conduire un déplacement adapté à un environnement.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_03;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_03_C01;PRG_EPS_C3_2020;ITM_EPS_6E_03;6E;1;CAPACITE;Construire et présenter une prestation à visée artistique ou acrobatique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_04;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_04_C01;PRG_EPS_C3_2020;ITM_EPS_6E_04;6E;1;CAPACITE;S’organiser pour affronter un adversaire en respectant règles et partenaires.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_00;PRG_ARTS_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_01;PRG_ARTS_C3_2020;ITM_ARTS_6E_00;6E;1;THEME;La représentation plastique et les dispositifs de présentation;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_01_C01;PRG_ARTS_C3_2020;ITM_ARTS_6E_01;6E;1;CAPACITE;Expérimenter des modes de représentation et de présentation des productions.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_02;PRG_ARTS_C3_2020;ITM_ARTS_6E_00;6E;2;THEME;Les fabrications et la relation entre l’objet et l’espace;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_02_C01;PRG_ARTS_C3_2020;ITM_ARTS_6E_02;6E;1;CAPACITE;Concevoir des fabrications en interrogeant formes, matériaux, objets et espace.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_03;PRG_ARTS_C3_2020;ITM_ARTS_6E_00;6E;3;THEME;La matérialité de la production plastique et la sensibilité aux constituants de l’œuvre;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_03_C01;PRG_ARTS_C3_2020;ITM_ARTS_6E_03;6E;1;CAPACITE;Explorer matières, couleurs, gestes et effets sensibles d’une production plastique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_00;PRG_MUS_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_01;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;1;THEME;Chanter et interpréter;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_01_C01;PRG_MUS_C3_2020;ITM_MUS_6E_01;6E;1;CAPACITE;Interpréter un répertoire en mobilisant écoute, voix et expression.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_02;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;2;THEME;Écouter, comparer et commenter;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_02_C01;PRG_MUS_C3_2020;ITM_MUS_6E_02;6E;1;CAPACITE;Décrire, comparer et commenter des organisations et œuvres musicales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_03;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_03_C01;PRG_MUS_C3_2020;ITM_MUS_6E_03;6E;1;CAPACITE;Imaginer et organiser des sons dans une démarche de création.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_04;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_04_C01;PRG_MUS_C3_2020;ITM_MUS_6E_04;6E;1;CAPACITE;Exprimer et justifier une appréciation en utilisant un vocabulaire adapté.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_MENE2018714A
+ITM_FRA_5E_00;PRG_FRA_C4_2026;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_01;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;1;THEME;Lecture et compréhension;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_01_C01;PRG_FRA_C4_2026;ITM_FRA_5E_01;5E;1;CAPACITE;Lire, interpréter et confronter des textes et documents variés.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_02;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;2;THEME;Culture littéraire et artistique;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_02_C01;PRG_FRA_C4_2026;ITM_FRA_5E_02;5E;1;CAPACITE;Construire des repères littéraires et artistiques et lire des œuvres intégrales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_03;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;3;THEME;Écriture;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_03_C01;PRG_FRA_C4_2026;ITM_FRA_5E_03;5E;1;CAPACITE;Produire et réviser des écrits variés en adaptant le texte à son destinataire.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_04;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;4;THEME;Oral;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_04_C01;PRG_FRA_C4_2026;ITM_FRA_5E_04;5E;1;CAPACITE;Prendre la parole, écouter et argumenter dans des situations variées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_05;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;5;THEME;Vocabulaire;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_05_C01;PRG_FRA_C4_2026;ITM_FRA_5E_05;5E;1;CAPACITE;Enrichir le lexique et comprendre les relations entre les mots.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_06;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;6;THEME;Grammaire et orthographe;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_06_C01;PRG_FRA_C4_2026;ITM_FRA_5E_06;5E;1;CAPACITE;Analyser la phrase et consolider les accords et l’orthographe.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_4E_00;PRG_FRA_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_01;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;1;THEME;Lecture et compréhension;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_01_C01;PRG_FRA_C4_2020;ITM_FRA_4E_01;4E;1;CAPACITE;Lire, interpréter et confronter des textes et documents variés.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_02;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;2;THEME;Culture littéraire et artistique;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_02_C01;PRG_FRA_C4_2020;ITM_FRA_4E_02;4E;1;CAPACITE;Construire des repères littéraires et artistiques et lire des œuvres intégrales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_03;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;3;THEME;Écriture;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_03_C01;PRG_FRA_C4_2020;ITM_FRA_4E_03;4E;1;CAPACITE;Produire et réviser des écrits variés en adaptant le texte à son destinataire.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_04;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;4;THEME;Oral;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_04_C01;PRG_FRA_C4_2020;ITM_FRA_4E_04;4E;1;CAPACITE;Prendre la parole, écouter et argumenter dans des situations variées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_05;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;5;THEME;Vocabulaire;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_05_C01;PRG_FRA_C4_2020;ITM_FRA_4E_05;4E;1;CAPACITE;Enrichir le lexique et comprendre les relations entre les mots.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_06;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;6;THEME;Grammaire et orthographe;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_06_C01;PRG_FRA_C4_2020;ITM_FRA_4E_06;4E;1;CAPACITE;Analyser la phrase et consolider les accords et l’orthographe.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_00;PRG_FRA_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_01;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;1;THEME;Lecture et compréhension;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_01_C01;PRG_FRA_C4_2020;ITM_FRA_3E_01;3E;1;CAPACITE;Lire, interpréter et confronter des textes et documents variés.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_02;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;2;THEME;Culture littéraire et artistique;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_02_C01;PRG_FRA_C4_2020;ITM_FRA_3E_02;3E;1;CAPACITE;Construire des repères littéraires et artistiques et lire des œuvres intégrales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_03;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;3;THEME;Écriture;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_03_C01;PRG_FRA_C4_2020;ITM_FRA_3E_03;3E;1;CAPACITE;Produire et réviser des écrits variés en adaptant le texte à son destinataire.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_04;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;4;THEME;Oral;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_04_C01;PRG_FRA_C4_2020;ITM_FRA_3E_04;3E;1;CAPACITE;Prendre la parole, écouter et argumenter dans des situations variées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_05;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;5;THEME;Vocabulaire;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_05_C01;PRG_FRA_C4_2020;ITM_FRA_3E_05;3E;1;CAPACITE;Enrichir le lexique et comprendre les relations entre les mots.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_06;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;6;THEME;Grammaire et orthographe;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_06_C01;PRG_FRA_C4_2020;ITM_FRA_3E_06;3E;1;CAPACITE;Analyser la phrase et consolider les accords et l’orthographe.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_00;PRG_MAT_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_01;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;1;THEME;Nombres et calculs;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_01_C01;PRG_MAT_C4_2020;ITM_MATOLD_4E_01;4E;1;CAPACITE;Mobiliser les nombres rationnels et les techniques de calcul adaptées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_02;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;2;THEME;Organisation et gestion de données, fonctions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_02_C01;PRG_MAT_C4_2020;ITM_MATOLD_4E_02;4E;1;CAPACITE;Lire, organiser et modéliser des données ou des relations fonctionnelles.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_03;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;3;THEME;Grandeurs et mesures;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_03_C01;PRG_MAT_C4_2020;ITM_MATOLD_4E_03;4E;1;CAPACITE;Calculer et raisonner sur des grandeurs et des mesures.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_04;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;4;THEME;Espace et géométrie;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_04_C01;PRG_MAT_C4_2020;ITM_MATOLD_4E_04;4E;1;CAPACITE;Utiliser les propriétés géométriques pour représenter, raisonner et démontrer.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_05;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;5;THEME;Algorithmique et programmation;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_05_C01;PRG_MAT_C4_2020;ITM_MATOLD_4E_05;4E;1;CAPACITE;Écrire, tester et modifier des programmes simples.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_00;PRG_MAT_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_01;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;1;THEME;Nombres et calculs;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_01_C01;PRG_MAT_C4_2020;ITM_MATOLD_3E_01;3E;1;CAPACITE;Mobiliser les nombres rationnels et les techniques de calcul adaptées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_02;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;2;THEME;Organisation et gestion de données, fonctions;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_02_C01;PRG_MAT_C4_2020;ITM_MATOLD_3E_02;3E;1;CAPACITE;Lire, organiser et modéliser des données ou des relations fonctionnelles.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_03;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;3;THEME;Grandeurs et mesures;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_03_C01;PRG_MAT_C4_2020;ITM_MATOLD_3E_03;3E;1;CAPACITE;Calculer et raisonner sur des grandeurs et des mesures.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_04;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;4;THEME;Espace et géométrie;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_04_C01;PRG_MAT_C4_2020;ITM_MATOLD_3E_04;3E;1;CAPACITE;Utiliser les propriétés géométriques pour représenter, raisonner et démontrer.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_05;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;5;THEME;Algorithmique et programmation;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_05_C01;PRG_MAT_C4_2020;ITM_MATOLD_3E_05;3E;1;CAPACITE;Écrire, tester et modifier des programmes simples.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVE_5E_00;PRG_LVE_COLLEGE_2025;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_01;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;1;THEME;Repères culturels;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_01_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_01;5E;1;CAPACITE;Mobiliser des repères culturels des aires linguistiques étudiées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_02;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;2;THEME;Compréhension;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_02_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_02;5E;1;CAPACITE;Comprendre des documents oraux et écrits adaptés au niveau visé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_03;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;3;THEME;Expression et interaction;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_03_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_03;5E;1;CAPACITE;S’exprimer, interagir et médiatiser à l’oral comme à l’écrit.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_04;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;4;THEME;Outils linguistiques;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_04_C01;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_04;5E;1;CAPACITE;Mobiliser lexique, phonologie et structures grammaticales adaptées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2025_22_MENE2504621A
+ITM_LVEOLD_4E_00;PRG_LVE_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_01;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;1;THEME;Repères culturels;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_01_C01;PRG_LVE_C4_2020;ITM_LVEOLD_4E_01;4E;1;CAPACITE;Mobiliser des repères culturels des aires linguistiques étudiées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_02;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;2;THEME;Compréhension;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_02_C01;PRG_LVE_C4_2020;ITM_LVEOLD_4E_02;4E;1;CAPACITE;Comprendre des documents oraux et écrits adaptés au niveau visé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_03;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;3;THEME;Expression et interaction;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_03_C01;PRG_LVE_C4_2020;ITM_LVEOLD_4E_03;4E;1;CAPACITE;S’exprimer, interagir et médiatiser à l’oral comme à l’écrit.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_04;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;4;THEME;Outils linguistiques;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_04_C01;PRG_LVE_C4_2020;ITM_LVEOLD_4E_04;4E;1;CAPACITE;Mobiliser lexique, phonologie et structures grammaticales adaptées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_00;PRG_LVE_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_01;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;1;THEME;Repères culturels;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_01_C01;PRG_LVE_C4_2020;ITM_LVEOLD_3E_01;3E;1;CAPACITE;Mobiliser des repères culturels des aires linguistiques étudiées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_02;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;2;THEME;Compréhension;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_02_C01;PRG_LVE_C4_2020;ITM_LVEOLD_3E_02;3E;1;CAPACITE;Comprendre des documents oraux et écrits adaptés au niveau visé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_03;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;3;THEME;Expression et interaction;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_03_C01;PRG_LVE_C4_2020;ITM_LVEOLD_3E_03;3E;1;CAPACITE;S’exprimer, interagir et médiatiser à l’oral comme à l’écrit.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_04;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;4;THEME;Outils linguistiques;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_04_C01;PRG_LVE_C4_2020;ITM_LVEOLD_3E_04;3E;1;CAPACITE;Mobiliser lexique, phonologie et structures grammaticales adaptées.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_00;PRG_HG_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_01;PRG_HG_C4_2020;ITM_HG_5E_00;5E;1;THEME;Chrétientés et islam (VIe-XIIIe siècles);Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_01_C01;PRG_HG_C4_2020;ITM_HG_5E_01;5E;1;CAPACITE;Situer et caractériser les principaux pouvoirs et contacts entre mondes chrétien et musulman.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_02;PRG_HG_C4_2020;ITM_HG_5E_00;5E;2;THEME;Société, Église et pouvoir politique dans l’Occident féodal;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_02_C01;PRG_HG_C4_2020;ITM_HG_5E_02;5E;1;CAPACITE;Décrire l’organisation de la société féodale, des campagnes et des villes.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_03;PRG_HG_C4_2020;ITM_HG_5E_00;5E;3;THEME;Transformations de l’Europe et ouverture sur le monde;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_03_C01;PRG_HG_C4_2020;ITM_HG_5E_03;5E;1;CAPACITE;Identifier les transformations culturelles, religieuses et politiques des XVe-XVIIe siècles.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_04;PRG_HG_C4_2020;ITM_HG_5E_00;5E;4;THEME;Question démographique et inégal développement;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_04_C01;PRG_HG_C4_2020;ITM_HG_5E_04;5E;1;CAPACITE;Comparer dynamiques démographiques, niveaux de développement et inégalités.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_05;PRG_HG_C4_2020;ITM_HG_5E_00;5E;5;THEME;Ressources limitées, à gérer et à renouveler;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_05_C01;PRG_HG_C4_2020;ITM_HG_5E_05;5E;1;CAPACITE;Analyser les enjeux liés à la gestion durable des ressources.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_06;PRG_HG_C4_2020;ITM_HG_5E_00;5E;6;THEME;Prévenir les risques, s’adapter au changement global;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_06_C01;PRG_HG_C4_2020;ITM_HG_5E_06;5E;1;CAPACITE;Identifier vulnérabilités, risques et stratégies d’adaptation.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_00;PRG_HG_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_01;PRG_HG_C4_2020;ITM_HG_4E_00;4E;1;THEME;Le XVIIIe siècle : expansions, Lumières et révolutions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_01_C01;PRG_HG_C4_2020;ITM_HG_4E_01;4E;1;CAPACITE;Situer les Lumières, les révolutions et les bouleversements politiques du XVIIIe siècle.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_02;PRG_HG_C4_2020;ITM_HG_4E_00;4E;2;THEME;L’Europe et le monde au XIXe siècle;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_02_C01;PRG_HG_C4_2020;ITM_HG_4E_02;4E;1;CAPACITE;Caractériser industrialisation, colonisation et transformations sociales du XIXe siècle.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_03;PRG_HG_C4_2020;ITM_HG_4E_00;4E;3;THEME;Société, culture et politique dans la France du XIXe siècle;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_03_C01;PRG_HG_C4_2020;ITM_HG_4E_03;4E;1;CAPACITE;Comprendre la construction politique et sociale de la France au XIXe siècle.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_04;PRG_HG_C4_2020;ITM_HG_4E_00;4E;4;THEME;L’urbanisation du monde;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_04_C01;PRG_HG_C4_2020;ITM_HG_4E_04;4E;1;CAPACITE;Décrire les dynamiques d’urbanisation et de métropolisation.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_05;PRG_HG_C4_2020;ITM_HG_4E_00;4E;5;THEME;Les mobilités humaines transnationales;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_05_C01;PRG_HG_C4_2020;ITM_HG_4E_05;4E;1;CAPACITE;Analyser migrations internationales et mobilités touristiques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_06;PRG_HG_C4_2020;ITM_HG_4E_00;4E;6;THEME;Des espaces transformés par la mondialisation;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_06_C01;PRG_HG_C4_2020;ITM_HG_4E_06;4E;1;CAPACITE;Identifier les effets spatiaux de la mondialisation sur les territoires.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_00;PRG_HG_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_01;PRG_HG_C4_2020;ITM_HG_3E_00;3E;1;THEME;L’Europe, un théâtre majeur des guerres totales;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_01_C01;PRG_HG_C4_2020;ITM_HG_3E_01;3E;1;CAPACITE;Identifier les caractéristiques des guerres mondiales et des régimes totalitaires.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_02;PRG_HG_C4_2020;ITM_HG_3E_00;3E;2;THEME;Le monde depuis 1945;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_02_C01;PRG_HG_C4_2020;ITM_HG_3E_02;3E;1;CAPACITE;Situer décolonisation, guerre froide et transformations géopolitiques depuis 1945.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_03;PRG_HG_C4_2020;ITM_HG_3E_00;3E;3;THEME;Françaises et Français dans une République repensée;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_03_C01;PRG_HG_C4_2020;ITM_HG_3E_03;3E;1;CAPACITE;Comprendre les transformations de la République et de la société françaises depuis 1944.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_04;PRG_HG_C4_2020;ITM_HG_3E_00;3E;4;THEME;Dynamiques territoriales de la France contemporaine;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_04_C01;PRG_HG_C4_2020;ITM_HG_3E_04;3E;1;CAPACITE;Analyser les principales dynamiques des territoires français.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_05;PRG_HG_C4_2020;ITM_HG_3E_00;3E;5;THEME;Pourquoi et comment aménager le territoire ?;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_05_C01;PRG_HG_C4_2020;ITM_HG_3E_05;3E;1;CAPACITE;Identifier les acteurs et enjeux de l’aménagement du territoire.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_06;PRG_HG_C4_2020;ITM_HG_3E_00;3E;6;THEME;La France et l’Union européenne;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_06_C01;PRG_HG_C4_2020;ITM_HG_3E_06;3E;1;CAPACITE;Situer la France dans l’Union européenne et dans le monde.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EMC_5E_00;PRG_EMC_2024;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_5E_01;PRG_EMC_2024;ITM_EMC_5E_00;5E;1;THEME;Égalité et lutte contre les discriminations;Grand thème étudié en 5e.;SRC_BO_2024_24_EMC
+ITM_EMC_5E_01_C01;PRG_EMC_2024;ITM_EMC_5E_01;5E;1;CAPACITE;Reconnaître les principes d’égalité et de solidarité et identifier des situations de discrimination.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_5E_02;PRG_EMC_2024;ITM_EMC_5E_00;5E;2;THEME;Engagement et solidarité;Grand thème étudié en 5e.;SRC_BO_2024_24_EMC
+ITM_EMC_5E_02_C01;PRG_EMC_2024;ITM_EMC_5E_02;5E;1;CAPACITE;Comprendre différentes formes d’engagement et de solidarité.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_00;PRG_EMC_2024;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_01;PRG_EMC_2024;ITM_EMC_4E_00;4E;1;THEME;Droits et libertés;Grand thème étudié en 4e.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_01_C01;PRG_EMC_2024;ITM_EMC_4E_01;4E;1;CAPACITE;Identifier les principales libertés et comprendre les responsabilités qui les accompagnent.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_02;PRG_EMC_2024;ITM_EMC_4E_00;4E;2;THEME;Justice et État de droit;Grand thème étudié en 4e.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_02_C01;PRG_EMC_2024;ITM_EMC_4E_02;4E;1;CAPACITE;Comprendre le rôle du droit et de la justice dans la protection des libertés.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_00;PRG_EMC_2024;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_01;PRG_EMC_2024;ITM_EMC_3E_00;3E;1;THEME;Démocratie et institutions;Grand thème étudié en 3e.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_01_C01;PRG_EMC_2024;ITM_EMC_3E_01;3E;1;CAPACITE;Comprendre les principes du fonctionnement démocratique et des institutions.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_02;PRG_EMC_2024;ITM_EMC_3E_00;3E;2;THEME;Citoyenneté et engagement;Grand thème étudié en 3e.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_02_C01;PRG_EMC_2024;ITM_EMC_3E_02;3E;1;CAPACITE;Identifier les formes de participation civique et d’engagement citoyen.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_24_EMC
+ITM_PC_5E_00;PRG_PC_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_01;PRG_PC_C4_2020;ITM_PC_5E_00;5E;1;THEME;Organisation et transformations de la matière;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_01_C01;PRG_PC_C4_2020;ITM_PC_5E_01;5E;1;CAPACITE;Décrire la matière et interpréter des transformations physiques ou chimiques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_02;PRG_PC_C4_2020;ITM_PC_5E_00;5E;2;THEME;Mouvements et interactions;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_02_C01;PRG_PC_C4_2020;ITM_PC_5E_02;5E;1;CAPACITE;Décrire un mouvement et modéliser des interactions.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_03;PRG_PC_C4_2020;ITM_PC_5E_00;5E;3;THEME;L’énergie et ses conversions;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_03_C01;PRG_PC_C4_2020;ITM_PC_5E_03;5E;1;CAPACITE;Identifier formes, transferts et conversions d’énergie.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_04;PRG_PC_C4_2020;ITM_PC_5E_00;5E;4;THEME;Des signaux pour observer et communiquer;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_04_C01;PRG_PC_C4_2020;ITM_PC_5E_04;5E;1;CAPACITE;Caractériser et utiliser des signaux lumineux ou sonores.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_00;PRG_SVT_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_01;PRG_SVT_C4_2020;ITM_SVT_5E_00;5E;1;THEME;La planète Terre, l’environnement et l’action humaine;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_01_C01;PRG_SVT_C4_2020;ITM_SVT_5E_01;5E;1;CAPACITE;Relier phénomènes terrestres, environnement, risques et action humaine.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_02;PRG_SVT_C4_2020;ITM_SVT_5E_00;5E;2;THEME;Le vivant et son évolution;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_02_C01;PRG_SVT_C4_2020;ITM_SVT_5E_02;5E;1;CAPACITE;Expliquer des mécanismes du vivant, de la biodiversité et de l’évolution.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_03;PRG_SVT_C4_2020;ITM_SVT_5E_00;5E;3;THEME;Le corps humain et la santé;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_03_C01;PRG_SVT_C4_2020;ITM_SVT_5E_03;5E;1;CAPACITE;Relier fonctionnement du corps, comportements et santé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_TECH_5E_00;PRG_TECH_C4_2024;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_01;PRG_TECH_C4_2024;ITM_TECH_5E_00;5E;1;THEME;Objets et systèmes techniques : usages et interactions;Grand thème étudié en 5e.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_01_C01;PRG_TECH_C4_2024;ITM_TECH_5E_01;5E;1;CAPACITE;Analyser besoins, usages, évolutions et impacts des objets et systèmes techniques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_02;PRG_TECH_C4_2024;ITM_TECH_5E_00;5E;2;THEME;Structure, fonctionnement et comportement des objets et systèmes techniques;Grand thème étudié en 5e.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_02_C01;PRG_TECH_C4_2024;ITM_TECH_5E_02;5E;1;CAPACITE;Décrire organisation, flux d’énergie et de données et fonctionnement d’un système technique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_03;PRG_TECH_C4_2024;ITM_TECH_5E_00;5E;3;THEME;Création, conception, réalisation et innovation;Grand thème étudié en 5e.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_03_C01;PRG_TECH_C4_2024;ITM_TECH_5E_03;5E;1;CAPACITE;Concevoir, programmer, réaliser et améliorer une solution technique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_EPS_5E_00;PRG_EPS_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_01;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_01_C01;PRG_EPS_C4_2020;ITM_EPS_5E_01;5E;1;CAPACITE;S’engager et gérer ses ressources pour produire une performance mesurable.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_02;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_02_C01;PRG_EPS_C4_2020;ITM_EPS_5E_02;5E;1;CAPACITE;Choisir et conduire un déplacement adapté en sécurité.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_03;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_03_C01;PRG_EPS_C4_2020;ITM_EPS_5E_03;5E;1;CAPACITE;Composer et présenter une prestation artistique ou acrobatique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_04;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_04_C01;PRG_EPS_C4_2020;ITM_EPS_5E_04;5E;1;CAPACITE;Adapter ses choix pour conduire un affrontement dans le respect des règles.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_00;PRG_ARTS_PLAST_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_00;5E;1;THEME;"La représentation ; images, réalité et fiction";Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_01_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_01;5E;1;CAPACITE;Expérimenter les écarts entre représentation, réalité, image et fiction.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_02;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_00;5E;2;THEME;"La matérialité de l’œuvre ; l’objet et l’œuvre";Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_02_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_02;5E;1;CAPACITE;Explorer matières, matériaux, objets et qualités sensibles dans une production.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_03;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_00;5E;3;THEME;L’œuvre, l’espace, l’auteur, le spectateur;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_03_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_03;5E;1;CAPACITE;Interroger la présentation, l’espace et la réception d’une œuvre.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_00;PRG_EDUC_MUS_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_01;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;1;THEME;Réaliser des projets musicaux;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_01_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_01;5E;1;CAPACITE;Interpréter et élaborer un projet musical collectif ou individuel.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_02;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;2;THEME;Écouter, comparer et construire une culture musicale;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_02_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_02;5E;1;CAPACITE;Écouter, comparer et situer des œuvres et des pratiques musicales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_03;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_03_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_03;5E;1;CAPACITE;Créer, arranger ou transformer des éléments musicaux.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_04;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_04_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_04;5E;1;CAPACITE;Décrire une écoute, argumenter des choix et partager un jugement musical.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_00;PRG_PC_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_01;PRG_PC_C4_2020;ITM_PC_4E_00;4E;1;THEME;Organisation et transformations de la matière;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_01_C01;PRG_PC_C4_2020;ITM_PC_4E_01;4E;1;CAPACITE;Décrire la matière et interpréter des transformations physiques ou chimiques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_02;PRG_PC_C4_2020;ITM_PC_4E_00;4E;2;THEME;Mouvements et interactions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_02_C01;PRG_PC_C4_2020;ITM_PC_4E_02;4E;1;CAPACITE;Décrire un mouvement et modéliser des interactions.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_03;PRG_PC_C4_2020;ITM_PC_4E_00;4E;3;THEME;L’énergie et ses conversions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_03_C01;PRG_PC_C4_2020;ITM_PC_4E_03;4E;1;CAPACITE;Identifier formes, transferts et conversions d’énergie.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_04;PRG_PC_C4_2020;ITM_PC_4E_00;4E;4;THEME;Des signaux pour observer et communiquer;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_04_C01;PRG_PC_C4_2020;ITM_PC_4E_04;4E;1;CAPACITE;Caractériser et utiliser des signaux lumineux ou sonores.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_00;PRG_SVT_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_01;PRG_SVT_C4_2020;ITM_SVT_4E_00;4E;1;THEME;La planète Terre, l’environnement et l’action humaine;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_01_C01;PRG_SVT_C4_2020;ITM_SVT_4E_01;4E;1;CAPACITE;Relier phénomènes terrestres, environnement, risques et action humaine.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_02;PRG_SVT_C4_2020;ITM_SVT_4E_00;4E;2;THEME;Le vivant et son évolution;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_02_C01;PRG_SVT_C4_2020;ITM_SVT_4E_02;4E;1;CAPACITE;Expliquer des mécanismes du vivant, de la biodiversité et de l’évolution.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_03;PRG_SVT_C4_2020;ITM_SVT_4E_00;4E;3;THEME;Le corps humain et la santé;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_03_C01;PRG_SVT_C4_2020;ITM_SVT_4E_03;4E;1;CAPACITE;Relier fonctionnement du corps, comportements et santé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_TECH_4E_00;PRG_TECH_C4_2024;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_01;PRG_TECH_C4_2024;ITM_TECH_4E_00;4E;1;THEME;Objets et systèmes techniques : usages et interactions;Grand thème étudié en 4e.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_01_C01;PRG_TECH_C4_2024;ITM_TECH_4E_01;4E;1;CAPACITE;Analyser besoins, usages, évolutions et impacts des objets et systèmes techniques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_02;PRG_TECH_C4_2024;ITM_TECH_4E_00;4E;2;THEME;Structure, fonctionnement et comportement des objets et systèmes techniques;Grand thème étudié en 4e.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_02_C01;PRG_TECH_C4_2024;ITM_TECH_4E_02;4E;1;CAPACITE;Décrire organisation, flux d’énergie et de données et fonctionnement d’un système technique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_03;PRG_TECH_C4_2024;ITM_TECH_4E_00;4E;3;THEME;Création, conception, réalisation et innovation;Grand thème étudié en 4e.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_03_C01;PRG_TECH_C4_2024;ITM_TECH_4E_03;4E;1;CAPACITE;Concevoir, programmer, réaliser et améliorer une solution technique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_EPS_4E_00;PRG_EPS_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_01;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_01_C01;PRG_EPS_C4_2020;ITM_EPS_4E_01;4E;1;CAPACITE;S’engager et gérer ses ressources pour produire une performance mesurable.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_02;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_02_C01;PRG_EPS_C4_2020;ITM_EPS_4E_02;4E;1;CAPACITE;Choisir et conduire un déplacement adapté en sécurité.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_03;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_03_C01;PRG_EPS_C4_2020;ITM_EPS_4E_03;4E;1;CAPACITE;Composer et présenter une prestation artistique ou acrobatique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_04;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_04_C01;PRG_EPS_C4_2020;ITM_EPS_4E_04;4E;1;CAPACITE;Adapter ses choix pour conduire un affrontement dans le respect des règles.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_00;PRG_ARTS_PLAST_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_00;4E;1;THEME;"La représentation ; images, réalité et fiction";Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_01_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_01;4E;1;CAPACITE;Expérimenter les écarts entre représentation, réalité, image et fiction.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_02;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_00;4E;2;THEME;"La matérialité de l’œuvre ; l’objet et l’œuvre";Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_02_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_02;4E;1;CAPACITE;Explorer matières, matériaux, objets et qualités sensibles dans une production.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_03;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_00;4E;3;THEME;L’œuvre, l’espace, l’auteur, le spectateur;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_03_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_03;4E;1;CAPACITE;Interroger la présentation, l’espace et la réception d’une œuvre.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_00;PRG_EDUC_MUS_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_01;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;1;THEME;Réaliser des projets musicaux;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_01_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_01;4E;1;CAPACITE;Interpréter et élaborer un projet musical collectif ou individuel.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_02;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;2;THEME;Écouter, comparer et construire une culture musicale;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_02_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_02;4E;1;CAPACITE;Écouter, comparer et situer des œuvres et des pratiques musicales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_03;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_03_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_03;4E;1;CAPACITE;Créer, arranger ou transformer des éléments musicaux.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_04;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_04_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_04;4E;1;CAPACITE;Décrire une écoute, argumenter des choix et partager un jugement musical.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_00;PRG_PC_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_01;PRG_PC_C4_2020;ITM_PC_3E_00;3E;1;THEME;Organisation et transformations de la matière;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_01_C01;PRG_PC_C4_2020;ITM_PC_3E_01;3E;1;CAPACITE;Décrire la matière et interpréter des transformations physiques ou chimiques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_02;PRG_PC_C4_2020;ITM_PC_3E_00;3E;2;THEME;Mouvements et interactions;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_02_C01;PRG_PC_C4_2020;ITM_PC_3E_02;3E;1;CAPACITE;Décrire un mouvement et modéliser des interactions.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_03;PRG_PC_C4_2020;ITM_PC_3E_00;3E;3;THEME;L’énergie et ses conversions;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_03_C01;PRG_PC_C4_2020;ITM_PC_3E_03;3E;1;CAPACITE;Identifier formes, transferts et conversions d’énergie.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_04;PRG_PC_C4_2020;ITM_PC_3E_00;3E;4;THEME;Des signaux pour observer et communiquer;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_04_C01;PRG_PC_C4_2020;ITM_PC_3E_04;3E;1;CAPACITE;Caractériser et utiliser des signaux lumineux ou sonores.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_00;PRG_SVT_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_01;PRG_SVT_C4_2020;ITM_SVT_3E_00;3E;1;THEME;La planète Terre, l’environnement et l’action humaine;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_01_C01;PRG_SVT_C4_2020;ITM_SVT_3E_01;3E;1;CAPACITE;Relier phénomènes terrestres, environnement, risques et action humaine.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_02;PRG_SVT_C4_2020;ITM_SVT_3E_00;3E;2;THEME;Le vivant et son évolution;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_02_C01;PRG_SVT_C4_2020;ITM_SVT_3E_02;3E;1;CAPACITE;Expliquer des mécanismes du vivant, de la biodiversité et de l’évolution.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_03;PRG_SVT_C4_2020;ITM_SVT_3E_00;3E;3;THEME;Le corps humain et la santé;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_03_C01;PRG_SVT_C4_2020;ITM_SVT_3E_03;3E;1;CAPACITE;Relier fonctionnement du corps, comportements et santé.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_TECH_3E_00;PRG_TECH_C4_2024;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_01;PRG_TECH_C4_2024;ITM_TECH_3E_00;3E;1;THEME;Objets et systèmes techniques : usages et interactions;Grand thème étudié en 3e.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_01_C01;PRG_TECH_C4_2024;ITM_TECH_3E_01;3E;1;CAPACITE;Analyser besoins, usages, évolutions et impacts des objets et systèmes techniques.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_02;PRG_TECH_C4_2024;ITM_TECH_3E_00;3E;2;THEME;Structure, fonctionnement et comportement des objets et systèmes techniques;Grand thème étudié en 3e.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_02_C01;PRG_TECH_C4_2024;ITM_TECH_3E_02;3E;1;CAPACITE;Décrire organisation, flux d’énergie et de données et fonctionnement d’un système technique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_03;PRG_TECH_C4_2024;ITM_TECH_3E_00;3E;3;THEME;Création, conception, réalisation et innovation;Grand thème étudié en 3e.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_03_C01;PRG_TECH_C4_2024;ITM_TECH_3E_03;3E;1;CAPACITE;Concevoir, programmer, réaliser et améliorer une solution technique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2024_09_TECH
+ITM_EPS_3E_00;PRG_EPS_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_01;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_01_C01;PRG_EPS_C4_2020;ITM_EPS_3E_01;3E;1;CAPACITE;S’engager et gérer ses ressources pour produire une performance mesurable.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_02;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_02_C01;PRG_EPS_C4_2020;ITM_EPS_3E_02;3E;1;CAPACITE;Choisir et conduire un déplacement adapté en sécurité.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_03;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_03_C01;PRG_EPS_C4_2020;ITM_EPS_3E_03;3E;1;CAPACITE;Composer et présenter une prestation artistique ou acrobatique.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_04;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_04_C01;PRG_EPS_C4_2020;ITM_EPS_3E_04;3E;1;CAPACITE;Adapter ses choix pour conduire un affrontement dans le respect des règles.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_00;PRG_ARTS_PLAST_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_00;3E;1;THEME;"La représentation ; images, réalité et fiction";Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_01_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_01;3E;1;CAPACITE;Expérimenter les écarts entre représentation, réalité, image et fiction.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_02;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_00;3E;2;THEME;"La matérialité de l’œuvre ; l’objet et l’œuvre";Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_02_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_02;3E;1;CAPACITE;Explorer matières, matériaux, objets et qualités sensibles dans une production.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_03;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_00;3E;3;THEME;L’œuvre, l’espace, l’auteur, le spectateur;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_03_C01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_03;3E;1;CAPACITE;Interroger la présentation, l’espace et la réception d’une œuvre.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_00;PRG_EDUC_MUS_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_01;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;1;THEME;Réaliser des projets musicaux;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_01_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_01;3E;1;CAPACITE;Interpréter et élaborer un projet musical collectif ou individuel.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_02;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;2;THEME;Écouter, comparer et construire une culture musicale;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_02_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_02;3E;1;CAPACITE;Écouter, comparer et situer des œuvres et des pratiques musicales.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_03;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_03_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_03;3E;1;CAPACITE;Créer, arranger ou transformer des éléments musicaux.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_04;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_04_C01;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_04;3E;1;CAPACITE;Décrire une écoute, argumenter des choix et partager un jugement musical.;Capacité représentative, sélectionnée pour une vue synthétique du programme.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_LYCEE_2019_T01;PRG_FRA_LYCEE_2019;;1;;THEME;Lecture et interprétation;Lecture et interprétation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T01_C01;PRG_FRA_LYCEE_2019;ITM_FRA_LYCEE_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Lecture et interprétation;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T02;PRG_FRA_LYCEE_2019;;2;;THEME;Écriture et argumentation;Écriture et argumentation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T02_C01;PRG_FRA_LYCEE_2019;ITM_FRA_LYCEE_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Écriture et argumentation;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T03;PRG_FRA_LYCEE_2019;;3;;THEME;Langue et expression;Langue et expression : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T03_C01;PRG_FRA_LYCEE_2019;ITM_FRA_LYCEE_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Langue et expression;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T01;PRG_HG_LYCEE_2019;;1;;THEME;Sociétés et pouvoirs;Sociétés et pouvoirs : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T01_C01;PRG_HG_LYCEE_2019;ITM_HG_LYCEE_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Sociétés et pouvoirs;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T02;PRG_HG_LYCEE_2019;;2;;THEME;Territoires et mondialisation;Territoires et mondialisation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T02_C01;PRG_HG_LYCEE_2019;ITM_HG_LYCEE_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Territoires et mondialisation;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T03;PRG_HG_LYCEE_2019;;3;;THEME;Environnement et mobilités;Environnement et mobilités : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T03_C01;PRG_HG_LYCEE_2019;ITM_HG_LYCEE_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Environnement et mobilités;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T01;PRG_EMC_LYCEE_2024;;1;;THEME;Liberté;Liberté : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T01_C01;PRG_EMC_LYCEE_2024;ITM_EMC_LYCEE_2024_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Liberté;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T02;PRG_EMC_LYCEE_2024;;2;;THEME;Société;Société : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T02_C01;PRG_EMC_LYCEE_2024;ITM_EMC_LYCEE_2024_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Société;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T03;PRG_EMC_LYCEE_2024;;3;;THEME;Démocratie et citoyenneté;Démocratie et citoyenneté : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T03_C01;PRG_EMC_LYCEE_2024;ITM_EMC_LYCEE_2024_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Démocratie et citoyenneté;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T01;PRG_LVE_LYCEE_2025;;1;;THEME;Compréhension et réception;Compréhension et réception : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T01_C01;PRG_LVE_LYCEE_2025;ITM_LVE_LYCEE_2025_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Compréhension et réception;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T02;PRG_LVE_LYCEE_2025;;2;;THEME;Expression et interaction;Expression et interaction : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T02_C01;PRG_LVE_LYCEE_2025;ITM_LVE_LYCEE_2025_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Expression et interaction;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T03;PRG_LVE_LYCEE_2025;;3;;THEME;Repères culturels et interculturels;Repères culturels et interculturels : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T03_C01;PRG_LVE_LYCEE_2025;ITM_LVE_LYCEE_2025_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Repères culturels et interculturels;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T01;PRG_EPS_LYCEE_2019;;1;;THEME;Réaliser une performance;Réaliser une performance : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T01_C01;PRG_EPS_LYCEE_2019;ITM_EPS_LYCEE_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Réaliser une performance;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T02;PRG_EPS_LYCEE_2019;;2;;THEME;Adapter ses déplacements;Adapter ses déplacements : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T02_C01;PRG_EPS_LYCEE_2019;ITM_EPS_LYCEE_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Adapter ses déplacements;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T03;PRG_EPS_LYCEE_2019;;3;;THEME;Conduire et maîtriser un affrontement;Conduire et maîtriser un affrontement : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T03_C01;PRG_EPS_LYCEE_2019;ITM_EPS_LYCEE_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Conduire et maîtriser un affrontement;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T01;PRG_PC_2GT_2019;;1;;THEME;Constitution et transformations de la matière;Constitution et transformations de la matière : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T01_C01;PRG_PC_2GT_2019;ITM_PC_2GT_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Constitution et transformations de la matière;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T02;PRG_PC_2GT_2019;;2;;THEME;Mouvement et interactions;Mouvement et interactions : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T02_C01;PRG_PC_2GT_2019;ITM_PC_2GT_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Mouvement et interactions;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T03;PRG_PC_2GT_2019;;3;;THEME;Ondes et signaux;Ondes et signaux : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T03_C01;PRG_PC_2GT_2019;ITM_PC_2GT_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Ondes et signaux;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T01;PRG_SVT_2GT_2019;;1;;THEME;Terre, vie et évolution;Terre, vie et évolution : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T01_C01;PRG_SVT_2GT_2019;ITM_SVT_2GT_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Terre, vie et évolution;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T02;PRG_SVT_2GT_2019;;2;;THEME;Enjeux contemporains de la planète;Enjeux contemporains de la planète : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T02_C01;PRG_SVT_2GT_2019;ITM_SVT_2GT_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Enjeux contemporains de la planète;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T03;PRG_SVT_2GT_2019;;3;;THEME;Corps humain et santé;Corps humain et santé : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T03_C01;PRG_SVT_2GT_2019;ITM_SVT_2GT_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Corps humain et santé;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T01;PRG_SES_2GT_2019;;1;;THEME;Économie;Économie : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T01_C01;PRG_SES_2GT_2019;ITM_SES_2GT_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Économie;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T02;PRG_SES_2GT_2019;;2;;THEME;Sociologie;Sociologie : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T02_C01;PRG_SES_2GT_2019;ITM_SES_2GT_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Sociologie;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T03;PRG_SES_2GT_2019;;3;;THEME;Science politique et regards croisés;Science politique et regards croisés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T03_C01;PRG_SES_2GT_2019;ITM_SES_2GT_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Science politique et regards croisés;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T01;PRG_SNT_2GT_2019;;1;;THEME;Internet et Web;Internet et Web : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T01_C01;PRG_SNT_2GT_2019;ITM_SNT_2GT_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Internet et Web;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T02;PRG_SNT_2GT_2019;;2;;THEME;Données et informatique;Données et informatique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T02_C01;PRG_SNT_2GT_2019;ITM_SNT_2GT_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Données et informatique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T03;PRG_SNT_2GT_2019;;3;;THEME;Réseaux sociaux et objets connectés;Réseaux sociaux et objets connectés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T03_C01;PRG_SNT_2GT_2019;ITM_SNT_2GT_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Réseaux sociaux et objets connectés;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T01;PRG_ENS_SCI_2019;;1;;THEME;Science, climat et énergie;Science, climat et énergie : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T01_C01;PRG_ENS_SCI_2019;ITM_ENS_SCI_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Science, climat et énergie;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T02;PRG_ENS_SCI_2019;;2;;THEME;Histoire et méthodes des sciences;Histoire et méthodes des sciences : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T02_C01;PRG_ENS_SCI_2019;ITM_ENS_SCI_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Histoire et méthodes des sciences;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T03;PRG_ENS_SCI_2019;;3;;THEME;Numérique et connaissance scientifique;Numérique et connaissance scientifique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T03_C01;PRG_ENS_SCI_2019;ITM_ENS_SCI_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Numérique et connaissance scientifique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T01;PRG_PHILO_TERM_2019;;1;;THEME;Existence et culture;Existence et culture : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T01_C01;PRG_PHILO_TERM_2019;ITM_PHILO_TERM_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Existence et culture;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T02;PRG_PHILO_TERM_2019;;2;;THEME;Morale et politique;Morale et politique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T02_C01;PRG_PHILO_TERM_2019;ITM_PHILO_TERM_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Morale et politique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T03;PRG_PHILO_TERM_2019;;3;;THEME;Connaissance et raison;Connaissance et raison : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T03_C01;PRG_PHILO_TERM_2019;ITM_PHILO_TERM_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Connaissance et raison;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T01;PRG_HGGSP_2019;;1;;THEME;Puissances et conflits;Puissances et conflits : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T01_C01;PRG_HGGSP_2019;ITM_HGGSP_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Puissances et conflits;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T02;PRG_HGGSP_2019;;2;;THEME;Information et opinion;Information et opinion : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T02_C01;PRG_HGGSP_2019;ITM_HGGSP_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Information et opinion;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T03;PRG_HGGSP_2019;;3;;THEME;Environnement et patrimoine;Environnement et patrimoine : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T03_C01;PRG_HGGSP_2019;ITM_HGGSP_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Environnement et patrimoine;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T01;PRG_HLP_2019;;1;;THEME;Pouvoirs de la parole;Pouvoirs de la parole : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T01_C01;PRG_HLP_2019;ITM_HLP_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Pouvoirs de la parole;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T02;PRG_HLP_2019;;2;;THEME;Représentations du monde;Représentations du monde : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T02_C01;PRG_HLP_2019;ITM_HLP_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Représentations du monde;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T03;PRG_HLP_2019;;3;;THEME;Humanité en question;Humanité en question : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T03_C01;PRG_HLP_2019;ITM_HLP_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Humanité en question;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T01;PRG_LLCER_2019;;1;;THEME;Langue et communication;Langue et communication : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T01_C01;PRG_LLCER_2019;ITM_LLCER_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Langue et communication;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T02;PRG_LLCER_2019;;2;;THEME;Littérature et arts;Littérature et arts : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T02_C01;PRG_LLCER_2019;ITM_LLCER_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Littérature et arts;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T03;PRG_LLCER_2019;;3;;THEME;Cultures et sociétés;Cultures et sociétés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T03_C01;PRG_LLCER_2019;ITM_LLCER_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Cultures et sociétés;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T01;PRG_NSI_2019;;1;;THEME;Données et algorithmique;Données et algorithmique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T01_C01;PRG_NSI_2019;ITM_NSI_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Données et algorithmique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T02;PRG_NSI_2019;;2;;THEME;Architectures et réseaux;Architectures et réseaux : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T02_C01;PRG_NSI_2019;ITM_NSI_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Architectures et réseaux;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T03;PRG_NSI_2019;;3;;THEME;Langages et programmation;Langages et programmation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T03_C01;PRG_NSI_2019;ITM_NSI_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Langages et programmation;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T01;PRG_PC_SPEC_2019;;1;;THEME;Matière et transformations;Matière et transformations : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T01_C01;PRG_PC_SPEC_2019;ITM_PC_SPEC_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Matière et transformations;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T02;PRG_PC_SPEC_2019;;2;;THEME;Mouvement, énergie et interactions;Mouvement, énergie et interactions : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T02_C01;PRG_PC_SPEC_2019;ITM_PC_SPEC_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Mouvement, énergie et interactions;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T03;PRG_PC_SPEC_2019;;3;;THEME;Ondes, signaux et mesures;Ondes, signaux et mesures : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T03_C01;PRG_PC_SPEC_2019;ITM_PC_SPEC_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Ondes, signaux et mesures;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T01;PRG_SVT_SPEC_2019;;1;;THEME;Génétique et évolution;Génétique et évolution : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T01_C01;PRG_SVT_SPEC_2019;ITM_SVT_SPEC_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Génétique et évolution;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T02;PRG_SVT_SPEC_2019;;2;;THEME;Enjeux planétaires contemporains;Enjeux planétaires contemporains : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T02_C01;PRG_SVT_SPEC_2019;ITM_SVT_SPEC_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Enjeux planétaires contemporains;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T03;PRG_SVT_SPEC_2019;;3;;THEME;Corps humain et santé;Corps humain et santé : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T03_C01;PRG_SVT_SPEC_2019;ITM_SVT_SPEC_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Corps humain et santé;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T01;PRG_SI_2019;;1;;THEME;Analyser les systèmes;Analyser les systèmes : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T01_C01;PRG_SI_2019;ITM_SI_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Analyser les systèmes;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T02;PRG_SI_2019;;2;;THEME;Modéliser et simuler;Modéliser et simuler : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T02_C01;PRG_SI_2019;ITM_SI_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Modéliser et simuler;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T03;PRG_SI_2019;;3;;THEME;Concevoir et expérimenter;Concevoir et expérimenter : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T03_C01;PRG_SI_2019;ITM_SI_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Concevoir et expérimenter;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T01;PRG_SES_SPEC_2019;;1;;THEME;Science économique;Science économique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T01_C01;PRG_SES_SPEC_2019;ITM_SES_SPEC_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Science économique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T02;PRG_SES_SPEC_2019;;2;;THEME;Sociologie et science politique;Sociologie et science politique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T02_C01;PRG_SES_SPEC_2019;ITM_SES_SPEC_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Sociologie et science politique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T03;PRG_SES_SPEC_2019;;3;;THEME;Regards croisés;Regards croisés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T03_C01;PRG_SES_SPEC_2019;ITM_SES_SPEC_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Regards croisés;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T01;PRG_ARTS_SPEC_2019;;1;;THEME;Pratique et création;Pratique et création : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T01_C01;PRG_ARTS_SPEC_2019;ITM_ARTS_SPEC_2019_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Pratique et création;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T02;PRG_ARTS_SPEC_2019;;2;;THEME;Culture artistique;Culture artistique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T02_C01;PRG_ARTS_SPEC_2019;ITM_ARTS_SPEC_2019_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Culture artistique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T03;PRG_ARTS_SPEC_2019;;3;;THEME;Projet et présentation;Projet et présentation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T03_C01;PRG_ARTS_SPEC_2019;ITM_ARTS_SPEC_2019_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Projet et présentation;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T01;PRG_EPPCS_2021;;1;;THEME;Pratique physique et performance;Pratique physique et performance : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T01_C01;PRG_EPPCS_2021;ITM_EPPCS_2021_T01;1;1;CAPACITE;Mobiliser les notions essentielles : Pratique physique et performance;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T02;PRG_EPPCS_2021;;2;;THEME;Culture sportive;Culture sportive : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T02_C01;PRG_EPPCS_2021;ITM_EPPCS_2021_T02;2;1;CAPACITE;Mobiliser les notions essentielles : Culture sportive;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T03;PRG_EPPCS_2021;;3;;THEME;Projet et analyse de pratique;Projet et analyse de pratique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T03_C01;PRG_EPPCS_2021;ITM_EPPCS_2021_T03;3;1;CAPACITE;Mobiliser les notions essentielles : Projet et analyse de pratique;Identifier, expliquer et mobiliser les principaux repères liés à ce thème.;SRC_EDUSCOL_LGT_PROGRAMMES_2026

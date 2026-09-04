@@ -1,0 +1,11 @@
+# Histoire et méthodes des sciences
+
+## À connaître
+
+Cette fiche rassemble les repères essentiels associés au thème **Histoire et méthodes des sciences** au lycée.
+
+## Pour réviser
+
+- définir les notions principales ;
+- savoir les expliquer avec un exemple ;
+- relier le thème aux autres parties du programme.
