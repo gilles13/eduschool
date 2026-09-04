@@ -1,0 +1,22 @@
+---
+title: "Programmes et capacités"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+Les référentiels sont consultables sans connexion préalable. `programmes()` filtre les programmes et `capacites()` retourne les éléments de type `CAPACITE`.
+
+```{r, eval=FALSE}
+programmes("MAT")
+capacites("5E")
+capacites("5E", version_id = "2026_2027")
+```
+
+Les identifiants sont stables dans le projet et servent de clés dans les relations documentaires et les modèles d'exercices.

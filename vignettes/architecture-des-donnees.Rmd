@@ -1,0 +1,16 @@
+---
+title: "Architecture des données"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+Les données distribuées sont conservées sous `inst/` et retrouvées avec `eduschool_path()`. Les consultations simples utilisent directement les CSV; DuckDB reste disponible pour les jointures et analyses relationnelles.
+
+Le flux logique est : programme officiel → capacité → notion → prérequis → rappel → modèle d'exercice → exercice → rapport.

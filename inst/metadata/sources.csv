@@ -1,0 +1,25 @@
+source_id;organisme;type;titre;reference;date_publication;url;date_consultation
+SRC_EDUSCOL_COLLEGE_2026;MEN;EDUSCOL;L'organisation des enseignements au collège;;2026-07;https://eduscol.education.gouv.fr/5208/l-organisation-des-enseignements-au-college;2026-09-02
+SRC_DEC_2026_172;MEN;DECRET;Décret n° 2026-172 du 10 mars 2026 relatif à l'organisation de la formation au collège;MENE2601451D;2026-03-10;https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053652587;2026-09-02
+SRC_ARRETE_2026_03_10;MEN;ARRETE;Arrêté du 10 mars 2026 modifiant l'arrêté du 19 mai 2015 relatif à l'organisation des enseignements dans les classes de collège;MENE2601452A;2026-03-10;https://www.legifrance.gouv.fr/eli/arrete/2026/3/10/MENE2601452A/jo/texte;2026-09-02
+SRC_BO_2026_10_MENE2602912A;MEN;BO;Programmes d'enseignement de français et de mathématiques du cycle 4;MENE2602912A;2026-03-05;https://www.education.gouv.fr/bo/2026/Hebdo10/MENE2602912A;2026-09-02
+SRC_BO_2026_21_MENE2602909A;MEN;BO;Programmes d'enseignement communs et optionnels de langues vivantes régionales pour les classes de collège et de lycée général et technologique;MENE2602909A;2026-05-21;https://www.education.gouv.fr/bo/2026/Hebdo21/MENE2602909A;2026-09-02
+SRC_BO_2026_22_MENE2608631A;MEN;BO;Programmes d'enseignement d'éducation physique et sportive et d'histoire-géographie des cycles 2 et 3;MENE2608631A;2026-05-28;https://www.education.gouv.fr/bo/2026/Hebdo22/MENE2608631A;2026-09-02
+SRC_BO_2026_24_MENE2611650A;MEN;BO;Programmes de sciences et technologie des cycles 2 et 3;MENE2611650A;2026-06-11;https://www.education.gouv.fr/bo/2026/Hebdo24/MENE2611650A;2026-09-02
+SRC_BO_2025_22_MENE2504621A;MEN;BO;Programmes d'enseignements communs et optionnels de langues vivantes étrangères pour les classes de collège et de lycée général et technologique;MENE2504621A;2025-05-29;https://www.education.gouv.fr/bo/2025/Hebdo22/MENE2504621A;2026-09-02
+SRC_BO_2025_16_MATH_C3;MEN;BO;Programme de mathématiques du cycle 3;MENE2510195A;2025-04-17;https://www.education.gouv.fr/bo/2025/Hebdo16;2026-09-02
+SRC_BO_2025_06_MENE2503064A;MEN;BO;Programme d'éducation à la sexualité – EVAR/EVARS;MENE2503064A;2025-02-06;https://www.education.gouv.fr/bo/2025/Hebdo6/MENE2503064A;2026-09-02
+SRC_BO_2023_25_MENE2314101A;MEN;BO;Programme de sciences et technologie du cycle 3;MENE2314101A;2023-06-22;https://www.education.gouv.fr/bo/2023/Hebdo25/MENE2314101A;2026-09-02
+SRC_BO_2020_31_MENE2018714A;MEN;BO;Programmes des cycles 2, 3 et 4 – version 2020;MENE2018714A;2020-07-30;https://www.education.gouv.fr/bo/20/Hebdo31/MENE2018714A.htm;2026-09-02
+SRC_EDUSCOL_NIVEAUX_2026;MEN;EDUSCOL;Niveaux – calendrier de mise en œuvre des nouveaux programmes;;2026-08;https://eduscol.education.gouv.fr/4332/niveaux;2026-09-02
+SRC_BO_2024_09_TECH;MEN;BO;Programme de technologie du cycle 4;MENE2404639A;2024-02-29;https://www.education.gouv.fr/bo/2024/Hebdo9/MENE2404639A;2026-09-02
+SRC_BO_2020_31_C4_PROGRAMMES;MEN;BO;Programmes d'enseignement du cycle des approfondissements (cycle 4);MENE2018714A;2020-07-30;https://www.education.gouv.fr/bo/20/Hebdo31/MENE2018714A.htm;2026-09-02
+SRC_EDUSCOL_LGT_2026;MEN;EDUSCOL;Lycée général et technologique – horaires et organisation;;2026-01;https://eduscol.education.gouv.fr/31260/domaines-enseignement/lycee-general-et-technologique;2026-09-02
+SRC_EDUSCOL_2GT_2026;MEN;EDUSCOL;Seconde générale et technologique – horaires des enseignements;;2026-01;https://eduscol.education.gouv.fr/5466/seconde-generale-et-technologique;2026-09-02
+SRC_EDUSCOL_CYCLE_TERM_G_2026;MEN;EDUSCOL;Cycle terminal de la voie générale;;2026-01;https://eduscol.education.gouv.fr/5418/cycle-terminal-de-la-voie-generale;2026-09-02
+SRC_LEGIFRANCE_ARR_2018_07_16_G_2026;MEN;ARRETE;Arrêté du 16 juillet 2018 modifié – cycle terminal de la voie générale;MENE1815611A;2018-07-16;https://www.legifrance.gouv.fr/loda/id/LEGITEXT000037208167/;2026-09-02
+SRC_LEGIFRANCE_ARR_2018_07_16_GT_2026;MEN;ARRETE;Arrêté du 16 juillet 2018 modifié – seconde générale et technologique;MENE1815610A;2018-07-16;https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037202776/;2026-09-02
+SRC_BO_2026_14_MATH_LYCEE;MEN;BO;Programmes de mathématiques du lycée général et technologique – BO n°14;MENE2602914A à MENE2602921A;2026-04-02;https://www.education.gouv.fr/bo/2026/Hebdo14;2026-09-02
+SRC_EDUSCOL_LVE_GT_2026;MEN;EDUSCOL;Programmes et ressources en langues vivantes – voie GT;;2026-07;https://eduscol.education.gouv.fr/5811/programmes-et-ressources-en-langues-vivantes-voie-gt;2026-09-02
+SRC_BO_2026_21_LVR;MEN;BO;Programmes d’enseignement communs et optionnels de langues vivantes régionales – collège et lycée GT;MENE2602909A;2026-05-21;https://www.education.gouv.fr/bo/2026/Hebdo21/MENE2602909A;2026-09-02
+SRC_BO_2019_08_MATH_OPTIONS;MENJ;BO;Programmes de mathématiques du cycle terminal – programmes en vigueur jusqu’à la rentrée 2027;MENE1921246A / MENE1921264A / MENE1921265A / MENE1921263A;2019-07-25;https://www.education.gouv.fr/bo/19/Special8;2026-09-04

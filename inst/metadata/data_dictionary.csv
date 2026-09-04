@@ -1,0 +1,39 @@
+table;colonne;type;description
+sources;source_id;character;Clé stable de la source documentaire
+versions;version_id;character;Identifiant de l'année scolaire de référence
+cycles;cycle_id;character;Identifiant du cycle pédagogique
+voies;voie_id;character;Voie de formation
+niveaux;niveau_id;character;Niveau national (6E, 5E, etc.)
+disciplines;discipline_id;character;Discipline de référence
+enseignements;enseignement_id;character;Enseignement concret proposé aux élèves
+enseignements_niveaux;niveau_id;character;FK vers niveaux
+enseignements_niveaux;enseignement_id;character;FK vers enseignements
+horaires;horaire_id;character;Identifiant technique de la ligne horaire
+horaires;version_id;character;Version temporelle de la donnée
+programmes;programme_id;character;Identifiant technique du programme
+programme_applications;programme_id;character;Programme appliqué à un niveau
+options;option_id;character;Identifiant technique de l'option
+programme_items.csv;Objets hiérarchiques d'un programme;item_id;Identifiant stable de l'objet
+programme_items_applications.csv;Rattachement d'un objet de programme à un niveau et une version;programme_id,item_id,niveau_id,version_id;Relation
+series;serie_id;character;Série ou voie de spécialisation du lycée
+niveaux_series;niveau_id;character;FK vers niveaux
+niveaux_series;serie_id;character;FK vers series
+offres_enseignements;offre_id;character;Clé stable d’une offre d’enseignement pour un niveau et une série
+offres_enseignements;niveau_id;character;FK vers niveaux
+offres_enseignements;serie_id;character;FK vers series, vide pour les offres sans série
+offres_enseignements;enseignement_id;character;FK vers enseignements
+programme_enseignements;programme_id;character;FK vers programmes
+programme_enseignements;enseignement_id;character;FK vers enseignements
+horaires;serie_id;character;FK optionnelle vers series
+exercice_modeles;modele_id;character;Identifiant stable du modèle d’exercice
+exercice_modeles;generateur;character;Nom logique du générateur R
+exercice_modeles_capacites;modele_id;character;FK vers le catalogue des modèles
+exercice_modeles_capacites;capacite_id;character;FK vers programme_items.item_id de type CAPACITE
+programme_items;type;character;Niveau de granularité : DOMAINE, THEME ou CAPACITE
+programme_items;parent_item_id;character;Lien hiérarchique vers l’item parent
+notions;notion_id;character;Identifiant stable d’une notion pédagogique
+notions;document;character;Chemin relatif vers le rappel Markdown
+notions_capacites;notion_id;character;FK vers notions
+notions_capacites;capacite_id;character;FK vers programme_items de type CAPACITE
+prerequis;notion_id;character;Notion qui nécessite le prérequis
+prerequis;prerequis_id;character;FK vers la notion prérequise

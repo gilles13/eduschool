@@ -1,0 +1,5 @@
+voie_id;libelle;voie_parent_id
+COLLEGE;Collège;
+LYCEE_GT;Lycée général et technologique;
+VOIE_GENERALE;Voie générale;LYCEE_GT
+VOIE_TECHNOLOGIQUE;Voie technologique;LYCEE_GT

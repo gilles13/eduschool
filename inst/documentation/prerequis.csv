@@ -1,0 +1,17 @@
+notion_id;prerequis_id;importance;commentaire
+MAT_CALCUL_INTEGRAL;MAT_PRIMITIVES_EQUATIONS_DIFFERENTIELLES;UTILE;Notion utile pour aborder ce thème.
+MAT_CALCUL_VECTORIEL_ET_PRODUIT_SCALAIRE;MAT_VECTEURS_ET_PROBLEMES_DE_GEOMETRIE;UTILE;Notion utile pour aborder ce thème.
+MAT_DERIVATION;MAT_FONCTIONS;REQUIS;Notion utile pour aborder ce thème.
+MAT_EQ1;MAT_CALC_LITT;REQUIS;Notion utile pour aborder ce thème.
+MAT_EQ1;MAT_RELATIFS;REQUIS;Notion utile pour aborder ce thème.
+MAT_FONCTIONS;MAT_CALC_LITT;REQUIS;Notion utile pour aborder ce thème.
+MAT_FONCTION_EXPONENTIELLE;MAT_FONCTIONS;REQUIS;Notion utile pour aborder ce thème.
+MAT_FONCTION_LOGARITHME;MAT_FONCTION_EXPONENTIELLE;UTILE;Notion utile pour aborder ce thème.
+MAT_FRACTION_ADD;MAT_FRACTION_SENS;REQUIS;Savoir interpréter et représenter des fractions.
+MAT_FRACTION_QTE;MAT_FRACTION_SENS;REQUIS;Comprendre ce que représente une fraction avant de l’appliquer à une quantité.
+MAT_POURCENTAGE;MAT_FRACTION_SENS;UTILE;Le lien fraction-proportion facilite la compréhension des pourcentages.
+MAT_POURCENTAGE;MAT_PROP;UTILE;Les pourcentages sont une application fréquente de la proportionnalité.
+MAT_PROBABILITES_CONDITIONNELLES_ET_INDEPENDANCE;MAT_PROBABILITES;REQUIS;Notion utile pour aborder ce thème.
+MAT_TRIGONOMETRIE;MAT_TRIANGLES;UTILE;Notion utile pour aborder ce thème.
+MAT_VARIABLES_ALEATOIRES_REELLES;MAT_PROBABILITES;REQUIS;Notion utile pour aborder ce thème.
+MAT_VARIATIONS_ET_COURBES_REPRESENTATIVES_DES_FONCTIONS;MAT_DERIVATION;REQUIS;Notion utile pour aborder ce thème.

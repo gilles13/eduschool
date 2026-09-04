@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+*.duckdb
+*.duckdb.wal
+/rapports/
+/check/
+/eduschool.Rcheck/
+/*.tar.gz
+.DS_Store

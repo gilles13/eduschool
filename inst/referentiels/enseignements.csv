@@ -1,0 +1,57 @@
+enseignement_id;discipline_id;libelle;type
+FRA;FRA;Français;DISCIPLINAIRE
+MAT;MAT;Mathématiques;DISCIPLINAIRE
+HG_EMC;HG;Histoire-géographie et enseignement moral et civique;DISCIPLINAIRE
+LVE;LVE;Langue vivante;DISCIPLINAIRE
+LVE1;LVE;Langue vivante 1;DISCIPLINAIRE
+LVE2;LVE;Langue vivante 2;DISCIPLINAIRE
+SCI_6E;SCI;SVT et physique-chimie;DISCIPLINAIRE
+SVT;SVT;Sciences de la vie et de la Terre;DISCIPLINAIRE
+PC;PC;Physique-chimie;DISCIPLINAIRE
+TECH;TECH;Technologie;DISCIPLINAIRE
+EPS;EPS;Éducation physique et sportive;DISCIPLINAIRE
+ARTS_PLAST;ARTS;Arts plastiques;DISCIPLINAIRE
+MUS;MUS;Éducation musicale;DISCIPLINAIRE
+LVR;LVR;Langue vivante régionale;DISCIPLINAIRE
+LVE2_BILANGUE;LVE;Deuxième langue vivante étrangère ou régionale – classe bilangue;OPTION
+LCA;FRA;Langues et cultures de l'Antiquité;OPTION
+LCE;LVE;Langues et cultures européennes;OPTION
+LCR;LVR;Langues et cultures régionales;OPTION
+CHANT_CHORAL;MUS;Chant choral;OPTION
+PHILO;FRA;Philosophie;DISCIPLINAIRE
+HG_LYCEE;HG;Histoire-géographie;DISCIPLINAIRE
+LVA_LVB;LVE;Langues vivantes A et B;DISCIPLINAIRE
+SES;SES;Sciences économiques et sociales;DISCIPLINAIRE
+PC_LYCEE;PC;Physique-chimie;DISCIPLINAIRE
+SVT_LYCEE;SVT;Sciences de la vie et de la Terre;DISCIPLINAIRE
+SNT;NUM;Sciences numériques et technologie;DISCIPLINAIRE
+ENS_SCI;SCI;Enseignement scientifique;DISCIPLINAIRE
+EMC_LYCEE;EMC;Enseignement moral et civique;DISCIPLINAIRE
+MATH_2GT;MAT;Mathématiques – seconde générale et technologique;DISCIPLINAIRE
+MATH_1G;MAT;Mathématiques – première générale;DISCIPLINAIRE
+MATH_TERM_G;MAT;Mathématiques – terminale générale;DISCIPLINAIRE
+MATH_COMPLEMENTAIRES;MAT;Mathématiques complémentaires;OPTION
+MATH_EXPERTES;MAT;Mathématiques expertes;OPTION
+DROIT_GEMC;DROIT;Droit et grands enjeux du monde contemporain;OPTION
+HGGSP;HG;Histoire-géographie, géopolitique et sciences politiques;SPECIALITE
+HLP;FRA;Humanités, littérature et philosophie;SPECIALITE
+LLCER;LVE;Langues, littératures et cultures étrangères et régionales;SPECIALITE
+LLCA;LCA;Littérature et langues et cultures de l’Antiquité;SPECIALITE
+NSI;NUM;Numérique et sciences informatiques;SPECIALITE
+PC_SPEC;PC;Physique-chimie – enseignement de spécialité;SPECIALITE
+SVT_SPEC;SVT;Sciences de la vie et de la Terre – enseignement de spécialité;SPECIALITE
+SI;TECH;Sciences de l’ingénieur;SPECIALITE
+SES_SPEC;SES;Sciences économiques et sociales – enseignement de spécialité;SPECIALITE
+ARTS_SPEC;ARTS;Arts – enseignement de spécialité;SPECIALITE
+EPPCS;EPS;Éducation physique, pratiques et culture sportives;SPECIALITE
+MATH_SPEC;MAT;Mathématiques – enseignement de spécialité;SPECIALITE
+BIO_ECO;SVT;Biologie-écologie;SPECIALITE
+LVC;LVE;Langue vivante C;OPTION
+LSF;LVE;Langue des signes française;OPTION
+EPS_OPT;EPS;Éducation physique et sportive – option;OPTION
+ARTS_OPT;ARTS;Arts – option;OPTION
+LCA_LATIN;LCA;Langues et cultures de l’Antiquité – latin;OPTION
+LCA_GREC;LCA;Langues et cultures de l’Antiquité – grec;OPTION
+MATH_SPEC_TECH;MAT;Mathématiques – voie technologique;DISCIPLINAIRE
+LVA_LVB_TECH;LVE;Langues vivantes A et B – voie technologique;DISCIPLINAIRE
+ETLV;LVE;Enseignement technologique en langue vivante;DISCIPLINAIRE

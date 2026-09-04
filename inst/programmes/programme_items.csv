@@ -1,0 +1,370 @@
+item_id;programme_id;parent_item_id;niveau;ordre;type;libelle;description;source_id
+ITM_MAT_C4_01;PRG_MAT_C4_2026;;C4;1;DOMAINE;Nombres et calculs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02;PRG_MAT_C4_2026;;C4;2;DOMAINE;Espace et géométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03;PRG_MAT_C4_2026;;C4;3;DOMAINE;Organisation et gestion des données et probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04;PRG_MAT_C4_2026;;C4;4;DOMAINE;Proportionnalité et fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05;PRG_MAT_C4_2026;;C4;5;DOMAINE;Pensée informatique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;1;THEME;Opérations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;2;THEME;Nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_03;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;3;THEME;Nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_04;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;4;THEME;Puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_05;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;5;THEME;Calcul littéral et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_06;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;6;THEME;Opérations sur les nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;7;THEME;Nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_08;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;8;THEME;Puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_09;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;9;THEME;Racine carrée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;10;THEME;Calcul littéral et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_11;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;11;THEME;Nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_12;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;12;THEME;Puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_13;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;13;THEME;Racine carrée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_14;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;14;THEME;Multiples et diviseurs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;15;THEME;Calcul littéral et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_01;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;1;THEME;Repérage sur une droite et dans le plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_02;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;2;THEME;Représentation de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_03;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;3;THEME;Transformations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_04;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;4;THEME;Angles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_05;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;5;THEME;Triangles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_06;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;6;THEME;Parallélogrammes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_07;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;7;THEME;Transformations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_08;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;8;THEME;Repérage sur une droite et dans le plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_09;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;9;THEME;Représentation de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_10;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;10;THEME;Parallélogrammes et translations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;11;THEME;Triangles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_12;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;12;THEME;Repérage sur une droite et dans le plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_13;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;13;THEME;Représentation de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_14;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;14;THEME;Triangles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_15;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;15;THEME;Translations et vecteurs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_01;PRG_MAT_C4_2026;ITM_MAT_C4_03;5E;1;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_02;PRG_MAT_C4_2026;ITM_MAT_C4_03;5E;2;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03;PRG_MAT_C4_2026;ITM_MAT_C4_03;4E;3;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04;PRG_MAT_C4_2026;ITM_MAT_C4_03;4E;4;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05;PRG_MAT_C4_2026;ITM_MAT_C4_03;3E;5;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_06;PRG_MAT_C4_2026;ITM_MAT_C4_03;3E;6;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_01;PRG_MAT_C4_2026;ITM_MAT_C4_04;5E;1;THEME;Proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_02;PRG_MAT_C4_2026;ITM_MAT_C4_04;5E;2;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03;PRG_MAT_C4_2026;ITM_MAT_C4_04;4E;3;THEME;Proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04;PRG_MAT_C4_2026;ITM_MAT_C4_04;4E;4;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_05;PRG_MAT_C4_2026;ITM_MAT_C4_04;3E;5;THEME;Proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06;PRG_MAT_C4_2026;ITM_MAT_C4_04;3E;6;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_01;PRG_MAT_C4_2026;ITM_MAT_C4_05;5E;1;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02;PRG_MAT_C4_2026;ITM_MAT_C4_05;4E;2;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03;PRG_MAT_C4_2026;ITM_MAT_C4_05;3E;3;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C3_01;PRG_MAT_C3_2025;;C3;1;DOMAINE;Nombres, calcul et résolution de problèmes;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_02;PRG_MAT_C3_2025;;C3;2;DOMAINE;Grandeurs et mesures;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_03;PRG_MAT_C3_2025;;C3;3;DOMAINE;Espace et géométrie;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_04;PRG_MAT_C3_2025;;C3;4;DOMAINE;Organisation et gestion de données et probabilités;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_05;PRG_MAT_C3_2025;;C3;5;DOMAINE;Proportionnalité;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_06;PRG_MAT_C3_2025;;C3;6;DOMAINE;Initiation à la pensée informatique;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_2GT_2026_01;PRG_MAT_2GT_2026;;2GT;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_02;PRG_MAT_2GT_2026;;2GT;2;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_03;PRG_MAT_2GT_2026;;2GT;3;THEME;Variables et instructions élémentaires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_04;PRG_MAT_2GT_2026;;2GT;4;THEME;Notion de fonction;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_05;PRG_MAT_2GT_2026;;2GT;5;THEME;Automatismes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_06;PRG_MAT_2GT_2026;;2GT;6;THEME;Nombres et calculs, algèbre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_07;PRG_MAT_2GT_2026;;2GT;7;THEME;Arithmétique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_08;PRG_MAT_2GT_2026;;2GT;8;THEME;Nombres réels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_09;PRG_MAT_2GT_2026;;2GT;9;THEME;Algèbre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_10;PRG_MAT_2GT_2026;;2GT;10;THEME;Géométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_11;PRG_MAT_2GT_2026;;2GT;11;THEME;Vecteurs et problèmes de géométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_12;PRG_MAT_2GT_2026;;2GT;12;THEME;Droites du plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_13;PRG_MAT_2GT_2026;;2GT;13;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_14;PRG_MAT_2GT_2026;;2GT;14;THEME;Représentation algébrique et graphique des fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_15;PRG_MAT_2GT_2026;;2GT;15;THEME;Variations et extrémums d’une fonction;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_16;PRG_MAT_2GT_2026;;2GT;16;THEME;Statistiques et probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_17;PRG_MAT_2GT_2026;;2GT;17;THEME;Information chiffrée et statistique descriptive;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_18;PRG_MAT_2GT_2026;;2GT;18;THEME;Croisement de deux variables qualitatives;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_19;PRG_MAT_2GT_2026;;2GT;19;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_01;PRG_MATH_SCI_1G_2026;;1G;1;THEME;Automatismes;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_02;PRG_MATH_SCI_1G_2026;;1G;2;THEME;Analyse de l’information chiffrée;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_03;PRG_MATH_SCI_1G_2026;;1G;3;THEME;Phénomènes aléatoires;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_04;PRG_MATH_SCI_1G_2026;;1G;4;THEME;Phénomènes d’évolution, modélisation par des fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_05;PRG_MATH_SCI_1G_2026;;1G;5;THEME;Variation linéaire;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_06;PRG_MATH_SCI_1G_2026;;1G;6;THEME;Modélisation quadratique;;SRC_BO_2026_10_MENE2602912A
+ITM_MATH_SCI_1G_2026_07;PRG_MATH_SCI_1G_2026;;1G;7;THEME;Variation exponentielle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_01;PRG_MAT_SPEC_1G_2026;;1G;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_02;PRG_MAT_SPEC_1G_2026;;1G;2;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_03;PRG_MAT_SPEC_1G_2026;;1G;3;THEME;Notion de liste;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_04;PRG_MAT_SPEC_1G_2026;;1G;4;THEME;Automatismes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_05;PRG_MAT_SPEC_1G_2026;;1G;5;THEME;Évolutions et variations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_06;PRG_MAT_SPEC_1G_2026;;1G;6;THEME;Calcul numérique et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_07;PRG_MAT_SPEC_1G_2026;;1G;7;THEME;Fonctions et représentations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_08;PRG_MAT_SPEC_1G_2026;;1G;8;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_09;PRG_MAT_SPEC_1G_2026;;1G;9;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_10;PRG_MAT_SPEC_1G_2026;;1G;10;THEME;Algèbre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_11;PRG_MAT_SPEC_1G_2026;;1G;11;THEME;Suites numériques, modèles discrets;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_12;PRG_MAT_SPEC_1G_2026;;1G;12;THEME;Équations, fonctions polynômes du second degré;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_13;PRG_MAT_SPEC_1G_2026;;1G;13;THEME;Analyse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_14;PRG_MAT_SPEC_1G_2026;;1G;14;THEME;Dérivation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_15;PRG_MAT_SPEC_1G_2026;;1G;15;THEME;Variations et courbes représentatives des fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_16;PRG_MAT_SPEC_1G_2026;;1G;16;THEME;Fonction exponentielle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_17;PRG_MAT_SPEC_1G_2026;;1G;17;THEME;Trigonométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_18;PRG_MAT_SPEC_1G_2026;;1G;18;THEME;Géométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_19;PRG_MAT_SPEC_1G_2026;;1G;19;THEME;Calcul vectoriel et produit scalaire;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_20;PRG_MAT_SPEC_1G_2026;;1G;20;THEME;Géométrie repérée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_21;PRG_MAT_SPEC_1G_2026;;1G;21;THEME;Probabilités et statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_22;PRG_MAT_SPEC_1G_2026;;1G;22;THEME;Probabilités conditionnelles et indépendance;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_23;PRG_MAT_SPEC_1G_2026;;1G;23;THEME;Variables aléatoires réelles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_SPEC_1G_2026_24;PRG_MAT_SPEC_1G_2026;;1G;24;THEME;Expérimentations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_01;PRG_MAT_1T_2026;;1T;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_02;PRG_MAT_1T_2026;;1T;2;THEME;Algorithmique et programmation (sauf série STD2A);;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_03;PRG_MAT_1T_2026;;1T;3;THEME;Activités géométriques (uniquement pour la série STD2A);;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_04;PRG_MAT_1T_2026;;1T;4;THEME;Géométrie plane;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_05;PRG_MAT_1T_2026;;1T;5;THEME;Géométrie dans l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_06;PRG_MAT_1T_2026;;1T;6;THEME;Automatismes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_07;PRG_MAT_1T_2026;;1T;7;THEME;Analyse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_08;PRG_MAT_1T_2026;;1T;8;THEME;Suites numériques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_09;PRG_MAT_1T_2026;;1T;9;THEME;Fonctions de la variable réelle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_10;PRG_MAT_1T_2026;;1T;10;THEME;Dérivation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_11;PRG_MAT_1T_2026;;1T;11;THEME;Statistiques et probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_12;PRG_MAT_1T_2026;;1T;12;THEME;Séries statistiques à deux variables quantitatives;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_13;PRG_MAT_1T_2026;;1T;13;THEME;Probabilités conditionnelles : indépendance;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_14;PRG_MAT_1T_2026;;1T;14;THEME;Modèle associé à une expérience aléatoire à plusieurs épreuves indépendantes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_1T_2026_15;PRG_MAT_1T_2026;;1T;15;THEME;Variables aléatoires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_01;PRG_MAT_TERM_G_2026;;TG;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_02;PRG_MAT_TERM_G_2026;;TG;2;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_03;PRG_MAT_TERM_G_2026;;TG;3;THEME;Histoire des mathématiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_04;PRG_MAT_TERM_G_2026;;TG;4;THEME;Algèbre et géométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_05;PRG_MAT_TERM_G_2026;;TG;5;THEME;Objectifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_06;PRG_MAT_TERM_G_2026;;TG;6;THEME;Histoire des mathématiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_07;PRG_MAT_TERM_G_2026;;TG;7;THEME;Combinatoire et dénombrement;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_08;PRG_MAT_TERM_G_2026;;TG;8;THEME;Manipulation des vecteurs, des droites et des plans de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_09;PRG_MAT_TERM_G_2026;;TG;9;THEME;Orthogonalité et distances dans l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_10;PRG_MAT_TERM_G_2026;;TG;10;THEME;Représentations paramétriques et équations cartésiennes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_11;PRG_MAT_TERM_G_2026;;TG;11;THEME;Analyse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_12;PRG_MAT_TERM_G_2026;;TG;12;THEME;Objectifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_13;PRG_MAT_TERM_G_2026;;TG;13;THEME;Histoire des mathématiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_14;PRG_MAT_TERM_G_2026;;TG;14;THEME;Suites;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_15;PRG_MAT_TERM_G_2026;;TG;15;THEME;Limites des fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_16;PRG_MAT_TERM_G_2026;;TG;16;THEME;Compléments sur la dérivation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_17;PRG_MAT_TERM_G_2026;;TG;17;THEME;Continuité des fonctions d’une variable réelle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_18;PRG_MAT_TERM_G_2026;;TG;18;THEME;Fonction logarithme;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_19;PRG_MAT_TERM_G_2026;;TG;19;THEME;Fonctions sinus et cosinus;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_20;PRG_MAT_TERM_G_2026;;TG;20;THEME;Primitives, équations différentielles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_21;PRG_MAT_TERM_G_2026;;TG;21;THEME;Calcul intégral;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_22;PRG_MAT_TERM_G_2026;;TG;22;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_23;PRG_MAT_TERM_G_2026;;TG;23;THEME;Objectifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_24;PRG_MAT_TERM_G_2026;;TG;24;THEME;Histoire des mathématiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_25;PRG_MAT_TERM_G_2026;;TG;25;THEME;Succession d’épreuves indépendantes, schéma de Bernoulli;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_26;PRG_MAT_TERM_G_2026;;TG;26;THEME;Sommes de variables aléatoires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2026_27;PRG_MAT_TERM_G_2026;;TG;27;THEME;Concentration, loi des grands nombres;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_01;PRG_MAT_COMP_2026;;TG;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_02;PRG_MAT_COMP_2026;;TG;2;THEME;Thèmes d’étude;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_03;PRG_MAT_COMP_2026;;TG;3;THEME;Modèles définis par une fonction d’une variable;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_04;PRG_MAT_COMP_2026;;TG;4;THEME;Modèles d’évolution;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_05;PRG_MAT_COMP_2026;;TG;5;THEME;Approche historique de la fonction logarithme;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_06;PRG_MAT_COMP_2026;;TG;6;THEME;Calculs d’aires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_07;PRG_MAT_COMP_2026;;TG;7;THEME;Répartition des richesses, inégalités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_08;PRG_MAT_COMP_2026;;TG;8;THEME;Inférence bayésienne;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_09;PRG_MAT_COMP_2026;;TG;9;THEME;Répétition d’expériences indépendantes, échantillonnage;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_10;PRG_MAT_COMP_2026;;TG;10;THEME;Temps d’attente;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_11;PRG_MAT_COMP_2026;;TG;11;THEME;Corrélation et causalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_12;PRG_MAT_COMP_2026;;TG;12;THEME;Contenus;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_13;PRG_MAT_COMP_2026;;TG;13;THEME;Analyse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_14;PRG_MAT_COMP_2026;;TG;14;THEME;Objectifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_15;PRG_MAT_COMP_2026;;TG;15;THEME;Histoire des mathématiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_16;PRG_MAT_COMP_2026;;TG;16;THEME;Suites numériques, modèles discrets;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_17;PRG_MAT_COMP_2026;;TG;17;THEME;Fonctions : continuité, dérivabilité, limites, représentation graphique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_18;PRG_MAT_COMP_2026;;TG;18;THEME;Primitives et équations différentielles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_19;PRG_MAT_COMP_2026;;TG;19;THEME;Fonctions convexes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_20;PRG_MAT_COMP_2026;;TG;20;THEME;Intégration;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_21;PRG_MAT_COMP_2026;;TG;21;THEME;Probabilités et statistique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_22;PRG_MAT_COMP_2026;;TG;22;THEME;Histoire des mathématiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_23;PRG_MAT_COMP_2026;;TG;23;THEME;Lois discrètes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_24;PRG_MAT_COMP_2026;;TG;24;THEME;Lois à densité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_25;PRG_MAT_COMP_2026;;TG;25;THEME;Statistique à deux variables quantitatives;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_COMP_2026_26;PRG_MAT_COMP_2026;;TG;26;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_01;PRG_MAT_TT_2026;;TT;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_02;PRG_MAT_TT_2026;;TT;2;THEME;Algorithmique et programmation (sauf série STD2A);;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_03;PRG_MAT_TT_2026;;TT;3;THEME;Activités géométriques (uniquement pour la série STD2A);;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_04;PRG_MAT_TT_2026;;TT;4;THEME;Géométrie plane;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_05;PRG_MAT_TT_2026;;TT;5;THEME;Géométrie dans l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_06;PRG_MAT_TT_2026;;TT;6;THEME;Automatismes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_07;PRG_MAT_TT_2026;;TT;7;THEME;Analyse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_08;PRG_MAT_TT_2026;;TT;8;THEME;Suites numériques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_09;PRG_MAT_TT_2026;;TT;9;THEME;Fonctions exponentielles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_10;PRG_MAT_TT_2026;;TT;10;THEME;Fonction logarithme décimal;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_11;PRG_MAT_TT_2026;;TT;11;THEME;Fonction inverse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_12;PRG_MAT_TT_2026;;TT;12;THEME;Statistique et probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_13;PRG_MAT_TT_2026;;TT;13;THEME;Séries statistiques à deux variables quantitatives;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_14;PRG_MAT_TT_2026;;TT;14;THEME;Probabilités conditionnelles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_15;PRG_MAT_TT_2026;;TT;15;THEME;Variables aléatoires discrètes finies;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_16;PRG_MAT_TT_2026;;TT;16;THEME;Thèmes d’étude;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TT_2026_17;PRG_MAT_TT_2026;;TT;17;THEME;Liste indicative de thèmes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_TERM_G_2019_01;PRG_MAT_TERM_G_2019;;TG;1;DOMAINE;Algèbre et géométrie;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02;PRG_MAT_TERM_G_2019;;TG;2;DOMAINE;Analyse;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_03;PRG_MAT_TERM_G_2019;;TG;3;DOMAINE;Probabilités;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_04;PRG_MAT_TERM_G_2019;;TG;4;DOMAINE;Algorithmique et programmation;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_05;PRG_MAT_TERM_G_2019;;TG;5;DOMAINE;Vocabulaire ensembliste et logique;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_01;PRG_MAT_COMP_2019;;TG;1;DOMAINE;Modèles définis par une fonction;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_02;PRG_MAT_COMP_2019;;TG;2;DOMAINE;Modèles d’évolution;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_03;PRG_MAT_COMP_2019;;TG;3;DOMAINE;Approche historique de la fonction logarithme;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_04;PRG_MAT_COMP_2019;;TG;4;DOMAINE;Calcul intégral;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_05;PRG_MAT_COMP_2019;;TG;5;DOMAINE;Probabilités et statistique;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_06;PRG_MAT_COMP_2019;;TG;6;DOMAINE;Algorithmique et programmation;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_01;PRG_MAT_EXP_2019;;TG;1;DOMAINE;Nombres complexes;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_02;PRG_MAT_EXP_2019;;TG;2;DOMAINE;Arithmétique;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_03;PRG_MAT_EXP_2019;;TG;3;DOMAINE;Graphes et matrices;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_01;PRG_MAT_TT_2019;;TT;1;DOMAINE;Nombres et calculs;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_02;PRG_MAT_TT_2019;;TT;2;DOMAINE;Fonctions;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_03;PRG_MAT_TT_2019;;TT;3;DOMAINE;Statistiques et probabilités;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_04;PRG_MAT_TT_2019;;TT;4;DOMAINE;Algorithmique et programmation;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_C4_01_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_01;5E;1;CAPACITE;Calculer et utiliser des produits et quotients;Effectuer des multiplications et divisions dans des situations numériques et de résolution de problèmes.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_01;5E;2;CAPACITE;Priorités opératoires;Effectuer des calculs en respectant les priorités opératoires et contrôler la cohérence du résultat.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_01_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_01;5E;3;CAPACITE;Calcul avec des fractions;Additionner, soustraire, multiplier et diviser des fractions dans les cas prévus par le programme.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_02_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_02;5E;1;CAPACITE;Repérer des nombres relatifs;Placer, lire et comparer des nombres relatifs sur une droite graduée.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_02_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_02;5E;2;CAPACITE;Additionner et soustraire des relatifs;Calculer des sommes et différences de nombres relatifs et interpréter les résultats.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_02_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_02;5E;3;CAPACITE;Multiplier et diviser des relatifs;Utiliser les règles de signes pour multiplier et diviser des nombres relatifs.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_03_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_03;5E;1;CAPACITE;Fractions et nombres rationnels;"Reconnaître une fraction comme nombre, écriture et opérateur ; distinguer fraction et nombre rationnel.";SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_03_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_03;5E;2;CAPACITE;Fractions de quantité;Calculer une fraction d’une quantité et résoudre des problèmes mobilisant les fractions.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_04_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_04;5E;1;CAPACITE;Puissances entières;Utiliser les puissances comme produit itéré et effectuer des calculs simples avec elles.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_04_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_04;5E;2;CAPACITE;Puissances de dix;Utiliser les puissances de dix, les ordres de grandeur et les conversions associées.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_05_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_05;5E;1;CAPACITE;Produire une expression littérale;Traduire une situation par une expression littérale et interpréter une lettre comme variable.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_05_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_05;5E;2;CAPACITE;Réduire une expression;Réduire et organiser une expression littérale simple.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_05_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_05;5E;3;CAPACITE;Distributivité;Utiliser la distributivité simple pour développer ou factoriser dans les cas élémentaires.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_02_01;5E;1;CAPACITE;Coordonnées dans le plan;"Lire et placer des points dans un repère ; interpréter les coordonnées.";SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_02_01;5E;2;CAPACITE;Repérage sur une droite graduée;Repérer et placer des nombres relatifs sur une droite graduée.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_02_01;PRG_MAT_C4_2026;ITM_MAT_C4_02_02;5E;1;CAPACITE;Solides et représentations;Reconnaître, représenter et décrire des solides usuels.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_02_02;PRG_MAT_C4_2026;ITM_MAT_C4_02_02;5E;2;CAPACITE;Patrons et perspectives;Utiliser des patrons et des représentations planes pour raisonner sur des solides.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_03_01;PRG_MAT_C4_2026;ITM_MAT_C4_02_03;5E;1;CAPACITE;Symétries;Construire et utiliser des symétries pour transformer des figures.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_03_02;PRG_MAT_C4_2026;ITM_MAT_C4_02_03;5E;2;CAPACITE;Translations et rotations;Identifier et construire des images par translation ou rotation lorsque le programme le prévoit.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_04_01;PRG_MAT_C4_2026;ITM_MAT_C4_02_04;5E;1;CAPACITE;Relations entre angles;Utiliser les relations entre angles dans des configurations géométriques usuelles.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_05_01;PRG_MAT_C4_2026;ITM_MAT_C4_02_05;5E;1;CAPACITE;Construire et caractériser des triangles;Construire des triangles et utiliser leurs propriétés usuelles.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_05_02;PRG_MAT_C4_2026;ITM_MAT_C4_02_05;5E;2;CAPACITE;Somme des angles;Utiliser la somme des angles d’un triangle pour résoudre des problèmes.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_06_01;PRG_MAT_C4_2026;ITM_MAT_C4_02_06;5E;1;CAPACITE;Reconnaître un parallélogramme;Utiliser les propriétés permettant de reconnaître ou caractériser un parallélogramme.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_03_01;5E;1;CAPACITE;Lire des représentations statistiques;Lire, produire et interpréter des tableaux et représentations graphiques adaptés aux données.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_03_01;5E;2;CAPACITE;Indicateurs statistiques;Calculer et interpréter des indicateurs statistiques simples.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_02_01;PRG_MAT_C4_2026;ITM_MAT_C4_03_02;5E;1;CAPACITE;Probabilité d’un événement;Estimer ou calculer une probabilité dans des situations simples et interpréter le résultat.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_02_02;PRG_MAT_C4_2026;ITM_MAT_C4_03_02;5E;2;CAPACITE;Expériences aléatoires;Décrire une expérience aléatoire et identifier les issues et événements pertinents.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_04_01;5E;1;CAPACITE;Reconnaître une situation de proportionnalité;Identifier et représenter une situation de proportionnalité.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_04_01;5E;2;CAPACITE;Résoudre un problème de proportionnalité;Utiliser coefficient de proportionnalité, produit en croix ou représentation adaptée.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_02_01;PRG_MAT_C4_2026;ITM_MAT_C4_04_02;5E;1;CAPACITE;Notion de fonction;Décrire une dépendance entre deux grandeurs à l’aide d’un tableau, d’une formule ou d’un graphique.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_02_02;PRG_MAT_C4_2026;ITM_MAT_C4_04_02;5E;2;CAPACITE;Images et antécédents;Déterminer l’image ou un antécédent d’un nombre dans une représentation adaptée.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_05_01;5E;1;CAPACITE;Variables et affectation;Lire et écrire un algorithme simple comportant des variables et des affectations.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_05_01;5E;2;CAPACITE;Conditions et boucles;Lire, modifier et compléter des programmes utilisant des instructions conditionnelles ou répétitives.;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_2GT_2026_01_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_01;2GT;1;CAPACITE;Ensembles et intervalles;Utiliser appartenance, inclusion, réunion, intersection, complémentaire et notation des intervalles.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_01_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_01;2GT;2;CAPACITE;Propositions et connecteurs;Lire et écrire des propositions avec « et » et « ou » et en formuler la négation.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_01_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_01;2GT;3;CAPACITE;Implication et équivalence;Formuler une implication ou une équivalence et utiliser réciproque et contraposée.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_01_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_01;2GT;4;CAPACITE;Raisonnement par contre-exemple;Produire un contre-exemple pour réfuter une proposition.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_01_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_01;2GT;5;CAPACITE;Raisonnement par disjonction et absurde;Mettre en œuvre un raisonnement par disjonction des cas ou par l’absurde.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_03_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;1;CAPACITE;Types de variables;Choisir ou déterminer le type d’une variable entière, flottante, booléenne ou chaîne.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_03_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;2;CAPACITE;Affectation et séquences;Écrire une affectation et une séquence d’instructions.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_03_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;3;CAPACITE;Conditions;Écrire et interpréter une instruction conditionnelle.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_03_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;4;CAPACITE;Boucles;Programmer une boucle bornée ou non bornée dans un cas simple.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_03_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;5;CAPACITE;Lire et modifier un programme;Lire, comprendre, modifier ou compléter un algorithme ou programme.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_04_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_04;2GT;1;CAPACITE;Écrire une fonction informatique;Écrire une fonction simple et l’appeler.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_04_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_04;2GT;2;CAPACITE;Fonction et plusieurs arguments;Utiliser une fonction possédant un ou plusieurs arguments.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_04_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_04;2GT;3;CAPACITE;Fonction aléatoire;Écrire une fonction simulant une expérience aléatoire simple.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_07_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_07;2GT;1;CAPACITE;Multiples et diviseurs;Modéliser et résoudre des problèmes mobilisant multiples, diviseurs, nombres pairs et impairs.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_07_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_07;2GT;2;CAPACITE;Fraction irréductible;Présenter une fraction sous forme irréductible.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_08_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;1;CAPACITE;Nombres réels et droite graduée;Interpréter les nombres réels comme abscisses de points d’une droite graduée.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_08_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;2;CAPACITE;Irrationnels et encadrement;Reconnaître des nombres irrationnels et les encadrer par des nombres décimaux ou rationnels.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_08_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;3;CAPACITE;Calcul approché;Comparer un calcul exact à une valeur approchée fournie par une calculatrice ou un logiciel.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_09_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;1;CAPACITE;Calcul littéral;Développer, factoriser et réduire des expressions algébriques simples.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_09_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;2;CAPACITE;Équations du premier degré;Résoudre des équations se ramenant au premier degré.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_09_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;3;CAPACITE;Inéquations du premier degré;Résoudre des inéquations du premier degré et représenter leurs solutions.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_09_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;4;CAPACITE;Isoler une variable;Transformer une formule pour isoler une variable.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_11_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;1;CAPACITE;Calcul vectoriel;Utiliser les vecteurs pour résoudre des problèmes de géométrie plane.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_11_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;2;CAPACITE;Coordonnées et vecteurs;Calculer les coordonnées d’un vecteur et exploiter les relations vectorielles.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_12_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;1;CAPACITE;Équation de droite;Déterminer et exploiter une équation de droite dans un repère.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_12_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;2;CAPACITE;Parallélisme et coefficient directeur;Utiliser le coefficient directeur pour étudier le parallélisme et les variations linéaires.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_14_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_14;2GT;1;CAPACITE;Images et antécédents;Déterminer graphiquement ou algébriquement images et antécédents.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_14_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_14;2GT;2;CAPACITE;Équation d’une courbe;Exploiter une équation de courbe pour tester l’appartenance d’un point et calculer des coordonnées.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_14_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_14;2GT;3;CAPACITE;Fonctions affine et linéaire;Reconnaître une fonction affine ou linéaire et sa représentation graphique.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_15_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;1;CAPACITE;Variations;Décrire les variations d’une fonction à partir d’un graphique ou d’une expression adaptée.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_15_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;2;CAPACITE;Extremum;Déterminer et interpréter un maximum ou un minimum dans un contexte donné.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_17_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_17;2GT;1;CAPACITE;Proportions et pourcentages;Calculer et exprimer une proportion sous forme décimale, fractionnaire ou en pourcentage.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_17_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_17;2GT;2;CAPACITE;Évolutions;Passer d’un taux d’évolution à un coefficient multiplicateur et réciproquement.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_17_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_17;2GT;3;CAPACITE;Indicateurs;Calculer et interpréter moyenne, médiane et quartiles selon la présentation des données.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_18_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_18;2GT;1;CAPACITE;Tableau croisé;Construire et interpréter un tableau d’effectifs croisant deux variables qualitatives.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_18_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_18;2GT;2;CAPACITE;Fréquences conditionnelles;Calculer et interpréter des fréquences conditionnelles dans un tableau croisé.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_19_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;1;CAPACITE;Probabilité élémentaire;Utiliser qu’une probabilité est comprise entre 0 et 1.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_19_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;2;CAPACITE;Événement contraire;Calculer la probabilité de l’événement contraire.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_19_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;3;CAPACITE;Équiprobabilité;Utiliser P(A)=Card(A)/Card(Ω) dans une situation d’équiprobabilité.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_19_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;4;CAPACITE;Somme des probabilités;Calculer la probabilité d’un événement comme somme des probabilités de ses issues.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_05_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_05;1G;1;CAPACITE;Taux d’évolution;Calculer un taux d’évolution et l’exprimer en pourcentage.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_05_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_05;1G;2;CAPACITE;Évolutions successives;Calculer le taux d’évolution global associé à plusieurs évolutions successives.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_05_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_05;1G;3;CAPACITE;Évolution réciproque;Calculer le taux d’évolution réciproque.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_06_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_06;1G;1;CAPACITE;Équation produit nul;Déterminer les solutions d’une équation produit nul.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_06_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_06;1G;2;CAPACITE;Signe d’une expression;Déterminer le signe d’une expression du premier degré ou factorisée du second degré.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_06_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_06;1G;3;CAPACITE;Développer et factoriser;Développer, factoriser et réduire une expression algébrique simple.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_07_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_07;1G;1;CAPACITE;Résolution graphique;Résoudre graphiquement une équation ou une inéquation du type f(x)=k ou f(x)<k.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_07_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_07;1G;2;CAPACITE;Signe et variations graphiques;Déterminer graphiquement le signe d’une fonction ou son tableau de variations.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_07_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_07;1G;3;CAPACITE;Droite et coefficient directeur;Tracer une droite à partir de son équation ou d’un point et d’un coefficient directeur.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_07_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_07;1G;4;CAPACITE;Coefficient directeur;Déterminer le coefficient directeur à partir des coordonnées de deux points.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;1;CAPACITE;Modes de génération;Passer d’une définition explicite à une définition par récurrence ou algorithmique.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;2;CAPACITE;Suite arithmétique;Calculer le terme général et des sommes de termes d’une suite arithmétique.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;3;CAPACITE;Suite géométrique;Calculer le terme général et des sommes de termes d’une suite géométrique.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;4;CAPACITE;Variation d’une suite;Déterminer le sens de variation d’une suite dans des cas usuels.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11_05;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;5;CAPACITE;Modélisation discrète;Modéliser une évolution à accroissements constants ou à taux constant par une suite.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11_06;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;6;CAPACITE;Limite intuitive;Conjecturer une limite de suite dans des situations simples à partir de calculs ou d’un algorithme.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_12_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;1;CAPACITE;Signe sous forme factorisée;Étudier le signe d’un polynôme du second degré sous forme factorisée.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_12_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;2;CAPACITE;Forme canonique;Déterminer la forme canonique dans les cas simples.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_12_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;3;CAPACITE;Factorisation;Factoriser un polynôme du second degré par différentes stratégies.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_12_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;4;CAPACITE;Choisir une forme;Choisir la forme développée, canonique ou factorisée adaptée à un problème.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_14_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;1;CAPACITE;Taux de variation;Calculer un taux de variation et interpréter la pente d’une sécante.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_14_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;2;CAPACITE;Nombre dérivé;Interpréter un nombre dérivé comme pente de tangente ou vitesse instantanée.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_14_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;3;CAPACITE;Tangente;Déterminer l’équation de la tangente à une courbe en un point.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_14_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;4;CAPACITE;Approximation linéaire;Utiliser l’approximation linéaire au voisinage d’un point.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_14_05;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;5;CAPACITE;Fonction dérivée;Calculer une dérivée dans des cas simples à l’aide des règles du programme.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_16_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_16;1G;1;CAPACITE;Calculs avec exponentielle;Utiliser les propriétés de la fonction exponentielle pour transformer et calculer des expressions.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_16_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_16;1G;2;CAPACITE;Modélisation exponentielle;Modéliser une évolution continue par une fonction exponentielle dans un contexte adapté.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_17_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_17;1G;1;CAPACITE;Cercle trigonométrique;Lire et placer des angles sur le cercle trigonométrique.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_17_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_17;1G;2;CAPACITE;Sinus et cosinus;Utiliser les valeurs et propriétés usuelles de sinus et cosinus.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_19_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_19;1G;1;CAPACITE;Produit scalaire;Calculer et interpréter un produit scalaire dans le plan.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_19_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_19;1G;2;CAPACITE;Orthogonalité;Utiliser le produit scalaire pour caractériser l’orthogonalité.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_20_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_20;1G;1;CAPACITE;Coordonnées et équations;Utiliser les coordonnées pour résoudre des problèmes de géométrie repérée.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_20_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_20;1G;2;CAPACITE;Équations de droites;Déterminer et exploiter des équations de droites.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_22_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_22;1G;1;CAPACITE;Probabilité conditionnelle;Calculer une probabilité conditionnelle à partir d’un tableau ou d’un arbre pondéré.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_22_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_22;1G;2;CAPACITE;Indépendance;Reconnaître et utiliser l’indépendance de deux événements.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_23_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;1;CAPACITE;Loi d’une variable aléatoire;Déterminer la loi d’une variable aléatoire discrète dans un contexte simple.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_23_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;2;CAPACITE;Espérance et variance;Calculer et interpréter espérance, variance et écart type dans les cas du programme.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_24_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_24;1G;1;CAPACITE;Simulation;Concevoir ou interpréter une simulation numérique d’une expérience aléatoire.;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_C3_6E_01;PRG_MAT_C3_2025;ITM_MAT_C3_01;6E;1;THEME;Nombres entiers et décimaux;Approfondissement de la numération décimale, des opérations et de la résolution de problèmes en sixième.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_02;PRG_MAT_C3_2025;ITM_MAT_C3_01;6E;2;THEME;Fractions et pourcentages;Fraction comme quotient et opérateur, comparaison, calculs et premières utilisations des pourcentages.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_03;PRG_MAT_C3_2025;ITM_MAT_C3_01;6E;3;THEME;Premiers raisonnements algébriques;Résolution de problèmes avec inconnues et étude de régularités avant la formalisation du calcul littéral au cycle 4.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_04;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;1;THEME;Longueurs et périmètres;Conversions, périmètres usuels et périmètre du disque.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_05;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;2;THEME;Aires;Aire de figures usuelles, unités d’aire et conversions.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_06;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;3;THEME;Volumes;Introduction du centimètre cube et calcul de volumes d’assemblages simples.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_07;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;4;THEME;Horaires et durées;Calculs et conversions utilisant les unités de durée et le système sexagésimal.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_08;PRG_MAT_C3_2025;ITM_MAT_C3_03;6E;1;THEME;Configurations planes;Distances, angles, triangles, cercle, médiatrice et symétrie axiale.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_09;PRG_MAT_C3_2025;ITM_MAT_C3_03;6E;2;THEME;Vision dans l’espace;Lecture et représentation d’assemblages de cubes et reconnaissance de solides usuels.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_10;PRG_MAT_C3_2025;ITM_MAT_C3_04;6E;1;THEME;Organisation et gestion de données;Conduite d’une enquête simple, collecte, tableau et filtrage de données.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_11;PRG_MAT_C3_2025;ITM_MAT_C3_04;6E;2;THEME;Probabilités;Probabilité comme nombre entre 0 et 1, équiprobabilité et comparaison avec des fréquences observées.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_12;PRG_MAT_C3_2025;ITM_MAT_C3_05;6E;1;THEME;Proportionnalité en contexte;Reconnaissance du modèle de proportionnalité et résolution par linéarité ou retour à l’unité.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_13;PRG_MAT_C3_2025;ITM_MAT_C3_06;6E;1;THEME;Instructions, séquences et répétitions;Initiation à la pensée informatique, avec ou sans machine.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C01;PRG_MAT_C3_2025;ITM_MAT_C3_6E_01;6E;1;CAPACITE;Lire, écrire et comparer de grands nombres;Lire, écrire, décomposer, comparer et ordonner des entiers, notamment jusqu’au milliard.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C02;PRG_MAT_C3_2025;ITM_MAT_C3_6E_01;6E;2;CAPACITE;Utiliser différentes écritures d’un nombre décimal;Passer entre écriture décimale, décomposition et représentations adaptées.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C03;PRG_MAT_C3_2025;ITM_MAT_C3_6E_01;6E;3;CAPACITE;Multiplier des nombres décimaux;Effectuer et contrôler une multiplication impliquant des nombres décimaux dans un calcul ou un problème.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C04;PRG_MAT_C3_2025;ITM_MAT_C3_6E_01;6E;4;CAPACITE;Choisir une opération adaptée à un problème;Identifier le sens des opérations et construire une chaîne de calculs cohérente.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C05;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;5;CAPACITE;Interpréter une fraction comme quotient;Relier une fraction au résultat exact d’une division et comprendre le quotient d’un entier par un entier non nul.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C06;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;6;CAPACITE;Placer une fraction sur une demi-droite graduée;Repérer et placer des fractions dans des cas simples en choisissant une graduation adaptée.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C07;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;7;CAPACITE;Appliquer une fraction à un entier;Utiliser une multiplication pour calculer une fraction d’un nombre entier.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C08;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;8;CAPACITE;Comparer et encadrer des fractions;Établir des égalités de fractions, comparer, encadrer et ordonner des fractions simples.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C09;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;9;CAPACITE;Additionner et soustraire des fractions;Effectuer des additions et soustractions de fractions dans des situations adaptées au niveau.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C10;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;10;CAPACITE;Multiplier une fraction par un entier;Calculer le produit d’une fraction par un nombre entier et interpréter le résultat.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C11;PRG_MAT_C3_2025;ITM_MAT_C3_6E_02;6E;11;CAPACITE;Comprendre et utiliser un pourcentage;Relier pourcentage, proportion et fraction, puis calculer ou appliquer un pourcentage simple.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C12;PRG_MAT_C3_2025;ITM_MAT_C3_6E_03;6E;12;CAPACITE;Résoudre un problème à nombre inconnu;Utiliser un schéma, une égalité à trou ou un autre modèle pré-algébrique pour déterminer une inconnue.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C13;PRG_MAT_C3_2025;ITM_MAT_C3_6E_03;6E;13;CAPACITE;Identifier une régularité dans un motif évolutif;Repérer et formuler la structure d’une suite de nombres ou de motifs.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C14;PRG_MAT_C3_2025;ITM_MAT_C3_6E_04;6E;14;CAPACITE;Calculer le périmètre d’un disque;Utiliser la proportionnalité entre diamètre et périmètre et la formule correspondante.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C15;PRG_MAT_C3_2025;ITM_MAT_C3_6E_04;6E;15;CAPACITE;Calculer le périmètre d’une figure composée;Décomposer une figure et additionner les longueurs nécessaires.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C16;PRG_MAT_C3_2025;ITM_MAT_C3_6E_04;6E;16;CAPACITE;Résoudre des problèmes de longueurs;Choisir les unités, convertir si nécessaire et résoudre des problèmes de longueurs ou de périmètres.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C17;PRG_MAT_C3_2025;ITM_MAT_C3_6E_05;6E;17;CAPACITE;Convertir des unités d’aire;Utiliser les relations entre cm², dm² et m² dans des situations simples.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C18;PRG_MAT_C3_2025;ITM_MAT_C3_6E_05;6E;18;CAPACITE;Calculer l’aire de figures usuelles;Calculer notamment l’aire d’un carré ou d’un rectangle et exploiter des décompositions simples.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C19;PRG_MAT_C3_2025;ITM_MAT_C3_6E_06;6E;19;CAPACITE;Déterminer un volume en cm³;Dénombrer des cubes unités et déterminer le volume d’un assemblage simple.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C20;PRG_MAT_C3_2025;ITM_MAT_C3_6E_07;6E;20;CAPACITE;Calculer et convertir des durées;Effectuer des calculs sur horaires et durées, puis convertir entre unités de temps.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C21;PRG_MAT_C3_2025;ITM_MAT_C3_6E_08;6E;21;CAPACITE;Construire et raisonner sur des triangles;Construire des triangles, utiliser leurs propriétés angulaires et la somme des angles.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C22;PRG_MAT_C3_2025;ITM_MAT_C3_6E_08;6E;22;CAPACITE;Construire et utiliser une médiatrice;Reconnaître et construire une médiatrice, puis mobiliser ses propriétés dans une configuration.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C23;PRG_MAT_C3_2025;ITM_MAT_C3_6E_08;6E;23;CAPACITE;Construire le cercle circonscrit à un triangle;Utiliser la concurrence des médiatrices pour déterminer le centre du cercle circonscrit.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C24;PRG_MAT_C3_2025;ITM_MAT_C3_6E_08;6E;24;CAPACITE;Construire un symétrique par symétrie axiale;Utiliser les propriétés de la symétrie axiale pour effectuer et justifier une construction.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C25;PRG_MAT_C3_2025;ITM_MAT_C3_6E_09;6E;25;CAPACITE;Lire une représentation d’un assemblage de cubes;Passer entre une configuration spatiale simple et différentes représentations planes.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C26;PRG_MAT_C3_2025;ITM_MAT_C3_6E_10;6E;26;CAPACITE;Planifier une enquête et recueillir des données;Définir les informations à collecter, effectuer des mesures ou observations et les organiser.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C27;PRG_MAT_C3_2025;ITM_MAT_C3_6E_10;6E;27;CAPACITE;Construire et filtrer un tableau de données;Présenter des données dans un tableau simple et sélectionner les lignes répondant à un critère.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C28;PRG_MAT_C3_2025;ITM_MAT_C3_6E_11;6E;28;CAPACITE;Calculer une probabilité en équiprobabilité;Déterminer une probabilité simple et l’exprimer comme fraction, nombre décimal ou pourcentage.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C29;PRG_MAT_C3_2025;ITM_MAT_C3_6E_11;6E;29;CAPACITE;Comparer fréquence observée et probabilité;Répéter une expérience aléatoire simple et confronter les fréquences obtenues à une probabilité calculée.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C30;PRG_MAT_C3_2025;ITM_MAT_C3_6E_12;6E;30;CAPACITE;Reconnaître une situation de proportionnalité;Décider si deux grandeurs relèvent d’un modèle de proportionnalité et justifier le choix.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C31;PRG_MAT_C3_2025;ITM_MAT_C3_6E_12;6E;31;CAPACITE;Résoudre un problème de proportionnalité;Choisir entre linéarité multiplicative, linéarité additive ou retour à l’unité.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C32;PRG_MAT_C3_2025;ITM_MAT_C3_6E_12;6E;32;CAPACITE;Représenter une situation de proportionnalité;Utiliser un tableau ou des notations symboliques en explicitant les grandeurs et les unités.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C33;PRG_MAT_C3_2025;ITM_MAT_C3_6E_12;6E;33;CAPACITE;Résoudre un problème simple d’échelle;Interpréter une échelle et déterminer une longueur réelle ou représentée.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C34;PRG_MAT_C3_2025;ITM_MAT_C3_6E_13;6E;34;CAPACITE;Identifier et exécuter une séquence d’instructions;Reconnaître une instruction, exécuter une suite d’instructions et anticiper son résultat.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C35;PRG_MAT_C3_2025;ITM_MAT_C3_6E_13;6E;35;CAPACITE;Produire une séquence d’instructions;Écrire une suite d’instructions permettant d’atteindre un résultat imposé.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_C36;PRG_MAT_C3_2025;ITM_MAT_C3_6E_13;6E;36;CAPACITE;Utiliser une répétition simple;Répéter une séquence d’instructions pour automatiser une tâche ou construire un chemin simple.;SRC_BO_2025_16_MATH_C3

@@ -1,0 +1,10 @@
+niveau_id;libelle;ordre;cycle_id;voie_id
+6E;Sixième;1;C3;COLLEGE
+5E;Cinquième;2;C4;COLLEGE
+4E;Quatrième;3;C4;COLLEGE
+3E;Troisième;4;C4;COLLEGE
+2GT;Seconde générale et technologique;5;;LYCEE_GT
+1G;Première générale;6;CYCLE_TERMINAL;VOIE_GENERALE
+TG;Terminale générale;7;CYCLE_TERMINAL;VOIE_GENERALE
+1T;Première technologique;8;CYCLE_TERMINAL;VOIE_TECHNOLOGIQUE
+TT;Terminale technologique;9;CYCLE_TERMINAL;VOIE_TECHNOLOGIQUE

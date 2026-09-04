@@ -1,0 +1,61 @@
+---
+title: "Rapport de classe"
+output: pdf_document
+params:
+  classe: "6E"
+  annee: "2026-2027"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+classe = params$classe
+annee = params$annee
+
+tables = get("tables", envir = globalenv())
+
+niveaux = tables$niveaux
+enseignements = tables$enseignements
+horaires = tables$horaires
+
+niveau = niveaux[
+  toupper(niveaux$niveau_id) == toupper(classe) |
+    toupper(niveaux$code) == toupper(classe),
+  ,
+  drop = FALSE
+]
+```
+
+# `r classe`
+
+**Année scolaire :** `r annee`
+
+## Niveau
+
+```{r}
+if (nrow(niveau) == 0) {
+  cat("Aucune information de niveau trouvée pour cette classe.")
+} else {
+  knitr::kable(niveau)
+}
+```
+
+## Enseignements
+
+```{r}
+if (exists("enseignements") && nrow(enseignements) > 0) {
+  knitr::kable(enseignements)
+} else {
+  cat("Aucune donnée d'enseignement disponible.")
+}
+```
+
+## Horaires
+
+```{r}
+if (exists("horaires") && nrow(horaires) > 0) {
+  knitr::kable(horaires)
+} else {
+  cat("Aucune donnée horaire disponible.")
+}
+```

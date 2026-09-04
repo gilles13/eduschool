@@ -1,0 +1,9 @@
+serie_id;libelle;voie_id
+G;Voie générale;VOIE_GENERALE
+ST2S;Sciences et technologies de la santé et du social;VOIE_TECHNOLOGIQUE
+STL;Sciences et technologies de laboratoire;VOIE_TECHNOLOGIQUE
+STD2A;Sciences et technologies du design et des arts appliqués;VOIE_TECHNOLOGIQUE
+STI2D;Sciences et technologies de l’industrie et du développement durable;VOIE_TECHNOLOGIQUE
+STMG;Sciences et technologies du management et de la gestion;VOIE_TECHNOLOGIQUE
+STHR;Sciences et technologies de l’hôtellerie et de la restauration;VOIE_TECHNOLOGIQUE
+S2TMD;Sciences et techniques du théâtre, de la musique et de la danse;VOIE_TECHNOLOGIQUE

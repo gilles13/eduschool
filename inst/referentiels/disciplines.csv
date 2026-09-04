@@ -1,0 +1,22 @@
+discipline_id;libelle
+FRA;Français
+MAT;Mathématiques
+HG;Histoire-géographie
+EMC;Enseignement moral et civique
+LVE;Langues vivantes étrangères
+LVR;Langues vivantes régionales
+SVT;Sciences de la vie et de la Terre
+PC;Physique-chimie
+TECH;Technologie
+EPS;Éducation physique et sportive
+ARTS;Arts plastiques
+MUS;Éducation musicale
+SCI;Sciences et technologie
+EVARS;Éducation à la vie affective et relationnelle, et à la sexualité
+EMI;Éducation aux médias et à l'information
+LCA;Langues et cultures de l'Antiquité
+HDA;Histoire des arts
+SES;Sciences économiques et sociales
+NUM;Sciences numériques et informatique
+DROIT;Droit
+ARTS_PLAST;Arts plastiques
