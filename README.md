@@ -84,4 +84,4 @@ Commencer par `vignettes/prise-en-main.Rmd`. Les guides détaillent ensuite les 
 
 ## Versionnement
 
-Le dépôt source doit maintenant devenir la référence. Les ZIP ne sont plus conçus comme un mode de développement : ils ne servent qu'à transmettre ponctuellement un instantané. Voir `docs/versionnement-git.md`.
+Le dépôt source doit maintenant devenir la référence. Les ZIP ne sont plus conçus comme un mode de développement : ils ne servent qu'à transmettre ponctuellement un instantané. Voir `documentation/versionnement-git.md`.
