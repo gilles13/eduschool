@@ -11,6 +11,8 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
+![Architecture générale du mini-SI eduschool](../man/figures/architecture_si.svg)
+
 Les données distribuées sont conservées sous `inst/` et retrouvées avec `eduschool_path()`. Les consultations simples utilisent directement les CSV; DuckDB reste disponible pour les jointures et analyses relationnelles.
 
 Le flux logique est : programme officiel → capacité → notion → prérequis → rappel → modèle d'exercice → exercice → rapport.

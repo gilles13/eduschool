@@ -11,6 +11,8 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
+![Relations entre programmes, capacités et notions](../man/figures/programmes_capacites.svg)
+
 Les référentiels sont consultables sans connexion préalable. `programmes()` filtre les programmes et `capacites()` retourne les éléments de type `CAPACITE`.
 
 ```{r, eval=FALSE}

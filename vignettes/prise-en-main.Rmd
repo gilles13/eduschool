@@ -11,6 +11,8 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
+![Du référentiel à une fiche de révision](../man/figures/prise_en_main.svg)
+
 # Objectif
 
 Cette vignette présente le chemin le plus court pour utiliser le package.

@@ -12,11 +12,15 @@ navbar:
 articles:
 - title: Prise en main
   contents: prise-en-main
+- title: Parcours scolaires
+  contents:
+  - parcours-scolaires
+  - programmes-et-capacites
 - title: Utiliser eduschool
   contents:
-  - programmes-et-capacites
   - documentation-pedagogique
   - exercices-et-revisions
-- title: Comprendre les données
+- title: Comprendre le système
   contents: architecture-des-donnees
-
+- title: Développement
+  contents: developpement
