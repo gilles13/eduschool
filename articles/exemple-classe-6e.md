@@ -13,29 +13,49 @@ library(eduschool)
 ## La carte d’identité pédagogique de la 6e
 
 La fonction
-[`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
-rassemble les horaires hebdomadaires, les grands thèmes des programmes
-et les notions pédagogiques documentées.
+[`genere_resume()`](https://gilles13.github.io/eduschool/reference/genere_resume.md)
+fournit une vue volontairement courte : matière, horaire, grands thèmes
+et notions essentielles. Elle est conçue pour être lue directement dans
+une vignette ou dans le site pkgdown.
 
 ``` r
 
-r = resume_niveau("6E")
+r = genere_resume("6E")
 knitr::kable(r, row.names = FALSE)
 ```
 
-| enseignement | volume | unite | themes | notions |
-|:---|:---|:---|:---|:---|
-| Éducation physique et sportive | 4.0 | HEURE_SEMAINE | S’exprimer devant les autres par une prestation artistique ou acrobatique ; Conduire et maîtriser un affrontement collectif ou interindividuel ; Produire une performance optimale, mesurable ; Adapter ses déplacements à des environnements variés | Expression artistique et acrobatique ; Affrontement collectif ou individuel ; Performance mesurable ; Déplacements en environnement varié |
-| Arts plastiques | 1.0 | HEURE_SEMAINE | La matérialité de la production plastique et la sensibilité aux constituants de l’œuvre ; La représentation plastique et les dispositifs de présentation ; Les fabrications et la relation entre l’objet et l’espace | Matérialité et œuvre ; Représentation plastique ; Objet et espace |
-| Éducation musicale | 1.0 | HEURE_SEMAINE | Chanter et interpréter ; Écouter, comparer et commenter ; Explorer, imaginer et créer ; Échanger, partager et argumenter | Chanter et interpréter ; Écoute musicale ; Création musicale ; Échange et argumentation musicale |
-| Français | 4.5 | HEURE_SEMAINE | Lecture et compréhension ; Culture littéraire et artistique ; Écriture ; Oral ; Vocabulaire ; Grammaire et orthographe | Lecture et compréhension ; Culture littéraire ; Écriture ; Expression orale ; Vocabulaire ; Grammaire et orthographe |
-| Histoire-géographie et enseignement moral et civique | 3.0 | HEURE_SEMAINE | La laïcité à l’École ; Droits de la personne et vie privée ; Représenter les autres et servir l’intérêt général ; La longue histoire de l’humanité et des migrations ; Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique ; L’empire romain dans le monde antique ; Habiter une métropole ; Habiter un espace de faible densité ; Habiter les littoraux ; Le monde habité | Laïcité ; Droits et vie privée ; Intérêt général et représentation ; Préhistoire et migrations ; Méditerranée antique ; Empire romain ; Habiter une métropole ; Espaces de faible densité ; Littoraux ; Répartition de la population |
-| Langue vivante | 4.0 | HEURE_SEMAINE | Repères culturels ; Compréhension ; Expression et interaction ; Outils linguistiques | Repères culturels ; Compréhension en langue vivante ; Expression et interaction ; Outils linguistiques |
-| Mathématiques | 4.5 | HEURE_SEMAINE | Nombres entiers et décimaux ; Fractions et pourcentages ; Premiers raisonnements algébriques ; Longueurs et périmètres ; Aires ; Volumes ; Horaires et durées ; Configurations planes ; Vision dans l’espace ; Organisation et gestion de données ; Probabilités ; Proportionnalité en contexte ; Instructions, séquences et répétitions | Nombres entiers et décimaux ; Fractions : sens et représentations ; Addition et soustraction de fractions ; Fraction d’une quantité ; Pourcentages ; Premiers raisonnements algébriques ; Longueurs et périmètres ; Aires ; Volumes ; Horaires et durées ; Configurations planes ; Vision dans l’espace ; Organisation et gestion de données ; Probabilités ; Proportionnalité ; Instructions, séquences et répétitions |
-| SVT et physique-chimie | 3.0 | HEURE_SEMAINE | Matière, mouvement, énergie, information ; Le vivant, sa diversité et les fonctions qui le caractérisent ; Les objets techniques au cœur de la société ; La Terre, une planète peuplée par des êtres vivants | Matière et énergie ; Le vivant ; Objets techniques ; Terre et environnement |
+| matiere | horaire | themes | notions |
+|:---|:---|:---|:---|
+| Éducation physique et sportive | 4 h | S’exprimer devant les autres par une prestation artistique ou acrobatique ; Conduire et maîtriser un affrontement collectif ou interindividuel ; Produire une performance optimale, mesurable ; Adapter ses déplacements à des environnements variés | Expression artistique et acrobatique ; Affrontement collectif ou individuel ; Performance mesurable ; Déplacements en environnement varié |
+| Arts plastiques | 1 h | La matérialité de la production plastique et la sensibilité aux constituants de l’œuvre ; La représentation plastique et les dispositifs de présentation ; Les fabrications et la relation entre l’objet et l’espace | Matérialité et œuvre ; Représentation plastique ; Objet et espace |
+| Éducation musicale | 1 h | Chanter et interpréter ; Écouter, comparer et commenter ; Explorer, imaginer et créer ; Échanger, partager et argumenter | Chanter et interpréter ; Écoute musicale ; Création musicale ; Échange et argumentation musicale |
+| Français | 4 h 30 | Lecture et compréhension ; Culture littéraire et artistique ; Écriture ; Oral ; Vocabulaire ; … | Lecture et compréhension ; Culture littéraire ; Écriture ; Expression orale ; Vocabulaire ; Grammaire et orthographe |
+| Histoire-géographie et enseignement moral et civique | 3 h | La laïcité à l’École ; Droits de la personne et vie privée ; Représenter les autres et servir l’intérêt général ; La longue histoire de l’humanité et des migrations ; Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique ; … | Laïcité ; Droits et vie privée ; Intérêt général et représentation ; Préhistoire et migrations ; Méditerranée antique ; Empire romain ; … |
+| Langue vivante | 4 h | Repères culturels ; Compréhension ; Expression et interaction ; Outils linguistiques | Repères culturels ; Compréhension en langue vivante ; Expression et interaction ; Outils linguistiques |
+| Mathématiques | 4 h 30 | Nombres entiers et décimaux ; Fractions et pourcentages ; Premiers raisonnements algébriques ; Longueurs et périmètres ; Aires ; … | Nombres entiers et décimaux ; Fractions : sens et représentations ; Addition et soustraction de fractions ; Fraction d’une quantité ; Pourcentages ; Premiers raisonnements algébriques ; … |
+| SVT et physique-chimie | 3 h | Matière, mouvement, énergie, information ; Le vivant, sa diversité et les fonctions qui le caractérisent ; Les objets techniques au cœur de la société ; La Terre, une planète peuplée par des êtres vivants | Matière et énergie ; Le vivant ; Objets techniques ; Terre et environnement |
 
 Cette synthèse est construite à partir des CSV du package : elle n’est
-pas un tableau écrit spécialement pour cette vignette.
+pas un tableau écrit spécialement pour cette vignette. Les fonctions
+plus techniques comme
+[`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md),
+[`themes_niveau()`](https://gilles13.github.io/eduschool/reference/themes_niveau.md)
+et
+[`notions_niveau()`](https://gilles13.github.io/eduschool/reference/notions_niveau.md)
+restent disponibles lorsque l’on souhaite explorer les données en
+détail.
+
+On peut aussi se concentrer immédiatement sur une matière :
+
+``` r
+
+genere_resume("6E", matiere = "MAT") |>
+  knitr::kable(row.names = FALSE)
+```
+
+| matiere | horaire | themes | notions |
+|:---|:---|:---|:---|
+| Mathématiques | 4 h 30 | Nombres entiers et décimaux ; Fractions et pourcentages ; Premiers raisonnements algébriques ; Longueurs et périmètres ; Aires ; … | Nombres entiers et décimaux ; Fractions : sens et représentations ; Addition et soustraction de fractions ; Fraction d’une quantité ; Pourcentages ; Premiers raisonnements algébriques ; … |
 
 ## Les horaires
 

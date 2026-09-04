@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.6</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,32 +63,30 @@ couverture documentaire est enrichie.</p>
 <div class="section level2">
 <h2 id="la-carte-didentité-pédagogique-de-la-6e">La carte d’identité pédagogique de la 6e<a class="anchor" aria-label="anchor" href="#la-carte-didentit%C3%A9-p%C3%A9dagogique-de-la-6e"></a>
 </h2>
-<p>La fonction <code><a href="../reference/resume_niveau.html">resume_niveau()</a></code> rassemble les horaires
-hebdomadaires, les grands thèmes des programmes et les notions
-pédagogiques documentées.</p>
+<p>La fonction <code><a href="../reference/genere_resume.html">genere_resume()</a></code> fournit une vue
+volontairement courte : matière, horaire, grands thèmes et notions
+essentielles. Elle est conçue pour être lue directement dans une
+vignette ou dans le site pkgdown.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">r</span> <span class="op">=</span> <span class="fu"><a href="../reference/resume_niveau.html">resume_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">r</span> <span class="op">=</span> <span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">r</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="6%">
-<col width="0%">
+<col width="10%">
 <col width="1%">
-<col width="44%">
-<col width="47%">
+<col width="49%">
+<col width="38%">
 </colgroup>
 <thead><tr class="header">
-<th align="left">enseignement</th>
-<th align="left">volume</th>
-<th align="left">unite</th>
+<th align="left">matiere</th>
+<th align="left">horaire</th>
 <th align="left">themes</th>
 <th align="left">notions</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left">Éducation physique et sportive</td>
-<td align="left">4.0</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">4 h</td>
 <td align="left">S’exprimer devant les autres par une prestation
 artistique ou acrobatique ; Conduire et maîtriser un affrontement
 collectif ou interindividuel ; Produire une performance optimale,
@@ -99,8 +97,7 @@ environnement varié</td>
 </tr>
 <tr class="even">
 <td align="left">Arts plastiques</td>
-<td align="left">1.0</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">1 h</td>
 <td align="left">La matérialité de la production plastique et la
 sensibilité aux constituants de l’œuvre ; La représentation plastique et
 les dispositifs de présentation ; Les fabrications et la relation entre
@@ -110,8 +107,7 @@ et espace</td>
 </tr>
 <tr class="odd">
 <td align="left">Éducation musicale</td>
-<td align="left">1.0</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">1 h</td>
 <td align="left">Chanter et interpréter ; Écouter, comparer et commenter
 ; Explorer, imaginer et créer ; Échanger, partager et argumenter</td>
 <td align="left">Chanter et interpréter ; Écoute musicale ; Création
@@ -119,11 +115,9 @@ musicale ; Échange et argumentation musicale</td>
 </tr>
 <tr class="even">
 <td align="left">Français</td>
-<td align="left">4.5</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">4 h 30</td>
 <td align="left">Lecture et compréhension ; Culture littéraire et
-artistique ; Écriture ; Oral ; Vocabulaire ; Grammaire et
-orthographe</td>
+artistique ; Écriture ; Oral ; Vocabulaire ; …</td>
 <td align="left">Lecture et compréhension ; Culture littéraire ;
 Écriture ; Expression orale ; Vocabulaire ; Grammaire et
 orthographe</td>
@@ -131,23 +125,18 @@ orthographe</td>
 <tr class="odd">
 <td align="left">Histoire-géographie et enseignement moral et
 civique</td>
-<td align="left">3.0</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">3 h</td>
 <td align="left">La laïcité à l’École ; Droits de la personne et vie
 privée ; Représenter les autres et servir l’intérêt général ; La longue
 histoire de l’humanité et des migrations ; Récits fondateurs, croyances
-et citoyenneté dans la Méditerranée antique ; L’empire romain dans le
-monde antique ; Habiter une métropole ; Habiter un espace de faible
-densité ; Habiter les littoraux ; Le monde habité</td>
+et citoyenneté dans la Méditerranée antique ; …</td>
 <td align="left">Laïcité ; Droits et vie privée ; Intérêt général et
 représentation ; Préhistoire et migrations ; Méditerranée antique ;
-Empire romain ; Habiter une métropole ; Espaces de faible densité ;
-Littoraux ; Répartition de la population</td>
+Empire romain ; …</td>
 </tr>
 <tr class="even">
 <td align="left">Langue vivante</td>
-<td align="left">4.0</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">4 h</td>
 <td align="left">Repères culturels ; Compréhension ; Expression et
 interaction ; Outils linguistiques</td>
 <td align="left">Repères culturels ; Compréhension en langue vivante ;
@@ -155,26 +144,17 @@ Expression et interaction ; Outils linguistiques</td>
 </tr>
 <tr class="odd">
 <td align="left">Mathématiques</td>
-<td align="left">4.5</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">4 h 30</td>
 <td align="left">Nombres entiers et décimaux ; Fractions et pourcentages
 ; Premiers raisonnements algébriques ; Longueurs et périmètres ; Aires ;
-Volumes ; Horaires et durées ; Configurations planes ; Vision dans
-l’espace ; Organisation et gestion de données ; Probabilités ;
-Proportionnalité en contexte ; Instructions, séquences et
-répétitions</td>
+…</td>
 <td align="left">Nombres entiers et décimaux ; Fractions : sens et
 représentations ; Addition et soustraction de fractions ; Fraction d’une
-quantité ; Pourcentages ; Premiers raisonnements algébriques ; Longueurs
-et périmètres ; Aires ; Volumes ; Horaires et durées ; Configurations
-planes ; Vision dans l’espace ; Organisation et gestion de données ;
-Probabilités ; Proportionnalité ; Instructions, séquences et
-répétitions</td>
+quantité ; Pourcentages ; Premiers raisonnements algébriques ; …</td>
 </tr>
 <tr class="even">
 <td align="left">SVT et physique-chimie</td>
-<td align="left">3.0</td>
-<td align="left">HEURE_SEMAINE</td>
+<td align="left">3 h</td>
 <td align="left">Matière, mouvement, énergie, information ; Le vivant,
 sa diversité et les fonctions qui le caractérisent ; Les objets
 techniques au cœur de la société ; La Terre, une planète peuplée par des
@@ -185,12 +165,43 @@ Terre et environnement</td>
 </tbody>
 </table>
 <p>Cette synthèse est construite à partir des CSV du package : elle
-n’est pas un tableau écrit spécialement pour cette vignette.</p>
+n’est pas un tableau écrit spécialement pour cette vignette. Les
+fonctions plus techniques comme <code><a href="../reference/resume_niveau.html">resume_niveau()</a></code>,
+<code><a href="../reference/themes_niveau.html">themes_niveau()</a></code> et <code><a href="../reference/notions_niveau.html">notions_niveau()</a></code> restent
+disponibles lorsque l’on souhaite explorer les données en détail.</p>
+<p>On peut aussi se concentrer immédiatement sur une matière :</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span>, matiere <span class="op">=</span> <span class="st">"MAT"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="4%">
+<col width="2%">
+<col width="38%">
+<col width="55%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">matiere</th>
+<th align="left">horaire</th>
+<th align="left">themes</th>
+<th align="left">notions</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td align="left">Mathématiques</td>
+<td align="left">4 h 30</td>
+<td align="left">Nombres entiers et décimaux ; Fractions et pourcentages
+; Premiers raisonnements algébriques ; Longueurs et périmètres ; Aires ;
+…</td>
+<td align="left">Nombres entiers et décimaux ; Fractions : sens et
+représentations ; Addition et soustraction de fractions ; Fraction d’une
+quantité ; Pourcentages ; Premiers raisonnements algébriques ; …</td>
+</tr></tbody>
+</table>
 </div>
 <div class="section level2">
 <h2 id="les-horaires">Les horaires<a class="anchor" aria-label="anchor" href="#les-horaires"></a>
 </h2>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">h</span> <span class="op">=</span> <span class="fu"><a href="../reference/horaires_niveau.html">horaires_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">h</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"libelle"</span>, <span class="st">"volume"</span>, <span class="st">"unite"</span><span class="op">)</span><span class="op">]</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -252,7 +263,7 @@ civique</td>
 <div class="section level2">
 <h2 id="les-grands-thèmes-étudiés">Les grands thèmes étudiés<a class="anchor" aria-label="anchor" href="#les-grands-th%C3%A8mes-%C3%A9tudi%C3%A9s"></a>
 </h2>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">t</span> <span class="op">=</span> <span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">t</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -472,7 +483,7 @@ l’espace</td>
 <div class="section level2">
 <h2 id="les-notions-à-connaître">Les notions à connaître<a class="anchor" aria-label="anchor" href="#les-notions-%C3%A0-conna%C3%AEtre"></a>
 </h2>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">n</span> <span class="op">=</span> <span class="fu"><a href="../reference/notions_niveau.html">notions_niveau</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">n</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -694,7 +705,7 @@ l’espace</td>
 <p>Les mathématiques disposent d’une granularité plus fine. On peut
 consulter les capacités, retrouver les notions qui leur sont associées,
 puis remonter leurs prérequis.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="../reference/capacites.html">capacites</a></span><span class="op">(</span><span class="st">"6E"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span>, version_id <span class="op">=</span> <span class="st">"2026_2027"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="co">#&gt;             item_id                                            libelle</span></span>
@@ -705,7 +716,7 @@ puis remonter leurs prérequis.</p>
 <span><span class="co">#&gt; 5 ITM_MAT_C3_6E_C05            Interpréter une fraction comme quotient</span></span>
 <span><span class="co">#&gt; 6 ITM_MAT_C3_6E_C06    Placer une fraction sur une demi-droite graduée</span></span></code></pre></div>
 <p>Pour une capacité liée à la proportionnalité :</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   notion_id       capacite_id       role discipline_id          libelle</span></span>
 <span><span class="co">#&gt; 1  MAT_PROP ITM_MAT_C3_6E_C31 PRINCIPALE           MAT Proportionnalité</span></span>
@@ -726,7 +737,7 @@ graphe pédagogique du package.</p>
 <div class="section level2">
 <h2 id="consulter-un-rappel">Consulter un rappel<a class="anchor" aria-label="anchor" href="#consulter-un-rappel"></a>
 </h2>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/chercher_notions.html">chercher_notions</a></span><span class="op">(</span><span class="st">"fraction"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;            notion_id discipline_id                               libelle</span></span>
 <span><span class="co">#&gt; 40  MAT_FRACTION_ADD           MAT Addition et soustraction de fractions</span></span>
@@ -749,7 +760,7 @@ graphe pédagogique du package.</p>
 <div class="section level2">
 <h2 id="générer-des-exercices">Générer des exercices<a class="anchor" aria-label="anchor" href="#g%C3%A9n%C3%A9rer-des-exercices"></a>
 </h2>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">fiche</span> <span class="op">=</span> <span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
 <span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
 <span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
@@ -763,7 +774,7 @@ graphe pédagogique du package.</p>
 </h2>
 <p>Pour les analyses qui dépassent les fonctions de consultation, les
 mêmes CSV peuvent être chargés dans DuckDB.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">con</span> <span class="op">=</span> <span class="fu"><a href="../reference/ouvrir_base.html">ouvrir_base</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbListTables.html" class="external-link">dbListTables</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span>
 <span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbDisconnect.html" class="external-link">dbDisconnect</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span></code></pre></div>
