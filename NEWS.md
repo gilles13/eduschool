@@ -1,3 +1,11 @@
+# eduschool 0.10.6
+
+## Experience utilisateur
+
+- ajout de `genere_resume()` pour produire une synthese courte et directement affichable dans les vignettes et le site pkgdown ;
+- filtrage facultatif par matiere avec `matiere = "all"` par defaut et prise en charge d'identifiants ou d'alias usuels ;
+- limitation configurable du nombre de themes et de notions afin de conserver des tableaux lisibles.
+
 # eduschool 0.10.5
 
 ## Collège — couverture transdisciplinaire

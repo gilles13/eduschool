@@ -21,16 +21,26 @@ library(eduschool)
 
 ## La carte d'identité pédagogique de la 6e
 
-La fonction `resume_niveau()` rassemble les horaires hebdomadaires, les grands
-thèmes des programmes et les notions pédagogiques documentées.
+La fonction `genere_resume()` fournit une vue volontairement courte : matière,
+horaire, grands thèmes et notions essentielles. Elle est conçue pour être lue
+directement dans une vignette ou dans le site pkgdown.
 
 ```{r}
-r = resume_niveau("6E")
+r = genere_resume("6E")
 knitr::kable(r, row.names = FALSE)
 ```
 
 Cette synthèse est construite à partir des CSV du package : elle n'est pas un
-tableau écrit spécialement pour cette vignette.
+tableau écrit spécialement pour cette vignette. Les fonctions plus techniques
+comme `resume_niveau()`, `themes_niveau()` et `notions_niveau()` restent
+disponibles lorsque l'on souhaite explorer les données en détail.
+
+On peut aussi se concentrer immédiatement sur une matière :
+
+```{r}
+genere_resume("6E", matiere = "MAT") |>
+  knitr::kable(row.names = FALSE)
+```
 
 ## Les horaires
 

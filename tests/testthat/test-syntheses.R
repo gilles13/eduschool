@@ -59,3 +59,32 @@ test_that("les langues vivantes alimentent LVE1 et LVE2", {
     expect_true(all(nzchar(lve$notions)))
   }
 })
+
+test_that("genere_resume produit une vue courte de sixieme", {
+  x = genere_resume("6E")
+  expect_equal(names(x), c("matiere", "horaire", "themes", "notions"))
+  expect_gte(nrow(x), 8L)
+  expect_true(all(nzchar(x$matiere)))
+  expect_true(all(nzchar(x$horaire)))
+  expect_true(all(nzchar(x$themes)))
+  expect_true(all(nzchar(x$notions)))
+})
+
+test_that("genere_resume filtre les mathematiques", {
+  x = genere_resume("6E", matiere = "MAT")
+  expect_equal(nrow(x), 1L)
+  expect_equal(x$matiere, "Math\u00e9matiques")
+
+  y = genere_resume("6E", matiere = "maths")
+  expect_equal(y, x)
+})
+
+test_that("genere_resume limite themes et notions", {
+  x = genere_resume("6E", matiere = "MAT", max_themes = 2L, max_notions = 3L)
+  expect_lte(length(strsplit(x$themes, ";", fixed = TRUE)[[1]]), 3L)
+  expect_lte(length(strsplit(x$notions, ";", fixed = TRUE)[[1]]), 4L)
+})
+
+test_that("genere_resume signale une matiere inconnue", {
+  expect_error(genere_resume("6E", matiere = "INCONNUE"), "Aucune matiere")
+})

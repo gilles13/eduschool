@@ -46,3 +46,5 @@ export(horaires_niveau)
 export(themes_niveau)
 export(notions_niveau)
 export(resume_niveau)
+
+export(genere_resume)
