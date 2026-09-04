@@ -1,3 +1,11 @@
+# eduschool 0.10.7
+
+## Premiers pas
+
+- simplification du README et de la vignette de sixieme autour des usages immediats ;
+- limitation des tableaux affiches dans la vignette afin de conserver une lecture confortable sur le site pkgdown ;
+- ajout de l argument `afficher` aux fonctions de generation d exercices pour afficher directement les enonces sans devoir affecter le resultat a un objet.
+
 # eduschool 0.10.6
 
 ## Experience utilisateur

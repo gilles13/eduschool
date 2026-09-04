@@ -22,12 +22,51 @@ selectionner_modeles = function(niveau_id = NULL, capacite_id = NULL) {
   m
 }
 
+.afficher_exercice = function(exercice, numero = NULL) {
+  titre = if (is.null(numero)) "Exercice" else paste("Exercice", numero)
+  cat(titre, "\n", exercice$enonce, "\n", sep = "")
+  invisible(exercice)
+}
+
+.afficher_lot_exercices = function(exercices) {
+  for (i in seq_along(exercices)) {
+    if (i > 1L) cat("\n")
+    .afficher_exercice(exercices[[i]], numero = i)
+  }
+  invisible(exercices)
+}
+
+#' Generer un exercice
+#'
+#' @param modele_id Identifiant du modele d'exercice.
+#' @param niveau_id Identifiant du niveau scolaire.
+#' @param capacite_id Identifiant de capacite facultatif.
+#' @param difficulte Niveau de difficulte.
+#' @param seed Graine aleatoire pour rendre la generation reproductible.
+#' @param afficher Afficher directement l'enonce genere.
+#' @usage
+#' generer_exercice(
+#'   modele_id, niveau_id, capacite_id = NA_character_,
+#'   difficulte = 1, seed = NULL, afficher = FALSE
+#' )
+#' generer_lot_exercices(
+#'   modele_id, niveau_id, n = 10, capacite_id = NA_character_,
+#'   difficulte = 1, seed = 1, afficher = FALSE
+#' )
+#' generer_fiche(
+#'   niveau_id, capacite_id = NULL, n = 10,
+#'   difficulte = 1, seed = 1, afficher = FALSE
+#' )
+#' @return Un exercice ou une liste d'exercices.
+#' @name exercices
+#' @export
 generer_exercice = function(
   modele_id,
   niveau_id,
   capacite_id = NA_character_,
   difficulte = 1,
-  seed = NULL
+  seed = NULL,
+  afficher = FALSE
 ) {
   f = switch(modele_id,
     EQ1DEG_001 = generer_equation_1degre,
@@ -37,28 +76,74 @@ generer_exercice = function(
     PCT_001 = generer_pourcentage,
     stop("Mod\u00e8le inconnu : ", modele_id)
   )
-  f(niveau_id = niveau_id, capacite_id = capacite_id, difficulte = difficulte, seed = seed)
+  exercice = f(
+    niveau_id = niveau_id,
+    capacite_id = capacite_id,
+    difficulte = difficulte,
+    seed = seed
+  )
+  if (isTRUE(afficher)) {
+    .afficher_exercice(exercice)
+    return(invisible(exercice))
+  }
+  exercice
 }
 
+#' @rdname exercices
+#' @param n Nombre d'exercices.
+#' @export
 generer_lot_exercices = function(
   modele_id,
   niveau_id,
   n = 10,
   capacite_id = NA_character_,
   difficulte = 1,
-  seed = 1
+  seed = 1,
+  afficher = FALSE
 ) {
-  lapply(seq_len(n), function(i) {
-    generer_exercice(modele_id, niveau_id, capacite_id, difficulte, seed = seed + i - 1L)
+  exercices = lapply(seq_len(n), function(i) {
+    generer_exercice(
+      modele_id,
+      niveau_id,
+      capacite_id,
+      difficulte,
+      seed = seed + i - 1L,
+      afficher = FALSE
+    )
   })
+  if (isTRUE(afficher)) {
+    .afficher_lot_exercices(exercices)
+    return(invisible(exercices))
+  }
+  exercices
 }
 
-generer_fiche = function(niveau_id, capacite_id = NULL, n = 10, difficulte = 1, seed = 1) {
+#' @rdname exercices
+#' @export
+generer_fiche = function(
+  niveau_id,
+  capacite_id = NULL,
+  n = 10,
+  difficulte = 1,
+  seed = 1,
+  afficher = FALSE
+) {
   modeles = selectionner_modeles(niveau_id, capacite_id)
   if (!nrow(modeles)) stop("Aucun mod\u00e8le disponible pour cette s\u00e9lection.")
   ids = rep(modeles$modele_id, length.out = n)
-  lapply(seq_len(n), function(i) {
-    generer_exercice(ids[[i]], niveau_id, if (is.null(capacite_id)) NA_character_ else capacite_id,
-                      difficulte = difficulte, seed = seed + i - 1L)
+  exercices = lapply(seq_len(n), function(i) {
+    generer_exercice(
+      ids[[i]],
+      niveau_id,
+      if (is.null(capacite_id)) NA_character_ else capacite_id,
+      difficulte = difficulte,
+      seed = seed + i - 1L,
+      afficher = FALSE
+    )
   })
+  if (isTRUE(afficher)) {
+    .afficher_lot_exercices(exercices)
+    return(invisible(exercices))
+  }
+  exercices
 }
