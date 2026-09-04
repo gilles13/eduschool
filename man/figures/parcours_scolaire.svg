@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2450" height="700" viewBox="0 0 2450 700" role="img" aria-labelledby="title desc">
+<title id="title">Parcours scolaires modélisés dans eduschool</title>
+<desc id="desc">Collège, seconde générale et technologique, voie générale et séries technologiques.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker><style><![CDATA[.edge{fill:none;stroke:#59636e;stroke-width:2.2;marker-end:url(#arrow)} .edge-label{font:13px system-ui,sans-serif;fill:#4a5560}.node rect{stroke-width:1.8}.node text{font:15px system-ui,sans-serif;fill:#17212b;text-anchor:middle;dominant-baseline:middle}.normal rect{fill:#f7f9fb;stroke:#77828d}.source rect,.niveau rect{fill:#eef5ff;stroke:#5e7fa7}.database rect{fill:#f2f0ff;stroke:#7667a8}.documentation rect,.serie rect{fill:#fff6e8;stroke:#a77b3f}.accent rect,.voie rect{fill:#eaf8f0;stroke:#4f8b68}.sortie rect{fill:#f4f7ea;stroke:#788d49}.group rect{stroke-width:1.5;stroke-dasharray:7 5}.group-title{font:600 15px system-ui,sans-serif;fill:#34404b}.cycle3 rect{fill:#f5f9ff;stroke:#91a9c5}.cycle4 rect{fill:#f4faf6;stroke:#88aa94}.cycle_terminal rect{fill:#fffaf0;stroke:#b89a68}]]></style></defs>
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<g class="group cycle3" id="group_C3"><rect x="25" y="210" width="230" height="220" rx="18" ry="18"/><text class="group-title" x="43" y="238">Cycle 3 – cycle de consolidation</text></g>
+<g class="group cycle4" id="group_C4"><rect x="275" y="210" width="650" height="220" rx="18" ry="18"/><text class="group-title" x="293" y="238">Cycle 4 – cycle des approfondissements</text></g>
+<g class="group cycle_terminal" id="group_CYCLE_TERMINAL"><rect x="1200" y="55" width="1205" height="595" rx="18" ry="18"/><text class="group-title" x="1218" y="83">Cycle terminal du lycée</text></g>
+<path class="edge" d="M 230 316 L 265 316 L 265 316 L 300 316"/>
+<path class="edge" d="M 480 316 L 500 316 L 500 316 L 520 316"/>
+<path class="edge" d="M 700 316 L 720 316 L 720 316 L 740 316"/>
+<path class="edge" d="M 920 316 L 945 316 L 945 316 L 970 316"/>
+<path class="edge" d="M 1190 316 L 1210 316 L 1210 166 L 1230 166"/>
+<path class="edge" d="M 1420 166 L 1440 166 L 1440 166 L 1460 166"/>
+<path class="edge" d="M 1640 166 L 1665 166 L 1665 166 L 1690 166"/>
+<path class="edge" d="M 1190 316 L 1210 316 L 1210 466 L 1230 466"/>
+<path class="edge" d="M 1450 466 L 1475 466 L 1475 442.5 L 1500 442.5"/>
+<path class="edge" d="M 1450 466 L 1587.5 466 L 1587.5 442.5 L 1725 442.5"/>
+<path class="edge" d="M 1450 466 L 1700 466 L 1700 442.5 L 1950 442.5"/>
+<path class="edge" d="M 1450 466 L 1812.5 466 L 1812.5 442.5 L 2175 442.5"/>
+<path class="edge" d="M 1450 466 L 1475 466 L 1475 562.5 L 1500 562.5"/>
+<path class="edge" d="M 1450 466 L 1587.5 466 L 1587.5 562.5 L 1725 562.5"/>
+<path class="edge" d="M 1450 466 L 1700 466 L 1700 562.5 L 1950 562.5"/>
+<g class="node niveau" id="N6"><rect x="50" y="280" width="180" height="72" rx="12" ry="12"/>
+<text x="140" y="316">Sixième</text>
+</g>
+<g class="node niveau" id="N5"><rect x="300" y="280" width="180" height="72" rx="12" ry="12"/>
+<text x="390" y="316">Cinquième</text>
+</g>
+<g class="node niveau" id="N4"><rect x="520" y="280" width="180" height="72" rx="12" ry="12"/>
+<text x="610" y="316">Quatrième</text>
+</g>
+<g class="node niveau" id="N3"><rect x="740" y="280" width="180" height="72" rx="12" ry="12"/>
+<text x="830" y="316">Troisième</text>
+</g>
+<g class="node niveau" id="N2GT"><rect x="970" y="280" width="220" height="72" rx="12" ry="12"/>
+<text x="1080" y="306.5">Seconde générale et</text>
+<text x="1080" y="325.5">technologique</text>
+</g>
+<g class="node voie" id="VG"><rect x="1230" y="130" width="190" height="72" rx="12" ry="12"/>
+<text x="1325" y="166">Voie générale</text>
+</g>
+<g class="node niveau" id="N1G"><rect x="1460" y="130" width="180" height="72" rx="12" ry="12"/>
+<text x="1550" y="166">Première générale</text>
+</g>
+<g class="node niveau" id="NTG"><rect x="1690" y="130" width="180" height="72" rx="12" ry="12"/>
+<text x="1780" y="166">Terminale générale</text>
+</g>
+<g class="node voie" id="VT"><rect x="1230" y="430" width="220" height="72" rx="12" ry="12"/>
+<text x="1340" y="466">Voie technologique</text>
+</g>
+<g class="node serie" id="S_ST2S"><rect x="1500" y="390" width="205" height="105" rx="12" ry="12"/>
+<text x="1602.5" y="414">ST2S</text>
+<text x="1602.5" y="433">Sciences et technologies</text>
+<text x="1602.5" y="452">de la santé et du social</text>
+<text x="1602.5" y="471">Première → Terminale</text>
+</g>
+<g class="node serie" id="S_STL"><rect x="1725" y="390" width="205" height="105" rx="12" ry="12"/>
+<text x="1827.5" y="414">STL</text>
+<text x="1827.5" y="433">Sciences et technologies</text>
+<text x="1827.5" y="452">de laboratoire</text>
+<text x="1827.5" y="471">Première → Terminale</text>
+</g>
+<g class="node serie" id="S_STD2A"><rect x="1950" y="390" width="205" height="105" rx="12" ry="12"/>
+<text x="2052.5" y="404.5">STD2A</text>
+<text x="2052.5" y="423.5">Sciences et technologies</text>
+<text x="2052.5" y="442.5">du design et des arts</text>
+<text x="2052.5" y="461.5">appliqués</text>
+<text x="2052.5" y="480.5">Première → Terminale</text>
+</g>
+<g class="node serie" id="S_STI2D"><rect x="2175" y="390" width="205" height="105" rx="12" ry="12"/>
+<text x="2277.5" y="404.5">STI2D</text>
+<text x="2277.5" y="423.5">Sciences et technologies</text>
+<text x="2277.5" y="442.5">de l’industrie et du</text>
+<text x="2277.5" y="461.5">développement durable</text>
+<text x="2277.5" y="480.5">Première → Terminale</text>
+</g>
+<g class="node serie" id="S_STMG"><rect x="1500" y="510" width="205" height="105" rx="12" ry="12"/>
+<text x="1602.5" y="524.5">STMG</text>
+<text x="1602.5" y="543.5">Sciences et technologies</text>
+<text x="1602.5" y="562.5">du management et de la</text>
+<text x="1602.5" y="581.5">gestion</text>
+<text x="1602.5" y="600.5">Première → Terminale</text>
+</g>
+<g class="node serie" id="S_STHR"><rect x="1725" y="510" width="205" height="105" rx="12" ry="12"/>
+<text x="1827.5" y="524.5">STHR</text>
+<text x="1827.5" y="543.5">Sciences et technologies</text>
+<text x="1827.5" y="562.5">de l’hôtellerie et de la</text>
+<text x="1827.5" y="581.5">restauration</text>
+<text x="1827.5" y="600.5">Première → Terminale</text>
+</g>
+<g class="node serie" id="S_S2TMD"><rect x="1950" y="510" width="205" height="105" rx="12" ry="12"/>
+<text x="2052.5" y="524.5">S2TMD</text>
+<text x="2052.5" y="543.5">Sciences et techniques</text>
+<text x="2052.5" y="562.5">du théâtre, de la</text>
+<text x="2052.5" y="581.5">musique et de la danse</text>
+<text x="2052.5" y="600.5">Première → Terminale</text>
+</g>
+</svg>

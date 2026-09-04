@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="480" viewBox="0 0 1680 480" role="img" aria-labelledby="title desc">
+<title id="title">Exercices et fiches de révision</title>
+<desc id="desc">Du choix d&#x27;une capacité à la génération déterministe d&#x27;exercices et de rapports.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker>
+
+<style><![CDATA[
+.edge { fill:none; stroke:#59636e; stroke-width:2.2; marker-end:url(#arrow); }
+.edge-label { font:13px system-ui,sans-serif; fill:#4a5560; }
+.node rect { stroke-width:1.8; rx:12; ry:12; }
+.node text { font:15px system-ui,sans-serif; fill:#17212b; text-anchor:middle; dominant-baseline:middle; }
+.normal rect { fill:#f7f9fb; stroke:#77828d; }.source rect,.niveau rect { fill:#eef5ff; stroke:#5e7fa7; }.database rect { fill:#f2f0ff; stroke:#7667a8; }.documentation rect,.serie rect { fill:#fff6e8; stroke:#a77b3f; }.accent rect,.voie rect { fill:#eaf8f0; stroke:#4f8b68; }.sortie rect { fill:#f4f7ea; stroke:#788d49; }
+.group rect { stroke-width:1.5; stroke-dasharray:7 5; rx:18; ry:18; }.group-title { font:600 15px system-ui,sans-serif; fill:#34404b; }.cycle3 rect { fill:#f5f9ff; stroke:#91a9c5; }.cycle4 rect { fill:#f4faf6; stroke:#88aa94; }.cycle_terminal rect { fill:#fffaf0; stroke:#b89a68; }
+]]></style>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<path class="edge" d="M 220 186 L 255 186 L 255 186 L 290 186"/>
+<path class="edge" d="M 480 186 L 510 186 L 510 186 L 540 186"/>
+<path class="edge" d="M 740 186 L 780 186 L 780 186 L 820 186"/>
+<path class="edge" d="M 915 330 L 915 276 L 930 276 L 930 222"/>
+<path class="edge" d="M 1040 186 L 1075 186 L 1075 186 L 1110 186"/>
+<path class="edge" d="M 1330 186 L 1360 186 L 1360 186 L 1390 186"/>
+<g class="node source" id="NIV">
+<rect x="40" y="150" width="180" height="72" rx="14" ry="14"/>
+<text x="130" y="186">Niveau</text>
+</g>
+<g class="node source" id="CAP">
+<rect x="290" y="150" width="190" height="72" rx="14" ry="14"/>
+<text x="385" y="186">Capacité</text>
+</g>
+<g class="node normal" id="MOD">
+<rect x="540" y="150" width="200" height="72" rx="14" ry="14"/>
+<text x="640" y="176.5">Modèle</text>
+<text x="640" y="195.5">d’exercice</text>
+</g>
+<g class="node accent" id="GEN">
+<rect x="820" y="150" width="220" height="72" rx="14" ry="14"/>
+<text x="930" y="176.5">Moteur de</text>
+<text x="930" y="195.5">génération</text>
+</g>
+<g class="node normal" id="SEED">
+<rect x="820" y="330" width="190" height="72" rx="14" ry="14"/>
+<text x="915" y="356.5">seed</text>
+<text x="915" y="375.5">reproductible</text>
+</g>
+<g class="node sortie" id="FICHE">
+<rect x="1110" y="150" width="220" height="72" rx="14" ry="14"/>
+<text x="1220" y="176.5">Fiche</text>
+<text x="1220" y="195.5">d’exercices</text>
+</g>
+<g class="node sortie" id="RAP">
+<rect x="1390" y="150" width="230" height="72" rx="14" ry="14"/>
+<text x="1505" y="186">Rapport HTML / PDF</text>
+</g>
+</svg>

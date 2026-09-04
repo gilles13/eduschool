@@ -1,10 +1,19 @@
-# Diagramme des parcours scolaires actuellement modélisés
-parcours = diagramme_parcours_scolaire(ouvrir = FALSE)
+# Exemples de génération des diagrammes eduschool
 
-# Architecture du mini système d'information
-architecture = diagramme_package("architecture_si", ouvrir = FALSE)
+# Catalogue des diagrammes disponibles
+diagrammes_disponibles()
 
-# Chaîne de tests et de contrôle du package
-tests = diagramme_package("tests_package", ouvrir = FALSE)
+# Sortie HTML autonome
+diagramme_parcours_scolaire(ouvrir = FALSE)
+diagramme_package("architecture_si", ouvrir = FALSE)
+diagramme_package("tests_package", ouvrir = FALSE)
 
-c(parcours, architecture, tests)
+# Sortie SVG autonome
+produire_diagramme_svg("parcours_scolaire")
+produire_diagramme_svg("architecture_si")
+
+# Depuis l'arbre source : régénérer les SVG utilisés par les vignettes
+# generer_diagrammes_documentation()
+
+# Régénérer à la fois les SVG documentaires et toutes les pages HTML
+# generer_documentation_visuelle()

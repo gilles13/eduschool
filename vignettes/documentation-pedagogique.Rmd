@@ -11,6 +11,8 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
+![Organisation de la documentation pédagogique](../man/figures/documentation_pedagogique.svg)
+
 La documentation est séparée des programmes officiels. Une notion pédagogique peut être reliée à plusieurs capacités.
 
 ```{r, eval=FALSE}

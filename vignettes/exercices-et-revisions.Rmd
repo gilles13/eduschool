@@ -11,6 +11,8 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
+![Chaîne de génération des exercices et révisions](../man/figures/exercices_revisions.svg)
+
 Le moteur d'exercices est déterministe lorsqu'un `seed` est fourni.
 
 ```{r, eval=FALSE}

@@ -1,10 +1,36 @@
 test_that("le catalogue des diagrammes est cohérent", {
   x = diagrammes_disponibles()
-  expect_true(all(c("parcours_scolaire", "architecture_si", "tests_package") %in% x$diagramme_id))
+  attendus = c(
+    "parcours_scolaire",
+    "prise_en_main",
+    "programmes_capacites",
+    "architecture_si",
+    "documentation_pedagogique",
+    "exercices_revisions",
+    "tests_package",
+    "developpement"
+  )
+
+  expect_true(all(attendus %in% x$diagramme_id))
   expect_false(anyDuplicated(x$diagramme_id))
 })
 
-test_that("les diagrammes HTML sont générés", {
+test_that("les diagrammes SVG sont autonomes", {
+  types = diagrammes_disponibles()$diagramme_id
+
+  for (type in types) {
+    fichier = tempfile(fileext = ".svg")
+    sortie = produire_diagramme_svg(type, fichier = fichier)
+
+    expect_true(file.exists(sortie))
+    contenu = paste(readLines(sortie, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
+    expect_match(contenu, "<svg")
+    expect_match(contenu, "marker-end")
+    expect_false(grepl("mermaid|cdn.jsdelivr|npm", contenu, ignore.case = TRUE))
+  }
+})
+
+test_that("les diagrammes HTML embarquent le SVG sans dépendance externe", {
   types = diagrammes_disponibles()$diagramme_id
 
   for (type in types) {
@@ -13,17 +39,24 @@ test_that("les diagrammes HTML sont générés", {
 
     expect_true(file.exists(sortie))
     contenu = paste(readLines(sortie, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
-    expect_match(contenu, "class=\\\"mermaid\\\"")
-    expect_match(contenu, "cdn.jsdelivr.net/npm/mermaid@11")
+    expect_match(contenu, "<svg")
+    expect_match(contenu, "class=\"diagramme\"")
+    expect_false(grepl("mermaid|cdn.jsdelivr|npm", contenu, ignore.case = TRUE))
   }
 })
 
 test_that("le parcours utilise les séries des référentiels", {
-  fichier = tempfile(fileext = ".html")
-  diagramme_parcours_scolaire(fichier)
+  fichier = tempfile(fileext = ".svg")
+  produire_diagramme_svg("parcours_scolaire", fichier)
   contenu = paste(readLines(fichier, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
 
   expect_match(contenu, "ST2S")
   expect_match(contenu, "STI2D")
   expect_match(contenu, "STMG")
+  expect_match(contenu, "Cycle 3")
+  expect_match(contenu, "Cycle 4")
+  expect_match(contenu, "Cycle terminal")
+  expect_match(contenu, "group_C3")
+  expect_match(contenu, "group_C4")
+  expect_match(contenu, "group_CYCLE_TERMINAL")
 })

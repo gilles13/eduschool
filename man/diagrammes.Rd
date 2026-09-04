@@ -1,12 +1,16 @@
 \name{diagrammes}
 \alias{diagrammes_disponibles}
 \alias{produire_diagramme_html}
+\alias{produire_diagramme_svg}
 \alias{diagramme_parcours_scolaire}
 \alias{diagramme_package}
-\title{Diagrammes HTML eduschool}
+\alias{generer_diagrammes_documentation}
+\alias{generer_documentation_visuelle}
+\title{Diagrammes HTML et SVG de eduschool}
 \description{
-Fonctions légères pour produire des pages HTML contenant des diagrammes Mermaid
-sur les parcours scolaires et le fonctionnement interne du package.
+Fonctions de génération de diagrammes autonomes à partir d'un modèle de graphe
+interne à eduschool. Les SVG sont produits directement en R, sans Mermaid,
+Node, npm ou autre moteur externe.
 }
 \usage{
 diagrammes_disponibles()
@@ -17,6 +21,8 @@ produire_diagramme_html(
   ouvrir = FALSE
 )
 
+produire_diagramme_svg(type = "parcours_scolaire", fichier = NULL)
+
 diagramme_parcours_scolaire(fichier = NULL, ouvrir = FALSE)
 
 diagramme_package(
@@ -24,18 +30,37 @@ diagramme_package(
   fichier = NULL,
   ouvrir = FALSE
 )
+
+generer_diagrammes_documentation(repertoire = NULL)
+
+generer_documentation_visuelle(
+  repertoire_svg = NULL,
+  repertoire_html = NULL
+)
 }
 \arguments{
-  \item{type}{Identifiant du diagramme à produire.}
-  \item{fichier}{Chemin du fichier HTML. Si \code{NULL}, une sortie est créée sous \code{rapports/sorties/diagrammes/}.}
-  \item{ouvrir}{Ouvrir le fichier dans le navigateur après sa création.}
+\item{type}{Identifiant du diagramme. Voir \code{diagrammes_disponibles()}.}
+\item{fichier}{Chemin du fichier HTML ou SVG à produire.}
+\item{ouvrir}{Ouvrir la page HTML dans le navigateur après sa création.}
+\item{repertoire}{Répertoire de destination des SVG documentaires. Par défaut,
+\code{man/figures} dans l'arbre source du package.}
+\item{repertoire_svg}{Répertoire des SVG documentaires.}
+\item{repertoire_html}{Répertoire des pages HTML.}
 }
 \value{
-\code{diagrammes_disponibles()} retourne un data.frame. Les fonctions de génération
-retournent invisiblement le chemin absolu du fichier HTML produit.
+\code{diagrammes_disponibles()} retourne un \code{data.frame}. Les fonctions
+de production retournent invisiblement le chemin du fichier créé.
+\code{generer_documentation_visuelle()} retourne invisiblement une liste de
+chemins SVG et HTML.
 }
 \details{
-Le rendu Mermaid est chargé depuis jsDelivr lors de l'ouverture de la page HTML.
-Une connexion réseau est donc nécessaire pour le rendu graphique. Le code Mermaid
-reste visible dans le fichier HTML même si le script distant n'est pas disponible.
+Les sorties HTML embarquent directement le SVG généré par eduschool. Elles ne
+chargent aucun script distant. Les SVG de \code{man/figures} peuvent être
+versionnés et réutilisés par pkgdown et les vignettes.
+}
+\examples{
+diagrammes_disponibles()
+
+f = tempfile(fileext = ".svg")
+produire_diagramme_svg("architecture_si", fichier = f)
 }
