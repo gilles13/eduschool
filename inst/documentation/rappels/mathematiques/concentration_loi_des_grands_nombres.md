@@ -1,34 +1,34 @@
-# Concentration, loi des grands nombres
+# Concentration et loi des grands nombres
+
+## Idée centrale
+
+Les inégalités de concentration quantifient le fait qu'une variable aléatoire est souvent proche de son espérance. Pour une moyenne d'un grand nombre d'expériences indépendantes identiquement distribuées, la dispersion diminue : c'est le mécanisme de la loi des grands nombres.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Concentration, loi des grands nombres**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+L'inégalité de Bienaymé-Tchebychev donne, pour $a>0$, $P(|X-E(X)|\geq a)\leq V(X)/a^2$. Pour la moyenne $M_n$ de variables indépendantes de même espérance $m$ et de même variance $v$, $V(M_n)=v/n$ ; la probabilité d'un écart fixé à $m$ est donc majorée par une quantité qui tend vers $0$.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Identifier l'espérance et la variance, traduire l'événement sous la forme d'un écart à l'espérance, puis appliquer l'inégalité avec le seuil approprié.
+
+## Exemple
+
+Si $E(X)=10$ et $V(X)=4$, alors $P(|X-10|\geq3)\leq4/9$.
+
+## Vérification
+
+Une majoration n'est pas nécessairement la probabilité exacte. Si la borne calculée dépasse 1, la borne triviale 1 reste la seule information utile.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- calculer espérance et variance d'une moyenne ;
+- traduire un intervalle en écart absolu ;
+- distinguer valeur exacte et majoration ;
+- interpréter la décroissance en $1/n$ de la variance d'une moyenne.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- présenter la borne de Tchebychev comme une égalité ;
+- oublier de mettre le seuil au carré ;
+- confondre convergence probabiliste et certitude pour un échantillon fini.

@@ -1,34 +1,34 @@
-# Primitives, équations différentielles
+# Primitives et équations différentielles
+
+## Idée centrale
+
+Une primitive inverse l'opération de dérivation. Les équations différentielles décrivent des fonctions à partir d'une relation entre la fonction et sa dérivée, notamment les évolutions exponentielles.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Primitives, équations différentielles**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+$F$ est une primitive de $f$ si $F'=f$. Toutes les primitives de $f$ sur un intervalle sont de la forme $F+C$. Les solutions de $y'=ay$ sont $y(x)=Ce^{ax}$. Une condition initiale permet de déterminer la constante.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Identifier le type d'équation, écrire la famille générale de solutions, puis utiliser la condition initiale. Pour vérifier une solution, la dériver et la substituer dans l'équation.
+
+## Exemple
+
+$y'=2y$ avec $y(0)=3$ donne $y(x)=Ce^{2x}$ puis $C=3$, donc $y(x)=3e^{2x}$.
+
+## Vérification
+
+$y'(x)=6e^{2x}=2y(x)$ et $y(0)=3$ : les deux conditions sont satisfaites.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- reconnaître des primitives usuelles ;
+- intégrer une constante multiplicative ;
+- résoudre $y'=ay$ ;
+- déterminer une constante avec une condition initiale.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- oublier la constante dans une famille de primitives ;
+- confondre primitive et dérivée ;
+- donner une solution particulière sans utiliser la condition initiale.

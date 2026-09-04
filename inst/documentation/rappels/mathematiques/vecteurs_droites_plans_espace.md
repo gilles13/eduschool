@@ -1,34 +1,39 @@
-# Manipulation des vecteurs, des droites et des plans de l’espace
+# Vecteurs, droites et plans de l'espace
+
+## Idée centrale
+
+Dans l'espace, les vecteurs permettent de traduire parallélisme, alignement et coplanarité en relations algébriques. Une droite est décrite par un point et un vecteur directeur ; un plan par un point et deux vecteurs non colinéaires.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Manipulation des vecteurs, des droites et des plans de l’espace**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- deux vecteurs sont colinéaires si l'un est un multiple de l'autre ;
+- trois vecteurs sont coplanaires si l'un est combinaison linéaire des deux autres lorsque ceux-ci ne sont pas colinéaires ;
+- une droite est déterminée par un point et un vecteur directeur non nul ;
+- un plan est déterminé par un point et deux vecteurs directeurs non colinéaires ;
+- deux droites de l'espace peuvent être parallèles, sécantes ou non coplanaires.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Pour étudier une configuration, choisir un repère, écrire les coordonnées des vecteurs utiles, puis traduire la propriété géométrique recherchée en colinéarité, coplanarité ou appartenance à un plan.
+
+## Exemple
+
+Avec $A(0,0,0)$, $B(1,0,0)$ et $C(0,1,0)$, les vecteurs $\overrightarrow{AB}=(1,0,0)$ et $\overrightarrow{AC}=(0,1,0)$ ne sont pas colinéaires. Ils définissent le plan $(ABC)$.
+
+## Vérification
+
+Une relation vectorielle doit être compatible coordonnée par coordonnée. Pour une appartenance à un plan, vérifier que les mêmes coefficients conviennent aux trois coordonnées.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- calculer les coordonnées d'un vecteur ;
+- tester la colinéarité ;
+- former une combinaison linéaire ;
+- identifier un vecteur directeur d'une droite et deux directions d'un plan.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- raisonner comme dans le plan et oublier les droites non coplanaires ;
+- utiliser deux vecteurs colinéaires pour définir un plan ;
+- confondre point et vecteur ;
+- vérifier seulement deux coordonnées sur trois.

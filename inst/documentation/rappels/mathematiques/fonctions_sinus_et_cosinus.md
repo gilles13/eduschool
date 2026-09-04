@@ -1,34 +1,34 @@
 # Fonctions sinus et cosinus
 
+## Idée centrale
+
+Sinus et cosinus décrivent des phénomènes périodiques. Leur étude combine cercle trigonométrique, dérivation, variations et résolution d'équations.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonctions sinus et cosinus**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+$\sin$ et $\cos$ sont définies sur $\mathbb{R}$ et de période $2\pi$. On a $\sin^2 x+\cos^2 x=1$, $(\sin x)'=\cos x$ et $(\cos x)'=-\sin x$. Les symétries et valeurs remarquables du cercle trigonométrique restent essentielles.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Pour étudier une fonction trigonométrique, exploiter d'abord sa périodicité pour réduire l'intervalle, puis utiliser dérivée et valeurs remarquables.
+
+## Exemple
+
+Pour $f(x)=2\sin x$ sur $[0,2\pi]$, $f'(x)=2\cos x$. Les changements de signe de $\cos x$ donnent les variations et les extrema $2$ et $-2$.
+
+## Vérification
+
+Les résultats doivent respecter la périodicité et les bornes $-1\leq\sin x,\cos x\leq1$.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- convertir les angles remarquables en radians ;
+- lire sinus et cosinus sur le cercle ;
+- dériver les fonctions trigonométriques usuelles ;
+- utiliser la périodicité pour résoudre une équation.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- mélanger degrés et radians ;
+- oublier les solutions périodiques ;
+- oublier le signe négatif dans la dérivée de $\cos$.

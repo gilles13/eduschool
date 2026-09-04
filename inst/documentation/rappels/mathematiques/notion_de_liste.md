@@ -1,34 +1,43 @@
-# Notion de liste
+# Notion de liste en algorithmique
+
+## Idée centrale
+
+Une liste permet de regrouper une suite ordonnée de valeurs et de les traiter par indice ou par parcours. Elle facilite les simulations, le stockage de résultats intermédiaires et le traitement de données.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Notion de liste**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+En Python, une liste peut être créée avec des crochets, par exemple `L = [2, 5, 7]`. Les indices commencent à 0. `len(L)` donne la longueur ; `L.append(x)` ajoute une valeur à la fin. Une boucle `for` permet de parcourir les valeurs ou les indices.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Avant de coder, préciser ce que représente chaque élément de la liste, l'ordre attendu et l'opération à effectuer. Choisir ensuite entre parcours des valeurs et parcours des indices.
+
+## Exemple
+
+```python
+L = [3, 1, 4, 1, 5]
+s = 0
+for x in L:
+    s = s + x
+```
+
+À la fin, `s` contient la somme des éléments de `L`.
+
+## Vérification
+
+Tester l'algorithme sur une liste très courte dont le résultat peut être calculé à la main. Contrôler aussi le cas de la liste vide lorsqu'il est pertinent.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- créer et lire une liste ;
+- accéder à un élément par son indice ;
+- ajouter un élément ;
+- parcourir une liste ;
+- calculer somme, minimum, maximum ou fréquence par une boucle simple.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- commencer les indices à 1 au lieu de 0 en Python ;
+- dépasser le dernier indice ;
+- modifier une liste pendant son parcours sans anticiper les conséquences ;
+- confondre indice et valeur.

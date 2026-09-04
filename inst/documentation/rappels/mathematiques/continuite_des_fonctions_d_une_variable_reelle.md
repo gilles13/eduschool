@@ -1,34 +1,32 @@
-# Continuité des fonctions d’une variable réelle
+# Continuité des fonctions d'une variable réelle
+
+## Idée centrale
+
+Une fonction continue sur un intervalle ne présente pas de rupture. Cette propriété permet surtout d'établir l'existence de solutions d'équations grâce au théorème des valeurs intermédiaires.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Continuité des fonctions d’une variable réelle**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Les fonctions usuelles sont continues sur leurs domaines. Si $f$ est continue sur $[a,b]$, toute valeur comprise entre $f(a)$ et $f(b)$ est atteinte. Si, de plus, $f$ est strictement monotone, l'équation $f(x)=k$ possède au plus une solution sur l'intervalle.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Pour prouver qu'une équation $f(x)=0$ possède une unique solution sur $[a,b]$ : justifier la continuité, montrer que $0$ est entre $f(a)$ et $f(b)$, puis établir la stricte monotonie.
+
+## Exemple
+
+$f(x)=x^3+x-1$ est continue et strictement croissante sur $[0,1]$. Comme $f(0)=-1$ et $f(1)=1$, elle s'annule une fois et une seule sur $[0,1]$.
+
+## Vérification
+
+Le changement de signe seul ne suffit pas sans continuité. L'unicité nécessite un argument supplémentaire, souvent la stricte monotonie.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- identifier les intervalles de continuité ;
+- appliquer le théorème des valeurs intermédiaires ;
+- encadrer une solution par dichotomie.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- conclure à l'unicité avec le seul théorème des valeurs intermédiaires ;
+- oublier de vérifier que l'intervalle est inclus dans le domaine de définition.

@@ -1,34 +1,40 @@
 # Limites des fonctions
 
+## Idée centrale
+
+La limite décrit le comportement d'une fonction lorsque la variable s'approche d'une valeur ou devient très grande en valeur absolue. Elle permet notamment d'étudier les asymptotes et le comportement aux bornes d'un domaine.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Limites des fonctions**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- limites usuelles des fonctions polynomiales, rationnelles, exponentielle et logarithme ;
+- règles sur somme, produit et quotient lorsque les formes obtenues sont déterminées ;
+- comparaison et croissance comparée pour lever certaines formes indéterminées ;
+- asymptote verticale lorsque la fonction tend vers $\pm\infty$ en une valeur finie, horizontale lorsque la limite à l'infini est finie.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+1. identifier le point ou l'infini étudié ;
+2. effectuer une première substitution mentale ;
+3. si une forme indéterminée apparaît, factoriser, mettre au même dénominateur ou utiliser une croissance comparée ;
+4. conclure avec une écriture de limite complète.
+
+## Exemple
+
+Pour $f(x)=(2x^2+1)/(x^2-3)$, diviser numérateur et dénominateur par $x^2$ montre que $f(x)$ tend vers $2$ lorsque $x$ tend vers $+\infty$.
+
+## Vérification
+
+Un tableau de valeurs ou un graphique peut contrôler l'intuition, mais ne remplace pas le calcul de limite.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- reconnaître les formes indéterminées ;
+- factoriser par la puissance dominante ;
+- déterminer le signe d'un quotient près d'une valeur interdite ;
+- relier une limite à une asymptote.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- écrire $\infty$ comme un nombre ;
+- appliquer les règles opératoires à une forme indéterminée ;
+- oublier de distinguer limite à gauche et à droite lorsque c'est nécessaire.

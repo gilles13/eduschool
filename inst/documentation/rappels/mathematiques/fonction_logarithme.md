@@ -1,34 +1,34 @@
 # Fonction logarithme
 
+## Idée centrale
+
+Le logarithme népérien $\ln$ est la fonction réciproque de l'exponentielle. Il transforme les produits en sommes et intervient dans les équations exponentielles, les limites et les modèles de croissance.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonction logarithme**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Pour $x>0$, $e^{\ln x}=x$ et $\ln(e^x)=x$. Pour $a,b>0$, $\ln(ab)=\ln a+\ln b$, $\ln(a/b)=\ln a-\ln b$ et $\ln(a^n)=n\ln a$. Sa dérivée est $1/x$ et $\ln$ est strictement croissante sur $]0,+\infty[$.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Avant toute manipulation de logarithmes, déterminer les conditions de positivité. Pour résoudre une équation exponentielle, isoler l'exponentielle puis appliquer $\ln$.
+
+## Exemple
+
+$e^{2x}=5$ équivaut à $2x=\ln 5$, donc $x=\ln(5)/2$.
+
+## Vérification
+
+Réinjecter la solution dans l'équation initiale et contrôler les conditions de définition.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- simplifier des expressions logarithmiques ;
+- résoudre $e^{ax+b}=c$ avec $c>0$ ;
+- dériver $\ln x$ et des formes simples $\ln(u)$ ;
+- connaître les limites essentielles de $\ln$.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- écrire $\ln(a+b)=\ln a+\ln b$ ;
+- oublier que $\ln x$ exige $x>0$ ;
+- confondre $\ln(x^n)$ et $(\ln x)^n$.

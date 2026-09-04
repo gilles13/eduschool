@@ -1,34 +1,33 @@
 # Sommes de variables aléatoires
 
+## Idée centrale
+
+Une somme de variables aléatoires modélise un total : gain cumulé, nombre total d'événements ou mesure agrégée. L'espérance est additive, sans condition d'indépendance ; les variances s'additionnent pour des variables indépendantes.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Sommes de variables aléatoires**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+$E(X+Y)=E(X)+E(Y)$ et plus généralement $E(aX+b)=aE(X)+b$. Si $X$ et $Y$ sont indépendantes, $V(X+Y)=V(X)+V(Y)$. Ces propriétés évitent souvent de construire toute la loi de la somme.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Décomposer la quantité étudiée en variables simples, identifier les indépendances réellement disponibles, puis utiliser linéarité de l'espérance et, si possible, additivité des variances.
+
+## Exemple
+
+Pour 20 variables de Bernoulli indépendantes de paramètre $p$, leur somme $S$ vérifie $E(S)=20p$ et $V(S)=20p(1-p)$.
+
+## Vérification
+
+L'additivité de l'espérance ne nécessite pas l'indépendance ; celle des variances, dans le cadre étudié ici, oui.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- calculer $E(aX+b)$ ;
+- reconnaître une somme de variables indicatrices ;
+- utiliser l'indépendance uniquement lorsqu'elle est justifiée.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- croire que les espérances ne s'additionnent que sous indépendance ;
+- additionner les écarts-types au lieu des variances ;
+- supposer une indépendance non donnée.

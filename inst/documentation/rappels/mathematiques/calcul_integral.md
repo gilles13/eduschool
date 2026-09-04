@@ -1,34 +1,37 @@
 # Calcul intégral
 
+## Idée centrale
+
+L'intégrale $\int_a^b f(x)\,dx$ mesure une accumulation orientée. Pour une fonction continue, elle se calcule à l'aide d'une primitive et permet notamment de déterminer des aires et des valeurs moyennes.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Calcul intégral**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Si $F'=f$, alors $\int_a^b f(x)\,dx=F(b)-F(a)$. L'intégrale est linéaire et additive sur les intervalles. Si $f\geq0$, l'intégrale représente l'aire sous la courbe. La valeur moyenne de $f$ sur $[a,b]$ est $\frac1{b-a}\int_a^b f(x)\,dx$.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+1. identifier une primitive ;
+2. calculer $F(b)-F(a)$ ;
+3. pour une aire entre deux courbes, déterminer d'abord laquelle est au-dessus ;
+4. séparer l'intervalle si le signe change.
+
+## Exemple
+
+$\int_0^2 (3x^2+1)\,dx=[x^3+x]_0^2=10$.
+
+## Vérification
+
+Pour une fonction positive, l'intégrale doit être positive. Un encadrement simple de la fonction donne souvent un ordre de grandeur de l'intégrale.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- trouver les primitives usuelles ;
+- appliquer correctement les bornes ;
+- utiliser linéarité et relation de Chasles ;
+- distinguer intégrale orientée et aire géométrique.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- oublier d'évaluer la primitive aux deux bornes ;
+- confondre $F(b)-F(a)$ avec $f(b)-f(a)$ ;
+- considérer directement une intégrale négative comme une aire.

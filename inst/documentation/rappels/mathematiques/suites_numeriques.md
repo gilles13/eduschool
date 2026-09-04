@@ -1,34 +1,37 @@
 # Suites numériques
 
+## Idée centrale
+
+En terminale, l'étude des suites associe comportement global (variation, bornes) et comportement asymptotique (limite). Les raisonnements par récurrence et les comparaisons sont des outils essentiels.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Suites numériques**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- une suite croissante et majorée converge ; une suite décroissante et minorée converge ;
+- une suite géométrique $q^n$ tend vers $0$ si $|q|<1$ ;
+- les opérations et comparaisons de limites permettent de traiter de nombreuses suites ;
+- la récurrence permet d'établir une propriété vraie pour tout entier à partir d'un rang.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Pour une suite définie par récurrence, chercher d'abord un intervalle stable et le sens de variation. Si la convergence est obtenue, la relation de récurrence peut souvent fournir une équation satisfaite par la limite.
+
+## Exemple
+
+Si $u_{n+1}=(u_n+2)/2$ et $u_0=0$, on peut montrer que $u_n<2$ et que $(u_n)$ est croissante. Elle converge donc ; sa limite $l$ vérifie $l=(l+2)/2$, d'où $l=2$.
+
+## Vérification
+
+Une équation de limite ne prouve pas à elle seule la convergence : il faut d'abord justifier que la suite converge.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- calculer les premiers termes ;
+- reconnaître suites arithmétiques et géométriques ;
+- manipuler $u_{n+1}-u_n$ ou un quotient pertinent ;
+- rédiger initialisation, hérédité et conclusion d'une récurrence.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- confondre suite bornée et suite convergente ;
+- chercher la limite avant d'avoir établi la convergence ;
+- oublier le rang de départ dans une récurrence.

@@ -1,34 +1,34 @@
-# Succession d’épreuves indépendantes, schéma de Bernoulli
+# Succession d'épreuves indépendantes et schéma de Bernoulli
+
+## Idée centrale
+
+Un schéma de Bernoulli répète de façon indépendante une même épreuve à deux issues. Le nombre de succès suit alors une loi binomiale.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Succession d’épreuves indépendantes, schéma de Bernoulli**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Si $X$ compte les succès dans $n$ épreuves indépendantes de probabilité de succès $p$, alors $X\sim\mathcal{B}(n,p)$ et $P(X=k)=\binom{n}{k}p^k(1-p)^{n-k}$. Son espérance vaut $np$ et sa variance $np(1-p)$.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Vérifier les trois éléments : nombre fixé d'épreuves, deux issues succès/échec, indépendance avec probabilité $p$ constante. Identifier ensuite l'événement demandé : exactement, au plus, au moins.
+
+## Exemple
+
+Pour 10 essais indépendants avec $p=0{,}3$, la probabilité d'obtenir exactement 2 succès est $\binom{10}{2}0{,}3^2 0{,}7^8$.
+
+## Vérification
+
+Une probabilité doit être comprise entre 0 et 1. Pour « au moins un succès », le complément $1-(1-p)^n$ est souvent plus simple.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- reconnaître une situation binomiale ;
+- traduire « au plus » et « au moins » ;
+- calculer espérance et variance ;
+- utiliser le complément d'un événement.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- appliquer la loi binomiale sans indépendance ;
+- oublier le coefficient binomial ;
+- confondre $P(X=k)$ et $P(X\leq k)$.

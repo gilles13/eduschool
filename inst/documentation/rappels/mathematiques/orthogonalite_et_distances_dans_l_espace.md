@@ -1,34 +1,34 @@
-# Orthogonalité et distances dans l’espace
+# Orthogonalité et distances dans l'espace
+
+## Idée centrale
+
+Le produit scalaire relie calcul et géométrie dans l'espace. Il permet de caractériser l'orthogonalité, de construire des vecteurs normaux et de calculer longueurs, angles et distances.
 
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Orthogonalité et distances dans l’espace**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+Dans un repère orthonormé, pour $u=(x,y,z)$ et $v=(x',y',z')$, $u\cdot v=xx'+yy'+zz'$. Deux vecteurs non nuls sont orthogonaux si et seulement si leur produit scalaire est nul. Un vecteur normal à un plan est orthogonal à toutes les directions de ce plan.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Pour prouver une orthogonalité, choisir deux vecteurs représentant les directions concernées et calculer leur produit scalaire. Pour une distance, chercher le projeté orthogonal ou utiliser une formule issue d'une équation cartésienne du plan.
+
+## Exemple
+
+$u=(1,2,-1)$ et $v=(1,0,1)$ vérifient $u\cdot v=1+0-1=0$ : ils sont orthogonaux.
+
+## Vérification
+
+Un produit scalaire est un nombre, pas un vecteur. Une distance doit être positive et indépendante du choix d'un vecteur normal proportionnel.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- calculer norme et produit scalaire ;
+- reconnaître un vecteur normal ;
+- traduire « perpendiculaire » par un produit scalaire nul ;
+- utiliser Pythagore lorsque l'orthogonalité est établie.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- oublier que le repère doit être orthonormé pour utiliser directement la formule coordonnée ;
+- confondre vecteur directeur et vecteur normal ;
+- conclure à l'orthogonalité sans vérifier que les directions correspondent aux objets géométriques étudiés.

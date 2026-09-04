@@ -1,34 +1,36 @@
 # Compléments sur la dérivation
 
+## Idée centrale
+
+La dérivée donne le taux de variation local d'une fonction. En terminale, elle sert aussi à étudier convexité, points d'inflexion et optimisation.
+
 ## À connaître
 
-Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Compléments sur la dérivation**.
-
-Avant un exercice, identifier les données, les objets mathématiques en jeu et le résultat demandé. Écrire les étapes du raisonnement plutôt que seulement le résultat final.
+- signe de $f'$ et variations de $f$ ;
+- si $f''$ est positive sur un intervalle, $f$ y est convexe ; si $f''$ est négative, $f$ y est concave ;
+- un changement de convexité peut caractériser un point d'inflexion ;
+- dérivées des fonctions usuelles et règles de dérivation, notamment pour les compositions simples du programme.
 
 ## Méthode
 
-1. relever les informations utiles et les unités ;
-2. choisir la définition, la propriété ou le calcul adapté ;
-3. effectuer les transformations de façon progressive ;
-4. vérifier la cohérence du résultat ;
-5. rédiger une conclusion répondant précisément à la question.
+Pour étudier une fonction : déterminer son domaine, calculer $f'$, étudier son signe, dresser le tableau de variations ; si la convexité est demandée, calculer $f''$ et étudier son signe.
+
+## Exemple
+
+Pour $f(x)=x^3-3x$, $f''(x)=6x$. La fonction est concave sur $]-\infty,0[$ et convexe sur $]0,+\infty[$ ; l'origine correspond à un changement de convexité.
+
+## Vérification
+
+Le signe de $f'$ concerne les variations ; celui de $f''$ concerne la convexité. Ne pas les intervertir.
 
 ## Automatismes à maîtriser
 
-- reconnaître les écritures et représentations usuelles de la notion ;
-- effectuer les calculs élémentaires associés ;
-- passer d'une représentation à une autre lorsque c'est pertinent ;
-- contrôler un ordre de grandeur, un signe, une unité ou une position ;
-- utiliser un vocabulaire mathématique précis.
+- dériver sommes, produits, quotients et fonctions composées usuelles ;
+- résoudre une inéquation de signe pour $f'$ ou $f''$ ;
+- lire variations et convexité sur un graphique.
 
 ## Erreurs fréquentes
 
-- appliquer une formule ou une propriété sans vérifier ses conditions ;
-- omettre une unité ou une justification ;
-- confondre une valeur exacte et une valeur approchée ;
-- enchaîner plusieurs transformations sans faire apparaître les étapes intermédiaires.
-
-## Pour réviser
-
-Commencer par quelques questions d'automatismes, puis résoudre un exercice direct et enfin un problème dans lequel la méthode à employer n'est pas indiquée.
+- confondre $f$, $f'$ et $f''$ ;
+- annoncer un point d'inflexion sans changement de convexité ;
+- oublier le domaine de définition.
