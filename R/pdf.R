@@ -11,6 +11,17 @@ echapper_tex = function(x) {
   x
 }
 
+
+.logo_eduschool = function() {
+  f = system.file("figures", "logo-eduschool.png", package = "eduschool")
+  if (nzchar(f) && file.exists(f)) return(f)
+
+  f = file.path("inst", "figures", "logo-eduschool.png")
+  if (file.exists(f)) return(normalizePath(f, winslash = "/", mustWork = TRUE))
+
+  ""
+}
+
 formater_difficulte = function(x) {
   if (length(x) == 0L || is.na(x)) return("")
   paste0("Difficulté ", x)
@@ -37,10 +48,27 @@ rendre_tex_exercices = function(
     "\\usepackage{geometry}",
     "\\usepackage{enumitem}",
     "\\usepackage{amsmath,amssymb}",
+    "\\usepackage{graphicx}",
     "\\geometry{margin=2cm}",
     "\\setlength{\\parindent}{0pt}",
     "\\setlength{\\parskip}{0.45em}",
-    "\\begin{document}",
+    "\\begin{document}"
+  )
+
+  logo = .logo_eduschool()
+  if (nzchar(logo)) {
+    logo_tex = normalizePath(logo, winslash = "/", mustWork = TRUE)
+    contenu = c(
+      contenu,
+      "\\begin{center}",
+      paste0("\\includegraphics[width=3.2cm]{\\detokenize{", logo_tex, "}}"),
+      "\\end{center}",
+      "\\vspace{0.3em}"
+    )
+  }
+
+  contenu = c(
+    contenu,
     paste0("\\section*{", echapper_tex(titre), "}")
   )
 

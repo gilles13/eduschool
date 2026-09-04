@@ -26,6 +26,13 @@ niveau = niveaux[
 ]
 ```
 
+```{r logo, echo=FALSE, out.width="180px", fig.align="center"}
+logo = system.file("figures", "logo-eduschool.png", package = "eduschool")
+if (nzchar(logo) && file.exists(logo)) {
+  knitr::include_graphics(logo)
+}
+```
+
 # `r classe`
 
 **Année scolaire :** `r annee`

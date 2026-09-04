@@ -101,7 +101,8 @@ produire_diagramme_html = function(
   dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)
   graphe = .construire_diagramme(type)
   svg = .svg_diagramme(graphe)
-  .ecrire_page_svg(graphe = graphe, svg = svg, fichier = fichier)
+  logo = .copier_logo_html(dirname(fichier))
+  .ecrire_page_svg(graphe = graphe, svg = svg, fichier = fichier, logo = logo)
 
   fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
   if (isTRUE(ouvrir)) utils::browseURL(fichier)
@@ -712,8 +713,29 @@ generer_documentation_visuelle = function(
   )
 }
 
-.ecrire_page_svg = function(graphe, svg, fichier) {
+
+.copier_logo_html = function(repertoire) {
+  source = system.file("figures", "logo-eduschool.png", package = "eduschool")
+  if (!nzchar(source) || !file.exists(source)) {
+    source = file.path("inst", "figures", "logo-eduschool.png")
+  }
+  if (!file.exists(source)) return(NULL)
+
+  destination = file.path(repertoire, "logo-eduschool.png")
+  file.copy(source, destination, overwrite = TRUE)
+  if (file.exists(destination)) basename(destination) else NULL
+}
+
+.ecrire_page_svg = function(graphe, svg, fichier, logo = NULL) {
   svg = svg[!grepl("^<\\?xml", svg)]
+  logo_html = if (is.null(logo) || !nzchar(logo)) {
+    ""
+  } else {
+    paste0(
+      '<div class="identite"><img src="', .html_escape(logo),
+      '" alt="Logo eduschool"></div>'
+    )
+  }
   note_html = if (is.null(graphe$note) || !nzchar(graphe$note)) {
     ""
   } else {
@@ -731,6 +753,8 @@ generer_documentation_visuelle = function(
     "    body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; line-height: 1.5; color: #17212b; background: #fff; }",
     "    main { max-width: 1600px; margin: 0 auto; }",
     "    h1 { margin-bottom: .35rem; }",
+    "    .identite { margin-bottom: 1rem; }",
+    "    .identite img { width: 180px; height: auto; display: block; }",
     "    .description { margin-top: 0; color: #59636e; }",
     "    .note { padding: .8rem 1rem; border-left: 4px solid #59636e; background: #f7f9fb; }",
     "    .diagramme { overflow-x: auto; padding: 1rem 0; }",
@@ -739,6 +763,7 @@ generer_documentation_visuelle = function(
     "</head>",
     "<body>",
     "<main>",
+    paste0("  ", logo_html),
     paste0("  <h1>", .html_escape(graphe$titre), "</h1>"),
     paste0('  <p class="description">', .html_escape(graphe$description), "</p>"),
     paste0("  ", note_html),
