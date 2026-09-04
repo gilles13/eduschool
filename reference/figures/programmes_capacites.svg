@@ -1,56 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1590" height="520" viewBox="0 0 1590 520" role="img" aria-labelledby="title desc">
-<title id="title">Programmes, capacités et notions</title>
-<desc id="desc">Relations entre programmes, capacités, notions, rappels et exercices.</desc>
-<defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker>
-
-<style><![CDATA[
-.edge { fill:none; stroke:#59636e; stroke-width:2.2; marker-end:url(#arrow); }
-.edge-label { font:13px system-ui,sans-serif; fill:#4a5560; }
-.node rect { stroke-width:1.8; rx:12; ry:12; }
-.node text { font:15px system-ui,sans-serif; fill:#17212b; text-anchor:middle; dominant-baseline:middle; }
-.normal rect { fill:#f7f9fb; stroke:#77828d; }.source rect,.niveau rect { fill:#eef5ff; stroke:#5e7fa7; }.database rect { fill:#f2f0ff; stroke:#7667a8; }.documentation rect,.serie rect { fill:#fff6e8; stroke:#a77b3f; }.accent rect,.voie rect { fill:#eaf8f0; stroke:#4f8b68; }.sortie rect { fill:#f4f7ea; stroke:#788d49; }
-.group rect { stroke-width:1.5; stroke-dasharray:7 5; rx:18; ry:18; }.group-title { font:600 15px system-ui,sans-serif; fill:#34404b; }.cycle3 rect { fill:#f5f9ff; stroke:#91a9c5; }.cycle4 rect { fill:#f4faf6; stroke:#88aa94; }.cycle_terminal rect { fill:#fffaf0; stroke:#b89a68; }
-]]></style>
-</defs>
-<rect x="0" y="0" width="100%" height="100%" fill="white"/>
-<path class="edge" d="M 230 256 L 260 256 L 260 256 L 290 256"/>
-<path class="edge" d="M 500 256 L 520 256 L 520 256 L 540 256"/>
-<path class="edge" d="M 730 256 L 765 256 L 765 256 L 800 256"/>
-<path class="edge" d="M 990 256 L 1025 256 L 1025 136 L 1060 136"/>
-<path class="edge" d="M 895 292 L 895 321 L 895 321 L 895 350"/>
-<path class="edge" d="M 1280 136 L 1300 136 L 1300 256 L 1320 256"/>
-<path class="edge" d="M 895 350 L 895 321 L 895 321 L 895 292"/>
-<text class="edge-label" x="895" y="315" text-anchor="middle">structure</text>
-<g class="node source" id="PROG">
-<rect x="40" y="220" width="190" height="72" rx="14" ry="14"/>
-<text x="135" y="256">Programmes</text>
-</g>
-<g class="node normal" id="ITEM">
-<rect x="290" y="220" width="210" height="72" rx="14" ry="14"/>
-<text x="395" y="246.5">Éléments de</text>
-<text x="395" y="265.5">programme</text>
-</g>
-<g class="node accent" id="CAP">
-<rect x="540" y="220" width="190" height="72" rx="14" ry="14"/>
-<text x="635" y="256">Capacités</text>
-</g>
-<g class="node normal" id="NOT">
-<rect x="800" y="220" width="190" height="72" rx="14" ry="14"/>
-<text x="895" y="256">Notions</text>
-</g>
-<g class="node documentation" id="RAP">
-<rect x="1060" y="100" width="220" height="72" rx="14" ry="14"/>
-<text x="1170" y="136">Rappels Markdown</text>
-</g>
-<g class="node normal" id="PRE">
-<rect x="800" y="350" width="190" height="72" rx="14" ry="14"/>
-<text x="895" y="386">Prérequis</text>
-</g>
-<g class="node sortie" id="EXO">
-<rect x="1320" y="220" width="220" height="72" rx="14" ry="14"/>
-<text x="1430" y="246.5">Modèles</text>
-<text x="1430" y="265.5">d’exercices</text>
-</g>
+  <title id="title">Programmes, capacités et notions</title>
+  <desc id="desc">Relations entre programmes, capacités, notions, rappels et exercices.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/>
+    </marker>
+    <style><![CDATA[
+      .edge { fill: none; stroke: #59636e; stroke-width: 2.2; marker-end: url(#arrow); }
+      .edge-label { font: 13px system-ui, sans-serif; fill: #4a5560; }
+      .node rect { stroke-width: 1.8; }
+      .node text { font: 15px system-ui, sans-serif; fill: #17212b; text-anchor: middle; dominant-baseline: middle; }
+      .normal rect { fill: #f7f9fb; stroke: #77828d; }
+      .source rect { fill: #eef5ff; stroke: #5e7fa7; }
+      .database rect { fill: #f2f0ff; stroke: #7667a8; }
+      .documentation rect { fill: #fff6e8; stroke: #a77b3f; }
+      .accent rect { fill: #eaf8f0; stroke: #4f8b68; }
+      .sortie rect { fill: #f4f7ea; stroke: #788d49; }
+      .niveau rect { fill: #eef5ff; stroke: #5e7fa7; }
+      .voie rect { fill: #eaf8f0; stroke: #4f8b68; }
+      .serie rect { fill: #fff6e8; stroke: #a77b3f; }
+      .group rect { stroke-width: 1.5; stroke-dasharray: 7 5; rx: 18; ry: 18; }
+      .group-title { font: 600 15px system-ui, sans-serif; fill: #34404b; }
+      .cycle3 rect { fill: #f5f9ff; stroke: #91a9c5; }
+      .cycle4 rect { fill: #f4faf6; stroke: #88aa94; }
+      .cycle_terminal rect { fill: #fffaf0; stroke: #b89a68; }
+    ]]></style>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+  <path class="edge" d="M 230 256 L 260 256 L 260 256 L 290 256"/>
+  <path class="edge" d="M 500 256 L 520 256 L 520 256 L 540 256"/>
+  <path class="edge" d="M 730 256 L 765 256 L 765 256 L 800 256"/>
+  <path class="edge" d="M 990 256 L 1025 256 L 1025 136 L 1060 136"/>
+  <path class="edge" d="M 895 292 L 895 321 L 895 321 L 895 350"/>
+  <path class="edge" d="M 1280 136 L 1300 136 L 1300 256 L 1320 256"/>
+  <path class="edge" d="M 895 350 L 895 321 L 895 321 L 895 292"/>
+  <text class="edge-label" x="895" y="315" text-anchor="middle">structure</text>
+  <g class="node source" id="PROG">
+    <rect x="40" y="220" width="190" height="72" rx="18" ry="18"/>
+    <text x="135" y="256">Programmes</text>
+  </g>
+  <g class="node normal" id="ITEM">
+    <rect x="290" y="220" width="210" height="72" rx="18" ry="18"/>
+    <text x="395" y="246.5">Éléments de</text>
+    <text x="395" y="265.5">programme</text>
+  </g>
+  <g class="node accent" id="CAP">
+    <rect x="540" y="220" width="190" height="72" rx="18" ry="18"/>
+    <text x="635" y="256">Capacités</text>
+  </g>
+  <g class="node normal" id="NOT">
+    <rect x="800" y="220" width="190" height="72" rx="18" ry="18"/>
+    <text x="895" y="256">Notions</text>
+  </g>
+  <g class="node documentation" id="RAP">
+    <rect x="1060" y="100" width="220" height="72" rx="18" ry="18"/>
+    <text x="1170" y="136">Rappels Markdown</text>
+  </g>
+  <g class="node normal" id="PRE">
+    <rect x="800" y="350" width="190" height="72" rx="18" ry="18"/>
+    <text x="895" y="386">Prérequis</text>
+  </g>
+  <g class="node sortie" id="EXO">
+    <rect x="1320" y="220" width="220" height="72" rx="18" ry="18"/>
+    <text x="1430" y="246.5">Modèles</text>
+    <text x="1430" y="265.5">d&apos;exercices</text>
+  </g>
 </svg>

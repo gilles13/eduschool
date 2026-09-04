@@ -1,5 +1,7 @@
 # eduschool
 
+![Logo eduschool](reference/figures/logo.png)
+
 `eduschool` est un package R en cours de développement pour consulter
 des référentiels scolaires français, relier programmes, capacités et
 notions pédagogiques, produire des exercices de révision reproductibles

@@ -1,61 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1540" height="540" viewBox="0 0 1540 540" role="img" aria-labelledby="title desc">
-<title id="title">Prise en main de eduschool</title>
-<desc id="desc">Chemin court entre les référentiels, la consultation, les rappels, les exercices et DuckDB.</desc>
-<defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker>
-
-<style><![CDATA[
-.edge { fill:none; stroke:#59636e; stroke-width:2.2; marker-end:url(#arrow); }
-.edge-label { font:13px system-ui,sans-serif; fill:#4a5560; }
-.node rect { stroke-width:1.8; rx:12; ry:12; }
-.node text { font:15px system-ui,sans-serif; fill:#17212b; text-anchor:middle; dominant-baseline:middle; }
-.normal rect { fill:#f7f9fb; stroke:#77828d; }.source rect,.niveau rect { fill:#eef5ff; stroke:#5e7fa7; }.database rect { fill:#f2f0ff; stroke:#7667a8; }.documentation rect,.serie rect { fill:#fff6e8; stroke:#a77b3f; }.accent rect,.voie rect { fill:#eaf8f0; stroke:#4f8b68; }.sortie rect { fill:#f4f7ea; stroke:#788d49; }
-.group rect { stroke-width:1.5; stroke-dasharray:7 5; rx:18; ry:18; }.group-title { font:600 15px system-ui,sans-serif; fill:#34404b; }.cycle3 rect { fill:#f5f9ff; stroke:#91a9c5; }.cycle4 rect { fill:#f4faf6; stroke:#88aa94; }.cycle_terminal rect { fill:#fffaf0; stroke:#b89a68; }
-]]></style>
-</defs>
-<rect x="0" y="0" width="100%" height="100%" fill="white"/>
-<path class="edge" d="M 260 266 L 280 266 L 280 266 L 300 266"/>
-<path class="edge" d="M 500 266 L 550 266 L 550 126 L 600 126"/>
-<path class="edge" d="M 500 266 L 550 266 L 550 266 L 600 266"/>
-<path class="edge" d="M 500 266 L 700 266 L 700 266 L 900 266"/>
-<path class="edge" d="M 500 266 L 550 266 L 550 406 L 600 406"/>
-<path class="edge" d="M 820 126 L 1020 126 L 1020 266 L 1220 266"/>
-<path class="edge" d="M 820 266 L 1020 266 L 1020 266 L 1220 266"/>
-<path class="edge" d="M 1120 266 L 1170 266 L 1170 266 L 1220 266"/>
-<path class="edge" d="M 810 406 L 1015 406 L 1015 266 L 1220 266"/>
-<g class="node accent" id="PKG">
-<rect x="40" y="230" width="220" height="72" rx="14" ry="14"/>
-<text x="150" y="266">library(eduschool)</text>
-</g>
-<g class="node source" id="REF">
-<rect x="300" y="230" width="200" height="72" rx="14" ry="14"/>
-<text x="400" y="256.5">Référentiels</text>
-<text x="400" y="275.5">CSV</text>
-</g>
-<g class="node normal" id="CONS">
-<rect x="600" y="90" width="220" height="72" rx="14" ry="14"/>
-<text x="710" y="116.5">Consultation</text>
-<text x="710" y="135.5">des programmes</text>
-</g>
-<g class="node normal" id="DOC">
-<rect x="600" y="230" width="220" height="72" rx="14" ry="14"/>
-<text x="710" y="256.5">Rappels et</text>
-<text x="710" y="275.5">notions</text>
-</g>
-<g class="node normal" id="EXO">
-<rect x="900" y="230" width="220" height="72" rx="14" ry="14"/>
-<text x="1010" y="256.5">Exercices</text>
-<text x="1010" y="275.5">déterministes</text>
-</g>
-<g class="node database" id="DB">
-<rect x="600" y="370" width="210" height="72" rx="14" ry="14"/>
-<text x="705" y="396.5">DuckDB</text>
-<text x="705" y="415.5">si nécessaire</text>
-</g>
-<g class="node sortie" id="SORTIE">
-<rect x="1220" y="230" width="250" height="72" rx="14" ry="14"/>
-<text x="1345" y="256.5">Fiches, rapports</text>
-<text x="1345" y="275.5">et analyses</text>
-</g>
+  <title id="title">Prise en main de eduschool</title>
+  <desc id="desc">Chemin court entre les référentiels, la consultation, les rappels, les exercices et DuckDB.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/>
+    </marker>
+    <style><![CDATA[
+      .edge { fill: none; stroke: #59636e; stroke-width: 2.2; marker-end: url(#arrow); }
+      .edge-label { font: 13px system-ui, sans-serif; fill: #4a5560; }
+      .node rect { stroke-width: 1.8; }
+      .node text { font: 15px system-ui, sans-serif; fill: #17212b; text-anchor: middle; dominant-baseline: middle; }
+      .normal rect { fill: #f7f9fb; stroke: #77828d; }
+      .source rect { fill: #eef5ff; stroke: #5e7fa7; }
+      .database rect { fill: #f2f0ff; stroke: #7667a8; }
+      .documentation rect { fill: #fff6e8; stroke: #a77b3f; }
+      .accent rect { fill: #eaf8f0; stroke: #4f8b68; }
+      .sortie rect { fill: #f4f7ea; stroke: #788d49; }
+      .niveau rect { fill: #eef5ff; stroke: #5e7fa7; }
+      .voie rect { fill: #eaf8f0; stroke: #4f8b68; }
+      .serie rect { fill: #fff6e8; stroke: #a77b3f; }
+      .group rect { stroke-width: 1.5; stroke-dasharray: 7 5; rx: 18; ry: 18; }
+      .group-title { font: 600 15px system-ui, sans-serif; fill: #34404b; }
+      .cycle3 rect { fill: #f5f9ff; stroke: #91a9c5; }
+      .cycle4 rect { fill: #f4faf6; stroke: #88aa94; }
+      .cycle_terminal rect { fill: #fffaf0; stroke: #b89a68; }
+    ]]></style>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+  <path class="edge" d="M 260 266 L 280 266 L 280 266 L 300 266"/>
+  <path class="edge" d="M 500 266 L 550 266 L 550 126 L 600 126"/>
+  <path class="edge" d="M 500 266 L 550 266 L 550 266 L 600 266"/>
+  <path class="edge" d="M 500 266 L 700 266 L 700 266 L 900 266"/>
+  <path class="edge" d="M 500 266 L 550 266 L 550 406 L 600 406"/>
+  <path class="edge" d="M 820 126 L 1020 126 L 1020 266 L 1220 266"/>
+  <path class="edge" d="M 820 266 L 1020 266 L 1020 266 L 1220 266"/>
+  <path class="edge" d="M 1120 266 L 1170 266 L 1170 266 L 1220 266"/>
+  <path class="edge" d="M 810 406 L 1015 406 L 1015 266 L 1220 266"/>
+  <g class="node accent" id="PKG">
+    <rect x="40" y="230" width="220" height="72" rx="18" ry="18"/>
+    <text x="150" y="266">library(eduschool)</text>
+  </g>
+  <g class="node source" id="REF">
+    <rect x="300" y="230" width="200" height="72" rx="18" ry="18"/>
+    <text x="400" y="256.5">Référentiels</text>
+    <text x="400" y="275.5">CSV</text>
+  </g>
+  <g class="node normal" id="CONS">
+    <rect x="600" y="90" width="220" height="72" rx="18" ry="18"/>
+    <text x="710" y="116.5">Consultation</text>
+    <text x="710" y="135.5">des programmes</text>
+  </g>
+  <g class="node normal" id="DOC">
+    <rect x="600" y="230" width="220" height="72" rx="18" ry="18"/>
+    <text x="710" y="256.5">Rappels et</text>
+    <text x="710" y="275.5">notions</text>
+  </g>
+  <g class="node normal" id="EXO">
+    <rect x="900" y="230" width="220" height="72" rx="18" ry="18"/>
+    <text x="1010" y="256.5">Exercices</text>
+    <text x="1010" y="275.5">déterministes</text>
+  </g>
+  <g class="node database" id="DB">
+    <rect x="600" y="370" width="210" height="72" rx="18" ry="18"/>
+    <text x="705" y="396.5">DuckDB</text>
+    <text x="705" y="415.5">si nécessaire</text>
+  </g>
+  <g class="node sortie" id="SORTIE">
+    <rect x="1220" y="230" width="250" height="72" rx="18" ry="18"/>
+    <text x="1345" y="256.5">Fiches, rapports</text>
+    <text x="1345" y="275.5">et analyses</text>
+  </g>
 </svg>
