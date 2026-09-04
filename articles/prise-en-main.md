@@ -24,8 +24,18 @@ chercher_notions("fraction")
 
 notions_capacite("ITM_MAT_C3_6E_C09")
 cat(obtenir_rappel("MAT_FRACTION_ADD"))
-fiche = generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 5, seed = 2026)
 ```
+
+Une fiche HTML ou PDF peut ensuite être produite directement :
+
+``` r
+
+generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 5, seed = 2026) |>
+  produire_fiche("fiche_6e", format = "auto")
+```
+
+Le PDF est choisi si LaTeX est disponible ; sinon la sortie est
+automatiquement produite en HTML.
 
 ### DuckDB seulement si nécessaire
 

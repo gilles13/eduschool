@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.7</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.8</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,13 +80,22 @@
 <span>  seed <span class="op">=</span> <span class="fl">2026</span>,</span>
 <span>  afficher <span class="op">=</span> <span class="cn">TRUE</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<p>L’affectation à un objet n’est utile que si l’on souhaite réutiliser ensuite les exercices, par exemple pour produire une fiche ou un corrigé.</p>
+<p>Pour créer directement une fiche imprimable, la sortie peut être envoyée dans <code><a href="reference/produire_fiche.html">produire_fiche()</a></code> avec le pipe natif :</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
+<span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
+<span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
+<span>  n <span class="op">=</span> <span class="fl">5</span>,</span>
+<span>  seed <span class="op">=</span> <span class="fl">2026</span></span>
+<span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span><span class="st">"fiche_6e"</span>, format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
+<p>Avec <code>format = "auto"</code>, <code>eduschool</code> produit un PDF si LaTeX est disponible et un fichier HTML sinon. On peut aussi imposer <code>format = "html"</code> ou <code>format = "pdf"</code>. Le même principe s’applique au corrigé avec <code><a href="reference/produire_corrige.html">produire_corrige()</a></code>.</p>
 </div>
 <div class="section level2">
 <h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
 </h2>
 <p>La vignette <strong>Explorer une classe de 6e avec eduschool</strong> constitue le point de départ conseillé. Les autres vignettes détaillent les programmes, la documentation pédagogique, les exercices et l’architecture des données.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/browseVignettes.html" class="external-link">browseVignettes</a></span><span class="op">(</span><span class="st">"eduschool"</span><span class="op">)</span></span></code></pre></div>
 <p>La documentation complète est également publiée sur le site pkgdown du package.</p>
 </div>

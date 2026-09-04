@@ -52,10 +52,14 @@
   : Prérequis d'une notion
 - [`print(`*`<eduschool_context>`*`)`](https://gilles13.github.io/eduschool/reference/print.eduschool_context.md)
   : Afficher un contexte eduschool
+- [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
+  : Produire le corrige d'une fiche HTML ou PDF
 - [`produire_diagramme_html()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_html.md)
   : Produire un diagramme HTML
 - [`produire_diagramme_svg()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_svg.md)
   : Produire un diagramme SVG
+- [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+  : Produire une fiche d'exercices HTML ou PDF
 - [`programmes()`](https://gilles13.github.io/eduschool/reference/programmes.md)
   : Programmes
 - [`rappels_capacite()`](https://gilles13.github.io/eduschool/reference/rappels_capacite.md)

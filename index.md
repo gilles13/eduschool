@@ -51,9 +51,27 @@ generer_fiche(
 )
 ```
 
-L’affectation à un objet n’est utile que si l’on souhaite réutiliser
-ensuite les exercices, par exemple pour produire une fiche ou un
-corrigé.
+Pour créer directement une fiche imprimable, la sortie peut être envoyée
+dans
+[`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+avec le pipe natif :
+
+``` r
+
+generer_fiche(
+  niveau_id = "6E",
+  capacite_id = "ITM_MAT_C3_6E_C09",
+  n = 5,
+  seed = 2026
+) |>
+  produire_fiche("fiche_6e", format = "auto")
+```
+
+Avec `format = "auto"`, `eduschool` produit un PDF si LaTeX est
+disponible et un fichier HTML sinon. On peut aussi imposer
+`format = "html"` ou `format = "pdf"`. Le même principe s’applique au
+corrigé avec
+[`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md).
 
 ## Documentation
 

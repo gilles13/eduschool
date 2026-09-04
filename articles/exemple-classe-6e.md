@@ -160,9 +160,27 @@ generer_fiche(
 #> Calculer et simplifier : 3/6 + 1/6
 ```
 
-Si l’on souhaite ensuite réutiliser les exercices pour produire un
-document ou un corrigé, on peut bien sûr conserver le résultat dans un
-objet.
+Pour obtenir directement une fiche imprimable, on peut envoyer la même
+génération dans
+[`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+:
+
+``` r
+
+generer_fiche(
+  niveau_id = "6E",
+  capacite_id = "ITM_MAT_C3_6E_C09",
+  n = 5,
+  seed = 2026
+) |>
+  produire_fiche("fiche_6e", format = "auto")
+```
+
+Le format `"auto"` choisit le PDF lorsque LaTeX est disponible et le
+HTML sinon. Pour garantir une sortie sans dépendance LaTeX, utiliser
+explicitement `format = "html"`. Un corrigé se produit de la même
+manière avec
+[`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md).
 
 ## Et ensuite ?
 

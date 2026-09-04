@@ -1,5 +1,22 @@
 # Changelog
 
+## eduschool 0.10.8
+
+### Fiches HTML et PDF
+
+- ajout de
+  [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+  et
+  [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
+  pour envoyer directement la sortie de
+  [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
+  vers un document ;
+- ajout d’un template R Markdown commun aux sorties HTML et PDF ;
+- ajout de `format = "auto"` : PDF lorsque LaTeX est disponible, HTML
+  sinon ;
+- mise a jour du README et des vignettes pour presenter le nouveau flux
+  avec le pipe natif `|>`.
+
 ## eduschool 0.10.7
 
 ### Premiers pas
