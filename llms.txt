@@ -2,54 +2,38 @@
 
 `eduschool` est un package R en cours de développement pour consulter
 des référentiels scolaires français, relier programmes, capacités et
-notions pédagogiques, et produire des exercices de révision
-reproductibles.
+notions pédagogiques, produire des exercices de révision reproductibles
+et visualiser l’organisation des parcours et des données.
 
-## V0.10.0 : première version package
+## Installation depuis RStudio
 
-Cette version marque le passage de l’ancien projet à une architecture de
-package. Les ressources CSV et Markdown sont désormais installées sous
-`inst/`; le code public est regroupé directement dans `R/`; les objets
-globaux `tables`, `con`, `project_dir` et `data_dir` ne sont plus
-nécessaires pour les consultations usuelles.
+Le plus simple est d’installer `eduschool` directement depuis GitHub.
 
-## Développement
-
-Depuis la racine du dépôt :
+Dans la console RStudio, installer d’abord `remotes` si nécessaire :
 
 ``` r
 
-devtools::load_all()
+install.packages("remotes")
 ```
 
-Puis :
+Puis installer `eduschool` :
 
 ``` r
 
-niveaux()
-capacites("6E")
-chercher_notions("fraction")
-```
-
-Sans `devtools`, le fichier de compatibilité suivant reste utilisable
-dans l’arbre source :
-
-``` r
-
-source("launcher.R")
-```
-
-## Installation locale
-
-Une fois le dépôt récupéré :
-
-``` r
-
-install.packages(".", repos = NULL, type = "source")
+remotes::install_github("gilles13/eduschool")
 library(eduschool)
 ```
 
-En développement, `devtools::install()` est plus confortable.
+`remotes` ne doit être installé qu’une seule fois. Pour mettre ensuite
+`eduschool` à jour, il suffit de relancer :
+
+``` r
+
+remotes::install_github("gilles13/eduschool")
+```
+
+Il n’est donc pas nécessaire de télécharger manuellement le dépôt GitHub
+ni de manipuler un fichier ZIP.
 
 ## Premier usage
 
@@ -79,11 +63,49 @@ fiche = generer_fiche(
 )
 ```
 
+## Ce que permet le package
+
+`eduschool` rassemble plusieurs briques complémentaires :
+
+- des référentiels structurés sur les niveaux, disciplines, programmes
+  et capacités ;
+- des fiches pédagogiques reliées aux notions ;
+- des modèles permettant de générer des exercices et des fiches de
+  révision ;
+- une couche relationnelle optionnelle avec DuckDB pour les
+  consultations plus complexes ;
+- des diagrammes HTML et SVG pour représenter les parcours scolaires et
+  l’architecture du système ;
+- des vignettes et un site pkgdown pour documenter l’utilisation du
+  package.
+
+## Documentation
+
+Pour découvrir le package, commencer par la vignette `prise-en-main`.
+
+Les autres vignettes présentent notamment les parcours scolaires, les
+programmes et capacités, la documentation pédagogique, la génération
+d’exercices, l’architecture des données et le fonctionnement interne du
+package.
+
+Depuis RStudio, les vignettes installées peuvent être consultées avec :
+
+``` r
+
+browseVignettes("eduschool")
+```
+
+Le site pkgdown constitue également la documentation utilisateur publiée
+du package.
+
+Le dossier `documentation/` contient les documents techniques destinés
+au développement et à la maintenance du projet.
+
 ## DuckDB
 
-DuckDB est un moteur relationnel disponible lorsque les requêtes
-deviennent plus complexes, mais il n’est pas nécessaire pour simplement
-consulter les référentiels ou les rappels :
+DuckDB est disponible lorsque les requêtes deviennent plus complexes,
+mais il n’est pas nécessaire pour consulter les référentiels, les
+rappels ou générer des exercices :
 
 ``` r
 
@@ -94,18 +116,38 @@ DBI::dbDisconnect(con)
 
 Aucun argument `shared_home` n’est utilisé.
 
-## Documentation
+## Développement
 
-Commencer par `vignettes/prise-en-main.Rmd`. Les guides détaillent
-ensuite les programmes/capacités, la documentation pédagogique, les
-exercices et l’architecture des données. Le dossier `docs/` contient la
-documentation destinée au mainteneur.
+Pour travailler directement sur les sources du package depuis RStudio :
+
+``` r
+
+devtools::load_all()
+devtools::test()
+```
+
+Le fichier `launcher.R` reste disponible comme point d’entrée pratique
+dans l’arbre source :
+
+``` r
+
+source("launcher.R")
+```
+
+La documentation du site peut être reconstruite avec :
+
+``` r
+
+pkgdown::build_site()
+```
 
 ## Versionnement
 
-Le dépôt source doit maintenant devenir la référence. Les ZIP ne sont
-plus conçus comme un mode de développement : ils ne servent qu’à
-transmettre ponctuellement un instantané. Voir
+Le dépôt Git est la référence du projet. Les ZIP ne constituent plus le
+mode normal de développement et servent uniquement à transmettre
+ponctuellement un instantané.
+
+Les conventions utilisées pour le versionnement sont décrites dans
 `documentation/versionnement-git.md`.
 
 # Package index
