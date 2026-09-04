@@ -11,3 +11,4 @@
 /*.tar.gz
 .DS_Store
 docs
+pkgdown/
