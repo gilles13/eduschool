@@ -102,12 +102,6 @@ devtools::load_all()
 devtools::test()
 ```
 
-Le fichier `launcher.R` reste disponible comme point d'entrée pratique dans l'arbre source :
-
-```r
-source("launcher.R")
-```
-
 La documentation du site peut être reconstruite avec :
 
 ```r
