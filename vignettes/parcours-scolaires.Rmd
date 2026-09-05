@@ -11,14 +11,43 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-Cette vignette présente les parcours scolaires actuellement modélisés dans `eduschool`. Le schéma est construit à partir des référentiels du package et sera enrichi à mesure que les voies, séries et orientations seront détaillées.
+Cette vignette présente les parcours scolaires actuellement modélisés dans
+`eduschool`. La représentation est une vue des référentiels du package, et non
+une source réglementaire indépendante.
 
 ![Parcours scolaires modélisés dans eduschool](../man/figures/parcours_scolaire.svg)
 
-Le diagramme HTML interactif correspondant peut être produit avec :
+## Voies et séries modélisées
+
+```{r}
+library(eduschool)
+voies() |>
+  knitr::kable(row.names = FALSE)
+```
+
+```{r}
+series() |>
+  knitr::kable(row.names = FALSE)
+```
+
+Après la seconde générale et technologique, l'orientation se fait vers la voie
+générale ou vers une série de la voie technologique. La réglementation nationale
+compte actuellement huit séries technologiques. Le référentiel `eduschool` en
+modélise sept : ST2S, STL, STD2A, STI2D, STMG, STHR et S2TMD. **STAV**, relevant
+de l'enseignement agricole, n'est pas encore intégré au périmètre de données du
+package.
+
+La vignette **Explorer une classe de 2de générale et technologique** détaille
+cette bifurcation et les enseignements de spécialité de la voie générale.
+
+## Produire le diagramme
+
+Le diagramme HTML correspondant peut être produit avec :
 
 ```{r, eval=FALSE}
 diagramme_parcours_scolaire(ouvrir = TRUE)
 ```
 
-La représentation graphique n'est pas une source de vérité indépendante : elle est une vue des données relationnelles du package.
+Pour une vérification réglementaire actualisée, se reporter aux pages du ministère
+de l'Éducation nationale consacrées à l'orientation en seconde et à la voie
+technologique.

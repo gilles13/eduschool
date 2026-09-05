@@ -34,6 +34,14 @@ Se concentrer sur une matière :
 genere_resume("6E", matiere = "maths")
 ```
 
+La même interface permet d'explorer le lycée, par exemple la seconde générale
+et technologique :
+
+```r
+genere_resume("2GT")
+genere_resume("2GT", matiere = "maths")
+```
+
 Générer immédiatement quelques exercices et afficher leurs énoncés :
 
 ```r
@@ -57,19 +65,25 @@ generer_fiche(
   n = 5,
   seed = 2026
 ) |>
-  produire_fiche("fiche_6e", format = "auto")
+  produire_fiche(format = "auto")
 ```
 
-Avec `format = "auto"`, `eduschool` produit un PDF si LaTeX est disponible et
-un fichier HTML sinon. On peut aussi imposer `format = "html"` ou
-`format = "pdf"`. Le même principe s'applique au corrigé avec
+Le nom du fichier est construit automatiquement à partir du niveau et de la
+capacité. Il reste possible de fournir un chemin explicite avec l'argument
+`fichier`. Avec `format = "auto"`, `eduschool` produit un PDF si LaTeX est
+disponible et un fichier HTML sinon. Le même principe s'applique au corrigé avec
 `produire_corrige()`.
 
 ## Documentation
 
-La vignette **Explorer une classe de 6e avec eduschool** constitue le point de
-départ conseillé. Les autres vignettes détaillent les programmes, la
-documentation pédagogique, les exercices et l'architecture des données.
+Pour découvrir le package, commencer par la vignette **Explorer une classe de
+6e avec eduschool**. La vignette **Explorer une classe de 2de générale et
+technologique** donne ensuite un exemple lycée plus complet, notamment sur les
+mathématiques et l'orientation après la seconde.
+
+Les autres vignettes conservent chacune un rôle précis : prise en main, parcours
+scolaires, programmes et capacités, documentation pédagogique, exercices,
+architecture des données et développement.
 
 ```r
 browseVignettes("eduschool")

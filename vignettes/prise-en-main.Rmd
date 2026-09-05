@@ -15,33 +15,47 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 
 # Objectif
 
-Cette vignette présente le chemin le plus court pour utiliser le package.
+Cette vignette présente le chemin le plus court pour utiliser le package. Les
+articles consacrés à la 6e et à la 2de montrent ensuite des usages plus complets.
 
 ```{r, eval=FALSE}
 library(eduschool)
 niveaux()
-capacites("6E")
-chercher_notions("fraction")
+genere_resume("6E")
+genere_resume("2GT", matiere = "maths")
 ```
 
-## Une fiche de révision
+## Passer du programme à une notion
 
 ```{r, eval=FALSE}
+capacites("6E", discipline_id = "MAT", version_id = "2026_2027")
 notions_capacite("ITM_MAT_C3_6E_C09")
 cat(obtenir_rappel("MAT_FRACTION_ADD"))
 ```
 
-Une fiche HTML ou PDF peut ensuite être produite directement :
+Les fonctions `themes_niveau()`, `notions_niveau()` et `resume_niveau()` donnent
+accès aux tables plus détaillées lorsque la synthèse de `genere_resume()` ne
+suffit plus.
+
+## Produire une fiche de révision
 
 ```{r, eval=FALSE}
 generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 5, seed = 2026) |>
-  produire_fiche("fiche_6e", format = "auto")
+  produire_fiche(format = "auto")
 ```
 
-Le PDF est choisi si LaTeX est disponible ; sinon la sortie est automatiquement
-produite en HTML.
+Le nom de sortie est automatique. `format = "auto"` choisit un PDF lorsque
+LaTeX est disponible et un HTML sinon. Un nom explicite reste possible :
+
+```{r, eval=FALSE}
+generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 5, seed = 2026) |>
+  produire_fiche(fichier = "ma_fiche", format = "html")
+```
 
 ## DuckDB seulement si nécessaire
+
+Les consultations usuelles lisent directement les ressources du package. La
+couche DuckDB reste disponible pour les requêtes relationnelles plus libres.
 
 ```{r, eval=FALSE}
 con = ouvrir_base()

@@ -6,7 +6,7 @@
 \usage{
 produire_fiche(
   exercices,
-  fichier = "fiche_exercices",
+  fichier = NULL,
   format = c("auto", "html", "pdf"),
   titre = "Fiche d'exercices",
   sous_titre = NULL,
@@ -19,7 +19,8 @@ produire_fiche(
 \arguments{
 \item{exercices}{Liste d'exercices produite par [generer_fiche()].}
 
-\item{fichier}{Chemin de sortie, avec ou sans extension.}
+\item{fichier}{Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
+construit automatiquement a partir du niveau et de la capacite.}
 
 \item{format}{Format de sortie : `"auto"`, `"html"` ou `"pdf"`.}
 

@@ -1,5 +1,4 @@
 ---
-title: ""
 params:
   exercices: !r list()
   titre: "Fiche d'exercices"
@@ -15,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE, results = "asis")
 exercices = params$exercices
 ```
 
-```{r logo, out.width="30%", fig.align="center"}
+```{r logo, out.width="12%", fig.align="left"}
 if (nzchar(params$logo) && file.exists(params$logo)) {
   knitr::include_graphics(params$logo)
 }

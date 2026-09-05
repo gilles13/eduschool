@@ -328,6 +328,33 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
   paste(morceaux, collapse = " \u2014 ")
 }
 
+.nom_fichier_document = function(exercices, prefixe) {
+  niveaux = unique(vapply(exercices, function(x) {
+    y = x$niveau_id
+    if (is.null(y) || !length(y) || is.na(y)) "" else as.character(y)
+  }, character(1)))
+  niveaux = niveaux[nzchar(niveaux)]
+
+  capacites = unique(vapply(exercices, function(x) {
+    y = x$capacite_id
+    if (is.null(y) || !length(y) || is.na(y)) "" else as.character(y)
+  }, character(1)))
+  capacites = capacites[nzchar(capacites)]
+
+  niveau = if (length(niveaux) == 1L) {
+    normaliser_nom_fichier(tolower(niveaux[[1]]))
+  } else {
+    "multi"
+  }
+  capacite = if (length(capacites) == 1L) {
+    normaliser_nom_fichier(tolower(capacites[[1]]))
+  } else {
+    "mixte"
+  }
+
+  paste(prefixe, niveau, capacite, sep = "_")
+}
+
 .template_fiche_exercices = function() {
   f = system.file("templates", "fiche_exercices.Rmd", package = "eduschool")
   if (nzchar(f) && file.exists(f)) return(f)
@@ -378,7 +405,10 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
   output_format = if (identical(format, "pdf")) {
     rmarkdown::pdf_document()
   } else {
-    rmarkdown::html_document(self_contained = TRUE)
+    rmarkdown::html_document(
+      self_contained = TRUE,
+      pandoc_args = c("--metadata", paste0("pagetitle=", titre))
+    )
   }
 
   rmarkdown::render(
@@ -411,7 +441,8 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' sinon.
 #'
 #' @param exercices Liste d'exercices produite par [generer_fiche()].
-#' @param fichier Chemin de sortie, avec ou sans extension.
+#' @param fichier Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
+#'   construit automatiquement a partir du niveau et de la capacite.
 #' @param format Format de sortie : `"auto"`, `"html"` ou `"pdf"`.
 #' @param titre Titre du document.
 #' @param sous_titre Sous-titre. Si `NULL`, il est deduit des exercices.
@@ -422,7 +453,7 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' @export
 produire_fiche = function(
   exercices,
-  fichier = "fiche_exercices",
+  fichier = NULL,
   format = c("auto", "html", "pdf"),
   titre = "Fiche d'exercices",
   sous_titre = NULL,
@@ -431,6 +462,7 @@ produire_fiche = function(
   ouvrir = FALSE
 ) {
   .verifier_exercices(exercices)
+  if (is.null(fichier)) fichier = .nom_fichier_document(exercices, "fiche")
   if (is.null(sous_titre)) sous_titre = .sous_titre_exercices(exercices)
   .rendre_fiche_rmd(
     exercices = exercices,
@@ -456,7 +488,7 @@ produire_fiche = function(
 #' @export
 produire_corrige = function(
   exercices,
-  fichier = "corrige_exercices",
+  fichier = NULL,
   format = c("auto", "html", "pdf"),
   titre = "Corrige des exercices",
   sous_titre = NULL,
@@ -465,6 +497,7 @@ produire_corrige = function(
   ouvrir = FALSE
 ) {
   .verifier_exercices(exercices)
+  if (is.null(fichier)) fichier = .nom_fichier_document(exercices, "corrige")
   if (is.null(sous_titre)) sous_titre = .sous_titre_exercices(exercices)
   .rendre_fiche_rmd(
     exercices = exercices,

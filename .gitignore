@@ -14,3 +14,12 @@ docs
 pkgdown/
 /doc/
 /Meta/
+# Fiches et corriges generes a la racine
+/fiche_*.html
+/fiche_*.pdf
+/corrige_*.html
+/corrige_*.pdf
+/fiche_exercices.html
+/fiche_exercices.pdf
+/corrige_exercices.html
+/corrige_exercices.pdf

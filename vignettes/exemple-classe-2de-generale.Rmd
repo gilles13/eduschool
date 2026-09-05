@@ -1,0 +1,179 @@
+---
+title: "Explorer une classe de 2de générale et technologique"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Explorer une classe de 2de générale et technologique}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+Cette vignette utilise la **seconde générale et technologique** (`2GT`) comme
+étude de cas lycée. L'objectif n'est pas de reproduire les textes officiels, mais
+de montrer comment `eduschool` relie horaires, programmes, notions documentées
+et choix d'orientation.
+
+```{r}
+library(eduschool)
+```
+
+## Carte d'identité de la 2de
+
+La seconde générale et technologique est une classe de détermination. Dans le
+package, `genere_resume()` donne une vue compacte des enseignements communs, des
+horaires et des principaux contenus :
+
+```{r}
+genere_resume("2GT") |>
+  knitr::kable(row.names = FALSE)
+```
+
+Pour obtenir les horaires sous leur forme relationnelle :
+
+```{r}
+h = horaires_niveau("2GT")
+h[, c("libelle", "volume", "unite")] |>
+  unique() |>
+  knitr::kable(row.names = FALSE)
+```
+
+Les données distinguent les horaires hebdomadaires des volumes annuels, comme
+l'enseignement moral et civique.
+
+## Visualiser les connaissances attendues par matière
+
+Les grands thèmes constituent un bon niveau de lecture pour comparer les
+disciplines sans afficher toutes les capacités. On peut compter les thèmes
+modélisés par discipline :
+
+```{r}
+t2 = themes_niveau("2GT")
+t2 = unique(t2[, c("programme_id", "item_id", "discipline_id", "libelle")])
+couverture = sort(table(t2$discipline_id), decreasing = TRUE)
+barplot(
+  couverture,
+  las = 2,
+  ylab = "Nombre de thèmes",
+  main = "Thèmes de 2de modélisés dans eduschool"
+)
+```
+
+Ce graphique décrit la **granularité du référentiel `eduschool`**, pas un poids
+pédagogique ou un classement des matières. Pour lire les contenus eux-mêmes :
+
+```{r}
+t2[, c("discipline_id", "libelle")] |>
+  head(20) |>
+  knitr::kable(row.names = FALSE)
+```
+
+Les notions documentées peuvent être interrogées séparément :
+
+```{r}
+notions_niveau("2GT")[, c("discipline_id", "libelle")] |>
+  head(20) |>
+  knitr::kable(row.names = FALSE)
+```
+
+Cette distinction est importante : les **thèmes** appartiennent à la structure
+des programmes, tandis que les **notions** appartiennent à la couche pédagogique
+du package. Leur niveau de détail peut donc différer.
+
+## Focus mathématiques
+
+Les mathématiques sont volontairement plus détaillées dans `eduschool`. La
+synthèse courte s'obtient directement :
+
+```{r}
+genere_resume("2GT", matiere = "maths", max_themes = 12) |>
+  knitr::kable(row.names = FALSE)
+```
+
+Pour afficher l'ensemble des grands thèmes mathématiques de la seconde :
+
+```{r}
+maths_2gt = themes_niveau("2GT", discipline_id = "MAT")
+maths_2gt = unique(maths_2gt[, c("item_id", "libelle")])
+maths_2gt |>
+  knitr::kable(row.names = FALSE)
+```
+
+On retrouve notamment le vocabulaire ensembliste et logique, l'algorithmique,
+les nombres et le calcul algébrique, la géométrie, les fonctions, la statistique
+et les probabilités.
+
+### Ce qu'il faut consolider avant la 2de
+
+Pour préparer l'entrée au lycée, on peut mettre en regard les thèmes de
+mathématiques de 3e et ceux de 2de, sans fabriquer une table parallèle :
+
+```{r}
+maths_3e = themes_niveau("3E", discipline_id = "MAT")
+maths_3e = unique(maths_3e[, c("item_id", "libelle")])
+head(maths_3e, 12) |>
+  knitr::kable(row.names = FALSE)
+```
+
+Lorsque des capacités sont reliées à des notions pédagogiques,
+`notions_capacite()` et `prerequis_capacite(..., recursif = TRUE)` permettent
+d'aller plus loin et de construire un parcours de révision ciblé.
+
+## Après la 2de : deux grandes voies
+
+![Parcours scolaires modélisés dans eduschool](../man/figures/parcours_scolaire.svg)
+
+À la fin de la seconde générale et technologique, l'élève choisit principalement
+entre la **voie générale** et la **voie technologique**. En voie générale, le
+cycle terminal est organisé autour d'enseignements communs et de spécialités :
+trois spécialités sont suivies en première, puis deux sont conservées en
+terminale.
+
+Les spécialités modélisées dans le package sont consultables directement :
+
+```{r}
+specialites = enseignements()
+specialites = specialites[specialites$type == "SPECIALITE", c("enseignement_id", "libelle")]
+specialites |>
+  knitr::kable(row.names = FALSE)
+```
+
+L'offre réelle dépend de l'établissement ; certaines spécialités ont également
+un cadre particulier, notamment dans l'enseignement agricole.
+
+## La voie technologique
+
+Le référentiel `series()` permet de visualiser les séries actuellement intégrées :
+
+```{r}
+series()[series()$voie_id == "VOIE_TECHNOLOGIQUE", ] |>
+  knitr::kable(row.names = FALSE)
+```
+
+La réglementation nationale compte huit séries technologiques : ST2S, STAV,
+STD2A, STI2D, STHR, STL, STMG et S2TMD. `eduschool` en modélise actuellement
+sept ; **STAV** n'est pas encore intégrée, car le périmètre actuel du package est
+centré sur les référentiels de l'Éducation nationale et non sur l'enseignement
+agricole.
+
+La série STHR possède en outre une seconde spécifique ; elle ne doit donc pas
+être interprétée exactement comme les autres bifurcations à partir d'une 2GT
+ordinaire.
+
+## Utiliser cette vue pour le suivi scolaire
+
+Cette vignette illustre le rôle d'`eduschool` : fournir des **vues pratiques**
+construites à partir des tables relationnelles, sans devenir une nouvelle source
+réglementaire. Pour un suivi individuel, on peut partir de la synthèse de niveau,
+repérer les thèmes ou notions à travailler, puis descendre vers les rappels et
+les exercices lorsque ceux-ci sont disponibles.
+
+Pour la réglementation et l'orientation, les références à privilégier restent
+les sources officielles :
+
+- [Seconde générale et technologique — éduscol](https://eduscol.education.fr/5466/seconde-generale-et-technologique) ;
+- [L'orientation en seconde générale et technologique — ministère de l'Éducation nationale](https://www.education.gouv.fr/l-orientation-en-seconde-generale-et-technologique-307392) ;
+- [La voie technologique au lycée — ministère de l'Éducation nationale](https://www.education.gouv.fr/reussir-au-lycee/la-voie-technologique-au-lycee-7574) ;
+- [Après la seconde : voie générale ou technologique ? — Onisep](https://www.onisep.fr/formation/apres-la-2-les-poursuites-d-etudes/apres-la-seconde-choisir-la-voie-generale-ou-la-voie-technologique).
