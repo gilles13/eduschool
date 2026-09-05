@@ -28,3 +28,16 @@ blocs;revision/blocs.csv;revision;Blocs de contenu des fiches de revision;bloc_i
 familles;revision/familles.csv;revision;Familles de connaissances pour les revisions;famille_id;famille_id,libelle,ordre
 fiche_notions;revision/fiche_notions.csv;revision;Relations entre fiches de revision et notions;fiche_id,notion_id;fiche_id,notion_id,ordre
 fiches;revision/fiches.csv;revision;Fiches de revision pedagogiques;fiche_id;fiche_id,niveau_id,famille_id,type,titre,description,ordre
+ressources;ressources/ressources.csv;ressources;Ressources pedagogiques externes;ressource_id;ressource_id,nom,organisme,url,discipline_id,description,gratuit,compte_requis,langue,date_verification
+usages_ressources;ressources/usages_ressources.csv;ressources;Referentiel des usages pedagogiques;usage_id;usage_id,libelle,description,ordre
+ressources_usages;ressources/ressources_usages.csv;ressources;Relations entre ressources et usages;ressource_id,usage_id;ressource_id,usage_id
+ressources_niveaux;ressources/ressources_niveaux.csv;ressources;Relations entre ressources et niveaux;ressource_id,niveau_id;ressource_id,niveau_id
+parcours_noeuds;orientation/parcours_noeuds.csv;orientation;Noeuds des principales bifurcations d orientation;noeud_id;noeud_id,libelle,etape,type,niveau_id,serie_id,filiere_id,ordre
+parcours_liens;orientation/parcours_liens.csv;orientation;Liens entre les noeuds du parcours d orientation;lien_id;lien_id,de,vers,libelle,source_id
+postbac_filieres;orientation/postbac_filieres.csv;orientation;Grandes familles de formations post-bac;filiere_id;filiere_id,libelle,categorie,duree_min,duree_max,selectivite,diplome,description,source_id
+parcoursup_etapes;orientation/parcoursup_etapes.csv;orientation;Etapes structurelles de Parcoursup;etape_id;etape_id,ordre,libelle,description,source_id
+parcoursup_campagnes;orientation/parcoursup_campagnes.csv;orientation;Referentiel des campagnes Parcoursup;campagne_id;campagne_id,annee,libelle,statut,source_id
+parcoursup_calendrier;orientation/parcoursup_calendrier.csv;orientation;Jalons dates propres a chaque campagne Parcoursup;evenement_id;evenement_id,campagne_id,etape_id,ordre,date,libelle,description,source_id
+parcoursup_nouveautes;orientation/parcoursup_nouveautes.csv;orientation;Nouveautes documentees des campagnes Parcoursup;nouveaute_id;nouveaute_id,campagne_id,ordre,libelle,description,source_id
+plateformes_admission;orientation/plateformes_admission.csv;orientation;Plateformes nationales d admission post-bac;plateforme_id;plateforme_id,libelle,debut,fin,statut,description,source_id
+plateformes_caracteristiques;orientation/plateformes_caracteristiques.csv;orientation;Caracteristiques comparees des plateformes d admission;plateforme_id,caracteristique_id;plateforme_id,caracteristique_id,ordre,libelle,valeur,source_id

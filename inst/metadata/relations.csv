@@ -48,3 +48,24 @@ REL046;fiches;famille_id;familles;famille_id;oui;n:1;Famille de la fiche
 REL047;blocs;fiche_id;fiches;fiche_id;non;n:1;Fiche contenant le bloc
 REL048;fiche_notions;fiche_id;fiches;fiche_id;non;n:1;Fiche de revision
 REL049;fiche_notions;notion_id;notions;notion_id;non;n:1;Notion couverte
+REL050;ressources;discipline_id;disciplines;discipline_id;non;n:1;Discipline principale de la ressource
+REL051;ressources_usages;ressource_id;ressources;ressource_id;non;n:1;Ressource classee
+REL052;ressources_usages;usage_id;usages_ressources;usage_id;non;n:1;Usage pedagogique
+REL053;ressources_niveaux;ressource_id;ressources;ressource_id;non;n:1;Ressource rattachee a un niveau
+REL054;ressources_niveaux;niveau_id;niveaux;niveau_id;non;n:1;Niveau couvert par la ressource
+REL055;parcours_noeuds;niveau_id;niveaux;niveau_id;oui;n:1;Niveau scolaire represente par le noeud
+REL056;parcours_noeuds;serie_id;series;serie_id;oui;n:1;Serie representee par le noeud
+REL057;parcours_liens;de;parcours_noeuds;noeud_id;non;n:1;Noeud de depart
+REL058;parcours_liens;vers;parcours_noeuds;noeud_id;non;n:1;Noeud d arrivee
+REL059;parcours_liens;source_id;sources;source_id;non;n:1;Source du lien d orientation
+REL060;postbac_filieres;source_id;sources;source_id;non;n:1;Source de la filiere post-bac
+REL061;parcoursup_etapes;source_id;sources;source_id;non;n:1;Source de l etape Parcoursup
+REL062;parcoursup_campagnes;source_id;sources;source_id;non;n:1;Source de la campagne Parcoursup
+REL063;parcoursup_calendrier;campagne_id;parcoursup_campagnes;campagne_id;non;n:1;Campagne du jalon date
+REL064;parcoursup_calendrier;etape_id;parcoursup_etapes;etape_id;non;n:1;Etape structurelle associee au jalon
+REL065;parcoursup_calendrier;source_id;sources;source_id;non;n:1;Source du jalon date
+REL066;parcoursup_nouveautes;campagne_id;parcoursup_campagnes;campagne_id;non;n:1;Campagne concernee
+REL067;parcoursup_nouveautes;source_id;sources;source_id;non;n:1;Source de la nouveaute
+REL068;plateformes_admission;source_id;sources;source_id;non;n:1;Source historique de la plateforme
+REL069;plateformes_caracteristiques;plateforme_id;plateformes_admission;plateforme_id;non;n:1;Plateforme comparee
+REL070;plateformes_caracteristiques;source_id;sources;source_id;non;n:1;Source de la caracteristique

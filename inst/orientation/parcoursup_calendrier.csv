@@ -1,0 +1,9 @@
+evenement_id;campagne_id;etape_id;ordre;date;libelle;description;source_id
+PS26_CAL_01;PS2026;PS_INFO;10;2025-12-17;Ouverture de la carte des formations;Consultation de l offre de formations 2026 et des fiches de presentation.;SRC_PARCOURSUP_2026
+PS26_CAL_02;PS2026;PS_VOEUX;20;2026-01-19;Ouverture des inscriptions et des voeux;Creation du dossier candidat et debut de la formulation des voeux.;SRC_PARCOURSUP_2026
+PS26_CAL_03;PS2026;PS_VOEUX;30;2026-03-12;Fin de formulation des voeux;Dernier jour national pour formuler les voeux hors cas particuliers et apprentissage.;SRC_PARCOURSUP_2026
+PS26_CAL_04;PS2026;PS_DOSSIER;40;2026-04-01;Fin de confirmation des voeux;Dernier jour pour completer le dossier et confirmer chacun des voeux.;SRC_PARCOURSUP_2026
+PS26_CAL_05;PS2026;PS_REPONSES;50;2026-06-02;Debut de la phase principale;Les candidats commencent a recevoir les reponses des formations.;SRC_PARCOURSUP_2026
+PS26_CAL_06;PS2026;PS_COMPLEMENT;60;2026-06-11;Debut de la phase complementaire;De nouveaux voeux peuvent etre formules dans les formations disposant encore de places.;SRC_PARCOURSUP_2026
+PS26_CAL_07;PS2026;PS_REPONSES;70;2026-07-11;Fin de la phase principale;Cloture de la phase principale d admission 2026.;SRC_PARCOURSUP_2026
+PS26_CAL_08;PS2026;PS_COMPLEMENT;80;2026-09-10;Fin de la phase complementaire;Cloture de la phase complementaire 2026.;SRC_PARCOURSUP_2026

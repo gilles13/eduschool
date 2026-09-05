@@ -19,7 +19,8 @@ Imports:
 Suggests:
     testthat (>= 3.0.0),
     knitr,
-    roxygen2
+    roxygen2,
+    ggplot2
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 URL: https://gilles13.github.io/eduschool/

@@ -140,23 +140,52 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
   dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)
   fichier = normalizePath(fichier, winslash = "/", mustWork = FALSE)
 
-  travail = tempfile("eduschool-revision-")
-  dir.create(travail, recursive = TRUE, showWarnings = FALSE)
-  on.exit(unlink(travail, recursive = TRUE, force = TRUE), add = TRUE)
-  entree = file.path(travail, "fiche_revision.Rmd")
+  if (identical(format, "html")) {
+    entree = tempfile(
+      "eduschool-revision-",
+      tmpdir = dirname(fichier),
+      fileext = ".Rmd"
+    )
+    on.exit(unlink(entree, force = TRUE), add = TRUE)
+  } else {
+    travail = tempfile("eduschool-revision-")
+    dir.create(travail, recursive = TRUE, showWarnings = FALSE)
+    on.exit(unlink(travail, recursive = TRUE, force = TRUE), add = TRUE)
+    entree = file.path(travail, "fiche_revision.Rmd")
+  }
   file.copy(.template_revision(), entree, overwrite = TRUE)
+
+  logo = .logo_eduschool()
+  ressources = NULL
+  logo_rendu = logo
+  if (identical(format, "html") && nzchar(logo) && file.exists(logo)) {
+    nom_sortie = tools::file_path_sans_ext(basename(fichier))
+    ressources = paste0(nom_sortie, "_files")
+    logo_rendu = file.path(ressources, basename(logo))
+    ressources_dir = file.path(dirname(fichier), ressources)
+    dir.create(ressources_dir, recursive = TRUE, showWarnings = FALSE)
+    file.copy(
+      logo,
+      file.path(ressources_dir, basename(logo)),
+      overwrite = TRUE
+    )
+  }
 
   output_format = if (identical(format, "pdf")) {
     rmarkdown::pdf_document()
   } else {
-    rmarkdown::html_document(self_contained = TRUE, pandoc_args = c("--metadata", paste0("pagetitle=", revision$titre)))
+    rmarkdown::html_document(
+      self_contained = FALSE,
+      lib_dir = file.path(dirname(fichier), ressources),
+      pandoc_args = c("--metadata", paste0("pagetitle=", revision$titre))
+    )
   }
   rmarkdown::render(
     input = entree,
     output_format = output_format,
     output_file = basename(fichier),
     output_dir = dirname(fichier),
-    params = list(revision = revision, logo = .logo_eduschool()),
+    params = list(revision = revision, logo = logo_rendu),
     envir = new.env(parent = baseenv()),
     quiet = TRUE
   )

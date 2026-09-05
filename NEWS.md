@@ -1,5 +1,30 @@
 # eduschool 0.11.0
 
+## Orientation au lycee et apres le bac
+
+- ajout d une couche relationnelle consacree aux principales bifurcations d orientation, aux grandes filieres post-bac et a Parcoursup ;
+- separation entre les etapes durables de Parcoursup et les jalons dates propres a chaque campagne, afin de conserver un modele evolutif ;
+- integration de la huitieme serie technologique `STAV`, relevant de l enseignement agricole, afin de presenter un panorama complet des orientations apres la seconde ;
+- ajout de fonctions pour consulter series technologiques, specialites, options du lycee, filieres post-bac, etapes, campagnes et calendriers Parcoursup ;
+- ajout de schemas SVG generes dynamiquement depuis les donnees : bifurcations scolaires, etapes Parcoursup et frise chronologique d une campagne ;
+- ajout de la vignette « S orienter au lycee et apres le bac » et d un repere historique sur Admission Post-Bac (APB), remplace par Parcoursup en 2018.
+
+## Ressources pedagogiques en mathematiques
+
+- ajout d un catalogue relationnel de ressources pedagogiques externes, separe des sources officielles du SI ;
+- classement des ressources par usages pedagogiques et niveaux scolaires, sans liste de niveaux codee dans une seule cellule ;
+- ajout de `usages_ressources()` et `ressources_pedagogiques()` ;
+- ajout de la vignette « Approfondir ses connaissances en mathematiques ».
+
+## Charte graphique et sorties de revision
+
+- mise en place d'une charte graphique commune aux fiches pedagogiques, avec une couleur d'identification stable par cycle ;
+- ajout d'un bandeau d'identite affichant automatiquement le cycle, la classe, la discipline, le type de fiche et le logo `eduschool` ;
+- ajout de `charte_eduschool()`, `couleur_cycle()`, `identite_revision()` et `theme_eduschool()` pour reutiliser la charte depuis R et dans les graphiques `ggplot2` ;
+- ajout de `documentation/charte-graphique.md` pour documenter les principes visuels du package ;
+- les fiches HTML utilisent des ressources externes dans un repertoire `<nom>_files/` au lieu d'encoder le logo en base64, afin d'alleger les fichiers HTML et leur generation ;
+- la synthese pedagogique et les representations visuelles utiles priment desormais sur une contrainte fixe de pagination des fiches.
+
 ## Consolidation du mini-SI
 
 - ajout de metadonnees relationnelles explicites dans `inst/metadata/tables.csv`, `colonnes.csv` et `relations.csv` ;
@@ -19,6 +44,9 @@
 - liaison des fiches aux notions pedagogiques existantes afin d'eviter une seconde source de verite ;
 - ajout de schemas generes avec les capacites graphiques de R, sans nouvelle dependance graphique obligatoire ;
 - rendu HTML/PDF suivant le meme principe que les fiches d'exercices.
+- ajout d un index pkgdown dedie aux fiches essentielles de mathematiques et d une premiere fiche 6e ;
+- suppression du graphique de comptage des themes dans la vignette 2de, qui refletait surtout la granularite inegale du referentiel ;
+- preparation d une future API publique de composition de fiches personnalisees a partir de templates simples.
 
 # eduschool 0.10.9
 

@@ -9,23 +9,74 @@ navbar:
     - articles
     - news
     right: github
+  components:
+    articles:
+      text: Articles
+      menu:
+      - text: Découvrir eduschool
+      - text: Prise en main
+        href: articles/prise-en-main.html
+      - text: Explorer la 6e
+        href: articles/exemple-classe-6e.html
+      - text: Explorer la 2de générale et technologique
+        href: articles/exemple-classe-2de-generale.html
+      - text: -------
+      - text: Parcours et orientation
+      - text: Parcours scolaires
+        href: articles/parcours-scolaires.html
+      - text: Programmes et capacités
+        href: articles/programmes-et-capacites.html
+      - text: S'orienter au lycée et après le bac
+        href: articles/orientation-au-lycee-et-apres-le-bac.html
+      - text: -------
+      - text: Mathématiques
+      - text: Fiches de révision
+        href: articles/fiches-revision-mathematiques.html
+      - text: Fiche mathématiques 6e
+        href: articles/fiche-mathematiques-6e.html
+      - text: Approfondir ses connaissances
+        href: articles/approfondir-ses-connaissances-en-mathematiques.html
+      - text: -------
+      - text: Comprendre eduschool
+      - text: Architecture des données
+        href: articles/architecture-des-donnees.html
+      - text: Rentrer en profondeur dans eduschool
+        href: articles/rentrer-en-profondeur-dans-eduschool.html
+      - text: -------
+      - text: Tous les articles
+        href: articles/index.html
 articles:
-- title: Prise en main
-  contents: 
+- title: Decouvrir eduschool
+  desc: Premiers reperes pour explorer le referentiel et une classe.
+  navbar: Decouvrir
+  contents:
   - prise-en-main
   - exemple-classe-6e
   - exemple-classe-2de-generale
-- title: Parcours scolaires
+- title: Parcours et orientation
+  desc: Comprendre les parcours scolaires, les choix au lycee et les poursuites d etudes.
+  navbar: Parcours
   contents:
   - parcours-scolaires
   - programmes-et-capacites
+  - orientation-au-lycee-et-apres-le-bac
+- title: Mathematiques
+  desc: Fiches de revision, ressources et outils pedagogiques.
+  navbar: Mathematiques
+  contents:
+  - fiches-revision-mathematiques
+  - fiche-mathematiques-6e
+  - approfondir-ses-connaissances-en-mathematiques
 - title: Utiliser eduschool
+  desc: Documentation pedagogique et production de fiches.
   contents:
   - documentation-pedagogique
   - exercices-et-revisions
-- title: Comprendre le système
+- title: Comprendre eduschool
+  desc: Architecture du mini-SI et fonctionnement interne du package.
+  navbar: Comprendre
   contents:
   - architecture-des-donnees
   - rentrer-en-profondeur-dans-eduschool
-- title: Développement
+- title: Developpement
   contents: developpement

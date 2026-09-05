@@ -28,3 +28,27 @@ test_that("une revision peut etre rendue en HTML", {
   expect_true(file.exists(sortie))
   expect_match(sortie, "\\.html$")
 })
+
+test_that("la fiche essentielle de 6e est disponible et compacte", {
+  r = generer_essentiel("6E")
+  expect_s3_class(r, "eduschool_revision")
+  expect_identical(r$niveau_id, "6E")
+  expect_identical(r$type, "ESSENTIEL")
+  expect_true(nrow(r$blocs) >= 6L)
+  expect_true(nrow(r$blocs) <= 10L)
+})
+
+test_that("la charte identifie la fiche de 6e comme cycle 3", {
+  r = generer_essentiel("6E")
+  x = identite_revision(r)
+  expect_identical(x$cycle_id, "C3")
+  expect_identical(x$matiere, "Math\u00e9matiques")
+  expect_match(x$couleur, "^#[0-9A-Fa-f]{6}$")
+  expect_true(nzchar(x$logo) || identical(x$logo, ""))
+})
+
+test_that("la palette contient les cycles principaux", {
+  x = charte_eduschool()
+  expect_true(all(c("C3", "C4", "LYCEE", "CYCLE_TERMINAL", "NEUTRE") %in% x$id))
+  expect_identical(couleur_cycle("C3"), x$couleur[x$id == "C3"][[1]])
+})

@@ -1,0 +1,54 @@
+---
+title: "Fiches de révision – Mathématiques"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Fiches de révision - Mathématiques}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+```{r}
+library(eduschool)
+```
+
+Cette section rassemble des **fiches essentielles de mathématiques par classe**.
+Leur objectif est de rassembler les **formules, repères, méthodes et réflexes à maîtriser** dans un document synthétique et visuel, sans imposer une pagination artificielle. Des représentations graphiques pourront compléter les notions lorsqu’elles apportent un véritable gain pédagogique.
+
+Les fiches sont produites à partir du même référentiel que les fonctions R du
+package. Le site n'est donc qu'une vue de ces données, et non une seconde source
+à maintenir séparément.
+
+## Fiches disponibles
+
+- [6e — L'essentiel des mathématiques](fiche-mathematiques-6e.html)
+
+Les niveaux 5e, 4e, 3e, 2de, 1re générale spécialité mathématiques et Terminale
+générale spécialité mathématiques seront ajoutés progressivement sur le même
+modèle.
+
+## Depuis R
+
+La même fiche peut être construite comme objet R :
+
+```{r}
+r = generer_essentiel("6E")
+r
+```
+
+Puis rendue en HTML ou en PDF avec `produire_revision()` :
+
+```{r, eval=FALSE}
+produire_revision(r, "revision_6e", format = "html")
+produire_revision(r, "revision_6e", format = "pdf")
+```
+
+À terme, cette infrastructure servira aussi de socle à une **API publique de
+composition** : un utilisateur R pourra partir d'un template simple pour créer
+ses propres fiches de révision, d'approfondissement ou d'exercices, tout en
+réutilisant les composants fournis par `eduschool`. L'objectif sera d'éviter de
+demander aux utilisateurs de dépendre directement de fonctions internes non
+documentées.

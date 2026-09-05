@@ -1,0 +1,3 @@
+nouveaute_id;campagne_id;ordre;libelle;description;source_id
+PS26_N01;PS2026;10;Profils des admis enrichis;Les fiches formation affichent davantage d informations sur le profil des candidats admis les annees precedentes, notamment serie de bac, niveau scolaire et parcours au lycee.;SRC_PARCOURSUP_2026
+PS26_N02;PS2026;20;Reussite et insertion mieux documentees;Les fiches formation donnent de nouvelles donnees sur la reussite et l insertion afin d eclairer les choix.;SRC_PARCOURSUP_2026

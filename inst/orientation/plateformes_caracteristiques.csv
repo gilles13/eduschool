@@ -1,0 +1,7 @@
+plateforme_id;caracteristique_id;ordre;libelle;valeur;source_id
+APB;VOEUX;10;Expression des préférences;Vœux classés par ordre de préférence;SRC_MESR_APB_2017
+PARCOURSUP;VOEUX;10;Expression des préférences;Vœux non classés lors de leur formulation;SRC_MESR_PARCOURSUP_2018
+APB;PROPOSITIONS;20;Logique de proposition;Affectation centralisée prenant en compte l'ordre des vœux;SRC_MESR_APB_2017
+PARCOURSUP;PROPOSITIONS;20;Logique de proposition;Classement des candidatures par les formations puis propositions transmises progressivement par la plateforme;SRC_MESR_PARCOURSUP_2018
+APB;PERIODE;30;Période de référence;Dernière campagne nationale en 2017;SRC_MESR_APB_2017
+PARCOURSUP;PERIODE;30;Période de référence;Première campagne en 2018;SRC_MESR_PARCOURSUP_2018

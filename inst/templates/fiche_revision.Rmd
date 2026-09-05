@@ -6,24 +6,38 @@ params:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.width = 4.8, fig.height = 2.2, dpi = 120)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.width = 5.8, fig.height = 3.0, dpi = 120)
 r = params$revision
 compact = identical(r$type, "ESSENTIEL")
+identite = eduschool::identite_revision(r)
 ```
 
-```{r logo, out.width="10%", fig.align="left"}
-if (nzchar(params$logo) && file.exists(params$logo)) knitr::include_graphics(params$logo)
+```{r entete, results='asis'}
+if (knitr::is_html_output()) {
+  cat(eduschool:::.css_fiche_eduschool(), "\n")
+  cat(eduschool:::.bandeau_revision_html(r, params$logo), "\n")
+} else {
+  cat("\\noindent\\begin{minipage}[t]{0.72\\textwidth}\n")
+  cat("\\textbf{", identite$cycle, " -- ", identite$classe, "}\\\\\n", sep = "")
+  cat("{\\Large\\textbf{", identite$matiere, "}}\\\\[0.35em]\n", sep = "")
+  cat("\\textsc{", identite$type, "}\\\\\n", sep = "")
+  cat(identite$titre, "\n")
+  cat("\\end{minipage}\\hfill\\begin{minipage}[t]{0.23\\textwidth}\\raggedleft\n")
+  if (nzchar(params$logo) && file.exists(params$logo)) {
+    cat("\\includegraphics[width=2.8cm]{\\detokenize{", normalizePath(params$logo, winslash = "/"), "}}\n", sep = "")
+  }
+  cat("\\end{minipage}\\par\\vspace{0.7em}\\hrule\\vspace{1em}\n")
+}
 ```
-
-# `r r$titre`
-
-**`r eduschool::libelle_niveau(r$niveau_id)`**
 
 `r r$description`
 
 ```{r blocs, results='asis'}
 for (i in seq_len(nrow(r$blocs))) {
   b = r$blocs[i, ]
+  if (knitr::is_html_output()) {
+    cat('<div class="eduschool-bloc" style="--edu-accent:', identite$couleur, '">\n', sep = "")
+  }
   cat("\n## ", b$titre, "\n\n", sep = "")
   if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
   if (nzchar(b$formule)) cat("$$", b$formule, "$$\n\n")
@@ -31,12 +45,13 @@ for (i in seq_len(nrow(r$blocs))) {
     eduschool:::.dessiner_revision(b$illustration_id)
     cat("\n")
   }
+  if (knitr::is_html_output()) cat("</div>\n")
 }
 ```
 
 ```{r notions, results='asis'}
 if (!compact && nrow(r$notions)) {
-  cat("\n## Notions eduschool reliées\n\n")
+  cat("\n## Notions eduschool reliees\n\n")
   for (x in unique(r$notions$libelle)) if (!is.na(x) && nzchar(x)) cat("- ", x, "\n", sep = "")
 }
 ```

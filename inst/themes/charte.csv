@@ -1,0 +1,6 @@
+id;libelle;couleur;usage
+C3;Cycle 3;#2F6B9A;Sixieme et cycle de consolidation
+C4;Cycle 4;#3F7D58;Cinquieme quatrieme et troisieme
+LYCEE;Lycee;#8A3D5D;Seconde generale et technologique
+CYCLE_TERMINAL;Cycle terminal;#8A3D5D;Premiere et terminale
+NEUTRE;Scolarite;#59636E;Elements sans cycle ou usage generique

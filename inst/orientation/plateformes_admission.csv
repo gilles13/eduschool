@@ -1,0 +1,3 @@
+plateforme_id;libelle;debut;fin;statut;description;source_id
+APB;Admission Post-Bac;2009;2017;HISTORIQUE;Plateforme nationale ayant centralisé l'essentiel des candidatures post-bac avant son remplacement en 2018.;SRC_MESR_APB_2017
+PARCOURSUP;Parcoursup;2018;;ACTUEL;Plateforme nationale de préinscription en première année de l'enseignement supérieur, utilisée depuis 2018.;SRC_MESR_PARCOURSUP_2018

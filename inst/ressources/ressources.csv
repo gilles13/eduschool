@@ -1,0 +1,9 @@
+ressource_id;nom;organisme;url;discipline_id;description;gratuit;compte_requis;langue;date_verification
+MATH_TIQUES;Math et Tiques;Yvan Monka;https://maths-et-tiques.fr/;MAT;Cours exercices vidéos problèmes et ressources classés par niveau et par thème;OUI;NON;fr;2026-09-05
+SESAMATH;Sésamath;Association Sésamath;https://www.sesamath.net/;MAT;Manuels cahiers ressources numériques et exercices de mathématiques;OUI;NON;fr;2026-09-05
+GEOGEBRA;GeoGebra;GeoGebra;https://www.geogebra.org/?lang=fr;MAT;Outils interactifs pour fonctions géométrie algèbre statistiques et géométrie 3D;OUI;NON;fr;2026-09-05
+MATHALEA;MathALÉA;CoopMaths;https://coopmaths.fr/alea/;MAT;Exercices aléatoirisés corrections automatismes et révisions par niveau;OUI;NON;fr;2026-09-05
+APMEP;APMEP;APMEP;https://www.apmep.fr/;MAT;Annales du brevet du bac et de concours ainsi que ressources mathématiques;OUI;NON;fr;2026-09-05
+LUMNI;Lumni;Audiovisuel public;https://www.lumni.fr/;MAT;Vidéos quiz dossiers et fiches de révision du collège au lycée;OUI;NON;fr;2026-09-05
+KHAN;Khan Academy;Khan Academy;https://www.khanacademy.org/?lang=fr_fr;MAT;Cours et exercices gratuits pour consolider les fondamentaux et progresser à son rythme;OUI;NON;fr;2026-09-05
+FRANCE_IOI;France-IOI;France-IOI;https://www.france-ioi.org/algo/;MAT;Cours exercices corrigés et entraînement progressif en algorithmique et programmation;OUI;OUI;fr;2026-09-05

@@ -1,0 +1,7 @@
+etape_id;ordre;libelle;description;source_id
+PS_INFO;10;S'informer;Découvrir les formations, leurs attendus, critères d'examen, coûts, débouchés et données d'accès.;SRC_PARCOURSUP_2026
+PS_VOEUX;20;Formuler les vœux;Créer son dossier et formuler jusqu'à 10 vœux hors apprentissage, sans les classer par préférence.;SRC_PARCOURSUP_2026
+PS_DOSSIER;30;Compléter et confirmer;Compléter les pièces demandées et confirmer chacun des vœux formulés.;SRC_PARCOURSUP_2026
+PS_REPONSES;40;Recevoir les réponses;Consulter les réponses des formations et les propositions d'admission au fil de la phase principale.;SRC_PARCOURSUP_2026
+PS_COMPLEMENT;50;Phase complémentaire;Formuler de nouveaux vœux dans les formations disposant encore de places.;SRC_PARCOURSUP_2026
+PS_CAES;60;Accompagnement CAES;En l'absence de proposition, solliciter l'accompagnement de la commission d'accès à l'enseignement supérieur.;SRC_PARCOURSUP_2026

@@ -136,3 +136,80 @@ fiches;type;character;enum;;oui;
 fiches;titre;character;text;;oui;
 fiches;description;character;text;;oui;
 fiches;ordre;character;integer;;oui;
+ressources;ressource_id;character;identifier;PK;non;Identifiant stable de la ressource
+ressources;nom;character;text;;non;Nom public de la ressource
+ressources;organisme;character;text;;non;Organisme ou auteur responsable
+ressources;url;character;url;;non;Adresse principale de la ressource
+ressources;discipline_id;character;identifier;FK;non;Discipline principale
+ressources;description;character;text;;non;Description courte de la ressource
+ressources;gratuit;character;enum;;non;Acces gratuit a la ressource principale
+ressources;compte_requis;character;enum;;non;Compte necessaire pour l usage principal
+ressources;langue;character;code;;non;Langue principale
+ressources;date_verification;character;date;;non;Date de derniere verification du lien et de la description
+usages_ressources;usage_id;character;identifier;PK;non;Identifiant de l usage pedagogique
+usages_ressources;libelle;character;text;;non;Libelle de l usage
+usages_ressources;description;character;text;;non;Description de l usage
+usages_ressources;ordre;character;integer;;non;Ordre d affichage
+ressources_usages;ressource_id;character;identifier;PK,FK;non;Ressource concernee
+ressources_usages;usage_id;character;identifier;PK,FK;non;Usage associe
+ressources_niveaux;ressource_id;character;identifier;PK,FK;non;Ressource concernee
+ressources_niveaux;niveau_id;character;identifier;PK,FK;non;Niveau scolaire couvert
+parcours_noeuds;noeud_id;character;id;PK;non;
+parcours_noeuds;libelle;character;text;;non;
+parcours_noeuds;etape;character;integer;;non;
+parcours_noeuds;type;character;code;;non;
+parcours_noeuds;niveau_id;character;id;FK;oui;
+parcours_noeuds;serie_id;character;id;FK;oui;
+parcours_noeuds;filiere_id;character;id;;oui;
+parcours_noeuds;ordre;character;integer;;non;
+parcours_liens;lien_id;character;id;PK;non;
+parcours_liens;de;character;id;FK;non;
+parcours_liens;vers;character;id;FK;non;
+parcours_liens;libelle;character;text;;oui;
+parcours_liens;source_id;character;id;FK;non;
+postbac_filieres;filiere_id;character;id;PK;non;
+postbac_filieres;libelle;character;text;;non;
+postbac_filieres;categorie;character;code;;non;
+postbac_filieres;duree_min;character;integer;;non;
+postbac_filieres;duree_max;character;integer;;non;
+postbac_filieres;selectivite;character;code;;non;
+postbac_filieres;diplome;character;text;;oui;
+postbac_filieres;description;character;text;;non;
+postbac_filieres;source_id;character;id;FK;non;
+parcoursup_etapes;etape_id;character;id;PK;non;
+parcoursup_etapes;ordre;character;integer;;non;
+parcoursup_etapes;libelle;character;text;;non;
+parcoursup_etapes;description;character;text;;non;
+parcoursup_etapes;source_id;character;id;FK;non;
+parcoursup_campagnes;campagne_id;character;id;PK;non;
+parcoursup_campagnes;annee;character;integer;;non;
+parcoursup_campagnes;libelle;character;text;;non;
+parcoursup_campagnes;statut;character;code;;non;
+parcoursup_campagnes;source_id;character;id;FK;non;
+parcoursup_calendrier;evenement_id;character;id;PK;non;
+parcoursup_calendrier;campagne_id;character;id;FK;non;
+parcoursup_calendrier;etape_id;character;id;FK;non;
+parcoursup_calendrier;ordre;character;integer;;non;
+parcoursup_calendrier;date;character;date;;non;
+parcoursup_calendrier;libelle;character;text;;non;
+parcoursup_calendrier;description;character;text;;non;
+parcoursup_calendrier;source_id;character;id;FK;non;
+parcoursup_nouveautes;nouveaute_id;character;id;PK;non;
+parcoursup_nouveautes;campagne_id;character;id;FK;non;
+parcoursup_nouveautes;ordre;character;integer;;non;
+parcoursup_nouveautes;libelle;character;text;;non;
+parcoursup_nouveautes;description;character;text;;non;
+parcoursup_nouveautes;source_id;character;id;FK;non;
+plateformes_admission;plateforme_id;character;id;PK;non;
+plateformes_admission;libelle;character;text;;non;
+plateformes_admission;debut;character;integer;;non;
+plateformes_admission;fin;character;integer;;oui;
+plateformes_admission;statut;character;code;;non;
+plateformes_admission;description;character;text;;non;
+plateformes_admission;source_id;character;id;FK;non;
+plateformes_caracteristiques;plateforme_id;character;id;PK,FK;non;
+plateformes_caracteristiques;caracteristique_id;character;id;PK;non;
+plateformes_caracteristiques;ordre;character;integer;;non;
+plateformes_caracteristiques;libelle;character;text;;non;
+plateformes_caracteristiques;valeur;character;text;;non;
+plateformes_caracteristiques;source_id;character;id;FK;non;

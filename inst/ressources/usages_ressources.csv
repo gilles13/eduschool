@@ -1,0 +1,8 @@
+usage_id;libelle;description;ordre
+COURS;Comprendre le cours;Cours explications vidéos et démonstrations;10
+EXERCICES;S'entraîner;Exercices quiz et entraînement avec correction ou retour;20
+REVISION;Réviser;Synthèses automatismes et préparation d'examens;30
+VISUALISATION;Visualiser;Graphiques géométrie dynamique et exploration interactive;40
+ANNALES;Travailler sur des annales;Sujets d'examens concours et corrigés;50
+ALGORITHMIQUE;Programmer;Algorithmique programmation et expérimentation numérique;60
+APPROFONDISSEMENT;Approfondir;Problèmes raisonnements curiosités et prolongements;70

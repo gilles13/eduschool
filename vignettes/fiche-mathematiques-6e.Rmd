@@ -1,0 +1,56 @@
+---
+title: "Mathématiques 6e – Fiche essentielle"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques 6e - Fiche essentielle}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(eduschool)
+r = generer_essentiel("6E")
+identite = identite_revision(r)
+```
+
+```{r entete, results='asis'}
+logo = identite$logo
+logo_uri = ""
+if (nzchar(logo) && file.exists(logo)) {
+  fig_dir = knitr::opts_chunk$get("fig.path")
+  dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+  logo_site = file.path(fig_dir, "logo-eduschool.png")
+  file.copy(logo, logo_site, overwrite = TRUE)
+  logo_uri = logo_site
+}
+cat(eduschool:::.css_fiche_eduschool(), "\n")
+cat(eduschool:::.bandeau_revision_html(r, logo_uri), "\n")
+```
+
+Cette fiche rassemble les **repères essentiels de mathématiques de 6e**. Elle
+privilégie une lecture rapide et structurée, sans imposer de nombre de pages :
+les futures fiches pourront intégrer des représentations graphiques lorsqu'elles
+apportent un véritable appui à la compréhension.
+
+```{r blocs, results='asis'}
+for (i in seq_len(nrow(r$blocs))) {
+  b = r$blocs[i, ]
+  cat('<div class="eduschool-bloc" style="--edu-accent:', identite$couleur, '">\n', sep = "")
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
+  if (nzchar(b$formule)) cat("$$", b$formule, "$$\n\n")
+  cat("</div>\n")
+}
+```
+
+---
+
+[Retour à l'index des fiches de mathématiques](fiches-revision-mathematiques.html)
+
+Pour produire cette fiche depuis R :
+
+```{r, echo=TRUE, eval=FALSE}
+revision = generer_essentiel("6E")
+produire_revision(revision, "revision_6e", format = "pdf")
+```

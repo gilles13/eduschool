@@ -1,0 +1,11 @@
+noeud_id;libelle;etape;type;niveau_id;serie_id;filiere_id;ordre
+3E;Troisième;1;NIVEAU;3E;;;10
+2GT;Seconde générale et technologique;2;NIVEAU;2GT;;;10
+2PRO;Seconde professionnelle;2;VOIE;;;;20
+CAP;CAP / CAP agricole;2;VOIE;;;;30
+1G;Première générale;3;NIVEAU;1G;G;;10
+1T;Première technologique;3;NIVEAU;1T;;;20
+TG;Terminale générale;4;NIVEAU;TG;G;;10
+TT;Terminale technologique;4;NIVEAU;TT;;;20
+BACPRO;Baccalauréat professionnel;4;DIPLOME;;;;30
+POSTBAC;Études supérieures;5;ETAPE;;;;10

@@ -1,0 +1,10 @@
+filiere_id;libelle;categorie;duree_min;duree_max;selectivite;diplome;description;source_id
+LICENCE;Licence;UNIVERSITE;3;3;NON_SELECTIVE;Licence;Formation universitaire généraliste ou disciplinaire en trois ans, avec poursuite possible en master.;SRC_ONISEP_POSTBAC_2026
+BUT;Bachelor universitaire de technologie;UNIVERSITE;3;3;SELECTIVE;BUT;Formation technologique professionnalisante en IUT, organisée sur trois ans.;SRC_ONISEP_POSTBAC_2026
+BTS;Brevet de technicien supérieur;LYCEE;2;2;SELECTIVE;BTS;Formation courte et professionnalisante le plus souvent préparée en lycée ou CFA.;SRC_ONISEP_POSTBAC_2026
+CPGE;Classe préparatoire aux grandes écoles;LYCEE;2;2;SELECTIVE;;Préparation intensive aux concours des grandes écoles, avec poursuite d'études après la prépa.;SRC_ONISEP_POSTBAC_2026
+ECOLES_ING;Écoles d'ingénieurs;ECOLE;5;5;SELECTIVE;Diplôme d'ingénieur;Accès post-bac ou après une prépa, un BUT, une licence ou une autre formation selon les écoles.;SRC_ONISEP_POSTBAC_2026
+ECOLES_COM;Écoles de commerce et de management;ECOLE;3;5;SELECTIVE;Diplôme d'école;Accès post-bac ou après une classe préparatoire ou un premier diplôme selon les cursus.;SRC_ONISEP_POSTBAC_2026
+SANTE;Études de santé;UNIVERSITE;3;10;SELECTIVE;Diplômes de santé;Parcours universitaires et formations de santé dont l'accès dépend de la filière et de la sélection.;SRC_ONISEP_POSTBAC_2026
+SOCIAL_PARAMED;Formations sociales et paramédicales;ECOLE;3;5;SELECTIVE;Diplôme d'État;Formations spécialisées conduisant notamment à des diplômes d'État.;SRC_ONISEP_POSTBAC_2026
+ART_DESIGN;Arts, design et création;ECOLE;3;5;SELECTIVE;DN MADE ou diplôme d'école;Cursus artistiques et de design proposés en lycées, écoles supérieures ou établissements spécialisés.;SRC_ONISEP_POSTBAC_2026
