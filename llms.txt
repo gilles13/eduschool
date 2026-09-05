@@ -16,10 +16,32 @@ source et collaboratif.
 
 ## Les quatre portes d’entrée
 
-|  |  |
-|:---|:---|
-| ![Parcours scolaire](identite/parcours.png)**[Parcours scolaire](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)** — Niveaux, cycles, voies, séries, options, spécialités, orientation et Parcoursup. | ![Mathématiques](identite/maths.png)**[Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md)** — Programmes, capacités, fiches de révision, exercices et ressources. |
-| ![Créer et partager](identite/partage.png)**[Créer et partager](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md)** — Adapter les outils, proposer des corrections et mutualiser fiches et exercices. | ![Données et R](identite/donnees.png)**[Données et R](https://gilles13.github.io/eduschool/reference/index.md)** — Une API simple pour explorer les données, produire des documents et aller plus loin. |
+![](identite/parcours.png)
+
+### [Parcours scolaire](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)
+
+Niveaux, cycles, voies, séries, options, spécialités, orientation et
+Parcoursup.
+
+![](identite/maths.png)
+
+### [Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md)
+
+Programmes, capacités, fiches de révision, exercices et ressources.
+
+![](identite/partage.png)
+
+### [Créer et partager](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md)
+
+Adapter les outils, proposer des corrections et mutualiser fiches et
+exercices.
+
+![](identite/donnees.png)
+
+### [Données et R](https://gilles13.github.io/eduschool/reference/index.md)
+
+Une API simple pour explorer les données, produire des documents et
+aller plus loin.
 
 ------------------------------------------------------------------------
 
@@ -73,16 +95,14 @@ mutualisées.
 
 ------------------------------------------------------------------------
 
-## Un projet volontairement centré
+## Un projet volontairement centré sur les math
 
-![Mathématiques](identite/compas.png)
+![](identite/compas.png)
 
-Mathématiques
-
-L’architecture d’`eduschool` peut accueillir d’autres disciplines. Le
-projet reste néanmoins centré sur les **mathématiques** pour ses fiches
-de révision et ses exercices. Cette limite volontaire permet de garder
-un outil cohérent, maintenable et réellement utile.
+L’architecture d’`eduschool` peut accueillir d’autres disciplines. Les
+fiches de révision et les exercices restent volontairement consacrés aux
+mathématiques. Cette limite permet de garder un outil cohérent,
+maintenable et réellement utile.
 
 # Package index
 

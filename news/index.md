@@ -1,6 +1,14 @@
 # Changelog
 
+## eduschool 0.13.1
+
+- Finalisation page d accueil, correction des problèmes d affichage.
+
 ## eduschool 0.13.0
+
+- Simplification de la page d’accueil pkgdown : remplacement des cartes
+  en tableau par une grille Bootstrap/Pandoc et suppression du CSS
+  spécifique devenu inutile.
 
 - Finalisation du pilote de Première générale spécialité mathématiques :
   enrichissement du second degré, du produit scalaire, des probabilités
