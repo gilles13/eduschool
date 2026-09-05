@@ -1,3 +1,8 @@
+# eduschool 0.12.1
+
+- ajout de visuels
+- modification page d accueil du site
+
 # eduschool 0.12.0
 
 ## Recentrage, experience utilisateur et contribution

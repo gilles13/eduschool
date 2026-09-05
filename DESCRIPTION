@@ -1,7 +1,7 @@
 Package: eduschool
 Type: Package
 Title: Cartographie de la scolarité française et outils de mathématiques
-Version: 0.12.0
+Version: 0.12.1
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
 Description: Cartographie la scolarité des collégiens et lycéens en France :
     niveaux, cycles, voies, séries, enseignements, programmes, orientation et
