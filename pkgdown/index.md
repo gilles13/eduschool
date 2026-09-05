@@ -14,10 +14,49 @@ et collaboratif.
 
 ## Les quatre portes d'entrée
 
-| | |
-|:--|:--|
-| ![Parcours scolaire](identite/parcours.png) **[Parcours scolaire](articles/parcours-scolaires.html)** — Niveaux, cycles, voies, séries, options, spécialités, orientation et Parcoursup. | ![Mathématiques](identite/maths.png) **[Mathématiques](articles/fiches-revision-mathematiques.html)** — Programmes, capacités, fiches de révision, exercices et ressources. |
-| ![Créer et partager](identite/partage.png) **[Créer et partager](articles/contribuer-et-partager.html)** — Adapter les outils, proposer des corrections et mutualiser fiches et exercices. | ![Données et R](identite/donnees.png) **[Données et R](reference/index.html)** — Une API simple pour explorer les données, produire des documents et aller plus loin. |
+::: {.row .eduschool-entries}
+
+::: {.col-md-6 .eduschool-entry}
+
+![](identite/parcours.png)
+
+### [Parcours scolaire](articles/parcours-scolaires.html)
+
+Niveaux, cycles, voies, séries, options, spécialités, orientation et Parcoursup.
+
+:::
+
+::: {.col-md-6 .eduschool-entry}
+
+![](identite/maths.png)
+
+### [Mathématiques](articles/fiches-revision-mathematiques.html)
+
+Programmes, capacités, fiches de révision, exercices et ressources.
+
+:::
+
+::: {.col-md-6 .eduschool-entry}
+
+![](identite/partage.png)
+
+### [Créer et partager](articles/contribuer-et-partager.html)
+
+Adapter les outils, proposer des corrections et mutualiser fiches et exercices.
+
+:::
+
+::: {.col-md-6 .eduschool-entry}
+
+![](identite/donnees.png)
+
+### [Données et R](reference/index.html)
+
+Une API simple pour explorer les données, produire des documents et aller plus loin.
+
+:::
+
+:::
 
 ---
 
@@ -65,11 +104,14 @@ améliorations de l'API ont vocation à être mutualisées.
 
 ---
 
-## Un projet volontairement centré
+## Un projet volontairement centré sur les math
 
-![Mathématiques](identite/compas.png)
+::: {.eduschool-maths-focus}
 
-L'architecture d'`eduschool` peut accueillir d'autres disciplines. Le projet
-reste néanmoins centré sur les **mathématiques** pour ses fiches de révision et
-ses exercices. Cette limite volontaire permet de garder un outil cohérent,
-maintenable et réellement utile.
+![](identite/compas.png)
+
+L'architecture d'`eduschool` peut accueillir d'autres disciplines. Les fiches
+de révision et les exercices restent volontairement consacrés aux mathématiques.
+Cette limite permet de garder un outil cohérent, maintenable et réellement utile.
+
+:::
