@@ -47,3 +47,45 @@ MATX_PROBA_TABLEAU;Probabilités conditionnelles sur tableau;PROBABILITES;MATC_T
 MATX_PROBA_INVERSE;Retrouver une probabilité conditionnelle;PROBABILITES;MATC_PROBA_CONDITIONNELLE;Combiner arbre, intersection et probabilité totale pour retrouver une conditionnelle.;1G;3
 MATX_VA_LOI;Construire une loi de variable aléatoire;PROBABILITES;MATC_LOI_VARIABLE;Passer d’une expérience à la loi d’une variable aléatoire.;1G;2
 MATX_VA_INDICATEURS;Espérance, variance et écart type;PROBABILITES;MATC_ESPERANCE;Calculer et interpréter les indicateurs d’une loi discrète.;1G;2
+MATX_6E_FRACTIONS;Fractions : représenter, comparer et calculer;NOMBRES;MATC_FRACTION;Mobiliser plusieurs sens de la fraction dans un problème court.;6E;2
+MATX_6E_GRANDEURS;Grandeurs : périmètres, aires et volumes;GRANDEURS;MATC_AIRE;Choisir la bonne grandeur, convertir et calculer dans une figure ou un solide.;6E;2
+MATX_6E_GEOMETRIE;Construction géométrique raisonnée;GEOMETRIE;MATC_TRIANGLE;Construire une configuration et justifier une propriété simple.;6E;2
+MATX_6E_PROBA;Expérience aléatoire et fréquence;PROBABILITES;MATC_PROBABILITE;Calculer une probabilité simple puis la comparer à une fréquence observée.;6E;2
+MATX_6E_PROP;Proportionnalité en contexte;FONCTIONS;MATC_PROPORTIONNALITE;Reconnaître le modèle et choisir une stratégie de résolution.;6E;2
+MATX_6E_ALGO;Séquence et répétition;ALGORITHMIQUE;MATC_ALGORITHME;Exécuter, compléter ou produire un algorithme court avec répétition.;6E;2
+MATX_5E_RELATIFS;Calculs avec nombres relatifs;NOMBRES;MATC_NOMBRE_RELATIF;Enchaîner des calculs et interpréter les signes.;5E;2
+MATX_5E_LITTERAL;Calcul littéral et distributivité;ALGEBRE;MATC_EXPRESSION_LITTERALE;Traduire, réduire puis transformer une expression simple.;5E;2
+MATX_5E_TRANSFO;Transformations et repérage;GEOMETRIE;MATC_TRANSFORMATION;Construire ou identifier des images et exploiter un repère.;5E;2
+MATX_5E_STATS_PROBA;Données et probabilités;STATISTIQUES;MATC_REPRESENTATION_DONNEES;Lire des données, calculer un indicateur et interpréter une probabilité.;5E;2
+MATX_5E_FONCTION;Proportionnalité et fonctions;FONCTIONS;MATC_FONCTION;Passer entre tableau, formule et graphique dans une situation de dépendance.;5E;2
+MATX_5E_ALGO;Variables, conditions et boucles;ALGORITHMIQUE;MATC_ALGORITHME;Lire et compléter un algorithme utilisant variables, affectations et structures de contrôle.;5E;2
+MATX_4E_NOTSCI;Notation scientifique et ordres de grandeur;NOMBRES;MATC_NOTATION_SCIENTIFIQUE;Écrire, comparer et exploiter de très grands ou très petits nombres.;4E;2
+MATX_4E_PREMIERS;Facteurs premiers et fractions;ARITHMETIQUE;MATC_FACTEURS_PREMIERS;Décomposer des entiers et simplifier des fractions.;4E;2
+MATX_4E_LITTERAL;Développement, factorisation et équation;ALGEBRE;MATC_EQUATION_PREMIER_DEGRE;Transformer une expression puis mettre en équation et résoudre.;4E;2
+MATX_4E_STAT;Diagramme circulaire et médiane;STATISTIQUES;MATC_MEDIANE;Représenter une série et en interpréter la médiane.;4E;2
+MATX_4E_PROBA;Événements et probabilités;PROBABILITES;MATC_EVENEMENT;Décrire des événements, calculer une probabilité et utiliser l’événement contraire.;4E;2
+MATX_4E_PROPORTION;Proportionnalité et quatrième proportionnelle;FONCTIONS;MATC_PROPORTIONNALITE;Résoudre un problème de proportionnalité par plusieurs procédures.;4E;2
+MATX_4E_PYTH;Pythagore et sa réciproque;GEOMETRIE;MATC_PYTHAGORE;Calculer une longueur ou démontrer qu’un triangle est rectangle.;4E;2
+MATX_4E_THALES;Thalès et parallélisme;GEOMETRIE;MATC_THALES;Calculer une longueur ou démontrer un parallélisme.;4E;3
+MATX_4E_TRIGO;Cosinus dans le triangle rectangle;GEOMETRIE;MATC_COSINUS;Calculer une longueur ou un angle à l’aide du cosinus.;4E;2
+MATX_3E_ALGEBRE;Double distributivité et équations-produits;ALGEBRE;MATC_DOUBLE_DISTRIBUTIVITE;Développer, factoriser puis résoudre une équation adaptée.;3E;3
+MATX_3E_HISTO;Histogramme et étendue;STATISTIQUES;MATC_HISTOGRAMME;Lire ou construire un histogramme et calculer des indicateurs.;3E;2
+MATX_3E_PROBA_SIM;Probabilités et simulation;PROBABILITES;MATC_PROBABILITE;Comparer probabilités théoriques et fréquences issues d’une simulation.;3E;3
+MATX_3E_FONCTIONS;Fonctions linéaires et affines;FONCTIONS;MATC_FONCTION_AFFINE;Passer entre formule, tableau et graphique et interpréter les coefficients.;3E;2
+MATX_3E_EVOLUTION;Pourcentages d’évolution;FONCTIONS;MATC_COEFFICIENT_MULTIPLICATEUR;Résoudre des évolutions en utilisant un coefficient multiplicateur.;3E;2
+MATX_3E_HOMOTH;Homothétie et échelles;GEOMETRIE;MATC_HOMOTHETIE;Calculer longueurs, aires ou volumes après une homothétie.;3E;3
+MATX_3E_THALES;Thalès et triangles semblables;GEOMETRIE;MATC_TRIANGLES_SEMBLABLES;Démontrer ou calculer en mobilisant Thalès et les triangles semblables.;3E;3
+MATX_3E_TRIGO;Trigonométrie complète;GEOMETRIE;MATC_COSINUS;Choisir entre cosinus, sinus et tangente pour résoudre un triangle rectangle.;3E;3
+MATX_3E_ALGO;Programme avec sous-problèmes et simulation;ALGORITHMIQUE;MATC_BLOC_PERSONNALISE;Créer un programme combinant bloc personnalisé, boucles, conditions et variables.;3E;3
+MATX_2GT_LOGIQUE;Ensembles, intervalles et logique;LOGIQUE;MATC_INTERVALLE;Traduire des conditions, manipuler des ensembles et justifier une implication.;2GT;2
+MATX_2GT_ALGO;Algorithme et fonction informatique;ALGORITHMIQUE;MATC_FONCTION_INFORMATIQUE;Lire, compléter puis écrire une fonction utilisant conditions ou boucles.;2GT;2
+MATX_2GT_ARITH;Divisibilité et fraction irréductible;ARITHMETIQUE;MATC_FRACTION_IRREDUCTIBLE;Résoudre un problème de divisibilité et produire une fraction irréductible.;2GT;2
+MATX_2GT_REELS;Réels, irrationnels et approximation;NOMBRES;MATC_NOMBRE_REEL;Repérer, encadrer et comparer valeurs exactes et approchées.;2GT;2
+MATX_2GT_ALGEBRE;Calcul littéral, équations et inéquations;ALGEBRE;MATC_INEQUATION_PREMIER_DEGRE;Transformer une expression puis résoudre une équation ou une inéquation.;2GT;2
+MATX_2GT_VECTEURS;Vecteurs et géométrie repérée;GEOMETRIE;MATC_VECTEUR;Utiliser coordonnées et relations vectorielles pour démontrer ou calculer.;2GT;2
+MATX_2GT_DROITES;Droites et coefficient directeur;GEOMETRIE;MATC_EQUATION_DROITE;Déterminer une équation de droite et exploiter pente ou parallélisme.;2GT;2
+MATX_2GT_FONCTIONS;Fonctions : images, antécédents et courbes;FONCTIONS;MATC_FONCTION;Passer entre expression, graphique et équation de courbe.;2GT;2
+MATX_2GT_VARIATIONS;Variations et extremum;FONCTIONS;MATC_VARIATION_FONCTION;Lire ou établir des variations et interpréter un extremum.;2GT;2
+MATX_2GT_EVOLUTIONS;Pourcentages et évolutions;STATISTIQUES;MATC_COEFFICIENT_MULTIPLICATEUR;Calculer proportions, taux et coefficients multiplicateurs en contexte.;2GT;2
+MATX_2GT_STATS;Indicateurs et tableau croisé;STATISTIQUES;MATC_TABLEAU_CROISE;Calculer des indicateurs et interpréter des fréquences conditionnelles.;2GT;2
+MATX_2GT_PROBA;Probabilités sur univers fini;PROBABILITES;MATC_EQUIPROBABILITE;Décrire l’univers, calculer événements contraires et probabilités par comptage.;2GT;2

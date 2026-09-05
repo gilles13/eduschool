@@ -77,3 +77,45 @@ MCR_PR07;MATC_LOI_VARIABLE;MATC_VARIABLE_ALEATOIRE;PREREQUIS;fort;La loi décrit
 MCR_PR08;MATC_ESPERANCE;MATC_LOI_VARIABLE;PREREQUIS;fort;L’espérance est calculée à partir de la loi.
 MCR_PR09;MATC_VARIANCE;MATC_ESPERANCE;PREREQUIS;moyen;La variance mesure la dispersion autour de l’espérance.
 MCR_PR10;MATC_ECART_TYPE;MATC_VARIANCE;PREREQUIS;fort;L’écart type est la racine carrée de la variance.
+MCR_6E5E_001;MATC_FRACTION;MATC_NOMBRE_RATIONNEL;PREREQUIS;fort;La fraction étudiée en 6e prépare la formalisation des nombres rationnels en 5e.
+MCR_6E5E_002;MATC_FRACTION;MATC_POURCENTAGE;ASSOCIE;fort;Les pourcentages mobilisent des écritures fractionnaires de proportions.
+MCR_6E5E_003;MATC_PROPORTIONNALITE;MATC_COEFFICIENT_PROPORTIONNALITE;PROLONGEMENT;fort;Le coefficient formalise en 5e la relation multiplicative rencontrée en 6e.
+MCR_6E5E_004;MATC_PROPORTIONNALITE;MATC_FONCTION;PREREQUIS;moyen;La dépendance entre grandeurs prépare l’entrée dans la notion de fonction.
+MCR_6E5E_005;MATC_INCONNUE;MATC_VARIABLE;PROLONGEMENT;fort;Le nombre inconnu prépare l’usage plus général d’une lettre variable.
+MCR_6E5E_006;MATC_VARIABLE;MATC_EXPRESSION_LITTERALE;PREREQUIS;fort;La lettre variable intervient dans la construction et l’interprétation des expressions littérales.
+MCR_6E5E_007;MATC_OPERATION;MATC_PRIORITES;PREREQUIS;fort;La maîtrise des opérations précède l’organisation d’un calcul comportant plusieurs opérations.
+MCR_6E5E_008;MATC_SYMETRIE_AXIALE;MATC_TRANSFORMATION;EXEMPLE_DE;moyen;La symétrie axiale constitue une première transformation géométrique.
+MCR_6E5E_009;MATC_TRANSFORMATION;MATC_TRANSLATION;EXEMPLE_DE;moyen;La translation est une transformation du plan.
+MCR_6E5E_010;MATC_EXPERIENCE_ALEATOIRE;MATC_PROBABILITE;ASSOCIE;fort;Les probabilités modélisent les issues et événements d’une expérience aléatoire.
+MCR_6E5E_011;MATC_FREQUENCE;MATC_PROBABILITE;ASSOCIE;fort;La fréquence observée est comparée à la probabilité théorique.
+MCR_6E5E_012;MATC_SEQUENCE_INSTRUCTIONS;MATC_ALGORITHME;COMPOSANT;fort;Un algorithme est constitué d’instructions organisées.
+MCR_6E5E_013;MATC_BOUCLE;MATC_ALGORITHME;COMPOSANT;fort;Une boucle structure la répétition dans un algorithme.
+MCR_6E5E_014;MATC_AFFECTATION;MATC_VARIABLE;ASSOCIE;fort;L’affectation modifie la valeur d’une variable algorithmique.
+MCR4E01;MATC_NOTATION_SCIENTIFIQUE;MATC_PUISSANCE_DIX;REPOSE_SUR;fort;La notation scientifique mobilise les puissances de dix.
+MCR4E02;MATC_FACTEURS_PREMIERS;MATC_NOMBRE_PREMIER;REPOSE_SUR;fort;Une décomposition en facteurs premiers utilise uniquement des nombres premiers.
+MCR4E03;MATC_EQUATION_PREMIER_DEGRE;MATC_EXPRESSION_LITTERALE;REPOSE_SUR;fort;La résolution d’équations suppose la maîtrise des expressions littérales.
+MCR4E04;MATC_RECIPROQUE_PYTHAGORE;MATC_PYTHAGORE;PROLONGE;fort;La réciproque complète le théorème direct.
+MCR4E05;MATC_RECIPROQUE_THALES;MATC_THALES;PROLONGE;fort;La réciproque complète le théorème direct.
+MCR4E06;MATC_COSINUS;MATC_PYTHAGORE;ASSOCIE;moyen;Cosinus et Pythagore interviennent dans le triangle rectangle.
+MCR3E01;MATC_DOUBLE_DISTRIBUTIVITE;MATC_DISTRIBUTIVITE;PROLONGE;fort;La double distributivité prolonge la distributivité simple.
+MCR3E02;MATC_EQUATION_PRODUIT;MATC_EQUATION_PREMIER_DEGRE;PROLONGE;fort;Les équations-produits conduisent à résoudre plusieurs équations simples.
+MCR3E03;MATC_FONCTION_LINEAIRE;MATC_PROPORTIONNALITE;MODELISATION;fort;Une fonction linéaire modélise une situation de proportionnalité.
+MCR3E04;MATC_FONCTION_AFFINE;MATC_FONCTION_LINEAIRE;PROLONGE;fort;La fonction affine généralise la fonction linéaire.
+MCR3E05;MATC_HOMOTHETIE;MATC_AGRANDISSEMENT_REDUCTION;FORMALISE;fort;L’homothétie formalise agrandissements et réductions.
+MCR3E06;MATC_TRIANGLES_SEMBLABLES;MATC_THALES;ASSOCIE;fort;Les triangles semblables et Thalès exploitent la proportionnalité des longueurs.
+MCR3E07;MATC_SINUS;MATC_COSINUS;ASSOCIE;fort;Sinus et cosinus sont deux rapports trigonométriques du triangle rectangle.
+MCR3E08;MATC_TANGENTE_TRIGO;MATC_COSINUS;ASSOCIE;fort;La tangente complète les rapports trigonométriques du triangle rectangle.
+MCR2GT01;MATC_INTERVALLE;MATC_NOMBRE_REEL;REPRESENTE;fort;Un intervalle représente un sous-ensemble de la droite réelle.
+MCR2GT02;MATC_IMPLICATION;MATC_PROPOSITION_LOGIQUE;STRUCTURE;fort;Une implication combine deux propositions.
+MCR2GT03;MATC_EQUIVALENCE;MATC_IMPLICATION;COMBINE;fort;Une équivalence correspond à deux implications réciproques.
+MCR2GT04;MATC_CONTRE_EXEMPLE;MATC_PROPOSITION_LOGIQUE;REFUTE;fort;Un contre-exemple réfute une proposition universelle.
+MCR2GT05;MATC_FRACTION_IRREDUCTIBLE;MATC_FACTEURS_PREMIERS;UTILISE;moyen;La décomposition en facteurs premiers aide à réduire une fraction.
+MCR2GT06;MATC_NOMBRE_IRRATIONNEL;MATC_NOMBRE_REEL;SPECIALISE;fort;Les irrationnels constituent une partie des nombres réels.
+MCR2GT07;MATC_INEQUATION_PREMIER_DEGRE;MATC_INTERVALLE;REPRESENTE;fort;Les solutions d’une inéquation du premier degré peuvent être représentées par un intervalle.
+MCR2GT08;MATC_COORDONNEES_VECTEUR;MATC_VECTEUR;REPRESENTE;fort;Les coordonnées donnent une représentation numérique d’un vecteur.
+MCR2GT09;MATC_EQUATION_DROITE;MATC_COEFF_DIRECTEUR;UTILISE;fort;Le coefficient directeur intervient dans l’équation réduite d’une droite non verticale.
+MCR2GT10;MATC_FONCTION_AFFINE;MATC_EQUATION_DROITE;REPRESENTE;fort;La représentation graphique d’une fonction affine est une droite.
+MCR2GT11;MATC_VARIATION_FONCTION;MATC_EXTREMUM;ASSOCIE;fort;L’étude des variations permet de repérer les extrema.
+MCR2GT12;MATC_FREQUENCE_CONDITIONNELLE;MATC_TABLEAU_CROISE;CALCULE_DANS;fort;Les fréquences conditionnelles se calculent naturellement dans un tableau croisé.
+MCR2GT13;MATC_EQUIPROBABILITE;MATC_PROBABILITE;SPECIALISE;fort;En équiprobabilité, les probabilités se déduisent par comptage.
+MCR2GT14;MATC_SIMULATION;MATC_FONCTION_INFORMATIQUE;UTILISE;moyen;Une fonction informatique peut encapsuler la simulation d’une expérience aléatoire.

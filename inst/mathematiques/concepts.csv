@@ -63,3 +63,117 @@ MATC_INTERSECTION_EVENEMENTS;Intersection d’événements;Événement correspon
 MATC_TABLEAU_PROBA;Tableau de probabilités;Représentation tabulaire d’événements croisés et de leurs probabilités.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
 MATC_ARBRE_PROBA;Arbre pondéré;Représentation hiérarchique de probabilités conditionnelles par branches successives.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
 MATC_EPREUVE_BERNOULLI;Épreuve de Bernoulli;Expérience aléatoire à deux issues, succès et échec.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_NOMBRE_DECIMAL;Nombre décimal;Nombre admettant une écriture décimale finie.;NOMBRES;structurant;6E;PRG_MAT_C3_2025
+MATC_NUMERATION_POSITION;Numération de position;Valeur d’un chiffre déterminée par sa position dans l’écriture du nombre.;NOMBRES;structurant;6E;PRG_MAT_C3_2025
+MATC_OPERATION;Opérations arithmétiques;Addition, soustraction, multiplication et division comme opérations sur les nombres.;NOMBRES;structurant;6E;PRG_MAT_C3_2025
+MATC_PRIORITES;Priorités opératoires;Règles déterminant l’ordre d’exécution des opérations dans une expression.;NOMBRES;structurant;5E;PRG_MAT_C4_2026
+MATC_FRACTION;Fraction;Écriture a/b représentant un quotient, un nombre ou un opérateur, avec b non nul.;NOMBRES;structurant;6E;PRG_MAT_C3_2025
+MATC_NOMBRE_RATIONNEL;Nombre rationnel;Nombre pouvant s’écrire comme quotient de deux entiers, le dénominateur étant non nul.;NOMBRES;structurant;5E;PRG_MAT_C4_2026
+MATC_POURCENTAGE;Pourcentage;Proportion exprimée relativement à cent.;NOMBRES;structurant;6E;PRG_MAT_C3_2025
+MATC_NOMBRE_RELATIF;Nombre relatif;Nombre muni d’un signe permettant notamment de repérer une position par rapport à zéro.;NOMBRES;structurant;5E;PRG_MAT_C4_2026
+MATC_PUISSANCE;Puissance entière;Écriture compacte d’un produit itéré d’un même facteur.;NOMBRES;structurant;5E;PRG_MAT_C4_2026
+MATC_PUISSANCE_DIX;Puissance de dix;Puissance de base dix utilisée pour les ordres de grandeur et les changements d’échelle.;NOMBRES;structurant;5E;PRG_MAT_C4_2026
+MATC_INCONNUE;Inconnue;Quantité dont la valeur est à déterminer dans un problème ou une égalité.;ALGEBRE;structurant;6E;PRG_MAT_C3_2025
+MATC_REGULARITE;Régularité;Organisation répétitive ou évolutive permettant d’identifier une règle.;ALGEBRE;structurant;6E;PRG_MAT_C3_2025
+MATC_EXPRESSION_LITTERALE;Expression littérale;Expression mathématique comportant une ou plusieurs lettres représentant des nombres.;ALGEBRE;structurant;5E;PRG_MAT_C4_2026
+MATC_VARIABLE;Variable;Symbole représentant une quantité susceptible de prendre différentes valeurs.;ALGEBRE;structurant;5E;PRG_MAT_C4_2026
+MATC_DISTRIBUTIVITE;Distributivité;Propriété reliant multiplication et addition ou soustraction.;ALGEBRE;structurant;5E;PRG_MAT_C4_2026
+MATC_LONGUEUR;Longueur;Grandeur mesurant une distance ou une dimension linéaire.;GRANDEURS;structurant;6E;PRG_MAT_C3_2025
+MATC_PERIMETRE;Périmètre;Longueur du contour d’une figure plane.;GRANDEURS;structurant;6E;PRG_MAT_C3_2025
+MATC_AIRE;Aire;Grandeur mesurant l’étendue d’une surface.;GRANDEURS;structurant;6E;PRG_MAT_C3_2025
+MATC_VOLUME;Volume;Grandeur mesurant l’espace occupé par un solide.;GRANDEURS;structurant;6E;PRG_MAT_C3_2025
+MATC_DUREE;Durée;Grandeur mesurant un intervalle de temps.;GRANDEURS;structurant;6E;PRG_MAT_C3_2025
+MATC_ANGLE;Angle;Figure formée par deux demi-droites de même origine et grandeur associée à leur écart.;GEOMETRIE;structurant;6E;PRG_MAT_C3_2025
+MATC_TRIANGLE;Triangle;Polygone à trois côtés.;GEOMETRIE;structurant;6E;PRG_MAT_C3_2025
+MATC_CERCLE;Cercle;Ensemble des points situés à une distance donnée d’un centre.;GEOMETRIE;structurant;6E;PRG_MAT_C3_2025
+MATC_MEDIATRICE;Médiatrice;Droite perpendiculaire à un segment passant par son milieu.;GEOMETRIE;structurant;6E;PRG_MAT_C3_2025
+MATC_SYMETRIE_AXIALE;Symétrie axiale;Transformation géométrique définie par réflexion par rapport à une droite.;GEOMETRIE;structurant;6E;PRG_MAT_C3_2025
+MATC_TRANSFORMATION;Transformation géométrique;Application du plan qui associe une image à chaque point ou figure.;GEOMETRIE;structurant;5E;PRG_MAT_C4_2026
+MATC_TRANSLATION;Translation;Transformation déplaçant tous les points selon une même direction, un même sens et une même longueur.;GEOMETRIE;structurant;5E;PRG_MAT_C4_2026
+MATC_ROTATION;Rotation;Transformation déterminée par un centre et un angle.;GEOMETRIE;structurant;5E;PRG_MAT_C4_2026
+MATC_PARALLELOGRAMME;Parallélogramme;Quadrilatère dont les côtés opposés sont parallèles deux à deux.;GEOMETRIE;structurant;5E;PRG_MAT_C4_2026
+MATC_REPERE;Repère du plan;Système de coordonnées permettant de localiser des points dans le plan.;GEOMETRIE;structurant;5E;PRG_MAT_C4_2026
+MATC_SOLIDE;Solide;Objet géométrique de l’espace à trois dimensions.;GEOMETRIE;structurant;6E;PRG_MAT_C3_2025
+MATC_PATRON;Patron de solide;Figure plane permettant de reconstruire la surface d’un solide par pliage.;GEOMETRIE;structurant;5E;PRG_MAT_C4_2026
+MATC_DONNEES;Données;Valeurs ou catégories recueillies et organisées pour répondre à une question.;STATISTIQUES;structurant;6E;PRG_MAT_C3_2025
+MATC_REPRESENTATION_DONNEES;Représentation de données;Tableau ou graphique permettant de synthétiser et lire un ensemble de données.;STATISTIQUES;structurant;6E;PRG_MAT_C3_2025
+MATC_INDICATEUR_STAT;Indicateur statistique;Nombre synthétisant une caractéristique d’une série de données.;STATISTIQUES;structurant;5E;PRG_MAT_C4_2026
+MATC_PROBABILITE;Probabilité;Nombre compris entre 0 et 1 mesurant la vraisemblance d’un événement.;PROBABILITES;structurant;6E;PRG_MAT_C3_2025
+MATC_EXPERIENCE_ALEATOIRE;Expérience aléatoire;Expérience dont l’issue ne peut être prévue avec certitude avant sa réalisation.;PROBABILITES;structurant;6E;PRG_MAT_C3_2025
+MATC_FREQUENCE;Fréquence;Rapport entre l’effectif d’une modalité ou d’un événement et l’effectif total.;STATISTIQUES;structurant;6E;PRG_MAT_C3_2025
+MATC_PROPORTIONNALITE;Proportionnalité;Relation entre deux grandeurs dont l’une s’obtient en multipliant l’autre par une constante.;FONCTIONS;structurant;6E;PRG_MAT_C3_2025
+MATC_COEFFICIENT_PROPORTIONNALITE;Coefficient de proportionnalité;Constante multiplicative reliant deux grandeurs proportionnelles.;FONCTIONS;structurant;5E;PRG_MAT_C4_2026
+MATC_ECHELLE;Échelle;Rapport constant entre une longueur représentée et la longueur réelle correspondante.;FONCTIONS;structurant;6E;PRG_MAT_C3_2025
+MATC_FONCTION;Fonction;Relation qui associe à chaque valeur admissible d’une variable une unique valeur.;FONCTIONS;structurant;5E;PRG_MAT_C4_2026
+MATC_IMAGE_ANTECEDENT;Image et antécédent;Vocabulaire décrivant les valeurs reliées par une fonction.;FONCTIONS;structurant;5E;PRG_MAT_C4_2026
+MATC_ALGORITHME;Algorithme;Suite finie et organisée d’instructions permettant d’obtenir un résultat.;ALGORITHMIQUE;structurant;6E;PRG_MAT_C3_2025
+MATC_SEQUENCE_INSTRUCTIONS;Séquence d’instructions;Instructions exécutées successivement dans un ordre déterminé.;ALGORITHMIQUE;structurant;6E;PRG_MAT_C3_2025
+MATC_BOUCLE;Boucle;Structure algorithmique permettant de répéter une ou plusieurs instructions.;ALGORITHMIQUE;structurant;6E;PRG_MAT_C3_2025
+MATC_AFFECTATION;Affectation;Instruction donnant une valeur à une variable.;ALGORITHMIQUE;structurant;5E;PRG_MAT_C4_2026
+MATC_CONDITION;Condition;Expression logique contrôlant l’exécution d’une instruction ou d’un bloc.;ALGORITHMIQUE;structurant;5E;PRG_MAT_C4_2026
+MATC_NOTATION_SCIENTIFIQUE;Notation scientifique;Écriture d’un nombre sous la forme a × 10^n avec 1 ≤ |a| < 10.;NOMBRES;structurant;4E;PRG_MAT_C4_2020
+MATC_RACINE_CARREE;Racine carrée;Nombre positif dont le carré est égal au nombre considéré.;NOMBRES;structurant;4E;PRG_MAT_C4_2020
+MATC_NOMBRE_PREMIER;Nombre premier;Entier positif ayant exactement deux diviseurs positifs.;ARITHMETIQUE;structurant;4E;PRG_MAT_C4_2020
+MATC_FACTEURS_PREMIERS;Décomposition en facteurs premiers;Écriture d’un entier comme produit de nombres premiers.;ARITHMETIQUE;structurant;4E;PRG_MAT_C4_2020
+MATC_EQUATION_PREMIER_DEGRE;Équation du premier degré;Égalité comportant une inconnue et se ramenant à ax+b=0.;ALGEBRE;structurant;4E;PRG_MAT_C4_2020
+MATC_MEDIANE;Médiane;Valeur partageant une série ordonnée en deux groupes d’effectifs comparables.;STATISTIQUES;structurant;4E;PRG_MAT_C4_2020
+MATC_EVENEMENT;Événement;Ensemble d’issues d’une expérience aléatoire.;PROBABILITES;structurant;4E;PRG_MAT_C4_2020
+MATC_EVENEMENT_CONTRAIRE;Événement contraire;Événement formé des issues qui ne réalisent pas un événement donné.;PROBABILITES;structurant;4E;PRG_MAT_C4_2020
+MATC_QUATRIEME_PROPORTIONNELLE;Quatrième proportionnelle;Valeur manquante déterminée dans une situation de proportionnalité.;FONCTIONS;structurant;4E;PRG_MAT_C4_2020
+MATC_PYRAMIDE;Pyramide;Solide constitué d’une base polygonale et de faces latérales triangulaires.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_CONE;Cône de révolution;Solide engendré par la rotation d’un triangle rectangle autour d’un côté de l’angle droit.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_GRANDEUR_COMPOSEE;Grandeur composée;Grandeur obtenue par combinaison de plusieurs grandeurs simples, par exemple vitesse ou débit.;GRANDEURS;structurant;4E;PRG_MAT_C4_2020
+MATC_AGRANDISSEMENT_REDUCTION;Agrandissement et réduction;Transformation d’une figure par multiplication de toutes les longueurs par un même rapport.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_PYTHAGORE;Théorème de Pythagore;Relation entre les longueurs des côtés d’un triangle rectangle.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_RECIPROQUE_PYTHAGORE;Réciproque du théorème de Pythagore;Critère permettant d’établir qu’un triangle est rectangle à partir de ses longueurs.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_THALES;Théorème de Thalès;Relation de proportionnalité des longueurs dans certaines configurations de droites parallèles.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_RECIPROQUE_THALES;Réciproque du théorème de Thalès;Critère de parallélisme fondé sur l’égalité de rapports de longueurs.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_COSINUS;Cosinus dans un triangle rectangle;Rapport du côté adjacent à l’hypoténuse pour un angle aigu.;GEOMETRIE;structurant;4E;PRG_MAT_C4_2020
+MATC_DOUBLE_DISTRIBUTIVITE;Double distributivité;Développement d’un produit de deux sommes ou différences.;ALGEBRE;structurant;3E;PRG_MAT_C4_2020
+MATC_EQUATION_PRODUIT;Équation-produit;Équation dont un membre est un produit nul.;ALGEBRE;structurant;3E;PRG_MAT_C4_2020
+MATC_IDENTITE_DIFFERENCE_CARRES;Différence de deux carrés;Identité algébrique a²-b²=(a-b)(a+b).;ALGEBRE;structurant;3E;PRG_MAT_C4_2020
+MATC_ETENDUE;Étendue;Différence entre la plus grande et la plus petite valeur d’une série statistique.;STATISTIQUES;structurant;3E;PRG_MAT_C4_2020
+MATC_HISTOGRAMME;Histogramme;Représentation graphique de données regroupées en classes par rectangles contigus.;STATISTIQUES;structurant;3E;PRG_MAT_C4_2020
+MATC_FONCTION_LINEAIRE;Fonction linéaire;Fonction de la forme x ↦ ax modélisant une situation de proportionnalité.;FONCTIONS;structurant;3E;PRG_MAT_C4_2020
+MATC_FONCTION_AFFINE;Fonction affine;Fonction de la forme x ↦ ax+b.;FONCTIONS;structurant;3E;PRG_MAT_C4_2020
+MATC_COEFFICIENT_MULTIPLICATEUR;Coefficient multiplicateur;Facteur traduisant une évolution proportionnelle ou en pourcentage.;FONCTIONS;structurant;3E;PRG_MAT_C4_2020
+MATC_HOMOTHETIE;Homothétie;Transformation définie par un centre et un rapport qui multiplie les longueurs.;GEOMETRIE;structurant;3E;PRG_MAT_C4_2020
+MATC_TRIANGLES_SEMBLABLES;Triangles semblables;Triangles ayant les mêmes angles et des côtés correspondants proportionnels.;GEOMETRIE;structurant;3E;PRG_MAT_C4_2020
+MATC_SINUS;Sinus dans un triangle rectangle;Rapport du côté opposé à l’hypoténuse pour un angle aigu.;GEOMETRIE;structurant;3E;PRG_MAT_C4_2020
+MATC_TANGENTE_TRIGO;Tangente dans un triangle rectangle;Rapport du côté opposé au côté adjacent pour un angle aigu.;GEOMETRIE;structurant;3E;PRG_MAT_C4_2020
+MATC_LATITUDE_LONGITUDE;Latitude et longitude;Coordonnées angulaires permettant de repérer un point sur la Terre modélisée par une sphère.;GEOMETRIE;structurant;3E;PRG_MAT_C4_2020
+MATC_SECTION_SOLIDE;Section plane d’un solide;Figure obtenue par intersection d’un solide avec un plan.;GEOMETRIE;structurant;3E;PRG_MAT_C4_2020
+MATC_BLOC_PERSONNALISE;Bloc personnalisé;Sous-programme réutilisable regroupant une suite d’instructions.;ALGORITHMIQUE;structurant;3E;PRG_MAT_C4_2020
+MATC_ENSEMBLE;Ensemble;Collection d’objets mathématiques considérés comme un tout.;LOGIQUE;fondamental;2GT;PRG_MAT_2GT_2026
+MATC_INTERVALLE;Intervalle réel;Sous-ensemble de la droite réelle défini par des bornes et leur inclusion éventuelle.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_APPARTENANCE_INCLUSION;Appartenance et inclusion;Relations distinguant un élément appartenant à un ensemble et un ensemble inclus dans un autre.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_UNION_INTERSECTION;Union et intersection;Opérations ensemblistes réunissant des éléments ou conservant ceux communs à plusieurs ensembles.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_COMPLEMENTAIRE_ENSEMBLE;Complémentaire d’un ensemble;Ensemble des éléments de l’univers qui n’appartiennent pas à un sous-ensemble donné.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_PROPOSITION_LOGIQUE;Proposition logique;Énoncé mathématique auquel on peut attribuer une valeur de vérité.;LOGIQUE;fondamental;2GT;PRG_MAT_2GT_2026
+MATC_CONNECTEUR_LOGIQUE;Connecteur logique;Opérateur permettant de combiner ou nier des propositions.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_IMPLICATION;Implication;Relation logique exprimant qu’une proposition en entraîne une autre.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_EQUIVALENCE;Équivalence logique;Relation logique exprimant deux implications réciproques.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_RECIPROQUE_CONTRAPOSEE;Réciproque et contraposée;Transformations d’une implication utilisées pour raisonner et démontrer.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_CONTRE_EXEMPLE;Contre-exemple;Exemple qui suffit à réfuter une proposition universelle.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_RAISONNEMENT_ABSURDE;Raisonnement par l’absurde;Raisonnement qui suppose la négation du résultat pour obtenir une contradiction.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_DISJONCTION_CAS;Disjonction des cas;Raisonnement qui traite séparément plusieurs cas couvrant toutes les possibilités.;LOGIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_TYPE_VARIABLE_INFO;Type de variable informatique;Nature d’une valeur manipulée par un programme : entier, flottant, booléen ou chaîne.;ALGORITHMIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_FONCTION_INFORMATIQUE;Fonction informatique;Bloc de programme paramétré qui reçoit des arguments et renvoie ou produit un résultat.;ALGORITHMIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_ARGUMENT_FONCTION_INFO;Argument d’une fonction informatique;Valeur transmise à une fonction lors de son appel.;ALGORITHMIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_DIVISEUR_MULTIPLE;Multiples et diviseurs;Relations arithmétiques fondées sur la divisibilité entre nombres entiers.;ARITHMETIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_FRACTION_IRREDUCTIBLE;Fraction irréductible;Fraction dont le numérateur et le dénominateur sont premiers entre eux.;ARITHMETIQUE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_NOMBRE_REEL;Nombre réel;Nombre repérable sur une droite graduée, rationnel ou irrationnel.;NOMBRES;fondamental;2GT;PRG_MAT_2GT_2026
+MATC_NOMBRE_IRRATIONNEL;Nombre irrationnel;Nombre réel qui ne peut pas s’écrire comme quotient de deux entiers.;NOMBRES;structurant;2GT;PRG_MAT_2GT_2026
+MATC_VALEUR_APPROCHEE;Valeur approchée;Nombre utilisé pour approcher une valeur exacte avec une précision donnée.;NOMBRES;structurant;2GT;PRG_MAT_2GT_2026
+MATC_INEQUATION_PREMIER_DEGRE;Inéquation du premier degré;Inégalité contenant une inconnue et se ramenant à une expression affine.;ALGEBRE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_ISOLER_VARIABLE;Isolement d’une variable;Transformation d’une relation littérale pour exprimer une variable en fonction des autres.;ALGEBRE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_VECTEUR;Vecteur;Objet géométrique caractérisé par une direction, un sens et une longueur.;GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_RELATION_VECTORIELLE;Relation vectorielle;Égalité ou combinaison de vecteurs traduisant une configuration géométrique.;GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_EQUATION_DROITE;Équation de droite;Équation cartésienne ou réduite caractérisant les points d’une droite dans un repère.;GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026
+MATC_EQUATION_COURBE;Équation d’une courbe;Relation entre coordonnées caractérisant les points d’une courbe.;FONCTIONS;structurant;2GT;PRG_MAT_2GT_2026
+MATC_VARIATION_FONCTION;Variation d’une fonction;Évolution croissante, décroissante ou constante d’une fonction sur un intervalle.;FONCTIONS;structurant;2GT;PRG_MAT_2GT_2026
+MATC_QUARTILE;Quartile;Valeur de position partageant une série ordonnée selon des proportions définies.;STATISTIQUES;structurant;2GT;PRG_MAT_2GT_2026
+MATC_TABLEAU_CROISE;Tableau croisé;Tableau d’effectifs ou de fréquences croisant deux variables qualitatives.;STATISTIQUES;structurant;2GT;PRG_MAT_2GT_2026
+MATC_FREQUENCE_CONDITIONNELLE;Fréquence conditionnelle;Fréquence calculée relativement à une sous-population définie par une modalité.;STATISTIQUES;structurant;2GT;PRG_MAT_2GT_2026
+MATC_EQUIPROBABILITE;Équiprobabilité;Situation où toutes les issues élémentaires ont la même probabilité.;PROBABILITES;structurant;2GT;PRG_MAT_2GT_2026
+MATC_UNIVERS_ISSUE;Univers et issues;Ensemble des résultats possibles d’une expérience aléatoire et ses éléments.;PROBABILITES;fondamental;2GT;PRG_MAT_2GT_2026

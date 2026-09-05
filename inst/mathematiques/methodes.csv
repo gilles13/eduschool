@@ -68,3 +68,54 @@ MATM_PROBA_TOTALE;Utiliser la formule des probabilités totales;PROBABILITES;MAT
 MATM_PROBA_INDEP_TEST;Tester l’indépendance de deux événements;PROBABILITES;MATC_INDEPENDANCE;Comparer une conditionnelle à une marginale ou comparer P(A inter B) à P(A)P(B).;1G
 MATM_VA_ESPERANCE;Calculer et interpréter une espérance;PROBABILITES;MATC_ESPERANCE;Calculer la somme des valeurs pondérées par leurs probabilités puis interpréter comme moyenne théorique.;1G
 MATM_VA_VARIANCE;Calculer variance et écart type;PROBABILITES;MATC_VARIANCE;Calculer E(X²) et E(X), former V(X)=E(X²)-E(X)² puis prendre la racine carrée.;1G
+MATM_FRACTION_REPERER;Comparer et repérer des fractions;NOMBRES;MATC_FRACTION;Choisir une représentation ou un dénominateur adapté, comparer puis contrôler l’ordre obtenu.;6E
+MATM_FRACTION_CALCUL;Calculer avec des fractions;NOMBRES;MATC_FRACTION;Identifier l’opération, transformer les écritures si nécessaire puis simplifier le résultat lorsque c’est pertinent.;5E
+MATM_RELATIFS_CALCUL;Calculer avec des nombres relatifs;NOMBRES;MATC_NOMBRE_RELATIF;Repérer les signes, appliquer la règle adaptée puis contrôler le signe et l’ordre de grandeur.;5E
+MATM_PRIORITES_CALCUL;Organiser un calcul;NOMBRES;MATC_PRIORITES;Repérer parenthèses, produits et quotients, puis sommes et différences avant d’effectuer les calculs.;5E
+MATM_LITTERAL_TRADUIRE;Traduire une situation en expression littérale;ALGEBRE;MATC_EXPRESSION_LITTERALE;Choisir la lettre, identifier les opérations décrites et écrire une expression dont chaque terme garde un sens.;5E
+MATM_DISTRIBUTIVITE;Développer ou factoriser par distributivité;ALGEBRE;MATC_DISTRIBUTIVITE;Identifier le facteur commun ou le produit d’une somme puis appliquer la distributivité dans le bon sens.;5E
+MATM_PERIMETRE;Calculer un périmètre;GRANDEURS;MATC_PERIMETRE;Identifier le contour utile, convertir les longueurs si nécessaire puis additionner les longueurs.;6E
+MATM_AIRE;Calculer une aire;GRANDEURS;MATC_AIRE;Identifier ou décomposer la figure, choisir la formule adaptée et exprimer le résultat dans une unité d’aire.;6E
+MATM_TRIANGLE_CONSTRUIRE;Construire et contrôler un triangle;GEOMETRIE;MATC_TRIANGLE;Analyser les données, choisir les instruments, construire puis vérifier les propriétés demandées.;6E
+MATM_MEDIATRICE;Construire et utiliser une médiatrice;GEOMETRIE;MATC_MEDIATRICE;Construire la droite équidistante des extrémités du segment puis exploiter cette propriété.;6E
+MATM_REPERE;Lire et placer dans un repère;GEOMETRIE;MATC_REPERE;Identifier abscisse et ordonnée, respecter les graduations puis contrôler le quadrant ou la position.;5E
+MATM_STATS_LIRE;Lire et interpréter des données;STATISTIQUES;MATC_REPRESENTATION_DONNEES;Identifier population, variable et unités puis extraire et comparer les informations pertinentes.;5E
+MATM_PROBA_SIMPLE;Calculer une probabilité simple;PROBABILITES;MATC_PROBABILITE;Décrire les issues, identifier l’événement et, en équiprobabilité, rapporter les cas favorables aux cas possibles.;6E
+MATM_PROP_RESOUDRE;Résoudre un problème de proportionnalité;FONCTIONS;MATC_PROPORTIONNALITE;Vérifier le modèle puis choisir linéarité, retour à l’unité ou coefficient selon les données.;6E
+MATM_FONCTION_LIRE;Lire une fonction dans plusieurs registres;FONCTIONS;MATC_FONCTION;Identifier les deux grandeurs puis passer entre tableau, formule et graphique pour déterminer images ou antécédents.;5E
+MATM_ALGO_TRACER;Exécuter et compléter un algorithme;ALGORITHMIQUE;MATC_ALGORITHME;Suivre l’état des variables instruction par instruction et repérer séquences, conditions et répétitions.;5E
+MATM_4E_NOTSCI;Écrire en notation scientifique;NOMBRES;MATC_NOTATION_SCIENTIFIQUE;Déplacer la virgule pour obtenir un nombre entre 1 et 10 puis compenser avec une puissance de 10.;4E
+MATM_4E_FACTPREM;Décomposer en facteurs premiers;ARITHMETIQUE;MATC_FACTEURS_PREMIERS;Diviser successivement par des nombres premiers jusqu’à obtenir 1 puis écrire le produit des facteurs.;4E
+MATM_4E_FRACTION;Simplifier une fraction par facteurs premiers;ARITHMETIQUE;MATC_FACTEURS_PREMIERS;Décomposer numérateur et dénominateur puis simplifier les facteurs communs.;4E
+MATM_4E_DEVELOPPER;Développer par distributivité simple;ALGEBRE;MATC_DISTRIBUTIVITE;Multiplier chaque terme de la parenthèse par le facteur puis réduire.;4E
+MATM_4E_EQUATION;Résoudre une équation du premier degré;ALGEBRE;MATC_EQUATION_PREMIER_DEGRE;Effectuer les mêmes opérations dans les deux membres pour isoler l’inconnue puis vérifier.;4E
+MATM_4E_MEDIANE;Déterminer une médiane;STATISTIQUES;MATC_MEDIANE;Ordonner les données, repérer le ou les rangs centraux puis interpréter la valeur obtenue.;4E
+MATM_4E_PROBA_CONTRAIRE;Calculer avec un événement contraire;PROBABILITES;MATC_EVENEMENT_CONTRAIRE;Identifier l’événement contraire puis utiliser que les deux probabilités ont pour somme 1.;4E
+MATM_4E_PYTHAGORE;Calculer avec Pythagore;GEOMETRIE;MATC_PYTHAGORE;Identifier le triangle rectangle, écrire l’égalité de Pythagore puis isoler la longueur cherchée.;4E
+MATM_4E_THALES;Calculer avec Thalès;GEOMETRIE;MATC_THALES;Vérifier la configuration et le parallélisme, écrire les rapports correspondants puis calculer.;4E
+MATM_4E_COSINUS;Utiliser le cosinus;GEOMETRIE;MATC_COSINUS;Repérer hypoténuse et côté adjacent, écrire le rapport puis calculer longueur ou angle.;4E
+MATM_3E_DOUBLE_DIST;Développer par double distributivité;ALGEBRE;MATC_DOUBLE_DISTRIBUTIVITE;Multiplier chaque terme du premier facteur par chaque terme du second puis réduire.;3E
+MATM_3E_EQPROD;Résoudre une équation-produit;ALGEBRE;MATC_EQUATION_PRODUIT;Utiliser qu’un produit est nul si et seulement si au moins un facteur est nul puis résoudre chaque équation.;3E
+MATM_3E_HISTO;Lire ou construire un histogramme;STATISTIQUES;MATC_HISTOGRAMME;Associer chaque classe à un rectangle et interpréter les effectifs ou fréquences représentés.;3E
+MATM_3E_EVOLUTION;Passer d’un pourcentage à un coefficient multiplicateur;FONCTIONS;MATC_COEFFICIENT_MULTIPLICATEUR;Pour une hausse de t utiliser 1+t et pour une baisse utiliser 1-t, avec t sous forme décimale.;3E
+MATM_3E_FONCTION;Changer de représentation d’une fonction;FONCTIONS;MATC_FONCTION;Passer entre formule, tableau, graphique et description verbale en conservant le lien entrée-sortie.;3E
+MATM_3E_HOMOTHETIE;Calculer avec une homothétie;GEOMETRIE;MATC_HOMOTHETIE;Identifier le rapport k puis multiplier les longueurs par |k|, les aires par k² et les volumes par |k|³.;3E
+MATM_3E_THALES;Utiliser Thalès en configuration papillon;GEOMETRIE;MATC_THALES;Identifier les droites parallèles et les côtés correspondants puis établir les rapports de longueurs.;3E
+MATM_3E_TRIGO;Choisir un rapport trigonométrique;GEOMETRIE;MATC_COSINUS;Dans un triangle rectangle, identifier les côtés connus et cherchés puis choisir cosinus, sinus ou tangente.;3E
+MATM_3E_ALGO;Décomposer un programme en sous-problèmes;ALGORITHMIQUE;MATC_BLOC_PERSONNALISE;Identifier les tâches répétées, créer des blocs dédiés puis combiner boucles, conditions et variables.;3E
+MATM_2GT_ENSEMBLES;Manipuler ensembles et intervalles;LOGIQUE;MATC_INTERVALLE;Traduire une condition en ensemble, choisir les bornes et crochets puis utiliser réunion, intersection ou complémentaire.;2GT
+MATM_2GT_LOGIQUE;Analyser une implication;LOGIQUE;MATC_IMPLICATION;Identifier hypothèse et conclusion, distinguer réciproque et contraposée et choisir la formulation adaptée.;2GT
+MATM_2GT_CONTREEX;Réfuter par contre-exemple;LOGIQUE;MATC_CONTRE_EXEMPLE;Repérer le quantificateur universel puis construire un cas satisfaisant les hypothèses mais pas la conclusion.;2GT
+MATM_2GT_ALGO;Lire et modifier un programme;ALGORITHMIQUE;MATC_ALGORITHME;Suivre l’état des variables, repérer conditions et boucles puis modifier une instruction en contrôlant son effet.;2GT
+MATM_2GT_FONCTION_INFO;Écrire une fonction informatique;ALGORITHMIQUE;MATC_FONCTION_INFORMATIQUE;Définir les arguments, écrire le corps de la fonction, produire le résultat puis tester sur quelques valeurs.;2GT
+MATM_2GT_IRRED;Rendre une fraction irréductible;ARITHMETIQUE;MATC_FRACTION_IRREDUCTIBLE;Décomposer ou déterminer un diviseur commun puis diviser numérateur et dénominateur par leur PGCD implicite.;2GT
+MATM_2GT_APPROX;Contrôler une valeur approchée;NOMBRES;MATC_VALEUR_APPROCHEE;Conserver la valeur exacte aussi longtemps que possible puis vérifier l’ordre de grandeur et la précision de l’approximation.;2GT
+MATM_2GT_INEQUATION;Résoudre une inéquation du premier degré;ALGEBRE;MATC_INEQUATION_PREMIER_DEGRE;Isoler l’inconnue en conservant le sens de l’inégalité, l’inverser lors d’une multiplication ou division par un nombre négatif, puis écrire l’ensemble solution.;2GT
+MATM_2GT_ISOLER;Isoler une variable dans une formule;ALGEBRE;MATC_ISOLER_VARIABLE;Effectuer les mêmes opérations sur les deux membres jusqu’à exprimer la variable cible.;2GT
+MATM_2GT_VECTEURS;Résoudre par calcul vectoriel;GEOMETRIE;MATC_VECTEUR;Traduire la configuration en relations vectorielles, calculer les coordonnées utiles puis conclure géométriquement.;2GT
+MATM_2GT_DROITE;Déterminer une équation de droite;GEOMETRIE;MATC_EQUATION_DROITE;Déterminer un coefficient directeur ou un vecteur directeur, utiliser un point connu puis vérifier l’équation obtenue.;2GT
+MATM_2GT_FONCTION;Passer entre registres d’une fonction;FONCTIONS;MATC_FONCTION;Passer de la formule au tableau ou au graphique et lire images, antécédents et propriétés dans le registre le plus adapté.;2GT
+MATM_2GT_VARIATIONS;Lire et justifier les variations;FONCTIONS;MATC_VARIATION_FONCTION;Repérer les intervalles pertinents, comparer les valeurs de la fonction et synthétiser dans un tableau de variations.;2GT
+MATM_2GT_EVOLUTION;Traiter une évolution en pourcentage;STATISTIQUES;MATC_COEFFICIENT_MULTIPLICATEUR;Transformer le taux en coefficient multiplicateur, effectuer le calcul puis revenir si besoin au taux.;2GT
+MATM_2GT_TABLEAU_CROISE;Lire un tableau croisé;STATISTIQUES;MATC_TABLEAU_CROISE;Identifier population totale, marges et sous-population de référence avant de calculer effectifs ou fréquences.;2GT
+MATM_2GT_PROBA;Calculer une probabilité par dénombrement;PROBABILITES;MATC_EQUIPROBABILITE;Décrire l’univers, compter issues favorables et possibles en équiprobabilité puis contrôler que le résultat appartient à [0,1].;2GT
