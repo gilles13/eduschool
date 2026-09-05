@@ -1,0 +1,39 @@
+---
+title: "Mathématiques — Terminale spécialité"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques — Terminale spécialité}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(eduschool)
+```
+
+Cette page est l'espace d'entrée pour les **mathématiques en Terminale spécialité**.
+Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
+réviser, s'entraîner et retrouver des ressources.
+
+## Programme
+
+```{r, eval=FALSE}
+programme("TG")
+```
+
+## Réviser
+
+Les fiches de Terminale spécialité seront ajoutées progressivement en respectant
+le millésime du programme applicable à l'année scolaire concernée.
+
+## S'entraîner
+
+Les exercices et automatismes seront regroupés ici à mesure de leur intégration.
+
+
+## Ressources
+
+- [Programmes et capacités](programmes-et-capacites.html)
+- [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

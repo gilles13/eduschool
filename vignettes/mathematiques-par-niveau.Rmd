@@ -1,0 +1,43 @@
+---
+title: "Mathématiques par niveau"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques par niveau}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Cette page est le point d'entrée rapide vers les **fiches, mémos et exercices de
+mathématiques**. Les contenus sont enrichis progressivement : un niveau peut
+donc être accessible ici avant que toutes ses fiches soient disponibles.
+
+## Collège
+
+- [6e](mathematiques-6e.html)
+- [5e](mathematiques-5e.html)
+- [4e](mathematiques-4e.html)
+- [3e](mathematiques-3e.html)
+
+## Lycée
+
+- [2de générale et technologique](mathematiques-2de.html)
+- [1re générale — spécialité mathématiques](mathematiques-1re-specialite.html)
+- [Terminale générale — spécialité mathématiques](mathematiques-terminale-specialite.html)
+
+Chaque page de classe devient un petit espace de travail autonome : programme,
+révision, entraînement et ressources. Les rubriques apparaissent même lorsque
+leur contenu est encore en cours d'enrichissement, afin de conserver une
+navigation stable dans le temps.
+
+---
+
+## Depuis R
+
+La navigation du site est une porte d'entrée ; les données restent accessibles
+directement avec l'API du package.
+
+```{r, eval=FALSE}
+programme("1G")
+fiches_revision("2GT")
+concepts_math(niveau_id = "1G")
+```

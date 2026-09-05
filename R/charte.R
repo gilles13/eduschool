@@ -113,6 +113,33 @@ theme_eduschool = function(cycle_id = "NEUTRE", base_size = 11) {
     )
 }
 
+
+.police_manuelle_eduschool = function() {
+  police = getOption("eduschool.police_manuelle", "cursive")
+  police = as.character(police)[1L]
+  if (is.na(police) || !nzchar(police)) "cursive" else police
+}
+
+.dessiner_note_manuelle = function(texte, rotation = 0, cex = 1.05) {
+  if (length(texte) != 1L || is.na(texte) || !nzchar(texte)) {
+    return(invisible(NULL))
+  }
+  grid::grid.newpage()
+  grid::grid.text(
+    texte,
+    x = grid::unit(0.04, "npc"),
+    y = grid::unit(0.55, "npc"),
+    just = c("left", "center"),
+    rot = rotation,
+    gp = grid::gpar(
+      fontfamily = .police_manuelle_eduschool(),
+      fontsize = 12 * cex,
+      col = "#405B6B"
+    )
+  )
+  invisible(NULL)
+}
+
 .html_escape_fiche = function(x) {
   x = gsub("&", "&amp;", x, fixed = TRUE)
   x = gsub("<", "&lt;", x, fixed = TRUE)

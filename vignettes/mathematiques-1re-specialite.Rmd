@@ -1,0 +1,43 @@
+---
+title: "Mathématiques — 1re spécialité"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques — 1re spécialité}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(eduschool)
+```
+
+Cette page est l'espace d'entrée pour les **mathématiques en 1re spécialité**.
+Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
+réviser, s'entraîner et retrouver des ressources.
+
+## Programme
+
+```{r, eval=FALSE}
+programme("1G")
+```
+
+## Réviser
+
+- [Dérivation — fiche pilote](fiche-derivation-premiere.html)
+
+Le modèle mathématique fin de Première spécialité contient déjà les concepts,
+méthodes, formules, erreurs fréquentes et types d'exercices qui serviront à
+construire les prochaines fiches.
+
+## S'entraîner
+
+Les types d'exercices liés aux concepts de Première sont disponibles dans le
+référentiel et seront progressivement exposés ici.
+
+
+## Ressources
+
+- [Programmes et capacités](programmes-et-capacites.html)
+- [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

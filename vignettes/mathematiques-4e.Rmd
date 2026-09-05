@@ -1,0 +1,39 @@
+---
+title: "Mathématiques — 4e"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques — 4e}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(eduschool)
+```
+
+Cette page est l'espace d'entrée pour les **mathématiques en 4e**.
+Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
+réviser, s'entraîner et retrouver des ressources.
+
+## Programme
+
+```{r, eval=FALSE}
+programme("4E")
+```
+
+## Réviser
+
+Les fiches synthétiques de 4e seront ajoutées progressivement.
+
+## S'entraîner
+
+Les exercices et automatismes de 4e seront regroupés ici au fur et à mesure de
+leur intégration.
+
+
+## Ressources
+
+- [Programmes et capacités](programmes-et-capacites.html)
+- [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

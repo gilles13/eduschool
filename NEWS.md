@@ -1,3 +1,15 @@
+# eduschool 0.14.0
+
+## Navigation pédagogique et fiche pilote
+
+- ajout d'une entrée directe vers les mathématiques par classe, de la 6e à la Terminale ;
+- ajout d'une page-hub légère `Mathématiques par niveau`, construite avec le Markdown et Bootstrap déjà utilisés par pkgdown ;
+- ajout d'une fiche pilote `Dérivation — Première spécialité` pour valider une présentation plus conviviale ;
+- expérimentation d'annotations de type manuscrit limitée aux rappels et conseils, avec repli sur une police cursive du système et sans dépendance supplémentaire ;
+- maintien d'un CSS pkgdown minimal : l'identité pédagogique reste portée par les fiches et non par la structure du site.
+- chaque classe dispose désormais de sa propre page d'entrée mathématique, l'index général restant un annuaire des niveaux ;
+- le prototype manuscrit est rendu comme un petit objet graphique, notamment pour le PDF, plutôt que par du CSS typographique.
+
 # eduschool 0.13.1
 
 - Finalisation page d accueil, correction des problèmes d affichage.

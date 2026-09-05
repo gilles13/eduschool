@@ -30,10 +30,28 @@ navbar:
         href: articles/orientation-au-lycee-et-apres-le-bac.html
       - text: -------
       - text: Mathématiques
+      - text: Mathématiques par niveau
+        href: articles/mathematiques-par-niveau.html
+      - text: 6e
+        href: articles/mathematiques-6e.html
+      - text: 5e
+        href: articles/mathematiques-5e.html
+      - text: 4e
+        href: articles/mathematiques-4e.html
+      - text: 3e
+        href: articles/mathematiques-3e.html
+      - text: 2de
+        href: articles/mathematiques-2de.html
+      - text: 1re spécialité
+        href: articles/mathematiques-1re-specialite.html
+      - text: Terminale spécialité
+        href: articles/mathematiques-terminale-specialite.html
       - text: Fiches de révision
         href: articles/fiches-revision-mathematiques.html
       - text: Fiche mathématiques 6e
         href: articles/fiche-mathematiques-6e.html
+      - text: Dérivation — Première spécialité
+        href: articles/fiche-derivation-premiere.html
       - text: Approfondir ses connaissances
         href: articles/approfondir-ses-connaissances-en-mathematiques.html
       - text: -------
@@ -68,8 +86,17 @@ articles:
   desc: Fiches de revision, ressources et outils pedagogiques.
   navbar: Mathematiques
   contents:
+  - mathematiques-par-niveau
+  - mathematiques-6e
+  - mathematiques-5e
+  - mathematiques-4e
+  - mathematiques-3e
+  - mathematiques-2de
+  - mathematiques-1re-specialite
+  - mathematiques-terminale-specialite
   - fiches-revision-mathematiques
   - fiche-mathematiques-6e
+  - fiche-derivation-premiere
   - approfondir-ses-connaissances-en-mathematiques
 - title: Utiliser eduschool
   desc: Documentation pedagogique et production de fiches.

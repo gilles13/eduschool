@@ -22,9 +22,14 @@ Les fiches sont produites à partir du même référentiel que les fonctions R d
 package. Le site n'est donc qu'une vue de ces données, et non une seconde source
 à maintenir séparément.
 
+## Accès par classe
+
+[Choisir directement un niveau, de la 6e à la Terminale](mathematiques-par-niveau.html).
+
 ## Fiches disponibles
 
 - [6e — L'essentiel des mathématiques](fiche-mathematiques-6e.html)
+- [1re spécialité — Dérivation, fiche pilote](fiche-derivation-premiere.html)
 
 Les niveaux 5e, 4e, 3e, 2de, 1re générale spécialité mathématiques et Terminale
 générale spécialité mathématiques seront ajoutés progressivement sur le même

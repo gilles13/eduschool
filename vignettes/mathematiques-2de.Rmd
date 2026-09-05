@@ -1,0 +1,47 @@
+---
+title: "Mathématiques — 2de"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques — 2de}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(eduschool)
+```
+
+Cette page est l'espace d'entrée pour les **mathématiques en 2de**.
+Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
+réviser, s'entraîner et retrouver des ressources.
+
+## Programme
+
+```{r, eval=FALSE}
+programme("2GT")
+```
+
+## Réviser
+
+Les fiches thématiques et la fiche essentielle de seconde sont déjà décrites par
+le moteur de révision du package.
+
+```{r, echo=FALSE, results='asis'}
+f = fiches_revision("2GT")
+if (nrow(f)) {
+  for (i in seq_len(nrow(f))) cat("- ", f$titre[[i]], "\n", sep = "")
+}
+```
+
+## S'entraîner
+
+Les exercices et automatismes pourront être reliés à cette page sans modifier
+la structure de navigation.
+
+
+## Ressources
+
+- [Programmes et capacités](programmes-et-capacites.html)
+- [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

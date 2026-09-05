@@ -12,6 +12,21 @@ et collaboratif.
 
 ---
 
+## Aller directement à sa classe
+
+**Collège :** [6e](articles/mathematiques-6e.html) ·
+[5e](articles/mathematiques-5e.html) ·
+[4e](articles/mathematiques-4e.html) ·
+[3e](articles/mathematiques-3e.html)
+
+**Lycée :** [2de](articles/mathematiques-2de.html) ·
+[1re spécialité](articles/mathematiques-1re-specialite.html) ·
+[Terminale spécialité](articles/mathematiques-terminale-specialite.html)
+
+[Voir toutes les fiches et ressources de mathématiques →](articles/mathematiques-par-niveau.html)
+
+---
+
 ## Les quatre portes d'entrée
 
 ::: {.row .eduschool-entries}

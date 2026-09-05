@@ -1,0 +1,127 @@
+---
+title: "Dérivation — Première spécialité"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Dérivation - Première spécialité}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+dev_note = if (knitr::is_latex_output() && capabilities("cairo")) "cairo_pdf" else "png"
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                      fig.width = 7, fig.height = 4)
+library(eduschool)
+tangente = carte_concept_math("MATC_TANGENTE")
+derivee = carte_concept_math("MATC_FONCTION_DERIVEE")
+```
+
+
+Cette page sert de **fiche pilote** pour la nouvelle présentation pédagogique
+d'`eduschool`. Le texte courant reste sobre ; l'effet manuscrit est réservé aux
+petits rappels qui doivent attirer l'œil.
+
+## L'idée essentielle
+
+Le **nombre dérivé** $f'(a)$ mesure localement la variation de la fonction au
+voisinage de $a$. Graphiquement, il correspond au **coefficient directeur de la
+tangente** à la courbe au point d'abscisse $a$.
+
+```{r note-retenir, dev=dev_note, fig.width=7, fig.height=.55}
+eduschool:::.dessiner_note_manuelle(
+  "À retenir : dériver en un point, c'est lire la pente de la tangente."
+)
+```
+
+## Voir la tangente
+
+```{r tangente}
+x = seq(-2.2, 2.2, length.out = 200)
+f = function(x) x^2
+a = 1
+fa = f(a)
+pente = 2 * a
+
+plot(x, f(x), type = "l", lwd = 2, xlab = "x", ylab = "f(x)",
+     main = "Fonction et tangente en a = 1")
+abline(h = 0, v = 0, col = "grey80")
+abline(a = fa - pente * a, b = pente, lty = 2, lwd = 2)
+points(a, fa, pch = 19)
+text(a + .15, fa - .45, "A")
+```
+
+L'équation de la tangente en $a$ est :
+
+$$
+y = f(a) + f'(a)(x-a).
+$$
+
+```{r formule-tangente, results='asis'}
+f = tangente$formules
+f = f[f$formule_id == "MATF_TANGENTE", , drop = FALSE]
+if (nrow(f)) {
+  cat("**Condition :** ", f$conditions[[1]], "\n", sep = "")
+}
+```
+
+## Méthode
+
+Pour déterminer une équation de tangente :
+
+1. calculer $f(a)$ ;
+2. calculer $f'(a)$ ;
+3. remplacer dans $y=f(a)+f'(a)(x-a)$ ;
+4. vérifier que le point $(a;f(a))$ appartient bien à la droite obtenue.
+
+```{r note-reflexe, dev=dev_note, fig.width=7, fig.height=.7}
+eduschool:::.dessiner_note_manuelle(
+  "Petit réflexe : la tangente doit passer par le point de contact."
+)
+```
+
+## Erreur fréquente
+
+```{r erreur, results='asis'}
+e = tangente$erreurs
+e = e[e$erreur_id == "MATE_TANGENTE_POINT", , drop = FALSE]
+if (nrow(e)) {
+  cat("**", e$titre[[1]], ".** ", e$description[[1]], "\n\n", sep = "")
+  cat("*Remédiation :* ", e$remediation[[1]], "\n", sep = "")
+}
+```
+
+## Mini-exercice
+
+Soit $f(x)=x^2-3x+1$.
+
+1. Calculer $f'(x)$.
+2. Calculer $f(2)$ et $f'(2)$.
+3. Déterminer une équation de la tangente à la courbe de $f$ au point
+   d'abscisse $2$.
+
+```{r note-objets, dev=dev_note, fig.width=7, fig.height=.7}
+eduschool:::.dessiner_note_manuelle(
+  "Avant de calculer : f'(x) est une fonction ; f'(2) est un nombre."
+)
+```
+
+---
+
+[Retour aux mathématiques par niveau](mathematiques-par-niveau.html)
+
+
+Pour tester spécifiquement le rendu PDF manuscrit depuis le dépôt :
+
+```{r, eval=FALSE, echo=TRUE}
+rmarkdown::render(
+  "vignettes/fiche-derivation-premiere.Rmd",
+  output_format = rmarkdown::pdf_document(),
+  output_file = "fiche-derivation-premiere.pdf"
+)
+```
+
+La famille manuscrite peut être adaptée sans modifier le package :
+
+```{r, eval=FALSE, echo=TRUE}
+options(eduschool.police_manuelle = "Ma police manuscrite")
+```

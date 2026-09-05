@@ -1,0 +1,40 @@
+---
+title: "Mathématiques — 6e"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques — 6e}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(eduschool)
+```
+
+Cette page est l'espace d'entrée pour les **mathématiques en 6e**.
+Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
+réviser, s'entraîner et retrouver des ressources.
+
+## Programme
+
+```{r, eval=FALSE}
+programme("6E")
+```
+
+## Réviser
+
+- [Fiche essentielle de 6e](fiche-mathematiques-6e.html)
+- [Toutes les fiches de révision](fiches-revision-mathematiques.html)
+
+## S'entraîner
+
+Les exercices de 6e sont accessibles depuis l'API `exercices()` et seront
+progressivement reliés à cette page.
+
+
+## Ressources
+
+- [Programmes et capacités](programmes-et-capacites.html)
+- [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)
