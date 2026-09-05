@@ -1,5 +1,26 @@
 # Changelog
 
+## eduschool 0.10.9
+
+### Consolidation documentaire et ergonomie
+
+- noms de fichiers automatiques pour
+  [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+  et
+  [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md),
+  avec conservation de la possibilite de fournir un nom explicite ;
+- rendu des fiches allege : logo plus discret, aligne a gauche, et titre
+  HTML transmis proprement a Pandoc ;
+- ajout d’une vignette complete consacree a la seconde generale et
+  technologique (`2GT`) : enseignements, couverture pedagogique, focus
+  mathematiques et orientations vers la premiere ;
+- harmonisation des vignettes existantes sans fusionner leurs roles
+  respectifs ;
+- mise a jour de la navigation pkgdown, du README et des exemples de
+  generation de fiches ;
+- exclusion des fiches et corriges generes a la racine du depot afin
+  d’eviter de versionner des artefacts de rendu.
+
 ## eduschool 0.10.8
 
 ### Fiches HTML et PDF

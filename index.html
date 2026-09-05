@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +70,12 @@
 <p>Se concentrer sur une matière :</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span>, matiere <span class="op">=</span> <span class="st">"maths"</span><span class="op">)</span></span></code></pre></div>
-<p>Générer immédiatement quelques exercices et afficher leurs énoncés :</p>
+<p>La même interface permet d’explorer le lycée, par exemple la seconde générale et technologique :</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"2GT"</span>, matiere <span class="op">=</span> <span class="st">"maths"</span><span class="op">)</span></span></code></pre></div>
+<p>Générer immédiatement quelques exercices et afficher leurs énoncés :</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
 <span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
 <span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
@@ -81,21 +85,22 @@
 <span>  afficher <span class="op">=</span> <span class="cn">TRUE</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 <p>Pour créer directement une fiche imprimable, la sortie peut être envoyée dans <code><a href="reference/produire_fiche.html">produire_fiche()</a></code> avec le pipe natif :</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
 <span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
 <span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
 <span>  n <span class="op">=</span> <span class="fl">5</span>,</span>
 <span>  seed <span class="op">=</span> <span class="fl">2026</span></span>
 <span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span><span class="st">"fiche_6e"</span>, format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
-<p>Avec <code>format = "auto"</code>, <code>eduschool</code> produit un PDF si LaTeX est disponible et un fichier HTML sinon. On peut aussi imposer <code>format = "html"</code> ou <code>format = "pdf"</code>. Le même principe s’applique au corrigé avec <code><a href="reference/produire_corrige.html">produire_corrige()</a></code>.</p>
+<span>  <span class="fu"><a href="reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
+<p>Le nom du fichier est construit automatiquement à partir du niveau et de la capacité. Il reste possible de fournir un chemin explicite avec l’argument <code>fichier</code>. Avec <code>format = "auto"</code>, <code>eduschool</code> produit un PDF si LaTeX est disponible et un fichier HTML sinon. Le même principe s’applique au corrigé avec <code><a href="reference/produire_corrige.html">produire_corrige()</a></code>.</p>
 </div>
 <div class="section level2">
 <h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
 </h2>
-<p>La vignette <strong>Explorer une classe de 6e avec eduschool</strong> constitue le point de départ conseillé. Les autres vignettes détaillent les programmes, la documentation pédagogique, les exercices et l’architecture des données.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<p>Pour découvrir le package, commencer par la vignette <strong>Explorer une classe de 6e avec eduschool</strong>. La vignette <strong>Explorer une classe de 2de générale et technologique</strong> donne ensuite un exemple lycée plus complet, notamment sur les mathématiques et l’orientation après la seconde.</p>
+<p>Les autres vignettes conservent chacune un rôle précis : prise en main, parcours scolaires, programmes et capacités, documentation pédagogique, exercices, architecture des données et développement.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/browseVignettes.html" class="external-link">browseVignettes</a></span><span class="op">(</span><span class="st">"eduschool"</span><span class="op">)</span></span></code></pre></div>
 <p>La documentation complète est également publiée sur le site pkgdown du package.</p>
 </div>

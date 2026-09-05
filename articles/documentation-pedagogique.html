@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,15 +59,32 @@
 pédagogique</div>
 </div>
 <p>La documentation est séparée des programmes officiels. Une notion
-pédagogique peut être reliée à plusieurs capacités.</p>
+pédagogique peut être reliée à plusieurs capacités ; les prérequis
+forment une couche supplémentaire, indépendante du texte
+réglementaire.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/chercher_notions.html">chercher_notions</a></span><span class="op">(</span><span class="st">"proportion"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/prerequis_capacite.html">prerequis_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span>, recursif <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<div class="section level2">
+<h2 id="du-niveau-au-rappel-pédagogique">Du niveau au rappel pédagogique<a class="anchor" aria-label="anchor" href="#du-niveau-au-rappel-p%C3%A9dagogique"></a>
+</h2>
+<p>On peut partir d’un niveau, repérer une capacité puis descendre vers
+les notions :</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="../reference/capacites.html">capacites</a></span><span class="op">(</span><span class="st">"6E"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span>, version_id <span class="op">=</span> <span class="st">"2026_2027"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">item_id</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div>
 <p>Les rappels sont des fichiers Markdown installés avec le package et
-accessibles par <code><a href="../reference/obtenir_rappel.html">obtenir_rappel()</a></code>. Cette séparation
-permettra ultérieurement une personnalisation sans modifier les
-référentiels officiels.</p>
+accessibles par <code><a href="../reference/obtenir_rappel.html">obtenir_rappel()</a></code>. Cette séparation permet
+d’enrichir les explications, les méthodes ou les exemples sans modifier
+les référentiels de programme.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu"><a href="../reference/obtenir_rappel.html">obtenir_rappel</a></span><span class="op">(</span><span class="st">"MAT_FRACTION_ADD"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Pour mesurer la documentation disponible à l’échelle d’un niveau,
+<code><a href="../reference/notions_niveau.html">notions_niveau()</a></code> complète les fonctions de recherche par
+notion.</p>
+</div>
   </main>
 </div>
 

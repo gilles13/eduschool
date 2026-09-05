@@ -9,7 +9,7 @@ disponible et un HTML sinon.
 ``` r
 produire_fiche(
   exercices,
-  fichier = "fiche_exercices",
+  fichier = NULL,
   format = c("auto", "html", "pdf"),
   titre = "Fiche d'exercices",
   sous_titre = NULL,
@@ -28,7 +28,8 @@ produire_fiche(
 
 - fichier:
 
-  Chemin de sortie, avec ou sans extension.
+  Chemin de sortie, avec ou sans extension. Si \`NULL\`, un nom est
+  construit automatiquement a partir du niveau et de la capacite.
 
 - format:
 

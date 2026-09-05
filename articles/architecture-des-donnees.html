@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,13 +57,45 @@
 <div class="float">
 <img src="../reference/figures/architecture_si.svg" alt="Architecture générale du mini-SI eduschool"><div class="figcaption">Architecture générale du mini-SI eduschool</div>
 </div>
-<p>Les données distribuées sont conservées sous <code>inst/</code> et
-retrouvées avec <code><a href="../reference/eduschool_path.html">eduschool_path()</a></code>. Les consultations simples
-utilisent directement les CSV; DuckDB reste disponible pour les
-jointures et analyses relationnelles.</p>
+<p><code>eduschool</code> est volontairement un petit système
+d’information relationnel, pas une base monolithique. Les ressources
+distribuées sont conservées sous <code>inst/</code> et retrouvées avec
+<code><a href="../reference/eduschool_path.html">eduschool_path()</a></code>.</p>
+<div class="section level2">
+<h2 id="couches-principales">Couches principales<a class="anchor" aria-label="anchor" href="#couches-principales"></a>
+</h2>
 <p>Le flux logique est : programme officiel → capacité → notion →
-prérequis → rappel → modèle d’exercice → exercice → rapport.</p>
-  </main>
+prérequis → rappel → modèle d’exercice → exercice → document. Cette
+séparation permet notamment :</p>
+<ul>
+<li>de conserver les sources réglementaires distinctes des contenus
+pédagogiques ;</li>
+<li>de réutiliser une notion dans plusieurs programmes ;</li>
+<li>d’enrichir les rappels et les exercices sans recopier les programmes
+;</li>
+<li>de produire des vues synthétiques par niveau sans en faire une
+nouvelle source de vérité.</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="csv-dabord-duckdb-ensuite">CSV d’abord, DuckDB ensuite<a class="anchor" aria-label="anchor" href="#csv-dabord-duckdb-ensuite"></a>
+</h2>
+<p>Les consultations simples utilisent directement les CSV :</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/niveaux.html">niveaux</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/enseignements.html">enseignements</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span></span></code></pre></div>
+<p>DuckDB reste disponible pour les jointures et analyses relationnelles
+libres :</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">con</span> <span class="op">=</span> <span class="fu"><a href="../reference/ouvrir_base.html">ouvrir_base</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbListTables.html" class="external-link">dbListTables</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span>
+<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbDisconnect.html" class="external-link">dbDisconnect</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span></code></pre></div>
+<p>Cette architecture garde les fichiers sources lisibles indépendamment
+de R et du moteur de base de données.</p>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 

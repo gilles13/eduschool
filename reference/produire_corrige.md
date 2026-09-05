@@ -8,7 +8,7 @@ corrections et les reponses attendues.
 ``` r
 produire_corrige(
   exercices,
-  fichier = "corrige_exercices",
+  fichier = NULL,
   format = c("auto", "html", "pdf"),
   titre = "Corrige des exercices",
   sous_titre = NULL,
@@ -26,7 +26,8 @@ produire_corrige(
 
 - fichier:
 
-  Chemin de sortie, avec ou sans extension.
+  Chemin de sortie, avec ou sans extension. Si \`NULL\`, un nom est
+  construit automatiquement a partir du niveau et de la capacite.
 
 - format:
 

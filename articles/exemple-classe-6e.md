@@ -173,17 +173,18 @@ generer_fiche(
   n = 5,
   seed = 2026
 ) |>
-  produire_fiche("fiche_6e", format = "auto")
+  produire_fiche(format = "auto")
 ```
 
-Le format `"auto"` choisit le PDF lorsque LaTeX est disponible et le
-HTML sinon. Pour garantir une sortie sans dépendance LaTeX, utiliser
-explicitement `format = "html"`. Un corrigé se produit de la même
-manière avec
+Le nom du fichier est construit automatiquement. Le format `"auto"`
+choisit le PDF lorsque LaTeX est disponible et le HTML sinon. Pour
+garantir une sortie sans dépendance LaTeX, utiliser explicitement
+`format = "html"`. Un corrigé se produit de la même manière avec
 [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md).
 
 ## Et ensuite ?
 
-La vignette de prise en main et les autres articles du site présentent
-les programmes, les rappels pédagogiques, les exercices et les outils
-plus avancés.
+La vignette de 2de générale et technologique prolonge cet exemple avec
+une vue plus riche du lycée, des mathématiques et de l’orientation. Les
+autres articles restent organisés par thème : programmes, documentation
+pédagogique, exercices, parcours et architecture.

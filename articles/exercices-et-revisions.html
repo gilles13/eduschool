@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,26 +80,31 @@ directement vers un document :</p>
 <span>  n <span class="op">=</span> <span class="fl">10</span>,</span>
 <span>  seed <span class="op">=</span> <span class="fl">123</span></span>
 <span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span><span class="st">"fiche_6e"</span>, format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
+<p>Le nom est construit automatiquement à partir du niveau et de la
+capacité. Pour une fiche multi-capacités, le suffixe <code>mixte</code>
+est utilisé. L’argument <code>fichier</code> permet toujours de choisir
+soi-même le chemin de sortie.</p>
 <p><code>format = "auto"</code> choisit le PDF si <code>pdflatex</code>
-est disponible sur la machine et le HTML sinon. Il est également
-possible de choisir explicitement :</p>
+est disponible sur la machine et le HTML sinon. Pour imposer un format
+:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span><span class="st">"6E"</span>, <span class="st">"ITM_MAT_C3_6E_C09"</span>, n <span class="op">=</span> <span class="fl">10</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span><span class="st">"fiche_6e"</span>, format <span class="op">=</span> <span class="st">"html"</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span><span class="st">"6E"</span>, <span class="st">"ITM_MAT_C3_6E_C09"</span>, n <span class="op">=</span> <span class="fl">10</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span><span class="st">"fiche_6e"</span>, format <span class="op">=</span> <span class="st">"pdf"</span><span class="op">)</span></span></code></pre></div>
-<p>La sortie HTML ne nécessite pas LaTeX. La sortie PDF nécessite une
+<span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"html"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span><span class="st">"6E"</span>, <span class="st">"ITM_MAT_C3_6E_C09"</span>, n <span class="op">=</span> <span class="fl">10</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"pdf"</span><span class="op">)</span></span></code></pre></div>
+<p>La sortie HTML ne nécessite pas LaTeX. Les deux formats reposent sur
+le rendu R Markdown/Pandoc ; la sortie PDF nécessite en plus une
 installation LaTeX fournissant <code>pdflatex</code>.</p>
 </div>
 <div class="section level2">
 <h2 id="produire-le-corrigé">Produire le corrigé<a class="anchor" aria-label="anchor" href="#produire-le-corrig%C3%A9"></a>
 </h2>
 <p>Le même lot d’exercices peut être envoyé au template de corrigé :</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/exercices.html">generer_fiche</a></span><span class="op">(</span><span class="st">"6E"</span>, <span class="st">"ITM_MAT_C3_6E_C09"</span>, n <span class="op">=</span> <span class="fl">10</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/produire_corrige.html">produire_corrige</a></span><span class="op">(</span><span class="st">"corrige_6e"</span>, format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu"><a href="../reference/produire_corrige.html">produire_corrige</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
 <p>Les anciennes fonctions de rapport LaTeX restent disponibles pour
 compatibilité, mais <code><a href="../reference/produire_fiche.html">produire_fiche()</a></code> et
 <code><a href="../reference/produire_corrige.html">produire_corrige()</a></code> constituent l’interface conseillée pour

@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,21 +55,134 @@
     
     
 <p>Cette vignette présente les parcours scolaires actuellement modélisés
-dans <code>eduschool</code>. Le schéma est construit à partir des
-référentiels du package et sera enrichi à mesure que les voies, séries
-et orientations seront détaillées.</p>
+dans <code>eduschool</code>. La représentation est une vue des
+référentiels du package, et non une source réglementaire
+indépendante.</p>
 <div class="float">
 <img src="../reference/figures/parcours_scolaire.svg" alt="Parcours scolaires modélisés dans eduschool"><div class="figcaption">Parcours scolaires modélisés dans
 eduschool</div>
 </div>
-<p>Le diagramme HTML interactif correspondant peut être produit avec
-:</p>
+<div class="section level2">
+<h2 id="voies-et-séries-modélisées">Voies et séries modélisées<a class="anchor" aria-label="anchor" href="#voies-et-s%C3%A9ries-mod%C3%A9lis%C3%A9es"></a>
+</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/voies.html">voies</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<thead><tr class="header">
+<th align="left">voie_id</th>
+<th align="left">libelle</th>
+<th align="left">voie_parent_id</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">COLLEGE</td>
+<td align="left">Collège</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">LYCEE_GT</td>
+<td align="left">Lycée général et technologique</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">VOIE_GENERALE</td>
+<td align="left">Voie générale</td>
+<td align="left">LYCEE_GT</td>
+</tr>
+<tr class="even">
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+<td align="left">Voie technologique</td>
+<td align="left">LYCEE_GT</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/series.html">series</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="9%">
+<col width="70%">
+<col width="19%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">serie_id</th>
+<th align="left">libelle</th>
+<th align="left">voie_id</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">G</td>
+<td align="left">Voie générale</td>
+<td align="left">VOIE_GENERALE</td>
+</tr>
+<tr class="even">
+<td align="left">ST2S</td>
+<td align="left">Sciences et technologies de la santé et du social</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="odd">
+<td align="left">STL</td>
+<td align="left">Sciences et technologies de laboratoire</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="even">
+<td align="left">STD2A</td>
+<td align="left">Sciences et technologies du design et des arts
+appliqués</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="odd">
+<td align="left">STI2D</td>
+<td align="left">Sciences et technologies de l’industrie et du
+développement durable</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="even">
+<td align="left">STMG</td>
+<td align="left">Sciences et technologies du management et de la
+gestion</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="odd">
+<td align="left">STHR</td>
+<td align="left">Sciences et technologies de l’hôtellerie et de la
+restauration</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="even">
+<td align="left">S2TMD</td>
+<td align="left">Sciences et techniques du théâtre, de la musique et de
+la danse</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+</tbody>
+</table>
+<p>Après la seconde générale et technologique, l’orientation se fait
+vers la voie générale ou vers une série de la voie technologique. La
+réglementation nationale compte actuellement huit séries technologiques.
+Le référentiel <code>eduschool</code> en modélise sept : ST2S, STL,
+STD2A, STI2D, STMG, STHR et S2TMD. <strong>STAV</strong>, relevant de
+l’enseignement agricole, n’est pas encore intégré au périmètre de
+données du package.</p>
+<p>La vignette <strong>Explorer une classe de 2de générale et
+technologique</strong> détaille cette bifurcation et les enseignements
+de spécialité de la voie générale.</p>
+</div>
+<div class="section level2">
+<h2 id="produire-le-diagramme">Produire le diagramme<a class="anchor" aria-label="anchor" href="#produire-le-diagramme"></a>
+</h2>
+<p>Le diagramme HTML correspondant peut être produit avec :</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/diagramme_parcours_scolaire.html">diagramme_parcours_scolaire</a></span><span class="op">(</span>ouvrir <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<p>La représentation graphique n’est pas une source de vérité
-indépendante : elle est une vue des données relationnelles du
-package.</p>
-  </main>
+<p>Pour une vérification réglementaire actualisée, se reporter aux pages
+du ministère de l’Éducation nationale consacrées à l’orientation en
+seconde et à la voie technologique.</p>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 

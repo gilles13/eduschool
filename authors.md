@@ -7,13 +7,13 @@
 ## Citation
 
 FIDANI G (2026). *eduschool: Référentiels scolaires français et outils
-de révision*. R package version 0.10.8,
+de révision*. R package version 0.10.9,
 <https://gilles13.github.io/eduschool/>.
 
     @Manual{,
       title = {eduschool: Référentiels scolaires français et outils de révision},
       author = {Gilles FIDANI},
       year = {2026},
-      note = {R package version 0.10.8},
+      note = {R package version 0.10.9},
       url = {https://gilles13.github.io/eduschool/},
     }

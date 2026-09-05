@@ -33,26 +33,28 @@ generer_fiche(
   n = 10,
   seed = 123
 ) |>
-  produire_fiche("fiche_6e", format = "auto")
+  produire_fiche(format = "auto")
 ```
+
+Le nom est construit automatiquement à partir du niveau et de la
+capacité. Pour une fiche multi-capacités, le suffixe `mixte` est
+utilisé. L’argument `fichier` permet toujours de choisir soi-même le
+chemin de sortie.
 
 `format = "auto"` choisit le PDF si `pdflatex` est disponible sur la
-machine et le HTML sinon. Il est également possible de choisir
-explicitement :
+machine et le HTML sinon. Pour imposer un format :
 
 ``` r
 
 generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 10, seed = 123) |>
-  produire_fiche("fiche_6e", format = "html")
-```
-
-``` r
+  produire_fiche(format = "html")
 
 generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 10, seed = 123) |>
-  produire_fiche("fiche_6e", format = "pdf")
+  produire_fiche(format = "pdf")
 ```
 
-La sortie HTML ne nécessite pas LaTeX. La sortie PDF nécessite une
+La sortie HTML ne nécessite pas LaTeX. Les deux formats reposent sur le
+rendu R Markdown/Pandoc ; la sortie PDF nécessite en plus une
 installation LaTeX fournissant `pdflatex`.
 
 ## Produire le corrigé
@@ -62,7 +64,7 @@ Le même lot d’exercices peut être envoyé au template de corrigé :
 ``` r
 
 generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 10, seed = 123) |>
-  produire_corrige("corrige_6e", format = "auto")
+  produire_corrige(format = "auto")
 ```
 
 Les anciennes fonctions de rapport LaTeX restent disponibles pour

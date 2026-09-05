@@ -6,6 +6,8 @@
   eduschool](https://gilles13.github.io/eduschool/articles/prise-en-main.md):
 - [Explorer une classe de 6e avec
   eduschool](https://gilles13.github.io/eduschool/articles/exemple-classe-6e.md):
+- [Explorer une classe de 2de générale et
+  technologique](https://gilles13.github.io/eduschool/articles/exemple-classe-2de-generale.md):
 
 ### Parcours scolaires
 
