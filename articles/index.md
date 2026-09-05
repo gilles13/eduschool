@@ -27,10 +27,28 @@ d etudes.
 
 Fiches de revision, ressources et outils pedagogiques.
 
+- [Mathématiques par
+  niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md):
+- [Mathématiques —
+  6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md):
+- [Mathématiques —
+  5e](https://gilles13.github.io/eduschool/articles/mathematiques-5e.md):
+- [Mathématiques —
+  4e](https://gilles13.github.io/eduschool/articles/mathematiques-4e.md):
+- [Mathématiques —
+  3e](https://gilles13.github.io/eduschool/articles/mathematiques-3e.md):
+- [Mathématiques —
+  2de](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md):
+- [Mathématiques — 1re
+  spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md):
+- [Mathématiques — Terminale
+  spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md):
 - [Fiches de révision –
   Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md):
 - [Mathématiques 6e – Fiche
   essentielle](https://gilles13.github.io/eduschool/articles/fiche-mathematiques-6e.md):
+- [Dérivation — Première
+  spécialité](https://gilles13.github.io/eduschool/articles/fiche-derivation-premiere.md):
 - [Approfondir ses connaissances en
   mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md):
 

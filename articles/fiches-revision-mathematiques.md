@@ -16,10 +16,17 @@ Les fiches sont produites à partir du même référentiel que les fonctions
 R du package. Le site n’est donc qu’une vue de ces données, et non une
 seconde source à maintenir séparément.
 
+## Accès par classe
+
+[Choisir directement un niveau, de la 6e à la
+Terminale](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md).
+
 ## Fiches disponibles
 
 - [6e — L’essentiel des
   mathématiques](https://gilles13.github.io/eduschool/articles/fiche-mathematiques-6e.md)
+- [1re spécialité — Dérivation, fiche
+  pilote](https://gilles13.github.io/eduschool/articles/fiche-derivation-premiere.md)
 
 Les niveaux 5e, 4e, 3e, 2de, 1re générale spécialité mathématiques et
 Terminale générale spécialité mathématiques seront ajoutés

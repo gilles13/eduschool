@@ -14,6 +14,29 @@ source et collaboratif.
 
 ------------------------------------------------------------------------
 
+## Aller directement à sa classe
+
+**Collège :**
+[6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md)
+·
+[5e](https://gilles13.github.io/eduschool/articles/mathematiques-5e.md)
+·
+[4e](https://gilles13.github.io/eduschool/articles/mathematiques-4e.md)
+·
+[3e](https://gilles13.github.io/eduschool/articles/mathematiques-3e.md)
+
+**Lycée :**
+[2de](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md)
+· [1re
+spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md)
+· [Terminale
+spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md)
+
+[Voir toutes les fiches et ressources de mathématiques
+→](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+
+------------------------------------------------------------------------
+
 ## Les quatre portes d’entrée
 
 ![](identite/parcours.png)
