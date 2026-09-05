@@ -41,3 +41,12 @@ parcoursup_calendrier;orientation/parcoursup_calendrier.csv;orientation;Jalons d
 parcoursup_nouveautes;orientation/parcoursup_nouveautes.csv;orientation;Nouveautes documentees des campagnes Parcoursup;nouveaute_id;nouveaute_id,campagne_id,ordre,libelle,description,source_id
 plateformes_admission;orientation/plateformes_admission.csv;orientation;Plateformes nationales d admission post-bac;plateforme_id;plateforme_id,libelle,debut,fin,statut,description,source_id
 plateformes_caracteristiques;orientation/plateformes_caracteristiques.csv;orientation;Caracteristiques comparees des plateformes d admission;plateforme_id,caracteristique_id;plateforme_id,caracteristique_id,ordre,libelle,valeur,source_id
+concepts_math;mathematiques/concepts.csv;mathematiques;Concepts mathematiques fins;concept_id;concept_id,libelle,definition,domaine,statut,niveau_introduction,programme_id
+relations_concepts_math;mathematiques/relations_concepts.csv;mathematiques;Relations semantiques entre concepts;relation_id;relation_id,concept_id,concept_lie_id,type_relation,importance,commentaire
+concepts_items_math;mathematiques/concepts_items.csv;mathematiques;Ancrage des concepts dans les objets de programme;concept_id,item_id;concept_id,item_id,role
+methodes_math;mathematiques/methodes.csv;mathematiques;Methodes et savoir-faire mathematiques;methode_id;methode_id,libelle,domaine,concept_id,demarche,niveau_id
+formules_math;mathematiques/formules.csv;mathematiques;Formules mathematiques essentielles;formule_id;formule_id,concept_id,libelle,expression,conditions,niveau_id
+erreurs_math;mathematiques/erreurs.csv;mathematiques;Erreurs frequentes et remediations;erreur_id;erreur_id,concept_id,libelle,description,remediation,niveau_id
+types_exercices_math;mathematiques/types_exercices.csv;mathematiques;Patrons pedagogiques d exercices;type_exercice_id;type_exercice_id,libelle,domaine,concept_id,objectif,niveau_id,difficulte
+types_exercices_concepts_math;mathematiques/types_exercices_concepts.csv;mathematiques;Concepts mobilises par les patrons d exercices;type_exercice_id,concept_id;type_exercice_id,concept_id,role
+types_exercices_methodes_math;mathematiques/types_exercices_methodes.csv;mathematiques;Methodes mobilisees par les patrons d exercices;type_exercice_id,methode_id;type_exercice_id,methode_id,role

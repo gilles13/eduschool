@@ -90,3 +90,11 @@
   }
   .contents table:has(img[src*="identite/"]) td { margin-bottom: .8rem; }
 }
+
+/* Portes d'entree : pictogramme, titre puis description sur trois niveaux. */
+.contents table:has(img[src*="identite/"]) img + strong {
+  display: block;
+  margin-top: .1rem;
+  margin-bottom: .35rem;
+  text-align: center;
+}

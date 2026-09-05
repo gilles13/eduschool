@@ -1,0 +1,41 @@
+formule_id;concept_id;libelle;expression;conditions;niveau_id
+MATF_ARITH_TERME;MATC_SUITE_ARITH;Terme général d’une suite arithmétique;u_n = u_p + (n-p)r;Suite arithmétique de raison r.;1G
+MATF_GEOM_TERME;MATC_SUITE_GEOM;Terme général d’une suite géométrique;u_n = u_p q^(n-p);Suite géométrique de raison q.;1G
+MATF_GEOM_SOMME;MATC_SUITE_GEOM;Somme géométrique;1 + q + ... + q^n = (1-q^(n+1))/(1-q);q différent de 1.;1G
+MATF_DISCRIMINANT;MATC_DISCRIMINANT;Discriminant;Delta = b^2 - 4ac;Pour ax^2+bx+c avec a non nul.;1G
+MATF_TANGENTE;MATC_TANGENTE;Équation de tangente;y = f(a) + f’(a)(x-a);f dérivable en a.;1G
+MATF_APPROX;MATC_APPROX_LINEAIRE;Approximation linéaire;f(a+h) ~= f(a) + f’(a)h;h proche de 0 et f dérivable en a.;1G
+MATF_EXP_ADD;MATC_EXPONENTIELLE;Équation fonctionnelle;exp(x+y) = exp(x) exp(y);x et y réels.;1G
+MATF_PS_COS;MATC_PRODUIT_SCALAIRE;Produit scalaire et angle;u.v = ||u|| ||v|| cos(theta);Vecteurs non nuls pour interpréter theta.;1G
+MATF_PS_COORD;MATC_PRODUIT_SCALAIRE;Produit scalaire en coordonnées;u.v = x_u x_v + y_u y_v;Repère orthonormé.;1G
+MATF_PROBA_COND;MATC_PROBA_CONDITIONNELLE;Probabilité conditionnelle;P_A(B) = P(A inter B) / P(A);P(A) non nulle.;1G
+MATF_INDEP;MATC_INDEPENDANCE;Critère d’indépendance;P(A inter B) = P(A) P(B);Événements A et B.;1G
+MATF_ESPERANCE;MATC_ESPERANCE;Espérance discrète;E(X) = somme x_i p_i;Loi finie.;1G
+MATF_VARIANCE;MATC_VARIANCE;Formule de König-Huygens;V(X) = E(X^2) - E(X)^2;Variable aléatoire réelle finie.;1G
+MATF_ECART_TYPE;MATC_ECART_TYPE;Écart type;sigma(X) = sqrt(V(X));Variance définie.;1G
+MATF_TAUX_VAR;MATC_TAUX_VARIATION;Taux de variation entre a et b;(f(b)-f(a))/(b-a);a et b distincts et appartenant au domaine de f.;1G
+MATF_TAUX_LOCAL;MATC_NOMBRE_DERIVE;Taux de variation local;(f(a+h)-f(a))/h;"h non nul ; on étudie son comportement lorsque h tend vers 0.";1G
+MATF_D_CONST;MATC_FONCTION_DERIVEE;Dérivée d’une constante;(k)’ = 0;k réel.;1G
+MATF_D_ID;MATC_FONCTION_DERIVEE;Dérivée de la fonction identité;(x)’ = 1;Sur R.;1G
+MATF_D_X2;MATC_FONCTION_DERIVEE;Dérivée de la fonction carré;(x^2)’ = 2x;Sur R.;1G
+MATF_D_X3;MATC_FONCTION_DERIVEE;Dérivée de la fonction cube;(x^3)’ = 3x^2;Sur R.;1G
+MATF_D_SOMME;MATC_FONCTION_DERIVEE;Dérivée d’une somme;(f+g)’ = f’ + g’;f et g dérivables sur l’intervalle considéré.;1G
+MATF_D_SCALAIRE;MATC_FONCTION_DERIVEE;Dérivée d’un multiple;(kf)’ = k f’;k réel et f dérivable.;1G
+MATF_ARITH_REC;MATC_SUITE_ARITH;Récurrence arithmétique;u_(n+1) = u_n + r;Suite arithmétique de raison r.;1G
+MATF_ARITH_SOMME;MATC_SOMME_ARITH;Somme de termes consécutifs arithmétiques;S = N (premier terme + dernier terme) / 2;N est le nombre de termes effectivement additionnés.;1G
+MATF_ARITH_1_N;MATC_SOMME_ARITH;Somme des entiers de 1 à n;1 + 2 + ... + n = n(n+1)/2;n entier naturel.;1G
+MATF_GEOM_REC;MATC_SUITE_GEOM;Récurrence géométrique;u_(n+1) = q u_n;Suite géométrique de raison q.;1G
+MATF_GEOM_SOMME_P;MATC_SOMME_GEOM;Somme géométrique à partir d’un terme u_p;u_p + ... + u_(p+N-1) = u_p (1-q^N)/(1-q);q différent de 1 et N nombre de termes.;1G
+MATF_COEFF_TAUX;MATC_CROISSANCE_EXP_DISCRETE;Coefficient multiplicateur associé à un taux;q = 1 + t;t est le taux d’évolution écrit sous forme décimale.;1G
+MATF_SECOND_DISCR;MATC_DISCRIMINANT;Discriminant d’un trinôme;Delta = b^2 - 4ac;P(x)=ax^2+bx+c avec a non nul.;1G
+MATF_SECOND_RACINES2;MATC_RACINE_TRINOME;Deux racines réelles;"x_1 = (-b-sqrt(Delta))/(2a) ; x_2 = (-b+sqrt(Delta))/(2a)";Delta strictement positif.;1G
+MATF_SECOND_RACINE1;MATC_RACINE_TRINOME;Racine double;x_0 = -b/(2a);Delta nul.;1G
+MATF_SECOND_ALPHA;MATC_FORME_CANONIQUE;Abscisse du sommet;alpha = -b/(2a);P(x)=ax^2+bx+c.;1G
+MATF_SECOND_CANON;MATC_FORME_CANONIQUE;Forme canonique;P(x) = a(x-alpha)^2 + beta;a non nul.;1G
+MATF_PS_ANGLE;MATC_PRODUIT_SCALAIRE;Produit scalaire et angle;u.v = ||u|| ||v|| cos(theta);Vecteurs non nuls pour isoler le cosinus.;1G
+MATF_PS_NORME;MATC_NORME_VECTEUR;Norme en coordonnées;||u|| = sqrt(x_u^2 + y_u^2);Repère orthonormé.;1G
+MATF_PROBA_INDEP;MATC_INDEPENDANCE;Critère d’indépendance;P(A inter B) = P(A) P(B);Événements A et B.;1G
+MATF_PROBA_TOTALE;MATC_PROBA_TOTALES;Probabilités totales;P(B) = somme_i P(A_i) P_Ai(B);Les A_i forment une partition de l’univers.;1G
+MATF_VA_ESPERANCE;MATC_ESPERANCE;Espérance d’une loi finie;E(X) = somme_i x_i p_i;Variable aléatoire discrète de loi finie.;1G
+MATF_VA_VARIANCE;MATC_VARIANCE;Variance d’une loi finie;V(X) = E(X^2) - E(X)^2;Variable aléatoire discrète de loi finie.;1G
+MATF_VA_ECART;MATC_ECART_TYPE;Écart type;sigma(X) = sqrt(V(X));Variance non négative.;1G

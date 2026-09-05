@@ -1,3 +1,16 @@
+# eduschool 0.13.0
+
+- Finalisation du pilote de Première générale spécialité mathématiques : enrichissement du second degré, du produit scalaire, des probabilités conditionnelles et des variables aléatoires.
+- Ajout de relations pédagogiques, méthodes, formules, erreurs fréquentes et familles d'exercices multi-concepts pour ces blocs.
+
+- Ajout d’une couche pédagogique fine pour les mathématiques, avec la Première générale spécialité 2026-2027 comme pilote.
+- Ajout des concepts, relations entre concepts, méthodes, formules, erreurs fréquentes et types d’exercices.
+- Ajout d’une API de consultation : `concepts_math()`, `relations_concepts_math()`, `methodes_math()`, `formules_math()`, `erreurs_math()`, `types_exercices_math()` et `carte_concept_math()`.
+- Intégration des nouvelles tables au métamodèle relationnel du SI.
+- Enrichissement du bloc dérivation de Première spécialité : sécantes, dérivabilité, extrémums, méthodes, formules, erreurs fréquentes et exercices progressifs.
+- Ajout de relations plusieurs-à-plusieurs entre types d’exercices, concepts et méthodes afin de représenter les exercices multi-concepts.
+- Enrichissement du bloc suites de Première spécialité : modes de génération, modèles discrets, termes généraux, raisons, sommes, variations, seuils, limite intuitive et pont vers l’exponentielle.
+
 # eduschool 0.12.1
 
 - ajout de visuels

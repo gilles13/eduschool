@@ -1,0 +1,70 @@
+methode_id;libelle;domaine;concept_id;demarche;niveau_id
+MATM_SUITE_REGISTRES;Passer entre registres pour une suite;ALGEBRE;MATC_SUITE;Passer entre langue naturelle, écriture algébrique, représentation graphique et algorithme.;1G
+MATM_SUITE_MODELE;Modéliser une évolution discrète;ALGEBRE;MATC_SUITE;Identifier l’indice, la grandeur et la règle d’évolution puis choisir une définition adaptée.;1G
+MATM_SUITE_TERME;Calculer des termes d’une suite;ALGEBRE;MATC_SUITE;Exploiter une définition explicite, une récurrence ou un algorithme.;1G
+MATM_SUITE_SOMME;Calculer une somme de termes;ALGEBRE;MATC_SUITE_GEOM;Identifier la nature de la suite et appliquer la formule de somme adaptée.;1G
+MATM_SUITE_VARIATION;Étudier le sens de variation d’une suite;ALGEBRE;MATC_SUITE;Comparer deux termes successifs ou exploiter une expression adaptée.;1G
+MATM_SECOND_SIGNE;Étudier le signe d’un trinôme;ALGEBRE;MATC_SECOND_DEGRE;Choisir une forme factorisée ou déterminer les racines puis organiser le signe.;1G
+MATM_SECOND_FACTOR;Factoriser un trinôme;ALGEBRE;MATC_SECOND_DEGRE;Choisir entre racine évidente, somme-produit, identité remarquable ou discriminant.;1G
+MATM_SECOND_FORME;Choisir la forme adaptée d’un trinôme;ALGEBRE;MATC_FORME_CANONIQUE;Choisir développée, canonique ou factorisée selon équation, signe, optimisation ou variations.;1G
+MATM_DERIVEE_LOCAL;Interpréter un nombre dérivé;ANALYSE;MATC_NOMBRE_DERIVE;Relier taux de variation, pente de tangente, vitesse instantanée ou coût marginal.;1G
+MATM_TANGENTE_EQ;Déterminer une équation de tangente;ANALYSE;MATC_TANGENTE;Calculer f(a) et f’(a), puis utiliser y=f(a)+f’(a)(x-a).;1G
+MATM_APPROX_LINEAIRE;Utiliser une approximation linéaire;ANALYSE;MATC_APPROX_LINEAIRE;Remplacer localement f(a+h) par f(a)+f’(a)h et contrôler le contexte.;1G
+MATM_DERIVEE_CALCUL;Calculer une fonction dérivée;ANALYSE;MATC_FONCTION_DERIVEE;Identifier la structure de l’expression puis appliquer les règles du programme.;1G
+MATM_VARIATIONS;Étudier une fonction par sa dérivée;ANALYSE;MATC_VARIATIONS_DERIVEE;Calculer f’, étudier son signe et en déduire variations et extrémums.;1G
+MATM_OPTIMISATION;Résoudre un problème d’optimisation;ANALYSE;MATC_VARIATIONS_DERIVEE;Construire la fonction objectif, déterminer son domaine puis exploiter ses variations.;1G
+MATM_EXPO_TRANSFORM;Transformer une expression exponentielle;ANALYSE;MATC_EXPONENTIELLE;Utiliser les propriétés algébriques de l’exponentielle.;1G
+MATM_EXPO_MODELE;Modéliser une évolution exponentielle;ANALYSE;MATC_EXPONENTIELLE;Identifier une évolution multiplicative continue et interpréter les paramètres.;1G
+MATM_TRIGO_CERCLE;Lire sinus et cosinus sur le cercle;ANALYSE;MATC_CERCLE_TRIGO;Placer le réel sur le cercle puis lire les coordonnées et angles associés.;1G
+MATM_PS_CHOIX;Choisir une expression du produit scalaire;GEOMETRIE;MATC_PRODUIT_SCALAIRE;Choisir projection, coordonnées, normes-angle ou identité selon les données.;1G
+MATM_PS_ORTHO;Démontrer une orthogonalité;GEOMETRIE;MATC_ORTHOGONALITE;Construire deux vecteurs pertinents et établir que leur produit scalaire est nul.;1G
+MATM_DROITE_NORMAL;Déterminer une équation de droite avec un vecteur normal;GEOMETRIE;MATC_VECTEUR_NORMAL;Utiliser un point et un vecteur normal pour déterminer ax+by+c=0.;1G
+MATM_PROJECTION;Déterminer un projeté orthogonal;GEOMETRIE;MATC_PROJECTION_ORTHO;Combiner appartenance à la droite et orthogonalité.;1G
+MATM_CERCLE_EQ;Exploiter une équation de cercle;GEOMETRIE;MATC_EQUATION_CERCLE;Passer entre centre-rayon et équation cartésienne.;1G
+MATM_PROBA_COND;Calculer une probabilité conditionnelle;PROBABILITES;MATC_PROBA_CONDITIONNELLE;Identifier condition et intersection puis exploiter définition, tableau ou arbre.;1G
+MATM_PROBA_TOTALES;Utiliser les probabilités totales;PROBABILITES;MATC_PROBA_TOTALES;Identifier une partition et sommer les probabilités des chemins correspondants.;1G
+MATM_PROBA_INDEP;Justifier une indépendance;PROBABILITES;MATC_INDEPENDANCE;Comparer une conditionnelle à une probabilité ou une intersection au produit.;1G
+MATM_BERNOULLI_ARBRE;Représenter des répétitions de Bernoulli;PROBABILITES;MATC_BERNOULLI_REPETITION;Construire l’arbre pour n inférieur ou égal à 4 et calculer des probabilités.;1G
+MATM_VA_LOI;Déterminer une loi de probabilité;PROBABILITES;MATC_LOI_VARIABLE;Lister les valeurs possibles et agréger les probabilités des issues correspondantes.;1G
+MATM_VA_INDICATEURS;Calculer espérance, variance et écart type;PROBABILITES;MATC_ESPERANCE;Calculer les indicateurs à partir de la loi et les interpréter dans le contexte.;1G
+MATM_SIMULATION;Concevoir ou interpréter une simulation;ALGORITHMIQUE;MATC_SIMULATION;Répéter une expérience pseudo-aléatoire, recueillir les résultats et les comparer au modèle.;1G
+MATM_TAUX_CALCUL;Calculer un taux de variation;ANALYSE;MATC_TAUX_VARIATION;Entre a et b, calculer (f(b)-f(a))/(b-a), puis identifier les unités et le sens de la variation moyenne.;1G
+MATM_SECANTE_PENTE;Interpréter graphiquement une sécante;ANALYSE;MATC_SECANTE;Choisir deux points de la courbe, construire la sécante et relier sa pente au taux de variation.;1G
+MATM_DERIVEE_GRAPHIQUE;Estimer un nombre dérivé graphiquement;ANALYSE;MATC_NOMBRE_DERIVE;Lire ou construire la tangente au point considéré puis estimer son coefficient directeur.;1G
+MATM_DERIVABILITE;Reconnaître la dérivabilité dans un cas graphique simple;ANALYSE;MATC_DERIVABILITE_POINT;Observer le comportement des sécantes et vérifier qu’une direction limite unique et finie se dégage.;1G
+MATM_TANGENTE_CONSTRUIRE;Construire une tangente à une courbe;ANALYSE;MATC_TANGENTE;Placer le point de contact puis utiliser le nombre dérivé comme coefficient directeur de la droite.;1G
+MATM_DERIVEE_POLYNOME;Dériver un polynôme de degré inférieur ou égal à 3;ANALYSE;MATC_FONCTION_DERIVEE;Décomposer le polynôme en somme de monômes puis utiliser linéarité et dérivées usuelles du programme.;1G
+MATM_DERIVEE_UNITES;Interpréter les unités d’un nombre dérivé;ANALYSE;MATC_NOMBRE_DERIVE;Rapporter l’unité de la grandeur en ordonnée à celle de la grandeur en abscisse et interpréter le signe.;1G
+MATM_EXTREMUM_DERIVEE;Identifier un extremum par l’étude du signe de la dérivée;ANALYSE;MATC_EXTREMUM;Étudier le signe de f’ de part et d’autre d’un point critique puis conclure par les variations de f.;1G
+MATM_VARIATIONS_TABLEAU;Construire un tableau de variations à partir de f’;ANALYSE;MATC_VARIATIONS_DERIVEE;Résoudre f’(x)=0, étudier le signe de f’, calculer les valeurs utiles de f puis synthétiser dans un tableau.;1G
+MATM_SUITE_IDENTIFIER_GENERATION;Identifier le mode de génération d’une suite;ALGEBRE;MATC_MODE_GENERATION_SUITE;Repérer si les termes sont donnés directement, par récurrence, par algorithme ou par construction avant de calculer.;1G
+MATM_SUITE_EXPLICITE_RECUR;Passer d’une définition explicite à une récurrence dans les cas simples;ALGEBRE;MATC_MODE_GENERATION_SUITE;Comparer u_n et u_(n+1), dégager la règle de passage puis préciser le terme initial.;1G
+MATM_SUITE_MOTIF;Construire une suite à partir d’un motif ou d’un dénombrement;ALGEBRE;MATC_MODELE_DISCRET;Choisir le rang, compter la grandeur étudiée, produire plusieurs termes puis rechercher une règle explicite ou récurrente.;1G
+MATM_SUITE_GRAPH;Représenter une suite par un nuage de points;ALGEBRE;MATC_REPRESENTATION_SUITE;Calculer plusieurs termes puis placer les points (n,u_n) sans relier artificiellement les abscisses entières.;1G
+MATM_ARITH_TERME;Calculer le terme général d’une suite arithmétique;ALGEBRE;MATC_SUITE_ARITH;Identifier un terme connu et la raison puis écrire u_n = u_p + (n-p)r.;1G
+MATM_ARITH_SOMME;Calculer une somme de termes arithmétiques;ALGEBRE;MATC_SOMME_ARITH;Compter le nombre de termes, identifier premier et dernier termes puis utiliser la moyenne des extrêmes.;1G
+MATM_GEOM_TERME;Calculer le terme général d’une suite géométrique;ALGEBRE;MATC_SUITE_GEOM;Identifier un terme connu et la raison puis écrire u_n = u_p q^(n-p).;1G
+MATM_GEOM_SOMME;Calculer une somme de termes géométriques;ALGEBRE;MATC_SOMME_GEOM;Factoriser par le premier terme, compter les puissances et appliquer la somme géométrique adaptée.;1G
+MATM_SUITE_VARIATION_ARITH;Déterminer le sens de variation d’une suite arithmétique;ALGEBRE;MATC_VARIATION_SUITE;Lire le signe de la raison r : positif, nul ou négatif.;1G
+MATM_SUITE_VARIATION_GEOM;Déterminer le sens de variation d’une suite géométrique dans les cas usuels;ALGEBRE;MATC_VARIATION_SUITE;Étudier la raison q et le signe des termes dans le cadre de l’exercice avant de conclure.;1G
+MATM_SUITE_MODELE_LINEAIRE;Modéliser une croissance discrète à accroissement constant;ALGEBRE;MATC_CROISSANCE_LINEAIRE_DISCRETE;Identifier l’accroissement entre deux étapes, choisir une suite arithmétique et interpréter la raison dans le contexte.;1G
+MATM_SUITE_MODELE_EXP;Modéliser une croissance discrète à taux constant;ALGEBRE;MATC_CROISSANCE_EXP_DISCRETE;Transformer le taux en coefficient multiplicateur, choisir une suite géométrique et interpréter la raison.;1G
+MATM_SUITE_SEUIL;Rechercher un seuil pour une suite;ALGEBRE;MATC_SEUIL_SUITE;Formuler la condition, calculer ou itérer les termes jusqu’au premier rang qui la satisfait puis vérifier le caractère minimal.;1G
+MATM_SUITE_LIMITE_CONJECTURE;Conjecturer le comportement à long terme d’une suite;ALGEBRE;MATC_LIMITE_SUITE_INTUITIVE;Observer valeurs, représentation et éventuellement seuils pour formuler une conjecture sans prétendre démontrer une convergence.;1G
+MATM_SECOND_CHOIX_FORME;Choisir la forme adaptée d’un trinôme;ALGEBRE;MATC_SECOND_DEGRE;Identifier l’information recherchée : coefficients, sommet, racines ou signe, puis choisir développée, canonique ou factorisée.;1G
+MATM_SECOND_CANONIQUE;Déterminer une forme canonique;ALGEBRE;MATC_FORME_CANONIQUE;Transformer l’expression ou exploiter les caractéristiques du trinôme pour obtenir a(x-alpha)^2+beta.;1G
+MATM_SECOND_FACTORISER;Factoriser un trinôme;ALGEBRE;MATC_FORME_FACTORISEE;Rechercher une factorisation adaptée aux données, vérifier en redéveloppant et exploiter les racines éventuelles.;1G
+MATM_SECOND_SOMMET;Lire ou déterminer le sommet d’une parabole;ALGEBRE;MATC_SOMMET_PARABOLE;Utiliser la forme canonique puis relier alpha et beta aux coordonnées du sommet.;1G
+MATM_SECOND_RESOLUTION;Résoudre une équation du second degré;ALGEBRE;MATC_EQUATION_SECOND_DEGRE;Ramener l’équation à P(x)=0, choisir factorisation ou outil adapté, puis vérifier les solutions.;1G
+MATM_PS_COORD;Calculer un produit scalaire en coordonnées;GEOMETRIE;MATC_PRODUIT_SCALAIRE;Déterminer les coordonnées des vecteurs puis sommer les produits des coordonnées correspondantes.;1G
+MATM_PS_GEOMETRIQUE;Calculer un produit scalaire avec normes et angle;GEOMETRIE;MATC_PRODUIT_SCALAIRE;Identifier les normes et l’angle puis appliquer la relation avec le cosinus.;1G
+MATM_PS_ORTHOGONALITE;Démontrer une orthogonalité par produit scalaire;GEOMETRIE;MATC_ORTHOGONALITE;Construire les vecteurs pertinents et établir que leur produit scalaire est nul.;1G
+MATM_PS_ANGLE;Déterminer un angle à l’aide du produit scalaire;GEOMETRIE;MATC_ANGLE_VECTEURS;Calculer produit scalaire et normes puis isoler le cosinus avant de déterminer l’angle.;1G
+MATM_PS_NORMAL;Déterminer ou exploiter un vecteur normal;GEOMETRIE;MATC_VECTEUR_NORMAL;Traduire l’orthogonalité à un vecteur directeur par un produit scalaire nul.;1G
+MATM_PROBA_COND_TABLEAU;Calculer une probabilité conditionnelle dans un tableau;PROBABILITES;MATC_PROBA_CONDITIONNELLE;Identifier la population conditionnante puis former le rapport intersection sur condition.;1G
+MATM_PROBA_ARBRE_CONSTRUIRE;Construire un arbre pondéré;PROBABILITES;MATC_ARBRE_PROBA;Choisir le premier événement, placer les probabilités de branches et compléter chaque embranchement à somme 1.;1G
+MATM_PROBA_ARBRE_CALCUL;Calculer la probabilité d’un chemin;PROBABILITES;MATC_ARBRE_PROBA;Multiplier les probabilités successives le long du chemin puis additionner des chemins incompatibles si nécessaire.;1G
+MATM_PROBA_TOTALE;Utiliser la formule des probabilités totales;PROBABILITES;MATC_PROBA_TOTALES;Identifier une partition puis sommer les probabilités des intersections correspondantes.;1G
+MATM_PROBA_INDEP_TEST;Tester l’indépendance de deux événements;PROBABILITES;MATC_INDEPENDANCE;Comparer une conditionnelle à une marginale ou comparer P(A inter B) à P(A)P(B).;1G
+MATM_VA_ESPERANCE;Calculer et interpréter une espérance;PROBABILITES;MATC_ESPERANCE;Calculer la somme des valeurs pondérées par leurs probabilités puis interpréter comme moyenne théorique.;1G
+MATM_VA_VARIANCE;Calculer variance et écart type;PROBABILITES;MATC_VARIANCE;Calculer E(X²) et E(X), former V(X)=E(X²)-E(X)² puis prendre la racine carrée.;1G

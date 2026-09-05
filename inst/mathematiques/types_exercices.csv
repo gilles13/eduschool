@@ -1,0 +1,49 @@
+type_exercice_id;libelle;domaine;concept_id;objectif;niveau_id;difficulte
+MATX_SUITE_MODELE;Modélisation par une suite;ALGEBRE;MATC_SUITE;Passer d’une situation discrète à une définition de suite puis exploiter le modèle.;1G;2
+MATX_SUITE_SEUIL;Algorithme de seuil sur une suite;ALGEBRE;MATC_SUITE;Calculer des termes jusqu’au franchissement d’un seuil.;1G;3
+MATX_SECOND_CHOIX;Choix d’une forme du second degré;ALGEBRE;MATC_SECOND_DEGRE;Choisir puis exploiter la représentation la plus efficace.;1G;2
+MATX_SECOND_OPTIM;Optimisation avec un trinôme;ALGEBRE;MATC_FORME_CANONIQUE;Modéliser une grandeur et déterminer un extremum.;1G;3
+MATX_DERIVEE_TANGENTE;Nombre dérivé et tangente;ANALYSE;MATC_NOMBRE_DERIVE;Articuler taux de variation, interprétation locale et équation de tangente.;1G;2
+MATX_DERIVEE_VARIATIONS;Étude de fonction par dérivation;ANALYSE;MATC_VARIATIONS_DERIVEE;Calculer f’, étudier son signe et conclure sur variations et extrémums.;1G;2
+MATX_OPTIMISATION;Problème d’optimisation;ANALYSE;MATC_VARIATIONS_DERIVEE;Construire et étudier une fonction objectif dans un contexte.;1G;3
+MATX_EXPO_MODELE;Modélisation exponentielle;ANALYSE;MATC_EXPONENTIELLE;Identifier et exploiter une croissance ou décroissance exponentielle.;1G;2
+MATX_TRIGO_CERCLE;Lecture du cercle trigonométrique;ANALYSE;MATC_CERCLE_TRIGO;Placer des réels et déterminer sinus et cosinus associés.;1G;1
+MATX_PS_GEOM;Produit scalaire et géométrie;GEOMETRIE;MATC_PRODUIT_SCALAIRE;Choisir une formule pour calculer longueur, angle ou orthogonalité.;1G;2
+MATX_GEO_REPEREE;Droite, projection et cercle;GEOMETRIE;MATC_PROJECTION_ORTHO;Combiner équations, vecteurs normaux et orthogonalité.;1G;3
+MATX_PROBA_ARBRE;Probabilités conditionnelles sur arbre;PROBABILITES;MATC_PROBA_CONDITIONNELLE;Construire ou exploiter un arbre et utiliser les probabilités totales.;1G;2
+MATX_PROBA_INDEP;Indépendance;PROBABILITES;MATC_INDEPENDANCE;Tester ou exploiter l’indépendance dans une situation contextualisée.;1G;2
+MATX_BERNOULLI;Répétitions de Bernoulli;PROBABILITES;MATC_BERNOULLI_REPETITION;Construire un arbre pour une petite répétition et calculer un événement.;1G;2
+MATX_VA_JEU;Variable aléatoire et jeu;PROBABILITES;MATC_VARIABLE_ALEATOIRE;Construire une loi de gain et interpréter espérance et dispersion.;1G;2
+MATX_SIMULATION;Simulation et comparaison au modèle;ALGORITHMIQUE;MATC_SIMULATION;Simuler, résumer des fréquences et confronter expérimentation et modèle.;1G;2
+MATX_DERIVEE_SECANTE;Sécantes et taux de variation;ANALYSE;MATC_TAUX_VARIATION;Calculer plusieurs taux de variation et interpréter les pentes des sécantes associées.;1G;1
+MATX_DERIVEE_LECTURE;Lecture graphique du nombre dérivé;ANALYSE;MATC_NOMBRE_DERIVE;Lire une tangente, déterminer son coefficient directeur et interpréter f’(a).;1G;1
+MATX_DERIVEE_POLYNOME;Calcul de dérivée polynomiale;ANALYSE;MATC_FONCTION_DERIVEE;Dériver des polynômes de degré inférieur ou égal à 3 en mobilisant les règles du programme.;1G;1
+MATX_TANGENTE_EQUATION;Équation de tangente;ANALYSE;MATC_TANGENTE;Calculer f(a), f’(a) puis déterminer et contrôler l’équation de la tangente.;1G;2
+MATX_DERIVEE_VITESSE;Vitesse instantanée et unités;ANALYSE;MATC_NOMBRE_DERIVE;Passer d’une fonction position à une vitesse instantanée et interpréter valeur, signe et unités.;1G;2
+MATX_DERIVEE_PARAMETRE;Tangente et paramètre;ANALYSE;MATC_TANGENTE;Déterminer un paramètre à partir d’une condition portant sur une tangente ou un nombre dérivé.;1G;3
+MATX_DERIVEE_EXTREMUM;Extremum et signe de la dérivée;ANALYSE;MATC_EXTREMUM;Étudier le signe de f’ pour justifier un maximum ou un minimum et éviter le faux critère f’(a)=0 seul.;1G;2
+MATX_DERIVEE_APPROX;Approximation linéaire locale;ANALYSE;MATC_APPROX_LINEAIRE;Utiliser une tangente pour obtenir une estimation locale et discuter la portée de l’approximation.;1G;3
+MATX_SUITE_GENERATION;Modes de génération d’une suite;ALGEBRE;MATC_MODE_GENERATION_SUITE;Identifier et traduire entre formule explicite, récurrence, motif et algorithme.;1G;2
+MATX_SUITE_MOTIF;Suite issue d’un motif ou d’un dénombrement;ALGEBRE;MATC_MODELE_DISCRET;Construire une suite à partir d’une configuration dépendant d’un entier puis rechercher une règle.;1G;2
+MATX_SUITE_GRAPH;Représentation et lecture d’une suite;ALGEBRE;MATC_REPRESENTATION_SUITE;Passer d’une table de valeurs ou d’une définition à un nuage de points et exploiter ce graphique.;1G;1
+MATX_ARITH_TERME;Suite arithmétique : terme et raison;ALGEBRE;MATC_SUITE_ARITH;Identifier une raison et calculer un terme de rang donné ou retrouver un terme initial.;1G;2
+MATX_ARITH_SOMME;Suite arithmétique : somme;ALGEBRE;MATC_SOMME_ARITH;Calculer ou interpréter une somme de termes consécutifs en contrôlant le nombre de termes.;1G;2
+MATX_GEOM_TERME;Suite géométrique : terme et raison;ALGEBRE;MATC_SUITE_GEOM;Identifier une raison et calculer un terme de rang donné dans une évolution multiplicative.;1G;2
+MATX_GEOM_SOMME;Suite géométrique : somme;ALGEBRE;MATC_SOMME_GEOM;Calculer une somme de termes géométriques dans un contexte numérique ou financier.;1G;3
+MATX_SUITE_VARIATIONS;Sens de variation d’une suite;ALGEBRE;MATC_VARIATION_SUITE;Déterminer et justifier le sens de variation d’une suite arithmétique ou géométrique dans un cas usuel.;1G;2
+MATX_SUITE_CROISSANCE_COMPAREE;Croissance linéaire ou exponentielle discrète;ALGEBRE;MATC_MODELE_DISCRET;Choisir entre modèle arithmétique et géométrique et interpréter le paramètre d’évolution.;1G;2
+MATX_SUITE_SEUIL_ALGO;Recherche algorithmique d’un seuil;ALGEBRE;MATC_SEUIL_SUITE;Déterminer le premier rang satisfaisant une condition par calcul itératif ou algorithme.;1G;3
+MATX_SUITE_LIMITE_INTUITIVE;Conjecture de comportement à long terme;ALGEBRE;MATC_LIMITE_SUITE_INTUITIVE;Explorer numériquement ou graphiquement une suite et formuler une conjecture de limite ou d’absence de stabilisation.;1G;2
+MATX_SUITE_EXPO_PONT;Du modèle géométrique au modèle exponentiel;ALGEBRE;MATC_CROISSANCE_EXP_DISCRETE;Comparer une évolution à temps discret et son prolongement exponentiel continu.;1G;3
+MATX_SECOND_CHOIX_FORME;Choix stratégique d’une forme de trinôme;ALGEBRE;MATC_SECOND_DEGRE;Choisir et exploiter la représentation la plus efficace d’un trinôme.;1G;2
+MATX_SECOND_SIGNE;Signe d’un trinôme;ALGEBRE;MATC_SIGNE_TRINOME;Factoriser si nécessaire puis établir un tableau de signe.;1G;2
+MATX_SECOND_PARABOLE;Parabole, sommet et formes;ALGEBRE;MATC_PARABOLE;Relier expression algébrique, sommet, axe et représentation graphique.;1G;2
+MATX_SECOND_PROBLEME;Problème modélisé par un trinôme;ALGEBRE;MATC_SECOND_DEGRE;Construire un modèle quadratique puis résoudre une question de seuil, signe ou extremum.;1G;3
+MATX_PS_COORD;Produit scalaire en coordonnées;GEOMETRIE;MATC_PRODUIT_SCALAIRE;Calculer des produits scalaires et décider d’une orthogonalité dans un repère.;1G;1
+MATX_PS_ANGLE;Angle et produit scalaire;GEOMETRIE;MATC_ANGLE_VECTEURS;Déterminer un angle ou une longueur à partir du produit scalaire.;1G;2
+MATX_PS_ORTHO;Démonstration d’orthogonalité;GEOMETRIE;MATC_ORTHOGONALITE;Choisir des vecteurs puis démontrer une perpendicularité.;1G;2
+MATX_PS_NORMAL;Droite et vecteur normal;GEOMETRIE;MATC_VECTEUR_NORMAL;Relier équation de droite, direction et orthogonalité.;1G;3
+MATX_PROBA_TABLEAU;Probabilités conditionnelles sur tableau;PROBABILITES;MATC_TABLEAU_PROBA;Extraire probabilités marginales, intersections et conditionnelles d’un tableau.;1G;1
+MATX_PROBA_INVERSE;Retrouver une probabilité conditionnelle;PROBABILITES;MATC_PROBA_CONDITIONNELLE;Combiner arbre, intersection et probabilité totale pour retrouver une conditionnelle.;1G;3
+MATX_VA_LOI;Construire une loi de variable aléatoire;PROBABILITES;MATC_LOI_VARIABLE;Passer d’une expérience à la loi d’une variable aléatoire.;1G;2
+MATX_VA_INDICATEURS;Espérance, variance et écart type;PROBABILITES;MATC_ESPERANCE;Calculer et interpréter les indicateurs d’une loi discrète.;1G;2

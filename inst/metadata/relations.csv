@@ -69,3 +69,21 @@ REL067;parcoursup_nouveautes;source_id;sources;source_id;non;n:1;Source de la no
 REL068;plateformes_admission;source_id;sources;source_id;non;n:1;Source historique de la plateforme
 REL069;plateformes_caracteristiques;plateforme_id;plateformes_admission;plateforme_id;non;n:1;Plateforme comparee
 REL070;plateformes_caracteristiques;source_id;sources;source_id;non;n:1;Source de la caracteristique
+REL071;concepts_math;niveau_introduction;niveaux;niveau_id;non;n:1;Niveau d introduction du concept
+REL072;concepts_math;programme_id;programmes;programme_id;non;n:1;Programme pilote du concept
+REL073;relations_concepts_math;concept_id;concepts_math;concept_id;non;n:1;Concept source
+REL074;relations_concepts_math;concept_lie_id;concepts_math;concept_id;non;n:1;Concept lie
+REL075;concepts_items_math;concept_id;concepts_math;concept_id;non;n:1;Concept ancre
+REL076;concepts_items_math;item_id;programme_items;item_id;non;n:1;Objet de programme
+REL077;methodes_math;concept_id;concepts_math;concept_id;non;n:1;Concept principal
+REL078;methodes_math;niveau_id;niveaux;niveau_id;non;n:1;Niveau scolaire
+REL079;formules_math;concept_id;concepts_math;concept_id;non;n:1;Concept principal
+REL080;formules_math;niveau_id;niveaux;niveau_id;non;n:1;Niveau scolaire
+REL081;erreurs_math;concept_id;concepts_math;concept_id;non;n:1;Concept principal
+REL082;erreurs_math;niveau_id;niveaux;niveau_id;non;n:1;Niveau scolaire
+REL083;types_exercices_math;concept_id;concepts_math;concept_id;non;n:1;Concept principal
+REL084;types_exercices_math;niveau_id;niveaux;niveau_id;non;n:1;Niveau scolaire
+REL085;types_exercices_concepts_math;type_exercice_id;types_exercices_math;type_exercice_id;non;n:1;Patron d exercice relie
+REL086;types_exercices_concepts_math;concept_id;concepts_math;concept_id;non;n:1;Concept mobilise par le patron
+REL087;types_exercices_methodes_math;type_exercice_id;types_exercices_math;type_exercice_id;non;n:1;Patron d exercice relie
+REL088;types_exercices_methodes_math;methode_id;methodes_math;methode_id;non;n:1;Methode mobilisee par le patron

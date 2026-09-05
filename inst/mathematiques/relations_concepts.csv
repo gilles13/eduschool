@@ -1,0 +1,79 @@
+relation_id;concept_id;concept_lie_id;type_relation;importance;commentaire
+MCR001;MATC_NOMBRE_DERIVE;MATC_TAUX_VARIATION;PREREQUIS;fort;Le nombre dérivé est introduit à partir du taux de variation.
+MCR002;MATC_TANGENTE;MATC_NOMBRE_DERIVE;PREREQUIS;fort;La pente de la tangente est donnée par le nombre dérivé.
+MCR003;MATC_APPROX_LINEAIRE;MATC_TANGENTE;PREREQUIS;fort;L’approximation linéaire utilise la fonction affine tangente.
+MCR004;MATC_FONCTION_DERIVEE;MATC_NOMBRE_DERIVE;GENERALISE;fort;Le point de vue global rassemble les nombres dérivés.
+MCR005;MATC_VARIATIONS_DERIVEE;MATC_FONCTION_DERIVEE;PREREQUIS;fort;Le signe de f’ permet l’étude des variations.
+MCR006;MATC_EXPONENTIELLE;MATC_FONCTION_DERIVEE;MOBILISE;fort;L’exponentielle est caractérisée par sa dérivée.
+MCR007;MATC_EXPONENTIELLE;MATC_SUITE_GEOM;CONNEXION;moyen;Le programme relie modèles exponentiels continus et suites géométriques.
+MCR008;MATC_SUITE_ARITH;MATC_SUITE;SPECIALISE;fort;Suite à accroissements constants.
+MCR009;MATC_SUITE_GEOM;MATC_SUITE;SPECIALISE;fort;Suite à taux multiplicatif constant.
+MCR010;MATC_LIMITE_SUITE_INTUITIVE;MATC_SUITE;PREREQUIS;fort;La limite intuitive porte sur le comportement d’une suite.
+MCR011;MATC_FORME_CANONIQUE;MATC_SECOND_DEGRE;REPRESENTE;fort;La forme canonique est une représentation du trinôme.
+MCR012;MATC_DISCRIMINANT;MATC_SECOND_DEGRE;MOBILISE;fort;Le discriminant intervient dans la résolution générale.
+MCR013;MATC_SINUS_COSINUS;MATC_CERCLE_TRIGO;PREREQUIS;fort;Le cercle porte la lecture de sinus et cosinus.
+MCR014;MATC_ORTHOGONALITE;MATC_PRODUIT_SCALAIRE;MOBILISE;fort;Le produit scalaire caractérise l’orthogonalité.
+MCR015;MATC_VECTEUR_NORMAL;MATC_ORTHOGONALITE;PREREQUIS;fort;Un vecteur normal est défini par orthogonalité.
+MCR016;MATC_PROJECTION_ORTHO;MATC_ORTHOGONALITE;PREREQUIS;fort;La projection est définie par une perpendicularité.
+MCR017;MATC_EQUATION_CERCLE;MATC_PRODUIT_SCALAIRE;CONNEXION;moyen;Le cadre repéré et métrique permet l’étude des cercles.
+MCR018;MATC_INDEPENDANCE;MATC_PROBA_CONDITIONNELLE;PREREQUIS;fort;L’indépendance est introduite via les probabilités conditionnelles.
+MCR019;MATC_PROBA_TOTALES;MATC_PROBA_CONDITIONNELLE;MOBILISE;fort;La formule s’appuie sur des probabilités conditionnelles et une partition.
+MCR020;MATC_BERNOULLI_REPETITION;MATC_INDEPENDANCE;PREREQUIS;fort;Les répétitions étudiées sont indépendantes et identiques.
+MCR021;MATC_LOI_VARIABLE;MATC_VARIABLE_ALEATOIRE;PREREQUIS;fort;La loi décrit la distribution d’une variable aléatoire.
+MCR022;MATC_ESPERANCE;MATC_LOI_VARIABLE;PREREQUIS;fort;L’espérance est calculée à partir de la loi.
+MCR023;MATC_VARIANCE;MATC_LOI_VARIABLE;PREREQUIS;fort;La variance est calculée à partir de la loi.
+MCR024;MATC_ECART_TYPE;MATC_VARIANCE;PREREQUIS;fort;L’écart type est la racine carrée de la variance.
+MCR025;MATC_SIMULATION;MATC_VARIABLE_ALEATOIRE;CONNEXION;moyen;La simulation permet d’explorer numériquement un modèle aléatoire.
+MCR026;MATC_SECANTE;MATC_COEFF_DIRECTEUR;MOBILISE;fort;Le coefficient directeur mesure la pente de la sécante.
+MCR027;MATC_TAUX_VARIATION;MATC_SECANTE;REPRESENTE;fort;Le taux de variation est le coefficient directeur de la sécante entre deux points de la courbe.
+MCR028;MATC_NOMBRE_DERIVE;MATC_SECANTE;PREREQUIS;fort;Le nombre dérivé est obtenu par passage à la limite des pentes de sécantes.
+MCR029;MATC_DERIVABILITE_POINT;MATC_TAUX_VARIATION;PREREQUIS;fort;La dérivabilité en un point repose sur l’existence d’une limite finie du taux de variation.
+MCR030;MATC_NOMBRE_DERIVE;MATC_DERIVABILITE_POINT;EQUIVALENCE_LOCALE;fort;Être dérivable en un point permet de définir le nombre dérivé en ce point.
+MCR031;MATC_TANGENTE;MATC_DERIVABILITE_POINT;PREREQUIS;fort;Dans le cadre étudié, la tangente est associée à une fonction dérivable au point considéré.
+MCR032;MATC_TANGENTE;MATC_COEFF_DIRECTEUR;MOBILISE;fort;Le nombre dérivé fournit le coefficient directeur de la tangente.
+MCR033;MATC_APPROX_LINEAIRE;MATC_DERIVABILITE_POINT;PREREQUIS;fort;L’approximation affine locale suppose la dérivabilité au point considéré.
+MCR034;MATC_VARIATIONS_DERIVEE;MATC_EXTREMUM;CONNEXION;fort;L’étude des variations permet de repérer maxima et minima.
+MCR035;MATC_EXTREMUM;MATC_FONCTION_DERIVEE;MOBILISE;fort;Le signe de la dérivée et ses changements de signe permettent de caractériser des extrémums dans les situations étudiées.
+MCR036;MATC_NOMBRE_DERIVE;MATC_COEFF_DIRECTEUR;CONNEXION;fort;Le nombre dérivé s’interprète comme coefficient directeur de la tangente.
+MCR037;MATC_APPROX_LINEAIRE;MATC_NOMBRE_DERIVE;MOBILISE;fort;Le coefficient de l’approximation linéaire est le nombre dérivé.
+MCR038;MATC_MODELE_DISCRET;MATC_SUITE;REPRESENTE;fort;Les suites fournissent un modèle naturel pour des phénomènes évoluant par étapes.
+MCR039;MATC_MODE_GENERATION_SUITE;MATC_SUITE;MOBILISE;fort;Une suite peut être produite selon plusieurs modes de génération.
+MCR040;MATC_SUITE_EXPLICITE;MATC_MODE_GENERATION_SUITE;SPECIALISE;fort;La définition explicite est un mode de génération.
+MCR041;MATC_SUITE_RECURRENTE;MATC_MODE_GENERATION_SUITE;SPECIALISE;fort;La définition par récurrence est un mode de génération.
+MCR042;MATC_TERME_GENERAL_SUITE;MATC_SUITE_EXPLICITE;CONNEXION;fort;Une formule explicite donne directement le terme général.
+MCR043;MATC_REPRESENTATION_SUITE;MATC_SUITE;REPRESENTE;fort;Le nuage de points (n,u_n) permet de visualiser l’évolution des termes.
+MCR044;MATC_RAISON_ARITH;MATC_SUITE_ARITH;MOBILISE;fort;La raison caractérise l’accroissement constant d’une suite arithmétique.
+MCR045;MATC_RAISON_GEOM;MATC_SUITE_GEOM;MOBILISE;fort;La raison caractérise le facteur multiplicatif constant d’une suite géométrique.
+MCR046;MATC_VARIATION_SUITE;MATC_SUITE;MOBILISE;fort;Le sens de variation décrit l’évolution des termes avec le rang.
+MCR047;MATC_SOMME_ARITH;MATC_SUITE_ARITH;MOBILISE;fort;La somme exploite la structure additive d’une suite arithmétique.
+MCR048;MATC_SOMME_GEOM;MATC_SUITE_GEOM;MOBILISE;fort;La somme exploite la structure multiplicative d’une suite géométrique.
+MCR049;MATC_CROISSANCE_LINEAIRE_DISCRETE;MATC_SUITE_ARITH;MODELISE;fort;Une évolution discrète à accroissement constant est modélisée par une suite arithmétique.
+MCR050;MATC_CROISSANCE_EXP_DISCRETE;MATC_SUITE_GEOM;MODELISE;fort;Une évolution discrète à facteur multiplicatif constant est modélisée par une suite géométrique.
+MCR051;MATC_CROISSANCE_EXP_DISCRETE;MATC_EXPONENTIELLE;CONNEXION;fort;Le modèle géométrique discret prépare le passage au modèle exponentiel continu.
+MCR052;MATC_SEUIL_SUITE;MATC_SUITE;MOBILISE;fort;La recherche de seuil explore les termes jusqu’à satisfaction d’une condition.
+MCR053;MATC_LIMITE_SUITE_INTUITIVE;MATC_SEUIL_SUITE;CONNEXION;moyen;La recherche de seuils soutient l’intuition d’un comportement asymptotique sans formalisation de la convergence.
+MCR054;MATC_VARIATION_SUITE;MATC_LIMITE_SUITE_INTUITIVE;CONNEXION;moyen;L’observation du sens de variation aide à conjecturer un comportement à long terme.
+MCR_SD01;MATC_FORME_CANONIQUE;MATC_SECOND_DEGRE;REPRESENTE;fort;La forme canonique est une écriture structurante du trinôme.
+MCR_SD02;MATC_FORME_DEVELOPPEE;MATC_SECOND_DEGRE;REPRESENTE;fort;La forme développée expose les coefficients a, b et c.
+MCR_SD03;MATC_FORME_FACTORISEE;MATC_SECOND_DEGRE;REPRESENTE;fort;La forme factorisée expose directement les racines lorsqu’elle existe.
+MCR_SD04;MATC_RACINE_TRINOME;MATC_EQUATION_SECOND_DEGRE;EQUIVALENCE;fort;Résoudre P(x)=0 revient à rechercher les racines du trinôme.
+MCR_SD05;MATC_FORME_FACTORISEE;MATC_RACINE_TRINOME;PREREQUIS;fort;La factorisation s’appuie sur les racines réelles.
+MCR_SD06;MATC_SIGNE_TRINOME;MATC_FORME_FACTORISEE;MOBILISE;fort;La forme factorisée facilite l’étude du signe.
+MCR_SD07;MATC_PARABOLE;MATC_SECOND_DEGRE;REPRESENTE;fort;La parabole est la représentation graphique d’une fonction quadratique.
+MCR_SD08;MATC_SOMMET_PARABOLE;MATC_FORME_CANONIQUE;MOBILISE;fort;La forme canonique rend les coordonnées du sommet directement lisibles.
+MCR_SD09;MATC_SOMMET_PARABOLE;MATC_PARABOLE;SPECIALISATION;fort;Le sommet est un point remarquable de la parabole.
+MCR_PS01;MATC_PRODUIT_SCALAIRE;MATC_NORME_VECTEUR;PREREQUIS;fort;La définition géométrique du produit scalaire mobilise les normes.
+MCR_PS02;MATC_PRODUIT_SCALAIRE;MATC_ANGLE_VECTEURS;MOBILISE;fort;Le produit scalaire relie normes et cosinus de l’angle.
+MCR_PS03;MATC_PRODUIT_SCALAIRE;MATC_COORDONNEES_VECTEUR;MOBILISE;fort;Le calcul coordonné fournit une expression algébrique du produit scalaire.
+MCR_PS04;MATC_ORTHOGONALITE;MATC_PRODUIT_SCALAIRE;MOBILISE;fort;Deux vecteurs sont orthogonaux lorsque leur produit scalaire est nul.
+MCR_PS05;MATC_VECTEUR_NORMAL;MATC_ORTHOGONALITE;PREREQUIS;fort;Un vecteur normal est défini par son orthogonalité à la direction de la droite.
+MCR_PR01;MATC_PROBA_CONDITIONNELLE;MATC_INTERSECTION_EVENEMENTS;PREREQUIS;fort;La définition utilise la probabilité de l’intersection.
+MCR_PR02;MATC_ARBRE_PROBA;MATC_PROBA_CONDITIONNELLE;REPRESENTE;fort;Les branches d’un arbre portent des probabilités conditionnelles.
+MCR_PR03;MATC_TABLEAU_PROBA;MATC_PROBA_CONDITIONNELLE;REPRESENTE;moyen;Un tableau croisé permet de calculer des probabilités conditionnelles.
+MCR_PR04;MATC_PROBA_TOTALES;MATC_PARTITION_UNIVERS;PREREQUIS;fort;La formule des probabilités totales repose sur une partition.
+MCR_PR05;MATC_INDEPENDANCE;MATC_PROBA_CONDITIONNELLE;PREREQUIS;fort;L’indépendance se caractérise par l’égalité entre probabilité conditionnelle et marginale.
+MCR_PR06;MATC_EPREUVE_BERNOULLI;MATC_BERNOULLI_REPETITION;PREREQUIS;fort;La répétition de Bernoulli s’appuie sur une même épreuve à deux issues.
+MCR_PR07;MATC_LOI_VARIABLE;MATC_VARIABLE_ALEATOIRE;PREREQUIS;fort;La loi décrit la distribution des valeurs prises par la variable.
+MCR_PR08;MATC_ESPERANCE;MATC_LOI_VARIABLE;PREREQUIS;fort;L’espérance est calculée à partir de la loi.
+MCR_PR09;MATC_VARIANCE;MATC_ESPERANCE;PREREQUIS;moyen;La variance mesure la dispersion autour de l’espérance.
+MCR_PR10;MATC_ECART_TYPE;MATC_VARIANCE;PREREQUIS;fort;L’écart type est la racine carrée de la variance.

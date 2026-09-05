@@ -1,0 +1,65 @@
+concept_id;libelle;definition;domaine;statut;niveau_introduction;programme_id
+MATC_SUITE;Suite numérique;Objet décrivant une évolution discrète indexée par les entiers.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SUITE_ARITH;Suite arithmétique;Suite dont les accroissements successifs sont constants.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SUITE_GEOM;Suite géométrique;Suite dont le quotient de deux termes successifs est constant.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_LIMITE_SUITE_INTUITIVE;Limite intuitive d’une suite;Comportement asymptotique conjecturé à partir de valeurs ou de représentations.;ALGEBRE;introduction;1G;PRG_MAT_SPEC_1G_2026
+MATC_SECOND_DEGRE;Fonction polynôme du second degré;Fonction de la forme ax²+bx+c avec a non nul.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_FORME_CANONIQUE;Forme canonique;Écriture a(x-alpha)²+beta d’une fonction polynôme du second degré.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_DISCRIMINANT;Discriminant;Quantité b²-4ac qui organise l’étude des racines d’un trinôme.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_TAUX_VARIATION;Taux de variation;Variation moyenne d’une fonction entre deux abscisses.;ANALYSE;fondamental;1G;PRG_MAT_SPEC_1G_2026
+MATC_NOMBRE_DERIVE;Nombre dérivé;Limite intuitive du taux de variation en un point, lorsqu’elle existe.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_TANGENTE;Tangente;Droite limite des sécantes en un point d’une courbe dérivable.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_APPROX_LINEAIRE;Approximation linéaire;Approximation locale d’une fonction par sa fonction affine tangente.;ANALYSE;approfondissement;1G;PRG_MAT_SPEC_1G_2026
+MATC_FONCTION_DERIVEE;Fonction dérivée;Fonction associant à chaque abscisse le nombre dérivé correspondant.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_VARIATIONS_DERIVEE;Variations et signe de la dérivée;Lien entre le signe de la dérivée et les variations de la fonction.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_EXPONENTIELLE;Fonction exponentielle;Fonction dérivable vérifiant f’=f et f(0)=1.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_CERCLE_TRIGO;Cercle trigonométrique;Cercle unité orienté permettant de représenter les nombres réels et les angles.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SINUS_COSINUS;Sinus et cosinus;Coordonnées du point associé à un réel sur le cercle trigonométrique.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_PRODUIT_SCALAIRE;Produit scalaire;Opération sur deux vecteurs reliant calcul vectoriel, longueurs, angles et orthogonalité.;GEOMETRIE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_ORTHOGONALITE;Orthogonalité;Relation géométrique caractérisable par un produit scalaire nul.;GEOMETRIE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_VECTEUR_NORMAL;Vecteur normal à une droite;Vecteur orthogonal à tout vecteur directeur d’une droite.;GEOMETRIE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_PROJECTION_ORTHO;Projection orthogonale;Projection d’un point sur une droite suivant une direction perpendiculaire.;GEOMETRIE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_EQUATION_CERCLE;Équation de cercle;Équation cartésienne décrivant un cercle dans un repère orthonormé.;GEOMETRIE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_PROBA_CONDITIONNELLE;Probabilité conditionnelle;Probabilité d’un événement lorsque l’on sait qu’un autre est réalisé.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_INDEPENDANCE;Indépendance;Situation où la réalisation d’un événement ne modifie pas la probabilité de l’autre.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_PROBA_TOTALES;Formule des probabilités totales;Décomposition d’une probabilité selon une partition de l’univers.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_BERNOULLI_REPETITION;Répétition d’épreuves de Bernoulli;Répétition indépendante et identique d’une expérience à deux issues.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_VARIABLE_ALEATOIRE;Variable aléatoire réelle;Fonction numérique définie sur les issues d’une expérience aléatoire.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_LOI_VARIABLE;Loi d’une variable aléatoire;Distribution des probabilités sur les valeurs prises par une variable aléatoire.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_ESPERANCE;Espérance;Moyenne théorique pondérée des valeurs d’une variable aléatoire.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_VARIANCE;Variance;Mesure quadratique de dispersion autour de l’espérance.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_ECART_TYPE;Écart type;Racine carrée de la variance, exprimée dans l’unité de la variable.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SIMULATION;Simulation aléatoire;Reproduction numérique répétée d’une expérience aléatoire.;ALGORITHMIQUE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_COEFF_DIRECTEUR;Coefficient directeur;Nombre caractérisant la pente d’une droite dans un repère.;ANALYSE;prerequis;2GT;PRG_MAT_2GT_2026
+MATC_SECANTE;Sécante à une courbe;Droite passant par deux points distincts d’une courbe et portant une variation moyenne.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_DERIVABILITE_POINT;Dérivabilité en un point;Propriété d’une fonction lorsque son taux de variation admet une limite finie au point considéré.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_EXTREMUM;Extremum;Maximum ou minimum d’une fonction sur un intervalle ou au voisinage d’un point.;ANALYSE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_MODELE_DISCRET;Modèle discret;Modèle décrivant une grandeur observée à des instants ou rangs entiers successifs.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_MODE_GENERATION_SUITE;Mode de génération d’une suite;Règle permettant de produire les termes d’une suite : formule explicite, récurrence, algorithme ou construction.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SUITE_EXPLICITE;Suite définie explicitement;Suite dont le terme de rang n est donné directement en fonction de n.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SUITE_RECURRENTE;Suite définie par récurrence;Suite dont chaque nouveau terme est obtenu à partir d’un ou plusieurs termes précédents et de données initiales.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_REPRESENTATION_SUITE;Représentation graphique d’une suite;Nuage de points de coordonnées (n,u_n) représentant une suite numérique.;ALGEBRE;fondamental;1G;PRG_MAT_SPEC_1G_2026
+MATC_TERME_GENERAL_SUITE;Terme général d’une suite;Expression permettant de calculer directement u_n en fonction du rang n.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_RAISON_ARITH;Raison d’une suite arithmétique;Accroissement constant entre deux termes consécutifs d’une suite arithmétique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_RAISON_GEOM;Raison d’une suite géométrique;Facteur multiplicatif constant entre deux termes consécutifs d’une suite géométrique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_VARIATION_SUITE;Sens de variation d’une suite;Propriété décrivant si les termes d’une suite augmentent, diminuent ou restent constants avec le rang.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SOMME_ARITH;Somme de termes arithmétiques;Somme d’un nombre fini de termes consécutifs d’une suite arithmétique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SOMME_GEOM;Somme de termes géométriques;Somme d’un nombre fini de termes consécutifs d’une suite géométrique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_CROISSANCE_LINEAIRE_DISCRETE;Croissance linéaire discrète;Évolution discrète à accroissement constant, modélisable par une suite arithmétique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_CROISSANCE_EXP_DISCRETE;Croissance exponentielle discrète;Évolution discrète à facteur multiplicatif constant, modélisable par une suite géométrique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SEUIL_SUITE;Seuil pour une suite;Premier rang à partir duquel une condition numérique prescrite est satisfaite.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_FORME_DEVELOPPEE;Forme développée d’un trinôme;Écriture ax²+bx+c d’un polynôme du second degré.;ALGEBRE;fondamental;1G;PRG_MAT_SPEC_1G_2026
+MATC_FORME_FACTORISEE;Forme factorisée d’un trinôme;Écriture a(x-x1)(x-x2), lorsqu’elle existe sur les réels.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_RACINE_TRINOME;Racine d’un trinôme;Nombre réel annulant un polynôme du second degré.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SIGNE_TRINOME;Signe d’un trinôme;Répartition des valeurs positives, nulles et négatives d’un trinôme sur la droite réelle.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_EQUATION_SECOND_DEGRE;Équation du second degré;Équation pouvant s’écrire ax²+bx+c=0 avec a non nul.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_PARABOLE;Parabole;Courbe représentative d’une fonction polynôme du second degré.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_SOMMET_PARABOLE;Sommet d’une parabole;Point de la parabole correspondant à l’extremum de la fonction quadratique.;ALGEBRE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_NORME_VECTEUR;Norme d’un vecteur;Longueur associée à un vecteur du plan euclidien.;GEOMETRIE;fondamental;1G;PRG_MAT_SPEC_1G_2026
+MATC_ANGLE_VECTEURS;Angle de deux vecteurs;Angle orienté ou non utilisé pour interpréter géométriquement le produit scalaire.;GEOMETRIE;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_COORDONNEES_VECTEUR;Coordonnées d’un vecteur;Composantes d’un vecteur dans un repère.;GEOMETRIE;fondamental;2GT;PRG_MAT_2GT_2026
+MATC_PARTITION_UNIVERS;Partition de l’univers;Famille d’événements incompatibles deux à deux dont la réunion est l’univers.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_INTERSECTION_EVENEMENTS;Intersection d’événements;Événement correspondant à la réalisation simultanée de deux événements.;PROBABILITES;fondamental;1G;PRG_MAT_SPEC_1G_2026
+MATC_TABLEAU_PROBA;Tableau de probabilités;Représentation tabulaire d’événements croisés et de leurs probabilités.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_ARBRE_PROBA;Arbre pondéré;Représentation hiérarchique de probabilités conditionnelles par branches successives.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
+MATC_EPREUVE_BERNOULLI;Épreuve de Bernoulli;Expérience aléatoire à deux issues, succès et échec.;PROBABILITES;structurant;1G;PRG_MAT_SPEC_1G_2026
