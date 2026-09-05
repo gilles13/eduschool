@@ -4,12 +4,20 @@
 
 - [`capacites()`](https://gilles13.github.io/eduschool/reference/capacites.md)
   : Capacités d'un programme
+- [`carte_concept_math()`](https://gilles13.github.io/eduschool/reference/carte_concept_math.md)
+  : Carte pedagogique d'un concept mathematique
 - [`charte_eduschool()`](https://gilles13.github.io/eduschool/reference/charte_eduschool.md)
   : Charte graphique eduschool
 - [`chercher_notions()`](https://gilles13.github.io/eduschool/reference/chercher_notions.md)
   : Rechercher des notions
 - [`colonnes_si()`](https://gilles13.github.io/eduschool/reference/colonnes_si.md)
   : Colonnes du mini-SI eduschool
+- [`composition_exercice_math()`](https://gilles13.github.io/eduschool/reference/composition_exercice_math.md)
+  : Composition pedagogique d'un type d'exercice
+- [`concepts_exercices_math()`](https://gilles13.github.io/eduschool/reference/concepts_exercices_math.md)
+  : Concepts mobilises par les types d'exercices mathematiques
+- [`concepts_math()`](https://gilles13.github.io/eduschool/reference/concepts_math.md)
+  : Concepts mathematiques
 - [`controle_integrite_si()`](https://gilles13.github.io/eduschool/reference/controle_integrite_si.md)
   : Controler l'integrite du mini-SI
 - [`couleur_cycle()`](https://gilles13.github.io/eduschool/reference/couleur_cycle.md)
@@ -32,6 +40,8 @@
   : Enseignements
 - [`enseignements_optionnels_lycee()`](https://gilles13.github.io/eduschool/reference/enseignements_optionnels_lycee.md)
   : Enseignements optionnels au lycee general
+- [`erreurs_math()`](https://gilles13.github.io/eduschool/reference/erreurs_math.md)
+  : Erreurs frequentes en mathematiques
 - [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
@@ -43,6 +53,8 @@
   : Lister les fiches de revision disponibles
 - [`filieres_postbac()`](https://gilles13.github.io/eduschool/reference/filieres_postbac.md)
   : Grandes filieres post-bac
+- [`formules_math()`](https://gilles13.github.io/eduschool/reference/formules_math.md)
+  : Formules mathematiques essentielles
 - [`genere_resume()`](https://gilles13.github.io/eduschool/reference/genere_resume.md)
   : Generer un resume pedagogique lisible
 - [`generer_diagrammes_documentation()`](https://gilles13.github.io/eduschool/reference/generer_diagrammes_documentation.md)
@@ -59,6 +71,10 @@
   : Identite visuelle d'une fiche de revision
 - [`inventaire_si()`](https://gilles13.github.io/eduschool/reference/inventaire_si.md)
   : Inventaire des tables du mini-SI
+- [`methodes_exercices_math()`](https://gilles13.github.io/eduschool/reference/methodes_exercices_math.md)
+  : Methodes mobilisees par les types d'exercices mathematiques
+- [`methodes_math()`](https://gilles13.github.io/eduschool/reference/methodes_math.md)
+  : Methodes mathematiques
 - [`niveaux()`](https://gilles13.github.io/eduschool/reference/niveaux.md)
   : Niveaux scolaires
 - [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
@@ -123,6 +139,8 @@
   [`libelle_niveau`](https://gilles13.github.io/eduschool/reference/rapports.md)
   [`libelle_capacite`](https://gilles13.github.io/eduschool/reference/rapports.md)
   : Produire des fiches et corrigés
+- [`relations_concepts_math()`](https://gilles13.github.io/eduschool/reference/relations_concepts_math.md)
+  : Relations entre concepts mathematiques
 - [`relations_si()`](https://gilles13.github.io/eduschool/reference/relations_si.md)
   : Relations du mini-SI eduschool
 - [`ressources_pedagogiques()`](https://gilles13.github.io/eduschool/reference/ressources_pedagogiques.md)
@@ -145,6 +163,8 @@
   : Theme ggplot2 eduschool
 - [`themes_niveau()`](https://gilles13.github.io/eduschool/reference/themes_niveau.md)
   : Grands thèmes étudiés à un niveau
+- [`types_exercices_math()`](https://gilles13.github.io/eduschool/reference/types_exercices_math.md)
+  : Types d'exercices mathematiques
 - [`usages_ressources()`](https://gilles13.github.io/eduschool/reference/usages_ressources.md)
   : Usages des ressources pedagogiques
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :

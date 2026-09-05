@@ -21,7 +21,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.12.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.13.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -199,9 +199,9 @@ calculer sa taille réelle.</p>
 <span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="27%">
+<col width="28%">
 <col width="13%">
-<col width="40%">
+<col width="39%">
 <col width="8%">
 <col width="10%">
 </colgroup>
@@ -507,6 +507,69 @@ calculer sa taille réelle.</p>
 <td align="right">6</td>
 <td align="right">6</td>
 </tr>
+<tr class="odd">
+<td align="left">concepts_math</td>
+<td align="left">mathematiques</td>
+<td align="left">concept_id</td>
+<td align="right">64</td>
+<td align="right">7</td>
+</tr>
+<tr class="even">
+<td align="left">relations_concepts_math</td>
+<td align="left">mathematiques</td>
+<td align="left">relation_id</td>
+<td align="right">78</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="left">concepts_items_math</td>
+<td align="left">mathematiques</td>
+<td align="left">concept_id,item_id</td>
+<td align="right">64</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">methodes_math</td>
+<td align="left">mathematiques</td>
+<td align="left">methode_id</td>
+<td align="right">69</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="left">formules_math</td>
+<td align="left">mathematiques</td>
+<td align="left">formule_id</td>
+<td align="right">40</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="left">erreurs_math</td>
+<td align="left">mathematiques</td>
+<td align="left">erreur_id</td>
+<td align="right">42</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="left">types_exercices_math</td>
+<td align="left">mathematiques</td>
+<td align="left">type_exercice_id</td>
+<td align="right">48</td>
+<td align="right">7</td>
+</tr>
+<tr class="even">
+<td align="left">types_exercices_concepts_math</td>
+<td align="left">mathematiques</td>
+<td align="left">type_exercice_id,concept_id</td>
+<td align="right">128</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">types_exercices_methodes_math</td>
+<td align="left">mathematiques</td>
+<td align="left">type_exercice_id,methode_id</td>
+<td align="right">59</td>
+<td align="right">3</td>
+</tr>
 </tbody>
 </table>
 <p>Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
@@ -605,9 +668,9 @@ prouve pas que son emploi est correct dans le contexte métier.
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/resume_controles_si.html">resume_controles_si</a></span><span class="op">(</span>niveau <span class="op">=</span> <span class="st">"structure"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;            type controles_total controles_ok</span></span>
-<span><span class="co">#&gt; 1 cle_etrangere              70           70</span></span>
-<span><span class="co">#&gt; 2  cle_primaire              42           42</span></span>
-<span><span class="co">#&gt; 3      colonnes              42           42</span></span>
+<span><span class="co">#&gt; 1 cle_etrangere              88           88</span></span>
+<span><span class="co">#&gt; 2  cle_primaire              51           51</span></span>
+<span><span class="co">#&gt; 3      colonnes              51           51</span></span>
 <span><span class="co">#&gt; 4       domaine               1            1</span></span></code></pre></div>
 </div>
 <div class="section level3">
@@ -716,9 +779,9 @@ publication.</li>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/resume_controles_si.html">resume_controles_si</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                      type controles_total controles_ok</span></span>
-<span><span class="co">#&gt; 1           cle_etrangere              70           70</span></span>
-<span><span class="co">#&gt; 2            cle_primaire              42           42</span></span>
-<span><span class="co">#&gt; 3                colonnes              42           42</span></span>
+<span><span class="co">#&gt; 1           cle_etrangere              88           88</span></span>
+<span><span class="co">#&gt; 2            cle_primaire              51           51</span></span>
+<span><span class="co">#&gt; 3                colonnes              51           51</span></span>
 <span><span class="co">#&gt; 4                 domaine               1            1</span></span>
 <span><span class="co">#&gt; 5     semantique_horaires               3            3</span></span>
 <span><span class="co">#&gt; 6 semantique_niveau_serie               1            1</span></span>

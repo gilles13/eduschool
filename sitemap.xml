@@ -21,9 +21,13 @@
 <url><loc>https://gilles13.github.io/eduschool/index.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/news/index.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/capacites.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/carte_concept_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/charte_eduschool.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/chercher_notions.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/colonnes_si.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/composition_exercice_math.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/concepts_exercices_math.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/concepts_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/controle_integrite_si.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/couleur_cycle.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/couverture_documentation.html</loc></url>
@@ -36,10 +40,12 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/eduschool_path.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/enseignements.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/enseignements_optionnels_lycee.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/erreurs_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/exercices.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/familles_revision.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/fiches_revision.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/filieres_postbac.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/formules_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/genere_resume.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/generer_diagrammes_documentation.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/generer_documentation_visuelle.html</loc></url>
@@ -49,6 +55,8 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/identite_revision.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/index.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/inventaire_si.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/methodes_exercices_math.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/methodes_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/niveaux.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/notions.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/notions_capacite.html</loc></url>
@@ -79,6 +87,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/programmes.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/rappels_capacite.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/rapports.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/relations_concepts_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/relations_si.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/ressources_pedagogiques.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/resume_controles_si.html</loc></url>
@@ -90,6 +99,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/tables_si.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/theme_eduschool.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/themes_niveau.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/types_exercices_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/usages_ressources.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/voies.html</loc></url>
 </urlset>

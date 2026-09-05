@@ -1,5 +1,48 @@
 # Changelog
 
+## eduschool 0.13.0
+
+- Finalisation du pilote de Première générale spécialité mathématiques :
+  enrichissement du second degré, du produit scalaire, des probabilités
+  conditionnelles et des variables aléatoires.
+
+- Ajout de relations pédagogiques, méthodes, formules, erreurs
+  fréquentes et familles d’exercices multi-concepts pour ces blocs.
+
+- Ajout d’une couche pédagogique fine pour les mathématiques, avec la
+  Première générale spécialité 2026-2027 comme pilote.
+
+- Ajout des concepts, relations entre concepts, méthodes, formules,
+  erreurs fréquentes et types d’exercices.
+
+- Ajout d’une API de consultation :
+  [`concepts_math()`](https://gilles13.github.io/eduschool/reference/concepts_math.md),
+  [`relations_concepts_math()`](https://gilles13.github.io/eduschool/reference/relations_concepts_math.md),
+  [`methodes_math()`](https://gilles13.github.io/eduschool/reference/methodes_math.md),
+  [`formules_math()`](https://gilles13.github.io/eduschool/reference/formules_math.md),
+  [`erreurs_math()`](https://gilles13.github.io/eduschool/reference/erreurs_math.md),
+  [`types_exercices_math()`](https://gilles13.github.io/eduschool/reference/types_exercices_math.md)
+  et
+  [`carte_concept_math()`](https://gilles13.github.io/eduschool/reference/carte_concept_math.md).
+
+- Intégration des nouvelles tables au métamodèle relationnel du SI.
+
+- Enrichissement du bloc dérivation de Première spécialité : sécantes,
+  dérivabilité, extrémums, méthodes, formules, erreurs fréquentes et
+  exercices progressifs.
+
+- Ajout de relations plusieurs-à-plusieurs entre types d’exercices,
+  concepts et méthodes afin de représenter les exercices multi-concepts.
+
+- Enrichissement du bloc suites de Première spécialité : modes de
+  génération, modèles discrets, termes généraux, raisons, sommes,
+  variations, seuils, limite intuitive et pont vers l’exponentielle.
+
+## eduschool 0.12.1
+
+- ajout de visuels
+- modification page d accueil du site
+
 ## eduschool 0.12.0
 
 ### Recentrage, experience utilisateur et contribution
