@@ -153,35 +153,62 @@ Le fichier `colonnes.csv` distingue pour cette raison `type_stockage` et
 `type_semantique` : une valeur peut être stockée comme texte tout en représentant
 sémantiquement un nombre décimal, une date, une URL ou un identifiant.
 
-## 7. Contrôles d'intégrité
+## 7. Contrôles d'intégrité : structure et sémantique
 
-`controle_integrite_si()` applique des contrôles génériques construits à partir
-des métadonnées :
+Une clé étrangère valide prouve qu'un identifiant existe. Elle ne prouve pas que
+son emploi est correct dans le contexte métier. `eduschool` distingue donc deux
+étages de contrôle.
+
+### 7.1 Intégrité structurelle
+
+Les contrôles structurels sont directement dérivés des métadonnées :
 
 - présence des colonnes déclarées ;
 - unicité et non-vacuité des clés primaires ;
 - absence de clés étrangères orphelines ;
-- respect de quelques domaines structurants, comme la portée des horaires.
+- respect des domaines structurants déclarés.
 
 ```{r}
-controles = controle_integrite_si()
-knitr::kable(
-  controles[!controles$ok, ],
-  row.names = FALSE
-)
+resume_controles_si(niveau = "structure")
+```
+
+### 7.2 Cohérence métier
+
+Les contrôles sémantiques vérifient les règles qui ne peuvent pas être exprimées
+par une simple relation PK/FK :
+
+- une série doit appartenir à la voie de son niveau, directement ou par la
+  hiérarchie des voies ;
+- `COMMUN` ne doit pas porter de série, tandis que `GRILLE_SERIE` et
+  `COMPLEMENT_SERIE` doivent en porter une ;
+- toute série utilisée dans `horaires` doit être rattachée au niveau concerné ;
+- une même ligne métier d'une grille horaire ne doit pas être déclarée deux fois ;
+- l'application d'un programme doit respecter son niveau ou son cycle lorsqu'ils
+  sont explicitement définis ;
+- la période d'application d'un programme doit chevaucher la version scolaire à
+  laquelle elle est rattachée ;
+- un programme ne peut pas commencer à s'appliquer avant sa publication.
+
+```{r}
+controles_semantiques = controle_integrite_si(niveau = "semantique")
+knitr::kable(controles_semantiques, row.names = FALSE)
+```
+
+Le contrôle complet réunit les deux niveaux :
+
+```{r}
+resume_controles_si()
 ```
 
 Pour un contrôle bloquant, utile dans les tests ou avant une publication :
 
 ```{r, eval=FALSE}
-controle_integrite_si(strict = TRUE)
+controle_integrite_si(niveau = "complet", strict = TRUE)
 ```
 
-Une vue synthétique est également disponible :
-
-```{r}
-resume_controles_si()
-```
+Cette séparation est importante. L'anomalie historique 2GT/STHR aurait pu passer
+un contrôle purement relationnel : les identifiants existaient tous. C'est la
+combinaison `niveau_id + serie_id + portee` qui devait aussi être cohérente.
 
 ## 8. De la relation brute à l'API métier
 

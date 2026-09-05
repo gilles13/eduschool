@@ -4,6 +4,7 @@
 
 - ajout de metadonnees relationnelles explicites dans `inst/metadata/tables.csv`, `colonnes.csv` et `relations.csv` ;
 - ajout de controles generiques des schemas, cles primaires, cles etrangeres et domaines structurants ;
+- ajout d une seconde couche de controles semantiques : niveau/voie/serie, portee des horaires, programmes/niveaux et coherence temporelle des versions ;
 - lecture deterministe des CSV comme donnees textuelles brutes, avec conversions metier explicites ;
 - ajout d un schema relationnel SVG genere dynamiquement depuis les metadonnees ;
 - ajout de la vignette technique « Rentrer en profondeur dans eduschool » ;

@@ -33,3 +33,29 @@ test_that("l application 2025 du programme de mathematiques C3 est datee correct
   expect_true("2025_2026" %in% x$version_id)
   expect_true("2026_2027" %in% x$version_id)
 })
+
+test_that("les controles semantiques du SI passent", {
+  x = controle_integrite_si(niveau = "semantique")
+  expect_true(all(x$ok), info = paste(x$detail[!x$ok], collapse = " | "))
+  expect_true(all(grepl("^semantique_", x$type)))
+})
+
+test_that("la hierarchie des voies rend les series compatibles avec leur niveau", {
+  v = .lire_csv("referentiels", "voies.csv")
+  expect_true(eduschool:::.voie_compatible("VOIE_TECHNOLOGIQUE", "LYCEE_GT", v))
+  expect_true(eduschool:::.voie_compatible("VOIE_GENERALE", "LYCEE_GT", v))
+  expect_false(eduschool:::.voie_compatible("VOIE_TECHNOLOGIQUE", "VOIE_GENERALE", v))
+})
+
+test_that("les controles semantiques couvrent les regles structurantes", {
+  x = controle_integrite_si(niveau = "semantique")
+  expect_true(all(c(
+    "voie_compatible",
+    "portee_serie",
+    "serie_rattachee_au_niveau",
+    "unicite_grille",
+    "niveau_cycle",
+    "chevauchement_version",
+    "publication_avant_application"
+  ) %in% x$objet))
+})

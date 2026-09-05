@@ -4,7 +4,10 @@
 \alias{resume_controles_si}
 \title{Resume des controles d'integrite}
 \usage{
-resume_controles_si()
+resume_controles_si(niveau = c("complet", "structure", "semantique"))
+}
+\arguments{
+\item{niveau}{Portee des controles : `"complet"`, `"structure"` ou `"semantique"`.}
 }
 \value{
 Un data.frame agrege par type de controle.

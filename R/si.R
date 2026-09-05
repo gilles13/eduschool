@@ -54,6 +54,179 @@ inventaire_si = function() {
   x[!is.na(x) & nzchar(x)]
 }
 
+
+.voie_compatible = function(voie_serie, voie_niveau, voies) {
+  if (is.na(voie_serie) || !nzchar(voie_serie) ||
+      is.na(voie_niveau) || !nzchar(voie_niveau)) {
+    return(TRUE)
+  }
+  courant = voie_serie
+  vus = character()
+  while (!is.na(courant) && nzchar(courant) && !(courant %in% vus)) {
+    if (identical(courant, voie_niveau)) return(TRUE)
+    vus = c(vus, courant)
+    i = match(courant, voies$voie_id)
+    if (is.na(i)) return(FALSE)
+    courant = voies$voie_parent_id[[i]]
+  }
+  FALSE
+}
+
+.controles_semantiques_si = function() {
+  out = list()
+  add = function(type, table, objet, ok, n = 0L, detail = "") {
+    out[[length(out) + 1L]] <<- data.frame(
+      type = type, table = table, objet = objet, ok = isTRUE(ok),
+      n_anomalies = as.integer(n), detail = detail,
+      stringsAsFactors = FALSE
+    )
+  }
+
+  niveaux = .lire_table_si("niveaux")
+  series = .lire_table_si("series")
+  voies = .lire_table_si("voies")
+  niveaux_series = .lire_table_si("niveaux_series")
+
+  mauvaises = logical(nrow(niveaux_series))
+  for (i in seq_len(nrow(niveaux_series))) {
+    ni = match(niveaux_series$niveau_id[[i]], niveaux$niveau_id)
+    si = match(niveaux_series$serie_id[[i]], series$serie_id)
+    if (is.na(ni) || is.na(si)) {
+      mauvaises[[i]] = TRUE
+    } else {
+      mauvaises[[i]] = !.voie_compatible(
+        series$voie_id[[si]],
+        niveaux$voie_id[[ni]],
+        voies
+      )
+    }
+  }
+  details = paste(
+    paste0(
+      niveaux_series$niveau_id[mauvaises], "/",
+      niveaux_series$serie_id[mauvaises]
+    ),
+    collapse = ", "
+  )
+  add(
+    "semantique_niveau_serie", "niveaux_series", "voie_compatible",
+    !any(mauvaises), sum(mauvaises), details
+  )
+
+  h = .lire_table_si("horaires")
+  serie_vide = is.na(h$serie_id) | !nzchar(h$serie_id)
+  mauvaise_portee =
+    (h$portee == "COMMUN" & !serie_vide) |
+    (h$portee %in% c("COMPLEMENT_SERIE", "GRILLE_SERIE") & serie_vide)
+  add(
+    "semantique_horaires", "horaires", "portee_serie",
+    !any(mauvaise_portee), sum(mauvaise_portee),
+    paste(head(h$horaire_id[mauvaise_portee], 8L), collapse = ", ")
+  )
+
+  paires = paste(niveaux_series$niveau_id, niveaux_series$serie_id, sep = "\\r")
+  avec_serie = !serie_vide
+  paires_h = paste(h$niveau_id, h$serie_id, sep = "\\r")
+  mauvaise_serie = avec_serie & !(paires_h %in% paires)
+  add(
+    "semantique_horaires", "horaires", "serie_rattachee_au_niveau",
+    !any(mauvaise_serie), sum(mauvaise_serie),
+    paste(head(h$horaire_id[mauvaise_serie], 8L), collapse = ", ")
+  )
+
+  cle_h = paste(
+    h$niveau_id, h$version_id, h$serie_id,
+    h$enseignement_id, h$portee,
+    sep = "\\r"
+  )
+  dup_h = duplicated(cle_h) | duplicated(cle_h, fromLast = TRUE)
+  add(
+    "semantique_horaires", "horaires", "unicite_grille",
+    !any(dup_h), sum(dup_h),
+    paste(head(h$horaire_id[dup_h], 8L), collapse = ", ")
+  )
+
+  applications = .lire_table_si("programme_applications")
+  programmes = .lire_table_si("programmes")
+  i_prog = match(applications$programme_id, programmes$programme_id)
+  i_niv = match(applications$niveau_id, niveaux$niveau_id)
+
+  niveau_prog = programmes$niveau_id[i_prog]
+  cycle_prog = programmes$cycle_id[i_prog]
+  cycle_niv = niveaux$cycle_id[i_niv]
+
+  mauvais_niveau =
+    !is.na(niveau_prog) & nzchar(niveau_prog) &
+    niveau_prog != applications$niveau_id
+  mauvais_cycle =
+    !is.na(cycle_prog) & nzchar(cycle_prog) &
+    !is.na(cycle_niv) & nzchar(cycle_niv) &
+    cycle_prog != cycle_niv
+  mauvais_programme = mauvais_niveau | mauvais_cycle
+  add(
+    "semantique_programmes", "programme_applications", "niveau_cycle",
+    !any(mauvais_programme), sum(mauvais_programme),
+    paste(
+      head(
+        paste0(
+          applications$programme_id[mauvais_programme], "/",
+          applications$niveau_id[mauvais_programme]
+        ),
+        8L
+      ),
+      collapse = ", "
+    )
+  )
+
+  versions = .lire_table_si("versions")
+  i_ver = match(applications$version_id, versions$version_id)
+  debut_app = suppressWarnings(as.Date(applications$date_debut))
+  fin_app = suppressWarnings(as.Date(applications$date_fin))
+  debut_ver = suppressWarnings(as.Date(versions$date_debut[i_ver]))
+  fin_ver = suppressWarnings(as.Date(versions$date_fin[i_ver]))
+
+  hors_version =
+    (!is.na(debut_app) & !is.na(fin_ver) & debut_app > fin_ver) |
+    (!is.na(fin_app) & !is.na(debut_ver) & fin_app < debut_ver)
+  add(
+    "semantique_versions", "programme_applications", "chevauchement_version",
+    !any(hors_version), sum(hors_version),
+    paste(
+      head(
+        paste0(
+          applications$programme_id[hors_version], "/",
+          applications$niveau_id[hors_version], "/",
+          applications$version_id[hors_version]
+        ),
+        8L
+      ),
+      collapse = ", "
+    )
+  )
+
+  publication = suppressWarnings(as.Date(programmes$date_publication[i_prog]))
+  publication_apres = !is.na(publication) & !is.na(debut_app) & publication > debut_app
+  add(
+    "semantique_programmes", "programme_applications", "publication_avant_application",
+    !any(publication_apres), sum(publication_apres),
+    paste(
+      head(
+        paste0(
+          applications$programme_id[publication_apres], "/",
+          applications$niveau_id[publication_apres]
+        ),
+        8L
+      ),
+      collapse = ", "
+    )
+  )
+
+  ans = do.call(rbind, out)
+  rownames(ans) = NULL
+  ans
+}
+
+
 #' Controler l'integrite du mini-SI
 #'
 #' Verifie la presence des colonnes declarees, les cles primaires, les cles
@@ -61,9 +234,11 @@ inventaire_si = function() {
 #' partir des metadonnees de `inst/metadata`.
 #'
 #' @param strict Si `TRUE`, leve une erreur lorsqu'au moins un controle echoue.
+#' @param niveau Portee des controles : `"complet"`, `"structure"` ou `"semantique"`.
 #' @return Un data.frame avec une ligne par controle.
 #' @export
-controle_integrite_si = function(strict = FALSE) {
+controle_integrite_si = function(strict = FALSE, niveau = c("complet", "structure", "semantique")) {
+  niveau = match.arg(niveau)
   tabs = tables_si()
   cols = colonnes_si()
   rels = relations_si()
@@ -112,7 +287,15 @@ controle_integrite_si = function(strict = FALSE) {
   add("domaine", "horaires", "portee", !length(mauvaises), length(mauvaises),
       paste(mauvaises, collapse = ", "))
 
-  ans = do.call(rbind, out)
+  structure = do.call(rbind, out)
+  rownames(structure) = NULL
+  semantique = .controles_semantiques_si()
+  ans = switch(
+    niveau,
+    structure = structure,
+    semantique = semantique,
+    complet = rbind(structure, semantique)
+  )
   rownames(ans) = NULL
   if (isTRUE(strict) && any(!ans$ok)) {
     stop(sum(!ans$ok), " controle(s) d'integrite ont echoue.", call. = FALSE)
@@ -122,10 +305,12 @@ controle_integrite_si = function(strict = FALSE) {
 
 #' Resume des controles d'integrite
 #'
+#' @param niveau Portee des controles : `"complet"`, `"structure"` ou `"semantique"`.
 #' @return Un data.frame agrege par type de controle.
 #' @export
-resume_controles_si = function() {
-  x = controle_integrite_si()
+resume_controles_si = function(niveau = c("complet", "structure", "semantique")) {
+  niveau = match.arg(niveau)
+  x = controle_integrite_si(niveau = niveau)
   ok = stats::aggregate(ok ~ type, x, function(z) sum(z))
   names(ok)[2] = "controles_ok"
   total = stats::aggregate(ok ~ type, x, length)

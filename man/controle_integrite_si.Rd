@@ -4,10 +4,15 @@
 \alias{controle_integrite_si}
 \title{Controler l'integrite du mini-SI}
 \usage{
-controle_integrite_si(strict = FALSE)
+controle_integrite_si(
+  strict = FALSE,
+  niveau = c("complet", "structure", "semantique")
+)
 }
 \arguments{
 \item{strict}{Si `TRUE`, leve une erreur lorsqu'au moins un controle echoue.}
+
+\item{niveau}{Portee des controles : `"complet"`, `"structure"` ou `"semantique"`.}
 }
 \value{
 Un data.frame avec une ligne par controle.
