@@ -1,5 +1,38 @@
 # Changelog
 
+## eduschool 0.15.0
+
+- Finalisation de la couverture mathématique fine de la seconde générale
+  et technologique pour le programme 2026 : logique, algorithmique,
+  nombres et algèbre, vecteurs et droites, fonctions, statistiques et
+  probabilités.
+
+- Les 19 rubriques et 40 capacités de seconde sont reliées au catalogue
+  de concepts, avec méthodes, formules, erreurs fréquentes et types
+  d’exercices associés.
+
+- Enrichissement des attendus et de la couche mathématique fine pour les
+  classes de 4e et 3e applicables en 2026-2027.
+
+- Ajout de concepts, méthodes, formules, erreurs fréquentes et types
+  d’exercices couvrant notamment calcul littéral, fonctions,
+  statistiques, probabilités, géométrie et algorithmique.
+
+### Référentiel mathématique fin — 6e et 5e
+
+- couverture pédagogique fine des programmes de mathématiques de 6e
+  (cycle 3, programme 2025) et de 5e (cycle 4, programme 2026) ;
+- ajout de concepts mathématiques stables et réutilisables entre
+  niveaux, sans dupliquer un concept par classe ;
+- rattachement de tous les thèmes et capacités mathématiques de 6e et 5e
+  à au moins un concept via `concepts_items.csv` ;
+- ajout de relations de prérequis et de prolongement entre concepts de
+  6e et 5e ;
+- ajout d’un premier ensemble transversal de méthodes, formules, erreurs
+  fréquentes et types d’exercices pour ces deux niveaux ;
+- ajout de tests de couverture afin d’empêcher la réapparition d’items
+  officiels 6e/5e non reliés à la couche mathématique fine.
+
 ## eduschool 0.14.0
 
 ### Navigation pédagogique et fiche pilote

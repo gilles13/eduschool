@@ -138,12 +138,12 @@ knitr::kable(
 | options | enseignements | option_id,niveau_id | 13 | 7 |
 | modeles | exercices | modele_id | 5 | 7 |
 | modeles_capacites | exercices | modele_id,capacite_id | 9 | 2 |
-| sources | metadata | source_id | 34 | 8 |
+| sources | metadata | source_id | 36 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 135 | 5 |
 | programme_enseignements | programmes | programme_id,enseignement_id | 44 | 2 |
-| programme_items | programmes | item_id | 995 | 9 |
-| programme_items_applications | programmes | programme_id,item_id,niveau_id,version_id | 1101 | 4 |
+| programme_items | programmes | item_id | 1030 | 9 |
+| programme_items_applications | programmes | programme_id,item_id,niveau_id,version_id | 1136 | 4 |
 | programmes | programmes | programme_id | 63 | 6 |
 | cycles | referentiels | cycle_id | 3 | 3 |
 | disciplines | referentiels | discipline_id | 22 | 2 |
@@ -169,15 +169,15 @@ knitr::kable(
 | parcoursup_nouveautes | orientation | nouveaute_id | 2 | 6 |
 | plateformes_admission | orientation | plateforme_id | 2 | 7 |
 | plateformes_caracteristiques | orientation | plateforme_id,caracteristique_id | 6 | 6 |
-| concepts_math | mathematiques | concept_id | 64 | 7 |
-| relations_concepts_math | mathematiques | relation_id | 78 | 6 |
-| concepts_items_math | mathematiques | concept_id,item_id | 64 | 3 |
-| methodes_math | mathematiques | methode_id | 69 | 6 |
-| formules_math | mathematiques | formule_id | 40 | 6 |
-| erreurs_math | mathematiques | erreur_id | 42 | 6 |
-| types_exercices_math | mathematiques | type_exercice_id | 48 | 7 |
-| types_exercices_concepts_math | mathematiques | type_exercice_id,concept_id | 128 | 3 |
-| types_exercices_methodes_math | mathematiques | type_exercice_id,methode_id | 59 | 3 |
+| concepts_math | mathematiques | concept_id | 178 | 7 |
+| relations_concepts_math | mathematiques | relation_id | 120 | 6 |
+| concepts_items_math | mathematiques | concept_id,item_id | 379 | 3 |
+| methodes_math | mathematiques | methode_id | 120 | 6 |
+| formules_math | mathematiques | formule_id | 71 | 6 |
+| erreurs_math | mathematiques | erreur_id | 74 | 6 |
+| types_exercices_math | mathematiques | type_exercice_id | 90 | 7 |
+| types_exercices_concepts_math | mathematiques | type_exercice_id,concept_id | 254 | 3 |
+| types_exercices_methodes_math | mathematiques | type_exercice_id,methode_id | 109 | 3 |
 
 Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
 dans cette vignette lors de sa reconstruction.
