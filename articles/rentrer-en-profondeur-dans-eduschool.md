@@ -138,7 +138,7 @@ knitr::kable(
 | options | enseignements | option_id,niveau_id | 13 | 7 |
 | modeles | exercices | modele_id | 5 | 7 |
 | modeles_capacites | exercices | modele_id,capacite_id | 9 | 2 |
-| sources | metadata | source_id | 27 | 8 |
+| sources | metadata | source_id | 34 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 135 | 5 |
 | programme_enseignements | programmes | programme_id,enseignement_id | 44 | 2 |
@@ -149,13 +149,26 @@ knitr::kable(
 | disciplines | referentiels | discipline_id | 22 | 2 |
 | enseignements | referentiels | enseignement_id | 56 | 4 |
 | niveaux | referentiels | niveau_id | 9 | 5 |
-| niveaux_series | referentiels | niveau_id,serie_id | 17 | 2 |
-| series | referentiels | serie_id | 8 | 3 |
+| niveaux_series | referentiels | niveau_id,serie_id | 19 | 2 |
+| series | referentiels | serie_id | 9 | 3 |
 | voies | referentiels | voie_id | 4 | 3 |
-| blocs | revision | bloc_id | 43 | 8 |
+| blocs | revision | bloc_id | 52 | 8 |
 | familles | revision | famille_id | 7 | 3 |
 | fiche_notions | revision | fiche_id,notion_id | 23 | 3 |
-| fiches | revision | fiche_id | 8 | 7 |
+| fiches | revision | fiche_id | 9 | 7 |
+| ressources | ressources | ressource_id | 8 | 10 |
+| usages_ressources | ressources | usage_id | 7 | 4 |
+| ressources_usages | ressources | ressource_id,usage_id | 24 | 2 |
+| ressources_niveaux | ressources | ressource_id,niveau_id | 60 | 2 |
+| parcours_noeuds | orientation | noeud_id | 10 | 8 |
+| parcours_liens | orientation | lien_id | 11 | 5 |
+| postbac_filieres | orientation | filiere_id | 9 | 9 |
+| parcoursup_etapes | orientation | etape_id | 6 | 5 |
+| parcoursup_campagnes | orientation | campagne_id | 1 | 5 |
+| parcoursup_calendrier | orientation | evenement_id | 8 | 8 |
+| parcoursup_nouveautes | orientation | nouveaute_id | 2 | 6 |
+| plateformes_admission | orientation | plateforme_id | 2 | 7 |
+| plateformes_caracteristiques | orientation | plateforme_id,caracteristique_id | 6 | 6 |
 
 Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
 dans cette vignette lors de sa reconstruction.
@@ -256,9 +269,9 @@ Les contrôles structurels sont directement dérivés des métadonnées :
 
 resume_controles_si(niveau = "structure")
 #>            type controles_total controles_ok
-#> 1 cle_etrangere              49           49
-#> 2  cle_primaire              29           29
-#> 3      colonnes              29           29
+#> 1 cle_etrangere              70           70
+#> 2  cle_primaire              42           42
+#> 3      colonnes              42           42
 #> 4       domaine               1            1
 ```
 
@@ -303,9 +316,9 @@ Le contrôle complet réunit les deux niveaux :
 
 resume_controles_si()
 #>                      type controles_total controles_ok
-#> 1           cle_etrangere              49           49
-#> 2            cle_primaire              29           29
-#> 3                colonnes              29           29
+#> 1           cle_etrangere              70           70
+#> 2            cle_primaire              42           42
+#> 3                colonnes              42           42
 #> 4                 domaine               1            1
 #> 5     semantique_horaires               3            3
 #> 6 semantique_niveau_serie               1            1

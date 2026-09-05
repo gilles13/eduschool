@@ -30,7 +30,31 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
-<li class="active nav-item"><a class="nav-link" href="../articles/index.html">Articles</a></li>
+<li class="active nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><h6 class="dropdown-header" data-toc-skip>Découvrir eduschool</h6></li>
+    <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main</a></li>
+    <li><a class="dropdown-item" href="../articles/exemple-classe-6e.html">Explorer la 6e</a></li>
+    <li><a class="dropdown-item" href="../articles/exemple-classe-2de-generale.html">Explorer la 2de générale et technologique</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Parcours et orientation</h6></li>
+    <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaires</a></li>
+    <li><a class="dropdown-item" href="../articles/programmes-et-capacites.html">Programmes et capacités</a></li>
+    <li><a class="dropdown-item" href="../articles/orientation-au-lycee-et-apres-le-bac.html">S'orienter au lycée et après le bac</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
+    <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
+    <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
+    <li><a class="dropdown-item" href="../articles/approfondir-ses-connaissances-en-mathematiques.html">Approfondir ses connaissances</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Comprendre eduschool</h6></li>
+    <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Architecture des données</a></li>
+    <li><a class="dropdown-item" href="../articles/rentrer-en-profondeur-dans-eduschool.html">Rentrer en profondeur dans eduschool</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
+  </ul>
+</li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav"></ul>
@@ -319,222 +343,11 @@ interrogée explicitement :</p>
 commune, comme les spécialités de la voie générale.</p>
 </div>
 <div class="section level2">
-<h2 id="visualiser-les-connaissances-attendues-par-matière">Visualiser les connaissances attendues par matière<a class="anchor" aria-label="anchor" href="#visualiser-les-connaissances-attendues-par-mati%C3%A8re"></a>
-</h2>
-<p>Les grands thèmes constituent un bon niveau de lecture pour comparer
-les disciplines sans afficher toutes les capacités. On peut compter les
-thèmes modélisés par discipline :</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">t2</span> <span class="op">=</span> <span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span></span>
-<span><span class="va">t2</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">t2</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"programme_id"</span>, <span class="st">"item_id"</span>, <span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="va">couverture</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sort.html" class="external-link">sort</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">t2</span><span class="op">$</span><span class="va">discipline_id</span><span class="op">)</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/barplot.html" class="external-link">barplot</a></span><span class="op">(</span></span>
-<span>  <span class="va">couverture</span>,</span>
-<span>  las <span class="op">=</span> <span class="fl">2</span>,</span>
-<span>  ylab <span class="op">=</span> <span class="st">"Nombre de thèmes"</span>,</span>
-<span>  main <span class="op">=</span> <span class="st">"Thèmes de 2de modélisés dans eduschool"</span></span>
-<span><span class="op">)</span></span></code></pre></div>
-<p><img src="exemple-classe-2de-generale_files/figure-html/unnamed-chunk-6-1.png" class="r-plt" alt="" width="700"></p>
-<p>Ce graphique décrit la <strong>granularité du référentiel
-<code>eduschool</code></strong>, pas un poids pédagogique ou un
-classement des matières. Pour lire les contenus eux-mêmes :</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">t2</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<table class="table">
-<thead><tr class="header">
-<th align="left">discipline_id</th>
-<th align="left">libelle</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Vocabulaire ensembliste et logique</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Algorithmique et programmation</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Variables et instructions élémentaires</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Notion de fonction</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Automatismes</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Nombres et calculs, algèbre</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Arithmétique</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Nombres réels</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Algèbre</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Géométrie</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Vecteurs et problèmes de géométrie</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Droites du plan</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Fonctions</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Représentation algébrique et graphique des
-fonctions</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Variations et extrémums d’une fonction</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Statistiques et probabilités</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Information chiffrée et statistique descriptive</td>
-</tr>
-<tr class="even">
-<td align="left">MAT</td>
-<td align="left">Croisement de deux variables qualitatives</td>
-</tr>
-<tr class="odd">
-<td align="left">MAT</td>
-<td align="left">Probabilités</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Lecture et interprétation</td>
-</tr>
-</tbody>
-</table>
-<p>Les notions documentées peuvent être interrogées séparément :</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/notions_niveau.html">notions_niveau</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discipline_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<table class="table">
-<thead><tr class="header">
-<th align="left">discipline_id</th>
-<th align="left">libelle</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Lecture et interprétation</td>
-</tr>
-<tr class="even">
-<td align="left">FRA</td>
-<td align="left">Écriture et argumentation</td>
-</tr>
-<tr class="odd">
-<td align="left">FRA</td>
-<td align="left">Langue et expression</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Sociétés et pouvoirs</td>
-</tr>
-<tr class="odd">
-<td align="left">HG</td>
-<td align="left">Territoires et mondialisation</td>
-</tr>
-<tr class="even">
-<td align="left">HG</td>
-<td align="left">Environnement et mobilités</td>
-</tr>
-<tr class="odd">
-<td align="left">EMC</td>
-<td align="left">Liberté</td>
-</tr>
-<tr class="even">
-<td align="left">EMC</td>
-<td align="left">Société</td>
-</tr>
-<tr class="odd">
-<td align="left">EMC</td>
-<td align="left">Démocratie et citoyenneté</td>
-</tr>
-<tr class="even">
-<td align="left">LVE</td>
-<td align="left">Compréhension et réception</td>
-</tr>
-<tr class="odd">
-<td align="left">LVE</td>
-<td align="left">Expression et interaction</td>
-</tr>
-<tr class="even">
-<td align="left">LVE</td>
-<td align="left">Repères culturels et interculturels</td>
-</tr>
-<tr class="odd">
-<td align="left">EPS</td>
-<td align="left">Réaliser une performance</td>
-</tr>
-<tr class="even">
-<td align="left">EPS</td>
-<td align="left">Adapter ses déplacements</td>
-</tr>
-<tr class="odd">
-<td align="left">EPS</td>
-<td align="left">Conduire et maîtriser un affrontement</td>
-</tr>
-<tr class="even">
-<td align="left">PC</td>
-<td align="left">Constitution et transformations de la matière</td>
-</tr>
-<tr class="odd">
-<td align="left">PC</td>
-<td align="left">Mouvement et interactions</td>
-</tr>
-<tr class="even">
-<td align="left">PC</td>
-<td align="left">Ondes et signaux</td>
-</tr>
-<tr class="odd">
-<td align="left">SVT</td>
-<td align="left">Terre, vie et évolution</td>
-</tr>
-<tr class="even">
-<td align="left">SVT</td>
-<td align="left">Enjeux contemporains de la planète</td>
-</tr>
-</tbody>
-</table>
-<p>Cette distinction est importante : les <strong>thèmes</strong>
-appartiennent à la structure des programmes, tandis que les
-<strong>notions</strong> appartiennent à la couche pédagogique du
-package. Leur niveau de détail peut donc différer.</p>
-</div>
-<div class="section level2">
 <h2 id="focus-mathématiques">Focus mathématiques<a class="anchor" aria-label="anchor" href="#focus-math%C3%A9matiques"></a>
 </h2>
 <p>Les mathématiques sont volontairement plus détaillées dans
 <code>eduschool</code>. La synthèse courte s’obtient directement :</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"2GT"</span>, matiere <span class="op">=</span> <span class="st">"maths"</span>, max_themes <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -563,7 +376,7 @@ Nombres réels ; Algèbre ; Géométrie ; Vecteurs et problèmes de géométrie
 </table>
 <p>Pour afficher l’ensemble des grands thèmes mathématiques de la
 seconde :</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">maths_2gt</span> <span class="op">=</span> <span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"2GT"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span><span class="op">)</span></span>
 <span><span class="va">maths_2gt</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">maths_2gt</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="va">maths_2gt</span> <span class="op">|&gt;</span></span>
@@ -666,7 +479,7 @@ fonctions, la statistique et les probabilités.</p>
 <p>Pour préparer l’entrée au lycée, on peut mettre en regard les thèmes
 de mathématiques de 3e et ceux de 2de, sans fabriquer une table
 parallèle :</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">maths_3e</span> <span class="op">=</span> <span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"3E"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span><span class="op">)</span></span>
 <span><span class="va">maths_3e</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">maths_3e</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">maths_3e</span>, <span class="fl">12</span><span class="op">)</span> <span class="op">|&gt;</span></span>
@@ -720,7 +533,7 @@ spécialités sont suivies en première, puis deux sont conservées en
 terminale.</p>
 <p>Les spécialités modélisées dans le package sont consultables
 directement :</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">specialites</span> <span class="op">=</span> <span class="fu"><a href="../reference/enseignements.html">enseignements</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">specialites</span> <span class="op">=</span> <span class="va">specialites</span><span class="op">[</span><span class="va">specialites</span><span class="op">$</span><span class="va">type</span> <span class="op">==</span> <span class="st">"SPECIALITE"</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"enseignement_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="va">specialites</span> <span class="op">|&gt;</span></span>
@@ -802,7 +615,7 @@ agricole.</p>
 </h2>
 <p>Le référentiel <code><a href="../reference/series.html">series()</a></code> permet de visualiser les séries
 actuellement intégrées :</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/series.html">series</a></span><span class="op">(</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="../reference/series.html">series</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">voie_id</span> <span class="op">==</span> <span class="st">"VOIE_TECHNOLOGIQUE"</span>, <span class="op">]</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
@@ -855,6 +668,12 @@ restauration</td>
 <td align="left">S2TMD</td>
 <td align="left">Sciences et techniques du théâtre, de la musique et de
 la danse</td>
+<td align="left">VOIE_TECHNOLOGIQUE</td>
+</tr>
+<tr class="even">
+<td align="left">STAV</td>
+<td align="left">Sciences et technologies de l’agronomie et du
+vivant</td>
 <td align="left">VOIE_TECHNOLOGIQUE</td>
 </tr>
 </tbody>

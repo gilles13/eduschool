@@ -41,6 +41,7 @@ series() |>
 | STMG | Sciences et technologies du management et de la gestion | VOIE_TECHNOLOGIQUE |
 | STHR | Sciences et technologies de l’hôtellerie et de la restauration | VOIE_TECHNOLOGIQUE |
 | S2TMD | Sciences et techniques du théâtre, de la musique et de la danse | VOIE_TECHNOLOGIQUE |
+| STAV | Sciences et technologies de l’agronomie et du vivant | VOIE_TECHNOLOGIQUE |
 
 Après la seconde générale et technologique, l’orientation se fait vers
 la voie générale ou vers une série de la voie technologique. La

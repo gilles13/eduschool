@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="450" viewBox="0 0 1840 450" role="img" aria-labelledby="title desc">
+  <title id="title">Dates cles - Parcoursup 2026</title>
+  <desc id="desc">Frise generee depuis inst/orientation/parcoursup_calendrier.csv.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/>
+    </marker>
+    <style><![CDATA[
+      .edge { fill: none; stroke: #59636e; stroke-width: 2.2; marker-end: url(#arrow); }
+      .edge-label { font: 13px system-ui, sans-serif; fill: #4a5560; }
+      .node rect { stroke-width: 1.8; }
+      .node text { font: 15px system-ui, sans-serif; fill: #17212b; text-anchor: middle; dominant-baseline: middle; }
+      .normal rect { fill: #f7f9fb; stroke: #77828d; }
+      .source rect { fill: #eef5ff; stroke: #5e7fa7; }
+      .database rect { fill: #f2f0ff; stroke: #7667a8; }
+      .documentation rect { fill: #fff6e8; stroke: #a77b3f; }
+      .accent rect { fill: #eaf8f0; stroke: #4f8b68; }
+      .sortie rect { fill: #f4f7ea; stroke: #788d49; }
+      .niveau rect { fill: #eef5ff; stroke: #5e7fa7; }
+      .voie rect { fill: #eaf8f0; stroke: #4f8b68; }
+      .serie rect { fill: #fff6e8; stroke: #a77b3f; }
+      .group rect { stroke-width: 1.5; stroke-dasharray: 7 5; rx: 18; ry: 18; }
+      .group-title { font: 600 15px system-ui, sans-serif; fill: #34404b; }
+      .cycle3 rect { fill: #f5f9ff; stroke: #91a9c5; }
+      .cycle4 rect { fill: #f4faf6; stroke: #88aa94; }
+      .cycle_terminal rect { fill: #fffaf0; stroke: #b89a68; }
+    ]]></style>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+  <path class="edge" d="M 320 161 L 297.7 161 L 297.7 321 L 275.39 321"/>
+  <path class="edge" d="M 505.39 321 L 536.46 321 L 536.46 161 L 567.53 161"/>
+  <path class="edge" d="M 682.53 202 L 682.53 241 L 794.89 241 L 794.89 280"/>
+  <path class="edge" d="M 909.89 321 L 969.04 321 L 969.04 161 L 1028.2 161"/>
+  <path class="edge" d="M 1143.2 202 L 1143.2 241 L 1193.76 241 L 1193.76 280"/>
+  <path class="edge" d="M 1308.76 321 L 1278.03 321 L 1278.03 161 L 1247.3 161"/>
+  <path class="edge" d="M 1477.3 161 L 1533.65 161 L 1533.65 321 L 1590 321"/>
+  <g class="node accent" id="PS26_CAL_01">
+    <rect x="90" y="120" width="230" height="82" rx="18" ry="18"/>
+    <text x="205" y="151.5">17/12/2025</text>
+    <text x="205" y="170.5">Ouverture de la carte des formations</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_02">
+    <rect x="275.39" y="280" width="230" height="82" rx="18" ry="18"/>
+    <text x="390.39" y="311.5">19/01/2026</text>
+    <text x="390.39" y="330.5">Ouverture des inscriptions et des voeux</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_03">
+    <rect x="567.53" y="120" width="230" height="82" rx="18" ry="18"/>
+    <text x="682.53" y="151.5">12/03/2026</text>
+    <text x="682.53" y="170.5">Fin de formulation des voeux</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_04">
+    <rect x="679.89" y="280" width="230" height="82" rx="18" ry="18"/>
+    <text x="794.89" y="311.5">01/04/2026</text>
+    <text x="794.89" y="330.5">Fin de confirmation des voeux</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_05">
+    <rect x="1028.2" y="120" width="230" height="82" rx="18" ry="18"/>
+    <text x="1143.2" y="151.5">02/06/2026</text>
+    <text x="1143.2" y="170.5">Debut de la phase principale</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_06">
+    <rect x="1078.76" y="280" width="230" height="82" rx="18" ry="18"/>
+    <text x="1193.76" y="311.5">11/06/2026</text>
+    <text x="1193.76" y="330.5">Debut de la phase complementaire</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_07">
+    <rect x="1247.3" y="120" width="230" height="82" rx="18" ry="18"/>
+    <text x="1362.3" y="151.5">11/07/2026</text>
+    <text x="1362.3" y="170.5">Fin de la phase principale</text>
+  </g>
+  <g class="node accent" id="PS26_CAL_08">
+    <rect x="1590" y="280" width="230" height="82" rx="18" ry="18"/>
+    <text x="1705" y="311.5">10/09/2026</text>
+    <text x="1705" y="330.5">Fin de la phase complementaire</text>
+  </g>
+</svg>

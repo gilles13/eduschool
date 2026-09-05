@@ -92,97 +92,6 @@ désigne la grille commune au niveau, `GRILLE_SERIE` une grille complète
 propre à une série et `COMPLEMENT_SERIE` un enseignement qui complète
 une grille commune, comme les spécialités de la voie générale.
 
-## Visualiser les connaissances attendues par matière
-
-Les grands thèmes constituent un bon niveau de lecture pour comparer les
-disciplines sans afficher toutes les capacités. On peut compter les
-thèmes modélisés par discipline :
-
-``` r
-
-t2 = themes_niveau("2GT")
-t2 = unique(t2[, c("programme_id", "item_id", "discipline_id", "libelle")])
-couverture = sort(table(t2$discipline_id), decreasing = TRUE)
-barplot(
-  couverture,
-  las = 2,
-  ylab = "Nombre de thèmes",
-  main = "Thèmes de 2de modélisés dans eduschool"
-)
-```
-
-![](exemple-classe-2de-generale_files/figure-html/unnamed-chunk-6-1.png)
-
-Ce graphique décrit la **granularité du référentiel `eduschool`**, pas
-un poids pédagogique ou un classement des matières. Pour lire les
-contenus eux-mêmes :
-
-``` r
-
-t2[, c("discipline_id", "libelle")] |>
-  head(20) |>
-  knitr::kable(row.names = FALSE)
-```
-
-| discipline_id | libelle                                              |
-|:--------------|:-----------------------------------------------------|
-| MAT           | Vocabulaire ensembliste et logique                   |
-| MAT           | Algorithmique et programmation                       |
-| MAT           | Variables et instructions élémentaires               |
-| MAT           | Notion de fonction                                   |
-| MAT           | Automatismes                                         |
-| MAT           | Nombres et calculs, algèbre                          |
-| MAT           | Arithmétique                                         |
-| MAT           | Nombres réels                                        |
-| MAT           | Algèbre                                              |
-| MAT           | Géométrie                                            |
-| MAT           | Vecteurs et problèmes de géométrie                   |
-| MAT           | Droites du plan                                      |
-| MAT           | Fonctions                                            |
-| MAT           | Représentation algébrique et graphique des fonctions |
-| MAT           | Variations et extrémums d’une fonction               |
-| MAT           | Statistiques et probabilités                         |
-| MAT           | Information chiffrée et statistique descriptive      |
-| MAT           | Croisement de deux variables qualitatives            |
-| MAT           | Probabilités                                         |
-| FRA           | Lecture et interprétation                            |
-
-Les notions documentées peuvent être interrogées séparément :
-
-``` r
-
-notions_niveau("2GT")[, c("discipline_id", "libelle")] |>
-  head(20) |>
-  knitr::kable(row.names = FALSE)
-```
-
-| discipline_id | libelle                                       |
-|:--------------|:----------------------------------------------|
-| FRA           | Lecture et interprétation                     |
-| FRA           | Écriture et argumentation                     |
-| FRA           | Langue et expression                          |
-| HG            | Sociétés et pouvoirs                          |
-| HG            | Territoires et mondialisation                 |
-| HG            | Environnement et mobilités                    |
-| EMC           | Liberté                                       |
-| EMC           | Société                                       |
-| EMC           | Démocratie et citoyenneté                     |
-| LVE           | Compréhension et réception                    |
-| LVE           | Expression et interaction                     |
-| LVE           | Repères culturels et interculturels           |
-| EPS           | Réaliser une performance                      |
-| EPS           | Adapter ses déplacements                      |
-| EPS           | Conduire et maîtriser un affrontement         |
-| PC            | Constitution et transformations de la matière |
-| PC            | Mouvement et interactions                     |
-| PC            | Ondes et signaux                              |
-| SVT           | Terre, vie et évolution                       |
-| SVT           | Enjeux contemporains de la planète            |
-
-Cette distinction est importante : les **thèmes** appartiennent à la
-structure des programmes, tandis que les **notions** appartiennent à la
-couche pédagogique du package. Leur niveau de détail peut donc différer.
-
 ## Focus mathématiques
 
 Les mathématiques sont volontairement plus détaillées dans `eduschool`.
@@ -324,6 +233,7 @@ series()[series()$voie_id == "VOIE_TECHNOLOGIQUE", ] |>
 | STMG | Sciences et technologies du management et de la gestion | VOIE_TECHNOLOGIQUE |
 | STHR | Sciences et technologies de l’hôtellerie et de la restauration | VOIE_TECHNOLOGIQUE |
 | S2TMD | Sciences et techniques du théâtre, de la musique et de la danse | VOIE_TECHNOLOGIQUE |
+| STAV | Sciences et technologies de l’agronomie et du vivant | VOIE_TECHNOLOGIQUE |
 
 La réglementation nationale compte huit séries technologiques : ST2S,
 STAV, STD2A, STI2D, STHR, STL, STMG et S2TMD. `eduschool` en modélise

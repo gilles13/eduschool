@@ -16,7 +16,29 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
-<li class="nav-item"><a class="nav-link" href="../articles/index.html">Articles</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><h6 class="dropdown-header" data-toc-skip>Découvrir eduschool</h6></li>
+    <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main</a></li>
+    <li><a class="dropdown-item" href="../articles/exemple-classe-6e.html">Explorer la 6e</a></li>
+    <li><a class="dropdown-item" href="../articles/exemple-classe-2de-generale.html">Explorer la 2de générale et technologique</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Parcours et orientation</h6></li>
+    <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaires</a></li>
+    <li><a class="dropdown-item" href="../articles/programmes-et-capacites.html">Programmes et capacités</a></li>
+    <li><a class="dropdown-item" href="../articles/orientation-au-lycee-et-apres-le-bac.html">S'orienter au lycée et après le bac</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
+    <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
+    <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
+    <li><a class="dropdown-item" href="../articles/approfondir-ses-connaissances-en-mathematiques.html">Approfondir ses connaissances</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Comprendre eduschool</h6></li>
+    <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Architecture des données</a></li>
+    <li><a class="dropdown-item" href="../articles/rentrer-en-profondeur-dans-eduschool.html">Rentrer en profondeur dans eduschool</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
+  </ul></li>
 <li class="active nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"></ul></div>
 
@@ -31,6 +53,31 @@
 
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.11.0" id="eduschool-0110">eduschool 0.11.0<a class="anchor" aria-label="anchor" href="#eduschool-0110"></a></h2>
+<div class="section level3">
+<h3 id="orientation-au-lycee-et-apres-le-bac-0-11-0">Orientation au lycee et apres le bac<a class="anchor" aria-label="anchor" href="#orientation-au-lycee-et-apres-le-bac-0-11-0"></a></h3>
+<ul><li>ajout d une couche relationnelle consacree aux principales bifurcations d orientation, aux grandes filieres post-bac et a Parcoursup ;</li>
+<li>separation entre les etapes durables de Parcoursup et les jalons dates propres a chaque campagne, afin de conserver un modele evolutif ;</li>
+<li>integration de la huitieme serie technologique <code>STAV</code>, relevant de l enseignement agricole, afin de presenter un panorama complet des orientations apres la seconde ;</li>
+<li>ajout de fonctions pour consulter series technologiques, specialites, options du lycee, filieres post-bac, etapes, campagnes et calendriers Parcoursup ;</li>
+<li>ajout de schemas SVG generes dynamiquement depuis les donnees : bifurcations scolaires, etapes Parcoursup et frise chronologique d une campagne ;</li>
+<li>ajout de la vignette « S orienter au lycee et apres le bac » et d un repere historique sur Admission Post-Bac (APB), remplace par Parcoursup en 2018.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="ressources-pedagogiques-en-mathematiques-0-11-0">Ressources pedagogiques en mathematiques<a class="anchor" aria-label="anchor" href="#ressources-pedagogiques-en-mathematiques-0-11-0"></a></h3>
+<ul><li>ajout d un catalogue relationnel de ressources pedagogiques externes, separe des sources officielles du SI ;</li>
+<li>classement des ressources par usages pedagogiques et niveaux scolaires, sans liste de niveaux codee dans une seule cellule ;</li>
+<li>ajout de <code><a href="../reference/usages_ressources.html">usages_ressources()</a></code> et <code><a href="../reference/ressources_pedagogiques.html">ressources_pedagogiques()</a></code> ;</li>
+<li>ajout de la vignette « Approfondir ses connaissances en mathematiques ».</li>
+</ul></div>
+<div class="section level3">
+<h3 id="charte-graphique-et-sorties-de-revision-0-11-0">Charte graphique et sorties de revision<a class="anchor" aria-label="anchor" href="#charte-graphique-et-sorties-de-revision-0-11-0"></a></h3>
+<ul><li>mise en place d’une charte graphique commune aux fiches pedagogiques, avec une couleur d’identification stable par cycle ;</li>
+<li>ajout d’un bandeau d’identite affichant automatiquement le cycle, la classe, la discipline, le type de fiche et le logo <code>eduschool</code> ;</li>
+<li>ajout de <code><a href="../reference/charte_eduschool.html">charte_eduschool()</a></code>, <code><a href="../reference/couleur_cycle.html">couleur_cycle()</a></code>, <code><a href="../reference/identite_revision.html">identite_revision()</a></code> et <code><a href="../reference/theme_eduschool.html">theme_eduschool()</a></code> pour reutiliser la charte depuis R et dans les graphiques <code>ggplot2</code> ;</li>
+<li>ajout de <code>documentation/charte-graphique.md</code> pour documenter les principes visuels du package ;</li>
+<li>les fiches HTML utilisent des ressources externes dans un repertoire <code>&lt;nom&gt;_files/</code> au lieu d’encoder le logo en base64, afin d’alleger les fichiers HTML et leur generation ;</li>
+<li>la synthese pedagogique et les representations visuelles utiles priment desormais sur une contrainte fixe de pagination des fiches.</li>
+</ul></div>
 <div class="section level3">
 <h3 id="consolidation-du-mini-si-0-11-0">Consolidation du mini-SI<a class="anchor" aria-label="anchor" href="#consolidation-du-mini-si-0-11-0"></a></h3>
 <ul><li>ajout de metadonnees relationnelles explicites dans <code>inst/metadata/tables.csv</code>, <code>colonnes.csv</code> et <code>relations.csv</code> ;</li>
@@ -50,6 +97,9 @@
 <li>liaison des fiches aux notions pedagogiques existantes afin d’eviter une seconde source de verite ;</li>
 <li>ajout de schemas generes avec les capacites graphiques de R, sans nouvelle dependance graphique obligatoire ;</li>
 <li>rendu HTML/PDF suivant le meme principe que les fiches d’exercices.</li>
+<li>ajout d un index pkgdown dedie aux fiches essentielles de mathematiques et d une premiere fiche 6e ;</li>
+<li>suppression du graphique de comptage des themes dans la vignette 2de, qui refletait surtout la granularite inegale du referentiel ;</li>
+<li>preparation d une future API publique de composition de fiches personnalisees a partir de templates simples.</li>
 </ul></div>
 </div>
     <div class="section level2">
