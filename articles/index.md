@@ -52,6 +52,13 @@ Architecture du mini-SI et fonctionnement interne du package.
 - [Rentrer en profondeur dans
   eduschool](https://gilles13.github.io/eduschool/articles/rentrer-en-profondeur-dans-eduschool.md):
 
+### Contribuer et partager
+
+Creer, adapter et mutualiser des donnees et supports pedagogiques.
+
+- [Contribuer et
+  partager](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md):
+
 ### Developpement
 
 - [Développement et

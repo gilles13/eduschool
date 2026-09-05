@@ -3,6 +3,7 @@
 <url><loc>https://gilles13.github.io/eduschool/LICENSE-text.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/articles/architecture-des-donnees.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/articles/contribuer-et-partager.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/articles/developpement.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/articles/documentation-pedagogique.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/articles/exemple-classe-2de-generale.html</loc></url>
@@ -53,8 +54,10 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/notions_capacite.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/notions_niveau.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/obtenir_rappel.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/orientation.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/orientation_parcours.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/ouvrir_base.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/parcours.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/parcoursup_calendrier.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/parcoursup_campagne.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/parcoursup_etapes.html</loc></url>
@@ -72,6 +75,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_schema_orientation_svg.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_schema_parcoursup_svg.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_schema_relations_svg.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/programme.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/programmes.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/rappels_capacite.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/rapports.html</loc></url>
@@ -79,6 +83,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/ressources_pedagogiques.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/resume_controles_si.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/resume_niveau.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/revision.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/series.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/series_technologiques.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/specialites_generales.html</loc></url>

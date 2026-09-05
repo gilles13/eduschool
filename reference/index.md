@@ -32,7 +32,8 @@
   : Enseignements
 - [`enseignements_optionnels_lycee()`](https://gilles13.github.io/eduschool/reference/enseignements_optionnels_lycee.md)
   : Enseignements optionnels au lycee general
-- [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
+- [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
+  [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   : Generer un exercice
@@ -68,10 +69,14 @@
   : Notions documentées pour un niveau
 - [`obtenir_rappel()`](https://gilles13.github.io/eduschool/reference/obtenir_rappel.md)
   : Lire le rappel pédagogique d'une notion
+- [`orientation()`](https://gilles13.github.io/eduschool/reference/orientation.md)
+  : Explorer les choix d'orientation
 - [`orientation_parcours()`](https://gilles13.github.io/eduschool/reference/orientation_parcours.md)
   : Parcours d'orientation modelises
 - [`ouvrir_base()`](https://gilles13.github.io/eduschool/reference/ouvrir_base.md)
   : Ouvrir une base DuckDB eduschool
+- [`parcours()`](https://gilles13.github.io/eduschool/reference/parcours.md)
+  : Explorer un parcours scolaire
 - [`parcoursup_calendrier()`](https://gilles13.github.io/eduschool/reference/parcoursup_calendrier.md)
   : Jalons dates d'une campagne Parcoursup
 - [`parcoursup_campagne()`](https://gilles13.github.io/eduschool/reference/parcoursup_campagne.md)
@@ -106,6 +111,8 @@
   : Produire le schema des etapes Parcoursup
 - [`produire_schema_relations_svg()`](https://gilles13.github.io/eduschool/reference/produire_schema_relations_svg.md)
   : Produire un schema relationnel du mini-SI
+- [`programme()`](https://gilles13.github.io/eduschool/reference/programme.md)
+  : Consulter un programme scolaire
 - [`programmes()`](https://gilles13.github.io/eduschool/reference/programmes.md)
   : Programmes
 - [`rappels_capacite()`](https://gilles13.github.io/eduschool/reference/rappels_capacite.md)
@@ -124,6 +131,8 @@
   : Resume des controles d'integrite
 - [`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
   : Résumé pédagogique d'un niveau
+- [`revision()`](https://gilles13.github.io/eduschool/reference/revision.md)
+  : Construire une revision de mathematiques
 - [`series()`](https://gilles13.github.io/eduschool/reference/series.md)
   : Séries scolaires
 - [`series_technologiques()`](https://gilles13.github.io/eduschool/reference/series_technologiques.md)

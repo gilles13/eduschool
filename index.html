@@ -5,14 +5,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Référentiels scolaires français et outils de révision • eduschool</title>
+<title>Cartographie de la scolarité française et outils de mathématiques • eduschool</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Référentiels scolaires français et outils de révision">
-<meta name="description" content="Fournit des référentiels structurés sur les programmes scolaires français, une base documentaire pédagogique et des outils simples pour générer des exercices et des fiches de révision. Les données sont stockées sous forme de fichiers CSV et Markdown installés avec le package. DuckDB peut être utilisé comme moteur relationnel sans être requis pour les consultations simples. Un complément à https://eduscol.education.gouv.fr.">
-<meta property="og:description" content="Fournit des référentiels structurés sur les programmes scolaires français, une base documentaire pédagogique et des outils simples pour générer des exercices et des fiches de révision. Les données sont stockées sous forme de fichiers CSV et Markdown installés avec le package. DuckDB peut être utilisé comme moteur relationnel sans être requis pour les consultations simples. Un complément à https://eduscol.education.gouv.fr.">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
+<meta property="og:title" content="Cartographie de la scolarité française et outils de mathématiques">
+<meta name="description" content="Cartographie la scolarité des collégiens et lycéens en France : niveaux, cycles, voies, séries, enseignements, programmes, orientation et poursuites détudes. Le package propose en complément des fiches de révision et des exercices centrés sur les mathématiques. Les données sont structurées dans des fichiers CSV et peuvent être interrogées simplement depuis R ou, pour les usages relationnels avancés, avec DuckDB. Larchitecture reste extensible à dautres disciplines sans en faire lobjectif principal du projet. eduschool complète les sources officielles sans s'y substituer.">
+<meta property="og:description" content="Cartographie la scolarité des collégiens et lycéens en France : niveaux, cycles, voies, séries, enseignements, programmes, orientation et poursuites détudes. Le package propose en complément des fiches de révision et des exercices centrés sur les mathématiques. Les données sont structurées dans des fichiers CSV et peuvent être interrogées simplement depuis R ou, pour les usages relationnels avancés, avec DuckDB. Larchitecture reste extensible à dautres disciplines sans en faire lobjectif principal du projet. eduschool complète les sources officielles sans s'y substituer.">
 <meta property="og:image" content="https://gilles13.github.io/eduschool/logo.png">
 </head>
 <body>
@@ -23,7 +24,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.11.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.12.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +56,9 @@
     <li><a class="dropdown-item" href="articles/architecture-des-donnees.html">Architecture des données</a></li>
     <li><a class="dropdown-item" href="articles/rentrer-en-profondeur-dans-eduschool.html">Rentrer en profondeur dans eduschool</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Contribuer et partager</h6></li>
+    <li><a class="dropdown-item" href="articles/contribuer-et-partager.html">Mutualiser fiches, exercices et ameliorations</a></li>
+    <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="articles/index.html">Tous les articles</a></li>
   </ul>
 </li>
@@ -69,76 +73,93 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="eduschool">eduschool<a class="anchor" aria-label="anchor" href="#eduschool"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="comprendre-sa-scolarité-travailler-les-mathématiques">Comprendre sa scolarité. Travailler les mathématiques.<a class="anchor" aria-label="anchor" href="#comprendre-sa-scolarit%C3%A9-travailler-les-math%C3%A9matiques"></a>
 </h1>
 </div>
-<p align="center">
-<img src="reference/figures/logo.png" alt="Logo eduschool" width="360"></p>
-<p><code>eduschool</code> permet de consulter simplement les programmes scolaires français, les notions essentielles d’un niveau et de générer des exercices de révision.</p>
+<p><strong>eduschool</strong> cartographie la scolarité des collégiens et lycéens en France et propose des outils pour réviser et s’entraîner en mathématiques.</p>
+<div class="edu-hero">
+<div class="edu-hero-main">
+<p><strong>PARCOURS SCOLAIRE · MATHÉMATIQUES · R</strong></p>
+<p>Des données structurées pour comprendre les parcours scolaires, explorer les programmes et accompagner le travail en mathématiques.</p>
+<p><a href="articles/parcours-scolaires.html" class="edu-btn edu-btn-primary"><strong>Explorer un parcours →</strong></a> <a href="articles/fiches-revision-mathematiques.html" class="edu-btn edu-btn-math"><strong>Réviser les maths →</strong></a></p>
+</div>
+<div class="section level3 edu-hero-side">
+<h3 id="collège--lycée--après-le-bac">Collège → Lycée → Après le bac<a class="anchor" aria-label="anchor" href="#coll%C3%A8ge--lyc%C3%A9e--apr%C3%A8s-le-bac"></a>
+</h3>
+<p>Comprendre les étapes, les choix d’orientation et les poursuites d’études sans transformer le package en encyclopédie scolaire générale.</p>
+</div>
+</div>
+<div class="edu-grid edu-grid-4">
+<div class="section level3 edu-card edu-card-path">
+<h3 id="id_-parcours-scolaire">
+<a href="articles/parcours-scolaires.html">↗ Parcours scolaire</a><a class="anchor" aria-label="anchor" href="#id_-parcours-scolaire"></a>
+</h3>
+<p>Niveaux et cycles, voies et séries, options, spécialités, orientation et Parcoursup.</p>
+</div>
+<div class="section level3 edu-card edu-card-math">
+<h3 id="id_-mathématiques">
+<a href="articles/fiches-revision-mathematiques.html">∑ Mathématiques</a><a class="anchor" aria-label="anchor" href="#id_-math%C3%A9matiques"></a>
+</h3>
+<p>Programmes, capacités, fiches de révision, exercices et ressources pour progresser.</p>
+</div>
+<div class="section level3 edu-card edu-card-data">
+<h3 id="r--données-et-api">
+<a href="reference/index.html">R · Données et API</a><a class="anchor" aria-label="anchor" href="#r--donn%C3%A9es-et-api"></a>
+</h3>
+<p>Une API simple pour explorer les données, avec le mini-SI disponible pour aller plus loin.</p>
+</div>
+<div class="section level3 edu-card edu-card-understand">
+<h3 id="id_-comprendre-eduschool">
+<a href="articles/rentrer-en-profondeur-dans-eduschool.html">⚙ Comprendre eduschool</a><a class="anchor" aria-label="anchor" href="#id_-comprendre-eduschool"></a>
+</h3>
+<p>Architecture relationnelle, contrôles, conventions et fonctionnement interne du package.</p>
+</div>
+</div>
 <div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+<h2 id="commencer-avec-quelques-verbes">Commencer avec quelques verbes<a class="anchor" aria-label="anchor" href="#commencer-avec-quelques-verbes"></a>
 </h2>
+<p>L’API principale privilégie des verbes courts, faciles à lire et à combiner :</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"gilles13/eduschool"</span><span class="op">)</span></span></code></pre></div>
-<p>Puis :</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="commencer-en-quelques-commandes">Commencer en quelques commandes<a class="anchor" aria-label="anchor" href="#commencer-en-quelques-commandes"></a>
-</h2>
-<p>Obtenir une vue synthétique d’une classe :</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span></code></pre></div>
-<p>Se concentrer sur une matière :</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"6E"</span>, matiere <span class="op">=</span> <span class="st">"maths"</span><span class="op">)</span></span></code></pre></div>
-<p>La même interface permet d’explorer le lycée, par exemple la seconde générale et technologique :</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="reference/genere_resume.html">genere_resume</a></span><span class="op">(</span><span class="st">"2GT"</span>, matiere <span class="op">=</span> <span class="st">"maths"</span><span class="op">)</span></span></code></pre></div>
-<p>Générer immédiatement quelques exercices et afficher leurs énoncés :</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
-<span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
-<span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
-<span>  n <span class="op">=</span> <span class="fl">3</span>,</span>
-<span>  difficulte <span class="op">=</span> <span class="fl">1</span>,</span>
-<span>  seed <span class="op">=</span> <span class="fl">2026</span>,</span>
-<span>  afficher <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span><span class="op">)</span></span></code></pre></div>
-<p>Pour créer directement une fiche imprimable, la sortie peut être envoyée dans <code><a href="reference/produire_fiche.html">produire_fiche()</a></code> avec le pipe natif :</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/exercices.html">generer_fiche</a></span><span class="op">(</span></span>
-<span>  niveau_id <span class="op">=</span> <span class="st">"6E"</span>,</span>
-<span>  capacite_id <span class="op">=</span> <span class="st">"ITM_MAT_C3_6E_C09"</span>,</span>
-<span>  n <span class="op">=</span> <span class="fl">5</span>,</span>
-<span>  seed <span class="op">=</span> <span class="fl">2026</span></span>
-<span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
-<p>Le nom du fichier est construit automatiquement à partir du niveau et de la capacité. Il reste possible de fournir un chemin explicite avec l’argument <code>fichier</code>. Avec <code>format = "auto"</code>, <code>eduschool</code> produit un PDF si LaTeX est disponible et un fichier HTML sinon. Le même principe s’applique au corrigé avec <code><a href="reference/produire_corrige.html">produire_corrige()</a></code>.</p>
-</div>
-<div class="section level2">
-<h2 id="réviser-les-mathématiques">Réviser les mathématiques<a class="anchor" aria-label="anchor" href="#r%C3%A9viser-les-math%C3%A9matiques"></a>
-</h2>
-<p>La seconde générale et technologique dispose d’un premier jeu complet de fiches thématiques et d’une fiche essentielle :</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/generer_revision.html">generer_revision</a></span><span class="op">(</span><span class="st">"2GT"</span>, <span class="st">"GEOMETRIE"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu"><a href="reference/produire_revision.html">produire_revision</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="reference/generer_essentiel.html">generer_essentiel</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu"><a href="reference/produire_revision.html">produire_revision</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
-<p>Les fiches sont reliées aux notions pédagogiques existantes et peuvent inclure des schémas générés directement par R.</p>
+<span><span class="fu"><a href="reference/parcours.html">parcours</a></span><span class="op">(</span><span class="st">"3E"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/orientation.html">orientation</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/programme.html">programme</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/revision.html">revision</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/exercices.html">exercices</a></span><span class="op">(</span><span class="st">"6E"</span>, n <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
+<p>Les fonctions détaillées restent disponibles : cette façade simplifie l’entrée dans <code>eduschool</code> sans fermer l’accès au système relationnel sous-jacent.</p>
+<div class="edu-grid edu-grid-3">
+<div class="section level3 edu-panel">
+<h3 id="élèves">Élèves<a class="anchor" aria-label="anchor" href="#%C3%A9l%C3%A8ves"></a>
+</h3>
+<p>Comprendre un parcours, retrouver les notions essentielles et s’entraîner en mathématiques.</p>
+</div>
+<div class="section level3 edu-panel">
+<h3 id="parents">Parents<a class="anchor" aria-label="anchor" href="#parents"></a>
+</h3>
+<p>Suivre la scolarité, comprendre les choix d’orientation et disposer de supports synthétiques.</p>
+</div>
+<div class="section level3 edu-panel">
+<h3 id="utilisateurs-r">Utilisateurs R<a class="anchor" aria-label="anchor" href="#utilisateurs-r"></a>
+</h3>
+<p>Interroger les référentiels, produire des documents, contrôler les relations et adapter les outils.</p>
+</div>
+</div>
 </div>
 <div class="section level2">
-<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+<h2 id="créer-et-partager">Créer et partager<a class="anchor" aria-label="anchor" href="#cr%C3%A9er-et-partager"></a>
 </h2>
-<p>Pour découvrir le package, commencer par la vignette <strong>Explorer une classe de 6e avec eduschool</strong>. La vignette <strong>Explorer une classe de 2de générale et technologique</strong> donne ensuite un exemple lycée plus complet, notamment sur les mathématiques et l’orientation après la seconde.</p>
-<p>Les autres vignettes conservent chacune un rôle précis : prise en main, parcours scolaires, programmes et capacités, documentation pédagogique, exercices, architecture des données et développement.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/browseVignettes.html" class="external-link">browseVignettes</a></span><span class="op">(</span><span class="st">"eduschool"</span><span class="op">)</span></span></code></pre></div>
-<p>La documentation complète est également publiée sur le site pkgdown du package.</p>
+<p><code>eduschool</code> est open source. La prochaine étape fonctionnelle consiste à rendre la création de supports aussi simple que leur consultation : composer une fiche, ajouter une notion, une formule, un graphique ou des exercices, puis produire le document avec une API publique commune aux fiches du package et aux fiches personnelles.</p>
+<div class="edu-share">
+<p><strong>Utiliser → créer → adapter → partager</strong></p>
+<p>Corrections de données, ressources, fiches, exercices, visualisations et améliorations de l’API peuvent être mutualisés.</p>
+<p><a href="articles/contribuer-et-partager.html" class="edu-btn edu-btn-outline"><strong>Contribuer au projet →</strong></a></p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="un-projet-volontairement-centré">Un projet volontairement centré<a class="anchor" aria-label="anchor" href="#un-projet-volontairement-centr%C3%A9"></a>
+</h2>
+<p>L’architecture d’<code>eduschool</code> est générique et peut accueillir d’autres matières. Le projet lui-même reste néanmoins centré sur les <strong>mathématiques</strong> pour ses fiches de révision et ses exercices. Cette limite volontaire permet de garder un outil cohérent, maintenable et réellement utile.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">

@@ -1,120 +1,99 @@
-# eduschool
+# Comprendre sa scolarité. Travailler les mathématiques.
 
-![Logo eduschool](reference/figures/logo.png)
+**eduschool** cartographie la scolarité des collégiens et lycéens en
+France et propose des outils pour réviser et s’entraîner en
+mathématiques.
 
-`eduschool` permet de consulter simplement les programmes scolaires
-français, les notions essentielles d’un niveau et de générer des
-exercices de révision.
+**PARCOURS SCOLAIRE · MATHÉMATIQUES · R**
 
-## Installation
+Des données structurées pour comprendre les parcours scolaires, explorer
+les programmes et accompagner le travail en mathématiques.
 
-``` r
+[**Explorer un parcours
+→**](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)
+[**Réviser les maths
+→**](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md)
 
-install.packages("remotes")
-remotes::install_github("gilles13/eduschool")
-```
+### Collège → Lycée → Après le bac
 
-Puis :
+Comprendre les étapes, les choix d’orientation et les poursuites
+d’études sans transformer le package en encyclopédie scolaire générale.
+
+### [↗ Parcours scolaire](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)
+
+Niveaux et cycles, voies et séries, options, spécialités, orientation et
+Parcoursup.
+
+### [∑ Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md)
+
+Programmes, capacités, fiches de révision, exercices et ressources pour
+progresser.
+
+### [R · Données et API](https://gilles13.github.io/eduschool/reference/index.md)
+
+Une API simple pour explorer les données, avec le mini-SI disponible
+pour aller plus loin.
+
+### [⚙ Comprendre eduschool](https://gilles13.github.io/eduschool/articles/rentrer-en-profondeur-dans-eduschool.md)
+
+Architecture relationnelle, contrôles, conventions et fonctionnement
+interne du package.
+
+## Commencer avec quelques verbes
+
+L’API principale privilégie des verbes courts, faciles à lire et à
+combiner :
 
 ``` r
 
 library(eduschool)
+
+parcours("3E")
+orientation("2GT")
+programme("6E")
+revision("6E")
+exercices("6E", n = 5)
 ```
 
-## Commencer en quelques commandes
+Les fonctions détaillées restent disponibles : cette façade simplifie
+l’entrée dans `eduschool` sans fermer l’accès au système relationnel
+sous-jacent.
 
-Obtenir une vue synthétique d’une classe :
+### Élèves
 
-``` r
+Comprendre un parcours, retrouver les notions essentielles et
+s’entraîner en mathématiques.
 
-genere_resume("6E")
-```
+### Parents
 
-Se concentrer sur une matière :
+Suivre la scolarité, comprendre les choix d’orientation et disposer de
+supports synthétiques.
 
-``` r
+### Utilisateurs R
 
-genere_resume("6E", matiere = "maths")
-```
+Interroger les référentiels, produire des documents, contrôler les
+relations et adapter les outils.
 
-La même interface permet d’explorer le lycée, par exemple la seconde
-générale et technologique :
+## Créer et partager
 
-``` r
+`eduschool` est open source. La prochaine étape fonctionnelle consiste à
+rendre la création de supports aussi simple que leur consultation :
+composer une fiche, ajouter une notion, une formule, un graphique ou des
+exercices, puis produire le document avec une API publique commune aux
+fiches du package et aux fiches personnelles.
 
-genere_resume("2GT")
-genere_resume("2GT", matiere = "maths")
-```
+**Utiliser → créer → adapter → partager**
 
-Générer immédiatement quelques exercices et afficher leurs énoncés :
+Corrections de données, ressources, fiches, exercices, visualisations et
+améliorations de l’API peuvent être mutualisés.
 
-``` r
+[**Contribuer au projet
+→**](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md)
 
-generer_fiche(
-  niveau_id = "6E",
-  capacite_id = "ITM_MAT_C3_6E_C09",
-  n = 3,
-  difficulte = 1,
-  seed = 2026,
-  afficher = TRUE
-)
-```
+## Un projet volontairement centré
 
-Pour créer directement une fiche imprimable, la sortie peut être envoyée
-dans
-[`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
-avec le pipe natif :
-
-``` r
-
-generer_fiche(
-  niveau_id = "6E",
-  capacite_id = "ITM_MAT_C3_6E_C09",
-  n = 5,
-  seed = 2026
-) |>
-  produire_fiche(format = "auto")
-```
-
-Le nom du fichier est construit automatiquement à partir du niveau et de
-la capacité. Il reste possible de fournir un chemin explicite avec
-l’argument `fichier`. Avec `format = "auto"`, `eduschool` produit un PDF
-si LaTeX est disponible et un fichier HTML sinon. Le même principe
-s’applique au corrigé avec
-[`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md).
-
-## Réviser les mathématiques
-
-La seconde générale et technologique dispose d’un premier jeu complet de
-fiches thématiques et d’une fiche essentielle :
-
-``` r
-
-generer_revision("2GT", "GEOMETRIE") |>
-    produire_revision(format = "auto")
-
-generer_essentiel("2GT") |>
-    produire_revision(format = "auto")
-```
-
-Les fiches sont reliées aux notions pédagogiques existantes et peuvent
-inclure des schémas générés directement par R.
-
-## Documentation
-
-Pour découvrir le package, commencer par la vignette **Explorer une
-classe de 6e avec eduschool**. La vignette **Explorer une classe de 2de
-générale et technologique** donne ensuite un exemple lycée plus complet,
-notamment sur les mathématiques et l’orientation après la seconde.
-
-Les autres vignettes conservent chacune un rôle précis : prise en main,
-parcours scolaires, programmes et capacités, documentation pédagogique,
-exercices, architecture des données et développement.
-
-``` r
-
-browseVignettes("eduschool")
-```
-
-La documentation complète est également publiée sur le site pkgdown du
-package.
+L’architecture d’`eduschool` est générique et peut accueillir d’autres
+matières. Le projet lui-même reste néanmoins centré sur les
+**mathématiques** pour ses fiches de révision et ses exercices. Cette
+limite volontaire permet de garder un outil cohérent, maintenable et
+réellement utile.

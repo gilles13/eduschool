@@ -1,5 +1,33 @@
 # Changelog
 
+## eduschool 0.12.0
+
+### Recentrage, experience utilisateur et contribution
+
+- recentrage explicite du projet sur deux objectifs : cartographier la
+  scolarite des collegiens et lyceens en France et proposer des outils
+  de mathematiques ;
+- maintien d une architecture extensible a d autres disciplines sans en
+  faire l objectif principal du package ;
+- nouvelle page d accueil pkgdown orientee vers les usages : parcours
+  scolaire, mathematiques, donnees R et comprehension du systeme ;
+- introduction d une premiere facade publique a verbes courts :
+  [`parcours()`](https://gilles13.github.io/eduschool/reference/parcours.md),
+  [`orientation()`](https://gilles13.github.io/eduschool/reference/orientation.md),
+  [`programme()`](https://gilles13.github.io/eduschool/reference/programme.md),
+  [`revision()`](https://gilles13.github.io/eduschool/reference/revision.md)
+  et
+  [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
+  ;
+- conservation de l API detaillee existante pour les usages avances et
+  la maintenance ;
+- ajout d une rubrique « Contribuer et partager » et d un guide de
+  contribution afin de favoriser la mutualisation des corrections,
+  ressources, fiches et modeles d exercices ;
+- formalisation de la cible fonctionnelle : les futures fiches eduschool
+  et les fiches personnelles devront utiliser la meme API publique de
+  composition.
+
 ## eduschool 0.11.0
 
 ### Orientation au lycee et apres le bac

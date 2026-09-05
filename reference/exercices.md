@@ -5,6 +5,15 @@ Generer un exercice
 ## Usage
 
 ``` r
+exercices(
+  niveau,
+  capacite = NULL,
+  n = 5,
+  difficulte = 1,
+  seed = 1,
+  afficher = FALSE
+)
+
 generer_exercice(
   modele_id, niveau_id, capacite_id = NA_character_,
   difficulte = 1, seed = NULL, afficher = FALSE
@@ -40,17 +49,17 @@ generer_fiche(
 
 ## Arguments
 
-- modele_id:
+- niveau:
 
-  Identifiant du modele d'exercice.
+  Niveau scolaire.
 
-- niveau_id:
-
-  Identifiant du niveau scolaire.
-
-- capacite_id:
+- capacite:
 
   Identifiant de capacite facultatif.
+
+- n:
+
+  Nombre d'exercices.
 
 - difficulte:
 
@@ -64,9 +73,17 @@ generer_fiche(
 
   Afficher directement l'enonce genere.
 
-- n:
+- modele_id:
 
-  Nombre d'exercices.
+  Identifiant du modele d'exercice.
+
+- niveau_id:
+
+  Identifiant du niveau scolaire.
+
+- capacite_id:
+
+  Identifiant de capacite facultatif.
 
 ## Value
 
