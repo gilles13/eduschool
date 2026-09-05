@@ -84,7 +84,10 @@ vignette lors de sa reconstruction.
 Le diagramme suivant est généré depuis `tables.csv` et `relations.csv`.
 
 ```{r, echo=FALSE, out.width="100%"}
-f = produire_schema_relations_svg()
+fig_dir = knitr::opts_chunk$get("fig.path")
+dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+f = file.path(fig_dir, "relations-si.svg")
+produire_schema_relations_svg(fichier = f)
 knitr::include_graphics(f)
 ```
 
@@ -92,7 +95,11 @@ Pour comprendre le modèle, il est souvent plus utile de regarder un sous-ensemb
 Par exemple, le rattachement des horaires aux niveaux et aux séries :
 
 ```{r, echo=FALSE, out.width="100%"}
-f = produire_schema_relations_svg(
+fig_dir = knitr::opts_chunk$get("fig.path")
+dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+f = file.path(fig_dir, "relations-horaires.svg")
+produire_schema_relations_svg(
+  fichier = f,
   focus = c("niveaux", "voies", "series", "niveaux_series",
             "horaires", "enseignements", "disciplines")
 )
