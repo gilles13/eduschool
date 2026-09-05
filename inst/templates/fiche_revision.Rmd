@@ -3,6 +3,7 @@ output: html_document
 params:
   revision: null
   logo: ""
+  decoration: ""
 ---
 
 ```{r setup, include=FALSE}
@@ -15,9 +16,14 @@ identite = eduschool::identite_revision(r)
 ```{r entete, results='asis'}
 if (knitr::is_html_output()) {
   cat(eduschool:::.css_fiche_eduschool(), "\n")
-  cat(eduschool:::.bandeau_revision_html(r, params$logo), "\n")
+  cat(eduschool:::.bandeau_revision_html(r, params$logo, params$decoration), "\n")
 } else {
-  cat("\\noindent\\begin{minipage}[t]{0.72\\textwidth}\n")
+  if (nzchar(params$decoration) && file.exists(params$decoration)) {
+    cat("\\noindent\\begin{minipage}[t]{0.10\\textwidth}\n")
+    cat("\\includegraphics[width=1.2cm]{\\detokenize{", normalizePath(params$decoration, winslash = "/"), "}}\n", sep = "")
+    cat("\\end{minipage}\\hfill")
+  }
+  cat("\\begin{minipage}[t]{0.60\\textwidth}\n")
   cat("\\textbf{", identite$cycle, " -- ", identite$classe, "}\\\\\n", sep = "")
   cat("{\\Large\\textbf{", identite$matiere, "}}\\\\[0.35em]\n", sep = "")
   cat("\\textsc{", identite$type, "}\\\\\n", sep = "")

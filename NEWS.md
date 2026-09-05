@@ -9,6 +9,7 @@
 - conservation de l API detaillee existante pour les usages avances et la maintenance ;
 - ajout d une rubrique « Contribuer et partager » et d un guide de contribution afin de favoriser la mutualisation des corrections, ressources, fiches et modeles d exercices ;
 - formalisation de la cible fonctionnelle : les futures fiches eduschool et les fiches personnelles devront utiliser la meme API publique de composition.
+- enrichissement visuel de l accueil et des fiches a partir d une bibliotheque de pictogrammes, avec archivage des dix pistes graphiques explorees sans figer encore le futur logo principal.
 
 # eduschool 0.11.0
 

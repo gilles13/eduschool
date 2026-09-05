@@ -25,3 +25,5 @@ pkgdown/*
 /fiche_exercices.pdf
 /corrige_exercices.html
 /corrige_exercices.pdf
+!pkgdown/assets/
+!pkgdown/assets/**

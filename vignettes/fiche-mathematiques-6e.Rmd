@@ -16,7 +16,9 @@ identite = identite_revision(r)
 
 ```{r entete, results='asis'}
 logo = identite$logo
+decoration = identite$decoration
 logo_uri = ""
+decoration_uri = ""
 if (nzchar(logo) && file.exists(logo)) {
   fig_dir = knitr::opts_chunk$get("fig.path")
   dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
@@ -24,8 +26,15 @@ if (nzchar(logo) && file.exists(logo)) {
   file.copy(logo, logo_site, overwrite = TRUE)
   logo_uri = logo_site
 }
+if (nzchar(decoration) && file.exists(decoration)) {
+  fig_dir = knitr::opts_chunk$get("fig.path")
+  dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+  decoration_site = file.path(fig_dir, "decoration-maths.png")
+  file.copy(decoration, decoration_site, overwrite = TRUE)
+  decoration_uri = decoration_site
+}
 cat(eduschool:::.css_fiche_eduschool(), "\n")
-cat(eduschool:::.bandeau_revision_html(r, logo_uri), "\n")
+cat(eduschool:::.bandeau_revision_html(r, logo_uri, decoration_uri), "\n")
 ```
 
 Cette fiche rassemble les **repères essentiels de mathématiques de 6e**. Elle

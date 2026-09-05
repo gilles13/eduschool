@@ -43,3 +43,50 @@
 .edu-card h3 a { color: inherit; text-decoration: none; }
 .edu-card h3 a:hover { text-decoration: underline; }
 .edu-hero-main > p:first-child { font-size: .78rem; font-weight: 700; letter-spacing: .09em; color: #50677d; }
+
+/* Accueil 0.12.x : mise en forme fondee sur du Markdown standard. */
+.contents img[src*="identite/"] {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto .65rem;
+  border-radius: .85rem;
+}
+.contents table:has(img[src*="identite/"]) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: .8rem;
+  margin: 1rem 0 2rem;
+}
+.contents table:has(img[src*="identite/"]) td {
+  width: 50%;
+  vertical-align: top;
+  padding: 1.15rem;
+  border: 1px solid #dce8f2;
+  border-radius: 1rem;
+  background: #fbfdff;
+}
+.contents table:has(img[src*="identite/"]) tr:first-child td:first-child { background: #f2f8fd; }
+.contents table:has(img[src*="identite/"]) tr:first-child td:last-child { background: #f1faf3; }
+.contents table:has(img[src*="identite/"]) tr:last-child td:first-child { background: #fff8ef; }
+.contents table:has(img[src*="identite/"]) tr:last-child td:last-child { background: #f7f3fc; }
+.contents > h1:first-child {
+  color: #123f70;
+  font-weight: 750;
+  line-height: 1.05;
+}
+.contents > h1:first-child + p {
+  font-size: 1.15rem;
+  max-width: 760px;
+}
+@media (max-width: 760px) {
+  .contents table:has(img[src*="identite/"]),
+  .contents table:has(img[src*="identite/"]) tbody,
+  .contents table:has(img[src*="identite/"]) tr,
+  .contents table:has(img[src*="identite/"]) td {
+    display: block;
+    width: 100%;
+  }
+  .contents table:has(img[src*="identite/"]) td { margin-bottom: .8rem; }
+}

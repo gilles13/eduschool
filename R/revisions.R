@@ -156,8 +156,10 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
   file.copy(.template_revision(), entree, overwrite = TRUE)
 
   logo = .logo_eduschool()
+  decoration = .decoration_eduschool("maths")
   ressources = NULL
   logo_rendu = logo
+  decoration_rendu = decoration
   if (identical(format, "html") && nzchar(logo) && file.exists(logo)) {
     nom_sortie = tools::file_path_sans_ext(basename(fichier))
     ressources = paste0(nom_sortie, "_files")
@@ -169,6 +171,14 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
       file.path(ressources_dir, basename(logo)),
       overwrite = TRUE
     )
+    if (nzchar(decoration) && file.exists(decoration)) {
+      decoration_rendu = file.path(ressources, basename(decoration))
+      file.copy(
+        decoration,
+        file.path(ressources_dir, basename(decoration)),
+        overwrite = TRUE
+      )
+    }
   }
 
   output_format = if (identical(format, "pdf")) {
@@ -185,7 +195,11 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
     output_format = output_format,
     output_file = basename(fichier),
     output_dir = dirname(fichier),
-    params = list(revision = revision, logo = logo_rendu),
+    params = list(
+      revision = revision,
+      logo = logo_rendu,
+      decoration = decoration_rendu
+    ),
     envir = new.env(parent = baseenv()),
     quiet = TRUE
   )

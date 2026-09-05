@@ -1,60 +1,29 @@
 # Comprendre sa scolarité. Travailler les mathématiques.
 
 **eduschool** cartographie la scolarité des collégiens et lycéens en France et
-propose des outils pour réviser et s'entraîner en mathématiques.
+propose des outils simples pour réviser, s'entraîner et progresser en
+mathématiques.
 
-:::: {.edu-hero}
-::: {.edu-hero-main}
-**PARCOURS SCOLAIRE · MATHÉMATIQUES · R**
+**[Explorer un parcours →](articles/parcours-scolaires.html)** ·
+**[Réviser les maths →](articles/fiches-revision-mathematiques.html)**
 
-Des données structurées pour comprendre les parcours scolaires, explorer les
-programmes et accompagner le travail en mathématiques.
+De la 6e à la Terminale · données structurées · outils R · projet open source
+et collaboratif.
 
-[**Explorer un parcours →**](articles/parcours-scolaires.html){.edu-btn .edu-btn-primary}
-[**Réviser les maths →**](articles/fiches-revision-mathematiques.html){.edu-btn .edu-btn-math}
-:::
+---
 
-::: {.edu-hero-side}
-### Collège → Lycée → Après le bac
+## Les quatre portes d'entrée
 
-Comprendre les étapes, les choix d'orientation et les poursuites d'études sans
-transformer le package en encyclopédie scolaire générale.
-:::
-::::
+| | |
+|:--|:--|
+| ![Parcours scolaire](identite/parcours.png) **[Parcours scolaire](articles/parcours-scolaires.html)** — Niveaux, cycles, voies, séries, options, spécialités, orientation et Parcoursup. | ![Mathématiques](identite/maths.png) **[Mathématiques](articles/fiches-revision-mathematiques.html)** — Programmes, capacités, fiches de révision, exercices et ressources. |
+| ![Créer et partager](identite/partage.png) **[Créer et partager](articles/contribuer-et-partager.html)** — Adapter les outils, proposer des corrections et mutualiser fiches et exercices. | ![Données et R](identite/donnees.png) **[Données et R](reference/index.html)** — Une API simple pour explorer les données, produire des documents et aller plus loin. |
 
-:::: {.edu-grid .edu-grid-4}
-::: {.edu-card .edu-card-path}
-### [↗ Parcours scolaire](articles/parcours-scolaires.html)
-
-Niveaux et cycles, voies et séries, options, spécialités, orientation et
-Parcoursup.
-:::
-
-::: {.edu-card .edu-card-math}
-### [∑ Mathématiques](articles/fiches-revision-mathematiques.html)
-
-Programmes, capacités, fiches de révision, exercices et ressources pour
-progresser.
-:::
-
-::: {.edu-card .edu-card-data}
-### [R · Données et API](reference/index.html)
-
-Une API simple pour explorer les données, avec le mini-SI disponible pour aller
-plus loin.
-:::
-
-::: {.edu-card .edu-card-understand}
-### [⚙ Comprendre eduschool](articles/rentrer-en-profondeur-dans-eduschool.html)
-
-Architecture relationnelle, contrôles, conventions et fonctionnement interne du
-package.
-:::
-::::
+---
 
 ## Commencer avec quelques verbes
 
-L'API principale privilégie des verbes courts, faciles à lire et à combiner :
+L'API principale privilégie des verbes courts et faciles à lire :
 
 ```r
 library(eduschool)
@@ -66,52 +35,41 @@ revision("6E")
 exercices("6E", n = 5)
 ```
 
-Les fonctions détaillées restent disponibles : cette façade simplifie l'entrée
-dans `eduschool` sans fermer l'accès au système relationnel sous-jacent.
+Les fonctions détaillées restent disponibles. Cette façade simplifie l'entrée
+dans `eduschool` sans masquer le système relationnel sous-jacent.
 
-:::: {.edu-grid .edu-grid-3}
-::: {.edu-panel}
-### Élèves
+---
 
-Comprendre un parcours, retrouver les notions essentielles et s'entraîner en
-mathématiques.
-:::
+## Pour qui ?
 
-::: {.edu-panel}
-### Parents
+| Élèves | Parents | Utilisateurs R et enseignants |
+|:--|:--|:--|
+| Réviser, s'entraîner et comprendre son parcours. | Suivre la scolarité et comprendre les choix d'orientation. | Interroger les référentiels, produire et adapter des supports. |
 
-Suivre la scolarité, comprendre les choix d'orientation et disposer de supports
-synthétiques.
-:::
+---
 
-::: {.edu-panel}
-### Utilisateurs R
+## Créer, adapter, partager
 
-Interroger les référentiels, produire des documents, contrôler les relations et
-adapter les outils.
-:::
-::::
+![Partager les connaissances](identite/connaissances.png)
 
-## Créer et partager
+`eduschool` est un projet open source. Son architecture doit permettre de
+construire progressivement ses propres fiches et exercices avec les mêmes
+briques que celles utilisées par le package.
 
-`eduschool` est open source. La prochaine étape fonctionnelle consiste à rendre
-la création de supports aussi simple que leur consultation : composer une fiche,
-ajouter une notion, une formule, un graphique ou des exercices, puis produire le
-document avec une API publique commune aux fiches du package et aux fiches
-personnelles.
-
-::: {.edu-share}
 **Utiliser → créer → adapter → partager**
 
-Corrections de données, ressources, fiches, exercices, visualisations et
-améliorations de l'API peuvent être mutualisés.
+Les corrections de données, ressources, fiches, exercices, visualisations et
+améliorations de l'API ont vocation à être mutualisées.
 
-[**Contribuer au projet →**](articles/contribuer-et-partager.html){.edu-btn .edu-btn-outline}
-:::
+**[Voir comment contribuer →](articles/contribuer-et-partager.html)**
+
+---
 
 ## Un projet volontairement centré
 
-L'architecture d'`eduschool` est générique et peut accueillir d'autres matières.
-Le projet lui-même reste néanmoins centré sur les **mathématiques** pour ses
-fiches de révision et ses exercices. Cette limite volontaire permet de garder un
-outil cohérent, maintenable et réellement utile.
+![Mathématiques](identite/compas.png)
+
+L'architecture d'`eduschool` peut accueillir d'autres disciplines. Le projet
+reste néanmoins centré sur les **mathématiques** pour ses fiches de révision et
+ses exercices. Cette limite volontaire permet de garder un outil cohérent,
+maintenable et réellement utile.

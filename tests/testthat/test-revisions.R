@@ -45,6 +45,7 @@ test_that("la charte identifie la fiche de 6e comme cycle 3", {
   expect_identical(x$matiere, "Math\u00e9matiques")
   expect_match(x$couleur, "^#[0-9A-Fa-f]{6}$")
   expect_true(nzchar(x$logo) || identical(x$logo, ""))
+  expect_true(nzchar(x$decoration) || identical(x$decoration, ""))
 })
 
 test_that("la palette contient les cycles principaux", {
