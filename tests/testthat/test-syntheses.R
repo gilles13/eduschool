@@ -88,3 +88,42 @@ test_that("genere_resume limite themes et notions", {
 test_that("genere_resume signale une matiere inconnue", {
   expect_error(genere_resume("6E", matiere = "INCONNUE"), "Aucune matiere")
 })
+
+test_that("la seconde commune exclut la grille specifique STHR", {
+  h = horaires_niveau("2GT")
+  maths = h[h$enseignement_id == "MATH_2GT", , drop = FALSE]
+  expect_equal(nrow(maths), 1L)
+  expect_equal(maths$volume, "4")
+  expect_true(all(h$portee == "COMMUN"))
+})
+
+test_that("la seconde STHR utilise sa grille propre", {
+  h = horaires_niveau("2GT", serie_id = "STHR")
+  maths = h[h$enseignement_id == "MATH_2GT", , drop = FALSE]
+  expect_equal(nrow(maths), 1L)
+  expect_equal(maths$volume, "3")
+  expect_true(all(h$serie_id == "STHR"))
+  expect_true(all(h$portee %in% c("GRILLE_SERIE", "COMPLEMENT_SERIE")))
+  expect_false("SES" %in% h$enseignement_id)
+  expect_false("SNT" %in% h$enseignement_id)
+})
+
+test_that("les niveaux technologiques exigent une serie", {
+  expect_error(horaires_niveau("1T"), "Precisez `serie_id`")
+  h = horaires_niveau("1T", serie_id = "STMG")
+  expect_gt(nrow(h), 0L)
+  expect_true(all(h$serie_id == "STMG"))
+})
+
+test_that("la voie generale combine tronc commun et complements de serie", {
+  commun = horaires_niveau("1G")
+  complet = horaires_niveau("1G", serie_id = "G")
+  expect_true(all(commun$portee == "COMMUN"))
+  expect_gt(nrow(complet), nrow(commun))
+  expect_true(any(complet$portee == "COMPLEMENT_SERIE"))
+  expect_true("MATH_SPEC" %in% complet$enseignement_id)
+})
+
+test_that("une serie est validee pour son niveau", {
+  expect_error(horaires_niveau("2GT", serie_id = "STMG"), "n'est pas rattachee")
+})
