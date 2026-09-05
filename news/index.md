@@ -27,6 +27,9 @@
 - formalisation de la cible fonctionnelle : les futures fiches eduschool
   et les fiches personnelles devront utiliser la meme API publique de
   composition.
+- enrichissement visuel de l accueil et des fiches a partir d une
+  bibliotheque de pictogrammes, avec archivage des dix pistes graphiques
+  explorees sans figer encore le futur logo principal.
 
 ## eduschool 0.11.0
 

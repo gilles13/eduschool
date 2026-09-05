@@ -1,5 +1,7 @@
 # Mathématiques 6e – Fiche essentielle
 
+![](fiche-mathematiques-6e_files/figure-html/decoration-maths.png)
+
 Cycle 3  ·  Sixième
 
 Mathématiques

@@ -76,49 +76,39 @@
 <img src="logo.png" class="logo" alt=""><h1 id="comprendre-sa-scolarité-travailler-les-mathématiques">Comprendre sa scolarité. Travailler les mathématiques.<a class="anchor" aria-label="anchor" href="#comprendre-sa-scolarit%C3%A9-travailler-les-math%C3%A9matiques"></a>
 </h1>
 </div>
-<p><strong>eduschool</strong> cartographie la scolarité des collégiens et lycéens en France et propose des outils pour réviser et s’entraîner en mathématiques.</p>
-<div class="edu-hero">
-<div class="edu-hero-main">
-<p><strong>PARCOURS SCOLAIRE · MATHÉMATIQUES · R</strong></p>
-<p>Des données structurées pour comprendre les parcours scolaires, explorer les programmes et accompagner le travail en mathématiques.</p>
-<p><a href="articles/parcours-scolaires.html" class="edu-btn edu-btn-primary"><strong>Explorer un parcours →</strong></a> <a href="articles/fiches-revision-mathematiques.html" class="edu-btn edu-btn-math"><strong>Réviser les maths →</strong></a></p>
-</div>
-<div class="section level3 edu-hero-side">
-<h3 id="collège--lycée--après-le-bac">Collège → Lycée → Après le bac<a class="anchor" aria-label="anchor" href="#coll%C3%A8ge--lyc%C3%A9e--apr%C3%A8s-le-bac"></a>
-</h3>
-<p>Comprendre les étapes, les choix d’orientation et les poursuites d’études sans transformer le package en encyclopédie scolaire générale.</p>
-</div>
-</div>
-<div class="edu-grid edu-grid-4">
-<div class="section level3 edu-card edu-card-path">
-<h3 id="id_-parcours-scolaire">
-<a href="articles/parcours-scolaires.html">↗ Parcours scolaire</a><a class="anchor" aria-label="anchor" href="#id_-parcours-scolaire"></a>
-</h3>
-<p>Niveaux et cycles, voies et séries, options, spécialités, orientation et Parcoursup.</p>
-</div>
-<div class="section level3 edu-card edu-card-math">
-<h3 id="id_-mathématiques">
-<a href="articles/fiches-revision-mathematiques.html">∑ Mathématiques</a><a class="anchor" aria-label="anchor" href="#id_-math%C3%A9matiques"></a>
-</h3>
-<p>Programmes, capacités, fiches de révision, exercices et ressources pour progresser.</p>
-</div>
-<div class="section level3 edu-card edu-card-data">
-<h3 id="r--données-et-api">
-<a href="reference/index.html">R · Données et API</a><a class="anchor" aria-label="anchor" href="#r--donn%C3%A9es-et-api"></a>
-</h3>
-<p>Une API simple pour explorer les données, avec le mini-SI disponible pour aller plus loin.</p>
-</div>
-<div class="section level3 edu-card edu-card-understand">
-<h3 id="id_-comprendre-eduschool">
-<a href="articles/rentrer-en-profondeur-dans-eduschool.html">⚙ Comprendre eduschool</a><a class="anchor" aria-label="anchor" href="#id_-comprendre-eduschool"></a>
-</h3>
-<p>Architecture relationnelle, contrôles, conventions et fonctionnement interne du package.</p>
-</div>
+<p><strong>eduschool</strong> cartographie la scolarité des collégiens et lycéens en France et propose des outils simples pour réviser, s’entraîner et progresser en mathématiques.</p>
+<p><strong><a href="articles/parcours-scolaires.html">Explorer un parcours →</a></strong> · <strong><a href="articles/fiches-revision-mathematiques.html">Réviser les maths →</a></strong></p>
+<p>De la 6e à la Terminale · données structurées · outils R · projet open source et collaboratif.</p>
+<hr>
+<div class="section level2">
+<h2 id="les-quatre-portes-dentrée">Les quatre portes d’entrée<a class="anchor" aria-label="anchor" href="#les-quatre-portes-dentr%C3%A9e"></a>
+</h2>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<tbody>
+<tr>
+<td align="left">
+<img src="identite/parcours.png" alt="Parcours scolaire"><strong><a href="articles/parcours-scolaires.html">Parcours scolaire</a></strong> — Niveaux, cycles, voies, séries, options, spécialités, orientation et Parcoursup.</td>
+<td align="left">
+<img src="identite/maths.png" alt="Mathématiques"><strong><a href="articles/fiches-revision-mathematiques.html">Mathématiques</a></strong> — Programmes, capacités, fiches de révision, exercices et ressources.</td>
+</tr>
+<tr>
+<td align="left">
+<img src="identite/partage.png" alt="Créer et partager"><strong><a href="articles/contribuer-et-partager.html">Créer et partager</a></strong> — Adapter les outils, proposer des corrections et mutualiser fiches et exercices.</td>
+<td align="left">
+<img src="identite/donnees.png" alt="Données et R"><strong><a href="reference/index.html">Données et R</a></strong> — Une API simple pour explorer les données, produire des documents et aller plus loin.</td>
+</tr>
+</tbody>
+</table>
+<hr>
 </div>
 <div class="section level2">
 <h2 id="commencer-avec-quelques-verbes">Commencer avec quelques verbes<a class="anchor" aria-label="anchor" href="#commencer-avec-quelques-verbes"></a>
 </h2>
-<p>L’API principale privilégie des verbes courts, faciles à lire et à combiner :</p>
+<p>L’API principale privilégie des verbes courts et faciles à lire :</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span>
 <span></span>
@@ -127,39 +117,50 @@
 <span><span class="fu"><a href="reference/programme.html">programme</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/revision.html">revision</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/exercices.html">exercices</a></span><span class="op">(</span><span class="st">"6E"</span>, n <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
-<p>Les fonctions détaillées restent disponibles : cette façade simplifie l’entrée dans <code>eduschool</code> sans fermer l’accès au système relationnel sous-jacent.</p>
-<div class="edu-grid edu-grid-3">
-<div class="section level3 edu-panel">
-<h3 id="élèves">Élèves<a class="anchor" aria-label="anchor" href="#%C3%A9l%C3%A8ves"></a>
-</h3>
-<p>Comprendre un parcours, retrouver les notions essentielles et s’entraîner en mathématiques.</p>
-</div>
-<div class="section level3 edu-panel">
-<h3 id="parents">Parents<a class="anchor" aria-label="anchor" href="#parents"></a>
-</h3>
-<p>Suivre la scolarité, comprendre les choix d’orientation et disposer de supports synthétiques.</p>
-</div>
-<div class="section level3 edu-panel">
-<h3 id="utilisateurs-r">Utilisateurs R<a class="anchor" aria-label="anchor" href="#utilisateurs-r"></a>
-</h3>
-<p>Interroger les référentiels, produire des documents, contrôler les relations et adapter les outils.</p>
-</div>
-</div>
+<p>Les fonctions détaillées restent disponibles. Cette façade simplifie l’entrée dans <code>eduschool</code> sans masquer le système relationnel sous-jacent.</p>
+<hr>
 </div>
 <div class="section level2">
-<h2 id="créer-et-partager">Créer et partager<a class="anchor" aria-label="anchor" href="#cr%C3%A9er-et-partager"></a>
+<h2 id="pour-qui-">Pour qui ?<a class="anchor" aria-label="anchor" href="#pour-qui-"></a>
 </h2>
-<p><code>eduschool</code> est open source. La prochaine étape fonctionnelle consiste à rendre la création de supports aussi simple que leur consultation : composer une fiche, ajouter une notion, une formule, un graphique ou des exercices, puis produire le document avec une API publique commune aux fiches du package et aux fiches personnelles.</p>
-<div class="edu-share">
-<p><strong>Utiliser → créer → adapter → partager</strong></p>
-<p>Corrections de données, ressources, fiches, exercices, visualisations et améliorations de l’API peuvent être mutualisés.</p>
-<p><a href="articles/contribuer-et-partager.html" class="edu-btn edu-btn-outline"><strong>Contribuer au projet →</strong></a></p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th align="left">Élèves</th>
+<th align="left">Parents</th>
+<th align="left">Utilisateurs R et enseignants</th>
+</tr></thead>
+<tbody><tr>
+<td align="left">Réviser, s’entraîner et comprendre son parcours.</td>
+<td align="left">Suivre la scolarité et comprendre les choix d’orientation.</td>
+<td align="left">Interroger les référentiels, produire et adapter des supports.</td>
+</tr></tbody>
+</table>
+<hr>
 </div>
+<div class="section level2">
+<h2 id="créer-adapter-partager">Créer, adapter, partager<a class="anchor" aria-label="anchor" href="#cr%C3%A9er-adapter-partager"></a>
+</h2>
+<div class="float">
+<img src="identite/connaissances.png" alt="Partager les connaissances"><div class="figcaption">Partager les connaissances</div>
+</div>
+<p><code>eduschool</code> est un projet open source. Son architecture doit permettre de construire progressivement ses propres fiches et exercices avec les mêmes briques que celles utilisées par le package.</p>
+<p><strong>Utiliser → créer → adapter → partager</strong></p>
+<p>Les corrections de données, ressources, fiches, exercices, visualisations et améliorations de l’API ont vocation à être mutualisées.</p>
+<p><strong><a href="articles/contribuer-et-partager.html">Voir comment contribuer →</a></strong></p>
+<hr>
 </div>
 <div class="section level2">
 <h2 id="un-projet-volontairement-centré">Un projet volontairement centré<a class="anchor" aria-label="anchor" href="#un-projet-volontairement-centr%C3%A9"></a>
 </h2>
-<p>L’architecture d’<code>eduschool</code> est générique et peut accueillir d’autres matières. Le projet lui-même reste néanmoins centré sur les <strong>mathématiques</strong> pour ses fiches de révision et ses exercices. Cette limite volontaire permet de garder un outil cohérent, maintenable et réellement utile.</p>
+<div class="float">
+<img src="identite/compas.png" alt="Mathématiques"><div class="figcaption">Mathématiques</div>
+</div>
+<p>L’architecture d’<code>eduschool</code> peut accueillir d’autres disciplines. Le projet reste néanmoins centré sur les <strong>mathématiques</strong> pour ses fiches de révision et ses exercices. Cette limite volontaire permet de garder un outil cohérent, maintenable et réellement utile.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">
