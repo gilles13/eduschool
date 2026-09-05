@@ -21,7 +21,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.15.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,7 @@
     <li><a class="dropdown-item" href="../articles/mathematiques-2de.html">2de</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-1re-specialite.html">1re spécialité</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></li>
+    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Composer un DNB</a></li>
     <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-derivation-premiere.html">Dérivation — Première spécialité</a></li>
@@ -131,12 +132,29 @@ explicite reste possible :</p>
 <span>  <span class="fu"><a href="../reference/produire_fiche.html">produire_fiche</a></span><span class="op">(</span>fichier <span class="op">=</span> <span class="st">"ma_fiche"</span>, format <span class="op">=</span> <span class="st">"html"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
+<h3 id="composer-une-épreuve-de-brevet">Composer une épreuve de brevet<a class="anchor" aria-label="anchor" href="#composer-une-%C3%A9preuve-de-brevet"></a>
+</h3>
+<p>Le moteur d’examens suit la même logique de reproductibilité que les
+fiches. Une composition est d’abord produite, puis rédigée, avant son
+rendu :</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">sujet</span> <span class="op">=</span> <span class="fu"><a href="../reference/composer_examen.html">composer_examen</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="fl">2026</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">partie1</span> <span class="op">=</span> <span class="fu"><a href="../reference/rediger_examen.html">rediger_examen</a></span><span class="op">(</span><span class="va">sujet</span>, partie <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/produire_examen.html">produire_examen</a></span><span class="op">(</span><span class="va">partie1</span>, fichier <span class="op">=</span> <span class="st">"dnb-automatismes.pdf"</span><span class="op">)</span></span></code></pre></div>
+<p>Le corrigé correspondant utilise exactement la même variante :</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/produire_corrige_examen.html">produire_corrige_examen</a></span><span class="op">(</span><span class="va">partie1</span>, fichier <span class="op">=</span> <span class="st">"dnb-automatismes-corrige.pdf"</span><span class="op">)</span></span></code></pre></div>
+<p>La vignette <strong>Composer et produire un DNB de
+mathématiques</strong> décrit le modèle, la banque de gabarits et
+l’ajout progressif de nouvelles annales.</p>
+</div>
+<div class="section level3">
 <h3 id="duckdb-seulement-si-nécessaire">DuckDB seulement si nécessaire<a class="anchor" aria-label="anchor" href="#duckdb-seulement-si-n%C3%A9cessaire"></a>
 </h3>
 <p>Les consultations usuelles lisent directement les ressources du
 package. La couche DuckDB reste disponible pour les requêtes
 relationnelles plus libres.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">con</span> <span class="op">=</span> <span class="fu"><a href="../reference/ouvrir_base.html">ouvrir_base</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbListTables.html" class="external-link">dbListTables</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span>
 <span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbDisconnect.html" class="external-link">dbDisconnect</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span></code></pre></div>

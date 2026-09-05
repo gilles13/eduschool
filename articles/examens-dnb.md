@@ -1,0 +1,161 @@
+# Composer et produire un DNB de mathématiques
+
+`eduschool` sépare volontairement quatre étapes : le modèle officiel de
+l’épreuve, la composition pédagogique, la rédaction des questions et le
+rendu du document. Cette séparation permet d’enrichir la banque
+d’exercices sans modifier la mise en page et, inversement, de faire
+évoluer le PDF sans toucher aux référentiels mathématiques.
+
+## 1. Consulter la structure du DNB
+
+``` r
+
+structure_examen("DNB", 2026)
+```
+
+Pour la session 2026, le modèle distingue la partie d’automatismes et la
+partie de raisonnement. Les contraintes réglementaires sont conservées
+séparément des profils pédagogiques utilisés par `eduschool` pour
+composer un sujet.
+
+## 2. Composer un sujet reproductible
+
+``` r
+
+sujet = composer_examen(
+  "DNB",
+  session = 2026,
+  seed = 123
+)
+
+sujet
+```
+
+Le `seed` fixe la composition. Il doit être conservé lorsqu’un sujet est
+partagé ou archivé afin de pouvoir reconstruire exactement la même
+variante.
+
+## 3. Rédiger la partie 1
+
+``` r
+
+partie1 = rediger_examen(sujet, partie = 1)
+
+partie1$entete
+partie1$items[, c("ordre", "domaine", "enonce", "reponse")]
+partie1$ressources
+```
+
+La rédaction produit un objet intermédiaire. Les énoncés, réponses et
+corrections sont séparés des ressources graphiques. Une figure
+géométrique ou un programme Scratch est donc décrit par des données et
+un moteur de rendu, et non stocké sous forme d’image figée.
+
+## 4. Produire le PDF
+
+``` r
+
+produire_examen(
+  partie1,
+  fichier = "dnb-2026-partie1.pdf"
+)
+```
+
+Le rendu PDF utilise R Markdown, Pandoc et `pdflatex`. Les ressources
+sont dessinées par R dans des PDF vectoriels temporaires puis intégrées
+au document. Cette méthode permet de conserver des figures nettes à
+l’impression.
+
+Le corrigé repose sur le même objet :
+
+``` r
+
+produire_corrige_examen(
+  partie1,
+  fichier = "dnb-2026-partie1-corrige.pdf"
+)
+```
+
+Sujet et corrigé restent ainsi strictement cohérents.
+
+## 5. Rendre une ressource seule
+
+Les ressources peuvent être inspectées indépendamment du sujet :
+
+``` r
+
+x = rediger_examen(composer_examen("DNB", 2026, seed = 8), partie = 1)
+
+if (length(x$ressources)) {
+  produire_ressource_examen(
+    x$ressources[[1]],
+    fichier = "ressource.pdf"
+  )
+}
+```
+
+Les premiers moteurs gèrent un triangle avec angles, un rectangle coté,
+un schéma d’urne et une boucle Scratch. D’autres moteurs pourront être
+ajoutés pour les repères, courbes, tableaux, arbres de probabilités ou
+constructions plus complexes.
+
+## 6. Alimenter la banque avec les nouvelles épreuves
+
+La banque se trouve sous `inst/examens/` :
+
+- `gabarits_exercices.csv` décrit les familles d’exercices et leur
+  provenance ;
+- `gabarits_exercices_concepts.csv` relie les gabarits aux concepts
+  mathématiques ;
+- `gabarits_parametres.csv` décrit les plages de tirage ;
+- le code R n’intervient que lorsqu’une nouvelle famille nécessite un
+  nouveau générateur ou un nouveau moteur graphique.
+
+Lorsqu’une nouvelle épreuve officielle paraît, la démarche conseillée
+est donc :
+
+1.  identifier les familles déjà couvertes par la banque ;
+2.  enrichir leur traçabilité ou leurs paramètres lorsque le mécanisme
+    existe ;
+3.  ajouter un nouveau gabarit si la forme pédagogique est nouvelle ;
+4.  ajouter du code uniquement si le nouveau gabarit exige un calcul ou
+    un rendu qui n’existe pas encore ;
+5.  conserver la session et la source d’inspiration dans le référentiel.
+
+Cette organisation permet à `eduschool` d’accumuler progressivement
+l’expérience des annales sans transformer chaque nouvelle session en
+refonte du moteur.
+
+## Partie 2 : raisonner par exercice compose
+
+La partie 2 n’est pas construite comme une suite de questions
+independantes. `eduschool` utilise quelques gabarits d’exercices
+composes, chacun avec un contexte commun, plusieurs questions ordonnees
+et une ressource graphique partagee.
+
+``` r
+
+gabarits_exercices_composes("DNB", "PROBLEMES")
+
+generer_exercice_compose(
+    "GABC_DNB_GEOM_AMENAGEMENT",
+    seed = 123
+)
+
+sujet = composer_examen("DNB", 2026, seed = 123)
+partie2 = rediger_examen(sujet, partie = 2)
+produire_examen(partie2, "dnb-2026-partie2.pdf")
+```
+
+Les quatre familles initiales relient volontairement plusieurs notions :
+geometrie et grandeurs, fonctions et equations, statistiques et
+probabilites, calcul litteral et Scratch. Les concepts restent ceux du
+referentiel mathematique existant ; les tables d’examen ne les
+dupliquent pas.
+
+Les trois tables `gabarits_exercices_composes.csv`,
+`gabarits_exercices_questions.csv` et
+`gabarits_exercices_ressources.csv` suffisent a decrire cette couche.
+Lorsqu’une nouvelle annale suggere une famille interessante, on enrichit
+d’abord ces donnees. Un nouveau moteur R n’est necessaire que si la
+logique de generation ou le type de figure est reellement nouveau.

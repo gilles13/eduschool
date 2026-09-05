@@ -12,6 +12,8 @@
   : Rechercher des notions
 - [`colonnes_si()`](https://gilles13.github.io/eduschool/reference/colonnes_si.md)
   : Colonnes du mini-SI eduschool
+- [`composer_examen()`](https://gilles13.github.io/eduschool/reference/composer_examen.md)
+  : Composer un squelette d'examen
 - [`composition_exercice_math()`](https://gilles13.github.io/eduschool/reference/composition_exercice_math.md)
   : Composition pedagogique d'un type d'exercice
 - [`concepts_exercices_math()`](https://gilles13.github.io/eduschool/reference/concepts_exercices_math.md)
@@ -42,6 +44,10 @@
   : Enseignements optionnels au lycee general
 - [`erreurs_math()`](https://gilles13.github.io/eduschool/reference/erreurs_math.md)
   : Erreurs frequentes en mathematiques
+- [`examen()`](https://gilles13.github.io/eduschool/reference/examen.md)
+  : Decrire un examen
+- [`examens()`](https://gilles13.github.io/eduschool/reference/examens.md)
+  : Examens modelises
 - [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
@@ -55,6 +61,14 @@
   : Grandes filieres post-bac
 - [`formules_math()`](https://gilles13.github.io/eduschool/reference/formules_math.md)
   : Formules mathematiques essentielles
+- [`gabarit_examen()`](https://gilles13.github.io/eduschool/reference/gabarit_examen.md)
+  : Decrire un gabarit d'exercice
+- [`gabarit_exercice_compose()`](https://gilles13.github.io/eduschool/reference/gabarit_exercice_compose.md)
+  : Decrire un gabarit d'exercice compose
+- [`gabarits_examen()`](https://gilles13.github.io/eduschool/reference/gabarits_examen.md)
+  : Gabarits d'exercices d'examen
+- [`gabarits_exercices_composes()`](https://gilles13.github.io/eduschool/reference/gabarits_exercices_composes.md)
+  : Gabarits d'exercices composes
 - [`genere_resume()`](https://gilles13.github.io/eduschool/reference/genere_resume.md)
   : Generer un resume pedagogique lisible
 - [`generer_diagrammes_documentation()`](https://gilles13.github.io/eduschool/reference/generer_diagrammes_documentation.md)
@@ -63,6 +77,10 @@
   : Générer toute la documentation visuelle
 - [`generer_essentiel()`](https://gilles13.github.io/eduschool/reference/generer_essentiel.md)
   : Generer la fiche essentielle d'un niveau
+- [`generer_exercice_compose()`](https://gilles13.github.io/eduschool/reference/generer_exercice_compose.md)
+  : Instancier un exercice compose
+- [`generer_gabarit_examen()`](https://gilles13.github.io/eduschool/reference/generer_gabarit_examen.md)
+  : Instancier un gabarit d'examen
 - [`generer_revision()`](https://gilles13.github.io/eduschool/reference/generer_revision.md)
   : Generer une fiche de revision thematique
 - [`horaires_niveau()`](https://gilles13.github.io/eduschool/reference/horaires_niveau.md)
@@ -111,14 +129,20 @@
   : Afficher un contexte eduschool
 - [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
   : Produire le corrige d'une fiche HTML ou PDF
+- [`produire_corrige_examen()`](https://gilles13.github.io/eduschool/reference/produire_corrige_examen.md)
+  : Produire le corrige d'un examen redige
 - [`produire_diagramme_html()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_html.md)
   : Produire un diagramme HTML
 - [`produire_diagramme_svg()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_svg.md)
   : Produire un diagramme SVG
+- [`produire_examen()`](https://gilles13.github.io/eduschool/reference/produire_examen.md)
+  : Produire un examen redige en PDF
 - [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
   : Produire une fiche d'exercices HTML ou PDF
 - [`produire_frise_parcoursup_svg()`](https://gilles13.github.io/eduschool/reference/produire_frise_parcoursup_svg.md)
   : Produire une frise chronologique Parcoursup
+- [`produire_ressource_examen()`](https://gilles13.github.io/eduschool/reference/produire_ressource_examen.md)
+  : Produire une ressource graphique d'examen
 - [`produire_revision()`](https://gilles13.github.io/eduschool/reference/produire_revision.md)
   : Produire une fiche de revision HTML ou PDF
 - [`produire_schema_orientation_svg()`](https://gilles13.github.io/eduschool/reference/produire_schema_orientation_svg.md)
@@ -139,6 +163,8 @@
   [`libelle_niveau`](https://gilles13.github.io/eduschool/reference/rapports.md)
   [`libelle_capacite`](https://gilles13.github.io/eduschool/reference/rapports.md)
   : Produire des fiches et corrigés
+- [`rediger_examen()`](https://gilles13.github.io/eduschool/reference/rediger_examen.md)
+  : Rediger une partie d'un examen compose
 - [`relations_concepts_math()`](https://gilles13.github.io/eduschool/reference/relations_concepts_math.md)
   : Relations entre concepts mathematiques
 - [`relations_si()`](https://gilles13.github.io/eduschool/reference/relations_si.md)
@@ -157,6 +183,8 @@
   : Series technologiques disponibles
 - [`specialites_generales()`](https://gilles13.github.io/eduschool/reference/specialites_generales.md)
   : Enseignements de specialite de la voie generale
+- [`structure_examen()`](https://gilles13.github.io/eduschool/reference/structure_examen.md)
+  : Structure d'un examen
 - [`tables_si()`](https://gilles13.github.io/eduschool/reference/tables_si.md)
   : Tables du mini-SI eduschool
 - [`theme_eduschool()`](https://gilles13.github.io/eduschool/reference/theme_eduschool.md)

@@ -1,5 +1,97 @@
 # Changelog
 
+## eduschool 0.16.0
+
+- `ggplot2` devient une dependance directe pour les graphiques d examen
+  ; les figures composees de Partie 2 utilisent des marges explicites et
+  un clipping desactive pour eviter la troncature des labels.
+- Ameliore le rendu PDF des examens : reservation d espace avant les
+  questions et exercices pour limiter les coupures entre enonce et
+  ressource graphique.
+- Le gabarit statistique de la partie 2 presente desormais les
+  observations dans un diagramme annote plutot que comme une suite brute
+  de valeurs dans le texte.
+
+### Rendu graphique et PDF des examens
+
+- ajout d un moteur de ressources vectorielles pour figures
+  geometriques, schemas et premiers blocs Scratch ;
+- ajout de
+  [`produire_ressource_examen()`](https://gilles13.github.io/eduschool/reference/produire_ressource_examen.md)
+  pour inspecter ou reutiliser une ressource independamment du sujet ;
+- ajout de
+  [`produire_examen()`](https://gilles13.github.io/eduschool/reference/produire_examen.md)
+  et
+  [`produire_corrige_examen()`](https://gilles13.github.io/eduschool/reference/produire_corrige_examen.md)
+  pour assembler la partie redigee dans un PDF propre via R Markdown,
+  Pandoc et LaTeX ;
+- sujet et corrige reposent sur le meme objet intermediaire afin de
+  garantir leur coherence ;
+- ajout de la vignette `Composer et produire un DNB de mathematiques` et
+  mise a jour des vignettes de prise en main, exercices/revisions et
+  architecture.
+
+### Redaction de la partie 1 du DNB
+
+- extension de la banque d automatismes aux domaines geometrie,
+  probabilites, grandeurs et algorithmique ;
+
+- couverture de tous les domaines prevus par le profil eduschool de la
+  partie 1 du DNB 2026 ;
+
+- ajout de
+  [`rediger_examen()`](https://gilles13.github.io/eduschool/reference/rediger_examen.md)
+  pour instancier une partie composee en enonces, reponses et
+  corrections reproductibles ;
+
+- ajout de specifications declaratives de ressources pour les futures
+  figures, schemas et blocs Scratch ;
+
+- realignement du concept sur le gabarit effectivement selectionne afin
+  de garantir la coherence entre composition et enonce.
+
+- correction du gabarit d equation : calcul des solutions rationnelles
+  exactes, sans troncature ; les decimaux finis sont affiches avec une
+  virgule et les autres solutions sous forme de fraction irreductible ;
+
+### Banque de gabarits DNB
+
+- ajout d une banque relationnelle de gabarits parametriques pour les
+  automatismes du DNB ;
+- separation entre gabarit pedagogique, parametres de generation et
+  concepts mathematiques mobilises ;
+- tracabilite de chaque gabarit par origine, source et session d
+  inspiration afin de pouvoir enrichir la banque avec les nouvelles
+  annales ;
+- ajout de
+  [`gabarits_examen()`](https://gilles13.github.io/eduschool/reference/gabarits_examen.md),
+  [`gabarit_examen()`](https://gilles13.github.io/eduschool/reference/gabarit_examen.md)
+  et
+  [`generer_gabarit_examen()`](https://gilles13.github.io/eduschool/reference/generer_gabarit_examen.md)
+  ;
+- rattachement automatique d un `gabarit_id` compatible aux compositions
+  produites par
+  [`composer_examen()`](https://gilles13.github.io/eduschool/reference/composer_examen.md)
+  lorsque la banque le permet.
+
+### Premiers outils de composition d examens
+
+- ajout d un modele versionne de l epreuve de mathematiques du DNB 2026
+  ;
+- distinction entre contraintes officielles et profils pedagogiques
+  observes dans les sujets recents ;
+- ajout des verbes
+  [`examens()`](https://gilles13.github.io/eduschool/reference/examens.md),
+  [`examen()`](https://gilles13.github.io/eduschool/reference/examen.md),
+  [`structure_examen()`](https://gilles13.github.io/eduschool/reference/structure_examen.md)
+  et
+  [`composer_examen()`](https://gilles13.github.io/eduschool/reference/composer_examen.md)
+  ;
+- composition reproductible d un squelette d epreuve avec `seed`, en
+  deux parties et avec respect du bareme 6 + 14 points ;
+- anticipation des futurs rendus PDF avec des supports declares (figure,
+  graphique, tableau, Scratch).
+
 ## eduschool 0.15.0
 
 - Finalisation de la couverture mathématique fine de la seconde générale
@@ -470,3 +562,16 @@
 
 - ajout de la version 2026-2027 des horaires de terminale afin que les
   synthèses par défaut couvrent bien l’année scolaire courante.
+
+#### Exercices composes pour la partie 2 du DNB
+
+- Ajout d’une banque minimale de quatre gabarits multi-questions :
+  geometrie, fonctions, donnees et algorithmique.
+- Les questions d’un meme exercice peuvent reutiliser un resultat
+  precedent et mobilisent plusieurs concepts du referentiel existant.
+- [`composer_examen()`](https://gilles13.github.io/eduschool/reference/composer_examen.md)
+  et
+  [`rediger_examen()`](https://gilles13.github.io/eduschool/reference/rediger_examen.md)
+  savent maintenant construire entierement la partie 2 du DNB 2026.
+- Quatre nouveaux moteurs vectoriels produisent plan geometrique,
+  courbes affines, diagramme statistique et programme Scratch.

@@ -43,6 +43,8 @@ Fiches de revision, ressources et outils pedagogiques.
   spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md):
 - [Mathématiques — Terminale
   spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md):
+- [Composer et produire un DNB de
+  mathématiques](https://gilles13.github.io/eduschool/articles/examens-dnb.md):
 - [Fiches de révision –
   Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md):
 - [Mathématiques 6e – Fiche

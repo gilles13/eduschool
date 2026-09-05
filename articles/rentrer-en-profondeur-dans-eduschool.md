@@ -19,8 +19,9 @@ des données et des métadonnées réellement installées avec `eduschool`.
 ## 1. Le principe : des CSV simples, un modèle explicite
 
 Les données sont rangées par domaine sous `inst/` : référentiels,
-enseignements, programmes, documentation, exercices et révisions. Elles
-restent donc lisibles avec les outils les plus simples possibles :
+enseignements, programmes, documentation, exercices, révisions et
+examens. Elles restent donc lisibles avec les outils les plus simples
+possibles :
 
 ``` r
 
@@ -138,7 +139,7 @@ knitr::kable(
 | options | enseignements | option_id,niveau_id | 13 | 7 |
 | modeles | exercices | modele_id | 5 | 7 |
 | modeles_capacites | exercices | modele_id,capacite_id | 9 | 2 |
-| sources | metadata | source_id | 36 | 8 |
+| sources | metadata | source_id | 38 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 135 | 5 |
 | programme_enseignements | programmes | programme_id,enseignement_id | 44 | 2 |
@@ -178,6 +179,16 @@ knitr::kable(
 | types_exercices_math | mathematiques | type_exercice_id | 90 | 7 |
 | types_exercices_concepts_math | mathematiques | type_exercice_id,concept_id | 254 | 3 |
 | types_exercices_methodes_math | mathematiques | type_exercice_id,methode_id | 109 | 3 |
+| examens | examens | examen_id | 1 | 10 |
+| parties_examen | examens | partie_id | 2 | 12 |
+| profils_examen | examens | profil_id | 14 | 10 |
+| profils_examen_concepts | examens | profil_id,concept_id | 36 | 3 |
+| gabarits_exercices | examens | gabarit_id | 13 | 13 |
+| gabarits_exercices_concepts | examens | gabarit_id,concept_id | 14 | 3 |
+| gabarits_parametres | examens | gabarit_id,parametre | 31 | 7 |
+| gabarits_exercices_composes | examens | gabarit_compose_id | 4 | 13 |
+| gabarits_exercices_questions | examens | gabarit_compose_id,question_id | 15 | 8 |
+| gabarits_exercices_ressources | examens | gabarit_compose_id,ressource_id | 4 | 5 |
 
 Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
 dans cette vignette lors de sa reconstruction.
@@ -278,9 +289,9 @@ Les contrôles structurels sont directement dérivés des métadonnées :
 
 resume_controles_si(niveau = "structure")
 #>            type controles_total controles_ok
-#> 1 cle_etrangere              88           88
-#> 2  cle_primaire              51           51
-#> 3      colonnes              51           51
+#> 1 cle_etrangere             102          102
+#> 2  cle_primaire              61           61
+#> 3      colonnes              61           61
 #> 4       domaine               1            1
 ```
 
@@ -325,9 +336,9 @@ Le contrôle complet réunit les deux niveaux :
 
 resume_controles_si()
 #>                      type controles_total controles_ok
-#> 1           cle_etrangere              88           88
-#> 2            cle_primaire              51           51
-#> 3                colonnes              51           51
+#> 1           cle_etrangere             102          102
+#> 2            cle_primaire              61           61
+#> 3                colonnes              61           61
 #> 4                 domaine               1            1
 #> 5     semantique_horaires               3            3
 #> 6 semantique_niveau_serie               1            1
@@ -372,6 +383,37 @@ Le flux recommandé est donc :
 
 Cette séparation permet de corriger une règle une seule fois dans le
 package et d’en faire bénéficier tous les usages.
+
+## 8 bis. De la composition au PDF d’examen
+
+Le moteur d’examens conserve une frontière nette entre contenu et
+présentation :
+
+``` text
+inst/examens/*.csv
+        |
+        v
+composer_examen()
+        |
+        v
+rediger_examen()
+        |
+        +--> énoncés / réponses / corrections
+        |
+        +--> ressources déclaratives
+                  |
+                  v
+        produire_ressource_examen()
+                  |
+                  v
+        produire_examen() / produire_corrige_examen()
+```
+
+Les ressources intermédiaires sont produites en vectoriel lorsque le
+format le permet. Le template PDF ne contient donc pas la logique
+mathématique : il assemble un objet déjà rédigé et des figures déjà
+calculées. Cette séparation facilitera l’ajout de nouveaux rendus et de
+nouvelles familles de questions.
 
 ## 9. Ajouter une nouvelle table sans fragiliser le SI
 

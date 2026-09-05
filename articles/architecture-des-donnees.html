@@ -21,7 +21,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.15.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,7 @@
     <li><a class="dropdown-item" href="../articles/mathematiques-2de.html">2de</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-1re-specialite.html">1re spécialité</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></li>
+    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Composer un DNB</a></li>
     <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-derivation-premiere.html">Dérivation — Première spécialité</a></li>
@@ -102,7 +103,9 @@ distribuées sont conservées sous <code>inst/</code> et retrouvées avec
 <h2 id="couches-principales">Couches principales<a class="anchor" aria-label="anchor" href="#couches-principales"></a>
 </h2>
 <p>Le flux logique est : programme officiel → capacité → notion →
-prérequis → rappel → modèle d’exercice → exercice → document. Cette
+prérequis → rappel → modèle d’exercice → exercice → document. Pour les
+examens, une couche supplémentaire relie profils d’épreuve, gabarits
+paramétriques et ressources graphiques avant le rendu du sujet. Cette
 séparation permet notamment :</p>
 <ul>
 <li>de conserver les sources réglementaires distinctes des contenus
@@ -111,8 +114,26 @@ pédagogiques ;</li>
 <li>d’enrichir les rappels et les exercices sans recopier les programmes
 ;</li>
 <li>de produire des vues synthétiques par niveau sans en faire une
-nouvelle source de vérité.</li>
+nouvelle source de vérité ;</li>
+<li>de versionner les examens par session tout en réutilisant les
+concepts et générateurs stables.</li>
 </ul>
+</div>
+<div class="section level2">
+<h2 id="couche-examens">Couche examens<a class="anchor" aria-label="anchor" href="#couche-examens"></a>
+</h2>
+<p>Les données d’examen sont rangées sous <code>inst/examens/</code>.
+Elles séparent :</p>
+<ul>
+<li>les contraintes et parties d’une session ;</li>
+<li>les profils de composition eduschool ;</li>
+<li>les gabarits d’exercices et leurs paramètres ;</li>
+<li>les liens vers les concepts mathématiques ;</li>
+<li>les ressources graphiques, qui sont générées à la demande et ne sont
+pas stockées comme images fixes.</li>
+</ul>
+<p>Cette couche permet d’enrichir la banque avec de nouvelles annales
+sans dupliquer le référentiel mathématique.</p>
 </div>
 <div class="section level2">
 <h2 id="csv-dabord-duckdb-ensuite">CSV d’abord, DuckDB ensuite<a class="anchor" aria-label="anchor" href="#csv-dabord-duckdb-ensuite"></a>

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.15.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +37,7 @@
     <li><a class="dropdown-item" href="../articles/mathematiques-2de.html">2de</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-1re-specialite.html">1re spécialité</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></li>
+    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Composer un DNB</a></li>
     <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-derivation-premiere.html">Dérivation — Première spécialité</a></li>
@@ -63,6 +64,46 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.16.0" id="eduschool-0160">eduschool 0.16.0<a class="anchor" aria-label="anchor" href="#eduschool-0160"></a></h2>
+<ul><li>
+<code>ggplot2</code> devient une dependance directe pour les graphiques d examen ; les figures composees de Partie 2 utilisent des marges explicites et un clipping desactive pour eviter la troncature des labels.</li>
+<li>Ameliore le rendu PDF des examens : reservation d espace avant les questions et exercices pour limiter les coupures entre enonce et ressource graphique.</li>
+<li>Le gabarit statistique de la partie 2 presente desormais les observations dans un diagramme annote plutot que comme une suite brute de valeurs dans le texte.</li>
+</ul><div class="section level3">
+<h3 id="rendu-graphique-et-pdf-des-examens-0-16-0">Rendu graphique et PDF des examens<a class="anchor" aria-label="anchor" href="#rendu-graphique-et-pdf-des-examens-0-16-0"></a></h3>
+<ul><li>ajout d un moteur de ressources vectorielles pour figures geometriques, schemas et premiers blocs Scratch ;</li>
+<li>ajout de <code><a href="../reference/produire_ressource_examen.html">produire_ressource_examen()</a></code> pour inspecter ou reutiliser une ressource independamment du sujet ;</li>
+<li>ajout de <code><a href="../reference/produire_examen.html">produire_examen()</a></code> et <code><a href="../reference/produire_corrige_examen.html">produire_corrige_examen()</a></code> pour assembler la partie redigee dans un PDF propre via R Markdown, Pandoc et LaTeX ;</li>
+<li>sujet et corrige reposent sur le meme objet intermediaire afin de garantir leur coherence ;</li>
+<li>ajout de la vignette <code>Composer et produire un DNB de mathematiques</code> et mise a jour des vignettes de prise en main, exercices/revisions et architecture.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="redaction-de-la-partie-du-dnb-0-16-0">Redaction de la partie 1 du DNB<a class="anchor" aria-label="anchor" href="#redaction-de-la-partie-du-dnb-0-16-0"></a></h3>
+<ul><li><p>extension de la banque d automatismes aux domaines geometrie, probabilites, grandeurs et algorithmique ;</p></li>
+<li><p>couverture de tous les domaines prevus par le profil eduschool de la partie 1 du DNB 2026 ;</p></li>
+<li><p>ajout de <code><a href="../reference/rediger_examen.html">rediger_examen()</a></code> pour instancier une partie composee en enonces, reponses et corrections reproductibles ;</p></li>
+<li><p>ajout de specifications declaratives de ressources pour les futures figures, schemas et blocs Scratch ;</p></li>
+<li><p>realignement du concept sur le gabarit effectivement selectionne afin de garantir la coherence entre composition et enonce.</p></li>
+<li><p>correction du gabarit d equation : calcul des solutions rationnelles exactes, sans troncature ; les decimaux finis sont affiches avec une virgule et les autres solutions sous forme de fraction irreductible ;</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="banque-de-gabarits-dnb-0-16-0">Banque de gabarits DNB<a class="anchor" aria-label="anchor" href="#banque-de-gabarits-dnb-0-16-0"></a></h3>
+<ul><li>ajout d une banque relationnelle de gabarits parametriques pour les automatismes du DNB ;</li>
+<li>separation entre gabarit pedagogique, parametres de generation et concepts mathematiques mobilises ;</li>
+<li>tracabilite de chaque gabarit par origine, source et session d inspiration afin de pouvoir enrichir la banque avec les nouvelles annales ;</li>
+<li>ajout de <code><a href="../reference/gabarits_examen.html">gabarits_examen()</a></code>, <code><a href="../reference/gabarit_examen.html">gabarit_examen()</a></code> et <code><a href="../reference/generer_gabarit_examen.html">generer_gabarit_examen()</a></code> ;</li>
+<li>rattachement automatique d un <code>gabarit_id</code> compatible aux compositions produites par <code><a href="../reference/composer_examen.html">composer_examen()</a></code> lorsque la banque le permet.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="premiers-outils-de-composition-d-examens-0-16-0">Premiers outils de composition d examens<a class="anchor" aria-label="anchor" href="#premiers-outils-de-composition-d-examens-0-16-0"></a></h3>
+<ul><li>ajout d un modele versionne de l epreuve de mathematiques du DNB 2026 ;</li>
+<li>distinction entre contraintes officielles et profils pedagogiques observes dans les sujets recents ;</li>
+<li>ajout des verbes <code><a href="../reference/examens.html">examens()</a></code>, <code><a href="../reference/examen.html">examen()</a></code>, <code><a href="../reference/structure_examen.html">structure_examen()</a></code> et <code><a href="../reference/composer_examen.html">composer_examen()</a></code> ;</li>
+<li>composition reproductible d un squelette d epreuve avec <code>seed</code>, en deux parties et avec respect du bareme 6 + 14 points ;</li>
+<li>anticipation des futurs rendus PDF avec des supports declares (figure, graphique, tableau, Scratch).</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.15.0" id="eduschool-0150">eduschool 0.15.0<a class="anchor" aria-label="anchor" href="#eduschool-0150"></a></h2>
 <ul><li><p>Finalisation de la couverture mathématique fine de la seconde générale et technologique pour le programme 2026 : logique, algorithmique, nombres et algèbre, vecteurs et droites, fonctions, statistiques et probabilités.</p></li>
@@ -330,7 +371,15 @@
 <li><p>ajout de thèmes, capacités et notions documentaires pour les disciplines hors mathématiques ;</p></li>
 <li><p><code><a href="../reference/resume_niveau.html">resume_niveau()</a></code> distingue désormais les programmes par enseignement, ce qui évite de mélanger histoire-géographie et HGGSP, par exemple ;</p></li>
 <li><p>ajout de la version 2026-2027 des horaires de terminale afin que les synthèses par défaut couvrent bien l’année scolaire courante.</p></li>
+</ul><div class="section level4">
+<h4 id="exercices-composes-pour-la-partie-du-dnb-0-10-0">Exercices composes pour la partie 2 du DNB<a class="anchor" aria-label="anchor" href="#exercices-composes-pour-la-partie-du-dnb-0-10-0"></a></h4>
+<ul><li>Ajout d’une banque minimale de quatre gabarits multi-questions : geometrie, fonctions, donnees et algorithmique.</li>
+<li>Les questions d’un meme exercice peuvent reutiliser un resultat precedent et mobilisent plusieurs concepts du referentiel existant.</li>
+<li>
+<code><a href="../reference/composer_examen.html">composer_examen()</a></code> et <code><a href="../reference/rediger_examen.html">rediger_examen()</a></code> savent maintenant construire entierement la partie 2 du DNB 2026.</li>
+<li>Quatre nouveaux moteurs vectoriels produisent plan geometrique, courbes affines, diagramme statistique et programme Scratch.</li>
 </ul></div>
+</div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
 
