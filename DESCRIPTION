@@ -1,14 +1,16 @@
 Package: eduschool
 Type: Package
-Title: Référentiels scolaires français et outils de révision
-Version: 0.11.0
+Title: Cartographie de la scolarité française et outils de mathématiques
+Version: 0.12.0
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
-Description: Fournit des référentiels structurés sur les programmes scolaires
-    français, une base documentaire pédagogique et des outils simples pour
-    générer des exercices et des fiches de révision. Les données sont stockées
-    sous forme de fichiers CSV et Markdown installés avec le package. DuckDB
-    peut être utilisé comme moteur relationnel sans être requis pour les
-    consultations simples. Un complément à https://eduscol.education.gouv.fr.
+Description: Cartographie la scolarité des collégiens et lycéens en France :
+    niveaux, cycles, voies, séries, enseignements, programmes, orientation et
+    poursuites d'études. Le package propose en complément des fiches de révision
+    et des exercices centrés sur les mathématiques. Les données sont structurées
+    dans des fichiers CSV et peuvent être interrogées simplement depuis R ou,
+    pour les usages relationnels avancés, avec DuckDB. L'architecture reste
+    extensible à d'autres disciplines sans en faire l'objectif principal du
+    projet. eduschool complète les sources officielles sans s'y substituer.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1.0)

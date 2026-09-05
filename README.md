@@ -4,105 +4,97 @@
   <img src="man/figures/logo.png" alt="Logo eduschool" width="360">
 </p>
 
-`eduschool` permet de consulter simplement les programmes scolaires français,
-les notions essentielles d'un niveau et de générer des exercices de révision.
+> **Comprendre sa scolarité. Travailler les mathématiques.**
+
+`eduschool` cartographie la scolarité des collégiens et lycéens en France et
+propose des outils pour réviser et s'entraîner en mathématiques.
+
+Le projet repose sur des données structurées et interconnectées : niveaux,
+cycles, voies, séries, enseignements, programmes, orientation et poursuites
+d'études. Les contenus pédagogiques produits par `eduschool` sont volontairement
+centrés sur les mathématiques. L'architecture reste assez générique pour être
+étendue à d'autres disciplines par des contributeurs, sans que cela devienne
+l'objectif principal du package.
 
 ## Installation
 
 ```r
 install.packages("remotes")
 remotes::install_github("gilles13/eduschool")
-```
-
-Puis :
-
-```r
 library(eduschool)
 ```
 
-## Commencer en quelques commandes
+## Une API simple, orientée usages
 
-Obtenir une vue synthétique d'une classe :
-
-```r
-genere_resume("6E")
-```
-
-Se concentrer sur une matière :
+L'interface principale de `eduschool` s'organise progressivement autour de
+quelques verbes faciles à mémoriser :
 
 ```r
-genere_resume("6E", matiere = "maths")
+parcours("3E")
+orientation("2GT")
+programme("6E")
+revision("6E")
+exercices("6E", n = 5)
 ```
 
-La même interface permet d'explorer le lycée, par exemple la seconde générale
-et technologique :
+Les fonctions détaillées historiques restent disponibles pour explorer les
+référentiels, contrôler le système relationnel ou personnaliser les productions.
+La simplification de l'API ne masque donc pas les données : elle offre une porte
+d'entrée plus naturelle.
+
+## Deux axes
+
+### Cartographier la scolarité
+
+`eduschool` aide à comprendre où se situe un élève et quelles bifurcations sont
+possibles : passage du collège au lycée, voies générale, technologique et
+professionnelle, spécialités et options, orientation et poursuites post-bac.
 
 ```r
-genere_resume("2GT")
-genere_resume("2GT", matiere = "maths")
+parcours("3E")
+orientation("3E")
+orientation("2GT")
 ```
 
-Générer immédiatement quelques exercices et afficher leurs énoncés :
+### Travailler les mathématiques
+
+Le package relie programmes, capacités, notions, fiches de révision et exercices.
 
 ```r
-generer_fiche(
-  niveau_id = "6E",
-  capacite_id = "ITM_MAT_C3_6E_C09",
-  n = 3,
-  difficulte = 1,
-  seed = 2026,
-  afficher = TRUE
-)
+programme("6E", "MAT")
+revision("6E")
+exercices("6E", n = 5, seed = 2026)
 ```
 
-Pour créer directement une fiche imprimable, la sortie peut être envoyée dans
-`produire_fiche()` avec le pipe natif :
+Les fonctions de production HTML/PDF restent disponibles pour transformer ces
+objets en supports imprimables.
 
-```r
-generer_fiche(
-  niveau_id = "6E",
-  capacite_id = "ITM_MAT_C3_6E_C09",
-  n = 5,
-  seed = 2026
-) |>
-  produire_fiche(format = "auto")
-```
+## Créer, mutualiser, partager
 
-Le nom du fichier est construit automatiquement à partir du niveau et de la
-capacité. Il reste possible de fournir un chemin explicite avec l'argument
-`fichier`. Avec `format = "auto"`, `eduschool` produit un PDF si LaTeX est
-disponible et un fichier HTML sinon. Le même principe s'applique au corrigé avec
-`produire_corrige()`.
+`eduschool` est un projet open source. Son ambition n'est pas seulement de
+publier des données et des fiches, mais aussi de fournir progressivement des
+briques simples permettant à chacun de composer ses propres supports de
+révision et d'exercices.
 
-## Réviser les mathématiques
+L'objectif fonctionnel est que les fiches fournies par le package et les fiches
+créées par les utilisateurs reposent à terme sur **la même API publique de
+composition**. Une contribution pourra ainsi être utilisée localement, adaptée,
+puis proposée au projet sans dépendre d'un moteur interne inaccessible.
 
-La seconde générale et technologique dispose d'un premier jeu complet de fiches
-thématiques et d'une fiche essentielle :
-
-```r
-generer_revision("2GT", "GEOMETRIE") |>
-    produire_revision(format = "auto")
-
-generer_essentiel("2GT") |>
-    produire_revision(format = "auto")
-```
-
-Les fiches sont reliées aux notions pédagogiques existantes et peuvent inclure
-des schémas générés directement par R.
+Les corrections de données, propositions de ressources, idées de fiches,
+modèles d'exercices et améliorations de documentation sont les bienvenues. Voir
+[documentation/CONTRIBUTING.md](documentation/CONTRIBUTING.md) pour les principes de contribution.
 
 ## Documentation
 
-Pour découvrir le package, commencer par la vignette **Explorer une classe de
-6e avec eduschool**. La vignette **Explorer une classe de 2de générale et
-technologique** donne ensuite un exemple lycée plus complet, notamment sur les
-mathématiques et l'orientation après la seconde.
-
-Les autres vignettes conservent chacune un rôle précis : prise en main, parcours
-scolaires, programmes et capacités, documentation pédagogique, exercices,
-architecture des données et développement.
+Le site pkgdown est organisé par accès thématiques : **Découvrir eduschool**,
+**Parcours et orientation**, **Mathématiques**, **Comprendre eduschool** et
+**Contribuer et partager**.
 
 ```r
 browseVignettes("eduschool")
 ```
 
-La documentation complète est également publiée sur le site pkgdown du package.
+Les données officielles restent des références externes : `eduschool` les
+structure et les met en relation, sans prétendre devenir une source de vérité
+institutionnelle.

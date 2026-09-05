@@ -11,7 +11,9 @@
 /*.tar.gz
 .DS_Store
 docs
-pkgdown/
+pkgdown/*
+!pkgdown/extra.css
+!pkgdown/index.md
 /doc/
 /Meta/
 # Fiches et corriges generes a la racine

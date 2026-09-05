@@ -4,12 +4,18 @@
 \name{eduschool-package}
 \alias{eduschool}
 \alias{eduschool-package}
-\title{eduschool : référentiels scolaires et révisions}
+\title{eduschool : parcours scolaire et mathematiques}
 \description{
-`eduschool` organise des référentiels scolaires français, une base
-documentaire pédagogique et des générateurs d'exercices reproductibles.
-Les consultations simples utilisent les CSV installés avec le package ;
-DuckDB est disponible pour les usages relationnels plus avancés.
+`eduschool` cartographie la scolarite des collegiens et lyceens en France et
+propose des outils pour reviser et s'entrainer en mathematiques. Son
+architecture de donnees reste generique et peut accueillir d'autres
+disciplines, sans que cela constitue l'objectif principal du projet.
+}
+\details{
+L'API principale s'organise autour de quelques verbes : [parcours()],
+[orientation()], [programme()], [revision()] et [exercices()]. Les fonctions
+historiques et les tables du mini-SI restent disponibles pour les usages
+avances, la maintenance et la contribution.
 }
 \seealso{
 Useful links:

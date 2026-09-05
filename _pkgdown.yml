@@ -43,6 +43,10 @@ navbar:
       - text: Rentrer en profondeur dans eduschool
         href: articles/rentrer-en-profondeur-dans-eduschool.html
       - text: -------
+      - text: Contribuer et partager
+      - text: Mutualiser fiches, exercices et ameliorations
+        href: articles/contribuer-et-partager.html
+      - text: -------
       - text: Tous les articles
         href: articles/index.html
 articles:
@@ -78,5 +82,10 @@ articles:
   contents:
   - architecture-des-donnees
   - rentrer-en-profondeur-dans-eduschool
+- title: Contribuer et partager
+  desc: Creer, adapter et mutualiser des donnees et supports pedagogiques.
+  navbar: Contribuer
+  contents:
+  - contribuer-et-partager
 - title: Developpement
   contents: developpement
