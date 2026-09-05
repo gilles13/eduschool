@@ -1,0 +1,9 @@
+fiche_id;niveau_id;famille_id;type;titre;description;ordre
+REV_2GT_LOGIQUE;2GT;LOGIQUE;THEMATIQUE;Logique et ensembles;Notations ensemblistes et raisonnements de base.;10
+REV_2GT_ALGORITHMIQUE;2GT;ALGORITHMIQUE;THEMATIQUE;Algorithmique et programmation;Variables conditions boucles et fonctions simples.;20
+REV_2GT_NOMBRES_ALGEBRE;2GT;NOMBRES_ALGEBRE;THEMATIQUE;Nombres et algèbre;Arithmétique nombres réels calcul littéral équations et inéquations.;30
+REV_2GT_GEOMETRIE;2GT;GEOMETRIE;THEMATIQUE;Géométrie;Vecteurs coordonnées et droites du plan.;40
+REV_2GT_FONCTIONS;2GT;FONCTIONS;THEMATIQUE;Fonctions;Images antécédents fonctions affines variations et extremums.;50
+REV_2GT_STAT_PROBA;2GT;STAT_PROBA;THEMATIQUE;Statistiques et probabilités;Pourcentages évolutions indicateurs tableaux croisés et probabilités.;60
+REV_2GT_AUTOMATISMES;2GT;AUTOMATISMES;THEMATIQUE;Automatismes;Calculs et réflexes à mobiliser sans hésitation.;70
+REV_2GT_ESSENTIEL;2GT;;ESSENTIEL;L'essentiel des mathématiques en seconde;Formules méthodes et réflexes à conserver sur une fiche très synthétique.;100

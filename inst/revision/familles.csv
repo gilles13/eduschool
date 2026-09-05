@@ -1,0 +1,8 @@
+famille_id;libelle;ordre
+LOGIQUE;Logique et ensembles;10
+ALGORITHMIQUE;Algorithmique et programmation;20
+NOMBRES_ALGEBRE;Nombres et algèbre;30
+GEOMETRIE;Géométrie;40
+FONCTIONS;Fonctions;50
+STAT_PROBA;Statistiques et probabilités;60
+AUTOMATISMES;Automatismes;70

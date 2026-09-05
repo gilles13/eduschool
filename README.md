@@ -74,6 +74,22 @@ capacité. Il reste possible de fournir un chemin explicite avec l'argument
 disponible et un fichier HTML sinon. Le même principe s'applique au corrigé avec
 `produire_corrige()`.
 
+## Réviser les mathématiques
+
+La seconde générale et technologique dispose d'un premier jeu complet de fiches
+thématiques et d'une fiche essentielle :
+
+```r
+generer_revision("2GT", "GEOMETRIE") |>
+    produire_revision(format = "auto")
+
+generer_essentiel("2GT") |>
+    produire_revision(format = "auto")
+```
+
+Les fiches sont reliées aux notions pédagogiques existantes et peuvent inclure
+des schémas générés directement par R.
+
 ## Documentation
 
 Pour découvrir le package, commencer par la vignette **Explorer une classe de

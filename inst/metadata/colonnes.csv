@@ -1,0 +1,138 @@
+table;colonne;type_stockage;type_semantique;role;nullable;description
+couverture;niveau;character;text;PK;non;
+couverture;themes;character;integer;;oui;
+couverture;capacites;character;integer;;oui;
+couverture;capacites_documentees;character;integer;;oui;
+couverture;couverture_capacites;character;decimal;;oui;
+notions;notion_id;character;identifier;PK;non;Identifiant stable d’une notion pédagogique
+notions;discipline_id;character;identifier;FK;oui;
+notions;libelle;character;text;;oui;
+notions;description;character;text;;oui;
+notions;document;character;text;;oui;Chemin relatif vers le rappel Markdown
+notions_capacites;notion_id;character;identifier;PK;non;FK vers notions
+notions_capacites;capacite_id;character;identifier;PK;non;FK vers programme_items de type CAPACITE
+notions_capacites;role;character;enum;;oui;
+prerequis;notion_id;character;identifier;PK;non;Notion qui nécessite le prérequis
+prerequis;prerequis_id;character;identifier;PK;non;FK vers la notion prérequise
+prerequis;importance;character;enum;;oui;
+prerequis;commentaire;character;text;;oui;
+sources_documentaires;source_doc_id;character;identifier;PK;non;
+sources_documentaires;libelle;character;text;;oui;
+sources_documentaires;url;character;url;;oui;
+sources_documentaires;type_source;character;text;;oui;
+enseignements_niveaux;niveau_id;character;identifier;PK;non;FK vers niveaux
+enseignements_niveaux;enseignement_id;character;identifier;PK;non;FK vers enseignements
+enseignements_niveaux;statut;character;enum;;oui;
+horaires;horaire_id;character;identifier;PK;non;Identifiant technique de la ligne horaire
+horaires;niveau_id;character;identifier;FK;oui;
+horaires;enseignement_id;character;identifier;FK;oui;
+horaires;volume;character;decimal;;oui;
+horaires;unite;character;enum;;oui;
+horaires;statut;character;enum;;oui;
+horaires;source_id;character;identifier;FK;oui;
+horaires;version_id;character;identifier;FK;oui;Version temporelle de la donnée
+horaires;serie_id;character;identifier;FK;oui;FK optionnelle vers series
+horaires;portee;character;enum;;oui;Portee de la ligne horaire : COMMUN, COMPLEMENT_SERIE ou GRILLE_SERIE
+offres_enseignements;offre_id;character;identifier;PK;non;Clé stable d’une offre d’enseignement pour un niveau et une série
+offres_enseignements;niveau_id;character;identifier;FK;oui;FK vers niveaux
+offres_enseignements;serie_id;character;identifier;FK;oui;FK vers series, vide pour les offres sans série
+offres_enseignements;enseignement_id;character;identifier;FK;oui;FK vers enseignements
+offres_enseignements;statut;character;enum;;oui;
+offres_enseignements;version_id;character;identifier;FK;oui;
+options;option_id;character;identifier;PK;non;Identifiant technique de l'option
+options;niveau_id;character;identifier;PK;non;
+options;enseignement_id;character;identifier;FK;oui;
+options;unite;character;enum;;oui;
+options;volume;character;decimal;;oui;
+options;libelle;character;text;;oui;
+options;source_id;character;identifier;FK;oui;
+modeles;modele_id;character;identifier;PK;non;
+modeles;libelle;character;text;;oui;
+modeles;generateur;character;text;;oui;
+modeles;niveaux;character;text;;oui;
+modeles;difficulte_min;character;integer;;oui;
+modeles;difficulte_max;character;integer;;oui;
+modeles;statut;character;enum;;oui;
+modeles_capacites;modele_id;character;identifier;PK;non;
+modeles_capacites;capacite_id;character;identifier;PK;non;
+sources;source_id;character;identifier;PK;non;Clé stable de la source documentaire
+sources;organisme;character;text;;oui;
+sources;type;character;enum;;oui;
+sources;titre;character;text;;oui;
+sources;reference;character;text;;oui;
+sources;date_publication;character;date;;oui;
+sources;url;character;url;;oui;
+sources;date_consultation;character;date;;oui;
+versions;version_id;character;identifier;PK;non;Identifiant de l'année scolaire de référence
+versions;libelle;character;text;;oui;
+versions;date_debut;character;date;;oui;
+versions;date_fin;character;date;;oui;
+programme_applications;programme_id;character;identifier;PK;non;Programme appliqué à un niveau
+programme_applications;niveau_id;character;identifier;PK;non;
+programme_applications;version_id;character;identifier;PK;non;
+programme_applications;date_debut;character;date;;oui;
+programme_applications;date_fin;character;date;;oui;
+programme_enseignements;programme_id;character;identifier;PK;non;FK vers programmes
+programme_enseignements;enseignement_id;character;identifier;PK;non;FK vers enseignements
+programme_items;item_id;character;identifier;PK;non;
+programme_items;programme_id;character;identifier;FK;oui;
+programme_items;parent_item_id;character;identifier;FK;oui;Lien hiérarchique vers l’item parent
+programme_items;niveau;character;text;;oui;
+programme_items;ordre;character;integer;;oui;
+programme_items;type;character;enum;;oui;Niveau de granularité : DOMAINE, THEME ou CAPACITE
+programme_items;libelle;character;text;;oui;
+programme_items;description;character;text;;oui;
+programme_items;source_id;character;identifier;FK;oui;
+programme_items_applications;programme_id;character;identifier;PK;non;
+programme_items_applications;item_id;character;identifier;PK;non;
+programme_items_applications;niveau_id;character;identifier;PK;non;
+programme_items_applications;version_id;character;identifier;PK;non;
+programmes;programme_id;character;identifier;PK;non;Identifiant technique du programme
+programmes;discipline_id;character;identifier;FK;oui;
+programmes;cycle_id;character;identifier;FK;oui;
+programmes;niveau_id;character;identifier;FK;oui;
+programmes;date_publication;character;date;;oui;
+programmes;source_id;character;identifier;FK;oui;
+cycles;cycle_id;character;identifier;PK;non;Identifiant du cycle pédagogique
+cycles;libelle;character;text;;oui;
+cycles;ordre;character;integer;;oui;
+disciplines;discipline_id;character;identifier;PK;non;Discipline de référence
+disciplines;libelle;character;text;;oui;
+enseignements;enseignement_id;character;identifier;PK;non;Enseignement concret proposé aux élèves
+enseignements;discipline_id;character;identifier;FK;oui;
+enseignements;libelle;character;text;;oui;
+enseignements;type;character;enum;;oui;
+niveaux;niveau_id;character;identifier;PK;non;Niveau national (6E, 5E, etc.)
+niveaux;libelle;character;text;;oui;
+niveaux;ordre;character;integer;;oui;
+niveaux;cycle_id;character;identifier;FK;oui;
+niveaux;voie_id;character;identifier;FK;oui;
+niveaux_series;niveau_id;character;identifier;PK;non;FK vers niveaux
+niveaux_series;serie_id;character;identifier;PK;non;FK vers series
+series;serie_id;character;identifier;PK;non;Série ou voie de spécialisation du lycée
+series;libelle;character;text;;oui;
+series;voie_id;character;identifier;FK;oui;
+voies;voie_id;character;identifier;PK;non;Voie de formation
+voies;libelle;character;text;;oui;
+voies;voie_parent_id;character;identifier;FK;oui;
+blocs;bloc_id;character;identifier;PK;non;
+blocs;fiche_id;character;identifier;FK;oui;
+blocs;ordre;character;integer;;oui;
+blocs;type;character;enum;;oui;
+blocs;titre;character;text;;oui;
+blocs;contenu;character;text;;oui;
+blocs;formule;character;text;;oui;
+blocs;illustration_id;character;identifier;;oui;
+familles;famille_id;character;identifier;PK;non;
+familles;libelle;character;text;;oui;
+familles;ordre;character;integer;;oui;
+fiche_notions;fiche_id;character;identifier;PK;non;
+fiche_notions;notion_id;character;identifier;PK;non;
+fiche_notions;ordre;character;integer;;oui;
+fiches;fiche_id;character;identifier;PK;non;
+fiches;niveau_id;character;identifier;FK;oui;
+fiches;famille_id;character;identifier;FK;oui;
+fiches;type;character;enum;;oui;
+fiches;titre;character;text;;oui;
+fiches;description;character;text;;oui;
+fiches;ordre;character;integer;;oui;

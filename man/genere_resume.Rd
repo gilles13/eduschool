@@ -9,7 +9,8 @@ genere_resume(
   matiere = "all",
   version = "2026_2027",
   max_themes = 5L,
-  max_notions = 6L
+  max_notions = 6L,
+  serie = NULL
 )
 }
 \arguments{
@@ -24,6 +25,8 @@ acceptes.}
 \item{max_themes}{Nombre maximal de themes affiches par ligne.}
 
 \item{max_notions}{Nombre maximal de notions affichees par ligne.}
+
+\item{serie}{Serie facultative (`"STHR"`, `"STMG"`, `"STI2D"`, etc.).}
 }
 \value{
 Un `data.frame` avec quatre colonnes : `matiere`, `horaire`, `themes`

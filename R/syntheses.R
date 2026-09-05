@@ -9,11 +9,64 @@
 #'
 #' @param niveau_id Identifiant du niveau, par exemple `6E`.
 #' @param version_id Version scolaire, par exemple `2026_2027`.
+#' @param serie_id Serie technologique ou generale facultative. Lorsqu'elle est
+#'   absente, seuls les horaires communs au niveau sont retournes. Pour un niveau
+#'   dont la grille est entierement definie par serie (par exemple `1T` ou `TT`),
+#'   `serie_id` est obligatoire.
 #' @export
-horaires_niveau = function(niveau_id, version_id = "2026_2027") {
+horaires_niveau = function(niveau_id, version_id = "2026_2027", serie_id = NULL) {
   h = .lire_csv("enseignements", "horaires.csv")
   e = enseignements()
   x = h[h$niveau_id %in% niveau_id & h$version_id %in% version_id, , drop = FALSE]
+
+  if (!"portee" %in% names(x)) {
+    x$portee = ifelse(
+      is.na(x$serie_id) | !nzchar(x$serie_id),
+      "COMMUN",
+      ifelse(x$statut %in% c("SPECIALITE", "OPTION"), "COMPLEMENT_SERIE", "GRILLE_SERIE")
+    )
+  }
+
+  if (is.null(serie_id)) {
+    commun = x[x$portee == "COMMUN", , drop = FALSE]
+    if (!nrow(commun) && nrow(x)) {
+      series_disponibles = sort(unique(x$serie_id[!is.na(x$serie_id) & nzchar(x$serie_id)]))
+      stop(
+        paste0(
+          "Le niveau ", paste(niveau_id, collapse = ", "),
+          " possede une grille horaire definie par serie. Precisez `serie_id` parmi : ",
+          paste(series_disponibles, collapse = ", "), "."
+        ),
+        call. = FALSE
+      )
+    }
+    x = commun
+  } else {
+    if (length(serie_id) != 1L || is.na(serie_id) || !nzchar(serie_id)) {
+      stop("`serie_id` doit contenir une seule valeur non vide.", call. = FALSE)
+    }
+
+    ns = .lire_csv("referentiels", "niveaux_series.csv")
+    ok = any(ns$niveau_id %in% niveau_id & ns$serie_id == serie_id)
+    if (!ok) {
+      stop(
+        paste0("La serie ", serie_id, " n'est pas rattachee au niveau ", paste(niveau_id, collapse = ", "), "."),
+        call. = FALSE
+      )
+    }
+
+    grille = x[x$serie_id == serie_id & x$portee == "GRILLE_SERIE", , drop = FALSE]
+    complements = x[x$serie_id == serie_id & x$portee == "COMPLEMENT_SERIE", , drop = FALSE]
+
+    if (nrow(grille)) {
+      x = rbind(grille, complements)
+    } else {
+      commun = x[x$portee == "COMMUN", , drop = FALSE]
+      x = rbind(commun, complements)
+    }
+  }
+
+  rownames(x) = NULL
   merge(x, e, by = "enseignement_id", all.x = TRUE, sort = FALSE)
 }
 
@@ -66,8 +119,8 @@ notions_niveau = function(niveau_id, discipline_id = NULL, version_id = "2026_20
 #'
 #' @inheritParams horaires_niveau
 #' @export
-resume_niveau = function(niveau_id, version_id = "2026_2027") {
-  h = horaires_niveau(niveau_id, version_id)
+resume_niveau = function(niveau_id, version_id = "2026_2027", serie_id = NULL) {
+  h = horaires_niveau(niveau_id, version_id, serie_id = serie_id)
   if (nrow(h)) {
     keep = c("enseignement_id", "discipline_id", "libelle", "volume", "unite")
     h = unique(h[, keep, drop = FALSE])

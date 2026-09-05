@@ -1,0 +1,30 @@
+table;fichier;domaine;description;cle_primaire;colonnes
+couverture;documentation/couverture.csv;documentation;Couverture documentaire par niveau;niveau;niveau,themes,capacites,capacites_documentees,couverture_capacites
+notions;documentation/notions.csv;documentation;Notions pedagogiques documentees;notion_id;notion_id,discipline_id,libelle,description,document
+notions_capacites;documentation/notions_capacites.csv;documentation;Relations entre notions et capacites;notion_id,capacite_id;notion_id,capacite_id,role
+prerequis;documentation/prerequis.csv;documentation;Prerequis entre notions;notion_id,prerequis_id;notion_id,prerequis_id,importance,commentaire
+sources_documentaires;documentation/sources_documentaires.csv;documentation;Sources documentaires pedagogiques;source_doc_id;source_doc_id,libelle,url,type_source
+enseignements_niveaux;enseignements/enseignements_niveaux.csv;enseignements;Enseignements disponibles par niveau;niveau_id,enseignement_id;niveau_id,enseignement_id,statut
+horaires;enseignements/horaires.csv;enseignements;Grilles horaires par niveau, version et serie;horaire_id;horaire_id,niveau_id,enseignement_id,volume,unite,statut,source_id,version_id,serie_id,portee
+offres_enseignements;enseignements/offres_enseignements.csv;enseignements;Offres d enseignements par niveau et serie;offre_id;offre_id,niveau_id,serie_id,enseignement_id,statut,version_id
+options;enseignements/options.csv;enseignements;Options et volumes associes;option_id,niveau_id;option_id,niveau_id,enseignement_id,unite,volume,libelle,source_id
+modeles;exercices/modeles.csv;exercices;Modeles d exercices;modele_id;modele_id,libelle,generateur,niveaux,difficulte_min,difficulte_max,statut
+modeles_capacites;exercices/modeles_capacites.csv;exercices;Relations entre modeles d exercices et capacites;modele_id,capacite_id;modele_id,capacite_id
+sources;metadata/sources.csv;metadata;Sources officielles et institutionnelles;source_id;source_id,organisme,type,titre,reference,date_publication,url,date_consultation
+versions;metadata/versions.csv;metadata;Versions temporelles des donnees;version_id;version_id,libelle,date_debut,date_fin
+programme_applications;programmes/programme_applications.csv;programmes;Application des programmes par niveau et version;programme_id,niveau_id,version_id;programme_id,niveau_id,version_id,date_debut,date_fin
+programme_enseignements;programmes/programme_enseignements.csv;programmes;Relations entre programmes et enseignements;programme_id,enseignement_id;programme_id,enseignement_id
+programme_items;programmes/programme_items.csv;programmes;Arborescence des objets de programme;item_id;item_id,programme_id,parent_item_id,niveau,ordre,type,libelle,description,source_id
+programme_items_applications;programmes/programme_items_applications.csv;programmes;Application des objets de programme par niveau et version;programme_id,item_id,niveau_id,version_id;programme_id,item_id,niveau_id,version_id
+programmes;programmes/programmes.csv;programmes;Programmes officiels;programme_id;programme_id,discipline_id,cycle_id,niveau_id,date_publication,source_id
+cycles;referentiels/cycles.csv;referentiels;Cycles pedagogiques;cycle_id;cycle_id,libelle,ordre
+disciplines;referentiels/disciplines.csv;referentiels;Disciplines de reference;discipline_id;discipline_id,libelle
+enseignements;referentiels/enseignements.csv;referentiels;Enseignements de reference;enseignement_id;enseignement_id,discipline_id,libelle,type
+niveaux;referentiels/niveaux.csv;referentiels;Niveaux scolaires;niveau_id;niveau_id,libelle,ordre,cycle_id,voie_id
+niveaux_series;referentiels/niveaux_series.csv;referentiels;Series disponibles par niveau;niveau_id,serie_id;niveau_id,serie_id
+series;referentiels/series.csv;referentiels;Series du lycee;serie_id;serie_id,libelle,voie_id
+voies;referentiels/voies.csv;referentiels;Voies de formation;voie_id;voie_id,libelle,voie_parent_id
+blocs;revision/blocs.csv;revision;Blocs de contenu des fiches de revision;bloc_id;bloc_id,fiche_id,ordre,type,titre,contenu,formule,illustration_id
+familles;revision/familles.csv;revision;Familles de connaissances pour les revisions;famille_id;famille_id,libelle,ordre
+fiche_notions;revision/fiche_notions.csv;revision;Relations entre fiches de revision et notions;fiche_id,notion_id;fiche_id,notion_id,ordre
+fiches;revision/fiches.csv;revision;Fiches de revision pedagogiques;fiche_id;fiche_id,niveau_id,famille_id,type,titre,description,ordre

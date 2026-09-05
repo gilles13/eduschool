@@ -1,0 +1,50 @@
+relation_id;table_source;colonne_source;table_cible;colonne_cible;nullable;cardinalite;description
+REL001;niveaux;cycle_id;cycles;cycle_id;oui;n:1;Cycle du niveau
+REL002;niveaux;voie_id;voies;voie_id;oui;n:1;Voie du niveau
+REL003;voies;voie_parent_id;voies;voie_id;oui;n:1;Hierarchie des voies
+REL004;series;voie_id;voies;voie_id;non;n:1;Voie de la serie
+REL005;niveaux_series;niveau_id;niveaux;niveau_id;non;n:1;Niveau de la serie
+REL006;niveaux_series;serie_id;series;serie_id;non;n:1;Serie disponible
+REL007;enseignements;discipline_id;disciplines;discipline_id;oui;n:1;Discipline de l enseignement
+REL008;enseignements_niveaux;niveau_id;niveaux;niveau_id;non;n:1;Niveau concerne
+REL009;enseignements_niveaux;enseignement_id;enseignements;enseignement_id;non;n:1;Enseignement concerne
+REL010;horaires;niveau_id;niveaux;niveau_id;non;n:1;Niveau de la grille
+REL011;horaires;enseignement_id;enseignements;enseignement_id;non;n:1;Enseignement de la grille
+REL012;horaires;source_id;sources;source_id;non;n:1;Source de l horaire
+REL013;horaires;version_id;versions;version_id;non;n:1;Version de l horaire
+REL014;horaires;serie_id;series;serie_id;oui;n:1;Serie eventuelle de la grille
+REL015;offres_enseignements;niveau_id;niveaux;niveau_id;non;n:1;Niveau de l offre
+REL016;offres_enseignements;serie_id;series;serie_id;oui;n:1;Serie eventuelle de l offre
+REL017;offres_enseignements;enseignement_id;enseignements;enseignement_id;non;n:1;Enseignement offert
+REL018;offres_enseignements;version_id;versions;version_id;non;n:1;Version de l offre
+REL019;options;niveau_id;niveaux;niveau_id;non;n:1;Niveau de l option
+REL020;options;enseignement_id;enseignements;enseignement_id;non;n:1;Enseignement optionnel
+REL021;options;source_id;sources;source_id;non;n:1;Source de l option
+REL022;programmes;discipline_id;disciplines;discipline_id;non;n:1;Discipline du programme
+REL023;programmes;cycle_id;cycles;cycle_id;oui;n:1;Cycle du programme
+REL024;programmes;niveau_id;niveaux;niveau_id;oui;n:1;Niveau direct du programme
+REL025;programmes;source_id;sources;source_id;non;n:1;Source du programme
+REL026;programme_applications;programme_id;programmes;programme_id;non;n:1;Programme applique
+REL027;programme_applications;niveau_id;niveaux;niveau_id;non;n:1;Niveau d application
+REL028;programme_applications;version_id;versions;version_id;non;n:1;Version d application
+REL029;programme_enseignements;programme_id;programmes;programme_id;non;n:1;Programme concerne
+REL030;programme_enseignements;enseignement_id;enseignements;enseignement_id;non;n:1;Enseignement concerne
+REL031;programme_items;programme_id;programmes;programme_id;non;n:1;Programme parent
+REL032;programme_items;parent_item_id;programme_items;item_id;oui;n:1;Item parent
+REL033;programme_items;source_id;sources;source_id;oui;n:1;Source de l item
+REL034;programme_items_applications;programme_id;programmes;programme_id;non;n:1;Programme concerne
+REL035;programme_items_applications;item_id;programme_items;item_id;non;n:1;Item concerne
+REL036;programme_items_applications;niveau_id;niveaux;niveau_id;non;n:1;Niveau d application
+REL037;programme_items_applications;version_id;versions;version_id;non;n:1;Version d application
+REL038;notions;discipline_id;disciplines;discipline_id;non;n:1;Discipline de la notion
+REL039;notions_capacites;notion_id;notions;notion_id;non;n:1;Notion documentee
+REL040;notions_capacites;capacite_id;programme_items;item_id;non;n:1;Capacite du programme
+REL041;prerequis;notion_id;notions;notion_id;non;n:1;Notion cible
+REL042;prerequis;prerequis_id;notions;notion_id;non;n:1;Notion prerequise
+REL043;modeles_capacites;modele_id;modeles;modele_id;non;n:1;Modele d exercice
+REL044;modeles_capacites;capacite_id;programme_items;item_id;non;n:1;Capacite exercee
+REL045;fiches;niveau_id;niveaux;niveau_id;non;n:1;Niveau de la fiche
+REL046;fiches;famille_id;familles;famille_id;oui;n:1;Famille de la fiche
+REL047;blocs;fiche_id;fiches;fiche_id;non;n:1;Fiche contenant le bloc
+REL048;fiche_notions;fiche_id;fiches;fiche_id;non;n:1;Fiche de revision
+REL049;fiche_notions;notion_id;notions;notion_id;non;n:1;Notion couverte

@@ -37,3 +37,4 @@ notions_capacites;notion_id;character;FK vers notions
 notions_capacites;capacite_id;character;FK vers programme_items de type CAPACITE
 prerequis;notion_id;character;Notion qui nécessite le prérequis
 prerequis;prerequis_id;character;FK vers la notion prérequise
+horaires;portee;character;Portee de la ligne horaire : COMMUN, COMPLEMENT_SERIE ou GRILLE_SERIE

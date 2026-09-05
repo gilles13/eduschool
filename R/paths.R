@@ -33,5 +33,10 @@ eduschool_path = function(..., must_work = TRUE) {
 }
 
 .lire_csv = function(...) {
-  read.csv2(eduschool_path(...), stringsAsFactors = FALSE, check.names = FALSE)
+  read.csv2(
+    eduschool_path(...),
+    stringsAsFactors = FALSE,
+    check.names = FALSE,
+    colClasses = "character"
+  )
 }

@@ -1,0 +1,42 @@
+---
+output: html_document
+params:
+  revision: null
+  logo: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.width = 4.8, fig.height = 2.2, dpi = 120)
+r = params$revision
+compact = identical(r$type, "ESSENTIEL")
+```
+
+```{r logo, out.width="10%", fig.align="left"}
+if (nzchar(params$logo) && file.exists(params$logo)) knitr::include_graphics(params$logo)
+```
+
+# `r r$titre`
+
+**`r eduschool::libelle_niveau(r$niveau_id)`**
+
+`r r$description`
+
+```{r blocs, results='asis'}
+for (i in seq_len(nrow(r$blocs))) {
+  b = r$blocs[i, ]
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
+  if (nzchar(b$formule)) cat("$$", b$formule, "$$\n\n")
+  if (nzchar(b$illustration_id)) {
+    eduschool:::.dessiner_revision(b$illustration_id)
+    cat("\n")
+  }
+}
+```
+
+```{r notions, results='asis'}
+if (!compact && nrow(r$notions)) {
+  cat("\n## Notions eduschool reliées\n\n")
+  for (x in unique(r$notions$libelle)) if (!is.na(x) && nzchar(x)) cat("- ", x, "\n", sep = "")
+}
+```

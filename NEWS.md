@@ -1,3 +1,24 @@
+# eduschool 0.11.0
+
+## Consolidation du mini-SI
+
+- ajout de metadonnees relationnelles explicites dans `inst/metadata/tables.csv`, `colonnes.csv` et `relations.csv` ;
+- ajout de controles generiques des schemas, cles primaires, cles etrangeres et domaines structurants ;
+- lecture deterministe des CSV comme donnees textuelles brutes, avec conversions metier explicites ;
+- ajout d un schema relationnel SVG genere dynamiquement depuis les metadonnees ;
+- ajout de la vignette technique « Rentrer en profondeur dans eduschool » ;
+- correction du millesime 2025-2026 du programme de mathematiques de cycle 3 en sixieme et ajout de la version manquante au referentiel temporel.
+
+## Fiches de revision mathematiques
+
+- ajout d'un moteur de fiches de revision structurees, distinct du moteur d'exercices ;
+- ajout de `familles_revision()`, `fiches_revision()`, `generer_revision()`, `generer_essentiel()` et `produire_revision()` ;
+- premiere couverture complete de la seconde generale et technologique : logique, algorithmique, nombres et algebre, geometrie, fonctions, statistiques-probabilites et automatismes ;
+- ajout d'une fiche `ESSENTIEL` volontairement tres compacte ;
+- liaison des fiches aux notions pedagogiques existantes afin d'eviter une seconde source de verite ;
+- ajout de schemas generes avec les capacites graphiques de R, sans nouvelle dependance graphique obligatoire ;
+- rendu HTML/PDF suivant le meme principe que les fiches d'exercices.
+
 # eduschool 0.10.9
 
 ## Consolidation documentaire et ergonomie

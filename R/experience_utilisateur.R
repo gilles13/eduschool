@@ -69,6 +69,7 @@
 #'   Les identifiants (`"MAT"`, `"FRA"`, etc.) et quelques alias usuels sont
 #'   acceptes.
 #' @param version Version scolaire, par defaut `"2026_2027"`.
+#' @param serie Serie facultative (`"STHR"`, `"STMG"`, `"STI2D"`, etc.).
 #' @param max_themes Nombre maximal de themes affiches par ligne.
 #' @param max_notions Nombre maximal de notions affichees par ligne.
 #'
@@ -80,7 +81,8 @@ genere_resume = function(
   matiere = "all",
   version = "2026_2027",
   max_themes = 5L,
-  max_notions = 6L
+  max_notions = 6L,
+  serie = NULL
 ) {
   if (length(niveau) != 1L || is.na(niveau) || !nzchar(trimws(niveau))) {
     stop("`niveau` doit contenir une seule valeur non vide.", call. = FALSE)
@@ -92,8 +94,8 @@ genere_resume = function(
     stop("`max_notions` doit etre un entier strictement positif.", call. = FALSE)
   }
 
-  r = resume_niveau(niveau_id = niveau, version_id = version)
-  h = horaires_niveau(niveau_id = niveau, version_id = version)
+  r = resume_niveau(niveau_id = niveau, version_id = version, serie_id = serie)
+  h = horaires_niveau(niveau_id = niveau, version_id = version, serie_id = serie)
   matiere = .normaliser_matiere(matiere)
 
   if (!nrow(r)) {

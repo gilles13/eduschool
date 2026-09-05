@@ -1,0 +1,238 @@
+---
+title: "Rentrer en profondeur dans eduschool"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Rentrer en profondeur dans eduschool}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+```{r}
+library(eduschool)
+```
+
+`eduschool` est volontairement un **mini système d'information relationnel**.
+Il ne cherche pas à remplacer les textes officiels ni à maintenir une base de
+données complexe. Son objectif est plus simple : conserver des données scolaires
+lisibles dans des fichiers CSV, déclarer clairement leurs relations, contrôler
+leur cohérence et fournir des fonctions R stables pour les interroger.
+
+Cette vignette décrit le fonctionnement interne du package. Les inventaires,
+contrôles et diagrammes ci-dessous sont produits à partir des données et des
+métadonnées réellement installées avec `eduschool`.
+
+## 1. Le principe : des CSV simples, un modèle explicite
+
+Les données sont rangées par domaine sous `inst/` : référentiels, enseignements,
+programmes, documentation, exercices et révisions. Elles restent donc lisibles
+avec les outils les plus simples possibles :
+
+```{r, eval=FALSE}
+read.csv2(
+  eduschool_path("referentiels", "niveaux.csv"),
+  stringsAsFactors = FALSE
+)
+```
+
+Les fonctions publiques (`niveaux()`, `horaires_niveau()`, `programmes()`, etc.)
+constituent toutefois l'interface recommandée. Elles évitent de dupliquer les
+règles de jointure et de filtrage dans les analyses et dans les vignettes.
+
+## 2. Un contrat de données lui-même stocké en CSV
+
+Trois fichiers décrivent le mini-SI :
+
+- `inst/metadata/tables.csv` : catalogue des tables, fichiers et clés primaires ;
+- `inst/metadata/colonnes.csv` : colonnes attendues, type de stockage, type
+  sémantique et rôle PK/FK ;
+- `inst/metadata/relations.csv` : clés étrangères et cardinalités.
+
+Ils sont directement consultables :
+
+```{r}
+head(tables_si())
+head(colonnes_si())
+head(relations_si())
+```
+
+Cette approche garde une propriété importante du projet : **les métadonnées sont
+aussi simples que les données**. Aucun format ou moteur supplémentaire n'est
+nécessaire pour comprendre le modèle.
+
+## 3. Inventaire réel des tables
+
+L'inventaire suivant n'est pas écrit à la main. `inventaire_si()` lit le catalogue
+puis chaque CSV pour calculer sa taille réelle.
+
+```{r}
+inv = inventaire_si()
+knitr::kable(
+  inv[, c("table", "domaine", "cle_primaire", "n_lignes", "n_colonnes")],
+  row.names = FALSE
+)
+```
+
+Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement dans cette
+vignette lors de sa reconstruction.
+
+## 4. Relations entre les tables
+
+Le diagramme suivant est généré depuis `tables.csv` et `relations.csv`.
+
+```{r, echo=FALSE, out.width="100%"}
+f = produire_schema_relations_svg()
+knitr::include_graphics(f)
+```
+
+Pour comprendre le modèle, il est souvent plus utile de regarder un sous-ensemble.
+Par exemple, le rattachement des horaires aux niveaux et aux séries :
+
+```{r, echo=FALSE, out.width="100%"}
+f = produire_schema_relations_svg(
+  focus = c("niveaux", "voies", "series", "niveaux_series",
+            "horaires", "enseignements", "disciplines")
+)
+knitr::include_graphics(f)
+```
+
+## 5. Exemple important : seconde générale et STHR
+
+Une ligne horaire n'est pas définie uniquement par `niveau_id`. Elle possède aussi
+une **portée**. Trois cas sont distingués :
+
+- `COMMUN` : horaire commun à tout le niveau ;
+- `COMPLEMENT_SERIE` : enseignement qui complète une grille commune, par exemple
+  une spécialité de la voie générale ;
+- `GRILLE_SERIE` : horaire appartenant à la grille propre d'une série.
+
+Cette distinction évite une erreur classique. Une recherche brute sur
+`niveau_id == "2GT"` trouve à la fois les mathématiques de la seconde générale et
+technologique commune (4 h) et celles de la seconde STHR (3 h). Ces deux lignes
+sont relationnellement rattachées à `2GT`, mais elles n'ont pas la même portée.
+
+L'API métier porte donc cette règle :
+
+```{r}
+horaires_niveau("2GT")[
+  horaires_niveau("2GT")$discipline_id == "MAT",
+  c("enseignement_id", "volume", "portee")
+]
+
+horaires_niveau("2GT", serie_id = "STHR")[
+  horaires_niveau("2GT", serie_id = "STHR")$discipline_id == "MAT",
+  c("enseignement_id", "volume", "serie_id", "portee")
+]
+```
+
+Le point essentiel est qu'une relation valide sur le plan technique ne suffit
+pas toujours : **la sémantique de la relation doit également être modélisée**.
+
+## 6. Pourquoi les CSV sont lus comme du texte
+
+Les CSV constituent la couche source. Pour rendre leur lecture déterministe,
+`eduschool` les charge comme des colonnes de type `character`. Les conversions
+numériques ou temporelles sont ensuite faites explicitement lorsqu'une fonction
+métier en a besoin.
+
+Par exemple, `volume` conserve la représentation présente dans la source :
+
+```{r}
+h = horaires_niveau("2GT")
+str(h$volume)
+```
+
+Une fonction qui doit calculer avec cet horaire effectue explicitement la
+conversion. Cela évite qu'un changement de contenu dans un CSV modifie
+silencieusement le type d'une colonne à l'import.
+
+Le fichier `colonnes.csv` distingue pour cette raison `type_stockage` et
+`type_semantique` : une valeur peut être stockée comme texte tout en représentant
+sémantiquement un nombre décimal, une date, une URL ou un identifiant.
+
+## 7. Contrôles d'intégrité
+
+`controle_integrite_si()` applique des contrôles génériques construits à partir
+des métadonnées :
+
+- présence des colonnes déclarées ;
+- unicité et non-vacuité des clés primaires ;
+- absence de clés étrangères orphelines ;
+- respect de quelques domaines structurants, comme la portée des horaires.
+
+```{r}
+controles = controle_integrite_si()
+knitr::kable(
+  controles[!controles$ok, ],
+  row.names = FALSE
+)
+```
+
+Pour un contrôle bloquant, utile dans les tests ou avant une publication :
+
+```{r, eval=FALSE}
+controle_integrite_si(strict = TRUE)
+```
+
+Une vue synthétique est également disponible :
+
+```{r}
+resume_controles_si()
+```
+
+## 8. De la relation brute à l'API métier
+
+Le rôle des fonctions publiques est de concentrer les règles métier. Une vignette
+ou un rapport ne devrait pas reconstruire lui-même une jointure complexe entre
+`horaires`, `niveaux`, `series` et `enseignements`.
+
+Le flux recommandé est donc :
+
+```
+CSV bruts
+   |
+   v
+contrat de donnees (tables / colonnes / relations)
+   |
+   v
+controles d'integrite
+   |
+   v
+fonctions metier R
+   |
+   v
+vignettes / rapports / fiches pedagogiques
+```
+
+Cette séparation permet de corriger une règle une seule fois dans le package et
+d'en faire bénéficier tous les usages.
+
+## 9. Ajouter une nouvelle table sans fragiliser le SI
+
+Pour étendre `eduschool`, la démarche recommandée est volontairement courte :
+
+1. ajouter le CSV dans le domaine adapté sous `inst/` ;
+2. déclarer la table et sa clé primaire dans `tables.csv` ;
+3. déclarer ses colonnes dans `colonnes.csv` ;
+4. déclarer ses clés étrangères dans `relations.csv` ;
+5. lancer `controle_integrite_si(strict = TRUE)` ;
+6. ajouter une fonction métier lorsque l'accès direct au CSV ne suffit plus ;
+7. ajouter des tests sémantiques pour les règles qui ne peuvent pas être exprimées
+   par une simple clé étrangère.
+
+Le but n'est pas de multiplier les abstractions, mais de rendre **explicites et
+testables** les règles qui existaient auparavant implicitement dans le code.
+
+## 10. Ce que DuckDB apporte, et ce qu'il ne remplace pas
+
+DuckDB reste très utile pour explorer librement le SI et effectuer des jointures
+SQL. Il n'est cependant pas la source de vérité du modèle. Les CSV et leurs
+métadonnées restent la représentation portable du projet ; DuckDB est un moteur
+d'interrogation construit au-dessus d'eux.
+
+Cette organisation permet à `eduschool` de rester un projet léger tout en
+bénéficiant des garanties essentielles d'un système relationnel : identifiants
+stables, relations déclarées, contrôles reproductibles et API métier cohérente.

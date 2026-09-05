@@ -41,7 +41,23 @@ h[, c("libelle", "volume", "unite")] |>
 ```
 
 Les données distinguent les horaires hebdomadaires des volumes annuels, comme
-l'enseignement moral et civique.
+l'enseignement moral et civique. Sans argument `serie_id`, `horaires_niveau()`
+ne retourne que la grille **commune** de la seconde générale et technologique :
+la seconde spécifique STHR n'est donc pas mélangée à cette vue.
+
+La série STHR possède sa propre grille horaire. Elle peut être interrogée
+explicitement :
+
+```{r}
+h_sthr = horaires_niveau("2GT", serie_id = "STHR")
+h_sthr[, c("libelle", "volume", "unite", "serie_id", "portee")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+Cette distinction est portée par les données elles-mêmes : `COMMUN` désigne la
+grille commune au niveau, `GRILLE_SERIE` une grille complète propre à une série
+et `COMPLEMENT_SERIE` un enseignement qui complète une grille commune, comme
+les spécialités de la voie générale.
 
 ## Visualiser les connaissances attendues par matière
 

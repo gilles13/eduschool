@@ -24,6 +24,8 @@ articles:
   - documentation-pedagogique
   - exercices-et-revisions
 - title: Comprendre le système
-  contents: architecture-des-donnees
+  contents:
+  - architecture-des-donnees
+  - rentrer-en-profondeur-dans-eduschool
 - title: Développement
   contents: developpement
