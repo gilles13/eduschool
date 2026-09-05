@@ -73,3 +73,44 @@ compatibilité, mais
 et
 [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
 constituent l’interface conseillée pour les nouveaux usages.
+
+## Fiches de révision mathématiques
+
+À partir de la version 0.11.0, les révisions constituent un moteur
+distinct des exercices. Les fiches sont structurées en familles et
+reliées aux notions déjà présentes dans la base documentaire.
+
+La seconde générale et technologique sert de niveau pilote :
+
+``` r
+
+fiches_revision("2GT")
+```
+
+Une fiche thématique peut être construite puis envoyée directement vers
+le rendu HTML ou PDF :
+
+``` r
+
+generer_revision("2GT", "GEOMETRIE") |>
+  produire_revision(format = "auto")
+```
+
+Les familles disponibles en seconde couvrent notamment nombres et
+algèbre, géométrie, fonctions, statistiques-probabilités, algorithmique,
+logique et automatismes.
+
+Pour les révisions de dernière minute, une fiche beaucoup plus dense
+conserve uniquement les formules, méthodes et points de vigilance
+essentiels :
+
+``` r
+
+generer_essentiel("2GT") |>
+  produire_revision(format = "auto")
+```
+
+Le contenu des fiches est stocké dans `inst/revision/`. Les relations
+avec les notions existantes sont séparées du contenu éditorial, de sorte
+qu’une fiche de révision reste une vue synthétique du système
+d’information et ne constitue pas une nouvelle source de vérité.

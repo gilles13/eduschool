@@ -29,16 +29,13 @@ genere_resume("2GT") |>
 | Français | 4 h | Lecture et interprétation ; Écriture et argumentation ; Langue et expression | Lecture et interprétation ; Écriture et argumentation ; Langue et expression |
 | Histoire-géographie | 3 h | Sociétés et pouvoirs ; Territoires et mondialisation ; Environnement et mobilités | Sociétés et pouvoirs ; Territoires et mondialisation ; Environnement et mobilités |
 | Langues vivantes A et B | 5 h 30 | Compréhension et réception ; Expression et interaction ; Repères culturels et interculturels | Compréhension et réception ; Expression et interaction ; Repères culturels et interculturels |
-| Langues vivantes A et B | 5 h | Compréhension et réception ; Expression et interaction ; Repères culturels et interculturels | Compréhension et réception ; Expression et interaction ; Repères culturels et interculturels |
 | Sciences économiques et sociales | 1 h 30 | Économie ; Sociologie ; Science politique et regards croisés | Économie ; Sociologie ; Science politique et regards croisés |
-| Mathématiques – seconde générale et technologique | 3 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; … |  |
 | Mathématiques – seconde générale et technologique | 4 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; … |  |
 | Physique-chimie | 3 h | Constitution et transformations de la matière ; Mouvement et interactions ; Ondes et signaux | Constitution et transformations de la matière ; Mouvement et interactions ; Ondes et signaux |
 | Sciences de la vie et de la Terre | 1 h 30 | Terre, vie et évolution ; Enjeux contemporains de la planète ; Corps humain et santé | Terre, vie et évolution ; Enjeux contemporains de la planète ; Corps humain et santé |
 | Éducation physique et sportive | 2 h | Réaliser une performance ; Adapter ses déplacements ; Conduire et maîtriser un affrontement | Réaliser une performance ; Adapter ses déplacements ; Conduire et maîtriser un affrontement |
 | Enseignement moral et civique | 18 HEURE_ANNEE | Liberté ; Société ; Démocratie et citoyenneté | Liberté ; Société ; Démocratie et citoyenneté |
 | Sciences numériques et technologie | 1 h 30 | Internet et Web ; Données et informatique ; Réseaux sociaux et objets connectés | Internet et Web ; Données et informatique ; Réseaux sociaux et objets connectés |
-| SVT et physique-chimie | 3 h |  |  |
 
 Pour obtenir les horaires sous leur forme relationnelle :
 
@@ -55,19 +52,45 @@ h[, c("libelle", "volume", "unite")] |>
 | Français                                          | 4      | HEURE_SEMAINE |
 | Histoire-géographie                               | 3      | HEURE_SEMAINE |
 | Langues vivantes A et B                           | 5.5    | HEURE_SEMAINE |
-| Langues vivantes A et B                           | 5      | HEURE_SEMAINE |
 | Sciences économiques et sociales                  | 1.5    | HEURE_SEMAINE |
-| Mathématiques – seconde générale et technologique | 3      | HEURE_SEMAINE |
 | Mathématiques – seconde générale et technologique | 4      | HEURE_SEMAINE |
 | Physique-chimie                                   | 3      | HEURE_SEMAINE |
 | Sciences de la vie et de la Terre                 | 1.5    | HEURE_SEMAINE |
 | Éducation physique et sportive                    | 2      | HEURE_SEMAINE |
 | Enseignement moral et civique                     | 18     | HEURE_ANNEE   |
 | Sciences numériques et technologie                | 1.5    | HEURE_SEMAINE |
-| SVT et physique-chimie                            | 3      | HEURE_SEMAINE |
 
 Les données distinguent les horaires hebdomadaires des volumes annuels,
-comme l’enseignement moral et civique.
+comme l’enseignement moral et civique. Sans argument `serie_id`,
+[`horaires_niveau()`](https://gilles13.github.io/eduschool/reference/horaires_niveau.md)
+ne retourne que la grille **commune** de la seconde générale et
+technologique : la seconde spécifique STHR n’est donc pas mélangée à
+cette vue.
+
+La série STHR possède sa propre grille horaire. Elle peut être
+interrogée explicitement :
+
+``` r
+
+h_sthr = horaires_niveau("2GT", serie_id = "STHR")
+h_sthr[, c("libelle", "volume", "unite", "serie_id", "portee")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+| libelle | volume | unite | serie_id | portee |
+|:---|:---|:---|:---|:---|
+| Mathématiques – seconde générale et technologique | 3 | HEURE_SEMAINE | STHR | GRILLE_SERIE |
+| Français | 4 | HEURE_SEMAINE | STHR | GRILLE_SERIE |
+| Histoire-géographie | 3 | HEURE_SEMAINE | STHR | GRILLE_SERIE |
+| Langues vivantes A et B | 5 | HEURE_SEMAINE | STHR | GRILLE_SERIE |
+| Éducation physique et sportive | 2 | HEURE_SEMAINE | STHR | GRILLE_SERIE |
+| SVT et physique-chimie | 3 | HEURE_SEMAINE | STHR | GRILLE_SERIE |
+| Enseignement moral et civique | 18 | HEURE_ANNEE | STHR | GRILLE_SERIE |
+
+Cette distinction est portée par les données elles-mêmes : `COMMUN`
+désigne la grille commune au niveau, `GRILLE_SERIE` une grille complète
+propre à une série et `COMPLEMENT_SERIE` un enseignement qui complète
+une grille commune, comme les spécialités de la voie générale.
 
 ## Visualiser les connaissances attendues par matière
 
@@ -88,7 +111,7 @@ barplot(
 )
 ```
 
-![](exemple-classe-2de-generale_files/figure-html/unnamed-chunk-5-1.png)
+![](exemple-classe-2de-generale_files/figure-html/unnamed-chunk-6-1.png)
 
 Ce graphique décrit la **granularité du référentiel `eduschool`**, pas
 un poids pédagogique ou un classement des matières. Pour lire les
@@ -173,7 +196,6 @@ genere_resume("2GT", matiere = "maths", max_themes = 12) |>
 
 | matiere | horaire | themes | notions |
 |:---|:---|:---|:---|
-| Mathématiques – seconde générale et technologique | 3 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; Nombres et calculs, algèbre ; Arithmétique ; Nombres réels ; Algèbre ; Géométrie ; Vecteurs et problèmes de géométrie ; Droites du plan ; … |  |
 | Mathématiques – seconde générale et technologique | 4 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; Nombres et calculs, algèbre ; Arithmétique ; Nombres réels ; Algèbre ; Géométrie ; Vecteurs et problèmes de géométrie ; Droites du plan ; … |  |
 
 Pour afficher l’ensemble des grands thèmes mathématiques de la seconde :

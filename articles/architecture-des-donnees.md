@@ -46,3 +46,9 @@ DBI::dbDisconnect(con)
 
 Cette architecture garde les fichiers sources lisibles indépendamment de
 R et du moteur de base de données.
+
+## Pour aller plus loin
+
+La vignette **Rentrer en profondeur dans eduschool** décrit le contrat
+de données, les clés primaires et étrangères, les contrôles d’intégrité
+et la génération dynamique des diagrammes relationnels.

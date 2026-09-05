@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.11.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,11 +96,23 @@
 <p>Le nom du fichier est construit automatiquement à partir du niveau et de la capacité. Il reste possible de fournir un chemin explicite avec l’argument <code>fichier</code>. Avec <code>format = "auto"</code>, <code>eduschool</code> produit un PDF si LaTeX est disponible et un fichier HTML sinon. Le même principe s’applique au corrigé avec <code><a href="reference/produire_corrige.html">produire_corrige()</a></code>.</p>
 </div>
 <div class="section level2">
+<h2 id="réviser-les-mathématiques">Réviser les mathématiques<a class="anchor" aria-label="anchor" href="#r%C3%A9viser-les-math%C3%A9matiques"></a>
+</h2>
+<p>La seconde générale et technologique dispose d’un premier jeu complet de fiches thématiques et d’une fiche essentielle :</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/generer_revision.html">generer_revision</a></span><span class="op">(</span><span class="st">"2GT"</span>, <span class="st">"GEOMETRIE"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu"><a href="reference/produire_revision.html">produire_revision</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/generer_essentiel.html">generer_essentiel</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu"><a href="reference/produire_revision.html">produire_revision</a></span><span class="op">(</span>format <span class="op">=</span> <span class="st">"auto"</span><span class="op">)</span></span></code></pre></div>
+<p>Les fiches sont reliées aux notions pédagogiques existantes et peuvent inclure des schémas générés directement par R.</p>
+</div>
+<div class="section level2">
 <h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
 </h2>
 <p>Pour découvrir le package, commencer par la vignette <strong>Explorer une classe de 6e avec eduschool</strong>. La vignette <strong>Explorer une classe de 2de générale et technologique</strong> donne ensuite un exemple lycée plus complet, notamment sur les mathématiques et l’orientation après la seconde.</p>
 <p>Les autres vignettes conservent chacune un rôle précis : prise en main, parcours scolaires, programmes et capacités, documentation pédagogique, exercices, architecture des données et développement.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/browseVignettes.html" class="external-link">browseVignettes</a></span><span class="op">(</span><span class="st">"eduschool"</span><span class="op">)</span></span></code></pre></div>
 <p>La documentation complète est également publiée sur le site pkgdown du package.</p>
 </div>

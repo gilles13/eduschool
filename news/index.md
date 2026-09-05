@@ -1,5 +1,48 @@
 # Changelog
 
+## eduschool 0.11.0
+
+### Consolidation du mini-SI
+
+- ajout de metadonnees relationnelles explicites dans
+  `inst/metadata/tables.csv`, `colonnes.csv` et `relations.csv` ;
+- ajout de controles generiques des schemas, cles primaires, cles
+  etrangeres et domaines structurants ;
+- ajout d une seconde couche de controles semantiques :
+  niveau/voie/serie, portee des horaires, programmes/niveaux et
+  coherence temporelle des versions ;
+- lecture deterministe des CSV comme donnees textuelles brutes, avec
+  conversions metier explicites ;
+- ajout d un schema relationnel SVG genere dynamiquement depuis les
+  metadonnees ;
+- ajout de la vignette technique « Rentrer en profondeur dans eduschool
+  » ;
+- correction du millesime 2025-2026 du programme de mathematiques de
+  cycle 3 en sixieme et ajout de la version manquante au referentiel
+  temporel.
+
+### Fiches de revision mathematiques
+
+- ajout d’un moteur de fiches de revision structurees, distinct du
+  moteur d’exercices ;
+- ajout de
+  [`familles_revision()`](https://gilles13.github.io/eduschool/reference/familles_revision.md),
+  [`fiches_revision()`](https://gilles13.github.io/eduschool/reference/fiches_revision.md),
+  [`generer_revision()`](https://gilles13.github.io/eduschool/reference/generer_revision.md),
+  [`generer_essentiel()`](https://gilles13.github.io/eduschool/reference/generer_essentiel.md)
+  et
+  [`produire_revision()`](https://gilles13.github.io/eduschool/reference/produire_revision.md)
+  ;
+- premiere couverture complete de la seconde generale et technologique :
+  logique, algorithmique, nombres et algebre, geometrie, fonctions,
+  statistiques-probabilites et automatismes ;
+- ajout d’une fiche `ESSENTIEL` volontairement tres compacte ;
+- liaison des fiches aux notions pedagogiques existantes afin d’eviter
+  une seconde source de verite ;
+- ajout de schemas generes avec les capacites graphiques de R, sans
+  nouvelle dependance graphique obligatoire ;
+- rendu HTML/PDF suivant le meme principe que les fiches d’exercices.
+
 ## eduschool 0.10.9
 
 ### Consolidation documentaire et ergonomie

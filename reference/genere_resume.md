@@ -12,7 +12,8 @@ genere_resume(
   matiere = "all",
   version = "2026_2027",
   max_themes = 5L,
-  max_notions = 6L
+  max_notions = 6L,
+  serie = NULL
 )
 ```
 
@@ -39,6 +40,10 @@ genere_resume(
 - max_notions:
 
   Nombre maximal de notions affichees par ligne.
+
+- serie:
+
+  Serie facultative (\`"STHR"\`, \`"STMG"\`, \`"STI2D"\`, etc.).
 
 ## Value
 

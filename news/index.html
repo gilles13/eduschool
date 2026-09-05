@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.10.9</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.11.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +29,29 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.11.0" id="eduschool-0110">eduschool 0.11.0<a class="anchor" aria-label="anchor" href="#eduschool-0110"></a></h2>
+<div class="section level3">
+<h3 id="consolidation-du-mini-si-0-11-0">Consolidation du mini-SI<a class="anchor" aria-label="anchor" href="#consolidation-du-mini-si-0-11-0"></a></h3>
+<ul><li>ajout de metadonnees relationnelles explicites dans <code>inst/metadata/tables.csv</code>, <code>colonnes.csv</code> et <code>relations.csv</code> ;</li>
+<li>ajout de controles generiques des schemas, cles primaires, cles etrangeres et domaines structurants ;</li>
+<li>ajout d une seconde couche de controles semantiques : niveau/voie/serie, portee des horaires, programmes/niveaux et coherence temporelle des versions ;</li>
+<li>lecture deterministe des CSV comme donnees textuelles brutes, avec conversions metier explicites ;</li>
+<li>ajout d un schema relationnel SVG genere dynamiquement depuis les metadonnees ;</li>
+<li>ajout de la vignette technique « Rentrer en profondeur dans eduschool » ;</li>
+<li>correction du millesime 2025-2026 du programme de mathematiques de cycle 3 en sixieme et ajout de la version manquante au referentiel temporel.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="fiches-de-revision-mathematiques-0-11-0">Fiches de revision mathematiques<a class="anchor" aria-label="anchor" href="#fiches-de-revision-mathematiques-0-11-0"></a></h3>
+<ul><li>ajout d’un moteur de fiches de revision structurees, distinct du moteur d’exercices ;</li>
+<li>ajout de <code><a href="../reference/familles_revision.html">familles_revision()</a></code>, <code><a href="../reference/fiches_revision.html">fiches_revision()</a></code>, <code><a href="../reference/generer_revision.html">generer_revision()</a></code>, <code><a href="../reference/generer_essentiel.html">generer_essentiel()</a></code> et <code><a href="../reference/produire_revision.html">produire_revision()</a></code> ;</li>
+<li>premiere couverture complete de la seconde generale et technologique : logique, algorithmique, nombres et algebre, geometrie, fonctions, statistiques-probabilites et automatismes ;</li>
+<li>ajout d’une fiche <code>ESSENTIEL</code> volontairement tres compacte ;</li>
+<li>liaison des fiches aux notions pedagogiques existantes afin d’eviter une seconde source de verite ;</li>
+<li>ajout de schemas generes avec les capacites graphiques de R, sans nouvelle dependance graphique obligatoire ;</li>
+<li>rendu HTML/PDF suivant le meme principe que les fiches d’exercices.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.10.9" id="eduschool-0109">eduschool 0.10.9<a class="anchor" aria-label="anchor" href="#eduschool-0109"></a></h2>
 <div class="section level3">

@@ -8,7 +8,7 @@ données.
 ## Usage
 
 ``` r
-resume_niveau(niveau_id, version_id = "2026_2027")
+resume_niveau(niveau_id, version_id = "2026_2027", serie_id = NULL)
 ```
 
 ## Arguments
@@ -20,3 +20,10 @@ resume_niveau(niveau_id, version_id = "2026_2027")
 - version_id:
 
   Version scolaire, par exemple \`2026_2027\`.
+
+- serie_id:
+
+  Serie technologique ou generale facultative. Lorsqu'elle est absente,
+  seuls les horaires communs au niveau sont retournes. Pour un niveau
+  dont la grille est entierement definie par serie (par exemple \`1T\`
+  ou \`TT\`), \`serie_id\` est obligatoire.

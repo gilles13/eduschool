@@ -83,6 +83,23 @@ si LaTeX est disponible et un fichier HTML sinon. Le même principe
 s’applique au corrigé avec
 [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md).
 
+## Réviser les mathématiques
+
+La seconde générale et technologique dispose d’un premier jeu complet de
+fiches thématiques et d’une fiche essentielle :
+
+``` r
+
+generer_revision("2GT", "GEOMETRIE") |>
+    produire_revision(format = "auto")
+
+generer_essentiel("2GT") |>
+    produire_revision(format = "auto")
+```
+
+Les fiches sont reliées aux notions pédagogiques existantes et peuvent
+inclure des schémas générés directement par R.
+
 ## Documentation
 
 Pour découvrir le package, commencer par la vignette **Explorer une
@@ -110,6 +127,10 @@ package.
   : Capacités d'un programme
 - [`chercher_notions()`](https://gilles13.github.io/eduschool/reference/chercher_notions.md)
   : Rechercher des notions
+- [`colonnes_si()`](https://gilles13.github.io/eduschool/reference/colonnes_si.md)
+  : Colonnes du mini-SI eduschool
+- [`controle_integrite_si()`](https://gilles13.github.io/eduschool/reference/controle_integrite_si.md)
+  : Controler l'integrite du mini-SI
 - [`couverture_documentation()`](https://gilles13.github.io/eduschool/reference/couverture_documentation.md)
   : Couverture de la documentation
 - [`diagramme_package()`](https://gilles13.github.io/eduschool/reference/diagramme_package.md)
@@ -130,14 +151,24 @@ package.
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   : Generer un exercice
+- [`familles_revision()`](https://gilles13.github.io/eduschool/reference/familles_revision.md)
+  : Familles de fiches de revision
+- [`fiches_revision()`](https://gilles13.github.io/eduschool/reference/fiches_revision.md)
+  : Lister les fiches de revision disponibles
 - [`genere_resume()`](https://gilles13.github.io/eduschool/reference/genere_resume.md)
   : Generer un resume pedagogique lisible
 - [`generer_diagrammes_documentation()`](https://gilles13.github.io/eduschool/reference/generer_diagrammes_documentation.md)
   : Générer les SVG utilisés par la documentation
 - [`generer_documentation_visuelle()`](https://gilles13.github.io/eduschool/reference/generer_documentation_visuelle.md)
   : Générer toute la documentation visuelle
+- [`generer_essentiel()`](https://gilles13.github.io/eduschool/reference/generer_essentiel.md)
+  : Generer la fiche essentielle d'un niveau
+- [`generer_revision()`](https://gilles13.github.io/eduschool/reference/generer_revision.md)
+  : Generer une fiche de revision thematique
 - [`horaires_niveau()`](https://gilles13.github.io/eduschool/reference/horaires_niveau.md)
   : Horaires d'un niveau scolaire
+- [`inventaire_si()`](https://gilles13.github.io/eduschool/reference/inventaire_si.md)
+  : Inventaire des tables du mini-SI
 - [`niveaux()`](https://gilles13.github.io/eduschool/reference/niveaux.md)
   : Niveaux scolaires
 - [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
@@ -164,6 +195,10 @@ package.
   : Produire un diagramme SVG
 - [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
   : Produire une fiche d'exercices HTML ou PDF
+- [`produire_revision()`](https://gilles13.github.io/eduschool/reference/produire_revision.md)
+  : Produire une fiche de revision HTML ou PDF
+- [`produire_schema_relations_svg()`](https://gilles13.github.io/eduschool/reference/produire_schema_relations_svg.md)
+  : Produire un schema relationnel du mini-SI
 - [`programmes()`](https://gilles13.github.io/eduschool/reference/programmes.md)
   : Programmes
 - [`rappels_capacite()`](https://gilles13.github.io/eduschool/reference/rappels_capacite.md)
@@ -174,10 +209,16 @@ package.
   [`libelle_niveau`](https://gilles13.github.io/eduschool/reference/rapports.md)
   [`libelle_capacite`](https://gilles13.github.io/eduschool/reference/rapports.md)
   : Produire des fiches et corrigés
+- [`relations_si()`](https://gilles13.github.io/eduschool/reference/relations_si.md)
+  : Relations du mini-SI eduschool
+- [`resume_controles_si()`](https://gilles13.github.io/eduschool/reference/resume_controles_si.md)
+  : Resume des controles d'integrite
 - [`resume_niveau()`](https://gilles13.github.io/eduschool/reference/resume_niveau.md)
   : Résumé pédagogique d'un niveau
 - [`series()`](https://gilles13.github.io/eduschool/reference/series.md)
   : Séries scolaires
+- [`tables_si()`](https://gilles13.github.io/eduschool/reference/tables_si.md)
+  : Tables du mini-SI eduschool
 - [`themes_niveau()`](https://gilles13.github.io/eduschool/reference/themes_niveau.md)
   : Grands thèmes étudiés à un niveau
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :
@@ -212,6 +253,8 @@ package.
 
 - [Architecture des
   données](https://gilles13.github.io/eduschool/articles/architecture-des-donnees.md):
+- [Rentrer en profondeur dans
+  eduschool](https://gilles13.github.io/eduschool/articles/rentrer-en-profondeur-dans-eduschool.md):
 
 ### Développement
 

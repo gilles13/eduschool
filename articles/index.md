@@ -27,6 +27,8 @@
 
 - [Architecture des
   données](https://gilles13.github.io/eduschool/articles/architecture-des-donnees.md):
+- [Rentrer en profondeur dans
+  eduschool](https://gilles13.github.io/eduschool/articles/rentrer-en-profondeur-dans-eduschool.md):
 
 ### Développement
 
