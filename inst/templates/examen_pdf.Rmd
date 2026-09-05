@@ -1,0 +1,121 @@
+---
+output: pdf_document
+params:
+  examen: NULL
+  ressources: NULL
+  corrige: false
+  logo: ""
+fontsize: 11pt
+geometry: margin=1.75cm
+header-includes:
+  - \usepackage{array}
+  - \usepackage{booktabs}
+  - \usepackage{graphicx}
+  - \usepackage{xcolor}
+  - \usepackage{enumitem}
+  - \usepackage{needspace}
+  - \setlength{\parindent}{0pt}
+  - \setlength{\parskip}{0.35em}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, results = "asis")
+x = params$examen
+e = x$entete
+items = x$items
+ressources = params$ressources
+corrige = isTRUE(params$corrige)
+tex = eduschool:::echapper_tex
+```
+
+```{r entete, results='asis'}
+cat("\\begin{center}\n")
+if (nzchar(params$logo) && file.exists(params$logo)) {
+  cat("\\includegraphics[width=2.6cm]{\\detokenize{", normalizePath(params$logo, winslash = "/"), "}}\\par\\vspace{0.5em}\n", sep = "")
+}
+cat("{\\Large\\bfseries DIPLÔME NATIONAL DU BREVET}\\par\n")
+cat("\\vspace{0.2em}{\\large Session ", tex(e$session), "}\\par\n", sep = "")
+cat("\\vspace{0.3em}{\\large\\bfseries Mathématiques - série générale}\\par\n")
+if (corrige) cat("\\vspace{0.35em}{\\large\\bfseries CORRIGE}\\par\n")
+cat("\\end{center}\n\\vspace{0.6em}\n")
+cat("\\begin{center}\n")
+cat("\\begin{tabular}{|>{\\raggedright\\arraybackslash}p{0.68\\textwidth}|>{\\centering\\arraybackslash}p{0.20\\textwidth}|}\n")
+cat("\\hline\n")
+cat("\\textbf{", tex(e$libelle), "} & \\textbf{", tex(e$points), " points} \\\\\n", sep = "")
+cat("\\textbf{Durée : ", tex(e$duree_minutes), " minutes} & ", if (identical(e$calculatrice, "NON")) "Calculatrice interdite" else "Calculatrice autorisée", " \\\\\n", sep = "")
+cat("\\hline\n\\end{tabular}\n\\end{center}\n")
+cat("\\vspace{0.7em}\n")
+cat("\\fcolorbox{black}{gray!8}{\\parbox{0.94\\textwidth}{", tex(e$instructions), "}}\n", sep = "")
+cat("\\vspace{0.8em}\n")
+```
+
+```{r questions, results='asis'}
+if (length(x$exercices)) {
+  for (id in names(x$exercices)) {
+    ex = x$exercices[[id]]
+    rid = ex$ressource_id
+    a_ressource = !is.na(rid) && nzchar(rid) && rid %in% names(ressources) && file.exists(ressources[[rid]])
+    if (a_ressource) {
+      cat("\\Needspace{0.46\\textheight}\n")
+    } else {
+      cat("\\Needspace{0.28\\textheight}\n")
+    }
+    cat("\\subsection*{Exercice ", tex(ex$ordre), "}", sep = "")
+    if (nzchar(ex$points_cibles)) cat("\\hfill{\\small ", tex(ex$points_cibles), " point(s)}", sep = "")
+    cat("\n\n", tex(ex$contexte), "\\par\n\n", sep = "")
+    if (a_ressource) {
+      f = ressources[[rid]]
+      if (file.exists(f)) {
+        cat("\\begin{center}\n\\includegraphics[width=0.68\\textwidth,height=5.2cm,keepaspectratio]{\\detokenize{", normalizePath(f, winslash = "/"), "}}\n\\end{center}\n", sep = "")
+      }
+    }
+    for (j in seq_len(nrow(ex$questions))) {
+      q = ex$questions[j, , drop = FALSE]
+      cat("\\textbf{", tex(q$ordre), ".} ", tex(q$enonce), sep = "")
+      if (nzchar(q$points)) cat(" \\hfill{\\small [", tex(q$points), " pt]}", sep = "")
+      cat("\\par\n")
+      if (corrige) {
+        cat("\\textbf{Réponse : }", tex(q$reponse), "\\par\n", sep = "")
+        cat("\\textit{", tex(q$correction), "}\\par\n", sep = "")
+      } else {
+        cat("\\vspace{0.55em}\n")
+      }
+      cat("\\medskip\n")
+    }
+    cat("\\vspace{0.5em}\n")
+  }
+} else {
+  for (i in seq_len(nrow(items))) {
+    q = items[i, , drop = FALSE]
+    rid = q$ressource_id[[1]]
+    a_ressource = !is.na(rid) && nzchar(rid) && rid %in% names(ressources) && file.exists(ressources[[rid]])
+    if (a_ressource) {
+      cat("\\Needspace{0.30\\textheight}\n")
+    } else {
+      cat("\\Needspace{0.18\\textheight}\n")
+    }
+    cat("\\subsection*{Question ", tex(q$ordre), "}", sep = "")
+    if (nzchar(q$points_cibles)) cat("\\hfill{\\small ", tex(q$points_cibles), " point(s)}", sep = "")
+    cat("\n\n")
+    cat(tex(q$enonce), "\\par\n\n")
+    if (a_ressource) {
+      f = ressources[[rid]]
+      if (file.exists(f)) {
+        cat("\\begin{center}\n")
+        cat("\\includegraphics[width=0.62\\textwidth,height=4.1cm,keepaspectratio]{\\detokenize{", normalizePath(f, winslash = "/"), "}}\n", sep = "")
+        cat("\\end{center}\n")
+      }
+    }
+    if (corrige) {
+      cat("\\medskip\\textbf{Réponse : }", tex(q$reponse), "\\par\n", sep = "")
+      cat("\\textit{", tex(q$correction), "}\\par\n", sep = "")
+    } else cat("\\vspace{0.55em}\n")
+    cat("\\vspace{0.35em}\n")
+  }
+}
+```
+
+```{r pied, results='asis'}
+cat("\\vfill\n")
+cat("\\begin{center}\\small Document d'entraînement généré avec eduschool - sujet reproductible à partir de son seed.\\end{center}\n")
+```

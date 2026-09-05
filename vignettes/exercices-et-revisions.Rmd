@@ -108,3 +108,21 @@ Le contenu des fiches est stocké dans `inst/revision/`. Les relations avec les
 notions existantes sont séparées du contenu éditorial, de sorte qu'une fiche de
 révision reste une vue synthétique du système d'information et ne constitue pas
 une nouvelle source de vérité.
+
+
+## Composer un examen de mathématiques
+
+Les examens constituent une troisième chaîne de production, distincte des fiches
+d’exercices et des fiches de révision. Pour le DNB, le flux est :
+
+```{r, eval=FALSE}
+sujet = composer_examen("DNB", 2026, seed = 123)
+partie1 = rediger_examen(sujet, partie = 1)
+produire_examen(partie1)
+produire_corrige_examen(partie1)
+```
+
+Les figures et blocs Scratch ne sont pas des images stockées dans la banque. Ils
+sont décrits comme des ressources structurées puis dessinés par R au moment du
+rendu. La vignette **Composer et produire un DNB de mathématiques** détaille ce
+fonctionnement et la façon d’enrichir la banque avec les nouvelles sessions.

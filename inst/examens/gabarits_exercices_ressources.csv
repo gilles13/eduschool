@@ -1,0 +1,5 @@
+gabarit_compose_id;ressource_id;type;moteur;position
+GABC_DNB_GEOM_AMENAGEMENT;FIGURE;FIGURE_GEOMETRIQUE;plan_triangle_rectangle;APRES_CONTEXTE
+GABC_DNB_FONC_TARIFS;GRAPHIQUE;GRAPHIQUE;courbes_affines_tarifs;APRES_CONTEXTE
+GABC_DNB_DATA_ENQUETE;DIAGRAMME;DIAGRAMME;diagramme_batons_enquete;APRES_CONTEXTE
+GABC_DNB_ALGO_PROGRAMME;SCRATCH;SCRATCH;programme_calcul_scratch;APRES_Q2

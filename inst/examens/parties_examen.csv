@@ -1,0 +1,3 @@
+partie_id;examen_id;ordre;libelle;type;duree_minutes;points;calculatrice;justification;copies_ramassees;nb_items_min;nb_items_max
+DNB2026_P1;EX_DNB_MATH_GEN_2026;1;Automatismes;AUTOMATISMES;20;6;NON;NON_REQUISE_SAUF_INDICATION;OUI;8;10
+DNB2026_P2;EX_DNB_MATH_GEN_2026;2;Raisonnement et resolution de problemes;PROBLEMES;100;14;OUI;OUI;NON;4;5

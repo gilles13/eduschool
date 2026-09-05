@@ -1,0 +1,16 @@
+gabarit_compose_id;question_id;ordre;libelle;concept_id;question_parent_id;points;competence
+GABC_DNB_GEOM_AMENAGEMENT;Q1;1;Justifier une longueur avec Pythagore;MATC_PYTHAGORE;;1;RAISONNER
+GABC_DNB_GEOM_AMENAGEMENT;Q2;2;Calculer une aire;MATC_AIRE;Q1;1;CALCULER
+GABC_DNB_GEOM_AMENAGEMENT;Q3;3;Exploiter une proportion pour une quantite;MATC_PROPORTIONNALITE;Q2;1.5;MODELISER
+GABC_DNB_FONC_TARIFS;Q1;1;Calculer l image pour un tarif;MATC_FONCTION_AFFINE;;0.5;CALCULER
+GABC_DNB_FONC_TARIFS;Q2;2;Lire et interpreter un graphique;MATC_FONCTION_AFFINE;;1;REPRESENTER
+GABC_DNB_FONC_TARIFS;Q3;3;Resoudre l egalite des deux tarifs;MATC_EQUATION_PREMIER_DEGRE;Q2;1;RAISONNER
+GABC_DNB_FONC_TARIFS;Q4;4;Choisir le modele adapte;MATC_FONCTION_AFFINE;Q3;1;COMMUNIQUER
+GABC_DNB_DATA_ENQUETE;Q1;1;Determiner un indicateur statistique;MATC_MEDIANE;;1;CALCULER
+GABC_DNB_DATA_ENQUETE;Q2;2;Calculer un pourcentage;MATC_POURCENTAGE;;1;CALCULER
+GABC_DNB_DATA_ENQUETE;Q3;3;Calculer une probabilite a partir des donnees;MATC_PROBABILITE;Q2;1;MODELISER
+GABC_DNB_DATA_ENQUETE;Q4;4;Interpreter le resultat dans le contexte;MATC_PROBABILITE;Q3;0.5;COMMUNIQUER
+GABC_DNB_ALGO_PROGRAMME;Q1;1;Executer un programme de calcul;MATC_VARIABLE;;0.5;CALCULER
+GABC_DNB_ALGO_PROGRAMME;Q2;2;Traduire le programme par une expression;MATC_EXPRESSION_LITTERALE;Q1;1;MODELISER
+GABC_DNB_ALGO_PROGRAMME;Q3;3;Completer ou lire le programme Scratch;MATC_BOUCLE;;1;REPRESENTER
+GABC_DNB_ALGO_PROGRAMME;Q4;4;Resoudre une equation associee;MATC_EQUATION_PREMIER_DEGRE;Q2;1;RAISONNER

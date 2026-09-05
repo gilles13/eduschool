@@ -1,0 +1,15 @@
+profil_id;partie_id;domaine;support;difficulte_min;difficulte_max;poids;occurrences_min;occurrences_max;description
+DNB26_A_NOMBRES;DNB2026_P1;NOMBRES;QUESTION_COURTE;1;2;4;1;3;Automatismes de calcul, fractions, puissances ou pourcentages
+DNB26_A_ALGEBRE;DNB2026_P1;ALGEBRE;QUESTION_COURTE;1;2;3;0;2;Expression litterale ou equation courte
+DNB26_A_GEOMETRIE;DNB2026_P1;GEOMETRIE;FIGURE;1;2;4;1;2;Lecture de figure, angle, repere ou trigonometrie directe
+DNB26_A_STATS;DNB2026_P1;STATISTIQUES;DIAGRAMME;1;2;3;0;2;Lecture de donnees et indicateur simple
+DNB26_A_PROBA;DNB2026_P1;PROBABILITES;SCHEMA;1;2;3;0;2;Probabilite simple en equiprobabilite
+DNB26_A_FONCTIONS;DNB2026_P1;FONCTIONS;TABLEAU_OU_GRAPHIQUE;1;2;3;0;2;Proportionnalite, image ou evolution simple
+DNB26_A_ARITH;DNB2026_P1;ARITHMETIQUE;QUESTION_COURTE;1;2;2;0;1;Divisibilite ou nombres premiers
+DNB26_A_GRANDEURS;DNB2026_P1;GRANDEURS;FIGURE_OU_TEXTE;1;2;2;0;1;Conversion ou grandeur usuelle
+DNB26_A_ALGO;DNB2026_P1;ALGORITHMIQUE;SCRATCH;1;2;1;0;1;Lecture immediate d un programme ou d une boucle
+DNB26_P_GEOM;DNB2026_P2;GEOMETRIE;FIGURE_GEOMETRIQUE;2;3;5;1;2;Probleme geometrique combinant calcul et justification
+DNB26_P_FONC;DNB2026_P2;FONCTIONS;GRAPHIQUE_OU_TABLEAU;2;3;4;1;2;Fonctions, proportionnalite, tableur ou calcul litteral en contexte
+DNB26_P_DATA;DNB2026_P2;STATISTIQUES;TABLEAU_DIAGRAMME;2;3;3;1;2;Statistiques, probabilites ou donnees en contexte
+DNB26_P_ALGO;DNB2026_P2;ALGORITHMIQUE;SCRATCH;2;3;4;1;1;Lecture, completion ou analyse d un programme Scratch
+DNB26_P_GRAND;DNB2026_P2;GRANDEURS;SCHEMA;2;3;2;0;1;Probleme de mesures, echelles, aires ou volumes

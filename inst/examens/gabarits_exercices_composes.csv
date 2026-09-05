@@ -1,0 +1,5 @@
+gabarit_compose_id;examen_code;partie_type;libelle;domaine;support;difficulte;generateur_id;objectif;origine;source_id;session_source;statut
+GABC_DNB_GEOM_AMENAGEMENT;DNB;PROBLEMES;Amenagement geometrique;GEOMETRIE;FIGURE_GEOMETRIQUE;2;compose_geom_amenagement;Relier Pythagore, aire et proportionnalite dans une situation d amenagement;EDUSCHOOL;SRC_EDUSCOL_DNB_MATH_2026;2026;ACTIF
+GABC_DNB_FONC_TARIFS;DNB;PROBLEMES;Comparaison de deux tarifs;FONCTIONS;GRAPHIQUE_OU_TABLEAU;2;compose_fonc_tarifs;Relier fonctions affines, lecture graphique et equation dans une comparaison de modeles;EDUSCHOOL;SRC_EDUSCOL_DNB_MATH_2026;2026;ACTIF
+GABC_DNB_DATA_ENQUETE;DNB;PROBLEMES;Enquete et donnees;STATISTIQUES;TABLEAU_DIAGRAMME;2;compose_data_enquete;Relier statistiques, pourcentages et probabilites dans une enquete;EDUSCHOOL;SRC_EDUSCOL_DNB_MATH_2026;2026;ACTIF
+GABC_DNB_ALGO_PROGRAMME;DNB;PROBLEMES;Programme de calcul et Scratch;ALGORITHMIQUE;SCRATCH;2;compose_algo_programme;Relier programme de calcul, Scratch, calcul litteral et equation;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF

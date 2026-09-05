@@ -1,0 +1,32 @@
+gabarit_id;parametre;type;minimum;maximum;valeurs;description
+GAB_DNB_AUT_FRACTION_SOMME;denominateur;integer;2;12;;Denominateur commun
+GAB_DNB_AUT_FRACTION_SOMME;numerateur_1;integer;1;9;;Premier numerateur
+GAB_DNB_AUT_FRACTION_SOMME;numerateur_2;integer;1;9;;Second numerateur
+GAB_DNB_AUT_FRACTION_QUANTITE;denominateur;integer;2;10;;Denominateur de la fraction
+GAB_DNB_AUT_FRACTION_QUANTITE;numerateur;integer;1;9;;Numerateur strictement inferieur au denominateur
+GAB_DNB_AUT_FRACTION_QUANTITE;quotient;integer;2;12;;Facteur assurant une quantite divisible
+GAB_DNB_AUT_POURCENTAGE;taux;choice;;;10|20|25|50;Pourcentage usuel
+GAB_DNB_AUT_POURCENTAGE;base;choice;;;40|60|80|100|120|160|200;Quantite de reference
+GAB_DNB_AUT_PRIORITES;a;integer;2;12;;Premier terme
+GAB_DNB_AUT_PRIORITES;b;integer;2;9;;Facteur
+GAB_DNB_AUT_PRIORITES;c;integer;2;9;;Facteur
+GAB_DNB_AUT_EQUATION;a;integer;2;9;;Coefficient de x
+GAB_DNB_AUT_EQUATION;b;integer;-10;10;;Terme constant
+GAB_DNB_AUT_EQUATION;membre_droit;integer;-15;20;;Membre droit de l equation
+GAB_DNB_AUT_MEDIANE;effectif;choice;;;5|7;Effectif impair
+GAB_DNB_AUT_MEDIANE;minimum;integer;1;8;;Valeur minimale de tirage
+GAB_DNB_AUT_MEDIANE;maximum;integer;12;30;;Valeur maximale de tirage
+GAB_DNB_AUT_DIVISIBILITE;diviseur;choice;;;2|3|4|5|9;Diviseur teste
+GAB_DNB_AUT_DIVISIBILITE;quotient;integer;12;80;;Quotient de base
+GAB_DNB_AUT_PUISSANCES;exposant_1;integer;1;6;;Premier exposant
+GAB_DNB_AUT_PUISSANCES;exposant_2;integer;1;5;;Second exposant
+GAB_DNB_AUT_PROPORTION;valeur_unitaire;integer;2;9;;Valeur pour une unite
+GAB_DNB_AUT_PROPORTION;quantite;integer;3;12;;Quantite demandee
+GAB_DNB_AUT_ANGLE_TRIANGLE;angle_1;integer;25;80;;Premier angle en degres
+GAB_DNB_AUT_ANGLE_TRIANGLE;angle_2;integer;25;80;;Deuxieme angle en degres
+GAB_DNB_AUT_PROBA_URNE;favorables;integer;1;8;;Nombre d issues favorables
+GAB_DNB_AUT_PROBA_URNE;autres;integer;1;8;;Nombre d autres issues
+GAB_DNB_AUT_AIRE_RECTANGLE;longueur;integer;3;15;;Longueur du rectangle en centimetres
+GAB_DNB_AUT_AIRE_RECTANGLE;largeur;integer;2;12;;Largeur du rectangle en centimetres
+GAB_DNB_AUT_SCRATCH_BOUCLE;repetitions;integer;2;8;;Nombre de repetitions de la boucle
+GAB_DNB_AUT_SCRATCH_BOUCLE;pas;choice;;;10|20|25|30|40|50;Nombre de pas parcourus a chaque repetition

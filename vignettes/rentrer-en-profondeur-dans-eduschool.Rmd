@@ -28,7 +28,7 @@ métadonnées réellement installées avec `eduschool`.
 ## 1. Le principe : des CSV simples, un modèle explicite
 
 Les données sont rangées par domaine sous `inst/` : référentiels, enseignements,
-programmes, documentation, exercices et révisions. Elles restent donc lisibles
+programmes, documentation, exercices, révisions et examens. Elles restent donc lisibles
 avec les outils les plus simples possibles :
 
 ```{r, eval=FALSE}
@@ -243,6 +243,36 @@ vignettes / rapports / fiches pedagogiques
 
 Cette séparation permet de corriger une règle une seule fois dans le package et
 d'en faire bénéficier tous les usages.
+
+
+## 8 bis. De la composition au PDF d’examen
+
+Le moteur d’examens conserve une frontière nette entre contenu et présentation :
+
+```text
+inst/examens/*.csv
+        |
+        v
+composer_examen()
+        |
+        v
+rediger_examen()
+        |
+        +--> énoncés / réponses / corrections
+        |
+        +--> ressources déclaratives
+                  |
+                  v
+        produire_ressource_examen()
+                  |
+                  v
+        produire_examen() / produire_corrige_examen()
+```
+
+Les ressources intermédiaires sont produites en vectoriel lorsque le format le
+permet. Le template PDF ne contient donc pas la logique mathématique : il assemble
+un objet déjà rédigé et des figures déjà calculées. Cette séparation facilitera
+l’ajout de nouveaux rendus et de nouvelles familles de questions.
 
 ## 9. Ajouter une nouvelle table sans fragiliser le SI
 

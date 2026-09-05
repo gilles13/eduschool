@@ -87,3 +87,17 @@ REL085;types_exercices_concepts_math;type_exercice_id;types_exercices_math;type_
 REL086;types_exercices_concepts_math;concept_id;concepts_math;concept_id;non;n:1;Concept mobilise par le patron
 REL087;types_exercices_methodes_math;type_exercice_id;types_exercices_math;type_exercice_id;non;n:1;Patron d exercice relie
 REL088;types_exercices_methodes_math;methode_id;methodes_math;methode_id;non;n:1;Methode mobilisee par le patron
+REL089;examens;discipline_id;disciplines;discipline_id;non;n:1;Discipline de l examen
+REL090;examens;source_id;sources;source_id;non;n:1;Cadre officiel de l examen
+REL091;parties_examen;examen_id;examens;examen_id;non;n:1;Examen contenant la partie
+REL092;profils_examen;partie_id;parties_examen;partie_id;non;n:1;Partie concernee par le profil
+REL093;profils_examen_concepts;profil_id;profils_examen;profil_id;non;n:1;Profil d examen
+REL094;profils_examen_concepts;concept_id;concepts_math;concept_id;non;n:1;Concept mathematique mobilisable
+REL095;gabarits_exercices;source_id;sources;source_id;oui;n:1;Source ayant inspire ou documente le gabarit
+REL096;gabarits_exercices_concepts;gabarit_id;gabarits_exercices;gabarit_id;non;n:1;Gabarit d exercice
+REL097;gabarits_exercices_concepts;concept_id;concepts_math;concept_id;non;n:1;Concept mathematique mobilise
+REL098;gabarits_parametres;gabarit_id;gabarits_exercices;gabarit_id;non;n:1;Gabarit parametre
+REL099;gabarits_exercices_composes;source_id;sources;source_id;oui;n:1;Source d inspiration du gabarit compose
+REL100;gabarits_exercices_questions;gabarit_compose_id;gabarits_exercices_composes;gabarit_compose_id;non;n:1;Gabarit compose contenant la question
+REL101;gabarits_exercices_questions;concept_id;concepts_math;concept_id;non;n:1;Concept principal de la question
+REL102;gabarits_exercices_ressources;gabarit_compose_id;gabarits_exercices_composes;gabarit_compose_id;non;n:1;Gabarit compose utilisant la ressource

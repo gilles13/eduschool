@@ -1,7 +1,7 @@
 Package: eduschool
 Type: Package
 Title: Cartographie de la scolarité française et outils de mathématiques
-Version: 0.15.0
+Version: 0.16.0
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
 Description: Cartographie la scolarité des collégiens et lycéens en France :
     niveaux, cycles, voies, séries, enseignements, programmes, orientation et
@@ -17,12 +17,12 @@ Depends: R (>= 4.1.0)
 Imports:
     DBI,
     duckdb,
+    ggplot2,
     rmarkdown
 Suggests:
     testthat (>= 3.0.0),
     knitr,
-    roxygen2,
-    ggplot2
+    roxygen2
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 URL: https://gilles13.github.io/eduschool/

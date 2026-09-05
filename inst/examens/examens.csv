@@ -1,0 +1,2 @@
+examen_id;code;session;libelle;serie;discipline_id;duree_minutes;points;source_id;statut
+EX_DNB_MATH_GEN_2026;DNB;2026;Diplome national du brevet - mathematiques;GENERALE;MAT;120;20;SRC_EDUSCOL_DNB_MATH_2026;OFFICIEL

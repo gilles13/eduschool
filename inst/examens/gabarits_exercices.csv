@@ -1,0 +1,14 @@
+gabarit_id;examen_code;partie_type;libelle;domaine;support;difficulte;generateur_id;objectif;origine;source_id;session_source;statut
+GAB_DNB_AUT_FRACTION_SOMME;DNB;AUTOMATISMES;Somme de fractions de meme denominateur;NOMBRES;QUESTION_COURTE;1;fraction_somme;Effectuer un calcul simple sur les fractions;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_FRACTION_QUANTITE;DNB;AUTOMATISMES;Fraction d une quantite;NOMBRES;QUESTION_COURTE;1;fraction_quantite;Calculer une fraction simple d une quantite;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_POURCENTAGE;DNB;AUTOMATISMES;Pourcentage d une quantite;NOMBRES;QUESTION_COURTE;1;pourcentage;Calculer mentalement un pourcentage usuel;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_PRIORITES;DNB;AUTOMATISMES;Priorites operatoires;NOMBRES;QUESTION_COURTE;1;priorites;Effectuer un calcul en respectant les priorites;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_EQUATION;DNB;AUTOMATISMES;Equation du premier degre;ALGEBRE;QUESTION_COURTE;1;equation_ax_b;Resoudre une equation simple du premier degre;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_MEDIANE;DNB;AUTOMATISMES;Mediane d une petite serie;STATISTIQUES;QUESTION_COURTE;1;mediane;Determiner la mediane d une petite serie ordonnee ou non;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_DIVISIBILITE;DNB;AUTOMATISMES;Test de divisibilite;ARITHMETIQUE;QUESTION_COURTE;1;divisibilite;Reconnaitre une divisibilite simple;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_PUISSANCES;DNB;AUTOMATISMES;Produit de puissances de dix;NOMBRES;QUESTION_COURTE;1;puissances_dix;Utiliser les regles elementaires sur les puissances de dix;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_PROPORTION;DNB;AUTOMATISMES;Situation de proportionnalite;FONCTIONS;QUESTION_COURTE;1;proportionnalite;Exploiter mentalement un coefficient de proportionnalite;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_ANGLE_TRIANGLE;DNB;AUTOMATISMES;Angle manquant dans un triangle;GEOMETRIE;FIGURE;1;angle_triangle;Calculer un angle manquant dans un triangle;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_PROBA_URNE;DNB;AUTOMATISMES;Probabilite simple en equiprobabilite;PROBABILITES;SCHEMA;1;probabilite_urne;Calculer une probabilite simple comme rapport de cas favorables;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_AIRE_RECTANGLE;DNB;AUTOMATISMES;Aire d un rectangle;GRANDEURS;FIGURE_OU_TEXTE;1;aire_rectangle;Calculer l aire d un rectangle a partir de ses dimensions;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF
+GAB_DNB_AUT_SCRATCH_BOUCLE;DNB;AUTOMATISMES;Lecture d une boucle Scratch;ALGORITHMIQUE;SCRATCH;1;scratch_boucle;Determiner l effet d une boucle Scratch simple;EDUSCHOOL;SRC_MEN_DNB_MATH_2026_SUJET;2026;ACTIF

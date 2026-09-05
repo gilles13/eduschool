@@ -46,6 +46,8 @@ navbar:
         href: articles/mathematiques-1re-specialite.html
       - text: Terminale spécialité
         href: articles/mathematiques-terminale-specialite.html
+      - text: Composer un DNB
+        href: articles/examens-dnb.html
       - text: Fiches de révision
         href: articles/fiches-revision-mathematiques.html
       - text: Fiche mathématiques 6e
@@ -94,6 +96,7 @@ articles:
   - mathematiques-2de
   - mathematiques-1re-specialite
   - mathematiques-terminale-specialite
+  - examens-dnb
   - fiches-revision-mathematiques
   - fiche-mathematiques-6e
   - fiche-derivation-premiere
