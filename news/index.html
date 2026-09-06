@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.18.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.19.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,6 +57,19 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.19.0" id="eduschool-0190">eduschool 0.19.0<a class="anchor" aria-label="anchor" href="#eduschool-0190"></a></h2>
+<div class="section level3">
+<h3 id="nouvelles-structures-de-raisonnement-dnb-0-19-0">Nouvelles structures de raisonnement DNB<a class="anchor" aria-label="anchor" href="#nouvelles-structures-de-raisonnement-dnb-0-19-0"></a></h3>
+<ul><li>ajout du gabarit <code>GABC_DNB_GRAND_COUVERTURE</code> : aire rectangulaire, rendement de couverture, nombre entier minimal d unites et cout total ;</li>
+<li>cinq contextes semantiques reutilisent la meme structure mathematique : peinture d un mur, carrelage d un sol, dalles de terrasse, enduit de facade et peinture d un plafond ;</li>
+<li>le nombre d unites est toujours arrondi a l entier superieur avec <code><a href="https://rdrr.io/r/base/Round.html" class="external-link">ceiling()</a></code> afin de modeliser une quantite achetable ;</li>
+<li>aucun enonce complet n est stocke dans les tables de contextes : le vocabulaire reste assemble par le moteur R.</li>
+<li>six autres structures de raisonnement completent la banque : vitesse-distance-duree, echelle et conversions, volume-conversion-cout, recette et proportionnalite, pourcentages-effectifs-probabilite, Pythagore et trigonometrie ;</li>
+<li>la banque DNB partie 2 passe ainsi de 9 a 15 familles distinctes, sans dupliquer la famille fonctions-tableau-graphique-intersection deja couverte par <code>GABC_DNB_FONC_TARIFS</code> ;</li>
+<li>chaque nouvelle famille possede au moins quatre contextes semantiques et des tests numeriques portant sur ses invariants mathematiques.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.18.0" id="eduschool-0180">eduschool 0.18.0<a class="anchor" aria-label="anchor" href="#eduschool-0180"></a></h2>
 <div class="section level3">

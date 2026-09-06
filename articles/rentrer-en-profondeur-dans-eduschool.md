@@ -186,11 +186,11 @@ knitr::kable(
 | gabarits_exercices | examens | gabarit_id | 13 | 13 |
 | gabarits_exercices_concepts | examens | gabarit_id,concept_id | 14 | 3 |
 | gabarits_parametres | examens | gabarit_id,parametre | 31 | 7 |
-| gabarits_exercices_composes | examens | gabarit_compose_id | 8 | 13 |
-| gabarits_exercices_questions | examens | gabarit_compose_id,question_id | 27 | 8 |
+| gabarits_exercices_composes | examens | gabarit_compose_id | 15 | 13 |
+| gabarits_exercices_questions | examens | gabarit_compose_id,question_id | 48 | 8 |
 | gabarits_exercices_ressources | examens | gabarit_compose_id,ressource_id | 6 | 5 |
-| contextes_exercices | examens | contexte_id | 40 | 28 |
-| gabarits_exercices_contextes | examens | gabarit_compose_id,contexte_id | 40 | 4 |
+| contextes_exercices | examens | contexte_id | 69 | 28 |
+| gabarits_exercices_contextes | examens | gabarit_compose_id,contexte_id | 69 | 4 |
 
 Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
 dans cette vignette lors de sa reconstruction.
