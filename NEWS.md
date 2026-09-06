@@ -1,3 +1,20 @@
+# eduschool 0.22.2
+
+- ajoute CONTRIBUTING.md
+- reconnaît officiellement le droit de ne rien comprendre
+- transforme l'incompréhension en contribution utile
+- documente la règle sacrée : 0 error, 0 warning, 0 note
+- exclut le règlement du build après que le règlement a enfreint le règlement
+- confirme que R CMD check a davantage d'autorité que les mainteneurs
+
+# eduschool 0.22.1
+
+- ajout de `CONTRIBUTING.md` : HELP PLIZ explique enfin comment aider ;
+- documentation des contributions pedagogiques, des propositions d exercices et des corrections ;
+- rappel de la regle qualite du projet : **0 error, 0 warning, 0 note** ;
+- confirmation qu une abstraction sans justificatif d emploi reste a la porte ;
+- resolution d un detail administratif legerement important : le projet explique desormais comment contribuer.
+
 # eduschool 0.22.0
 
 - ajout d une page « A propos » qui assume l origine du projet : un parent qui essaie de comprendre, d apprendre, puis d expliquer les mathematiques a ses enfants ;
