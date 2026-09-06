@@ -22,6 +22,12 @@
   : Concepts mathematiques
 - [`contextes_exercices()`](https://gilles13.github.io/eduschool/reference/contextes_exercices.md)
   : Contextes d'exercices composes
+- [`controle_integrite()`](https://gilles13.github.io/eduschool/reference/controle_integrite.md)
+  : Controler l'ensemble du projet eduschool
+- [`controle_integrite_examens()`](https://gilles13.github.io/eduschool/reference/controle_integrite_examens.md)
+  : Controler la coherence metier des examens
+- [`controle_integrite_math()`](https://gilles13.github.io/eduschool/reference/controle_integrite_math.md)
+  : Controler la coherence metier des mathematiques
 - [`controle_integrite_si()`](https://gilles13.github.io/eduschool/reference/controle_integrite_si.md)
   : Controler l'integrite du mini-SI
 - [`couleur_cycle()`](https://gilles13.github.io/eduschool/reference/couleur_cycle.md)

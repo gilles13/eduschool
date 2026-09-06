@@ -2,8 +2,10 @@
 
 ### Decouvrir eduschool
 
-Premiers reperes pour explorer le referentiel et une classe.
+Premiers reperes pour les parents, les eleves et les utilisateurs R.
 
+- [Prendre un parent par la
+  main](https://gilles13.github.io/eduschool/articles/prendre-un-parent-par-la-main.md):
 - [Prise en main de
   eduschool](https://gilles13.github.io/eduschool/articles/prise-en-main.md):
 - [Explorer une classe de 6e avec
