@@ -10,7 +10,7 @@ vous êtes au bon endroit.
 
 ## La règle la plus importante
 
-**Ne pas comprendre est un cas d'utilisation, pas une erreur utilisateur.**
+**L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
 
 eduschool est notamment développé par un parent qui essaie de comprendre ce
 que ses enfants apprennent, puis de l'expliquer sans provoquer de catastrophe

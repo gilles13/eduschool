@@ -32,8 +32,8 @@ Plusieurs regards sont explicitement utiles :
 - **« Je connais R »** : améliorer les fonctions, graphiques, tests, contrôles,
   performances ou la documentation technique.
 
-**Ne pas comprendre est un cas d'utilisation, pas une erreur utilisateur.** Une
-issue qui décrit clairement une difficulté peut donc être aussi utile qu'une
+**L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
+Une issue qui décrit clairement une difficulté peut donc être aussi utile qu'une
 pull request qui apporte déjà sa solution.
 
 ## Un socle commun, des usages libres

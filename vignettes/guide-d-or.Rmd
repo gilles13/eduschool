@@ -62,9 +62,18 @@ Si vous êtes justement la personne qui n'a pas compris, bienvenue aussi.
 
 Nous avons besoin des deux.
 
-Car :
+Mais `eduschool` ne prétend pas détenir la bonne méthode.
 
-> **Ne pas comprendre est un cas d'utilisation, pas une erreur utilisateur.**
+> **Il n'existe pas une seule bonne façon d'apprendre.**
+
+Une formule, un dessin, un exemple, un graphique ou une autre explication peuvent
+fonctionner différemment selon les personnes et les moments. Le projet propose
+des pistes ; il ne prétend pas apprendre les mathématiques à la place de
+quelqu'un.
+
+Et lorsque l'essai ne fonctionne pas :
+
+> **L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
 
 # Les données
 
@@ -279,6 +288,52 @@ Les données et les personnes restent sérieuses.
 
 Nous pouvons nous moquer du reste.
 
+# La navigation
+
+Une documentation doit aider à trouver l'information, pas demander au lecteur de
+reconstituer l'arborescence mentale du développeur.
+
+> **Quand le développeur ne sait plus comment naviguer dans son propre site, l'utilisateur n'a aucune chance.**
+
+Une conséquence éditoriale en découle :
+
+> **Une page d'index doit aider à choisir où aller, pas prouver qu'on possède beaucoup de fichiers.**
+
+Et une vignette parfaitement construite mais introuvable mérite son propre
+statut administratif :
+
+> **Une vignette non liée dans la navbar existe techniquement. Pédagogiquement, c'est une légende urbaine.**
+
+# Les contraintes utiles
+
+Une fiche essentielle doit rester synthétique. Cela ne signifie pas qu'une même
+limite arbitraire convient à la sixième et à la terminale.
+
+> **Une fiche essentielle doit rester synthétique, mais le nombre de notions dépend du niveau, pas d'une limite arbitraire fixée trop tôt.**
+
+D'où la règle technique correspondante :
+
+> **Une contrainte qui oblige à simplifier le programme plutôt que le code est probablement placée au mauvais endroit.**
+
+# La Sainte Trinité
+
+Le contrôle technique possède désormais sa formulation liturgique :
+
+> **La Sainte Trinité d'eduschool : 0 erreur, 0 warning, 0 note.**
+
+Et `R CMD check` vit que cela était bon.
+
+# La récursivité
+
+La récursivité est une notion informatique abstraite. `eduschool` dispose d'un
+exemple plus concret :
+
+> **La récursivité, c'est demander régulièrement comment créer l'archive qui contient la documentation expliquant comment créer l'archive.**
+
+Ce qui rappelle un principe plus général :
+
+> **Ne pas retenir une commande est un cas d'utilisation, pas une erreur utilisateur.**
+
 # Les découvertes tardives
 
 Tout projet logiciel connaît ce moment particulier où une lacune évidente est
@@ -311,6 +366,37 @@ numéros de version.
 Tout le monde a donc besoin d'aide.
 
 Ce qui tombe bien : `eduschool` est un projet collaboratif.
+
+# Se perdre dans son propre site
+
+Une documentation peut contenir toutes les bonnes informations et rester
+inutilisable si personne ne sait où elles se trouvent.
+
+`eduschool` a acquis ce savoir de manière expérimentale.
+
+> **Une vignette non liée dans la navbar existe techniquement. Pédagogiquement,
+> c'est une légende urbaine.**
+
+Le principe général est encore plus simple :
+
+> **Quand le développeur ne sait plus comment naviguer dans son propre site,
+> l'utilisateur n'a aucune chance.**
+
+Quand le développeur commence à se perdre dans le HTML qu'il a lui-même
+généré, le projet donne donc quelques signes de faiblesse structurelle. Avant de
+rajouter une couche de navigation, `eduschool` préfère désormais en supprimer
+deux.
+
+# La récursivité du ZIP
+
+Certaines commandes sont si importantes qu'il faut régulièrement demander
+comment les retrouver.
+
+> **La récursivité, c'est demander régulièrement comment créer l'archive qui
+> contient la documentation expliquant comment créer l'archive.**
+
+Ne pas retenir la commande n'est pas une erreur utilisateur. Nous avons déjà un
+principe pour cela.
 
 # En conclusion
 

@@ -62,20 +62,28 @@ chaque paragraphe.
 
 Le *Guide d'or* joue le rôle de mémoire complète de cet humour. Ailleurs dans la
 documentation, une plaisanterie n'est répétée que lorsqu'elle sert directement
-le propos de la page. `HELP PLIZ`, le principe « ne pas comprendre est un cas
-d'utilisation » et la règle de qualité 0 / 0 / 0 peuvent revenir comme motifs
-d'identité ; les autres formulations ont, autant que possible, un domicile
+le propos de la page. `HELP PLIZ`, le principe « l'erreur n'est pas un échec » et la règle de
+qualité 0 / 0 / 0 peuvent revenir comme motifs d'identité ; les autres formulations ont, autant que possible, un domicile
 principal.
 
-## Ne pas comprendre
+## Le droit à l'erreur
 
 Un principe complète désormais la ligne éditoriale :
 
-> **Ne pas comprendre est un cas d'utilisation, pas une erreur utilisateur.**
+> **L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
 
-Une difficulté signalée n'est donc pas traitée comme un défaut de l'apprenant.
-Elle peut révéler une définition trop rapide, un exemple insuffisant, un saut de
-raisonnement ou simplement un sujet qui mérite une autre représentation.
+Se tromper, ne pas comprendre du premier coup ou choisir une méthode qui ne
+fonctionne pas ne doit pas être présenté comme un échec de l'apprenant. Une
+erreur peut révéler une définition trop rapide, un exemple insuffisant, un saut
+de raisonnement ou simplement la nécessité d'essayer une autre représentation.
+
+Ce principe en accompagne un autre :
+
+> **Il n'existe pas une seule bonne façon d'apprendre.**
+
+`eduschool` propose donc des pistes, des représentations et des outils. Il ne
+prétend ni détenir une méthode pédagogique universelle, ni apprendre les
+mathématiques à la place de l'élève, du professeur ou du travail personnel.
 
 La documentation peut l'assumer avec humour :
 
@@ -93,3 +101,16 @@ Et dans les espaces de contribution :
 
 Cette auto-dérision vise l'auteur et le projet, jamais la personne qui demande
 de l'aide.
+
+## Navigation et simplicité
+
+La documentation suit la même règle de frugalité que le code. La barre de
+navigation indique quelques portes d'entrée ; l'index des guides porte la
+structure éditoriale détaillée. La même hiérarchie ne doit pas être reconstruite
+à plusieurs endroits sans nécessité.
+
+> **Quand le développeur ne sait plus comment naviguer dans son propre site,
+> l'utilisateur n'a aucune chance.**
+
+Une navigation difficile à expliquer doit d'abord être simplifiée avant d'être
+enrichie.

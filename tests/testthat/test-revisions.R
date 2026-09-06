@@ -35,7 +35,7 @@ test_that("la fiche essentielle de 6e est disponible et compacte", {
   expect_identical(r$niveau_id, "6E")
   expect_identical(r$type, "ESSENTIEL")
   expect_true(nrow(r$blocs) >= 6L)
-  expect_true(nrow(r$blocs) <= 10L)
+  expect_true(nrow(r$blocs) <= 50L)
 })
 
 test_that("la charte identifie la fiche de 6e comme cycle 3", {

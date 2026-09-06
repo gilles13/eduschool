@@ -35,8 +35,8 @@ doit quand même aider ses propres enfants. **HELP PLIZ.**
 
 C'est une faiblesse assez pratique : elle rappelle qu'une explication n'est pas
 bonne parce que son auteur la comprend, mais parce qu'une personne qui ne la
-comprenait pas peut finir par la comprendre. Dans `eduschool`, **ne pas
-comprendre est un cas d'utilisation, pas une erreur utilisateur.**
+comprenait pas peut finir par la comprendre. Dans `eduschool`, **l'erreur n'est pas un échec : c'est une étape pour
+comprendre et progresser.**
 
 Le projet est donc collaboratif par nécessité autant que par choix. Enseignants,
 parents, élèves, amateurs de mathématiques et utilisateurs de R peuvent corriger,

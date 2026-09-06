@@ -1,5 +1,5 @@
 ---
-title: "Mathématiques 6e – Fiche essentielle"
+title: "Mathématiques 6e - Fiche essentielle"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Mathématiques 6e - Fiche essentielle}
@@ -8,7 +8,13 @@ vignette: >
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 4.2
+)
 library(eduschool)
 r = generer_essentiel("6E")
 identite = identite_revision(r)
@@ -37,10 +43,15 @@ cat(eduschool:::.css_fiche_eduschool(), "\n")
 cat(eduschool:::.bandeau_revision_html(r, logo_uri, decoration_uri), "\n")
 ```
 
-Cette fiche rassemble les **repères essentiels de mathématiques de 6e**. Elle
-privilégie une lecture rapide et structurée, sans imposer de nombre de pages :
-les futures fiches pourront intégrer des représentations graphiques lorsqu'elles
-apportent un véritable appui à la compréhension.
+Cette fiche rassemble les **repères essentiels de mathématiques de 6e**. Elle ne
+cherche pas à remplacer le cours : elle sert à retrouver rapidement les notions,
+formules et réflexes à maîtriser, puis à **voir** quelques idées qui deviennent
+plus simples lorsqu'elles sont représentées.
+
+Le contenu est aligné sur le [programme officiel de mathématiques du cycle 3](https://www.education.gouv.fr/bo/2025/Hebdo16/MENE2504620A),
+en vigueur en 6e depuis la rentrée 2025-2026.
+
+# Les repères essentiels
 
 ```{r blocs, results='asis'}
 for (i in seq_len(nrow(r$blocs))) {
@@ -52,6 +63,172 @@ for (i in seq_len(nrow(r$blocs))) {
   cat("</div>\n")
 }
 ```
+
+# Voir pour comprendre
+
+Les graphiques suivants ne sont pas là pour décorer la fiche. Ils montrent
+pourquoi certaines règles fonctionnent. Une formule est plus facile à retenir
+lorsqu'elle a d'abord eu une raison d'exister.
+
+## Une fraction représente une part d'un tout
+
+Pour visualiser $\frac{3}{4}$, on partage une unité en quatre parts égales et on
+en retient trois.
+
+```{r fraction}
+fraction = data.frame(
+  part = factor(1:4),
+  valeur = 1,
+  retenue = factor(c("oui", "oui", "oui", "non"), levels = c("oui", "non"))
+)
+
+ggplot2::ggplot(fraction, ggplot2::aes(x = part, y = valeur, fill = retenue)) +
+  ggplot2::geom_col(width = 0.95, show.legend = FALSE) +
+  ggplot2::geom_text(
+    ggplot2::aes(label = ifelse(retenue == "oui", "1/4", "")),
+    vjust = 0.5
+  ) +
+  ggplot2::coord_cartesian(ylim = c(0, 1)) +
+  ggplot2::labs(title = "3/4 : trois parts sur quatre", x = NULL, y = NULL) +
+  ggplot2::theme_void() +
+  ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5))
+```
+
+**À retenir :** le dénominateur indique en combien de parts égales l'unité est
+partagée ; le numérateur indique combien de parts sont considérées.
+
+## La proportionnalité conserve le même rapport
+
+Si 1 carnet coûte 2 euros, alors 2 carnets coûtent 4 euros, 3 en coûtent 6, etc.
+Les points sont alignés avec l'origine : le prix est toujours obtenu en
+multipliant la quantité par 2.
+
+```{r proportionnalite}
+proportion = data.frame(
+  quantite = 0:6,
+  prix = 2 * (0:6)
+)
+
+ggplot2::ggplot(proportion, ggplot2::aes(x = quantite, y = prix)) +
+  ggplot2::geom_line() +
+  ggplot2::geom_point(size = 2.5) +
+  ggplot2::scale_x_continuous(breaks = 0:6) +
+  ggplot2::labs(
+    title = "Une situation proportionnelle",
+    x = "Nombre de carnets",
+    y = "Prix (euros)"
+  ) +
+  ggplot2::theme_minimal()
+```
+
+**Piège classique :** une situation qui augmente n'est pas forcément
+proportionnelle. Il faut conserver le même rapport entre les deux grandeurs.
+
+## L'aire d'un rectangle compte des carrés unités
+
+Un rectangle de 5 unités sur 3 contient 5 carrés sur chaque ligne et 3 lignes :
+$5 \times 3 = 15$ carrés unités.
+
+```{r aire}
+aire = expand.grid(x = 1:5, y = 1:3)
+
+ggplot2::ggplot(aire, ggplot2::aes(x = x, y = y)) +
+  ggplot2::geom_tile(fill = "white", colour = "grey40") +
+  ggplot2::geom_text(ggplot2::aes(label = "1")) +
+  ggplot2::coord_equal() +
+  ggplot2::scale_x_continuous(breaks = 1:5) +
+  ggplot2::scale_y_continuous(breaks = 1:3) +
+  ggplot2::labs(
+    title = "5 colonnes × 3 lignes = 15 unités d'aire",
+    x = "Longueur : 5 unités",
+    y = "Largeur : 3 unités"
+  ) +
+  ggplot2::theme_minimal()
+```
+
+C'est ce dénombrement qui conduit à :
+
+$$A_{rectangle}=L\times l$$
+
+## Le volume compte des cubes unités
+
+Prenons un pavé droit de longueur 4, largeur 3 et hauteur 2. Chaque couche
+contient $4\times3=12$ cubes. Deux couches donnent donc 24 cubes unités.
+
+```{r volume}
+volume = expand.grid(
+  longueur = 1:4,
+  largeur = 1:3,
+  couche = factor(1:2, labels = c("Couche 1", "Couche 2"))
+)
+
+ggplot2::ggplot(volume, ggplot2::aes(x = longueur, y = largeur)) +
+  ggplot2::geom_tile(fill = "white", colour = "grey40") +
+  ggplot2::geom_text(ggplot2::aes(label = "1")) +
+  ggplot2::facet_wrap(~ couche) +
+  ggplot2::coord_equal() +
+  ggplot2::scale_x_continuous(breaks = 1:4) +
+  ggplot2::scale_y_continuous(breaks = 1:3) +
+  ggplot2::labs(
+    title = "4 × 3 × 2 = 24 cubes unités",
+    x = "Longueur",
+    y = "Largeur"
+  ) +
+  ggplot2::theme_minimal()
+```
+
+On généralise alors :
+
+$$V_{pavé}=L\times l\times h$$
+
+Pour un cube de côté $c$, les trois dimensions sont égales :
+
+$$V_{cube}=c^3$$
+
+**Repères utiles :** $1\,dm^3=1\,L$ et $1\,cm^3=1\,mL$.
+
+## Une fréquence expérimentale peut se stabiliser
+
+Une probabilité théorique décrit ce que l'on attend. Une fréquence décrit ce
+que l'on observe. Lorsqu'on répète beaucoup une expérience aléatoire, la
+fréquence peut se rapprocher de la probabilité théorique.
+
+```{r probabilite}
+set.seed(6)
+lancers = sample(1:6, size = 180, replace = TRUE)
+frequence_six = cumsum(lancers == 6) / seq_along(lancers)
+experience = data.frame(
+  lancer = seq_along(lancers),
+  frequence = frequence_six
+)
+
+ggplot2::ggplot(experience, ggplot2::aes(x = lancer, y = frequence)) +
+  ggplot2::geom_line() +
+  ggplot2::geom_hline(yintercept = 1 / 6, linetype = "dashed") +
+  ggplot2::labs(
+    title = "Fréquence du 6 au fil des lancers",
+    subtitle = "La ligne pointillée représente la probabilité théorique 1/6",
+    x = "Nombre de lancers",
+    y = "Fréquence observée"
+  ) +
+  ggplot2::theme_minimal()
+```
+
+**À retenir :** sur peu d'essais, la fréquence peut beaucoup varier. Répéter
+l'expérience permet d'observer sa stabilisation progressive.
+
+# Les réflexes à garder
+
+- Écrire les unités et vérifier qu'elles sont cohérentes.
+- Estimer l'ordre de grandeur avant ou après un calcul.
+- Pour une aire, penser en **carrés unités** ; pour un volume, en **cubes unités**.
+- Pour une fraction, identifier le tout avant de compter les parts.
+- En proportionnalité, vérifier que le même multiplicateur relie les valeurs.
+- En géométrie, faire une figure aide à raisonner mais ne remplace pas une propriété.
+- En probabilités, distinguer la probabilité théorique de la fréquence observée.
+
+> Une formule n'est pas une incantation. Si elle semble tomber du ciel, le dessin
+> juste au-dessus mérite probablement un deuxième regard.
 
 ---
 

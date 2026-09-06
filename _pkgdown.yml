@@ -1,111 +1,119 @@
 url: https://gilles13.github.io/eduschool/
+
 template:
   bootstrap: 5
+
 navbar:
   structure:
     left:
-    - intro
-    - reference
-    - articles
-    - news
-    right: github
+      - intro
+      - reference
+      - guides
+      - news
+    right:
+      - github
+
   components:
-    articles:
+    guides:
       text: Guides
       menu:
-      - text: Commencer
-      - text: À propos
-        href: articles/a-propos.html
-      - text: Prendre un parent par la main
-        href: articles/prendre-un-parent-par-la-main.html
-      - text: Prise en main rapide
-        href: articles/prise-en-main.html
-      - text: -------
-      - text: Mathématiques
-      - text: Mathématiques par niveau
-        href: articles/mathematiques-par-niveau.html
-      - text: Épreuves du DNB
-        href: articles/examens-dnb.html
-      - text: Fiches de révision
-        href: articles/fiches-revision-mathematiques.html
-      - text: "Mathématiques & économie"
-        href: articles/mathematiques-et-economie.html
-      - text: -------
-      - text: Parcours et orientation
-      - text: Parcours scolaires
-        href: articles/parcours-scolaires.html
-      - text: S'orienter au lycée et après le bac
-        href: articles/orientation-au-lycee-et-apres-le-bac.html
-      - text: -------
-      - text: Sous le capot
-      - text: Architecture des données
-        href: articles/architecture-des-donnees.html
-      - text: Données réelles et provenance
-        href: articles/donnees-reelles-et-provenance.html
-      - text: Contribuer et partager
-        href: articles/contribuer-et-partager.html
-      - text: -------
-      - text: Pour finir
-      - text: Le guide d'or
-        href: articles/guide-d-or.html
-      - text: Tous les articles
-        href: articles/index.html
+        - text: À propos
+          href: articles/a-propos.html
+
+        - text: -------
+
+        - text: Découvrir eduschool
+        - text: Prise en main
+          href: articles/prise-en-main.html
+        - text: Prendre un parent par la main
+          href: articles/prendre-un-parent-par-la-main.html
+
+        - text: -------
+
+        - text: Mathématiques
+        - text: Mathématiques par niveau
+          href: articles/mathematiques-par-niveau.html
+        - text: "Mathématiques & économie"
+          href: articles/mathematiques-et-economie.html
+
+        - text: -------
+
+        - text: Parcours scolaire
+          href: articles/parcours-scolaires.html
+
+        - text: -------
+
+        - text: Aller plus loin
+        - text: Sous le capot
+          href: articles/architecture-des-donnees.html
+        - text: Collaborer et partager
+          href: articles/contribuer-et-partager.html
+
+        - text: -------
+
+        - text: Tous les articles
+          href: articles/index.html
+
 articles:
-- title: Decouvrir eduschool
-  desc: Premiers reperes pour les parents, les eleves et les utilisateurs R.
-  navbar: Decouvrir
-  contents:
-  - a-propos
-  - prendre-un-parent-par-la-main
-  - prise-en-main
-  - exemple-classe-6e
-  - exemple-classe-2de-generale
-- title: Parcours et orientation
-  desc: Comprendre les parcours scolaires, les choix au lycee et les poursuites d etudes.
-  navbar: Parcours
-  contents:
-  - parcours-scolaires
-  - programmes-et-capacites
-  - orientation-au-lycee-et-apres-le-bac
-- title: Mathematiques
-  desc: Fiches de revision, ressources et outils pedagogiques.
-  navbar: Mathematiques
-  contents:
-  - mathematiques-par-niveau
-  - mathematiques-et-economie
-  - mathematiques-6e
-  - mathematiques-5e
-  - mathematiques-4e
-  - mathematiques-3e
-  - mathematiques-2de
-  - mathematiques-1re-specialite
-  - mathematiques-terminale-specialite
-  - examens-dnb
-  - fiches-revision-mathematiques
-  - fiche-mathematiques-6e
-  - fiche-derivation-premiere
-  - approfondir-ses-connaissances-en-mathematiques
-- title: Utiliser eduschool
-  desc: Documentation pedagogique et production de fiches.
-  contents:
-  - documentation-pedagogique
-  - exercices-et-revisions
-- title: Comprendre eduschool
-  desc: Architecture du mini-SI et fonctionnement interne du package.
-  navbar: Comprendre
-  contents:
-  - architecture-des-donnees
-  - donnees-reelles-et-provenance
-  - rentrer-en-profondeur-dans-eduschool
-- title: Contribuer et partager
-  desc: Creer, adapter et mutualiser des donnees et supports pedagogiques.
-  navbar: Contribuer
-  contents:
-  - contribuer-et-partager
-- title: Developpement
-  contents: developpement
-- title: Pour finir
-  desc: Philosophie, folklore et mauvaises plaisanteries officiellement conservees.
-  navbar: Pour finir
-  contents:
-  - guide-d-or
+  - title: Découvrir eduschool
+    desc: Premiers repères pour comprendre le projet et commencer à l'utiliser.
+    contents:
+      - a-propos
+      - prise-en-main
+      - prendre-un-parent-par-la-main
+
+  - title: Mathématiques
+    desc: Les principales portes d'entrée vers les ressources mathématiques.
+    contents:
+      - mathematiques-par-niveau
+      - mathematiques-et-economie
+      - examens-dnb
+      - fiches-revision-mathematiques
+      - approfondir-ses-connaissances-en-mathematiques
+
+  - title: Parcours et orientation
+    desc: Comprendre les parcours scolaires, les programmes et les choix d'orientation.
+    contents:
+      - parcours-scolaires
+      - programmes-et-capacites
+      - orientation-au-lycee-et-apres-le-bac
+
+  - title: Utiliser eduschool
+    desc: Documentation pédagogique, exercices et exemples d'utilisation.
+    contents:
+      - documentation-pedagogique
+      - exercices-et-revisions
+      - exemple-classe-6e
+      - exemple-classe-2de-generale
+
+  - title: Comprendre eduschool
+    desc: Architecture des données et fonctionnement interne du package.
+    contents:
+      - architecture-des-donnees
+      - donnees-reelles-et-provenance
+      - rentrer-en-profondeur-dans-eduschool
+
+  - title: Contribuer
+    desc: Créer, adapter et mutualiser des données et supports pédagogiques.
+    contents:
+      - contribuer-et-partager
+
+  - title: Pour en finir
+    desc: Philosophie, folklore et mauvaises plaisanteries officiellement conservées.
+    contents:
+      - guide-d-or
+
+  # Articles construits par pkgdown mais volontairement absents de l'index général.
+  # Ils restent accessibles depuis les pages de synthèse qui les référencent.
+  - title: internal
+    contents:
+      - mathematiques-6e
+      - mathematiques-5e
+      - mathematiques-4e
+      - mathematiques-3e
+      - mathematiques-2de
+      - mathematiques-1re-specialite
+      - mathematiques-terminale-specialite
+      - fiche-mathematiques-6e
+      - fiche-derivation-premiere
+      - developpement
