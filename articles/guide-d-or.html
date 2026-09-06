@@ -34,28 +34,22 @@
 <li class="active nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-guides">
-<li><h6 class="dropdown-header" data-toc-skip>Commencer</h6></li>
-    <li><a class="dropdown-item" href="../articles/a-propos.html">À propos</a></li>
+<li><a class="dropdown-item" href="../articles/a-propos.html">À propos</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Découvrir eduschool</h6></li>
+    <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main</a></li>
     <li><a class="dropdown-item" href="../articles/prendre-un-parent-par-la-main.html">Prendre un parent par la main</a></li>
-    <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main rapide</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
-    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Épreuves du DNB</a></li>
-    <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-et-economie.html">Mathématiques &amp; économie</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Parcours et orientation</h6></li>
-    <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaires</a></li>
-    <li><a class="dropdown-item" href="../articles/orientation-au-lycee-et-apres-le-bac.html">S'orienter au lycée et après le bac</a></li>
+    <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaire</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Sous le capot</h6></li>
-    <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Architecture des données</a></li>
-    <li><a class="dropdown-item" href="../articles/donnees-reelles-et-provenance.html">Données réelles et provenance</a></li>
-    <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Contribuer et partager</a></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Aller plus loin</h6></li>
+    <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Sous le capot</a></li>
+    <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Collaborer et partager</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Pour finir</h6></li>
-    <li><a class="dropdown-item" href="../articles/guide-d-or.html">Le guide d'or</a></li>
     <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
   </ul>
 </li>
@@ -126,10 +120,20 @@ compris.</strong></p>
 <p>Si vous êtes justement la personne qui n’a pas compris, bienvenue
 aussi.</p>
 <p>Nous avons besoin des deux.</p>
-<p>Car :</p>
+<p>Mais <code>eduschool</code> ne prétend pas détenir la bonne
+méthode.</p>
 <blockquote>
-<p><strong>Ne pas comprendre est un cas d’utilisation, pas une erreur
-utilisateur.</strong></p>
+<p><strong>Il n’existe pas une seule bonne façon
+d’apprendre.</strong></p>
+</blockquote>
+<p>Une formule, un dessin, un exemple, un graphique ou une autre
+explication peuvent fonctionner différemment selon les personnes et les
+moments. Le projet propose des pistes ; il ne prétend pas apprendre les
+mathématiques à la place de quelqu’un.</p>
+<p>Et lorsque l’essai ne fonctionne pas :</p>
+<blockquote>
+<p><strong>L’erreur n’est pas un échec. C’est une étape pour comprendre
+et progresser.</strong></p>
 </blockquote>
 </div>
 <div class="section level2">
@@ -347,6 +351,71 @@ données.</strong></p>
 <p>Nous pouvons nous moquer du reste.</p>
 </div>
 <div class="section level2">
+<h2 id="la-navigation">La navigation<a class="anchor" aria-label="anchor" href="#la-navigation"></a>
+</h2>
+<p>Une documentation doit aider à trouver l’information, pas demander au
+lecteur de reconstituer l’arborescence mentale du développeur.</p>
+<blockquote>
+<p><strong>Quand le développeur ne sait plus comment naviguer dans son
+propre site, l’utilisateur n’a aucune chance.</strong></p>
+</blockquote>
+<p>Une conséquence éditoriale en découle :</p>
+<blockquote>
+<p><strong>Une page d’index doit aider à choisir où aller, pas prouver
+qu’on possède beaucoup de fichiers.</strong></p>
+</blockquote>
+<p>Et une vignette parfaitement construite mais introuvable mérite son
+propre statut administratif :</p>
+<blockquote>
+<p><strong>Une vignette non liée dans la navbar existe techniquement.
+Pédagogiquement, c’est une légende urbaine.</strong></p>
+</blockquote>
+</div>
+<div class="section level2">
+<h2 id="les-contraintes-utiles">Les contraintes utiles<a class="anchor" aria-label="anchor" href="#les-contraintes-utiles"></a>
+</h2>
+<p>Une fiche essentielle doit rester synthétique. Cela ne signifie pas
+qu’une même limite arbitraire convient à la sixième et à la
+terminale.</p>
+<blockquote>
+<p><strong>Une fiche essentielle doit rester synthétique, mais le nombre
+de notions dépend du niveau, pas d’une limite arbitraire fixée trop
+tôt.</strong></p>
+</blockquote>
+<p>D’où la règle technique correspondante :</p>
+<blockquote>
+<p><strong>Une contrainte qui oblige à simplifier le programme plutôt
+que le code est probablement placée au mauvais endroit.</strong></p>
+</blockquote>
+</div>
+<div class="section level2">
+<h2 id="la-sainte-trinité">La Sainte Trinité<a class="anchor" aria-label="anchor" href="#la-sainte-trinit%C3%A9"></a>
+</h2>
+<p>Le contrôle technique possède désormais sa formulation liturgique
+:</p>
+<blockquote>
+<p><strong>La Sainte Trinité d’eduschool : 0 erreur, 0 warning, 0
+note.</strong></p>
+</blockquote>
+<p>Et <code>R CMD check</code> vit que cela était bon.</p>
+</div>
+<div class="section level2">
+<h2 id="la-récursivité">La récursivité<a class="anchor" aria-label="anchor" href="#la-r%C3%A9cursivit%C3%A9"></a>
+</h2>
+<p>La récursivité est une notion informatique abstraite.
+<code>eduschool</code> dispose d’un exemple plus concret :</p>
+<blockquote>
+<p><strong>La récursivité, c’est demander régulièrement comment créer
+l’archive qui contient la documentation expliquant comment créer
+l’archive.</strong></p>
+</blockquote>
+<p>Ce qui rappelle un principe plus général :</p>
+<blockquote>
+<p><strong>Ne pas retenir une commande est un cas d’utilisation, pas une
+erreur utilisateur.</strong></p>
+</blockquote>
+</div>
+<div class="section level2">
 <h2 id="les-découvertes-tardives">Les découvertes tardives<a class="anchor" aria-label="anchor" href="#les-d%C3%A9couvertes-tardives"></a>
 </h2>
 <p>Tout projet logiciel connaît ce moment particulier où une lacune
@@ -375,6 +444,40 @@ avec les numéros de version.</p>
 <p>Tout le monde a donc besoin d’aide.</p>
 <p>Ce qui tombe bien : <code>eduschool</code> est un projet
 collaboratif.</p>
+</div>
+<div class="section level2">
+<h2 id="se-perdre-dans-son-propre-site">Se perdre dans son propre site<a class="anchor" aria-label="anchor" href="#se-perdre-dans-son-propre-site"></a>
+</h2>
+<p>Une documentation peut contenir toutes les bonnes informations et
+rester inutilisable si personne ne sait où elles se trouvent.</p>
+<p><code>eduschool</code> a acquis ce savoir de manière
+expérimentale.</p>
+<blockquote>
+<p><strong>Une vignette non liée dans la navbar existe techniquement.
+Pédagogiquement, c’est une légende urbaine.</strong></p>
+</blockquote>
+<p>Le principe général est encore plus simple :</p>
+<blockquote>
+<p><strong>Quand le développeur ne sait plus comment naviguer dans son
+propre site, l’utilisateur n’a aucune chance.</strong></p>
+</blockquote>
+<p>Quand le développeur commence à se perdre dans le HTML qu’il a
+lui-même généré, le projet donne donc quelques signes de faiblesse
+structurelle. Avant de rajouter une couche de navigation,
+<code>eduschool</code> préfère désormais en supprimer deux.</p>
+</div>
+<div class="section level2">
+<h2 id="la-récursivité-du-zip">La récursivité du ZIP<a class="anchor" aria-label="anchor" href="#la-r%C3%A9cursivit%C3%A9-du-zip"></a>
+</h2>
+<p>Certaines commandes sont si importantes qu’il faut régulièrement
+demander comment les retrouver.</p>
+<blockquote>
+<p><strong>La récursivité, c’est demander régulièrement comment créer
+l’archive qui contient la documentation expliquant comment créer
+l’archive.</strong></p>
+</blockquote>
+<p>Ne pas retenir la commande n’est pas une erreur utilisateur. Nous
+avons déjà un principe pour cela.</p>
 </div>
 <div class="section level2">
 <h2 id="en-conclusion">En conclusion<a class="anchor" aria-label="anchor" href="#en-conclusion"></a>

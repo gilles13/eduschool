@@ -354,25 +354,36 @@ maintenable et utile.
 
 # Articles
 
-### Decouvrir eduschool
+### Découvrir eduschool
 
-Premiers reperes pour les parents, les eleves et les utilisateurs R.
+Premiers repères pour comprendre le projet et commencer à l’utiliser.
 
 - [À propos : un parent, des maths et un appel à
   l'aide](https://gilles13.github.io/eduschool/articles/a-propos.md):
-- [Prendre un parent par la
-  main](https://gilles13.github.io/eduschool/articles/prendre-un-parent-par-la-main.md):
 - [Prise en main de
   eduschool](https://gilles13.github.io/eduschool/articles/prise-en-main.md):
-- [Explorer une classe de 6e avec
-  eduschool](https://gilles13.github.io/eduschool/articles/exemple-classe-6e.md):
-- [Explorer une classe de 2de générale et
-  technologique](https://gilles13.github.io/eduschool/articles/exemple-classe-2de-generale.md):
+- [Prendre un parent par la
+  main](https://gilles13.github.io/eduschool/articles/prendre-un-parent-par-la-main.md):
+
+### Mathématiques
+
+Les principales portes d’entrée vers les ressources mathématiques.
+
+- [Mathématiques par
+  niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md):
+- [Mathématiques et économie : tous les problèmes sont
+  relatifs](https://gilles13.github.io/eduschool/articles/mathematiques-et-economie.md):
+- [Générer une épreuve de mathématiques du
+  DNB](https://gilles13.github.io/eduschool/articles/examens-dnb.md):
+- [Fiches de révision –
+  Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md):
+- [Approfondir ses connaissances en
+  mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md):
 
 ### Parcours et orientation
 
-Comprendre les parcours scolaires, les choix au lycee et les poursuites
-d etudes.
+Comprendre les parcours scolaires, les programmes et les choix
+d’orientation.
 
 - [Parcours
   scolaires](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md):
@@ -381,51 +392,22 @@ d etudes.
 - [S'orienter au lycée et après le
   bac](https://gilles13.github.io/eduschool/articles/orientation-au-lycee-et-apres-le-bac.md):
 
-### Mathematiques
-
-Fiches de revision, ressources et outils pedagogiques.
-
-- [Mathématiques par
-  niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md):
-- [Mathématiques et économie : tous les problèmes sont
-  relatifs](https://gilles13.github.io/eduschool/articles/mathematiques-et-economie.md):
-- [Mathématiques —
-  6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md):
-- [Mathématiques —
-  5e](https://gilles13.github.io/eduschool/articles/mathematiques-5e.md):
-- [Mathématiques —
-  4e](https://gilles13.github.io/eduschool/articles/mathematiques-4e.md):
-- [Mathématiques —
-  3e](https://gilles13.github.io/eduschool/articles/mathematiques-3e.md):
-- [Mathématiques —
-  2de](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md):
-- [Mathématiques — 1re
-  spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md):
-- [Mathématiques — Terminale
-  spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md):
-- [Générer une épreuve de mathématiques du
-  DNB](https://gilles13.github.io/eduschool/articles/examens-dnb.md):
-- [Fiches de révision –
-  Mathématiques](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md):
-- [Mathématiques 6e – Fiche
-  essentielle](https://gilles13.github.io/eduschool/articles/fiche-mathematiques-6e.md):
-- [Dérivation — Première
-  spécialité](https://gilles13.github.io/eduschool/articles/fiche-derivation-premiere.md):
-- [Approfondir ses connaissances en
-  mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md):
-
 ### Utiliser eduschool
 
-Documentation pedagogique et production de fiches.
+Documentation pédagogique, exercices et exemples d’utilisation.
 
 - [Documentation
   pédagogique](https://gilles13.github.io/eduschool/articles/documentation-pedagogique.md):
 - [Exercices et
   révisions](https://gilles13.github.io/eduschool/articles/exercices-et-revisions.md):
+- [Explorer une classe de 6e avec
+  eduschool](https://gilles13.github.io/eduschool/articles/exemple-classe-6e.md):
+- [Explorer une classe de 2de générale et
+  technologique](https://gilles13.github.io/eduschool/articles/exemple-classe-2de-generale.md):
 
 ### Comprendre eduschool
 
-Architecture du mini-SI et fonctionnement interne du package.
+Architecture des données et fonctionnement interne du package.
 
 - [Architecture des
   données](https://gilles13.github.io/eduschool/articles/architecture-des-donnees.md):
@@ -434,22 +416,17 @@ Architecture du mini-SI et fonctionnement interne du package.
 - [Rentrer en profondeur dans
   eduschool](https://gilles13.github.io/eduschool/articles/rentrer-en-profondeur-dans-eduschool.md):
 
-### Contribuer et partager
+### Contribuer
 
-Creer, adapter et mutualiser des donnees et supports pedagogiques.
+Créer, adapter et mutualiser des données et supports pédagogiques.
 
 - [Contribuer et
   partager](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md):
 
-### Developpement
-
-- [Développement et
-  contrôles](https://gilles13.github.io/eduschool/articles/developpement.md):
-
-### Pour finir
+### Pour en finir
 
 Philosophie, folklore et mauvaises plaisanteries officiellement
-conservees.
+conservées.
 
 - [Le guide d'or
   d'eduschool](https://gilles13.github.io/eduschool/articles/guide-d-or.md):
