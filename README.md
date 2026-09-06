@@ -24,6 +24,25 @@ se permettre un peu d'auto-dérision.
 Pour les parents, la vignette **Prendre un parent par la main** propose une
 lecture progressive des bases mathématiques de la 6e à la Terminale spécialité.
 
+## À propos : pourquoi ce projet existe
+
+`eduschool` est développé par un parent qui tente de comprendre ce que ses
+enfants apprennent à l'école. Il essaie donc d'apprendre, puis de comprendre,
+puis d'expliquer ce qu'il vient parfois péniblement de comprendre.
+
+Le problème est qu'il ne comprend pas grand-chose aux mathématiques et qu'il
+doit quand même aider ses propres enfants. **HELP PLIZ.**
+
+C'est une faiblesse assez pratique : elle rappelle qu'une explication n'est pas
+bonne parce que son auteur la comprend, mais parce qu'une personne qui ne la
+comprenait pas peut finir par la comprendre. Dans `eduschool`, **ne pas
+comprendre est un cas d'utilisation, pas une erreur utilisateur.**
+
+Le projet est donc collaboratif par nécessité autant que par choix. Enseignants,
+parents, élèves, amateurs de mathématiques et utilisateurs de R peuvent corriger,
+expliquer, proposer des exercices, des représentations ou simplement signaler
+l'endroit exact où ils ont cessé de comprendre.
+
 ## Installation
 
 ```r

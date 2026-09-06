@@ -14,6 +14,8 @@ navbar:
       text: Guides
       menu:
       - text: Commencer
+      - text: À propos
+        href: articles/a-propos.html
       - text: Prendre un parent par la main
         href: articles/prendre-un-parent-par-la-main.html
       - text: Prise en main rapide
@@ -36,6 +38,8 @@ navbar:
       - text: Sous le capot
       - text: Architecture des données
         href: articles/architecture-des-donnees.html
+      - text: Données réelles et provenance
+        href: articles/donnees-reelles-et-provenance.html
       - text: Contribuer et partager
         href: articles/contribuer-et-partager.html
       - text: Tous les articles
@@ -45,6 +49,7 @@ articles:
   desc: Premiers reperes pour les parents, les eleves et les utilisateurs R.
   navbar: Decouvrir
   contents:
+  - a-propos
   - prendre-un-parent-par-la-main
   - prise-en-main
   - exemple-classe-6e
@@ -83,6 +88,7 @@ articles:
   navbar: Comprendre
   contents:
   - architecture-des-donnees
+  - donnees-reelles-et-provenance
   - rentrer-en-profondeur-dans-eduschool
 - title: Contribuer et partager
   desc: Creer, adapter et mutualiser des donnees et supports pedagogiques.

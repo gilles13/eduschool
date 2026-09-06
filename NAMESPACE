@@ -114,3 +114,11 @@ export(generer_exercice_compose)
 
 export(contextes_exercices)
 export(gabarits_exercices_contextes)
+
+export(source_insee_melodi)
+export(decrire_source)
+export(verifier_source)
+export(recuperer_donnees)
+export(provenance_donnees)
+export(citer_source)
+export(annoter_source)
