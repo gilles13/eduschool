@@ -1,6 +1,6 @@
 # Decrire un examen
 
-Retourne la definition d'un examen pour une session.
+Decrire un examen
 
 ## Usage
 

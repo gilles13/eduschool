@@ -186,9 +186,11 @@ knitr::kable(
 | gabarits_exercices | examens | gabarit_id | 13 | 13 |
 | gabarits_exercices_concepts | examens | gabarit_id,concept_id | 14 | 3 |
 | gabarits_parametres | examens | gabarit_id,parametre | 31 | 7 |
-| gabarits_exercices_composes | examens | gabarit_compose_id | 4 | 13 |
-| gabarits_exercices_questions | examens | gabarit_compose_id,question_id | 15 | 8 |
-| gabarits_exercices_ressources | examens | gabarit_compose_id,ressource_id | 4 | 5 |
+| gabarits_exercices_composes | examens | gabarit_compose_id | 8 | 13 |
+| gabarits_exercices_questions | examens | gabarit_compose_id,question_id | 27 | 8 |
+| gabarits_exercices_ressources | examens | gabarit_compose_id,ressource_id | 6 | 5 |
+| contextes_exercices | examens | contexte_id | 40 | 28 |
+| gabarits_exercices_contextes | examens | gabarit_compose_id,contexte_id | 40 | 4 |
 
 Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
 dans cette vignette lors de sa reconstruction.
@@ -289,9 +291,9 @@ Les contrôles structurels sont directement dérivés des métadonnées :
 
 resume_controles_si(niveau = "structure")
 #>            type controles_total controles_ok
-#> 1 cle_etrangere             102          102
-#> 2  cle_primaire              61           61
-#> 3      colonnes              61           61
+#> 1 cle_etrangere             104          104
+#> 2  cle_primaire              63           63
+#> 3      colonnes              63           63
 #> 4       domaine               1            1
 ```
 
@@ -336,9 +338,9 @@ Le contrôle complet réunit les deux niveaux :
 
 resume_controles_si()
 #>                      type controles_total controles_ok
-#> 1           cle_etrangere             102          102
-#> 2            cle_primaire              61           61
-#> 3                colonnes              61           61
+#> 1           cle_etrangere             104          104
+#> 2            cle_primaire              63           63
+#> 3                colonnes              63           63
 #> 4                 domaine               1            1
 #> 5     semantique_horaires               3            3
 #> 6 semantique_niveau_serie               1            1

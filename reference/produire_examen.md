@@ -7,7 +7,13 @@ le meme objet intermediaire afin de garantir leur coherence.
 ## Usage
 
 ``` r
-produire_examen(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE)
+produire_examen(
+  examen,
+  fichier = NULL,
+  corrige = FALSE,
+  ouvrir = FALSE,
+  detaille = FALSE
+)
 ```
 
 ## Arguments
@@ -27,6 +33,11 @@ produire_examen(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE)
 - ouvrir:
 
   Ouvrir le PDF apres creation.
+
+- detaille:
+
+  Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu
+  elles sont disponibles.
 
 ## Value
 

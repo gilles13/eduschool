@@ -1,11 +1,11 @@
 # Instancier un exercice compose
 
-Genere une variante reproductible d'un exercice multi-questions.
+Instancier un exercice compose
 
 ## Usage
 
 ``` r
-generer_exercice_compose(gabarit_compose_id, seed = NULL)
+generer_exercice_compose(gabarit_compose_id, seed = NULL, contexte_id = NULL)
 ```
 
 ## Arguments
@@ -17,6 +17,11 @@ generer_exercice_compose(gabarit_compose_id, seed = NULL)
 - seed:
 
   Graine aleatoire facultative.
+
+- contexte_id:
+
+  Contexte semantique facultatif. S il est omis, un contexte compatible
+  est tire.
 
 ## Value
 

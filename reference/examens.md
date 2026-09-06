@@ -1,6 +1,6 @@
 # Examens modelises
 
-Retourne les examens modelises dans eduschool.
+Examens modelises
 
 ## Usage
 
@@ -12,7 +12,7 @@ examens(code = NULL, session = NULL)
 
 - code:
 
-  Code d'examen facultatif.
+  Code d'examen facultatif, par exemple \`"DNB"\`.
 
 - session:
 

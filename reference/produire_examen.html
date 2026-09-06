@@ -11,7 +11,7 @@ intermediaire afin de garantir leur coherence."><meta property="og:image" conten
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.18.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,14 +34,7 @@ intermediaire afin de garantir leur coherence."><meta property="og:image" conten
     <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-6e.html">6e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-5e.html">5e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-4e.html">4e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-3e.html">3e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-2de.html">2de</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-1re-specialite.html">1re spécialité</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></li>
-    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Composer un DNB</a></li>
+    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Épreuves du DNB</a></li>
     <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-derivation-premiere.html">Dérivation — Première spécialité</a></li>
@@ -77,7 +70,13 @@ intermediaire afin de garantir leur coherence.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">produire_examen</span><span class="op">(</span><span class="va">examen</span>, fichier <span class="op">=</span> <span class="cn">NULL</span>, corrige <span class="op">=</span> <span class="cn">FALSE</span>, ouvrir <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">produire_examen</span><span class="op">(</span></span>
+<span>  <span class="va">examen</span>,</span>
+<span>  fichier <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  corrige <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  ouvrir <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  detaille <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -98,6 +97,10 @@ intermediaire afin de garantir leur coherence.</p>
 
 <dt id="arg-ouvrir">ouvrir<a class="anchor" aria-label="anchor" href="#arg-ouvrir"></a></dt>
 <dd><p>Ouvrir le PDF apres creation.</p></dd>
+
+
+<dt id="arg-detaille">detaille<a class="anchor" aria-label="anchor" href="#arg-detaille"></a></dt>
+<dd><p>Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.</p></dd>
 
 </dl></div>
     <div class="section level2">

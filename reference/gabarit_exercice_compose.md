@@ -1,6 +1,6 @@
 # Decrire un gabarit d'exercice compose
 
-Retourne la structure declarative d'un exercice compose.
+Decrire un gabarit d'exercice compose
 
 ## Usage
 

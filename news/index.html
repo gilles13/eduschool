@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.18.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,14 +30,7 @@
     <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-6e.html">6e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-5e.html">5e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-4e.html">4e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-3e.html">3e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-2de.html">2de</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-1re-specialite.html">1re spécialité</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></li>
-    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Composer un DNB</a></li>
+    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Épreuves du DNB</a></li>
     <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-derivation-premiere.html">Dérivation — Première spécialité</a></li>
@@ -64,6 +57,30 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.18.0" id="eduschool-0180">eduschool 0.18.0<a class="anchor" aria-label="anchor" href="#eduschool-0180"></a></h2>
+<div class="section level3">
+<h3 id="diversification-des-contextes-dnb-0-18-0">Diversification des contextes DNB<a class="anchor" aria-label="anchor" href="#diversification-des-contextes-dnb-0-18-0"></a></h3>
+<ul><li>separation entre le gabarit mathematique et son contexte semantique ;</li>
+<li>ajout de <code>contextes_exercices.csv</code> et de la relation <code>gabarits_exercices_contextes.csv</code> ;</li>
+<li>40 contextes actifs repartis sur les huit familles d exercices composes du DNB ;</li>
+<li>
+<code><a href="../reference/generer_exercice_compose.html">generer_exercice_compose()</a></code> tire maintenant un contexte compatible, reproductible par <code>seed</code>, ou accepte <code>contexte_id</code> pour imposer une situation ;</li>
+<li>la diversite repose sur contexte + parametres, sans constituer une banque d enonces complets.</li>
+<li>les contextes <code>STOCK_FLUX</code> portent maintenant des briques lexicales et grammaticales (objet, genre, contenu, verbes) pour adapter naturellement enonce, questions et corrections sans stocker de phrases completes.</li>
+<li>le meme principe est etendu aux sept autres familles : objets et materiaux, unites d usage, unites statistiques, acteurs de programme, objets mesures, contenants et biens ou services ; les formulations sont assemblees par R a partir de ces briques.</li>
+</ul></div>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.17.0" id="eduschool-0170">eduschool 0.17.0<a class="anchor" aria-label="anchor" href="#eduschool-0170"></a></h2>
+<ul><li>banque DNB partie 2 portee de 4 a 8 familles d exercices composes ;</li>
+<li>ajout de corrections detaillees par etapes pour les exercices composes ;</li>
+<li>
+<code>produire_corrige_examen(..., detaille = TRUE)</code> permet de choisir le niveau de correction ;</li>
+<li>
+<code><a href="../reference/produire_dnb.html">produire_dnb()</a></code> produit en une commande les deux parties du sujet et leurs corriges ;</li>
+<li>correction des deux NOTE releves par <code>R CMD check</code> : PDF de travail ignores a la construction et mappings ggplot2 sans variables globales implicites.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.16.0" id="eduschool-0160">eduschool 0.16.0<a class="anchor" aria-label="anchor" href="#eduschool-0160"></a></h2>
 <ul><li>

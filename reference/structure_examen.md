@@ -1,7 +1,9 @@
 # Structure d'un examen
 
-Expose les contraintes officielles et les profils pedagogiques utilises
-pour la composition.
+Retourne les contraintes officielles et les profils pedagogiques
+utilises pour composer une epreuve. Les profils sont des choix de
+modelisation eduschool et ne doivent pas etre interpretes comme des
+obligations reglementaires.
 
 ## Usage
 
@@ -21,4 +23,4 @@ structure_examen(code, session)
 
 ## Value
 
-Une liste contenant l'examen, ses parties, profils et concepts.
+Une liste contenant examen, parties, profils et concepts.

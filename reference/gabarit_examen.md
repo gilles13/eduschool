@@ -1,6 +1,6 @@
 # Decrire un gabarit d'exercice
 
-Retourne la definition complete d'un gabarit d'examen.
+Decrire un gabarit d'exercice
 
 ## Usage
 

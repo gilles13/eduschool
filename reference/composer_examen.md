@@ -1,7 +1,8 @@
 # Composer un squelette d'examen
 
-Construit une composition reproductible de questions et exercices sans
-rediger encore les enonces.
+Construit une composition reproductible a partir du profil de l'examen.
+Le resultat ne contient pas encore les enonces : il decrit les questions
+ou exercices a rediger, leurs concepts, supports et points cibles.
 
 ## Usage
 
@@ -21,8 +22,8 @@ composer_examen(code, session, seed = NULL)
 
 - seed:
 
-  Graine aleatoire facultative.
+  Graine aleatoire pour reproduire la composition.
 
 ## Value
 
-Un data.frame de classe `eduschool_examen`.
+Un data.frame de composition.

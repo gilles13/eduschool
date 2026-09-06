@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Composer et produire un DNB de mathématiques • eduschool</title>
+<title>Générer une épreuve de mathématiques du DNB • eduschool</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Composer et produire un DNB de mathématiques">
+<meta property="og:title" content="Générer une épreuve de mathématiques du DNB">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -21,7 +21,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.18.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,14 +46,7 @@
     <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-6e.html">6e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-5e.html">5e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-4e.html">4e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-3e.html">3e</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-2de.html">2de</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-1re-specialite.html">1re spécialité</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></li>
-    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Composer un DNB</a></li>
+    <li><a class="dropdown-item" href="../articles/examens-dnb.html">Épreuves du DNB</a></li>
     <li><a class="dropdown-item" href="../articles/fiches-revision-mathematiques.html">Fiches de révision</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-mathematiques-6e.html">Fiche mathématiques 6e</a></li>
     <li><a class="dropdown-item" href="../articles/fiche-derivation-premiere.html">Dérivation — Première spécialité</a></li>
@@ -83,7 +76,7 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.png" class="logo" alt=""><h1>Composer et produire un DNB de mathématiques</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Générer une épreuve de mathématiques du DNB</h1>
             
       
 
@@ -92,153 +85,466 @@
 
     
     
-<p><code>eduschool</code> sépare volontairement quatre étapes : le
-modèle officiel de l’épreuve, la composition pédagogique, la rédaction
-des questions et le rendu du document. Cette séparation permet
-d’enrichir la banque d’exercices sans modifier la mise en page et,
-inversement, de faire évoluer le PDF sans toucher aux référentiels
-mathématiques.</p>
+<p><code>eduschool</code> peut produire des variantes reproductibles
+d’une épreuve de mathématiques du DNB à partir d’une banque de gabarits.
+Le principe n’est pas de stocker des sujets complets, mais de séparer
+les <strong>règles de l’épreuve</strong>, les <strong>familles
+d’exercices</strong>, les <strong>paramètres tirés</strong>, la
+<strong>rédaction</strong> et le <strong>rendu</strong>.</p>
+<p>Cette organisation permet d’enrichir progressivement la banque au fil
+des annales et des révisions, sans transformer chaque nouveau sujet en
+nouveau code spécifique.</p>
 <div class="section level2">
-<h2 id="consulter-la-structure-du-dnb">1. Consulter la structure du DNB<a class="anchor" aria-label="anchor" href="#consulter-la-structure-du-dnb"></a>
+<h2 id="vue-densemble">Vue d’ensemble<a class="anchor" aria-label="anchor" href="#vue-densemble"></a>
 </h2>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/structure_examen.html">structure_examen</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="fl">2026</span><span class="op">)</span></span></code></pre></div>
-<p>Pour la session 2026, le modèle distingue la partie d’automatismes et
-la partie de raisonnement. Les contraintes réglementaires sont
-conservées séparément des profils pédagogiques utilisés par
-<code>eduschool</code> pour composer un sujet.</p>
-</div>
-<div class="section level2">
-<h2 id="composer-un-sujet-reproductible">2. Composer un sujet reproductible<a class="anchor" aria-label="anchor" href="#composer-un-sujet-reproductible"></a>
-</h2>
+<p>Le générateur suit cinq étapes principales :</p>
+<pre class="text"><code>structure du DNB
+      |
+      v
+banque de gabarits
+      |
+      v
+composition du sujet
+      |
+      v
+rédaction des questions
+      |
+      v
+sujet / corrigé / corrigé détaillé</code></pre>
+<p>Dans R, ce flux correspond principalement à :</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">sujet</span> <span class="op">=</span> <span class="fu"><a href="../reference/composer_examen.html">composer_examen</a></span><span class="op">(</span></span>
-<span>  <span class="st">"DNB"</span>,</span>
-<span>  session <span class="op">=</span> <span class="fl">2026</span>,</span>
-<span>  seed <span class="op">=</span> <span class="fl">123</span></span>
-<span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">sujet</span></span></code></pre></div>
-<p>Le <code>seed</code> fixe la composition. Il doit être conservé
-lorsqu’un sujet est partagé ou archivé afin de pouvoir reconstruire
-exactement la même variante.</p>
+<code class="sourceCode R"><span><span class="va">sujet</span> <span class="op">=</span> <span class="fu"><a href="../reference/composer_examen.html">composer_examen</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="fl">2026</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">partie1</span> <span class="op">=</span> <span class="fu"><a href="../reference/rediger_examen.html">rediger_examen</a></span><span class="op">(</span><span class="va">sujet</span>, partie <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span><span class="va">partie2</span> <span class="op">=</span> <span class="fu"><a href="../reference/rediger_examen.html">rediger_examen</a></span><span class="op">(</span><span class="va">sujet</span>, partie <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
+<p>La fonction <code><a href="../reference/composer_examen.html">composer_examen()</a></code> ne rédige pas encore le
+sujet. Elle choisit une composition compatible avec le profil de
+l’épreuve. <code><a href="../reference/rediger_examen.html">rediger_examen()</a></code> transforme ensuite cette
+composition en questions effectivement posées, avec leurs réponses,
+leurs corrections et, lorsqu’elles existent, leurs ressources
+graphiques.</p>
 </div>
 <div class="section level2">
-<h2 id="rédiger-la-partie-1">3. Rédiger la partie 1<a class="anchor" aria-label="anchor" href="#r%C3%A9diger-la-partie-1"></a>
+<h2 id="deux-parties-deux-logiques-de-génération">Deux parties, deux logiques de génération<a class="anchor" aria-label="anchor" href="#deux-parties-deux-logiques-de-g%C3%A9n%C3%A9ration"></a>
 </h2>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">partie1</span> <span class="op">=</span> <span class="fu"><a href="../reference/rediger_examen.html">rediger_examen</a></span><span class="op">(</span><span class="va">sujet</span>, partie <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">partie1</span><span class="op">$</span><span class="va">entete</span></span>
-<span><span class="va">partie1</span><span class="op">$</span><span class="va">items</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ordre"</span>, <span class="st">"domaine"</span>, <span class="st">"enonce"</span>, <span class="st">"reponse"</span><span class="op">)</span><span class="op">]</span></span>
-<span><span class="va">partie1</span><span class="op">$</span><span class="va">ressources</span></span></code></pre></div>
-<p>La rédaction produit un objet intermédiaire. Les énoncés, réponses et
-corrections sont séparés des ressources graphiques. Une figure
-géométrique ou un programme Scratch est donc décrit par des données et
-un moteur de rendu, et non stocké sous forme d’image figée.</p>
-</div>
-<div class="section level2">
-<h2 id="produire-le-pdf">4. Produire le PDF<a class="anchor" aria-label="anchor" href="#produire-le-pdf"></a>
-</h2>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/produire_examen.html">produire_examen</a></span><span class="op">(</span></span>
-<span>  <span class="va">partie1</span>,</span>
-<span>  fichier <span class="op">=</span> <span class="st">"dnb-2026-partie1.pdf"</span></span>
-<span><span class="op">)</span></span></code></pre></div>
-<p>Le rendu PDF utilise R Markdown, Pandoc et <code>pdflatex</code>. Les
-ressources sont dessinées par R dans des PDF vectoriels temporaires puis
-intégrées au document. Cette méthode permet de conserver des figures
-nettes à l’impression.</p>
-<p>Le corrigé repose sur le même objet :</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/produire_corrige_examen.html">produire_corrige_examen</a></span><span class="op">(</span></span>
-<span>  <span class="va">partie1</span>,</span>
-<span>  fichier <span class="op">=</span> <span class="st">"dnb-2026-partie1-corrige.pdf"</span></span>
-<span><span class="op">)</span></span></code></pre></div>
-<p>Sujet et corrigé restent ainsi strictement cohérents.</p>
-</div>
-<div class="section level2">
-<h2 id="rendre-une-ressource-seule">5. Rendre une ressource seule<a class="anchor" aria-label="anchor" href="#rendre-une-ressource-seule"></a>
-</h2>
-<p>Les ressources peuvent être inspectées indépendamment du sujet :</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="../reference/rediger_examen.html">rediger_examen</a></span><span class="op">(</span><span class="fu"><a href="../reference/composer_examen.html">composer_examen</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="fl">2026</span>, seed <span class="op">=</span> <span class="fl">8</span><span class="op">)</span>, partie <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span></span>
-<span><span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">ressources</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
-<span>  <span class="fu"><a href="../reference/produire_ressource_examen.html">produire_ressource_examen</a></span><span class="op">(</span></span>
-<span>    <span class="va">x</span><span class="op">$</span><span class="va">ressources</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>,</span>
-<span>    fichier <span class="op">=</span> <span class="st">"ressource.pdf"</span></span>
-<span>  <span class="op">)</span></span>
-<span><span class="op">}</span></span></code></pre></div>
-<p>Les premiers moteurs gèrent un triangle avec angles, un rectangle
-coté, un schéma d’urne et une boucle Scratch. D’autres moteurs pourront
-être ajoutés pour les repères, courbes, tableaux, arbres de probabilités
-ou constructions plus complexes.</p>
-</div>
-<div class="section level2">
-<h2 id="alimenter-la-banque-avec-les-nouvelles-épreuves">6. Alimenter la banque avec les nouvelles épreuves<a class="anchor" aria-label="anchor" href="#alimenter-la-banque-avec-les-nouvelles-%C3%A9preuves"></a>
-</h2>
-<p>La banque se trouve sous <code>inst/examens/</code> :</p>
+<p>Pour le DNB 2026, <code>eduschool</code> distingue deux
+mécanismes.</p>
+<div class="section level3">
+<h3 id="partie-1-automatismes">Partie 1 : automatismes<a class="anchor" aria-label="anchor" href="#partie-1-automatismes"></a>
+</h3>
+<p>Les automatismes sont produits à partir de gabarits courts et
+paramétrés. Une famille décrit par exemple une addition de fractions, un
+pourcentage, une équation, un calcul de médiane ou une question
+géométrique.</p>
+<p>Chaque gabarit est associé à :</p>
 <ul>
-<li>
-<code>gabarits_exercices.csv</code> décrit les familles d’exercices
-et leur provenance ;</li>
-<li>
-<code>gabarits_exercices_concepts.csv</code> relie les gabarits aux
-concepts mathématiques ;</li>
-<li>
-<code>gabarits_parametres.csv</code> décrit les plages de tirage
-;</li>
-<li>le code R n’intervient que lorsqu’une nouvelle famille nécessite un
-nouveau générateur ou un nouveau moteur graphique.</li>
+<li>un domaine mathématique ;</li>
+<li>un ou plusieurs concepts du référentiel ;</li>
+<li>des paramètres de tirage ;</li>
+<li>un générateur R ;</li>
+<li>éventuellement une ressource graphique.</li>
 </ul>
-<p>Lorsqu’une nouvelle épreuve officielle paraît, la démarche conseillée
-est donc :</p>
-<ol style="list-style-type: decimal">
-<li>identifier les familles déjà couvertes par la banque ;</li>
-<li>enrichir leur traçabilité ou leurs paramètres lorsque le mécanisme
-existe ;</li>
-<li>ajouter un nouveau gabarit si la forme pédagogique est nouvelle
-;</li>
-<li>ajouter du code uniquement si le nouveau gabarit exige un calcul ou
-un rendu qui n’existe pas encore ;</li>
-<li>conserver la session et la source d’inspiration dans le
-référentiel.</li>
-</ol>
-<p>Cette organisation permet à <code>eduschool</code> d’accumuler
-progressivement l’expérience des annales sans transformer chaque
-nouvelle session en refonte du moteur.</p>
+<p>Le même gabarit peut donc produire de nombreuses variantes numériques
+sans changer la nature de la question.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/gabarits_examen.html">gabarits_examen</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/generer_gabarit_examen.html">generer_gabarit_examen</a></span><span class="op">(</span><span class="st">"GAB_DNB_AUT_POURCENTAGE"</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="partie-2-raisonner-par-exercice-compose">Partie 2 : raisonner par exercice compose<a class="anchor" aria-label="anchor" href="#partie-2-raisonner-par-exercice-compose"></a>
-</h2>
-<p>La partie 2 n’est pas construite comme une suite de questions
-independantes. <code>eduschool</code> utilise quelques gabarits
-d’exercices composes, chacun avec un contexte commun, plusieurs
-questions ordonnees et une ressource graphique partagee.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="section level3">
+<h3 id="partie-2-exercices-composés">Partie 2 : exercices composés<a class="anchor" aria-label="anchor" href="#partie-2-exercices-compos%C3%A9s"></a>
+</h3>
+<p>La seconde partie est organisée par <strong>exercices
+complets</strong>, et non par questions indépendantes. Un gabarit
+composé contient un contexte partagé, plusieurs questions ordonnées et,
+si nécessaire, une ressource commune.</p>
+<p>Les questions d’un même exercice peuvent relier plusieurs notions :
+géométrie et grandeurs, fonctions et équations, statistiques et
+probabilités, calcul littéral et algorithmique, par exemple.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/gabarits_exercices_composes.html">gabarits_exercices_composes</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="st">"PROBLEMES"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="../reference/generer_exercice_compose.html">generer_exercice_compose</a></span><span class="op">(</span></span>
 <span>    <span class="st">"GABC_DNB_GEOM_AMENAGEMENT"</span>,</span>
 <span>    seed <span class="op">=</span> <span class="fl">123</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>Cette couche est volontairement distincte des automatismes : elle
+permet de conserver un enchaînement logique entre les sous-questions
+d’un même problème.</p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="quelles-familles-de-questions-sont-disponibles">Quelles familles de questions sont disponibles ?<a class="anchor" aria-label="anchor" href="#quelles-familles-de-questions-sont-disponibles"></a>
+</h2>
+<p>Une <strong>famille</strong> décrit une forme de question ou de
+problème, et non un énoncé figé. Les valeurs numériques sont tirées au
+moment de la génération ; plusieurs énoncés peuvent donc partager le
+même raisonnement mathématique tout en utilisant des données
+différentes.</p>
+<div class="section level3">
+<h3 id="familles-dautomatismes">Familles d’automatismes<a class="anchor" aria-label="anchor" href="#familles-dautomatismes"></a>
+</h3>
+<p>La partie 1 couvre actuellement treize familles courtes. Elles
+peuvent être regroupées ainsi :</p>
+<ul>
+<li>
+<strong>nombres et calcul</strong> : addition de fractions, fraction
+d’une quantité, pourcentage, priorités opératoires et puissances de 10
+;</li>
+<li>
+<strong>algèbre et fonctions</strong> : équation du premier degré et
+proportionnalité ;</li>
+<li>
+<strong>arithmétique</strong> : divisibilité ;</li>
+<li>
+<strong>statistiques et probabilités</strong> : médiane et
+probabilité simple ;</li>
+<li>
+<strong>géométrie et grandeurs</strong> : angle d’un triangle et
+aire d’un rectangle ;</li>
+<li>
+<strong>algorithmique</strong> : lecture ou exécution d’une boucle
+Scratch.</li>
+</ul>
+<p>Quelques formulations représentatives sont par exemple :</p>
+<blockquote>
+<p>Calculer 15 % de 240.</p>
+<p>Résoudre l’équation 3x + 5 = 20.</p>
+<p>Un rectangle mesure 8 cm de longueur et 5 cm de largeur. Calculer son
+aire.</p>
+<p>Dans une urne, 3 boules sont rouges et 5 sont bleues. On tire une
+boule au hasard. Quelle est la probabilité d’obtenir une boule rouge
+?</p>
+</blockquote>
+<p>Ces phrases ne constituent pas des questions stockées telles quelles
+: le gabarit fournit la structure et le générateur choisit les valeurs
+compatibles.</p>
+</div>
+<div class="section level3">
+<h3 id="familles-dexercices-composés">Familles d’exercices composés<a class="anchor" aria-label="anchor" href="#familles-dexercices-compos%C3%A9s"></a>
+</h3>
+<p>La partie 2 contient actuellement huit familles. Chacune relie
+plusieurs notions et organise les questions dans un ordre cohérent.</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr class="header">
+<th>Famille</th>
+<th>Notions principalement mobilisées</th>
+<th>Exemple de situation</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Aménagement géométrique</td>
+<td>Pythagore, aire, proportionnalité</td>
+<td>Une parcelle triangulaire doit être engazonnée ; vérifier sa
+géométrie, calculer son aire puis le coût.</td>
+</tr>
+<tr class="even">
+<td>Comparaison de tarifs</td>
+<td>Fonctions affines, graphique, équation</td>
+<td>Deux formules de location ont des coûts différents ; déterminer à
+partir de combien d’utilisations elles deviennent équivalentes.</td>
+</tr>
+<tr class="odd">
+<td>Enquête et données</td>
+<td>Médiane, pourcentage, probabilité</td>
+<td>Un diagramme donne le nombre de trajets observés pendant plusieurs
+jours ; calculer une médiane puis une fréquence et une probabilité.</td>
+</tr>
+<tr class="even">
+<td>Programme de calcul et Scratch</td>
+<td>Calcul littéral, équation, algorithmique</td>
+<td>Exécuter un programme de calcul, le traduire par une expression puis
+retrouver une valeur de départ.</td>
+</tr>
+<tr class="odd">
+<td>Mesure indirecte</td>
+<td>Triangles semblables, Thalès, proportionnalité</td>
+<td>Un piquet et un arbre projettent des ombres ; utiliser les longueurs
+mesurées pour déterminer la hauteur de l’arbre.</td>
+</tr>
+<tr class="even">
+<td>Cuve, volume et débit</td>
+<td>Volume, conversions, pourcentage, proportionnalité</td>
+<td>Une cuve partiellement remplie est vidée par une pompe ; calculer
+son contenu puis la durée de vidange.</td>
+</tr>
+<tr class="odd">
+<td>Répartition de lots</td>
+<td>Divisibilité, facteurs premiers, probabilité</td>
+<td>Des jetons sont répartis en sachets identiques ; vérifier la
+répartition puis étudier les numéros gagnants.</td>
+</tr>
+<tr class="even">
+<td>Évolutions d’un prix</td>
+<td>Pourcentages, coefficients multiplicateurs</td>
+<td>Le prix d’un article augmente puis bénéficie d’une remise ; calculer
+le prix final et l’évolution globale.</td>
+</tr>
+</tbody>
+</table>
+<p>Par exemple, la famille <strong>Cuve, volume et débit</strong> peut
+conduire à un enchaînement du type :</p>
+<blockquote>
+<p>Une cuve en forme de pavé droit mesure 2,5 m de longueur, 1,5 m de
+largeur et 1,2 m de hauteur. Elle est remplie à 75 %. Une pompe évacue
+30 litres par minute.</p>
+<ol style="list-style-type: decimal">
+<li>Calculer le volume total de la cuve en mètres cubes puis en
+litres.</li>
+<li>Calculer le volume d’eau effectivement contenu dans la cuve.</li>
+<li>Déterminer la durée nécessaire pour la vider.</li>
+</ol>
+</blockquote>
+<p>Le même mécanisme mathématique pourrait être décliné dans un autre
+contexte, par exemple :</p>
+<blockquote>
+<p>Une piscine contient 18 000 litres d’eau. Une pompe évacue 120 litres
+par minute. Quelle quantité d’eau reste-t-il après 35 minutes ? Combien
+de temps faut-il pour vider complètement la piscine ?</p>
+</blockquote>
+<p>De même, une famille reliant <strong>aire et coût</strong> peut être
+contextualisée par une surface à aménager, à carreler ou à peindre :</p>
+<blockquote>
+<p>Un mur mesure 6 m de longueur et 2,5 m de hauteur. Un pot de peinture
+couvre 10 m² et coûte 24 euros. Calculer l’aire à peindre, déterminer le
+nombre de pots nécessaires puis le coût total.</p>
+</blockquote>
+<p>Ces variantes de contexte sont intéressantes parce qu’elles
+permettent d’augmenter la diversité des sujets sans multiplier
+artificiellement les moteurs de calcul. Une nouvelle famille n’est utile
+que lorsque le <strong>raisonnement</strong> ou l’enchaînement des
+questions devient réellement différent.</p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="les-données-mobilisées">Les données mobilisées<a class="anchor" aria-label="anchor" href="#les-donn%C3%A9es-mobilis%C3%A9es"></a>
+</h2>
+<p>Les données propres aux examens sont regroupées sous
+<code>inst/examens/</code>. Elles réutilisent le référentiel
+mathématique existant au lieu de le dupliquer.</p>
+<p>On peut résumer les principales relations ainsi :</p>
+<pre class="text"><code>examens.csv
+    |
+    +-- parties_examen.csv
+    |       |
+    |       +-- profils_examen.csv
+    |               |
+    |               +-- profils_examen_concepts.csv
+    |
+    +-- gabarits_exercices.csv
+    |       |
+    |       +-- gabarits_exercices_concepts.csv
+    |       +-- gabarits_parametres.csv
+    |
+    +-- gabarits_exercices_composes.csv
+            |
+            +-- gabarits_exercices_questions.csv
+            +-- gabarits_exercices_ressources.csv</code></pre>
+<p>Les tables n’ont pas toutes le même rôle :</p>
+<ul>
+<li>
+<code>examens.csv</code> et <code>parties_examen.csv</code>
+décrivent la structure de l’épreuve ;</li>
+<li>
+<code>profils_examen.csv</code> décrit les choix de composition
+retenus par <code>eduschool</code> ;</li>
+<li>
+<code>gabarits_exercices.csv</code> et ses tables associées
+décrivent les automatismes ;</li>
+<li>
+<code>gabarits_exercices_composes.csv</code> et ses tables associées
+décrivent les exercices de la partie 2 ;</li>
+<li>les identifiants de concepts renvoient aux tables de
+<code>inst/mathematiques/</code>.</li>
+</ul>
+<p>Quelques aperçus suffisent généralement pour comprendre la banque
+:</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="../reference/examens.html">examens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="../reference/gabarits_examen.html">gabarits_examen</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="../reference/gabarits_exercices_composes.html">gabarits_exercices_composes</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="des-ressources-graphiques-générées-par-r">Des ressources graphiques générées par R<a class="anchor" aria-label="anchor" href="#des-ressources-graphiques-g%C3%A9n%C3%A9r%C3%A9es-par-r"></a>
+</h2>
+<p>Les figures ne sont pas stockées comme des images fixes. Les gabarits
+décrivent les données nécessaires au dessin, puis R produit la ressource
+au moment du rendu.</p>
+<p>Cette approche permet notamment de faire varier les dimensions, les
+valeurs ou les positions en même temps que l’énoncé, tout en conservant
+un sujet et un corrigé cohérents.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="../reference/generer_exercice_compose.html">generer_exercice_compose</a></span><span class="op">(</span></span>
+<span>    <span class="st">"GABC_DNB_GEOM_AMENAGEMENT"</span>,</span>
+<span>    seed <span class="op">=</span> <span class="fl">123</span></span>
 <span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">sujet</span> <span class="op">=</span> <span class="fu"><a href="../reference/composer_examen.html">composer_examen</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="fl">2026</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span></span>
+<span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NULL.html" class="external-link">is.null</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">ressource</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="fu"><a href="../reference/produire_ressource_examen.html">produire_ressource_examen</a></span><span class="op">(</span></span>
+<span>        <span class="va">x</span><span class="op">$</span><span class="va">ressource</span>,</span>
+<span>        fichier <span class="op">=</span> <span class="st">"ressource.pdf"</span></span>
+<span>    <span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
+<p>Les graphiques cartésiens et géométriques utilisent
+<code>ggplot2</code> lorsque cela apporte de la lisibilité ; les
+ressources qui s’y prêtent moins, comme certains blocs Scratch, peuvent
+conserver un moteur plus simple basé sur <code>grid</code>.</p>
+</div>
+<div class="section level2">
+<h2 id="produire-un-sujet-et-son-corrigé">Produire un sujet et son corrigé<a class="anchor" aria-label="anchor" href="#produire-un-sujet-et-son-corrig%C3%A9"></a>
+</h2>
+<p>Une fois la composition rédigée, chaque partie peut être produite
+séparément :</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">sujet</span> <span class="op">=</span> <span class="fu"><a href="../reference/composer_examen.html">composer_examen</a></span><span class="op">(</span><span class="st">"DNB"</span>, <span class="fl">2026</span>, seed <span class="op">=</span> <span class="fl">123</span><span class="op">)</span></span>
+<span></span>
 <span><span class="va">partie2</span> <span class="op">=</span> <span class="fu"><a href="../reference/rediger_examen.html">rediger_examen</a></span><span class="op">(</span><span class="va">sujet</span>, partie <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/produire_examen.html">produire_examen</a></span><span class="op">(</span><span class="va">partie2</span>, <span class="st">"dnb-2026-partie2.pdf"</span><span class="op">)</span></span></code></pre></div>
-<p>Les quatre familles initiales relient volontairement plusieurs
-notions : geometrie et grandeurs, fonctions et equations, statistiques
-et probabilites, calcul litteral et Scratch. Les concepts restent ceux
-du referentiel mathematique existant ; les tables d’examen ne les
-dupliquent pas.</p>
-<p>Les trois tables <code>gabarits_exercices_composes.csv</code>,
-<code>gabarits_exercices_questions.csv</code> et
-<code>gabarits_exercices_ressources.csv</code> suffisent a decrire cette
-couche. Lorsqu’une nouvelle annale suggere une famille interessante, on
-enrichit d’abord ces donnees. Un nouveau moteur R n’est necessaire que
-si la logique de generation ou le type de figure est reellement
-nouveau.</p>
+<span></span>
+<span><span class="fu"><a href="../reference/produire_examen.html">produire_examen</a></span><span class="op">(</span></span>
+<span>    <span class="va">partie2</span>,</span>
+<span>    fichier <span class="op">=</span> <span class="st">"dnb-2026-partie2.pdf"</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/produire_corrige_examen.html">produire_corrige_examen</a></span><span class="op">(</span></span>
+<span>    <span class="va">partie2</span>,</span>
+<span>    fichier <span class="op">=</span> <span class="st">"dnb-2026-partie2-corrige.pdf"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>Le corrigé est construit à partir de la même variante que le sujet :
+les valeurs, les figures et les réponses restent donc synchronisées.</p>
+<p>Pour les questions qui demandent plusieurs étapes de raisonnement, un
+corrigé plus explicite peut être demandé :</p>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/produire_corrige_examen.html">produire_corrige_examen</a></span><span class="op">(</span></span>
+<span>    <span class="va">partie2</span>,</span>
+<span>    fichier <span class="op">=</span> <span class="st">"dnb-2026-partie2-corrige-detaille.pdf"</span>,</span>
+<span>    detaille <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>Le mode détaillé n’ajoute pas une nouvelle banque de réponses. Il
+utilise la même question et développe seulement davantage les étapes
+intermédiaires lorsque le gabarit les prévoit.</p>
+</div>
+<div class="section level2">
+<h2 id="produire-directement-une-variante-complète">Produire directement une variante complète<a class="anchor" aria-label="anchor" href="#produire-directement-une-variante-compl%C3%A8te"></a>
+</h2>
+<p>Pour l’usage courant, <code><a href="../reference/produire_dnb.html">produire_dnb()</a></code> orchestre
+l’ensemble du processus :</p>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/produire_dnb.html">produire_dnb</a></span><span class="op">(</span></span>
+<span>    seed <span class="op">=</span> <span class="fl">123</span>,</span>
+<span>    repertoire <span class="op">=</span> <span class="st">"dnb-123"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>Pour générer en même temps les corrigés détaillés :</p>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/produire_dnb.html">produire_dnb</a></span><span class="op">(</span></span>
+<span>    seed <span class="op">=</span> <span class="fl">123</span>,</span>
+<span>    repertoire <span class="op">=</span> <span class="st">"dnb-123"</span>,</span>
+<span>    detaille <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>Le <code>seed</code> est l’identifiant pratique d’une variante. En le
+conservant, on peut reconstruire la même composition et les mêmes
+paramètres de génération.</p>
+</div>
+<div class="section level2">
+<h2 id="enrichir-progressivement-la-banque">Enrichir progressivement la banque<a class="anchor" aria-label="anchor" href="#enrichir-progressivement-la-banque"></a>
+</h2>
+<p>La banque est destinée à évoluer au fil des annales et de
+l’utilisation réelle des exercices. Lorsqu’une nouvelle forme
+intéressante apparaît, la démarche préférée est :</p>
+<ol style="list-style-type: decimal">
+<li>vérifier si une famille existante peut déjà la représenter ;</li>
+<li>enrichir les paramètres ou la traçabilité si le mécanisme existe
+;</li>
+<li>ajouter un gabarit lorsque la forme pédagogique est réellement
+différente ;</li>
+<li>ajouter du code seulement lorsqu’un nouveau calcul ou un nouveau
+type de ressource est nécessaire.</li>
+</ol>
+<p>Cette distinction entre <strong>données de gabarit</strong> et
+<strong>moteurs R</strong> évite de faire grossir inutilement le code.
+Elle permet aussi de contrôler progressivement la cohérence pédagogique
+des exercices pendant leur utilisation réelle.</p>
+</div>
+<div class="section level2">
+<h2 id="diversifier-les-contextes-sans-stocker-les-enonces">Diversifier les contextes sans stocker les enonces<a class="anchor" aria-label="anchor" href="#diversifier-les-contextes-sans-stocker-les-enonces"></a>
+</h2>
+<p>A partir de la version 0.18.0, <code>eduschool</code> separe
+explicitement la <strong>structure mathematique</strong> de l’exercice
+et son <strong>contexte semantique</strong>. Le gabarit indique ce qu’il
+faut raisonner ; le contexte indique dans quelle situation ce
+raisonnement est presente.</p>
+<pre class="text"><code>GABARIT MATHEMATIQUE
+        |
+        +---- contexte : piscine / pompe
+        +---- contexte : cuve / pompe
+        +---- contexte : citerne / pompe
+        +---- contexte : bassin / pompe
+        |
+        +---- parametres numeriques
+                    |
+                    v
+             EXERCICE GENERE</code></pre>
+<p>Les contextes sont decrits dans <code>contextes_exercices.csv</code>
+par quelques attributs semantiques. Pour une famille comme
+<code>STOCK_FLUX</code>, il ne suffit pas de remplacer le mot
+<em>cuve</em> par <em>citerne</em> : le contexte fournit aussi le genre
+de l’objet, son contenu et les verbes naturels. Une piscine peut ainsi
+contenir de l’eau que la pompe <em>evacue</em>, alors qu’une citerne
+peut contenir du gazole que la pompe <em>pompe</em>. Ces elements
+restent des briques lexicales courtes, pas des phrases.</p>
+<p>La table <code>gabarits_exercices_contextes.csv</code> indique
+simplement quels contextes sont compatibles avec chaque gabarit. Aucun
+de ces deux fichiers ne contient une banque d’enonces ou de questions
+completes. Le moteur R assemble les briques semantiques avec les
+parametres mathematiques du gabarit.</p>
+<pre class="text"><code>contexte semantique        parametres mathematiques
+piscine / eau              volume / taux / debit
+citerne / gazole      +     dimensions / valeurs
+reservoir / fioul
+          \                    /
+           \                  /
+            ----&gt; redaction &lt;----
+                    |
+                    v
+          contexte + questions + correction</code></pre>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/contextes_exercices.html">contextes_exercices</a></span><span class="op">(</span><span class="st">"STOCK_FLUX"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/gabarits_exercices_contextes.html">gabarits_exercices_contextes</a></span><span class="op">(</span><span class="st">"GABC_DNB_GRAND_CUVE"</span><span class="op">)</span></span></code></pre></div>
+<p>Un contexte peut etre impose pour produire une variante precise :</p>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/generer_exercice_compose.html">generer_exercice_compose</a></span><span class="op">(</span></span>
+<span>    <span class="st">"GABC_DNB_GRAND_CUVE"</span>,</span>
+<span>    seed <span class="op">=</span> <span class="fl">123</span>,</span>
+<span>    contexte_id <span class="op">=</span> <span class="st">"CTX_PISCINE_VIDANGE"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>Sans <code>contexte_id</code>, le moteur tire un contexte compatible.
+Le <code>seed</code> fixe a la fois ce choix et les parametres
+numeriques : le sujet reste donc reproductible. Cette separation permet
+d’augmenter progressivement le nombre de situations rencontrees par
+l’eleve sans multiplier les moteurs R ni recopier des exercices entiers.
+Le meme principe s’applique aux huit familles : une famille de tarifs
+porte par exemple une unite d’usage (<em>heure</em>, <em>seance</em>,
+<em>livraison</em>), une famille de lots distingue l’objet
+(<em>jeton</em>, <em>ticket</em>, <em>badge</em>) du contenant
+(<em>sachet</em>, <em>carnet</em>, <em>lot</em>), et une famille
+d’evolution de prix porte simplement le bien ou service concerne.</p>
+<p>Ainsi, la diversification reste fondee sur des donnees tres courtes
+:</p>
+<pre class="text"><code>GABARIT MATHEMATIQUE
+        |
+        +-- briques de contexte
+        |      objet / produit / unite / contenant / acteur / verbe
+        |
+        +-- parametres numeriques
+        |
+        +-- moteur de redaction
+                |
+                v
+        variante complete</code></pre>
+<p>Les phrases completes restent donc dans le moteur de redaction, ou
+elles sont construites, et non dans les tables de donnees.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

@@ -1,12 +1,15 @@
 # Gabarits d'exercices composes
 
-Liste les gabarits multi-questions utilises pour les parties de
-raisonnement.
+Gabarits d'exercices composes
 
 ## Usage
 
 ``` r
-gabarits_exercices_composes(examen_code = NULL, partie_type = NULL, statut = "ACTIF")
+gabarits_exercices_composes(
+  examen_code = NULL,
+  partie_type = NULL,
+  statut = "ACTIF"
+)
 ```
 
 ## Arguments
@@ -21,7 +24,7 @@ gabarits_exercices_composes(examen_code = NULL, partie_type = NULL, statut = "AC
 
 - statut:
 
-  Statut des gabarits.
+  Statut des gabarits. Par defaut, seuls les actifs sont retournes.
 
 ## Value
 

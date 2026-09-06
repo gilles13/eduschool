@@ -1,11 +1,16 @@
 # Gabarits d'exercices d'examen
 
-Consulte la banque relationnelle de gabarits d'exercices d'examen.
+Gabarits d'exercices d'examen
 
 ## Usage
 
 ``` r
-gabarits_examen(examen_code = NULL, partie_type = NULL, domaine = NULL, statut = "ACTIF")
+gabarits_examen(
+  examen_code = NULL,
+  partie_type = NULL,
+  domaine = NULL,
+  statut = "ACTIF"
+)
 ```
 
 ## Arguments

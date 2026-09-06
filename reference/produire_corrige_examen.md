@@ -5,7 +5,12 @@ Produire le corrige d'un examen redige
 ## Usage
 
 ``` r
-produire_corrige_examen(examen, fichier = NULL, ouvrir = FALSE)
+produire_corrige_examen(
+  examen,
+  fichier = NULL,
+  ouvrir = FALSE,
+  detaille = FALSE
+)
 ```
 
 ## Arguments
@@ -21,6 +26,11 @@ produire_corrige_examen(examen, fichier = NULL, ouvrir = FALSE)
 - ouvrir:
 
   Ouvrir le PDF apres creation.
+
+- detaille:
+
+  Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu
+  elles sont disponibles.
 
 ## Value
 

@@ -20,6 +20,8 @@
   : Concepts mobilises par les types d'exercices mathematiques
 - [`concepts_math()`](https://gilles13.github.io/eduschool/reference/concepts_math.md)
   : Concepts mathematiques
+- [`contextes_exercices()`](https://gilles13.github.io/eduschool/reference/contextes_exercices.md)
+  : Contextes d'exercices composes
 - [`controle_integrite_si()`](https://gilles13.github.io/eduschool/reference/controle_integrite_si.md)
   : Controler l'integrite du mini-SI
 - [`couleur_cycle()`](https://gilles13.github.io/eduschool/reference/couleur_cycle.md)
@@ -69,6 +71,8 @@
   : Gabarits d'exercices d'examen
 - [`gabarits_exercices_composes()`](https://gilles13.github.io/eduschool/reference/gabarits_exercices_composes.md)
   : Gabarits d'exercices composes
+- [`gabarits_exercices_contextes()`](https://gilles13.github.io/eduschool/reference/gabarits_exercices_contextes.md)
+  : Contextes compatibles avec un gabarit compose
 - [`genere_resume()`](https://gilles13.github.io/eduschool/reference/genere_resume.md)
   : Generer un resume pedagogique lisible
 - [`generer_diagrammes_documentation()`](https://gilles13.github.io/eduschool/reference/generer_diagrammes_documentation.md)
@@ -89,6 +93,10 @@
   : Identite visuelle d'une fiche de revision
 - [`inventaire_si()`](https://gilles13.github.io/eduschool/reference/inventaire_si.md)
   : Inventaire des tables du mini-SI
+- [`libelle_capacite()`](https://gilles13.github.io/eduschool/reference/libelle_capacite.md)
+  : Libelle d'une capacite de programme
+- [`libelle_niveau()`](https://gilles13.github.io/eduschool/reference/libelle_niveau.md)
+  : Libelle d'un niveau scolaire
 - [`methodes_exercices_math()`](https://gilles13.github.io/eduschool/reference/methodes_exercices_math.md)
   : Methodes mobilisees par les types d'exercices mathematiques
 - [`methodes_math()`](https://gilles13.github.io/eduschool/reference/methodes_math.md)
@@ -131,16 +139,24 @@
   : Produire le corrige d'une fiche HTML ou PDF
 - [`produire_corrige_examen()`](https://gilles13.github.io/eduschool/reference/produire_corrige_examen.md)
   : Produire le corrige d'un examen redige
+- [`produire_corrige_exercices()`](https://gilles13.github.io/eduschool/reference/produire_corrige_exercices.md)
+  : Produire un corrige d'exercices historique
 - [`produire_diagramme_html()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_html.md)
   : Produire un diagramme HTML
 - [`produire_diagramme_svg()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_svg.md)
   : Produire un diagramme SVG
+- [`produire_dnb()`](https://gilles13.github.io/eduschool/reference/produire_dnb.md)
+  : Produire un DNB complet et ses corriges
 - [`produire_examen()`](https://gilles13.github.io/eduschool/reference/produire_examen.md)
   : Produire un examen redige en PDF
 - [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
   : Produire une fiche d'exercices HTML ou PDF
+- [`produire_fiche_exercices()`](https://gilles13.github.io/eduschool/reference/produire_fiche_exercices.md)
+  : Produire une fiche d'exercices historique
 - [`produire_frise_parcoursup_svg()`](https://gilles13.github.io/eduschool/reference/produire_frise_parcoursup_svg.md)
   : Produire une frise chronologique Parcoursup
+- [`produire_rapport_exercices()`](https://gilles13.github.io/eduschool/reference/produire_rapport_exercices.md)
+  : Produire une fiche, son corrige et un manifeste
 - [`produire_ressource_examen()`](https://gilles13.github.io/eduschool/reference/produire_ressource_examen.md)
   : Produire une ressource graphique d'examen
 - [`produire_revision()`](https://gilles13.github.io/eduschool/reference/produire_revision.md)
@@ -157,12 +173,6 @@
   : Programmes
 - [`rappels_capacite()`](https://gilles13.github.io/eduschool/reference/rappels_capacite.md)
   : Rappels associés à une capacité
-- [`produire_fiche_exercices`](https://gilles13.github.io/eduschool/reference/rapports.md)
-  [`produire_corrige_exercices`](https://gilles13.github.io/eduschool/reference/rapports.md)
-  [`produire_rapport_exercices`](https://gilles13.github.io/eduschool/reference/rapports.md)
-  [`libelle_niveau`](https://gilles13.github.io/eduschool/reference/rapports.md)
-  [`libelle_capacite`](https://gilles13.github.io/eduschool/reference/rapports.md)
-  : Produire des fiches et corrigés
 - [`rediger_examen()`](https://gilles13.github.io/eduschool/reference/rediger_examen.md)
   : Rediger une partie d'un examen compose
 - [`relations_concepts_math()`](https://gilles13.github.io/eduschool/reference/relations_concepts_math.md)

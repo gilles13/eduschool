@@ -1,6 +1,7 @@
 # Instancier un gabarit d'examen
 
-Genere une variante reproductible d'un gabarit parametrique.
+Genere un enonce et sa reponse a partir d'un gabarit parametrique. La
+graine permet de reproduire exactement la meme variante.
 
 ## Usage
 
