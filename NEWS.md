@@ -1,3 +1,23 @@
+# eduschool 0.18.0
+
+## Diversification des contextes DNB
+
+- separation entre le gabarit mathematique et son contexte semantique ;
+- ajout de `contextes_exercices.csv` et de la relation `gabarits_exercices_contextes.csv` ;
+- 40 contextes actifs repartis sur les huit familles d exercices composes du DNB ;
+- `generer_exercice_compose()` tire maintenant un contexte compatible, reproductible par `seed`, ou accepte `contexte_id` pour imposer une situation ;
+- la diversite repose sur contexte + parametres, sans constituer une banque d enonces complets.
+- les contextes `STOCK_FLUX` portent maintenant des briques lexicales et grammaticales (objet, genre, contenu, verbes) pour adapter naturellement enonce, questions et corrections sans stocker de phrases completes.
+- le meme principe est etendu aux sept autres familles : objets et materiaux, unites d usage, unites statistiques, acteurs de programme, objets mesures, contenants et biens ou services ; les formulations sont assemblees par R a partir de ces briques.
+
+# eduschool 0.17.0
+
+- banque DNB partie 2 portee de 4 a 8 familles d exercices composes ;
+- ajout de corrections detaillees par etapes pour les exercices composes ;
+- `produire_corrige_examen(..., detaille = TRUE)` permet de choisir le niveau de correction ;
+- `produire_dnb()` produit en une commande les deux parties du sujet et leurs corriges ;
+- correction des deux NOTE releves par `R CMD check` : PDF de travail ignores a la construction et mappings ggplot2 sans variables globales implicites.
+
 # eduschool 0.16.0
 
 - `ggplot2` devient une dependance directe pour les graphiques d examen ; les figures composees de Partie 2 utilisent des marges explicites et un clipping desactive pour eviter la troncature des labels.

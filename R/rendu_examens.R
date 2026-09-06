@@ -91,6 +91,15 @@
     )
 }
 
+# Construit des mappings ggplot2 a partir de noms de colonnes sans
+# evaluation non standard dans le code du package. Cette petite passerelle
+# reste volontairement en base R et evite a la fois les bindings globaux
+# de R CMD check et les expressions data$colonne deconseillees par ggplot2.
+.aes_colonnes = function(...) {
+  colonnes = list(...)
+  do.call(ggplot2::aes, lapply(colonnes, as.name))
+}
+
 .dessiner_plan_triangle_rectangle = function(d) {
   sommets = data.frame(
     sommet = c("A", "B", "C"),
@@ -110,7 +119,7 @@
     stringsAsFactors = FALSE
   )
 
-  p = ggplot2::ggplot(triangle, ggplot2::aes(x = x, y = y)) +
+  p = ggplot2::ggplot(triangle, .aes_colonnes(x = "x", y = "y")) +
     ggplot2::geom_path(linewidth = 0.9, colour = "#25364a") +
     ggplot2::annotate(
       "segment", x = 0, y = 0.12 * d$a,
@@ -123,12 +132,12 @@
       linewidth = 0.55, colour = "#25364a"
     ) +
     ggplot2::geom_text(
-      data = sommets, ggplot2::aes(x = x, y = y, label = sommet),
+      data = sommets, .aes_colonnes(x = "x", y = "y", label = "sommet"),
       inherit.aes = FALSE, fontface = "bold", size = 3.6
     ) +
     ggplot2::geom_text(
       data = etiquettes,
-      ggplot2::aes(x = x, y = y, label = label, angle = angle),
+      .aes_colonnes(x = "x", y = "y", label = "label", angle = "angle"),
       inherit.aes = FALSE, size = 3.3
     ) +
     ggplot2::coord_fixed(
@@ -151,7 +160,7 @@
   )
   ymax = max(donnees$prix)
 
-  p = ggplot2::ggplot(donnees, ggplot2::aes(x = x, y = prix, linetype = tarif)) +
+  p = ggplot2::ggplot(donnees, .aes_colonnes(x = "x", y = "prix", linetype = "tarif")) +
     ggplot2::geom_line(linewidth = 0.9, colour = "#25364a") +
     ggplot2::scale_linetype_manual(values = c("Tarif A" = "solid", "Tarif B" = "22")) +
     ggplot2::scale_x_continuous(
@@ -162,7 +171,7 @@
       limits = c(0, ymax * 1.08),
       expand = ggplot2::expansion(mult = c(0, 0.03))
     ) +
-    ggplot2::labs(x = "Nombre d'utilisations", y = "Prix (euros)", linetype = NULL) +
+    ggplot2::labs(x = if (!is.null(d$x_libelle)) d$x_libelle else "Nombre d'utilisations", y = "Prix (euros)", linetype = NULL) +
     ggplot2::coord_cartesian(clip = "off") +
     .theme_examen_ggplot(base_size = 10)
 
@@ -177,10 +186,10 @@
   )
   ymax = max(c(d$valeurs, d$seuil))
 
-  p = ggplot2::ggplot(donnees, ggplot2::aes(x = jour, y = trajets)) +
+  p = ggplot2::ggplot(donnees, .aes_colonnes(x = "jour", y = "trajets")) +
     ggplot2::geom_col(width = 0.68, fill = "#dbe8f2", colour = "#25364a", linewidth = 0.5) +
     ggplot2::geom_text(
-      ggplot2::aes(label = trajets),
+      .aes_colonnes(label = "trajets"),
       vjust = -0.45, fontface = "bold", size = 3.2
     ) +
     ggplot2::geom_hline(yintercept = d$seuil, linetype = "dashed", linewidth = 0.65, colour = "#7A3E2C") +
@@ -193,11 +202,92 @@
       limits = c(0, ymax * 1.22),
       expand = ggplot2::expansion(mult = c(0, 0.02))
     ) +
-    ggplot2::labs(x = "Jour", y = "Nombre de trajets") +
+    ggplot2::labs(x = "Jour", y = if (!is.null(d$y_libelle)) d$y_libelle else "Nombre de trajets") +
     ggplot2::coord_cartesian(clip = "off") +
     .theme_examen_ggplot(base_size = 10) +
     ggplot2::theme(legend.position = "none")
 
+  print(p)
+  invisible(p)
+}
+
+
+.dessiner_schema_thales_ombres = function(d) {
+  ecart = 0.18 * d$ombre_grand
+  origine_grand = d$ombre_petit + ecart
+  xmax = origine_grand + d$ombre_grand
+  ymax = max(d$petit, d$grand)
+  segments = data.frame(
+    x = c(0, 0, origine_grand, origine_grand),
+    y = c(0, 0, 0, 0),
+    xend = c(0, d$ombre_petit, origine_grand, origine_grand + d$ombre_grand),
+    yend = c(d$petit, 0, d$grand, 0),
+    stringsAsFactors = FALSE
+  )
+  rayons = data.frame(
+    x = c(0, origine_grand), y = c(d$petit, d$grand),
+    xend = c(d$ombre_petit, origine_grand + d$ombre_grand), yend = c(0, 0)
+  )
+  p = ggplot2::ggplot() +
+    ggplot2::geom_segment(
+      data = segments,
+      .aes_colonnes(x = "x", y = "y", xend = "xend", yend = "yend"),
+      linewidth = 0.9, colour = "#25364a"
+    ) +
+    ggplot2::geom_segment(
+      data = rayons,
+      .aes_colonnes(x = "x", y = "y", xend = "xend", yend = "yend"),
+      linewidth = 0.65, linetype = "dashed", colour = "#7A3E2C"
+    ) +
+    ggplot2::annotate("text", x = -0.02 * xmax, y = d$petit/2,
+      label = paste0(.formater_decimal_fr(d$petit), " m"), hjust = 1, size = 3.1) +
+    ggplot2::annotate("text", x = d$ombre_petit/2, y = -0.05 * ymax,
+      label = paste0(.formater_decimal_fr(d$ombre_petit), " m"), vjust = 1, size = 3.1) +
+    ggplot2::annotate("text", x = origine_grand - 0.02 * xmax, y = d$grand/2,
+      label = "hauteur ?", hjust = 1, size = 3.1, fontface = "bold") +
+    ggplot2::annotate("text", x = origine_grand + d$ombre_grand/2, y = -0.05 * ymax,
+      label = paste0(.formater_decimal_fr(d$ombre_grand), " m"), vjust = 1, size = 3.1) +
+    ggplot2::annotate("text", x = d$ombre_petit/2, y = 0.10 * ymax,
+      label = "piquet", size = 2.8) +
+    ggplot2::annotate("text", x = origine_grand + d$ombre_grand/2, y = 0.10 * ymax,
+      label = if (!is.null(d$objet_label)) d$objet_label else "arbre", size = 2.8) +
+    ggplot2::coord_fixed(
+      xlim = c(-0.12 * xmax, 1.04 * xmax), ylim = c(-0.14 * ymax, 1.08 * ymax),
+      clip = "off"
+    ) +
+    ggplot2::theme_void(base_size = 10) +
+    ggplot2::theme(plot.margin = ggplot2::margin(14, 20, 18, 24, unit = "pt"))
+  print(p)
+  invisible(p)
+}
+
+.dessiner_schema_cuve_pave = function(d) {
+  x = c(0.18, 0.72, 0.88, 0.34, 0.18, 0.18, 0.34, 0.88, 0.72)
+  y = c(0.20, 0.20, 0.38, 0.38, 0.20, 0.70, 0.88, 0.88, 0.70)
+  seg = data.frame(
+    x = x[c(1,2,3,4,1,6,7,8,9,6,4,3,2)],
+    y = y[c(1,2,3,4,1,6,7,8,9,6,4,3,2)],
+    xend = x[c(2,3,4,1,6,7,8,9,6,1,7,8,9)],
+    yend = y[c(2,3,4,1,6,7,8,9,6,1,7,8,9)]
+  )
+  niveau = 0.20 + 0.50 * d$taux / 100
+  p = ggplot2::ggplot() +
+    ggplot2::annotate("rect", xmin = 0.185, xmax = 0.715, ymin = 0.205, ymax = niveau,
+      fill = "#dbe8f2", alpha = 0.65) +
+    ggplot2::geom_segment(data = seg,
+      .aes_colonnes(x = "x", y = "y", xend = "xend", yend = "yend"),
+      linewidth = 0.8, colour = "#25364a") +
+    ggplot2::annotate("text", x = 0.45, y = 0.12,
+      label = paste0(.formater_decimal_fr(d$longueur), " m"), size = 3.1) +
+    ggplot2::annotate("text", x = 0.84, y = 0.27,
+      label = paste0(.formater_decimal_fr(d$largeur), " m"), size = 3.1, angle = 35) +
+    ggplot2::annotate("text", x = 0.10, y = 0.45,
+      label = paste0(.formater_decimal_fr(d$hauteur), " m"), size = 3.1, angle = 90) +
+    ggplot2::annotate("text", x = 0.46, y = niveau + 0.04,
+      label = paste0(d$taux, " %"), size = 3.2, fontface = "bold") +
+    ggplot2::coord_fixed(xlim = c(0, 1), ylim = c(0.02, 1), clip = "off") +
+    ggplot2::theme_void(base_size = 10) +
+    ggplot2::theme(plot.margin = ggplot2::margin(12, 22, 14, 22, unit = "pt"))
   print(p)
   invisible(p)
 }
@@ -227,6 +317,8 @@
   if (identical(moteur, "plan_triangle_rectangle")) return(.dessiner_plan_triangle_rectangle(d))
   if (identical(moteur, "courbes_affines_tarifs")) return(.dessiner_courbes_affines_tarifs(d))
   if (identical(moteur, "diagramme_batons_enquete")) return(.dessiner_diagramme_batons_enquete(d))
+  if (identical(moteur, "schema_thales_ombres")) return(.dessiner_schema_thales_ombres(d))
+  if (identical(moteur, "schema_cuve_pave")) return(.dessiner_schema_cuve_pave(d))
   if (identical(moteur, "programme_calcul_scratch")) return(.dessiner_programme_calcul_scratch(d))
 
   stop("Moteur de ressource non implemente : ", moteur, call. = FALSE)
@@ -308,9 +400,10 @@ produire_ressource_examen = function(ressource, fichier = NULL,
 #' @param fichier Chemin de sortie. Si `NULL`, un nom est construit automatiquement.
 #' @param corrige Inclure les reponses et corrections.
 #' @param ouvrir Ouvrir le PDF apres creation.
+#' @param detaille Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.
 #' @return Invisiblement, le chemin absolu du PDF produit.
 #' @export
-produire_examen = function(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE) {
+produire_examen = function(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE, detaille = FALSE) {
   if (!inherits(examen, "eduschool_examen_redige")) {
     stop("examen doit etre produit par rediger_examen().", call. = FALSE)
   }
@@ -346,6 +439,7 @@ produire_examen = function(examen, fichier = NULL, corrige = FALSE, ouvrir = FAL
       examen = examen,
       ressources = as.list(ressources),
       corrige = isTRUE(corrige),
+      detaille = isTRUE(detaille),
       logo = .logo_eduschool()
     ),
     envir = new.env(parent = globalenv()),
@@ -362,6 +456,38 @@ produire_examen = function(examen, fichier = NULL, corrige = FALSE, ouvrir = FAL
 #' @inheritParams produire_examen
 #' @return Invisiblement, le chemin absolu du PDF produit.
 #' @export
-produire_corrige_examen = function(examen, fichier = NULL, ouvrir = FALSE) {
-  produire_examen(examen, fichier = fichier, corrige = TRUE, ouvrir = ouvrir)
+produire_corrige_examen = function(examen, fichier = NULL, ouvrir = FALSE, detaille = FALSE) {
+  produire_examen(examen, fichier = fichier, corrige = TRUE, ouvrir = ouvrir, detaille = detaille)
+}
+
+#' Produire un DNB complet et ses corriges
+#'
+#' Compose une variante reproductible du DNB 2026, redige les deux parties et
+#' produit les sujets et leurs corriges. Les deux parties restent separees afin
+#' de respecter la logique de l epreuve, dont la partie 1 est ramassee avant la
+#' partie 2.
+#'
+#' @param seed Graine aleatoire permettant de reproduire exactement le sujet.
+#' @param repertoire Repertoire de sortie.
+#' @param detaille Produire des corriges detailles avec etapes de raisonnement.
+#' @param ouvrir Ouvrir les PDF produits.
+#' @return Un vecteur nomme contenant les quatre chemins PDF.
+#' @export
+produire_dnb = function(seed = NULL, repertoire = ".", detaille = FALSE, ouvrir = FALSE) {
+  dir.create(repertoire, recursive = TRUE, showWarnings = FALSE)
+  sujet = composer_examen("DNB", 2026, seed = seed)
+  p1 = rediger_examen(sujet, partie = 1)
+  p2 = rediger_examen(sujet, partie = 2)
+  suffixe = if (isTRUE(detaille)) "corrige-detaille" else "corrige"
+  fichiers = c(
+    partie1_sujet = file.path(repertoire, "dnb-2026-partie1-sujet.pdf"),
+    partie1_corrige = file.path(repertoire, paste0("dnb-2026-partie1-", suffixe, ".pdf")),
+    partie2_sujet = file.path(repertoire, "dnb-2026-partie2-sujet.pdf"),
+    partie2_corrige = file.path(repertoire, paste0("dnb-2026-partie2-", suffixe, ".pdf"))
+  )
+  produire_examen(p1, fichiers[["partie1_sujet"]], ouvrir = ouvrir)
+  produire_corrige_examen(p1, fichiers[["partie1_corrige"]], ouvrir = ouvrir, detaille = detaille)
+  produire_examen(p2, fichiers[["partie2_sujet"]], ouvrir = ouvrir)
+  produire_corrige_examen(p2, fichiers[["partie2_corrige"]], ouvrir = ouvrir, detaille = detaille)
+  vapply(fichiers, normalizePath, character(1), winslash = "/", mustWork = TRUE)
 }

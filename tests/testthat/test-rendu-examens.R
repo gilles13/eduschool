@@ -47,10 +47,12 @@ test_that("les ressources composees se rendent en PDF vectoriel", {
   ids = gabarits_exercices_composes("DNB", "PROBLEMES")$gabarit_compose_id
   for (id in ids) {
     x = generer_exercice_compose(id, seed = 17)
-    f = tempfile(fileext = ".pdf")
-    produire_ressource_examen(x$ressource, f)
-    expect_true(file.exists(f), info = id)
-    expect_true(file.info(f)$size > 200, info = id)
+    if (!is.null(x$ressource)) {
+      f = tempfile(fileext = ".pdf")
+      produire_ressource_examen(x$ressource, f)
+      expect_true(file.exists(f), info = id)
+      expect_true(file.info(f)$size > 200, info = id)
+    }
   }
 })
 
@@ -68,4 +70,15 @@ test_that("la partie 2 peut etre assemblee en PDF", {
 test_that("ggplot2 est une dependance directe du moteur graphique", {
   imports = packageDescription("eduschool")$Imports
   expect_match(imports, "ggplot2")
+})
+
+
+test_that("le corrige detaille expose les etapes des exercices composes", {
+  x = generer_exercice_compose("GABC_DNB_FONC_TARIFS", seed = 42)
+  expect_true("correction_detaillee" %in% names(x$questions))
+  expect_true(all(nchar(x$questions$correction_detaillee) >= nchar(x$questions$correction)))
+})
+
+test_that("produire_dnb est disponible comme raccourci de production", {
+  expect_true(is.function(produire_dnb))
 })

@@ -32,21 +32,7 @@ navbar:
       - text: Mathématiques
       - text: Mathématiques par niveau
         href: articles/mathematiques-par-niveau.html
-      - text: 6e
-        href: articles/mathematiques-6e.html
-      - text: 5e
-        href: articles/mathematiques-5e.html
-      - text: 4e
-        href: articles/mathematiques-4e.html
-      - text: 3e
-        href: articles/mathematiques-3e.html
-      - text: 2de
-        href: articles/mathematiques-2de.html
-      - text: 1re spécialité
-        href: articles/mathematiques-1re-specialite.html
-      - text: Terminale spécialité
-        href: articles/mathematiques-terminale-specialite.html
-      - text: Composer un DNB
+      - text: Épreuves du DNB
         href: articles/examens-dnb.html
       - text: Fiches de révision
         href: articles/fiches-revision-mathematiques.html

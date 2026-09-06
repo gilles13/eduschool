@@ -1,0 +1,41 @@
+contexte_id;famille_contexte;libelle;objet;action;acteur_ou_dispositif;produit_ou_service;unite_principale;genre_objet;objet_avec_indefini;objet_avec_article;contenu;contenu_avec_article;genre_contenu;verbe_flux_infinitif;verbe_flux_present;objet_pluriel;produit_avec_article;unite_singulier;unite_pluriel;acteur_avec_indefini;acteur_avec_article;contenant_singulier;contenant_pluriel;verbe_action_infinitif;verbe_action_present;nom_action;statut
+CTX_PISCINE_VIDANGE;STOCK_FLUX;Piscine et pompe;piscine;vider;pompe;eau;L;F;une piscine;la piscine;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
+CTX_CUVE_VIDANGE;STOCK_FLUX;Cuve et pompe;cuve;vider;pompe;eau;L;F;une cuve;la cuve;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
+CTX_CITERNE_VIDANGE;STOCK_FLUX;Citerne et pompe;citerne;vider;pompe;gazole;L;F;une citerne;la citerne;gazole;le gazole;M;pomper;pompe;;;;;;;;;;;;ACTIF
+CTX_BASSIN_VIDANGE;STOCK_FLUX;Bassin et pompe;bassin;vider;pompe;eau;L;M;un bassin;le bassin;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
+CTX_RESERVOIR_VIDANGE;STOCK_FLUX;Reservoir et pompe;reservoir;vider;pompe;fioul;L;M;un reservoir;le reservoir;fioul;le fioul;M;pomper;pompe;;;;;;;;;;;;ACTIF
+CTX_RECUPERATEUR_VIDANGE;STOCK_FLUX;Recuperateur d eau;recuperateur d eau;vider;pompe;eau;L;M;un recuperateur d eau;le recuperateur d eau;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
+CTX_PARCELLE_GAZON;SURFACE_COUT;Parcelle a engazonner;parcelle;engazonner;entreprise;gazon;m2;;une parcelle;la parcelle;;;;;;parcelles;du gazon;;;;;;;engazonner;;engazonnement;ACTIF
+CTX_TERRAIN_GAZON;SURFACE_COUT;Terrain a engazonner;terrain;engazonner;entreprise;gazon;m2;;un terrain;le terrain;;;;;;terrains;du gazon;;;;;;;engazonner;;engazonnement;ACTIF
+CTX_ESPACE_PAILLAGE;SURFACE_COUT;Espace a pailler;espace paysager;recouvrir;entreprise;paillage;m2;;un espace paysager;l espace paysager;;;;;;espaces paysagers;du paillage;;;;;;;pailler;;paillage;ACTIF
+CTX_MASSIF_GRAVIER;SURFACE_COUT;Massif a couvrir de gravier;massif;recouvrir;entreprise;gravier;m2;;un massif;le massif;;;;;;massifs;du gravier;;;;;;;recouvrir;;couverture en gravier;ACTIF
+CTX_VOILE_TISSU;SURFACE_COUT;Voile triangulaire en tissu;voile triangulaire;fabriquer;atelier;tissu;m2;;un voile triangulaire;le voile triangulaire;;;;;;voiles triangulaires;du tissu;;;;;;;fabriquer;;tissu;ACTIF
+CTX_TARIF_PARKING;TARIFS;Parking;stationnement;utiliser;parking;forfait;euros;;;;;;;;;;;heure;heures;un parking;le parking;;;;;;ACTIF
+CTX_TARIF_VELO;TARIFS;Location de velo;velo;louer;service de location;location;euros;;;;;;;;;;;location;locations;un service de location;le service de location;;;;;;ACTIF
+CTX_TARIF_SPORT;TARIFS;Salle de sport;seance;utiliser;salle de sport;abonnement;euros;;;;;;;;;;;seance;seances;une salle de sport;la salle de sport;;;;;;ACTIF
+CTX_TARIF_LIVRAISON;TARIFS;Livraison;livraison;commander;service de livraison;service;euros;;;;;;;;;;;livraison;livraisons;un service de livraison;le service de livraison;;;;;;ACTIF
+CTX_TARIF_MUSEE;TARIFS;Visites;visite;effectuer;site culturel;billet;euros;;;;;;;;;;;visite;visites;un site culturel;le site culturel;;;;;;ACTIF
+CTX_DATA_VELO;DONNEES;Trajets a velo;trajet a velo;compter;groupe;trajets;trajets;;;;;;;;;;;trajet a velo;trajets a velo;;;;;;;;ACTIF
+CTX_DATA_LECTURE;DONNEES;Pages lues;page;lire;eleve;lecture;pages;;;;;;;;;;;page lue;pages lues;;;;;;;;ACTIF
+CTX_DATA_SPORT;DONNEES;Seances de sport;seance;effectuer;groupe;sport;seances;;;;;;;;;;;seance de sport;seances de sport;;;;;;;;ACTIF
+CTX_DATA_BUS;DONNEES;Voyages en bus;voyage;effectuer;groupe;transport;voyages;;;;;;;;;;;voyage en bus;voyages en bus;;;;;;;;ACTIF
+CTX_DATA_EXERCICES;DONNEES;Exercices resolus;exercice;resoudre;eleve;travail;exercices;;;;;;;;;;;exercice resolu;exercices resolus;;;;;;;;ACTIF
+CTX_ALGO_SCORE;PROGRAMME_CALCUL;Calcul d un score;score;calculer;programme Scratch;score;points;;;;;;;;;;;;;un programme Scratch;le programme Scratch;;;calculer;calcule;;ACTIF
+CTX_ALGO_JEU;PROGRAMME_CALCUL;Jeu de nombres;nombre;transformer;programme Scratch;resultat;unites;;;;;;;;;;;;;un jeu de nombres;le jeu de nombres;;;transformer;transforme;;ACTIF
+CTX_ALGO_MACHINE;PROGRAMME_CALCUL;Machine a nombres;nombre;transformer;machine;sortie;unites;;;;;;;;;;;;;une machine a nombres;la machine a nombres;;;transformer;transforme;;ACTIF
+CTX_ALGO_DEFI;PROGRAMME_CALCUL;Defi de calcul;nombre;transformer;programme;resultat;unites;;;;;;;;;;;;;un programme;le programme;;;transformer;transforme;;ACTIF
+CTX_OMBRE_ARBRE;THALES_OMBRES;Ombre d un arbre;arbre;mesurer;baton;hauteur;m;;un arbre;l arbre;;;;;;;;;;;;;;;;;ACTIF
+CTX_OMBRE_POTEAU;THALES_OMBRES;Ombre d un poteau;poteau;mesurer;baton;hauteur;m;;un poteau;le poteau;;;;;;;;;;;;;;;;;ACTIF
+CTX_OMBRE_BATIMENT;THALES_OMBRES;Ombre d un batiment;batiment;mesurer;baton;hauteur;m;;un batiment;le batiment;;;;;;;;;;;;;;;;;ACTIF
+CTX_OMBRE_PHARE;THALES_OMBRES;Ombre d un phare;phare;mesurer;baton;hauteur;m;;un phare;le phare;;;;;;;;;;;;;;;;;ACTIF
+CTX_OMBRE_MAT;THALES_OMBRES;Ombre d un mat;mat;mesurer;baton;hauteur;m;;un mat;le mat;;;;;;;;;;;;;;;;;ACTIF
+CTX_LOTS_JETONS;LOTS;Sachets de jetons;jetons;repartir;association;sachets;jetons;;;;;;;;;;;jeton;jetons;;;sachet;sachets;;;;ACTIF
+CTX_LOTS_TICKETS;LOTS;Carnets de tickets;tickets;repartir;association;carnets;tickets;;;;;;;;;;;ticket;tickets;;;carnet;carnets;;;;ACTIF
+CTX_LOTS_CARTES;LOTS;Paquets de cartes;cartes;repartir;club;paquets;cartes;;;;;;;;;;;carte;cartes;;;paquet;paquets;;;;ACTIF
+CTX_LOTS_BADGES;LOTS;Lots de badges;badges;repartir;association;lots;badges;;;;;;;;;;;badge;badges;;;lot;lots;;;;ACTIF
+CTX_LOTS_BRACELETS;LOTS;Lots de bracelets numerotes;bracelets;repartir;club;lots;bracelets;;;;;;;;;;;bracelet;bracelets;;;lot;lots;;;;ACTIF
+CTX_EVOL_VETEMENT;EVOLUTION_PRIX;Vetement en promotion;vetement;acheter;magasin;article;euros;;un vetement;le vetement;;;;;;;;;;;;;;;;;ACTIF
+CTX_EVOL_VELO;EVOLUTION_PRIX;Velo en promotion;velo;acheter;magasin;article;euros;;un velo;le velo;;;;;;;;;;;;;;;;;ACTIF
+CTX_EVOL_BILLET;EVOLUTION_PRIX;Billet et remise;billet;acheter;billetterie;billet;euros;;un billet;le billet;;;;;;;;;;;;;;;;;ACTIF
+CTX_EVOL_MATERIEL;EVOLUTION_PRIX;Materiel sportif;materiel sportif;acheter;magasin;article;euros;;un materiel sportif;le materiel sportif;;;;;;;;;;;;;;;;;ACTIF
+CTX_EVOL_ABONNEMENT;EVOLUTION_PRIX;Abonnement;abonnement;souscrire;service;abonnement;euros;;un abonnement;l abonnement;;;;;;;;;;;;;;;;;ACTIF

@@ -12,3 +12,5 @@
 
 ^documentation$
 ^rapports$
+
+^dnb-.*\.pdf$

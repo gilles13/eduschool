@@ -101,3 +101,5 @@ REL099;gabarits_exercices_composes;source_id;sources;source_id;oui;n:1;Source d 
 REL100;gabarits_exercices_questions;gabarit_compose_id;gabarits_exercices_composes;gabarit_compose_id;non;n:1;Gabarit compose contenant la question
 REL101;gabarits_exercices_questions;concept_id;concepts_math;concept_id;non;n:1;Concept principal de la question
 REL102;gabarits_exercices_ressources;gabarit_compose_id;gabarits_exercices_composes;gabarit_compose_id;non;n:1;Gabarit compose utilisant la ressource
+REL103;gabarits_exercices_contextes;gabarit_compose_id;gabarits_exercices_composes;gabarit_compose_id;non;n:1;Gabarit compose compatible avec le contexte
+REL104;gabarits_exercices_contextes;contexte_id;contextes_exercices;contexte_id;non;n:1;Contexte semantique compatible

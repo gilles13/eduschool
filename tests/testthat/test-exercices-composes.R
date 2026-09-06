@@ -1,7 +1,7 @@
 test_that("la banque composee reste petite et relie les notions", {
   g = gabarits_exercices_composes("DNB", "PROBLEMES")
-  expect_equal(nrow(g), 4)
-  expect_setequal(g$domaine, c("GEOMETRIE", "FONCTIONS", "STATISTIQUES", "ALGORITHMIQUE"))
+  expect_equal(nrow(g), 8)
+  expect_true(all(c("GEOMETRIE", "FONCTIONS", "STATISTIQUES", "ALGORITHMIQUE", "GRANDEURS", "ARITHMETIQUE") %in% g$domaine))
   q = .lire_csv("examens", "gabarits_exercices_questions.csv")
   expect_true(all(q$concept_id %in% concepts_math()$concept_id))
   expect_true(any(nzchar(q$question_parent_id)))
@@ -17,7 +17,8 @@ test_that("les exercices composes sont reproductibles et multi-questions", {
     expect_gte(nrow(a$questions), 3)
     expect_true(all(nzchar(a$questions$enonce)))
     expect_true(all(nzchar(a$questions$reponse)))
-    expect_true(is.list(a$ressource))
+    expect_true(all(nzchar(a$questions$correction_detaillee)))
+    expect_true(is.null(a$ressource) || is.list(a$ressource))
   }
 })
 
@@ -27,12 +28,11 @@ test_that("composer et rediger la partie 2 utilise les gabarits composes", {
   expect_equal(nrow(p2), 4)
   expect_true(all(startsWith(p2$gabarit_id, "GABC_")))
   expect_equal(sum(as.numeric(p2$points_cibles)), 14)
-  expect_true("ALGORITHMIQUE" %in% p2$domaine)
 
   x = rediger_examen(sujet, partie = 2)
   expect_equal(length(x$exercices), 4)
   expect_true(all(x$items$statut_redaction == "REDIGE"))
-  expect_equal(length(x$ressources), 4)
+  expect_lte(length(x$ressources), 4)
   expect_true(all(vapply(x$exercices, function(z) nrow(z$questions) >= 3, logical(1))))
 })
 

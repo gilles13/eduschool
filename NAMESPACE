@@ -111,3 +111,6 @@ export(produire_corrige_examen)
 export(gabarits_exercices_composes)
 export(gabarit_exercice_compose)
 export(generer_exercice_compose)
+
+export(contextes_exercices)
+export(gabarits_exercices_contextes)

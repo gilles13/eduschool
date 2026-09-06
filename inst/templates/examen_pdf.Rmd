@@ -4,6 +4,7 @@ params:
   examen: NULL
   ressources: NULL
   corrige: false
+  detaille: false
   logo: ""
 fontsize: 11pt
 geometry: margin=1.75cm
@@ -25,6 +26,7 @@ e = x$entete
 items = x$items
 ressources = params$ressources
 corrige = isTRUE(params$corrige)
+detaille = isTRUE(params$detaille)
 tex = eduschool:::echapper_tex
 ```
 
@@ -36,7 +38,7 @@ if (nzchar(params$logo) && file.exists(params$logo)) {
 cat("{\\Large\\bfseries DIPLÔME NATIONAL DU BREVET}\\par\n")
 cat("\\vspace{0.2em}{\\large Session ", tex(e$session), "}\\par\n", sep = "")
 cat("\\vspace{0.3em}{\\large\\bfseries Mathématiques - série générale}\\par\n")
-if (corrige) cat("\\vspace{0.35em}{\\large\\bfseries CORRIGE}\\par\n")
+if (corrige) cat("\\vspace{0.35em}{\\large\\bfseries ", if (detaille) "CORRIGE DETAILLE" else "CORRIGE", "}\\par\n", sep = "")
 cat("\\end{center}\n\\vspace{0.6em}\n")
 cat("\\begin{center}\n")
 cat("\\begin{tabular}{|>{\\raggedright\\arraybackslash}p{0.68\\textwidth}|>{\\centering\\arraybackslash}p{0.20\\textwidth}|}\n")
@@ -76,7 +78,11 @@ if (length(x$exercices)) {
       cat("\\par\n")
       if (corrige) {
         cat("\\textbf{Réponse : }", tex(q$reponse), "\\par\n", sep = "")
-        cat("\\textit{", tex(q$correction), "}\\par\n", sep = "")
+        correction = q$correction
+        if (detaille && "correction_detaillee" %in% names(q) && !is.na(q$correction_detaillee) && nzchar(q$correction_detaillee)) {
+          correction = q$correction_detaillee
+        }
+        cat("\\textit{", tex(correction), "}\\par\n", sep = "")
       } else {
         cat("\\vspace{0.55em}\n")
       }

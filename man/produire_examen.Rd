@@ -4,7 +4,13 @@
 \alias{produire_examen}
 \title{Produire un examen redige en PDF}
 \usage{
-produire_examen(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE)
+produire_examen(
+  examen,
+  fichier = NULL,
+  corrige = FALSE,
+  ouvrir = FALSE,
+  detaille = FALSE
+)
 }
 \arguments{
 \item{examen}{Objet produit par [rediger_examen()].}
@@ -14,6 +20,8 @@ produire_examen(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE)
 \item{corrige}{Inclure les reponses et corrections.}
 
 \item{ouvrir}{Ouvrir le PDF apres creation.}
+
+\item{detaille}{Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.}
 }
 \value{
 Invisiblement, le chemin absolu du PDF produit.

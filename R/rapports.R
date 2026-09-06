@@ -10,6 +10,15 @@ normaliser_nom_fichier = function(x) {
   x
 }
 
+#' Libelle d'un niveau scolaire
+#'
+#' Retourne le libelle associe a un identifiant de niveau. Si le referentiel
+#' n'est pas disponible ou si l'identifiant n'est pas trouve, l'identifiant
+#' fourni est retourne tel quel.
+#'
+#' @param niveau_id Identifiant du niveau scolaire.
+#' @return Une chaine de caracteres contenant le libelle du niveau.
+#' @export
 libelle_niveau = function(niveau_id) {
   f = eduschool_path("referentiels", "niveaux.csv", must_work = FALSE)
   if (!nzchar(f) || !file.exists(f)) return(niveau_id)
@@ -18,6 +27,16 @@ libelle_niveau = function(niveau_id) {
   if (is.na(i)) niveau_id else x$libelle[[i]]
 }
 
+#' Libelle d'une capacite de programme
+#'
+#' Retourne le libelle associe a un identifiant de capacite ou d'item de
+#' programme. Si le referentiel n'est pas disponible ou si l'identifiant
+#' n'est pas trouve, l'identifiant fourni est retourne tel quel.
+#'
+#' @param capacite_id Identifiant de la capacite ou de l'item de programme.
+#' @return Une chaine de caracteres contenant le libelle de la capacite, ou
+#'   `NULL` si `capacite_id` est absent.
+#' @export
 libelle_capacite = function(capacite_id) {
   if (is.null(capacite_id) || length(capacite_id) == 0L || is.na(capacite_id) || !nzchar(capacite_id))
     return(NULL)
@@ -64,6 +83,22 @@ creer_lot_rapport = function(
   )
 }
 
+#' Produire une fiche d'exercices historique
+#'
+#' Produit une fiche d'exercices au format LaTeX a partir d'un lot cree par
+#' le moteur historique de rapports. Cette fonction est conservee pour
+#' compatibilite ; pour les nouveaux usages, preferer [produire_fiche()].
+#'
+#' @param lot Objet de classe `rapport_exercices`, cree avec `creer_lot_rapport()`.
+#' @param sortie Chemin de sortie, avec ou sans extension `.tex`.
+#' @param compiler Si `TRUE`, compiler egalement le fichier LaTeX en PDF.
+#' @param titre Titre de la fiche.
+#' @param instructions Instructions affichees sur la fiche.
+#' @param afficher_metadonnees Afficher les metadonnees techniques des exercices.
+#' @param ouvrir Si `TRUE`, ouvrir le PDF produit lorsque la compilation a reussi.
+#' @return Invisiblement, une liste contenant les chemins du fichier LaTeX et
+#'   du PDF eventuel, ainsi que le lot utilise.
+#' @export
 produire_fiche_exercices = function(
   lot,
   sortie,
@@ -106,6 +141,21 @@ produire_fiche_exercices = function(
   invisible(list(tex = fichier_tex, pdf = fichier_pdf, lot = lot))
 }
 
+#' Produire un corrige d'exercices historique
+#'
+#' Produit le corrige LaTeX d'un lot d'exercices cree par le moteur historique
+#' de rapports. Cette fonction est conservee pour compatibilite ; pour les
+#' nouveaux usages, preferer [produire_corrige()].
+#'
+#' @param lot Objet de classe `rapport_exercices`, cree avec `creer_lot_rapport()`.
+#' @param sortie Chemin de sortie, avec ou sans extension `.tex`.
+#' @param compiler Si `TRUE`, compiler egalement le fichier LaTeX en PDF.
+#' @param titre Titre du corrige.
+#' @param afficher_metadonnees Afficher les metadonnees techniques des exercices.
+#' @param ouvrir Si `TRUE`, ouvrir le PDF produit lorsque la compilation a reussi.
+#' @return Invisiblement, une liste contenant les chemins du fichier LaTeX et
+#'   du PDF eventuel, ainsi que le lot utilise.
+#' @export
 produire_corrige_exercices = function(
   lot,
   sortie,
@@ -147,6 +197,28 @@ produire_corrige_exercices = function(
   invisible(list(tex = fichier_tex, pdf = fichier_pdf, lot = lot))
 }
 
+#' Produire une fiche, son corrige et un manifeste
+#'
+#' Genere un lot d'exercices avec le moteur historique, produit la fiche et le
+#' corrige correspondants, puis ecrit un manifeste CSV decrivant les exercices
+#' generes. Pour les nouveaux usages, les fonctions [generer_fiche()],
+#' [produire_fiche()] et [produire_corrige()] sont a privilegier.
+#'
+#' @param niveau_id Identifiant du niveau scolaire.
+#' @param capacite_id Identifiant d'une capacite a cibler, ou `NULL` pour un lot mixte.
+#' @param n Nombre d'exercices a generer.
+#' @param difficulte Niveau de difficulte demande.
+#' @param seed Graine aleatoire utilisee pour rendre la generation reproductible.
+#' @param sortie_dir Repertoire dans lequel ecrire les fichiers produits.
+#' @param prefixe Prefixe des noms de fichiers. Si `NULL`, il est construit a
+#'   partir du niveau, de la capacite, de la difficulte et de la graine.
+#' @param compiler Si `TRUE`, compiler les fichiers LaTeX en PDF.
+#' @param afficher_metadonnees Afficher les metadonnees techniques dans les documents.
+#' @param ouvrir Document PDF a ouvrir apres generation : `"aucun"`, `"fiche"`,
+#'   `"corrige"` ou `"les_deux"`.
+#' @return Invisiblement, une liste contenant le lot, la fiche, le corrige et
+#'   le chemin du manifeste CSV.
+#' @export
 produire_rapport_exercices = function(
   niveau_id,
   capacite_id = NULL,
