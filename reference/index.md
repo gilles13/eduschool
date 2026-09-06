@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`ajouter_variations_ipc()`](https://gilles13.github.io/eduschool/reference/ajouter_variations_ipc.md)
+  : Ajouter les variations mensuelles et annuelles de l'IPC
 - [`annoter_source()`](https://gilles13.github.io/eduschool/reference/annoter_source.md)
   : Ajouter la source a un graphique ggplot2
 - [`capacites()`](https://gilles13.github.io/eduschool/reference/capacites.md)
@@ -105,6 +107,8 @@
   : Identite visuelle d'une fiche de revision
 - [`inventaire_si()`](https://gilles13.github.io/eduschool/reference/inventaire_si.md)
   : Inventaire des tables du mini-SI
+- [`ipc_exemple()`](https://gilles13.github.io/eduschool/reference/ipc_exemple.md)
+  : Charger le petit exemple IPC embarque
 - [`libelle_capacite()`](https://gilles13.github.io/eduschool/reference/libelle_capacite.md)
   : Libelle d'une capacite de programme
 - [`libelle_niveau()`](https://gilles13.github.io/eduschool/reference/libelle_niveau.md)
@@ -223,6 +227,8 @@
   : Types d'exercices mathematiques
 - [`usages_ressources()`](https://gilles13.github.io/eduschool/reference/usages_ressources.md)
   : Usages des ressources pedagogiques
+- [`variation_pourcentage()`](https://gilles13.github.io/eduschool/reference/variation_pourcentage.md)
+  : Calculer une variation en pourcentage
 - [`verifier_source()`](https://gilles13.github.io/eduschool/reference/verifier_source.md)
   : Verifier une source de donnees
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :

@@ -120,6 +120,8 @@ maintenable et utile.
 
 ## All functions
 
+- [`ajouter_variations_ipc()`](https://gilles13.github.io/eduschool/reference/ajouter_variations_ipc.md)
+  : Ajouter les variations mensuelles et annuelles de l'IPC
 - [`annoter_source()`](https://gilles13.github.io/eduschool/reference/annoter_source.md)
   : Ajouter la source a un graphique ggplot2
 - [`capacites()`](https://gilles13.github.io/eduschool/reference/capacites.md)
@@ -223,6 +225,8 @@ maintenable et utile.
   : Identite visuelle d'une fiche de revision
 - [`inventaire_si()`](https://gilles13.github.io/eduschool/reference/inventaire_si.md)
   : Inventaire des tables du mini-SI
+- [`ipc_exemple()`](https://gilles13.github.io/eduschool/reference/ipc_exemple.md)
+  : Charger le petit exemple IPC embarque
 - [`libelle_capacite()`](https://gilles13.github.io/eduschool/reference/libelle_capacite.md)
   : Libelle d'une capacite de programme
 - [`libelle_niveau()`](https://gilles13.github.io/eduschool/reference/libelle_niveau.md)
@@ -341,6 +345,8 @@ maintenable et utile.
   : Types d'exercices mathematiques
 - [`usages_ressources()`](https://gilles13.github.io/eduschool/reference/usages_ressources.md)
   : Usages des ressources pedagogiques
+- [`variation_pourcentage()`](https://gilles13.github.io/eduschool/reference/variation_pourcentage.md)
+  : Calculer une variation en pourcentage
 - [`verifier_source()`](https://gilles13.github.io/eduschool/reference/verifier_source.md)
   : Verifier une source de donnees
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :
@@ -381,6 +387,8 @@ Fiches de revision, ressources et outils pedagogiques.
 
 - [Mathématiques par
   niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md):
+- [Mathématiques et économie : tous les problèmes sont
+  relatifs](https://gilles13.github.io/eduschool/articles/mathematiques-et-economie.md):
 - [Mathématiques —
   6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md):
 - [Mathématiques —
@@ -437,3 +445,11 @@ Creer, adapter et mutualiser des donnees et supports pedagogiques.
 
 - [Développement et
   contrôles](https://gilles13.github.io/eduschool/articles/developpement.md):
+
+### Pour finir
+
+Philosophie, folklore et mauvaises plaisanteries officiellement
+conservees.
+
+- [Le guide d'or
+  d'eduschool](https://gilles13.github.io/eduschool/articles/guide-d-or.md):

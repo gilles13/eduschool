@@ -48,9 +48,6 @@ réseau est indisponible, `eduschool` s’arrête avec un message clair. Il
 ne remplace jamais silencieusement une donnée officielle par une valeur
 fabriquée.
 
-> **eduschool ne collectionne pas les API. Il les appelle quand il a
-> quelque chose d’intelligent à leur demander.**
-
 ## La source suit les données
 
 Les données récupérées portent leur provenance comme attribut. Le
@@ -76,6 +73,3 @@ C’est un appel à l’aide.**
 Elles attendront d’avoir du travail. Éducation nationale, Météo-France,
 IGN/API Géo ou d’autres producteurs officiels pourront être ajoutés
 lorsqu’un cas pédagogique concret le justifiera.
-
-**Une nouvelle abstraction n’entre dans eduschool que lorsqu’elle a
-trouvé du travail.**

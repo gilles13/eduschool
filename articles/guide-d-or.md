@@ -1,0 +1,342 @@
+# Le guide d'or d'eduschool
+
+## Bienvenue dans le guide d’or
+
+`eduschool` est un projet extrêmement sérieux.
+
+Les données sont contrôlées, les sources sont documentées, les
+mathématiques sont vérifiées et `R CMD check` est regardé avec le
+respect dû aux grandes institutions.
+
+Le reste, beaucoup moins.
+
+Ce document rassemble quelques principes, avertissements, accidents
+éditoriaux et plaisanteries qui se sont progressivement imposés dans le
+projet.
+
+Certaines sont mauvaises.
+
+C’est précisément pour cette raison qu’elles ont été conservées.
+
+## Pourquoi eduschool existe
+
+Au commencement, il y avait un parent.
+
+Ce parent voulait simplement comprendre ce que ses enfants apprenaient à
+l’école.
+
+Puis il a essayé de comprendre les programmes.
+
+Puis les mathématiques.
+
+Puis d’expliquer les mathématiques.
+
+Le problème est qu’il ne comprend pas grand-chose aux mathématiques et
+qu’il doit quand même aider ses propres enfants.
+
+**HELP PLIZ.**
+
+C’est à peu près à ce moment-là que créer un package R a semblé
+constituer une solution raisonnable au problème.
+
+Nous n’avons toujours pas déterminé pourquoi.
+
+## Le principe fondamental
+
+Le but d’`eduschool` n’est pas de construire une plateforme éducative
+universelle.
+
+Il est beaucoup plus modeste :
+
+> **expliquer un truc de maths à quelqu’un qui ne l’avait pas compris.**
+
+Si vous pouvez nous aider à y parvenir, bienvenue.
+
+Si vous êtes justement la personne qui n’a pas compris, bienvenue aussi.
+
+Nous avons besoin des deux.
+
+Car :
+
+> **Ne pas comprendre est un cas d’utilisation, pas une erreur
+> utilisateur.**
+
+## Les données
+
+Les données ne sont pas là pour faire joli.
+
+Enfin, le graphique peut être joli.
+
+Mais la source reste obligatoire.
+
+La règle est donc :
+
+> **Les données sont réelles. L’exercice est fabriqué. Le graphique est
+> joli. La source est obligatoire.**
+
+Et aussi :
+
+> **Dans eduschool, une donnée dont on ne sait pas d’où elle vient est
+> une donnée qui n’est pas encore prête à être utilisée.**
+
+Une conséquence immédiate en découle :
+
+> **“Source : Internet” n’est pas une source. C’est un appel à l’aide.**
+
+`eduschool` préfère donc les sources publiques identifiées, documentées
+et reproductibles.
+
+Insee, Éducation nationale et autres producteurs publics sont les
+bienvenus.
+
+Internet en général devra remplir un formulaire.
+
+## Les API
+
+Une API est un outil.
+
+Pas un animal de compagnie.
+
+`eduschool` n’a donc aucune ambition de collectionner les connexions
+simplement parce qu’elles existent.
+
+> **eduschool ne collectionne pas les API. Il les appelle quand il a
+> quelque chose d’intelligent à leur demander.**
+
+Même principe pour les données embarquées dans le package :
+
+> **Les données embarquées sont un échantillon, pas un musée.**
+
+Les petits jeux de données locaux servent aux exemples, tests et
+vignettes reproductibles.
+
+Les données fraîches restent chez leurs producteurs.
+
+Et surtout :
+
+> **Le réseau sert à actualiser les données. Il ne sert jamais à prouver
+> que le package fonctionne.**
+
+Parce qu’un test qui dépend d’Internet teste aussi le Wi-Fi, les DNS, le
+proxy, l’Insee et la patience du mainteneur.
+
+Cela commence à faire beaucoup pour un test unitaire.
+
+## Les mathématiques
+
+Les mathématiques occupent une place importante dans `eduschool`.
+
+Ce qui est une décision éditoriale courageuse compte tenu des
+compétences initiales du mainteneur.
+
+Nous ne comprenons peut-être toujours pas les maths, mais :
+
+> **nous ne les comprenons plus de manière reproductible.**
+
+C’est déjà un progrès.
+
+Lorsqu’une formule apparaît, la question suivante est donc parfaitement
+légitime :
+
+> **Pourquoi cette formule fonctionne-t-elle ?**
+
+Excellente question.
+
+C’est précisément pour éviter d’y répondre par « parce que c’est dans le
+cours » qu’`eduschool` existe.
+
+## Les mathématiques et l’économie
+
+Un jour, quelqu’un a eu l’idée d’utiliser des données économiques
+réelles pour donner du sens aux mathématiques.
+
+Cette personne n’avait manifestement pas assez de problèmes.
+
+`eduschool` explore donc désormais les pourcentages, indices,
+évolutions, moyennes et statistiques au moyen de données économiques.
+
+Avec un avantage pédagogique incontestable :
+
+> **Vous trouviez les pourcentages déprimants ? Attendez de les
+> appliquer à l’inflation.**
+
+Un avertissement officiel s’impose.
+
+### Avertissement pédagogique
+
+L’utilisation de données économiques réelles peut provoquer une
+compréhension soudaine de l’actualité.
+
+`eduschool` décline toute responsabilité concernant les conséquences sur
+le moral du lecteur.
+
+Heureusement :
+
+> **Les mathématiques nous apprennent que tous les problèmes sont
+> relatifs. L’économie fournit les données permettant de le vérifier.**
+
+L’économie fournit donc le contexte.
+
+Les mathématiques restent l’objet d’apprentissage.
+
+`eduschool` ne deviendra pas un ministère de l’Économie miniature.
+
+Normalement.
+
+## L’usine à gaz
+
+Une nouvelle abstraction n’est pas automatiquement une amélioration.
+
+Elle doit avoir une raison d’exister.
+
+La règle officielle est donc :
+
+> **Une nouvelle abstraction n’entre dans eduschool que lorsqu’elle a
+> trouvé du travail.**
+
+Ce principe protège notamment le projet contre l’apparition du
+redoutable :
+
+`ContributionProposalFactoryManager`
+
+Son rôle exact reste inconnu.
+
+Cela constitue probablement sa meilleure caractéristique.
+
+Si quatre types de contribution peuvent être représentés par quatre
+fichiers simples, nous utiliserons quatre fichiers simples.
+
+Le jour où douze niveaux d’héritage seront indispensables pour expliquer
+une fraction à un élève de sixième, nous réexaminerons la question.
+
+## Le contrôle technique
+
+`eduschool` applique une politique qualité extrêmement sophistiquée :
+
+**0 erreur.  
+0 warning.  
+0 note.**
+
+Voilà.
+
+Un WARNING n’est pas une décoration de Noël.
+
+Et dans `eduschool` :
+
+> **une NOTE n’est pas une information. C’est un problème qui n’a pas
+> encore suffisamment insisté.**
+
+Même la documentation passe donc le contrôle technique.
+
+Même le règlement intérieur.
+
+Même cette vignette.
+
+Surtout cette vignette.
+
+Les fichiers `.Rd` orphelins sont, quant à eux, considérés comme une
+forme de poltergeist CRAN.
+
+## Le versionnage
+
+Le versionnage constitue l’une des premières applications concrètes des
+mathématiques dans le projet.
+
+Nous avons ainsi découvert successivement que :
+
+- après `0.22.1`, on peut écrire `0.22.2` ;
+- le nombre `3` semble également exister ;
+- sa présence ouvre des perspectives inquiétantes.
+
+Une feuille de route pédagogique officieuse a été établie :
+
+- `0.22.2` : comprendre 2 ;
+- `0.23.0` : découvrir 3 ;
+- `0.50.0` : envisager l’addition ;
+- `0.99.0` : multiplication ;
+- `1.0.0` : regarder la division de loin ;
+- `2.0.0` : tenter la division, sous réserve de financement et de
+  supervision adulte.
+
+Les mathématiques sont beaucoup plus faciles quand elles servent à
+éviter d’écraser un tag Git.
+
+## L’humour
+
+L’humour d’`eduschool` peut viser :
+
+- `eduschool` ;
+- son auteur ;
+- les mathématiques ;
+- l’économie ;
+- R ;
+- Git ;
+- nos habitudes de développeurs ;
+- les abstractions inutiles ;
+- les erreurs parfaitement évitables découvertes cinq minutes après un
+  tag.
+
+Il ne vise jamais les personnes concernées par les données.
+
+La règle est simple :
+
+> **L’humour peut viser eduschool, les maths et nos habitudes de
+> développeurs, jamais les personnes concernées par les données.**
+
+Les données et les personnes restent sérieuses.
+
+Nous pouvons nous moquer du reste.
+
+## Les découvertes tardives
+
+Tout projet logiciel connaît ce moment particulier où une lacune
+évidente est découverte juste après avoir terminé une version.
+
+`eduschool` dispose d’une terminologie officielle pour ce phénomène :
+
+> **Un oubli découvert cinq minutes après un tag n’est pas un bug. C’est
+> la roadmap de la version suivante.**
+
+Cette méthode de gestion de projet présente l’avantage considérable de
+transformer immédiatement tout oubli en stratégie.
+
+## HELP PLIZ
+
+`HELP PLIZ` n’est finalement pas seulement une plaisanterie.
+
+C’est probablement la meilleure description du projet.
+
+Le parent demande de l’aide aux mathématiques.
+
+Les mathématiques demandent parfois de l’aide à R.
+
+R demande de l’aide aux données.
+
+Les données demandent qu’on cite leur source.
+
+Et Git demande régulièrement qu’on arrête de faire n’importe quoi avec
+les numéros de version.
+
+Tout le monde a donc besoin d’aide.
+
+Ce qui tombe bien : `eduschool` est un projet collaboratif.
+
+## En conclusion
+
+`eduschool` traite sérieusement les données, les mathématiques, leurs
+sources et leur reproductibilité.
+
+Il essaie simplement de ne pas se prendre lui-même trop au sérieux.
+
+Si vous savez quelque chose qu’`eduschool` explique mal, dites-le.
+
+Si vous ne comprenez pas quelque chose qu’`eduschool` prétend expliquer,
+dites-le encore plus fort.
+
+Et si vous comprenez enfin quelque chose grâce à `eduschool` :
+
+prévenez-nous.
+
+Cela voudra dire que le système fonctionne.
+
+**HELP PLIZ.**

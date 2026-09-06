@@ -33,6 +33,8 @@ Fiches de revision, ressources et outils pedagogiques.
 
 - [Mathématiques par
   niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md):
+- [Mathématiques et économie : tous les problèmes sont
+  relatifs](https://gilles13.github.io/eduschool/articles/mathematiques-et-economie.md):
 - [Mathématiques —
   6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md):
 - [Mathématiques —
@@ -89,3 +91,11 @@ Creer, adapter et mutualiser des donnees et supports pedagogiques.
 
 - [Développement et
   contrôles](https://gilles13.github.io/eduschool/articles/developpement.md):
+
+### Pour finir
+
+Philosophie, folklore et mauvaises plaisanteries officiellement
+conservees.
+
+- [Le guide d'or
+  d'eduschool](https://gilles13.github.io/eduschool/articles/guide-d-or.md):
