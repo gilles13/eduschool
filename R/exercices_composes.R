@@ -205,6 +205,92 @@ gabarits_exercices_contextes = function(gabarit_compose_id = NULL, statut = "ACT
       " %, puis une remise de ", p$remise, " % est appliquee sur le nouveau prix.")
     x$questions[1] = paste0("Calculer le prix de ", objet_a, " apres l augmentation.")
     x$questions[2] = paste0("Calculer le prix final de ", objet_a, " apres la remise.")
+
+  } else if (gabarit_compose_id == "GABC_DNB_GRAND_COUVERTURE") {
+    objet_a = .ctx_val(contexte, "objet_avec_article", "la surface")
+    produit = .ctx_val(contexte, "produit_avec_article", "du materiau")
+    contenant_s = .ctx_val(contexte, "contenant_singulier", "unite")
+    contenant_p = .ctx_val(contexte, "contenant_pluriel", "unites")
+    verbe = .ctx_val(contexte, "verbe_action_infinitif", "couvrir")
+
+    x$contexte = paste0("On souhaite ", verbe, " ", objet_a, " rectangulaire de dimensions ",
+      p$longueur, " m sur ", p$largeur, " m. On utilise ", produit, ". Chaque ", contenant_s,
+      " permet de couvrir ", p$rendement, " m2 et coute ", p$prix_unite, " euros.")
+    x$questions = c(
+      paste0("Calculer l aire de ", objet_a, "."),
+      paste0("Determiner le nombre minimal de ", contenant_p, " necessaires pour ", verbe,
+        " toute la surface. Justifier l arrondi."),
+      "Calculer le cout total de l achat.")
+    x$reponses = c(
+      paste0(p$aire, " m2"),
+      paste0(p$quantite, " ", contenant_p),
+      paste0(p$cout, " euros"))
+    x$corrections[2] = paste0(p$aire, " / ", p$rendement, " = ", .formater_decimal_fr(p$quantite_exacte),
+      ". Il faut donc ", p$quantite, " ", contenant_p, ".")
+    x$corrections_detaillees[2] = paste0("Chaque ", contenant_s, " couvre ", p$rendement, " m2. Il faut donc ",
+      p$aire, " / ", p$rendement, " = ", .formater_decimal_fr(p$quantite_exacte), " ", contenant_p,
+      ". Comme on ne peut pas acheter une fraction de ", contenant_s, ", on arrondit a l entier superieur : ",
+      p$quantite, " ", contenant_p, ".")
+    x$corrections[3] = paste0(p$quantite, " x ", p$prix_unite, " = ", p$cout, " euros.")
+    x$corrections_detaillees[3] = paste0("Le cout porte sur ", p$quantite, " ", contenant_p, " entiers : ",
+      p$quantite, " x ", p$prix_unite, " = ", p$cout, " euros.")
+
+  } else if (gabarit_compose_id == "GABC_DNB_GRAND_VITESSE") {
+    mobile = .ctx_val(contexte, "acteur_avec_article", "un vehicule")
+    x$contexte = paste0(.majuscule_initiale(mobile), " se deplace a vitesse constante de ", p$vitesse,
+      " km/h pendant ", p$duree_min, " minutes.")
+    x$questions[2] = paste0("Calculer la distance parcourue par ", mobile, " pendant cette duree.")
+    x$questions[3] = paste0("A la meme vitesse, combien de minutes faut-il pour parcourir ",
+      .formater_decimal_fr(p$distance_cible), " km ?")
+
+  } else if (gabarit_compose_id == "GABC_DNB_GRAND_ECHELLE") {
+    objet_a = .ctx_val(contexte, "objet_avec_article", "la carte")
+    x$contexte = paste0(.majuscule_initiale(objet_a), " est a l echelle 1:", p$echelle,
+      ". Deux points y sont distants de ", .formater_decimal_fr(p$longueur_cm), " cm.")
+    x$questions[1] = "Calculer la distance reelle correspondante en centimetres."
+    x$questions[3] = paste0("Une autre distance reelle vaut ", .formater_decimal_fr(p$distance2_km),
+      " km. Quelle longueur la represente sur ", objet_a, " ?")
+
+  } else if (gabarit_compose_id == "GABC_DNB_GRAND_VOLUME_COUT") {
+    objet_a = .ctx_val(contexte, "objet_avec_article", "le reservoir")
+    contenu_a = .ctx_val(contexte, "contenu_avec_article", "l eau")
+    x$contexte = paste0(.majuscule_initiale(objet_a), " a la forme d un pave droit de dimensions ",
+      p$longueur, " m x ", p$largeur, " m x ", p$hauteur, " m. Le prix de ", contenu_a,
+      " est de ", .formater_decimal_fr(p$prix_m3), " euros par m3.")
+    x$questions[1] = paste0("Calculer le volume de ", objet_a, " en metres cubes.")
+    x$questions[2] = paste0("Convertir ce volume en litres de ", .ctx_val(contexte, "contenu", "eau"), ".")
+    x$questions[3] = paste0("Calculer le cout necessaire pour remplir entierement ", objet_a, ".")
+
+  } else if (gabarit_compose_id == "GABC_DNB_PROP_RECETTE") {
+    recette = .ctx_val(contexte, "objet_avec_article", "la recette")
+    ingredient1 = .ctx_val(contexte, "produit_ou_service", "farine")
+    ingredient2 = .ctx_val(contexte, "contenu", "lait")
+    x$contexte = paste0(.majuscule_initiale(recette), " est prevue pour ", p$base_personnes,
+      " personnes. Elle utilise ", p$q1_base, " g de ", ingredient1, " et ", p$q2_base,
+      " mL de ", ingredient2, ". On veut la preparer pour ", p$cible_personnes, " personnes.")
+    x$questions[2] = paste0("Calculer la quantite de ", ingredient1, " necessaire.")
+    x$questions[3] = paste0("Calculer la quantite de ", ingredient2, " necessaire.")
+    x$reponses[2] = paste0(.formater_decimal_fr(p$q1_cible), " g de ", ingredient1)
+    x$reponses[3] = paste0(.formater_decimal_fr(p$q2_cible), " mL de ", ingredient2)
+
+  } else if (gabarit_compose_id == "GABC_DNB_PCT_EFFECTIF_PROBA") {
+    population = .ctx_val(contexte, "acteur_avec_article", "les participants")
+    categorie = .ctx_val(contexte, "objet", "une activite")
+    action = .ctx_val(contexte, "action", "participent a un evenement")
+    x$contexte = paste0("On etudie ", population, ", au nombre de ", p$total, ". Parmi eux, ", p$pct1,
+      " % pratiquent ", categorie, ". Parmi ces personnes, ", p$pct2, " % ", action, ".")
+    x$questions[1] = paste0("Calculer l effectif qui pratique ", categorie, ".")
+    x$questions[2] = paste0("Calculer l effectif qui pratique ", categorie, " et ", action, ".")
+    x$questions[3] = paste0("On choisit au hasard une personne parmi ", population,
+      ". Calculer la probabilite qu elle appartienne au second effectif.")
+
+  } else if (gabarit_compose_id == "GABC_DNB_GEOM_PYTH_TRIGO") {
+    objet_a = .ctx_val(contexte, "objet_avec_article", "le segment")
+    x$contexte = paste0("On modelise ", objet_a, " par l hypotenuse d un triangle rectangle. Sa projection horizontale mesure ",
+      p$a, " m et la hauteur mesure ", p$b, " m.")
+    x$questions[1] = paste0("Calculer la longueur de ", objet_a, " a l aide du theoreme de Pythagore.")
+    x$questions[2] = paste0("Calculer l angle forme par ", objet_a, " avec l horizontale. Arrondir au dixieme de degre.")
+    x$questions[3] = paste0("Cet angle est-il inferieur a ", p$seuil_angle, " degres ? Justifier.")
   }
   x
 }
@@ -494,6 +580,259 @@ gabarits_exercices_contextes = function(gabarit_compose_id = NULL, statut = "ACT
   )
 }
 
+.generer_compose_couverture = function() {
+  cas = list(
+    c(longueur = 5, largeur = 3, rendement = 6),
+    c(longueur = 7, largeur = 3, rendement = 8),
+    c(longueur = 6, largeur = 4, rendement = 10),
+    c(longueur = 8, largeur = 3, rendement = 7),
+    c(longueur = 9, largeur = 3, rendement = 8)
+  )
+  z = cas[[sample(seq_along(cas), 1L)]]
+  longueur = unname(z[["longueur"]])
+  largeur = unname(z[["largeur"]])
+  rendement = unname(z[["rendement"]])
+  prix_unite = sample(c(18, 22, 25, 28, 30, 35), 1L)
+  aire = longueur * largeur
+  quantite_exacte = aire / rendement
+  quantite = ceiling(quantite_exacte)
+  cout = quantite * prix_unite
+
+  list(
+    contexte = paste0("On souhaite couvrir une surface rectangulaire de dimensions ", longueur,
+      " m sur ", largeur, " m. Une unite de materiau couvre ", rendement,
+      " m2 et coute ", prix_unite, " euros."),
+    questions = c(
+      "Calculer l aire de la surface.",
+      "Determiner le nombre minimal d unites necessaires. Justifier l arrondi.",
+      "Calculer le cout total de l achat."),
+    reponses = c(paste0(aire, " m2"), paste0(quantite, " unites"), paste0(cout, " euros")),
+    corrections = c(
+      paste0("Aire = ", longueur, " x ", largeur, " = ", aire, " m2."),
+      paste0(aire, " / ", rendement, " = ", .formater_decimal_fr(quantite_exacte),
+        ". Il faut donc ", quantite, " unites."),
+      paste0(quantite, " x ", prix_unite, " = ", cout, " euros.")),
+    corrections_detaillees = c(
+      paste0("La surface est rectangulaire. Son aire vaut longueur x largeur = ", longueur,
+        " x ", largeur, " = ", aire, " m2."),
+      paste0("Une unite couvre ", rendement, " m2. Le quotient ", aire, " / ", rendement,
+        " vaut ", .formater_decimal_fr(quantite_exacte), ". Il faut disposer d assez de materiau pour toute la surface, donc on arrondit a l entier superieur : ", quantite, " unites."),
+      paste0("On achete ", quantite, " unites a ", prix_unite, " euros chacune. Le cout total vaut ",
+        quantite, " x ", prix_unite, " = ", cout, " euros.")),
+    ressource = NULL,
+    parametres = list(longueur = longueur, largeur = largeur, rendement = rendement,
+      prix_unite = prix_unite, aire = aire, quantite_exacte = quantite_exacte,
+      quantite = quantite, cout = cout)
+  )
+}
+
+
+.generer_compose_vitesse = function() {
+  vitesse = sample(c(24, 30, 36, 48, 60, 72), 1L)
+  duree_min = sample(c(30, 40, 45, 60, 75, 90), 1L)
+  duree_h = duree_min / 60
+  distance = vitesse * duree_h
+  facteur = sample(c(1.5, 2, 2.5), 1L)
+  distance_cible = distance * facteur
+  duree_cible_h = distance_cible / vitesse
+  duree_cible_min = duree_cible_h * 60
+  list(
+    contexte = paste0("Un mobile roule a ", vitesse, " km/h pendant ", duree_min, " minutes."),
+    questions = c(
+      "Convertir la duree en heures.",
+      "Calculer la distance parcourue pendant cette duree.",
+      paste0("A la meme vitesse, calculer la duree necessaire pour parcourir ", .formater_decimal_fr(distance_cible), " km.")),
+    reponses = c(paste0(.formater_decimal_fr(duree_h), " h"), paste0(.formater_decimal_fr(distance), " km"),
+      paste0(.formater_decimal_fr(duree_cible_min), " min")),
+    corrections = c(
+      paste0(duree_min, " / 60 = ", .formater_decimal_fr(duree_h), " h."),
+      paste0(vitesse, " x ", .formater_decimal_fr(duree_h), " = ", .formater_decimal_fr(distance), " km."),
+      paste0(.formater_decimal_fr(distance_cible), " / ", vitesse, " = ", .formater_decimal_fr(duree_cible_h),
+        " h = ", .formater_decimal_fr(duree_cible_min), " min.")),
+    corrections_detaillees = c(
+      paste0("Une heure contient 60 minutes : ", duree_min, "/60 = ", .formater_decimal_fr(duree_h), " h."),
+      paste0("A vitesse constante, distance = vitesse x duree. Donc ", vitesse, " x ",
+        .formater_decimal_fr(duree_h), " = ", .formater_decimal_fr(distance), " km."),
+      paste0("On utilise duree = distance/vitesse : ", .formater_decimal_fr(distance_cible), "/", vitesse,
+        " = ", .formater_decimal_fr(duree_cible_h), " h, soit ", .formater_decimal_fr(duree_cible_min), " minutes.")),
+    ressource = NULL,
+    parametres = list(vitesse = vitesse, duree_min = duree_min, duree_h = duree_h,
+      distance = distance, distance_cible = distance_cible, duree_cible_min = duree_cible_min)
+  )
+}
+
+.generer_compose_echelle = function() {
+  echelle = sample(c(25000, 50000, 100000), 1L)
+  longueur_cm = sample(c(2.5, 3, 4, 5, 6), 1L)
+  distance_cm = longueur_cm * echelle
+  distance_km = distance_cm / 100000
+  facteur = sample(c(1.5, 2, 2.5), 1L)
+  distance2_km = distance_km * facteur
+  longueur2_cm = distance2_km * 100000 / echelle
+  list(
+    contexte = paste0("Une carte est a l echelle 1:", echelle, ". Deux points y sont distants de ",
+      .formater_decimal_fr(longueur_cm), " cm."),
+    questions = c(
+      "Calculer la distance reelle correspondante en centimetres.",
+      "Convertir cette distance en kilometres.",
+      paste0("Une autre distance reelle vaut ", .formater_decimal_fr(distance2_km),
+        " km. Calculer sa longueur sur la carte.")),
+    reponses = c(paste0(.formater_decimal_fr(distance_cm), " cm"), paste0(.formater_decimal_fr(distance_km), " km"),
+      paste0(.formater_decimal_fr(longueur2_cm), " cm")),
+    corrections = c(
+      paste0(.formater_decimal_fr(longueur_cm), " x ", echelle, " = ", .formater_decimal_fr(distance_cm), " cm."),
+      paste0(.formater_decimal_fr(distance_cm), " / 100000 = ", .formater_decimal_fr(distance_km), " km."),
+      paste0(.formater_decimal_fr(distance2_km), " x 100000 / ", echelle, " = ",
+        .formater_decimal_fr(longueur2_cm), " cm.")),
+    corrections_detaillees = c(
+      paste0("A l echelle 1:", echelle, ", 1 cm represente ", echelle, " cm reels. Donc ",
+        .formater_decimal_fr(longueur_cm), " cm representent ", .formater_decimal_fr(distance_cm), " cm."),
+      paste0("Comme 1 km = 100000 cm, on divise par 100000 : ", .formater_decimal_fr(distance_cm),
+        "/100000 = ", .formater_decimal_fr(distance_km), " km."),
+      paste0("On convertit d abord ", .formater_decimal_fr(distance2_km), " km en centimetres puis on divise par ",
+        echelle, ". On obtient ", .formater_decimal_fr(longueur2_cm), " cm sur le document.")),
+    ressource = NULL,
+    parametres = list(echelle = echelle, longueur_cm = longueur_cm, distance_cm = distance_cm,
+      distance_km = distance_km, distance2_km = distance2_km, longueur2_cm = longueur2_cm)
+  )
+}
+
+.generer_compose_volume_cout = function() {
+  longueur = sample(c(3, 4, 5, 6), 1L)
+  largeur = sample(c(2, 3, 4), 1L)
+  hauteur = sample(c(1, 1.5, 2), 1L)
+  prix_m3 = sample(c(3, 3.5, 4, 4.5, 5), 1L)
+  volume_m3 = longueur * largeur * hauteur
+  volume_l = volume_m3 * 1000
+  cout = volume_m3 * prix_m3
+  list(
+    contexte = paste0("Un reservoir en forme de pave droit mesure ", longueur, " m x ", largeur,
+      " m x ", hauteur, " m. Le remplissage coute ", .formater_decimal_fr(prix_m3), " euros par m3."),
+    questions = c("Calculer le volume en metres cubes.", "Convertir ce volume en litres.",
+      "Calculer le cout d un remplissage complet."),
+    reponses = c(paste0(.formater_decimal_fr(volume_m3), " m3"), paste0(.formater_decimal_fr(volume_l), " L"),
+      paste0(.formater_decimal_fr(cout), " euros")),
+    corrections = c(
+      paste0(longueur, " x ", largeur, " x ", hauteur, " = ", .formater_decimal_fr(volume_m3), " m3."),
+      paste0(.formater_decimal_fr(volume_m3), " x 1000 = ", .formater_decimal_fr(volume_l), " L."),
+      paste0(.formater_decimal_fr(volume_m3), " x ", .formater_decimal_fr(prix_m3), " = ",
+        .formater_decimal_fr(cout), " euros.")),
+    corrections_detaillees = c(
+      paste0("Le volume d un pave droit vaut longueur x largeur x hauteur : ", longueur, " x ", largeur,
+        " x ", hauteur, " = ", .formater_decimal_fr(volume_m3), " m3."),
+      paste0("Un metre cube vaut 1000 litres. Donc ", .formater_decimal_fr(volume_m3), " m3 = ",
+        .formater_decimal_fr(volume_l), " L."),
+      paste0("Le tarif est donne par metre cube. Le cout vaut donc ", .formater_decimal_fr(volume_m3), " x ",
+        .formater_decimal_fr(prix_m3), " = ", .formater_decimal_fr(cout), " euros.")),
+    ressource = NULL,
+    parametres = list(longueur = longueur, largeur = largeur, hauteur = hauteur, prix_m3 = prix_m3,
+      volume_m3 = volume_m3, volume_l = volume_l, cout = cout)
+  )
+}
+
+.generer_compose_recette = function() {
+  base_personnes = sample(c(4, 6, 8), 1L)
+  facteur = sample(c(1.5, 2, 2.5), 1L)
+  cible_personnes = as.integer(base_personnes * facteur)
+  q1_base = sample(c(200, 240, 300, 320, 400), 1L)
+  q2_base = sample(c(250, 300, 400, 500, 600), 1L)
+  q1_cible = q1_base * facteur
+  q2_cible = q2_base * facteur
+  list(
+    contexte = paste0("Une recette pour ", base_personnes, " personnes utilise ", q1_base,
+      " g d un ingredient et ", q2_base, " mL d un second. On cuisine pour ", cible_personnes, " personnes."),
+    questions = c("Determiner le coefficient multiplicateur a appliquer aux quantites.",
+      "Calculer la quantite du premier ingredient.", "Calculer la quantite du second ingredient."),
+    reponses = c(paste0("coefficient = ", .formater_decimal_fr(facteur)), paste0(.formater_decimal_fr(q1_cible), " g"),
+      paste0(.formater_decimal_fr(q2_cible), " mL")),
+    corrections = c(
+      paste0(cible_personnes, " / ", base_personnes, " = ", .formater_decimal_fr(facteur), "."),
+      paste0(q1_base, " x ", .formater_decimal_fr(facteur), " = ", .formater_decimal_fr(q1_cible), " g."),
+      paste0(q2_base, " x ", .formater_decimal_fr(facteur), " = ", .formater_decimal_fr(q2_cible), " mL.")),
+    corrections_detaillees = c(
+      paste0("Les quantites sont proportionnelles au nombre de personnes. Le coefficient vaut ", cible_personnes,
+        "/", base_personnes, " = ", .formater_decimal_fr(facteur), "."),
+      paste0("On multiplie la premiere quantite par ce coefficient : ", q1_base, " x ",
+        .formater_decimal_fr(facteur), " = ", .formater_decimal_fr(q1_cible), " g."),
+      paste0("On applique le meme coefficient a la seconde quantite : ", q2_base, " x ",
+        .formater_decimal_fr(facteur), " = ", .formater_decimal_fr(q2_cible), " mL.")),
+    ressource = NULL,
+    parametres = list(base_personnes = base_personnes, cible_personnes = cible_personnes, facteur = facteur,
+      q1_base = q1_base, q2_base = q2_base, q1_cible = q1_cible, q2_cible = q2_cible)
+  )
+}
+
+.generer_compose_pct_effectif_proba = function() {
+  total = sample(c(400, 800, 1200), 1L)
+  pct1 = sample(c(20, 30, 40, 50, 60), 1L)
+  pct2 = sample(c(25, 50, 75), 1L)
+  effectif1 = total * pct1 / 100
+  effectif2 = effectif1 * pct2 / 100
+  proba = effectif2 / total
+  list(
+    contexte = paste0("Dans une population de ", total, " personnes, ", pct1,
+      " % appartiennent a un premier groupe. Parmi elles, ", pct2, " % appartiennent aussi a un second groupe."),
+    questions = c("Calculer l effectif du premier groupe.", "Calculer l effectif du second groupe.",
+      "On choisit une personne au hasard dans la population. Calculer la probabilite qu elle appartienne au second groupe."),
+    reponses = c(paste0(effectif1, " personnes"), paste0(effectif2, " personnes"), .formater_fraction(effectif2, total)),
+    corrections = c(
+      paste0(pct1, " % de ", total, " = ", effectif1, "."),
+      paste0(pct2, " % de ", effectif1, " = ", effectif2, "."),
+      paste0("P = ", effectif2, "/", total, " = ", .formater_fraction(effectif2, total), ".")),
+    corrections_detaillees = c(
+      paste0("On calcule ", pct1, "/100 x ", total, " = ", effectif1, " personnes."),
+      paste0("Le second pourcentage porte sur le premier effectif : ", pct2, "/100 x ", effectif1,
+        " = ", effectif2, " personnes."),
+      paste0("Toutes les personnes sont supposees equiprobables. Il y a ", effectif2, " issues favorables sur ",
+        total, " personnes, donc P = ", .formater_fraction(effectif2, total), ".")),
+    ressource = NULL,
+    parametres = list(total = total, pct1 = pct1, pct2 = pct2, effectif1 = effectif1,
+      effectif2 = effectif2, proba = proba)
+  )
+}
+
+.generer_compose_pyth_trigo = function() {
+  k = sample(1:4, 1L)
+  orientation = sample(c("34", "43"), 1L)
+  if (orientation == "34") {
+    a = 4 * k
+    b = 3 * k
+  } else {
+    a = 3 * k
+    b = 4 * k
+  }
+  c = 5 * k
+  angle = acos(a / c) * 180 / pi
+  angle_arrondi = round(angle, 1)
+  seuil_angle = 45
+  conclusion = if (angle < seuil_angle) "oui" else "non"
+  list(
+    contexte = paste0("Un objet est modelise par l hypotenuse d un triangle rectangle dont les deux autres cotes mesurent ",
+      a, " m et ", b, " m."),
+    questions = c("Calculer la longueur de l hypotenuse avec le theoreme de Pythagore.",
+      "Calculer l angle forme avec le cote horizontal. Arrondir au dixieme de degre.",
+      paste0("Cet angle est-il inferieur a ", seuil_angle, " degres ? Justifier.")),
+    reponses = c(paste0(c, " m"), paste0(.formater_decimal_fr(angle_arrondi), " degres"), conclusion),
+    corrections = c(
+      paste0("c^2 = ", a, "^2 + ", b, "^2 = ", c*c, ", donc c = ", c, " m."),
+      paste0("cos(angle) = ", a, "/", c, ", donc angle = arccos(", a, "/", c, ") = ",
+        .formater_decimal_fr(angle_arrondi), " degres."),
+      paste0(.formater_decimal_fr(angle_arrondi), if (angle < seuil_angle) " < " else " > ", seuil_angle, ", donc ", conclusion, ".")),
+    corrections_detaillees = c(
+      paste0("Dans le triangle rectangle, le theoreme de Pythagore donne c^2 = ", a, "^2 + ", b,
+        "^2 = ", c*c, ". La longueur positive est c = ", c, " m."),
+      paste0("Pour l angle avec l horizontale, le cote adjacent mesure ", a, " m et l hypotenuse ", c,
+        " m. Ainsi cos(angle) = ", a, "/", c, ". La calculatrice donne ",
+        .formater_decimal_fr(angle_arrondi), " degres au dixieme."),
+      paste0("On compare l angle obtenu au seuil : ", .formater_decimal_fr(angle_arrondi),
+        if (angle < seuil_angle) " < " else " > ", seuil_angle, ". La reponse est donc ", conclusion, ".")),
+    ressource = NULL,
+    parametres = list(a = a, b = b, c = c, angle = angle, angle_arrondi = angle_arrondi,
+      seuil_angle = seuil_angle, conclusion = conclusion)
+  )
+}
+
+
 .generateur_compose = function(id) {
   f = list(compose_geom_amenagement = .generer_compose_geom,
     compose_fonc_tarifs = .generer_compose_fonc,
@@ -502,7 +841,14 @@ gabarits_exercices_contextes = function(gabarit_compose_id = NULL, statut = "ACT
     compose_geom_thales = .generer_compose_thales,
     compose_grand_cuve = .generer_compose_cuve,
     compose_arith_lots = .generer_compose_arith,
-    compose_evolution_prix = .generer_compose_evolution)[[id]]
+    compose_evolution_prix = .generer_compose_evolution,
+    compose_grand_couverture = .generer_compose_couverture,
+    compose_grand_vitesse = .generer_compose_vitesse,
+    compose_grand_echelle = .generer_compose_echelle,
+    compose_grand_volume_cout = .generer_compose_volume_cout,
+    compose_prop_recette = .generer_compose_recette,
+    compose_pct_effectif_proba = .generer_compose_pct_effectif_proba,
+    compose_geom_pyth_trigo = .generer_compose_pyth_trigo)[[id]]
   if (is.null(f)) stop("Generateur compose non implemente : ", id, call. = FALSE)
   f
 }

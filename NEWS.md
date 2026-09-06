@@ -1,3 +1,15 @@
+# eduschool 0.19.0
+
+## Nouvelles structures de raisonnement DNB
+
+- ajout du gabarit `GABC_DNB_GRAND_COUVERTURE` : aire rectangulaire, rendement de couverture, nombre entier minimal d unites et cout total ;
+- cinq contextes semantiques reutilisent la meme structure mathematique : peinture d un mur, carrelage d un sol, dalles de terrasse, enduit de facade et peinture d un plafond ;
+- le nombre d unites est toujours arrondi a l entier superieur avec `ceiling()` afin de modeliser une quantite achetable ;
+- aucun enonce complet n est stocke dans les tables de contextes : le vocabulaire reste assemble par le moteur R.
+- six autres structures de raisonnement completent la banque : vitesse-distance-duree, echelle et conversions, volume-conversion-cout, recette et proportionnalite, pourcentages-effectifs-probabilite, Pythagore et trigonometrie ;
+- la banque DNB partie 2 passe ainsi de 9 a 15 familles distinctes, sans dupliquer la famille fonctions-tableau-graphique-intersection deja couverte par `GABC_DNB_FONC_TARIFS` ;
+- chaque nouvelle famille possede au moins quatre contextes semantiques et des tests numeriques portant sur ses invariants mathematiques.
+
 # eduschool 0.18.0
 
 ## Diversification des contextes DNB

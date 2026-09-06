@@ -1,6 +1,6 @@
 test_that("la banque composee reste petite et relie les notions", {
   g = gabarits_exercices_composes("DNB", "PROBLEMES")
-  expect_equal(nrow(g), 8)
+  expect_equal(nrow(g), 15)
   expect_true(all(c("GEOMETRIE", "FONCTIONS", "STATISTIQUES", "ALGORITHMIQUE", "GRANDEURS", "ARITHMETIQUE") %in% g$domaine))
   q = .lire_csv("examens", "gabarits_exercices_questions.csv")
   expect_true(all(q$concept_id %in% concepts_math()$concept_id))

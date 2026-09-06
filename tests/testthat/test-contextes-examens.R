@@ -77,7 +77,15 @@ test_that("les autres familles utilisent aussi des briques semantiques", {
     PROGRAMME_CALCUL = c("acteur_avec_indefini", "acteur_avec_article", "verbe_action_present"),
     THALES_OMBRES = c("objet_avec_indefini", "objet_avec_article"),
     LOTS = c("unite_singulier", "unite_pluriel", "contenant_singulier", "contenant_pluriel"),
-    EVOLUTION_PRIX = c("objet_avec_indefini", "objet_avec_article")
+    EVOLUTION_PRIX = c("objet_avec_indefini", "objet_avec_article"),
+    COUVERTURE_SURFACE = c("objet_avec_article", "produit_avec_article",
+      "contenant_singulier", "contenant_pluriel", "verbe_action_infinitif"),
+    VITESSE_DISTANCE = c("acteur_avec_article"),
+    ECHELLE_DISTANCE = c("objet_avec_article"),
+    VOLUME_COUT = c("objet_avec_article", "contenu", "contenu_avec_article"),
+    RECETTE_PROPORTION = c("objet_avec_article", "produit_ou_service", "contenu"),
+    EFFECTIF_PROBA = c("acteur_avec_article", "objet", "action"),
+    PYTH_TRIGO = c("objet_avec_article")
   )
 
   for (famille in names(attentes)) {
@@ -95,7 +103,8 @@ test_that("la diversification change les mots sans changer les mathematiques", {
     c("GABC_DNB_ALGO_PROGRAMME", "CTX_ALGO_SCORE", "CTX_ALGO_MACHINE"),
     c("GABC_DNB_GEOM_THALES", "CTX_OMBRE_ARBRE", "CTX_OMBRE_PHARE"),
     c("GABC_DNB_ARITH_LOTS", "CTX_LOTS_JETONS", "CTX_LOTS_TICKETS"),
-    c("GABC_DNB_EVOLUTION_PRIX", "CTX_EVOL_VETEMENT", "CTX_EVOL_ABONNEMENT")
+    c("GABC_DNB_EVOLUTION_PRIX", "CTX_EVOL_VETEMENT", "CTX_EVOL_ABONNEMENT"),
+    c("GABC_DNB_GRAND_COUVERTURE", "CTX_COUV_MUR_PEINTURE", "CTX_COUV_SOL_CARRELAGE")
   )
 
   for (z in cas) {
@@ -136,4 +145,42 @@ test_that("les ressources graphiques reprennent le vocabulaire du contexte", {
   expect_equal(tarifs$ressource$donnees$x_libelle, "Nombre d heures")
   expect_equal(donnees$ressource$donnees$y_libelle, "Nombre de pages lues")
   expect_equal(thales$ressource$donnees$objet_label, "phare")
+})
+
+
+test_that("la famille couverture surface gere un achat entier", {
+  x = generer_exercice_compose(
+    "GABC_DNB_GRAND_COUVERTURE", seed = 42,
+    contexte_id = "CTX_COUV_MUR_PEINTURE"
+  )
+
+  expect_equal(x$contexte_id, "CTX_COUV_MUR_PEINTURE")
+  expect_match(x$contexte, "mur")
+  expect_match(x$contexte, "peinture")
+  expect_true(all(nzchar(x$questions$enonce)))
+  expect_match(x$questions$enonce[[2]], "nombre minimal")
+  expect_match(x$questions$correction_detaillee[[2]], "entier superieur")
+
+  n = as.integer(sub(" .*", "", x$questions$reponse[[2]]))
+  cout = as.numeric(sub(" .*", "", x$questions$reponse[[3]]))
+  prix = as.numeric(sub(".* coute ([0-9]+) euros\\.$", "\\1", x$contexte))
+  expect_true(is.finite(n) && n >= 1)
+  expect_equal(cout, n * prix)
+})
+
+test_that("les contextes couverture changent les mots pas les nombres", {
+  mur = generer_exercice_compose(
+    "GABC_DNB_GRAND_COUVERTURE", seed = 123,
+    contexte_id = "CTX_COUV_MUR_PEINTURE"
+  )
+  sol = generer_exercice_compose(
+    "GABC_DNB_GRAND_COUVERTURE", seed = 123,
+    contexte_id = "CTX_COUV_SOL_CARRELAGE"
+  )
+
+  expect_false(identical(mur$contexte, sol$contexte))
+  expect_match(mur$contexte, "pot")
+  expect_match(sol$contexte, "boite")
+  expect_equal(mur$questions$reponse[1], sol$questions$reponse[1])
+  expect_equal(mur$questions$reponse[3], sol$questions$reponse[3])
 })
