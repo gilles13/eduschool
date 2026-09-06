@@ -1,0 +1,100 @@
+---
+title: "Mathématiques et économie : tous les problèmes sont relatifs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mathématiques et économie : tous les problèmes sont relatifs}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(eduschool)
+```
+
+## Pourquoi faire ça ?
+
+**Vous trouviez les pourcentages déprimants ? Attendez de les appliquer à
+l'inflation.**
+
+L'objectif n'est pas de transformer `eduschool` en package d'analyse
+economique. L'economie fournit ici un contexte reel ; les mathematiques
+restent l'objet d'apprentissage.
+
+> **Les mathématiques nous apprennent que tous les problèmes sont relatifs.
+> L'économie fournit les données permettant de le vérifier.**
+
+## Un petit jeu réel, figé et reproductible
+
+La vignette ne télécharge rien. Elle utilise un extrait minuscule d'une série
+Insee embarqué avec le package :
+
+```{r}
+ipc = ipc_exemple()
+head(ipc)
+```
+
+```{r}
+citer_source(ipc)
+```
+
+Le snapshot sert aux tests et aux exemples. Pour une analyse courante, les
+données doivent être récupérées depuis leur producteur officiel.
+
+> **Le réseau sert à actualiser les données. Il ne sert jamais à prouver que
+> le package fonctionne.**
+
+## De l'indice au pourcentage
+
+Un indice base 100 n'est pas lui-même un taux d'inflation. La variation entre
+deux indices se calcule par :
+
+\[
+\frac{V_f - V_i}{V_i} \times 100
+\]
+
+ou, de manière équivalente :
+
+\[
+\left(\frac{V_f}{V_i} - 1\right) \times 100.
+\]
+
+Par exemple :
+
+```{r}
+variation_pourcentage(99.29, 99.56)
+```
+
+`99.56` est donc un **indice**, pas une hausse de `99.56 %`.
+
+```{r}
+ipc = ajouter_variations_ipc(ipc)
+tail(ipc)
+```
+
+## Regarder avant de conclure
+
+```{r fig.width=7, fig.height=4}
+ggplot2::ggplot(ipc, ggplot2::aes(x = date, y = indice)) +
+  ggplot2::geom_line(linewidth = 0.8) +
+  ggplot2::geom_point(size = 1.5) +
+  ggplot2::labs(
+    title = "Un indice des prix est un niveau, pas un pourcentage",
+    x = NULL,
+    y = "Indice, base 2025",
+    caption = citer_source(ipc)
+  ) +
+  theme_eduschool()
+```
+
+### Avertissement pédagogique
+
+L'utilisation de données économiques réelles peut provoquer une compréhension
+soudaine de l'actualité.
+
+`eduschool` décline toute responsabilité concernant les conséquences sur le
+moral du lecteur.
+
+Bonne nouvelle : les mathématiques permettent de comprendre ce qui se passe.
+
+Mauvaise nouvelle : elles permettent de comprendre ce qui se passe.

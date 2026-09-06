@@ -42,6 +42,10 @@ navbar:
         href: articles/donnees-reelles-et-provenance.html
       - text: Contribuer et partager
         href: articles/contribuer-et-partager.html
+      - text: -------
+      - text: Pour finir
+      - text: Le guide d'or
+        href: articles/guide-d-or.html
       - text: Tous les articles
         href: articles/index.html
 articles:
@@ -97,3 +101,8 @@ articles:
   - contribuer-et-partager
 - title: Developpement
   contents: developpement
+- title: Pour finir
+  desc: Philosophie, folklore et mauvaises plaisanteries officiellement conservees.
+  navbar: Pour finir
+  contents:
+  - guide-d-or

@@ -1,3 +1,6 @@
+export(ajouter_variations_ipc)
+export(ipc_exemple)
+export(variation_pourcentage)
 export(capacites)
 export(chercher_notions)
 export(couverture_documentation)

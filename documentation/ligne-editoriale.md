@@ -60,6 +60,13 @@ L'humour suit la même philosophie que les données : inutile d'en stocker des
 tonnes. Quelques formulations bien placées valent mieux qu'une plaisanterie à
 chaque paragraphe.
 
+Le *Guide d'or* joue le rôle de mémoire complète de cet humour. Ailleurs dans la
+documentation, une plaisanterie n'est répétée que lorsqu'elle sert directement
+le propos de la page. `HELP PLIZ`, le principe « ne pas comprendre est un cas
+d'utilisation » et la règle de qualité 0 / 0 / 0 peuvent revenir comme motifs
+d'identité ; les autres formulations ont, autant que possible, un domicile
+principal.
+
 ## Ne pas comprendre
 
 Un principe complète désormais la ligne éditoriale :
