@@ -4,6 +4,8 @@
 
 Premiers reperes pour les parents, les eleves et les utilisateurs R.
 
+- [À propos : un parent, des maths et un appel à
+  l'aide](https://gilles13.github.io/eduschool/articles/a-propos.md):
 - [Prendre un parent par la
   main](https://gilles13.github.io/eduschool/articles/prendre-un-parent-par-la-main.md):
 - [Prise en main de
@@ -71,6 +73,8 @@ Architecture du mini-SI et fonctionnement interne du package.
 
 - [Architecture des
   données](https://gilles13.github.io/eduschool/articles/architecture-des-donnees.md):
+- [Données réelles et
+  provenance](https://gilles13.github.io/eduschool/articles/donnees-reelles-et-provenance.md):
 - [Rentrer en profondeur dans
   eduschool](https://gilles13.github.io/eduschool/articles/rentrer-en-profondeur-dans-eduschool.md):
 

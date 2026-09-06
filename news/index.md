@@ -1,5 +1,51 @@
 # Changelog
 
+## eduschool 0.22.0
+
+- ajout d une page « A propos » qui assume l origine du projet : un
+  parent qui essaie de comprendre, d apprendre, puis d expliquer les
+  mathematiques a ses enfants ;
+- adoption d un septieme principe editorial : **Ne pas comprendre est un
+  cas d utilisation, pas une erreur utilisateur.** ;
+- la contribution est explicitement ouverte aux enseignants, aux
+  parents, aux eleves, aux connaisseurs des mathematiques et aux
+  utilisateurs de R ;
+- ajout de modeles d issues GitHub pour signaler une incomprehension,
+  proposer un exercice, corriger un contenu pedagogique ou proposer une
+  amelioration technique ;
+- rappel qu une difficulte pedagogique bien decrite est deja une
+  contribution utile ;
+- maintien du protocole anti-usine-a-gaz : aucune nouvelle abstraction n
+  est creee pour organiser les contributions tant que de simples issues
+  suffisent.
+
+## eduschool 0.21.0
+
+- formalisation des invariants de provenance : une donnée réelle
+  utilisée par `eduschool` doit conserver sa source jusqu au graphique
+  ou à la fiche ;
+- ajout du premier adaptateur vertical vers l Insee via l API Melodi,
+  sans copie inutile des jeux de données dans `inst/` ;
+- ajout de
+  [`source_insee_melodi()`](https://gilles13.github.io/eduschool/reference/source_insee_melodi.md),
+  [`decrire_source()`](https://gilles13.github.io/eduschool/reference/decrire_source.md),
+  [`verifier_source()`](https://gilles13.github.io/eduschool/reference/verifier_source.md),
+  [`recuperer_donnees()`](https://gilles13.github.io/eduschool/reference/recuperer_donnees.md),
+  [`provenance_donnees()`](https://gilles13.github.io/eduschool/reference/provenance_donnees.md),
+  [`citer_source()`](https://gilles13.github.io/eduschool/reference/citer_source.md)
+  et
+  [`annoter_source()`](https://gilles13.github.io/eduschool/reference/annoter_source.md)
+  ;
+- le package officiel `melodi` reste optionnel et n est requis qu au
+  moment d un appel réseau ;
+- l absence de connexion ou de client Melodi produit une erreur
+  explicite : aucune donnée officielle manquante n est remplacée
+  silencieusement par une valeur fabriquée ;
+- ajout d une documentation et d une vignette consacrées aux données
+  réelles, à leur provenance et à la frugalité des futurs connecteurs ;
+- confirmation d un principe d architecture : une nouvelle abstraction n
+  entre dans `eduschool` que lorsqu elle a trouvé du travail.
+
 ## eduschool 0.20.0
 
 - renforcement des controles metier sans ajouter de nouvelles tables :

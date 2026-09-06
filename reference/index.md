@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`annoter_source()`](https://gilles13.github.io/eduschool/reference/annoter_source.md)
+  : Ajouter la source a un graphique ggplot2
 - [`capacites()`](https://gilles13.github.io/eduschool/reference/capacites.md)
   : Capacités d'un programme
 - [`carte_concept_math()`](https://gilles13.github.io/eduschool/reference/carte_concept_math.md)
@@ -10,6 +12,8 @@
   : Charte graphique eduschool
 - [`chercher_notions()`](https://gilles13.github.io/eduschool/reference/chercher_notions.md)
   : Rechercher des notions
+- [`citer_source()`](https://gilles13.github.io/eduschool/reference/citer_source.md)
+  : Citer la source de donnees
 - [`colonnes_si()`](https://gilles13.github.io/eduschool/reference/colonnes_si.md)
   : Colonnes du mini-SI eduschool
 - [`composer_examen()`](https://gilles13.github.io/eduschool/reference/composer_examen.md)
@@ -34,6 +38,8 @@
   : Couleur d'un cycle scolaire
 - [`couverture_documentation()`](https://gilles13.github.io/eduschool/reference/couverture_documentation.md)
   : Couverture de la documentation
+- [`decrire_source()`](https://gilles13.github.io/eduschool/reference/decrire_source.md)
+  : Decrire une source de donnees
 - [`diagramme_package()`](https://gilles13.github.io/eduschool/reference/diagramme_package.md)
   : Produire un diagramme technique du package
 - [`diagramme_parcours_scolaire()`](https://gilles13.github.io/eduschool/reference/diagramme_parcours_scolaire.md)
@@ -177,8 +183,12 @@
   : Consulter un programme scolaire
 - [`programmes()`](https://gilles13.github.io/eduschool/reference/programmes.md)
   : Programmes
+- [`provenance_donnees()`](https://gilles13.github.io/eduschool/reference/provenance_donnees.md)
+  : Lire la provenance de donnees eduschool
 - [`rappels_capacite()`](https://gilles13.github.io/eduschool/reference/rappels_capacite.md)
   : Rappels associés à une capacité
+- [`recuperer_donnees()`](https://gilles13.github.io/eduschool/reference/recuperer_donnees.md)
+  : Recuperer des donnees officielles
 - [`rediger_examen()`](https://gilles13.github.io/eduschool/reference/rediger_examen.md)
   : Rediger une partie d'un examen compose
 - [`relations_concepts_math()`](https://gilles13.github.io/eduschool/reference/relations_concepts_math.md)
@@ -197,6 +207,8 @@
   : Séries scolaires
 - [`series_technologiques()`](https://gilles13.github.io/eduschool/reference/series_technologiques.md)
   : Series technologiques disponibles
+- [`source_insee_melodi()`](https://gilles13.github.io/eduschool/reference/source_insee_melodi.md)
+  : Declarer une source Insee Melodi
 - [`specialites_generales()`](https://gilles13.github.io/eduschool/reference/specialites_generales.md)
   : Enseignements de specialite de la voie generale
 - [`structure_examen()`](https://gilles13.github.io/eduschool/reference/structure_examen.md)
@@ -211,5 +223,7 @@
   : Types d'exercices mathematiques
 - [`usages_ressources()`](https://gilles13.github.io/eduschool/reference/usages_ressources.md)
   : Usages des ressources pedagogiques
+- [`verifier_source()`](https://gilles13.github.io/eduschool/reference/verifier_source.md)
+  : Verifier une source de donnees
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :
   Voies scolaires

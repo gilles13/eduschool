@@ -1,0 +1,70 @@
+# À propos : un parent, des maths et un appel à l'aide
+
+## Un parent qui tente de comprendre
+
+`eduschool` est développé par un parent qui tente de comprendre ce que
+ses enfants apprennent à l’école.
+
+Il essaie donc d’apprendre. Puis de comprendre. Puis d’expliquer ce
+qu’il vient péniblement de comprendre.
+
+Le problème est qu’il ne comprend pas grand-chose aux mathématiques et
+qu’il doit quand même aider ses propres enfants.
+
+**HELP PLIZ.**
+
+Cette situation est devenue une partie de la méthode du projet. Une
+notion qui ne peut être expliquée clairement à quelqu’un qui ne la
+maîtrise pas encore mérite probablement d’être retravaillée.
+
+> **Ne pas comprendre est un cas d’utilisation, pas une erreur
+> utilisateur.**
+
+## C’est donc un projet collaboratif
+
+`eduschool` n’a pas vocation à faire semblant qu’un développeur
+solitaire sait tout sur les programmes, la pédagogie, les mathématiques,
+les données publiques et R. Ce serait ambitieux. Ce serait surtout faux.
+
+Le projet a besoin de plusieurs types de contributions : celles de
+personnes qui connaissent les mathématiques, de celles qui les
+enseignent, de parents qui essaient de les réapprendre, d’élèves
+capables de dire « là, je ne comprends plus », et de personnes qui
+savent améliorer le code et les graphiques.
+
+## Signaler une incompréhension est déjà contribuer
+
+Une contribution n’a pas besoin d’arriver avec une solution. Dire
+précisément qu’une explication saute une étape, qu’un graphique n’aide
+pas, qu’un exercice est ambigu ou qu’une correction suppose une
+connaissance non introduite fournit déjà une information utile.
+
+> **Qu’est-ce que vous n’avez pas compris ?**
+>
+> N’ayez aucune honte. L’auteur du package n’a probablement pas compris
+> non plus.
+
+## Proposer et construire
+
+Les issues GitHub servent de premier atelier collaboratif. Quatre portes
+sont proposées :
+
+1.  signaler « je n’ai pas compris » ;
+2.  proposer un exercice ou une situation ;
+3.  signaler ou corriger un contenu pédagogique ;
+4.  proposer une amélioration de R, des données ou de l’architecture.
+
+Une proposition peut ensuite devenir une pull request, un nouveau
+gabarit d’exercice, une fiche, un graphique, une correction ou parfois
+simplement une meilleure phrase.
+
+## Et si le système grandit ?
+
+Alors nous l’adapterons. Pour l’instant, GitHub sait déjà stocker des
+discussions, des issues et des pull requests. Lui ajouter une base de
+données, une API et trois classes abstraites pour demander « pourquoi
+Pythagore ? » serait une façon assez spectaculaire de transformer
+`eduschool` en usine à gaz.
+
+Le protocole reste donc inchangé : **on commence petit, on fait
+fonctionner, on contrôle, puis seulement on généralise.**

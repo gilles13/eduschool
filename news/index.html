@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.20.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.22.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,6 +19,7 @@
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><h6 class="dropdown-header" data-toc-skip>Commencer</h6></li>
+    <li><a class="dropdown-item" href="../articles/a-propos.html">À propos</a></li>
     <li><a class="dropdown-item" href="../articles/prendre-un-parent-par-la-main.html">Prendre un parent par la main</a></li>
     <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main rapide</a></li>
     <li><hr class="dropdown-divider"></li>
@@ -33,6 +34,7 @@
     <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Sous le capot</h6></li>
     <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Architecture des données</a></li>
+    <li><a class="dropdown-item" href="../articles/donnees-reelles-et-provenance.html">Données réelles et provenance</a></li>
     <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Contribuer et partager</a></li>
     <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
   </ul></li>
@@ -48,6 +50,25 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.22.0" id="eduschool-0220">eduschool 0.22.0<a class="anchor" aria-label="anchor" href="#eduschool-0220"></a></h2>
+<ul><li>ajout d une page « A propos » qui assume l origine du projet : un parent qui essaie de comprendre, d apprendre, puis d expliquer les mathematiques a ses enfants ;</li>
+<li>adoption d un septieme principe editorial : <strong>Ne pas comprendre est un cas d utilisation, pas une erreur utilisateur.</strong> ;</li>
+<li>la contribution est explicitement ouverte aux enseignants, aux parents, aux eleves, aux connaisseurs des mathematiques et aux utilisateurs de R ;</li>
+<li>ajout de modeles d issues GitHub pour signaler une incomprehension, proposer un exercice, corriger un contenu pedagogique ou proposer une amelioration technique ;</li>
+<li>rappel qu une difficulte pedagogique bien decrite est deja une contribution utile ;</li>
+<li>maintien du protocole anti-usine-a-gaz : aucune nouvelle abstraction n est creee pour organiser les contributions tant que de simples issues suffisent.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.21.0" id="eduschool-0210">eduschool 0.21.0<a class="anchor" aria-label="anchor" href="#eduschool-0210"></a></h2>
+<ul><li>formalisation des invariants de provenance : une donnée réelle utilisée par <code>eduschool</code> doit conserver sa source jusqu au graphique ou à la fiche ;</li>
+<li>ajout du premier adaptateur vertical vers l Insee via l API Melodi, sans copie inutile des jeux de données dans <code>inst/</code> ;</li>
+<li>ajout de <code><a href="../reference/source_insee_melodi.html">source_insee_melodi()</a></code>, <code><a href="../reference/decrire_source.html">decrire_source()</a></code>, <code><a href="../reference/verifier_source.html">verifier_source()</a></code>, <code><a href="../reference/recuperer_donnees.html">recuperer_donnees()</a></code>, <code><a href="../reference/provenance_donnees.html">provenance_donnees()</a></code>, <code><a href="../reference/citer_source.html">citer_source()</a></code> et <code><a href="../reference/annoter_source.html">annoter_source()</a></code> ;</li>
+<li>le package officiel <code>melodi</code> reste optionnel et n est requis qu au moment d un appel réseau ;</li>
+<li>l absence de connexion ou de client Melodi produit une erreur explicite : aucune donnée officielle manquante n est remplacée silencieusement par une valeur fabriquée ;</li>
+<li>ajout d une documentation et d une vignette consacrées aux données réelles, à leur provenance et à la frugalité des futurs connecteurs ;</li>
+<li>confirmation d un principe d architecture : une nouvelle abstraction n entre dans <code>eduschool</code> que lorsqu elle a trouvé du travail.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.20.0" id="eduschool-0200">eduschool 0.20.0<a class="anchor" aria-label="anchor" href="#eduschool-0200"></a></h2>
 <ul><li>renforcement des controles metier sans ajouter de nouvelles tables : coherence du SI, des mathematiques et des examens ;</li>
