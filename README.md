@@ -16,6 +16,14 @@ centrés sur les mathématiques. L'architecture reste assez générique pour êt
 étendue à d'autres disciplines par des contributeurs, sans que cela devienne
 l'objectif principal du package.
 
+Trois principes guident désormais explicitement le projet : **des données
+frugales**, **des contrôles exigeants** et une documentation qui a le droit de
+faire sourire. Les mathématiques doivent être exactes ; `eduschool`, lui, peut
+se permettre un peu d'auto-dérision.
+
+Pour les parents, la vignette **Prendre un parent par la main** propose une
+lecture progressive des bases mathématiques de la 6e à la Terminale spécialité.
+
 ## Installation
 
 ```r

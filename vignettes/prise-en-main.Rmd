@@ -15,8 +15,17 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 
 # Objectif
 
-Cette vignette présente le chemin le plus court pour utiliser le package. Les
-articles consacrés à la 6e et à la 2de montrent ensuite des usages plus complets.
+`eduschool` est un projet à la fois très simple et assez complexe.
+
+Il vous faudra sans doute un certain temps pour bien le comprendre, puis encore
+un peu pour l'utiliser correctement.
+
+Mais rassurez-vous : une fois le système parfaitement maîtrisé, vous serez
+probablement proche de la retraite et pourrez **enfin** vous reposer.
+
+En attendant, commençons doucement. Cette vignette présente le chemin le plus
+court pour utiliser le package. Les articles consacrés à la 6e et à la 2de
+montrent ensuite des usages plus complets.
 
 ```{r, eval=FALSE}
 library(eduschool)

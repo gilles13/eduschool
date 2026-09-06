@@ -1,3 +1,12 @@
+# eduschool 0.20.0
+
+- renforcement des controles metier sans ajouter de nouvelles tables : coherence du SI, des mathematiques et des examens ;
+- ajout de `controle_integrite_math()`, `controle_integrite_examens()` et `controle_integrite()` pour disposer d une facade de controle unique ;
+- simplification de la page d accueil pkgdown autour de quatre portes explicites : parents, eleves, parcours scolaire, donnees et R ;
+- ajout de la vignette longue « Prendre un parent par la main », de la 6e a la Terminale specialite mathematiques ;
+- adoption d une ligne editoriale assumant l humour et l auto-derision, sans relacher la precision des donnees ni des mathematiques ;
+- enrichissement de la prise en main rapide avec un avertissement honnete : le projet est simple, complexe, et la retraite finira bien par arriver.
+
 # eduschool 0.19.0
 
 ## Nouvelles structures de raisonnement DNB

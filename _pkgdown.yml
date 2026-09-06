@@ -11,23 +11,13 @@ navbar:
     right: github
   components:
     articles:
-      text: Articles
+      text: Guides
       menu:
-      - text: Découvrir eduschool
-      - text: Prise en main
+      - text: Commencer
+      - text: Prendre un parent par la main
+        href: articles/prendre-un-parent-par-la-main.html
+      - text: Prise en main rapide
         href: articles/prise-en-main.html
-      - text: Explorer la 6e
-        href: articles/exemple-classe-6e.html
-      - text: Explorer la 2de générale et technologique
-        href: articles/exemple-classe-2de-generale.html
-      - text: -------
-      - text: Parcours et orientation
-      - text: Parcours scolaires
-        href: articles/parcours-scolaires.html
-      - text: Programmes et capacités
-        href: articles/programmes-et-capacites.html
-      - text: S'orienter au lycée et après le bac
-        href: articles/orientation-au-lycee-et-apres-le-bac.html
       - text: -------
       - text: Mathématiques
       - text: Mathématiques par niveau
@@ -36,30 +26,26 @@ navbar:
         href: articles/examens-dnb.html
       - text: Fiches de révision
         href: articles/fiches-revision-mathematiques.html
-      - text: Fiche mathématiques 6e
-        href: articles/fiche-mathematiques-6e.html
-      - text: Dérivation — Première spécialité
-        href: articles/fiche-derivation-premiere.html
-      - text: Approfondir ses connaissances
-        href: articles/approfondir-ses-connaissances-en-mathematiques.html
       - text: -------
-      - text: Comprendre eduschool
+      - text: Parcours et orientation
+      - text: Parcours scolaires
+        href: articles/parcours-scolaires.html
+      - text: S'orienter au lycée et après le bac
+        href: articles/orientation-au-lycee-et-apres-le-bac.html
+      - text: -------
+      - text: Sous le capot
       - text: Architecture des données
         href: articles/architecture-des-donnees.html
-      - text: Rentrer en profondeur dans eduschool
-        href: articles/rentrer-en-profondeur-dans-eduschool.html
-      - text: -------
       - text: Contribuer et partager
-      - text: Mutualiser fiches, exercices et ameliorations
         href: articles/contribuer-et-partager.html
-      - text: -------
       - text: Tous les articles
         href: articles/index.html
 articles:
 - title: Decouvrir eduschool
-  desc: Premiers reperes pour explorer le referentiel et une classe.
+  desc: Premiers reperes pour les parents, les eleves et les utilisateurs R.
   navbar: Decouvrir
   contents:
+  - prendre-un-parent-par-la-main
   - prise-en-main
   - exemple-classe-6e
   - exemple-classe-2de-generale

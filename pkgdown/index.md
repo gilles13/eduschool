@@ -1,18 +1,29 @@
 # Comprendre sa scolarité. Travailler les mathématiques.
 
-**eduschool** cartographie la scolarité des collégiens et lycéens en France et
-propose des outils simples pour réviser, s'entraîner et progresser en
-mathématiques.
+**eduschool** aide à comprendre la scolarité du collège au lycée et propose des
+outils pour travailler les mathématiques.
 
-**[Explorer un parcours →](articles/parcours-scolaires.html)** ·
-**[Réviser les maths →](articles/fiches-revision-mathematiques.html)**
-
-De la 6e à la Terminale · données structurées · outils R · projet open source
-et collaboratif.
+Pas besoin de connaître l'architecture du package pour commencer. Choisissez
+simplement la porte qui vous ressemble le plus.
 
 ---
 
-## Aller directement à sa classe
+## Je suis parent
+
+Vous voulez comprendre ce que votre enfant est censé apprendre, ce qui compte
+vraiment d'une classe à l'autre et comment l'aider sans refaire le cours à sa
+place.
+
+**[Prendre un parent par la main →](articles/prendre-un-parent-par-la-main.html)**
+
+Cycles, notions essentielles, difficultés classiques, DNB, lycée et spécialité
+mathématiques : le guide long, progressif et volontairement humain.
+
+---
+
+## Je suis élève
+
+Allez directement à votre classe.
 
 **Collège :** [6e](articles/mathematiques-6e.html) ·
 [5e](articles/mathematiques-5e.html) ·
@@ -23,110 +34,66 @@ et collaboratif.
 [1re spécialité](articles/mathematiques-1re-specialite.html) ·
 [Terminale spécialité](articles/mathematiques-terminale-specialite.html)
 
-[Voir toutes les fiches et ressources de mathématiques →](articles/mathematiques-par-niveau.html)
+**[Voir toutes les ressources de mathématiques →](articles/mathematiques-par-niveau.html)**
 
 ---
 
-## Les quatre portes d'entrée
+## Je veux comprendre le parcours scolaire
 
-::: {.row .eduschool-entries}
+Niveaux, cycles, voies, séries, options, spécialités et orientation : commencez
+par une vue d'ensemble avant de descendre dans les détails.
 
-::: {.col-md-6 .eduschool-entry}
-
-![](identite/parcours.png)
-
-### [Parcours scolaire](articles/parcours-scolaires.html)
-
-Niveaux, cycles, voies, séries, options, spécialités, orientation et Parcoursup.
-
-:::
-
-::: {.col-md-6 .eduschool-entry}
-
-![](identite/maths.png)
-
-### [Mathématiques](articles/fiches-revision-mathematiques.html)
-
-Programmes, capacités, fiches de révision, exercices et ressources.
-
-:::
-
-::: {.col-md-6 .eduschool-entry}
-
-![](identite/partage.png)
-
-### [Créer et partager](articles/contribuer-et-partager.html)
-
-Adapter les outils, proposer des corrections et mutualiser fiches et exercices.
-
-:::
-
-::: {.col-md-6 .eduschool-entry}
-
-![](identite/donnees.png)
-
-### [Données et R](reference/index.html)
-
-Une API simple pour explorer les données, produire des documents et aller plus loin.
-
-:::
-
-:::
+**[Explorer les parcours scolaires →](articles/parcours-scolaires.html)** ·
+**[Comprendre l'orientation →](articles/orientation-au-lycee-et-apres-le-bac.html)**
 
 ---
 
-## Commencer avec quelques verbes
+## Je veux utiliser les données et R
 
-L'API principale privilégie des verbes courts et faciles à lire :
+`eduschool` repose sur un mini-système relationnel volontairement frugal. Les
+consultations usuelles restent simples ; les couches plus techniques sont là
+pour ceux qui souhaitent regarder sous le capot.
 
 ```r
 library(eduschool)
 
 parcours("3E")
-orientation("2GT")
 programme("6E")
 revision("6E")
 exercices("6E", n = 5)
 ```
 
-Les fonctions détaillées restent disponibles. Cette façade simplifie l'entrée
-dans `eduschool` sans masquer le système relationnel sous-jacent.
+**[Prise en main rapide →](articles/prise-en-main.html)** ·
+**[Architecture des données →](articles/architecture-des-donnees.html)** ·
+**[Référence R →](reference/index.html)**
 
 ---
 
-## Pour qui ?
+## Un projet sérieux qui ne se prend pas trop au sérieux
 
-| Élèves | Parents | Utilisateurs R et enseignants |
-|:--|:--|:--|
-| Réviser, s'entraîner et comprendre son parcours. | Suivre la scolarité et comprendre les choix d'orientation. | Interroger les référentiels, produire et adapter des supports. |
+Les données, les relations et les mathématiques doivent être exactes. La
+documentation, elle, a le droit de respirer.
 
----
+`eduschool` est donc un projet à la fois très simple et assez complexe. Il vous
+faudra un certain temps pour bien le comprendre et l'utiliser. Mais
+rassurez-vous : une fois le système parfaitement maîtrisé, vous serez
+probablement proche de la retraite et pourrez **enfin** vous reposer.
 
-## Créer, adapter, partager
+En attendant, les contrôles automatiques travaillent pour vous :
 
-![Partager les connaissances](identite/connaissances.png)
+```r
+controle_integrite(strict = TRUE)
+```
 
-`eduschool` est un projet open source. Son architecture doit permettre de
-construire progressivement ses propres fiches et exercices avec les mêmes
-briques que celles utilisées par le package.
-
-**Utiliser → créer → adapter → partager**
-
-Les corrections de données, ressources, fiches, exercices, visualisations et
-améliorations de l'API ont vocation à être mutualisées.
-
-**[Voir comment contribuer →](articles/contribuer-et-partager.html)**
+Le silence est ici une bonne nouvelle.
 
 ---
 
 ## Un projet volontairement centré sur les math
 
-::: {.eduschool-maths-focus}
+L'architecture peut accueillir d'autres disciplines, mais les fiches de
+révision, exercices et générateurs restent volontairement consacrés aux
+mathématiques. Cette limite permet de conserver un outil cohérent, maintenable
+et utile.
 
-![](identite/compas.png)
-
-L'architecture d'`eduschool` peut accueillir d'autres disciplines. Les fiches
-de révision et les exercices restent volontairement consacrés aux mathématiques.
-Cette limite permet de garder un outil cohérent, maintenable et réellement utile.
-
-:::
+**Utiliser → comprendre → adapter → partager**
