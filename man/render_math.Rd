@@ -4,7 +4,14 @@
 \alias{render_math}
 \title{Generer des supports mathematiques imprimables}
 \usage{
-render_math(niveau, concept, n = 5L, output_dir = ".", seed = 1L)
+render_math(
+  niveau,
+  concept,
+  n = 5L,
+  output_dir = ".",
+  seed = 1L,
+  type = c("complet", "fiche", "exercices", "corrige", "plus_loin")
+)
 }
 \arguments{
 \item{niveau}{Niveau scolaire, par exemple `"6E"`.}
@@ -17,13 +24,18 @@ render_math(niveau, concept, n = 5L, output_dir = ".", seed = 1L)
 \item{output_dir}{Repertoire dans lequel ecrire les fichiers.}
 
 \item{seed}{Graine aleatoire pour rendre la generation reproductible.}
+
+\item{type}{Support a produire : `"complet"` produit tous les supports
+actuellement disponibles pour le concept ; `"fiche"`, `"exercices"`,
+`"corrige"` et `"plus_loin"` permettent de produire un seul document.
+Le support `"plus_loin"` est en cours de generalisation a tous les concepts.}
 }
 \value{
 Invisiblement, une liste contenant les exercices et les chemins des
-  deux PDF produits.
+  PDF produits.
 }
 \description{
-Genere un PDF d'exercices et son corrige explique a partir d'un niveau et
-d'un concept mathematique. Le premier prototype prend en charge les
-fractions en 6e.
+Genere des supports mathematiques imprimables a partir d'un niveau et d'un
+concept. Le prototype actuel prend en charge les fractions, la
+proportionnalite et les nombres premiers.
 }

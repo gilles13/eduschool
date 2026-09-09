@@ -67,7 +67,7 @@ MATC_NOMBRE_DECIMAL;"Nombre décimal";"Nombre admettant une écriture décimale 
 MATC_NUMERATION_POSITION;"Numération de position";"Valeur d’un chiffre déterminée par sa position dans l’écriture du nombre.";NOMBRES;structurant;6E;PRG_MAT_C3_2025;""
 MATC_OPERATION;"Opérations arithmétiques";"Addition, soustraction, multiplication et division comme opérations sur les nombres.";NOMBRES;structurant;6E;PRG_MAT_C3_2025;""
 MATC_PRIORITES;"Priorités opératoires";"Règles déterminant l’ordre d’exécution des opérations dans une expression.";NOMBRES;structurant;5E;PRG_MAT_C4_2026;""
-MATC_FRACTION;"Fraction";"Écriture a/b représentant un quotient, un nombre ou un opérateur, avec b non nul.";NOMBRES;structurant;6E;PRG_MAT_C3_2025;"Une écriture comme 3/4 représente notamment le nombre obtenu en divisant 3 par 4."
+MATC_FRACTION;"Fraction";"Une fraction est une écriture de la forme a/b, avec b non nul, qui permet notamment de représenter le quotient de a par b.";NOMBRES;structurant;6E;PRG_MAT_C3_2025;"3/4, c'est 3 parts quand on a partagé une unité en 4 parts égales."
 MATC_NOMBRE_RATIONNEL;"Nombre rationnel";"Nombre pouvant s’écrire comme quotient de deux entiers, le dénominateur étant non nul.";NOMBRES;structurant;5E;PRG_MAT_C4_2026;""
 MATC_POURCENTAGE;"Pourcentage";"Proportion exprimée relativement à cent.";NOMBRES;structurant;6E;PRG_MAT_C3_2025;""
 MATC_NOMBRE_RELATIF;"Nombre relatif";"Nombre muni d’un signe permettant notamment de repérer une position par rapport à zéro.";NOMBRES;structurant;5E;PRG_MAT_C4_2026;""

@@ -295,7 +295,7 @@ la réciter.
 Voici une règle éditoriale officielle d'eduschool :
 
 > Le théorème de Pythagore ne fonctionne que dans un triangle rectangle. Même si
-> vous y croyez très fort.
+> vous croyez très fort le contraire.
 
 L'élève doit apprendre à repérer l'hypoténuse, écrire correctement l'égalité,
 puis utiliser le théorème dans le bon sens : calculer une longueur ou vérifier
