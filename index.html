@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Cartographie de la scolarité française et outils de mathématiques • eduschool</title>
-<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="katex-auto.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -24,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.22.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.23.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +54,8 @@
     <li><a class="dropdown-item" href="articles/architecture-des-donnees.html">Sous le capot</a></li>
     <li><a class="dropdown-item" href="articles/contribuer-et-partager.html">Collaborer et partager</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="articles/journal-du-projet.html">Journal du projet</a></li>
+    <li><a class="dropdown-item" href="articles/livre-d-or.html">Livre d'or</a></li>
     <li><a class="dropdown-item" href="articles/index.html">Tous les articles</a></li>
   </ul>
 </li>
@@ -65,13 +68,19 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
+  <main id="main" class="col-md-9"><div class="eduschool-hero">
+<p><img src="identite/hero-eduschool-math.png" alt="edusch∞l Math — plusieurs chemins, différents points de vue, mêmes découvertes"></p>
+</div>
+<div class="section level1">
 <div class="page-header">
 <img src="logo.png" class="logo" alt=""><h1 id="comprendre-sa-scolarité-travailler-les-mathématiques">Comprendre sa scolarité. Travailler les mathématiques.<a class="anchor" aria-label="anchor" href="#comprendre-sa-scolarit%C3%A9-travailler-les-math%C3%A9matiques"></a>
 </h1>
 </div>
+<blockquote>
+<p><strong>Apprendre → structurer → transmettre.</strong></p>
+</blockquote>
 <p><strong>eduschool</strong> aide à comprendre la scolarité du collège au lycée et propose des outils pour travailler les mathématiques.</p>
-<p>Pas besoin de connaître l’architecture du package pour commencer. Choisissez simplement la porte qui vous ressemble le plus.</p>
+<p>Pas besoin de connaître l’architecture du package pour commencer. Choisissez simplement la porte qui vous ressemble le plus. Le but est de disposer vite d’un support qui puisse être imprimé, lu sur tablette, envoyé et surtout discuté ensemble.</p>
 <hr>
 <div class="section level2">
 <h2 id="je-suis-parent">Je suis parent<a class="anchor" aria-label="anchor" href="#je-suis-parent"></a>
@@ -127,8 +136,16 @@
 </h2>
 <p>L’architecture peut accueillir d’autres disciplines, mais les fiches de révision, exercices et générateurs restent volontairement consacrés aux mathématiques. Cette limite permet de conserver un outil cohérent, maintenable et utile.</p>
 <p><strong>Utiliser → comprendre → adapter → partager</strong></p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="le-projet-a-aussi-une-histoire">Le projet a aussi une histoire<a class="anchor" aria-label="anchor" href="#le-projet-a-aussi-une-histoire"></a>
+</h2>
+<p><code>eduschool</code> garde une trace de ce qui l’a fait évoluer, sans transformer la page d’accueil en autobiographie.</p>
+<p><strong><a href="articles/journal-du-projet.html">Journal du projet →</a></strong> · <strong><a href="articles/livre-d-or.html">Livre d’or →</a></strong> · <strong><a href="articles/guide-d-or.html">Guide d’or →</a></strong></p>
 </div>
 </div>
+
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">

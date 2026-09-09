@@ -199,6 +199,8 @@
   : Relations entre concepts mathematiques
 - [`relations_si()`](https://gilles13.github.io/eduschool/reference/relations_si.md)
   : Relations du mini-SI eduschool
+- [`render_math()`](https://gilles13.github.io/eduschool/reference/render_math.md)
+  : Generer des supports mathematiques imprimables
 - [`ressources_pedagogiques()`](https://gilles13.github.io/eduschool/reference/ressources_pedagogiques.md)
   : Ressources pedagogiques externes
 - [`resume_controles_si()`](https://gilles13.github.io/eduschool/reference/resume_controles_si.md)

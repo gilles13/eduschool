@@ -48,9 +48,7 @@ et la cohérence de la réponse.
 Une fraction représente un quotient. Un pourcentage est une fraction sur
 100.
 
-``` math
- \frac{a}{b}=a\div b \quad t\%=\frac{t}{100} 
-```
+\frac{a}{b}=a\div b \quad t\\=\frac{t}{100}
 
 ### Proportionnalité
 
@@ -63,17 +61,13 @@ le tableau.
 Le périmètre est la longueur du contour. Pour un disque utiliser le
 diamètre d ou le rayon r.
 
-``` math
- P_{rectangle}=2(L+l) \quad P_{carre}=4c \quad P_{disque}=\pi d=2\pi r 
-```
+P\_{rectangle}=2(L+l) \quad P\_{carre}=4c \quad P\_{disque}=\pi d=2\pi r
 
 ### Aires
 
 L’aire mesure une surface. Les unités d’aire sont au carré.
 
-``` math
- A_{rectangle}=L\times l \quad A_{carre}=c^2 
-```
+A\_{rectangle}=L\times l \quad A\_{carre}=c^2
 
 ### Géométrie
 
@@ -88,9 +82,7 @@ droit on multiplie longueur largeur et hauteur. Pour un cube les trois
 dimensions sont égales. Repères utiles : 1 dm³ = 1 L et 1 cm³ = 1 mL.
 Pour les durées : 1 h = 60 min et 1 min = 60 s.
 
-``` math
- V_{pave}=L\times l\times h \quad V_{cube}=c^3 
-```
+V\_{pave}=L\times l\times h \quad V\_{cube}=c^3
 
 ### Données et probabilités
 
@@ -99,9 +91,8 @@ comprise entre 0 et 1. En équiprobabilité elle compare les cas
 favorables aux cas possibles. Une fréquence observée sur de nombreuses
 répétitions peut aider à estimer une probabilité.
 
-``` math
- P(A)=\frac{nombre\ de\ cas\ favorables}{nombre\ de\ cas\ possibles} 
-```
+P(A)=\frac{nombre\\ de\\ cas\\ favorables}{nombre\\ de\\ cas\\
+possibles}
 
 ### Algèbre et pensée informatique
 
@@ -118,8 +109,8 @@ facile à retenir lorsqu’elle a d’abord eu une raison d’exister.
 
 ### Une fraction représente une part d’un tout
 
-Pour visualiser $`\frac{3}{4}`$, on partage une unité en quatre parts
-égales et on en retient trois.
+Pour visualiser \frac{3}{4}, on partage une unité en quatre parts égales
+et on en retient trois.
 
 ![](fiche-mathematiques-6e_files/figure-html/fraction-1.png)
 
@@ -142,37 +133,31 @@ grandeurs.
 ### L’aire d’un rectangle compte des carrés unités
 
 Un rectangle de 5 unités sur 3 contient 5 carrés sur chaque ligne et 3
-lignes : $`5 \times 3 = 15`$ carrés unités.
+lignes : 5 \times 3 = 15 carrés unités.
 
 ![](fiche-mathematiques-6e_files/figure-html/aire-1.png)
 
 C’est ce dénombrement qui conduit à :
 
-``` math
-A_{rectangle}=L\times l
-```
+A\_{rectangle}=L\times l
 
 ### Le volume compte des cubes unités
 
 Prenons un pavé droit de longueur 4, largeur 3 et hauteur 2. Chaque
-couche contient $`4\times3=12`$ cubes. Deux couches donnent donc 24
-cubes unités.
+couche contient 4\times3=12 cubes. Deux couches donnent donc 24 cubes
+unités.
 
 ![](fiche-mathematiques-6e_files/figure-html/volume-1.png)
 
 On généralise alors :
 
-``` math
-V_{pavé}=L\times l\times h
-```
+V\_{pavé}=L\times l\times h
 
-Pour un cube de côté $`c`$, les trois dimensions sont égales :
+Pour un cube de côté c, les trois dimensions sont égales :
 
-``` math
-V_{cube}=c^3
-```
+V\_{cube}=c^3
 
-**Repères utiles :** $`1\,dm^3=1\,L`$ et $`1\,cm^3=1\,mL`$.
+**Repères utiles :** 1\\dm^3=1\\L et 1\\cm^3=1\\mL.
 
 ### Une fréquence expérimentale peut se stabiliser
 

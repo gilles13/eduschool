@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>À propos : un parent, des maths et un appel à l'aide • eduschool</title>
-<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -21,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.22.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.23.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +51,8 @@
     <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Sous le capot</a></li>
     <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Collaborer et partager</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="../articles/journal-du-projet.html">Journal du projet</a></li>
+    <li><a class="dropdown-item" href="../articles/livre-d-or.html">Livre d'or</a></li>
     <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
   </ul>
 </li>
@@ -113,6 +116,15 @@ comprendre une notion du premier coup fait partie de l’apprentissage.
 L’important n’est pas de ne jamais se tromper, mais de pouvoir revenir
 sur son raisonnement, comprendre ce qui n’a pas fonctionné et essayer
 autrement.</p>
+<blockquote>
+<p><strong>Un savoir prend toute sa valeur lorsqu’il est
+partagé.</strong></p>
+</blockquote>
+<p>Comprendre quelque chose est précieux. Pouvoir ensuite l’expliquer,
+le discuter, le corriger et le transmettre lui donne une autre
+dimension. <code>eduschool</code> est construit dans cet esprit :
+apprendre, puis partager ce qui a été compris afin que d’autres puissent
+à leur tour s’en emparer.</p>
 </div>
 <div class="section level2">
 <h2 id="un-parent-qui-tente-de-comprendre">Un parent qui tente de comprendre<a class="anchor" aria-label="anchor" href="#un-parent-qui-tente-de-comprendre"></a>
@@ -127,6 +139,45 @@ et qu’il doit quand même aider ses propres enfants.</p>
 <p>Cette situation est devenue une partie de la méthode du projet. Une
 notion qui ne peut être expliquée clairement à quelqu’un qui ne la
 maîtrise pas encore mérite probablement d’être retravaillée.</p>
+</div>
+<div class="section level2">
+<h2 id="ça-ne-marche-pas-pas-de-panique">Ça ne marche pas ? Pas de panique<a class="anchor" aria-label="anchor" href="#%C3%A7a-ne-marche-pas-pas-de-panique"></a>
+</h2>
+<blockquote>
+<p><strong>Ça ne marche pas ? Pas de panique. On essaie
+autrement.</strong></p>
+</blockquote>
+<p>Une explication ne fonctionne pas ? On change d’exemple. Une
+représentation ne parle pas ? On en essaie une autre. Le chemin est
+bloqué ? On en prend un autre. Et on recommence.</p>
+<p>C’est précisément l’un des rôles d’<code>eduschool</code> : donner à
+la personne qui accompagne davantage de moyens d’essayer. Une fiche, un
+dessin ou une correction ne sont jamais censés constituer l’unique
+chemin vers un concept.</p>
+<blockquote>
+<p><strong>eduschool ne remplace pas celui qui transmet. Il lui donne
+davantage de moyens d’essayer.</strong></p>
+</blockquote>
+</div>
+<div class="section level2">
+<h2 id="la-face-b-pourquoi-r">La Face B : pourquoi R ?<a class="anchor" aria-label="anchor" href="#la-face-b-pourquoi-r"></a>
+</h2>
+<p>L’Éducation nationale a choisi Python pour faire découvrir la
+programmation aux élèves. C’est probablement très raisonnable.</p>
+<p><code>eduschool</code>, lui, est développé en R. Pourquoi ? Parce que
+c’est l’outil que son auteur connaît, aime utiliser et avec lequel il
+sait — plus ou moins — fabriquer des choses.</p>
+<p><strong>eduschool Math est donc aussi une sorte de Face B : un autre
+chemin pour essayer d’arriver au même endroit.</strong></p>
+<p>Est-ce le meilleur choix technique ? Peut-être pas. Est-ce que ça
+fonctionne ? C’est précisément ce que nous sommes en train de
+vérifier.</p>
+<p><em>Compte tenu du niveau du développeur, utilisation à vos risques
+et périls.</em></p>
+<p>Derrière la blague, la métaphore vaut aussi pour les mathématiques :
+définition ou intuition, calcul ou dessin, exercice ou discussion. Il
+n’existe pas nécessairement une seule bonne porte d’entrée dans une
+connaissance.</p>
 </div>
 <div class="section level2">
 <h2 id="cest-donc-un-projet-collaboratif">C’est donc un projet collaboratif<a class="anchor" aria-label="anchor" href="#cest-donc-un-projet-collaboratif"></a>
@@ -180,6 +231,89 @@ Pythagore ? » serait une façon assez spectaculaire de transformer
 <code>eduschool</code> en usine à gaz.</p>
 <p>Le protocole reste donc inchangé : <strong>on commence petit, on fait
 fonctionner, on contrôle, puis seulement on généralise.</strong></p>
+</div>
+<div class="section level2">
+<h2 id="à-philippe-chataignon">À Philippe Chataignon<a class="anchor" aria-label="anchor" href="#%C3%A0-philippe-chataignon"></a>
+</h2>
+<p>Une place particulière doit être réservée ici à <strong>Philippe
+Chataignon</strong>.</p>
+<p>C’est par la lecture de <a href="https://chataignon.com/opendata.html" class="external-link">son blog et de ses
+réflexions sur l’open data</a> que j’ai commencé à m’intéresser
+sérieusement au sujet. Bien avant qu’<code>eduschool</code> n’existe,
+son travail a contribué à faire évoluer ma façon de considérer les
+données publiques : non plus seulement comme une matière première à
+traiter, mais comme un bien à rendre accessible, à expliquer, à partager
+et à réutiliser.</p>
+<p>Puis, par un heureux hasard professionnel, j’ai eu l’occasion de
+travailler avec lui sur un petit projet, pendant seulement deux ou trois
+semaines. Philippe en a très naturellement pris le lead. Son expertise,
+bien supérieure à la mienne, le justifiait pleinement.</p>
+<p>Mais ce n’est finalement pas ce que je retiens le plus de cette
+expérience.</p>
+<p>Nous partagions notamment une même appétence pour l’informatique et,
+plus particulièrement, pour le langage R. Je me souviens d’une
+visioconférence Zoom où nous n’étions que tous les deux. Philippe avait
+accepté de prendre un moment pour me montrer précisément sa méthode de
+travail, que je trouvais particulièrement habile. Il exploitait
+pleinement les possibilités offertes par les packages R et certaines de
+leurs fonctions les plus avancées.</p>
+<p>À un moment, il me présente une fonction et me demande si je la
+connais. Je lui donne une réponse un peu approximative.</p>
+<p>Sa réponse tombe immédiatement :</p>
+<p><strong>« Non, pas du tout. »</strong></p>
+<p>Pas de « oui, presque », de « pas tout à fait » ou de détour
+diplomatique. Non : <em>pas du tout</em>.</p>
+<p>J’ai été surpris, mais plutôt agréablement. Cette franchise directe,
+sans pommade inutile, me plaisait. Je n’ai d’ailleurs pas réussi à
+retenir un petit sourire en coin.</p>
+<p>Philippe l’a immédiatement remarqué et, pensant peut-être avoir été
+un peu trop direct, a commencé à reprendre : « Non, enfin, ce n’est pas…
+»</p>
+<p>Je l’ai interrompu :</p>
+<p><strong>« Non, aucun problème. Je préfère ça. »</strong></p>
+<p>Il m’a souri.</p>
+<p>Et il est reparti, presque frénétiquement, dans son explication.</p>
+<p>Visiblement, le sujet le passionnait. Et moi aussi.</p>
+<p>La discussion a continué ainsi pendant environ une heure.</p>
+<p>Avec le recul, c’est probablement cela qui m’a le plus marqué.
+Philippe occupait des responsabilités importantes dans l’organisation.
+Moi, j’étais un agent avec un niveau de responsabilité sans commune
+mesure avec le sien. Pourtant, pendant cette heure-là, cela n’avait
+strictement aucune importance.</p>
+<p>Il avait devant lui quelqu’un qui voulait comprendre quelque chose
+qu’il aimait et maîtrisait. Cela semblait lui suffire pour avoir envie
+de le transmettre.</p>
+<p>Je reste convaincu qu’il aurait consacré la même énergie au moins
+gradé de l’organisation. Sa passion pour la statistique, l’informatique
+et la transmission du savoir dépassait largement les distances que les
+organigrammes peuvent parfois installer entre les personnes.</p>
+<p>Cette heure de son temps pourrait sembler anecdotique. Pour moi, elle
+ne l’est pas.</p>
+<p>J’y ai appris des choses sur R, bien sûr. Mais j’y ai surtout vu
+quelque chose de beaucoup plus important : on peut avoir beaucoup
+appris, beaucoup progressé, avoir acquis de grandes responsabilités et
+une expertise reconnue, sans que cela oblige à mettre de la distance
+avec celui qui en sait moins. Au contraire, ce savoir peut devenir une
+raison supplémentaire de se rapprocher de lui pour le transmettre.</p>
+<p>C’est une leçon de vie que je n’oublierai jamais.</p>
+<p>Elle trouve naturellement sa place dans l’un des principes
+d’<code>eduschool</code> :</p>
+<p><strong>« Un savoir prend toute sa valeur lorsqu’il est partagé.
+»</strong></p>
+<p>Merci Philippe.</p>
+<p><strong>Tu es un grand homme.</strong></p>
+</div>
+<div class="section level2">
+<h2 id="plusieurs-chemins">Plusieurs chemins<a class="anchor" aria-label="anchor" href="#plusieurs-chemins"></a>
+</h2>
+<p>Une explication ne fonctionne pas ? Pas de panique. On change
+d’exemple, de représentation, de point de vue ou de chemin, puis on
+recommence.</p>
+<blockquote>
+<p><strong>Plusieurs chemins, différents points de vue, mêmes
+découvertes.</strong></p>
+<p><strong>Au bout, de l’émerveillement.</strong></p>
+</blockquote>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

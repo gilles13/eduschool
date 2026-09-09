@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Dérivation — Première spécialité • eduschool</title>
-<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -21,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.22.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.23.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +51,8 @@
     <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Sous le capot</a></li>
     <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Collaborer et partager</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="../articles/journal-du-projet.html">Journal du projet</a></li>
+    <li><a class="dropdown-item" href="../articles/livre-d-or.html">Livre d'or</a></li>
     <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
   </ul>
 </li>
@@ -83,25 +86,21 @@ doivent attirer l’œil.</p>
 <div class="section level2">
 <h2 id="lidée-essentielle">L’idée essentielle<a class="anchor" aria-label="anchor" href="#lid%C3%A9e-essentielle"></a>
 </h2>
-<p>Le <strong>nombre dérivé</strong>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f'(a)</annotation></semantics></math>
-mesure localement la variation de la fonction au voisinage de
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.
+<p>Le <strong>nombre dérivé</strong> <span class="math inline">f'(a)</span> mesure localement la variation de
+la fonction au voisinage de <span class="math inline">a</span>.
 Graphiquement, il correspond au <strong>coefficient directeur de la
-tangente</strong> à la courbe au point d’abscisse
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.</p>
+tangente</strong> à la courbe au point d’abscisse <span class="math inline">a</span>.</p>
 <p><img src="fiche-derivation-premiere_files/figure-html/note-retenir-1.png" class="r-plt" alt="" width="672"></p>
 </div>
 <div class="section level2">
 <h2 id="voir-la-tangente">Voir la tangente<a class="anchor" aria-label="anchor" href="#voir-la-tangente"></a>
 </h2>
 <p><img src="fiche-derivation-premiere_files/figure-html/tangente-1.png" class="r-plt" alt="" width="672"></p>
-<p>L’équation de la tangente en
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
-est :</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+<p>L’équation de la tangente en <span class="math inline">a</span> est
+:</p>
+<p><span class="math display">
 y = f(a) + f'(a)(x-a).
-</annotation></semantics></math></p>
+</span></p>
 <p><strong>Condition :</strong> f dérivable en a.</p>
 </div>
 <div class="section level2">
@@ -109,17 +108,10 @@ y = f(a) + f'(a)(x-a).
 </h2>
 <p>Pour déterminer une équation de tangente :</p>
 <ol style="list-style-type: decimal">
-<li>calculer
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math>
-;</li>
-<li>calculer
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f'(a)</annotation></semantics></math>
-;</li>
-<li>remplacer dans
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=f(a)+f'(a)(x-a)</annotation></semantics></math>
-;</li>
-<li>vérifier que le point
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(a;f(a))</annotation></semantics></math>
+<li>calculer <span class="math inline">f(a)</span> ;</li>
+<li>calculer <span class="math inline">f'(a)</span> ;</li>
+<li>remplacer dans <span class="math inline">y=f(a)+f'(a)(x-a)</span> ;</li>
+<li>vérifier que le point <span class="math inline">(a;f(a))</span>
 appartient bien à la droite obtenue.</li>
 </ol>
 <p><img src="fiche-derivation-premiere_files/figure-html/note-reflexe-1.png" class="r-plt" alt="" width="672"></p>
@@ -127,7 +119,8 @@ appartient bien à la droite obtenue.</li>
 <div class="section level2">
 <h2 id="erreur-fréquente">Erreur fréquente<a class="anchor" aria-label="anchor" href="#erreur-fr%C3%A9quente"></a>
 </h2>
-<p><strong>.</strong> Écrire y=f’(a)x sans imposer le passage par
+<p><strong>Oublier que la tangente passe par le point de
+contact</strong> - Écrire y=f’(a)x sans imposer le passage par
 (a,f(a)).</p>
 <p><em>Remédiation :</em> Vérifier systématiquement que l’équation
 obtenue est satisfaite par (a,f(a)).</p>
@@ -135,19 +128,11 @@ obtenue est satisfaite par (a,f(a)).</p>
 <div class="section level2">
 <h2 id="mini-exercice">Mini-exercice<a class="anchor" aria-label="anchor" href="#mini-exercice"></a>
 </h2>
-<p>Soit
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(x)=x^2-3x+1</annotation></semantics></math>.</p>
+<p>Soit <span class="math inline">f(x)=x^2-3x+1</span>.</p>
 <ol style="list-style-type: decimal">
-<li>Calculer
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f'(x)</annotation></semantics></math>.</li>
-<li>Calculer
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(2)</annotation></semantics></math>
-et
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f'(2)</annotation></semantics></math>.</li>
-<li>Déterminer une équation de la tangente à la courbe de
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
-au point d’abscisse
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>.</li>
+<li>Calculer <span class="math inline">f'(x)</span>.</li>
+<li>Calculer <span class="math inline">f(2)</span> et <span class="math inline">f'(2)</span>.</li>
+<li>Déterminer une équation de la tangente à la courbe de <span class="math inline">f</span> au point d’abscisse <span class="math inline">2</span>.</li>
 </ol>
 <p><img src="fiche-derivation-premiere_files/figure-html/note-objets-1.png" class="r-plt" alt="" width="672"></p>
 <hr>

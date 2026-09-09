@@ -47,15 +47,11 @@ les données doivent être récupérées depuis leur producteur officiel.
 Un indice base 100 n’est pas lui-même un taux d’inflation. La variation
 entre deux indices se calcule par :
 
-``` math
 \frac{V_f - V_i}{V_i} \times 100
-```
 
 ou, de manière équivalente :
 
-``` math
 \left(\frac{V_f}{V_i} - 1\right) \times 100.
-```
 
 Par exemple :
 

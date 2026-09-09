@@ -1,5 +1,29 @@
 # Changelog
 
+## eduschool 0.23.0
+
+- Finalisation de l’identité **edusch∞l Math** : visuel d’accueil,
+  navigation recentrée, journal synthétisé et Sainte Trinité du triple
+  zéro explicitée.
+
+- l’identite visuelle existante devient l’identite assumee du projet :
+  un logo de reference, des pictogrammes et une charte commune pour le
+  site et les supports ;
+
+- ajout d’un `Journal du projet`, distinct du changelog technique, pour
+  conserver les etapes intellectuelles et humaines qui meritent de
+  laisser une trace ;
+
+- ajout d’un `Livre d'or` qui rassemble quelques formulations
+  fondatrices sans inventer de faux temoignages ;
+
+- la page d’accueil rappelle la finalite pratique des supports :
+  imprimer, consulter, envoyer et surtout discuter ensemble ;
+
+- confirmation d’une priorite : produire rapidement des supports utiles
+  aux echanges entre enfants et adultes avant de generaliser le moteur
+  de generation.
+
 ## eduschool 0.22.2
 
 - ajoute CONTRIBUTING.md

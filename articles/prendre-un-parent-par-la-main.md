@@ -160,7 +160,7 @@ Cette idée simple devient fondamentale au collège puis au lycée.
 #### À surveiller
 
 L’erreur classique consiste à additionner séparément les numérateurs et
-les dénominateurs. Par exemple, $`1/3 + 1/3`$ ne donne pas $`2/6`$.
+les dénominateurs. Par exemple, 1/3 + 1/3 ne donne pas 2/6.
 
 Une bonne vérification consiste à revenir au sens : un tiers plus un
 tiers, cela fait deux tiers du même tout.
@@ -233,10 +233,9 @@ sera pénible.
 Une lettre représente un nombre ou une quantité variable. Elle n’est pas
 une abréviation mystérieuse à éliminer au plus vite.
 
-Comprendre que $`3x`$ signifie trois fois $`x`$, que deux expressions
-peuvent être égales pour certaines valeurs seulement et qu’une
-expression peut être transformée sans changer sa valeur prépare tout le
-lycée.
+Comprendre que 3x signifie trois fois x, que deux expressions peuvent
+être égales pour certaines valeurs seulement et qu’une expression peut
+être transformée sans changer sa valeur prépare tout le lycée.
 
 ### Géométrie et raisonnement
 
@@ -273,8 +272,8 @@ pour rendre un problème plus facile.
 
 #### Erreurs fréquentes
 
-- confondre $`x + x`$ et $`x \times x`$ ;
-- écrire $`2x^2`$ à la place de $`x^2 + x^2`$ sans comprendre pourquoi ;
+- confondre x + x et x \times x ;
+- écrire 2x^2 à la place de x^2 + x^2 sans comprendre pourquoi ;
 - distribuer un produit seulement au premier terme d’une parenthèse ;
 - oublier les signes.
 
@@ -447,7 +446,7 @@ Trois indicateurs sont particulièrement utiles :
 - ses erreurs viennent-elles du nouveau concept ou de bases anciennes ?
 
 Le troisième point évite de retravailler une heure les fonctions lorsque
-le vrai problème était simplement $`-3 \times -4`$.
+le vrai problème était simplement -3 \times -4.
 
 ## 1re générale — spécialité mathématiques
 

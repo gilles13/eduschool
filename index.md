@@ -1,10 +1,17 @@
 # Comprendre sa scolarité. Travailler les mathématiques.
 
+![edusch∞l Math — plusieurs chemins, différents points de vue, mêmes
+découvertes](identite/hero-eduschool-math.png)
+
+> **Apprendre → structurer → transmettre.**
+
 **eduschool** aide à comprendre la scolarité du collège au lycée et
 propose des outils pour travailler les mathématiques.
 
 Pas besoin de connaître l’architecture du package pour commencer.
-Choisissez simplement la porte qui vous ressemble le plus.
+Choisissez simplement la porte qui vous ressemble le plus. Le but est de
+disposer vite d’un support qui puisse être imprimé, lu sur tablette,
+envoyé et surtout discuté ensemble.
 
 ------------------------------------------------------------------------
 
@@ -115,3 +122,17 @@ mathématiques. Cette limite permet de conserver un outil cohérent,
 maintenable et utile.
 
 **Utiliser → comprendre → adapter → partager**
+
+------------------------------------------------------------------------
+
+## Le projet a aussi une histoire
+
+`eduschool` garde une trace de ce qui l’a fait évoluer, sans transformer
+la page d’accueil en autobiographie.
+
+**[Journal du projet
+→](https://gilles13.github.io/eduschool/articles/journal-du-projet.md)**
+· **[Livre d’or
+→](https://gilles13.github.io/eduschool/articles/livre-d-or.md)** ·
+**[Guide d’or
+→](https://gilles13.github.io/eduschool/articles/guide-d-or.md)**

@@ -170,7 +170,7 @@ knitr::kable(
 | parcoursup_nouveautes | orientation | nouveaute_id | 2 | 6 |
 | plateformes_admission | orientation | plateforme_id | 2 | 7 |
 | plateformes_caracteristiques | orientation | plateforme_id,caracteristique_id | 6 | 6 |
-| concepts_math | mathematiques | concept_id | 178 | 7 |
+| concepts_math | mathematiques | concept_id | 178 | 8 |
 | relations_concepts_math | mathematiques | relation_id | 120 | 6 |
 | concepts_items_math | mathematiques | concept_id,item_id | 379 | 3 |
 | methodes_math | mathematiques | methode_id | 120 | 6 |
