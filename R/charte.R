@@ -120,7 +120,7 @@ theme_eduschool = function(cycle_id = "NEUTRE", base_size = 11) {
   if (is.na(police) || !nzchar(police)) "cursive" else police
 }
 
-.dessiner_note_manuelle = function(texte, rotation = 0, cex = 1.05) {
+.dessiner_note_manuelle = function(texte, rotation = 0, cex = 1.35) {
   if (length(texte) != 1L || is.na(texte) || !nzchar(texte)) {
     return(invisible(NULL))
   }

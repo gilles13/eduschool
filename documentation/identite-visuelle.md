@@ -1,41 +1,89 @@
-# Identite visuelle eduschool
+# Identité visuelle eduschool Math
 
 ## Statut
 
-La version 0.12.x explore une identite plus riche sans figer le logo principal.
-Le logo historique reste la marque officielle tant qu'une nouvelle direction
-n'a pas ete choisie.
+À partir de la série 0.22.x, l'identité visuelle est assumée sous la signature
+**eduschool Math**.
 
-## Explorations archivees
+Le logo principal retenu est la piste de la **chouette posée sur les trois livres
+« Apprendre / Structurer / Transmettre »**, accompagnée du mot-symbole
+`eduschool Math`. Il doit rester lisible sur une page web, un PDF, une tablette
+ou un document imprimé.
 
-Les dix pistes generees sont conservees dans
-`documentation/identite/explorations-logo/` : compas, livre ouvert, parcours,
-equerre et regle, arbre des connaissances, idee, progression, chapeau, reseau
-et partage.
+Le grand paysage « plusieurs chemins » n'est pas un logo. C'est le **visuel
+manifeste** du projet : il sert aux pages de présentation et aux moments où il
+faut raconter la philosophie d'eduschool plutôt que simplement signer un
+support.
 
-Elles constituent une bibliotheque d'inspiration. Une piste peut etre abandonnee
-comme logo principal tout en restant utile comme pictogramme ou decoration.
+## Pourquoi ce choix ?
 
-## Pictogrammes actifs
+Le logo principal rassemble quatre idées sans exiger une légende :
 
-Les pictogrammes simplifies sont disponibles dans deux contextes :
+- apprendre ensemble ;
+- structurer ce que l'on comprend ;
+- transmettre ;
+- travailler réellement les mathématiques.
 
-- `pkgdown/assets/identite/` pour le site ;
-- `inst/figures/decorations/` pour les documents produits par le package.
+La chouette donne une présence au projet sans représenter un professeur ou un
+élève particulier. Les livres matérialisent le chemin **Apprendre → Structurer →
+Transmettre**. Les signes mathématiques rendent l'orientation actuelle du projet
+immédiatement visible.
 
-Les copies ont des usages differents : les premiers sont des actifs de build du
-site, les seconds sont installes avec le package et peuvent etre utilises par
-les moteurs de rendu.
+Le visuel manifeste ajoute ce que le logo ne peut pas raconter en petit :
+plusieurs chemins peuvent conduire vers une même compréhension. Une explication
+qui ne fonctionne pas n'est donc pas une impasse définitive.
 
-## Regles provisoires
+## Le mantra
 
-- le parcours est represente par le chemin et la progression ;
-- les mathematiques sont representees par le livre, pi, le compas et les outils
-  geometriques ;
-- le partage est represente par le livre ouvert et les elements qui se diffusent ;
-- les donnees et R sont representees par une progression graphique ;
-- la couleur de cycle reste reservee a l'identification scolaire dans les fiches ;
-- les decorations ne doivent jamais remplacer un libelle textuel.
+> **Ça ne marche pas ? Pas de panique. On essaie autrement.**
 
-L'objectif est de conserver une interface lisible meme sans les images et de
-faire des visuels un renfort de comprehension, pas une information indispensable.
+Une explication ne fonctionne pas ? On change d'exemple. Une représentation ne
+parle pas ? On en essaie une autre. Le chemin est bloqué ? On en prend un autre.
+Et on recommence.
+
+Ce mantra est la traduction pratique d'un principe plus général :
+
+> **eduschool ne remplace pas celui qui transmet. Il lui donne davantage de
+> moyens d'essayer.**
+
+## La Face B
+
+L'Éducation nationale utilise principalement Python pour faire découvrir la
+programmation aux élèves. eduschool est, lui, développé en R.
+
+Ce choix n'est pas présenté comme supérieur. Il constitue plutôt une **Face B** :
+un autre chemin pour fabriquer, explorer, représenter et transmettre les mêmes
+mathématiques.
+
+Cette idée dépasse R et Python. Définition ou intuition, calcul ou dessin,
+exercice ou discussion : lorsqu'un chemin ne porte pas ses fruits, le projet doit
+pouvoir en proposer un autre.
+
+## Explorations archivées
+
+Les pistes de logo sont conservées dans
+`documentation/identite/explorations-logo/`. Les dix explorations historiques y
+restent disponibles, auxquelles s'ajoutent :
+
+- `11-livre-eduschool-math.jpg` : livre ouvert et symboles mathématiques ;
+- `12-chouette-eduschool-math.jpg` : **logo principal retenu** ;
+- `13-manifeste-chemins.jpg` : **visuel manifeste retenu**.
+
+Une piste non retenue comme logo principal peut rester utile comme inspiration,
+pictogramme ou trace du chemin parcouru.
+
+## Fichiers actifs
+
+- `inst/figures/logo-eduschool-math.png` : logo installé avec le package ;
+- `man/figures/logo.png` : logo utilisé notamment par le README et pkgdown ;
+- `vignettes/figures/manifeste-eduschool-math.jpg` : grand visuel de présentation.
+
+## Règles simples
+
+- le logo signe ; le manifeste raconte ;
+- un visuel ne remplace jamais une explication ;
+- les couleurs et décorations ne doivent pas gêner l'impression ni la lecture
+  sur tablette ;
+- les documents pédagogiques doivent rester utilisables sans comprendre R ;
+- l'humour peut ouvrir une porte, jamais diminuer l'exigence mathématique ;
+- si une présentation ne fonctionne pas, **pas de panique : on essaie autrement**.

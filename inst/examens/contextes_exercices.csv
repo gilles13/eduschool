@@ -1,70 +1,70 @@
 contexte_id;famille_contexte;libelle;objet;action;acteur_ou_dispositif;produit_ou_service;unite_principale;genre_objet;objet_avec_indefini;objet_avec_article;contenu;contenu_avec_article;genre_contenu;verbe_flux_infinitif;verbe_flux_present;objet_pluriel;produit_avec_article;unite_singulier;unite_pluriel;acteur_avec_indefini;acteur_avec_article;contenant_singulier;contenant_pluriel;verbe_action_infinitif;verbe_action_present;nom_action;statut
-CTX_PISCINE_VIDANGE;STOCK_FLUX;Piscine et pompe;piscine;vider;pompe;eau;L;F;une piscine;la piscine;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
-CTX_CUVE_VIDANGE;STOCK_FLUX;Cuve et pompe;cuve;vider;pompe;eau;L;F;une cuve;la cuve;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
-CTX_CITERNE_VIDANGE;STOCK_FLUX;Citerne et pompe;citerne;vider;pompe;gazole;L;F;une citerne;la citerne;gazole;le gazole;M;pomper;pompe;;;;;;;;;;;;ACTIF
-CTX_BASSIN_VIDANGE;STOCK_FLUX;Bassin et pompe;bassin;vider;pompe;eau;L;M;un bassin;le bassin;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
-CTX_RESERVOIR_VIDANGE;STOCK_FLUX;Reservoir et pompe;reservoir;vider;pompe;fioul;L;M;un reservoir;le reservoir;fioul;le fioul;M;pomper;pompe;;;;;;;;;;;;ACTIF
-CTX_RECUPERATEUR_VIDANGE;STOCK_FLUX;Recuperateur d eau;recuperateur d eau;vider;pompe;eau;L;M;un recuperateur d eau;le recuperateur d eau;eau;l eau;F;evacuer;evacue;;;;;;;;;;;;ACTIF
-CTX_PARCELLE_GAZON;SURFACE_COUT;Parcelle a engazonner;parcelle;engazonner;entreprise;gazon;m2;;une parcelle;la parcelle;;;;;;parcelles;du gazon;;;;;;;engazonner;;engazonnement;ACTIF
-CTX_TERRAIN_GAZON;SURFACE_COUT;Terrain a engazonner;terrain;engazonner;entreprise;gazon;m2;;un terrain;le terrain;;;;;;terrains;du gazon;;;;;;;engazonner;;engazonnement;ACTIF
-CTX_ESPACE_PAILLAGE;SURFACE_COUT;Espace a pailler;espace paysager;recouvrir;entreprise;paillage;m2;;un espace paysager;l espace paysager;;;;;;espaces paysagers;du paillage;;;;;;;pailler;;paillage;ACTIF
-CTX_MASSIF_GRAVIER;SURFACE_COUT;Massif a couvrir de gravier;massif;recouvrir;entreprise;gravier;m2;;un massif;le massif;;;;;;massifs;du gravier;;;;;;;recouvrir;;couverture en gravier;ACTIF
-CTX_VOILE_TISSU;SURFACE_COUT;Voile triangulaire en tissu;voile triangulaire;fabriquer;atelier;tissu;m2;;un voile triangulaire;le voile triangulaire;;;;;;voiles triangulaires;du tissu;;;;;;;fabriquer;;tissu;ACTIF
-CTX_TARIF_PARKING;TARIFS;Parking;stationnement;utiliser;parking;forfait;euros;;;;;;;;;;;heure;heures;un parking;le parking;;;;;;ACTIF
-CTX_TARIF_VELO;TARIFS;Location de velo;velo;louer;service de location;location;euros;;;;;;;;;;;location;locations;un service de location;le service de location;;;;;;ACTIF
-CTX_TARIF_SPORT;TARIFS;Salle de sport;seance;utiliser;salle de sport;abonnement;euros;;;;;;;;;;;seance;seances;une salle de sport;la salle de sport;;;;;;ACTIF
-CTX_TARIF_LIVRAISON;TARIFS;Livraison;livraison;commander;service de livraison;service;euros;;;;;;;;;;;livraison;livraisons;un service de livraison;le service de livraison;;;;;;ACTIF
-CTX_TARIF_MUSEE;TARIFS;Visites;visite;effectuer;site culturel;billet;euros;;;;;;;;;;;visite;visites;un site culturel;le site culturel;;;;;;ACTIF
-CTX_DATA_VELO;DONNEES;Trajets a velo;trajet a velo;compter;groupe;trajets;trajets;;;;;;;;;;;trajet a velo;trajets a velo;;;;;;;;ACTIF
-CTX_DATA_LECTURE;DONNEES;Pages lues;page;lire;eleve;lecture;pages;;;;;;;;;;;page lue;pages lues;;;;;;;;ACTIF
-CTX_DATA_SPORT;DONNEES;Seances de sport;seance;effectuer;groupe;sport;seances;;;;;;;;;;;seance de sport;seances de sport;;;;;;;;ACTIF
-CTX_DATA_BUS;DONNEES;Voyages en bus;voyage;effectuer;groupe;transport;voyages;;;;;;;;;;;voyage en bus;voyages en bus;;;;;;;;ACTIF
-CTX_DATA_EXERCICES;DONNEES;Exercices resolus;exercice;resoudre;eleve;travail;exercices;;;;;;;;;;;exercice resolu;exercices resolus;;;;;;;;ACTIF
-CTX_ALGO_SCORE;PROGRAMME_CALCUL;Calcul d un score;score;calculer;programme Scratch;score;points;;;;;;;;;;;;;un programme Scratch;le programme Scratch;;;calculer;calcule;;ACTIF
-CTX_ALGO_JEU;PROGRAMME_CALCUL;Jeu de nombres;nombre;transformer;programme Scratch;resultat;unites;;;;;;;;;;;;;un jeu de nombres;le jeu de nombres;;;transformer;transforme;;ACTIF
-CTX_ALGO_MACHINE;PROGRAMME_CALCUL;Machine a nombres;nombre;transformer;machine;sortie;unites;;;;;;;;;;;;;une machine a nombres;la machine a nombres;;;transformer;transforme;;ACTIF
-CTX_ALGO_DEFI;PROGRAMME_CALCUL;Defi de calcul;nombre;transformer;programme;resultat;unites;;;;;;;;;;;;;un programme;le programme;;;transformer;transforme;;ACTIF
-CTX_OMBRE_ARBRE;THALES_OMBRES;Ombre d un arbre;arbre;mesurer;baton;hauteur;m;;un arbre;l arbre;;;;;;;;;;;;;;;;;ACTIF
-CTX_OMBRE_POTEAU;THALES_OMBRES;Ombre d un poteau;poteau;mesurer;baton;hauteur;m;;un poteau;le poteau;;;;;;;;;;;;;;;;;ACTIF
-CTX_OMBRE_BATIMENT;THALES_OMBRES;Ombre d un batiment;batiment;mesurer;baton;hauteur;m;;un batiment;le batiment;;;;;;;;;;;;;;;;;ACTIF
-CTX_OMBRE_PHARE;THALES_OMBRES;Ombre d un phare;phare;mesurer;baton;hauteur;m;;un phare;le phare;;;;;;;;;;;;;;;;;ACTIF
-CTX_OMBRE_MAT;THALES_OMBRES;Ombre d un mat;mat;mesurer;baton;hauteur;m;;un mat;le mat;;;;;;;;;;;;;;;;;ACTIF
-CTX_LOTS_JETONS;LOTS;Sachets de jetons;jetons;repartir;association;sachets;jetons;;;;;;;;;;;jeton;jetons;;;sachet;sachets;;;;ACTIF
-CTX_LOTS_TICKETS;LOTS;Carnets de tickets;tickets;repartir;association;carnets;tickets;;;;;;;;;;;ticket;tickets;;;carnet;carnets;;;;ACTIF
-CTX_LOTS_CARTES;LOTS;Paquets de cartes;cartes;repartir;club;paquets;cartes;;;;;;;;;;;carte;cartes;;;paquet;paquets;;;;ACTIF
-CTX_LOTS_BADGES;LOTS;Lots de badges;badges;repartir;association;lots;badges;;;;;;;;;;;badge;badges;;;lot;lots;;;;ACTIF
-CTX_LOTS_BRACELETS;LOTS;Lots de bracelets numerotes;bracelets;repartir;club;lots;bracelets;;;;;;;;;;;bracelet;bracelets;;;lot;lots;;;;ACTIF
-CTX_EVOL_VETEMENT;EVOLUTION_PRIX;Vetement en promotion;vetement;acheter;magasin;article;euros;;un vetement;le vetement;;;;;;;;;;;;;;;;;ACTIF
-CTX_EVOL_VELO;EVOLUTION_PRIX;Velo en promotion;velo;acheter;magasin;article;euros;;un velo;le velo;;;;;;;;;;;;;;;;;ACTIF
-CTX_EVOL_BILLET;EVOLUTION_PRIX;Billet et remise;billet;acheter;billetterie;billet;euros;;un billet;le billet;;;;;;;;;;;;;;;;;ACTIF
-CTX_EVOL_MATERIEL;EVOLUTION_PRIX;Materiel sportif;materiel sportif;acheter;magasin;article;euros;;un materiel sportif;le materiel sportif;;;;;;;;;;;;;;;;;ACTIF
-CTX_EVOL_ABONNEMENT;EVOLUTION_PRIX;Abonnement;abonnement;souscrire;service;abonnement;euros;;un abonnement;l abonnement;;;;;;;;;;;;;;;;;ACTIF
-CTX_COUV_MUR_PEINTURE;COUVERTURE_SURFACE;Mur a peindre;mur;peindre;;peinture;m2;;un mur;le mur;;;;;;murs;de la peinture;;;;;pot;pots;peindre;;peinture;ACTIF
-CTX_COUV_SOL_CARRELAGE;COUVERTURE_SURFACE;Sol a carreler;sol;carreler;;carrelage;m2;;un sol;le sol;;;;;;sols;du carrelage;;;;;boite;boites;carreler;;carrelage;ACTIF
-CTX_COUV_TERRASSE_DALLES;COUVERTURE_SURFACE;Terrasse a couvrir de dalles;terrasse;daller;;dalles;m2;;une terrasse;la terrasse;;;;;;terrasses;des dalles;;;;;paquet;paquets;daller;;pose de dalles;ACTIF
-CTX_COUV_FACADE_ENDUIT;COUVERTURE_SURFACE;Facade a enduire;facade;enduire;;enduit;m2;;une facade;la facade;;;;;;facades;de l enduit;;;;;sac;sacs;enduire;;enduit;ACTIF
-CTX_COUV_PLAFOND_PEINTURE;COUVERTURE_SURFACE;Plafond a peindre;plafond;peindre;;peinture;m2;;un plafond;le plafond;;;;;;plafonds;de la peinture;;;;;pot;pots;peindre;;peinture;ACTIF
-CTX_VIT_VELO;VITESSE_DISTANCE;Trajet a velo;velo;;;;;;;;;;;;;;;;;un cycliste;un cycliste;;;;;;ACTIF
-CTX_VIT_BUS;VITESSE_DISTANCE;Trajet en bus;bus;;;;;;;;;;;;;;;;;un bus;un bus;;;;;;ACTIF
-CTX_VIT_TRAIN;VITESSE_DISTANCE;Trajet en train;train;;;;;;;;;;;;;;;;;un train;un train;;;;;;ACTIF
-CTX_VIT_BATEAU;VITESSE_DISTANCE;Trajet en bateau;bateau;;;;;;;;;;;;;;;;;un bateau;un bateau;;;;;;ACTIF
-CTX_ECH_CARTE_RANDO;ECHELLE_DISTANCE;Carte de randonnee;carte de randonnee;;;;;;une carte de randonnee;la carte de randonnee;;;;;;;;;;;;;;;;;ACTIF
-CTX_ECH_PLAN_VILLE;ECHELLE_DISTANCE;Plan de ville;plan de ville;;;;;;un plan de ville;le plan de ville;;;;;;;;;;;;;;;;;ACTIF
-CTX_ECH_CARTE_ROUTIERE;ECHELLE_DISTANCE;Carte routiere;carte routiere;;;;;;une carte routiere;la carte routiere;;;;;;;;;;;;;;;;;ACTIF
-CTX_ECH_PLAN_PARC;ECHELLE_DISTANCE;Plan d un parc;plan du parc;;;;;;un plan de parc;le plan du parc;;;;;;;;;;;;;;;;;ACTIF
-CTX_VOL_PISCINE;VOLUME_COUT;Remplissage d une piscine;piscine;;;;;;une piscine;la piscine;eau;l eau;;;;;;;;;;;;;;;ACTIF
-CTX_VOL_BASSIN;VOLUME_COUT;Remplissage d un bassin;bassin;;;;;;un bassin;le bassin;eau;l eau;;;;;;;;;;;;;;;ACTIF
-CTX_VOL_RESERVOIR;VOLUME_COUT;Remplissage d un reservoir;reservoir;;;;;;un reservoir;le reservoir;eau;l eau;;;;;;;;;;;;;;;ACTIF
-CTX_VOL_BAC;VOLUME_COUT;Remplissage d un bac;bac;;;;;;un bac;le bac;eau;l eau;;;;;;;;;;;;;;;ACTIF
-CTX_REC_CREPE;RECETTE_PROPORTION;Recette de crepes;crepes;;;farine;;;;la recette de crepes;lait;;;;;;;;;;;;;;;;ACTIF
-CTX_REC_GAUFRE;RECETTE_PROPORTION;Recette de gaufres;gaufres;;;farine;;;;la recette de gaufres;lait;;;;;;;;;;;;;;;;ACTIF
-CTX_REC_PAIN;RECETTE_PROPORTION;Recette de petits pains;petits pains;;;farine;;;;la recette de petits pains;eau;;;;;;;;;;;;;;;;ACTIF
-CTX_REC_SOUPE;RECETTE_PROPORTION;Recette de soupe;soupe;;;legumes;;;;la recette de soupe;bouillon;;;;;;;;;;;;;;;;ACTIF
-CTX_PCT_CLUB;EFFECTIF_PROBA;Membres d un club;une activite sportive;participent a une competition;;;;;;;;;;;;;;;;;les membres du club;;;;;;ACTIF
-CTX_PCT_COLLEGE;EFFECTIF_PROBA;Eleves d un college;un atelier;participent a une sortie;;;;;;;;;;;;;;;;;les eleves du college;;;;;;ACTIF
-CTX_PCT_ASSOC;EFFECTIF_PROBA;Adherents d une association;une activite;participent a un evenement;;;;;;;;;;;;;;;;;les adherents de l association;;;;;;ACTIF
-CTX_PCT_ENQUETE;EFFECTIF_PROBA;Participants a une enquete;une option;choisissent aussi une seconde option;;;;;;;;;;;;;;;;;les participants a l enquete;;;;;;ACTIF
-CTX_TRIGO_RAMPE;PYTH_TRIGO;Rampe d acces;rampe;;;;;;une rampe;la rampe;;;;;;;;;;;;;;;;;ACTIF
-CTX_TRIGO_ECHELLE;PYTH_TRIGO;Echelle contre un mur;echelle;;;;;;une echelle;l echelle;;;;;;;;;;;;;;;;;ACTIF
-CTX_TRIGO_CABLE;PYTH_TRIGO;Cable tendu;cable;;;;;;un cable;le cable;;;;;;;;;;;;;;;;;ACTIF
-CTX_TRIGO_HAUBAN;PYTH_TRIGO;Hauban;hauban;;;;;;un hauban;le hauban;;;;;;;;;;;;;;;;;ACTIF
+CTX_PISCINE_VIDANGE;STOCK_FLUX;"Piscine et pompe";"piscine";"vider";"pompe";"eau";"L";F;"une piscine";"la piscine";"eau";"l eau";F;"evacuer";"evacue";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_CUVE_VIDANGE;STOCK_FLUX;"Cuve et pompe";"cuve";"vider";"pompe";"eau";"L";F;"une cuve";"la cuve";"eau";"l eau";F;"evacuer";"evacue";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_CITERNE_VIDANGE;STOCK_FLUX;"Citerne et pompe";"citerne";"vider";"pompe";"gazole";"L";F;"une citerne";"la citerne";"gazole";"le gazole";M;"pomper";"pompe";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_BASSIN_VIDANGE;STOCK_FLUX;"Bassin et pompe";"bassin";"vider";"pompe";"eau";"L";M;"un bassin";"le bassin";"eau";"l eau";F;"evacuer";"evacue";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_RESERVOIR_VIDANGE;STOCK_FLUX;"Reservoir et pompe";"reservoir";"vider";"pompe";"fioul";"L";M;"un reservoir";"le reservoir";"fioul";"le fioul";M;"pomper";"pompe";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_RECUPERATEUR_VIDANGE;STOCK_FLUX;"Recuperateur d eau";"recuperateur d eau";"vider";"pompe";"eau";"L";M;"un recuperateur d eau";"le recuperateur d eau";"eau";"l eau";F;"evacuer";"evacue";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_PARCELLE_GAZON;SURFACE_COUT;"Parcelle a engazonner";"parcelle";"engazonner";"entreprise";"gazon";"m2";;"une parcelle";"la parcelle";"";"";;"";"";"parcelles";"du gazon";"";"";"";"";"";"";"engazonner";"";"engazonnement";ACTIF
+CTX_TERRAIN_GAZON;SURFACE_COUT;"Terrain a engazonner";"terrain";"engazonner";"entreprise";"gazon";"m2";;"un terrain";"le terrain";"";"";;"";"";"terrains";"du gazon";"";"";"";"";"";"";"engazonner";"";"engazonnement";ACTIF
+CTX_ESPACE_PAILLAGE;SURFACE_COUT;"Espace a pailler";"espace paysager";"recouvrir";"entreprise";"paillage";"m2";;"un espace paysager";"l espace paysager";"";"";;"";"";"espaces paysagers";"du paillage";"";"";"";"";"";"";"pailler";"";"paillage";ACTIF
+CTX_MASSIF_GRAVIER;SURFACE_COUT;"Massif a couvrir de gravier";"massif";"recouvrir";"entreprise";"gravier";"m2";;"un massif";"le massif";"";"";;"";"";"massifs";"du gravier";"";"";"";"";"";"";"recouvrir";"";"couverture en gravier";ACTIF
+CTX_VOILE_TISSU;SURFACE_COUT;"Voile triangulaire en tissu";"voile triangulaire";"fabriquer";"atelier";"tissu";"m2";;"un voile triangulaire";"le voile triangulaire";"";"";;"";"";"voiles triangulaires";"du tissu";"";"";"";"";"";"";"fabriquer";"";"tissu";ACTIF
+CTX_TARIF_PARKING;TARIFS;"Parking";"stationnement";"utiliser";"parking";"forfait";"euros";;"";"";"";"";;"";"";"";"";"heure";"heures";"un parking";"le parking";"";"";"";"";"";ACTIF
+CTX_TARIF_VELO;TARIFS;"Location de velo";"velo";"louer";"service de location";"location";"euros";;"";"";"";"";;"";"";"";"";"location";"locations";"un service de location";"le service de location";"";"";"";"";"";ACTIF
+CTX_TARIF_SPORT;TARIFS;"Salle de sport";"seance";"utiliser";"salle de sport";"abonnement";"euros";;"";"";"";"";;"";"";"";"";"seance";"seances";"une salle de sport";"la salle de sport";"";"";"";"";"";ACTIF
+CTX_TARIF_LIVRAISON;TARIFS;"Livraison";"livraison";"commander";"service de livraison";"service";"euros";;"";"";"";"";;"";"";"";"";"livraison";"livraisons";"un service de livraison";"le service de livraison";"";"";"";"";"";ACTIF
+CTX_TARIF_MUSEE;TARIFS;"Visites";"visite";"effectuer";"site culturel";"billet";"euros";;"";"";"";"";;"";"";"";"";"visite";"visites";"un site culturel";"le site culturel";"";"";"";"";"";ACTIF
+CTX_DATA_VELO;DONNEES;"Trajets a velo";"trajet a velo";"compter";"groupe";"trajets";"trajets";;"";"";"";"";;"";"";"";"";"trajet a velo";"trajets a velo";"";"";"";"";"";"";"";ACTIF
+CTX_DATA_LECTURE;DONNEES;"Pages lues";"page";"lire";"eleve";"lecture";"pages";;"";"";"";"";;"";"";"";"";"page lue";"pages lues";"";"";"";"";"";"";"";ACTIF
+CTX_DATA_SPORT;DONNEES;"Seances de sport";"seance";"effectuer";"groupe";"sport";"seances";;"";"";"";"";;"";"";"";"";"seance de sport";"seances de sport";"";"";"";"";"";"";"";ACTIF
+CTX_DATA_BUS;DONNEES;"Voyages en bus";"voyage";"effectuer";"groupe";"transport";"voyages";;"";"";"";"";;"";"";"";"";"voyage en bus";"voyages en bus";"";"";"";"";"";"";"";ACTIF
+CTX_DATA_EXERCICES;DONNEES;"Exercices resolus";"exercice";"resoudre";"eleve";"travail";"exercices";;"";"";"";"";;"";"";"";"";"exercice resolu";"exercices resolus";"";"";"";"";"";"";"";ACTIF
+CTX_ALGO_SCORE;PROGRAMME_CALCUL;"Calcul d un score";"score";"calculer";"programme Scratch";"score";"points";;"";"";"";"";;"";"";"";"";"";"";"un programme Scratch";"le programme Scratch";"";"";"calculer";"calcule";"";ACTIF
+CTX_ALGO_JEU;PROGRAMME_CALCUL;"Jeu de nombres";"nombre";"transformer";"programme Scratch";"resultat";"unites";;"";"";"";"";;"";"";"";"";"";"";"un jeu de nombres";"le jeu de nombres";"";"";"transformer";"transforme";"";ACTIF
+CTX_ALGO_MACHINE;PROGRAMME_CALCUL;"Machine a nombres";"nombre";"transformer";"machine";"sortie";"unites";;"";"";"";"";;"";"";"";"";"";"";"une machine a nombres";"la machine a nombres";"";"";"transformer";"transforme";"";ACTIF
+CTX_ALGO_DEFI;PROGRAMME_CALCUL;"Defi de calcul";"nombre";"transformer";"programme";"resultat";"unites";;"";"";"";"";;"";"";"";"";"";"";"un programme";"le programme";"";"";"transformer";"transforme";"";ACTIF
+CTX_OMBRE_ARBRE;THALES_OMBRES;"Ombre d un arbre";"arbre";"mesurer";"baton";"hauteur";"m";;"un arbre";"l arbre";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_OMBRE_POTEAU;THALES_OMBRES;"Ombre d un poteau";"poteau";"mesurer";"baton";"hauteur";"m";;"un poteau";"le poteau";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_OMBRE_BATIMENT;THALES_OMBRES;"Ombre d un batiment";"batiment";"mesurer";"baton";"hauteur";"m";;"un batiment";"le batiment";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_OMBRE_PHARE;THALES_OMBRES;"Ombre d un phare";"phare";"mesurer";"baton";"hauteur";"m";;"un phare";"le phare";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_OMBRE_MAT;THALES_OMBRES;"Ombre d un mat";"mat";"mesurer";"baton";"hauteur";"m";;"un mat";"le mat";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_LOTS_JETONS;LOTS;"Sachets de jetons";"jetons";"repartir";"association";"sachets";"jetons";;"";"";"";"";;"";"";"";"";"jeton";"jetons";"";"";"sachet";"sachets";"";"";"";ACTIF
+CTX_LOTS_TICKETS;LOTS;"Carnets de tickets";"tickets";"repartir";"association";"carnets";"tickets";;"";"";"";"";;"";"";"";"";"ticket";"tickets";"";"";"carnet";"carnets";"";"";"";ACTIF
+CTX_LOTS_CARTES;LOTS;"Paquets de cartes";"cartes";"repartir";"club";"paquets";"cartes";;"";"";"";"";;"";"";"";"";"carte";"cartes";"";"";"paquet";"paquets";"";"";"";ACTIF
+CTX_LOTS_BADGES;LOTS;"Lots de badges";"badges";"repartir";"association";"lots";"badges";;"";"";"";"";;"";"";"";"";"badge";"badges";"";"";"lot";"lots";"";"";"";ACTIF
+CTX_LOTS_BRACELETS;LOTS;"Lots de bracelets numerotes";"bracelets";"repartir";"club";"lots";"bracelets";;"";"";"";"";;"";"";"";"";"bracelet";"bracelets";"";"";"lot";"lots";"";"";"";ACTIF
+CTX_EVOL_VETEMENT;EVOLUTION_PRIX;"Vetement en promotion";"vetement";"acheter";"magasin";"article";"euros";;"un vetement";"le vetement";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_EVOL_VELO;EVOLUTION_PRIX;"Velo en promotion";"velo";"acheter";"magasin";"article";"euros";;"un velo";"le velo";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_EVOL_BILLET;EVOLUTION_PRIX;"Billet et remise";"billet";"acheter";"billetterie";"billet";"euros";;"un billet";"le billet";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_EVOL_MATERIEL;EVOLUTION_PRIX;"Materiel sportif";"materiel sportif";"acheter";"magasin";"article";"euros";;"un materiel sportif";"le materiel sportif";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_EVOL_ABONNEMENT;EVOLUTION_PRIX;"Abonnement";"abonnement";"souscrire";"service";"abonnement";"euros";;"un abonnement";"l abonnement";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_COUV_MUR_PEINTURE;COUVERTURE_SURFACE;"Mur a peindre";"mur";"peindre";"";"peinture";"m2";;"un mur";"le mur";"";"";;"";"";"murs";"de la peinture";"";"";"";"";"pot";"pots";"peindre";"";"peinture";ACTIF
+CTX_COUV_SOL_CARRELAGE;COUVERTURE_SURFACE;"Sol a carreler";"sol";"carreler";"";"carrelage";"m2";;"un sol";"le sol";"";"";;"";"";"sols";"du carrelage";"";"";"";"";"boite";"boites";"carreler";"";"carrelage";ACTIF
+CTX_COUV_TERRASSE_DALLES;COUVERTURE_SURFACE;"Terrasse a couvrir de dalles";"terrasse";"daller";"";"dalles";"m2";;"une terrasse";"la terrasse";"";"";;"";"";"terrasses";"des dalles";"";"";"";"";"paquet";"paquets";"daller";"";"pose de dalles";ACTIF
+CTX_COUV_FACADE_ENDUIT;COUVERTURE_SURFACE;"Facade a enduire";"facade";"enduire";"";"enduit";"m2";;"une facade";"la facade";"";"";;"";"";"facades";"de l enduit";"";"";"";"";"sac";"sacs";"enduire";"";"enduit";ACTIF
+CTX_COUV_PLAFOND_PEINTURE;COUVERTURE_SURFACE;"Plafond a peindre";"plafond";"peindre";"";"peinture";"m2";;"un plafond";"le plafond";"";"";;"";"";"plafonds";"de la peinture";"";"";"";"";"pot";"pots";"peindre";"";"peinture";ACTIF
+CTX_VIT_VELO;VITESSE_DISTANCE;"Trajet a velo";"velo";"";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"un cycliste";"un cycliste";"";"";"";"";"";ACTIF
+CTX_VIT_BUS;VITESSE_DISTANCE;"Trajet en bus";"bus";"";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"un bus";"un bus";"";"";"";"";"";ACTIF
+CTX_VIT_TRAIN;VITESSE_DISTANCE;"Trajet en train";"train";"";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"un train";"un train";"";"";"";"";"";ACTIF
+CTX_VIT_BATEAU;VITESSE_DISTANCE;"Trajet en bateau";"bateau";"";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"un bateau";"un bateau";"";"";"";"";"";ACTIF
+CTX_ECH_CARTE_RANDO;ECHELLE_DISTANCE;"Carte de randonnee";"carte de randonnee";"";"";"";"";;"une carte de randonnee";"la carte de randonnee";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_ECH_PLAN_VILLE;ECHELLE_DISTANCE;"Plan de ville";"plan de ville";"";"";"";"";;"un plan de ville";"le plan de ville";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_ECH_CARTE_ROUTIERE;ECHELLE_DISTANCE;"Carte routiere";"carte routiere";"";"";"";"";;"une carte routiere";"la carte routiere";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_ECH_PLAN_PARC;ECHELLE_DISTANCE;"Plan d un parc";"plan du parc";"";"";"";"";;"un plan de parc";"le plan du parc";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_VOL_PISCINE;VOLUME_COUT;"Remplissage d une piscine";"piscine";"";"";"";"";;"une piscine";"la piscine";"eau";"l eau";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_VOL_BASSIN;VOLUME_COUT;"Remplissage d un bassin";"bassin";"";"";"";"";;"un bassin";"le bassin";"eau";"l eau";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_VOL_RESERVOIR;VOLUME_COUT;"Remplissage d un reservoir";"reservoir";"";"";"";"";;"un reservoir";"le reservoir";"eau";"l eau";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_VOL_BAC;VOLUME_COUT;"Remplissage d un bac";"bac";"";"";"";"";;"un bac";"le bac";"eau";"l eau";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_REC_CREPE;RECETTE_PROPORTION;"Recette de crepes";"crepes";"";"";"farine";"";;"";"la recette de crepes";"lait";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_REC_GAUFRE;RECETTE_PROPORTION;"Recette de gaufres";"gaufres";"";"";"farine";"";;"";"la recette de gaufres";"lait";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_REC_PAIN;RECETTE_PROPORTION;"Recette de petits pains";"petits pains";"";"";"farine";"";;"";"la recette de petits pains";"eau";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_REC_SOUPE;RECETTE_PROPORTION;"Recette de soupe";"soupe";"";"";"legumes";"";;"";"la recette de soupe";"bouillon";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_PCT_CLUB;EFFECTIF_PROBA;"Membres d un club";"une activite sportive";"participent a une competition";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"";"les membres du club";"";"";"";"";"";ACTIF
+CTX_PCT_COLLEGE;EFFECTIF_PROBA;"Eleves d un college";"un atelier";"participent a une sortie";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"";"les eleves du college";"";"";"";"";"";ACTIF
+CTX_PCT_ASSOC;EFFECTIF_PROBA;"Adherents d une association";"une activite";"participent a un evenement";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"";"les adherents de l association";"";"";"";"";"";ACTIF
+CTX_PCT_ENQUETE;EFFECTIF_PROBA;"Participants a une enquete";"une option";"choisissent aussi une seconde option";"";"";"";;"";"";"";"";;"";"";"";"";"";"";"";"les participants a l enquete";"";"";"";"";"";ACTIF
+CTX_TRIGO_RAMPE;PYTH_TRIGO;"Rampe d acces";"rampe";"";"";"";"";;"une rampe";"la rampe";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_TRIGO_ECHELLE;PYTH_TRIGO;"Echelle contre un mur";"echelle";"";"";"";"";;"une echelle";"l echelle";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_TRIGO_CABLE;PYTH_TRIGO;"Cable tendu";"cable";"";"";"";"";;"un cable";"le cable";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF
+CTX_TRIGO_HAUBAN;PYTH_TRIGO;"Hauban";"hauban";"";"";"";"";;"un hauban";"le hauban";"";"";;"";"";"";"";"";"";"";"";"";"";"";"";"";ACTIF

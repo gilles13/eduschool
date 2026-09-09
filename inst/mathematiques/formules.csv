@@ -1,72 +1,72 @@
 formule_id;concept_id;libelle;expression;conditions;niveau_id
-MATF_ARITH_TERME;MATC_SUITE_ARITH;Terme général d’une suite arithmétique;u_n = u_p + (n-p)r;Suite arithmétique de raison r.;1G
-MATF_GEOM_TERME;MATC_SUITE_GEOM;Terme général d’une suite géométrique;u_n = u_p q^(n-p);Suite géométrique de raison q.;1G
-MATF_GEOM_SOMME;MATC_SUITE_GEOM;Somme géométrique;1 + q + ... + q^n = (1-q^(n+1))/(1-q);q différent de 1.;1G
-MATF_DISCRIMINANT;MATC_DISCRIMINANT;Discriminant;Delta = b^2 - 4ac;Pour ax^2+bx+c avec a non nul.;1G
-MATF_TANGENTE;MATC_TANGENTE;Équation de tangente;y = f(a) + f’(a)(x-a);f dérivable en a.;1G
-MATF_APPROX;MATC_APPROX_LINEAIRE;Approximation linéaire;f(a+h) ~= f(a) + f’(a)h;h proche de 0 et f dérivable en a.;1G
-MATF_EXP_ADD;MATC_EXPONENTIELLE;Équation fonctionnelle;exp(x+y) = exp(x) exp(y);x et y réels.;1G
-MATF_PS_COS;MATC_PRODUIT_SCALAIRE;Produit scalaire et angle;u.v = ||u|| ||v|| cos(theta);Vecteurs non nuls pour interpréter theta.;1G
-MATF_PS_COORD;MATC_PRODUIT_SCALAIRE;Produit scalaire en coordonnées;u.v = x_u x_v + y_u y_v;Repère orthonormé.;1G
-MATF_PROBA_COND;MATC_PROBA_CONDITIONNELLE;Probabilité conditionnelle;P_A(B) = P(A inter B) / P(A);P(A) non nulle.;1G
-MATF_INDEP;MATC_INDEPENDANCE;Critère d’indépendance;P(A inter B) = P(A) P(B);Événements A et B.;1G
-MATF_ESPERANCE;MATC_ESPERANCE;Espérance discrète;E(X) = somme x_i p_i;Loi finie.;1G
-MATF_VARIANCE;MATC_VARIANCE;Formule de König-Huygens;V(X) = E(X^2) - E(X)^2;Variable aléatoire réelle finie.;1G
-MATF_ECART_TYPE;MATC_ECART_TYPE;Écart type;sigma(X) = sqrt(V(X));Variance définie.;1G
-MATF_TAUX_VAR;MATC_TAUX_VARIATION;Taux de variation entre a et b;(f(b)-f(a))/(b-a);a et b distincts et appartenant au domaine de f.;1G
-MATF_TAUX_LOCAL;MATC_NOMBRE_DERIVE;Taux de variation local;(f(a+h)-f(a))/h;"h non nul ; on étudie son comportement lorsque h tend vers 0.";1G
-MATF_D_CONST;MATC_FONCTION_DERIVEE;Dérivée d’une constante;(k)’ = 0;k réel.;1G
-MATF_D_ID;MATC_FONCTION_DERIVEE;Dérivée de la fonction identité;(x)’ = 1;Sur R.;1G
-MATF_D_X2;MATC_FONCTION_DERIVEE;Dérivée de la fonction carré;(x^2)’ = 2x;Sur R.;1G
-MATF_D_X3;MATC_FONCTION_DERIVEE;Dérivée de la fonction cube;(x^3)’ = 3x^2;Sur R.;1G
-MATF_D_SOMME;MATC_FONCTION_DERIVEE;Dérivée d’une somme;(f+g)’ = f’ + g’;f et g dérivables sur l’intervalle considéré.;1G
-MATF_D_SCALAIRE;MATC_FONCTION_DERIVEE;Dérivée d’un multiple;(kf)’ = k f’;k réel et f dérivable.;1G
-MATF_ARITH_REC;MATC_SUITE_ARITH;Récurrence arithmétique;u_(n+1) = u_n + r;Suite arithmétique de raison r.;1G
-MATF_ARITH_SOMME;MATC_SOMME_ARITH;Somme de termes consécutifs arithmétiques;S = N (premier terme + dernier terme) / 2;N est le nombre de termes effectivement additionnés.;1G
-MATF_ARITH_1_N;MATC_SOMME_ARITH;Somme des entiers de 1 à n;1 + 2 + ... + n = n(n+1)/2;n entier naturel.;1G
-MATF_GEOM_REC;MATC_SUITE_GEOM;Récurrence géométrique;u_(n+1) = q u_n;Suite géométrique de raison q.;1G
-MATF_GEOM_SOMME_P;MATC_SOMME_GEOM;Somme géométrique à partir d’un terme u_p;u_p + ... + u_(p+N-1) = u_p (1-q^N)/(1-q);q différent de 1 et N nombre de termes.;1G
-MATF_COEFF_TAUX;MATC_CROISSANCE_EXP_DISCRETE;Coefficient multiplicateur associé à un taux;q = 1 + t;t est le taux d’évolution écrit sous forme décimale.;1G
-MATF_SECOND_DISCR;MATC_DISCRIMINANT;Discriminant d’un trinôme;Delta = b^2 - 4ac;P(x)=ax^2+bx+c avec a non nul.;1G
-MATF_SECOND_RACINES2;MATC_RACINE_TRINOME;Deux racines réelles;"x_1 = (-b-sqrt(Delta))/(2a) ; x_2 = (-b+sqrt(Delta))/(2a)";Delta strictement positif.;1G
-MATF_SECOND_RACINE1;MATC_RACINE_TRINOME;Racine double;x_0 = -b/(2a);Delta nul.;1G
-MATF_SECOND_ALPHA;MATC_FORME_CANONIQUE;Abscisse du sommet;alpha = -b/(2a);P(x)=ax^2+bx+c.;1G
-MATF_SECOND_CANON;MATC_FORME_CANONIQUE;Forme canonique;P(x) = a(x-alpha)^2 + beta;a non nul.;1G
-MATF_PS_ANGLE;MATC_PRODUIT_SCALAIRE;Produit scalaire et angle;u.v = ||u|| ||v|| cos(theta);Vecteurs non nuls pour isoler le cosinus.;1G
-MATF_PS_NORME;MATC_NORME_VECTEUR;Norme en coordonnées;||u|| = sqrt(x_u^2 + y_u^2);Repère orthonormé.;1G
-MATF_PROBA_INDEP;MATC_INDEPENDANCE;Critère d’indépendance;P(A inter B) = P(A) P(B);Événements A et B.;1G
-MATF_PROBA_TOTALE;MATC_PROBA_TOTALES;Probabilités totales;P(B) = somme_i P(A_i) P_Ai(B);Les A_i forment une partition de l’univers.;1G
-MATF_VA_ESPERANCE;MATC_ESPERANCE;Espérance d’une loi finie;E(X) = somme_i x_i p_i;Variable aléatoire discrète de loi finie.;1G
-MATF_VA_VARIANCE;MATC_VARIANCE;Variance d’une loi finie;V(X) = E(X^2) - E(X)^2;Variable aléatoire discrète de loi finie.;1G
-MATF_VA_ECART;MATC_ECART_TYPE;Écart type;sigma(X) = sqrt(V(X));Variance non négative.;1G
-MATF_POURCENTAGE;MATC_POURCENTAGE;Appliquer un pourcentage;p % de x = (p/100) × x;p exprimé en pourcentage.;6E
-MATF_PERIM_CERCLE;MATC_PERIMETRE;Périmètre du cercle;P = 2πr = πd;r rayon et d diamètre du cercle.;6E
-MATF_AIRE_RECT;MATC_AIRE;Aire du rectangle;A = L × l;L et l exprimées dans la même unité de longueur.;6E
-MATF_VOLUME_PAVE;MATC_VOLUME;Volume du pavé droit;V = L × l × h;Dimensions exprimées dans la même unité de longueur.;6E
-MATF_PROBA_EQUIPROBA;MATC_PROBABILITE;Probabilité en équiprobabilité;P(A) = nombre de cas favorables / nombre de cas possibles;Issues élémentaires équiprobables.;6E
-MATF_PROP_COEFF;MATC_COEFFICIENT_PROPORTIONNALITE;Coefficient de proportionnalité;y = k × x;x et y sont deux grandeurs proportionnelles et k est constant.;5E
-MATF_DISTRIB;MATC_DISTRIBUTIVITE;Distributivité;k(a+b) = ka + kb;Nombres a, b et k dans le domaine de calcul considéré.;5E
-MATF_TRIANGLE_ANGLES;MATC_TRIANGLE;Somme des angles d’un triangle;A + B + C = 180°;A, B et C désignent les mesures des trois angles intérieurs.;5E
-MATF_NOTSCI;MATC_NOTATION_SCIENTIFIQUE;Notation scientifique;N = a × 10^n;1 ≤ |a| < 10 et n entier.;4E
-MATF_PYTH;MATC_PYTHAGORE;Théorème de Pythagore;c² = a² + b²;Dans un triangle rectangle, c est la longueur de l’hypoténuse.;4E
-MATF_COS;MATC_COSINUS;Cosinus;cos(α) = adjacent / hypoténuse;Angle aigu d’un triangle rectangle.;4E
-MATF_VOL_PYR;MATC_PYRAMIDE;Volume d’une pyramide;V = aire(base) × hauteur / 3;Hauteur perpendiculaire à la base.;4E
-MATF_VOL_CONE;MATC_CONE;Volume d’un cône;V = πr²h / 3;Cône de révolution de rayon r et hauteur h.;4E
-MATF_PROBA_CONTRAIRE;MATC_EVENEMENT_CONTRAIRE;Probabilité de l’événement contraire;P(non A) = 1 - P(A);A et non A sont des événements contraires.;4E
-MATF_DIFF_CARRES;MATC_IDENTITE_DIFFERENCE_CARRES;Différence de deux carrés;a² - b² = (a-b)(a+b);Pour tous nombres a et b.;3E
-MATF_FONC_LIN;MATC_FONCTION_LINEAIRE;Fonction linéaire;f(x) = ax;a est le coefficient de proportionnalité.;3E
-MATF_FONC_AFF;MATC_FONCTION_AFFINE;Fonction affine;f(x) = ax + b;a et b sont des nombres.;3E
-MATF_EVOL_HAUSSE;MATC_COEFFICIENT_MULTIPLICATEUR;Coefficient d’augmentation;CM = 1 + t;t est le taux d’évolution écrit sous forme décimale.;3E
-MATF_EVOL_BAISSE;MATC_COEFFICIENT_MULTIPLICATEUR;Coefficient de diminution;CM = 1 - t;t est le taux de diminution écrit sous forme décimale.;3E
-MATF_SIN;MATC_SINUS;Sinus;sin(α) = opposé / hypoténuse;Angle aigu d’un triangle rectangle.;3E
-MATF_TAN;MATC_TANGENTE_TRIGO;Tangente;tan(α) = opposé / adjacent;Angle aigu d’un triangle rectangle.;3E
-MATF_2GT_COMP;MATC_COMPLEMENTAIRE_ENSEMBLE;Complémentaire;A complémentaire = U \ A;A est inclus dans l’univers U.;2GT
-MATF_2GT_DROITE;MATC_EQUATION_DROITE;Équation réduite d’une droite;y = mx + p;Droite non verticale, m coefficient directeur.;2GT
-MATF_2GT_PENTE;MATC_COEFF_DIRECTEUR;Coefficient directeur;m = (y_B-y_A)/(x_B-x_A);A et B sont deux points distincts avec x_A != x_B.;2GT
-MATF_2GT_AFFINE;MATC_FONCTION_AFFINE;Fonction affine;f(x) = ax + b;a et b sont des réels.;2GT
-MATF_2GT_LINEAIRE;MATC_FONCTION_LINEAIRE;Fonction linéaire;f(x) = ax;a est un réel.;2GT
-MATF_2GT_EVOL;MATC_COEFFICIENT_MULTIPLICATEUR;Coefficient multiplicateur d’une évolution;CM = 1 + t;t est le taux algébrique écrit sous forme décimale.;2GT
-MATF_2GT_PROBA_COMP;MATC_EVENEMENT_CONTRAIRE;Probabilité du contraire;P(non A) = 1 - P(A);A est un événement.;2GT
-MATF_2GT_EQUIP;MATC_EQUIPROBABILITE;Probabilité en équiprobabilité;P(A) = Card(A) / Card(Omega);Les issues élémentaires sont équiprobables et l’univers est fini.;2GT
-MATF_2GT_SOMME;MATC_PROBABILITE;Somme des probabilités des issues;P(A) = somme des P(omega) pour omega dans A;A est réunion d’issues élémentaires incompatibles.;2GT
-MATF_2GT_FREQCOND;MATC_FREQUENCE_CONDITIONNELLE;Fréquence conditionnelle;f(A parmi B) = n(A et B) / n(B);La sous-population B est non vide.;2GT
+MATF_ARITH_TERME;MATC_SUITE_ARITH;"Terme général d’une suite arithmétique";"u_n = u_p + (n-p)r";"Suite arithmétique de raison r.";1G
+MATF_GEOM_TERME;MATC_SUITE_GEOM;"Terme général d’une suite géométrique";"u_n = u_p q^(n-p)";"Suite géométrique de raison q.";1G
+MATF_GEOM_SOMME;MATC_SUITE_GEOM;"Somme géométrique";"1 + q + ... + q^n = (1-q^(n+1))/(1-q)";"q différent de 1.";1G
+MATF_DISCRIMINANT;MATC_DISCRIMINANT;"Discriminant";"Delta = b^2 - 4ac";"Pour ax^2+bx+c avec a non nul.";1G
+MATF_TANGENTE;MATC_TANGENTE;"Équation de tangente";"y = f(a) + f’(a)(x-a)";"f dérivable en a.";1G
+MATF_APPROX;MATC_APPROX_LINEAIRE;"Approximation linéaire";"f(a+h) ~= f(a) + f’(a)h";"h proche de 0 et f dérivable en a.";1G
+MATF_EXP_ADD;MATC_EXPONENTIELLE;"Équation fonctionnelle";"exp(x+y) = exp(x) exp(y)";"x et y réels.";1G
+MATF_PS_COS;MATC_PRODUIT_SCALAIRE;"Produit scalaire et angle";"u.v = ||u|| ||v|| cos(theta)";"Vecteurs non nuls pour interpréter theta.";1G
+MATF_PS_COORD;MATC_PRODUIT_SCALAIRE;"Produit scalaire en coordonnées";"u.v = x_u x_v + y_u y_v";"Repère orthonormé.";1G
+MATF_PROBA_COND;MATC_PROBA_CONDITIONNELLE;"Probabilité conditionnelle";"P_A(B) = P(A inter B) / P(A)";"P(A) non nulle.";1G
+MATF_INDEP;MATC_INDEPENDANCE;"Critère d’indépendance";"P(A inter B) = P(A) P(B)";"Événements A et B.";1G
+MATF_ESPERANCE;MATC_ESPERANCE;"Espérance discrète";"E(X) = somme x_i p_i";"Loi finie.";1G
+MATF_VARIANCE;MATC_VARIANCE;"Formule de König-Huygens";"V(X) = E(X^2) - E(X)^2";"Variable aléatoire réelle finie.";1G
+MATF_ECART_TYPE;MATC_ECART_TYPE;"Écart type";"sigma(X) = sqrt(V(X))";"Variance définie.";1G
+MATF_TAUX_VAR;MATC_TAUX_VARIATION;"Taux de variation entre a et b";"(f(b)-f(a))/(b-a)";"a et b distincts et appartenant au domaine de f.";1G
+MATF_TAUX_LOCAL;MATC_NOMBRE_DERIVE;"Taux de variation local";"(f(a+h)-f(a))/h";"h non nul ; on étudie son comportement lorsque h tend vers 0.";1G
+MATF_D_CONST;MATC_FONCTION_DERIVEE;"Dérivée d’une constante";"(k)’ = 0";"k réel.";1G
+MATF_D_ID;MATC_FONCTION_DERIVEE;"Dérivée de la fonction identité";"(x)’ = 1";"Sur R.";1G
+MATF_D_X2;MATC_FONCTION_DERIVEE;"Dérivée de la fonction carré";"(x^2)’ = 2x";"Sur R.";1G
+MATF_D_X3;MATC_FONCTION_DERIVEE;"Dérivée de la fonction cube";"(x^3)’ = 3x^2";"Sur R.";1G
+MATF_D_SOMME;MATC_FONCTION_DERIVEE;"Dérivée d’une somme";"(f+g)’ = f’ + g’";"f et g dérivables sur l’intervalle considéré.";1G
+MATF_D_SCALAIRE;MATC_FONCTION_DERIVEE;"Dérivée d’un multiple";"(kf)’ = k f’";"k réel et f dérivable.";1G
+MATF_ARITH_REC;MATC_SUITE_ARITH;"Récurrence arithmétique";"u_(n+1) = u_n + r";"Suite arithmétique de raison r.";1G
+MATF_ARITH_SOMME;MATC_SOMME_ARITH;"Somme de termes consécutifs arithmétiques";"S = N (premier terme + dernier terme) / 2";"N est le nombre de termes effectivement additionnés.";1G
+MATF_ARITH_1_N;MATC_SOMME_ARITH;"Somme des entiers de 1 à n";"1 + 2 + ... + n = n(n+1)/2";"n entier naturel.";1G
+MATF_GEOM_REC;MATC_SUITE_GEOM;"Récurrence géométrique";"u_(n+1) = q u_n";"Suite géométrique de raison q.";1G
+MATF_GEOM_SOMME_P;MATC_SOMME_GEOM;"Somme géométrique à partir d’un terme u_p";"u_p + ... + u_(p+N-1) = u_p (1-q^N)/(1-q)";"q différent de 1 et N nombre de termes.";1G
+MATF_COEFF_TAUX;MATC_CROISSANCE_EXP_DISCRETE;"Coefficient multiplicateur associé à un taux";"q = 1 + t";"t est le taux d’évolution écrit sous forme décimale.";1G
+MATF_SECOND_DISCR;MATC_DISCRIMINANT;"Discriminant d’un trinôme";"Delta = b^2 - 4ac";"P(x)=ax^2+bx+c avec a non nul.";1G
+MATF_SECOND_RACINES2;MATC_RACINE_TRINOME;"Deux racines réelles";"x_1 = (-b-sqrt(Delta))/(2a) ; x_2 = (-b+sqrt(Delta))/(2a)";"Delta strictement positif.";1G
+MATF_SECOND_RACINE1;MATC_RACINE_TRINOME;"Racine double";"x_0 = -b/(2a)";"Delta nul.";1G
+MATF_SECOND_ALPHA;MATC_FORME_CANONIQUE;"Abscisse du sommet";"alpha = -b/(2a)";"P(x)=ax^2+bx+c.";1G
+MATF_SECOND_CANON;MATC_FORME_CANONIQUE;"Forme canonique";"P(x) = a(x-alpha)^2 + beta";"a non nul.";1G
+MATF_PS_ANGLE;MATC_PRODUIT_SCALAIRE;"Produit scalaire et angle";"u.v = ||u|| ||v|| cos(theta)";"Vecteurs non nuls pour isoler le cosinus.";1G
+MATF_PS_NORME;MATC_NORME_VECTEUR;"Norme en coordonnées";"||u|| = sqrt(x_u^2 + y_u^2)";"Repère orthonormé.";1G
+MATF_PROBA_INDEP;MATC_INDEPENDANCE;"Critère d’indépendance";"P(A inter B) = P(A) P(B)";"Événements A et B.";1G
+MATF_PROBA_TOTALE;MATC_PROBA_TOTALES;"Probabilités totales";"P(B) = somme_i P(A_i) P_Ai(B)";"Les A_i forment une partition de l’univers.";1G
+MATF_VA_ESPERANCE;MATC_ESPERANCE;"Espérance d’une loi finie";"E(X) = somme_i x_i p_i";"Variable aléatoire discrète de loi finie.";1G
+MATF_VA_VARIANCE;MATC_VARIANCE;"Variance d’une loi finie";"V(X) = E(X^2) - E(X)^2";"Variable aléatoire discrète de loi finie.";1G
+MATF_VA_ECART;MATC_ECART_TYPE;"Écart type";"sigma(X) = sqrt(V(X))";"Variance non négative.";1G
+MATF_POURCENTAGE;MATC_POURCENTAGE;"Appliquer un pourcentage";"p % de x = (p/100) × x";"p exprimé en pourcentage.";6E
+MATF_PERIM_CERCLE;MATC_PERIMETRE;"Périmètre du cercle";"P = 2πr = πd";"r rayon et d diamètre du cercle.";6E
+MATF_AIRE_RECT;MATC_AIRE;"Aire du rectangle";"A = L × l";"L et l exprimées dans la même unité de longueur.";6E
+MATF_VOLUME_PAVE;MATC_VOLUME;"Volume du pavé droit";"V = L × l × h";"Dimensions exprimées dans la même unité de longueur.";6E
+MATF_PROBA_EQUIPROBA;MATC_PROBABILITE;"Probabilité en équiprobabilité";"P(A) = nombre de cas favorables / nombre de cas possibles";"Issues élémentaires équiprobables.";6E
+MATF_PROP_COEFF;MATC_COEFFICIENT_PROPORTIONNALITE;"Coefficient de proportionnalité";"y = k × x";"x et y sont deux grandeurs proportionnelles et k est constant.";5E
+MATF_DISTRIB;MATC_DISTRIBUTIVITE;"Distributivité";"k(a+b) = ka + kb";"Nombres a, b et k dans le domaine de calcul considéré.";5E
+MATF_TRIANGLE_ANGLES;MATC_TRIANGLE;"Somme des angles d’un triangle";"A + B + C = 180°";"A, B et C désignent les mesures des trois angles intérieurs.";5E
+MATF_NOTSCI;MATC_NOTATION_SCIENTIFIQUE;"Notation scientifique";"N = a × 10^n";"1 ≤ |a| < 10 et n entier.";4E
+MATF_PYTH;MATC_PYTHAGORE;"Théorème de Pythagore";"c² = a² + b²";"Dans un triangle rectangle, c est la longueur de l’hypoténuse.";4E
+MATF_COS;MATC_COSINUS;"Cosinus";"cos(α) = adjacent / hypoténuse";"Angle aigu d’un triangle rectangle.";4E
+MATF_VOL_PYR;MATC_PYRAMIDE;"Volume d’une pyramide";"V = aire(base) × hauteur / 3";"Hauteur perpendiculaire à la base.";4E
+MATF_VOL_CONE;MATC_CONE;"Volume d’un cône";"V = πr²h / 3";"Cône de révolution de rayon r et hauteur h.";4E
+MATF_PROBA_CONTRAIRE;MATC_EVENEMENT_CONTRAIRE;"Probabilité de l’événement contraire";"P(non A) = 1 - P(A)";"A et non A sont des événements contraires.";4E
+MATF_DIFF_CARRES;MATC_IDENTITE_DIFFERENCE_CARRES;"Différence de deux carrés";"a² - b² = (a-b)(a+b)";"Pour tous nombres a et b.";3E
+MATF_FONC_LIN;MATC_FONCTION_LINEAIRE;"Fonction linéaire";"f(x) = ax";"a est le coefficient de proportionnalité.";3E
+MATF_FONC_AFF;MATC_FONCTION_AFFINE;"Fonction affine";"f(x) = ax + b";"a et b sont des nombres.";3E
+MATF_EVOL_HAUSSE;MATC_COEFFICIENT_MULTIPLICATEUR;"Coefficient d’augmentation";"CM = 1 + t";"t est le taux d’évolution écrit sous forme décimale.";3E
+MATF_EVOL_BAISSE;MATC_COEFFICIENT_MULTIPLICATEUR;"Coefficient de diminution";"CM = 1 - t";"t est le taux de diminution écrit sous forme décimale.";3E
+MATF_SIN;MATC_SINUS;"Sinus";"sin(α) = opposé / hypoténuse";"Angle aigu d’un triangle rectangle.";3E
+MATF_TAN;MATC_TANGENTE_TRIGO;"Tangente";"tan(α) = opposé / adjacent";"Angle aigu d’un triangle rectangle.";3E
+MATF_2GT_COMP;MATC_COMPLEMENTAIRE_ENSEMBLE;"Complémentaire";"A complémentaire = U \ A";"A est inclus dans l’univers U.";2GT
+MATF_2GT_DROITE;MATC_EQUATION_DROITE;"Équation réduite d’une droite";"y = mx + p";"Droite non verticale, m coefficient directeur.";2GT
+MATF_2GT_PENTE;MATC_COEFF_DIRECTEUR;"Coefficient directeur";"m = (y_B-y_A)/(x_B-x_A)";"A et B sont deux points distincts avec x_A != x_B.";2GT
+MATF_2GT_AFFINE;MATC_FONCTION_AFFINE;"Fonction affine";"f(x) = ax + b";"a et b sont des réels.";2GT
+MATF_2GT_LINEAIRE;MATC_FONCTION_LINEAIRE;"Fonction linéaire";"f(x) = ax";"a est un réel.";2GT
+MATF_2GT_EVOL;MATC_COEFFICIENT_MULTIPLICATEUR;"Coefficient multiplicateur d’une évolution";"CM = 1 + t";"t est le taux algébrique écrit sous forme décimale.";2GT
+MATF_2GT_PROBA_COMP;MATC_EVENEMENT_CONTRAIRE;"Probabilité du contraire";"P(non A) = 1 - P(A)";"A est un événement.";2GT
+MATF_2GT_EQUIP;MATC_EQUIPROBABILITE;"Probabilité en équiprobabilité";"P(A) = Card(A) / Card(Omega)";"Les issues élémentaires sont équiprobables et l’univers est fini.";2GT
+MATF_2GT_SOMME;MATC_PROBABILITE;"Somme des probabilités des issues";"P(A) = somme des P(omega) pour omega dans A";"A est réunion d’issues élémentaires incompatibles.";2GT
+MATF_2GT_FREQCOND;MATC_FREQUENCE_CONDITIONNELLE;"Fréquence conditionnelle";"f(A parmi B) = n(A et B) / n(B)";"La sous-population B est non vide.";2GT

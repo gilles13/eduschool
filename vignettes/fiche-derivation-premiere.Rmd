@@ -2,7 +2,7 @@
 title: "Dérivation — Première spécialité"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Dérivation - Première spécialité}
+  %\VignetteIndexEntry{Dérivation — Première spécialité}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -85,7 +85,7 @@ eduschool:::.dessiner_note_manuelle(
 e = tangente$erreurs
 e = e[e$erreur_id == "MATE_TANGENTE_POINT", , drop = FALSE]
 if (nrow(e)) {
-  cat("**", e$titre[[1]], ".** ", e$description[[1]], "\n\n", sep = "")
+  cat("**", e$libelle[[1]], "** - ", e$description[[1]], "\n\n", sep = "")
   cat("*Remédiation :* ", e$remediation[[1]], "\n", sep = "")
 }
 ```

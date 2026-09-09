@@ -75,6 +75,14 @@ Et lorsque l'essai ne fonctionne pas :
 
 > **L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
 
+Et lorsque l'on a fini par comprendre :
+
+> **Un savoir prend toute sa valeur lorsqu'il est partagé.**
+
+`eduschool` préfère donc une connaissance expliquée, discutée et transmise à un
+savoir conservé dans son coin. Comprendre est une étape. Aider quelqu'un d'autre
+à comprendre est déjà la suivante.
+
 # Les données
 
 Les données ne sont pas là pour faire joli.

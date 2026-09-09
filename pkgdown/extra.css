@@ -55,3 +55,14 @@
   object-fit: contain;
   margin-bottom: .5rem;
 }
+
+/* Visuel d'accueil edusch∞l Math */
+.eduschool-hero {
+  margin: 0 0 1.5rem 0;
+}
+
+.eduschool-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

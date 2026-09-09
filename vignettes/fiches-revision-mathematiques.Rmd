@@ -2,7 +2,7 @@
 title: "Fiches de révision – Mathématiques"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Fiches de révision - Mathématiques}
+  %\VignetteIndexEntry{Fiches de révision – Mathématiques}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

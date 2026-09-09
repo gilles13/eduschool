@@ -1,378 +1,379 @@
 table;colonne;type_stockage;type_semantique;role;nullable;description
-couverture;niveau;character;text;PK;non;
-couverture;themes;character;integer;;oui;
-couverture;capacites;character;integer;;oui;
-couverture;capacites_documentees;character;integer;;oui;
-couverture;couverture_capacites;character;decimal;;oui;
-notions;notion_id;character;identifier;PK;non;Identifiant stable d’une notion pédagogique
-notions;discipline_id;character;identifier;FK;oui;
-notions;libelle;character;text;;oui;
-notions;description;character;text;;oui;
-notions;document;character;text;;oui;Chemin relatif vers le rappel Markdown
-notions_capacites;notion_id;character;identifier;PK;non;FK vers notions
-notions_capacites;capacite_id;character;identifier;PK;non;FK vers programme_items de type CAPACITE
-notions_capacites;role;character;enum;;oui;
-prerequis;notion_id;character;identifier;PK;non;Notion qui nécessite le prérequis
-prerequis;prerequis_id;character;identifier;PK;non;FK vers la notion prérequise
-prerequis;importance;character;enum;;oui;
-prerequis;commentaire;character;text;;oui;
-sources_documentaires;source_doc_id;character;identifier;PK;non;
-sources_documentaires;libelle;character;text;;oui;
-sources_documentaires;url;character;url;;oui;
-sources_documentaires;type_source;character;text;;oui;
-enseignements_niveaux;niveau_id;character;identifier;PK;non;FK vers niveaux
-enseignements_niveaux;enseignement_id;character;identifier;PK;non;FK vers enseignements
-enseignements_niveaux;statut;character;enum;;oui;
-horaires;horaire_id;character;identifier;PK;non;Identifiant technique de la ligne horaire
-horaires;niveau_id;character;identifier;FK;oui;
-horaires;enseignement_id;character;identifier;FK;oui;
-horaires;volume;character;decimal;;oui;
-horaires;unite;character;enum;;oui;
-horaires;statut;character;enum;;oui;
-horaires;source_id;character;identifier;FK;oui;
-horaires;version_id;character;identifier;FK;oui;Version temporelle de la donnée
-horaires;serie_id;character;identifier;FK;oui;FK optionnelle vers series
-horaires;portee;character;enum;;oui;Portee de la ligne horaire : COMMUN, COMPLEMENT_SERIE ou GRILLE_SERIE
-offres_enseignements;offre_id;character;identifier;PK;non;Clé stable d’une offre d’enseignement pour un niveau et une série
-offres_enseignements;niveau_id;character;identifier;FK;oui;FK vers niveaux
-offres_enseignements;serie_id;character;identifier;FK;oui;FK vers series, vide pour les offres sans série
-offres_enseignements;enseignement_id;character;identifier;FK;oui;FK vers enseignements
-offres_enseignements;statut;character;enum;;oui;
-offres_enseignements;version_id;character;identifier;FK;oui;
-options;option_id;character;identifier;PK;non;Identifiant technique de l'option
-options;niveau_id;character;identifier;PK;non;
-options;enseignement_id;character;identifier;FK;oui;
-options;unite;character;enum;;oui;
-options;volume;character;decimal;;oui;
-options;libelle;character;text;;oui;
-options;source_id;character;identifier;FK;oui;
-modeles;modele_id;character;identifier;PK;non;
-modeles;libelle;character;text;;oui;
-modeles;generateur;character;text;;oui;
-modeles;niveaux;character;text;;oui;
-modeles;difficulte_min;character;integer;;oui;
-modeles;difficulte_max;character;integer;;oui;
-modeles;statut;character;enum;;oui;
-modeles_capacites;modele_id;character;identifier;PK;non;
-modeles_capacites;capacite_id;character;identifier;PK;non;
-sources;source_id;character;identifier;PK;non;Clé stable de la source documentaire
-sources;organisme;character;text;;oui;
-sources;type;character;enum;;oui;
-sources;titre;character;text;;oui;
-sources;reference;character;text;;oui;
-sources;date_publication;character;date;;oui;
-sources;url;character;url;;oui;
-sources;date_consultation;character;date;;oui;
-versions;version_id;character;identifier;PK;non;Identifiant de l'année scolaire de référence
-versions;libelle;character;text;;oui;
-versions;date_debut;character;date;;oui;
-versions;date_fin;character;date;;oui;
-programme_applications;programme_id;character;identifier;PK;non;Programme appliqué à un niveau
-programme_applications;niveau_id;character;identifier;PK;non;
-programme_applications;version_id;character;identifier;PK;non;
-programme_applications;date_debut;character;date;;oui;
-programme_applications;date_fin;character;date;;oui;
-programme_enseignements;programme_id;character;identifier;PK;non;FK vers programmes
-programme_enseignements;enseignement_id;character;identifier;PK;non;FK vers enseignements
-programme_items;item_id;character;identifier;PK;non;
-programme_items;programme_id;character;identifier;FK;oui;
-programme_items;parent_item_id;character;identifier;FK;oui;Lien hiérarchique vers l’item parent
-programme_items;niveau;character;text;;oui;
-programme_items;ordre;character;integer;;oui;
-programme_items;type;character;enum;;oui;Niveau de granularité : DOMAINE, THEME ou CAPACITE
-programme_items;libelle;character;text;;oui;
-programme_items;description;character;text;;oui;
-programme_items;source_id;character;identifier;FK;oui;
-programme_items_applications;programme_id;character;identifier;PK;non;
-programme_items_applications;item_id;character;identifier;PK;non;
-programme_items_applications;niveau_id;character;identifier;PK;non;
-programme_items_applications;version_id;character;identifier;PK;non;
-programmes;programme_id;character;identifier;PK;non;Identifiant technique du programme
-programmes;discipline_id;character;identifier;FK;oui;
-programmes;cycle_id;character;identifier;FK;oui;
-programmes;niveau_id;character;identifier;FK;oui;
-programmes;date_publication;character;date;;oui;
-programmes;source_id;character;identifier;FK;oui;
-cycles;cycle_id;character;identifier;PK;non;Identifiant du cycle pédagogique
-cycles;libelle;character;text;;oui;
-cycles;ordre;character;integer;;oui;
-disciplines;discipline_id;character;identifier;PK;non;Discipline de référence
-disciplines;libelle;character;text;;oui;
-enseignements;enseignement_id;character;identifier;PK;non;Enseignement concret proposé aux élèves
-enseignements;discipline_id;character;identifier;FK;oui;
-enseignements;libelle;character;text;;oui;
-enseignements;type;character;enum;;oui;
-niveaux;niveau_id;character;identifier;PK;non;Niveau national (6E, 5E, etc.)
-niveaux;libelle;character;text;;oui;
-niveaux;ordre;character;integer;;oui;
-niveaux;cycle_id;character;identifier;FK;oui;
-niveaux;voie_id;character;identifier;FK;oui;
-niveaux_series;niveau_id;character;identifier;PK;non;FK vers niveaux
-niveaux_series;serie_id;character;identifier;PK;non;FK vers series
-series;serie_id;character;identifier;PK;non;Série ou voie de spécialisation du lycée
-series;libelle;character;text;;oui;
-series;voie_id;character;identifier;FK;oui;
-voies;voie_id;character;identifier;PK;non;Voie de formation
-voies;libelle;character;text;;oui;
-voies;voie_parent_id;character;identifier;FK;oui;
-blocs;bloc_id;character;identifier;PK;non;
-blocs;fiche_id;character;identifier;FK;oui;
-blocs;ordre;character;integer;;oui;
-blocs;type;character;enum;;oui;
-blocs;titre;character;text;;oui;
-blocs;contenu;character;text;;oui;
-blocs;formule;character;text;;oui;
-blocs;illustration_id;character;identifier;;oui;
-familles;famille_id;character;identifier;PK;non;
-familles;libelle;character;text;;oui;
-familles;ordre;character;integer;;oui;
-fiche_notions;fiche_id;character;identifier;PK;non;
-fiche_notions;notion_id;character;identifier;PK;non;
-fiche_notions;ordre;character;integer;;oui;
-fiches;fiche_id;character;identifier;PK;non;
-fiches;niveau_id;character;identifier;FK;oui;
-fiches;famille_id;character;identifier;FK;oui;
-fiches;type;character;enum;;oui;
-fiches;titre;character;text;;oui;
-fiches;description;character;text;;oui;
-fiches;ordre;character;integer;;oui;
-ressources;ressource_id;character;identifier;PK;non;Identifiant stable de la ressource
-ressources;nom;character;text;;non;Nom public de la ressource
-ressources;organisme;character;text;;non;Organisme ou auteur responsable
-ressources;url;character;url;;non;Adresse principale de la ressource
-ressources;discipline_id;character;identifier;FK;non;Discipline principale
-ressources;description;character;text;;non;Description courte de la ressource
-ressources;gratuit;character;enum;;non;Acces gratuit a la ressource principale
-ressources;compte_requis;character;enum;;non;Compte necessaire pour l usage principal
-ressources;langue;character;code;;non;Langue principale
-ressources;date_verification;character;date;;non;Date de derniere verification du lien et de la description
-usages_ressources;usage_id;character;identifier;PK;non;Identifiant de l usage pedagogique
-usages_ressources;libelle;character;text;;non;Libelle de l usage
-usages_ressources;description;character;text;;non;Description de l usage
-usages_ressources;ordre;character;integer;;non;Ordre d affichage
-ressources_usages;ressource_id;character;identifier;PK,FK;non;Ressource concernee
-ressources_usages;usage_id;character;identifier;PK,FK;non;Usage associe
-ressources_niveaux;ressource_id;character;identifier;PK,FK;non;Ressource concernee
-ressources_niveaux;niveau_id;character;identifier;PK,FK;non;Niveau scolaire couvert
-parcours_noeuds;noeud_id;character;id;PK;non;
-parcours_noeuds;libelle;character;text;;non;
-parcours_noeuds;etape;character;integer;;non;
-parcours_noeuds;type;character;code;;non;
-parcours_noeuds;niveau_id;character;id;FK;oui;
-parcours_noeuds;serie_id;character;id;FK;oui;
-parcours_noeuds;filiere_id;character;id;;oui;
-parcours_noeuds;ordre;character;integer;;non;
-parcours_liens;lien_id;character;id;PK;non;
-parcours_liens;de;character;id;FK;non;
-parcours_liens;vers;character;id;FK;non;
-parcours_liens;libelle;character;text;;oui;
-parcours_liens;source_id;character;id;FK;non;
-postbac_filieres;filiere_id;character;id;PK;non;
-postbac_filieres;libelle;character;text;;non;
-postbac_filieres;categorie;character;code;;non;
-postbac_filieres;duree_min;character;integer;;non;
-postbac_filieres;duree_max;character;integer;;non;
-postbac_filieres;selectivite;character;code;;non;
-postbac_filieres;diplome;character;text;;oui;
-postbac_filieres;description;character;text;;non;
-postbac_filieres;source_id;character;id;FK;non;
-parcoursup_etapes;etape_id;character;id;PK;non;
-parcoursup_etapes;ordre;character;integer;;non;
-parcoursup_etapes;libelle;character;text;;non;
-parcoursup_etapes;description;character;text;;non;
-parcoursup_etapes;source_id;character;id;FK;non;
-parcoursup_campagnes;campagne_id;character;id;PK;non;
-parcoursup_campagnes;annee;character;integer;;non;
-parcoursup_campagnes;libelle;character;text;;non;
-parcoursup_campagnes;statut;character;code;;non;
-parcoursup_campagnes;source_id;character;id;FK;non;
-parcoursup_calendrier;evenement_id;character;id;PK;non;
-parcoursup_calendrier;campagne_id;character;id;FK;non;
-parcoursup_calendrier;etape_id;character;id;FK;non;
-parcoursup_calendrier;ordre;character;integer;;non;
-parcoursup_calendrier;date;character;date;;non;
-parcoursup_calendrier;libelle;character;text;;non;
-parcoursup_calendrier;description;character;text;;non;
-parcoursup_calendrier;source_id;character;id;FK;non;
-parcoursup_nouveautes;nouveaute_id;character;id;PK;non;
-parcoursup_nouveautes;campagne_id;character;id;FK;non;
-parcoursup_nouveautes;ordre;character;integer;;non;
-parcoursup_nouveautes;libelle;character;text;;non;
-parcoursup_nouveautes;description;character;text;;non;
-parcoursup_nouveautes;source_id;character;id;FK;non;
-plateformes_admission;plateforme_id;character;id;PK;non;
-plateformes_admission;libelle;character;text;;non;
-plateformes_admission;debut;character;integer;;non;
-plateformes_admission;fin;character;integer;;oui;
-plateformes_admission;statut;character;code;;non;
-plateformes_admission;description;character;text;;non;
-plateformes_admission;source_id;character;id;FK;non;
-plateformes_caracteristiques;plateforme_id;character;id;PK,FK;non;
-plateformes_caracteristiques;caracteristique_id;character;id;PK;non;
-plateformes_caracteristiques;ordre;character;integer;;non;
-plateformes_caracteristiques;libelle;character;text;;non;
-plateformes_caracteristiques;valeur;character;text;;non;
-plateformes_caracteristiques;source_id;character;id;FK;non;
-concepts_math;concept_id;character;identifier;PK;non;
-concepts_math;libelle;character;text;;non;
-concepts_math;definition;character;text;;non;
-concepts_math;domaine;character;code;;non;
-concepts_math;statut;character;code;;non;
-concepts_math;niveau_introduction;character;identifier;FK;non;
-concepts_math;programme_id;character;identifier;FK;non;
-relations_concepts_math;relation_id;character;identifier;PK;non;
-relations_concepts_math;concept_id;character;identifier;FK;non;
-relations_concepts_math;concept_lie_id;character;identifier;FK;non;
-relations_concepts_math;type_relation;character;code;;non;
-relations_concepts_math;importance;character;code;;non;
-relations_concepts_math;commentaire;character;text;;oui;
-concepts_items_math;concept_id;character;identifier;PK,FK;non;
-concepts_items_math;item_id;character;identifier;PK,FK;non;
-concepts_items_math;role;character;code;;non;
-methodes_math;methode_id;character;identifier;PK;non;
-methodes_math;libelle;character;text;;non;
-methodes_math;domaine;character;code;;non;
-methodes_math;concept_id;character;identifier;FK;non;
-methodes_math;demarche;character;text;;non;
-methodes_math;niveau_id;character;identifier;FK;non;
-formules_math;formule_id;character;identifier;PK;non;
-formules_math;concept_id;character;identifier;FK;non;
-formules_math;libelle;character;text;;non;
-formules_math;expression;character;text;;non;
-formules_math;conditions;character;text;;oui;
-formules_math;niveau_id;character;identifier;FK;non;
-erreurs_math;erreur_id;character;identifier;PK;non;
-erreurs_math;concept_id;character;identifier;FK;non;
-erreurs_math;libelle;character;text;;non;
-erreurs_math;description;character;text;;non;
-erreurs_math;remediation;character;text;;non;
-erreurs_math;niveau_id;character;identifier;FK;non;
-types_exercices_math;type_exercice_id;character;identifier;PK;non;
-types_exercices_math;libelle;character;text;;non;
-types_exercices_math;domaine;character;code;;non;
-types_exercices_math;concept_id;character;identifier;FK;non;
-types_exercices_math;objectif;character;text;;non;
-types_exercices_math;niveau_id;character;identifier;FK;non;
-types_exercices_math;difficulte;character;integer;;non;
-types_exercices_concepts_math;type_exercice_id;character;identifier;PK,FK;non;
-types_exercices_concepts_math;concept_id;character;identifier;PK,FK;non;
-types_exercices_concepts_math;role;character;code;;non;
-types_exercices_methodes_math;type_exercice_id;character;identifier;PK,FK;non;
-types_exercices_methodes_math;methode_id;character;identifier;PK,FK;non;
-types_exercices_methodes_math;role;character;code;;non;
-examens;examen_id;character;identifier;PK;non;
-examens;code;character;code;;non;
-examens;session;character;integer;;non;
-examens;libelle;character;text;;non;
-examens;serie;character;code;;non;
-examens;discipline_id;character;identifier;FK;non;
-examens;duree_minutes;character;integer;;non;
-examens;points;character;number;;non;
-examens;source_id;character;identifier;FK;non;
-examens;statut;character;code;;non;
-parties_examen;partie_id;character;identifier;PK;non;
-parties_examen;examen_id;character;identifier;FK;non;
-parties_examen;ordre;character;integer;;non;
-parties_examen;libelle;character;text;;non;
-parties_examen;type;character;code;;non;
-parties_examen;duree_minutes;character;integer;;non;
-parties_examen;points;character;number;;non;
-parties_examen;calculatrice;character;boolean;;non;
-parties_examen;justification;character;code;;non;
-parties_examen;copies_ramassees;character;boolean;;non;
-parties_examen;nb_items_min;character;integer;;non;
-parties_examen;nb_items_max;character;integer;;non;
-profils_examen;profil_id;character;identifier;PK;non;
-profils_examen;partie_id;character;identifier;FK;non;
-profils_examen;domaine;character;code;;non;
-profils_examen;support;character;code;;non;
-profils_examen;difficulte_min;character;integer;;non;
-profils_examen;difficulte_max;character;integer;;non;
-profils_examen;poids;character;number;;non;
-profils_examen;occurrences_min;character;integer;;non;
-profils_examen;occurrences_max;character;integer;;non;
-profils_examen;description;character;text;;non;
-profils_examen_concepts;profil_id;character;identifier;PK,FK;non;
-profils_examen_concepts;concept_id;character;identifier;PK,FK;non;
-profils_examen_concepts;role;character;code;;non;
-gabarits_exercices;gabarit_id;character;identifier;PK;non;
-gabarits_exercices;examen_code;character;code;;non;
-gabarits_exercices;partie_type;character;code;;non;
-gabarits_exercices;libelle;character;text;;non;
-gabarits_exercices;domaine;character;code;;non;
-gabarits_exercices;support;character;code;;non;
-gabarits_exercices;difficulte;character;integer;;non;
-gabarits_exercices;generateur_id;character;identifier;;non;
-gabarits_exercices;objectif;character;text;;non;
-gabarits_exercices;origine;character;code;;non;
-gabarits_exercices;source_id;character;identifier;FK;oui;
-gabarits_exercices;session_source;character;integer;;oui;
-gabarits_exercices;statut;character;code;;non;
-gabarits_exercices_concepts;gabarit_id;character;identifier;PK,FK;non;
-gabarits_exercices_concepts;concept_id;character;identifier;PK,FK;non;
-gabarits_exercices_concepts;role;character;code;;non;
-gabarits_parametres;gabarit_id;character;identifier;PK,FK;non;
-gabarits_parametres;parametre;character;identifier;PK;non;
-gabarits_parametres;type;character;code;;non;
-gabarits_parametres;minimum;character;number;;oui;
-gabarits_parametres;maximum;character;number;;oui;
-gabarits_parametres;valeurs;character;text;;oui;
-gabarits_parametres;description;character;text;;non;
-gabarits_exercices_composes;gabarit_compose_id;character;identifier;PK;non;
-gabarits_exercices_composes;examen_code;character;code;;non;
-gabarits_exercices_composes;partie_type;character;code;;non;
-gabarits_exercices_composes;libelle;character;text;;non;
-gabarits_exercices_composes;domaine;character;code;;non;
-gabarits_exercices_composes;support;character;code;;non;
-gabarits_exercices_composes;difficulte;character;integer;;non;
-gabarits_exercices_composes;generateur_id;character;identifier;;non;
-gabarits_exercices_composes;objectif;character;text;;non;
-gabarits_exercices_composes;origine;character;code;;non;
-gabarits_exercices_composes;source_id;character;identifier;FK;oui;
-gabarits_exercices_composes;session_source;character;integer;;oui;
-gabarits_exercices_composes;statut;character;code;;non;
-gabarits_exercices_questions;gabarit_compose_id;character;identifier;PK,FK;non;
-gabarits_exercices_questions;question_id;character;identifier;PK;non;
-gabarits_exercices_questions;ordre;character;integer;;non;
-gabarits_exercices_questions;libelle;character;text;;non;
-gabarits_exercices_questions;concept_id;character;identifier;FK;non;
-gabarits_exercices_questions;question_parent_id;character;identifier;;oui;
-gabarits_exercices_questions;points;character;number;;non;
-gabarits_exercices_questions;competence;character;code;;non;
-gabarits_exercices_ressources;gabarit_compose_id;character;identifier;PK,FK;non;
-gabarits_exercices_ressources;ressource_id;character;identifier;PK;non;
-gabarits_exercices_ressources;type;character;code;;non;
-gabarits_exercices_ressources;moteur;character;identifier;;non;
-gabarits_exercices_ressources;position;character;code;;non;
-contextes_exercices;contexte_id;character;identifier;PK;non;
-contextes_exercices;famille_contexte;character;code;;non;
-contextes_exercices;libelle;character;text;;non;
-contextes_exercices;objet;character;text;;non;
-contextes_exercices;action;character;text;;non;
-contextes_exercices;acteur_ou_dispositif;character;text;;non;
-contextes_exercices;produit_ou_service;character;text;;non;
-contextes_exercices;unite_principale;character;text;;non;
-contextes_exercices;genre_objet;character;code;;oui;
-contextes_exercices;objet_avec_indefini;character;text;;oui;
-contextes_exercices;objet_avec_article;character;text;;oui;
-contextes_exercices;contenu;character;text;;oui;
-contextes_exercices;contenu_avec_article;character;text;;oui;
-contextes_exercices;genre_contenu;character;code;;oui;
-contextes_exercices;verbe_flux_infinitif;character;text;;oui;
-contextes_exercices;verbe_flux_present;character;text;;oui;
-contextes_exercices;objet_pluriel;character;text;;oui;
-contextes_exercices;produit_avec_article;character;text;;oui;
-contextes_exercices;unite_singulier;character;text;;oui;
-contextes_exercices;unite_pluriel;character;text;;oui;
-contextes_exercices;acteur_avec_indefini;character;text;;oui;
-contextes_exercices;acteur_avec_article;character;text;;oui;
-contextes_exercices;contenant_singulier;character;text;;oui;
-contextes_exercices;contenant_pluriel;character;text;;oui;
-contextes_exercices;verbe_action_infinitif;character;text;;oui;
-contextes_exercices;verbe_action_present;character;text;;oui;
-contextes_exercices;nom_action;character;text;;oui;
-contextes_exercices;statut;character;code;;non;
-gabarits_exercices_contextes;gabarit_compose_id;character;identifier;PK,FK;non;
-gabarits_exercices_contextes;contexte_id;character;identifier;PK,FK;non;
-gabarits_exercices_contextes;poids;numeric;measure;;non;
-gabarits_exercices_contextes;statut;character;code;;non;
+couverture;niveau;character;text;PK;non;""
+couverture;themes;character;integer;;oui;""
+couverture;capacites;character;integer;;oui;""
+couverture;capacites_documentees;character;integer;;oui;""
+couverture;couverture_capacites;character;decimal;;oui;""
+notions;notion_id;character;identifier;PK;non;"Identifiant stable d’une notion pédagogique"
+notions;discipline_id;character;identifier;FK;oui;""
+notions;libelle;character;text;;oui;""
+notions;description;character;text;;oui;""
+notions;document;character;text;;oui;"Chemin relatif vers le rappel Markdown"
+notions_capacites;notion_id;character;identifier;PK;non;"FK vers notions"
+notions_capacites;capacite_id;character;identifier;PK;non;"FK vers programme_items de type CAPACITE"
+notions_capacites;role;character;enum;;oui;""
+prerequis;notion_id;character;identifier;PK;non;"Notion qui nécessite le prérequis"
+prerequis;prerequis_id;character;identifier;PK;non;"FK vers la notion prérequise"
+prerequis;importance;character;enum;;oui;""
+prerequis;commentaire;character;text;;oui;""
+sources_documentaires;source_doc_id;character;identifier;PK;non;""
+sources_documentaires;libelle;character;text;;oui;""
+sources_documentaires;url;character;url;;oui;""
+sources_documentaires;type_source;character;text;;oui;""
+enseignements_niveaux;niveau_id;character;identifier;PK;non;"FK vers niveaux"
+enseignements_niveaux;enseignement_id;character;identifier;PK;non;"FK vers enseignements"
+enseignements_niveaux;statut;character;enum;;oui;""
+horaires;horaire_id;character;identifier;PK;non;"Identifiant technique de la ligne horaire"
+horaires;niveau_id;character;identifier;FK;oui;""
+horaires;enseignement_id;character;identifier;FK;oui;""
+horaires;volume;character;decimal;;oui;""
+horaires;unite;character;enum;;oui;""
+horaires;statut;character;enum;;oui;""
+horaires;source_id;character;identifier;FK;oui;""
+horaires;version_id;character;identifier;FK;oui;"Version temporelle de la donnée"
+horaires;serie_id;character;identifier;FK;oui;"FK optionnelle vers series"
+horaires;portee;character;enum;;oui;"Portee de la ligne horaire : COMMUN, COMPLEMENT_SERIE ou GRILLE_SERIE"
+offres_enseignements;offre_id;character;identifier;PK;non;"Clé stable d’une offre d’enseignement pour un niveau et une série"
+offres_enseignements;niveau_id;character;identifier;FK;oui;"FK vers niveaux"
+offres_enseignements;serie_id;character;identifier;FK;oui;"FK vers series, vide pour les offres sans série"
+offres_enseignements;enseignement_id;character;identifier;FK;oui;"FK vers enseignements"
+offres_enseignements;statut;character;enum;;oui;""
+offres_enseignements;version_id;character;identifier;FK;oui;""
+options;option_id;character;identifier;PK;non;"Identifiant technique de l'option"
+options;niveau_id;character;identifier;PK;non;""
+options;enseignement_id;character;identifier;FK;oui;""
+options;unite;character;enum;;oui;""
+options;volume;character;decimal;;oui;""
+options;libelle;character;text;;oui;""
+options;source_id;character;identifier;FK;oui;""
+modeles;modele_id;character;identifier;PK;non;""
+modeles;libelle;character;text;;oui;""
+modeles;generateur;character;text;;oui;""
+modeles;niveaux;character;text;;oui;""
+modeles;difficulte_min;character;integer;;oui;""
+modeles;difficulte_max;character;integer;;oui;""
+modeles;statut;character;enum;;oui;""
+modeles_capacites;modele_id;character;identifier;PK;non;""
+modeles_capacites;capacite_id;character;identifier;PK;non;""
+sources;source_id;character;identifier;PK;non;"Clé stable de la source documentaire"
+sources;organisme;character;text;;oui;""
+sources;type;character;enum;;oui;""
+sources;titre;character;text;;oui;""
+sources;reference;character;text;;oui;""
+sources;date_publication;character;date;;oui;""
+sources;url;character;url;;oui;""
+sources;date_consultation;character;date;;oui;""
+versions;version_id;character;identifier;PK;non;"Identifiant de l'année scolaire de référence"
+versions;libelle;character;text;;oui;""
+versions;date_debut;character;date;;oui;""
+versions;date_fin;character;date;;oui;""
+programme_applications;programme_id;character;identifier;PK;non;"Programme appliqué à un niveau"
+programme_applications;niveau_id;character;identifier;PK;non;""
+programme_applications;version_id;character;identifier;PK;non;""
+programme_applications;date_debut;character;date;;oui;""
+programme_applications;date_fin;character;date;;oui;""
+programme_enseignements;programme_id;character;identifier;PK;non;"FK vers programmes"
+programme_enseignements;enseignement_id;character;identifier;PK;non;"FK vers enseignements"
+programme_items;item_id;character;identifier;PK;non;""
+programme_items;programme_id;character;identifier;FK;oui;""
+programme_items;parent_item_id;character;identifier;FK;oui;"Lien hiérarchique vers l’item parent"
+programme_items;niveau;character;text;;oui;""
+programme_items;ordre;character;integer;;oui;""
+programme_items;type;character;enum;;oui;"Niveau de granularité : DOMAINE, THEME ou CAPACITE"
+programme_items;libelle;character;text;;oui;""
+programme_items;description;character;text;;oui;""
+programme_items;source_id;character;identifier;FK;oui;""
+programme_items_applications;programme_id;character;identifier;PK;non;""
+programme_items_applications;item_id;character;identifier;PK;non;""
+programme_items_applications;niveau_id;character;identifier;PK;non;""
+programme_items_applications;version_id;character;identifier;PK;non;""
+programmes;programme_id;character;identifier;PK;non;"Identifiant technique du programme"
+programmes;discipline_id;character;identifier;FK;oui;""
+programmes;cycle_id;character;identifier;FK;oui;""
+programmes;niveau_id;character;identifier;FK;oui;""
+programmes;date_publication;character;date;;oui;""
+programmes;source_id;character;identifier;FK;oui;""
+cycles;cycle_id;character;identifier;PK;non;"Identifiant du cycle pédagogique"
+cycles;libelle;character;text;;oui;""
+cycles;ordre;character;integer;;oui;""
+disciplines;discipline_id;character;identifier;PK;non;"Discipline de référence"
+disciplines;libelle;character;text;;oui;""
+enseignements;enseignement_id;character;identifier;PK;non;"Enseignement concret proposé aux élèves"
+enseignements;discipline_id;character;identifier;FK;oui;""
+enseignements;libelle;character;text;;oui;""
+enseignements;type;character;enum;;oui;""
+niveaux;niveau_id;character;identifier;PK;non;"Niveau national (6E, 5E, etc.)"
+niveaux;libelle;character;text;;oui;""
+niveaux;ordre;character;integer;;oui;""
+niveaux;cycle_id;character;identifier;FK;oui;""
+niveaux;voie_id;character;identifier;FK;oui;""
+niveaux_series;niveau_id;character;identifier;PK;non;"FK vers niveaux"
+niveaux_series;serie_id;character;identifier;PK;non;"FK vers series"
+series;serie_id;character;identifier;PK;non;"Série ou voie de spécialisation du lycée"
+series;libelle;character;text;;oui;""
+series;voie_id;character;identifier;FK;oui;""
+voies;voie_id;character;identifier;PK;non;"Voie de formation"
+voies;libelle;character;text;;oui;""
+voies;voie_parent_id;character;identifier;FK;oui;""
+blocs;bloc_id;character;identifier;PK;non;""
+blocs;fiche_id;character;identifier;FK;oui;""
+blocs;ordre;character;integer;;oui;""
+blocs;type;character;enum;;oui;""
+blocs;titre;character;text;;oui;""
+blocs;contenu;character;text;;oui;""
+blocs;formule;character;text;;oui;""
+blocs;illustration_id;character;identifier;;oui;""
+familles;famille_id;character;identifier;PK;non;""
+familles;libelle;character;text;;oui;""
+familles;ordre;character;integer;;oui;""
+fiche_notions;fiche_id;character;identifier;PK;non;""
+fiche_notions;notion_id;character;identifier;PK;non;""
+fiche_notions;ordre;character;integer;;oui;""
+fiches;fiche_id;character;identifier;PK;non;""
+fiches;niveau_id;character;identifier;FK;oui;""
+fiches;famille_id;character;identifier;FK;oui;""
+fiches;type;character;enum;;oui;""
+fiches;titre;character;text;;oui;""
+fiches;description;character;text;;oui;""
+fiches;ordre;character;integer;;oui;""
+ressources;ressource_id;character;identifier;PK;non;"Identifiant stable de la ressource"
+ressources;nom;character;text;;non;"Nom public de la ressource"
+ressources;organisme;character;text;;non;"Organisme ou auteur responsable"
+ressources;url;character;url;;non;"Adresse principale de la ressource"
+ressources;discipline_id;character;identifier;FK;non;"Discipline principale"
+ressources;description;character;text;;non;"Description courte de la ressource"
+ressources;gratuit;character;enum;;non;"Acces gratuit a la ressource principale"
+ressources;compte_requis;character;enum;;non;"Compte necessaire pour l usage principal"
+ressources;langue;character;code;;non;"Langue principale"
+ressources;date_verification;character;date;;non;"Date de derniere verification du lien et de la description"
+usages_ressources;usage_id;character;identifier;PK;non;"Identifiant de l usage pedagogique"
+usages_ressources;libelle;character;text;;non;"Libelle de l usage"
+usages_ressources;description;character;text;;non;"Description de l usage"
+usages_ressources;ordre;character;integer;;non;"Ordre d affichage"
+ressources_usages;ressource_id;character;identifier;PK,FK;non;"Ressource concernee"
+ressources_usages;usage_id;character;identifier;PK,FK;non;"Usage associe"
+ressources_niveaux;ressource_id;character;identifier;PK,FK;non;"Ressource concernee"
+ressources_niveaux;niveau_id;character;identifier;PK,FK;non;"Niveau scolaire couvert"
+parcours_noeuds;noeud_id;character;id;PK;non;""
+parcours_noeuds;libelle;character;text;;non;""
+parcours_noeuds;etape;character;integer;;non;""
+parcours_noeuds;type;character;code;;non;""
+parcours_noeuds;niveau_id;character;id;FK;oui;""
+parcours_noeuds;serie_id;character;id;FK;oui;""
+parcours_noeuds;filiere_id;character;id;;oui;""
+parcours_noeuds;ordre;character;integer;;non;""
+parcours_liens;lien_id;character;id;PK;non;""
+parcours_liens;de;character;id;FK;non;""
+parcours_liens;vers;character;id;FK;non;""
+parcours_liens;libelle;character;text;;oui;""
+parcours_liens;source_id;character;id;FK;non;""
+postbac_filieres;filiere_id;character;id;PK;non;""
+postbac_filieres;libelle;character;text;;non;""
+postbac_filieres;categorie;character;code;;non;""
+postbac_filieres;duree_min;character;integer;;non;""
+postbac_filieres;duree_max;character;integer;;non;""
+postbac_filieres;selectivite;character;code;;non;""
+postbac_filieres;diplome;character;text;;oui;""
+postbac_filieres;description;character;text;;non;""
+postbac_filieres;source_id;character;id;FK;non;""
+parcoursup_etapes;etape_id;character;id;PK;non;""
+parcoursup_etapes;ordre;character;integer;;non;""
+parcoursup_etapes;libelle;character;text;;non;""
+parcoursup_etapes;description;character;text;;non;""
+parcoursup_etapes;source_id;character;id;FK;non;""
+parcoursup_campagnes;campagne_id;character;id;PK;non;""
+parcoursup_campagnes;annee;character;integer;;non;""
+parcoursup_campagnes;libelle;character;text;;non;""
+parcoursup_campagnes;statut;character;code;;non;""
+parcoursup_campagnes;source_id;character;id;FK;non;""
+parcoursup_calendrier;evenement_id;character;id;PK;non;""
+parcoursup_calendrier;campagne_id;character;id;FK;non;""
+parcoursup_calendrier;etape_id;character;id;FK;non;""
+parcoursup_calendrier;ordre;character;integer;;non;""
+parcoursup_calendrier;date;character;date;;non;""
+parcoursup_calendrier;libelle;character;text;;non;""
+parcoursup_calendrier;description;character;text;;non;""
+parcoursup_calendrier;source_id;character;id;FK;non;""
+parcoursup_nouveautes;nouveaute_id;character;id;PK;non;""
+parcoursup_nouveautes;campagne_id;character;id;FK;non;""
+parcoursup_nouveautes;ordre;character;integer;;non;""
+parcoursup_nouveautes;libelle;character;text;;non;""
+parcoursup_nouveautes;description;character;text;;non;""
+parcoursup_nouveautes;source_id;character;id;FK;non;""
+plateformes_admission;plateforme_id;character;id;PK;non;""
+plateformes_admission;libelle;character;text;;non;""
+plateformes_admission;debut;character;integer;;non;""
+plateformes_admission;fin;character;integer;;oui;""
+plateformes_admission;statut;character;code;;non;""
+plateformes_admission;description;character;text;;non;""
+plateformes_admission;source_id;character;id;FK;non;""
+plateformes_caracteristiques;plateforme_id;character;id;PK,FK;non;""
+plateformes_caracteristiques;caracteristique_id;character;id;PK;non;""
+plateformes_caracteristiques;ordre;character;integer;;non;""
+plateformes_caracteristiques;libelle;character;text;;non;""
+plateformes_caracteristiques;valeur;character;text;;non;""
+plateformes_caracteristiques;source_id;character;id;FK;non;""
+concepts_math;concept_id;character;identifier;PK;non;""
+concepts_math;libelle;character;text;;non;""
+concepts_math;definition;character;text;;non;""
+concepts_math;domaine;character;code;;non;""
+concepts_math;statut;character;code;;non;""
+concepts_math;niveau_introduction;character;identifier;FK;non;""
+concepts_math;programme_id;character;identifier;FK;non;""
+concepts_math;en_clair;character;text;;oui;"Reformulation pedagogique accessible de la definition de reference"
+relations_concepts_math;relation_id;character;identifier;PK;non;""
+relations_concepts_math;concept_id;character;identifier;FK;non;""
+relations_concepts_math;concept_lie_id;character;identifier;FK;non;""
+relations_concepts_math;type_relation;character;code;;non;""
+relations_concepts_math;importance;character;code;;non;""
+relations_concepts_math;commentaire;character;text;;oui;""
+concepts_items_math;concept_id;character;identifier;PK,FK;non;""
+concepts_items_math;item_id;character;identifier;PK,FK;non;""
+concepts_items_math;role;character;code;;non;""
+methodes_math;methode_id;character;identifier;PK;non;""
+methodes_math;libelle;character;text;;non;""
+methodes_math;domaine;character;code;;non;""
+methodes_math;concept_id;character;identifier;FK;non;""
+methodes_math;demarche;character;text;;non;""
+methodes_math;niveau_id;character;identifier;FK;non;""
+formules_math;formule_id;character;identifier;PK;non;""
+formules_math;concept_id;character;identifier;FK;non;""
+formules_math;libelle;character;text;;non;""
+formules_math;expression;character;text;;non;""
+formules_math;conditions;character;text;;oui;""
+formules_math;niveau_id;character;identifier;FK;non;""
+erreurs_math;erreur_id;character;identifier;PK;non;""
+erreurs_math;concept_id;character;identifier;FK;non;""
+erreurs_math;libelle;character;text;;non;""
+erreurs_math;description;character;text;;non;""
+erreurs_math;remediation;character;text;;non;""
+erreurs_math;niveau_id;character;identifier;FK;non;""
+types_exercices_math;type_exercice_id;character;identifier;PK;non;""
+types_exercices_math;libelle;character;text;;non;""
+types_exercices_math;domaine;character;code;;non;""
+types_exercices_math;concept_id;character;identifier;FK;non;""
+types_exercices_math;objectif;character;text;;non;""
+types_exercices_math;niveau_id;character;identifier;FK;non;""
+types_exercices_math;difficulte;character;integer;;non;""
+types_exercices_concepts_math;type_exercice_id;character;identifier;PK,FK;non;""
+types_exercices_concepts_math;concept_id;character;identifier;PK,FK;non;""
+types_exercices_concepts_math;role;character;code;;non;""
+types_exercices_methodes_math;type_exercice_id;character;identifier;PK,FK;non;""
+types_exercices_methodes_math;methode_id;character;identifier;PK,FK;non;""
+types_exercices_methodes_math;role;character;code;;non;""
+examens;examen_id;character;identifier;PK;non;""
+examens;code;character;code;;non;""
+examens;session;character;integer;;non;""
+examens;libelle;character;text;;non;""
+examens;serie;character;code;;non;""
+examens;discipline_id;character;identifier;FK;non;""
+examens;duree_minutes;character;integer;;non;""
+examens;points;character;number;;non;""
+examens;source_id;character;identifier;FK;non;""
+examens;statut;character;code;;non;""
+parties_examen;partie_id;character;identifier;PK;non;""
+parties_examen;examen_id;character;identifier;FK;non;""
+parties_examen;ordre;character;integer;;non;""
+parties_examen;libelle;character;text;;non;""
+parties_examen;type;character;code;;non;""
+parties_examen;duree_minutes;character;integer;;non;""
+parties_examen;points;character;number;;non;""
+parties_examen;calculatrice;character;boolean;;non;""
+parties_examen;justification;character;code;;non;""
+parties_examen;copies_ramassees;character;boolean;;non;""
+parties_examen;nb_items_min;character;integer;;non;""
+parties_examen;nb_items_max;character;integer;;non;""
+profils_examen;profil_id;character;identifier;PK;non;""
+profils_examen;partie_id;character;identifier;FK;non;""
+profils_examen;domaine;character;code;;non;""
+profils_examen;support;character;code;;non;""
+profils_examen;difficulte_min;character;integer;;non;""
+profils_examen;difficulte_max;character;integer;;non;""
+profils_examen;poids;character;number;;non;""
+profils_examen;occurrences_min;character;integer;;non;""
+profils_examen;occurrences_max;character;integer;;non;""
+profils_examen;description;character;text;;non;""
+profils_examen_concepts;profil_id;character;identifier;PK,FK;non;""
+profils_examen_concepts;concept_id;character;identifier;PK,FK;non;""
+profils_examen_concepts;role;character;code;;non;""
+gabarits_exercices;gabarit_id;character;identifier;PK;non;""
+gabarits_exercices;examen_code;character;code;;non;""
+gabarits_exercices;partie_type;character;code;;non;""
+gabarits_exercices;libelle;character;text;;non;""
+gabarits_exercices;domaine;character;code;;non;""
+gabarits_exercices;support;character;code;;non;""
+gabarits_exercices;difficulte;character;integer;;non;""
+gabarits_exercices;generateur_id;character;identifier;;non;""
+gabarits_exercices;objectif;character;text;;non;""
+gabarits_exercices;origine;character;code;;non;""
+gabarits_exercices;source_id;character;identifier;FK;oui;""
+gabarits_exercices;session_source;character;integer;;oui;""
+gabarits_exercices;statut;character;code;;non;""
+gabarits_exercices_concepts;gabarit_id;character;identifier;PK,FK;non;""
+gabarits_exercices_concepts;concept_id;character;identifier;PK,FK;non;""
+gabarits_exercices_concepts;role;character;code;;non;""
+gabarits_parametres;gabarit_id;character;identifier;PK,FK;non;""
+gabarits_parametres;parametre;character;identifier;PK;non;""
+gabarits_parametres;type;character;code;;non;""
+gabarits_parametres;minimum;character;number;;oui;""
+gabarits_parametres;maximum;character;number;;oui;""
+gabarits_parametres;valeurs;character;text;;oui;""
+gabarits_parametres;description;character;text;;non;""
+gabarits_exercices_composes;gabarit_compose_id;character;identifier;PK;non;""
+gabarits_exercices_composes;examen_code;character;code;;non;""
+gabarits_exercices_composes;partie_type;character;code;;non;""
+gabarits_exercices_composes;libelle;character;text;;non;""
+gabarits_exercices_composes;domaine;character;code;;non;""
+gabarits_exercices_composes;support;character;code;;non;""
+gabarits_exercices_composes;difficulte;character;integer;;non;""
+gabarits_exercices_composes;generateur_id;character;identifier;;non;""
+gabarits_exercices_composes;objectif;character;text;;non;""
+gabarits_exercices_composes;origine;character;code;;non;""
+gabarits_exercices_composes;source_id;character;identifier;FK;oui;""
+gabarits_exercices_composes;session_source;character;integer;;oui;""
+gabarits_exercices_composes;statut;character;code;;non;""
+gabarits_exercices_questions;gabarit_compose_id;character;identifier;PK,FK;non;""
+gabarits_exercices_questions;question_id;character;identifier;PK;non;""
+gabarits_exercices_questions;ordre;character;integer;;non;""
+gabarits_exercices_questions;libelle;character;text;;non;""
+gabarits_exercices_questions;concept_id;character;identifier;FK;non;""
+gabarits_exercices_questions;question_parent_id;character;identifier;;oui;""
+gabarits_exercices_questions;points;character;number;;non;""
+gabarits_exercices_questions;competence;character;code;;non;""
+gabarits_exercices_ressources;gabarit_compose_id;character;identifier;PK,FK;non;""
+gabarits_exercices_ressources;ressource_id;character;identifier;PK;non;""
+gabarits_exercices_ressources;type;character;code;;non;""
+gabarits_exercices_ressources;moteur;character;identifier;;non;""
+gabarits_exercices_ressources;position;character;code;;non;""
+contextes_exercices;contexte_id;character;identifier;PK;non;""
+contextes_exercices;famille_contexte;character;code;;non;""
+contextes_exercices;libelle;character;text;;non;""
+contextes_exercices;objet;character;text;;non;""
+contextes_exercices;action;character;text;;non;""
+contextes_exercices;acteur_ou_dispositif;character;text;;non;""
+contextes_exercices;produit_ou_service;character;text;;non;""
+contextes_exercices;unite_principale;character;text;;non;""
+contextes_exercices;genre_objet;character;code;;oui;""
+contextes_exercices;objet_avec_indefini;character;text;;oui;""
+contextes_exercices;objet_avec_article;character;text;;oui;""
+contextes_exercices;contenu;character;text;;oui;""
+contextes_exercices;contenu_avec_article;character;text;;oui;""
+contextes_exercices;genre_contenu;character;code;;oui;""
+contextes_exercices;verbe_flux_infinitif;character;text;;oui;""
+contextes_exercices;verbe_flux_present;character;text;;oui;""
+contextes_exercices;objet_pluriel;character;text;;oui;""
+contextes_exercices;produit_avec_article;character;text;;oui;""
+contextes_exercices;unite_singulier;character;text;;oui;""
+contextes_exercices;unite_pluriel;character;text;;oui;""
+contextes_exercices;acteur_avec_indefini;character;text;;oui;""
+contextes_exercices;acteur_avec_article;character;text;;oui;""
+contextes_exercices;contenant_singulier;character;text;;oui;""
+contextes_exercices;contenant_pluriel;character;text;;oui;""
+contextes_exercices;verbe_action_infinitif;character;text;;oui;""
+contextes_exercices;verbe_action_present;character;text;;oui;""
+contextes_exercices;nom_action;character;text;;oui;""
+contextes_exercices;statut;character;code;;non;""
+gabarits_exercices_contextes;gabarit_compose_id;character;identifier;PK,FK;non;""
+gabarits_exercices_contextes;contexte_id;character;identifier;PK,FK;non;""
+gabarits_exercices_contextes;poids;numeric;measure;;non;""
+gabarits_exercices_contextes;statut;character;code;;non;""

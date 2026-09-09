@@ -1,10 +1,14 @@
-# eduschool
+![edusch∞l Math — plusieurs chemins, différents points de vue, mêmes découvertes](man/figures/hero-eduschool-math.png)
+
+# edusch∞l Math
 
 <p align="center">
-  <img src="man/figures/logo.png" alt="Logo eduschool" width="360">
+  <img src="man/figures/logo.png" alt="Logo edusch∞l Math" width="360">
 </p>
 
 > **Comprendre sa scolarité. Travailler les mathématiques.**
+
+> **Ça ne marche pas ? Pas de panique. On essaie autrement.**
 
 `eduschool` cartographie la scolarité des collégiens et lycéens en France et
 propose des outils pour réviser et s'entraîner en mathématiques.
@@ -42,6 +46,19 @@ Le projet est donc collaboratif par nécessité autant que par choix. Enseignant
 parents, élèves, amateurs de mathématiques et utilisateurs de R peuvent corriger,
 expliquer, proposer des exercices, des représentations ou simplement signaler
 l'endroit exact où ils ont cessé de comprendre.
+
+### Une Face B assumée
+
+L'Éducation nationale a choisi Python pour initier les élèves à la programmation.
+`eduschool`, lui, est développé en R. Ce n'est pas une revendication de
+supériorité : c'est une **Face B**, un autre chemin pour essayer d'arriver au
+même endroit.
+
+Est-ce le meilleur choix technique ? Peut-être pas. Est-ce que cela permet de
+produire des fiches, des exercices, des graphiques et des discussions utiles ?
+C'est précisément ce que le projet cherche à vérifier.
+
+*Compte tenu du niveau du développeur, utilisation à vos risques et périls.*
 
 ## Installation
 

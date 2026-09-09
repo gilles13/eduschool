@@ -77,7 +77,13 @@ fonctionne pas ne doit pas être présenté comme un échec de l'apprenant. Une
 erreur peut révéler une définition trop rapide, un exemple insuffisant, un saut
 de raisonnement ou simplement la nécessité d'essayer une autre représentation.
 
-Ce principe en accompagne un autre :
+Ce principe en accompagne deux autres :
+
+> **Un savoir prend toute sa valeur lorsqu'il est partagé.**
+
+Comprendre n'est pas seulement accumuler une connaissance. `eduschool` valorise
+sa transmission : expliquer, documenter, discuter et partager ce qui a été
+appris afin que d'autres puissent à leur tour s'en emparer.
 
 > **Il n'existe pas une seule bonne façon d'apprendre.**
 
