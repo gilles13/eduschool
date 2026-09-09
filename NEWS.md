@@ -1,3 +1,12 @@
+# eduschool 0.24.1
+
+## Corrections
+
+* Ajout de la vignette « Maths & économie — Un prix est-il toujours
+  proportionnel à ce qu'on achète ? » à l'index des articles pkgdown.
+* Ajout de l'accès à la rubrique « Maths & économie » dans la navigation
+  du site.
+
 # eduschool 0.24.0
 
 - Supports de mathématiques

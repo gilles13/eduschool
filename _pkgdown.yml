@@ -36,6 +36,8 @@ navbar:
           href: articles/mathematiques-par-niveau.html
         - text: "Mathématiques & économie"
           href: articles/mathematiques-et-economie.html
+        - text: "Math & infini"
+          href: articles/infini_1_les_math_et_l_eco.html
 
         - text: -------
 
@@ -74,6 +76,7 @@ articles:
     contents:
       - mathematiques-par-niveau
       - mathematiques-et-economie
+      - infini_1_les_math_et_l_eco
       - examens-dnb
       - fiches-revision-mathematiques
       - approfondir-ses-connaissances-en-mathematiques
