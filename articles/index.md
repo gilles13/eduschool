@@ -23,6 +23,9 @@ Les principales portes d’entrée vers les ressources mathématiques.
   niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md):
 - [Mathématiques et économie : tous les problèmes sont
   relatifs](https://gilles13.github.io/eduschool/articles/mathematiques-et-economie.md):
+- [Maths & économie — Un prix est-il toujours proportionnel à ce qu'on
+  achète
+  ?](https://gilles13.github.io/eduschool/articles/infini_1_les_math_et_l_eco.md):
 - [Générer une épreuve de mathématiques du
   DNB](https://gilles13.github.io/eduschool/articles/examens-dnb.md):
 - [Fiches de révision –

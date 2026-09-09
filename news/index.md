@@ -1,5 +1,98 @@
 # Changelog
 
+## eduschool 0.24.1
+
+### Corrections
+
+- Ajout de la vignette « Maths & économie — Un prix est-il toujours
+  proportionnel à ce qu’on achète ? » à l’index des articles pkgdown.
+- Ajout de l’accès à la rubrique « Maths & économie » dans la navigation
+  du site.
+
+## eduschool 0.24.0
+
+- Supports de mathématiques
+
+- Consolidation de render_math() afin de factoriser la production
+  technique des supports sans généraliser prématurément leur contenu
+  pédagogique.
+
+- Ajout du support « Pour aller plus loin » comme type général de
+  support mathématique.
+
+- Le concept Nombre premier dispose désormais d’un parcours complet :
+  fiche, exercices, corrigé et « Pour aller plus loin ».
+
+- Renforcement des tests de render_math() : les tests portent autant que
+  possible sur le contrat pédagogique et fonctionnel plutôt que sur les
+  détails du LaTeX généré.
+
+- Correction et sécurisation des exercices de comparaison de fractions :
+  la relation entre deux fractions de même dénominateur est désormais
+  calculée à partir de leurs numérateurs et vérifiée sur plusieurs
+  générations d’exercices.
+
+### Qualité des contenus
+
+- Extension du principe du triple zéro — 0 erreur, 0 warning, 0 note —
+  par un quatrième contrôle consacré à l’exactitude mathématique et
+  conceptuelle des supports.
+
+- Les contrôles automatisés sont progressivement complétés par des
+  invariants mathématiques lorsque ceux-ci peuvent être vérifiés par le
+  code.
+
+- Les supports pédagogiques restent soumis à une validation humaine pour
+  le sens, l’exactitude conceptuelle et la pertinence pédagogique.
+
+### Maths & économie
+
+- Première expérimentation de la rubrique Maths & économie, destinée à
+  partir de situations réelles et de données publiques pour mobiliser
+  les mathématiques et mieux comprendre le monde.
+
+- Ajout de la première fiche expérimentale : « Un prix est-il toujours
+  proportionnel à ce qu’on achète ? »
+
+- Introduction d’une progression éditoriale reliant question, données,
+  mathématiques, représentation graphique, interprétation et limites de
+  l’interprétation.
+
+- Première exploration de séries économiques réelles et sourcées,
+  notamment autour des prix de l’électricité.
+
+- Introduction des rubriques « Attention, piège ! » et « Une vérité peut
+  en cacher une autre » pour attirer l’attention sur les changements de
+  base, les ruptures de séries, les périodes d’observation et les
+  interprétations trompeuses.
+
+### Identité et exploration pédagogique
+
+- Développement du principe des portes vers l’infini : une notion peut
+  ouvrir vers une autre sans imposer à l’élève de poursuivre.
+
+- Premières explorations graphiques autour de la porte, du chemin, de la
+  curiosité et du symbole ∞.
+
+- Ajout d’un atelier visuel dans documentation/identite/portes-infini/,
+  sans figer à ce stade une nouvelle charte graphique.
+
+- Affirmation d’un principe pédagogique : comprendre peut être une
+  source de plaisir et de curiosité, et donner envie d’ouvrir la porte
+  suivante.
+
+### Maintenance
+
+- Correction de la documentation roxygen de render_math().
+
+- Nettoyage des caractères non ASCII présents dans R/render_math.R.
+
+- Exclusion des répertoires de production temporaires du package
+  construit.
+
+- Maintien d’un R CMD check sans erreur, warning ni note après
+  consolidation.
+
 ## eduschool 0.23.0
 
 - Finalisation de l’identité **edusch∞l Math** : visuel d’accueil,

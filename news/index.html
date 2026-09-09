@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.23.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.24.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +27,7 @@
     <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-et-economie.html">Mathématiques &amp; économie</a></li>
+    <li><a class="dropdown-item" href="../articles/infini_1_les_math_et_l_eco.html">Math &amp; infini</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaire</a></li>
     <li><hr class="dropdown-divider"></li>
@@ -50,6 +51,51 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.24.1" id="eduschool-0241">eduschool 0.24.1<a class="anchor" aria-label="anchor" href="#eduschool-0241"></a></h2>
+<div class="section level3">
+<h3 id="corrections-0-24-1">Corrections<a class="anchor" aria-label="anchor" href="#corrections-0-24-1"></a></h3>
+<ul><li>Ajout de la vignette « Maths &amp; économie — Un prix est-il toujours proportionnel à ce qu’on achète ? » à l’index des articles pkgdown.</li>
+<li>Ajout de l’accès à la rubrique « Maths &amp; économie » dans la navigation du site.</li>
+</ul></div>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.24.0" id="eduschool-0240">eduschool 0.24.0<a class="anchor" aria-label="anchor" href="#eduschool-0240"></a></h2>
+<ul><li><p>Supports de mathématiques</p></li>
+<li><p>Consolidation de render_math() afin de factoriser la production technique des supports sans généraliser prématurément leur contenu pédagogique.</p></li>
+<li><p>Ajout du support « Pour aller plus loin » comme type général de support mathématique.</p></li>
+<li><p>Le concept Nombre premier dispose désormais d’un parcours complet : fiche, exercices, corrigé et « Pour aller plus loin ».</p></li>
+<li><p>Renforcement des tests de render_math() : les tests portent autant que possible sur le contrat pédagogique et fonctionnel plutôt que sur les détails du LaTeX généré.</p></li>
+<li><p>Correction et sécurisation des exercices de comparaison de fractions : la relation entre deux fractions de même dénominateur est désormais calculée à partir de leurs numérateurs et vérifiée sur plusieurs générations d’exercices.</p></li>
+</ul><div class="section level3">
+<h3 id="qualité-des-contenus-0-24-0">Qualité des contenus<a class="anchor" aria-label="anchor" href="#qualit%C3%A9-des-contenus-0-24-0"></a></h3>
+<ul><li><p>Extension du principe du triple zéro — 0 erreur, 0 warning, 0 note — par un quatrième contrôle consacré à l’exactitude mathématique et conceptuelle des supports.</p></li>
+<li><p>Les contrôles automatisés sont progressivement complétés par des invariants mathématiques lorsque ceux-ci peuvent être vérifiés par le code.</p></li>
+<li><p>Les supports pédagogiques restent soumis à une validation humaine pour le sens, l’exactitude conceptuelle et la pertinence pédagogique.</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="maths--économie-0-24-0">Maths &amp; économie<a class="anchor" aria-label="anchor" href="#maths--%C3%A9conomie-0-24-0"></a></h3>
+<ul><li><p>Première expérimentation de la rubrique Maths &amp; économie, destinée à partir de situations réelles et de données publiques pour mobiliser les mathématiques et mieux comprendre le monde.</p></li>
+<li><p>Ajout de la première fiche expérimentale : « Un prix est-il toujours proportionnel à ce qu’on achète ? »</p></li>
+<li><p>Introduction d’une progression éditoriale reliant question, données, mathématiques, représentation graphique, interprétation et limites de l’interprétation.</p></li>
+<li><p>Première exploration de séries économiques réelles et sourcées, notamment autour des prix de l’électricité.</p></li>
+<li><p>Introduction des rubriques « Attention, piège ! » et « Une vérité peut en cacher une autre » pour attirer l’attention sur les changements de base, les ruptures de séries, les périodes d’observation et les interprétations trompeuses.</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="identité-et-exploration-pédagogique-0-24-0">Identité et exploration pédagogique<a class="anchor" aria-label="anchor" href="#identit%C3%A9-et-exploration-p%C3%A9dagogique-0-24-0"></a></h3>
+<ul><li><p>Développement du principe des portes vers l’infini : une notion peut ouvrir vers une autre sans imposer à l’élève de poursuivre.</p></li>
+<li><p>Premières explorations graphiques autour de la porte, du chemin, de la curiosité et du symbole ∞.</p></li>
+<li><p>Ajout d’un atelier visuel dans documentation/identite/portes-infini/, sans figer à ce stade une nouvelle charte graphique.</p></li>
+<li><p>Affirmation d’un principe pédagogique : comprendre peut être une source de plaisir et de curiosité, et donner envie d’ouvrir la porte suivante.</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="maintenance-0-24-0">Maintenance<a class="anchor" aria-label="anchor" href="#maintenance-0-24-0"></a></h3>
+<ul><li><p>Correction de la documentation roxygen de render_math().</p></li>
+<li><p>Nettoyage des caractères non ASCII présents dans R/render_math.R.</p></li>
+<li><p>Exclusion des répertoires de production temporaires du package construit.</p></li>
+<li><p>Maintien d’un R CMD check sans erreur, warning ni note après consolidation.</p></li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.23.0" id="eduschool-0230">eduschool 0.23.0<a class="anchor" aria-label="anchor" href="#eduschool-0230"></a></h2>
 <ul><li><p>Finalisation de l’identité <strong>edusch∞l Math</strong> : visuel d’accueil, navigation recentrée, journal synthétisé et Sainte Trinité du triple zéro explicitée.</p></li>

@@ -45,14 +45,12 @@ poésie.
 ## Merci Philippe
 
 Une place particulière revient à Philippe Chataignon, dont le travail et
-les échanges ont profondément nourri la réflexion autour de l’open data,
+les échanges ont profondément nourri ma réflexion autour de l’open data,
 du partage et de la transmission.
 
 > **Un savoir prend toute sa valeur lorsqu’il est partagé.**
 >
 > Merci Philippe.
->
-> **Tu es un grand homme.**
 
 ## Et maintenant ?
 
