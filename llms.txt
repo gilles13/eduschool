@@ -310,6 +310,8 @@ la page d’accueil en autobiographie.
   : Produire une fiche d'exercices historique
 - [`produire_frise_parcoursup_svg()`](https://gilles13.github.io/eduschool/reference/produire_frise_parcoursup_svg.md)
   : Produire une frise chronologique Parcoursup
+- [`produire_quiz()`](https://gilles13.github.io/eduschool/reference/produire_quiz.md)
+  : Produire un quiz HTML auto-corrigeant
 - [`produire_rapport_exercices()`](https://gilles13.github.io/eduschool/reference/produire_rapport_exercices.md)
   : Produire une fiche, son corrige et un manifeste
 - [`produire_ressource_examen()`](https://gilles13.github.io/eduschool/reference/produire_ressource_examen.md)

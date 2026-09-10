@@ -58,6 +58,8 @@ Nous avons besoin des deux.
 
 Mais `eduschool` ne prétend pas détenir la bonne méthode.
 
+> **Voir les maths autrement. Toujours avec rigueur.**
+
 > **Il n’existe pas une seule bonne façon d’apprendre.**
 
 Une formule, un dessin, un exemple, un graphique ou une autre
@@ -69,6 +71,16 @@ Et lorsque l’essai ne fonctionne pas :
 
 > **L’erreur n’est pas un échec. C’est une étape pour comprendre et
 > progresser.**
+
+Cette règle vaut aussi pour les retours produits par le logiciel :
+
+> **eduschool évalue une réponse, jamais la personne qui l’a donnée.**
+
+Un distracteur de QCM peut représenter un raisonnement plausible et
+permettre d’en expliquer le point de blocage. Il ne permet jamais
+d’affirmer que l’on sait ce que l’élève a pensé. Le commentaire reste
+donc factuel, neutre et utile : il ouvre une piste pour la tentative
+suivante, sans blâme ni rabaissement.
 
 Et lorsque l’on a fini par comprendre :
 

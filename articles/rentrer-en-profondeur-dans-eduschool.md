@@ -137,8 +137,8 @@ knitr::kable(
 | horaires | enseignements | horaire_id | 247 | 10 |
 | offres_enseignements | enseignements | offre_id | 175 | 6 |
 | options | enseignements | option_id,niveau_id | 13 | 7 |
-| modeles | exercices | modele_id | 5 | 7 |
-| modeles_capacites | exercices | modele_id,capacite_id | 9 | 2 |
+| modeles | exercices | modele_id | 15 | 7 |
+| modeles_capacites | exercices | modele_id,capacite_id | 23 | 2 |
 | sources | metadata | source_id | 38 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 135 | 5 |

@@ -1,8 +1,9 @@
 # Produire une fiche d'exercices HTML ou PDF
 
-Transforme directement une liste produite par \[generer_fiche()\] en
-document. Le format \`"auto"\` produit un PDF lorsque LaTeX est
-disponible et un HTML sinon.
+Transforme directement une liste produite par \[exercices()\] ou
+\[generer_fiche()\] en document. Le format \`"auto"\` produit un PDF
+lorsque LaTeX est disponible et un HTML sinon. Par defaut, le document
+produit est ouvert automatiquement.
 
 ## Usage
 
@@ -16,7 +17,7 @@ produire_fiche(
   instructions =
     "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
   afficher_metadonnees = FALSE,
-  ouvrir = FALSE
+  ouvrir = TRUE
 )
 ```
 
@@ -24,7 +25,7 @@ produire_fiche(
 
 - exercices:
 
-  Liste d'exercices produite par \[generer_fiche()\].
+  Liste d'exercices produite par \[exercices()\] ou \[generer_fiche()\].
 
 - fichier:
 
@@ -53,8 +54,21 @@ produire_fiche(
 
 - ouvrir:
 
-  Ouvrir le document apres sa creation.
+  Ouvrir le document apres sa creation. \`TRUE\` par defaut pour
+  afficher immediatement la fiche a l'utilisateur.
 
 ## Value
 
 Invisiblement, le chemin absolu du fichier produit.
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+exercices("6E") |>
+  produire_fiche()
+
+exercices("6E") |>
+  produire_fiche(format = "html", ouvrir = FALSE)
+} # }
+```

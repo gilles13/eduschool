@@ -1,5 +1,30 @@
 # Changelog
 
+## eduschool 0.25.0
+
+### Entraînement et QCM
+
+- Premier prototype de quiz QCM autonome en HTML, sans serveur ni
+  bibliothèque JavaScript externe.
+- Diversification pédagogique d’un entraînement de proportionnalité
+  autour de cinq intentions : reconnaître, appliquer, raisonner, se
+  méfier et transférer.
+- Les distracteurs peuvent représenter des raisonnements plausibles et
+  proposer un retour ciblé, sans prétendre connaître le raisonnement
+  réel de l’élève.
+- Principe explicite : **eduschool évalue une réponse, jamais la
+  personne qui l’a donnée.**
+
+### Direction éditoriale
+
+- Nouvelle formulation : **Voir les maths autrement. Toujours avec
+  rigueur.**
+- Le symbole ∞ est relié à l’ouverture des connaissances, aux portes
+  successives et à la pluralité des chemins possibles pour comprendre
+  une notion.
+- La page d’accueil est simplifiée pour mettre cette promesse au premier
+  plan.
+
 ## eduschool 0.24.1
 
 ### Corrections

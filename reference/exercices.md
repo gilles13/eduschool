@@ -7,6 +7,7 @@ Generer un exercice
 ``` r
 exercices(
   niveau,
+  notion = NULL,
   capacite = NULL,
   n = 5,
   difficulte = 1,
@@ -53,9 +54,14 @@ generer_fiche(
 
   Niveau scolaire.
 
+- notion:
+
+  Notion a travailler, en langage courant, par exemple \`"pythagore"\`
+  ou \`"fractions"\`.
+
 - capacite:
 
-  Identifiant de capacite facultatif.
+  Identifiant de capacite facultatif pour un pilotage avance.
 
 - n:
 

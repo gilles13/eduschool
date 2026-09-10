@@ -22,7 +22,7 @@ produire_corrige(
 
 - exercices:
 
-  Liste d'exercices produite par \[generer_fiche()\].
+  Liste d'exercices produite par \[exercices()\] ou \[generer_fiche()\].
 
 - fichier:
 
@@ -51,7 +51,8 @@ produire_corrige(
 
 - ouvrir:
 
-  Ouvrir le document apres sa creation.
+  Ouvrir le document apres sa creation. \`TRUE\` par defaut pour
+  afficher immediatement la fiche a l'utilisateur.
 
 ## Value
 
