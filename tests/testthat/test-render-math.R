@@ -152,7 +152,7 @@ test_that("les supports mathematiques partagent une identite visuelle", {
   expect_match(z, "La proportionnalite", fixed = TRUE)
   expect_match(z, "Comprendre avant de calculer", fixed = TRUE)
   expect_match(z, "Niveau : 5E", fixed = TRUE)
-  expect_match(z, "Concept :} Proportionnalité", fixed = TRUE)
+  expect_match(z, "Notion : Proportionnalité", fixed = TRUE)
   expect_match(z, "9 septembre 2026", fixed = TRUE)
   expect_match(z, "Ca ne marche pas ? Pas de panique. On essaie autrement.", fixed = TRUE)
   expect_match(z, "\\vfill", fixed = TRUE)
@@ -165,7 +165,7 @@ test_that("l'entete mathematique reutilise le logo et la couleur du niveau", {
   )
   z = paste(z, collapse = "\n")
   expect_match(z, "Niveau : 6E", fixed = TRUE)
-  expect_match(z, "Concept :} Fraction", fixed = TRUE)
+  expect_match(z, "Notion : Fraction", fixed = TRUE)
   expect_match(z, "9 septembre 2026", fixed = TRUE)
   expect_match(z, "D46A92", fixed = TRUE)
   if (nzchar(.logo_eduschool()))
@@ -234,7 +234,7 @@ test_that("la palette de niveaux progresse de la 6e a la terminale", {
   expect_identical(.couleur_niveau_math("TLE"), "34383D")
 })
 
-test_that("l'entete colore tout le bloc de metadonnees et reduit le logo", {
+test_that("l'entete mathematique est compact et aligne le logo a droite", {
   z = paste(
     .entete_math_tex(
       "Test", "Fiche", "6E", "Fraction",
@@ -242,8 +242,13 @@ test_that("l'entete colore tout le bloc de metadonnees et reduit le logo", {
     ),
     collapse = "\n"
   )
-  expect_match(z, "{\\color{eduniveau}", fixed = TRUE)
-  expect_match(z, "width=2.25cm", fixed = TRUE)
+  expect_match(z, "\\fcolorbox{eduniveau}{white}", fixed = TRUE)
+  expect_match(z, "\\begingroup", fixed = TRUE)
+  expect_match(z, "Niveau : 6E", fixed = TRUE)
+  expect_match(z, "Notion : Fraction", fixed = TRUE)
+  expect_match(z, "Date de g\u00e9n\u00e9ration : 9 septembre 2026", fixed = TRUE)
+  expect_match(z, "width=1.55cm", fixed = TRUE)
+  expect_false(grepl("width=2.25cm", z, fixed = TRUE))
 })
 
 test_that("la proportionnalite met en avant toujours et meme", {

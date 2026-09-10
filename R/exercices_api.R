@@ -72,8 +72,18 @@ generer_exercice = function(
     EQ1DEG_001 = generer_equation_1degre,
     FRAC_ADD_001 = generer_addition_fractions,
     PROP_001 = generer_proportion,
+    PROP_RECON_001 = generer_proportion_reconnaitre,
+    PROP_TABLE_001 = generer_proportion_tableau,
+    PROP_PIEGE_001 = generer_proportion_piege,
+    PROP_TRANSF_001 = generer_proportion_transfert,
     FRAC_QTE_001 = generer_fraction_quantite,
     PCT_001 = generer_pourcentage,
+    PYTH_001 = generer_pythagore,
+    PYTH_IDENT_001 = generer_pythagore_identifier,
+    PYTH_HYP_001 = generer_pythagore_hypotenuse,
+    PYTH_COTE_001 = generer_pythagore_cote,
+    PYTH_DIAG_001 = generer_pythagore_diagonale,
+    PYTH_APPL_001 = generer_pythagore_applicable,
     stop("Mod\u00e8le inconnu : ", modele_id)
   )
   exercice = f(

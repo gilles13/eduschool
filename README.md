@@ -6,59 +6,32 @@
   <img src="man/figures/logo.png" alt="Logo edusch∞l Math" width="360">
 </p>
 
-> **Comprendre sa scolarité. Travailler les mathématiques.**
+> **Voir les maths autrement. Toujours avec rigueur.**
+
+`eduschool` aide les collégiens, les lycéens et les personnes qui les
+accompagnent à comprendre, réviser et s'entraîner en mathématiques. Il aide
+aussi à se repérer dans les programmes et les parcours scolaires français.
+
+Il n'existe pas un seul chemin pour comprendre une notion. Une formule peut
+éclairer quelqu'un ; un dessin, une situation concrète, un graphique, une
+erreur expliquée ou une autre représentation en aidera un autre.
 
 > **Ça ne marche pas ? Pas de panique. On essaie autrement.**
 
-`eduschool` cartographie la scolarité des collégiens et lycéens en France et
-propose des outils pour réviser et s'entraîner en mathématiques.
+C'est la promesse d'**edusch∞l Math** : proposer d'autres chemins sans jamais
+sacrifier la justesse. Simplifier l'accès au savoir ne signifie pas simplifier
+les mathématiques elles-mêmes.
 
-Le projet repose sur des données structurées et interconnectées : niveaux,
-cycles, voies, séries, enseignements, programmes, orientation et poursuites
-d'études. Les contenus pédagogiques produits par `eduschool` sont volontairement
-centrés sur les mathématiques. L'architecture reste assez générique pour être
-étendue à d'autres disciplines par des contributeurs, sans que cela devienne
-l'objectif principal du package.
+L'erreur fait partie de ces chemins. Dans les exercices et entraînements,
+`eduschool` cherche à expliquer une réponse et à proposer une suite utile,
+jamais à juger la personne qui l'a donnée.
 
-Trois principes guident désormais explicitement le projet : **des données
-frugales**, **des contrôles exigeants** et une documentation qui a le droit de
-faire sourire. Les mathématiques doivent être exactes ; `eduschool`, lui, peut
-se permettre un peu d'auto-dérision.
+> **eduschool évalue une réponse, jamais la personne qui l'a donnée.**
 
-Pour les parents, la vignette **Prendre un parent par la main** propose une
-lecture progressive des bases mathématiques de la 6e à la Terminale spécialité.
-
-## À propos : pourquoi ce projet existe
-
-`eduschool` est développé par un parent qui tente de comprendre ce que ses
-enfants apprennent à l'école. Il essaie donc d'apprendre, puis de comprendre,
-puis d'expliquer ce qu'il vient parfois péniblement de comprendre.
-
-Le problème est qu'il ne comprend pas grand-chose aux mathématiques et qu'il
-doit quand même aider ses propres enfants. **HELP PLIZ.**
-
-C'est une faiblesse assez pratique : elle rappelle qu'une explication n'est pas
-bonne parce que son auteur la comprend, mais parce qu'une personne qui ne la
-comprenait pas peut finir par la comprendre. Dans `eduschool`, **l'erreur n'est pas un échec : c'est une étape pour
-comprendre et progresser.**
-
-Le projet est donc collaboratif par nécessité autant que par choix. Enseignants,
-parents, élèves, amateurs de mathématiques et utilisateurs de R peuvent corriger,
-expliquer, proposer des exercices, des représentations ou simplement signaler
-l'endroit exact où ils ont cessé de comprendre.
-
-### Une Face B assumée
-
-L'Éducation nationale a choisi Python pour initier les élèves à la programmation.
-`eduschool`, lui, est développé en R. Ce n'est pas une revendication de
-supériorité : c'est une **Face B**, un autre chemin pour essayer d'arriver au
-même endroit.
-
-Est-ce le meilleur choix technique ? Peut-être pas. Est-ce que cela permet de
-produire des fiches, des exercices, des graphiques et des discussions utiles ?
-C'est précisément ce que le projet cherche à vérifier.
-
-*Compte tenu du niveau du développeur, utilisation à vos risques et périls.*
+Le symbole `∞` rappelle enfin que les connaissances ouvrent sans cesse de
+nouvelles portes — et qu'il peut exister plusieurs façons de regarder la même
+idée. Chaque support peut ouvrir une porte ; personne n'est obligé de la
+franchir.
 
 ## Installation
 

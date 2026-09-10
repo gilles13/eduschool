@@ -9,6 +9,7 @@
 \usage{
 exercices(
   niveau,
+  notion = NULL,
   capacite = NULL,
   n = 5,
   difficulte = 1,
@@ -51,7 +52,10 @@ generer_fiche(
 \arguments{
 \item{niveau}{Niveau scolaire.}
 
-\item{capacite}{Identifiant de capacite facultatif.}
+\item{notion}{Notion a travailler, en langage courant, par exemple
+`"pythagore"` ou `"fractions"`.}
+
+\item{capacite}{Identifiant de capacite facultatif pour un pilotage avance.}
 
 \item{n}{Nombre d'exercices.}
 

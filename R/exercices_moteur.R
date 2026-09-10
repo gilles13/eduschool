@@ -25,7 +25,8 @@ fmt_fraction = function(num, den) {
 }
 
 creer_exercice = function(modele_id, niveau_id, capacite_id, difficulte,
-                           enonce, reponse, correction, parametres, seed = NULL) {
+                           enonce, reponse, correction, parametres, seed = NULL,
+                           qcm = NULL) {
   list(
     exercice_id = paste(modele_id, if (is.null(seed)) sample.int(1e9, 1) else seed, sep = "_"),
     modele_id = modele_id,
@@ -36,7 +37,8 @@ creer_exercice = function(modele_id, niveau_id, capacite_id, difficulte,
     parametres = parametres,
     enonce = enonce,
     reponse = reponse,
-    correction = correction
+    correction = correction,
+    qcm = qcm
   )
 }
 
@@ -72,8 +74,35 @@ generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, dif
   p1 = q1*prix_unitaire; p2 = q2*prix_unitaire
   enonce = sprintf("%d objets co\u00fbtent %d \u20ac. Combien co\u00fbtent %d objets au m\u00eame prix unitaire ?", q1,p1,q2)
   correction = sprintf("Prix d'un objet : %d / %d = %d \u20ac. Donc %d objets co\u00fbtent %d \u00d7 %d = %d \u20ac.", p1,q1,prix_unitaire,q2,q2,prix_unitaire,p2)
+
+  candidats = c(
+    p1 + (q2 - q1),
+    p1 * q2,
+    (q2 - 1) * prix_unitaire,
+    (q2 + 1) * prix_unitaire
+  )
+  feedback_candidats = c(
+    "Cette proposition ajoute ou retire seulement 1 euro par objet d'ecart : le prix ne varie pas ainsi si chaque objet coute plusieurs euros.",
+    sprintf("Cette proposition multiplie directement le prix de %d objets par %d, sans revenir au prix d'un seul objet.", q1, q2),
+    sprintf("Cette proposition correspond au prix de %d objets, pas de %d objets.", q2 - 1, q2),
+    sprintf("Cette proposition correspond au prix de %d objets, pas de %d objets.", q2 + 1, q2)
+  )
+  garder = !duplicated(c(p2, candidats))[-1L] & candidats != p2
+  distracteurs = candidats[garder][seq_len(3L)]
+  feedback_faux = feedback_candidats[garder][seq_len(3L)]
+
+  propositions = c(p2, distracteurs)
+  feedback = c(correction, feedback_faux)
+  ordre = sample(seq_len(4L))
+  qcm = list(
+    intention = "appliquer",
+    propositions = paste0(propositions[ordre], " \u20ac"),
+    correcte = match(1L, ordre),
+    feedback = feedback[ordre]
+  )
+
   creer_exercice("PROP_001", niveau_id, capacite_id, difficulte, enonce, paste0(p2," \u20ac"), correction,
-                 list(q1=q1,p1=p1,q2=q2,prix_unitaire=prix_unitaire), seed)
+                 list(q1=q1,p1=p1,q2=q2,prix_unitaire=prix_unitaire), seed, qcm = qcm)
 }
 
 generer_fraction_quantite = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
@@ -95,4 +124,45 @@ generer_pourcentage = function(niveau_id = "6E", capacite_id = NA_character_, di
   correction = sprintf("%d %% de %d = %d \u00d7 %d / 100 = %d.", pct,base,base,pct,rep)
   creer_exercice("PCT_001", niveau_id, capacite_id, difficulte, enonce, as.character(rep), correction,
                  list(pct=pct,base=base), seed)
+}
+
+
+generer_pythagore = function(niveau_id = "4E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  triangles = rbind(
+    c(3, 4, 5), c(5, 12, 13), c(6, 8, 10), c(8, 15, 17), c(9, 12, 15)
+  )
+  t = triangles[sample(seq_len(nrow(triangles)), 1L), ]
+  k = if (difficulte == 1) 1L else sample(1:3, 1L)
+  a = t[[1L]] * k
+  b = t[[2L]] * k
+  c = t[[3L]] * k
+  chercher_hypotenuse = difficulte == 1 || sample(c(TRUE, FALSE), 1L)
+
+  if (chercher_hypotenuse) {
+    enonce = sprintf(
+      "ABC est rectangle en A, avec AB = %d cm et AC = %d cm. Calculer BC.",
+      a, b
+    )
+    reponse = paste0(c, " cm")
+    correction = sprintf(
+      "BC est l'hypotenuse. D'apres le theoreme de Pythagore, BC^2 = AB^2 + AC^2 = %d^2 + %d^2 = %d. Donc BC = %d cm.",
+      a, b, c^2, c
+    )
+  } else {
+    enonce = sprintf(
+      "ABC est rectangle en A, avec AC = %d cm et BC = %d cm. Calculer AB.",
+      b, c
+    )
+    reponse = paste0(a, " cm")
+    correction = sprintf(
+      "BC est l'hypotenuse. D'apres le theoreme de Pythagore, AB^2 = BC^2 - AC^2 = %d^2 - %d^2 = %d. Donc AB = %d cm.",
+      c, b, a^2, a
+    )
+  }
+
+  creer_exercice(
+    "PYTH_001", niveau_id, capacite_id, difficulte, enonce, reponse, correction,
+    list(a = a, b = b, c = c, chercher_hypotenuse = chercher_hypotenuse), seed
+  )
 }

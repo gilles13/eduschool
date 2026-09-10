@@ -16,7 +16,8 @@ produire_corrige(
 )
 }
 \arguments{
-\item{exercices}{Liste d'exercices produite par [generer_fiche()].}
+\item{exercices}{Liste d'exercices produite par [exercices()] ou
+[generer_fiche()].}
 
 \item{fichier}{Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 construit automatiquement a partir du niveau et de la capacite.}
@@ -31,7 +32,8 @@ construit automatiquement a partir du niveau et de la capacite.}
 
 \item{afficher_metadonnees}{Afficher les identifiants techniques des exercices.}
 
-\item{ouvrir}{Ouvrir le document apres sa creation.}
+\item{ouvrir}{Ouvrir le document apres sa creation. `TRUE` par defaut pour
+afficher immediatement la fiche a l'utilisateur.}
 }
 \value{
 Invisiblement, le chemin absolu du fichier produit.

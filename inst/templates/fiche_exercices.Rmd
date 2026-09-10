@@ -7,6 +7,7 @@ params:
   corriges: false
   afficher_metadonnees: false
   logo: ""
+  entete: !r list()
 ---
 
 ```{r setup, include=FALSE}
@@ -14,10 +15,16 @@ knitr::opts_chunk$set(echo = FALSE, results = "asis")
 exercices = params$exercices
 ```
 
-```{r logo, out.width="12%", fig.align="left"}
-if (nzchar(params$logo) && file.exists(params$logo)) {
-  knitr::include_graphics(params$logo)
-}
+```{r entete, results='asis'}
+format_entete = if (knitr::is_latex_output()) "latex" else "html"
+cat(
+  eduschool:::.entete_math_rmd(
+    params$entete,
+    logo = params$logo,
+    format = format_entete
+  ),
+  sep = "\n"
+)
 ```
 
 # `r params$titre`
@@ -51,6 +58,14 @@ for (i in seq_along(exercices)) {
       if (!is.null(ex$seed) && !is.na(ex$seed)) paste0("seed: ", ex$seed)
     )
     if (length(meta)) cat("*", paste(meta, collapse = " — "), "*\n\n", sep = "")
+  }
+
+  if (!isTRUE(params$corriges) && i < length(exercices)) {
+    if (knitr::is_latex_output()) {
+      cat("\\vspace{1.6cm}\n\n")
+    } else {
+      cat('<div class="eduschool-espace-reponse" style="height:2.5rem"></div>\n\n')
+    }
   }
 }
 ```

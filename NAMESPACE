@@ -126,3 +126,5 @@ export(provenance_donnees)
 export(citer_source)
 export(annoter_source)
 export(render_math)
+
+export(produire_quiz)

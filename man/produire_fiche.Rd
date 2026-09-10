@@ -13,11 +13,12 @@ produire_fiche(
   instructions =
     "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
   afficher_metadonnees = FALSE,
-  ouvrir = FALSE
+  ouvrir = TRUE
 )
 }
 \arguments{
-\item{exercices}{Liste d'exercices produite par [generer_fiche()].}
+\item{exercices}{Liste d'exercices produite par [exercices()] ou
+[generer_fiche()].}
 
 \item{fichier}{Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 construit automatiquement a partir du niveau et de la capacite.}
@@ -32,13 +33,24 @@ construit automatiquement a partir du niveau et de la capacite.}
 
 \item{afficher_metadonnees}{Afficher les identifiants techniques des exercices.}
 
-\item{ouvrir}{Ouvrir le document apres sa creation.}
+\item{ouvrir}{Ouvrir le document apres sa creation. `TRUE` par defaut pour
+afficher immediatement la fiche a l'utilisateur.}
 }
 \value{
 Invisiblement, le chemin absolu du fichier produit.
 }
 \description{
-Transforme directement une liste produite par [generer_fiche()] en document.
-Le format `"auto"` produit un PDF lorsque LaTeX est disponible et un HTML
-sinon.
+Transforme directement une liste produite par [exercices()] ou
+[generer_fiche()] en document. Le format `"auto"` produit un PDF lorsque
+LaTeX est disponible et un HTML sinon. Par defaut, le document produit est
+ouvert automatiquement.
+}
+\examples{
+\dontrun{
+exercices("6E") |>
+  produire_fiche()
+
+exercices("6E") |>
+  produire_fiche(format = "html", ouvrir = FALSE)
+}
 }

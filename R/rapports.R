@@ -374,6 +374,56 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
   format
 }
 
+.identite_fiche_exercices = function(exercices) {
+  .verifier_exercices(exercices)
+
+  niveaux = unique(vapply(exercices, function(x) {
+    y = x$niveau_id
+    if (is.null(y) || !length(y) || is.na(y)) "" else as.character(y)
+  }, character(1)))
+  niveaux = niveaux[nzchar(niveaux)]
+  niveau = if (length(niveaux) == 1L) niveaux[[1L]] else paste(niveaux, collapse = ", ")
+
+  liens = .lire_csv("exercices", "modeles_capacites.csv")
+  items = .lire_csv("programmes", "programme_items.csv")
+  concepts_items = .lire_csv("mathematiques", "concepts_items.csv")
+  concepts = concepts_math()
+
+  capacites = unlist(lapply(exercices, function(x) {
+    capacite = x$capacite_id
+    if (!is.null(capacite) && length(capacite) && !is.na(capacite) && nzchar(capacite)) {
+      return(as.character(capacite))
+    }
+
+    modele = x$modele_id
+    if (is.null(modele) || !length(modele) || is.na(modele) || !nzchar(modele)) {
+      return(character())
+    }
+
+    ids = liens$capacite_id[liens$modele_id == modele]
+    if (!length(ids)) return(character())
+
+    niveau_exercice = x$niveau_id
+    if (!is.null(niveau_exercice) && length(niveau_exercice) &&
+        !is.na(niveau_exercice) && nzchar(niveau_exercice)) {
+      garder = items$item_id %in% ids & items$niveau == niveau_exercice
+      ids = items$item_id[garder]
+    }
+    ids
+  }), use.names = FALSE)
+  capacites = unique(capacites[nzchar(capacites)])
+
+  concept_ids = unique(concepts_items$concept_id[concepts_items$item_id %in% capacites])
+  notions = concepts$libelle[match(concept_ids, concepts$concept_id)]
+  notions = unique(notions[!is.na(notions) & nzchar(notions)])
+
+  .infos_entete_math(
+    niveau = niveau,
+    concepts = notions,
+    date_generation = Sys.Date()
+  )
+}
+
 .sous_titre_exercices = function(exercices) {
   niveaux = unique(vapply(exercices, function(x) as.character(x$niveau_id), character(1)))
   niveaux = niveaux[!is.na(niveaux) & nzchar(niveaux)]
@@ -483,11 +533,21 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
     )
   }
 
-  rmarkdown::render(
+  logo = .logo_eduschool()
+  if (nzchar(logo)) {
+    logo_local = file.path(travail, basename(logo))
+    file.copy(logo, logo_local, overwrite = TRUE)
+  } else {
+    logo_local = ""
+  }
+
+  identite = .identite_fiche_exercices(exercices)
+
+  sortie_temporaire = rmarkdown::render(
     input = entree,
     output_format = output_format,
     output_file = basename(fichier),
-    output_dir = dirname(fichier),
+    output_dir = travail,
     params = list(
       exercices = exercices,
       titre = titre,
@@ -495,11 +555,16 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
       instructions = instructions,
       corriges = corriges,
       afficher_metadonnees = afficher_metadonnees,
-      logo = .logo_eduschool()
+      logo = logo_local,
+      entete = identite
     ),
     envir = new.env(parent = baseenv()),
     quiet = TRUE
   )
+
+  if (!file.copy(sortie_temporaire, fichier, overwrite = TRUE)) {
+    stop("Impossible de copier le document produit vers sa destination.", call. = FALSE)
+  }
 
   fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
   if (isTRUE(ouvrir)) .ouvrir_fichier(fichier)
@@ -508,11 +573,13 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 
 #' Produire une fiche d'exercices HTML ou PDF
 #'
-#' Transforme directement une liste produite par [generer_fiche()] en document.
-#' Le format `"auto"` produit un PDF lorsque LaTeX est disponible et un HTML
-#' sinon.
+#' Transforme directement une liste produite par [exercices()] ou
+#' [generer_fiche()] en document. Le format `"auto"` produit un PDF lorsque
+#' LaTeX est disponible et un HTML sinon. Par defaut, le document produit est
+#' ouvert automatiquement.
 #'
-#' @param exercices Liste d'exercices produite par [generer_fiche()].
+#' @param exercices Liste d'exercices produite par [exercices()] ou
+#'   [generer_fiche()].
 #' @param fichier Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 #'   construit automatiquement a partir du niveau et de la capacite.
 #' @param format Format de sortie : `"auto"`, `"html"` ou `"pdf"`.
@@ -520,8 +587,17 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' @param sous_titre Sous-titre. Si `NULL`, il est deduit des exercices.
 #' @param instructions Consigne generale affichee avant les exercices.
 #' @param afficher_metadonnees Afficher les identifiants techniques des exercices.
-#' @param ouvrir Ouvrir le document apres sa creation.
+#' @param ouvrir Ouvrir le document apres sa creation. `TRUE` par defaut pour
+#'   afficher immediatement la fiche a l'utilisateur.
 #' @return Invisiblement, le chemin absolu du fichier produit.
+#' @examples
+#' \dontrun{
+#' exercices("6E") |>
+#'   produire_fiche()
+#'
+#' exercices("6E") |>
+#'   produire_fiche(format = "html", ouvrir = FALSE)
+#' }
 #' @export
 produire_fiche = function(
   exercices,
@@ -531,7 +607,7 @@ produire_fiche = function(
   sous_titre = NULL,
   instructions = "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
   afficher_metadonnees = FALSE,
-  ouvrir = FALSE
+  ouvrir = TRUE
 ) {
   .verifier_exercices(exercices)
   if (is.null(fichier)) fichier = .nom_fichier_document(exercices, "fiche")

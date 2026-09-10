@@ -302,25 +302,38 @@
   paste(x$mday, mois[x$mon + 1L], x$year + 1900L)
 }
 
+.infos_entete_math = function(niveau, concepts, date_generation = Sys.Date()) {
+  concepts = as.character(concepts)
+  concepts = unique(concepts[!is.na(concepts) & nzchar(concepts)])
+
+  list(
+    niveau = as.character(niveau),
+    concepts = concepts,
+    date_generation = .formater_date_math(date_generation),
+    couleur = paste0("#", .couleur_niveau_math(niveau))
+  )
+}
+
 .entete_math_tex = function(titre, support, niveau, concept,
                             date_generation = Sys.Date()) {
   logo = .logo_eduschool()
-  couleur = .couleur_niveau_math(niveau)
+  info = .infos_entete_math(niveau, concept, date_generation)
+  concept = paste(info$concepts, collapse = " \u00b7 ")
+  etiquette = if (length(info$concepts) > 1L) "Notions" else "Notion"
 
   lignes = c(
-    paste0("\\definecolor{eduniveau}{HTML}{", couleur, "}"),
+    paste0("\\definecolor{eduniveau}{HTML}{", sub("^#", "", info$couleur), "}"),
     "\\noindent",
-    "\\begin{minipage}[t]{0.72\\textwidth}",
-    "{\\color{eduniveau}",
-    paste0("{\\large\\bfseries Niveau : ", niveau, "}\\par"),
-    paste0("\\textbf{Concept :} ", concept, "\\par"),
-    paste0(
-      "\\textbf{Date de g\u00e9n\u00e9ration :} ",
-      .formater_date_math(date_generation)
-    ),
-    "}",
+    "\\begingroup",
+    "\\setlength{\\fboxsep}{5pt}",
+    "\\setlength{\\fboxrule}{0.5pt}",
+    "\\fcolorbox{eduniveau}{white}{\\begin{minipage}{0.955\\linewidth}",
+    "\\begin{minipage}[c]{0.78\\linewidth}",
+    paste0("{\\large\\bfseries\\color{eduniveau} Niveau : ", info$niveau, "}\\par"),
+    paste0("{\\large\\bfseries\\color{eduniveau} ", etiquette, " : ", concept, "}\\par"),
+    paste0("{\\small Date de g\u00e9n\u00e9ration : ", info$date_generation, "}"),
     "\\end{minipage}\\hfill",
-    "\\begin{minipage}[t]{0.23\\textwidth}",
+    "\\begin{minipage}[c]{0.17\\linewidth}",
     "\\raggedleft"
   )
 
@@ -328,20 +341,86 @@
     logo_tex = normalizePath(logo, winslash = "/", mustWork = TRUE)
     lignes = c(
       lignes,
-      paste0("\\includegraphics[width=2.25cm]{\\detokenize{", logo_tex, "}}")
+      paste0("\\includegraphics[width=1.55cm]{\\detokenize{", logo_tex, "}}")
     )
   }
 
   c(
     lignes,
     "\\end{minipage}",
+    "\\end{minipage}}",
+    "\\endgroup",
     "\\par\\smallskip",
-    "{\\color{eduniveau}\\rule{\\linewidth}{1.2pt}}",
     "\\begin{center}",
     paste0("{\\LARGE\\bfseries\\color{edublue} ", titre, "}\\\\[0.2em]"),
     paste0("{\\large ", support, "}"),
     "\\end{center}",
     "\\vspace{0.45em}"
+  )
+}
+
+.entete_math_rmd = function(info, logo = "", format = c("latex", "html")) {
+  format = match.arg(format)
+  concepts = info$concepts
+  notions = if (length(concepts)) paste(concepts, collapse = " \u00b7 ") else "Math\u00e9matiques"
+  etiquette = if (length(concepts) > 1L) "Notions" else "Notion"
+
+  if (identical(format, "latex")) {
+    lignes = c(
+      paste0("\\definecolor{eduniveau}{HTML}{", sub("^#", "", info$couleur), "}"),
+      "\\noindent",
+      "\\begingroup",
+      "\\setlength{\\fboxsep}{5pt}",
+      "\\setlength{\\fboxrule}{0.5pt}",
+      "\\fcolorbox{eduniveau}{white}{\\begin{minipage}{0.955\\linewidth}",
+      "\\begin{minipage}[c]{0.78\\linewidth}",
+      paste0("{\\large\\bfseries\\color{eduniveau} Niveau : ", info$niveau, "}\\par"),
+      paste0("{\\large\\bfseries\\color{eduniveau} ", etiquette, " : ", notions, "}\\par"),
+      paste0("{\\small Date de g\u00e9n\u00e9ration : ", info$date_generation, "}"),
+      "\\end{minipage}\\hfill",
+      "\\begin{minipage}[c]{0.17\\linewidth}",
+      "\\raggedleft"
+    )
+
+    if (nzchar(logo) && file.exists(logo)) {
+      logo_tex = normalizePath(logo, winslash = "/", mustWork = TRUE)
+      lignes = c(
+        lignes,
+        paste0("\\includegraphics[width=1.55cm]{\\detokenize{", logo_tex, "}}")
+      )
+    }
+
+    return(c(
+      lignes,
+      "\\end{minipage}",
+      "\\end{minipage}}",
+      "\\endgroup",
+      "\\par\\smallskip"
+    ))
+  }
+
+  logo_html = ""
+  if (nzchar(logo) && file.exists(logo)) {
+    logo_html = paste0(
+      '<div style="flex:0 0 auto;display:flex;align-items:center">',
+      '<img src="', logo,
+      '" style="width:72px;height:auto;display:block" alt="Logo eduschool"></div>'
+    )
+  }
+
+  paste0(
+    '<div style="border:1px solid ', info$couleur,
+    ';background:#fff;padding:.55rem .75rem;margin-bottom:1rem;border-radius:5px;',
+    'display:flex;align-items:center;justify-content:space-between;gap:.8rem">',
+    '<div style="min-width:0">',
+    '<div style="font-weight:700;color:', info$couleur, ';font-size:1.05rem">Niveau : ',
+    info$niveau, '</div>',
+    '<div style="font-weight:700;color:', info$couleur, ';font-size:1.05rem;margin-top:.08rem">',
+    etiquette, ' : ', notions, '</div>',
+    '<div style="font-size:.82rem;color:#59636b;margin-top:.16rem">Date de g\u00e9n\u00e9ration : ',
+    info$date_generation, '</div></div>',
+    logo_html,
+    '</div>'
   )
 }
 
