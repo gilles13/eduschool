@@ -1,5 +1,59 @@
 # Changelog
 
+## eduschool 0.30.0
+
+- Ajoute une premiere notion pedagogique complete et reutilisable : les
+  ensembles de nombres en seconde.
+- Centralise N, Z, D, Q et R dans une petite table qui alimente a la
+  fois le contenu, le schema et les exercices.
+- Ajoute un diagramme ggplot2 d’ovales emboites pour visualiser N inclus
+  dans Z, inclus dans D, inclus dans Q, inclus dans R.
+- Ajoute cinq QCM de rappel directement compatibles avec
+  [`produire_quiz()`](https://gilles13.github.io/eduschool/reference/produire_quiz.md),
+  notamment sur la distinction entre appartenance et inclusion.
+- Relie la fiche a la page de mathematiques de seconde et ouvre
+  explicitement vers les intervalles, l’union et l’intersection.
+
+## eduschool 0.29.0
+
+- La page d’accueil fait un pas de côté avant les programmes : elle part
+  du mot grec `μάθημα` (*máthēma*) et de son sens — ce qui s’apprend, ce
+  qui s’étudie.
+- L’installation devient secondaire et repliable : l’accueil reste
+  centré sur le sens, avec trois portes d’entrée cliquables.
+- La formule « les maths ne commencent peut-être pas par un calcul »
+  devient le seuil éditorial du site.
+
+## eduschool 0.28.0
+
+- Épure la page d’accueil pour revenir aux trois portes d’entrée
+  essentielles.
+- Réduit `À propos` à l’histoire la plus simple du projet : se
+  réconcilier avec les maths et partager les chemins trouvés.
+- Fusionne la mémoire éditoriale du `Guide d'or`, du `Livre d'or` et de
+  l’ancien `À propos` dans `documentation/charte-eduschool.md`, puis
+  retire les deux anciennes vignettes du site public.
+- Simplifie le menu pkgdown et ajoute une navigation cliquable entre les
+  pages de mathématiques de la 6e à la Terminale.
+- Vérifie les liens HTML internes entre les fiches et complète l’index
+  des fiches de révision.
+
+## eduschool 0.27.0
+
+### Charte et identité du projet
+
+- Stabilise la charte d’eduschool autour d’un principe directeur :
+  **Toujours ouvrir des portes.**
+- Affirme qu’**eduschool est libre, gratuit et ouvert** : le savoir
+  produit et partagé par le projet doit rester accessible à tous et ne
+  doit pas devenir un intérêt financier pour son concepteur.
+- Relie explicitement cette ouverture aux choix pédagogiques, techniques
+  et éditoriaux du projet : proposer plusieurs chemins pour comprendre
+  et supprimer les barrières inutiles plutôt qu’en créer.
+- Considère cette charte comme un socle désormais stable : les
+  prochaines versions peuvent revenir au coeur du projet, les
+  mathématiques, les fiches et les données.
+
 ## eduschool 0.26.0
 
 ### Fiches de mathématiques au collège

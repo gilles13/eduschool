@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.26.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.30.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,24 +19,11 @@
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><a class="dropdown-item" href="../articles/a-propos.html">À propos</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Découvrir eduschool</h6></li>
     <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main</a></li>
-    <li><a class="dropdown-item" href="../articles/prendre-un-parent-par-la-main.html">Prendre un parent par la main</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Mathématiques</h6></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
-    <li><a class="dropdown-item" href="../articles/mathematiques-et-economie.html">Mathématiques &amp; économie</a></li>
-    <li><a class="dropdown-item" href="../articles/infini_1_les_math_et_l_eco.html">Math &amp; infini</a></li>
-    <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaire</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Aller plus loin</h6></li>
     <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Sous le capot</a></li>
-    <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Collaborer et partager</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="../articles/journal-du-projet.html">Journal du projet</a></li>
-    <li><a class="dropdown-item" href="../articles/livre-d-or.html">Livre d'or</a></li>
+    <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Contribuer et partager</a></li>
     <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
   </ul></li>
 <li class="active nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
@@ -51,6 +38,39 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.30.0" id="eduschool-0300">eduschool 0.30.0<a class="anchor" aria-label="anchor" href="#eduschool-0300"></a></h2>
+<ul><li>Ajoute une premiere notion pedagogique complete et reutilisable : les ensembles de nombres en seconde.</li>
+<li>Centralise N, Z, D, Q et R dans une petite table qui alimente a la fois le contenu, le schema et les exercices.</li>
+<li>Ajoute un diagramme ggplot2 d’ovales emboites pour visualiser N inclus dans Z, inclus dans D, inclus dans Q, inclus dans R.</li>
+<li>Ajoute cinq QCM de rappel directement compatibles avec <code><a href="../reference/produire_quiz.html">produire_quiz()</a></code>, notamment sur la distinction entre appartenance et inclusion.</li>
+<li>Relie la fiche a la page de mathematiques de seconde et ouvre explicitement vers les intervalles, l’union et l’intersection.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.29.0" id="eduschool-0290">eduschool 0.29.0<a class="anchor" aria-label="anchor" href="#eduschool-0290"></a></h2>
+<ul><li>La page d’accueil fait un pas de côté avant les programmes : elle part du mot grec <code>μάθημα</code> (<em>máthēma</em>) et de son sens — ce qui s’apprend, ce qui s’étudie.</li>
+<li>L’installation devient secondaire et repliable : l’accueil reste centré sur le sens, avec trois portes d’entrée cliquables.</li>
+<li>La formule « les maths ne commencent peut-être pas par un calcul » devient le seuil éditorial du site.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.28.0" id="eduschool-0280">eduschool 0.28.0<a class="anchor" aria-label="anchor" href="#eduschool-0280"></a></h2>
+<ul><li>Épure la page d’accueil pour revenir aux trois portes d’entrée essentielles.</li>
+<li>Réduit <code>À propos</code> à l’histoire la plus simple du projet : se réconcilier avec les maths et partager les chemins trouvés.</li>
+<li>Fusionne la mémoire éditoriale du <code>Guide d'or</code>, du <code>Livre d'or</code> et de l’ancien <code>À propos</code> dans <code>documentation/charte-eduschool.md</code>, puis retire les deux anciennes vignettes du site public.</li>
+<li>Simplifie le menu pkgdown et ajoute une navigation cliquable entre les pages de mathématiques de la 6e à la Terminale.</li>
+<li>Vérifie les liens HTML internes entre les fiches et complète l’index des fiches de révision.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.27.0" id="eduschool-0270">eduschool 0.27.0<a class="anchor" aria-label="anchor" href="#eduschool-0270"></a></h2>
+<div class="section level3">
+<h3 id="charte-et-identité-du-projet-0-27-0">Charte et identité du projet<a class="anchor" aria-label="anchor" href="#charte-et-identit%C3%A9-du-projet-0-27-0"></a></h3>
+<ul><li>Stabilise la charte d’eduschool autour d’un principe directeur : <strong>Toujours ouvrir des portes.</strong>
+</li>
+<li>Affirme qu’<strong>eduschool est libre, gratuit et ouvert</strong> : le savoir produit et partagé par le projet doit rester accessible à tous et ne doit pas devenir un intérêt financier pour son concepteur.</li>
+<li>Relie explicitement cette ouverture aux choix pédagogiques, techniques et éditoriaux du projet : proposer plusieurs chemins pour comprendre et supprimer les barrières inutiles plutôt qu’en créer.</li>
+<li>Considère cette charte comme un socle désormais stable : les prochaines versions peuvent revenir au coeur du projet, les mathématiques, les fiches et les données.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.26.0" id="eduschool-0260">eduschool 0.26.0<a class="anchor" aria-label="anchor" href="#eduschool-0260"></a></h2>
 <div class="section level3">

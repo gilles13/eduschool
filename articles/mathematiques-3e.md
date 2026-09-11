@@ -184,3 +184,12 @@ la position du milieu de la série.
   capacités](https://gilles13.github.io/eduschool/articles/programmes-et-capacites.md)
 - [Approfondir ses connaissances en
   mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md)
+
+------------------------------------------------------------------------
+
+[←
+4e](https://gilles13.github.io/eduschool/articles/mathematiques-4e.md) ·
+[Tous les
+niveaux](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+· [2de
+→](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md)

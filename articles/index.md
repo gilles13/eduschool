@@ -4,12 +4,9 @@
 
 Premiers repères pour comprendre le projet et commencer à l’utiliser.
 
-- [À propos : un parent, des maths et un appel à
-  l'aide](https://gilles13.github.io/eduschool/articles/a-propos.md):
+- [À propos](https://gilles13.github.io/eduschool/articles/a-propos.md):
 - [Journal du
   projet](https://gilles13.github.io/eduschool/articles/journal-du-projet.md):
-- [Livre
-  d'or](https://gilles13.github.io/eduschool/articles/livre-d-or.md):
 - [Prise en main de
   eduschool](https://gilles13.github.io/eduschool/articles/prise-en-main.md):
 - [Prendre un parent par la
@@ -75,11 +72,3 @@ Créer, adapter et mutualiser des données et supports pédagogiques.
 
 - [Contribuer et
   partager](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md):
-
-### Pour en finir
-
-Philosophie, folklore et mauvaises plaisanteries officiellement
-conservées.
-
-- [Le guide d'or
-  d'eduschool](https://gilles13.github.io/eduschool/articles/guide-d-or.md):

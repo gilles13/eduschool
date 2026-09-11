@@ -18,8 +18,16 @@ seconde source à maintenir séparément.
 
 ## Accès par classe
 
-[Choisir directement un niveau, de la 6e à la
-Terminale](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md).
+- [6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md)
+- [5e](https://gilles13.github.io/eduschool/articles/mathematiques-5e.md)
+- [4e](https://gilles13.github.io/eduschool/articles/mathematiques-4e.md)
+- [3e](https://gilles13.github.io/eduschool/articles/mathematiques-3e.md)
+- [2de générale et
+  technologique](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md)
+- [1re générale — spécialité
+  mathématiques](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md)
+- [Terminale générale — spécialité
+  mathématiques](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md)
 
 ## Fiches disponibles
 
@@ -27,10 +35,6 @@ Terminale](https://gilles13.github.io/eduschool/articles/mathematiques-par-nivea
   relient](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md)
 - [1re spécialité — Dérivation, fiche
   pilote](https://gilles13.github.io/eduschool/articles/fiche-derivation-premiere.md)
-
-Les autres niveaux sont accessibles depuis la page [Mathématiques par
-niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
-et seront enrichis progressivement sur le même principe.
 
 ## Depuis R
 

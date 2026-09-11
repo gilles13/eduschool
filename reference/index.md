@@ -42,6 +42,8 @@
   : Couverture de la documentation
 - [`decrire_source()`](https://gilles13.github.io/eduschool/reference/decrire_source.md)
   : Decrire une source de donnees
+- [`diagramme_ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/diagramme_ensembles_nombres.md)
+  : Diagramme des ensembles de nombres
 - [`diagramme_package()`](https://gilles13.github.io/eduschool/reference/diagramme_package.md)
   : Produire un diagramme technique du package
 - [`diagramme_parcours_scolaire()`](https://gilles13.github.io/eduschool/reference/diagramme_parcours_scolaire.md)
@@ -58,6 +60,8 @@
   : Enseignements
 - [`enseignements_optionnels_lycee()`](https://gilles13.github.io/eduschool/reference/enseignements_optionnels_lycee.md)
   : Enseignements optionnels au lycee general
+- [`ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/ensembles_nombres.md)
+  : Ensembles de nombres usuels
 - [`erreurs_math()`](https://gilles13.github.io/eduschool/reference/erreurs_math.md)
   : Erreurs frequentes en mathematiques
 - [`examen()`](https://gilles13.github.io/eduschool/reference/examen.md)
@@ -69,6 +73,8 @@
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   : Generer un exercice
+- [`exercices_ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_nombres.md)
+  : Cinq rappels sur les ensembles de nombres
 - [`familles_revision()`](https://gilles13.github.io/eduschool/reference/familles_revision.md)
   : Familles de fiches de revision
 - [`fiches_revision()`](https://gilles13.github.io/eduschool/reference/fiches_revision.md)

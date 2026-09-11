@@ -3,40 +3,31 @@
 ![edusch∞l Math — plusieurs chemins, différents points de vue, mêmes
 découvertes](identite/hero-eduschool-math.png)
 
-> **Voir les maths autrement. Toujours avec rigueur.**
+## μάθημα — *máthēma*
 
-## Je veux travailler les maths
+> **Ce qui s’apprend. Ce qui s’étudie. Une connaissance.**
 
-### Choisir mon niveau
+Avant d’apprendre les mathématiques, faisons un pas de côté : prenons le
+temps de comprendre le mot lui-même.
 
-**Collège :**
-[6e](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md)
-·
-[5e](https://gilles13.github.io/eduschool/articles/mathematiques-5e.md)
-·
-[4e](https://gilles13.github.io/eduschool/articles/mathematiques-4e.md)
-·
-[3e](https://gilles13.github.io/eduschool/articles/mathematiques-3e.md)
+**Mathématiques** vient du grec *máthēma* (μάθημα) : « ce qui s’apprend,
+ce qui s’étudie ».
 
-**Lycée :**
-[2de](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md)
-· [1re
-spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md)
-· [Terminale
-spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md)
+Celui-là, on peut même l’apprendre **par cœur**. ❤️
 
-**[Fiches de révision
-→](https://gilles13.github.io/eduschool/articles/fiches-revision-mathematiques.md)**
+> **Les maths ne commencent peut-être pas par un calcul. Elles
+> commencent par l’envie de comprendre.**
 
-**[Comprendre les programmes et les notions
-→](https://gilles13.github.io/eduschool/articles/programmes-et-capacites.md)**
+[**Commencer par les maths
+→**](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
 
-**[Comprendre les parcours scolaires
-→](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)**
+[**Comprendre un parcours scolaire
+→**](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)
 
-------------------------------------------------------------------------
+[**Pourquoi eduschool ?
+→**](https://gilles13.github.io/eduschool/articles/a-propos.md)
 
-## J’utilise R
+**J’utilise R**
 
 ``` r
 
@@ -45,13 +36,5 @@ remotes::install_github("gilles13/eduschool")
 library(eduschool)
 ```
 
-``` r
-
-parcours("3E")
-programme("6E")
-revision("6E")
-exercices("6E", "proportionnalité", n = 5)
-```
-
-**[Référence R
-→](https://gilles13.github.io/eduschool/reference/index.md)**
+[**Référence R
+→**](https://gilles13.github.io/eduschool/reference/index.md)

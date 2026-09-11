@@ -34,3 +34,12 @@ dans le référentiel et seront progressivement exposés ici.
   mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md)
 - [Retour aux mathématiques par
   niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+
+------------------------------------------------------------------------
+
+[←
+2de](https://gilles13.github.io/eduschool/articles/mathematiques-2de.md)
+· [Tous les
+niveaux](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+· [Terminale spécialité
+→](https://gilles13.github.io/eduschool/articles/mathematiques-terminale-specialite.md)

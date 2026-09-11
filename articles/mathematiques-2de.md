@@ -13,6 +13,11 @@ programme("2GT")
 
 ## Réviser
 
+Pour commencer par une notion concrète et visuelle :
+
+- [Les ensembles de nombres : fiche, schéma et cinq
+  rappels](https://gilles13.github.io/eduschool/articles/fiche-ensembles-nombres.md)
+
 Les fiches thématiques et la fiche essentielle de seconde sont déjà
 décrites par le moteur de révision du package.
 
@@ -38,3 +43,12 @@ modifier la structure de navigation.
   mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md)
 - [Retour aux mathématiques par
   niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+
+------------------------------------------------------------------------
+
+[←
+3e](https://gilles13.github.io/eduschool/articles/mathematiques-3e.md) ·
+[Tous les
+niveaux](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+· [1re spécialité
+→](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md)

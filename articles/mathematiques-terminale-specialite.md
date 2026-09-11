@@ -31,3 +31,10 @@ intégration.
   mathématiques](https://gilles13.github.io/eduschool/articles/approfondir-ses-connaissances-en-mathematiques.md)
 - [Retour aux mathématiques par
   niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+
+------------------------------------------------------------------------
+
+[← 1re
+spécialité](https://gilles13.github.io/eduschool/articles/mathematiques-1re-specialite.md)
+· [Tous les
+niveaux](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
