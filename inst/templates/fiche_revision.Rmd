@@ -46,7 +46,7 @@ for (i in seq_len(nrow(r$blocs))) {
   }
   cat("\n## ", b$titre, "\n\n", sep = "")
   if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
-  if (nzchar(b$formule)) cat("$$", b$formule, "$$\n\n")
+  if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
   if (nzchar(b$illustration_id)) {
     eduschool:::.dessiner_revision(b$illustration_id)
     cat("\n")

@@ -8,32 +8,40 @@ vignette: >
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(eduschool)
+
+revision = generer_essentiel("4E")
 ```
 
-Cette page est l'espace d'entrée pour les **mathématiques en 4e**.
-Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
-réviser, s'entraîner et retrouver des ressources.
+En 4e, les mathématiques deviennent plus structurées : les puissances organisent
+les écritures numériques, les équations donnent une méthode générale pour chercher
+une inconnue et la proportionnalité entre dans la géométrie avec Thalès. Pythagore,
+trigonométrie, statistiques et probabilités ajoutent de nouveaux outils de raisonnement.
 
-## Programme
+# Ce qu'il faut retenir
 
-```{r, eval=FALSE}
-programme("4E")
+```{r reperes, results='asis'}
+for (i in seq_len(nrow(revision$blocs))) {
+  b = revision$blocs[i, ]
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
+  if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
+}
 ```
 
-## Réviser
+# Relier les idées
 
-Les fiches synthétiques de 4e seront ajoutées progressivement.
+Les nouveaux outils de 4e s'appuient souvent sur des idées déjà rencontrées. Les
+flèches rendent ces passages visibles : on part d'une idée connue pour voir ce qu'elle
+permet de construire ensuite.
 
-## S'entraîner
+```{r relations, results='asis'}
+cat(eduschool:::.rendre_relations_niveau_html("4E"))
+```
 
-Les exercices et automatismes de 4e seront regroupés ici au fur et à mesure de
-leur intégration.
+# Continuer
 
-
-## Ressources
-
+- [Voir les mathématiques par niveau](mathematiques-par-niveau.html)
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
-- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

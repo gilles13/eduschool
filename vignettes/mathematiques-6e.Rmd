@@ -8,33 +8,39 @@ vignette: >
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(eduschool)
+
+revision = generer_essentiel("6E")
 ```
 
-Cette page est l'espace d'entrée pour les **mathématiques en 6e**.
-Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
-réviser, s'entraîner et retrouver des ressources.
+Cette page rassemble ce qu'il faut **retenir**, mais aussi les liens qui permettent
+de comprendre où les notions de 6e prennent place. Elle ne remplace pas le cours :
+elle aide à retrouver l'essentiel et à voir ce que chaque idée prépare.
 
-## Programme
+# Ce qu'il faut retenir
 
-```{r, eval=FALSE}
-programme("6E")
+```{r reperes, results='asis'}
+for (i in seq_len(nrow(revision$blocs))) {
+  b = revision$blocs[i, ]
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
+  if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
+}
 ```
 
-## Réviser
+# Relier les idées
 
-- [Fiche essentielle de 6e](fiche-mathematiques-6e.html)
-- [Toutes les fiches de révision](fiches-revision-mathematiques.html)
+Chaque flèche montre un passage entre deux idées. La petite phrase dessous explique
+ce que ce passage permet de comprendre. Les doubles flèches signalent deux idées
+qu'il est utile de regarder ensemble.
 
-## S'entraîner
+```{r relations, results='asis'}
+cat(eduschool:::.rendre_relations_niveau_html("6E"))
+```
 
-Les exercices de 6e sont accessibles depuis l'API `exercices()` et seront
-progressivement reliés à cette page.
+# Continuer
 
-
-## Ressources
-
+- [Voir les mathématiques par niveau](mathematiques-par-niveau.html)
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
-- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

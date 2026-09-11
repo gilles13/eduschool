@@ -177,3 +177,6 @@ MATC_TABLEAU_CROISE;"Tableau croisé";"Tableau d’effectifs ou de fréquences c
 MATC_FREQUENCE_CONDITIONNELLE;"Fréquence conditionnelle";"Fréquence calculée relativement à une sous-population définie par une modalité.";STATISTIQUES;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_EQUIPROBABILITE;"Équiprobabilité";"Situation où toutes les issues élémentaires ont la même probabilité.";PROBABILITES;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_UNIVERS_ISSUE;"Univers et issues";"Ensemble des résultats possibles d’une expérience aléatoire et ses éléments.";PROBABILITES;fondamental;2GT;PRG_MAT_2GT_2026;""
+MATC_RATIO;"Ratio";"Rapport entre deux quantités exprimant leur relation multiplicative.";NOMBRES;structurant;5E;PRG_MAT_C4_2026;"Un ratio compare deux quantités en disant combien de parts de l'une correspondent à combien de parts de l'autre."
+MATC_MOYENNE;"Moyenne arithmétique";"Somme des valeurs divisée par leur nombre, ou moyenne pondérée lorsque les valeurs ont des effectifs.";STATISTIQUES;structurant;5E;PRG_MAT_C4_2026;"On répartit la somme totale également entre toutes les valeurs."
+MATC_SYMETRIE_CENTRALE;"Symétrie centrale";"Transformation qui associe à un point son image par demi-tour autour d'un centre.";GEOMETRIE;structurant;5E;PRG_MAT_C4_2026;"C'est un demi-tour autour d'un point."

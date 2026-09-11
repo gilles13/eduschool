@@ -484,7 +484,19 @@
     "\\colorbox{edulight}{\\parbox{0.94\\linewidth}{",
     .tex_fraction(echapper_tex(definition)),
     "}}",
-    "\\section*{8. A toi}",
+    "\\section*{8. Ce que les fractions ouvrent}",
+    paste0(
+      "Une fraction ne sert pas seulement a decrire un partage. Elle permet aussi ",
+      "de comparer une partie a un tout, de prendre une fraction d'une quantite ",
+      "et d'exprimer un rapport."
+    ),
+    paste0(
+      "Quand le denominateur vaut 100, on retrouve les \\textbf{pourcentages} : ",
+      "$\\frac{25}{100}=25\\,\\%$. Les fractions reapparaissent aussi dans la ",
+      "\\textbf{proportionnalit\u00e9} et, plus tard, dans les probabilites."
+    ),
+    "Ce sont donc plusieurs ecritures et plusieurs usages d'une meme idee : comparer des quantites par un rapport.",
+    "\\section*{9. A toi}",
     "Une tablette est partagee en 12 carres egaux. Tu manges 5 carres. Quelle fraction de la tablette as-tu mangee ? Quelle fraction reste-t-il ?",
     "\\vfill",
     "{\\small\\itshape Ca ne marche pas ? Pas de panique. On essaie autrement.}",

@@ -54,13 +54,28 @@ en vigueur en 6e depuis la rentrée 2025-2026.
 # Les repères essentiels
 
 ```{r blocs, results='asis'}
-for (i in seq_len(nrow(r$blocs))) {
-  b = r$blocs[i, ]
+blocs_reperes = r$blocs[r$blocs$type != "LIEN", , drop = FALSE]
+for (i in seq_len(nrow(blocs_reperes))) {
+  b = blocs_reperes[i, ]
   cat('<div class="eduschool-bloc" style="--edu-accent:', identite$couleur, '">\n', sep = "")
   cat("\n## ", b$titre, "\n\n", sep = "")
   if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
   if (nzchar(b$formule)) cat("$$", b$formule, "$$\n\n")
   cat("</div>\n")
+}
+```
+
+# Relier les idées
+
+Les notions de 6e ne vivent pas chacune dans leur coin. Repérer leurs liens aide
+à comprendre pourquoi on les apprend et ce qu'elles permettront de faire ensuite.
+
+```{r liens, results='asis'}
+blocs_liens = r$blocs[r$blocs$type == "LIEN", , drop = FALSE]
+for (i in seq_len(nrow(blocs_liens))) {
+  b = blocs_liens[i, ]
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
 }
 ```
 

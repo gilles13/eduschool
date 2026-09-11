@@ -8,32 +8,40 @@ vignette: >
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(eduschool)
+
+revision = generer_essentiel("5E")
 ```
 
-Cette page est l'espace d'entrée pour les **mathématiques en 5e**.
-Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
-réviser, s'entraîner et retrouver des ressources.
+En 5e, plusieurs idées rencontrées en 6e commencent à se rejoindre : les fractions
+s'inscrivent dans les nombres rationnels, la proportionnalité se formalise, les
+lettres deviennent de vrais outils de calcul et les transformations géométriques
+forment une même famille. Cette page rassemble l'essentiel et montre ces connexions.
 
-## Programme
+# Ce qu'il faut retenir
 
-```{r, eval=FALSE}
-programme("5E")
+```{r reperes, results='asis'}
+for (i in seq_len(nrow(revision$blocs))) {
+  b = revision$blocs[i, ]
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
+  if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
+}
 ```
 
-## Réviser
+# Relier les idées
 
-Les fiches synthétiques de 5e seront ajoutées progressivement.
+Les idées commencent à former des chemins. Une flèche montre ce qu'une notion permet
+de construire ou de mieux comprendre ; une double flèche rapproche deux points de vue
+complémentaires.
 
-## S'entraîner
+```{r relations, results='asis'}
+cat(eduschool:::.rendre_relations_niveau_html("5E"))
+```
 
-Les exercices et automatismes de 5e seront regroupés ici au fur et à mesure de
-leur intégration.
+# Continuer
 
-
-## Ressources
-
+- [Voir les mathématiques par niveau](mathematiques-par-niveau.html)
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
-- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)

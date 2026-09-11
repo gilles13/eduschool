@@ -8,32 +8,41 @@ vignette: >
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(eduschool)
+
+revision = generer_essentiel("3E")
 ```
 
-Cette page est l'espace d'entrée pour les **mathématiques en 3e**.
-Elle regroupe progressivement les quatre usages utiles : comprendre le programme,
-réviser, s'entraîner et retrouver des ressources.
+La 3e est moins une fin qu'un point de jonction. La proportionnalité devient fonction
+linéaire, les droites conduisent aux fonctions affines, les rapports de longueurs
+se retrouvent dans Thalès et la trigonométrie, et le calcul littéral prépare le
+langage algébrique du lycée. Cette page rassemble ces repères avant le passage en seconde.
 
-## Programme
+# Ce qu'il faut retenir
 
-```{r, eval=FALSE}
-programme("3E")
+```{r reperes, results='asis'}
+for (i in seq_len(nrow(revision$blocs))) {
+  b = revision$blocs[i, ]
+  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
+  if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
+}
 ```
 
-## Réviser
+# Relier les idées
 
-Les fiches synthétiques de 3e seront ajoutées progressivement.
+En 3e, beaucoup d'idées du collège se rejoignent. Les flèches montrent comment une
+notion change de langage, devient plus générale ou ouvre directement vers les
+mathématiques du lycée.
 
-## S'entraîner
+```{r relations, results='asis'}
+cat(eduschool:::.rendre_relations_niveau_html("3E"))
+```
 
-Les exercices, automatismes et révisions de fin de collège seront regroupés ici
-au fur et à mesure de leur intégration.
+# Continuer
 
-
-## Ressources
-
+- [Voir les mathématiques par niveau](mathematiques-par-niveau.html)
+- [Mathématiques — 2de](mathematiques-2de.html)
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
-- [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)
