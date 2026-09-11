@@ -44,3 +44,7 @@ cat(eduschool:::.rendre_relations_niveau_html("6E"))
 - [Voir les mathématiques par niveau](mathematiques-par-niveau.html)
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+
+---
+
+[Tous les niveaux](mathematiques-par-niveau.html) · [5e →](mathematiques-5e.html)

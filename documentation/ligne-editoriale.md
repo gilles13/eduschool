@@ -108,6 +108,31 @@ Et dans les espaces de contribution :
 Cette auto-dérision vise l'auteur et le projet, jamais la personne qui demande
 de l'aide.
 
+## Toujours ouvrir des portes
+
+Un principe directeur relie désormais les choix pédagogiques, techniques et
+éthiques du projet :
+
+> **Toujours ouvrir des portes.**
+
+Pédagogiquement, une notion peut conduire vers une autre question, une autre
+représentation ou un prolongement, sans imposer de le suivre. Techniquement,
+`eduschool` préfère supprimer les barrières inutiles plutôt que créer des
+dépendances ou des abstractions sans usage réel.
+
+Cette ouverture vaut aussi pour la diffusion :
+
+> **eduschool est libre, gratuit et ouvert.**
+
+Le savoir produit et partagé par `eduschool` doit rester accessible à tous. Les
+bénéfices possibles de la démarche ne doivent jamais devenir un intérêt
+financier pour son concepteur. La finalité du projet est la transmission et le
+partage du savoir, pas sa monétisation.
+
+Ce principe doit guider les futurs choix de diffusion, de licence et
+d'architecture : une évolution qui ferme inutilement l'accès au savoir va dans
+la mauvaise direction.
+
 ## Navigation et simplicité
 
 La documentation suit la même règle de frugalité que le code. La barre de

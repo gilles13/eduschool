@@ -24,6 +24,10 @@ programme("2GT")
 
 ## Réviser
 
+Pour commencer par une notion concrète et visuelle :
+
+- [Les ensembles de nombres : fiche, schéma et cinq rappels](fiche-ensembles-nombres.html)
+
 Les fiches thématiques et la fiche essentielle de seconde sont déjà décrites par
 le moteur de révision du package.
 
@@ -45,3 +49,7 @@ la structure de navigation.
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
 - [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)
+
+---
+
+[← 3e](mathematiques-3e.html) · [Tous les niveaux](mathematiques-par-niveau.html) · [1re spécialité →](mathematiques-1re-specialite.html)

@@ -37,3 +37,7 @@ Les exercices et automatismes seront regroupés ici à mesure de leur intégrati
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
 - [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)
+
+---
+
+[← 1re spécialité](mathematiques-1re-specialite.html) · [Tous les niveaux](mathematiques-par-niveau.html)

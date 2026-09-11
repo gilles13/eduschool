@@ -41,3 +41,7 @@ référentiel et seront progressivement exposés ici.
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
 - [Retour aux mathématiques par niveau](mathematiques-par-niveau.html)
+
+---
+
+[← 2de](mathematiques-2de.html) · [Tous les niveaux](mathematiques-par-niveau.html) · [Terminale spécialité →](mathematiques-terminale-specialite.html)

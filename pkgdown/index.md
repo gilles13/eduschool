@@ -5,32 +5,26 @@
 
 # edusch∞l Math
 
-> **Voir les maths autrement. Toujours avec rigueur.**
+## μάθημα — *máthēma*
 
-## Je veux travailler les maths
+> **Ce qui s'apprend. Ce qui s'étudie. Une connaissance.**
 
-### Choisir mon niveau
+Avant d'apprendre les mathématiques, faisons un pas de côté : prenons le temps de comprendre le mot lui-même.
 
-**Collège :**
-[6e](articles/mathematiques-6e.html) ·
-[5e](articles/mathematiques-5e.html) ·
-[4e](articles/mathematiques-4e.html) ·
-[3e](articles/mathematiques-3e.html)
+**Mathématiques** vient du grec *máthēma* (μάθημα) : « ce qui s'apprend, ce qui s'étudie ».
 
-**Lycée :**
-[2de](articles/mathematiques-2de.html) ·
-[1re spécialité](articles/mathematiques-1re-specialite.html) ·
-[Terminale spécialité](articles/mathematiques-terminale-specialite.html)
+Celui-là, on peut même l'apprendre **par cœur**. ❤️
 
-**[Fiches de révision →](articles/fiches-revision-mathematiques.html)**
+> **Les maths ne commencent peut-être pas par un calcul. Elles commencent par l'envie de comprendre.**
 
-**[Comprendre les programmes et les notions →](articles/programmes-et-capacites.html)**
+[**Commencer par les maths →**](articles/mathematiques-par-niveau.html)
 
-**[Comprendre les parcours scolaires →](articles/parcours-scolaires.html)**
+[**Comprendre un parcours scolaire →**](articles/parcours-scolaires.html)
 
----
+[**Pourquoi eduschool ? →**](articles/a-propos.html)
 
-## J'utilise R
+<details>
+<summary><strong>J'utilise R</strong></summary>
 
 ```r
 install.packages("remotes")
@@ -38,11 +32,6 @@ remotes::install_github("gilles13/eduschool")
 library(eduschool)
 ```
 
-```r
-parcours("3E")
-programme("6E")
-revision("6E")
-exercices("6E", "proportionnalité", n = 5)
-```
+[**Référence R →**](reference/index.html)
 
-**[Référence R →](reference/index.html)**
+</details>

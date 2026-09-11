@@ -20,44 +20,16 @@ navbar:
       menu:
         - text: À propos
           href: articles/a-propos.html
-
-        - text: -------
-
-        - text: Découvrir eduschool
         - text: Prise en main
           href: articles/prise-en-main.html
-        - text: Prendre un parent par la main
-          href: articles/prendre-un-parent-par-la-main.html
-
-        - text: -------
-
-        - text: Mathématiques
         - text: Mathématiques par niveau
           href: articles/mathematiques-par-niveau.html
-        - text: "Mathématiques & économie"
-          href: articles/mathematiques-et-economie.html
-        - text: "Math & infini"
-          href: articles/infini_1_les_math_et_l_eco.html
-
-        - text: -------
-
         - text: Parcours scolaire
           href: articles/parcours-scolaires.html
-
-        - text: -------
-
-        - text: Aller plus loin
         - text: Sous le capot
           href: articles/architecture-des-donnees.html
-        - text: Collaborer et partager
+        - text: Contribuer et partager
           href: articles/contribuer-et-partager.html
-
-        - text: -------
-
-        - text: Journal du projet
-          href: articles/journal-du-projet.html
-        - text: Livre d'or
-          href: articles/livre-d-or.html
         - text: Tous les articles
           href: articles/index.html
 
@@ -67,7 +39,6 @@ articles:
     contents:
       - a-propos
       - journal-du-projet
-      - livre-d-or
       - prise-en-main
       - prendre-un-parent-par-la-main
 
@@ -108,11 +79,6 @@ articles:
     contents:
       - contribuer-et-partager
 
-  - title: Pour en finir
-    desc: Philosophie, folklore et mauvaises plaisanteries officiellement conservées.
-    contents:
-      - guide-d-or
-
   # Articles construits par pkgdown mais volontairement absents de l'index général.
   # Ils restent accessibles depuis les pages de synthèse qui les référencent.
   - title: internal
@@ -125,4 +91,5 @@ articles:
       - mathematiques-1re-specialite
       - mathematiques-terminale-specialite
       - fiche-derivation-premiere
+      - fiche-ensembles-nombres
       - developpement

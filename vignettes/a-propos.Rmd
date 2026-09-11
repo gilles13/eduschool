@@ -1,244 +1,33 @@
 ---
-title: "À propos : un parent, des maths et un appel à l'aide"
+title: "À propos"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{À propos : un parent, des maths et un appel à l'aide}
+  %\VignetteIndexEntry{À propos}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-```
+`eduschool` est le témoignage vivant qu'on peut avoir été **fâché avec les
+maths** et vouloir, un jour, **s'en réconcilier**.
 
-## Avant de commencer
+C'est COOL.
 
-Quelques principes sont plus importants que tout le reste de cette documentation.
+La preuve : son auteur, un parent qui essaie encore de comprendre ce que ses
+enfants apprennent, fabrique un outil pour **apprendre**.
 
-> **Voir les maths autrement. Toujours avec rigueur.**
+Et puisqu'un savoir ne vaut vraiment que lorsqu'il est partagé...
 
-> **Il n'existe pas une seule bonne façon d'apprendre.**
+**il le partage.**
 
-Une explication qui fonctionne pour un élève peut laisser son voisin parfaitement
-perplexe. Une formule peut éclairer quelqu'un ; un dessin, un exemple concret ou
-un graphique en aidera un autre. Parfois, il faut simplement revenir plus tard
-et essayer autrement.
-
-`eduschool` ne prétend donc pas enseigner **la** bonne manière de comprendre les
-mathématiques. Il ne prétend pas davantage apprendre les mathématiques à la place
-de l'élève, du professeur ou du travail personnel.
-
-Le projet essaie plus modestement de proposer des pistes de réflexion, des
-représentations, des exemples, des fiches synthétiques, des données réelles et
-quelques astuces pour les élèves et les parents qui les accompagnent.
-
-Une fiche d'`eduschool` n'est donc **ni un cours officiel, ni une méthode
-pédagogique universelle, ni une vérité à apprendre par coeur**. C'est une
-proposition parmi d'autres.
-
-Si elle aide à comprendre, tant mieux. Si elle ne fonctionne pas, il faut en
-essayer une autre. Et si elle permet simplement à un parent et à un élève de se
-poser ensemble une meilleure question, elle a probablement déjà servi à quelque
-chose.
-
-> **L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
-
-Dans un exercice ou un quiz, cette règle a une conséquence très concrète :
-`eduschool` commente la réponse et le raisonnement qu'elle peut représenter,
-jamais la personne qui l'a donnée. Une mauvaise réponse doit ouvrir une piste
-de progression, pas produire un jugement.
-
-> **eduschool évalue une réponse, jamais la personne qui l'a donnée.**
-
-Se tromper dans un calcul, choisir une mauvaise méthode ou ne pas comprendre une
-notion du premier coup fait partie de l'apprentissage. L'important n'est pas de
-ne jamais se tromper, mais de pouvoir revenir sur son raisonnement, comprendre
-ce qui n'a pas fonctionné et essayer autrement.
+`eduschool` ne promet donc ni méthode miracle ni chemin unique : une formule,
+un dessin, un exemple, une donnée réelle ou une autre explication peuvent ouvrir
+une nouvelle porte. Si ça ne marche pas, on essaie autrement. Toujours avec
+rigueur.
 
 > **Un savoir prend toute sa valeur lorsqu'il est partagé.**
 
-Comprendre quelque chose est précieux. Pouvoir ensuite l'expliquer, le discuter,
-le corriger et le transmettre lui donne une autre dimension. `eduschool` est
-construit dans cet esprit : apprendre, puis partager ce qui a été compris afin
-que d'autres puissent à leur tour s'en emparer.
-
-## Un parent qui tente de comprendre
-
-`eduschool` est développé par un parent qui tente de comprendre ce que ses
-enfants apprennent à l'école.
-
-Il essaie donc d'apprendre. Puis de comprendre. Puis d'expliquer ce qu'il vient
-péniblement de comprendre.
-
-Le problème est qu'il ne comprend pas grand-chose aux mathématiques et qu'il
-doit quand même aider ses propres enfants.
-
-**HELP PLIZ.**
-
-Cette situation est devenue une partie de la méthode du projet. Une notion qui
-ne peut être expliquée clairement à quelqu'un qui ne la maîtrise pas encore
-mérite probablement d'être retravaillée.
-
-## Pourquoi le ∞ ?
-
-Le symbole ∞ d'**edusch∞l Math** n'est pas seulement une façon de rappeler que
-les connaissances n'ont pas vraiment de fin. Il représente aussi les portes
-qu'une notion peut ouvrir et les différents chemins qui permettent de
-l'approcher.
-
-L'infini lui-même en donne une belle image : on peut l'aborder par une suite qui
-se prolonge, une droite que l'on imagine sans extrémité, une limite ou bien
-d'autres représentations encore. Aucune de ces portes n'épuise à elle seule le
-concept.
-
-C'est aussi la promesse d'`eduschool` : si une représentation ne permet pas de
-comprendre, en essayer une autre — **mais toujours avec la même exigence de
-rigueur**.
-
-## Ça ne marche pas ? Pas de panique
-
-> **Ça ne marche pas ? Pas de panique. On essaie autrement.**
-
-Une explication ne fonctionne pas ? On change d'exemple. Une représentation ne
-parle pas ? On en essaie une autre. Le chemin est bloqué ? On en prend un autre.
-Et on recommence.
-
-C'est précisément l'un des rôles d'`eduschool` : donner à la personne qui
-accompagne davantage de moyens d'essayer. Une fiche, un dessin ou une correction
-ne sont jamais censés constituer l'unique chemin vers un concept.
-
-> **eduschool ne remplace pas celui qui transmet. Il lui donne davantage de
-> moyens d'essayer.**
-
-## La Face B : pourquoi R ?
-
-L'Éducation nationale a choisi Python pour faire découvrir la programmation aux
-élèves. C'est probablement très raisonnable.
-
-`eduschool`, lui, est développé en R. Pourquoi ? Parce que c'est l'outil que son
-auteur connaît, aime utiliser et avec lequel il sait — plus ou moins — fabriquer
-des choses.
-
-**eduschool Math est donc aussi une sorte de Face B : un autre chemin pour
-essayer d'arriver au même endroit.**
-
-Est-ce le meilleur choix technique ? Peut-être pas. Est-ce que ça fonctionne ?
-C'est précisément ce que nous sommes en train de vérifier.
-
-*Compte tenu du niveau du développeur, utilisation à vos risques et périls.*
-
-Derrière la blague, la métaphore vaut aussi pour les mathématiques : définition
-ou intuition, calcul ou dessin, exercice ou discussion. Il n'existe pas
-nécessairement une seule bonne porte d'entrée dans une connaissance.
-
-## C'est donc un projet collaboratif
-
-`eduschool` n'a pas vocation à faire semblant qu'un développeur solitaire sait
-tout sur les programmes, la pédagogie, les mathématiques, les données publiques
-et R. Ce serait ambitieux. Ce serait surtout faux.
-
-Le projet a besoin de plusieurs types de contributions : celles de personnes qui
-connaissent les mathématiques, de celles qui les enseignent, de parents qui
-essaient de les réapprendre, d'élèves capables de dire « là, je ne comprends
-plus », et de personnes qui savent améliorer le code et les graphiques.
-
-## Signaler une incompréhension est déjà contribuer
-
-Une contribution n'a pas besoin d'arriver avec une solution. Dire précisément
-qu'une explication saute une étape, qu'un graphique n'aide pas, qu'un exercice
-est ambigu ou qu'une correction suppose une connaissance non introduite fournit
-déjà une information utile.
-
-> **Qu'est-ce que vous n'avez pas compris ?**
->
-> N'ayez aucune honte. L'auteur du package n'a probablement pas compris non plus.
-
-## Proposer et construire
-
-Les issues GitHub servent de premier atelier collaboratif. Quatre portes sont
-proposées :
-
-1. signaler « je n'ai pas compris » ;
-2. proposer un exercice ou une situation ;
-3. signaler ou corriger un contenu pédagogique ;
-4. proposer une amélioration de R, des données ou de l'architecture.
-
-Une proposition peut ensuite devenir une pull request, un nouveau gabarit
-d'exercice, une fiche, un graphique, une correction ou parfois simplement une
-meilleure phrase.
-
-## Et si le système grandit ?
-
-Alors nous l'adapterons. Pour l'instant, GitHub sait déjà stocker des discussions,
-des issues et des pull requests. Lui ajouter une base de données, une API et
-trois classes abstraites pour demander « pourquoi Pythagore ? » serait une
-façon assez spectaculaire de transformer `eduschool` en usine à gaz.
-
-Le protocole reste donc inchangé : **on commence petit, on fait fonctionner, on
-contrôle, puis seulement on généralise.**
-
-## À Philippe Chataignon
-
-Une place particulière doit être réservée ici à **Philippe Chataignon**.
-
-C'est par la lecture de [son blog et de ses réflexions sur l'open data](https://chataignon.com/opendata.html) que j'ai commencé à m'intéresser sérieusement au sujet. Bien avant qu'`eduschool` n'existe, son travail a contribué à faire évoluer ma façon de considérer les données publiques : non plus seulement comme une matière première à traiter, mais comme un bien à rendre accessible, à expliquer, à partager et à réutiliser.
-
-Puis, par un heureux hasard professionnel, j'ai eu l'occasion de travailler avec lui sur un petit projet, pendant seulement deux ou trois semaines. Philippe en a très naturellement pris le lead. Son expertise, bien supérieure à la mienne, le justifiait pleinement.
-
-Mais ce n'est finalement pas ce que je retiens le plus de cette expérience.
-
-Nous partagions notamment une même appétence pour l'informatique et, plus particulièrement, pour le langage R. Je me souviens d'une visioconférence Zoom où nous n'étions que tous les deux. Philippe avait accepté de prendre un moment pour me montrer précisément sa méthode de travail, que je trouvais particulièrement habile. Il exploitait pleinement les possibilités offertes par les packages R et certaines de leurs fonctions les plus avancées.
-
-À un moment, il me présente une fonction et me demande si je la connais. Je lui donne une réponse un peu approximative.
-
-Sa réponse tombe immédiatement :
-
-**« Non, pas du tout. »**
-
-Pas de « oui, presque », de « pas tout à fait » ou de détour diplomatique. Non : *pas du tout*.
-
-J'ai été surpris, mais plutôt agréablement. Cette franchise directe, sans pommade inutile, me plaisait. Je n'ai d'ailleurs pas réussi à retenir un petit sourire en coin.
-
-Philippe l'a immédiatement remarqué et, pensant peut-être avoir été un peu trop direct, a commencé à reprendre : « Non, enfin, ce n'est pas… »
-
-Je l'ai interrompu :
-
-**« Non, aucun problème. Je préfère ça. »**
-
-Il m'a souri.
-
-Et il est reparti, presque frénétiquement, dans son explication.
-
-Visiblement, le sujet le passionnait. Et moi aussi.
-
-La discussion a continué ainsi pendant environ une heure.
-
-Avec le recul, c'est probablement cela qui m'a le plus marqué. Philippe occupait des responsabilités importantes dans l'organisation. Moi, j'étais un agent avec un niveau de responsabilité sans commune mesure avec le sien. Pourtant, pendant cette heure-là, cela n'avait strictement aucune importance.
-
-Il avait devant lui quelqu'un qui voulait comprendre quelque chose qu'il aimait et maîtrisait. Cela semblait lui suffire pour avoir envie de le transmettre.
-
-Je reste convaincu qu'il aurait consacré la même énergie au moins gradé de l'organisation. Sa passion pour la statistique, l'informatique et la transmission du savoir dépassait largement les distances que les organigrammes peuvent parfois installer entre les personnes.
-
-Cette heure de son temps pourrait sembler anecdotique. Pour moi, elle ne l'est pas.
-
-J'y ai appris des choses sur R, bien sûr. Mais j'y ai surtout vu quelque chose de beaucoup plus important : on peut avoir beaucoup appris, beaucoup progressé, avoir acquis de grandes responsabilités et une expertise reconnue, sans que cela oblige à mettre de la distance avec celui qui en sait moins. Au contraire, ce savoir peut devenir une raison supplémentaire de se rapprocher de lui pour le transmettre.
-
-C'est une leçon de vie que je n'oublierai jamais.
-
-Elle trouve naturellement sa place dans l'un des principes d'`eduschool` :
-
-**« Un savoir prend toute sa valeur lorsqu'il est partagé. »**
-
-Merci Philippe.
-
-**Tu es un grand homme.**
-
-
-## Plusieurs chemins
-
-Une explication ne fonctionne pas ? Pas de panique. On change d'exemple, de
-représentation, de point de vue ou de chemin, puis on recommence.
-
-> **Plusieurs chemins, différents points de vue, mêmes découvertes.**
->
-> **Au bout, de l'émerveillement.**
+C'est pourquoi `eduschool` est **libre, gratuit et ouvert**.
+
+[Découvrir les mathématiques par niveau](mathematiques-par-niveau.html) ·
+[Comprendre les parcours scolaires](parcours-scolaires.html) ·
+[Contribuer et partager](contribuer-et-partager.html)

@@ -46,3 +46,7 @@ cat(eduschool:::.rendre_relations_niveau_html("3E"))
 - [Mathématiques — 2de](mathematiques-2de.html)
 - [Programmes et capacités](programmes-et-capacites.html)
 - [Approfondir ses connaissances en mathématiques](approfondir-ses-connaissances-en-mathematiques.html)
+
+---
+
+[← 4e](mathematiques-4e.html) · [Tous les niveaux](mathematiques-par-niveau.html) · [2de →](mathematiques-2de.html)

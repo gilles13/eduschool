@@ -24,16 +24,18 @@ package. Le site n'est donc qu'une vue de ces données, et non une seconde sourc
 
 ## Accès par classe
 
-[Choisir directement un niveau, de la 6e à la Terminale](mathematiques-par-niveau.html).
+- [6e](mathematiques-6e.html)
+- [5e](mathematiques-5e.html)
+- [4e](mathematiques-4e.html)
+- [3e](mathematiques-3e.html)
+- [2de générale et technologique](mathematiques-2de.html)
+- [1re générale — spécialité mathématiques](mathematiques-1re-specialite.html)
+- [Terminale générale — spécialité mathématiques](mathematiques-terminale-specialite.html)
 
 ## Fiches disponibles
 
 - [6e — Ce qu'il faut retenir et comment les notions se relient](mathematiques-6e.html)
 - [1re spécialité — Dérivation, fiche pilote](fiche-derivation-premiere.html)
-
-Les autres niveaux sont accessibles depuis la page
-[Mathématiques par niveau](mathematiques-par-niveau.html) et seront enrichis
-progressivement sur le même principe.
 
 ## Depuis R
 

@@ -1,0 +1,6 @@
+code;symbole;nom;definition;exemple;inclus_dans;ordre
+N;ℕ;Nombres naturels;Entiers positifs ou nuls.;3;Z;1
+Z;ℤ;Nombres entiers;Nombres naturels, leurs opposés et zéro.;-2;D;2
+D;𝔻;Nombres décimaux;Nombres ayant une écriture décimale finie.;0,25;Q;3
+Q;ℚ;Nombres rationnels;Nombres pouvant s’écrire comme quotient de deux entiers avec un dénominateur non nul.;2/3;R;4
+R;ℝ;Nombres réels;Tous les nombres repérables sur une droite graduée.;√2;;5
