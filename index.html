@@ -25,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.25.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.26.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,76 +74,39 @@
 </div>
 <div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="comprendre-sa-scolarité-travailler-les-mathématiques">Comprendre sa scolarité. Travailler les mathématiques.<a class="anchor" aria-label="anchor" href="#comprendre-sa-scolarit%C3%A9-travailler-les-math%C3%A9matiques"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="eduschl-math">edusch∞l Math<a class="anchor" aria-label="anchor" href="#eduschl-math"></a>
 </h1>
 </div>
 <blockquote>
-<p><strong>Apprendre → structurer → transmettre.</strong></p>
+<p><strong>Voir les maths autrement. Toujours avec rigueur.</strong></p>
 </blockquote>
-<p><strong>eduschool</strong> aide à comprendre la scolarité du collège au lycée et propose des outils pour travailler les mathématiques.</p>
-<p>Pas besoin de connaître l’architecture du package pour commencer. Choisissez simplement la porte qui vous ressemble le plus. Le but est de disposer vite d’un support qui puisse être imprimé, lu sur tablette, envoyé et surtout discuté ensemble.</p>
-<hr>
 <div class="section level2">
-<h2 id="je-suis-parent">Je suis parent<a class="anchor" aria-label="anchor" href="#je-suis-parent"></a>
+<h2 id="je-veux-travailler-les-maths">Je veux travailler les maths<a class="anchor" aria-label="anchor" href="#je-veux-travailler-les-maths"></a>
 </h2>
-<p>Vous voulez comprendre ce que votre enfant est censé apprendre, ce qui compte vraiment d’une classe à l’autre et comment l’aider sans refaire le cours à sa place.</p>
-<p><strong><a href="articles/prendre-un-parent-par-la-main.html">Prendre un parent par la main →</a></strong></p>
-<p>Cycles, notions essentielles, difficultés classiques, DNB, lycée et spécialité mathématiques : le guide long, progressif et volontairement humain.</p>
-<hr>
-</div>
-<div class="section level2">
-<h2 id="je-suis-élève">Je suis élève<a class="anchor" aria-label="anchor" href="#je-suis-%C3%A9l%C3%A8ve"></a>
-</h2>
-<p>Allez directement à votre classe.</p>
+<div class="section level3">
+<h3 id="choisir-mon-niveau">Choisir mon niveau<a class="anchor" aria-label="anchor" href="#choisir-mon-niveau"></a>
+</h3>
 <p><strong>Collège :</strong> <a href="articles/mathematiques-6e.html">6e</a> · <a href="articles/mathematiques-5e.html">5e</a> · <a href="articles/mathematiques-4e.html">4e</a> · <a href="articles/mathematiques-3e.html">3e</a></p>
 <p><strong>Lycée :</strong> <a href="articles/mathematiques-2de.html">2de</a> · <a href="articles/mathematiques-1re-specialite.html">1re spécialité</a> · <a href="articles/mathematiques-terminale-specialite.html">Terminale spécialité</a></p>
-<p><strong><a href="articles/mathematiques-par-niveau.html">Voir toutes les ressources de mathématiques →</a></strong></p>
+<p><strong><a href="articles/fiches-revision-mathematiques.html">Fiches de révision →</a></strong></p>
+<p><strong><a href="articles/programmes-et-capacites.html">Comprendre les programmes et les notions →</a></strong></p>
+<p><strong><a href="articles/parcours-scolaires.html">Comprendre les parcours scolaires →</a></strong></p>
 <hr>
 </div>
-<div class="section level2">
-<h2 id="je-veux-comprendre-le-parcours-scolaire">Je veux comprendre le parcours scolaire<a class="anchor" aria-label="anchor" href="#je-veux-comprendre-le-parcours-scolaire"></a>
-</h2>
-<p>Niveaux, cycles, voies, séries, options, spécialités et orientation : commencez par une vue d’ensemble avant de descendre dans les détails.</p>
-<p><strong><a href="articles/parcours-scolaires.html">Explorer les parcours scolaires →</a></strong> · <strong><a href="articles/orientation-au-lycee-et-apres-le-bac.html">Comprendre l’orientation →</a></strong></p>
-<hr>
 </div>
 <div class="section level2">
-<h2 id="je-veux-utiliser-les-données-et-r">Je veux utiliser les données et R<a class="anchor" aria-label="anchor" href="#je-veux-utiliser-les-donn%C3%A9es-et-r"></a>
+<h2 id="jutilise-r">J’utilise R<a class="anchor" aria-label="anchor" href="#jutilise-r"></a>
 </h2>
-<p><code>eduschool</code> repose sur un mini-système relationnel volontairement frugal. Les consultations usuelles restent simples ; les couches plus techniques sont là pour ceux qui souhaitent regarder sous le capot.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="reference/parcours.html">parcours</a></span><span class="op">(</span><span class="st">"3E"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"gilles13/eduschool"</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/parcours.html">parcours</a></span><span class="op">(</span><span class="st">"3E"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/programme.html">programme</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/revision.html">revision</a></span><span class="op">(</span><span class="st">"6E"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="reference/exercices.html">exercices</a></span><span class="op">(</span><span class="st">"6E"</span>, n <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
-<p><strong><a href="articles/prise-en-main.html">Prise en main rapide →</a></strong> · <strong><a href="articles/architecture-des-donnees.html">Architecture des données →</a></strong> · <strong><a href="reference/index.html">Référence R →</a></strong></p>
-<hr>
-</div>
-<div class="section level2">
-<h2 id="un-projet-sérieux-qui-ne-se-prend-pas-trop-au-sérieux">Un projet sérieux qui ne se prend pas trop au sérieux<a class="anchor" aria-label="anchor" href="#un-projet-s%C3%A9rieux-qui-ne-se-prend-pas-trop-au-s%C3%A9rieux"></a>
-</h2>
-<p>Les données, les relations et les mathématiques doivent être exactes. La documentation, elle, a le droit de respirer.</p>
-<p><code>eduschool</code> est donc un projet à la fois très simple et assez complexe. Il vous faudra un certain temps pour bien le comprendre et l’utiliser. Mais rassurez-vous : une fois le système parfaitement maîtrisé, vous serez probablement proche de la retraite et pourrez <strong>enfin</strong> vous reposer.</p>
-<p>En attendant, les contrôles automatiques travaillent pour vous :</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/controle_integrite.html">controle_integrite</a></span><span class="op">(</span>strict <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<p>Le silence est ici une bonne nouvelle.</p>
-<hr>
-</div>
-<div class="section level2">
-<h2 id="un-projet-volontairement-centré-sur-les-math">Un projet volontairement centré sur les math<a class="anchor" aria-label="anchor" href="#un-projet-volontairement-centr%C3%A9-sur-les-math"></a>
-</h2>
-<p>L’architecture peut accueillir d’autres disciplines, mais les fiches de révision, exercices et générateurs restent volontairement consacrés aux mathématiques. Cette limite permet de conserver un outil cohérent, maintenable et utile.</p>
-<p><strong>Utiliser → comprendre → adapter → partager</strong></p>
-<hr>
-</div>
-<div class="section level2">
-<h2 id="le-projet-a-aussi-une-histoire">Le projet a aussi une histoire<a class="anchor" aria-label="anchor" href="#le-projet-a-aussi-une-histoire"></a>
-</h2>
-<p><code>eduschool</code> garde une trace de ce qui l’a fait évoluer, sans transformer la page d’accueil en autobiographie.</p>
-<p><strong><a href="articles/journal-du-projet.html">Journal du projet →</a></strong> · <strong><a href="articles/livre-d-or.html">Livre d’or →</a></strong> · <strong><a href="articles/guide-d-or.html">Guide d’or →</a></strong></p>
+<span><span class="fu"><a href="reference/exercices.html">exercices</a></span><span class="op">(</span><span class="st">"6E"</span>, <span class="st">"proportionnalité"</span>, n <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
+<p><strong><a href="reference/index.html">Référence R →</a></strong></p>
 </div>
 </div>
 

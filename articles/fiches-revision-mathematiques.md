@@ -23,14 +23,14 @@ Terminale](https://gilles13.github.io/eduschool/articles/mathematiques-par-nivea
 
 ## Fiches disponibles
 
-- [6e — L’essentiel des
-  mathématiques](https://gilles13.github.io/eduschool/articles/fiche-mathematiques-6e.md)
+- [6e — Ce qu’il faut retenir et comment les notions se
+  relient](https://gilles13.github.io/eduschool/articles/mathematiques-6e.md)
 - [1re spécialité — Dérivation, fiche
   pilote](https://gilles13.github.io/eduschool/articles/fiche-derivation-premiere.md)
 
-Les niveaux 5e, 4e, 3e, 2de, 1re générale spécialité mathématiques et
-Terminale générale spécialité mathématiques seront ajoutés
-progressivement sur le même modèle.
+Les autres niveaux sont accessibles depuis la page [Mathématiques par
+niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+et seront enrichis progressivement sur le même principe.
 
 ## Depuis R
 

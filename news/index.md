@@ -1,5 +1,48 @@
 # Changelog
 
+## eduschool 0.26.0
+
+### Fiches de mathématiques au collège
+
+- Étend les fiches essentielles aux niveaux 5e, 4e et 3e, sur le même
+  principe que la fiche de 6e.
+- Enrichit les contenus de révision du collège et complète les concepts
+  mathématiques nécessaires.
+- Regroupe chaque niveau autour d’une page principale afin de limiter
+  les contenus éditoriaux redondants.
+
+### Relier les idées
+
+- Met davantage en valeur les liens entre les notions mathématiques dans
+  les fiches du collège.
+- Présente les relations sous une forme plus visuelle et plus directe,
+  avec des flèches et de courtes explications plutôt qu’une restitution
+  de la structure interne des données.
+- Harmonise l’ordre des explications avec l’ordre visuel des concepts
+  afin de faciliter la lecture.
+- Améliore plusieurs formulations décrivant les relations entre
+  fractions, proportionnalité, calcul littéral, géométrie, statistiques
+  et autres notions du collège.
+
+### Rendu mathématique
+
+- Uniformise le rendu des formules mathématiques dans les fiches de
+  révision et les pages par niveau.
+- Corrige les problèmes liés aux commandes TeX incorrectement échappées
+  dans les données.
+- Allège plusieurs formulations trop abstraites pour privilégier, au
+  collège, une explication courte et un exemple lorsque ceux-ci sont
+  plus parlants qu’une formule littérale.
+- Ajoute des contrôles destinés à prévenir le retour de problèmes
+  d’échappement et de rendu des formules.
+
+### Qualité
+
+- Étend les tests de cohérence des fiches essentielles du collège.
+- Ajoute des contrôles sur les concepts et leurs relations.
+- Ajoute des contrôles éditoriaux sur les explications utilisées dans la
+  rubrique « Relier les idées ».
+
 ## eduschool 0.25.0
 
 ### Entraînement et QCM

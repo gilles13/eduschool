@@ -14,7 +14,6 @@ articles:
   exemple-classe-6e: exemple-classe-6e.html
   exercices-et-revisions: exercices-et-revisions.html
   fiche-derivation-premiere: fiche-derivation-premiere.html
-  fiche-mathematiques-6e: fiche-mathematiques-6e.html
   fiches-revision-mathematiques: fiches-revision-mathematiques.html
   guide-d-or: guide-d-or.html
   infini_1_les_math_et_l_eco: infini_1_les_math_et_l_eco.html
@@ -35,7 +34,7 @@ articles:
   prise-en-main: prise-en-main.html
   programmes-et-capacites: programmes-et-capacites.html
   rentrer-en-profondeur-dans-eduschool: rentrer-en-profondeur-dans-eduschool.html
-last_built: 2026-09-10T20:41Z
+last_built: 2026-09-11T09:02Z
 urls:
   reference: https://gilles13.github.io/eduschool/reference
   article: https://gilles13.github.io/eduschool/articles
