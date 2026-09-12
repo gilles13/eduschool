@@ -1,3 +1,21 @@
+# eduschool 0.33.0
+
+## Relier les fondamentaux
+
+* Les fiches de révision rappellent explicitement que l'addition et la soustraction, puis la multiplication et la division, fonctionnent comme des couples d'opérations inverses.
+* La fiche thématique sur les fractions relie ces opérations aux méthodes déjà connues : prendre une fraction d'une quantité peut se lire comme « diviser par le dénominateur puis multiplier par le numérateur ».
+* Les rappels de proportionnalité en 6e et en 5e rendent explicite le mouvement « revenir à l'unité par une division, puis repartir par une multiplication ».
+* Ces liens pédagogiques enrichissent les fiches sans créer artificiellement une nouvelle notion dans le référentiel : une nouvelle abstraction n'entre dans eduschool que lorsqu'elle a trouvé du travail.
+
+## Un projet en cours
+
+* La page d'accueil et le Livre d'or rappellent qu'eduschool est un projet en cours, nécessairement imparfait et construit dans le temps long.
+* Le projet assume que les connaissances, les explications et les chemins proposés peuvent continuer à évoluer : le savoir se construit, se discute et se partage — pour ne pas dire à l'infini.
+
+## Qualité
+
+* Ajout de tests de non-régression sur les liens entre opérations inverses, fractions et proportionnalité dans les fiches de révision du collège.
+
 # eduschool 0.32.0
 
 ## Cheatsheet

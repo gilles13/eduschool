@@ -25,6 +25,9 @@ Celui-là, on peut même l'apprendre **par cœur**. ❤️
 
 **Vous utilisez R ?** [Ouvrir la cheatsheet eduschool →](eduschool-cheatsheet.html)
 
+> **eduschool est un projet en cours.** Il n'est pas fini. Le sera-t-il un jour ? Bonne question ! 😉
+> Le savoir se construit dans le temps long — pour ne pas dire : **INFINI**. ∞
+
 <details>
 <summary><strong>J'utilise R</strong></summary>
 

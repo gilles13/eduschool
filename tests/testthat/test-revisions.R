@@ -156,3 +156,45 @@ test_that("moyenne et mediane sont expliquees dans l'ordre visuel", {
   expect_identical(x$arrivee_libelle[[1]], "Moyenne arithm\u00e9tique")
   expect_true(startsWith(x$commentaire[[1]], "La m\u00e9diane"))
 })
+
+test_that("les operations inverses relient les fondamentaux du college", {
+  sixieme = generer_essentiel("6E")
+  cinquieme = generer_essentiel("5E")
+  fractions = revision(niveau = "5E", theme = "fractions")
+
+  faire_defaire_6e = sixieme$blocs[
+    sixieme$blocs$titre == "Faire et défaire",
+    ,
+    drop = FALSE
+  ]
+  faire_defaire_frac = fractions$blocs[
+    fractions$blocs$titre == "Faire et défaire",
+    ,
+    drop = FALSE
+  ]
+
+  expect_equal(nrow(faire_defaire_6e), 1L)
+  expect_equal(nrow(faire_defaire_frac), 1L)
+  expect_match(faire_defaire_6e$contenu, "Addition et soustraction", fixed = TRUE)
+  expect_match(faire_defaire_6e$contenu, "Multiplication et division", fixed = TRUE)
+  expect_match(faire_defaire_frac$contenu, "opérations inverses", fixed = TRUE)
+
+  for (fiche in list(sixieme, cinquieme)) {
+    proportion = fiche$blocs[
+      fiche$blocs$titre == "Proportionnalité",
+      "contenu",
+      drop = TRUE
+    ]
+    expect_length(proportion, 1L)
+    expect_match(proportion, "divi", ignore.case = TRUE)
+    expect_match(proportion, "multipli", ignore.case = TRUE)
+  }
+
+  fraction_quantite = fractions$blocs[
+    fractions$blocs$titre == "Prendre une fraction d’une quantité",
+    "contenu",
+    drop = TRUE
+  ]
+  expect_match(fraction_quantite, "diviser", fixed = TRUE)
+  expect_match(fraction_quantite, "multiplier", fixed = TRUE)
+})
