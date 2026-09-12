@@ -44,6 +44,7 @@ exercices(
   n = 5,
   difficulte = 1,
   seed = 1,
+  humour = FALSE,
   afficher = FALSE
 )
 ```
@@ -90,6 +91,12 @@ exercices(
 - capacite:
 
   Identifiant de capacite facultatif pour un pilotage avance.
+
+- humour:
+
+  Ajouter quelques touches humoristiques lorsqu'elles sont disponibles.
+  Par defaut \`FALSE\`. Le dosage est d'une question humoristique par
+  groupe complet de cinq exercices, quelle que soit la notion.
 
 ## Value
 

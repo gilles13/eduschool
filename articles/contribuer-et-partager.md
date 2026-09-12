@@ -14,8 +14,9 @@ l’objectif principal du projet.
 
 Une contribution peut prendre des formes très différentes : corriger un
 lien entre deux référentiels, actualiser une source, proposer une
-ressource externe, améliorer une visualisation, enrichir une fiche ou
-ajouter un modèle d’exercice.
+ressource externe, améliorer une visualisation, enrichir une fiche,
+ajouter un modèle d’exercice ou même proposer une petite blague qui rend
+l’apprentissage plus agréable.
 
 Les données institutionnelles et les contenus pédagogiques gardent
 toutefois des statuts différents. Les premières doivent rester traçables

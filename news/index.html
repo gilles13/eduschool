@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.31.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.32.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../eduschool-cheatsheet.html">Cheatsheet</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><a class="dropdown-item" href="../articles/a-propos.html">À propos</a></li>
@@ -27,6 +27,7 @@
     <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Contribuer et partager</a></li>
     <li><a class="dropdown-item" href="../articles/index.html">Tous les articles</a></li>
   </ul></li>
+<li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="active nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"></ul></div>
 
@@ -39,6 +40,43 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.32.0" id="eduschool-0320">eduschool 0.32.0<a class="anchor" aria-label="anchor" href="#eduschool-0320"></a></h2>
+<div class="section level3">
+<h3 id="cheatsheet-0-32-0">Cheatsheet<a class="anchor" aria-label="anchor" href="#cheatsheet-0-32-0"></a></h3>
+<ul><li>Ajout de <code><a href="../reference/produire_cheatsheet.html">produire_cheatsheet()</a></code>, qui génère une cheatsheet eduschool autonome et imprimable en A4 paysage.</li>
+<li>La cheatsheet présente l’API publique par usages plutôt que comme une simple liste de fonctions : découvrir, comprendre, réviser, s’entraîner et préparer un examen.</li>
+<li>L’identité graphique eduschool et les logos du package sont intégrés directement dans la cheatsheet.</li>
+<li>Les fonctions publiques présentées dans la cheatsheet sont contrôlées par les tests afin de limiter le risque de documentation obsolète.</li>
+<li>La cheatsheet est désormais accessible directement depuis la barre de navigation du site pkgdown et depuis la page d’accueil.</li>
+<li>Le workflow pkgdown régénère automatiquement la cheatsheet lors du déploiement du site.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="révisions-0-32-0">Révisions<a class="anchor" aria-label="anchor" href="#r%C3%A9visions-0-32-0"></a></h3>
+<ul><li>Ajout d’une fiche thématique de révision sur les fractions en 5e.</li>
+<li>La fiche propose une synthèse courte avant entraînement : lecture et représentation des fractions, fractions équivalentes, addition et soustraction, multiplication, fraction d’une quantité et réflexes essentiels.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="quiz-et-exercices-0-32-0">Quiz et exercices<a class="anchor" aria-label="anchor" href="#quiz-et-exercices-0-32-0"></a></h3>
+<ul><li>Les exercices sur les fractions disposent désormais de QCM fermés avec propositions, réponse correcte et feedback.</li>
+<li>Les quiz HTML autonomes peuvent embarquer un ensemble d’exercices et tirer de nouvelles questions côté navigateur avec <code>Lancer un nouveau quiz</code>, sans nécessiter de session R.</li>
+<li>
+<code>Reessayer</code> conserve le tirage courant tout en réinitialisant les réponses et les feedbacks.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="humour-0-32-0">Humour<a class="anchor" aria-label="anchor" href="#humour-0-32-0"></a></h3>
+<ul><li>Le mécanisme d’humour des exercices est généralisé : le moteur décide quand ajouter une touche humoristique, tandis qu’un catalogue indépendant fournit les formulations disponibles.</li>
+<li>La proportionnalité et les fractions disposent désormais de plusieurs formulations humoristiques.</li>
+<li>Les formulations génériques n’inventent pas de contexte absent de l’exercice.</li>
+<li>L’humour reste optionnel avec <code>humour = TRUE</code> et conserve son dosage d’une question humoristique par groupe complet de cinq exercices lorsqu’une formulation est disponible.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="documentation-et-contribution-0-32-0">Documentation et contribution<a class="anchor" aria-label="anchor" href="#documentation-et-contribution-0-32-0"></a></h3>
+<ul><li>La documentation rappelle qu’une contribution à eduschool peut être très petite : corriger une source, améliorer une explication, proposer un exercice… ou simplement ajouter une petite blague qui rend l’apprentissage plus agréable.</li>
+<li>La cheatsheet devient une nouvelle porte d’entrée rapide dans le package pour les utilisateurs qui souhaitent commencer par essayer plutôt que parcourir toute la documentation.</li>
+</ul><hr><p><strong>eduschool reste libre, gratuit et ouvert. Toujours ouvrir des portes.</strong></p>
+</div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.31.0" id="eduschool-0310">eduschool 0.31.0<a class="anchor" aria-label="anchor" href="#eduschool-0310"></a></h2>
 <ul><li>Teste une petite idee avant toute industrialisation : partir de la definition et des ambiguities du vocabulaire pour mieux comprendre une notion.</li>

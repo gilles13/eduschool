@@ -153,10 +153,10 @@ knitr::kable(
 | niveaux_series | referentiels | niveau_id,serie_id | 19 | 2 |
 | series | referentiels | serie_id | 9 | 3 |
 | voies | referentiels | voie_id | 4 | 3 |
-| blocs | revision | bloc_id | 94 | 8 |
+| blocs | revision | bloc_id | 100 | 8 |
 | familles | revision | famille_id | 7 | 3 |
-| fiche_notions | revision | fiche_id,notion_id | 27 | 3 |
-| fiches | revision | fiche_id | 13 | 7 |
+| fiche_notions | revision | fiche_id,notion_id | 28 | 3 |
+| fiches | revision | fiche_id | 14 | 7 |
 | ressources | ressources | ressource_id | 8 | 10 |
 | usages_ressources | ressources | usage_id | 7 | 4 |
 | ressources_usages | ressources | ressource_id,usage_id | 24 | 2 |

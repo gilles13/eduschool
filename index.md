@@ -27,6 +27,9 @@ Celui-là, on peut même l’apprendre **par cœur**. ❤️
 [**Pourquoi eduschool ?
 →**](https://gilles13.github.io/eduschool/articles/a-propos.md)
 
+**Vous utilisez R ?** [Ouvrir la cheatsheet eduschool
+→](https://gilles13.github.io/eduschool/eduschool-cheatsheet.md)
+
 **J’utilise R**
 
 ``` r

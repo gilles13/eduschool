@@ -1,5 +1,71 @@
 # Changelog
 
+## eduschool 0.32.0
+
+### Cheatsheet
+
+- Ajout de
+  [`produire_cheatsheet()`](https://gilles13.github.io/eduschool/reference/produire_cheatsheet.md),
+  qui génère une cheatsheet eduschool autonome et imprimable en A4
+  paysage.
+- La cheatsheet présente l’API publique par usages plutôt que comme une
+  simple liste de fonctions : découvrir, comprendre, réviser,
+  s’entraîner et préparer un examen.
+- L’identité graphique eduschool et les logos du package sont intégrés
+  directement dans la cheatsheet.
+- Les fonctions publiques présentées dans la cheatsheet sont contrôlées
+  par les tests afin de limiter le risque de documentation obsolète.
+- La cheatsheet est désormais accessible directement depuis la barre de
+  navigation du site pkgdown et depuis la page d’accueil.
+- Le workflow pkgdown régénère automatiquement la cheatsheet lors du
+  déploiement du site.
+
+### Révisions
+
+- Ajout d’une fiche thématique de révision sur les fractions en 5e.
+- La fiche propose une synthèse courte avant entraînement : lecture et
+  représentation des fractions, fractions équivalentes, addition et
+  soustraction, multiplication, fraction d’une quantité et réflexes
+  essentiels.
+
+### Quiz et exercices
+
+- Les exercices sur les fractions disposent désormais de QCM fermés avec
+  propositions, réponse correcte et feedback.
+- Les quiz HTML autonomes peuvent embarquer un ensemble d’exercices et
+  tirer de nouvelles questions côté navigateur avec
+  `Lancer un nouveau quiz`, sans nécessiter de session R.
+- `Reessayer` conserve le tirage courant tout en réinitialisant les
+  réponses et les feedbacks.
+
+### Humour
+
+- Le mécanisme d’humour des exercices est généralisé : le moteur décide
+  quand ajouter une touche humoristique, tandis qu’un catalogue
+  indépendant fournit les formulations disponibles.
+- La proportionnalité et les fractions disposent désormais de plusieurs
+  formulations humoristiques.
+- Les formulations génériques n’inventent pas de contexte absent de
+  l’exercice.
+- L’humour reste optionnel avec `humour = TRUE` et conserve son dosage
+  d’une question humoristique par groupe complet de cinq exercices
+  lorsqu’une formulation est disponible.
+
+### Documentation et contribution
+
+- La documentation rappelle qu’une contribution à eduschool peut être
+  très petite : corriger une source, améliorer une explication, proposer
+  un exercice… ou simplement ajouter une petite blague qui rend
+  l’apprentissage plus agréable.
+- La cheatsheet devient une nouvelle porte d’entrée rapide dans le
+  package pour les utilisateurs qui souhaitent commencer par essayer
+  plutôt que parcourir toute la documentation.
+
+------------------------------------------------------------------------
+
+**eduschool reste libre, gratuit et ouvert. Toujours ouvrir des
+portes.**
+
 ## eduschool 0.31.0
 
 - Teste une petite idee avant toute industrialisation : partir de la

@@ -161,6 +161,8 @@
   : Prérequis d'une notion
 - [`print(`*`<eduschool_context>`*`)`](https://gilles13.github.io/eduschool/reference/print.eduschool_context.md)
   : Afficher un contexte eduschool
+- [`produire_cheatsheet()`](https://gilles13.github.io/eduschool/reference/produire_cheatsheet.md)
+  : Produire la cheatsheet eduschool
 - [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
   : Produire le corrige d'une fiche HTML ou PDF
 - [`produire_corrige_examen()`](https://gilles13.github.io/eduschool/reference/produire_corrige_examen.md)
