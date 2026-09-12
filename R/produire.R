@@ -13,7 +13,8 @@
 #' @export
 revision = function(niveau, theme = NULL) {
   if (is.null(theme)) return(generer_essentiel(niveau))
-  generer_revision(niveau, theme)
+  fiche = .selectionner_theme_revision(niveau, theme)
+  .construire_revision(fiche)
 }
 
 .normaliser_notion = function(x) {

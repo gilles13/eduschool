@@ -14,11 +14,38 @@ test_that("une revision thematique est structuree", {
   expect_true(nrow(x$notions) >= 1L)
 })
 
-test_that("l interface humaine accepte un theme en langage courant", {
+test_that("l interface humaine choisit la fiche dediee aux ensembles", {
   x = revision(niveau = "2GT", theme = "ensembles")
   expect_s3_class(x, "eduschool_revision")
+  expect_identical(x$fiche_id, "REV_2GT_ENSEMBLES")
   expect_identical(x$famille_id, "LOGIQUE")
+  expect_identical(x$titre, "Ensembles de nombres")
   expect_true("ensembles_nombres" %in% x$blocs$illustration_id)
+  expect_true(any(grepl("Nos Z.bres D.vorent Quelques Radis", x$blocs$contenu)))
+})
+
+test_that("la fiche ensembles a un nom de fichier propre", {
+  x = revision(niveau = "2GT", theme = "ensembles")
+  expect_identical(eduschool:::.nom_fichier_revision(x), "revision_2gt_ensembles")
+})
+
+test_that("la fiche ensembles dispose de son asset graphique", {
+  asset = eduschool:::.illustration_revision("ensembles_nombres")
+  expect_true(nzchar(asset))
+  expect_true(file.exists(asset))
+  expect_match(asset, "ensembles-nombres\\.png$")
+})
+
+test_that("la fiche ensembles ouvre une porte sans melanger les themes", {
+  x = revision(niveau = "2GT", theme = "ensembles")
+  expect_gte(nrow(x$blocs), 6L)
+  expect_true(all(c(
+    "La carte NZDQR",
+    "Trouver le plus petit ensemble",
+    "Appartenance ou inclusion ?",
+    "Et si on ouvrait une porte ?"
+  ) %in% x$blocs$titre))
+  expect_false(any(grepl("Intervalles|N.gation|Implication", x$blocs$titre)))
 })
 
 test_that("la fiche essentielle est distincte", {

@@ -13,10 +13,10 @@ echapper_tex = function(x) {
 
 
 .logo_eduschool = function() {
-  f = system.file("figures", "logo-eduschool.png", package = "eduschool")
+  f = system.file("figures", "logo-hexa.png", package = "eduschool")
   if (nzchar(f) && file.exists(f)) return(f)
 
-  f = file.path("inst", "figures", "logo-eduschool.png")
+  f = file.path("inst", "figures", "logo-hexa.png")
   if (file.exists(f)) return(normalizePath(f, winslash = "/", mustWork = TRUE))
 
   ""

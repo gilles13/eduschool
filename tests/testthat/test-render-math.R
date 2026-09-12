@@ -168,8 +168,10 @@ test_that("l'entete mathematique reutilise le logo et la couleur du niveau", {
   expect_match(z, "Notion : Fraction", fixed = TRUE)
   expect_match(z, "9 septembre 2026", fixed = TRUE)
   expect_match(z, "D46A92", fixed = TRUE)
-  if (nzchar(.logo_eduschool()))
+  if (nzchar(.logo_eduschool())) {
     expect_match(z, "includegraphics", fixed = TRUE)
+    expect_identical(basename(.logo_eduschool()), "logo-hexa.png")
+  }
 
   expect_identical(.couleur_niveau_math("5E"), "5C8F68")
 })
@@ -230,8 +232,10 @@ test_that("la palette de niveaux progresse de la 6e a la terminale", {
   expect_identical(.couleur_niveau_math("4E"), "3D8585")
   expect_identical(.couleur_niveau_math("3E"), "3F6F9F")
   expect_identical(.couleur_niveau_math("2DE"), "515B8F")
+  expect_identical(.couleur_niveau_math("2GT"), "515B8F")
   expect_identical(.couleur_niveau_math("1RE"), "674B72")
   expect_identical(.couleur_niveau_math("TLE"), "34383D")
+  expect_identical(.couleur_niveau_math("INCONNU"), "245A8D")
 })
 
 test_that("l'entete mathematique est compact et aligne le logo a droite", {

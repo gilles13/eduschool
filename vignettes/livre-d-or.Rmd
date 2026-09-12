@@ -42,6 +42,7 @@ Quelques idées ont cependant résisté assez longtemps pour mériter leur place
 - **Une discipline organise le savoir. Elle ne doit pas en dessiner les frontières.**
 - **Comprendre l'intention avant de chercher la réponse.**
 - **Une nouvelle abstraction n'entre dans `eduschool` que lorsqu'elle a trouvé du travail.**
+- **Ne pas décider trop tôt est parfois une (bonne) décision.**
 
 Et lorsqu'un chemin devient inutilement compliqué, il reste une question assez
 efficace :
@@ -50,6 +51,16 @@ efficace :
 
 Si la réponse devient difficile à trouver, il est probablement temps de faire
 un pas de côté.
+
+Les parenthèses de « (bonne) » sont volontaires. Si l'on ne décide pas encore,
+comment sait-on déjà que la décision est bonne ? Et décider de ne pas décider,
+est-ce déjà décider ? Le lead dev a laissé ici une petite embuscade logique.
+Nous aurons un jour à parler de logique.
+
+Une digression n'est d'ailleurs pas nécessairement une sortie du chemin. Elle
+peut faire partie du chemin. Une erreur de rendu peut mener à une question
+d'architecture, puis à une question sur la décision elle-même. `eduschool` ne
+cherche pas à refermer ces portes sous prétexte qu'elles changent de discipline.
 
 # Apprendre, puis partager
 

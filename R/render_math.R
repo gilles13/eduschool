@@ -286,11 +286,22 @@
     "TLE" = "34383D"
   )
 
-  couleur = unname(couleurs[[toupper(niveau)]])
-  if (is.null(couleur))
-    "245A8D"
-  else
-    couleur
+code = toupper(as.character(niveau))
+
+alias = c(
+  "2GT" = "2DE"
+)
+
+if (code %in% names(alias)) {
+  code = unname(alias[code])
+}
+
+if (!code %in% names(couleurs)) {
+  return("245A8D")
+}
+
+unname(couleurs[code])
+
 }
 
 .formater_date_math = function(date = Sys.Date()) {

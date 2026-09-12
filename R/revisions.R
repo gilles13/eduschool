@@ -65,6 +65,38 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   fiches[partiel, , drop = FALSE]
 }
 
+.selectionner_theme_revision = function(niveau_id, theme) {
+  if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) {
+    stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
+  }
+
+  f = fiches_revision(niveau_id = niveau_id, type = "THEMATIQUE")
+  if (!nrow(f)) {
+    stop("Aucune fiche de revision disponible pour ce niveau.", call. = FALSE)
+  }
+
+  cle = .normaliser_revision(theme)
+  titres = .normaliser_revision(f$titre)
+
+  exact = titres == cle
+  if (sum(exact) == 1L) return(f[exact, , drop = FALSE])
+
+  debut = startsWith(titres, cle)
+  if (sum(debut) == 1L) return(f[debut, , drop = FALSE])
+
+  partiel = grepl(cle, titres, fixed = TRUE)
+  if (sum(partiel) == 1L) return(f[partiel, , drop = FALSE])
+  if (sum(partiel) > 1L) {
+    stop(
+      "Theme de revision ambigu : ", theme, ". Choisissez parmi : ",
+      paste(f$titre[partiel], collapse = ", "), ".",
+      call. = FALSE
+    )
+  }
+
+  .selectionner_fiche_revision(niveau_id, theme, type = "THEMATIQUE")
+}
+
 .selectionner_fiche_revision = function(niveau_id, famille = NULL, type = "THEMATIQUE") {
   f = fiches_revision(niveau_id = niveau_id, type = type)
   if (!nrow(f)) stop("Aucune fiche de revision disponible pour ce niveau et ce type.", call. = FALSE)
@@ -132,8 +164,15 @@ generer_essentiel = function(niveau_id) {
 }
 
 .nom_fichier_revision = function(revision) {
-  suffixe = if (identical(revision$type, "ESSENTIEL")) "essentiel" else normaliser_nom_fichier(revision$famille_id)
-  paste("revision", normaliser_nom_fichier(revision$niveau_id), suffixe, sep = "_")
+  niveau = normaliser_nom_fichier(revision$niveau_id)
+  if (identical(revision$type, "ESSENTIEL")) {
+    suffixe = "essentiel"
+  } else {
+    prefixe = paste0("REV_", toupper(revision$niveau_id), "_")
+    suffixe = sub(paste0("^", prefixe), "", revision$fiche_id)
+    suffixe = normaliser_nom_fichier(suffixe)
+  }
+  paste("revision", niveau, suffixe, sep = "_")
 }
 
 #' Produire une fiche de revision HTML ou PDF
@@ -224,6 +263,22 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
   fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
   if (isTRUE(ouvrir)) .ouvrir_fichier(fichier)
   invisible(fichier)
+}
+
+.illustration_revision = function(id) {
+  if (is.null(id) || is.na(id) || !nzchar(id)) return("")
+  fichiers = c(
+    ensembles_nombres = "ensembles-nombres.png"
+  )
+  if (!id %in% names(fichiers)) return("")
+  nom = unname(fichiers[[id]])
+  if (is.null(nom) || !nzchar(nom)) return("")
+  f = system.file("figures", "maths", nom, package = "eduschool")
+  if (!nzchar(f) || !file.exists(f)) {
+    f = file.path("inst", "figures", "maths", nom)
+  }
+  if (!file.exists(f)) return("")
+  normalizePath(f, winslash = "/", mustWork = TRUE)
 }
 
 .dessiner_revision = function(id) {

@@ -18,21 +18,16 @@ if (knitr::is_html_output()) {
   cat(eduschool:::.css_fiche_eduschool(), "\n")
   cat(eduschool:::.bandeau_revision_html(r, params$logo, params$decoration), "\n")
 } else {
-  if (nzchar(params$decoration) && file.exists(params$decoration)) {
-    cat("\\noindent\\begin{minipage}[t]{0.10\\textwidth}\n")
-    cat("\\includegraphics[width=1.2cm]{\\detokenize{", normalizePath(params$decoration, winslash = "/"), "}}\n", sep = "")
-    cat("\\end{minipage}\\hfill")
-  }
-  cat("\\begin{minipage}[t]{0.60\\textwidth}\n")
-  cat("\\textbf{", identite$cycle, " -- ", identite$classe, "}\\\\\n", sep = "")
-  cat("{\\Large\\textbf{", identite$matiere, "}}\\\\[0.35em]\n", sep = "")
-  cat("\\textsc{", identite$type, "}\\\\\n", sep = "")
-  cat(identite$titre, "\n")
-  cat("\\end{minipage}\\hfill\\begin{minipage}[t]{0.23\\textwidth}\\raggedleft\n")
-  if (nzchar(params$logo) && file.exists(params$logo)) {
-    cat("\\includegraphics[width=2.8cm]{\\detokenize{", normalizePath(params$logo, winslash = "/"), "}}\n", sep = "")
-  }
-  cat("\\end{minipage}\\par\\vspace{0.7em}\\hrule\\vspace{1em}\n")
+  info_entete = eduschool:::.infos_entete_math(r$niveau_id, r$titre)
+  cat(
+    eduschool:::.entete_math_rmd(
+      info_entete,
+      logo = params$logo,
+      format = "latex"
+    ),
+    sep = "\n"
+  )
+  cat("\n\\begin{center}{\\Large\\bfseries ", identite$type, "}\\end{center}\n\n", sep = "")
 }
 ```
 
@@ -44,11 +39,24 @@ for (i in seq_len(nrow(r$blocs))) {
   if (knitr::is_html_output()) {
     cat('<div class="eduschool-bloc" style="--edu-accent:', identite$couleur, '">\n', sep = "")
   }
-  cat("\n## ", b$titre, "\n\n", sep = "")
+  if (knitr::is_html_output()) {
+    cat("\n## ", b$titre, "\n\n", sep = "")
+  } else {
+    cat("\n\\subsection*{\\Large\\bfseries ", b$titre, "}\n\n", sep = "")
+  }
   if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
   if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
   if (nzchar(b$illustration_id)) {
-    eduschool:::.dessiner_revision(b$illustration_id)
+    asset = eduschool:::.illustration_revision(b$illustration_id)
+    if (nzchar(asset) && knitr::is_latex_output()) {
+      cat("\\begin{center}\n")
+      cat("\\includegraphics[width=0.48\\linewidth]{\\detokenize{", asset, "}}\n", sep = "")
+      cat("\\end{center}\n")
+    } else if (nzchar(asset)) {
+      print(knitr::include_graphics(asset, dpi = 220))
+    } else {
+      eduschool:::.dessiner_revision(b$illustration_id)
+    }
     cat("\n")
   }
   if (knitr::is_html_output()) cat("</div>\n")
@@ -57,7 +65,7 @@ for (i in seq_len(nrow(r$blocs))) {
 
 ```{r notions, results='asis'}
 if (!compact && nrow(r$notions)) {
-  cat("\n## Notions eduschool reliees\n\n")
+  cat("\n## Pour aller plus loin\n\n")
   for (x in unique(r$notions$libelle)) if (!is.na(x) && nzchar(x)) cat("- ", x, "\n", sep = "")
 }
 ```
