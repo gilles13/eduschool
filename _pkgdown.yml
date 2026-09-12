@@ -20,6 +20,8 @@ navbar:
       menu:
         - text: À propos
           href: articles/a-propos.html
+        - text: Livre d'or
+          href: articles/livre-d-or.html
         - text: Prise en main
           href: articles/prise-en-main.html
         - text: Mathématiques par niveau
@@ -38,6 +40,7 @@ articles:
     desc: Premiers repères pour comprendre le projet et commencer à l'utiliser.
     contents:
       - a-propos
+      - livre-d-or
       - journal-du-projet
       - prise-en-main
       - prendre-un-parent-par-la-main
