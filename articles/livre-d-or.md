@@ -103,6 +103,39 @@ discuté, réutilisé et transmis.
 
 **Merci, Philippe.**
 
+## Un projet en cours
+
+**`eduschool` est un projet en cours. Il n’est pas fini. Le sera-t-il un
+jour ? Bonne question ! 😉**
+
+Le lead dev du projet a aussi une vie à côté. Alors ne lui en veuillez
+pas trop si tout n’est pas — **encore ?** — parfait.
+
+Le travail est en cours. Les mathématiques — et peut-être un peu la
+philosophie — nous rappellent que le savoir se construit dans le temps
+long. On apprend, on essaie, on se trompe, on comprend pourquoi, on
+corrige, on discute, on partage et on recommence. Certaines réponses
+ouvrent de nouvelles questions, qui ouvrent elles-mêmes de nouvelles
+portes.
+
+> **Avec les maths que je connais déjà, jusqu’où puis-je regarder ? Et
+> dans quelle direction ?**
+>
+> **Avoir les bonnes informations ne suffit pas. Encore faut-il
+> apprendre à regarder dans la bonne direction.**
+>
+> **Comprendre pourquoi on s’est trompé est déjà une forme de
+> connaissance.**
+>
+> **Papoter, discuter, questionner, se tromper et rire ne sont pas du
+> temps perdu autour du savoir. Ils font partie des chemins par lesquels
+> le savoir apparaît et se partage.**
+
+Alors, combien de temps faudra-t-il ?
+
+Disons simplement : **le savoir, c’est le temps long. Pour ne pas dire :
+INFINI. ∞**
+
 ## Et maintenant ?
 
 Ce Livre d’or n’est pas un règlement gravé dans le marbre. Les phrases

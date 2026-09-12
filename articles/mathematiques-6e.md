@@ -25,6 +25,16 @@ Avant de calculer identifier les données utiles choisir l’opération et
 vérifier l’unité. Après le calcul contrôler le signe l’ordre de grandeur
 et la cohérence de la réponse.
 
+### Faire et défaire
+
+Addition et soustraction se défont l’une l’autre. Multiplication et
+division aussi, lorsque la division est possible. Reconnaître ces
+couples d’opérations inverses permet de revenir en arrière et de
+contrôler un calcul.
+
+a+b=c \Longleftrightarrow c-b=a \quad a\times b=c \Longleftrightarrow
+c\div b=a
+
 ### Fractions et pourcentages
 
 Une fraction représente un quotient. Un pourcentage est une fraction sur
@@ -34,9 +44,10 @@ Une fraction représente un quotient. Un pourcentage est une fraction sur
 
 ### Proportionnalité
 
-Dans une situation proportionnelle on peut multiplier les deux grandeurs
-par le même nombre ou revenir à l’unité. Toujours écrire les unités dans
-le tableau.
+Dans une situation proportionnelle, revenir à l’unité consiste souvent à
+diviser ; pour repartir vers une autre quantité, on multiplie. Exemple :
+si 5 objets coûtent 20 €, alors 1 objet coûte 20 ÷ 5 = 4 €, puis 8
+objets coûtent 4 × 8 = 32 €. Toujours écrire les unités dans le tableau.
 
 ### Périmètres
 

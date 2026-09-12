@@ -37,9 +37,12 @@ numérateurs entre eux et les dénominateurs entre eux. Exemple : 2/3 x
 
 ### Proportionnalité
 
-Repérer si deux grandeurs sont proportionnelles puis utiliser le
-coefficient de proportionnalité le passage à l’unité ou un produit en
-croix. Un pourcentage est une proportion rapportée à 100.
+Repérer si deux grandeurs sont proportionnelles. Le passage à l’unité
+relie directement division et multiplication : on divise pour revenir à
+1, puis on multiplie pour repartir vers la quantité cherchée. Le
+coefficient de proportionnalité ou un produit en croix peuvent ensuite
+être utilisés lorsque la situation s’y prête. Un pourcentage est une
+proportion rapportée à 100.
 
 ### Calcul littéral
 
