@@ -26,6 +26,7 @@ décrites par le moteur de révision du package.
 - Algorithmique et programmation
 - Nombres et algèbre
 - Géométrie
+- Ensembles de nombres
 - Fonctions
 - Statistiques et probabilités
 - Automatismes
