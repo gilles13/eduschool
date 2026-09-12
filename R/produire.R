@@ -8,7 +8,7 @@
 #' retourne la fiche thematique correspondante.
 #'
 #' @param niveau Niveau scolaire.
-#' @param theme Famille de revision facultative.
+#' @param theme Theme de revision facultatif, en langage courant.
 #' @return Un objet `eduschool_revision`.
 #' @export
 revision = function(niveau, theme = NULL) {

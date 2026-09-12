@@ -30,9 +30,7 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   names(fiches)[names(fiches) == "libelle"] = "famille"
   if (!is.null(niveau_id)) fiches = fiches[fiches$niveau_id == niveau_id, , drop = FALSE]
   if (!is.null(famille)) {
-    cle = .normaliser_revision(famille)
-    ok = .normaliser_revision(fiches$famille_id) == cle | .normaliser_revision(fiches$famille) == cle
-    fiches = fiches[ok, , drop = FALSE]
+    fiches = .filtrer_famille_revision(fiches, famille)
   }
   if (!is.null(type)) fiches = fiches[toupper(type) == fiches$type, , drop = FALSE]
   fiches = fiches[order(fiches$ordre), , drop = FALSE]
@@ -45,6 +43,28 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   gsub("[^A-Z0-9]+", "_", toupper(x))
 }
 
+.filtrer_famille_revision = function(fiches, famille) {
+  cle = .normaliser_revision(famille)
+  ids = .normaliser_revision(fiches$famille_id)
+  libelles = .normaliser_revision(fiches$famille)
+
+  exact = ids == cle | libelles == cle
+  if (any(exact)) return(fiches[exact, , drop = FALSE])
+
+  partiel = grepl(cle, libelles, fixed = TRUE)
+  candidats = unique(fiches$famille_id[partiel])
+
+  if (length(candidats) > 1L) {
+    stop(
+      "Theme de revision ambigu : ", famille, ". Choisissez parmi : ",
+      paste(unique(fiches$famille[partiel]), collapse = ", "), ".",
+      call. = FALSE
+    )
+  }
+
+  fiches[partiel, , drop = FALSE]
+}
+
 .selectionner_fiche_revision = function(niveau_id, famille = NULL, type = "THEMATIQUE") {
   f = fiches_revision(niveau_id = niveau_id, type = type)
   if (!nrow(f)) stop("Aucune fiche de revision disponible pour ce niveau et ce type.", call. = FALSE)
@@ -52,9 +72,7 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   if (is.null(famille) || length(famille) != 1L || is.na(famille) || !nzchar(famille)) {
     stop("`famille` est obligatoire pour une fiche thematique.", call. = FALSE)
   }
-  cle = .normaliser_revision(famille)
-  ok = .normaliser_revision(f$famille_id) == cle | .normaliser_revision(f$famille) == cle
-  f = f[ok, , drop = FALSE]
+  f = .filtrer_famille_revision(f, famille)
   if (!nrow(f)) stop("Famille de revision inconnue pour ce niveau : ", famille, call. = FALSE)
   f[1L, , drop = FALSE]
 }
@@ -210,6 +228,10 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
 
 .dessiner_revision = function(id) {
   if (is.null(id) || is.na(id) || !nzchar(id)) return(invisible(NULL))
+  if (id == "ensembles_nombres") {
+    print(diagramme_ensembles_nombres())
+    return(invisible(NULL))
+  }
   op = graphics::par(mar = c(1, 1, 1, 1))
   on.exit(graphics::par(op), add = TRUE)
   if (id == "intervalles") {

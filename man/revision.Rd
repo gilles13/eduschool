@@ -9,7 +9,7 @@ revision(niveau, theme = NULL)
 \arguments{
 \item{niveau}{Niveau scolaire.}
 
-\item{theme}{Famille de revision facultative.}
+\item{theme}{Theme de revision facultatif, en langage courant.}
 }
 \value{
 Un objet `eduschool_revision`.

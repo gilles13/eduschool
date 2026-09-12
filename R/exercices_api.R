@@ -84,6 +84,16 @@ generer_exercice = function(
     PYTH_COTE_001 = generer_pythagore_cote,
     PYTH_DIAG_001 = generer_pythagore_diagonale,
     PYTH_APPL_001 = generer_pythagore_applicable,
+    ENS_R_MOT_001 = .generer_ens_r_mot,
+    ENS_Z_001 = .generer_ens_z,
+    ENS_D_001 = .generer_ens_d,
+    ENS_Q_001 = .generer_ens_q,
+    ENS_SYM_001 = .generer_ens_sym,
+    ENS_N_ZERO_001 = .generer_ens_n_zero,
+    ENS_FRAC_SIMPL_001 = .generer_ens_frac_simpl,
+    ENS_D_NEG_001 = .generer_ens_d_neg,
+    ENS_R_IRR_001 = .generer_ens_r_irr,
+    ENS_INCLUSION_001 = .generer_ens_inclusion,
     stop("Mod\u00e8le inconnu : ", modele_id)
   )
   exercice = f(

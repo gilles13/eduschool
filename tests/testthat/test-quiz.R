@@ -21,6 +21,15 @@ test_that("produire_quiz cree un HTML autonome sans bibliotheque externe", {
   expect_false(grepl("<link[^>]+href=", html))
 })
 
+
+test_that("les productions par defaut sont rangees dans rapports", {
+  x = exercices("6E", "proportionnalite", n = 1, seed = 2026)
+  fichier = eduschool:::.chemin_fichier_document(x, "quiz")
+
+  expect_identical(dirname(fichier), "rapports")
+  expect_match(basename(fichier), "^quiz_6e_")
+})
+
 test_that("produire_quiz refuse clairement un exercice sans propositions", {
   x = list(generer_fraction_quantite(seed = 2026))
   expect_error(

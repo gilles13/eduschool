@@ -14,3 +14,13 @@ PYTH_HYP_001;"Pythagore - calculer l’hypoténuse";"pythagore_hypotenuse";"4E";
 PYTH_COTE_001;"Pythagore - calculer un côté";"pythagore_cote";"4E";1;3;prototype
 PYTH_DIAG_001;"Pythagore - problème de diagonale";"pythagore_diagonale";"4E";1;3;prototype
 PYTH_APPL_001;"Pythagore - choisir si le théorème s’applique";"pythagore_applicable";"4E";1;3;prototype
+ENS_R_MOT_001;"Ensembles - sens du mot réel";"ensembles_nombres";"2GT";1;1;prototype
+ENS_Z_001;"Ensembles - reconnaître un entier relatif";"ensembles_nombres";"2GT";1;1;prototype
+ENS_D_001;"Ensembles - reconnaître un décimal";"ensembles_nombres";"2GT";1;1;prototype
+ENS_Q_001;"Ensembles - reconnaître un rationnel";"ensembles_nombres";"2GT";1;1;prototype
+ENS_SYM_001;"Ensembles - appartenance et inclusion";"ensembles_nombres";"2GT";1;1;prototype
+ENS_N_ZERO_001;"Ensembles - classer zéro";"ensembles_nombres";"2GT";1;1;prototype
+ENS_FRAC_SIMPL_001;"Ensembles - simplifier avant de classer";"ensembles_nombres";"2GT";1;1;prototype
+ENS_D_NEG_001;"Ensembles - classer un décimal négatif";"ensembles_nombres";"2GT";1;1;prototype
+ENS_R_IRR_001;"Ensembles - reconnaître un irrationnel";"ensembles_nombres";"2GT";1;1;prototype
+ENS_INCLUSION_001;"Ensembles - raisonner par inclusion";"ensembles_nombres";"2GT";1;1;prototype

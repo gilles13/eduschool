@@ -14,6 +14,13 @@ test_that("une revision thematique est structuree", {
   expect_true(nrow(x$notions) >= 1L)
 })
 
+test_that("l interface humaine accepte un theme en langage courant", {
+  x = revision(niveau = "2GT", theme = "ensembles")
+  expect_s3_class(x, "eduschool_revision")
+  expect_identical(x$famille_id, "LOGIQUE")
+  expect_true("ensembles_nombres" %in% x$blocs$illustration_id)
+})
+
 test_that("la fiche essentielle est distincte", {
   x = generer_essentiel("2GT")
   expect_equal(x$type, "ESSENTIEL")

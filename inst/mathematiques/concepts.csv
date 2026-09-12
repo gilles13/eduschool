@@ -168,6 +168,7 @@ MATC_VALEUR_APPROCHEE;"Valeur approchée";"Nombre utilisé pour approcher une va
 MATC_INEQUATION_PREMIER_DEGRE;"Inéquation du premier degré";"Inégalité contenant une inconnue et se ramenant à une expression affine.";ALGEBRE;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_ISOLER_VARIABLE;"Isolement d’une variable";"Transformation d’une relation littérale pour exprimer une variable en fonction des autres.";ALGEBRE;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_VECTEUR;"Vecteur";"Objet géométrique caractérisé par une direction, un sens et une longueur.";GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026;""
+MATC_VECTEUR_DIRECTEUR;"Vecteur directeur d’une droite";"Vecteur non nul dont la direction est parallèle à celle d’une droite.";GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_RELATION_VECTORIELLE;"Relation vectorielle";"Égalité ou combinaison de vecteurs traduisant une configuration géométrique.";GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_EQUATION_DROITE;"Équation de droite";"Équation cartésienne ou réduite caractérisant les points d’une droite dans un repère.";GEOMETRIE;structurant;2GT;PRG_MAT_2GT_2026;""
 MATC_EQUATION_COURBE;"Équation d’une courbe";"Relation entre coordonnées caractérisant les points d’une courbe.";FONCTIONS;structurant;2GT;PRG_MAT_2GT_2026;""

@@ -45,3 +45,35 @@ test_that("le premier rappel teste le sens du mot reel", {
   expect_true(any(grepl("langage courant", x$qcm$feedback, fixed = TRUE)))
   expect_true(any(grepl("ne peut pas etre negative", x$qcm$propositions, fixed = TRUE)))
 })
+
+
+test_that("les ensembles passent par l'API humaine exercices", {
+  x = exercices(
+    niveau = "2GT",
+    notion = "ensembles",
+    n = 10,
+    seed = 2026
+  )
+
+  expect_length(x, 10L)
+  expect_length(unique(vapply(x, function(z) z$modele_id, character(1))), 10L)
+  expect_true(all(vapply(x, function(z) !is.null(z$qcm), logical(1))))
+  expect_true(all(vapply(x, function(z) z$capacite_id == "ITM_MAT_2GT_2026_01_01", logical(1))))
+})
+
+test_that("le quiz des ensembles se produit depuis l'API humaine", {
+  x = exercices(
+    niveau = "2GT",
+    notion = "ensembles",
+    n = 5,
+    seed = 2026
+  )
+  fichier = tempfile(fileext = ".html")
+
+  sortie = produire_quiz(x, fichier = fichier, ouvrir = FALSE)
+
+  expect_true(file.exists(sortie))
+  html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
+  expect_match(html, "Question 5", fixed = TRUE)
+  expect_match(html, "Ensembles de nombres", fixed = TRUE)
+})

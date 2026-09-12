@@ -68,3 +68,21 @@ test_that("une fiche Pythagore varie les connaissances mobilisees", {
   expect_true(any(ids == "PYTH_COTE_001"))
   expect_true(any(ids == "PYTH_DIAG_001"))
 })
+
+
+test_that("notion ouvre une porte humaine vers un concept mathematique", {
+  x = notion("proportionnalite")
+
+  expect_true(is.list(x))
+  expect_identical(x$notion$concept_id[[1L]], "MATC_PROPORTIONNALITE")
+  expect_identical(x$notion$libelle[[1L]], "Proportionnalité")
+  expect_true(nzchar(x$notion$definition[[1L]]))
+  expect_true(all(c("sens", "notion", "relation", "commentaire") %in% names(x$relations)))
+  expect_true(all(x$relations$sens %in% c("amont", "autour", "aval")))
+  expect_true("Coefficient de proportionnalité" %in% x$relations$notion)
+})
+
+test_that("notion accepte les variantes deja comprises par eduschool", {
+  x = notion("fractions")
+  expect_identical(x$notion$concept_id[[1L]], "MATC_FRACTION")
+})

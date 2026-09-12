@@ -477,6 +477,10 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
   paste(prefixe, niveau, capacite, sep = "_")
 }
 
+.chemin_fichier_document = function(exercices, prefixe) {
+  file.path("rapports", .nom_fichier_document(exercices, prefixe))
+}
+
 .template_fiche_exercices = function() {
   f = system.file("templates", "fiche_exercices.Rmd", package = "eduschool")
   if (nzchar(f) && file.exists(f)) return(f)
@@ -610,7 +614,7 @@ produire_fiche = function(
   ouvrir = TRUE
 ) {
   .verifier_exercices(exercices)
-  if (is.null(fichier)) fichier = .nom_fichier_document(exercices, "fiche")
+  if (is.null(fichier)) fichier = .chemin_fichier_document(exercices, "fiche")
   if (is.null(sous_titre)) sous_titre = .sous_titre_exercices(exercices)
   .rendre_fiche_rmd(
     exercices = exercices,
@@ -645,7 +649,7 @@ produire_corrige = function(
   ouvrir = FALSE
 ) {
   .verifier_exercices(exercices)
-  if (is.null(fichier)) fichier = .nom_fichier_document(exercices, "corrige")
+  if (is.null(fichier)) fichier = .chemin_fichier_document(exercices, "corrige")
   if (is.null(sous_titre)) sous_titre = .sous_titre_exercices(exercices)
   .rendre_fiche_rmd(
     exercices = exercices,

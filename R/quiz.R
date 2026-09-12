@@ -88,7 +88,7 @@ produire_quiz = function(exercices, fichier = NULL,
   .verifier_exercices(exercices)
   invisible(lapply(exercices, .verifier_qcm))
 
-  if (is.null(fichier)) fichier = .nom_fichier_document(exercices, "quiz")
+  if (is.null(fichier)) fichier = .chemin_fichier_document(exercices, "quiz")
   if (!grepl("\\.html$", fichier, ignore.case = TRUE)) fichier = paste0(fichier, ".html")
   fichier = normalizePath(fichier, mustWork = FALSE)
   dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)

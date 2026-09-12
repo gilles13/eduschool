@@ -106,3 +106,75 @@ programme = function(niveau, discipline = "MAT", version = NULL) {
   rownames(x) = NULL
   x
 }
+
+.niveau_math_rang = function(x) {
+  rangs = c("6E" = 1L, "5E" = 2L, "4E" = 3L, "3E" = 4L, "2GT" = 5L, "1G" = 6L, "TG" = 7L)
+  unname(rangs[as.character(x)])
+}
+
+.relations_notion = function(concept) {
+  relations = relations_concepts_math(concept$concept_id[[1L]])
+  if (!nrow(relations)) {
+    return(data.frame(
+      sens = character(), notion = character(), relation = character(),
+      commentaire = character(), stringsAsFactors = FALSE
+    ))
+  }
+
+  concepts = concepts_math()
+  id = concept$concept_id[[1L]]
+  ids_lies = ifelse(relations$concept_id == id, relations$concept_lie_id, relations$concept_id)
+  i = match(ids_lies, concepts$concept_id)
+
+  rang_courant = .niveau_math_rang(concept$niveau_introduction[[1L]])
+  rang_lie = .niveau_math_rang(concepts$niveau_introduction[i])
+  sens = ifelse(
+    !is.na(rang_lie) & !is.na(rang_courant) & rang_lie < rang_courant,
+    "amont",
+    ifelse(
+      !is.na(rang_lie) & !is.na(rang_courant) & rang_lie > rang_courant,
+      "aval",
+      "autour"
+    )
+  )
+
+  out = data.frame(
+    sens = sens,
+    notion = concepts$libelle[i],
+    relation = relations$type_relation,
+    commentaire = relations$commentaire,
+    stringsAsFactors = FALSE
+  )
+  out[order(match(out$sens, c("amont", "autour", "aval")), out$notion), , drop = FALSE]
+}
+
+#' Decouvrir une notion mathematique
+#'
+#' `notion()` est une porte d'entree en langage courant vers les concepts
+#' mathematiques d'eduschool. Elle retrouve une notion a partir de son nom,
+#' donne sa definition et montre les notions qui l'entourent dans le parcours
+#' mathematique.
+#'
+#' Les relations sont classees en `"amont"`, `"autour"` et `"aval"` a partir
+#' du niveau auquel les concepts sont introduits. Cette lecture est volontairement
+#' pedagogique : elle ne remplace pas la relation semantique detaillee conservee
+#' dans `relation` et `commentaire`.
+#'
+#' @param nom Nom de la notion en langage courant, par exemple
+#'   `"proportionnalite"`, `"fractions"` ou `"pythagore"`.
+#' @return Une liste contenant la notion et ses relations pedagogiques.
+#' @export
+notion = function(nom) {
+  concept = .resoudre_notion(nom)
+
+  garder = c(
+    "concept_id", "libelle", "definition", "domaine",
+    "statut", "niveau_introduction"
+  )
+  garder = garder[garder %in% names(concept)]
+
+  list(
+    notion = concept[, garder, drop = FALSE],
+    relations = .relations_notion(concept)
+  )
+}

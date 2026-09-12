@@ -423,3 +423,48 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
 
   questions[seq_len(n)]
 }
+
+.generer_exercice_ensemble_nombres = function(
+  modele_id, niveau_id, capacite_id = NA_character_, difficulte = 1, seed = NULL
+) {
+  if (!identical(as.character(niveau_id), "2GT")) {
+    stop("Les exercices sur les ensembles de nombres sont disponibles en 2GT.", call. = FALSE)
+  }
+
+  banque = exercices_ensembles_nombres(seed = seed, n = 10L)
+  ids = vapply(banque, function(x) x$modele_id, character(1))
+  i = match(modele_id, ids)
+
+  if (is.na(i)) {
+    stop("Modele d'ensembles inconnu : ", modele_id, call. = FALSE)
+  }
+
+  exercice = banque[[i]]
+  exercice$capacite_id = capacite_id
+  exercice$difficulte = difficulte
+  exercice
+}
+
+.generateur_ensemble_nombres = function(modele_id) {
+  force(modele_id)
+  function(niveau_id, capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+    .generer_exercice_ensemble_nombres(
+      modele_id = modele_id,
+      niveau_id = niveau_id,
+      capacite_id = capacite_id,
+      difficulte = difficulte,
+      seed = seed
+    )
+  }
+}
+
+.generer_ens_r_mot = .generateur_ensemble_nombres("ENS_R_MOT_001")
+.generer_ens_z = .generateur_ensemble_nombres("ENS_Z_001")
+.generer_ens_d = .generateur_ensemble_nombres("ENS_D_001")
+.generer_ens_q = .generateur_ensemble_nombres("ENS_Q_001")
+.generer_ens_sym = .generateur_ensemble_nombres("ENS_SYM_001")
+.generer_ens_n_zero = .generateur_ensemble_nombres("ENS_N_ZERO_001")
+.generer_ens_frac_simpl = .generateur_ensemble_nombres("ENS_FRAC_SIMPL_001")
+.generer_ens_d_neg = .generateur_ensemble_nombres("ENS_D_NEG_001")
+.generer_ens_r_irr = .generateur_ensemble_nombres("ENS_R_IRR_001")
+.generer_ens_inclusion = .generateur_ensemble_nombres("ENS_INCLUSION_001")
