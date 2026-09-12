@@ -5,16 +5,6 @@ Generer un exercice
 ## Usage
 
 ``` r
-exercices(
-  niveau,
-  notion = NULL,
-  capacite = NULL,
-  n = 5,
-  difficulte = 1,
-  seed = 1,
-  afficher = FALSE
-)
-
 generer_exercice(
   modele_id, niveau_id, capacite_id = NA_character_,
   difficulte = 1, seed = NULL, afficher = FALSE
@@ -46,26 +36,31 @@ generer_fiche(
   seed = 1,
   afficher = FALSE
 )
+
+exercices(
+  niveau,
+  notion = NULL,
+  capacite = NULL,
+  n = 5,
+  difficulte = 1,
+  seed = 1,
+  afficher = FALSE
+)
 ```
 
 ## Arguments
 
-- niveau:
+- modele_id:
 
-  Niveau scolaire.
+  Identifiant du modele d'exercice.
 
-- notion:
+- niveau_id:
 
-  Notion a travailler, en langage courant, par exemple \`"pythagore"\`
-  ou \`"fractions"\`.
+  Identifiant du niveau scolaire.
 
-- capacite:
+- capacite_id:
 
-  Identifiant de capacite facultatif pour un pilotage avance.
-
-- n:
-
-  Nombre d'exercices.
+  Identifiant de capacite facultatif.
 
 - difficulte:
 
@@ -79,17 +74,22 @@ generer_fiche(
 
   Afficher directement l'enonce genere.
 
-- modele_id:
+- n:
 
-  Identifiant du modele d'exercice.
+  Nombre d'exercices.
 
-- niveau_id:
+- niveau:
 
-  Identifiant du niveau scolaire.
+  Niveau scolaire.
 
-- capacite_id:
+- notion:
 
-  Identifiant de capacite facultatif.
+  Notion a travailler, en langage courant, par exemple \`"pythagore"\`
+  ou \`"fractions"\`.
+
+- capacite:
+
+  Identifiant de capacite facultatif pour un pilotage avance.
 
 ## Value
 

@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.30.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.31.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,12 +70,83 @@
 <p>Avant de calculer, il faut savoir <strong>de quels nombres on
 parle</strong>. Un ensemble est simplement une collection d’objets ;
 ici, les objets sont des nombres.</p>
-<p><img src="fiche-ensembles-nombres_files/figure-html/ensembles-visuel-1.png" class="r-plt" alt="" width="1080"></p>
-<p>La chaine a retenir est :</p>
-<p><span class="math display">
-\mathbb{N} \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q}
-\subset \mathbb{R}.
-</span></p>
+<div class="section level2">
+<h2 id="commencer-par-les-mots">Commencer par les mots<a class="anchor" aria-label="anchor" href="#commencer-par-les-mots"></a>
+</h2>
+<p>Deux definitions suffisent deja a eviter beaucoup de brouillard :</p>
+<ul>
+<li>
+<strong>N – nombres naturels</strong> : les nombres qui servent a
+<strong>compter</strong> : 0, 1, 2, 3, … ;</li>
+<li>
+<strong>R – nombres reels</strong> : les nombres que l’on peut
+<strong>placer sur une droite graduee</strong>.</li>
+</ul>
+<p>Un naturel est donc aussi un reel : par exemple, <code>3</code>
+appartient a N et a R. Les deux mots ne designent pas des categories
+opposees : N est inclus dans R.</p>
+<blockquote>
+<h3 id="surprenant">Surprenant</h3>
+<p><strong>Une personne est reelle. Est-elle un reel ?</strong></p>
+<p>Non. Dans le langage courant, <em>reel</em> signifie « qui existe
+effectivement ». En mathematiques, un <strong>nombre reel</strong> est
+un nombre appartenant a R. Une personne peut donc etre
+<strong>reelle</strong> sans etre <strong>un reel</strong>.</p>
+<p><strong>Meme mot. Deux definitions differentes.</strong></p>
+</blockquote>
+</div>
+<div class="section level2">
+<h2 id="voir-lemboitement">Voir l’emboitement<a class="anchor" aria-label="anchor" href="#voir-lemboitement"></a>
+</h2>
+<p><img src="fiche-ensembles-nombres_files/figure-html/ensembles-visuel-1.png" class="r-plt" alt="" width="1056"></p>
+<p>Le dessin montre aussi ce que chaque nouvel ensemble ajoute :
+<code>-2</code> apparait dans Z mais hors de N, <code>0,25</code> dans D
+mais hors de Z, <code>2/3</code> dans Q mais hors de D, et
+<code>sqrt(2)</code> et <code>pi</code> dans R mais hors de Q.</p>
+</div>
+<div class="section level2">
+<h2 id="la-chaîne-à-retenir">La chaîne à retenir<a class="anchor" aria-label="anchor" href="#la-cha%C3%AEne-%C3%A0-retenir"></a>
+</h2>
+<p><strong>ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ</strong></p>
+<p>En allant vers la droite, les ensembles contiennent de plus en plus
+de nombres. On ne perd jamais ceux que l’on avait déjà.</p>
+<table class="table">
+<thead><tr class="header">
+<th>Ensemble</th>
+<th align="right">Exemple</th>
+<th>Ce qu’il ajoute</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>ℕ</td>
+<td align="right">3</td>
+<td>Les nombres pour compter</td>
+</tr>
+<tr class="even">
+<td>ℤ</td>
+<td align="right">-2</td>
+<td>Les entiers négatifs</td>
+</tr>
+<tr class="odd">
+<td>𝔻</td>
+<td align="right">0,25</td>
+<td>Les écritures décimales finies</td>
+</tr>
+<tr class="even">
+<td>ℚ</td>
+<td align="right">2/3</td>
+<td>Les quotients de deux entiers</td>
+</tr>
+<tr class="odd">
+<td>ℝ</td>
+<td align="right">√2, π</td>
+<td>Tous les nombres de la droite graduée</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemple :</strong> 3 appartient à ℕ, donc aussi à ℤ, 𝔻, ℚ et
+ℝ.</p>
+</div>
 <div class="section level2">
 <h2 id="lire-les-cinq-ensembles">Lire les cinq ensembles<a class="anchor" aria-label="anchor" href="#lire-les-cinq-ensembles"></a>
 </h2>
@@ -96,7 +167,7 @@ ici, les objets sont des nombres.</p>
 <tr class="odd">
 <td align="left">ℕ</td>
 <td align="left">Nombres naturels</td>
-<td align="left">Entiers positifs ou nuls.</td>
+<td align="left">Nombres qui servent à compter : 0, 1, 2, 3, …</td>
 <td align="left">3</td>
 </tr>
 <tr class="even">
@@ -121,7 +192,7 @@ avec un dénominateur non nul.</td>
 <tr class="odd">
 <td align="left">ℝ</td>
 <td align="left">Nombres réels</td>
-<td align="left">Tous les nombres repérables sur une droite
+<td align="left">Nombres que l’on peut placer sur une droite
 graduée.</td>
 <td align="left">√2</td>
 </tr>
@@ -133,15 +204,10 @@ graduée.</td>
 </h2>
 <p>Un <strong>nombre</strong> est un element. Un
 <strong>ensemble</strong> est une collection d’elements.</p>
-<p><span class="math display">
-3 \in \mathbb{N}
-</span></p>
-<p>se lit « 3 appartient a l’ensemble des naturels ».</p>
-<p><span class="math display">
-\mathbb{N} \subset \mathbb{Z}
-</span></p>
-<p>se lit « l’ensemble des naturels est inclus dans l’ensemble des
-entiers ».</p>
+<p><strong>3 ∈ ℕ</strong> se lit « 3 appartient à l’ensemble des
+naturels ».</p>
+<p><strong>ℕ ⊂ ℤ</strong> se lit « l’ensemble des naturels est inclus
+dans l’ensemble des entiers ».</p>
 <p><strong>A retenir : un element appartient ; un ensemble est
 inclus.</strong></p>
 </div>
@@ -157,9 +223,12 @@ meme notion :</p>
 <span>  <span class="va">q</span>,</span>
 <span>  titre <span class="op">=</span> <span class="st">"Mes 5 rappels sur les ensembles"</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<p>Les cinq questions reviennent sur le classement d’un nombre dans le
-plus petit ensemble usuel et sur la difference entre <code>\in</code> et
-<code>\subset</code>.</p>
+<p>La premiere question part volontairement du mot <em>reel</em> et de
+son sens courant. Les suivantes reviennent sur le classement d’un nombre
+dans le plus petit ensemble usuel et sur la difference entre
+<code>∈</code> et <code>⊂</code>. Chaque mauvaise reponse est
+accompagnee d’une explication : un distracteur utile doit montrer une
+confusion interessante, pas seulement etre faux.</p>
 </div>
 <div class="section level2">
 <h2 id="ouvrir-la-porte-suivante">Ouvrir la porte suivante<a class="anchor" aria-label="anchor" href="#ouvrir-la-porte-suivante"></a>

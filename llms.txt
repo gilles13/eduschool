@@ -109,13 +109,15 @@ library(eduschool)
   : Decrire un examen
 - [`examens()`](https://gilles13.github.io/eduschool/reference/examens.md)
   : Examens modelises
-- [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
-  [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
+- [`generer_exercice()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_lot_exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
+  [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   : Generer un exercice
 - [`exercices_ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_nombres.md)
-  : Cinq rappels sur les ensembles de nombres
+  : Quiz sur les ensembles de nombres
+- [`exercices_ensembles_proportions()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_proportions.md)
+  : Cinq QCM croisant ensembles de nombres et proportions
 - [`familles_revision()`](https://gilles13.github.io/eduschool/reference/familles_revision.md)
   : Familles de fiches de revision
 - [`fiches_revision()`](https://gilles13.github.io/eduschool/reference/fiches_revision.md)
