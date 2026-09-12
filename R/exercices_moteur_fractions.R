@@ -61,11 +61,59 @@ generer_addition_fractions = function(niveau_id = "6E", capacite_id = NA_charact
   d = if (difficulte == 1) b else sample(den,1)
   a = sample(seq_len(b-1),1); c = sample(seq_len(d-1),1)
   num = a*d + c*b; denom = b*d; res = simplifier_fraction(num,denom)
+
   enonce = sprintf("Calculer et simplifier : %d/%d + %d/%d", a,b,c,d)
-  correction = sprintf("On utilise un d\u00e9nominateur commun : (%d\u00d7%d + %d\u00d7%d)/(%d\u00d7%d) = %s.", a,d,c,b,b,d,fmt_fraction(res[["num"]],res[["den"]]))
-  creer_exercice("FRAC_ADD_001", niveau_id, capacite_id, difficulte, enonce,
-                 fmt_fraction(res[["num"]],res[["den"]]), correction,
-                 list(a=a,b=b,c=c,d=d), seed)
+  reponse = fmt_fraction(res[["num"]], res[["den"]])
+  correction = sprintf(
+    "On utilise un d\u00e9nominateur commun : (%d\u00d7%d + %d\u00d7%d)/(%d\u00d7%d) = %s.",
+    a,d,c,b,b,d,reponse
+  )
+
+  candidats = unique(c(
+    fmt_fraction(a + c, b + d),
+    fmt_fraction(a * d + c * b, b + d),
+    fmt_fraction(a + c, b * d),
+    fmt_fraction(abs(a * d - c * b), b * d),
+    fmt_fraction(num + 1L, denom),
+    fmt_fraction(max(1L, num - 1L), denom)
+  ))
+  distracteurs = candidats[candidats != reponse]
+
+  k = 1L
+  while (length(distracteurs) < 3L) {
+    proposition = fmt_fraction(res[["num"]] + k, res[["den"]])
+    if (proposition != reponse && !proposition %in% distracteurs) {
+      distracteurs = c(distracteurs, proposition)
+    }
+    k = k + 1L
+  }
+  distracteurs = distracteurs[seq_len(3L)]
+
+  propositions = c(reponse, distracteurs)
+  feedback = c(
+    correction,
+    vapply(distracteurs, function(x) {
+      sprintf(
+        "Apr\u00e8s mise au m\u00eame d\u00e9nominateur et simplification, le r\u00e9sultat est %s, pas %s.",
+        reponse, x
+      )
+    }, character(1))
+  )
+
+  ordre = sample(seq_len(4L))
+  qcm = list(
+    intention = "calculer",
+    notion = "Fractions",
+    rappel = "Pour additionner deux fractions, on les \u00e9crit avec un d\u00e9nominateur commun puis on simplifie le r\u00e9sultat.",
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = feedback[ordre]
+  )
+
+  creer_exercice(
+    "FRAC_ADD_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(a=a,b=b,c=c,d=d), seed, qcm = qcm
+  )
 }
 
 generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
@@ -116,12 +164,67 @@ generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, dif
 
 generer_fraction_quantite = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
-  den = sample(c(2,3,4,5,6,8,10),1); num = sample(seq_len(den-1),1)
-  base = sample(2:12,1) * den; rep = base * num / den
+  den = sample(c(2,3,4,5,6,8,10),1)
+  num = sample(seq_len(den-1),1)
+  base = sample(2:12,1) * den
+  rep = base * num / den
+
   enonce = sprintf("Calculer %d/%d de %d.", num,den,base)
-  correction = sprintf("%d/%d de %d = %d \u00d7 %d / %d = %d.", num,den,base,base,num,den,rep)
-  creer_exercice("FRAC_QTE_001", niveau_id, capacite_id, difficulte, enonce, as.character(rep), correction,
-                 list(num=num,den=den,base=base), seed)
+  reponse = as.character(rep)
+  correction = sprintf(
+    "%d/%d de %d = %d \u00d7 %d / %d = %d.",
+    num,den,base,base,num,den,rep
+  )
+
+  candidats = unique(c(
+    base / den,
+    base * num,
+    base - rep,
+    rep + den,
+    abs(rep - den),
+    base
+  ))
+  candidats = candidats[
+    is.finite(candidats) &
+      candidats >= 0 &
+      candidats != rep
+  ]
+
+  k = 1L
+  while (length(candidats) < 3L) {
+    proposition = rep + k
+    if (proposition != rep && !proposition %in% candidats) {
+      candidats = c(candidats, proposition)
+    }
+    k = k + 1L
+  }
+
+  distracteurs = as.character(candidats[seq_len(3L)])
+  propositions = c(reponse, distracteurs)
+  feedback = c(
+    correction,
+    vapply(distracteurs, function(x) {
+      sprintf(
+        "%d/%d de %d vaut %s, pas %s.",
+        num, den, base, reponse, x
+      )
+    }, character(1))
+  )
+
+  ordre = sample(seq_len(4L))
+  qcm = list(
+    intention = "appliquer",
+    notion = "Fractions",
+    rappel = "Prendre une fraction d'une quantit\u00e9 revient \u00e0 multiplier la quantit\u00e9 par le num\u00e9rateur puis \u00e0 diviser par le d\u00e9nominateur.",
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = feedback[ordre]
+  )
+
+  creer_exercice(
+    "FRAC_QTE_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(num=num,den=den,base=base), seed, qcm = qcm
+  )
 }
 
 generer_pourcentage = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {

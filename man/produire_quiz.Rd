@@ -8,6 +8,7 @@ produire_quiz(
   exercices,
   fichier = NULL,
   titre = "Mon entrainement eduschool",
+  questions_par_quiz = 5L,
   ouvrir = TRUE
 )
 }
@@ -18,6 +19,12 @@ produire_quiz(
 automatiquement a partir des exercices.}
 
 \item{titre}{Titre affiche dans le quiz.}
+
+\item{questions_par_quiz}{Nombre de questions affichees dans chaque quiz.
+Toutes les questions fournies dans `exercices` sont embarquees dans le HTML.
+Le bouton `Lancer un nouveau quiz` effectue un nouveau tirage cote navigateur,
+sans session R. Pour obtenir un contenu different, `exercices` doit contenir
+plus de questions que `questions_par_quiz`.}
 
 \item{ouvrir}{Ouvrir le quiz dans le navigateur apres sa creation.}
 }

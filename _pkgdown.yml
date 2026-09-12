@@ -8,13 +8,18 @@ navbar:
   structure:
     left:
       - intro
-      - reference
+      - cheatsheet
       - guides
+      - reference
       - news
     right:
       - github
 
   components:
+    cheatsheet:
+      text: Cheatsheet
+      href: eduschool-cheatsheet.html
+
     guides:
       text: Guides
       menu:

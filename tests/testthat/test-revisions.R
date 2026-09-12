@@ -48,6 +48,17 @@ test_that("la fiche ensembles ouvre une porte sans melanger les themes", {
   expect_false(any(grepl("Intervalles|N.gation|Implication", x$blocs$titre)))
 })
 
+test_that("la revision fractions de 5e est disponible avant le quiz", {
+  x = revision(niveau = "5E", theme = "fractions")
+  expect_s3_class(x, "eduschool_revision")
+  expect_identical(x$fiche_id, "REV_5E_FRACTIONS")
+  expect_identical(x$niveau_id, "5E")
+  expect_identical(x$type, "THEMATIQUE")
+  expect_identical(x$titre, "Fractions")
+  expect_gte(nrow(x$blocs), 6L)
+  expect_true("MAT_NOMBRES_RATIONNELS" %in% x$notions$notion_id)
+})
+
 test_that("la fiche essentielle est distincte", {
   x = generer_essentiel("2GT")
   expect_equal(x$type, "ESSENTIEL")

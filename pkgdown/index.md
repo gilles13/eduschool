@@ -23,6 +23,8 @@ Celui-là, on peut même l'apprendre **par cœur**. ❤️
 
 [**Pourquoi eduschool ? →**](articles/a-propos.html)
 
+**Vous utilisez R ?** [Ouvrir la cheatsheet eduschool →](eduschool-cheatsheet.html)
+
 <details>
 <summary><strong>J'utilise R</strong></summary>
 

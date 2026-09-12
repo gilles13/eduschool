@@ -133,3 +133,5 @@ export(ensembles_nombres)
 export(diagramme_ensembles_nombres)
 export(exercices_ensembles_nombres)
 export(exercices_ensembles_proportions)
+
+export(produire_cheatsheet)

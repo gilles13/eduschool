@@ -196,6 +196,22 @@ La mise en oeuvre technique de cette distinction doit respecter l'autonomie des
 supports HTML ; elle ne doit pas etre simulee par une interface qui promettrait
 plus que le moteur ne peut faire.
 
+Le premier prototype confirme qu'un HTML autonome peut embarquer plusieurs lots
+d'exercices prepares par R. Le navigateur ne devient pas un second moteur de
+mathematiques : il revele simplement le lot suivant.
+
+## Reflexion ouverte - l'humour doit creer une rupture, pas du bruit
+
+Le premier prototype humoristique mettait une plaisanterie presque partout. Le
+RETEX est net : l'effet comique devient du bruit lorsqu'il accompagne chaque
+question et finit par concurrencer l'objectif mathematique.
+
+Le dosage experimental retenu est donc d'une question humoristique sur cinq.
+L'humour reste desactivable et il est desactive par defaut. Ce ratio n'est pas
+une loi pedagogique : il doit etre confronte a l'usage avant toute generalisation.
+
+> **L'humour pedagogique doit creer une rupture, pas du bruit.**
+
 # Fragilites et arbitrages
 
 ## Decision - nommer ce que nous savons fragile

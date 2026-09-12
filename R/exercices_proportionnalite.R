@@ -67,7 +67,7 @@ generer_proportion_reconnaitre = function(niveau_id = "6E", capacite_id = NA_cha
   } else {
     k = sample(2:5, 1L)
     enonce = sprintf(
-      "On observe les couples 1 -> %d, 2 -> %d et 3 -> %d. Que peut-on dire ?",
+      "Dans un tableau, les valeurs associees sont 1 -> %d, 2 -> %d et 3 -> %d. Que peut-on dire ?",
       k, 2L * k, 3L * k
     )
     reponse = sprintf("On multiplie toujours par %d : les deux grandeurs sont proportionnelles.", k)

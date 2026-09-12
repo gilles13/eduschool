@@ -68,6 +68,9 @@ revision = function(niveau, theme = NULL) {
 #' @param notion Notion a travailler, en langage courant, par exemple
 #'   `"pythagore"` ou `"fractions"`.
 #' @param capacite Identifiant de capacite facultatif pour un pilotage avance.
+#' @param humour Ajouter quelques touches humoristiques lorsqu'elles sont disponibles.
+#'   Par defaut `FALSE`. Le dosage est d'une question humoristique par groupe
+#'   complet de cinq exercices, quelle que soit la notion.
 #' @export
 exercices = function(
   niveau,
@@ -76,10 +79,15 @@ exercices = function(
   n = 5,
   difficulte = 1,
   seed = 1,
+  humour = FALSE,
   afficher = FALSE
 ) {
   if (!is.null(notion) && !is.null(capacite)) {
     stop("Utiliser `notion` ou `capacite`, pas les deux.", call. = FALSE)
+  }
+
+  if (!is.logical(humour) || length(humour) != 1L || is.na(humour)) {
+    stop("`humour` doit valoir TRUE ou FALSE.", call. = FALSE)
   }
 
   if (is.null(notion)) {
@@ -118,6 +126,26 @@ exercices = function(
       seed = seed + i - 1L, afficher = FALSE
     )
   })
+
+  if (isTRUE(humour)) {
+    n_blocs = length(lot) %/% 5L
+
+    if (n_blocs > 0L) {
+      for (bloc in seq_len(n_blocs)) {
+        debut = (bloc - 1L) * 5L + 1L
+        indices = debut:(debut + 4L)
+        disponibles = indices[
+          vapply(lot[indices], .humour_disponible, logical(1))
+        ]
+
+        if (length(disponibles)) {
+          position = ((as.integer(seed) + bloc - 1L) %% length(disponibles)) + 1L
+          i = disponibles[[position]]
+          lot[[i]] = .ajouter_humour(lot[[i]])
+        }
+      }
+    }
+  }
 
   if (isTRUE(afficher)) {
     .afficher_lot_exercices(lot)

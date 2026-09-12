@@ -74,6 +74,11 @@
 #' @param fichier Chemin du fichier HTML. Si `NULL`, un nom est construit
 #'   automatiquement a partir des exercices.
 #' @param titre Titre affiche dans le quiz.
+#' @param questions_par_quiz Nombre de questions affichees dans chaque quiz.
+#'   Toutes les questions fournies dans `exercices` sont embarquees dans le HTML.
+#'   Le bouton `Lancer un nouveau quiz` effectue un nouveau tirage cote navigateur,
+#'   sans session R. Pour obtenir un contenu different, `exercices` doit contenir
+#'   plus de questions que `questions_par_quiz`.
 #' @param ouvrir Ouvrir le quiz dans le navigateur apres sa creation.
 #' @return Invisiblement, le chemin absolu du fichier HTML produit.
 #' @examples
@@ -84,9 +89,15 @@
 #' @export
 produire_quiz = function(exercices, fichier = NULL,
                          titre = "Mon entrainement eduschool",
+                         questions_par_quiz = 5L,
                          ouvrir = TRUE) {
   .verifier_exercices(exercices)
   invisible(lapply(exercices, .verifier_qcm))
+  if (length(questions_par_quiz) != 1L || is.na(questions_par_quiz) ||
+      questions_par_quiz < 1L || questions_par_quiz != as.integer(questions_par_quiz)) {
+    stop("`questions_par_quiz` doit etre un entier strictement positif.", call. = FALSE)
+  }
+  questions_par_quiz = as.integer(questions_par_quiz)
 
   if (is.null(fichier)) fichier = .chemin_fichier_document(exercices, "quiz")
   if (!grepl("\\.html$", fichier, ignore.case = TRUE)) fichier = paste0(fichier, ".html")
@@ -161,16 +172,37 @@ produire_quiz = function(exercices, fichier = NULL,
     } else {
       ""
     }
+    numero_question = ((i - 1L) %% questions_par_quiz) + 1L
     sprintf(
       paste0(
         '<section class="question" data-question="%d" data-correct="%d">',
         '<h2><span>Question %d</span>%s</h2><p class="enonce">%s</p>%s',
         '<div class="retour" aria-live="polite"></div>%s</section>'
       ),
-      i, qcm$correcte, i, intention, .html_echapper(ex$enonce),
+      i, qcm$correcte, numero_question, intention, .html_echapper(ex$enonce),
       paste(propositions, collapse = "\n"), feedback
     )
   }, character(1))
+
+  # Toutes les questions sont embarquees une seule fois dans le HTML.
+  # JavaScript en affiche un sous-ensemble aleatoire de taille
+  # `questions_par_quiz` et peut refaire un tirage sans session R.
+  lot = sprintf(
+    paste0(
+      '<div class="quiz-lot" data-lot="1">',
+      '<div class="pool-questions" hidden>%s</div>',
+      '<div class="questions-actives"></div>',
+      '<div class="actions">',
+      '<button class="valider" type="button">Valider le quiz</button>',
+      '<button class="reessayer" type="button">Reessayer</button>',
+      '<button class="relancer-quiz" type="button">Lancer un nouveau quiz</button>',
+      '</div>',
+      '<div class="bilan" aria-live="polite"></div>',
+      '</div>'
+    ),
+    paste(questions, collapse = "\n")
+  )
+
 
   html = c(
     '<!doctype html>', '<html lang="fr">', '<head>',
@@ -197,9 +229,9 @@ produire_quiz = function(exercices, fichier = NULL,
     '.retour{margin-top:.8rem;font-weight:750}.feedback-option{display:none;margin-top:.4rem;padding:.65rem .75rem;background:#f6f7f7;border-radius:7px}',
     '.feedback-option.choisie-fausse{border-left:4px solid #d97706;background:#fff7ed}.feedback-option.attendue{border-left:4px solid #2e7d32;background:#f1f8f2}',
     '.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.6rem 0}.actions button{font:inherit;font-weight:650;padding:.7rem 1rem;border:1px solid var(--accent);border-radius:8px;background:#fff;color:#222;cursor:pointer}',
-    '.actions #valider{background:var(--accent);color:#fff}.actions button:hover{filter:brightness(.97)}',
-    '#bilan{font-size:1.08rem;font-weight:700;margin:1rem 0 2rem;padding:1rem 1.1rem;background:#fff;border-radius:8px;border:1px solid #d7dce0}',
-    '#bilan .bilan-juste{color:#256b2b}#bilan .bilan-faux{color:#b45309}#bilan .bilan-vide{color:#666}',
+    '.actions .valider{background:var(--accent);color:#fff}.actions button:hover{filter:brightness(.97)}',
+    '.bilan{font-size:1.08rem;font-weight:700;margin:1rem 0 2rem;padding:1rem 1.1rem;background:#fff;border-radius:8px;border:1px solid #d7dce0}',
+    '.bilan .bilan-juste{color:#256b2b}.bilan .bilan-faux{color:#b45309}.bilan .bilan-vide{color:#666}',
     '@media (max-width:600px){body{padding-left:.8rem;padding-right:.8rem}.entete{margin-left:-.8rem;margin-right:-.8rem}.logo-quiz{width:60px}.question{padding:.9rem}.question h2{align-items:flex-start;flex-direction:column;gap:.35rem}}',
     '</style>', '</head>',
     sprintf('<body style="--accent:%s">', .html_echapper(accent)),
@@ -217,37 +249,70 @@ produire_quiz = function(exercices, fichier = NULL,
     '</header>',
     notion_html,
     '<p>Choisis une reponse pour chaque question, puis valide le quiz. Tu peux revenir a la fiche quand tu veux.</p>',
-    questions,
-    '<div class="actions"><button id="valider" type="button">Valider le quiz</button><button id="reessayer" type="button">Reessayer</button></div>',
-    '<div id="bilan" aria-live="polite"></div>',
+    lot,
     '<script>',
-    'const questions=[...document.querySelectorAll(".question")];',
-    'document.getElementById("valider").addEventListener("click",()=>{',
+    sprintf('const QUESTIONS_PAR_QUIZ=%d;', questions_par_quiz),
+    'const lot=document.querySelector(".quiz-lot");',
+    'const pool=lot.querySelector(".pool-questions");',
+    'const zone=lot.querySelector(".questions-actives");',
+    'const toutesQuestions=[...pool.querySelectorAll(".question")].map(q=>q.cloneNode(true));',
+    'let tirageCourant=[];',
+    'function melanger(indices){',
+    ' const a=[...indices];',
+    ' for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}',
+    ' return a;',
+    '}',
+    'function resetLot(){',
+    ' zone.querySelectorAll("input[type=radio]").forEach(x=>x.checked=false);',
+    ' zone.querySelectorAll(".question").forEach(q=>q.classList.remove("juste","a-revoir","sans-reponse"));',
+    ' zone.querySelectorAll(".retour").forEach(x=>x.textContent="");',
+    ' zone.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";x.classList.remove("choisie-fausse","attendue");});',
+    ' lot.querySelector(".bilan").textContent="";',
+    '}',
+    'function afficherQuiz(nouveau=true){',
+    ' const n=Math.min(QUESTIONS_PAR_QUIZ,toutesQuestions.length);',
+    ' if(nouveau||tirageCourant.length!==n){',
+    '  let candidats=melanger(toutesQuestions.map((_,i)=>i));',
+    '  if(tirageCourant.length&&toutesQuestions.length>n){',
+    '   const precedent=new Set(tirageCourant);',
+    '   const diff=candidats.filter(i=>!precedent.has(i));',
+    '   const commun=candidats.filter(i=>precedent.has(i));',
+    '   candidats=[...diff,...commun];',
+    '  }',
+    '  tirageCourant=candidats.slice(0,n);',
+    ' }',
+    ' zone.innerHTML="";',
+    ' tirageCourant.forEach((idx,pos)=>{',
+    '  const q=toutesQuestions[idx].cloneNode(true);',
+    '  q.querySelector("h2 span").textContent=`Question ${pos+1}`;',
+    '  const nom=`quiz_q_${pos+1}`;',
+    '  q.querySelectorAll("input[type=radio]").forEach(x=>x.name=nom);',
+    '  zone.appendChild(q);',
+    ' });',
+    ' resetLot();',
+    '}',
+    'lot.querySelector(".valider").addEventListener("click",()=>{',
+    ' const questions=[...zone.querySelectorAll(".question")];',
     ' let bonnes=0; let repondues=0;',
     ' questions.forEach(q=>{',
     '  const choix=q.querySelector("input:checked"); const retour=q.querySelector(".retour");',
     '  q.classList.remove("juste","a-revoir","sans-reponse");',
     '  q.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";x.classList.remove("choisie-fausse","attendue");});',
-    '  if(!choix){q.classList.add("sans-reponse");retour.textContent="SANS REPONSE \u2014 aucune reponse choisie.";return;}',
+    '  if(!choix){q.classList.add("sans-reponse");retour.textContent="SANS REPONSE - aucune reponse choisie.";return;}',
     '  repondues++; const ok=choix.value===q.dataset.correct; if(ok){bonnes++;q.classList.add("juste");}else{q.classList.add("a-revoir");}',
     '  const choisie=choix.closest(".proposition").querySelector("span").textContent;',
     '  const correcte=q.querySelector(`input[value="${q.dataset.correct}"]`).closest(".proposition").querySelector("span").textContent;',
-    '  retour.textContent=ok?`JUSTE \u2014 ta reponse : ${choisie}.`:`FAUX \u2014 ta reponse : ${choisie}. Reponse correcte : ${correcte}.`;',
+    '  retour.textContent=ok?`JUSTE - ta reponse : ${choisie}.`:`FAUX - ta reponse : ${choisie}. Reponse correcte : ${correcte}.`;',
     '  const fChoisie=q.querySelector(`.feedback-option[data-option="${choix.value}"]`);',
     '  if(fChoisie){if(!ok)fChoisie.classList.add("choisie-fausse");fChoisie.style.display="block";}',
     '  if(!ok){const fCorrecte=q.querySelector(`.feedback-option[data-option="${q.dataset.correct}"]`);if(fCorrecte){fCorrecte.classList.add("attendue");fCorrecte.style.display="block";}}',
     ' });',
-    ' const bilan=document.getElementById("bilan");',
     ' const fausses=repondues-bonnes; const sansReponse=questions.length-repondues;',
-    ' bilan.innerHTML=`Bilan : <span class="bilan-juste">${bonnes} reponse(s) correcte(s)</span> \u2014 <span class="bilan-faux">${fausses} reponse(s) fausse(s)</span> \u2014 <span class="bilan-vide">${sansReponse} sans reponse</span>.`;',
+    ' lot.querySelector(".bilan").innerHTML=`Bilan : <span class="bilan-juste">${bonnes} reponse(s) correcte(s)</span> - <span class="bilan-faux">${fausses} reponse(s) fausse(s)</span> - <span class="bilan-vide">${sansReponse} sans reponse</span>.`;',
     '});',
-    'document.getElementById("reessayer").addEventListener("click",()=>{',
-    ' document.querySelectorAll("input[type=radio]").forEach(x=>x.checked=false);',
-    ' questions.forEach(q=>q.classList.remove("juste","a-revoir","sans-reponse"));',
-    ' document.querySelectorAll(".retour").forEach(x=>x.textContent="");',
-    ' document.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";x.classList.remove("choisie-fausse","attendue");});',
-    ' document.getElementById("bilan").textContent=""; window.scrollTo({top:0,behavior:"smooth"});',
-    '});',
+    'lot.querySelector(".reessayer").addEventListener("click",()=>{resetLot();window.scrollTo({top:0,behavior:"smooth"});});',
+    'lot.querySelector(".relancer-quiz").addEventListener("click",()=>{afficherQuiz(true);window.scrollTo({top:0,behavior:"smooth"});});',
+    'afficherQuiz(true);',
     '</script>', '</body>', '</html>'
   )
 
