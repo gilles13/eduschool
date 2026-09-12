@@ -2,24 +2,36 @@
 % Please edit documentation in R/ensembles_nombres.R
 \name{exercices_ensembles_nombres}
 \alias{exercices_ensembles_nombres}
-\title{Cinq rappels sur les ensembles de nombres}
+\title{Quiz sur les ensembles de nombres}
 \usage{
-exercices_ensembles_nombres(seed = NULL)
+exercices_ensembles_nombres(seed = NULL, n = 5L)
 }
 \arguments{
 \item{seed}{Graine facultative utilisee pour melanger les propositions.}
+
+\item{n}{Nombre de questions a produire, de 1 a 10. Par defaut, 5.}
 }
 \value{
-Une liste de cinq exercices eduschool munis d'un QCM.
+Une liste de `n` exercices eduschool munis d'un QCM.
 }
 \description{
-Construit cinq QCM courts sur les inclusions usuelles, les plus petits
-ensembles contenant quelques nombres et la difference entre appartenance
-et inclusion. Le resultat peut etre passe directement a [produire_quiz()].
+Construit de cinq a dix QCM courts sur les inclusions usuelles, les plus
+petits ensembles contenant quelques nombres et la difference entre
+appartenance et inclusion. Le resultat peut etre passe directement a
+[produire_quiz()].
+}
+\details{
+Les cinq premieres questions constituent le parcours court historique. Avec
+`n = 10`, cinq questions supplementaires ajoutent quelques pieges utiles :
+zero, une fraction qui se simplifie, un decimal negatif, racine de deux et
+raisonnement par inclusion.
 }
 \examples{
 \dontrun{
 exercices_ensembles_nombres(seed = 2026) |>
   produire_quiz(titre = "Mes 5 rappels sur les ensembles")
+
+exercices_ensembles_nombres(seed = 2026, n = 10) |>
+  produire_quiz(titre = "Jouons avec les ensembles de nombres")
 }
 }

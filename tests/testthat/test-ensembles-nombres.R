@@ -35,3 +35,13 @@ test_that("les rappels alimentent directement produire_quiz", {
   html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
   expect_match(html, "Question 5", fixed = TRUE)
 })
+
+
+test_that("le premier rappel teste le sens du mot reel", {
+  x = exercices_ensembles_nombres(seed = 2026)[[1L]]
+
+  expect_match(x$enonce, "personne est reelle", fixed = TRUE)
+  expect_identical(x$reponse, "Non : R est un ensemble de nombres")
+  expect_true(any(grepl("langage courant", x$qcm$feedback, fixed = TRUE)))
+  expect_true(any(grepl("ne peut pas etre negative", x$qcm$propositions, fixed = TRUE)))
+})

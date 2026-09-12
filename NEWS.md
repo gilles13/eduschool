@@ -1,3 +1,10 @@
+# eduschool 0.31.0
+
+* Teste une petite idee avant toute industrialisation : partir de la definition et des ambiguities du vocabulaire pour mieux comprendre une notion.
+* Simplifie les definitions de `N` et `R` dans la table des ensembles : compter pour les naturels, se placer sur une droite graduee pour les reels.
+* Ajoute a la fiche un encadre « Surprenant » : une personne peut etre reelle sans etre un nombre reel.
+* Transforme ce piege de langage en distracteur explique dans le premier des cinq rappels sur les ensembles.
+
 # eduschool 0.30.0
 
 * Ajoute une premiere notion pedagogique complete et reutilisable : les ensembles de nombres en seconde.

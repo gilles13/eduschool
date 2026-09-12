@@ -10,6 +10,7 @@ diagramme_ensembles_nombres()
 Un objet ggplot.
 }
 \description{
-Produit avec ggplot2 un schema d'ovales emboites montrant les inclusions
-N dans Z, Z dans D, D dans Q et Q dans R.
+Produit avec ggplot2 un schema de cadres emboites montrant les inclusions
+N dans Z, Z dans D, D dans Q et Q dans R. Des exemples sont places dans
+la zone propre a chaque ensemble pour montrer ce que chaque ensemble ajoute.
 }

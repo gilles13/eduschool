@@ -28,6 +28,8 @@ Invisiblement, le chemin absolu du fichier HTML produit.
 Produit un fichier HTML autonome : aucun serveur, aucune bibliotheque
 JavaScript et aucune session R ne sont necessaires pour faire le quiz.
 Chaque question comporte quatre propositions et une seule bonne reponse.
+L'en-tete reprend la charte eduschool et, lorsqu'elles sont fournies par les
+QCM, la notion et une courte formule de rappel.
 }
 \examples{
 \dontrun{
