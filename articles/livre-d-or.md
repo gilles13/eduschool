@@ -1,64 +1,108 @@
 # Livre d'or
 
-Pas de faux témoignages, pas de citations inventées et pas encore de
-comité de soutien international. Ce livre d’or conserve simplement les
-phrases, idées et moments qui disent quelque chose de l’esprit
-d’**edusch∞l Math**.
+## Il était une fois un parent qui ne comprenait pas les maths
 
-> **Un savoir prend toute sa valeur lorsqu’il est partagé.**
+Ce qui constituait un handicap assez raisonnable pour aider son fils à
+les comprendre.
 
-> **L’erreur n’est pas un échec. C’est une étape pour comprendre et
-> progresser.**
+La réaction normale aurait probablement été d’acheter un cahier
+d’exercices.
 
-> **Il n’existe pas une seule bonne façon d’apprendre.**
+Il a créé un package R.
 
-> **eduschool ne remplace pas celui qui transmet. Il lui donne davantage
-> de moyens d’essayer.**
+**Nous aurions dû nous méfier dès ce moment-là.**
 
-> **Une nouvelle abstraction n’entre dans eduschool que lorsqu’elle a
-> trouvé du travail.**
+`eduschool` est né de cette difficulté très ordinaire : vouloir aider,
+ne pas toujours comprendre, chercher une autre explication, puis une
+autre encore. Petit à petit, la difficulté elle-même a indiqué une
+direction : construire un outil qui n’impose pas un chemin unique, mais
+aide à en trouver un.
 
-> **Ça ne marche pas ? Pas de panique. On essaie autrement.**
+> **Toujours ouvrir des portes.**
 
-> **Face B : un autre chemin pour essayer d’arriver au même endroit.**
+Les maths ne commencent peut-être pas par un calcul. Elles commencent
+par l’envie de comprendre.
 
-## La Sainte Trinité du triple zéro
+## Ce que le chemin nous a appris
 
-Le projet a fini par développer une petite liturgie autour de
-`R CMD check`. Sa **Sainte Trinité** ne demande ni miracle ni révélation
-: seulement trois zéros.
+`eduschool` n’a pas été construit à partir d’une méthode pédagogique
+révélée un matin entre deux `R CMD check`. Il avance plutôt par essais,
+erreurs, questions, contre-exemples et corrections.
 
-> **0 erreur. 0 warning. 0 note.**
+Quelques idées ont cependant résisté assez longtemps pour mériter leur
+place ici :
 
-Autrement dit : le package doit passer ses contrôles sans erreur, sans
-avertissement et sans note. Le « triple 0 » est devenu à la fois une
-règle de qualité et une plaisanterie récurrente du projet.
+- **L’erreur n’est pas un échec. C’est une étape pour comprendre et
+  progresser.**
+- **Il n’existe pas une seule bonne façon d’apprendre.**
+- **Le niveau situe l’élève sur la carte ; il ne construit pas une
+  clôture autour de lui.**
+- **Une discipline organise le savoir. Elle ne doit pas en dessiner les
+  frontières.**
+- **Comprendre l’intention avant de chercher la réponse.**
+- **Une nouvelle abstraction n’entre dans `eduschool` que lorsqu’elle a
+  trouvé du travail.**
 
-Les jours ordinaires, il est permis de pratiquer un
-`devtools::check(build_vignettes = FALSE)`. Le `check()` complet reste
-réservé aux grandes fêtes liturgiques : commit important, push, tag ou
-release.
+Et lorsqu’un chemin devient inutilement compliqué, il reste une question
+assez efficace :
 
-Le silence de `R CMD check` est parfois une forme très élaborée de
-poésie.
+> **Qu’est-ce qu’on est en train d’apprendre ?**
 
-## Merci Philippe
+Si la réponse devient difficile à trouver, il est probablement temps de
+faire un pas de côté.
 
-Une place particulière revient à Philippe Chataignon, dont le travail et
-les échanges ont profondément nourri ma réflexion autour de l’open data,
-du partage et de la transmission.
+## Apprendre, puis partager
 
-> **Un savoir prend toute sa valeur lorsqu’il est partagé.**
+`eduschool` est **libre, gratuit et ouvert**. Ce n’est pas un détail de
+licence posé après coup : c’est une conséquence directe de ce que le
+projet essaie de faire.
+
+Apprendre suppose de pouvoir regarder, questionner, modifier, contester,
+réutiliser et transmettre. Fermer le savoir reviendrait à fermer
+précisément les portes que le projet essaie d’ouvrir.
+
+> **La richesse n’est pas ce qu’on garde. C’est ce qu’on rend
+> accessible.**
 >
-> Merci Philippe.
+> **Partager un savoir, c’est aussi accepter qu’il nous revienne
+> enrichi.**
+
+Si une fiche aide quelqu’un, qu’elle circule. Si une explication ne
+fonctionne pas, qu’on en invente une autre. Si quelqu’un trouve un
+meilleur chemin, qu’il puisse le tracer.
+
+## À Philippe Chataignon
+
+Ce projet doit aussi quelque chose aux personnes croisées en chemin.
+
+Philippe Chataignon est de celles-là. Je l’ai rencontré au cours de ma
+carrière et son travail, sa manière de partager et surtout sa profonde
+humanité m’ont beaucoup apporté. Il a notamment contribué à ma
+compréhension de l’open data : non comme une simple affaire de fichiers
+disponibles, mais comme une manière de rendre l’information publique
+plus accessible, réutilisable et partageable.
+
+Son travail sur l’open data peut être découvert sur
+<https://chataignon.com/opendata.html>.
+
+Une partie de l’esprit d’`eduschool` vient de cette conviction : un
+savoir prend davantage de valeur lorsqu’il peut circuler, être compris,
+discuté, réutilisé et transmis.
+
+**Merci, Philippe.**
 
 ## Et maintenant ?
 
-Ce livre d’or pourra accueillir plus tard de vraies contributions : une
-phrase d’enfant, une remarque de parent, une correction utile, une idée
-d’enseignant, ou simplement un moment où une fiche aura permis de
-comprendre quelque chose ensemble.
+Ce Livre d’or n’est pas un règlement gravé dans le marbre. Les phrases
+qui y entrent doivent avoir servi à décider, à comprendre ou à repartir
+quand le chemin devenait confus.
 
-Il n’y a pas besoin d’en remplir des pages. Une bonne phrase vaut mieux
-que quarante témoignages écrits par le service marketing, qui n’existe
-de toute façon pas.
+Le projet continuera donc probablement à se tromper, à corriger ses
+erreurs, à ouvrir des portes imprévues et à produire de temps en temps
+une quantité injustifiable de lignes de commande pour résoudre un
+problème minuscule.
+
+C’est peut-être très bien ainsi.
+
+> **Quand la voie est libre, chacun doit pouvoir tracer son propre
+> chemin.**

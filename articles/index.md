@@ -5,6 +5,8 @@
 Premiers repères pour comprendre le projet et commencer à l’utiliser.
 
 - [À propos](https://gilles13.github.io/eduschool/articles/a-propos.md):
+- [Livre
+  d'or](https://gilles13.github.io/eduschool/articles/livre-d-or.md):
 - [Journal du
   projet](https://gilles13.github.io/eduschool/articles/journal-du-projet.md):
 - [Prise en main de

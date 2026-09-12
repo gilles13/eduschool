@@ -17,7 +17,7 @@ revision(niveau, theme = NULL)
 
 - theme:
 
-  Famille de revision facultative.
+  Theme de revision facultatif, en langage courant.
 
 ## Value
 

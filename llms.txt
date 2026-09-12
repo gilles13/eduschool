@@ -168,6 +168,8 @@ library(eduschool)
   : Methodes mathematiques
 - [`niveaux()`](https://gilles13.github.io/eduschool/reference/niveaux.md)
   : Niveaux scolaires
+- [`notion()`](https://gilles13.github.io/eduschool/reference/notion.md)
+  : Decouvrir une notion mathematique
 - [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
   : Notions documentaires
 - [`notions_capacite()`](https://gilles13.github.io/eduschool/reference/notions_capacite.md)
@@ -294,6 +296,8 @@ library(eduschool)
 Premiers repères pour comprendre le projet et commencer à l’utiliser.
 
 - [À propos](https://gilles13.github.io/eduschool/articles/a-propos.md):
+- [Livre
+  d'or](https://gilles13.github.io/eduschool/articles/livre-d-or.md):
 - [Journal du
   projet](https://gilles13.github.io/eduschool/articles/journal-du-projet.md):
 - [Prise en main de

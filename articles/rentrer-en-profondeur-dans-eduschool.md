@@ -137,8 +137,8 @@ knitr::kable(
 | horaires | enseignements | horaire_id | 247 | 10 |
 | offres_enseignements | enseignements | offre_id | 175 | 6 |
 | options | enseignements | option_id,niveau_id | 13 | 7 |
-| modeles | exercices | modele_id | 15 | 7 |
-| modeles_capacites | exercices | modele_id,capacite_id | 23 | 2 |
+| modeles | exercices | modele_id | 25 | 7 |
+| modeles_capacites | exercices | modele_id,capacite_id | 33 | 2 |
 | sources | metadata | source_id | 38 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 135 | 5 |
@@ -170,9 +170,9 @@ knitr::kable(
 | parcoursup_nouveautes | orientation | nouveaute_id | 2 | 6 |
 | plateformes_admission | orientation | plateforme_id | 2 | 7 |
 | plateformes_caracteristiques | orientation | plateforme_id,caracteristique_id | 6 | 6 |
-| concepts_math | mathematiques | concept_id | 181 | 8 |
-| relations_concepts_math | mathematiques | relation_id | 146 | 6 |
-| concepts_items_math | mathematiques | concept_id,item_id | 379 | 3 |
+| concepts_math | mathematiques | concept_id | 182 | 8 |
+| relations_concepts_math | mathematiques | relation_id | 151 | 6 |
+| concepts_items_math | mathematiques | concept_id,item_id | 380 | 3 |
 | methodes_math | mathematiques | methode_id | 120 | 6 |
 | formules_math | mathematiques | formule_id | 71 | 6 |
 | erreurs_math | mathematiques | erreur_id | 74 | 6 |

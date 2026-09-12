@@ -127,6 +127,8 @@
   : Methodes mathematiques
 - [`niveaux()`](https://gilles13.github.io/eduschool/reference/niveaux.md)
   : Niveaux scolaires
+- [`notion()`](https://gilles13.github.io/eduschool/reference/notion.md)
+  : Decouvrir une notion mathematique
 - [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
   : Notions documentaires
 - [`notions_capacite()`](https://gilles13.github.io/eduschool/reference/notions_capacite.md)

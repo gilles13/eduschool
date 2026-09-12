@@ -134,6 +134,11 @@ Boucle→Algorithme
 Répéter automatiquement une même action évite d’écrire plusieurs fois
 les mêmes instructions.
 
+Fraction↔︎Ratio
+
+Un ratio compare deux quantités ; cette comparaison peut s’écrire comme
+un quotient, donc sous forme de fraction.
+
 Probabilité→Événement
 
 Pour mesurer une chance, il faut d’abord dire précisément ce que l’on

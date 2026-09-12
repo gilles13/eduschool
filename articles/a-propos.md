@@ -1,7 +1,7 @@
 # À propos
 
 `eduschool` est le témoignage vivant qu’on peut avoir été **fâché avec
-les maths** et vouloir, un jour, **s’en réconcilier**.
+les maths** et vouloir, un jour, **se réconcilier avec elles**.
 
 C’est COOL.
 
