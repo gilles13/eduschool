@@ -1,28 +1,24 @@
 test_that("le catalogue d'humour couvre proportionnalite et fractions", {
   proportion = exercices(
     "5E", "proportionnalite",
-    n = 15, seed = 2026, humour = TRUE
+    n = 15, seed = 2026, humour_ratio = 0.2
   )
   fractions = exercices(
     "6E", "fractions",
-    n = 15, seed = 2026, humour = TRUE
+    n = 15, seed = 2026, humour_ratio = 0.2
   )
 
   est_drole = function(ex) isTRUE(ex$qcm$humour)
 
   for (lot in list(proportion, fractions)) {
-    par_bloc = split(lot, ceiling(seq_along(lot) / 5L))
-
-    expect_true(all(vapply(par_bloc, function(bloc) {
-      sum(vapply(bloc, est_drole, logical(1))) == 1L
-    }, logical(1))))
+    expect_equal(sum(vapply(lot, est_drole, logical(1))), 3L)
   }
 })
 
-test_that("humour FALSE laisse les exercices sobres", {
+test_that("humour_ratio nul laisse les exercices sobres", {
   lots = list(
-    exercices("5E", "proportionnalite", n = 15, seed = 2026),
-    exercices("6E", "fractions", n = 15, seed = 2026)
+    exercices("5E", "proportionnalite", n = 15, seed = 2026, humour_ratio = 0),
+    exercices("6E", "fractions", n = 15, seed = 2026, humour_ratio = 0)
   )
 
   est_drole = function(ex) isTRUE(ex$qcm$humour)
@@ -30,4 +26,20 @@ test_that("humour FALSE laisse les exercices sobres", {
   expect_true(all(vapply(lots, function(lot) {
     !any(vapply(lot, est_drole, logical(1)))
   }, logical(1))))
+})
+
+
+test_that("humour_ratio valide un ratio compris entre zero et un", {
+  expect_error(
+    exercices("5E", "proportionnalite", humour_ratio = -0.1),
+    "compris entre 0 et 1"
+  )
+  expect_error(
+    exercices("5E", "proportionnalite", humour_ratio = 1.1),
+    "compris entre 0 et 1"
+  )
+  expect_error(
+    exercices("5E", "proportionnalite", humour_ratio = TRUE),
+    "compris entre 0 et 1"
+  )
 })

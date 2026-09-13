@@ -4,7 +4,8 @@
 
 .fonctions_cheatsheet = c(
   "parcours", "orientation", "programme", "notion",
-  "revision", "produire_revision", "exercices", "produire_quiz",
+  "revision", "produire_revision", "exercices", "produire_fiche",
+  "produire_quiz",
   "examens", "examen", "composer_examen", "charte_eduschool",
   "theme_eduschool"
 )
@@ -92,8 +93,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     .bloc_cheatsheet(
       "Ouvrir une notion",
       "Definition, notions autour, prerequis et portes vers la suite.",
-      c('notion("fractions")', 'notion("pythagore")'),
-      "porte"
+      c('notion("fractions")', 'notion("pythagore")')
     ),
     '</div>'
   )
@@ -101,41 +101,42 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
   colonne_2 = paste0(
     '<div class="colonne">',
     .bloc_cheatsheet(
-      "Fiche essentielle",
-      "Les idees a garder sous les yeux pour un niveau.",
+      "Les revisions",
+      "Retrouver les contenus essentiels a reviser pour un niveau.",
       c(
         'revision("6E") |>',
         '  produire_revision(ouvrir = TRUE)'
       )
     ),
     .bloc_cheatsheet(
-      "Reviser un theme",
-      "Quand une fiche thematique existe, on peut aller droit au sujet.",
+      "Generer un exercice",
+      "Generer un exercice reproductible puis le rendre avec produire_fiche().",
       c(
-        'revision("5E", "fractions") |>',
-        '  produire_revision(ouvrir = TRUE)'
+        'exercices(',
+        '  "5E", "fractions", n = 1,',
+        '  seed = 2026, humour_ratio = 0.2',
+        ') |>',
+        '  produire_fiche()'
       )
     ),
     .bloc_cheatsheet(
-      "Fabriquer des exercices",
-      "Le contenu est genere par R. Une graine permet de reproduire le meme lot.",
+      "Fiche de notions",
+      "Visualiser les notions d'un niveau avec la meme porte de rendu.",
       c(
-        'x = exercices(',
-        '  "5E", "fractions",',
-        '  n = 15, seed = 2026,',
-        '  humour = TRUE',
-        ')'
+        'notions_niveau("4E", discipline_id = "MAT") |>',
+        '  produire_fiche()'
       )
     ),
     .bloc_cheatsheet(
       "Jouer avec un quiz",
-      "Le HTML est autonome : cinq questions sont tirees dans le lot embarque.",
+      "Generer les exercices puis transformer directement le lot en quiz HTML.",
       c(
-        'produire_quiz(',
-        '  x, questions_par_quiz = 5',
-        ')'
-      ),
-      "accent"
+        'exercices(',
+        '  "5E", "fractions", n = 15,',
+        '  seed = 2026, humour_ratio = 0.2',
+        ') |>',
+        '  produire_quiz(questions_par_quiz = 5)'
+      )
     ),
     '</div>'
   )
@@ -180,7 +181,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     '<style>',
     '@page{size:A4 landscape;margin:8mm}',
     '*{box-sizing:border-box}',
-    ':root{--bleu:#2F6B9A;--vert:#3F7D58;--rose:#8A3D5D;--neutre:#59636E;--orange:#E97A13;--encre:#18344E;--clair:#F5F7F9}',
+    ':root{--bleu:#2F6B9A;--turquoise:#2A9D8F;--violet-doux:#7B6FA6;--neutre:#59636E;--encre:#18344E;--clair:#F5F7F9}',
     'html,body{margin:0;padding:0;background:#e9edf0;color:#1f2b35;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}',
     '.page{width:281mm;min-height:194mm;margin:8mm auto;background:white;padding:8mm 9mm 6mm;box-shadow:0 3px 20px rgba(0,0,0,.13);position:relative;overflow:hidden}',
     '.entete{height:31mm;display:grid;grid-template-columns:75mm 1fr 22mm;align-items:center;border-bottom:2px solid var(--bleu);padding-bottom:3mm;margin-bottom:4mm}',
@@ -195,7 +196,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     '.bloc p{font-size:7.8pt;line-height:1.35;margin:0 0 2mm;color:#52606b}',
     'pre{margin:0;background:#f3f6f8;border-left:2.2mm solid var(--bleu);border-radius:1.3mm;padding:2mm 2.3mm;white-space:pre-wrap;overflow-wrap:anywhere}',
     'code{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:7.55pt;line-height:1.35;color:#17324a}',
-    '.porte{border-top:2.2mm solid var(--vert)}.accent{border-top:2.2mm solid var(--orange)}.manifeste{border-top:2.2mm solid var(--rose);background:#fbf7f9}.contribuer{border-style:dashed;background:#fbfcfd}',
+    '.manifeste{border:1px solid #B9E2DC;border-top:2.4mm solid var(--turquoise);background:#F2FBF9}.manifeste h2{color:#1E746A}.contribuer{--contribuer:#B58B3A;border:1px solid color-mix(in srgb,var(--contribuer) 30%,white);border-top:2.4mm solid var(--contribuer);background:color-mix(in srgb,var(--contribuer) 8%,white)}.contribuer h2{color:color-mix(in srgb,var(--contribuer) 78%,black)}',
     '.pied{position:absolute;left:9mm;right:9mm;bottom:4mm;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dce2e6;padding-top:2mm;font-size:7pt;color:#687680}',
     '.pied strong{color:var(--encre)}',
     '@media print{html,body{background:white}.page{margin:0;width:auto;min-height:auto;box-shadow:none;padding:0;overflow:visible}.entete{margin-top:0}.pied{bottom:0}}',

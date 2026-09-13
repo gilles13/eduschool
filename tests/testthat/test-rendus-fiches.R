@@ -118,3 +118,58 @@ test_that("l entete Rmd reutilise le contrat commun sans accolades visibles", {
   expect_match(html, "width:72px", fixed = TRUE)
   expect_match(html, "align-items:center", fixed = TRUE)
 })
+
+test_that("une fiche Markdown est une entree simple de produire_fiche", {
+  source = tempfile(fileext = ".md")
+  writeLines(c(
+    "---",
+    'title: "Une idee devient une fiche"',
+    'niveau: "6E"',
+    "notions:",
+    "  - Fractions",
+    "  - Proportionnalite",
+    "---",
+    "",
+    "Une question, puis une porte.",
+    "",
+    "$$\\frac{3}{4}$$"
+  ), source, useBytes = TRUE)
+
+  fiche = eduschool:::.lire_fiche_markdown(source)
+  expect_identical(fiche$titre, "Une idee devient une fiche")
+  expect_identical(fiche$niveau, "6E")
+  expect_identical(fiche$notions, c("Fractions", "Proportionnalite"))
+  expect_match(fiche$contenu, "Une question, puis une porte", fixed = TRUE)
+  expect_false(grepl("^---", fiche$contenu))
+})
+
+test_that("produire_fiche transforme directement un Markdown en HTML", {
+  skip_if_not_installed("rmarkdown")
+  skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")
+
+  source = tempfile(fileext = ".md")
+  writeLines(c(
+    "---",
+    'title: "Crash-test eduschool"',
+    'niveau: "Decouverte"',
+    'notions: "Curiosite"',
+    "---",
+    "",
+    "## Une porte",
+    "",
+    "Tu veux vraiment comprendre ?"
+  ), source, useBytes = TRUE)
+
+  sortie = produire_fiche(
+    source,
+    fichier = tempfile("fiche-markdown-"),
+    format = "html",
+    ouvrir = FALSE
+  )
+
+  expect_true(file.exists(sortie))
+  expect_match(sortie, "\\.html$")
+  html = paste(readLines(sortie, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
+  expect_match(html, "Crash-test eduschool", fixed = TRUE)
+  expect_match(html, "Tu veux vraiment comprendre", fixed = TRUE)
+})

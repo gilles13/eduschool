@@ -31,6 +31,8 @@ navbar:
           href: articles/prise-en-main.html
         - text: Mathématiques par niveau
           href: articles/mathematiques-par-niveau.html
+        - text: Faire un pas de côté
+          href: articles/faire-un-pas-de-cote.html
         - text: Parcours scolaire
           href: articles/parcours-scolaires.html
         - text: Sous le capot
@@ -49,6 +51,11 @@ articles:
       - journal-du-projet
       - prise-en-main
       - prendre-un-parent-par-la-main
+
+  - title: Faire un pas de côté
+    desc: Une notion paraît évidente ? Regardons-la sous un autre angle.
+    contents:
+      - faire-un-pas-de-cote
 
   - title: Mathématiques
     desc: Les principales portes d'entrée vers les ressources mathématiques.

@@ -135,3 +135,4 @@ export(exercices_ensembles_nombres)
 export(exercices_ensembles_proportions)
 
 export(produire_cheatsheet)
+export(table_multiplication)

@@ -18,7 +18,9 @@ produire_fiche(
 }
 \arguments{
 \item{exercices}{Liste d'exercices produite par [exercices()] ou
-[generer_fiche()].}
+[generer_fiche()], chemin vers un fichier Markdown (`.md`), matrice ou
+`data.frame`. Un tableau de notions peut contenir `categorie`, `statut` et
+`ordre`.}
 
 \item{fichier}{Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 construit automatiquement a partir du niveau et de la capacite.}
@@ -41,7 +43,12 @@ Invisiblement, le chemin absolu du fichier produit.
 }
 \description{
 Transforme directement une liste produite par [exercices()] ou
-[generer_fiche()] en document. Le format `"auto"` produit un PDF lorsque
+[generer_fiche()] en document. Accepte aussi le chemin d'un fichier Markdown
+(`.md`) ou un objet tabulaire (`matrix` ou `data.frame`). Un `data.frame`
+contenant `notion_id` et `libelle` est rendu comme une fiche de revision
+categorisee ; une colonne facultative `statut` permet d'indiquer les notions
+acquises, en cours ou a decouvrir. Le format `"auto"` produit
+un PDF lorsque
 LaTeX est disponible et un HTML sinon. Par defaut, le document produit est
 ouvert automatiquement.
 }
@@ -52,5 +59,10 @@ exercices("6E") |>
 
 exercices("6E") |>
   produire_fiche(format = "html", ouvrir = FALSE)
+
+produire_fiche("ma-fiche.md", format = "html")
+
+table_multiplication() |>
+  produire_fiche(titre = "Tables de multiplication", format = "html")
 }
 }

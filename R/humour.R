@@ -73,10 +73,21 @@
 }
 
 .humour_disponible = function(exercice) {
+  feedback_humour = exercice$qcm$feedback_humour
+  if (!is.null(feedback_humour) && length(feedback_humour) == 4L) {
+    return(TRUE)
+  }
   any(.cles_humour(exercice) %in% names(.catalogue_humour))
 }
 
 .ajouter_humour = function(exercice) {
+  feedback_humour = exercice$qcm$feedback_humour
+  if (!is.null(feedback_humour) && length(feedback_humour) == 4L) {
+    exercice$qcm$feedback = feedback_humour
+    exercice$qcm$humour = TRUE
+    return(exercice)
+  }
+
   cles = .cles_humour(exercice)
   cle = cles[cles %in% names(.catalogue_humour)]
 

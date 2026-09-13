@@ -17,7 +17,9 @@ produire_corrige(
 }
 \arguments{
 \item{exercices}{Liste d'exercices produite par [exercices()] ou
-[generer_fiche()].}
+[generer_fiche()], chemin vers un fichier Markdown (`.md`), matrice ou
+`data.frame`. Un tableau de notions peut contenir `categorie`, `statut` et
+`ordre`.}
 
 \item{fichier}{Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 construit automatiquement a partir du niveau et de la capacite.}

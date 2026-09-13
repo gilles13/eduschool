@@ -1,0 +1,29 @@
+---
+params:
+  titre: "Fiche eduschool"
+  contenu: ""
+  logo: ""
+  entete: !r list()
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, results = "asis")
+```
+
+```{r entete, results='asis'}
+format_entete = if (knitr::is_latex_output()) "latex" else "html"
+cat(
+  eduschool:::.entete_math_rmd(
+    params$entete,
+    logo = params$logo,
+    format = format_entete
+  ),
+  sep = "\n"
+)
+```
+
+# `r params$titre`
+
+```{r contenu, results='asis'}
+cat(params$contenu, "\n")
+```

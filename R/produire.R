@@ -53,14 +53,35 @@ revision = function(niveau, theme = NULL) {
   concepts[candidats, , drop = FALSE]
 }
 
+.capacites_notion_documentation = function(niveau, notion) {
+  docs = notions("MAT")
+  cible = .normaliser_notion(notion)
+  libelles = vapply(docs$libelle, .normaliser_notion, character(1))
+  ids_docs = vapply(docs$notion_id, .normaliser_notion, character(1))
+  candidats = which(libelles == cible | ids_docs == cible)
+  if (!length(candidats)) return(character())
+  if (length(candidats) > 1L) return(character())
+
+  liens = .lire_csv("documentation", "notions_capacites.csv")
+  items = .lire_csv("programmes", "programme_items.csv")
+  ids = liens$capacite_id[liens$notion_id == docs$notion_id[candidats]]
+  unique(items$item_id[items$item_id %in% ids & items$niveau == niveau])
+}
+
 .capacites_notion = function(niveau, notion) {
-  concept = .resoudre_notion(notion)
-  liens = .lire_csv("mathematiques", "concepts_items.csv")
+  concept = try(.resoudre_notion(notion), silent = TRUE)
   items = .lire_csv("programmes", "programme_items.csv")
 
-  ids = liens$item_id[liens$concept_id == concept$concept_id[[1L]]]
-  ids = items$item_id[items$item_id %in% ids & items$niveau == niveau]
-  unique(ids)
+  if (!inherits(concept, "try-error")) {
+    liens = .lire_csv("mathematiques", "concepts_items.csv")
+    ids = liens$item_id[liens$concept_id == concept$concept_id[[1L]]]
+    ids = items$item_id[items$item_id %in% ids & items$niveau == niveau]
+    return(unique(ids))
+  }
+
+  ids = .capacites_notion_documentation(niveau, notion)
+  if (length(ids)) return(ids)
+  stop("Notion inconnue : ", notion, ".", call. = FALSE)
 }
 
 #' @rdname exercices
@@ -68,9 +89,9 @@ revision = function(niveau, theme = NULL) {
 #' @param notion Notion a travailler, en langage courant, par exemple
 #'   `"pythagore"` ou `"fractions"`.
 #' @param capacite Identifiant de capacite facultatif pour un pilotage avance.
-#' @param humour Ajouter quelques touches humoristiques lorsqu'elles sont disponibles.
-#'   Par defaut `FALSE`. Le dosage est d'une question humoristique par groupe
-#'   complet de cinq exercices, quelle que soit la notion.
+#' @param humour_ratio Ratio d'exercices recevant une touche humoristique
+#'   lorsqu'elle est disponible. Nombre compris entre 0 et 1. Par defaut `0.2`,
+#'   soit environ un exercice sur cinq.
 #' @export
 exercices = function(
   niveau,
@@ -79,15 +100,17 @@ exercices = function(
   n = 5,
   difficulte = 1,
   seed = 1,
-  humour = FALSE,
+  humour_ratio = 0.2,
   afficher = FALSE
 ) {
   if (!is.null(notion) && !is.null(capacite)) {
     stop("Utiliser `notion` ou `capacite`, pas les deux.", call. = FALSE)
   }
 
-  if (!is.logical(humour) || length(humour) != 1L || is.na(humour)) {
-    stop("`humour` doit valoir TRUE ou FALSE.", call. = FALSE)
+  if (!is.numeric(humour_ratio) || length(humour_ratio) != 1L ||
+      is.na(humour_ratio) || !is.finite(humour_ratio) ||
+      humour_ratio < 0 || humour_ratio > 1) {
+    stop("`humour_ratio` doit etre un nombre compris entre 0 et 1.", call. = FALSE)
   }
 
   if (is.null(notion)) {
@@ -127,23 +150,18 @@ exercices = function(
     )
   })
 
-  if (isTRUE(humour)) {
-    n_blocs = length(lot) %/% 5L
+  if (humour_ratio > 0) {
+    disponibles = which(vapply(lot, .humour_disponible, logical(1)))
+    n_humour = min(
+      length(disponibles),
+      as.integer(round(length(lot) * humour_ratio))
+    )
 
-    if (n_blocs > 0L) {
-      for (bloc in seq_len(n_blocs)) {
-        debut = (bloc - 1L) * 5L + 1L
-        indices = debut:(debut + 4L)
-        disponibles = indices[
-          vapply(lot[indices], .humour_disponible, logical(1))
-        ]
-
-        if (length(disponibles)) {
-          position = ((as.integer(seed) + bloc - 1L) %% length(disponibles)) + 1L
-          i = disponibles[[position]]
-          lot[[i]] = .ajouter_humour(lot[[i]])
-        }
-      }
+    if (n_humour > 0L) {
+      decalage = abs(as.integer(seed)) %% length(disponibles)
+      ordre = ((seq_along(disponibles) + decalage - 1L) %% length(disponibles)) + 1L
+      choisis = disponibles[ordre[seq_len(n_humour)]]
+      lot[choisis] = lapply(lot[choisis], .ajouter_humour)
     }
   }
 

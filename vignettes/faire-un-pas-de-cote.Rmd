@@ -1,0 +1,30 @@
+---
+title: "Faire un pas de côté"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Faire un pas de côté}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Une notion paraît évidente ? Regardons-la sous un autre angle.
+
+Pour commencer, une seule fiche. Simple, accessible, et suffisamment étrange
+pour donner envie de regarder le zéro une seconde fois.
+
+```{r, echo=FALSE, results='asis'}
+fiche = system.file(
+  "fiches-decouverte",
+  "zero-est-ce-vraiment-rien.md",
+  package = "eduschool"
+)
+
+lignes = readLines(fiche, warn = FALSE, encoding = "UTF-8")
+separateurs = which(trimws(lignes) == "---")
+
+if (length(separateurs) >= 2L) {
+  lignes = lignes[(separateurs[2L] + 1L):length(lignes)]
+}
+
+cat(lignes, sep = "\n")
+```

@@ -70,6 +70,10 @@ generer_exercice = function(
 ) {
   f = switch(modele_id,
     EQ1DEG_001 = generer_equation_1degre,
+    EQ4E_001 = generer_equation_4e,
+    LITT_EXPR_001 = generer_expression_litterale,
+    LITT_REDUC_001 = generer_reduction_litterale,
+    LITT_DISTR_001 = generer_distributivite,
     FRAC_ADD_001 = generer_addition_fractions,
     PROP_001 = generer_proportion,
     PROP_RECON_001 = generer_proportion_reconnaitre,

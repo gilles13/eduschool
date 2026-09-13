@@ -82,21 +82,22 @@ test_that("les proportions offrent quinze situations sans sacrifier les QCM", {
   }
 })
 
-test_that("l'humour est optionnel et dose a une question sur cinq", {
-  sobre = exercices("5E", "proportionnalite", n = 15, seed = 2026)
-  drole = exercices("5E", "proportionnalite", n = 15, seed = 2026, humour = TRUE)
+test_that("humour_ratio dose l'humour de facon reproductible", {
+  sobre = exercices("5E", "proportionnalite", n = 15, seed = 2026, humour_ratio = 0)
+  drole = exercices("5E", "proportionnalite", n = 15, seed = 2026, humour_ratio = 0.2)
+  drole_bis = exercices("5E", "proportionnalite", n = 15, seed = 2026, humour_ratio = 0.2)
 
   est_drole = function(ex) isTRUE(ex$qcm$humour)
   expect_false(any(vapply(sobre, est_drole, logical(1))))
-
-  par_bloc = split(drole, ceiling(seq_along(drole) / 5L))
-  expect_true(all(vapply(par_bloc, function(bloc) {
-    sum(vapply(bloc, est_drole, logical(1))) == 1L
-  }, logical(1))))
+  expect_equal(sum(vapply(drole, est_drole, logical(1))), 3L)
+  expect_identical(
+    vapply(drole, est_drole, logical(1)),
+    vapply(drole_bis, est_drole, logical(1))
+  )
 })
 
 test_that("un quiz autonome embarque un pool et peut etre relance", {
-  x = exercices("5E", "proportionnalite", n = 15, seed = 2026, humour = TRUE)
+  x = exercices("5E", "proportionnalite", n = 15, seed = 2026, humour_ratio = 0.2)
   fichier = tempfile(fileext = ".html")
   sortie = produire_quiz(x, fichier = fichier, ouvrir = FALSE)
   html = paste(readLines(sortie, warn = FALSE), collapse = "\n")

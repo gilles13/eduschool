@@ -1,5 +1,5 @@
 # ============================================================
-# Rapports d'exercices et corrigés
+# Rapports d'exercices et corriges
 # ============================================================
 
 normaliser_nom_fichier = function(x) {
@@ -321,7 +321,7 @@ produire_rapport_exercices = function(
 }
 
 
-# Construit un bloc Markdown autonome pouvant être utilisé par les sorties HTML/PDF futures.
+# Construit un bloc Markdown autonome pouvant etre utilise par les sorties HTML/PDF futures.
 construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
   ns = notions_capacite(capacite_id)
   if (!nrow(ns)) return("")
@@ -578,12 +578,19 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' Produire une fiche d'exercices HTML ou PDF
 #'
 #' Transforme directement une liste produite par [exercices()] ou
-#' [generer_fiche()] en document. Le format `"auto"` produit un PDF lorsque
+#' [generer_fiche()] en document. Accepte aussi le chemin d'un fichier Markdown
+#' (`.md`) ou un objet tabulaire (`matrix` ou `data.frame`). Un `data.frame`
+#' contenant `notion_id` et `libelle` est rendu comme une fiche de revision
+#' categorisee ; une colonne facultative `statut` permet d'indiquer les notions
+#' acquises, en cours ou a decouvrir. Le format `"auto"` produit
+#' un PDF lorsque
 #' LaTeX est disponible et un HTML sinon. Par defaut, le document produit est
 #' ouvert automatiquement.
 #'
 #' @param exercices Liste d'exercices produite par [exercices()] ou
-#'   [generer_fiche()].
+#'   [generer_fiche()], chemin vers un fichier Markdown (`.md`), matrice ou
+#'   `data.frame`. Un tableau de notions peut contenir `categorie`, `statut` et
+#'   `ordre`.
 #' @param fichier Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 #'   construit automatiquement a partir du niveau et de la capacite.
 #' @param format Format de sortie : `"auto"`, `"html"` ou `"pdf"`.
@@ -601,6 +608,11 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #'
 #' exercices("6E") |>
 #'   produire_fiche(format = "html", ouvrir = FALSE)
+#'
+#' produire_fiche("ma-fiche.md", format = "html")
+#'
+#' table_multiplication() |>
+#'   produire_fiche(titre = "Tables de multiplication", format = "html")
 #' }
 #' @export
 produire_fiche = function(
@@ -613,6 +625,49 @@ produire_fiche = function(
   afficher_metadonnees = FALSE,
   ouvrir = TRUE
 ) {
+  if (.est_fiche_markdown(exercices)) {
+    return(.rendre_fiche_markdown(
+      source = exercices,
+      fichier = fichier,
+      format = format,
+      ouvrir = ouvrir
+    ))
+  }
+
+  if (.est_fiche_notions(exercices)) {
+    titre_notions = if (identical(titre, "Fiche d'exercices")) {
+      "Fiche de revision - notions"
+    } else {
+      titre
+    }
+
+    return(.rendre_fiche_notions(
+      notions = exercices,
+      fichier = fichier,
+      format = format,
+      titre = titre_notions,
+      sous_titre = sous_titre,
+      ouvrir = ouvrir
+    ))
+  }
+
+  if (.est_fiche_tableau(exercices)) {
+    titre_tableau = if (identical(titre, "Fiche d'exercices")) {
+      "Fiche de revision"
+    } else {
+      titre
+    }
+
+    return(.rendre_fiche_tableau(
+      tableau = exercices,
+      fichier = fichier,
+      format = format,
+      titre = titre_tableau,
+      sous_titre = sous_titre,
+      ouvrir = ouvrir
+    ))
+  }
+
   .verifier_exercices(exercices)
   if (is.null(fichier)) fichier = .chemin_fichier_document(exercices, "fiche")
   if (is.null(sous_titre)) sous_titre = .sous_titre_exercices(exercices)
@@ -625,6 +680,395 @@ produire_fiche = function(
     sous_titre = sous_titre,
     instructions = instructions,
     afficher_metadonnees = afficher_metadonnees,
+    ouvrir = ouvrir
+  )
+}
+
+.est_fiche_notions = function(x) {
+  is.data.frame(x) &&
+    "notion_id" %in% names(x) &&
+    "libelle" %in% names(x)
+}
+
+.normaliser_statut_notion = function(x) {
+  x = trimws(tolower(as.character(x)))
+  x[is.na(x) | !nzchar(x)] = "a decouvrir"
+
+  x[x %in% c("acquis", "acquise", "acquises")] = "acquise"
+  x[x %in% c("appris", "apprise", "apprises")] = "acquise"
+  x[x %in% c("en cours", "encours", "a travailler")] = "en cours"
+  x[x %in% c("a voir", "a apprendre", "a decouvrir", "non acquis")] = "a decouvrir"
+
+  x
+}
+
+.ancetre_programme = function(item_id, type_cible = "DOMAINE") {
+  items = .lire_csv("programmes", "programme_items.csv")
+  courant = item_id
+  vus = character()
+
+  while (length(courant) && !is.na(courant) && nzchar(courant)) {
+    if (courant %in% vus) break
+    vus = c(vus, courant)
+
+    i = match(courant, items$item_id)
+    if (is.na(i)) break
+    if (identical(items$type[[i]], type_cible)) return(items[i, , drop = FALSE])
+
+    parent = items$parent_item_id[[i]]
+    if (is.na(parent) || !nzchar(parent)) break
+    courant = parent
+  }
+
+  items[FALSE, , drop = FALSE]
+}
+
+.preparer_fiche_notions = function(notions) {
+  x = notions
+  x = x[!duplicated(x$notion_id), , drop = FALSE]
+
+  if (!"statut" %in% names(x)) x$statut = "a decouvrir"
+  x$statut = .normaliser_statut_notion(x$statut)
+
+  if (!"categorie" %in% names(x)) {
+    x$categorie = NA_character_
+
+    if ("capacite_id" %in% names(x)) {
+      for (i in seq_len(nrow(x))) {
+        domaine = .ancetre_programme(x$capacite_id[[i]], "DOMAINE")
+        if (nrow(domaine)) x$categorie[[i]] = domaine$libelle[[1L]]
+      }
+    }
+
+    x$categorie[is.na(x$categorie) | !nzchar(x$categorie)] = "Notions"
+  }
+
+  if (!"ordre" %in% names(x)) x$ordre = seq_len(nrow(x))
+
+  x$ordre = suppressWarnings(as.numeric(x$ordre))
+  x$ordre[is.na(x$ordre)] = seq_len(nrow(x))[is.na(x$ordre)]
+
+  rang_statut = match(x$statut, c("acquise", "en cours", "a decouvrir"))
+  rang_statut[is.na(rang_statut)] = 4L
+
+  x = x[order(x$categorie, rang_statut, x$ordre, x$libelle), , drop = FALSE]
+  rownames(x) = NULL
+  x
+}
+
+.libelle_statut_notion = function(x) {
+  out = x
+  out[x == "acquise"] = "ACQUISE"
+  out[x == "en cours"] = "EN COURS"
+  out[x == "a decouvrir"] = "A DECOUVRIR"
+  out
+}
+
+.contenu_fiche_notions = function(notions, format = c("html", "pdf")) {
+  format = match.arg(format)
+  x = .preparer_fiche_notions(notions)
+  categories = unique(x$categorie)
+
+  if (identical(format, "html")) {
+    sections = vapply(categories, function(categorie) {
+      y = x[x$categorie == categorie, , drop = FALSE]
+
+      cartes = vapply(seq_len(nrow(y)), function(i) {
+        statut = y$statut[[i]]
+        bordure = switch(
+          statut,
+          "acquise" = "2px solid #4f7f5f",
+          "en cours" = "2px solid #a67c32",
+          "a decouvrir" = "1px solid #aaa",
+          "1px solid #aaa"
+        )
+        fond = switch(
+          statut,
+          "acquise" = "#eef6f0",
+          "en cours" = "#fbf6e9",
+          "a decouvrir" = "#fafafa",
+          "#fafafa"
+        )
+
+        paste0(
+          '<div style="border:', bordure, ';background:', fond, ';',
+          'border-radius:6px;padding:.85em 1em;min-height:3.2em;',
+          'display:flex;align-items:center;">',
+          '<div style="font-weight:600;">',
+          .echapper_html_tableau(y$libelle[[i]]),
+          "</div>",
+          "</div>"
+        )
+      }, character(1))
+
+      paste0(
+        "<h2>", .echapper_html_tableau(categorie), "</h2>",
+        '<div style="display:grid;',
+        'grid-template-columns:repeat(auto-fit,minmax(13em,1fr));',
+        'gap:.7em;margin-bottom:1.4em;">',
+        paste(cartes, collapse = ""),
+        "</div>"
+      )
+    }, character(1))
+
+    return(paste(sections, collapse = "\n"))
+  }
+
+  sections = vapply(categories, function(categorie) {
+    y = x[x$categorie == categorie, , drop = FALSE]
+    cartes = vapply(seq_len(nrow(y)), function(i) {
+      contenu = paste0(
+        "\\begin{minipage}[t]{0.42\\textwidth}",
+        "\\raggedright\\normalsize\\textbf{",
+        .echapper_latex_tableau(y$libelle[[i]]),
+        "}",
+        "\\end{minipage}"
+      )
+
+      switch(
+        y$statut[[i]],
+        "acquise" = paste0("\\fbox{\\fbox{", contenu, "}}"),
+        "en cours" = paste0("\\fbox{", contenu, "}"),
+        "a decouvrir" = contenu,
+        contenu
+      )
+    }, character(1))
+
+    if (length(cartes) %% 2L) cartes = c(cartes, "")
+    lignes = vapply(
+      seq(1L, length(cartes), by = 2L),
+      function(i) paste(cartes[i:(i + 1L)], collapse = " & "),
+      character(1)
+    )
+
+    paste0(
+      "\\section*{", .echapper_latex_tableau(categorie), "}\n",
+      "\\begin{center}\n",
+      "\\setlength{\\tabcolsep}{5pt}\n",
+      "\\begin{tabular}{cc}\n",
+      paste(lignes, collapse = " \\\\\n[0.7em] "),
+      "\n\\end{tabular}\n",
+      "\\end{center}\n"
+    )
+  }, character(1))
+
+  paste(sections, collapse = "\n")
+}
+
+.rendre_fiche_notions = function(
+  notions,
+  fichier = NULL,
+  format = c("auto", "html", "pdf"),
+  titre = "Fiche de revision - notions",
+  sous_titre = NULL,
+  ouvrir = TRUE
+) {
+  if (!requireNamespace("rmarkdown", quietly = TRUE)) {
+    stop("Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+  }
+
+  format = .choisir_format_fiche(format)
+  if (is.null(fichier)) fichier = file.path("rapports", "fiche-notions")
+
+  contenu = .contenu_fiche_notions(notions, format = format)
+
+  if (!is.null(sous_titre) && nzchar(as.character(sous_titre))) {
+    contenu = paste0("## ", as.character(sous_titre), "\n\n", contenu)
+  }
+
+  source = tempfile("eduschool-notions-", fileext = ".md")
+  on.exit(unlink(source, force = TRUE), add = TRUE)
+
+  writeLines(
+    c(
+      "---",
+      paste0("title: ", encodeString(titre, quote = "\"")),
+      "niveau: Revision",
+      "notions: Mathematiques",
+      "---",
+      "",
+      contenu
+    ),
+    source,
+    useBytes = TRUE
+  )
+
+  .rendre_fiche_markdown(
+    source = source,
+    fichier = fichier,
+    format = format,
+    ouvrir = ouvrir
+  )
+}
+
+.est_fiche_tableau = function(x) {
+  is.matrix(x) || is.data.frame(x)
+}
+
+.echapper_html_tableau = function(x) {
+  x = gsub("&", "&amp;", x, fixed = TRUE)
+  x = gsub("<", "&lt;", x, fixed = TRUE)
+  x = gsub(">", "&gt;", x, fixed = TRUE)
+  x
+}
+
+.echapper_latex_tableau = function(x) {
+  substitutions = c(
+    "\\" = "\\textbackslash{}",
+    "{" = "\\{",
+    "}" = "\\}",
+    "$" = "\\$",
+    "&" = "\\&",
+    "#" = "\\#",
+    "_" = "\\_",
+    "%" = "\\%",
+    "~" = "\\textasciitilde{}",
+    "^" = "\\textasciicircum{}"
+  )
+
+  for (ancien in names(substitutions)) {
+    x = gsub(ancien, substitutions[[ancien]], x, fixed = TRUE)
+  }
+  x
+}
+
+.contenu_cartes_tableau = function(tableau, format = c("html", "pdf")) {
+  format = match.arg(format)
+  n_colonnes = ncol(tableau)
+  n_lignes = nrow(tableau)
+
+  if (identical(format, "html")) {
+    cartes = vapply(as.character(t(tableau)), function(cellule) {
+      if (!nzchar(cellule)) return("<div></div>")
+
+      lignes = strsplit(cellule, "\n", fixed = TRUE)[[1L]]
+      lignes = .echapper_html_tableau(lignes)
+      titre = lignes[[1L]]
+      corps = lignes[-1L]
+      corps = corps[nzchar(corps)]
+
+      paste0(
+        '<div style="border:1px solid #aaa;border-radius:4px;',
+        'padding:.8em 1em;text-align:left;">',
+        '<div style="font-weight:700;text-align:center;margin-bottom:.5em;">',
+        titre,
+        "</div>",
+        if (length(corps)) paste(corps, collapse = "<br>") else "",
+        "</div>"
+      )
+    }, character(1))
+
+    return(paste0(
+      '<div style="display:grid;grid-template-columns:repeat(',
+      n_colonnes,
+      ',minmax(0,1fr));gap:1em;">',
+      paste(cartes, collapse = ""),
+      "</div>"
+    ))
+  }
+
+  lignes_latex = character(n_lignes)
+
+  for (i in seq_len(n_lignes)) {
+    cellules = character(n_colonnes)
+
+    for (j in seq_len(n_colonnes)) {
+      cellule = as.character(tableau[i, j])
+      if (!nzchar(cellule)) {
+        cellules[[j]] = ""
+        next
+      }
+
+      lignes = strsplit(cellule, "\n", fixed = TRUE)[[1L]]
+      lignes = .echapper_latex_tableau(lignes)
+      titre = lignes[[1L]]
+      corps = lignes[-1L]
+      corps = corps[nzchar(corps)]
+
+      cellules[[j]] = paste0(
+        "\\begin{minipage}[t]{0.28\\textwidth}",
+        "\\centering\\textbf{", titre, "}\\\\[0.5em]",
+        "\\raggedright\\small ",
+        paste(corps, collapse = "\\\\"),
+        "\\end{minipage}"
+      )
+    }
+
+    lignes_latex[[i]] = paste(cellules, collapse = " & ")
+  }
+
+  paste0(
+    "\\begin{center}\n",
+    "\\setlength{\\tabcolsep}{6pt}\n",
+    "\\renewcommand{\\arraystretch}{1.35}\n",
+    "\\begin{tabular}{",
+    paste(rep("c", n_colonnes), collapse = ""),
+    "}\n",
+    paste(lignes_latex, collapse = " \\\\\n\\vspace{0.8em}\\\\\n"),
+    "\n\\end{tabular}\n",
+    "\\end{center}"
+  )
+}
+
+.rendre_fiche_tableau = function(
+  tableau,
+  fichier = NULL,
+  format = c("auto", "html", "pdf"),
+  titre = "Fiche d'exercices",
+  sous_titre = NULL,
+  ouvrir = TRUE
+) {
+  if (!requireNamespace("rmarkdown", quietly = TRUE)) {
+    stop("Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+  }
+  if (!requireNamespace("knitr", quietly = TRUE)) {
+    stop("Le package `knitr` est necessaire pour produire une fiche tabulaire.", call. = FALSE)
+  }
+
+  format = .choisir_format_fiche(format)
+  if (is.null(fichier)) fichier = file.path("rapports", "fiche-tableau")
+
+  multilignes = grepl("\n", as.character(tableau), fixed = TRUE)
+
+  if (any(multilignes)) {
+    contenu = .contenu_cartes_tableau(tableau, format = format)
+  } else {
+    contenu = knitr::kable(
+      tableau,
+      format = if (identical(format, "pdf")) "latex" else "html",
+      row.names = !is.null(rownames(tableau)),
+      col.names = if (is.null(colnames(tableau))) {
+        rep("", ncol(tableau))
+      } else {
+        colnames(tableau)
+      }
+    )
+  }
+
+  if (!is.null(sous_titre) && nzchar(as.character(sous_titre))) {
+    contenu = paste0("## ", as.character(sous_titre), "\n\n", contenu)
+  }
+
+  source = tempfile("eduschool-tableau-", fileext = ".md")
+  on.exit(unlink(source, force = TRUE), add = TRUE)
+  writeLines(
+    c(
+      "---",
+      paste0("title: ", encodeString(titre, quote = "\"")),
+      "niveau: Automatismes",
+      "notions: Mathematiques",
+      "---",
+      "",
+      contenu
+    ),
+    source,
+    useBytes = TRUE
+  )
+
+  .rendre_fiche_markdown(
+    source = source,
+    fichier = fichier,
+    format = format,
     ouvrir = ouvrir
   )
 }
@@ -662,4 +1106,125 @@ produire_corrige = function(
     afficher_metadonnees = afficher_metadonnees,
     ouvrir = ouvrir
   )
+}
+
+# Helpers for Markdown pedagogical sheets -----------------------------------
+
+.est_fiche_markdown = function(x) {
+  is.character(x) && length(x) == 1L && !is.na(x) &&
+    grepl("\\.md$", x, ignore.case = TRUE) && file.exists(x)
+}
+
+.lire_fiche_markdown = function(fichier) {
+  fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
+  lignes = readLines(fichier, warn = FALSE, encoding = "UTF-8")
+  meta = rmarkdown::yaml_front_matter(fichier)
+
+  if (length(lignes) >= 2L && identical(trimws(lignes[[1]]), "---")) {
+    fins = which(trimws(lignes) %in% c("---", "..."))
+    fins = fins[fins > 1L]
+    if (length(fins)) lignes = lignes[-seq_len(fins[[1]])]
+  }
+
+  titre = meta$title
+  if (is.null(titre) || !length(titre) || !nzchar(as.character(titre[[1]]))) {
+    h1 = grep("^#\\s+", lignes, value = TRUE)
+    titre = if (length(h1)) sub("^#\\s+", "", h1[[1]]) else tools::file_path_sans_ext(basename(fichier))
+  }
+
+  niveau = meta$niveau
+  if (is.null(niveau) || !length(niveau) || !nzchar(as.character(niveau[[1]]))) niveau = "Decouverte"
+
+  notions = meta$notions
+  if (is.null(notions)) notions = "Mathematiques"
+  if (length(notions) == 1L && grepl(",", notions, fixed = TRUE)) {
+    notions = trimws(strsplit(as.character(notions), ",", fixed = TRUE)[[1]])
+  }
+
+  list(
+    fichier = fichier,
+    titre = as.character(titre[[1]]),
+    niveau = as.character(niveau[[1]]),
+    notions = as.character(notions),
+    contenu = paste(lignes, collapse = "\n")
+  )
+}
+
+.template_fiche_markdown = function() {
+  f = system.file("templates", "fiche_markdown.Rmd", package = "eduschool")
+  if (nzchar(f) && file.exists(f)) return(f)
+
+  f = file.path("inst", "templates", "fiche_markdown.Rmd")
+  if (file.exists(f)) return(normalizePath(f, winslash = "/", mustWork = TRUE))
+
+  stop("Template de fiche Markdown introuvable.", call. = FALSE)
+}
+
+.rendre_fiche_markdown = function(source, fichier = NULL, format = c("auto", "html", "pdf"), ouvrir = TRUE) {
+  if (!requireNamespace("rmarkdown", quietly = TRUE)) {
+    stop("Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+  }
+  if (!rmarkdown::pandoc_available()) {
+    stop("Pandoc est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+  }
+
+  fiche = .lire_fiche_markdown(source)
+  format = .choisir_format_fiche(format)
+  extension = if (identical(format, "pdf")) ".pdf" else ".html"
+
+  if (is.null(fichier)) {
+    nom = tools::file_path_sans_ext(basename(source))
+    fichier = file.path("rapports", nom)
+  }
+  fichier = sub("\\.(html?|pdf)$", "", as.character(fichier), ignore.case = TRUE)
+  fichier = paste0(fichier, extension)
+  dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)
+  fichier = normalizePath(fichier, winslash = "/", mustWork = FALSE)
+
+  travail = tempfile("eduschool-fiche-md-")
+  dir.create(travail, recursive = TRUE, showWarnings = FALSE)
+  on.exit(unlink(travail, recursive = TRUE, force = TRUE), add = TRUE)
+
+  entree = file.path(travail, "fiche_markdown.Rmd")
+  file.copy(.template_fiche_markdown(), entree, overwrite = TRUE)
+
+  logo = .logo_eduschool()
+  if (nzchar(logo)) {
+    logo_local = file.path(travail, basename(logo))
+    file.copy(logo, logo_local, overwrite = TRUE)
+  } else {
+    logo_local = ""
+  }
+
+  output_format = if (identical(format, "pdf")) {
+    rmarkdown::pdf_document()
+  } else {
+    rmarkdown::html_document(
+      self_contained = TRUE,
+      pandoc_args = c("--metadata", paste0("pagetitle=", fiche$titre))
+    )
+  }
+
+  sortie = rmarkdown::render(
+    input = entree,
+    output_format = output_format,
+    output_file = basename(fichier),
+    output_dir = travail,
+    params = list(
+      titre = fiche$titre,
+      contenu = fiche$contenu,
+      logo = logo_local,
+      entete = .infos_entete_math(fiche$niveau, fiche$notions, Sys.Date())
+    ),
+    envir = new.env(parent = baseenv()),
+    quiet = TRUE
+  )
+
+  if (!file.copy(sortie, fichier, overwrite = TRUE)) {
+    stop("Impossible de copier le document produit vers sa destination.", call. = FALSE)
+  }
+
+  fichier = normalizePath(fichier, winslash = "/", mustWork = TRUE)
+  if (isTRUE(ouvrir)) .ouvrir_fichier(fichier)
+  invisible(fichier)
 }

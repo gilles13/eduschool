@@ -37,3 +37,63 @@ test_that("4e et 3e disposent de méthodes, formules, erreurs et exercices", {
   expect_gte(sum(types_exercices_math()$niveau_id == "4E"), 9)
   expect_gte(sum(types_exercices_math()$niveau_id == "3E"), 9)
 })
+
+test_that("tous les attendus de 4e sont couverts par au moins une notion documentaire", {
+  items = eduschool:::.lire_csv("programmes", "programme_items.csv")
+  applications = eduschool:::.lire_csv("programmes", "programme_items_applications.csv")
+  liens = eduschool:::.lire_csv("documentation", "notions_capacites.csv")
+
+  cible = merge(items, applications, by = c("item_id", "programme_id"))
+  cible = cible[
+    cible$programme_id == "PRG_MAT_C4_2020" &
+      cible$niveau_id == "4E" &
+      cible$version_id == "2026_2027" &
+      grepl("_ATT_", cible$item_id, fixed = TRUE),
+  ]
+
+  expect_true(all(cible$item_id %in% liens$capacite_id))
+})
+
+test_that("les notions fines attendues en 4e sont documentees", {
+  notions = eduschool:::.lire_csv("documentation", "notions.csv")
+  attendues = c(
+    "MAT_NOMBRES_PREMIERS",
+    "MAT_GRANDEURS_COMPOSEES",
+    "MAT_PYTHAGORE",
+    "MAT_THALES",
+    "MAT_COSINUS_TRIANGLE_RECTANGLE"
+  )
+
+  expect_true(all(attendues %in% notions$notion_id))
+  expect_true(all(nzchar(notions$document[match(attendues, notions$notion_id)])))
+})
+
+test_that("tous les attendus de 3e sont couverts par au moins une notion documentaire", {
+  items = eduschool:::.lire_csv("programmes", "programme_items.csv")
+  applications = eduschool:::.lire_csv("programmes", "programme_items_applications.csv")
+  liens = eduschool:::.lire_csv("documentation", "notions_capacites.csv")
+
+  cible = merge(items, applications, by = c("item_id", "programme_id"))
+  cible = cible[
+    cible$programme_id == "PRG_MAT_C4_2020" &
+      cible$niveau_id == "3E" &
+      cible$version_id == "2026_2027" &
+      grepl("_ATT_", cible$item_id, fixed = TRUE),
+  ]
+
+  expect_true(all(cible$item_id %in% liens$capacite_id))
+})
+
+test_that("les notions fines attendues en 3e sont documentees", {
+  notions = eduschool:::.lire_csv("documentation", "notions.csv")
+  attendues = c(
+    "MAT_LITT_DOUBLE_DISTRIBUTIVITE",
+    "MAT_EQUATION_PRODUIT",
+    "MAT_FONCTIONS_LINEAIRES_AFFINES",
+    "MAT_HOMOTHETIE",
+    "MAT_TRIGONOMETRIE_TRIANGLE_RECTANGLE"
+  )
+
+  expect_true(all(attendues %in% notions$notion_id))
+  expect_true(all(nzchar(notions$document[match(attendues, notions$notion_id)])))
+})

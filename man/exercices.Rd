@@ -46,7 +46,7 @@ exercices(
   n = 5,
   difficulte = 1,
   seed = 1,
-  humour = FALSE,
+  humour_ratio = 0.2,
   afficher = FALSE
 )
 }
@@ -72,9 +72,9 @@ exercices(
 
 \item{capacite}{Identifiant de capacite facultatif pour un pilotage avance.}
 
-\item{humour}{Ajouter quelques touches humoristiques lorsqu'elles sont disponibles.
-Par defaut `FALSE`. Le dosage est d'une question humoristique par groupe
-complet de cinq exercices, quelle que soit la notion.}
+\item{humour_ratio}{Ratio d'exercices recevant une touche humoristique
+lorsqu'elle est disponible. Nombre compris entre 0 et 1. Par defaut `0.2`,
+soit environ un exercice sur cinq.}
 }
 \value{
 Un exercice ou une liste d'exercices.
