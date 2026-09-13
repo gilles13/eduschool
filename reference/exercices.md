@@ -44,7 +44,7 @@ exercices(
   n = 5,
   difficulte = 1,
   seed = 1,
-  humour = FALSE,
+  humour_ratio = 0.2,
   afficher = FALSE
 )
 ```
@@ -92,11 +92,11 @@ exercices(
 
   Identifiant de capacite facultatif pour un pilotage avance.
 
-- humour:
+- humour_ratio:
 
-  Ajouter quelques touches humoristiques lorsqu'elles sont disponibles.
-  Par defaut \`FALSE\`. Le dosage est d'une question humoristique par
-  groupe complet de cinq exercices, quelle que soit la notion.
+  Ratio d'exercices recevant une touche humoristique lorsqu'elle est
+  disponible. Nombre compris entre 0 et 1. Par defaut \`0.2\`, soit
+  environ un exercice sur cinq.
 
 ## Value
 

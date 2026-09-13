@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.33.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.35.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,7 @@
     <li><a class="dropdown-item" href="../articles/livre-d-or.html">Livre d'or</a></li>
     <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
+    <li><a class="dropdown-item" href="../articles/faire-un-pas-de-cote.html">Faire un pas de côté</a></li>
     <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaire</a></li>
     <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Sous le capot</a></li>
     <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Contribuer et partager</a></li>
@@ -40,6 +41,67 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.35.0" id="eduschool-0350">eduschool 0.35.0<a class="anchor" aria-label="anchor" href="#eduschool-0350"></a></h2>
+<div class="section level3">
+<h3 id="mathématiques--consolider-le-collège-0-35-0">Mathématiques : consolider le collège<a class="anchor" aria-label="anchor" href="#math%C3%A9matiques--consolider-le-coll%C3%A8ge-0-35-0"></a></h3>
+<ul><li>Complétion de la couverture des notions de mathématiques en 4e et en 3e à partir des capacités déjà présentes dans le référentiel.</li>
+<li>Ajout ciblé de notions manquantes autour notamment de Pythagore, Thalès, la trigonométrie, l’homothétie, les fonctions linéaires et affines et les équations-produits.</li>
+<li>Enrichissement du calcul littéral avec la réduction, la distributivité et la double distributivité, accompagné d’exercices générés et reproductibles.</li>
+<li>Ajout d’exercices sur les équations du premier degré en 4e, avec plusieurs niveaux de difficulté.</li>
+<li>Ajout de passerelles pédagogiques autour des fractions, des nombres rationnels et de la proportionnalité.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="produire-et-visualiser-des-fiches-0-35-0">Produire et visualiser des fiches<a class="anchor" aria-label="anchor" href="#produire-et-visualiser-des-fiches-0-35-0"></a></h3>
+<ul><li>
+<code><a href="../reference/produire_fiche.html">produire_fiche()</a></code> devient une porte de rendu commune pour les exercices, les tableaux de notions et les fiches Markdown.</li>
+<li>Ajout d’une visualisation par blocs des notions d’un niveau, avec les statuts <code>a decouvrir</code>, <code>en cours</code> et <code>acquise</code>, sans introduire d’état persistant dans le référentiel.</li>
+<li>Ajout de <code><a href="../reference/table_multiplication.html">table_multiplication()</a></code> et de son rendu en cartes avec <code><a href="../reference/produire_fiche.html">produire_fiche()</a></code>.</li>
+<li>Amélioration du rendu HTML et PDF des fiches de notions et des tableaux.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="exercices-et-quiz-0-35-0">Exercices et quiz<a class="anchor" aria-label="anchor" href="#exercices-et-quiz-0-35-0"></a></h3>
+<ul><li>Les exercices de calcul littéral peuvent intégrer de l’humour selon un ratio configurable avec <code>humour_ratio</code>.</li>
+<li>Les exemples proposés dans la cheatsheet utilisent désormais des pipelines complets et cohérents pour réviser, générer un exercice, visualiser des notions ou jouer avec un quiz.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="faire-un-pas-de-côté-0-35-0">Faire un pas de côté<a class="anchor" aria-label="anchor" href="#faire-un-pas-de-c%C3%B4t%C3%A9-0-35-0"></a></h3>
+<ul><li>Introduction d’une nouvelle porte éditoriale : <strong>Faire un pas de côté</strong>.</li>
+<li>Première fiche publiée : <strong>« Zéro : est-ce vraiment rien ? »</strong>
+</li>
+<li>Cette rubrique propose de regarder une notion familière sous un autre angle, sans créer un nouveau parcours obligatoire ni une nouvelle couche dans le référentiel.</li>
+<li>Les autres fiches de découverte restent volontairement hors du site tant qu’elles n’ont pas suffisamment mûri.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="cheatsheet-0-35-0">Cheatsheet<a class="anchor" aria-label="anchor" href="#cheatsheet-0-35-0"></a></h3>
+<ul><li>
+<code><a href="../reference/produire_fiche.html">produire_fiche()</a></code> apparaît désormais explicitement parmi les principales portes d’utilisation d’eduschool.</li>
+<li>Rationalisation des exemples autour du pipe afin qu’un bloc corresponde à une intention et à un geste complet.</li>
+<li>Les blocs fonctionnels utilisent un traitement visuel neutre ; les repères colorés sont réservés aux blocs identitaires.</li>
+<li>La couleur du bloc <code>Contribuer</code> est pilotée par une variable CSS unique et reste librement ajustable.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="qualité-0-35-0">Qualité<a class="anchor" aria-label="anchor" href="#qualit%C3%A9-0-35-0"></a></h3>
+<ul><li>Ajout et renforcement des tests de couverture des notions en 4e et en 3e, des exercices de calcul littéral et d’équations, des rendus de fiches et de la cheatsheet.</li>
+<li>Les tests de style de la cheatsheet vérifient désormais le contrat CSS sans imposer une couleur particulière.</li>
+<li>La règle reste inchangée : une évolution n’est validée qu’après tests, inspection visuelle lorsque nécessaire et <code>R CMD check</code> propre.</li>
+</ul></div>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.34.0" id="eduschool-0340">eduschool 0.34.0<a class="anchor" aria-label="anchor" href="#eduschool-0340"></a></h2>
+<div class="section level3">
+<h3 id="cycle--raccorder-le-primaire-au-collège-0-34-0">Cycle 3 : raccorder le primaire au collège<a class="anchor" aria-label="anchor" href="#cycle--raccorder-le-primaire-au-coll%C3%A8ge-0-34-0"></a></h3>
+<ul><li>Ajout des niveaux CM1 et CM2 au référentiel des niveaux, tous deux rattachés au cycle 3.</li>
+<li>Le programme de mathématiques du cycle 3 est maintenant déclaré applicable au CM1 et au CM2 selon son calendrier officiel.</li>
+<li>Premier raccord pédagogique CM1 -&gt; CM2 -&gt; 6E sur les fractions : lecture et représentation, décomposition, encadrement, repérage, comparaison, calculs et fraction d’une quantité.</li>
+<li>Les nouvelles capacités réutilisent les notions et le concept de fraction déjà présents dans eduschool ; aucune notion parallèle n’est créée.</li>
+<li>Correction de la référence NOR et de l’URL de la source officielle du programme de mathématiques du cycle 3.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="qualité-0-34-0">Qualité<a class="anchor" aria-label="anchor" href="#qualit%C3%A9-0-34-0"></a></h3>
+<ul><li>Ajout de tests sur le rattachement CM1/CM2 au cycle 3, le calendrier d’application, la couverture des fractions et les liens vers les notions existantes.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.33.0" id="eduschool-0330">eduschool 0.33.0<a class="anchor" aria-label="anchor" href="#eduschool-0330"></a></h2>
 <div class="section level3">

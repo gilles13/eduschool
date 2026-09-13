@@ -22,7 +22,10 @@ produire_corrige(
 
 - exercices:
 
-  Liste d'exercices produite par \[exercices()\] ou \[generer_fiche()\].
+  Liste d'exercices produite par \[exercices()\] ou \[generer_fiche()\],
+  chemin vers un fichier Markdown (\`.md\`), matrice ou \`data.frame\`.
+  Un tableau de notions peut contenir \`categorie\`, \`statut\` et
+  \`ordre\`.
 
 - fichier:
 

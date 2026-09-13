@@ -1,5 +1,101 @@
 # Changelog
 
+## eduschool 0.35.0
+
+### Mathématiques : consolider le collège
+
+- Complétion de la couverture des notions de mathématiques en 4e et en
+  3e à partir des capacités déjà présentes dans le référentiel.
+- Ajout ciblé de notions manquantes autour notamment de Pythagore,
+  Thalès, la trigonométrie, l’homothétie, les fonctions linéaires et
+  affines et les équations-produits.
+- Enrichissement du calcul littéral avec la réduction, la distributivité
+  et la double distributivité, accompagné d’exercices générés et
+  reproductibles.
+- Ajout d’exercices sur les équations du premier degré en 4e, avec
+  plusieurs niveaux de difficulté.
+- Ajout de passerelles pédagogiques autour des fractions, des nombres
+  rationnels et de la proportionnalité.
+
+### Produire et visualiser des fiches
+
+- [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+  devient une porte de rendu commune pour les exercices, les tableaux de
+  notions et les fiches Markdown.
+- Ajout d’une visualisation par blocs des notions d’un niveau, avec les
+  statuts `a decouvrir`, `en cours` et `acquise`, sans introduire d’état
+  persistant dans le référentiel.
+- Ajout de
+  [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
+  et de son rendu en cartes avec
+  [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md).
+- Amélioration du rendu HTML et PDF des fiches de notions et des
+  tableaux.
+
+### Exercices et quiz
+
+- Les exercices de calcul littéral peuvent intégrer de l’humour selon un
+  ratio configurable avec `humour_ratio`.
+- Les exemples proposés dans la cheatsheet utilisent désormais des
+  pipelines complets et cohérents pour réviser, générer un exercice,
+  visualiser des notions ou jouer avec un quiz.
+
+### Faire un pas de côté
+
+- Introduction d’une nouvelle porte éditoriale : **Faire un pas de
+  côté**.
+- Première fiche publiée : **« Zéro : est-ce vraiment rien ? »**
+- Cette rubrique propose de regarder une notion familière sous un autre
+  angle, sans créer un nouveau parcours obligatoire ni une nouvelle
+  couche dans le référentiel.
+- Les autres fiches de découverte restent volontairement hors du site
+  tant qu’elles n’ont pas suffisamment mûri.
+
+### Cheatsheet
+
+- [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
+  apparaît désormais explicitement parmi les principales portes
+  d’utilisation d’eduschool.
+- Rationalisation des exemples autour du pipe afin qu’un bloc
+  corresponde à une intention et à un geste complet.
+- Les blocs fonctionnels utilisent un traitement visuel neutre ; les
+  repères colorés sont réservés aux blocs identitaires.
+- La couleur du bloc `Contribuer` est pilotée par une variable CSS
+  unique et reste librement ajustable.
+
+### Qualité
+
+- Ajout et renforcement des tests de couverture des notions en 4e et en
+  3e, des exercices de calcul littéral et d’équations, des rendus de
+  fiches et de la cheatsheet.
+- Les tests de style de la cheatsheet vérifient désormais le contrat CSS
+  sans imposer une couleur particulière.
+- La règle reste inchangée : une évolution n’est validée qu’après tests,
+  inspection visuelle lorsque nécessaire et `R CMD check` propre.
+
+## eduschool 0.34.0
+
+### Cycle 3 : raccorder le primaire au collège
+
+- Ajout des niveaux CM1 et CM2 au référentiel des niveaux, tous deux
+  rattachés au cycle 3.
+- Le programme de mathématiques du cycle 3 est maintenant déclaré
+  applicable au CM1 et au CM2 selon son calendrier officiel.
+- Premier raccord pédagogique CM1 -\> CM2 -\> 6E sur les fractions :
+  lecture et représentation, décomposition, encadrement, repérage,
+  comparaison, calculs et fraction d’une quantité.
+- Les nouvelles capacités réutilisent les notions et le concept de
+  fraction déjà présents dans eduschool ; aucune notion parallèle n’est
+  créée.
+- Correction de la référence NOR et de l’URL de la source officielle du
+  programme de mathématiques du cycle 3.
+
+### Qualité
+
+- Ajout de tests sur le rattachement CM1/CM2 au cycle 3, le calendrier
+  d’application, la couverture des fractions et les liens vers les
+  notions existantes.
+
 ## eduschool 0.33.0
 
 ### Relier les fondamentaux

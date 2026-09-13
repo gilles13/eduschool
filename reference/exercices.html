@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.33.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.35.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,7 @@
     <li><a class="dropdown-item" href="../articles/livre-d-or.html">Livre d'or</a></li>
     <li><a class="dropdown-item" href="../articles/prise-en-main.html">Prise en main</a></li>
     <li><a class="dropdown-item" href="../articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
+    <li><a class="dropdown-item" href="../articles/faire-un-pas-de-cote.html">Faire un pas de côté</a></li>
     <li><a class="dropdown-item" href="../articles/parcours-scolaires.html">Parcours scolaire</a></li>
     <li><a class="dropdown-item" href="../articles/architecture-des-donnees.html">Sous le capot</a></li>
     <li><a class="dropdown-item" href="../articles/contribuer-et-partager.html">Contribuer et partager</a></li>
@@ -86,7 +87,7 @@
 <span>  n <span class="op">=</span> <span class="fl">5</span>,</span>
 <span>  difficulte <span class="op">=</span> <span class="fl">1</span>,</span>
 <span>  seed <span class="op">=</span> <span class="fl">1</span>,</span>
-<span>  humour <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  humour_ratio <span class="op">=</span> <span class="fl">0.2</span>,</span>
 <span>  afficher <span class="op">=</span> <span class="cn">FALSE</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
@@ -136,10 +137,10 @@
 <dd><p>Identifiant de capacite facultatif pour un pilotage avance.</p></dd>
 
 
-<dt id="arg-humour">humour<a class="anchor" aria-label="anchor" href="#arg-humour"></a></dt>
-<dd><p>Ajouter quelques touches humoristiques lorsqu'elles sont disponibles.
-Par defaut `FALSE`. Le dosage est d'une question humoristique par groupe
-complet de cinq exercices, quelle que soit la notion.</p></dd>
+<dt id="arg-humour-ratio">humour_ratio<a class="anchor" aria-label="anchor" href="#arg-humour-ratio"></a></dt>
+<dd><p>Ratio d'exercices recevant une touche humoristique
+lorsqu'elle est disponible. Nombre compris entre 0 et 1. Par defaut `0.2`,
+soit environ un exercice sur cinq.</p></dd>
 
 </dl></div>
     <div class="section level2">

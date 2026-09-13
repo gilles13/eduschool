@@ -51,6 +51,36 @@ sont pas encore toutes implémentées. Elles seront introduites
 progressivement après stabilisation des objets et des conventions, afin
 d’éviter de figer trop tôt une interface difficile à faire évoluer.
 
+### Une première porte : Markdown -\> fiche eduschool
+
+Sans attendre cette API de composition, une contribution pédagogique
+peut désormais commencer par un simple fichier Markdown. Quelques
+métadonnées facultatives décrivent la fiche, puis le contenu reste du
+Markdown ordinaire :
+
+``` text
+---
+title: "Ma première fiche"
+niveau: "6E"
+notions:
+  - Fractions
+---
+
+Une idée, une question, une explication...
+```
+
+La production tient ensuite en une fonction :
+
+``` r
+
+produire_fiche("ma-premiere-fiche.md")
+```
+
+Le but est volontairement modeste : permettre à quelqu’un qui a une idée
+à partager de fabriquer rapidement une fiche eduschool sans connaître le
+modèle relationnel interne du package. Les besoins rencontrés avec de
+vraies fiches guideront les prochaines briques de contribution.
+
 ## Commencer dès maintenant avec les verbes simples
 
 La version 0.12.0 introduit une première façade de consultation :

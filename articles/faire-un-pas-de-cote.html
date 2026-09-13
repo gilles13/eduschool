@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Documentation pédagogique • eduschool</title>
+<title>Faire un pas de côté • eduschool</title>
 <!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Documentation pédagogique">
+<meta property="og:title" content="Faire un pas de côté">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -61,47 +61,77 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.png" class="logo" alt=""><h1>Documentation pédagogique</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Faire un pas de côté</h1>
             
       
 
-      <div class="d-none name"><code>documentation-pedagogique.Rmd</code></div>
+      <div class="d-none name"><code>faire-un-pas-de-cote.Rmd</code></div>
     </div>
 
     
     
-<div class="float">
-<img src="../reference/figures/documentation_pedagogique.svg" alt="Organisation de la documentation pédagogique"><div class="figcaption">Organisation de la documentation
-pédagogique</div>
-</div>
-<p>La documentation est séparée des programmes officiels. Une notion
-pédagogique peut être reliée à plusieurs capacités ; les prérequis
-forment une couche supplémentaire, indépendante du texte
-réglementaire.</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/chercher_notions.html">chercher_notions</a></span><span class="op">(</span><span class="st">"proportion"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/prerequis_capacite.html">prerequis_capacite</a></span><span class="op">(</span><span class="st">"ITM_MAT_C3_6E_C31"</span>, recursif <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<p>Une notion paraît évidente ? Regardons-la sous un autre angle.</p>
+<p>Pour commencer, une seule fiche. Simple, accessible, et suffisamment
+étrange pour donner envie de regarder le zéro une seconde fois.</p>
+<p>Tu as zéro bonbon.</p>
+<p><span class="math display">0</span></p>
+<p>Rien. Terminé.</p>
+<p><strong>Vraiment ?</strong></p>
 <div class="section level2">
-<h2 id="du-niveau-au-rappel-pédagogique">Du niveau au rappel pédagogique<a class="anchor" aria-label="anchor" href="#du-niveau-au-rappel-p%C3%A9dagogique"></a>
+<h2 id="zéro-peut-vouloir-dire-rien">Zéro peut vouloir dire « rien »<a class="anchor" aria-label="anchor" href="#z%C3%A9ro-peut-vouloir-dire-rien"></a>
 </h2>
-<p>On peut partir d’un niveau, repérer une capacité puis descendre vers
-les notions :</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="../reference/capacites.html">capacites</a></span><span class="op">(</span><span class="st">"6E"</span>, discipline_id <span class="op">=</span> <span class="st">"MAT"</span>, version_id <span class="op">=</span> <span class="st">"2026_2027"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"item_id"</span>, <span class="st">"libelle"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/notions_capacite.html">notions_capacite</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">item_id</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div>
-<p>Les rappels sont des fichiers Markdown installés avec le package et
-accessibles par <code><a href="../reference/obtenir_rappel.html">obtenir_rappel()</a></code>. Cette séparation permet
-d’enrichir les explications, les méthodes ou les exemples sans modifier
-les référentiels de programme.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu"><a href="../reference/obtenir_rappel.html">obtenir_rappel</a></span><span class="op">(</span><span class="st">"MAT_FRACTION_ADD"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p>Pour mesurer la documentation disponible à l’échelle d’un niveau,
-<code><a href="../reference/notions_niveau.html">notions_niveau()</a></code> complète les fonctions de recherche par
-notion.</p>
+<p>Une boîte contenant zéro bille ne contient aucune bille. Mais sur une
+droite graduée :</p>
+<p><span class="math display">
+-3\quad -2\quad -1\quad \boxed{0}\quad 1\quad 2\quad 3
+</span></p>
+<p>le zéro est quelque part. Il devient une origine et une frontière
+entre nombres négatifs et positifs.</p>
+<p>Le rien vient de trouver une adresse.</p>
 </div>
-  </main>
+<div class="section level2">
+<h2 id="zéro-peut-être-un-résultat">Zéro peut être un résultat<a class="anchor" aria-label="anchor" href="#z%C3%A9ro-peut-%C3%AAtre-un-r%C3%A9sultat"></a>
+</h2>
+<p><span class="math display">7-7=0</span></p>
+<p>Et dans :</p>
+<p><span class="math display">x+4=4</span></p>
+<p>zéro devient même une <strong>solution</strong> : <span class="math inline">x=0</span>.</p>
+<p>Pas mal pour « rien ».</p>
+</div>
+<div class="section level2">
+<h2 id="et-diviser-par-zéro">Et diviser par zéro ?<a class="anchor" aria-label="anchor" href="#et-diviser-par-z%C3%A9ro"></a>
+</h2>
+<p><span class="math display">\frac{6}{2}=3</span></p>
+<p>car <span class="math inline">3\times2=6</span>.</p>
+<p>Pour <span class="math inline">6/0</span>, il faudrait trouver un
+nombre tel que :</p>
+<p><span class="math display">?\times0=6</span></p>
+<p>Impossible : n’importe quel nombre multiplié par zéro donne zéro.</p>
+<p><strong>Le zéro n’est décidément pas rien.</strong></p>
+</div>
+<div class="section level2">
+<h2 id="une-porte-entrouverte">Une porte entrouverte<a class="anchor" aria-label="anchor" href="#une-porte-entrouverte"></a>
+</h2>
+<p>Regarde :</p>
+<p><span class="math display">
+1,\quad \frac12,\quad \frac14,\quad \frac18,\quad \frac1{16},\ldots
+</span></p>
+<p>Ces nombres se rapprochent de zéro sans qu’aucun de ceux écrits ici
+ne soit égal à zéro.</p>
+<p>Une porte vient de s’entrouvrir vers une idée plus profonde :
+<strong>la limite</strong>.</p>
+<p>Pas besoin de la franchir aujourd’hui. On sait simplement qu’elle
+existe : <span class="math inline">\exists</span>.</p>
+<div class="section level3">
+<h3 id="le-challenge">Le challenge<a class="anchor" aria-label="anchor" href="#le-challenge"></a>
+</h3>
+<p>Zéro peut être une absence, une origine, un résultat, une solution,
+une frontière…</p>
+<p>Alors : <strong>le vide, c’est quoi exactement ?</strong></p>
+</div>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 

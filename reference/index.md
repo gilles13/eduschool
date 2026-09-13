@@ -233,6 +233,8 @@
   : Enseignements de specialite de la voie generale
 - [`structure_examen()`](https://gilles13.github.io/eduschool/reference/structure_examen.md)
   : Structure d'un examen
+- [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
+  : Generer une table de multiplication
 - [`tables_si()`](https://gilles13.github.io/eduschool/reference/tables_si.md)
   : Tables du mini-SI eduschool
 - [`theme_eduschool()`](https://gilles13.github.io/eduschool/reference/theme_eduschool.md)

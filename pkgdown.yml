@@ -13,6 +13,7 @@ articles:
   exemple-classe-2de-generale: exemple-classe-2de-generale.html
   exemple-classe-6e: exemple-classe-6e.html
   exercices-et-revisions: exercices-et-revisions.html
+  faire-un-pas-de-cote: faire-un-pas-de-cote.html
   fiche-derivation-premiere: fiche-derivation-premiere.html
   fiche-ensembles-nombres: fiche-ensembles-nombres.html
   fiches-revision-mathematiques: fiches-revision-mathematiques.html
@@ -34,7 +35,7 @@ articles:
   prise-en-main: prise-en-main.html
   programmes-et-capacites: programmes-et-capacites.html
   rentrer-en-profondeur-dans-eduschool: rentrer-en-profondeur-dans-eduschool.html
-last_built: 2026-09-12T19:30Z
+last_built: 2026-09-13T18:01Z
 urls:
   reference: https://gilles13.github.io/eduschool/reference
   article: https://gilles13.github.io/eduschool/articles

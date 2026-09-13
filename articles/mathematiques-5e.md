@@ -107,7 +107,7 @@ Nombre relatif↔︎Repère du plan
 Les signes deviennent visibles comme des positions de part et d’autre de
 zéro.
 
-Ratio↔︎Proportionnalité
+Ratio→Proportionnalité
 
 Comparer deux quantités prépare à reconnaître quand elles évoluent selon
 un même rapport.

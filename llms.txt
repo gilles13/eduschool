@@ -281,6 +281,8 @@ library(eduschool)
   : Enseignements de specialite de la voie generale
 - [`structure_examen()`](https://gilles13.github.io/eduschool/reference/structure_examen.md)
   : Structure d'un examen
+- [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
+  : Generer une table de multiplication
 - [`tables_si()`](https://gilles13.github.io/eduschool/reference/tables_si.md)
   : Tables du mini-SI eduschool
 - [`theme_eduschool()`](https://gilles13.github.io/eduschool/reference/theme_eduschool.md)
@@ -313,6 +315,13 @@ Premiers repères pour comprendre le projet et commencer à l’utiliser.
   eduschool](https://gilles13.github.io/eduschool/articles/prise-en-main.md):
 - [Prendre un parent par la
   main](https://gilles13.github.io/eduschool/articles/prendre-un-parent-par-la-main.md):
+
+### Faire un pas de côté
+
+Une notion paraît évidente ? Regardons-la sous un autre angle.
+
+- [Faire un pas de
+  côté](https://gilles13.github.io/eduschool/articles/faire-un-pas-de-cote.md):
 
 ### Mathématiques
 
