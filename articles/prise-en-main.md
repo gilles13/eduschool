@@ -66,23 +66,22 @@ generer_fiche("6E", "ITM_MAT_C3_6E_C09", n = 5, seed = 2026) |>
 
 ### Composer une épreuve de brevet
 
-Le moteur d’examens suit la même logique de reproductibilité que les
-fiches. Une composition est d’abord produite, puis rédigée, avant son
-rendu :
+Le moteur d’examens utilise lui aussi un `seed` pour contrôler les choix
+pseudo-aléatoires. Une composition est d’abord produite, puis rédigée,
+avant son rendu :
 
 ``` r
 
 sujet = composer_examen("DNB", 2026, seed = 123)
 partie1 = rediger_examen(sujet, partie = 1)
-produire_examen(partie1, fichier = "dnb-automatismes.pdf")
+produire_examen(
+  partie1,
+  fichier = "dnb-automatismes",
+  format = "auto"
+)
 ```
 
 Le corrigé correspondant utilise exactement la même variante :
-
-``` r
-
-produire_corrige_examen(partie1, fichier = "dnb-automatismes-corrige.pdf")
-```
 
 La vignette **Composer et produire un DNB de mathématiques** décrit le
 modèle, la banque de gabarits et l’ajout progressif de nouvelles

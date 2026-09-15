@@ -68,8 +68,8 @@ Documentation pédagogique, exercices et exemples d’utilisation.
 
 Architecture des données et fonctionnement interne du package.
 
-- [Architecture des
-  données](https://gilles13.github.io/eduschool/articles/architecture-des-donnees.md):
+- [Sous le
+  capot](https://gilles13.github.io/eduschool/articles/architecture-des-donnees.md):
 - [Données réelles et
   provenance](https://gilles13.github.io/eduschool/articles/donnees-reelles-et-provenance.md):
 - [Rentrer en profondeur dans

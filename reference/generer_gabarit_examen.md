@@ -1,7 +1,8 @@
 # Instancier un gabarit d'examen
 
-Genere un enonce et sa reponse a partir d'un gabarit parametrique. La
-graine permet de reproduire exactement la meme variante.
+Genere un enonce et sa reponse a partir d'un gabarit parametrique. Dans
+un meme contexte de generation, la graine permet de retrouver les memes
+tirages pseudo-aleatoires.
 
 ## Usage
 

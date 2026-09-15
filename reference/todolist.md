@@ -1,0 +1,49 @@
+# TODO automatique d'un programme
+
+\`todolist()\` derive le travail restant de \[couverture_programme()\]
+et de \[auditer_modeles()\]. Elle ne contient ni score arbitraire ni
+priorite saisie a la main : les lacunes du referentiel apparaissent
+d'abord, puis l'absence de modeles, les erreurs de generation et les
+difficultes qui ne modifient pas reellement les exercices produits.
+
+## Usage
+
+``` r
+todolist(niveau, discipline = "MAT", version = "2026_2027", graines = 1:5)
+```
+
+## Arguments
+
+- niveau:
+
+  Niveau scolaire, par exemple \`"5E"\` ou \`"2GT"\`.
+
+- discipline:
+
+  Discipline, \`"MAT"\` par defaut.
+
+- version:
+
+  Version scolaire, \`"2026_2027"\` par defaut.
+
+- graines:
+
+  Graines reproductibles transmises a \[auditer_modeles()\] pour
+  comparer les difficultes declarees.
+
+## Value
+
+Un sous-ensemble enrichi de \`couverture_programme()\` contenant
+uniquement les capacites qui demandent encore un travail identifiable.
+\`probleme\` precise le diagnostic et \`modeles_concernes\` les modeles
+a examiner lorsque le probleme vient des generateurs.
+
+## Details
+
+\`couverture_programme()\` reste une vue rapide de l'etat declare.
+\`todolist()\` realise en plus un audit empirique des modeles et peut
+donc etre sensiblement plus lente.
+
+## See also
+
+\[couverture_programme()\], \[auditer_modeles()\]

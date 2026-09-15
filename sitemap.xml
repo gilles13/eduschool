@@ -42,6 +42,7 @@
 <url><loc>https://gilles13.github.io/eduschool/news/index.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/ajouter_variations_ipc.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/annoter_source.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/auditer_modeles.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/capacites.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/carte_concept_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/charte_eduschool.html</loc></url>
@@ -59,6 +60,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/controle_integrite_si.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/couleur_cycle.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/couverture_documentation.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/couverture_programme.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/decrire_source.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/diagramme_ensembles_nombres.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/diagramme_package.html</loc></url>
@@ -122,7 +124,6 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/print.eduschool_context.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_cheatsheet.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_corrige.html</loc></url>
-<url><loc>https://gilles13.github.io/eduschool/reference/produire_corrige_examen.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_corrige_exercices.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_diagramme_html.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_diagramme_svg.html</loc></url>
@@ -160,6 +161,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/tables_si.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/theme_eduschool.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/themes_niveau.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/todolist.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/types_exercices_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/usages_ressources.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/variation_pourcentage.html</loc></url>

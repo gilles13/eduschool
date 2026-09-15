@@ -1,8 +1,8 @@
-# Produire un examen redige en PDF
+# Produire un examen redige et son corrige
 
-Assemble l'en-tete, les questions et les ressources vectorielles d'un
-objet produit par \[rediger_examen()\]. Le sujet et le corrige utilisent
-le meme objet intermediaire afin de garantir leur coherence.
+Produit, a partir du meme objet redige, le sujet et son corrige. Le
+format \`"auto"\` choisit le PDF lorsque LaTeX est disponible et HTML
+sinon.
 
 ## Usage
 
@@ -10,8 +10,8 @@ le meme objet intermediaire afin de garantir leur coherence.
 produire_examen(
   examen,
   fichier = NULL,
-  corrige = FALSE,
-  ouvrir = FALSE,
+  format = c("auto", "html", "pdf"),
+  ouvrir = c("examen", "les_deux", "aucun"),
   detaille = FALSE
 )
 ```
@@ -24,21 +24,24 @@ produire_examen(
 
 - fichier:
 
-  Chemin de sortie. Si \`NULL\`, un nom est construit automatiquement.
+  Chemin de base du sujet. Le corrige recoit le suffixe \`"-corrige"\`.
+  Si \`NULL\`, les noms sont construits automatiquement.
 
-- corrige:
+- format:
 
-  Inclure les reponses et corrections.
+  \`"auto"\`, \`"html"\` ou \`"pdf"\`.
 
 - ouvrir:
 
-  Ouvrir le PDF apres creation.
+  Document a ouvrir apres creation : \`"examen"\` par defaut,
+  \`"les_deux"\` ou \`"aucun"\`.
 
 - detaille:
 
-  Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu
+  Pour le corrige, afficher les etapes de raisonnement detaillees lorsqu
   elles sont disponibles.
 
 ## Value
 
-Invisiblement, le chemin absolu du PDF produit.
+Invisiblement, un vecteur nomme contenant les chemins du sujet et du
+corrige.

@@ -1,6 +1,7 @@
-# Generer une table de multiplication
+# Generer les tables de multiplication
 
-Construit une grille de produits entiers de 1 a `max`.
+Construit les tables de multiplication de 1 a \`max\` sous forme de
+blocs conventionnels, disposes sur trois colonnes.
 
 ## Usage
 
@@ -12,12 +13,11 @@ table_multiplication(max = 9)
 
 - max:
 
-  Plus grand entier de la table. Par defaut 9.
+  Plus grande table et plus grand multiplicateur. Par defaut 9.
 
 ## Value
 
-Une matrice d'entiers dont les lignes et les colonnes portent les
-facteurs.
+Une matrice de caracteres. Chaque cellule contient une table complete.
 
 ## Examples
 

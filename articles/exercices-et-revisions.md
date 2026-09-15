@@ -125,8 +125,7 @@ est :
 
 sujet = composer_examen("DNB", 2026, seed = 123)
 partie1 = rediger_examen(sujet, partie = 1)
-produire_examen(partie1)
-produire_corrige_examen(partie1)
+produire_examen(partie1, format = "auto")
 ```
 
 Les figures et blocs Scratch ne sont pas des images stockées dans la

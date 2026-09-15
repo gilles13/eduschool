@@ -43,7 +43,8 @@ produire_rapport_exercices(
 
 - seed:
 
-  Graine aleatoire utilisee pour rendre la generation reproductible.
+  Graine pseudo-aleatoire utilisee pour controler les tirages de la
+  generation.
 
 - sortie_dir:
 

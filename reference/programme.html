@@ -11,7 +11,7 @@ restent disponibles pour les consultations plus techniques."><meta property="og:
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.35.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.36.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,12 @@ restent disponibles pour les consultations plus techniques.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">programme</span><span class="op">(</span><span class="va">niveau</span>, discipline <span class="op">=</span> <span class="st">"MAT"</span>, version <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">programme</span><span class="op">(</span></span>
+<span>  <span class="va">niveau</span>,</span>
+<span>  discipline <span class="op">=</span> <span class="st">"MAT"</span>,</span>
+<span>  version <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  detail <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"capacites"</span>, <span class="st">"themes"</span>, <span class="st">"complet"</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -72,10 +77,17 @@ restent disponibles pour les consultations plus techniques.</p>
 <dt id="arg-version">version<a class="anchor" aria-label="anchor" href="#arg-version"></a></dt>
 <dd><p>Version scolaire facultative.</p></dd>
 
+
+<dt id="arg-detail">detail<a class="anchor" aria-label="anchor" href="#arg-detail"></a></dt>
+<dd><p>Niveau de lecture : `"themes"` pour les grands themes,
+`"capacites"` pour les capacites attendues, ou `"complet"` pour ajouter
+leur description detaillee.</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>Un data.frame avec programme, theme et capacite.</p>
+    <p>Un data.frame organise par theme. Le niveau de detail depend de
+  `detail`.</p>
     </div>
 
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

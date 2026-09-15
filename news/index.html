@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.35.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.36.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,18 @@
 
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.36.0" id="eduschool-0360">eduschool 0.36.0<a class="anchor" aria-label="anchor" href="#eduschool-0360"></a></h2>
+<div class="section level3">
+<h3 id="sous-le-capot-0-36-0">Sous le capot<a class="anchor" aria-label="anchor" href="#sous-le-capot-0-36-0"></a></h3>
+<ul><li>Refonte de la vignette <strong>Sous le capot</strong> pour expliquer plus clairement comment fonctionne eduschool : sources, représentations structurées, relations entre les données, traitements R, génération des exercices et restitutions.</li>
+<li>Les différents niveaux de contrôle sont explicités, ainsi que leurs limites. La cohérence des données, les tests et <code>R CMD check</code> permettent de contrôler certaines propriétés ; ils ne constituent pas une garantie générale de vérité ni de qualité pédagogique.</li>
+<li>La distinction entre une réalité, sa représentation dans eduschool et les fonctions permettant de l’interroger est désormais explicitée.</li>
+<li>Les notions de modèle, générateur et instance d’exercice sont distinguées afin de mieux expliquer comment eduschool fabrique ses exercices.</li>
+<li>Les formulations présentant le <code>seed</code> comme suffisant pour reproduire exactement une production étaient trop fortes. Elles ont été corrigées ou supprimées. Le <code>seed</code> participe à la reproductibilité d’une génération, mais ne suffit pas à lui seul à la garantir.</li>
+<li>Cette évolution affirme un principe du projet : <strong>eduschool est libre, gratuit et ouvert. Il tente d’être transparent.</strong> Cette transparence implique notamment d’expliquer non seulement ce qu’eduschool fait et comment il le fait, mais aussi les limites de ce qu’il peut garantir.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.35.0" id="eduschool-0350">eduschool 0.35.0<a class="anchor" aria-label="anchor" href="#eduschool-0350"></a></h2>
 <div class="section level3">
@@ -391,7 +403,7 @@
 <h3 id="rendu-graphique-et-pdf-des-examens-0-16-0">Rendu graphique et PDF des examens<a class="anchor" aria-label="anchor" href="#rendu-graphique-et-pdf-des-examens-0-16-0"></a></h3>
 <ul><li>ajout d un moteur de ressources vectorielles pour figures geometriques, schemas et premiers blocs Scratch ;</li>
 <li>ajout de <code><a href="../reference/produire_ressource_examen.html">produire_ressource_examen()</a></code> pour inspecter ou reutiliser une ressource independamment du sujet ;</li>
-<li>ajout de <code><a href="../reference/produire_examen.html">produire_examen()</a></code> et <code><a href="../reference/produire_corrige_examen.html">produire_corrige_examen()</a></code> pour assembler la partie redigee dans un PDF propre via R Markdown, Pandoc et LaTeX ;</li>
+<li>ajout de <code><a href="../reference/produire_examen.html">produire_examen()</a></code> et <code>produire_corrige_examen()</code> pour assembler la partie redigee dans un PDF propre via R Markdown, Pandoc et LaTeX ;</li>
 <li>sujet et corrige reposent sur le meme objet intermediaire afin de garantir leur coherence ;</li>
 <li>ajout de la vignette <code>Composer et produire un DNB de mathematiques</code> et mise a jour des vignettes de prise en main, exercices/revisions et architecture.</li>
 </ul></div>

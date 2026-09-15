@@ -137,8 +137,8 @@ knitr::kable(
 | horaires | enseignements | horaire_id | 247 | 10 |
 | offres_enseignements | enseignements | offre_id | 175 | 6 |
 | options | enseignements | option_id,niveau_id | 13 | 7 |
-| modeles | exercices | modele_id | 29 | 7 |
-| modeles_capacites | exercices | modele_id,capacite_id | 37 | 2 |
+| modeles | exercices | modele_id | 37 | 7 |
+| modeles_capacites | exercices | modele_id,capacite_id | 45 | 2 |
 | sources | metadata | source_id | 38 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 138 | 5 |
@@ -408,7 +408,7 @@ rediger_examen()
         produire_ressource_examen()
                   |
                   v
-        produire_examen() / produire_corrige_examen()
+        produire_examen()
 ```
 
 Les ressources intermédiaires sont produites en vectoriel lorsque le

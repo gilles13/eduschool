@@ -69,7 +69,8 @@ exercices(
 
 - seed:
 
-  Graine aleatoire pour rendre la generation reproductible.
+  Graine pseudo-aleatoire utilisee pour controler les tirages de la
+  generation.
 
 - afficher:
 

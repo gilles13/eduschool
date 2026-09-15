@@ -6,6 +6,8 @@
   : Ajouter les variations mensuelles et annuelles de l'IPC
 - [`annoter_source()`](https://gilles13.github.io/eduschool/reference/annoter_source.md)
   : Ajouter la source a un graphique ggplot2
+- [`auditer_modeles()`](https://gilles13.github.io/eduschool/reference/auditer_modeles.md)
+  : Auditer les modeles d'exercices
 - [`capacites()`](https://gilles13.github.io/eduschool/reference/capacites.md)
   : Capacités d'un programme
 - [`carte_concept_math()`](https://gilles13.github.io/eduschool/reference/carte_concept_math.md)
@@ -40,6 +42,8 @@
   : Couleur d'un cycle scolaire
 - [`couverture_documentation()`](https://gilles13.github.io/eduschool/reference/couverture_documentation.md)
   : Couverture de la documentation
+- [`couverture_programme()`](https://gilles13.github.io/eduschool/reference/couverture_programme.md)
+  : Observer la couverture pedagogique d'un programme
 - [`decrire_source()`](https://gilles13.github.io/eduschool/reference/decrire_source.md)
   : Decrire une source de donnees
 - [`diagramme_ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/diagramme_ensembles_nombres.md)
@@ -165,8 +169,6 @@
   : Produire la cheatsheet eduschool
 - [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
   : Produire le corrige d'une fiche HTML ou PDF
-- [`produire_corrige_examen()`](https://gilles13.github.io/eduschool/reference/produire_corrige_examen.md)
-  : Produire le corrige d'un examen redige
 - [`produire_corrige_exercices()`](https://gilles13.github.io/eduschool/reference/produire_corrige_exercices.md)
   : Produire un corrige d'exercices historique
 - [`produire_diagramme_html()`](https://gilles13.github.io/eduschool/reference/produire_diagramme_html.md)
@@ -176,7 +178,7 @@
 - [`produire_dnb()`](https://gilles13.github.io/eduschool/reference/produire_dnb.md)
   : Produire un DNB complet et ses corriges
 - [`produire_examen()`](https://gilles13.github.io/eduschool/reference/produire_examen.md)
-  : Produire un examen redige en PDF
+  : Produire un examen redige et son corrige
 - [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
   : Produire une fiche d'exercices HTML ou PDF
 - [`produire_fiche_exercices()`](https://gilles13.github.io/eduschool/reference/produire_fiche_exercices.md)
@@ -234,13 +236,15 @@
 - [`structure_examen()`](https://gilles13.github.io/eduschool/reference/structure_examen.md)
   : Structure d'un examen
 - [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
-  : Generer une table de multiplication
+  : Generer les tables de multiplication
 - [`tables_si()`](https://gilles13.github.io/eduschool/reference/tables_si.md)
   : Tables du mini-SI eduschool
 - [`theme_eduschool()`](https://gilles13.github.io/eduschool/reference/theme_eduschool.md)
   : Theme ggplot2 eduschool
 - [`themes_niveau()`](https://gilles13.github.io/eduschool/reference/themes_niveau.md)
   : Grands thèmes étudiés à un niveau
+- [`todolist()`](https://gilles13.github.io/eduschool/reference/todolist.md)
+  : TODO automatique d'un programme
 - [`types_exercices_math()`](https://gilles13.github.io/eduschool/reference/types_exercices_math.md)
   : Types d'exercices mathematiques
 - [`usages_ressources()`](https://gilles13.github.io/eduschool/reference/usages_ressources.md)

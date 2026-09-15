@@ -1,8 +1,8 @@
 # Composer un squelette d'examen
 
-Construit une composition reproductible a partir du profil de l'examen.
-Le resultat ne contient pas encore les enonces : il decrit les questions
-ou exercices a rediger, leurs concepts, supports et points cibles.
+Construit une composition parametree a partir du profil de l'examen. Le
+resultat ne contient pas encore les enonces : il decrit les questions ou
+exercices a rediger, leurs concepts, supports et points cibles.
 
 ## Usage
 
@@ -22,7 +22,8 @@ composer_examen(code, session, seed = NULL)
 
 - seed:
 
-  Graine aleatoire pour reproduire la composition.
+  Graine pseudo-aleatoire utilisee pour controler les tirages de
+  composition.
 
 ## Value
 

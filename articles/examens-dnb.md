@@ -1,6 +1,6 @@
 # Générer une épreuve de mathématiques du DNB
 
-`eduschool` peut produire des variantes reproductibles d’une épreuve de
+`eduschool` peut produire des variantes paramétrées d’une épreuve de
 mathématiques du DNB à partir d’une banque de gabarits. Le principe
 n’est pas de stocker des sujets complets, mais de séparer les **règles
 de l’épreuve**, les **familles d’exercices**, les **paramètres tirés**,
@@ -280,12 +280,8 @@ partie2 = rediger_examen(sujet, partie = 2)
 
 produire_examen(
     partie2,
-    fichier = "dnb-2026-partie2.pdf"
-)
-
-produire_corrige_examen(
-    partie2,
-    fichier = "dnb-2026-partie2-corrige.pdf"
+    fichier = "dnb-2026-partie2",
+    format = "auto"
 )
 ```
 
@@ -297,9 +293,10 @@ corrigé plus explicite peut être demandé :
 
 ``` r
 
-produire_corrige_examen(
+produire_examen(
     partie2,
-    fichier = "dnb-2026-partie2-corrige-detaille.pdf",
+    fichier = "dnb-2026-partie2",
+    format = "auto",
     detaille = TRUE
 )
 ```
@@ -333,9 +330,11 @@ produire_dnb(
 )
 ```
 
-Le `seed` est l’identifiant pratique d’une variante. En le conservant,
-on peut reconstruire la même composition et les mêmes paramètres de
-génération.
+Le `seed` fixe l’état initial du générateur pseudo-aléatoire. Dans un
+même contexte de génération, il permet de retrouver les mêmes choix
+pseudo-aléatoires. Il ne constitue cependant pas, à lui seul, un
+identifiant permanent de la variante : le code, les données, les
+modèles, leur ordre et d’autres paramètres peuvent aussi intervenir.
 
 ## Enrichir progressivement la banque
 
@@ -420,16 +419,19 @@ generer_exercice_compose(
 )
 ```
 
-Sans `contexte_id`, le moteur tire un contexte compatible. Le `seed`
-fixe a la fois ce choix et les parametres numeriques : le sujet reste
-donc reproductible. Cette separation permet d’augmenter progressivement
-le nombre de situations rencontrees par l’eleve sans multiplier les
-moteurs R ni recopier des exercices entiers. Le meme principe s’applique
-aux huit familles : une famille de tarifs porte par exemple une unite
-d’usage (*heure*, *seance*, *livraison*), une famille de lots distingue
-l’objet (*jeton*, *ticket*, *badge*) du contenant (*sachet*, *carnet*,
-*lot*), et une famille d’evolution de prix porte simplement le bien ou
-service concerne.
+Sans `contexte_id`, le moteur tire un contexte compatible. Dans un meme
+contexte de generation, le `seed` permet de retrouver ce choix
+pseudo-aleatoire et les parametres numeriques tires. Cette propriete ne
+doit pas etre interpretee comme une garantie de reproduction
+independante de la version, du code, des donnees ou des autres
+parametres de generation. Cette separation permet d’augmenter
+progressivement le nombre de situations rencontrees par l’eleve sans
+multiplier les moteurs R ni recopier des exercices entiers. Le meme
+principe s’applique aux huit familles : une famille de tarifs porte par
+exemple une unite d’usage (*heure*, *seance*, *livraison*), une famille
+de lots distingue l’objet (*jeton*, *ticket*, *badge*) du contenant
+(*sachet*, *carnet*, *lot*), et une famille d’evolution de prix porte
+simplement le bien ou service concerne.
 
 Ainsi, la diversification reste fondee sur des donnees tres courtes :
 

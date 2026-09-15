@@ -8,7 +8,12 @@ techniques.
 ## Usage
 
 ``` r
-programme(niveau, discipline = "MAT", version = NULL)
+programme(
+  niveau,
+  discipline = "MAT",
+  version = NULL,
+  detail = c("capacites", "themes", "complet")
+)
 ```
 
 ## Arguments
@@ -25,6 +30,13 @@ programme(niveau, discipline = "MAT", version = NULL)
 
   Version scolaire facultative.
 
+- detail:
+
+  Niveau de lecture : \`"themes"\` pour les grands themes,
+  \`"capacites"\` pour les capacites attendues, ou \`"complet"\` pour
+  ajouter leur description detaillee.
+
 ## Value
 
-Un data.frame avec programme, theme et capacite.
+Un data.frame organise par theme. Le niveau de detail depend de
+\`detail\`.

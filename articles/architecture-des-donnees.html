@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Architecture des données • eduschool</title>
+<title>Sous le capot • eduschool</title>
 <!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Architecture des données">
+<meta property="og:title" content="Sous le capot">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.35.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.36.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.png" class="logo" alt=""><h1>Architecture des données</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Sous le capot</h1>
             
       
 
@@ -70,73 +70,298 @@
 
     
     
-<div class="float">
-<img src="../reference/figures/architecture_si.svg" alt="Architecture générale du mini-SI eduschool"><div class="figcaption">Architecture générale du mini-SI eduschool</div>
-</div>
-<p><code>eduschool</code> est volontairement un petit système
-d’information relationnel, pas une base monolithique. Les ressources
-distribuées sont conservées sous <code>inst/</code> et retrouvées avec
-<code><a href="../reference/eduschool_path.html">eduschool_path()</a></code>.</p>
 <div class="section level2">
-<h2 id="couches-principales">Couches principales<a class="anchor" aria-label="anchor" href="#couches-principales"></a>
+<h2 id="soulevons-le-capot">Soulevons le capot<a class="anchor" aria-label="anchor" href="#soulevons-le-capot"></a>
 </h2>
-<p>Le flux logique est : programme officiel → capacité → notion →
-prérequis → rappel → modèle d’exercice → exercice → document. Pour les
-examens, une couche supplémentaire relie profils d’épreuve, gabarits
-paramétriques et ressources graphiques avant le rendu du sujet. Cette
-séparation permet notamment :</p>
+<p><code>eduschool</code> est libre, gratuit et ouvert. Il tente
+également d’être transparent. Cela suppose de ne pas seulement montrer
+ce qu’il permet de faire, mais d’expliquer d’où viennent ses
+informations, comment elles sont représentées, comment ses résultats
+sont construits, comment ils sont contrôlés et, surtout, quelles sont
+les limites de ces contrôles.</p>
+<p>Soulever le capot d’<code>eduschool</code> ne signifie donc pas tout
+démonter. Cela signifie regarder suffisamment sa mécanique pour
+comprendre ce qui se passe — et ne rien chercher à cacher dessous.</p>
+<div class="section level3">
+<h3 id="quest-ce-queduschool">1. Qu’est-ce qu’eduschool ?<a class="anchor" aria-label="anchor" href="#quest-ce-queduschool"></a>
+</h3>
+<p><code>eduschool</code> est un <strong>mini système d’information
+pédagogique construit sous la forme d’un package R</strong>.</p>
+<p>Il organise une représentation structurée d’informations concernant
+notamment les programmes scolaires, les niveaux, les disciplines, les
+capacités, les notions, les exercices et les examens. Ces informations
+sont conservées dans des fichiers simples, principalement des CSV, puis
+interrogées et transformées par des fonctions R.</p>
+<p>R est donc l’outil avec lequel le système est construit. Il n’est
+pas, à lui seul, la définition d’<code>eduschool</code>.</p>
+<p>Une chaîne résume assez bien son fonctionnement :</p>
+<pre class="text"><code>réalité → source → représentation structurée → traitement → restitution</code></pre>
+<p>Cette chaîne est importante parce qu’<code>eduschool</code>
+<strong>ne confond pas une chose avec sa représentation
+informatique</strong>.</p>
+<p>Un programme scolaire n’est pas un fichier CSV. Une notion
+mathématique n’est pas une ligne dans une table. Un exercice n’est pas
+son modèle de génération. Les données d’<code>eduschool</code> sont des
+représentations structurées, nécessairement partielles, de réalités qui
+existent en dehors du logiciel.</p>
+<blockquote>
+<p><strong>Toujours distinguer une chose, sa représentation dans
+eduschool et la fonction qui permet de l’interroger.</strong></p>
+</blockquote>
+</div>
+<div class="section level3">
+<h3 id="doù-viennent-les-informations">2. D’où viennent les informations ?<a class="anchor" aria-label="anchor" href="#do%C3%B9-viennent-les-informations"></a>
+</h3>
+<p>Une information scolaire n’entre pas dans <code>eduschool</code>
+simplement parce qu’elle semble plausible. Le projet conserve des
+informations de provenance dans ses métadonnées et dans plusieurs tables
+métier.</p>
+<p>Pour un programme scolaire, il faut ainsi distinguer au moins trois
+objets :</p>
 <ul>
-<li>de conserver les sources réglementaires distinctes des contenus
-pédagogiques ;</li>
-<li>de réutiliser une notion dans plusieurs programmes ;</li>
-<li>d’enrichir les rappels et les exercices sans recopier les programmes
-;</li>
-<li>de produire des vues synthétiques par niveau sans en faire une
-nouvelle source de vérité ;</li>
-<li>de versionner les examens par session tout en réutilisant les
-concepts et générateurs stables.</li>
+<li>le programme scolaire, qui est la réalité décrite ;</li>
+<li>le texte officiel ou le document institutionnel, qui constitue une
+source ;</li>
+<li>les lignes structurées conservées par <code>eduschool</code>, qui
+représentent une partie des informations retenues à partir de cette
+source.</li>
 </ul>
-</div>
-<div class="section level2">
-<h2 id="couche-examens">Couche examens<a class="anchor" aria-label="anchor" href="#couche-examens"></a>
-</h2>
-<p>Les données d’examen sont rangées sous <code>inst/examens/</code>.
-Elles séparent :</p>
-<ul>
-<li>les contraintes et parties d’une session ;</li>
-<li>les profils de composition eduschool ;</li>
-<li>les gabarits d’exercices et leurs paramètres ;</li>
-<li>les liens vers les concepts mathématiques ;</li>
-<li>les ressources graphiques, qui sont générées à la demande et ne sont
-pas stockées comme images fixes.</li>
-</ul>
-<p>Cette couche permet d’enrichir la banque avec de nouvelles annales
-sans dupliquer le référentiel mathématique.</p>
-</div>
-<div class="section level2">
-<h2 id="csv-dabord-duckdb-ensuite">CSV d’abord, DuckDB ensuite<a class="anchor" aria-label="anchor" href="#csv-dabord-duckdb-ensuite"></a>
-</h2>
-<p>Les consultations simples utilisent directement les CSV :</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/niveaux.html">niveaux</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/enseignements.html">enseignements</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/themes_niveau.html">themes_niveau</a></span><span class="op">(</span><span class="st">"2GT"</span><span class="op">)</span></span></code></pre></div>
-<p>DuckDB reste disponible pour les jointures et analyses relationnelles
-libres :</p>
+<p>Par conséquent, écrire :</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">con</span> <span class="op">=</span> <span class="fu"><a href="../reference/ouvrir_base.html">ouvrir_base</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbListTables.html" class="external-link">dbListTables</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span>
-<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbDisconnect.html" class="external-link">dbDisconnect</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span></code></pre></div>
-<p>Cette architecture garde les fichiers sources lisibles indépendamment
-de R et du moteur de base de données.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/programme.html">programme</a></span><span class="op">(</span><span class="st">"6E"</span>, <span class="st">"MAT"</span><span class="op">)</span></span></code></pre></div>
+<p>ne demande pas à <code>eduschool</code> de restituer « le programme
+officiel » au sens strict. La fonction construit une
+<strong>vue</strong> à partir des informations structurées
+qu’<code>eduschool</code> possède pour ce niveau et cette
+discipline.</p>
+<p>La provenance améliore la traçabilité. Elle ne prouve cependant ni
+que la source est exempte d’erreur, ni qu’elle a été interprétée ou
+transcrite correctement, ni que la représentation
+d’<code>eduschool</code> est exhaustive.</p>
 </div>
-<div class="section level2">
-<h2 id="pour-aller-plus-loin">Pour aller plus loin<a class="anchor" aria-label="anchor" href="#pour-aller-plus-loin"></a>
-</h2>
+<div class="section level3">
+<h3 id="pourquoi-des-csv">3. Pourquoi des CSV ?<a class="anchor" aria-label="anchor" href="#pourquoi-des-csv"></a>
+</h3>
+<p>Les ressources distribuées avec le package sont principalement
+conservées sous <code>inst/</code>. Le choix du CSV est volontaire : un
+fichier peut être lu avec un éditeur de texte, un tableur, R ou de
+nombreux autres outils sans imposer un moteur de base de données
+particulier.</p>
+<p>Un CSV contient des <strong>lignes</strong> et des
+<strong>colonnes</strong>. Dans le mini-SI, certaines colonnes jouent un
+rôle particulier :</p>
+<ul>
+<li>une <strong>clé primaire</strong> identifie une ligne de manière
+unique dans une table ;</li>
+<li>une <strong>clé étrangère</strong> contient un identifiant qui fait
+référence à une ligne définie dans une autre table ;</li>
+<li>une <strong>relation</strong> décrit ce lien entre les deux
+représentations.</li>
+</ul>
+<blockquote>
+<p><strong>Une clé étrangère ne fusionne pas deux tables. Elle indique
+comment une information d’une table fait référence à une information
+définie dans une autre.</strong></p>
+</blockquote>
+<p>Le contrat du mini-SI est lui-même décrit dans des CSV :
+<code>inst/metadata/tables.csv</code>, <code>colonnes.csv</code> et
+<code>relations.csv</code> décrivent les tables, leurs colonnes et leurs
+relations.</p>
+<p>Cette organisation permet de relier des informations sans les
+recopier partout. Elle ne transforme pas pour autant le CSV en réalité
+scolaire : le fichier reste un <strong>support de
+représentation</strong>.</p>
+</div>
+<div class="section level3">
+<h3 id="cohérence-nest-pas-vérité">4. Cohérence n’est pas vérité<a class="anchor" aria-label="anchor" href="#coh%C3%A9rence-nest-pas-v%C3%A9rit%C3%A9"></a>
+</h3>
+<p><code>eduschool</code> contrôle une partie de son mini-SI avec
+<code><a href="../reference/controle_integrite_si.html">controle_integrite_si()</a></code>. Les métadonnées servent notamment
+à vérifier la présence des colonnes attendues, l’unicité des clés
+primaires et l’absence de certaines clés étrangères orphelines. Des
+contrôles supplémentaires vérifient aussi certaines règles sémantiques
+ou métier explicitement programmées.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/resume_controles_si.html">resume_controles_si</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<p>Ces contrôles sont utiles, mais leur portée doit rester claire.</p>
+<p>Si une clé étrangère référence bien un identifiant existant,
+<code>eduschool</code> peut établir que <strong>la relation satisfait ce
+contrôle structurel</strong>. Il ne peut pas en déduire que
+l’information représentée est vraie dans le monde réel.</p>
+<p>De même, un contrôle métier ne vérifie que la règle qui a été
+formulée et implémentée. Une règle à laquelle personne n’a pensé n’est
+pas contrôlée par magie.</p>
+<blockquote>
+<p><strong>Une donnée cohérente peut être fausse. Une donnée sourcée
+peut être mal transcrite. Un contrôle qui passe ne prouve que ce qu’il
+contrôle.</strong></p>
+</blockquote>
+</div>
+<div class="section level3">
+<h3 id="quel-est-le-rôle-de-r">5. Quel est le rôle de R ?<a class="anchor" aria-label="anchor" href="#quel-est-le-r%C3%B4le-de-r"></a>
+</h3>
+<p>Les fonctions R lisent les représentations, appliquent les règles
+nécessaires, relient les informations et construisent des objets
+destinés à l’utilisateur.</p>
+<p>Pour les consultations simples, <code>eduschool</code> travaille
+directement à partir des CSV. DuckDB est disponible pour effectuer des
+requêtes et des jointures relationnelles plus libres, mais il n’est pas
+nécessaire au fonctionnement de l’interface métier courante.</p>
+<p>La chaîne peut donc être détaillée ainsi :</p>
+<pre class="text"><code>sources identifiées
+       ↓
+représentations dans les CSV
+       ↓
+relations et contrôles
+       ↓
+fonctions R
+       ↓
+vues et objets eduschool
+       ↓
+fiches / exercices / quiz / examens / HTML / PDF</code></pre>
+<p>Une fonction publique est ainsi une <strong>interface vers les
+informations et les règles du système</strong>, pas la réalité qu’elle
+décrit.</p>
+</div>
+<div class="section level3">
+<h3 id="comment-un-exercice-est-il-fabriqué">6. Comment un exercice est-il fabriqué ?<a class="anchor" aria-label="anchor" href="#comment-un-exercice-est-il-fabriqu%C3%A9"></a>
+</h3>
+<p>La génération d’exercices introduit une autre distinction essentielle
+: <strong>modèle, générateur et instance ne désignent pas la même
+chose</strong>.</p>
+<p>Un <strong>modèle</strong> décrit une famille d’exercices et peut
+être relié à une ou plusieurs capacités. Un <strong>générateur</strong>
+est le code R capable de fabriquer une variante de ce modèle. Une
+<strong>instance</strong> est l’exercice effectivement produit avec des
+valeurs particulières.</p>
+<pre class="text"><code>capacité → modèle → générateur R → paramètres → instance</code></pre>
+<p>Par exemple, remplacer les nombres d’une addition de fractions par
+d’autres nombres peut produire une nouvelle instance sans créer un
+nouveau modèle pédagogique.</p>
+<p>Cette distinction explique une limite importante : un générateur peut
+produire beaucoup d’instances techniquement différentes tout en restant
+pédagogiquement répétitif.</p>
+<blockquote>
+<p><strong>Correction technique et qualité pédagogique sont deux
+propriétés différentes.</strong></p>
+</blockquote>
+<p>Pour les quiz, une étape supplémentaire peut intervenir : un ensemble
+d’instances est d’abord généré, puis le quiz peut sélectionner les
+questions à présenter. L’aléatoire n’intervient donc pas nécessairement
+à un seul endroit.</p>
+</div>
+<div class="section level3">
+<h3 id="à-quoi-sert-le-seed">7. À quoi sert le seed ?<a class="anchor" aria-label="anchor" href="#%C3%A0-quoi-sert-le-seed"></a>
+</h3>
+<p>Un <code>seed</code>, ou graine pseudo-aléatoire, fixe l’état initial
+utilisé par le générateur pseudo-aléatoire de R. Dans un <strong>même
+contexte de génération</strong>, il permet de retrouver les mêmes choix
+pseudo-aléatoires.</p>
+<p>Cette précision est essentielle.</p>
+<p>Le seed n’est pas, à lui seul, un identifiant universel et permanent
+d’un exercice. Si le code, les données, les modèles, leur ordre, les
+paramètres ou le mécanisme de sélection changent, le même seed peut
+conduire à un autre résultat. Dans un quiz, une sélection effectuée
+ensuite dans le navigateur peut en outre introduire une autre étape qui
+n’est pas décrite par le seul seed R.</p>
+<p>Il est donc plus prudent de considérer le seed comme <strong>une
+information de provenance de la génération</strong>, à interpréter avec
+son contexte, et non comme une garantie absolue de reproduction
+future.</p>
+<p>La version d’<code>eduschool</code> fait notamment partie des
+informations importantes pour situer ce contexte. D’autres paramètres
+peuvent également être nécessaires selon la production concernée.</p>
+</div>
+<div class="section level3">
+<h3 id="comment-eduschool-essaie-t-il-de-ne-pas-produire-quelque-chose-de-faux">8. Comment eduschool essaie-t-il de ne pas produire quelque chose de
+faux ?<a class="anchor" aria-label="anchor" href="#comment-eduschool-essaie-t-il-de-ne-pas-produire-quelque-chose-de-faux"></a>
+</h3>
+<p>Il n’existe pas un contrôle unique capable de certifier
+<code>eduschool</code>. Plusieurs couches réduisent des risques
+différents :</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>provenance</strong> : conserver l’origine déclarée des
+informations ;</li>
+<li>
+<strong>structure</strong> : vérifier tables, colonnes, identifiants
+et domaines ;</li>
+<li>
+<strong>intégrité relationnelle</strong> : vérifier certaines
+références entre tables ;</li>
+<li>
+<strong>contrôles métier</strong> : vérifier certaines règles
+explicitement programmées ;</li>
+<li>
+<strong>tests du code</strong> : vérifier des propriétés attendues
+dans des cas définis ;</li>
+<li>
+<strong>contrôle du package</strong> : utiliser notamment
+<code>R CMD check</code> pour les problèmes qu’il est conçu pour
+détecter ;</li>
+<li>
+<strong>inspection humaine</strong> : regarder les contenus et les
+productions, notamment leur pertinence pédagogique.</li>
+</ol>
+<p>Ces couches sont complémentaires. Aucune ne signifie « tout est vrai
+».</p>
+<p>Un test qui passe montre que la propriété explicitement testée est
+satisfaite dans les conditions du test. Il ne démontre pas l’absence de
+toutes les erreurs possibles.</p>
+<p>De la même manière, un <code>R CMD check</code> sans erreur, warning
+ni note signifie que cet outil n’a détecté aucun problème parmi ceux
+qu’il recherche dans ces conditions. Le fameux <strong>0 / 0 /
+0</strong> est une exigence de qualité du projet, pas un certificat de
+vérité mathématique ou pédagogique.</p>
+</div>
+<div class="section level3">
+<h3 id="ce-queduschool-ne-sait-pas-garantir">9. Ce qu’eduschool ne sait pas garantir<a class="anchor" aria-label="anchor" href="#ce-queduschool-ne-sait-pas-garantir"></a>
+</h3>
+<p><code>eduschool</code> tente d’être transparent précisément parce
+qu’il doit aussi exposer ses limites.</p>
+<p>Il ne peut notamment pas garantir :</p>
+<ul>
+<li>que sa représentation d’un programme est exhaustive ;</li>
+<li>qu’une source ou sa transcription ne contient aucune erreur ;</li>
+<li>que toutes les règles pertinentes ont été transformées en contrôles
+;</li>
+<li>que des relations techniquement cohérentes représentent
+nécessairement une réalité correcte ;</li>
+<li>que des tests réussis couvrent tous les cas possibles ;</li>
+<li>qu’un exercice mathématiquement correct est pédagogiquement
+intéressant ;</li>
+<li>qu’un seed, isolé de son contexte de génération, suffira toujours à
+reproduire exactement une production future.</li>
+</ul>
+<p>Exposer ces limites n’affaiblit pas les contrôles. Cela indique
+<strong>ce qu’ils permettent réellement d’affirmer</strong>.</p>
+<blockquote>
+<p><strong>Être transparent sur le fonctionnement d’eduschool, c’est
+aussi être transparent sur ce qu’eduschool ne peut pas
+garantir.</strong></p>
+</blockquote>
+</div>
+<div class="section level3">
+<h3 id="où-regarder-ensuite">10. Où regarder ensuite ?<a class="anchor" aria-label="anchor" href="#o%C3%B9-regarder-ensuite"></a>
+</h3>
+<p>Cette vignette est volontairement une porte d’entrée. Elle montre les
+grandes pièces du moteur sans chercher à documenter chaque fonction
+auxiliaire.</p>
 <p>La vignette <strong>Rentrer en profondeur dans eduschool</strong>
-décrit le contrat de données, les clés primaires et étrangères, les
-contrôles d’intégrité et la génération dynamique des diagrammes
-relationnels.</p>
+détaille le contrat de données, les clés, les relations et les contrôles
+du mini-SI. <strong>Données réelles et provenance</strong> approfondit
+la question des sources. Les fonctions publiques et leurs références
+permettent ensuite d’examiner précisément les traitements réalisés par
+le package.</p>
+<p>Une bonne manière de continuer consiste à suivre une information de
+bout en bout : partir de sa source, retrouver sa représentation,
+observer les relations qui la relient aux autres tables, regarder la
+fonction R qui l’interroge, puis examiner la restitution obtenue et les
+contrôles qui s’appliquent à chaque étape.</p>
+<p>Nous n’essayons pas de rendre <code>eduschool</code> simple en
+cachant sa mécanique. Nous essayons de rendre sa mécanique
+compréhensible.</p>
+</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

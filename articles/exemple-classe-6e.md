@@ -154,10 +154,10 @@ generer_fiche(
 #> Calculer et simplifier : 1/6 + 1/6
 #> 
 #> Exercice 2
-#> Calculer et simplifier : 7/12 + 11/12
+#> Calculer et simplifier : 11/12 - 8/12
 #> 
 #> Exercice 3
-#> Calculer et simplifier : 3/6 + 1/6
+#> Quelle fraction manque ?  ? + 1/10 = 5/10
 ```
 
 Pour obtenir directement une fiche imprimable, on peut envoyer la même

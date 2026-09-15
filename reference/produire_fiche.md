@@ -21,6 +21,7 @@ produire_fiche(
   instructions =
     "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
   afficher_metadonnees = FALSE,
+  afficher_description = FALSE,
   ouvrir = TRUE
 )
 ```
@@ -58,6 +59,11 @@ produire_fiche(
 - afficher_metadonnees:
 
   Afficher les identifiants techniques des exercices.
+
+- afficher_description:
+
+  Pour une fiche de notions, afficher aussi la description documentee de
+  chaque notion.
 
 - ouvrir:
 
