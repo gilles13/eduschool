@@ -42,7 +42,7 @@ selectionner_modeles = function(niveau_id = NULL, capacite_id = NULL) {
 #' @param niveau_id Identifiant du niveau scolaire.
 #' @param capacite_id Identifiant de capacite facultatif.
 #' @param difficulte Niveau de difficulte.
-#' @param seed Graine aleatoire pour rendre la generation reproductible.
+#' @param seed Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.
 #' @param afficher Afficher directement l'enonce genere.
 #' @usage
 #' generer_exercice(
@@ -75,6 +75,14 @@ generer_exercice = function(
     LITT_REDUC_001 = generer_reduction_litterale,
     LITT_DISTR_001 = generer_distributivite,
     FRAC_ADD_001 = generer_addition_fractions,
+    FRAC_QUOT_001 = generer_fraction_quotient,
+    FRAC_DROITE_001 = generer_fraction_droite,
+    FRAC_EQUIV_001 = generer_fraction_equivalente,
+    FRAC_COMP_001 = generer_fraction_comparer,
+    FRAC_ENCADR_001 = generer_fraction_encadrer,
+    FRAC_SUB_001 = generer_soustraction_fractions,
+    FRAC_MANQ_001 = generer_fraction_terme_manquant,
+    FRAC_MULT_ENT_001 = generer_fraction_par_entier,
     PROP_001 = generer_proportion,
     PROP_RECON_001 = generer_proportion_reconnaitre,
     PROP_TABLE_001 = generer_proportion_tableau,

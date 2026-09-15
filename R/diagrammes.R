@@ -479,7 +479,7 @@ generer_documentation_visuelle = function(
     c("NIV", "CAP", "MOD", "GEN", "SEED", "FICHE", "RAP"),
     c(
       "Niveau", "Capacit\u00e9", "Mod\u00e8le\nd'exercice", "Moteur de\ng\u00e9n\u00e9ration",
-      "seed\nreproductible", "Fiche\nd'exercices", "Rapport HTML / PDF"
+      "seed\npseudo-aleatoire", "Fiche\nd'exercices", "Rapport HTML / PDF"
     ),
     c(40, 290, 540, 820, 820, 1110, 1390),
     c(150, 150, 150, 150, 330, 150, 150),

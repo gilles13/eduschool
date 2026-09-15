@@ -278,3 +278,297 @@ generer_pythagore = function(niveau_id = "4E", capacite_id = NA_character_, diff
     list(a = a, b = b, c = c, chercher_hypotenuse = chercher_hypotenuse), seed
   )
 }
+
+
+.qcm_fraction = function(propositions, feedback, intention, rappel) {
+  if (length(propositions) != 4L || length(unique(propositions)) != 4L) {
+    stop("Un QCM de fractions doit proposer quatre reponses distinctes.")
+  }
+  if (length(feedback) != 4L) {
+    stop("Un QCM de fractions doit proposer quatre feedbacks.")
+  }
+  ordre = sample(seq_len(4L))
+  list(
+    intention = intention,
+    notion = "Fractions",
+    rappel = rappel,
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = feedback[ordre]
+  )
+}
+
+.fraction_brute = function(num, den) paste0(num, "/", den)
+
+generer_fraction_quotient = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(2:10, 1L)
+  num = sample(seq_len(den - 1L), 1L)
+  cas = sample(c("fraction_vers_quotient", "quotient_vers_fraction"), 1L)
+
+  if (cas == "fraction_vers_quotient") {
+    enonce = sprintf("Quel quotient est exactement egal a %d/%d ?", num, den)
+    reponse = sprintf("%d / %d", num, den)
+    propositions = c(
+      reponse,
+      sprintf("%d / %d", den, num),
+      sprintf("%d + %d", num, den),
+      sprintf("%d x %d", num, den)
+    )
+  } else {
+    enonce = sprintf("Quelle fraction represente exactement le quotient %d / %d ?", num, den)
+    reponse = .fraction_brute(num, den)
+    propositions = c(
+      reponse,
+      .fraction_brute(den, num),
+      .fraction_brute(num + 1L, den),
+      .fraction_brute(num, den + 1L)
+    )
+  }
+
+  correction = sprintf("Par definition, %d/%d est le quotient exact de %d par %d.", num, den, num, den)
+  feedback = c(
+    correction,
+    "Cette proposition inverse le role du numerateur et du denominateur.",
+    "Cette proposition ne traduit pas le quotient demande.",
+    "Cette proposition ne traduit pas le quotient demande."
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "interpreter",
+    "La fraction a/b designe le quotient exact de a par b, avec b non nul."
+  )
+  creer_exercice(
+    "FRAC_QUOT_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(num = num, den = den, cas = cas), seed, qcm = qcm
+  )
+}
+
+generer_fraction_droite = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(c(2L, 3L, 4L, 5L, 6L, 8L), 1L)
+  candidats_k = (den + 1L):(3L * den - 1L)
+  candidats_k = candidats_k[vapply(candidats_k, function(k) pgcd(k, den) == 1L, logical(1))]
+  k = sample(candidats_k, 1L)
+  reponse = .fraction_brute(k, den)
+  enonce = sprintf(
+    "Sur une demi-droite, chaque unite est partagee en %d parts egales. Le point A est a la %de graduation apres 0. Quelle est son abscisse ?",
+    den, k
+  )
+  correction = sprintf("Une graduation vaut 1/%d. Apres %d graduations, A a pour abscisse %s.", den, k, reponse)
+  propositions = c(
+    reponse,
+    .fraction_brute(den, k),
+    .fraction_brute(k - 1L, den),
+    .fraction_brute(k, den + 1L)
+  )
+  feedback = c(
+    correction,
+    "Cette proposition inverse le nombre de graduations et le nombre de parts par unite.",
+    "Cette proposition compte une graduation de moins.",
+    "Cette proposition change le partage de l'unite."
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "placer",
+    "Si une unite est partagee en b parts egales, chaque graduation vaut 1/b."
+  )
+  creer_exercice(
+    "FRAC_DROITE_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(k = k, den = den), seed, qcm = qcm
+  )
+}
+
+generer_fraction_equivalente = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(3:9, 1L)
+  num = sample(seq_len(den - 1L), 1L)
+  facteur = sample(2:5, 1L)
+  reponse = .fraction_brute(num * facteur, den * facteur)
+  enonce = sprintf("Quelle fraction est egale a %d/%d ?", num, den)
+  propositions = c(
+    reponse,
+    .fraction_brute(num + facteur, den + facteur),
+    .fraction_brute(num * facteur, den),
+    .fraction_brute(num, den * facteur)
+  )
+  correction = sprintf(
+    "On multiplie le numerateur et le denominateur par %d : %d/%d = %s.",
+    facteur, num, den, reponse
+  )
+  feedback = c(
+    correction,
+    "Ajouter le meme nombre au numerateur et au denominateur ne conserve pas la fraction.",
+    "Multiplier seulement le numerateur change la valeur de la fraction.",
+    "Multiplier seulement le denominateur change la valeur de la fraction."
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "reconnaitre_equivalence",
+    "Multiplier le numerateur et le denominateur par un meme nombre non nul donne une fraction egale."
+  )
+  creer_exercice(
+    "FRAC_EQUIV_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(num = num, den = den, facteur = facteur), seed, qcm = qcm
+  )
+}
+
+generer_fraction_comparer = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  cas = sample(c("meme_denominateur", "meme_numerateur"), 1L)
+  if (cas == "meme_denominateur") {
+    den = sample(4:10, 1L)
+    nums = sample(seq_len(den - 1L), 2L)
+    a = nums[[1L]]; c = nums[[2L]]; b = den; d = den
+  } else {
+    num = sample(2:8, 1L)
+    dens = sample((num + 1L):(num + 7L), 2L)
+    a = num; c = num; b = dens[[1L]]; d = dens[[2L]]
+  }
+  signe = if (a * d < c * b) "<" else ">"
+  reponse = signe
+  enonce = sprintf("Quel signe complete correctement : %d/%d ... %d/%d ?", a, b, c, d)
+  correction = if (cas == "meme_denominateur") {
+    sprintf("Les denominateurs sont identiques : on compare %d et %d. Donc %d/%d %s %d/%d.", a, c, a, b, signe, c, d)
+  } else {
+    sprintf("Les numerateurs sont identiques : la fraction avec le plus petit denominateur est la plus grande. Donc %d/%d %s %d/%d.", a, b, signe, c, d)
+  }
+  propositions = c(reponse, if (signe == "<") ">" else "<", "=", "impossible a savoir")
+  feedback = c(
+    correction,
+    "Ce signe donne l'ordre inverse de celui des deux fractions.",
+    "Ces deux fractions ne sont pas egales.",
+    "Les informations donnees suffisent pour comparer ces deux fractions."
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "comparer",
+    "Avec un meme denominateur, on compare les numerateurs ; avec un meme numerateur, le plus petit denominateur donne la plus grande fraction."
+  )
+  creer_exercice(
+    "FRAC_COMP_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(a = a, b = b, c = c, d = d, cas = cas), seed, qcm = qcm
+  )
+}
+
+generer_fraction_encadrer = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(2:8, 1L)
+  entier = sample(1:4, 1L)
+  reste = sample(seq_len(den - 1L), 1L)
+  num = entier * den + reste
+  frac = .fraction_brute(num, den)
+  reponse = sprintf("%d < %s < %d", entier, frac, entier + 1L)
+  enonce = sprintf("Quel encadrement entre deux entiers consecutifs est correct pour %s ?", frac)
+  propositions = c(
+    reponse,
+    sprintf("%d < %s < %d", entier - 1L, frac, entier),
+    sprintf("%d < %s < %d", entier + 1L, frac, entier + 2L),
+    sprintf("%d < %s < %d", entier - 2L, frac, entier - 1L)
+  )
+  correction = sprintf("%d = %d x %d + %d, donc %s est compris entre %d et %d.", num, entier, den, reste, frac, entier, entier + 1L)
+  feedback = c(
+    correction,
+    "Cet intervalle est situe une unite trop bas.",
+    "Cet intervalle est situe une unite trop haut.",
+    "La fraction est superieure a 1."
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "encadrer",
+    "Pour encadrer a/b, on cherche entre quels multiples consecutifs de b se trouve a."
+  )
+  creer_exercice(
+    "FRAC_ENCADR_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(num = num, den = den, entier = entier, reste = reste), seed, qcm = qcm
+  )
+}
+
+generer_soustraction_fractions = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(c(3L, 4L, 5L, 6L, 8L, 10L, 12L), 1L)
+  nums = sort(sample(seq_len(den - 1L), 2L), decreasing = TRUE)
+  a = nums[[1L]]; c = nums[[2L]]
+  reponse = fmt_fraction(a - c, den)
+  enonce = sprintf("Calculer et simplifier : %d/%d - %d/%d", a, den, c, den)
+  correction = sprintf("Les denominateurs sont identiques : (%d - %d)/%d = %s.", a, c, den, reponse)
+  propositions = unique(c(
+    reponse,
+    fmt_fraction(a + c, den),
+    .fraction_brute(a - c, 2L * den),
+    .fraction_brute(a - c, max(1L, den - 1L)),
+    .fraction_brute(a, den - c)
+  ))
+  propositions = propositions[seq_len(4L)]
+  feedback = c(
+    correction,
+    sprintf("La difference vaut %s.", reponse),
+    sprintf("La difference vaut %s.", reponse),
+    sprintf("La difference vaut %s.", reponse)
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "soustraire",
+    "Avec le meme denominateur, on soustrait les numerateurs et on conserve le denominateur."
+  )
+  creer_exercice(
+    "FRAC_SUB_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(a = a, c = c, den = den), seed, qcm = qcm
+  )
+}
+
+generer_fraction_terme_manquant = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(c(4L, 5L, 6L, 8L, 10L, 12L), 1L)
+  cibles = seq.int(3L, den - 1L)
+  cible = cibles[[sample.int(length(cibles), 1L)]]
+  connu = sample(seq_len(cible - 1L), 1L)
+  manque = cible - connu
+  reponse = .fraction_brute(manque, den)
+  enonce = sprintf("Quelle fraction manque ?  ? + %d/%d = %d/%d", connu, den, cible, den)
+  correction = sprintf("Il faut completer %d jusqu'a %d : %d - %d = %d. La fraction manquante est %s.", connu, cible, cible, connu, manque, reponse)
+  nums_faux = unique(c(connu, cible + connu, max(1L, manque - 1L), manque + 1L, cible))
+  nums_faux = nums_faux[nums_faux != manque]
+  propositions = c(
+    reponse,
+    vapply(nums_faux[seq_len(3L)], function(x) .fraction_brute(x, den), character(1))
+  )
+  feedback = c(
+    correction,
+    "Cette proposition additionne au lieu de chercher ce qui manque.",
+    "Le denominateur reste le meme dans cette addition.",
+    "Cette proposition recopie la fraction deja connue."
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "completer",
+    "Avec le meme denominateur, chercher le terme manquant revient a completer les numerateurs."
+  )
+  creer_exercice(
+    "FRAC_MANQ_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(connu = connu, cible = cible, manque = manque, den = den), seed, qcm = qcm
+  )
+}
+
+generer_fraction_par_entier = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  den = sample(c(2L, 3L, 4L, 5L, 6L, 8L), 1L)
+  num = sample(seq_len(den - 1L), 1L)
+  entier = sample(2:8, 1L)
+  reponse = fmt_fraction(entier * num, den)
+  enonce = sprintf("Calculer et simplifier : %d x %d/%d", entier, num, den)
+  correction = sprintf("%d x %d/%d = (%d x %d)/%d = %s.", entier, num, den, entier, num, den, reponse)
+  propositions = c(
+    reponse,
+    fmt_fraction(entier * num + den, den),
+    .fraction_brute(entier * num, entier * den),
+    .fraction_brute(num, entier * den)
+  )
+  feedback = c(
+    correction,
+    sprintf("Le produit vaut %s.", reponse),
+    sprintf("Le produit vaut %s.", reponse),
+    sprintf("Le produit vaut %s.", reponse)
+  )
+  qcm = .qcm_fraction(
+    propositions, feedback, "multiplier",
+    "Multiplier a/b par un entier n revient a multiplier le numerateur par n."
+  )
+  creer_exercice(
+    "FRAC_MULT_ENT_001", niveau_id, capacite_id, difficulte, enonce,
+    reponse, correction, list(entier = entier, num = num, den = den), seed, qcm = qcm
+  )
+}

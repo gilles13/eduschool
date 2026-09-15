@@ -26,7 +26,7 @@ produire_rapport_exercices(
 
 \item{difficulte}{Niveau de difficulte demande.}
 
-\item{seed}{Graine aleatoire utilisee pour rendre la generation reproductible.}
+\item{seed}{Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.}
 
 \item{sortie_dir}{Repertoire dans lequel ecrire les fichiers produits.}
 

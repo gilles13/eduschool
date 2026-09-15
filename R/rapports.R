@@ -208,7 +208,7 @@ produire_corrige_exercices = function(
 #' @param capacite_id Identifiant d'une capacite a cibler, ou `NULL` pour un lot mixte.
 #' @param n Nombre d'exercices a generer.
 #' @param difficulte Niveau de difficulte demande.
-#' @param seed Graine aleatoire utilisee pour rendre la generation reproductible.
+#' @param seed Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.
 #' @param sortie_dir Repertoire dans lequel ecrire les fichiers produits.
 #' @param prefixe Prefixe des noms de fichiers. Si `NULL`, il est construit a
 #'   partir du niveau, de la capacite, de la difficulte et de la graine.
@@ -598,6 +598,8 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' @param sous_titre Sous-titre. Si `NULL`, il est deduit des exercices.
 #' @param instructions Consigne generale affichee avant les exercices.
 #' @param afficher_metadonnees Afficher les identifiants techniques des exercices.
+#' @param afficher_description Pour une fiche de notions, afficher aussi la
+#'   description documentee de chaque notion.
 #' @param ouvrir Ouvrir le document apres sa creation. `TRUE` par defaut pour
 #'   afficher immediatement la fiche a l'utilisateur.
 #' @return Invisiblement, le chemin absolu du fichier produit.
@@ -623,6 +625,7 @@ produire_fiche = function(
   sous_titre = NULL,
   instructions = "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
   afficher_metadonnees = FALSE,
+  afficher_description = FALSE,
   ouvrir = TRUE
 ) {
   if (.est_fiche_markdown(exercices)) {
@@ -634,9 +637,18 @@ produire_fiche = function(
     ))
   }
 
+  if (.est_fiche_programme(exercices)) {
+    return(.rendre_fiche_programme(
+      programme = exercices,
+      fichier = fichier,
+      format = format,
+      ouvrir = ouvrir
+    ))
+  }
+
   if (.est_fiche_notions(exercices)) {
     titre_notions = if (identical(titre, "Fiche d'exercices")) {
-      "Fiche de revision - notions"
+      "Rep\u00e8res essentiels des notions \u00e9tudi\u00e9es"
     } else {
       titre
     }
@@ -647,6 +659,7 @@ produire_fiche = function(
       format = format,
       titre = titre_notions,
       sous_titre = sous_titre,
+      afficher_description = afficher_description,
       ouvrir = ouvrir
     ))
   }
@@ -680,6 +693,113 @@ produire_fiche = function(
     sous_titre = sous_titre,
     instructions = instructions,
     afficher_metadonnees = afficher_metadonnees,
+    ouvrir = ouvrir
+  )
+}
+
+.est_fiche_programme = function(x) {
+  is.data.frame(x) &&
+    "niveau_id" %in% names(x) &&
+    "theme" %in% names(x) &&
+    !"notion_id" %in% names(x)
+}
+
+.detail_fiche_programme = function(x) {
+  detail = attr(x, "eduschool_detail", exact = TRUE)
+  if (!is.null(detail) && detail %in% c("themes", "capacites", "complet")) return(detail)
+  if ("description" %in% names(x) && "capacite" %in% names(x)) return("complet")
+  if ("capacite" %in% names(x)) return("capacites")
+  "themes"
+}
+
+.titre_fiche_programme = function(detail) {
+  switch(
+    detail,
+    "themes" = "Rep\u00e8res essentiels des th\u00e8mes \u00e9tudi\u00e9s",
+    "capacites" = "Rep\u00e8res essentiels des capacit\u00e9s attendues",
+    "complet" = "Rep\u00e8res d\u00e9taill\u00e9s des capacit\u00e9s attendues"
+  )
+}
+
+.libelle_discipline_fiche = function(x) {
+  discipline_id = attr(x, "eduschool_discipline", exact = TRUE)
+  if (is.null(discipline_id) || !length(discipline_id) || is.na(discipline_id[[1L]])) {
+    return("Math\u00e9matiques")
+  }
+
+  d = disciplines()
+  i = match(as.character(discipline_id[[1L]]), d$discipline_id)
+  if (is.na(i)) return(as.character(discipline_id[[1L]]))
+  d$libelle[[i]]
+}
+
+.contenu_fiche_programme = function(programme) {
+  detail = .detail_fiche_programme(programme)
+  themes = unique(programme$theme[!is.na(programme$theme) & nzchar(programme$theme)])
+
+  sections = vapply(themes, function(theme) {
+    y = programme[programme$theme == theme, , drop = FALSE]
+    lignes = paste0("## ", theme)
+
+    if (identical(detail, "themes")) return(lignes)
+
+    capacites = y$capacite
+    descriptions = if ("description" %in% names(y)) y$description else rep("", nrow(y))
+    items = vapply(seq_len(nrow(y)), function(i) {
+      capacite = as.character(capacites[[i]])
+      if (!identical(detail, "complet")) return(paste0("- **", capacite, "**"))
+
+      description = as.character(descriptions[[i]])
+      if (is.na(description) || !nzchar(trimws(description))) {
+        return(paste0("- **", capacite, "**"))
+      }
+      paste0("- **", capacite, "**  ", "\n  ", description)
+    }, character(1))
+
+    paste(c(lignes, "", items), collapse = "\n")
+  }, character(1))
+
+  paste(sections, collapse = "\n\n")
+}
+
+.rendre_fiche_programme = function(
+  programme,
+  fichier = NULL,
+  format = c("auto", "html", "pdf"),
+  ouvrir = TRUE
+) {
+  detail = .detail_fiche_programme(programme)
+  titre = .titre_fiche_programme(detail)
+  niveaux = unique(as.character(programme$niveau_id))
+  niveaux = niveaux[!is.na(niveaux) & nzchar(niveaux)]
+  niveau = if (length(niveaux)) paste(niveaux, collapse = ", ") else "Programme"
+  discipline = .libelle_discipline_fiche(programme)
+
+  if (is.null(fichier)) {
+    fichier = file.path("rapports", paste0("reperes-programme-", tolower(niveau)))
+  }
+
+  source = tempfile("eduschool-programme-", fileext = ".md")
+  on.exit(unlink(source, force = TRUE), add = TRUE)
+
+  writeLines(
+    c(
+      "---",
+      paste0("title: ", encodeString(titre, quote = "\"")),
+      paste0("niveau: ", encodeString(niveau, quote = "\"")),
+      paste0("notions: ", encodeString(discipline, quote = "\"")),
+      "---",
+      "",
+      .contenu_fiche_programme(programme)
+    ),
+    source,
+    useBytes = TRUE
+  )
+
+  .rendre_fiche_markdown(
+    source = source,
+    fichier = fichier,
+    format = format,
     ouvrir = ouvrir
   )
 }
@@ -764,7 +884,11 @@ produire_fiche = function(
   out
 }
 
-.contenu_fiche_notions = function(notions, format = c("html", "pdf")) {
+.contenu_fiche_notions = function(
+  notions,
+  format = c("html", "pdf"),
+  afficher_description = FALSE
+) {
   format = match.arg(format)
   x = .preparer_fiche_notions(notions)
   categories = unique(x$categorie)
@@ -794,8 +918,18 @@ produire_fiche = function(
           '<div style="border:', bordure, ';background:', fond, ';',
           'border-radius:6px;padding:.85em 1em;min-height:3.2em;',
           'display:flex;align-items:center;">',
+          '<div>',
           '<div style="font-weight:600;">',
           .echapper_html_tableau(y$libelle[[i]]),
+          "</div>",
+          if (isTRUE(afficher_description) && "description" %in% names(y) &&
+              !is.na(y$description[[i]]) && nzchar(trimws(y$description[[i]]))) {
+            paste0(
+              '<div style="font-size:.92em;margin-top:.35em;">',
+              .echapper_html_tableau(y$description[[i]]),
+              "</div>"
+            )
+          } else "",
           "</div>",
           "</div>"
         )
@@ -822,6 +956,14 @@ produire_fiche = function(
         "\\raggedright\\normalsize\\textbf{",
         .echapper_latex_tableau(y$libelle[[i]]),
         "}",
+        if (isTRUE(afficher_description) && "description" %in% names(y) &&
+            !is.na(y$description[[i]]) && nzchar(trimws(y$description[[i]]))) {
+          paste0(
+            "\\par\\smallskip{\\small ",
+            .echapper_latex_tableau(y$description[[i]]),
+            "}"
+          )
+        } else "",
         "\\end{minipage}"
       )
 
@@ -859,8 +1001,9 @@ produire_fiche = function(
   notions,
   fichier = NULL,
   format = c("auto", "html", "pdf"),
-  titre = "Fiche de revision - notions",
+  titre = "Rep\u00e8res essentiels des notions \u00e9tudi\u00e9es",
   sous_titre = NULL,
+  afficher_description = FALSE,
   ouvrir = TRUE
 ) {
   if (!requireNamespace("rmarkdown", quietly = TRUE)) {
@@ -870,7 +1013,11 @@ produire_fiche = function(
   format = .choisir_format_fiche(format)
   if (is.null(fichier)) fichier = file.path("rapports", "fiche-notions")
 
-  contenu = .contenu_fiche_notions(notions, format = format)
+  contenu = .contenu_fiche_notions(
+    notions,
+    format = format,
+    afficher_description = afficher_description
+  )
 
   if (!is.null(sous_titre) && nzchar(as.character(sous_titre))) {
     contenu = paste0("## ", as.character(sous_titre), "\n\n", contenu)
@@ -879,12 +1026,20 @@ produire_fiche = function(
   source = tempfile("eduschool-notions-", fileext = ".md")
   on.exit(unlink(source, force = TRUE), add = TRUE)
 
+  niveaux = if ("niveau_id" %in% names(notions)) {
+    unique(as.character(notions$niveau_id))
+  } else {
+    attr(notions, "eduschool_niveau", exact = TRUE)
+  }
+  niveaux = niveaux[!is.na(niveaux) & nzchar(niveaux)]
+  niveau = if (length(niveaux)) paste(niveaux, collapse = ", ") else "Notions"
+
   writeLines(
     c(
       "---",
       paste0("title: ", encodeString(titre, quote = "\"")),
-      "niveau: Revision",
-      "notions: Mathematiques",
+      paste0("niveau: ", encodeString(niveau, quote = "\"")),
+      "notions: Math\u00e9matiques",
       "---",
       "",
       contenu

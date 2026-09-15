@@ -3,7 +3,7 @@
 # ============================================================
 
 .fonctions_cheatsheet = c(
-  "parcours", "orientation", "programme", "notion",
+  "parcours", "orientation", "programme", "chercher_notions", "notion",
   "revision", "produire_revision", "exercices", "produire_fiche",
   "produire_quiz",
   "examens", "examen", "composer_examen", "charte_eduschool",
@@ -91,9 +91,9 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
       c('programme("6E")', 'programme("5E", "MAT")')
     ),
     .bloc_cheatsheet(
-      "Ouvrir une notion",
-      "Definition, notions autour, prerequis et portes vers la suite.",
-      c('notion("fractions")', 'notion("pythagore")')
+      "Retrouver puis ouvrir une notion",
+      "Chercher le libelle exact attendu par eduschool, puis explorer la notion.",
+      c('chercher_notions("fraction")', 'notion("fractions")')
     ),
     '</div>'
   )
@@ -110,7 +110,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     ),
     .bloc_cheatsheet(
       "Generer un exercice",
-      "Generer un exercice reproductible puis le rendre avec produire_fiche().",
+      "Generer un exercice avec une graine controlee puis le rendre avec produire_fiche().",
       c(
         'exercices(',
         '  "5E", "fractions", n = 1,',
@@ -150,7 +150,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     ),
     .bloc_cheatsheet(
       "Composer un squelette",
-      "Une composition reproductible respectant la structure modelisee de l'examen.",
+      "Une composition parametree respectant la structure modelisee de l'examen.",
       'composer_examen("DNB", 2026, seed = 2026)'
     ),
     .bloc_cheatsheet(

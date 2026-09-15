@@ -76,9 +76,33 @@ rappels_capacite = function(capacite_id) {
 #' @param discipline_id Discipline, `MAT` par défaut.
 #' @export
 chercher_notions = function(texte, discipline_id = "MAT") {
-  x = notions(discipline_id); motif = paste(texte, collapse = "|")
-  keep = grepl(motif, paste(x$libelle, x$description), ignore.case = TRUE)
-  x[keep, , drop = FALSE]
+  if (!length(texte) || anyNA(texte) || !all(nzchar(trimws(as.character(texte))))) {
+    stop("`texte` doit contenir au moins un fragment non vide.", call. = FALSE)
+  }
+
+  normaliser = function(z) {
+    vapply(as.character(z), function(valeur) {
+      valeur = iconv(valeur, from = "", to = "ASCII//TRANSLIT")
+      valeur = tolower(valeur)
+      valeur = gsub("[^a-z0-9]+", " ", valeur)
+      mots = strsplit(trimws(valeur), " +")[[1L]]
+      mots = sub("s$", "", mots)
+      paste(mots, collapse = " ")
+    }, character(1))
+  }
+
+  x = notions(discipline_id)
+  recherche = normaliser(paste(x$libelle, x$description))
+  motifs = normaliser(texte)
+  keep = Reduce(`|`, lapply(motifs, function(motif) {
+    mots = strsplit(motif, " +")[[1L]]
+    Reduce(`&`, lapply(mots, function(mot) grepl(mot, recherche, fixed = TRUE)))
+  }))
+
+  resultat = x[keep, c("notion_id", "libelle", "description"), drop = FALSE]
+  names(resultat)[names(resultat) == "libelle"] = "notion"
+  rownames(resultat) = NULL
+  resultat
 }
 
 #' Couverture de la documentation

@@ -59,7 +59,7 @@ exercices(
 
 \item{difficulte}{Niveau de difficulte.}
 
-\item{seed}{Graine aleatoire pour rendre la generation reproductible.}
+\item{seed}{Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.}
 
 \item{afficher}{Afficher directement l'enonce genere.}
 

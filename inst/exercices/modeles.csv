@@ -28,3 +28,11 @@ ENS_FRAC_SIMPL_001;"Ensembles - simplifier avant de classer";"ensembles_nombres"
 ENS_D_NEG_001;"Ensembles - classer un décimal négatif";"ensembles_nombres";"2GT";1;1;prototype
 ENS_R_IRR_001;"Ensembles - reconnaître un irrationnel";"ensembles_nombres";"2GT";1;1;prototype
 ENS_INCLUSION_001;"Ensembles - raisonner par inclusion";"ensembles_nombres";"2GT";1;1;prototype
+FRAC_QUOT_001;"Fraction comme quotient";"fraction_quotient";"6E";1;2;prototype
+FRAC_DROITE_001;"Fraction sur une demi-droite graduee";"fraction_droite";"6E";1;2;prototype
+FRAC_EQUIV_001;"Fractions equivalentes";"fraction_equivalente";"6E";1;2;prototype
+FRAC_COMP_001;"Comparer des fractions";"fraction_comparer";"6E";1;2;prototype
+FRAC_ENCADR_001;"Encadrer une fraction";"fraction_encadrer";"6E";1;2;prototype
+FRAC_SUB_001;"Soustraction de fractions";"soustraction_fractions";"6E";1;2;prototype
+FRAC_MANQ_001;"Fraction - terme manquant";"fraction_terme_manquant";"6E";1;2;prototype
+FRAC_MULT_ENT_001;"Fraction multipliee par un entier";"fraction_par_entier";"6E";1;2;prototype

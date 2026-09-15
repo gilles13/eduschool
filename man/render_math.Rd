@@ -23,7 +23,7 @@ render_math(
 
 \item{output_dir}{Repertoire dans lequel ecrire les fichiers.}
 
-\item{seed}{Graine aleatoire pour rendre la generation reproductible.}
+\item{seed}{Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.}
 
 \item{type}{Support a produire : `"complet"` produit tous les supports
 actuellement disponibles pour le concept ; `"fiche"`, `"exercices"`,

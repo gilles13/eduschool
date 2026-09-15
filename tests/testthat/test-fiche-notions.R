@@ -74,3 +74,59 @@ test_that("le rendu PDF des notions privilegie la notion au statut", {
   expect_match(contenu, "\\fbox{", fixed = TRUE)
   expect_match(contenu, "Fractions", fixed = TRUE)
 })
+
+test_that("les fiches de programme reprennent les trois niveaux de lecture", {
+  themes = programme("5E", "MAT", "2026_2027", detail = "themes")
+  capacites = programme("5E", "MAT", "2026_2027", detail = "capacites")
+  complet = programme("5E", "MAT", "2026_2027", detail = "complet")
+
+  expect_true(eduschool:::.est_fiche_programme(themes))
+  expect_identical(
+    eduschool:::.titre_fiche_programme("themes"),
+    "Rep\u00e8res essentiels des th\u00e8mes \u00e9tudi\u00e9s"
+  )
+  expect_identical(
+    eduschool:::.titre_fiche_programme("capacites"),
+    "Rep\u00e8res essentiels des capacit\u00e9s attendues"
+  )
+  expect_identical(
+    eduschool:::.titre_fiche_programme("complet"),
+    "Rep\u00e8res d\u00e9taill\u00e9s des capacit\u00e9s attendues"
+  )
+
+  contenu_themes = eduschool:::.contenu_fiche_programme(themes)
+  contenu_capacites = eduschool:::.contenu_fiche_programme(capacites)
+  contenu_complet = eduschool:::.contenu_fiche_programme(complet)
+
+  expect_match(contenu_themes, "## ", fixed = TRUE)
+  expect_false(grepl("- **", contenu_themes, fixed = TRUE))
+  expect_match(contenu_capacites, "- **", fixed = TRUE)
+  expect_match(contenu_complet, complet$description[[1L]], fixed = TRUE)
+})
+
+test_that("notions_niveau conserve le niveau pour son entete de fiche", {
+  x = notions_niveau("5E", discipline_id = "MAT")
+  expect_true("niveau_id" %in% names(x))
+  expect_true(all(x$niveau_id == "5E"))
+})
+
+test_that("une fiche de notions peut afficher la description documentee", {
+  x = data.frame(
+    notion_id = "N1",
+    libelle = "Fractions",
+    description = "Comprendre et manipuler une fraction.",
+    categorie = "Nombres",
+    statut = "a decouvrir",
+    stringsAsFactors = FALSE
+  )
+
+  sans = eduschool:::.contenu_fiche_notions(x, format = "html")
+  avec = eduschool:::.contenu_fiche_notions(
+    x,
+    format = "html",
+    afficher_description = TRUE
+  )
+
+  expect_false(grepl(x$description[[1L]], sans, fixed = TRUE))
+  expect_match(avec, x$description[[1L]], fixed = TRUE)
+})

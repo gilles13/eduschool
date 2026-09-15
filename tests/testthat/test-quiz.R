@@ -141,3 +141,44 @@ test_that("produire_quiz valide la taille des defis", {
     "entier strictement positif"
   )
 })
+
+
+test_that("les fractions 6e proposent dix gestes mathematiques distincts", {
+  x = exercices("6E", "fractions", n = 10, seed = 2026, humour_ratio = 0)
+  modeles = vapply(x, function(ex) ex$modele_id, character(1))
+  intentions = vapply(x, function(ex) ex$qcm$intention, character(1))
+
+  expect_length(unique(modeles), 10L)
+  expect_setequal(
+    modeles,
+    c(
+      "FRAC_ADD_001", "FRAC_QTE_001", "FRAC_QUOT_001", "FRAC_DROITE_001",
+      "FRAC_EQUIV_001", "FRAC_COMP_001", "FRAC_ENCADR_001", "FRAC_SUB_001",
+      "FRAC_MANQ_001", "FRAC_MULT_ENT_001"
+    )
+  )
+  expect_setequal(
+    intentions,
+    c(
+      "calculer", "appliquer", "interpreter", "placer", "reconnaitre_equivalence",
+      "comparer", "encadrer", "soustraire", "completer", "multiplier"
+    )
+  )
+})
+
+test_that("les nouveaux modeles de fractions gardent des QCM fermes", {
+  modeles = c(
+    "FRAC_QUOT_001", "FRAC_DROITE_001", "FRAC_EQUIV_001", "FRAC_COMP_001",
+    "FRAC_ENCADR_001", "FRAC_SUB_001", "FRAC_MANQ_001", "FRAC_MULT_ENT_001"
+  )
+
+  for (modele in modeles) {
+    for (seed in 1:40) {
+      ex = generer_exercice(modele, "6E", seed = seed)
+      expect_length(ex$qcm$propositions, 4L)
+      expect_length(unique(ex$qcm$propositions), 4L)
+      expect_length(ex$qcm$feedback, 4L)
+      expect_identical(ex$qcm$propositions[[ex$qcm$correcte]], ex$reponse)
+    }
+  }
+})

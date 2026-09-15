@@ -1002,7 +1002,7 @@ unname(couleurs[code])
 #'   `"MATC_FRACTION"` sont acceptes pour le prototype.
 #' @param n Nombre d'exercices.
 #' @param output_dir Repertoire dans lequel ecrire les fichiers.
-#' @param seed Graine aleatoire pour rendre la generation reproductible.
+#' @param seed Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.
 #' @param type Support a produire : `"complet"` produit tous les supports
 #'   actuellement disponibles pour le concept ; `"fiche"`, `"exercices"`,
 #'   `"corrige"` et `"plus_loin"` permettent de produire un seul document.

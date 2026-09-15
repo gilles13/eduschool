@@ -2,32 +2,33 @@
 % Please edit documentation in R/rendu_examens.R
 \name{produire_examen}
 \alias{produire_examen}
-\title{Produire un examen redige en PDF}
+\title{Produire un examen redige et son corrige}
 \usage{
 produire_examen(
   examen,
   fichier = NULL,
-  corrige = FALSE,
-  ouvrir = FALSE,
+  format = c("auto", "html", "pdf"),
+  ouvrir = c("examen", "les_deux", "aucun"),
   detaille = FALSE
 )
 }
 \arguments{
 \item{examen}{Objet produit par [rediger_examen()].}
 
-\item{fichier}{Chemin de sortie. Si `NULL`, un nom est construit automatiquement.}
+\item{fichier}{Chemin de base du sujet. Le corrige recoit le suffixe
+`"-corrige"`. Si `NULL`, les noms sont construits automatiquement.}
 
-\item{corrige}{Inclure les reponses et corrections.}
+\item{format}{`"auto"`, `"html"` ou `"pdf"`.}
 
-\item{ouvrir}{Ouvrir le PDF apres creation.}
+\item{ouvrir}{Document a ouvrir apres creation : `"examen"` par defaut,
+`"les_deux"` ou `"aucun"`.}
 
-\item{detaille}{Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.}
+\item{detaille}{Pour le corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.}
 }
 \value{
-Invisiblement, le chemin absolu du PDF produit.
+Invisiblement, un vecteur nomme contenant les chemins du sujet et du corrige.
 }
 \description{
-Assemble l'en-tete, les questions et les ressources vectorielles d'un objet
-produit par [rediger_examen()]. Le sujet et le corrige utilisent le meme objet
-intermediaire afin de garantir leur coherence.
+Produit, a partir du meme objet redige, le sujet et son corrige. Le format
+`"auto"` choisit le PDF lorsque LaTeX est disponible et HTML sinon.
 }

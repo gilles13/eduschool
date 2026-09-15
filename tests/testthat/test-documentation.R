@@ -34,3 +34,22 @@ test_that("le graphe de prerequis est coherent et sans cycle", {
 
   expect_false(any(vapply(unique(p$notion_id), a_un_cycle, logical(1))))
 })
+
+
+test_that("chercher_notions retourne un libelle directement reutilisable", {
+  x = chercher_notions("fractions")
+
+  expect_true(all(c("notion_id", "notion", "description") %in% names(x)))
+  expect_false("document" %in% names(x))
+  expect_false("discipline_id" %in% names(x))
+  expect_true("Fractions : sens et representations" %in% iconv(x$notion, to = "ASCII//TRANSLIT"))
+})
+
+test_that("chercher_notions tolere accents et ponctuation sans regex", {
+  x = chercher_notions("g\u00e9om\u00e9trie")
+  y = chercher_notions("geometrie")
+
+  expect_equal(x$notion_id, y$notion_id)
+  expect_true(nrow(chercher_notions("fraction quantite")) > 0L)
+  expect_error(chercher_notions(""), "fragment non vide", fixed = TRUE)
+})

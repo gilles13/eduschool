@@ -86,3 +86,21 @@ test_that("notion accepte les variantes deja comprises par eduschool", {
   x = notion("fractions")
   expect_identical(x$notion$concept_id[[1L]], "MATC_FRACTION")
 })
+
+test_that("programme propose trois niveaux de lecture explicites", {
+  themes = programme("5E", "MAT", "2026_2027", detail = "themes")
+  capacites = programme("5E", "MAT", "2026_2027")
+  complet = programme("5E", "MAT", "2026_2027", detail = "complet")
+
+  expect_true(nrow(themes) > 0L)
+  expect_true(all(c("niveau_id", "theme") %in% names(themes)))
+  expect_false("capacite" %in% names(themes))
+
+  expect_true(all(c("theme", "capacite") %in% names(capacites)))
+  expect_false("description" %in% names(capacites))
+
+  expect_true(all(c("theme", "capacite", "description") %in% names(complet)))
+  expect_identical(attr(themes, "eduschool_detail"), "themes")
+  expect_identical(attr(capacites, "eduschool_detail"), "capacites")
+  expect_identical(attr(complet, "eduschool_detail"), "complet")
+})

@@ -1,0 +1,112 @@
+---
+title: "Examen eduschool"
+output:
+  html_document:
+    self_contained: true
+params:
+  examen: NULL
+  ressources: NULL
+  corrige: false
+  detaille: false
+  logo: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, results = "asis")
+x = params$examen
+e = x$entete
+items = x$items
+ressources = params$ressources
+corrige = isTRUE(params$corrige)
+detaille = isTRUE(params$detaille)
+h = eduschool:::.echapper_html_tableau
+hr = eduschool:::.formater_reponse_examen_html
+redondante = eduschool:::.correction_examen_redondante
+```
+
+<style>
+body { max-width: 900px; margin: 0 auto; padding: 2rem; font-family: sans-serif; }
+.exam-header { text-align: center; margin-bottom: 1.2rem; }
+.exam-header img { max-width: 150px; }
+.exam-meta { border: 1px solid #777; padding: .8rem 1rem; margin: 1rem 0; }
+.exam-instructions { background: #f2f2f2; padding: .8rem 1rem; margin-bottom: 1.4rem; }
+.exam-item { break-inside: avoid; margin: 1.5rem 0; }
+.exam-item img { display: block; max-width: 72%; max-height: 340px; margin: 1rem auto; }
+.answer { margin-top: .5rem; }
+.correction { font-style: italic; }
+.points { float: right; font-size: .9em; }
+.footer { margin-top: 3rem; text-align: center; font-size: .85em; color: #666; }
+</style>
+
+```{r entete, results='asis'}
+cat('<div class="exam-header">\n')
+if (nzchar(params$logo) && file.exists(params$logo)) {
+  uri = knitr::image_uri(params$logo)
+  cat('<img src="', uri, '" alt="eduschool">\n', sep = '')
+}
+cat('<h1>DIPL&Ocirc;ME NATIONAL DU BREVET</h1>\n')
+cat('<div>Session ', h(e$session), '</div>\n', sep = '')
+if (!is.na(e$seed) && nzchar(e$seed)) cat('<div>Seed : ', h(e$seed), '</div>\n', sep = '')
+cat('<h2>Math&eacute;matiques - s&eacute;rie g&eacute;n&eacute;rale</h2>\n')
+if (corrige) cat('<h2>', if (detaille) 'CORRIGE DETAILLE' else 'CORRIGE', '</h2>\n', sep = '')
+cat('</div>\n')
+cat('<div class="exam-meta"><strong>', h(e$libelle), '</strong><br>', sep = '')
+cat('Dur&eacute;e : ', h(e$duree_minutes), ' minutes &middot; ', h(e$points), ' points &middot; ', sep = '')
+cat(if (identical(e$calculatrice, 'NON')) 'Calculatrice interdite' else 'Calculatrice autoris&eacute;e')
+cat('</div>\n')
+cat('<div class="exam-instructions">', h(e$instructions), '</div>\n', sep = '')
+```
+
+```{r questions, results='asis'}
+if (length(x$exercices)) {
+  for (id in names(x$exercices)) {
+    ex = x$exercices[[id]]
+    rid = ex$ressource_id
+    cat('<section class="exam-item">\n')
+    cat('<h3>Exercice ', h(ex$ordre), sep = '')
+    if (nzchar(ex$points_cibles)) cat('<span class="points">', h(ex$points_cibles), ' point(s)</span>', sep = '')
+    cat('</h3>\n<p>', h(ex$contexte), '</p>\n', sep = '')
+    if (!is.na(rid) && nzchar(rid) && rid %in% names(ressources) && file.exists(ressources[[rid]])) {
+      cat('<img src="', knitr::image_uri(ressources[[rid]]), '" alt="ressource">\n', sep = '')
+    }
+    for (j in seq_len(nrow(ex$questions))) {
+      q = ex$questions[j, , drop = FALSE]
+      cat('<p><strong>', h(q$ordre), '.</strong> ', h(q$enonce), sep = '')
+      if (nzchar(q$points)) cat(' <span class="points">[', h(q$points), ' pt]</span>', sep = '')
+      cat('</p>\n')
+      if (corrige) {
+        correction = q$correction
+        if (detaille && 'correction_detaillee' %in% names(q) && !is.na(q$correction_detaillee) && nzchar(q$correction_detaillee)) {
+          correction = q$correction_detaillee
+        }
+        cat('<p class="answer"><strong>R&eacute;ponse :</strong> ', hr(q$reponse), '</p>\n', sep = '')
+        if (!redondante(q$reponse, correction)) {
+          cat('<p class="correction">', h(correction), '</p>\n', sep = '')
+        }
+      }
+    }
+    cat('</section>\n')
+  }
+} else {
+  for (i in seq_len(nrow(items))) {
+    q = items[i, , drop = FALSE]
+    rid = q$ressource_id[[1]]
+    cat('<section class="exam-item">\n')
+    cat('<h3>Question ', h(q$ordre), sep = '')
+    if (nzchar(q$points_cibles)) cat('<span class="points">', h(q$points_cibles), ' point(s)</span>', sep = '')
+    cat('</h3>\n<p>', h(q$enonce), '</p>\n', sep = '')
+    if (!is.na(rid) && nzchar(rid) && rid %in% names(ressources) && file.exists(ressources[[rid]])) {
+      cat('<img src="', knitr::image_uri(ressources[[rid]]), '" alt="ressource">\n', sep = '')
+    }
+    if (corrige) {
+      cat('<p class="answer"><strong>R&eacute;ponse :</strong> ', hr(q$reponse), '</p>\n', sep = '')
+      if (!redondante(q$reponse, q$correction)) {
+        cat('<p class="correction">', h(q$correction), '</p>\n', sep = '')
+      }
+    }
+    cat('</section>\n')
+  }
+}
+```
+
+<div class="footer">Document d'entra&icirc;nement g&eacute;n&eacute;r&eacute; avec eduschool.</div>

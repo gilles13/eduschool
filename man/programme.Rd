@@ -4,7 +4,12 @@
 \alias{programme}
 \title{Consulter un programme scolaire}
 \usage{
-programme(niveau, discipline = "MAT", version = NULL)
+programme(
+  niveau,
+  discipline = "MAT",
+  version = NULL,
+  detail = c("capacites", "themes", "complet")
+)
 }
 \arguments{
 \item{niveau}{Niveau scolaire.}
@@ -12,9 +17,14 @@ programme(niveau, discipline = "MAT", version = NULL)
 \item{discipline}{Discipline, `"MAT"` par defaut.}
 
 \item{version}{Version scolaire facultative.}
+
+\item{detail}{Niveau de lecture : `"themes"` pour les grands themes,
+`"capacites"` pour les capacites attendues, ou `"complet"` pour ajouter
+leur description detaillee.}
 }
 \value{
-Un data.frame avec programme, theme et capacite.
+Un data.frame organise par theme. Le niveau de detail depend de
+  `detail`.
 }
 \description{
 `programme()` fournit une vue directement exploitable des capacites d'un

@@ -119,13 +119,13 @@ structure_examen = function(code, session) {
 
 #' Composer un squelette d'examen
 #'
-#' Construit une composition reproductible a partir du profil de l'examen. Le
+#' Construit une composition parametree a partir du profil de l'examen. Le
 #' resultat ne contient pas encore les enonces : il decrit les questions ou
 #' exercices a rediger, leurs concepts, supports et points cibles.
 #'
 #' @param code Code de l'examen.
 #' @param session Session de l'examen.
-#' @param seed Graine aleatoire pour reproduire la composition.
+#' @param seed Graine pseudo-aleatoire utilisee pour controler les tirages de composition.
 #' @return Un data.frame de composition.
 #' @export
 composer_examen = function(code, session, seed = NULL) {

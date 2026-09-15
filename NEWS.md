@@ -1,3 +1,14 @@
+# eduschool 0.36.0
+
+## Sous le capot
+
+- Refonte de la vignette **Sous le capot** pour expliquer plus clairement comment fonctionne eduschool : sources, représentations structurées, relations entre les données, traitements R, génération des exercices et restitutions.
+- Les différents niveaux de contrôle sont explicités, ainsi que leurs limites. La cohérence des données, les tests et `R CMD check` permettent de contrôler certaines propriétés ; ils ne constituent pas une garantie générale de vérité ni de qualité pédagogique.
+- La distinction entre une réalité, sa représentation dans eduschool et les fonctions permettant de l'interroger est désormais explicitée.
+- Les notions de modèle, générateur et instance d'exercice sont distinguées afin de mieux expliquer comment eduschool fabrique ses exercices.
+- Les formulations présentant le `seed` comme suffisant pour reproduire exactement une production étaient trop fortes. Elles ont été corrigées ou supprimées. Le `seed` participe à la reproductibilité d'une génération, mais ne suffit pas à lui seul à la garantir.
+- Cette évolution affirme un principe du projet : **eduschool est libre, gratuit et ouvert. Il tente d'être transparent.** Cette transparence implique notamment d'expliquer non seulement ce qu'eduschool fait et comment il le fait, mais aussi les limites de ce qu'il peut garantir.
+
 # eduschool 0.35.0
 
 ## Mathématiques : consolider le collège

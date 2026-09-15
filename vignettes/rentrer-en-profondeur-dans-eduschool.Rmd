@@ -266,7 +266,7 @@ rediger_examen()
         produire_ressource_examen()
                   |
                   v
-        produire_examen() / produire_corrige_examen()
+        produire_examen()
 ```
 
 Les ressources intermédiaires sont produites en vectoriel lorsque le format le

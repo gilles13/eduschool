@@ -80,29 +80,57 @@ orientation = function(niveau = NULL) {
 #' @param niveau Niveau scolaire.
 #' @param discipline Discipline, `"MAT"` par defaut.
 #' @param version Version scolaire facultative.
-#' @return Un data.frame avec programme, theme et capacite.
+#' @param detail Niveau de lecture : `"themes"` pour les grands themes,
+#'   `"capacites"` pour les capacites attendues, ou `"complet"` pour ajouter
+#'   leur description detaillee.
+#' @return Un data.frame organise par theme. Le niveau de detail depend de
+#'   `detail`.
 #' @export
-programme = function(niveau, discipline = "MAT", version = NULL) {
+programme = function(
+  niveau,
+  discipline = "MAT",
+  version = NULL,
+  detail = c("capacites", "themes", "complet")
+) {
+  detail = match.arg(detail)
+  discipline_id = .normaliser_matiere(discipline)
   x = capacites(
     niveau_id = niveau,
-    discipline_id = .normaliser_matiere(discipline),
+    discipline_id = discipline_id,
     version_id = version
   )
 
   if (!nrow(x)) return(x)
 
   items = .lire_csv("programmes", "programme_items.csv")
-  parents = items[, c("item_id", "libelle"), drop = FALSE]
-  names(parents) = c("parent_item_id", "theme")
+  parents = items[, c("item_id", "libelle", "ordre"), drop = FALSE]
+  names(parents) = c("parent_item_id", "theme", "ordre_theme")
   x = merge(x, parents, by = "parent_item_id", all.x = TRUE, sort = FALSE)
   x$capacite = x$libelle
 
-  garder = c(
-    "niveau_id", "version_id", "programme_id", "item_id",
-    "theme", "capacite", "description", "source_id"
-  )
-  garder = garder[garder %in% names(x)]
-  x = x[, garder, drop = FALSE]
+  ordre_capacite = suppressWarnings(as.numeric(x$ordre))
+  ordre_theme = suppressWarnings(as.numeric(x$ordre_theme))
+  x = x[order(ordre_theme, ordre_capacite, x$theme, x$capacite, na.last = TRUE), , drop = FALSE]
+
+  if (identical(detail, "themes")) {
+    garder = c("niveau_id", "version_id", "programme_id", "parent_item_id", "theme", "source_id")
+    garder = garder[garder %in% names(x)]
+    x = x[, garder, drop = FALSE]
+    x = x[!duplicated(x[c("programme_id", "parent_item_id")]), , drop = FALSE]
+  } else {
+    garder = c(
+      "niveau_id", "version_id", "programme_id", "item_id",
+      "parent_item_id", "theme", "capacite",
+      if (identical(detail, "complet")) "description",
+      "source_id"
+    )
+    garder = garder[garder %in% names(x)]
+    x = x[, garder, drop = FALSE]
+  }
+
+  attr(x, "eduschool_detail") = detail
+  attr(x, "eduschool_niveau") = niveau
+  attr(x, "eduschool_discipline") = discipline_id
   rownames(x) = NULL
   x
 }

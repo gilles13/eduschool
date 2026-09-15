@@ -359,15 +359,16 @@ produire_ressource_examen = function(ressource, fichier = NULL,
   invisible(fichier)
 }
 
-.produire_ressources_examen = function(examen, repertoire) {
+.produire_ressources_examen = function(examen, repertoire, format = c("pdf", "png")) {
+  format = match.arg(format)
   dir.create(repertoire, recursive = TRUE, showWarnings = FALSE)
   if (!length(examen$ressources)) return(character())
 
   sorties = character()
   for (id in names(examen$ressources)) {
-    nom = paste0(normaliser_nom_fichier(id), ".pdf")
+    nom = paste0(normaliser_nom_fichier(id), ".", format)
     f = file.path(repertoire, nom)
-    produire_ressource_examen(examen$ressources[[id]], f, format = "pdf")
+    produire_ressource_examen(examen$ressources[[id]], f, format = format)
     sorties[id] = normalizePath(f, winslash = "/", mustWork = TRUE)
   }
   sorties
@@ -390,49 +391,62 @@ produire_ressource_examen = function(ressource, fichier = NULL,
   )
 }
 
-#' Produire un examen redige en PDF
-#'
-#' Assemble l'en-tete, les questions et les ressources vectorielles d'un objet
-#' produit par [rediger_examen()]. Le sujet et le corrige utilisent le meme objet
-#' intermediaire afin de garantir leur coherence.
-#'
-#' @param examen Objet produit par [rediger_examen()].
-#' @param fichier Chemin de sortie. Si `NULL`, un nom est construit automatiquement.
-#' @param corrige Inclure les reponses et corrections.
-#' @param ouvrir Ouvrir le PDF apres creation.
-#' @param detaille Pour un corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.
-#' @return Invisiblement, le chemin absolu du PDF produit.
-#' @export
-produire_examen = function(examen, fichier = NULL, corrige = FALSE, ouvrir = FALSE, detaille = FALSE) {
-  if (!inherits(examen, "eduschool_examen_redige")) {
-    stop("examen doit etre produit par rediger_examen().", call. = FALSE)
-  }
-  if (!requireNamespace("rmarkdown", quietly = TRUE)) {
-    stop("Le package rmarkdown est necessaire.", call. = FALSE)
-  }
-  if (!rmarkdown::pandoc_available()) stop("Pandoc est necessaire pour produire le PDF.", call. = FALSE)
-  if (!nzchar(Sys.which("pdflatex"))) stop("pdflatex est necessaire pour produire le PDF.", call. = FALSE)
+.template_examen_html = function() {
+  f = system.file("templates", "examen_html.Rmd", package = "eduschool")
+  if (nzchar(f) && file.exists(f)) return(f)
+  f = file.path("inst", "templates", "examen_html.Rmd")
+  if (file.exists(f)) return(normalizePath(f, winslash = "/", mustWork = TRUE))
+  stop("Template HTML d examen introuvable.", call. = FALSE)
+}
 
-  if (is.null(fichier)) fichier = .nom_fichier_examen(examen, corrige = corrige)
-  fichier = sub("\\.pdf$", "", as.character(fichier), ignore.case = TRUE)
-  fichier = paste0(fichier, ".pdf")
-  dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)
-  fichier = normalizePath(fichier, winslash = "/", mustWork = FALSE)
+.chemins_examen = function(examen, fichier = NULL, format = c("html", "pdf")) {
+  format = match.arg(format)
+  extension = paste0(".", format)
+  if (is.null(fichier)) {
+    base = .nom_fichier_examen(examen, corrige = FALSE)
+  } else {
+    base = sub("\\.(html|pdf)$", "", as.character(fichier), ignore.case = TRUE)
+  }
+  if (grepl("_sujet$", base)) {
+    base_corrige = sub("_sujet$", "_corrige", base)
+  } else if (grepl("-sujet$", base)) {
+    base_corrige = sub("-sujet$", "-corrige", base)
+  } else {
+    base_corrige = paste0(base, "-corrige")
+  }
+  c(
+    examen = paste0(base, extension),
+    corrige = paste0(base_corrige, extension)
+  )
+}
 
+.rendre_examen = function(examen, fichier, format = c("html", "pdf"), corrige = FALSE, detaille = FALSE) {
+  format = match.arg(format)
   travail = tempfile("eduschool-examen-")
   dir.create(travail, recursive = TRUE, showWarnings = FALSE)
   on.exit(unlink(travail, recursive = TRUE, force = TRUE), add = TRUE)
 
-  entree = file.path(travail, "examen_pdf.Rmd")
-  file.copy(.template_examen_pdf(), entree, overwrite = TRUE)
-  ressources = .produire_ressources_examen(examen, file.path(travail, "ressources"))
+  template = if (identical(format, "pdf")) .template_examen_pdf() else .template_examen_html()
+  entree = file.path(travail, basename(template))
+  file.copy(template, entree, overwrite = TRUE)
+  format_ressource = if (identical(format, "pdf")) "pdf" else "png"
+  ressources = .produire_ressources_examen(
+    examen,
+    file.path(travail, "ressources"),
+    format = format_ressource
+  )
 
+  sortie = if (identical(format, "pdf")) {
+    rmarkdown::pdf_document(latex_engine = "pdflatex", keep_tex = FALSE)
+  } else {
+    rmarkdown::html_document(self_contained = TRUE)
+  }
+
+  dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)
+  fichier = normalizePath(fichier, winslash = "/", mustWork = FALSE)
   rendu = rmarkdown::render(
     input = entree,
-    output_format = rmarkdown::pdf_document(
-      latex_engine = "pdflatex",
-      keep_tex = FALSE
-    ),
+    output_format = sortie,
     output_file = basename(fichier),
     output_dir = dirname(fichier),
     params = list(
@@ -445,49 +459,118 @@ produire_examen = function(examen, fichier = NULL, corrige = FALSE, ouvrir = FAL
     envir = new.env(parent = globalenv()),
     quiet = TRUE
   )
-
-  rendu = normalizePath(rendu, winslash = "/", mustWork = TRUE)
-  if (isTRUE(ouvrir)) utils::browseURL(rendu)
-  invisible(rendu)
+  normalizePath(rendu, winslash = "/", mustWork = TRUE)
 }
 
-#' Produire le corrige d'un examen redige
+.formater_reponse_examen_html = function(x) {
+  x = .echapper_html_tableau(x)
+  gsub("\\^(-?[0-9]+)", "<sup>\\1</sup>", x, perl = TRUE)
+}
+
+.formater_reponse_examen_tex = function(x) {
+  x = echapper_tex(x)
+  gsub("\\\\textasciicircum\\{\\}(-?[0-9]+)", "\\\\textsuperscript{\\1}", x, perl = TRUE)
+}
+
+.correction_examen_redondante = function(reponse, correction) {
+  if (length(correction) == 0L || is.na(correction) || !nzchar(trimws(correction))) return(FALSE)
+  attendu = paste0("Reponse attendue : ", reponse, ".")
+  identical(trimws(correction), attendu)
+}
+
+#' Produire un examen redige et son corrige
 #'
-#' @inheritParams produire_examen
-#' @return Invisiblement, le chemin absolu du PDF produit.
+#' Produit, a partir du meme objet redige, le sujet et son corrige. Le format
+#' `"auto"` choisit le PDF lorsque LaTeX est disponible et HTML sinon.
+#'
+#' @param examen Objet produit par [rediger_examen()].
+#' @param fichier Chemin de base du sujet. Le corrige recoit le suffixe
+#'   `"-corrige"`. Si `NULL`, les noms sont construits automatiquement.
+#' @param format `"auto"`, `"html"` ou `"pdf"`.
+#' @param ouvrir Document a ouvrir apres creation : `"examen"` par defaut,
+#'   `"les_deux"` ou `"aucun"`.
+#' @param detaille Pour le corrige, afficher les etapes de raisonnement detaillees lorsqu elles sont disponibles.
+#' @return Invisiblement, un vecteur nomme contenant les chemins du sujet et du corrige.
 #' @export
-produire_corrige_examen = function(examen, fichier = NULL, ouvrir = FALSE, detaille = FALSE) {
-  produire_examen(examen, fichier = fichier, corrige = TRUE, ouvrir = ouvrir, detaille = detaille)
+produire_examen = function(
+  examen,
+  fichier = NULL,
+  format = c("auto", "html", "pdf"),
+  ouvrir = c("examen", "les_deux", "aucun"),
+  detaille = FALSE
+) {
+  if (!inherits(examen, "eduschool_examen_redige")) {
+    stop("examen doit etre produit par rediger_examen().", call. = FALSE)
+  }
+  if (!requireNamespace("rmarkdown", quietly = TRUE)) {
+    stop("Le package rmarkdown est necessaire.", call. = FALSE)
+  }
+  if (!rmarkdown::pandoc_available()) {
+    stop("Pandoc est necessaire pour produire l examen.", call. = FALSE)
+  }
+
+  format = .choisir_format_fiche(format)
+  ouvrir = match.arg(ouvrir)
+  chemins = .chemins_examen(examen, fichier = fichier, format = format)
+
+  chemins[["examen"]] = .rendre_examen(
+    examen, chemins[["examen"]], format = format, corrige = FALSE, detaille = FALSE
+  )
+  chemins[["corrige"]] = .rendre_examen(
+    examen, chemins[["corrige"]], format = format, corrige = TRUE, detaille = detaille
+  )
+
+  if (ouvrir %in% c("examen", "les_deux")) utils::browseURL(chemins[["examen"]])
+  if (identical(ouvrir, "les_deux")) utils::browseURL(chemins[["corrige"]])
+  invisible(chemins)
 }
 
 #' Produire un DNB complet et ses corriges
 #'
-#' Compose une variante reproductible du DNB 2026, redige les deux parties et
+#' Compose une variante parametree du DNB 2026, redige les deux parties et
 #' produit les sujets et leurs corriges. Les deux parties restent separees afin
 #' de respecter la logique de l epreuve, dont la partie 1 est ramassee avant la
 #' partie 2.
 #'
-#' @param seed Graine aleatoire permettant de reproduire exactement le sujet.
+#' @param seed Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.
 #' @param repertoire Repertoire de sortie.
 #' @param detaille Produire des corriges detailles avec etapes de raisonnement.
-#' @param ouvrir Ouvrir les PDF produits.
-#' @return Un vecteur nomme contenant les quatre chemins PDF.
+#' @param format `"auto"`, `"html"` ou `"pdf"`.
+#' @param ouvrir Document(s) a ouvrir : `"examen"`, `"les_deux"` ou `"aucun"`.
+#' @return Un vecteur nomme contenant les quatre chemins produits.
 #' @export
-produire_dnb = function(seed = NULL, repertoire = ".", detaille = FALSE, ouvrir = FALSE) {
+produire_dnb = function(
+  seed = NULL,
+  repertoire = ".",
+  detaille = FALSE,
+  format = c("auto", "html", "pdf"),
+  ouvrir = c("examen", "les_deux", "aucun")
+) {
   dir.create(repertoire, recursive = TRUE, showWarnings = FALSE)
   sujet = composer_examen("DNB", 2026, seed = seed)
   p1 = rediger_examen(sujet, partie = 1)
   p2 = rediger_examen(sujet, partie = 2)
-  suffixe = if (isTRUE(detaille)) "corrige-detaille" else "corrige"
-  fichiers = c(
-    partie1_sujet = file.path(repertoire, "dnb-2026-partie1-sujet.pdf"),
-    partie1_corrige = file.path(repertoire, paste0("dnb-2026-partie1-", suffixe, ".pdf")),
-    partie2_sujet = file.path(repertoire, "dnb-2026-partie2-sujet.pdf"),
-    partie2_corrige = file.path(repertoire, paste0("dnb-2026-partie2-", suffixe, ".pdf"))
+
+  format = match.arg(format)
+  ouvrir = match.arg(ouvrir)
+  r1 = produire_examen(
+    p1,
+    file.path(repertoire, "dnb-2026-partie1-sujet"),
+    format = format,
+    ouvrir = ouvrir,
+    detaille = detaille
   )
-  produire_examen(p1, fichiers[["partie1_sujet"]], ouvrir = ouvrir)
-  produire_corrige_examen(p1, fichiers[["partie1_corrige"]], ouvrir = ouvrir, detaille = detaille)
-  produire_examen(p2, fichiers[["partie2_sujet"]], ouvrir = ouvrir)
-  produire_corrige_examen(p2, fichiers[["partie2_corrige"]], ouvrir = ouvrir, detaille = detaille)
-  vapply(fichiers, normalizePath, character(1), winslash = "/", mustWork = TRUE)
+  r2 = produire_examen(
+    p2,
+    file.path(repertoire, "dnb-2026-partie2-sujet"),
+    format = format,
+    ouvrir = ouvrir,
+    detaille = detaille
+  )
+  c(
+    partie1_sujet = r1[["examen"]],
+    partie1_corrige = r1[["corrige"]],
+    partie2_sujet = r2[["examen"]],
+    partie2_corrige = r2[["corrige"]]
+  )
 }

@@ -25,22 +25,33 @@ test_that("le template PDF d examen est distribue avec le package", {
   expect_match(contenu, "Needspace")
 })
 
-test_that("un sujet et son corrige peuvent etre produits en PDF", {
+test_that("produire_examen produit le sujet et son corrige en PDF", {
   skip_if_not(requireNamespace("rmarkdown", quietly = TRUE))
   skip_if_not(rmarkdown::pandoc_available())
   skip_if_not(nzchar(Sys.which("pdflatex")))
 
   x = rediger_examen(composer_examen("DNB", 2026, seed = 12), partie = 1)
   sujet = tempfile(fileext = ".pdf")
-  corrige = tempfile(fileext = ".pdf")
+  fichiers = produire_examen(x, sujet, format = "pdf", ouvrir = "aucun")
 
-  produire_examen(x, sujet)
-  produire_corrige_examen(x, corrige)
+  expect_named(fichiers, c("examen", "corrige"))
+  expect_true(all(file.exists(fichiers)))
+  expect_gt(file.info(fichiers[["examen"]])$size, 1000)
+  expect_gt(file.info(fichiers[["corrige"]])$size, 1000)
+})
 
-  expect_true(file.exists(sujet))
-  expect_true(file.exists(corrige))
-  expect_gt(file.info(sujet)$size, 1000)
-  expect_gt(file.info(corrige)$size, 1000)
+test_that("produire_examen fonctionne en HTML sans LaTeX", {
+  skip_if_not(requireNamespace("rmarkdown", quietly = TRUE))
+  skip_if_not(rmarkdown::pandoc_available())
+
+  x = rediger_examen(composer_examen("DNB", 2026, seed = 13), partie = 1)
+  sujet = tempfile(fileext = ".html")
+  fichiers = produire_examen(x, sujet, format = "html", ouvrir = "aucun")
+
+  expect_named(fichiers, c("examen", "corrige"))
+  expect_true(all(file.exists(fichiers)))
+  expect_gt(file.info(fichiers[["examen"]])$size, 1000)
+  expect_gt(file.info(fichiers[["corrige"]])$size, 1000)
 })
 
 test_that("les ressources composees se rendent en PDF vectoriel", {
@@ -62,9 +73,9 @@ test_that("la partie 2 peut etre assemblee en PDF", {
   skip_if_not(nzchar(Sys.which("pdflatex")))
   x = rediger_examen(composer_examen("DNB", 2026, seed = 321), partie = 2)
   f = tempfile(fileext = ".pdf")
-  produire_examen(x, f)
-  expect_true(file.exists(f))
-  expect_true(file.info(f)$size > 1000)
+  fichiers = produire_examen(x, f, format = "pdf", ouvrir = "aucun")
+  expect_true(all(file.exists(fichiers)))
+  expect_true(file.info(fichiers[["examen"]])$size > 1000)
 })
 
 test_that("ggplot2 est une dependance directe du moteur graphique", {
@@ -81,4 +92,25 @@ test_that("le corrige detaille expose les etapes des exercices composes", {
 
 test_that("produire_dnb est disponible comme raccourci de production", {
   expect_true(is.function(produire_dnb))
+})
+
+test_that("le template HTML d examen est distribue avec le package", {
+  f = .template_examen_html()
+  expect_true(file.exists(f))
+  contenu = paste(readLines(f, warn = FALSE), collapse = "\n")
+  expect_match(contenu, "exam-header", fixed = TRUE)
+  expect_match(contenu, "params$corrige", fixed = TRUE)
+})
+
+
+test_that("les reponses d examen rendent les puissances simples", {
+  expect_identical(.formater_reponse_examen_html("84 cm^2"), "84 cm<sup>2</sup>")
+  expect_identical(.formater_reponse_examen_html("10^-3"), "10<sup>-3</sup>")
+  expect_identical(.formater_reponse_examen_tex("84 cm^2"), "84 cm\\textsuperscript{2}")
+  expect_identical(.formater_reponse_examen_tex("10^-3"), "10\\textsuperscript{-3}")
+})
+
+test_that("la correction par defaut identique a la reponse est reconnue", {
+  expect_true(.correction_examen_redondante("84 cm^2", "Reponse attendue : 84 cm^2."))
+  expect_false(.correction_examen_redondante("84 cm^2", "Aire = 12 x 7 = 84 cm^2."))
 })

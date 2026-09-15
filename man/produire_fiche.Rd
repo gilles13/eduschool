@@ -13,6 +13,7 @@ produire_fiche(
   instructions =
     "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
   afficher_metadonnees = FALSE,
+  afficher_description = FALSE,
   ouvrir = TRUE
 )
 }
@@ -34,6 +35,9 @@ construit automatiquement a partir du niveau et de la capacite.}
 \item{instructions}{Consigne generale affichee avant les exercices.}
 
 \item{afficher_metadonnees}{Afficher les identifiants techniques des exercices.}
+
+\item{afficher_description}{Pour une fiche de notions, afficher aussi la
+description documentee de chaque notion.}
 
 \item{ouvrir}{Ouvrir le document apres sa creation. `TRUE` par defaut pour
 afficher immediatement la fiche a l'utilisateur.}

@@ -40,3 +40,11 @@ test_that("la partie 2 est redigee comme une collection d exercices composes", {
   expect_true(all(x$items$statut_redaction == "REDIGE"))
   expect_equal(length(x$exercices), nrow(x$items))
 })
+
+
+test_that("rediger_examen conserve le seed de composition", {
+  sujet = composer_examen("DNB", 2026, seed = 123)
+  x = rediger_examen(sujet, partie = 1)
+
+  expect_identical(x$entete$seed, "123")
+})

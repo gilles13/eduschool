@@ -16,6 +16,7 @@ Un objet `eduschool_examen_redige`.
 }
 \description{
 Transforme un squelette produit par `composer_examen()` en objet intermediaire
-contenant les enonces, reponses, corrections et specifications de ressources
-graphiques. Cette fonction ne produit pas encore de document PDF.
+contenant a la fois les enonces, les reponses, les corrections et les
+specifications de ressources graphiques. Le meme objet sert ensuite a produire
+le sujet et son corrige avec [produire_examen()].
 }

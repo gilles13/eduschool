@@ -11,13 +11,13 @@ composer_examen(code, session, seed = NULL)
 
 \item{session}{Session de l'examen.}
 
-\item{seed}{Graine aleatoire pour reproduire la composition.}
+\item{seed}{Graine pseudo-aleatoire utilisee pour controler les tirages de composition.}
 }
 \value{
 Un data.frame de composition.
 }
 \description{
-Construit une composition reproductible a partir du profil de l'examen. Le
+Construit une composition parametree a partir du profil de l'examen. Le
 resultat ne contient pas encore les enonces : il decrit les questions ou
 exercices a rediger, leurs concepts, supports et points cibles.
 }
