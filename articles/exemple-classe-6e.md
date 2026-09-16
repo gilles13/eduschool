@@ -151,10 +151,10 @@ generer_fiche(
   afficher = TRUE
 )
 #> Exercice 1
-#> Calculer et simplifier : 1/6 + 1/6
+#> Lea affirme que 1/6 + 1/6 = 1/6 en additionnant numérateurs et dénominateurs. Que faut-il lui répondre ?
 #> 
 #> Exercice 2
-#> Calculer et simplifier : 11/12 - 8/12
+#> Quelle fraction se cache dans la boîte ?  11/12 - □ = 1/4
 #> 
 #> Exercice 3
 #> Quelle fraction manque ?  ? + 1/10 = 5/10

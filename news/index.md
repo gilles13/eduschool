@@ -1,5 +1,39 @@
 # Changelog
 
+## eduschool 0.37.0
+
+### Mathématiques : ouvrir de nouvelles portes
+
+- Complétion des identités remarquables en seconde : carré d’une somme,
+  carré d’une différence et différence de deux carrés sont désormais
+  représentés explicitement et reliés à la double distributivité.
+- Ajout d’une famille « Identités remarquables » réellement utilisée par
+  les exercices, avec un quiz expérimental qui fait travailler
+  reconnaissance, développement, factorisation, signes et passage entre
+  écritures équivalentes.
+- Enrichissement des fiches de raisonnement autour de l’appartenance, de
+  l’inclusion, de l’ensemble des parties et des premières portes vers
+  l’infini, sans créer de parcours obligatoire.
+
+### Quiz et qualité
+
+- Consolidation du moteur de quiz et de ses retours pédagogiques,
+  notamment pour les fractions : la représentation mathématique reste
+  distincte de sa valeur et les corrections privilégient l’information
+  utile.
+- Les tests de quiz portent sur le HTML effectivement produit plutôt que
+  sur l’emplacement des fichiers sources dans l’arbre de développement.
+- Le principe reste inchangé : tests, `R CMD check` et inspection
+  humaine se complètent ; le triple zéro ne dispense pas du quatrième
+  œil.
+
+### Page d’accueil
+
+- Nouveau visuel d’accueil, commun au README et au site pkgdown, autour
+  de l’idée que « les maths, ça se découvre aussi ensemble ».
+- Le visuel source est conservé dans `inst/figures/hero.png` et décliné
+  vers les emplacements déjà utilisés par le README et pkgdown.
+
 ## eduschool 0.36.0
 
 ### Sous le capot

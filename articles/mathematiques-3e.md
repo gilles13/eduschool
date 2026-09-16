@@ -159,6 +159,11 @@ Double distributivité→Différence de deux carrés
 Une écriture courte résume un développement que l’on peut retrouver en
 distribuant les produits.
 
+Différence de deux carrés→Identités remarquables
+
+La différence de deux carrés appartient à la famille des identités
+remarquables.
+
 Homothétie↔︎Triangles semblables
 
 Changer l’échelle sans changer les angles produit des figures de même

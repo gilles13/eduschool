@@ -1,7 +1,7 @@
 # edusch∞l Math
 
-![edusch∞l Math — plusieurs chemins, différents points de vue, mêmes
-découvertes](identite/hero-eduschool-math.png)
+![edusch∞l Math — Les maths, ça se découvre aussi
+ensemble](identite/hero-eduschool-math.png)
 
 ## μάθημα — *máthēma*
 
@@ -33,6 +33,32 @@ Celui-là, on peut même l’apprendre **par cœur**. ❤️
 > **eduschool est un projet en cours.** Il n’est pas fini. Le sera-t-il
 > un jour ? Bonne question ! 😉 Le savoir se construit dans le temps
 > long — pour ne pas dire : **INFINI**. ∞
+
+## AVERTISSEMENT
+
+**eduschool est un outil d’accompagnement. Il ne se substitue ni aux
+programmes ni aux préconisations de l’Éducation nationale.**
+
+Pour comprendre ce qui est attendu à l’école — et tenter de mieux
+comprendre les besoins de votre enfant — le meilleur point de départ
+reste la source : les textes officiels.
+
+[**Collège · Mathématiques · Cycle 4**  
+BO n° 10 du 5 mars 2026 · PDF officiel
+→](https://www.education.gouv.fr/sites/default/files/document/boenjs_10_ok_2.pdf-481076.pdf)
+[**Lycée · Mathématiques**  
+BO n° 14 du 2 avril 2026 · PDF officiel
+→](https://www.education.gouv.fr/sites/default/files/document/Bulletin%20officiel%20n%C2%B0%2014%20du%202%20avril%202026-515432.pdf)
+
+**Pour aller plus loin · programme de seconde 2019**
+
+**Attention :** ce programme est remplacé à compter de la rentrée
+2026-2027 par les textes ci-dessus. Il reste proposé ici comme référence
+historique, notamment pour comprendre l’évolution des programmes et de
+leurs orientations pédagogiques.
+
+[BO spécial n° 1 du 22 janvier 2019 · PDF officiel
+→](https://www.education.gouv.fr/sites/default/files/imported_files/documents/SP1_MEN_22_1_2019_10H40_1064060.pdf)
 
 **J’utilise R**
 
