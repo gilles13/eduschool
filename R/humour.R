@@ -4,17 +4,17 @@
 
 .catalogue_humour = list(
   "PROP_001:cookies" =
-    " Promis, partir avec le paquet n'est pas une methode de proportionnalite.",
+    " Promis, partir avec le paquet n'est pas une m\u00e9thode de proportionnalit\u00e9.",
   "PROP_001:chaussettes" =
-    " Pourquoi uniquement des chaussettes ? Le cahier des charges reste mysterieux.",
+    " Pourquoi uniquement des chaussettes ? Le cahier des charges reste myst\u00e9rieux.",
   "PROP_001:crayons" =
-    " Oui, encore des crayons. Picasso aurait probablement demande un autre exercice.",
+    " Oui, encore des crayons. Picasso aurait probablement demand\u00e9 un autre exercice.",
   "PROP_RECON_001:coefficient" =
     " Le prix du pop-corn, lui, refuse de participer a cette enquete.",
   "PROP_RECON_001:taxi" =
     " Le taxi augmente, mais pas comme eduschool le voudrait.",
   "PROP_RECON_001:tableau" =
-    " Meme dans l'espace, le multiplicateur finit par nous retrouver.",
+    " M\u00eame dans l'espace, le multiplicateur finit par nous retrouv\u00e9r.",
   "PROP_TABLE_001:cahiers" =
     " Encore des fournitures scolaires : le suspense est insoutenable.",
   "PROP_TABLE_001:boisson" =
@@ -26,25 +26,25 @@
   "PROP_PIEGE_001:doublement" =
     " Le produit en croix peut rester assis : ici, doubler suffit.",
   "PROP_PIEGE_001:addition" =
-    " Attention au piege : il a mis une moustache pour avoir l'air credible.",
+    " Attention au pi\u00e8ge : il a mis une moustache pour avoir l'air cr\u00e9dible.",
   "PROP_TRANSF_001:riz" =
-    " La proportionnalite vient officiellement de sauver le diner.",
+    " La proportionnalit\u00e9 vient officiellement de sauver le d\u00eener.",
   "PROP_TRANSF_001:peinture" =
     " Picasso n'est pas disponible, il va falloir calculer.",
   "PROP_TRANSF_001:jus" =
     " Les verres sont identiques, sinon ce serait franchement chiant.",
 
   "FRAC_ADD_001" = c(
-    " Les denominateurs ont accepte de cooperer. Merci de ne pas les brusquer.",
-    " Le denominateur commun : meme les fractions finissent par trouver un terrain d'entente.",
-    " Deux fractions entrent dans un calcul. Une seule en ressort. Aucun numerateur n'a souhaite temoigner.",
-    " On met tout le monde au meme denominateur. Democratie mathematique, avec simplification au second tour.",
-    " Les fractions se rapprochent. Merci de respecter leur intimite.",
-    " Un denominateur commun vient d'etre trouve. Les negociations ont ete plus rapides qu'a l'ONU.",
-    " Additionner les numerateurs directement serait tentant. Le piege aussi trouve l'idee excellente.",
-    " Encore une addition de fractions. Quelque part, un denominateur cherche deja un avocat.",
-    " Les fractions etaient irreconciliables. Puis quelqu'un a prononce les mots denominateur commun.",
-    " Rien ne se perd, rien ne se cree, tout se met au meme denominateur. Lavoisier n'a pas valide cette phrase."
+    " Les d\u00e9nominateurs ont accepte de cooperer. Merci de ne pas les brusquer.",
+    " Le d\u00e9nominateur commun : m\u00eame les fractions finissent par trouv\u00e9r un terrain d'entente.",
+    " Deux fractions entrent dans un calcul. Une seule en ressort. Aucun num\u00e9rateur n'a souhait\u00e9 t\u00e9moigner.",
+    " On met tout le monde au m\u00eame d\u00e9nominateur. D\u00e9mocratie math\u00e9matique, avec simplification au second tour.",
+    " Les fractions se rapprochent. Merci de respecter leur intimit\u00e9.",
+    " Un d\u00e9nominateur commun vient d'etre trouv\u00e9. Les n\u00e9gociations ont \u00e9t\u00e9 plus rapides qu'a l'ONU.",
+    " Additionner les num\u00e9rateurs directement serait tentant. Le pi\u00e8ge aussi trouv\u00e9 l\u2019id\u00e9e excellente.",
+    " Encore une addition de fractions. Quelque part, un d\u00e9nominateur cherche d\u00e9j\u00e0 un avocat.",
+    " Les fractions \u00e9taient irreconciliables. Puis quelqu'un a prononce les mots d\u00e9nominateur commun.",
+    " Rien ne se perd, rien ne se cr\u00e9e, tout se met au m\u00eame d\u00e9nominateur. Lavoisier n'a pas valide cette phrase."
   ),
 
   "FRAC_QTE_001" = c(
@@ -52,12 +52,12 @@
     " On ne prend qu'une fraction du nombre. Inutile d'appeler les secours.",
     " Le nombre va perdre une partie de lui-meme. Il a signe le formulaire de consentement.",
     " Une petite fraction, un grand calcul. Enfin... gardons le sens des proportions.",
-    " Aucun nombre n'a ete maltraite pendant la fabrication de cet exercice.",
+    " Aucun nombre n'a \u00e9t\u00e9 maltraite pendant la fabrication de cet exercice.",
     " Calculer une fraction d'un nombre : la division fait le tri, la multiplication finit le travail.",
-    " Le nombre est entier au debut. Pour la suite, son avocat nous conseille de ne rien declarer.",
+    " Le nombre est entier au d\u00e9but. Pour la suite, son avocat nous conseille de ne rien declarer.",
     " Une fraction vient reclamer sa part. Le service comptable est formel : il faut calculer.",
-    " Si le resultat semble etrange, rassure-toi : nous avons deja vu un bouton HTML traverser la quatrieme dimension.",
-    " Une fraction de nombre, c'est moins spectaculaire qu'une porte interdimensionnelle, mais nettement plus simple a tester."
+    " Si le r\u00e9sultat semble \u00e9trange, rassure-toi : nous avons d\u00e9j\u00e0 vu un bouton HTML traverser la quatri\u00e8me dimension.",
+    " Une fraction de nombre, c'est moins spectaculaire qu'une porte interdimensionnelle, mais nettement plus simple \u00e0 tester."
   )
 )
 
@@ -104,10 +104,7 @@
     position = (abs(as.integer(seed)) %% length(chutes)) + 1L
   }
 
-  exercice$enonce = paste0(
-    exercice$enonce,
-    chutes[[position]]
-  )
+  exercice$qcm$apart_humour = trimws(chutes[[position]])
   exercice$qcm$humour = TRUE
   exercice
 }

@@ -11,6 +11,8 @@ PROP_TABLE_001;"Proportionnalité - raisonner dans un tableau";"proportion_table
 PROP_PIEGE_001;"Proportionnalité - repérer une fausse règle";"proportion_piege";"6E|5E";1;2;prototype
 PROP_TRANSF_001;"Proportionnalité - transférer en contexte";"proportion_transfert";"6E|5E";1;2;prototype
 FRAC_QTE_001;"Fraction d’une quantité";"fraction_quantite";"6E|5E";1;2;prototype
+FRAC_MULT_001;"Multiplication de fractions";"multiplication_fractions";"5E";1;2;prototype
+FRAC_DIV_001;"Division de fractions";"division_fractions";"5E";1;2;prototype
 PCT_001;"Pourcentage simple";"pourcentage";"6E|5E";1;2;prototype
 PYTH_001;"Théorème de Pythagore";"pythagore";"4E";1;3;prototype
 PYTH_IDENT_001;"Pythagore - hypoténuse et égalité";"pythagore_identifier";"4E";1;3;prototype
@@ -33,6 +35,11 @@ FRAC_DROITE_001;"Fraction sur une demi-droite graduee";"fraction_droite";"6E";1;
 FRAC_EQUIV_001;"Fractions equivalentes";"fraction_equivalente";"6E";1;2;prototype
 FRAC_COMP_001;"Comparer des fractions";"fraction_comparer";"6E";1;2;prototype
 FRAC_ENCADR_001;"Encadrer une fraction";"fraction_encadrer";"6E";1;2;prototype
-FRAC_SUB_001;"Soustraction de fractions";"soustraction_fractions";"6E";1;2;prototype
+FRAC_SUB_001;"Soustraction de fractions";"soustraction_fractions";"6E|5E";1;2;prototype
 FRAC_MANQ_001;"Fraction - terme manquant";"fraction_terme_manquant";"6E";1;2;prototype
 FRAC_MULT_ENT_001;"Fraction multipliee par un entier";"fraction_par_entier";"6E";1;2;prototype
+IR_RECON_001;"Identités remarquables - reconnaître";"identite_reconnaitre";"2GT";1;2;prototype
+IR_DEVEL_001;"Identités remarquables - développer";"identite_developper";"2GT";1;2;prototype
+IR_FACT_001;"Identités remarquables - factoriser";"identite_factoriser";"2GT";1;2;prototype
+IR_SIGNE_001;"Identités remarquables - signes";"identite_signe";"2GT";1;2;prototype
+IR_EQUIV_001;"Identités remarquables - équivalence";"identite_equivalence";"2GT";1;2;prototype

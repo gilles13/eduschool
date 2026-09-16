@@ -1,4 +1,4 @@
-![edusch∞l Math — plusieurs chemins, différents points de vue, mêmes découvertes](man/figures/hero-eduschool-math.png)
+![edusch∞l Math — Les maths, ça se découvre aussi ensemble](man/figures/hero-eduschool-math.png)
 
 # edusch∞l Math
 

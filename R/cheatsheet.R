@@ -199,6 +199,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     '.manifeste{border:1px solid #B9E2DC;border-top:2.4mm solid var(--turquoise);background:#F2FBF9}.manifeste h2{color:#1E746A}.contribuer{--contribuer:#B58B3A;border:1px solid color-mix(in srgb,var(--contribuer) 30%,white);border-top:2.4mm solid var(--contribuer);background:color-mix(in srgb,var(--contribuer) 8%,white)}.contribuer h2{color:color-mix(in srgb,var(--contribuer) 78%,black)}',
     '.pied{position:absolute;left:9mm;right:9mm;bottom:4mm;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dce2e6;padding-top:2mm;font-size:7pt;color:#687680}',
     '.pied strong{color:var(--encre)}',
+    '.transparent-progressif{background:linear-gradient(90deg,rgba(104,118,128,.88) 0%,rgba(104,118,128,.12) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-print-color-adjust:exact;print-color-adjust:exact}',
     '@media print{html,body{background:white}.page{margin:0;width:auto;min-height:auto;box-shadow:none;padding:0;overflow:visible}.entete{margin-top:0}.pied{bottom:0}}',
     '@media screen and (max-width:1000px){.page{width:auto;min-height:0;margin:0;padding:18px}.entete{height:auto;grid-template-columns:1fr 70px}.logo-principal{max-width:300px}.titre{grid-column:1/-1;grid-row:2;text-align:left;padding:12px 0}.colonnes{grid-template-columns:1fr}.pied{position:static;margin-top:18px}}',
     '</style>', '</head>', '<body>', '<main class="page">',
@@ -209,7 +210,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     sprintf('<div class="version">API publique \u2014 version %s</div>', .html_echapper(version)),
     '</div>', hexa_html, '</header>',
     '<div class="colonnes">', colonne_1, colonne_2, colonne_3, '</div>',
-    '<footer class="pied"><span><strong>eduschool</strong> \u00b7 libre \u00b7 gratuit \u00b7 ouvert</span><span>gilles13.github.io/eduschool \u00b7 Toujours ouvrir des portes.</span></footer>',
+    '<footer class="pied"><span><strong>eduschool</strong> \u00b7 libre \u00b7 gratuit \u00b7 ouvert \u00b7 tente d\u2019\u00eatre <span class="transparent-progressif">transparent</span></span><span>gilles13.github.io/eduschool \u00b7 Toujours ouvrir des portes.</span></footer>',
     '</main>', '</body>', '</html>'
   )
 

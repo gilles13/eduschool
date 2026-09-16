@@ -43,3 +43,11 @@ test_that("humour_ratio valide un ratio compris entre zero et un", {
     "compris entre 0 et 1"
   )
 })
+
+test_that("un aparte humoristique reste separe de l enonce", {
+  ex = generer_exercice("FRAC_QTE_001", "5E", seed = 2026)
+  avant = ex$enonce
+  ex = .ajouter_humour(ex)
+  expect_identical(ex$enonce, avant)
+  expect_true(nzchar(ex$qcm$apart_humour))
+})

@@ -62,7 +62,7 @@ generer_addition_fractions = function(niveau_id = "6E", capacite_id = NA_charact
   a = sample(seq_len(b-1),1); c = sample(seq_len(d-1),1)
   num = a*d + c*b; denom = b*d; res = simplifier_fraction(num,denom)
   enonce = sprintf("Calculer et simplifier : %d/%d + %d/%d", a,b,c,d)
-  correction = sprintf("On utilise un d\u00e9nominateur commun : (%d\u00d7%d + %d\u00d7%d)/(%d\u00d7%d) = %s.", a,d,c,b,b,d,fmt_fraction(res[["num"]],res[["den"]]))
+  correction = sprintf("Pour additionner ces fractions, on cherche un [[d\u00e9nominateur commun]].\n(%d\u00d7%d + %d\u00d7%d)/(%d\u00d7%d) = %s.", a,d,c,b,b,d,fmt_fraction(res[["num"]],res[["den"]]))
   creer_exercice("FRAC_ADD_001", niveau_id, capacite_id, difficulte, enonce,
                  fmt_fraction(res[["num"]],res[["den"]]), correction,
                  list(a=a,b=b,c=c,d=d), seed)

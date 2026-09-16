@@ -74,7 +74,14 @@ generer_exercice = function(
     LITT_EXPR_001 = generer_expression_litterale,
     LITT_REDUC_001 = generer_reduction_litterale,
     LITT_DISTR_001 = generer_distributivite,
+    IR_RECON_001 = generer_identite_reconnaitre,
+    IR_DEVEL_001 = generer_identite_developper,
+    IR_FACT_001 = generer_identite_factoriser,
+    IR_SIGNE_001 = generer_identite_signe,
+    IR_EQUIV_001 = generer_identite_equivalence,
     FRAC_ADD_001 = generer_addition_fractions,
+    FRAC_MULT_001 = generer_multiplication_fractions,
+    FRAC_DIV_001 = generer_division_fractions,
     FRAC_QUOT_001 = generer_fraction_quotient,
     FRAC_DROITE_001 = generer_fraction_droite,
     FRAC_EQUIV_001 = generer_fraction_equivalente,
@@ -114,6 +121,7 @@ generer_exercice = function(
     difficulte = difficulte,
     seed = seed
   )
+  exercice = .varier_forme_fraction(exercice)
   if (isTRUE(afficher)) {
     .afficher_exercice(exercice)
     return(invisible(exercice))

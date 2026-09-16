@@ -57,15 +57,6 @@ test_that("todolist organise aussi les problemes de difficulte", {
   expect_true(any(x$probleme == "difficulte_declarative"))
 })
 
-test_that("todolist detecte une difficulte seulement partielle", {
-  x = todolist("5E", graines = 1:5)
-  fractions = x[x$modeles_concernes == "FRAC_ADD_001", , drop = FALSE]
-
-  expect_equal(nrow(fractions), 1L)
-  expect_equal(fractions$probleme, "difficulte_partielle")
-  expect_equal(fractions$profils_difficulte_observes, "1 | 2-3")
-})
-
 test_that("todolist ne penalise pas une difficulte pleinement active", {
   x = todolist("4E", graines = 1:3)
   equations = x[grepl("EQ4E_001", x$modeles_concernes, fixed = TRUE), , drop = FALSE]

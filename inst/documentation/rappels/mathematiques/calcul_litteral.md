@@ -22,6 +22,24 @@ $3x + 5x = 8x$, mais $3x + 5$ ne peut pas être réduit davantage.
 
 $a(b+c)=ab+ac$. Ainsi $3(x+4)=3x+12$.
 
+## Identités remarquables
+
+Trois identités sont à reconnaître dans les deux sens, pour développer comme pour factoriser :
+
+$$
+(a+b)^2=a^2+2ab+b^2
+$$
+
+$$
+(a-b)^2=a^2-2ab+b^2
+$$
+
+$$
+a^2-b^2=(a-b)(a+b)
+$$
+
+Les deux premières se retrouvent en développant $(a+b)(a+b)$ et $(a-b)(a-b)$ par double distributivité. La troisième permet de reconnaître directement une différence de deux carrés.
+
 ## Erreurs fréquentes
 
 $x+x=2x$, tandis que $x \times x=x^2$. Ne pas confondre addition et multiplication.

@@ -22,12 +22,12 @@ generer_proportion_reconnaitre = function(niveau_id = "6E", capacite_id = NA_cha
     p2 = 2L * prix
     p3 = 3L * prix
     enonce = sprintf(
-      "Une place de cinema coute %d euros. Deux places coutent %d euros et trois places coutent %d euros. Par quel nombre multiplie-t-on toujours le nombre de places pour obtenir le prix total ?",
+      "Une place de cin\u00e9ma co\u00fbte %d euros. Deux places co\u00fbtent %d euros et trois places co\u00fbtent %d euros. Par quoi faut-il multiplier le nombre de places pour obtenir le prix total ?",
       prix, p2, p3
     )
     reponse = as.character(prix)
     correction = sprintf(
-      "On multiplie toujours le nombre de places par %d : 2 x %d = %d et 3 x %d = %d. Ce nombre est le coefficient de proportionnalite.",
+      "On multiplie toujours le nombre de places par %d : 2 x %d = %d et 3 x %d = %d. Ce nombre est le coefficient de proportionnalit\u00e9.",
       prix, prix, p2, prix, p3
     )
     propositions = as.character(c(prix, prix + 1L, p2, p3))
@@ -66,10 +66,7 @@ generer_proportion_reconnaitre = function(niveau_id = "6E", capacite_id = NA_cha
     parametres = list(cas = cas, fixe = fixe, p1 = p1, p2 = p2)
   } else {
     k = sample(2:5, 1L)
-    enonce = sprintf(
-      "Dans un tableau, les valeurs associees sont 1 -> %d, 2 -> %d et 3 -> %d. Que peut-on dire ?",
-      k, 2L * k, 3L * k
-    )
+    enonce = "Que peut-on dire de ce tableau ?"
     reponse = sprintf("On multiplie toujours par %d : les deux grandeurs sont proportionnelles.", k)
     correction = sprintf("1 x %d = %d, 2 x %d = %d et 3 x %d = %d. Le meme multiplicateur %d fonctionne partout.", k, k, k, 2L*k, k, 3L*k, k)
     propositions = c(
@@ -85,9 +82,18 @@ generer_proportion_reconnaitre = function(niveau_id = "6E", capacite_id = NA_cha
       "Les unites ne sont pas necessaires pour verifier que le meme multiplicateur relie les valeurs."
     )
     parametres = list(cas = cas, coefficient = k)
+    qcm_tableau = list(
+      entetes = c("Valeur 1", "Valeur 2"),
+      lignes = list(
+        c("1", as.character(k)),
+        c("2", as.character(2L * k)),
+        c("3", as.character(3L * k))
+      )
+    )
   }
 
   qcm = .qcm_simple("reconnaitre", propositions, 1L, feedback)
+  if (exists("qcm_tableau", inherits = FALSE)) qcm$tableau = qcm_tableau
   creer_exercice("PROP_RECON_001", niveau_id, capacite_id, difficulte, enonce, reponse, correction,
                  parametres, seed, qcm = qcm)
 }
@@ -102,15 +108,16 @@ generer_proportion_tableau = function(niveau_id = "6E", capacite_id = NA_charact
   yb = b * k
 
   if (cas == "cahiers") {
-    enonce = sprintf("%d cahiers coutent %d euros. Chaque cahier coute le meme prix. Combien coutent %d cahiers ?", a, ya, b)
+    enonce = sprintf("%d cahiers co\u00fbtent %d euros. Chaque cahier co\u00fbte le m\u00eame prix. Combien co\u00fbtent %d cahiers ?", a, ya, b)
     unite = " euros"
     nom = "cahier"
   } else if (cas == "boisson") {
-    enonce = sprintf("%d bouteilles contiennent ensemble %d litres. Chaque bouteille contient la meme quantite. Combien de litres contiennent %d bouteilles ?", a, ya, b)
+    enonce = sprintf("%d bouteilles contiennent ensemble %d litres. Chaque bouteille contient la m\u00eame quantit\u00e9. Combien de litres contiennent %d bouteilles ?", a, ya, b)
     unite = " litres"
     nom = "bouteille"
   } else {
-    enonce = sprintf("Un cycliste parcourt %d km en %d heures a vitesse constante. Combien de kilometres parcourt-il en %d heures ?", ya, a, b)
+    personnage = .tirer_personnage_exercice()
+    enonce = sprintf("%s parcourt %d km en %d heures \u00e0 vitesse constante. Combien de kilom\u00e8tres parcourt-il en %d heures ?", personnage, ya, a, b)
     unite = " km"
     nom = "heure"
   }
@@ -125,9 +132,9 @@ generer_proportion_tableau = function(niveau_id = "6E", capacite_id = NA_charact
   propositions = paste0(vals, unite)
   feedback = c(
     correction,
-    "Additionner la nouvelle quantite et le coefficient ne conserve pas le meme rapport.",
-    "Ajouter seulement l'ecart entre les deux quantites ne conserve pas le meme multiplicateur.",
-    "La valeur connue correspond deja a plusieurs unites. Il faut d'abord retrouver la valeur pour une unite."
+    "Additionner la nouvelle quantit\u00e9 et le coefficient ne conserve pas le m\u00eame rapport.",
+    "Ajouter seulement l\u2019\u00e9cart entre les deux quantit\u00e9s ne conserve pas le m\u00eame multiplicateur.",
+    "La valeur connue correspond d\u00e9j\u00e0 \u00e0 plusieurs unit\u00e9s. Il faut d\u2019abord retrouver la valeur pour une unit\u00e9."
   )
   qcm = .qcm_simple("raisonner", propositions, 1L, feedback)
   creer_exercice("PROP_TABLE_001", niveau_id, capacite_id, difficulte, enonce, reponse, correction,

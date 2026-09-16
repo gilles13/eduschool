@@ -67,3 +67,17 @@ test_that("les couleurs fortes sont reservees aux blocs identitaires", {
   expect_match(html, "var(--contribuer)", fixed = TRUE)
   expect_match(html, "color-mix(in srgb,var(--contribuer)", fixed = TRUE)
 })
+
+
+test_that("la transparence reste un easter egg du pied de page", {
+  fichier = tempfile(fileext = ".html")
+  sortie = produire_cheatsheet(fichier = fichier, ouvrir = FALSE)
+  html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
+
+  expect_true(grepl("libre · gratuit · ouvert · tente d’être", html, fixed = TRUE),
+              info = "La signature eduschool doit rester complete dans le pied de page.")
+  expect_true(grepl('class="transparent-progressif">transparent</span>', html, fixed = TRUE),
+              info = "Seul le mot transparent doit porter le fondu progressif.")
+  expect_true(grepl("rgba(104,118,128,.88) 0%,rgba(104,118,128,.12) 100%", html, fixed = TRUE),
+              info = "Le fondu doit commencer des la premiere lettre sans faire disparaitre la derniere.")
+})

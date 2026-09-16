@@ -66,3 +66,74 @@
   width: 100%;
   height: auto;
 }
+
+
+/* Les programmes officiels : visibles sans transformer l'accueil en BO. */
+.eduschool-bo {
+  margin: 2rem 0;
+  padding: 1.1rem 1.25rem 1.25rem;
+  border-left: 5px solid #123f70;
+  border-radius: .5rem;
+  background: #f5f8fb;
+}
+
+.eduschool-bo h2 {
+  margin: 0 0 .7rem;
+  color: #123f70;
+  font-size: 1.25rem;
+  letter-spacing: .02em;
+}
+
+.eduschool-bo > p {
+  font-size: .96rem;
+}
+
+.eduschool-bo-liens {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  margin-top: 1rem;
+}
+
+.eduschool-bo-lien {
+  display: block;
+  padding: .85rem 1rem;
+  border: 1px solid #c8d8e8;
+  border-radius: .45rem;
+  background: #fff;
+  text-decoration: none;
+}
+
+.eduschool-bo-lien:hover {
+  border-color: #123f70;
+  text-decoration: none;
+}
+
+.eduschool-bo-lien span {
+  color: #52606b;
+}
+
+.eduschool-bo-ancien {
+  margin-top: 1rem;
+  padding: .8rem 1rem;
+  border: 1px solid #d7d7d7;
+  border-radius: .45rem;
+  background: #eeeeee;
+  color: #4d4d4d;
+  font-size: .9rem;
+}
+
+.eduschool-bo-ancien p {
+  margin: .35rem 0 .45rem;
+}
+
+.eduschool-bo-ancien a {
+  color: inherit;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .eduschool-bo-liens {
+    grid-template-columns: 1fr;
+  }
+}

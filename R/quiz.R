@@ -10,6 +10,32 @@
   x
 }
 
+.html_math = function(x) {
+  x = .html_echapper(x)
+  x = gsub(
+    "(\\([^()/]+\\))\\s*/\\s*(\\([^()/]+\\))",
+    '<span class="fraction"><span class="numerateur">\\1</span><span class="denominateur">\\2</span></span>',
+    x,
+    perl = TRUE
+  )
+  gsub(
+    "\\b([0-9]+)\\s*/\\s*([0-9]+)\\b",
+    '<span class="fraction"><span class="numerateur">\\1</span><span class="denominateur">\\2</span></span>',
+    x,
+    perl = TRUE
+  )
+}
+
+.html_correction = function(x) {
+  x = .html_math(x)
+  gsub(
+    "\\[\\[([^]]+)\\]\\]",
+    "<strong>\\1</strong>",
+    x,
+    perl = TRUE
+  )
+}
+
 .base64_raw = function(x) {
   if (!is.raw(x)) x = as.raw(x)
   n = length(x)
@@ -145,7 +171,7 @@ produire_quiz = function(exercices, fichier = NULL,
       '<section class="notion">',
       '<div class="notion-label">Notion</div>',
       if (nzchar(notion)) sprintf('<h2>%s</h2>', .html_echapper(notion)) else "",
-      if (nzchar(rappel)) sprintf('<div class="rappel">%s</div>', .html_echapper(rappel)) else "",
+      if (nzchar(rappel)) sprintf('<div class="rappel">%s</div>', .html_math(rappel)) else "",
       '<p>Besoin d\'un rappel ? La fiche de revision est une antis\u00e8che autorisee.</p>',
       '</section>'
     )
@@ -156,31 +182,61 @@ produire_quiz = function(exercices, fichier = NULL,
   questions = vapply(seq_along(exercices), function(i) {
     ex = exercices[[i]]
     qcm = ex$qcm
-    propositions = vapply(seq_len(4L), function(j) {
+    interaction = if (is.null(qcm$interaction)) "qcm" else qcm$interaction
+    propositions = paste(vapply(seq_len(4L), function(j) {
       sprintf(
         '<label class="proposition"><input type="radio" name="q%d" value="%d"><span>%s</span></label>',
-        i, j, .html_echapper(qcm$propositions[[j]])
+        i, j, .html_math(qcm$propositions[[j]])
       )
-    }, character(1))
-    feedback = paste(sprintf(
-      '<div class="feedback-option" data-question="%d" data-option="%d">%s</div>',
-      i, seq_len(4L), .html_echapper(qcm$feedback)
-    ), collapse = "\n")
+    }, character(1)), collapse = "\n")
+    forme_question = if (is.null(qcm$forme_question)) "calcul_direct" else qcm$forme_question
+    feedback = if (identical(forme_question, "nommer_notion")) {
+      sprintf('<div class="feedback-notion">%s</div>', .html_correction(ex$correction))
+    } else {
+      paste(sprintf(
+        '<div class="feedback-option" data-question="%d" data-option="%d">%s</div>',
+        i, seq_len(4L), vapply(qcm$feedback, .html_correction, character(1))
+      ), collapse = "\n")
+    }
+    correcte = as.character(qcm$correcte)
+    data_reponse = ""
     intention = if (!is.null(qcm$intention) && length(qcm$intention) == 1L &&
                     !is.na(qcm$intention) && nzchar(qcm$intention)) {
       sprintf('<span class="intention">%s</span>', .html_echapper(qcm$intention))
     } else {
       ""
     }
+    apart = if (isTRUE(qcm$humour) && !is.null(qcm$apart_humour) &&
+                length(qcm$apart_humour) == 1L && nzchar(qcm$apart_humour)) {
+      sprintf(
+        '<aside class="apart-humour"><span class="apart-icone">&#128518;</span><span>%s</span></aside>',
+        .html_echapper(qcm$apart_humour)
+      )
+    } else {
+      ""
+    }
+    tableau = ""
+    if (!is.null(qcm$tableau)) {
+      entetes = paste(sprintf("<th>%s</th>", .html_echapper(qcm$tableau$entetes)), collapse = "")
+      lignes = paste(vapply(qcm$tableau$lignes, function(ligne) {
+        paste0("<tr>", paste(sprintf("<td>%s</td>", .html_math(ligne)), collapse = ""), "</tr>")
+      }, character(1)), collapse = "")
+      tableau = paste0('<table class="tableau-question"><thead><tr>', entetes,
+                       '</tr></thead><tbody>', lignes, '</tbody></table>')
+    }
     numero_question = ((i - 1L) %% questions_par_quiz) + 1L
     sprintf(
       paste0(
-        '<section class="question" data-question="%d" data-correct="%d">',
-        '<h2><span>Question %d</span>%s</h2><p class="enonce">%s</p>%s',
+        '<section class="question" data-question="%d" data-correct="%s" data-reponse="%s" data-modele="%s" data-forme="%s" data-contexte="%s" data-interaction="%s"%s>',
+        '<h2><span>Question %d</span>%s</h2><p class="enonce">%s</p>%s%s%s',
         '<div class="retour" aria-live="polite"></div>%s</section>'
       ),
-      i, qcm$correcte, numero_question, intention, .html_echapper(ex$enonce),
-      paste(propositions, collapse = "\n"), feedback
+      i, correcte, .html_echapper(ex$reponse), .html_echapper(ex$modele_id),
+      .html_echapper(forme_question),
+      .html_echapper(if (!is.null(ex$parametres$cas)) ex$parametres$cas else ex$modele_id),
+      .html_echapper(interaction), data_reponse,
+      numero_question, intention, .html_math(ex$enonce), tableau, propositions, apart,
+      feedback
     )
   }, character(1))
 
@@ -197,6 +253,7 @@ produire_quiz = function(exercices, fichier = NULL,
       '<button class="reessayer" type="button">Reessayer</button>',
       '<button class="relancer-quiz" type="button">Lancer un nouveau quiz</button>',
       '</div>',
+      '<div class="fin-banque" aria-live="polite"></div>',
       '<div class="bilan" aria-live="polite"></div>',
       '</div>'
     ),
@@ -218,19 +275,20 @@ produire_quiz = function(exercices, fichier = NULL,
     '.entete h1{font-size:clamp(1.7rem,5vw,2.45rem);line-height:1.1;margin:.15rem 0 .35rem}.promesse{margin:0;color:#555}',
     '.notion{border-left:5px solid var(--accent);border-radius:8px;background:#fff;padding:1rem 1.15rem;margin:1.2rem 0 1.6rem;box-shadow:0 1px 4px rgba(0,0,0,.05)}',
     '.notion-label{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:750;color:#666}.notion h2{margin:.2rem 0 .45rem;font-size:1.2rem}',
-    '.rappel{font-size:1.35rem;font-weight:750;letter-spacing:.035em;margin:.35rem 0}.notion p{margin:.55rem 0 0;color:#555}',
+    '.rappel{font-size:1.35rem;font-weight:750;letter-spacing:.035em;margin:.35rem 0}.fraction{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;line-height:1;margin:0 .08em}.fraction .numerateur{border-bottom:1.5px solid currentColor;padding:0 .14em .06em}.fraction .denominateur{padding:.06em .14em 0}.notion p{margin:.55rem 0 0;color:#555}',
     '.question{background:#fff;border:1px solid #d7dce0;border-radius:10px;padding:1rem 1.1rem;margin:1.2rem 0;box-shadow:0 1px 3px rgba(0,0,0,.035)}',
     '.question h2{font-size:1.05rem;margin:.1rem 0 .65rem;display:flex;align-items:center;justify-content:space-between;gap:.8rem}',
     '.intention{font-size:.72rem;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:#666;background:#f2f3f3;border-radius:999px;padding:.2rem .55rem}',
-    '.enonce{font-weight:650}.proposition{display:flex;gap:.65rem;align-items:flex-start;padding:.6rem .5rem;border-radius:7px;cursor:pointer}',
-    '.proposition:hover{background:#f4f5f6}.proposition input{margin-top:.27rem;accent-color:var(--accent)}',
+    '.enonce{font-weight:650}.apart-humour{display:flex;gap:.55rem;align-items:flex-start;margin:.75rem 0 1rem;padding:.65rem .8rem;border-left:4px solid #7b61a8;background:#f7f3fb;border-radius:7px;font-family:"Comic Sans MS","Bradley Hand",cursive;color:#514263}.apart-icone{font-family:system-ui,sans-serif;font-size:1.15rem;line-height:1.25}.proposition{display:flex;gap:.65rem;align-items:center;padding:.6rem .5rem;border-radius:7px;cursor:pointer}',
+    '.proposition:hover{background:#f4f5f6}.proposition input{margin-top:0;flex:0 0 auto;accent-color:var(--accent)}',
     '.question.juste{border-left:5px solid #2e7d32;background:#f1f8f2}.question.a-revoir{border-left:5px solid #d97706;background:#fff7ed}.question.sans-reponse{border-left:5px solid #999}',
     '.question.juste .retour{color:#256b2b}.question.a-revoir .retour{color:#b45309}.question.sans-reponse .retour{color:#666}',
-    '.retour{margin-top:.8rem;font-weight:750}.feedback-option{display:none;margin-top:.4rem;padding:.65rem .75rem;background:#f6f7f7;border-radius:7px}',
-    '.feedback-option.choisie-fausse{border-left:4px solid #d97706;background:#fff7ed}.feedback-option.attendue{border-left:4px solid #2e7d32;background:#f1f8f2}',
-    '.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.6rem 0}.actions button{font:inherit;font-weight:650;padding:.7rem 1rem;border:1px solid var(--accent);border-radius:8px;background:#fff;color:#222;cursor:pointer}',
+    '.retour{margin-top:.8rem;font-weight:750}.feedback-option{display:none;margin-top:.4rem;padding:.65rem .75rem;background:#f6f7f7;border-left:4px solid var(--accent);border-radius:7px;white-space:pre-line}',
+    '.feedback-notion{display:none;margin-top:.55rem;padding:.7rem .8rem;border-left:4px solid var(--accent);background:#f6f7f7;border-radius:7px}',
+    '.tableau-question{border-collapse:collapse;margin:.8rem 0 1.2rem;min-width:15rem}.tableau-question th,.tableau-question td{border:1px solid #c9ced6;padding:.45rem .8rem;text-align:right}.tableau-question th{text-align:left;background:#f4f5f7}',
+    '.question[data-forme="nommer_notion"] .enonce{white-space:pre-line;line-height:1.8}.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.6rem 0}.actions button{font:inherit;font-weight:650;padding:.7rem 1rem;border:1px solid var(--accent);border-radius:8px;background:#fff;color:#222;cursor:pointer}.actions button:disabled{cursor:default;opacity:.6;filter:none}',
     '.actions .valider{background:var(--accent);color:#fff}.actions button:hover{filter:brightness(.97)}',
-    '.bilan{font-size:1.08rem;font-weight:700;margin:1rem 0 2rem;padding:1rem 1.1rem;background:#fff;border-radius:8px;border:1px solid #d7dce0}',
+    '.fin-banque{display:none;margin:1rem 0;padding:.85rem 1rem;background:#f6f7f7;border-left:4px solid var(--accent);border-radius:7px}.bilan{font-size:1.08rem;font-weight:700;margin:1rem 0 2rem;padding:1rem 1.1rem;background:#fff;border-radius:8px;border:1px solid #d7dce0}',
     '.bilan .bilan-juste{color:#256b2b}.bilan .bilan-faux{color:#b45309}.bilan .bilan-vide{color:#666}',
     '@media (max-width:600px){body{padding-left:.8rem;padding-right:.8rem}.entete{margin-left:-.8rem;margin-right:-.8rem}.logo-quiz{width:60px}.question{padding:.9rem}.question h2{align-items:flex-start;flex-direction:column;gap:.35rem}}',
     '</style>', '</head>',
@@ -248,7 +306,7 @@ produire_quiz = function(exercices, fichier = NULL,
     '<p class="promesse">Voir les maths autrement. Toujours avec rigueur.</p>',
     '</header>',
     notion_html,
-    '<p>Choisis une reponse pour chaque question, puis valide le quiz. Tu peux revenir a la fiche quand tu veux.</p>',
+    '<p>Choisis une r\u00e9ponse pour chaque question, puis valide le quiz. Tu peux revenir \u00e0 la fiche quand tu veux.</p>',
     lot,
     '<script>',
     sprintf('const QUESTIONS_PAR_QUIZ=%d;', questions_par_quiz),
@@ -257,6 +315,8 @@ produire_quiz = function(exercices, fichier = NULL,
     'const zone=lot.querySelector(".questions-actives");',
     'const toutesQuestions=[...pool.querySelectorAll(".question")].map(q=>q.cloneNode(true));',
     'let tirageCourant=[];',
+    'const questionsVues=new Set();',
+    'const questionsTraitees=new Set();',
     'function melanger(indices){',
     ' const a=[...indices];',
     ' for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}',
@@ -266,20 +326,41 @@ produire_quiz = function(exercices, fichier = NULL,
     ' zone.querySelectorAll("input[type=radio]").forEach(x=>x.checked=false);',
     ' zone.querySelectorAll(".question").forEach(q=>q.classList.remove("juste","a-revoir","sans-reponse"));',
     ' zone.querySelectorAll(".retour").forEach(x=>x.textContent="");',
-    ' zone.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";x.classList.remove("choisie-fausse","attendue");});',
+    ' zone.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";});',
+    ' zone.querySelectorAll(".feedback-notion").forEach(x=>x.style.display="none");',
     ' lot.querySelector(".bilan").textContent="";',
     '}',
+    'function majFinBanque(){',
+    ' const boutonNouveau=lot.querySelector(".relancer-quiz"); const fin=lot.querySelector(".fin-banque");',
+    ' const toutesVues=questionsVues.size>=toutesQuestions.length; const toutesTraitees=questionsTraitees.size>=toutesQuestions.length;',
+    ' boutonNouveau.disabled=toutesVues;boutonNouveau.style.display=toutesVues?"none":"";',
+    ' if(toutesVues){fin.style.display="block";fin.textContent=toutesTraitees?"Toutes les questions ont \u00e9t\u00e9 r\u00e9pondues.":"Tu as parcouru toutes les questions disponibles. Certaines restent sans r\u00e9ponse.";}else{fin.style.display="none";fin.textContent="";}',
+    '}',
     'function afficherQuiz(nouveau=true){',
-    ' const n=Math.min(QUESTIONS_PAR_QUIZ,toutesQuestions.length);',
+    ' const disponibles=toutesQuestions.map((_,i)=>i).filter(i=>!questionsVues.has(i));',
+    ' const boutonNouveau=lot.querySelector(".relancer-quiz");',
+    ' if(disponibles.length===0){majFinBanque();return;}',
+    ' boutonNouveau.disabled=false;boutonNouveau.style.display="";boutonNouveau.textContent="Lancer un nouveau quiz";',
+    ' const n=Math.min(QUESTIONS_PAR_QUIZ,disponibles.length);',
     ' if(nouveau||tirageCourant.length!==n){',
-    '  let candidats=melanger(toutesQuestions.map((_,i)=>i));',
-    '  if(tirageCourant.length&&toutesQuestions.length>n){',
-    '   const precedent=new Set(tirageCourant);',
-    '   const diff=candidats.filter(i=>!precedent.has(i));',
-    '   const commun=candidats.filter(i=>precedent.has(i));',
-    '   candidats=[...diff,...commun];',
+    '  const precedent=new Set(tirageCourant);',
+    '  const tous=melanger(disponibles);',
+    '  const autres=tous.filter(i=>!precedent.has(i));',
+    '  const abandonnees=tous.filter(i=>precedent.has(i));',
+    '  const candidats=[...autres,...abandonnees];',
+    '  const retenus=[]; const formes=new Set(); const familles=new Set(); const contextes=new Set();',
+    '  while(retenus.length<n){',
+    '   const restants=candidats.filter(i=>!retenus.includes(i));',
+    '   if(restants.length===0)break;',
+    '   const score=i=>(!formes.has(toutesQuestions[i].dataset.forme)?1:0)+(!familles.has(toutesQuestions[i].dataset.modele)?1:0)+(!contextes.has(toutesQuestions[i].dataset.contexte)?1:0);',
+    '   const meilleur=Math.max(...restants.map(score));',
+    '   const choisi=restants.find(i=>score(i)===meilleur);',
+    '   retenus.push(choisi); formes.add(toutesQuestions[choisi].dataset.forme); familles.add(toutesQuestions[choisi].dataset.modele); contextes.add(toutesQuestions[choisi].dataset.contexte);',
     '  }',
-    '  tirageCourant=candidats.slice(0,n);',
+    '  const selection=retenus.slice(0,n);',
+    '  const normales=selection.filter(i=>toutesQuestions[i].dataset.forme!=="nommer_notion");',
+    '  const ouvertures=selection.filter(i=>toutesQuestions[i].dataset.forme==="nommer_notion");',
+    '  tirageCourant=[...normales,...ouvertures];',
     ' }',
     ' zone.innerHTML="";',
     ' tirageCourant.forEach((idx,pos)=>{',
@@ -289,29 +370,37 @@ produire_quiz = function(exercices, fichier = NULL,
     '  q.querySelectorAll("input[type=radio]").forEach(x=>x.name=nom);',
     '  zone.appendChild(q);',
     ' });',
+    ' tirageCourant.forEach(i=>questionsVues.add(i));',
     ' resetLot();',
+    ' majFinBanque();',
     '}',
     'lot.querySelector(".valider").addEventListener("click",()=>{',
     ' const questions=[...zone.querySelectorAll(".question")];',
     ' let bonnes=0; let repondues=0;',
     ' questions.forEach(q=>{',
-    '  const choix=q.querySelector("input:checked"); const retour=q.querySelector(".retour");',
+    '  const retour=q.querySelector(".retour");',
     '  q.classList.remove("juste","a-revoir","sans-reponse");',
-    '  q.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";x.classList.remove("choisie-fausse","attendue");});',
-    '  if(!choix){q.classList.add("sans-reponse");retour.textContent="SANS REPONSE - aucune reponse choisie.";return;}',
-    '  repondues++; const ok=choix.value===q.dataset.correct; if(ok){bonnes++;q.classList.add("juste");}else{q.classList.add("a-revoir");}',
-    '  const choisie=choix.closest(".proposition").querySelector("span").textContent;',
-    '  const correcte=q.querySelector(`input[value="${q.dataset.correct}"]`).closest(".proposition").querySelector("span").textContent;',
-    '  retour.textContent=ok?`JUSTE - ta reponse : ${choisie}.`:`FAUX - ta reponse : ${choisie}. Reponse correcte : ${correcte}.`;',
-    '  const fChoisie=q.querySelector(`.feedback-option[data-option="${choix.value}"]`);',
-    '  if(fChoisie){if(!ok)fChoisie.classList.add("choisie-fausse");fChoisie.style.display="block";}',
-    '  if(!ok){const fCorrecte=q.querySelector(`.feedback-option[data-option="${q.dataset.correct}"]`);if(fCorrecte){fCorrecte.classList.add("attendue");fCorrecte.style.display="block";}}',
+    '  q.querySelectorAll(".feedback-option").forEach(x=>{x.style.display="none";});',
+    '  const feedbackNotion=q.querySelector(".feedback-notion");if(feedbackNotion)feedbackNotion.style.display="none";',
+    '  const choix=q.querySelector("input:checked");',
+    '  if(!choix){q.classList.add("sans-reponse");retour.textContent="SANS R\u00c9PONSE - aucune r\u00e9ponse choisie.";return;}',
+    '  repondues++; questionsTraitees.add(Number(q.dataset.question)-1); const ok=choix.value===q.dataset.correct; if(ok){bonnes++;q.classList.add("juste");}else{q.classList.add("a-revoir");}',
+    '  if(q.dataset.forme==="nommer_notion"){',
+    '   const notion=q.dataset.reponse;retour.textContent=ok?`Oui ! Le mot \u00e9tait ${notion}.`:`Pas cette fois. Le mot \u00e9tait ${notion}.`;',
+    '   if(feedbackNotion)feedbackNotion.style.display="block";return;',
+    '  }',
+    '  const choisie=choix.closest(".proposition").querySelector("span").innerHTML;',
+    '  const correcte=q.querySelector(`input[value="${q.dataset.correct}"]`).closest(".proposition").querySelector("span").innerHTML;',
+    '  retour.innerHTML=ok?`JUSTE - ta r\u00e9ponse : ${choisie}.`:`Pas cette fois.`;',
+    '  const fExplication=q.querySelector(`.feedback-option[data-option="${q.dataset.correct}"]`);',
+    '  if(fExplication)fExplication.style.display="block";',
     ' });',
     ' const fausses=repondues-bonnes; const sansReponse=questions.length-repondues;',
-    ' lot.querySelector(".bilan").innerHTML=`Bilan : <span class="bilan-juste">${bonnes} reponse(s) correcte(s)</span> - <span class="bilan-faux">${fausses} reponse(s) fausse(s)</span> - <span class="bilan-vide">${sansReponse} sans reponse</span>.`;',
+    ' majFinBanque();',
+    ' lot.querySelector(".bilan").innerHTML=`Bilan : <span class="bilan-juste">${bonnes} r\u00e9ponse(s) correcte(s)</span> - <span class="bilan-faux">${fausses} r\u00e9ponse(s) fausse(s)</span> - <span class="bilan-vide">${sansReponse} sans r\u00e9ponse</span>.`;',
     '});',
     'lot.querySelector(".reessayer").addEventListener("click",()=>{resetLot();window.scrollTo({top:0,behavior:"smooth"});});',
-    'lot.querySelector(".relancer-quiz").addEventListener("click",()=>{afficherQuiz(true);window.scrollTo({top:0,behavior:"smooth"});});',
+    'lot.querySelector(".relancer-quiz").addEventListener("click",()=>{if(questionsVues.size>=toutesQuestions.length)return;afficherQuiz(true);window.scrollTo({top:0,behavior:"smooth"});});',
     'afficherQuiz(true);',
     '</script>', '</body>', '</html>'
   )

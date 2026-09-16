@@ -25,6 +25,7 @@ code{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size
 .manifeste{border:1px solid #B9E2DC;border-top:2.4mm solid var(--turquoise);background:#F2FBF9}.manifeste h2{color:#1E746A}.contribuer{border:1px solid #F2C6B8;border-top:2.4mm solid var(--corail);background:#FFF6F2}.contribuer h2{color:#B94F35}
 .pied{position:absolute;left:9mm;right:9mm;bottom:4mm;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dce2e6;padding-top:2mm;font-size:7pt;color:#687680}
 .pied strong{color:var(--encre)}
+.transparent-progressif{background:linear-gradient(90deg,rgba(104,118,128,.88) 0%,rgba(104,118,128,.12) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 @media print{html,body{background:white}.page{margin:0;width:auto;min-height:auto;box-shadow:none;padding:0;overflow:visible}.entete{margin-top:0}.pied{bottom:0}}
 @media screen and (max-width:1000px){.page{width:auto;min-height:0;margin:0;padding:18px}.entete{height:auto;grid-template-columns:1fr 70px}.logo-principal{max-width:300px}.titre{grid-column:1/-1;grid-row:2;text-align:left;padding:12px 0}.colonnes{grid-template-columns:1fr}.pied{position:static;margin-top:18px}}
 </style>
@@ -60,7 +61,7 @@ notion(&quot;pythagore&quot;)</code></pre></section></div>
 examen(&quot;DNB&quot;, 2026)</code></pre></section><section class="bloc "><h2>Composer un squelette</h2><p>Une composition reproductible respectant la structure modelisee de l'examen.</p><pre><code>composer_examen(&quot;DNB&quot;, 2026, seed = 2026)</code></pre></section><section class="bloc "><h2>Reutiliser la charte</h2><p>Les couleurs et le theme graphique restent accessibles dans R.</p><pre><code>charte_eduschool()
 theme_eduschool(&quot;C4&quot;)</code></pre></section><section class="bloc manifeste"><h2>Toujours ouvrir des portes</h2><p>Une notion peut mener plus loin sans obliger a franchir la porte. Les donnees restent sourcees, le savoir libre, gratuit et ouvert.</p></section><section class="bloc contribuer"><h2>Contribuer</h2><p>Corriger une source, ameliorer une explication, proposer un exercice... ou ajouter une petite blague. Le savoir se partage aussi comme ca.</p></section></div>
 </div>
-<footer class="pied"><span><strong>eduschool</strong> · libre · gratuit · ouvert</span><span>gilles13.github.io/eduschool · Toujours ouvrir des portes.</span></footer>
+<footer class="pied"><span><strong>eduschool</strong> · libre · gratuit · ouvert · tente d’être <span class="transparent-progressif">transparent</span></span><span>gilles13.github.io/eduschool · Toujours ouvrir des portes.</span></footer>
 </main>
 </body>
 </html>
