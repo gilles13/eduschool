@@ -1,7 +1,7 @@
 # Habillage narratif partage par les moteurs d'exercices.
 # Les mathematiques restent dans les generateurs ; ici on ne varie que le decor.
 
-.personnages_exercices = c("Sam", "Lina", "Noe", "Ines", "Malo", "Lea", "Yanis", "Zoe")
+.personnages_exercices = c("Sam", "Lina", "Noe", "In\u00e8s", "Malo", "L\u00e9a", "Yanis", "Zoe")
 
 .tirer_personnage_exercice = function() {
   sample(.personnages_exercices, 1L)
@@ -28,12 +28,12 @@
 
   formule_lignes = gsub(" = ", "\n= ", formule, fixed = TRUE)
   exercice$enonce = paste0(
-    "Quel mot se cache derri\u00e8re l id\u00e9e math\u00e9matique utilis\u00e9e ici ?\n\n",
+    "Quel mot se cache derri\u00e8re l\'id\u00e9e math\u00e9matique utilis\u00e9e ici ?\n\n",
     formule_lignes
   )
   exercice$reponse = notion
   exercice$correction = if (is.null(explication)) {
-    paste0("Cette propriete s appelle la ", notion, ".")
+    paste0("Cette propri\u00e9t\u00e9 s\'appelle la ", notion, ".")
   } else {
     explication
   }

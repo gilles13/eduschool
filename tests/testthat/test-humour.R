@@ -51,3 +51,32 @@ test_that("un aparte humoristique reste separe de l enonce", {
   expect_identical(ex$enonce, avant)
   expect_true(nzchar(ex$qcm$apart_humour))
 })
+
+test_that("l humour generique ne remplace jamais l aparte pedagogique nommer_notion", {
+  ex = generer_exercice("FRAC_QTE_001", "5E", seed = 4)
+  avant = ex
+
+  expect_false(.humour_disponible(ex))
+  apres = .ajouter_humour(ex)
+  expect_identical(apres$enonce, avant$enonce)
+  expect_identical(apres$qcm$apart_humour, avant$qcm$apart_humour)
+  expect_match(apres$qcm$apart_humour, "chelou", fixed = TRUE)
+  expect_false(grepl("formulaire de consentement", apres$qcm$apart_humour, fixed = TRUE))
+})
+
+
+test_that("les apartes de fractions restent correctement accentues", {
+  textes = unlist(.catalogue_humour[c("FRAC_ADD_001", "FRAC_QTE_001")], use.names = FALSE)
+  texte = paste(textes, collapse = "\n")
+
+  formes_ascii = c(
+    "accepte", "cooperer", "trouv\u00e9r", "d'etre", "qu'a l'ONU",
+    "irreconciliables", "a prononce", "pas valide", "lui-meme",
+    "a signe", "maltraite", "declarer", "pi\u00e8ge aussi trouv\u00e9"
+  )
+
+  for (forme in formes_ascii) {
+    expect_false(grepl(forme, texte, fixed = TRUE), info = forme)
+  }
+  expect_match(texte, "pi\u00e8ge aussi a trouv\u00e9", fixed = TRUE)
+})

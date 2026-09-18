@@ -104,3 +104,56 @@ test_that("programme propose trois niveaux de lecture explicites", {
   expect_identical(attr(capacites, "eduschool_detail"), "capacites")
   expect_identical(attr(complet, "eduschool_detail"), "complet")
 })
+
+
+test_that("une notion sans niveau construit un parcours transversal", {
+  x = exercices(notion = "fractions", seed = 2026, humour_ratio = 0)
+  ids = vapply(x, function(z) z$modele_id, character(1))
+  difficultes = vapply(x, function(z) z$difficulte, numeric(1))
+  niveaux = vapply(x, function(z) z$niveau_id, character(1))
+
+  expect_true(length(x) > length(unique(ids)))
+  expect_true(all(grepl("^FRAC_", ids)))
+  expect_true(all(diff(difficultes) >= 0))
+  expect_true(all(niveaux %in% c("6E", "5E")))
+  expect_true(all(c(1, 2, 3) %in% difficultes))
+})
+
+test_that("le niveau reste un filtre facultatif de la notion", {
+  x = exercices(notion = "fractions", n = 4, seed = 2026, humour_ratio = 0)
+  expect_length(x, 4L)
+
+  y = exercices(notion = "fractions", difficulte = 2, seed = 2026, humour_ratio = 0)
+  expect_true(length(y) > 0L)
+  expect_true(all(vapply(y, function(z) z$difficulte == 2, logical(1))))
+})
+
+test_that("exercices sans niveau ni notion refuse une demande indeterminee", {
+  expect_error(exercices(), "Sans `niveau`, une `notion` doit etre fournie", fixed = TRUE)
+})
+
+test_that("Pythagore fait distinguer une hypothese des autres informations", {
+  x = generer_exercice("PYTH_APPL_001", "4E", seed = 1)
+
+  expect_length(x$qcm$propositions, 4L)
+  expect_length(unique(x$qcm$propositions), 4L)
+  expect_identical(x$reponse, "Le codage indique que l’angle BAC est droit.")
+  expect_true(any(grepl("codage", x$qcm$propositions, fixed = TRUE)))
+  expect_match(x$correction, "[[Je vois]]", fixed = TRUE)
+  expect_match(x$correction, "[[Je sais]]", fixed = TRUE)
+  expect_match(x$correction, "[[J’en déduis]]", fixed = TRUE)
+  expect_identical(x$qcm$figure, "triangle_main_levee_angle_droit_A")
+})
+
+
+test_that("Pythagore propose plusieurs portes de raisonnement en QCM", {
+  ids = c("PYTH_IDENT_001", "PYTH_HYP_001", "PYTH_COTE_001", "PYTH_DIAG_001", "PYTH_APPL_001")
+  x = lapply(ids, function(id) generer_exercice(id, "4E", seed = 2026))
+
+  expect_true(all(vapply(x, function(z) !is.null(z$qcm), logical(1))))
+  expect_true(all(vapply(x, function(z) length(z$qcm$propositions) == 4L, logical(1))))
+  expect_true(all(vapply(x, function(z) length(unique(z$qcm$propositions)) == 4L, logical(1))))
+  expect_true(all(vapply(x, function(z) z$qcm$correcte %in% 1:4, logical(1))))
+  expect_true(all(c("identifier", "choisir_relation", "transformer_relation", "modeliser", "justifier") %in%
+                    vapply(x, function(z) z$qcm$intention, character(1))))
+})

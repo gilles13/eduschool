@@ -35,27 +35,27 @@
     " Les verres sont identiques, sinon ce serait franchement chiant.",
 
   "FRAC_ADD_001" = c(
-    " Les d\u00e9nominateurs ont accepte de cooperer. Merci de ne pas les brusquer.",
-    " Le d\u00e9nominateur commun : m\u00eame les fractions finissent par trouv\u00e9r un terrain d'entente.",
+    " Les d\u00e9nominateurs ont accept\u00e9 de coop\u00e9rer. Merci de ne pas les brusquer.",
+    " Le d\u00e9nominateur commun : m\u00eame les fractions finissent par trouver un terrain d'entente.",
     " Deux fractions entrent dans un calcul. Une seule en ressort. Aucun num\u00e9rateur n'a souhait\u00e9 t\u00e9moigner.",
     " On met tout le monde au m\u00eame d\u00e9nominateur. D\u00e9mocratie math\u00e9matique, avec simplification au second tour.",
     " Les fractions se rapprochent. Merci de respecter leur intimit\u00e9.",
-    " Un d\u00e9nominateur commun vient d'etre trouv\u00e9. Les n\u00e9gociations ont \u00e9t\u00e9 plus rapides qu'a l'ONU.",
-    " Additionner les num\u00e9rateurs directement serait tentant. Le pi\u00e8ge aussi trouv\u00e9 l\u2019id\u00e9e excellente.",
+    " Un d\u00e9nominateur commun vient d'\u00eatre trouv\u00e9. Les n\u00e9gociations ont \u00e9t\u00e9 plus rapides qu'\u00e0 l'ONU.",
+    " Additionner les num\u00e9rateurs directement serait tentant. Le pi\u00e8ge aussi a trouv\u00e9 l\u2019id\u00e9e excellente.",
     " Encore une addition de fractions. Quelque part, un d\u00e9nominateur cherche d\u00e9j\u00e0 un avocat.",
-    " Les fractions \u00e9taient irreconciliables. Puis quelqu'un a prononce les mots d\u00e9nominateur commun.",
-    " Rien ne se perd, rien ne se cr\u00e9e, tout se met au m\u00eame d\u00e9nominateur. Lavoisier n'a pas valide cette phrase."
+    " Les fractions \u00e9taient irr\u00e9conciliables. Puis quelqu'un a prononc\u00e9 les mots d\u00e9nominateur commun.",
+    " Rien ne se perd, rien ne se cr\u00e9e, tout se met au m\u00eame d\u00e9nominateur. Lavoisier n'a pas valid\u00e9 cette phrase."
   ),
 
   "FRAC_QTE_001" = c(
     " Une fraction d'un nombre reste un nombre. Jusqu'ici, l'univers tient bon.",
     " On ne prend qu'une fraction du nombre. Inutile d'appeler les secours.",
-    " Le nombre va perdre une partie de lui-meme. Il a signe le formulaire de consentement.",
+    " Le nombre va perdre une partie de lui-m\u00eame. Il a sign\u00e9 le formulaire de consentement.",
     " Une petite fraction, un grand calcul. Enfin... gardons le sens des proportions.",
-    " Aucun nombre n'a \u00e9t\u00e9 maltraite pendant la fabrication de cet exercice.",
+    " Aucun nombre n'a \u00e9t\u00e9 maltrait\u00e9 pendant la fabrication de cet exercice.",
     " Calculer une fraction d'un nombre : la division fait le tri, la multiplication finit le travail.",
-    " Le nombre est entier au d\u00e9but. Pour la suite, son avocat nous conseille de ne rien declarer.",
-    " Une fraction vient reclamer sa part. Le service comptable est formel : il faut calculer.",
+    " Le nombre est entier au d\u00e9but. Pour la suite, son avocat nous conseille de ne rien d\u00e9clarer.",
+    " Une fraction vient r\u00e9clamer sa part. Le service comptable est formel : il faut calculer.",
     " Si le r\u00e9sultat semble \u00e9trange, rassure-toi : nous avons d\u00e9j\u00e0 vu un bouton HTML traverser la quatri\u00e8me dimension.",
     " Une fraction de nombre, c'est moins spectaculaire qu'une porte interdimensionnelle, mais nettement plus simple \u00e0 tester."
   )
@@ -73,6 +73,8 @@
 }
 
 .humour_disponible = function(exercice) {
+  if (identical(exercice$qcm$forme_question, "nommer_notion")) return(FALSE)
+
   feedback_humour = exercice$qcm$feedback_humour
   if (!is.null(feedback_humour) && length(feedback_humour) == 4L) {
     return(TRUE)
@@ -81,6 +83,8 @@
 }
 
 .ajouter_humour = function(exercice) {
+  if (identical(exercice$qcm$forme_question, "nommer_notion")) return(exercice)
+
   feedback_humour = exercice$qcm$feedback_humour
   if (!is.null(feedback_humour) && length(feedback_humour) == 4L) {
     exercice$qcm$feedback = feedback_humour

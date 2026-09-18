@@ -68,14 +68,15 @@ revision = function(niveau, theme = NULL) {
   unique(items$item_id[items$item_id %in% ids & items$niveau == niveau])
 }
 
-.capacites_notion = function(niveau, notion) {
+.capacites_notion = function(niveau = NULL, notion) {
   concept = try(.resoudre_notion(notion), silent = TRUE)
   items = .lire_csv("programmes", "programme_items.csv")
 
   if (!inherits(concept, "try-error")) {
     liens = .lire_csv("mathematiques", "concepts_items.csv")
     ids = liens$item_id[liens$concept_id == concept$concept_id[[1L]]]
-    ids = items$item_id[items$item_id %in% ids & items$niveau == niveau]
+    ids = items$item_id[items$item_id %in% ids]
+    if (!is.null(niveau)) ids = ids[items$niveau[match(ids, items$item_id)] == niveau]
     return(unique(ids))
   }
 
@@ -85,7 +86,9 @@ revision = function(niveau, theme = NULL) {
 }
 
 #' @rdname exercices
-#' @param niveau Niveau scolaire.
+#' @param niveau Niveau scolaire facultatif. Sans niveau, une `notion` doit etre
+#'   fournie et eduschool construit un parcours transversal, des questions les
+#'   plus simples aux plus difficiles.
 #' @param notion Notion a travailler, en langage courant, par exemple
 #'   `"pythagore"` ou `"fractions"`.
 #' @param capacite Identifiant de capacite facultatif pour un pilotage avance.
@@ -94,7 +97,7 @@ revision = function(niveau, theme = NULL) {
 #'   soit environ un exercice sur cinq.
 #' @export
 exercices = function(
-  niveau,
+  niveau = NULL,
   notion = NULL,
   capacite = NULL,
   n = 5,
@@ -105,6 +108,9 @@ exercices = function(
 ) {
   if (!is.null(notion) && !is.null(capacite)) {
     stop("Utiliser `notion` ou `capacite`, pas les deux.", call. = FALSE)
+  }
+  if (is.null(niveau) && is.null(notion)) {
+    stop("Sans `niveau`, une `notion` doit etre fournie.", call. = FALSE)
   }
 
   if (!is.numeric(humour_ratio) || length(humour_ratio) != 1L ||
@@ -131,24 +137,71 @@ exercices = function(
   modeles = modeles[modeles$modele_id %in% ids, , drop = FALSE]
 
   if (!nrow(modeles)) {
+    precision = if (is.null(niveau)) "" else paste0(" pour le niveau ", niveau)
     stop(
-      "La notion ", sQuote(notion), " est connue d'eduschool pour le niveau ",
-      niveau, ", mais aucun modele d'exercice n'est encore disponible.",
+      "La notion ", sQuote(notion), " est connue d'eduschool", precision,
+      ", mais aucun modele d'exercice n'est encore disponible.",
       call. = FALSE
     )
   }
 
-  ids = rep(modeles$modele_id, length.out = n)
-  lot = lapply(seq_len(n), function(i) {
-    modele_id = ids[[i]]
-    capacite_id = catalogue$liens$capacite_id[
-      catalogue$liens$modele_id == modele_id & catalogue$liens$capacite_id %in% capacites
-    ][[1L]]
-    generer_exercice(
-      modele_id, niveau, capacite_id, difficulte,
-      seed = seed + i - 1L, afficher = FALSE
-    )
-  })
+  if (is.null(niveau)) {
+    items = .lire_csv("programmes", "programme_items.csv")
+    liens = catalogue$liens[
+      catalogue$liens$modele_id %in% modeles$modele_id &
+        catalogue$liens$capacite_id %in% capacites,
+      , drop = FALSE
+    ]
+    liens$niveau_id = items$niveau[match(liens$capacite_id, items$item_id)]
+    niveaux_modeles = stats::setNames(modeles$niveaux, modeles$modele_id)
+    compatible = vapply(seq_len(nrow(liens)), function(i) {
+      liens$niveau_id[[i]] %in% strsplit(niveaux_modeles[[liens$modele_id[[i]]]], "\\|")[[1L]]
+    }, logical(1))
+    liens = liens[compatible & !is.na(liens$niveau_id), , drop = FALSE]
+    liens = liens[!duplicated(liens$modele_id), , drop = FALSE]
+
+    parcours = do.call(rbind, lapply(seq_len(nrow(modeles)), function(i) {
+      m = modeles[i, , drop = FALSE]
+      lien = liens[liens$modele_id == m$modele_id, , drop = FALSE]
+      if (!nrow(lien)) return(NULL)
+      difficultes = seq.int(as.integer(m$difficulte_min), as.integer(m$difficulte_max))
+      data.frame(
+        modele_id = m$modele_id,
+        capacite_id = lien$capacite_id[[1L]],
+        niveau_id = lien$niveau_id[[1L]],
+        difficulte = difficultes,
+        stringsAsFactors = FALSE
+      )
+    }))
+    parcours = parcours[order(parcours$difficulte), , drop = FALSE]
+
+    if (!missing(difficulte)) {
+      parcours = parcours[parcours$difficulte == difficulte, , drop = FALSE]
+    }
+    if (!nrow(parcours)) {
+      stop("Aucun exercice disponible pour cette difficulte.", call. = FALSE)
+    }
+    if (!missing(n)) parcours = parcours[rep(seq_len(nrow(parcours)), length.out = n), , drop = FALSE]
+
+    lot = lapply(seq_len(nrow(parcours)), function(i) {
+      generer_exercice(
+        parcours$modele_id[[i]], parcours$niveau_id[[i]], parcours$capacite_id[[i]],
+        parcours$difficulte[[i]], seed = seed + i - 1L, afficher = FALSE
+      )
+    })
+  } else {
+    ids = rep(modeles$modele_id, length.out = n)
+    lot = lapply(seq_len(n), function(i) {
+      modele_id = ids[[i]]
+      capacite_id = catalogue$liens$capacite_id[
+        catalogue$liens$modele_id == modele_id & catalogue$liens$capacite_id %in% capacites
+      ][[1L]]
+      generer_exercice(
+        modele_id, niveau, capacite_id, difficulte,
+        seed = seed + i - 1L, afficher = FALSE
+      )
+    })
+  }
 
   if (humour_ratio > 0) {
     disponibles = which(vapply(lot, .humour_disponible, logical(1)))

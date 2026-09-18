@@ -9,53 +9,131 @@
 
 generer_pythagore_identifier = function(niveau_id = "4E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
+  textes = .textes_exercice("pythagore", "PYTH_IDENT_001")
   angle = sample(c("A", "B", "C"), 1L)
   autres = setdiff(c("A", "B", "C"), angle)
   hyp = paste0(autres, collapse = "")
   cote1 = paste0(angle, autres[[1L]])
   cote2 = paste0(angle, autres[[2L]])
-  enonce = sprintf("ABC est un triangle rectangle en %s. Quel est son hypot\u00e9nuse ? \u00e9crire ensuite l'\u00e9galit\u00e9 de Pythagore adapt\u00e9e \u00e0 ce triangle.", angle)
-  reponse = sprintf("%s ; %s^2 = %s^2 + %s^2", hyp, hyp, cote1, cote2)
-  correction = sprintf("L'hypot\u00e9nuse est le c\u00f4t\u00e9 oppos\u00e9 \u00e0 l'angle droit : c'est %s. D'apr\u00e8s le th\u00e9or\u00e8me de Pythagore, %s^2 = %s^2 + %s^2.", hyp, hyp, cote1, cote2)
-  creer_exercice("PYTH_IDENT_001", niveau_id, capacite_id, difficulte, enonce, reponse, correction,
-                 list(angle_droit=angle,hypotenuse=hyp,cote1=cote1,cote2=cote2), seed)
+  propositions = c(hyp, cote1, cote2, angle)
+  ordre = sample(seq_len(4L))
+  correction = sprintf(textes[["correction"]], angle, hyp, hyp, cote1, cote2)
+  qcm = list(
+    intention = "identifier",
+    forme_question = "raisonnement",
+    notion = textes[["notion"]],
+    rappel = textes[["rappel"]],
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = rep(correction, 4L)
+  )
+  creer_exercice(
+    "PYTH_IDENT_001", niveau_id, capacite_id, difficulte,
+    sprintf(textes[["enonce"]], angle), hyp, correction,
+    list(angle_droit = angle, hypotenuse = hyp, cote1 = cote1, cote2 = cote2), seed, qcm = qcm
+  )
 }
 
 generer_pythagore_hypotenuse = function(niveau_id = "4E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
-  t = .triangle_pythagoricien(difficulte); a=t[[1L]]; b=t[[2L]]; c=t[[3L]]
-  enonce = sprintf("ABC est rectangle en A, avec AB = %d cm et AC = %d cm. Calculer BC.", a, b)
-  correction = sprintf("BC est l'hypot\u00e9nuse. D'apr\u00e8s le th\u00e9or\u00e8me de Pythagore, BC^2 = AB^2 + AC^2 = %d^2 + %d^2 = %d. Donc BC = %d cm.", a,b,c^2,c)
-  creer_exercice("PYTH_HYP_001", niveau_id, capacite_id, difficulte, enonce, paste0(c," cm"), correction, list(a=a,b=b,c=c), seed)
+  textes = .textes_exercice("pythagore", "PYTH_HYP_001")
+  t = .triangle_pythagoricien(difficulte); a = t[[1L]]; b = t[[2L]]; c = t[[3L]]
+  propositions = vapply(c("relation_correcte", "relation_sans_carres", "relation_mauvais_cote", "relation_difference"), function(id) textes[[id]], character(1))
+  ordre = sample(seq_len(4L))
+  correction = sprintf(textes[["correction"]], a, b, c^2, c)
+  qcm = list(
+    intention = "choisir_relation",
+    forme_question = "raisonnement",
+    notion = textes[["notion"]],
+    rappel = textes[["rappel"]],
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = c(correction, textes[["feedback_sans_carres"]], textes[["feedback_mauvais_cote"]], textes[["feedback_difference"]])[ordre]
+  )
+  creer_exercice(
+    "PYTH_HYP_001", niveau_id, capacite_id, difficulte,
+    sprintf(textes[["enonce"]], a, b), textes[["relation_correcte"]], correction,
+    list(a = a, b = b, c = c), seed, qcm = qcm
+  )
 }
 
 generer_pythagore_cote = function(niveau_id = "4E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
-  t = .triangle_pythagoricien(difficulte); a=t[[1L]]; b=t[[2L]]; c=t[[3L]]
-  enonce = sprintf("ABC est rectangle en A, avec AC = %d cm et BC = %d cm. Calculer AB.", b, c)
-  correction = sprintf("BC est l'hypot\u00e9nuse. D'apr\u00e8s le th\u00e9or\u00e8me de Pythagore, AB^2 = BC^2 - AC^2 = %d^2 - %d^2 = %d. Donc AB = %d cm.", c,b,a^2,a)
-  creer_exercice("PYTH_COTE_001", niveau_id, capacite_id, difficulte, enonce, paste0(a," cm"), correction, list(a=a,b=b,c=c), seed)
+  textes = .textes_exercice("pythagore", "PYTH_COTE_001")
+  t = .triangle_pythagoricien(difficulte); a = t[[1L]]; b = t[[2L]]; c = t[[3L]]
+  propositions = vapply(c("relation_correcte", "relation_addition", "relation_inversee", "relation_sans_carres"), function(id) textes[[id]], character(1))
+  ordre = sample(seq_len(4L))
+  correction = sprintf(textes[["correction"]], c, b, a^2, a)
+  qcm = list(
+    intention = "transformer_relation",
+    forme_question = "raisonnement",
+    notion = textes[["notion"]],
+    rappel = textes[["rappel"]],
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = c(correction, textes[["feedback_addition"]], textes[["feedback_inversee"]], textes[["feedback_sans_carres"]])[ordre]
+  )
+  creer_exercice(
+    "PYTH_COTE_001", niveau_id, capacite_id, difficulte,
+    sprintf(textes[["enonce"]], b, c), textes[["relation_correcte"]], correction,
+    list(a = a, b = b, c = c), seed, qcm = qcm
+  )
 }
 
 generer_pythagore_diagonale = function(niveau_id = "4E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
-  t = .triangle_pythagoricien(difficulte); largeur=t[[1L]]; longueur=t[[2L]]; diagonale=t[[3L]]
-  enonce = sprintf("Un rectangle mesure %d cm de longueur et %d cm de largeur. Calculer la longueur de sa diagonale.", longueur, largeur)
-  correction = sprintf("La diagonale forme avec la longueur et la largeur un triangle rectangle. D'apr\u00e8s le th\u00e9or\u00e8me de Pythagore, d^2 = %d^2 + %d^2 = %d. Donc d = %d cm.", longueur,largeur,diagonale^2,diagonale)
-  creer_exercice("PYTH_DIAG_001", niveau_id, capacite_id, difficulte, enonce, paste0(diagonale," cm"), correction, list(longueur=longueur,largeur=largeur,diagonale=diagonale), seed)
+  textes = .textes_exercice("pythagore", "PYTH_DIAG_001")
+  t = .triangle_pythagoricien(difficulte); largeur = t[[1L]]; longueur = t[[2L]]; diagonale = t[[3L]]
+  propositions = vapply(c("proposition_triangle_rectangle", "proposition_rectangle", "proposition_diagonales", "proposition_paralleles"), function(id) textes[[id]], character(1))
+  ordre = sample(seq_len(4L))
+  correction = sprintf(textes[["correction"]], longueur, largeur, diagonale^2, diagonale)
+  qcm = list(
+    intention = "modeliser",
+    forme_question = "raisonnement",
+    notion = textes[["notion"]],
+    rappel = textes[["rappel"]],
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = c(correction, textes[["feedback_rectangle"]], textes[["feedback_diagonales"]], textes[["feedback_paralleles"]])[ordre]
+  )
+  creer_exercice(
+    "PYTH_DIAG_001", niveau_id, capacite_id, difficulte,
+    sprintf(textes[["enonce"]], longueur, largeur), textes[["proposition_triangle_rectangle"]], correction,
+    list(longueur = longueur, largeur = largeur, diagonale = diagonale), seed, qcm = qcm
+  )
 }
 
 generer_pythagore_applicable = function(niveau_id = "4E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
-  rectangle = sample(c(TRUE, FALSE), 1L)
-  if (rectangle) {
-    enonce = "ABC est un triangle rectangle en A. On conna\u00eet AB et AC. Peut-on utiliser le th\u00e9or\u00e8me de Pythagore pour calculer BC ? Justifier."
-    reponse = "Oui"
-    correction = "Oui. ABC est rectangle en A : le th\u00e9or\u00e8me de Pythagore est applicable. BC est l'hypot\u00e9nuse et BC^2 = AB^2 + AC^2."
-  } else {
-    enonce = "ABC est un triangle quelconque. On conna\u00eet AB et AC, mais aucune information n'est donn\u00e9e sur ses angles. Peut-on utiliser le th\u00e9or\u00e8me de Pythagore pour calculer BC ? Justifier."
-    reponse = "Non"
-    correction = "Non. Le th\u00e9or\u00e8me de Pythagore s'applique \u00e0 un triangle dont on sait qu'il est rectangle. Ici, aucune information ne permet de l'affirmer."
-  }
-  creer_exercice("PYTH_APPL_001", niveau_id, capacite_id, difficulte, enonce, reponse, correction, list(triangle_rectangle=rectangle), seed)
+  textes = .textes_exercice("pythagore", "PYTH_APPL_001")
+
+  propositions = c(
+    textes[["proposition_rectangle"]],
+    textes[["proposition_deux_longueurs"]],
+    textes[["proposition_cote_cherche"]],
+    textes[["proposition_noms_sommets"]]
+  )
+  feedback = c(
+    textes[["correction"]],
+    textes[["feedback_deux_longueurs"]],
+    textes[["feedback_cote_cherche"]],
+    textes[["feedback_noms_sommets"]]
+  )
+  ordre = sample(seq_len(4L))
+  qcm = list(
+    intention = "justifier",
+    forme_question = "raisonnement",
+    notion = textes[["notion"]],
+    rappel = textes[["rappel"]],
+    propositions = propositions[ordre],
+    correcte = match(1L, ordre),
+    feedback = feedback[ordre],
+    figure = "triangle_main_levee_angle_droit_A"
+  )
+
+  creer_exercice(
+    "PYTH_APPL_001", niveau_id, capacite_id, difficulte,
+    textes[["enonce"]], textes[["reponse"]], textes[["correction"]],
+    list(triangle_rectangle = TRUE), seed, qcm = qcm
+  )
 }

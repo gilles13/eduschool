@@ -591,3 +591,46 @@ test_that("la correction du produit separe explication et calcul", {
   rendu = .html_correction(ex$correction)
   expect_html_contains(rendu, 'class="numerateur">(', "Le calcul compose doit etre structure comme une fraction.")
 })
+
+test_that("les textes enfant du parcours fractions conservent accents et apostrophes", {
+  notion = generer_exercice("FRAC_QTE_001", "5E", seed = 4)
+  expect_match(notion$enonce, "derrière l'idée mathématique utilisée", fixed = TRUE)
+  expect_match(notion$correction, "C'est le nom d'une propriété mathématique", fixed = TRUE)
+  expect_match(notion$correction, "ce qu'est une propriété mathématique", fixed = TRUE)
+
+  equivalence = generer_fraction_equivalente(seed = 1)
+  expect_match(equivalence$enonce, "égale à", fixed = TRUE)
+
+  comparaison = generer_fraction_comparer(seed = 1)
+  expect_match(comparaison$enonce, "complète correctement", fixed = TRUE)
+  expect_true(any(grepl("données", comparaison$qcm$feedback, fixed = TRUE)))
+})
+
+test_that("le rendu mathematique commun transforme les exposants entiers simples", {
+  rendu = .html_math("x^2 + 10^-3 + 1/2")
+  expect_html_contains(rendu, "x<sup>2</sup>", "Un carre doit etre rendu comme un exposant HTML.")
+  expect_html_contains(rendu, "10<sup>-3</sup>", "Un exposant entier negatif doit etre rendu en HTML.")
+  expect_html_contains(rendu, 'class="fraction"', "Le rendu des exposants ne doit pas casser celui des fractions.")
+})
+
+
+test_that("le RETEX fractions garde Lea et reclamer correctement accentues", {
+  expect_true("L\u00e9a" %in% .personnages_exercices)
+
+  humour = paste(unlist(.catalogue_humour["FRAC_QTE_001"], use.names = FALSE), collapse = "\n")
+  expect_match(humour, "r\u00e9clamer", fixed = TRUE)
+})
+
+
+test_that("le pilote Pythagore rend visible voir sans confondre avec savoir", {
+  ex = generer_exercice("PYTH_APPL_001", "4E", seed = 123)
+  fichier = tempfile(fileext = ".html")
+  html = paste(readLines(produire_quiz(list(ex), fichier = fichier, ouvrir = FALSE), warn = FALSE), collapse = "\n")
+
+  expect_gte(length(gregexpr("figure-qcm", html, fixed = TRUE)[[1L]]), 2L)
+  expect_match(html, "angle droit codé en A", fixed = TRUE)
+  expect_match(html, "Le codage indique", fixed = TRUE)
+  expect_match(html, "son apparence ne suffit pas.\n<strong>Je sais</strong>", fixed = TRUE)
+  expect_match(html, 'aria-label="Question 1">1.</span>', fixed = TRUE)
+  expect_match(html, "La r\u00e9ponse \u00e9tait donc : &laquo; Le codage indique", fixed = TRUE)
+})

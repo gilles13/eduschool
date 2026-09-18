@@ -40,7 +40,7 @@ generer_fiche(
 )
 
 exercices(
-  niveau,
+  niveau = NULL,
   notion = NULL,
   capacite = NULL,
   n = 5,
@@ -65,7 +65,9 @@ exercices(
 
 \item{n}{Nombre d'exercices.}
 
-\item{niveau}{Niveau scolaire.}
+\item{niveau}{Niveau scolaire facultatif. Sans niveau, une `notion` doit etre
+fournie et eduschool construit un parcours transversal, des questions les
+plus simples aux plus difficiles.}
 
 \item{notion}{Notion a travailler, en langage courant, par exemple
 `"pythagore"` ou `"fractions"`.}

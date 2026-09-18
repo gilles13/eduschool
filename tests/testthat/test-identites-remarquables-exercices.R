@@ -39,5 +39,60 @@ test_that("un quiz d identites remarquables est directement produisible", {
   html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
   expect_true(file.exists(sortie))
   expect_true(grepl("Identites remarquables", html, fixed = TRUE))
+  expect_true(grepl("<sup>2</sup>", html, fixed = TRUE))
+
+  rendus = vapply(x, function(ex) {
+                      paste(
+                            .html_math(ex$enonce),
+                            .html_math(ex$qcm$propositions),
+                            .html_correction(ex$correction),
+                            collapse = "\n"
+                      )
+  }, character(1))
+
+  expect_false(any(grepl("\\^-?[0-9]+", rendus, perl = TRUE)))
   expect_equal(length(x), 15L)
+})
+
+
+test_that("Ryacas valide les developpements produits par eduschool", {
+  skip_if_not_installed("Ryacas")
+
+  lot = lapply(1:100, function(seed) generer_identite_developper(seed = seed))
+
+  validations = vapply(lot, function(ex) {
+    commande = sprintf(
+      "TestYacas(%s, %s)",
+      ex$parametres$expression_depart,
+      ex$parametres$expression_resultat
+    )
+    identical(Ryacas::yac_str(commande), "True")
+  }, logical(1))
+
+  expect_true(all(validations))
+})
+
+test_that("la question d equivalence conserve le a accent grave", {
+  lot = lapply(1:100, function(seed) generer_identite_equivalence(seed = seed))
+  enonces = vapply(lot, function(ex) ex$enonce, character(1))
+
+  expect_true(all(grepl(" à ", enonces, fixed = TRUE)))
+  expect_false(any(grepl(" a ", enonces, fixed = TRUE)))
+})
+
+
+test_that("les identites distinguent visuellement multiplication et variable", {
+  lot = lapply(1:100, function(seed) generer_identite_signe(seed = seed))
+  corrections = vapply(lot, function(ex) ex$correction, character(1))
+
+  expect_true(any(grepl("2 \u00d7 \U0001d465 \u00d7", corrections, fixed = TRUE)))
+  expect_true(any(grepl("-2 \u00d7 \U0001d465 \u00d7", corrections, fixed = TRUE)))
+})
+
+test_that("la correction d equivalence distingue verifier et demontrer", {
+  ex = generer_identite_equivalence(seed = 2026)
+
+  expect_match(ex$correction, "vraie pour toutes les valeurs admises", fixed = TRUE)
+  expect_match(ex$correction, "ne suffit pas à démontrer l'identité", fixed = TRUE)
+  expect_identical(ex$qcm$feedback[[1L]], ex$correction)
 })

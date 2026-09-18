@@ -18,12 +18,13 @@
     x,
     perl = TRUE
   )
-  gsub(
+  x = gsub(
     "\\b([0-9]+)\\s*/\\s*([0-9]+)\\b",
     '<span class="fraction"><span class="numerateur">\\1</span><span class="denominateur">\\2</span></span>',
     x,
     perl = TRUE
   )
+  gsub("\\^(-?[0-9]+)", "<sup>\\1</sup>", x, perl = TRUE)
 }
 
 .html_correction = function(x) {
@@ -33,6 +34,18 @@
     "<strong>\\1</strong>",
     x,
     perl = TRUE
+  )
+}
+
+.html_figure_qcm = function(figure) {
+  if (is.null(figure) || !identical(figure, "triangle_main_levee_angle_droit_A")) return("")
+  paste0(
+    '<div class="figure-qcm" role="img" aria-label="Triangle ABC dessiné à main levée, avec angle droit codé en A">',
+    '<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
+    '<path d="M58 154 Q168 142 276 151 Q206 92 92 34 Q69 91 58 154" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',
+    '<path d="M62 132 L82 134 L80 153" fill="none" stroke="currentColor" stroke-width="3"/>',
+    '<text x="39" y="174">A</text><text x="282" y="169">B</text><text x="86" y="28">C</text>',
+    '</svg></div>'
   )
 }
 
@@ -193,9 +206,22 @@ produire_quiz = function(exercices, fichier = NULL,
     feedback = if (identical(forme_question, "nommer_notion")) {
       sprintf('<div class="feedback-notion">%s</div>', .html_correction(ex$correction))
     } else {
+      feedback_contenu = vapply(qcm$feedback, .html_correction, character(1))
+      figure_correction = .html_figure_qcm(qcm$figure)
+      if (nzchar(figure_correction)) {
+        feedback_contenu[[qcm$correcte]] = paste0(
+          feedback_contenu[[qcm$correcte]], figure_correction
+        )
+      }
+      feedback_contenu[[qcm$correcte]] = paste0(
+        feedback_contenu[[qcm$correcte]],
+        '<div class="reponse-explicite">La r\u00e9ponse \u00e9tait donc : &laquo; ',
+        .html_math(qcm$propositions[[qcm$correcte]]),
+        ' &raquo;</div>'
+      )
       paste(sprintf(
         '<div class="feedback-option" data-question="%d" data-option="%d">%s</div>',
-        i, seq_len(4L), vapply(qcm$feedback, .html_correction, character(1))
+        i, seq_len(4L), feedback_contenu
       ), collapse = "\n")
     }
     correcte = as.character(qcm$correcte)
@@ -225,17 +251,18 @@ produire_quiz = function(exercices, fichier = NULL,
                        '</tr></thead><tbody>', lignes, '</tbody></table>')
     }
     numero_question = ((i - 1L) %% questions_par_quiz) + 1L
+    figure = .html_figure_qcm(qcm$figure)
     sprintf(
       paste0(
         '<section class="question" data-question="%d" data-correct="%s" data-reponse="%s" data-modele="%s" data-forme="%s" data-contexte="%s" data-interaction="%s"%s>',
-        '<h2><span>Question %d</span>%s</h2><p class="enonce">%s</p>%s%s%s',
+        '<h2><span aria-label="Question %d">%d.</span>%s</h2>%s<p class="enonce">%s</p>%s%s%s',
         '<div class="retour" aria-live="polite"></div>%s</section>'
       ),
       i, correcte, .html_echapper(ex$reponse), .html_echapper(ex$modele_id),
       .html_echapper(forme_question),
       .html_echapper(if (!is.null(ex$parametres$cas)) ex$parametres$cas else ex$modele_id),
       .html_echapper(interaction), data_reponse,
-      numero_question, intention, .html_math(ex$enonce), tableau, propositions, apart,
+      numero_question, numero_question, intention, figure, .html_math(ex$enonce), tableau, propositions, apart,
       feedback
     )
   }, character(1))
@@ -279,12 +306,12 @@ produire_quiz = function(exercices, fichier = NULL,
     '.question{background:#fff;border:1px solid #d7dce0;border-radius:10px;padding:1rem 1.1rem;margin:1.2rem 0;box-shadow:0 1px 3px rgba(0,0,0,.035)}',
     '.question h2{font-size:1.05rem;margin:.1rem 0 .65rem;display:flex;align-items:center;justify-content:space-between;gap:.8rem}',
     '.intention{font-size:.72rem;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:#666;background:#f2f3f3;border-radius:999px;padding:.2rem .55rem}',
-    '.enonce{font-weight:650}.apart-humour{display:flex;gap:.55rem;align-items:flex-start;margin:.75rem 0 1rem;padding:.65rem .8rem;border-left:4px solid #7b61a8;background:#f7f3fb;border-radius:7px;font-family:"Comic Sans MS","Bradley Hand",cursive;color:#514263}.apart-icone{font-family:system-ui,sans-serif;font-size:1.15rem;line-height:1.25}.proposition{display:flex;gap:.65rem;align-items:center;padding:.6rem .5rem;border-radius:7px;cursor:pointer}',
+    '.enonce{font-weight:650}.figure-qcm{max-width:340px;margin:.4rem auto 1rem}.figure-qcm svg{display:block;width:100%;height:auto}.figure-qcm text{font:650 18px system-ui,sans-serif}.apart-humour{display:flex;gap:.55rem;align-items:flex-start;margin:.75rem 0 1rem;padding:.65rem .8rem;border-left:4px solid #7b61a8;background:#f7f3fb;border-radius:7px;font-family:"Comic Sans MS","Bradley Hand",cursive;color:#514263}.apart-icone{font-family:system-ui,sans-serif;font-size:1.15rem;line-height:1.25}.proposition{display:flex;gap:.65rem;align-items:center;padding:.6rem .5rem;border-radius:7px;cursor:pointer}',
     '.proposition:hover{background:#f4f5f6}.proposition input{margin-top:0;flex:0 0 auto;accent-color:var(--accent)}',
     '.question.juste{border-left:5px solid #2e7d32;background:#f1f8f2}.question.a-revoir{border-left:5px solid #d97706;background:#fff7ed}.question.sans-reponse{border-left:5px solid #999}',
     '.question.juste .retour{color:#256b2b}.question.a-revoir .retour{color:#b45309}.question.sans-reponse .retour{color:#666}',
     '.retour{margin-top:.8rem;font-weight:750}.feedback-option{display:none;margin-top:.4rem;padding:.65rem .75rem;background:#f6f7f7;border-left:4px solid var(--accent);border-radius:7px;white-space:pre-line}',
-    '.feedback-notion{display:none;margin-top:.55rem;padding:.7rem .8rem;border-left:4px solid var(--accent);background:#f6f7f7;border-radius:7px}',
+    '.feedback-notion{display:none;margin-top:.55rem;padding:.7rem .8rem;border-left:4px solid var(--accent);background:#f6f7f7;border-radius:7px;white-space:pre-line}',
     '.tableau-question{border-collapse:collapse;margin:.8rem 0 1.2rem;min-width:15rem}.tableau-question th,.tableau-question td{border:1px solid #c9ced6;padding:.45rem .8rem;text-align:right}.tableau-question th{text-align:left;background:#f4f5f7}',
     '.question[data-forme="nommer_notion"] .enonce{white-space:pre-line;line-height:1.8}.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.6rem 0}.actions button{font:inherit;font-weight:650;padding:.7rem 1rem;border:1px solid var(--accent);border-radius:8px;background:#fff;color:#222;cursor:pointer}.actions button:disabled{cursor:default;opacity:.6;filter:none}',
     '.actions .valider{background:var(--accent);color:#fff}.actions button:hover{filter:brightness(.97)}',
@@ -365,7 +392,8 @@ produire_quiz = function(exercices, fichier = NULL,
     ' zone.innerHTML="";',
     ' tirageCourant.forEach((idx,pos)=>{',
     '  const q=toutesQuestions[idx].cloneNode(true);',
-    '  q.querySelector("h2 span").textContent=`Question ${pos+1}`;',
+    '  q.querySelector("h2 span").textContent=`${pos+1}.`;',
+    '  q.querySelector("h2 span").setAttribute("aria-label",`Question ${pos+1}`);',
     '  const nom=`quiz_q_${pos+1}`;',
     '  q.querySelectorAll("input[type=radio]").forEach(x=>x.name=nom);',
     '  zone.appendChild(q);',

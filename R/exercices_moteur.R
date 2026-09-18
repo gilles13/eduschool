@@ -70,6 +70,7 @@ generer_addition_fractions = function(niveau_id = "6E", capacite_id = NA_charact
 
 generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
+  textes = .textes_exercice("proportionnalite", "PROP_001")
   cas = sample(c("cookies", "chaussettes", "crayons"), 1L)
   q1 = sample(2:8, 1); prix_unitaire = sample(2:12, 1); q2 = sample(setdiff(2:12, q1), 1)
   p1 = q1 * prix_unitaire; p2 = q2 * prix_unitaire
@@ -81,8 +82,8 @@ generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, dif
   } else {
     objet = "crayons"
   }
-  enonce = sprintf("%d %s coutent %d euros. Combien coutent %d %s au meme prix unitaire ?", q1, objet, p1, q2, objet)
-  correction = sprintf("Prix d'un objet : %d / %d = %d euros. Donc %d objets coutent %d x %d = %d euros.", p1, q1, prix_unitaire, q2, q2, prix_unitaire, p2)
+  enonce = sprintf(textes[["enonce"]], q1, objet, p1, q2, objet)
+  correction = sprintf(textes[["correction"]], p1, q1, prix_unitaire, q2, q2, prix_unitaire, p2)
 
   candidats = c(
     p1 + (q2 - q1),
@@ -91,10 +92,10 @@ generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, dif
     (q2 + 1) * prix_unitaire
   )
   feedback_candidats = c(
-    "Ajouter ou retirer seulement 1 euro par objet d'ecart ne conserve pas le meme prix unitaire.",
-    sprintf("%d euros est deja le prix de %d objets. Le multiplier directement par %d compte beaucoup trop d'objets.", p1, q1, q2),
-    sprintf("Ce prix correspond a %d objets, pas a %d.", q2 - 1, q2),
-    sprintf("Ce prix correspond a %d objets, pas a %d.", q2 + 1, q2)
+    textes[["feedback_ecart"]],
+    sprintf(textes[["feedback_total"]], p1, q1, q2),
+    sprintf(textes[["feedback_moins"]], q2 - 1, q2),
+    sprintf(textes[["feedback_plus"]], q2 + 1, q2)
   )
   garder = !duplicated(c(p2, candidats))[-1L] & candidats != p2
   distracteurs = candidats[garder][seq_len(3L)]
@@ -113,7 +114,6 @@ generer_proportion = function(niveau_id = "6E", capacite_id = NA_character_, dif
   creer_exercice("PROP_001", niveau_id, capacite_id, difficulte, enonce, paste0(p2, " euros"), correction,
                  list(cas = cas, q1 = q1, p1 = p1, q2 = q2, prix_unitaire = prix_unitaire), seed, qcm = qcm)
 }
-
 generer_fraction_quantite = function(niveau_id = "6E", capacite_id = NA_character_, difficulte = 1, seed = NULL) {
   if (!is.null(seed)) set.seed(seed)
   den = sample(c(2,3,4,5,6,8,10),1); num = sample(seq_len(den-1),1)

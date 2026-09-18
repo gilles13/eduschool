@@ -8,6 +8,22 @@ lire_catalogue_exercices = function() {
   list(modeles = modeles, liens = liens)
 }
 
+.textes_exercice = function(famille, modele_id) {
+  fichier = paste0("textes_", famille, ".csv")
+  x = .lire_csv("exercices", fichier)
+  x = x[x$modele_id == modele_id, , drop = FALSE]
+
+  if (!nrow(x)) {
+    stop("Textes d'exercice introuvables : ", modele_id, call. = FALSE)
+  }
+
+  if (anyDuplicated(x$texte_id)) {
+    stop("Identifiants de textes dupliques : ", modele_id, call. = FALSE)
+  }
+
+  stats::setNames(x$texte, x$texte_id)
+}
+
 selectionner_modeles = function(niveau_id = NULL, capacite_id = NULL) {
   cat = lire_catalogue_exercices()
   m = cat$modeles
