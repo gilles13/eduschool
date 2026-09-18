@@ -31,7 +31,9 @@ ensembles_nombres = function() {
 diagramme_ensembles_nombres = function() {
   ggplot2::ggplot() +
 
-    # R : nombres reels
+    # Les cadres partagent le meme centre : chaque nouveau cadre contient
+    # entierement le precedent, tandis que sa partie droite montre ce qu'il
+    # ajoute au parcours N -> Z -> D -> Q -> R.
     ggplot2::annotate(
       "rect",
       xmin = 0, xmax = 10,
@@ -41,151 +43,118 @@ diagramme_ensembles_nombres = function() {
       linewidth = 1.1,
       alpha = 0.55
     ) +
-
-    # Q : nombres rationnels
     ggplot2::annotate(
       "rect",
-      xmin = 0.8, xmax = 9.2,
-      ymin = 0.8, ymax = 8.8,
+      xmin = 0.7, xmax = 8.2,
+      ymin = 0.8, ymax = 9.2,
       fill = "#DFF0DF",
       colour = "#4F8A58",
       linewidth = 1.1,
       alpha = 0.70
     ) +
-
-    # D : nombres decimaux
     ggplot2::annotate(
       "rect",
-      xmin = 1.6, xmax = 8.4,
-      ymin = 1.6, ymax = 7.6,
+      xmin = 1.4, xmax = 6.6,
+      ymin = 1.6, ymax = 8.4,
       fill = "#FCECCB",
       colour = "#D99A2B",
       linewidth = 1.1,
       alpha = 0.75
     ) +
-
-    # Z : entiers relatifs
     ggplot2::annotate(
       "rect",
-      xmin = 2.4, xmax = 7.6,
-      ymin = 2.4, ymax = 6.4,
+      xmin = 2.1, xmax = 5.1,
+      ymin = 2.4, ymax = 7.6,
       fill = "#F6D7DC",
       colour = "#B84A5A",
       linewidth = 1.1,
       alpha = 0.80
     ) +
-
-    # N : nombres naturels
     ggplot2::annotate(
       "rect",
-      xmin = 3.2, xmax = 6.8,
-      ymin = 3.2, ymax = 5.2,
+      xmin = 2.8, xmax = 4.1,
+      ymin = 3.2, ymax = 6.8,
       fill = "#E5DDF4",
       colour = "#6D54A8",
       linewidth = 1.1,
       alpha = 0.85
     ) +
 
-    # Noms des ensembles
+    # Le coeur : les naturels.
     ggplot2::annotate(
-      "text",
-      x = 0.25, y = 9.65,
-      label = "\u211d  Nombres reels",
-      hjust = 0,
-      fontface = "bold",
-      size = 5.5
+      "text", x = 3.45, y = 5.75,
+      label = "\u2115", fontface = "bold", size = 8
     ) +
     ggplot2::annotate(
-      "text",
-      x = 1.05, y = 8.45,
-      label = "\u211a  Nombres rationnels",
-      hjust = 0,
-      fontface = "bold",
-      size = 5
+      "text", x = 3.45, y = 4.95,
+      label = "naturels", fontface = "bold", size = 4.3
     ) +
     ggplot2::annotate(
-      "text",
-      x = 1.85, y = 7.25,
-      label = "\U0001D53B  Nombres decimaux",
-      hjust = 0,
-      fontface = "bold",
-      size = 5
-    ) +
-    ggplot2::annotate(
-      "text",
-      x = 2.65, y = 6.05,
-      label = "\u2124  Entiers relatifs",
-      hjust = 0,
-      fontface = "bold",
-      size = 4.8
-    ) +
-    ggplot2::annotate(
-      "text",
-      x = 3.45, y = 4.85,
-      label = "\u2115  Nombres naturels",
-      hjust = 0,
-      fontface = "bold",
-      size = 4.8
+      "text", x = 3.45, y = 4.05,
+      label = "0   1   2   3   ...", size = 4.2
     ) +
 
-    # Exemples dans la zone propre a chaque ensemble
+    # Chaque zone propre repond a la question : qu'ajoute l'ensemble suivant ?
     ggplot2::annotate(
-      "text",
-      x = 8.7, y = 9.35,
-      label = "\u221a2    \u03c0",
-      size = 5
+      "text", x = 4.6, y = 6.95,
+      label = "\u2124  ajoute les entiers n\u00e9gatifs",
+      hjust = 0, fontface = "bold", size = 4.1
     ) +
     ggplot2::annotate(
-      "text",
-      x = 8.0, y = 8.05,
-      label = "2/3",
-      size = 5
+      "text", x = 4.6, y = 6.25,
+      label = "ex.  -2", hjust = 0, size = 4
     ) +
     ggplot2::annotate(
-      "text",
-      x = 7.2, y = 6.85,
-      label = "0,25",
-      size = 5
+      "text", x = 5.4, y = 7.75,
+      label = "\U0001D53B  ajoute les d\u00e9cimaux",
+      hjust = 0, fontface = "bold", size = 4.1
     ) +
     ggplot2::annotate(
-      "text",
-      x = 6.5, y = 5.65,
-      label = "-2",
-      size = 5
+      "text", x = 5.4, y = 7.05,
+      label = "ex.  0,25", hjust = 0, size = 4
     ) +
     ggplot2::annotate(
-      "text",
-      x = 5, y = 3.85,
-      label = "0     1     2     3",
-      size = 5
+      "text", x = 6.9, y = 8.55,
+      label = "\u211a  ajoute les fractions",
+      hjust = 0, fontface = "bold", size = 4.1
+    ) +
+    ggplot2::annotate(
+      "text", x = 6.9, y = 7.85,
+      label = "ex.  2/3", hjust = 0, size = 4
+    ) +
+    ggplot2::annotate(
+      "text", x = 8.5, y = 9.35,
+      label = "\u211d  ajoute les irrationnels",
+      hjust = 0, fontface = "bold", size = 4.1
+    ) +
+    ggplot2::annotate(
+      "text", x = 8.5, y = 8.65,
+      label = "ex.  \u221a2   \u03c0", hjust = 0, size = 4
     ) +
 
-    # Chaine d'inclusion
+    # La lecture symbolique reste explicite et se lit dans le meme sens.
     ggplot2::annotate(
       "text",
-      x = 5, y = -0.55,
+      x = 5, y = -0.65,
       label = "\u2115 \u2282 \u2124 \u2282 \U0001D53B \u2282 \u211a \u2282 \u211d",
       fontface = "bold",
       size = 6
     ) +
     ggplot2::annotate(
       "text",
-      x = 5, y = -1.05,
-      label = "Chaque ensemble est inclus dans le suivant",
+      x = 5, y = -1.15,
+      label = "Chaque ensemble contient le pr\u00e9c\u00e9dent et ajoute de nouveaux nombres.",
       size = 4
     ) +
 
     ggplot2::coord_fixed(
-      xlim = c(-0.2, 10.2),
-      ylim = c(-1.35, 10.2),
+      xlim = c(-0.2, 10.8),
+      ylim = c(-1.45, 10.2),
       clip = "off"
     ) +
     ggplot2::labs(
       title = "Les ensembles de nombres",
-      subtitle = paste(
-        "Chaque cadre contient entierement",
-        "les ensembles dessines a l'interieur."
-      )
+      subtitle = "Partir des naturels, puis regarder ce que chaque ensemble permet d'ajouter."
     ) +
     ggplot2::theme_void() +
     ggplot2::theme(
@@ -272,31 +241,31 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
     .qcm_ensembles(
       "ENS_R_MOT_001",
       paste0(
-        "Une personne est reelle dans le langage courant. ",
+        "Une personne est r\u00e9elle dans le langage courant. ",
         "Peut-on pour autant ecrire : cette personne appartient a R ?"
       ),
       "Non : R est un ensemble de nombres",
       c(
         "Oui : puisqu'elle existe reellement",
         "Non : R est un ensemble de nombres",
-        "Non : une personne ne peut pas etre negative",
-        "Oui : son age est un nombre reel"
+        "Non : une personne ne peut pas \u00eatre n\u00e9gative",
+        "Oui : son \u00e2ge est un nombre r\u00e9el"
       ),
       c(
         paste0(
-          "Ici, le mot reel change de sens. Dans le langage courant, une personne ",
-          "peut etre reelle ; en mathematiques, R contient des nombres."
+          "Ici, le mot r\u00e9el change de sens. Dans le langage courant, une personne ",
+          "peut \u00eatre r\u00e9elle ; en math\u00e9matiques, R contient des nombres."
         ),
         paste0(
-          "Exactement : une personne peut etre reelle au sens courant sans etre ",
-          "un nombre reel. Appartenir a R signifie etre un nombre reel."
+          "Exactement : une personne peut \u00eatre r\u00e9elle au sens courant sans \u00eatre ",
+          "un nombre r\u00e9el. Appartenir \u00e0 R signifie \u00eatre un nombre r\u00e9el."
         ),
         paste0(
           "Le probleme n'est pas le signe. Des nombres positifs et negatifs ",
           "appartiennent a R ; une personne n'est simplement pas un nombre."
         ),
         paste0(
-          "L'age d'une personne peut etre represente par un nombre reel, mais la ",
+          "L'\u00e2ge d'une personne peut \u00eatre repr\u00e9sent\u00e9 par un nombre r\u00e9el, mais la ",
           "personne et son age sont deux objets differents."
         )
       ),
@@ -310,7 +279,7 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       c(
         "Les naturels ne contiennent pas les entiers strictement negatifs.",
         "-2 est un entier relatif : -2 appartient a Z.",
-        "-2 a une ecriture decimale finie, mais Z est un ensemble plus petit.",
+        "-2 a une \u00e9criture d\u00e9cimale finie, mais Z est un ensemble plus petit.",
         "-2 est rationnel, mais Z est un ensemble plus petit."
       ),
       "classer", graines[[2L]]
@@ -323,7 +292,7 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       c(
         "0,25 n'est pas un entier naturel.",
         "0,25 n'est pas un entier relatif.",
-        "0,25 a une ecriture decimale finie : il appartient a D.",
+        "0,25 a une \u00e9criture d\u00e9cimale finie : il appartient \u00e0 D.",
         "0,25 est rationnel, mais D est un ensemble plus petit."
       ),
       "classer", graines[[3L]]
@@ -335,19 +304,19 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       c("\u2124", "\U0001D53B", "\u211a", "\u211d"),
       c(
         "2/3 n'est pas un entier relatif.",
-        "L'ecriture decimale de 2/3 est infinie periodique : 2/3 n'appartient pas a D.",
+        "L'\u00e9criture d\u00e9cimale de 2/3 est infinie p\u00e9riodique : 2/3 n'appartient pas \u00e0 D.",
         "2/3 est le quotient de deux entiers avec un denominateur non nul : il appartient a Q.",
-        "2/3 est reel, mais Q est un ensemble plus petit."
+        "2/3 est r\u00e9el, mais Q est un ensemble plus petit."
       ),
       "raisonner", graines[[4L]]
     ),
     .qcm_ensembles(
       "ENS_SYM_001",
-      "Quelle ecriture traduit correctement : 3 est un element de l'ensemble des naturels ?",
+      "Quelle \u00e9criture traduit correctement : 3 est un \u00e9l\u00e9ment de l'ensemble des naturels ?",
       "3 \u2208 \u2115",
       c("3 \u2208 \u2115", "3 \u2282 \u2115", "\u2115 \u2208 3", "\u2115 \u2282 3"),
       c(
-        "Le symbole d'appartenance relie un element a un ensemble : 3 appartient a N.",
+        "Le symbole d'appartenance relie un \u00e9l\u00e9ment \u00e0 un ensemble : 3 appartient \u00e0 N.",
         "Le symbole d'inclusion relie deux ensembles ; 3 est ici un nombre, pas un ensemble.",
         "L'ordre est inverse : c'est 3 qui appartient a N.",
         "L'inclusion relie deux ensembles et l'ordre est ici inverse."
@@ -362,7 +331,7 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       c(
         "Dans la convention scolaire usuelle en France, 0 appartient aux nombres naturels.",
         "0 est bien un entier relatif, mais N est un ensemble plus petit qui le contient deja.",
-        "0 a une ecriture decimale finie, mais N est un ensemble plus petit.",
+        "0 a une \u00e9criture d\u00e9cimale finie, mais N est un ensemble plus petit.",
         "0 est rationnel, mais N est un ensemble plus petit."
       ),
       "classer", graines[[6L]]
@@ -375,7 +344,7 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       c(
         "4/2 = 2. Le nombre 2 est naturel : le plus petit ensemble est donc N.",
         "4/2 = 2 est bien un entier relatif, mais N est plus petit et contient deja 2.",
-        "4/2 = 2 a une ecriture decimale finie, mais N est plus petit.",
+        "4/2 = 2 a une \u00e9criture d\u00e9cimale finie, mais N est plus petit.",
         "4/2 est un quotient d'entiers, mais il vaut 2 : N est le plus petit ensemble propose."
       ),
       "se-mefier", graines[[7L]]
@@ -387,9 +356,9 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       c("\u2124", "\U0001D53B", "\u211a", "\u211d"),
       c(
         "-0,5 n'est pas un entier relatif.",
-        "-0,5 a une ecriture decimale finie : il appartient a D.",
+        "-0,5 a une \u00e9criture d\u00e9cimale finie : il appartient \u00e0 D.",
         "-0,5 est rationnel, mais D est un ensemble plus petit.",
-        "-0,5 est reel, mais D est un ensemble plus petit."
+        "-0,5 est r\u00e9el, mais D est un ensemble plus petit."
       ),
       "classer", graines[[8L]]
     ),
@@ -399,9 +368,9 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       "\u211d",
       c("\U0001D53B", "\u211a", "\u211d", "\u2115"),
       c(
-        "La racine de 2 n'a pas d'ecriture decimale finie : elle n'appartient pas a D.",
+        "La racine de 2 n'a pas d'\u00e9criture d\u00e9cimale finie : elle n'appartient pas \u00e0 D.",
         "La racine de 2 est irrationnelle : elle ne peut pas s'ecrire comme quotient de deux entiers.",
-        "La racine de 2 est un nombre reel et n'appartient pas aux ensembles D ou Q.",
+        "La racine de 2 est un nombre r\u00e9el et n'appartient pas aux ensembles D ou Q.",
         "La racine de 2 n'est pas un entier naturel."
       ),
       "raisonner", graines[[9L]]
@@ -412,9 +381,9 @@ exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
       "x \u2208 \u211d",
       c("x \u2208 \u2115", "x \u2208 \u211d", "\u211d \u2208 x", "x \u2209 \u211a"),
       c(
-        "Un entier relatif peut etre negatif : il n'appartient donc pas necessairement a N.",
+        "Un entier relatif peut \u00eatre n\u00e9gatif : il n'appartient donc pas n\u00e9cessairement \u00e0 N.",
         "Comme Z est inclus dans D, Q puis R, tout entier relatif appartient aussi a R.",
-        "Le symbole d'appartenance relie un element a un ensemble ; R n'est pas un element du nombre x.",
+        "Le symbole d'appartenance relie un \u00e9l\u00e9ment \u00e0 un ensemble ; R n'est pas un \u00e9l\u00e9ment du nombre x.",
         "Tout entier relatif est rationnel : on peut l'ecrire comme quotient de lui-meme par 1."
       ),
       "inclure", graines[[10L]]

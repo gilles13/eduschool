@@ -65,7 +65,7 @@ exercices_ensembles_proportions = function(seed = NULL) {
       c(
         paste0(
           "Oui : 3/4 = 0,75, donc 75 % de 28 vaut 21. ",
-          "0,75 a une ecriture decimale finie et 21 est naturel."
+          "0,75 a une \u00e9criture d\u00e9cimale finie et 21 est naturel."
         ),
         paste0(
           "0,75 appartient bien a Q, mais D est un ensemble plus petit qui le contient. ",
@@ -90,7 +90,7 @@ exercices_ensembles_proportions = function(seed = NULL) {
         "0,4 appartient a R ; 6 appartient a Q"
       ),
       c(
-        "0,4 a une ecriture decimale finie : D. Le resultat 6 est un naturel : N.",
+        "0,4 a une \u00e9criture d\u00e9cimale finie : D. Le r\u00e9sultat 6 est un naturel : N.",
         "Les deux affirmations sont vraies, mais elles ne donnent pas les plus petits ensembles usuels.",
         "0,4 n'est pas un entier. En revanche 6 est deja dans N, plus petit que D.",
         "R et Q contiennent ces nombres, mais on peut les classer dans des ensembles plus petits."
@@ -103,18 +103,18 @@ exercices_ensembles_proportions = function(seed = NULL) {
         "Une quantite augmente de 25 %. On la multiplie donc par 1,25. ",
         "Quel est le plus petit ensemble usuel contenant ce coefficient multiplicateur ?"
       ),
-      "D, car 1,25 a une ecriture decimale finie",
+      "D, car 1,25 a une \u00e9criture d\u00e9cimale finie",
       c(
         "N, car 25 est un entier naturel",
-        "D, car 1,25 a une ecriture decimale finie",
+        "D, car 1,25 a une \u00e9criture d\u00e9cimale finie",
         "Q, car tout pourcentage est seulement rationnel",
-        "R, car un coefficient multiplicateur est toujours reel mais jamais decimal"
+        "R, car un coefficient multiplicateur est toujours r\u00e9el mais jamais d\u00e9cimal"
       ),
       c(
         "Le coefficient n'est pas 25 : une hausse de 25 % correspond au coefficient 1,25.",
         "Exact : 1,25 est decimal, donc son plus petit ensemble usuel est D.",
         "1,25 est bien rationnel, mais il appartient deja au sous-ensemble D.",
-        "1,25 est reel, mais il est aussi decimal : D est plus petit que R."
+        "1,25 est r\u00e9el, mais il est aussi d\u00e9cimal : D est plus petit que R."
       ),
       "ouvrir-vers-taux", graines[[3L]]
     ),
@@ -132,8 +132,8 @@ exercices_ensembles_proportions = function(seed = NULL) {
         "2/3 et 20 ont necessairement le meme plus petit ensemble"
       ),
       c(
-        "L'ecriture decimale de 2/3 est infinie periodique : 2/3 n'appartient pas a D.",
-        "Exact : la proportion est rationnelle non decimale, tandis que l'effectif obtenu est naturel.",
+        "L'\u00e9criture d\u00e9cimale de 2/3 est infinie p\u00e9riodique : 2/3 n'appartient pas \u00e0 D.",
+        "Exact : la proportion est rationnelle non d\u00e9cimale, tandis que l'effectif obtenu est naturel.",
         "2/3 n'est pas un entier naturel, tandis que 20 appartient bien a N.",
         "Une operation peut relier des nombres dont les plus petits ensembles sont differents."
       ),
@@ -155,10 +155,10 @@ exercices_ensembles_proportions = function(seed = NULL) {
       c(
         paste0(
           "Oui : 12,5 %, 0,125 et 1/8 representent la meme proportion. ",
-          "Comme 0,125 a une ecriture decimale finie, ce nombre appartient a D."
+          "Comme 0,125 a une \u00e9criture d\u00e9cimale finie, ce nombre appartient \u00e0 D."
         ),
         "1/8 = 0,125 : certaines fractions sont aussi des nombres decimaux.",
-        "12,5 % est une ecriture de la proportion 0,125 : on peut donc etudier le nombre qu'elle represente.",
+        "12,5 % est une \u00e9criture de la proportion 0,125 : on peut donc \u00e9tudier le nombre qu'elle repr\u00e9sente.",
         "Le resultat 4 et la proportion 0,125 sont deux nombres differents : leur classement peut donc differer."
       ),
       "relier-les-ecritures", graines[[5L]]

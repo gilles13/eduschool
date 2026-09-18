@@ -57,6 +57,11 @@ test_that("la revision fractions de 5e est disponible avant le quiz", {
   expect_identical(x$titre, "Fractions")
   expect_gte(nrow(x$blocs), 6L)
   expect_true("MAT_NOMBRES_RATIONNELS" %in% x$notions$notion_id)
+  repere = x$blocs[x$blocs$bloc_id == "B_5E_FRAC_01B", , drop = FALSE]
+  expect_equal(nrow(repere), 1L)
+  expect_false(grepl("double flèche", repere$contenu, fixed = TRUE))
+  expect_match(repere$apres_formule, "La double flèche se lit « équivaut à »", fixed = TRUE)
+  expect_match(repere$apres_formule, "de gauche à droite, mais aussi de droite à gauche", fixed = TRUE)
 })
 
 test_that("la fiche essentielle est distincte", {
@@ -117,6 +122,22 @@ test_that("les nouveaux reperes mathematiques du college sont relies", {
 
   relations = relations_concepts_math(concept_id = ids)
   expect_true(nrow(relations) >= length(ids))
+})
+
+test_that("un bloc de revision peut commenter une formule apres son affichage", {
+  blocs = eduschool:::.lire_csv("revision", "blocs.csv")
+  expect_true("apres_formule" %in% names(blocs))
+
+  template = readLines(
+    system.file("templates", "fiche_revision.Rmd", package = "eduschool"),
+    warn = FALSE,
+    encoding = "UTF-8"
+  )
+  ligne_formule = grep("b\\$formule", template)
+  ligne_apres = grep("b\\$apres_formule", template)
+  expect_length(ligne_formule, 1L)
+  expect_length(ligne_apres, 1L)
+  expect_gt(ligne_apres, ligne_formule)
 })
 
 test_that("les formules de revision utilisent un TeX canonique", {

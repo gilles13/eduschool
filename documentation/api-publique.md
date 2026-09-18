@@ -8,8 +8,10 @@ de quelques verbes courts :
 - `parcours()` : comprendre un niveau scolaire ;
 - `orientation()` : voir les bifurcations possibles ;
 - `programme()` : consulter les capacités d'un programme ;
-- `revision()` : obtenir une fiche de révision de mathématiques ;
-- `exercices()` : générer simplement un lot d'exercices.
+- `revision()` : préparer le contenu d'une fiche de révision de mathématiques ;
+- `exercices()` : générer simplement un lot d'exercices ;
+- `produire_fiche()` : rendre une fiche à partir d'une révision, d'exercices ou
+  d'un autre contenu pédagogique pris en charge.
 
 Cette façade ne remplace pas les fonctions historiques. Elle les compose et offre
 une convention plus facile à mémoriser.
@@ -26,7 +28,6 @@ besoin de contrôler précisément les données et les sorties :
 - révisions : `generer_revision()`, `generer_essentiel()`, `produire_revision()` ;
 - orientation : fonctions `parcoursup_*()`, `filieres_postbac()` et fonctions de diagrammes ;
 - mini-SI : `tables_si()`, `relations_si()`, `controle_integrite_si()` ;
-- données avancées : `ouvrir_base()` ;
 - ressources : `eduschool_path()`.
 
 ## Composition et contribution

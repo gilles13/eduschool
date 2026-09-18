@@ -151,8 +151,8 @@ plateformes_admission = function() {
   list(
     type = "orientation",
     titre = "Principales bifurcations d'orientation",
-    description = "Schema genere depuis inst/orientation/parcours_noeuds.csv et parcours_liens.csv.",
-    note = "Les parcours detailles et les possibilites locales peuvent etre plus nombreux que ce schema de synthese.",
+    description = "Sch\u00e9ma g\u00e9n\u00e9r\u00e9 depuis inst/orientation/parcours_noeuds.csv et parcours_liens.csv.",
+    note = "Les parcours d\u00e9taill\u00e9s et les possibilit\u00e9s locales peuvent \u00eatre plus nombreux que ce sch\u00e9ma de synth\u00e8se.",
     width = max(x) + 330,
     height = 520,
     nodes = nodes,
@@ -185,7 +185,7 @@ produire_schema_orientation_svg = function(fichier = NULL) {
   list(
     type = "parcoursup",
     titre = "Grandes etapes de Parcoursup",
-    description = "Schema genere depuis inst/orientation/parcoursup_etapes.csv.",
+    description = "Sch\u00e9ma g\u00e9n\u00e9r\u00e9 depuis inst/orientation/parcoursup_etapes.csv.",
     note = "Les dates sont volontairement separees de cette structure et stockees par campagne.",
     width = max(x) + 300,
     height = 340,

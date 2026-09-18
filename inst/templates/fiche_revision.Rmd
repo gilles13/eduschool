@@ -46,6 +46,7 @@ for (i in seq_len(nrow(r$blocs))) {
   }
   if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
   if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
+  if ("apres_formule" %in% names(b) && nzchar(b$apres_formule)) cat(b$apres_formule, "\n\n")
   if (nzchar(b$illustration_id)) {
     asset = eduschool:::.illustration_revision(b$illustration_id)
     if (nzchar(asset) && knitr::is_latex_output()) {

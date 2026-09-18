@@ -4,7 +4,7 @@
 
 Le package sépare trois couches : ressources persistantes (`inst/`), logique R (`R/`) et sorties utilisateur (`rapports/`, non versionnées).
 
-Les fonctions de consultation ne dépendent pas d'objets globaux. DuckDB est une couche de requête facultative, pas la source de vérité. Les CSV et Markdown restent les formats persistants et inspectables.
+Les fonctions de consultation ne dépendent pas d'objets globaux. Les CSV et Markdown restent les formats persistants et inspectables.
 
 ## Ressources
 

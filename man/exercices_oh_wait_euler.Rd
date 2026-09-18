@@ -7,14 +7,13 @@
 exercices_oh_wait_euler(seed = NULL)
 }
 \arguments{
-\item{seed}{Graine facultative utilisée pour mélanger les propositions.}
+\item{seed}{Graine facultative pour melanger les propositions.}
 }
 \value{
 Une liste de quatre exercices eduschool munis d'un QCM.
 }
 \description{
-Utilise le polynôme n^2 + n + 41 pour faire sentir la différence entre
-vérification, conjecture, contre-exemple et démonstration.
+Construit quatre exercices autour du polynome n^2 + n + 41.
 }
 \examples{
 \dontrun{

@@ -38,7 +38,7 @@ test_that("un quiz d identites remarquables est directement produisible", {
   sortie = produire_quiz(x, fichier = fichier, ouvrir = FALSE)
   html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
   expect_true(file.exists(sortie))
-  expect_true(grepl("Identites remarquables", html, fixed = TRUE))
+  expect_true(grepl("Identités remarquables", html, fixed = TRUE))
   expect_true(grepl("<sup>2</sup>", html, fixed = TRUE))
 
   rendus = vapply(x, function(ex) {
@@ -96,3 +96,16 @@ test_that("la correction d equivalence distingue verifier et demontrer", {
   expect_match(ex$correction, "ne suffit pas à démontrer l'identité", fixed = TRUE)
   expect_identical(ex$qcm$feedback[[1L]], ex$correction)
 })
+
+test_that("les exercices d'identites remarquables conservent les accents", {
+  reconnaitre = generer_identite_reconnaitre(seed = 2026)
+  developper = generer_identite_developper(seed = 2026)
+  factoriser = generer_identite_factoriser(seed = 2026)
+
+  expect_match(reconnaitre$enonce, "identité remarquable", fixed = TRUE)
+  expect_match(reconnaitre$enonce, "reconnaît-on", fixed = TRUE)
+  expect_match(developper$enonce, "Développer", fixed = TRUE)
+  expect_match(factoriser$correction, "reconnaît l'identité", fixed = TRUE)
+  expect_equal(reconnaitre$qcm$notion, "Identités remarquables")
+})
+

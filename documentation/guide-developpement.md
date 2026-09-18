@@ -37,19 +37,24 @@ La routine est donc :
 
 ### Texte destiné aux humains
 
-Le texte destiné à être lu par un humain est écrit **directement et
-lisiblement en UTF-8** dans les sources :
+Le français destiné à être lu par un humain reste correctement accentué.
+Dans les fichiers de données, la documentation et les autres sources UTF-8,
+il est écrit directement et lisiblement en UTF-8.
+
+Les fichiers `R/*.R` constituent un cas particulier : `R CMD check` exige
+des fichiers de code portables en ASCII. Les caractères non-ASCII présents
+dans les chaînes destinées aux humains y sont donc écrits avec des
+échappements Unicode, sans modifier le texte produit :
 
 ``` r
-"Vérifier beaucoup de cas peut faire naître une conjecture."
-"La propriété est vérifiée de 0 à 39."
-"1681 = 41 × 41"
+"V\u00e9rifier beaucoup de cas peut faire na\u00eetre une conjecture."
+"La propri\u00e9t\u00e9 est v\u00e9rifi\u00e9e de 0 \u00e0 39."
+"1681 = 41 \u00d7 41"
 ```
 
-Cela concerne notamment les énoncés, réponses, corrections, rappels,
-documentation, messages et commentaires destinés à être lus.
-
-Ne pas transformer une exigence de portabilité en français désaccentué.
+À l'exécution, ces chaînes produisent bien du français accentué. La
+portabilité du code ne doit jamais être obtenue en désaccentuant le texte
+affiché à l'utilisateur.
 
 ### Identifiants et syntaxes techniques
 
@@ -65,15 +70,15 @@ l'exige, par exemple une expression destinée à un CAS.
 
 ### Échappements Unicode
 
-Les formes telles que `\u00e9` ou `e\u0301` sont réservées aux cas où
-**la représentation Unicode elle-même fait partie du problème ou du
-test**.
+Dans `R/*.R`, les formes telles que `\u00e9` sont utilisées lorsque
+nécessaire pour satisfaire la contrainte de portabilité de `R CMD check`
+tout en produisant du français correctement accentué.
 
-Exemple légitime : vérifier explicitement la différence entre un `é`
-précomposé et un `e` suivi d'un accent combinant.
+Dans les autres sources UTF-8, elles restent réservées aux cas où la
+représentation Unicode elle-même fait partie du problème ou du test.
 
-Elles ne constituent pas la convention d'écriture du français
-pédagogique.
+Exemple : vérifier explicitement la différence entre un `é` précomposé et
+un `e` suivi d'un accent combinant.
 
 ### `showNonASCIIfile()`
 
@@ -202,6 +207,28 @@ stabilité, pas une preuve de perfection.
 
 Après les tests, regarder les sorties réellement destinées à
 l'utilisateur.
+
+## Fiches : comprendre, chercher, s’entraîner
+
+Une fiche n’est pas faite pour être cachée pendant qu’on apprend. Elle
+est faite pour être utilisée.
+
+Le chemin recherché est :
+
+`comprendre → règles sous les yeux → chercher → s’entraîner ensemble`
+
+Une représentation graphique entre dans une fiche lorsqu’elle aide
+réellement à comprendre ou à raisonner. Elle n’est ni obligatoire ni
+décorative : la représentation fait partie du savoir lorsqu’elle permet
+de mieux le voir.
+
+Le code R reste autant que possible derrière le rideau. L’objectif n’est
+pas de fabriquer des fiches avec R ; l’objectif est de faire des
+mathématiques avec les fiches produites.
+
+Ne pas figer prématurément le nombre ou la nature des types de fiches.
+Partir des usages réels, puis structurer seulement ce qui a trouvé du
+travail.
 
 ## Simplicité
 

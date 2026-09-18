@@ -597,6 +597,13 @@ test_that("les textes enfant du parcours fractions conservent accents et apostro
   expect_match(notion$enonce, "derrière l'idée mathématique utilisée", fixed = TRUE)
   expect_match(notion$correction, "C'est le nom d'une propriété mathématique", fixed = TRUE)
   expect_match(notion$correction, "ce qu'est une propriété mathématique", fixed = TRUE)
+  expect_match(notion$correction, "distributivité.\nC'est", fixed = TRUE)
+  expect_match(notion$correction, "mathématique :\n\na - a x b", fixed = TRUE)
+  expect_match(notion$correction, "facteur.\n\nTu ne savais", fixed = TRUE)
+
+  rendu_notion = .html_correction(notion$correction)
+  expect_match(rendu_notion, "distributivité.<br>\nC'est", fixed = TRUE)
+  expect_match(rendu_notion, "mathématique :<br>\n<br>\na - a x b", fixed = TRUE)
 
   equivalence = generer_fraction_equivalente(seed = 1)
   expect_match(equivalence$enonce, "égale à", fixed = TRUE)
@@ -630,7 +637,7 @@ test_that("le pilote Pythagore rend visible voir sans confondre avec savoir", {
   expect_gte(length(gregexpr("figure-qcm", html, fixed = TRUE)[[1L]]), 2L)
   expect_match(html, "angle droit codé en A", fixed = TRUE)
   expect_match(html, "Le codage indique", fixed = TRUE)
-  expect_match(html, "son apparence ne suffit pas.\n<strong>Je sais</strong>", fixed = TRUE)
+  expect_match(html, "son apparence ne suffit pas.<br>\n<strong>Je sais</strong>", fixed = TRUE)
   expect_match(html, 'aria-label="Question 1">1.</span>', fixed = TRUE)
   expect_match(html, "La r\u00e9ponse \u00e9tait donc : &laquo; Le codage indique", fixed = TRUE)
 })

@@ -1,9 +1,8 @@
 #' Labo OH WAIT : beaucoup d'exemples ne font pas une preuve
 #'
-#' Utilise le polynôme n^2 + n + 41 pour faire sentir la différence entre
-#' vérification, conjecture, contre-exemple et démonstration.
+#' Construit quatre exercices autour du polynome n^2 + n + 41.
 #'
-#' @param seed Graine facultative utilisée pour mélanger les propositions.
+#' @param seed Graine facultative pour melanger les propositions.
 #' @return Une liste de quatre exercices eduschool munis d'un QCM.
 #' @examples
 #' \dontrun{
@@ -11,6 +10,7 @@
 #'   produire_quiz(titre = "OH WAIT... beaucoup d'exemples suffisent-ils ?")
 #' }
 exercices_oh_wait_euler = function(seed = NULL) {
+  textes = .textes_exercice("oh_wait_euler", "OH_WAIT_EULER")
   graines = if (is.null(seed)) rep(list(NULL), 4L) else as.list(seed + 0:3)
   f = function(n) n^2 + n + 41
 
@@ -25,95 +25,42 @@ exercices_oh_wait_euler = function(seed = NULL) {
       intention = intention,
       seed = graine
     )
-    x$qcm$notion = "Vérifier, conjecturer, réfuter"
-    x$qcm$rappel = paste0(
-      "Vérifier beaucoup de cas peut faire naître une conjecture. ",
-      "Cela ne remplace pas une démonstration."
-    )
+    x$qcm$notion = textes[["notion"]]
+    x$qcm$rappel = paste0(textes[["rappel_1"]], " ", textes[["rappel_2"]])
     x
   }
 
   list(
     qcm(
       "OH_WAIT_EULER_OBSERVER_001",
-      paste0(
-        "On calcule f(n) = n^2 + n + 41. Pour n = 0, 1, 2 et 3, on obtient ",
-        f(0), ", ", f(1), ", ", f(2), " et ", f(3), ", qui sont premiers. ",
-        "Qu'est-il raisonnable de faire ensuite ?"
-      ),
-      "Tester d'autres valeurs et chercher si le motif continue",
-      c(
-        "Tester d'autres valeurs et chercher si le motif continue",
-        "Annoncer que f(n) est premier pour tout entier naturel n",
-        "Conclure que quatre exemples constituent une démonstration",
-        "Arrêter : les quatre calculs suffisent à traiter tous les entiers"
-      ),
-      c(
-        "Les premiers calculs suggèrent un motif : on peut poursuivre l'exploration avant de formuler ou tester une conjecture.",
-        "Les quatre valeurs calculées ne couvrent pas tous les entiers naturels.",
-        "Quatre exemples favorables restent quatre cas particuliers ; ils ne constituent pas une démonstration générale.",
-        "Il existe une infinité d'entiers naturels : quatre calculs ne traitent pas les cas non observés."
-      ),
+      paste0(textes[["observer_enonce_1"]], " ", f(0), ", ", f(1), ", ", f(2), " et ", f(3), textes[["observer_enonce_2"]]),
+      textes[["observer_reponse"]],
+      unname(textes[c("observer_reponse", "observer_p2", "observer_p3", "observer_p4")]),
+      unname(textes[c("observer_f1", "observer_f2", "observer_f3", "observer_f4")]),
       "observer-un-motif", graines[[1L]]
     ),
     qcm(
       "OH_WAIT_EULER_CONJECTURE_001",
-      paste0(
-        "On poursuit les calculs : f(n) est premier pour chaque entier n de 0 à 39. ",
-        "Que sait-on alors ?"
-      ),
-      "La propriété est vérifiée de 0 à 39 ; on peut conjecturer qu'elle continue",
-      c(
-        "La propriété est vérifiée de 0 à 39 ; on peut conjecturer qu'elle continue",
-        "La propriété est démontrée pour tout entier naturel",
-        "La propriété est vraie pour tous les entiers parce que 40 essais ont réussi",
-        "Il ne peut plus exister de contre-exemple après 39"
-      ),
-      c(
-        "Les quarante cas sont vérifiés, mais les entiers au-delà de 39 n'ont pas été traités : la généralisation reste une conjecture.",
-        "Une vérification finie, même longue, ne demontre pas une affirmation portant sur tous les entiers naturels.",
-        "Le nombre de succès ne transforme pas les cas non testés en cas démontrés.",
-        "Les calculs jusqu'à 39 ne donnent aucune garantie logique sur les valeurs suivantes."
-      ),
-      "distinguer-vérification-preuve", graines[[2L]]
+      textes[["conjecture_enonce"]],
+      textes[["conjecture_reponse"]],
+      unname(textes[c("conjecture_reponse", "conjecture_p2", "conjecture_p3", "conjecture_p4")]),
+      unname(textes[c("conjecture_f1", "conjecture_f2", "conjecture_f3", "conjecture_f4")]),
+      textes[["conjecture_intention"]], graines[[2L]]
     ),
     qcm(
       "OH_WAIT_EULER_CONTREEXEMPLE_001",
-      paste0(
-        "OH WAIT... calculons f(40). On obtient ", f(40), ". ",
-        "Quelle observation suffit à casser la conjecture selon laquelle f(n) serait toujours premier ?"
-      ),
-      "1681 = 41 × 41, donc f(40) n'est pas premier",
-      c(
-        "1681 = 41 × 41, donc f(40) n'est pas premier",
-        "1681 est plus grand que les valeurs précédentes",
-        "40 est un entier pair",
-        "41 est lui-même un nombre premier"
-      ),
-      c(
-        "Comme 1681 se factorise en 41 × 41, f(40) n'est pas premier : n = 40 est un contre-exemple.",
-        "Être plus grand que les valeurs précédentes n'empêche pas un nombre d'être premier.",
-        "La parité de n ne suffit pas a montrer que la valeur f(n) est composée.",
-        "Le fait que 41 soit premier n'implique pas que 41 × 41 le soit ; ce produit est composé."
-      ),
+      paste0(textes[["contre_enonce_1"]], f(40), textes[["contre_enonce_2"]]),
+      textes[["contre_reponse"]],
+      unname(textes[c("contre_reponse", "contre_p2", "contre_p3", "contre_p4")]),
+      unname(textes[c("contre_f1", "contre_f2", "contre_f3", "contre_f4")]),
       "trouver-le-contre-exemple", graines[[3L]]
     ),
     qcm(
       "OH_WAIT_EULER_BILAN_001",
-      "Que nous apprend cette expérience sur une affirmation qui prétend être vraie pour tout entier naturel ?",
-      "Des exemples favorables peuvent suggérer une conjecture ; un seul contre-exemple suffit à la réfuter",
-      c(
-        "Des exemples favorables peuvent suggérer une conjecture ; un seul contre-exemple suffit à la réfuter",
-        "Quarante exemples favorables valent toujours une démonstration",
-        "Une conjecture devient vraie dès qu'elle résiste assez longtemps",
-        "Un contre-exemple compte moins que plusieurs exemples favorables"
-      ),
-      c(
-        "Les cas de 0 à 39 ont rendu la conjecture plausible ; le seul cas n = 40 suffit pourtant a montrer qu'elle n'est pas vraie pour tout n.",
-        "Les quarante exemples établissent quarante cas, pas tous les entiers naturels.",
-        "Résister à des essais ne suffit pas a rendre universelle une affirmation non démontrée.",
-        "Pour une affirmation universelle, un seul cas qui satisfait les conditions mais pas la propriété suffit à la réfuter."
-      ),
+      textes[["bilan_enonce"]],
+      textes[["bilan_reponse"]],
+      unname(textes[c("bilan_reponse", "bilan_p2", "bilan_p3", "bilan_p4")]),
+      unname(textes[c("bilan_f1", "bilan_f2", "bilan_f3", "bilan_f4")]),
       "comprendre-exemple-contre-exemple", graines[[4L]]
     )
   )

@@ -3,7 +3,7 @@
 .selectionner_partie_redaction = function(structure, partie) {
   x = structure$parties
   if (length(partie) != 1L || is.na(partie)) {
-    stop("Une seule partie doit etre selectionnee.", call. = FALSE)
+    stop("Une seule partie doit \u00eatre s\u00e9lectionn\u00e9e.", call. = FALSE)
   }
 
   if (is.numeric(partie) || grepl("^[0-9]+$", as.character(partie))) {
@@ -32,10 +32,10 @@
   justification = if (partie$justification[[1]] == "NON_REQUISE_SAUF_INDICATION") {
     "Aucune justification n est demandee sauf indication contraire."
   } else {
-    "Les reponses doivent etre justifiees sauf indication contraire."
+    "Les r\u00e9ponses doivent \u00eatre justifi\u00e9es sauf indication contraire."
   }
   ramassage = if (partie$copies_ramassees[[1]] == "OUI") {
-    "La copie de cette partie est ramassee a la fin du temps imparti."
+    "La copie de cette partie est ramass\u00e9e \u00e0 la fin du temps imparti."
   } else {
     ""
   }
@@ -55,7 +55,7 @@
 #' @export
 rediger_examen = function(sujet, partie = 1) {
   if (!inherits(sujet, "eduschool_examen")) {
-    stop("sujet doit etre produit par composer_examen().", call. = FALSE)
+    stop("sujet doit \u00eatre produit par composer_examen().", call. = FALSE)
   }
 
   code = attr(sujet, "code")
@@ -65,7 +65,7 @@ rediger_examen = function(sujet, partie = 1) {
   p = .selectionner_partie_redaction(structure, partie)
   items = sujet[sujet$partie_id == p$partie_id[[1]], , drop = FALSE]
   items = items[order(as.integer(items$ordre)), , drop = FALSE]
-  if (!nrow(items)) stop("Aucun item a rediger pour cette partie.", call. = FALSE)
+  if (!nrow(items)) stop("Aucun item \u00e0 r\u00e9diger pour cette partie.", call. = FALSE)
 
   lignes = vector("list", nrow(items))
   ressources = list()

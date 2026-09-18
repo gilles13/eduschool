@@ -1,5 +1,5 @@
 # ============================================================
-# Moteur de génération d'exercices
+# Moteur de g\u00e9n\u00e9ration d'exercices
 # ============================================================
 
 pgcd = function(a, b) {
@@ -155,7 +155,7 @@ generer_pythagore = function(niveau_id = "4E", capacite_id = NA_character_, diff
     )
     reponse = paste0(c, " cm")
     correction = sprintf(
-      "BC est l'hypotenuse. D'apres le theoreme de Pythagore, BC^2 = AB^2 + AC^2 = %d^2 + %d^2 = %d. Donc BC = %d cm.",
+      "BC est l'hypot\u00e9nuse. D'apr\u00e8s le th\u00e9or\u00e8me de Pythagore, BC^2 = AB^2 + AC^2 = %d^2 + %d^2 = %d. Donc BC = %d cm.",
       a, b, c^2, c
     )
   } else {
@@ -165,7 +165,7 @@ generer_pythagore = function(niveau_id = "4E", capacite_id = NA_character_, diff
     )
     reponse = paste0(a, " cm")
     correction = sprintf(
-      "BC est l'hypotenuse. D'apres le theoreme de Pythagore, AB^2 = BC^2 - AC^2 = %d^2 - %d^2 = %d. Donc AB = %d cm.",
+      "BC est l'hypot\u00e9nuse. D'apr\u00e8s le th\u00e9or\u00e8me de Pythagore, AB^2 = BC^2 - AC^2 = %d^2 - %d^2 = %d. Donc AB = %d cm.",
       c, b, a^2, a
     )
   }

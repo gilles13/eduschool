@@ -16,10 +16,10 @@ produire_corrige(
 )
 }
 \arguments{
-\item{exercices}{Liste d'exercices produite par [exercices()] ou
-[generer_fiche()], chemin vers un fichier Markdown (`.md`), matrice ou
-`data.frame`. Un tableau de notions peut contenir `categorie`, `statut` et
-`ordre`.}
+\item{exercices}{Contenu a rendre : objet `eduschool_revision`, liste
+d'exercices produite par [exercices()] ou [generer_fiche()], chemin vers un
+fichier Markdown (`.md`), matrice ou `data.frame`. Le nom de l'argument est
+conserve pour compatibilite avec l'API existante.}
 
 \item{fichier}{Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 construit automatiquement a partir du niveau et de la capacite.}

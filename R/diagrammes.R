@@ -37,9 +37,9 @@ diagrammes_disponibles = function() {
     ),
     description = c(
       "Coll\u00e8ge, seconde g\u00e9n\u00e9rale et technologique, voie g\u00e9n\u00e9rale et s\u00e9ries technologiques.",
-      "Chemin court entre les r\u00e9f\u00e9rentiels, la consultation, les rappels, les exercices et DuckDB.",
+      "Chemin court entre les r\u00e9f\u00e9rentiels, la consultation, les rappels et les exercices.",
       "Relations entre programmes, capacit\u00e9s, notions, rappels et exercices.",
-      "Relations entre r\u00e9f\u00e9rentiels CSV, API R, DuckDB, documentation, exercices et sorties.",
+      "Relations entre r\u00e9f\u00e9rentiels CSV, API R, documentation, exercices et sorties.",
       "S\u00e9paration entre sources officielles, capacit\u00e9s, notions, pr\u00e9requis et rappels p\u00e9dagogiques.",
       "Du choix d'une capacit\u00e9 \u00e0 la g\u00e9n\u00e9ration d\u00e9terministe d'exercices et de rapports.",
       "Contr\u00f4les des donn\u00e9es, tests unitaires, construction du package et documentation.",
@@ -396,20 +396,20 @@ generer_documentation_visuelle = function(
 
 .graphe_prise_en_main = function() {
   nodes = .noeuds(
-    c("PKG", "REF", "CONS", "DOC", "EXO", "DB", "SORTIE"),
+    c("PKG", "REF", "CONS", "DOC", "EXO", "SORTIE"),
     c(
       "library(eduschool)", "R\u00e9f\u00e9rentiels\nCSV", "Consultation\ndes programmes",
-      "Rappels et\nnotions", "Exercices\nd\u00e9terministes", "DuckDB\nsi n\u00e9cessaire",
+      "Rappels et\nnotions", "Exercices\nd\u00e9terministes",
       "Fiches, rapports\net analyses"
     ),
-    c(40, 300, 600, 600, 900, 600, 1220),
-    c(230, 230, 90, 230, 230, 370, 230),
-    w = c(220, 200, 220, 220, 220, 210, 250),
-    style = c("accent", "source", "normal", "normal", "normal", "database", "sortie")
+    c(40, 300, 600, 600, 900, 1220),
+    c(230, 230, 90, 230, 230, 230),
+    w = c(220, 200, 220, 220, 220, 250),
+    style = c("accent", "source", "normal", "normal", "normal", "sortie")
   )
   edges = rbind(
-    .liens(c("PKG", "REF", "REF", "REF", "REF"), c("REF", "CONS", "DOC", "EXO", "DB")),
-    .liens(c("CONS", "DOC", "EXO", "DB"), rep("SORTIE", 4))
+    .liens(c("PKG", "REF", "REF", "REF"), c("REF", "CONS", "DOC", "EXO")),
+    .liens(c("CONS", "DOC", "EXO"), rep("SORTIE", 3))
   )
   .graphe("prise_en_main", 1540, 540, nodes, edges)
 }
@@ -435,20 +435,20 @@ generer_documentation_visuelle = function(
 
 .graphe_architecture_si = function() {
   nodes = .noeuds(
-    c("CSV", "PROG", "DOC", "EXO", "DB", "API", "CONS", "REV", "GEN", "DIA", "OUT"),
+    c("CSV", "PROG", "DOC", "EXO", "API", "CONS", "REV", "GEN", "DIA", "OUT"),
     c(
       "R\u00e9f\u00e9rentiels CSV", "Programmes et\ncapacit\u00e9s", "Documentation\nMarkdown",
-      "Mod\u00e8les\nd'exercices", "DuckDB\noptionnel", "API R\neduschool",
+      "Mod\u00e8les\nd'exercices", "API R\neduschool",
       "Consultation", "Fiches de\nr\u00e9vision", "G\u00e9n\u00e9ration\nd'exercices",
       "Diagrammes\nHTML / SVG", "Sorties\nutilisateur"
     ),
-    c(40, 40, 40, 40, 340, 650, 970, 970, 970, 970, 1280),
-    c(60, 180, 300, 420, 180, 240, 60, 180, 300, 420, 240),
-    w = c(rep(220, 4), 210, 220, rep(220, 4), 220),
-    style = c(rep("source", 4), "database", "accent", rep("normal", 4), "sortie")
+    c(40, 40, 40, 40, 650, 970, 970, 970, 970, 1280),
+    c(60, 180, 300, 420, 240, 60, 180, 300, 420, 240),
+    w = c(rep(220, 4), 220, rep(220, 4), 220),
+    style = c(rep("source", 4), "accent", rep("normal", 4), "sortie")
   )
   edges = rbind(
-    .liens(c("CSV", "CSV", "PROG", "DOC", "EXO", "DB"), c("DB", "API", "API", "API", "API", "API")),
+    .liens(c("CSV", "PROG", "DOC", "EXO"), rep("API", 4)),
     .liens(rep("API", 4), c("CONS", "REV", "GEN", "DIA")),
     .liens(c("CONS", "REV", "GEN", "DIA"), rep("OUT", 4))
   )

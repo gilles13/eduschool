@@ -29,18 +29,19 @@
 
 .html_correction = function(x) {
   x = .html_math(x)
-  gsub(
+  x = gsub(
     "\\[\\[([^]]+)\\]\\]",
     "<strong>\\1</strong>",
     x,
     perl = TRUE
   )
+  gsub("\n", "<br>\n", x, fixed = TRUE)
 }
 
 .html_figure_qcm = function(figure) {
   if (is.null(figure) || !identical(figure, "triangle_main_levee_angle_droit_A")) return("")
   paste0(
-    '<div class="figure-qcm" role="img" aria-label="Triangle ABC dessiné à main levée, avec angle droit codé en A">',
+    '<div class="figure-qcm" role="img" aria-label="Triangle ABC dessin\u00e9 \u00e0 main lev\u00e9e, avec angle droit cod\u00e9 en A">',
     '<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
     '<path d="M58 154 Q168 142 276 151 Q206 92 92 34 Q69 91 58 154" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',
     '<path d="M62 132 L82 134 L80 153" fill="none" stroke="currentColor" stroke-width="3"/>',
@@ -90,7 +91,7 @@
     ), call. = FALSE)
   }
   if (length(qcm$propositions) != 4L || length(unique(qcm$propositions)) != 4L) {
-    stop("Un QCM eduschool doit proposer exactement quatre reponses distinctes.", call. = FALSE)
+    stop("Un QCM eduschool doit proposer exactement quatre r\u00e9ponses distinctes.", call. = FALSE)
   }
   if (length(qcm$correcte) != 1L || !qcm$correcte %in% seq_len(4L)) {
     stop("Un QCM eduschool doit avoir exactement une reponse correcte.", call. = FALSE)
@@ -127,14 +128,14 @@
 #' }
 #' @export
 produire_quiz = function(exercices, fichier = NULL,
-                         titre = "Mon entrainement eduschool",
+                         titre = "Mon entra\u00eenement eduschool",
                          questions_par_quiz = 5L,
                          ouvrir = TRUE) {
   .verifier_exercices(exercices)
   invisible(lapply(exercices, .verifier_qcm))
   if (length(questions_par_quiz) != 1L || is.na(questions_par_quiz) ||
       questions_par_quiz < 1L || questions_par_quiz != as.integer(questions_par_quiz)) {
-    stop("`questions_par_quiz` doit etre un entier strictement positif.", call. = FALSE)
+    stop("`questions_par_quiz` doit \u00eatre un entier strictement positif.", call. = FALSE)
   }
   questions_par_quiz = as.integer(questions_par_quiz)
 

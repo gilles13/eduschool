@@ -76,7 +76,14 @@ FRAC_MULT_ENT_001;correction;"%d x %d/%d = (%d x %d)/%d = %s."
 FRAC_MULT_ENT_001;feedback_faux;"Le produit vaut %s."
 FRAC_MULT_ENT_001;rappel;"Multiplier a/b par un entier n revient à multiplier le numérateur par n."
 FRAC_QTE_001;var_notion_distributivite;"distributivité"
-FRAC_QTE_001;var_explication_distributivite;"Le mot est distributivité. C'est le nom d'une propriété mathématique : a - a x b = a x (1 - b). Ici, on met la quantité totale en facteur. Tu ne savais pas ce qu'est une propriété mathématique ? TKT : maintenant tu en connais une."
+FRAC_QTE_001;var_explication_distributivite;"Le mot est distributivité.
+C'est le nom d'une propriété mathématique :
+
+a - a x b = a x (1 - b)
+
+Ici, on met la quantité totale en facteur.
+
+Tu ne savais pas ce qu'est une propriété mathématique ? TKT : maintenant tu en connais une."
 FRAC_QTE_001;var_feedback_relation;"La proposition %s ne vérifie pas la relation demandée."
 FRAC_QTE_001;var_enonce_trou;"Quel nombre se cache dans la boîte ?  %d/%d × □ = %d"
 FRAC_QTE_001;var_correction_trou;"Pour répondre à la question, il faut poser [[l'équation]] %d/%d × □ = %d.

@@ -1,3 +1,12 @@
+# eduschool 0.37.2
+
+## Fiches, quiz et qualité des textes
+
+- `produire_fiche()` devient la porte de rendu commune : une révision préparée par `revision()` peut désormais être envoyée directement vers une fiche.
+- Les retours pédagogiques des fractions préservent les paragraphes utiles et les fiches de révision peuvent placer une explication juste après une formule grâce au champ optionnel `apres_formule`.
+- Les exercices sur les identités remarquables conservent des identifiants techniques ASCII stables tout en affichant un français correctement accentué.
+- Audit transversal des textes destinés aux humains : les contenus, messages et libellés concernés sont écrits directement en UTF-8, conformément à la convention de développement du projet.
+
 # eduschool 0.37.0
 
 ## Mathématiques : ouvrir de nouvelles portes

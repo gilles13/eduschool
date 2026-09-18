@@ -506,12 +506,12 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 
   if (!requireNamespace("rmarkdown", quietly = TRUE)) {
     stop(
-      "Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.",
+      "Le package `rmarkdown` est n\u00e9cessaire pour produire une fiche HTML ou PDF.",
       call. = FALSE
     )
   }
   if (!rmarkdown::pandoc_available()) {
-    stop("Pandoc est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+    stop("Pandoc est n\u00e9cessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
   }
 
   format = .choisir_format_fiche(format)
@@ -587,10 +587,10 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' LaTeX est disponible et un HTML sinon. Par defaut, le document produit est
 #' ouvert automatiquement.
 #'
-#' @param exercices Liste d'exercices produite par [exercices()] ou
-#'   [generer_fiche()], chemin vers un fichier Markdown (`.md`), matrice ou
-#'   `data.frame`. Un tableau de notions peut contenir `categorie`, `statut` et
-#'   `ordre`.
+#' @param exercices Contenu a rendre : objet `eduschool_revision`, liste
+#'   d'exercices produite par [exercices()] ou [generer_fiche()], chemin vers un
+#'   fichier Markdown (`.md`), matrice ou `data.frame`. Le nom de l'argument est
+#'   conserve pour compatibilite avec l'API existante.
 #' @param fichier Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
 #'   construit automatiquement a partir du niveau et de la capacite.
 #' @param format Format de sortie : `"auto"`, `"html"` ou `"pdf"`.
@@ -605,6 +605,9 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' @return Invisiblement, le chemin absolu du fichier produit.
 #' @examples
 #' \dontrun{
+#' revision("5E", "fractions") |>
+#'   produire_fiche()
+#'
 #' exercices("6E") |>
 #'   produire_fiche()
 #'
@@ -623,11 +626,20 @@ produire_fiche = function(
   format = c("auto", "html", "pdf"),
   titre = "Fiche d'exercices",
   sous_titre = NULL,
-  instructions = "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
+  instructions = "R\u00e9diger les calculs et justifier les \u00e9tapes lorsque cela est n\u00e9cessaire.",
   afficher_metadonnees = FALSE,
   afficher_description = FALSE,
   ouvrir = TRUE
 ) {
+  if (inherits(exercices, "eduschool_revision")) {
+    return(produire_revision(
+      revision = exercices,
+      fichier = fichier,
+      format = format,
+      ouvrir = ouvrir
+    ))
+  }
+
   if (.est_fiche_markdown(exercices)) {
     return(.rendre_fiche_markdown(
       source = exercices,
@@ -1007,7 +1019,7 @@ produire_fiche = function(
   ouvrir = TRUE
 ) {
   if (!requireNamespace("rmarkdown", quietly = TRUE)) {
-    stop("Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+    stop("Le package `rmarkdown` est n\u00e9cessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
   }
 
   format = .choisir_format_fiche(format)
@@ -1174,10 +1186,10 @@ produire_fiche = function(
   ouvrir = TRUE
 ) {
   if (!requireNamespace("rmarkdown", quietly = TRUE)) {
-    stop("Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+    stop("Le package `rmarkdown` est n\u00e9cessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
   }
   if (!requireNamespace("knitr", quietly = TRUE)) {
-    stop("Le package `knitr` est necessaire pour produire une fiche tabulaire.", call. = FALSE)
+    stop("Le package `knitr` est n\u00e9cessaire pour produire une fiche tabulaire.", call. = FALSE)
   }
 
   format = .choisir_format_fiche(format)
@@ -1317,10 +1329,10 @@ produire_corrige = function(
 
 .rendre_fiche_markdown = function(source, fichier = NULL, format = c("auto", "html", "pdf"), ouvrir = TRUE) {
   if (!requireNamespace("rmarkdown", quietly = TRUE)) {
-    stop("Le package `rmarkdown` est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+    stop("Le package `rmarkdown` est n\u00e9cessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
   }
   if (!rmarkdown::pandoc_available()) {
-    stop("Pandoc est necessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
+    stop("Pandoc est n\u00e9cessaire pour produire une fiche HTML ou PDF.", call. = FALSE)
   }
 
   fiche = .lire_fiche_markdown(source)

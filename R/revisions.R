@@ -185,10 +185,10 @@ generer_essentiel = function(niveau_id) {
 #' @export
 produire_revision = function(revision, fichier = NULL, format = c("auto", "html", "pdf"), ouvrir = FALSE) {
   if (!inherits(revision, "eduschool_revision")) {
-    stop("`revision` doit etre produit par generer_revision() ou generer_essentiel().", call. = FALSE)
+    stop("`revision` doit \u00eatre produit par generer_revision() ou generer_essentiel().", call. = FALSE)
   }
-  if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("Le package `rmarkdown` est necessaire.", call. = FALSE)
-  if (!rmarkdown::pandoc_available()) stop("Pandoc est necessaire pour produire la fiche.", call. = FALSE)
+  if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("Le package `rmarkdown` est n\u00e9cessaire.", call. = FALSE)
+  if (!rmarkdown::pandoc_available()) stop("Pandoc est n\u00e9cessaire pour produire la fiche.", call. = FALSE)
   format = .choisir_format_fiche(format)
   if (is.null(fichier)) fichier = .nom_fichier_revision(revision)
   extension = if (identical(format, "pdf")) ".pdf" else ".html"

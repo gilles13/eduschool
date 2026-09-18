@@ -1,10 +1,10 @@
-# Exercices autour des identites remarquables
+# Exercices autour des identit\u00e9s remarquables
 
 .ir_qcm = function(modele_id, niveau_id, capacite_id, difficulte, seed,
                     intention, cas, enonce, reponse, correction,
                     propositions, feedback, parametres = list()) {
   qcm = .qcm_simple(intention, propositions, 1L, feedback)
-  qcm$notion = "Identites remarquables"
+  qcm$notion = "Identit\u00e9s remarquables"
   qcm$rappel = "(a+b)^2 = a^2 + 2ab + b^2 ; (a-b)^2 = a^2 - 2ab + b^2 ; (a-b)(a+b) = a^2 - b^2"
   creer_exercice(
     modele_id, niveau_id, capacite_id, difficulte,
@@ -20,22 +20,22 @@ generer_identite_reconnaitre = function(niveau_id = "2GT", capacite_id = NA_char
   cas = sample(c("carre_somme", "carre_difference", "difference_carres"), 1L)
   n = .ir_n()
   if (cas == "carre_somme") {
-    enonce = sprintf("Quelle identite remarquable reconnait-on dans \U0001d465^2 + %d\U0001d465 + %d ?", 2L * n, n^2)
+    enonce = sprintf("Quelle identit\u00e9 remarquable reconna\u00eet-on dans \U0001d465^2 + %d\U0001d465 + %d ?", 2L * n, n^2)
     reponse = sprintf("(\U0001d465+%d)^2", n)
     correction = sprintf("\U0001d465^2 + %d\U0001d465 + %d = \U0001d465^2 + 2 \u00d7 %d \u00d7 \U0001d465 + %d^2 = (\U0001d465+%d)^2.", 2L*n, n^2, n, n, n)
     propositions = c(reponse, sprintf("(\U0001d465-%d)^2", n), sprintf("(\U0001d465-%d)(\U0001d465+%d)", n, n), sprintf("\U0001d465(\U0001d465+%d)", 2L*n))
   } else if (cas == "carre_difference") {
-    enonce = sprintf("Quelle identite remarquable reconnait-on dans \U0001d465^2 - %d\U0001d465 + %d ?", 2L * n, n^2)
+    enonce = sprintf("Quelle identit\u00e9 remarquable reconna\u00eet-on dans \U0001d465^2 - %d\U0001d465 + %d ?", 2L * n, n^2)
     reponse = sprintf("(\U0001d465-%d)^2", n)
     correction = sprintf("\U0001d465^2 - %d\U0001d465 + %d = \U0001d465^2 - 2 \u00d7 %d \u00d7 \U0001d465 + %d^2 = (\U0001d465-%d)^2.", 2L*n, n^2, n, n, n)
     propositions = c(reponse, sprintf("(\U0001d465+%d)^2", n), sprintf("(\U0001d465-%d)(\U0001d465+%d)", n, n), sprintf("\U0001d465(\U0001d465-%d)", 2L*n))
   } else {
-    enonce = sprintf("Quelle identite remarquable reconnait-on dans \U0001d465^2 - %d ?", n^2)
+    enonce = sprintf("Quelle identit\u00e9 remarquable reconna\u00eet-on dans \U0001d465^2 - %d ?", n^2)
     reponse = sprintf("(\U0001d465-%d)(\U0001d465+%d)", n, n)
-    correction = sprintf("%d = %d^2, donc \U0001d465^2 - %d est une difference de deux carres : (\U0001d465-%d)(\U0001d465+%d).", n^2, n, n^2, n, n)
+    correction = sprintf("%d = %d^2, donc \U0001d465^2 - %d est une diff\u00e9rence de deux carr\u00e9s : (\U0001d465-%d)(\U0001d465+%d).", n^2, n, n^2, n, n)
     propositions = c(reponse, sprintf("(\U0001d465-%d)^2", n), sprintf("(\U0001d465+%d)^2", n), sprintf("\U0001d465(\U0001d465-%d)", n^2))
   }
-  feedback = c(correction, rep("Cette ecriture ne redonne pas l'expression proposee lorsqu'on la developpe.", 3L))
+  feedback = c(correction, rep("Cette \u00e9criture ne redonne pas l'expression propos\u00e9e lorsqu'on la d\u00e9veloppe.", 3L))
   .ir_qcm("IR_RECON_001", niveau_id, capacite_id, difficulte, seed, "reconnaitre", cas,
           enonce, reponse, correction, propositions, feedback, list(n = n))
 }
@@ -47,23 +47,23 @@ generer_identite_developper = function(niveau_id = "2GT", capacite_id = NA_chara
   if (cas == "carre_somme") {
     expression_depart = sprintf("(x+%d)^2", n)
     expression_resultat = sprintf("x^2+%d*x+%d", 2L*n, n^2)
-    enonce = sprintf("Developper (\U0001d465+%d)^2.", n); reponse = sprintf("\U0001d465^2 + %d\U0001d465 + %d", 2L*n, n^2)
+    enonce = sprintf("D\u00e9velopper (\U0001d465+%d)^2.", n); reponse = sprintf("\U0001d465^2 + %d\U0001d465 + %d", 2L*n, n^2)
     correction = sprintf("(\U0001d465+%d)^2 = \U0001d465^2 + 2 \u00d7 %d \u00d7 \U0001d465 + %d^2 = %s.", n, n, n, reponse)
     propositions = c(reponse, sprintf("\U0001d465^2 + %d", n^2), sprintf("\U0001d465^2 + %d\U0001d465 + %d", n, n^2), sprintf("\U0001d465^2 - %d\U0001d465 + %d", 2L*n, n^2))
   } else if (cas == "carre_difference") {
     expression_depart = sprintf("(x-%d)^2", n)
     expression_resultat = sprintf("x^2-%d*x+%d", 2L*n, n^2)
-    enonce = sprintf("Developper (\U0001d465-%d)^2.", n); reponse = sprintf("\U0001d465^2 - %d\U0001d465 + %d", 2L*n, n^2)
+    enonce = sprintf("D\u00e9velopper (\U0001d465-%d)^2.", n); reponse = sprintf("\U0001d465^2 - %d\U0001d465 + %d", 2L*n, n^2)
     correction = sprintf("(\U0001d465-%d)^2 = \U0001d465^2 - 2 \u00d7 %d \u00d7 \U0001d465 + %d^2 = %s.", n, n, n, reponse)
     propositions = c(reponse, sprintf("\U0001d465^2 - %d", n^2), sprintf("\U0001d465^2 - %d\U0001d465 + %d", n, n^2), sprintf("\U0001d465^2 + %d\U0001d465 + %d", 2L*n, n^2))
   } else {
     expression_depart = sprintf("(x-%d)*(x+%d)", n, n)
     expression_resultat = sprintf("x^2-%d", n^2)
-    enonce = sprintf("Developper (\U0001d465-%d)(\U0001d465+%d).", n, n); reponse = sprintf("\U0001d465^2 - %d", n^2)
+    enonce = sprintf("D\u00e9velopper (\U0001d465-%d)(\U0001d465+%d).", n, n); reponse = sprintf("\U0001d465^2 - %d", n^2)
     correction = sprintf("Les termes +%d\U0001d465 et -%d\U0001d465 s'annulent : (\U0001d465-%d)(\U0001d465+%d) = \U0001d465^2 - %d.", n, n, n, n, n^2)
     propositions = c(reponse, sprintf("\U0001d465^2 + %d", n^2), sprintf("\U0001d465^2 - %d\U0001d465 + %d", 2L*n, n^2), sprintf("\U0001d465^2 + %d\U0001d465 + %d", 2L*n, n^2))
   }
-  feedback = c(correction, rep("Ce developpement ne correspond pas a l'identite utilisee.", 3L))
+  feedback = c(correction, rep("Ce d\u00e9veloppement ne correspond pas \u00e0 l'identit\u00e9 utilis\u00e9e.", 3L))
   .ir_qcm("IR_DEVEL_001", niveau_id, capacite_id, difficulte, seed, "developper", cas,
           enonce, reponse, correction, propositions, feedback,
           list(
@@ -84,11 +84,11 @@ generer_identite_factoriser = function(niveau_id = "2GT", capacite_id = NA_chara
   } else {
     enonce = sprintf("Factoriser \U0001d465^2 - %d.", n^2); reponse = sprintf("(\U0001d465-%d)(\U0001d465+%d)", n, n)
   }
-  correction = sprintf("On reconnait l'identite remarquable correspondante : %s", reponse)
+  correction = sprintf("On reconna\u00eet l'identit\u00e9 remarquable correspondante : %s", reponse)
   propositions = c(reponse, sprintf("(\U0001d465+%d)(\U0001d465+%d)", n, n), sprintf("(\U0001d465-%d)(\U0001d465-%d)", n, n), sprintf("\U0001d465(\U0001d465-%d)", n))
   propositions = unique(propositions)
   if (length(propositions) < 4L) propositions = c(propositions, sprintf("\U0001d465(\U0001d465+%d)", n))[seq_len(4L)]
-  feedback = c(correction, rep("En developpant cette proposition, on ne retrouve pas exactement l'expression de depart.", 3L))
+  feedback = c(correction, rep("En d\u00e9veloppant cette proposition, on ne retrouve pas exactement l'expression de d\u00e9part.", 3L))
   .ir_qcm("IR_FACT_001", niveau_id, capacite_id, difficulte, seed, "factoriser", cas,
           enonce, reponse, correction, propositions, feedback, list(n = n))
 }
@@ -106,11 +106,11 @@ generer_identite_signe = function(niveau_id = "2GT", capacite_id = NA_character_
     correction = sprintf("Le terme du milieu vaut -2 \u00d7 \U0001d465 \u00d7 %d = -%d\U0001d465. Le dernier terme reste +%d.", n, 2L*n, n^2)
     propositions = c(reponse, sprintf("+%d\U0001d465", 2L*n), sprintf("-%d\U0001d465", n), sprintf("+%d\U0001d465", n))
   } else {
-    enonce = sprintf("Que deviennent les termes en \U0001d465 quand on developpe (\U0001d465-%d)(\U0001d465+%d) ?", n, n); reponse = "Ils s'annulent."
+    enonce = sprintf("Que deviennent les termes en \U0001d465 quand on d\u00e9veloppe (\U0001d465-%d)(\U0001d465+%d) ?", n, n); reponse = "Ils s'annulent."
     correction = sprintf("On obtient +%d\U0001d465 et -%d\U0001d465 : leur somme vaut 0.", n, n)
     propositions = c(reponse, "Ils s'additionnent.", "Ils donnent \U0001d465^2.", "Ils donnent un terme constant.")
   }
-  feedback = c(correction, rep("Cette proposition ne respecte pas les signes obtenus par double distributivite.", 3L))
+  feedback = c(correction, rep("Cette proposition ne respecte pas les signes obtenus par double distributivit\u00e9.", 3L))
   .ir_qcm("IR_SIGNE_001", niveau_id, capacite_id, difficulte, seed, "se_mefier_des_signes", cas,
           enonce, reponse, correction, propositions, feedback, list(n = n))
 }

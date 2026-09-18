@@ -58,7 +58,7 @@ ipc_exemple = function() {
 #' @export
 variation_pourcentage = function(valeur_initiale, valeur_finale) {
   if (any(!is.finite(valeur_initiale)) || any(!is.finite(valeur_finale))) {
-    stop("Les valeurs doivent etre numeriques et finies.", call. = FALSE)
+    stop("Les valeurs doivent \u00eatre num\u00e9riques et finies.", call. = FALSE)
   }
   if (any(valeur_initiale == 0)) {
     stop("Une variation relative ne peut pas partir de zero.", call. = FALSE)

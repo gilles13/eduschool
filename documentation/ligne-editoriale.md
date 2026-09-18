@@ -30,10 +30,6 @@ servent de repères de ton :
 > servent aussi à rappeler au développeur que lui, en revanche, ne l'est pas
 > toujours.
 
-> Vous n'avez pas besoin de DuckDB pour utiliser `eduschool`. Vous pouvez
-> toutefois l'utiliser si consulter trois CSV séparément vous paraît désormais
-> beaucoup trop reposant.
-
 ## Humour mathématique
 
 L'humour peut renforcer un point de vigilance :

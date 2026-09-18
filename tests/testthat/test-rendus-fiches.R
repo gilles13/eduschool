@@ -21,6 +21,20 @@ test_that("produire_fiche ouvre le document par defaut", {
   expect_identical(formals(produire_corrige)$ouvrir, FALSE)
 })
 
+
+test_that("produire_fiche accepte une revision", {
+  skip_if_not_installed("rmarkdown")
+  skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")
+
+  fichier = tempfile("revision-eduschool-")
+  sortie = revision("5E", "fractions") |>
+    produire_fiche(fichier, format = "html", ouvrir = FALSE)
+
+  expect_true(file.exists(sortie))
+  expect_match(sortie, "\\.html$")
+})
+
+
 test_that("produire_fiche accepte directement l API simple exercices", {
   skip_if_not_installed("rmarkdown")
   skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")

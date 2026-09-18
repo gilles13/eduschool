@@ -7,7 +7,7 @@
 produire_quiz(
   exercices,
   fichier = NULL,
-  titre = "Mon entrainement eduschool",
+  titre = "Mon entraînement eduschool",
   questions_par_quiz = 5L,
   ouvrir = TRUE
 )

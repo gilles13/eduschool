@@ -138,10 +138,8 @@ magie.
 Les fonctions R lisent les représentations, appliquent les règles nécessaires,
 relient les informations et construisent des objets destinés à l'utilisateur.
 
-Pour les consultations simples, `eduschool` travaille directement à partir des
-CSV. DuckDB est disponible pour effectuer des requêtes et des jointures
-relationnelles plus libres, mais il n'est pas nécessaire au fonctionnement de
-l'interface métier courante.
+`eduschool` travaille directement à partir des CSV. Les relations, contrôles et
+fonctions métier sont construits au-dessus de ces ressources persistantes.
 
 La chaîne peut donc être détaillée ainsi :
 
