@@ -12,6 +12,8 @@
   : Capacités d'un programme
 - [`carte_concept_math()`](https://gilles13.github.io/eduschool/reference/carte_concept_math.md)
   : Carte pedagogique d'un concept mathematique
+- [`carte_math()`](https://gilles13.github.io/eduschool/reference/carte_math.md)
+  : Carte des domaines mathematiques
 - [`charte_eduschool()`](https://gilles13.github.io/eduschool/reference/charte_eduschool.md)
   : Charte graphique eduschool
 - [`chercher_notions()`](https://gilles13.github.io/eduschool/reference/chercher_notions.md)
@@ -56,8 +58,6 @@
   : Diagrammes disponibles
 - [`disciplines()`](https://gilles13.github.io/eduschool/reference/disciplines.md)
   : Disciplines
-- [`eduschool_init()`](https://gilles13.github.io/eduschool/reference/eduschool_init.md)
-  : Initialiser un contexte eduschool
 - [`eduschool_path()`](https://gilles13.github.io/eduschool/reference/eduschool_path.md)
   : Chemin vers une ressource installée
 - [`enseignements()`](https://gilles13.github.io/eduschool/reference/enseignements.md)
@@ -149,8 +149,6 @@
   : Explorer les choix d'orientation
 - [`orientation_parcours()`](https://gilles13.github.io/eduschool/reference/orientation_parcours.md)
   : Parcours d'orientation modelises
-- [`ouvrir_base()`](https://gilles13.github.io/eduschool/reference/ouvrir_base.md)
-  : Ouvrir une base DuckDB eduschool
 - [`parcours()`](https://gilles13.github.io/eduschool/reference/parcours.md)
   : Explorer un parcours scolaire
 - [`parcoursup_calendrier()`](https://gilles13.github.io/eduschool/reference/parcoursup_calendrier.md)
@@ -167,8 +165,8 @@
   : Prérequis des notions associées à une capacité
 - [`prerequis_notion()`](https://gilles13.github.io/eduschool/reference/prerequis_notion.md)
   : Prérequis d'une notion
-- [`print(`*`<eduschool_context>`*`)`](https://gilles13.github.io/eduschool/reference/print.eduschool_context.md)
-  : Afficher un contexte eduschool
+- [`produire_carte_math()`](https://gilles13.github.io/eduschool/reference/produire_carte_math.md)
+  : Produire la carte des mathematiques
 - [`produire_cheatsheet()`](https://gilles13.github.io/eduschool/reference/produire_cheatsheet.md)
   : Produire la cheatsheet eduschool
 - [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)

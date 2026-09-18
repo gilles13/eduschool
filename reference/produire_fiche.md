@@ -19,7 +19,7 @@ produire_fiche(
   titre = "Fiche d'exercices",
   sous_titre = NULL,
   instructions =
-    "Rediger les calculs et justifier les etapes lorsque cela est necessaire.",
+    "Rédiger les calculs et justifier les étapes lorsque cela est nécessaire.",
   afficher_metadonnees = FALSE,
   afficher_description = FALSE,
   ouvrir = TRUE
@@ -30,10 +30,10 @@ produire_fiche(
 
 - exercices:
 
-  Liste d'exercices produite par \[exercices()\] ou \[generer_fiche()\],
-  chemin vers un fichier Markdown (\`.md\`), matrice ou \`data.frame\`.
-  Un tableau de notions peut contenir \`categorie\`, \`statut\` et
-  \`ordre\`.
+  Contenu a rendre : objet \`eduschool_revision\`, liste d'exercices
+  produite par \[exercices()\] ou \[generer_fiche()\], chemin vers un
+  fichier Markdown (\`.md\`), matrice ou \`data.frame\`. Le nom de
+  l'argument est conserve pour compatibilite avec l'API existante.
 
 - fichier:
 
@@ -78,6 +78,9 @@ Invisiblement, le chemin absolu du fichier produit.
 
 ``` r
 if (FALSE) { # \dontrun{
+revision("5E", "fractions") |>
+  produire_fiche()
+
 exercices("6E") |>
   produire_fiche()
 

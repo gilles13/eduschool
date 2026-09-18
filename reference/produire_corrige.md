@@ -22,10 +22,10 @@ produire_corrige(
 
 - exercices:
 
-  Liste d'exercices produite par \[exercices()\] ou \[generer_fiche()\],
-  chemin vers un fichier Markdown (\`.md\`), matrice ou \`data.frame\`.
-  Un tableau de notions peut contenir \`categorie\`, \`statut\` et
-  \`ordre\`.
+  Contenu a rendre : objet \`eduschool_revision\`, liste d'exercices
+  produite par \[exercices()\] ou \[generer_fiche()\], chemin vers un
+  fichier Markdown (\`.md\`), matrice ou \`data.frame\`. Le nom de
+  l'argument est conserve pour compatibilite avec l'API existante.
 
 - fichier:
 

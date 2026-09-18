@@ -86,16 +86,3 @@ Le corrigé correspondant utilise exactement la même variante :
 La vignette **Composer et produire un DNB de mathématiques** décrit le
 modèle, la banque de gabarits et l’ajout progressif de nouvelles
 annales.
-
-### DuckDB seulement si nécessaire
-
-Les consultations usuelles lisent directement les ressources du package.
-La couche DuckDB reste disponible pour les requêtes relationnelles plus
-libres.
-
-``` r
-
-con = ouvrir_base()
-DBI::dbListTables(con)
-DBI::dbDisconnect(con)
-```

@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -203,10 +203,9 @@ contrôle.</strong></p>
 <p>Les fonctions R lisent les représentations, appliquent les règles
 nécessaires, relient les informations et construisent des objets
 destinés à l’utilisateur.</p>
-<p>Pour les consultations simples, <code>eduschool</code> travaille
-directement à partir des CSV. DuckDB est disponible pour effectuer des
-requêtes et des jointures relationnelles plus libres, mais il n’est pas
-nécessaire au fonctionnement de l’interface métier courante.</p>
+<p><code>eduschool</code> travaille directement à partir des CSV. Les
+relations, contrôles et fonctions métier sont construits au-dessus de
+ces ressources persistantes.</p>
 <p>La chaîne peut donc être détaillée ainsi :</p>
 <pre class="text"><code>sources identifiées
        ↓

@@ -1,8 +1,8 @@
 # Produire la cheatsheet eduschool
 
-Genere une cheatsheet HTML autonome au format A4 paysage. La fiche
-presente les principales portes d'entree publiques d'eduschool en trois
-colonnes, avec des exemples directement copiables dans R.
+Genere une cheatsheet HTML autonome au format A4 paysage. La fiche sert
+de boussole : trois gestes essentiels pour reviser, s'entrainer et
+jouer, puis quelques portes pour se reperer et aller plus loin.
 
 ## Usage
 

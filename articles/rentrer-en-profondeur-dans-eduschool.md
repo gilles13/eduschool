@@ -153,7 +153,7 @@ knitr::kable(
 | niveaux_series | referentiels | niveau_id,serie_id | 19 | 2 |
 | series | referentiels | serie_id | 9 | 3 |
 | voies | referentiels | voie_id | 4 | 3 |
-| blocs | revision | bloc_id | 102 | 8 |
+| blocs | revision | bloc_id | 102 | 9 |
 | familles | revision | famille_id | 7 | 3 |
 | fiche_notions | revision | fiche_id,notion_id | 28 | 3 |
 | fiches | revision | fiche_id | 14 | 7 |
@@ -436,14 +436,13 @@ Le but n’est pas de multiplier les abstractions, mais de rendre
 **explicites et testables** les règles qui existaient auparavant
 implicitement dans le code.
 
-## 10. Ce que DuckDB apporte, et ce qu’il ne remplace pas
+## 10. Un système relationnel sans couche supplémentaire
 
-DuckDB reste très utile pour explorer librement le SI et effectuer des
-jointures SQL. Il n’est cependant pas la source de vérité du modèle. Les
-CSV et leurs métadonnées restent la représentation portable du projet ;
-DuckDB est un moteur d’interrogation construit au-dessus d’eux.
+Les CSV et leurs métadonnées restent la représentation portable du
+projet. Les fonctions R lisent directement ces ressources et appliquent
+les relations et les contrôles du mini-SI.
 
-Cette organisation permet à `eduschool` de rester un projet léger tout
-en bénéficiant des garanties essentielles d’un système relationnel :
+Cette organisation permet à `eduschool` de rester léger tout en
+conservant les garanties essentielles du système relationnel :
 identifiants stables, relations déclarées, contrôles reproductibles et
 API métier cohérente.

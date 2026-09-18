@@ -45,6 +45,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/auditer_modeles.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/capacites.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/carte_concept_math.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/carte_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/charte_eduschool.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/chercher_notions.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/citer_source.html</loc></url>
@@ -68,7 +69,6 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/diagrammes_disponibles.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/disciplines.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/eduschool-package.html</loc></url>
-<url><loc>https://gilles13.github.io/eduschool/reference/eduschool_init.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/eduschool_path.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/enseignements.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/enseignements_optionnels_lycee.html</loc></url>
@@ -114,7 +114,6 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/obtenir_rappel.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/orientation.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/orientation_parcours.html</loc></url>
-<url><loc>https://gilles13.github.io/eduschool/reference/ouvrir_base.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/parcours.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/parcoursup_calendrier.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/parcoursup_campagne.html</loc></url>
@@ -123,7 +122,7 @@
 <url><loc>https://gilles13.github.io/eduschool/reference/plateformes_admission.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/prerequis_capacite.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/prerequis_notion.html</loc></url>
-<url><loc>https://gilles13.github.io/eduschool/reference/print.eduschool_context.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/produire_carte_math.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_cheatsheet.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_corrige.html</loc></url>
 <url><loc>https://gilles13.github.io/eduschool/reference/produire_corrige_exercices.html</loc></url>

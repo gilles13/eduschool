@@ -105,19 +105,19 @@ r
 #> 51                                     V_{pave}=L\\times l\\times h \\quad V_{cube}=c^3
 #> 52           P(A)=\\frac{nombre\\ de\\ cas\\ favorables}{nombre\\ de\\ cas\\ possibles}
 #> 53                                                                                     
-#>    illustration_id
-#> 44                
-#> 54                
-#> 55                
-#> 45                
-#> 46                
-#> 47                
-#> 48                
-#> 49                
-#> 50                
-#> 51                
-#> 52                
-#> 53                
+#>    apres_formule illustration_id
+#> 44                              
+#> 54                              
+#> 55                              
+#> 45                              
+#> 46                              
+#> 47                              
+#> 48                              
+#> 49                              
+#> 50                              
+#> 51                              
+#> 52                              
+#> 53                              
 #> 
 #> $notions
 #> [1] notion_id     fiche_id      ordre         discipline_id libelle      

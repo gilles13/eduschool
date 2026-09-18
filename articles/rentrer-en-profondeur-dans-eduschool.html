@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -381,7 +381,7 @@ calculer sa taille réelle.</p>
 <td align="left">revision</td>
 <td align="left">bloc_id</td>
 <td align="right">102</td>
-<td align="right">8</td>
+<td align="right">9</td>
 </tr>
 <tr class="odd">
 <td align="left">familles</td>
@@ -944,17 +944,15 @@ plus ;</li>
 auparavant implicitement dans le code.</p>
 </div>
 <div class="section level2">
-<h2 id="ce-que-duckdb-apporte-et-ce-quil-ne-remplace-pas">10. Ce que DuckDB apporte, et ce qu’il ne remplace pas<a class="anchor" aria-label="anchor" href="#ce-que-duckdb-apporte-et-ce-quil-ne-remplace-pas"></a>
+<h2 id="un-système-relationnel-sans-couche-supplémentaire">10. Un système relationnel sans couche supplémentaire<a class="anchor" aria-label="anchor" href="#un-syst%C3%A8me-relationnel-sans-couche-suppl%C3%A9mentaire"></a>
 </h2>
-<p>DuckDB reste très utile pour explorer librement le SI et effectuer
-des jointures SQL. Il n’est cependant pas la source de vérité du modèle.
-Les CSV et leurs métadonnées restent la représentation portable du
-projet ; DuckDB est un moteur d’interrogation construit au-dessus
-d’eux.</p>
-<p>Cette organisation permet à <code>eduschool</code> de rester un
-projet léger tout en bénéficiant des garanties essentielles d’un système
-relationnel : identifiants stables, relations déclarées, contrôles
-reproductibles et API métier cohérente.</p>
+<p>Les CSV et leurs métadonnées restent la représentation portable du
+projet. Les fonctions R lisent directement ces ressources et appliquent
+les relations et les contrôles du mini-SI.</p>
+<p>Cette organisation permet à <code>eduschool</code> de rester léger
+tout en conservant les garanties essentielles du système relationnel :
+identifiants stables, relations déclarées, contrôles reproductibles et
+API métier cohérente.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

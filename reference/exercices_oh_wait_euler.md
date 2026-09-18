@@ -1,7 +1,6 @@
 # Labo OH WAIT : beaucoup d'exemples ne font pas une preuve
 
-Utilise le polynôme n^2 + n + 41 pour faire sentir la différence entre
-vérification, conjecture, contre-exemple et démonstration.
+Construit quatre exercices autour du polynome n^2 + n + 41.
 
 ## Usage
 
@@ -13,7 +12,7 @@ exercices_oh_wait_euler(seed = NULL)
 
 - seed:
 
-  Graine facultative utilisée pour mélanger les propositions.
+  Graine facultative pour melanger les propositions.
 
 ## Value
 

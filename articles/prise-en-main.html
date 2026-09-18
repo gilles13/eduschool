@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,17 +134,6 @@ produite, puis rédigée, avant son rendu :</p>
 <p>La vignette <strong>Composer et produire un DNB de
 mathématiques</strong> décrit le modèle, la banque de gabarits et
 l’ajout progressif de nouvelles annales.</p>
-</div>
-<div class="section level3">
-<h3 id="duckdb-seulement-si-nécessaire">DuckDB seulement si nécessaire<a class="anchor" aria-label="anchor" href="#duckdb-seulement-si-n%C3%A9cessaire"></a>
-</h3>
-<p>Les consultations usuelles lisent directement les ressources du
-package. La couche DuckDB reste disponible pour les requêtes
-relationnelles plus libres.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">con</span> <span class="op">=</span> <span class="fu"><a href="../reference/ouvrir_base.html">ouvrir_base</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbListTables.html" class="external-link">dbListTables</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span>
-<span><span class="fu">DBI</span><span class="fu">::</span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbDisconnect.html" class="external-link">dbDisconnect</a></span><span class="op">(</span><span class="va">con</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

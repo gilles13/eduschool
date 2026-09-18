@@ -650,10 +650,8 @@ revision("6E")
 exercices("6E", n = 5)
 ```
 
-Les utilisateurs curieux pourront ensuite descendre dans les tables. Les
-utilisateurs très curieux pourront ouvrir DuckDB. Et ceux qui trouvent
-que consulter trois CSV séparément est désormais beaucoup trop reposant
-pourront même écrire leurs propres requêtes.
+Les utilisateurs curieux pourront ensuite descendre dans les tables et
+explorer directement les référentiels CSV.
 
 ## Pourquoi autant de contrôles ?
 
