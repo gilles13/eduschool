@@ -79,8 +79,12 @@
   : Generer un exercice
 - [`exercices_ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_nombres.md)
   : Quiz sur les ensembles de nombres
+- [`exercices_ensembles_preuve()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_preuve.md)
+  : Labo : de la conjecture a la demonstration
 - [`exercices_ensembles_proportions()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_proportions.md)
   : Cinq QCM croisant ensembles de nombres et proportions
+- [`exercices_oh_wait_euler()`](https://gilles13.github.io/eduschool/reference/exercices_oh_wait_euler.md)
+  : Labo OH WAIT : beaucoup d'exemples ne font pas une preuve
 - [`familles_revision()`](https://gilles13.github.io/eduschool/reference/familles_revision.md)
   : Familles de fiches de revision
 - [`fiches_revision()`](https://gilles13.github.io/eduschool/reference/fiches_revision.md)

@@ -38,7 +38,7 @@ generer_fiche(
 )
 
 exercices(
-  niveau,
+  niveau = NULL,
   notion = NULL,
   capacite = NULL,
   n = 5,
@@ -82,7 +82,9 @@ exercices(
 
 - niveau:
 
-  Niveau scolaire.
+  Niveau scolaire facultatif. Sans niveau, une \`notion\` doit etre
+  fournie et eduschool construit un parcours transversal, des questions
+  les plus simples aux plus difficiles.
 
 - notion:
 
