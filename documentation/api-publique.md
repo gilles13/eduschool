@@ -14,7 +14,10 @@ de quelques verbes courts :
   d'un autre contenu pédagogique pris en charge.
 
 Cette façade ne remplace pas les fonctions historiques. Elle les compose et offre
-une convention plus facile à mémoriser.
+une convention plus facile à mémoriser. Pour les usages centrés sur une notion,
+le niveau est facultatif : `revision("fractions")` et `exercices("fractions")`
+laissent eduschool retrouver le niveau lorsqu'il est non ambigu. Un niveau explicite
+reste un filtre disponible, par exemple `revision("5E", "fractions")`.
 
 ## API détaillée
 

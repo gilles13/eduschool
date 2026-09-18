@@ -64,6 +64,29 @@ test_that("la revision fractions de 5e est disponible avant le quiz", {
   expect_match(repere$apres_formule, "de gauche à droite, mais aussi de droite à gauche", fixed = TRUE)
 })
 
+
+test_that("la revision identites remarquables de 2GT est disponible", {
+  x = revision(niveau = "2GT", theme = "identites_remarquables")
+  expect_s3_class(x, "eduschool_revision")
+  expect_identical(x$fiche_id, "REV_2GT_IDENTITES_REMARQUABLES")
+  expect_identical(x$famille_id, "NOMBRES_ALGEBRE")
+  expect_identical(x$titre, "Identit\u00e9s remarquables")
+  expect_gte(nrow(x$blocs), 6L)
+  expect_true("MAT_CALC_LITT" %in% x$notions$notion_id)
+  expect_true(all(c(
+    "Les trois identit\u00e9s",
+    "Reconna\u00eetre avant de calculer",
+    "D\u00e9velopper",
+    "Factoriser : faire le chemin inverse",
+    "Le pi\u00e8ge des signes",
+    "Faire et d\u00e9faire"
+  ) %in% x$blocs$titre))
+  expect_identical(
+    eduschool:::.nom_fichier_revision(x),
+    "revision_2gt_identites_remarquables"
+  )
+})
+
 test_that("la fiche essentielle est distincte", {
   x = generer_essentiel("2GT")
   expect_equal(x$type, "ESSENTIEL")
@@ -133,7 +156,7 @@ test_that("un bloc de revision peut commenter une formule apres son affichage", 
     warn = FALSE,
     encoding = "UTF-8"
   )
-  ligne_formule = grep("b\\$formule", template)
+  ligne_formule = grep("formule_math_markdown\\(b\\$formule", template)
   ligne_apres = grep("b\\$apres_formule", template)
   expect_length(ligne_formule, 1L)
   expect_length(ligne_apres, 1L)
@@ -218,4 +241,50 @@ test_that("les operations inverses relient les fondamentaux du college", {
   ]
   expect_match(fraction_quantite, "diviser", fixed = TRUE)
   expect_match(fraction_quantite, "multiplier", fixed = TRUE)
+})
+
+
+test_that("une revision thematique peut etre demandee sans connaitre le niveau", {
+  x = revision("identites_remarquables")
+  expect_s3_class(x, "eduschool_revision")
+  expect_identical(x$fiche_id, "REV_2GT_IDENTITES_REMARQUABLES")
+  expect_identical(x$niveau_id, "2GT")
+
+  y = revision("fractions")
+  expect_identical(y$fiche_id, "REV_5E_FRACTIONS")
+  expect_identical(y$niveau_id, "5E")
+})
+
+test_that("un niveau seul conserve l acces a la fiche essentielle", {
+  x = revision("2GT")
+  expect_identical(x$type, "ESSENTIEL")
+  expect_identical(x$niveau_id, "2GT")
+})
+
+
+test_that("la fiche des identites remarquables respire et explique le schema", {
+  x = revision("identites_remarquables")
+  ids = c("B_IR_01", "B_IR_01B", "B_IR_02", "B_IR_03", "B_IR_04", "B_IR_05", "B_IR_06")
+  blocs = x$blocs[x$blocs$bloc_id %in% ids, , drop = FALSE]
+
+  expect_equal(nrow(blocs), length(ids))
+  expect_true(all(grepl("\\n\\n", blocs$contenu)))
+
+  preuve = blocs[blocs$bloc_id == "B_IR_01B", , drop = FALSE]
+  expect_match(preuve$contenu, "grand carré", fixed = TRUE)
+  expect_match(preuve$contenu, "quatre morceaux", fixed = TRUE)
+  expect_match(preuve$contenu, "même carré", fixed = TRUE)
+  expect_match(preuve$formule, "a^2+ab+ab+b^2", fixed = TRUE)
+  expect_match(preuve$apres_formule, "deux rectangles", fixed = TRUE)
+})
+
+test_that("le schema de l identite carree peut etre dessine", {
+  fichier = tempfile(fileext = ".png")
+  grDevices::png(fichier, width = 700, height = 700)
+  on.exit({
+    grDevices::dev.off()
+    unlink(fichier)
+  }, add = TRUE)
+
+  expect_silent(eduschool:::.dessiner_revision("identite_carree"))
 })

@@ -65,6 +65,39 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   fiches[partiel, , drop = FALSE]
 }
 
+.selectionner_theme_revision_sans_niveau = function(theme) {
+  if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) {
+    stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
+  }
+
+  f = fiches_revision(type = "THEMATIQUE")
+  cle = .normaliser_revision(theme)
+  titres = .normaliser_revision(f$titre)
+
+  exact = titres == cle
+  candidats = if (any(exact)) exact else startsWith(titres, cle)
+  if (!any(candidats)) candidats = grepl(cle, titres, fixed = TRUE)
+  if (!any(candidats)) {
+    familles = .normaliser_revision(f$famille_id) == cle |
+      .normaliser_revision(f$famille) == cle
+    candidats = familles
+  }
+
+  f = f[candidats, , drop = FALSE]
+  if (!nrow(f)) {
+    stop("Theme de revision inconnu : ", theme, ".", call. = FALSE)
+  }
+  if (nrow(f) > 1L) {
+    choix = paste0(f$titre, " (", f$niveau_id, ")")
+    stop(
+      "Theme de revision disponible a plusieurs niveaux : ", theme,
+      ". Choisissez parmi : ", paste(choix, collapse = ", "), ".",
+      call. = FALSE
+    )
+  }
+  f
+}
+
 .selectionner_theme_revision = function(niveau_id, theme) {
   if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) {
     stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
@@ -292,7 +325,22 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
   if (id == "intervalles") {
     graphics::plot.new(); graphics::plot.window(c(0, 10), c(0, 1)); graphics::segments(1, .5, 9, .5); graphics::segments(3, .5, 7, .5, lwd = 4); graphics::points(c(3, 7), c(.5, .5), pch = c(19, 1), cex = 1.3); graphics::text(c(3, 7), c(.25, .25), c("a", "b"))
   } else if (id == "identite_carree") {
-    graphics::plot.new(); graphics::plot.window(c(0, 1), c(0, 1)); graphics::rect(0.1, 0.1, 0.9, 0.9); graphics::segments(.65, .1, .65, .9); graphics::segments(.1, .65, .9, .65); graphics::text(.37, .37, expression(a^2)); graphics::text(.77, .37, "ab"); graphics::text(.37, .77, "ab"); graphics::text(.77, .77, expression(b^2))
+    graphics::plot.new()
+    graphics::plot.window(c(0, 1), c(0, 1), asp = 1)
+    x0 = .18; x1 = .82; y0 = .14; y1 = .78
+    coupe = .62
+    graphics::rect(x0, y0, x1, y1, lwd = 2)
+    graphics::segments(coupe, y0, coupe, y1, lwd = 1.5)
+    graphics::segments(x0, coupe, x1, coupe, lwd = 1.5)
+    graphics::text((x0 + coupe) / 2, (y0 + coupe) / 2, expression(a^2), cex = 1.25)
+    graphics::text((coupe + x1) / 2, (y0 + coupe) / 2, expression(ab), cex = 1.15)
+    graphics::text((x0 + coupe) / 2, (coupe + y1) / 2, expression(ab), cex = 1.15)
+    graphics::text((coupe + x1) / 2, (coupe + y1) / 2, expression(b^2), cex = 1.15)
+    graphics::text((x0 + coupe) / 2, y1 + .055, "a", cex = 1.05)
+    graphics::text((coupe + x1) / 2, y1 + .055, "b", cex = 1.05)
+    graphics::text(x0 - .055, (y0 + coupe) / 2, "a", cex = 1.05)
+    graphics::text(x0 - .055, (coupe + y1) / 2, "b", cex = 1.05)
+    graphics::text((x0 + x1) / 2, .035, "cote total : a + b", cex = 1.05)
   } else if (id == "vecteurs") {
     graphics::plot.new(); graphics::plot.window(c(0, 5), c(0, 4)); graphics::points(c(1, 4), c(1, 3), pch = 19); graphics::arrows(1, 1, 4, 3, length = .1); graphics::text(c(1, 4), c(.7, 3.3), c("A", "B"))
   } else if (id == "droite_affine") {

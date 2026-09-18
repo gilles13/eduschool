@@ -101,3 +101,36 @@
 "B_ENS_04";"REV_2GT_ENSEMBLES";"40";"VIGILANCE";"Appartenance ou inclusion ?";"Le symbole $\in$ relie un élément à un ensemble ; le symbole $\subset$ relie deux ensembles. On écrit $3 \in \mathbb{N}$, mais $\mathbb{N} \subset \mathbb{Z}$. Confondre les deux revient à confondre un habitant avec une ville.";"3 \in \mathbb{N} \qquad \mathbb{N} \subset \mathbb{Z}";"";""
 "B_ENS_05";"REV_2GT_ENSEMBLES";"50";"EXEMPLES";"Quelques pièges utiles";"0 est naturel dans la convention scolaire usuelle en France. -0,5 est décimal. 2/3 est rationnel mais pas décimal. $\sqrt{2}$ est réel mais irrationnel. Une écriture peut être trompeuse : toujours regarder la valeur du nombre avant de le classer.";"";"";""
 "B_ENS_06";"REV_2GT_ENSEMBLES";"60";"OUVERTURE";"Et si on ouvrait une porte ?";"Les ensembles ne servent pas seulement à ranger des nombres. Ils permettent ensuite de parler d’intervalles, de domaines de définition, d’équations et de fonctions. Plus surprenant : entre deux réels distincts, on peut toujours trouver des rationnels et des irrationnels. La carte NZDQR n’est donc qu’un début.";"";"";""
+"B_IR_01";"REV_2GT_IDENTITES_REMARQUABLES";"10";"FORMULE";"Les trois identités";"Trois égalités à connaître dans les deux sens.
+
+Elles permettent de développer une expression factorisée ou de factoriser une expression développée.";"\begin{aligned}(a+b)^2&=a^2+2ab+b^2 \\ (a-b)^2&=a^2-2ab+b^2 \\ (a-b)(a+b)&=a^2-b^2\end{aligned}";"";"identite_carree"
+"B_IR_01B";"REV_2GT_IDENTITES_REMARQUABLES";"15";"REPERE";"Pourquoi la première identité est-elle vraie ?";"Le grand carré a pour côté a+b. Son aire vaut donc (a+b)².
+
+On peut aussi calculer la même aire en additionnant les quatre morceaux : un carré d’aire a², deux rectangles d’aire ab et un carré d’aire b².
+
+Les deux calculs décrivent le même carré : leurs résultats sont donc égaux.";"\begin{aligned}(a+b)^2&=a^2+ab+ab+b^2 \\ &=a^2+2ab+b^2\end{aligned}";"Le terme 2ab vient des deux rectangles d’aire ab.";""
+"B_IR_02";"REV_2GT_IDENTITES_REMARQUABLES";"20";"METHODE";"Reconnaître avant de calculer";"Chercher d’abord la structure.
+
+Deux carrés et un terme double indiquent le carré d’une somme ou d’une différence.
+
+Une différence de deux carrés indique le produit de deux expressions conjuguées.";"\begin{aligned}a^2+2ab+b^2&=(a+b)^2 \\ a^2-2ab+b^2&=(a-b)^2\end{aligned}";"";""
+"B_IR_03";"REV_2GT_IDENTITES_REMARQUABLES";"30";"METHODE";"Développer";"Identifier a et b.
+
+Choisir l’identité correspondante.
+
+Calculer chaque terme. Le terme du milieu d’un carré vaut toujours 2ab, avec le signe donné par l’expression de départ.";"\begin{aligned}(x+3)^2&=x^2+6x+9 \\ (x-3)^2&=x^2-6x+9\end{aligned}";"";""
+"B_IR_04";"REV_2GT_IDENTITES_REMARQUABLES";"40";"METHODE";"Factoriser : faire le chemin inverse";"Factoriser consiste ici à reconnaître une identité remarquable écrite dans l’autre sens.
+
+Vérifier les deux carrés.
+
+Repérer ensuite le terme du milieu ou la différence entre les carrés.";"\begin{aligned}x^2+6x+9&=(x+3)^2 \\ x^2-9&=(x-3)(x+3)\end{aligned}";"";""
+"B_IR_05";"REV_2GT_IDENTITES_REMARQUABLES";"50";"VIGILANCE";"Le piège des signes";"Dans le carré d’une différence, le terme du milieu est négatif.
+
+Mais le dernier carré reste positif : (-b)²=b².
+
+Dans (a-b)(a+b), il n’y a pas de terme du milieu : les termes opposés s’annulent.";"\begin{aligned}(a-b)^2&=a^2-2ab+b^2 \\ (-b)^2&=b^2\end{aligned}";"";""
+"B_IR_06";"REV_2GT_IDENTITES_REMARQUABLES";"60";"REPERE";"Faire et défaire";"Une identité remarquable est une égalité : on peut la lire dans les deux sens.
+
+Développer va de la forme factorisée vers la somme.
+
+Factoriser fait le trajet inverse. Reconnaître la structure permet de choisir le bon chemin.";"(a+b)^2 \Longleftrightarrow a^2+2ab+b^2";"La double flèche se lit « équivaut à » : ici, elle rappelle que l’identité peut être utilisée dans les deux sens.";""

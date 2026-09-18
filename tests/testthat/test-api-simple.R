@@ -157,3 +157,17 @@ test_that("Pythagore propose plusieurs portes de raisonnement en QCM", {
   expect_true(all(c("identifier", "choisir_relation", "transformer_relation", "modeliser", "justifier") %in%
                     vapply(x, function(z) z$qcm$intention, character(1))))
 })
+
+
+test_that("une notion peut etre le premier argument de exercices sans niveau", {
+  x = exercices("identites_remarquables", n = 5, seed = 2026, humour_ratio = 0)
+  expect_length(x, 5L)
+  expect_true(all(grepl("^IR_", vapply(x, function(z) z$modele_id, character(1)))))
+  expect_true(all(vapply(x, function(z) z$niveau_id == "2GT", logical(1))))
+})
+
+test_that("un niveau reste reconnu comme premier argument de exercices", {
+  x = exercices("6E", n = 2, seed = 2026, humour_ratio = 0)
+  expect_length(x, 2L)
+  expect_true(all(vapply(x, function(z) z$niveau_id == "6E", logical(1))))
+})

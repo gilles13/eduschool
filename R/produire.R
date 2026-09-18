@@ -4,17 +4,38 @@
 
 #' Construire une revision de mathematiques
 #'
-#' Sans `theme`, retourne la fiche essentielle du niveau. Avec un `theme`,
-#' retourne la fiche thematique correspondante.
+#' Avec un seul argument, `revision()` accepte soit un niveau scolaire et
+#' retourne sa fiche essentielle, soit un theme et retrouve automatiquement
+#' la fiche thematique correspondante. Le niveau reste disponible comme filtre
+#' explicite lorsque plusieurs parcours sont possibles.
 #'
-#' @param niveau Niveau scolaire.
+#' @param niveau Niveau scolaire facultatif. Avec un seul argument qui n'est
+#'   pas un niveau connu, cet argument est interprete comme un theme.
 #' @param theme Theme de revision facultatif, en langage courant.
 #' @return Un objet `eduschool_revision`.
 #' @export
-revision = function(niveau, theme = NULL) {
-  if (is.null(theme)) return(generer_essentiel(niveau))
-  fiche = .selectionner_theme_revision(niveau, theme)
+revision = function(niveau = NULL, theme = NULL) {
+  if (is.null(theme) && !is.null(niveau) && !.est_niveau_connu(niveau)) {
+    theme = niveau
+    niveau = NULL
+  }
+  if (is.null(theme)) {
+    if (is.null(niveau)) {
+      stop("`revision()` attend un niveau ou un theme.", call. = FALSE)
+    }
+    return(generer_essentiel(niveau))
+  }
+  fiche = if (is.null(niveau)) {
+    .selectionner_theme_revision_sans_niveau(theme)
+  } else {
+    .selectionner_theme_revision(niveau, theme)
+  }
   .construire_revision(fiche)
+}
+
+.est_niveau_connu = function(x) {
+  length(x) == 1L && !is.na(x) && nzchar(x) &&
+    x %in% .lire_csv("referentiels", "niveaux.csv")$niveau_id
 }
 
 .normaliser_notion = function(x) {
@@ -106,6 +127,10 @@ exercices = function(
   humour_ratio = 0.2,
   afficher = FALSE
 ) {
+  if (is.null(notion) && is.null(capacite) && !is.null(niveau) && !.est_niveau_connu(niveau)) {
+    notion = niveau
+    niveau = NULL
+  }
   if (!is.null(notion) && !is.null(capacite)) {
     stop("Utiliser `notion` ou `capacite`, pas les deux.", call. = FALSE)
   }

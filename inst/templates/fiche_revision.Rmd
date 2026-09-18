@@ -45,7 +45,15 @@ for (i in seq_len(nrow(r$blocs))) {
     cat("\n\\subsection*{\\Large\\bfseries ", b$titre, "}\n\n", sep = "")
   }
   if (nzchar(b$contenu)) cat(b$contenu, "\n\n")
-  if (nzchar(b$formule)) cat(eduschool:::.formule_math_markdown(b$formule))
+  if (nzchar(b$formule)) {
+    if (knitr::is_latex_output()) {
+      cat("\n\\begin{flushleft}\n")
+      cat("\\[\n", b$formule, "\n\\]\n", sep = "")
+      cat("\\end{flushleft}\n\n")
+    } else {
+      cat(eduschool:::.formule_math_markdown(b$formule))
+    }
+  }
   if ("apres_formule" %in% names(b) && nzchar(b$apres_formule)) cat(b$apres_formule, "\n\n")
   if (nzchar(b$illustration_id)) {
     asset = eduschool:::.illustration_revision(b$illustration_id)

@@ -4,10 +4,11 @@
 \alias{revision}
 \title{Construire une revision de mathematiques}
 \usage{
-revision(niveau, theme = NULL)
+revision(niveau = NULL, theme = NULL)
 }
 \arguments{
-\item{niveau}{Niveau scolaire.}
+\item{niveau}{Niveau scolaire facultatif. Avec un seul argument qui n'est
+pas un niveau connu, cet argument est interprete comme un theme.}
 
 \item{theme}{Theme de revision facultatif, en langage courant.}
 }
@@ -15,6 +16,8 @@ revision(niveau, theme = NULL)
 Un objet `eduschool_revision`.
 }
 \description{
-Sans `theme`, retourne la fiche essentielle du niveau. Avec un `theme`,
-retourne la fiche thematique correspondante.
+Avec un seul argument, `revision()` accepte soit un niveau scolaire et
+retourne sa fiche essentielle, soit un theme et retrouve automatiquement
+la fiche thematique correspondante. Le niveau reste disponible comme filtre
+explicite lorsque plusieurs parcours sont possibles.
 }
