@@ -629,6 +629,16 @@ test_that("le RETEX fractions garde Lea et reclamer correctement accentues", {
 })
 
 
+test_that("Pythagore explicite le passage par la racine carree", {
+  ids = c("PYTH_HYP_001", "PYTH_COTE_001", "PYTH_DIAG_001")
+  x = lapply(ids, function(id) generer_exercice(id, "4E", seed = 2026))
+  expect_true(all(vapply(x, function(ex) grepl("[[Je calcule]]", ex$correction, fixed = TRUE), logical(1))))
+  expect_true(all(vapply(x, function(ex) grepl("√", ex$correction, fixed = TRUE), logical(1))))
+  rendu = .html_correction(x[[3L]]$correction)
+  expect_html_contains(rendu, '<strong>Je calcule</strong>', "Le calcul doit constituer une etape visible du raisonnement.")
+  expect_html_contains(rendu, "d = √", "Le passage de d^2 a d doit passer explicitement par la racine carree.")
+})
+
 test_that("le pilote Pythagore rend visible voir sans confondre avec savoir", {
   ex = generer_exercice("PYTH_APPL_001", "4E", seed = 123)
   fichier = tempfile(fileext = ".html")
@@ -636,8 +646,16 @@ test_that("le pilote Pythagore rend visible voir sans confondre avec savoir", {
 
   expect_gte(length(gregexpr("figure-qcm", html, fixed = TRUE)[[1L]]), 2L)
   expect_match(html, "angle droit codé en A", fixed = TRUE)
+  expect_html_contains(html, 'class="figure-qcm figure-main-levee"', "Le triangle de Pythagore doit utiliser le rendu a main levee.")
+  expect_html_contains(html, "data:image/svg+xml;base64,", "Le triangle ggsketch doit etre embarque dans le HTML autonome.")
+  expect_html_contains(html, "Dessin à main levée — ne pas se fier aux apparences.", "La figure approximative doit afficher son avertissement.")
   expect_match(html, "Le codage indique", fixed = TRUE)
-  expect_match(html, "son apparence ne suffit pas.<br>\n<strong>Je sais</strong>", fixed = TRUE)
+  expect_html_contains(html, 'class="raisonnement"', "Le raisonnement de Pythagore doit former un seul bloc.")
+  expect_html_contains(html, "<strong>Je vois</strong>", "Les donnees du probleme doivent etre explicites.")
+  expect_html_contains(html, 'class="etape-raisonnement etape-savoir"', "La propriete generale doit etre distinguee des donnees du probleme.")
+  expect_html_contains(html, "Un triangle qui poss\u00e8de un angle droit est un triangle rectangle.", "Je sais doit porter une connaissance reutilisable.")
+  expect_html_contains(html, "<strong>J'en d\u00e9duis</strong>", "La conclusion doit etre explicite.")
+  expect_html_contains(html, "Le triangle ABC est rectangle en A.", "La deduction doit conclure sur le triangle ABC.")
   expect_match(html, 'aria-label="Question 1">1.</span>', fixed = TRUE)
   expect_match(html, "La r\u00e9ponse \u00e9tait donc : &laquo; Le codage indique", fixed = TRUE)
 })
@@ -810,9 +828,7 @@ test_that("nommer_notion accepte un vocabulaire fourni par un autre domaine", {
     "t _ _ _ _ _ _ e"
   )
   )
-  expect_false(isTRUE(ex$qcm$humour))
 })
-
 
 test_that("le bandeau du cercle distingue definition et rappel utile", {
   x = exercices_cercle(seed = 2026)
@@ -903,4 +919,112 @@ test_that("cacher la longueur impose un avertissement et neutralise le nombre de
   expect_length(unique(nchar(milieux)), 1L)
   expect_true(isTRUE(masque$qcm$longueur_cachee))
   expect_true(nzchar(masque$qcm$avertissement_longueur))
+})
+
+
+test_that("les rappels sur les droites vont du codage a la deduction", {
+  x = exercices_droites(seed = 2026)
+
+  expect_length(x, 4L)
+  expect_setequal(
+  vapply(x, `[[`, character(1), "modele_id"),
+  c(
+    "DROIT_PERP_001",
+    "DROIT_PAR_001",
+    "DROIT_CODE_001",
+    "DROIT_DED_001"
+  )
+)
+
+  expect_true(any(vapply(
+  x,
+  function(ex) identical(
+    ex$qcm$rappel,
+    "Le dessin peut mentir. Le codage, lui, fait foi."
+  ),
+  logical(1)
+  )))
+  expect_setequal(
+    vapply(x, function(ex) ex$qcm$intention, character(1)),
+    c("nommer", "distinguer", "deduire")
+  )
+  expect_true(all(vapply(x, function(ex) {
+    length(ex$qcm$propositions) == 4L &&
+      length(unique(ex$qcm$propositions)) == 4L &&
+      identical(ex$qcm$propositions[[ex$qcm$correcte]], ex$reponse)
+  }, logical(1))))
+  expect_true(all(vapply(x, function(ex) {
+    identical(ex$parametres$cas, "droites_rappel_utile") &&
+      identical(ex$qcm$figure_correction, FALSE)
+  }, logical(1))))
+})
+
+test_that("les figures de droites sont dessinees a main levee sans perdre leur codage", {
+  perp = .html_figure_qcm("droites_perpendiculaires", "Droites perpendiculaires")
+  para = .html_figure_qcm("droites_paralleles", "Droites paralleles")
+  deduction = .html_figure_qcm(
+    "droites_perpendiculaires_meme_droite",
+    "Deux droites perpendiculaires a une meme droite"
+  )
+  figures = c(perp, para, deduction)
+  expect_true(all(grepl('class="figure-qcm figure-main-levee"', figures, fixed = TRUE)))
+  expect_true(all(grepl('data:image/svg+xml;base64,', figures, fixed = TRUE)))
+  expect_true(all(grepl(
+    "Dessin \u00e0 main lev\u00e9e \u2014 ne pas se fier aux apparences.",
+    figures,
+    fixed = TRUE
+  )))
+  expect_false(any(grepl("<line ", figures, fixed = TRUE)))
+  expect_false(any(grepl("<path ", figures, fixed = TRUE)))
+})
+
+
+test_that("l humour peut ouvrir une porte au dela de la notion", {
+  cercle = exercices_cercle(seed = 2026)
+  droites = exercices_droites(seed = 2026)
+
+  expect_true(any(vapply(cercle, function(ex) isTRUE(ex$qcm$humour), logical(1))))
+  expect_true(all(vapply(droites, function(ex) isTRUE(ex$qcm$humour), logical(1))))
+  expect_true(all(vapply(droites, function(ex) nzchar(ex$qcm$apart_humour), logical(1))))
+  expect_true(any(grepl(
+    "géomètre projectif",
+    vapply(droites, function(ex) ex$qcm$apart_humour, character(1)),
+    fixed = TRUE
+  )))
+})
+
+test_that("le quiz des droites garde humour et raisonnement separes", {
+  x = exercices_droites(seed = 2026)
+  fichier = tempfile(fileext = ".html")
+  html = paste(readLines(
+    produire_quiz(x, fichier = fichier, questions_par_quiz = 4, ouvrir = FALSE),
+    warn = FALSE, encoding = "UTF-8"
+  ), collapse = "\n")
+
+  expect_html_contains(
+	  html,
+	  "géomètre projectif",
+	  "Le quiz doit conserver l'ouverture humoristique vers la géométrie projective."
+  )
+
+  expect_gte(length(gregexpr('class="apart-humour"', html, fixed = TRUE)[[1L]]), 4L)
+  expect_identical(
+    lengths(regmatches(html, gregexpr('class="figure-qcm ', html, fixed = TRUE))),
+    4L
+  )
+})
+
+
+test_that("DROIT_DED_001 explicite le passage de l observation a la deduction", {
+  ex = exercices_droites(seed = 2026)[[4L]]
+  expect_identical(ex$modele_id, "DROIT_DED_001")
+  feedback = ex$qcm$feedback[[ex$qcm$correcte]]
+  expect_match(feedback, "[[Je vois]]", fixed = TRUE)
+  expect_match(feedback, "[[Je sais]]", fixed = TRUE)
+  expect_match(feedback, "[[J'en déduis]]", fixed = TRUE)
+  html = .html_correction(feedback)
+  expect_html_contains(html, 'class="raisonnement"', "Les trois etapes doivent former un seul bloc de raisonnement.")
+  expect_html_contains(html, 'class="etape-raisonnement etape-savoir"', "La connaissance reutilisable doit etre mise en valeur.")
+  expect_html_contains(html, "<strong>Je vois</strong>", "L observation doit rester explicite.")
+  expect_html_contains(html, "<strong>J'en déduis</strong>", "La deduction doit rester explicite.")
 })

@@ -6,9 +6,25 @@ test_that("la table des ensembles suit les inclusions usuelles", {
   expect_true(is.na(x$inclus_dans[[5L]]) || x$inclus_dans[[5L]] == "")
 })
 
-test_that("le diagramme des ensembles est un ggplot", {
+test_that("le diagramme des ensembles rend l inclusion lisible", {
+  donnees = ensembles_nombres()
   p = diagramme_ensembles_nombres()
   expect_s3_class(p, "ggplot")
+  expect_true(any(vapply(p$layers, function(x) inherits(x$geom, "GeomRect"), logical(1))))
+  expect_true(any(vapply(p$layers, function(x) inherits(x$geom, "GeomText"), logical(1))))
+  expect_match(p$labels$subtitle, "chaque cadre est contenu dans le suivant", fixed = TRUE)
+  cadres = p$layers[[1L]]$data
+  expect_identical(rev(cadres$code), donnees$code)
+  expect_identical(rev(cadres$symbole), donnees$symbole)
+  expect_identical(rev(cadres$nom), donnees$nom)
+  expect_identical(rev(cadres$exemple), donnees$exemple)
+  expect_identical(
+    rev(cadres$exemples),
+    gsub(" *\\| *", "   ", donnees$exemples)
+  )
+  expect_identical(cadres$x, (cadres$xmin + cadres$xmax) / 2)
+  expect_true(all(cadres$y < cadres$ymax & cadres$y > cadres$ymin))
+  expect_true(all(diff(cadres$xmin) > 1))
 })
 
 test_that("les cinq rappels sont des QCM valides", {

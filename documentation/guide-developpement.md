@@ -277,6 +277,29 @@ Ne pas figer prématurément le nombre ou la nature des types de fiches.
 Partir des usages réels, puis structurer seulement ce qui a trouvé du
 travail.
 
+## Humour : toujours ouvrir des portes
+
+> **Quand l'humour peut ouvrir une porte sans brouiller le savoir, eduschool essaie de l'ouvrir.**
+
+L'humour peut attirer l'attention, aider à mémoriser, dédramatiser une
+erreur, provoquer une question ou laisser entrevoir quelque chose qui
+dépasse la notion étudiée. Il n'est jamais nécessaire pour comprendre
+l'énoncé ni pour trouver la réponse.
+
+Lorsqu'un aparté humoristique porte une intention pédagogique réelle,
+les tests peuvent protéger cette intention comme n'importe quel autre
+contrat d'eduschool. Ils ne doivent pas imposer un quota artificiel de
+blagues : on protège une porte utile, pas un indicateur de production.
+
+Le public compte également. Une blague adaptée à un parent ne l'est pas
+nécessairement à un élève. Utiliser les mécanismes de catégorisation
+existants lorsque le destinataire est spécifique, plutôt que de diffuser
+le même humour à tout le monde.
+
+L'humour ne vise jamais les personnes concernées par des données
+sensibles. Et, comme ailleurs dans eduschool : **toujours ouvrir des
+portes, même avec une blague.**
+
 ## Simplicité
 
 Une nouvelle abstraction n'entre dans eduschool que lorsqu'elle a trouvé

@@ -30,6 +30,40 @@
 .html_correction = function(x) {
   x = .html_math(x)
   x = gsub(
+    paste0(
+      "\\[\\[Je vois\\]\\]\n([^\n]+)\n",
+      "\\[\\[Je sais\\]\\]\n([^\n]+)\n",
+      "\\[\\[Je calcule\\]\\]\n([\\s\\S]+?)\n",
+      "\\[\\[J'en d\u00e9duis\\]\\]\n([^\n]+)"
+    ),
+    paste0(
+      '<div class="raisonnement">',
+      '<div class="etape-raisonnement"><strong>Je vois</strong><div>\\1</div></div>',
+      '<div class="etape-raisonnement etape-savoir"><strong>Je sais</strong><div>\\2</div></div>',
+      '<div class="etape-raisonnement etape-calcul"><strong>Je calcule</strong><div>\\3</div></div>',
+      '<div class="etape-raisonnement"><strong>J\'en d\u00e9duis</strong><div>\\4</div></div>',
+      '</div>'
+    ),
+    x,
+    perl = TRUE
+  )
+  x = gsub(
+    paste0(
+      "\\[\\[Je vois\\]\\]\n([^\n]+)\n",
+      "\\[\\[Je sais\\]\\]\n([^\n]+)\n",
+      "\\[\\[J'en d\u00e9duis\\]\\]\n([^\n]+)"
+    ),
+    paste0(
+      '<div class="raisonnement">',
+      '<div class="etape-raisonnement"><strong>Je vois</strong><div>\\1</div></div>',
+      '<div class="etape-raisonnement etape-savoir"><strong>Je sais</strong><div>\\2</div></div>',
+      '<div class="etape-raisonnement"><strong>J\'en d\u00e9duis</strong><div>\\3</div></div>',
+      '</div>'
+    ),
+    x,
+    perl = TRUE
+  )
+  x = gsub(
     "\\[\\[([^]]+)\\]\\]",
     "<strong>\\1</strong>",
     x,
@@ -38,17 +72,140 @@
   gsub("\n", "<br>\n", x, fixed = TRUE)
 }
 
+.figure_droites_main_levee = function(figure, description = "") {
+  style = list(roughness = 0.75, bowing = 0.375, n_passes = 2L, linewidth = 0.3)
+  segment = function(x, y, xend, yend, seed) {
+    ggsketch::geom_sketch_segment(
+      ggplot2::aes(x = x, y = y, xend = xend, yend = yend),
+      roughness = style$roughness,
+      bowing = style$bowing,
+      n_passes = style$n_passes,
+      linewidth = style$linewidth,
+      seed = seed
+    )
+  }
+  codage_angle_droit = function(cx, cy, ux, uy, vx, vy, seed) {
+    cote = 0.28
+    d = data.frame(
+      x = cx + cote * c(0, ux, ux + vx, vx, 0),
+      y = cy + cote * c(0, uy, uy + vy, vy, 0)
+    )
+    ggsketch::geom_sketch_path(
+      data = d,
+      ggplot2::aes(x = x, y = y),
+      inherit.aes = FALSE,
+      roughness = 0.5,
+      bowing = 0.2,
+      n_passes = 2L,
+      linewidth = 0.25,
+      seed = seed
+    )
+  }
+  ux = 4 / sqrt(4^2 + 0.3^2)
+  uy = 0.3 / sqrt(4^2 + 0.3^2)
+  vx = -uy
+  vy = ux
+  p = ggplot2::ggplot()
+  if (identical(figure, "droites_perpendiculaires")) {
+    p = p +
+      segment(-2, -0.15, 2, 0.15, 2026L) +
+      segment(-0.15, 2, 0.15, -2, 2027L) +
+      codage_angle_droit(0, 0, ux, uy, vx, vy, 2028L) +
+      ggplot2::annotate("text", x = 1.72, y = -0.03, label = "(\u0394)", size = 5) +
+      ggplot2::annotate("text", x = -0.25, y = 1.75, label = "(d)", size = 5)
+  } else if (identical(figure, "droites_paralleles")) {
+    p = p +
+      segment(-2, 0.65, 2, 0.95, 2029L) +
+      segment(-2, -0.95, 2, -0.65, 2030L) +
+      ggplot2::annotate("text", x = 1.72, y = 1.02, label = "(d)", size = 5) +
+      ggplot2::annotate("text", x = 1.72, y = -0.58, label = "(d')", size = 5) +
+      ggplot2::annotate("text", x = 0, y = -1.45, label = "(d) // (d')", size = 5)
+  } else {
+    centres = c(-0.95, 0.95)
+    c1 = centres[[1L]] * c(ux, uy)
+    c2 = centres[[2L]] * c(ux, uy)
+    p = p +
+      segment(-2, -0.15, 2, 0.15, 2031L) +
+      segment(c1[[1L]] - 0.75 * vx, c1[[2L]] - 0.75 * vy,
+              c1[[1L]] + 0.75 * vx, c1[[2L]] + 0.75 * vy, 2032L) +
+      segment(c2[[1L]] - 0.75 * vx, c2[[2L]] - 0.75 * vy,
+              c2[[1L]] + 0.75 * vx, c2[[2L]] + 0.75 * vy, 2033L) +
+      codage_angle_droit(c1[[1L]], c1[[2L]], ux, uy, vx, vy, 2034L) +
+      codage_angle_droit(c2[[1L]], c2[[2L]], ux, uy, vx, vy, 2035L) +
+      ggplot2::annotate("text", x = 1.72, y = -0.03, label = "(\u0394)", size = 5) +
+      ggplot2::annotate("text", x = c1[[1L]] - 0.22, y = c1[[2L]] + 0.92, label = "(d)", size = 5) +
+      ggplot2::annotate("text", x = c2[[1L]] - 0.22, y = c2[[2L]] + 0.92, label = "(d')", size = 5)
+  }
+  p = p +
+    ggplot2::coord_fixed(xlim = c(-2.25, 2.25), ylim = c(-1.65, 2.05), expand = FALSE) +
+    ggplot2::theme_void() +
+    ggplot2::theme(
+      plot.background = ggplot2::element_rect(fill = "transparent", colour = NA),
+      panel.background = ggplot2::element_rect(fill = "transparent", colour = NA)
+    )
+  fichier = tempfile(fileext = ".svg")
+  on.exit(unlink(fichier), add = TRUE)
+  ggsketch::ggsketch_save(fichier, p, width = 5, height = 3.2)
+  svg_raw = readBin(fichier, what = "raw", n = file.info(fichier)$size)
+  paste0(
+    '<div class="figure-qcm figure-main-levee" role="img" aria-label="',
+    .html_echapper(description), '">',
+    '<img class="figure-sketch" src="data:image/svg+xml;base64,', .base64_raw(svg_raw), '" alt="">',
+    '<div class="avertissement-main-levee">Dessin \u00e0 main lev\u00e9e \u2014 ne pas se fier aux apparences.</div>',
+    '</div>'
+  )
+}
+
 .html_figure_qcm = function(figure, description = NULL) {
   if (is.null(figure)) return("")
 
   if (identical(figure, "triangle_main_levee_angle_droit_A")) {
+    segment = function(x, y, xend, yend, seed) {
+      ggsketch::geom_sketch_segment(
+        ggplot2::aes(x = x, y = y, xend = xend, yend = yend),
+        roughness = 0.75,
+        bowing = 0.375,
+        n_passes = 2L,
+        linewidth = 0.3,
+        seed = seed
+      )
+    }
+    codage = data.frame(
+      x = c(0, 0.28, 0.28, 0, 0),
+      y = c(0, 0, 0.28, 0.28, 0)
+    )
+    p = ggplot2::ggplot() +
+      segment(0, 0, 4, 0.18, 2040L) +
+      segment(0, 0, 0.72, 2.75, 2041L) +
+      segment(4, 0.18, 0.72, 2.75, 2042L) +
+      ggsketch::geom_sketch_path(
+        data = codage,
+        ggplot2::aes(x = x, y = y),
+        inherit.aes = FALSE,
+        roughness = 0.5,
+        bowing = 0.2,
+        n_passes = 2L,
+        linewidth = 0.25,
+        seed = 2043L
+      ) +
+      ggplot2::annotate("text", x = -0.18, y = -0.18, label = "A", size = 5) +
+      ggplot2::annotate("text", x = 4.12, y = 0.12, label = "B", size = 5) +
+      ggplot2::annotate("text", x = 0.72, y = 2.95, label = "C", size = 5) +
+      ggplot2::coord_fixed(xlim = c(-0.45, 4.35), ylim = c(-0.4, 3.15), expand = FALSE) +
+      ggplot2::theme_void() +
+      ggplot2::theme(
+        plot.background = ggplot2::element_rect(fill = "transparent", colour = NA),
+        panel.background = ggplot2::element_rect(fill = "transparent", colour = NA)
+      )
+    fichier = tempfile(fileext = ".svg")
+    on.exit(unlink(fichier), add = TRUE)
+    ggsketch::ggsketch_save(fichier, p, width = 5, height = 3.7)
+    svg_raw = readBin(fichier, what = "raw", n = file.info(fichier)$size)
     return(paste0(
-      '<div class="figure-qcm" role="img" aria-label="Triangle ABC dessin\u00e9 \u00e0 main lev\u00e9e, avec angle droit cod\u00e9 en A">',
-      '<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
-      '<path d="M58 154 Q168 142 276 151 Q206 92 92 34 Q69 91 58 154" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',
-      '<path d="M62 132 L82 134 L80 153" fill="none" stroke="currentColor" stroke-width="3"/>',
-      '<text x="39" y="174">A</text><text x="282" y="169">B</text><text x="86" y="28">C</text>',
-      '</svg></div>'
+      '<div class="figure-qcm figure-main-levee" role="img" aria-label="Triangle ABC dessin\u00e9 \u00e0 main lev\u00e9e, avec angle droit cod\u00e9 en A">',
+      '<img class="figure-sketch" src="data:image/svg+xml;base64,', .base64_raw(svg_raw), '" alt="">',
+      '<div class="avertissement-main-levee">Dessin \u00e0 main lev\u00e9e \u2014 ne pas se fier aux apparences.</div>',
+      '</div>'
     ))
   }
 
@@ -100,6 +257,16 @@
       segments, etiquettes,
       '</svg></div>'
     ))
+  }
+
+  figures_droites = c(
+    "droites_perpendiculaires",
+    "droites_paralleles",
+    "droites_perpendiculaires_meme_droite"
+  )
+  if (figure %in% figures_droites) {
+    if (is.null(description) || length(description) != 1L || is.na(description)) description = ""
+    return(.figure_droites_main_levee(figure, description))
   }
 
   figures_quadrilatere = c(
@@ -409,11 +576,12 @@ produire_quiz = function(exercices, fichier = NULL,
     '.question{background:#fff;border:1px solid #d7dce0;border-radius:10px;padding:1rem 1.1rem;margin:1.2rem 0;box-shadow:0 1px 3px rgba(0,0,0,.035)}',
     '.question h2{font-size:1.05rem;margin:.1rem 0 .65rem;display:flex;align-items:center;justify-content:space-between;gap:.8rem}',
     '.intention{font-size:.72rem;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:#666;background:#f2f3f3;border-radius:999px;padding:.2rem .55rem}',
-    '.enonce{font-weight:650}.figure-qcm{max-width:340px;margin:.4rem auto 1rem}.figure-qcm svg{display:block;width:100%;height:auto}.figure-qcm text{font:650 18px system-ui,sans-serif}.apart-humour{display:flex;gap:.55rem;align-items:flex-start;margin:.75rem 0 1rem;padding:.65rem .8rem;border-left:4px solid #7b61a8;background:#f7f3fb;border-radius:7px;font-family:"Comic Sans MS","Bradley Hand",cursive;color:#514263}.apart-icone{font-family:system-ui,sans-serif;font-size:1.15rem;line-height:1.25}.proposition{display:flex;gap:.65rem;align-items:center;padding:.6rem .5rem;border-radius:7px;cursor:pointer}',
+    '.enonce{font-weight:650}.figure-qcm{max-width:340px;margin:.4rem auto 1rem}.figure-qcm svg{display:block;width:100%;height:auto}.figure-qcm text{font:650 18px system-ui,sans-serif}.figure-sketch{display:block;width:100%;height:auto}.avertissement-main-levee{margin-top:.25rem;text-align:center;font-size:.78rem;color:#666;font-style:italic}.apart-humour{display:flex;gap:.55rem;align-items:flex-start;margin:.75rem 0 1rem;padding:.65rem .8rem;border-left:4px solid #7b61a8;background:#f7f3fb;border-radius:7px;font-family:"Comic Sans MS","Bradley Hand",cursive;color:#514263}.apart-icone{font-family:system-ui,sans-serif;font-size:1.15rem;line-height:1.25}.proposition{display:flex;gap:.65rem;align-items:center;padding:.6rem .5rem;border-radius:7px;cursor:pointer}',
     '.proposition:hover{background:#f4f5f6}.proposition input{margin-top:0;flex:0 0 auto;accent-color:var(--accent)}',
     '.question.juste{border-left:5px solid #2e7d32;background:#f1f8f2}.question.a-revoir{border-left:5px solid #d97706;background:#fff7ed}.question.sans-reponse{border-left:5px solid #999}',
     '.question.juste .retour{color:#256b2b}.question.a-revoir .retour{color:#b45309}.question.sans-reponse .retour{color:#666}',
-    '.retour{margin-top:.8rem;font-weight:750}.feedback-option{display:none;margin-top:.4rem;padding:.65rem .75rem;background:#f6f7f7;border-left:4px solid var(--accent);border-radius:7px;white-space:pre-line}',
+    '.retour{margin-top:.8rem;font-weight:750}.feedback-option{display:none;margin-top:.4rem;padding:.65rem .75rem;background:#f6f7f7;border-left:4px solid var(--accent);border-radius:7px;white-space:pre-line}.feedback-option:has(.raisonnement){padding:0;background:transparent;border-left:0;white-space:normal}',
+    '.raisonnement{margin:.45rem 0;padding:.55rem .65rem;border:1px solid color-mix(in srgb,var(--accent) 35%,#c9ced6);border-radius:6px;background:#fff}.etape-raisonnement+.etape-raisonnement{margin-top:.45rem}.etape-raisonnement>strong{display:block;margin-bottom:.08rem}.etape-savoir{padding:.4rem .5rem;background:color-mix(in srgb,var(--accent) 8%,white);border-radius:4px}',
     '.feedback-notion{display:none;margin-top:.55rem;padding:.7rem .8rem;border-left:4px solid var(--accent);background:#f6f7f7;border-radius:7px;white-space:pre-line}',
     '.tableau-question{border-collapse:collapse;margin:.8rem 0 1.2rem;min-width:15rem}.tableau-question th,.tableau-question td{border:1px solid #c9ced6;padding:.45rem .8rem;text-align:right}.tableau-question th{text-align:left;background:#f4f5f7}',
     '.question[data-forme="nommer_notion"] .enonce{white-space:pre-line;line-height:1.8}.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.6rem 0}.actions button{font:inherit;font-weight:650;padding:.7rem 1rem;border:1px solid var(--accent);border-radius:8px;background:#fff;color:#222;cursor:pointer}.actions button:disabled{cursor:default;opacity:.6;filter:none}',

@@ -1,9 +1,12 @@
 modele_id;texte_id;texte
 PYTH_APPL_001;enonce;"La figure est dessinée à main levée. Quelle information permet d’affirmer que ABC est rectangle en A ?"
 PYTH_APPL_001;reponse;"Le codage indique que l’angle BAC est droit."
-PYTH_APPL_001;correction;"[[Je vois]] une figure qui peut m’aider à chercher, mais son apparence ne suffit pas.
-[[Je sais]] que l’angle BAC est droit grâce au [[codage]].
-[[J’en déduis]] que ABC est rectangle en A. Je peux [[donc]] utiliser le théorème de Pythagore."
+PYTH_APPL_001;correction;"[[Je vois]]
+Le codage indique que l’angle BAC est droit.
+[[Je sais]]
+Un triangle qui possède un angle droit est un triangle rectangle.
+[[J'en déduis]]
+Le triangle ABC est rectangle en A. Je peux donc utiliser le théorème de Pythagore."
 PYTH_APPL_001;proposition_rectangle;"Le codage indique que l’angle BAC est droit."
 PYTH_APPL_001;proposition_deux_longueurs;"L’angle en A semble droit sur le dessin."
 PYTH_APPL_001;proposition_cote_cherche;"Les côtés AB et AC semblent perpendiculaires."
@@ -14,8 +17,12 @@ PYTH_APPL_001;feedback_noms_sommets;"L’orientation du dessin n’est pas une p
 PYTH_APPL_001;notion;"Géométrie déductive : voir, savoir, déduire"
 PYTH_APPL_001;rappel;"Une figure aide à chercher. Pour [[affirmer]], on s’appuie sur les données, les codages et les propriétés."
 PYTH_IDENT_001;enonce;"ABC est un triangle rectangle en %s. Quel côté est l’hypoténuse ?"
-PYTH_IDENT_001;correction;"[[Je sais]] que le triangle est rectangle en %s. L’[[hypoténuse]] est le côté opposé à l’angle droit : c’est %s.
-[[J’en déduis]] que la relation de Pythagore s’écrit %s^2 = %s^2 + %s^2."
+PYTH_IDENT_001;correction;"[[Je vois]]
+Le triangle ABC est rectangle en %s.
+[[Je sais]]
+L’[[hypoténuse]] est le côté opposé à l’angle droit : c’est %s.
+[[J'en déduis]]
+La relation de Pythagore s’écrit %s^2 = %s^2 + %s^2."
 PYTH_IDENT_001;notion;"Théorème de Pythagore : reconnaître l’hypoténuse"
 PYTH_IDENT_001;rappel;"Dans un triangle rectangle, l’[[hypoténuse]] est le côté opposé à l’angle droit."
 PYTH_HYP_001;enonce;"ABC est rectangle en A, avec AB = %d cm et AC = %d cm. Quelle relation faut-il écrire pour calculer BC ?"
@@ -23,12 +30,16 @@ PYTH_HYP_001;relation_correcte;"BC^2 = AB^2 + AC^2"
 PYTH_HYP_001;relation_sans_carres;"BC = AB + AC"
 PYTH_HYP_001;relation_mauvais_cote;"AB^2 = AC^2 + BC^2"
 PYTH_HYP_001;relation_difference;"BC^2 = AB^2 - AC^2"
-PYTH_HYP_001;correction;"[[Je sais]] que ABC est rectangle en A : BC est donc l’[[hypoténuse]].
-[[Je raisonne]] avec le théorème de Pythagore :
-BC^2 = AB^2 + AC^2
+PYTH_HYP_001;correction;"[[Je vois]]
+ABC est rectangle en A, avec AB = %d cm et AC = %d cm.
+[[Je sais]]
+BC est l’[[hypoténuse]] ; le théorème de Pythagore donne BC^2 = AB^2 + AC^2.
+[[Je calcule]]
 BC^2 = %d^2 + %d^2
 BC^2 = %d
-[[J’en déduis]] que BC = %d cm."
+BC = √%d = %d cm
+[[J'en déduis]]
+BC mesure %d cm."
 PYTH_HYP_001;feedback_sans_carres;"Le théorème de Pythagore porte sur les [[carrés]] des longueurs, pas sur leur somme directe."
 PYTH_HYP_001;feedback_mauvais_cote;"Dans la relation de Pythagore, le carré de l’[[hypoténuse]] est seul d’un côté de l’égalité. Ici, l’hypoténuse est BC."
 PYTH_HYP_001;feedback_difference;"Pour calculer l’[[hypoténuse]], on additionne les carrés des deux autres côtés."
@@ -39,12 +50,16 @@ PYTH_COTE_001;relation_correcte;"AB^2 = BC^2 - AC^2"
 PYTH_COTE_001;relation_addition;"AB^2 = BC^2 + AC^2"
 PYTH_COTE_001;relation_inversee;"AB^2 = AC^2 - BC^2"
 PYTH_COTE_001;relation_sans_carres;"AB = BC - AC"
-PYTH_COTE_001;correction;"[[Je sais]] que BC est l’[[hypoténuse]].
-[[Je raisonne]] à partir de BC^2 = AB^2 + AC^2.
-AB^2 = BC^2 - AC^2
+PYTH_COTE_001;correction;"[[Je vois]]
+ABC est rectangle en A, avec AC = %d cm et BC = %d cm.
+[[Je sais]]
+BC est l’[[hypoténuse]] ; le théorème de Pythagore donne BC^2 = AB^2 + AC^2.
+[[Je calcule]]
 AB^2 = %d^2 - %d^2
 AB^2 = %d
-[[J’en déduis]] que AB = %d cm."
+AB = √%d = %d cm
+[[J'en déduis]]
+AB mesure %d cm."
 PYTH_COTE_001;feedback_addition;"AB n’est pas l’[[hypoténuse]]. Pour isoler AB^2 à partir de la relation de Pythagore, il faut soustraire AC^2."
 PYTH_COTE_001;feedback_inversee;"BC est l’[[hypoténuse]] et donc le plus grand côté. Le calcul AC^2 - BC^2 ne peut pas donner le carré d’une longueur réelle ici."
 PYTH_COTE_001;feedback_sans_carres;"On ne soustrait pas directement les longueurs : le théorème de Pythagore relie leurs [[carrés]]."
@@ -55,11 +70,16 @@ PYTH_DIAG_001;proposition_triangle_rectangle;"Une diagonale, une longueur et une
 PYTH_DIAG_001;proposition_rectangle;"Un rectangle a quatre côtés."
 PYTH_DIAG_001;proposition_diagonales;"Un rectangle possède deux diagonales."
 PYTH_DIAG_001;proposition_paralleles;"Les côtés opposés d’un rectangle sont parallèles."
-PYTH_DIAG_001;correction;"[[Je sais]] qu’un angle du rectangle est droit. Une longueur, une largeur et la diagonale forment donc un [[triangle rectangle]].
-[[Je raisonne]] avec le théorème de Pythagore :
+PYTH_DIAG_001;correction;"[[Je vois]]
+Le rectangle mesure %d cm de longueur et %d cm de largeur ; sa diagonale forme un triangle avec ces deux côtés.
+[[Je sais]]
+Un angle du rectangle est droit : ce triangle est donc [[rectangle]] et le théorème de Pythagore s’applique.
+[[Je calcule]]
 d^2 = %d^2 + %d^2
 d^2 = %d
-[[J’en déduis]] que d = %d cm."
+d = √%d = %d cm
+[[J'en déduis]]
+La diagonale mesure %d cm."
 PYTH_DIAG_001;feedback_rectangle;"Avoir quatre côtés ne suffit pas. L’information utile est l’existence d’un [[angle droit]], qui fait apparaître un triangle rectangle."
 PYTH_DIAG_001;feedback_diagonales;"Le nombre de diagonales ne justifie pas Pythagore. Il faut repérer le [[triangle rectangle]] formé par trois segments."
 PYTH_DIAG_001;feedback_paralleles;"Le parallélisme des côtés opposés est vrai, mais ce n’est pas lui qui permet d’appliquer Pythagore ici."

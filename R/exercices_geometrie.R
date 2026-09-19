@@ -39,6 +39,8 @@
       figure = figure,
       figure_correction = FALSE,
       figure_alt = textes[["figure_alt"]],
+      humour = "apart_humour" %in% names(textes) && nzchar(textes[["apart_humour"]]),
+      apart_humour = if ("apart_humour" %in% names(textes)) textes[["apart_humour"]] else NULL,
       propositions = propositions[ordre],
       correcte = match(1L, ordre),
       feedback = feedback[ordre]
@@ -110,9 +112,39 @@ exercices_cercle = function(seed = NULL) {
         candidats = unname(ex$qcm$propositions),
         enonce = ex$enonce,
         explication = ex$qcm$feedback[[ex$qcm$correcte]],
-        apart_humour = NULL
+        apart_humour = ex$qcm$apart_humour
       ))
     }
     ex
+  })
+}
+
+
+#' Useful parallel and perpendicular line reminders
+#'
+#' Builds four short questions that reactivate perpendicularity, parallelism
+#' and the property linking two lines perpendicular to the same line.
+#'
+#' @param seed Optional seed used to shuffle answers.
+#' @return A list of four eduschool QCM exercises.
+#' @export
+exercices_droites = function(seed = NULL) {
+  graines = if (is.null(seed)) rep(list(NULL), 4L) else as.list(seed + 0:3)
+
+  specs = list(
+    c("DROIT_PERP_001", "nommer", "droites_perpendiculaires"),
+    c("DROIT_PAR_001", "distinguer", "droites_paralleles"),
+    c("DROIT_CODE_001", "distinguer", "droites_perpendiculaires"),
+    c("DROIT_DED_001", "deduire", "droites_perpendiculaires_meme_droite")
+  )
+
+  lapply(seq_along(specs), function(i) {
+    .qcm_rappel_geometrie(
+      modele_id = specs[[i]][[1L]],
+      intention = specs[[i]][[2L]],
+      figure = specs[[i]][[3L]],
+      cas = "droites_rappel_utile",
+      seed = graines[[i]]
+    )
   })
 }

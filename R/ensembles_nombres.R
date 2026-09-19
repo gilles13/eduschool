@@ -2,7 +2,7 @@
 
 utils::globalVariables(c(
   "xmin", "xmax", "ymin", "ymax",
-  "symbole", "nom", "y", "exemple"
+  "symbole", "nom", "y", "exemple", "exemples", "etiquette"
 ))
 
 #' Ensembles de nombres usuels
@@ -29,154 +29,81 @@ ensembles_nombres = function() {
 #' @return Un objet ggplot.
 #' @export
 diagramme_ensembles_nombres = function() {
+  ensembles = ensembles_nombres()
+  cadres = ensembles[rev(seq_len(nrow(ensembles))), , drop = FALSE]
+  pas = 1.35
+  marge = (seq_len(nrow(cadres)) - 1) * pas
+  taille = 10 + 2 * (pas - 0.8) * (nrow(cadres) - 1)
+  cadres$xmin = marge
+  cadres$xmax = taille - marge
+  cadres$ymin = marge
+  cadres$ymax = taille - marge
+  cadres$x = (cadres$xmin + cadres$xmax) / 2
+  cadres$y = cadres$ymax - 0.25
+  cadres$etiquette = paste(cadres$symbole, "\u2014", cadres$nom)
+  cadres$exemples = gsub(" *\\| *", "   ", cadres$exemples)
+  chaine = paste(ensembles$symbole, collapse = " \u2282 ")
+  centre = taille / 2
+
   ggplot2::ggplot() +
-
-    # Les cadres partagent le meme centre : chaque nouveau cadre contient
-    # entierement le precedent, tandis que sa partie droite montre ce qu'il
-    # ajoute au parcours N -> Z -> D -> Q -> R.
-    ggplot2::annotate(
-      "rect",
-      xmin = 0, xmax = 10,
-      ymin = 0, ymax = 10,
-      fill = "#DCEAF7",
-      colour = "#245A8D",
-      linewidth = 1.1,
-      alpha = 0.55
+    ggplot2::geom_rect(
+      data = cadres,
+      ggplot2::aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      fill = NA,
+      colour = "grey35",
+      linewidth = 0.8
     ) +
-    ggplot2::annotate(
-      "rect",
-      xmin = 0.7, xmax = 8.2,
-      ymin = 0.8, ymax = 9.2,
-      fill = "#DFF0DF",
-      colour = "#4F8A58",
-      linewidth = 1.1,
-      alpha = 0.70
+    ggplot2::geom_text(
+      data = cadres,
+      ggplot2::aes(x = x, y = y, label = etiquette),
+      hjust = 0.5,
+      vjust = 1,
+      fontface = "bold",
+      size = 4
     ) +
-    ggplot2::annotate(
-      "rect",
-      xmin = 1.4, xmax = 6.6,
-      ymin = 1.6, ymax = 8.4,
-      fill = "#FCECCB",
-      colour = "#D99A2B",
-      linewidth = 1.1,
-      alpha = 0.75
+    ggplot2::geom_text(
+      data = cadres,
+      ggplot2::aes(x = x, y = y - 0.55, label = exemples),
+      hjust = 0.5,
+      vjust = 1,
+      size = 4.5
     ) +
-    ggplot2::annotate(
-      "rect",
-      xmin = 2.1, xmax = 5.1,
-      ymin = 2.4, ymax = 7.6,
-      fill = "#F6D7DC",
-      colour = "#B84A5A",
-      linewidth = 1.1,
-      alpha = 0.80
-    ) +
-    ggplot2::annotate(
-      "rect",
-      xmin = 2.8, xmax = 4.1,
-      ymin = 3.2, ymax = 6.8,
-      fill = "#E5DDF4",
-      colour = "#6D54A8",
-      linewidth = 1.1,
-      alpha = 0.85
-    ) +
-
-    # Le coeur : les naturels.
-    ggplot2::annotate(
-      "text", x = 3.45, y = 5.75,
-      label = "\u2115", fontface = "bold", size = 8
-    ) +
-    ggplot2::annotate(
-      "text", x = 3.45, y = 4.95,
-      label = "naturels", fontface = "bold", size = 4.3
-    ) +
-    ggplot2::annotate(
-      "text", x = 3.45, y = 4.05,
-      label = "0   1   2   3   ...", size = 4.2
-    ) +
-
-    # Chaque zone propre repond a la question : qu'ajoute l'ensemble suivant ?
-    ggplot2::annotate(
-      "text", x = 4.6, y = 6.95,
-      label = "\u2124  ajoute les entiers n\u00e9gatifs",
-      hjust = 0, fontface = "bold", size = 4.1
-    ) +
-    ggplot2::annotate(
-      "text", x = 4.6, y = 6.25,
-      label = "ex.  -2", hjust = 0, size = 4
-    ) +
-    ggplot2::annotate(
-      "text", x = 5.4, y = 7.75,
-      label = "\U0001D53B  ajoute les d\u00e9cimaux",
-      hjust = 0, fontface = "bold", size = 4.1
-    ) +
-    ggplot2::annotate(
-      "text", x = 5.4, y = 7.05,
-      label = "ex.  0,25", hjust = 0, size = 4
-    ) +
-    ggplot2::annotate(
-      "text", x = 6.9, y = 8.55,
-      label = "\u211a  ajoute les fractions",
-      hjust = 0, fontface = "bold", size = 4.1
-    ) +
-    ggplot2::annotate(
-      "text", x = 6.9, y = 7.85,
-      label = "ex.  2/3", hjust = 0, size = 4
-    ) +
-    ggplot2::annotate(
-      "text", x = 8.5, y = 9.35,
-      label = "\u211d  ajoute les irrationnels",
-      hjust = 0, fontface = "bold", size = 4.1
-    ) +
-    ggplot2::annotate(
-      "text", x = 8.5, y = 8.65,
-      label = "ex.  \u221a2   \u03c0", hjust = 0, size = 4
-    ) +
-
-    # La lecture symbolique reste explicite et se lit dans le meme sens.
     ggplot2::annotate(
       "text",
-      x = 5, y = -0.65,
-      label = "\u2115 \u2282 \u2124 \u2282 \U0001D53B \u2282 \u211a \u2282 \u211d",
+      x = centre, y = -0.65,
+      label = chaine,
       fontface = "bold",
       size = 6
     ) +
     ggplot2::annotate(
       "text",
-      x = 5, y = -1.15,
-      label = "Chaque ensemble contient le pr\u00e9c\u00e9dent et ajoute de nouveaux nombres.",
+      x = centre, y = -1.15,
+      label = "Un nombre entre par le plus petit ensemble qui le contient.",
       size = 4
     ) +
-
     ggplot2::coord_fixed(
-      xlim = c(-0.2, 10.8),
-      ylim = c(-1.45, 10.2),
+      xlim = c(-0.2, taille + 0.2),
+      ylim = c(-1.45, taille + 0.2),
       clip = "off"
     ) +
     ggplot2::labs(
       title = "Les ensembles de nombres",
-      subtitle = "Partir des naturels, puis regarder ce que chaque ensemble permet d'ajouter."
+      subtitle = paste0(
+        "Des naturels aux r\u00e9els : ",
+        "chaque cadre est contenu dans le suivant."
+      )
     ) +
     ggplot2::theme_void() +
     ggplot2::theme(
-      plot.title = ggplot2::element_text(
-        size = 20,
-        face = "bold",
-        hjust = 0.5
-      ),
+      plot.title = ggplot2::element_text(size = 20, face = "bold", hjust = 0.5),
       plot.subtitle = ggplot2::element_text(
         size = 11.5,
         hjust = 0.5,
         margin = ggplot2::margin(b = 12)
       ),
-      plot.margin = ggplot2::margin(
-        t = 15,
-        r = 15,
-        b = 30,
-        l = 15
-      )
+      plot.margin = ggplot2::margin(t = 15, r = 15, b = 30, l = 15)
     )
 }
-
 
 .qcm_ensembles = function(modele_id, enonce, reponse, propositions, feedback,
                            intention, seed) {

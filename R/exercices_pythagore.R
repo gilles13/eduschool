@@ -40,7 +40,7 @@ generer_pythagore_hypotenuse = function(niveau_id = "4E", capacite_id = NA_chara
   t = .triangle_pythagoricien(difficulte); a = t[[1L]]; b = t[[2L]]; c = t[[3L]]
   propositions = vapply(c("relation_correcte", "relation_sans_carres", "relation_mauvais_cote", "relation_difference"), function(id) textes[[id]], character(1))
   ordre = sample(seq_len(4L))
-  correction = sprintf(textes[["correction"]], a, b, c^2, c)
+  correction = sprintf(textes[["correction"]], a, b, a, b, c^2, c^2, c, c)
   qcm = list(
     intention = "choisir_relation",
     forme_question = "raisonnement",
@@ -63,7 +63,7 @@ generer_pythagore_cote = function(niveau_id = "4E", capacite_id = NA_character_,
   t = .triangle_pythagoricien(difficulte); a = t[[1L]]; b = t[[2L]]; c = t[[3L]]
   propositions = vapply(c("relation_correcte", "relation_addition", "relation_inversee", "relation_sans_carres"), function(id) textes[[id]], character(1))
   ordre = sample(seq_len(4L))
-  correction = sprintf(textes[["correction"]], c, b, a^2, a)
+  correction = sprintf(textes[["correction"]], b, c, c, b, a^2, a^2, a, a)
   qcm = list(
     intention = "transformer_relation",
     forme_question = "raisonnement",
@@ -86,7 +86,7 @@ generer_pythagore_diagonale = function(niveau_id = "4E", capacite_id = NA_charac
   t = .triangle_pythagoricien(difficulte); largeur = t[[1L]]; longueur = t[[2L]]; diagonale = t[[3L]]
   propositions = vapply(c("proposition_triangle_rectangle", "proposition_rectangle", "proposition_diagonales", "proposition_paralleles"), function(id) textes[[id]], character(1))
   ordre = sample(seq_len(4L))
-  correction = sprintf(textes[["correction"]], longueur, largeur, diagonale^2, diagonale)
+  correction = sprintf(textes[["correction"]], longueur, largeur, longueur, largeur, diagonale^2, diagonale^2, diagonale, diagonale)
   qcm = list(
     intention = "modeliser",
     forme_question = "raisonnement",
