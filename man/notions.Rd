@@ -4,11 +4,13 @@
 \alias{notions}
 \title{Notions documentaires}
 \usage{
-notions(discipline_id = NULL)
+notions()
 }
-\arguments{
-\item{discipline_id}{Discipline facultative.}
+\value{
+Un data.frame avec `notion_id` et `libelle`.
 }
 \description{
-Notions documentaires
+Retourne le catalogue compact des notions mathematiques documentees.
+L'identifiant `notion_id` est celui a reutiliser dans les fonctions
+d'eduschool qui attendent une notion.
 }

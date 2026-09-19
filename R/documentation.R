@@ -1,11 +1,21 @@
-#' Notions documentaires
-#' @param discipline_id Discipline facultative.
-#' @export
-notions = function(discipline_id = NULL) {
+.notions_documentation = function() {
   x = .lire_csv("documentation", "notions.csv")
-  if (!is.null(discipline_id)) x = x[x$discipline_id %in% discipline_id, , drop = FALSE]
+  x = x[x$discipline_id == "MAT", , drop = FALSE]
   rownames(x) = NULL
   x
+}
+
+#' Notions documentaires
+#'
+#' Retourne le catalogue compact des notions mathematiques documentees.
+#' L'identifiant `notion_id` est celui a reutiliser dans les fonctions
+#' d'eduschool qui attendent une notion.
+#'
+#' @return Un data.frame avec `notion_id` et `libelle`.
+#' @export
+notions = function() {
+  x = .notions_documentation()
+  x[, c("notion_id", "libelle"), drop = FALSE]
 }
 
 #' Notions associées à une capacité
@@ -13,7 +23,7 @@ notions = function(discipline_id = NULL) {
 #' @export
 notions_capacite = function(capacite_id) {
   nc = .lire_csv("documentation", "notions_capacites.csv")
-  n = notions()
+  n = .notions_documentation()
   x = nc[nc$capacite_id %in% capacite_id, , drop = FALSE]
   merge(x, n, by = "notion_id", all.x = TRUE, sort = FALSE)
 }
@@ -24,7 +34,7 @@ notions_capacite = function(capacite_id) {
 #' @export
 prerequis_notion = function(notion_id, recursif = FALSE) {
   p = .lire_csv("documentation", "prerequis.csv")
-  n = notions()
+  n = .notions_documentation()
   if (!isTRUE(recursif)) ids = unique(p$prerequis_id[p$notion_id %in% notion_id]) else {
     vus = character(); front = unique(notion_id)
     while (length(front)) {
@@ -44,12 +54,12 @@ prerequis_notion = function(notion_id, recursif = FALSE) {
 #' @export
 prerequis_capacite = function(capacite_id, recursif = FALSE) {
   nc = notions_capacite(capacite_id)
-  if (!nrow(nc)) return(notions()[FALSE, , drop = FALSE])
+  if (!nrow(nc)) return(.notions_documentation()[FALSE, , drop = FALSE])
   prerequis_notion(nc$notion_id, recursif = recursif)
 }
 
 .chemin_rappel = function(notion_id) {
-  n = notions(); i = match(notion_id, n$notion_id)
+  n = .notions_documentation(); i = match(notion_id, n$notion_id)
   if (is.na(i)) stop("Notion inconnue : ", notion_id, call. = FALSE)
   eduschool_path("documentation", n$document[[i]])
 }
@@ -73,9 +83,8 @@ rappels_capacite = function(capacite_id) {
 
 #' Rechercher des notions
 #' @param texte Texte ou fragments à rechercher.
-#' @param discipline_id Discipline, `MAT` par défaut.
 #' @export
-chercher_notions = function(texte, discipline_id = "MAT") {
+chercher_notions = function(texte) {
   if (!length(texte) || anyNA(texte) || !all(nzchar(trimws(as.character(texte))))) {
     stop("`texte` doit contenir au moins un fragment non vide.", call. = FALSE)
   }
@@ -91,7 +100,7 @@ chercher_notions = function(texte, discipline_id = "MAT") {
     }, character(1))
   }
 
-  x = notions(discipline_id)
+  x = .notions_documentation()
   recherche = normaliser(paste(x$libelle, x$description))
   motifs = normaliser(texte)
   keep = Reduce(`|`, lapply(motifs, function(motif) {
@@ -100,7 +109,6 @@ chercher_notions = function(texte, discipline_id = "MAT") {
   }))
 
   resultat = x[keep, c("notion_id", "libelle", "description"), drop = FALSE]
-  names(resultat)[names(resultat) == "libelle"] = "notion"
   rownames(resultat) = NULL
   resultat
 }

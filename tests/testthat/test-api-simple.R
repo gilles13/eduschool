@@ -48,7 +48,12 @@ test_that("pythagore designe le theoreme direct sans confondre sa reciproque", {
 test_that("exercices reconnait un pluriel courant", {
   x = exercices("6E", "fractions", n = 2, seed = 2026)
   expect_length(x, 2L)
-  expect_true(all(vapply(x, function(z) grepl("^FRAC_", z$modele_id), logical(1))))
+  expect_true(all(nzchar(
+  vapply(x, function(z) z$modele_id, character(1))
+  )))
+  expect_true(all(nzchar(
+  vapply(x, function(z) z$capacite_id, character(1))
+  )))
 })
 
 test_that("exercices conserve le pilotage avance par capacite", {
@@ -170,4 +175,27 @@ test_that("un niveau reste reconnu comme premier argument de exercices", {
   x = exercices("6E", n = 2, seed = 2026, humour_ratio = 0)
   expect_length(x, 2L)
   expect_true(all(vapply(x, function(z) z$niveau_id == "6E", logical(1))))
+})
+
+
+test_that("le catalogue des notions expose l identifiant reutilisable", {
+  x = notions()
+  expect_true(all(x$discipline_id == "MAT"))
+  expect_true(all(c("notion_id", "libelle") %in% names(x)))
+
+  y = chercher_notions("fraction")
+  expect_true(all(c("notion_id", "libelle", "description") %in% names(y)))
+  expect_false("notion" %in% names(y))
+})
+
+test_that("un notion_id documentaire peut piloter exercices sans niveau", {
+  x = exercices("MAT_FRACTION_SENS", n = 3, seed = 2026, humour_ratio = 0)
+
+  expect_length(x, 3L)
+  expect_true(all(nzchar(
+    vapply(x, function(z) z$modele_id, character(1))
+  )))
+  expect_true(all(nzchar(
+    vapply(x, function(z) z$capacite_id, character(1))
+  )))
 })

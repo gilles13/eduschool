@@ -26,12 +26,21 @@ besoin de contrôler précisément les données et les sorties :
 
 - référentiels : `niveaux()`, `voies()`, `series()`, `disciplines()`, `enseignements()` ;
 - programmes : `programmes()`, `capacites()` ;
-- documentation : `notions()`, `chercher_notions()`, `notions_capacite()`, `prerequis_capacite()`, `obtenir_rappel()` ;
+- documentation : `notions()` pour lister les notions et leur `notion_id`, `notions_niveau()` pour les filtrer par niveau, `chercher_notions()` pour les retrouver par leur libellé, puis `notions_capacite()`, `prerequis_capacite()` et `obtenir_rappel()` pour aller plus loin ;
 - exercices : `generer_exercice()`, `generer_fiche()`, `produire_rapport_exercices()` ;
 - révisions : `generer_revision()`, `generer_essentiel()`, `produire_revision()` ;
 - orientation : fonctions `parcoursup_*()`, `filieres_postbac()` et fonctions de diagrammes ;
 - mini-SI : `tables_si()`, `relations_si()`, `controle_integrite_si()` ;
 - ressources : `eduschool_path()`.
+
+Le catalogue `notions()` est centré sur les mathématiques. La colonne `notion_id`
+est l'identifiant stable à réutiliser dans `exercices()`. Le libellé reste destiné
+à la lecture humaine. Par exemple :
+
+```r
+chercher_notions("fraction")
+exercices("MAT_FRACTION_SENS")
+```
 
 ## Composition et contribution
 

@@ -56,6 +56,32 @@ dans les chaînes destinées aux humains y sont donc écrits avec des
 portabilité du code ne doit jamais être obtenue en désaccentuant le texte
 affiché à l'utilisateur.
 
+### Séparer le code et le contenu éditorial
+
+Les fichiers `R/*.R` portent la logique. Les contenus éditoriaux ou
+pédagogiques destinés à l'utilisateur vivent, autant que possible, dans
+les ressources UTF-8 appropriées de `inst/`.
+
+Cela concerne en particulier les énoncés, réponses, corrections,
+feedbacks, rappels et libellés des exercices. Lorsqu'une famille
+d'exercices possède déjà le mécanisme `textes_*.csv`, l'utiliser plutôt
+que coder ces textes dans le fichier R.
+
+Avant d'écrire une chaîne française dans `R/`, demander :
+
+> **Est-ce du code ou du contenu ?**
+>
+> Si c'est du contenu, le ranger dans la ressource UTF-8 appropriée.
+
+Les échappements `\uXXXX` ne sont donc pas un moyen de contourner cette
+séparation. Ils ne doivent pas servir à enfouir du français pédagogique
+dans le code R.
+
+Cette règle n'interdit pas les chaînes techniques nécessaires au code,
+les messages d'erreur courts, ni la documentation du code lorsqu'ils
+appartiennent réellement au source R. Elle évite de transformer le code
+en dépôt de contenu éditorial.
+
 ### Identifiants et syntaxes techniques
 
 Les identifiants internes peuvent rester ASCII :
@@ -194,6 +220,27 @@ premier suspect.
 
 Inversement, un objet R correct qui devient incorrect au rendu justifie
 alors une enquête sur la chaîne de rendu.
+
+### JavaScript dans les quiz
+
+> **JavaScript dans un quiz : exception négociée, jamais solution par défaut.**
+
+Ne pas introduire ni étendre du JavaScript dans le HTML d'un quiz sans
+discussion préalable. Avant tout patch qui en aurait besoin, comparer
+explicitement :
+
+-   le bénéfice pédagogique ou fonctionnel attendu ;
+-   la possibilité d'obtenir le même résultat en HTML/CSS ou avec
+    l'architecture existante ;
+-   les risques pour l'autonomie du fichier, l'accessibilité, la robustesse,
+    la sécurité et la maintenance.
+
+Un rapport bénéfice/risque favorable doit être établi et la décision
+doit être prise explicitement **avant** l'écriture du patch.
+
+Le JavaScript déjà présent dans un quiz n'autorise pas son extension par
+défaut. Une modification sans rapport avec le comportement interactif
+doit laisser ce JavaScript inchangé.
 
 ## Triple zéro et quatrième œil
 

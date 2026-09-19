@@ -38,14 +38,96 @@
   gsub("\n", "<br>\n", x, fixed = TRUE)
 }
 
-.html_figure_qcm = function(figure) {
-  if (is.null(figure) || !identical(figure, "triangle_main_levee_angle_droit_A")) return("")
+.html_figure_qcm = function(figure, description = NULL) {
+  if (is.null(figure)) return("")
+
+  if (identical(figure, "triangle_main_levee_angle_droit_A")) {
+    return(paste0(
+      '<div class="figure-qcm" role="img" aria-label="Triangle ABC dessin\u00e9 \u00e0 main lev\u00e9e, avec angle droit cod\u00e9 en A">',
+      '<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
+      '<path d="M58 154 Q168 142 276 151 Q206 92 92 34 Q69 91 58 154" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',
+      '<path d="M62 132 L82 134 L80 153" fill="none" stroke="currentColor" stroke-width="3"/>',
+      '<text x="39" y="174">A</text><text x="282" y="169">B</text><text x="86" y="28">C</text>',
+      '</svg></div>'
+    ))
+  }
+
+  figures_cercle = c(
+    "cercle_rayon",
+    "cercle_diametre_corde",
+    "cercle_rayons_egaux"
+  )
+  if (figure %in% figures_cercle) {
+    if (is.null(description) || length(description) != 1L || is.na(description)) description = ""
+
+    segments = switch(
+      figure,
+      cercle_rayon = paste0(
+        '<line x1="170" y1="105" x2="272" y2="105" ',
+        'stroke="currentColor" stroke-width="4" stroke-linecap="round"/>'
+      ),
+      cercle_diametre_corde = paste0(
+        '<line x1="68" y1="105" x2="272" y2="105" ',
+        'stroke="currentColor" stroke-width="4" stroke-linecap="round"/>',
+        '<line x1="88.4" y1="42.2" x2="251.6" y2="42.2" ',
+        'stroke="currentColor" stroke-width="3" stroke-linecap="round"/>'
+      ),
+      cercle_rayons_egaux = paste0(
+        '<line x1="170" y1="105" x2="272" y2="105" ',
+        'stroke="currentColor" stroke-width="4" stroke-linecap="round"/>',
+        '<line x1="170" y1="105" x2="119" y2="17" ',
+        'stroke="currentColor" stroke-width="4" stroke-linecap="round"/>'
+      )
+    )
+    etiquettes = switch(
+      figure,
+      cercle_rayon = '<text x="160" y="128">O</text><text x="280" y="111">A</text>',
+      cercle_diametre_corde = paste0(
+        '<text x="160" y="128">O</text><text x="49" y="111">A</text>',
+        '<text x="280" y="111">B</text><text x="70" y="37">C</text><text x="258" y="37">D</text>'
+      ),
+      cercle_rayons_egaux = paste0(
+        '<text x="160" y="128">O</text><text x="280" y="111">A</text>',
+        '<text x="102" y="17">B</text>'
+      )
+    )
+
+    return(paste0(
+      '<div class="figure-qcm" role="img" aria-label="', .html_echapper(description), '">',
+      '<svg viewBox="0 0 340 210" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
+      '<circle cx="170" cy="105" r="102" fill="none" stroke="currentColor" stroke-width="4"/>',
+      '<circle cx="170" cy="105" r="4" fill="currentColor"/>',
+      segments, etiquettes,
+      '</svg></div>'
+    ))
+  }
+
+  figures_quadrilatere = c(
+    "parallelogramme_angle_droit",
+    "parallelogramme_cotes_egaux",
+    "parallelogramme_carre_code"
+  )
+  if (!figure %in% figures_quadrilatere) return("")
+
+  angle = if (figure %in% c("parallelogramme_angle_droit", "parallelogramme_carre_code")) {
+    '<path d="M58 137 L78 139 L80 158" fill="none" stroke="currentColor" stroke-width="3"/>'
+  } else ""
+  marques = if (figure %in% c("parallelogramme_cotes_egaux", "parallelogramme_carre_code")) {
+    paste0(
+      '<path d="M164 149 l2 13 M267 101 l13 5 M168 35 l2 13 M60 91 l13 5" ',
+      'fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>'
+    )
+  } else ""
+  if (is.null(description) || length(description) != 1L || is.na(description)) description = ""
+
   paste0(
-    '<div class="figure-qcm" role="img" aria-label="Triangle ABC dessin\u00e9 \u00e0 main lev\u00e9e, avec angle droit cod\u00e9 en A">',
-    '<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
-    '<path d="M58 154 Q168 142 276 151 Q206 92 92 34 Q69 91 58 154" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',
-    '<path d="M62 132 L82 134 L80 153" fill="none" stroke="currentColor" stroke-width="3"/>',
-    '<text x="39" y="174">A</text><text x="282" y="169">B</text><text x="86" y="28">C</text>',
+    '<div class="figure-qcm" role="img" aria-label="', .html_echapper(description), '">',
+    '<svg viewBox="0 0 340 205" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">',
+    '<polygon points="55,160 282,164 228,48 92,72" fill="none" ',
+    'stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',
+    angle, marques,
+    '<text x="36" y="181">A</text><text x="286" y="184">B</text>',
+    '<text x="226" y="39">C</text><text x="74" y="68">D</text>',
     '</svg></div>'
   )
 }
@@ -173,6 +255,13 @@ produire_quiz = function(exercices, fichier = NULL,
   notions = notions[nzchar(notions)]
   notion = if (length(notions) == 1L) notions[[1L]] else ""
 
+  definitions = unique(vapply(exercices, function(ex) {
+    x = ex$qcm$definition
+    if (is.null(x) || length(x) != 1L || is.na(x)) "" else as.character(x)
+  }, character(1)))
+  definitions = definitions[nzchar(definitions)]
+  definition = if (length(definitions) == 1L) definitions[[1L]] else ""
+
   rappels = unique(vapply(exercices, function(ex) {
     x = ex$qcm$rappel
     if (is.null(x) || length(x) != 1L || is.na(x)) "" else as.character(x)
@@ -180,11 +269,15 @@ produire_quiz = function(exercices, fichier = NULL,
   rappels = rappels[nzchar(rappels)]
   rappel = if (length(rappels) == 1L) rappels[[1L]] else ""
 
-  notion_html = if (nzchar(notion) || nzchar(rappel)) {
+  notion_html = if (nzchar(notion) || nzchar(definition) || nzchar(rappel)) {
     paste0(
       '<section class="notion">',
       '<div class="notion-label">Notion</div>',
       if (nzchar(notion)) sprintf('<h2>%s</h2>', .html_echapper(notion)) else "",
+      if (nzchar(definition)) paste0(
+        '<div class="definition"><strong>D\u00e9finition.</strong> ',
+        .html_math(definition), '</div>'
+      ) else "",
       if (nzchar(rappel)) sprintf('<div class="rappel">%s</div>', .html_math(rappel)) else "",
       '<p>Besoin d\'un rappel ? La fiche de revision est une antis\u00e8che autorisee.</p>',
       '</section>'
@@ -208,7 +301,16 @@ produire_quiz = function(exercices, fichier = NULL,
       sprintf('<div class="feedback-notion">%s</div>', .html_correction(ex$correction))
     } else {
       feedback_contenu = vapply(qcm$feedback, .html_correction, character(1))
-      figure_correction = .html_figure_qcm(qcm$figure)
+      afficher_figure_correction = if (is.null(qcm$figure_correction)) {
+        TRUE
+      } else {
+        isTRUE(qcm$figure_correction)
+      }
+      figure_correction = if (afficher_figure_correction) {
+        .html_figure_qcm(qcm$figure, qcm$figure_alt)
+      } else {
+        ""
+      }
       if (nzchar(figure_correction)) {
         feedback_contenu[[qcm$correcte]] = paste0(
           feedback_contenu[[qcm$correcte]], figure_correction
@@ -252,7 +354,7 @@ produire_quiz = function(exercices, fichier = NULL,
                        '</tr></thead><tbody>', lignes, '</tbody></table>')
     }
     numero_question = ((i - 1L) %% questions_par_quiz) + 1L
-    figure = .html_figure_qcm(qcm$figure)
+    figure = .html_figure_qcm(qcm$figure, qcm$figure_alt)
     sprintf(
       paste0(
         '<section class="question" data-question="%d" data-correct="%s" data-reponse="%s" data-modele="%s" data-forme="%s" data-contexte="%s" data-interaction="%s"%s>',
@@ -303,7 +405,7 @@ produire_quiz = function(exercices, fichier = NULL,
     '.entete h1{font-size:clamp(1.7rem,5vw,2.45rem);line-height:1.1;margin:.15rem 0 .35rem}.promesse{margin:0;color:#555}',
     '.notion{border-left:5px solid var(--accent);border-radius:8px;background:#fff;padding:1rem 1.15rem;margin:1.2rem 0 1.6rem;box-shadow:0 1px 4px rgba(0,0,0,.05)}',
     '.notion-label{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:750;color:#666}.notion h2{margin:.2rem 0 .45rem;font-size:1.2rem}',
-    '.rappel{font-size:1.35rem;font-weight:750;letter-spacing:.035em;margin:.35rem 0}.fraction{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;line-height:1;margin:0 .08em}.fraction .numerateur{border-bottom:1.5px solid currentColor;padding:0 .14em .06em}.fraction .denominateur{padding:.06em .14em 0}.notion p{margin:.55rem 0 0;color:#555}',
+    '.definition{margin:.35rem 0 .65rem;color:#333}.rappel{font-size:1.35rem;font-weight:750;letter-spacing:.035em;margin:.35rem 0}.fraction{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;line-height:1;margin:0 .08em}.fraction .numerateur{border-bottom:1.5px solid currentColor;padding:0 .14em .06em}.fraction .denominateur{padding:.06em .14em 0}.notion p{margin:.55rem 0 0;color:#555}',
     '.question{background:#fff;border:1px solid #d7dce0;border-radius:10px;padding:1rem 1.1rem;margin:1.2rem 0;box-shadow:0 1px 3px rgba(0,0,0,.035)}',
     '.question h2{font-size:1.05rem;margin:.1rem 0 .65rem;display:flex;align-items:center;justify-content:space-between;gap:.8rem}',
     '.intention{font-size:.72rem;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:#666;background:#f2f3f3;border-radius:999px;padding:.2rem .55rem}',

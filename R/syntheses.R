@@ -93,25 +93,40 @@ themes_niveau = function(niveau_id, discipline_id = NULL, version_id = "2026_202
 
 #' Notions documentées pour un niveau
 #'
-#' @inheritParams themes_niveau
+#' @param niveau_id Identifiant du niveau scolaire.
+#' @param version_id Version des programmes.
 #' @export
-notions_niveau = function(niveau_id, discipline_id = NULL, version_id = "2026_2027") {
-  caps = capacites(niveau_id = niveau_id, discipline_id = if (is.null(discipline_id)) disciplines()$discipline_id else discipline_id,
-                   version_id = version_id)
+notions_niveau = function(niveau_id, version_id = "2026_2027") {
+  caps = capacites(
+    niveau_id = niveau_id,
+    discipline_id = disciplines()$discipline_id,
+    version_id = version_id
+  )
   nc = .lire_csv("documentation", "notions_capacites.csv")
-  n = notions()
+  n = .lire_csv("documentation", "notions.csv")
   items = .lire_csv("programmes", "programme_items.csv")
   pe = .lire_csv("programmes", "programme_enseignements.csv")
+
   x = nc[nc$capacite_id %in% caps$item_id, , drop = FALSE]
-  contexte = unique(caps[, c("item_id", "niveau_id", "version_id"), drop = FALSE])
+
+  contexte = unique(
+    caps[, c("item_id", "niveau_id", "version_id"), drop = FALSE]
+  )
   names(contexte)[names(contexte) == "item_id"] = "capacite_id"
+
   x = merge(x, contexte, by = "capacite_id", all.x = TRUE, sort = FALSE)
   x = merge(x, n, by = "notion_id", all.x = TRUE, sort = FALSE)
-  x = merge(x, items[, c("item_id", "programme_id")], by.x = "capacite_id", by.y = "item_id", all.x = TRUE, sort = FALSE)
+  x = merge(
+    x,
+    items[, c("item_id", "programme_id")],
+    by.x = "capacite_id",
+    by.y = "item_id",
+    all.x = TRUE,
+    sort = FALSE
+  )
   x = merge(x, pe, by = "programme_id", all.x = TRUE, sort = FALSE)
-  if (!is.null(discipline_id)) x = x[x$discipline_id %in% discipline_id, , drop = FALSE]
+
   attr(x, "eduschool_niveau") = niveau_id
-  attr(x, "eduschool_discipline") = discipline_id
   rownames(x) = NULL
   x
 }

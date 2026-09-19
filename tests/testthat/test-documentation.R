@@ -1,12 +1,20 @@
 test_that("les notions et documents sont cohérents", {
-  n = notions()
+  n = eduschool:::.lire_csv("documentation", "notions.csv")
+
   expect_false(anyDuplicated(n$notion_id) > 0L)
-  expect_true(all(vapply(n$notion_id, function(id) file.exists(eduschool::eduschool_path("documentation", n$document[n$notion_id == id][1])), logical(1))))
+  expect_true(all(vapply(
+    n$document,
+    function(document) {
+      file.exists(eduschool::eduschool_path("documentation", document))
+    },
+    logical(1)
+  )))
 })
 
 test_that("les liens documentaires ne sont pas orphelins", {
   nc = read.csv2(eduschool::eduschool_path("documentation", "notions_capacites.csv"), stringsAsFactors = FALSE)
-  expect_true(all(nc$notion_id %in% notions()$notion_id))
+  n = eduschool:::.lire_csv("documentation", "notions.csv")
+  expect_true(all(nc$notion_id %in% n$notion_id))
   expect_true(all(nc$capacite_id %in% capacites(discipline_id = disciplines()$discipline_id)$item_id))
 })
 
@@ -38,11 +46,13 @@ test_that("le graphe de prerequis est coherent et sans cycle", {
 
 test_that("chercher_notions retourne un libelle directement reutilisable", {
   x = chercher_notions("fractions")
-
-  expect_true(all(c("notion_id", "notion", "description") %in% names(x)))
+  expect_true(all(c("notion_id", "libelle", "description") %in% names(x)))
   expect_false("document" %in% names(x))
   expect_false("discipline_id" %in% names(x))
-  expect_true("Fractions : sens et representations" %in% iconv(x$notion, to = "ASCII//TRANSLIT"))
+  expect_true(
+  "Fractions : sens et representations" %in%
+    iconv(x$libelle, to = "ASCII//TRANSLIT")
+)
 })
 
 test_that("chercher_notions tolere accents et ponctuation sans regex", {

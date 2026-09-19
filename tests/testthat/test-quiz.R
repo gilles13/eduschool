@@ -398,9 +398,9 @@ test_that("nommer une notion devient un QCM masque et un peu chelou", {
   expect_identical(ex$qcm$forme_question, "nommer_notion")
   expect_identical(ex$qcm$interaction, "qcm")
   expect_length(ex$qcm$propositions, 4L)
-  expect_true(all(grepl("^[[:alpha:]]_+[[:alpha:]]$", ex$qcm$propositions)))
-  expect_true(any(grepl("^d_+é$", ex$qcm$propositions)))
-  expect_true(any(grepl("^Z_+Z$", ex$qcm$propositions)))
+  expect_true(all(grepl("^[[:alpha:]]( _)+ [[:alpha:]]$", ex$qcm$propositions)))
+  expect_true(any(grepl("^d( _)+ é$", ex$qcm$propositions)))
+  expect_true(any(grepl("^Z( _)+ Z$", ex$qcm$propositions)))
   expect_match(ex$qcm$apart_humour, "chelou", fixed = TRUE)
   expect_match(ex$enonce, "Quel mot se cache", fixed = TRUE)
   expect_false(grepl("propri\u00e9t\u00e9", ex$enonce, fixed = TRUE))
@@ -640,4 +640,267 @@ test_that("le pilote Pythagore rend visible voir sans confondre avec savoir", {
   expect_match(html, "son apparence ne suffit pas.<br>\n<strong>Je sais</strong>", fixed = TRUE)
   expect_match(html, 'aria-label="Question 1">1.</span>', fixed = TRUE)
   expect_match(html, "La r\u00e9ponse \u00e9tait donc : &laquo; Le codage indique", fixed = TRUE)
+})
+
+
+test_that("les rappels utiles de quadrilateres font raisonner sur les codages", {
+  x = exercices_quadrilateres(seed = 2026)
+
+  expect_length(x, 4L)
+  expect_setequal(
+    vapply(x, function(ex) ex$qcm$intention, character(1)),
+    c("deduire", "relier", "justifier")
+  )
+  expect_true(all(vapply(x, function(ex) {
+    length(ex$qcm$propositions) == 4L &&
+      length(unique(ex$qcm$propositions)) == 4L
+  }, logical(1))))
+  expect_true(all(vapply(x, function(ex) {
+    identical(ex$qcm$forme_question, "raisonnement_geometrique") &&
+      identical(ex$qcm$propositions[[ex$qcm$correcte]], ex$reponse)
+  }, logical(1))))
+})
+
+test_that("les textes des rappels utiles vivent hors du code R", {
+  textes = eduschool:::.textes_exercice("rappels_utiles", "QUAD_CARRE_001")
+
+  expect_match(textes[["notion"]], "Quadrilatères", fixed = TRUE)
+  expect_match(textes[["enonce"]], "parallélogramme", fixed = TRUE)
+  expect_match(textes[["feedback_1"]], "côtés égaux", fixed = TRUE)
+})
+
+test_that("le parallelogramme mal dessine reste lisible par ses proprietes", {
+  x = exercices_quadrilateres(seed = 2026)
+  fichier = tempfile(fileext = ".html")
+  html = paste(readLines(
+    produire_quiz(x, fichier = fichier, questions_par_quiz = 4, ouvrir = FALSE),
+    warn = FALSE, encoding = "UTF-8"
+  ), collapse = "\n")
+
+  expect_match(html, "Parallélogramme ABCD volontairement mal dessiné", fixed = TRUE)
+  expect_match(html, "ABCD est un carré", fixed = TRUE)
+  expect_match(html, "les informations codées et les propriétés", fixed = TRUE)
+  expect_match(html, 'data-forme="raisonnement_geometrique"', fixed = TRUE)
+})
+
+
+test_that("chaque figure de quadrilatere a bien quatre sommets", {
+  figures = c(
+    "parallelogramme_angle_droit",
+    "parallelogramme_cotes_egaux",
+    "parallelogramme_carre_code"
+  )
+
+  html = vapply(
+    figures,
+    function(figure) eduschool:::.html_figure_qcm(figure, "Quadrilatere ABCD"),
+    character(1)
+  )
+
+  expect_true(all(grepl(
+    '<polygon points="55,160 282,164 228,48 92,72"',
+    html,
+    fixed = TRUE
+  )))
+  expect_true(all(vapply(html, function(x) {
+    length(gregexpr("<text ", x, fixed = TRUE)[[1L]]) == 4L
+  }, logical(1))))
+})
+
+test_that("les quadrilateres ne reutilisent pas la figure du triangle", {
+  triangle = eduschool:::.html_figure_qcm("triangle_main_levee_angle_droit_A")
+  quadrilatere = eduschool:::.html_figure_qcm(
+    "parallelogramme_angle_droit",
+    "Parallelogramme ABCD"
+  )
+
+  expect_match(triangle, "Triangle ABC", fixed = TRUE)
+  expect_false(grepl("<polygon", triangle, fixed = TRUE))
+  expect_match(quadrilatere, "<polygon", fixed = TRUE)
+  expect_false(grepl("Triangle ABC", quadrilatere, fixed = TRUE))
+})
+
+
+test_that("les rappels utiles du cercle vont du vocabulaire a la justification", {
+  x = exercices_cercle(seed = 2026)
+
+  expect_length(x, 4L)
+  expect_setequal(
+    vapply(x, function(ex) ex$qcm$intention, character(1)),
+    c("nommer", "distinguer", "deduire", "justifier")
+  )
+  expect_true(all(vapply(x, function(ex) {
+    length(ex$qcm$propositions) == 4L &&
+      length(unique(ex$qcm$propositions)) == 4L
+  }, logical(1))))
+  expect_true(all(vapply(x[1:2], function(ex) {
+    identical(ex$qcm$forme_question, "nommer_notion") &&
+      !identical(ex$qcm$propositions[[ex$qcm$correcte]], ex$reponse)
+  }, logical(1))))
+  expect_true(all(vapply(x[3:4], function(ex) {
+    identical(ex$qcm$propositions[[ex$qcm$correcte]], ex$reponse)
+  }, logical(1))))
+  expect_true(all(vapply(x, function(ex) {
+    identical(ex$parametres$cas, "cercle_rappel_utile")
+  }, logical(1))))
+})
+
+test_that("les textes du cercle restent dans la ressource pedagogique", {
+  textes = eduschool:::.textes_exercice("rappels_utiles", "CERC_EGAL_001")
+
+  expect_match(textes[["notion"]], "Cercle", fixed = TRUE)
+  expect_match(textes[["enonce"]], "OA = 3 cm", fixed = TRUE)
+  expect_match(textes[["feedback_1"]], "rayons du même cercle", fixed = TRUE)
+})
+
+test_that("les figures du cercle ont une structure mathematique explicite", {
+  rayon = eduschool:::.html_figure_qcm("cercle_rayon", "Cercle avec rayon OA")
+  diametre = eduschool:::.html_figure_qcm(
+    "cercle_diametre_corde",
+    "Cercle avec diametre AB et corde CD"
+  )
+  rayons = eduschool:::.html_figure_qcm(
+    "cercle_rayons_egaux",
+    "Cercle avec rayons OA et OB"
+  )
+
+  expect_identical(lengths(regmatches(rayon, gregexpr("<circle ", rayon, fixed = TRUE))), 2L)
+  expect_identical(lengths(regmatches(diametre, gregexpr("<circle ", diametre, fixed = TRUE))), 2L)
+  expect_identical(lengths(regmatches(rayons, gregexpr("<circle ", rayons, fixed = TRUE))), 2L)
+
+  expect_identical(lengths(regmatches(rayon, gregexpr("<line ", rayon, fixed = TRUE))), 1L)
+  expect_identical(lengths(regmatches(diametre, gregexpr("<line ", diametre, fixed = TRUE))), 2L)
+  expect_identical(lengths(regmatches(rayons, gregexpr("<line ", rayons, fixed = TRUE))), 2L)
+
+  expect_match(rayon, ">O</text>", fixed = TRUE)
+  expect_match(rayon, ">A</text>", fixed = TRUE)
+  expect_match(diametre, ">A</text>", fixed = TRUE)
+  expect_match(diametre, ">B</text>", fixed = TRUE)
+  expect_match(diametre, ">C</text>", fixed = TRUE)
+  expect_match(diametre, ">D</text>", fixed = TRUE)
+})
+
+test_that("le quiz du cercle rend les figures et les raisonnements attendus", {
+  x = exercices_cercle(seed = 2026)
+  fichier = tempfile(fileext = ".html")
+  html = paste(readLines(
+    produire_quiz(x, fichier = fichier, questions_par_quiz = 4, ouvrir = FALSE),
+    warn = FALSE, encoding = "UTF-8"
+  ), collapse = "\n")
+
+  expect_match(html, "Cercle de centre O avec le diamètre AB", fixed = TRUE)
+  expect_match(html, "OA et OB sont des rayons du même cercle", fixed = TRUE)
+  expect_match(html, "Sans mesurer la figure", fixed = TRUE)
+  expect_gte(length(gregexpr("<circle ", html, fixed = TRUE)[[1L]]), 8L)
+})
+
+
+
+test_that("nommer_notion accepte un vocabulaire fourni par un autre domaine", {
+  ex = exercices_cercle(seed = 2026)[[1L]]
+
+  expect_identical(ex$reponse, "rayon")
+  expect_identical(ex$qcm$forme_question, "nommer_notion")
+  expect_setequal(
+  ex$qcm$propositions,
+  c(
+    "r _ _ _ n",
+    "d _ _ _ _ _ _ e",
+    "c _ _ _ e",
+    "t _ _ _ _ _ _ e"
+  )
+  )
+  expect_false(isTRUE(ex$qcm$humour))
+})
+
+
+test_that("le bandeau du cercle distingue definition et rappel utile", {
+  x = exercices_cercle(seed = 2026)
+  fichier = tempfile(fileext = ".html")
+  html = paste(readLines(
+    produire_quiz(x, fichier = fichier, questions_par_quiz = 4, ouvrir = FALSE),
+    warn = FALSE, encoding = "UTF-8"
+  ), collapse = "\n")
+
+  expect_match(html, '<div class="definition"><strong>Définition.</strong>', fixed = TRUE)
+  expect_match(html, "Un cercle est l’ensemble des points situés à une même distance", fixed = TRUE)
+  expect_match(html, "Les définitions et les propriétés permettent de raisonner", fixed = TRUE)
+})
+
+
+test_that("les rappels geometriques ne repetent pas la figure dans la correction", {
+  x = exercices_cercle(seed = 2026)
+  fichier = tempfile(fileext = ".html")
+  html = paste(readLines(
+    produire_quiz(x, fichier = fichier, questions_par_quiz = 4, ouvrir = FALSE),
+    warn = FALSE, encoding = "UTF-8"
+  ), collapse = "\n")
+
+  expect_identical(
+    lengths(regmatches(html, gregexpr('class="figure-qcm"', html, fixed = TRUE))),
+    4L
+  )
+  expect_true(all(vapply(x, function(ex) identical(ex$qcm$figure_correction, FALSE), logical(1))))
+})
+
+test_that("la corde du cercle est inscrite, excentree et lisible", {
+  html = .html_figure_qcm("cercle_diametre_corde", "Diametre AB et corde CD")
+
+  expect_match(html, 'x1="68" y1="105" x2="272" y2="105"', fixed = TRUE)
+  expect_match(html, 'x1="88.4" y1="42.2" x2="251.6" y2="42.2"', fixed = TRUE)
+  expect_match(html, '<text x="70" y="37">C</text>', fixed = TRUE)
+  expect_match(html, '<text x="258" y="37">D</text>', fixed = TRUE)
+  expect_false(grepl('x1="100" y1="54" x2="240" y2="156"', html, fixed = TRUE))
+})
+
+test_that("le masque comptable donne exactement un trou par lettre cachee", {
+  exercice = generer_exercice("FRAC_QTE_001", "5E", seed = 4)
+  exercice = .nommer_notion_exercice(
+    exercice,
+    notion = "rayon",
+    candidats = c("rayon", "diamètre", "corde", "centre"),
+    enonce = "Test"
+  )
+
+  masque_rayon = exercice$qcm$propositions[grepl("^r", exercice$qcm$propositions)][[1L]]
+  expect_identical(
+    lengths(regmatches(masque_rayon, gregexpr("_", masque_rayon, fixed = TRUE))),
+    3L
+  )
+
+  masque_diametre = exercice$qcm$propositions[grepl("^d", exercice$qcm$propositions)][[1L]]
+  expect_identical(
+    lengths(regmatches(masque_diametre, gregexpr("_", masque_diametre, fixed = TRUE))),
+    6L
+  )
+})
+
+test_that("cacher la longueur impose un avertissement et neutralise le nombre de lettres", {
+  exercice = generer_exercice("FRAC_QTE_001", "5E", seed = 4)
+
+  expect_error(
+    .nommer_notion_exercice(
+      exercice,
+      notion = "rayon",
+      candidats = c("rayon", "diamètre", "corde", "centre"),
+      enonce = "Test",
+      longueur_cachee = TRUE
+    ),
+    "avertissement_longueur"
+  )
+
+  masque = .nommer_notion_exercice(
+    exercice,
+    notion = "rayon",
+    candidats = c("rayon", "diamètre", "corde", "centre"),
+    enonce = "Test",
+    longueur_cachee = TRUE,
+    avertissement_longueur = "La longueur du masque ne donne pas le nombre de lettres."
+  )
+
+  milieux = sub("^[[:alpha:]] ", "", masque$qcm$propositions)
+  milieux = sub(" [[:alpha:]]$", "", milieux)
+  expect_length(unique(nchar(milieux)), 1L)
+  expect_true(isTRUE(masque$qcm$longueur_cachee))
+  expect_true(nzchar(masque$qcm$avertissement_longueur))
 })

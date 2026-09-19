@@ -4,12 +4,10 @@
 \alias{chercher_notions}
 \title{Rechercher des notions}
 \usage{
-chercher_notions(texte, discipline_id = "MAT")
+chercher_notions(texte)
 }
 \arguments{
 \item{texte}{Texte ou fragments à rechercher.}
-
-\item{discipline_id}{Discipline, `MAT` par défaut.}
 }
 \description{
 Rechercher des notions

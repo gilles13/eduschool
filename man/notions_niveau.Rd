@@ -4,14 +4,12 @@
 \alias{notions_niveau}
 \title{Notions documentées pour un niveau}
 \usage{
-notions_niveau(niveau_id, discipline_id = NULL, version_id = "2026_2027")
+notions_niveau(niveau_id, version_id = "2026_2027")
 }
 \arguments{
-\item{niveau_id}{Identifiant du niveau, par exemple `6E`.}
+\item{niveau_id}{Identifiant du niveau scolaire.}
 
-\item{discipline_id}{Discipline facultative.}
-
-\item{version_id}{Version scolaire, par exemple `2026_2027`.}
+\item{version_id}{Version des programmes.}
 }
 \description{
 Notions documentées pour un niveau

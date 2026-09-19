@@ -4,7 +4,7 @@
 \alias{notion}
 \title{Decouvrir une notion mathematique}
 \usage{
-notion(nom)
+notion(nom = NULL)
 }
 \arguments{
 \item{nom}{Nom de la notion en langage courant, par exemple

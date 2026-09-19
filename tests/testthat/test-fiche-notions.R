@@ -45,7 +45,7 @@ test_that("le rendu HTML des notions produit des blocs categorises", {
 })
 
 test_that("notions_niveau peut alimenter directement une fiche de notions", {
-  x = notions_niveau("5E", discipline_id = "MAT")
+  x = notions_niveau("5E")
 
   expect_gt(nrow(x), 0L)
   expect_true(eduschool:::.est_fiche_notions(x))
@@ -105,7 +105,7 @@ test_that("les fiches de programme reprennent les trois niveaux de lecture", {
 })
 
 test_that("notions_niveau conserve le niveau pour son entete de fiche", {
-  x = notions_niveau("5E", discipline_id = "MAT")
+  x = notions_niveau("5E")
   expect_true("niveau_id" %in% names(x))
   expect_true(all(x$niveau_id == "5E"))
 })

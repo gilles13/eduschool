@@ -2,23 +2,27 @@
 % Please edit documentation in R/cheatsheet.R
 \name{produire_cheatsheet}
 \alias{produire_cheatsheet}
-\title{Produire la cheatsheet eduschool}
+\title{Produire la cheatsheet eduschool
+Génère une cheatsheet HTML autonome au format A4 paysage. La fiche sert de
+boussole : trois gestes essentiels pour réviser, s'entraîner et jouer, puis
+quelques portes pour se repérer et aller plus loin.}
 \usage{
 produire_cheatsheet(fichier = NULL, ouvrir = TRUE)
 }
 \arguments{
-\item{fichier}{Chemin du fichier HTML a produire. Si `NULL`, le fichier
-`eduschool-cheatsheet.html` est cree dans le repertoire courant.}
+\item{fichier}{Chemin du fichier HTML à produire. Si `NULL`, le fichier
+`eduschool-cheatsheet.html` est créé dans le répertoire courant.}
 
-\item{ouvrir}{Ouvrir la cheatsheet dans le navigateur apres sa creation.}
+\item{ouvrir}{Ouvrir la cheatsheet dans le navigateur après sa création.}
 }
 \value{
 Invisiblement, le chemin absolu du fichier HTML produit.
 }
 \description{
-Genere une cheatsheet HTML autonome au format A4 paysage. La fiche sert de
-boussole : trois gestes essentiels pour reviser, s'entrainer et jouer, puis
-quelques portes pour se reperer et aller plus loin.
+Produire la cheatsheet eduschool
+Génère une cheatsheet HTML autonome au format A4 paysage. La fiche sert de
+boussole : trois gestes essentiels pour réviser, s'entraîner et jouer, puis
+quelques portes pour se repérer et aller plus loin.
 }
 \examples{
 \dontrun{

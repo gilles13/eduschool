@@ -192,7 +192,16 @@ programme = function(
 #'   `"proportionnalite"`, `"fractions"` ou `"pythagore"`.
 #' @return Une liste contenant la notion et ses relations pedagogiques.
 #' @export
-notion = function(nom) {
+notion = function(nom = NULL) {
+  if (is.null(nom)) {
+    stop(
+      "`notion()` attend un identifiant de notion.\n\n",
+      "Pour d\u00e9couvrir les notions disponibles :\n  notions()\n\n",
+      "Exemple :\n  notion(\"fractions\")",
+      call. = FALSE
+    )
+  }
+
   concept = .resoudre_notion(nom)
 
   garder = c(

@@ -75,7 +75,7 @@ revision = function(niveau = NULL, theme = NULL) {
 }
 
 .capacites_notion_documentation = function(niveau, notion) {
-  docs = notions("MAT")
+  docs = .notions_documentation()
   cible = .normaliser_notion(notion)
   libelles = vapply(docs$libelle, .normaliser_notion, character(1))
   ids_docs = vapply(docs$notion_id, .normaliser_notion, character(1))
@@ -86,7 +86,9 @@ revision = function(niveau = NULL, theme = NULL) {
   liens = .lire_csv("documentation", "notions_capacites.csv")
   items = .lire_csv("programmes", "programme_items.csv")
   ids = liens$capacite_id[liens$notion_id == docs$notion_id[candidats]]
-  unique(items$item_id[items$item_id %in% ids & items$niveau == niveau])
+  ids = items$item_id[items$item_id %in% ids]
+  if (!is.null(niveau)) ids = ids[items$niveau[match(ids, items$item_id)] == niveau]
+  unique(ids)
 }
 
 .capacites_notion = function(niveau = NULL, notion) {
