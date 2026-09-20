@@ -358,3 +358,59 @@ produire_revision = function(revision, fichier = NULL, format = c("auto", "html"
   }
   invisible(NULL)
 }
+
+.construire_revision_automatique = function(niveau_id, theme) {
+  concept = .resoudre_notion(theme)
+  ids = unique(c(
+    .capacites_notion(niveau_id, theme),
+    .capacites_notion_documentation(niveau_id, theme)
+  ))
+  items = .lire_csv("programmes", "programme_items.csv")
+  capacites = items[items$item_id %in% ids & items$type == "CAPACITE", , drop = FALSE]
+  if (!nrow(capacites)) {
+    stop("Aucune capacite documentee pour cette notion et ce niveau.", call. = FALSE)
+  }
+
+  docs = .notions_documentation()
+  cible = .normaliser_notion(theme)
+  cle_docs = vapply(docs$libelle, .normaliser_notion, character(1))
+  notion = docs[cle_docs == cible, , drop = FALSE]
+  prerequis = if (nrow(notion) == 1L) prerequis_notion(notion$notion_id[[1L]]) else docs[FALSE, , drop = FALSE]
+
+  contenu_capacites = paste0("- **", capacites$libelle, "** : ", capacites$description, collapse = "\n")
+  contenu_prerequis = if (nrow(prerequis)) {
+    paste0("- ", prerequis$libelle, collapse = "\n")
+  } else {
+    ""
+  }
+
+  blocs = data.frame(
+    bloc_id = paste0("AUTO_", seq_len(4L)),
+    fiche_id = "",
+    ordre = seq_len(4L),
+    type = c("DEFINITION", "EN_CLAIR", "CAPACITES", "PREREQUIS"),
+    titre = c("D\u00e9finition", "En clair", "\u00c0 savoir faire", "Pr\u00e9requis"),
+    contenu = c(concept$definition[[1L]], concept$en_clair[[1L]], contenu_capacites, contenu_prerequis),
+    formule = "",
+    illustration_id = "",
+    apres_formule = "",
+    stringsAsFactors = FALSE
+  )
+  blocs = blocs[nzchar(blocs$contenu), , drop = FALSE]
+
+  structure(
+    list(
+      fiche_id = paste0("AUTO_", niveau_id, "_", concept$concept_id[[1L]]),
+      niveau_id = niveau_id,
+      famille_id = concept$domaine[[1L]],
+      famille = concept$domaine[[1L]],
+      type = "THEMATIQUE",
+      titre = concept$libelle[[1L]],
+      description = paste0("R\u00e9capitulatif construit \u00e0 partir des donn\u00e9es eduschool pour le niveau ", niveau_id, "."),
+      blocs = blocs,
+      notions = notion,
+      concepts = concept
+    ),
+    class = c("eduschool_revision", "list")
+  )
+}

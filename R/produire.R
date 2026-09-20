@@ -25,12 +25,13 @@ revision = function(niveau = NULL, theme = NULL) {
     }
     return(generer_essentiel(niveau))
   }
-  fiche = if (is.null(niveau)) {
-    .selectionner_theme_revision_sans_niveau(theme)
-  } else {
-    .selectionner_theme_revision(niveau, theme)
+  if (is.null(niveau)) {
+    fiche = .selectionner_theme_revision_sans_niveau(theme)
+    return(.construire_revision(fiche))
   }
-  .construire_revision(fiche)
+  fiche = try(.selectionner_theme_revision(niveau, theme), silent = TRUE)
+  if (!inherits(fiche, "try-error")) return(.construire_revision(fiche))
+  .construire_revision_automatique(niveau, theme)
 }
 
 .est_niveau_connu = function(x) {

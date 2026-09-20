@@ -301,3 +301,21 @@ test_that("la fiche fractions est reliee a ses concepts mathematiques", {
   expect_setequal(x$concepts$concept_id, c("MATC_FRACTION", "MATC_NOMBRE_RATIONNEL"))
   expect_true(all(x$concepts$role == "CENTRAL"))
 })
+
+test_that("revision construit un recapitulatif quand aucune fiche dediee n existe", {
+  x = revision("5E", "proportionnalite")
+  expect_s3_class(x, "eduschool_revision")
+  expect_identical(x$niveau_id, "5E")
+  expect_identical(x$titre, "Proportionnalit\u00e9")
+  expect_true(all(c("D\u00e9finition", "En clair", "\u00c0 savoir faire", "Pr\u00e9requis") %in% x$blocs$titre))
+  savoir = x$blocs$contenu[x$blocs$titre == "\u00c0 savoir faire"]
+  expect_match(savoir, "Reconna\u00eetre une situation de proportionnalit\u00e9")
+  expect_match(savoir, "R\u00e9soudre un probl\u00e8me de proportionnalit\u00e9")
+  prerequis = x$blocs$contenu[x$blocs$titre == "Pr\u00e9requis"]
+  expect_match(prerequis, "Nombres entiers et d\u00e9cimaux")
+})
+
+test_that("revision conserve les fiches editoriales existantes", {
+  x = revision("5E", "fractions")
+  expect_identical(x$fiche_id, "REV_5E_FRACTIONS")
+})
