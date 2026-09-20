@@ -146,7 +146,7 @@ test_that("Pythagore fait distinguer une hypothese des autres informations", {
   expect_true(any(grepl("codage", x$qcm$propositions, fixed = TRUE)))
   expect_match(x$correction, "[[Je vois]]", fixed = TRUE)
   expect_match(x$correction, "[[Je sais]]", fixed = TRUE)
-  expect_match(x$correction, "[[J’en déduis]]", fixed = TRUE)
+  expect_match(x$correction, "[[J'en déduis]]", fixed = TRUE)
   expect_identical(x$qcm$figure, "triangle_main_levee_angle_droit_A")
 })
 

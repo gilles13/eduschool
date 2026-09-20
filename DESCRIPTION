@@ -16,12 +16,14 @@ Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports:
     ggplot2,
+    ggsketch,
     rmarkdown
 Suggests:
     testthat (>= 3.0.0),
     Ryacas,
     melodi,
     knitr,
+    svglite,
     roxygen2
 Config/testthat/edition: 3
 VignetteBuilder: knitr

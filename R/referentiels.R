@@ -44,7 +44,18 @@ capacites = function(niveau_id = NULL, discipline_id = "MAT", version_id = NULL)
     a = .lire_csv("programmes", "programme_items_applications.csv")
     if (!is.null(niveau_id)) a = a[a$niveau_id %in% niveau_id, , drop = FALSE]
     if (!is.null(version_id)) a = a[a$version_id %in% version_id, , drop = FALSE]
-    x = merge(x, a, by = c("programme_id", "item_id"), all = FALSE, sort = FALSE)
+    colonnes_application = c("programme_id", "item_id", "niveau_id", "version_id")
+    applications = a[, colonnes_application, drop = FALSE]
+    parents = unique(x[, c("programme_id", "item_id", "parent_item_id"), drop = FALSE])
+    applications_parentes = merge(
+      parents, a,
+      by.x = c("programme_id", "parent_item_id"),
+      by.y = c("programme_id", "item_id"),
+      all = FALSE, sort = FALSE
+    )
+    applications_parentes = applications_parentes[, colonnes_application, drop = FALSE]
+    applications = unique(rbind(applications, applications_parentes))
+    x = merge(x, applications, by = c("programme_id", "item_id"), all = FALSE, sort = FALSE)
   }
   rownames(x) = NULL
   x

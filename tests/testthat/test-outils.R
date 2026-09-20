@@ -1,6 +1,7 @@
 root_outils = .eduschool_dev_root()
-inventaire_outils = .inventaire_outils_eduschool(root_outils)
+inventaire_outils = if (is.null(root_outils)) NULL else .inventaire_outils_eduschool(root_outils)
 chercher_outils = function(texte = NULL, internes = FALSE) {
+  skip_if(is.null(root_outils), "Le test de la boussole exige l arbre source.")
   .chercher_outils_eduschool(inventaire_outils, texte = texte, internes = internes)
 }
 
@@ -53,6 +54,7 @@ test_that("outils_eduschool cherche aussi dans l usage documente", {
 })
 
 test_that("jairangeoubordel garde ouverte la porte humoristique", {
+  skip_if(is.null(root_outils), "Le test de la boussole exige l arbre source.")
   local_mocked_bindings(.inventaire_outils_eduschool = function(root) inventaire_outils)
   attendu = outils_eduschool("ensembles")
   obtenu = jairangeoubordel("ensembles")
