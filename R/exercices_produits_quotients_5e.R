@@ -14,7 +14,6 @@ generer_produits_quotients_5e = function(
     a = if (difficulte == 1) sample(3:12, 1L) else sample(12:40, 1L)
     b = if (difficulte == 1) sample(3:12, 1L) else sample(6:25, 1L)
     bonne = a * b
-    faux = c(a + b, bonne + a, bonne - b)
     args = list(a, b)
     correction_args = list(a, b, bonne)
     parametres = list(cas = cas, a = a, b = b)
@@ -22,7 +21,6 @@ generer_produits_quotients_5e = function(
     b = if (difficulte == 1) sample(2:12, 1L) else sample(6:20, 1L)
     bonne = if (difficulte == 1) sample(2:12, 1L) else sample(8:30, 1L)
     a = b * bonne
-    faux = c(b, a - b, bonne + b)
     args = list(a, b)
     correction_args = list(a, b, bonne)
     parametres = list(cas = cas, a = a, b = b)
@@ -30,19 +28,14 @@ generer_produits_quotients_5e = function(
     groupes = if (difficulte == 1) sample(3:10, 1L) else sample(8:25, 1L)
     par_groupe = if (difficulte == 1) sample(4:15, 1L) else sample(12:35, 1L)
     bonne = groupes * par_groupe
-    faux = c(groupes + par_groupe, bonne - par_groupe, bonne + groupes)
     args = list(groupes, par_groupe)
     correction_args = list(groupes, par_groupe, groupes, par_groupe, bonne)
     parametres = list(cas = cas, groupes = groupes, par_groupe = par_groupe)
   }
   enonce = do.call(sprintf, c(list(txt[[paste0("enonce_", cas)]]), args))
   correction = do.call(sprintf, c(list(txt[[paste0("correction_", cas)]]), correction_args))
-  qcm_txt = txt
-  qcm_txt[["intention"]] = txt[[paste0("intention_", cas)]]
-  qcm_txt[["correction"]] = correction
-  qcm = .qcm_6e_nombre(qcm_txt, bonne, faux)
   creer_exercice(
     "PROD_QUOT_5E_001", niveau_id, capacite_id, difficulte,
-    enonce, as.character(bonne), correction, parametres, seed, qcm = qcm
+    enonce, as.character(bonne), correction, parametres, seed, qcm = NULL
   )
 }

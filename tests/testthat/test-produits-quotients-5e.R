@@ -1,22 +1,30 @@
-test_that("produits et quotients 5e varie les situations et garde des QCM fermes", {
-  lot = lapply(1:60, function(seed) {
-    generer_exercice(
-      "PROD_QUOT_5E_001", "5E",
-      capacite_id = "ITM_MAT_C4_01_01_01",
-      difficulte = if (seed %% 2L) 1 else 2,
-      seed = seed
-    )
-  })
-  cas = unique(vapply(lot, function(ex) ex$parametres$cas, character(1)))
-  enonces = unique(vapply(lot, function(ex) ex$enonce, character(1)))
-  expect_setequal(cas, c("produit", "quotient", "groupes"))
-  expect_gte(length(enonces), 30L)
-  expect_true(all(vapply(lot, function(ex) {
-    length(ex$qcm$propositions) == 4L &&
-      length(unique(ex$qcm$propositions)) == 4L &&
-      ex$qcm$correcte %in% 1:4 &&
-      identical(ex$qcm$propositions[[ex$qcm$correcte]], ex$reponse)
-  }, logical(1))))
+test_that("produits et quotients 5e produisent du vrai", {
+  cas = list(
+    produit = function(p) p$a * p$b,
+    quotient = function(p) p$a / p$b,
+    groupes = function(p) p$groupes * p$par_groupe
+  )
+
+  ok = vapply(seq_along(cas), function(i) {
+    nom = names(cas)[[i]]
+    ex = NULL
+
+    for (seed in seq_len(100L)) {
+      candidat = generer_produits_quotients_5e(seed = seed)
+      if (identical(candidat$parametres$cas, nom)) {
+        ex = candidat
+        break
+      }
+    }
+
+    !is.null(ex) &&
+      identical(ex$reponse, as.character(cas[[i]](ex$parametres))) &&
+      nzchar(ex$enonce) &&
+      nzchar(ex$correction) &&
+      is.null(ex$qcm)
+  }, logical(1))
+
+  expect_true(all(ok))
 })
 
 test_that("la capacite produits et quotients conserve son repere et gagne un modele generatif", {

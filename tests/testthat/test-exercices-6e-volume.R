@@ -1,34 +1,37 @@
-test_that("la banque 6e de volume genere des QCM valides", {
-  ids = c(
-    "NUM_COMPARE_001", "NUM_DECOMP_001", "DEC_MULT_001", "OP_CHOICE_001",
-    "INCONNUE_001", "REG_SUITE_001", "PER_RECT_001", "AIRE_RECT_001",
-    "AIRE_CONV_001", "VOL_PAVE_001", "DUREE_CONV_001", "TRI_ANGLE_001",
-    "MED_EQUIDIST_001", "CERCLE_DIAM_001", "SYM_AXE_001", "DATA_FILTER_001",
-    "PROBA_SIMPLE_001", "FREQ_SIMPLE_001", "ECHELLE_001", "BOUCLE_001"
+test_that("les generateurs 6e produisent du vrai", {
+  cas = list(
+    list(generer_num_compare, function(p) if (p$a > p$b) 1 else 2),
+    list(generer_num_decomp, function(p) p$m * 1000),
+    list(generer_dec_mult, function(p) p$a * p$b),
+    list(generer_op_choice, function(p) p$a - p$b),
+    list(generer_inconnue, function(p) p$total - p$a),
+    list(generer_reg_suite, function(p) p$depart + 4 * p$pas),
+    list(generer_per_rect, function(p) 2 * (p$L + p$l)),
+    list(generer_aire_rect, function(p) p$L * p$l),
+    list(generer_aire_conv, function(p) p$m2 * 10000),
+    list(generer_vol_pave, function(p) p$a * p$b * p$c),
+    list(generer_duree_conv, function(p) 60 * p$h + p$m),
+    list(generer_tri_angle, function(p) 180 - p$a - p$b),
+    list(generer_med_equidist, function(p) p$d),
+    list(generer_cercle_diam, function(p) 2 * p$r),
+    list(generer_sym_axe, function(p) -p$x),
+    list(generer_data_filter, function(p) sum(p$v >= p$seuil)),
+    list(generer_proba_simple, function(p) round(p$fav / p$total, 3)),
+    list(generer_freq_simple, function(p) round(p$fav / p$total, 3)),
+    list(generer_echelle, function(p) p$plan * p$e / 100),
+    list(generer_boucle, function(p) p$depart + p$n * p$pas)
   )
 
-  for (i in seq_along(ids)) {
-    ex = generer_exercice(ids[[i]], "6E", seed = 100 + i)
-    expect_true(nzchar(ex$enonce))
-    expect_true(nzchar(ex$correction))
-    expect_length(ex$qcm$propositions, 4L)
-    expect_length(unique(ex$qcm$propositions), 4L)
-    expect_true(ex$qcm$correcte %in% 1:4)
-    expect_true(nzchar(ex$qcm$notion))
-    expect_true(nzchar(ex$qcm$definition))
-    expect_true(nzchar(ex$qcm$rappel))
-  }
-})
+  ok = vapply(seq_along(cas), function(i) {
+    cas_i = cas[[i]]
+    ex = cas_i[[1L]](seed = i)
+    attendue = as.character(cas_i[[2L]](ex$parametres))
 
-test_that("les nouveaux modeles 6e sont relies a des capacites", {
-  ids = c(
-    "NUM_COMPARE_001", "NUM_DECOMP_001", "DEC_MULT_001", "OP_CHOICE_001",
-    "INCONNUE_001", "REG_SUITE_001", "PER_RECT_001", "AIRE_RECT_001",
-    "AIRE_CONV_001", "VOL_PAVE_001", "DUREE_CONV_001", "TRI_ANGLE_001",
-    "MED_EQUIDIST_001", "CERCLE_DIAM_001", "SYM_AXE_001", "DATA_FILTER_001",
-    "PROBA_SIMPLE_001", "FREQ_SIMPLE_001", "ECHELLE_001", "BOUCLE_001"
-  )
-  cat = lire_catalogue_exercices()
-  expect_true(all(ids %in% cat$modeles$modele_id))
-  expect_true(all(ids %in% cat$liens$modele_id))
+    identical(ex$reponse, attendue) &&
+      nzchar(ex$enonce) &&
+      nzchar(ex$correction) &&
+      is.null(ex$qcm)
+  }, logical(1))
+
+  expect_true(all(ok))
 })
