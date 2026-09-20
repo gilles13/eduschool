@@ -56,8 +56,8 @@ diagrammes_disponibles = function() {
 #' documentation pkgdown ou dans une vignette.
 #'
 #' @param type Identifiant du diagramme. Voir [diagrammes_disponibles()].
-#' @param fichier Chemin du fichier SVG à produire. Si `NULL`, le fichier est
-#'   créé sous `rapports/sorties/diagrammes/` dans le répertoire de travail.
+#' @param fichier Chemin du fichier SVG à produire. Si `NULL`, un fichier
+#'   temporaire est cree.
 #' @param ouvrir Ouvrir le fichier avec l'application associée après sa création.
 #' @return Invisiblement, le chemin absolu du fichier SVG produit.
 #' @export
@@ -69,7 +69,7 @@ produire_diagramme_svg = function(
   .verifier_type_diagramme(type)
 
   if (is.null(fichier)) {
-    sortie_dir = file.path(getwd(), "rapports", "sorties", "diagrammes")
+    sortie_dir = tempdir()
     fichier = file.path(sortie_dir, paste0(type, ".svg"))
   }
 
@@ -88,8 +88,8 @@ produire_diagramme_svg = function(
 #' eduschool. Aucun script externe n'est chargé.
 #'
 #' @param type Identifiant du diagramme. Voir [diagrammes_disponibles()].
-#' @param fichier Chemin du fichier HTML à produire. Si `NULL`, le fichier est
-#'   créé sous `rapports/sorties/diagrammes/` dans le répertoire de travail.
+#' @param fichier Chemin du fichier HTML à produire. Si `NULL`, un fichier
+#'   temporaire est cree.
 #' @param ouvrir Ouvrir le fichier avec l'application associée après sa création.
 #' @return Invisiblement, le chemin absolu du fichier HTML produit.
 #' @export
@@ -101,7 +101,7 @@ produire_diagramme_html = function(
   .verifier_type_diagramme(type)
 
   if (is.null(fichier)) {
-    sortie_dir = file.path(getwd(), "rapports", "sorties", "diagrammes")
+    sortie_dir = tempdir()
     fichier = file.path(sortie_dir, paste0(type, ".html"))
   }
 

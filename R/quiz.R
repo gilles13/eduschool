@@ -360,8 +360,8 @@
 #' QCM, la notion et une courte formule de rappel.
 #'
 #' @param exercices Liste d'exercices munis de propositions QCM.
-#' @param fichier Chemin du fichier HTML. Si `NULL`, un nom est construit
-#'   automatiquement a partir des exercices.
+#' @param fichier Chemin du fichier HTML. Si `NULL`, un fichier temporaire est
+#'   cree a partir des exercices.
 #' @param titre Titre affiche dans le quiz.
 #' @param questions_par_quiz Nombre de questions affichees dans chaque quiz.
 #'   Toutes les questions fournies dans `exercices` sont embarquees dans le HTML.

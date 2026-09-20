@@ -32,11 +32,11 @@ test_that("produire_quiz cree un HTML autonome sans bibliotheque externe", {
   expect_false(grepl("<link[^>]+href=", html))
 })
 
-test_that("les productions par defaut sont rangees dans rapports", {
+test_that("les productions par defaut sont rangees dans le repertoire temporaire", {
   x = exercices("6E", "proportionnalite", n = 1, seed = 2026)
   fichier = eduschool:::.chemin_fichier_document(x, "quiz")
 
-  expect_identical(dirname(fichier), "rapports")
+  expect_identical(normalizePath(dirname(fichier)), normalizePath(tempdir()))
   expect_match(basename(fichier), "^quiz_6e_")
 })
 

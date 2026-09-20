@@ -15,8 +15,8 @@ produire_quiz(
 \arguments{
 \item{exercices}{Liste d'exercices munis de propositions QCM.}
 
-\item{fichier}{Chemin du fichier HTML. Si `NULL`, un nom est construit
-automatiquement a partir des exercices.}
+\item{fichier}{Chemin du fichier HTML. Si `NULL`, un fichier temporaire est
+cree a partir des exercices.}
 
 \item{titre}{Titre affiche dans le quiz.}
 

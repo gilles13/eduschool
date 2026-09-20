@@ -403,7 +403,7 @@ produire_ressource_examen = function(ressource, fichier = NULL,
   format = match.arg(format)
   extension = paste0(".", format)
   if (is.null(fichier)) {
-    base = .nom_fichier_examen(examen, corrige = FALSE)
+    base = file.path(tempdir(), .nom_fichier_examen(examen, corrige = FALSE))
   } else {
     base = sub("\\.(html|pdf)$", "", as.character(fichier), ignore.case = TRUE)
   }
@@ -485,7 +485,7 @@ produire_ressource_examen = function(ressource, fichier = NULL,
 #'
 #' @param examen Objet produit par [rediger_examen()].
 #' @param fichier Chemin de base du sujet. Le corrige recoit le suffixe
-#'   `"-corrige"`. Si `NULL`, les noms sont construits automatiquement.
+#'   `"-corrige"`. Si `NULL`, les deux fichiers sont crees dans le repertoire temporaire.
 #' @param format `"auto"`, `"html"` ou `"pdf"`.
 #' @param ouvrir Document a ouvrir apres creation : `"examen"` par defaut,
 #'   `"les_deux"` ou `"aucun"`.

@@ -88,7 +88,7 @@ carte_math = function() {
 #' @return Invisiblement, le chemin absolu du fichier produit.
 #' @export
 produire_carte_math = function(carte = carte_math(), fichier = NULL, largeur = 10, hauteur = 7, ouvrir = TRUE) {
-  if (is.null(fichier)) fichier = "eduschool-carte-math.png"
+  if (is.null(fichier)) fichier = file.path(tempdir(), "eduschool-carte-math.png")
   if (!grepl("\\.png$", fichier, ignore.case = TRUE)) fichier = paste0(fichier, ".png")
   fichier = normalizePath(fichier, winslash = "/", mustWork = FALSE)
   dir.create(dirname(fichier), recursive = TRUE, showWarnings = FALSE)

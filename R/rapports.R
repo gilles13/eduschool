@@ -225,7 +225,7 @@ produire_rapport_exercices = function(
   n = 10,
   difficulte = 1,
   seed = 1,
-  sortie_dir = file.path(getwd(), "rapports", "sorties", "exercices"),
+  sortie_dir = tempdir(),
   prefixe = NULL,
   compiler = nzchar(Sys.which("pdflatex")),
   afficher_metadonnees = FALSE,
@@ -478,7 +478,7 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 }
 
 .chemin_fichier_document = function(exercices, prefixe) {
-  file.path("rapports", .nom_fichier_document(exercices, prefixe))
+  file.path(tempdir(), .nom_fichier_document(exercices, prefixe))
 }
 
 .template_fiche_exercices = function() {
@@ -788,7 +788,7 @@ produire_fiche = function(
   discipline = .libelle_discipline_fiche(programme)
 
   if (is.null(fichier)) {
-    fichier = file.path("rapports", paste0("reperes-programme-", tolower(niveau)))
+    fichier = file.path(tempdir(), paste0("reperes-programme-", tolower(niveau)))
   }
 
   source = tempfile("eduschool-programme-", fileext = ".md")
@@ -1023,7 +1023,7 @@ produire_fiche = function(
   }
 
   format = .choisir_format_fiche(format)
-  if (is.null(fichier)) fichier = file.path("rapports", "fiche-notions")
+  if (is.null(fichier)) fichier = file.path(tempdir(), "fiche-notions")
 
   contenu = .contenu_fiche_notions(
     notions,
@@ -1193,7 +1193,7 @@ produire_fiche = function(
   }
 
   format = .choisir_format_fiche(format)
-  if (is.null(fichier)) fichier = file.path("rapports", "fiche-tableau")
+  if (is.null(fichier)) fichier = file.path(tempdir(), "fiche-tableau")
 
   multilignes = grepl("\n", as.character(tableau), fixed = TRUE)
 
@@ -1341,7 +1341,7 @@ produire_corrige = function(
 
   if (is.null(fichier)) {
     nom = tools::file_path_sans_ext(basename(source))
-    fichier = file.path("rapports", nom)
+    fichier = file.path(tempdir(), nom)
   }
   fichier = sub("\\.(html?|pdf)$", "", as.character(fichier), ignore.case = TRUE)
   fichier = paste0(fichier, extension)

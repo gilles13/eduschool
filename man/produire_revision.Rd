@@ -8,13 +8,13 @@ produire_revision(
   revision,
   fichier = NULL,
   format = c("auto", "html", "pdf"),
-  ouvrir = FALSE
+  ouvrir = TRUE
 )
 }
 \arguments{
 \item{revision}{Objet produit par [generer_revision()] ou [generer_essentiel()].}
 
-\item{fichier}{Chemin de sortie. Si `NULL`, le nom est construit automatiquement.}
+\item{fichier}{Chemin de sortie. Si `NULL`, un fichier temporaire est cree.}
 
 \item{format}{`"auto"`, `"html"` ou `"pdf"`.}
 

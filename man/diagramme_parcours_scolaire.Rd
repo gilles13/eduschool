@@ -7,8 +7,8 @@
 diagramme_parcours_scolaire(fichier = NULL, ouvrir = FALSE)
 }
 \arguments{
-\item{fichier}{Chemin du fichier HTML à produire. Si `NULL`, le fichier est
-créé sous `rapports/sorties/diagrammes/` dans le répertoire de travail.}
+\item{fichier}{Chemin du fichier HTML à produire. Si `NULL`, un fichier
+temporaire est cree.}
 
 \item{ouvrir}{Ouvrir le fichier avec l'application associée après sa création.}
 }

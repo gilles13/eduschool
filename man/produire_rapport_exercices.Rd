@@ -10,7 +10,7 @@ produire_rapport_exercices(
   n = 10,
   difficulte = 1,
   seed = 1,
-  sortie_dir = file.path(getwd(), "rapports", "sorties", "exercices"),
+  sortie_dir = tempdir(),
   prefixe = NULL,
   compiler = nzchar(Sys.which("pdflatex")),
   afficher_metadonnees = FALSE,

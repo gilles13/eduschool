@@ -53,7 +53,7 @@
 #' }
 #' @export
 produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
-  if (is.null(fichier)) fichier = "eduschool-cheatsheet.html"
+  if (is.null(fichier)) fichier = file.path(tempdir(), "eduschool-cheatsheet.html")
   if (length(fichier) != 1L || is.na(fichier) || !nzchar(trimws(fichier))) {
     stop("`fichier` doit contenir un chemin non vide.", call. = FALSE)
   }

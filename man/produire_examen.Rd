@@ -16,7 +16,7 @@ produire_examen(
 \item{examen}{Objet produit par [rediger_examen()].}
 
 \item{fichier}{Chemin de base du sujet. Le corrige recoit le suffixe
-`"-corrige"`. Si `NULL`, les noms sont construits automatiquement.}
+`"-corrige"`. Si `NULL`, les deux fichiers sont crees dans le repertoire temporaire.}
 
 \item{format}{`"auto"`, `"html"` ou `"pdf"`.}
 

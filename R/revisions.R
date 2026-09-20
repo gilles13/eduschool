@@ -211,19 +211,19 @@ generer_essentiel = function(niveau_id) {
 #' Produire une fiche de revision HTML ou PDF
 #'
 #' @param revision Objet produit par [generer_revision()] ou [generer_essentiel()].
-#' @param fichier Chemin de sortie. Si `NULL`, le nom est construit automatiquement.
+#' @param fichier Chemin de sortie. Si `NULL`, un fichier temporaire est cree.
 #' @param format `"auto"`, `"html"` ou `"pdf"`.
 #' @param ouvrir Ouvrir le document apres creation.
 #' @return Invisiblement, le chemin absolu du fichier produit.
 #' @export
-produire_revision = function(revision, fichier = NULL, format = c("auto", "html", "pdf"), ouvrir = FALSE) {
+produire_revision = function(revision, fichier = NULL, format = c("auto", "html", "pdf"), ouvrir = TRUE) {
   if (!inherits(revision, "eduschool_revision")) {
     stop("`revision` doit \u00eatre produit par generer_revision() ou generer_essentiel().", call. = FALSE)
   }
   if (!requireNamespace("rmarkdown", quietly = TRUE)) stop("Le package `rmarkdown` est n\u00e9cessaire.", call. = FALSE)
   if (!rmarkdown::pandoc_available()) stop("Pandoc est n\u00e9cessaire pour produire la fiche.", call. = FALSE)
   format = .choisir_format_fiche(format)
-  if (is.null(fichier)) fichier = .nom_fichier_revision(revision)
+  if (is.null(fichier)) fichier = file.path(tempdir(), .nom_fichier_revision(revision))
   extension = if (identical(format, "pdf")) ".pdf" else ".html"
   fichier = sub("\\.(html?|pdf)$", "", as.character(fichier), ignore.case = TRUE)
   fichier = paste0(fichier, extension)

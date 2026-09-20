@@ -104,7 +104,7 @@ test_that("la fiche essentielle est distincte", {
 test_that("une revision peut etre rendue en HTML", {
   skip_if_not_installed("rmarkdown")
   skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")
-  sortie = produire_revision(generer_essentiel("2GT"), tempfile("revision-"), format = "html")
+  sortie = produire_revision(generer_essentiel("2GT"), tempfile("revision-"), format = "html", ouvrir = FALSE)
   expect_true(file.exists(sortie))
   expect_match(sortie, "\\.html$")
 })
