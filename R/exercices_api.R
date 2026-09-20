@@ -84,7 +84,13 @@ generer_exercice = function(
   seed = NULL,
   afficher = FALSE
 ) {
-  f = switch(modele_id,
+  f = if (grepl("^C[345]_", modele_id)) {
+    function(niveau_id, capacite_id, difficulte, seed) {
+      generer_college_reperes(
+        niveau_id, capacite_id, difficulte, seed, modele_id = modele_id
+      )
+    }
+  } else switch(modele_id,
     EQ1DEG_001 = generer_equation_1degre,
     EQ4E_001 = generer_equation_4e,
     LITT_EXPR_001 = generer_expression_litterale,

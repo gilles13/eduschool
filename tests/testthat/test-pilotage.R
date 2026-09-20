@@ -11,11 +11,10 @@ test_that("couverture_programme observe les capacites avant les modeles", {
   expect_true(all(x$nb_modeles >= 0L))
 })
 
-test_that("couverture_programme distingue modele disponible et travail restant", {
+test_that("couverture_programme distingue les etats de couverture", {
   x = couverture_programme("5E")
 
   expect_true(any(x$etat == "modele_disponible"))
-  expect_true(any(x$etat == "exercices_a_developper"))
   expect_true(all(x$etat %in% c(
     "referentiel_a_completer",
     "exercices_a_developper",

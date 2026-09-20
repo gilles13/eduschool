@@ -65,3 +65,62 @@ PROBA_SIMPLE_001;"Probabilité - équiprobabilité";"proba_simple";"6E";1;2;prot
 FREQ_SIMPLE_001;"Fréquence - calcul simple";"freq_simple";"6E";1;2;prototype
 ECHELLE_001;"Échelle - longueur réelle";"echelle";"6E";1;2;prototype
 BOUCLE_001;"Algorithmique - répétition";"boucle";"6E";1;2;prototype
+C5_ITM_MAT_C4_01_01_01_001;Calculer et utiliser des produits et quotients - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_01_02_001;Priorités opératoires - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_02_01_001;Repérer des nombres relatifs - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_02_02_001;Additionner et soustraire des relatifs - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_02_03_001;Multiplier et diviser des relatifs - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_03_01_001;Fractions et nombres rationnels - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_04_01_001;Puissances entières - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_01_04_02_001;Puissances de dix - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_01_01_001;Coordonnées dans le plan - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_01_02_001;Repérage sur une droite graduée - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_02_01_001;Solides et représentations - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_02_02_001;Patrons et perspectives - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_03_01_001;Symétries - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_03_02_001;Translations et rotations - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_04_01_001;Relations entre angles - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_05_01_001;Construire et caractériser des triangles - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_05_02_001;Somme des angles - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_02_06_01_001;Reconnaître un parallélogramme - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_03_01_01_001;Lire des représentations statistiques - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_03_01_02_001;Indicateurs statistiques - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_03_02_01_001;Probabilité d’un événement - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_03_02_02_001;Expériences aléatoires - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_04_02_01_001;Notion de fonction - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_04_02_02_001;Images et antécédents - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_05_01_01_001;Variables et affectation - repère essentiel;college_reperes;5E;1;2;prototype
+C5_ITM_MAT_C4_05_01_02_001;Conditions et boucles - repère essentiel;college_reperes;5E;1;2;prototype
+C4_D_4E_ATT_NOMBRES_PUISS_001;Nombres, puissances et notation scientifique - repère essentiel;college_reperes;4E;1;2;prototype
+C4_TOLD_4E_ATT_RATIONNELS_001;Calcul avec les nombres rationnels - repère essentiel;college_reperes;4E;1;2;prototype
+C4_LD_4E_ATT_DIVISIBILITE_001;Divisibilité et nombres premiers - repère essentiel;college_reperes;4E;1;2;prototype
+C4_MATOLD_4E_ATT_LITTERAL_001;Calcul littéral - repère essentiel;college_reperes;4E;1;2;prototype
+C4_ITM_MATOLD_4E_ATT_STAT_001;Données et médiane - repère essentiel;college_reperes;4E;1;2;prototype
+C4_TM_MATOLD_4E_ATT_PROBA_001;Probabilités - repère essentiel;college_reperes;4E;1;2;prototype
+C4_TOLD_4E_ATT_PROPORTION_001;Proportionnalité - repère essentiel;college_reperes;4E;1;2;prototype
+C4_ATOLD_4E_ATT_FONCTIONS_001;Notion de fonction - repère essentiel;college_reperes;4E;1;2;prototype
+C4_ATOLD_4E_ATT_GRANDEURS_001;Volumes et grandeurs composées - repère essentiel;college_reperes;4E;1;2;prototype
+C4__MATOLD_4E_ATT_TRANSFO_001;Agrandissements et translations - repère essentiel;college_reperes;4E;1;2;prototype
+C4_M_MATOLD_4E_ATT_ESPACE_001;Repérage et solides dans l’espace - repère essentiel;college_reperes;4E;1;2;prototype
+C4_M_MATOLD_4E_ATT_THALES_001;Théorème de Thalès - repère essentiel;college_reperes;4E;1;2;prototype
+C4__MATOLD_4E_ATT_COSINUS_001;Cosinus dans le triangle rectangle - repère essentiel;college_reperes;4E;1;2;prototype
+C4_D_4E_ATT_DEMONSTRATION_001;Raisonnement géométrique - repère essentiel;college_reperes;4E;1;2;prototype
+C4_ITM_MATOLD_4E_ATT_ALGO_001;Algorithmique et programmation - repère essentiel;college_reperes;4E;1;2;prototype
+C3_TM_MATOLD_3E_ATT_PUISS_001;Puissances et notation scientifique - repère essentiel;college_reperes;3E;1;2;prototype
+C3_TOLD_3E_ATT_RATIONNELS_001;Nombres rationnels et racines carrées - repère essentiel;college_reperes;3E;1;2;prototype
+C3_LD_3E_ATT_DIVISIBILITE_001;Divisibilité et facteurs premiers - repère essentiel;college_reperes;3E;1;2;prototype
+C3_MATOLD_3E_ATT_LITTERAL_001;Calcul littéral avancé - repère essentiel;college_reperes;3E;1;2;prototype
+C3_ATOLD_3E_ATT_EQUATIONS_001;Équations et équations-produits - repère essentiel;college_reperes;3E;1;2;prototype
+C3_ITM_MATOLD_3E_ATT_STAT_001;Statistiques et histogrammes - repère essentiel;college_reperes;3E;1;2;prototype
+C3_TM_MATOLD_3E_ATT_PROBA_001;Probabilités et simulation - repère essentiel;college_reperes;3E;1;2;prototype
+C3_TOLD_3E_ATT_PROPORTION_001;Proportionnalité et évolution - repère essentiel;college_reperes;3E;1;2;prototype
+C3_ATOLD_3E_ATT_FONCTIONS_001;Fonctions - repère essentiel;college_reperes;3E;1;2;prototype
+C3_3E_ATT_LINEAIRE_AFFINE_001;Fonctions linéaires et affines - repère essentiel;college_reperes;3E;1;2;prototype
+C3_ATOLD_3E_ATT_GRANDEURS_001;Grandeurs composées et volumes - repère essentiel;college_reperes;3E;1;2;prototype
+C3_TOLD_3E_ATT_HOMOTHETIE_001;Homothétie - repère essentiel;college_reperes;3E;1;2;prototype
+C3_M_MATOLD_3E_ATT_ESPACE_001;Repérage sur la sphère et sections - repère essentiel;college_reperes;3E;1;2;prototype
+C3_M_MATOLD_3E_ATT_THALES_001;Thalès et triangles semblables - repère essentiel;college_reperes;3E;1;2;prototype
+C3_TM_MATOLD_3E_ATT_TRIGO_001;Trigonométrie dans le triangle rectangle - repère essentiel;college_reperes;3E;1;2;prototype
+C3__MATOLD_3E_ATT_TRANSFO_001;Rotations et homothéties - repère essentiel;college_reperes;3E;1;2;prototype
+C3_D_3E_ATT_DEMONSTRATION_001;Raisonnement et démonstration - repère essentiel;college_reperes;3E;1;2;prototype
+C3_ITM_MATOLD_3E_ATT_ALGO_001;Algorithmique et programmation avancée - repère essentiel;college_reperes;3E;1;2;prototype

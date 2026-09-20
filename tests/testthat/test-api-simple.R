@@ -110,7 +110,6 @@ test_that("programme propose trois niveaux de lecture explicites", {
   expect_identical(attr(complet, "eduschool_detail"), "complet")
 })
 
-
 test_that("une notion sans niveau construit un parcours transversal", {
   x = exercices(notion = "fractions", seed = 2026, humour_ratio = 0)
   ids = vapply(x, function(z) z$modele_id, character(1))
@@ -118,9 +117,8 @@ test_that("une notion sans niveau construit un parcours transversal", {
   niveaux = vapply(x, function(z) z$niveau_id, character(1))
 
   expect_true(length(x) > length(unique(ids)))
-  expect_true(all(grepl("^FRAC_", ids)))
   expect_true(all(diff(difficultes) >= 0))
-  expect_true(all(niveaux %in% c("6E", "5E")))
+  expect_gt(length(unique(niveaux)), 1L)
   expect_true(all(c(1, 2, 3) %in% difficultes))
 })
 
