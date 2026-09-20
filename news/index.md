@@ -4,10 +4,16 @@
 
 ### Fiches, quiz et qualité des textes
 
+- `revision("fractions")` et `exercices("fractions")` peuvent désormais
+  retrouver le niveau à partir du sujet ; le niveau explicite reste
+  disponible comme filtre.
 - [`produire_fiche()`](https://gilles13.github.io/eduschool/reference/produire_fiche.md)
   devient la porte de rendu commune : une révision préparée par
   [`revision()`](https://gilles13.github.io/eduschool/reference/revision.md)
   peut désormais être envoyée directement vers une fiche.
+- ajout d’une fiche thématique dédiée aux identités remarquables en
+  seconde, reliée au calcul littéral et accessible par
+  `revision("2GT", "identites_remarquables")`.
 - Les retours pédagogiques des fractions préservent les paragraphes
   utiles et les fiches de révision peuvent placer une explication juste
   après une formule grâce au champ optionnel `apres_formule`.

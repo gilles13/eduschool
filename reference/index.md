@@ -77,6 +77,10 @@
   [`generer_fiche()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   [`exercices()`](https://gilles13.github.io/eduschool/reference/exercices.md)
   : Generer un exercice
+- [`exercices_cercle()`](https://gilles13.github.io/eduschool/reference/exercices_cercle.md)
+  : Useful circle reminders
+- [`exercices_droites()`](https://gilles13.github.io/eduschool/reference/exercices_droites.md)
+  : Useful parallel and perpendicular line reminders
 - [`exercices_ensembles_nombres()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_nombres.md)
   : Quiz sur les ensembles de nombres
 - [`exercices_ensembles_preuve()`](https://gilles13.github.io/eduschool/reference/exercices_ensembles_preuve.md)
@@ -85,6 +89,8 @@
   : Cinq QCM croisant ensembles de nombres et proportions
 - [`exercices_oh_wait_euler()`](https://gilles13.github.io/eduschool/reference/exercices_oh_wait_euler.md)
   : Labo OH WAIT : beaucoup d'exemples ne font pas une preuve
+- [`exercices_quadrilateres()`](https://gilles13.github.io/eduschool/reference/exercices_quadrilateres.md)
+  : Useful geometry reminders
 - [`familles_revision()`](https://gilles13.github.io/eduschool/reference/familles_revision.md)
   : Familles de fiches de revision
 - [`fiches_revision()`](https://gilles13.github.io/eduschool/reference/fiches_revision.md)
@@ -149,6 +155,9 @@
   : Explorer les choix d'orientation
 - [`orientation_parcours()`](https://gilles13.github.io/eduschool/reference/orientation_parcours.md)
   : Parcours d'orientation modelises
+- [`outils_eduschool()`](https://gilles13.github.io/eduschool/reference/outils_eduschool.md)
+  [`jairangeoubordel()`](https://gilles13.github.io/eduschool/reference/outils_eduschool.md)
+  : Retrouver les outils eduschool dans le code source
 - [`parcours()`](https://gilles13.github.io/eduschool/reference/parcours.md)
   : Explorer un parcours scolaire
 - [`parcoursup_calendrier()`](https://gilles13.github.io/eduschool/reference/parcoursup_calendrier.md)
@@ -168,7 +177,10 @@
 - [`produire_carte_math()`](https://gilles13.github.io/eduschool/reference/produire_carte_math.md)
   : Produire la carte des mathematiques
 - [`produire_cheatsheet()`](https://gilles13.github.io/eduschool/reference/produire_cheatsheet.md)
-  : Produire la cheatsheet eduschool
+  : Produire la cheatsheet eduschool Génère une cheatsheet HTML autonome
+  au format A4 paysage. La fiche sert de boussole : trois gestes
+  essentiels pour réviser, s'entraîner et jouer, puis quelques portes
+  pour se repérer et aller plus loin.
 - [`produire_corrige()`](https://gilles13.github.io/eduschool/reference/produire_corrige.md)
   : Produire le corrige d'une fiche HTML ou PDF
 - [`produire_corrige_exercices()`](https://gilles13.github.io/eduschool/reference/produire_corrige_exercices.md)

@@ -15,18 +15,6 @@ droite graduée les nombres augmentent de gauche à droite. Pour
 additionner ou soustraire raisonner d’abord sur les signes et les
 distances à zéro.
 
-### Algorithmique
-
-Une variable stocke une valeur. Une affectation la modifie. Une
-condition permet de choisir une action et une boucle permet de répéter
-des instructions.
-
-### Réflexes
-
-Avant de calculer repérer les signes les unités et la structure de
-l’expression. Après le calcul vérifier l’ordre de grandeur et demander
-si le résultat est compatible avec la situation.
-
 ### Fractions et nombres rationnels
 
 Une fraction représente un quotient. Pour additionner ou soustraire deux
@@ -81,6 +69,18 @@ Une probabilité est comprise entre 0 et 1. Dans une expérience simple
 identifier les issues puis l’événement étudié. Une fréquence observée
 peut se rapprocher d’une probabilité lorsque le nombre d’essais
 augmente.
+
+### Algorithmique
+
+Une variable stocke une valeur. Une affectation la modifie. Une
+condition permet de choisir une action et une boucle permet de répéter
+des instructions.
+
+### Réflexes
+
+Avant de calculer repérer les signes les unités et la structure de
+l’expression. Après le calcul vérifier l’ordre de grandeur et demander
+si le résultat est compatible avec la situation.
 
 ## Relier les idées
 

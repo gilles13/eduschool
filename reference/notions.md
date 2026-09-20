@@ -1,15 +1,15 @@
 # Notions documentaires
 
-Notions documentaires
+Retourne le catalogue compact des notions mathematiques documentees.
+L'identifiant \`notion_id\` est celui a reutiliser dans les fonctions
+d'eduschool qui attendent une notion.
 
 ## Usage
 
 ``` r
-notions(discipline_id = NULL)
+notions()
 ```
 
-## Arguments
+## Value
 
-- discipline_id:
-
-  Discipline facultative.
+Un data.frame avec \`notion_id\` et \`libelle\`.

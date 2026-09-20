@@ -15,19 +15,6 @@ x 2. Pour des puissances de même base, multiplier revient à additionner
 les exposants et diviser revient à les soustraire. Les puissances de dix
 servent à écrire les très grands et très petits nombres.
 
-### Agrandissement et réduction
-
-Multiplier toutes les longueurs par un même facteur k produit un
-agrandissement ou une réduction. Les aires sont alors multipliées par k²
-et les volumes par k³. Exemple : si les longueurs doublent, les aires
-sont multipliées par 4 et les volumes par 8.
-
-### Réflexes
-
-Un théorème s’utilise seulement lorsque ses hypothèses sont vérifiées.
-Écrire les données utiles puis la propriété utilisée avant de lancer le
-calcul.
-
 ### Notation scientifique
 
 En notation scientifique un nombre s’écrit comme le produit d’un nombre
@@ -81,6 +68,19 @@ L’événement contraire contient toutes les issues qui ne réalisent pas
 l’événement considéré. Les probabilités d’un événement et de son
 contraire ont pour somme 1. Exemple : si P(A) = 0,3 alors la probabilité
 de l’événement contraire est 0,7.
+
+### Agrandissement et réduction
+
+Multiplier toutes les longueurs par un même facteur k produit un
+agrandissement ou une réduction. Les aires sont alors multipliées par k²
+et les volumes par k³. Exemple : si les longueurs doublent, les aires
+sont multipliées par 4 et les volumes par 8.
+
+### Réflexes
+
+Un théorème s’utilise seulement lorsque ses hypothèses sont vérifiées.
+Écrire les données utiles puis la propriété utilisée avant de lancer le
+calcul.
 
 ## Relier les idées
 

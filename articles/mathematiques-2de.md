@@ -24,6 +24,7 @@ décrites par le moteur de révision du package.
 - Logique et ensembles
 - L’essentiel des mathématiques en seconde
 - Algorithmique et programmation
+- Identités remarquables
 - Nombres et algèbre
 - Géométrie
 - Ensembles de nombres

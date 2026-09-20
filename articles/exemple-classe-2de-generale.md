@@ -30,7 +30,7 @@ genere_resume("2GT") |>
 | Histoire-géographie | 3 h | Sociétés et pouvoirs ; Territoires et mondialisation ; Environnement et mobilités | Sociétés et pouvoirs ; Territoires et mondialisation ; Environnement et mobilités |
 | Langues vivantes A et B | 5 h 30 | Compréhension et réception ; Expression et interaction ; Repères culturels et interculturels | Compréhension et réception ; Expression et interaction ; Repères culturels et interculturels |
 | Sciences économiques et sociales | 1 h 30 | Économie ; Sociologie ; Science politique et regards croisés | Économie ; Sociologie ; Science politique et regards croisés |
-| Mathématiques – seconde générale et technologique | 4 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; … |  |
+| Mathématiques – seconde générale et technologique | 4 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; … | Vocabulaire ensembliste et logique ; Variables et instructions élémentaires ; Notion de fonction ; Arithmétique ; Nombres réels ; Calcul littéral ; … |
 | Physique-chimie | 3 h | Constitution et transformations de la matière ; Mouvement et interactions ; Ondes et signaux | Constitution et transformations de la matière ; Mouvement et interactions ; Ondes et signaux |
 | Sciences de la vie et de la Terre | 1 h 30 | Terre, vie et évolution ; Enjeux contemporains de la planète ; Corps humain et santé | Terre, vie et évolution ; Enjeux contemporains de la planète ; Corps humain et santé |
 | Éducation physique et sportive | 2 h | Réaliser une performance ; Adapter ses déplacements ; Conduire et maîtriser un affrontement | Réaliser une performance ; Adapter ses déplacements ; Conduire et maîtriser un affrontement |
@@ -105,7 +105,7 @@ genere_resume("2GT", matiere = "maths", max_themes = 12) |>
 
 | matiere | horaire | themes | notions |
 |:---|:---|:---|:---|
-| Mathématiques – seconde générale et technologique | 4 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; Nombres et calculs, algèbre ; Arithmétique ; Nombres réels ; Algèbre ; Géométrie ; Vecteurs et problèmes de géométrie ; Droites du plan ; … |  |
+| Mathématiques – seconde générale et technologique | 4 h | Vocabulaire ensembliste et logique ; Algorithmique et programmation ; Variables et instructions élémentaires ; Notion de fonction ; Automatismes ; Nombres et calculs, algèbre ; Arithmétique ; Nombres réels ; Algèbre ; Géométrie ; Vecteurs et problèmes de géométrie ; Droites du plan ; … | Vocabulaire ensembliste et logique ; Variables et instructions élémentaires ; Notion de fonction ; Arithmétique ; Nombres réels ; Calcul littéral ; … |
 
 Pour afficher l’ensemble des grands thèmes mathématiques de la seconde :
 

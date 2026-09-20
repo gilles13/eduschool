@@ -13,18 +13,6 @@ Savoir lire écrire comparer et ordonner des nombres entiers ou décimaux.
 Estimer l’ordre de grandeur d’un résultat et respecter les priorités de
 calcul.
 
-### Repérage et solides
-
-Savoir lire les coordonnées d’un point se repérer sur un plan
-reconnaître cube et pavé droit et relier un solide à certaines de ses
-représentations planes.
-
-### Réflexes
-
-Avant de calculer identifier les données utiles choisir l’opération et
-vérifier l’unité. Après le calcul contrôler le signe l’ordre de grandeur
-et la cohérence de la réponse.
-
 ### Faire et défaire
 
 Addition et soustraction se défont l’une l’autre. Multiplication et
@@ -93,6 +81,18 @@ Une lettre peut représenter un nombre inconnu ou variable. Savoir
 compléter une égalité simple repérer une régularité et exécuter une
 suite d’instructions. Une boucle permet de répéter plusieurs fois les
 mêmes instructions.
+
+### Repérage et solides
+
+Savoir lire les coordonnées d’un point se repérer sur un plan
+reconnaître cube et pavé droit et relier un solide à certaines de ses
+représentations planes.
+
+### Réflexes
+
+Avant de calculer identifier les données utiles choisir l’opération et
+vérifier l’unité. Après le calcul contrôler le signe l’ordre de grandeur
+et la cohérence de la réponse.
 
 ## Relier les idées
 

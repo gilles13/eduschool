@@ -1,8 +1,9 @@
-# Produire la cheatsheet eduschool
+# Produire la cheatsheet eduschool Génère une cheatsheet HTML autonome au format A4 paysage. La fiche sert de boussole : trois gestes essentiels pour réviser, s'entraîner et jouer, puis quelques portes pour se repérer et aller plus loin.
 
-Genere une cheatsheet HTML autonome au format A4 paysage. La fiche sert
-de boussole : trois gestes essentiels pour reviser, s'entrainer et
-jouer, puis quelques portes pour se reperer et aller plus loin.
+Produire la cheatsheet eduschool Génère une cheatsheet HTML autonome au
+format A4 paysage. La fiche sert de boussole : trois gestes essentiels
+pour réviser, s'entraîner et jouer, puis quelques portes pour se repérer
+et aller plus loin.
 
 ## Usage
 
@@ -14,12 +15,12 @@ produire_cheatsheet(fichier = NULL, ouvrir = TRUE)
 
 - fichier:
 
-  Chemin du fichier HTML a produire. Si \`NULL\`, le fichier
-  \`eduschool-cheatsheet.html\` est cree dans le repertoire courant.
+  Chemin du fichier HTML à produire. Si \`NULL\`, le fichier
+  \`eduschool-cheatsheet.html\` est créé dans le répertoire courant.
 
 - ouvrir:
 
-  Ouvrir la cheatsheet dans le navigateur apres sa creation.
+  Ouvrir la cheatsheet dans le navigateur après sa création.
 
 ## Value
 

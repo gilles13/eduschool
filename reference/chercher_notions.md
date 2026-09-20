@@ -5,7 +5,7 @@ Rechercher des notions
 ## Usage
 
 ``` r
-chercher_notions(texte, discipline_id = "MAT")
+chercher_notions(texte)
 ```
 
 ## Arguments
@@ -13,7 +13,3 @@ chercher_notions(texte, discipline_id = "MAT")
 - texte:
 
   Texte ou fragments à rechercher.
-
-- discipline_id:
-
-  Discipline, \`MAT\` par défaut.

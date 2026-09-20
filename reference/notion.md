@@ -8,7 +8,7 @@ parcours mathematique.
 ## Usage
 
 ``` r
-notion(nom)
+notion(nom = NULL)
 ```
 
 ## Arguments

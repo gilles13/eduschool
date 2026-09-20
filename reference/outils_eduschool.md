@@ -1,0 +1,46 @@
+# Retrouver les outils eduschool dans le code source
+
+\`outils_eduschool()\` sert de boussole dans l'arbre source du package.
+Elle retrouve les fonctions a partir de leur nom, de leur fichier ou du
+premier titre roxygen qui les documente. L'inventaire est derive du code
+et du \`NAMESPACE\` : il n'ajoute donc pas de catalogue manuel a
+maintenir.
+
+## Usage
+
+``` r
+outils_eduschool(texte = NULL, internes = FALSE)
+
+jairangeoubordel(texte = NULL, internes = FALSE)
+```
+
+## Arguments
+
+- texte:
+
+  Mot ou fragment a rechercher, par exemple \`"ensembles"\`, \`"quiz"\`
+  ou \`"revision"\`. \`NULL\` retourne tout l'inventaire demande.
+
+- internes:
+
+  Inclure les fonctions internes. \`FALSE\` par defaut.
+
+## Value
+
+Un \`data.frame\` avec la fonction, son fichier source, son usage
+documentaire, son caractere public ou interne, les ressources de
+\`inst/\` qu'elle reference et les fichiers de tests qui l'appellent
+explicitement.
+
+## Details
+
+Sans texte, la fonction retourne l'inventaire des fonctions publiques.
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+outils_eduschool("ensembles")
+outils_eduschool("quiz", internes = TRUE)
+} # }
+```

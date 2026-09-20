@@ -68,8 +68,6 @@ r
 #> $blocs
 #>         bloc_id         fiche_id ordre      type                          titre
 #> 44  B_6E_ESS_01 REV_6E_ESSENTIEL    10    REPERE              Nombres et calcul
-#> 54  B_6E_ESS_11 REV_6E_ESSENTIEL   100    REPERE            Repérage et solides
-#> 55  B_6E_ESS_09 REV_6E_ESSENTIEL   110 VIGILANCE                       Réflexes
 #> 45 B_6E_ESS_01B REV_6E_ESSENTIEL    15    REPERE               Faire et défaire
 #> 46  B_6E_ESS_02 REV_6E_ESSENTIEL    20   FORMULE      Fractions et pourcentages
 #> 47  B_6E_ESS_03 REV_6E_ESSENTIEL    30   METHODE               Proportionnalité
@@ -79,10 +77,10 @@ r
 #> 51  B_6E_ESS_07 REV_6E_ESSENTIEL    70   FORMULE              Volumes et durées
 #> 52  B_6E_ESS_08 REV_6E_ESSENTIEL    80   FORMULE        Données et probabilités
 #> 53  B_6E_ESS_10 REV_6E_ESSENTIEL    90    REPERE Algèbre et pensée informatique
+#> 54  B_6E_ESS_11 REV_6E_ESSENTIEL   100    REPERE            Repérage et solides
+#> 55  B_6E_ESS_09 REV_6E_ESSENTIEL   110 VIGILANCE                       Réflexes
 #>                                                                                                                                                                                                                                                                                          contenu
 #> 44                                                                                                                                      Savoir lire écrire comparer et ordonner des nombres entiers ou décimaux. Estimer l'ordre de grandeur d'un résultat et respecter les priorités de calcul.
-#> 54                                                                                                                                   Savoir lire les coordonnées d'un point se repérer sur un plan reconnaître cube et pavé droit et relier un solide à certaines de ses représentations planes.
-#> 55                                                                                                                Avant de calculer identifier les données utiles choisir l'opération et vérifier l'unité. Après le calcul contrôler le signe l'ordre de grandeur et la cohérence de la réponse.
 #> 45                                                                   Addition et soustraction se défont l’une l’autre. Multiplication et division aussi, lorsque la division est possible. Reconnaître ces couples d’opérations inverses permet de revenir en arrière et de contrôler un calcul.
 #> 46                                                                                                                                                                                                                 Une fraction représente un quotient. Un pourcentage est une fraction sur 100.
 #> 47 Dans une situation proportionnelle, revenir à l'unité consiste souvent à diviser ; pour repartir vers une autre quantité, on multiplie. Exemple : si 5 objets coûtent 20 €, alors 1 objet coûte 20 ÷ 5 = 4 €, puis 8 objets coûtent 4 × 8 = 32 €. Toujours écrire les unités dans le tableau.
@@ -92,10 +90,10 @@ r
 #> 51                             Un volume peut se mesurer en cubes unités comme le cm³. Pour un pavé droit on multiplie longueur largeur et hauteur. Pour un cube les trois dimensions sont égales. Repères utiles : 1 dm³ = 1 L et 1 cm³ = 1 mL. Pour les durées : 1 h = 60 min et 1 min = 60 s.
 #> 52                               Savoir lire et produire un tableau ou un graphique. Une probabilité est comprise entre 0 et 1. En équiprobabilité elle compare les cas favorables aux cas possibles. Une fréquence observée sur de nombreuses répétitions peut aider à estimer une probabilité.
 #> 53                                                               Une lettre peut représenter un nombre inconnu ou variable. Savoir compléter une égalité simple repérer une régularité et exécuter une suite d'instructions. Une boucle permet de répéter plusieurs fois les mêmes instructions.
+#> 54                                                                                                                                   Savoir lire les coordonnées d'un point se repérer sur un plan reconnaître cube et pavé droit et relier un solide à certaines de ses représentations planes.
+#> 55                                                                                                                Avant de calculer identifier les données utiles choisir l'opération et vérifier l'unité. Après le calcul contrôler le signe l'ordre de grandeur et la cohérence de la réponse.
 #>                                                                                 formule
 #> 44                                                                                     
-#> 54                                                                                     
-#> 55                                                                                     
 #> 45 a+b=c \\Longleftrightarrow c-b=a \\quad a\\times b=c \\Longleftrightarrow c\\div b=a
 #> 46                                     \\frac{a}{b}=a\\div b \\quad t\\%=\\frac{t}{100}
 #> 47                                                                                     
@@ -105,10 +103,10 @@ r
 #> 51                                     V_{pave}=L\\times l\\times h \\quad V_{cube}=c^3
 #> 52           P(A)=\\frac{nombre\\ de\\ cas\\ favorables}{nombre\\ de\\ cas\\ possibles}
 #> 53                                                                                     
+#> 54                                                                                     
+#> 55                                                                                     
 #>    apres_formule illustration_id
 #> 44                              
-#> 54                              
-#> 55                              
 #> 45                              
 #> 46                              
 #> 47                              
@@ -118,6 +116,8 @@ r
 #> 51                              
 #> 52                              
 #> 53                              
+#> 54                              
+#> 55                              
 #> 
 #> $notions
 #> [1] notion_id     fiche_id      ordre         discipline_id libelle      

@@ -15,24 +15,6 @@ Il faut d’abord reconnaître la structure de l’expression. Exemple :
 3(x + 2) = 3x + 6, et 3x + 6 = 3(x + 2). La double distributivité
 prépare les transformations algébriques du lycée.
 
-### Probabilités et simulation
-
-Construire l’univers des issues puis identifier les événements. La
-simulation permet d’observer des fréquences et de comparer un modèle
-théorique aux résultats expérimentaux.
-
-### Algorithmique
-
-Décomposer un problème en étapes utiliser variables conditions boucles
-et blocs réutilisables. Un programme est une manière précise d’exprimer
-un raisonnement exécutable.
-
-### Préparer le lycée
-
-Ne pas seulement mémoriser des formules : savoir reconnaître la
-structure d’un problème choisir l’outil justifier son usage et relier
-résultat numérique représentation graphique et expression algébrique.
-
 ### Équations-produits
 
 Un produit est nul lorsqu’au moins un de ses facteurs est nul.
@@ -87,6 +69,24 @@ et figures semblables.
 Moyenne médiane et étendue ne répondent pas à la même question. La
 moyenne indique un niveau moyen, la médiane une position centrale et
 l’étendue mesure l’écart entre la plus grande et la plus petite valeur.
+
+### Probabilités et simulation
+
+Construire l’univers des issues puis identifier les événements. La
+simulation permet d’observer des fréquences et de comparer un modèle
+théorique aux résultats expérimentaux.
+
+### Algorithmique
+
+Décomposer un problème en étapes utiliser variables conditions boucles
+et blocs réutilisables. Un programme est une manière précise d’exprimer
+un raisonnement exécutable.
+
+### Préparer le lycée
+
+Ne pas seulement mémoriser des formules : savoir reconnaître la
+structure d’un problème choisir l’outil justifier son usage et relier
+résultat numérique représentation graphique et expression algébrique.
 
 ## Relier les idées
 
