@@ -12,6 +12,16 @@ déjà compris hier.
 > Avant toute modification, relire d'abord les règles techniques
 > pertinentes de ce document. Observer et comprendre avant de corriger.
 
+## RÈGLE 000 — Simplifier intelligemment, à l’extrême, pour nous rendre service
+
+> **Simplifier intelligemment, à l’extrême, pour nous rendre service.**
+
+Une abstraction, une structure ou une règle ne contient que ce qui est nécessaire au service qu’elle rend aujourd’hui. Les cas particuliers disparaissent autant que possible derrière un contrat simple et stable. Une information facultative peut être absente ou valoir `NULL` : son absence ne justifie pas, à elle seule, une nouvelle structure.
+
+> **La complexité doit avoir une raison d’exister.**
+
+Si deux solutions rendent le même service, `eduschool` choisit la plus simple. Si la solution simple ne suffit plus, elle n’est complexifiée que lorsque le besoin existe réellement.
+
 ## Routine avant modification
 
 1.  Lire la documentation développeur pertinente.

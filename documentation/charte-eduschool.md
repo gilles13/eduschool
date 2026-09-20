@@ -8,6 +8,7 @@ endroit, afin de ne rien perdre tout en simplifiant la navigation publique.
 
 ## Principes à ne pas perdre
 
+- **RÈGLE 000 — Simplifier intelligemment, à l’extrême, pour nous rendre service.**
 - **Voir les maths autrement. Toujours avec rigueur.**
 - **Il n'existe pas une seule bonne façon d'apprendre.**
 - **L'erreur n'est pas un échec. C'est une étape pour comprendre et progresser.**
@@ -19,6 +20,16 @@ endroit, afin de ne rien perdre tout en simplifiant la navigation publique.
 - **Une nouvelle abstraction n'entre dans eduschool que lorsqu'elle a trouvé du travail.**
 
 ---
+
+## RÈGLE 000
+
+> **Simplifier intelligemment, à l’extrême, pour nous rendre service.**
+
+Une abstraction, une structure ou une règle ne contient que ce qui est nécessaire. Les cas particuliers disparaissent autant que possible derrière un contrat simple et stable. Une information facultative peut être absente ou valoir `NULL` : son absence ne justifie pas une nouvelle structure.
+
+> **La complexité doit avoir une raison d’exister.**
+
+Si deux solutions rendent le même service, `eduschool` choisit la plus simple. Si elle cesse de suffire, nous la complexifions lorsque le besoin est réel, pas avant.
 
 ## Ancien « À propos » — v0.27.0
 

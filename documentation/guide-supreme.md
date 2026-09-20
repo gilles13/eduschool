@@ -25,6 +25,16 @@ Pour l'instant, trois etats suffisent :
 
 Une non-decision peut donc etre versionnee. Elle n'est pas un oubli.
 
+# Règle 000
+
+> **Simplifier intelligemment, à l’extrême, pour nous rendre service.**
+
+Une abstraction, une structure ou une règle ne contient que ce qui est nécessaire au service qu’elle rend aujourd’hui. Une information facultative peut être absente ou valoir `NULL` sans imposer une nouvelle structure. Les cas particuliers disparaissent autant que possible derrière un contrat simple et stable.
+
+> **La complexité doit avoir une raison d’exister.**
+
+Si deux solutions rendent le même service, `eduschool` choisit la plus simple. La solution simple n’est complexifiée que lorsqu’un besoin réel le demande. Cette règle porte le numéro **000** parce qu’elle s’applique avant les autres décisions de conception.
+
 # Construire sans perdre le chemin
 
 ## Decision - partir de l'etat reel

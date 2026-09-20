@@ -27,6 +27,14 @@ Trois statuts sont utilisés :
 Une hypothèse d'audit ne devient jamais une règle simplement parce
 qu'elle semble naturelle.
 
+## G000 — Simplifier intelligemment, à l’extrême, pour nous rendre service
+
+Avant toute autre règle de modélisation, le mini-SI applique la Règle 000. Une structure ne porte que l’information nécessaire au contrat qu’elle sert. Une information facultative peut être absente ou `NULL` sans provoquer la création d’un nouvel objet, d’une nouvelle relation ou d’un nouveau vocabulaire.
+
+Les cas particuliers sont absorbés autant que possible par un contrat simple et stable. Une complexité supplémentaire n’est introduite que lorsqu’un besoin réel la rend nécessaire.
+
+> **La complexité doit avoir une raison d’exister.**
+
 ## 1. Les mots du mini-SI
 
 ### 1.1 Référents et entités

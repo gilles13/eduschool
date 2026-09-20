@@ -10,6 +10,14 @@ projet, son architecture, ses contrôles et son ambition. Cet humour doit aider 
 lire, mémoriser ou dédramatiser. Il ne doit jamais masquer une règle
 mathématique ni se moquer d'un élève, d'un parent ou d'une difficulté réelle.
 
+## Règle 000
+
+> **Simplifier intelligemment, à l’extrême, pour nous rendre service.**
+
+Cette règle vaut aussi pour les textes : ne pas multiplier les formulations, les rubriques ou les exceptions lorsqu’un contrat simple suffit. Une information facultative peut rester absente ; elle n’a pas besoin d’une nouvelle structure pour signaler son absence.
+
+> **La complexité doit avoir une raison d’exister.**
+
 ## Trois règles
 
 1. Une définition, une formule, une consigne et une correction restent exactes.

@@ -47,6 +47,14 @@ API publique de composition. Les fiches officielles d'`eduschool` et les fiches
 personnelles devront utiliser les mêmes briques, afin qu'un support puisse être
 créé localement, adapté puis partagé sans réécriture spécifique.
 
+## Règle 000
+
+> **Simplifier intelligemment, à l’extrême, pour nous rendre service.**
+
+Une contribution n’ajoute de complexité que lorsqu’un besoin réel l’exige. Une information facultative peut rester absente ou valoir `NULL` ; son absence ne justifie pas une nouvelle structure. À service égal, la solution la plus simple est préférée.
+
+> **La complexité doit avoir une raison d’exister.**
+
 ## Principes techniques
 
 - privilégier les données structurées aux valeurs codées dans les fonctions ;

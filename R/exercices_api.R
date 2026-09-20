@@ -92,6 +92,7 @@ generer_exercice = function(
     }
   } else switch(modele_id,
     EQ1DEG_001 = generer_equation_1degre,
+    PROD_QUOT_5E_001 = generer_produits_quotients_5e,
     EQ4E_001 = generer_equation_4e,
     LITT_EXPR_001 = generer_expression_litterale,
     LITT_REDUC_001 = generer_reduction_litterale,
