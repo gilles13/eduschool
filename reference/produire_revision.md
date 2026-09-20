@@ -9,7 +9,7 @@ produire_revision(
   revision,
   fichier = NULL,
   format = c("auto", "html", "pdf"),
-  ouvrir = FALSE
+  ouvrir = TRUE
 )
 ```
 
@@ -21,7 +21,7 @@ produire_revision(
 
 - fichier:
 
-  Chemin de sortie. Si \`NULL\`, le nom est construit automatiquement.
+  Chemin de sortie. Si \`NULL\`, un fichier temporaire est cree.
 
 - format:
 

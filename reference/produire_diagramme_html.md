@@ -21,8 +21,8 @@ produire_diagramme_html(
 
 - fichier:
 
-  Chemin du fichier HTML à produire. Si \`NULL\`, le fichier est créé
-  sous \`rapports/sorties/diagrammes/\` dans le répertoire de travail.
+  Chemin du fichier HTML à produire. Si \`NULL\`, un fichier temporaire
+  est cree.
 
 - ouvrir:
 

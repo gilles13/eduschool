@@ -26,8 +26,8 @@ produire_quiz(
 
 - fichier:
 
-  Chemin du fichier HTML. Si \`NULL\`, un nom est construit
-  automatiquement a partir des exercices.
+  Chemin du fichier HTML. Si \`NULL\`, un fichier temporaire est cree a
+  partir des exercices.
 
 - titre:
 

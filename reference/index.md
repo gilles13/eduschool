@@ -153,6 +153,8 @@
   : Lire le rappel pédagogique d'une notion
 - [`orientation()`](https://gilles13.github.io/eduschool/reference/orientation.md)
   : Explorer les choix d'orientation
+- [`orientation_notion()`](https://gilles13.github.io/eduschool/reference/orientation_notion.md)
+  : Orientation autour d'un concept mathematique
 - [`orientation_parcours()`](https://gilles13.github.io/eduschool/reference/orientation_parcours.md)
   : Parcours d'orientation modelises
 - [`outils_eduschool()`](https://gilles13.github.io/eduschool/reference/outils_eduschool.md)
@@ -225,6 +227,8 @@
   : Recuperer des donnees officielles
 - [`rediger_examen()`](https://gilles13.github.io/eduschool/reference/rediger_examen.md)
   : Rediger une partie d'un examen compose
+- [`relations_carte_math()`](https://gilles13.github.io/eduschool/reference/relations_carte_math.md)
+  : Relations entre les domaines de la carte des mathematiques
 - [`relations_concepts_math()`](https://gilles13.github.io/eduschool/reference/relations_concepts_math.md)
   : Relations entre concepts mathematiques
 - [`relations_si()`](https://gilles13.github.io/eduschool/reference/relations_si.md)

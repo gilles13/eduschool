@@ -124,6 +124,13 @@ r
 #> [6] description   document     
 #> <0 rows> (or 0-length row.names)
 #> 
+#> $concepts
+#>  [1] concept_id          fiche_id            role               
+#>  [4] libelle             definition          domaine            
+#>  [7] statut              niveau_introduction programme_id       
+#> [10] en_clair           
+#> <0 rows> (or 0-length row.names)
+#> 
 #> attr(,"class")
 #> [1] "eduschool_revision" "list"
 ```

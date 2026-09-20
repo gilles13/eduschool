@@ -25,7 +25,8 @@ produire_examen(
 - fichier:
 
   Chemin de base du sujet. Le corrige recoit le suffixe \`"-corrige"\`.
-  Si \`NULL\`, les noms sont construits automatiquement.
+  Si \`NULL\`, les deux fichiers sont crees dans le repertoire
+  temporaire.
 
 - format:
 

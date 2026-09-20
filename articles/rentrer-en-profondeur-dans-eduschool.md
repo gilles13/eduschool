@@ -137,8 +137,8 @@ knitr::kable(
 | horaires | enseignements | horaire_id | 247 | 10 |
 | offres_enseignements | enseignements | offre_id | 175 | 6 |
 | options | enseignements | option_id,niveau_id | 13 | 7 |
-| modeles | exercices | modele_id | 44 | 7 |
-| modeles_capacites | exercices | modele_id,capacite_id | 53 | 2 |
+| modeles | exercices | modele_id | 46 | 7 |
+| modeles_capacites | exercices | modele_id,capacite_id | 55 | 2 |
 | sources | metadata | source_id | 38 | 8 |
 | versions | metadata | version_id | 4 | 4 |
 | programme_applications | programmes | programme_id,niveau_id,version_id | 138 | 5 |
@@ -191,6 +191,7 @@ knitr::kable(
 | gabarits_exercices_ressources | examens | gabarit_compose_id,ressource_id | 6 | 5 |
 | contextes_exercices | examens | contexte_id | 69 | 28 |
 | gabarits_exercices_contextes | examens | gabarit_compose_id,contexte_id | 69 | 4 |
+| fiche_concepts | revision | fiche_id,concept_id | 2 | 3 |
 
 Une nouvelle table ajoutée au contrat apparaîtra donc automatiquement
 dans cette vignette lors de sa reconstruction.
@@ -291,9 +292,9 @@ Les contrôles structurels sont directement dérivés des métadonnées :
 
 resume_controles_si(niveau = "structure")
 #>            type controles_total controles_ok
-#> 1 cle_etrangere             105          105
-#> 2  cle_primaire              63           63
-#> 3      colonnes              63           63
+#> 1 cle_etrangere             107          107
+#> 2  cle_primaire              64           64
+#> 3      colonnes              64           64
 #> 4       domaine               1            1
 ```
 
@@ -338,9 +339,9 @@ Le contrôle complet réunit les deux niveaux :
 
 resume_controles_si()
 #>                      type controles_total controles_ok
-#> 1           cle_etrangere             105          105
-#> 2            cle_primaire              63           63
-#> 3                colonnes              63           63
+#> 1           cle_etrangere             107          107
+#> 2            cle_primaire              64           64
+#> 3                colonnes              64           64
 #> 4                 domaine               1            1
 #> 5     semantique_horaires               3            3
 #> 6 semantique_niveau_serie               1            1
