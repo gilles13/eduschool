@@ -45,3 +45,23 @@ IR_SIGNE_001;"Identités remarquables - signes";"identite_signe";"2GT";1;2;proto
 IR_EQUIV_001;"Identités remarquables - équivalence";"identite_equivalence";"2GT";1;2;prototype
 DEC_ENCADR_001;"Encadrer un nombre décimal";"decimal_encadrer";"6E";1;2;prototype
 DEC_ARRONDI_001;"Arrondir un nombre décimal";"decimal_arrondir";"6E";1;2;prototype
+NUM_COMPARE_001;"Grands nombres - comparer";"num_compare";"6E";1;2;prototype
+NUM_DECOMP_001;"Numération - valeur de position";"num_decomp";"6E";1;2;prototype
+DEC_MULT_001;"Décimaux - multiplication";"dec_mult";"6E";1;2;prototype
+OP_CHOICE_001;"Opérations - choisir et calculer";"op_choice";"6E";1;2;prototype
+INCONNUE_001;"Nombre inconnu - opération inverse";"inconnue";"6E";1;2;prototype
+REG_SUITE_001;"Régularité - poursuivre une suite";"reg_suite";"6E";1;2;prototype
+PER_RECT_001;"Périmètre - rectangle";"per_rect";"6E";1;2;prototype
+AIRE_RECT_001;"Aire - rectangle";"aire_rect";"6E";1;2;prototype
+AIRE_CONV_001;"Aire - conversion";"aire_conv";"6E";1;2;prototype
+VOL_PAVE_001;"Volume - pavé droit";"vol_pave";"6E";1;2;prototype
+DUREE_CONV_001;"Durée - conversion";"duree_conv";"6E";1;2;prototype
+TRI_ANGLE_001;"Triangle - somme des angles";"tri_angle";"6E";1;2;prototype
+MED_EQUIDIST_001;"Médiatrice - équidistance";"med_equidist";"6E";1;2;prototype
+CERCLE_DIAM_001;"Cercle - rayon et diamètre";"cercle_diam";"6E";1;2;prototype
+SYM_AXE_001;"Symétrie axiale - coordonnée";"sym_axe";"6E";1;2;prototype
+DATA_FILTER_001;"Données - filtrer";"data_filter";"6E";1;2;prototype
+PROBA_SIMPLE_001;"Probabilité - équiprobabilité";"proba_simple";"6E";1;2;prototype
+FREQ_SIMPLE_001;"Fréquence - calcul simple";"freq_simple";"6E";1;2;prototype
+ECHELLE_001;"Échelle - longueur réelle";"echelle";"6E";1;2;prototype
+BOUCLE_001;"Algorithmique - répétition";"boucle";"6E";1;2;prototype
