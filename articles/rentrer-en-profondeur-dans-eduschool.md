@@ -291,7 +291,7 @@ Les contrôles structurels sont directement dérivés des métadonnées :
 
 resume_controles_si(niveau = "structure")
 #>            type controles_total controles_ok
-#> 1 cle_etrangere             104          104
+#> 1 cle_etrangere             105          105
 #> 2  cle_primaire              63           63
 #> 3      colonnes              63           63
 #> 4       domaine               1            1
@@ -338,7 +338,7 @@ Le contrôle complet réunit les deux niveaux :
 
 resume_controles_si()
 #>                      type controles_total controles_ok
-#> 1           cle_etrangere             104          104
+#> 1           cle_etrangere             105          105
 #> 2            cle_primaire              63           63
 #> 3                colonnes              63           63
 #> 4                 domaine               1            1

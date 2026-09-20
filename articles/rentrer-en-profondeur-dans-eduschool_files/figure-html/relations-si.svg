@@ -236,6 +236,8 @@
   <text class="edge-label" x="790" y="2176.5" text-anchor="middle">n:1</text>
   <path class="edge" d="M 670 2254 L 635 2254 L 635 2254 L 600 2254"/>
   <text class="edge-label" x="635" y="2248" text-anchor="middle">n:1</text>
+  <path class="edge" d="M 1220 2111 L 1100 2111 L 1100 2111 L 980 2111"/>
+  <text class="edge-label" x="1100" y="2105" text-anchor="middle">n:1</text>
   <g class="node database" id="couverture">
     <rect x="50" y="70" width="240" height="78" rx="18" ry="18"/>
     <text x="170" y="99.5">couverture</text>
