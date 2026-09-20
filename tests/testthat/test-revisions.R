@@ -87,6 +87,13 @@ test_that("la revision identites remarquables de 2GT est disponible", {
   )
 })
 
+test_that("les blocs de revision suivent leur ordre numerique", {
+  for (niveau in c("6E", "5E", "4E", "3E", "2GT")) {
+    r = generer_essentiel(niveau)
+    expect_equal(as.numeric(r$blocs$ordre), sort(as.numeric(r$blocs$ordre)))
+  }
+})
+
 test_that("la fiche essentielle est distincte", {
   x = generer_essentiel("2GT")
   expect_equal(x$type, "ESSENTIEL")

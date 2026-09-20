@@ -147,7 +147,7 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   liens = .lire_csv("revision", "fiche_notions.csv")
   notions_ref = .lire_csv("documentation", "notions.csv")
   blocs = blocs[blocs$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
-  blocs = blocs[order(blocs$ordre), , drop = FALSE]
+  blocs = blocs[order(as.numeric(blocs$ordre)), , drop = FALSE]
   liens = liens[liens$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
   notions_liees = merge(liens, notions_ref, by = "notion_id", all.x = TRUE, sort = FALSE)
   notions_liees = notions_liees[order(notions_liees$ordre), , drop = FALSE]
