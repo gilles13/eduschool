@@ -82,6 +82,93 @@ les messages d'erreur courts, ni la documentation du code lorsqu'ils
 appartiennent réellement au source R. Elle évite de transformer le code
 en dépôt de contenu éditorial.
 
+
+### Un nouveau sujet commence par ses textes
+
+Lorsqu'eduschool aborde une nouvelle notion, un nouveau concept ou un
+nouveau modèle pédagogique, créer par défaut une ressource dédiée :
+
+`inst/exercices/textes_<sujet>.csv`
+
+Le nom `<sujet>` reste simple et local au besoin rencontré. Il n'est pas
+nécessaire de construire au préalable une taxonomie générale des contenus.
+
+Cette ressource est écrite directement en UTF-8 et peut accueillir, selon
+les besoins, les énoncés, définitions, rappels, réponses, corrections,
+feedbacks, formulations alternatives et autres textes pédagogiques du sujet.
+
+> **Le code R fabrique l'exercice ; le CSV porte les mots de l'exercice.**
+
+Au démarrage d'un sujet, le fichier peut être incomplet, imparfait ou
+contenir une organisation encore provisoire. Ce n'est pas un motif pour
+retarder son utilisation.
+
+Une structure commune n'est extraite ou généralisée que lorsque plusieurs
+usages réels montrent qu'elle est utile.
+
+Autrement dit :
+
+`créer les textes → faire fonctionner → utiliser → observer → améliorer`
+
+et non :
+
+`prévoir tous les textes possibles → abstraire → généraliser → peut-être utiliser`
+
+Un fichier `textes_<sujet>.csv` imparfait mais utilisé vaut mieux qu'une
+architecture éditoriale parfaite qui empêche d'expérimenter.
+
+### Alimenter le mini-SI
+
+Le mini-SI est construit progressivement. Une table incomplète n'est donc
+pas, par elle-même, une table erronée.
+
+L'ajout de données doit rester traçable et explicable :
+
+- toute donnée issue d'un référentiel externe doit conserver une source
+  identifiable ;
+- toute nouvelle convention doit être justifiée avant d'être généralisée ;
+- un identifiant existant reste stable lorsqu'il désigne toujours la même
+  entité ;
+- un identifiant ne doit pas encoder une information déjà portée par une
+  relation explicite entre tables ;
+- l'ordre d'affichage ou l'ordre pédagogique ne doit pas être confondu avec
+  l'identité d'un objet ;
+- un index, une contrainte ou une nouvelle table ne sont ajoutés que lorsque
+  leur rôle est identifié : recherche, intégrité, unicité, performance ou
+  relation métier.
+
+Lorsqu'une décision est susceptible d'être réutilisée, sa justification doit
+être documentée ici ou dans la documentation technique concernée.
+
+L'absence d'une donnée dans le mini-SI signifie d'abord « pas encore
+documenté ». Elle ne permet pas, à elle seule, de conclure que cette donnée
+est absente du programme ou du domaine représenté.
+
+#### Identifiants des objets de programme
+
+Les identifiants sont stables et servent à identifier les objets ; ils ne
+doivent pas être interprétés comme une représentation complète de leur
+position dans le programme.
+
+Pour les objets `THEME`, le suffixe numérique peut reprendre l'ordre du
+thème dans la source officielle lorsque cette structure est explicitement
+définie.
+
+Pour les objets `CAPACITE`, le suffixe `Cxx` est attribué séquentiellement
+au niveau concerné. Il garantit un identifiant unique et stable, mais
+n'identifie ni le thème parent ni l'ordre de la capacité dans ce thème.
+
+Ces informations sont portées explicitement par :
+
+- `parent_item_id` pour le rattachement au thème ;
+- `ordre` pour l'ordre à l'intérieur du parent ;
+- `programme_id` pour le programme de référence ;
+- `niveau` pour le niveau scolaire.
+
+L'ajout ultérieur d'un thème ou d'une capacité ne provoque donc jamais la
+renumérotation d'identifiants existants.
+
+
 ### Identifiants et syntaxes techniques
 
 Les identifiants internes peuvent rester ASCII :

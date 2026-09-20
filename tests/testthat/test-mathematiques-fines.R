@@ -10,6 +10,14 @@ test_that("la couche mathematique fine est relationnelle", {
   expect_true(nrow(d$erreurs) >= 1)
 })
 
+test_that("une notion peut etre orientee dans les objets de programme", {
+  x = orientation_notion("MATC_PROPORTIONNALITE")
+  expect_equal(x$concept$concept_id[[1]], "MATC_PROPORTIONNALITE")
+  expect_true(nrow(x$programme) >= 1)
+  expect_true(all(x$programme$concept_id == "MATC_PROPORTIONNALITE"))
+  expect_true(nrow(x$relations) >= 1)
+})
+
 test_that("les ancrages de concepts pointent vers des objets de programme existants", {
   x = .lire_csv("mathematiques", "concepts_items.csv")
   items = .lire_csv("programmes", "programme_items.csv")

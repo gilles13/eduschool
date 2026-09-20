@@ -43,3 +43,5 @@ IR_DEVEL_001;"Identités remarquables - développer";"identite_developper";"2GT"
 IR_FACT_001;"Identités remarquables - factoriser";"identite_factoriser";"2GT";1;2;prototype
 IR_SIGNE_001;"Identités remarquables - signes";"identite_signe";"2GT";1;2;prototype
 IR_EQUIV_001;"Identités remarquables - équivalence";"identite_equivalence";"2GT";1;2;prototype
+DEC_ENCADR_001;"Encadrer un nombre décimal";"decimal_encadrer";"6E";1;2;prototype
+DEC_ARRONDI_001;"Arrondir un nombre décimal";"decimal_arrondir";"6E";1;2;prototype

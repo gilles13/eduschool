@@ -143,3 +143,30 @@ carte_concept_math = function(concept_id) {
     }
   )
 }
+
+#' Orientation autour d'un concept mathematique
+#'
+#' Rassemble la carte pedagogique locale d'un concept et les objets de
+#' programme dans lesquels ce concept est ancre.
+#'
+#' @param concept_id Identifiant du concept.
+#' @return Une liste contenant le concept, ses ancrages dans le programme,
+#'   ses relations, methodes, formules, erreurs et exercices.
+#' @export
+orientation_notion = function(concept_id) {
+  carte = carte_concept_math(concept_id)
+  liens = .lire_csv("mathematiques", "concepts_items.csv")
+  items = .lire_csv("programmes", "programme_items.csv")
+  liens = liens[liens$concept_id %in% concept_id, , drop = FALSE]
+  programme = merge(liens, items, by = "item_id", all.x = TRUE, sort = FALSE)
+  rownames(programme) = NULL
+  list(
+    concept = carte$concept,
+    programme = programme,
+    relations = carte$relations,
+    methodes = carte$methodes,
+    formules = carte$formules,
+    erreurs = carte$erreurs,
+    exercices = carte$exercices
+  )
+}

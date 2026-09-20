@@ -83,6 +83,7 @@ Exemples établis ou directement lisibles dans les métadonnées :
 -   un programme **s'applique à** un niveau dans une version ;
 -   une fiche de révision **contient** des blocs ;
 -   une fiche de révision **couvre** des notions ;
+-   une fiche de révision **travaille** des concepts mathématiques ;
 -   un modèle d'exercice **exerce** des capacités ;
 -   un patron d'exercice **mobilise** des concepts et des méthodes ;
 -   une notion **requiert** éventuellement une autre notion ;
@@ -291,6 +292,9 @@ notion
     +-- est expliquée par --> rappel documentaire
     +-- peut requérir -----> notion
     +-- peut être couverte par --> fiche de révision
+
+fiche de révision
+    +-- travaille ----------> concept mathématique
 
 concept mathématique
     +-- est relié à --> concept mathématique

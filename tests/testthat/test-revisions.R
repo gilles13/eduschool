@@ -295,3 +295,9 @@ test_that("le schema de l identite carree peut etre dessine", {
 
   expect_silent(eduschool:::.dessiner_revision("identite_carree"))
 })
+
+test_that("la fiche fractions est reliee a ses concepts mathematiques", {
+  x = revision("5E", "fractions")
+  expect_setequal(x$concepts$concept_id, c("MATC_FRACTION", "MATC_NOMBRE_RATIONNEL"))
+  expect_true(all(x$concepts$role == "CENTRAL"))
+})

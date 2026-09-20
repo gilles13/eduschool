@@ -1,8 +1,33 @@
 # Carte conceptuelle simple des domaines mathematiques.
 
-.donnees_carte_math = function() {
+#' Relations entre les domaines de la carte des mathematiques
+#'
+#' Retourne les relations entre concepts appartenant a des domaines
+#' differents, avec les libelles et domaines des deux concepts.
+#'
+#' @return Un data.frame de relations inter-domaines.
+#' @export
+relations_carte_math = function() {
   concepts = concepts_math()
   relations = relations_concepts_math()
+  origine = concepts[, c("concept_id", "libelle", "domaine")]
+  names(origine) = c("concept_id", "concept_a", "domaine_a")
+  cible = concepts[, c("concept_id", "libelle", "domaine")]
+  names(cible) = c("concept_lie_id", "concept_b", "domaine_b")
+  liens = merge(relations, origine, by = "concept_id", all.x = TRUE, sort = FALSE)
+  liens = merge(liens, cible, by = "concept_lie_id", all.x = TRUE, sort = FALSE)
+  liens = liens[!is.na(liens$domaine_a) & !is.na(liens$domaine_b) & liens$domaine_a != liens$domaine_b, , drop = FALSE]
+  colonnes = c(
+    "relation_id", "domaine_a", "concept_id", "concept_a",
+    "domaine_b", "concept_lie_id", "concept_b",
+    "type_relation", "importance", "commentaire"
+  )
+  liens[, colonnes, drop = FALSE]
+}
+
+.donnees_carte_math = function() {
+  concepts = concepts_math()
+  liens = relations_carte_math()
   domaines = sort(unique(concepts$domaine))
 
   noeuds = data.frame(
@@ -13,14 +38,6 @@
   angle = seq(0, 2 * pi, length.out = nrow(noeuds) + 1L)[-1L] + pi / 2
   noeuds$x = cos(angle)
   noeuds$y = sin(angle)
-
-  origine = concepts[, c("concept_id", "domaine")]
-  names(origine)[[2L]] = "domaine_a"
-  cible = origine
-  names(cible) = c("concept_lie_id", "domaine_b")
-  liens = merge(relations, origine, by = "concept_id", all.x = TRUE, sort = FALSE)
-  liens = merge(liens, cible, by = "concept_lie_id", all.x = TRUE, sort = FALSE)
-  liens = liens[!is.na(liens$domaine_a) & !is.na(liens$domaine_b) & liens$domaine_a != liens$domaine_b, , drop = FALSE]
 
   if (nrow(liens)) {
     liens$a = pmin(liens$domaine_a, liens$domaine_b)

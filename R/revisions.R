@@ -146,11 +146,15 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   blocs = .lire_csv("revision", "blocs.csv")
   liens = .lire_csv("revision", "fiche_notions.csv")
   notions_ref = .lire_csv("documentation", "notions.csv")
+  liens_concepts = .lire_csv("revision", "fiche_concepts.csv")
+  concepts_ref = .lire_csv("mathematiques", "concepts.csv")
   blocs = blocs[blocs$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
   blocs = blocs[order(as.numeric(blocs$ordre)), , drop = FALSE]
   liens = liens[liens$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
   notions_liees = merge(liens, notions_ref, by = "notion_id", all.x = TRUE, sort = FALSE)
   notions_liees = notions_liees[order(notions_liees$ordre), , drop = FALSE]
+  liens_concepts = liens_concepts[liens_concepts$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
+  concepts_lies = merge(liens_concepts, concepts_ref, by = "concept_id", all.x = TRUE, sort = FALSE)
   structure(
     list(
       fiche_id = fiche$fiche_id[[1]],
@@ -161,7 +165,8 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
       titre = fiche$titre[[1]],
       description = fiche$description[[1]],
       blocs = blocs,
-      notions = notions_liees
+      notions = notions_liees,
+      concepts = concepts_lies
     ),
     class = c("eduschool_revision", "list")
   )
