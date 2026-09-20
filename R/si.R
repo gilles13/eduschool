@@ -54,6 +54,18 @@ inventaire_si = function() {
   x[!is.na(x) & nzchar(x)]
 }
 
+.colonnes_relation = function(x) {
+  .valeurs_non_vides(trimws(strsplit(x, ",", fixed = TRUE)[[1]]))
+}
+
+.cles_relation = function(x, colonnes, complets = FALSE) {
+  vide = Reduce(`|`, lapply(colonnes, function(z) is.na(x[[z]]) | !nzchar(x[[z]])))
+  if (isTRUE(complets)) x = x[!vide, colonnes, drop = FALSE]
+  else x = x[, colonnes, drop = FALSE]
+  if (!nrow(x)) return(character())
+  do.call(paste, c(x, sep = "\r"))
+}
+
 
 .voie_compatible = function(voie_serie, voie_niveau, voies) {
   if (is.na(voie_serie) || !nzchar(voie_serie) ||
@@ -274,9 +286,18 @@ controle_integrite_si = function(strict = FALSE, niveau = c("complet", "structur
     r = rels[i, , drop = FALSE]
     src = .lire_table_si(r$table_source[[1]])
     dst = .lire_table_si(r$table_cible[[1]])
-    vals = src[[r$colonne_source[[1]]]]
-    if (identical(r$nullable[[1]], "oui")) vals = .valeurs_non_vides(vals)
-    orphelins = setdiff(unique(vals), unique(dst[[r$colonne_cible[[1]]]]))
+    src_cols = .colonnes_relation(r$colonne_source[[1]])
+    dst_cols = .colonnes_relation(r$colonne_cible[[1]])
+    colonnes_ok = length(src_cols) == length(dst_cols) &&
+      all(src_cols %in% names(src)) && all(dst_cols %in% names(dst))
+    if (!colonnes_ok) {
+      add("cle_etrangere", r$table_source[[1]], r$relation_id[[1]], FALSE, 1L,
+          "colonnes de relation invalides ou d arites differentes")
+      next
+    }
+    vals = .cles_relation(src, src_cols, complets = identical(r$nullable[[1]], "oui"))
+    refs = .cles_relation(dst, dst_cols)
+    orphelins = setdiff(unique(vals), unique(refs))
     add("cle_etrangere", r$table_source[[1]], r$relation_id[[1]],
         !length(orphelins), length(orphelins), paste(head(orphelins, 8L), collapse = ", "))
   }
