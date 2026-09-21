@@ -9,11 +9,91 @@
 #' @return Un data.frame.
 #' @export
 familles_revision = function(niveau_id = NULL) {
-  familles = .lire_csv("revision", "familles.csv")
-  if (is.null(niveau_id)) return(familles)
-  fiches = .lire_csv("revision", "fiches.csv")
-  ids = unique(fiches$famille_id[fiches$niveau_id == niveau_id & nzchar(fiches$famille_id)])
-  familles[familles$famille_id %in% ids, , drop = FALSE]
+  fiches = fiches_revision(niveau_id = niveau_id, type = "THEMATIQUE")
+  fiches = fiches[nzchar(fiches$famille_id), c("famille_id", "famille"), drop = FALSE]
+  fiches = unique(fiches)
+  names(fiches)[names(fiches) == "famille"] = "libelle"
+  rownames(fiches) = NULL
+  fiches
+}
+
+.chemin_revisions = function() {
+  f = system.file("revision", package = "eduschool")
+  if (nzchar(f) && dir.exists(f)) return(f)
+  f = file.path("inst", "revision")
+  if (dir.exists(f)) return(normalizePath(f, winslash = "/", mustWork = TRUE))
+  stop("Repertoire des fiches de revision introuvable.", call. = FALSE)
+}
+
+.meta_revision_rmd = function(fichier) {
+  x = readLines(fichier, warn = FALSE, encoding = "UTF-8")
+  bornes = which(trimws(x) == "---")
+  if (length(bornes) < 2L || bornes[[1L]] != 1L) {
+    stop("Metadonnees de fiche invalides : ", basename(fichier), call. = FALSE)
+  }
+  lignes = x[seq.int(2L, bornes[[2L]] - 1L)]
+  pos = regexpr(":", lignes, fixed = TRUE)
+  lignes = lignes[pos > 0L]
+  pos = regexpr(":", lignes, fixed = TRUE)
+  cles = trimws(substr(lignes, 1L, pos - 1L))
+  valeurs = trimws(substr(lignes, pos + 1L, nchar(lignes)))
+  valeurs = sub('^"(.*)"$', "\\1", valeurs)
+  meta = as.list(stats::setNames(valeurs, cles))
+  requis = c("fiche_id", "niveau_id", "famille_id", "type", "titre", "description", "ordre", "famille")
+  absents = setdiff(requis, names(meta))
+  if (length(absents)) {
+    stop("Metadonnees manquantes dans ", basename(fichier), " : ", paste(absents, collapse = ", "), call. = FALSE)
+  }
+  meta$document = normalizePath(fichier, winslash = "/", mustWork = TRUE)
+  meta
+}
+
+.corps_revision_rmd = function(fichier) {
+  x = readLines(fichier, warn = FALSE, encoding = "UTF-8")
+  bornes = which(trimws(x) == "---")
+  if (length(bornes) >= 2L && bornes[[1L]] == 1L) x = x[-seq_len(bornes[[2L]])]
+  while (length(x) && !nzchar(trimws(x[[1L]]))) x = x[-1L]
+  x
+}
+
+.blocs_revision_rmd = function(fichier) {
+  x = .corps_revision_rmd(fichier)
+  debuts = grep("^## ", x)
+  if (!length(debuts)) {
+    return(data.frame(ordre = integer(), titre = character(), contenu = character(), formule = character(), illustration_id = character(), stringsAsFactors = FALSE))
+  }
+  fins = c(debuts[-1L] - 1L, length(x))
+  blocs = lapply(seq_along(debuts), function(i) {
+    titre = sub("^## +", "", x[[debuts[[i]]]])
+    if (identical(titre, "Pour aller plus loin")) return(NULL)
+    lignes = if (fins[[i]] > debuts[[i]]) x[seq.int(debuts[[i]] + 1L, fins[[i]])] else character()
+    formule = ""
+    dollars = which(trimws(lignes) == "$$")
+    if (length(dollars) >= 2L) {
+      formule = paste(lignes[seq.int(dollars[[1L]] + 1L, dollars[[2L]] - 1L)], collapse = "\n")
+      lignes = lignes[-seq.int(dollars[[1L]], dollars[[2L]])]
+    }
+    illustration = ""
+    hit = grep("\\.dessiner_revision\\(\\\"", lignes)
+    if (length(hit)) {
+      illustration = sub('.*\\.dessiner_revision\\("([^"]+)"\\).*', "\\1", lignes[[hit[[1L]]]])
+      chunk = unique(c(hit[[1L]] - 1L, hit[[1L]], hit[[1L]] + 1L))
+      chunk = chunk[chunk >= 1L & chunk <= length(lignes)]
+      lignes = lignes[-chunk]
+    }
+    contenu = trimws(paste(lignes, collapse = "\n"))
+    data.frame(
+      ordre = i * 10L,
+      titre = titre,
+      contenu = contenu,
+      formule = formule,
+      illustration_id = illustration,
+      stringsAsFactors = FALSE
+    )
+  })
+  blocs = Filter(Negate(is.null), blocs)
+  if (!length(blocs)) return(data.frame(ordre = integer(), titre = character(), contenu = character(), formule = character(), illustration_id = character(), stringsAsFactors = FALSE))
+  do.call(rbind, blocs)
 }
 
 #' Lister les fiches de revision disponibles
@@ -24,14 +104,24 @@ familles_revision = function(niveau_id = NULL) {
 #' @return Un data.frame de fiches disponibles.
 #' @export
 fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
-  fiches = .lire_csv("revision", "fiches.csv")
-  familles = .lire_csv("revision", "familles.csv")
-  fiches = merge(fiches, familles[, c("famille_id", "libelle")], by = "famille_id", all.x = TRUE, sort = FALSE)
-  names(fiches)[names(fiches) == "libelle"] = "famille"
+  fichiers = list.files(.chemin_revisions(), pattern = "\\.Rmd$", full.names = TRUE)
+  metas = lapply(fichiers, .meta_revision_rmd)
+  fiches = do.call(rbind, lapply(metas, function(x) {
+    data.frame(
+      fiche_id = x$fiche_id,
+      niveau_id = x$niveau_id,
+      famille_id = x$famille_id,
+      type = x$type,
+      titre = x$titre,
+      description = x$description,
+      ordre = as.integer(x$ordre),
+      famille = x$famille,
+      document = x$document,
+      stringsAsFactors = FALSE
+    )
+  }))
   if (!is.null(niveau_id)) fiches = fiches[fiches$niveau_id == niveau_id, , drop = FALSE]
-  if (!is.null(famille)) {
-    fiches = .filtrer_famille_revision(fiches, famille)
-  }
+  if (!is.null(famille)) fiches = .filtrer_famille_revision(fiches, famille)
   if (!is.null(type)) fiches = fiches[toupper(type) == fiches$type, , drop = FALSE]
   fiches = fiches[order(fiches$ordre), , drop = FALSE]
   rownames(fiches) = NULL
@@ -47,86 +137,47 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   cle = .normaliser_revision(famille)
   ids = .normaliser_revision(fiches$famille_id)
   libelles = .normaliser_revision(fiches$famille)
-
   exact = ids == cle | libelles == cle
   if (any(exact)) return(fiches[exact, , drop = FALSE])
-
   partiel = grepl(cle, libelles, fixed = TRUE)
   candidats = unique(fiches$famille_id[partiel])
-
   if (length(candidats) > 1L) {
-    stop(
-      "Theme de revision ambigu : ", famille, ". Choisissez parmi : ",
-      paste(unique(fiches$famille[partiel]), collapse = ", "), ".",
-      call. = FALSE
-    )
+    stop("Theme de revision ambigu : ", famille, ". Choisissez parmi : ", paste(unique(fiches$famille[partiel]), collapse = ", "), ".", call. = FALSE)
   }
-
   fiches[partiel, , drop = FALSE]
 }
 
 .selectionner_theme_revision_sans_niveau = function(theme) {
-  if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) {
-    stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
-  }
-
+  if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
   f = fiches_revision(type = "THEMATIQUE")
   cle = .normaliser_revision(theme)
   titres = .normaliser_revision(f$titre)
-
   exact = titres == cle
   candidats = if (any(exact)) exact else startsWith(titres, cle)
   if (!any(candidats)) candidats = grepl(cle, titres, fixed = TRUE)
-  if (!any(candidats)) {
-    familles = .normaliser_revision(f$famille_id) == cle |
-      .normaliser_revision(f$famille) == cle
-    candidats = familles
-  }
-
+  if (!any(candidats)) candidats = .normaliser_revision(f$famille_id) == cle | .normaliser_revision(f$famille) == cle
   f = f[candidats, , drop = FALSE]
-  if (!nrow(f)) {
-    stop("Theme de revision inconnu : ", theme, ".", call. = FALSE)
-  }
+  if (!nrow(f)) stop("Theme de revision inconnu : ", theme, ".", call. = FALSE)
   if (nrow(f) > 1L) {
     choix = paste0(f$titre, " (", f$niveau_id, ")")
-    stop(
-      "Theme de revision disponible a plusieurs niveaux : ", theme,
-      ". Choisissez parmi : ", paste(choix, collapse = ", "), ".",
-      call. = FALSE
-    )
+    stop("Theme de revision disponible a plusieurs niveaux : ", theme, ". Choisissez parmi : ", paste(choix, collapse = ", "), ".", call. = FALSE)
   }
   f
 }
 
 .selectionner_theme_revision = function(niveau_id, theme) {
-  if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) {
-    stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
-  }
-
+  if (length(theme) != 1L || is.na(theme) || !nzchar(trimws(theme))) stop("`theme` doit contenir un libelle non vide.", call. = FALSE)
   f = fiches_revision(niveau_id = niveau_id, type = "THEMATIQUE")
-  if (!nrow(f)) {
-    stop("Aucune fiche de revision disponible pour ce niveau.", call. = FALSE)
-  }
-
+  if (!nrow(f)) stop("Aucune fiche de revision disponible pour ce niveau.", call. = FALSE)
   cle = .normaliser_revision(theme)
   titres = .normaliser_revision(f$titre)
-
   exact = titres == cle
   if (sum(exact) == 1L) return(f[exact, , drop = FALSE])
-
   debut = startsWith(titres, cle)
   if (sum(debut) == 1L) return(f[debut, , drop = FALSE])
-
   partiel = grepl(cle, titres, fixed = TRUE)
   if (sum(partiel) == 1L) return(f[partiel, , drop = FALSE])
-  if (sum(partiel) > 1L) {
-    stop(
-      "Theme de revision ambigu : ", theme, ". Choisissez parmi : ",
-      paste(f$titre[partiel], collapse = ", "), ".",
-      call. = FALSE
-    )
-  }
-
+  if (sum(partiel) > 1L) stop("Theme de revision ambigu : ", theme, ". Choisissez parmi : ", paste(f$titre[partiel], collapse = ", "), ".", call. = FALSE)
   .selectionner_fiche_revision(niveau_id, theme, type = "THEMATIQUE")
 }
 
@@ -134,39 +185,27 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
   f = fiches_revision(niveau_id = niveau_id, type = type)
   if (!nrow(f)) stop("Aucune fiche de revision disponible pour ce niveau et ce type.", call. = FALSE)
   if (identical(toupper(type), "ESSENTIEL")) return(f[1L, , drop = FALSE])
-  if (is.null(famille) || length(famille) != 1L || is.na(famille) || !nzchar(famille)) {
-    stop("`famille` est obligatoire pour une fiche thematique.", call. = FALSE)
-  }
+  if (is.null(famille) || length(famille) != 1L || is.na(famille) || !nzchar(famille)) stop("`famille` est obligatoire pour une fiche thematique.", call. = FALSE)
   f = .filtrer_famille_revision(f, famille)
   if (!nrow(f)) stop("Famille de revision inconnue pour ce niveau : ", famille, call. = FALSE)
   f[1L, , drop = FALSE]
 }
 
 .construire_revision = function(fiche) {
-  blocs = .lire_csv("revision", "blocs.csv")
-  liens = .lire_csv("revision", "fiche_notions.csv")
-  notions_ref = .lire_csv("mathematiques", "notions.csv")
-  liens_concepts = .lire_csv("revision", "fiche_concepts.csv")
-  concepts_ref = .lire_csv("mathematiques", "concepts.csv")
-  blocs = blocs[blocs$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
-  blocs = blocs[order(as.numeric(blocs$ordre)), , drop = FALSE]
-  liens = liens[liens$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
-  notions_liees = merge(liens, notions_ref, by = "notion_id", all.x = TRUE, sort = FALSE)
-  notions_liees = notions_liees[order(notions_liees$ordre), , drop = FALSE]
-  liens_concepts = liens_concepts[liens_concepts$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]
-  concepts_lies = merge(liens_concepts, concepts_ref, by = "concept_id", all.x = TRUE, sort = FALSE)
+  blocs = .blocs_revision_rmd(fiche$document[[1L]])
   structure(
     list(
-      fiche_id = fiche$fiche_id[[1]],
-      niveau_id = fiche$niveau_id[[1]],
-      famille_id = fiche$famille_id[[1]],
-      famille = fiche$famille[[1]],
-      type = fiche$type[[1]],
-      titre = fiche$titre[[1]],
-      description = fiche$description[[1]],
+      fiche_id = fiche$fiche_id[[1L]],
+      niveau_id = fiche$niveau_id[[1L]],
+      famille_id = fiche$famille_id[[1L]],
+      famille = fiche$famille[[1L]],
+      type = fiche$type[[1L]],
+      titre = fiche$titre[[1L]],
+      description = fiche$description[[1L]],
+      document = fiche$document[[1L]],
       blocs = blocs,
-      notions = notions_liees,
-      concepts = concepts_lies
+      notions = data.frame(),
+      concepts = data.frame()
     ),
     class = c("eduschool_revision", "list")
   )

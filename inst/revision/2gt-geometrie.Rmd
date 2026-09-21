@@ -1,0 +1,51 @@
+---
+fiche_id: "REV_2GT_GEOMETRIE"
+niveau_id: "2GT"
+famille_id: "GEOMETRIE"
+type: "THEMATIQUE"
+titre: "Géométrie"
+description: "Vecteurs coordonnées et droites du plan."
+ordre: "40"
+famille: "Géométrie"
+---
+
+## Coordonnées d'un vecteur
+
+On soustrait les coordonnées du point de départ à celles du point d'arrivée.
+
+$$
+\overrightarrow{AB}=(x_B-x_A\,,\,y_B-y_A)
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("vecteurs")
+```
+
+## Milieu d'un segment
+
+Les coordonnées du milieu sont les moyennes des coordonnées des extrémités.
+
+$$
+M\left(\frac{x_A+x_B}{2}\,,\,\frac{y_A+y_B}{2}\right)
+$$
+
+## Équation de droite
+
+Une droite non verticale peut s'écrire y = mx + p. m est le coefficient directeur et p l'ordonnée à l'origine.
+
+$$
+m=\frac{y_B-y_A}{x_B-x_A} \quad (x_A\ne x_B)
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("droite_affine")
+```
+
+## Parallélisme
+
+Deux droites non verticales sont parallèles lorsqu'elles ont le même coefficient directeur. Avec des vecteurs on peut aussi tester la colinéarité.
+
+## Pour aller plus loin
+
+- Vecteurs et problèmes de géométrie
+- Droites du plan

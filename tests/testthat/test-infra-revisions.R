@@ -11,7 +11,7 @@ test_that("une revision thematique est structuree", {
   expect_equal(x$niveau_id, "2GT")
   expect_equal(x$famille_id, "GEOMETRIE")
   expect_true(nrow(x$blocs) >= 4L)
-  expect_true(nrow(x$notions) >= 1L)
+  expect_match(x$document, "\\.Rmd$")
 })
 
 test_that("l interface humaine choisit la fiche dediee aux ensembles", {
@@ -56,12 +56,9 @@ test_that("la revision fractions de 5e est disponible avant le quiz", {
   expect_identical(x$type, "THEMATIQUE")
   expect_identical(x$titre, "Fractions")
   expect_gte(nrow(x$blocs), 6L)
-  expect_true("MAT_NOMBRES_RATIONNELS" %in% x$notions$notion_id)
-  repere = x$blocs[x$blocs$bloc_id == "B_5E_FRAC_01B", , drop = FALSE]
-  expect_equal(nrow(repere), 1L)
-  expect_false(grepl("double flèche", repere$contenu, fixed = TRUE))
-  expect_match(repere$apres_formule, "La double flèche se lit « équivaut à »", fixed = TRUE)
-  expect_match(repere$apres_formule, "de gauche à droite, mais aussi de droite à gauche", fixed = TRUE)
+  texte = paste(x$blocs$contenu, collapse = "\n")
+  expect_match(texte, "La double flèche se lit « équivaut à »", fixed = TRUE)
+  expect_match(texte, "de gauche à droite, mais aussi de droite à gauche", fixed = TRUE)
 })
 
 
@@ -72,7 +69,6 @@ test_that("la revision identites remarquables de 2GT est disponible", {
   expect_identical(x$famille_id, "NOMBRES_ALGEBRE")
   expect_identical(x$titre, "Identit\u00e9s remarquables")
   expect_gte(nrow(x$blocs), 6L)
-  expect_true("MAT_CALC_LITT" %in% x$notions$notion_id)
   expect_true(all(c(
     "Les trois identit\u00e9s",
     "Reconna\u00eetre avant de calculer",
@@ -154,27 +150,18 @@ test_that("les nouveaux reperes mathematiques du college sont relies", {
   expect_true(nrow(relations) >= length(ids))
 })
 
-test_that("un bloc de revision peut commenter une formule apres son affichage", {
-  blocs = eduschool:::.lire_csv("revision", "blocs.csv")
-  expect_true("apres_formule" %in% names(blocs))
-
-  template = readLines(
-    system.file("templates", "fiche_revision.Rmd", package = "eduschool"),
-    warn = FALSE,
-    encoding = "UTF-8"
-  )
-  ligne_formule = grep("formule_math_markdown\\(b\\$formule", template)
-  ligne_apres = grep("b\\$apres_formule", template)
-  expect_length(ligne_formule, 1L)
-  expect_length(ligne_apres, 1L)
-  expect_gt(ligne_apres, ligne_formule)
+test_that("les fiches de revision sont de simples Rmd", {
+  chemin = eduschool:::.chemin_revisions()
+  expect_length(list.files(chemin, pattern = "\\.csv$"), 0L)
+  fichiers = list.files(chemin, pattern = "\\.Rmd$", full.names = TRUE)
+  expect_gte(length(fichiers), 15L)
+  expect_true(all(vapply(fichiers, file.exists, logical(1))))
 })
 
-test_that("les formules de revision utilisent un TeX canonique", {
-  blocs = eduschool:::.lire_csv("revision", "blocs.csv")
-  formules = blocs$formule[nzchar(blocs$formule)]
-  expect_false(any(grepl("\\\\\\\\[[:alpha:]]", formules, perl = TRUE)))
-  expect_false(any(grepl("\\$\\$", formules)))
+test_that("les formules de revision restent du TeX dans les Rmd", {
+  fichiers = list.files(eduschool:::.chemin_revisions(), pattern = "\\.Rmd$", full.names = TRUE)
+  texte = unlist(lapply(fichiers, readLines, warn = FALSE, encoding = "UTF-8"), use.names = FALSE)
+  expect_false(any(grepl("\\\\\\\\[[:alpha:]]", texte)))
 })
 
 test_that("le rendu mathematique utilise un bloc Markdown robuste", {
@@ -271,18 +258,12 @@ test_that("un niveau seul conserve l acces a la fiche essentielle", {
 
 test_that("la fiche des identites remarquables respire et explique le schema", {
   x = revision("identites_remarquables")
-  ids = c("B_IR_01", "B_IR_01B", "B_IR_02", "B_IR_03", "B_IR_04", "B_IR_05", "B_IR_06")
-  blocs = x$blocs[x$blocs$bloc_id %in% ids, , drop = FALSE]
-
-  expect_equal(nrow(blocs), length(ids))
-  expect_true(all(grepl("\\n\\n", blocs$contenu)))
-
-  preuve = blocs[blocs$bloc_id == "B_IR_01B", , drop = FALSE]
-  expect_match(preuve$contenu, "grand carré", fixed = TRUE)
-  expect_match(preuve$contenu, "quatre morceaux", fixed = TRUE)
-  expect_match(preuve$contenu, "même carré", fixed = TRUE)
-  expect_match(preuve$formule, "a^2+ab+ab+b^2", fixed = TRUE)
-  expect_match(preuve$apres_formule, "deux rectangles", fixed = TRUE)
+  texte = paste(eduschool:::.corps_revision_rmd(x$document), collapse = "\n")
+  expect_match(texte, "grand carré", fixed = TRUE)
+  expect_match(texte, "quatre morceaux", fixed = TRUE)
+  expect_match(texte, "même carré", fixed = TRUE)
+  expect_match(texte, "a^2+ab+ab+b^2", fixed = TRUE)
+  expect_match(texte, "deux rectangles", fixed = TRUE)
 })
 
 test_that("le schema de l identite carree peut etre dessine", {
@@ -296,10 +277,12 @@ test_that("le schema de l identite carree peut etre dessine", {
   expect_silent(eduschool:::.dessiner_revision("identite_carree"))
 })
 
-test_that("la fiche fractions est reliee a ses concepts mathematiques", {
+test_that("la fiche fractions porte directement son contenu", {
   x = revision("5E", "fractions")
-  expect_setequal(x$concepts$concept_id, c("MATC_FRACTION", "MATC_NOMBRE_RATIONNEL"))
-  expect_true(all(x$concepts$role == "CENTRAL"))
+  expect_match(x$document, "5e-fractions\\.Rmd$")
+  texte = paste(eduschool:::.corps_revision_rmd(x$document), collapse = "\n")
+  expect_match(texte, "Une fraction, plusieurs façons de la voir", fixed = TRUE)
+  expect_match(texte, "Prendre une fraction d’une quantité", fixed = TRUE)
 })
 
 test_that("revision construit un recapitulatif quand aucune fiche dediee n existe", {

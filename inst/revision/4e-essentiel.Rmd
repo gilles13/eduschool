@@ -1,0 +1,62 @@
+---
+fiche_id: "REV_4E_ESSENTIEL"
+niveau_id: "4E"
+famille_id: ""
+type: "ESSENTIEL"
+titre: "L'essentiel des mathématiques en 4e"
+description: "Puissances calcul littéral équations proportionnalité théorèmes géométriques statistiques probabilités et algorithmique."
+ordre: "90"
+famille: ""
+---
+
+## Puissances
+
+Une puissance est un produit répété. Par exemple 2^4 signifie 2 x 2 x 2 x 2. Pour des puissances de même base, multiplier revient à additionner les exposants et diviser revient à les soustraire. Les puissances de dix servent à écrire les très grands et très petits nombres.
+
+## Notation scientifique
+
+En notation scientifique un nombre s'écrit comme le produit d'un nombre dont la valeur absolue est comprise entre 1 et 10 et d'une puissance de dix. Exemple : 350 000 = 3,5 x 10^5.
+
+## Équations
+
+Résoudre une équation consiste à trouver les valeurs qui rendent l'égalité vraie. Effectuer la même opération sur les deux membres conserve l'égalité.
+
+$$
+ax+b=c \Rightarrow ax=c-b
+$$
+
+## Pythagore
+
+Dans un triangle rectangle le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés. La réciproque permet de démontrer qu'un triangle est rectangle.
+
+$$
+c^2=a^2+b^2
+$$
+
+## Thalès et proportionnalité
+
+Dans une configuration adaptée avec des droites parallèles les longueurs correspondantes sont proportionnelles. La réciproque utilise l'égalité de rapports pour établir un parallélisme.
+
+## Cosinus
+
+Dans un triangle rectangle le cosinus d'un angle aigu compare la longueur du côté adjacent à celle de l'hypoténuse. Il permet de calculer une longueur ou un angle. La formule n'est utile qu'après avoir identifié ces deux côtés sur la figure.
+
+## Grandeurs composées
+
+Une vitesse un débit ou une masse volumique relient plusieurs grandeurs. Toujours conserver les unités pendant le raisonnement et vérifier leur compatibilité avant le calcul.
+
+## Statistiques
+
+La médiane partage une série ordonnée en deux groupes d'effectifs aussi proches que possible. La moyenne et la médiane décrivent des aspects différents d'une série.
+
+## Probabilités
+
+L'événement contraire contient toutes les issues qui ne réalisent pas l'événement considéré. Les probabilités d'un événement et de son contraire ont pour somme 1. Exemple : si P(A) = 0,3 alors la probabilité de l'événement contraire est 0,7.
+
+## Agrandissement et réduction
+
+Multiplier toutes les longueurs par un même facteur k produit un agrandissement ou une réduction. Les aires sont alors multipliées par k² et les volumes par k³. Exemple : si les longueurs doublent, les aires sont multipliées par 4 et les volumes par 8.
+
+## Réflexes
+
+Un théorème s'utilise seulement lorsque ses hypothèses sont vérifiées. Écrire les données utiles puis la propriété utilisée avant de lancer le calcul.

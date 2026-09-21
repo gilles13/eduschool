@@ -34,7 +34,10 @@ if (knitr::is_html_output()) {
 `r r$description`
 
 ```{r blocs, results='asis'}
-for (i in seq_len(nrow(r$blocs))) {
+if (!is.null(r$document) && nzchar(r$document) && file.exists(r$document)) {
+  corps = eduschool:::.corps_revision_rmd(r$document)
+  cat(knitr::knit_child(text = corps, envir = knitr::knit_global(), quiet = TRUE), sep = "\n")
+} else for (i in seq_len(nrow(r$blocs))) {
   b = r$blocs[i, ]
   if (knitr::is_html_output()) {
     cat('<div class="eduschool-bloc" style="--edu-accent:', identite$couleur, '">\n', sep = "")
@@ -73,7 +76,7 @@ for (i in seq_len(nrow(r$blocs))) {
 ```
 
 ```{r notions, results='asis'}
-if (!compact && nrow(r$notions)) {
+if (is.null(r$document) && !compact && nrow(r$notions)) {
   cat("\n## Pour aller plus loin\n\n")
   for (x in unique(r$notions$libelle)) if (!is.na(x) && nzchar(x)) cat("- ", x, "\n", sep = "")
 }

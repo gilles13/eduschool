@@ -1,0 +1,53 @@
+---
+fiche_id: "REV_2GT_ENSEMBLES"
+niveau_id: "2GT"
+famille_id: "LOGIQUE"
+type: "THEMATIQUE"
+titre: "Ensembles de nombres"
+description: "Comprendre la carte N Z D Q R, classer un nombre et distinguer appartenance et inclusion."
+ordre: "5"
+famille: "Logique et ensembles"
+---
+
+## La carte NZDQR
+
+Les ensembles usuels de nombres sont emboîtés. Pour retenir leur ordre : **Nos Zèbres Dévorent Quelques Radis**. La phrase aide à mémoriser N Z D Q R ; le diagramme explique l’inclusion.
+
+$$
+\mathbb{N} \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q} \subset \mathbb{R}
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("ensembles_nombres")
+```
+
+## Que contient chaque ensemble ?
+
+N contient les naturels (0, 1, 2, ...). Z ajoute les entiers négatifs. D contient les nombres à écriture décimale finie. Q contient les quotients d’entiers a/b avec b non nul. R contient tous les nombres de la droite réelle, notamment les irrationnels comme $\sqrt{2}$ ou $\pi$.
+
+## Trouver le plus petit ensemble
+
+Commencer par simplifier le nombre, puis parcourir la chaîne de gauche à droite. On s’arrête au premier ensemble qui le contient. Exemple : 4/2 = 2, donc le plus petit ensemble est N, même si 2 appartient aussi à Z, D, Q et R.
+
+## Appartenance ou inclusion ?
+
+Le symbole $\in$ relie un élément à un ensemble ; le symbole $\subset$ relie deux ensembles. On écrit $3 \in \mathbb{N}$, mais $\mathbb{N} \subset \mathbb{Z}$. Confondre les deux revient à confondre un habitant avec une ville.
+
+$$
+3 \in \mathbb{N} \qquad \mathbb{N} \subset \mathbb{Z}
+$$
+
+## Quelques pièges utiles
+
+0 est naturel dans la convention scolaire usuelle en France. -0,5 est décimal. 2/3 est rationnel mais pas décimal. $\sqrt{2}$ est réel mais irrationnel. Une écriture peut être trompeuse : toujours regarder la valeur du nombre avant de le classer.
+
+## Et si on ouvrait une porte ?
+
+Les ensembles ne servent pas seulement à ranger des nombres. Ils permettent ensuite de parler d’intervalles, de domaines de définition, d’équations et de fonctions. Plus surprenant : entre deux réels distincts, on peut toujours trouver des rationnels et des irrationnels. La carte NZDQR n’est donc qu’un début.
+
+## Pour aller plus loin
+
+- Nombres entiers et décimaux
+- Nombres rationnels
+- Nombres réels
+- Vocabulaire ensembliste et logique

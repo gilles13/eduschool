@@ -24,10 +24,6 @@ niveaux;referentiels/niveaux.csv;referentiels;"Niveaux scolaires";niveau_id;nive
 niveaux_series;referentiels/niveaux_series.csv;referentiels;"Series disponibles par niveau";niveau_id,serie_id;niveau_id,serie_id
 series;referentiels/series.csv;referentiels;"Series du lycee";serie_id;serie_id,libelle,voie_id
 voies;referentiels/voies.csv;referentiels;"Voies de formation";voie_id;voie_id,libelle,voie_parent_id
-blocs;revision/blocs.csv;revision;"Blocs de contenu des fiches de revision";bloc_id;bloc_id,fiche_id,ordre,type,titre,contenu,formule,illustration_id
-familles;revision/familles.csv;revision;"Familles de connaissances pour les revisions";famille_id;famille_id,libelle,ordre
-fiche_notions;revision/fiche_notions.csv;revision;"Relations entre fiches de revision et notions";fiche_id,notion_id;fiche_id,notion_id,ordre
-fiches;revision/fiches.csv;revision;"Fiches de revision pedagogiques";fiche_id;fiche_id,niveau_id,famille_id,type,titre,description,ordre
 ressources;ressources/ressources.csv;ressources;"Ressources pedagogiques externes";ressource_id;ressource_id,nom,organisme,url,discipline_id,description,gratuit,compte_requis,langue,date_verification
 usages_ressources;ressources/usages_ressources.csv;ressources;"Referentiel des usages pedagogiques";usage_id;usage_id,libelle,description,ordre
 ressources_usages;ressources/ressources_usages.csv;ressources;"Relations entre ressources et usages";ressource_id,usage_id;ressource_id,usage_id
@@ -62,4 +58,3 @@ gabarits_exercices_questions;examens/gabarits_exercices_questions.csv;examens;"Q
 gabarits_exercices_ressources;examens/gabarits_exercices_ressources.csv;examens;"Ressources graphiques des exercices composes";gabarit_compose_id,ressource_id;gabarit_compose_id,ressource_id,type,moteur,position
 contextes_exercices;examens/contextes_exercices.csv;examens;"Contextes semantiques reutilisables pour diversifier les exercices";contexte_id;contexte_id,famille_contexte,libelle,objet,action,acteur_ou_dispositif,produit_ou_service,unite_principale,genre_objet,objet_avec_indefini,objet_avec_article,contenu,contenu_avec_article,genre_contenu,verbe_flux_infinitif,verbe_flux_present,objet_pluriel,produit_avec_article,unite_singulier,unite_pluriel,acteur_avec_indefini,acteur_avec_article,contenant_singulier,contenant_pluriel,verbe_action_infinitif,verbe_action_present,nom_action,statut
 gabarits_exercices_contextes;examens/gabarits_exercices_contextes.csv;examens;"Contextes compatibles avec les gabarits d exercices composes";gabarit_compose_id,contexte_id;gabarit_compose_id,contexte_id,poids,statut
-fiche_concepts;revision/fiche_concepts.csv;revision;"Concepts mathematiques travailles par les fiches de revision";fiche_id,concept_id;fiche_id,concept_id,role

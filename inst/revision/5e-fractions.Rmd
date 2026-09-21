@@ -1,0 +1,70 @@
+---
+fiche_id: "REV_5E_FRACTIONS"
+niveau_id: "5E"
+famille_id: "NOMBRES_ALGEBRE"
+type: "THEMATIQUE"
+titre: "Fractions"
+description: "Comprendre calculer et simplifier des fractions avant de passer aux exercices et aux quiz."
+ordre: "20"
+famille: "Nombres et algèbre"
+---
+
+## Une fraction, plusieurs façons de la voir
+
+3/4 peut représenter trois parts parmi quatre parts égales. C’est aussi un nombre que l’on peut placer sur une droite graduée, le quotient exact 3 ÷ 4, et, dans « les 3/4 de 20 », une façon d’agir sur une quantité : 20 × 3/4 = 15. Ce ne sont pas quatre recettes : c’est la même fraction regardée de plusieurs façons.
+
+$$
+\frac{a}{b}=a\div b \quad (b\ne0)
+$$
+
+Dans a/b, a est le numérateur et b le dénominateur : le dénominateur ne peut pas être nul. Une porte pour plus tard : 3/4 = 0,75 = 75 %. Une fraction est un nombre ; dans certaines situations, elle peut exprimer une proportion, que l’on peut aussi écrire sous forme décimale ou en pourcentage.
+
+## Faire et défaire
+
+Addition et soustraction se défont l’une l’autre. Multiplication et division aussi, lorsque la division est possible. Ces opérations inverses aident à comprendre les calculs sur les fractions plutôt qu’à apprendre seulement des recettes.
+
+$$
+a+b=c \Longleftrightarrow c-b=a \quad a\times b=c \Longleftrightarrow c\div b=a
+$$
+
+La double flèche se lit « équivaut à » : on peut passer de gauche à droite, mais aussi de droite à gauche.
+
+## Fractions équivalentes
+
+Multiplier ou diviser le numérateur et le dénominateur par un même nombre non nul ne change pas la valeur de la fraction. C’est le principe utilisé pour simplifier ou obtenir un dénominateur commun.
+
+$$
+\frac{a}{b}=\frac{a\times k}{b\times k} \quad (k\ne0)
+$$
+
+## Additionner et soustraire
+
+Avec le même dénominateur on additionne ou on soustrait les numérateurs et on garde le dénominateur. Sinon on commence par écrire les fractions avec un dénominateur commun.
+
+$$
+\frac{a}{c}+\frac{b}{c}=\frac{a+b}{c}
+$$
+
+## Multiplier des fractions
+
+On multiplie les numérateurs entre eux et les dénominateurs entre eux, puis on simplifie le résultat si possible.
+
+$$
+\frac{a}{b}\times\frac{c}{d}=\frac{ac}{bd}
+$$
+
+## Prendre une fraction d’une quantité
+
+Prendre a/b d’une quantité revient à diviser la quantité par b puis à multiplier par a lorsque la division tombe juste. On peut aussi multiplier par a puis diviser par b : les deux chemins conduisent au même résultat. Exemple : 3/4 de 20, c’est 20 ÷ 4 × 3 = 15.
+
+$$
+Q\times\frac{a}{b}=\frac{Q\times a}{b}
+$$
+
+## Réflexes avant le quiz
+
+Vérifier le dénominateur commun avant une addition ou une soustraction, simplifier le résultat quand c’est possible et garder une valeur exacte sous forme de fraction si aucun arrondi n’est demandé.
+
+## Pour aller plus loin
+
+- Nombres rationnels

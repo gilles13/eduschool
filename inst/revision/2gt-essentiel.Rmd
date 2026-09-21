@@ -1,0 +1,82 @@
+---
+fiche_id: "REV_2GT_ESSENTIEL"
+niveau_id: "2GT"
+famille_id: ""
+type: "ESSENTIEL"
+titre: "L'essentiel des mathématiques en seconde"
+description: "Formules méthodes et réflexes à conserver sur une fiche très synthétique."
+ordre: "100"
+famille: ""
+---
+
+## Calcul littéral
+
+Identités remarquables et équation du premier degré.
+
+$$
+(a+b)^2=a^2+2ab+b^2 \quad (a-b)^2=a^2-2ab+b^2 \quad (a-b)(a+b)=a^2-b^2 \quad ax+b=c \Rightarrow x=\frac{c-b}{a}
+$$
+
+## Vecteurs et milieu
+
+Coordonnées indispensables en géométrie repérée.
+
+$$
+\overrightarrow{AB}=(x_B-x_A\,,\,y_B-y_A) \quad M\left(\frac{x_A+x_B}{2}\,,\,\frac{y_A+y_B}{2}\right)
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("vecteurs")
+```
+
+## Droite affine
+
+Forme d'une droite non verticale et coefficient directeur.
+
+$$
+y=mx+p \quad m=\frac{y_B-y_A}{x_B-x_A}
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("droite_affine")
+```
+
+## Fonctions
+
+Image : calculer f(x). Antécédent : résoudre f(x)=y. Variations : lire la courbe de gauche à droite. Extremum : plus grande ou plus petite valeur prise.
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("courbe_variations")
+```
+
+## Pourcentages et évolutions
+
+Proportion puis coefficient multiplicateur.
+
+$$
+p=\frac{partie}{total} \quad V_f=V_i(1+t)
+$$
+
+## Statistiques
+
+Moyenne pondérée.
+
+$$
+\bar{x}=\frac{\sum n_i x_i}{\sum n_i}
+$$
+
+## Probabilités
+
+Complémentaire et équiprobabilité.
+
+$$
+P(\overline{A})=1-P(A) \quad P(A)=\frac{Card(A)}{Card(\Omega)}
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("arbre_proba")
+```
+
+## Réflexes
+
+Inéquation : inverser le sens après multiplication ou division par un négatif. Fraction : dénominateur commun pour additionner. Toujours vérifier unités signes et ordre de grandeur.

@@ -18,9 +18,7 @@ library(eduschool)
 Cette section rassemble des **fiches essentielles de mathématiques par classe**.
 Leur objectif est de rassembler les **formules, repères, méthodes et réflexes à maîtriser** dans un document synthétique et visuel, sans imposer une pagination artificielle. Des représentations graphiques pourront compléter les notions lorsqu’elles apportent un véritable gain pédagogique.
 
-Les fiches sont produites à partir du même référentiel que les fonctions R du
-package. Le site n'est donc qu'une vue de ces données, et non une seconde source
-à maintenir séparément.
+Une fiche est simplement un fichier **R Markdown**. Son texte, ses formules et ses éventuels graphiques vivent ensemble. R intervient lorsqu'il apporte quelque chose : calcul, donnée, graphique ou rendu. Il n'y a plus de tables CSV à assembler pour écrire une fiche.
 
 ## Accès par classe
 
@@ -53,9 +51,4 @@ produire_revision(r, "revision_6e", format = "html")
 produire_revision(r, "revision_6e", format = "pdf")
 ```
 
-À terme, cette infrastructure servira aussi de socle à une **API publique de
-composition** : un utilisateur R pourra partir d'un template simple pour créer
-ses propres fiches de révision, d'approfondissement ou d'exercices, tout en
-réutilisant les composants fournis par `eduschool`. L'objectif sera d'éviter de
-demander aux utilisateurs de dépendre directement de fonctions internes non
-documentées.
+Le principe est volontairement simple : **une fiche = un Rmd**. La charte eduschool s'occupe du rendu commun ; le document reste lisible et modifiable sans reconstruire un mini système d'information.

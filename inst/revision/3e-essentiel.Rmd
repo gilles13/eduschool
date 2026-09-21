@@ -1,0 +1,70 @@
+---
+fiche_id: "REV_3E_ESSENTIEL"
+niveau_id: "3E"
+famille_id: ""
+type: "ESSENTIEL"
+titre: "L'essentiel des mathématiques en 3e"
+description: "Calcul littéral fonctions trigonométrie géométrie statistiques probabilités et préparation au lycée."
+ordre: "90"
+famille: ""
+---
+
+## Calcul littéral
+
+Développer transforme un produit en somme ; factoriser fait l'inverse. Il faut d'abord reconnaître la structure de l'expression. Exemple : 3(x + 2) = 3x + 6, et 3x + 6 = 3(x + 2). La double distributivité prépare les transformations algébriques du lycée.
+
+## Équations-produits
+
+Un produit est nul lorsqu'au moins un de ses facteurs est nul. Factoriser peut donc transformer une équation difficile en plusieurs équations simples.
+
+$$
+AB=0 \Longleftrightarrow A=0 \text{ ou } B=0
+$$
+
+## Fonction linéaire
+
+Une fonction linéaire traduit une situation de proportionnalité. Son graphique est une droite passant par l'origine et son coefficient indique le facteur multiplicatif.
+
+$$
+f(x)=ax
+$$
+
+## Fonction affine
+
+Une fonction affine ajoute un décalage à une relation linéaire. Son graphique est une droite. Le coefficient a contrôle la pente et b l'ordonnée à l'origine.
+
+$$
+f(x)=ax+b
+$$
+
+## Évolutions et pourcentages
+
+Une hausse de t pour cent correspond à multiplier la valeur initiale par 1 + t/100 ; une baisse à multiplier par 1 - t/100. Exemple : une hausse de 20 % revient à multiplier par 1,20.
+
+## Thalès et triangles semblables
+
+La proportionnalité des longueurs relie Thalès triangles semblables agrandissements et homothéties. Identifier la configuration avant d'écrire les rapports.
+
+## Trigonométrie
+
+Dans un triangle rectangle sinus cosinus et tangente relient un angle aigu à des rapports de longueurs. Avant toute formule repérer l'hypoténuse puis les côtés adjacent et opposé à l'angle étudié. Choisir ensuite le rapport qui contient les grandeurs connues et recherchées.
+
+## Homothétie
+
+Une homothétie multiplie les longueurs par son rapport et conserve les angles. Elle donne un cadre géométrique aux agrandissements réductions et figures semblables.
+
+## Statistiques
+
+Moyenne médiane et étendue ne répondent pas à la même question. La moyenne indique un niveau moyen, la médiane une position centrale et l'étendue mesure l'écart entre la plus grande et la plus petite valeur.
+
+## Probabilités et simulation
+
+Construire l'univers des issues puis identifier les événements. La simulation permet d'observer des fréquences et de comparer un modèle théorique aux résultats expérimentaux.
+
+## Algorithmique
+
+Décomposer un problème en étapes utiliser variables conditions boucles et blocs réutilisables. Un programme est une manière précise d'exprimer un raisonnement exécutable.
+
+## Préparer le lycée
+
+Ne pas seulement mémoriser des formules : savoir reconnaître la structure d'un problème choisir l'outil justifier son usage et relier résultat numérique représentation graphique et expression algébrique.

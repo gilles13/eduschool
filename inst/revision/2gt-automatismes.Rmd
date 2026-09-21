@@ -1,0 +1,34 @@
+---
+fiche_id: "REV_2GT_AUTOMATISMES"
+niveau_id: "2GT"
+famille_id: "AUTOMATISMES"
+type: "THEMATIQUE"
+titre: "Automatismes"
+description: "Calculs et réflexes à mobiliser sans hésitation."
+ordre: "70"
+famille: "Automatismes"
+---
+
+## Calcul numérique
+
+Priorités opératoires signes relatifs fractions puissances simples racines carrées usuelles et calcul mental de pourcentages.
+
+## Calcul littéral
+
+Réduire développer factoriser une expression courte et substituer une valeur sans erreur de signe.
+
+## Équations
+
+Résoudre mentalement ou en quelques lignes une équation simple et contrôler la cohérence du résultat.
+
+## Fonctions
+
+Lire une image ou un antécédent sur un graphique reconnaître une droite affine et interpréter son coefficient directeur.
+
+## Pourcentages
+
+Passer rapidement entre proportion décimale pourcentage taux d'évolution et coefficient multiplicateur.
+
+## Géométrie repérée
+
+Calculer coordonnées d'un vecteur milieu coefficient directeur et reconnaître un parallélisme.

@@ -1,0 +1,48 @@
+---
+fiche_id: "REV_2GT_FONCTIONS"
+niveau_id: "2GT"
+famille_id: "FONCTIONS"
+type: "THEMATIQUE"
+titre: "Fonctions"
+description: "Images antécédents fonctions affines variations et extremums."
+ordre: "50"
+famille: "Fonctions"
+---
+
+## Image et antécédent
+
+Si y=f(x) alors y est l'image de x. Chercher un antécédent de y revient à résoudre f(x)=y.
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("courbe_fonction")
+```
+
+## Fonction affine
+
+Une fonction affine s'écrit f(x)=mx+p. Si p=0 elle est linéaire et représente une situation de proportionnalité.
+
+$$
+f(x)=mx+p
+$$
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("droite_affine")
+```
+
+## Variations
+
+Lire une courbe de gauche à droite. Une fonction est croissante lorsque ses images augmentent avec x et décroissante lorsqu'elles diminuent.
+
+```{r, echo=FALSE}
+eduschool:::.dessiner_revision("courbe_variations")
+```
+
+## Extremum
+
+Un maximum est une plus grande valeur prise par la fonction sur l'ensemble étudié. Un minimum est une plus petite valeur.
+
+## Pour aller plus loin
+
+- Notion de fonction
+- Représentation algébrique et graphique des fonctions
+- Variations et extrémums d’une fonction
