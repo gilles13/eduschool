@@ -25,18 +25,12 @@ navbar:
       menu:
         - text: À propos
           href: articles/a-propos.html
-        - text: Livre d'or
-          href: articles/livre-d-or.html
-        - text: Prise en main
-          href: articles/prise-en-main.html
         - text: Mathématiques par niveau
           href: articles/mathematiques-par-niveau.html
-        - text: Faire un pas de côté
-          href: articles/faire-un-pas-de-cote.html
         - text: Parcours scolaire
           href: articles/parcours-scolaires.html
-        - text: Sous le capot
-          href: articles/architecture-des-donnees.html
+        - text: Fiches découvertes
+          href: articles/fiches-decouvertes.html
         - text: Contribuer et partager
           href: articles/contribuer-et-partager.html
         - text: Tous les articles
@@ -52,10 +46,11 @@ articles:
       - prise-en-main
       - prendre-un-parent-par-la-main
 
-  - title: Faire un pas de côté
+  - title: Fiches découvertes
     desc: Une notion paraît évidente ? Regardons-la sous un autre angle.
     contents:
-      - faire-un-pas-de-cote
+      - fiches-decouvertes
+      - zero-est-ce-vraiment-rien
 
   - title: Mathématiques
     desc: Les principales portes d'entrée vers les ressources mathématiques.
