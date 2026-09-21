@@ -1,26 +1,42 @@
 # Exercices de mathématiques
 
-Les nouveaux exercices eduschool sont décrits avec des fichiers Markdown
-simples.
+Les banques d’exercices eduschool sont décrites avec des fichiers Markdown
+simples. Le Markdown formule ; R calcule et vérifie.
 
-Contrat minimal envisagé :
+Contrat minimal :
 
 ```markdown
 # NOTION : multiplication
 
-## TYPE : classique
+## TYPE : libre
 
 ### QUESTION 1
 
 Combien font %s multiplié par %s ?
-
-### QUESTION 2
-
-Quel est le produit de %s par %s ?
 ```
 
-Le Markdown ne contient **ni valeurs tirées, ni réponse calculée**. R fait les
-mathématiques et les vérifie.
+Le `TYPE` décrit la mécanique de réponse du futur parser, pas le thème
+pédagogique de la question :
 
-Ce contrat restera aussi petit que possible. Un nouveau header n'est ajouté que
-lorsqu'un besoin réel le rend nécessaire.
+- `booleen` : exactement deux propositions ;
+- `3_reponses` : exactement trois propositions ;
+- `libre` : un nombre variable de propositions ; la règle précise du parser sera définie plus tard ;
+- `mot_a_trou` : jeu de vocabulaire. La première et la dernière lettre restent visibles et chaque caractère caché est représenté par un `_` lisible et espacé. La longueur est donc un indice ;
+- `mot_masque` : jeu de vocabulaire. La première et la dernière lettre restent visibles, mais le milieu est remplacé par une seule barre de longueur visuelle fixe. La barre n’est pas proportionnelle au nombre de caractères cachés et le joueur doit en être averti.
+
+`mot_a_trou` et `mot_masque` servent à retrouver des mots mathématiques
+(`rayon`, `périmètre`, `distributivité`, etc.). Un nombre manquant, une fraction
+à compléter ou une suite à poursuivre n’est donc pas un `mot_a_trou`.
+
+Une banque n’invente pas un autre type. Lorsqu’une formulation historique ne
+peut pas être classée proprement, elle reste dans le carton de migration pour
+le polissage final au lieu de compliquer le contrat.
+
+Le Markdown ne contient ni réponse ni vérité calculée. R produit les valeurs,
+calcule la réponse et la vérifie. Pour les jeux de vocabulaire, R fournit le mot
+et appliquera la règle de masquage ; le Markdown ne stocke pas le mot masqué.
+
+Les fichiers `inst/exercices/textes_*.md` restent provisoirement la source du
+moteur historique pendant la transition. Ils sont un carton de déménagement,
+pas le format cible. Ils pourront disparaître lorsque les générateurs R liront
+directement ces banques.

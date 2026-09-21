@@ -230,3 +230,23 @@ test_that("chaque nouvelle famille dispose de plusieurs contextes", {
     expect_true(all(nzchar(x$contexte_id)))
   }
 })
+
+test_that("les banques Markdown d exercices ont un contrat minimal", {
+  chemin = eduschool_path("mathematiques", "exercices")
+  fichiers = list.files(chemin, pattern = "\\.md$", full.names = TRUE)
+  fichiers = fichiers[basename(fichiers) != "README.md"]
+
+  expect_equal(length(fichiers), 16L)
+
+  lignes = unlist(lapply(fichiers, readLines, warn = FALSE), use.names = FALSE)
+  expect_true(any(startsWith(lignes, "# NOTION : ")))
+  types = sub("^## TYPE : ", "", lignes[startsWith(lignes, "## TYPE : ")])
+  expect_true(length(types) > 0L)
+  expect_true(all(types %in% c(
+    "booleen", "3_reponses", "libre", "mot_a_trou", "mot_masque"
+  )))
+  expect_equal(sum(startsWith(lignes, "### QUESTION ")), 148L)
+  expect_true(any(types == "mot_a_trou"))
+  expect_true(any(types == "mot_masque"))
+  expect_false(any(grepl("^#{1,3} (REPONSE|RÉPONSE|CORRECTION)", lignes)))
+})
