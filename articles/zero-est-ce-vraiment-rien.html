@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Développement et contrôles • eduschool</title>
+<title>Le zéro : est-ce vraiment rien ? • eduschool</title>
 <!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Développement et contrôles">
+<meta property="og:title" content="Le zéro : est-ce vraiment rien ?">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -58,33 +58,73 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.png" class="logo" alt=""><h1>Développement et contrôles</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Le zéro : est-ce vraiment rien ?</h1>
             
       
 
-      <div class="d-none name"><code>developpement.Rmd</code></div>
+      <div class="d-none name"><code>zero-est-ce-vraiment-rien.Rmd</code></div>
     </div>
 
     
     
-<p>Le développement de <code>eduschool</code> suit une chaîne courte :
-chargement du code, tests, contrôle du package, régénération éventuelle
-des visuels puis construction du site pkgdown.</p>
-<div class="float">
-<img src="../reference/figures/developpement.svg" alt="Workflow de développement de eduschool"><div class="figcaption">Workflow de développement de eduschool</div>
+<p>Tu as zéro bonbon.</p>
+<p><span class="math display">0</span></p>
+<p>Rien. Terminé.</p>
+<p><strong>Vraiment ?</strong></p>
+<div class="section level2">
+<h2 id="zéro-peut-vouloir-dire-rien">Zéro peut vouloir dire « rien »<a class="anchor" aria-label="anchor" href="#z%C3%A9ro-peut-vouloir-dire-rien"></a>
+</h2>
+<p>Une boîte contenant zéro bille ne contient aucune bille. Mais sur une
+droite graduée :</p>
+<p><span class="math display">
+-3\quad -2\quad -1\quad \boxed{0}\quad 1\quad 2\quad 3
+</span></p>
+<p>le zéro est quelque part. Il devient une origine et une frontière
+entre nombres négatifs et positifs.</p>
+<p>Le rien vient de trouver une adresse.</p>
 </div>
-<p>Les contrôles détaillés du package sont résumés ci-dessous.</p>
-<div class="float">
-<img src="../reference/figures/tests_package.svg" alt="Chaîne de tests et de contrôles"><div class="figcaption">Chaîne de tests et de contrôles</div>
+<div class="section level2">
+<h2 id="zéro-peut-être-un-résultat">Zéro peut être un résultat<a class="anchor" aria-label="anchor" href="#z%C3%A9ro-peut-%C3%AAtre-un-r%C3%A9sultat"></a>
+</h2>
+<p><span class="math display">7-7=0</span></p>
+<p>Et dans :</p>
+<p><span class="math display">x+4=4</span></p>
+<p>zéro devient même une <strong>solution</strong> : <span class="math inline">x=0</span>.</p>
+<p>Pas mal pour « rien ».</p>
 </div>
-<p>Les SVG sont pré-générés et versionnés. Ils peuvent être reconstruits
-directement en R après modification des modèles graphiques avec :</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/generer_documentation_visuelle.html">generer_documentation_visuelle</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p>La génération est native et ne dépend ni de Mermaid, ni de Node.js,
-ni de npm. Les mêmes graphes internes servent aux sorties SVG et
-HTML.</p>
-  </main>
+<div class="section level2">
+<h2 id="et-diviser-par-zéro">Et diviser par zéro ?<a class="anchor" aria-label="anchor" href="#et-diviser-par-z%C3%A9ro"></a>
+</h2>
+<p><span class="math display">\frac{6}{2}=3</span></p>
+<p>car <span class="math inline">3\times2=6</span>.</p>
+<p>Pour <span class="math inline">6/0</span>, il faudrait trouver un
+nombre tel que :</p>
+<p><span class="math display">?\times0=6</span></p>
+<p>Impossible : n’importe quel nombre multiplié par zéro donne zéro.</p>
+<p><strong>Le zéro n’est décidément pas rien.</strong></p>
+</div>
+<div class="section level2">
+<h2 id="une-porte-entrouverte">Une porte entrouverte<a class="anchor" aria-label="anchor" href="#une-porte-entrouverte"></a>
+</h2>
+<p>Regarde :</p>
+<p><span class="math display">
+1,\quad \frac12,\quad \frac14,\quad \frac18,\quad \frac1{16},\ldots
+</span></p>
+<p>Ces nombres se rapprochent de zéro sans qu’aucun de ceux écrits ici
+ne soit égal à zéro.</p>
+<p>Une porte vient de s’entrouvrir vers une idée plus profonde :
+<strong>la limite</strong>.</p>
+<p>Pas besoin de la franchir aujourd’hui. On sait simplement qu’elle
+existe : <span class="math inline">\exists</span>.</p>
+<div class="section level3">
+<h3 id="le-challenge">Le challenge<a class="anchor" aria-label="anchor" href="#le-challenge"></a>
+</h3>
+<p>Zéro peut être une absence, une origine, un résultat, une solution,
+une frontière…</p>
+</div>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 

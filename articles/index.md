@@ -14,12 +14,14 @@ Premiers repères pour comprendre le projet et commencer à l’utiliser.
 - [Prendre un parent par la
   main](https://gilles13.github.io/eduschool/articles/prendre-un-parent-par-la-main.md):
 
-### Faire un pas de côté
+### Fiches découvertes
 
 Une notion paraît évidente ? Regardons-la sous un autre angle.
 
-- [Faire un pas de
-  côté](https://gilles13.github.io/eduschool/articles/faire-un-pas-de-cote.md):
+- [Fiches
+  découvertes](https://gilles13.github.io/eduschool/articles/fiches-decouvertes.md):
+- [Le zéro : est-ce vraiment rien
+  ?](https://gilles13.github.io/eduschool/articles/zero-est-ce-vraiment-rien.md):
 
 ### Mathématiques
 
