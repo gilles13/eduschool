@@ -8,7 +8,7 @@ enseignements_niveaux;enseignements/enseignements_niveaux.csv;enseignements;"Ens
 horaires;enseignements/horaires.csv;enseignements;"Grilles horaires par niveau, version et serie";horaire_id;horaire_id,niveau_id,enseignement_id,volume,unite,statut,source_id,version_id,serie_id,portee
 offres_enseignements;enseignements/offres_enseignements.csv;enseignements;"Offres d enseignements par niveau et serie";offre_id;offre_id,niveau_id,serie_id,enseignement_id,statut,version_id
 options;enseignements/options.csv;enseignements;"Options et volumes associes";option_id,niveau_id;option_id,niveau_id,enseignement_id,unite,volume,libelle,source_id
-modeles;exercices/modeles.csv;exercices;"Modeles d exercices";modele_id;modele_id,libelle,generateur,niveaux,difficulte_min,difficulte_max,statut
+modeles;exercices/modeles.csv;exercices;"Modeles d exercices";modele_id;modele_id,niveaux,difficulte_min,difficulte_max
 modeles_capacites;exercices/modeles_capacites.csv;exercices;"Relations entre modeles d exercices et capacites";modele_id,capacite_id;modele_id,capacite_id
 sources;metadata/sources.csv;metadata;"Sources officielles et institutionnelles";source_id;source_id,organisme,type,titre,reference,date_publication,url,date_consultation
 versions;metadata/versions.csv;metadata;"Versions temporelles des donnees";version_id;version_id,libelle,date_debut,date_fin

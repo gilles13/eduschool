@@ -1,127 +1,127 @@
-modele_id;libelle;generateur;niveaux;difficulte_min;difficulte_max;statut
-EQ4E_001;"Equation du premier degre - 4e";"equation_4e";"4E";1;3;prototype
-EQ1DEG_001;"Équation du premier degré";"equation_1degre";"2GT";1;3;prototype
-LITT_EXPR_001;"Calcul litteral - traduire";"expression_litterale";"5E";1;2;prototype
-LITT_REDUC_001;"Calcul litteral - reduire";"reduction_litterale";"5E";1;2;prototype
-LITT_DISTR_001;"Calcul litteral - distributivite";"distributivite";"5E";1;2;prototype
-FRAC_ADD_001;"Addition de fractions";"addition_fractions";"6E|5E";1;3;prototype
-PROP_001;"Proportionnalité - retour à l’unité";"proportion";"6E|5E";1;2;prototype
-PROP_RECON_001;"Proportionnalité - reconnaître";"proportion_reconnaitre";"6E|5E";1;2;prototype
-PROP_TABLE_001;"Proportionnalité - raisonner dans un tableau";"proportion_tableau";"6E|5E";1;2;prototype
-PROP_PIEGE_001;"Proportionnalité - repérer une fausse règle";"proportion_piege";"6E|5E";1;2;prototype
-PROP_TRANSF_001;"Proportionnalité - transférer en contexte";"proportion_transfert";"6E|5E";1;2;prototype
-FRAC_QTE_001;"Fraction d’une quantité";"fraction_quantite";"6E|5E";1;2;prototype
-FRAC_MULT_001;"Multiplication de fractions";"multiplication_fractions";"5E";1;2;prototype
-FRAC_DIV_001;"Division de fractions";"division_fractions";"5E";1;2;prototype
-PCT_001;"Pourcentage simple";"pourcentage";"6E|5E";1;2;prototype
-PYTH_001;"Théorème de Pythagore";"pythagore";"4E";1;3;prototype
-PYTH_IDENT_001;"Pythagore - hypoténuse et égalité";"pythagore_identifier";"4E";1;3;prototype
-PYTH_HYP_001;"Pythagore - calculer l’hypoténuse";"pythagore_hypotenuse";"4E";1;3;prototype
-PYTH_COTE_001;"Pythagore - calculer un côté";"pythagore_cote";"4E";1;3;prototype
-PYTH_DIAG_001;"Pythagore - problème de diagonale";"pythagore_diagonale";"4E";1;3;prototype
-PYTH_APPL_001;"Pythagore - choisir si le théorème s’applique";"pythagore_applicable";"4E";1;3;prototype
-ENS_R_MOT_001;"Ensembles - sens du mot réel";"ensembles_nombres";"2GT";1;1;prototype
-ENS_Z_001;"Ensembles - reconnaître un entier relatif";"ensembles_nombres";"2GT";1;1;prototype
-ENS_D_001;"Ensembles - reconnaître un décimal";"ensembles_nombres";"2GT";1;1;prototype
-ENS_Q_001;"Ensembles - reconnaître un rationnel";"ensembles_nombres";"2GT";1;1;prototype
-ENS_SYM_001;"Ensembles - appartenance et inclusion";"ensembles_nombres";"2GT";1;1;prototype
-ENS_N_ZERO_001;"Ensembles - classer zéro";"ensembles_nombres";"2GT";1;1;prototype
-ENS_FRAC_SIMPL_001;"Ensembles - simplifier avant de classer";"ensembles_nombres";"2GT";1;1;prototype
-ENS_D_NEG_001;"Ensembles - classer un décimal négatif";"ensembles_nombres";"2GT";1;1;prototype
-ENS_R_IRR_001;"Ensembles - reconnaître un irrationnel";"ensembles_nombres";"2GT";1;1;prototype
-ENS_INCLUSION_001;"Ensembles - raisonner par inclusion";"ensembles_nombres";"2GT";1;1;prototype
-FRAC_QUOT_001;"Fraction comme quotient";"fraction_quotient";"6E";1;2;prototype
-FRAC_DROITE_001;"Fraction sur une demi-droite graduee";"fraction_droite";"6E";1;2;prototype
-FRAC_EQUIV_001;"Fractions equivalentes";"fraction_equivalente";"6E";1;2;prototype
-FRAC_COMP_001;"Comparer des fractions";"fraction_comparer";"6E";1;2;prototype
-FRAC_ENCADR_001;"Encadrer une fraction";"fraction_encadrer";"6E";1;2;prototype
-FRAC_SUB_001;"Soustraction de fractions";"soustraction_fractions";"6E|5E";1;2;prototype
-FRAC_MANQ_001;"Fraction - terme manquant";"fraction_terme_manquant";"6E";1;2;prototype
-FRAC_MULT_ENT_001;"Fraction multipliee par un entier";"fraction_par_entier";"6E";1;2;prototype
-IR_RECON_001;"Identités remarquables - reconnaître";"identite_reconnaitre";"2GT";1;2;prototype
-IR_DEVEL_001;"Identités remarquables - développer";"identite_developper";"2GT";1;2;prototype
-IR_FACT_001;"Identités remarquables - factoriser";"identite_factoriser";"2GT";1;2;prototype
-IR_SIGNE_001;"Identités remarquables - signes";"identite_signe";"2GT";1;2;prototype
-IR_EQUIV_001;"Identités remarquables - équivalence";"identite_equivalence";"2GT";1;2;prototype
-DEC_ENCADR_001;"Encadrer un nombre décimal";"decimal_encadrer";"6E";1;2;prototype
-DEC_ARRONDI_001;"Arrondir un nombre décimal";"decimal_arrondir";"6E";1;2;prototype
-NUM_COMPARE_001;"Grands nombres - comparer";"num_compare";"6E";1;2;prototype
-NUM_DECOMP_001;"Numération - valeur de position";"num_decomp";"6E";1;2;prototype
-DEC_MULT_001;"Décimaux - multiplication";"dec_mult";"6E";1;2;prototype
-OP_CHOICE_001;"Opérations - choisir et calculer";"op_choice";"6E";1;2;prototype
-INCONNUE_001;"Nombre inconnu - opération inverse";"inconnue";"6E";1;2;prototype
-REG_SUITE_001;"Régularité - poursuivre une suite";"reg_suite";"6E";1;2;prototype
-PER_RECT_001;"Périmètre - rectangle";"per_rect";"6E";1;2;prototype
-AIRE_RECT_001;"Aire - rectangle";"aire_rect";"6E";1;2;prototype
-AIRE_CONV_001;"Aire - conversion";"aire_conv";"6E";1;2;prototype
-VOL_PAVE_001;"Volume - pavé droit";"vol_pave";"6E";1;2;prototype
-DUREE_CONV_001;"Durée - conversion";"duree_conv";"6E";1;2;prototype
-TRI_ANGLE_001;"Triangle - somme des angles";"tri_angle";"6E";1;2;prototype
-MED_EQUIDIST_001;"Médiatrice - équidistance";"med_equidist";"6E";1;2;prototype
-CERCLE_DIAM_001;"Cercle - rayon et diamètre";"cercle_diam";"6E";1;2;prototype
-SYM_AXE_001;"Symétrie axiale - coordonnée";"sym_axe";"6E";1;2;prototype
-DATA_FILTER_001;"Données - filtrer";"data_filter";"6E";1;2;prototype
-PROBA_SIMPLE_001;"Probabilité - équiprobabilité";"proba_simple";"6E";1;2;prototype
-FREQ_SIMPLE_001;"Fréquence - calcul simple";"freq_simple";"6E";1;2;prototype
-ECHELLE_001;"Échelle - longueur réelle";"echelle";"6E";1;2;prototype
-BOUCLE_001;"Algorithmique - répétition";"boucle";"6E";1;2;prototype
-C5_ITM_MAT_C4_01_01_01_001;Calculer et utiliser des produits et quotients - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_01_02_001;Priorités opératoires - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_02_01_001;Repérer des nombres relatifs - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_02_02_001;Additionner et soustraire des relatifs - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_02_03_001;Multiplier et diviser des relatifs - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_03_01_001;Fractions et nombres rationnels - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_04_01_001;Puissances entières - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_01_04_02_001;Puissances de dix - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_01_01_001;Coordonnées dans le plan - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_01_02_001;Repérage sur une droite graduée - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_02_01_001;Solides et représentations - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_02_02_001;Patrons et perspectives - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_03_01_001;Symétries - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_03_02_001;Translations et rotations - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_04_01_001;Relations entre angles - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_05_01_001;Construire et caractériser des triangles - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_05_02_001;Somme des angles - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_02_06_01_001;Reconnaître un parallélogramme - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_03_01_01_001;Lire des représentations statistiques - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_03_01_02_001;Indicateurs statistiques - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_03_02_01_001;Probabilité d’un événement - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_03_02_02_001;Expériences aléatoires - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_04_02_01_001;Notion de fonction - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_04_02_02_001;Images et antécédents - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_05_01_01_001;Variables et affectation - repère essentiel;college_reperes;5E;1;2;prototype
-C5_ITM_MAT_C4_05_01_02_001;Conditions et boucles - repère essentiel;college_reperes;5E;1;2;prototype
-C4_D_4E_ATT_NOMBRES_PUISS_001;Nombres, puissances et notation scientifique - repère essentiel;college_reperes;4E;1;2;prototype
-C4_TOLD_4E_ATT_RATIONNELS_001;Calcul avec les nombres rationnels - repère essentiel;college_reperes;4E;1;2;prototype
-C4_LD_4E_ATT_DIVISIBILITE_001;Divisibilité et nombres premiers - repère essentiel;college_reperes;4E;1;2;prototype
-C4_MATOLD_4E_ATT_LITTERAL_001;Calcul littéral - repère essentiel;college_reperes;4E;1;2;prototype
-C4_ITM_MATOLD_4E_ATT_STAT_001;Données et médiane - repère essentiel;college_reperes;4E;1;2;prototype
-C4_TM_MATOLD_4E_ATT_PROBA_001;Probabilités - repère essentiel;college_reperes;4E;1;2;prototype
-C4_TOLD_4E_ATT_PROPORTION_001;Proportionnalité - repère essentiel;college_reperes;4E;1;2;prototype
-C4_ATOLD_4E_ATT_FONCTIONS_001;Notion de fonction - repère essentiel;college_reperes;4E;1;2;prototype
-C4_ATOLD_4E_ATT_GRANDEURS_001;Volumes et grandeurs composées - repère essentiel;college_reperes;4E;1;2;prototype
-C4__MATOLD_4E_ATT_TRANSFO_001;Agrandissements et translations - repère essentiel;college_reperes;4E;1;2;prototype
-C4_M_MATOLD_4E_ATT_ESPACE_001;Repérage et solides dans l’espace - repère essentiel;college_reperes;4E;1;2;prototype
-C4_M_MATOLD_4E_ATT_THALES_001;Théorème de Thalès - repère essentiel;college_reperes;4E;1;2;prototype
-C4__MATOLD_4E_ATT_COSINUS_001;Cosinus dans le triangle rectangle - repère essentiel;college_reperes;4E;1;2;prototype
-C4_D_4E_ATT_DEMONSTRATION_001;Raisonnement géométrique - repère essentiel;college_reperes;4E;1;2;prototype
-C4_ITM_MATOLD_4E_ATT_ALGO_001;Algorithmique et programmation - repère essentiel;college_reperes;4E;1;2;prototype
-C3_TM_MATOLD_3E_ATT_PUISS_001;Puissances et notation scientifique - repère essentiel;college_reperes;3E;1;2;prototype
-C3_TOLD_3E_ATT_RATIONNELS_001;Nombres rationnels et racines carrées - repère essentiel;college_reperes;3E;1;2;prototype
-C3_LD_3E_ATT_DIVISIBILITE_001;Divisibilité et facteurs premiers - repère essentiel;college_reperes;3E;1;2;prototype
-C3_MATOLD_3E_ATT_LITTERAL_001;Calcul littéral avancé - repère essentiel;college_reperes;3E;1;2;prototype
-C3_ATOLD_3E_ATT_EQUATIONS_001;Équations et équations-produits - repère essentiel;college_reperes;3E;1;2;prototype
-C3_ITM_MATOLD_3E_ATT_STAT_001;Statistiques et histogrammes - repère essentiel;college_reperes;3E;1;2;prototype
-C3_TM_MATOLD_3E_ATT_PROBA_001;Probabilités et simulation - repère essentiel;college_reperes;3E;1;2;prototype
-C3_TOLD_3E_ATT_PROPORTION_001;Proportionnalité et évolution - repère essentiel;college_reperes;3E;1;2;prototype
-C3_ATOLD_3E_ATT_FONCTIONS_001;Fonctions - repère essentiel;college_reperes;3E;1;2;prototype
-C3_3E_ATT_LINEAIRE_AFFINE_001;Fonctions linéaires et affines - repère essentiel;college_reperes;3E;1;2;prototype
-C3_ATOLD_3E_ATT_GRANDEURS_001;Grandeurs composées et volumes - repère essentiel;college_reperes;3E;1;2;prototype
-C3_TOLD_3E_ATT_HOMOTHETIE_001;Homothétie - repère essentiel;college_reperes;3E;1;2;prototype
-C3_M_MATOLD_3E_ATT_ESPACE_001;Repérage sur la sphère et sections - repère essentiel;college_reperes;3E;1;2;prototype
-C3_M_MATOLD_3E_ATT_THALES_001;Thalès et triangles semblables - repère essentiel;college_reperes;3E;1;2;prototype
-C3_TM_MATOLD_3E_ATT_TRIGO_001;Trigonométrie dans le triangle rectangle - repère essentiel;college_reperes;3E;1;2;prototype
-C3__MATOLD_3E_ATT_TRANSFO_001;Rotations et homothéties - repère essentiel;college_reperes;3E;1;2;prototype
-C3_D_3E_ATT_DEMONSTRATION_001;Raisonnement et démonstration - repère essentiel;college_reperes;3E;1;2;prototype
-C3_ITM_MATOLD_3E_ATT_ALGO_001;Algorithmique et programmation avancée - repère essentiel;college_reperes;3E;1;2;prototype
-PROD_QUOT_5E_001;"Produits et quotients - calculer et utiliser";"produits_quotients_5e";"5E";1;2;prototype
+modele_id;niveaux;difficulte_min;difficulte_max
+EQ4E_001;4E;1;3
+EQ1DEG_001;2GT;1;3
+LITT_EXPR_001;5E;1;2
+LITT_REDUC_001;5E;1;2
+LITT_DISTR_001;5E;1;2
+FRAC_ADD_001;6E|5E;1;3
+PROP_001;6E|5E;1;2
+PROP_RECON_001;6E|5E;1;2
+PROP_TABLE_001;6E|5E;1;2
+PROP_PIEGE_001;6E|5E;1;2
+PROP_TRANSF_001;6E|5E;1;2
+FRAC_QTE_001;6E|5E;1;2
+FRAC_MULT_001;5E;1;2
+FRAC_DIV_001;5E;1;2
+PCT_001;6E|5E;1;2
+PYTH_001;4E;1;3
+PYTH_IDENT_001;4E;1;3
+PYTH_HYP_001;4E;1;3
+PYTH_COTE_001;4E;1;3
+PYTH_DIAG_001;4E;1;3
+PYTH_APPL_001;4E;1;3
+ENS_R_MOT_001;2GT;1;1
+ENS_Z_001;2GT;1;1
+ENS_D_001;2GT;1;1
+ENS_Q_001;2GT;1;1
+ENS_SYM_001;2GT;1;1
+ENS_N_ZERO_001;2GT;1;1
+ENS_FRAC_SIMPL_001;2GT;1;1
+ENS_D_NEG_001;2GT;1;1
+ENS_R_IRR_001;2GT;1;1
+ENS_INCLUSION_001;2GT;1;1
+FRAC_QUOT_001;6E;1;2
+FRAC_DROITE_001;6E;1;2
+FRAC_EQUIV_001;6E;1;2
+FRAC_COMP_001;6E;1;2
+FRAC_ENCADR_001;6E;1;2
+FRAC_SUB_001;6E|5E;1;2
+FRAC_MANQ_001;6E;1;2
+FRAC_MULT_ENT_001;6E;1;2
+IR_RECON_001;2GT;1;2
+IR_DEVEL_001;2GT;1;2
+IR_FACT_001;2GT;1;2
+IR_SIGNE_001;2GT;1;2
+IR_EQUIV_001;2GT;1;2
+DEC_ENCADR_001;6E;1;2
+DEC_ARRONDI_001;6E;1;2
+NUM_COMPARE_001;6E;1;2
+NUM_DECOMP_001;6E;1;2
+DEC_MULT_001;6E;1;2
+OP_CHOICE_001;6E;1;2
+INCONNUE_001;6E;1;2
+REG_SUITE_001;6E;1;2
+PER_RECT_001;6E;1;2
+AIRE_RECT_001;6E;1;2
+AIRE_CONV_001;6E;1;2
+VOL_PAVE_001;6E;1;2
+DUREE_CONV_001;6E;1;2
+TRI_ANGLE_001;6E;1;2
+MED_EQUIDIST_001;6E;1;2
+CERCLE_DIAM_001;6E;1;2
+SYM_AXE_001;6E;1;2
+DATA_FILTER_001;6E;1;2
+PROBA_SIMPLE_001;6E;1;2
+FREQ_SIMPLE_001;6E;1;2
+ECHELLE_001;6E;1;2
+BOUCLE_001;6E;1;2
+C5_ITM_MAT_C4_01_01_01_001;5E;1;2
+C5_ITM_MAT_C4_01_01_02_001;5E;1;2
+C5_ITM_MAT_C4_01_02_01_001;5E;1;2
+C5_ITM_MAT_C4_01_02_02_001;5E;1;2
+C5_ITM_MAT_C4_01_02_03_001;5E;1;2
+C5_ITM_MAT_C4_01_03_01_001;5E;1;2
+C5_ITM_MAT_C4_01_04_01_001;5E;1;2
+C5_ITM_MAT_C4_01_04_02_001;5E;1;2
+C5_ITM_MAT_C4_02_01_01_001;5E;1;2
+C5_ITM_MAT_C4_02_01_02_001;5E;1;2
+C5_ITM_MAT_C4_02_02_01_001;5E;1;2
+C5_ITM_MAT_C4_02_02_02_001;5E;1;2
+C5_ITM_MAT_C4_02_03_01_001;5E;1;2
+C5_ITM_MAT_C4_02_03_02_001;5E;1;2
+C5_ITM_MAT_C4_02_04_01_001;5E;1;2
+C5_ITM_MAT_C4_02_05_01_001;5E;1;2
+C5_ITM_MAT_C4_02_05_02_001;5E;1;2
+C5_ITM_MAT_C4_02_06_01_001;5E;1;2
+C5_ITM_MAT_C4_03_01_01_001;5E;1;2
+C5_ITM_MAT_C4_03_01_02_001;5E;1;2
+C5_ITM_MAT_C4_03_02_01_001;5E;1;2
+C5_ITM_MAT_C4_03_02_02_001;5E;1;2
+C5_ITM_MAT_C4_04_02_01_001;5E;1;2
+C5_ITM_MAT_C4_04_02_02_001;5E;1;2
+C5_ITM_MAT_C4_05_01_01_001;5E;1;2
+C5_ITM_MAT_C4_05_01_02_001;5E;1;2
+C4_D_4E_ATT_NOMBRES_PUISS_001;4E;1;2
+C4_TOLD_4E_ATT_RATIONNELS_001;4E;1;2
+C4_LD_4E_ATT_DIVISIBILITE_001;4E;1;2
+C4_MATOLD_4E_ATT_LITTERAL_001;4E;1;2
+C4_ITM_MATOLD_4E_ATT_STAT_001;4E;1;2
+C4_TM_MATOLD_4E_ATT_PROBA_001;4E;1;2
+C4_TOLD_4E_ATT_PROPORTION_001;4E;1;2
+C4_ATOLD_4E_ATT_FONCTIONS_001;4E;1;2
+C4_ATOLD_4E_ATT_GRANDEURS_001;4E;1;2
+C4__MATOLD_4E_ATT_TRANSFO_001;4E;1;2
+C4_M_MATOLD_4E_ATT_ESPACE_001;4E;1;2
+C4_M_MATOLD_4E_ATT_THALES_001;4E;1;2
+C4__MATOLD_4E_ATT_COSINUS_001;4E;1;2
+C4_D_4E_ATT_DEMONSTRATION_001;4E;1;2
+C4_ITM_MATOLD_4E_ATT_ALGO_001;4E;1;2
+C3_TM_MATOLD_3E_ATT_PUISS_001;3E;1;2
+C3_TOLD_3E_ATT_RATIONNELS_001;3E;1;2
+C3_LD_3E_ATT_DIVISIBILITE_001;3E;1;2
+C3_MATOLD_3E_ATT_LITTERAL_001;3E;1;2
+C3_ATOLD_3E_ATT_EQUATIONS_001;3E;1;2
+C3_ITM_MATOLD_3E_ATT_STAT_001;3E;1;2
+C3_TM_MATOLD_3E_ATT_PROBA_001;3E;1;2
+C3_TOLD_3E_ATT_PROPORTION_001;3E;1;2
+C3_ATOLD_3E_ATT_FONCTIONS_001;3E;1;2
+C3_3E_ATT_LINEAIRE_AFFINE_001;3E;1;2
+C3_ATOLD_3E_ATT_GRANDEURS_001;3E;1;2
+C3_TOLD_3E_ATT_HOMOTHETIE_001;3E;1;2
+C3_M_MATOLD_3E_ATT_ESPACE_001;3E;1;2
+C3_M_MATOLD_3E_ATT_THALES_001;3E;1;2
+C3_TM_MATOLD_3E_ATT_TRIGO_001;3E;1;2
+C3__MATOLD_3E_ATT_TRANSFO_001;3E;1;2
+C3_D_3E_ATT_DEMONSTRATION_001;3E;1;2
+C3_ITM_MATOLD_3E_ATT_ALGO_001;3E;1;2
+PROD_QUOT_5E_001;5E;1;2
