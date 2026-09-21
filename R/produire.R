@@ -84,7 +84,7 @@ revision = function(niveau = NULL, theme = NULL) {
   if (!length(candidats)) return(character())
   if (length(candidats) > 1L) return(character())
 
-  liens = .lire_csv("documentation", "notions_capacites.csv")
+  liens = .lire_csv("mathematiques", "notions_capacites.csv")
   items = .lire_csv("programmes", "programme_items.csv")
   ids = liens$capacite_id[liens$notion_id == docs$notion_id[candidats]]
   ids = items$item_id[items$item_id %in% ids]

@@ -102,8 +102,8 @@ notions_niveau = function(niveau_id, version_id = "2026_2027") {
     discipline_id = disciplines()$discipline_id,
     version_id = version_id
   )
-  nc = .lire_csv("documentation", "notions_capacites.csv")
-  n = .lire_csv("documentation", "notions.csv")
+  nc = .lire_csv("mathematiques", "notions_capacites.csv")
+  n = .lire_csv("mathematiques", "notions.csv")
   items = .lire_csv("programmes", "programme_items.csv")
   pe = .lire_csv("programmes", "programme_enseignements.csv")
 

@@ -145,7 +145,7 @@ fiches_revision = function(niveau_id = NULL, famille = NULL, type = NULL) {
 .construire_revision = function(fiche) {
   blocs = .lire_csv("revision", "blocs.csv")
   liens = .lire_csv("revision", "fiche_notions.csv")
-  notions_ref = .lire_csv("documentation", "notions.csv")
+  notions_ref = .lire_csv("mathematiques", "notions.csv")
   liens_concepts = .lire_csv("revision", "fiche_concepts.csv")
   concepts_ref = .lire_csv("mathematiques", "concepts.csv")
   blocs = blocs[blocs$fiche_id == fiche$fiche_id[[1]], , drop = FALSE]

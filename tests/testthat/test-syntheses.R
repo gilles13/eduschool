@@ -1,13 +1,14 @@
-test_that("les syntheses de sixieme sont transdisciplinaires", {
+test_that("les syntheses de sixieme combinent themes transdisciplinaires et notions mathematiques", {
   h = horaires_niveau("6E")
   t = themes_niveau("6E")
   n = notions_niveau("6E")
   r = resume_niveau("6E")
   expect_gte(nrow(h), 8)
   expect_true(all(c("FRA", "MAT", "HG", "SCI", "LVE", "EMC", "EPS", "ARTS", "MUS") %in% unique(t$discipline_id)))
-  expect_true(all(c("FRA", "MAT", "HG", "SCI", "LVE", "EMC", "EPS", "ARTS", "MUS") %in% unique(n$discipline_id)))
+  expect_true(nrow(n) > 0L)
+  expect_true(all(n$discipline_id == "MAT"))
   expect_true(all(nzchar(r$themes)))
-  expect_true(all(nzchar(r$notions)))
+  expect_true(all(nzchar(r$notions[r$enseignement == "Mathématiques"])))
 })
 
 test_that("la proportionnalite de sixieme a des prerequis", {
@@ -33,7 +34,7 @@ test_that("les synthèses couvrent tout le collège", {
     x = resume_niveau(niveau)
     expect_gt(nrow(x), 0L)
     expect_true(all(nzchar(x$themes)))
-    expect_true(all(nzchar(x$notions)))
+    expect_true(all(nzchar(x$notions[x$enseignement == "Mathématiques"])))
   }
 })
 
@@ -56,7 +57,7 @@ test_that("les langues vivantes alimentent LVE1 et LVE2", {
     lve = x[x$enseignement %in% c("Langue vivante 1", "Langue vivante 2"), , drop = FALSE]
     expect_equal(nrow(lve), 2L)
     expect_true(all(nzchar(lve$themes)))
-    expect_true(all(nzchar(lve$notions)))
+    expect_true(all(lve$notions == ""))
   }
 })
 
@@ -67,7 +68,9 @@ test_that("genere_resume produit une vue courte de sixieme", {
   expect_true(all(nzchar(x$matiere)))
   expect_true(all(nzchar(x$horaire)))
   expect_true(all(nzchar(x$themes)))
-  expect_true(all(nzchar(x$notions)))
+  maths = x[x$matiere == "Mathématiques", , drop = FALSE]
+  expect_equal(nrow(maths), 1L)
+  expect_true(nzchar(maths$notions))
 })
 
 test_that("genere_resume filtre les mathematiques", {

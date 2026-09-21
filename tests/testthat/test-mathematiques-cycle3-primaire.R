@@ -19,7 +19,7 @@ test_that("le programme C3 suit son calendrier officiel au cours moyen", {
 test_that("les fractions sont raccordees de CM1 a la 6e", {
   items = eduschool:::.lire_csv("programmes", "programme_items.csv")
   liens = eduschool:::.lire_csv("mathematiques", "concepts_items.csv")
-  notions = eduschool:::.lire_csv("documentation", "notions_capacites.csv")
+  notions = eduschool:::.lire_csv("mathematiques", "notions_capacites.csv")
 
   primaire = items[
     items$programme_id == "PRG_MAT_C3_2025" &

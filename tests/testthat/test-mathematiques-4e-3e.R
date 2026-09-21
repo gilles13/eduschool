@@ -41,7 +41,7 @@ test_that("4e et 3e disposent de méthodes, formules, erreurs et exercices", {
 test_that("tous les attendus de 4e sont couverts par au moins une notion documentaire", {
   items = eduschool:::.lire_csv("programmes", "programme_items.csv")
   applications = eduschool:::.lire_csv("programmes", "programme_items_applications.csv")
-  liens = eduschool:::.lire_csv("documentation", "notions_capacites.csv")
+  liens = eduschool:::.lire_csv("mathematiques", "notions_capacites.csv")
 
   cible = merge(items, applications, by = c("item_id", "programme_id"))
   cible = cible[
@@ -55,7 +55,7 @@ test_that("tous les attendus de 4e sont couverts par au moins une notion documen
 })
 
 test_that("les notions fines attendues en 4e sont documentees", {
-  notions = eduschool:::.lire_csv("documentation", "notions.csv")
+  notions = eduschool:::.lire_csv("mathematiques", "notions.csv")
   attendues = c(
     "MAT_NOMBRES_PREMIERS",
     "MAT_GRANDEURS_COMPOSEES",
@@ -71,7 +71,7 @@ test_that("les notions fines attendues en 4e sont documentees", {
 test_that("tous les attendus de 3e sont couverts par au moins une notion documentaire", {
   items = eduschool:::.lire_csv("programmes", "programme_items.csv")
   applications = eduschool:::.lire_csv("programmes", "programme_items_applications.csv")
-  liens = eduschool:::.lire_csv("documentation", "notions_capacites.csv")
+  liens = eduschool:::.lire_csv("mathematiques", "notions_capacites.csv")
 
   cible = merge(items, applications, by = c("item_id", "programme_id"))
   cible = cible[
@@ -85,7 +85,7 @@ test_that("tous les attendus de 3e sont couverts par au moins une notion documen
 })
 
 test_that("les notions fines attendues en 3e sont documentees", {
-  notions = eduschool:::.lire_csv("documentation", "notions.csv")
+  notions = eduschool:::.lire_csv("mathematiques", "notions.csv")
   attendues = c(
     "MAT_LITT_DOUBLE_DISTRIBUTIVITE",
     "MAT_EQUATION_PRODUIT",

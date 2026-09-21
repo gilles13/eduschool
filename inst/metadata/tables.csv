@@ -1,8 +1,8 @@
 table;fichier;domaine;description;cle_primaire;colonnes
 couverture;documentation/couverture.csv;documentation;"Couverture documentaire par niveau";niveau;niveau,themes,capacites,capacites_documentees,couverture_capacites
-notions;documentation/notions.csv;documentation;"Notions pedagogiques documentees";notion_id;notion_id,discipline_id,libelle,description,document
-notions_capacites;documentation/notions_capacites.csv;documentation;"Relations entre notions et capacites";notion_id,capacite_id;notion_id,capacite_id,role
-prerequis;documentation/prerequis.csv;documentation;"Prerequis entre notions";notion_id,prerequis_id;notion_id,prerequis_id,importance,commentaire
+notions;mathematiques/notions.csv;mathematiques;"Notions pedagogiques documentees";notion_id;notion_id,discipline_id,libelle,description,document
+notions_capacites;mathematiques/notions_capacites.csv;mathematiques;"Relations entre notions et capacites";notion_id,capacite_id;notion_id,capacite_id,role
+prerequis;mathematiques/prerequis.csv;mathematiques;"Prerequis entre notions";notion_id,prerequis_id;notion_id,prerequis_id,importance,commentaire
 sources_documentaires;documentation/sources_documentaires.csv;documentation;"Sources documentaires pedagogiques";source_doc_id;source_doc_id,libelle,url,type_source
 enseignements_niveaux;enseignements/enseignements_niveaux.csv;enseignements;"Enseignements disponibles par niveau";niveau_id,enseignement_id;niveau_id,enseignement_id,statut
 horaires;enseignements/horaires.csv;enseignements;"Grilles horaires par niveau, version et serie";horaire_id;horaire_id,niveau_id,enseignement_id,volume,unite,statut,source_id,version_id,serie_id,portee

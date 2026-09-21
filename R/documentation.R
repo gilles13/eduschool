@@ -1,5 +1,5 @@
 .notions_documentation = function() {
-  x = .lire_csv("documentation", "notions.csv")
+  x = .lire_csv("mathematiques", "notions.csv")
   x = x[x$discipline_id == "MAT", , drop = FALSE]
   rownames(x) = NULL
   x
@@ -22,7 +22,7 @@ notions = function() {
 #' @param capacite_id Identifiant(s) de capacité.
 #' @export
 notions_capacite = function(capacite_id) {
-  nc = .lire_csv("documentation", "notions_capacites.csv")
+  nc = .lire_csv("mathematiques", "notions_capacites.csv")
   n = .notions_documentation()
   x = nc[nc$capacite_id %in% capacite_id, , drop = FALSE]
   merge(x, n, by = "notion_id", all.x = TRUE, sort = FALSE)
@@ -33,7 +33,7 @@ notions_capacite = function(capacite_id) {
 #' @param recursif Inclure tous les prérequis transitifs.
 #' @export
 prerequis_notion = function(notion_id, recursif = FALSE) {
-  p = .lire_csv("documentation", "prerequis.csv")
+  p = .lire_csv("mathematiques", "prerequis.csv")
   n = .notions_documentation()
   if (!isTRUE(recursif)) ids = unique(p$prerequis_id[p$notion_id %in% notion_id]) else {
     vus = character(); front = unique(notion_id)
@@ -61,7 +61,7 @@ prerequis_capacite = function(capacite_id, recursif = FALSE) {
 .chemin_rappel = function(notion_id) {
   n = .notions_documentation(); i = match(notion_id, n$notion_id)
   if (is.na(i)) stop("Notion inconnue : ", notion_id, call. = FALSE)
-  eduschool_path("documentation", n$document[[i]])
+  eduschool_path("mathematiques", n$document[[i]])
 }
 
 #' Lire le rappel pédagogique d'une notion

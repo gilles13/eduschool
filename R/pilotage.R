@@ -133,8 +133,8 @@ couverture_programme = function(
   names(caps)[names(caps) == "item_id"] = "capacite_id"
   names(caps)[names(caps) == "libelle"] = "capacite"
 
-  notions_tbl = .lire_csv("documentation", "notions.csv")
-  notions_capacites = .lire_csv("documentation", "notions_capacites.csv")
+  notions_tbl = .lire_csv("mathematiques", "notions.csv")
+  notions_capacites = .lire_csv("mathematiques", "notions_capacites.csv")
   modeles = .lire_csv("exercices", "modeles.csv")
   modeles_capacites = .lire_csv("exercices", "modeles_capacites.csv")
 
@@ -354,8 +354,8 @@ todolist = function(
 auditer_modeles = function(niveau = NULL, graines = 1:5) {
   modeles = .lire_csv("exercices", "modeles.csv")
   liens = .lire_csv("exercices", "modeles_capacites.csv")
-  notions_capacites = .lire_csv("documentation", "notions_capacites.csv")
-  notions = .lire_csv("documentation", "notions.csv")
+  notions_capacites = .lire_csv("mathematiques", "notions_capacites.csv")
+  notions = .lire_csv("mathematiques", "notions.csv")
 
   if (!is.null(niveau)) {
     ok = vapply(strsplit(modeles$niveaux, "\\|"), function(x) niveau %in% x, logical(1))
