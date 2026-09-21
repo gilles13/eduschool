@@ -74,7 +74,7 @@ les ressources UTF-8 appropriées de `inst/`.
 
 Cela concerne en particulier les énoncés, réponses, corrections,
 feedbacks, rappels et libellés des exercices. Lorsqu'une famille
-d'exercices possède déjà le mécanisme `textes_*.csv`, l'utiliser plutôt
+d'exercices possède des banques Markdown `textes_*.md`, les utiliser plutôt
 que coder ces textes dans le fichier R.
 
 Avant d'écrire une chaîne française dans `R/`, demander :
@@ -118,7 +118,7 @@ et non :
 
 `modéliser → relier → abstraire → généraliser → peut-être utiliser`
 
-Un fichier `textes_<sujet>.csv` imparfait mais utilisé vaut mieux qu'une
+Un fichier `textes_<sujet>.md` imparfait mais utilisé vaut mieux qu'une
 architecture éditoriale parfaite qui empêche d'expérimenter.
 
 ### Alimenter le mini-SI

@@ -9,19 +9,31 @@ lire_catalogue_exercices = function() {
 }
 
 .textes_exercice = function(famille, modele_id) {
-  fichier = paste0("textes_", famille, ".csv")
-  x = .lire_csv("exercices", fichier)
-  x = x[x$modele_id == modele_id, , drop = FALSE]
+  fichier = paste0("textes_", famille, ".md")
+  chemin = eduschool_path("exercices", fichier)
+  lignes = readLines(chemin, warn = FALSE, encoding = "UTF-8")
 
-  if (!nrow(x)) {
+  prefixe = paste0("## ", modele_id, " / ")
+  debut = which(startsWith(lignes, prefixe))
+  if (!length(debut)) {
     stop("Textes d'exercice introuvables : ", modele_id, call. = FALSE)
   }
 
-  if (anyDuplicated(x$texte_id)) {
+  lire_texte = function(i) {
+    fin = which(seq_along(lignes) > i & startsWith(lignes, "## "))
+    fin = if (length(fin)) fin[[1L]] - 1L else length(lignes)
+    texte = lignes[seq.int(i + 1L, fin)]
+    while (length(texte) && !nzchar(texte[[1L]])) texte = texte[-1L]
+    while (length(texte) && !nzchar(texte[[length(texte)]])) texte = texte[-length(texte)]
+    paste(texte, collapse = "\n")
+  }
+
+  ids = substring(lignes[debut], nchar(prefixe) + 1L)
+  if (anyDuplicated(ids)) {
     stop("Identifiants de textes dupliques : ", modele_id, call. = FALSE)
   }
 
-  stats::setNames(x$texte, x$texte_id)
+  stats::setNames(vapply(debut, lire_texte, character(1)), ids)
 }
 
 selectionner_modeles = function(niveau_id = NULL, capacite_id = NULL) {
