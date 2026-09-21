@@ -63,3 +63,17 @@ test_that("chercher_notions tolere accents et ponctuation sans regex", {
   expect_true(nrow(chercher_notions("fraction quantite")) > 0L)
   expect_error(chercher_notions(""), "fragment non vide", fixed = TRUE)
 })
+
+test_that("les documents de notion ont une structure minimale", {
+  n = eduschool:::.lire_csv("mathematiques", "notions.csv")
+  fichiers = vapply(
+    n$document,
+    function(document) eduschool::eduschool_path("mathematiques", document),
+    character(1)
+  )
+  textes = lapply(fichiers, readLines, warn = FALSE, encoding = "UTF-8")
+
+  expect_true(all(vapply(textes, function(x) length(x) > 0L && grepl("^# ", x[1]), logical(1))))
+  expect_true(all(vapply(textes, function(x) any(grepl("^\\*\\*Niveau :\\*\\* ", x)), logical(1))))
+  expect_true(all(vapply(textes, function(x) any(x == "## Définition"), logical(1))))
+})

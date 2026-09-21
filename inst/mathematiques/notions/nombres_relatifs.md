@@ -1,5 +1,9 @@
 # Nombres relatifs
 
+**Niveau :** 5E
+
+## Définition
+
 Les nombres relatifs permettent de représenter des valeurs de part et d'autre de zéro. Un nombre positif est supérieur à zéro ; un nombre négatif est inférieur à zéro.
 
 ## Comparer

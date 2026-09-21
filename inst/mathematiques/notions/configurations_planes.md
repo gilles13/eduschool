@@ -1,5 +1,11 @@
 # Configurations planes
 
+**Niveau :** 6E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Configurations planes.
+
 ## Idée centrale
 
 Dans une figure plane, l'objectif n'est pas de mesurer « à l'œil » mais d'identifier une **configuration** et d'utiliser la propriété adaptée.

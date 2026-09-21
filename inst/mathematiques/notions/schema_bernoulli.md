@@ -1,5 +1,11 @@
 # Succession d'épreuves indépendantes et schéma de Bernoulli
 
+**Niveau :** TG
+
+## Définition
+
+Épreuves indépendantes, schéma de Bernoulli et loi binomiale.
+
 ## Idée centrale
 
 Un schéma de Bernoulli répète de façon indépendante une même épreuve à deux issues. Le nombre de succès suit alors une loi binomiale.

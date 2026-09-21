@@ -1,5 +1,11 @@
 # Multiples et diviseurs
 
+**Niveau :** 4E, 3E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Multiples et diviseurs.
+
 ## Idée centrale
 
 Pour deux entiers naturels \(a\) et \(b\), dire que **\(a\) est un multiple de \(b\)** signifie qu'il existe un entier \(k\) tel que

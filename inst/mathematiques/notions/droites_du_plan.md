@@ -1,5 +1,11 @@
 # Droites du plan
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Droites du plan.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Droites du plan**.

@@ -1,5 +1,11 @@
 # Information chiffrée et statistique descriptive
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Information chiffrée et statistique descriptive.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Information chiffrée et statistique descriptive**.

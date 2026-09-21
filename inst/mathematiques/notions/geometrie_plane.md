@@ -1,5 +1,11 @@
 # Géométrie plane
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Géométrie plane.
+
 ## Idée centrale
 
 La géométrie plane combine des propriétés de figures, des longueurs, des angles et des raisonnements logiques. Une figure est un support au raisonnement : elle ne remplace jamais les hypothèses.

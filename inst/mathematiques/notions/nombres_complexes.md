@@ -1,5 +1,11 @@
 # Nombres complexes
 
+**Niveau :** TG
+
+## Définition
+
+Calcul algébrique, formes trigonométrique et exponentielle, géométrie complexe et équations polynomiales.
+
 ## Idée centrale
 Les nombres complexes prolongent les nombres réels et permettent de traiter ensemble calcul algébrique, trigonométrie et géométrie plane.
 

@@ -1,5 +1,11 @@
 # Suites numériques
 
+**Niveau :** TG
+
+## Définition
+
+Variations, bornes, convergence, limites et raisonnement par récurrence pour les suites.
+
 ## Idée centrale
 
 En terminale, l'étude des suites associe comportement global (variation, bornes) et comportement asymptotique (limite). Les raisonnements par récurrence et les comparaisons sont des outils essentiels.

@@ -1,5 +1,11 @@
 # Algèbre et géométrie
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Algèbre et géométrie.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Algèbre et géométrie**.

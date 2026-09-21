@@ -1,5 +1,11 @@
 # Fonctions
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Fonctions.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonctions**.

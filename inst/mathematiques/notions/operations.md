@@ -1,5 +1,9 @@
 # Opérations et priorités de calcul
 
+**Niveau :** 5E
+
+## Définition
+
 Les quatre opérations usuelles sont l'addition, la soustraction, la multiplication et la division. Le choix de l'opération dépend du **sens du problème**, pas seulement des nombres présents dans l'énoncé.
 
 ## Vocabulaire

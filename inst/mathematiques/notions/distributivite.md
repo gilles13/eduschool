@@ -1,5 +1,9 @@
 # Distributivité
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
 La distributivité permet de transformer une expression sans changer sa valeur.
 
 `k(a + b) = ka + kb`

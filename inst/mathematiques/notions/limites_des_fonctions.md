@@ -1,5 +1,11 @@
 # Limites des fonctions
 
+**Niveau :** TG
+
+## Définition
+
+Limites en un point ou à l’infini, opérations, formes indéterminées et asymptotes.
+
 ## Idée centrale
 
 La limite décrit le comportement d'une fonction lorsque la variable s'approche d'une valeur ou devient très grande en valeur absolue. Elle permet notamment d'étudier les asymptotes et le comportement aux bornes d'un domaine.

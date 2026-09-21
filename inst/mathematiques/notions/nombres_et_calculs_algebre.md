@@ -1,5 +1,11 @@
 # Nombres et calculs, algèbre
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Nombres et calculs, algèbre.
+
 ## Idée centrale
 
 Au collège, les calculs numériques et le calcul littéral doivent progressivement fonctionner ensemble. Une lettre peut représenter un nombre inconnu, variable ou général.

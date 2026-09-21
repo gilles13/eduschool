@@ -1,5 +1,11 @@
 # Variables aléatoires discrètes finies
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Variables aléatoires discrètes finies.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Variables aléatoires discrètes finies**.

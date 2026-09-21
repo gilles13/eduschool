@@ -1,5 +1,11 @@
 # Liste indicative de thèmes
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Liste indicative de thèmes.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Liste indicative de thèmes**.

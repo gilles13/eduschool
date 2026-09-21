@@ -1,5 +1,11 @@
 # Lois à densité
 
+**Niveau :** TG
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Lois à densité.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Lois à densité**.

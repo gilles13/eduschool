@@ -1,5 +1,11 @@
 # Géométrie repérée
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Géométrie repérée.
+
 ## Repère du plan
 
 Dans un repère, un point \(A\) est décrit par ses coordonnées :

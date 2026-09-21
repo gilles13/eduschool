@@ -1,5 +1,11 @@
 # Variations et courbes représentatives des fonctions
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Variations et courbes représentatives des fonctions.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Variations et courbes représentatives des fonctions**.

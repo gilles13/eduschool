@@ -1,5 +1,9 @@
 # Calculer une fraction d'une quantité
 
+**Niveau :** CM1, CM2, 6E, 5E
+
+## Définition
+
 Prendre $a/b$ d'une quantité $Q$ revient à calculer $Q \times a/b$.
 
 ## Méthode

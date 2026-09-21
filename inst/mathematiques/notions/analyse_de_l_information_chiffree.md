@@ -1,5 +1,11 @@
 # Analyse de l’information chiffrée
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Analyse de l’information chiffrée.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Analyse de l’information chiffrée**.

@@ -1,5 +1,11 @@
 # Modèle associé à une expérience aléatoire à plusieurs épreuves indépendantes
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Modèle associé à une expérience aléatoire à plusieurs épreuves indépendantes.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Modèle associé à une expérience aléatoire à plusieurs épreuves indépendantes**.

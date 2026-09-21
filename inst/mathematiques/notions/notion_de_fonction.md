@@ -1,5 +1,9 @@
 # Notion de fonction
 
+**Niveau :** 4E, 2GT
+
+## Définition
+
 Une fonction associe à chaque nombre admissible $x$ un unique nombre, appelé **image de $x$**.
 
 On peut noter :

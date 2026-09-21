@@ -1,5 +1,9 @@
 # Angles
 
+**Niveau :** 5E
+
+## Définition
+
 Un angle est formé par deux demi-droites de même origine. Sa mesure s'exprime généralement en degrés.
 
 ## Repères

@@ -1,5 +1,11 @@
 # Nombres réels
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Nombres réels.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Nombres réels**.

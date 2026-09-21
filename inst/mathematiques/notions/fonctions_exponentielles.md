@@ -1,5 +1,11 @@
 # Fonctions exponentielles
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Fonctions exponentielles.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonctions exponentielles**.

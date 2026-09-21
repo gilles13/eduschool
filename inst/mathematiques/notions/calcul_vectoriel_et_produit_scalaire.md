@@ -1,5 +1,11 @@
 # Calcul vectoriel et produit scalaire
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Calcul vectoriel et produit scalaire.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Calcul vectoriel et produit scalaire**.

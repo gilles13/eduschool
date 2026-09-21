@@ -1,5 +1,9 @@
 # Nombres entiers et décimaux
 
+**Niveau :** 6E
+
+## Définition
+
 Les nombres entiers et décimaux servent à compter, mesurer, comparer et repérer. En écriture décimale, la **position de chaque chiffre** détermine sa valeur.
 
 ## À connaître

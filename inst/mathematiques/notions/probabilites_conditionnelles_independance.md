@@ -1,5 +1,11 @@
 # Probabilités conditionnelles : indépendance
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Probabilités conditionnelles : indépendance.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Probabilités conditionnelles : indépendance**.

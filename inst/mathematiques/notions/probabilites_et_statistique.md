@@ -1,5 +1,11 @@
 # Probabilités et statistique
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Probabilités et statistique.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Probabilités et statistique**.

@@ -1,5 +1,9 @@
 # Fonctions linéaires et affines
 
+**Niveau :** 3E
+
+## Définition
+
 Une fonction linéaire modélise une situation de proportionnalité et s'écrit sous la forme `f(x) = ax`.
 
 Une fonction affine s'écrit sous la forme `f(x) = ax + b`.

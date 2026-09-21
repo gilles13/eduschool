@@ -1,5 +1,11 @@
 # Fonctions sinus et cosinus
 
+**Niveau :** TG
+
+## Définition
+
+Fonctions trigonométriques, périodicité, dérivation et variations.
+
 ## Idée centrale
 
 Sinus et cosinus décrivent des phénomènes périodiques. Leur étude combine cercle trigonométrique, dérivation, variations et résolution d'équations.

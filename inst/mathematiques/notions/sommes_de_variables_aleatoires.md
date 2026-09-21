@@ -1,5 +1,11 @@
 # Sommes de variables aléatoires
 
+**Niveau :** TG
+
+## Définition
+
+Sommes de variables aléatoires, linéarité de l’espérance et variance sous indépendance.
+
 ## Idée centrale
 
 Une somme de variables aléatoires modélise un total : gain cumulé, nombre total d'événements ou mesure agrégée. L'espérance est additive, sans condition d'indépendance ; les variances s'additionnent pour des variables indépendantes.

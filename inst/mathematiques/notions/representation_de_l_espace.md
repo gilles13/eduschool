@@ -1,5 +1,11 @@
 # Représentation de l’espace
 
+**Niveau :** 5E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Représentation de l’espace.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Représentation de l’espace**.

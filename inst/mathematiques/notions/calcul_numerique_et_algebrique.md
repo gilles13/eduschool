@@ -1,5 +1,11 @@
 # Calcul numérique et algébrique
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Calcul numérique et algébrique.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Calcul numérique et algébrique**.

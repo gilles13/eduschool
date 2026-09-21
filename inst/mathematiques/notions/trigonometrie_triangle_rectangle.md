@@ -1,5 +1,9 @@
 # Trigonométrie dans le triangle rectangle
 
+**Niveau :** 3E
+
+## Définition
+
 Dans un triangle rectangle, cosinus, sinus et tangente relient un angle aigu aux longueurs des côtés.
 
 Le choix de la relation dépend des côtés connus et de la grandeur recherchée.

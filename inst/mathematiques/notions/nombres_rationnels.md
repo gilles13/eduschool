@@ -1,5 +1,9 @@
 # Nombres rationnels
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
 Un nombre rationnel est un nombre qui peut s'écrire sous la forme $a/b$, où $a$ et $b$ sont des entiers et $b \neq 0$.
 
 ## À connaître

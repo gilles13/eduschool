@@ -1,5 +1,11 @@
 # Représentations paramétriques et équations cartésiennes
 
+**Niveau :** TG
+
+## Définition
+
+Représentations paramétriques des droites, équations cartésiennes des plans et intersections.
+
 ## Idée centrale
 
 Une représentation paramétrique décrit les points d'une droite à partir d'un point et d'une direction. Une équation cartésienne de plan décrit les points dont les coordonnées satisfont une relation linéaire.

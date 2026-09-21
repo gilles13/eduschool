@@ -1,5 +1,11 @@
 # Équations, fonctions polynômes du second degré
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Équations, fonctions polynômes du second degré.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Équations, fonctions polynômes du second degré**.

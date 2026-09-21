@@ -1,5 +1,11 @@
 # Trigonométrie
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Trigonométrie.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Trigonométrie**.

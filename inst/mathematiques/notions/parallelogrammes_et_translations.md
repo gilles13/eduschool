@@ -1,5 +1,11 @@
 # Parallélogrammes et translations
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Parallélogrammes et translations.
+
 ## Parallélogramme
 
 Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles.

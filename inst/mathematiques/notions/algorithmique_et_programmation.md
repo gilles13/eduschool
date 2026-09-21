@@ -1,5 +1,9 @@
 # Algorithmique et programmation
 
+**Niveau :** 5E, 4E, 3E, TG
+
+## Définition
+
 Un algorithme est une suite finie et ordonnée d'instructions permettant d'obtenir un résultat ou de réaliser une tâche.
 
 ## Instructions et séquences

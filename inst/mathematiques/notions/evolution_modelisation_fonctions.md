@@ -1,5 +1,11 @@
 # Phénomènes d’évolution, modélisation par des fonctions
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Phénomènes d’évolution, modélisation par des fonctions.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Phénomènes d’évolution, modélisation par des fonctions**.

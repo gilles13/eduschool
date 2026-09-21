@@ -1,5 +1,9 @@
 # Équation-produit
 
+**Niveau :** 3E
+
+## Définition
+
 Une équation-produit est une équation dans laquelle un produit est égal à zéro.
 
 Un produit est nul si et seulement si au moins un de ses facteurs est nul.

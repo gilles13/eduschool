@@ -1,5 +1,11 @@
 # Calcul intégral
 
+**Niveau :** TG
+
+## Définition
+
+Intégrale, primitives, propriétés, aires et valeur moyenne.
+
 ## Idée centrale
 
 L'intégrale $\int_a^b f(x)\,dx$ mesure une accumulation orientée. Pour une fonction continue, elle se calcule à l'aide d'une primitive et permet notamment de déterminer des aires et des valeurs moyennes.

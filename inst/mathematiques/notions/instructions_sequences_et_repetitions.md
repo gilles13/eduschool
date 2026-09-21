@@ -1,5 +1,11 @@
 # Instructions, séquences et répétitions
 
+**Niveau :** 6E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Instructions, séquences et répétitions.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Instructions, séquences et répétitions**.

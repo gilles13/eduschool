@@ -1,5 +1,11 @@
 # Arithmétique
 
+**Niveau :** 2GT, TG
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Arithmétique.
+
 ## Idée centrale
 
 L'arithmétique étudie les propriétés des nombres entiers : divisibilité, nombres premiers, décomposition en facteurs premiers, diviseurs communs et multiples communs.

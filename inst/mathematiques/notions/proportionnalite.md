@@ -1,5 +1,9 @@
 # Proportionnalité
 
+**Niveau :** 6E, 5E, 4E, 3E
+
+## Définition
+
 Deux grandeurs sont proportionnelles lorsqu'on passe de l'une à l'autre en multipliant toujours par un même nombre : le **coefficient de proportionnalité**.
 
 ## Reconnaître une situation proportionnelle

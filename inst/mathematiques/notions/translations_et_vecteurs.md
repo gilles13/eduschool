@@ -1,5 +1,11 @@
 # Translations et vecteurs
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Translations et vecteurs.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Translations et vecteurs**.

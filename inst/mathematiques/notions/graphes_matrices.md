@@ -1,5 +1,11 @@
 # Graphes et matrices
 
+**Niveau :** TG
+
+## Définition
+
+Graphes, matrices d’adjacence, calcul matriciel, systèmes linéaires et modélisation discrète.
+
 ## Idée centrale
 Un graphe représente des relations entre objets ; une matrice permet de coder ces relations et de calculer efficacement sur le modèle.
 

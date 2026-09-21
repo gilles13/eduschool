@@ -1,5 +1,9 @@
 # Réduire une expression littérale
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
 Réduire une expression consiste à regrouper les termes de même nature.
 
 - `3x + 2x = 5x`.

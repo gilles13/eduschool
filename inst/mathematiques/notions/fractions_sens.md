@@ -1,5 +1,9 @@
 # Fractions : sens et représentations
 
+**Niveau :** CM1, CM2, 6E, 5E
+
+## Définition
+
 Une fraction $a/b$, avec $b \neq 0$, désigne un **nombre**. Elle peut représenter un partage, le quotient de $a$ par $b$, une position sur une droite graduée ou un opérateur appliqué à une quantité.
 
 ## À savoir

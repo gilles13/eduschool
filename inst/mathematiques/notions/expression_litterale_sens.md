@@ -1,5 +1,9 @@
 # Comprendre une expression littérale
 
+**Niveau :** 5E, 4E
+
+## Définition
+
 Une lettre peut représenter un nombre dont la valeur est connue, inconnue ou variable selon le contexte.
 
 - `3x` signifie `3 × x`.

@@ -1,5 +1,11 @@
 # Vision dans l’espace
 
+**Niveau :** 6E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Vision dans l’espace.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Vision dans l’espace**.

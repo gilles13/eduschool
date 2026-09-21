@@ -1,5 +1,9 @@
 # Nombres premiers et décomposition
 
+**Niveau :** 4E, 3E
+
+## Définition
+
 Un nombre premier est un entier supérieur ou égal à 2 qui possède exactement deux diviseurs positifs : 1 et lui-même.
 
 Décomposer un entier en facteurs premiers consiste à l'écrire comme un produit de nombres premiers.

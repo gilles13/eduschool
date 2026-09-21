@@ -1,5 +1,9 @@
 # Horaires et durées
 
+**Niveau :** 6E
+
+## Définition
+
 Un horaire indique un instant ; une durée mesure le temps écoulé entre deux instants. Les calculs de durées ne suivent pas un système décimal : **1 h = 60 min** et **1 min = 60 s**.
 
 ## Calculer une durée

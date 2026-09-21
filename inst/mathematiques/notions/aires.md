@@ -1,5 +1,9 @@
 # Aires
 
+**Niveau :** 6E
+
+## Définition
+
 L'aire mesure la surface occupée par une figure plane. Elle s'exprime avec une unité **au carré** : cm², m², km², etc.
 
 ## Formules usuelles

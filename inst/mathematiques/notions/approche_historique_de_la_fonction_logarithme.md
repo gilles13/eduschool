@@ -1,5 +1,11 @@
 # Approche historique de la fonction logarithme
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Approche historique de la fonction logarithme.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Approche historique de la fonction logarithme**.

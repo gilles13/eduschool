@@ -1,5 +1,11 @@
 # Modèles définis par une fonction d’une variable
 
+**Niveau :** TG
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Modèles définis par une fonction d’une variable.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Modèles définis par une fonction d’une variable**.

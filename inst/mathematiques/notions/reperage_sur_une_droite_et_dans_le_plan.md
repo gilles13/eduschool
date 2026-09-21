@@ -1,5 +1,9 @@
 # Repérage sur une droite et dans le plan
 
+**Niveau :** 5E
+
+## Définition
+
 Repérer un point consiste à associer sa position à un ou plusieurs nombres.
 
 ## Sur une droite graduée

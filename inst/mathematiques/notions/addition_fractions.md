@@ -1,5 +1,9 @@
 # Additionner et soustraire des fractions
 
+**Niveau :** CM1, CM2, 6E, 5E
+
+## Définition
+
 On ne peut additionner directement les numérateurs que lorsque les fractions ont le **même dénominateur**.
 
 ## Méthode

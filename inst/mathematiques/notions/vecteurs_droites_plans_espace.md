@@ -1,5 +1,11 @@
 # Vecteurs, droites et plans de l'espace
 
+**Niveau :** TG
+
+## Définition
+
+Vecteurs de l’espace, colinéarité, coplanarité, droites et plans.
+
 ## Idée centrale
 
 Dans l'espace, les vecteurs permettent de traduire parallélisme, alignement et coplanarité en relations algébriques. Une droite est décrite par un point et un vecteur directeur ; un plan par un point et deux vecteurs non colinéaires.

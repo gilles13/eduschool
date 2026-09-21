@@ -1,5 +1,9 @@
 # Volumes
 
+**Niveau :** 6E, 4E, 3E
+
+## Définition
+
 Le volume mesure l'espace occupé par un solide. Il s'exprime avec une unité **au cube** : cm³, dm³, m³, etc.
 
 ## Pavé droit

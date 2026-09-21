@@ -1,5 +1,9 @@
 # Premiers raisonnements algébriques
 
+**Niveau :** 6E
+
+## Définition
+
 L'algèbre permet de raisonner sur un nombre encore inconnu ou sur une règle valable pour plusieurs nombres.
 
 ## Nombre inconnu

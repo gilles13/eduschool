@@ -1,5 +1,9 @@
 # Probabilités
 
+**Niveau :** 6E, 5E, 4E, 3E, 2GT
+
+## Définition
+
 Une expérience aléatoire est une expérience dont on ne peut pas prévoir avec certitude l'issue avant de la réaliser.
 
 ## Vocabulaire

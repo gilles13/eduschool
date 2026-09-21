@@ -1,5 +1,11 @@
 # Vocabulaire ensembliste et logique
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Vocabulaire ensembliste et logique.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Vocabulaire ensembliste et logique**.

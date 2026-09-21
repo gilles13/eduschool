@@ -1,5 +1,11 @@
 # Fonction logarithme décimal
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Fonction logarithme décimal.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonction logarithme décimal**.

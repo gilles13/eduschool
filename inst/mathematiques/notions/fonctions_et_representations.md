@@ -1,5 +1,11 @@
 # Fonctions et représentations
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Fonctions et représentations.
+
 ## Idée centrale
 
 Une fonction associe à une valeur \(x\) **au plus une valeur** notée \(f(x)\).

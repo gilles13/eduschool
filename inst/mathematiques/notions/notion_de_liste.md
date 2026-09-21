@@ -1,5 +1,11 @@
 # Notion de liste en algorithmique
 
+**Niveau :** TG
+
+## Définition
+
+Listes en algorithmique, indices, parcours, ajout et traitement de valeurs.
+
 ## Idée centrale
 
 Une liste permet de regrouper une suite ordonnée de valeurs et de les traiter par indice ou par parcours. Elle facilite les simulations, le stockage de résultats intermédiaires et le traitement de données.

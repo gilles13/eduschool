@@ -1,5 +1,11 @@
 # Fonction exponentielle
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Fonction exponentielle.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Fonction exponentielle**.

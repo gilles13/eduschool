@@ -1,5 +1,11 @@
 # Orthogonalité et distances dans l'espace
 
+**Niveau :** TG
+
+## Définition
+
+Produit scalaire dans l’espace, orthogonalité, vecteurs normaux et distances.
+
 ## Idée centrale
 
 Le produit scalaire relie calcul et géométrie dans l'espace. Il permet de caractériser l'orthogonalité, de construire des vecteurs normaux et de calculer longueurs, angles et distances.

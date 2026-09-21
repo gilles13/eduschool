@@ -1,5 +1,11 @@
 # Fonction logarithme
 
+**Niveau :** TG
+
+## Définition
+
+Logarithme népérien, propriétés algébriques, dérivée, limites et équations exponentielles.
+
 ## Idée centrale
 
 Le logarithme népérien $\ln$ est la fonction réciproque de l'exponentielle. Il transforme les produits en sommes et intervient dans les équations exponentielles, les limites et les modèles de croissance.

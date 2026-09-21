@@ -22,7 +22,7 @@ test_that("outils_eduschool retrouve les tests qui surveillent le bordel", {
   x = chercher_outils("ensembles")
   ligne = x[x$fonction == "diagramme_ensembles_nombres", , drop = FALSE]
   expect_equal(nrow(ligne), 1L)
-  expect_match(ligne$tests, "test-ensembles-nombres.R", fixed = TRUE)
+  expect_match(ligne$tests, "test-mathematiques-2de.R", fixed = TRUE)
 })
 
 test_that("jairangeoubordel retrouve aussi les ressources de inst", {

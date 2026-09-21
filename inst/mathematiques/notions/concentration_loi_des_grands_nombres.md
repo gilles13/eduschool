@@ -1,5 +1,11 @@
 # Concentration et loi des grands nombres
 
+**Niveau :** TG
+
+## Définition
+
+Inégalité de Bienaymé-Tchebychev, concentration et loi des grands nombres.
+
 ## Idée centrale
 
 Les inégalités de concentration quantifient le fait qu'une variable aléatoire est souvent proche de son espérance. Pour une moyenne d'un grand nombre d'expériences indépendantes identiquement distribuées, la dispersion diminue : c'est le mécanisme de la loi des grands nombres.

@@ -1,5 +1,11 @@
 # Compléments sur la dérivation
 
+**Niveau :** TG
+
+## Définition
+
+Dérivation, variations, dérivée seconde, convexité et points d’inflexion.
+
 ## Idée centrale
 
 La dérivée donne le taux de variation local d'une fonction. En terminale, elle sert aussi à étudier convexité, points d'inflexion et optimisation.

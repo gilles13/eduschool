@@ -1,5 +1,11 @@
 # Évolutions et variations
 
+**Niveau :** 1G
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Évolutions et variations.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Évolutions et variations**.

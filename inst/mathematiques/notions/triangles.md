@@ -1,5 +1,9 @@
 # Triangles
 
+**Niveau :** 5E
+
+## Définition
+
 Un triangle est défini par trois sommets non alignés. Les propriétés de ses côtés et de ses angles permettent de le construire et de le caractériser.
 
 ## Triangles particuliers

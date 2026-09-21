@@ -1,5 +1,9 @@
 # Longueurs et périmètres
 
+**Niveau :** 6E
+
+## Définition
+
 Une longueur mesure une distance. Le périmètre d'une figure plane est la **longueur de son contour**.
 
 ## Unités de longueur

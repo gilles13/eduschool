@@ -1,5 +1,11 @@
 # Primitives et équations différentielles
 
+**Niveau :** TG
+
+## Définition
+
+Primitives et résolution d’équations différentielles élémentaires avec conditions initiales.
+
 ## Idée centrale
 
 Une primitive inverse l'opération de dérivation. Les équations différentielles décrivent des fonctions à partir d'une relation entre la fonction et sa dérivée, notamment les évolutions exponentielles.

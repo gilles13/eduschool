@@ -1,5 +1,9 @@
 # Pourcentages
 
+**Niveau :** 6E, 3E, 2GT
+
+## Définition
+
 Un pourcentage exprime une proportion sur 100 : $p\% = p/100$.
 
 ## Calculer un pourcentage d'une quantité

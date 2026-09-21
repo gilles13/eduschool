@@ -1,5 +1,11 @@
 # Répartition des richesses, inégalités
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Répartition des richesses, inégalités.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Répartition des richesses, inégalités**.

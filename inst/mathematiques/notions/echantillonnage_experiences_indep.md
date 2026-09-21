@@ -1,5 +1,11 @@
 # Répétition d’expériences indépendantes, échantillonnage
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Répétition d’expériences indépendantes, échantillonnage.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Répétition d’expériences indépendantes, échantillonnage**.

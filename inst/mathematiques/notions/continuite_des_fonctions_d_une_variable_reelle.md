@@ -1,5 +1,11 @@
 # Continuité des fonctions d'une variable réelle
 
+**Niveau :** TG
+
+## Définition
+
+Continuité, théorème des valeurs intermédiaires, existence et unicité de solutions.
+
 ## Idée centrale
 
 Une fonction continue sur un intervalle ne présente pas de rupture. Cette propriété permet surtout d'établir l'existence de solutions d'équations grâce au théorème des valeurs intermédiaires.

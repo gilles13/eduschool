@@ -1,5 +1,11 @@
 # Statistique à deux variables quantitatives
 
+**Niveau :** TG
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Statistique à deux variables quantitatives.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Statistique à deux variables quantitatives**.

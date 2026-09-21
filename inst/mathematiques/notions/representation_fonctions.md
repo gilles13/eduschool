@@ -1,5 +1,11 @@
 # Représentation algébrique et graphique des fonctions
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Représentation algébrique et graphique des fonctions.
+
 ## Relier formule et graphique
 
 Une équation comme

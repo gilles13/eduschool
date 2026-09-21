@@ -1,5 +1,11 @@
 # Primitives et équations différentielles
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Primitives et équations différentielles.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Primitives et équations différentielles**.

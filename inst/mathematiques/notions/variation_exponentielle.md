@@ -1,5 +1,11 @@
 # Variation exponentielle
 
+**Niveau :** à préciser
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Variation exponentielle.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Variation exponentielle**.

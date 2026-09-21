@@ -1,5 +1,9 @@
 # Calcul littéral
 
+**Niveau :** 5E, 2GT
+
+## Définition
+
 Le calcul littéral utilise des lettres pour représenter des nombres. Il permet d'exprimer une règle générale et de raisonner sans connaître immédiatement toutes les valeurs.
 
 ## À maîtriser

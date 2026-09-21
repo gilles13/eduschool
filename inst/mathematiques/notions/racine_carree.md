@@ -1,5 +1,11 @@
 # Racine carrée
 
+**Niveau :** 4E, 3E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Racine carrée.
+
 ## Idée centrale
 
 Pour un nombre positif ou nul \(a\), \(\sqrt a\) désigne **l'unique nombre positif ou nul dont le carré vaut \(a\)** :

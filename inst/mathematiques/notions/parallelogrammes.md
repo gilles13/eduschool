@@ -1,5 +1,9 @@
 # Parallélogrammes
 
+**Niveau :** 5E
+
+## Définition
+
 Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles deux à deux.
 
 ## Propriétés

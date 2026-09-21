@@ -1,5 +1,11 @@
 # Organisation et gestion de données
 
+**Niveau :** 6E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Organisation et gestion de données.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Organisation et gestion de données**.

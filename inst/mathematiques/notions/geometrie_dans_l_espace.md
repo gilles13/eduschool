@@ -1,5 +1,11 @@
 # Géométrie dans l’espace
 
+**Niveau :** 4E, 3E
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Géométrie dans l’espace.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Géométrie dans l’espace**.

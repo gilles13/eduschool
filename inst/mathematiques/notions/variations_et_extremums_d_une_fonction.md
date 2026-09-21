@@ -1,5 +1,11 @@
 # Variations et extrémums d’une fonction
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Variations et extrémums d’une fonction.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Variations et extrémums d’une fonction**.

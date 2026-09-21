@@ -1,5 +1,11 @@
 # Combinatoire et dénombrement
 
+**Niveau :** TG
+
+## Définition
+
+Dénombrement par principes additif et multiplicatif, permutations et coefficients binomiaux.
+
 ## Idée centrale
 
 Dénombrer consiste à compter sans énumérer un à un. On traduit une situation en choix successifs, arrangements ou sous-ensembles, puis on utilise les principes additif et multiplicatif et les coefficients binomiaux.

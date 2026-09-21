@@ -1,5 +1,9 @@
 # Statistiques
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
 La statistique sert à recueillir, organiser, représenter et résumer des données.
 
 ## Vocabulaire

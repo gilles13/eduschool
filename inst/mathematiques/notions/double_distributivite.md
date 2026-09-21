@@ -1,5 +1,9 @@
 # Double distributivité
 
+**Niveau :** 3E
+
+## Définition
+
 La double distributivité permet de développer le produit de deux sommes ou de deux différences.
 
 Chaque terme du premier facteur multiplie chaque terme du second facteur.

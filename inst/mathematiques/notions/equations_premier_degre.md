@@ -1,5 +1,9 @@
 # Équations du premier degré
 
+**Niveau :** 4E, 3E, 2GT
+
+## Définition
+
 Résoudre une équation consiste à trouver les valeurs de l'inconnue qui rendent l'égalité vraie.
 
 ## Principe

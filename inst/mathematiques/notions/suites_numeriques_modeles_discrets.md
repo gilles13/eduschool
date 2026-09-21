@@ -1,5 +1,11 @@
 # Suites numériques, modèles discrets
 
+**Niveau :** 1G, TG
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Suites numériques, modèles discrets.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Suites numériques, modèles discrets**.

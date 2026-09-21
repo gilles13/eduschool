@@ -1,5 +1,9 @@
 # Puissances
 
+**Niveau :** 5E, 4E, 3E
+
+## Définition
+
 Une puissance permet d'écrire de façon compacte un produit de facteurs égaux.
 
 ## Définition

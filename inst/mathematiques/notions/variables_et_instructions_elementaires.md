@@ -1,5 +1,11 @@
 # Variables et instructions élémentaires
 
+**Niveau :** 2GT
+
+## Définition
+
+Repères, méthodes et automatismes essentiels sur : Variables et instructions élémentaires.
+
 ## À connaître
 
 Cette fiche rassemble les définitions, propriétés et repères indispensables pour travailler la notion **Variables et instructions élémentaires**.
