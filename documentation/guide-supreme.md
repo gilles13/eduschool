@@ -210,17 +210,27 @@ Le premier prototype confirme qu'un HTML autonome peut embarquer plusieurs lots
 d'exercices prepares par R. Le navigateur ne devient pas un second moteur de
 mathematiques : il revele simplement le lot suivant.
 
-## Reflexion ouverte - l'humour doit creer une rupture, pas du bruit
+## Decision - les maths seront droles, ou ne seront pas
 
-Le premier prototype humoristique mettait une plaisanterie presque partout. Le
-RETEX est net : l'effet comique devient du bruit lorsqu'il accompagne chaque
-question et finit par concurrencer l'objectif mathematique.
+> **Chez eduschool, les maths seront drôles, ou ne seront pas.**
 
-Le dosage experimental retenu est donc d'une question humoristique sur cinq.
-L'humour reste desactivable et il est desactive par defaut. Ce ratio n'est pas
-une loi pedagogique : il doit etre confronte a l'usage avant toute generalisation.
+L'humour fait partie de l'identité pédagogique d'eduschool. Il est actif au
+niveau **1 par défaut** : tout public ne signifie pas sans humour. Les niveaux
+2 et 3 permettent un ton progressivement plus taquin. Le niveau 0 reste
+possible pour ne fermer aucune porte, mais il est explicitement déconseillé.
 
-> **L'humour pedagogique doit creer une rupture, pas du bruit.**
+> **Le sérieux porte sur les mathématiques, pas sur le ton.**
+
+> **On déconne sur la forme, jamais sur la vérité mathématique.**
+
+L'humour ne doit jamais viser l'élève, ses erreurs, ses difficultés ni les
+personnes concernées par les données. Son stockage reste volontairement
+minimal : un petit `data.frame` suffit tant qu'aucun besoin réel ne demande
+davantage.
+
+Position officieuse mais tenace du développeur :
+
+> **0 humour = 0 math.** `ಠ_ಠ`
 
 # Fragilites et arbitrages
 

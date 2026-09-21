@@ -1,28 +1,20 @@
-# Générateur d’exercices de mathématiques
+# Exercices — ancien monde à récupérer
 
-La V0.9.5 introduit un premier moteur volontairement simple dont les tirages pseudo-aléatoires peuvent être contrôlés par une graine (`seed`). R reste la couche d’orchestration : les paramètres sont construits de façon contrôlée, la réponse est connue par construction, puis la correction est générée. Aucun CAS n’est requis pour ces premiers modèles.
+Ce répertoire contient encore les ressources utilisées par le générateur
+historique. Elles restent en place tant que le code courant en dépend : on ne
+casse pas ce qui fonctionne uniquement pour déplacer des fichiers.
 
-Le catalogue `modeles.csv` décrit les modèles et `modeles_capacites.csv` les rattache à des `item_id` de type `CAPACITE`. Les fonctions sont dans `R/30_exercices/`.
+Elles ne définissent plus l'architecture des nouveaux exercices.
 
-Exemples après `source("R/97_session_dev.R")` :
+## Nouveau contrat
 
-```r
-selectionner_modeles("6E")
+Un nouvel exercice commence par un **Markdown simple**. Le Markdown porte les
+formulations ; R porte les valeurs, les calculs, les réponses et les contrôles
+de vérité.
 
-ex = generer_exercice(
-  modele_id = "FRAC_QTE_001",
-  niveau_id = "6E",
-  capacite_id = "ITM_MAT_C3_6E_C07",
-  difficulte = 1,
-  seed = 42
-)
+> **R sait. Le Markdown parle.**
 
-ex$enonce
-ex$correction
-
-fiche = generer_fiche("6E", n = 12, difficulte = 1, seed = 2026)
-rendre_tex_exercices(fiche, "fiche_6e.tex")
-rendre_tex_exercices(fiche, "corrige_6e.tex", corriges = TRUE, titre = "Corrigé")
-```
-
-`compiler_tex()` utilise `pdflatex` s’il est installé. Le `.tex` reste toujours disponible, ce qui maintient le projet indépendant de Quarto.
+Les CSV présents ici sont donc un gisement : formulations, feedbacks, humour et
+idées pédagogiques peuvent être récupérés au fur et à mesure. Les tables,
+relations et mécanismes historiques ne sont conservés que tant qu'ils ont encore
+du travail.

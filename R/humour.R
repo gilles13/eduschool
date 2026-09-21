@@ -2,39 +2,97 @@
 # Humour des exercices
 # ============================================================
 
-.catalogue_humour = list(
-  "PROP_001:cookies" =
+.catalogue_humour = data.frame(
+  cle = c(
+    "PROP_001:cookies",
+    "PROP_001:chaussettes",
+    "PROP_001:crayons",
+    "PROP_RECON_001:coefficient",
+    "PROP_RECON_001:taxi",
+    "PROP_RECON_001:tableau",
+    "PROP_TABLE_001:cahiers",
+    "PROP_TABLE_001:boisson",
+    "PROP_TABLE_001:distance",
+    "PROP_PIEGE_001:prix_unitaire",
+    "PROP_PIEGE_001:doublement",
+    "PROP_PIEGE_001:addition",
+    "PROP_TRANSF_001:riz",
+    "PROP_TRANSF_001:peinture",
+    "PROP_TRANSF_001:jus",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_ADD_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001",
+    "FRAC_QTE_001"
+  ),
+  niveau = c(
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    1L,
+    2L,
+    1L,
+    2L,
+    1L,
+    1L,
+    1L,
+    1L,
+    2L,
+    1L,
+    1L,
+    1L,
+    2L,
+    1L,
+    1L,
+    2L
+  ),
+  texte = c(
     " Promis, partir avec le paquet n'est pas une m\u00e9thode de proportionnalit\u00e9.",
-  "PROP_001:chaussettes" =
     " Pourquoi uniquement des chaussettes ? Le cahier des charges reste myst\u00e9rieux.",
-  "PROP_001:crayons" =
     " Oui, encore des crayons. Picasso aurait probablement demand\u00e9 un autre exercice.",
-  "PROP_RECON_001:coefficient" =
     " Le prix du pop-corn, lui, refuse de participer a cette enquete.",
-  "PROP_RECON_001:taxi" =
     " Le taxi augmente, mais pas comme eduschool le voudrait.",
-  "PROP_RECON_001:tableau" =
     " M\u00eame dans l'espace, le multiplicateur finit par nous retrouv\u00e9r.",
-  "PROP_TABLE_001:cahiers" =
     " Encore des fournitures scolaires : le suspense est insoutenable.",
-  "PROP_TABLE_001:boisson" =
     " Les bouteilles promettent de ne pas changer de taille pendant le calcul.",
-  "PROP_TABLE_001:distance" =
     " A vitesse constante : ces trois mots font presque tout le boulot.",
-  "PROP_PIEGE_001:prix_unitaire" =
     " Gare au calcul qui a l'air malin mais raconte n'importe quoi.",
-  "PROP_PIEGE_001:doublement" =
     " Le produit en croix peut rester assis : ici, doubler suffit.",
-  "PROP_PIEGE_001:addition" =
     " Attention au pi\u00e8ge : il a mis une moustache pour avoir l'air cr\u00e9dible.",
-  "PROP_TRANSF_001:riz" =
     " La proportionnalit\u00e9 vient officiellement de sauver le d\u00eener.",
-  "PROP_TRANSF_001:peinture" =
     " Picasso n'est pas disponible, il va falloir calculer.",
-  "PROP_TRANSF_001:jus" =
     " Les verres sont identiques, sinon ce serait franchement chiant.",
-
-  "FRAC_ADD_001" = c(
     " Les d\u00e9nominateurs ont accept\u00e9 de coop\u00e9rer. Merci de ne pas les brusquer.",
     " Le d\u00e9nominateur commun : m\u00eame les fractions finissent par trouver un terrain d'entente.",
     " Deux fractions entrent dans un calcul. Une seule en ressort. Aucun num\u00e9rateur n'a souhait\u00e9 t\u00e9moigner.",
@@ -44,10 +102,7 @@
     " Additionner les num\u00e9rateurs directement serait tentant. Le pi\u00e8ge aussi a trouv\u00e9 l\u2019id\u00e9e excellente.",
     " Encore une addition de fractions. Quelque part, un d\u00e9nominateur cherche d\u00e9j\u00e0 un avocat.",
     " Les fractions \u00e9taient irr\u00e9conciliables. Puis quelqu'un a prononc\u00e9 les mots d\u00e9nominateur commun.",
-    " Rien ne se perd, rien ne se cr\u00e9e, tout se met au m\u00eame d\u00e9nominateur. Lavoisier n'a pas valid\u00e9 cette phrase."
-  ),
-
-  "FRAC_QTE_001" = c(
+    " Rien ne se perd, rien ne se cr\u00e9e, tout se met au m\u00eame d\u00e9nominateur. Lavoisier n'a pas valid\u00e9 cette phrase.",
     " Une fraction d'un nombre reste un nombre. Jusqu'ici, l'univers tient bon.",
     " On ne prend qu'une fraction du nombre. Inutile d'appeler les secours.",
     " Le nombre va perdre une partie de lui-m\u00eame. Il a sign\u00e9 le formulaire de consentement.",
@@ -58,7 +113,8 @@
     " Une fraction vient r\u00e9clamer sa part. Le service comptable est formel : il faut calculer.",
     " Si le r\u00e9sultat semble \u00e9trange, rassure-toi : nous avons d\u00e9j\u00e0 vu un bouton HTML traverser la quatri\u00e8me dimension.",
     " Une fraction de nombre, c'est moins spectaculaire qu'une porte interdimensionnelle, mais nettement plus simple \u00e0 tester."
-  )
+  ),
+  stringsAsFactors = FALSE
 )
 
 .cles_humour = function(exercice) {
@@ -79,7 +135,7 @@
   if (!is.null(feedback_humour) && length(feedback_humour) == 4L) {
     return(TRUE)
   }
-  any(.cles_humour(exercice) %in% names(.catalogue_humour))
+  any(.cles_humour(exercice) %in% .catalogue_humour$cle)
 }
 
 .ajouter_humour = function(exercice) {
@@ -93,13 +149,15 @@
   }
 
   cles = .cles_humour(exercice)
-  cle = cles[cles %in% names(.catalogue_humour)]
+  cle = cles[cles %in% .catalogue_humour$cle]
 
   if (!length(cle)) {
     return(exercice)
   }
 
-  chutes = .catalogue_humour[[cle[[1L]]]]
+  chutes = .catalogue_humour$texte[
+    .catalogue_humour$cle == cle[[1L]] & .catalogue_humour$niveau <= 1L
+  ]
   seed = exercice$seed
 
   if (is.null(seed) || length(seed) != 1L || is.na(seed)) {

@@ -624,7 +624,11 @@ test_that("le rendu mathematique commun transforme les exposants entiers simples
 test_that("le RETEX fractions garde Lea et reclamer correctement accentues", {
   expect_true("L\u00e9a" %in% .personnages_exercices)
 
-  humour = paste(unlist(.catalogue_humour["FRAC_QTE_001"], use.names = FALSE), collapse = "\n")
+  humour = 
+	  paste(
+			.catalogue_humour$texte[.catalogue_humour$cle == "FRAC_QTE_001" ],
+			collapse = " "
+	  )
   expect_match(humour, "r\u00e9clamer", fixed = TRUE)
 })
 

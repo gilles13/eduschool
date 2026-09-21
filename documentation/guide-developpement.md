@@ -93,36 +93,30 @@ appartiennent réellement au source R. Elle évite de transformer le code
 en dépôt de contenu éditorial.
 
 
-### Un nouveau sujet commence par ses textes
+### Un nouveau sujet commence simplement
 
-Lorsqu'eduschool aborde une nouvelle notion, un nouveau concept ou un
-nouveau modèle pédagogique, créer par défaut une ressource dédiée :
+Pour un nouvel exercice, le format éditorial par défaut est un **Markdown
+simple**. Il contient les formulations utiles et rien de ce que R peut calculer
+ou vérifier lui-même.
 
-`inst/exercices/textes_<sujet>.csv`
+> **R sait. Le Markdown parle.**
 
-Le nom `<sujet>` reste simple et local au besoin rencontré. Il n'est pas
-nécessaire de construire au préalable une taxonomie générale des contenus.
+Une réponse calculable n'est donc pas stockée dans le Markdown. R construit les
+valeurs, calcule la réponse et vérifie la vérité ; le Markdown fournit une ou
+plusieurs façons de poser la question. Plusieurs types de questions peuvent
+être ajoutés progressivement dans le même fichier lorsque le besoin apparaît.
 
-Cette ressource est écrite directement en UTF-8 et peut accueillir, selon
-les besoins, les énoncés, définitions, rappels, réponses, corrections,
-feedbacks, formulations alternatives et autres textes pédagogiques du sujet.
-
-> **Le code R fabrique l'exercice ; le CSV porte les mots de l'exercice.**
-
-Au démarrage d'un sujet, le fichier peut être incomplet, imparfait ou
-contenir une organisation encore provisoire. Ce n'est pas un motif pour
-retarder son utilisation.
-
-Une structure commune n'est extraite ou généralisée que lorsque plusieurs
-usages réels montrent qu'elle est utile.
+Les anciens `inst/exercices/textes_*.csv` restent lisibles tant que l'ancien
+moteur les utilise. Ils sont un gisement de formulations à récupérer, pas le
+modèle des nouveaux développements.
 
 Autrement dit :
 
-`créer les textes → faire fonctionner → utiliser → observer → améliorer`
+`écrire simplement → faire fonctionner → tester → utiliser → enrichir`
 
 et non :
 
-`prévoir tous les textes possibles → abstraire → généraliser → peut-être utiliser`
+`modéliser → relier → abstraire → généraliser → peut-être utiliser`
 
 Un fichier `textes_<sujet>.csv` imparfait mais utilisé vaut mieux qu'une
 architecture éditoriale parfaite qui empêche d'expérimenter.
