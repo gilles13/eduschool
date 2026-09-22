@@ -70,15 +70,6 @@ test_that("les deux formes Unicode de e accent aigu restent distinctes en R", {
   expect_false(identical(x[["e_precompose"]], x[["e_decompose"]]))
 })
 
-test_that("le quiz HTML transporte le canari francais et mathematique", {
-  fichier = tempfile(fileext = ".html")
-  sortie = produire_quiz(list(.exercice_canari(TRUE)), fichier = fichier, ouvrir = FALSE)
-  html = paste(readLines(sortie, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
-
-  for (symbole in c(.canari_unicode()[names(.canari_unicode()) != "e_decompose"], "\u00d7", "\u2208", "\u21d4", "\U0001d465")) {
-    expect_true(grepl(symbole, html, fixed = TRUE), info = paste("Symbole absent du HTML :", encodeString(symbole, quote = "\"")))
-  }
-})
 
 test_that("la fiche HTML transporte le canari francais et mathematique", {
   skip_if_not_installed("rmarkdown")

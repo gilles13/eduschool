@@ -58,7 +58,6 @@ articles:
       - mathematiques-par-niveau
       - mathematiques-et-economie
       - infini_1_les_math_et_l_eco
-      - examens-dnb
       - fiches-revision-mathematiques
       - approfondir-ses-connaissances-en-mathematiques
 
@@ -73,7 +72,6 @@ articles:
     desc: Documentation pédagogique, exercices et exemples d'utilisation.
     contents:
       - documentation-pedagogique
-      - exercices-et-revisions
       - exemple-classe-6e
       - exemple-classe-2de-generale
 

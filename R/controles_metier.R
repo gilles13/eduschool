@@ -157,8 +157,7 @@ controle_integrite_math = function(strict = FALSE) {
 
 #' Controler la coherence metier des examens
 #'
-#' Verifie notamment les totaux de duree et de points, les questions des
-#' exercices composes, leurs contextes et la presence des generateurs R.
+#' Verifie les totaux de duree et de points des parties d'examen.
 #'
 #' @param strict Si `TRUE`, leve une erreur lorsqu'au moins un controle echoue.
 #' @return Un data.frame avec une ligne par controle.
@@ -166,12 +165,6 @@ controle_integrite_math = function(strict = FALSE) {
 controle_integrite_examens = function(strict = FALSE) {
   examens_x = .lire_csv("examens", "examens.csv")
   parties = .lire_csv("examens", "parties_examen.csv")
-  gabarits = .lire_csv("examens", "gabarits_exercices_composes.csv")
-  questions = .lire_csv("examens", "gabarits_exercices_questions.csv")
-  contextes = .lire_csv("examens", "contextes_exercices.csv")
-  liens_contextes = .lire_csv("examens", "gabarits_exercices_contextes.csv")
-  concepts = concepts_math()
-
   out = list()
   add = function(x) out[[length(out) + 1L]] <<- x
 
@@ -196,77 +189,6 @@ controle_integrite_examens = function(strict = FALSE) {
       if (is.finite(duree) && is.finite(duree_attendue) && duree == duree_attendue) character() else id
     ))
   }
-
-  add(.controle_fk_metier(
-    "exam_questions", "gabarits_exercices_questions", "gabarit_existant",
-    questions$gabarit_compose_id, gabarits$gabarit_compose_id
-  ))
-  add(.controle_fk_metier(
-    "exam_questions", "gabarits_exercices_questions", "concept_existant",
-    questions$concept_id, concepts$concept_id
-  ))
-
-  ordre_invalide = character()
-  points_invalides = character()
-  for (id in unique(questions$gabarit_compose_id)) {
-    q = questions[questions$gabarit_compose_id == id, , drop = FALSE]
-    ordre = suppressWarnings(as.integer(q$ordre))
-    points = suppressWarnings(as.numeric(q$points))
-    if (any(is.na(ordre)) || any(ordre <= 0L) || anyDuplicated(ordre)) {
-      ordre_invalide = c(ordre_invalide, id)
-    }
-    if (any(!is.finite(points)) || any(points <= 0)) {
-      points_invalides = c(points_invalides, id)
-    }
-  }
-  add(.controle_metier_ligne(
-    "exam_questions", "gabarits_exercices_questions", "ordre_questions",
-    !length(ordre_invalide), ordre_invalide
-  ))
-  add(.controle_metier_ligne(
-    "exam_questions", "gabarits_exercices_questions", "points_positifs",
-    !length(points_invalides), points_invalides
-  ))
-
-  add(.controle_fk_metier(
-    "exam_contextes", "gabarits_exercices_contextes", "gabarit_existant",
-    liens_contextes$gabarit_compose_id, gabarits$gabarit_compose_id
-  ))
-  add(.controle_fk_metier(
-    "exam_contextes", "gabarits_exercices_contextes", "contexte_existant",
-    liens_contextes$contexte_id, contextes$contexte_id
-  ))
-
-  actifs = gabarits$gabarit_compose_id[gabarits$statut == "ACTIF"]
-  liens_actifs = liens_contextes$gabarit_compose_id[liens_contextes$statut == "ACTIF"]
-  sans_contexte = setdiff(actifs, liens_actifs)
-  add(.controle_metier_ligne(
-    "exam_contextes", "gabarits_exercices_composes", "contexte_actif_disponible",
-    !length(sans_contexte), sans_contexte
-  ))
-
-  generateurs_absents = character()
-  generateurs = unique(gabarits$generateur_id[gabarits$statut == "ACTIF"])
-  for (id in generateurs) {
-    ok = !inherits(try(.generateur_compose(id), silent = TRUE), "try-error")
-    if (!ok) generateurs_absents = c(generateurs_absents, id)
-  }
-  add(.controle_metier_ligne(
-    "exam_moteurs", "gabarits_exercices_composes", "generateur_implemente",
-    !length(generateurs_absents), generateurs_absents
-  ))
-
-  generables = character()
-  .preserver_rng({
-    for (id in actifs) {
-      ok = !inherits(try(generer_exercice_compose(id, seed = 2020), silent = TRUE), "try-error")
-      if (!ok) generables = c(generables, id)
-    }
-  })
-  add(.controle_metier_ligne(
-    "exam_moteurs", "gabarits_exercices_composes", "generation_minimale",
-    !length(generables), generables
-  ))
 
   ans = do.call(rbind, out)
   rownames(ans) = NULL

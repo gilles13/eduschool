@@ -1,10 +1,50 @@
+.base64_raw = function(x) {
+  if (!is.raw(x)) x = as.raw(x)
+  n = length(x)
+  if (n == 0L) return("")
+
+  alphabet = strsplit(
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
+    "", fixed = TRUE
+  )[[1L]]
+  bytes = as.integer(x)
+  pad = (3L - (n %% 3L)) %% 3L
+  if (pad > 0L) bytes = c(bytes, rep.int(0L, pad))
+
+  m = matrix(bytes, ncol = 3L, byrow = TRUE)
+  i1 = bitwShiftR(m[, 1L], 2L)
+  i2 = bitwOr(
+    bitwShiftL(bitwAnd(m[, 1L], 3L), 4L),
+    bitwShiftR(m[, 2L], 4L)
+  )
+  i3 = bitwOr(
+    bitwShiftL(bitwAnd(m[, 2L], 15L), 2L),
+    bitwShiftR(m[, 3L], 6L)
+  )
+  i4 = bitwAnd(m[, 3L], 63L)
+
+  out = alphabet[c(rbind(i1, i2, i3, i4)) + 1L]
+  if (pad > 0L) {
+    out[(length(out) - pad + 1L):length(out)] = "="
+  }
+  paste0(out, collapse = "")
+}
+
+.html_echapper = function(x) {
+  x = gsub("&", "&amp;", x, fixed = TRUE)
+  x = gsub("<", "&lt;", x, fixed = TRUE)
+  x = gsub(">", "&gt;", x, fixed = TRUE)
+  x = gsub('"', "&quot;", x, fixed = TRUE)
+  x
+}
+
 # ============================================================
 # Cheatsheet eduschool
 # ============================================================
 
 .fonctions_cheatsheet = c(
-  "revision", "exercices", "produire_fiche",
-  "produire_quiz", "notions", "notions_niveau", "parcours", "programme",
+  "revision", "produire_fiche",
+"notions", "notions_niveau", "parcours", "programme",
   "chercher_notions", "notion",
   "orientation", "examens", "examen", "carte_math", "produire_carte_math"
 )
@@ -77,8 +117,8 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
   colonne_1 = paste0(
     '<div class="colonne colonne-position">',
     '<div class="rubrique rubrique-position">O\u00d9 SUIS-JE ?</div>',
-    .bloc_cheatsheet("Je pars d'un niveau", "Voir les notions document\u00e9es pour un niveau. La colonne notion_id donne l'identifiant \u00e0 r\u00e9utiliser dans exercices().", c('notions()', 'notions_niveau("5E")')),
-    .bloc_cheatsheet("Je pars d'une id\u00e9e", "Chercher avec un mot ordinaire. Conserver notion_id pour passer ensuite aux exercices.", c('chercher_notions("fraction")', 'exercices("MAT_FRACTION_SENS")')),
+    .bloc_cheatsheet("Je pars d'un niveau", "Voir les notions document\u00e9es pour un niveau et leurs identifiants.", c('notions()', 'notions_niveau("5E")')),
+    .bloc_cheatsheet("Je pars d'une id\u00e9e", "Chercher avec un mot ordinaire puis explorer la notion trouv\u00e9e.", c('chercher_notions("fraction")', 'notion("fractions")')),
     .bloc_cheatsheet("Je veux comprendre", "Explorer une notion en langage courant et les liens qui l'entourent.", 'notion("fractions")'),
     .bloc_cheatsheet("Je veux voir le programme", "Retrouver les capacit\u00e9s d'un niveau et leurs sources.", c('programme("6E")', 'programme("5E", "MAT")')),
     '</div>'
@@ -88,8 +128,6 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
     '<div class="colonne colonne-action">',
     '<div class="rubrique rubrique-action">QUE FAIRE ?</div>',
     .bloc_cheatsheet("R\u00e9viser", "Une notion peut produire directement une fiche de r\u00e9vision, sans pr\u00e9ciser le niveau quand eduschool peut le r\u00e9soudre.", c('revision("fractions") |>', '  produire_fiche()')),
-    .bloc_cheatsheet("S'entra\u00eener", "Le notion_id du catalogue devient un lot d'exercices, puis une fiche.", c('exercices("MAT_FRACTION_SENS", n = 10) |>', '  produire_fiche()')),
-    .bloc_cheatsheet("Jouer", "Le m\u00eame lot d'exercices peut devenir un quiz HTML.", c('exercices("MAT_FRACTION_SENS", n = 15) |>', '  produire_quiz(questions_par_quiz = 5)')),
     '</div>'
   )
 

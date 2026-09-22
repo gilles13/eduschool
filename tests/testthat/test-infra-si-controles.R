@@ -12,10 +12,7 @@ test_that("les controles examens passent", {
   x = controle_integrite_examens()
   expect_true(nrow(x) > 0)
   expect_true(all(x$ok), info = paste(x$detail[!x$ok], collapse = " | "))
-  expect_true(all(c(
-    "ordre_questions", "points_positifs", "contexte_actif_disponible",
-    "generateur_implemente", "generation_minimale"
-  ) %in% x$objet))
+  expect_true(all(grepl("_points$|_duree$", x$objet)))
 })
 
 test_that("le controle global agrege les trois couches", {
@@ -28,11 +25,4 @@ test_that("les controles stricts restent silencieux lorsque tout va bien", {
   expect_silent(controle_integrite_math(strict = TRUE))
   expect_silent(controle_integrite_examens(strict = TRUE))
   expect_silent(controle_integrite(strict = TRUE))
-})
-
-test_that("le controle examens ne modifie pas l etat aleatoire", {
-  set.seed(42)
-  avant = .Random.seed
-  controle_integrite_examens()
-  expect_identical(.Random.seed, avant)
 })

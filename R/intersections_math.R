@@ -39,11 +39,6 @@
 #'
 #' @param seed Graine facultative utilisee pour melanger les propositions.
 #' @return Une liste de cinq exercices eduschool munis d'un QCM.
-#' @examples
-#' \dontrun{
-#' exercices_ensembles_proportions(seed = 2026) |>
-#'   produire_quiz(titre = "Ensembles et proportions")
-#' }
 #' @export
 exercices_ensembles_proportions = function(seed = NULL) {
   graines = if (is.null(seed)) rep(list(NULL), 5L) else as.list(seed + 0:4)

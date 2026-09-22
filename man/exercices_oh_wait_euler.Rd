@@ -15,9 +15,3 @@ Une liste de quatre exercices eduschool munis d'un QCM.
 \description{
 Construit quatre exercices autour du polynome n^2 + n + 41.
 }
-\examples{
-\dontrun{
-exercices_oh_wait_euler(seed = 2026) |>
-  produire_quiz(titre = "OH WAIT... beaucoup d'exemples suffisent-ils ?")
-}
-}

@@ -19,7 +19,7 @@ produire_fiche(
 }
 \arguments{
 \item{exercices}{Contenu a rendre : objet `eduschool_revision`, liste
-d'exercices produite par [exercices()] ou [generer_fiche()], chemin vers un
+d'exercices produite par une liste d exercices, chemin vers un
 fichier Markdown (`.md`), matrice ou `data.frame`. Le nom de l'argument est
 conserve pour compatibilite avec l'API existante.}
 
@@ -46,8 +46,7 @@ afficher immediatement la fiche a l'utilisateur.}
 Invisiblement, le chemin absolu du fichier produit.
 }
 \description{
-Transforme directement une liste produite par [exercices()] ou
-[generer_fiche()] en document. Accepte aussi le chemin d'un fichier Markdown
+Transforme directement une liste d'exercices eduschool en document. Accepte aussi le chemin d'un fichier Markdown
 (`.md`) ou un objet tabulaire (`matrix` ou `data.frame`). Un `data.frame`
 contenant `notion_id` et `libelle` est rendu comme une fiche de revision
 categorisee ; une colonne facultative `statut` permet d'indiquer les notions
@@ -60,12 +59,6 @@ ouvert automatiquement.
 \dontrun{
 revision("5E", "fractions") |>
   produire_fiche()
-
-exercices("6E") |>
-  produire_fiche()
-
-exercices("6E") |>
-  produire_fiche(format = "html", ouvrir = FALSE)
 
 produire_fiche("ma-fiche.md", format = "html")
 

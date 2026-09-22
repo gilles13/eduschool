@@ -6,7 +6,7 @@
 #' disciplines, sans que cela constitue l'objectif principal du projet.
 #'
 #' L'API principale s'organise autour de quelques verbes : [parcours()],
-#' [orientation()], [programme()], [revision()] et [exercices()]. Les fonctions
+#' [orientation()], [programme()] et [revision()]. Les fonctions
 #' historiques et les tables du mini-SI restent disponibles pour les usages
 #' avances, la maintenance et la contribution.
 #'

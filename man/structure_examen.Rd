@@ -12,10 +12,8 @@ structure_examen(code, session)
 \item{session}{Session de l'examen.}
 }
 \value{
-Une liste contenant examen, parties, profils et concepts.
+Une liste contenant `examen` et `parties`.
 }
 \description{
-Retourne les contraintes officielles et les profils pedagogiques utilises pour
-composer une epreuve. Les profils sont des choix de modelisation eduschool et
-ne doivent pas etre interpretes comme des obligations reglementaires.
+Retourne l'examen et ses parties officielles modelisees dans eduschool.
 }

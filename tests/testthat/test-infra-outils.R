@@ -18,13 +18,6 @@ test_that("outils_eduschool retrouve les outils par theme", {
 })
 
 
-test_that("outils_eduschool retrouve les tests qui surveillent le bordel", {
-  x = chercher_outils("ensembles")
-  ligne = x[x$fonction == "diagramme_ensembles_nombres", , drop = FALSE]
-  expect_equal(nrow(ligne), 1L)
-  expect_match(ligne$tests, "test-mathematiques-2de.R", fixed = TRUE)
-})
-
 test_that("jairangeoubordel retrouve aussi les ressources de inst", {
   x = chercher_outils("ensembles")
   ligne = x[x$fonction == "ensembles_nombres", , drop = FALSE]
@@ -35,16 +28,6 @@ test_that("jairangeoubordel retrouve aussi les ressources de inst", {
   expect_true("ensembles_nombres" %in% par_ressource$fonction)
 })
 
-test_that("outils_eduschool distingue API publique et outils internes", {
-  publics = chercher_outils("quiz")
-  tous = chercher_outils("quiz", internes = TRUE)
-
-  expect_true(all(publics$publique))
-  expect_gte(nrow(tous), nrow(publics))
-  expect_true("produire_quiz" %in% publics$fonction)
-  expect_true(".html_correction" %in% tous$fonction)
-  expect_false(".html_correction" %in% publics$fonction)
-})
 
 test_that("outils_eduschool cherche aussi dans l usage documente", {
   x = chercher_outils("rappel pedagogique")

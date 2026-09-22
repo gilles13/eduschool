@@ -17,9 +17,3 @@ Propose cinq QCM pour distinguer exemple, conjecture, contre-exemple et
 demonstration. Le parcours part de la reflexivite de l'inclusion puis
 demande ce qui permet, ou non, d'etablir une affirmation universelle.
 }
-\examples{
-\dontrun{
-exercices_ensembles_preuve(seed = 2026) |>
-  produire_quiz(titre = "Comment sais-tu que c'est vrai ?")
-}
-}

@@ -13,6 +13,5 @@ controle_integrite_examens(strict = FALSE)
 Un data.frame avec une ligne par controle.
 }
 \description{
-Verifie notamment les totaux de duree et de points, les questions des
-exercices composes, leurs contextes et la presence des generateurs R.
+Verifie les totaux de duree et de points des parties d'examen.
 }

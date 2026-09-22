@@ -373,16 +373,8 @@ de problèmes. L'élève doit savoir lire une situation, sélectionner les donn�
 choisir une méthode, effectuer les calculs puis rédiger une conclusion.
 
 S'entraîner sur des contextes variés est donc plus utile que mémoriser la forme
-d'un seul exercice. C'est précisément la philosophie du générateur DNB
-d'`eduschool` : une structure mathématique stable peut être instanciée dans des
-contextes différents.
-
-```{r, eval=FALSE}
-sujet = composer_examen("DNB", 2026, seed = 123)
-```
-
-La seed n'améliore pas la note. Elle permet seulement de retrouver le même sujet.
-Ce serait déjà beaucoup demander à une graine aléatoire.
+d'un seul exercice. `examen("DNB", 2026)` permet de consulter le référentiel de
+l'épreuve et `structure_examen("DNB", 2026)` ses parties.
 
 # 2de — Le moment où les maths changent légèrement de ton
 

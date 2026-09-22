@@ -17,18 +17,6 @@ test_that("les exemples de la cheatsheet restent branches sur l API publique", {
   expect_true(all(eduschool:::.fonctions_cheatsheet %in% getNamespaceExports("eduschool")))
 })
 
-test_that("la cheatsheet montre les trois gestes principaux", {
-  fichier = tempfile(fileext = ".html")
-  sortie = produire_cheatsheet(fichier = fichier, ouvrir = FALSE)
-  html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
-  expect_match(html, "Réviser", fixed = TRUE)
-  expect_match(html, "S'entraîner", fixed = TRUE)
-  expect_match(html, "Jouer", fixed = TRUE)
-  expect_match(html, 'revision(&quot;fractions&quot;) |&gt;', fixed = TRUE)
-  expect_match(html, 'exercices(&quot;MAT_FRACTION_SENS&quot;, n = 10) |&gt;', fixed = TRUE)
-  expect_match(html, "produire_fiche()", fixed = TRUE)
-  expect_match(html, "produire_quiz(questions_par_quiz = 5)", fixed = TRUE)
-})
 
 test_that("la cheatsheet garde des portes secondaires sans bloc chemin court", {
   fichier = tempfile(fileext = ".html")
@@ -86,24 +74,6 @@ test_that("l entete garde seulement le logo eduschoolR a droite", {
   expect_match(html, "grid-template-columns:1fr 10mm", fixed = TRUE)
 })
 
-
-test_that("la cheatsheet propose plusieurs entrees avant les actions", {
-  fichier = tempfile(fileext = ".html")
-  sortie = produire_cheatsheet(fichier = fichier, ouvrir = FALSE)
-  html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
-  expect_match(html, "OÙ SUIS-JE ?", fixed = TRUE)
-  expect_match(html, "QUE FAIRE ?", fixed = TRUE)
-  expect_match(html, "OÙ ALLER ?", fixed = TRUE)
-  expect_match(html, 'class="rubrique rubrique-position"', fixed = TRUE)
-  expect_match(html, 'class="rubrique rubrique-action"', fixed = TRUE)
-  expect_match(html, 'class="rubrique rubrique-ouverture"', fixed = TRUE)
-  expect_match(html, 'notions_niveau(&quot;5E&quot;)', fixed = TRUE)
-  expect_match(html, 'notions()', fixed = TRUE)
-  expect_match(html, 'notion_id', fixed = TRUE)
-  expect_false(grepl('# puis, par exemple : &quot;fractions&quot;', html, fixed = TRUE))
-  expect_match(html, 'chercher_notions(&quot;fraction&quot;)', fixed = TRUE)
-  expect_match(html, 'exercices(&quot;MAT_FRACTION_SENS&quot;, n = 10)', fixed = TRUE)
-})
 
 test_that("l entete de la cheatsheet reste discret", {
   fichier = tempfile(fileext = ".html")

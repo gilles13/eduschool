@@ -137,7 +137,6 @@ diagramme_ensembles_nombres = function() {
 #' Construit de cinq a dix QCM courts sur les inclusions usuelles, les plus
 #' petits ensembles contenant quelques nombres et la difference entre
 #' appartenance et inclusion. Le resultat peut etre passe directement a
-#' [produire_quiz()].
 #'
 #' Les cinq premieres questions constituent le parcours court historique. Avec
 #' `n = 10`, cinq questions supplementaires ajoutent quelques pieges utiles :
@@ -147,14 +146,6 @@ diagramme_ensembles_nombres = function() {
 #' @param seed Graine facultative utilisee pour melanger les propositions.
 #' @param n Nombre de questions a produire, de 1 a 10. Par defaut, 5.
 #' @return Une liste de `n` exercices eduschool munis d'un QCM.
-#' @examples
-#' \dontrun{
-#' exercices_ensembles_nombres(seed = 2026) |>
-#'   produire_quiz(titre = "Mes 5 rappels sur les ensembles")
-#'
-#' exercices_ensembles_nombres(seed = 2026, n = 10) |>
-#'   produire_quiz(titre = "Jouons avec les ensembles de nombres")
-#' }
 #' @export
 exercices_ensembles_nombres = function(seed = NULL, n = 5L) {
   if (length(n) != 1L || !is.numeric(n) || is.na(n) ||

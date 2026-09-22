@@ -23,20 +23,6 @@ test_that("chaque question croisee porte les metadonnees du quiz", {
   expect_true(all(vapply(x, function(z) nzchar(z$qcm$intention), logical(1))))
 })
 
-test_that("les intersections alimentent produire_quiz", {
-  fichier = tempfile(fileext = ".html")
-  sortie = produire_quiz(
-    exercices_ensembles_proportions(seed = 2026),
-    fichier = fichier,
-    titre = "Ensembles et proportions",
-    ouvrir = FALSE
-  )
-
-  expect_true(file.exists(sortie))
-  html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
-  expect_match(html, "Question 5", fixed = TRUE)
-  expect_match(html, "Ensembles de nombres x proportions", fixed = TRUE)
-})
 
 
 # ---- test-labo-ensembles-preuve.R ----
@@ -60,20 +46,6 @@ test_that("le labo ensembles distingue conjecture preuve et contre-exemple", {
   }, logical(1))))
 })
 
-test_that("le labo ensembles alimente produire_quiz", {
-  fichier = tempfile(fileext = ".html")
-  sortie = produire_quiz(
-    exercices_ensembles_preuve(seed = 2026),
-    fichier = fichier,
-    ouvrir = FALSE,
-    titre = "Comment sais-tu que c'est vrai ?"
-  )
-
-  expect_true(file.exists(sortie))
-  html = paste(readLines(sortie, warn = FALSE), collapse = "\n")
-  expect_true(grepl("Question 5", html, fixed = TRUE), info = "Le labo doit contenir cinq questions.")
-  expect_true(grepl("Comment sais-tu que c'est vrai ?", html, fixed = TRUE), info = "Le titre du labo doit etre present.")
-})
 
 
 # ---- test-labo-oh-wait-euler.R ----
@@ -116,17 +88,3 @@ test_that("le texte pédagogique du labo OH WAIT reste lisible en UTF-8", {
   expect_match(x[[4L]]$reponse, "réfuter", fixed = TRUE)
 })
 
-test_that("le labo OH WAIT alimente produire_quiz", {
-  fichier = tempfile(fileext = ".html")
-  sortie = produire_quiz(
-    exercices_oh_wait_euler(seed = 2026),
-    fichier = fichier,
-    ouvrir = FALSE,
-    titre = "OH WAIT... beaucoup d'exemples suffisent-ils ?"
-  )
-
-  expect_true(file.exists(sortie))
-  html = paste(readLines(sortie, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
-  expect_true(grepl("Question 4", html, fixed = TRUE), info = "Le labo doit contenir quatre questions.")
-  expect_true(grepl("OH WAIT", html, fixed = TRUE), info = "Le moment OH WAIT doit atteindre le quiz produit.")
-})

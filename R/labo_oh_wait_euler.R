@@ -4,11 +4,6 @@
 #'
 #' @param seed Graine facultative pour melanger les propositions.
 #' @return Une liste de quatre exercices eduschool munis d'un QCM.
-#' @examples
-#' \dontrun{
-#' exercices_oh_wait_euler(seed = 2026) |>
-#'   produire_quiz(titre = "OH WAIT... beaucoup d'exemples suffisent-ils ?")
-#' }
 exercices_oh_wait_euler = function(seed = NULL) {
   textes = .textes_exercice("oh_wait_euler", "OH_WAIT_EULER")
   graines = if (is.null(seed)) rep(list(NULL), 4L) else as.list(seed + 0:3)

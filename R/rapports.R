@@ -53,274 +53,6 @@ libelle_capacite = function(capacite_id) {
   capacite_id
 }
 
-creer_lot_rapport = function(
-  niveau_id,
-  capacite_id = NULL,
-  n = 10,
-  difficulte = 1,
-  seed = 1
-) {
-  exercices = generer_fiche(
-    niveau_id = niveau_id,
-    capacite_id = capacite_id,
-    n = n,
-    difficulte = difficulte,
-    seed = seed
-  )
-
-  structure(
-    list(
-      niveau_id = niveau_id,
-      capacite_id = capacite_id,
-      n = n,
-      difficulte = difficulte,
-      seed = seed,
-      exercices = exercices,
-      notions = if (!is.null(capacite_id) && exists("notions_capacite")) notions_capacite(capacite_id) else NULL,
-      prerequis = if (!is.null(capacite_id) && exists("prerequis_capacite")) prerequis_capacite(capacite_id) else NULL
-    ),
-    class = c("rapport_exercices", "list")
-  )
-}
-
-#' Produire une fiche d'exercices historique
-#'
-#' Produit une fiche d'exercices au format LaTeX a partir d'un lot cree par
-#' le moteur historique de rapports. Cette fonction est conservee pour
-#' compatibilite ; pour les nouveaux usages, preferer [produire_fiche()].
-#'
-#' @param lot Objet de classe `rapport_exercices`, cree avec `creer_lot_rapport()`.
-#' @param sortie Chemin de sortie, avec ou sans extension `.tex`.
-#' @param compiler Si `TRUE`, compiler egalement le fichier LaTeX en PDF.
-#' @param titre Titre de la fiche.
-#' @param instructions Instructions affichees sur la fiche.
-#' @param afficher_metadonnees Afficher les metadonnees techniques des exercices.
-#' @param ouvrir Si `TRUE`, ouvrir le PDF produit lorsque la compilation a reussi.
-#' @return Invisiblement, une liste contenant les chemins du fichier LaTeX et
-#'   du PDF eventuel, ainsi que le lot utilise.
-#' @export
-produire_fiche_exercices = function(
-  lot,
-  sortie,
-  compiler = nzchar(Sys.which("pdflatex")),
-  titre = "Fiche d'exercices",
-  instructions = "R\u00e9diger les calculs et justifier les \u00e9tapes lorsque cela est n\u00e9cessaire.",
-  afficher_metadonnees = FALSE,
-  ouvrir = FALSE
-) {
-  if (!inherits(lot, "rapport_exercices"))
-    stop("'lot' doit \u00eatre cr\u00e9\u00e9 avec creer_lot_rapport().")
-
-  niveau = libelle_niveau(lot$niveau_id)
-  capacite = libelle_capacite(lot$capacite_id)
-  sous_titre = paste0(
-    niveau,
-    if (!is.null(capacite)) paste0(" \u2014 ", capacite) else "",
-    " \u2014 difficult\u00e9 ", lot$difficulte
-  )
-
-  fichier_tex = if (grepl("\\.tex$", sortie, ignore.case = TRUE)) sortie else paste0(sortie, ".tex")
-
-  rendre_tex_exercices(
-    exercices = lot$exercices,
-    fichier = fichier_tex,
-    corriges = FALSE,
-    titre = titre,
-    sous_titre = sous_titre,
-    instructions = instructions,
-    afficher_metadonnees = afficher_metadonnees
-  )
-
-  fichier_pdf = NULL
-  if (isTRUE(compiler))
-    fichier_pdf = compiler_tex(fichier_tex)
-
-  if (isTRUE(ouvrir) && !is.null(fichier_pdf))
-    .ouvrir_fichier(fichier_pdf)
-
-  invisible(list(tex = fichier_tex, pdf = fichier_pdf, lot = lot))
-}
-
-#' Produire un corrige d'exercices historique
-#'
-#' Produit le corrige LaTeX d'un lot d'exercices cree par le moteur historique
-#' de rapports. Cette fonction est conservee pour compatibilite ; pour les
-#' nouveaux usages, preferer [produire_corrige()].
-#'
-#' @param lot Objet de classe `rapport_exercices`, cree avec `creer_lot_rapport()`.
-#' @param sortie Chemin de sortie, avec ou sans extension `.tex`.
-#' @param compiler Si `TRUE`, compiler egalement le fichier LaTeX en PDF.
-#' @param titre Titre du corrige.
-#' @param afficher_metadonnees Afficher les metadonnees techniques des exercices.
-#' @param ouvrir Si `TRUE`, ouvrir le PDF produit lorsque la compilation a reussi.
-#' @return Invisiblement, une liste contenant les chemins du fichier LaTeX et
-#'   du PDF eventuel, ainsi que le lot utilise.
-#' @export
-produire_corrige_exercices = function(
-  lot,
-  sortie,
-  compiler = nzchar(Sys.which("pdflatex")),
-  titre = "Corrig\u00e9 des exercices",
-  afficher_metadonnees = FALSE,
-  ouvrir = FALSE
-) {
-  if (!inherits(lot, "rapport_exercices"))
-    stop("'lot' doit \u00eatre cr\u00e9\u00e9 avec creer_lot_rapport().")
-
-  niveau = libelle_niveau(lot$niveau_id)
-  capacite = libelle_capacite(lot$capacite_id)
-  sous_titre = paste0(
-    niveau,
-    if (!is.null(capacite)) paste0(" \u2014 ", capacite) else "",
-    " \u2014 difficult\u00e9 ", lot$difficulte
-  )
-
-  fichier_tex = if (grepl("\\.tex$", sortie, ignore.case = TRUE)) sortie else paste0(sortie, ".tex")
-
-  rendre_tex_exercices(
-    exercices = lot$exercices,
-    fichier = fichier_tex,
-    corriges = TRUE,
-    titre = titre,
-    sous_titre = sous_titre,
-    instructions = NULL,
-    afficher_metadonnees = afficher_metadonnees
-  )
-
-  fichier_pdf = NULL
-  if (isTRUE(compiler))
-    fichier_pdf = compiler_tex(fichier_tex)
-
-  if (isTRUE(ouvrir) && !is.null(fichier_pdf))
-    .ouvrir_fichier(fichier_pdf)
-
-  invisible(list(tex = fichier_tex, pdf = fichier_pdf, lot = lot))
-}
-
-#' Produire une fiche, son corrige et un manifeste
-#'
-#' Genere un lot d'exercices avec le moteur historique, produit la fiche et le
-#' corrige correspondants, puis ecrit un manifeste CSV decrivant les exercices
-#' generes. Pour les nouveaux usages, les fonctions [generer_fiche()],
-#' [produire_fiche()] et [produire_corrige()] sont a privilegier.
-#'
-#' @param niveau_id Identifiant du niveau scolaire.
-#' @param capacite_id Identifiant d'une capacite a cibler, ou `NULL` pour un lot mixte.
-#' @param n Nombre d'exercices a generer.
-#' @param difficulte Niveau de difficulte demande.
-#' @param seed Graine pseudo-aleatoire utilisee pour controler les tirages de la generation.
-#' @param sortie_dir Repertoire dans lequel ecrire les fichiers produits.
-#' @param prefixe Prefixe des noms de fichiers. Si `NULL`, il est construit a
-#'   partir du niveau, de la capacite, de la difficulte et de la graine.
-#' @param compiler Si `TRUE`, compiler les fichiers LaTeX en PDF.
-#' @param afficher_metadonnees Afficher les metadonnees techniques dans les documents.
-#' @param ouvrir Document PDF a ouvrir apres generation : `"aucun"`, `"fiche"`,
-#'   `"corrige"` ou `"les_deux"`.
-#' @return Invisiblement, une liste contenant le lot, la fiche, le corrige et
-#'   le chemin du manifeste CSV.
-#' @export
-produire_rapport_exercices = function(
-  niveau_id,
-  capacite_id = NULL,
-  n = 10,
-  difficulte = 1,
-  seed = 1,
-  sortie_dir = tempdir(),
-  prefixe = NULL,
-  compiler = nzchar(Sys.which("pdflatex")),
-  afficher_metadonnees = FALSE,
-  ouvrir = c("aucun", "fiche", "corrige", "les_deux")
-) {
-  ouvrir = match.arg(ouvrir)
-  dir.create(sortie_dir, recursive = TRUE, showWarnings = FALSE)
-
-  lot = creer_lot_rapport(
-    niveau_id = niveau_id,
-    capacite_id = capacite_id,
-    n = n,
-    difficulte = difficulte,
-    seed = seed
-  )
-
-  if (is.null(prefixe)) {
-    suffixe_cap = if (is.null(capacite_id)) "mixte" else normaliser_nom_fichier(capacite_id)
-    prefixe = paste0(
-      "math_", normaliser_nom_fichier(niveau_id), "_", suffixe_cap,
-      "_d", difficulte, "_s", seed
-    )
-  }
-
-  base_fiche = file.path(sortie_dir, paste0(prefixe, "_exercices"))
-  base_corrige = file.path(sortie_dir, paste0(prefixe, "_corrige"))
-
-  fiche = produire_fiche_exercices(
-    lot = lot,
-    sortie = base_fiche,
-    compiler = compiler,
-    afficher_metadonnees = afficher_metadonnees,
-    ouvrir = FALSE
-  )
-
-  corrige = produire_corrige_exercices(
-    lot = lot,
-    sortie = base_corrige,
-    compiler = compiler,
-    afficher_metadonnees = afficher_metadonnees,
-    ouvrir = FALSE
-  )
-
-  manifeste = data.frame(
-    numero = seq_along(lot$exercices),
-    exercice_id = vapply(lot$exercices, `[[`, character(1), "exercice_id"),
-    modele_id = vapply(lot$exercices, `[[`, character(1), "modele_id"),
-    capacite_id = vapply(lot$exercices, function(x) {
-      y = x$capacite_id
-      if (is.null(y) || length(y) == 0L || is.na(y)) "" else as.character(y)
-    }, character(1)),
-    difficulte = vapply(lot$exercices, `[[`, numeric(1), "difficulte"),
-    seed = vapply(lot$exercices, function(x) {
-      if (is.null(x$seed) || is.na(x$seed)) NA_integer_ else as.integer(x$seed)
-    }, integer(1)),
-    enonce = vapply(lot$exercices, `[[`, character(1), "enonce"),
-    reponse = vapply(lot$exercices, function(x) as.character(x$reponse), character(1)),
-    correction = vapply(lot$exercices, `[[`, character(1), "correction"),
-    stringsAsFactors = FALSE
-  )
-
-  fichier_manifeste = file.path(sortie_dir, paste0(prefixe, "_manifeste.csv"))
-  write.table(
-    manifeste,
-    fichier_manifeste,
-    sep = ";",
-    row.names = FALSE,
-    col.names = TRUE,
-    quote = TRUE,
-    fileEncoding = "UTF-8"
-  )
-
-  if (!identical(ouvrir, "aucun")) {
-    if (!isTRUE(compiler)) {
-      warning(
-        "Aucun PDF ne peut \u00eatre ouvert car la compilation PDF est d\u00e9sactiv\u00e9e.",
-        call. = FALSE
-      )
-    } else {
-      if (ouvrir %in% c("fiche", "les_deux") && !is.null(fiche$pdf))
-        .ouvrir_fichier(fiche$pdf)
-      if (ouvrir %in% c("corrige", "les_deux") && !is.null(corrige$pdf))
-        .ouvrir_fichier(corrige$pdf)
-    }
-  }
-
-  invisible(list(
-    lot = lot,
-    fiche = fiche,
-    corrige = corrige,
-    manifeste = fichier_manifeste
-  ))
-}
-
-
 # Construit un bloc Markdown autonome pouvant etre utilise par les sorties HTML/PDF futures.
 construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
   ns = notions_capacite(capacite_id)
@@ -342,7 +74,7 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 
 .verifier_exercices = function(exercices) {
   if (!is.list(exercices) || !length(exercices))
-    stop("`exercices` doit etre une liste non vide produite par generer_fiche().", call. = FALSE)
+    stop("`exercices` doit etre une liste non vide contenant des exercices eduschool.", call. = FALSE)
 
   valides = vapply(
     exercices,
@@ -577,8 +309,7 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 
 #' Produire une fiche d'exercices HTML ou PDF
 #'
-#' Transforme directement une liste produite par [exercices()] ou
-#' [generer_fiche()] en document. Accepte aussi le chemin d'un fichier Markdown
+#' Transforme directement une liste d'exercices eduschool en document. Accepte aussi le chemin d'un fichier Markdown
 #' (`.md`) ou un objet tabulaire (`matrix` ou `data.frame`). Un `data.frame`
 #' contenant `notion_id` et `libelle` est rendu comme une fiche de revision
 #' categorisee ; une colonne facultative `statut` permet d'indiquer les notions
@@ -588,7 +319,7 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' ouvert automatiquement.
 #'
 #' @param exercices Contenu a rendre : objet `eduschool_revision`, liste
-#'   d'exercices produite par [exercices()] ou [generer_fiche()], chemin vers un
+#'   d'exercices produite par une liste d exercices, chemin vers un
 #'   fichier Markdown (`.md`), matrice ou `data.frame`. Le nom de l'argument est
 #'   conserve pour compatibilite avec l'API existante.
 #' @param fichier Chemin de sortie, avec ou sans extension. Si `NULL`, un nom est
@@ -607,12 +338,6 @@ construire_bloc_documentaire = function(capacite_id, inclure_prerequis = TRUE) {
 #' \dontrun{
 #' revision("5E", "fractions") |>
 #'   produire_fiche()
-#'
-#' exercices("6E") |>
-#'   produire_fiche()
-#'
-#' exercices("6E") |>
-#'   produire_fiche(format = "html", ouvrir = FALSE)
 #'
 #' produire_fiche("ma-fiche.md", format = "html")
 #'

@@ -16,34 +16,6 @@ test_that("les textes pedagogiques peuvent vivre en UTF-8 hors du code R", {
   expect_match(enonce, "r\u00e9pondre", fixed = TRUE)
 })
 
-test_that("les premiers modeles de fractions partagent la meme ressource UTF-8", {
-  ids = c("FRAC_ADD_001", "FRAC_MULT_001", "FRAC_DIV_001")
-
-  for (id in ids) {
-    textes = eduschool:::.textes_exercice("fractions", id)
-    expect_true(length(textes) > 0L, info = id)
-    expect_false(anyDuplicated(names(textes)) > 0L, info = id)
-  }
-
-  multiplication = generer_exercice("FRAC_MULT_001", "5E", seed = 2026)
-  division = generer_exercice("FRAC_DIV_001", "5E", seed = 2026)
-
-  expect_match(multiplication$enonce, "écriture", fixed = TRUE)
-  expect_match(multiplication$correction, "numérateurs", fixed = TRUE)
-  expect_match(division$enonce, "équivalente", fixed = TRUE)
-  expect_match(division$correction, "à multiplier", fixed = TRUE)
-})
-
-
-test_that("le RETEX fractions conserve le francais et la boite mathematique", {
-  quotient = eduschool:::.textes_exercice("fractions", "FRAC_QUOT_001")
-  manquant = generer_fraction_terme_manquant(seed = 2026)
-
-  expect_match(quotient[["enonce_quotient_vers_fraction"]], "repr\u00e9sente", fixed = TRUE)
-  expect_match(manquant$enonce, "\u25a1", fixed = TRUE)
-  expect_false(grepl("?  ?", manquant$enonce, fixed = TRUE))
-})
-
 test_that("les textes de proportionnalite couvrent les cinq intentions pedagogiques", {
   attendus = list(
     PROP_001 = c("enonce", "correction", "feedback_ecart", "feedback_total", "feedback_moins", "feedback_plus"),

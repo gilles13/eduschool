@@ -21,7 +21,6 @@ test_that("produire_fiche ouvre le document par defaut", {
   expect_identical(formals(produire_corrige)$ouvrir, FALSE)
 })
 
-
 test_that("produire_fiche accepte une revision", {
   skip_if_not_installed("rmarkdown")
   skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")
@@ -29,40 +28,6 @@ test_that("produire_fiche accepte une revision", {
   fichier = tempfile("revision-eduschool-")
   sortie = revision("5E", "fractions") |>
     produire_fiche(fichier, format = "html", ouvrir = FALSE)
-
-  expect_true(file.exists(sortie))
-  expect_match(sortie, "\\.html$")
-})
-
-
-test_that("produire_fiche accepte directement l API simple exercices", {
-  skip_if_not_installed("rmarkdown")
-  skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")
-
-  fichier = tempfile("fiche-eduschool-")
-  sortie = exercices(
-    "6E",
-    n = 2,
-    seed = 123
-  ) |>
-    produire_fiche(fichier, format = "html", ouvrir = FALSE)
-
-  expect_true(file.exists(sortie))
-  expect_match(sortie, "\\.html$")
-})
-
-test_that("produire_corrige accepte le meme lot", {
-  skip_if_not_installed("rmarkdown")
-  skip_if(!rmarkdown::pandoc_available(), "Pandoc indisponible")
-
-  fichier = tempfile("corrige-eduschool-")
-  sortie = generer_fiche(
-    "6E",
-    "ITM_MAT_C3_6E_C09",
-    n = 2,
-    seed = 123
-  ) |>
-    produire_corrige(fichier, format = "html")
 
   expect_true(file.exists(sortie))
   expect_match(sortie, "\\.html$")
@@ -99,7 +64,6 @@ test_that("une fiche mixte annonce toutes les notions et non les identifiants", 
   expect_true(all(c("Fraction", "Proportionnalité") %in% id$concepts))
   expect_false(any(grepl("^MATC_", id$concepts)))
 })
-
 
 test_that("l entete Rmd reutilise le contrat commun sans accolades visibles", {
   info = eduschool:::.infos_entete_math(

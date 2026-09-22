@@ -16,7 +16,6 @@ Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports:
     ggplot2,
-    ggsketch,
     rmarkdown
 Suggests:
     testthat (>= 3.0.0),

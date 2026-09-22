@@ -10,16 +10,6 @@ test_that("le controle d integrite ne detecte pas d anomalie", {
 })
 
 
-test_that("les relations composites conservent leur identite", {
-  r = relations_si()
-  x = r[r$relation_id == "REL105", , drop = FALSE]
-  expect_equal(nrow(x), 1L)
-  expect_identical(x$table_source, "gabarits_exercices_questions")
-  expect_identical(x$table_cible, "gabarits_exercices_questions")
-  expect_identical(eduschool:::.colonnes_relation(x$colonne_source), c("gabarit_compose_id", "question_parent_id"))
-  expect_identical(eduschool:::.colonnes_relation(x$colonne_cible), c("gabarit_compose_id", "question_id"))
-})
-
 test_that("une cle etrangere composite respecte toutes ses colonnes", {
   src = data.frame(gabarit = c("A", "B", "B"), parent = c("Q1", "Q1", NA_character_), stringsAsFactors = FALSE)
   dst = data.frame(gabarit = c("A", "B"), question = c("Q1", "Q2"), stringsAsFactors = FALSE)

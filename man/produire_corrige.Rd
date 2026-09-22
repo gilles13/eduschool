@@ -17,7 +17,7 @@ produire_corrige(
 }
 \arguments{
 \item{exercices}{Contenu a rendre : objet `eduschool_revision`, liste
-d'exercices produite par [exercices()] ou [generer_fiche()], chemin vers un
+d'exercices produite par une liste d exercices, chemin vers un
 fichier Markdown (`.md`), matrice ou `data.frame`. Le nom de l'argument est
 conserve pour compatibilite avec l'API existante.}
 

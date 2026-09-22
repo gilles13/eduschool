@@ -84,16 +84,7 @@ Un **nombre** est un element. Un **ensemble** est une collection d'elements.
 
 ## Cinq rappels, comme cinq fruits et legumes
 
-La fiche n'est pas seulement faite pour etre lue. eduschool sait aussi fabriquer
-un petit entrainement auto-corrigeable a partir de la meme notion :
-
-```{r, eval=FALSE}
-q = exercices_ensembles_nombres(seed = 2026)
-produire_quiz(
-  q,
-  titre = "Mes 5 rappels sur les ensembles"
-)
-```
+La fiche peut aussi servir de point de depart a un entrainement.
 
 La premiere question part volontairement du mot *reel* et de son sens courant.
 Les suivantes reviennent sur le classement d'un nombre dans le plus petit
