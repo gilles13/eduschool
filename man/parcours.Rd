@@ -2,24 +2,16 @@
 % Please edit documentation in R/decouvrir.R
 \name{parcours}
 \alias{parcours}
-\title{Explorer un parcours scolaire}
+\title{Parcours scolaire}
 \usage{
-parcours(niveau, matiere = "all", version = "2026_2027", serie = NULL)
+parcours(niveau = NULL)
 }
 \arguments{
-\item{niveau}{Identifiant du niveau, par exemple `"6E"`, `"3E"` ou `"2GT"`.}
-
-\item{matiere}{Matiere a afficher. Par defaut `"all"`.}
-
-\item{version}{Version scolaire.}
-
-\item{serie}{Serie facultative au lycee.}
+\item{niveau}{Niveau scolaire facultatif, par exemple "3E" ou "2GT".}
 }
 \value{
-Un data.frame de synthese.
+Une liste structuree contenant les niveaux, les noeuds et les liens utiles.
 }
 \description{
-`parcours()` est la porte d'entree courte pour obtenir une synthese lisible
-d'un niveau scolaire. Elle s'appuie sur [genere_resume()] et ne remplace pas
-les fonctions de consultation plus detaillees.
+Construit les informations de parcours scolaire representees dans eduschool.
 }

@@ -450,3 +450,12 @@ Ne pas documenter chaque incident pour lui-même. Git conserve l'histoire
 Et avant le prochain patch :
 
 > **RTFM. Puis seulement le bistouri.**
+
+## Après un échec : revenir au contrat
+
+> **Après un échec, revenir au contrat et aux sources courantes, pas seulement corriger l'erreur précédente.**
+
+Une correction qui échoue ne déclenche pas une chaîne de rustines. Relire le
+contrat attendu, reprendre les fichiers réellement courants, reproduire ou
+comprendre l'écart, puis seulement proposer une nouvelle modification.
+L'utilisateur n'est pas l'environnement de test du développeur.

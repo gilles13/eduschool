@@ -2,21 +2,13 @@
 % Please edit documentation in R/table_multiplication.R
 \name{table_multiplication}
 \alias{table_multiplication}
-\title{Generer les tables de multiplication}
+\title{Tables de multiplication}
 \usage{
-table_multiplication(max = 9)
+table_multiplication(n = 1:9)
 }
 \arguments{
-\item{max}{Plus grande table et plus grand multiplicateur. Par defaut 9.}
-}
-\value{
-Une matrice de caracteres. Chaque cellule contient une table complete.
+\item{n}{Tables a produire. Par defaut, de 1 a 9.}
 }
 \description{
-Construit les tables de multiplication de 1 a `max` sous forme de blocs
-conventionnels, disposes sur trois colonnes.
-}
-\examples{
-table_multiplication()
-table_multiplication(5)
+Tables de multiplication
 }

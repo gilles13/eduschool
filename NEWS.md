@@ -1,3 +1,11 @@
+# eduschool 0.37.3
+
+## SI et tests : repartir de l’état actuel
+
+- Le numéro de version passe à 0.37.3 pour identifier explicitement l’état actuel du SI avant le nettoyage de la suite de tests historique.
+- `NAMESPACE` est réaligné sur les fonctions actuellement marquées `@export` dans le code source ; six exports manquants sont rétablis.
+- Ouverture du chantier d’audit de `controle_integrite_si()` et de refonte des tests : seuls les contrats et invariants encore utiles au package actuel ont vocation à être conservés.
+
 # eduschool 0.37.2
 
 ## Fiches, quiz et qualité des textes

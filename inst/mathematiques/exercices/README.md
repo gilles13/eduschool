@@ -40,3 +40,26 @@ Les fichiers `inst/exercices/textes_*.md` restent provisoirement la source du
 moteur historique pendant la transition. Ils sont un carton de déménagement,
 pas le format cible. Ils pourront disparaître lorsque les générateurs R liront
 directement ces banques.
+
+## Questions calculables
+
+Lorsqu'une formulation peut etre instanciee et verifiee par R, elle porte trois blocs locaux :
+
+```markdown
+#### PARAMETRES
+
+a = sample(2:12, 1)
+b = sample(2:12, 1)
+
+#### CALCUL
+
+a * b
+
+#### MOTEUR
+
+R
+```
+
+`PARAMETRES` produit les valeurs utilisees par les marqueurs de la formulation, dans leur ordre. `CALCUL` exprime la verite attendue a partir de ces memes valeurs. `MOTEUR` vaut `R` pour un calcul numerique direct ou `Ryacas` lorsqu'une verification symbolique est pertinente.
+
+Une question purement editoriale n'invente pas de calcul pour satisfaire ce format : elle peut rester sans ces blocs tant qu'une verite executable n'a pas ete definie.

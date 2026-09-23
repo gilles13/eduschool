@@ -1,50 +1,53 @@
 # API publique
 
-## Façade principale
+L'API active d'eduschool est volontairement petite. Le mini-SI, les banques de
+questions et les anciens moteurs restent des ressources internes tant qu'une
+fonction publique simple n'en a pas besoin.
 
-Depuis la version 0.12.0, l'entrée recommandée dans `eduschool` s'organise autour
-de quelques verbes courts :
-
-- `parcours()` : comprendre un niveau scolaire ;
-- `orientation()` : voir les bifurcations possibles ;
-- `programme()` : consulter les capacités d'un programme ;
-- `revision()` : préparer le contenu d'une fiche de révision de mathématiques ;
-- `exercices()` : générer simplement un lot d'exercices ;
-- `produire_fiche()` : rendre une fiche à partir d'une révision, d'exercices ou
-  d'un autre contenu pédagogique pris en charge.
-
-Cette façade ne remplace pas les fonctions historiques. Elle les compose et offre
-une convention plus facile à mémoriser. Pour les usages centrés sur une notion,
-le niveau est facultatif : `revision("fractions")` et `exercices("fractions")`
-laissent eduschool retrouver le niveau lorsqu'il est non ambigu. Un niveau explicite
-reste un filtre disponible, par exemple `revision("5E", "fractions")`.
-
-## API détaillée
-
-Les fonctions plus spécialisées restent publiques pour les utilisateurs qui ont
-besoin de contrôler précisément les données et les sorties :
-
-- référentiels : `niveaux()`, `voies()`, `series()`, `disciplines()`, `enseignements()` ;
-- programmes : `programmes()`, `capacites()` ;
-- documentation : `notions()` pour lister les notions et leur `notion_id`, `notions_niveau()` pour les filtrer par niveau, `chercher_notions()` pour les retrouver par leur libellé, puis `notions_capacite()`, `prerequis_capacite()` et `obtenir_rappel()` pour aller plus loin ;
-- révisions : `generer_revision()`, `generer_essentiel()`, `produire_revision()` ;
-- orientation : fonctions `parcoursup_*()`, `filieres_postbac()` et fonctions de diagrammes ;
-- mini-SI : `tables_si()`, `relations_si()`, `controle_integrite_si()` ;
-- ressources : `eduschool_path()`.
-
-Le catalogue `notions()` est centré sur les mathématiques. La colonne `notion_id` est l'identifiant stable des notions. Le libellé reste destiné
-à la lecture humaine. Par exemple :
+## J'arrive
 
 ```r
-chercher_notions("fraction")
-exercices("MAT_FRACTION_SENS")
+eduschool()
+choix()
 ```
 
-## Composition et contribution
+`eduschool()` montre les portes d'entree. `choix()` donne les libelles exacts
+utilisables et progresse par `niveau -> theme -> notion`.
 
-La prochaine couche de l'API publique concernera la création de supports. Le but
-est que les fiches distribuées par `eduschool` et les fiches personnelles soient
-construites avec les mêmes briques publiques : création, ajout de notions,
-graphiques, exercices et production du document.
+## Je decouvre
 
-Une fonction non exportée peut évoluer sans garantie de compatibilité.
+```r
+parcours("6E")
+notions(niveau = "6E")
+```
+
+`parcours()` et `notions()` lisent le meme coeur relationnel actif. Les anciens
+identifiants DOMAINE/THEME/CAPACITE restent de la plomberie interne.
+
+## Je revise
+
+```r
+fiches("6E")
+```
+
+`fiches()` inventorie les fiches de revision qui existent reellement dans
+`inst/revision/`. Elle ne promet pas une fiche absente.
+
+## Je m'exerce
+
+```r
+questions(banque = "fractions")
+question(banque = "fractions")
+quiz(5, banque = "fractions")
+```
+
+Les banques Markdown formulent ; R doit calculer et verifier. Tant qu'un
+modele contient encore `%d` ou `%s` sans generateur R associe, `question()` et
+`quiz()` exposent ce modele tel quel. Ils ne fabriquent ni valeur ni reponse.
+C'est une limite visible, pas une fausse fonctionnalite.
+
+## Regle d'evolution
+
+Une nouvelle fonction publique doit rendre un service immediat. Une piece de
+`legacy/` ne revient dans le code actif que lorsqu'une fonction actuelle en a
+besoin. Git garde l'histoire ; l'API active garde le service.

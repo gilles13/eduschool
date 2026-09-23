@@ -1,217 +1,150 @@
-# ============================================================
-# Decouvrir avec eduschool
-# ============================================================
-
-#' Explorer un parcours scolaire
-#'
-#' `parcours()` est la porte d'entree courte pour obtenir une synthese lisible
-#' d'un niveau scolaire. Elle s'appuie sur [genere_resume()] et ne remplace pas
-#' les fonctions de consultation plus detaillees.
-#'
-#' @param niveau Identifiant du niveau, par exemple `"6E"`, `"3E"` ou `"2GT"`.
-#' @param matiere Matiere a afficher. Par defaut `"all"`.
-#' @param version Version scolaire.
-#' @param serie Serie facultative au lycee.
-#' @return Un data.frame de synthese.
-#' @export
-parcours = function(niveau, matiere = "all", version = "2026_2027", serie = NULL) {
-  genere_resume(
-    niveau = niveau,
-    matiere = matiere,
-    version = version,
-    serie = serie
-  )
+.chemin_eduschool = function(...) {
+  chemin = system.file(..., package = "eduschool")
+  if (!nzchar(chemin)) chemin = file.path("inst", ...)
+  chemin
 }
 
-#' Explorer les choix d'orientation
+#' Decouvrir eduschool
 #'
-#' Sans argument, `orientation()` retourne le graphe d'orientation complet.
-#' Avec un niveau ou un noeud de parcours, elle retourne les choix immediats
-#' modelises dans eduschool.
+#' Affiche les principales portes d'entree du package.
 #'
-#' @param niveau Niveau ou noeud de depart, par exemple `"3E"`, `"2GT"` ou
-#'   `"TG"`. Si `NULL`, retourne le graphe complet.
-#' @return Une liste `noeuds`/`liens`, ou un data.frame des choix immediats.
+#' @return Invisiblement, le nom des fonctions presentees.
 #' @export
-orientation = function(niveau = NULL) {
-  p = orientation_parcours()
-  if (is.null(niveau)) return(p)
+#' @examples
+#' eduschool()
+eduschool = function() {
+  fonctions = c(
+    "eduschool",
+    "parcours",
+    "notions",
+    "fiches",
+    "choix",
+    "questions",
+    "question",
+    "quiz"
+  )
 
-  if (length(niveau) != 1L || is.na(niveau) || !nzchar(trimws(niveau))) {
-    stop("`niveau` doit contenir une seule valeur non vide.", call. = FALSE)
+  descriptions = c(
+    "par o\u00f9 commencer ?",
+    "comment est organis\u00e9e la scolarit\u00e9 ?",
+    "qu'est-ce qu'on apprend ?",
+    "qu'est-ce que je peux r\u00e9viser ?",
+    "qu'est-ce que je peux saisir ?",
+    "quelles questions sont disponibles ?",
+    "donne-moi une question",
+    "faisons un quiz"
+  )
+
+  largeur = max(nchar(paste0(fonctions, "()"))) + 3L
+
+  cat(
+    sprintf(
+      paste0("%-", largeur, "s\u2192 %s\n"),
+      paste0(fonctions, "()"),
+      descriptions
+    ),
+    sep = ""
+  )
+
+  invisible(fonctions)
+}
+
+#' Parcours scolaire
+#'
+#' Construit les informations de parcours scolaire representees dans eduschool.
+#'
+#' @param niveau Niveau scolaire facultatif, par exemple "3E" ou "2GT".
+#' @return Une liste structuree contenant les niveaux, les noeuds et les liens utiles.
+#' @export
+parcours = function(niveau = NULL) {
+  lire = function(...) {
+    read.csv(
+      .chemin_eduschool(...),
+      sep = ";",
+      stringsAsFactors = FALSE,
+      check.names = FALSE
+    )
   }
 
-  n = p$noeuds
+  niveaux = lire("referentiels", "niveaux.csv")
+  noeuds = lire("orientation", "parcours_noeuds.csv")
+  liens = lire("orientation", "parcours_liens.csv")
+
+  if (is.null(niveau)) {
+    return(list(
+      titre = "Parcours scolaire",
+      niveau = NULL,
+      niveaux = niveaux,
+      noeuds = noeuds,
+      liens = liens
+    ))
+  }
+
   cle = toupper(trimws(as.character(niveau)))
-  depart = n$noeud_id[toupper(n$noeud_id) == cle | toupper(n$niveau_id) == cle]
-  depart = unique(depart[nzchar(depart)])
+  i_noeud = match(cle, toupper(noeuds$noeud_id))
+  i_niveau = match(cle, toupper(niveaux$niveau_id))
 
-  if (!length(depart)) {
-    stop("Niveau ou noeud d'orientation inconnu : ", niveau, call. = FALSE)
+  if (is.na(i_noeud) && is.na(i_niveau)) {
+    stop("Niveau inconnu : ", niveau, ". Utilisez choix().", call. = FALSE)
   }
 
-  l = p$liens[p$liens$de %in% depart, , drop = FALSE]
-  if (!nrow(l)) {
-    return(data.frame(
-      depart = character(),
-      choix_id = character(),
-      choix = character(),
-      transition = character(),
-      stringsAsFactors = FALSE
-    ))
-  }
-
-  i = match(l$vers, n$noeud_id)
-  data.frame(
-    depart = l$de,
-    choix_id = l$vers,
-    choix = n$libelle[i],
-    transition = l$libelle,
-    stringsAsFactors = FALSE
-  )
-}
-
-#' Consulter un programme scolaire
-#'
-#' `programme()` fournit une vue directement exploitable des capacites d'un
-#' niveau et d'une discipline. Les fonctions [programmes()] et [capacites()]
-#' restent disponibles pour les consultations plus techniques.
-#'
-#' @param niveau Niveau scolaire.
-#' @param discipline Discipline, `"MAT"` par defaut.
-#' @param version Version scolaire facultative.
-#' @param detail Niveau de lecture : `"themes"` pour les grands themes,
-#'   `"capacites"` pour les capacites attendues, ou `"complet"` pour ajouter
-#'   leur description detaillee.
-#' @return Un data.frame organise par theme. Le niveau de detail depend de
-#'   `detail`.
-#' @export
-programme = function(
-  niveau,
-  discipline = "MAT",
-  version = NULL,
-  detail = c("capacites", "themes", "complet")
-) {
-  detail = match.arg(detail)
-  discipline_id = .normaliser_matiere(discipline)
-  x = capacites(
-    niveau_id = niveau,
-    discipline_id = discipline_id,
-    version_id = version
-  )
-
-  if (!nrow(x)) return(x)
-
-  items = .lire_csv("programmes", "programme_items.csv")
-  parents = items[, c("item_id", "libelle", "ordre"), drop = FALSE]
-  names(parents) = c("parent_item_id", "theme", "ordre_theme")
-  x = merge(x, parents, by = "parent_item_id", all.x = TRUE, sort = FALSE)
-  x$capacite = x$libelle
-
-  ordre_capacite = suppressWarnings(as.numeric(x$ordre))
-  ordre_theme = suppressWarnings(as.numeric(x$ordre_theme))
-  x = x[order(ordre_theme, ordre_capacite, x$theme, x$capacite, na.last = TRUE), , drop = FALSE]
-
-  if (identical(detail, "themes")) {
-    garder = c("niveau_id", "version_id", "programme_id", "parent_item_id", "theme", "source_id")
-    garder = garder[garder %in% names(x)]
-    x = x[, garder, drop = FALSE]
-    x = x[!duplicated(x[c("programme_id", "parent_item_id")]), , drop = FALSE]
+  noeud = if (is.na(i_noeud)) {
+    noeuds[0, , drop = FALSE]
   } else {
-    garder = c(
-      "niveau_id", "version_id", "programme_id", "item_id",
-      "parent_item_id", "theme", "capacite",
-      if (identical(detail, "complet")) "description",
-      "source_id"
-    )
-    garder = garder[garder %in% names(x)]
-    x = x[, garder, drop = FALSE]
+    noeuds[i_noeud, , drop = FALSE]
   }
 
-  attr(x, "eduschool_detail") = detail
-  attr(x, "eduschool_niveau") = niveau
-  attr(x, "eduschool_discipline") = discipline_id
-  rownames(x) = NULL
-  x
-}
-
-.niveau_math_rang = function(x) {
-  rangs = c("6E" = 1L, "5E" = 2L, "4E" = 3L, "3E" = 4L, "2GT" = 5L, "1G" = 6L, "TG" = 7L)
-  unname(rangs[as.character(x)])
-}
-
-.relations_notion = function(concept) {
-  relations = relations_concepts_math(concept$concept_id[[1L]])
-  if (!nrow(relations)) {
-    return(data.frame(
-      sens = character(), notion = character(), relation = character(),
-      commentaire = character(), stringsAsFactors = FALSE
-    ))
+  info_niveau = if (is.na(i_niveau)) {
+    niveaux[0, , drop = FALSE]
+  } else {
+    niveaux[i_niveau, , drop = FALSE]
   }
 
-  concepts = concepts_math()
-  id = concept$concept_id[[1L]]
-  ids_lies = ifelse(relations$concept_id == id, relations$concept_lie_id, relations$concept_id)
-  i = match(ids_lies, concepts$concept_id)
-
-  rang_courant = .niveau_math_rang(concept$niveau_introduction[[1L]])
-  rang_lie = .niveau_math_rang(concepts$niveau_introduction[i])
-  sens = ifelse(
-    !is.na(rang_lie) & !is.na(rang_courant) & rang_lie < rang_courant,
-    "amont",
-    ifelse(
-      !is.na(rang_lie) & !is.na(rang_courant) & rang_lie > rang_courant,
-      "aval",
-      "autour"
-    )
-  )
-
-  out = data.frame(
-    sens = sens,
-    notion = concepts$libelle[i],
-    relation = relations$type_relation,
-    commentaire = relations$commentaire,
-    stringsAsFactors = FALSE
-  )
-  out[order(match(out$sens, c("amont", "autour", "aval")), out$notion), , drop = FALSE]
-}
-
-#' Decouvrir une notion mathematique
-#'
-#' `notion()` est une porte d'entree en langage courant vers les concepts
-#' mathematiques d'eduschool. Elle retrouve une notion a partir de son nom,
-#' donne sa definition et montre les notions qui l'entourent dans le parcours
-#' mathematique.
-#'
-#' Les relations sont classees en `"amont"`, `"autour"` et `"aval"` a partir
-#' du niveau auquel les concepts sont introduits. Cette lecture est volontairement
-#' pedagogique : elle ne remplace pas la relation semantique detaillee conservee
-#' dans `relation` et `commentaire`.
-#'
-#' @param nom Nom de la notion en langage courant, par exemple
-#'   `"proportionnalite"`, `"fractions"` ou `"pythagore"`.
-#' @return Une liste contenant la notion et ses relations pedagogiques.
-#' @export
-notion = function(nom = NULL) {
-  if (is.null(nom)) {
-    stop(
-      "`notion()` attend un identifiant de notion.\n\n",
-      "Pour d\u00e9couvrir les notions disponibles :\n  notions()\n\n",
-      "Exemple :\n  notion(\"fractions\")",
-      call. = FALSE
-    )
+  liens_niveau = if (nrow(noeud)) {
+    liens[liens$de == noeud$noeud_id[1], , drop = FALSE]
+  } else {
+    liens[0, , drop = FALSE]
   }
-
-  concept = .resoudre_notion(nom)
-
-  garder = c(
-    "concept_id", "libelle", "definition", "domaine",
-    "statut", "niveau_introduction"
-  )
-  garder = garder[garder %in% names(concept)]
 
   list(
-    notion = concept[, garder, drop = FALSE],
-    relations = .relations_notion(concept)
+    titre = "Parcours scolaire",
+    niveau = cle,
+    niveaux = info_niveau,
+    noeuds = noeud,
+    liens = liens_niveau
+  )
+}
+
+#' Notions mathematiques
+#'
+#' Construit les notions connues d'eduschool, organisees par niveau et par theme.
+#'
+#' @param niveau Niveau facultatif.
+#' @param theme Theme facultatif.
+#' @return Une liste structuree contenant les notions et leur organisation par theme.
+#' @export
+notions = function(niveau = NULL, theme = NULL) {
+  x = .donnees_choix()
+  if (!is.null(niveau)) x = x[x$niveau == niveau, , drop = FALSE]
+  if (!is.null(theme)) x = x[x$theme == theme, , drop = FALSE]
+  x = unique(x[c("niveau", "theme", "notion")])
+  rownames(x) = NULL
+
+  groupes = split(x, interaction(x$niveau, x$theme, drop = TRUE))
+  themes = lapply(groupes, function(y) {
+    list(
+      niveau = y$niveau[1],
+      theme = y$theme[1],
+      notions = y$notion
+    )
+  })
+  names(themes) = NULL
+
+  list(
+    titre = "Notions mathematiques",
+    niveau = niveau,
+    theme = theme,
+    themes = themes,
+    donnees = x
   )
 }
