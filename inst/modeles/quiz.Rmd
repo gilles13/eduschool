@@ -1,0 +1,119 @@
+---
+title: "Quiz de mathématiques"
+params:
+  notion: "addition_fractions"
+  support: "quiz"
+  variantes: 5
+output:
+  html_document: default
+  pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+banque = eduschool::questions(params$notion)
+html = knitr::is_html_output()
+# Tirages calcules en R a la publication : aucun interpreteur R dans le navigateur.
+tirages = lapply(seq_len(if (html) params$variantes else 1L), function(i) {
+  lapply(banque$questions, eduschool::question)
+})
+```
+
+```{r interactif, echo=FALSE, results='asis'}
+if (html) {
+  # Ne jamais injecter de contenu editorial directement comme HTML ou JavaScript.
+  donnees = jsonlite::toJSON(tirages, auto_unbox = TRUE, null = "null")
+  donnees = gsub("<", "\\\\u003c", donnees, fixed = TRUE)
+  donnees = gsub(">", "\\\\u003e", donnees, fixed = TRUE)
+  cat('<div id="edu-quiz"><div id="edu-questions"></div>',
+      '<button id="edu-valider" type="button">Verifier mes reponses</button> ',
+      '<button id="edu-relancer" type="button">Relancer le quiz</button>',
+      '<p id="edu-bilan" aria-live="polite"></p></div>\n')
+  cat('<script type="application/json" id="edu-donnees">', donnees, '</script>\n', sep = '')
+  cat('<script>\n',
+'(() => {
+  const variantes = JSON.parse(document.getElementById("edu-donnees").textContent);
+  const zone = document.getElementById("edu-questions");
+  const bilan = document.getElementById("edu-bilan");
+  let tour = 0;
+  function noeud(type, texte, parent) {
+    const el = document.createElement(type);
+    el.textContent = texte;
+    parent.appendChild(el);
+    return el;
+  }
+  function afficher() {
+    zone.replaceChildren(); bilan.textContent = "";
+    variantes[tour].forEach((q, i) => {
+      const bloc = document.createElement("section");
+      bloc.className = "edu-question";
+      noeud("h3", (i + 1) + ". " + q.enonce, bloc);
+      if (q.propositions && q.propositions.length) {
+        q.propositions.forEach((p, j) => {
+          const etiquette = document.createElement("label");
+          const bouton = document.createElement("input");
+          bouton.type = "radio"; bouton.name = "q" + i;
+          bouton.value = p; bouton.id = "edu-q" + i + "-" + j;
+          etiquette.appendChild(bouton);
+          noeud("span", " " + p, etiquette);
+          bloc.appendChild(etiquette);
+          bloc.appendChild(document.createElement("br"));
+        });
+      } else {
+        const entree = document.createElement("input");
+        entree.type = "text"; entree.setAttribute("aria-label", "Votre reponse");
+        bloc.appendChild(entree);
+      }
+      const correction = noeud("div", "", bloc);
+      correction.className = "edu-correction";
+      correction.hidden = true;
+      zone.appendChild(bloc);
+    });
+  }
+  document.getElementById("edu-valider").addEventListener("click", () => {
+    let bonnes = 0, total = 0;
+    variantes[tour].forEach((q, i) => {
+      const bloc = zone.children[i];
+      const coche = bloc.querySelector("input[type=radio]:checked");
+      const saisie = bloc.querySelector("input[type=text]");
+      const valeur = coche ? coche.value : (saisie ? saisie.value.trim() : "");
+      const juste = valeur === String(q.reponse).trim();
+      if (valeur) { total++; if (juste) bonnes++; }
+      const correction = bloc.querySelector(".edu-correction");
+      correction.textContent = (juste ? "Bonne reponse. " : "Reponse attendue : " + q.reponse + ". ") +
+        (q.correction || "");
+      correction.hidden = false;
+    });
+    bilan.textContent = bonnes + " reponse(s) correcte(s) sur " + variantes[tour].length +
+      " (" + total + " reponse(s) fournies).";
+  });
+  document.getElementById("edu-relancer").addEventListener("click", () => {
+    tour = (tour + 1) % variantes.length;
+    afficher();
+  });
+  afficher();
+})();\n', '</script>\n', sep = '')
+  cat('<style>.edu-question {margin:1.4em 0;padding:1em;border:1px solid #bbb}',
+      '.edu-correction {margin-top:.8em;white-space:pre-wrap}',
+      '.edu-question label {cursor:pointer}</style>\n')
+}
+```
+
+```{r imprimable, echo=FALSE, results='asis'}
+if (!html) {
+  for (i in seq_along(tirages[[1L]])) {
+    q = tirages[[1L]][[i]]
+    cat("\n## Question ", i, "\n\n", q$enonce, "\n\n", sep = "")
+    if (length(q$propositions)) {
+      for (p in q$propositions) cat("- ", p, "\n", sep = "")
+      cat("\n")
+    } else cat("\nReponse : ........................................\n\n")
+  }
+  cat("\n\\newpage\n\n# Corrige\n\n")
+  for (i in seq_along(tirages[[1L]])) {
+    q = tirages[[1L]][[i]]
+    cat("\n## Question ", i, "\n\n**Reponse :** ", q$reponse,
+        "\n\n**Correction :** ", q$correction, "\n\n", sep = "")
+  }
+}
+```

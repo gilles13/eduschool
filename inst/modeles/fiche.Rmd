@@ -1,0 +1,47 @@
+---
+title: "Fiche de mathématiques"
+params:
+  notion: "addition_fractions"
+  support: "decouverte"
+  variantes: 5
+output:
+  html_document: default
+  pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+banque = eduschool::questions(params$notion)
+```
+
+```{r contenu, echo=FALSE, results='asis'}
+fichier = system.file("notions", params$notion, paste0(params$support, ".md"),
+                      package = "eduschool")
+stopifnot(nzchar(fichier))
+cat(paste(readLines(fichier, encoding = "UTF-8", warn = FALSE), collapse = "\n"), "\n\n")
+```
+
+```{r graphique, echo=FALSE, fig.width=5, fig.height=4}
+if (params$notion == "pythagore") {
+  print(eduschool::illustrer_question(eduschool::question(banque$questions[[1L]])))
+} else if (params$support == "decouverte") {
+  parts = data.frame(part = factor(seq_len(6)), valeur = rep(1, 6),
+                     selection = factor(c(rep("1/2", 3), rep("1/3", 2), "reste")))
+  print(ggplot2::ggplot(parts, ggplot2::aes(part, valeur, fill = selection)) +
+          ggplot2::geom_col(colour = "white") +
+          ggplot2::labs(title = "Sixièmes : 3/6 + 2/6 = 5/6", x = NULL, y = NULL) +
+          ggplot2::theme_minimal())
+}
+```
+
+```{r revision, echo=FALSE, results='asis'}
+if (params$support == "revision") {
+  cat("\n## Exercices corrigés\n\n")
+  for (definition in banque$questions) {
+    q = eduschool::question(definition)
+    cat("**", q$enonce, "**\n\n", sep = "")
+    cat("**Réponse :** ", q$reponse, "\n\n", sep = "")
+    cat("**Explication :** ", q$correction, "\n\n", sep = "")
+  }
+}
+```

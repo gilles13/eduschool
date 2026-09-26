@@ -1,0 +1,311 @@
+{
+  "statut": "sources_historiques_non_converties",
+  "familles": {
+    "Multiplication de fractions": [
+      {
+        "notion_historique": "Multiplication de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle écriture permet de calculer ({a}/{b}) x ({c}/{d}) ?",
+        "parametres": "a = sample(1:8,1)\nb = sample(2:9,1)\nc = sample(1:8,1)\nd = sample(2:9,1)",
+        "calcul": "(a*c)/(b*d)",
+        "distracteurs": "(a+c)/(b+d)\n(a*c)/(b+d)\n(a+c)/(b*d)",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Multiplication de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction se cache dans la boîte ?  □ × {c}/{d} = {produit_num}/{produit_den}",
+        "parametres": "c = sample(1:8,1)\nd = sample(2:9,1)\na = sample(1:8,1)\nb = sample(2:9,1)\nproduit_num = a*c\nproduit_den = b*d",
+        "calcul": "(produit_num/produit_den) / (c/d)",
+        "distracteurs": "(produit_num/produit_den) * (c/d)\n(produit_num/produit_den) / (d/c)\nc/d",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Multiplication de fractions",
+        "type_historique": "libre",
+        "enonce": "Par quelle fraction faut-il multiplier {a}/{b} pour obtenir {produit_num}/{produit_den} ?",
+        "parametres": "a = sample(1:8,1)\nb = sample(2:9,1)\nproduit_num = sample(1:8,1)\nproduit_den = sample(2:9,1)",
+        "calcul": "(produit_num/produit_den) / (a/b)",
+        "distracteurs": "(produit_num/produit_den) * (a/b)\n(produit_num/produit_den) / (b/a)\na/b",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Division de fractions": [
+      {
+        "notion_historique": "Division de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle multiplication est équivalente à ({a}/{b}) ÷ ({c}/{d}) ?",
+        "parametres": "a = sample(1:8,1)\nb = sample(2:9,1)\nc = sample(1:8,1)\nd = sample(2:9,1)",
+        "calcul": "(a/b) * (d/c)",
+        "distracteurs": "(a/b) * (c/d)\n(a*d)/(b*d)\n(a*c)/(b*c)",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Division de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction se cache dans la boîte ?  □ ÷ ({c}/{d}) = {resultat_num}/{resultat_den}",
+        "parametres": "c = sample(1:8,1)\nd = sample(2:9,1)\nresultat_num = sample(1:8,1)\nresultat_den = sample(2:9,1)",
+        "calcul": "(resultat_num/resultat_den) * (c/d)",
+        "distracteurs": "(resultat_num/resultat_den) / (c/d)\n(resultat_num/resultat_den) * (d/c)\nresultat_num/resultat_den",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Division de fractions",
+        "type_historique": "libre",
+        "enonce": "Je divise une fraction par {c}/{d} et j'obtiens {resultat_num}/{resultat_den}. Quelle était la fraction de départ ?",
+        "parametres": "c = sample(1:8,1)\nd = sample(2:9,1)\nresultat_num = sample(1:8,1)\nresultat_den = sample(2:9,1)",
+        "calcul": "(resultat_num/resultat_den) * (c/d)",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Fraction d’une quantité": [
+      {
+        "notion_historique": "Fraction d’une quantité",
+        "type_historique": "libre",
+        "enonce": "Une boîte contient {quantite} objets. On en utilise {a}/{b}. Combien d’objets sont utilisés ?",
+        "parametres": "quantite = sample(seq(12,120,12),1)\na = sample(1:5,1)\nb = sample(2:6,1)",
+        "calcul": "quantite * a / b",
+        "distracteurs": "quantite / a * b\nquantite * b / a\nquantite / b",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Fraction d’une quantité",
+        "type_historique": "libre",
+        "enonce": "Quel nombre se cache dans la boîte ?  {a}/{b} × □ = {resultat}",
+        "parametres": "a = sample(1:5,1)\nb = sample(2:6,1)\nresultat = sample(2:20,1)",
+        "calcul": "resultat * b / a",
+        "distracteurs": "resultat * a / b\nresultat / b\nresultat / a",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Fraction d’une quantité",
+        "type_historique": "libre",
+        "enonce": "Un {contenant} contient {quantite} {unite}. On en utilise {a}/{b}. Combien en reste-t-il ?",
+        "parametres": "contenant = sample(c(\"sac\", \"carton\", \"lot\"),1)\nquantite = sample(seq(12,120,12),1)\nunite = sample(c(\"objets\", \"billes\", \"jetons\"),1)\na = sample(1:5,1)\nb = sample(2:6,1)",
+        "calcul": "quantite * (1 - a/b)",
+        "distracteurs": "quantite * a/b\nquantite * (1 - b/a)\nquantite - a/b",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Fraction et quotient": [
+      {
+        "notion_historique": "Fraction et quotient",
+        "type_historique": "libre",
+        "enonce": "Quel quotient est exactement égal à {a}/{b} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)",
+        "calcul": "a / b",
+        "distracteurs": "b / a\na / (a+b)\n(a+b) / b",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Fraction et quotient",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction représente exactement le quotient {a} / {b} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)",
+        "calcul": "a / b",
+        "distracteurs": "b / a\na / (a+b)\n(a+b) / b",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Fractions sur une droite graduée": [
+      {
+        "notion_historique": "Fractions sur une droite graduée",
+        "type_historique": "libre",
+        "enonce": "Sur une demi-droite, chaque unité est partagée en {b} parts égales. Le point A est à la {a}e graduation après 0. Quelle est son abscisse ?",
+        "parametres": "b = sample(2:12,1)\na = sample(1:(3*b),1)",
+        "calcul": "a / b",
+        "distracteurs": "b / a\n(a+1) / b\na / (b+1)",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Fractions équivalentes": [
+      {
+        "notion_historique": "Fractions équivalentes",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction est égale à {a}/{b} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)",
+        "calcul": "a / b",
+        "distracteurs": "b / a\n(a*2) / b\na / (b*2)",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Comparer des fractions": [
+      {
+        "notion_historique": "Comparer des fractions",
+        "type_historique": "libre",
+        "enonce": "Quel signe complète correctement : {a}/{b} ... {c}/{d} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)\nc = sample(1:20,1)\nd = sample(2:20,1)",
+        "calcul": "sign(a/b - c/d)",
+        "moteur": "R"
+      }
+    ],
+    "Encadrer une fraction": [
+      {
+        "notion_historique": "Encadrer une fraction",
+        "type_historique": "libre",
+        "enonce": "Quel encadrement entre deux entiers consécutifs est correct pour {fraction} ?",
+        "parametres": "a = sample(1:30,1)\nb = sample(2:12,1)\nfraction = paste0(a,\"/\",b)",
+        "calcul": "c(floor(a/b), ceiling(a/b))",
+        "moteur": "R"
+      }
+    ],
+    "Soustraction de fractions": [
+      {
+        "notion_historique": "Soustraction de fractions",
+        "type_historique": "libre",
+        "enonce": "Calculer et simplifier : {a}/{b} - {c}/{d}",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)\nc = sample(1:20,1)\nd = sample(2:20,1)",
+        "calcul": "a/b - c/d",
+        "distracteurs": "(a-c)/(b-d)\n(a-c)/(b*d)\n(a*d-c*d)/(b*d)",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Soustraction de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction se cache dans la boîte ?  {a}/{b} - □ = {resultat_num}/{resultat_den}",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)\nresultat_num = sample(1:10,1)\nresultat_den = sample(2:10,1)",
+        "calcul": "a/b - resultat_num/resultat_den",
+        "distracteurs": "a/b + resultat_num/resultat_den\nresultat_num/resultat_den - a/b\na/b",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Soustraction de fractions",
+        "type_historique": "libre",
+        "enonce": "Quel nombre faut-il retirer de {a}/{b} pour obtenir {resultat_num}/{resultat_den} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)\nresultat_num = sample(1:10,1)\nresultat_den = sample(2:10,1)",
+        "calcul": "a/b - resultat_num/resultat_den",
+        "distracteurs": "a/b + resultat_num/resultat_den\nresultat_num/resultat_den - a/b\nresultat_num/resultat_den",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Terme manquant dans une fraction": [
+      {
+        "notion_historique": "Terme manquant dans une fraction",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction manque ?  □ + {c}/{d} = {a}/{b}",
+        "parametres": "c = sample(1:10,1)\nd = sample(2:10,1)\na = sample(1:10,1)\nb = sample(2:10,1)",
+        "calcul": "a/b - c/d",
+        "distracteurs": "a/b + c/d\nc/d - a/b\n(a-c)/(b*d)",
+        "moteur": "Ryacas"
+      }
+    ],
+    "Multiplier une fraction par un entier": [
+      {
+        "notion_historique": "Multiplier une fraction par un entier",
+        "type_historique": "libre",
+        "enonce": "Calculer et simplifier : {n} x {a}/{b}",
+        "parametres": "n = sample(2:10,1)\na = sample(1:10,1)\nb = sample(2:10,1)",
+        "calcul": "n * a/b",
+        "distracteurs": "n*a/(n*b)\na/(n*b)\n(n+a)/b",
+        "moteur": "Ryacas"
+      }
+    ]
+  },
+  "editorial_historique": {
+    "FRAC_MULT_001": {
+      "enonce": "Quelle écriture permet de calculer (%d/%d) x (%d/%d) ?",
+      "correction_intro": "On multiplie les numérateurs et les dénominateurs.",
+      "feedback_addition": "Pour un produit de fractions, on multiplie les numérateurs et les dénominateurs ; on ne les additionne pas.",
+      "feedback_croisement": "Cette écriture croise numérateurs et dénominateurs ; ce n'est pas la règle du produit de fractions.",
+      "feedback_numerateur": "Le numérateur doit lui aussi être obtenu par une multiplication.",
+      "rappel": "Pour multiplier deux fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux, puis on simplifie.",
+      "var_feedback_relation": "La proposition %s ne vérifie pas la relation demandée.",
+      "var_enonce_trou": "Quelle fraction se cache dans la boîte ?  □ × %d/%d = %s",
+      "var_enonce_inverse": "Par quelle fraction faut-il multiplier %d/%d pour obtenir %s ?",
+      "var_correction": "La fraction cherchée est %d/%d car (%d/%d) × (%d/%d) = %s."
+    },
+    "FRAC_DIV_001": {
+      "enonce": "Quelle multiplication est équivalente à (%d/%d) ÷ (%d/%d) ?",
+      "correction_intro": "Diviser par %d/%d revient à multiplier par son [[inverse]], %d/%d.",
+      "correction_suite": "Cela revient à calculer",
+      "feedback_inverser": "Il faut inverser la seconde fraction : %d/%d devient %d/%d.",
+      "feedback_premiere": "On conserve la première fraction %d/%d et on inverse seulement la seconde.",
+      "feedback_seconde": "Seule la fraction par laquelle on divise, %d/%d, doit être inversée.",
+      "rappel": "Diviser par une fraction non nulle revient à multiplier par son inverse, puis à simplifier.",
+      "var_feedback_relation": "La proposition %s ne vérifie pas la relation demandée.",
+      "var_enonce_trou": "Quelle fraction se cache dans la boîte ?  □ ÷ (%d/%d) = %s",
+      "var_enonce_inverse": "Je divise une fraction par %d/%d et j'obtiens %s. Quelle était la fraction de départ ?",
+      "var_correction": "La fraction de départ est %d/%d car (%d/%d) ÷ (%d/%d) = %s."
+    },
+    "FRAC_QTE_001": {
+      "enonce": "Une boîte contient %d objets. On en utilise %d/%d. Combien d’objets sont utilisés ?",
+      "correction": "%d/%d de %d = %d × %d / %d = %d.",
+      "feedback_faux": "%d/%d de %d vaut %s, pas %s.",
+      "rappel": "Prendre une fraction d'une quantité revient à multiplier la quantité par le numérateur puis à diviser par le dénominateur.",
+      "var_notion_distributivite": "distributivité",
+      "var_explication_distributivite": "Le mot est distributivité.\nC'est le nom d'une propriété mathématique :\n\na - a x b = a x (1 - b)\n\nIci, on met la quantité totale en facteur.\n\nTu ne savais pas ce qu'est une propriété mathématique ? TKT : maintenant tu en connais une.",
+      "var_feedback_relation": "La proposition %s ne vérifie pas la relation demandée.",
+      "var_enonce_trou": "Quel nombre se cache dans la boîte ?  %d/%d × □ = %d",
+      "var_correction_trou": "Pour répondre à la question, il faut poser [[l'équation]] %d/%d × □ = %d.\nPuis on utilise l'opération inverse :\n□ = %d ÷ (%d/%d) = %d.",
+      "var_enonce_inverse": "Un %s contient %d %s. On en utilise %d/%d. Combien en reste-t-il ?",
+      "var_correction_inverse": "%d/%d de %d = %d sont utilisés, donc %d - %d = %d ne sont pas utilisés. On peut aussi écrire %d - %d x %d/%d = %d x (1 - %d/%d) = %d. Cette transformation utilise la [[distributivité]] : on met %d en facteur."
+    },
+    "FRAC_QUOT_001": {
+      "enonce_fraction_vers_quotient": "Quel quotient est exactement égal à %d/%d ?",
+      "enonce_quotient_vers_fraction": "Quelle fraction représente exactement le quotient %d / %d ?",
+      "correction": "Par definition, %d/%d est le quotient exact de %d par %d.",
+      "feedback_inverse": "Cette proposition inverse le rôle du numérateur et du dénominateur.",
+      "feedback_pas_quotient": "Cette proposition ne traduit pas le quotient demande.",
+      "rappel": "La fraction a/b désigne le quotient exact de a par b, avec b non nul."
+    },
+    "FRAC_DROITE_001": {
+      "enonce": "Sur une demi-droite, chaque unité est partagée en %d parts égales. Le point A est à la %de graduation après 0. Quelle est son abscisse ?",
+      "correction": "Une graduation vaut 1/%d. Après %d graduations, A a pour abscisse %s.",
+      "feedback_inverse": "Cette proposition inverse le nombre de graduations et le nombre de parts par unite.",
+      "feedback_moins": "Cette proposition compte une graduation de moins.",
+      "feedback_partage": "Cette proposition change le partage de l'unite.",
+      "rappel": "Si une unité est partagée en b parts égales, chaque graduation vaut 1/b."
+    },
+    "FRAC_EQUIV_001": {
+      "enonce": "Quelle fraction est égale à %d/%d ?",
+      "correction": "On multiplie le numérateur et le dénominateur par %d.\n%d/%d = %s.",
+      "feedback_ajouter": "Ajouter le même nombre au numérateur et au dénominateur ne conserve pas la fraction.",
+      "feedback_num": "Multiplier seulement le numérateur change la valeur de la fraction.",
+      "feedback_den": "Multiplier seulement le dénominateur change la valeur de la fraction.",
+      "rappel": "Multiplier le numérateur et le dénominateur par un même nombre non nul donne une fraction égale."
+    },
+    "FRAC_COMP_001": {
+      "enonce": "Quel signe complète correctement : %d/%d ... %d/%d ?",
+      "correction_meme_den": "Les dénominateurs sont identiques. On compare %d et %d. Donc %d/%d %s %d/%d.",
+      "correction_meme_num": "Les numérateurs sont identiques. La fraction avec le plus petit dénominateur est la plus grande. Donc %d/%d %s %d/%d.",
+      "proposition_impossible": "impossible à savoir",
+      "feedback_inverse": "Ce signe donne l'ordre inverse de celui des deux fractions.",
+      "feedback_egalite": "Ces deux fractions ne sont pas égales.",
+      "feedback_suffisant": "Les informations données suffisent pour comparer ces deux fractions.",
+      "rappel": "Avec un même dénominateur, on compare les numérateurs ; avec un même numérateur, le plus petit dénominateur donne la plus grande fraction."
+    },
+    "FRAC_ENCADR_001": {
+      "enonce": "Quel encadrement entre deux entiers consécutifs est correct pour %s ?",
+      "correction": "%d = %d x %d + %d, donc %s est compris entre %d et %d.",
+      "feedback_bas": "Cet intervalle est situe une unite trop bas.",
+      "feedback_haut": "Cet intervalle est situe une unite trop haut.",
+      "feedback_superieure": "La fraction est supérieure à 1.",
+      "rappel": "Pour encadrer a/b, on cherche entre quels multiples consécutifs de b se trouve a."
+    },
+    "FRAC_SUB_001": {
+      "enonce": "Calculer et simplifier : %d/%d - %d/%d",
+      "correction": "Les dénominateurs sont identiques.\n(%d - %d)/%d = %s.",
+      "feedback_faux": "La différence vaut %s.",
+      "rappel": "Avec le même dénominateur, on soustrait les numérateurs et on conserve le dénominateur.",
+      "var_feedback_relation": "La proposition %s ne vérifie pas la relation demandée.",
+      "var_enonce_trou": "Quelle fraction se cache dans la boîte ?  %d/%d - □ = %s",
+      "var_correction_trou": "La boîte vaut %d/%d : %d/%d - %d/%d = %s.",
+      "var_enonce_inverse": "Quel nombre faut-il retirer de %d/%d pour obtenir %s ?",
+      "var_correction_inverse": "Il faut retirer %d/%d."
+    },
+    "FRAC_MANQ_001": {
+      "enonce": "Quelle fraction manque ?  □ + %d/%d = %d/%d",
+      "correction": "Il faut compléter %d jusqu’à %d.\n%d - %d = %d. La fraction manquante est %s.",
+      "feedback_addition": "Cette proposition additionne au lieu de chercher ce qui manque.",
+      "feedback_denominateur": "Le dénominateur reste le même dans cette addition.",
+      "feedback_recopie": "Cette proposition recopie la fraction déjà connue.",
+      "rappel": "Avec le même dénominateur, chercher le terme manquant revient à compléter les numérateurs."
+    },
+    "FRAC_MULT_ENT_001": {
+      "enonce": "Calculer et simplifier : %d x %d/%d",
+      "correction": "%d x %d/%d = (%d x %d)/%d = %s.",
+      "feedback_faux": "Le produit vaut %s.",
+      "rappel": "Multiplier a/b par un entier n revient à multiplier le numérateur par n."
+    }
+  }
+}

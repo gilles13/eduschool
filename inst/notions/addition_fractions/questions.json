@@ -1,0 +1,108 @@
+{
+  "notion_id": "MAT_FRACTION_ADD",
+  "questions": [
+    {
+      "id": "FRA-COMP-001",
+      "type": "comprehension",
+      "enonce": "Quelle est la valeur de 1/2 + 1/3 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5/6"
+      },
+      "propositions": [
+        "5/6",
+        "2/5",
+        "2/6",
+        "1/5"
+      ],
+      "correction": "Je vois : les dénominateurs 2 et 3 sont différents. Je sais : pour additionner ces fractions, je les écris avec un dénominateur commun. J’en déduis : 1/2 = 3/6 et 1/3 = 2/6. Je calcule : 3/6 + 2/6 = 5/6."
+    },
+    {
+      "id": "FRA-CALC-001",
+      "type": "exercice",
+      "enonce": "Calculer {a}/{b} + {c}/{d} et donner une fraction simplifiée.",
+      "parametres": {
+        "a": "1",
+        "b": "2",
+        "c": "1",
+        "d": "3"
+      },
+      "reponse": {
+        "mode": "calcul",
+        "moteur": "Ryacas",
+        "expression": "a/b+c/d",
+        "attendue": "5/6"
+      },
+      "distracteurs": {
+        "moteur": "Ryacas",
+        "expressions": [
+          "(a+c)/(b+d)",
+          "(a+c)/(b*d)",
+          "(a*c)/(b*d)"
+        ]
+      },
+      "correction": "1/2 = 3/6 et 1/3 = 2/6 ; la somme vaut 5/6."
+    }
+  ],
+  "migration_historique": {
+    "statut": "transcription_integrale_sans_execution_automatique",
+    "source_questions": "inst/archives-pedagogiques/mathematiques/exercices/fractions.md",
+    "source_editoriale": "inst/archives-pedagogiques/exercices/textes_fractions.md",
+    "questions": [
+      {
+        "id": "FRAC_ADD_001",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Addition de fractions",
+        "type_historique": "libre",
+        "enonce_historique": "{prenom} affirme que {a}/{b} + {c}/{d} = {fausse} en additionnant numérateurs et dénominateurs. Que faut-il lui répondre ?",
+        "parametres_r_historique": "prenom = sample(c(\"Lina\", \"Noe\", \"Sam\"), 1)\na = sample(1:8,1)\nb = sample(2:9,1)\nc = sample(1:8,1)\nd = sample(2:9,1)\nfausse = paste0(a + c, \"/\", b + d)",
+        "calcul_historique": "a/b + c/d",
+        "distracteurs_r_historiques": "(a+c)/(b+d)\n(a+c)/(b*d)\n(a*c)/(b*d)",
+        "moteur_historique": "Ryacas",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {
+          "enonce_erreur": "%s affirme que %d/%d + %d/%d = %s en additionnant numérateurs et dénominateurs. Que faut-il lui répondre ?",
+          "feedback_methode": "Ici la somme correcte vaut %s : la méthode de %s n'est donc pas valide.",
+          "rappel": "Pour additionner deux fractions, on les écrit avec un dénominateur commun puis on simplifie le résultat.",
+          "reponse": "Il faut d’abord utiliser un dénominateur commun.",
+          "correction_intro": "Pour additionner ces fractions, on cherche un [[dénominateur commun]].",
+          "proposition_denominateurs": "Il faut seulement additionner les dénominateurs.",
+          "proposition_multiplier": "Il faut multiplier les deux fractions entre elles.",
+          "proposition_methode": "La méthode de %s est correcte pour toutes les fractions.",
+          "feedback_denominateurs": "Additionner seulement les dénominateurs ne donne pas une somme de fractions correcte.",
+          "feedback_multiplier": "Une addition de fractions ne se transforme pas en produit des deux fractions.",
+          "var_feedback_relation": "La proposition %s ne vérifie pas la relation demandée.",
+          "var_enonce_trou": "Quelle fraction se cache dans la boîte ?  □ + %d/%d = %s",
+          "var_correction_trou": "La boîte vaut %d/%d car %d/%d + %d/%d = %s.",
+          "var_enonce_inverse": "Je pars de %d/%d, j'ajoute %d/%d. Sur quelle fraction est-ce que j'arrive ?"
+        }
+      },
+      {
+        "id": "FRAC_ADD_002",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Addition de fractions",
+        "type_historique": "libre",
+        "enonce_historique": "Quelle fraction se cache dans la boîte ?  □ + {c}/{d} = {somme_num}/{somme_den}",
+        "parametres_r_historique": "a = sample(1:8,1)\nb = sample(2:9,1)\nc = sample(1:8,1)\nd = sample(2:9,1)\nsomme_num = a*d + c*b\nsomme_den = b*d",
+        "calcul_historique": "somme_num/somme_den - c/d",
+        "distracteurs_r_historiques": "somme_num/somme_den + c/d\nsomme_num/somme_den - d/c\nc/d",
+        "moteur_historique": "Ryacas",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {}
+      },
+      {
+        "id": "FRAC_ADD_003",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Addition de fractions",
+        "type_historique": "libre",
+        "enonce_historique": "Je pars de {a}/{b}, j'ajoute {c}/{d}. Sur quelle fraction est-ce que j'arrive ?",
+        "parametres_r_historique": "a = sample(1:8,1)\nb = sample(2:9,1)\nc = sample(1:8,1)\nd = sample(2:9,1)",
+        "calcul_historique": "a/b + c/d",
+        "distracteurs_r_historiques": "(a+c)/(b+d)\n(a+c)/(b*d)\n(a*c)/(b*d)",
+        "moteur_historique": "Ryacas",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {}
+      }
+    ]
+  }
+}

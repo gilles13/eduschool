@@ -1,30 +1,11 @@
 Package: eduschool
 Type: Package
-Title: Cartographie de la scolarité française et outils de mathématiques
-Version: 0.37.3
+Title: Ressources et Exercices de Mathématiques
+Version: 0.38.0.9000
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
-Description: Cartographie la scolarité des collégiens et lycéens en France :
-    niveaux, cycles, voies, séries, enseignements, programmes, orientation et
-    poursuites d'études. Le package propose en complément des fiches de révision
-    et des exercices centrés sur les mathématiques. Les données sont structurées
-    dans des fichiers CSV et peuvent être interrogées simplement depuis R.
-    L'architecture reste
-    extensible à d'autres disciplines sans en faire l'objectif principal du
-    projet. eduschool complète les sources officielles sans s'y substituer.
+Description: Prototype expérimental de ressources mathématiques, de fiches et de questions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
-Imports:
-    ggplot2,
-    rmarkdown
-Suggests:
-    testthat (>= 3.0.0),
-    Ryacas,
-    melodi,
-    knitr,
-    svglite,
-    roxygen2
-Config/testthat/edition: 3
-VignetteBuilder: knitr
-URL: https://gilles13.github.io/eduschool/
+Imports: jsonlite, ggplot2, rmarkdown, Ryacas
 Config/roxygen2/version: 8.1.0

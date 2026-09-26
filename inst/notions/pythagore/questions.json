@@ -1,0 +1,207 @@
+{
+  "notion_id": "MAT_PYTHAGORE",
+  "questions": [
+    {
+      "id": "PYTH-COMP-001",
+      "type": "comprehension",
+      "enonce": "Sur une figure à main levée, quelle information permet d’affirmer que ABC est rectangle en A ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le codage de l’angle BAC indique un angle droit."
+      },
+      "propositions": [
+        "Le codage de l’angle BAC indique un angle droit.",
+        "L’angle en A semble droit sur le dessin.",
+        "AB semble vertical et AC horizontal."
+      ],
+      "illustration": {
+        "id": "triangle_angle_droit_A"
+      },
+      "correction": "Le codage est une information ; l’apparence du dessin n’est pas une preuve."
+    },
+    {
+      "id": "PYTH-CALC-001",
+      "type": "exercice",
+      "enonce": "ABC est rectangle en A, AB = {ab} cm et AC = {ac} cm. Calculer BC.",
+      "parametres": {
+        "ab": "3",
+        "ac": "4"
+      },
+      "reponse": {
+        "mode": "calcul",
+        "moteur": "R",
+        "expression": "sqrt(ab^2+ac^2)",
+        "attendue": "5"
+      },
+      "distracteurs": {
+        "moteur": "R",
+        "expressions": [
+          "ab+ac",
+          "sqrt(abs(ab^2-ac^2))"
+        ]
+      },
+      "illustration": {
+        "id": "triangle_rectangle_A",
+        "parametres": {
+          "ab": "ab",
+          "ac": "ac"
+        }
+      },
+      "correction": "BC² = 3² + 4² = 25, donc BC = 5 cm."
+    }
+  ],
+  "migration_historique": {
+    "statut": "transcription_integrale_sans_execution_automatique",
+    "source_questions": "inst/archives-pedagogiques/mathematiques/exercices/pythagore.md",
+    "source_editoriale": "inst/archives-pedagogiques/exercices/textes_pythagore.md",
+    "questions": [
+      {
+        "id": "PYTH_APPL_001",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Géométrie déductive : voir, savoir, déduire",
+        "type_historique": "libre",
+        "enonce_historique": "La figure est dessinée à main levée. Quelle information permet d’affirmer que ABC est rectangle en A ?",
+        "parametres_r_historique": null,
+        "calcul_historique": null,
+        "distracteurs_r_historiques": null,
+        "moteur_historique": null,
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {
+          "enonce": "La figure est dessinée à main levée. Quelle information permet d’affirmer que ABC est rectangle en A ?",
+          "reponse": "Le codage indique que l’angle BAC est droit.",
+          "correction": "[[Je vois]]\nLe codage indique que l’angle BAC est droit.\n[[Je sais]]\nUn triangle qui possède un angle droit est un triangle rectangle.\n[[J'en déduis]]\nLe triangle ABC est rectangle en A. Je peux donc utiliser le théorème de Pythagore.",
+          "proposition_rectangle": "Le codage indique que l’angle BAC est droit.",
+          "proposition_deux_longueurs": "L’angle en A semble droit sur le dessin.",
+          "proposition_cote_cherche": "Les côtés AB et AC semblent perpendiculaires.",
+          "proposition_noms_sommets": "Le triangle est dessiné avec un côté presque vertical.",
+          "feedback_deux_longueurs": "Une figure à main levée n’est pas une mesure. Ce qui [[semble]] droit n’est pas une information suffisante pour l’affirmer.",
+          "feedback_cote_cherche": "L’apparence de deux segments ne permet pas d’affirmer qu’ils sont perpendiculaires. Il faut une information donnée ou un [[codage]].",
+          "feedback_noms_sommets": "L’orientation du dessin n’est pas une propriété géométrique. Le [[codage]] de l’angle droit, lui, porte une information.",
+          "notion": "Géométrie déductive : voir, savoir, déduire",
+          "rappel": "Une figure aide à chercher. Pour [[affirmer]], on s’appuie sur les données, les codages et les propriétés."
+        },
+        "raisonnement_historique": {
+          "Je vois": "Le codage indique que l’angle BAC est droit.",
+          "Je sais": "Un triangle qui possède un angle droit est un triangle rectangle.",
+          "J'en déduis": "Le triangle ABC est rectangle en A. Je peux donc utiliser le théorème de Pythagore."
+        }
+      },
+      {
+        "id": "PYTH_IDENT_001",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Théorème de Pythagore : reconnaître l’hypoténuse",
+        "type_historique": "libre",
+        "enonce_historique": "ABC est un triangle rectangle en {sommet}. Quel côté est l’hypoténuse ?",
+        "parametres_r_historique": "sommet = sample(c(\"A\", \"B\", \"C\"), 1)",
+        "calcul_historique": "if (sommet == \"A\") \"BC\" else if (sommet == \"B\") \"AC\" else \"AB\"",
+        "distracteurs_r_historiques": null,
+        "moteur_historique": "R",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {
+          "enonce": "ABC est un triangle rectangle en %s. Quel côté est l’hypoténuse ?",
+          "correction": "[[Je vois]]\nLe triangle ABC est rectangle en %s.\n[[Je sais]]\nL’[[hypoténuse]] est le côté opposé à l’angle droit : c’est %s.\n[[J'en déduis]]\nLa relation de Pythagore s’écrit %s^2 = %s^2 + %s^2.",
+          "notion": "Théorème de Pythagore : reconnaître l’hypoténuse",
+          "rappel": "Dans un triangle rectangle, l’[[hypoténuse]] est le côté opposé à l’angle droit."
+        },
+        "raisonnement_historique": {
+          "Je vois": "Le triangle ABC est rectangle en %s.",
+          "Je sais": "L’[[hypoténuse]] est le côté opposé à l’angle droit : c’est %s.",
+          "J'en déduis": "La relation de Pythagore s’écrit %s^2 = %s^2 + %s^2."
+        }
+      },
+      {
+        "id": "PYTH_HYP_001",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Théorème de Pythagore : calculer l’hypoténuse",
+        "type_historique": "libre",
+        "enonce_historique": "ABC est rectangle en A, avec AB = {ab} cm et AC = {ac} cm. Quelle relation faut-il écrire pour calculer BC ?",
+        "parametres_r_historique": "ab = sample(3:12, 1)\nac = sample(3:12, 1)",
+        "calcul_historique": "paste0(\"BC^2 = \", ab, \"^2 + \", ac, \"^2\")",
+        "distracteurs_r_historiques": "paste0(\"BC^2 = \", ab, \"^2 - \", ac, \"^2\")\npaste0(\"BC = \", ab, \" + \", ac)\npaste0(\"BC^2 = \", ab, \" + \", ac)",
+        "moteur_historique": "R",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {
+          "enonce": "ABC est rectangle en A, avec AB = %d cm et AC = %d cm. Quelle relation faut-il écrire pour calculer BC ?",
+          "relation_correcte": "BC^2 = AB^2 + AC^2",
+          "relation_sans_carres": "BC = AB + AC",
+          "relation_mauvais_cote": "AB^2 = AC^2 + BC^2",
+          "relation_difference": "BC^2 = AB^2 - AC^2",
+          "correction": "[[Je vois]]\nABC est rectangle en A, avec AB = %d cm et AC = %d cm.\n[[Je sais]]\nBC est l’[[hypoténuse]] ; le théorème de Pythagore donne BC^2 = AB^2 + AC^2.\n[[Je calcule]]\nBC^2 = %d^2 + %d^2\nBC^2 = %d\nBC = √%d = %d cm\n[[J'en déduis]]\nBC mesure %d cm.",
+          "feedback_sans_carres": "Le théorème de Pythagore porte sur les [[carrés]] des longueurs, pas sur leur somme directe.",
+          "feedback_mauvais_cote": "Dans la relation de Pythagore, le carré de l’[[hypoténuse]] est seul d’un côté de l’égalité. Ici, l’hypoténuse est BC.",
+          "feedback_difference": "Pour calculer l’[[hypoténuse]], on additionne les carrés des deux autres côtés.",
+          "notion": "Théorème de Pythagore : calculer l’hypoténuse",
+          "rappel": "Si le côté cherché est l’[[hypoténuse]], son carré est la [[somme]] des carrés des deux autres côtés."
+        },
+        "raisonnement_historique": {
+          "Je vois": "ABC est rectangle en A, avec AB = %d cm et AC = %d cm.",
+          "Je sais": "BC est l’[[hypoténuse]] ; le théorème de Pythagore donne BC^2 = AB^2 + AC^2.",
+          "Je calcule": "BC^2 = %d^2 + %d^2\nBC^2 = %d\nBC = √%d = %d cm",
+          "J'en déduis": "BC mesure %d cm."
+        }
+      },
+      {
+        "id": "PYTH_COTE_001",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Théorème de Pythagore : calculer un autre côté",
+        "type_historique": "libre",
+        "enonce_historique": "ABC est rectangle en A, avec AC = {ac} cm et BC = {bc} cm. Quelle relation permet de calculer AB ?",
+        "parametres_r_historique": "ac = sample(3:12, 1)\nab = sample(3:12, 1)\nbc = ceiling(sqrt(ac^2 + ab^2))",
+        "calcul_historique": "paste0(\"AB^2 = BC^2 - AC^2\")",
+        "distracteurs_r_historiques": "paste0(\"AB^2 = BC^2 + AC^2\")\npaste0(\"AB = BC - AC\")\npaste0(\"AB^2 = AC^2 - BC^2\")",
+        "moteur_historique": "R",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {
+          "enonce": "ABC est rectangle en A, avec AC = %d cm et BC = %d cm. Quelle relation permet de calculer AB ?",
+          "relation_correcte": "AB^2 = BC^2 - AC^2",
+          "relation_addition": "AB^2 = BC^2 + AC^2",
+          "relation_inversee": "AB^2 = AC^2 - BC^2",
+          "relation_sans_carres": "AB = BC - AC",
+          "correction": "[[Je vois]]\nABC est rectangle en A, avec AC = %d cm et BC = %d cm.\n[[Je sais]]\nBC est l’[[hypoténuse]] ; le théorème de Pythagore donne BC^2 = AB^2 + AC^2.\n[[Je calcule]]\nAB^2 = %d^2 - %d^2\nAB^2 = %d\nAB = √%d = %d cm\n[[J'en déduis]]\nAB mesure %d cm.",
+          "feedback_addition": "AB n’est pas l’[[hypoténuse]]. Pour isoler AB^2 à partir de la relation de Pythagore, il faut soustraire AC^2.",
+          "feedback_inversee": "BC est l’[[hypoténuse]] et donc le plus grand côté. Le calcul AC^2 - BC^2 ne peut pas donner le carré d’une longueur réelle ici.",
+          "feedback_sans_carres": "On ne soustrait pas directement les longueurs : le théorème de Pythagore relie leurs [[carrés]].",
+          "notion": "Théorème de Pythagore : calculer un autre côté",
+          "rappel": "Partir de la relation de Pythagore, puis [[isoler]] le carré du côté cherché."
+        },
+        "raisonnement_historique": {
+          "Je vois": "ABC est rectangle en A, avec AC = %d cm et BC = %d cm.",
+          "Je sais": "BC est l’[[hypoténuse]] ; le théorème de Pythagore donne BC^2 = AB^2 + AC^2.",
+          "Je calcule": "AB^2 = %d^2 - %d^2\nAB^2 = %d\nAB = √%d = %d cm",
+          "J'en déduis": "AB mesure %d cm."
+        }
+      },
+      {
+        "id": "PYTH_DIAG_001",
+        "statut": "source_historique_a_valider",
+        "notion_historique": "Théorème de Pythagore : reconnaître une situation",
+        "type_historique": "libre",
+        "enonce_historique": "Un rectangle mesure {longueur} cm de longueur et {largeur} cm de largeur. Quelle observation permet d’utiliser le théorème de Pythagore pour calculer sa diagonale ?",
+        "parametres_r_historique": "longueur = sample(3:20, 1)\nlargeur = sample(2:15, 1)",
+        "calcul_historique": "paste0(\"d^2 = \", longueur, \"^2 + \", largeur, \"^2\")",
+        "distracteurs_r_historiques": "paste0(\"d^2 = \", longueur, \"^2 - \", largeur, \"^2\")\npaste0(\"d = \", longueur, \" + \", largeur)\npaste0(\"d^2 = \", longueur, \" + \", largeur)",
+        "moteur_historique": "R",
+        "champs_supplementaires_historiques": {},
+        "editorial_historique": {
+          "enonce": "Un rectangle mesure %d cm de longueur et %d cm de largeur. Quelle observation permet d’utiliser le théorème de Pythagore pour calculer sa diagonale ?",
+          "proposition_triangle_rectangle": "Une diagonale, une longueur et une largeur forment un triangle rectangle.",
+          "proposition_rectangle": "Un rectangle a quatre côtés.",
+          "proposition_diagonales": "Un rectangle possède deux diagonales.",
+          "proposition_paralleles": "Les côtés opposés d’un rectangle sont parallèles.",
+          "correction": "[[Je vois]]\nLe rectangle mesure %d cm de longueur et %d cm de largeur ; sa diagonale forme un triangle avec ces deux côtés.\n[[Je sais]]\nUn angle du rectangle est droit : ce triangle est donc [[rectangle]] et le théorème de Pythagore s’applique.\n[[Je calcule]]\nd^2 = %d^2 + %d^2\nd^2 = %d\nd = √%d = %d cm\n[[J'en déduis]]\nLa diagonale mesure %d cm.",
+          "feedback_rectangle": "Avoir quatre côtés ne suffit pas. L’information utile est l’existence d’un [[angle droit]], qui fait apparaître un triangle rectangle.",
+          "feedback_diagonales": "Le nombre de diagonales ne justifie pas Pythagore. Il faut repérer le [[triangle rectangle]] formé par trois segments.",
+          "feedback_paralleles": "Le parallélisme des côtés opposés est vrai, mais ce n’est pas lui qui permet d’appliquer Pythagore ici.",
+          "notion": "Théorème de Pythagore : reconnaître une situation",
+          "rappel": "Dans un problème, chercher d’abord où se cache le [[triangle rectangle]] avant d’écrire une formule."
+        },
+        "raisonnement_historique": {
+          "Je vois": "Le rectangle mesure %d cm de longueur et %d cm de largeur ; sa diagonale forme un triangle avec ces deux côtés.",
+          "Je sais": "Un angle du rectangle est droit : ce triangle est donc [[rectangle]] et le théorème de Pythagore s’applique.",
+          "Je calcule": "d^2 = %d^2 + %d^2\nd^2 = %d\nd = √%d = %d cm",
+          "J'en déduis": "La diagonale mesure %d cm."
+        }
+      }
+    ]
+  }
+}
