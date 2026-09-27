@@ -1,0 +1,138 @@
+{
+  "notion_id": "parallelogrammes",
+  "questions": [
+    {
+      "id": "QUAD_RECT_001",
+      "type": "qcm",
+      "enonce": "ABCD est un parallélogramme. Le codage indique que l'angle DAB est droit. Que peux-tu en déduire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "ABCD est un rectangle"
+      },
+      "propositions": [
+        "ABCD est un rectangle",
+        "ABCD est nécessairement un losange",
+        "ABCD est forcément un carré",
+        "On ne peut rien déduire"
+      ],
+      "illustration": {
+        "id": "parallelogramme_angle_droit"
+      },
+      "correction": "Un parallélogramme qui possède un angle droit est un rectangle. Le dessin n'a pas besoin de ressembler à un rectangle."
+    },
+    {
+      "id": "QUAD_LOS_001",
+      "type": "qcm",
+      "enonce": "ABCD est un parallélogramme. Les quatre côtés portent le même codage de longueur. Que peux-tu en déduire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "ABCD est un losange"
+      },
+      "propositions": [
+        "ABCD est un losange",
+        "ABCD est nécessairement un rectangle",
+        "ABCD est forcément un carré",
+        "On ne peut rien déduire"
+      ],
+      "illustration": {
+        "id": "parallelogramme_cotes_egaux"
+      },
+      "correction": "Un parallélogramme dont les quatre côtés ont la même longueur est un losange."
+    },
+    {
+      "id": "QUAD_CARRE_001",
+      "type": "qcm",
+      "enonce": "ABCD est un parallélogramme. Un angle droit est codé et les quatre côtés portent le même codage de longueur. Quelle conclusion est la plus précise ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "ABCD est un carré"
+      },
+      "propositions": [
+        "ABCD est un carré",
+        "ABCD est seulement un rectangle",
+        "ABCD est seulement un losange",
+        "Le dessin est trop irrégulier pour conclure"
+      ],
+      "illustration": {
+        "id": "parallelogramme_carre_code"
+      },
+      "correction": "L'angle droit permet de conclure rectangle ; les quatre côtés égaux permettent de conclure losange. ABCD est donc à la fois rectangle et losange : c'est un carré."
+    },
+    {
+      "id": "QUAD_JUST_001",
+      "type": "qcm",
+      "enonce": "Le quadrilatère dessiné ne ressemble franchement pas à un carré. Pourtant les codages permettent de montrer qu'il en est un. Pourquoi peut-on faire confiance à cette conclusion ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Parce que les codages et les propriétés priment sur l'apparence du dessin"
+      },
+      "propositions": [
+        "Parce que les codages et les propriétés priment sur l'apparence du dessin",
+        "Parce qu'un dessin de géométrie est toujours à l'échelle",
+        "Parce que tout parallélogramme est un carré",
+        "Parce qu'il suffit qu'une figure ressemble à peu près à un carré"
+      ],
+      "illustration": {
+        "id": "parallelogramme_carre_main_levee"
+      },
+      "correction": "Exactement : le dessin aide à se repérer, mais la démonstration s'appuie sur les données, les codages et les propriétés."
+    },
+    {
+      "id": "QUAD-VOCAB-TROU-001",
+      "type": "qcm",
+      "enonce": "Quel quadrilatère possède quatre côtés de même longueur ? Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "losange": "l _ _ _ _ _ e",
+          "rectangle": "r _ _ _ _ _ _ _ e",
+          "trapèze": "t _ _ _ _ _ e",
+          "cerf-volant": "c _ _ _ - _ _ _ _ _ t"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "losange"
+      },
+      "propositions": [
+        "losange",
+        "rectangle",
+        "trapèze",
+        "cerf-volant"
+      ],
+      "correction": "Un losange possède quatre côtés de même longueur. Un carré est un losange particulier.",
+      "illustration": {
+        "id": "parallelogramme_cotes_egaux"
+      }
+    },
+    {
+      "id": "QUAD-VOCAB-MASQUE-001",
+      "type": "qcm",
+      "enonce": "Quel nom donne-t-on à un parallélogramme qui possède un angle droit ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "rectangle": "R________E",
+          "losange": "LO________E",
+          "trapèze": "TRA________E",
+          "cerf-volant": "CERF________T"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "rectangle"
+      },
+      "propositions": [
+        "rectangle",
+        "losange",
+        "trapèze",
+        "cerf-volant"
+      ],
+      "correction": "Un parallélogramme avec un angle droit est un rectangle ; il n’est pas nécessairement un carré.",
+      "illustration": {
+        "id": "parallelogramme_angle_droit"
+      }
+    }
+  ]
+}

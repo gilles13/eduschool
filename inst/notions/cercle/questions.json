@@ -1,0 +1,157 @@
+{
+  "notion_id": "cercle",
+  "questions": [
+    {
+      "id": "CERC_RAYON_001",
+      "type": "qcm",
+      "enonce": "Le cercle a pour centre O et A est un point du cercle. Comment appelle-t-on le segment [OA] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "rayon"
+      },
+      "propositions": [
+        "rayon",
+        "diamètre",
+        "corde",
+        "tangente"
+      ],
+      "illustration": {
+        "id": "cercle_rayon"
+      },
+      "correction": "[OA] relie le centre O à un point A du cercle : c'est un rayon."
+    },
+    {
+      "id": "CERC_DIAM_001",
+      "type": "qcm",
+      "enonce": "A et B sont sur le cercle et [AB] passe par son centre O. Quel est le nom le plus précis de [AB] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "diamètre"
+      },
+      "propositions": [
+        "diamètre",
+        "rayon",
+        "tangente",
+        "sécante"
+      ],
+      "illustration": {
+        "id": "cercle_diametre_corde"
+      },
+      "correction": "[AB] est une corde puisqu'il relie deux points du cercle. Comme il passe aussi par le centre O, c'est plus précisément un diamètre : tout diamètre est une corde, mais toute corde n'est pas un diamètre."
+    },
+    {
+      "id": "CERC_EGAL_001",
+      "type": "qcm",
+      "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 3 cm. Que vaut OB ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3 cm"
+      },
+      "propositions": [
+        "3 cm",
+        "1,5 cm",
+        "6 cm",
+        "On ne peut pas le savoir"
+      ],
+      "illustration": {
+        "id": "cercle_rayons_egaux"
+      },
+      "correction": "OA et OB sont deux rayons du même cercle. Ils ont donc la même longueur : OB = 3 cm."
+    },
+    {
+      "id": "CERC_JUST_001",
+      "type": "qcm",
+      "enonce": "Sans mesurer la figure, pourquoi peut-on affirmer que OA = OB ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Parce que OA et OB sont des rayons du même cercle"
+      },
+      "propositions": [
+        "Parce que OA et OB sont des rayons du même cercle",
+        "Parce que les deux segments semblent avoir la même longueur sur le dessin",
+        "Parce que tous les segments tracés dans un cercle ont la même longueur",
+        "Parce que O est placé à peu près au milieu du dessin"
+      ],
+      "illustration": {
+        "id": "cercle_rayons_egaux"
+      },
+      "correction": "A et B sont sur le même cercle de centre O : OA et OB sont des rayons de ce cercle, donc ils ont la même longueur."
+    },
+    {
+      "id": "CERC_CORDE_001",
+      "type": "qcm",
+      "enonce": "A et B sont deux points du cercle. Le segment [AB] ne passe pas par le centre O. Comment appelle-t-on [AB] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Une corde"
+      },
+      "propositions": [
+        "Une corde",
+        "Un diamètre",
+        "Un rayon",
+        "Une tangente"
+      ],
+      "illustration": {
+        "id": "cercle_corde"
+      },
+      "correction": "Une corde est un segment reliant deux points du cercle. [AB] ne passe pas par O : ce n'est donc pas un diamètre. Un diamètre est une corde particulière qui passe par le centre."
+    },
+    {
+      "id": "CERC-VOCAB-TROU-001",
+      "type": "qcm",
+      "enonce": "Quel nom désigne un segment reliant deux points du cercle ? Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "corde": "c _ _ _ e",
+          "rayon": "r _ _ _ n",
+          "centre": "c _ _ _ _ e",
+          "disque": "d _ _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "corde"
+      },
+      "propositions": [
+        "corde",
+        "rayon",
+        "centre",
+        "disque"
+      ],
+      "correction": "Une corde relie deux points du cercle ; elle ne passe pas nécessairement par le centre.",
+      "illustration": {
+        "id": "cercle_corde"
+      }
+    },
+    {
+      "id": "CERC-VOCAB-MASQUE-001",
+      "type": "qcm",
+      "enonce": "Quel nom désigne une corde passant par le centre du cercle ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "diamètre": "D________E",
+          "rayon": "RA________N",
+          "corde": "COR________E",
+          "tangente": "TANG________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "diamètre"
+      },
+      "propositions": [
+        "diamètre",
+        "rayon",
+        "corde",
+        "tangente"
+      ],
+      "correction": "Un diamètre est une corde particulière passant par le centre.",
+      "illustration": {
+        "id": "cercle_diametre_corde"
+      }
+    }
+  ]
+}

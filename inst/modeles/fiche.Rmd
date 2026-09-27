@@ -15,10 +15,6 @@ output:
     latex_engine: xelatex
 ---
 
-```{r setup, include=FALSE}
-banque = eduschool::questions(params$notion)
-```
-
 ```{r entete, echo=FALSE, results='asis'}
 source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
 .entete_edu(params, knitr::is_html_output())

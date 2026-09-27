@@ -1,0 +1,405 @@
+{
+  "notion_id": "puissances",
+  "questions": [
+    {
+      "id": "PUI-001",
+      "type": "qcm",
+      "enonce": "Que vaut 2⁵ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "32"
+      },
+      "propositions": [
+        "32",
+        "10",
+        "16",
+        "64"
+      ],
+      "correction": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32."
+    },
+    {
+      "id": "PUI-002",
+      "type": "qcm",
+      "enonce": "Que vaut 3⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "81"
+      },
+      "propositions": [
+        "81",
+        "12",
+        "27",
+        "64"
+      ],
+      "correction": "3⁴ = 3 × 3 × 3 × 3 = 81."
+    },
+    {
+      "id": "PUI-003",
+      "type": "qcm",
+      "enonce": "Dans 7³, quel est l’exposant ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3"
+      },
+      "propositions": [
+        "3",
+        "7",
+        "21",
+        "343"
+      ],
+      "correction": "L’exposant 3 indique trois facteurs égaux à 7."
+    },
+    {
+      "id": "PUI-004",
+      "type": "qcm",
+      "enonce": "Quelle écriture est égale à 5³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5 × 5 × 5"
+      },
+      "propositions": [
+        "5 × 5 × 5",
+        "5 × 3",
+        "5 + 5 + 5",
+        "3 × 3 × 3 × 3 × 3"
+      ],
+      "correction": "Une puissance de 3 est un produit de trois facteurs identiques."
+    },
+    {
+      "id": "PUI-005",
+      "type": "qcm",
+      "enonce": "Que vaut 10⁻³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0,001"
+      },
+      "propositions": [
+        "0,001",
+        "0,01",
+        "0,0001",
+        "−1 000"
+      ],
+      "correction": "10⁻³ = 1 / 10³ = 0,001."
+    },
+    {
+      "id": "PUI-006",
+      "type": "qcm",
+      "enonce": "Pour a non nul, que vaut a⁰ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1"
+      },
+      "propositions": [
+        "1",
+        "0",
+        "a",
+        "−a"
+      ],
+      "correction": "Toute base non nulle à la puissance zéro vaut 1."
+    },
+    {
+      "id": "PUI-007",
+      "type": "qcm",
+      "enonce": "Que vaut (−2)⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "16"
+      },
+      "propositions": [
+        "16",
+        "−16",
+        "−8",
+        "8"
+      ],
+      "correction": "Un nombre pair de facteurs négatifs donne un produit positif : (−2)⁴ = 16."
+    },
+    {
+      "id": "PUI-008",
+      "type": "qcm",
+      "enonce": "Que vaut −2⁴, sans parenthèses autour de −2 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−16"
+      },
+      "propositions": [
+        "−16",
+        "16",
+        "−8",
+        "8"
+      ],
+      "correction": "La puissance s’applique à 2 avant le signe moins : −(2⁴) = −16."
+    },
+    {
+      "id": "PUI-009",
+      "type": "qcm",
+      "enonce": "Que vaut (−3)³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−27"
+      },
+      "propositions": [
+        "−27",
+        "27",
+        "−9",
+        "9"
+      ],
+      "correction": "Trois facteurs négatifs donnent un produit négatif."
+    },
+    {
+      "id": "PUI-010",
+      "type": "qcm",
+      "enonce": "Que vaut 4⁻¹ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1/4"
+      },
+      "propositions": [
+        "1/4",
+        "−4",
+        "4",
+        "−1/4"
+      ],
+      "correction": "Une puissance d’exposant −1 désigne l’inverse de la base non nulle."
+    },
+    {
+      "id": "PUI-011",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 2³ × 2⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2⁷"
+      },
+      "propositions": [
+        "2⁷",
+        "2¹²",
+        "4⁷",
+        "2¹"
+      ],
+      "correction": "On additionne les exposants lorsque les bases sont identiques dans un produit."
+    },
+    {
+      "id": "PUI-012",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 5⁸ / 5³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5⁵"
+      },
+      "propositions": [
+        "5⁵",
+        "5¹¹",
+        "1⁵",
+        "5²⁴"
+      ],
+      "correction": "Pour une division de puissances de même base non nulle, on soustrait les exposants."
+    },
+    {
+      "id": "PUI-013",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie (3²)⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3⁸"
+      },
+      "propositions": [
+        "3⁸",
+        "3⁶",
+        "3¹⁶",
+        "9⁶"
+      ],
+      "correction": "Une puissance de puissance multiplie les exposants : 2 × 4 = 8."
+    },
+    {
+      "id": "PUI-014",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à (2 × 5)³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2³ × 5³"
+      },
+      "propositions": [
+        "2³ × 5³",
+        "2³ + 5³",
+        "2 × 5³",
+        "2⁶ × 5³"
+      ],
+      "correction": "La puissance d’un produit est le produit des puissances de chaque facteur."
+    },
+    {
+      "id": "PUI-015",
+      "type": "qcm",
+      "enonce": "Que vaut 2³ + 2² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "12"
+      },
+      "propositions": [
+        "12",
+        "2⁵",
+        "32",
+        "16"
+      ],
+      "correction": "On calcule séparément : 8 + 4 = 12 ; la règle des exposants ne concerne pas une somme."
+    },
+    {
+      "id": "PUI-016",
+      "type": "qcm",
+      "enonce": "Quelle est l’écriture scientifique de 45 000 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4,5 × 10⁴"
+      },
+      "propositions": [
+        "4,5 × 10⁴",
+        "45 × 10³",
+        "0,45 × 10⁵",
+        "4,5 × 10³"
+      ],
+      "correction": "En écriture scientifique, la valeur absolue du coefficient est comprise entre 1 inclus et 10 exclu."
+    },
+    {
+      "id": "PUI-017",
+      "type": "qcm",
+      "enonce": "Quelle est l’écriture scientifique de 0,0062 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "6,2 × 10⁻³"
+      },
+      "propositions": [
+        "6,2 × 10⁻³",
+        "6,2 × 10³",
+        "0,62 × 10⁻²",
+        "62 × 10⁻³"
+      ],
+      "correction": "On déplace la virgule de trois rangs vers la droite pour obtenir 6,2."
+    },
+    {
+      "id": "PUI-018",
+      "type": "qcm",
+      "enonce": "Que vaut 10⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "10 000"
+      },
+      "propositions": [
+        "10 000",
+        "1 000",
+        "40",
+        "100 000"
+      ],
+      "correction": "10⁴ est égal à 1 suivi de quatre zéros."
+    },
+    {
+      "id": "PUI-019",
+      "type": "qcm",
+      "enonce": "Que vaut 6² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "36"
+      },
+      "propositions": [
+        "36",
+        "12",
+        "18",
+        "216"
+      ],
+      "correction": "Le carré de 6 est 6 × 6."
+    },
+    {
+      "id": "PUI-020",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à 3⁻² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1/9"
+      },
+      "propositions": [
+        "1/9",
+        "−9",
+        "−6",
+        "9"
+      ],
+      "correction": "3⁻² = 1 / 3² = 1/9."
+    },
+    {
+      "id": "PUI-021",
+      "type": "qcm",
+      "enonce": "Pour a et b non nuls, quelle égalité est toujours vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "(a / b)² = a² / b²"
+      },
+      "propositions": [
+        "(a / b)² = a² / b²",
+        "(a + b)² = a² + b²",
+        "a² + a³ = a⁵",
+        "a² / b² = a / b"
+      ],
+      "correction": "La puissance d’un quotient est le quotient des puissances lorsque le dénominateur est non nul."
+    },
+    {
+      "id": "PUI-022",
+      "type": "qcm",
+      "enonce": "Que vaut 2⁰ + 3⁰ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2"
+      },
+      "propositions": [
+        "2",
+        "0",
+        "1",
+        "5"
+      ],
+      "correction": "Chaque nombre non nul élevé à la puissance zéro vaut 1 : 1 + 1 = 2."
+    },
+    {
+      "id": "PUI-023",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 10² × 10⁻⁵ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "10⁻³"
+      },
+      "propositions": [
+        "10⁻³",
+        "10⁻¹⁰",
+        "10³",
+        "10⁷"
+      ],
+      "correction": "Les exposants s’additionnent : 2 + (−5) = −3."
+    },
+    {
+      "id": "PUI-024",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à 8² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2⁶"
+      },
+      "propositions": [
+        "2⁶",
+        "2⁴",
+        "4³",
+        "16²"
+      ],
+      "correction": "8 = 2³, donc (2³)² = 2⁶."
+    },
+    {
+      "id": "PUI-025",
+      "type": "qcm",
+      "enonce": "Quel calcul représente 4³ / 4² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4"
+      },
+      "propositions": [
+        "4",
+        "1",
+        "4⁵",
+        "16"
+      ],
+      "correction": "4³ / 4² = 4¹ = 4."
+    }
+  ]
+}

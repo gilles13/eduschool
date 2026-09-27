@@ -1,0 +1,405 @@
+{
+  "notion_id": "racine_carree",
+  "questions": [
+    {
+      "id": "RAC-001",
+      "type": "qcm",
+      "enonce": "Que vaut √49 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "7"
+      },
+      "propositions": [
+        "7",
+        "−7",
+        "14",
+        "24,5"
+      ],
+      "correction": "√49 désigne la racine carrée positive : 7² = 49."
+    },
+    {
+      "id": "RAC-002",
+      "type": "qcm",
+      "enonce": "Que vaut √81 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "9"
+      },
+      "propositions": [
+        "9",
+        "−9",
+        "18",
+        "40,5"
+      ],
+      "correction": "9² = 81 et la racine carrée est positive ou nulle."
+    },
+    {
+      "id": "RAC-003",
+      "type": "qcm",
+      "enonce": "Que vaut √0 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0"
+      },
+      "propositions": [
+        "0",
+        "1",
+        "−1",
+        "Non défini"
+      ],
+      "correction": "Le carré de 0 vaut 0."
+    },
+    {
+      "id": "RAC-004",
+      "type": "qcm",
+      "enonce": "Que vaut √1 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1"
+      },
+      "propositions": [
+        "1",
+        "−1",
+        "0",
+        "2"
+      ],
+      "correction": "Le nombre positif ou nul dont le carré vaut 1 est 1."
+    },
+    {
+      "id": "RAC-005",
+      "type": "qcm",
+      "enonce": "Quel entier est compris entre √20 et √30 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5"
+      },
+      "propositions": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "correction": "25 est compris entre 20 et 30, donc 5 est compris entre leurs racines carrées."
+    },
+    {
+      "id": "RAC-006",
+      "type": "qcm",
+      "enonce": "Quel encadrement est correct ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4 < √20 < 5"
+      },
+      "propositions": [
+        "4 < √20 < 5",
+        "3 < √20 < 4",
+        "5 < √20 < 6",
+        "4 < √20 < 4,4"
+      ],
+      "correction": "16 < 20 < 25, donc 4 < √20 < 5 ; √20 est supérieur à 4,4."
+    },
+    {
+      "id": "RAC-007",
+      "type": "qcm",
+      "enonce": "Que vaut (√13)² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "13"
+      },
+      "propositions": [
+        "13",
+        "√26",
+        "169",
+        "26"
+      ],
+      "correction": "Pour un nombre positif, élever sa racine carrée au carré redonne le nombre."
+    },
+    {
+      "id": "RAC-008",
+      "type": "qcm",
+      "enonce": "Que vaut √((−5)²) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5"
+      },
+      "propositions": [
+        "5",
+        "−5",
+        "25",
+        "−25"
+      ],
+      "correction": "√(a²) = |a| : la racine carrée principale est positive ou nulle."
+    },
+    {
+      "id": "RAC-009",
+      "type": "qcm",
+      "enonce": "Combien de solutions réelles possède x² = 36 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Deux"
+      },
+      "propositions": [
+        "Deux",
+        "Aucune",
+        "Une",
+        "Une infinité"
+      ],
+      "correction": "Les solutions sont −6 et 6, deux nombres distincts."
+    },
+    {
+      "id": "RAC-010",
+      "type": "qcm",
+      "enonce": "Quelle est la solution positive de x² = 121 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "11"
+      },
+      "propositions": [
+        "11",
+        "−11",
+        "22",
+        "60,5"
+      ],
+      "correction": "11² = 121 et 11 est positif."
+    },
+    {
+      "id": "RAC-011",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie √50 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5√2"
+      },
+      "propositions": [
+        "5√2",
+        "25√2",
+        "2√5",
+        "10√5"
+      ],
+      "correction": "50 = 25 × 2, donc √50 = 5√2."
+    },
+    {
+      "id": "RAC-012",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie √72 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "6√2"
+      },
+      "propositions": [
+        "6√2",
+        "8√2",
+        "3√8",
+        "12√2"
+      ],
+      "correction": "72 = 36 × 2, donc √72 = 6√2."
+    },
+    {
+      "id": "RAC-013",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie √48 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4√3"
+      },
+      "propositions": [
+        "4√3",
+        "3√4",
+        "8√3",
+        "4√12"
+      ],
+      "correction": "48 = 16 × 3, donc √48 = 4√3."
+    },
+    {
+      "id": "RAC-014",
+      "type": "qcm",
+      "enonce": "Que vaut √9 × √16 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "12"
+      },
+      "propositions": [
+        "12",
+        "7",
+        "25",
+        "144"
+      ],
+      "correction": "Pour des nombres positifs, √9 × √16 = 3 × 4 = 12."
+    },
+    {
+      "id": "RAC-015",
+      "type": "qcm",
+      "enonce": "Que vaut √(9 × 16) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "12"
+      },
+      "propositions": [
+        "12",
+        "7",
+        "25",
+        "144"
+      ],
+      "correction": "√144 = 12 : la racine d’un produit positif est le produit des racines."
+    },
+    {
+      "id": "RAC-016",
+      "type": "qcm",
+      "enonce": "Que vaut √100 / √4 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5"
+      },
+      "propositions": [
+        "5",
+        "25",
+        "20",
+        "10"
+      ],
+      "correction": "√100 / √4 = 10 / 2 = 5."
+    },
+    {
+      "id": "RAC-017",
+      "type": "qcm",
+      "enonce": "Que vaut √9 + √16 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "7"
+      },
+      "propositions": [
+        "7",
+        "5",
+        "12",
+        "25"
+      ],
+      "correction": "On calcule chaque racine séparément : 3 + 4 = 7."
+    },
+    {
+      "id": "RAC-018",
+      "type": "qcm",
+      "enonce": "Dans les réels, quelle expression n’est pas définie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "√(−4)"
+      },
+      "propositions": [
+        "√(−4)",
+        "√0",
+        "√4",
+        "√(4²)"
+      ],
+      "correction": "Aucun réel n’a un carré négatif."
+    },
+    {
+      "id": "RAC-019",
+      "type": "qcm",
+      "enonce": "Que vaut √(3²) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3"
+      },
+      "propositions": [
+        "3",
+        "9",
+        "−3",
+        "6"
+      ],
+      "correction": "√(3²) = |3| = 3."
+    },
+    {
+      "id": "RAC-020",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 2√3 + 5√3 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "7√3"
+      },
+      "propositions": [
+        "7√3",
+        "7√6",
+        "10√3",
+        "√21"
+      ],
+      "correction": "On additionne les coefficients des radicaux identiques : (2 + 5)√3."
+    },
+    {
+      "id": "RAC-021",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie √8 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2√2"
+      },
+      "propositions": [
+        "2√2",
+        "4√2",
+        "2√4",
+        "8√2"
+      ],
+      "correction": "8 = 4 × 2, donc √8 = 2√2."
+    },
+    {
+      "id": "RAC-022",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à √(a × b) pour a et b positifs ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "√a × √b"
+      },
+      "propositions": [
+        "√a × √b",
+        "√a + √b",
+        "a × √b",
+        "√a × b"
+      ],
+      "correction": "La racine carrée d’un produit de nombres positifs est le produit de leurs racines."
+    },
+    {
+      "id": "RAC-023",
+      "type": "qcm",
+      "enonce": "Un carré a une aire de 64 cm². Quelle est la longueur de son côté ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "8 cm"
+      },
+      "propositions": [
+        "8 cm",
+        "16 cm",
+        "32 cm",
+        "4 cm"
+      ],
+      "correction": "Le côté est la racine carrée de l’aire : √64 = 8 cm."
+    },
+    {
+      "id": "RAC-024",
+      "type": "qcm",
+      "enonce": "Un triangle rectangle a des côtés de l’angle droit de 6 cm et 8 cm. Quelle est son hypoténuse ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "10 cm"
+      },
+      "propositions": [
+        "10 cm",
+        "14 cm",
+        "7 cm",
+        "12 cm"
+      ],
+      "correction": "Par Pythagore : √(6² + 8²) = √100 = 10 cm."
+    },
+    {
+      "id": "RAC-025",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie √(25/9) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5/3"
+      },
+      "propositions": [
+        "5/3",
+        "25/3",
+        "5/9",
+        "3/5"
+      ],
+      "correction": "La racine du quotient positif vaut √25 / √9 = 5/3."
+    }
+  ]
+}

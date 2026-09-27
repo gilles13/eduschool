@@ -35,7 +35,7 @@
         "AC² = AB² + BC²"
       ],
       "illustration": {
-        "id": "triangle_rectangle_A"
+        "id": "triangle_rectangle_normal"
       },
       "correction": "Identifier d’abord l’hypoténuse BC, opposée à l’angle droit, puis appliquer Pythagore."
     },

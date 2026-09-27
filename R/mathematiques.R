@@ -311,6 +311,8 @@ graphique = function(id, ...) {
             grepl("^[a-z][A-Za-z0-9_]*$", id))
   fichier = .chemin_edu("graphiques", paste0(id, ".R"))
   environnement = new.env(parent = environment())
+  auxiliaire = .chemin_edu("graphiques", "_etiquettes.R")
+  if (file.exists(auxiliaire)) source(auxiliaire, local = environnement)
   source(fichier, local = environnement)
   fonction = paste0("graphique_", id)
   if (!exists(fonction, envir = environnement, inherits = FALSE))

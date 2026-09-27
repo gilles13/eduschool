@@ -6,3 +6,8 @@ export(produire)
 export(graphique)
 importFrom(ggplot2,ggplot)
 importFrom(ggsketch,geom_sketch_segment)
+
+export(voies)
+export(series)
+export(maths_programmes)
+export(maths_parcours)

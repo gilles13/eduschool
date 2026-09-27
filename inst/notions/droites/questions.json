@@ -1,0 +1,138 @@
+{
+  "notion_id": "droites",
+  "questions": [
+    {
+      "id": "DROIT_PERP_001",
+      "type": "qcm",
+      "enonce": "Le petit carré code un angle droit entre les droites (d) et (Δ). Que peut-on affirmer ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Les droites (d) et (Δ) sont perpendiculaires"
+      },
+      "propositions": [
+        "Les droites (d) et (Δ) sont perpendiculaires",
+        "Les droites (d) et (Δ) sont parallèles",
+        "Les droites (d) et (Δ) ont la même longueur",
+        "On ne peut rien affirmer"
+      ],
+      "illustration": {
+        "id": "droites_perpendiculaires"
+      },
+      "correction": "Le petit carré code un angle droit : les droites (d) et (Δ) sont donc perpendiculaires."
+    },
+    {
+      "id": "DROIT_PAR_001",
+      "type": "qcm",
+      "enonce": "On sait que (d) // (d'). Que signifie cette information ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Les droites (d) et (d') sont parallèles"
+      },
+      "propositions": [
+        "Les droites (d) et (d') sont parallèles",
+        "Les droites (d) et (d') sont perpendiculaires",
+        "Les droites (d) et (d') se coupent en dehors du dessin",
+        "Les droites (d) et (d') ont la même longueur"
+      ],
+      "illustration": {
+        "id": "droites_paralleles"
+      },
+      "correction": "La notation (d) // (d') indique que les deux droites sont parallèles."
+    },
+    {
+      "id": "DROIT_CODE_001",
+      "type": "qcm",
+      "enonce": "Les droites semblent presque perpendiculaires. Quelle information permet réellement de l'affirmer ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le codage de l'angle droit"
+      },
+      "propositions": [
+        "Le codage de l'angle droit",
+        "Le fait que les droites en aient l'air",
+        "La longueur visible des deux droites",
+        "Le fait qu'elles se coupent"
+      ],
+      "illustration": {
+        "id": "droites_presque_perpendiculaires"
+      },
+      "correction": "C'est le petit carré de l'angle droit qui permet d'affirmer la perpendicularité."
+    },
+    {
+      "id": "DROIT_DED_001",
+      "type": "qcm",
+      "enonce": "Les codages indiquent que (d) ⟂ (Δ) et (d') ⟂ (Δ). Que peut-on en déduire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Les droites (d) et (d') sont parallèles"
+      },
+      "propositions": [
+        "Les droites (d) et (d') sont parallèles",
+        "Les droites (d) et (d') sont perpendiculaires",
+        "Les droites (d) et (d') se coupent sur (Δ)",
+        "On ne peut rien déduire"
+      ],
+      "illustration": {
+        "id": "droites_perpendiculaires_meme_droite"
+      },
+      "correction": "[[Je vois]]\nLes droites (d) et (d') sont perpendiculaires à (Δ).\n[[Je sais]]\nDeux droites perpendiculaires à une même droite sont parallèles entre elles.\n[[J'en déduis]]\n(d) // (d')"
+    },
+    {
+      "id": "DROIT-VOCAB-TROU-001",
+      "type": "qcm",
+      "enonce": "Deux droites qui forment un angle droit sont dites… Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "perpendiculaires": "p _ _ _ _ _ _ _ _ _ _ _ _ _ _ s",
+          "parallèles": "p _ _ _ _ _ _ _ _ s",
+          "sécantes": "s _ _ _ _ _ _ s",
+          "confondues": "c _ _ _ _ _ _ _ _ s"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "perpendiculaires"
+      },
+      "propositions": [
+        "perpendiculaires",
+        "parallèles",
+        "sécantes",
+        "confondues"
+      ],
+      "correction": "Des droites perpendiculaires forment un angle droit ; être simplement sécantes ne suffit pas.",
+      "illustration": {
+        "id": "droites_perpendiculaires"
+      }
+    },
+    {
+      "id": "DROIT-VOCAB-MASQUE-001",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on deux droites d’un même plan qui ne se coupent pas ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "parallèles": "P________S",
+          "perpendiculaires": "PE________S",
+          "sécantes": "SÉC________S",
+          "confondues": "CONF________S"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "parallèles"
+      },
+      "propositions": [
+        "parallèles",
+        "perpendiculaires",
+        "sécantes",
+        "confondues"
+      ],
+      "correction": "Deux droites parallèles distinctes d’un même plan ne se rencontrent pas.",
+      "illustration": {
+        "id": "droites_paralleles"
+      }
+    }
+  ]
+}

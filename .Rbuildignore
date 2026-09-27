@@ -1,3 +1,6 @@
 ^documentation$
 ^sorties$
 ^[[:alnum:]_]+-(decouverte|synthese|revision|quiz)\.(html|pdf)$
+^_pkgdown\.yml$
+^pkgdown$
+^docs$

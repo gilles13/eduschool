@@ -9,3 +9,5 @@ Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: jsonlite, ggplot2, ggsketch, rmarkdown, Ryacas
 Config/roxygen2/version: 8.1.0
+Suggests: knitr
+VignetteBuilder: knitr

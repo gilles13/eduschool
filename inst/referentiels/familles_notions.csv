@@ -19,3 +19,8 @@ grandeurs_mesures_conversions;conversion_aires
 grandeurs_mesures_conversions;conversion_volumes
 grandeurs_mesures_conversions;conversion_durees
 grandeurs_mesures_conversions;conversion_octets
+geometrie;cercle
+geometrie;droites
+geometrie;parallelogrammes
+geometrie;geometrie_deductive
+geometrie;thales
