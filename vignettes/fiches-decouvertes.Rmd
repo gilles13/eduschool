@@ -1,0 +1,14 @@
+---
+title: "Fiches découvertes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Fiches découvertes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Explorer les mathématiques
+
+[**Le zéro, est-ce vraiment rien ?**](zero-est-ce-vraiment-rien.html)
+
+Une première fiche pour découvrir que le zéro peut être une absence, une origine, un résultat ou même une solution.

@@ -1,13 +1,18 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/LICENSE-text.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/reference/graphique.html</loc></url>
-<url><loc>/reference/illustrer_question.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
-<url><loc>/reference/produire.html</loc></url>
-<url><loc>/reference/question.html</loc></url>
-<url><loc>/reference/questions.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/404.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/LICENSE-text.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/articles/a-propos.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/articles/fiches-decouvertes.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/articles/index.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/articles/zero-est-ce-vraiment-rien.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/authors.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/eduschool-cheatsheet.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/index.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/graphique.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/illustrer_question.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/index.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/produire.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/question.html</loc></url>
+<url><loc>https://gilles13.github.io/eduschool/reference/questions.html</loc></url>
 </urlset>
 

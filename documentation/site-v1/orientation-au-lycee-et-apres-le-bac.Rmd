@@ -1,0 +1,221 @@
+---
+title: "S'orienter au lycée et après le bac"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{S'orienter au lycée et après le bac}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", warning = FALSE, message = FALSE)
+library(eduschool)
+```
+
+L'orientation scolaire n'est pas une décision unique prise au moment du
+baccalauréat. Elle se construit par **bifurcations successives** : choix d'une
+voie après la 3e, choix entre voie générale et séries technologiques après la
+2de générale et technologique, choix des spécialités en voie générale, puis
+choix d'une formation supérieure.
+
+Cette vignette est produite à partir des tables relationnelles d'`eduschool`.
+Les schémas ci-dessous ne sont donc pas dessinés manuellement dans le document.
+
+## Vue d'ensemble du parcours
+
+```{r schema-orientation, echo=FALSE, out.width="100%"}
+fig_dir = knitr::opts_chunk$get("fig.path")
+dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+f = file.path(fig_dir, "orientation-parcours.svg")
+produire_schema_orientation_svg(f)
+knitr::include_graphics(f)
+```
+
+Le schéma représente les principales voies. Il ne prétend pas représenter tous
+les cas particuliers, passerelles ou formations relevant d'autres ministères.
+
+## Première étape : après la 3e
+
+À la fin de la 3e, les principales voies d'orientation sont la **2de générale
+et technologique** (ou la 2de à régime spécifique STHR), la **2de
+professionnelle** et la première année de **CAP ou CAP agricole**. Le choix de
+voie et l'affectation dans un établissement sont deux opérations distinctes.
+
+```{r choix-3e, echo=FALSE}
+p = orientation_parcours()
+liens_3e = p$liens[p$liens$de == "3E", c("libelle", "vers")]
+knitr::kable(liens_3e, col.names = c("Orientation", "Identifiant de destination"), row.names = FALSE)
+```
+
+## Deuxième étape : après la 2de générale et technologique
+
+Après la 2de GT, l'élève peut notamment poursuivre en **1re générale** ou dans
+l'une des **huit séries technologiques**. La série STAV relève de
+l'enseignement agricole ; elle est néanmoins conservée dans le référentiel afin
+de présenter le système d'orientation dans son ensemble.
+
+```{r series-techno, echo=FALSE}
+series_technologiques()[, c("serie_id", "libelle")] |>
+  knitr::kable(col.names = c("Série", "Libellé"), row.names = FALSE)
+```
+
+## Spécialités et options : deux rôles différents
+
+En voie générale, le choix structurant porte sur les **enseignements de
+spécialité** : trois sont suivis en 1re, puis deux sont conservés en Terminale.
+Les enseignements optionnels enrichissent le parcours mais ne doivent pas être
+confondus avec les spécialités.
+
+```{r specialites, echo=FALSE}
+specialites_generales()[, c("enseignement_id", "libelle")] |>
+  knitr::kable(col.names = c("Spécialité", "Libellé"), row.names = FALSE)
+```
+
+Les options modélisées pour la Terminale générale 2026-2027 comprennent par
+exemple les mathématiques expertes ou complémentaires :
+
+```{r options, echo=FALSE}
+enseignements_optionnels_lycee("TG", "2026_2027") |>
+  knitr::kable(row.names = FALSE)
+```
+
+Cette séparation est importante : une option peut compléter un projet, tandis
+que les spécialités structurent beaucoup plus directement le parcours de la
+voie générale et la préparation aux études supérieures.
+
+## Après le bac : plusieurs familles de formations
+
+Les études supérieures ne se réduisent pas à l'université. Les grandes familles
+modélisées ici couvrent notamment licences, BUT, BTS, CPGE, écoles et formations
+spécialisées.
+
+```{r postbac-table, echo=FALSE}
+pb = filieres_postbac()
+knitr::kable(
+  pb[, c("libelle", "categorie", "duree_min", "duree_max", "selectivite", "diplome")],
+  col.names = c("Formation", "Cadre", "Durée min.", "Durée max.", "Admission", "Diplôme principal"),
+  row.names = FALSE
+)
+```
+
+La durée indicative fournit une autre lecture de ces parcours :
+
+```{r postbac-durees, echo=FALSE, fig.width=8, fig.height=5}
+pb = filieres_postbac()
+y = seq_len(nrow(pb))
+plot(
+  NA,
+  xlim = c(0, max(as.integer(pb$duree_max)) + 0.5),
+  ylim = c(0.5, nrow(pb) + 0.5),
+  yaxt = "n", xlab = "Durée indicative après le bac (années)", ylab = "",
+  main = "Grandes familles de formations post-bac"
+)
+axis(2, at = y, labels = pb$libelle, las = 2, cex.axis = 0.75)
+segments(as.integer(pb$duree_min), y, as.integer(pb$duree_max), y, lwd = 4)
+points(as.integer(pb$duree_min), y, pch = 16)
+points(as.integer(pb$duree_max), y, pch = 16)
+```
+
+Ces durées sont des repères de structure, pas des garanties de durée réelle du
+parcours d'un étudiant.
+
+## Parcoursup : à quoi sert la plateforme ?
+
+Parcoursup est la plateforme nationale de préinscription en première année de
+l'enseignement supérieur. La procédure distingue l'information sur les
+formations, la formulation des vœux, la finalisation du dossier, la phase
+d'admission et, si nécessaire, la phase complémentaire ou l'accompagnement par
+la CAES.
+
+```{r schema-parcoursup, echo=FALSE, out.width="100%"}
+fig_dir = knitr::opts_chunk$get("fig.path")
+dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+f = file.path(fig_dir, "orientation-parcoursup.svg")
+produire_schema_parcoursup_svg(f)
+knitr::include_graphics(f)
+```
+
+```{r parcoursup-etapes, echo=FALSE}
+parcoursup_etapes()[, c("libelle", "description")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+### La campagne 2026 : une frise, pas un schéma figé
+
+Les dates changent d'une année à l'autre. Elles ne sont donc **pas des colonnes
+du modèle Parcoursup** : chaque date importante est un événement rattaché à une
+campagne et, lorsque c'est pertinent, à une étape structurelle. Une campagne
+future peut ainsi ajouter ou retirer un jalon sans modifier le schéma des tables.
+
+```{r frise-2026, echo=FALSE, out.width="100%"}
+fig_dir = knitr::opts_chunk$get("fig.path")
+dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+f = file.path(fig_dir, "parcoursup-2026-frise.svg")
+produire_frise_parcoursup_svg("PS2026", f)
+knitr::include_graphics(f)
+```
+
+La même information reste naturellement interrogeable sous forme tabulaire :
+
+```{r campagne-2026, echo=FALSE}
+cal = parcoursup_calendrier("PS2026")
+cal$date = format(as.Date(cal$date), "%d/%m/%Y")
+knitr::kable(
+  cal[, c("date", "libelle", "description")],
+  col.names = c("Date", "Jalon", "Description"),
+  row.names = FALSE
+)
+```
+
+Cette frise présente le calendrier national de référence. Des adaptations
+territoriales ou des règles particulières peuvent exister ; elles pourront être
+ajoutées ultérieurement comme données de périmètre sans modifier la structure.
+
+Pour 2026, plusieurs enrichissements des fiches formation sont mis en avant :
+meilleure visibilité sur les profils des admis des années précédentes et nouvelles
+données sur la réussite et l'insertion.
+
+```{r nouveautes-2026, echo=FALSE}
+parcoursup_nouveautes("PS2026")[, c("libelle", "description")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+## Avant Parcoursup : APB
+
+**Admission Post-Bac (APB)** a précédé Parcoursup. La plateforme, généralisée au
+niveau national avant 2010, a été utilisée jusqu'à la campagne 2017 et remplacée
+par Parcoursup en 2018. L'objectif ici n'est pas de reconstituer toute l'histoire
+d'APB, mais de conserver ce repère pour comprendre le changement de système.
+
+```{r apb-parcoursup, echo=FALSE}
+p = plateformes_admission()
+x = p$caracteristiques
+large = reshape(
+  x[, c("plateforme_id", "libelle", "valeur")],
+  idvar = "libelle", timevar = "plateforme_id", direction = "wide"
+)
+names(large) = sub("valeur\\.", "", names(large))
+knitr::kable(large, row.names = FALSE)
+```
+
+Une différence immédiatement visible est que les vœux étaient hiérarchisés dans
+APB, alors que les vœux Parcoursup ne sont pas classés par ordre de préférence
+au moment où ils sont formulés. Les formations examinent les candidatures selon
+leurs critères, puis la plateforme transmet les propositions au cours de la
+phase d'admission.
+
+## Ce que cette couche apporte à eduschool
+
+Le modèle sépare volontairement :
+
+- les **bifurcations scolaires** ;
+- les **séries, spécialités et options**, déjà présentes dans les référentiels
+  d'enseignement ;
+- les **familles de formations post-bac** ;
+- les **étapes durables de Parcoursup** ;
+- les **campagnes, jalons datés et nouveautés propres à chaque campagne** ;
+- l'**historique des plateformes d'admission**.
+
+Cette séparation permettra d'enrichir progressivement les tables sans devoir
+réécrire les diagrammes ou la vignette : les représentations sont produites à
+partir des données.

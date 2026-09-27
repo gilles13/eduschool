@@ -1,0 +1,26 @@
+url: https://gilles13.github.io/eduschool/
+template:
+  bootstrap: 5
+  math-rendering: katex
+navbar:
+  structure:
+    left: [intro, cheatsheet, guides, reference]
+    right: [github]
+  components:
+    cheatsheet:
+      text: Cheatsheet
+      href: eduschool-cheatsheet.html
+    guides:
+      text: Guides
+      menu:
+        - text: À propos
+          href: articles/a-propos.html
+        - text: Fiches découvertes
+          href: articles/fiches-decouvertes.html
+        - text: Tous les articles
+          href: articles/index.html
+articles:
+  - title: Découvrir eduschool
+    contents: [a-propos]
+  - title: Fiches découvertes
+    contents: [fiches-decouvertes, zero-est-ce-vraiment-rien]

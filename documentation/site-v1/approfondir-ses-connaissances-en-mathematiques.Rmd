@@ -1,0 +1,103 @@
+---
+title: "Approfondir ses connaissances en mathématiques"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Approfondir ses connaissances en mathématiques}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+```{r}
+library(eduschool)
+```
+
+`eduschool` structure les programmes et produit des outils de révision, mais n'a
+pas vocation à remplacer les cours, exercices interactifs, vidéos ou logiciels
+pédagogiques disponibles sur le Web. Cette vignette recense une **sélection
+courte de ressources externes** utiles pour comprendre, s'entraîner, visualiser
+ou approfondir les mathématiques.
+
+Ces ressources pédagogiques sont volontairement séparées des **sources de
+référence** utilisées pour documenter le système scolaire français. Leur présence
+ici constitue une orientation pratique, pas une validation institutionnelle de
+tous leurs contenus.
+
+## Choisir une ressource selon son besoin
+
+```{r}
+usages_ressources()[, c("libelle", "description")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+## Ressources sélectionnées
+
+La liste ci-dessous est produite depuis les tables relationnelles du package.
+Elle n'est donc pas recopiée manuellement dans la vignette.
+
+```{r ressources, results='asis'}
+x = ressources_pedagogiques()
+x$lien = paste0("[", x$nom, "](", x$url, ")")
+x$acces = ifelse(
+  x$compte_requis == "OUI",
+  "gratuit, compte requis pour certaines fonctions",
+  "gratuit, sans compte pour l'usage principal"
+)
+knitr::kable(
+  x[, c("lien", "organisme", "description", "usages", "acces")],
+  col.names = c("Ressource", "Responsable", "Pour quoi faire ?", "Usages", "Accès"),
+  row.names = FALSE
+)
+```
+
+## Quelques repères
+
+**Math et Tiques** est particulièrement utile lorsqu'on souhaite retrouver un
+cours ou des exercices organisés selon les niveaux du collège et du lycée.
+**Sésamath** apporte des manuels, cahiers et ressources numériques. **GeoGebra**
+est complémentaire : il permet surtout de manipuler et visualiser fonctions,
+figures géométriques et objets en 3D.
+
+Pour l'entraînement intensif, **MathALÉA** permet de régénérer des exercices avec
+de nouvelles données. Pour préparer un examen à partir de sujets réels,
+**l'APMEP** constitue une ressource majeure grâce à ses annales. **Lumni** et
+**Khan Academy** sont utiles pour varier les explications et les formats de
+révision. Enfin, **France-IOI** fournit un parcours progressif en algorithmique
+et programmation.
+
+## Filtrer depuis R
+
+Le catalogue peut être interrogé exactement comme les autres données du
+package. Par exemple, pour chercher des ressources d'exercices adaptées à la 6e :
+
+```{r}
+ressources_pedagogiques("6E", "EXERCICES")[, c("nom", "url", "usages")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+Pour préparer des annales de 3e :
+
+```{r}
+ressources_pedagogiques("3E", "ANNALES")[, c("nom", "url")] |>
+  knitr::kable(row.names = FALSE)
+```
+
+## Un catalogue maintenable
+
+Le modèle est normalisé en quatre tables :
+
+- `ressources.csv` décrit chaque site une seule fois ;
+- `usages_ressources.csv` définit les usages pédagogiques ;
+- `ressources_usages.csv` relie une ressource à plusieurs usages ;
+- `ressources_niveaux.csv` relie une ressource aux niveaux concernés.
+
+Cette structure évite les listes séparées par des virgules dans les données et
+permettra plus tard, si cela devient utile, d'ajouter des liens vers des notions
+ou des familles de connaissances sans modifier le catalogue principal.
+
+Les sites externes évoluent. La colonne `date_verification` indique donc quand
+chaque entrée a été contrôlée pour la dernière fois ; elle doit être mise à jour
+lorsqu'un lien, une offre ou le périmètre d'une ressource change.

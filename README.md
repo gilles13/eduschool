@@ -1,7 +1,34 @@
-# eduschool 2 — branche expérimentale
+![edusch∞l Math — Les maths, ça se découvre aussi ensemble](man/figures/hero-eduschool-math.png)
 
-Refonte indépendante du moteur eduschool.1. Deux notions pilotes : addition de fractions et théorème de Pythagore.
+# edusch∞l Math
 
-Cette base contient uniquement les référentiels CSV utiles au démarrage et le squelette d’un package R. Aucune génération de fiche ou de quiz n’est encore implémentée.
+## μάθημα — *máthēma*
 
-Voir `documentation/DECISIONS.md`.
+> **Ce qui s’apprend. Ce qui s’étudie. Une connaissance.**
+
+Avant d’apprendre les mathématiques, faisons un pas de côté : prenons le temps
+de comprendre le mot lui-même.
+
+**Mathématiques** vient du grec *máthēma* (μάθημα), « ce qui s’apprend, ce qui
+s’étudie ». À l’origine, le mot parle donc d’abord d’**apprendre** et de
+**comprendre**.
+
+Celui-là, on peut même l’apprendre **par cœur**. ❤️
+
+> Les maths ne commencent peut-être pas par un calcul.
+> Elles commencent par l’envie de comprendre.
+
+<details>
+<summary><strong>Installer eduschool</strong></summary>
+
+```r
+remotes::install_github("gilles13/eduschool")
+library(eduschool)
+
+questions("fractions")
+produire("addition_fractions", "quiz", format = "html")
+```
+
+</details>
+
+`eduschool` est **libre, gratuit et ouvert**.
