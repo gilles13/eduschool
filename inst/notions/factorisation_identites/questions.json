@@ -1,0 +1,29 @@
+{
+  "notion_id": "factorisation_identites",
+  "questions": [
+    {
+      "id": "IR-003",
+      "type": "qcm",
+      "enonce": "Factoriser [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "x^2-25",
+        "affichage": "x² − 25",
+        "candidats": {
+          "(x − 5)(x + 5)": "(x-5)*(x+5)",
+          "(x − 5)²": "(x-5)^2",
+          "(x + 5)²": "(x+5)^2",
+          "x(x − 25)": "x*(x-25)"
+        }
+      },
+      "propositions": [
+        "(x − 5)(x + 5)",
+        "(x − 5)²",
+        "(x + 5)²",
+        "x(x − 25)"
+      ],
+      "correction": "**Différence de deux carrés :** a² − b² = (a − b)(a + b).\n\nIci 25 = 5².\n\nOn obtient (x − 5)(x + 5)."
+    }
+  ]
+}

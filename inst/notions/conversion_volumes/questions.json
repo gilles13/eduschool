@@ -1,0 +1,77 @@
+{
+  "notion_id": "conversion_volumes",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_VOLUMES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] m³ correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "1/2",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "L",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "500 L",
+        "50 L",
+        "5 000 L",
+        "0,5 L"
+      ],
+      "correction": "1 m³ = 1 000 L."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] L correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "2",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "cm³",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "2 000 cm³",
+        "200 cm³",
+        "20 000 cm³",
+        "2 cm³"
+      ],
+      "correction": "1 L = 1 000 cm³."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] cm³ correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "3000",
+          "1/1000"
+        ],
+        "format": "decimal",
+        "unite": "L",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "3 L",
+        "30 L",
+        "0,3 L",
+        "300 L"
+      ],
+      "correction": "1 L = 1 000 cm³."
+    }
+  ]
+}

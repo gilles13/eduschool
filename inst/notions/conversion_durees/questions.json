@@ -1,0 +1,77 @@
+{
+  "notion_id": "conversion_durees",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_DUREES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "165",
+          "1"
+        ],
+        "format": "decimal",
+        "unite": "min",
+        "source_format": "h_min"
+      },
+      "propositions": [
+        "165 min",
+        "145 min",
+        "125 min",
+        "245 min"
+      ],
+      "correction": "2 × 60 + 45 = 165 minutes."
+    },
+    {
+      "id": "MES-CONVERSION_DUREES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] min correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "135",
+          "1"
+        ],
+        "format": "h_min",
+        "unite": "",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "2 h 15 min",
+        "1 h 35 min",
+        "2 h 35 min",
+        "1 h 15 min"
+      ],
+      "correction": "135 = 2 × 60 + 15."
+    },
+    {
+      "id": "MES-CONVERSION_DUREES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] h correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "3/4",
+          "60"
+        ],
+        "format": "decimal",
+        "unite": "min",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "45 min",
+        "75 min",
+        "30 min",
+        "15 min"
+      ],
+      "correction": "0,75 × 60 = 45."
+    }
+  ]
+}

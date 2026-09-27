@@ -1,0 +1,130 @@
+{
+  "notion_id": "fractions_equivalentes",
+  "questions": [
+    {
+      "id": "FRAC-MIG-FRACTIONS-EQUIVALENTES-001",
+      "type": "qcm",
+      "enonce": "Quelle fraction est équivalente à [[source]] ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "equivalent",
+        "expression": "2/7",
+        "affichage": "2/7",
+        "candidats": {
+          "6/21": "6/21",
+          "7/21": "7/21",
+          "6/7": "6/7",
+          "2/21": "2/21"
+        }
+      },
+      "propositions": [
+        "6/21",
+        "7/21",
+        "6/7",
+        "2/21"
+      ],
+      "correction": "2/7 = (2 × 3)/(7 × 3) = 6/21 : multiplier numérateur et dénominateur par 3 conserve la valeur.",
+      "origine": "migration_historique/Fractions équivalentes/1"
+    },
+    {
+      "id": "FRAC-VOCAB-001",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on le nombre situé au-dessus de la barre de fraction ? Choisis le mot masqué correspondant.",
+      "presentation": {
+        "type": "mot_masque",
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché.",
+        "masques": {
+          "numérateur": "N________R",
+          "dénominateur": "DÉ________R",
+          "quotient": "Q________T",
+          "diviseur": "DI________R"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "numérateur"
+      },
+      "propositions": [
+        "numérateur",
+        "dénominateur",
+        "quotient",
+        "diviseur"
+      ],
+      "correction": "Le numérateur indique combien de parts sont considérées. Le dénominateur précise en combien de parts égales l’unité est divisée."
+    },
+    {
+      "id": "FRAC-EQUIV-MANQUANT-001",
+      "type": "qcm",
+      "enonce": "Quel numérateur complète l’égalité [[terme1]] = □/[[terme2]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "proportion",
+        "termes": [
+          "3/5",
+          "20"
+        ],
+        "format": "integer",
+        "unite": ""
+      },
+      "propositions": [
+        "12",
+        "15",
+        "8",
+        "4"
+      ],
+      "correction": "Le dénominateur est multiplié par 4 : le numérateur aussi. 3 × 4 = 12."
+    },
+    {
+      "id": "FRAC-EQUIV-ERREUR-001",
+      "type": "qcm",
+      "enonce": "Quelle égalité de fractions est fausse ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "egalite_fausse",
+        "candidats": {
+          "2/3 = 4/9": {
+            "gauche": "2/3",
+            "droite": "4/9"
+          },
+          "1/2 = 3/6": {
+            "gauche": "1/2",
+            "droite": "3/6"
+          },
+          "3/4 = 6/8": {
+            "gauche": "3/4",
+            "droite": "6/8"
+          },
+          "2/5 = 8/20": {
+            "gauche": "2/5",
+            "droite": "8/20"
+          }
+        }
+      },
+      "propositions": [
+        "2/3 = 4/9",
+        "1/2 = 3/6",
+        "3/4 = 6/8",
+        "2/5 = 8/20"
+      ],
+      "correction": "Pour conserver une fraction, il faut multiplier son numérateur et son dénominateur par un même nombre : 2/3 = 6/9, pas 4/9."
+    }
+  ],
+  "migration_historique": {
+    "statut": "sources_conservees; exemples_fixes_valides_pour_premiere_migration",
+    "famille": "Fractions équivalentes",
+    "questions": [
+      {
+        "notion_historique": "Fractions équivalentes",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction est égale à {a}/{b} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)",
+        "calcul": "a / b",
+        "distracteurs": "b / a\n(a*2) / b\na / (b*2)",
+        "moteur": "Ryacas"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "notion_id": "grandeurs_mesures",
+  "questions": [
+    {
+      "id": "MES-GRANDEURS_MESURES-001",
+      "type": "qcm",
+      "enonce": "Quel énoncé est une mesure de longueur ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2,5 m"
+      },
+      "propositions": [
+        "2,5 m",
+        "2,5 kg",
+        "2,5 h",
+        "2,5 L"
+      ],
+      "correction": "Le mètre est une unité de longueur."
+    },
+    {
+      "id": "MES-GRANDEURS_MESURES-002",
+      "type": "qcm",
+      "enonce": "Quelle grandeur mesure-t-on en secondes ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "La durée"
+      },
+      "propositions": [
+        "La durée",
+        "La masse",
+        "La longueur",
+        "L’aire"
+      ],
+      "correction": "La seconde est une unité de durée."
+    },
+    {
+      "id": "MES-GRANDEURS_MESURES-003",
+      "type": "qcm",
+      "enonce": "Pour additionner 2 m et 30 cm, quelle méthode convient ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Convertir dans une unité commune"
+      },
+      "propositions": [
+        "Convertir dans une unité commune",
+        "Additionner 2 et 30 sans unité",
+        "Multiplier 2 par 30",
+        "Changer les deux valeurs en kg"
+      ],
+      "correction": "2 m = 200 cm ; on obtient 230 cm."
+    }
+  ]
+}

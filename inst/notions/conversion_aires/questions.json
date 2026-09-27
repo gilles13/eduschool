@@ -1,0 +1,77 @@
+{
+  "notion_id": "conversion_aires",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_AIRES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] m² correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "1",
+          "10000"
+        ],
+        "format": "decimal",
+        "unite": "cm²",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "10 000 cm²",
+        "100 cm²",
+        "1 000 cm²",
+        "100 000 cm²"
+      ],
+      "correction": "Chaque côté du carré mesure 100 cm : 100 × 100 = 10 000."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] m² correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "5/2",
+          "10000"
+        ],
+        "format": "decimal",
+        "unite": "cm²",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "25 000 cm²",
+        "250 cm²",
+        "2 500 cm²",
+        "250 000 cm²"
+      ],
+      "correction": "On multiplie par 10 000 pour passer de m² à cm²."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] cm² correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "300",
+          "1/100"
+        ],
+        "format": "decimal",
+        "unite": "dm²",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "3 dm²",
+        "30 dm²",
+        "0,3 dm²",
+        "300 dm²"
+      ],
+      "correction": "1 dm² = 100 cm²."
+    }
+  ]
+}

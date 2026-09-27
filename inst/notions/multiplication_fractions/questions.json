@@ -1,0 +1,110 @@
+{
+  "notion_id": "multiplication_fractions",
+  "questions": [
+    {
+      "id": "FRAC-MIG-MULTIPLICATION-FRACTIONS-001",
+      "type": "qcm",
+      "enonce": "Quelle fraction simplifiée vaut [[terme1]] × [[terme2]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "2/3",
+          "3/4"
+        ],
+        "format": "fraction",
+        "unite": ""
+      },
+      "propositions": [
+        "1/2",
+        "5/7",
+        "6/7",
+        "3/8"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Multiplier les numérateurs entre eux et les dénominateurs entre eux, puis simplifier.\nJ’en déduis : 2 × 3 = 6 et 3 × 4 = 12, donc 6/12 = 1/2.",
+      "origine": "migration_historique/Multiplication de fractions/1"
+    },
+    {
+      "id": "FRAC-MIG-MULTIPLICATION-FRACTIONS-002",
+      "type": "qcm",
+      "enonce": "Quelle fraction simplifiée manque : □ × [[terme2]] = [[terme1]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "division",
+        "termes": [
+          "1/2",
+          "3/4"
+        ],
+        "format": "fraction",
+        "unite": ""
+      },
+      "propositions": [
+        "2/3",
+        "3/8",
+        "3/4",
+        "4/3"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Multiplier les numérateurs entre eux et les dénominateurs entre eux, puis simplifier.\nJ’en déduis : On divise 1/2 par 3/4 : 1/2 × 4/3 = 2/3.",
+      "origine": "migration_historique/Multiplication de fractions/2"
+    },
+    {
+      "id": "FRAC-MIG-MULTIPLICATION-FRACTIONS-003",
+      "type": "qcm",
+      "enonce": "Par quelle fraction simplifiée multiplier [[terme2]] pour obtenir [[terme1]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "division",
+        "termes": [
+          "1/2",
+          "2/3"
+        ],
+        "format": "fraction",
+        "unite": ""
+      },
+      "propositions": [
+        "3/4",
+        "1/3",
+        "4/3",
+        "2/3"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Multiplier les numérateurs entre eux et les dénominateurs entre eux, puis simplifier.\nJ’en déduis : (1/2) ÷ (2/3) = 1/2 × 3/2 = 3/4.",
+      "origine": "migration_historique/Multiplication de fractions/3"
+    }
+  ],
+  "migration_historique": {
+    "statut": "sources_conservees; exemples_fixes_valides_pour_premiere_migration",
+    "famille": "Multiplication de fractions",
+    "questions": [
+      {
+        "notion_historique": "Multiplication de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle écriture permet de calculer ({a}/{b}) x ({c}/{d}) ?",
+        "parametres": "a = sample(1:8,1)\nb = sample(2:9,1)\nc = sample(1:8,1)\nd = sample(2:9,1)",
+        "calcul": "(a*c)/(b*d)",
+        "distracteurs": "(a+c)/(b+d)\n(a*c)/(b+d)\n(a+c)/(b*d)",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Multiplication de fractions",
+        "type_historique": "libre",
+        "enonce": "Quelle fraction se cache dans la boîte ?  □ × {c}/{d} = {produit_num}/{produit_den}",
+        "parametres": "c = sample(1:8,1)\nd = sample(2:9,1)\na = sample(1:8,1)\nb = sample(2:9,1)\nproduit_num = a*c\nproduit_den = b*d",
+        "calcul": "(produit_num/produit_den) / (c/d)",
+        "distracteurs": "(produit_num/produit_den) * (c/d)\n(produit_num/produit_den) / (d/c)\nc/d",
+        "moteur": "Ryacas"
+      },
+      {
+        "notion_historique": "Multiplication de fractions",
+        "type_historique": "libre",
+        "enonce": "Par quelle fraction faut-il multiplier {a}/{b} pour obtenir {produit_num}/{produit_den} ?",
+        "parametres": "a = sample(1:8,1)\nb = sample(2:9,1)\nproduit_num = sample(1:8,1)\nproduit_den = sample(2:9,1)",
+        "calcul": "(produit_num/produit_den) / (a/b)",
+        "distracteurs": "(produit_num/produit_den) * (a/b)\n(produit_num/produit_den) / (b/a)\na/b",
+        "moteur": "Ryacas"
+      }
+    ]
+  }
+}

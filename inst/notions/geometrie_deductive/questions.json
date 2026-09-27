@@ -1,0 +1,130 @@
+{
+  "notion_id": "geometrie_deductive",
+  "questions": [
+    {
+      "id": "GEO-001",
+      "type": "qcm",
+      "enonce": "Sur la figure à main levée, quelle information prouve que le triangle ABC est rectangle en A ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le codage de l’angle droit en A"
+      },
+      "propositions": [
+        "Le codage de l’angle droit en A",
+        "Le dessin semble montrer un angle droit",
+        "AB semble horizontal",
+        "Le côté BC semble le plus long"
+      ],
+      "illustration": {
+        "id": "triangle_rectangle_A"
+      },
+      "correction": "Un codage fournit une hypothèse ; l’apparence du dessin ne constitue pas une démonstration."
+    },
+    {
+      "id": "GEO-002",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A. Quelle relation peut-on déduire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "BC² = AB² + AC²"
+      },
+      "propositions": [
+        "BC² = AB² + AC²",
+        "AB² = BC² + AC²",
+        "BC = AB + AC",
+        "AC² = AB² + BC²"
+      ],
+      "illustration": {
+        "id": "triangle_rectangle_A"
+      },
+      "correction": "Identifier d’abord l’hypoténuse BC, opposée à l’angle droit, puis appliquer Pythagore."
+    },
+    {
+      "id": "GEO-003",
+      "type": "qcm",
+      "enonce": "Les diagonales d’un quadrilatère se coupent en leur milieu. Quelle conclusion est démontrée ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "C’est un parallélogramme"
+      },
+      "propositions": [
+        "C’est un parallélogramme",
+        "C’est nécessairement un rectangle",
+        "C’est nécessairement un losange",
+        "C’est nécessairement un carré"
+      ],
+      "correction": "La réciproque de la propriété des diagonales du parallélogramme suffit ; elle ne prouve pas un angle droit ni des côtés égaux."
+    },
+    {
+      "id": "GEO-004",
+      "type": "qcm",
+      "enonce": "Un quadrilatère a quatre angles droits. Quelle conclusion est démontrée ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "C’est un rectangle"
+      },
+      "propositions": [
+        "C’est un rectangle",
+        "C’est nécessairement un carré",
+        "C’est nécessairement un losange non carré",
+        "Ses diagonales sont perpendiculaires"
+      ],
+      "correction": "Quatre angles droits caractérisent un rectangle ; aucune égalité des quatre côtés n’est donnée."
+    },
+    {
+      "id": "GEO-005",
+      "type": "qcm",
+      "enonce": "M appartient à la médiatrice de [AB]. Que peut-on déduire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "MA = MB"
+      },
+      "propositions": [
+        "MA = MB",
+        "MA est perpendiculaire à MB",
+        "M est le milieu de [AB]",
+        "AB = MA + MB"
+      ],
+      "correction": "La médiatrice est l’ensemble des points équidistants des extrémités du segment."
+    },
+    {
+      "id": "GEO-006",
+      "type": "qcm",
+      "enonce": "Dans un triangle, deux angles mesurent [[terme1]]° et [[terme2]]°. Combien mesure le troisième ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "angle",
+        "termes": [
+          "45",
+          "65"
+        ],
+        "format": "integer",
+        "unite": "°"
+      },
+      "propositions": [
+        "70°",
+        "80°",
+        "110°",
+        "180°"
+      ],
+      "correction": "La somme des angles vaut 180° : 180 − 45 − 65 = 70°."
+    },
+    {
+      "id": "GEO-007",
+      "type": "qcm",
+      "enonce": "Un quadrilatère a ses côtés opposés parallèles deux à deux. Que peut-on démontrer ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "C’est un parallélogramme"
+      },
+      "propositions": [
+        "C’est un parallélogramme",
+        "C’est nécessairement un rectangle",
+        "C’est nécessairement un carré",
+        "Ses diagonales sont perpendiculaires"
+      ],
+      "correction": "C’est la définition du parallélogramme. Les autres propriétés exigent des hypothèses supplémentaires."
+    }
+  ]
+}

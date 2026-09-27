@@ -1,0 +1,21 @@
+/* Quiz layout. Keep presentation separate from editorial R Markdown. */
+.edu-question {margin:1.4em 0;padding:1em;border:1px solid #bbb}
+.edu-correction {margin-top:1em;padding:1em 1.2em;background:#eef7f2;
+  border:1px solid #8cbba1;border-left:5px solid #327a54;
+  border-radius:.45em;font-size:1.1em;line-height:1.65}
+.edu-correction p {margin:.3em 0 .7em}
+.edu-humour {font-style:italic;border-top:1px dashed #8cbba1;padding-top:.6em}
+.edu-question label {cursor:pointer;display:block;margin:.45em 0}
+.edu-avertissement {font-size:.88em;color:#555;font-style:italic}
+#edu-valider {background:#155da8;color:white;font-size:1.1em;font-weight:700;
+  padding:.75em 1.3em;border:0;border-radius:.4em;cursor:pointer}
+#edu-valider:hover,#edu-valider:focus {background:#10457d}
+#edu-relancer,#edu-nouveau {padding:.6em 1em;cursor:pointer}
+/* Only questions with an illustration use two columns. */
+.edu-reponses-illustrees {display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(120px,32%);
+  gap:1rem;align-items:center}
+.edu-illustration {display:block;width:100%;height:auto;object-fit:contain}
+@media (max-width:600px) {
+  .edu-reponses-illustrees {grid-template-columns:1fr}
+}

@@ -7,5 +7,5 @@ Description: Prototype expérimental de ressources mathématiques, de fiches et 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
-Imports: jsonlite, ggplot2, rmarkdown, Ryacas
+Imports: jsonlite, ggplot2, ggsketch, rmarkdown, Ryacas
 Config/roxygen2/version: 8.1.0

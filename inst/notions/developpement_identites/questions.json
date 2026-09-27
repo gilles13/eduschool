@@ -1,0 +1,53 @@
+{
+  "notion_id": "developpement_identites",
+  "questions": [
+    {
+      "id": "IR-002",
+      "type": "qcm",
+      "enonce": "Développer [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "(x-3)^2",
+        "affichage": "(x − 3)²",
+        "candidats": {
+          "x² − 6x + 9": "x^2-6*x+9",
+          "x² − 9": "x^2-9",
+          "x² + 6x + 9": "x^2+6*x+9",
+          "x² − 3x + 9": "x^2-3*x+9"
+        }
+      },
+      "propositions": [
+        "x² − 6x + 9",
+        "x² − 9",
+        "x² + 6x + 9",
+        "x² − 3x + 9"
+      ],
+      "correction": "**Carré d’une différence :** (a − b)² = a² − 2ab + b².\n\nIci a = x et b = 3.\n\nLe **double produit** vaut 6x et porte un signe négatif."
+    },
+    {
+      "id": "IR-006",
+      "type": "qcm",
+      "enonce": "Développer [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "(3*x-2)*(3*x+2)",
+        "affichage": "(3x − 2)(3x + 2)",
+        "candidats": {
+          "9x² − 4": "9*x^2-4",
+          "9x² + 4": "9*x^2+4",
+          "3x² − 4": "3*x^2-4",
+          "9x² − 12x + 4": "9*x^2-12*x+4"
+        }
+      },
+      "propositions": [
+        "9x² − 4",
+        "9x² + 4",
+        "3x² − 4",
+        "9x² − 12x + 4"
+      ],
+      "correction": "Produit de deux expressions conjuguées : (a − b)(a + b) = a² − b²."
+    }
+  ]
+}

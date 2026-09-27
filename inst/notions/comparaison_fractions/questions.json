@@ -1,0 +1,46 @@
+{
+  "notion_id": "comparaison_fractions",
+  "questions": [
+    {
+      "id": "FRAC-MIG-COMPARAISON-FRACTIONS-001",
+      "type": "qcm",
+      "enonce": "Quel signe complète correctement [[source]] ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "comparaison",
+        "expression": "1/2",
+        "autre": "2/3",
+        "affichage": "1/2 et 2/3",
+        "candidats": {
+          "<": "<",
+          ">": ">",
+          "=": "=",
+          "≥": "≥"
+        }
+      },
+      "propositions": [
+        "<",
+        ">",
+        "=",
+        "≥"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Pour comparer deux fractions, on peut les écrire avec un dénominateur commun.\nJ’en déduis : 1/2 = 3/6 et 2/3 = 4/6 ; 3/6 est strictement inférieur à 4/6.",
+      "origine": "migration_historique/Comparer des fractions/1"
+    }
+  ],
+  "migration_historique": {
+    "statut": "sources_conservees; exemples_fixes_valides_pour_premiere_migration",
+    "famille": "Comparer des fractions",
+    "questions": [
+      {
+        "notion_historique": "Comparer des fractions",
+        "type_historique": "libre",
+        "enonce": "Quel signe complète correctement : {a}/{b} ... {c}/{d} ?",
+        "parametres": "a = sample(1:20,1)\nb = sample(2:20,1)\nc = sample(1:20,1)\nd = sample(2:20,1)",
+        "calcul": "sign(a/b - c/d)",
+        "moteur": "R"
+      }
+    ]
+  }
+}

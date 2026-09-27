@@ -2,13 +2,13 @@
 % Please edit documentation in R/mathematiques.R
 \name{illustrer_question}
 \alias{illustrer_question}
-\title{Dessiner le triangle des questions de Pythagore}
+\title{Dessiner une illustration de question}
 \usage{
 illustrer_question(q)
 }
 \arguments{
-\item{q}{Question instanciée.}
+\item{q}{Question instanciee.}
 }
 \description{
-Dessiner le triangle des questions de Pythagore
+Dessiner une illustration de question
 }

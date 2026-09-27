@@ -7,25 +7,45 @@
 produire(
   notion,
   support,
-  dossier = getwd(),
+  dossier = NULL,
   format = "html",
   variantes = 5L,
-  ouvrir = TRUE
+  ouvrir = TRUE,
+  niveau = "",
+  n = NULL,
+  tirages = NULL,
+  humour_ratio = 0.2,
+  seed = NULL
 )
 }
 \arguments{
-\item{notion}{Notion pilote.}
+\item{notion}{Notion simple ou famille definie dans familles_notions.csv.}
 
-\item{support}{"decouverte", "synthese", "revision" ou "quiz".}
+\item{support}{"decouverte", "synthese", "revision", "quiz" ou "tous".}
 
-\item{dossier}{Repertoire de destination.}
+\item{dossier}{Repertoire de destination ; NULL cree un fichier temporaire.}
 
 \item{format}{"html" ou "pdf".}
 
-\item{variantes}{Nombre de tirages pre-calcules pour relancer un quiz HTML.}
+\item{variantes}{Ancien nom de tirages (conserve pour compatibilite).}
 
 \item{ouvrir}{Ouvrir le document genere (TRUE par defaut).}
+
+\item{niveau}{Niveau scolaire facultatif.}
+
+\item{n}{Nombre de questions par quiz ; NULL utilise toute la banque.}
+
+\item{tirages}{Nombre de quiz pre-calcules pour le HTML ; NULL reprend variantes.}
+
+\item{humour_ratio}{Proportion cible de questions avec humour, entre 0 et 1.}
+
+\item{seed}{Graine facultative pour reproduire les tirages et l'humour.}
 }
 \description{
 Produire une fiche ou un quiz HTML/PDF
+}
+\details{
+support = "tous" produit les supports disponibles dans un meme dossier.
+Pour une famille, les fiches rassemblent les Markdown des membres
+dans l'ordre du referentiel ; le quiz utilise leurs banques JSON.
 }

@@ -3,9 +3,14 @@ title: "Quiz de mathématiques"
 params:
   notion: "addition_fractions"
   support: "quiz"
-  variantes: 5
+  tirages: 5
+  n: null
+  niveau: ""
+  humour_ratio: 0.2
+  seed: null
 output:
-  html_document: default
+  html_document:
+    css: !expr system.file("styles", "eduschool.css", package = "eduschool")
   pdf_document:
     latex_engine: xelatex
 ---
@@ -13,26 +18,65 @@ output:
 ```{r setup, include=FALSE}
 banque = eduschool::questions(params$notion)
 html = knitr::is_html_output()
-# Tirages calcules en R a la publication : aucun interpreteur R dans le navigateur.
-tirages = lapply(seq_len(if (html) params$variantes else 1L), function(i) {
-  lapply(banque$questions, eduschool::question)
+if (!is.null(params$seed)) set.seed(params$seed)
+# Les tirages sont prepares une seule fois : le navigateur ne calcule rien.
+tirages = lapply(seq_len(if (html) params$tirages else 1L), function(i) {
+  definitions = banque$questions
+  if (!is.null(params$n)) {
+    # Une banque courte peut repeter des definitions : aucune usine anti-doublons.
+    definitions = sample(definitions, size = params$n,
+                         replace = params$n > length(definitions))
+  } else if (length(eduschool:::.notions_famille(params$notion))) {
+    definitions = sample(definitions)
+  }
+  eduschool:::.humour_edu(lapply(definitions, eduschool::question),
+                          params$humour_ratio)
 })
+```
+
+```{r entete, echo=FALSE, results='asis'}
+source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
+.entete_edu(params, knitr::is_html_output())
+```
+
+```{r images-html, include=FALSE}
+if (html) {
+  for (t in seq_along(tirages)) {
+    for (i in seq_along(tirages[[t]])) {
+      q = tirages[[t]][[i]]
+      figure = eduschool::illustrer_question(q)
+      if (!is.null(figure)) {
+        png = tempfile(fileext = ".png")
+        dimensions = attr(figure, "eduschool_dimensions")
+        if (is.null(dimensions)) dimensions = c(4, 3)
+        ggplot2::ggsave(png, figure, width = dimensions[1],
+                        height = dimensions[2], dpi = 130)
+        tirages[[t]][[i]]$image = knitr::image_uri(png)
+        unlink(png)
+      }
+    }
+  }
+}
 ```
 
 ```{r interactif, echo=FALSE, results='asis'}
 if (html) {
   # Ne jamais injecter de contenu editorial directement comme HTML ou JavaScript.
   donnees = jsonlite::toJSON(tirages, auto_unbox = TRUE, null = "null")
-  donnees = gsub("<", "\\\\u003c", donnees, fixed = TRUE)
-  donnees = gsub(">", "\\\\u003e", donnees, fixed = TRUE)
+  # Transport base64 : aucun caractère <, > ou séquence d'échappement
+  # ne peut être interprété par Markdown ou le navigateur.
+  donnees = jsonlite::base64_enc(charToRaw(enc2utf8(donnees)))
   cat('<div id="edu-quiz"><div id="edu-questions"></div>',
-      '<button id="edu-valider" type="button">Verifier mes reponses</button> ',
-      '<button id="edu-relancer" type="button">Relancer le quiz</button>',
+      '<button id="edu-valider" type="button">Valider mes réponses</button> ',
+      '<button id="edu-relancer" type="button">Relancer ce quiz</button> ',
+      '<button id="edu-nouveau" type="button">Générer un nouveau quiz</button>',
       '<p id="edu-bilan" aria-live="polite"></p></div>\n')
   cat('<script type="application/json" id="edu-donnees">', donnees, '</script>\n', sep = '')
   cat('<script>\n',
 '(() => {
-  const variantes = JSON.parse(document.getElementById("edu-donnees").textContent);
+  const brut = atob(document.getElementById("edu-donnees").textContent.trim());
+  const octets = Uint8Array.from(brut, c => c.charCodeAt(0));
+  const tirages = JSON.parse(new TextDecoder("utf-8").decode(octets));
   const zone = document.getElementById("edu-questions");
   const bilan = document.getElementById("edu-bilan");
   let tour = 0;
@@ -42,12 +86,46 @@ if (html) {
     parent.appendChild(el);
     return el;
   }
+  // Mise en forme éditoriale limitée : paragraphes, **gras** et [libellé](lien).
+  // Construire des noeuds DOM, jamais de innerHTML avec du JSON.
+  function correctionLisible(texte, cible) {
+    cible.replaceChildren();
+    const lignes = String(texte || "")
+      .replace(/\\s*(Je vois|Je sais|J.en déduis|Je calcule)\\s*:/g, "\\n$1 :")
+      .split(/\\n+|(?<=\\.)\\s+(?=[A-ZÀ-Ý])/u).map(x => x.trim()).filter(Boolean);
+    lignes.forEach(ligne => {
+      const p = document.createElement("p");
+      const motifs = /(\\*\\*([^*]+)\\*\\*|\\[([^\\]]+)\\]\\(([^)]+)\\))/g;
+      let precedent = 0, match;
+      while ((match = motifs.exec(ligne)) !== null) {
+        p.appendChild(document.createTextNode(ligne.slice(precedent, match.index)));
+        if (match[2]) noeud("strong", match[2], p);
+        else {
+          const url = match[4];
+          // Uniquement des chemins locaux relatifs ; aucune URL externe.
+          if (/^(?!\\/|.*\\.\\.)[a-zA-Z0-9_./-]+\\.(html|pdf)(#[a-zA-Z0-9_-]+)?$/.test(url)) {
+            const a = noeud("a", match[3], p); a.href = url;
+          } else p.appendChild(document.createTextNode(match[0]));
+        }
+        precedent = motifs.lastIndex;
+      }
+      p.appendChild(document.createTextNode(ligne.slice(precedent)));
+      cible.appendChild(p);
+    });
+  }
   function afficher() {
     zone.replaceChildren(); bilan.textContent = "";
-    variantes[tour].forEach((q, i) => {
+    tirages[tour].forEach((q, i) => {
       const bloc = document.createElement("section");
       bloc.className = "edu-question";
       noeud("h3", (i + 1) + ". " + q.enonce, bloc);
+      if (q.presentation && q.presentation.avertissement) {
+        noeud("p", q.presentation.avertissement, bloc).className = "edu-avertissement";
+      }
+      const reponses = document.createElement("div");
+      if (q.image) reponses.className = "edu-reponses-illustrees";
+      const choix = document.createElement("div");
+      reponses.appendChild(choix);
       if (q.propositions && q.propositions.length) {
         q.propositions.forEach((p, j) => {
           const etiquette = document.createElement("label");
@@ -55,15 +133,23 @@ if (html) {
           bouton.type = "radio"; bouton.name = "q" + i;
           bouton.value = p; bouton.id = "edu-q" + i + "-" + j;
           etiquette.appendChild(bouton);
-          noeud("span", " " + p, etiquette);
-          bloc.appendChild(etiquette);
-          bloc.appendChild(document.createElement("br"));
+          const masque = q.presentation && q.presentation.masques && q.presentation.masques[p];
+          noeud("span", " " + (masque || p), etiquette);
+          choix.appendChild(etiquette);
         });
       } else {
         const entree = document.createElement("input");
         entree.type = "text"; entree.setAttribute("aria-label", "Votre reponse");
-        bloc.appendChild(entree);
+        choix.appendChild(entree);
       }
+      if (q.image) {
+        const figure = document.createElement("img");
+        figure.src = q.image;
+        figure.alt = "Figure associée à la question";
+        figure.className = "edu-illustration";
+        reponses.appendChild(figure);
+      }
+      bloc.appendChild(reponses);
       const correction = noeud("div", "", bloc);
       correction.className = "edu-correction";
       correction.hidden = true;
@@ -72,7 +158,7 @@ if (html) {
   }
   document.getElementById("edu-valider").addEventListener("click", () => {
     let bonnes = 0, total = 0;
-    variantes[tour].forEach((q, i) => {
+    tirages[tour].forEach((q, i) => {
       const bloc = zone.children[i];
       const coche = bloc.querySelector("input[type=radio]:checked");
       const saisie = bloc.querySelector("input[type=text]");
@@ -80,22 +166,27 @@ if (html) {
       const juste = valeur === String(q.reponse).trim();
       if (valeur) { total++; if (juste) bonnes++; }
       const correction = bloc.querySelector(".edu-correction");
-      correction.textContent = (juste ? "Bonne reponse. " : "Reponse attendue : " + q.reponse + ". ") +
-        (q.correction || "");
+      correctionLisible((juste ? "Bonne réponse." : "Réponse attendue : " + q.reponse + ".") +
+        "\\n" + (q.correction || ""), correction);
+      if (q.apart_humour) {
+        const apart = noeud("p", q.apart_humour, correction);
+        apart.className = "edu-humour";
+      }
       correction.hidden = false;
     });
-    bilan.textContent = bonnes + " reponse(s) correcte(s) sur " + variantes[tour].length +
+    bilan.textContent = bonnes + " reponse(s) correcte(s) sur " + tirages[tour].length +
       " (" + total + " reponse(s) fournies).";
   });
   document.getElementById("edu-relancer").addEventListener("click", () => {
-    tour = (tour + 1) % variantes.length;
+    afficher();
+  });
+  document.getElementById("edu-nouveau").addEventListener("click", () => {
+    tour = (tour + 1) % tirages.length;
     afficher();
   });
   afficher();
 })();\n', '</script>\n', sep = '')
-  cat('<style>.edu-question {margin:1.4em 0;padding:1em;border:1px solid #bbb}',
-      '.edu-correction {margin-top:.8em;white-space:pre-wrap}',
-      '.edu-question label {cursor:pointer}</style>\n')
+
 }
 ```
 
@@ -104,8 +195,22 @@ if (!html) {
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
     cat("\n## Question ", i, "\n\n", q$enonce, "\n\n", sep = "")
+    figure = eduschool::illustrer_question(q)
+    if (!is.null(figure)) {
+      png = tempfile(fileext = ".png")
+      dimensions = attr(figure, "eduschool_dimensions")
+      if (is.null(dimensions)) dimensions = c(4, 3)
+      ggplot2::ggsave(png, figure, width = dimensions[1],
+                      height = dimensions[2], dpi = 130)
+      cat("\n\n![](", png, "){width=35%}\n\n", sep = "")
+    }
+    if (!is.null(q$presentation$avertissement))
+      cat("\n*", q$presentation$avertissement, "*\n\n", sep = "")
     if (length(q$propositions)) {
-      for (p in q$propositions) cat("- ", p, "\n", sep = "")
+      for (p in q$propositions) {
+        masque = q$presentation$masques[[p]]
+        cat("- ", if (is.null(masque)) p else masque, "\n", sep = "")
+      }
       cat("\n")
     } else cat("\nReponse : ........................................\n\n")
   }
@@ -113,7 +218,8 @@ if (!html) {
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
     cat("\n## Question ", i, "\n\n**Reponse :** ", q$reponse,
-        "\n\n**Correction :** ", q$correction, "\n\n", sep = "")
+        "\n\n**Correction :**\n\n", .raisonnement_edu(q$correction), "\n\n",
+        if (!is.null(q$apart_humour)) paste0("*", q$apart_humour, "*\n\n") else "", sep = "")
   }
 }
 ```

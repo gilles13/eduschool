@@ -7,7 +7,7 @@
 question(definition)
 }
 \arguments{
-\item{definition}{Élément de questions(notion)$questions.}
+\item{definition}{Element de questions(notion)$questions.}
 }
 \description{
 Instancier une question (JSON local de confiance uniquement)

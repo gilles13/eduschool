@@ -1,0 +1,77 @@
+{
+  "notion_id": "conversion_masses",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_MASSES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] kg correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "5/2",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "g",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "2 500 g",
+        "250 g",
+        "25 g",
+        "25 000 g"
+      ],
+      "correction": "Un kilogramme contient 1 000 grammes."
+    },
+    {
+      "id": "MES-CONVERSION_MASSES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] g correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "750",
+          "1/1000"
+        ],
+        "format": "decimal",
+        "unite": "kg",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "0,75 kg",
+        "7,5 kg",
+        "75 kg",
+        "0,075 kg"
+      ],
+      "correction": "750 ÷ 1 000 = 0,75."
+    },
+    {
+      "id": "MES-CONVERSION_MASSES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] g correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "1/25",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "mg",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "40 mg",
+        "4 mg",
+        "400 mg",
+        "0,4 mg"
+      ],
+      "correction": "Un gramme contient 1 000 milligrammes."
+    }
+  ]
+}

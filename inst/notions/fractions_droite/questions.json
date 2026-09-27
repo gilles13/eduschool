@@ -1,0 +1,42 @@
+{
+  "notion_id": "fractions_droite",
+  "questions": [
+    {
+      "id": "FRAC-MIG-FRACTIONS-DROITE-001",
+      "type": "qcm",
+      "enonce": "Sur la droite graduée ci-dessous, chaque unité est divisée en 4 parts égales. Quelle est l’abscisse du point A ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3/4"
+      },
+      "propositions": [
+        "3/4",
+        "4/3",
+        "1/4",
+        "3/5"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Lorsque l’unité est divisée en parts égales, le dénominateur donne le nombre de parts par unité.\nJ’en déduis : Chaque graduation vaut 1/4 ; trois graduations valent 3/4.",
+      "origine": "migration_historique/Fractions sur une droite graduée/1",
+      "illustration": {
+        "id": "droite_fractions",
+        "denominateur": 4,
+        "graduation": 3
+      }
+    }
+  ],
+  "migration_historique": {
+    "statut": "sources_conservees; exemples_fixes_valides_pour_premiere_migration",
+    "famille": "Fractions sur une droite graduée",
+    "questions": [
+      {
+        "notion_historique": "Fractions sur une droite graduée",
+        "type_historique": "libre",
+        "enonce": "Sur une demi-droite, chaque unité est partagée en {b} parts égales. Le point A est à la {a}e graduation après 0. Quelle est son abscisse ?",
+        "parametres": "b = sample(2:12,1)\na = sample(1:(3*b),1)",
+        "calcul": "a / b",
+        "distracteurs": "b / a\n(a+1) / b\na / (b+1)",
+        "moteur": "Ryacas"
+      }
+    ]
+  }
+}

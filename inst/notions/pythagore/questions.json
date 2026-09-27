@@ -15,39 +15,101 @@
         "AB semble vertical et AC horizontal."
       ],
       "illustration": {
-        "id": "triangle_angle_droit_A"
+        "id": "triangle_rectangle_A"
       },
       "correction": "Le codage est une information ; l’apparence du dessin n’est pas une preuve."
     },
     {
       "id": "PYTH-CALC-001",
       "type": "exercice",
-      "enonce": "ABC est rectangle en A, AB = {ab} cm et AC = {ac} cm. Calculer BC.",
-      "parametres": {
-        "ab": "3",
-        "ac": "4"
-      },
+      "enonce": "ABC est rectangle en A, AB = [[terme1]] cm et AC = [[terme2]] cm. Calculer BC.",
       "reponse": {
-        "mode": "calcul",
-        "moteur": "R",
-        "expression": "sqrt(ab^2+ac^2)",
-        "attendue": "5"
-      },
-      "distracteurs": {
-        "moteur": "R",
-        "expressions": [
-          "ab+ac",
-          "sqrt(abs(ab^2-ac^2))"
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "hypotenuse",
+        "termes": [
+          "3",
+          "4"
         ]
       },
-      "illustration": {
-        "id": "triangle_rectangle_A",
-        "parametres": {
-          "ab": "ab",
-          "ac": "ac"
-        }
+      "correction": "Appliquer le théorème de Pythagore : BC² = AB² + AC². BC est la racine carrée de cette somme.",
+      "propositions": [
+        "5",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "id": "PYTH_IDENT_001",
+      "type": "qcm",
+      "enonce": "ABC est un triangle rectangle en A. Quel côté est son hypoténuse ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "BC"
       },
-      "correction": "BC² = 3² + 4² = 25, donc BC = 5 cm."
+      "illustration": {
+        "id": "triangle_rectangle_normal",
+        "angle_droit": "A"
+      },
+      "propositions": [
+        "AB",
+        "AC",
+        "BC",
+        "On ne peut pas savoir"
+      ],
+      "correction": "Le triangle est rectangle en A. Le côté opposé à l’angle droit A est BC : c’est l’hypoténuse.",
+      "origine": "migration_historique/PYTH_IDENT_001"
+    },
+    {
+      "id": "PYTH_HYP_001",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A, avec AB = 3 cm et AC = 4 cm. Quelle relation permet de calculer BC ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "BC² = AB² + AC²"
+      },
+      "propositions": [
+        "BC² = AB² + AC²",
+        "BC = AB + AC",
+        "AB² = AC² + BC²",
+        "BC² = AB² − AC²"
+      ],
+      "correction": "BC est opposé à l’angle droit en A : BC² = AB² + AC². Ici, BC² = 3² + 4².",
+      "origine": "migration_historique/PYTH_HYP_001"
+    },
+    {
+      "id": "PYTH_COTE_001",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A, avec AC = 4 cm et BC = 5 cm. Quelle relation permet de calculer AB ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "AB² = BC² − AC²"
+      },
+      "propositions": [
+        "AB² = BC² − AC²",
+        "AB² = BC² + AC²",
+        "AB² = AC² − BC²",
+        "AB = BC − AC"
+      ],
+      "correction": "BC est l’hypoténuse : BC² = AB² + AC², donc AB² = BC² − AC² = 25 − 16 = 9, soit AB = 3 cm.",
+      "origine": "migration_historique/PYTH_COTE_001"
+    },
+    {
+      "id": "PYTH_DIAG_001",
+      "type": "qcm",
+      "enonce": "Un rectangle mesure 4 cm de longueur et 3 cm de largeur. Pourquoi peut-on utiliser Pythagore pour calculer sa diagonale ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "La diagonale et deux côtés adjacents forment un triangle rectangle."
+      },
+      "propositions": [
+        "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+        "Le rectangle a quatre côtés.",
+        "Les côtés opposés du rectangle sont parallèles.",
+        "Les deux diagonales du rectangle ont la même longueur."
+      ],
+      "correction": "Les deux côtés adjacents sont perpendiculaires : avec la diagonale, ils forment un triangle rectangle. La diagonale est l’hypoténuse ; sa longueur vaut √(4² + 3²) = 5 cm.",
+      "origine": "migration_historique/PYTH_DIAG_001"
     }
   ],
   "migration_historique": {
@@ -202,6 +264,13 @@
           "J'en déduis": "La diagonale mesure %d cm."
         }
       }
-    ]
+    ],
+    "activation": {
+      "PYTH_APPL_001": "couvert par PYTH-COMP-001",
+      "PYTH_IDENT_001": "actif",
+      "PYTH_HYP_001": "actif",
+      "PYTH_COTE_001": "actif (triplets entiers)",
+      "PYTH_DIAG_001": "actif"
+    }
   }
 }

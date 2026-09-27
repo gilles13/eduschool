@@ -2,46 +2,112 @@
   "notion_id": "MAT_FRACTION_ADD",
   "questions": [
     {
-      "id": "FRA-COMP-001",
-      "type": "comprehension",
-      "enonce": "Quelle est la valeur de 1/2 + 1/3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5/6"
-      },
-      "propositions": [
-        "5/6",
-        "2/5",
-        "2/6",
-        "1/5"
-      ],
-      "correction": "Je vois : les dénominateurs 2 et 3 sont différents. Je sais : pour additionner ces fractions, je les écris avec un dénominateur commun. J’en déduis : 1/2 = 3/6 et 1/3 = 2/6. Je calcule : 3/6 + 2/6 = 5/6."
-    },
-    {
       "id": "FRA-CALC-001",
       "type": "exercice",
-      "enonce": "Calculer {a}/{b} + {c}/{d} et donner une fraction simplifiée.",
-      "parametres": {
-        "a": "1",
-        "b": "2",
-        "c": "1",
-        "d": "3"
-      },
+      "enonce": "Calculer [[terme1]] + [[terme2]] et donner une fraction simplifiée.",
       "reponse": {
-        "mode": "calcul",
+        "mode": "calcul_fixe",
         "moteur": "Ryacas",
-        "expression": "a/b+c/d",
-        "attendue": "5/6"
-      },
-      "distracteurs": {
-        "moteur": "Ryacas",
-        "expressions": [
-          "(a+c)/(b+d)",
-          "(a+c)/(b*d)",
-          "(a*c)/(b*d)"
+        "operation": "addition",
+        "termes": [
+          "1/2",
+          "1/3"
         ]
       },
-      "correction": "1/2 = 3/6 et 1/3 = 2/6 ; la somme vaut 5/6."
+      "correction": "Pour additionner ces fractions, les écrire avec un dénominateur commun, additionner les numérateurs puis simplifier.",
+      "humour": [
+        "Les dénominateurs ont accepté de coopérer. Merci de ne pas les brusquer.",
+        "Le dénominateur commun : même les fractions finissent par trouver un terrain d'entente.",
+        "Deux fractions entrent dans un calcul. Une seule en ressort. Aucun numérateur n'a souhaité témoigner.",
+        "Encore une addition de fractions. Quelque part, un dénominateur cherche déjà un avocat."
+      ],
+      "propositions": ["5/6", "2/5", "1/6", "3/5"]
+    },
+    {
+      "id": "FRA-TROU-001",
+      "type": "exercice",
+      "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + [[terme2]] = [[terme1]]",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "soustraction",
+        "termes": [
+          "5/6",
+          "1/3"
+        ]
+      },
+      "propositions": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "7/6"
+      ],
+      "correction": "Pour retrouver le terme manquant, soustraire le terme connu du résultat, puis simplifier la fraction.",
+      "humour": [
+        "Les fractions étaient irréconciliables. Puis quelqu'un a prononcé les mots dénominateur commun."
+      ]
+    },
+    {
+      "id": "FRA-ERREUR-001",
+      "type": "comprehension",
+      "enonce": "Lina a écrit plusieurs égalités. Laquelle est incorrecte ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "egalite_fausse",
+        "candidats": {
+          "1/2 + 1/3 = 2/5": {
+            "gauche": "1/2+1/3",
+            "droite": "2/5"
+          },
+          "1/2 = 3/6": {
+            "gauche": "1/2",
+            "droite": "3/6"
+          },
+          "1/3 = 2/6": {
+            "gauche": "1/3",
+            "droite": "2/6"
+          },
+          "3/6 + 2/6 = 5/6": {
+            "gauche": "3/6+2/6",
+            "droite": "5/6"
+          }
+        }
+      },
+      "propositions": [
+        "1/2 + 1/3 = 2/5",
+        "1/2 = 3/6",
+        "1/3 = 2/6",
+        "3/6 + 2/6 = 5/6"
+      ],
+      "correction": "Je vois : Lina a additionné les numérateurs et les dénominateurs dans 1/2 + 1/3 = 2/5. Je sais : pour additionner des fractions, les parts doivent avoir la même taille. J’en déduis : 1/2 = 3/6 et 1/3 = 2/6. Je calcule : 3/6 + 2/6 = 5/6, et non 2/5.",
+      "humour": [
+        "Additionner les numérateurs directement serait tentant. Le piège aussi a trouvé l’idée excellente."
+      ]
+    },
+    {
+      "id": "FRAC_ADD_003",
+      "type": "qcm",
+      "enonce": "Je pars de [[terme1]], puis j’ajoute [[terme2]]. Sur quelle fraction simplifiée est-ce que j’arrive ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "addition",
+        "termes": [
+          "1/4",
+          "1/2"
+        ],
+        "format": "fraction",
+        "unite": ""
+      },
+      "propositions": [
+        "3/4",
+        "2/6",
+        "1/8",
+        "1/4"
+      ],
+      "correction": "Je vois : les dénominateurs sont différents.\nJe sais : je transforme 1/2 en 2/4.\nJ’en déduis : je peux additionner les quarts.\nJe calcule : 1/4 + 2/4 = 3/4.",
+      "origine": "migration_historique/FRAC_ADD_003"
     }
   ],
   "migration_historique": {
@@ -103,6 +169,11 @@
         "champs_supplementaires_historiques": {},
         "editorial_historique": {}
       }
-    ]
+    ],
+    "activation": {
+      "FRAC_ADD_001": "couvert par FRA-ERREUR-001",
+      "FRAC_ADD_002": "couvert par FRA-TROU-001",
+      "FRAC_ADD_003": "actif"
+    }
   }
 }

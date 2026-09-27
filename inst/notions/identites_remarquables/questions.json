@@ -1,0 +1,174 @@
+{
+  "notion_id": "identites_remarquables",
+  "questions": [
+    {
+      "id": "IR-001",
+      "type": "qcm",
+      "enonce": "Quelle identité permet de développer [[expression]] ?",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "(a+b)^2",
+        "affichage": "(a + b)²",
+        "candidats": {
+          "a² + 2ab + b²": "a^2+2*a*b+b^2",
+          "a² + b²": "a^2+b^2",
+          "a² − 2ab + b²": "a^2-2*a*b+b^2",
+          "2a² + 2b²": "2*a^2+2*b^2"
+        }
+      },
+      "propositions": [
+        "a² + 2ab + b²",
+        "a² + b²",
+        "a² − 2ab + b²",
+        "2a² + 2b²"
+      ],
+      "correction": "**Identité remarquable : carré d’une somme.**\n\n(a + b)² = a² + 2ab + b².\n\nOn partage le carré en deux carrés et deux rectangles : le **double produit** 2ab est indispensable."
+    },
+    {
+      "id": "IR-002",
+      "type": "qcm",
+      "enonce": "Développer [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "(x-3)^2",
+        "affichage": "(x − 3)²",
+        "candidats": {
+          "x² − 6x + 9": "x^2-6*x+9",
+          "x² − 9": "x^2-9",
+          "x² + 6x + 9": "x^2+6*x+9",
+          "x² − 3x + 9": "x^2-3*x+9"
+        }
+      },
+      "propositions": [
+        "x² − 6x + 9",
+        "x² − 9",
+        "x² + 6x + 9",
+        "x² − 3x + 9"
+      ],
+      "correction": "**Carré d’une différence :** (a − b)² = a² − 2ab + b².\n\nIci a = x et b = 3.\n\nLe **double produit** vaut 6x et porte un signe négatif."
+    },
+    {
+      "id": "IR-003",
+      "type": "qcm",
+      "enonce": "Factoriser [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "x^2-25",
+        "affichage": "x² − 25",
+        "candidats": {
+          "(x − 5)(x + 5)": "(x-5)*(x+5)",
+          "(x − 5)²": "(x-5)^2",
+          "(x + 5)²": "(x+5)^2",
+          "x(x − 25)": "x*(x-25)"
+        }
+      },
+      "propositions": [
+        "(x − 5)(x + 5)",
+        "(x − 5)²",
+        "(x + 5)²",
+        "x(x − 25)"
+      ],
+      "correction": "**Différence de deux carrés :** a² − b² = (a − b)(a + b).\n\nIci 25 = 5².\n\nOn obtient (x − 5)(x + 5)."
+    },
+    {
+      "id": "IR-004",
+      "type": "qcm",
+      "enonce": "Quel est le terme du milieu dans [[expression]] ?",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "2*(2*x)*3",
+        "affichage": "(2x + 3)²",
+        "candidats": {
+          "12x": "12*x",
+          "6x": "6*x",
+          "5x": "5*x",
+          "12x²": "12*x^2"
+        }
+      },
+      "propositions": [
+        "12x",
+        "6x",
+        "5x",
+        "12x²"
+      ],
+      "correction": "Le double produit vaut 2 × 2x × 3 = 12x."
+    },
+    {
+      "id": "IR-005",
+      "type": "qcm",
+      "enonce": "Quelle égalité développe correctement [[expression]] pour tout x réel ?",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "(x+2)^2",
+        "affichage": "(x + 2)²",
+        "candidats": {
+          "(x + 2)² = x² + 4x + 4": "x^2+4*x+4",
+          "(x + 2)² = x² + 4": "x^2+4",
+          "(x + 2)² = x² − 4": "x^2-4",
+          "(x + 2)² = x² + 2x + 4": "x^2+2*x+4"
+        }
+      },
+      "propositions": [
+        "(x + 2)² = x² + 4x + 4",
+        "(x + 2)² = x² + 4",
+        "(x + 2)² = x² − 4",
+        "(x + 2)² = x² + 2x + 4"
+      ],
+      "correction": "Une identité est vraie pour toute valeur admise. Le double produit 2 × x × 2 ne doit pas être oublié."
+    },
+    {
+      "id": "IR-006",
+      "type": "qcm",
+      "enonce": "Développer [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "(3*x-2)*(3*x+2)",
+        "affichage": "(3x − 2)(3x + 2)",
+        "candidats": {
+          "9x² − 4": "9*x^2-4",
+          "9x² + 4": "9*x^2+4",
+          "3x² − 4": "3*x^2-4",
+          "9x² − 12x + 4": "9*x^2-12*x+4"
+        }
+      },
+      "propositions": [
+        "9x² − 4",
+        "9x² + 4",
+        "3x² − 4",
+        "9x² − 12x + 4"
+      ],
+      "correction": "Produit de deux expressions conjuguées : (a − b)(a + b) = a² − b²."
+    },
+    {
+      "id": "IR-007",
+      "type": "qcm",
+      "enonce": "Quel calcul donne directement [[source]] ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "equivalent",
+        "expression": "99^2",
+        "affichage": "99²",
+        "candidats": {
+          "(100 − 1)² = 10000 − 200 + 1": "10000-200+1",
+          "10000 − 1": "10000-1",
+          "10000 − 100 + 1": "10000-100+1",
+          "10000 − 200 − 1": "10000-200-1"
+        }
+      },
+      "propositions": [
+        "(100 − 1)² = 10000 − 200 + 1",
+        "10000 − 1",
+        "10000 − 100 + 1",
+        "10000 − 200 − 1"
+      ],
+      "correction": "L’identité du carré d’une différence permet un calcul mental exact."
+    }
+  ]
+}

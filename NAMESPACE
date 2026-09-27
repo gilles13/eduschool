@@ -2,3 +2,7 @@ export(questions)
 export(question)
 export(illustrer_question)
 export(produire)
+
+export(graphique)
+importFrom(ggplot2,ggplot)
+importFrom(ggsketch,geom_sketch_segment)

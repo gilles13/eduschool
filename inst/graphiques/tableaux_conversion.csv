@@ -1,0 +1,38 @@
+type;titre;ordre;chiffres;symbole;nom;secondaire;nom_secondaire
+1;Longueurs;1;1;km;kilomètre;;
+1;Longueurs;2;1;hm;hectomètre;;
+1;Longueurs;3;1;dam;décamètre;;
+1;Longueurs;4;1;m;mètre;;
+1;Longueurs;5;1;dm;décimètre;;
+1;Longueurs;6;1;cm;centimètre;;
+1;Longueurs;7;1;mm;millimètre;;
+2;Masses;1;1;kg;kilogramme;;
+2;Masses;2;1;hg;hectogramme;;
+2;Masses;3;1;dag;décagramme;;
+2;Masses;4;1;g;gramme;;
+2;Masses;5;1;dg;décigramme;;
+2;Masses;6;1;cg;centigramme;;
+2;Masses;7;1;mg;milligramme;;
+3;Capacités;1;1;kL;kilolitre;;
+3;Capacités;2;1;hL;hectolitre;;
+3;Capacités;3;1;daL;décalitre;;
+3;Capacités;4;1;L;litre;;
+3;Capacités;5;1;dL;décilitre;;
+3;Capacités;6;1;cL;centilitre;;
+3;Capacités;7;1;mL;millilitre;;
+4;Aires;1;2;km²;kilomètre carré;;
+4;Aires;2;2;hm²;hectomètre carré;ha;hectare
+4;Aires;3;2;dam²;décamètre carré;a;are
+4;Aires;4;2;m²;mètre carré;ca;centiare
+4;Aires;5;2;dm²;décimètre carré;;
+4;Aires;6;2;cm²;centimètre carré;;
+4;Aires;7;2;mm²;millimètre carré;;
+5;Volumes;1;3;m³;mètre cube;;
+5;Volumes;2;3;dm³;décimètre cube;;
+5;Volumes;3;3;cm³;centimètre cube;;
+5;Volumes;4;3;mm³;millimètre cube;;
+6;Octets;5;3;o;octet;;
+6;Octets;4;3;ko;kilooctet;;
+6;Octets;3;3;Mo;mégaoctet;;
+6;Octets;2;3;Go;gigaoctet;;
+6;Octets;1;3;To;téraoctet;;

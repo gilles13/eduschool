@@ -1,0 +1,77 @@
+{
+  "notion_id": "conversion_longueurs",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_LONGUEURS-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] m correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "16/5",
+          "100"
+        ],
+        "format": "decimal",
+        "unite": "cm",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "320 cm",
+        "32 cm",
+        "3 200 cm",
+        "0,032 cm"
+      ],
+      "correction": "1 m = 100 cm, donc 3,2 × 100 = 320."
+    },
+    {
+      "id": "MES-CONVERSION_LONGUEURS-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] mm correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "450",
+          "1/10"
+        ],
+        "format": "decimal",
+        "unite": "cm",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "45 cm",
+        "4,5 cm",
+        "450 cm",
+        "4 500 cm"
+      ],
+      "correction": "1 cm = 10 mm, donc 450 ÷ 10 = 45."
+    },
+    {
+      "id": "MES-CONVERSION_LONGUEURS-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] km correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "9/20",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "m",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "450 m",
+        "45 m",
+        "4 500 m",
+        "0,0045 m"
+      ],
+      "correction": "1 km = 1 000 m, donc 0,45 × 1 000 = 450."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "notion_id": "ensembles",
+  "questions": [
+    {
+      "id": "ENS-001",
+      "type": "qcm",
+      "enonce": "Avec E = {1, 2, 3}, quelle affirmation est vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2 ∈ E"
+      },
+      "propositions": [
+        "2 ∈ E",
+        "4 ∈ E",
+        "2 ⊆ E",
+        "E ∈ 2"
+      ],
+      "correction": "Un nombre est un élément : il appartient à E. L’inclusion concerne deux ensembles."
+    },
+    {
+      "id": "ENS-002",
+      "type": "qcm",
+      "enonce": "Avec A = {1, 2} et E = {1, 2, 3}, quelle affirmation est vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "A ⊆ E"
+      },
+      "propositions": [
+        "A ⊆ E",
+        "E ⊆ A",
+        "A ∈ E",
+        "3 ∈ A"
+      ],
+      "correction": "Tous les éléments de A appartiennent à E : A est inclus dans E."
+    },
+    {
+      "id": "ENS-003",
+      "type": "qcm",
+      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∩ B.",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "{3}"
+      },
+      "propositions": [
+        "{3}",
+        "{1, 2, 3, 4}",
+        "{1, 2}",
+        "∅"
+      ],
+      "correction": "L’intersection rassemble les éléments communs aux deux ensembles."
+    },
+    {
+      "id": "ENS-004",
+      "type": "qcm",
+      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∪ B.",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "{1, 2, 3, 4}"
+      },
+      "propositions": [
+        "{1, 2, 3, 4}",
+        "{3}",
+        "{1, 2, 4}",
+        "∅"
+      ],
+      "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles, sans répéter 3."
+    },
+    {
+      "id": "ENS-005",
+      "type": "qcm",
+      "enonce": "Combien de sous-ensembles possède E = {a, b} ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "nombre",
+        "expression": "2^2",
+        "candidats": {
+          "4": "4",
+          "2": "2",
+          "3": "3",
+          "8": "8"
+        }
+      },
+      "propositions": [
+        "4",
+        "2",
+        "3",
+        "8"
+      ],
+      "correction": "Les sous-ensembles sont ∅, {a}, {b} et {a, b}."
+    },
+    {
+      "id": "ENS-006",
+      "type": "qcm",
+      "enonce": "Quelle affirmation décrit correctement l’ensemble vide ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "∅ ⊆ {1, 2}"
+      },
+      "propositions": [
+        "∅ ⊆ {1, 2}",
+        "∅ ∈ {1, 2}",
+        "{1, 2} ⊆ ∅",
+        "1 ∈ ∅"
+      ],
+      "correction": "L’ensemble vide est inclus dans tout ensemble, mais n’est pas automatiquement l’un de ses éléments."
+    },
+    {
+      "id": "ENS-007",
+      "type": "qcm",
+      "enonce": "Quelle affirmation sur les ensembles de nombres est vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "ℕ ⊆ ℤ"
+      },
+      "propositions": [
+        "ℕ ⊆ ℤ",
+        "ℤ ⊆ ℕ",
+        "π ∈ ℚ",
+        "1/2 ∈ ℤ"
+      ],
+      "correction": "Tout entier naturel est un entier relatif ; l’inverse n’est pas vrai."
+    }
+  ]
+}

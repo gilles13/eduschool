@@ -1,0 +1,77 @@
+{
+  "notion_id": "conversion_contenances",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_CONTENANCES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] L correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "9/4",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "mL",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "2 250 mL",
+        "225 mL",
+        "22,5 mL",
+        "22 500 mL"
+      ],
+      "correction": "1 L = 1 000 mL."
+    },
+    {
+      "id": "MES-CONVERSION_CONTENANCES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] cL correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "75",
+          "1/100"
+        ],
+        "format": "decimal",
+        "unite": "L",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "0,75 L",
+        "7,5 L",
+        "75 L",
+        "0,075 L"
+      ],
+      "correction": "1 L = 100 cL."
+    },
+    {
+      "id": "MES-CONVERSION_CONTENANCES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] mL correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "250",
+          "1/10"
+        ],
+        "format": "decimal",
+        "unite": "cL",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "25 cL",
+        "2,5 cL",
+        "250 cL",
+        "0,25 cL"
+      ],
+      "correction": "1 cL = 10 mL."
+    }
+  ]
+}
