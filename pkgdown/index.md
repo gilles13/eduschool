@@ -1,6 +1,6 @@
 <div class="eduschool-hero">
-  <img src="identite/hero-eduschool-math.png"
-       alt="edusch∞l Math — Les maths, ça se découvre aussi ensemble">
+  <img src="identite/logo-hexa.png"
+       alt="Logo hexagonal eduschool">
 </div>
 
 # edusch∞l Math
@@ -16,14 +16,6 @@ Avant d'apprendre les mathématiques, faisons un pas de côté : prenons le temp
 Celui-là, on peut même l'apprendre **par cœur**. ❤️
 
 > **Les maths ne commencent peut-être pas par un calcul. Elles commencent par l'envie de comprendre.**
-
-[**Commencer par les maths →**](articles/zero-est-ce-vraiment-rien.html)
-
-[**Comprendre un parcours scolaire →**](articles/a-propos.html)
-
-[**Pourquoi eduschool ? →**](articles/a-propos.html)
-
-**Vous utilisez R ?** [Ouvrir la cheatsheet eduschool →](eduschool-cheatsheet.html)
 
 > **eduschool est un projet en cours.** Il n'est pas fini. Le sera-t-il un jour ? Bonne question ! 😉
 > Le savoir se construit dans le temps long — pour ne pas dire : **INFINI**. ∞

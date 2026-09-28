@@ -1,7 +1,6 @@
 # edusch∞l Math
 
-![edusch∞l Math — Les maths, ça se découvre aussi
-ensemble](identite/hero-eduschool-math.png)
+![Logo hexagonal eduschool](identite/logo-hexa.png)
 
 ## μάθημα — *máthēma*
 
@@ -17,18 +16,6 @@ Celui-là, on peut même l’apprendre **par cœur**. ❤️
 
 > **Les maths ne commencent peut-être pas par un calcul. Elles
 > commencent par l’envie de comprendre.**
-
-[**Commencer par les maths
-→**](https://gilles13.github.io/eduschool/articles/zero-est-ce-vraiment-rien.md)
-
-[**Comprendre un parcours scolaire
-→**](https://gilles13.github.io/eduschool/articles/a-propos.md)
-
-[**Pourquoi eduschool ?
-→**](https://gilles13.github.io/eduschool/articles/a-propos.md)
-
-**Vous utilisez R ?** [Ouvrir la cheatsheet eduschool
-→](https://gilles13.github.io/eduschool/eduschool-cheatsheet.md)
 
 > **eduschool est un projet en cours.** Il n’est pas fini. Le sera-t-il
 > un jour ? Bonne question ! 😉 Le savoir se construit dans le temps

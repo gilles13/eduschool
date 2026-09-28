@@ -23,4 +23,6 @@ articles:
   - title: Découvrir eduschool
     contents: [a-propos]
   - title: Fiches découvertes
-    contents: [fiches-decouvertes, zero-est-ce-vraiment-rien]
+    contents: 
+      - fiches-decouvertes
+      - zero-est-ce-vraiment-rien
