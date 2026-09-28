@@ -5,17 +5,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Cartographie de la scolarité française et outils de mathématiques • eduschool</title>
+<title>Ressources et Exercices de Mathématiques • eduschool</title>
 <!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="katex-auto.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
-<meta property="og:title" content="Cartographie de la scolarité française et outils de mathématiques">
-<meta name="description" content="Cartographie la scolarité des collégiens et lycéens en France : niveaux, cycles, voies, séries, enseignements, programmes, orientation et poursuites détudes. Le package propose en complément des fiches de révision et des exercices centrés sur les mathématiques. Les données sont structurées dans des fichiers CSV et peuvent être interrogées simplement depuis R. Larchitecture reste extensible à dautres disciplines sans en faire lobjectif principal du projet. eduschool complète les sources officielles sans s'y substituer.">
-<meta property="og:description" content="Cartographie la scolarité des collégiens et lycéens en France : niveaux, cycles, voies, séries, enseignements, programmes, orientation et poursuites détudes. Le package propose en complément des fiches de révision et des exercices centrés sur les mathématiques. Les données sont structurées dans des fichiers CSV et peuvent être interrogées simplement depuis R. Larchitecture reste extensible à dautres disciplines sans en faire lobjectif principal du projet. eduschool complète les sources officielles sans s'y substituer.">
-<meta property="og:image" content="https://gilles13.github.io/eduschool/logo.png">
+<meta property="og:title" content="Ressources et Exercices de Mathématiques">
+<meta name="description" content="Prototype expérimental de ressources mathématiques, de fiches et de questions.">
+<meta property="og:description" content="Prototype expérimental de ressources mathématiques, de fiches et de questions.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -25,7 +24,7 @@
 
     <a class="navbar-brand me-2" href="index.html">eduschool</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.37.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.38.0.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,15 +38,11 @@
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-guides">
 <li><a class="dropdown-item" href="articles/a-propos.html">À propos</a></li>
-    <li><a class="dropdown-item" href="articles/mathematiques-par-niveau.html">Mathématiques par niveau</a></li>
-    <li><a class="dropdown-item" href="articles/parcours-scolaires.html">Parcours scolaire</a></li>
     <li><a class="dropdown-item" href="articles/fiches-decouvertes.html">Fiches découvertes</a></li>
-    <li><a class="dropdown-item" href="articles/contribuer-et-partager.html">Contribuer et partager</a></li>
     <li><a class="dropdown-item" href="articles/index.html">Tous les articles</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
-<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav"></ul>
 </div>
@@ -60,10 +55,8 @@
 <p><img src="identite/hero-eduschool-math.png" alt="edusch∞l Math — Les maths, ça se découvre aussi ensemble"></p>
 </div>
 <div class="section level1">
-<div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="eduschl-math">edusch∞l Math<a class="anchor" aria-label="anchor" href="#eduschl-math"></a>
-</h1>
-</div>
+<div class="page-header"><h1 id="eduschl-math">edusch∞l Math<a class="anchor" aria-label="anchor" href="#eduschl-math"></a>
+</h1></div>
 <div class="section level2">
 <h2 id="μάθημα--máthēma">μάθημα — <em>máthēma</em>
 <a class="anchor" aria-label="anchor" href="#%CE%BC%CE%AC%CE%B8%CE%B7%CE%BC%CE%B1--m%C3%A1th%C4%93ma"></a>
@@ -77,8 +70,8 @@
 <blockquote>
 <p><strong>Les maths ne commencent peut-être pas par un calcul. Elles commencent par l’envie de comprendre.</strong></p>
 </blockquote>
-<p><a href="articles/mathematiques-par-niveau.html"><strong>Commencer par les maths →</strong></a></p>
-<p><a href="articles/parcours-scolaires.html"><strong>Comprendre un parcours scolaire →</strong></a></p>
+<p><a href="articles/zero-est-ce-vraiment-rien.html"><strong>Commencer par les maths →</strong></a></p>
+<p><a href="articles/a-propos.html"><strong>Comprendre un parcours scolaire →</strong></a></p>
 <p><a href="articles/a-propos.html"><strong>Pourquoi eduschool ? →</strong></a></p>
 <p><strong>Vous utilisez R ?</strong> <a href="eduschool-cheatsheet.html">Ouvrir la cheatsheet eduschool →</a></p>
 <blockquote>
@@ -103,7 +96,7 @@ AVERTISSEMENT
 </summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"gilles13/eduschool"</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gilles13.github.io/eduschool/">eduschool</a></span><span class="op">)</span></span></code></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">eduschool</span><span class="op">)</span></span></code></pre></div>
 <p><a href="reference/index.html"><strong>Référence R →</strong></a></p>
 </details>
 </div>
@@ -118,12 +111,6 @@ AVERTISSEMENT
 </ul>
 </div>
 
-<div class="community">
-<h2 data-toc-skip>Community</h2>
-<ul class="list-unstyled">
-<li><a href="CONTRIBUTING.html">Contributing guide</a></li>
-</ul>
-</div>
 
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>

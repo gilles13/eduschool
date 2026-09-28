@@ -1,9 +1,13 @@
-# Séries scolaires
+# Series du lycee (referentiel historique)
 
-Séries scolaires
+Series du lycee (referentiel historique)
 
 ## Usage
 
 ``` r
 series()
 ```
+
+## Value
+
+Un data.frame. Donnees reprises de la sauvegarde v1.

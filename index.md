@@ -19,10 +19,10 @@ Celui-là, on peut même l’apprendre **par cœur**. ❤️
 > commencent par l’envie de comprendre.**
 
 [**Commencer par les maths
-→**](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
+→**](https://gilles13.github.io/eduschool/articles/zero-est-ce-vraiment-rien.md)
 
 [**Comprendre un parcours scolaire
-→**](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)
+→**](https://gilles13.github.io/eduschool/articles/a-propos.md)
 
 [**Pourquoi eduschool ?
 →**](https://gilles13.github.io/eduschool/articles/a-propos.md)

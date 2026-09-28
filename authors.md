@@ -6,14 +6,12 @@
 
 ## Citation
 
-FIDANI G (2026). *eduschool: Cartographie de la scolarité française et
-outils de mathématiques*. R package version 0.37.2,
-<https://gilles13.github.io/eduschool/>.
+FIDANI G (2026). *eduschool: Ressources et Exercices de Mathématiques*.
+R package version 0.38.0.9000.
 
     @Manual{,
-      title = {eduschool: Cartographie de la scolarité française et outils de mathématiques},
+      title = {eduschool: Ressources et Exercices de Mathématiques},
       author = {Gilles FIDANI},
       year = {2026},
-      note = {R package version 0.37.2},
-      url = {https://gilles13.github.io/eduschool/},
+      note = {R package version 0.38.0.9000},
     }

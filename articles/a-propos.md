@@ -16,10 +16,3 @@ C’est pourquoi `eduschool` est **libre, gratuit et ouvert**.
 un dessin, un exemple, une donnée réelle ou une autre explication
 peuvent ouvrir une nouvelle porte. Si ça ne marche pas, on essaie
 autrement. Toujours avec rigueur.
-
-[Découvrir les mathématiques par
-niveau](https://gilles13.github.io/eduschool/articles/mathematiques-par-niveau.md)
-· [Comprendre les parcours
-scolaires](https://gilles13.github.io/eduschool/articles/parcours-scolaires.md)
-· [Contribuer et
-partager](https://gilles13.github.io/eduschool/articles/contribuer-et-partager.md)
