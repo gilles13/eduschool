@@ -2,6 +2,7 @@ export(questions)
 export(question)
 export(illustrer_question)
 export(produire)
+export(produire_cheatsheet)
 
 export(graphique)
 importFrom(ggplot2,ggplot)
