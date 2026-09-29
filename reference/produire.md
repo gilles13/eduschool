@@ -28,7 +28,7 @@ produire(
 
 - support:
 
-  "decouverte", "synthese", "revision", "quiz" ou "tous".
+  "decouverte", "synthese", "quiz" ou "tous".
 
 - dossier:
 

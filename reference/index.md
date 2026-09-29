@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`eduschool()`](https://gilles13.github.io/eduschool/reference/eduschool.md)
+  : Decouvrir eduschool
 - [`graphique()`](https://gilles13.github.io/eduschool/reference/graphique.md)
   : Dessiner un graphique pedagogique reutilisable
 - [`illustrer_question()`](https://gilles13.github.io/eduschool/reference/illustrer_question.md)
