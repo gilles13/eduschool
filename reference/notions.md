@@ -1,8 +1,8 @@
-# Notions documentaires
+# Reperer les notions et familles disponibles
 
-Retourne le catalogue compact des notions mathematiques documentees.
-L'identifiant \`notion_id\` est celui a reutiliser dans les fonctions
-d'eduschool qui attendent une notion.
+Les identifiants retournes peuvent etre passes a \`produire(notion =
+...)\`. Le catalogue est construit depuis les ressources du package,
+sans liste de notions codee en dur.
 
 ## Usage
 
@@ -12,4 +12,4 @@ notions()
 
 ## Value
 
-Un data.frame avec \`notion_id\` et \`libelle\`.
+Un data.frame : type, identifiant, libelle, famille, niveau.

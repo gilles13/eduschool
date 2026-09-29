@@ -10,6 +10,8 @@
   : Parcours des mathematiques du cycle 3 au lycee
 - [`maths_programmes()`](https://gilles13.github.io/eduschool/reference/maths_programmes.md)
   : Programmes de mathematiques documentes dans la sauvegarde v1
+- [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
+  : Reperer les notions et familles disponibles
 - [`produire()`](https://gilles13.github.io/eduschool/reference/produire.md)
   : Produire une fiche ou un quiz HTML/PDF
 - [`produire_cheatsheet()`](https://gilles13.github.io/eduschool/reference/produire_cheatsheet.md)
@@ -20,5 +22,7 @@
   : Lire les questions d'une notion pilote
 - [`series()`](https://gilles13.github.io/eduschool/reference/series.md)
   : Series du lycee (referentiel historique)
+- [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
+  : Tables de multiplication
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :
   Voies scolaires (referentiel historique)
