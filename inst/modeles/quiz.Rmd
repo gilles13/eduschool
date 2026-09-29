@@ -202,7 +202,7 @@ if (!html) {
       if (is.null(dimensions)) dimensions = c(4, 3)
       ggplot2::ggsave(png, figure, width = dimensions[1],
                       height = dimensions[2], dpi = 130)
-      cat("\n\n![](", png, "){width=35%}\n\n", sep = "")
+      cat("\n\n\\begin{center}\n\n![](", png, "){width=35%}\n\n\\end{center}\n\n", sep = "")
     }
     if (!is.null(q$presentation$avertissement))
       cat("\n*", q$presentation$avertissement, "*\n\n", sep = "")

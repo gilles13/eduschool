@@ -163,7 +163,12 @@
       ],
       "correction": "Pour l’angle en B, AC = 3 est opposé et BC = 5 est l’hypoténuse.",
       "illustration": {
-        "id": "trigonometrie_triangle_rectangle"
+        "id": "trigonometrie_triangle_rectangle",
+        "longueurs": {
+          "AB": "4 cm",
+          "AC": "3 cm",
+          "BC": "5 cm"
+        }
       }
     },
     {
@@ -182,7 +187,12 @@
       ],
       "correction": "La tangente vaut opposé / adjacent, soit AC/AB = 3/4.",
       "illustration": {
-        "id": "trigonometrie_triangle_rectangle"
+        "id": "trigonometrie_triangle_rectangle",
+        "longueurs": {
+          "AB": "4 cm",
+          "AC": "3 cm",
+          "BC": "5 cm"
+        }
       }
     },
     {
@@ -199,7 +209,16 @@
         "60°",
         "90°"
       ],
-      "correction": "Les deux côtés de l’angle droit sont égaux : les angles aigus en B et C valent chacun 45°."
+      "correction": "Les deux côtés de l’angle droit sont égaux : les angles aigus en B et C valent chacun 45°.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle",
+        "longueurs": {
+          "AB": "4 cm",
+          "AC": "4 cm",
+          "BC": ""
+        },
+        "angle_B": "?"
+      }
     },
     {
       "id": "TRIG-CALC-003",
@@ -215,7 +234,85 @@
         "12 cm",
         "6√2 cm"
       ],
-      "correction": "tan(45°) = AC/AB = 1, donc AC = AB = 6 cm."
+      "correction": "tan(45°) = AC/AB = 1, donc AC = AB = 6 cm.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle",
+        "longueurs": {
+          "AB": "6 cm",
+          "AC": "?",
+          "BC": ""
+        },
+        "angle_B": "45°"
+      }
+    },
+    {
+      "id": "TRIG-ARC-001",
+      "type": "qcm",
+      "enonce": "Un immeuble dépasse la hauteur des yeux de 15 m. On se tient à 20 m horizontalement de sa façade. Quel angle de visée vers son sommet obtient-on, au dixième de degré ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "36,9°"
+      },
+      "propositions": [
+        "36,9°",
+        "53,1°",
+        "41,4°",
+        "48,6°"
+      ],
+      "correction": "Le rapport opposé/adjacent vaut 15/20 = 0,75. Donc l’angle vaut arctan(0,75) ≈ 36,9° (calculatrice en mode degrés).",
+      "illustration": {
+        "id": "trigonometrie_immeuble"
+      }
+    },
+    {
+      "id": "TRIG-ARC-002",
+      "type": "qcm",
+      "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté opposé mesure 3 cm et l’hypoténuse 6 cm. Quel angle α obtient-on ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "30°"
+      },
+      "propositions": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correction": "sin(α) = opposé/hypoténuse = 3/6 = 0,5. Donc α = arcsin(0,5) = 30° (mode degrés).",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle",
+        "longueurs": {
+          "AB": "",
+          "AC": "3 cm",
+          "BC": "6 cm"
+        },
+        "angle_B": "?"
+      }
+    },
+    {
+      "id": "TRIG-ARC-003",
+      "type": "qcm",
+      "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté adjacent mesure 5 cm et l’hypoténuse 10 cm. Quel angle α obtient-on ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "60°"
+      },
+      "propositions": [
+        "60°",
+        "30°",
+        "45°",
+        "90°"
+      ],
+      "correction": "cos(α) = adjacent/hypoténuse = 5/10 = 0,5. Donc α = arccos(0,5) = 60° (mode degrés).",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle",
+        "longueurs": {
+          "AB": "5 cm",
+          "AC": "",
+          "BC": "10 cm"
+        },
+        "angle_B": "?"
+      }
     }
   ]
 }

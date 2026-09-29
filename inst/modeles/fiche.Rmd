@@ -39,7 +39,13 @@ for (membre in membres) {
   if (length(membres) > 1L) {
     # Reutiliser le titre editorial existant, sans creer une autre source.
     titre = grep("^# ", lignes, value = TRUE)
-    if (!length(titre)) titre = paste("#", gsub("_", " ", membre))
+    if (!length(titre)) {
+      ref = utils::read.csv(system.file("referentiels", "familles_notions.csv",
+                                         package = "eduschool"), sep = ";")
+      indice = match(membre, ref$notion)
+      titre = paste("#", if (is.na(indice)) gsub("_", " ", membre)
+                            else ref$libelle_notion[[indice]])
+    }
     cat("\n## ", sub("^# +", "", titre[[1L]]), "\n\n", sep = "")
     titre_initial = grep("^# ", lignes)
     if (length(titre_initial)) lignes = lignes[-titre_initial[[1L]]]

@@ -1,31 +1,32 @@
-famille;notion
-fractions;addition_fractions
-fractions;soustraction_fractions
-fractions;multiplication_fractions
-fractions;division_fractions
-fractions;comparaison_fractions
-fractions;fractions_equivalentes
-fractions;fractions_droite
-fractions;encadrement_fractions
-fractions;fraction_fois_entier
-fractions;fraction_quantite
-fractions;fraction_quotient
-fractions;terme_manquant_fractions
-grandeurs_mesures_conversions;grandeurs_mesures
-grandeurs_mesures_conversions;conversion_longueurs
-grandeurs_mesures_conversions;conversion_masses
-grandeurs_mesures_conversions;conversion_contenances
-grandeurs_mesures_conversions;conversion_aires
-grandeurs_mesures_conversions;conversion_volumes
-grandeurs_mesures_conversions;conversion_durees
-grandeurs_mesures_conversions;conversion_octets
-geometrie;cercle
-geometrie;droites
-geometrie;parallelogrammes
-geometrie;geometrie_deductive
-geometrie;thales
-geometrie;pythagore
-geometrie;trigonometrie_triangle_rectangle
-calcul_litteral;developpement_identites
-calcul_litteral;factorisation_identites
-calcul_litteral;identites_remarquables
+famille;notion;libelle_notion;niveau;etape_scolaire
+fractions;addition_fractions;Addition de fractions;;
+fractions;soustraction_fractions;Soustraction de fractions;;
+fractions;multiplication_fractions;Multiplication de fractions;;
+fractions;division_fractions;Division de fractions;;
+fractions;comparaison_fractions;Comparer des fractions;;
+fractions;fractions_equivalentes;Fractions équivalentes;;
+fractions;fractions_droite;Fractions sur une droite graduée;;
+fractions;encadrement_fractions;Encadrer une fraction;;
+fractions;fraction_fois_entier;Multiplier une fraction par un entier;;
+fractions;fraction_quantite;Fraction d’une quantité;;
+fractions;fraction_quotient;Fraction et quotient;;
+fractions;terme_manquant_fractions;Terme manquant dans une fraction;;
+grandeurs_mesures_conversions;grandeurs_mesures;Grandeurs mesures;;
+grandeurs_mesures_conversions;conversion_longueurs;Conversion longueurs;;
+grandeurs_mesures_conversions;conversion_masses;Conversion masses;;
+grandeurs_mesures_conversions;conversion_contenances;Conversion contenances;;
+grandeurs_mesures_conversions;conversion_aires;Conversion aires;;
+grandeurs_mesures_conversions;conversion_volumes;Conversion volumes;;
+grandeurs_mesures_conversions;conversion_durees;Conversion durees;;
+grandeurs_mesures_conversions;conversion_octets;Conversion octets;;
+geometrie;cercle;Cercle;;
+geometrie;droites;Droites;;
+geometrie;parallelogrammes;Parallelogrammes;;
+geometrie;geometrie_deductive;Géométrie déductive;;
+geometrie;thales;Thalès;;
+geometrie;pythagore;Théorème de Pythagore;;
+geometrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
+calcul_litteral;developpement_identites;Développement;;
+calcul_litteral;factorisation_identites;Factorisation;;
+calcul_litteral;identites_remarquables;Identités remarquables : reconnaissance et applications;;
+trigonometrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college

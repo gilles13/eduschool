@@ -12,3 +12,5 @@ export(voies)
 export(series)
 export(maths_programmes)
 export(maths_parcours)
+
+export(table_multiplication)

@@ -1,0 +1,21 @@
+---
+title: "eduschool"
+params:
+  titre: "Document"
+  contenu: ""
+output:
+  html_document: default
+  pdf_document:
+    latex_engine: xelatex
+geometry: margin=1.6cm
+---
+
+```{r entete, echo=FALSE, results='asis'}
+source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
+.entete_edu(list(support = "divers", titre = params$titre),
+            knitr::is_html_output())
+```
+
+```{r contenu, echo=FALSE, results='asis'}
+cat(params$contenu, "\n")
+```
