@@ -1,0 +1,221 @@
+{
+  "notion_id": "trigonometrie_triangle_rectangle",
+  "questions": [
+    {
+      "id": "TRIG-VOC-001",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A. Quel côté est l’hypoténuse ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "BC"
+      },
+      "propositions": [
+        "BC",
+        "AB",
+        "AC",
+        "Le côté le plus proche de B"
+      ],
+      "correction": "L’hypoténuse est toujours opposée à l’angle droit, ici en A.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-VOC-002",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A. Pour l’angle en B, quel côté est opposé ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "AC"
+      },
+      "propositions": [
+        "AC",
+        "AB",
+        "BC",
+        "Aucun : B est un sommet"
+      ],
+      "correction": "Le côté AC ne touche pas le sommet B : il est opposé à l’angle en B.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-VOC-003",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A. Pour l’angle en B, quel côté est adjacent (hors hypoténuse) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "AB"
+      },
+      "propositions": [
+        "AB",
+        "AC",
+        "BC",
+        "AB et BC"
+      ],
+      "correction": "AB touche B et n’est pas l’hypoténuse.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-RAP-001",
+      "type": "qcm",
+      "enonce": "Dans ABC rectangle en A, quelle expression vaut sin(B) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "AC/BC"
+      },
+      "propositions": [
+        "AC/BC",
+        "AB/BC",
+        "AC/AB",
+        "BC/AC"
+      ],
+      "correction": "Le sinus est le rapport côté opposé / hypoténuse.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-RAP-002",
+      "type": "qcm",
+      "enonce": "Dans ABC rectangle en A, quelle expression vaut cos(B) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "AB/BC"
+      },
+      "propositions": [
+        "AB/BC",
+        "AC/BC",
+        "AC/AB",
+        "BC/AB"
+      ],
+      "correction": "Le cosinus est le rapport côté adjacent / hypoténuse.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-RAP-003",
+      "type": "qcm",
+      "enonce": "Dans ABC rectangle en A, quelle expression vaut tan(B) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "AC/AB"
+      },
+      "propositions": [
+        "AC/AB",
+        "AB/AC",
+        "AC/BC",
+        "AB/BC"
+      ],
+      "correction": "La tangente est le rapport côté opposé / côté adjacent.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-CHOIX-001",
+      "type": "qcm",
+      "enonce": "On connaît un angle aigu et la longueur de son côté adjacent ; on cherche son côté opposé. Quel rapport choisir ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "La tangente"
+      },
+      "propositions": [
+        "La tangente",
+        "Le sinus",
+        "Le cosinus",
+        "Le théorème de Thalès"
+      ],
+      "correction": "La tangente relie directement opposé et adjacent."
+    },
+    {
+      "id": "TRIG-CHOIX-002",
+      "type": "qcm",
+      "enonce": "On connaît un angle aigu et l’hypoténuse ; on cherche son côté opposé. Quel rapport choisir ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le sinus"
+      },
+      "propositions": [
+        "Le sinus",
+        "Le cosinus",
+        "La tangente",
+        "Le périmètre"
+      ],
+      "correction": "Le sinus relie directement opposé et hypoténuse."
+    },
+    {
+      "id": "TRIG-CALC-001",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A, AB = 4 cm, AC = 3 cm, BC = 5 cm. Combien vaut sin(B) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3/5"
+      },
+      "propositions": [
+        "3/5",
+        "4/5",
+        "3/4",
+        "5/3"
+      ],
+      "correction": "Pour l’angle en B, AC = 3 est opposé et BC = 5 est l’hypoténuse.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-CALC-002",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A, AB = 4 cm, AC = 3 cm, BC = 5 cm. Combien vaut tan(B) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3/4"
+      },
+      "propositions": [
+        "3/4",
+        "4/3",
+        "3/5",
+        "4/5"
+      ],
+      "correction": "La tangente vaut opposé / adjacent, soit AC/AB = 3/4.",
+      "illustration": {
+        "id": "trigonometrie_triangle_rectangle"
+      }
+    },
+    {
+      "id": "TRIG-ANGLE-001",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A, AB = 4 cm et AC = 4 cm. Quelle mesure a l’angle en B ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "45°"
+      },
+      "propositions": [
+        "45°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "correction": "Les deux côtés de l’angle droit sont égaux : les angles aigus en B et C valent chacun 45°."
+    },
+    {
+      "id": "TRIG-CALC-003",
+      "type": "qcm",
+      "enonce": "ABC est rectangle en A, l’angle en B vaut 45° et AB = 6 cm. Combien mesure AC ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "6 cm"
+      },
+      "propositions": [
+        "6 cm",
+        "3 cm",
+        "12 cm",
+        "6√2 cm"
+      ],
+      "correction": "tan(45°) = AC/AB = 1, donc AC = AB = 6 cm."
+    }
+  ]
+}

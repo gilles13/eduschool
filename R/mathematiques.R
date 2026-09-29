@@ -322,7 +322,19 @@ graphique = function(id, ...) {
 
 # Convert simple editorial markers into ordinary Markdown images.
 # The only accepted arguments are named numeric scalars; no code is evaluated.
-.illustrations_fiche = function(lignes) {
+.illustrations_fiche = function(lignes, notion = NULL) {
+  images = grep("<!-- image:", lignes, fixed = TRUE)
+  for (i in images) {
+    ligne = trimws(lignes[[i]])
+    if (!grepl("^<!-- image: [a-zA-Z0-9_-]+[.]png -->$", ligne))
+      stop("Declaration image invalide : ", ligne)
+    if (is.null(notion) || !grepl("^[a-z][a-z0-9_]*$", notion))
+      stop("Notion absente pour une image")
+    nom = sub("^<!-- image: (.*) -->$", "\\1", ligne)
+    chemin = .chemin_edu("notions", notion, "assets", nom)
+    if (!file.exists(chemin)) stop("Image introuvable : ", chemin)
+    lignes[[i]] = paste0("![](", chemin, "){width=55%}")
+  }
   motif = "^<!-- graphique: ([a-z][A-Za-z0-9_]*)([[:space:]]+[^<>]*)? -->$"
   indices = grep("<!-- graphique:", lignes, fixed = TRUE)
   for (i in indices) {
@@ -346,8 +358,7 @@ graphique = function(id, ...) {
     if (is.null(dimensions)) dimensions = c(4.6, 2.8)
     ggplot2::ggsave(chemin, plot = figure, width = dimensions[[1L]],
                     height = dimensions[[2L]], units = "in", dpi = 150)
-    lignes[[i]] = paste0("![", gsub("_", " ", id), "](", chemin,
-                         "){width=65%}")
+    lignes[[i]] = paste0("![](", chemin, "){width=65%}")
   }
   lignes
 }

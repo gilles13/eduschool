@@ -16,6 +16,14 @@ output:
 ---
 
 ```{r entete, echo=FALSE, results='asis'}
+if (knitr::is_html_output() && identical(params$support, "decouverte")) {
+  cat('<style>\n',
+      '.main-container img { display:block; height:auto; max-width:100%; margin:2em auto 1.4em; }\n',
+      '.main-container blockquote { border-left:5px solid #2471a3; background:#eaf3fa; padding:0.8em 1.1em; margin:1.4em 0; border-radius:0 0.6em 0.6em 0; }\n',
+      '.main-container blockquote:nth-of-type(2) { border-left-color:#278451; background:#e9f6ee; }\n',
+      '.main-container blockquote:nth-of-type(3) { border-left-color:#be751a; background:#fff3e3; }\n',
+      '</style>\n', sep = '')
+}
 source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
 .entete_edu(params, knitr::is_html_output())
 ```
@@ -37,7 +45,7 @@ for (membre in membres) {
     if (length(titre_initial)) lignes = lignes[-titre_initial[[1L]]]
     lignes = sub("^(#+)( +)", "\\1#\\2", lignes)
   }
-  lignes = eduschool:::.illustrations_fiche(lignes)
+  lignes = eduschool:::.illustrations_fiche(lignes, notion = membre)
   cat(paste(lignes, collapse = "\n"), "\n\n")
 }
 ```
