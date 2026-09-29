@@ -96,6 +96,73 @@
         "10 000 000 o"
       ],
       "correction": "1 Mo = 1 000 ko et 1 ko = 1 000 o, donc 1 Mo = 1 000 000 o."
+    },
+    {
+      "id": "MES-CONVERSION_OCTETS-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Quelle unité mesure couramment la taille d’un fichier informatique ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "octet": "o _ _ _ t",
+          "bit": "b _ t",
+          "option": "o _ _ _ _ n",
+          "ordre": "o _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "octet"
+      },
+      "propositions": [
+        "octet",
+        "bit",
+        "option",
+        "ordre"
+      ],
+      "correction": "L’octet sert à exprimer des quantités de données numériques."
+    },
+    {
+      "id": "MES-CONVERSION_OCTETS-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quelle unité décimale de données vaut un milliard d’octets ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "gigaoctet": "G________T",
+          "mégaoctet": "M________T",
+          "kilooctet": "K________T",
+          "téraoctet": "T________T"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "gigaoctet"
+      },
+      "propositions": [
+        "gigaoctet",
+        "mégaoctet",
+        "kilooctet",
+        "téraoctet"
+      ],
+      "correction": "Le terme recherché est « gigaoctet »."
+    },
+    {
+      "id": "MES-CONVERSION_OCTETS-APPLICATION",
+      "type": "qcm",
+      "enonce": "Dans le système décimal, un fichier fait 2,5 Mo. Combien cela représente-t-il de ko ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2 500 ko"
+      },
+      "propositions": [
+        "2 500 ko",
+        "250 ko",
+        "25 000 ko",
+        "2,5 ko"
+      ],
+      "correction": "Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko."
     }
   ]
 }

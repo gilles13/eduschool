@@ -48,7 +48,7 @@
               ensembles = "Ensembles",
               geometrie_deductive = "Géométrie")
   supports = c(decouverte = "Découverte", synthese = "Synthèse",
-               revision = "Révision", quiz = "Quiz")
+               quiz = "Quiz")
   ref = utils::read.csv(system.file("referentiels", "familles_notions.csv",
                                     package = "eduschool"), sep = ";",
                          stringsAsFactors = FALSE)

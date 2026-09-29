@@ -72,6 +72,73 @@
         "0,4 mg"
       ],
       "correction": "Un gramme contient 1 000 milligrammes."
+    },
+    {
+      "id": "MES-CONVERSION_MASSES-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Quelle unité est adaptée pour exprimer la masse d’un camion ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "kilogramme": "k _ _ _ _ _ _ _ _ e",
+          "milligramme": "m _ _ _ _ _ _ _ _ _ e",
+          "centigramme": "c _ _ _ _ _ _ _ _ _ e",
+          "décagramme": "d _ _ _ _ _ _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "kilogramme"
+      },
+      "propositions": [
+        "kilogramme",
+        "milligramme",
+        "centigramme",
+        "décagramme"
+      ],
+      "correction": "La tonne est une unité adaptée aux masses élevées."
+    },
+    {
+      "id": "MES-CONVERSION_MASSES-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quelle unité de masse vaut 1 000 kg ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "tonne": "T________E",
+          "gramme": "G________E",
+          "masse": "M________E",
+          "minute": "MI________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "tonne"
+      },
+      "propositions": [
+        "tonne",
+        "gramme",
+        "masse",
+        "minute"
+      ],
+      "correction": "Le terme recherché est « tonne »."
+    },
+    {
+      "id": "MES-CONVERSION_MASSES-APPLICATION",
+      "type": "qcm",
+      "enonce": "Un sac pèse 2,5 kg. Quelle est sa masse en grammes ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2 500 g"
+      },
+      "propositions": [
+        "2 500 g",
+        "250 g",
+        "25 000 g",
+        "2,5 g"
+      ],
+      "correction": "1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g."
     }
   ]
 }

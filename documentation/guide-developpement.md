@@ -102,7 +102,8 @@ Le travail en cours porte sur la diversité des questions, les quiz transversaux
 - `questions("fractions")` melange les banques des membres declares dans le CSV.
 - `produire("fractions", "quiz")` genere uniquement le quiz transversal.
 - `produire("fractions", "tous")` genere **au maximum quatre fichiers** :
-  decouverte, synthese, revision et quiz transversal. Chaque fiche assemble
+  decouverte, synthese et quiz transversal. Les anciens fichiers revision.md
+  peuvent rester archives, mais produire() ne les expose plus. Chaque fiche assemble
   les Markdown des membres declares dans le CSV, dans leur ordre, avec titres
   de section ; les ressources absentes sont ignorees et signalees si un support
   entier manque. Aucun nouveau Markdown au niveau de la famille.

@@ -72,6 +72,73 @@
         "0,25 cL"
       ],
       "correction": "1 cL = 10 mL."
+    },
+    {
+      "id": "MES-CONVERSION_CONTENANCES-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Quelle unité convient pour la contenance d’une bouteille d’eau ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "litre": "l _ _ _ e",
+          "mètre": "m _ _ _ e",
+          "gramme": "g _ _ _ _ e",
+          "heure": "h _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "litre"
+      },
+      "propositions": [
+        "litre",
+        "mètre",
+        "gramme",
+        "heure"
+      ],
+      "correction": "Le litre mesure une contenance."
+    },
+    {
+      "id": "MES-CONVERSION_CONTENANCES-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quelle unité de contenance vaut un centième de litre ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "centilitre": "C________E",
+          "millilitre": "M________E",
+          "décilitre": "D________E",
+          "kilolitre": "K________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "centilitre"
+      },
+      "propositions": [
+        "centilitre",
+        "millilitre",
+        "décilitre",
+        "kilolitre"
+      ],
+      "correction": "Le terme recherché est « centilitre »."
+    },
+    {
+      "id": "MES-CONVERSION_CONTENANCES-APPLICATION",
+      "type": "qcm",
+      "enonce": "Une bouteille contient 75 cL. Quelle est sa contenance en litres ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0,75 L"
+      },
+      "propositions": [
+        "0,75 L",
+        "7,5 L",
+        "75 L",
+        "0,075 L"
+      ],
+      "correction": "100 cL = 1 L ; 75 cL = 0,75 L."
     }
   ]
 }

@@ -15,6 +15,10 @@ Pour les unités décimales, on utilise les préfixes habituels :
 
 **À retenir :** chaque unité vaut 1 000 fois l'unité immédiatement plus petite. Le tableau réserve trois colonnes à chaque unité pour placer les chiffres.
 
+**À essayer 2 — Une situation concrète :** Dans le système décimal, un fichier fait 2,5 Mo. Combien cela représente-t-il de ko ?
+
 ## Pour vérifier tes découvertes
 
 **1. Mégaoctets et kilooctets.** Dans les unités décimales présentées ici, $1\,\mathrm{Mo}=1\,000\,\mathrm{ko}$, donc **3,5 Mo = 3 500 ko**.
+
+**2. Une situation concrète.** Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko.

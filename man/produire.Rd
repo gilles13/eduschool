@@ -21,7 +21,7 @@ produire(
 \arguments{
 \item{notion}{Notion simple ou famille definie dans familles_notions.csv.}
 
-\item{support}{"decouverte", "synthese", "revision", "quiz" ou "tous".}
+\item{support}{"decouverte", "synthese", "quiz" ou "tous".}
 
 \item{dossier}{Repertoire de destination ; NULL cree un fichier temporaire.}
 

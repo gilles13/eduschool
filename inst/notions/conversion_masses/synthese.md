@@ -6,3 +6,7 @@
 - Une valeur en milligrammes sera numériquement plus grande que la même masse en grammes.
 
 <!-- graphique: tableau_conversion type=2 -->
+
+## Pour retenir
+
+Convertir une masse ne modifie pas l’objet pesé.

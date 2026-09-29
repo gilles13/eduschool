@@ -8,6 +8,10 @@ Deux passerelles essentielles : **1 dm³ = 1 L** et **1 cm³ = 1 mL**. On en dé
 
 **À essayer 1 — Un cube d’un litre :** calcule le volume d’un cube de 10 cm de côté. Pourquoi correspond-il à 1 L ?
 
+**À essayer 2 — Une situation concrète :** Un cube a des arêtes de 2 dm. Quel est son volume en litres ?
+
 ## Pour vérifier tes découvertes
 
 **1. Un cube d’un litre.** $10\times10\times10=1\,000\,\mathrm{cm}^3=1\,\mathrm{dm}^3=1\,\mathrm{L}$.
+
+**2. Une situation concrète.** 2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L.

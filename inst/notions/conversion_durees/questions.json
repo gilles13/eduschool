@@ -72,6 +72,73 @@
         "15 min"
       ],
       "correction": "0,75 × 60 = 45."
+    },
+    {
+      "id": "MES-CONVERSION_DUREES-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on le temps écoulé entre deux événements ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "durée": "d _ _ _ e",
+          "heure": "h _ _ _ e",
+          "minute": "m _ _ _ _ e",
+          "seconde": "s _ _ _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "durée"
+      },
+      "propositions": [
+        "durée",
+        "heure",
+        "minute",
+        "seconde"
+      ],
+      "correction": "La durée est un intervalle de temps, à distinguer d’un horaire."
+    },
+    {
+      "id": "MES-CONVERSION_DUREES-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quelle unité de durée vaut 60 secondes ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "minute": "M________E",
+          "mesure": "ME________E",
+          "mètre": "MÈ________E",
+          "masse": "MA________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "minute"
+      },
+      "propositions": [
+        "minute",
+        "mesure",
+        "mètre",
+        "masse"
+      ],
+      "correction": "Le terme recherché est « minute »."
+    },
+    {
+      "id": "MES-CONVERSION_DUREES-APPLICATION",
+      "type": "qcm",
+      "enonce": "Un trajet dure 1 h 45 min. Quelle est sa durée en minutes ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "105 min"
+      },
+      "propositions": [
+        "105 min",
+        "145 min",
+        "75 min",
+        "85 min"
+      ],
+      "correction": "1 h = 60 min ; 60 + 45 = 105 min."
     }
   ]
 }

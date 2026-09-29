@@ -6,3 +6,7 @@
 - Toujours indiquer l'unité du résultat.
 
 <!-- graphique: tableau_conversion type=3 -->
+
+## Pour retenir
+
+1 L = 100 cL : le nombre augmente lorsqu’on utilise une unité plus petite.

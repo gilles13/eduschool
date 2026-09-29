@@ -48,6 +48,73 @@
         "Changer les deux valeurs en kg"
       ],
       "correction": "2 m = 200 cm ; on obtient 230 cm."
+    },
+    {
+      "id": "MES-GRANDEURS_MESURES-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Comment nomme-t-on la propriété que l’on cherche à mesurer ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "grandeur": "g _ _ _ _ _ _ r",
+          "mesure": "m _ _ _ _ e",
+          "longueur": "l _ _ _ _ _ _ r",
+          "unité": "u _ _ _ é"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "grandeur"
+      },
+      "propositions": [
+        "grandeur",
+        "mesure",
+        "longueur",
+        "unité"
+      ],
+      "correction": "Une grandeur est une propriété mesurable ; sa mesure est un nombre associé à une unité."
+    },
+    {
+      "id": "MES-GRANDEURS_MESURES-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on le nombre accompagné de son unité qui exprime une grandeur ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "mesure": "M________E",
+          "masse": "MA________E",
+          "minute": "MI________E",
+          "mètre": "MÈ________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "mesure"
+      },
+      "propositions": [
+        "mesure",
+        "masse",
+        "minute",
+        "mètre"
+      ],
+      "correction": "Le terme recherché est « mesure »."
+    },
+    {
+      "id": "MES-GRANDEURS_MESURES-APPLICATION",
+      "type": "qcm",
+      "enonce": "Un ruban mesure 80 cm et un autre 1,2 m. Quelle est leur longueur totale en mètres ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2 m"
+      },
+      "propositions": [
+        "2 m",
+        "1,28 m",
+        "81,2 m",
+        "200 m"
+      ],
+      "correction": "80 cm = 0,8 m ; 0,8 + 1,2 = 2 m."
     }
   ]
 }

@@ -10,6 +10,10 @@ La masse s'exprime notamment en kilogrammes (kg), grammes (g) et milligrammes (m
 
 **À essayer 1 — Grammes et kilogrammes :** une recette demande 750 g de farine : combien de kilogrammes ?
 
+**À essayer 2 — Une situation concrète :** Un sac pèse 2,5 kg. Quelle est sa masse en grammes ?
+
 ## Pour vérifier tes découvertes
 
 **1. Grammes et kilogrammes.** $1\,\mathrm{kg}=1\,000\,\mathrm{g}$ : $750\div1\,000=0{,}75$, donc **750 g = 0,75 kg**.
+
+**2. Une situation concrète.** 1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g.

@@ -8,3 +8,7 @@ Deux unités de longueur voisines dans le tableau métrique diffèrent d'un fact
 - Toujours contrôler l'ordre de grandeur : en centimètres, une même longueur a une valeur numérique plus grande qu'en mètres.
 
 <!-- graphique: tableau_conversion type=1 -->
+
+## Pour retenir
+
+Pour une même longueur, plus l’unité est petite, plus la valeur numérique est grande.

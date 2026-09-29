@@ -9,3 +9,7 @@ Dans le système **décimal**, chaque unité voisine diffère d'un facteur **1 0
 <!-- graphique: tableau_conversion type=6 -->
 
 **Lire le tableau :** de gauche à droite, To, Go, Mo, ko et o. Chaque unité occupe trois colonnes, car on multiplie ou divise par 1 000.
+
+## Pour retenir
+
+Ici les préfixes décimaux valent des puissances de 1 000 ; ne pas confondre avec les unités binaires.

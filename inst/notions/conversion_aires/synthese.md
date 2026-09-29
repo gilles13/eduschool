@@ -21,3 +21,7 @@ L'**hectare (ha)** et l'**hectomètre carré (hm²)** désignent exactement la m
 **Pourquoi ?** Un hectomètre mesure 100 mètres. Un carré de 1 hm de côté a donc une aire de 100 m × 100 m = **10 000 m²**, soit **1 hectare**.
 
 **À retenir :** lorsqu'on passe d'une unité de longueur à la suivante, le facteur est 10 ; pour les unités d'aire, le facteur est **100**, car on mesure dans deux dimensions.
+
+## Pour retenir
+
+Une conversion d’aires entre unités carrées voisines utilise un facteur 100.

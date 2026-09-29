@@ -409,7 +409,7 @@ graphique = function(id, ...) {
 
 #' Produire une fiche ou un quiz HTML/PDF
 #' @param notion Notion simple ou famille definie dans familles_notions.csv.
-#' @param support "decouverte", "synthese", "revision", "quiz" ou "tous".
+#' @param support "decouverte", "synthese", "quiz" ou "tous".
 #' @param dossier Repertoire de destination ; NULL cree un fichier temporaire.
 #' @param format "html" ou "pdf".
 #' @param variantes Ancien nom de tirages (conserve pour compatibilite).
@@ -428,7 +428,7 @@ produire = function(notion, support, dossier = NULL, format = "html",
                     humour_ratio = 0.2, seed = NULL) {
   stopifnot(length(notion) == 1L, is.character(notion),
             grepl("^[a-z][a-z0-9_]*$", notion),
-            length(support) == 1L, support %in% c("decouverte", "synthese", "revision", "quiz", "tous"),
+            length(support) == 1L, support %in% c("decouverte", "synthese", "quiz", "tous"),
             format %in% c("html", "pdf"),
             length(variantes) == 1L, !is.na(variantes), variantes >= 1L)
   if (!is.null(n)) stopifnot(length(n) == 1L, is.numeric(n),
@@ -450,7 +450,7 @@ produire = function(notion, support, dossier = NULL, format = "html",
     if (!dir.exists(dossier)) dir.create(dossier, recursive = TRUE)
     if (!dir.exists(dossier)) stop("Dossier de sortie inaccessible : ", dossier)
     dossier = normalizePath(dossier)
-    supports = c("decouverte", "synthese", "revision", "quiz")
+    supports = c("decouverte", "synthese", "quiz")
     disponibles = vapply(supports, function(s) {
       ressource = if (identical(s, "quiz")) "questions.json" else paste0(s, ".md")
       if (length(membres)) {
@@ -470,11 +470,12 @@ produire = function(notion, support, dossier = NULL, format = "html",
         humour_ratio = humour_ratio, seed = seed))
     }, character(1))
     if (isTRUE(ouvrir)) {
-      premier = unname(fichiers[[1L]])
-      if (identical(format, "pdf") && identical(Sys.info()[["sysname"]], "Linux")) {
-        system2("xdg-open", shQuote(premier), wait = FALSE)
-      } else {
-        utils::browseURL(premier)
+      for (fichier in unname(fichiers)) {
+        if (identical(format, "pdf") && identical(Sys.info()[["sysname"]], "Linux")) {
+          system2("xdg-open", shQuote(fichier), wait = FALSE)
+        } else {
+          utils::browseURL(fichier)
+        }
       }
     }
     message(length(fichiers), " document(s) g\u00e9n\u00e9r\u00e9(s).\nR\u00e9pertoire : ", dossier,

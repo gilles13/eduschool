@@ -72,6 +72,73 @@
         "0,0045 m"
       ],
       "correction": "1 km = 1 000 m, donc 0,45 × 1 000 = 450."
+    },
+    {
+      "id": "MES-CONVERSION_LONGUEURS-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Quelle unité convient pour exprimer la distance entre deux villes ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "kilomètre": "k _ _ _ _ _ _ _ e",
+          "centimètre": "c _ _ _ _ _ _ _ _ e",
+          "millimètre": "m _ _ _ _ _ _ _ _ e",
+          "décimètre": "d _ _ _ _ _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "kilomètre"
+      },
+      "propositions": [
+        "kilomètre",
+        "centimètre",
+        "millimètre",
+        "décimètre"
+      ],
+      "correction": "Le kilomètre est adapté aux grandes distances."
+    },
+    {
+      "id": "MES-CONVERSION_LONGUEURS-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quelle unité de longueur est l’unité de référence du système métrique ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "mètre": "M________E",
+          "masse": "MA________E",
+          "minute": "MI________E",
+          "mesure": "ME________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "mètre"
+      },
+      "propositions": [
+        "mètre",
+        "masse",
+        "minute",
+        "mesure"
+      ],
+      "correction": "Le terme recherché est « mètre »."
+    },
+    {
+      "id": "MES-CONVERSION_LONGUEURS-APPLICATION",
+      "type": "qcm",
+      "enonce": "Une piste fait 1,25 km. Combien cela représente-t-il de mètres ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1 250 m"
+      },
+      "propositions": [
+        "1 250 m",
+        "125 m",
+        "12 500 m",
+        "1,25 m"
+      ],
+      "correction": "1 km = 1 000 m, donc 1,25 km = 1 250 m."
     }
   ]
 }
