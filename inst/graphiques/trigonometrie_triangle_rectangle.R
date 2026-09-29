@@ -25,13 +25,13 @@ graphique_trigonometrie_triangle_rectangle = function(illustration = NULL) {
       ggplot2::aes(x, y), linewidth = .35) +
     ggplot2::geom_text(data = points,
       ggplot2::aes(x = x, y = y, label = nom),
-      nudge_x = c(-.15, .16, -.15), nudge_y = c(-.15, -.12, .12), size = 4) +
-    ggplot2::annotate("text", x = 2, y = -.3, label = libelle("AB"), size = 3.2) +
+      nudge_x = c(-.15, .16, -.15), nudge_y = c(-.15, -.12, .12), size = 8) +
+    ggplot2::annotate("text", x = 2, y = -.3, label = libelle("AB"), size = 6.4) +
     ggplot2::annotate("text", x = -.32, y = 1.5, label = libelle("AC"),
-      angle = 90, size = 3.2) +
+      angle = 90, size = 6.4) +
     ggplot2::annotate("text", x = 2.25, y = 1.75,
-      label = libelle("BC"), angle = -36.9, size = 3.1) +
-    ggplot2::annotate("text", x = 3.35, y = .20, label = as.character(angle), size = 3) +
+      label = libelle("BC"), angle = -36.9, size = 6.2) +
+    ggplot2::annotate("text", x = 3.35, y = .20, label = as.character(angle), size = 6) +
     ggplot2::coord_fixed(xlim = c(-.65, 4.65), ylim = c(-.55, 3.45),
                          expand = FALSE) +
     ggplot2::theme_void()

@@ -1,0 +1,245 @@
+{
+  "notion_id": "cercle_trigonometrique",
+  "questions": [
+    {
+      "id": "CERCLE-TRIG-001",
+      "type": "qcm",
+      "enonce": "Quelle est la longueur du rayon du cercle trigonométrique ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1"
+      },
+      "propositions": [
+        "1",
+        "2",
+        "π",
+        "0"
+      ],
+      "correction": "Par définition, le cercle trigonométrique a un rayon égal à 1.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-002",
+      "type": "qcm",
+      "enonce": "Quel est le sens positif des angles ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Inverse des aiguilles d’une montre"
+      },
+      "propositions": [
+        "Inverse des aiguilles d’une montre",
+        "Sens des aiguilles d’une montre",
+        "Toujours vers le bas",
+        "Aucun sens"
+      ],
+      "correction": "Le sens positif est le sens trigonométrique.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-003",
+      "type": "qcm",
+      "enonce": "Un demi-tour représente combien de radians ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "π"
+      },
+      "propositions": [
+        "π",
+        "π/2",
+        "2π",
+        "π/4"
+      ],
+      "correction": "Un tour vaut 2π radians, donc un demi-tour vaut π.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 180
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-004",
+      "type": "qcm",
+      "enonce": "Un quart de tour positif représente combien de radians ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "π/2"
+      },
+      "propositions": [
+        "π/2",
+        "π",
+        "2π",
+        "π/6"
+      ],
+      "correction": "Un quart de 2π vaut π/2.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 90
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-005",
+      "type": "qcm",
+      "enonce": "Sur le cercle unité, quelle coordonnée donne le cosinus ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "L’abscisse"
+      },
+      "propositions": [
+        "L’abscisse",
+        "L’ordonnée",
+        "La distance au centre",
+        "La pente de la tangente"
+      ],
+      "correction": "Le point associé à x a pour coordonnées (cos x, sin x).",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-006",
+      "type": "qcm",
+      "enonce": "Sur le cercle unité, quelle coordonnée donne le sinus ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "L’ordonnée"
+      },
+      "propositions": [
+        "L’ordonnée",
+        "L’abscisse",
+        "Le rayon",
+        "Le diamètre"
+      ],
+      "correction": "Le point associé à x a pour coordonnées (cos x, sin x).",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-007",
+      "type": "qcm",
+      "enonce": "Combien de degrés valent π radians ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "180°"
+      },
+      "propositions": [
+        "180°",
+        "90°",
+        "360°",
+        "45°"
+      ],
+      "correction": "π radians correspondent à un demi-tour.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 180
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-008",
+      "type": "qcm",
+      "enonce": "Quel angle en radians correspond à 45° ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "π/4"
+      },
+      "propositions": [
+        "π/4",
+        "π/2",
+        "π/3",
+        "π/6"
+      ],
+      "correction": "45° représente un huitième de tour.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-009",
+      "type": "qcm",
+      "enonce": "Pour un point du premier quadrant, quels sont les signes de cosinus et sinus ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Tous deux positifs"
+      },
+      "propositions": [
+        "Tous deux positifs",
+        "Tous deux négatifs",
+        "Cosinus négatif, sinus positif",
+        "Cosinus positif, sinus négatif"
+      ],
+      "correction": "Dans le premier quadrant, abscisse et ordonnée sont positives.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-010",
+      "type": "qcm",
+      "enonce": "Pour un point du deuxième quadrant, quel est le signe du cosinus ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Négatif"
+      },
+      "propositions": [
+        "Négatif",
+        "Positif",
+        "Toujours nul",
+        "Toujours égal à 1"
+      ],
+      "correction": "Dans le deuxième quadrant, l’abscisse est négative.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 135
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-011",
+      "type": "qcm",
+      "enonce": "Quelle égalité est vraie pour tout angle x ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "cos²(x) + sin²(x) = 1"
+      },
+      "propositions": [
+        "cos²(x) + sin²(x) = 1",
+        "cos(x) + sin(x) = 1",
+        "cos²(x) - sin²(x) = 1",
+        "cos(x) × sin(x) = 1"
+      ],
+      "correction": "C’est la relation de Pythagore sur le cercle unité.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    },
+    {
+      "id": "CERCLE-TRIG-012",
+      "type": "qcm",
+      "enonce": "Après un tour complet, le point sur le cercle revient-il à son départ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Oui"
+      },
+      "propositions": [
+        "Oui",
+        "Non, il est opposé",
+        "Non, il est au centre",
+        "Seulement pour un angle droit"
+      ],
+      "correction": "Ajouter 2π radians ne change pas le point sur le cercle.",
+      "illustration": {
+        "id": "cercle_trigonometrique",
+        "angle": 45
+      }
+    }
+  ]
+}

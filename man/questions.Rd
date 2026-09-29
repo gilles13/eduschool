@@ -4,7 +4,7 @@
 \alias{questions}
 \title{Lire les questions d'une notion pilote}
 \usage{
-questions(notion)
+questions(notion, niveau = "")
 }
 \arguments{
 \item{notion}{"addition_fractions" ou "pythagore".}

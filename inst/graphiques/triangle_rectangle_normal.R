@@ -20,7 +20,7 @@ graphique_triangle_rectangle_normal = function(illustration = NULL,
     ggplot2::geom_text(data = points,
       ggplot2::aes(x = x + c(-0.12, 0.13, -0.10),
                    y = y + c(-0.12, -0.08, 0.12), label = sommet),
-      size = 4) +
+      size = 8) +
     ggplot2::coord_fixed(xlim = c(-0.38, 2.94), ylim = c(-0.3, 2.12),
                          expand = FALSE) +
     ggplot2::theme_void() +

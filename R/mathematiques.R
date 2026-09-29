@@ -6,24 +6,37 @@
 }
 
 # Read explicit family memberships; an empty vector means a simple notion.
-.notions_famille = function(famille) {
+.notions_famille = function(famille, niveau = "") {
   fichier = .chemin_edu("referentiels", "familles_notions.csv")
   liens = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
-  unique(liens$notion[liens$famille == famille])
+  liens = liens[liens$famille == famille, , drop = FALSE]
+  if (nzchar(niveau) && nrow(liens)) {
+    ordre = c("CP", "CE1", "CE2", "CM1", "CM2", "6E", "5E", "4E", "3E",
+              "2DE", "1G", "TG")
+    cible = match(niveau, ordre)
+    if (is.na(cible)) stop("Niveau inconnu : ", niveau)
+    introduction = match(liens$niveau, ordre)
+    # An unknown introduction level is never silently included in a
+    # level-specific quiz.
+    liens = liens[!is.na(introduction) & introduction <= cible, , drop = FALSE]
+  }
+  unique(liens$notion)
 }
 
 #' Lire les questions d'une notion pilote
 #' @param notion "addition_fractions" ou "pythagore".
 #' @export
-questions = function(notion) {
+questions = function(notion, niveau = "") {
   stopifnot(length(notion) == 1L, is.character(notion),
             grepl("^[a-z][a-z0-9_]*$", notion))
-  membres = .notions_famille(notion)
+  membres = .notions_famille(notion, niveau = niveau)
   if (length(membres)) {
     banques = lapply(membres, questions)
     return(list(notion_id = notion,
       questions = unlist(lapply(banques, `[[`, "questions"), recursive = FALSE)))
   }
+  if (nzchar(niveau) && length(.notions_famille(notion)))
+    stop("Aucune notion disponible pour ce niveau : ", niveau)
   jsonlite::fromJSON(.chemin_edu("notions", notion, "questions.json"),
                      simplifyVector = FALSE)
 }
@@ -358,7 +371,9 @@ graphique = function(id, ...) {
     if (is.null(dimensions)) dimensions = c(4.6, 2.8)
     ggplot2::ggsave(chemin, plot = figure, width = dimensions[[1L]],
                     height = dimensions[[2L]], units = "in", dpi = 150)
-    lignes[[i]] = paste0("![](", chemin, "){width=65%}")
+    largeur = attr(figure, "eduschool_display_width")
+    if (is.null(largeur)) largeur = "65%"
+    lignes[[i]] = paste0("![](", chemin, "){width=", largeur, "}")
   }
   lignes
 }

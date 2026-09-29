@@ -132,3 +132,18 @@ source depuis le premier litteral. Les questions de connaissances et les
 questions symboliques non migrees restent editoriales : ne pas leur attribuer
 une garantie Ryacas. Les corrections en francais restent editoriales et
 ne doivent pas introduire de valeurs variables.
+
+## Cercle trigonometrique et niveaux (septembre 2026)
+
+- Le CSV conserve `famille;notion;libelle_notion;niveau;etape_scolaire`.
+- Pour un quiz de famille, `niveau` filtre les notions dont le niveau
+  d'introduction est connu et inferieur ou egal au niveau demande.
+- Un niveau absent n'est pas interprete comme accessible a tous.
+- Le triangle rectangle (3E) et le cercle trigonometrique (2DE) sont
+  deux notions distinctes, sans duplication de banque.
+- Les etiquettes des figures de trigonometrie utilisees en quiz sont
+  agrandies sans changer les dimensions documentaires des figures.
+
+## RETEX — Cercle trigonométrique : lisibilité des figures
+
+Une figure présentant un angle orienté doit montrer les deux rayons, un arc fléché et le nom de l’angle. Les fiches peuvent afficher sa mesure ; les quiz ne doivent pas révéler une réponse dans l’illustration. `eduschool_display_width` permet à une figure compacte de demander une largeur inférieure au plafond documentaire commun de 65 %, sans traitement par notion dans le moteur.
