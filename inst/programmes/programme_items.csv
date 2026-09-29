@@ -1046,3 +1046,118 @@ ITM_MAT_C3_CM2_C05;PRG_MAT_C3_2025;ITM_MAT_C3_CM2_02;"CM2";5;CAPACITE;"Comparer 
 ITM_MAT_C3_CM2_C06;PRG_MAT_C3_2025;ITM_MAT_C3_CM2_02;"CM2";6;CAPACITE;"Additionner et soustraire des fractions";"Effectuer des additions et des soustractions de fractions dans des cas adaptés au CM2.";SRC_BO_2025_16_MATH_C3
 ITM_MAT_C3_CM2_C07;PRG_MAT_C3_2025;ITM_MAT_C3_CM2_02;"CM2";7;CAPACITE;"Multiplier une fraction par un entier";"Calculer et interpréter le produit d’un nombre entier et d’une fraction.";SRC_BO_2025_16_MATH_C3
 ITM_MAT_C3_CM2_C08;PRG_MAT_C3_2025;ITM_MAT_C3_CM2_02;"CM2";8;CAPACITE;"Déterminer une fraction d’une quantité";"Appliquer une fraction à une quantité ou à une grandeur dans des cas adaptés au CM2.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C4_01_06_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_06;4E;1;CAPACITE;Multiplier deux nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_06_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_06;4E;2;CAPACITE;Diviser deux nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_06_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_06;4E;3;CAPACITE;Enchaîner des opérations sur les nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_06_04;PRG_MAT_C4_2026;ITM_MAT_C4_01_06;4E;4;CAPACITE;Interpréter le vocabulaire des opérations dans un programme de calcul;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;1;CAPACITE;Simplifier une fraction;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;2;CAPACITE;Définir les nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;3;CAPACITE;Exprimer l’opposé d’un rationnel;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_04;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;4;CAPACITE;Multiplier des nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_05;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;5;CAPACITE;Calculer une fraction d’une quantité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_06;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;6;CAPACITE;Définir et déterminer un inverse;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_07;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;7;CAPACITE;Diviser des fractions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_08;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;8;CAPACITE;Enchaîner des opérations sur les fractions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07_09;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;9;CAPACITE;Résoudre des problèmes mobilisant les opérations sur les fractions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_08_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_08;4E;1;CAPACITE;Définir une puissance d’exposant positif;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_08_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_08;4E;2;CAPACITE;Multiplier des puissances de même base;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_08_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_08;4E;3;CAPACITE;Multiplier des puissances de même exposant;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_08_04;PRG_MAT_C4_2026;ITM_MAT_C4_01_08;4E;4;CAPACITE;Résoudre des problèmes mobilisant les puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_09_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_09;4E;1;CAPACITE;Définir la racine carrée d’un nombre positif;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_09_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_09;4E;2;CAPACITE;Encadrer une racine carrée entre deux entiers consécutifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;1;CAPACITE;Produire des formules et contrôler leur vraisemblance;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;2;CAPACITE;Développer et factoriser avec la distributivité simple;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;3;CAPACITE;Démontrer à l’aide du calcul algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10_04;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;4;CAPACITE;Résoudre une équation du premier degré;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10_05;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;5;CAPACITE;Mettre un problème en équation et le résoudre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10_06;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;6;CAPACITE;Explorer une équation à l’aide d’un algorithme ou d’un tableur;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_11_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_11;3E;1;CAPACITE;Mettre une fraction sous forme irréductible;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_11_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_11;3E;2;CAPACITE;Résoudre des problèmes mobilisant les fractions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_12_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;1;CAPACITE;Définir une puissance d’exposant négatif;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_12_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;2;CAPACITE;Multiplier et diviser des puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_12_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;3;CAPACITE;Écrire un nombre en notation scientifique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_12_04;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;4;CAPACITE;Résoudre des problèmes avec la notation scientifique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_13_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_13;3E;1;CAPACITE;Résoudre une équation du type carré égal à une constante;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_13_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_13;3E;2;CAPACITE;Résoudre des problèmes mobilisant la racine carrée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15_01;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;1;CAPACITE;Simplifier des produits et quotients algébriques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15_02;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;2;CAPACITE;Développer et factoriser par double distributivité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15_03;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;3;CAPACITE;Résoudre une inéquation du premier degré;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15_04;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;4;CAPACITE;Résoudre une équation produit nul;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15_05;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;5;CAPACITE;Développer et factoriser avec les trois identités remarquables;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15_06;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;6;CAPACITE;Pratiquer l’analyse-synthèse pour résoudre une équation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_09_C01;PRG_MAT_C4_2026;ITM_MAT_C4_02_09;4E;1;CAPACITE;Reconnaître pyramides et cônes de révolution;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_09_C02;PRG_MAT_C4_2026;ITM_MAT_C4_02_09;4E;2;CAPACITE;Représenter et relier les vues de solides usuels, pyramides et cônes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_09_C03;PRG_MAT_C4_2026;ITM_MAT_C4_02_09;4E;3;CAPACITE;Calculer les volumes des pyramides et des cônes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_10_C01;PRG_MAT_C4_2026;ITM_MAT_C4_02_10;4E;1;CAPACITE;Décrire les effets d’une translation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_10_C02;PRG_MAT_C4_2026;ITM_MAT_C4_02_10;4E;2;CAPACITE;Relier translation, parallélogrammes et angles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_10_C03;PRG_MAT_C4_2026;ITM_MAT_C4_02_10;4E;3;CAPACITE;Utiliser les propriétés de conservation des translations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11_C01;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;1;CAPACITE;Utiliser les trois théorèmes de la droite des milieux;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11_C02;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;2;CAPACITE;Appliquer le théorème de Pythagore, sa réciproque et sa contraposée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11_C03;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;3;CAPACITE;Raisonner sur une propriété, sa réciproque et sa contraposée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11_C04;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;4;CAPACITE;Caractériser un triangle rectangle par son cercle circonscrit;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11_C05;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;5;CAPACITE;Trouver le centre du cercle circonscrit d’un triangle rectangle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11_C06;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;6;CAPACITE;Construire un rectangle sans équerre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_13_C01;PRG_MAT_C4_2026;ITM_MAT_C4_02_13;3E;1;CAPACITE;Définir boule, sphère, grands cercles et diamètre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_13_C02;PRG_MAT_C4_2026;ITM_MAT_C4_02_13;3E;2;CAPACITE;Construire ou visualiser des sections de pavés, cylindres et boules;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_13_C03;PRG_MAT_C4_2026;ITM_MAT_C4_02_13;3E;3;CAPACITE;Calculer le volume d’une boule;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_14_C01;PRG_MAT_C4_2026;ITM_MAT_C4_02_14;3E;1;CAPACITE;Utiliser le théorème de Thalès, sa réciproque et sa contraposée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_14_C02;PRG_MAT_C4_2026;ITM_MAT_C4_02_14;3E;2;CAPACITE;Utiliser cosinus, sinus et tangente dans un triangle rectangle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_15_C01;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;1;CAPACITE;Définir et utiliser une translation à l’aide d’un parallélogramme;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_15_C02;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;2;CAPACITE;Définir les vecteurs, leur égalité, le vecteur nul et le vecteur opposé;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_15_C03;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;3;CAPACITE;Additionner des vecteurs par composition de translations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_15_C04;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;4;CAPACITE;Utiliser la relation de Chasles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C01;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;1;CAPACITE;Calculer une moyenne pondérée sur une série discrète;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C02;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;2;CAPACITE;Déterminer et interpréter la médiane d’une petite série;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C03;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;3;CAPACITE;Calculer et interpréter l’étendue d’une série;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C04;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;4;CAPACITE;Étudier l’effet d’une valeur extrême sur moyenne et médiane;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C05;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;5;CAPACITE;Résoudre des problèmes mobilisant des indicateurs statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C06;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;6;CAPACITE;Comparer des séries statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03_C07;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;7;CAPACITE;Calculer moyenne, médiane et étendue avec un tableur;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04_C01;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;1;CAPACITE;Décrire des expériences aléatoires à l’aide du vocabulaire ensembliste;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04_C02;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;2;CAPACITE;Définir événement contraire, réunion, intersection et événement impossible;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04_C03;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;3;CAPACITE;Calculer les probabilités d’un événement et de son contraire;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04_C04;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;4;CAPACITE;Étudier des expériences aléatoires à deux épreuves;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04_C05;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;5;CAPACITE;Comparer distributions observées et probabilités théoriques par simulation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04_C06;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;6;CAPACITE;Observer la fluctuation des fréquences;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05_C01;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;1;CAPACITE;Calculer des effectifs cumulés croissants;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05_C02;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;2;CAPACITE;Déterminer médiane et quartiles depuis un tableau ou un diagramme;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05_C03;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;3;CAPACITE;Construire et interpréter des boîtes à moustaches;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05_C04;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;4;CAPACITE;Interpréter des données statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05_C05;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;5;CAPACITE;Exploiter un tableur pour les indicateurs statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_06_C01;PRG_MAT_C4_2026;ITM_MAT_C4_03_06;3E;1;CAPACITE;Appliquer la formule des probabilités d’une réunion et d’une intersection;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_06_C02;PRG_MAT_C4_2026;ITM_MAT_C4_03_06;3E;2;CAPACITE;Simuler des expériences aléatoires indépendantes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_06_C03;PRG_MAT_C4_2026;ITM_MAT_C4_03_06;3E;3;CAPACITE;Observer la stabilisation des fréquences et la relier aux probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C01;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;1;CAPACITE;Manipuler des grandeurs quotients avec ou sans unité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C02;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;2;CAPACITE;Comparer nombres et grandeurs au moyen de rapports ou ratios;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C03;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;3;CAPACITE;Exprimer une proportionnalité par des égalités de rapports;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C04;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;4;CAPACITE;Calculer une quatrième proportionnelle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C05;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;5;CAPACITE;Effectuer des calculs avec des pourcentages;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C06;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;6;CAPACITE;Traduire une évolution en pourcentage par un coefficient multiplicateur;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C07;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;7;CAPACITE;Définir un coefficient multiplicateur;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03_C08;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;8;CAPACITE;Résoudre des partages proportionnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04_C01;PRG_MAT_C4_2026;ITM_MAT_C4_04_04;4E;1;CAPACITE;Exécuter un programme de calcul à plusieurs étapes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04_C02;PRG_MAT_C4_2026;ITM_MAT_C4_04_04;4E;2;CAPACITE;Retrouver une valeur initiale en inversant un programme de calcul;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04_C03;PRG_MAT_C4_2026;ITM_MAT_C4_04_04;4E;3;CAPACITE;Exprimer une dépendance entre grandeurs par une formule littérale;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04_C04;PRG_MAT_C4_2026;ITM_MAT_C4_04_04;4E;4;CAPACITE;Représenter graphiquement une dépendance entre grandeurs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04_C05;PRG_MAT_C4_2026;ITM_MAT_C4_04_04;4E;5;CAPACITE;Comprendre la dépendance d’une grandeur à une autre;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_05_C01;PRG_MAT_C4_2026;ITM_MAT_C4_04_05;3E;1;CAPACITE;Traduire des évolutions en pourcentages;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_05_C02;PRG_MAT_C4_2026;ITM_MAT_C4_04_05;3E;2;CAPACITE;Relier la représentation d’une proportionnalité au théorème de Thalès;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_05_C03;PRG_MAT_C4_2026;ITM_MAT_C4_04_05;3E;3;CAPACITE;Définir et utiliser les fonctions linéaires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C01;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;1;CAPACITE;Utiliser tableaux, graphiques et formules pour représenter une fonction;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C02;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;2;CAPACITE;Définir image et antécédent d’une fonction;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C03;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;3;CAPACITE;Définir et utiliser les fonctions linéaires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C04;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;4;CAPACITE;Résoudre graphiquement des équations et inéquations linéaires;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C05;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;5;CAPACITE;Relier fonctions linéaires et proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C06;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;6;CAPACITE;Définir et utiliser les fonctions affines;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C07;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;7;CAPACITE;Lire graphiquement les coefficients d’une fonction affine;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06_C08;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;8;CAPACITE;Représenter la fonction carré;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02_C01;PRG_MAT_C4_2026;ITM_MAT_C4_05_02;4E;1;CAPACITE;Exprimer des conditions simples;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02_C02;PRG_MAT_C4_2026;ITM_MAT_C4_05_02;4E;2;CAPACITE;Écrire des instructions conditionnelles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02_C03;PRG_MAT_C4_2026;ITM_MAT_C4_05_02;4E;3;CAPACITE;Manipuler une variable informatique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02_C04;PRG_MAT_C4_2026;ITM_MAT_C4_05_02;4E;4;CAPACITE;Écrire un programme simple pour résoudre un problème;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02_C05;PRG_MAT_C4_2026;ITM_MAT_C4_05_02;4E;5;CAPACITE;Modifier le comportement d’un programme existant;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03_C01;PRG_MAT_C4_2026;ITM_MAT_C4_05_03;3E;1;CAPACITE;Approfondir la manipulation des variables informatiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03_C02;PRG_MAT_C4_2026;ITM_MAT_C4_05_03;3E;2;CAPACITE;Combiner des conditions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03_C03;PRG_MAT_C4_2026;ITM_MAT_C4_05_03;3E;3;CAPACITE;Utiliser une boucle conditionnelle;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03_C04;PRG_MAT_C4_2026;ITM_MAT_C4_05_03;3E;4;CAPACITE;Structurer un programme;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03_C05;PRG_MAT_C4_2026;ITM_MAT_C4_05_03;3E;5;CAPACITE;Écrire un programme répondant à un objectif;;SRC_BO_2026_10_MENE2602912A
