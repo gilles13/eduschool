@@ -1,3 +1,4 @@
+export(notions)
 export(questions)
 export(question)
 export(illustrer_question)

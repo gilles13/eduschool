@@ -23,8 +23,37 @@
   unique(liens$notion)
 }
 
+#' Reperer les notions et familles disponibles
+#'
+#' Les identifiants retournes peuvent etre passes a `produire(notion = ...)`.
+#' Le catalogue est construit depuis les ressources du package, sans liste
+#' de notions codee en dur.
+#' @return Un data.frame : type, identifiant, libelle, famille, niveau.
+#' @export
+notions = function() {
+  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  liens = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
+  dossiers = list.dirs(.chemin_edu("notions"), recursive = FALSE, full.names = FALSE)
+  liens = liens[liens$notion %in% dossiers, , drop = FALSE]
+  membres = unique(liens[, c("notion", "libelle_notion", "famille", "niveau")])
+  names(membres) = c("identifiant", "libelle", "famille", "niveau")
+  absents = setdiff(dossiers, membres$identifiant)
+  if (length(absents)) {
+    membres = rbind(membres, data.frame(identifiant = absents,
+      libelle = gsub("_", " ", absents), famille = "", niveau = ""))
+  }
+  membres$type = "notion"
+  familles = unique(liens$famille)
+  groupes = data.frame(type = "famille", identifiant = familles,
+    libelle = gsub("_", " ", familles), famille = "", niveau = "")
+  resultat = rbind(membres[, names(groupes)], groupes)
+  rownames(resultat) = NULL
+  resultat[order(resultat$type, resultat$identifiant), , drop = FALSE]
+}
+
 #' Lire les questions d'une notion pilote
-#' @param notion "addition_fractions" ou "pythagore".
+#' @param notion Identifiant d'une notion ou d'une famille.
+#' @param niveau Niveau scolaire facultatif pour filtrer les notions d'une famille.
 #' @export
 questions = function(notion, niveau = "") {
   stopifnot(length(notion) == 1L, is.character(notion),

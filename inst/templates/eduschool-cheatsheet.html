@@ -22,6 +22,8 @@ code{font-family:Consolas,"Liberation Mono",monospace;font-size:7.5pt;line-heigh
 <header class="entete"><img class="logo-boussole" src="{{BOUSSOLE}}" alt="Boussole eduschool"><div class="titre"><h1>eduschool · Cheatsheet</h1><p>Quelques commandes pour explorer, comprendre et s'exercer</p></div><img class="logo-hexa" src="{{HEXA}}" alt="Logo eduschool"></header>
 <div class="colonnes">
 <div class="colonne">
+<section class="bloc"><h2>Trouver une notion</h2><p>Repérer les identifiants à transmettre à produire().</p><pre><code>notions()
+subset(notions(), type == "famille")</code></pre></section>
 <section class="bloc"><h2>Découvrir les questions</h2><p>Consulter les questions d'une notion ou d'une famille.</p><pre><code>library(eduschool)
 questions("addition_fractions")
 questions("fractions")</code></pre></section>
@@ -29,6 +31,10 @@ questions("fractions")</code></pre></section>
         format = "html")</code></pre></section>
 </div>
 <div class="colonne">
+<section class="bloc"><h2>Explorer les parcours</h2><p>Référentiels historiques : vérifier leur actualité.</p><pre><code>voies()
+series()
+maths_programmes("6E")
+maths_parcours()</code></pre></section>
 <section class="bloc"><h2>Fiche découverte</h2><p>Aborder une notion par plusieurs chemins.</p><pre><code>produire("addition_fractions",
         "decouverte", format = "html")</code></pre></section>
 <section class="bloc"><h2>Fiche de révision</h2><p>Créer une fiche imprimable.</p><pre><code>produire("addition_fractions",
@@ -36,6 +42,10 @@ questions("fractions")</code></pre></section>
         dossier = "sorties")</code></pre></section>
 </div>
 <div class="colonne">
+<section class="bloc"><h2>Outils complémentaires</h2><p>Tables, figures et cheatsheet.</p><pre><code>table_multiplication(9)
+table_multiplication(9, format = "pdf")
+graphique("cercle_trigonometrique", angle = 45)
+produire_cheatsheet()</code></pre></section>
 <section class="bloc"><h2>Produire tous les supports</h2><p>Créer les supports disponibles pour une famille.</p><pre><code>produire("fractions", "tous",
         dossier = "sorties")</code></pre></section>
 <section class="bloc manifeste"><h2>Toujours ouvrir des portes</h2><p>Une notion peut mener vers une autre, sans obliger à franchir la porte. Le savoir reste libre, gratuit et ouvert.</p></section>

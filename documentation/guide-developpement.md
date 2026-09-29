@@ -158,3 +158,8 @@ Une figure présentant un angle orienté doit montrer les deux rayons, un arc fl
 - Lorsqu'un « À essayer » demande de construire ou de lire une figure, sa correction doit montrer le résultat en réutilisant, si possible, le graphique existant avec des paramètres explicites. Le texte doit expliquer le raisonnement et identifier sur la figure tous les points nommés dans la correction. Vérifier la lisibilité des noms lorsque des points coïncident.
 
 - Les images des fiches sont centrees dans les PDF par le modele commun `fiche.Rmd` ; conserver leur largeur editoriale et le rendu HTML existant. `fig.align` de knitr ne centre pas les images Markdown externes.
+
+## UX — reperer les notions et les fonctions utiles
+
+- `notions()` liste les identifiants de notions et de familles utilisables par `produire()`, a partir des dossiers et du referentiel existants. Aucun catalogue parallele en R.
+- La cheatsheet source est `inst/templates/eduschool-cheatsheet.html` ; conserver sa copie publiee dans `pkgdown/assets/` synchronisee.

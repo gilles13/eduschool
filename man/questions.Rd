@@ -7,7 +7,9 @@
 questions(notion, niveau = "")
 }
 \arguments{
-\item{notion}{"addition_fractions" ou "pythagore".}
+\item{notion}{Identifiant d'une notion ou d'une famille.}
+
+\item{niveau}{Niveau scolaire facultatif pour filtrer les notions d'une famille.}
 }
 \description{
 Lire les questions d'une notion pilote
