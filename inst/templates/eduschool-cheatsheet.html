@@ -13,42 +13,55 @@ html,body{margin:0;padding:0;background:#e9edf0;color:#1f2b35;font-family:system
 .bloc h2{font-size:11pt;line-height:1.1;margin:0 0 1.5mm;color:var(--encre)}.bloc p{font-size:8pt;line-height:1.35;margin:0 0 2mm;color:#52606b}
 pre{margin:0;background:#f3f6f8;border-left:2.2mm solid var(--bleu);border-radius:1.3mm;padding:2mm 2.3mm;white-space:pre-wrap;overflow-wrap:anywhere}
 code{font-family:Consolas,"Liberation Mono",monospace;font-size:7.5pt;line-height:1.35;color:#17324a}
+.bulles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4.5mm;margin-top:3mm}.bulles .bloc{padding:2mm 3.4mm}.bulles .bloc p{margin:0}
 .manifeste{border:1px solid #b9e2dc;border-top:2.4mm solid var(--turquoise);background:#f2fbf9}.manifeste h2{color:#1e746a}
 .contribuer{border:1px solid #f2c6b8;border-top:2.4mm solid var(--corail);background:#fff6f2}.contribuer h2{color:#b94f35}
 .transparent-progressif{background:linear-gradient(90deg,rgba(104,118,128,.88) 0%,rgba(104,118,128,.40) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-print-color-adjust:exact;print-color-adjust:exact}.pied{position:absolute;left:9mm;right:9mm;bottom:4mm;display:flex;justify-content:space-between;border-top:1px solid #dce2e6;padding-top:2mm;font-size:7pt;color:#687680}
 @media print{html,body{background:white}.page{margin:0;width:auto;min-height:194mm;box-shadow:none}}
-@media screen and (max-width:1000px){.page{width:auto;min-height:0;margin:0;padding:18px}.entete{height:auto;grid-template-columns:40px 1fr 40px}.logo-boussole,.logo-hexa{max-width:35px;max-height:35px}.titre{text-align:left;padding:10px 0}.colonnes{grid-template-columns:1fr}.pied{position:static;margin-top:18px}}
+@media screen and (max-width:1000px){.page{width:auto;min-height:0;margin:0;padding:18px}.entete{height:auto;grid-template-columns:40px 1fr 40px}.logo-boussole,.logo-hexa{max-width:35px;max-height:35px}.titre{text-align:left;padding:10px 0}.colonnes,.bulles{grid-template-columns:1fr}.pied{position:static;margin-top:18px}}
 </style></head><body><main class="page">
 <header class="entete"><img class="logo-boussole" src="{{BOUSSOLE}}" alt="Boussole eduschool"><div class="titre"><h1>eduschool · Cheatsheet</h1><p>Quelques commandes pour explorer, comprendre et s'exercer</p></div><img class="logo-hexa" src="{{HEXA}}" alt="Logo eduschool"></header>
 <div class="colonnes">
 <div class="colonne">
-<section class="bloc"><h2>Trouver une notion</h2><p>Repérer les identifiants à transmettre à produire().</p><pre><code>notions()
-subset(notions(), type == "famille")</code></pre></section>
-<section class="bloc"><h2>Découvrir les questions</h2><p>Consulter les questions d'une notion ou d'une famille.</p><pre><code>library(eduschool)
-questions("addition_fractions")
-questions("fractions")</code></pre></section>
-<section class="bloc"><h2>Créer un quiz HTML</h2><p>Un questionnaire à choix multiples avec correction.</p><pre><code>produire("addition_fractions", "quiz",
-        format = "html")</code></pre></section>
-</div>
-<div class="colonne">
-<section class="bloc"><h2>Explorer les parcours</h2><p>Référentiels historiques : vérifier leur actualité.</p><pre><code>voies()
+<section class="bloc"><h2>1 · Découvrir eduschool</h2><p>Commencer ici : comprendre le projet et retrouver toutes les portes d’entrée.</p><pre><code>library(eduschool)
+eduschool()
+produire_cheatsheet()</code></pre></section>
+<section class="bloc"><h2>2 · Explorer le système scolaire</h2><p>Consulter les parcours et référentiels historiques : vérifier les textes officiels actuels.</p><pre><code>voies()
 series()
+maths_programmes()
 maths_programmes("6E")
 maths_parcours()</code></pre></section>
-<section class="bloc"><h2>Fiche découverte</h2><p>Aborder une notion par plusieurs chemins.</p><pre><code>produire("addition_fractions",
-        "decouverte", format = "html")</code></pre></section>
-<section class="bloc"><h2>Fiche de synthèse</h2><p>Créer une fiche imprimable.</p><pre><code>produire("addition_fractions",
-        "synthese", format = "pdf",
-        dossier = "sorties")</code></pre></section>
 </div>
 <div class="colonne">
-<section class="bloc"><h2>Outils complémentaires</h2><p>Tables, figures et cheatsheet.</p><pre><code>table_multiplication(9)
-table_multiplication(9, format = "pdf")
-graphique("cercle_trigonometrique", angle = 45)
-produire_cheatsheet()</code></pre></section>
-<section class="bloc"><h2>Produire tous les supports</h2><p>Créer les supports disponibles pour une famille.</p><pre><code>produire("fractions", "tous",
-        dossier = "sorties")</code></pre></section>
+<section class="bloc"><h2>3 · Trouver ses mathématiques</h2><p>Lister les notions et familles, puis examiner leurs questions.</p><pre><code>notions()
+questions("fractions")
+questions("addition_fractions")
+question("addition_fractions")</code></pre></section>
+<section class="bloc"><h2>4 · Produire des maths</h2><p>Choisir une notion, un support et un format. Les supports : decouverte, synthese, quiz ou tous.</p><pre><code>produire(
+  notion = "addition_fractions",
+  support = "quiz",
+  format = "html"
+)</code></pre></section>
+</div>
+<div class="colonne">
+<section class="bloc"><h2>5 · Varier les supports</h2><p>Créer une fiche PDF, ou tous les supports disponibles.</p><pre><code>produire(
+  notion = "addition_fractions",
+  support = "synthese",
+  format = "pdf",
+  dossier = "sorties"
+)
+produire(
+  notion = "fractions",
+  support = "tous",
+  format = "html"
+)</code></pre></section>
+<section class="bloc"><h2>6 · Figures et outils</h2><p>Visualiser, illustrer, s’entraîner.</p><pre><code>graphique("cercle_trigonometrique", angle = 45)
+table_multiplication(9)</code></pre></section>
+</div>
+</div>
+<div class="bulles">
 <section class="bloc manifeste"><h2>Toujours ouvrir des portes</h2><p>Une notion peut mener vers une autre, sans obliger à franchir la porte. Le savoir reste libre, gratuit et ouvert.</p></section>
 <section class="bloc contribuer"><h2>Contribuer</h2><p>Améliorer une explication, proposer un exercice, corriger une source : le savoir se partage.</p></section>
-</div></div><footer class="pied"><span><strong>eduschool</strong> · libre · gratuit · ouvert · tente d’être <span class="transparent-progressif">transparent</span></span><span>gilles13.github.io/eduschool</span></footer>
+</div>
+<footer class="pied"><span><strong>eduschool</strong> · libre · gratuit · ouvert · tente d’être <span class="transparent-progressif">transparent</span></span><span>gilles13.github.io/eduschool</span></footer>
 </main></body></html>

@@ -1,0 +1,14 @@
+programme_id;niveau;domaines;themes;capacites;themes_rattaches;capacites_rattachees;source_id;statut
+PRG_MAT_C4_2026;3E;5;14;0;14;0;SRC_BO_2026_10_MENE2602912A;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_C4_2026;4E;5;15;0;15;0;SRC_BO_2026_10_MENE2602912A;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_C4_2026;5E;5;16;33;16;33;SRC_BO_2026_10_MENE2602912A;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_C3_2025;6E;6;13;36;13;36;SRC_BO_2025_16_MATH_C3;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_C3_2025;CM1;6;1;7;1;7;SRC_BO_2025_16_MATH_C3;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_C3_2025;CM2;6;1;8;1;8;SRC_BO_2025_16_MATH_C3;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_2GT_2026;2GT;0;19;40;0;40;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MATH_SCI_1G_2026;1G;0;7;0;0;0;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_SPEC_1G_2026;1G;0;24;38;0;38;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_TERM_G_2026;TG;0;27;0;0;0;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_COMP_2026;TG;0;26;0;0;0;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_1T_2026;1T;0;15;0;0;0;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee
+PRG_MAT_TT_2026;TT;0;17;0;0;0;SRC_BO_2026_14_MATH_LYCEE;audit structure uniquement - exhaustivite officielle non verifiee

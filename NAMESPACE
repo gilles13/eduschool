@@ -1,3 +1,4 @@
+export(eduschool)
 export(notions)
 export(questions)
 export(question)

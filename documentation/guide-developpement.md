@@ -140,7 +140,7 @@ ne doivent pas introduire de valeurs variables.
 - Pour un quiz de famille, `niveau` filtre les notions dont le niveau
   d'introduction est connu et inferieur ou egal au niveau demande.
 - Un niveau absent n'est pas interprete comme accessible a tous.
-- Le triangle rectangle (3E) et le cercle trigonometrique (2DE) sont
+- Le triangle rectangle (3E) et le cercle trigonometrique (2GT) sont
   deux notions distinctes, sans duplication de banque.
 - Les etiquettes des figures de trigonometrie utilisees en quiz sont
   agrandies sans changer les dimensions documentaires des figures.
@@ -164,3 +164,11 @@ Une figure présentant un angle orienté doit montrer les deux rayons, un arc fl
 
 - `notions()` liste les identifiants de notions et de familles utilisables par `produire()`, a partir des dossiers et du referentiel existants. Aucun catalogue parallele en R.
 - La cheatsheet source est `inst/templates/eduschool-cheatsheet.html` ; conserver sa copie publiee dans `pkgdown/assets/` synchronisee.
+
+## Cheatsheet : parcours de decouverte
+
+La cheatsheet commence par `eduschool()` puis regroupe les fonctions par usage :
+decouvrir, explorer le systeme scolaire, trouver ses mathematiques, produire
+des supports et utiliser les outils graphiques. Les deux bulles de contribution
+et de manifeste figurent en bas, en deux colonnes. Les exemples `produire()`
+montrent explicitement `notion =` et `format =`, chacun sur sa ligne.

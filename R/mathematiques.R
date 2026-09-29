@@ -12,7 +12,7 @@
   liens = liens[liens$famille == famille, , drop = FALSE]
   if (nzchar(niveau) && nrow(liens)) {
     ordre = c("CP", "CE1", "CE2", "CM1", "CM2", "6E", "5E", "4E", "3E",
-              "2DE", "1G", "TG")
+              "2GT", "1G", "TG")
     cible = match(niveau, ordre)
     if (is.na(cible)) stop("Niveau inconnu : ", niveau)
     introduction = match(liens$niveau, ordre)
