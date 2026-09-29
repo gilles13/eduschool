@@ -147,3 +147,14 @@ ne doivent pas introduire de valeurs variables.
 ## RETEX — Cercle trigonométrique : lisibilité des figures
 
 Une figure présentant un angle orienté doit montrer les deux rayons, un arc fléché et le nom de l’angle. Les fiches peuvent afficher sa mesure ; les quiz ne doivent pas révéler une réponse dans l’illustration. `eduschool_display_width` permet à une figure compacte de demander une largeur inférieure au plafond documentaire commun de 65 %, sans traitement par notion dans le moteur.
+
+## Fiches découvertes : activités et réponses (septembre 2026)
+
+- Toute invitation à effectuer un exercice vérifiable utilise la forme **À essayer N — titre :** (en gras), avec numérotation continue dans chaque fiche. Ne pas glisser un « essaie » non identifié dans le texte courant.
+- Chaque **À essayer N** possède une correction **N. titre** dans la dernière section **Pour vérifier tes découvertes**, dans le même ordre. Expliquer le raisonnement, pas seulement donner le résultat.
+- Une exploration libre sans réponse unique peut rester une ouverture éditoriale clairement distincte ; ne pas la présenter comme un exercice dont la correction manquerait.
+- Pour les fiches de familles, les corrections restent dans le Markdown de chaque notion, source éditoriale unique. Pas de nouvelle logique dans le moteur de rendu.
+
+- Lorsqu'un « À essayer » demande de construire ou de lire une figure, sa correction doit montrer le résultat en réutilisant, si possible, le graphique existant avec des paramètres explicites. Le texte doit expliquer le raisonnement et identifier sur la figure tous les points nommés dans la correction. Vérifier la lisibilité des noms lorsque des points coïncident.
+
+- Les images des fiches sont centrees dans les PDF par le modele commun `fiche.Rmd` ; conserver leur largeur editoriale et le rendu HTML existant. `fig.align` de knitr ne centre pas les images Markdown externes.

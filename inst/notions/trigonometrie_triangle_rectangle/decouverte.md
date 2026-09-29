@@ -14,11 +14,7 @@ Observons deux triangles rectangles possédant le **même angle aigu**. Le secon
 
 <!-- graphique: trigonometrie_triangles_semblables -->
 
-> **À observer**<br>
-> Dans le petit triangle, les côtés mesurent 3 et 4. Dans le grand, ils mesurent 6 et 8. Compare les rapports $3/4$ et $6/8$.
-
-> **À retenir**<br>
-> Les rapports sont égaux ! Pour un même angle, les proportions entre les côtés restent identiques, quelle que soit la taille du triangle.
+**À essayer 1 — Comparer deux triangles :** dans le petit triangle, les côtés mesurent 3 et 4. Dans le grand, ils mesurent 6 et 8. Compare les rapports $3/4$ et $6/8$.
 
 Voilà pourquoi la trigonométrie permet de calculer des longueurs sans tout mesurer.
 
@@ -65,8 +61,7 @@ $$\tan(30^\circ)=\frac{\text{hauteur au-dessus des yeux}}{12}$$
 
 La hauteur au-dessus de nos yeux vaut donc $12\times\tan(30^\circ)$, soit environ **6,9 m**. Si nos yeux sont à 1,6 m du sol, l'immeuble mesure environ **8,5 m** dans ce modèle simplifié.
 
-> **À explorer**<br>
-> Si nous reculons alors que l’immeuble garde la même hauteur, l’angle augmente-t-il ou diminue-t-il ?
+**À essayer 2 — Reculer devant l’immeuble :** si nous reculons alors que l’immeuble garde la même hauteur, l’angle de visée augmente-t-il ou diminue-t-il ?
 
 ## Et si nous cherchions l’angle ?
 
@@ -80,7 +75,14 @@ La calculatrice permet de retrouver l’angle avec la touche **arctan** (parfois
 
 $$\alpha=\arctan(0{,}75)\approx36{,}9^\circ$$
 
-> **À explorer**<br>
-> On peut également retrouver un angle avec **arcsin** ou **arccos** lorsqu’on connaît les côtés correspondants. Sur la calculatrice, vérifie que le mode **degrés** est activé.
+**À essayer 3 — Retrouver un angle :** dans un triangle rectangle, un angle aigu a un côté opposé de 3 cm et une hypoténuse de 6 cm. Retrouve cet angle avec la fonction arcsin, en mode degrés.
 
 Pour retrouver les trois formules d'un seul coup d'œil, consulte la **fiche synthèse**. Ici, l'essentiel est de comprendre pourquoi ces rapports existent.
+
+## Pour vérifier tes découvertes
+
+**1. Comparer deux triangles.** $3/4=0{,}75$ et $6/8=0{,}75$ : les rapports sont égaux. Les côtés du second triangle sont deux fois plus longs.
+
+**2. Reculer devant l’immeuble.** L’angle diminue : à hauteur constante, la tangente vaut hauteur divisée par distance horizontale. Quand la distance augmente, ce rapport diminue, donc l’angle aigu diminue.
+
+**3. Retrouver un angle.** $\sin(\alpha)=3/6=0{,}5$, donc $\alpha=\arcsin(0{,}5)=30°$. Vérifie le mode degrés de la calculatrice.

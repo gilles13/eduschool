@@ -11,6 +11,10 @@ Pour les unités décimales, on utilise les préfixes habituels :
 
 **Exemple :** un fichier de 2 Mo contient 2 000 ko, soit 2 000 000 octets.
 
-**À essayer :** combien de ko représentent 3,5 Mo ?
+**À essayer 1 — Mégaoctets et kilooctets :** combien de ko représentent 3,5 Mo ?
 
 **À retenir :** chaque unité vaut 1 000 fois l'unité immédiatement plus petite. Le tableau réserve trois colonnes à chaque unité pour placer les chiffres.
+
+## Pour vérifier tes découvertes
+
+**1. Mégaoctets et kilooctets.** Dans les unités décimales présentées ici, $1\,\mathrm{Mo}=1\,000\,\mathrm{ko}$, donc **3,5 Mo = 3 500 ko**.

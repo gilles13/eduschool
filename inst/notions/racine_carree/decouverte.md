@@ -6,8 +6,12 @@ La **racine carrée** de 49 est 7, notée $\sqrt{49}=7$. Pour un nombre $a\geqsl
 
 Ainsi, $\sqrt{25}=5$ et non $\pm5$. En revanche, l'équation $x^2=25$ possède deux solutions : $x=5$ et $x=-5$.
 
-## Explorer
+**À essayer 1 — Encadrer une racine :** quels nombres entiers consécutifs encadrent $\sqrt{20}$ ? Compare leurs carrés à 20.
 
-Quels nombres entiers encadrent $\sqrt{20}$ ? Comme $4^2=16$ et $5^2=25$, on a $4<\sqrt{20}<5$.
+**À essayer 2 — Une diagonale surprenante :** avec Pythagore, calcule la diagonale d’un carré de côté 1. Peut-on l’écrire comme une fraction exacte ?
 
-**Une porte à ouvrir :** la diagonale d'un carré de côté 1 vaut $\sqrt2$. Pourquoi ne peut-on pas l'écrire sous forme d'une fraction exacte ?
+## Pour vérifier tes découvertes
+
+**1. Encadrer une racine.** $4^2=16<20<25=5^2$, donc $4<\sqrt{20}<5$.
+
+**2. Une diagonale surprenante.** Par Pythagore, $d^2=1^2+1^2=2$, donc $d=\sqrt2$. Ce nombre est irrationnel : aucune fraction de deux entiers ne lui est exactement égale. Une valeur décimale est seulement approchée.

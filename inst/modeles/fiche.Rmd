@@ -12,6 +12,7 @@ params:
 output:
   html_document: default
   pdf_document:
+    keep_tex: true
     latex_engine: xelatex
 ---
 
@@ -52,6 +53,13 @@ for (membre in membres) {
     lignes = sub("^(#+)( +)", "\\1#\\2", lignes)
   }
   lignes = eduschool:::.illustrations_fiche(lignes, notion = membre)
+  if (knitr::is_latex_output()) {
+    # Blocs LaTeX bruts : Pandoc ne doit pas echapper les commandes.
+    images = grepl("^!\\[\\]\\(", trimws(lignes))
+    lignes[images] = paste0("\n```{=latex}\n\\begin{center}\n```\n\n",
+                            lignes[images],
+                            "\n\n```{=latex}\n\\end{center}\n```\n")
+  }
   cat(paste(lignes, collapse = "\n"), "\n\n")
 }
 ```

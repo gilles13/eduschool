@@ -9,4 +9,8 @@ Avec quatre graduations par unité, la troisième graduation après zéro vaut 3
 <!-- graphique: droite_fractions denominateur=4 graduation=3 -->
 
 
-**À explorer :** retrouve le raisonnement avec d’autres nombres.
+**À essayer 1 — À ton tour :** Une unité est divisée en 5 parts égales. Quelle fraction correspond à la 3e graduation après zéro ?
+
+## Pour vérifier tes découvertes
+
+**1. À ton tour.** Chaque pas vaut $1/5$ : la troisième graduation vaut $3/5$.

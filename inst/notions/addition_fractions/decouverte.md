@@ -11,7 +11,7 @@ $$\frac12=\frac36,\qquad\frac13=\frac26,\qquad\frac12+\frac13=\frac56.$$
 <!-- graphique: addition_fractions -->
 
 
-**À explorer :** peut-on trouver un dénominateur commun plus petit que le produit des dénominateurs ?
+**À essayer 1 — Un dénominateur pratique :** pour $\frac14+\frac38$, trouve un dénominateur commun plus petit que $4\times8$.
 
 ## Deux chemins pour une même somme
 
@@ -29,4 +29,10 @@ On pourrait aussi choisir 32 comme dénominateur commun, mais 8 simplifie le cal
 
 **Je calcule :** $\frac28+\frac38=\frac58$.
 
-**À explorer :** pourquoi $\frac12+\frac12=1$ ? Essaie de le représenter en partageant une même unité.
+**À essayer 2 — Reconstituer une unité :** représente $\frac12+\frac12$ en partageant une même unité. Pourquoi la somme vaut-elle 1 ?
+
+## Pour vérifier tes découvertes
+
+**1. Un dénominateur pratique.** Le dénominateur 8 convient : $\frac14=\frac28$, donc $\frac14+\frac38=\frac58$.
+
+**2. Reconstituer une unité.** Deux moitiés de la même unité forment une unité entière : $\frac12+\frac12=\frac22=1$.

@@ -20,4 +20,8 @@ Si $AD=3$ cm, $AB=6$ cm et $AC=8$ cm, alors $3/6=AE/8$, donc $AE=4$ cm.
 
 Dans cette configuration « en papillon », si $(AB)$ et $(DC)$ sont parallèles, les rapports des côtés correspondants des triangles $OAB$ et $ODC$ sont égaux.
 
-**À explorer :** que se passe-t-il si les rapports sont égaux, mais que le parallélisme n’est pas encore connu ?
+**À essayer 1 — Retrouver le parallélisme :** dans un triangle ABC, D appartient à [AB] et E à [AC]. Si $AD/AB=AE/AC$, peut-on conclure que (DE) est parallèle à (BC) ?
+
+## Pour vérifier tes découvertes
+
+**1. Retrouver le parallélisme.** Oui, avec ces positions des points sur les côtés du triangle, l’égalité des rapports permet d’appliquer la réciproque du théorème de Thalès : $(DE)\parallel(BC)$. Les positions et l’ordre des points sont indispensables.

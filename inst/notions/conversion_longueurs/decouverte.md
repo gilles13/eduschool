@@ -8,4 +8,8 @@ Le mètre (m) est une unité de longueur. Chaque colonne voisine du tableau mét
 
 Ici, **2,30 m = 230 cm**. On ne déplace pas la virgule par magie : on change la taille de l'unité.
 
-**À essayer :** 0,45 km = combien de mètres ?
+**À essayer 1 — Kilomètres et mètres :** 0,45 km = combien de mètres ?
+
+## Pour vérifier tes découvertes
+
+**1. Kilomètres et mètres.** Comme $1\,\mathrm{km}=1\,000\,\mathrm{m}$, $0{,}45\times1\,000=450$ : **0,45 km = 450 m**.

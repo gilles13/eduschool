@@ -16,7 +16,7 @@ Pour aller de I à M, on fait tourner le rayon OI autour de O. Le petit arc flé
 
 Ici, $\alpha = 135°$. Le sens inverse des aiguilles d'une montre est le sens positif. Dans l'autre sens, l'angle serait négatif. Un tour entier correspond à 360°.
 
-**À essayer :** pars de I, tourne d'un quart de tour dans le sens positif et place M. Où se trouve-t-il ?
+**À essayer 1 — Un quart de tour :** pars de I, tourne d'un quart de tour dans le sens positif et place M. Où se trouve-t-il ?
 
 ## 3. Pourquoi le rayon vaut-il 1 ?
 
@@ -32,4 +32,18 @@ On peut mesurer la même rotation dans deux unités. Un tour complet vaut **360�
 
 <!-- graphique: cercle_trigonometrique angle=135 -->
 
-À 135°, M est à gauche de l'axe vertical et au-dessus de l'axe horizontal. Son abscisse, donc son cosinus, est négative ; son ordonnée, donc son sinus, est positive. Essaie maintenant de dessiner M après une rotation de 45°.
+À 135°, M est à gauche de l'axe vertical et au-dessus de l'axe horizontal. Son abscisse, donc son cosinus, est négative ; son ordonnée, donc son sinus, est positive. **À essayer 2 — Une rotation de 45° :** dessine M après une rotation positive de 45° à partir de I. Dans quelle partie du cercle se trouve-t-il ? Quels sont les signes de ses coordonnées ?
+
+## Pour vérifier tes découvertes
+
+**1. Un quart de tour.** Un tour entier vaut 360°, donc un quart de tour vaut $360°/4=90°$. En partant de I et en tournant dans le sens positif (inverse des aiguilles d'une montre), M arrive au sommet du cercle, sur l'axe vertical. Ce point est J : $M=J=(0;1)$.
+
+<!-- graphique: cercle_trigonometrique angle=90 -->
+
+**2. Une rotation de 45°.** M se trouve en haut à droite du cercle : ses deux coordonnées sont positives. Comme l'angle est de 45°, elles sont aussi égales. L'activité demandait seulement de placer M et de déterminer les signes ; voici comment aller plus loin et retrouver leurs valeurs exactes.
+
+<!-- graphique: cercle_trigonometrique angle=45 triangle=1 -->
+
+Sur le dessin, **H** est le pied de la verticale issue de M. Le triangle **OHM** est rectangle en H. Ses deux angles aigus valent 45° : il est donc isocèle, et **OH = HM = a**. Comme OM est un rayon du cercle, **OM = 1**.
+
+Avec le théorème de Pythagore : $a^2+a^2=1^2$, donc $2a^2=1$, puis $a^2=1/2$. Les deux coordonnées étant positives, $a=\sqrt{1/2}=\sqrt2/2$. On comprend ainsi pourquoi $M=(\sqrt2/2;\sqrt2/2)$, sans apprendre cette valeur par cœur.
