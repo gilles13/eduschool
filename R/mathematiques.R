@@ -423,7 +423,7 @@ graphique = function(id, ...) {
 #' Pour une famille, les fiches rassemblent les Markdown des membres
 #' dans l'ordre du referentiel ; le quiz utilise leurs banques JSON.
 #' @export
-produire = function(notion, support, dossier = NULL, format = "html",
+produire = function(notion, support = "tous", dossier = NULL, format = "html",
                     variantes = 5L, ouvrir = TRUE, niveau = "", n = NULL, tirages = NULL,
                     humour_ratio = 0.2, seed = NULL) {
   stopifnot(length(notion) == 1L, is.character(notion),

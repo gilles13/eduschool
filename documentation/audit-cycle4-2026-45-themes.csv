@@ -1,0 +1,46 @@
+niveau;domaine;theme_item_id;theme;automatismes;objectifs;prolongements;nb_rubriques_officielles;nb_capacites_eduschool;controle;note
+5E;Nombres et calculs;ITM_MAT_C4_01_01;Opérations;OUI;OUI;OUI;3;3;STRUCTURE_CONFORME_PDF;
+5E;Nombres et calculs;ITM_MAT_C4_01_02;Nombres relatifs;OUI;OUI;OUI;3;3;STRUCTURE_CONFORME_PDF;
+5E;Nombres et calculs;ITM_MAT_C4_01_03;Nombres rationnels;OUI;OUI;NON;2;2;STRUCTURE_CONFORME_PDF;
+5E;Nombres et calculs;ITM_MAT_C4_01_04;Puissances;OUI;OUI;NON;2;2;STRUCTURE_CONFORME_PDF;
+5E;Nombres et calculs;ITM_MAT_C4_01_05;Calcul littéral et algébrique;OUI;OUI;OUI;3;3;STRUCTURE_CONFORME_PDF;
+5E;Espace et géométrie;ITM_MAT_C4_02_01;Repérage sur une droite et dans le plan;OUI;OUI;NON;2;2;STRUCTURE_CONFORME_PDF;
+5E;Espace et géométrie;ITM_MAT_C4_02_02;Représentation de l’espace;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+5E;Espace et géométrie;ITM_MAT_C4_02_03;Transformations;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+5E;Espace et géométrie;ITM_MAT_C4_02_04;Angles;OUI;OUI;OUI;3;1;STRUCTURE_CONFORME_PDF;
+5E;Espace et géométrie;ITM_MAT_C4_02_05;Triangles;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+5E;Espace et géométrie;ITM_MAT_C4_02_06;Parallélogrammes;OUI;OUI;NON;2;1;STRUCTURE_CONFORME_PDF;
+5E;Organisation et gestion des données et probabilités;ITM_MAT_C4_03_01;Statistiques;NON;OUI;OUI;2;2;STRUCTURE_CONFORME_PDF;
+5E;Organisation et gestion des données et probabilités;ITM_MAT_C4_03_02;Probabilités;OUI;OUI;NON;2;2;STRUCTURE_CONFORME_PDF;
+5E;Proportionnalité et fonctions;ITM_MAT_C4_04_01;Proportionnalité;OUI;OUI;NON;2;2;STRUCTURE_CONFORME_PDF;
+5E;Proportionnalité et fonctions;ITM_MAT_C4_04_02;Fonctions;NON;OUI;NON;1;2;STRUCTURE_CONFORME_PDF;
+5E;Pensée informatique;ITM_MAT_C4_05_01;Algorithmique et programmation;NON;OUI;NON;1;2;STRUCTURE_CONFORME_PDF;
+4E;Nombres et calculs;ITM_MAT_C4_01_06;Opérations sur les nombres relatifs;OUI;OUI;NON;2;4;STRUCTURE_CONFORME_PDF;
+4E;Nombres et calculs;ITM_MAT_C4_01_07;Nombres rationnels;OUI;OUI;NON;2;9;STRUCTURE_CONFORME_PDF;
+4E;Nombres et calculs;ITM_MAT_C4_01_08;Puissances;OUI;OUI;NON;2;4;STRUCTURE_CONFORME_PDF;
+4E;Nombres et calculs;ITM_MAT_C4_01_09;Racine carrée;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+4E;Nombres et calculs;ITM_MAT_C4_01_10;Calcul littéral et algébrique;OUI;OUI;NON;2;6;STRUCTURE_CONFORME_PDF;
+4E;Espace et géométrie;ITM_MAT_C4_02_07;Transformations;OUI;NON;NON;1;0;STRUCTURE_CONFORME_PDF;Absence de rubrique OBJECTIFS conforme au PDF officiel.
+4E;Espace et géométrie;ITM_MAT_C4_02_08;Repérage sur une droite et dans le plan;OUI;NON;NON;1;0;STRUCTURE_CONFORME_PDF;Absence de rubrique OBJECTIFS conforme au PDF officiel.
+4E;Espace et géométrie;ITM_MAT_C4_02_09;Représentation de l’espace;OUI;OUI;OUI;3;3;STRUCTURE_CONFORME_PDF;
+4E;Espace et géométrie;ITM_MAT_C4_02_10;Parallélogrammes et translations;OUI;OUI;OUI;3;3;STRUCTURE_CONFORME_PDF;
+4E;Espace et géométrie;ITM_MAT_C4_02_11;Triangles;OUI;OUI;OUI;3;6;STRUCTURE_CONFORME_PDF;
+4E;Organisation et gestion des données et probabilités;ITM_MAT_C4_03_03;Statistiques;OUI;OUI;OUI;3;7;STRUCTURE_CONFORME_PDF;
+4E;Organisation et gestion des données et probabilités;ITM_MAT_C4_03_04;Probabilités;NON;OUI;NON;1;6;STRUCTURE_CONFORME_PDF;
+4E;Proportionnalité et fonctions;ITM_MAT_C4_04_03;Proportionnalité;OUI;OUI;NON;2;8;STRUCTURE_CONFORME_PDF;
+4E;Proportionnalité et fonctions;ITM_MAT_C4_04_04;Fonctions;NON;OUI;NON;1;5;STRUCTURE_CONFORME_PDF;
+4E;Pensée informatique;ITM_MAT_C4_05_02;Algorithmique et programmation;NON;OUI;NON;1;5;STRUCTURE_CONFORME_PDF;
+3E;Nombres et calculs;ITM_MAT_C4_01_11;Nombres rationnels;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+3E;Nombres et calculs;ITM_MAT_C4_01_12;Puissances;OUI;OUI;OUI;3;4;STRUCTURE_CONFORME_PDF;
+3E;Nombres et calculs;ITM_MAT_C4_01_13;Racine carrée;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+3E;Nombres et calculs;ITM_MAT_C4_01_14;Multiples et diviseurs;OUI;NON;NON;1;0;STRUCTURE_CONFORME_PDF;Absence de rubrique OBJECTIFS conforme au PDF officiel.
+3E;Nombres et calculs;ITM_MAT_C4_01_15;Calcul littéral et algébrique;OUI;OUI;OUI;3;6;STRUCTURE_CONFORME_PDF;
+3E;Espace et géométrie;ITM_MAT_C4_02_12;Repérage sur une droite et dans le plan;OUI;NON;NON;1;0;STRUCTURE_CONFORME_PDF;Absence de rubrique OBJECTIFS conforme au PDF officiel.
+3E;Espace et géométrie;ITM_MAT_C4_02_13;Représentation de l’espace;OUI;OUI;OUI;3;3;STRUCTURE_CONFORME_PDF;
+3E;Espace et géométrie;ITM_MAT_C4_02_14;Triangles;OUI;OUI;OUI;3;2;STRUCTURE_CONFORME_PDF;
+3E;Espace et géométrie;ITM_MAT_C4_02_15;Translations et vecteurs;OUI;OUI;OUI;3;4;STRUCTURE_CONFORME_PDF;
+3E;Organisation et gestion des données et probabilités;ITM_MAT_C4_03_05;Statistiques;OUI;OUI;NON;2;5;STRUCTURE_CONFORME_PDF;
+3E;Organisation et gestion des données et probabilités;ITM_MAT_C4_03_06;Probabilités;NON;OUI;OUI;2;3;STRUCTURE_CONFORME_PDF;
+3E;Proportionnalité et fonctions;ITM_MAT_C4_04_05;Proportionnalité;OUI;OUI;NON;2;3;STRUCTURE_CONFORME_PDF;
+3E;Proportionnalité et fonctions;ITM_MAT_C4_04_06;Fonctions;NON;OUI;OUI;2;8;STRUCTURE_CONFORME_PDF;
+3E;Pensée informatique;ITM_MAT_C4_05_03;Algorithmique et programmation;NON;OUI;NON;1;5;STRUCTURE_CONFORME_PDF;

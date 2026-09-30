@@ -6,7 +6,7 @@
 \usage{
 produire(
   notion,
-  support,
+  support = "tous",
   dossier = NULL,
   format = "html",
   variantes = 5L,

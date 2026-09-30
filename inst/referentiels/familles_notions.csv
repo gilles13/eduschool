@@ -38,3 +38,6 @@ nombres_entiers_et_decimaux;comparaison_decimaux;Comparer et ranger des décimau
 nombres_entiers_et_decimaux;encadrement_decimaux;Encadrer des nombres décimaux;6E;college
 nombres_entiers_et_decimaux;arrondis_decimaux;Arrondir des nombres décimaux;6E;college
 nombres_entiers_et_decimaux;droite_graduee_decimaux;Repérer des décimaux sur une droite graduée;6E;college
+nombres_relatifs;reperage_nombres_relatifs;Comprendre et repérer les nombres relatifs;5E;college
+nombres_relatifs;addition_soustraction_relatifs;Additionner et soustraire des nombres relatifs;5E;college
+nombres_relatifs;multiplication_division_relatifs;Multiplier et diviser des nombres relatifs;4E;college

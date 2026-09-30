@@ -1,0 +1,29 @@
+{
+  "notion_id": "reperage_nombres_relatifs",
+  "questions": [
+    {
+      "id": "RELATIFS-REPERE-001",
+      "type": "qcm",
+      "enonce": "Quel nombre est l’opposé de −6 ?",
+      "reponse": {"mode": "editoriale", "valeur": "6"},
+      "propositions": ["6", "−6", "0", "1/6"],
+      "correction": "L’opposé de −6 est 6 : ces deux nombres ont la même distance à 0 et leur somme vaut 0."
+    },
+    {
+      "id": "RELATIFS-REPERE-002",
+      "type": "qcm",
+      "enonce": "Quelle est la valeur absolue de −8 ?",
+      "reponse": {"mode": "editoriale", "valeur": "8"},
+      "propositions": ["8", "−8", "0", "−1/8"],
+      "correction": "La valeur absolue est une distance à 0. La distance entre −8 et 0 vaut 8."
+    },
+    {
+      "id": "RELATIFS-REPERE-003",
+      "type": "qcm",
+      "enonce": "Quel rangement est correct ?",
+      "reponse": {"mode": "editoriale", "valeur": "−5 < −2 < 0 < 3"},
+      "propositions": ["−5 < −2 < 0 < 3", "−2 < −5 < 0 < 3", "3 < 0 < −2 < −5", "−5 < 0 < −2 < 3"],
+      "correction": "Les nombres augmentent de gauche à droite sur une droite graduée : −5 est à gauche de −2, puis viennent 0 et 3."
+    }
+  ]
+}
