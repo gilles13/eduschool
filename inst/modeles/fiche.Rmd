@@ -1,5 +1,5 @@
 ---
-title: "Fiche de mathématiques"
+pagetitle: "eduschool"
 params:
   notion: "addition_fractions"
   support: "decouverte"
@@ -17,6 +17,12 @@ output:
 ---
 
 ```{r entete, echo=FALSE, results='asis'}
+if (knitr::is_html_output()) {
+  cat('<style>\n',
+      '.main-container .edu-definition { max-width:42em; margin:1.4em auto; padding:.8em 1.1em; text-align:center; background:#f4f8f5; border:1px solid #34483b; border-radius:.45em; }\n',
+      '.main-container .edu-definition p { margin:.25em 0; }\n',
+      '</style>\n', sep = '')
+}
 if (knitr::is_html_output() && identical(params$support, "decouverte")) {
   cat('<style>\n',
       '.main-container img { display:block; height:auto; max-width:100%; margin:2em auto 1.4em; }\n',
@@ -52,6 +58,19 @@ for (membre in membres) {
   }
   lignes = eduschool:::.illustrations_fiche(lignes, notion = membre)
   if (knitr::is_latex_output()) {
+    ouverture_definition = trimws(lignes) == "::: {.edu-definition}"
+    fermeture_definition = trimws(lignes) == ":::"
+    dans_definition = FALSE
+    for (i in seq_along(lignes)) {
+      if (ouverture_definition[[i]]) {
+        lignes[[i]] = "```{=latex}\n\\begin{center}\n\\fcolorbox[rgb]{0.20,0.28,0.23}{0.96,0.98,0.96}{\\begin{minipage}{0.88\\linewidth}\n\\centering\n```"
+        dans_definition = TRUE
+      } else if (fermeture_definition[[i]] && dans_definition) {
+        lignes[[i]] = "```{=latex}\n\\end{minipage}}\n\\end{center}\n```"
+        dans_definition = FALSE
+      }
+    }
+    if (dans_definition) stop("Bloc de definition non ferme dans : ", membre)
     # Blocs LaTeX bruts : Pandoc ne doit pas echapper les commandes.
     images = grepl("^!\\[\\]\\(", trimws(lignes))
     lignes[images] = paste0("\n```{=latex}\n\\begin{center}\n```\n\n",

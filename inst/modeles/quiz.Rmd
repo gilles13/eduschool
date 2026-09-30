@@ -211,6 +211,14 @@ if (!html) {
     exposants = c("⁰" = "0", "¹" = "1", "²" = "2", "³" = "3", "⁴" = "4",
                   "⁵" = "5", "⁶" = "6", "⁷" = "7", "⁸" = "8", "⁹" = "9",
                   "⁺" = "+", "⁻" = "-")
+    symboles = c(
+      "∅" = "$\\varnothing$", "∈" = "$\\in$", "∉" = "$\\notin$",
+      "⊆" = "$\\subseteq$", "⊂" = "$\\subset$",
+      "∩" = "$\\cap$", "∪" = "$\\cup$",
+      "ℕ" = "$\\mathbb{N}$", "ℤ" = "$\\mathbb{Z}$",
+      "ℚ" = "$\\mathbb{Q}$", "ℝ" = "$\\mathbb{R}$",
+      "π" = "$\\pi$"
+    )
     caracteres = strsplit(as.character(x), "", fixed = TRUE)[[1L]]
     resultat = character()
     i = 1L
@@ -220,6 +228,9 @@ if (!html) {
         i = i + 2L
       } else if (caracteres[i] == "□") {
         resultat = c(resultat, "$\\square$")
+        i = i + 1L
+      } else if (caracteres[i] %in% names(symboles)) {
+        resultat = c(resultat, unname(symboles[caracteres[i]]))
         i = i + 1L
       } else if (caracteres[i] %in% names(exposants)) {
         j = i

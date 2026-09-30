@@ -1,7 +1,7 @@
 Package: eduschool
 Type: Package
 Title: Ressources et Exercices de Mathématiques
-Version: 0.38.0.9000
+Version: 0.38.0
 Authors@R: person("Gilles", "FIDANI", role = c("aut", "cre"), email = "gillesfidani@gmail.com")
 Description: Prototype expérimental de ressources mathématiques, de fiches et de questions.
 License: MIT + file LICENSE

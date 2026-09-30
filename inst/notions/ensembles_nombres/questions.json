@@ -1,5 +1,5 @@
 {
-  "notion_id": "ensembles",
+  "notion_id": "ensembles_nombres",
   "questions": [
     {
       "id": "ENS-001",
@@ -32,38 +32,6 @@
         "3 ∈ A"
       ],
       "correction": "Tous les éléments de A appartiennent à E : A est inclus dans E."
-    },
-    {
-      "id": "ENS-003",
-      "type": "qcm",
-      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∩ B.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "{3}"
-      },
-      "propositions": [
-        "{3}",
-        "{1, 2, 3, 4}",
-        "{1, 2}",
-        "∅"
-      ],
-      "correction": "L’intersection rassemble les éléments communs aux deux ensembles."
-    },
-    {
-      "id": "ENS-004",
-      "type": "qcm",
-      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∪ B.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "{1, 2, 3, 4}"
-      },
-      "propositions": [
-        "{1, 2, 3, 4}",
-        "{3}",
-        "{1, 2, 4}",
-        "∅"
-      ],
-      "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles, sans répéter 3."
     },
     {
       "id": "ENS-005",
@@ -120,6 +88,76 @@
         "1/2 ∈ ℤ"
       ],
       "correction": "Tout entier naturel est un entier relatif ; l’inverse n’est pas vrai."
+    },
+    {
+      "id": "ENS-008",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on la relation entre un élément x et un ensemble E lorsque x ∈ E ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "appartenance": "a _ _ _ _ _ _ _ _ _ _ e",
+          "inclusion": "i _ _ _ _ _ _ _ n",
+          "intersection": "i _ _ _ _ _ _ _ _ _ _ n",
+          "réunion": "r _ _ _ _ _ n"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "appartenance"
+      },
+      "propositions": [
+        "appartenance",
+        "inclusion",
+        "intersection",
+        "réunion"
+      ],
+      "correction": "Le symbole ∈ exprime l’appartenance d’un élément à un ensemble. L’inclusion, notée ⊆, relie deux ensembles."
+    },
+    {
+      "id": "ENS-009",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on un nombre qui peut s’écrire comme quotient de deux entiers, avec un dénominateur non nul ? Choisis le mot masqué correspondant.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "rationnel": "RA________EL",
+          "naturel": "NA________EL",
+          "décimal": "DÉ________AL",
+          "réel": "RÉ________EL"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "rationnel"
+      },
+      "propositions": [
+        "rationnel",
+        "naturel",
+        "décimal",
+        "réel"
+      ],
+      "correction": "Un nombre rationnel peut s’écrire comme quotient de deux entiers, avec un dénominateur non nul."
+    },
+    {
+      "id": "ENS-010",
+      "type": "qcm",
+      "enonce": "Quel nombre doit remplacer □ pour que □ ∈ ℤ mais □ ∉ ℕ ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−3"
+      },
+      "propositions": [
+        "−3",
+        "3",
+        "1/2",
+        "π"
+      ],
+      "correction": "−3 est un entier relatif, donc −3 ∈ ℤ, mais ce n’est pas un entier naturel : −3 ∉ ℕ."
     }
   ]
 }

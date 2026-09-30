@@ -1,4 +1,4 @@
-# Figure historique v1, adaptée au répertoire autonome de graphiques.
+# Figure historique v1, adaptee au repertoire autonome de graphiques.
 graphique_ensembles_nombres = function() {
   ensembles = utils::read.csv(
     system.file("graphiques", "ensembles_nombres.csv", package = "eduschool"),
@@ -16,6 +16,9 @@ graphique_ensembles_nombres = function() {
   cadres$y = cadres$ymax - 0.18
   cadres$etiquette = paste(cadres$symbole, "\u2014", cadres$nom)
   cadres$exemples = gsub(" *\\| *", "   ", cadres$exemples)
+  largeur = cadres$xmax - cadres$xmin
+  cadres$taille_etiquette = 2.8 + 0.11 * largeur
+  cadres$taille_exemples = 2.5 + 0.09 * largeur
   chaine = paste(ensembles$symbole, collapse = " \u2282 ")
   centre = taille / 2
 
@@ -32,18 +35,18 @@ graphique_ensembles_nombres = function() {
     ggplot2::scale_fill_identity() +
     ggplot2::geom_text(
       data = cadres,
-      ggplot2::aes(x = x, y = y, label = etiquette),
+      ggplot2::aes(x = x, y = y, label = etiquette, size = taille_etiquette),
       hjust = 0.5,
       vjust = 1,
-      fontface = "bold",
-      size = 4.2
+      fontface = "bold"
     ) +
+    ggplot2::scale_size_identity() +
     ggplot2::geom_text(
       data = cadres,
-      ggplot2::aes(x = x, y = y - 0.43, label = exemples),
+      ggplot2::aes(x = x, y = y - 0.43, label = exemples,
+                   size = taille_exemples),
       hjust = 0.5,
-      vjust = 1,
-      size = 3.9
+      vjust = 1
     ) +
     ggplot2::annotate(
       "text",
@@ -80,6 +83,7 @@ graphique_ensembles_nombres = function() {
       ),
       plot.margin = ggplot2::margin(t = 15, r = 15, b = 30, l = 15)
     )
-  attr(figure, "eduschool_dimensions") = c(4.8, 4.8)
+  attr(figure, "eduschool_dimensions") = c(10.94, 10.94)
+  attr(figure, "eduschool_display_width") = "100%"
   figure
 }

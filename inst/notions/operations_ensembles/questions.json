@@ -1,0 +1,171 @@
+{
+  "notion_id": "operations_ensembles",
+  "questions": [
+    {
+      "id": "ENS-003",
+      "type": "qcm",
+      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∩ B.",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "{3}"
+      },
+      "propositions": [
+        "{3}",
+        "{1, 2, 3, 4}",
+        "{1, 2}",
+        "∅"
+      ],
+      "correction": "L’intersection rassemble les éléments communs aux deux ensembles. Le seul élément commun est 3 ; le résultat est un ensemble, donc A ∩ B = {3}, et non 3."
+    },
+    {
+      "id": "ENS-004",
+      "type": "qcm",
+      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∪ B.",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "{1, 2, 3, 4}"
+      },
+      "propositions": [
+        "{1, 2, 3, 4}",
+        "{3}",
+        "{1, 2, 4}",
+        "∅"
+      ],
+      "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles. On obtient {1, 2, 3, 4} : 3 n’est pas répété."
+    },
+    {
+      "id": "ENS-011",
+      "type": "qcm",
+      "enonce": "Dans E = {1, 2, 3, 4, 5, 6}, avec A = {1, 2, 3}, quel est E \\ A ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "{4, 5, 6}"
+      },
+      "propositions": [
+        "{4, 5, 6}",
+        "{1, 2, 3}",
+        "{1, 2, 3, 4, 5, 6}",
+        "∅"
+      ],
+      "correction": "E \\ A contient les éléments de l’ensemble de référence E qui ne sont pas dans A : {4, 5, 6}."
+    },
+    {
+      "id": "ENS-012",
+      "type": "qcm",
+      "enonce": "Avec A = {1, 2, 3}, quel ensemble doit remplacer □ dans A \\ A = □ ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "∅"
+      },
+      "propositions": [
+        "∅",
+        "{∅}",
+        "A",
+        "{A}"
+      ],
+      "correction": "On retire de A tous les éléments de A : il ne reste aucun élément. Donc A \\ A = ∅. Attention : {∅} contiendrait un élément, l’ensemble vide."
+    },
+    {
+      "id": "ENS-013",
+      "type": "qcm",
+      "enonce": "Avec A = {1, 2, 3}, quelle égalité est correcte ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "A ∪ ∅ = A"
+      },
+      "propositions": [
+        "A ∪ ∅ = A",
+        "A ∪ ∅ = {∅, 1, 2, 3}",
+        "A ∩ ∅ = A",
+        "A \\ A = {∅}"
+      ],
+      "correction": "L’ensemble vide n’ajoute aucun élément : A ∪ ∅ = A. Et A ∩ ∅ = A \\ A = ∅. Il ne faut pas confondre ∅ avec {∅}."
+    },
+    {
+      "id": "ENS-014",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on l’opération qui rassemble les éléments communs à deux ensembles ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "intersection": "i _ t _ r s _ c t i _ n",
+          "réunion": "r _ u _ i o n",
+          "inclusion": "i _ c l u s i _ n",
+          "complémentaire": "c _ m p l _ m e n t a i r e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "intersection"
+      },
+      "propositions": [
+        "intersection",
+        "réunion",
+        "inclusion",
+        "complémentaire"
+      ],
+      "correction": "L’intersection rassemble les éléments communs aux deux ensembles : elle correspond au ET."
+    },
+    {
+      "id": "ENS-015",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on l’opération qui rassemble les éléments appartenant à au moins un des deux ensembles ? Choisis le mot masqué correspondant.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "réunion": "R________N",
+          "intersection": "I________N",
+          "inclusion": "IN________N",
+          "complémentaire": "C________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "réunion"
+      },
+      "propositions": [
+        "réunion",
+        "intersection",
+        "inclusion",
+        "complémentaire"
+      ],
+      "correction": "La réunion rassemble les éléments qui appartiennent à A OU à B, éventuellement aux deux."
+    },
+    {
+      "id": "ENS-016",
+      "type": "qcm",
+      "enonce": "Dans E = {1, 2, 3, 4, 5, 6}, avec A = {1, 2, 3}, pourquoi faut-il préciser E pour parler du complémentaire de A ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence."
+      },
+      "propositions": [
+        "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+        "Parce que A doit toujours contenir E.",
+        "Parce que le complémentaire de A est toujours l’ensemble vide.",
+        "Parce que E et A doivent avoir le même nombre d’éléments."
+      ],
+      "correction": "Le complémentaire dépend de l’univers de référence : changer E peut ajouter ou retirer des éléments au complémentaire de A."
+    },
+    {
+      "id": "ENS-017",
+      "type": "qcm",
+      "enonce": "Avec un ensemble de référence E fixé, quelle égalité traduit une loi de De Morgan ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "E \\ (A ∩ B) = (E \\ A) ∪ (E \\ B)"
+      },
+      "propositions": [
+        "E \\ (A ∩ B) = (E \\ A) ∪ (E \\ B)",
+        "E \\ (A ∩ B) = (E \\ A) ∩ (E \\ B)",
+        "E \\ (A ∪ B) = (E \\ A) ∪ (E \\ B)",
+        "E \\ (A ∩ B) = A ∩ B"
+      ],
+      "correction": "NON (A ET B) devient (NON A) OU (NON B) : le complémentaire d’une intersection est la réunion des complémentaires."
+    }
+  ]
+}

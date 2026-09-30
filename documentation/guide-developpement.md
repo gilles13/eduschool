@@ -16,6 +16,18 @@ eduschool est un projet R libre, gratuit et ouvert, destiné à aider les élèv
 
 **Priorité : produire et utiliser des contenus mathématiques**, pas perfectionner un système d'information.
 
+### Principe pédagogique : commencer par « de quoi parle-t-on ? »
+
+Avant d'apprendre à utiliser une notion, une fiche doit permettre de comprendre **ce qu'elle désigne**. Toute fiche notion commence donc, autant que possible, par une définition simple, concrète et suffisamment juste de l'objet étudié. Elle explicite le vocabulaire et les distinctions élémentaires nécessaires avant d'introduire ses propriétés, ses opérations ou ses techniques de calcul.
+
+La première définition n'a pas besoin d'épuiser immédiatement toute la subtilité mathématique de la notion. Elle doit fournir un socle solide, qui pourra être précisé ensuite. **Ne jamais considérer comme inutile une définition sous prétexte qu'elle paraît évidente à celui qui connaît déjà la notion.**
+
+Dans une fiche **Découverte**, construire ce sens avec des exemples et, lorsque cela aide, des contre-exemples. Dans une fiche **Synthèse**, conserver une définition courte permettant de retrouver immédiatement de quoi on parle.
+
+Question de contrôle avant de considérer une fiche terminée : **« Avant de lui apprendre quoi en faire, avons-nous expliqué à l'élève de quoi nous parlons ? »**
+
+La définition fondamentale dispose d’un repère visuel commun aux fiches : une petite boîte sobre, à fond pastel très clair et bordure fine foncée, intitulée **« De quoi parle-t-on ? »**. Le Markdown la déclare avec un bloc `::: {.edu-definition}` ; le modèle assure le rendu HTML/PDF. Ne pas généraliser ce mécanisme à d’autres catégories tant qu’un besoin concret et répété ne l’exige pas.
+
 ## 2. Architecture volontairement minimale
 
 - **CSV** : catalogue léger des notions et rattachements souples aux niveaux et thèmes. Une notion n'est pas prisonnière d'un programme scolaire.
