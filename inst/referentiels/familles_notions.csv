@@ -1,43 +1,50 @@
-famille;notion;libelle_notion;niveau;etape_scolaire
-fractions;addition_fractions;Addition de fractions;;
-fractions;soustraction_fractions;Soustraction de fractions;;
-fractions;multiplication_fractions;Multiplication de fractions;;
-fractions;division_fractions;Division de fractions;;
-fractions;comparaison_fractions;Comparer des fractions;;
-fractions;fractions_equivalentes;Fractions équivalentes;;
-fractions;fractions_droite;Fractions sur une droite graduée;;
-fractions;encadrement_fractions;Encadrer une fraction;;
-fractions;fraction_fois_entier;Multiplier une fraction par un entier;;
-fractions;fraction_quantite;Fraction d’une quantité;;
-fractions;fraction_quotient;Fraction et quotient;;
-fractions;terme_manquant_fractions;Terme manquant dans une fraction;;
-grandeurs_mesures_conversions;grandeurs_mesures;Grandeurs mesures;;
-grandeurs_mesures_conversions;conversion_longueurs;Conversion longueurs;;
-grandeurs_mesures_conversions;conversion_masses;Conversion masses;;
-grandeurs_mesures_conversions;conversion_contenances;Conversion contenances;;
-grandeurs_mesures_conversions;conversion_aires;Conversion aires;;
-grandeurs_mesures_conversions;conversion_volumes;Conversion volumes;;
-grandeurs_mesures_conversions;conversion_durees;Conversion durees;;
-grandeurs_mesures_conversions;conversion_octets;Conversion octets;;
-geometrie;cercle;Cercle;;
-geometrie;droites;Droites;;
-geometrie;parallelogrammes;Parallelogrammes;;
-geometrie;geometrie_deductive;Géométrie déductive;;
-geometrie;thales;Thalès;;
-geometrie;pythagore;Théorème de Pythagore;;
-geometrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
-calcul_litteral;developpement_identites;Développement;;
-calcul_litteral;factorisation_identites;Factorisation;;
-calcul_litteral;identites_remarquables;Identités remarquables : reconnaissance et applications;;
-trigonometrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
-trigonometrie;cercle_trigonometrique;Cercle trigonométrique;2GT;lycee
-nombres_entiers_et_decimaux;numeration_decimale;Numération des nombres entiers et décimaux;6E;college
-nombres_entiers_et_decimaux;decomposition_decimale;Décomposer et recomposer des nombres;6E;college
-nombres_entiers_et_decimaux;fractions_decimales;Fractions décimales;6E;college
-nombres_entiers_et_decimaux;comparaison_decimaux;Comparer et ranger des décimaux;6E;college
-nombres_entiers_et_decimaux;encadrement_decimaux;Encadrer des nombres décimaux;6E;college
-nombres_entiers_et_decimaux;arrondis_decimaux;Arrondir des nombres décimaux;6E;college
-nombres_entiers_et_decimaux;droite_graduee_decimaux;Repérer des décimaux sur une droite graduée;6E;college
-nombres_relatifs;reperage_nombres_relatifs;Comprendre et repérer les nombres relatifs;5E;college
-nombres_relatifs;addition_soustraction_relatifs;Additionner et soustraire des nombres relatifs;5E;college
-nombres_relatifs;multiplication_division_relatifs;Multiplier et diviser des nombres relatifs;4E;college
+famille;libelle_famille;notion;libelle_notion;niveau;etape_scolaire
+fractions;Fractions;addition_fractions;Addition de fractions;;
+fractions;Fractions;soustraction_fractions;Soustraction de fractions;;
+fractions;Fractions;multiplication_fractions;Multiplication de fractions;;
+fractions;Fractions;division_fractions;Division de fractions;;
+fractions;Fractions;comparaison_fractions;Comparer des fractions;;
+fractions;Fractions;fractions_equivalentes;Fractions équivalentes;;
+fractions;Fractions;fractions_droite;Fractions sur une droite graduée;;
+fractions;Fractions;encadrement_fractions;Encadrer une fraction;;
+fractions;Fractions;fraction_fois_entier;Multiplier une fraction par un entier;;
+fractions;Fractions;fraction_quantite;Fraction d’une quantité;;
+fractions;Fractions;fraction_quotient;Fraction et quotient;;
+fractions;Fractions;terme_manquant_fractions;Terme manquant dans une fraction;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;grandeurs_mesures;Grandeurs mesures;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_longueurs;Conversion longueurs;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_masses;Conversion masses;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_contenances;Conversion contenances;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_aires;Conversion aires;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_volumes;Conversion volumes;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_durees;Conversion durees;;
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_octets;Conversion octets;;
+geometrie;Géométrie;cercle;Cercle;;
+geometrie;Géométrie;droites;Droites;;
+geometrie;Géométrie;parallelogrammes;Parallélogrammes;;
+geometrie;Géométrie;geometrie_deductive;Géométrie déductive;;
+geometrie;Géométrie;thales;Thalès;;
+geometrie;Géométrie;pythagore;Théorème de Pythagore;;
+geometrie;Géométrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
+calcul_litteral;Calcul littéral;developpement_identites;Développement;;
+calcul_litteral;Calcul littéral;factorisation_identites;Factorisation;;
+calcul_litteral;Calcul littéral;identites_remarquables;Identités remarquables : reconnaissance et applications;;
+trigonometrie;Trigonométrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
+trigonometrie;Trigonométrie;cercle_trigonometrique;Cercle trigonométrique;2GT;lycee
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;numeration_decimale;Numération des nombres entiers et décimaux;6E;college
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;decomposition_decimale;Décomposer et recomposer des nombres;6E;college
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;fractions_decimales;Fractions décimales;6E;college
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;comparaison_decimaux;Comparer et ranger des décimaux;6E;college
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;encadrement_decimaux;Encadrer des nombres décimaux;6E;college
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;arrondis_decimaux;Arrondir des nombres décimaux;6E;college
+nombres_entiers_et_decimaux;Nombres entiers et décimaux;droite_graduee_decimaux;Repérer des décimaux sur une droite graduée;6E;college
+nombres_relatifs;Nombres relatifs;reperage_nombres_relatifs;Comprendre et repérer les nombres relatifs;5E;college
+nombres_relatifs;Nombres relatifs;addition_soustraction_relatifs;Additionner et soustraire des nombres relatifs;5E;college
+nombres_relatifs;Nombres relatifs;multiplication_division_relatifs;Multiplier et diviser des nombres relatifs;4E;college
+calcul_avec_puissances;Calcul avec les puissances;carres_cubes;Carrés et cubes;5E;college
+calcul_avec_puissances;Calcul avec les puissances;puissances_exposant_positif;Puissances d’exposant positif;4E;college
+calcul_avec_puissances;Calcul avec les puissances;puissances_exposant_negatif;Puissances d’exposant négatif;3E;college
+calcul_avec_puissances;Calcul avec les puissances;notation_scientifique;Notation scientifique;3E;college
+calcul_avec_puissances;Calcul avec les puissances;proprietes_puissances;Propriétés complémentaires des puissances;;
+;;ensembles;Ensembles;;
+;;racine_carree;Racine carrée;;

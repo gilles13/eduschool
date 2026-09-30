@@ -10,25 +10,6 @@
     notion = ""
     theme = ""
   } else {
-  libelles = c(fractions = "Fractions : toutes les notions",
-               pythagore = "Théorème de Pythagore",
-               addition_fractions = "Addition de fractions",
-               multiplication_fractions = "Multiplication de fractions",
-               division_fractions = "Division de fractions",
-               fraction_quantite = "Fraction d’une quantité",
-               fraction_quotient = "Fraction et quotient",
-               fractions_droite = "Fractions sur une droite graduée",
-               fractions_equivalentes = "Fractions équivalentes",
-               comparaison_fractions = "Comparer des fractions",
-               encadrement_fractions = "Encadrer une fraction",
-               soustraction_fractions = "Soustraction de fractions",
-               terme_manquant_fractions = "Terme manquant dans une fraction",
-               fraction_fois_entier = "Multiplier une fraction par un entier",
-               identites_remarquables = "Identités remarquables : reconnaissance et applications",
-               developpement_identites = "Développement",
-               factorisation_identites = "Factorisation",
-               ensembles = "Ensembles",
-               geometrie_deductive = "Géométrie déductive")
   themes = c(fractions = "Nombres et calculs",
               pythagore = "Géométrie", addition_fractions = "Nombres et calculs",
               multiplication_fractions = "Nombres et calculs",
@@ -49,19 +30,11 @@
               geometrie_deductive = "Géométrie")
   supports = c(decouverte = "Découverte", synthese = "Synthèse",
                quiz = "Quiz")
-  ref = utils::read.csv(system.file("referentiels", "familles_notions.csv",
-                                    package = "eduschool"), sep = ";",
-                         stringsAsFactors = FALSE)
-  correspondance = match(params$notion, ref$notion)
-  notion = if (!is.na(correspondance)) ref$libelle_notion[[correspondance]]
-           else unname(libelles[params$notion])
+  notion = eduschool:::.libelle_notion_ou_famille(params$notion)
   theme = unname(themes[params$notion])
   type = unname(supports[params$support])
   niveau = if (is.null(params$niveau) || !nzchar(params$niveau))
     "" else params$niveau
-  if (is.na(notion)) notion = gsub("_", " ", params$notion)
-  if (identical(params$notion, "grandeurs_mesures_conversions"))
-    notion = "Grandeurs, mesures et conversions"
   if (is.na(theme)) theme = "Mathématiques"
   }
   # Escape user-facing labels before inserting them in raw LaTeX.

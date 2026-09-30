@@ -6,6 +6,25 @@
 }
 
 # Read explicit family memberships; an empty vector means a simple notion.
+.libelle_notion_ou_famille = function(identifiant) {
+  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  ref = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
+  familles = unique(ref[ref$famille == identifiant & nzchar(ref$famille),
+    c("famille", "libelle_famille"), drop = FALSE])
+  if (nrow(familles)) {
+    libelles = unique(familles$libelle_famille[nzchar(familles$libelle_famille)])
+    if (length(libelles) != 1L)
+      stop("Libelle de famille manquant ou incoherent : ", identifiant)
+    return(libelles[[1L]])
+  }
+  notions = unique(ref[ref$notion == identifiant,
+    c("notion", "libelle_notion"), drop = FALSE])
+  libelles = unique(notions$libelle_notion[nzchar(notions$libelle_notion)])
+  if (length(libelles) != 1L)
+    stop("Libelle de notion manquant ou incoherent : ", identifiant)
+  libelles[[1L]]
+}
+
 .notions_famille = function(famille, niveau = "") {
   fichier = .chemin_edu("referentiels", "familles_notions.csv")
   liens = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
@@ -38,14 +57,14 @@ notions = function() {
   membres = unique(liens[, c("notion", "libelle_notion", "famille", "niveau")])
   names(membres) = c("identifiant", "libelle", "famille", "niveau")
   absents = setdiff(dossiers, membres$identifiant)
-  if (length(absents)) {
-    membres = rbind(membres, data.frame(identifiant = absents,
-      libelle = gsub("_", " ", absents), famille = "", niveau = ""))
-  }
+  if (length(absents))
+    stop("Notions absentes de familles_notions.csv : ", paste(absents, collapse = ", "))
   membres$type = "notion"
-  familles = unique(liens$famille)
-  groupes = data.frame(type = "famille", identifiant = familles,
-    libelle = gsub("_", " ", familles), famille = "", niveau = "")
+  familles = unique(liens[nzchar(liens$famille), c("famille", "libelle_famille")])
+  if (any(!nzchar(familles$libelle_famille)) || any(duplicated(familles$famille)))
+    stop("Libelles de familles manquants ou incoherents dans familles_notions.csv")
+  groupes = data.frame(type = "famille", identifiant = familles$famille,
+    libelle = familles$libelle_famille, famille = "", niveau = "")
   resultat = rbind(membres[, names(groupes)], groupes)
   rownames(resultat) = NULL
   resultat[order(resultat$type, resultat$identifiant), , drop = FALSE]
@@ -443,7 +462,10 @@ produire = function(notion, support = "tous", dossier = NULL, format = "html",
   if (identical(humour_ratio, 0))
     message("humour_ratio = 0 : les maths sans humour ? C'est votre choix !")
   if (is.null(tirages)) tirages = variantes
-  membres = .notions_famille(notion)
+  membres_tous = .notions_famille(notion)
+  membres = .notions_famille(notion, niveau = niveau)
+  if (length(membres_tous) && !length(membres))
+    stop("Aucune notion disponible pour ce niveau : ", niveau)
   if (identical(support, "tous")) {
     temporaire = is.null(dossier)
     if (temporaire) dossier = tempfile(pattern = paste0("eduschool-", notion, "-"))

@@ -113,12 +113,26 @@ if (html) {
       cible.appendChild(p);
     });
   }
+  function enonceLisible(q, numero, parent) {
+    const titre = document.createElement("h3");
+    titre.appendChild(document.createTextNode(numero + ". "));
+    if (!q.presentation || q.presentation.type !== "boite" || !q.enonce.includes("^□")) {
+      titre.appendChild(document.createTextNode(q.enonce));
+    } else {
+      const morceaux = q.enonce.split("^□");
+      morceaux.forEach((morceau, i) => {
+        titre.appendChild(document.createTextNode(morceau));
+        if (i < morceaux.length - 1) noeud("sup", "□", titre);
+      });
+    }
+    parent.appendChild(titre);
+  }
   function afficher() {
     zone.replaceChildren(); bilan.textContent = "";
     tirages[tour].forEach((q, i) => {
       const bloc = document.createElement("section");
       bloc.className = "edu-question";
-      noeud("h3", (i + 1) + ". " + q.enonce, bloc);
+      enonceLisible(q, i + 1, bloc);
       if (q.presentation && q.presentation.avertissement) {
         noeud("p", q.presentation.avertissement, bloc).className = "edu-avertissement";
       }
@@ -192,9 +206,38 @@ if (html) {
 
 ```{r imprimable, echo=FALSE, results='asis'}
 if (!html) {
+  .math_unicode_pdf = function(x) {
+    if (is.null(x) || !length(x)) return(x)
+    exposants = c("⁰" = "0", "¹" = "1", "²" = "2", "³" = "3", "⁴" = "4",
+                  "⁵" = "5", "⁶" = "6", "⁷" = "7", "⁸" = "8", "⁹" = "9",
+                  "⁺" = "+", "⁻" = "-")
+    caracteres = strsplit(as.character(x), "", fixed = TRUE)[[1L]]
+    resultat = character()
+    i = 1L
+    while (i <= length(caracteres)) {
+      if (caracteres[i] == "^" && i < length(caracteres) && caracteres[i + 1L] == "□") {
+        resultat = c(resultat, "$^{\\square}$")
+        i = i + 2L
+      } else if (caracteres[i] == "□") {
+        resultat = c(resultat, "$\\square$")
+        i = i + 1L
+      } else if (caracteres[i] %in% names(exposants)) {
+        j = i
+        while (j <= length(caracteres) && caracteres[j] %in% names(exposants)) j = j + 1L
+        puissance = paste(unname(exposants[caracteres[i:(j - 1L)]]), collapse = "")
+        resultat = c(resultat, paste0("$^{", puissance, "}$"))
+        i = j
+      } else {
+        resultat = c(resultat, caracteres[i])
+        i = i + 1L
+      }
+    }
+    paste0(resultat, collapse = "")
+  }
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
-    cat("\n## Question ", i, "\n\n", q$enonce, "\n\n", sep = "")
+    enonce = .math_unicode_pdf(q$enonce)
+    cat("\n## Question ", i, "\n\n", enonce, "\n\n", sep = "")
     figure = eduschool::illustrer_question(q)
     if (!is.null(figure)) {
       png = tempfile(fileext = ".png")
@@ -209,7 +252,8 @@ if (!html) {
     if (length(q$propositions)) {
       for (p in q$propositions) {
         masque = q$presentation$masques[[p]]
-        cat("- ", if (is.null(masque)) p else masque, "\n", sep = "")
+        proposition = if (is.null(masque)) p else masque
+        cat("- ", .math_unicode_pdf(proposition), "\n", sep = "")
       }
       cat("\n")
     } else cat("\nReponse : ........................................\n\n")
@@ -217,8 +261,8 @@ if (!html) {
   cat("\n\\newpage\n\n# Corrige\n\n")
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
-    cat("\n## Question ", i, "\n\n**Reponse :** ", q$reponse,
-        "\n\n**Correction :**\n\n", .raisonnement_edu(q$correction), "\n\n",
+    cat("\n## Question ", i, "\n\n**Reponse :** ", .math_unicode_pdf(q$reponse),
+        "\n\n**Correction :**\n\n", .math_unicode_pdf(.raisonnement_edu(q$correction)), "\n\n",
         if (!is.null(q$apart_humour)) paste0("*", q$apart_humour, "*\n\n") else "", sep = "")
   }
 }

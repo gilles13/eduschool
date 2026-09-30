@@ -1,0 +1,254 @@
+{
+  "notion_id": "puissances_exposant_positif",
+  "questions": [
+    {
+      "id": "PUI-001",
+      "type": "qcm",
+      "enonce": "Que vaut 2⁵ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "32"
+      },
+      "propositions": [
+        "32",
+        "10",
+        "16",
+        "64"
+      ],
+      "correction": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32."
+    },
+    {
+      "id": "PUI-002",
+      "type": "qcm",
+      "enonce": "Que vaut 3⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "81"
+      },
+      "propositions": [
+        "81",
+        "12",
+        "27",
+        "64"
+      ],
+      "correction": "3⁴ = 3 × 3 × 3 × 3 = 81."
+    },
+    {
+      "id": "PUI-007",
+      "type": "qcm",
+      "enonce": "Que vaut (−2)⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "16"
+      },
+      "propositions": [
+        "16",
+        "−16",
+        "−8",
+        "8"
+      ],
+      "correction": "Dans (−2)⁴, le signe moins appartient à la base : (−2) × (−2) × (−2) × (−2) = 16."
+    },
+    {
+      "id": "PUI-008",
+      "type": "qcm",
+      "enonce": "Que vaut −2⁴, sans parenthèses autour de −2 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−16"
+      },
+      "propositions": [
+        "−16",
+        "16",
+        "−8",
+        "8"
+      ],
+      "correction": "Sans parenthèses, le signe moins n’appartient pas à la base : la puissance est calculée d’abord, donc −2⁴ = −(2⁴) = −16. À l’inverse, (−2)⁴ = 16."
+    },
+    {
+      "id": "PUI-009",
+      "type": "qcm",
+      "enonce": "Que vaut (−3)³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−27"
+      },
+      "propositions": [
+        "−27",
+        "27",
+        "−9",
+        "9"
+      ],
+      "correction": "Trois facteurs négatifs donnent un produit négatif."
+    },
+    {
+      "id": "PUI-011",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 2³ × 2⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2⁷"
+      },
+      "propositions": [
+        "2⁷",
+        "2¹²",
+        "4⁷",
+        "2¹"
+      ],
+      "correction": "On additionne les exposants lorsque les bases sont identiques dans un produit."
+    },
+    {
+      "id": "PUI-014",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à (2 × 5)³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2³ × 5³"
+      },
+      "propositions": [
+        "2³ × 5³",
+        "2³ + 5³",
+        "2 × 5³",
+        "2⁶ × 5³"
+      ],
+      "correction": "La puissance d’un produit est le produit des puissances de chaque facteur."
+    },
+    {
+      "id": "PUI-015",
+      "type": "qcm",
+      "enonce": "Que vaut 2³ + 2² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "12"
+      },
+      "propositions": [
+        "12",
+        "2⁵",
+        "32",
+        "16"
+      ],
+      "correction": "On calcule séparément : 8 + 4 = 12 ; la règle des exposants ne concerne pas une somme."
+    },
+    {
+      "id": "PUI-018",
+      "type": "qcm",
+      "enonce": "Que vaut 10⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "10 000"
+      },
+      "propositions": [
+        "10 000",
+        "1 000",
+        "40",
+        "100 000"
+      ],
+      "correction": "10⁴ est égal à 1 suivi de quatre zéros."
+    },
+    {
+      "id": "PUI-026",
+      "type": "qcm",
+      "enonce": "À chaque étape, chaque branche se sépare en 3 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 4 étapes ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "81"
+      },
+      "propositions": [
+        "81",
+        "12",
+        "64",
+        "27"
+      ],
+      "correction": "À chacune des 4 étapes, le nombre de branches est multiplié par 3 : 3 × 3 × 3 × 3 = 3⁴ = 81."
+    },
+    {
+      "id": "PUI-027",
+      "type": "qcm",
+      "enonce": "Dans l’écriture 3⁵, comment appelle-t-on le nombre 3 ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "base": "b _ _ e",
+          "exposant": "e _ _ _ _ _ _ t",
+          "produit": "p _ _ _ _ t",
+          "facteur": "f _ _ _ _ _ r"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "base"
+      },
+      "propositions": [
+        "base",
+        "exposant",
+        "produit",
+        "facteur"
+      ],
+      "correction": "Dans 3⁵, 3 est la base : c’est le nombre qui est multiplié par lui-même."
+    },
+    {
+      "id": "PUI-028",
+      "type": "qcm",
+      "enonce": "Dans l’écriture 3⁵, comment appelle-t-on le nombre 5 ? Choisis le mot masqué correspondant.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "exposant": "E________T",
+          "facteur": "F________R",
+          "produit": "P________T",
+          "puissance": "PU________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "exposant"
+      },
+      "propositions": [
+        "exposant",
+        "facteur",
+        "produit",
+        "puissance"
+      ],
+      "correction": "Dans 3⁵, 5 est l’exposant : il indique que la base 3 apparaît cinq fois comme facteur."
+    },
+    {
+      "id": "PUI-029",
+      "type": "qcm",
+      "enonce": "Quel nombre doit remplacer □ pour que 2³ × 2^□ = 2⁷ ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4"
+      },
+      "propositions": [
+        "4",
+        "10",
+        "21",
+        "3"
+      ],
+      "correction": "Pour multiplier des puissances de même base, on additionne les exposants : 3 + □ = 7, donc □ = 4."
+    },
+    {
+      "id": "PUI-030",
+      "type": "qcm",
+      "enonce": "Quel nombre doit remplacer □ pour que (2 × 3)⁴ = 2^□ × 3⁴ ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4"
+      },
+      "propositions": [
+        "4",
+        "8",
+        "3",
+        "12"
+      ],
+      "correction": "La puissance d’un produit s’applique à chacun de ses facteurs : (2 × 3)⁴ = 2⁴ × 3⁴. La boîte vaut donc 4."
+    }
+  ]
+}

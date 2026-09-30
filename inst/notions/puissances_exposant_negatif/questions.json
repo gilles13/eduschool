@@ -1,0 +1,225 @@
+{
+  "notion_id": "puissances_exposant_negatif",
+  "questions": [
+    {
+      "id": "PUI-005",
+      "type": "qcm",
+      "enonce": "Que vaut 10⁻³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0,001"
+      },
+      "propositions": [
+        "0,001",
+        "0,01",
+        "0,0001",
+        "−1 000"
+      ],
+      "correction": "10⁻³ = 1 / 10³ = 0,001."
+    },
+    {
+      "id": "PUI-006",
+      "type": "qcm",
+      "enonce": "Pour a non nul, que vaut a⁰ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1"
+      },
+      "propositions": [
+        "1",
+        "0",
+        "a",
+        "−a"
+      ],
+      "correction": "Toute base non nulle à la puissance zéro vaut 1."
+    },
+    {
+      "id": "PUI-010",
+      "type": "qcm",
+      "enonce": "Que vaut 4⁻¹ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1/4"
+      },
+      "propositions": [
+        "1/4",
+        "−4",
+        "4",
+        "−1/4"
+      ],
+      "correction": "Une puissance d’exposant −1 désigne l’inverse de la base non nulle."
+    },
+    {
+      "id": "PUI-012",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 5⁸ / 5³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5⁵"
+      },
+      "propositions": [
+        "5⁵",
+        "5¹¹",
+        "1⁵",
+        "5²⁴"
+      ],
+      "correction": "Pour une division de puissances de même base non nulle, on soustrait les exposants."
+    },
+    {
+      "id": "PUI-020",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à 3⁻² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1/9"
+      },
+      "propositions": [
+        "1/9",
+        "−9",
+        "−6",
+        "9"
+      ],
+      "correction": "3⁻² = 1 / 3² = 1/9."
+    },
+    {
+      "id": "PUI-022",
+      "type": "qcm",
+      "enonce": "Que vaut 2⁰ + 3⁰ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2"
+      },
+      "propositions": [
+        "2",
+        "0",
+        "1",
+        "5"
+      ],
+      "correction": "Chaque nombre non nul élevé à la puissance zéro vaut 1 : 1 + 1 = 2."
+    },
+    {
+      "id": "PUI-023",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 10² × 10⁻⁵ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "10⁻³"
+      },
+      "propositions": [
+        "10⁻³",
+        "10⁻¹⁰",
+        "10³",
+        "10⁷"
+      ],
+      "correction": "Les exposants s’additionnent : 2 + (−5) = −3."
+    },
+    {
+      "id": "PUI-025",
+      "type": "qcm",
+      "enonce": "Quel calcul représente 4³ / 4² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "4"
+      },
+      "propositions": [
+        "4",
+        "1",
+        "4⁵",
+        "16"
+      ],
+      "correction": "4³ / 4² = 4¹ = 4."
+    },
+    {
+      "id": "PUI-031",
+      "type": "qcm",
+      "enonce": "Pour tout nombre a, que vaut a¹ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "a"
+      },
+      "propositions": [
+        "a",
+        "1",
+        "0",
+        "a × a"
+      ],
+      "correction": "L’exposant 1 signifie qu’il y a un seul facteur a : a¹ = a."
+    },
+    {
+      "id": "PUI-032",
+      "type": "qcm",
+      "enonce": "Dans l’égalité 5⁻² = 1 / 5², quel mot décrit la relation entre 5⁻² et 5² ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "inverse": "i _ _ _ _ e",
+          "opposé": "o _ _ _ é",
+          "produit": "p _ _ _ _ t",
+          "quotient": "q _ _ _ _ _ t"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "inverse"
+      },
+      "propositions": [
+        "inverse",
+        "opposé",
+        "produit",
+        "quotient"
+      ],
+      "correction": "5⁻² = 1 / 5² : une puissance d’exposant négatif s’écrit comme l’inverse de la puissance d’exposant positif correspondante."
+    },
+    {
+      "id": "PUI-033",
+      "type": "qcm",
+      "enonce": "Quel nombre doit remplacer □ pour que 2^□ = 1/8 ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−3"
+      },
+      "propositions": [
+        "−3",
+        "3",
+        "−8",
+        "1/3"
+      ],
+      "correction": "1/8 = 1 / 2³ = 2⁻³. La boîte vaut donc −3."
+    },
+    {
+      "id": "PUI-034",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 3⁻² × 3⁵ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3³"
+      },
+      "propositions": [
+        "3³",
+        "3⁻¹⁰",
+        "3⁻⁷",
+        "9³"
+      ],
+      "correction": "Pour un produit de puissances de même base, on additionne les exposants : −2 + 5 = 3."
+    },
+    {
+      "id": "PUI-035",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie 10⁻² / 10³ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "10⁻⁵"
+      },
+      "propositions": [
+        "10⁻⁵",
+        "10¹",
+        "10⁻⁶",
+        "1"
+      ],
+      "correction": "Pour un quotient de puissances de même base non nulle, on soustrait les exposants : −2 − 3 = −5."
+    }
+  ]
+}

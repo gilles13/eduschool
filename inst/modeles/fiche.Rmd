@@ -30,8 +30,11 @@ source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
 ```
 
 ```{r contenu, echo=FALSE, results='asis'}
-membres = eduschool:::.notions_famille(params$notion)
-if (!length(membres)) membres = params$notion
+membres_tous = eduschool:::.notions_famille(params$notion)
+membres = eduschool:::.notions_famille(params$notion, niveau = params$niveau)
+if (length(membres_tous) && !length(membres))
+  stop("Aucune notion disponible pour ce niveau : ", params$niveau)
+if (!length(membres_tous)) membres = params$notion
 for (membre in membres) {
   fichier = system.file("notions", membre, paste0(params$support, ".md"),
                         package = "eduschool")
@@ -40,13 +43,8 @@ for (membre in membres) {
   if (length(membres) > 1L) {
     # Reutiliser le titre editorial existant, sans creer une autre source.
     titre = grep("^# ", lignes, value = TRUE)
-    if (!length(titre)) {
-      ref = utils::read.csv(system.file("referentiels", "familles_notions.csv",
-                                         package = "eduschool"), sep = ";")
-      indice = match(membre, ref$notion)
-      titre = paste("#", if (is.na(indice)) gsub("_", " ", membre)
-                            else ref$libelle_notion[[indice]])
-    }
+    if (!length(titre))
+      titre = paste("#", eduschool:::.libelle_notion_ou_famille(membre))
     cat("\n## ", sub("^# +", "", titre[[1L]]), "\n\n", sep = "")
     titre_initial = grep("^# ", lignes)
     if (length(titre_initial)) lignes = lignes[-titre_initial[[1L]]]
