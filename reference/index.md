@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`diagramme_programme()`](https://gilles13.github.io/eduschool/reference/diagramme_programme.md)
+  : Produire un diagramme HTML d'un programme de mathematiques
 - [`eduschool()`](https://gilles13.github.io/eduschool/reference/eduschool.md)
   : Decouvrir eduschool
 - [`graphique()`](https://gilles13.github.io/eduschool/reference/graphique.md)

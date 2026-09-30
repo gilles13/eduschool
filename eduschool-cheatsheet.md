@@ -29,6 +29,9 @@ officiels actuels.
     maths_programmes()
     maths_programmes("6E")
     maths_parcours()
+    diagramme_programme("6E") # vue synthétique par défaut
+    diagramme_programme("4E", detail = "officiel")
+    diagramme_programme("4E", detail = "complet")
 
 ## 3 · Trouver ses mathématiques
 

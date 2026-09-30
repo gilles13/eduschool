@@ -7,7 +7,7 @@ Produire une fiche ou un quiz HTML/PDF
 ``` r
 produire(
   notion,
-  support,
+  support = "tous",
   dossier = NULL,
   format = "html",
   variantes = 5L,
