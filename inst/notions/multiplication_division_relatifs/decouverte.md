@@ -14,7 +14,7 @@ Donc 3 × (−4) = −12. Par commutativité, (−4) × 3 = −12 également.
 
 ## Deux facteurs négatifs : la distributivité répond
 
-La distributivité consiste à faire multiplier **chacun** des termes de la parenthèse par le facteur placé devant. Les flèches montrent ce même geste avec des nombres positifs, puis avec des nombres relatifs.
+La multiplication est distributive par rapport à l’addition et à la soustraction : le facteur placé devant la parenthèse multiplie **chacun** de ses termes. Les flèches montrent ce même geste avec des nombres positifs, puis avec des nombres relatifs.
 
 <!-- graphique: distributivite -->
 
