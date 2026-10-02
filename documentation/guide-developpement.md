@@ -24,6 +24,8 @@ La première définition n'a pas besoin d'épuiser immédiatement toute la subti
 
 Dans une fiche **Découverte**, construire ce sens avec des exemples et, lorsque cela aide, des contre-exemples. Dans une fiche **Synthèse**, conserver une définition courte permettant de retrouver immédiatement de quoi on parle.
 
+Quand une confusion révèle une marche implicite, expliciter d’abord **la nature des objets et la question posée par chaque notation** avant d’ajouter une règle de manipulation. Ne pas confondre la nature d’un objet avec la notation utilisée pour le représenter.
+
 Question de contrôle avant de considérer une fiche terminée : **« Avant de lui apprendre quoi en faire, avons-nous expliqué à l'élève de quoi nous parlons ? »**
 
 La définition fondamentale dispose d’un repère visuel commun aux fiches : une petite boîte sobre, à fond pastel très clair et bordure fine foncée, intitulée **« De quoi parle-t-on ? »**. Le Markdown la déclare avec un bloc `::: {.edu-definition}` ; le modèle assure le rendu HTML/PDF. Ne pas généraliser ce mécanisme à d’autres catégories tant qu’un besoin concret et répété ne l’exige pas.

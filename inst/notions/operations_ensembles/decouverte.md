@@ -48,7 +48,17 @@ on obtient
 
 $$F\setminus A=\{0,4,5,6,7\}.$$
 
-Un complémentaire n'a donc de sens qu'avec un **ensemble de référence** clairement identifié. Lorsque cet ensemble est fixé par le contexte, on rencontre aussi la notation $A^c$.
+Un complémentaire n'a donc de sens qu'avec un **ensemble de référence** clairement identifié. L'écriture $E\setminus A$ a l'avantage de montrer directement cet ensemble de référence : on part de $E$ et on retire les éléments de $A$.
+
+Lorsque l'ensemble de référence est déjà fixé par le contexte, on rencontre aussi une écriture plus compacte :
+
+$$A^c.$$
+
+Le petit $c$ placé en haut **n'est pas une puissance** : il signifie ici « complémentaire de $A$ ». Ainsi, lorsque $E$ est l'ensemble de référence,
+
+$$A^c=E\setminus A.$$
+
+Si cette notation compacte gêne au début, on peut continuer à écrire $E\setminus A$ : les deux écritures désignent le même ensemble lorsque la référence $E$ est connue. Une fois le sens du complémentaire installé, la notation $A^c$ peut au contraire devenir pratique : elle allège les expressions et permet parfois de mieux voir les opérations qui s'y échangent.
 
 ## 4. Quand l'ensemble vide revient rôder
 
@@ -79,29 +89,51 @@ $$\boxed{\varnothing\neq\{\varnothing\}}.$$
 
 Ainsi $A\cup\varnothing=A$, tandis que si $B=\{\varnothing\}$, alors $A\cup B$ contient bien $\varnothing$ comme élément.
 
-## 5. Composer les opérations
+## 5. Composer les opérations : deux chemins vers le même ensemble
 
-Avec
+Reprenons un seul ensemble de référence et gardons-le visible :
 
-$$E=\{1,2,3,4,5,6,7,8\},\quad A=\{1,2,3,4\},\quad B=\{3,4,5,6\},$$
+$$E=\{1,2,3,4,5,6\},\quad A=\{1,2,3\},\quad B=\{3,4,5\}.$$
 
-on a d'abord
+Commençons par la réunion :
 
-$$A\cap B=\{3,4\},$$
+$$A\cup B=\{1,2,3,4,5\},$$
+
+puis retirons-la de $E$ :
+
+$$E\setminus(A\cup B)=\{6\}.$$
+
+Essayons maintenant un autre chemin. On calcule séparément :
+
+$$E\setminus A=\{4,5,6\},\qquad E\setminus B=\{1,2,6\}.$$
+
+Le seul élément commun à ces deux ensembles est $6$ :
+
+$$(E\setminus A)\cap(E\setminus B)=\{6\}.$$
+
+Les deux chemins donnent donc le même ensemble :
+
+$$E\setminus(A\cup B)=(E\setminus A)\cap(E\setminus B).$$
+
+On peut faire le trajet symétrique en partant de l'intersection :
+
+$$A\cap B=\{3\},$$
 
 puis
 
-$$E\setminus(A\cap B)=\{1,2,5,6,7,8\}.$$
+$$E\setminus(A\cap B)=\{1,2,4,5,6\}.$$
 
-On peut aussi calculer séparément les éléments qui ne sont pas dans $A$ et ceux qui ne sont pas dans $B$ :
+De l'autre côté,
 
-$$E\setminus A=\{5,6,7,8\},\qquad E\setminus B=\{1,2,7,8\}.$$
+$$(E\setminus A)\cup(E\setminus B)=\{1,2,4,5,6\}.$$
 
-Leur réunion donne le même résultat :
+Cette fois encore, les deux chemins donnent le même ensemble :
 
-$$(E\setminus A)\cup(E\setminus B)=\{1,2,5,6,7,8\}.$$
+$$E\setminus(A\cap B)=(E\setminus A)\cup(E\setminus B).$$
 
-Ce n'est pas un hasard : **ne pas être dans $A$ ET $B$ à la fois**, c'est **ne pas être dans $A$ OU ne pas être dans $B$**.
+Ce que l'on peut d'abord retenir visuellement est très simple : **quand on prend le complémentaire, réunion et intersection s'échangent**.
+
+$$\cup\quad\longleftrightarrow\quad\cap$$
 
 ## Pour aller plus loin : les lois de De Morgan
 
@@ -118,4 +150,20 @@ Autrement dit :
 - NON $(A\ \text{ET}\ B)$ devient $(\text{NON }A)\ \text{OU}\ (\text{NON }B)$ ;
 - NON $(A\ \text{OU}\ B)$ devient $(\text{NON }A)\ \text{ET}\ (\text{NON }B)$.
 
+Une formulation en français mérite d'être rendue explicite : **« ni dans $A$ ni dans $B$ » signifie « pas dans $A$ ET pas dans $B$ »**. Ce n'est pas « pas dans $A$ OU pas dans $B$ ». Ainsi, dans l'ensemble de référence $E$ :
+
+$$
+x\notin A\ \text{ET}\ x\notin B
+\quad\Longleftrightarrow\quad
+x\in E\setminus(A\cup B).
+$$
+
 Le nom vient après l'idée : ce sont les **lois de De Morgan**.
+
+Une fois cette idée comprise, on peut retrouver la notation compacte. Si $E$ est fixé comme ensemble de référence, $A^c$ signifie $E\setminus A$ et $B^c$ signifie $E\setminus B$. Les mêmes lois s'écrivent alors :
+
+$$(A\cup B)^c=A^c\cap B^c,$$
+
+$$(A\cap B)^c=A^c\cup B^c.$$
+
+Ici encore, le $c$ en hauteur ne désigne pas une puissance : il indique le complémentaire.

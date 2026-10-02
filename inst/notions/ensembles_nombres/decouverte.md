@@ -9,70 +9,119 @@ Un **ensemble** est une collection d'objets appelés **éléments**.
 Prenons un exemple très simple :
 
 $$
-E=\{a,b\}.
+E=\{1,2,3\}.
 $$
 
-$E$ est l'ensemble ; $a$ et $b$ sont ses éléments. Les accolades $\{\}$ indiquent que l'on écrit un ensemble.
+$E$ est l'ensemble ; $1$, $2$ et $3$ sont ses éléments. Les accolades permettent ici **d'énumérer les éléments** de $E$.
 
 Dans un ensemble, **l'ordre ne compte pas** et **répéter un élément ne change pas l'ensemble**. Ainsi :
 
 $$
-\{a,b\}=\{b,a\}=\{a,a,b\}.
+\{1,2,3\}=\{3,2,1\}=\{1,1,2,3,3\}.
 $$
 
-Nous pouvons maintenant regarder plus précisément ce que signifient un élément, un ensemble, l'appartenance et l'inclusion.
+Un premier repère est essentiel : **les accolades sont une façon de décrire certains ensembles ; elles ne sont pas ce qui fait qu'un objet est un ensemble.** Nous rencontrerons plus loin des ensembles qui disposent d'autres notations.
 
-## 1. $a$ et $\{a\}$ ne sont pas la même chose
+## 1. Un objet peut être un élément d'un ensemble
 
-C'est le premier repère à garder en tête, car les accolades changent complètement l'objet dont on parle.
-
-- $a$ est un **élément** ;
-- $\{a\}$ est un **ensemble** qui contient un seul élément : $a$.
-
-Autrement dit, $a$ est l'objet et $\{a\}$ est l'ensemble qui contient cet objet. On a donc :
+Comme $1$ est l'un des objets contenus dans $E$, on écrit :
 
 $$
-a\neq\{a\}.
+1\in E.
 $$
-
-Cette distinction permet de comprendre les deux symboles qui arrivent maintenant. Quand on regarde un élément et un ensemble, on parlera d'**appartenance**. Quand on compare deux ensembles, on parlera d'**inclusion**.
-
-## 2. Appartenance : regarder un élément
 
 Le symbole $\in$ se lit **« appartient à »** ou **« est un élément de »**.
 
-Comme $a$ est l'un des éléments contenus dans $E$, on écrit :
+Il répond à une seule question :
+
+> **Cet objet est-il un élément de cet ensemble ?**
+
+Par exemple, $4$ n'est pas un élément de $E$, donc :
 
 $$
-a\in E.
+4\notin E.
 $$
 
-En revanche, si $c$ n'est pas dans $E$, on écrit :
+## 2. Un élément peut lui-même être un ensemble
+
+C'est une marche importante. Considérons :
 
 $$
-c\notin E.
+F=\{1,\{2,3\},4\}.
 $$
 
-Devant le symbole $\in$, la question à se poser est donc : **cet objet est-il un élément de l'ensemble ?**
+$F$ contient **trois éléments** :
 
-## 3. Inclusion : comparer deux ensembles
+- le nombre $1$ ;
+- l'ensemble $\{2,3\}$ ;
+- le nombre $4$.
 
-À partir de $E=\{a,b\}$, considérons maintenant l'ensemble $\{a\}$, qui contient seulement l'élément $a$.
-
-Tous les éléments de $\{a\}$ appartiennent à $E$. On dit que $\{a\}$ **est inclus dans** $E$ et on écrit :
+Ainsi :
 
 $$
-\{a\}\subseteq E.
+\{2,3\}\in F.
 $$
 
-Le symbole $\subseteq$ relie donc deux ensembles. Devant ce symbole, la question à se poser est : **tous les éléments du premier ensemble appartiennent-ils au second ?**
+Il n'y a pas de contradiction : $\{2,3\}$ est **un ensemble en lui-même**, et cet ensemble est aussi **un élément de $F$**.
 
-Il faut bien distinguer :
+C'est comme une boîte qui peut elle-même être placée dans une autre boîte : sa nature ne change pas parce qu'elle devient un élément d'un ensemble plus grand.
 
-- $a\in E$ : $a$ est un **élément** de $E$ ;
-- $\{a\}\subseteq E$ : $\{a\}$ est un **ensemble inclus** dans $E$.
+## 3. Appartenance et inclusion ne posent pas la même question
 
-Les accolades changent l'objet : $a$ et $\{a\}$ ne désignent pas la même chose.
+Revenons à :
+
+$$
+E=\{1,2,3\}.
+$$
+
+Nous savons déjà écrire :
+
+$$
+1\in E.
+$$
+
+Ici, on regarde **un objet et un ensemble** : est-ce que l'objet $1$ est un élément de $E$ ? Oui.
+
+Considérons maintenant l'ensemble $A=\{1,2\}$. Tous les éléments de $A$ appartiennent aussi à $E$. On écrit :
+
+$$
+A\subseteq E.
+$$
+
+Le symbole $\subseteq$ se lit **« est inclus dans »**. Il compare **deux ensembles** et répond à une autre question :
+
+> **Tous les éléments du premier ensemble appartiennent-ils au second ?**
+
+Le repère à garder est donc :
+
+- $\in$ : **un objet face à un ensemble** — « est-il dedans ? » ;
+- $\subseteq$ : **un ensemble face à un ensemble** — « tout ce que contient le premier est-il aussi dans le second ? ».
+
+Par exemple :
+
+$$
+1\in E
+\qquad\text{mais}\qquad
+\{1\}\subseteq E.
+$$
+
+Le nombre $1$ et l'ensemble $\{1\}$ ne sont pas le même objet.
+
+Il faut aussi résister à une autre confusion : écrire
+
+$$
+E=\{1,2,3\}
+$$
+
+énumère **les éléments de $E$**, pas tous ses sous-ensembles. Ainsi :
+
+$$
+\{1,2\}\subseteq E
+\qquad\text{mais}\qquad
+\{1,2\}\notin E.
+$$
+
+L'ensemble $\{1,2\}$ est bien inclus dans $E$ parce que ses deux éléments appartiennent à $E$ ; mais il n'apparaît pas lui-même comme un élément de $E$. Cette distinction prépare le cas, plus déroutant, de l'ensemble vide.
 
 ## 4. Un ensemble est inclus dans lui-même
 
@@ -90,9 +139,30 @@ Ainsi, parmi les sous-ensembles de $E=\{a,b\}$, il y a $E$ lui-même, c'est-à-d
 
 ## 5. Le cas particulier de l'ensemble vide
 
-L'ensemble vide, noté $\varnothing$, est l'ensemble qui ne contient **aucun élément**.
+L'ensemble vide, noté $\varnothing$, est **un ensemble** qui ne contient aucun élément. Le symbole $\varnothing$ est une notation particulière pour cet ensemble : l'absence d'accolades ne l'empêche pas d'être un ensemble.
 
-Pour savoir si $\varnothing\subseteq E$, appliquons exactement la même règle : tous les éléments de $\varnothing$ appartiennent-ils à $E$ ?
+Il faut maintenant distinguer deux objets :
+
+- $\varnothing$ : un ensemble qui ne contient aucun élément ;
+- $\{\varnothing\}$ : un ensemble qui contient **un élément**, et cet élément est l'ensemble vide.
+
+Autrement dit, $\varnothing$ ressemble à une boîte vide, tandis que $\{\varnothing\}$ ressemble à une boîte qui contient une boîte vide.
+
+Prenons par exemple :
+
+$$
+G=\{\varnothing,1,2\}.
+$$
+
+Cette fois, l'ensemble vide est explicitement l'un des éléments de $G$, donc :
+
+$$
+\varnothing\in G.
+$$
+
+Cela n'empêche pas $\varnothing$ d'être lui-même un ensemble.
+
+Pour savoir maintenant si $\varnothing\subseteq E$, appliquons exactement la règle de l'inclusion : tous les éléments de $\varnothing$ appartiennent-ils à $E$ ?
 
 Il n'y a aucun élément à vérifier. Il est donc impossible d'en trouver un qui n'appartienne pas à $E$.
 

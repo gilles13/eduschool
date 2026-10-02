@@ -39,6 +39,8 @@ source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
 .entete_edu(params, knitr::is_html_output())
 ```
 
+**Avant de commencer : feuille + crayon fortement recommandés.** Écris, dessine, barre, essaie : le brouillon fait partie du travail, tu n'as aucune raison de tout faire de tête.
+
 ```{r images-html, include=FALSE}
 if (html) {
   for (t in seq_along(tirages)) {
