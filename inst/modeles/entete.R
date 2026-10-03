@@ -13,8 +13,8 @@
                quiz = "Quiz")
   notion = eduschool:::.libelle_notion_ou_famille(params$notion)
   type = unname(supports[params$support])
-  niveau = if (is.null(params$niveau) || !nzchar(params$niveau))
-    "" else params$niveau
+  niveau = if (!is.null(params$niveau) && nzchar(params$niveau))
+    params$niveau else eduschool:::.niveau_notion_ou_famille(params$notion)
   }
   # Escape user-facing labels before inserting them in raw LaTeX.
   latex_edu = function(x) {

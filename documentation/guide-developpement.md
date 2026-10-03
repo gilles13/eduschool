@@ -30,6 +30,12 @@ Question de contrôle avant de considérer une fiche terminée : **« Avant de l
 
 La définition fondamentale dispose d’un repère visuel commun aux fiches : une petite boîte sobre, à fond pastel très clair et bordure fine foncée, intitulée **« De quoi parle-t-on ? »**. Le Markdown la déclare avec un bloc `::: {.edu-definition}` ; le modèle assure le rendu HTML/PDF. Ne pas généraliser ce mécanisme à d’autres catégories tant qu’un besoin concret et répété ne l’exige pas.
 
+### Modèles éditoriaux des fiches
+
+Les fichiers `documentation/modeles/decouverte.md` et `documentation/modeles/synthese.md` sont les **points de départ obligatoires** de toute nouvelle fiche. Toujours repartir d’une copie du modèle correspondant, puis remplacer et adapter son contenu. **Ne jamais reconstruire de mémoire la structure Markdown d’une fiche.**
+
+Ces modèles fixent la hiérarchie de présentation commune : titre principal, bloc `edu-definition`, niveaux de sections et absence de numérotation manuelle des titres. Une section inutile pour une notion peut être supprimée et une section pédagogiquement utile peut être ajoutée, mais la hiérarchie Markdown et la forme du bloc de définition restent celles du modèle. La présentation visuelle appartient au modèle commun `fiche.Rmd`, pas aux fichiers de contenu.
+
 ## 2. Architecture volontairement minimale
 
 - **CSV** : catalogue léger des notions et rattachements souples aux niveaux et thèmes. Une notion n'est pas prisonnière d'un programme scolaire.
@@ -38,6 +44,12 @@ La définition fondamentale dispose d’un repère visuel commun aux fiches : un
 - **R Markdown** : production de fiches et de quiz en HTML et PDF.
 
 Pas de réimportation de l'ancien moteur ni de l'ancien SI. Une abstraction nouvelle n'entre que si un besoin concret et répété la justifie. Privilégier des modifications localisées, compréhensibles et réversibles. En R, utiliser `=` pour les affectations ; ne pas introduire Quarto.
+
+### Convention de nommage des notions
+
+- Une **notion** est nommée au singulier dans son identifiant et dans son libellé : `equation_produit_nul`, « Équation et produit nul ».
+- Une **famille** peut conserver un nom collectif ou pluriel lorsqu'il décrit naturellement un ensemble de notions : `equations`, « Équations ».
+- Appliquer cette convention dès la création d'une notion et conserver le même identifiant dans le dossier `inst/notions/`, le `notion_id` du JSON et les référentiels. Ne pas introduire simultanément des variantes singulier/pluriel d'une même notion.
 
 ## 3. Contrat pédagogique des quiz
 
@@ -55,8 +67,33 @@ Pas de réimportation de l'ancien moteur ni de l'ancien SI. Une abstraction nouv
   - Conserver ces deux types lors des migrations de questions et vérifier leur présence dans les banques historiques avant de conclure qu’ils n’existaient pas. **Ne pas confondre** avec un nombre manquant dans une équation ni avec des mots masqués dans une correction.
 - Préserver les corrections pertinentes, notamment « Je vois / Je sais / J'en déduis » et « Je calcule » quand cela apporte réellement quelque chose. Ne pas imposer artificiellement ces étapes.
 - **Trois actions HTML distinctes, dans cet ordre** : « Valider mes réponses » corrige le tirage affiché ; « Relancer ce quiz » efface réponses et corrections **sans changer les questions, valeurs ni propositions** ; « Générer un nouveau quiz » affiche le prochain tirage pré-calculé. Après le dernier tirage, revenir au premier (boucle). Ne jamais confondre relance et nouveau tirage.
-- `produire(..., n = 10, tirages = 5)` signifie dix questions par quiz et cinq quiz pré-calculés ; `variantes` reste un ancien alias de `tirages`. Accepter les répétitions : aucune détection complexe de doublons. Les tirages sont calculés en R lors de la génération, jamais par JavaScript dans le navigateur.
+- `produire(..., n = 10, tirages = 5)` signifie dix questions par quiz et cinq quiz pré-calculés ; `variantes` reste un ancien alias de `tirages`. Lorsqu'une même définition variable est utilisée plusieurs fois dans ces tirages, consommer ses variantes sans remise tant qu'il en reste ; une répétition n'est acceptable qu'après épuisement des variantes disponibles. Ne pas construire de détection générique de doublons sur les énoncés.
+- Les modèles R Markdown restent des modèles de rendu : la sélection et l'instanciation cohérente des questions sont réalisées par une petite fonction R dédiée et testable. Ne pas déplacer cette logique métier dans `quiz.Rmd`. Les tirages sont calculés en R lors de la génération, jamais par JavaScript dans le navigateur.
 - HTML : réponses sélectionnables, vérification/correction et relance. PDF : version imprimable avec corrigé. `produire()` doit ouvrir le document par défaut et permettre de désactiver l'ouverture lors des générations en série.
+- **Lisibilite des enonces** : lorsqu'un enonce contient plusieurs phrases, chaque nouvelle phrase commence sur une nouvelle ligne dans le rendu HTML et PDF. Cette regle est appliquee par le modele de quiz ; ne pas ajouter manuellement des retours a la ligne dans les JSON pour obtenir cet effet.
+- Le vocabulaire mathematique interessant a questionner est conserve dans `inst/referentiels/vocabulaire_notions.csv`. Ce fichier est un pense-bete editorial minimal `notion;mot`, enrichi au fil du travail. Il ne pilote ni le moteur ni la selection des questions et n'impose pas que chaque mot devienne une question.
+
+### Procédure fonctionnelle obligatoire avant de créer une banque de questions
+
+Avant de fabriquer la banque JSON d'une nouvelle notion paramétrée, partir d'une copie de `documentation/modeles/atelier_questions.R`. Adapter les domaines, les contrôles et les distracteurs à la notion ; ne pas reconstruire la mécanique commune de bilan. L'atelier reste un outil de fabrication hors package.
+
+L'atelier explore un domaine plus large que la banque finale. Une combinaison invalide est journalisée puis rejetée ; elle n'a pas à être réparée si le domaine fournit suffisamment de variantes valides. Le bilan de l'atelier affiche la diversité des distracteurs, une synthèse des rejets avec trois exemples maximum, puis les effectifs retenus par palier. Les objets complets restent disponibles au REPL pour inspection.
+
+Pour toute nouvelle notion ou famille de questions, **ne pas commencer par remplir le JSON**. La préparation du contenu suit cet ordre :
+
+1. **Relire ce guide et inventorier les types de questions déjà disponibles.** Examiner systématiquement si la notion se prête aux types existants : calcul ou résolution, mot à trou, mot masqué, boîte à valeur recherchée, QCM de raisonnement et autres types déjà documentés. Ne retenir que les formes pédagogiquement utiles, mais les intégrer dès le premier jet au lieu de produire une banque uniforme puis de la reprendre plusieurs fois.
+2. **Explorer les paramètres hors du package.** Utiliser au besoin des helpers R locaux, spécifiques et jetables pour construire le domaine admissible, repérer les cas pédagogiquement intéressants et sélectionner un ensemble fini de variantes. Ces helpers servent l'atelier éditorial ; ils n'entrent pas dans le moteur eduschool et ne deviennent pas une abstraction générique.
+3. **Contrôler les distracteurs en amont.** Les helpers peuvent fabriquer plusieurs erreurs plausibles, éliminer les valeurs non finies, les doublons et toute collision avec la réponse correcte, puis vérifier que chaque variante retenue dispose d'assez de distracteurs valides. Un distracteur s'adapte au domaine pédagogique ; le domaine pédagogique ne s'appauvrit pas pour sauver un distracteur.
+4. **Figer le contenu fini dans le JSON.** Le premier JSON doit déjà contenir la diversité pédagogique pertinente, les paramètres retenus, les distracteurs contrôlés et les étapes de correction ou de calcul nécessaires à la compréhension. Les écritures mathématiques exactes sont préférées aux approximations décimales lorsqu'elles sont disponibles.
+5. **Garder le moteur simple.** Autant que possible, l'intelligence de génération, d'exploration et de validation reste dans l'atelier de fabrication. Le runtime choisit et affiche du contenu fini, puis utilise les mécanismes de correction déjà existants. Ne créer un nouveau mécanisme que si aucun type existant ne répond proprement au besoin réel.
+
+**Contrôle avant le premier patch JSON :** « Avons-nous exploré les paramètres, vérifié les collisions, regardé les types de questions déjà disponibles et inclus dès maintenant les formes réellement utiles à cette notion ? »
+
+Cette procédure doit permettre de traiter rapidement une nouvelle famille analogue sans rediscuter l'architecture à chaque notion. **La diversité pédagogique doit être dans le contenu, pas dans le moteur. Le contenu commande le code.**
+
+### Niveau affiché dans les quiz
+
+L'en-tête d'un quiz affiche son niveau à partir de `inst/referentiels/familles_notions.csv`, sans liste parallèle dans le code. Pour une notion, afficher son niveau d'introduction. Pour une famille transversale couvrant plusieurs niveaux, afficher la plage du premier au dernier niveau, par exemple `6E à 3E`. Si `produire(..., niveau = ...)` demande explicitement un niveau, afficher ce niveau demandé. Ne jamais afficher un niveau absent ou `NA`.
 
 ## 4. Contrat impératif de livraison des patchs
 
@@ -154,6 +191,8 @@ ne doivent pas introduire de valeurs variables.
 - Pour un quiz de famille, `niveau` filtre les notions dont le niveau
   d'introduction est connu et inferieur ou egal au niveau demande.
 - Un niveau absent n'est pas interprete comme accessible a tous.
+- Dans le catalogue pratique eduschool, `niveau` est un niveau d'introduction editorial et revisable : il indique a partir de quand eduschool accepte de proposer la notion. Il n'a pas vocation a certifier a lui seul le programme officiel.
+- Une notion peut appartenir a plusieurs familles : repeter la notion sur plusieurs lignes du CSV plutot que creer une famille secondaire ou une nouvelle mecanique.
 - Le triangle rectangle (3E) et le cercle trigonometrique (2GT) sont
   deux notions distinctes, sans duplication de banque.
 - Les etiquettes des figures de trigonometrie utilisees en quiz sont
@@ -165,6 +204,7 @@ Une figure présentant un angle orienté doit montrer les deux rayons, un arc fl
 
 ## Fiches découvertes : activités et réponses (septembre 2026)
 
+- Toute nouvelle fiche `decouverte.md` ou `synthese.md` part d'une copie du modèle canonique correspondant dans `documentation/modeles/` ; ne pas reconstruire sa structure de mémoire.
 - Toute invitation à effectuer un exercice vérifiable utilise la forme **À essayer N — titre :** (en gras), avec numérotation continue dans chaque fiche. Ne pas glisser un « essaie » non identifié dans le texte courant.
 - Chaque **À essayer N** possède une correction **N. titre** dans la dernière section **Pour vérifier tes découvertes**, dans le même ordre. Expliquer le raisonnement, pas seulement donner le résultat.
 - Une exploration libre sans réponse unique peut rester une ouverture éditoriale clairement distincte ; ne pas la présenter comme un exercice dont la correction manquerait.
@@ -186,3 +226,22 @@ decouvrir, explorer le systeme scolaire, trouver ses mathematiques, produire
 des supports et utiliser les outils graphiques. Les deux bulles de contribution
 et de manifeste figurent en bas, en deux colonnes. Les exemples `produire()`
 montrent explicitement `notion =` et `format =`, chacun sur sa ligne.
+
+## Variantes finies de questions (octobre 2026)
+
+Une question variable contient une liste finie de `variantes`. Chaque variante
+ne contient que des valeurs de `parametres` relues ; aucun code R, tirage ou
+expression generatrice n'est execute depuis le JSON. Une variante est choisie
+une seule fois, puis ses marqueurs `[[nom]]` sont remplaces litteralement dans
+la definition avant le calcul ou la validation mathematique existante.
+
+La definition concrete ainsi obtenue suit exactement le meme chemin que les
+questions fixes. Les anciens `parametres` executables restent interdits. Les
+variantes servent a varier le contenu ; elles ne constituent pas un nouveau
+moteur de reponse.
+
+La cle facultative `progression` appartient a une variante et decrit un palier
+editorial local a la famille de questions, pas une mesure universelle de
+difficulte. Elle peut etre modifiee simplement apres retour d'usage. Les
+scripts de fabrication qui explorent ou caracterisent les combinaisons restent
+hors du package ; le JSON ne conserve que les variantes relues et retenues.

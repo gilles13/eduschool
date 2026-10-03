@@ -29,6 +29,7 @@ verifier = function(notion, repetitions = 30L) {
 set.seed(20260926)
 verifier("pythagore")
 verifier("addition_fractions")
+verifier("equations")
 
 # Contrôle symbolique explicite, indépendant des valeurs décimales R.
 # Le résultat de Ryacas doit être une fraction exacte équivalente à 5/6.

@@ -1,5 +1,5 @@
 ---
-title: "Quiz de mathématiques"
+pagetitle: "eduschool"
 params:
   notion: "addition_fractions"
   support: "quiz"
@@ -20,18 +20,13 @@ banque = eduschool::questions(params$notion, niveau = params$niveau)
 html = knitr::is_html_output()
 if (!is.null(params$seed)) set.seed(params$seed)
 # Les tirages sont prepares une seule fois : le navigateur ne calcule rien.
-tirages = lapply(seq_len(if (html) params$tirages else 1L), function(i) {
-  definitions = banque$questions
-  if (!is.null(params$n)) {
-    # Une banque courte peut repeter des definitions : aucune usine anti-doublons.
-    definitions = sample(definitions, size = params$n,
-                         replace = params$n > length(definitions))
-  } else if (length(eduschool:::.notions_famille(params$notion))) {
-    definitions = sample(definitions)
-  }
-  eduschool:::.humour_edu(lapply(definitions, eduschool::question),
-                          params$humour_ratio)
-})
+tirages = eduschool:::.tirer_questions_quiz_edu(
+  banque$questions,
+  n = params$n,
+  tirages = if (html) params$tirages else 1L,
+  melanger = length(eduschool:::.notions_famille(params$notion)) > 0L,
+  humour_ratio = params$humour_ratio
+)
 ```
 
 ```{r entete, echo=FALSE, results='asis'}
@@ -118,12 +113,18 @@ if (html) {
   function enonceLisible(q, numero, parent) {
     const titre = document.createElement("h3");
     titre.appendChild(document.createTextNode(numero + ". "));
+    const ajouterTexte = texte => {
+      String(texte).split(/(?<=\\.)\\s+/u).forEach((phrase, i) => {
+        if (i) titre.appendChild(document.createElement("br"));
+        titre.appendChild(document.createTextNode(phrase));
+      });
+    };
     if (!q.presentation || q.presentation.type !== "boite" || !q.enonce.includes("^□")) {
-      titre.appendChild(document.createTextNode(q.enonce));
+      ajouterTexte(q.enonce);
     } else {
       const morceaux = q.enonce.split("^□");
       morceaux.forEach((morceau, i) => {
-        titre.appendChild(document.createTextNode(morceau));
+        ajouterTexte(morceau);
         if (i < morceaux.length - 1) noeud("sup", "□", titre);
       });
     }
@@ -250,6 +251,7 @@ if (!html) {
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
     enonce = .math_unicode_pdf(q$enonce)
+    enonce = gsub("\\. +", ".\n\n", enonce)
     cat("\n## Question ", i, "\n\n", enonce, "\n\n", sep = "")
     figure = eduschool::illustrer_question(q)
     if (!is.null(figure)) {

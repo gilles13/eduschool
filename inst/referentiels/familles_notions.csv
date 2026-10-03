@@ -1,34 +1,34 @@
 famille;libelle_famille;notion;libelle_notion;niveau;etape_scolaire
-fractions;Fractions;addition_fractions;Addition de fractions;;
-fractions;Fractions;soustraction_fractions;Soustraction de fractions;;
-fractions;Fractions;multiplication_fractions;Multiplication de fractions;;
-fractions;Fractions;division_fractions;Division de fractions;;
-fractions;Fractions;comparaison_fractions;Comparer des fractions;;
-fractions;Fractions;fractions_equivalentes;Fractions équivalentes;;
-fractions;Fractions;fractions_droite;Fractions sur une droite graduée;;
-fractions;Fractions;encadrement_fractions;Encadrer une fraction;;
-fractions;Fractions;fraction_fois_entier;Multiplier une fraction par un entier;;
-fractions;Fractions;fraction_quantite;Fraction d’une quantité;;
-fractions;Fractions;fraction_quotient;Fraction et quotient;;
-fractions;Fractions;terme_manquant_fractions;Terme manquant dans une fraction;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;grandeurs_mesures;Grandeurs mesures;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_longueurs;Conversion longueurs;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_masses;Conversion masses;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_contenances;Conversion contenances;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_aires;Conversion aires;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_volumes;Conversion volumes;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_durees;Conversion durees;;
-grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_octets;Conversion octets;;
-geometrie;Géométrie;cercle;Cercle;;
-geometrie;Géométrie;droites;Droites;;
-geometrie;Géométrie;parallelogrammes;Parallélogrammes;;
-geometrie;Géométrie;geometrie_deductive;Géométrie déductive;;
-geometrie;Géométrie;thales;Thalès;;
-geometrie;Géométrie;pythagore;Théorème de Pythagore;;
+fractions;Fractions;addition_fractions;Addition de fractions;6E;college
+fractions;Fractions;soustraction_fractions;Soustraction de fractions;6E;college
+fractions;Fractions;multiplication_fractions;Multiplication de fractions;5E;college
+fractions;Fractions;division_fractions;Division de fractions;5E;college
+fractions;Fractions;comparaison_fractions;Comparer des fractions;6E;college
+fractions;Fractions;fractions_equivalentes;Fractions équivalentes;6E;college
+fractions;Fractions;fractions_droite;Fractions sur une droite graduée;6E;college
+fractions;Fractions;encadrement_fractions;Encadrer une fraction;6E;college
+fractions;Fractions;fraction_fois_entier;Multiplier une fraction par un entier;6E;college
+fractions;Fractions;fraction_quantite;Fraction d’une quantité;6E;college
+fractions;Fractions;fraction_quotient;Fraction et quotient;6E;college
+fractions;Fractions;terme_manquant_fractions;Terme manquant dans une fraction;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;grandeurs_mesures;Grandeurs mesures;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_longueurs;Conversion longueurs;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_masses;Conversion masses;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_contenances;Conversion contenances;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_aires;Conversion aires;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_volumes;Conversion volumes;5E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_durees;Conversion durees;6E;college
+grandeurs_mesures_conversions;Grandeurs, mesures et conversions;conversion_octets;Conversion octets;6E;college
+geometrie;Géométrie;cercle;Cercle;6E;college
+geometrie;Géométrie;droites;Droites;6E;college
+geometrie;Géométrie;parallelogrammes;Parallélogrammes;5E;college
+geometrie;Géométrie;geometrie_deductive;Géométrie déductive;6E;college
+geometrie;Géométrie;thales;Thalès;3E;college
+geometrie;Géométrie;pythagore;Théorème de Pythagore;4E;college
 geometrie;Géométrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
-calcul_litteral;Calcul littéral;developpement_identites;Développement;;
-calcul_litteral;Calcul littéral;factorisation_identites;Factorisation;;
-calcul_litteral;Calcul littéral;identites_remarquables;Identités remarquables : reconnaissance et applications;;
+calcul_litteral;Calcul littéral;developpement_identites;Développement;4E;college
+calcul_litteral;Calcul littéral;factorisation_identites;Factorisation;4E;college
+calcul_litteral;Calcul littéral;identites_remarquables;Identités remarquables : reconnaissance et applications;3E;college
 trigonometrie;Trigonométrie;trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;3E;college
 trigonometrie;Trigonométrie;cercle_trigonometrique;Cercle trigonométrique;2GT;lycee
 nombres_entiers_et_decimaux;Nombres entiers et décimaux;numeration_decimale;Numération des nombres entiers et décimaux;6E;college
@@ -45,9 +45,15 @@ calcul_avec_puissances;Calcul avec les puissances;carres_cubes;Carrés et cubes;
 calcul_avec_puissances;Calcul avec les puissances;puissances_exposant_positif;Puissances d’exposant positif;4E;college
 calcul_avec_puissances;Calcul avec les puissances;puissances_exposant_negatif;Puissances d’exposant négatif;3E;college
 calcul_avec_puissances;Calcul avec les puissances;notation_scientifique;Notation scientifique;3E;college
-calcul_avec_puissances;Calcul avec les puissances;proprietes_puissances;Propriétés complémentaires des puissances;;
-;;ensembles;Ensembles;;
-;;racine_carree;Racine carrée;;
+calcul_avec_puissances;Calcul avec les puissances;proprietes_puissances;Propriétés complémentaires des puissances;3E;college
+ensembles_et_intervalles;Ensembles et intervalles;ensembles;Ensembles;2GT;lycee
+calcul_avec_puissances;Calcul avec les puissances;racine_carree;Racine carrée;3E;college
 ensembles_et_intervalles;Ensembles et intervalles;ensembles_nombres;Ensembles de nombres;2GT;lycee
 ensembles_et_intervalles;Ensembles et intervalles;operations_ensembles;Opérations sur les ensembles;2GT;lycee
 ensembles_et_intervalles;Ensembles et intervalles;intervalles_reels;Intervalles réels;2GT;lycee
+equations;Équations;equation_produit_nul;Équation et produit nul;3E;college
+calcul_litteral;Calcul littéral;equation_produit_nul;Équation et produit nul;3E;college
+equations;Équations;equation_inconnue_deux_membres;Équation à inconnue dans les deux membres;4E;college
+calcul_litteral;Calcul littéral;equation_inconnue_deux_membres;Équation à inconnue dans les deux membres;4E;college
+calcul_litteral;Calcul littéral;factorisation_facteur_commun;Factorisation par facteur commun;4E;college
+calcul_litteral;Calcul littéral;developpement_double_distributivite;Développement par double distributivité;3E;college

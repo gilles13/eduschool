@@ -42,6 +42,22 @@
   unique(liens$notion)
 }
 
+.niveau_notion_ou_famille = function(identifiant) {
+  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  ref = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
+  lignes = ref[ref$famille == identifiant, , drop = FALSE]
+  if (!nrow(lignes)) lignes = ref[ref$notion == identifiant, , drop = FALSE]
+  niveaux = unique(lignes$niveau[nzchar(lignes$niveau)])
+  if (!length(niveaux)) return("")
+  ordre = c("CP", "CE1", "CE2", "CM1", "CM2", "6E", "5E", "4E", "3E",
+            "2GT", "1G", "TG")
+  positions = match(niveaux, ordre)
+  if (anyNA(positions)) return(paste(niveaux, collapse = " a "))
+  niveaux = niveaux[order(positions)]
+  if (length(niveaux) == 1L) niveaux[[1L]] else
+    paste(niveaux[[1L]], "a", niveaux[[length(niveaux)]])
+}
+
 #' Reperer les notions et familles disponibles
 #'
 #' Les identifiants retournes peuvent etre passes a `produire(notion = ...)`.
@@ -160,12 +176,55 @@ questions = function(notion, niveau = "") {
   list(termes = termes, reponse = resultat, quantite = quantite)
 }
 
+.remplacer_parametres_edu = function(x, valeurs) {
+  if (is.character(x)) {
+    for (nom in names(valeurs))
+      x = gsub(paste0("[[", nom, "]]"), as.character(valeurs[[nom]]),
+               x, fixed = TRUE)
+    return(x)
+  }
+  if (is.list(x)) {
+    noms = names(x)
+    x = lapply(x, .remplacer_parametres_edu, valeurs = valeurs)
+    if (!is.null(noms)) names(x) = .remplacer_parametres_edu(noms, valeurs)
+  }
+  x
+}
+
+.instancier_variante_edu = function(definition) {
+  if (length(definition$parametres))
+    stop("Parametres dynamiques interdits : ", definition$id)
+  if (!length(definition$variantes))
+    return(list(definition = definition, parametres = list(), progression = NULL))
+  variantes = definition$variantes
+  if (!is.list(variantes) || !length(variantes))
+    stop("Variantes invalides : ", definition$id)
+  variante = variantes[[sample.int(length(variantes), 1L)]]
+  valeurs = variante$parametres
+  progression = variante$progression
+  if (!is.list(valeurs) || !length(valeurs) || is.null(names(valeurs)) ||
+      any(!nzchar(names(valeurs))) || anyDuplicated(names(valeurs)) ||
+      any(!vapply(valeurs, function(x) length(x) == 1L &&
+        (is.character(x) || is.numeric(x)) && !is.na(x), logical(1))))
+    stop("Parametres de variante invalides : ", definition$id)
+  if (!is.null(progression) &&
+      (!is.numeric(progression) || length(progression) != 1L ||
+       is.na(progression) || progression < 1 || progression %% 1 != 0))
+    stop("Progression de variante invalide : ", definition$id)
+  definition$variantes = NULL
+  definition = .remplacer_parametres_edu(definition, valeurs)
+  list(definition = definition, parametres = valeurs, progression = progression)
+}
+
 #' Instancier une question (JSON local de confiance uniquement)
 #' @param definition Element de questions(notion)$questions.
 #' @export
 question = function(definition) {
-  # Fixed operands only. Editorial questions remain unchanged.
-  if (length(definition$parametres) || length(definition$distracteurs$expressions))
+  instance = .instancier_variante_edu(definition)
+  definition = instance$definition
+  valeurs = instance$parametres
+  progression = instance$progression
+  if (length(definition$distracteurs$expressions))
     stop("Parametres dynamiques interdits : ", definition$id)
   if (identical(definition$reponse$mode, "calcul_fixe")) {
     calcul = .calcul_fixe_edu(definition$reponse)
@@ -331,8 +390,64 @@ question = function(definition) {
     stop("Correction absente : ", definition$id)
   list(id = definition$id, enonce = enonce, reponse = bonne,
        propositions = propositions, correction = correction,
-       illustration = definition$illustration, parametres = list(),
-       presentation = definition$presentation, humour = definition$humour)
+       illustration = definition$illustration, parametres = valeurs,
+       progression = progression, presentation = definition$presentation,
+       humour = definition$humour)
+}
+
+.tirer_questions_quiz_edu = function(definitions, n = NULL, tirages = 1L,
+                                      melanger = FALSE, humour_ratio = 0) {
+  if (!is.list(definitions) || !length(definitions))
+    stop("Banque de questions vide")
+  if (is.null(n)) n = length(definitions)
+  stopifnot(length(n) == 1L, is.numeric(n), is.finite(n), n >= 1L,
+            n == as.integer(n), length(tirages) == 1L, is.numeric(tirages),
+            is.finite(tirages), tirages >= 1L, tirages == as.integer(tirages),
+            length(melanger) == 1L, is.logical(melanger), !is.na(melanger))
+  indices = lapply(seq_len(tirages), function(i) {
+    if (n >= length(definitions)) {
+      resultat = seq_along(definitions)
+      if (n > length(definitions)) {
+        variables = which(vapply(definitions, function(x) length(x$variantes) > 0L,
+                                 logical(1)))
+        supplement = n - length(definitions)
+        candidats = if (length(variables)) variables else seq_along(definitions)
+        if (length(candidats) == 1L) {
+          supplementaires = rep(candidats, supplement)
+        } else {
+          supplementaires = sample(candidats, supplement, replace = TRUE)
+        }
+        resultat = c(resultat, supplementaires)
+      }
+      if (melanger) resultat = sample(resultat)
+      return(resultat)
+    }
+    sample.int(length(definitions), size = n, replace = FALSE)
+  })
+  occurrences = unlist(indices, use.names = FALSE)
+  choix_variantes = vector("list", length(definitions))
+  for (i in unique(occurrences)) {
+    nombre = sum(occurrences == i)
+    variantes = definitions[[i]]$variantes
+    if (!length(variantes)) next
+    disponibles = seq_along(variantes)
+    choix = integer()
+    while (length(choix) < nombre) choix = c(choix, sample(disponibles))
+    choix_variantes[[i]] = choix[seq_len(nombre)]
+  }
+  compteurs = integer(length(definitions))
+  lapply(indices, function(selection) {
+    definitions_tirage = lapply(selection, function(i) {
+      definition = definitions[[i]]
+      if (length(definition$variantes)) {
+        compteurs[[i]] <<- compteurs[[i]] + 1L
+        j = choix_variantes[[i]][[compteurs[[i]]]]
+        definition$variantes = definition$variantes[j]
+      }
+      definition
+    })
+    .humour_edu(lapply(definitions_tirage, question), humour_ratio)
+  })
 }
 
 # Select a controlled number of eligible jokes without changing the corrections.

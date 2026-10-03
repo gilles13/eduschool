@@ -1,0 +1,681 @@
+{
+  "notion_id": "equation_produit_nul",
+  "questions": [
+    {
+      "id": "EQ-PRODUIT-NUL-001",
+      "type": "qcm",
+      "enonce": "Résoudre [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "x*(x-([[a]]))-([[b]])*(x-([[a]]))",
+        "affichage": "x(x [[signe_a]] [[abs_a]]) = [[b]](x [[signe_a]] [[abs_a]])",
+        "candidats": {
+          "x = [[a]] ou x = [[b]]": "(x-([[a]]))*(x-([[b]]))",
+          "x = [[a]]": "x-([[a]])",
+          "x = [[b]]": "x-([[b]])",
+          "x = [[a_plus_1]] ou x = [[b_plus_1]]": "(x-([[a_plus_1]]))*(x-([[b_plus_1]]))"
+        }
+      },
+      "propositions": [
+        "x = [[a]] ou x = [[b]]",
+        "x = [[a]]",
+        "x = [[b]]",
+        "x = [[a_plus_1]] ou x = [[b_plus_1]]"
+      ],
+      "correction": "On rassemble tout dans le même membre : x(x [[signe_a]] [[abs_a]]) - ([[b]])(x [[signe_a]] [[abs_a]]) = 0. On factorise par (x [[signe_a]] [[abs_a]]) : (x [[signe_a]] [[abs_a]])(x [[signe_b]] [[abs_b]]) = 0. Un produit est nul si l'un de ses facteurs est nul. Donc x = [[a]] ou x = [[b]].",
+      "variantes": [
+        {
+          "parametres": {
+            "a": 3,
+            "b": 4,
+            "signe_a": "-",
+            "abs_a": 3,
+            "signe_b": "-",
+            "abs_b": 4,
+            "a_plus_1": 4,
+            "b_plus_1": 5
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": 4,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "-",
+            "abs_b": 4,
+            "a_plus_1": 6,
+            "b_plus_1": 5
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": 2,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "-",
+            "abs_b": 2,
+            "a_plus_1": 6,
+            "b_plus_1": 3
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 2,
+            "b": 5,
+            "signe_a": "-",
+            "abs_a": 2,
+            "signe_b": "-",
+            "abs_b": 5,
+            "a_plus_1": 3,
+            "b_plus_1": 6
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": 3,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "-",
+            "abs_b": 3,
+            "a_plus_1": 6,
+            "b_plus_1": 4
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 2,
+            "b": 6,
+            "signe_a": "-",
+            "abs_a": 2,
+            "signe_b": "-",
+            "abs_b": 6,
+            "a_plus_1": 3,
+            "b_plus_1": 7
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 3,
+            "b": 6,
+            "signe_a": "-",
+            "abs_a": 3,
+            "signe_b": "-",
+            "abs_b": 6,
+            "a_plus_1": 4,
+            "b_plus_1": 7
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 4,
+            "b": 6,
+            "signe_a": "-",
+            "abs_a": 4,
+            "signe_b": "-",
+            "abs_b": 6,
+            "a_plus_1": 5,
+            "b_plus_1": 7
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": 6,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "-",
+            "abs_b": 6,
+            "a_plus_1": 6,
+            "b_plus_1": 7
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 2,
+            "b": 7,
+            "signe_a": "-",
+            "abs_a": 2,
+            "signe_b": "-",
+            "abs_b": 7,
+            "a_plus_1": 3,
+            "b_plus_1": 8
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 7,
+            "b": 2,
+            "signe_a": "-",
+            "abs_a": 7,
+            "signe_b": "-",
+            "abs_b": 2,
+            "a_plus_1": 8,
+            "b_plus_1": 3
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": 7,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "-",
+            "abs_b": 7,
+            "a_plus_1": 6,
+            "b_plus_1": 8
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 2,
+            "b": 8,
+            "signe_a": "-",
+            "abs_a": 2,
+            "signe_b": "-",
+            "abs_b": 8,
+            "a_plus_1": 3,
+            "b_plus_1": 9
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": 8,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "-",
+            "abs_b": 8,
+            "a_plus_1": 6,
+            "b_plus_1": 9
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 8,
+            "b": 7,
+            "signe_a": "-",
+            "abs_a": 8,
+            "signe_b": "-",
+            "abs_b": 7,
+            "a_plus_1": 9,
+            "b_plus_1": 8
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 8,
+            "b": 6,
+            "signe_a": "-",
+            "abs_a": 8,
+            "signe_b": "-",
+            "abs_b": 6,
+            "a_plus_1": 9,
+            "b_plus_1": 7
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 4,
+            "b": 8,
+            "signe_a": "-",
+            "abs_a": 4,
+            "signe_b": "-",
+            "abs_b": 8,
+            "a_plus_1": 5,
+            "b_plus_1": 9
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": 0,
+            "b": -1,
+            "signe_a": "-",
+            "abs_a": 0,
+            "signe_b": "+",
+            "abs_b": 1,
+            "a_plus_1": 1,
+            "b_plus_1": 0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -2,
+            "b": 1,
+            "signe_a": "+",
+            "abs_a": 2,
+            "signe_b": "-",
+            "abs_b": 1,
+            "a_plus_1": -1,
+            "b_plus_1": 2
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 0,
+            "b": 3,
+            "signe_a": "-",
+            "abs_a": 0,
+            "signe_b": "-",
+            "abs_b": 3,
+            "a_plus_1": 1,
+            "b_plus_1": 4
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 3,
+            "b": -1,
+            "signe_a": "-",
+            "abs_a": 3,
+            "signe_b": "+",
+            "abs_b": 1,
+            "a_plus_1": 4,
+            "b_plus_1": 0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -3,
+            "b": -1,
+            "signe_a": "+",
+            "abs_a": 3,
+            "signe_b": "+",
+            "abs_b": 1,
+            "a_plus_1": -2,
+            "b_plus_1": 0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 1,
+            "b": -4,
+            "signe_a": "-",
+            "abs_a": 1,
+            "signe_b": "+",
+            "abs_b": 4,
+            "a_plus_1": 2,
+            "b_plus_1": -3
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -4,
+            "b": 4,
+            "signe_a": "+",
+            "abs_a": 4,
+            "signe_b": "-",
+            "abs_b": 4,
+            "a_plus_1": -3,
+            "b_plus_1": 5
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 0,
+            "b": -5,
+            "signe_a": "-",
+            "abs_a": 0,
+            "signe_b": "+",
+            "abs_b": 5,
+            "a_plus_1": 1,
+            "b_plus_1": -4
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 4,
+            "b": -6,
+            "signe_a": "-",
+            "abs_a": 4,
+            "signe_b": "+",
+            "abs_b": 6,
+            "a_plus_1": 5,
+            "b_plus_1": -5
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -3,
+            "b": 6,
+            "signe_a": "+",
+            "abs_a": 3,
+            "signe_b": "-",
+            "abs_b": 6,
+            "a_plus_1": -2,
+            "b_plus_1": 7
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -7,
+            "b": -1,
+            "signe_a": "+",
+            "abs_a": 7,
+            "signe_b": "+",
+            "abs_b": 1,
+            "a_plus_1": -6,
+            "b_plus_1": 0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -7,
+            "b": 7,
+            "signe_a": "+",
+            "abs_a": 7,
+            "signe_b": "-",
+            "abs_b": 7,
+            "a_plus_1": -6,
+            "b_plus_1": 8
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 7,
+            "b": 1,
+            "signe_a": "-",
+            "abs_a": 7,
+            "signe_b": "-",
+            "abs_b": 1,
+            "a_plus_1": 8,
+            "b_plus_1": 2
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": 5,
+            "b": -8,
+            "signe_a": "-",
+            "abs_a": 5,
+            "signe_b": "+",
+            "abs_b": 8,
+            "a_plus_1": 6,
+            "b_plus_1": -7
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -8,
+            "b": 1,
+            "signe_a": "+",
+            "abs_a": 8,
+            "signe_b": "-",
+            "abs_b": 1,
+            "a_plus_1": -7,
+            "b_plus_1": 2
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -1,
+            "b": 8,
+            "signe_a": "+",
+            "abs_a": 1,
+            "signe_b": "-",
+            "abs_b": 8,
+            "a_plus_1": 0,
+            "b_plus_1": 9
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -3,
+            "b": 8,
+            "signe_a": "+",
+            "abs_a": 3,
+            "signe_b": "-",
+            "abs_b": 8,
+            "a_plus_1": -2,
+            "b_plus_1": 9
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": -4,
+            "b": -2,
+            "signe_a": "+",
+            "abs_a": 4,
+            "signe_b": "+",
+            "abs_b": 2,
+            "a_plus_1": -3,
+            "b_plus_1": -1
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -3,
+            "b": -4,
+            "signe_a": "+",
+            "abs_a": 3,
+            "signe_b": "+",
+            "abs_b": 4,
+            "a_plus_1": -2,
+            "b_plus_1": -3
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -3,
+            "b": -5,
+            "signe_a": "+",
+            "abs_a": 3,
+            "signe_b": "+",
+            "abs_b": 5,
+            "a_plus_1": -2,
+            "b_plus_1": -4
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -5,
+            "b": -3,
+            "signe_a": "+",
+            "abs_a": 5,
+            "signe_b": "+",
+            "abs_b": 3,
+            "a_plus_1": -4,
+            "b_plus_1": -2
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -6,
+            "b": -4,
+            "signe_a": "+",
+            "abs_a": 6,
+            "signe_b": "+",
+            "abs_b": 4,
+            "a_plus_1": -5,
+            "b_plus_1": -3
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -6,
+            "b": -2,
+            "signe_a": "+",
+            "abs_a": 6,
+            "signe_b": "+",
+            "abs_b": 2,
+            "a_plus_1": -5,
+            "b_plus_1": -1
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -2,
+            "b": -6,
+            "signe_a": "+",
+            "abs_a": 2,
+            "signe_b": "+",
+            "abs_b": 6,
+            "a_plus_1": -1,
+            "b_plus_1": -5
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -4,
+            "b": -7,
+            "signe_a": "+",
+            "abs_a": 4,
+            "signe_b": "+",
+            "abs_b": 7,
+            "a_plus_1": -3,
+            "b_plus_1": -6
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -7,
+            "b": -3,
+            "signe_a": "+",
+            "abs_a": 7,
+            "signe_b": "+",
+            "abs_b": 3,
+            "a_plus_1": -6,
+            "b_plus_1": -2
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -6,
+            "b": -7,
+            "signe_a": "+",
+            "abs_a": 6,
+            "signe_b": "+",
+            "abs_b": 7,
+            "a_plus_1": -5,
+            "b_plus_1": -6
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -2,
+            "b": -7,
+            "signe_a": "+",
+            "abs_a": 2,
+            "signe_b": "+",
+            "abs_b": 7,
+            "a_plus_1": -1,
+            "b_plus_1": -6
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -8,
+            "b": -7,
+            "signe_a": "+",
+            "abs_a": 8,
+            "signe_b": "+",
+            "abs_b": 7,
+            "a_plus_1": -7,
+            "b_plus_1": -6
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -8,
+            "b": -4,
+            "signe_a": "+",
+            "abs_a": 8,
+            "signe_b": "+",
+            "abs_b": 4,
+            "a_plus_1": -7,
+            "b_plus_1": -3
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -3,
+            "b": -8,
+            "signe_a": "+",
+            "abs_a": 3,
+            "signe_b": "+",
+            "abs_b": 8,
+            "a_plus_1": -2,
+            "b_plus_1": -7
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -8,
+            "b": -6,
+            "signe_a": "+",
+            "abs_a": 8,
+            "signe_b": "+",
+            "abs_b": 6,
+            "a_plus_1": -7,
+            "b_plus_1": -5
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": -7,
+            "b": -8,
+            "signe_a": "+",
+            "abs_a": 7,
+            "signe_b": "+",
+            "abs_b": 8,
+            "a_plus_1": -6,
+            "b_plus_1": -7
+          },
+          "progression": 3
+        }
+      ]
+    }
+  ]
+}

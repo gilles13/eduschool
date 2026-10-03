@@ -1,0 +1,983 @@
+{
+  "notion_id": "developpement_double_distributivite",
+  "questions": [
+    {
+      "id": "DEV-DOUBLE-001",
+      "type": "qcm",
+      "enonce": "Développer [[expression]].",
+      "reponse": {
+        "mode": "symbolique_fixe",
+        "moteur": "Ryacas",
+        "expression": "[[source]]",
+        "affichage": "[[produit]]",
+        "candidats": {
+          "[[bonne]]": "[[bonne_expression]]",
+          "[[d1]]": "[[d1_expression]]",
+          "[[d2]]": "[[d2_expression]]",
+          "[[d3]]": "[[d3_expression]]"
+        }
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "On distribue chacun des deux termes de la première parenthèse sur chacun des deux termes de la seconde. [[etapes]] Après réduction, on obtient [[bonne]].",
+      "variantes": [
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(𝑥 + 1)",
+            "source": "(1*x+1)*(1*x+1)",
+            "bonne": "𝑥² + 2𝑥 + 1",
+            "bonne_expression": "x^2 + 2*x + 1",
+            "d1": "𝑥² + 𝑥 + 1",
+            "d1_expression": "x^2 + x + 1",
+            "d2": "𝑥² + 1",
+            "d2_expression": "x^2 + 1",
+            "d3": "𝑥² + 2𝑥 + 2",
+            "d3_expression": "x^2 + 2*x + 2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 𝑥 = 2𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(𝑥 + 2)",
+            "source": "(1*x+1)*(1*x+2)",
+            "bonne": "𝑥² + 3𝑥 + 2",
+            "bonne_expression": "x^2 + 3*x + 2",
+            "d1": "𝑥² + 2𝑥 + 2",
+            "d1_expression": "x^2 + 2*x + 2",
+            "d2": "𝑥² + 𝑥 + 2",
+            "d2_expression": "x^2 + x + 2",
+            "d3": "𝑥² + 3𝑥 + 3",
+            "d3_expression": "x^2 + 3*x + 3",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 𝑥 = 3𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(𝑥 + 3)",
+            "source": "(1*x+1)*(1*x+3)",
+            "bonne": "𝑥² + 4𝑥 + 3",
+            "bonne_expression": "x^2 + 4*x + 3",
+            "d1": "𝑥² + 3𝑥 + 3",
+            "d1_expression": "x^2 + 3*x + 3",
+            "d2": "𝑥² + 2𝑥 + 3",
+            "d2_expression": "x^2 + 2*x + 3",
+            "d3": "𝑥² + 4𝑥 + 4",
+            "d3_expression": "x^2 + 4*x + 4",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 𝑥 = 4𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(𝑥 + 4)",
+            "source": "(1*x+1)*(1*x+4)",
+            "bonne": "𝑥² + 5𝑥 + 4",
+            "bonne_expression": "x^2 + 5*x + 4",
+            "d1": "𝑥² + 4𝑥 + 4",
+            "d1_expression": "x^2 + 4*x + 4",
+            "d2": "𝑥² + 3𝑥 + 4",
+            "d2_expression": "x^2 + 3*x + 4",
+            "d3": "𝑥² + 5𝑥 + 5",
+            "d3_expression": "x^2 + 5*x + 5",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 𝑥 = 5𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(2𝑥 + 1)",
+            "source": "(1*x+1)*(2*x+1)",
+            "bonne": "2𝑥² + 3𝑥 + 1",
+            "bonne_expression": "2*x^2 + 3*x + 1",
+            "d1": "2𝑥² + 𝑥 + 1",
+            "d1_expression": "2*x^2 + x + 1",
+            "d2": "2𝑥² − 𝑥 + 1",
+            "d2_expression": "2*x^2 - x + 1",
+            "d3": "2𝑥² + 3𝑥 + 2",
+            "d3_expression": "2*x^2 + 3*x + 2",
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 2𝑥 = 3𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(2𝑥 + 2)",
+            "source": "(1*x+1)*(2*x+2)",
+            "bonne": "2𝑥² + 4𝑥 + 2",
+            "bonne_expression": "2*x^2 + 4*x + 2",
+            "d1": "2𝑥² + 2𝑥 + 2",
+            "d1_expression": "2*x^2 + 2*x + 2",
+            "d2": "2𝑥² + 2",
+            "d2_expression": "2*x^2 + 2",
+            "d3": "2𝑥² + 4𝑥 + 3",
+            "d3_expression": "2*x^2 + 4*x + 3",
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 2𝑥 = 4𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(2𝑥 + 3)",
+            "source": "(1*x+1)*(2*x+3)",
+            "bonne": "2𝑥² + 5𝑥 + 3",
+            "bonne_expression": "2*x^2 + 5*x + 3",
+            "d1": "2𝑥² + 3𝑥 + 3",
+            "d1_expression": "2*x^2 + 3*x + 3",
+            "d2": "2𝑥² + 𝑥 + 3",
+            "d2_expression": "2*x^2 + x + 3",
+            "d3": "2𝑥² + 5𝑥 + 4",
+            "d3_expression": "2*x^2 + 5*x + 4",
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 2𝑥 = 5𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(2𝑥 + 4)",
+            "source": "(1*x+1)*(2*x+4)",
+            "bonne": "2𝑥² + 6𝑥 + 4",
+            "bonne_expression": "2*x^2 + 6*x + 4",
+            "d1": "2𝑥² + 4𝑥 + 4",
+            "d1_expression": "2*x^2 + 4*x + 4",
+            "d2": "2𝑥² + 2𝑥 + 4",
+            "d2_expression": "2*x^2 + 2*x + 4",
+            "d3": "2𝑥² + 6𝑥 + 5",
+            "d3_expression": "2*x^2 + 6*x + 5",
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 2𝑥 = 6𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(3𝑥 + 1)",
+            "source": "(1*x+1)*(3*x+1)",
+            "bonne": "3𝑥² + 4𝑥 + 1",
+            "bonne_expression": "3*x^2 + 4*x + 1",
+            "d1": "3𝑥² + 𝑥 + 1",
+            "d1_expression": "3*x^2 + x + 1",
+            "d2": "3𝑥² − 2𝑥 + 1",
+            "d2_expression": "3*x^2 - 2*x + 1",
+            "d3": "3𝑥² + 4𝑥 + 2",
+            "d3_expression": "3*x^2 + 4*x + 2",
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 3𝑥 = 4𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(3𝑥 + 2)",
+            "source": "(1*x+1)*(3*x+2)",
+            "bonne": "3𝑥² + 5𝑥 + 2",
+            "bonne_expression": "3*x^2 + 5*x + 2",
+            "d1": "3𝑥² + 2𝑥 + 2",
+            "d1_expression": "3*x^2 + 2*x + 2",
+            "d2": "3𝑥² − 𝑥 + 2",
+            "d2_expression": "3*x^2 - x + 2",
+            "d3": "3𝑥² + 5𝑥 + 3",
+            "d3_expression": "3*x^2 + 5*x + 3",
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 3𝑥 = 5𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(3𝑥 + 3)",
+            "source": "(1*x+1)*(3*x+3)",
+            "bonne": "3𝑥² + 6𝑥 + 3",
+            "bonne_expression": "3*x^2 + 6*x + 3",
+            "d1": "3𝑥² + 3𝑥 + 3",
+            "d1_expression": "3*x^2 + 3*x + 3",
+            "d2": "3𝑥² + 3",
+            "d2_expression": "3*x^2 + 3",
+            "d3": "3𝑥² + 6𝑥 + 4",
+            "d3_expression": "3*x^2 + 6*x + 4",
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 3𝑥 = 6𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 1)(3𝑥 + 4)",
+            "source": "(1*x+1)*(3*x+4)",
+            "bonne": "3𝑥² + 7𝑥 + 4",
+            "bonne_expression": "3*x^2 + 7*x + 4",
+            "d1": "3𝑥² + 4𝑥 + 4",
+            "d1_expression": "3*x^2 + 4*x + 4",
+            "d2": "3𝑥² + 𝑥 + 4",
+            "d2_expression": "3*x^2 + x + 4",
+            "d3": "3𝑥² + 7𝑥 + 5",
+            "d3_expression": "3*x^2 + 7*x + 5",
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 3𝑥 = 7𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 2)(𝑥 + 1)",
+            "source": "(1*x+2)*(1*x+1)",
+            "bonne": "𝑥² + 3𝑥 + 2",
+            "bonne_expression": "x^2 + 3*x + 2",
+            "d1": "𝑥² + 𝑥 + 2",
+            "d1_expression": "x^2 + x + 2",
+            "d2": "𝑥² − 𝑥 + 2",
+            "d2_expression": "x^2 - x + 2",
+            "d3": "𝑥² + 3𝑥 + 3",
+            "d3_expression": "x^2 + 3*x + 3",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 1 = 2. Les deux termes en 𝑥 donnent 𝑥 + 2𝑥 = 3𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 2)(𝑥 + 3)",
+            "source": "(1*x+2)*(1*x+3)",
+            "bonne": "𝑥² + 5𝑥 + 6",
+            "bonne_expression": "x^2 + 5*x + 6",
+            "d1": "𝑥² + 3𝑥 + 6",
+            "d1_expression": "x^2 + 3*x + 6",
+            "d2": "𝑥² + 𝑥 + 6",
+            "d2_expression": "x^2 + x + 6",
+            "d3": "𝑥² + 5𝑥 + 5",
+            "d3_expression": "x^2 + 5*x + 5",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 3 = 6. Les deux termes en 𝑥 donnent 3𝑥 + 2𝑥 = 5𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 2)(𝑥 + 4)",
+            "source": "(1*x+2)*(1*x+4)",
+            "bonne": "𝑥² + 6𝑥 + 8",
+            "bonne_expression": "x^2 + 6*x + 8",
+            "d1": "𝑥² + 4𝑥 + 8",
+            "d1_expression": "x^2 + 4*x + 8",
+            "d2": "𝑥² + 2𝑥 + 8",
+            "d2_expression": "x^2 + 2*x + 8",
+            "d3": "𝑥² + 6𝑥 + 6",
+            "d3_expression": "x^2 + 6*x + 6",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 4 = 8. Les deux termes en 𝑥 donnent 4𝑥 + 2𝑥 = 6𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 2)(2𝑥 + 1)",
+            "source": "(1*x+2)*(2*x+1)",
+            "bonne": "2𝑥² + 5𝑥 + 2",
+            "bonne_expression": "2*x^2 + 5*x + 2",
+            "d1": "2𝑥² + 𝑥 + 2",
+            "d1_expression": "2*x^2 + x + 2",
+            "d2": "2𝑥² − 3𝑥 + 2",
+            "d2_expression": "2*x^2 - 3*x + 2",
+            "d3": "2𝑥² + 5𝑥 + 3",
+            "d3_expression": "2*x^2 + 5*x + 3",
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 1 = 𝑥 ; 2 × 2𝑥 = 4𝑥 ; 2 × 1 = 2. Les deux termes en 𝑥 donnent 𝑥 + 4𝑥 = 5𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 + 2)(2𝑥 + 3)",
+            "source": "(1*x+2)*(2*x+3)",
+            "bonne": "2𝑥² + 7𝑥 + 6",
+            "bonne_expression": "2*x^2 + 7*x + 6",
+            "d1": "2𝑥² + 3𝑥 + 6",
+            "d1_expression": "2*x^2 + 3*x + 6",
+            "d2": "2𝑥² − 𝑥 + 6",
+            "d2_expression": "2*x^2 - x + 6",
+            "d3": "2𝑥² + 7𝑥 + 5",
+            "d3_expression": "2*x^2 + 7*x + 5",
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 3 = 3𝑥 ; 2 × 2𝑥 = 4𝑥 ; 2 × 3 = 6. Les deux termes en 𝑥 donnent 3𝑥 + 4𝑥 = 7𝑥."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 5)(𝑥 + 1)",
+            "source": "(1*x-5)*(1*x+1)",
+            "bonne": "𝑥² − 4𝑥 − 5",
+            "bonne_expression": "x^2 - 4*x - 5",
+            "d1": "𝑥² + 𝑥 − 5",
+            "d1_expression": "x^2 + x - 5",
+            "d2": "𝑥² + 6𝑥 − 5",
+            "d2_expression": "x^2 + 6*x - 5",
+            "d3": "𝑥² − 4𝑥 − 4",
+            "d3_expression": "x^2 - 4*x - 4",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 1 = −5. Les deux termes en 𝑥 donnent 𝑥 + −5𝑥 = −4𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 5)(𝑥 + 2)",
+            "source": "(1*x-5)*(1*x+2)",
+            "bonne": "𝑥² − 3𝑥 − 10",
+            "bonne_expression": "x^2 - 3*x - 10",
+            "d1": "𝑥² + 2𝑥 − 10",
+            "d1_expression": "x^2 + 2*x - 10",
+            "d2": "𝑥² + 7𝑥 − 10",
+            "d2_expression": "x^2 + 7*x - 10",
+            "d3": "𝑥² − 3𝑥 − 3",
+            "d3_expression": "x^2 - 3*x - 3",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 2 = −10. Les deux termes en 𝑥 donnent 2𝑥 + −5𝑥 = −3𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 5)(𝑥 + 3)",
+            "source": "(1*x-5)*(1*x+3)",
+            "bonne": "𝑥² − 2𝑥 − 15",
+            "bonne_expression": "x^2 - 2*x - 15",
+            "d1": "𝑥² + 3𝑥 − 15",
+            "d1_expression": "x^2 + 3*x - 15",
+            "d2": "𝑥² + 8𝑥 − 15",
+            "d2_expression": "x^2 + 8*x - 15",
+            "d3": "𝑥² − 2𝑥 − 2",
+            "d3_expression": "x^2 - 2*x - 2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 3 = −15. Les deux termes en 𝑥 donnent 3𝑥 + −5𝑥 = −2𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 5)(𝑥 + 4)",
+            "source": "(1*x-5)*(1*x+4)",
+            "bonne": "𝑥² − 𝑥 − 20",
+            "bonne_expression": "x^2 - x - 20",
+            "d1": "𝑥² + 4𝑥 − 20",
+            "d1_expression": "x^2 + 4*x - 20",
+            "d2": "𝑥² + 9𝑥 − 20",
+            "d2_expression": "x^2 + 9*x - 20",
+            "d3": "𝑥² − 𝑥 − 1",
+            "d3_expression": "x^2 - x - 1",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 4 = −20. Les deux termes en 𝑥 donnent 4𝑥 + −5𝑥 = −𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 5)(𝑥 + 5)",
+            "source": "(1*x-5)*(1*x+5)",
+            "bonne": "𝑥² − 25",
+            "bonne_expression": "x^2 - 25",
+            "d1": "𝑥² + 5𝑥 − 25",
+            "d1_expression": "x^2 + 5*x - 25",
+            "d2": "𝑥² + 10𝑥 − 25",
+            "d2_expression": "x^2 + 10*x - 25",
+            "d3": "𝑥²",
+            "d3_expression": "x^2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 5 = −25. Les deux termes en 𝑥 donnent 5𝑥 + −5𝑥 = 0𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 4)(𝑥 + 1)",
+            "source": "(1*x-4)*(1*x+1)",
+            "bonne": "𝑥² − 3𝑥 − 4",
+            "bonne_expression": "x^2 - 3*x - 4",
+            "d1": "𝑥² + 𝑥 − 4",
+            "d1_expression": "x^2 + x - 4",
+            "d2": "𝑥² + 5𝑥 − 4",
+            "d2_expression": "x^2 + 5*x - 4",
+            "d3": "𝑥² − 3𝑥 − 3",
+            "d3_expression": "x^2 - 3*x - 3",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 1 = −4. Les deux termes en 𝑥 donnent 𝑥 + −4𝑥 = −3𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 4)(𝑥 + 2)",
+            "source": "(1*x-4)*(1*x+2)",
+            "bonne": "𝑥² − 2𝑥 − 8",
+            "bonne_expression": "x^2 - 2*x - 8",
+            "d1": "𝑥² + 2𝑥 − 8",
+            "d1_expression": "x^2 + 2*x - 8",
+            "d2": "𝑥² + 6𝑥 − 8",
+            "d2_expression": "x^2 + 6*x - 8",
+            "d3": "𝑥² − 2𝑥 − 2",
+            "d3_expression": "x^2 - 2*x - 2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 2 = −8. Les deux termes en 𝑥 donnent 2𝑥 + −4𝑥 = −2𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 4)(𝑥 + 3)",
+            "source": "(1*x-4)*(1*x+3)",
+            "bonne": "𝑥² − 𝑥 − 12",
+            "bonne_expression": "x^2 - x - 12",
+            "d1": "𝑥² + 3𝑥 − 12",
+            "d1_expression": "x^2 + 3*x - 12",
+            "d2": "𝑥² + 7𝑥 − 12",
+            "d2_expression": "x^2 + 7*x - 12",
+            "d3": "𝑥² − 𝑥 − 1",
+            "d3_expression": "x^2 - x - 1",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 3 = −12. Les deux termes en 𝑥 donnent 3𝑥 + −4𝑥 = −𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 4)(𝑥 + 4)",
+            "source": "(1*x-4)*(1*x+4)",
+            "bonne": "𝑥² − 16",
+            "bonne_expression": "x^2 - 16",
+            "d1": "𝑥² + 4𝑥 − 16",
+            "d1_expression": "x^2 + 4*x - 16",
+            "d2": "𝑥² + 8𝑥 − 16",
+            "d2_expression": "x^2 + 8*x - 16",
+            "d3": "𝑥²",
+            "d3_expression": "x^2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 4 = −16. Les deux termes en 𝑥 donnent 4𝑥 + −4𝑥 = 0𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 4)(𝑥 + 5)",
+            "source": "(1*x-4)*(1*x+5)",
+            "bonne": "𝑥² + 𝑥 − 20",
+            "bonne_expression": "x^2 + x - 20",
+            "d1": "𝑥² + 5𝑥 − 20",
+            "d1_expression": "x^2 + 5*x - 20",
+            "d2": "𝑥² + 9𝑥 − 20",
+            "d2_expression": "x^2 + 9*x - 20",
+            "d3": "𝑥² + 𝑥 + 1",
+            "d3_expression": "x^2 + x + 1",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 5 = −20. Les deux termes en 𝑥 donnent 5𝑥 + −4𝑥 = 𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 3)(𝑥 + 1)",
+            "source": "(1*x-3)*(1*x+1)",
+            "bonne": "𝑥² − 2𝑥 − 3",
+            "bonne_expression": "x^2 - 2*x - 3",
+            "d1": "𝑥² + 𝑥 − 3",
+            "d1_expression": "x^2 + x - 3",
+            "d2": "𝑥² + 4𝑥 − 3",
+            "d2_expression": "x^2 + 4*x - 3",
+            "d3": "𝑥² − 2𝑥 − 2",
+            "d3_expression": "x^2 - 2*x - 2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 1 = −3. Les deux termes en 𝑥 donnent 𝑥 + −3𝑥 = −2𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 3)(𝑥 + 2)",
+            "source": "(1*x-3)*(1*x+2)",
+            "bonne": "𝑥² − 𝑥 − 6",
+            "bonne_expression": "x^2 - x - 6",
+            "d1": "𝑥² + 2𝑥 − 6",
+            "d1_expression": "x^2 + 2*x - 6",
+            "d2": "𝑥² + 5𝑥 − 6",
+            "d2_expression": "x^2 + 5*x - 6",
+            "d3": "𝑥² − 𝑥 − 1",
+            "d3_expression": "x^2 - x - 1",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 2 = −6. Les deux termes en 𝑥 donnent 2𝑥 + −3𝑥 = −𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 3)(𝑥 + 3)",
+            "source": "(1*x-3)*(1*x+3)",
+            "bonne": "𝑥² − 9",
+            "bonne_expression": "x^2 - 9",
+            "d1": "𝑥² + 3𝑥 − 9",
+            "d1_expression": "x^2 + 3*x - 9",
+            "d2": "𝑥² + 6𝑥 − 9",
+            "d2_expression": "x^2 + 6*x - 9",
+            "d3": "𝑥²",
+            "d3_expression": "x^2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 3 = −9. Les deux termes en 𝑥 donnent 3𝑥 + −3𝑥 = 0𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 3)(𝑥 + 4)",
+            "source": "(1*x-3)*(1*x+4)",
+            "bonne": "𝑥² + 𝑥 − 12",
+            "bonne_expression": "x^2 + x - 12",
+            "d1": "𝑥² + 4𝑥 − 12",
+            "d1_expression": "x^2 + 4*x - 12",
+            "d2": "𝑥² + 7𝑥 − 12",
+            "d2_expression": "x^2 + 7*x - 12",
+            "d3": "𝑥² + 𝑥 + 1",
+            "d3_expression": "x^2 + x + 1",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 4 = −12. Les deux termes en 𝑥 donnent 4𝑥 + −3𝑥 = 𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 3)(𝑥 + 5)",
+            "source": "(1*x-3)*(1*x+5)",
+            "bonne": "𝑥² + 2𝑥 − 15",
+            "bonne_expression": "x^2 + 2*x - 15",
+            "d1": "𝑥² + 5𝑥 − 15",
+            "d1_expression": "x^2 + 5*x - 15",
+            "d2": "𝑥² + 8𝑥 − 15",
+            "d2_expression": "x^2 + 8*x - 15",
+            "d3": "𝑥² + 2𝑥 + 2",
+            "d3_expression": "x^2 + 2*x + 2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 5 = −15. Les deux termes en 𝑥 donnent 5𝑥 + −3𝑥 = 2𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 2)(𝑥 + 1)",
+            "source": "(1*x-2)*(1*x+1)",
+            "bonne": "𝑥² − 𝑥 − 2",
+            "bonne_expression": "x^2 - x - 2",
+            "d1": "𝑥² + 𝑥 − 2",
+            "d1_expression": "x^2 + x - 2",
+            "d2": "𝑥² + 3𝑥 − 2",
+            "d2_expression": "x^2 + 3*x - 2",
+            "d3": "𝑥² − 𝑥 − 1",
+            "d3_expression": "x^2 - x - 1",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −2 × 𝑥 = −2𝑥 ; −2 × 1 = −2. Les deux termes en 𝑥 donnent 𝑥 + −2𝑥 = −𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(𝑥 − 2)(𝑥 + 2)",
+            "source": "(1*x-2)*(1*x+2)",
+            "bonne": "𝑥² − 4",
+            "bonne_expression": "x^2 - 4",
+            "d1": "𝑥² + 2𝑥 − 4",
+            "d1_expression": "x^2 + 2*x - 4",
+            "d2": "𝑥² + 4𝑥 − 4",
+            "d2_expression": "x^2 + 4*x - 4",
+            "d3": "𝑥²",
+            "d3_expression": "x^2",
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −2 × 𝑥 = −2𝑥 ; −2 × 2 = −4. Les deux termes en 𝑥 donnent 2𝑥 + −2𝑥 = 0𝑥."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 5)(-3𝑥 − 5)",
+            "source": "(-3*x-5)*(-3*x-5)",
+            "bonne": "9𝑥² + 30𝑥 + 25",
+            "bonne_expression": "9*x^2 + 30*x + 25",
+            "d1": "9𝑥² + 15𝑥 + 25",
+            "d1_expression": "9*x^2 + 15*x + 25",
+            "d2": "9𝑥² + 25",
+            "d2_expression": "9*x^2 + 25",
+            "d3": "9𝑥² + 30𝑥 − 10",
+            "d3_expression": "9*x^2 + 30*x - 10",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −5 = 25. Les deux termes en 𝑥 donnent 15𝑥 + 15𝑥 = 30𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 5)(-3𝑥 − 4)",
+            "source": "(-3*x-5)*(-3*x-4)",
+            "bonne": "9𝑥² + 27𝑥 + 20",
+            "bonne_expression": "9*x^2 + 27*x + 20",
+            "d1": "9𝑥² + 12𝑥 + 20",
+            "d1_expression": "9*x^2 + 12*x + 20",
+            "d2": "9𝑥² − 3𝑥 + 20",
+            "d2_expression": "9*x^2 - 3*x + 20",
+            "d3": "9𝑥² + 27𝑥 − 9",
+            "d3_expression": "9*x^2 + 27*x - 9",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −4 = 20. Les deux termes en 𝑥 donnent 12𝑥 + 15𝑥 = 27𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 5)(-3𝑥 − 3)",
+            "source": "(-3*x-5)*(-3*x-3)",
+            "bonne": "9𝑥² + 24𝑥 + 15",
+            "bonne_expression": "9*x^2 + 24*x + 15",
+            "d1": "9𝑥² + 9𝑥 + 15",
+            "d1_expression": "9*x^2 + 9*x + 15",
+            "d2": "9𝑥² − 6𝑥 + 15",
+            "d2_expression": "9*x^2 - 6*x + 15",
+            "d3": "9𝑥² + 24𝑥 − 8",
+            "d3_expression": "9*x^2 + 24*x - 8",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −3 = 15. Les deux termes en 𝑥 donnent 9𝑥 + 15𝑥 = 24𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 5)(-3𝑥 − 2)",
+            "source": "(-3*x-5)*(-3*x-2)",
+            "bonne": "9𝑥² + 21𝑥 + 10",
+            "bonne_expression": "9*x^2 + 21*x + 10",
+            "d1": "9𝑥² + 6𝑥 + 10",
+            "d1_expression": "9*x^2 + 6*x + 10",
+            "d2": "9𝑥² − 9𝑥 + 10",
+            "d2_expression": "9*x^2 - 9*x + 10",
+            "d3": "9𝑥² + 21𝑥 − 7",
+            "d3_expression": "9*x^2 + 21*x - 7",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −2 = 10. Les deux termes en 𝑥 donnent 6𝑥 + 15𝑥 = 21𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 5)(-3𝑥 − 1)",
+            "source": "(-3*x-5)*(-3*x-1)",
+            "bonne": "9𝑥² + 18𝑥 + 5",
+            "bonne_expression": "9*x^2 + 18*x + 5",
+            "d1": "9𝑥² + 3𝑥 + 5",
+            "d1_expression": "9*x^2 + 3*x + 5",
+            "d2": "9𝑥² − 12𝑥 + 5",
+            "d2_expression": "9*x^2 - 12*x + 5",
+            "d3": "9𝑥² + 18𝑥 − 6",
+            "d3_expression": "9*x^2 + 18*x - 6",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −1 = 5. Les deux termes en 𝑥 donnent 3𝑥 + 15𝑥 = 18𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 4)(-3𝑥 − 5)",
+            "source": "(-3*x-4)*(-3*x-5)",
+            "bonne": "9𝑥² + 27𝑥 + 20",
+            "bonne_expression": "9*x^2 + 27*x + 20",
+            "d1": "9𝑥² + 15𝑥 + 20",
+            "d1_expression": "9*x^2 + 15*x + 20",
+            "d2": "9𝑥² + 3𝑥 + 20",
+            "d2_expression": "9*x^2 + 3*x + 20",
+            "d3": "9𝑥² + 27𝑥 − 9",
+            "d3_expression": "9*x^2 + 27*x - 9",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −5 = 20. Les deux termes en 𝑥 donnent 15𝑥 + 12𝑥 = 27𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 4)(-3𝑥 − 4)",
+            "source": "(-3*x-4)*(-3*x-4)",
+            "bonne": "9𝑥² + 24𝑥 + 16",
+            "bonne_expression": "9*x^2 + 24*x + 16",
+            "d1": "9𝑥² + 12𝑥 + 16",
+            "d1_expression": "9*x^2 + 12*x + 16",
+            "d2": "9𝑥² + 16",
+            "d2_expression": "9*x^2 + 16",
+            "d3": "9𝑥² + 24𝑥 − 8",
+            "d3_expression": "9*x^2 + 24*x - 8",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −4 = 16. Les deux termes en 𝑥 donnent 12𝑥 + 12𝑥 = 24𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 4)(-3𝑥 − 3)",
+            "source": "(-3*x-4)*(-3*x-3)",
+            "bonne": "9𝑥² + 21𝑥 + 12",
+            "bonne_expression": "9*x^2 + 21*x + 12",
+            "d1": "9𝑥² + 9𝑥 + 12",
+            "d1_expression": "9*x^2 + 9*x + 12",
+            "d2": "9𝑥² − 3𝑥 + 12",
+            "d2_expression": "9*x^2 - 3*x + 12",
+            "d3": "9𝑥² + 21𝑥 − 7",
+            "d3_expression": "9*x^2 + 21*x - 7",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −3 = 12. Les deux termes en 𝑥 donnent 9𝑥 + 12𝑥 = 21𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 4)(-3𝑥 − 2)",
+            "source": "(-3*x-4)*(-3*x-2)",
+            "bonne": "9𝑥² + 18𝑥 + 8",
+            "bonne_expression": "9*x^2 + 18*x + 8",
+            "d1": "9𝑥² + 6𝑥 + 8",
+            "d1_expression": "9*x^2 + 6*x + 8",
+            "d2": "9𝑥² − 6𝑥 + 8",
+            "d2_expression": "9*x^2 - 6*x + 8",
+            "d3": "9𝑥² + 18𝑥 − 6",
+            "d3_expression": "9*x^2 + 18*x - 6",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −2 = 8. Les deux termes en 𝑥 donnent 6𝑥 + 12𝑥 = 18𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 4)(-3𝑥 − 1)",
+            "source": "(-3*x-4)*(-3*x-1)",
+            "bonne": "9𝑥² + 15𝑥 + 4",
+            "bonne_expression": "9*x^2 + 15*x + 4",
+            "d1": "9𝑥² + 3𝑥 + 4",
+            "d1_expression": "9*x^2 + 3*x + 4",
+            "d2": "9𝑥² − 9𝑥 + 4",
+            "d2_expression": "9*x^2 - 9*x + 4",
+            "d3": "9𝑥² + 15𝑥 − 5",
+            "d3_expression": "9*x^2 + 15*x - 5",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −1 = 4. Les deux termes en 𝑥 donnent 3𝑥 + 12𝑥 = 15𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 3)(-3𝑥 − 5)",
+            "source": "(-3*x-3)*(-3*x-5)",
+            "bonne": "9𝑥² + 24𝑥 + 15",
+            "bonne_expression": "9*x^2 + 24*x + 15",
+            "d1": "9𝑥² + 15𝑥 + 15",
+            "d1_expression": "9*x^2 + 15*x + 15",
+            "d2": "9𝑥² + 6𝑥 + 15",
+            "d2_expression": "9*x^2 + 6*x + 15",
+            "d3": "9𝑥² + 24𝑥 − 8",
+            "d3_expression": "9*x^2 + 24*x - 8",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −5 = 15. Les deux termes en 𝑥 donnent 15𝑥 + 9𝑥 = 24𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 3)(-3𝑥 − 4)",
+            "source": "(-3*x-3)*(-3*x-4)",
+            "bonne": "9𝑥² + 21𝑥 + 12",
+            "bonne_expression": "9*x^2 + 21*x + 12",
+            "d1": "9𝑥² + 12𝑥 + 12",
+            "d1_expression": "9*x^2 + 12*x + 12",
+            "d2": "9𝑥² + 3𝑥 + 12",
+            "d2_expression": "9*x^2 + 3*x + 12",
+            "d3": "9𝑥² + 21𝑥 − 7",
+            "d3_expression": "9*x^2 + 21*x - 7",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −4 = 12. Les deux termes en 𝑥 donnent 12𝑥 + 9𝑥 = 21𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 3)(-3𝑥 − 3)",
+            "source": "(-3*x-3)*(-3*x-3)",
+            "bonne": "9𝑥² + 18𝑥 + 9",
+            "bonne_expression": "9*x^2 + 18*x + 9",
+            "d1": "9𝑥² + 9𝑥 + 9",
+            "d1_expression": "9*x^2 + 9*x + 9",
+            "d2": "9𝑥² + 9",
+            "d2_expression": "9*x^2 + 9",
+            "d3": "9𝑥² + 18𝑥 − 6",
+            "d3_expression": "9*x^2 + 18*x - 6",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −3 = 9. Les deux termes en 𝑥 donnent 9𝑥 + 9𝑥 = 18𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 3)(-3𝑥 − 2)",
+            "source": "(-3*x-3)*(-3*x-2)",
+            "bonne": "9𝑥² + 15𝑥 + 6",
+            "bonne_expression": "9*x^2 + 15*x + 6",
+            "d1": "9𝑥² + 6𝑥 + 6",
+            "d1_expression": "9*x^2 + 6*x + 6",
+            "d2": "9𝑥² − 3𝑥 + 6",
+            "d2_expression": "9*x^2 - 3*x + 6",
+            "d3": "9𝑥² + 15𝑥 − 5",
+            "d3_expression": "9*x^2 + 15*x - 5",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −2 = 6. Les deux termes en 𝑥 donnent 6𝑥 + 9𝑥 = 15𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 3)(-3𝑥 − 1)",
+            "source": "(-3*x-3)*(-3*x-1)",
+            "bonne": "9𝑥² + 12𝑥 + 3",
+            "bonne_expression": "9*x^2 + 12*x + 3",
+            "d1": "9𝑥² + 3𝑥 + 3",
+            "d1_expression": "9*x^2 + 3*x + 3",
+            "d2": "9𝑥² − 6𝑥 + 3",
+            "d2_expression": "9*x^2 - 6*x + 3",
+            "d3": "9𝑥² + 12𝑥 − 4",
+            "d3_expression": "9*x^2 + 12*x - 4",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −1 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 9𝑥 = 12𝑥."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(-3𝑥 − 2)(-3𝑥 − 5)",
+            "source": "(-3*x-2)*(-3*x-5)",
+            "bonne": "9𝑥² + 21𝑥 + 10",
+            "bonne_expression": "9*x^2 + 21*x + 10",
+            "d1": "9𝑥² + 15𝑥 + 10",
+            "d1_expression": "9*x^2 + 15*x + 10",
+            "d2": "9𝑥² + 9𝑥 + 10",
+            "d2_expression": "9*x^2 + 9*x + 10",
+            "d3": "9𝑥² + 21𝑥 − 7",
+            "d3_expression": "9*x^2 + 21*x - 7",
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −2 × −3𝑥 = 6𝑥 ; −2 × −5 = 10. Les deux termes en 𝑥 donnent 15𝑥 + 6𝑥 = 21𝑥."
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "DEV-DOUBLE-QUATRE-PRODUITS",
+      "type": "qcm",
+      "enonce": "Pour développer (2𝑥 + 3)(𝑥 + 4), quels produits faut-il calculer avant de réduire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4"
+      },
+      "propositions": [
+        "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4",
+        "2𝑥 × 𝑥 et 3 × 4 seulement",
+        "2𝑥 × 4 et 3 × 𝑥 seulement",
+        "2𝑥 × 𝑥, puis 3 × 4 et on additionne 3 et 4"
+      ],
+      "correction": "La double distributivité fait intervenir chacun des deux termes de la première parenthèse avec chacun des deux termes de la seconde : il y a donc quatre produits."
+    },
+    {
+      "id": "DEV-DOUBLE-TERME-CROISE",
+      "type": "qcm",
+      "enonce": "Dans le développement de (𝑥 + 3)(𝑥 + 5), d’où vient le terme 8𝑥 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés"
+      },
+      "propositions": [
+        "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés",
+        "de 3 × 5",
+        "de 𝑥 × 𝑥",
+        "de 𝑥 + 3 + 𝑥 + 5"
+      ],
+      "correction": "Les produits croisés sont 𝑥 × 5 = 5𝑥 et 3 × 𝑥 = 3𝑥. Leur somme donne 8𝑥."
+    },
+    {
+      "id": "DEV-DOUBLE-MOT-A-TROU",
+      "type": "qcm",
+      "enonce": "Pour développer (a + b)(c + d), on multiplie chaque terme de la première parenthèse par chaque terme de la seconde. Quel mot désigne cette propriété ? Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "distributivité": "d _ _ _ _ _ _ _ _ _ _ é",
+          "factorisation": "f _ _ _ _ _ _ _ _ _ n",
+          "réduction": "r _ _ _ _ _ _ n",
+          "équation": "é _ _ _ _ _ n"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "distributivité"
+      },
+      "propositions": [
+        "distributivité",
+        "factorisation",
+        "réduction",
+        "équation"
+      ],
+      "correction": "La distributivité permet de multiplier chaque terme d’une parenthèse par les termes de l’autre. Avec deux termes dans chaque parenthèse, on obtient quatre produits avant réduction."
+    },
+    {
+      "id": "DEV-DOUBLE-MOT-MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on deux termes qui ont la même partie littérale et que l’on peut regrouper lors de la réduction ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "termes semblables": "T________S",
+          "produits croisés": "P________S",
+          "facteurs communs": "F________S",
+          "identités remarquables": "I________S"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "termes semblables"
+      },
+      "propositions": [
+        "termes semblables",
+        "produits croisés",
+        "facteurs communs",
+        "identités remarquables"
+      ],
+      "correction": "Des termes semblables ont la même partie littérale. Après la double distributivité, on regroupe par exemple 8𝑥 et 3𝑥 pour obtenir 11𝑥."
+    },
+    {
+      "id": "DEV-DOUBLE-BOITE-PRODUIT",
+      "type": "qcm",
+      "enonce": "Soit le développement de [[produit]]. Quel terme doit remplacer □ dans [[developpement_trou]] ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[reponse]]"
+      },
+      "propositions": [
+        "[[reponse]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Le terme manquant vient du produit [[calcul]]. On obtient [[reponse]].",
+      "variantes": [
+        {
+          "parametres": {
+            "produit": "(2𝑥 + 3)(𝑥 + 4)",
+            "developpement_trou": "2𝑥² + □ + 3𝑥 + 12",
+            "reponse": "8𝑥",
+            "d1": "6𝑥",
+            "d2": "4𝑥",
+            "d3": "8",
+            "calcul": "2𝑥 × 4 = 8𝑥"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "produit": "(3𝑥 − 2)(2𝑥 + 5)",
+            "developpement_trou": "6𝑥² + 15𝑥 + □ − 10",
+            "reponse": "−4𝑥",
+            "d1": "4𝑥",
+            "d2": "−10𝑥",
+            "d3": "−4",
+            "calcul": "−2 × 2𝑥 = −4𝑥"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "produit": "(−2𝑥 + 3)(3𝑥 − 4)",
+            "developpement_trou": "−6𝑥² + □ + 9𝑥 − 12",
+            "reponse": "8𝑥",
+            "d1": "−8𝑥",
+            "d2": "12𝑥",
+            "d3": "8",
+            "calcul": "−2𝑥 × (−4) = 8𝑥"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "produit": "(4𝑥 − 5)(−2𝑥 + 3)",
+            "developpement_trou": "−8𝑥² + 12𝑥 + □ − 15",
+            "reponse": "10𝑥",
+            "d1": "−10𝑥",
+            "d2": "−15𝑥",
+            "d3": "10",
+            "calcul": "−5 × (−2𝑥) = 10𝑥"
+          },
+          "progression": 3
+        }
+      ]
+    }
+  ]
+}
