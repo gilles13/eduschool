@@ -1,0 +1,274 @@
+{
+  "notion_id": "fractions_comparaison",
+  "questions": [
+    {
+      "id": "FRAC-MIG-COMPARAISON-FRACTIONS-001",
+      "type": "qcm",
+      "enonce": "Quel signe complète correctement [[source]] ?",
+      "reponse": {
+        "mode": "relation_fixe",
+        "moteur": "Ryacas",
+        "relation": "comparaison",
+        "expression": "1/2",
+        "autre": "2/3",
+        "affichage": "1/2 et 2/3",
+        "candidats": {
+          "<": "<",
+          ">": ">",
+          "=": "=",
+          "≥": "≥"
+        }
+      },
+      "propositions": [
+        "<",
+        ">",
+        "=",
+        "≥"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Pour comparer deux fractions, on peut les écrire avec un dénominateur commun.\nJ’en déduis : 1/2 = 3/6 et 2/3 = 4/6 ; 3/6 est strictement inférieur à 4/6."
+    },
+    {
+      "id": "FRA-VAR-COMP-001",
+      "type": "qcm",
+      "enonce": "Quelle comparaison entre [[f1]] et [[f2]] est correcte ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "f1": "1/2",
+            "f2": "2/3",
+            "bonne": "1/2 < 2/3",
+            "d1": "1/2 > 2/3",
+            "d2": "1/2 = 2/3",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 1/2 et 2/3 : 1/2 < 2/3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/4",
+            "f2": "5/8",
+            "bonne": "3/4 > 5/8",
+            "d1": "3/4 < 5/8",
+            "d2": "3/4 = 5/8",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 3/4 et 5/8 : 3/4 > 5/8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
+            "f2": "2/5",
+            "bonne": "2/5 = 2/5",
+            "d1": "2/5 < 2/5",
+            "d2": "2/5 > 2/5",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 2/5 et 2/5 : 2/5 = 2/5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "5/6",
+            "f2": "7/9",
+            "bonne": "5/6 > 7/9",
+            "d1": "5/6 < 7/9",
+            "d2": "5/6 = 7/9",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 5/6 et 7/9 : 5/6 > 7/9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/7",
+            "f2": "4/9",
+            "bonne": "3/7 < 4/9",
+            "d1": "3/7 > 4/9",
+            "d2": "3/7 = 4/9",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 3/7 et 4/9 : 3/7 < 4/9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "7/8",
+            "f2": "13/16",
+            "bonne": "7/8 > 13/16",
+            "d1": "7/8 < 13/16",
+            "d2": "7/8 = 13/16",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 7/8 et 13/16 : 7/8 > 13/16."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "5/12",
+            "f2": "3/8",
+            "bonne": "5/12 > 3/8",
+            "d1": "5/12 < 3/8",
+            "d2": "5/12 = 3/8",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 5/12 et 3/8 : 5/12 > 3/8."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "4/5",
+            "f2": "9/10",
+            "bonne": "4/5 < 9/10",
+            "d1": "4/5 > 9/10",
+            "d2": "4/5 = 9/10",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 4/5 et 9/10 : 4/5 < 9/10."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "7/15",
+            "f2": "7/15",
+            "bonne": "7/15 = 7/15",
+            "d1": "7/15 < 7/15",
+            "d2": "7/15 > 7/15",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 7/15 et 7/15 : 7/15 = 7/15."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "11/12",
+            "f2": "10/11",
+            "bonne": "11/12 > 10/11",
+            "d1": "11/12 < 10/11",
+            "d2": "11/12 = 10/11",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 11/12 et 10/11 : 11/12 > 10/11."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "5/9",
+            "f2": "7/12",
+            "bonne": "5/9 < 7/12",
+            "d1": "5/9 > 7/12",
+            "d2": "5/9 = 7/12",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 5/9 et 7/12 : 5/9 < 7/12."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "13/20",
+            "f2": "2/3",
+            "bonne": "13/20 < 2/3",
+            "d1": "13/20 > 2/3",
+            "d2": "13/20 = 2/3",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 13/20 et 2/3 : 13/20 < 2/3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "8/15",
+            "f2": "5/9",
+            "bonne": "8/15 < 5/9",
+            "d1": "8/15 > 5/9",
+            "d2": "8/15 = 5/9",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 8/15 et 5/9 : 8/15 < 5/9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "17/24",
+            "f2": "7/10",
+            "bonne": "17/24 > 7/10",
+            "d1": "17/24 < 7/10",
+            "d2": "17/24 = 7/10",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 17/24 et 7/10 : 17/24 > 7/10."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "9/14",
+            "f2": "13/21",
+            "bonne": "9/14 > 13/21",
+            "d1": "9/14 < 13/21",
+            "d2": "9/14 = 13/21",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 9/14 et 13/21 : 9/14 > 13/21."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "19/30",
+            "f2": "5/8",
+            "bonne": "19/30 > 5/8",
+            "d1": "19/30 < 5/8",
+            "d2": "19/30 = 5/8",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 19/30 et 5/8 : 19/30 > 5/8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "11/18",
+            "f2": "7/12",
+            "bonne": "11/18 > 7/12",
+            "d1": "11/18 < 7/12",
+            "d2": "11/18 = 7/12",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 11/18 et 7/12 : 11/18 > 7/12."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "23/35",
+            "f2": "13/20",
+            "bonne": "23/35 > 13/20",
+            "d1": "23/35 < 13/20",
+            "d2": "23/35 = 13/20",
+            "d3": "Ces deux fractions ne sont pas comparables",
+            "correction": "On compare 23/35 et 13/20 : 23/35 > 13/20."
+          },
+          "progression": 3
+        }
+      ],
+      "presentation": {
+        "math": [
+          "f1",
+          "f2",
+          "bonne",
+          "d1",
+          "d2"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+rubrique_id;programme_id;theme_item_id;niveau;rubrique;texte_officiel_extrait;page_debut;page_fin;source_id;controle_formules
+ITM_MAT_2GT_2026_01_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_01;2GT;OBJECTIFS;"L'apprentissage des notations mathématiques et de la logique est transversal à tous les chapitres du programme. Aussi, il importe d'y travailler d’abord dans des contextes où ils se présentent naturellement, puis de prévoir des temps où les concepts et types de raisonnement sont étudiés, après avoir été́ rencontrés plusieurs fois en situation. Les élèves doivent connaitre les notions d’élément d’un ensemble, de sous-ensemble, d’ensemble vide, d’appartenance et d’inclusion, de réunion, d’intersection et de complémentaire et savoir utiliser les symboles de base correspondants : Ø, ∈, ⊂, ∩, ∪, {…}, ainsi que la notation des ensembles de nombres et des intervalles. Ils rencontrent également la notion de couple et celle de produit cartésien de deux ensembles. Pour le complémentaire d’un sous-ensemble A de E, on utilise la notation A ̅ des probabilités, ou la notation E \ A. On utilise la notation Card(A) pour le cardinal (nombre d’éléments) d’un ensemble fini A. Les élèves apprennent en situation à :
+− reconnaitre ce qu'est une proposition mathématique, à utiliser des variables pour écrire des propositions mathématiques ;
+− lire et écrire des propositions contenant les connecteurs « et », « ou » ;
+− formuler la négation de propositions simples (sans implication ni quantificateurs) ;
+− mobiliser un contre-exemple pour montrer qu'une proposition est fausse ;
+− formuler une implication, une équivalence logique, et à les mobiliser dans un raisonnement simple ;
+− formuler la réciproque d’une implication, la contraposée ;
+− lire et écrire des propositions contenant une quantification universelle ou existentielle (les symboles ∀ et ∃ sont hors programme). Par ailleurs, les élèves produisent des raisonnements par disjonction des cas et par l'absurde.";4;4;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_03_CONTENUS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;CONTENUS;"− Variables informatiques de type entier, booléen, flottant, chaine de caractères.
+− Affectation (notée ← en langage naturel).
+− Séquence d’instructions.
+− Instruction conditionnelle.
+− Boucle bornée (for), boucle non bornée (while).";4;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_03_CAPACITES_ATTENDUES_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_03;2GT;CAPACITES_ATTENDUES;"− Choisir ou déterminer le type d’une variable (entier, flottant ou chaine de caractères).
+− Concevoir et écrire une instruction d’affectation, une séquence d’instructions, une instruction conditionnelle.
+− Écrire une formule permettant un calcul combinant des variables.
+− Programmer, dans des cas simples, une boucle bornée, une boucle non bornée.
+− Dans des cas plus complexes : lire, comprendre, modifier ou compléter un algorithme ou un programme.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_04_CONTENUS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_04;2GT;CONTENUS;"− Fonctions à un ou plusieurs arguments.
+− Fonction renvoyant un nombre aléatoire. Série statistique obtenue par la répétition de l’appel d’une telle fonction.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_04_CAPACITES_ATTENDUES_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_04;2GT;CAPACITES_ATTENDUES;"− Écrire des fonctions simples ; lire, comprendre, modifier, compléter des fonctions plus complexes. Appeler une fonction.
+− Lire et comprendre une fonction renvoyant une moyenne, un écart type. Aucune connaissance sur les listes n’est exigée.
+− Écrire des fonctions renvoyant le résultat numérique d’une expérience aléatoire, d’une répétition d’expériences aléatoires indépendantes.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_05_AUTOMATISMES_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_05;2GT;AUTOMATISMES;"Cette partie du programme vise à construire et à entretenir des habiletés dans les domaines du calcul, de l’information chiffrée et des représentations graphiques. Il s’agit d'automatiser le recours à des connaissances, des procédures, des méthodes et des stratégies. Leur acquisition permet aux élèves une meilleure réussite dans l’apprentissage des mathématiques, participe du développement de leur esprit critique par une meilleure maitrise des nombres et du calcul et leur permet une meilleure lecture et compréhension des représentations de données dont les graphiques. Les capacités attendues énoncées ci-dessous n’ont pas vocation à faire l’objet d’un chapitre d’enseignement spécifique car les notions qui les sous-tendent ont été travaillées dans les classes antérieures et doivent être entretenues et consolidées au cours de l’année. Cependant les nouvelles notions du programme peuvent donner lieu également à un travail d’automatisation tout le long de l’année. Elles relèvent d’un entrainement régulier privilégiant l'activité mentale. Les différents thèmes proposés doivent être travaillés tout au long de l’année et la présentation par blocs thématiques ne signifie pas, bien au contraire, qu’il faille les aborder les uns après les autres. Les modalités de mise en œuvre peuvent être variées et prendre appui sur différents supports : à l’oral, à l’écrit, individuellement ou en groupe, utilisant éventuellement des outils numériques de vidéo-projection, de recensement instantané des réponses, etc. Calcul numérique et algébrique
+− Comparer deux nombres directement ou par calcul :
+• de leur différence ;
+• s’ils sont strictement positifs, de leur quotient.
+− Effectuer des opérations et des comparaisons entre des fractions simples.
+− Effectuer des opérations sur les puissances.
+− Passer d’une écriture d’un nombre à une autre (décimale, fractionnaire, pourcentage).
+− Estimer un ordre de grandeur.
+− S’assurer de la vraisemblance, de la cohérence d’un résultat.
+− Effectuer des conversions d’unités : longueurs, aires, volumes, contenances, durées, vitesses, masses.
+− Effectuer un calcul littéral élémentaire :
+• expressions additives : – (a + b) = –a – b, – (a – b) = b – a ; 𝑥 a
+• expressions multiplicatives : 𝑥 = 1 × 𝑥, 𝑥 = , (–1) × a = = –a ; 1 –1 0 𝑥 1 ab b a 0 = 0𝑥, = 0, = 𝑥, =a× = ×b; a a a c c c a 1 1 b a c a c a d ad 1 = a, a = , b c = ∶ = ÷ = × = . a b d b d b c bc a b d
+− Développer, factoriser, réduire une expression algébrique simple :
+• identités (factorisation et développement) : (a + b)², (a – b)², (a + b)(a – b) ;
+• factorisation de a𝑥 ² + b𝑥, a𝑥 + b𝑥. a
+− Résoudre une équation du type : 𝑥² = a, a𝑥 + b = c𝑥 + d ou = b ou une inéquation du premier degré. 𝑥
+− Isoler une variable dans une égalité qui en comporte plusieurs, sur des exemples internes aux mathématiques ou issus des autres disciplines.
+− Effectuer une application numérique d’une formule (notamment pour les formules utilisées dans les autres disciplines). Proportions et pourcentages
+− Calculer, appliquer, exprimer une proportion sous différentes formes (décimale, fractionnaire, pourcentage).
+− Utiliser une proportion pour calculer une partie connaissant le tout, ou le tout connaissant une partie. Évolutions et variations
+− Passer d’une formulation additive (« augmenter de 5 % », respectivement « diminuer de 5 % ») à une formulation multiplicative (« multiplier par 1,05 », respectivement « multiplier par 0,95 »). Fonctions et représentations
+− Déterminer graphiquement des images et des antécédents.
+− Exploiter une équation de courbe (appartenance d’un point, calcul de coordonnées).
+− Reconnaitre l’expression d’une fonction linéaire, d’une fonction affine, savoir que leur représentation graphique est une droite.";5;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_07_CONTENUS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_07;2GT;CONTENUS;"− Notations ℕ et ℤ.
+− Définition des notions de multiple, de diviseur, de nombre pair, de nombre impair : a est multiple de b s’il existe un entier k tel que a = kb.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_07_CAPACITES_ATTENDUES_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_07;2GT;CAPACITES_ATTENDUES;"− Modéliser et résoudre des problèmes mobilisant les notions de multiple, de diviseur, de nombre pair, de nombre impair.
+− Présenter les fractions sous forme irréductible.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_07_DEMONSTRATIONS_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_07;2GT;DEMONSTRATIONS;"− Pour une valeur numérique de a, la somme de deux multiples de a est multiple de a.
+− Le carré d’un nombre impair est impair.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_07_ALGORITHMES_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_07;2GT;ALGORITHMES;"− Déterminer si un entier naturel a est multiple d’un entier naturel b.
+− Pour des entiers a et b donnés, déterminer le plus grand multiple de a inférieur ou égal à b.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_08_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;OBJECTIFS;Au cycle 4, les élèves ont étudié les inégalités pour comparer des valeurs numériques. Ils ont résolu des équations et des inéquations du premier degré. La notion d’intervalle, présentée comme ensemble de nombres vérifiant des inégalités, est nouvelle. Elle prolonge le travail mené au cycle 4 sur les inéquations. La notation de la valeur absolue est introduite pour exprimer la distance entre deux nombres réels et caractériser les intervalles de centre donné. Toute autre utilisation est hors programme.;7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_08_CONTENUS_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;CONTENUS;"− Ensemble ℝ des nombres réels, droite numérique.
+− Intervalles de ℝ. Représentation graphique, notations du type [a, +∞[, ] –∞, a], [a, b], etc.
+− Notation en valeur absolue |a| pour la distance de a à 0. Distance entre deux nombres réels.
+− Inéquation du type |𝑥 – a| ⩽ r. Représentation graphique des solutions, intervalle [a – r, a + r].
+− Ensemble 𝔻 des nombres décimaux. Encadrement décimal d’un nombre réel à 10–𝑛 près.
+− Ensemble ℚ des nombres rationnels. Nombres irrationnels ; exemples fournis par la géométrie, par exemple √2 et π.";7;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER
+ITM_MAT_2GT_2026_08_CAPACITES_ATTENDUES_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;CAPACITES_ATTENDUES;"− Lire l’abscisse d’un nombre réel sur une droite graduée et placer un nombre réel d’abscisse donnée.
+− Représenter un intervalle de la droite numérique. Déterminer si un nombre réel appartient à un intervalle donné.
+− Donner un encadrement, d’amplitude donnée, d’un nombre réel par des décimaux.
+− Dans le cadre de la résolution de problèmes, arrondir en donnant le nombre de chiffres significatifs adapté à la situation étudiée.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_08_DEMONSTRATIONS_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;DEMONSTRATIONS;"− Le nombre rationnel n’est pas décimal.
+− Le nombre réel √2 est irrationnel.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_08_ALGORITHMES_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;ALGORITHMES;− Déterminer par balayage un encadrement de √2 d’amplitude inférieure ou égale à 10 – n.;7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_08_APPROFONDISSEMENTS_06;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_08;2GT;APPROFONDISSEMENTS;"− Développement décimal illimité d’un nombre réel.
+− Observation, sur des exemples, de la périodicité du développement décimal de nombres rationnels.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_09_CONTENUS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;CONTENUS;"− Règles de calcul sur les puissances entières relatives, sur les racines carrées. Relation √a2 = |a|.
+− Exemples simples de calcul sur des expressions algébriques, en particulier sur des expressions fractionnaires.
+− Somme d’inégalités. Produit d’une inégalité par un réel positif, négatif, en liaison avec le sens de variation d’une fonction affine.
+− Comparaison additive (par différence), comparaison multiplicative (par rapport, pour deux nombres strictement positifs).
+− Ensemble des solutions des équations du type a𝑥 + b = 0, et des inéquations de la forme a𝑥 + b > 0.
+− Équation de la forme A(𝑥)B(𝑥) = 0 (équation produit nul). A(𝑥)
+− En liaison avec la section « Fonctions », étude du signe des expressions de la forme A(𝑥)B(𝑥) et . B(𝑥) A(𝑥)
+− Équation = k (équation quotient) en lien avec l’ensemble de définition d’une expression. B(𝑥)";7;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_09_CAPACITES_ATTENDUES_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;CAPACITES_ATTENDUES;"− Effectuer des calculs numériques ou littéraux mettant en jeu des puissances, des racines carrées, des écritures fractionnaires.
+− Sur des cas simples de relations entre variables (par exemple U = RI, d =vt, S = πr², V = abc, V = πr²h, exprimer une variable en fonction des autres. Cas d’une relation du premier degré a𝑥 + b𝑦 = c.
+− Choisir la forme la plus adaptée (factorisée, développée réduite) d’une expression en vue de la résolution d’un problème.
+− Comparer deux quantités en utilisant leur différence, ou leur rapport (ratio) dans le cas de quantités positives. Interpréter, selon le contexte, cette comparaison en termes de variation additive ou multiplicative.
+− Modéliser un problème par une inéquation.
+− Donner l’ensemble des solutions d’une équation du premier degré du type a𝑥 = b, a + 𝑥 = b, a𝑥 + b = c𝑥 + d, d’une inéquation du premier degré du type a ⩾ b, a + 𝑥 ⩾ b, a𝑥 + b ⩾ c𝑥 + d, d’une équation du type 𝑥² = a.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_09_DEMONSTRATIONS_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;DEMONSTRATIONS;− Quels que soient les réels positifs a et b, on a √ab = √a √b.;8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_09_ALGORITHMES_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;ALGORITHMES;− Déterminer la première puissance d’un nombre positif donné supérieure ou inférieure à une valeur donnée.;8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_09_APPROFONDISSEMENTS_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_09;2GT;APPROFONDISSEMENTS;"− Développement de (a + b + c)².
+− Développement de (a + b)³.
+− Inégalité entre moyennes géométrique et arithmétique de deux réels strictement positifs.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_11_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;OBJECTIFS;"Au cycle 4, les notions de vecteur et de translation font l’objet d’une première approche. La somme de vecteurs est vue en lien avec l’enchainement de deux translations et la relation de Chasles est ainsi abordée en classe de troisième. Les professeurs peuvent définir les opérations vectorielles à partir des coordonnées, ou bien commencer par leur construction géométrique. Dans tous les cas, la relation 𝑢 ⃗ = 𝑥𝑖 + 𝑦𝑗 est mise en évidence. La caractérisation vectorielle du milieu d’un segment donne l’occasion de travailler le calcul vectoriel ; elle prolonge et entretien les connaissances du cycle 4. Les problèmes de géométrie sont l’occasion de mettre en avant l’efficacité de l’outil vectoriel. En liaison avec les autres disciplines, on signale que le vecteur ⃗⃗⃗⃗⃗ AB peut être appelé vecteur déplacement de A à B que, si O est choisie comme origine du plan, le vecteur ⃗⃗⃗⃗⃗⃗⃗ OM peut être appelé vecteur position de M (relativement à O).";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_11_CONTENUS_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;CONTENUS;"− Égalité de deux vecteurs. Notation 𝑢 ⃗ . Vecteur nul.
+− Représentants d’un vecteur.
+− Produit d’un vecteur par un nombre réel. Colinéarité de deux vecteurs.
+− Représentation d’un vecteur comme combinaison de deux vecteurs non colinéaires.
+− Base orthonormée. Coordonnées d’un vecteur. Expression de la norme d’un vecteur.
+− Expression des coordonnées de AB⃗⃗⃗⃗⃗ en fonction de celles de A et de B.
+− Déterminant de deux vecteurs dans une base orthonormée, critère de colinéarité. Application à l’alignement, au parallélisme.
+− Caractérisation vectorielle du milieu d’un segment";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_11_CAPACITES_ATTENDUES_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;CAPACITES_ATTENDUES;"− Représenter la somme de deux vecteurs à partir de représentants de même origine.
+− Représenter un vecteur dont on connait les coordonnées. Lire les coordonnées d’un vecteur.
+− Calculer les coordonnées d’une somme de vecteurs, d’un produit d’un vecteur par un nombre réel.
+− Calculer la distance entre deux points. Calculer les coordonnées du milieu d’un segment.
+− Caractériser alignement et parallélisme par la colinéarité de vecteurs.
+− Résoudre des problèmes en utilisant la représentation la plus adaptée des vecteurs.
+− Résoudre des problèmes avec des méthodes diverses (méthodes vectorielles, repérées ou non, méthodes géométriques).";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_11_DEMONSTRATIONS_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;DEMONSTRATIONS;"− Caractérisations de la colinéarité de deux vecteurs non nuls : nullité du déterminant ; proportionnalité des coordonnées.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_11_APPROFONDISSEMENTS_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_11;2GT;APPROFONDISSEMENTS;"− Barycentre de deux ou trois points.
+− Formule permettant le calcul des coordonnées du milieu d’un segment.
+− Démontrer que les hauteurs d’un triangle sont concourantes.
+− Expression de l’aire d’un triangle : ab sin C.
+− Démontrer que l’isobarycentre de trois points non alignés est l’intersection des médianes.
+− Démontrer que le point de concours des médiatrices est le centre du cercle circonscrit.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_12_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;OBJECTIFS;Au cycle 4, les élèves ont rencontré les droites au travers des représentations graphiques des fonctions affines. En seconde, ils étudient les équations de droite.;9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_12_CONTENUS_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;CONTENUS;"− Vecteur directeur d’une droite.
+− Équation de droite : équation cartésienne, équation réduite.
+− Pente (ou coefficient directeur) d’une droite non parallèle à l’axe des ordonnées.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_12_CAPACITES_ATTENDUES_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;CAPACITES_ATTENDUES;"− Déterminer une équation de droite à partir de deux points, un point et un vecteur directeur ou un point et la pente.
+− Déterminer la pente ou un vecteur directeur d’une droite donnée par une équation ou une représentation graphique.
+− Tracer une droite connaissant son équation cartésienne ou réduite.
+− Établir que trois points sont alignés ou non.
+− Déterminer si deux droites sont parallèles ou sécantes.
+− Déterminer le point d’intersection de deux droites sécantes données par leur équation réduite.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_12_DEMONSTRATIONS_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;DEMONSTRATIONS;− En utilisant le déterminant, établir la forme générale d’une équation de droite.;9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_12_ALGORITHMES_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;ALGORITHMES;"− Étudier l’alignement de trois points dans le plan.
+− Déterminer une équation de droite passant par deux points donnés.";10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_12_APPROFONDISSEMENTS_06;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_12;2GT;APPROFONDISSEMENTS;"− Ensemble des points équidistants d’un point et de l’axe des abscisses.
+− Représentation, sur des exemples, de parties du plan décrites par des inégalités sur les coordonnées.";10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_14_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_14;2GT;OBJECTIFS;Dans cette section, les fonctions peuvent être données par leur représentation graphique, par des expressions algébriques ou des programmes de calcul, par des tableaux de valeurs.;10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_14_CONTENUS_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_14;2GT;CONTENUS;"− Fonction à valeurs réelles définie sur un intervalle ou une réunion finie d’intervalles de ℝ.
+− Recherche de domaine d’étude (ensemble de définition).
+− Courbe représentative : la courbe d’équation 𝑦 = ƒ (𝑥) est l’ensemble des points du plan dont les coordonnées (𝑥, 𝑦) vérifient 𝑦 = ƒ (𝑥).
+− Signe d’une fonction affine et des fonctions de référence.
+− Tableau de signes pour une fonction produit ou quotient.";10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_14_CAPACITES_ATTENDUES_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_14;2GT;CAPACITES_ATTENDUES;"− Exploiter l’équation 𝑦 = ƒ (𝑥) d’une courbe : appartenance, calcul de coordonnées.
+− Modéliser par des fonctions des situations issues des mathématiques, des autres disciplines ou de la vie courante ou citoyenne.
+− Fonctions valeur absolue, carré, inverse : définitions et courbes représentatives.
+− Résoudre une équation ou une inéquation du type ƒ (𝑥) = k, ƒ (𝑥) < k, en choisissant une méthode adaptée : graphique, algébrique, logicielle.
+− Résoudre une équation ou une inéquation de la forme ƒ (𝑥) = 0, ƒ (𝑥) > 0 à l’aide d’un tableau de signes, lorsque ƒ est un produit ou un quotient.
+− Résoudre, graphiquement ou à l’aide d’un outil numérique, une équation ou inéquation du type ƒ (𝑥) = g (𝑥), ƒ (𝑥) < g (𝑥).
+− Pour les fonctions affines, valeur absolue, carré, inverse, racine carrée et cube, résoudre graphiquement ou algébriquement une équation ou une inéquation du type ƒ (𝑥) = k, ƒ (𝑥) < k.";10;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_15_CONTENUS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;CONTENUS;"− Croissance, décroissance, monotonie d’une fonction définie sur un intervalle. Tableau de variations.
+− Maximum, minimum d’une fonction sur un intervalle.
+− Pour une fonction affine donnée par ƒ (𝑥) = m𝑥 + p, interprétation de m comme taux d’accroissement et de p comme ordonnée à l’origine.
+− Variations d’une fonction affine selon le signe du coefficient directeur.";11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_15_CAPACITES_ATTENDUES_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;CAPACITES_ATTENDUES;"− Relier représentation graphique et tableau de variations.
+− Déterminer graphiquement les extrémums d’une fonction sur un intervalle.
+− Exploiter un logiciel de géométrie dynamique ou de calcul formel, la calculatrice ou Python pour décrire les variations d’une fonction donnée par une formule.
+− Pour une fonction affine, relier sens de variation, signe de la fonction et droite représentative.
+− Traiter de problèmes d’optimisation.
+− Fonctions valeur absolue, carré : signe et variations.
+− Pour deux nombres a et b donnés et une fonction de référence ƒ, comparer ƒ (a) et ƒ (b) numériquement ou graphiquement.";11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_15_DEMONSTRATIONS_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;DEMONSTRATIONS;"− Variations des fonctions affines.
+− Position relative des courbes d’équation 𝑦 = 𝑥, 𝑦 = 𝑥², pour 𝑥 ⩾ 0.
+− Variations des fonctions carré, inverse.";11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_15_ALGORITHMES_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;ALGORITHMES;"− Pour une fonction dont le tableau de variations est donné, algorithmes d’approximation numérique d’un extrémum (balayage, dichotomie).
+− Algorithme de calcul approché de longueur d’une portion de courbe représentative de fonction.";11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_15_APPROFONDISSEMENTS_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_15;2GT;APPROFONDISSEMENTS;− Relier les courbes représentatives de la fonction racine carrée et de la fonction carré sur ℝ+.;11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_17_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_17;2GT;OBJECTIFS;En matière d’information chiffrée, les élèves ont travaillé au cycle 4 effectifs, fréquences, proportions, pourcentages, coefficient de proportionnalité, taux d’évolution, coefficient multiplicateur. L’objectif est de consolider et de prolonger ce travail par l’étude de situations multiplicatives : proportion de proportion, évolutions successives ou réciproques. Les élèves doivent distinguer si un pourcentage exprime une proportion ou une évolution. En statistique descriptive, les élèves ont étudié moyenne, médiane, quartiles, et étendue ainsi que les représentations graphiques usuelles : diagramme en barres, diagrammes circulaires, boites à moustaches. On consolide le travail sur les proportions et l’évolution, et sur l’étude des statistiques à une variable en s’appuyant sur l’interprétation des indicateurs et en introduisant l’écart type.;11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_17_CONTENUS_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_17;2GT;CONTENUS;"Proportions
+− Ensembles de référence inclus les uns dans les autres : pourcentage de pourcentage. Évolution V2
+− Évolution : variation absolue (variation additive) V2 – V1, coefficient multiplicateur (variation multiplicative) , variation V1 V2 – V1 relative (taux d’évolution). V1
+− Évolutions successives, évolution réciproque : relation sur les coefficients multiplicateurs (produit, inverse). Statistiques à une variable
+− Linéarité de la moyenne.
+− Indicateurs de dispersion : écart type.
+− Influence sur la moyenne, la médiane de l’ajout ou de la suppression d’une valeur dans la série. Regroupement par classes de même amplitude d’une série statistique continue
+− Représentation graphique : histogramme, polygone des fréquences cumulées.
+− Calcul de la moyenne à partir de la moyenne et des effectifs de chaque classe (moyenne pondérée) ; cas particulier où la répartition est uniforme dans chaque classe (donc égale au centre de la classe).
+− Détermination de la classe médiane à partir des effectifs des classes ; estimation de la médiane dans le cas de répartition uniforme dans la classe médiane.";11;12;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_17_CAPACITES_ATTENDUES_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_17;2GT;CAPACITES_ATTENDUES;"− Exploiter la relation entre effectifs, proportions et pourcentages.
+− Traiter des situations simples mettant en jeu des pourcentages de pourcentages.
+− Exploiter la relation entre deux valeurs successives et leur taux d’évolution.
+− Calculer le taux d’évolution global à partir des taux d’évolution successifs. Calculer un taux d’évolution réciproque.
+− Pour une série statistique regroupée en classes :
+• calculer la moyenne à partir de la moyenne et des effectifs de chaque classe (moyenne pondérée) ; cas particulier où la répartition est uniforme dans chaque classe (donc égale au centre de la classe) ;
+• déterminer la classe médiane à partir des effectifs des classes ; estimation de la médiane dans le cas de répartition uniforme dans la classe médiane.
+− Décrire les différences entre deux séries statistiques, en s’appuyant sur des indicateurs ou couples d’indicateurs (moyenne- écart type/ médiane-écart interquartile), sur des représentations graphiques données.";12;12;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_18_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_18;2GT;OBJECTIFS;Cette section s’intéresse aux couples de variables qualitatives. L’internet fournit en effet de nombreux fichiers qui traitent des données liées aux individus et proposent des unités statistiques (pays, plantes, animaux, villes, etc.) organisées selon différentes caractéristiques (sexe, espèce, catégorie socioprofessionnelle, tranche de revenus, etc.) qu’il est intéressant de croiser. Premier contact avec les bases de données, le traitement statistique de fichiers est une activité riche et formatrice qui pourra être réinvestie par les élèves dans des projets en lien avec les enseignements de spécialité en vue de l’épreuve orale terminale. L’étude des fréquences conditionnelles permet un travail sur la langue française en considérant les formulations usuellement utilisées dans les médias. Des variables qualitatives de natures diverses sont étudiées : nominale (profession, espèce, département de résidence, etc.) ou ordinale (niveau d’étude, degré de satisfaction de la clientèle, etc.). Les élèves travaillent avec des données réelles dans des domaines variés (sécurité routière, démographie, économie, agronomie, etc.).;12;12;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_18_CONTENUS_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_18;2GT;CONTENUS;"− Tableau croisé d’effectifs.
+− Fréquence conditionnelle, fréquence marginale.";12;12;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_18_CAPACITES_ATTENDUES_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_18;2GT;CAPACITES_ATTENDUES;"− Calculer des fréquences conditionnelles et des fréquences marginales.
+− Compléter un tableau croisé par des raisonnements sur les effectifs ou en utilisant des fréquences conditionnelles.";12;12;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_18_ALGORITHMES_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_18;2GT;ALGORITHMES;"− À partir de deux listes représentant deux caractères d'individus, déterminer un sous-ensemble d'individus répondant à un critère (filtre, utilisation de ET, OU, NON).
+− Dresser le tableau croisé de deux variables qualitatives à partir du fichier des individus et calculer des fréquences conditionnelles ou marginales.";12;12;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_19_OBJECTIFS_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;OBJECTIFS;"Au cycle 4, les élèves ont travaillé sur les notions élémentaires de probabilité : expérience aléatoire, issue, évènement, probabilité. Ils ont construit leur intuition sur des situations concrètes fondées sur l’équiprobabilité, complétées par des répétitions d’épreuves identiques et indépendantes, permettant d’observer la stabilisation des fréquences. Ils ont été amenés à calculer des probabilités dans des contextes simples (une ou deux épreuves). Ils ont formalisé la notion de loi (ou distribution) de probabilité dans le cas fini en s’appuyant sur le langage des ensembles et ont précisé les premiers éléments de calcul des probabilités. En classe de seconde on insiste sur le fait qu’une loi de probabilité (par exemple une équiprobabilité) est une hypothèse du modèle choisi et ne se démontre pas. Le choix du modèle peut résulter d’hypothèses implicites d’équiprobabilité (par exemple, lancers de pièces ou dés équilibrés, tirage au hasard dans une population) qu’il est recommandable d’expliciter ; il peut aussi résulter d’une application d’une version vulgarisée de la loi des grands nombres, où un modèle est construit à partir de fréquences observées pour un phénomène réel (par exemple : lancer de punaise, sexe d’un enfant à la naissance). Dans tous les cas, on distingue nettement le modèle probabiliste abstrait et la situation réelle. L’enseignement en classe de seconde s’organise autour des objectifs suivants :
+− introduire la notion de probabilité conditionnelle, sous-jacente dans toute modélisation probabiliste, et mettre en évidence la problématique de l’inversion des conditionnements ;
+− calculer des probabilités à l’aide de probabilités conditionnelles et d’arbres de probabilité. Les notions de statistique descriptive sont articulées avec le cours de probabilités. Une population statistique peut être étudiée d’un point de vue probabiliste en considérant l’expérience aléatoire de tirage au sort avec équiprobabilité dans la population. Un lien est ainsi fait entre des notions statistiques (sous-population, proportion, fréquence conditionnelle) et les notions probabilistes analogues (évènement, probabilité, probabilité conditionnelle) ; dans ce contexte, on met en évidence Card(A) Card( A∩B ) les relations P(A) = et PB(A) = Card(Ω) Card(B ) Des situations issues de différents domaines (économique, industriel, médical, etc.) sont proposées. Ce travail permet notamment de donner du sens au vocabulaire des tests diagnostiques : faux positifs, faux négatifs, spécificité et sensibilité d’un test.";12;13;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_19_HISTOIRE_02;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;HISTOIRE;"L’histoire des probabilités fournit un cadre pour dégager les éléments de la mathématisation du hasard. Un exemple est le problème des partis, dit aussi du chevalier de Méré, l’échange de lettres entre Pascal et Fermat sur ce point puis les travaux de Pascal, Fermat et Huygens qui en découlent. Le problème du duc de Toscane ou les travaux de Leibniz sur le jeu de dés peuvent aussi être évoqués. Les probabilités conditionnelles peuvent être l’objet d’un travail historique en anglais ; elles apparaissent en effet dans des travaux de Bayes et de Moivre, écrits en anglais au XVIIIe siècle, même si c’est Laplace qui en a élaboré la notion. Les questions traitées par ces auteurs peuvent parfois surprendre ; néanmoins, les probabilités conditionnelles sont omniprésentes dans la vie courante et leur utilisation inappropriée mène facilement à de fausses affirmations.";13;13;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_19_CONTENUS_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;CONTENUS;"− Version vulgarisée de la loi des grands nombres : « Lorsque n est grand, sauf exception, la fréquence observée est proche de la probabilité. »
+− Probabilité conditionnelle d’un évènement B sachant un évènement A de probabilité non nulle. Notation PA(B).
+− Arbres de probabilité, application au calcul de probabilités.";13;13;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_2GT_2026_19_CAPACITES_ATTENDUES_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_19;2GT;CAPACITES_ATTENDUES;"− Observer la loi des grands nombres à l’aide d’une simulation sur Python ou tableur.
+− Construire un arbre pondéré ou un tableau en lien avec une situation donnée. Passer du registre de la langue naturelle au registre symbolique et inversement.
+− Calculer des probabilités conditionnelles lorsque les évènements sont présentés sous forme de tableau croisé d’effectifs (tirage au sort avec équiprobabilité d’un individu dans une population) ou d’un arbre de probabilité.
+− Interpréter les pondérations de chaque branche d’un arbre en termes de probabilités, et notamment de probabilités conditionnelles.
+− Faire le lien entre la définition des probabilités conditionnelles et la multiplication des probabilités des branches du chemin correspondant.
+− Distinguer en situation PA(B) et PB(A), par exemple dans des situations de type « faux positifs. Le calcul de la probabilité́ d’un évènement connaissant ses probabilités conditionnelles relatives à une partition de l’univers n’est pas un attendu du programme.";13;13;SRC_BO_2026_14_MATH_LYCEE;OK

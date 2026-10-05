@@ -1,0 +1,673 @@
+{
+  "notion_id": "simplification_expression_algebrique",
+  "questions": [
+    {
+      "id": "ALG-VAR-001",
+      "type": "qcm",
+      "enonce": "Simplifie [[expr]].",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "2",
+            "b": "2",
+            "expr": "2𝑥 × 2𝑥",
+            "bonne": "4𝑥²",
+            "d1": "5𝑥²",
+            "d2": "4𝑥",
+            "d3": "5𝑥",
+            "correction": "On multiplie les coefficients (2 × 2 = 4) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 4𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "3",
+            "expr": "2𝑥 × 3𝑥",
+            "bonne": "6𝑥²",
+            "d1": "7𝑥²",
+            "d2": "6𝑥",
+            "d3": "7𝑥",
+            "correction": "On multiplie les coefficients (2 × 3 = 6) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 6𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "4",
+            "expr": "2𝑥 × 4𝑥",
+            "bonne": "8𝑥²",
+            "d1": "9𝑥²",
+            "d2": "8𝑥",
+            "d3": "9𝑥",
+            "correction": "On multiplie les coefficients (2 × 4 = 8) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 8𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "5",
+            "expr": "2𝑥 × 5𝑥",
+            "bonne": "10𝑥²",
+            "d1": "11𝑥²",
+            "d2": "10𝑥",
+            "d3": "11𝑥",
+            "correction": "On multiplie les coefficients (2 × 5 = 10) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 10𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "6",
+            "expr": "2𝑥 × 6𝑥",
+            "bonne": "12𝑥²",
+            "d1": "13𝑥²",
+            "d2": "12𝑥",
+            "d3": "13𝑥",
+            "correction": "On multiplie les coefficients (2 × 6 = 12) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 12𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "2",
+            "expr": "3𝑥 × 2𝑥",
+            "bonne": "6𝑥²",
+            "d1": "7𝑥²",
+            "d2": "6𝑥",
+            "d3": "7𝑥",
+            "correction": "On multiplie les coefficients (3 × 2 = 6) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 6𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "3",
+            "expr": "3𝑥 × 3𝑥",
+            "bonne": "9𝑥²",
+            "d1": "10𝑥²",
+            "d2": "9𝑥",
+            "d3": "10𝑥",
+            "correction": "On multiplie les coefficients (3 × 3 = 9) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 9𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "4",
+            "expr": "3𝑥 × 4𝑥",
+            "bonne": "12𝑥²",
+            "d1": "13𝑥²",
+            "d2": "12𝑥",
+            "d3": "13𝑥",
+            "correction": "On multiplie les coefficients (3 × 4 = 12) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 12𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "5",
+            "expr": "3𝑥 × 5𝑥",
+            "bonne": "15𝑥²",
+            "d1": "16𝑥²",
+            "d2": "15𝑥",
+            "d3": "16𝑥",
+            "correction": "On multiplie les coefficients (3 × 5 = 15) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 15𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "6",
+            "expr": "3𝑥 × 6𝑥",
+            "bonne": "18𝑥²",
+            "d1": "19𝑥²",
+            "d2": "18𝑥",
+            "d3": "19𝑥",
+            "correction": "On multiplie les coefficients (3 × 6 = 18) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 18𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "2",
+            "expr": "4𝑥 × 2𝑥",
+            "bonne": "8𝑥²",
+            "d1": "9𝑥²",
+            "d2": "8𝑥",
+            "d3": "9𝑥",
+            "correction": "On multiplie les coefficients (4 × 2 = 8) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 8𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "3",
+            "expr": "4𝑥 × 3𝑥",
+            "bonne": "12𝑥²",
+            "d1": "13𝑥²",
+            "d2": "12𝑥",
+            "d3": "13𝑥",
+            "correction": "On multiplie les coefficients (4 × 3 = 12) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 12𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "4",
+            "expr": "4𝑥 × 4𝑥",
+            "bonne": "16𝑥²",
+            "d1": "17𝑥²",
+            "d2": "16𝑥",
+            "d3": "17𝑥",
+            "correction": "On multiplie les coefficients (4 × 4 = 16) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 16𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "5",
+            "expr": "4𝑥 × 5𝑥",
+            "bonne": "20𝑥²",
+            "d1": "21𝑥²",
+            "d2": "20𝑥",
+            "d3": "21𝑥",
+            "correction": "On multiplie les coefficients (4 × 5 = 20) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 20𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "6",
+            "expr": "4𝑥 × 6𝑥",
+            "bonne": "24𝑥²",
+            "d1": "25𝑥²",
+            "d2": "24𝑥",
+            "d3": "25𝑥",
+            "correction": "On multiplie les coefficients (4 × 6 = 24) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 24𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "2",
+            "expr": "5𝑥 × 2𝑥",
+            "bonne": "10𝑥²",
+            "d1": "11𝑥²",
+            "d2": "10𝑥",
+            "d3": "11𝑥",
+            "correction": "On multiplie les coefficients (5 × 2 = 10) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 10𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "3",
+            "expr": "5𝑥 × 3𝑥",
+            "bonne": "15𝑥²",
+            "d1": "16𝑥²",
+            "d2": "15𝑥",
+            "d3": "16𝑥",
+            "correction": "On multiplie les coefficients (5 × 3 = 15) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 15𝑥²."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "4",
+            "expr": "5𝑥 × 4𝑥",
+            "bonne": "20𝑥²",
+            "d1": "21𝑥²",
+            "d2": "20𝑥",
+            "d3": "21𝑥",
+            "correction": "On multiplie les coefficients (5 × 4 = 20) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 20𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "5",
+            "expr": "5𝑥 × 5𝑥",
+            "bonne": "25𝑥²",
+            "d1": "26𝑥²",
+            "d2": "25𝑥",
+            "d3": "26𝑥",
+            "correction": "On multiplie les coefficients (5 × 5 = 25) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 25𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "6",
+            "expr": "5𝑥 × 6𝑥",
+            "bonne": "30𝑥²",
+            "d1": "31𝑥²",
+            "d2": "30𝑥",
+            "d3": "31𝑥",
+            "correction": "On multiplie les coefficients (5 × 6 = 30) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 30𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "2",
+            "expr": "6𝑥 × 2𝑥",
+            "bonne": "12𝑥²",
+            "d1": "13𝑥²",
+            "d2": "12𝑥",
+            "d3": "13𝑥",
+            "correction": "On multiplie les coefficients (6 × 2 = 12) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 12𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "3",
+            "expr": "6𝑥 × 3𝑥",
+            "bonne": "18𝑥²",
+            "d1": "19𝑥²",
+            "d2": "18𝑥",
+            "d3": "19𝑥",
+            "correction": "On multiplie les coefficients (6 × 3 = 18) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 18𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "4",
+            "expr": "6𝑥 × 4𝑥",
+            "bonne": "24𝑥²",
+            "d1": "25𝑥²",
+            "d2": "24𝑥",
+            "d3": "25𝑥",
+            "correction": "On multiplie les coefficients (6 × 4 = 24) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 24𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "5",
+            "expr": "6𝑥 × 5𝑥",
+            "bonne": "30𝑥²",
+            "d1": "31𝑥²",
+            "d2": "30𝑥",
+            "d3": "31𝑥",
+            "correction": "On multiplie les coefficients (6 × 5 = 30) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 30𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "6",
+            "expr": "6𝑥 × 6𝑥",
+            "bonne": "36𝑥²",
+            "d1": "37𝑥²",
+            "d2": "36𝑥",
+            "d3": "37𝑥",
+            "correction": "On multiplie les coefficients (6 × 6 = 36) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 36𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "b": "2",
+            "expr": "7𝑥 × 2𝑥",
+            "bonne": "14𝑥²",
+            "d1": "15𝑥²",
+            "d2": "14𝑥",
+            "d3": "15𝑥",
+            "correction": "On multiplie les coefficients (7 × 2 = 14) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 14𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "b": "3",
+            "expr": "7𝑥 × 3𝑥",
+            "bonne": "21𝑥²",
+            "d1": "22𝑥²",
+            "d2": "21𝑥",
+            "d3": "22𝑥",
+            "correction": "On multiplie les coefficients (7 × 3 = 21) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 21𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "b": "4",
+            "expr": "7𝑥 × 4𝑥",
+            "bonne": "28𝑥²",
+            "d1": "29𝑥²",
+            "d2": "28𝑥",
+            "d3": "29𝑥",
+            "correction": "On multiplie les coefficients (7 × 4 = 28) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 28𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "b": "5",
+            "expr": "7𝑥 × 5𝑥",
+            "bonne": "35𝑥²",
+            "d1": "36𝑥²",
+            "d2": "35𝑥",
+            "d3": "36𝑥",
+            "correction": "On multiplie les coefficients (7 × 5 = 35) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 35𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "b": "6",
+            "expr": "7𝑥 × 6𝑥",
+            "bonne": "42𝑥²",
+            "d1": "43𝑥²",
+            "d2": "42𝑥",
+            "d3": "43𝑥",
+            "correction": "On multiplie les coefficients (7 × 6 = 42) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 42𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "b": "2",
+            "expr": "8𝑥 × 2𝑥",
+            "bonne": "16𝑥²",
+            "d1": "17𝑥²",
+            "d2": "16𝑥",
+            "d3": "17𝑥",
+            "correction": "On multiplie les coefficients (8 × 2 = 16) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 16𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "b": "3",
+            "expr": "8𝑥 × 3𝑥",
+            "bonne": "24𝑥²",
+            "d1": "25𝑥²",
+            "d2": "24𝑥",
+            "d3": "25𝑥",
+            "correction": "On multiplie les coefficients (8 × 3 = 24) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 24𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "b": "4",
+            "expr": "8𝑥 × 4𝑥",
+            "bonne": "32𝑥²",
+            "d1": "33𝑥²",
+            "d2": "32𝑥",
+            "d3": "33𝑥",
+            "correction": "On multiplie les coefficients (8 × 4 = 32) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 32𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "b": "5",
+            "expr": "8𝑥 × 5𝑥",
+            "bonne": "40𝑥²",
+            "d1": "41𝑥²",
+            "d2": "40𝑥",
+            "d3": "41𝑥",
+            "correction": "On multiplie les coefficients (8 × 5 = 40) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 40𝑥²."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "b": "6",
+            "expr": "8𝑥 × 6𝑥",
+            "bonne": "48𝑥²",
+            "d1": "49𝑥²",
+            "d2": "48𝑥",
+            "d3": "49𝑥",
+            "correction": "On multiplie les coefficients (8 × 6 = 48) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 48𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "b": "2",
+            "expr": "9𝑥 × 2𝑥",
+            "bonne": "18𝑥²",
+            "d1": "19𝑥²",
+            "d2": "18𝑥",
+            "d3": "19𝑥",
+            "correction": "On multiplie les coefficients (9 × 2 = 18) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 18𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "b": "3",
+            "expr": "9𝑥 × 3𝑥",
+            "bonne": "27𝑥²",
+            "d1": "28𝑥²",
+            "d2": "27𝑥",
+            "d3": "28𝑥",
+            "correction": "On multiplie les coefficients (9 × 3 = 27) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 27𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "b": "4",
+            "expr": "9𝑥 × 4𝑥",
+            "bonne": "36𝑥²",
+            "d1": "37𝑥²",
+            "d2": "36𝑥",
+            "d3": "37𝑥",
+            "correction": "On multiplie les coefficients (9 × 4 = 36) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 36𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "b": "5",
+            "expr": "9𝑥 × 5𝑥",
+            "bonne": "45𝑥²",
+            "d1": "46𝑥²",
+            "d2": "45𝑥",
+            "d3": "46𝑥",
+            "correction": "On multiplie les coefficients (9 × 5 = 45) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 45𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "b": "6",
+            "expr": "9𝑥 × 6𝑥",
+            "bonne": "54𝑥²",
+            "d1": "55𝑥²",
+            "d2": "54𝑥",
+            "d3": "55𝑥",
+            "correction": "On multiplie les coefficients (9 × 6 = 54) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 54𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "10",
+            "b": "2",
+            "expr": "10𝑥 × 2𝑥",
+            "bonne": "20𝑥²",
+            "d1": "21𝑥²",
+            "d2": "20𝑥",
+            "d3": "21𝑥",
+            "correction": "On multiplie les coefficients (10 × 2 = 20) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 20𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "10",
+            "b": "3",
+            "expr": "10𝑥 × 3𝑥",
+            "bonne": "30𝑥²",
+            "d1": "31𝑥²",
+            "d2": "30𝑥",
+            "d3": "31𝑥",
+            "correction": "On multiplie les coefficients (10 × 3 = 30) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 30𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "10",
+            "b": "4",
+            "expr": "10𝑥 × 4𝑥",
+            "bonne": "40𝑥²",
+            "d1": "41𝑥²",
+            "d2": "40𝑥",
+            "d3": "41𝑥",
+            "correction": "On multiplie les coefficients (10 × 4 = 40) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 40𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "10",
+            "b": "5",
+            "expr": "10𝑥 × 5𝑥",
+            "bonne": "50𝑥²",
+            "d1": "51𝑥²",
+            "d2": "50𝑥",
+            "d3": "51𝑥",
+            "correction": "On multiplie les coefficients (10 × 5 = 50) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 50𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "10",
+            "b": "6",
+            "expr": "10𝑥 × 6𝑥",
+            "bonne": "60𝑥²",
+            "d1": "61𝑥²",
+            "d2": "60𝑥",
+            "d3": "61𝑥",
+            "correction": "On multiplie les coefficients (10 × 6 = 60) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 60𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "11",
+            "b": "2",
+            "expr": "11𝑥 × 2𝑥",
+            "bonne": "22𝑥²",
+            "d1": "23𝑥²",
+            "d2": "22𝑥",
+            "d3": "23𝑥",
+            "correction": "On multiplie les coefficients (11 × 2 = 22) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 22𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "11",
+            "b": "3",
+            "expr": "11𝑥 × 3𝑥",
+            "bonne": "33𝑥²",
+            "d1": "34𝑥²",
+            "d2": "33𝑥",
+            "d3": "34𝑥",
+            "correction": "On multiplie les coefficients (11 × 3 = 33) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 33𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "11",
+            "b": "4",
+            "expr": "11𝑥 × 4𝑥",
+            "bonne": "44𝑥²",
+            "d1": "45𝑥²",
+            "d2": "44𝑥",
+            "d3": "45𝑥",
+            "correction": "On multiplie les coefficients (11 × 4 = 44) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 44𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "11",
+            "b": "5",
+            "expr": "11𝑥 × 5𝑥",
+            "bonne": "55𝑥²",
+            "d1": "56𝑥²",
+            "d2": "55𝑥",
+            "d3": "56𝑥",
+            "correction": "On multiplie les coefficients (11 × 5 = 55) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 55𝑥²."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "11",
+            "b": "6",
+            "expr": "11𝑥 × 6𝑥",
+            "bonne": "66𝑥²",
+            "d1": "67𝑥²",
+            "d2": "66𝑥",
+            "d3": "67𝑥",
+            "correction": "On multiplie les coefficients (11 × 6 = 66) et 𝑥 × 𝑥 = 𝑥². Donc le produit vaut 66𝑥²."
+          },
+          "progression": 3
+        }
+      ]
+    }
+  ]
+}

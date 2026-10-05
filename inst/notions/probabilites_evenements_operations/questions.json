@@ -1,0 +1,671 @@
+{
+  "notion_id": "probabilites_evenements_operations",
+  "questions": [
+    {
+      "id": "EVT-OPS-001",
+      "type": "qcm",
+      "enonce": "On sait que P(A) = [[pa]], P(B) = [[pb]] et P(A ∩ B) = [[pi]]. Quelle est P(A ∪ B) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "On utilise P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "1/20",
+            "bonne": "10/20",
+            "d1": "11/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "2/20",
+            "bonne": "12/20",
+            "d1": "14/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "3/20",
+            "bonne": "14/20",
+            "d1": "17/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "1/20",
+            "bonne": "14/20",
+            "d1": "15/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "2/20",
+            "bonne": "16/20",
+            "d1": "18/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "3/20",
+            "bonne": "8/20",
+            "d1": "11/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "1/20",
+            "bonne": "13/20",
+            "d1": "14/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "2/20",
+            "bonne": "15/20",
+            "d1": "17/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "3/20",
+            "bonne": "12/20",
+            "d1": "15/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "1/20",
+            "bonne": "17/20",
+            "d1": "18/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "2/20",
+            "bonne": "9/20",
+            "d1": "11/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "3/20",
+            "bonne": "11/20",
+            "d1": "14/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "1/20",
+            "bonne": "16/20",
+            "d1": "17/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "2/20",
+            "bonne": "13/20",
+            "d1": "15/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "3/20",
+            "bonne": "15/20",
+            "d1": "18/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "1/20",
+            "bonne": "10/20",
+            "d1": "11/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "2/20",
+            "bonne": "12/20",
+            "d1": "14/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "3/20",
+            "bonne": "14/20",
+            "d1": "17/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "1/20",
+            "bonne": "14/20",
+            "d1": "15/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "2/20",
+            "bonne": "16/20",
+            "d1": "18/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "3/20",
+            "bonne": "8/20",
+            "d1": "11/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "1/20",
+            "bonne": "13/20",
+            "d1": "14/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "2/20",
+            "bonne": "15/20",
+            "d1": "17/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "3/20",
+            "bonne": "12/20",
+            "d1": "15/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "1/20",
+            "bonne": "17/20",
+            "d1": "18/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "2/20",
+            "bonne": "9/20",
+            "d1": "11/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "3/20",
+            "bonne": "11/20",
+            "d1": "14/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "1/20",
+            "bonne": "16/20",
+            "d1": "17/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "2/20",
+            "bonne": "13/20",
+            "d1": "15/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "3/20",
+            "bonne": "15/20",
+            "d1": "18/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "1/20",
+            "bonne": "10/20",
+            "d1": "11/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "2/20",
+            "bonne": "12/20",
+            "d1": "14/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "3/20",
+            "bonne": "14/20",
+            "d1": "17/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "1/20",
+            "bonne": "14/20",
+            "d1": "15/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "2/20",
+            "bonne": "16/20",
+            "d1": "18/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "3/20",
+            "bonne": "8/20",
+            "d1": "11/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "1/20",
+            "bonne": "13/20",
+            "d1": "14/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "2/20",
+            "bonne": "15/20",
+            "d1": "17/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "3/20",
+            "bonne": "12/20",
+            "d1": "15/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "1/20",
+            "bonne": "17/20",
+            "d1": "18/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "2/20",
+            "bonne": "9/20",
+            "d1": "11/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "3/20",
+            "bonne": "11/20",
+            "d1": "14/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "1/20",
+            "bonne": "16/20",
+            "d1": "17/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "2/20",
+            "bonne": "13/20",
+            "d1": "15/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "3/20",
+            "bonne": "15/20",
+            "d1": "18/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "5/20",
+            "pb": "6/20",
+            "pi": "1/20",
+            "bonne": "10/20",
+            "d1": "11/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "6/20",
+            "pb": "8/20",
+            "pi": "2/20",
+            "bonne": "12/20",
+            "d1": "14/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "7/20",
+            "pb": "10/20",
+            "pi": "3/20",
+            "bonne": "14/20",
+            "d1": "17/20",
+            "d2": "3/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "8/20",
+            "pb": "7/20",
+            "pi": "1/20",
+            "bonne": "14/20",
+            "d1": "15/20",
+            "d2": "1/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "pa": "9/20",
+            "pb": "9/20",
+            "pi": "2/20",
+            "bonne": "16/20",
+            "d1": "18/20",
+            "d2": "2/20",
+            "d3": "1 − P(A ∩ B)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVT-OPS-002",
+      "type": "qcm",
+      "enonce": "Que signifie A ∩ B ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "A et B se réalisent tous les deux"
+      },
+      "propositions": [
+        "A et B se réalisent tous les deux",
+        "A ou B se réalise",
+        "A ne se réalise pas",
+        "A et B sont impossibles"
+      ],
+      "correction": "L’intersection contient les issues communes aux deux événements."
+    },
+    {
+      "id": "EVT-OPS-003",
+      "type": "qcm",
+      "enonce": "Que signifie A ∪ B ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Au moins l’un des événements A ou B se réalise"
+      },
+      "propositions": [
+        "Au moins l’un des événements A ou B se réalise",
+        "A et B uniquement",
+        "Ni A ni B",
+        "Seulement A mais jamais B"
+      ],
+      "correction": "La réunion rassemble les issues appartenant à A ou à B, éventuellement aux deux."
+    },
+    {
+      "id": "EVT-OPS-004",
+      "type": "qcm",
+      "enonce": "Si P(A)=0,3, quelle est la probabilité de l’événement contraire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0,7"
+      },
+      "propositions": [
+        "0,7",
+        "0,3",
+        "1,3",
+        "-0,3"
+      ],
+      "correction": "$P(\\overline A)=1-P(A)$."
+    }
+  ]
+}

@@ -1,10 +1,27 @@
-# L’essentiel : fractions sur une droite graduée
+# L’essentiel : Repérer des fractions sur une droite graduée
 
-**À retenir :** Lorsque l’unité est divisée en parts égales, le dénominateur donne le nombre de parts par unité.
+::: {.edu-definition}
+**De quoi parle-t-on ?**
 
-**Exemple :** Avec quatre graduations par unité, la troisième graduation après zéro vaut 3/4.
+Une fraction peut être l’abscisse d’un point sur une droite graduée.
+:::
 
-<!-- graphique: droite_fractions denominateur=4 graduation=3 -->
+## Principe
 
+Sur une droite graduée, le dénominateur décrit le partage de l’unité et le numérateur compte les parts depuis 0.
 
-**Vérification :** explique pourquoi le résultat respecte la règle.
+## Méthode
+
+Repérer la longueur d’un pas, puis compter le nombre de pas depuis 0. On peut dépasser 1.
+
+## Exemple
+
+Avec quatre parts par unité, la cinquième graduation après 0 vaut $\frac{5}{4}$.
+
+## Vérification
+
+Le dénominateur doit correspondre au nombre de parts égales dans une unité.
+
+## À retenir
+
+Sur une droite graduée, le dénominateur décrit le partage de l’unité et le numérateur compte les parts depuis 0.

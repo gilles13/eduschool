@@ -1,5 +1,5 @@
 test_that("les variantes ne se repetent pas avant epuisement", {
-  banque = questions("equation_inconnue_deux_membres")
+  banque = questions("equations_inconnue_deux_membres")
   definition = banque$questions[[1L]]
   expect_gte(length(definition$variantes), 5L)
   set.seed(123)

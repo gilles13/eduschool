@@ -1,0 +1,605 @@
+{
+  "notion_id": "pourcentage",
+  "questions": [
+    {
+      "id": "POURC-001",
+      "type": "qcm",
+      "enonce": "Combien représentent [[p]] % de [[total]] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Prendre p % d’une quantité revient à la multiplier par p/100.",
+      "variantes": [
+        {
+          "parametres": {
+            "p": "5",
+            "total": "40",
+            "bonne": "2",
+            "d1": "3",
+            "d2": "1",
+            "d3": "4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "10",
+            "total": "60",
+            "bonne": "6",
+            "d1": "7",
+            "d2": "5",
+            "d3": "8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "15",
+            "total": "80",
+            "bonne": "12",
+            "d1": "13",
+            "d2": "11",
+            "d3": "14"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "20",
+            "total": "100",
+            "bonne": "20",
+            "d1": "21",
+            "d2": "19",
+            "d3": "22"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "25",
+            "total": "120",
+            "bonne": "30",
+            "d1": "31",
+            "d2": "29",
+            "d3": "32"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "30",
+            "total": "140",
+            "bonne": "42",
+            "d1": "43",
+            "d2": "41",
+            "d3": "44"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "40",
+            "total": "160",
+            "bonne": "64",
+            "d1": "65",
+            "d2": "63",
+            "d3": "66"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "50",
+            "total": "180",
+            "bonne": "90",
+            "d1": "91",
+            "d2": "89",
+            "d3": "92"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "60",
+            "total": "200",
+            "bonne": "120",
+            "d1": "121",
+            "d2": "119",
+            "d3": "122"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "75",
+            "total": "220",
+            "bonne": "165",
+            "d1": "166",
+            "d2": "164",
+            "d3": "167"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "5",
+            "total": "240",
+            "bonne": "12",
+            "d1": "13",
+            "d2": "11",
+            "d3": "14"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "10",
+            "total": "260",
+            "bonne": "26",
+            "d1": "27",
+            "d2": "25",
+            "d3": "28"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "15",
+            "total": "40",
+            "bonne": "6",
+            "d1": "7",
+            "d2": "5",
+            "d3": "8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "20",
+            "total": "60",
+            "bonne": "12",
+            "d1": "13",
+            "d2": "11",
+            "d3": "14"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "25",
+            "total": "80",
+            "bonne": "20",
+            "d1": "21",
+            "d2": "19",
+            "d3": "22"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "30",
+            "total": "100",
+            "bonne": "30",
+            "d1": "31",
+            "d2": "29",
+            "d3": "32"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "40",
+            "total": "120",
+            "bonne": "48",
+            "d1": "49",
+            "d2": "47",
+            "d3": "50"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "p": "50",
+            "total": "140",
+            "bonne": "70",
+            "d1": "71",
+            "d2": "69",
+            "d3": "72"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "60",
+            "total": "160",
+            "bonne": "96",
+            "d1": "97",
+            "d2": "95",
+            "d3": "98"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "75",
+            "total": "180",
+            "bonne": "135",
+            "d1": "136",
+            "d2": "134",
+            "d3": "137"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "5",
+            "total": "200",
+            "bonne": "10",
+            "d1": "11",
+            "d2": "9",
+            "d3": "12"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "10",
+            "total": "220",
+            "bonne": "22",
+            "d1": "23",
+            "d2": "21",
+            "d3": "24"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "15",
+            "total": "240",
+            "bonne": "36",
+            "d1": "37",
+            "d2": "35",
+            "d3": "38"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "20",
+            "total": "260",
+            "bonne": "52",
+            "d1": "53",
+            "d2": "51",
+            "d3": "54"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "25",
+            "total": "40",
+            "bonne": "10",
+            "d1": "11",
+            "d2": "9",
+            "d3": "12"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "30",
+            "total": "60",
+            "bonne": "18",
+            "d1": "19",
+            "d2": "17",
+            "d3": "20"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "40",
+            "total": "80",
+            "bonne": "32",
+            "d1": "33",
+            "d2": "31",
+            "d3": "34"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "50",
+            "total": "100",
+            "bonne": "50",
+            "d1": "51",
+            "d2": "49",
+            "d3": "52"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "60",
+            "total": "120",
+            "bonne": "72",
+            "d1": "73",
+            "d2": "71",
+            "d3": "74"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "75",
+            "total": "140",
+            "bonne": "105",
+            "d1": "106",
+            "d2": "104",
+            "d3": "107"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "5",
+            "total": "160",
+            "bonne": "8",
+            "d1": "9",
+            "d2": "7",
+            "d3": "10"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "10",
+            "total": "180",
+            "bonne": "18",
+            "d1": "19",
+            "d2": "17",
+            "d3": "20"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "15",
+            "total": "200",
+            "bonne": "30",
+            "d1": "31",
+            "d2": "29",
+            "d3": "32"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "20",
+            "total": "220",
+            "bonne": "44",
+            "d1": "45",
+            "d2": "43",
+            "d3": "46"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "p": "25",
+            "total": "240",
+            "bonne": "60",
+            "d1": "61",
+            "d2": "59",
+            "d3": "62"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "30",
+            "total": "260",
+            "bonne": "78",
+            "d1": "79",
+            "d2": "77",
+            "d3": "80"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "40",
+            "total": "40",
+            "bonne": "16",
+            "d1": "17",
+            "d2": "15",
+            "d3": "18"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "50",
+            "total": "60",
+            "bonne": "30",
+            "d1": "31",
+            "d2": "29",
+            "d3": "32"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "60",
+            "total": "80",
+            "bonne": "48",
+            "d1": "49",
+            "d2": "47",
+            "d3": "50"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "75",
+            "total": "100",
+            "bonne": "75",
+            "d1": "76",
+            "d2": "74",
+            "d3": "77"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "5",
+            "total": "120",
+            "bonne": "6",
+            "d1": "7",
+            "d2": "5",
+            "d3": "8"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "10",
+            "total": "140",
+            "bonne": "14",
+            "d1": "15",
+            "d2": "13",
+            "d3": "16"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "15",
+            "total": "160",
+            "bonne": "24",
+            "d1": "25",
+            "d2": "23",
+            "d3": "26"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "20",
+            "total": "180",
+            "bonne": "36",
+            "d1": "37",
+            "d2": "35",
+            "d3": "38"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "25",
+            "total": "200",
+            "bonne": "50",
+            "d1": "51",
+            "d2": "49",
+            "d3": "52"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "30",
+            "total": "220",
+            "bonne": "66",
+            "d1": "67",
+            "d2": "65",
+            "d3": "68"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "40",
+            "total": "240",
+            "bonne": "96",
+            "d1": "97",
+            "d2": "95",
+            "d3": "98"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "50",
+            "total": "260",
+            "bonne": "130",
+            "d1": "131",
+            "d2": "129",
+            "d3": "132"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "60",
+            "total": "40",
+            "bonne": "24",
+            "d1": "25",
+            "d2": "23",
+            "d3": "26"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "p": "75",
+            "total": "60",
+            "bonne": "45",
+            "d1": "46",
+            "d2": "44",
+            "d3": "47"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "POURC-002",
+      "type": "qcm",
+      "enonce": "Que signifie 25 % ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "25 pour 100, soit 0,25."
+      },
+      "propositions": [
+        "25 pour 100, soit 0,25.",
+        "25 fois la quantité.",
+        "Une augmentation obligatoire de 25.",
+        "25 unités quelle que soit la quantité."
+      ],
+      "correction": "Un pourcentage exprime une proportion sur 100."
+    },
+    {
+      "id": "POURC-003",
+      "type": "qcm",
+      "enonce": "Pour calculer 12 % d’une quantité, par quel nombre peut-on la multiplier ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0,12"
+      },
+      "propositions": [
+        "0,12",
+        "1,12",
+        "12",
+        "0,88"
+      ],
+      "correction": "12 % = 12/100 = 0,12."
+    }
+  ]
+}

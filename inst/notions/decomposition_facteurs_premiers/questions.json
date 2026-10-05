@@ -1,0 +1,573 @@
+{
+  "notion_id": "decomposition_facteurs_premiers",
+  "questions": [
+    {
+      "id": "ARI-VAR-001",
+      "type": "qcm",
+      "enonce": "Quelle est la décomposition en facteurs premiers de [[n]] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "n": "12",
+            "bonne": "2^2 × 3",
+            "d1": "6 × 2",
+            "d2": "12 × 1",
+            "d3": "4 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 12 est 2^2 × 3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "18",
+            "bonne": "2 × 3^2",
+            "d1": "9 × 2",
+            "d2": "18 × 1",
+            "d3": "6 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 18 est 2 × 3^2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "20",
+            "bonne": "2^2 × 5",
+            "d1": "10 × 2",
+            "d2": "20 × 1",
+            "d3": "6 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 20 est 2^2 × 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "24",
+            "bonne": "2^3 × 3",
+            "d1": "12 × 2",
+            "d2": "24 × 1",
+            "d3": "8 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 24 est 2^3 × 3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "28",
+            "bonne": "2^2 × 7",
+            "d1": "14 × 2",
+            "d2": "28 × 1",
+            "d3": "9 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 28 est 2^2 × 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "30",
+            "bonne": "2 × 3 × 5",
+            "d1": "15 × 2",
+            "d2": "30 × 1",
+            "d3": "10 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 30 est 2 × 3 × 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "36",
+            "bonne": "2^2 × 3^2",
+            "d1": "18 × 2",
+            "d2": "36 × 1",
+            "d3": "12 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 36 est 2^2 × 3^2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "40",
+            "bonne": "2^3 × 5",
+            "d1": "20 × 2",
+            "d2": "40 × 1",
+            "d3": "13 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 40 est 2^3 × 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "42",
+            "bonne": "2 × 3 × 7",
+            "d1": "21 × 2",
+            "d2": "42 × 1",
+            "d3": "14 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 42 est 2 × 3 × 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "45",
+            "bonne": "3^2 × 5",
+            "d1": "22 × 2",
+            "d2": "45 × 1",
+            "d3": "15 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 45 est 3^2 × 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "48",
+            "bonne": "2^4 × 3",
+            "d1": "24 × 2",
+            "d2": "48 × 1",
+            "d3": "16 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 48 est 2^4 × 3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "50",
+            "bonne": "2 × 5^2",
+            "d1": "25 × 2",
+            "d2": "50 × 1",
+            "d3": "16 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 50 est 2 × 5^2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "54",
+            "bonne": "2 × 3^3",
+            "d1": "27 × 2",
+            "d2": "54 × 1",
+            "d3": "18 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 54 est 2 × 3^3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "56",
+            "bonne": "2^3 × 7",
+            "d1": "28 × 2",
+            "d2": "56 × 1",
+            "d3": "18 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 56 est 2^3 × 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "60",
+            "bonne": "2^2 × 3 × 5",
+            "d1": "30 × 2",
+            "d2": "60 × 1",
+            "d3": "20 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 60 est 2^2 × 3 × 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "63",
+            "bonne": "3^2 × 7",
+            "d1": "31 × 2",
+            "d2": "63 × 1",
+            "d3": "21 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 63 est 3^2 × 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "70",
+            "bonne": "2 × 5 × 7",
+            "d1": "35 × 2",
+            "d2": "70 × 1",
+            "d3": "23 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 70 est 2 × 5 × 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "72",
+            "bonne": "2^3 × 3^2",
+            "d1": "36 × 2",
+            "d2": "72 × 1",
+            "d3": "24 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 72 est 2^3 × 3^2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "75",
+            "bonne": "3 × 5^2",
+            "d1": "37 × 2",
+            "d2": "75 × 1",
+            "d3": "25 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 75 est 3 × 5^2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "80",
+            "bonne": "2^4 × 5",
+            "d1": "40 × 2",
+            "d2": "80 × 1",
+            "d3": "26 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 80 est 2^4 × 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "84",
+            "bonne": "2^2 × 3 × 7",
+            "d1": "42 × 2",
+            "d2": "84 × 1",
+            "d3": "28 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 84 est 2^2 × 3 × 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "90",
+            "bonne": "2 × 3^2 × 5",
+            "d1": "45 × 2",
+            "d2": "90 × 1",
+            "d3": "30 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 90 est 2 × 3^2 × 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "96",
+            "bonne": "2^5 × 3",
+            "d1": "48 × 2",
+            "d2": "96 × 1",
+            "d3": "32 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 96 est 2^5 × 3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "98",
+            "bonne": "2 × 7^2",
+            "d1": "49 × 2",
+            "d2": "98 × 1",
+            "d3": "32 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 98 est 2 × 7^2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "100",
+            "bonne": "2^2 × 5^2",
+            "d1": "50 × 2",
+            "d2": "100 × 1",
+            "d3": "33 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 100 est 2^2 × 5^2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "108",
+            "bonne": "2^2 × 3^3",
+            "d1": "54 × 2",
+            "d2": "108 × 1",
+            "d3": "36 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 108 est 2^2 × 3^3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "120",
+            "bonne": "2^3 × 3 × 5",
+            "d1": "60 × 2",
+            "d2": "120 × 1",
+            "d3": "40 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 120 est 2^3 × 3 × 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "126",
+            "bonne": "2 × 3^2 × 7",
+            "d1": "63 × 2",
+            "d2": "126 × 1",
+            "d3": "42 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 126 est 2 × 3^2 × 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "135",
+            "bonne": "3^3 × 5",
+            "d1": "67 × 2",
+            "d2": "135 × 1",
+            "d3": "45 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 135 est 3^3 × 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "140",
+            "bonne": "2^2 × 5 × 7",
+            "d1": "70 × 2",
+            "d2": "140 × 1",
+            "d3": "46 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 140 est 2^2 × 5 × 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "144",
+            "bonne": "2^4 × 3^2",
+            "d1": "72 × 2",
+            "d2": "144 × 1",
+            "d3": "48 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 144 est 2^4 × 3^2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "150",
+            "bonne": "2 × 3 × 5^2",
+            "d1": "75 × 2",
+            "d2": "150 × 1",
+            "d3": "50 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 150 est 2 × 3 × 5^2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "160",
+            "bonne": "2^5 × 5",
+            "d1": "80 × 2",
+            "d2": "160 × 1",
+            "d3": "53 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 160 est 2^5 × 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "168",
+            "bonne": "2^3 × 3 × 7",
+            "d1": "84 × 2",
+            "d2": "168 × 1",
+            "d3": "56 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 168 est 2^3 × 3 × 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "175",
+            "bonne": "5^2 × 7",
+            "d1": "87 × 2",
+            "d2": "175 × 1",
+            "d3": "58 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 175 est 5^2 × 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "180",
+            "bonne": "2^2 × 3^2 × 5",
+            "d1": "90 × 2",
+            "d2": "180 × 1",
+            "d3": "60 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 180 est 2^2 × 3^2 × 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "189",
+            "bonne": "3^3 × 7",
+            "d1": "94 × 2",
+            "d2": "189 × 1",
+            "d3": "63 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 189 est 3^3 × 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "196",
+            "bonne": "2^2 × 7^2",
+            "d1": "98 × 2",
+            "d2": "196 × 1",
+            "d3": "65 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 196 est 2^2 × 7^2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "200",
+            "bonne": "2^3 × 5^2",
+            "d1": "100 × 2",
+            "d2": "200 × 1",
+            "d3": "66 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 200 est 2^3 × 5^2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "210",
+            "bonne": "2 × 3 × 5 × 7",
+            "d1": "105 × 2",
+            "d2": "210 × 1",
+            "d3": "70 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 210 est 2 × 3 × 5 × 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "216",
+            "bonne": "2^3 × 3^3",
+            "d1": "108 × 2",
+            "d2": "216 × 1",
+            "d3": "72 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 216 est 2^3 × 3^3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "225",
+            "bonne": "3^2 × 5^2",
+            "d1": "112 × 2",
+            "d2": "225 × 1",
+            "d3": "75 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 225 est 3^2 × 5^2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "240",
+            "bonne": "2^4 × 3 × 5",
+            "d1": "120 × 2",
+            "d2": "240 × 1",
+            "d3": "80 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 240 est 2^4 × 3 × 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "250",
+            "bonne": "2 × 5^3",
+            "d1": "125 × 2",
+            "d2": "250 × 1",
+            "d3": "83 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 250 est 2 × 5^3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "252",
+            "bonne": "2^2 × 3^2 × 7",
+            "d1": "126 × 2",
+            "d2": "252 × 1",
+            "d3": "84 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 252 est 2^2 × 3^2 × 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "270",
+            "bonne": "2 × 3^3 × 5",
+            "d1": "135 × 2",
+            "d2": "270 × 1",
+            "d3": "90 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 270 est 2 × 3^3 × 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "280",
+            "bonne": "2^3 × 5 × 7",
+            "d1": "140 × 2",
+            "d2": "280 × 1",
+            "d3": "93 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 280 est 2^3 × 5 × 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "294",
+            "bonne": "2 × 3 × 7^2",
+            "d1": "147 × 2",
+            "d2": "294 × 1",
+            "d3": "98 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 294 est 2 × 3 × 7^2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "300",
+            "bonne": "2^2 × 3 × 5^2",
+            "d1": "150 × 2",
+            "d2": "300 × 1",
+            "d3": "100 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 300 est 2^2 × 3 × 5^2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "315",
+            "bonne": "3^2 × 5 × 7",
+            "d1": "157 × 2",
+            "d2": "315 × 1",
+            "d3": "105 × 3",
+            "correction": "On divise successivement par des nombres premiers. La décomposition en facteurs premiers de 315 est 3^2 × 5 × 7."
+          },
+          "progression": 3
+        }
+      ]
+    }
+  ]
+}

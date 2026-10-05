@@ -1,23 +1,29 @@
-# L'essentiel : Puissances d'exposant négatif
+# L'essentiel : Puissances d’exposant négatif
 
-Pour tout nombre $a$ :
+::: {.edu-definition}
+**De quoi parle-t-on ?**
 
-$$a^1=a.$$
+Une puissance d’exposant négatif représente l’inverse de la puissance d’exposant positif correspondante.
+:::
 
-Pour $a\neq0$ :
+## Principe
 
-$$a^0=1.$$
+Pour tout nombre non nul a et tout entier positif n : a⁻ⁿ = 1/aⁿ.
 
-Pour $a\neq0$ et $n>0$ :
+## Méthode
 
-$$a^{-n}=\frac{1}{a^n}.$$
+1. Identifier les objets et l’opération demandée.
+2. Appliquer la propriété adaptée.
+3. Simplifier puis contrôler le résultat.
 
-En particulier, pour $a\neq0$, $a^{-1}=1/a$. Les cas $1$, $0$ et $-1$ donnent un repère utile pour comprendre le passage des exposants positifs aux exposants négatifs.
+## Exemple
 
-Pour une même base non nulle :
+2⁻³ = 1/2³ = 1/8.
 
-$$a^m\times a^n=a^{m+n},\qquad \frac{a^m}{a^n}=a^{m-n}.$$
+## Vérification
 
-Ces règles permettent de calculer avec des exposants positifs, nuls ou négatifs lorsque les expressions sont définies.
+Contrôler le résultat en revenant à la définition ou à l’expression de départ.
 
-**Exemples :** $3^{-2}=1/9$ et $10^2\times10^{-5}=10^{-3}$.
+## À retenir
+
+Ne pas appliquer une règle avant d’avoir identifié ce qu’elle signifie et les conditions dans lesquelles elle est valable.

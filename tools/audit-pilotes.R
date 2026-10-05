@@ -28,7 +28,7 @@ verifier = function(notion, repetitions = 30L) {
 
 set.seed(20260926)
 verifier("pythagore")
-verifier("addition_fractions")
+verifier("fractions_addition")
 verifier("equations")
 
 # Contrôle symbolique explicite, indépendant des valeurs décimales R.

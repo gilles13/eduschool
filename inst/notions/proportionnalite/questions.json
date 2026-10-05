@@ -1,0 +1,655 @@
+{
+  "notion_id": "proportionnalite",
+  "questions": [
+    {
+      "id": "PROP-001",
+      "type": "qcm",
+      "enonce": "[[a]] objets coûtent [[paquet]] €. Au même prix unitaire, combien coûtent [[b]] objets ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Dans une situation de proportionnalité, on conserve le même coefficient entre les deux grandeurs.",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "4",
+            "b": "3",
+            "bonne": "6",
+            "d1": "7",
+            "d2": "5",
+            "d3": "8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "9",
+            "b": "5",
+            "bonne": "15",
+            "d1": "16",
+            "d2": "14",
+            "d3": "17"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "16",
+            "b": "7",
+            "bonne": "28",
+            "d1": "29",
+            "d2": "27",
+            "d3": "30"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "25",
+            "b": "9",
+            "bonne": "45",
+            "d1": "46",
+            "d2": "44",
+            "d3": "47"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "36",
+            "b": "11",
+            "bonne": "66",
+            "d1": "67",
+            "d2": "65",
+            "d3": "68"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "49",
+            "b": "8",
+            "bonne": "56",
+            "d1": "57",
+            "d2": "55",
+            "d3": "58"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "64",
+            "b": "10",
+            "bonne": "80",
+            "d1": "81",
+            "d2": "79",
+            "d3": "82"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "18",
+            "b": "5",
+            "bonne": "45",
+            "d1": "46",
+            "d2": "44",
+            "d3": "47"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "30",
+            "b": "7",
+            "bonne": "70",
+            "d1": "71",
+            "d2": "69",
+            "d3": "72"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "8",
+            "b": "9",
+            "bonne": "18",
+            "d1": "19",
+            "d2": "17",
+            "d3": "20"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "15",
+            "b": "6",
+            "bonne": "18",
+            "d1": "19",
+            "d2": "17",
+            "d3": "20"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "24",
+            "b": "8",
+            "bonne": "32",
+            "d1": "33",
+            "d2": "31",
+            "d3": "34"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "35",
+            "b": "10",
+            "bonne": "50",
+            "d1": "51",
+            "d2": "49",
+            "d3": "52"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "48",
+            "b": "12",
+            "bonne": "72",
+            "d1": "73",
+            "d2": "71",
+            "d3": "74"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "14",
+            "b": "7",
+            "bonne": "49",
+            "d1": "50",
+            "d2": "48",
+            "d3": "51"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "24",
+            "b": "4",
+            "bonne": "32",
+            "d1": "33",
+            "d2": "31",
+            "d3": "34"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "36",
+            "b": "6",
+            "bonne": "54",
+            "d1": "55",
+            "d2": "53",
+            "d3": "56"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "50",
+            "b": "8",
+            "bonne": "80",
+            "d1": "81",
+            "d2": "79",
+            "d3": "82"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "12",
+            "b": "10",
+            "bonne": "20",
+            "d1": "21",
+            "d2": "19",
+            "d3": "22"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "21",
+            "b": "12",
+            "bonne": "36",
+            "d1": "37",
+            "d2": "35",
+            "d3": "38"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "32",
+            "b": "9",
+            "bonne": "36",
+            "d1": "37",
+            "d2": "35",
+            "d3": "38"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "10",
+            "b": "4",
+            "bonne": "20",
+            "d1": "21",
+            "d2": "19",
+            "d3": "22"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "18",
+            "b": "6",
+            "bonne": "36",
+            "d1": "37",
+            "d2": "35",
+            "d3": "38"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "28",
+            "b": "8",
+            "bonne": "56",
+            "d1": "57",
+            "d2": "55",
+            "d3": "58"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "40",
+            "b": "10",
+            "bonne": "80",
+            "d1": "81",
+            "d2": "79",
+            "d3": "82"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "54",
+            "b": "7",
+            "bonne": "63",
+            "d1": "64",
+            "d2": "62",
+            "d3": "65"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "70",
+            "b": "9",
+            "bonne": "90",
+            "d1": "91",
+            "d2": "89",
+            "d3": "92"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "16",
+            "b": "11",
+            "bonne": "22",
+            "d1": "23",
+            "d2": "21",
+            "d3": "24"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "6",
+            "b": "6",
+            "bonne": "18",
+            "d1": "19",
+            "d2": "17",
+            "d3": "20"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "12",
+            "b": "8",
+            "bonne": "32",
+            "d1": "33",
+            "d2": "31",
+            "d3": "34"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "20",
+            "b": "5",
+            "bonne": "25",
+            "d1": "26",
+            "d2": "24",
+            "d3": "27"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "30",
+            "b": "7",
+            "bonne": "42",
+            "d1": "43",
+            "d2": "41",
+            "d3": "44"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "42",
+            "b": "9",
+            "bonne": "63",
+            "d1": "64",
+            "d2": "62",
+            "d3": "65"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "56",
+            "b": "11",
+            "bonne": "88",
+            "d1": "89",
+            "d2": "87",
+            "d3": "90"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "72",
+            "b": "13",
+            "bonne": "117",
+            "d1": "118",
+            "d2": "116",
+            "d3": "119"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "20",
+            "b": "3",
+            "bonne": "30",
+            "d1": "31",
+            "d2": "29",
+            "d3": "32"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "6",
+            "b": "5",
+            "bonne": "10",
+            "d1": "11",
+            "d2": "9",
+            "d3": "12"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "12",
+            "b": "7",
+            "bonne": "21",
+            "d1": "22",
+            "d2": "20",
+            "d3": "23"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "20",
+            "b": "9",
+            "bonne": "36",
+            "d1": "37",
+            "d2": "35",
+            "d3": "38"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "30",
+            "b": "11",
+            "bonne": "55",
+            "d1": "56",
+            "d2": "54",
+            "d3": "57"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "42",
+            "b": "8",
+            "bonne": "48",
+            "d1": "49",
+            "d2": "47",
+            "d3": "50"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "56",
+            "b": "10",
+            "bonne": "70",
+            "d1": "71",
+            "d2": "69",
+            "d3": "72"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "16",
+            "b": "5",
+            "bonne": "40",
+            "d1": "41",
+            "d2": "39",
+            "d3": "42"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "paquet": "27",
+            "b": "7",
+            "bonne": "63",
+            "d1": "64",
+            "d2": "62",
+            "d3": "65"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "paquet": "40",
+            "b": "9",
+            "bonne": "90",
+            "d1": "91",
+            "d2": "89",
+            "d3": "92"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "paquet": "10",
+            "b": "6",
+            "bonne": "12",
+            "d1": "13",
+            "d2": "11",
+            "d3": "14"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "paquet": "18",
+            "b": "8",
+            "bonne": "24",
+            "d1": "25",
+            "d2": "23",
+            "d3": "26"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "paquet": "28",
+            "b": "10",
+            "bonne": "40",
+            "d1": "41",
+            "d2": "39",
+            "d3": "42"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "8",
+            "paquet": "40",
+            "b": "12",
+            "bonne": "60",
+            "d1": "61",
+            "d2": "59",
+            "d3": "62"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "paquet": "12",
+            "b": "7",
+            "bonne": "42",
+            "d1": "43",
+            "d2": "41",
+            "d3": "44"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "PROP-002",
+      "type": "qcm",
+      "enonce": "Quel indice permet de reconnaître une situation de proportionnalité ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le quotient correspondant reste constant."
+      },
+      "propositions": [
+        "Le quotient correspondant reste constant.",
+        "On ajoute toujours le même nombre.",
+        "Les deux grandeurs sont toujours égales.",
+        "Le graphique est toujours horizontal."
+      ],
+      "correction": "Une proportionnalité se caractérise par un coefficient multiplicatif constant."
+    },
+    {
+      "id": "PROP-003",
+      "type": "qcm",
+      "enonce": "Dans un tableau de proportionnalité, que représente le coefficient de proportionnalité ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le nombre par lequel on multiplie une grandeur pour obtenir l’autre."
+      },
+      "propositions": [
+        "Le nombre par lequel on multiplie une grandeur pour obtenir l’autre.",
+        "La somme des deux grandeurs.",
+        "La différence entre deux colonnes.",
+        "Le plus grand nombre du tableau."
+      ],
+      "correction": "Le coefficient relie les valeurs correspondantes par une multiplication."
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+"rubrique_id";"programme_id";"theme_item_id";"niveau";"rubrique";"texte_officiel_extrait";"page_debut";"page_fin";"source_id";"controle_formules"
+"ITM_MAT_C3_CM1_01_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_01";"CM1";"OBJECTIFS";"Comparer et dénombrer des collections en les organisant
+Construire des collections de cardinal donné
+Connaître et utiliser les relations entre les unités de numération
+Connaître la suite écrite et la suite orale des nombres jusqu’à 999 999
+Connaître la valeur des chiffres en fonction de leur position dans un nombre
+Connaître et utiliser diverses représentations d’un nombre et passer de l’une à l’autre
+Comprendre et savoir utiliser les expressions « égal à », « supérieur à », « inférieur à », « compris entre … et … »
+Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles =, < et >
+Ordonner des nombres dans l’ordre croissant ou décroissant
+Savoir placer des nombres et repérer des points sur une demi-droite graduée
+Savoir reconnaître les multiples de 2, de 5 et de 10 à partir de leur écriture chiffrée
+Savoir déterminer si un nombre entier donné est un multiple d’un nombre entier inférieur ou égal à 10
+Savoir déterminer si un nombre entier inférieur ou égal à 10 est un diviseur d’un nombre entier donné";"5";"5";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_02_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_02";"CM1";"OBJECTIFS";"Savoir interpréter, représenter, écrire et lire des fractions
+Savoir écrire une fraction supérieure à 1 comme la somme d’un entier et d’une fraction inférieure à 1
+Savoir écrire la somme d’un entier et d’une fraction inférieure à 1 comme une unique fraction
+Savoir encadrer une fraction par deux nombres entiers consécutifs
+Savoir placer une fraction ou la somme d’un nombre entier et d’une fraction inférieure à un sur une demi-droite graduée
+Savoir repérer un point d’une demi-droite graduée par une fraction ou par la somme d’un nombre entier et d’une fraction
+Comparer des fractions
+Additionner et soustraire des fractions
+Déterminer une fraction d’une quantité ou d’une grandeur";"6";"6";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_03_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_03";"CM1";"OBJECTIFS";"Interpréter, représenter, écrire et lire des fractions décimales
+Connaître et utiliser les relations entre unités simples, dixièmes et centièmes
+Placer une fraction décimale sur une demi-droite graduée et repérer un point d’une demi-droite graduée par une fraction décimale
+Écrire une fraction décimale supérieure à 1 comme la somme d’un nombre entier et d’une fraction décimale inférieure à 1
+Écrire une fraction décimale supérieure à 1 comme la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10
+Comparer, encadrer, intercaler des fractions décimales en utilisant les symboles =, < et >
+Ordonner des fractions décimales dans l’ordre croissant ou décroissant
+Passer d’une écriture sous forme d’une fraction décimale ou d’une somme de fractions décimales à une écriture à virgule et réciproquement
+Interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)
+Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d’une demi-droite graduée par un nombre décimal
+Savoir donner la partie entière et l’arrondi à l’entier d’un nombre décimal
+Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >";"6";"6";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_04_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_04";"CM1";"OBJECTIFS";"Mémoriser des faits numériques — Connaître des faits numériques usuels relatifs aux nombres entiers
+Mémoriser des faits numériques — Connaître quelques relations entre des fractions usuelles
+Mémoriser des faits numériques — Connaître l’écriture décimale de fractions usuelles
+Numération — Ajouter ou soustraire un nombre entier inférieur à 10, d’unités, de dizaines, de centaines, de dixièmes ou de centièmes à un nombre décimal, lorsqu’il n’y a pas de retenue
+Numération — Multiplier un nombre entier par 10, 100 ou 1 000
+Numération — Multiplier un nombre décimal par 10
+Numération — Diviser un nombre décimal par 10
+Procédures — Ajouter ou soustraire 8, 9, 18, 19, 28, 29, 38 ou 39, à un nombre
+Procédures — Multiplier un nombre entier inférieur à 10 par un nombre entier de dizaines ou de centaines
+Procédures — Multiplier un nombre entier par 4 ou par 8
+Procédures — Multiplier un nombre entier par 5
+Procédures — Utiliser la distributivité de la multiplication par rapport à l’addition dans des cas simples";"7";"7";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_05_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_05";"CM1";"OBJECTIFS";"Estimer le résultat d’une opération
+Savoir effectuer un calcul contenant des parenthèses
+Poser en colonnes et effectuer des additions et des soustractions de nombres décimaux
+Poser et effectuer des multiplications de deux nombres entiers
+Poser et effectuer des multiplications d’un nombre décimal par un nombre entier inférieur à 10
+Poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre";"7";"7";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_06_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_06";"CM1";"OBJECTIFS";"Résoudre des problèmes additifs en une étape des types « parties-tout » et « comparaison »
+Résoudre des problèmes additifs en deux ou trois étapes
+Résoudre des problèmes multiplicatifs de type « parties-tout » en une étape
+Résoudre des problèmes de comparaison multiplicative
+Résoudre des problèmes mixtes en deux ou trois étapes
+Résoudre des problèmes de dénombrement
+Résoudre des problèmes d’optimisation";"8";"8";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_07_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_07";"CM1";"OBJECTIFS";"Trouver le nombre manquant dans une égalité à trous
+Déterminer la valeur d’un nombre inconnu en utilisant un symbole ou une lettre pour le représenter
+Résoudre des problèmes algébriques
+Exécuter un programme de calcul
+Identifier et formuler une règle de calcul pour poursuivre une suite de nombres
+Identifier des régularités et poursuivre une suite de motifs évolutive";"8";"9";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_08_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_08";"CM1";"OBJECTIFS";"Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés
+Connaître les relations entre les unités de longueur
+Choisir une unité adaptée pour exprimer une longueur
+Comparer des longueurs
+Disposer de quelques longueurs de référence
+Estimer la longueur d’un objet ou d’une distance
+Savoir ce qu’est le périmètre d’une figure plane
+Déterminer le périmètre d’un polygone en utilisant une règle graduée
+Résoudre des problèmes mettant en jeu les longueurs des côtés d’un polygone et son périmètre";"17";"17";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_09_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_09";"CM1";"OBJECTIFS";"Connaître et utiliser les unités de masse du milligramme au kilogramme et la tonne, et les symboles associés
+Connaître les relations entre les unités de masse
+Choisir une unité adaptée pour exprimer une masse
+Comparer des masses
+Disposer de quelques masses de référence
+Estimer la masse d’un objet";"17";"17";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_10_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_10";"CM1";"OBJECTIFS";"Connaître et utiliser les unités de contenance du millilitre à l’hectolitre et les symboles associés
+Connaître les relations entre les unités de contenance
+Choisir une unité adaptée pour exprimer une contenance
+Comparer des contenances";"17";"17";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_11_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_11";"CM1";"OBJECTIFS";"Comparer les aires de différentes figures planes
+Déterminer des aires
+Connaître et utiliser les centimètres carrés pour exprimer des aires";"17";"17";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_12_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_12";"CM1";"OBJECTIFS";"Utiliser le lexique spécifique associé aux angles
+Comprendre et utiliser les notations des angles
+Comparer des angles";"17";"18";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_13_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_13";"CM1";"OBJECTIFS";"Lire l’heure sur une horloge à aiguilles
+Positionner les aiguilles d’une horloge correspondant à une heure donnée en heure et minute
+Comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure et minute)
+Résoudre des problèmes à une ou deux étapes impliquant des durées";"18";"18";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_14_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_14";"CM1";"OBJECTIFS";"Utiliser le vocabulaire géométrique approprié dans le contexte d’apprentissage des notions correspondantes
+Utiliser les outils géométriques usuels : règle, règle graduée, équerre et compas
+Connaître les codes usuels utilisés en géométrie
+Décrire et reconnaître un cercle et un disque comme un ensemble de points caractérisés par leur distance à un point donné
+Reconnaître et utiliser la notion de perpendicularité
+Reconnaître et utiliser la notion de parallélisme
+Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange
+Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d’angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange
+Reproduire ou construire un carré, un rectangle, un triangle, un triangle rectangle ou un cercle ou des assemblages de ces figures sur tout support (papier quadrillé, pointé ou uni), avec une règle graduée, une équerre ou un compas
+Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles
+Reconnaître si une figure possède un ou plusieurs axes de symétrie
+Compléter une figure pour la rendre symétrique par rapport à une droite donnée, horizontale ou verticale
+Construire, sur papier quadrillé, la figure symétrique d’une figure donnée par rapport à une droite horizontale ou verticale";"20";"21";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_15_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_15";"CM1";"OBJECTIFS";"Nommer un cube, une boule, un pavé, un cône, une pyramide, un cylindre et un prisme droit
+Décrire un cube, un pavé, une pyramide et un prisme droit en faisant référence à des propriétés et en utilisant le vocabulaire approprié
+Connaître le nombre et la nature des faces d’un cube ou d’un pavé
+Connaître la nature des faces d’une pyramide
+Connaître la nature des faces d’un prisme droit
+Construire un cube, un pavé, une pyramide ou un prisme droit
+Reconnaître un patron d’un cube
+Construire un patron d’un cube";"21";"21";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_16_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_16";"CM1";"OBJECTIFS";"Connaître et utiliser le vocabulaire lié aux déplacements
+Comprendre, utiliser et produire une suite d’instructions qui décrivent un déplacement en utilisant un vocabulaire spatial précis
+Résoudre des problèmes portant sur des assemblages de cubes";"21";"21";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_17_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_17";"CM1";"OBJECTIFS";"Recueillir des données et produire un tableau, un diagramme en barres ou un ensemble de points dans un repère pour les présenter
+Lire et interpréter les données d’un tableau à simple ou double entrée, d’un diagramme en barres ou d’une courbe
+Résoudre des problèmes en une ou plusieurs étapes en utilisant les données d’un tableau à simple ou double entrée, d’un diagramme en barres ou d’une courbe";"24";"24";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_18_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_18";"CM1";"OBJECTIFS";"Identifier des expériences aléatoires
+Identifier toutes les issues possibles lors d’une expérience aléatoire simple
+Comprendre et utiliser le vocabulaire approprié : « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux »
+Comparer des issues d’expériences aléatoires ou des évènements selon leur probabilité de réalisation
+Comprendre que ce n’est pas parce qu’il y a deux issues possibles que chacune a une chance sur deux de se réaliser
+Reconnaître des situations d’équiprobabilité";"24";"25";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM1_19_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM1_19";"CM1";"OBJECTIFS";"Identifier une situation de proportionnalité
+Savoir résoudre un problème de proportionnalité";"26";"26";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_01_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_01";"CM2";"OBJECTIFS";"Connaître et utiliser les relations entre les unités de numération
+Connaître la suite écrite et la suite orale des nombres jusqu’à 999 999 999
+Connaître et utiliser diverses représentations d’un nombre et passer de l’une à l’autre
+Connaître la valeur des chiffres en fonction de leur position dans un nombre
+Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles =, < et >
+Ordonner des nombres dans l’ordre croissant ou décroissant
+Placer des nombres et repérer des points sur une demi-droite graduée
+Déterminer si un nombre entier inférieur ou égal à 10 est un diviseur d’un nombre entier donné ou si un nombre entier donné est un multiple d’un nombre entier inférieur ou égal à 10
+Déterminer des diviseurs d’un nombre entier inférieur ou égal à 100
+Déterminer tous les diviseurs d’un nombre entier inférieur ou égal à 30
+Déterminer les diviseurs communs à deux nombres entiers inférieurs ou égaux à 30
+Déterminer des multiples communs à deux nombres entiers inférieurs à 15";"9";"9";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_02_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_02";"CM2";"OBJECTIFS";"Interpréter, représenter, écrire et lire des fractions
+Écrire une fraction supérieure à 1 comme la somme d’un entier et d’une fraction inférieure à 1
+Écrire la somme d’un entier et d’une fraction inférieure à 1 comme une unique fraction
+Encadrer une fraction entre deux nombres entiers consécutifs
+Placer une fraction ou la somme d’un nombre entier et d’une fraction inférieure à un sur une demi-droite graduée
+Repérer un point d’une demi-droite graduée par une fraction ou par la somme d’un nombre entier et d’une fraction
+Comparer des fractions
+Additionner et soustraire des fractions
+Calculer le produit d’un entier et d’une fraction
+Déterminer une fraction d’une quantité ou d’une grandeur";"10";"10";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_03_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_03";"CM2";"OBJECTIFS";"Interpréter, représenter, écrire et lire des fractions décimales
+Connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes
+Placer une fraction décimale sur une demi-droite graduée et repérer un point d’une demi-droite graduée par une fraction décimale
+Écrire une fraction décimale supérieure à 1 comme la somme d’un nombre entier et d’une fraction décimale inférieure à 1
+Écrire une fraction décimale supérieure à 1 comme la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10
+Comparer, encadrer, intercaler des fractions décimales en utilisant les symboles =, < et >
+Ordonner des fractions décimales dans l’ordre croissant ou décroissant
+Passer d’une écriture sous forme d’une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement
+Interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)
+Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d’une demi-droite graduée par un nombre en écriture à virgule
+Savoir donner la partie entière et l’arrondi à l’entier d’un nombre décimal
+Comparer, encadrer, intercaler, ordonner par ordre croissant ou décroissant des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >";"10";"10";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_04_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_04";"CM2";"OBJECTIFS";"Mémoriser des faits numériques — Connaître des faits numériques usuels avec des entiers
+Mémoriser des faits numériques — Connaître la moitié des nombres impairs jusqu’à 15
+Mémoriser des faits numériques — Connaître quelques relations entre des fractions usuelles
+Mémoriser des faits numériques — Connaître l’écriture décimale de fractions usuelles
+Numération — Ajouter ou soustraire un nombre entier à un nombre décimal lorsqu’il n’y a pas de retenue
+Numération — Ajouter un nombre entier à un nombre décimal lorsqu’il y a une retenue
+Numération — Multiplier un nombre décimal par 10, 100 ou 1 000
+Numération — Diviser un nombre décimal par 10, 100 ou 1 000
+Procédures — Ajouter deux nombres décimaux inférieurs à 10, s’écrivant avec au plus un chiffre après la virgule
+Procédures — Ajouter ou soustraire 8, 9, 18, 19, 28, 29, …, 98 ou 99 à un nombre
+Procédures — Multiplier un nombre entier, inférieur à 10, de dizaines, de centaines ou de milliers par un nombre entier, inférieur à 10, de dizaines, de centaines ou de milliers
+Procédures — Utiliser la distributivité de la multiplication par rapport à l’addition dans des cas simples
+Procédures — Calculer le double d’un nombre décimal dans des cas simples
+Procédures — Calculer la moitié d’un nombre décimal dans des cas simples
+Procédures — Diviser un nombre entier par 4 ou par 8
+Procédures — Multiplier un nombre décimal par 5
+Procédures — Multiplier un nombre décimal par 50";"11";"11";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_05_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_05";"CM2";"OBJECTIFS";"Estimer le résultat d’une opération
+Savoir réaliser un calcul contenant une ou deux paires de parenthèses
+Poser et effectuer la multiplication d’un nombre décimal par un nombre entier
+Poser et effectuer des divisions décimales avec un dividende entier et un diviseur à un chiffre
+Poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre";"11";"11";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_06_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_06";"CM2";"OBJECTIFS";"Résoudre des problèmes additifs en une ou plusieurs étapes
+Résoudre des problèmes multiplicatifs de type « parties-tout » en une étape
+Résoudre des problèmes mixtes en plusieurs étapes
+Résoudre des problèmes de comparaison multiplicative
+Résoudre des problèmes de dénombrement
+Résoudre des problèmes d’optimisation
+Résoudre des problèmes préparant à l’utilisation d’algorithmes";"12";"12";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_07_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_07";"CM2";"OBJECTIFS";"Trouver le nombre manquant dans une égalité à trous
+Résoudre des problèmes algébriques
+Exécuter ou produire un programme de calcul
+Identifier et formuler une règle de calcul pour poursuivre une suite de nombres
+Identifier des régularités et poursuivre une suite de motifs évolutive
+Trouver le nombre d’éléments pour une étape donnée dans une suite de motifs évolutive";"13";"13";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_08_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_08";"CM2";"OBJECTIFS";"Comparer les aires de différentes figures planes
+Déterminer des aires
+Connaître et utiliser les unités centimètre carré, décimètre carré et mètre carré pour exprimer des aires
+Convertir des aires entre différentes unités
+Déterminer l’aire d’un carré ou d’un rectangle";"18";"18";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_09_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_09";"CM2";"OBJECTIFS";"Utiliser le lexique spécifique associé aux angles
+Comprendre et utiliser les notations des angles
+Comparer des angles
+Construire un angle égal à la somme de deux angles donnés ou un angle multiple d’un angle donné
+Construire par pliage la moitié d’un angle donné
+Savoir qu’un angle droit mesure 90°";"18";"18";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_10_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_10";"CM2";"OBJECTIFS";"Lire l’heure sur une horloge à aiguilles
+Positionner les aiguilles d’une horloge correspondant à une heure donnée en heure, minute et seconde
+Comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)
+Résoudre des problèmes à une ou plusieurs étapes impliquant des durées";"18";"19";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_11_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_11";"CM2";"OBJECTIFS";"Utiliser le vocabulaire géométrique approprié dans le contexte d’apprentissage des notions correspondantes
+Utiliser les outils géométriques usuels : règle, règle graduée, équerre et compas
+Connaître les notations et les codes usuels utilisés en géométrie
+Reconnaître et utiliser la notion de perpendicularité
+Reconnaître et utiliser la notion de parallélisme
+Décrire et reconnaître un cercle et un disque comme un ensemble de points caractérisés par leur distance à un point donné
+Reconnaître et nommer les figures suivantes en s’appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone
+Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d’angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle, losange, trapèze et trapèze rectangle
+Reproduire ou construire un carré, un rectangle, un triangle, un triangle rectangle ou un cercle ou des assemblages de ces figures sur tout support (papier quadrillé, pointé ou uni), avec une règle graduée, une équerre ou un compas
+Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles
+Élaborer un programme de construction
+Construire, sur papier quadrillé, la figure symétrique d’une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage";"21";"22";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_12_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_12";"CM2";"OBJECTIFS";"Nommer un cube, une boule, un pavé, un cône, une pyramide, un cylindre ou un prisme droit
+Décrire un cube, un pavé, une pyramide ou un prisme droit en faisant référence à des propriétés et en utilisant le vocabulaire approprié
+Reconnaître un patron d’un cube
+Construire un patron d’un cube
+Reconnaître un patron d’un pavé";"22";"22";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_13_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_13";"CM2";"OBJECTIFS";"Connaître et utiliser le vocabulaire lié aux déplacements
+Comprendre, utiliser et produire une suite d’instructions qui décrivent un déplacement en utilisant un vocabulaire spatial précis
+Résoudre des problèmes portant sur des assemblages de cubes";"22";"22";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_14_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_14";"CM2";"OBJECTIFS";"Recueillir des données et produire un tableau, un diagramme en barres ou un ensemble de points dans un repère pour présenter des données recueillies
+Lire et interpréter les données d’un tableau, d’un diagramme en barres, d’un diagramme circulaire ou d’une courbe
+Résoudre des problèmes en une ou deux étapes en utilisant les données d’un tableau, d’un diagramme en barres, d’un diagramme circulaire ou d’une courbe";"25";"25";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_15_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_15";"CM2";"OBJECTIFS";"Identifier toutes les issues possibles lors d’une expérience aléatoire simple
+Identifier toutes les issues réalisant un évènement dans une expérience aléatoire simple
+Dans une situation d’équiprobabilité, lors d’une expérience aléatoire simple, exprimer la probabilité d’un évènement sous la forme « a chances sur b »
+Comparer des probabilités dans des cas simples
+Comprendre la notion d’indépendance lors de la répétition de la même expérience aléatoire
+Dans des situations d’équiprobabilité, recenser toutes les issues possibles d’une expérience aléatoire en deux étapes dans un tableau ou dans un arbre afin de déterminer des probabilités";"25";"25";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_CM2_16_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_CM2_16";"CM2";"OBJECTIFS";"Identifier une situation de proportionnalité
+Savoir résoudre un problème de proportionnalité";"27";"27";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_01_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_01";"6E";"AUTOMATISMES";"L’élève restitue de manière automatique les relations entre 1/1 000, 1/100, 1/10 et 1.
+L’élève restitue de manière automatique les équivalences d’écriture : 1/10 = 0,1 ; 1/100 = 0,01 ; 1/1 000 = 0,001.
+L’élève passe de manière automatique d’une écriture sous forme de fraction décimale ou de somme de fractions décimales à une écriture décimale, et inversement.
+L’élève applique de manière automatique la procédure de multiplication d’un nombre décimal par 1, 10, 100 ou 1 000.
+L’élève applique de manière automatique la procédure de division d’un nombre décimal par 1, 10, 100 ou 1 000.";"13";"13";"SRC_BO_2025_16_MATH_C3";"A_VERIFIER"
+"ITM_MAT_C3_6E_01_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_01";"6E";"OBJECTIFS";"Connaître et utiliser la valeur des chiffres selon leur rang dans l’écriture d’un nombre
+Connaître les liens entre les unités de numération unité, dizaine, centaine, millier, dixième, centième, millième
+Connaître des grands nombres entiers
+Reconnaître un nombre décimal
+Connaître la définition d’un pourcentage
+Associer et utiliser différentes écritures d’un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage
+Placer sur une demi-droite graduée un point dont l’abscisse est un nombre décimal
+Repérer un nombre décimal sur une demi-droite graduée
+Comparer deux nombres décimaux
+Ordonner une liste de nombres décimaux
+Donner la valeur arrondie à l’unité, au dixième ou au centième, d’un nombre décimal
+Déterminer ou connaître la valeur arrondie de certains nombres non décimaux
+Encadrer un nombre décimal par deux nombres décimaux, intercaler un nombre décimal entre deux nombres décimaux
+Additionner et soustraire des nombres décimaux
+Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001
+Connaître le lien avec la division par 10, 100 et par 1 000
+Comprendre le sens de la multiplication de deux nombres décimaux
+Calculer le produit de deux nombres décimaux
+Contrôler les résultats à l’aide d’ordres de grandeur
+Résoudre des problèmes mettant en jeu des multiplications entre des nombres décimaux
+Diviser un nombre décimal par un nombre entier non nul inférieur à 10
+Résoudre des problèmes mettant en jeu des divisions décimales
+Effectuer la division euclidienne d’un nombre entier par un nombre entier inférieur à 100
+Résoudre des problèmes mettant en jeu des divisions euclidiennes";"13";"13";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_01_PROLONGEMENTS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_01";"6E";"PROLONGEMENTS";"Des activités fondées sur l’histoire des mathématiques permettent à l’élève de renforcer sa culture générale et de prendre du recul sur ses connaissances des nombres entiers ou décimaux.
+− Découverte d’écritures des nombres à partir de lettres ou de dessins : numérations acrophoniques grecque, romaine, hiéroglyphique égyptienne.
+− Découverte d’algorithmes opératoires, développés dans plusieurs traditions mathématiques, comme la multiplication par jalousies ou en tableau.
+− Manipulation d’abaques à jetons ou de bouliers pour remobiliser le principe de la numération et la notion de « base de numération ».
+− Découverte de la numération sexagésimale paléo-babylonienne.
+− Découverte de l’écriture des nombres décimaux utilisée par Simon Stevin de Bruges.";"13";"14";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_02_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_02";"6E";"AUTOMATISMES";"L’élève sait reconnaître une fraction sur des représentations variées.
+L’élève connaît des relations entre 1/4, 1/2, 3/4 et 1 et complète de manière automatique des égalités à trous correspondantes.
+L’élève sait passer de manière automatique d’une écriture fractionnaire à une écriture décimale, et inversement, pour les fractions usuelles indiquées dans le programme.
+Les notions de diviseur et de multiple et les tables de multiplication sont réactivées en vue de leur utilisation dans le calcul sur les fractions.
+L’élève sait calculer 2/3 de 12 œufs et 3/4 de 10 m.";"15";"15";"SRC_BO_2025_16_MATH_C3";"A_VERIFIER"
+"ITM_MAT_C3_6E_02_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_02";"6E";"OBJECTIFS";"Le sens quotient — Relier une fraction au résultat exact de la division de son numérateur par son dénominateur
+Le sens quotient — Comprendre et connaître la définition du quotient d’un entier a par un entier b non nul
+Le sens quotient — Compléter des égalités à trous multiplicatives
+Le sens quotient — Placer une fraction sur une demi-droite graduée dans des cas simples
+Le sens quotient — Graduer un segment de longueur donnée
+Le sens quotient — Savoir que la fraction a/b peut représenter un nombre entier, un nombre décimal non entier ou un nombre non décimal
+Opérateur multiplicatif — Utiliser une multiplication pour appliquer une fraction à un nombre entier
+Comparer — Établir des égalités de fractions
+Comparer — Comparer et encadrer des fractions
+Comparer — Ordonner une liste de nombres écrits sous forme de fractions ou de nombres mixtes
+Opérations — Additionner et soustraire des fractions
+Opérations — Multiplier une fraction par un nombre entier
+Opérations — Résoudre des problèmes mettant en jeu des fractions
+Opérations — Inventer des problèmes mettant en jeu des fractions
+Pourcentages — Comprendre le sens d’un pourcentage
+Pourcentages — Calculer une proportion (rapport entre une partie et le tout) et l’exprimer sous forme de pourcentage dans des cas simples
+Pourcentages — Appliquer un pourcentage à une grandeur ou à un nombre";"15";"16";"SRC_BO_2025_16_MATH_C3";"A_VERIFIER"
+"ITM_MAT_C3_6E_02_PROLONGEMENTS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_02";"6E";"PROLONGEMENTS";"L’élève découvre les contextes historiques (impôt, héritage, cadastre) qui ont conduit à la notion de fraction ainsi que leurs différentes écritures avant l’utilisation de la barre de fraction.
+Il comprend pourquoi une fraction a été appelée nombre rompu, nombre cassé ou encore nombre coupé.";"16";"16";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_03_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_03";"6E";"OBJECTIFS";"Utiliser des modèles pré-algébriques pour résoudre des problèmes algébriques
+Identifier la structure d’un motif évolutif en repérant une régularité et en identifiant une structure";"16";"16";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_04_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_04";"6E";"AUTOMATISMES";"L’élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal.
+L’élève connaît les relations entre deux unités successives du système décimal, par exemple : 1 dm = 10 cm et 1 cm = 1/10 dm = 0,1 dm.
+L’élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre, et inversement.
+L’élève sait utiliser le compas comme outil de report de longueurs.
+L’élève sait que le périmètre d’une figure plane est la longueur de son contour et sait calculer le périmètre d’un carré et d’un rectangle.";"19";"19";"SRC_BO_2025_16_MATH_C3";"A_VERIFIER"
+"ITM_MAT_C3_6E_04_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_04";"6E";"OBJECTIFS";"Savoir que le périmètre du disque est proportionnel à son diamètre
+Connaître la formule du périmètre d’un disque
+Calculer le périmètre d’un disque
+Calculer des périmètres de figures composées
+Résoudre des problèmes impliquant des longueurs";"19";"19";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_05_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_05";"6E";"AUTOMATISMES";"L’élève sait comparer des aires sans avoir recours à la mesure, par superposition ou par découpage et recollement de surfaces.
+L’élève connaît le sens des unités cm², dm² et m².
+Dans des cas simples, l’élève sait déterminer l’aire d’une surface en s’appuyant sur un quadrillage.
+L’élève connaît les relations 1 m² = 100 dm² et 1 dm² = 100 cm².
+L’élève mémorise que 1 cm² = 1/100 dm² = 0,01 dm² et que 1 dm² = 1/100 m² = 0,01 m².";"19";"19";"SRC_BO_2025_16_MATH_C3";"A_VERIFIER"
+"ITM_MAT_C3_6E_05_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_05";"6E";"OBJECTIFS";"Effectuer des conversions d’aire
+Connaître la formule de l’aire d’un carré ou d’un rectangle
+Calculer l’aire d’un carré ou d’un rectangle";"19";"20";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_06_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_06";"6E";"OBJECTIFS";"Connaître l’unité centimètre cube
+Comparer des volumes
+Déterminer un volume";"20";"20";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_07_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_07";"6E";"AUTOMATISMES";"− L’élève lit l’heure sur un cadran à aiguilles ou sur un affichage digital (heures, minutes et secondes).
+− L’élève place les aiguilles pour qu’une horloge indique une heure donnée.
+− L’élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient.
+− L’élève sait combien de jours il y a dans une année (bissextile ou non), combien d’années il y a dans un siècle, et dans un millénaire.
+− L’élève sait qu’une demi-heure c’est 30 minutes, qu’un quart d’heure c’est 15 minutes, que trois quarts d’heure c’est 45 minutes.";"20";"20";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_07_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_07";"6E";"OBJECTIFS";"Effectuer des calculs sur des horaires et des durées
+Résoudre des problèmes impliquant des horaires et des durées
+Convertir des durées";"20";"20";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_07_PROLONGEMENTS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_07";"6E";"PROLONGEMENTS";"L’élève découvre l’histoire et le fonctionnement de différents types de calendriers : solaires, lunaires ou luni-solaires. Il comprend le lien entre les calendriers julien et grégorien et les différentes approximations de la valeur de l’année tropique.
+Selon ses intérêts et ses besoins, l’élève peut également s’interroger sur les moyens de partager le temps, découvrir les clepsydres (horloges à eau) ou d’autres instruments historiques et interculturels (grecs, arabes, chinois).";"20";"20";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_08_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_08";"6E";"AUTOMATISMES";"− L’élève connaît le lexique et le codage des objets de base de la géométrie plane : angle droit, égalité de longueurs, égalité d’angles.
+− Il reconnaît un carré, un rectangle, un triangle.
+− Il reconnaît si une figure possède un ou plusieurs axes de symétrie.
+− Il sait coder des angles droits et des longueurs égales.";"23";"23";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_08_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_08";"6E";"OBJECTIFS";"Distances — Connaître et utiliser la définition de la distance entre deux points
+Distances — Connaître et utiliser la définition du milieu d’un segment
+Cercles et disques — Connaître les définitions d’un cercle, d’un disque, d’un rayon, d’un diamètre, d’une corde
+Cercles et disques — Comprendre la définition d’un cercle et celle d’un disque sous la forme d’ensembles de points
+Cercles et disques — Résoudre des problèmes mettant en jeu des distances à un point
+Médiatrice — Connaître la définition de la médiatrice d’un segment
+Médiatrice — Comprendre et utiliser la propriété caractéristique de la médiatrice d’un segment
+Médiatrice — Résoudre des problèmes en s’appuyant sur la propriété caractéristique de la médiatrice
+Angles — Connaître et utiliser les angles ainsi que le lexique et les notations qui s’y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires
+Angles — Mesurer un angle
+Angles — Construire un angle de mesure donnée
+Bissectrice — Connaître la définition de la bissectrice d’un angle saillant
+Bissectrice — Utiliser la définition de la bissectrice d’un angle pour effectuer des constructions et résoudre des problèmes
+Triangles — Construire des triangles
+Triangles — Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral
+Triangles — Connaître la valeur de la somme des mesures des angles d’un triangle
+Triangles — L’utiliser pour calculer des angles, effectuer des constructions et résoudre des problèmes
+Triangles — Savoir que les médiatrices d’un triangle sont concourantes
+Triangles — Connaître et construire le cercle circonscrit à un triangle
+Symétrie axiale — Connaître la définition du symétrique d’un point par rapport à une droite
+Symétrie axiale — Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions";"23";"23";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_09_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_09";"6E";"AUTOMATISMES";"L’élève identifie dans un ensemble de solides lesquels sont des pyramides, des boules, des cubes, des cylindres, des pavés, des cônes ou des prismes droits.";"24";"24";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_09_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_09";"6E";"OBJECTIFS";"Voir dans l’espace des assemblages de cubes";"24";"24";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_10_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_10";"6E";"AUTOMATISMES";"L’élève sait lire un tableau, un diagramme en barres, un diagramme circulaire ou une courbe dans des cas adaptés à une lecture immédiate.";"26";"26";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_10_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_10";"6E";"OBJECTIFS";"Planifier une enquête et recueillir des données
+Réaliser des mesures et les consigner dans un tableau
+Construire un tableau simple pour présenter des données (observations, caractères)
+Faire un choix en filtrant les données d’un tableau selon un critère";"26";"26";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_11_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_11";"6E";"OBJECTIFS";"Savoir que la probabilité d’un évènement est un nombre compris entre 0 et 1
+Calculer des probabilités dans des situations simples d’équiprobabilité
+Comparer des résultats d’une expérience aléatoire répétée à une probabilité calculée";"26";"26";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_12_AUTOMATISMES";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_12";"6E";"AUTOMATISMES";"− L’élève sait repérer des relations multiplicatives simples entre des nombres (double, quadruple, moitié, tiers, quart).
+− Il associe de manière automatique les expressions du type : « 4 fois plus grand, 4 fois plus petit, 5 fois plus, 5 fois moins » à une multiplication ou à une division.";"27";"27";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_12_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_12";"6E";"OBJECTIFS";"Connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante
+Identifier si une situation relève du « modèle » de la proportionnalité
+Résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l’addition, retour à l’unité
+Représenter une situation de proportionnalité à l’aide d’un tableau ou de notations symboliques
+S’initier à la résolution de problèmes d’échelles";"27";"27";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"
+"ITM_MAT_C3_6E_13_OBJECTIFS";"PRG_MAT_C3_2025";"ITM_MAT_C3_6E_13";"6E";"OBJECTIFS";"Identifier une instruction ou une séquence d’instructions
+Produire et exécuter une séquence d’instructions
+Répéter à la main une séquence d’instructions pour accomplir une tâche imposée
+Programmer la construction d’un chemin simple";"28";"28";"SRC_BO_2025_16_MATH_C3";"RELU_PDF"

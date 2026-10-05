@@ -1,0 +1,655 @@
+{
+  "notion_id": "fonctions_definition",
+  "questions": [
+    {
+      "id": "FONC-001",
+      "type": "qcm",
+      "enonce": "La fonction f est définie par f(𝑥) = [[a]]𝑥 [[b]]. Quelle est l’image de [[x]] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "L’image de x s’obtient en remplaçant 𝑥 par la valeur donnée dans la formule.",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "1",
+            "b": "-3",
+            "x": "-4",
+            "bonne": "-7",
+            "d1": "-6",
+            "d2": "-8",
+            "d3": "-5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "-2",
+            "x": "-3",
+            "bonne": "-8",
+            "d1": "-7",
+            "d2": "-9",
+            "d3": "-6"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "-1",
+            "x": "-2",
+            "bonne": "-7",
+            "d1": "-6",
+            "d2": "-8",
+            "d3": "-5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "+0",
+            "x": "-1",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "+1",
+            "x": "0",
+            "bonne": "1",
+            "d1": "2",
+            "d2": "0",
+            "d3": "3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "+2",
+            "x": "1",
+            "bonne": "8",
+            "d1": "9",
+            "d2": "7",
+            "d3": "10"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "+3",
+            "x": "2",
+            "bonne": "5",
+            "d1": "6",
+            "d2": "4",
+            "d3": "7"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "-3",
+            "x": "3",
+            "bonne": "3",
+            "d1": "4",
+            "d2": "2",
+            "d3": "5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "-2",
+            "x": "4",
+            "bonne": "10",
+            "d1": "11",
+            "d2": "9",
+            "d3": "12"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "-1",
+            "x": "-4",
+            "bonne": "-17",
+            "d1": "-16",
+            "d2": "-18",
+            "d3": "-15"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "+0",
+            "x": "-3",
+            "bonne": "-15",
+            "d1": "-14",
+            "d2": "-16",
+            "d3": "-13"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "+1",
+            "x": "-2",
+            "bonne": "-11",
+            "d1": "-10",
+            "d2": "-12",
+            "d3": "-9"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "+2",
+            "x": "-1",
+            "bonne": "1",
+            "d1": "2",
+            "d2": "0",
+            "d3": "3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "+3",
+            "x": "0",
+            "bonne": "3",
+            "d1": "4",
+            "d2": "2",
+            "d3": "5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "-3",
+            "x": "1",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "-2",
+            "x": "2",
+            "bonne": "6",
+            "d1": "7",
+            "d2": "5",
+            "d3": "8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "-1",
+            "x": "3",
+            "bonne": "14",
+            "d1": "15",
+            "d2": "13",
+            "d3": "16"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "+0",
+            "x": "4",
+            "bonne": "24",
+            "d1": "25",
+            "d2": "23",
+            "d3": "26"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "+1",
+            "x": "-4",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "+2",
+            "x": "-3",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "+3",
+            "x": "-2",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "-3",
+            "x": "-1",
+            "bonne": "-7",
+            "d1": "-6",
+            "d2": "-8",
+            "d3": "-5"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "-2",
+            "x": "0",
+            "bonne": "-2",
+            "d1": "-1",
+            "d2": "-3",
+            "d3": "0"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "-1",
+            "x": "1",
+            "bonne": "5",
+            "d1": "6",
+            "d2": "4",
+            "d3": "7"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "+0",
+            "x": "2",
+            "bonne": "2",
+            "d1": "3",
+            "d2": "1",
+            "d3": "4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "+1",
+            "x": "3",
+            "bonne": "7",
+            "d1": "8",
+            "d2": "6",
+            "d3": "9"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "+2",
+            "x": "4",
+            "bonne": "14",
+            "d1": "15",
+            "d2": "13",
+            "d3": "16"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "+3",
+            "x": "-4",
+            "bonne": "-13",
+            "d1": "-12",
+            "d2": "-14",
+            "d3": "-11"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "-3",
+            "x": "-3",
+            "bonne": "-18",
+            "d1": "-17",
+            "d2": "-19",
+            "d3": "-16"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "-2",
+            "x": "-2",
+            "bonne": "-14",
+            "d1": "-13",
+            "d2": "-15",
+            "d3": "-12"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "-1",
+            "x": "-1",
+            "bonne": "-2",
+            "d1": "-1",
+            "d2": "-3",
+            "d3": "0"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "+0",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "+1",
+            "x": "1",
+            "bonne": "4",
+            "d1": "5",
+            "d2": "3",
+            "d3": "6"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "+2",
+            "x": "2",
+            "bonne": "10",
+            "d1": "11",
+            "d2": "9",
+            "d3": "12"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "+3",
+            "x": "3",
+            "bonne": "18",
+            "d1": "19",
+            "d2": "17",
+            "d3": "20"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "-3",
+            "x": "4",
+            "bonne": "21",
+            "d1": "22",
+            "d2": "20",
+            "d3": "23"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "-2",
+            "x": "-4",
+            "bonne": "-6",
+            "d1": "-5",
+            "d2": "-7",
+            "d3": "-4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "-1",
+            "x": "-3",
+            "bonne": "-7",
+            "d1": "-6",
+            "d2": "-8",
+            "d3": "-5"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "+0",
+            "x": "-2",
+            "bonne": "-6",
+            "d1": "-5",
+            "d2": "-7",
+            "d3": "-4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "+1",
+            "x": "-1",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "+2",
+            "x": "0",
+            "bonne": "2",
+            "d1": "3",
+            "d2": "1",
+            "d3": "4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "+3",
+            "x": "1",
+            "bonne": "9",
+            "d1": "10",
+            "d2": "8",
+            "d3": "11"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "-3",
+            "x": "2",
+            "bonne": "-1",
+            "d1": "0",
+            "d2": "-2",
+            "d3": "1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "-2",
+            "x": "3",
+            "bonne": "4",
+            "d1": "5",
+            "d2": "3",
+            "d3": "6"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "-1",
+            "x": "4",
+            "bonne": "11",
+            "d1": "12",
+            "d2": "10",
+            "d3": "13"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "+0",
+            "x": "-4",
+            "bonne": "-16",
+            "d1": "-15",
+            "d2": "-17",
+            "d3": "-14"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "+1",
+            "x": "-3",
+            "bonne": "-14",
+            "d1": "-13",
+            "d2": "-15",
+            "d3": "-12"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "+2",
+            "x": "-2",
+            "bonne": "-10",
+            "d1": "-9",
+            "d2": "-11",
+            "d3": "-8"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "+3",
+            "x": "-1",
+            "bonne": "2",
+            "d1": "3",
+            "d2": "1",
+            "d3": "4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "-3",
+            "x": "0",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "FONC-002",
+      "type": "qcm",
+      "enonce": "Dans l’écriture f(3)=7, quel nombre est l’image de 3 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "7"
+      },
+      "propositions": [
+        "7",
+        "3",
+        "f",
+        "10"
+      ],
+      "correction": "f(3)=7 signifie que la fonction associe 7 au nombre 3."
+    },
+    {
+      "id": "FONC-003",
+      "type": "qcm",
+      "enonce": "Dans l’écriture f(3)=7, que peut-on dire de 3 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3 est un antécédent de 7."
+      },
+      "propositions": [
+        "3 est un antécédent de 7.",
+        "3 est l’image de 7.",
+        "7 est un antécédent de 3.",
+        "3 est le coefficient de f."
+      ],
+      "correction": "Un antécédent est une valeur de départ qui produit l’image considérée."
+    }
+  ]
+}

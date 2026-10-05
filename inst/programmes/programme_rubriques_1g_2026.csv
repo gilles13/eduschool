@@ -1,0 +1,165 @@
+rubrique_id;programme_id;theme_item_id;niveau;rubrique;texte_officiel_extrait;page_debut;page_fin;source_id;controle_formules
+ITM_MAT_SPEC_1G_2026_01_OBJECTIFS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_01;1G;OBJECTIFS;"L’apprentissage des notations mathématiques et de la logique est transversal à tous les chapitres du programme. Aussi, il importe d’y travailler d’abord dans des contextes où ils se présentent naturellement, puis de prévoir des temps où les concepts et types de raisonnement sont étudiés, après avoir été rencontrés plusieurs fois en situation. Les élèves doivent connaitre les notions d’élément d’un ensemble, de sous-ensemble, d’ensemble vide, d’appartenance et d’inclusion, de réunion, d’intersection et de complémentaire et savoir utiliser les symboles de base correspondants : Ø, ∈, ⊂, ∩, ∪, { … }, ainsi que la notation des ensembles de nombres et des intervalles. Ils rencontrent également la notion de couple et celle de produit cartésien de deux ensembles. Pour le complémentaire d’un sous-ensemble A de E, on utilise la notation A ̅ des probabilités, ou la notation E \ A. On utilise la notation Card(A) pour le cardinal (nombre d’éléments) d’un ensemble fini A. Les élèves apprennent en situation à :
+− lire et écrire des propositions contenant les connecteurs logiques « et », « ou » ;
+− mobiliser un contre-exemple pour montrer qu’une proposition est fausse ;
+− formuler une implication, une équivalence logique, et à les mobiliser dans un raisonnement simple;
+− formuler la réciproque d'une implication, la contraposée ;
+− employer les expressions « condition nécessaire », « condition suffisante » ;
+− identifier le statut des égalités (identité, équation) et celui des lettres utilisées (variable, inconnue, paramètre) ;
+− utiliser les quantificateurs (les symboles ∀ et ∃ ne sont pas exigibles) et repérer les quantifications implicites dans certaines propositions, particulièrement dans les propositions conditionnelles ;
+− formuler la négation de propositions quantifiées. Par ailleurs, les élèves produisent des raisonnements par disjonction des cas, par l'absurde, par contraposée, et en découvrent la structure.";3;4;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_03_OBJECTIFS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_03;1G;OBJECTIFS;"La génération des listes en compréhension et en extension est mise en lien avec la notion d’ensemble. Les conditions apparaissant dans les listes définies en compréhension permettent de travailler la logique. Afin d’éviter des confusions, on se limite aux listes sans présenter d’autres types de collections.
+− Générer une liste (en extension, par ajouts successifs ou en compréhension).
+− Manipuler des éléments d’une liste (ajouter, supprimer, etc.) et leurs indices.
+− Parcourir une liste.
+− Itérer sur les éléments d’une liste.";4;4;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_05_AUTOMATISMES_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_05;1G;AUTOMATISMES;"− Appliquer un taux d’évolution pour calculer une valeur finale ou initiale.
+− Calculer un taux d’évolution, l’exprimer en pourcentage.
+− Calculer le taux d’évolution équivalent à plusieurs évolutions successives.
+− Calculer un taux d’évolution réciproque.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_06_AUTOMATISMES_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_06;1G;AUTOMATISMES;"− Déterminer les solutions d’une équation produit nul.
+− Déterminer le signe d’une expression du premier degré, d’une expression factorisée du second degré.
+− Développer, factoriser, réduire une expression algébrique simple.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_07_AUTOMATISMES_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_07;1G;AUTOMATISMES;"− Résoudre graphiquement une équation, une inéquation du type : ƒ (𝑥) = k, ƒ (𝑥) < k, etc.
+− Déterminer graphiquement le signe d’une fonction ou son tableau de variations.
+− Tracer une droite donnée par son équation réduite ou par un point et son coefficient directeur.
+− Lire graphiquement l’équation réduite d’une droite.
+− Déterminer le coefficient directeur d’une droite à partir des coordonnées de deux de ses points.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_08_AUTOMATISMES_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_08;1G;AUTOMATISMES;"− Lire un graphique, un histogramme, un diagramme en barres ou circulaire, un diagramme en boite ou toute autre représentation (repérer l’origine du repère, les unités de graduations ou les échelles, etc.).
+− Passer du graphique aux données et vice-versa.
+− Calculer et interpréter des indicateurs statistiques pour une série statistique.";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_09_AUTOMATISMES_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_09;1G;AUTOMATISMES;"− Calculer des probabilités conditionnelles lorsque les évènements sont présentés sous forme de tableau croisé d’effectifs ou d’arbres pondérés.
+− Distinguer P(A ∩ B), PA (B), PB (A).";5;5;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_11_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;CONTENUS;"− Exemples de modes de génération d’une suite : explicite 𝑢𝑛 = ƒ (𝑛), par une relation de récurrence 𝑢𝑛 + 1 = ƒ (𝑢𝑛), par un algorithme, par des motifs géométriques.
+− Notations : 𝑢(𝑛), 𝑢𝑛, (𝑢(𝑛)), (𝑢𝑛).
+− Suites arithmétiques : exemples, définition, calcul du terme général. Lien avec l’étude d’évolutions successives à accroissements constants. Lien avec les fonctions affines. Calcul de 1 + 2 + … + 𝑛.
+− Suites géométriques : exemples, définition, calcul du terme général. Lien avec l’étude d’évolutions successives à taux constant. Lien avec la fonction exponentielle. Calcul de 1 + 𝑞 + … + 𝑞𝑛.
+− Sens de variation d’une suite.
+− Sur des exemples, introduction intuitive de la notion de limite, finie ou infinie, ou l’absence de limite d’une suite.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_11_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;CAPACITES_ATTENDUES;"− Dans le cadre de l’étude d’une suite, utiliser le registre de la langue naturelle, le registre algébrique, le registre graphique, et passer de l’un à l’autre.
+− Proposer, modéliser une situation permettant de générer une suite de nombres. Déterminer une relation explicite ou une relation de récurrence pour une suite définie par un motif géométrique, par une question de dénombrement.
+− Calculer des termes d’une suite définie explicitement, par récurrence ou par un algorithme.
+− Pour une suite arithmétique ou géométrique, calculer le terme général, la somme de termes consécutifs, déterminer le sens de variation.
+− Modéliser un phénomène discret à croissance linéaire par une suite arithmétique, un phénomène discret à croissance exponentielle par une suite géométrique.
+− Conjecturer, dans des cas simples, la limite éventuelle d’une suite.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_11_DEMONSTRATIONS_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;DEMONSTRATIONS;"− Calcul du terme général d’une suite arithmétique, d’une suite géométrique.
+− Calcul de 1 + 2 + … + 𝑛.
+− Calcul de 1 + 𝑞 + … + 𝑞𝑛.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_11_ALGORITHMES_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;ALGORITHMES;"− Calcul de termes d’une suite, de sommes de termes, de seuil.
+− Calcul de factorielle.
+− Liste des premiers termes d’une suite : suites de Syracuse, suite de Fibonacci.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_11_APPROFONDISSEMENTS_05;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_11;1G;APPROFONDISSEMENTS;"− Tour de Hanoï.
+− Somme des n premiers carrés, des n premiers cubes.
+− Remboursement d’un emprunt par annuités constantes.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_12_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;CONTENUS;"− Fonction polynôme du second degré donnée sous forme factorisée. Racines, signe, expression de la somme et du produit des racines.
+− Forme canonique d’une fonction polynôme du second degré. Discriminant. Factorisation éventuelle. Résolution d’une équation du second degré. Signe.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_12_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;CAPACITES_ATTENDUES;"− Étudier le signe d’une fonction polynôme du second degré donnée sous forme factorisée.
+− Déterminer les fonctions polynômes du second degré s’annulant en deux nombres réels distincts.
+− Factoriser une fonction polynôme du second degré, en diversifiant les stratégies : racine évidente, détection des racines par leur somme et leur produit, identité remarquable, application des formules générales.
+− Choisir une forme adaptée (développée réduite, canonique, factorisée) d’une fonction polynôme du second degré dans le cadre de la résolution d’un problème (équation, inéquation, optimisation, variations).";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_12_DEMONSTRATIONS_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;DEMONSTRATIONS;− Résolution de l’équation du second degré.;6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_12_APPROFONDISSEMENTS_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_12;1G;APPROFONDISSEMENTS;"− Factorisation d’un polynôme du troisième degré admettant une racine et résolution de l’équation associée.
+− Factorisation de 𝑥𝑛 – 1 par 𝑥 – 1, de 𝑥𝑛 – a𝑛 par 𝑥 – a.
+− Déterminer deux nombres réels connaissant leur somme s et leur produit p comme racines de la fonction polynôme 𝑥 ↦ 𝑥² – s𝑥 + p.";6;6;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_14_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;CONTENUS;"Point de vue local
+− Taux de variation. Sécantes à la courbe représentative d’une fonction en un point donné.
+− Nombre dérivé d’une fonction en un point, comme limite du taux de variation. Notation ƒ ’(a).
+− Tangente à la courbe représentative d’une fonction en un point, comme « limite des sécantes ». Pente. Équation : la tangente à la courbe représentative de ƒ au point d’abscisse a est la droite d’équation 𝑦 = ƒ (a) + ƒ ‘(a)(𝑥 – a).
+− Approximation linéaire : fonction affine tangente 𝑥 ↦ ƒ (a) + ƒ ‘(a)(𝑥 – a) et approximation de ƒ (a + h) par ƒ (a) + ƒ ‘(a)h. Point de vue global
+− Fonction dérivable sur un intervalle. Fonction dérivée.
+− Fonction dérivée des fonctions carré, cube, inverse, racine carrée.
+− Opérations sur les fonctions dérivables : somme, produit, inverse, quotient.
+− Pour 𝑛 dans ℤ, fonction dérivée de la fonction 𝑥 ↦ 𝑥 𝑛.
+− Fonction valeur absolue : étude de la dérivabilité en 0.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_14_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;CAPACITES_ATTENDUES;"− Calculer un taux de variation, la pente d’une sécante.
+− Interpréter le nombre dérivé en contexte : pente d’une tangente, vitesse instantanée, cout marginal, etc.
+− Déterminer graphiquement un nombre dérivé par la pente de la tangente. Construire la tangente en un point à une courbe représentative connaissant le nombre dérivé.
+− Déterminer l’équation de la tangente en un point à la courbe représentative d’une fonction.
+− Calculer une valeur approchée de ƒ (a + h).
+− Dans des cas simples, calculer une fonction dérivée en utilisant les propriétés des opérations sur les fonctions dérivables.";7;7;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_14_DEMONSTRATIONS_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;DEMONSTRATIONS;"− Équation de la tangente en un point à une courbe représentative.
+− La fonction racine carrée n’est pas dérivable en 0.
+− Fonction dérivée de la fonction carrée, de la fonction inverse.
+− Fonction dérivée d’un produit.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_14_ALGORITHMES_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_14;1G;ALGORITHMES;− Écrire la liste des coefficients directeurs des sécantes pour un pas donné.;8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_15_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_15;1G;CONTENUS;"− Représentation algébrique et graphique de fonctions paires, impaires. Traduction géométrique.
+− Lien entre le sens de variation d’une fonction dérivable sur un intervalle et signe de sa fonction dérivée ; caractérisation des fonctions constantes.
+− Nombre dérivé en un extrémum, tangente à la courbe représentative.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_15_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_15;1G;CAPACITES_ATTENDUES;"− Étudier les variations d’une fonction. Déterminer les extrémums.
+− Résoudre un problème d’optimisation.
+− Exploiter les variations d’une fonction pour établir une inégalité. Étudier la position relative de deux courbes représentatives.
+− Étudier, en lien avec la dérivation, une fonction polynôme du second degré : variations, extrémum, allure selon le signe du coefficient de 𝑥².";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_15_ALGORITHMES_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_15;1G;ALGORITHMES;− Méthode de Newton, en se limitant à des cas favorables.;8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_16_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_16;1G;CONTENUS;"− Définition de la fonction exponentielle comme unique fonction dérivable sur ℝ vérifiant ƒ ‘ = ƒ et ƒ (0) = 1. L’existence et l’unicité sont admises. Notation exp(𝑥).
+− Pour tous réels 𝑥 et 𝑦, exp(𝑥 + 𝑦) = exp(𝑥) exp(𝑦) et exp(𝑥) exp(–𝑥) = 1. Nombre e. Notation e 𝑥.
+− Signe, sens de variation et courbe représentative de la fonction exponentielle. Lien avec les suites géométriques.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_16_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_16;1G;CAPACITES_ATTENDUES;"− Transformer une expression en utilisant les propriétés algébriques de la fonction exponentielle.
+− Pour a réel, dérivée de la fonction t ↦ eat.
+− Pour une valeur numérique strictement positive de k, représenter graphiquement les fonctions t ↦ e–kt et t ↦ ekt.
+− Modéliser une situation par une croissance, une décroissance exponentielle (par exemple évolution d’un capital à taux fixe, décroissance radioactive).";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_16_ALGORITHMES_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_16;1G;ALGORITHMES;"− Construction de l’exponentielle par la méthode d’Euler. 1 𝑛
+− Détermination d’une valeur approchée de e à l’aide de la suite ((1 + ) ). 𝑛";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_16_APPROFONDISSEMENTS_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_16;1G;APPROFONDISSEMENTS;"− Unicité d’une fonction ƒ dérivable sur ℝ telle que vérifiant ƒ ‘ = ƒ et ƒ (0) = 1.
+− Pour tous réels 𝑥 et 𝑦, exp(𝑥 + 𝑦) = exp(𝑥) exp(𝑦).
+− La fonction exponentielle est strictement positive et croissante.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_17_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_17;1G;CONTENUS;"− Cercle trigonométrique. Longueur d’arc. Radian.
+− Enroulement de la droite sur le cercle trigonométrique. Image d’un nombre réel.
+− Cosinus et sinus d’un nombre réel. Lien avec le sinus et le cosinus dans un triangle rectangle. Valeurs remarquables.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_17_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_17;1G;CAPACITES_ATTENDUES;"− Placer un point sur le cercle trigonométrique.
+− Par lecture du cercle trigonométrique, déterminer, pour des valeurs remarquables de 𝑥, les cosinus et sinus d’angles associés à 𝑥.";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_17_DEMONSTRATIONS_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_17;1G;DEMONSTRATIONS;"𝜋 𝜋 𝜋 𝜋
+− Calcul de cos , sin , cos , sin . 4 4 3 3";8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_17_ALGORITHMES_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_17;1G;ALGORITHMES;− Approximation de π par la méthode d’Archimède.;8;8;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_19_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_19;1G;CONTENUS;"− Produit scalaire à partir de la projection orthogonale et de la formule avec le cosinus. Caractérisation de l’orthogonalité.
+− Bilinéarité, symétrie. En base orthonormée, expression du produit scalaire et de la norme, critère d’orthogonalité. Expression des coordonnées dans une base orthonormée en termes de produits scalaires avec les vecteurs de la base.
+− Développement de ‖𝑢 ⃗ + 𝑣‖2 et ‖𝑢⃗ − 𝑣 ‖2 . Formule d’Al-Kashi.
+− Transformation de l’expression ⃗⃗⃗⃗⃗⃗⃗ ⃗⃗⃗⃗⃗⃗B. MA ⋅ M";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_19_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_19;1G;CAPACITES_ATTENDUES;"− Utiliser le produit scalaire pour démontrer une orthogonalité, pour calculer un angle, une longueur dans le plan.
+− En vue de la résolution d’un problème, calculer le produit scalaire de deux vecteurs en choisissant une méthode adaptée (en utilisant la projection orthogonale, à l’aide des coordonnées, à l’aide des normes et d’un angle, à l’aide de normes).
+− Utiliser le produit scalaire pour résoudre un problème géométrique.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_19_DEMONSTRATIONS_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_19;1G;DEMONSTRATIONS;"− Formule d’Al-Kashi (démonstration avec le produit scalaire).
+− Ensemble des points M tels que ⃗⃗⃗⃗⃗⃗⃗ MA ⋅ M ⃗⃗⃗⃗⃗⃗B = 0 (démonstration avec le produit scalaire).";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_19_APPROFONDISSEMENTS_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_19;1G;APPROFONDISSEMENTS;"− Loi des sinus.
+− Concourance des hauteurs d’un triangle.
+− Les médianes d’un triangle concourent au centre de gravité.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_20_OBJECTIFS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_20;1G;OBJECTIFS;Dans cette section, le plan est rapporté à un repère orthonormé.;9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_20_CONTENUS_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_20;1G;CONTENUS;"− Vecteur normal à une droite. Le vecteur de coordonnées (a, b) est normal à la droite d’équation a𝑥 + b𝑦 + c = 0.
+− Projection orthogonale d’un point sur une droite.
+− Équation de cercle.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_20_CAPACITES_ATTENDUES_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_20;1G;CAPACITES_ATTENDUES;"− Déterminer une équation cartésienne d’une droite connaissant un point et un vecteur normal.
+− Déterminer les coordonnées du projeté orthogonal d’un point sur une droite.
+− Déterminer et utiliser l’équation d’un cercle donné par son centre et son rayon.
+− Reconnaitre une équation de cercle, déterminer centre et rayon.
+− Utiliser un repère pour étudier une configuration.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_20_APPROFONDISSEMENTS_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_20;1G;APPROFONDISSEMENTS;"− Recherche de l’ensemble des points équidistants de l’axe des abscisses et d’un point donné.
+− Déterminer l’intersection d’un cercle ou d’une parabole d’équation 𝑦 = a𝑥2 + b𝑥 + c avec une droite parallèle à un axe.";9;9;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_22_CONTENUS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_22;1G;CONTENUS;"− Indépendance de deux évènements.
+− Partition de l’univers (systèmes complets d’évènements). Formule des probabilités totales.
+− Succession de deux épreuves indépendantes. Représentation par un arbre ou un tableau.
+− Pour 𝑛 ⩽ 4, répétition de 𝑛 épreuves de Bernoulli indépendantes et identiques.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER
+ITM_MAT_SPEC_1G_2026_22_CAPACITES_ATTENDUES_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_22;1G;CAPACITES_ATTENDUES;"− Dans des cas simples, calculer une probabilité à l’aide de la formule des probabilités totales.
+− Savoir utiliser ou justifier l’indépendance de deux évènements.
+− Représenter la succession de deux épreuves indépendantes par un arbre ou un tableau.
+− Pour 𝑛 ⩽ 4, représenter l’arbre associé à la répétition de 𝑛 épreuves de Bernoulli indépendantes et identiques afin de calculer des probabilités.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER
+ITM_MAT_SPEC_1G_2026_22_ALGORITHMES_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_22;1G;ALGORITHMES;− Méthode de Monte-Carlo : estimation de l’aire sous la parabole, estimation du nombre π.;10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_22_APPROFONDISSEMENTS_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_22;1G;APPROFONDISSEMENTS;"− Exemples de succession de plusieurs épreuves indépendantes.
+− Exemples de marches aléatoires.";10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_23_OBJECTIFS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;OBJECTIFS;Le programme ne considère que des univers finis et des variables aléatoires réelles. L’objectif est simultanément de développer une intuition autour de l’idée de nombre dépendant du hasard et de formaliser la notion mathématique de variable aléatoire comme fonction numérique définie sur un univers, permettant d’affecter des probabilités aux valeurs possibles de la variable.;10;10;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_23_CONTENUS_02;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;CONTENUS;"− Variable aléatoire réelle : modélisation du résultat numérique d’une expérience aléatoire ; formalisation comme fonction définie sur l’univers et à valeurs réelles.
+− Loi d’une variable aléatoire.
+− Espérance, variance, écart type d’une variable aléatoire.
+− Linéarité de l’espérance.
+− Formule de König-Huygens.";10;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_23_CAPACITES_ATTENDUES_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;CAPACITES_ATTENDUES;"− Interpréter en situation et utiliser les notations {X = a}, {X ⩽ a}, P(X = a), P(X ⩽ a). Passer du registre de la langue naturelle au registre symbolique et inversement.
+− Modéliser une situation à l’aide d’une variable aléatoire.
+− Déterminer la loi de probabilité d’une variable aléatoire.
+− Calculer une espérance, une variance, un écart type.
+− Utiliser la notion d’espérance dans une résolution de problème (mise pour un jeu équitable, etc.).";11;11;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER
+ITM_MAT_SPEC_1G_2026_23_ALGORITHMES_04;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;ALGORITHMES;"− Algorithme renvoyant l’espérance, la variance ou l‘écart type d’une variable aléatoire.
+− Fréquence d’apparition des lettres d’un texte donné, en français, en anglais.";11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_23_APPROFONDISSEMENTS_05;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_23;1G;APPROFONDISSEMENTS;− Pour X variable aléatoire, étude de la fonction du second degré 𝑥 ↦ E((X – 𝑥)²).;11;11;SRC_BO_2026_14_MATH_LYCEE;OK
+ITM_MAT_SPEC_1G_2026_24_OBJECTIFS_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_24;1G;OBJECTIFS;"Le travail expérimental de simulation d’échantillons prolonge celui entrepris en seconde. L’objectif est de faire percevoir le principe de l’estimation de l’espérance d’une variable aléatoire, ou de la moyenne d’une variable statistique dans une population, par une moyenne observée sur un échantillon.
+− Simuler une variable aléatoire avec Python ou un tableur.
+− Lire, comprendre et écrire une fonction Python renvoyant la moyenne d’un échantillon de taille n d’une variable aléatoire.
+− Étudier sur des exemples la distance entre la moyenne d’un échantillon simulé de taille n d’une variable aléatoire et l’espérance de cette variable aléatoire.
+− Simuler, avec Python ou un tableur, N échantillons de taille n d’une variable aléatoire, d’espérance μ et d’écart type σ. Si m 2𝜎 désigne la moyenne d’un échantillon, calculer la proportion des cas où l’écart entre m et μ est inférieur ou égal à . √n";11;11;SRC_BO_2026_14_MATH_LYCEE;OK

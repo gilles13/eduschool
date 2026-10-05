@@ -1,0 +1,659 @@
+{
+  "notion_id": "inequation_premier_degre",
+  "questions": [
+    {
+      "id": "INEQ-1D-001",
+      "type": "qcm",
+      "enonce": "Résous [[inequation]].",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[etapes]]",
+      "variantes": [
+        {
+          "parametres": {
+            "inequation": "2𝑥 + 1 < −9",
+            "bonne": "𝑥 < −5",
+            "d1": "𝑥 > −5",
+            "d2": "𝑥 < 5",
+            "d3": "𝑥 > 5",
+            "etapes": "On soustrait 1 aux deux membres : 2𝑥 < −10. On divise les deux membres par 2 : 𝑥 < −5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "3𝑥 − 2 > −11",
+            "bonne": "𝑥 > −3",
+            "d1": "𝑥 < −3",
+            "d2": "𝑥 > 3",
+            "d3": "𝑥 < 3",
+            "etapes": "On ajoute 2 aux deux membres : 3𝑥 > −9. On divise les deux membres par 3 : 𝑥 > −3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "4𝑥 + 3 ≤ −5",
+            "bonne": "𝑥 ≤ −2",
+            "d1": "𝑥 ≥ −2",
+            "d2": "𝑥 ≤ 2",
+            "d3": "𝑥 ≥ 2",
+            "etapes": "On soustrait 3 aux deux membres : 4𝑥 ≤ −8. On divise les deux membres par 4 : 𝑥 ≤ −2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "5𝑥 − 4 ≥ 6",
+            "bonne": "𝑥 ≥ 2",
+            "d1": "𝑥 ≤ 2",
+            "d2": "𝑥 ≥ −2",
+            "d3": "𝑥 ≤ −2",
+            "etapes": "On ajoute 4 aux deux membres : 5𝑥 ≥ 10. On divise les deux membres par 5 : 𝑥 ≥ 2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "3𝑥 + 1 < 10",
+            "bonne": "𝑥 < 3",
+            "d1": "𝑥 > 3",
+            "d2": "𝑥 < −3",
+            "d3": "𝑥 > −3",
+            "etapes": "On soustrait 1 aux deux membres : 3𝑥 < 9. On divise les deux membres par 3 : 𝑥 < 3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "4𝑥 − 2 > 14",
+            "bonne": "𝑥 > 4",
+            "d1": "𝑥 < 4",
+            "d2": "𝑥 > −4",
+            "d3": "𝑥 < −4",
+            "etapes": "On ajoute 2 aux deux membres : 4𝑥 > 16. On divise les deux membres par 4 : 𝑥 > 4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "5𝑥 + 3 ≤ 28",
+            "bonne": "𝑥 ≤ 5",
+            "d1": "𝑥 ≥ 5",
+            "d2": "𝑥 ≤ −5",
+            "d3": "𝑥 ≥ −5",
+            "etapes": "On soustrait 3 aux deux membres : 5𝑥 ≤ 25. On divise les deux membres par 5 : 𝑥 ≤ 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "2𝑥 − 4 ≥ −12",
+            "bonne": "𝑥 ≥ −4",
+            "d1": "𝑥 ≤ −4",
+            "d2": "𝑥 ≥ 4",
+            "d3": "𝑥 ≤ 4",
+            "etapes": "On ajoute 4 aux deux membres : 2𝑥 ≥ −8. On divise les deux membres par 2 : 𝑥 ≥ −4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "4𝑥 + 1 < −11",
+            "bonne": "𝑥 < −3",
+            "d1": "𝑥 > −3",
+            "d2": "𝑥 < 3",
+            "d3": "𝑥 > 3",
+            "etapes": "On soustrait 1 aux deux membres : 4𝑥 < −12. On divise les deux membres par 4 : 𝑥 < −3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "5𝑥 − 2 > −12",
+            "bonne": "𝑥 > −2",
+            "d1": "𝑥 < −2",
+            "d2": "𝑥 > 2",
+            "d3": "𝑥 < 2",
+            "etapes": "On ajoute 2 aux deux membres : 5𝑥 > −10. On divise les deux membres par 5 : 𝑥 > −2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "2𝑥 + 3 ≤ 7",
+            "bonne": "𝑥 ≤ 2",
+            "d1": "𝑥 ≥ 2",
+            "d2": "𝑥 ≤ −2",
+            "d3": "𝑥 ≥ −2",
+            "etapes": "On soustrait 3 aux deux membres : 2𝑥 ≤ 4. On divise les deux membres par 2 : 𝑥 ≤ 2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "3𝑥 − 4 ≥ 8",
+            "bonne": "𝑥 ≥ 4",
+            "d1": "𝑥 ≤ 4",
+            "d2": "𝑥 ≥ −4",
+            "d3": "𝑥 ≤ −4",
+            "etapes": "On ajoute 4 aux deux membres : 3𝑥 ≥ 12. On divise les deux membres par 3 : 𝑥 ≥ 4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "5𝑥 + 1 < 16",
+            "bonne": "𝑥 < 3",
+            "d1": "𝑥 > 3",
+            "d2": "𝑥 < −3",
+            "d3": "𝑥 > −3",
+            "etapes": "On soustrait 1 aux deux membres : 5𝑥 < 15. On divise les deux membres par 5 : 𝑥 < 3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "2𝑥 − 2 > 8",
+            "bonne": "𝑥 > 5",
+            "d1": "𝑥 < 5",
+            "d2": "𝑥 > −5",
+            "d3": "𝑥 < −5",
+            "etapes": "On ajoute 2 aux deux membres : 2𝑥 > 10. On divise les deux membres par 2 : 𝑥 > 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "3𝑥 + 3 ≤ −12",
+            "bonne": "𝑥 ≤ −5",
+            "d1": "𝑥 ≥ −5",
+            "d2": "𝑥 ≤ 5",
+            "d3": "𝑥 ≥ 5",
+            "etapes": "On soustrait 3 aux deux membres : 3𝑥 ≤ −15. On divise les deux membres par 3 : 𝑥 ≤ −5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "4𝑥 − 4 ≥ 4",
+            "bonne": "𝑥 ≥ 2",
+            "d1": "𝑥 ≤ 2",
+            "d2": "𝑥 ≥ −2",
+            "d3": "𝑥 ≤ −2",
+            "etapes": "On ajoute 4 aux deux membres : 4𝑥 ≥ 8. On divise les deux membres par 4 : 𝑥 ≥ 2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "5𝑥 − 1 < 19",
+            "bonne": "𝑥 < 4",
+            "d1": "𝑥 > 4",
+            "d2": "𝑥 < −4",
+            "d3": "𝑥 > −4",
+            "etapes": "On ajoute 1 aux deux membres : 5𝑥 < 20. On divise les deux membres par 5 : 𝑥 < 4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "inequation": "−2𝑥 + 1 < 11",
+            "bonne": "𝑥 > −5",
+            "d1": "𝑥 < −5",
+            "d2": "𝑥 > 5",
+            "d3": "𝑥 < 5",
+            "etapes": "On soustrait 1 aux deux membres : −2𝑥 < 10. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > −5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−3𝑥 − 2 > 7",
+            "bonne": "𝑥 < −3",
+            "d1": "𝑥 > −3",
+            "d2": "𝑥 < 3",
+            "d3": "𝑥 > 3",
+            "etapes": "On ajoute 2 aux deux membres : −3𝑥 > 9. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−4𝑥 + 3 ≤ 11",
+            "bonne": "𝑥 ≥ −2",
+            "d1": "𝑥 ≤ −2",
+            "d2": "𝑥 ≥ 2",
+            "d3": "𝑥 ≤ 2",
+            "etapes": "On soustrait 3 aux deux membres : −4𝑥 ≤ 8. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−5𝑥 − 4 ≥ −14",
+            "bonne": "𝑥 ≤ 2",
+            "d1": "𝑥 ≥ 2",
+            "d2": "𝑥 ≤ −2",
+            "d3": "𝑥 ≥ −2",
+            "etapes": "On ajoute 4 aux deux membres : −5𝑥 ≥ −10. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−3𝑥 + 1 < −8",
+            "bonne": "𝑥 > 3",
+            "d1": "𝑥 < 3",
+            "d2": "𝑥 > −3",
+            "d3": "𝑥 < −3",
+            "etapes": "On soustrait 1 aux deux membres : −3𝑥 < −9. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−4𝑥 − 2 > −18",
+            "bonne": "𝑥 < 4",
+            "d1": "𝑥 > 4",
+            "d2": "𝑥 < −4",
+            "d3": "𝑥 > −4",
+            "etapes": "On ajoute 2 aux deux membres : −4𝑥 > −16. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < 4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−5𝑥 + 3 ≤ −22",
+            "bonne": "𝑥 ≥ 5",
+            "d1": "𝑥 ≤ 5",
+            "d2": "𝑥 ≥ −5",
+            "d3": "𝑥 ≤ −5",
+            "etapes": "On soustrait 3 aux deux membres : −5𝑥 ≤ −25. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−2𝑥 − 4 ≥ 4",
+            "bonne": "𝑥 ≤ −4",
+            "d1": "𝑥 ≥ −4",
+            "d2": "𝑥 ≤ 4",
+            "d3": "𝑥 ≥ 4",
+            "etapes": "On ajoute 4 aux deux membres : −2𝑥 ≥ 8. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ −4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−4𝑥 + 1 < 13",
+            "bonne": "𝑥 > −3",
+            "d1": "𝑥 < −3",
+            "d2": "𝑥 > 3",
+            "d3": "𝑥 < 3",
+            "etapes": "On soustrait 1 aux deux membres : −4𝑥 < 12. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > −3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−5𝑥 − 2 > 8",
+            "bonne": "𝑥 < −2",
+            "d1": "𝑥 > −2",
+            "d2": "𝑥 < 2",
+            "d3": "𝑥 > 2",
+            "etapes": "On ajoute 2 aux deux membres : −5𝑥 > 10. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−2𝑥 + 3 ≤ −1",
+            "bonne": "𝑥 ≥ 2",
+            "d1": "𝑥 ≤ 2",
+            "d2": "𝑥 ≥ −2",
+            "d3": "𝑥 ≤ −2",
+            "etapes": "On soustrait 3 aux deux membres : −2𝑥 ≤ −4. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−3𝑥 − 4 ≥ −16",
+            "bonne": "𝑥 ≤ 4",
+            "d1": "𝑥 ≥ 4",
+            "d2": "𝑥 ≤ −4",
+            "d3": "𝑥 ≥ −4",
+            "etapes": "On ajoute 4 aux deux membres : −3𝑥 ≥ −12. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−5𝑥 + 1 < −14",
+            "bonne": "𝑥 > 3",
+            "d1": "𝑥 < 3",
+            "d2": "𝑥 > −3",
+            "d3": "𝑥 < −3",
+            "etapes": "On soustrait 1 aux deux membres : −5𝑥 < −15. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−2𝑥 − 2 > −12",
+            "bonne": "𝑥 < 5",
+            "d1": "𝑥 > 5",
+            "d2": "𝑥 < −5",
+            "d3": "𝑥 > −5",
+            "etapes": "On ajoute 2 aux deux membres : −2𝑥 > −10. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−3𝑥 + 3 ≤ 18",
+            "bonne": "𝑥 ≥ −5",
+            "d1": "𝑥 ≤ −5",
+            "d2": "𝑥 ≥ 5",
+            "d3": "𝑥 ≤ 5",
+            "etapes": "On soustrait 3 aux deux membres : −3𝑥 ≤ 15. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−4𝑥 − 4 ≥ −12",
+            "bonne": "𝑥 ≤ 2",
+            "d1": "𝑥 ≥ 2",
+            "d2": "𝑥 ≤ −2",
+            "d3": "𝑥 ≥ −2",
+            "etapes": "On ajoute 4 aux deux membres : −4𝑥 ≥ −8. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "−5𝑥 − 1 < −21",
+            "bonne": "𝑥 > 4",
+            "d1": "𝑥 < 4",
+            "d2": "𝑥 > −4",
+            "d3": "𝑥 < −4",
+            "etapes": "On ajoute 1 aux deux membres : −5𝑥 < −20. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "inequation": "3𝑥 + 1 < 𝑥 − 9",
+            "bonne": "𝑥 < −5",
+            "d1": "𝑥 > −5",
+            "d2": "𝑥 < 5",
+            "d3": "𝑥 > 5",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 < −10. On divise par 2 : 𝑥 < −5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "𝑥 − 2 > 3𝑥 + 6",
+            "bonne": "𝑥 < −4",
+            "d1": "𝑥 > −4",
+            "d2": "𝑥 < 4",
+            "d3": "𝑥 > 4",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 > 8. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −4."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "4𝑥 + 3 ≤ 𝑥 − 6",
+            "bonne": "𝑥 ≤ −3",
+            "d1": "𝑥 ≥ −3",
+            "d2": "𝑥 ≤ 3",
+            "d3": "𝑥 ≥ 3",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≤ −9. On divise par 3 : 𝑥 ≤ −3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "𝑥 − 4 ≥ 4𝑥 + 2",
+            "bonne": "𝑥 ≤ −2",
+            "d1": "𝑥 ≥ −2",
+            "d2": "𝑥 ≤ 2",
+            "d3": "𝑥 ≥ 2",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≥ 6. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ −2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "−𝑥 + 2 > −3𝑥 + 6",
+            "bonne": "𝑥 > 2",
+            "d1": "𝑥 < 2",
+            "d2": "𝑥 > −2",
+            "d3": "𝑥 < −2",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 > 4. On divise par 2 : 𝑥 > 2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "−3𝑥 − 1 < −𝑥 − 7",
+            "bonne": "𝑥 > 3",
+            "d1": "𝑥 < 3",
+            "d2": "𝑥 > −3",
+            "d3": "𝑥 < −3",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 < −6. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "2𝑥 + 4 ≥ −𝑥 + 16",
+            "bonne": "𝑥 ≥ 4",
+            "d1": "𝑥 ≤ 4",
+            "d2": "𝑥 ≥ −4",
+            "d3": "𝑥 ≤ −4",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≥ 12. On divise par 3 : 𝑥 ≥ 4."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "−2𝑥 − 3 ≤ 𝑥 − 18",
+            "bonne": "𝑥 ≥ 5",
+            "d1": "𝑥 ≤ 5",
+            "d2": "𝑥 ≥ −5",
+            "d3": "𝑥 ≤ −5",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≤ −15. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "5𝑥 − 2 < 2𝑥 − 14",
+            "bonne": "𝑥 < −4",
+            "d1": "𝑥 > −4",
+            "d2": "𝑥 < 4",
+            "d3": "𝑥 > 4",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 < −12. On divise par 3 : 𝑥 < −4."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "2𝑥 + 3 > 5𝑥 + 12",
+            "bonne": "𝑥 < −3",
+            "d1": "𝑥 > −3",
+            "d2": "𝑥 < 3",
+            "d3": "𝑥 > 3",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 > 9. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "−𝑥 − 4 ≤ −4𝑥 − 10",
+            "bonne": "𝑥 ≤ −2",
+            "d1": "𝑥 ≥ −2",
+            "d2": "𝑥 ≤ 2",
+            "d3": "𝑥 ≥ 2",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≤ −6. On divise par 3 : 𝑥 ≤ −2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "−4𝑥 + 1 ≥ −𝑥 − 5",
+            "bonne": "𝑥 ≤ 2",
+            "d1": "𝑥 ≥ 2",
+            "d2": "𝑥 ≤ −2",
+            "d3": "𝑥 ≥ −2",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≥ −6. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "3𝑥 − 3 > −𝑥 + 9",
+            "bonne": "𝑥 > 3",
+            "d1": "𝑥 < 3",
+            "d2": "𝑥 > −3",
+            "d3": "𝑥 < −3",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 4𝑥 > 12. On divise par 4 : 𝑥 > 3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "−3𝑥 + 2 < 𝑥 − 14",
+            "bonne": "𝑥 > 4",
+            "d1": "𝑥 < 4",
+            "d2": "𝑥 > −4",
+            "d3": "𝑥 < −4",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −4𝑥 < −16. On divise par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 4."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "4𝑥 − 1 ≥ 2𝑥 + 9",
+            "bonne": "𝑥 ≥ 5",
+            "d1": "𝑥 ≤ 5",
+            "d2": "𝑥 ≥ −5",
+            "d3": "𝑥 ≤ −5",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 ≥ 10. On divise par 2 : 𝑥 ≥ 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "inequation": "2𝑥 + 4 ≤ 4𝑥 + 14",
+            "bonne": "𝑥 ≥ −5",
+            "d1": "𝑥 ≤ −5",
+            "d2": "𝑥 ≥ 5",
+            "d3": "𝑥 ≤ 5",
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 ≤ 10. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −5."
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "INEQ-1D-SENS",
+      "type": "qcm",
+      "enonce": "Pour résoudre −3𝑥 < 12, on divise les deux membres par −3. Pourquoi obtient-on 𝑥 > −4 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité."
+      },
+      "propositions": [
+        "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+        "Parce que le signe de 𝑥 change toujours quand on le déplace.",
+        "Parce qu’une inéquation utilise toujours le signe > après une division.",
+        "Parce que 12 est positif et −3 est négatif."
+      ],
+      "correction": "Ajouter ou soustraire une même quantité conserve le sens de l’inégalité. En revanche, multiplier ou diviser les deux membres par un nombre négatif oblige à inverser ce sens."
+    },
+    {
+      "id": "INEQ-1D-BOITE",
+      "type": "qcm",
+      "enonce": "Soit −4𝑥 ≥ 20. Après division par −4, on obtient 𝑥 ≤ □. Quel nombre doit remplacer □ ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "−5"
+      },
+      "propositions": [
+        "−5",
+        "5",
+        "−4",
+        "4"
+      ],
+      "correction": "20 ÷ (−4) = −5. Comme on divise par un nombre négatif, ≥ devient ≤. On obtient donc 𝑥 ≤ −5."
+    },
+    {
+      "id": "INEQ-1D-MOT-TROU",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on une comparaison contenant une inconnue et un signe comme <, >, ≤ ou ≥ ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "inéquation": "i _ _ _ _ _ _ _ _ n",
+          "équation": "é _ _ _ _ _ _ n",
+          "égalité": "é _ _ _ _ _ é",
+          "expression": "e _ _ _ _ _ _ _ _ n"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "inéquation"
+      },
+      "propositions": [
+        "inéquation",
+        "équation",
+        "égalité",
+        "expression"
+      ],
+      "correction": "Une inéquation compare deux expressions à l’aide d’un signe d’inégalité et peut contenir une inconnue."
+    },
+    {
+      "id": "INEQ-1D-MOT-MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on une valeur de l’inconnue qui rend une inéquation vraie ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "solution": "S________N",
+          "inconnue": "I________E",
+          "intervalle": "IN________E",
+          "coefficient": "C________T"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "solution"
+      },
+      "propositions": [
+        "solution",
+        "inconnue",
+        "intervalle",
+        "coefficient"
+      ],
+      "correction": "Une solution d’une inéquation est une valeur de l’inconnue pour laquelle l’inégalité est vraie. Une inéquation peut avoir plusieurs solutions."
+    }
+  ]
+}

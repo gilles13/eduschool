@@ -95,7 +95,7 @@
         "La distance au centre",
         "La pente de la tangente"
       ],
-      "correction": "Le point associé à x a pour coordonnées (cos x, sin x).",
+      "correction": "Le point associé à 𝑥 a pour coordonnées (cos 𝑥, sin 𝑥).",
       "illustration": {
         "id": "cercle_trigonometrique",
         "angle": 45
@@ -115,7 +115,7 @@
         "Le rayon",
         "Le diamètre"
       ],
-      "correction": "Le point associé à x a pour coordonnées (cos x, sin x).",
+      "correction": "Le point associé à 𝑥 a pour coordonnées (cos 𝑥, sin 𝑥).",
       "illustration": {
         "id": "cercle_trigonometrique",
         "angle": 45
@@ -204,16 +204,16 @@
     {
       "id": "CERCLE-TRIG-011",
       "type": "qcm",
-      "enonce": "Quelle égalité est vraie pour tout angle x ?",
+      "enonce": "Quelle égalité est vraie pour tout angle 𝑥 ?",
       "reponse": {
         "mode": "editoriale",
-        "valeur": "cos²(x) + sin²(x) = 1"
+        "valeur": "cos²(𝑥) + sin²(𝑥) = 1"
       },
       "propositions": [
-        "cos²(x) + sin²(x) = 1",
-        "cos(x) + sin(x) = 1",
-        "cos²(x) - sin²(x) = 1",
-        "cos(x) × sin(x) = 1"
+        "cos²(𝑥) + sin²(𝑥) = 1",
+        "cos(𝑥) + sin(𝑥) = 1",
+        "cos²(𝑥) - sin²(𝑥) = 1",
+        "cos(𝑥) × sin(𝑥) = 1"
       ],
       "correction": "C’est la relation de Pythagore sur le cercle unité.",
       "illustration": {

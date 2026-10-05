@@ -1,0 +1,327 @@
+{
+  "notion_id": "fractions_quantite",
+  "questions": [
+    {
+      "id": "FRAC-MIG-FRACTION-QUANTITE-001",
+      "type": "qcm",
+      "enonce": "Une boîte contient [[terme1]] objets. On en utilise [[terme2]]. Combien d’objets sont utilisés ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "12",
+          "2/3"
+        ],
+        "format": "integer",
+        "unite": ""
+      },
+      "propositions": [
+        "8",
+        "6",
+        "12",
+        "18"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Prendre une fraction d’une quantité consiste à multiplier cette quantité par la fraction.\nJ’en déduis : 12 ÷ 3 = 4 objets par tiers ; deux tiers représentent 8 objets.",
+      "humour": [
+        "Une fraction d'un nombre reste un nombre. Jusqu'ici, l'univers tient bon.",
+        "On ne prend qu'une fraction du nombre. Inutile d'appeler les secours."
+      ]
+    },
+    {
+      "id": "FRAC-MIG-FRACTION-QUANTITE-002",
+      "type": "qcm",
+      "enonce": "Quel nombre manque : [[terme2]] × □ = [[terme1]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "division",
+        "termes": [
+          "8",
+          "2/3"
+        ],
+        "format": "integer",
+        "unite": ""
+      },
+      "propositions": [
+        "12",
+        "6",
+        "8",
+        "16"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Prendre une fraction d’une quantité consiste à multiplier cette quantité par la fraction.\nJ’en déduis : On calcule 8 ÷ (2/3) = 8 × 3/2 = 12.",
+      "humour": [
+        "Une petite fraction, un grand calcul. Enfin... gardons le sens des proportions."
+      ]
+    },
+    {
+      "id": "FRAC-MIG-FRACTION-QUANTITE-003",
+      "type": "qcm",
+      "enonce": "Un récipient contient [[terme1]] litres. On en utilise [[terme2]]. Combien de litres restent ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "reste",
+        "termes": [
+          "12",
+          "1/3"
+        ],
+        "format": "integer",
+        "unite": ""
+      },
+      "propositions": [
+        "8",
+        "4",
+        "6",
+        "9"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Prendre une fraction d’une quantité consiste à multiplier cette quantité par la fraction.\nJ’en déduis : On utilise 4 litres ; il en reste 12 − 4 = 8.",
+      "humour": [
+        "Aucun nombre n'a été maltraité pendant la fabrication de cet exercice."
+      ]
+    },
+    {
+      "id": "FRA-VAR-QUANT-001",
+      "type": "qcm",
+      "enonce": "Calcule [[frac]] de [[total]].",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "total": "12",
+            "frac": "1/2",
+            "bonne": "6",
+            "d1": "12",
+            "d2": "7",
+            "d3": "5",
+            "correction": "1/2 de 12 = 12 × 1/2 = 6."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "12",
+            "frac": "2/3",
+            "bonne": "8",
+            "d1": "4",
+            "d2": "24",
+            "d3": "9",
+            "correction": "2/3 de 12 = 12 × 2/3 = 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "16",
+            "frac": "3/4",
+            "bonne": "12",
+            "d1": "4",
+            "d2": "48",
+            "d3": "13",
+            "correction": "3/4 de 16 = 16 × 3/4 = 12."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "20",
+            "frac": "2/5",
+            "bonne": "8",
+            "d1": "4",
+            "d2": "40",
+            "d3": "12",
+            "correction": "2/5 de 20 = 20 × 2/5 = 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "24",
+            "frac": "5/6",
+            "bonne": "20",
+            "d1": "4",
+            "d2": "120",
+            "d3": "21",
+            "correction": "5/6 de 24 = 24 × 5/6 = 20."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "28",
+            "frac": "3/7",
+            "bonne": "12",
+            "d1": "4",
+            "d2": "84",
+            "d3": "16",
+            "correction": "3/7 de 28 = 28 × 3/7 = 12."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "30",
+            "frac": "4/5",
+            "bonne": "24",
+            "d1": "6",
+            "d2": "120",
+            "d3": "25",
+            "correction": "4/5 de 30 = 30 × 4/5 = 24."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "32",
+            "frac": "3/8",
+            "bonne": "12",
+            "d1": "4",
+            "d2": "96",
+            "d3": "20",
+            "correction": "3/8 de 32 = 32 × 3/8 = 12."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "36",
+            "frac": "5/6",
+            "bonne": "30",
+            "d1": "6",
+            "d2": "180",
+            "d3": "31",
+            "correction": "5/6 de 36 = 36 × 5/6 = 30."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "40",
+            "frac": "7/10",
+            "bonne": "28",
+            "d1": "4",
+            "d2": "280",
+            "d3": "12",
+            "correction": "7/10 de 40 = 40 × 7/10 = 28."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "42",
+            "frac": "5/7",
+            "bonne": "30",
+            "d1": "6",
+            "d2": "210",
+            "d3": "12",
+            "correction": "5/7 de 42 = 42 × 5/7 = 30."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "45",
+            "frac": "2/9",
+            "bonne": "10",
+            "d1": "5",
+            "d2": "90",
+            "d3": "35",
+            "correction": "2/9 de 45 = 45 × 2/9 = 10."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "48",
+            "frac": "7/8",
+            "bonne": "42",
+            "d1": "6",
+            "d2": "336",
+            "d3": "43",
+            "correction": "7/8 de 48 = 48 × 7/8 = 42."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "54",
+            "frac": "5/9",
+            "bonne": "30",
+            "d1": "6",
+            "d2": "270",
+            "d3": "24",
+            "correction": "5/9 de 54 = 54 × 5/9 = 30."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "56",
+            "frac": "3/4",
+            "bonne": "42",
+            "d1": "14",
+            "d2": "168",
+            "d3": "43",
+            "correction": "3/4 de 56 = 56 × 3/4 = 42."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "60",
+            "frac": "11/12",
+            "bonne": "55",
+            "d1": "5",
+            "d2": "660",
+            "d3": "56",
+            "correction": "11/12 de 60 = 60 × 11/12 = 55."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "72",
+            "frac": "7/9",
+            "bonne": "56",
+            "d1": "8",
+            "d2": "504",
+            "d3": "16",
+            "correction": "7/9 de 72 = 72 × 7/9 = 56."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "84",
+            "frac": "5/6",
+            "bonne": "70",
+            "d1": "14",
+            "d2": "420",
+            "d3": "71",
+            "correction": "5/6 de 84 = 84 × 5/6 = 70."
+          },
+          "progression": 3
+        }
+      ],
+      "presentation": {
+        "math": [
+          "frac",
+          "bonne",
+          "d1",
+          "d2",
+          "d3"
+        ]
+      }
+    }
+  ]
+}

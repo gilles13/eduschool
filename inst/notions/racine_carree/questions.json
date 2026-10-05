@@ -2,6 +2,574 @@
   "notion_id": "racine_carree",
   "questions": [
     {
+      "id": "RAC-VAR-001",
+      "type": "qcm",
+      "enonce": "Quelle est la valeur de √[[a]] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "4",
+            "bonne": "2",
+            "d1": "5",
+            "d2": "3",
+            "d3": "1",
+            "correction": "√4 = 2, car 2² = 4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "bonne": "3",
+            "d1": "10",
+            "d2": "4",
+            "d3": "2",
+            "correction": "√9 = 3, car 3² = 9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "16",
+            "bonne": "4",
+            "d1": "17",
+            "d2": "5",
+            "d3": "3",
+            "correction": "√16 = 4, car 4² = 16."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "25",
+            "bonne": "5",
+            "d1": "26",
+            "d2": "6",
+            "d3": "4",
+            "correction": "√25 = 5, car 5² = 25."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "36",
+            "bonne": "6",
+            "d1": "37",
+            "d2": "7",
+            "d3": "5",
+            "correction": "√36 = 6, car 6² = 36."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "49",
+            "bonne": "7",
+            "d1": "50",
+            "d2": "8",
+            "d3": "6",
+            "correction": "√49 = 7, car 7² = 49."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "64",
+            "bonne": "8",
+            "d1": "65",
+            "d2": "9",
+            "d3": "7",
+            "correction": "√64 = 8, car 8² = 64."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "81",
+            "bonne": "9",
+            "d1": "82",
+            "d2": "10",
+            "d3": "8",
+            "correction": "√81 = 9, car 9² = 81."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "100",
+            "bonne": "10",
+            "d1": "101",
+            "d2": "11",
+            "d3": "9",
+            "correction": "√100 = 10, car 10² = 100."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "121",
+            "bonne": "11",
+            "d1": "122",
+            "d2": "12",
+            "d3": "10",
+            "correction": "√121 = 11, car 11² = 121."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "bonne": "2",
+            "d1": "5",
+            "d2": "3",
+            "d3": "1",
+            "correction": "√4 = 2, car 2² = 4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "bonne": "3",
+            "d1": "10",
+            "d2": "4",
+            "d3": "2",
+            "correction": "√9 = 3, car 3² = 9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "16",
+            "bonne": "4",
+            "d1": "17",
+            "d2": "5",
+            "d3": "3",
+            "correction": "√16 = 4, car 4² = 16."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "25",
+            "bonne": "5",
+            "d1": "26",
+            "d2": "6",
+            "d3": "4",
+            "correction": "√25 = 5, car 5² = 25."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "36",
+            "bonne": "6",
+            "d1": "37",
+            "d2": "7",
+            "d3": "5",
+            "correction": "√36 = 6, car 6² = 36."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "49",
+            "bonne": "7",
+            "d1": "50",
+            "d2": "8",
+            "d3": "6",
+            "correction": "√49 = 7, car 7² = 49."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "64",
+            "bonne": "8",
+            "d1": "65",
+            "d2": "9",
+            "d3": "7",
+            "correction": "√64 = 8, car 8² = 64."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "81",
+            "bonne": "9",
+            "d1": "82",
+            "d2": "10",
+            "d3": "8",
+            "correction": "√81 = 9, car 9² = 81."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "100",
+            "bonne": "10",
+            "d1": "101",
+            "d2": "11",
+            "d3": "9",
+            "correction": "√100 = 10, car 10² = 100."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "121",
+            "bonne": "11",
+            "d1": "122",
+            "d2": "12",
+            "d3": "10",
+            "correction": "√121 = 11, car 11² = 121."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "bonne": "2",
+            "d1": "5",
+            "d2": "3",
+            "d3": "1",
+            "correction": "√4 = 2, car 2² = 4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "bonne": "3",
+            "d1": "10",
+            "d2": "4",
+            "d3": "2",
+            "correction": "√9 = 3, car 3² = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "16",
+            "bonne": "4",
+            "d1": "17",
+            "d2": "5",
+            "d3": "3",
+            "correction": "√16 = 4, car 4² = 16."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "25",
+            "bonne": "5",
+            "d1": "26",
+            "d2": "6",
+            "d3": "4",
+            "correction": "√25 = 5, car 5² = 25."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "36",
+            "bonne": "6",
+            "d1": "37",
+            "d2": "7",
+            "d3": "5",
+            "correction": "√36 = 6, car 6² = 36."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "49",
+            "bonne": "7",
+            "d1": "50",
+            "d2": "8",
+            "d3": "6",
+            "correction": "√49 = 7, car 7² = 49."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "64",
+            "bonne": "8",
+            "d1": "65",
+            "d2": "9",
+            "d3": "7",
+            "correction": "√64 = 8, car 8² = 64."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "81",
+            "bonne": "9",
+            "d1": "82",
+            "d2": "10",
+            "d3": "8",
+            "correction": "√81 = 9, car 9² = 81."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "100",
+            "bonne": "10",
+            "d1": "101",
+            "d2": "11",
+            "d3": "9",
+            "correction": "√100 = 10, car 10² = 100."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "121",
+            "bonne": "11",
+            "d1": "122",
+            "d2": "12",
+            "d3": "10",
+            "correction": "√121 = 11, car 11² = 121."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "bonne": "2",
+            "d1": "5",
+            "d2": "3",
+            "d3": "1",
+            "correction": "√4 = 2, car 2² = 4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "bonne": "3",
+            "d1": "10",
+            "d2": "4",
+            "d3": "2",
+            "correction": "√9 = 3, car 3² = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "16",
+            "bonne": "4",
+            "d1": "17",
+            "d2": "5",
+            "d3": "3",
+            "correction": "√16 = 4, car 4² = 16."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "25",
+            "bonne": "5",
+            "d1": "26",
+            "d2": "6",
+            "d3": "4",
+            "correction": "√25 = 5, car 5² = 25."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "36",
+            "bonne": "6",
+            "d1": "37",
+            "d2": "7",
+            "d3": "5",
+            "correction": "√36 = 6, car 6² = 36."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "49",
+            "bonne": "7",
+            "d1": "50",
+            "d2": "8",
+            "d3": "6",
+            "correction": "√49 = 7, car 7² = 49."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "64",
+            "bonne": "8",
+            "d1": "65",
+            "d2": "9",
+            "d3": "7",
+            "correction": "√64 = 8, car 8² = 64."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "81",
+            "bonne": "9",
+            "d1": "82",
+            "d2": "10",
+            "d3": "8",
+            "correction": "√81 = 9, car 9² = 81."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "100",
+            "bonne": "10",
+            "d1": "101",
+            "d2": "11",
+            "d3": "9",
+            "correction": "√100 = 10, car 10² = 100."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "121",
+            "bonne": "11",
+            "d1": "122",
+            "d2": "12",
+            "d3": "10",
+            "correction": "√121 = 11, car 11² = 121."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "bonne": "2",
+            "d1": "5",
+            "d2": "3",
+            "d3": "1",
+            "correction": "√4 = 2, car 2² = 4."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "9",
+            "bonne": "3",
+            "d1": "10",
+            "d2": "4",
+            "d3": "2",
+            "correction": "√9 = 3, car 3² = 9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "16",
+            "bonne": "4",
+            "d1": "17",
+            "d2": "5",
+            "d3": "3",
+            "correction": "√16 = 4, car 4² = 16."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "25",
+            "bonne": "5",
+            "d1": "26",
+            "d2": "6",
+            "d3": "4",
+            "correction": "√25 = 5, car 5² = 25."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "36",
+            "bonne": "6",
+            "d1": "37",
+            "d2": "7",
+            "d3": "5",
+            "correction": "√36 = 6, car 6² = 36."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "49",
+            "bonne": "7",
+            "d1": "50",
+            "d2": "8",
+            "d3": "6",
+            "correction": "√49 = 7, car 7² = 49."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "64",
+            "bonne": "8",
+            "d1": "65",
+            "d2": "9",
+            "d3": "7",
+            "correction": "√64 = 8, car 8² = 64."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "81",
+            "bonne": "9",
+            "d1": "82",
+            "d2": "10",
+            "d3": "8",
+            "correction": "√81 = 9, car 9² = 81."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "100",
+            "bonne": "10",
+            "d1": "101",
+            "d2": "11",
+            "d3": "9",
+            "correction": "√100 = 10, car 10² = 100."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "121",
+            "bonne": "11",
+            "d1": "122",
+            "d2": "12",
+            "d3": "10",
+            "correction": "√121 = 11, car 11² = 121."
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
       "id": "RAC-001",
       "type": "qcm",
       "enonce": "Que vaut √49 ?",
@@ -132,7 +700,7 @@
     {
       "id": "RAC-009",
       "type": "qcm",
-      "enonce": "Combien de solutions réelles possède x² = 36 ?",
+      "enonce": "Combien de solutions réelles possède 𝑥² = 36 ?",
       "reponse": {
         "mode": "editoriale",
         "valeur": "Deux"
@@ -148,7 +716,7 @@
     {
       "id": "RAC-010",
       "type": "qcm",
-      "enonce": "Quelle est la solution positive de x² = 121 ?",
+      "enonce": "Quelle est la solution positive de 𝑥² = 121 ?",
       "reponse": {
         "mode": "editoriale",
         "valeur": "11"

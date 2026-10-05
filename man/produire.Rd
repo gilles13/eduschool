@@ -19,7 +19,7 @@ produire(
 )
 }
 \arguments{
-\item{notion}{Notion simple ou famille definie dans familles_notions.csv.}
+\item{notion}{Notion simple ou famille definie dans editorial_familles_notions.csv.}
 
 \item{support}{"decouverte", "synthese", "quiz" ou "tous".}
 

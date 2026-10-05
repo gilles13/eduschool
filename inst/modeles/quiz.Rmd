@@ -1,7 +1,7 @@
 ---
 pagetitle: "eduschool"
 params:
-  notion: "addition_fractions"
+  notion: "fractions_addition"
   support: "quiz"
   tirages: 5
   n: null
@@ -11,6 +11,7 @@ params:
 output:
   html_document:
     css: !expr system.file("styles", "eduschool.css", package = "eduschool")
+    mathjax: default
   pdf_document:
     latex_engine: xelatex
 ---
@@ -151,7 +152,8 @@ if (html) {
           bouton.value = p; bouton.id = "edu-q" + i + "-" + j;
           etiquette.appendChild(bouton);
           const masque = q.presentation && q.presentation.masques && q.presentation.masques[p];
-          noeud("span", " " + (masque || p), etiquette);
+          const affichage = q.propositions_affichage && q.propositions_affichage[j];
+          noeud("span", " " + (masque || affichage || p), etiquette);
           choix.appendChild(etiquette);
         });
       } else {
@@ -172,6 +174,8 @@ if (html) {
       correction.hidden = true;
       zone.appendChild(bloc);
     });
+    if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([zone]);
+    else if (window.MathJax && MathJax.Hub) MathJax.Hub.Queue(["Typeset", MathJax.Hub, zone]);
   }
   document.getElementById("edu-valider").addEventListener("click", () => {
     let bonnes = 0, total = 0;
@@ -183,13 +187,15 @@ if (html) {
       const juste = valeur === String(q.reponse).trim();
       if (valeur) { total++; if (juste) bonnes++; }
       const correction = bloc.querySelector(".edu-correction");
-      correctionLisible((juste ? "Bonne réponse." : "Réponse attendue : " + q.reponse + ".") +
+      correctionLisible((juste ? "Bonne réponse." : "Réponse attendue : " + (q.reponse_affichage || q.reponse) + ".") +
         "\\n" + (q.correction || ""), correction);
       if (q.apart_humour) {
         const apart = noeud("p", q.apart_humour, correction);
         apart.className = "edu-humour";
       }
       correction.hidden = false;
+      if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([correction]);
+      else if (window.MathJax && MathJax.Hub) MathJax.Hub.Queue(["Typeset", MathJax.Hub, correction]);
     });
     bilan.textContent = bonnes + " reponse(s) correcte(s) sur " + tirages[tour].length +
       " (" + total + " reponse(s) fournies).";
@@ -267,7 +273,9 @@ if (!html) {
     if (length(q$propositions)) {
       for (p in q$propositions) {
         masque = q$presentation$masques[[p]]
-        proposition = if (is.null(masque)) p else masque
+        j = match(p, q$propositions)
+        affichage = q$propositions_affichage[[j]]
+        proposition = if (is.null(masque)) affichage else masque
         cat("- ", .math_unicode_pdf(proposition), "\n", sep = "")
       }
       cat("\n")
@@ -276,7 +284,7 @@ if (!html) {
   cat("\n\\newpage\n\n# Corrige\n\n")
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
-    cat("\n## Question ", i, "\n\n**Reponse :** ", .math_unicode_pdf(q$reponse),
+    cat("\n## Question ", i, "\n\n**Reponse :** ", .math_unicode_pdf(q$reponse_affichage),
         "\n\n**Correction :**\n\n", .math_unicode_pdf(.raisonnement_edu(q$correction)), "\n\n",
         if (!is.null(q$apart_humour)) paste0("*", q$apart_humour, "*\n\n") else "", sep = "")
   }

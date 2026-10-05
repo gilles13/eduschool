@@ -1,0 +1,144 @@
+{
+  "notion_id": "conversions_volumes",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_VOLUMES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] m³ correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "1/2",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "L",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "500 L",
+        "50 L",
+        "5 000 L",
+        "0,5 L"
+      ],
+      "correction": "1 m³ = 1 000 L."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] L correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "2",
+          "1000"
+        ],
+        "format": "decimal",
+        "unite": "cm³",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "2 000 cm³",
+        "200 cm³",
+        "20 000 cm³",
+        "2 cm³"
+      ],
+      "correction": "1 L = 1 000 cm³."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] cm³ correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "3000",
+          "1/1000"
+        ],
+        "format": "decimal",
+        "unite": "L",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "3 L",
+        "30 L",
+        "0,3 L",
+        "300 L"
+      ],
+      "correction": "1 L = 1 000 cm³."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Quelle grandeur mesure l’espace occupé par un solide ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "volume": "v _ _ _ _ e",
+          "surface": "s _ _ _ _ _ e",
+          "longueur": "l _ _ _ _ _ _ r",
+          "contenance": "c _ _ _ _ _ _ _ _ e"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "volume"
+      },
+      "propositions": [
+        "volume",
+        "surface",
+        "longueur",
+        "contenance"
+      ],
+      "correction": "Le volume mesure l’espace occupé par un solide."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quel solide possède six faces carrées identiques ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "cube": "C________E",
+          "carré": "C________É",
+          "cercle": "CE________E",
+          "cône": "CÔ________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "cube"
+      },
+      "propositions": [
+        "cube",
+        "carré",
+        "cercle",
+        "cône"
+      ],
+      "correction": "Le terme recherché est « cube »."
+    },
+    {
+      "id": "MES-CONVERSION_VOLUMES-APPLICATION",
+      "type": "qcm",
+      "enonce": "Un cube a des arêtes de 2 dm. Quel est son volume en litres ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "8 L"
+      },
+      "propositions": [
+        "8 L",
+        "4 L",
+        "6 L",
+        "80 L"
+      ],
+      "correction": "2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L."
+    }
+  ]
+}

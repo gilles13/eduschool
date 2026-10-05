@@ -20,7 +20,7 @@
     {
       "id": "INT-002",
       "type": "qcm",
-      "enonce": "Quel intervalle correspond à l’inégalité −2 < x ≤ 6 ?",
+      "enonce": "Quel intervalle correspond à l’inégalité −2 < 𝑥 ≤ 6 ?",
       "reponse": {
         "mode": "editoriale",
         "valeur": "]−2; 6]"
@@ -31,7 +31,7 @@
         "]−2; 6[",
         "[−2; 6["
       ],
-      "correction": "−2 est exclu car l’inégalité est stricte, tandis que 6 est inclus : x ∈ ]−2; 6]."
+      "correction": "−2 est exclu car l’inégalité est stricte, tandis que 6 est inclus : 𝑥 ∈ ]−2; 6]."
     },
     {
       "id": "INT-003",

@@ -7,7 +7,7 @@
 
 # Read explicit family memberships; an empty vector means a simple notion.
 .libelle_notion_ou_famille = function(identifiant) {
-  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  fichier = .chemin_edu("referentiels", "editorial_familles_notions.csv")
   ref = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
   familles = unique(ref[ref$famille == identifiant & nzchar(ref$famille),
     c("famille", "libelle_famille"), drop = FALSE])
@@ -26,7 +26,7 @@
 }
 
 .notions_famille = function(famille, niveau = "") {
-  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  fichier = .chemin_edu("referentiels", "editorial_familles_notions.csv")
   liens = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
   liens = liens[liens$famille == famille, , drop = FALSE]
   if (nzchar(niveau) && nrow(liens)) {
@@ -43,7 +43,7 @@
 }
 
 .niveau_notion_ou_famille = function(identifiant) {
-  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  fichier = .chemin_edu("referentiels", "editorial_familles_notions.csv")
   ref = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
   lignes = ref[ref$famille == identifiant, , drop = FALSE]
   if (!nrow(lignes)) lignes = ref[ref$notion == identifiant, , drop = FALSE]
@@ -66,7 +66,7 @@
 #' @return Un data.frame : type, identifiant, libelle, famille, niveau.
 #' @export
 notions = function() {
-  fichier = .chemin_edu("referentiels", "familles_notions.csv")
+  fichier = .chemin_edu("referentiels", "editorial_familles_notions.csv")
   liens = utils::read.csv(fichier, sep = ";", stringsAsFactors = FALSE)
   dossiers = list.dirs(.chemin_edu("notions"), recursive = FALSE, full.names = FALSE)
   liens = liens[liens$notion %in% dossiers, , drop = FALSE]
@@ -74,11 +74,11 @@ notions = function() {
   names(membres) = c("identifiant", "libelle", "famille", "niveau")
   absents = setdiff(dossiers, membres$identifiant)
   if (length(absents))
-    stop("Notions absentes de familles_notions.csv : ", paste(absents, collapse = ", "))
+    stop("Notions absentes de editorial_familles_notions.csv : ", paste(absents, collapse = ", "))
   membres$type = "notion"
   familles = unique(liens[nzchar(liens$famille), c("famille", "libelle_famille")])
   if (any(!nzchar(familles$libelle_famille)) || any(duplicated(familles$famille)))
-    stop("Libelles de familles manquants ou incoherents dans familles_notions.csv")
+    stop("Libelles de familles manquants ou incoherents dans editorial_familles_notions.csv")
   groupes = data.frame(type = "famille", identifiant = familles$famille,
     libelle = familles$libelle_famille, famille = "", niveau = "")
   resultat = rbind(membres[, names(groupes)], groupes)
@@ -104,6 +104,20 @@ questions = function(notion, niveau = "") {
   jsonlite::fromJSON(.chemin_edu("notions", notion, "questions.json"),
                      simplifyVector = FALSE)
 }
+
+# Mathematical display is delegated to Yacas: Hold preserves the source expression.
+.math_tex_edu = function(expression) {
+  if (!is.character(expression) || length(expression) != 1L ||
+      is.na(expression) || !nzchar(expression) ||
+      !grepl("^[A-Za-z0-9_+*/^(). <>=-]+$", expression))
+    stop("Expression mathematique invalide")
+  resultat = Ryacas::yac_str(paste0("TeXForm(Hold(", expression, "))"))
+  if (length(resultat) != 1L || is.na(resultat) || !nzchar(trimws(resultat)))
+    stop("Ryacas n'a pas produit de TeX")
+  trimws(resultat)
+}
+
+.math_inline_edu = function(expression) paste0("\\(", .math_tex_edu(expression), "\\)")
 
 # Fixed arithmetic only: the same two literals produce the question and answer.
 .calcul_fixe_edu = function(calcul) {
@@ -176,6 +190,45 @@ questions = function(notion, niveau = "") {
   list(termes = termes, reponse = resultat, quantite = quantite)
 }
 
+.calculer_parametres_yacas_edu = function(calculs, valeurs, id) {
+  if (is.null(calculs)) return(list(valeurs = valeurs, affichages = list()))
+  if (!is.list(calculs) || !length(calculs) || is.null(names(calculs)) ||
+      any(!nzchar(names(calculs))) || anyDuplicated(names(calculs)) ||
+      any(names(calculs) %in% names(valeurs)))
+    stop("Calculs Yacas invalides : ", id)
+  affichages = list()
+  rendus = list()
+  for (nom in names(calculs)) {
+    calcul = calculs[[nom]]
+    if (!is.list(calcul) || !identical(calcul$moteur, "Ryacas") ||
+        !is.character(calcul$expression) || length(calcul$expression) != 1L ||
+        is.na(calcul$expression)) stop("Calcul Yacas invalide : ", id)
+    expression = .remplacer_parametres_edu(calcul$expression, valeurs)
+    if (!grepl("^[A-Za-z0-9_+*/^()., <>=-]+$", expression))
+      stop("Expression Yacas invalide : ", id)
+    format = if (is.null(calcul$format)) "valeur" else calcul$format
+    if (identical(format, "math_hold")) {
+      valeurs[[nom]] = expression
+      rendus[[nom]] = .math_inline_edu(expression)
+      affichages[[expression]] = rendus[[nom]]
+      next
+    }
+    resultat = Ryacas::yac_str(expression)
+    if (length(resultat) != 1L || is.na(resultat) || !nzchar(trimws(resultat)))
+      stop("Ryacas n'a pas produit de resultat : ", id)
+    if (identical(format, "liste_entiers")) {
+      if (!grepl("^\\{[0-9]+(,[0-9]+)*\\}$", resultat))
+        stop("Liste Ryacas invalide : ", id)
+      resultat = substring(resultat, 2L, nchar(resultat) - 1L)
+      resultat = gsub(",", ", ", resultat, fixed = TRUE)
+    } else if (!identical(format, "valeur")) {
+      stop("Format Yacas invalide : ", id)
+    }
+    valeurs[[nom]] = trimws(resultat)
+  }
+  list(valeurs = valeurs, affichages = affichages, rendus = rendus)
+}
+
 .remplacer_parametres_edu = function(x, valeurs) {
   if (is.character(x)) {
     for (nom in names(valeurs))
@@ -211,9 +264,32 @@ questions = function(notion, niveau = "") {
       (!is.numeric(progression) || length(progression) != 1L ||
        is.na(progression) || progression < 1 || progression %% 1 != 0))
     stop("Progression de variante invalide : ", definition$id)
+  calcules = .calculer_parametres_yacas_edu(definition$calculs, valeurs, definition$id)
+  valeurs = calcules$valeurs
+  definition$calculs = NULL
+  math = unlist(definition$presentation$math, use.names = FALSE)
+  if (length(math) && (any(!math %in% names(valeurs)) || anyDuplicated(math)))
+    stop("Parametres mathematiques invalides : ", definition$id)
+  enonce = definition$enonce
+  correction = definition$correction
+  affichages = calcules$affichages
+  for (nom in names(calcules$rendus)) {
+    enonce = gsub(paste0("[[", nom, "]]"), calcules$rendus[[nom]], enonce, fixed = TRUE)
+    correction = gsub(paste0("[[", nom, "]]"), calcules$rendus[[nom]], correction, fixed = TRUE)
+  }
+  for (nom in math) {
+    valeur = as.character(valeurs[[nom]])
+    affichage = .math_inline_edu(valeur)
+    enonce = gsub(paste0("[[", nom, "]]"), affichage, enonce, fixed = TRUE)
+    correction = gsub(paste0("[[", nom, "]]"), affichage, correction, fixed = TRUE)
+    affichages[[valeur]] = affichage
+  }
   definition$variantes = NULL
   definition = .remplacer_parametres_edu(definition, valeurs)
-  list(definition = definition, parametres = valeurs, progression = progression)
+  definition$enonce = .remplacer_parametres_edu(enonce, valeurs)
+  definition$correction = .remplacer_parametres_edu(correction, valeurs)
+  list(definition = definition, parametres = valeurs, progression = progression,
+       affichages = affichages)
 }
 
 #' Instancier une question (JSON local de confiance uniquement)
@@ -224,6 +300,8 @@ question = function(definition) {
   definition = instance$definition
   valeurs = instance$parametres
   progression = instance$progression
+  affichages = instance$affichages
+  if (is.null(affichages)) affichages = list()
   if (length(definition$distracteurs$expressions))
     stop("Parametres dynamiques interdits : ", definition$id)
   if (identical(definition$reponse$mode, "calcul_fixe")) {
@@ -236,8 +314,8 @@ question = function(definition) {
         grepl("[[quantite]]", enonce, fixed = TRUE))
       stop("Quantite non definie : ", definition$id)
     # Literal markers are replaced only for fixed operands declared here.
-    enonce = gsub("[[terme1]]", calcul$termes[[1L]], enonce, fixed = TRUE)
-    enonce = gsub("[[terme2]]", calcul$termes[[2L]], enonce, fixed = TRUE)
+    enonce = gsub("[[terme1]]", .math_inline_edu(calcul$termes[[1L]]), enonce, fixed = TRUE)
+    enonce = gsub("[[terme2]]", .math_inline_edu(calcul$termes[[2L]]), enonce, fixed = TRUE)
     if (grepl("[[terme1]]", enonce, fixed = TRUE) ||
         grepl("[[terme2]]", enonce, fixed = TRUE))
       stop("Enonce incomplet : ", definition$id)
@@ -345,9 +423,16 @@ question = function(definition) {
     enonce = definition$enonce
     # Only declared fixed source expressions can appear in the question.
     if (grepl("[[source]]", enonce, fixed = TRUE)) {
-      if (!is.character(source$affichage) || length(source$affichage) != 1L)
-        stop("Affichage absent : ", definition$id)
-      enonce = gsub("[[source]]", source$affichage, enonce, fixed = TRUE)
+      if (identical(mode, "comparaison")) {
+        source_affichage = paste(.math_inline_edu(source$expression), "et",
+                                 .math_inline_edu(source$autre))
+      } else if (identical(mode, "equivalent") && !is.null(source$affichage) &&
+                 grepl("\u00F7", source$affichage, fixed = TRUE)) {
+        source_affichage = source$affichage
+      } else {
+        source_affichage = .math_inline_edu(source$expression)
+      }
+      enonce = gsub("[[source]]", source_affichage, enonce, fixed = TRUE)
     }
   } else if (identical(definition$reponse$mode, "editoriale")) {
     enonce = definition$enonce
@@ -363,6 +448,26 @@ question = function(definition) {
     propositions = propositions[nzchar(propositions)]
     if (length(propositions) < 2L) stop("QCM sans alternative : ", definition$id)
     propositions = sample(propositions)
+  }
+  if (identical(definition$reponse$mode, "calcul_fixe") &&
+      identical(if (is.null(definition$reponse$format)) "fraction" else definition$reponse$format, "fraction") &&
+      !nzchar(if (is.null(definition$reponse$unite)) "" else definition$reponse$unite)) {
+    for (valeur in unique(c(bonne, propositions)))
+      affichages[[valeur]] = .math_inline_edu(valeur)
+  }
+  if (identical(definition$reponse$mode, "relation_fixe")) {
+    if (identical(definition$reponse$relation, "egalite_fausse")) {
+      for (nom in names(definition$reponse$candidats)) {
+        candidat = definition$reponse$candidats[[nom]]
+        affichages[[nom]] = paste(.math_inline_edu(candidat$gauche), "=",
+                                  .math_inline_edu(candidat$droite))
+      }
+    } else if (identical(definition$reponse$relation, "equivalent")) {
+      for (nom in names(definition$reponse$candidats))
+        affichages[[nom]] = .math_inline_edu(definition$reponse$candidats[[nom]])
+    } else if (identical(definition$reponse$relation, "encadrement")) {
+      for (nom in names(definition$reponse$candidats)) affichages[[nom]] = .math_inline_edu(nom)
+    }
   }
   # Detect equivalent numerical proposals, not just equivalent answers.
   numerique = function(x) {
@@ -388,8 +493,13 @@ question = function(definition) {
   if (!is.character(correction) || length(correction) != 1L ||
       is.na(correction) || !nzchar(trimws(correction)))
     stop("Correction absente : ", definition$id)
+  propositions_affichage = vapply(propositions, function(x) {
+    if (!is.null(affichages[[x]])) affichages[[x]] else x
+  }, character(1))
+  reponse_affichage = if (!is.null(affichages[[bonne]])) affichages[[bonne]] else bonne
   list(id = definition$id, enonce = enonce, reponse = bonne,
-       propositions = propositions, correction = correction,
+       reponse_affichage = reponse_affichage, propositions = propositions,
+       propositions_affichage = propositions_affichage, correction = correction,
        illustration = definition$illustration, parametres = valeurs,
        progression = progression, presentation = definition$presentation,
        humour = definition$humour)
@@ -452,12 +562,17 @@ question = function(definition) {
 
 # Select a controlled number of eligible jokes without changing the corrections.
 .humour_edu = function(tirage, ratio) {
-  disponibles = which(vapply(tirage, function(q) length(q$humour) > 0L, logical(1)))
+  textes_humour = lapply(tirage, function(q) {
+    textes = unlist(q$humour, use.names = FALSE)
+    textes = textes[!is.na(textes) & nzchar(textes)]
+    as.character(textes)
+  })
+  disponibles = which(lengths(textes_humour) > 0L)
   nombre = min(length(disponibles), floor(length(tirage) * ratio + 0.5))
   if (nombre > 0L) {
-    for (i in sample(disponibles, nombre)) {
-      textes = unlist(tirage[[i]]$humour, use.names = FALSE)
-      tirage[[i]]$apart_humour = sample(textes, 1L)
+    indices = disponibles[sample.int(length(disponibles), nombre)]
+    for (i in indices) {
+      tirage[[i]]$apart_humour = sample(textes_humour[[i]], 1L)
     }
   }
   tirage
@@ -542,7 +657,7 @@ graphique = function(id, ...) {
 }
 
 #' Produire une fiche ou un quiz HTML/PDF
-#' @param notion Notion simple ou famille definie dans familles_notions.csv.
+#' @param notion Notion simple ou famille definie dans editorial_familles_notions.csv.
 #' @param support "decouverte", "synthese", "quiz" ou "tous".
 #' @param dossier Repertoire de destination ; NULL cree un fichier temporaire.
 #' @param format "html" ou "pdf".

@@ -1,0 +1,621 @@
+{
+  "notion_id": "puissances_proprietes",
+  "questions": [
+    {
+      "id": "PUI-PROP-VAR",
+      "type": "qcm",
+      "enonce": "Simplifie [[expr]].",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "expr": "2^2 × 2^3",
+            "bonne": "2^5",
+            "d1": "2^6",
+            "d2": "2^1",
+            "d3": "4^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^3 × 2^2",
+            "bonne": "2^5",
+            "d1": "2^6",
+            "d2": "2^1",
+            "d3": "4^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^4 × 2^3",
+            "bonne": "2^7",
+            "d1": "2^12",
+            "d2": "2^1",
+            "d3": "4^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^5 × 2^2",
+            "bonne": "2^7",
+            "d1": "2^10",
+            "d2": "2^3",
+            "d3": "4^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^3 × 2^4",
+            "bonne": "2^7",
+            "d1": "2^12",
+            "d2": "2^1",
+            "d3": "4^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^6 × 2^2",
+            "bonne": "2^8",
+            "d1": "2^12",
+            "d2": "2^4",
+            "d3": "4^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^5 × 2^3",
+            "bonne": "2^8",
+            "d1": "2^15",
+            "d2": "2^2",
+            "d3": "4^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^4 × 2^5",
+            "bonne": "2^9",
+            "d1": "2^20",
+            "d2": "2^1",
+            "d3": "4^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^7 × 2^2",
+            "bonne": "2^9",
+            "d1": "2^14",
+            "d2": "2^5",
+            "d3": "4^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "2^6 × 2^3",
+            "bonne": "2^9",
+            "d1": "2^18",
+            "d2": "2^3",
+            "d3": "4^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^2 × 3^3",
+            "bonne": "3^5",
+            "d1": "3^6",
+            "d2": "3^1",
+            "d3": "6^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^3 × 3^2",
+            "bonne": "3^5",
+            "d1": "3^6",
+            "d2": "3^1",
+            "d3": "6^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^4 × 3^3",
+            "bonne": "3^7",
+            "d1": "3^12",
+            "d2": "3^1",
+            "d3": "6^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^5 × 3^2",
+            "bonne": "3^7",
+            "d1": "3^10",
+            "d2": "3^3",
+            "d3": "6^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^3 × 3^4",
+            "bonne": "3^7",
+            "d1": "3^12",
+            "d2": "3^1",
+            "d3": "6^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^6 × 3^2",
+            "bonne": "3^8",
+            "d1": "3^12",
+            "d2": "3^4",
+            "d3": "6^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^5 × 3^3",
+            "bonne": "3^8",
+            "d1": "3^15",
+            "d2": "3^2",
+            "d3": "6^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "expr": "3^4 × 3^5",
+            "bonne": "3^9",
+            "d1": "3^20",
+            "d2": "3^1",
+            "d3": "6^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "3^7 × 3^2",
+            "bonne": "3^9",
+            "d1": "3^14",
+            "d2": "3^5",
+            "d3": "6^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "3^6 × 3^3",
+            "bonne": "3^9",
+            "d1": "3^18",
+            "d2": "3^3",
+            "d3": "6^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^2 × 4^3",
+            "bonne": "4^5",
+            "d1": "4^6",
+            "d2": "4^1",
+            "d3": "8^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^3 × 4^2",
+            "bonne": "4^5",
+            "d1": "4^6",
+            "d2": "4^1",
+            "d3": "8^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^4 × 4^3",
+            "bonne": "4^7",
+            "d1": "4^12",
+            "d2": "4^1",
+            "d3": "8^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^5 × 4^2",
+            "bonne": "4^7",
+            "d1": "4^10",
+            "d2": "4^3",
+            "d3": "8^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^3 × 4^4",
+            "bonne": "4^7",
+            "d1": "4^12",
+            "d2": "4^1",
+            "d3": "8^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^6 × 4^2",
+            "bonne": "4^8",
+            "d1": "4^12",
+            "d2": "4^4",
+            "d3": "8^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^5 × 4^3",
+            "bonne": "4^8",
+            "d1": "4^15",
+            "d2": "4^2",
+            "d3": "8^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^4 × 4^5",
+            "bonne": "4^9",
+            "d1": "4^20",
+            "d2": "4^1",
+            "d3": "8^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^7 × 4^2",
+            "bonne": "4^9",
+            "d1": "4^14",
+            "d2": "4^5",
+            "d3": "8^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "4^6 × 4^3",
+            "bonne": "4^9",
+            "d1": "4^18",
+            "d2": "4^3",
+            "d3": "8^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "5^2 × 5^3",
+            "bonne": "5^5",
+            "d1": "5^6",
+            "d2": "5^1",
+            "d3": "10^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "5^3 × 5^2",
+            "bonne": "5^5",
+            "d1": "5^6",
+            "d2": "5^1",
+            "d3": "10^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "5^4 × 5^3",
+            "bonne": "5^7",
+            "d1": "5^12",
+            "d2": "5^1",
+            "d3": "10^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "5^5 × 5^2",
+            "bonne": "5^7",
+            "d1": "5^10",
+            "d2": "5^3",
+            "d3": "10^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "expr": "5^3 × 5^4",
+            "bonne": "5^7",
+            "d1": "5^12",
+            "d2": "5^1",
+            "d3": "10^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "5^6 × 5^2",
+            "bonne": "5^8",
+            "d1": "5^12",
+            "d2": "5^4",
+            "d3": "10^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "5^5 × 5^3",
+            "bonne": "5^8",
+            "d1": "5^15",
+            "d2": "5^2",
+            "d3": "10^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "5^4 × 5^5",
+            "bonne": "5^9",
+            "d1": "5^20",
+            "d2": "5^1",
+            "d3": "10^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "5^7 × 5^2",
+            "bonne": "5^9",
+            "d1": "5^14",
+            "d2": "5^5",
+            "d3": "10^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "5^6 × 5^3",
+            "bonne": "5^9",
+            "d1": "5^18",
+            "d2": "5^3",
+            "d3": "10^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^2 × 7^3",
+            "bonne": "7^5",
+            "d1": "7^6",
+            "d2": "7^1",
+            "d3": "14^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^3 × 7^2",
+            "bonne": "7^5",
+            "d1": "7^6",
+            "d2": "7^1",
+            "d3": "14^5",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^4 × 7^3",
+            "bonne": "7^7",
+            "d1": "7^12",
+            "d2": "7^1",
+            "d3": "14^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^5 × 7^2",
+            "bonne": "7^7",
+            "d1": "7^10",
+            "d2": "7^3",
+            "d3": "14^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^3 × 7^4",
+            "bonne": "7^7",
+            "d1": "7^12",
+            "d2": "7^1",
+            "d3": "14^7",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^6 × 7^2",
+            "bonne": "7^8",
+            "d1": "7^12",
+            "d2": "7^4",
+            "d3": "14^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^5 × 7^3",
+            "bonne": "7^8",
+            "d1": "7^15",
+            "d2": "7^2",
+            "d3": "14^8",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^4 × 7^5",
+            "bonne": "7^9",
+            "d1": "7^20",
+            "d2": "7^1",
+            "d3": "14^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^7 × 7^2",
+            "bonne": "7^9",
+            "d1": "7^14",
+            "d2": "7^5",
+            "d3": "14^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "expr": "7^6 × 7^3",
+            "bonne": "7^9",
+            "d1": "7^18",
+            "d2": "7^3",
+            "d3": "14^9",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "PUI-013",
+      "type": "qcm",
+      "enonce": "Quelle expression simplifie (3²)⁴ ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3⁸"
+      },
+      "propositions": [
+        "3⁸",
+        "3⁶",
+        "3¹⁶",
+        "9⁶"
+      ],
+      "correction": "Une puissance de puissance multiplie les exposants : 2 × 4 = 8."
+    },
+    {
+      "id": "PUI-021",
+      "type": "qcm",
+      "enonce": "Pour a et b non nuls, quelle égalité est toujours vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "(a / b)² = a² / b²"
+      },
+      "propositions": [
+        "(a / b)² = a² / b²",
+        "(a + b)² = a² + b²",
+        "a² + a³ = a⁵",
+        "a² / b² = a / b"
+      ],
+      "correction": "La puissance d’un quotient est le quotient des puissances lorsque le dénominateur est non nul."
+    },
+    {
+      "id": "PUI-024",
+      "type": "qcm",
+      "enonce": "Quelle expression est égale à 8² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "2⁶"
+      },
+      "propositions": [
+        "2⁶",
+        "2⁴",
+        "4³",
+        "16²"
+      ],
+      "correction": "8 = 2³, donc (2³)² = 2⁶."
+    }
+  ]
+}

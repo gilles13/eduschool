@@ -866,10 +866,10 @@
       "presentation": {
         "type": "mot_a_trou",
         "masques": {
-          "distributivité": "d _ _ _ _ _ _ _ _ _ _ é",
-          "factorisation": "f _ _ _ _ _ _ _ _ _ n",
-          "réduction": "r _ _ _ _ _ _ n",
-          "équation": "é _ _ _ _ _ n"
+          "distributivité": "d _ _ _ _ _ _ _ _ _ _ _ _ é",
+          "factorisation": "f _ _ _ _ _ _ _ _ _ _ _ n",
+          "réduction": "r _ _ _ _ _ _ _ n",
+          "équation": "é _ _ _ _ _ _ n"
         }
       },
       "reponse": {
@@ -887,28 +887,28 @@
     {
       "id": "DEV-DOUBLE-MOT-MASQUE",
       "type": "qcm",
-      "enonce": "Comment appelle-t-on deux termes qui ont la même partie littérale et que l’on peut regrouper lors de la réduction ? Choisis le mot masqué.",
+      "enonce": "Après un développement, quelle opération consiste à regrouper les termes de même nature pour simplifier l’expression ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
         "masques": {
-          "termes semblables": "T________S",
-          "produits croisés": "P________S",
-          "facteurs communs": "F________S",
-          "identités remarquables": "I________S"
+          "réduction": "R________N",
+          "développement": "D________T",
+          "factorisation": "F________N",
+          "distributivité": "D________É"
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
       "reponse": {
         "mode": "editoriale",
-        "valeur": "termes semblables"
+        "valeur": "réduction"
       },
       "propositions": [
-        "termes semblables",
-        "produits croisés",
-        "facteurs communs",
-        "identités remarquables"
+        "réduction",
+        "développement",
+        "factorisation",
+        "distributivité"
       ],
-      "correction": "Des termes semblables ont la même partie littérale. Après la double distributivité, on regroupe par exemple 8𝑥 et 3𝑥 pour obtenir 11𝑥."
+      "correction": "La réduction consiste à regrouper les termes de même nature. Après la double distributivité, on peut par exemple regrouper 8𝑥 et 3𝑥 pour obtenir 11𝑥."
     },
     {
       "id": "DEV-DOUBLE-BOITE-PRODUIT",

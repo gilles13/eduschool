@@ -10,6 +10,39 @@ Avant tout patch : relire ce guide, chercher d'abord la donnee existante et
 n'ajouter que le comportement generique strictement necessaire. Pas de seconde
 source de verite, pas de duplication editoriale, pas d'usine a gaz.
 
+## Principe fondamental : les Bulletins officiels sont la seule source de verite des programmes
+
+**La seule source de verite sur les programmes scolaires est constituee par les Bulletins officiels (BO) qui posent ces programmes.**
+
+Les CSV de programmes d'eduschool sont une transcription structuree et sourcee des BO. Les identifiants internes (`programme_id`, `item_id`, `notion_id`, etc.), les familles, les regroupements et les relations techniques servent a stocker, relier et exploiter cette transcription ; ils ne creent jamais a eux seuls une connaissance, une progression ou une relation officielle.
+
+Toute information qui ne provient pas explicitement du BO doit etre distinguee de la transcription officielle : organisation editoriale, rapprochement entre notions, niveau d'introduction pratique, progression proposee, deduction ou autre interpretation d'eduschool. Lorsqu'elle apparait dans un rendu, sa nature doit etre explicitement mentionnee. Une ambiguite ou une lacune du BO ou de sa transcription reste visible ; elle n'est jamais comblee silencieusement par une convention interne, un ancien programme ou une correspondance textuelle.
+
+Avant toute evolution du SI qui touche aux programmes, notions ou progressions :
+
+1. identifier le BO de reference et la source precise ;
+2. auditer ce qui est effectivement transcrit, sans corriger pendant le diagnostic ;
+3. separer la transcription du BO des constructions editoriales ou techniques d'eduschool ;
+4. seulement ensuite modifier les CSV ou le code, en conservant cette distinction dans les controles et les rendus.
+
+Une cle technique peut identifier une donnee officielle ; **elle ne constitue jamais la preuve que cette donnee ou cette relation est officielle**.
+
+### Statut des rattachements de notions
+
+`inst/editorial/mathematiques/editorial_notions.csv` et ses identifiants `MAT_*` constituent un referentiel interne eduschool. `inst/editorial/mathematiques/editorial_notions_items.csv` constitue egalement une **construction editoriale eduschool** : il rapproche des notions internes et des items officiels (DOMAINE ou THEME) pour faciliter l'exploration. Ce fichier ne transcrit pas une relation officielle du BO et ne doit jamais etre presente comme telle.
+
+Un rattachement actif ne doit pas pointer vers un attendu Eduscol ni vers un ancien programme pour combler un trou du programme de reference courant. Lorsqu'un BO recent est transcrit mais que le rapprochement avec une notion interne n'a pas ete relu, **laisser le trou visible**. La reconstruction ulterieure d'une progression doit conserver la reference precise au BO qui l'etaye et annoncer explicitement la part d'organisation ou d'interpretation eduschool dans le rendu.
+
+Les recherches textuelles (`grepl()`, mots-cles, similarite de libelles) ne prouvent jamais un rattachement. Elles ne sont admises qu'en dernier recours comme aide exploratoire ; tout rendu qui en depend doit emettre un `warning()` explicite et ne doit pas persister le resultat comme verite du programme.
+
+## Temporalite des programmes
+
+Eduschool ne modelise pas l application progressive des nouveaux programmes. Des qu un nouveau BO est retenu, le projet fait le choix editorial de le presenter comme pleinement applicable a tous les niveaux concernes. Ce choix doit etre explicitement annonce dans les rendus. Il ne modifie pas le contenu officiel : le BO reste la seule source de verite.
+
+## Frontiere officiel / editorial
+
+Les noms de fichiers rendent cette frontiere visible lorsque leur statut est univoque : `officiel_*` pour une transcription du BO, `editorial_*` pour une construction eduschool. Les registres techniques mixtes conservent un nom neutre. Une notion eduschool peut etre rapprochee d un DOMAINE ou d un THEME officiel par `editorial_notions_items.csv` ; cette relation est toujours editoriale, meme si sa cible est officielle.
+
 ## 1. Finalité
 
 eduschool est un projet R libre, gratuit et ouvert, destiné à aider les élèves et leurs proches à comprendre les mathématiques. Il propose plusieurs chemins pour apprendre, relie les notions et valorise les raisonnements. **Toujours ouvrir des portes.** L'erreur est une occasion de progresser, pas un échec.
@@ -47,22 +80,24 @@ Pas de réimportation de l'ancien moteur ni de l'ancien SI. Une abstraction nouv
 
 ### Convention de nommage des notions
 
-- Une **notion** est nommée au singulier dans son identifiant et dans son libellé : `equation_produit_nul`, « Équation et produit nul ».
-- Une **famille** peut conserver un nom collectif ou pluriel lorsqu'il décrit naturellement un ensemble de notions : `equations`, « Équations ».
-- Appliquer cette convention dès la création d'une notion et conserver le même identifiant dans le dossier `inst/notions/`, le `notion_id` du JSON et les référentiels. Ne pas introduire simultanément des variantes singulier/pluriel d'une même notion.
+- Un identifiant editorial de notion suit autant que possible la forme `<objet>_<specialisation>`. Lorsqu'un meme objet porte plusieurs notions, utiliser un prefixe commun et stable afin que les notions apparentees soient naturellement regroupees par tri alphabetique : `fractions_addition`, `fractions_comparaison`, `fractions_problemes`.
+- Le prefixe peut etre collectif ou pluriel lorsqu'il designe naturellement l'objet commun, par exemple `fractions_*`. Il facilite la lecture, la recherche et le classement ; **il ne definit jamais l'appartenance a une famille**. Les appartenances restent portees explicitement par `editorial_familles_notions.csv`, et une notion peut appartenir a plusieurs familles.
+- Ne pas ajouter un prefixe uniquement pour reproduire le nom d'une famille. Une notion dont l'identifiant est deja autonome, clair et non ambigu peut le conserver (`pythagore`, `ratio`, `intervalles_reels`, `racine_carree`). Le nommage aide les humains ; les relations du SI portent les rattachements et permettent aux familles d'agreger des notions aux noms differents.
+- Choisir un nouvel identifiant comme s'il devait rester longtemps : avant de creer une notion, examiner les identifiants voisins et reutiliser leur convention. Appliquer ensuite exactement le meme identifiant dans le dossier `inst/notions/`, le `notion_id` du JSON et les referentiels pratiques qui decrivent cette notion. Les identifiants `MAT_*` du referentiel editorial des programmes constituent une autre couche et ne doivent pas etre confondus avec cet identifiant pratique.
+- Le libelle humain reste libre de suivre la grammaire naturelle du francais ; la convention technique de l'identifiant ne doit pas deformer le libelle.
 
 ## 3. Contrat pédagogique des quiz
 
 - Les quiz contiennent **uniquement des questions corrigibles automatiquement et sans ambiguïté**. Reformuler ou écarter une question libre qui ne satisfait pas ce critère ; ne pas ajouter de correction automatique de texte libre.
 - Chaque QCM doit avoir **une seule réponse mathématiquement correcte**. Avant toute migration ou génération transversale, auditer les distracteurs : deux écritures différentes d’une même fraction (ex. `1/2` et `2/4`) ne peuvent pas être proposées comme deux réponses distinctes dans un QCM à réponse unique. Chaque distracteur doit être explicitement faux dans les conditions de l'énoncé, y compris après tirage des paramètres. Vérifier les équivalences mathématiques, pas seulement l'identité des chaînes de caractères.
 - Favoriser la **diversité des raisonnements** plutôt que plusieurs formulations du même calcul.
-- Une notion est un apprentissage, pas un format de question. Éviter les doublons artificiels ; ne supprimer aucune question historique lors d'un regroupement.
+- Une notion est un apprentissage, pas un format de question. Éviter les doublons artificiels. Les vestiges de migration et les données mortes ne restent pas dans les banques actives.
 - Autoriser une correction libre et directe : les étapes « Je vois / Je sais » sont facultatives.
 - Les questions portant sur une droite graduée doivent montrer une véritable droite dans les quiz HTML et PDF ; la figure ne révèle pas la réponse.
 - Un quiz transversal `fractions` mélange les questions de toutes les notions de fractions sans dupliquer les banques.
 - **Contrat impératif : questions de vocabulaire « mot à trou » et « mot masqué »**. Ce sont deux présentations de **QCM à propositions plausibles**, jamais des champs de saisie. L’élève sélectionne une proposition ; la correction est automatique par le moteur QCM existant. Ne jamais proposer de réponse libre, de reconnaissance textuelle ou un nouveau moteur de correction pour ces exercices.
-  - **Mot à trou** : quelques lettres du terme recherché restent visibles et les emplacements cachés correspondent **exactement** aux lettres manquantes. Exemple pour « rayon » : `r _ _ _ n`.
-  - **Mot masqué** : seules des lettres-indices éventuelles restent visibles ; le trait central a une **longueur graphique fixe, sans rapport avec le nombre de caractères**. Exemple pour « hypoténuse » : `H________E`. Afficher obligatoirement l’avertissement : « La longueur du trait ne correspond pas au nombre de caractères du mot recherché. »
+  - **Mot à trou** : quelques lettres du terme recherché restent visibles et les emplacements cachés correspondent **exactement** aux lettres manquantes. Exemple pour « rayon » : `r _ _ _ n`. Le contrôle automatisé vérifie le nombre total de positions et la position de chaque lettre visible pour toutes les propositions.
+  - **Mot masqué** : seules des lettres-indices éventuelles restent visibles ; le trait central a une **longueur graphique fixe, sans rapport avec le nombre de caractères**. Exemple pour « hypoténuse » : `H________E`. Afficher obligatoirement l’avertissement : « La longueur du trait ne correspond pas au nombre de caractères du mot recherché. » Utiliser un terme mathématique unique, pas une expression de plusieurs mots.
   - Dans **les deux variantes**, fournir plusieurs **propositions de mots mathématiques plausibles**, en lien avec la question et les confusions pédagogiques possibles. La question est affichée **une seule fois**, puis chaque proposition est affichée sous sa propre forme masquée (ne pas montrer les mots en clair avant correction). Le mot réel est conservé comme valeur interne pour la correction automatique. Les représentations affichées doivent permettre de distinguer les propositions : ne jamais produire des choix visuellement identiques ou une question ambiguë. Une seule proposition doit répondre à la définition posée. La correction révèle le mot choisi, la bonne réponse et une explication utile.
   - Conserver ces deux types lors des migrations de questions et vérifier leur présence dans les banques historiques avant de conclure qu’ils n’existaient pas. **Ne pas confondre** avec un nombre manquant dans une équation ni avec des mots masqués dans une correction.
 - Préserver les corrections pertinentes, notamment « Je vois / Je sais / J'en déduis » et « Je calcule » quand cela apporte réellement quelque chose. Ne pas imposer artificiellement ces étapes.
@@ -93,13 +128,13 @@ Cette procédure doit permettre de traiter rapidement une nouvelle famille analo
 
 ### Niveau affiché dans les quiz
 
-L'en-tête d'un quiz affiche son niveau à partir de `inst/referentiels/familles_notions.csv`, sans liste parallèle dans le code. Pour une notion, afficher son niveau d'introduction. Pour une famille transversale couvrant plusieurs niveaux, afficher la plage du premier au dernier niveau, par exemple `6E à 3E`. Si `produire(..., niveau = ...)` demande explicitement un niveau, afficher ce niveau demandé. Ne jamais afficher un niveau absent ou `NA`.
+L'en-tête d'un quiz affiche son niveau à partir de `inst/referentiels/editorial_familles_notions.csv`, sans liste parallèle dans le code. Pour une notion, afficher son niveau d'introduction. Pour une famille transversale couvrant plusieurs niveaux, afficher la plage du premier au dernier niveau, par exemple `6E à 3E`. Si `produire(..., niveau = ...)` demande explicitement un niveau, afficher ce niveau demandé. Ne jamais afficher un niveau absent ou `NA`.
 
 ## 4. Contrat impératif de livraison des patchs
 
 **RTM / RTFM avant tout patch.**
 
-1. Lire **ce guide**, puis les documents techniques pertinents présents dans `documentation/`, en particulier `EXPERIENCE-MATHS.md` et `MIGRATION-PILOTES.md` tant qu'ils existent.
+1. Lire **ce guide**, puis les documents techniques pertinents présents dans `documentation/`, en particulier `EXPERIENCE-MATHS.md`.
 2. Obtenir les **versions actuelles exactes** de tous les fichiers à modifier, ainsi que les informations nécessaires sur leur emplacement. Les anciennes archives, précédents patchs et souvenirs ne prouvent pas l'état du dépôt.
 3. Vérifier les chemins, produire un **patch Git minimal**, puis effectuer `git apply --check` et `git apply` sur une copie conforme des fichiers reçus. Contrôler les modifications et exécuter les validations possibles (JSON, tests R, rendus) ; ne pas annoncer de tests non réalisés.
 4. Distinguer clairement **« vérifié sur les fichiers transmis »** et **« vérifié sur le dépôt courant complet »**. Si la copie est incomplète, l'indiquer et demander les fichiers manquants **avant** de produire le patch.
@@ -148,7 +183,7 @@ Le travail en cours porte sur la diversité des questions, les quiz transversaux
 
 ## 11. Familles de notions (regroupement minimal)
 
-- `inst/referentiels/familles_notions.csv` associe explicitement `famille;notion`.
+- `inst/referentiels/editorial_familles_notions.csv` associe explicitement `famille;notion`.
   Pas de deduction fragile depuis les noms des dossiers ni de copie des JSON.
 - `questions("fractions")` melange les banques des membres declares dans le CSV.
 - `produire("fractions", "quiz")` genere uniquement le quiz transversal.
@@ -245,3 +280,29 @@ editorial local a la famille de questions, pas une mesure universelle de
 difficulte. Elle peut etre modifiee simplement apres retour d'usage. Les
 scripts de fabrication qui explorent ou caracterisent les combinaisons restent
 hors du package ; le JSON ne conserve que les variantes relues et retenues.
+
+## RETEX — typographie de l'inconnue dans les quiz (octobre 2026)
+
+- Dans tout texte destine a l'eleve, la variable mathematique `x` s'affiche avec le caractere italique mathematique `\u1D465` (`𝑥`). Le `x` ASCII est reserve aux champs de calcul du moteur (`expression`, `source`, `*_expression`, etc.).
+- Le signe de multiplication s'affiche `×`, jamais avec la lettre `x`.
+
+## Regle d'or Ryacas (octobre 2026)
+
+Avant tout ajout de code mathematique dans eduschool, verifier systematiquement
+si Ryacas/Yacas peut faire le plus gros du travail. Lire et tester son API et sa
+documentation avant de reimplementer un calcul, une transformation, une
+simplification, un controle ou une representation mathematique. La complexite
+mathematique doit autant que possible rester dans le moteur de calcul formel ;
+eduschool orchestre le contenu pedagogique et reste simple.
+
+Pour l'affichage d'une expression canonique sans l'evaluer, utiliser Yacas :
+`TeXForm(Hold(...))`. Une expression mathematique derivable n'est pas stockee
+une seconde fois sous forme d'affichage. Les variantes declarent seulement les
+noms de leurs parametres mathematiques dans `presentation.math`; le moteur
+demande leur TeX a Ryacas. Une representation editoriale distincte reste
+legitime lorsqu'elle apporte une information pedagogique qui ne se deduit pas
+de l'expression canonique.
+
+## Parametres derives par Yacas (octobre 2026)
+
+Une question a variantes peut declarer des `calculs` nommes executes par Ryacas apres le choix de la variante. Ils servent a deriver des faits mathematiques necessaires a la reponse ou a la correction sans les dupliquer dans chaque variante. Les calculs sont evalues dans leur ordre de declaration et peuvent reutiliser les valeurs deja derivees. `format = "math_hold"` compose une expression mathematique pour l'affichage sans l'evaluer ; `format = "liste_entiers"` ne fait que presenter une liste d'entiers calculee par Yacas. Le JSON conserve les donnees initiales relues ; Yacas calcule les valeurs derivees et eduschool orchestre leur presentation pedagogique.

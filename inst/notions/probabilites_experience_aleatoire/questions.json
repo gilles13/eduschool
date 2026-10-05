@@ -1,0 +1,621 @@
+{
+  "notion_id": "probabilites_experience_aleatoire",
+  "questions": [
+    {
+      "id": "PROBA-BASE-001",
+      "type": "qcm",
+      "enonce": "Dans une expérience équiprobable, [[favorables]] issues sur [[total]] réalisent l’événement A. Quelle est P(A) ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "En équiprobabilité, P(A) = nombre d’issues favorables / nombre total d’issues.",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "1",
+            "total": "4",
+            "bonne": "1/4",
+            "d1": "3/4",
+            "d2": "1/5",
+            "d3": "4/1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "2",
+            "total": "5",
+            "bonne": "2/5",
+            "d1": "3/5",
+            "d2": "2/6",
+            "d3": "5/2"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "3",
+            "total": "6",
+            "bonne": "1/2",
+            "d1": "3/6",
+            "d2": "3/7",
+            "d3": "6/3"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "4",
+            "total": "7",
+            "bonne": "4/7",
+            "d1": "3/7",
+            "d2": "4/8",
+            "d3": "7/4"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "5",
+            "total": "8",
+            "bonne": "5/8",
+            "d1": "3/8",
+            "d2": "5/9",
+            "d3": "8/5"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "6",
+            "total": "9",
+            "bonne": "2/3",
+            "d1": "3/9",
+            "d2": "6/10",
+            "d3": "9/6"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "7",
+            "total": "10",
+            "bonne": "7/10",
+            "d1": "3/10",
+            "d2": "7/11",
+            "d3": "10/7"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "8",
+            "total": "11",
+            "bonne": "8/11",
+            "d1": "3/11",
+            "d2": "8/12",
+            "d3": "11/8"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "9",
+            "total": "12",
+            "bonne": "3/4",
+            "d1": "3/12",
+            "d2": "9/13",
+            "d3": "12/9"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "1",
+            "total": "4",
+            "bonne": "1/4",
+            "d1": "3/4",
+            "d2": "1/5",
+            "d3": "4/1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "3",
+            "total": "5",
+            "bonne": "3/5",
+            "d1": "2/5",
+            "d2": "3/6",
+            "d3": "5/3"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "2",
+            "total": "6",
+            "bonne": "1/3",
+            "d1": "4/6",
+            "d2": "2/7",
+            "d3": "6/2"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "1",
+            "total": "7",
+            "bonne": "1/7",
+            "d1": "6/7",
+            "d2": "1/8",
+            "d3": "7/1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "7",
+            "total": "8",
+            "bonne": "7/8",
+            "d1": "1/8",
+            "d2": "7/9",
+            "d3": "8/7"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "7",
+            "total": "9",
+            "bonne": "7/9",
+            "d1": "2/9",
+            "d2": "7/10",
+            "d3": "9/7"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "7",
+            "total": "10",
+            "bonne": "7/10",
+            "d1": "3/10",
+            "d2": "7/11",
+            "d3": "10/7"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "favorables": "7",
+            "total": "11",
+            "bonne": "7/11",
+            "d1": "4/11",
+            "d2": "7/12",
+            "d3": "11/7"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "7",
+            "total": "12",
+            "bonne": "7/12",
+            "d1": "5/12",
+            "d2": "7/13",
+            "d3": "12/7"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "1",
+            "total": "4",
+            "bonne": "1/4",
+            "d1": "3/4",
+            "d2": "1/5",
+            "d3": "4/1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "4",
+            "total": "5",
+            "bonne": "4/5",
+            "d1": "1/5",
+            "d2": "4/6",
+            "d3": "5/4"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "1",
+            "total": "6",
+            "bonne": "1/6",
+            "d1": "5/6",
+            "d2": "1/7",
+            "d3": "6/1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "4",
+            "total": "7",
+            "bonne": "4/7",
+            "d1": "3/7",
+            "d2": "4/8",
+            "d3": "7/4"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "2",
+            "total": "8",
+            "bonne": "1/4",
+            "d1": "6/8",
+            "d2": "2/9",
+            "d3": "8/2"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "8",
+            "total": "9",
+            "bonne": "8/9",
+            "d1": "1/9",
+            "d2": "8/10",
+            "d3": "9/8"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "7",
+            "total": "10",
+            "bonne": "7/10",
+            "d1": "3/10",
+            "d2": "7/11",
+            "d3": "10/7"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "6",
+            "total": "11",
+            "bonne": "6/11",
+            "d1": "5/11",
+            "d2": "6/12",
+            "d3": "11/6"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "5",
+            "total": "12",
+            "bonne": "5/12",
+            "d1": "7/12",
+            "d2": "5/13",
+            "d3": "12/5"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "1",
+            "total": "4",
+            "bonne": "1/4",
+            "d1": "3/4",
+            "d2": "1/5",
+            "d3": "4/1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "1",
+            "total": "5",
+            "bonne": "1/5",
+            "d1": "4/5",
+            "d2": "1/6",
+            "d3": "5/1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "5",
+            "total": "6",
+            "bonne": "5/6",
+            "d1": "1/6",
+            "d2": "5/7",
+            "d3": "6/5"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "1",
+            "total": "7",
+            "bonne": "1/7",
+            "d1": "6/7",
+            "d2": "1/8",
+            "d3": "7/1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "4",
+            "total": "8",
+            "bonne": "1/2",
+            "d1": "4/8",
+            "d2": "4/9",
+            "d3": "8/4"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "1",
+            "total": "9",
+            "bonne": "1/9",
+            "d1": "8/9",
+            "d2": "1/10",
+            "d3": "9/1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "favorables": "7",
+            "total": "10",
+            "bonne": "7/10",
+            "d1": "3/10",
+            "d2": "7/11",
+            "d3": "10/7"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "5",
+            "total": "11",
+            "bonne": "5/11",
+            "d1": "6/11",
+            "d2": "5/12",
+            "d3": "11/5"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "3",
+            "total": "12",
+            "bonne": "1/4",
+            "d1": "9/12",
+            "d2": "3/13",
+            "d3": "12/3"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "1",
+            "total": "4",
+            "bonne": "1/4",
+            "d1": "3/4",
+            "d2": "1/5",
+            "d3": "4/1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "2",
+            "total": "5",
+            "bonne": "2/5",
+            "d1": "3/5",
+            "d2": "2/6",
+            "d3": "5/2"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "4",
+            "total": "6",
+            "bonne": "2/3",
+            "d1": "2/6",
+            "d2": "4/7",
+            "d3": "6/4"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "4",
+            "total": "7",
+            "bonne": "4/7",
+            "d1": "3/7",
+            "d2": "4/8",
+            "d3": "7/4"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "6",
+            "total": "8",
+            "bonne": "3/4",
+            "d1": "2/8",
+            "d2": "6/9",
+            "d3": "8/6"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "2",
+            "total": "9",
+            "bonne": "2/9",
+            "d1": "7/9",
+            "d2": "2/10",
+            "d3": "9/2"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "7",
+            "total": "10",
+            "bonne": "7/10",
+            "d1": "3/10",
+            "d2": "7/11",
+            "d3": "10/7"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "4",
+            "total": "11",
+            "bonne": "4/11",
+            "d1": "7/11",
+            "d2": "4/12",
+            "d3": "11/4"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "1",
+            "total": "12",
+            "bonne": "1/12",
+            "d1": "11/12",
+            "d2": "1/13",
+            "d3": "12/1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "1",
+            "total": "4",
+            "bonne": "1/4",
+            "d1": "3/4",
+            "d2": "1/5",
+            "d3": "4/1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "3",
+            "total": "5",
+            "bonne": "3/5",
+            "d1": "2/5",
+            "d2": "3/6",
+            "d3": "5/3"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "3",
+            "total": "6",
+            "bonne": "1/2",
+            "d1": "3/6",
+            "d2": "3/7",
+            "d3": "6/3"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "1",
+            "total": "7",
+            "bonne": "1/7",
+            "d1": "6/7",
+            "d2": "1/8",
+            "d3": "7/1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "favorables": "1",
+            "total": "8",
+            "bonne": "1/8",
+            "d1": "7/8",
+            "d2": "1/9",
+            "d3": "8/1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PROBA-BASE-002",
+      "type": "qcm",
+      "enonce": "Qu’est-ce qu’une issue ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Un résultat possible d’une expérience aléatoire"
+      },
+      "propositions": [
+        "Un résultat possible d’une expérience aléatoire",
+        "Une expérience certaine",
+        "Une moyenne",
+        "Un événement contenant toujours plusieurs résultats"
+      ],
+      "correction": "Une issue est un résultat élémentaire possible."
+    },
+    {
+      "id": "PROBA-BASE-003",
+      "type": "qcm",
+      "enonce": "Quelle valeur peut être une probabilité ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0,35"
+      },
+      "propositions": [
+        "0,35",
+        "-0,2",
+        "1,4",
+        "135 %"
+      ],
+      "correction": "Une probabilité est comprise entre 0 et 1."
+    },
+    {
+      "id": "PROBA-BASE-004",
+      "type": "qcm",
+      "enonce": "Un événement impossible a pour probabilité…",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "0"
+      },
+      "propositions": [
+        "0",
+        "1",
+        "1/2",
+        "-1"
+      ],
+      "correction": "Impossible signifie qu’aucune issue ne réalise l’événement."
+    }
+  ]
+}

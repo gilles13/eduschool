@@ -1,0 +1,605 @@
+{
+  "notion_id": "fonctions_lineaire",
+  "questions": [
+    {
+      "id": "FLIN-001",
+      "type": "qcm",
+      "enonce": "Soit f(𝑥) = [[a]]𝑥. Quelle est l’image de [[x]] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Pour une fonction linéaire f(𝑥)=a𝑥, on multiplie l’antécédent par a.",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "-4",
+            "bonne": "16",
+            "d1": "17",
+            "d2": "15",
+            "d3": "18"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "-3",
+            "bonne": "9",
+            "d1": "10",
+            "d2": "8",
+            "d3": "11"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-2",
+            "x": "-2",
+            "bonne": "4",
+            "d1": "5",
+            "d2": "3",
+            "d3": "6"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-1",
+            "x": "-1",
+            "bonne": "1",
+            "d1": "2",
+            "d2": "0",
+            "d3": "3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "x": "1",
+            "bonne": "3",
+            "d1": "4",
+            "d2": "2",
+            "d3": "5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "x": "2",
+            "bonne": "8",
+            "d1": "9",
+            "d2": "7",
+            "d3": "10"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "x": "3",
+            "bonne": "15",
+            "d1": "16",
+            "d2": "14",
+            "d3": "17"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "4",
+            "bonne": "-16",
+            "d1": "-15",
+            "d2": "-17",
+            "d3": "-14"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "-4",
+            "bonne": "12",
+            "d1": "13",
+            "d2": "11",
+            "d3": "14"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-2",
+            "x": "-3",
+            "bonne": "6",
+            "d1": "7",
+            "d2": "5",
+            "d3": "8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-1",
+            "x": "-2",
+            "bonne": "2",
+            "d1": "3",
+            "d2": "1",
+            "d3": "4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "x": "-1",
+            "bonne": "-2",
+            "d1": "-1",
+            "d2": "-3",
+            "d3": "0"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "x": "1",
+            "bonne": "4",
+            "d1": "5",
+            "d2": "3",
+            "d3": "6"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "x": "2",
+            "bonne": "10",
+            "d1": "11",
+            "d2": "9",
+            "d3": "12"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "3",
+            "bonne": "-12",
+            "d1": "-11",
+            "d2": "-13",
+            "d3": "-10"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "4",
+            "bonne": "-12",
+            "d1": "-11",
+            "d2": "-13",
+            "d3": "-10"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-2",
+            "x": "-4",
+            "bonne": "8",
+            "d1": "9",
+            "d2": "7",
+            "d3": "10"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-1",
+            "x": "-3",
+            "bonne": "3",
+            "d1": "4",
+            "d2": "2",
+            "d3": "5"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "x": "-2",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "x": "-1",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "x": "1",
+            "bonne": "5",
+            "d1": "6",
+            "d2": "4",
+            "d3": "7"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "2",
+            "bonne": "-8",
+            "d1": "-7",
+            "d2": "-9",
+            "d3": "-6"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "3",
+            "bonne": "-9",
+            "d1": "-8",
+            "d2": "-10",
+            "d3": "-7"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-2",
+            "x": "4",
+            "bonne": "-8",
+            "d1": "-7",
+            "d2": "-9",
+            "d3": "-6"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-1",
+            "x": "-4",
+            "bonne": "4",
+            "d1": "5",
+            "d2": "3",
+            "d3": "6"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "x": "-3",
+            "bonne": "-6",
+            "d1": "-5",
+            "d2": "-7",
+            "d3": "-4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "x": "-2",
+            "bonne": "-6",
+            "d1": "-5",
+            "d2": "-7",
+            "d3": "-4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "x": "-1",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "1",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "2",
+            "bonne": "-6",
+            "d1": "-5",
+            "d2": "-7",
+            "d3": "-4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "-2",
+            "x": "3",
+            "bonne": "-6",
+            "d1": "-5",
+            "d2": "-7",
+            "d3": "-4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-1",
+            "x": "4",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "x": "-4",
+            "bonne": "-8",
+            "d1": "-7",
+            "d2": "-9",
+            "d3": "-6"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "x": "-3",
+            "bonne": "-9",
+            "d1": "-8",
+            "d2": "-10",
+            "d3": "-7"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "x": "-2",
+            "bonne": "-8",
+            "d1": "-7",
+            "d2": "-9",
+            "d3": "-6"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "x": "-1",
+            "bonne": "-5",
+            "d1": "-4",
+            "d2": "-6",
+            "d3": "-3"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "1",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-2",
+            "x": "2",
+            "bonne": "-4",
+            "d1": "-3",
+            "d2": "-5",
+            "d3": "-2"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-1",
+            "x": "3",
+            "bonne": "-3",
+            "d1": "-2",
+            "d2": "-4",
+            "d3": "-1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "x": "4",
+            "bonne": "8",
+            "d1": "9",
+            "d2": "7",
+            "d3": "10"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "x": "-4",
+            "bonne": "-12",
+            "d1": "-11",
+            "d2": "-13",
+            "d3": "-10"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "x": "-3",
+            "bonne": "-12",
+            "d1": "-11",
+            "d2": "-13",
+            "d3": "-10"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "x": "-2",
+            "bonne": "-10",
+            "d1": "-9",
+            "d2": "-11",
+            "d3": "-8"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-4",
+            "x": "-1",
+            "bonne": "4",
+            "d1": "5",
+            "d2": "3",
+            "d3": "6"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "-3",
+            "x": "0",
+            "bonne": "0",
+            "d1": "1",
+            "d2": "-1",
+            "d3": "2"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "FLIN-002",
+      "type": "qcm",
+      "enonce": "Quelle propriété graphique caractérise une fonction linéaire ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Sa représentation est une droite passant par l’origine."
+      },
+      "propositions": [
+        "Sa représentation est une droite passant par l’origine.",
+        "Sa représentation est toujours horizontale.",
+        "Sa représentation est une parabole.",
+        "Sa représentation est une droite qui ne passe jamais par l’origine."
+      ],
+      "correction": "Une fonction linéaire traduit une proportionnalité ; sa droite passe donc par l’origine."
+    },
+    {
+      "id": "FLIN-003",
+      "type": "qcm",
+      "enonce": "Dans f(𝑥)=3𝑥, que représente 3 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Le coefficient de proportionnalité."
+      },
+      "propositions": [
+        "Le coefficient de proportionnalité.",
+        "L’ordonnée à l’origine.",
+        "Un antécédent obligatoire.",
+        "L’image de 0."
+      ],
+      "correction": "Une fonction linéaire est la traduction fonctionnelle d’une proportionnalité."
+    }
+  ]
+}

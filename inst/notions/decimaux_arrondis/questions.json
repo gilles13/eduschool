@@ -1,0 +1,120 @@
+{
+  "notion_id": "decimaux_arrondis",
+  "questions": [
+    {
+      "id": "ARRONDIS_DECIMAUX-001",
+      "type": "qcm",
+      "enonce": "Quel est l’arrondi de 8,47 au dixième ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "8,5"
+      },
+      "propositions": [
+        "8,5",
+        "8,4",
+        "8,47",
+        "8,0"
+      ],
+      "correction": "Le chiffre des centièmes est 7 : on augmente le dixième."
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-002",
+      "type": "qcm",
+      "enonce": "Quel est l’arrondi de 12,349 au centième ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "12,35"
+      },
+      "propositions": [
+        "12,35",
+        "12,34",
+        "12,3",
+        "12,349"
+      ],
+      "correction": "Le chiffre des millièmes est 9 : on augmente le centième."
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-003",
+      "type": "qcm",
+      "enonce": "Un prix vaut 6,12 €. Quel est son arrondi à l’euro le plus proche ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "6 €"
+      },
+      "propositions": [
+        "6 €",
+        "7 €",
+        "6,1 €",
+        "6,12 €"
+      ],
+      "correction": "Le chiffre des dixièmes est 1 : l’entier reste 6."
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-004",
+      "type": "qcm",
+      "enonce": "Quel est l’arrondi de 0,995 au centième ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1,00"
+      },
+      "propositions": [
+        "1,00",
+        "0,99",
+        "0,995",
+        "0,90"
+      ],
+      "correction": "Le millième est 5 : le report fait passer 0,99 à 1,00."
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-MOT_A_TROU",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on une valeur approchée obtenue à une précision demandée ? Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "arrondi": "a _ _ _ _ _ i",
+          "encadrement": "e _ _ _ _ _ _ _ _ _ t",
+          "décomposition": "d _ _ _ _ _ _ _ _ _ _ _ n",
+          "quotient": "q _ _ _ _ _ _ t"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "arrondi"
+      },
+      "propositions": [
+        "arrondi",
+        "encadrement",
+        "décomposition",
+        "quotient"
+      ],
+      "correction": "Un arrondi est une approximation à la précision choisie."
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-MOT_MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on une valeur approchée obtenue à une précision demandée ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "arrondi": "A________I",
+          "encadrement": "E________T",
+          "décomposition": "D________N",
+          "quotient": "Q________T"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "arrondi"
+      },
+      "propositions": [
+        "arrondi",
+        "encadrement",
+        "décomposition",
+        "quotient"
+      ],
+      "correction": "Un arrondi est une approximation à la précision choisie."
+    }
+  ]
+}

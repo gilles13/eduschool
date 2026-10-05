@@ -27,15 +27,15 @@
       "variantes": [
         {
           "parametres": {
-            "affichage_source": "4x + 4",
+            "affichage_source": "4𝑥 + 4",
             "source": "4*x+4",
-            "bonne": "2(2x + 2)",
+            "bonne": "2(2𝑥 + 2)",
             "bonne_expression": "2*(2*x+2)",
-            "d1": "2(2x + 4)",
+            "d1": "2(2𝑥 + 4)",
             "d1_expression": "2*(2*x+4)",
-            "d2": "4(x + 2)",
+            "d2": "4(𝑥 + 2)",
             "d2_expression": "4*(x+2)",
-            "d3": "2(2x + 3)",
+            "d3": "2(2𝑥 + 3)",
             "d3_expression": "2*(2*x+3)",
             "facteur": "2"
           },
@@ -43,15 +43,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 6",
+            "affichage_source": "4𝑥 + 6",
             "source": "4*x+6",
-            "bonne": "2(2x + 3)",
+            "bonne": "2(2𝑥 + 3)",
             "bonne_expression": "2*(2*x+3)",
-            "d1": "2(2x + 6)",
+            "d1": "2(2𝑥 + 6)",
             "d1_expression": "2*(2*x+6)",
-            "d2": "4(x + 3)",
+            "d2": "4(𝑥 + 3)",
             "d2_expression": "4*(x+3)",
-            "d3": "2(2x + 4)",
+            "d3": "2(2𝑥 + 4)",
             "d3_expression": "2*(2*x+4)",
             "facteur": "2"
           },
@@ -59,15 +59,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 8",
+            "affichage_source": "4𝑥 + 8",
             "source": "4*x+8",
-            "bonne": "2(2x + 4)",
+            "bonne": "2(2𝑥 + 4)",
             "bonne_expression": "2*(2*x+4)",
-            "d1": "2(2x + 8)",
+            "d1": "2(2𝑥 + 8)",
             "d1_expression": "2*(2*x+8)",
-            "d2": "4(x + 4)",
+            "d2": "4(𝑥 + 4)",
             "d2_expression": "4*(x+4)",
-            "d3": "2(2x + 5)",
+            "d3": "2(2𝑥 + 5)",
             "d3_expression": "2*(2*x+5)",
             "facteur": "2"
           },
@@ -75,15 +75,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 10",
+            "affichage_source": "4𝑥 + 10",
             "source": "4*x+10",
-            "bonne": "2(2x + 5)",
+            "bonne": "2(2𝑥 + 5)",
             "bonne_expression": "2*(2*x+5)",
-            "d1": "2(2x + 10)",
+            "d1": "2(2𝑥 + 10)",
             "d1_expression": "2*(2*x+10)",
-            "d2": "4(x + 5)",
+            "d2": "4(𝑥 + 5)",
             "d2_expression": "4*(x+5)",
-            "d3": "2(2x + 6)",
+            "d3": "2(2𝑥 + 6)",
             "d3_expression": "2*(2*x+6)",
             "facteur": "2"
           },
@@ -91,15 +91,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 12",
+            "affichage_source": "4𝑥 + 12",
             "source": "4*x+12",
-            "bonne": "2(2x + 6)",
+            "bonne": "2(2𝑥 + 6)",
             "bonne_expression": "2*(2*x+6)",
-            "d1": "2(2x + 12)",
+            "d1": "2(2𝑥 + 12)",
             "d1_expression": "2*(2*x+12)",
-            "d2": "4(x + 6)",
+            "d2": "4(𝑥 + 6)",
             "d2_expression": "4*(x+6)",
-            "d3": "2(2x + 7)",
+            "d3": "2(2𝑥 + 7)",
             "d3_expression": "2*(2*x+7)",
             "facteur": "2"
           },
@@ -107,15 +107,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 14",
+            "affichage_source": "4𝑥 + 14",
             "source": "4*x+14",
-            "bonne": "2(2x + 7)",
+            "bonne": "2(2𝑥 + 7)",
             "bonne_expression": "2*(2*x+7)",
-            "d1": "2(2x + 14)",
+            "d1": "2(2𝑥 + 14)",
             "d1_expression": "2*(2*x+14)",
-            "d2": "4(x + 7)",
+            "d2": "4(𝑥 + 7)",
             "d2_expression": "4*(x+7)",
-            "d3": "2(2x + 8)",
+            "d3": "2(2𝑥 + 8)",
             "d3_expression": "2*(2*x+8)",
             "facteur": "2"
           },
@@ -123,15 +123,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 16",
+            "affichage_source": "4𝑥 + 16",
             "source": "4*x+16",
-            "bonne": "2(2x + 8)",
+            "bonne": "2(2𝑥 + 8)",
             "bonne_expression": "2*(2*x+8)",
-            "d1": "2(2x + 16)",
+            "d1": "2(2𝑥 + 16)",
             "d1_expression": "2*(2*x+16)",
-            "d2": "4(x + 8)",
+            "d2": "4(𝑥 + 8)",
             "d2_expression": "4*(x+8)",
-            "d3": "2(2x + 9)",
+            "d3": "2(2𝑥 + 9)",
             "d3_expression": "2*(2*x+9)",
             "facteur": "2"
           },
@@ -139,15 +139,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x + 18",
+            "affichage_source": "4𝑥 + 18",
             "source": "4*x+18",
-            "bonne": "2(2x + 9)",
+            "bonne": "2(2𝑥 + 9)",
             "bonne_expression": "2*(2*x+9)",
-            "d1": "2(2x + 18)",
+            "d1": "2(2𝑥 + 18)",
             "d1_expression": "2*(2*x+18)",
-            "d2": "4(x + 9)",
+            "d2": "4(𝑥 + 9)",
             "d2_expression": "4*(x+9)",
-            "d3": "2(2x + 10)",
+            "d3": "2(2𝑥 + 10)",
             "d3_expression": "2*(2*x+10)",
             "facteur": "2"
           },
@@ -155,15 +155,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 4",
+            "affichage_source": "6𝑥 + 4",
             "source": "6*x+4",
-            "bonne": "2(3x + 2)",
+            "bonne": "2(3𝑥 + 2)",
             "bonne_expression": "2*(3*x+2)",
-            "d1": "2(3x + 4)",
+            "d1": "2(3𝑥 + 4)",
             "d1_expression": "2*(3*x+4)",
-            "d2": "6(x + 2)",
+            "d2": "6(𝑥 + 2)",
             "d2_expression": "6*(x+2)",
-            "d3": "2(3x + 3)",
+            "d3": "2(3𝑥 + 3)",
             "d3_expression": "2*(3*x+3)",
             "facteur": "2"
           },
@@ -171,15 +171,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 6",
+            "affichage_source": "6𝑥 + 6",
             "source": "6*x+6",
-            "bonne": "2(3x + 3)",
+            "bonne": "2(3𝑥 + 3)",
             "bonne_expression": "2*(3*x+3)",
-            "d1": "2(3x + 6)",
+            "d1": "2(3𝑥 + 6)",
             "d1_expression": "2*(3*x+6)",
-            "d2": "6(x + 3)",
+            "d2": "6(𝑥 + 3)",
             "d2_expression": "6*(x+3)",
-            "d3": "2(3x + 4)",
+            "d3": "2(3𝑥 + 4)",
             "d3_expression": "2*(3*x+4)",
             "facteur": "2"
           },
@@ -187,15 +187,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 8",
+            "affichage_source": "6𝑥 + 8",
             "source": "6*x+8",
-            "bonne": "2(3x + 4)",
+            "bonne": "2(3𝑥 + 4)",
             "bonne_expression": "2*(3*x+4)",
-            "d1": "2(3x + 8)",
+            "d1": "2(3𝑥 + 8)",
             "d1_expression": "2*(3*x+8)",
-            "d2": "6(x + 4)",
+            "d2": "6(𝑥 + 4)",
             "d2_expression": "6*(x+4)",
-            "d3": "2(3x + 5)",
+            "d3": "2(3𝑥 + 5)",
             "d3_expression": "2*(3*x+5)",
             "facteur": "2"
           },
@@ -203,15 +203,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 10",
+            "affichage_source": "6𝑥 + 10",
             "source": "6*x+10",
-            "bonne": "2(3x + 5)",
+            "bonne": "2(3𝑥 + 5)",
             "bonne_expression": "2*(3*x+5)",
-            "d1": "2(3x + 10)",
+            "d1": "2(3𝑥 + 10)",
             "d1_expression": "2*(3*x+10)",
-            "d2": "6(x + 5)",
+            "d2": "6(𝑥 + 5)",
             "d2_expression": "6*(x+5)",
-            "d3": "2(3x + 6)",
+            "d3": "2(3𝑥 + 6)",
             "d3_expression": "2*(3*x+6)",
             "facteur": "2"
           },
@@ -219,15 +219,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 12",
+            "affichage_source": "6𝑥 + 12",
             "source": "6*x+12",
-            "bonne": "2(3x + 6)",
+            "bonne": "2(3𝑥 + 6)",
             "bonne_expression": "2*(3*x+6)",
-            "d1": "2(3x + 12)",
+            "d1": "2(3𝑥 + 12)",
             "d1_expression": "2*(3*x+12)",
-            "d2": "6(x + 6)",
+            "d2": "6(𝑥 + 6)",
             "d2_expression": "6*(x+6)",
-            "d3": "2(3x + 7)",
+            "d3": "2(3𝑥 + 7)",
             "d3_expression": "2*(3*x+7)",
             "facteur": "2"
           },
@@ -235,15 +235,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 14",
+            "affichage_source": "6𝑥 + 14",
             "source": "6*x+14",
-            "bonne": "2(3x + 7)",
+            "bonne": "2(3𝑥 + 7)",
             "bonne_expression": "2*(3*x+7)",
-            "d1": "2(3x + 14)",
+            "d1": "2(3𝑥 + 14)",
             "d1_expression": "2*(3*x+14)",
-            "d2": "6(x + 7)",
+            "d2": "6(𝑥 + 7)",
             "d2_expression": "6*(x+7)",
-            "d3": "2(3x + 8)",
+            "d3": "2(3𝑥 + 8)",
             "d3_expression": "2*(3*x+8)",
             "facteur": "2"
           },
@@ -251,15 +251,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 16",
+            "affichage_source": "6𝑥 + 16",
             "source": "6*x+16",
-            "bonne": "2(3x + 8)",
+            "bonne": "2(3𝑥 + 8)",
             "bonne_expression": "2*(3*x+8)",
-            "d1": "2(3x + 16)",
+            "d1": "2(3𝑥 + 16)",
             "d1_expression": "2*(3*x+16)",
-            "d2": "6(x + 8)",
+            "d2": "6(𝑥 + 8)",
             "d2_expression": "6*(x+8)",
-            "d3": "2(3x + 9)",
+            "d3": "2(3𝑥 + 9)",
             "d3_expression": "2*(3*x+9)",
             "facteur": "2"
           },
@@ -267,15 +267,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "6x + 18",
+            "affichage_source": "6𝑥 + 18",
             "source": "6*x+18",
-            "bonne": "2(3x + 9)",
+            "bonne": "2(3𝑥 + 9)",
             "bonne_expression": "2*(3*x+9)",
-            "d1": "2(3x + 18)",
+            "d1": "2(3𝑥 + 18)",
             "d1_expression": "2*(3*x+18)",
-            "d2": "6(x + 9)",
+            "d2": "6(𝑥 + 9)",
             "d2_expression": "6*(x+9)",
-            "d3": "2(3x + 10)",
+            "d3": "2(3𝑥 + 10)",
             "d3_expression": "2*(3*x+10)",
             "facteur": "2"
           },
@@ -283,15 +283,15 @@
         },
         {
           "parametres": {
-            "affichage_source": "8x + 4",
+            "affichage_source": "8𝑥 + 4",
             "source": "8*x+4",
-            "bonne": "2(4x + 2)",
+            "bonne": "2(4𝑥 + 2)",
             "bonne_expression": "2*(4*x+2)",
-            "d1": "2(4x + 4)",
+            "d1": "2(4𝑥 + 4)",
             "d1_expression": "2*(4*x+4)",
-            "d2": "8(x + 2)",
+            "d2": "8(𝑥 + 2)",
             "d2_expression": "8*(x+2)",
-            "d3": "2(4x + 3)",
+            "d3": "2(4𝑥 + 3)",
             "d3_expression": "2*(4*x+3)",
             "facteur": "2"
           },
@@ -299,529 +299,529 @@
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 4x",
+            "affichage_source": "4𝑥² + 4𝑥",
             "source": "4*x^2+4*x",
-            "bonne": "2x(2x + 2)",
+            "bonne": "2𝑥(2𝑥 + 2)",
             "bonne_expression": "2*x*(2*x+2)",
-            "d1": "2(2x² + 4x)",
+            "d1": "2(2𝑥² + 4𝑥)",
             "d1_expression": "2*(2*x^2+4*x)",
-            "d2": "x(4x + 2)",
+            "d2": "𝑥(4𝑥 + 2)",
             "d2_expression": "x*(4*x+2)",
-            "d3": "2x(2x + 3)",
+            "d3": "2𝑥(2𝑥 + 3)",
             "d3_expression": "2*x*(2*x+3)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 6x",
+            "affichage_source": "4𝑥² + 6𝑥",
             "source": "4*x^2+6*x",
-            "bonne": "2x(2x + 3)",
+            "bonne": "2𝑥(2𝑥 + 3)",
             "bonne_expression": "2*x*(2*x+3)",
-            "d1": "2(2x² + 6x)",
+            "d1": "2(2𝑥² + 6𝑥)",
             "d1_expression": "2*(2*x^2+6*x)",
-            "d2": "x(4x + 3)",
+            "d2": "𝑥(4𝑥 + 3)",
             "d2_expression": "x*(4*x+3)",
-            "d3": "2x(2x + 4)",
+            "d3": "2𝑥(2𝑥 + 4)",
             "d3_expression": "2*x*(2*x+4)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 8x",
+            "affichage_source": "4𝑥² + 8𝑥",
             "source": "4*x^2+8*x",
-            "bonne": "2x(2x + 4)",
+            "bonne": "2𝑥(2𝑥 + 4)",
             "bonne_expression": "2*x*(2*x+4)",
-            "d1": "2(2x² + 8x)",
+            "d1": "2(2𝑥² + 8𝑥)",
             "d1_expression": "2*(2*x^2+8*x)",
-            "d2": "x(4x + 4)",
+            "d2": "𝑥(4𝑥 + 4)",
             "d2_expression": "x*(4*x+4)",
-            "d3": "2x(2x + 5)",
+            "d3": "2𝑥(2𝑥 + 5)",
             "d3_expression": "2*x*(2*x+5)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 10x",
+            "affichage_source": "4𝑥² + 10𝑥",
             "source": "4*x^2+10*x",
-            "bonne": "2x(2x + 5)",
+            "bonne": "2𝑥(2𝑥 + 5)",
             "bonne_expression": "2*x*(2*x+5)",
-            "d1": "2(2x² + 10x)",
+            "d1": "2(2𝑥² + 10𝑥)",
             "d1_expression": "2*(2*x^2+10*x)",
-            "d2": "x(4x + 5)",
+            "d2": "𝑥(4𝑥 + 5)",
             "d2_expression": "x*(4*x+5)",
-            "d3": "2x(2x + 6)",
+            "d3": "2𝑥(2𝑥 + 6)",
             "d3_expression": "2*x*(2*x+6)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 12x",
+            "affichage_source": "4𝑥² + 12𝑥",
             "source": "4*x^2+12*x",
-            "bonne": "2x(2x + 6)",
+            "bonne": "2𝑥(2𝑥 + 6)",
             "bonne_expression": "2*x*(2*x+6)",
-            "d1": "2(2x² + 12x)",
+            "d1": "2(2𝑥² + 12𝑥)",
             "d1_expression": "2*(2*x^2+12*x)",
-            "d2": "x(4x + 6)",
+            "d2": "𝑥(4𝑥 + 6)",
             "d2_expression": "x*(4*x+6)",
-            "d3": "2x(2x + 7)",
+            "d3": "2𝑥(2𝑥 + 7)",
             "d3_expression": "2*x*(2*x+7)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 14x",
+            "affichage_source": "4𝑥² + 14𝑥",
             "source": "4*x^2+14*x",
-            "bonne": "2x(2x + 7)",
+            "bonne": "2𝑥(2𝑥 + 7)",
             "bonne_expression": "2*x*(2*x+7)",
-            "d1": "2(2x² + 14x)",
+            "d1": "2(2𝑥² + 14𝑥)",
             "d1_expression": "2*(2*x^2+14*x)",
-            "d2": "x(4x + 7)",
+            "d2": "𝑥(4𝑥 + 7)",
             "d2_expression": "x*(4*x+7)",
-            "d3": "2x(2x + 8)",
+            "d3": "2𝑥(2𝑥 + 8)",
             "d3_expression": "2*x*(2*x+8)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 16x",
+            "affichage_source": "4𝑥² + 16𝑥",
             "source": "4*x^2+16*x",
-            "bonne": "2x(2x + 8)",
+            "bonne": "2𝑥(2𝑥 + 8)",
             "bonne_expression": "2*x*(2*x+8)",
-            "d1": "2(2x² + 16x)",
+            "d1": "2(2𝑥² + 16𝑥)",
             "d1_expression": "2*(2*x^2+16*x)",
-            "d2": "x(4x + 8)",
+            "d2": "𝑥(4𝑥 + 8)",
             "d2_expression": "x*(4*x+8)",
-            "d3": "2x(2x + 9)",
+            "d3": "2𝑥(2𝑥 + 9)",
             "d3_expression": "2*x*(2*x+9)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "4x² + 18x",
+            "affichage_source": "4𝑥² + 18𝑥",
             "source": "4*x^2+18*x",
-            "bonne": "2x(2x + 9)",
+            "bonne": "2𝑥(2𝑥 + 9)",
             "bonne_expression": "2*x*(2*x+9)",
-            "d1": "2(2x² + 18x)",
+            "d1": "2(2𝑥² + 18𝑥)",
             "d1_expression": "2*(2*x^2+18*x)",
-            "d2": "x(4x + 9)",
+            "d2": "𝑥(4𝑥 + 9)",
             "d2_expression": "x*(4*x+9)",
-            "d3": "2x(2x + 10)",
+            "d3": "2𝑥(2𝑥 + 10)",
             "d3_expression": "2*x*(2*x+10)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 4x",
+            "affichage_source": "6𝑥² + 4𝑥",
             "source": "6*x^2+4*x",
-            "bonne": "2x(3x + 2)",
+            "bonne": "2𝑥(3𝑥 + 2)",
             "bonne_expression": "2*x*(3*x+2)",
-            "d1": "2(3x² + 4x)",
+            "d1": "2(3𝑥² + 4𝑥)",
             "d1_expression": "2*(3*x^2+4*x)",
-            "d2": "x(6x + 2)",
+            "d2": "𝑥(6𝑥 + 2)",
             "d2_expression": "x*(6*x+2)",
-            "d3": "2x(3x + 3)",
+            "d3": "2𝑥(3𝑥 + 3)",
             "d3_expression": "2*x*(3*x+3)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 6x",
+            "affichage_source": "6𝑥² + 6𝑥",
             "source": "6*x^2+6*x",
-            "bonne": "2x(3x + 3)",
+            "bonne": "2𝑥(3𝑥 + 3)",
             "bonne_expression": "2*x*(3*x+3)",
-            "d1": "2(3x² + 6x)",
+            "d1": "2(3𝑥² + 6𝑥)",
             "d1_expression": "2*(3*x^2+6*x)",
-            "d2": "x(6x + 3)",
+            "d2": "𝑥(6𝑥 + 3)",
             "d2_expression": "x*(6*x+3)",
-            "d3": "2x(3x + 4)",
+            "d3": "2𝑥(3𝑥 + 4)",
             "d3_expression": "2*x*(3*x+4)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 8x",
+            "affichage_source": "6𝑥² + 8𝑥",
             "source": "6*x^2+8*x",
-            "bonne": "2x(3x + 4)",
+            "bonne": "2𝑥(3𝑥 + 4)",
             "bonne_expression": "2*x*(3*x+4)",
-            "d1": "2(3x² + 8x)",
+            "d1": "2(3𝑥² + 8𝑥)",
             "d1_expression": "2*(3*x^2+8*x)",
-            "d2": "x(6x + 4)",
+            "d2": "𝑥(6𝑥 + 4)",
             "d2_expression": "x*(6*x+4)",
-            "d3": "2x(3x + 5)",
+            "d3": "2𝑥(3𝑥 + 5)",
             "d3_expression": "2*x*(3*x+5)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 10x",
+            "affichage_source": "6𝑥² + 10𝑥",
             "source": "6*x^2+10*x",
-            "bonne": "2x(3x + 5)",
+            "bonne": "2𝑥(3𝑥 + 5)",
             "bonne_expression": "2*x*(3*x+5)",
-            "d1": "2(3x² + 10x)",
+            "d1": "2(3𝑥² + 10𝑥)",
             "d1_expression": "2*(3*x^2+10*x)",
-            "d2": "x(6x + 5)",
+            "d2": "𝑥(6𝑥 + 5)",
             "d2_expression": "x*(6*x+5)",
-            "d3": "2x(3x + 6)",
+            "d3": "2𝑥(3𝑥 + 6)",
             "d3_expression": "2*x*(3*x+6)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 12x",
+            "affichage_source": "6𝑥² + 12𝑥",
             "source": "6*x^2+12*x",
-            "bonne": "2x(3x + 6)",
+            "bonne": "2𝑥(3𝑥 + 6)",
             "bonne_expression": "2*x*(3*x+6)",
-            "d1": "2(3x² + 12x)",
+            "d1": "2(3𝑥² + 12𝑥)",
             "d1_expression": "2*(3*x^2+12*x)",
-            "d2": "x(6x + 6)",
+            "d2": "𝑥(6𝑥 + 6)",
             "d2_expression": "x*(6*x+6)",
-            "d3": "2x(3x + 7)",
+            "d3": "2𝑥(3𝑥 + 7)",
             "d3_expression": "2*x*(3*x+7)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 14x",
+            "affichage_source": "6𝑥² + 14𝑥",
             "source": "6*x^2+14*x",
-            "bonne": "2x(3x + 7)",
+            "bonne": "2𝑥(3𝑥 + 7)",
             "bonne_expression": "2*x*(3*x+7)",
-            "d1": "2(3x² + 14x)",
+            "d1": "2(3𝑥² + 14𝑥)",
             "d1_expression": "2*(3*x^2+14*x)",
-            "d2": "x(6x + 7)",
+            "d2": "𝑥(6𝑥 + 7)",
             "d2_expression": "x*(6*x+7)",
-            "d3": "2x(3x + 8)",
+            "d3": "2𝑥(3𝑥 + 8)",
             "d3_expression": "2*x*(3*x+8)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 16x",
+            "affichage_source": "6𝑥² + 16𝑥",
             "source": "6*x^2+16*x",
-            "bonne": "2x(3x + 8)",
+            "bonne": "2𝑥(3𝑥 + 8)",
             "bonne_expression": "2*x*(3*x+8)",
-            "d1": "2(3x² + 16x)",
+            "d1": "2(3𝑥² + 16𝑥)",
             "d1_expression": "2*(3*x^2+16*x)",
-            "d2": "x(6x + 8)",
+            "d2": "𝑥(6𝑥 + 8)",
             "d2_expression": "x*(6*x+8)",
-            "d3": "2x(3x + 9)",
+            "d3": "2𝑥(3𝑥 + 9)",
             "d3_expression": "2*x*(3*x+9)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "6x² + 18x",
+            "affichage_source": "6𝑥² + 18𝑥",
             "source": "6*x^2+18*x",
-            "bonne": "2x(3x + 9)",
+            "bonne": "2𝑥(3𝑥 + 9)",
             "bonne_expression": "2*x*(3*x+9)",
-            "d1": "2(3x² + 18x)",
+            "d1": "2(3𝑥² + 18𝑥)",
             "d1_expression": "2*(3*x^2+18*x)",
-            "d2": "x(6x + 9)",
+            "d2": "𝑥(6𝑥 + 9)",
             "d2_expression": "x*(6*x+9)",
-            "d3": "2x(3x + 10)",
+            "d3": "2𝑥(3𝑥 + 10)",
             "d3_expression": "2*x*(3*x+10)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "8x² + 4x",
+            "affichage_source": "8𝑥² + 4𝑥",
             "source": "8*x^2+4*x",
-            "bonne": "2x(4x + 2)",
+            "bonne": "2𝑥(4𝑥 + 2)",
             "bonne_expression": "2*x*(4*x+2)",
-            "d1": "2(4x² + 4x)",
+            "d1": "2(4𝑥² + 4𝑥)",
             "d1_expression": "2*(4*x^2+4*x)",
-            "d2": "x(8x + 2)",
+            "d2": "𝑥(8𝑥 + 2)",
             "d2_expression": "x*(8*x+2)",
-            "d3": "2x(4x + 3)",
+            "d3": "2𝑥(4𝑥 + 3)",
             "d3_expression": "2*x*(4*x+3)",
-            "facteur": "2x"
+            "facteur": "2𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 3(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 3(𝑥 − 2)",
             "source": "x*(x-2)-3*(x-2)",
-            "bonne": "(x − 2)(x − 3)",
+            "bonne": "(𝑥 − 2)(𝑥 − 3)",
             "bonne_expression": "(x-2)*(x-3)",
-            "d1": "(x − 2)(x + 3)",
+            "d1": "(𝑥 − 2)(𝑥 + 3)",
             "d1_expression": "(x-2)*(x+3)",
-            "d2": "(x − 3)(x − 3)",
+            "d2": "(𝑥 − 3)(𝑥 − 3)",
             "d2_expression": "(x-3)*(x-3)",
-            "d3": "(x − 2)(x − 4)",
+            "d3": "(𝑥 − 2)(𝑥 − 4)",
             "d3_expression": "(x-2)*(x-4)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 4(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 4(𝑥 − 2)",
             "source": "x*(x-2)-4*(x-2)",
-            "bonne": "(x − 2)(x − 4)",
+            "bonne": "(𝑥 − 2)(𝑥 − 4)",
             "bonne_expression": "(x-2)*(x-4)",
-            "d1": "(x − 2)(x + 4)",
+            "d1": "(𝑥 − 2)(𝑥 + 4)",
             "d1_expression": "(x-2)*(x+4)",
-            "d2": "(x − 4)(x − 3)",
+            "d2": "(𝑥 − 4)(𝑥 − 3)",
             "d2_expression": "(x-4)*(x-3)",
-            "d3": "(x − 2)(x − 5)",
+            "d3": "(𝑥 − 2)(𝑥 − 5)",
             "d3_expression": "(x-2)*(x-5)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 5(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 5(𝑥 − 2)",
             "source": "x*(x-2)-5*(x-2)",
-            "bonne": "(x − 2)(x − 5)",
+            "bonne": "(𝑥 − 2)(𝑥 − 5)",
             "bonne_expression": "(x-2)*(x-5)",
-            "d1": "(x − 2)(x + 5)",
+            "d1": "(𝑥 − 2)(𝑥 + 5)",
             "d1_expression": "(x-2)*(x+5)",
-            "d2": "(x − 5)(x − 3)",
+            "d2": "(𝑥 − 5)(𝑥 − 3)",
             "d2_expression": "(x-5)*(x-3)",
-            "d3": "(x − 2)(x − 6)",
+            "d3": "(𝑥 − 2)(𝑥 − 6)",
             "d3_expression": "(x-2)*(x-6)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 6(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 6(𝑥 − 2)",
             "source": "x*(x-2)-6*(x-2)",
-            "bonne": "(x − 2)(x − 6)",
+            "bonne": "(𝑥 − 2)(𝑥 − 6)",
             "bonne_expression": "(x-2)*(x-6)",
-            "d1": "(x − 2)(x + 6)",
+            "d1": "(𝑥 − 2)(𝑥 + 6)",
             "d1_expression": "(x-2)*(x+6)",
-            "d2": "(x − 6)(x − 3)",
+            "d2": "(𝑥 − 6)(𝑥 − 3)",
             "d2_expression": "(x-6)*(x-3)",
-            "d3": "(x − 2)(x − 7)",
+            "d3": "(𝑥 − 2)(𝑥 − 7)",
             "d3_expression": "(x-2)*(x-7)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 7(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 7(𝑥 − 2)",
             "source": "x*(x-2)-7*(x-2)",
-            "bonne": "(x − 2)(x − 7)",
+            "bonne": "(𝑥 − 2)(𝑥 − 7)",
             "bonne_expression": "(x-2)*(x-7)",
-            "d1": "(x − 2)(x + 7)",
+            "d1": "(𝑥 − 2)(𝑥 + 7)",
             "d1_expression": "(x-2)*(x+7)",
-            "d2": "(x − 7)(x − 3)",
+            "d2": "(𝑥 − 7)(𝑥 − 3)",
             "d2_expression": "(x-7)*(x-3)",
-            "d3": "(x − 2)(x − 8)",
+            "d3": "(𝑥 − 2)(𝑥 − 8)",
             "d3_expression": "(x-2)*(x-8)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 8(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 8(𝑥 − 2)",
             "source": "x*(x-2)-8*(x-2)",
-            "bonne": "(x − 2)(x − 8)",
+            "bonne": "(𝑥 − 2)(𝑥 − 8)",
             "bonne_expression": "(x-2)*(x-8)",
-            "d1": "(x − 2)(x + 8)",
+            "d1": "(𝑥 − 2)(𝑥 + 8)",
             "d1_expression": "(x-2)*(x+8)",
-            "d2": "(x − 8)(x − 3)",
+            "d2": "(𝑥 − 8)(𝑥 − 3)",
             "d2_expression": "(x-8)*(x-3)",
-            "d3": "(x − 2)(x − 9)",
+            "d3": "(𝑥 − 2)(𝑥 − 9)",
             "d3_expression": "(x-2)*(x-9)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 2) − 9(x − 2)",
+            "affichage_source": "𝑥(𝑥 − 2) − 9(𝑥 − 2)",
             "source": "x*(x-2)-9*(x-2)",
-            "bonne": "(x − 2)(x − 9)",
+            "bonne": "(𝑥 − 2)(𝑥 − 9)",
             "bonne_expression": "(x-2)*(x-9)",
-            "d1": "(x − 2)(x + 9)",
+            "d1": "(𝑥 − 2)(𝑥 + 9)",
             "d1_expression": "(x-2)*(x+9)",
-            "d2": "(x − 9)(x − 3)",
+            "d2": "(𝑥 − 9)(𝑥 − 3)",
             "d2_expression": "(x-9)*(x-3)",
-            "d3": "(x − 2)(x − 10)",
+            "d3": "(𝑥 − 2)(𝑥 − 10)",
             "d3_expression": "(x-2)*(x-10)",
-            "facteur": "x − 2"
+            "facteur": "𝑥 − 2"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 2(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 2(𝑥 − 3)",
             "source": "x*(x-3)-2*(x-3)",
-            "bonne": "(x − 3)(x − 2)",
+            "bonne": "(𝑥 − 3)(𝑥 − 2)",
             "bonne_expression": "(x-3)*(x-2)",
-            "d1": "(x − 3)(x + 2)",
+            "d1": "(𝑥 − 3)(𝑥 + 2)",
             "d1_expression": "(x-3)*(x+2)",
-            "d2": "(x − 2)(x − 4)",
+            "d2": "(𝑥 − 2)(𝑥 − 4)",
             "d2_expression": "(x-2)*(x-4)",
-            "d3": "(x − 3)(x − 3)",
+            "d3": "(𝑥 − 3)(𝑥 − 3)",
             "d3_expression": "(x-3)*(x-3)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 4(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 4(𝑥 − 3)",
             "source": "x*(x-3)-4*(x-3)",
-            "bonne": "(x − 3)(x − 4)",
+            "bonne": "(𝑥 − 3)(𝑥 − 4)",
             "bonne_expression": "(x-3)*(x-4)",
-            "d1": "(x − 3)(x + 4)",
+            "d1": "(𝑥 − 3)(𝑥 + 4)",
             "d1_expression": "(x-3)*(x+4)",
-            "d2": "(x − 4)(x − 4)",
+            "d2": "(𝑥 − 4)(𝑥 − 4)",
             "d2_expression": "(x-4)*(x-4)",
-            "d3": "(x − 3)(x − 5)",
+            "d3": "(𝑥 − 3)(𝑥 − 5)",
             "d3_expression": "(x-3)*(x-5)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 5(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 5(𝑥 − 3)",
             "source": "x*(x-3)-5*(x-3)",
-            "bonne": "(x − 3)(x − 5)",
+            "bonne": "(𝑥 − 3)(𝑥 − 5)",
             "bonne_expression": "(x-3)*(x-5)",
-            "d1": "(x − 3)(x + 5)",
+            "d1": "(𝑥 − 3)(𝑥 + 5)",
             "d1_expression": "(x-3)*(x+5)",
-            "d2": "(x − 5)(x − 4)",
+            "d2": "(𝑥 − 5)(𝑥 − 4)",
             "d2_expression": "(x-5)*(x-4)",
-            "d3": "(x − 3)(x − 6)",
+            "d3": "(𝑥 − 3)(𝑥 − 6)",
             "d3_expression": "(x-3)*(x-6)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 6(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 6(𝑥 − 3)",
             "source": "x*(x-3)-6*(x-3)",
-            "bonne": "(x − 3)(x − 6)",
+            "bonne": "(𝑥 − 3)(𝑥 − 6)",
             "bonne_expression": "(x-3)*(x-6)",
-            "d1": "(x − 3)(x + 6)",
+            "d1": "(𝑥 − 3)(𝑥 + 6)",
             "d1_expression": "(x-3)*(x+6)",
-            "d2": "(x − 6)(x − 4)",
+            "d2": "(𝑥 − 6)(𝑥 − 4)",
             "d2_expression": "(x-6)*(x-4)",
-            "d3": "(x − 3)(x − 7)",
+            "d3": "(𝑥 − 3)(𝑥 − 7)",
             "d3_expression": "(x-3)*(x-7)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 7(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 7(𝑥 − 3)",
             "source": "x*(x-3)-7*(x-3)",
-            "bonne": "(x − 3)(x − 7)",
+            "bonne": "(𝑥 − 3)(𝑥 − 7)",
             "bonne_expression": "(x-3)*(x-7)",
-            "d1": "(x − 3)(x + 7)",
+            "d1": "(𝑥 − 3)(𝑥 + 7)",
             "d1_expression": "(x-3)*(x+7)",
-            "d2": "(x − 7)(x − 4)",
+            "d2": "(𝑥 − 7)(𝑥 − 4)",
             "d2_expression": "(x-7)*(x-4)",
-            "d3": "(x − 3)(x − 8)",
+            "d3": "(𝑥 − 3)(𝑥 − 8)",
             "d3_expression": "(x-3)*(x-8)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 8(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 8(𝑥 − 3)",
             "source": "x*(x-3)-8*(x-3)",
-            "bonne": "(x − 3)(x − 8)",
+            "bonne": "(𝑥 − 3)(𝑥 − 8)",
             "bonne_expression": "(x-3)*(x-8)",
-            "d1": "(x − 3)(x + 8)",
+            "d1": "(𝑥 − 3)(𝑥 + 8)",
             "d1_expression": "(x-3)*(x+8)",
-            "d2": "(x − 8)(x − 4)",
+            "d2": "(𝑥 − 8)(𝑥 − 4)",
             "d2_expression": "(x-8)*(x-4)",
-            "d3": "(x − 3)(x − 9)",
+            "d3": "(𝑥 − 3)(𝑥 − 9)",
             "d3_expression": "(x-3)*(x-9)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 3) − 9(x − 3)",
+            "affichage_source": "𝑥(𝑥 − 3) − 9(𝑥 − 3)",
             "source": "x*(x-3)-9*(x-3)",
-            "bonne": "(x − 3)(x − 9)",
+            "bonne": "(𝑥 − 3)(𝑥 − 9)",
             "bonne_expression": "(x-3)*(x-9)",
-            "d1": "(x − 3)(x + 9)",
+            "d1": "(𝑥 − 3)(𝑥 + 9)",
             "d1_expression": "(x-3)*(x+9)",
-            "d2": "(x − 9)(x − 4)",
+            "d2": "(𝑥 − 9)(𝑥 − 4)",
             "d2_expression": "(x-9)*(x-4)",
-            "d3": "(x − 3)(x − 10)",
+            "d3": "(𝑥 − 3)(𝑥 − 10)",
             "d3_expression": "(x-3)*(x-10)",
-            "facteur": "x − 3"
+            "facteur": "𝑥 − 3"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 4) − 2(x − 4)",
+            "affichage_source": "𝑥(𝑥 − 4) − 2(𝑥 − 4)",
             "source": "x*(x-4)-2*(x-4)",
-            "bonne": "(x − 4)(x − 2)",
+            "bonne": "(𝑥 − 4)(𝑥 − 2)",
             "bonne_expression": "(x-4)*(x-2)",
-            "d1": "(x − 4)(x + 2)",
+            "d1": "(𝑥 − 4)(𝑥 + 2)",
             "d1_expression": "(x-4)*(x+2)",
-            "d2": "(x − 2)(x − 5)",
+            "d2": "(𝑥 − 2)(𝑥 − 5)",
             "d2_expression": "(x-2)*(x-5)",
-            "d3": "(x − 4)(x − 3)",
+            "d3": "(𝑥 − 4)(𝑥 − 3)",
             "d3_expression": "(x-4)*(x-3)",
-            "facteur": "x − 4"
+            "facteur": "𝑥 − 4"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "affichage_source": "x(x − 4) − 3(x − 4)",
+            "affichage_source": "𝑥(𝑥 − 4) − 3(𝑥 − 4)",
             "source": "x*(x-4)-3*(x-4)",
-            "bonne": "(x − 4)(x − 3)",
+            "bonne": "(𝑥 − 4)(𝑥 − 3)",
             "bonne_expression": "(x-4)*(x-3)",
-            "d1": "(x − 4)(x + 3)",
+            "d1": "(𝑥 − 4)(𝑥 + 3)",
             "d1_expression": "(x-4)*(x+3)",
-            "d2": "(x − 3)(x − 5)",
+            "d2": "(𝑥 − 3)(𝑥 − 5)",
             "d2_expression": "(x-3)*(x-5)",
-            "d3": "(x − 4)(x − 4)",
+            "d3": "(𝑥 − 4)(𝑥 − 4)",
             "d3_expression": "(x-4)*(x-4)",
-            "facteur": "x − 4"
+            "facteur": "𝑥 − 4"
           },
           "progression": 3
         }
@@ -848,30 +848,30 @@
       "variantes": [
         {
           "parametres": {
-            "affichage_source": "6x + 9",
+            "affichage_source": "6𝑥 + 9",
             "facteur": "3",
             "d1": "6",
             "d2": "9",
-            "d3": "x"
+            "d3": "𝑥"
           },
           "progression": 1
         },
         {
           "parametres": {
-            "affichage_source": "8x² + 12x",
-            "facteur": "4x",
+            "affichage_source": "8𝑥² + 12𝑥",
+            "facteur": "4𝑥",
             "d1": "4",
-            "d2": "x²",
-            "d3": "12x"
+            "d2": "𝑥²",
+            "d3": "12𝑥"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "affichage_source": "x(x - 4) - 6(x - 4)",
-            "facteur": "x - 4",
-            "d1": "x",
-            "d2": "x - 6",
+            "affichage_source": "𝑥(𝑥 - 4) - 6(𝑥 - 4)",
+            "facteur": "𝑥 - 4",
+            "d1": "𝑥",
+            "d2": "𝑥 - 6",
             "d3": "6"
           },
           "progression": 3
@@ -897,7 +897,7 @@
     {
       "id": "FACT-COMMUN-MOT-A-TROU",
       "type": "qcm",
-      "enonce": "Dans 6x + 9 = 3(2x + 3), comment appelle-t-on 3, présent dans les deux termes avant factorisation ? Choisis le mot à trou.",
+      "enonce": "Dans 6𝑥 + 9 = 3(2𝑥 + 3), comment appelle-t-on 3, présent dans les deux termes avant factorisation ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
         "masques": {
@@ -917,7 +917,7 @@
         "coefficient",
         "solution"
       ],
-      "correction": "3 est un facteur commun aux deux termes : 6x = 3 × 2x et 9 = 3 × 3."
+      "correction": "3 est un facteur commun aux deux termes : 6𝑥 = 3 × 2𝑥 et 9 = 3 × 3."
     }
   ]
 }

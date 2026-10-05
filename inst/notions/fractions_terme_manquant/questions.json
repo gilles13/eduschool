@@ -1,0 +1,272 @@
+{
+  "notion_id": "fractions_terme_manquant",
+  "questions": [
+    {
+      "id": "FRAC-MIG-TERME-MANQUANT-FRACTIONS-001",
+      "type": "qcm",
+      "enonce": "Quelle fraction simplifiée manque : □ + [[terme2]] = [[terme1]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "soustraction",
+        "termes": [
+          "5/6",
+          "1/3"
+        ],
+        "format": "fraction",
+        "unite": ""
+      },
+      "propositions": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "7/6"
+      ],
+      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Pour retrouver un terme manquant dans une somme de fractions, on utilise la soustraction.\nJ’en déduis : 5/6 − 1/3 = 5/6 − 2/6 = 3/6 = 1/2."
+    },
+    {
+      "id": "FRA-VAR-MANQ-001",
+      "type": "qcm",
+      "enonce": "Quelle fraction simplifiée manque : □ + [[connu]] = [[resultat]] ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "resultat": "5/6",
+            "connu": "1/3",
+            "bonne": "1/2",
+            "d1": "1/3",
+            "d2": "5/6",
+            "d3": "7/6",
+            "correction": "Le terme manquant vaut 5/6 − 1/3 = 1/2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "resultat": "3/4",
+            "connu": "1/4",
+            "bonne": "1/2",
+            "d1": "1/4",
+            "d2": "3/4",
+            "d3": "1",
+            "correction": "Le terme manquant vaut 3/4 − 1/4 = 1/2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "resultat": "7/8",
+            "connu": "3/8",
+            "bonne": "1/2",
+            "d1": "3/8",
+            "d2": "7/8",
+            "d3": "5/4",
+            "correction": "Le terme manquant vaut 7/8 − 3/8 = 1/2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "resultat": "4/5",
+            "connu": "1/5",
+            "bonne": "3/5",
+            "d1": "1/5",
+            "d2": "4/5",
+            "d3": "1",
+            "correction": "Le terme manquant vaut 4/5 − 1/5 = 3/5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "resultat": "5/6",
+            "connu": "1/2",
+            "bonne": "1/3",
+            "d1": "1/2",
+            "d2": "5/6",
+            "d3": "4/3",
+            "correction": "Le terme manquant vaut 5/6 − 1/2 = 1/3."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "resultat": "11/12",
+            "connu": "1/3",
+            "bonne": "7/12",
+            "d1": "1/3",
+            "d2": "11/12",
+            "d3": "5/4",
+            "correction": "Le terme manquant vaut 11/12 − 1/3 = 7/12."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "resultat": "7/10",
+            "connu": "1/5",
+            "bonne": "1/2",
+            "d1": "1/5",
+            "d2": "7/10",
+            "d3": "9/10",
+            "correction": "Le terme manquant vaut 7/10 − 1/5 = 1/2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "resultat": "13/15",
+            "connu": "2/5",
+            "bonne": "7/15",
+            "d1": "2/5",
+            "d2": "13/15",
+            "d3": "19/15",
+            "correction": "Le terme manquant vaut 13/15 − 2/5 = 7/15."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "resultat": "17/18",
+            "connu": "5/9",
+            "bonne": "7/18",
+            "d1": "5/9",
+            "d2": "17/18",
+            "d3": "3/2",
+            "correction": "Le terme manquant vaut 17/18 − 5/9 = 7/18."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "resultat": "11/12",
+            "connu": "3/8",
+            "bonne": "13/24",
+            "d1": "3/8",
+            "d2": "11/12",
+            "d3": "31/24",
+            "correction": "Le terme manquant vaut 11/12 − 3/8 = 13/24."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "resultat": "19/20",
+            "connu": "7/10",
+            "bonne": "1/4",
+            "d1": "7/10",
+            "d2": "19/20",
+            "d3": "33/20",
+            "correction": "Le terme manquant vaut 19/20 − 7/10 = 1/4."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "resultat": "13/14",
+            "connu": "3/7",
+            "bonne": "1/2",
+            "d1": "3/7",
+            "d2": "13/14",
+            "d3": "19/14",
+            "correction": "Le terme manquant vaut 13/14 − 3/7 = 1/2."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "resultat": "23/24",
+            "connu": "5/8",
+            "bonne": "1/3",
+            "d1": "5/8",
+            "d2": "23/24",
+            "d3": "19/12",
+            "correction": "Le terme manquant vaut 23/24 − 5/8 = 1/3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "resultat": "17/20",
+            "connu": "3/10",
+            "bonne": "11/20",
+            "d1": "3/10",
+            "d2": "17/20",
+            "d3": "23/20",
+            "correction": "Le terme manquant vaut 17/20 − 3/10 = 11/20."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "resultat": "29/30",
+            "connu": "7/15",
+            "bonne": "1/2",
+            "d1": "7/15",
+            "d2": "29/30",
+            "d3": "43/30",
+            "correction": "Le terme manquant vaut 29/30 − 7/15 = 1/2."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "resultat": "31/36",
+            "connu": "5/12",
+            "bonne": "4/9",
+            "d1": "5/12",
+            "d2": "31/36",
+            "d3": "23/18",
+            "correction": "Le terme manquant vaut 31/36 − 5/12 = 4/9."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "resultat": "37/40",
+            "connu": "11/20",
+            "bonne": "3/8",
+            "d1": "11/20",
+            "d2": "37/40",
+            "d3": "59/40",
+            "correction": "Le terme manquant vaut 37/40 − 11/20 = 3/8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "resultat": "41/42",
+            "connu": "4/7",
+            "bonne": "17/42",
+            "d1": "4/7",
+            "d2": "41/42",
+            "d3": "65/42",
+            "correction": "Le terme manquant vaut 41/42 − 4/7 = 17/42."
+          },
+          "progression": 3
+        }
+      ],
+      "presentation": {
+        "math": [
+          "connu",
+          "resultat",
+          "bonne",
+          "d1",
+          "d2",
+          "d3"
+        ]
+      }
+    }
+  ]
+}

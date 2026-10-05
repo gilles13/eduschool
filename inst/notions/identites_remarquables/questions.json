@@ -29,49 +29,1553 @@
       "id": "IR-002",
       "type": "qcm",
       "enonce": "Développer [[expression]].",
+      "variantes": [
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 2)²",
+            "source": "(1*x+2)^2",
+            "bonne": "𝑥² + 4𝑥 + 4",
+            "bonne_expression": "(1*x+2)^2",
+            "d1": "𝑥² + 2𝑥 + 4",
+            "d1_expression": "1*x^2+2*x+4",
+            "d2": "𝑥² − 4𝑥 + 4",
+            "d2_expression": "1*x^2-4*x+4",
+            "d3": "𝑥² + 4",
+            "d3_expression": "1*x^2+4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 2)²",
+            "source": "(1*x-2)^2",
+            "bonne": "𝑥² − 4𝑥 + 4",
+            "bonne_expression": "(1*x-2)^2",
+            "d1": "𝑥² − 2𝑥 + 4",
+            "d1_expression": "1*x^2-2*x+4",
+            "d2": "𝑥² + 4𝑥 + 4",
+            "d2_expression": "1*x^2+4*x+4",
+            "d3": "𝑥² + 4",
+            "d3_expression": "1*x^2+4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 3)²",
+            "source": "(1*x+3)^2",
+            "bonne": "𝑥² + 6𝑥 + 9",
+            "bonne_expression": "(1*x+3)^2",
+            "d1": "𝑥² + 3𝑥 + 9",
+            "d1_expression": "1*x^2+3*x+9",
+            "d2": "𝑥² − 6𝑥 + 9",
+            "d2_expression": "1*x^2-6*x+9",
+            "d3": "𝑥² + 9",
+            "d3_expression": "1*x^2+9"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 3)²",
+            "source": "(1*x-3)^2",
+            "bonne": "𝑥² − 6𝑥 + 9",
+            "bonne_expression": "(1*x-3)^2",
+            "d1": "𝑥² − 3𝑥 + 9",
+            "d1_expression": "1*x^2-3*x+9",
+            "d2": "𝑥² + 6𝑥 + 9",
+            "d2_expression": "1*x^2+6*x+9",
+            "d3": "𝑥² + 9",
+            "d3_expression": "1*x^2+9"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 4)²",
+            "source": "(1*x+4)^2",
+            "bonne": "𝑥² + 8𝑥 + 16",
+            "bonne_expression": "(1*x+4)^2",
+            "d1": "𝑥² + 4𝑥 + 16",
+            "d1_expression": "1*x^2+4*x+16",
+            "d2": "𝑥² − 8𝑥 + 16",
+            "d2_expression": "1*x^2-8*x+16",
+            "d3": "𝑥² + 16",
+            "d3_expression": "1*x^2+16"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 4)²",
+            "source": "(1*x-4)^2",
+            "bonne": "𝑥² − 8𝑥 + 16",
+            "bonne_expression": "(1*x-4)^2",
+            "d1": "𝑥² − 4𝑥 + 16",
+            "d1_expression": "1*x^2-4*x+16",
+            "d2": "𝑥² + 8𝑥 + 16",
+            "d2_expression": "1*x^2+8*x+16",
+            "d3": "𝑥² + 16",
+            "d3_expression": "1*x^2+16"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 5)²",
+            "source": "(1*x+5)^2",
+            "bonne": "𝑥² + 10𝑥 + 25",
+            "bonne_expression": "(1*x+5)^2",
+            "d1": "𝑥² + 5𝑥 + 25",
+            "d1_expression": "1*x^2+5*x+25",
+            "d2": "𝑥² − 10𝑥 + 25",
+            "d2_expression": "1*x^2-10*x+25",
+            "d3": "𝑥² + 25",
+            "d3_expression": "1*x^2+25"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 5)²",
+            "source": "(1*x-5)^2",
+            "bonne": "𝑥² − 10𝑥 + 25",
+            "bonne_expression": "(1*x-5)^2",
+            "d1": "𝑥² − 5𝑥 + 25",
+            "d1_expression": "1*x^2-5*x+25",
+            "d2": "𝑥² + 10𝑥 + 25",
+            "d2_expression": "1*x^2+10*x+25",
+            "d3": "𝑥² + 25",
+            "d3_expression": "1*x^2+25"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 6)²",
+            "source": "(1*x+6)^2",
+            "bonne": "𝑥² + 12𝑥 + 36",
+            "bonne_expression": "(1*x+6)^2",
+            "d1": "𝑥² + 6𝑥 + 36",
+            "d1_expression": "1*x^2+6*x+36",
+            "d2": "𝑥² − 12𝑥 + 36",
+            "d2_expression": "1*x^2-12*x+36",
+            "d3": "𝑥² + 36",
+            "d3_expression": "1*x^2+36"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 6)²",
+            "source": "(1*x-6)^2",
+            "bonne": "𝑥² − 12𝑥 + 36",
+            "bonne_expression": "(1*x-6)^2",
+            "d1": "𝑥² − 6𝑥 + 36",
+            "d1_expression": "1*x^2-6*x+36",
+            "d2": "𝑥² + 12𝑥 + 36",
+            "d2_expression": "1*x^2+12*x+36",
+            "d3": "𝑥² + 36",
+            "d3_expression": "1*x^2+36"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 7)²",
+            "source": "(1*x+7)^2",
+            "bonne": "𝑥² + 14𝑥 + 49",
+            "bonne_expression": "(1*x+7)^2",
+            "d1": "𝑥² + 7𝑥 + 49",
+            "d1_expression": "1*x^2+7*x+49",
+            "d2": "𝑥² − 14𝑥 + 49",
+            "d2_expression": "1*x^2-14*x+49",
+            "d3": "𝑥² + 49",
+            "d3_expression": "1*x^2+49"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 7)²",
+            "source": "(1*x-7)^2",
+            "bonne": "𝑥² − 14𝑥 + 49",
+            "bonne_expression": "(1*x-7)^2",
+            "d1": "𝑥² − 7𝑥 + 49",
+            "d1_expression": "1*x^2-7*x+49",
+            "d2": "𝑥² + 14𝑥 + 49",
+            "d2_expression": "1*x^2+14*x+49",
+            "d3": "𝑥² + 49",
+            "d3_expression": "1*x^2+49"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 8)²",
+            "source": "(1*x+8)^2",
+            "bonne": "𝑥² + 16𝑥 + 64",
+            "bonne_expression": "(1*x+8)^2",
+            "d1": "𝑥² + 8𝑥 + 64",
+            "d1_expression": "1*x^2+8*x+64",
+            "d2": "𝑥² − 16𝑥 + 64",
+            "d2_expression": "1*x^2-16*x+64",
+            "d3": "𝑥² + 64",
+            "d3_expression": "1*x^2+64"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 8)²",
+            "source": "(1*x-8)^2",
+            "bonne": "𝑥² − 16𝑥 + 64",
+            "bonne_expression": "(1*x-8)^2",
+            "d1": "𝑥² − 8𝑥 + 64",
+            "d1_expression": "1*x^2-8*x+64",
+            "d2": "𝑥² + 16𝑥 + 64",
+            "d2_expression": "1*x^2+16*x+64",
+            "d3": "𝑥² + 64",
+            "d3_expression": "1*x^2+64"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 9)²",
+            "source": "(1*x+9)^2",
+            "bonne": "𝑥² + 18𝑥 + 81",
+            "bonne_expression": "(1*x+9)^2",
+            "d1": "𝑥² + 9𝑥 + 81",
+            "d1_expression": "1*x^2+9*x+81",
+            "d2": "𝑥² − 18𝑥 + 81",
+            "d2_expression": "1*x^2-18*x+81",
+            "d3": "𝑥² + 81",
+            "d3_expression": "1*x^2+81"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 9)²",
+            "source": "(1*x-9)^2",
+            "bonne": "𝑥² − 18𝑥 + 81",
+            "bonne_expression": "(1*x-9)^2",
+            "d1": "𝑥² − 9𝑥 + 81",
+            "d1_expression": "1*x^2-9*x+81",
+            "d2": "𝑥² + 18𝑥 + 81",
+            "d2_expression": "1*x^2+18*x+81",
+            "d3": "𝑥² + 81",
+            "d3_expression": "1*x^2+81"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 + 10)²",
+            "source": "(1*x+10)^2",
+            "bonne": "𝑥² + 20𝑥 + 100",
+            "bonne_expression": "(1*x+10)^2",
+            "d1": "𝑥² + 10𝑥 + 100",
+            "d1_expression": "1*x^2+10*x+100",
+            "d2": "𝑥² − 20𝑥 + 100",
+            "d2_expression": "1*x^2-20*x+100",
+            "d3": "𝑥² + 100",
+            "d3_expression": "1*x^2+100"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 + 1)²",
+            "source": "(2*x+1)^2",
+            "bonne": "4𝑥² + 4𝑥 + 1",
+            "bonne_expression": "(2*x+1)^2",
+            "d1": "4𝑥² + 2𝑥 + 1",
+            "d1_expression": "4*x^2+2*x+1",
+            "d2": "4𝑥² − 4𝑥 + 1",
+            "d2_expression": "4*x^2-4*x+1",
+            "d3": "4𝑥² + 1",
+            "d3_expression": "4*x^2+1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 1)²",
+            "source": "(2*x-1)^2",
+            "bonne": "4𝑥² − 4𝑥 + 1",
+            "bonne_expression": "(2*x-1)^2",
+            "d1": "4𝑥² − 2𝑥 + 1",
+            "d1_expression": "4*x^2-2*x+1",
+            "d2": "4𝑥² + 4𝑥 + 1",
+            "d2_expression": "4*x^2+4*x+1",
+            "d3": "4𝑥² + 1",
+            "d3_expression": "4*x^2+1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 + 2)²",
+            "source": "(2*x+2)^2",
+            "bonne": "4𝑥² + 8𝑥 + 4",
+            "bonne_expression": "(2*x+2)^2",
+            "d1": "4𝑥² + 4𝑥 + 4",
+            "d1_expression": "4*x^2+4*x+4",
+            "d2": "4𝑥² − 8𝑥 + 4",
+            "d2_expression": "4*x^2-8*x+4",
+            "d3": "4𝑥² + 4",
+            "d3_expression": "4*x^2+4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 2)²",
+            "source": "(2*x-2)^2",
+            "bonne": "4𝑥² − 8𝑥 + 4",
+            "bonne_expression": "(2*x-2)^2",
+            "d1": "4𝑥² − 4𝑥 + 4",
+            "d1_expression": "4*x^2-4*x+4",
+            "d2": "4𝑥² + 8𝑥 + 4",
+            "d2_expression": "4*x^2+8*x+4",
+            "d3": "4𝑥² + 4",
+            "d3_expression": "4*x^2+4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 + 3)²",
+            "source": "(2*x+3)^2",
+            "bonne": "4𝑥² + 12𝑥 + 9",
+            "bonne_expression": "(2*x+3)^2",
+            "d1": "4𝑥² + 6𝑥 + 9",
+            "d1_expression": "4*x^2+6*x+9",
+            "d2": "4𝑥² − 12𝑥 + 9",
+            "d2_expression": "4*x^2-12*x+9",
+            "d3": "4𝑥² + 9",
+            "d3_expression": "4*x^2+9"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 3)²",
+            "source": "(2*x-3)^2",
+            "bonne": "4𝑥² − 12𝑥 + 9",
+            "bonne_expression": "(2*x-3)^2",
+            "d1": "4𝑥² − 6𝑥 + 9",
+            "d1_expression": "4*x^2-6*x+9",
+            "d2": "4𝑥² + 12𝑥 + 9",
+            "d2_expression": "4*x^2+12*x+9",
+            "d3": "4𝑥² + 9",
+            "d3_expression": "4*x^2+9"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 + 4)²",
+            "source": "(2*x+4)^2",
+            "bonne": "4𝑥² + 16𝑥 + 16",
+            "bonne_expression": "(2*x+4)^2",
+            "d1": "4𝑥² + 8𝑥 + 16",
+            "d1_expression": "4*x^2+8*x+16",
+            "d2": "4𝑥² − 16𝑥 + 16",
+            "d2_expression": "4*x^2-16*x+16",
+            "d3": "4𝑥² + 16",
+            "d3_expression": "4*x^2+16"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 4)²",
+            "source": "(2*x-4)^2",
+            "bonne": "4𝑥² − 16𝑥 + 16",
+            "bonne_expression": "(2*x-4)^2",
+            "d1": "4𝑥² − 8𝑥 + 16",
+            "d1_expression": "4*x^2-8*x+16",
+            "d2": "4𝑥² + 16𝑥 + 16",
+            "d2_expression": "4*x^2+16*x+16",
+            "d3": "4𝑥² + 16",
+            "d3_expression": "4*x^2+16"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 + 5)²",
+            "source": "(2*x+5)^2",
+            "bonne": "4𝑥² + 20𝑥 + 25",
+            "bonne_expression": "(2*x+5)^2",
+            "d1": "4𝑥² + 10𝑥 + 25",
+            "d1_expression": "4*x^2+10*x+25",
+            "d2": "4𝑥² − 20𝑥 + 25",
+            "d2_expression": "4*x^2-20*x+25",
+            "d3": "4𝑥² + 25",
+            "d3_expression": "4*x^2+25"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 5)²",
+            "source": "(2*x-5)^2",
+            "bonne": "4𝑥² − 20𝑥 + 25",
+            "bonne_expression": "(2*x-5)^2",
+            "d1": "4𝑥² − 10𝑥 + 25",
+            "d1_expression": "4*x^2-10*x+25",
+            "d2": "4𝑥² + 20𝑥 + 25",
+            "d2_expression": "4*x^2+20*x+25",
+            "d3": "4𝑥² + 25",
+            "d3_expression": "4*x^2+25"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 + 6)²",
+            "source": "(2*x+6)^2",
+            "bonne": "4𝑥² + 24𝑥 + 36",
+            "bonne_expression": "(2*x+6)^2",
+            "d1": "4𝑥² + 12𝑥 + 36",
+            "d1_expression": "4*x^2+12*x+36",
+            "d2": "4𝑥² − 24𝑥 + 36",
+            "d2_expression": "4*x^2-24*x+36",
+            "d3": "4𝑥² + 36",
+            "d3_expression": "4*x^2+36"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 6)²",
+            "source": "(2*x-6)^2",
+            "bonne": "4𝑥² − 24𝑥 + 36",
+            "bonne_expression": "(2*x-6)^2",
+            "d1": "4𝑥² − 12𝑥 + 36",
+            "d1_expression": "4*x^2-12*x+36",
+            "d2": "4𝑥² + 24𝑥 + 36",
+            "d2_expression": "4*x^2+24*x+36",
+            "d3": "4𝑥² + 36",
+            "d3_expression": "4*x^2+36"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 + 1)²",
+            "source": "(3*x+1)^2",
+            "bonne": "9𝑥² + 6𝑥 + 1",
+            "bonne_expression": "(3*x+1)^2",
+            "d1": "9𝑥² + 3𝑥 + 1",
+            "d1_expression": "9*x^2+3*x+1",
+            "d2": "9𝑥² − 6𝑥 + 1",
+            "d2_expression": "9*x^2-6*x+1",
+            "d3": "9𝑥² + 1",
+            "d3_expression": "9*x^2+1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 − 1)²",
+            "source": "(3*x-1)^2",
+            "bonne": "9𝑥² − 6𝑥 + 1",
+            "bonne_expression": "(3*x-1)^2",
+            "d1": "9𝑥² − 3𝑥 + 1",
+            "d1_expression": "9*x^2-3*x+1",
+            "d2": "9𝑥² + 6𝑥 + 1",
+            "d2_expression": "9*x^2+6*x+1",
+            "d3": "9𝑥² + 1",
+            "d3_expression": "9*x^2+1"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 + 2)²",
+            "source": "(3*x+2)^2",
+            "bonne": "9𝑥² + 12𝑥 + 4",
+            "bonne_expression": "(3*x+2)^2",
+            "d1": "9𝑥² + 6𝑥 + 4",
+            "d1_expression": "9*x^2+6*x+4",
+            "d2": "9𝑥² − 12𝑥 + 4",
+            "d2_expression": "9*x^2-12*x+4",
+            "d3": "9𝑥² + 4",
+            "d3_expression": "9*x^2+4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 − 2)²",
+            "source": "(3*x-2)^2",
+            "bonne": "9𝑥² − 12𝑥 + 4",
+            "bonne_expression": "(3*x-2)^2",
+            "d1": "9𝑥² − 6𝑥 + 4",
+            "d1_expression": "9*x^2-6*x+4",
+            "d2": "9𝑥² + 12𝑥 + 4",
+            "d2_expression": "9*x^2+12*x+4",
+            "d3": "9𝑥² + 4",
+            "d3_expression": "9*x^2+4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 + 3)²",
+            "source": "(3*x+3)^2",
+            "bonne": "9𝑥² + 18𝑥 + 9",
+            "bonne_expression": "(3*x+3)^2",
+            "d1": "9𝑥² + 9𝑥 + 9",
+            "d1_expression": "9*x^2+9*x+9",
+            "d2": "9𝑥² − 18𝑥 + 9",
+            "d2_expression": "9*x^2-18*x+9",
+            "d3": "9𝑥² + 9",
+            "d3_expression": "9*x^2+9"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 1)(𝑥 + 1)",
+            "source": "(1*x-1)*(1*x+1)",
+            "bonne": "𝑥² − 1",
+            "bonne_expression": "(1*x-1)*(1*x+1)",
+            "d1": "𝑥² + 1",
+            "d1_expression": "1*x^2+1",
+            "d2": "𝑥² − 2𝑥 + 1",
+            "d2_expression": "1*x^2-2*x+1",
+            "d3": "𝑥² + 2𝑥 + 1",
+            "d3_expression": "1*x^2+2*x+1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 2)(𝑥 + 2)",
+            "source": "(1*x-2)*(1*x+2)",
+            "bonne": "𝑥² − 4",
+            "bonne_expression": "(1*x-2)*(1*x+2)",
+            "d1": "𝑥² + 4",
+            "d1_expression": "1*x^2+4",
+            "d2": "𝑥² − 4𝑥 + 4",
+            "d2_expression": "1*x^2-4*x+4",
+            "d3": "𝑥² + 4𝑥 + 4",
+            "d3_expression": "1*x^2+4*x+4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 3)(𝑥 + 3)",
+            "source": "(1*x-3)*(1*x+3)",
+            "bonne": "𝑥² − 9",
+            "bonne_expression": "(1*x-3)*(1*x+3)",
+            "d1": "𝑥² + 9",
+            "d1_expression": "1*x^2+9",
+            "d2": "𝑥² − 6𝑥 + 9",
+            "d2_expression": "1*x^2-6*x+9",
+            "d3": "𝑥² + 6𝑥 + 9",
+            "d3_expression": "1*x^2+6*x+9"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 4)(𝑥 + 4)",
+            "source": "(1*x-4)*(1*x+4)",
+            "bonne": "𝑥² − 16",
+            "bonne_expression": "(1*x-4)*(1*x+4)",
+            "d1": "𝑥² + 16",
+            "d1_expression": "1*x^2+16",
+            "d2": "𝑥² − 8𝑥 + 16",
+            "d2_expression": "1*x^2-8*x+16",
+            "d3": "𝑥² + 8𝑥 + 16",
+            "d3_expression": "1*x^2+8*x+16"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 5)(𝑥 + 5)",
+            "source": "(1*x-5)*(1*x+5)",
+            "bonne": "𝑥² − 25",
+            "bonne_expression": "(1*x-5)*(1*x+5)",
+            "d1": "𝑥² + 25",
+            "d1_expression": "1*x^2+25",
+            "d2": "𝑥² − 10𝑥 + 25",
+            "d2_expression": "1*x^2-10*x+25",
+            "d3": "𝑥² + 10𝑥 + 25",
+            "d3_expression": "1*x^2+10*x+25"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 6)(𝑥 + 6)",
+            "source": "(1*x-6)*(1*x+6)",
+            "bonne": "𝑥² − 36",
+            "bonne_expression": "(1*x-6)*(1*x+6)",
+            "d1": "𝑥² + 36",
+            "d1_expression": "1*x^2+36",
+            "d2": "𝑥² − 12𝑥 + 36",
+            "d2_expression": "1*x^2-12*x+36",
+            "d3": "𝑥² + 12𝑥 + 36",
+            "d3_expression": "1*x^2+12*x+36"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(𝑥 − 7)(𝑥 + 7)",
+            "source": "(1*x-7)*(1*x+7)",
+            "bonne": "𝑥² − 49",
+            "bonne_expression": "(1*x-7)*(1*x+7)",
+            "d1": "𝑥² + 49",
+            "d1_expression": "1*x^2+49",
+            "d2": "𝑥² − 14𝑥 + 49",
+            "d2_expression": "1*x^2-14*x+49",
+            "d3": "𝑥² + 14𝑥 + 49",
+            "d3_expression": "1*x^2+14*x+49"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 1)(2𝑥 + 1)",
+            "source": "(2*x-1)*(2*x+1)",
+            "bonne": "4𝑥² − 1",
+            "bonne_expression": "(2*x-1)*(2*x+1)",
+            "d1": "4𝑥² + 1",
+            "d1_expression": "4*x^2+1",
+            "d2": "4𝑥² − 4𝑥 + 1",
+            "d2_expression": "4*x^2-4*x+1",
+            "d3": "4𝑥² + 4𝑥 + 1",
+            "d3_expression": "4*x^2+4*x+1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 2)(2𝑥 + 2)",
+            "source": "(2*x-2)*(2*x+2)",
+            "bonne": "4𝑥² − 4",
+            "bonne_expression": "(2*x-2)*(2*x+2)",
+            "d1": "4𝑥² + 4",
+            "d1_expression": "4*x^2+4",
+            "d2": "4𝑥² − 8𝑥 + 4",
+            "d2_expression": "4*x^2-8*x+4",
+            "d3": "4𝑥² + 8𝑥 + 4",
+            "d3_expression": "4*x^2+8*x+4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 3)(2𝑥 + 3)",
+            "source": "(2*x-3)*(2*x+3)",
+            "bonne": "4𝑥² − 9",
+            "bonne_expression": "(2*x-3)*(2*x+3)",
+            "d1": "4𝑥² + 9",
+            "d1_expression": "4*x^2+9",
+            "d2": "4𝑥² − 12𝑥 + 9",
+            "d2_expression": "4*x^2-12*x+9",
+            "d3": "4𝑥² + 12𝑥 + 9",
+            "d3_expression": "4*x^2+12*x+9"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 4)(2𝑥 + 4)",
+            "source": "(2*x-4)*(2*x+4)",
+            "bonne": "4𝑥² − 16",
+            "bonne_expression": "(2*x-4)*(2*x+4)",
+            "d1": "4𝑥² + 16",
+            "d1_expression": "4*x^2+16",
+            "d2": "4𝑥² − 16𝑥 + 16",
+            "d2_expression": "4*x^2-16*x+16",
+            "d3": "4𝑥² + 16𝑥 + 16",
+            "d3_expression": "4*x^2+16*x+16"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 5)(2𝑥 + 5)",
+            "source": "(2*x-5)*(2*x+5)",
+            "bonne": "4𝑥² − 25",
+            "bonne_expression": "(2*x-5)*(2*x+5)",
+            "d1": "4𝑥² + 25",
+            "d1_expression": "4*x^2+25",
+            "d2": "4𝑥² − 20𝑥 + 25",
+            "d2_expression": "4*x^2-20*x+25",
+            "d3": "4𝑥² + 20𝑥 + 25",
+            "d3_expression": "4*x^2+20*x+25"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 6)(2𝑥 + 6)",
+            "source": "(2*x-6)*(2*x+6)",
+            "bonne": "4𝑥² − 36",
+            "bonne_expression": "(2*x-6)*(2*x+6)",
+            "d1": "4𝑥² + 36",
+            "d1_expression": "4*x^2+36",
+            "d2": "4𝑥² − 24𝑥 + 36",
+            "d2_expression": "4*x^2-24*x+36",
+            "d3": "4𝑥² + 24𝑥 + 36",
+            "d3_expression": "4*x^2+24*x+36"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(2𝑥 − 7)(2𝑥 + 7)",
+            "source": "(2*x-7)*(2*x+7)",
+            "bonne": "4𝑥² − 49",
+            "bonne_expression": "(2*x-7)*(2*x+7)",
+            "d1": "4𝑥² + 49",
+            "d1_expression": "4*x^2+49",
+            "d2": "4𝑥² − 28𝑥 + 49",
+            "d2_expression": "4*x^2-28*x+49",
+            "d3": "4𝑥² + 28𝑥 + 49",
+            "d3_expression": "4*x^2+28*x+49"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 − 1)(3𝑥 + 1)",
+            "source": "(3*x-1)*(3*x+1)",
+            "bonne": "9𝑥² − 1",
+            "bonne_expression": "(3*x-1)*(3*x+1)",
+            "d1": "9𝑥² + 1",
+            "d1_expression": "9*x^2+1",
+            "d2": "9𝑥² − 6𝑥 + 1",
+            "d2_expression": "9*x^2-6*x+1",
+            "d3": "9𝑥² + 6𝑥 + 1",
+            "d3_expression": "9*x^2+6*x+1"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "(3𝑥 − 2)(3𝑥 + 2)",
+            "source": "(3*x-2)*(3*x+2)",
+            "bonne": "9𝑥² − 4",
+            "bonne_expression": "(3*x-2)*(3*x+2)",
+            "d1": "9𝑥² + 4",
+            "d1_expression": "9*x^2+4",
+            "d2": "9𝑥² − 12𝑥 + 4",
+            "d2_expression": "9*x^2-12*x+4",
+            "d3": "9𝑥² + 12𝑥 + 4",
+            "d3_expression": "9*x^2+12*x+4"
+          },
+          "progression": 3
+        }
+      ],
       "reponse": {
         "mode": "symbolique_fixe",
         "moteur": "Ryacas",
-        "expression": "(x-3)^2",
-        "affichage": "(x − 3)²",
+        "expression": "[[source]]",
+        "affichage": "[[affichage_source]]",
         "candidats": {
-          "x² − 6x + 9": "x^2-6*x+9",
-          "x² − 9": "x^2-9",
-          "x² + 6x + 9": "x^2+6*x+9",
-          "x² − 3x + 9": "x^2-3*x+9"
+          "[[bonne]]": "[[bonne_expression]]",
+          "[[d1]]": "[[d1_expression]]",
+          "[[d2]]": "[[d2_expression]]",
+          "[[d3]]": "[[d3_expression]]"
         }
       },
       "propositions": [
-        "x² − 6x + 9",
-        "x² − 9",
-        "x² + 6x + 9",
-        "x² − 3x + 9"
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
       ],
-      "correction": "**Carré d’une différence :** (a − b)² = a² − 2ab + b².\n\nIci a = x et b = 3.\n\nLe **double produit** vaut 6x et porte un signe négatif."
+      "correction": "On reconnaît une identité remarquable, puis on l’applique en conservant le double produit lorsqu’il existe. On obtient [[bonne]]."
     },
     {
       "id": "IR-003",
       "type": "qcm",
       "enonce": "Factoriser [[expression]].",
+      "variantes": [
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 4𝑥 + 4",
+            "source": "1*x^2+4*x+4",
+            "bonne": "(𝑥 + 2)²",
+            "bonne_expression": "(1*x+2)^2",
+            "d1": "(𝑥 − 2)²",
+            "d1_expression": "(1*x-2)^2",
+            "d2": "(𝑥 − 2)(𝑥 + 2)",
+            "d2_expression": "(1*x-2)*(1*x+2)",
+            "d3": "𝑥(𝑥 + 4)",
+            "d3_expression": "1*x*(1*x+4)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 4𝑥 + 4",
+            "source": "1*x^2-4*x+4",
+            "bonne": "(𝑥 − 2)²",
+            "bonne_expression": "(1*x-2)^2",
+            "d1": "(𝑥 + 2)²",
+            "d1_expression": "(1*x+2)^2",
+            "d2": "(𝑥 − 2)(𝑥 + 2)",
+            "d2_expression": "(1*x-2)*(1*x+2)",
+            "d3": "𝑥(𝑥 − 4)",
+            "d3_expression": "1*x*(1*x-4)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 6𝑥 + 9",
+            "source": "1*x^2+6*x+9",
+            "bonne": "(𝑥 + 3)²",
+            "bonne_expression": "(1*x+3)^2",
+            "d1": "(𝑥 − 3)²",
+            "d1_expression": "(1*x-3)^2",
+            "d2": "(𝑥 − 3)(𝑥 + 3)",
+            "d2_expression": "(1*x-3)*(1*x+3)",
+            "d3": "𝑥(𝑥 + 6)",
+            "d3_expression": "1*x*(1*x+6)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 6𝑥 + 9",
+            "source": "1*x^2-6*x+9",
+            "bonne": "(𝑥 − 3)²",
+            "bonne_expression": "(1*x-3)^2",
+            "d1": "(𝑥 + 3)²",
+            "d1_expression": "(1*x+3)^2",
+            "d2": "(𝑥 − 3)(𝑥 + 3)",
+            "d2_expression": "(1*x-3)*(1*x+3)",
+            "d3": "𝑥(𝑥 − 6)",
+            "d3_expression": "1*x*(1*x-6)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 8𝑥 + 16",
+            "source": "1*x^2+8*x+16",
+            "bonne": "(𝑥 + 4)²",
+            "bonne_expression": "(1*x+4)^2",
+            "d1": "(𝑥 − 4)²",
+            "d1_expression": "(1*x-4)^2",
+            "d2": "(𝑥 − 4)(𝑥 + 4)",
+            "d2_expression": "(1*x-4)*(1*x+4)",
+            "d3": "𝑥(𝑥 + 8)",
+            "d3_expression": "1*x*(1*x+8)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 8𝑥 + 16",
+            "source": "1*x^2-8*x+16",
+            "bonne": "(𝑥 − 4)²",
+            "bonne_expression": "(1*x-4)^2",
+            "d1": "(𝑥 + 4)²",
+            "d1_expression": "(1*x+4)^2",
+            "d2": "(𝑥 − 4)(𝑥 + 4)",
+            "d2_expression": "(1*x-4)*(1*x+4)",
+            "d3": "𝑥(𝑥 − 8)",
+            "d3_expression": "1*x*(1*x-8)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 10𝑥 + 25",
+            "source": "1*x^2+10*x+25",
+            "bonne": "(𝑥 + 5)²",
+            "bonne_expression": "(1*x+5)^2",
+            "d1": "(𝑥 − 5)²",
+            "d1_expression": "(1*x-5)^2",
+            "d2": "(𝑥 − 5)(𝑥 + 5)",
+            "d2_expression": "(1*x-5)*(1*x+5)",
+            "d3": "𝑥(𝑥 + 10)",
+            "d3_expression": "1*x*(1*x+10)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 10𝑥 + 25",
+            "source": "1*x^2-10*x+25",
+            "bonne": "(𝑥 − 5)²",
+            "bonne_expression": "(1*x-5)^2",
+            "d1": "(𝑥 + 5)²",
+            "d1_expression": "(1*x+5)^2",
+            "d2": "(𝑥 − 5)(𝑥 + 5)",
+            "d2_expression": "(1*x-5)*(1*x+5)",
+            "d3": "𝑥(𝑥 − 10)",
+            "d3_expression": "1*x*(1*x-10)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 12𝑥 + 36",
+            "source": "1*x^2+12*x+36",
+            "bonne": "(𝑥 + 6)²",
+            "bonne_expression": "(1*x+6)^2",
+            "d1": "(𝑥 − 6)²",
+            "d1_expression": "(1*x-6)^2",
+            "d2": "(𝑥 − 6)(𝑥 + 6)",
+            "d2_expression": "(1*x-6)*(1*x+6)",
+            "d3": "𝑥(𝑥 + 12)",
+            "d3_expression": "1*x*(1*x+12)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 12𝑥 + 36",
+            "source": "1*x^2-12*x+36",
+            "bonne": "(𝑥 − 6)²",
+            "bonne_expression": "(1*x-6)^2",
+            "d1": "(𝑥 + 6)²",
+            "d1_expression": "(1*x+6)^2",
+            "d2": "(𝑥 − 6)(𝑥 + 6)",
+            "d2_expression": "(1*x-6)*(1*x+6)",
+            "d3": "𝑥(𝑥 − 12)",
+            "d3_expression": "1*x*(1*x-12)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 14𝑥 + 49",
+            "source": "1*x^2+14*x+49",
+            "bonne": "(𝑥 + 7)²",
+            "bonne_expression": "(1*x+7)^2",
+            "d1": "(𝑥 − 7)²",
+            "d1_expression": "(1*x-7)^2",
+            "d2": "(𝑥 − 7)(𝑥 + 7)",
+            "d2_expression": "(1*x-7)*(1*x+7)",
+            "d3": "𝑥(𝑥 + 14)",
+            "d3_expression": "1*x*(1*x+14)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 14𝑥 + 49",
+            "source": "1*x^2-14*x+49",
+            "bonne": "(𝑥 − 7)²",
+            "bonne_expression": "(1*x-7)^2",
+            "d1": "(𝑥 + 7)²",
+            "d1_expression": "(1*x+7)^2",
+            "d2": "(𝑥 − 7)(𝑥 + 7)",
+            "d2_expression": "(1*x-7)*(1*x+7)",
+            "d3": "𝑥(𝑥 − 14)",
+            "d3_expression": "1*x*(1*x-14)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 16𝑥 + 64",
+            "source": "1*x^2+16*x+64",
+            "bonne": "(𝑥 + 8)²",
+            "bonne_expression": "(1*x+8)^2",
+            "d1": "(𝑥 − 8)²",
+            "d1_expression": "(1*x-8)^2",
+            "d2": "(𝑥 − 8)(𝑥 + 8)",
+            "d2_expression": "(1*x-8)*(1*x+8)",
+            "d3": "𝑥(𝑥 + 16)",
+            "d3_expression": "1*x*(1*x+16)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 16𝑥 + 64",
+            "source": "1*x^2-16*x+64",
+            "bonne": "(𝑥 − 8)²",
+            "bonne_expression": "(1*x-8)^2",
+            "d1": "(𝑥 + 8)²",
+            "d1_expression": "(1*x+8)^2",
+            "d2": "(𝑥 − 8)(𝑥 + 8)",
+            "d2_expression": "(1*x-8)*(1*x+8)",
+            "d3": "𝑥(𝑥 − 16)",
+            "d3_expression": "1*x*(1*x-16)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 18𝑥 + 81",
+            "source": "1*x^2+18*x+81",
+            "bonne": "(𝑥 + 9)²",
+            "bonne_expression": "(1*x+9)^2",
+            "d1": "(𝑥 − 9)²",
+            "d1_expression": "(1*x-9)^2",
+            "d2": "(𝑥 − 9)(𝑥 + 9)",
+            "d2_expression": "(1*x-9)*(1*x+9)",
+            "d3": "𝑥(𝑥 + 18)",
+            "d3_expression": "1*x*(1*x+18)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 18𝑥 + 81",
+            "source": "1*x^2-18*x+81",
+            "bonne": "(𝑥 − 9)²",
+            "bonne_expression": "(1*x-9)^2",
+            "d1": "(𝑥 + 9)²",
+            "d1_expression": "(1*x+9)^2",
+            "d2": "(𝑥 − 9)(𝑥 + 9)",
+            "d2_expression": "(1*x-9)*(1*x+9)",
+            "d3": "𝑥(𝑥 − 18)",
+            "d3_expression": "1*x*(1*x-18)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² + 20𝑥 + 100",
+            "source": "1*x^2+20*x+100",
+            "bonne": "(𝑥 + 10)²",
+            "bonne_expression": "(1*x+10)^2",
+            "d1": "(𝑥 − 10)²",
+            "d1_expression": "(1*x-10)^2",
+            "d2": "(𝑥 − 10)(𝑥 + 10)",
+            "d2_expression": "(1*x-10)*(1*x+10)",
+            "d3": "𝑥(𝑥 + 20)",
+            "d3_expression": "1*x*(1*x+20)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² + 4𝑥 + 1",
+            "source": "4*x^2+4*x+1",
+            "bonne": "(2𝑥 + 1)²",
+            "bonne_expression": "(2*x+1)^2",
+            "d1": "(2𝑥 − 1)²",
+            "d1_expression": "(2*x-1)^2",
+            "d2": "(2𝑥 − 1)(2𝑥 + 1)",
+            "d2_expression": "(2*x-1)*(2*x+1)",
+            "d3": "2𝑥(2𝑥 + 2)",
+            "d3_expression": "2*x*(2*x+2)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 4𝑥 + 1",
+            "source": "4*x^2-4*x+1",
+            "bonne": "(2𝑥 − 1)²",
+            "bonne_expression": "(2*x-1)^2",
+            "d1": "(2𝑥 + 1)²",
+            "d1_expression": "(2*x+1)^2",
+            "d2": "(2𝑥 − 1)(2𝑥 + 1)",
+            "d2_expression": "(2*x-1)*(2*x+1)",
+            "d3": "2𝑥(2𝑥 − 2)",
+            "d3_expression": "2*x*(2*x-2)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² + 8𝑥 + 4",
+            "source": "4*x^2+8*x+4",
+            "bonne": "(2𝑥 + 2)²",
+            "bonne_expression": "(2*x+2)^2",
+            "d1": "(2𝑥 − 2)²",
+            "d1_expression": "(2*x-2)^2",
+            "d2": "(2𝑥 − 2)(2𝑥 + 2)",
+            "d2_expression": "(2*x-2)*(2*x+2)",
+            "d3": "2𝑥(2𝑥 + 4)",
+            "d3_expression": "2*x*(2*x+4)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 8𝑥 + 4",
+            "source": "4*x^2-8*x+4",
+            "bonne": "(2𝑥 − 2)²",
+            "bonne_expression": "(2*x-2)^2",
+            "d1": "(2𝑥 + 2)²",
+            "d1_expression": "(2*x+2)^2",
+            "d2": "(2𝑥 − 2)(2𝑥 + 2)",
+            "d2_expression": "(2*x-2)*(2*x+2)",
+            "d3": "2𝑥(2𝑥 − 4)",
+            "d3_expression": "2*x*(2*x-4)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² + 12𝑥 + 9",
+            "source": "4*x^2+12*x+9",
+            "bonne": "(2𝑥 + 3)²",
+            "bonne_expression": "(2*x+3)^2",
+            "d1": "(2𝑥 − 3)²",
+            "d1_expression": "(2*x-3)^2",
+            "d2": "(2𝑥 − 3)(2𝑥 + 3)",
+            "d2_expression": "(2*x-3)*(2*x+3)",
+            "d3": "2𝑥(2𝑥 + 6)",
+            "d3_expression": "2*x*(2*x+6)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 12𝑥 + 9",
+            "source": "4*x^2-12*x+9",
+            "bonne": "(2𝑥 − 3)²",
+            "bonne_expression": "(2*x-3)^2",
+            "d1": "(2𝑥 + 3)²",
+            "d1_expression": "(2*x+3)^2",
+            "d2": "(2𝑥 − 3)(2𝑥 + 3)",
+            "d2_expression": "(2*x-3)*(2*x+3)",
+            "d3": "2𝑥(2𝑥 − 6)",
+            "d3_expression": "2*x*(2*x-6)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² + 16𝑥 + 16",
+            "source": "4*x^2+16*x+16",
+            "bonne": "(2𝑥 + 4)²",
+            "bonne_expression": "(2*x+4)^2",
+            "d1": "(2𝑥 − 4)²",
+            "d1_expression": "(2*x-4)^2",
+            "d2": "(2𝑥 − 4)(2𝑥 + 4)",
+            "d2_expression": "(2*x-4)*(2*x+4)",
+            "d3": "2𝑥(2𝑥 + 8)",
+            "d3_expression": "2*x*(2*x+8)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 16𝑥 + 16",
+            "source": "4*x^2-16*x+16",
+            "bonne": "(2𝑥 − 4)²",
+            "bonne_expression": "(2*x-4)^2",
+            "d1": "(2𝑥 + 4)²",
+            "d1_expression": "(2*x+4)^2",
+            "d2": "(2𝑥 − 4)(2𝑥 + 4)",
+            "d2_expression": "(2*x-4)*(2*x+4)",
+            "d3": "2𝑥(2𝑥 − 8)",
+            "d3_expression": "2*x*(2*x-8)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² + 20𝑥 + 25",
+            "source": "4*x^2+20*x+25",
+            "bonne": "(2𝑥 + 5)²",
+            "bonne_expression": "(2*x+5)^2",
+            "d1": "(2𝑥 − 5)²",
+            "d1_expression": "(2*x-5)^2",
+            "d2": "(2𝑥 − 5)(2𝑥 + 5)",
+            "d2_expression": "(2*x-5)*(2*x+5)",
+            "d3": "2𝑥(2𝑥 + 10)",
+            "d3_expression": "2*x*(2*x+10)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 20𝑥 + 25",
+            "source": "4*x^2-20*x+25",
+            "bonne": "(2𝑥 − 5)²",
+            "bonne_expression": "(2*x-5)^2",
+            "d1": "(2𝑥 + 5)²",
+            "d1_expression": "(2*x+5)^2",
+            "d2": "(2𝑥 − 5)(2𝑥 + 5)",
+            "d2_expression": "(2*x-5)*(2*x+5)",
+            "d3": "2𝑥(2𝑥 − 10)",
+            "d3_expression": "2*x*(2*x-10)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² + 24𝑥 + 36",
+            "source": "4*x^2+24*x+36",
+            "bonne": "(2𝑥 + 6)²",
+            "bonne_expression": "(2*x+6)^2",
+            "d1": "(2𝑥 − 6)²",
+            "d1_expression": "(2*x-6)^2",
+            "d2": "(2𝑥 − 6)(2𝑥 + 6)",
+            "d2_expression": "(2*x-6)*(2*x+6)",
+            "d3": "2𝑥(2𝑥 + 12)",
+            "d3_expression": "2*x*(2*x+12)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 24𝑥 + 36",
+            "source": "4*x^2-24*x+36",
+            "bonne": "(2𝑥 − 6)²",
+            "bonne_expression": "(2*x-6)^2",
+            "d1": "(2𝑥 + 6)²",
+            "d1_expression": "(2*x+6)^2",
+            "d2": "(2𝑥 − 6)(2𝑥 + 6)",
+            "d2_expression": "(2*x-6)*(2*x+6)",
+            "d3": "2𝑥(2𝑥 − 12)",
+            "d3_expression": "2*x*(2*x-12)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² + 6𝑥 + 1",
+            "source": "9*x^2+6*x+1",
+            "bonne": "(3𝑥 + 1)²",
+            "bonne_expression": "(3*x+1)^2",
+            "d1": "(3𝑥 − 1)²",
+            "d1_expression": "(3*x-1)^2",
+            "d2": "(3𝑥 − 1)(3𝑥 + 1)",
+            "d2_expression": "(3*x-1)*(3*x+1)",
+            "d3": "3𝑥(3𝑥 + 2)",
+            "d3_expression": "3*x*(3*x+2)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² − 6𝑥 + 1",
+            "source": "9*x^2-6*x+1",
+            "bonne": "(3𝑥 − 1)²",
+            "bonne_expression": "(3*x-1)^2",
+            "d1": "(3𝑥 + 1)²",
+            "d1_expression": "(3*x+1)^2",
+            "d2": "(3𝑥 − 1)(3𝑥 + 1)",
+            "d2_expression": "(3*x-1)*(3*x+1)",
+            "d3": "3𝑥(3𝑥 − 2)",
+            "d3_expression": "3*x*(3*x-2)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² + 12𝑥 + 4",
+            "source": "9*x^2+12*x+4",
+            "bonne": "(3𝑥 + 2)²",
+            "bonne_expression": "(3*x+2)^2",
+            "d1": "(3𝑥 − 2)²",
+            "d1_expression": "(3*x-2)^2",
+            "d2": "(3𝑥 − 2)(3𝑥 + 2)",
+            "d2_expression": "(3*x-2)*(3*x+2)",
+            "d3": "3𝑥(3𝑥 + 4)",
+            "d3_expression": "3*x*(3*x+4)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² − 12𝑥 + 4",
+            "source": "9*x^2-12*x+4",
+            "bonne": "(3𝑥 − 2)²",
+            "bonne_expression": "(3*x-2)^2",
+            "d1": "(3𝑥 + 2)²",
+            "d1_expression": "(3*x+2)^2",
+            "d2": "(3𝑥 − 2)(3𝑥 + 2)",
+            "d2_expression": "(3*x-2)*(3*x+2)",
+            "d3": "3𝑥(3𝑥 − 4)",
+            "d3_expression": "3*x*(3*x-4)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² + 18𝑥 + 9",
+            "source": "9*x^2+18*x+9",
+            "bonne": "(3𝑥 + 3)²",
+            "bonne_expression": "(3*x+3)^2",
+            "d1": "(3𝑥 − 3)²",
+            "d1_expression": "(3*x-3)^2",
+            "d2": "(3𝑥 − 3)(3𝑥 + 3)",
+            "d2_expression": "(3*x-3)*(3*x+3)",
+            "d3": "3𝑥(3𝑥 + 6)",
+            "d3_expression": "3*x*(3*x+6)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 1",
+            "source": "1*x^2-1",
+            "bonne": "(𝑥 − 1)(𝑥 + 1)",
+            "bonne_expression": "(1*x-1)*(1*x+1)",
+            "d1": "(𝑥 − 1)²",
+            "d1_expression": "(1*x-1)^2",
+            "d2": "(𝑥 + 1)²",
+            "d2_expression": "(1*x+1)^2",
+            "d3": "𝑥(𝑥 − 1)",
+            "d3_expression": "1*x*(1*x-1)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 4",
+            "source": "1*x^2-4",
+            "bonne": "(𝑥 − 2)(𝑥 + 2)",
+            "bonne_expression": "(1*x-2)*(1*x+2)",
+            "d1": "(𝑥 − 2)²",
+            "d1_expression": "(1*x-2)^2",
+            "d2": "(𝑥 + 2)²",
+            "d2_expression": "(1*x+2)^2",
+            "d3": "𝑥(𝑥 − 4)",
+            "d3_expression": "1*x*(1*x-4)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 9",
+            "source": "1*x^2-9",
+            "bonne": "(𝑥 − 3)(𝑥 + 3)",
+            "bonne_expression": "(1*x-3)*(1*x+3)",
+            "d1": "(𝑥 − 3)²",
+            "d1_expression": "(1*x-3)^2",
+            "d2": "(𝑥 + 3)²",
+            "d2_expression": "(1*x+3)^2",
+            "d3": "𝑥(𝑥 − 9)",
+            "d3_expression": "1*x*(1*x-9)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 16",
+            "source": "1*x^2-16",
+            "bonne": "(𝑥 − 4)(𝑥 + 4)",
+            "bonne_expression": "(1*x-4)*(1*x+4)",
+            "d1": "(𝑥 − 4)²",
+            "d1_expression": "(1*x-4)^2",
+            "d2": "(𝑥 + 4)²",
+            "d2_expression": "(1*x+4)^2",
+            "d3": "𝑥(𝑥 − 16)",
+            "d3_expression": "1*x*(1*x-16)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 25",
+            "source": "1*x^2-25",
+            "bonne": "(𝑥 − 5)(𝑥 + 5)",
+            "bonne_expression": "(1*x-5)*(1*x+5)",
+            "d1": "(𝑥 − 5)²",
+            "d1_expression": "(1*x-5)^2",
+            "d2": "(𝑥 + 5)²",
+            "d2_expression": "(1*x+5)^2",
+            "d3": "𝑥(𝑥 − 25)",
+            "d3_expression": "1*x*(1*x-25)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 36",
+            "source": "1*x^2-36",
+            "bonne": "(𝑥 − 6)(𝑥 + 6)",
+            "bonne_expression": "(1*x-6)*(1*x+6)",
+            "d1": "(𝑥 − 6)²",
+            "d1_expression": "(1*x-6)^2",
+            "d2": "(𝑥 + 6)²",
+            "d2_expression": "(1*x+6)^2",
+            "d3": "𝑥(𝑥 − 36)",
+            "d3_expression": "1*x*(1*x-36)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "𝑥² − 49",
+            "source": "1*x^2-49",
+            "bonne": "(𝑥 − 7)(𝑥 + 7)",
+            "bonne_expression": "(1*x-7)*(1*x+7)",
+            "d1": "(𝑥 − 7)²",
+            "d1_expression": "(1*x-7)^2",
+            "d2": "(𝑥 + 7)²",
+            "d2_expression": "(1*x+7)^2",
+            "d3": "𝑥(𝑥 − 49)",
+            "d3_expression": "1*x*(1*x-49)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 1",
+            "source": "4*x^2-1",
+            "bonne": "(2𝑥 − 1)(2𝑥 + 1)",
+            "bonne_expression": "(2*x-1)*(2*x+1)",
+            "d1": "(2𝑥 − 1)²",
+            "d1_expression": "(2*x-1)^2",
+            "d2": "(2𝑥 + 1)²",
+            "d2_expression": "(2*x+1)^2",
+            "d3": "2𝑥(2𝑥 − 1)",
+            "d3_expression": "2*x*(2*x-1)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 4",
+            "source": "4*x^2-4",
+            "bonne": "(2𝑥 − 2)(2𝑥 + 2)",
+            "bonne_expression": "(2*x-2)*(2*x+2)",
+            "d1": "(2𝑥 − 2)²",
+            "d1_expression": "(2*x-2)^2",
+            "d2": "(2𝑥 + 2)²",
+            "d2_expression": "(2*x+2)^2",
+            "d3": "2𝑥(2𝑥 − 4)",
+            "d3_expression": "2*x*(2*x-4)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 9",
+            "source": "4*x^2-9",
+            "bonne": "(2𝑥 − 3)(2𝑥 + 3)",
+            "bonne_expression": "(2*x-3)*(2*x+3)",
+            "d1": "(2𝑥 − 3)²",
+            "d1_expression": "(2*x-3)^2",
+            "d2": "(2𝑥 + 3)²",
+            "d2_expression": "(2*x+3)^2",
+            "d3": "2𝑥(2𝑥 − 9)",
+            "d3_expression": "2*x*(2*x-9)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 16",
+            "source": "4*x^2-16",
+            "bonne": "(2𝑥 − 4)(2𝑥 + 4)",
+            "bonne_expression": "(2*x-4)*(2*x+4)",
+            "d1": "(2𝑥 − 4)²",
+            "d1_expression": "(2*x-4)^2",
+            "d2": "(2𝑥 + 4)²",
+            "d2_expression": "(2*x+4)^2",
+            "d3": "2𝑥(2𝑥 − 16)",
+            "d3_expression": "2*x*(2*x-16)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 25",
+            "source": "4*x^2-25",
+            "bonne": "(2𝑥 − 5)(2𝑥 + 5)",
+            "bonne_expression": "(2*x-5)*(2*x+5)",
+            "d1": "(2𝑥 − 5)²",
+            "d1_expression": "(2*x-5)^2",
+            "d2": "(2𝑥 + 5)²",
+            "d2_expression": "(2*x+5)^2",
+            "d3": "2𝑥(2𝑥 − 25)",
+            "d3_expression": "2*x*(2*x-25)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 36",
+            "source": "4*x^2-36",
+            "bonne": "(2𝑥 − 6)(2𝑥 + 6)",
+            "bonne_expression": "(2*x-6)*(2*x+6)",
+            "d1": "(2𝑥 − 6)²",
+            "d1_expression": "(2*x-6)^2",
+            "d2": "(2𝑥 + 6)²",
+            "d2_expression": "(2*x+6)^2",
+            "d3": "2𝑥(2𝑥 − 36)",
+            "d3_expression": "2*x*(2*x-36)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "4𝑥² − 49",
+            "source": "4*x^2-49",
+            "bonne": "(2𝑥 − 7)(2𝑥 + 7)",
+            "bonne_expression": "(2*x-7)*(2*x+7)",
+            "d1": "(2𝑥 − 7)²",
+            "d1_expression": "(2*x-7)^2",
+            "d2": "(2𝑥 + 7)²",
+            "d2_expression": "(2*x+7)^2",
+            "d3": "2𝑥(2𝑥 − 49)",
+            "d3_expression": "2*x*(2*x-49)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² − 1",
+            "source": "9*x^2-1",
+            "bonne": "(3𝑥 − 1)(3𝑥 + 1)",
+            "bonne_expression": "(3*x-1)*(3*x+1)",
+            "d1": "(3𝑥 − 1)²",
+            "d1_expression": "(3*x-1)^2",
+            "d2": "(3𝑥 + 1)²",
+            "d2_expression": "(3*x+1)^2",
+            "d3": "3𝑥(3𝑥 − 1)",
+            "d3_expression": "3*x*(3*x-1)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "affichage_source": "9𝑥² − 4",
+            "source": "9*x^2-4",
+            "bonne": "(3𝑥 − 2)(3𝑥 + 2)",
+            "bonne_expression": "(3*x-2)*(3*x+2)",
+            "d1": "(3𝑥 − 2)²",
+            "d1_expression": "(3*x-2)^2",
+            "d2": "(3𝑥 + 2)²",
+            "d2_expression": "(3*x+2)^2",
+            "d3": "3𝑥(3𝑥 − 4)",
+            "d3_expression": "3*x*(3*x-4)"
+          },
+          "progression": 3
+        }
+      ],
       "reponse": {
         "mode": "symbolique_fixe",
         "moteur": "Ryacas",
-        "expression": "x^2-25",
-        "affichage": "x² − 25",
+        "expression": "[[source]]",
+        "affichage": "[[affichage_source]]",
         "candidats": {
-          "(x − 5)(x + 5)": "(x-5)*(x+5)",
-          "(x − 5)²": "(x-5)^2",
-          "(x + 5)²": "(x+5)^2",
-          "x(x − 25)": "x*(x-25)"
+          "[[bonne]]": "[[bonne_expression]]",
+          "[[d1]]": "[[d1_expression]]",
+          "[[d2]]": "[[d2_expression]]",
+          "[[d3]]": "[[d3_expression]]"
         }
       },
       "propositions": [
-        "(x − 5)(x + 5)",
-        "(x − 5)²",
-        "(x + 5)²",
-        "x(x − 25)"
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
       ],
-      "correction": "**Différence de deux carrés :** a² − b² = (a − b)(a + b).\n\nIci 25 = 5².\n\nOn obtient (x − 5)(x + 5)."
+      "correction": "On lit l’identité remarquable dans le sens de la factorisation. On obtient [[bonne]]."
     },
     {
       "id": "IR-004",
@@ -81,45 +1585,45 @@
         "mode": "symbolique_fixe",
         "moteur": "Ryacas",
         "expression": "2*(2*x)*3",
-        "affichage": "(2x + 3)²",
+        "affichage": "(2𝑥 + 3)²",
         "candidats": {
-          "12x": "12*x",
-          "6x": "6*x",
-          "5x": "5*x",
-          "12x²": "12*x^2"
+          "12𝑥": "12*x",
+          "6𝑥": "6*x",
+          "5𝑥": "5*x",
+          "12𝑥²": "12*x^2"
         }
       },
       "propositions": [
-        "12x",
-        "6x",
-        "5x",
-        "12x²"
+        "12𝑥",
+        "6𝑥",
+        "5𝑥",
+        "12𝑥²"
       ],
-      "correction": "Le double produit vaut 2 × 2x × 3 = 12x."
+      "correction": "Le double produit vaut 2 × 2𝑥 × 3 = 12𝑥."
     },
     {
       "id": "IR-005",
       "type": "qcm",
-      "enonce": "Quelle égalité développe correctement [[expression]] pour tout x réel ?",
+      "enonce": "Quelle égalité développe correctement [[expression]] pour tout 𝑥 réel ?",
       "reponse": {
         "mode": "symbolique_fixe",
         "moteur": "Ryacas",
         "expression": "(x+2)^2",
-        "affichage": "(x + 2)²",
+        "affichage": "(𝑥 + 2)²",
         "candidats": {
-          "(x + 2)² = x² + 4x + 4": "x^2+4*x+4",
-          "(x + 2)² = x² + 4": "x^2+4",
-          "(x + 2)² = x² − 4": "x^2-4",
-          "(x + 2)² = x² + 2x + 4": "x^2+2*x+4"
+          "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4": "x^2+4*x+4",
+          "(𝑥 + 2)² = 𝑥² + 4": "x^2+4",
+          "(𝑥 + 2)² = 𝑥² − 4": "x^2-4",
+          "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4": "x^2+2*x+4"
         }
       },
       "propositions": [
-        "(x + 2)² = x² + 4x + 4",
-        "(x + 2)² = x² + 4",
-        "(x + 2)² = x² − 4",
-        "(x + 2)² = x² + 2x + 4"
+        "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4",
+        "(𝑥 + 2)² = 𝑥² + 4",
+        "(𝑥 + 2)² = 𝑥² − 4",
+        "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4"
       ],
-      "correction": "Une identité est vraie pour toute valeur admise. Le double produit 2 × x × 2 ne doit pas être oublié."
+      "correction": "Une identité est vraie pour toute valeur admise. Le double produit 2 × 𝑥 × 2 ne doit pas être oublié."
     },
     {
       "id": "IR-006",
@@ -129,19 +1633,19 @@
         "mode": "symbolique_fixe",
         "moteur": "Ryacas",
         "expression": "(3*x-2)*(3*x+2)",
-        "affichage": "(3x − 2)(3x + 2)",
+        "affichage": "(3𝑥 − 2)(3𝑥 + 2)",
         "candidats": {
-          "9x² − 4": "9*x^2-4",
-          "9x² + 4": "9*x^2+4",
-          "3x² − 4": "3*x^2-4",
-          "9x² − 12x + 4": "9*x^2-12*x+4"
+          "9𝑥² − 4": "9*x^2-4",
+          "9𝑥² + 4": "9*x^2+4",
+          "3𝑥² − 4": "3*x^2-4",
+          "9𝑥² − 12𝑥 + 4": "9*x^2-12*x+4"
         }
       },
       "propositions": [
-        "9x² − 4",
-        "9x² + 4",
-        "3x² − 4",
-        "9x² − 12x + 4"
+        "9𝑥² − 4",
+        "9𝑥² + 4",
+        "3𝑥² − 4",
+        "9𝑥² − 12𝑥 + 4"
       ],
       "correction": "Produit de deux expressions conjuguées : (a − b)(a + b) = a² − b²."
     },
@@ -169,6 +1673,73 @@
         "10000 − 200 − 1"
       ],
       "correction": "L’identité du carré d’une différence permet un calcul mental exact."
+    },
+    {
+      "id": "IR-BOITE",
+      "type": "qcm",
+      "enonce": "Compléter le terme manquant : (𝑥 + 4)² = 𝑥² + □𝑥 + 16.",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "8"
+      },
+      "propositions": [
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "correction": "Le terme du milieu est le double produit : 2 × 𝑥 × 4 = 8𝑥. La boîte vaut donc 8."
+    },
+    {
+      "id": "IR-MOT-A-TROU",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on une égalité algébrique vraie pour toutes les valeurs admises ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "identité": "i _ e _ t _ t é",
+          "équation": "é _ u _ t _ o n",
+          "produit": "p _ o _ u _ t",
+          "facteur": "f _ c _ e _ r"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "identité"
+      },
+      "propositions": [
+        "identité",
+        "équation",
+        "produit",
+        "facteur"
+      ],
+      "correction": "Une **identité** est une égalité vraie pour toutes les valeurs admises."
+    },
+    {
+      "id": "IR-MOT-MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on les deux expressions (a − b) et (a + b) qui apparaissent dans la troisième identité remarquable ?",
+      "presentation": {
+        "type": "mot_masque",
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché.",
+        "masques": {
+          "conjuguées": "C________S",
+          "opposées": "O________S",
+          "semblables": "S________S",
+          "associées": "A________S"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "conjuguées"
+      },
+      "propositions": [
+        "conjuguées",
+        "opposées",
+        "semblables",
+        "associées"
+      ],
+      "correction": "Les expressions (a − b) et (a + b) sont dites **conjuguées**. Leur produit vaut a² − b²."
     }
   ]
 }

@@ -1,0 +1,120 @@
+{
+  "notion_id": "decimaux_comparaison",
+  "questions": [
+    {
+      "id": "COMPARAISON_DECIMAUX-001",
+      "type": "qcm",
+      "enonce": "Quel est le plus grand nombre ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "7,08"
+      },
+      "propositions": [
+        "7,08",
+        "7,008",
+        "7,0080",
+        "7,0008"
+      ],
+      "correction": "7,08 possède huit centièmes, contre huit millièmes ou dix-millièmes."
+    },
+    {
+      "id": "COMPARAISON_DECIMAUX-002",
+      "type": "qcm",
+      "enonce": "Quel rangement est croissant ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "1,09 < 1,1 < 1,12"
+      },
+      "propositions": [
+        "1,09 < 1,1 < 1,12",
+        "1,1 < 1,09 < 1,12",
+        "1,12 < 1,1 < 1,09",
+        "1,09 < 1,12 < 1,1"
+      ],
+      "correction": "Comparer 1,09 ; 1,10 ; 1,12 permet de ranger."
+    },
+    {
+      "id": "COMPARAISON_DECIMAUX-003",
+      "type": "qcm",
+      "enonce": "Quelle égalité est vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "5,40 = 5,4"
+      },
+      "propositions": [
+        "5,40 = 5,4",
+        "5,40 = 5,04",
+        "5,40 = 5,4001",
+        "5,40 = 5,004"
+      ],
+      "correction": "Les zéros finaux après la virgule ne modifient pas la valeur."
+    },
+    {
+      "id": "COMPARAISON_DECIMAUX-004",
+      "type": "qcm",
+      "enonce": "Une règle mesure 12,08 cm et une autre 12,8 cm. Quelle affirmation est vraie ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "12,08 cm < 12,8 cm"
+      },
+      "propositions": [
+        "12,08 cm < 12,8 cm",
+        "12,08 cm > 12,8 cm",
+        "12,08 cm = 12,8 cm",
+        "12,08 cm = 12,80 cm"
+      ],
+      "correction": "12,8 cm correspond à 12,80 cm."
+    },
+    {
+      "id": "COMPARAISON_DECIMAUX-MOT_A_TROU",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on un classement du plus petit au plus grand ? Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "croissant": "c _ _ _ _ _ _ _ t",
+          "décroissant": "d _ _ _ _ _ _ _ _ _ t",
+          "égal": "é _ _ l",
+          "opposé": "o _ _ _ _ é"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "croissant"
+      },
+      "propositions": [
+        "croissant",
+        "décroissant",
+        "égal",
+        "opposé"
+      ],
+      "correction": "Un rangement croissant commence par la plus petite valeur."
+    },
+    {
+      "id": "COMPARAISON_DECIMAUX-MOT_MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on un classement du plus petit au plus grand ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "croissant": "C________T",
+          "décroissant": "D________T",
+          "égal": "É________L",
+          "opposé": "O________É"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "croissant"
+      },
+      "propositions": [
+        "croissant",
+        "décroissant",
+        "égal",
+        "opposé"
+      ],
+      "correction": "Un rangement croissant commence par la plus petite valeur."
+    }
+  ]
+}

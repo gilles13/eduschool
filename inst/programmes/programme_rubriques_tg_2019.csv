@@ -1,0 +1,218 @@
+rubrique_id;programme_id;theme_item_id;niveau;rubrique;texte_officiel_extrait;page_debut;page_fin;source_id;controle_formules
+ITM_MAT_TERM_G_2019_01_01_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_01;TG;OBJECTIFS;"Les ensembles considérés dans cette section sont finis mais on introduit dans le cas général (ensembles quelconques) les notions suivantes : couple, triplet, k-uplet (ou k-liste) ; produit cartésien de deux, trois, k ensembles ; ensemble Ak des k-uplets d’éléments d’un ensemble A.";6;6;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_01_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_01;TG;CONTENUS;"− Principe additif : nombre d’éléments d’une réunion d’ensembles deux à deux disjoints.
+− Principe multiplicatif : nombre d’éléments d’un produit cartésien. Nombre de k-uplets (ou k-listes) d’un ensemble à n éléments.
+− Nombre des parties d’un ensemble à n éléments. Lien avec les n-uplets de {0,1}, les mots de longueur n sur un alphabet à deux éléments, les chemins dans un arbre, les issues dans une succession de n épreuves de Bernoulli.
+− Nombre des k-uplets d’éléments distincts d’un ensemble à n éléments. Définition de n! Nombre de permutations d’un ensemble fini à n éléments.
+− Combinaisons de k éléments d’un ensemble à n éléments : parties à k éléments de l’ensemble. Représentation en termes de mots ou de chemins.  n  n(n − 1)(n − k  1) n!
+− Pour 0 ⩽ k ⩽ n, formules :     . k  k! (n − k )! k!
+− Explicitation pour k = 0, 1, 2. Symétrie. Relation et triangle de Pascal.";6;6;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_01_01_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_01;TG;CAPACITES_ATTENDUES;"− Dans le cadre d’un problème de dénombrement, utiliser une représentation adaptée (ensembles, arbres, tableaux, diagrammes) et reconnaître les objets à dénombrer.
+− Effectuer des dénombrements simples dans des situations issues de divers domaines scientifiques (informatique, génétique, théorie des jeux, probabilités, etc.).";7;7;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_01_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_01;TG;DEMONSTRATIONS;"− Démonstration par dénombrement de la relation : nk 0    2 n . n k 
+− Démonstrations de la relation de Pascal (par le calcul, par une méthode combinatoire).";7;7;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_01_01_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_01;TG;APPROFONDISSEMENTS;− Combinaisons avec répétitions.;7;7;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_01_ALGORITHMES_06;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_01;TG;ALGORITHMES;"n
+− Pour un entier n donné, génération de la liste des coefficients   à l’aide de la k  relation de Pascal.
+− Génération des permutations d'un ensemble fini, ou tirage aléatoire d'une permutation.
+− Génération des parties à 2, 3 éléments d'un ensemble fini.";7;7;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_01_02_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_02;TG;OBJECTIFS;Cette section introduit d’emblée le calcul vectoriel dans l’espace, avec les notions qui l’accompagnent : translations, combinaisons linéaires de vecteurs, indépendance linéaire, directions de droites et de plans. Il s’agit de s’appuyer sur la perception de l’espace pour mettre en place une géométrie reliée au calcul vectoriel et adaptée aux besoins des autres disciplines. Les figures formées à partir des solides usuels (cube, pavé, tétraèdre) rencontrés au collège sont des supports privilégiés pour manipuler les notions vectorielles et appréhender la position relative de droites et de plans. Il est important de développer les représentations des objets géométriques, notamment à l’aide d’un logiciel de géométrie dynamique, afin de permettre à l’élève d’exercer son regard et de développer sa vision dans l’espace.;7;7;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_02_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_02;TG;CONTENUS;"− Vecteurs de l’espace. Translations.
+− Combinaisons linéaires de vecteurs de l’espace.
+− Droites de l’espace. Vecteurs directeurs d’une droite. Vecteurs colinéaires.
+− Caractérisation d’une droite par un point et un vecteur directeur.
+− Plans de l’espace. Direction d’un plan de l’espace.
+− Caractérisation d’un plan de l’espace par un point et un couple de vecteurs non colinéaires.
+− Bases et repères de l’espace. Décomposition d’un vecteur sur une base.";7;7;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_02_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_02;TG;CAPACITES_ATTENDUES;"− Représenter des combinaisons linéaires de vecteurs donnés.
+− Exploiter une figure pour exprimer un vecteur comme combinaison linéaire de vecteurs.
+− Décrire la position relative de deux droites, d’une droite et d’un plan, de deux plans.
+− Lire sur une figure si deux vecteurs d’un plan, trois vecteurs de l’espace, forment une base.
+− Lire sur une figure la décomposition d'un vecteur dans une base.
+− Étudier géométriquement des problèmes simples de configurations dans l’espace (alignement, colinéarité, parallélisme, coplanarité).";7;8;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_02_APPROFONDISSEMENTS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_02;TG;APPROFONDISSEMENTS;"− Barycentre d'une famille d'un système pondéré de deux, trois ou quatre points. Exemples d'utilisation des barycentres, en particulier de la propriété d'associativité, pour résoudre des problèmes de géométrie.
+− Fonction vectorielle de Leibniz.";8;8;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_03_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_03;TG;OBJECTIFS;L’extension à l’espace du produit scalaire de deux vecteurs donne un outil efficace pour les problèmes de distance et d’orthogonalité. Dans cette section, on continue de combiner les outils algébriques (vecteurs, produit scalaire) et la vision géométrique de l’espace, notamment autour de l’orthogonalité : orthogonalité de deux droites, d’un plan et d’une droite, projection orthogonale sur un plan ou sur une droite.;8;8;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_03_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_03;TG;CONTENUS;"− Produit scalaire de deux vecteurs de l’espace. Bilinéarité, symétrie.
+− Orthogonalité de deux vecteurs. Caractérisation par le produit scalaire.
+− Base orthonormée, repère orthonormé.
+− Coordonnées d’un vecteur dans une base orthonormée. Expressions du produit scalaire et de la norme. Expression de la distance entre deux points.  2
+− Développement de u  v , formules de polarisation.
+− Orthogonalité de deux droites, d’un plan et d’une droite. 
+− Vecteur normal à un plan. Étant donnés un point A et un vecteur non nul n , plan  passant par A et normal à n .
+− Projeté orthogonal d’un point sur une droite, sur un plan.";8;8;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_01_03_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_03;TG;CAPACITES_ATTENDUES;"− Utiliser le produit scalaire pour démontrer une orthogonalité, pour calculer un angle, une longueur dans l’espace.
+− Utiliser la projection orthogonale pour déterminer la distance d’un point à une droite ou à un plan.
+− Résoudre des problèmes impliquant des grandeurs et mesures : longueur, angle, aire, volume.
+− Étudier des problèmes de configuration dans l’espace : orthogonalité de deux droites, d’une droite et d’un plan ; lieux géométriques simples, par exemple plan médiateur de deux points.";8;8;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_03_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_03;TG;DEMONSTRATIONS;− Le projeté orthogonal d’un point M sur un plan 𝒫 est le point de 𝒫 le plus proche de M.;8;8;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_03_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_03;TG;APPROFONDISSEMENTS;"− Intersection d’une sphère et d’un plan, plan tangent à une sphère en un point.
+− Sphère circonscrite à un tétraèdre.
+− Fonction scalaire de Leibniz.";8;8;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_04_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_04;TG;OBJECTIFS;L’objectif de cette section est de montrer comment la donnée d’un repère, qu’on supposera orthonormé, permet d’établir un lien entre la géométrie de l’espace et les calculs algébriques dans ℝ3. L’objectif majeur est une bonne maîtrise des représentations paramétriques de droites et des équations de plans.;9;9;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_04_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_04;TG;CONTENUS;"− Représentation paramétrique d’une droite.
+− Équation cartésienne d’un plan.";9;9;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_04_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_04;TG;CAPACITES_ATTENDUES;"− Déterminer une représentation paramétrique d’une droite. Reconnaître une droite donnée par une représentation paramétrique.
+− Déterminer l’équation cartésienne d’un plan dont on connaît un vecteur normal et un point. Reconnaître un plan donné par une équation cartésienne et préciser un vecteur normal à ce plan.
+− Déterminer les coordonnées du projeté orthogonal d’un point sur un plan donné par une équation cartésienne, ou sur une droite donnée par un point et un vecteur directeur.
+− Dans un cadre géométrique repéré, traduire par un système d’équations linéaires des problèmes de types suivants : décider si trois vecteurs forment une base, déterminer les coordonnées d’un vecteur dans une base, étudier une configuration dans l’espace (alignement, colinéarité, parallélisme, coplanarité, intersection et orthogonalité de droites ou de plans), etc. Dans des cas simples, résoudre le système obtenu et interpréter géométriquement les solutions.";9;9;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_01_04_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_04;TG;DEMONSTRATIONS;"
+− Équation cartésienne du plan normal au vecteur n et passant par le point A.";9;9;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_01_04_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01_04;TG;APPROFONDISSEMENTS;"− Déterminer l’intersection de deux plans.
+− Déterminer un vecteur orthogonal à deux vecteurs non colinéaires.
+− Équation d’une sphère dont on connaît le centre et le rayon.
+− Intersection d’une sphère et d’une droite.";9;9;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_01_CONTENUS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_01;TG;CONTENUS;"− La suite (un) tend vers + ∞ si tout intervalle de la forme [A;+∞[ contient toutes les valeurs un à partir d'un certain rang. Cas des suites croissantes non majorées. Suite tendant vers – ∞.
+− La suite (un) converge vers le nombre réel 𝓁 si tout intervalle ouvert contenant 𝓁 contient toutes les valeurs un à partir d'un certain rang.
+− Limites et comparaison. Théorèmes des gendarmes.
+− Opérations sur les limites.
+− Comportement d’une suite géométrique (qn) où q est un nombre réel.
+− Théorème admis : toute suite croissante majorée (ou décroissante minorée) converge.";11;11;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_01_CAPACITES_ATTENDUES_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_01;TG;CAPACITES_ATTENDUES;"− Établir la convergence d’une suite, ou sa divergence vers + ∞ ou – ∞.
+− Raisonner par récurrence pour établir une propriété d’une suite.
+− Étudier des phénomènes d’évolution modélisables par une suite.";11;11;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_01_DEMONSTRATIONS_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_01;TG;DEMONSTRATIONS;"− Toute suite croissante non majorée tend vers + ∞.
+− Limite de (qn), après démonstration par récurrence de l’inégalité de Bernoulli.
+− Divergence vers + ∞ d’une suite minorée par une suite divergeant vers + ∞.
+− Limite en + ∞ et en – ∞ de la fonction exponentielle.";11;11;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_01_ALGORITHMES_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_01;TG;ALGORITHMES;"− Recherche de seuils. 1 5
+− Recherche de valeurs approchées de π, e, 2, , ln(2), etc.";11;11;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_01_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_01;TG;APPROFONDISSEMENTS;"− Propriétés et utilisation des suites adjacentes.
+− Exemples de suites vérifiant une relation de récurrence linéaire d’ordre 2 à coefficients constants.
+− Exemples d’application de la méthode de Newton. Étude de la convergence de la méthode de Héron.";11;11;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_02_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_02;TG;OBJECTIFS;Les opérations sur les limites sont admises. L’utilisation de la composition des limites se fait en contexte.;11;11;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_02_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_02;TG;CONTENUS;"− Limite finie ou infinie d'une fonction en + ∞, en – ∞, en un point. Asymptote parallèle à un axe de coordonnées.
+− Limites faisant intervenir les fonctions de référence étudiées en classe de première : puissances entières, racine carrée, fonction exponentielle.
+− Limites et comparaison.
+− Opérations sur les limites.";11;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_02_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_02;TG;CAPACITES_ATTENDUES;"− Déterminer dans des cas simples la limite d’une suite ou d’une fonction en un point, en ± ∞, en utilisant les limites usuelles, les croissances comparées, les opérations sur les limites, des majorations, minorations ou encadrements, la factorisation du terme prépondérant dans une somme.
+− Faire le lien entre l’existence d’une asymptote parallèle à un axe et celle de la limite correspondante.";12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_02_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_02;TG;DEMONSTRATIONS;− Croissance comparée de x ↦ x n et exp en + ∞.;12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_02_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_02;TG;APPROFONDISSEMENTS;− Asymptotes obliques. Branches infinies.;12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_03_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_03;TG;OBJECTIFS;L’étude de la dérivation, commencée en classe de première, est étendue par l’étude de la dérivée d’une fonction composée et l’introduction de la dérivée seconde. L’étude des fonctions convexes permet de réinvestir et d’enrichir le travail entamé en classe de première sur les dérivées. Elles donnent l’occasion de raisonner en diversifiant les registres : représentations graphiques, tableaux de variations, expressions symboliques.;12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_03_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_03;TG;CONTENUS;"− Composée de deux fonctions, notation v ○ u. Relation (v ○ u)’ = (v’ ○ u) × u’ pour la dérivée de la composée de deux fonctions dérivables.
+− Dérivée seconde d’une fonction.
+− Fonction convexe sur un intervalle : définition par la position relative de la courbe représentative et des sécantes. Pour une fonction deux fois dérivable, équivalence admise avec la position par rapport aux tangentes, la croissance de ƒ’, la positivité de ƒ’’.
+− Point d’inflexion.";12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_03_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_03;TG;CAPACITES_ATTENDUES;"− Calculer la dérivée d’une fonction donnée par une formule simple mettant en jeu opérations algébriques et composition.
+− Calculer la fonction dérivée, déterminer les limites et étudier les variations d'une fonction construite simplement à partir des fonctions de référence.
+− Démontrer des inégalités en utilisant la convexité d’une fonction.
+− Esquisser l’allure de la courbe représentative d’une fonction ƒ à partir de la donnée de tableaux de variations de ƒ, de ƒ’ ou de ƒ’’.
+− Lire sur une représentation graphique de ƒ, de ƒ’ ou de ƒ’’ les intervalles où ƒ est convexe, concave, et les points d’inflexion. Dans le cadre de la résolution de problème, étudier et utiliser la convexité d’une fonction.";12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_03_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_03;TG;DEMONSTRATIONS;− Si ƒ’’ est positive, alors la courbe représentative de ƒ est au-dessus de ses tangentes.;12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_03_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_03;TG;APPROFONDISSEMENTS;"− Courbe de Lorenz.
+− Dérivée n-ième d’une fonction.
+− Inégalité arithmético-géométrique.";12;12;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_04_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_04;TG;OBJECTIFS;La justification de la continuité ou de la dérivabilité d’une fonction sur un intervalle n’est pas un objectif du programme. Hormis pour la fonction exponentielle, l’étude de la réciproque d’une fonction continue n’est pas au programme.;13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_04_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_04;TG;CONTENUS;"− Fonction continue en un point (définition par les limites), sur un intervalle. Toute fonction dérivable est continue.
+− Image d’une suite convergente par une fonction continue.
+− Théorème des valeurs intermédiaires. Cas des fonctions continues strictement monotones.";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_04_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_04;TG;CAPACITES_ATTENDUES;"− Étudier les solutions d’une équation du type ƒ(x) = k : existence, unicité, encadrement.
+− Pour une fonction continue ƒ d’un intervalle dans lui-même, étudier une suite définie par une relation de récurrence un+1 = ƒ(un).";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_04_ALGORITHMES_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_04;TG;ALGORITHMES;"− Méthode de dichotomie.
+− Méthode de Newton, méthode de la sécante.";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_04_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_04;TG;APPROFONDISSEMENTS;"− Démonstration par dichotomie du théorème des valeurs intermédiaires.
+− Fonctions continues de ℝ dans ℝ telles que ƒ(x + y) = ƒ(x) + ƒ(y) pour tous réels x, y.
+− Prolongement par continuité.";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_05_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_05;TG;OBJECTIFS;La fonction logarithme népérien est introduite comme fonction réciproque de la fonction exponentielle étudiée en classe de première. Les élèves s’appuient sur les images mentales des courbes représentatives des fonctions exponentielle et logarithme.;13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_05_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_05;TG;CONTENUS;"− Fonction logarithme népérien, notée ln, construite comme réciproque de la fonction exponentielle.
+− Propriétés algébriques du logarithme.
+− Fonction dérivée du logarithme, variations.
+− Limites en 0 et en + ∞, courbe représentative. Lien entre les courbes représentatives des fonctions logarithme népérien et exponentielle.
+− Croissance comparée du logarithme népérien et de x ↦ x n en 0 et en + ∞.";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_05_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_05;TG;CAPACITES_ATTENDUES;"− Utiliser l’équation fonctionnelle de l’exponentielle ou du logarithme pour transformer une écriture, résoudre une équation, une inéquation.
+− Dans le cadre d’une résolution de problème, utiliser les propriétés des fonctions exponentielle et logarithme.";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_05_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_05;TG;DEMONSTRATIONS;"− Calcul de la fonction dérivée de la fonction logarithme népérien, la dérivabilité étant admise.
+− Limite en 0 de x ↦ x ln(x).";13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_05_ALGORITHMES_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_05;TG;ALGORITHMES;− Algorithme de Briggs pour le calcul du logarithme.;13;13;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_05_APPROFONDISSEMENTS_06;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_05;TG;APPROFONDISSEMENTS;"− Pour α dans ℝ, fonction x ↦ xα. n  x
+− Pour x dans ℝ, limite de 1   .  n";14;14;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_02_06_CONTENUS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_06;TG;CONTENUS;− Fonctions trigonométriques sinus et cosinus : dérivées, variations, courbes représentatives.;14;14;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_06_CAPACITES_ATTENDUES_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_06;TG;CAPACITES_ATTENDUES;"− Résoudre une équation du type cos(x) = a, une inéquation de la forme cos(x) ⩽ a sur [-π,π].
+− Dans le cadre de la résolution de problème, notamment géométrique, étudier une fonction simple définie à partir de fonctions trigonométriques, pour déterminer des variations, un optimum.";14;14;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_02_06_APPROFONDISSEMENTS_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_06;TG;APPROFONDISSEMENTS;− Fonction tangente.;14;14;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_07_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_07;TG;OBJECTIFS;Cette section introduit la notion d’équation différentielle sur des cas simples. Les élèves découvrent en situation le concept d’équation dont l’inconnue est une fonction. L’équation y’ = ƒ est l’occasion de définir la notion de primitive. Par définition, la recherche d’une primitive est l’opération inverse de la dérivation, ce qui permet de traiter les cas usuels par lecture inverse du tableau des dérivées. Il est utile d’admettre ici que toute fonction continue sur un intervalle admet des primitives, résultat qui est démontré dans la section sur le calcul intégral. On note aussi que, pour certaines fonctions, on ne dispose pas de primitive explicite. L’équation y’ = ay + b est l’occasion de réinvestir les propriétés de la fonction exponentielle. Lorsque b = 0, on remarque que la somme de deux solutions et le produit d’une solution par une constante sont encore solutions. Pour travailler le concept d’équation différentielle, on peut donner d’autres exemples d’équations différentielles, dont on peut donner des solutions sans en faire de résolution complète : y’ = y2, y’’ + 2y = 0. Aucune connaissance n’est exigible sur ces exemples.;14;14;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_07_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_07;TG;CONTENUS;"− Équation différentielle y’ = ƒ. Notion de primitive d’une fonction continue sur un intervalle. Deux primitives d’une même fonction continue sur un intervalle diffèrent d’une constante.
+− Primitives des fonctions de référence : x ↦ xn pour n ∈ ℤ, x  , exponentielle, x sinus, cosinus.
+− Équation différentielle y’ = ay, où a est un nombre réel ; allure des courbes. Équation différentielle y’ = ay + b.";14;14;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_07_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_07;TG;CAPACITES_ATTENDUES;"− Calculer une primitive en utilisant les primitives de référence et les fonctions de la forme (v’ ○ u) × u’.
+− Pour une équation différentielle y’ = ay + b (a ≠ 0) : déterminer une solution particulière constante ; utiliser cette solution pour déterminer toutes les solutions.
+− Pour une équation différentielle y’ = ay + ƒ : à partir de la donnée d’une solution particulière, déterminer toutes les solutions.";14;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_07_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_07;TG;DEMONSTRATIONS;"− Deux primitives d’une même fonction continue sur un intervalle diffèrent d’une constante.
+− Résolution de l’équation différentielle y’ = ay où a est un nombre réel.";15;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_07_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_07;TG;APPROFONDISSEMENTS;− Autres exemples d’équations différentielles, éventuellement en lien avec une modélisation, par exemple l’équation logistique.;15;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_07_ALGORITHMES_06;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_07;TG;ALGORITHMES;− Résolution par la méthode d’Euler de y’ = ƒ, de y’ = ay + b.;15;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_08_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_08;TG;OBJECTIFS;La définition de l’intégrale s’appuie sur la notion intuitive d’aire rencontrée au collège. Les élèves développent une vision graphique de l’intégrale et maîtrisent le calcul approché, en liaison avec la méthode des rectangles et le calcul exact par les primitives. On met en regard les écritures a ƒ( x) dx et ni 1 ƒ( xi ) xi . b;15;15;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_02_08_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_08;TG;CONTENUS;"− Définition de l’intégrale d'une fonction continue positive définie sur un segment [a,b], comme aire sous la courbe représentative de ƒ. Notation a ƒ( x) dx . b
+− Théorème : si ƒ est une fonction continue positive sur [a,b], alors la fonction Fa définie sur [a,b] par Fa ( x )  a ƒ(t ) dt est la primitive de ƒ qui s’annule en a. x
+− Sous les hypothèses du théorème, relation ab ƒ( x) dx = F(b) - F(a) où F est une primitive quelconque de ƒ. Notation F ( x )ab .
+− Théorème : toute fonction continue sur un intervalle admet des primitives.
+− Définition par les primitives de ab ƒ( x) dx lorsque ƒ est une fonction continue de signe quelconque sur un intervalle contenant a et b.
+− Linéarité, positivité et intégration des inégalités. Relation de Chasles.
+− Valeur moyenne d’une fonction.
+− Intégration par parties.";15;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_08_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_08;TG;CAPACITES_ATTENDUES;"− Estimer graphiquement ou encadrer une intégrale, une valeur moyenne.
+− Calculer une intégrale à l’aide d’une primitive, à l’aide d’une intégration par parties.
+− Majorer (minorer) une intégrale à partir d'une majoration (minoration) d'une fonction par une autre fonction.
+− Calculer l’aire entre deux courbes.
+− Étudier une suite d’intégrales, vérifiant éventuellement une relation de récurrence.
+− Interpréter une intégrale, une valeur moyenne dans un contexte issu d’une autre discipline.";15;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_08_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_08;TG;DEMONSTRATIONS;"− Pour une fonction positive croissante ƒ sur [a,b], la fonction x  a ƒ(t ) dt est une x primitive de ƒ. Pour toute primitive F d ƒ, relation a ƒ( x) dx = F(b) - F(a). b
+− Intégration par parties.";15;15;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_02_08_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_08;TG;APPROFONDISSEMENTS;"− Approximation d'une aire par l'utilisation de suites adjacentes.
+− Encadrement de H n  nk 1 par des intégrales. k";16;16;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_02_08_ALGORITHMES_06;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02_08;TG;ALGORITHMES;"− Méthodes des rectangles, des milieux, des trapèzes.
+− Méthode de Monte-Carlo.
+− Algorithme de Brouncker pour le calcul de ln(2).";16;16;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_01_CONTENUS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_01;TG;CONTENUS;"− Modèle de la succession d’épreuves indépendantes : la probabilité d’une issue (x1,…,xn) est égale au produit des probabilités des composantes xi. Représentation par un produit cartésien, par un arbre.
+− Épreuve de Bernoulli, loi de Bernoulli.
+− Schéma de Bernoulli : répétition de n épreuves de Bernoulli indépendantes.
+− Loi binomiale ℬ(n,p) : loi du nombre de succès. Expression à l’aide des coefficients binomiaux.";17;17;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_01_CAPACITES_ATTENDUES_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_01;TG;CAPACITES_ATTENDUES;"− Modéliser une situation par une succession d’épreuves indépendantes, ou une succession de deux ou trois épreuves quelconques. Représenter la situation par un arbre. Calculer une probabilité en utilisant l’indépendance, des probabilités conditionnelles, la formule des probabilités totales.
+− Modéliser une situation par un schéma de Bernoulli, par une loi binomiale.
+− Utiliser l’expression de la loi binomiale pour résoudre un problème de seuil, de comparaison, d’optimisation relatif à des probabilités de nombre de succès.
+− Dans le cadre d’une résolution de problème modélisé par une variable binomiale X, calculer numériquement une probabilité du type P(X = k), P(X ⩽ k), P(k ⩽ X ⩽ k’ ), en s’aidant au besoin d’un algorithme ; chercher un intervalle I pour lequel la probabilité P(X ∈ I ) est inférieure à une valeur donnée α, ou supérieure à 1 - α.";17;17;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_03_01_DEMONSTRATIONS_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_01;TG;DEMONSTRATIONS;− Expression de la probabilité de k succès dans le schéma de Bernoulli.;17;17;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_01_ALGORITHMES_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_01;TG;ALGORITHMES;"− Simulation de la planche de Galton.
+− Problème de la surréservation. Étant donné une variable aléatoire binomiale X et un réel strictement positif α, détermination du plus petit entier k tel que P(X > k) ⩽ α.
+− Simulation d’un échantillon d’une variable aléatoire.";17;17;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_03_01_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_01;TG;APPROFONDISSEMENTS;"− Loi géométrique.
+− Introduction de la loi de Poisson comme limite de lois binomiales. Interprétation (événements rares).";17;17;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_02_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_02;TG;OBJECTIFS;"Cette section prolonge le programme de la classe de première sur les variables aléatoires en considérant des modèles probabilistes où interviennent deux ou plusieurs variables aléatoires, l’intérêt se portant sur leur somme, et notamment sur l’espérance et la variance de cette somme. Les élèves ont déjà eu l’occasion, dans les classes antérieures, de rencontrer des exemples qui entrent dans ce cadre : lancers de deux dés, tirage de boules numérotées dans une urne (avec ou sans remise), roues de loterie, etc. En classe terminale, le schéma de Bernoulli est un exemple fondamental, où le nombre de succès peut être représenté comme somme de variables de Bernoulli indépendantes de même loi ; plus généralement, le modèle de la succession d’épreuves indépendantes fournit naturellement des exemples de variables aléatoires indépendantes. L’objectif est de rendre l’élève capable d’utiliser la linéarité de l’espérance pour des variables aléatoires quelconque et l’additivité de la variance pour des variables indépendantes dans diverses situations. Il s’agit de développer l’intuition probabiliste, les compétences de calcul et de raisonnement sur les variables aléatoires. La démonstration de la linéarité de l’espérance nécessite de formaliser les variables aléatoires comme des fonctions sur l’univers et d’utiliser l’expression de l’espérance comme moyenne pondérée sur l’ensemble des issues. Le professeur peut choisir de l’admettre, ou de la justifier sur un exemple. Les variables indépendantes considérées dans le programme sont toujours envisagées dans le cadre de la succession d’épreuves indépendantes. L’hypothèse d’indépendance étant constitutive du modèle considéré, toute question visant à justifier l’indépendance de variables aléatoires données a priori est en dehors des objectifs du programme. L’additivité de la variance pour la somme de deux variables indépendantes est admise. La relation E(XY) = E(X)E(Y) pour des variables indépendantes n’est pas un attendu du programme.";17;18;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_02_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_02;TG;CONTENUS;"− Somme de deux variables aléatoires. Linéarité de l'espérance : E(X + Y) = E(X) + E(Y) et E(aX) = aE(X).
+− Dans le cadre de la succession d’épreuves indépendantes, exemples de variables indépendantes X,Y et relation d’additivité V(X + Y) = V(X) + V(Y). Relation V(aX) = a2V(X).
+− Application à l’espérance, la variance et l’écart type de la loi binomiale.
+− Échantillon de taille n d’une loi de probabilité : liste (X1,…,Xn) de variables indépendantes identiques suivant cette loi. Espérance, variance, écart type de la somme Sn = X1 + … + Xn et de la moyenne Mn = Sn /n.";18;18;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_02_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_02;TG;CAPACITES_ATTENDUES;"− Représenter une variable comme somme de variables aléatoires plus simples.
+− Calculer l’espérance d’une variable aléatoire, notamment en utilisant la propriété de linéarité.
+− Calculer la variance d’une variable aléatoire, notamment en l’exprimant comme somme de variables aléatoires indépendantes.";18;18;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_02_DEMONSTRATIONS_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_02;TG;DEMONSTRATIONS;− Espérance et variance de la loi binomiale.;18;18;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_02_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_02;TG;APPROFONDISSEMENTS;− Relation E(XY) = E(X)E(Y) pour des variables aléatoires indépendantes X,Y. Application à la variance de X + Y.;18;18;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_03_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_03;TG;OBJECTIFS;"L’objectif de cette section est d’une part d’approfondir le sens de l’écart-type comme mesure de dispersion, d’autre part de couronner la partie « Probabilités » par la loi des grands nombres, qui est le premier résultat fondamental de la théorie des probabilités et dont les implications sont considérables. Pour cela, l’outil employé est l’inégalité de Bienaymé-Tchebychev dont l’idée fondamentale est mise en valeur : l’écart type  d’une variable aléatoire X est l’unité naturelle pour étudier la dispersion de X autour de son espérance  ; par construction, il est naturel d’observer des écarts de X à  en deçà ou au-delà de . L’inégalité de Bienaymé-Tchebychev montre qu’en revanche des écarts de X à  de quelques  deviennent improbables. Ce résultat, d’une importance majeure en lui-même, permet de plus d’établir la loi des grands nombres, selon laquelle l’écart entre la moyenne d’un échantillon d’une variable aléatoire et l’espérance de cette variable ne dépasse une valeur donnée à l’avance qu’avec une probabilité qui tend vers zéro quand la taille de l’échantillon tend vers l’infini. Il est utile de faire remarquer aux élèves que le caractère universel de l’inégalité de Bienaymé-Tchebychev a pour contrepartie le fait qu’elle est loin d’être optimale : ainsi, elle montre qu’un écart à  supérieur à 2 est de probabilité inférieure ou égale à 1/4 alors que les élèves ont découvert par simulation que cette probabilité est souvent majorée par 0,05. En avoir conscience ne diminue pas l’intérêt théorique de l’inégalité de Bienaymé- Tchebychev, et permet de mettre en évidence des cas de raisonnement par conditions suffisantes, par exemple la recherche d’une taille d’échantillon pour majorer une probabilité.";19;19;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_03_CONTENUS_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_03;TG;CONTENUS;"− Inégalité de Bienaymé-Tchebychev. Pour une variable aléatoire X d’espérance  et V(X) de variance V, et quel que soit le réel strictement positif  : P (│X - │⩾  ) ⩽ . 2
+− Inégalité de concentration. Si Mn est la variable aléatoire moyenne d’un échantillon de taille n d’une variable aléatoire d’espérance  et de variance V, alors pour tout  > 0, V P (│Mn - │⩾  ) ⩽ n 2
+− Loi des grands nombres.";19;19;SRC_BO_2019_08_MATH_OPTIONS;A_VERIFIER
+ITM_MAT_TERM_G_2019_03_03_CAPACITES_ATTENDUES_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_03;TG;CAPACITES_ATTENDUES;− Appliquer l’inégalité de Bienaymé-Tchebychev pour définir une taille d’échantillon, en fonction de la précision et du risque choisi.;19;19;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_03_ALGORITHMES_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_03;TG;ALGORITHMES;"− Calculer la probabilité de (│Sn - pn│ > n ), où Sn est une variable aléatoire qui suit une loi binomiale ℬ(n,p). Comparer avec l’inégalité de Bienaymé-Tchebychev.
+− Simulation d’une marche aléatoire.
+− Simuler N échantillons de taille n d’une variable aléatoire d’espérance  et d’écart type . Calculer l’écart type s de la série des moyennes des échantillons observés, à comparer à  / n . Calculer la proportion des échantillons pour lesquels l’écart entre la moyenne et  est inférieur ou égal à ks, ou à k / n , pour k = 1, 2, 3.";19;19;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_03_03_APPROFONDISSEMENTS_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03_03;TG;APPROFONDISSEMENTS;"− Estimation.
+− Marche aléatoire.
+− Exemples d’application issus d’autres disciplines pour diverses valeurs de n : sondage (par exemple n = 1 000), étude du sex ratio (par exemple n = 106), demi-vie d’atomes radioactifs (n = 1023).";19;19;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_04_01_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_04_01;TG;OBJECTIFS;La génération des listes en compréhension et en extension est mise en lien avec la notion d’ensemble. Les conditions apparaissant dans les listes définies en compréhension permettent de travailler la logique. Afin d’éviter des confusions, on se limite aux listes sans présenter d’autres types de collections.;20;20;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_04_01_CAPACITES_ATTENDUES_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_04_01;TG;CAPACITES_ATTENDUES;"− Générer une liste (en extension, par ajouts successifs ou en compréhension).
+− Manipuler des éléments d’une liste (ajouter, supprimer…) et leurs indices.
+− Parcourir une liste.
+− Itérer sur les éléments d’une liste.";20;20;SRC_BO_2019_08_MATH_OPTIONS;OK
+ITM_MAT_TERM_G_2019_05_OBJECTIFS_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_05;TG;OBJECTIFS;"L’apprentissage des notations mathématiques et de la logique est transversal à tous les chapitres du programme. Aussi, il importe d’y travailler d’abord dans des contextes où ils se présentent naturellement, puis de prévoir des temps où les concepts et types de raisonnement sont étudiés, après avoir été rencontrés plusieurs fois en situation. Les élèves doivent connaître les notions d’élément d’un ensemble, de sous-ensemble, d’appartenance et d’inclusion, de réunion, d’intersection et de complémentaire, et savoir utiliser les symboles de base correspondant : ∈, ⊂, ⋂, ⋃, ainsi que la notation des ensembles de nombres et des intervalles. Ils connaissent également la notion de couple, de triplet et plus généralement de n-uplet et celle de produit cartésien. Pour le complémentaire d’un sous-ensemble A de E, on utilise la notation des probabilités Ā, ou la notation E \ A. La notion de fonction, que les élèves manipulent depuis le cycle 4, est mise en évidence dans les diverses parties du programme : fonctions d’une variable réelle, suites, variables aléatoires, exemples en géométrie. La notion de bijection est rencontrée naturellement en analyse, en géométrie (notamment bijection entre le plan et ℝ2, l’espace et ℝ3), en dénombrement. La composition de deux fonctions est utilisée principalement dans le cadre des fonctions d’une variable réelle. Le symbole de somme 𝚺 peut être introduit et utilisé pour écrire certaines expressions de façon concise, mais la manipulation de ce symbole pour démontrer des égalités n’est pas un objectif du programme. Les élèves apprennent en situation à :
+− reconnaître ce qu’est une proposition mathématique, à utiliser des variables pour écrire des propositions mathématiques ;
+− lire et écrire des propositions contenant les connecteurs « et », « ou » ;
+− formuler la négation de propositions simples, pouvant contenir un ou deux quantificateurs ;
+− mobiliser un contre-exemple pour montrer qu'une proposition est fausse ;
+− formuler une implication, une équivalence logique, et à les mobiliser dans un raisonnement simple ;
+− formuler la réciproque d’une implication, ou sa contraposée ;
+− lire et écrire des propositions contenant une quantification universelle ou existentielle (les symboles ∀ et ∃ ne sont pas exigibles) ;
+− raisonner par disjonctions des cas, par l’absurde, par contraposée ;
+− raisonner par équivalence, utiliser une propriété caractéristique ;
+− distinguer condition nécessaire et condition suffisante ;
+− démontrer une propriété par récurrence.";20;21;SRC_BO_2019_08_MATH_OPTIONS;OK

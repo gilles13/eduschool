@@ -1,0 +1,925 @@
+{
+  "notion_id": "raisonnement_analyse_synthese",
+  "questions": [
+    {
+      "id": "ANALYSE-SYNTHESE-001",
+      "type": "qcm",
+      "enonce": "On veut résoudre [[equation]]. Dans l’analyse, on suppose que 𝑥 est solution. En élevant au carré puis en factorisant, on obtient [[factorisation]], donc les candidats [[candidat_positif]] et [[candidat_negatif]]. Que conclut la synthèse ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "L’analyse fournit seulement des candidats. On les teste dans l’équation de départ : [[verification_bonne]], tandis que [[verification_rejet]]. La synthèse conserve donc [[bonne]].",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(1) = 𝑥",
+            "equation_carree": "𝑥² = 1",
+            "factorisation": "(𝑥 − 1)(𝑥 + 1) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(2 − 𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 2 − 𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 2) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(𝑥 + 2) = 𝑥",
+            "equation_carree": "𝑥² = 𝑥 + 2",
+            "factorisation": "(𝑥 − 2)(𝑥 + 1) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(4) = 𝑥",
+            "equation_carree": "𝑥² = 4",
+            "factorisation": "(𝑥 − 2)(𝑥 + 2) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(3 − 2𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 3 − 2𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 3) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(2𝑥 + 3) = 𝑥",
+            "equation_carree": "𝑥² = 2𝑥 + 3",
+            "factorisation": "(𝑥 − 3)(𝑥 + 1) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(6 − 𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 6 − 𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 3) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(𝑥 + 6) = 𝑥",
+            "equation_carree": "𝑥² = 𝑥 + 6",
+            "factorisation": "(𝑥 − 3)(𝑥 + 2) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(4 − 3𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 4 − 3𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 4) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-4",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -4 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -4",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(16) = 4 ≠ -4"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(3𝑥 + 4) = 𝑥",
+            "equation_carree": "𝑥² = 3𝑥 + 4",
+            "factorisation": "(𝑥 − 4)(𝑥 + 1) = 0",
+            "candidat_positif": "4",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 4 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 4 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(16) = 4",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(9) = 𝑥",
+            "equation_carree": "𝑥² = 9",
+            "factorisation": "(𝑥 − 3)(𝑥 + 3) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(8 − 2𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 8 − 2𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 4) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-4",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -4 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -4",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(16) = 4 ≠ -4"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(2𝑥 + 8) = 𝑥",
+            "equation_carree": "𝑥² = 2𝑥 + 8",
+            "factorisation": "(𝑥 − 4)(𝑥 + 2) = 0",
+            "candidat_positif": "4",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 4 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 4 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(16) = 4",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(5 − 4𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 5 − 4𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 5) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-5",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -5 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -5",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(25) = 5 ≠ -5"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(4𝑥 + 5) = 𝑥",
+            "equation_carree": "𝑥² = 4𝑥 + 5",
+            "factorisation": "(𝑥 − 5)(𝑥 + 1) = 0",
+            "candidat_positif": "5",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 5 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 5 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(25) = 5",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(12 − 𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 12 − 𝑥",
+            "factorisation": "(𝑥 − 3)(𝑥 + 4) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-4",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -4 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -4",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(16) = 4 ≠ -4"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "equation": "√(𝑥 + 12) = 𝑥",
+            "equation_carree": "𝑥² = 𝑥 + 12",
+            "factorisation": "(𝑥 − 4)(𝑥 + 3) = 0",
+            "candidat_positif": "4",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 4 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 4 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(16) = 4",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(6 − 5𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 6 − 5𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 6) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-6",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -6 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -6",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(36) = 6 ≠ -6"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(5𝑥 + 6) = 𝑥",
+            "equation_carree": "𝑥² = 5𝑥 + 6",
+            "factorisation": "(𝑥 − 6)(𝑥 + 1) = 0",
+            "candidat_positif": "6",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 6 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 6 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(36) = 6",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(12 − 4𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 12 − 4𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 6) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-6",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -6 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -6",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(36) = 6 ≠ -6"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(4𝑥 + 12) = 𝑥",
+            "equation_carree": "𝑥² = 4𝑥 + 12",
+            "factorisation": "(𝑥 − 6)(𝑥 + 2) = 0",
+            "candidat_positif": "6",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 6 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 6 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(36) = 6",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(7 − 6𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 7 − 6𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 7) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-7",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -7 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -7",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(49) = 7 ≠ -7"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(6𝑥 + 7) = 𝑥",
+            "equation_carree": "𝑥² = 6𝑥 + 7",
+            "factorisation": "(𝑥 − 7)(𝑥 + 1) = 0",
+            "candidat_positif": "7",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 7 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 7 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(49) = 7",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(18 − 3𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 18 − 3𝑥",
+            "factorisation": "(𝑥 − 3)(𝑥 + 6) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-6",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -6 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -6",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(36) = 6 ≠ -6"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(3𝑥 + 18) = 𝑥",
+            "equation_carree": "𝑥² = 3𝑥 + 18",
+            "factorisation": "(𝑥 − 6)(𝑥 + 3) = 0",
+            "candidat_positif": "6",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 6 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 6 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(36) = 6",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(14 − 5𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 14 − 5𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 7) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-7",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -7 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -7",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(49) = 7 ≠ -7"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(5𝑥 + 14) = 𝑥",
+            "equation_carree": "𝑥² = 5𝑥 + 14",
+            "factorisation": "(𝑥 − 7)(𝑥 + 2) = 0",
+            "candidat_positif": "7",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 7 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 7 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(49) = 7",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(8 − 7𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 8 − 7𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 8) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-8",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -8 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -8",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(64) = 8 ≠ -8"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(7𝑥 + 8) = 𝑥",
+            "equation_carree": "𝑥² = 7𝑥 + 8",
+            "factorisation": "(𝑥 − 8)(𝑥 + 1) = 0",
+            "candidat_positif": "8",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 8 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 8 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(64) = 8",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(24 − 2𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 24 − 2𝑥",
+            "factorisation": "(𝑥 − 4)(𝑥 + 6) = 0",
+            "candidat_positif": "4",
+            "candidat_negatif": "-6",
+            "bonne": "𝑥 = 4 uniquement",
+            "d1": "𝑥 = -6 uniquement",
+            "d2": "𝑥 = 4 ou 𝑥 = -6",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(16) = 4",
+            "verification_rejet": "√(36) = 6 ≠ -6"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(2𝑥 + 24) = 𝑥",
+            "equation_carree": "𝑥² = 2𝑥 + 24",
+            "factorisation": "(𝑥 − 6)(𝑥 + 4) = 0",
+            "candidat_positif": "6",
+            "candidat_negatif": "-4",
+            "bonne": "𝑥 = 6 uniquement",
+            "d1": "𝑥 = -4 uniquement",
+            "d2": "𝑥 = 6 ou 𝑥 = -4",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(36) = 6",
+            "verification_rejet": "√(16) = 4 ≠ -4"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(21 − 4𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 21 − 4𝑥",
+            "factorisation": "(𝑥 − 3)(𝑥 + 7) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-7",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -7 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -7",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(49) = 7 ≠ -7"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(4𝑥 + 21) = 𝑥",
+            "equation_carree": "𝑥² = 4𝑥 + 21",
+            "factorisation": "(𝑥 − 7)(𝑥 + 3) = 0",
+            "candidat_positif": "7",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 7 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 7 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(49) = 7",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "equation": "√(16 − 6𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 16 − 6𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 8) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-8",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -8 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -8",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(64) = 8 ≠ -8"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(9 − 8𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 9 − 8𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 9) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-9",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -9 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -9",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(81) = 9 ≠ -9"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(8𝑥 + 9) = 𝑥",
+            "equation_carree": "𝑥² = 8𝑥 + 9",
+            "factorisation": "(𝑥 − 9)(𝑥 + 1) = 0",
+            "candidat_positif": "9",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 9 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 9 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(81) = 9",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(18 − 7𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 18 − 7𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 9) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-9",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -9 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -9",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(81) = 9 ≠ -9"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(7𝑥 + 18) = 𝑥",
+            "equation_carree": "𝑥² = 7𝑥 + 18",
+            "factorisation": "(𝑥 − 9)(𝑥 + 2) = 0",
+            "candidat_positif": "9",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 9 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 9 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(81) = 9",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(10 − 9𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 10 − 9𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 10) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-10",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -10 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -10",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(100) = 10 ≠ -10"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(9𝑥 + 10) = 𝑥",
+            "equation_carree": "𝑥² = 9𝑥 + 10",
+            "factorisation": "(𝑥 − 10)(𝑥 + 1) = 0",
+            "candidat_positif": "10",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 10 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 10 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(100) = 10",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(27 − 6𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 27 − 6𝑥",
+            "factorisation": "(𝑥 − 3)(𝑥 + 9) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-9",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -9 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -9",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(81) = 9 ≠ -9"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(6𝑥 + 27) = 𝑥",
+            "equation_carree": "𝑥² = 6𝑥 + 27",
+            "factorisation": "(𝑥 − 9)(𝑥 + 3) = 0",
+            "candidat_positif": "9",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 9 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 9 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(81) = 9",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(20 − 8𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 20 − 8𝑥",
+            "factorisation": "(𝑥 − 2)(𝑥 + 10) = 0",
+            "candidat_positif": "2",
+            "candidat_negatif": "-10",
+            "bonne": "𝑥 = 2 uniquement",
+            "d1": "𝑥 = -10 uniquement",
+            "d2": "𝑥 = 2 ou 𝑥 = -10",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(4) = 2",
+            "verification_rejet": "√(100) = 10 ≠ -10"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(8𝑥 + 20) = 𝑥",
+            "equation_carree": "𝑥² = 8𝑥 + 20",
+            "factorisation": "(𝑥 − 10)(𝑥 + 2) = 0",
+            "candidat_positif": "10",
+            "candidat_negatif": "-2",
+            "bonne": "𝑥 = 10 uniquement",
+            "d1": "𝑥 = -2 uniquement",
+            "d2": "𝑥 = 10 ou 𝑥 = -2",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(100) = 10",
+            "verification_rejet": "√(4) = 2 ≠ -2"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(11 − 10𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 11 − 10𝑥",
+            "factorisation": "(𝑥 − 1)(𝑥 + 11) = 0",
+            "candidat_positif": "1",
+            "candidat_negatif": "-11",
+            "bonne": "𝑥 = 1 uniquement",
+            "d1": "𝑥 = -11 uniquement",
+            "d2": "𝑥 = 1 ou 𝑥 = -11",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(1) = 1",
+            "verification_rejet": "√(121) = 11 ≠ -11"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(10𝑥 + 11) = 𝑥",
+            "equation_carree": "𝑥² = 10𝑥 + 11",
+            "factorisation": "(𝑥 − 11)(𝑥 + 1) = 0",
+            "candidat_positif": "11",
+            "candidat_negatif": "-1",
+            "bonne": "𝑥 = 11 uniquement",
+            "d1": "𝑥 = -1 uniquement",
+            "d2": "𝑥 = 11 ou 𝑥 = -1",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(121) = 11",
+            "verification_rejet": "√(1) = 1 ≠ -1"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(36 − 5𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 36 − 5𝑥",
+            "factorisation": "(𝑥 − 4)(𝑥 + 9) = 0",
+            "candidat_positif": "4",
+            "candidat_negatif": "-9",
+            "bonne": "𝑥 = 4 uniquement",
+            "d1": "𝑥 = -9 uniquement",
+            "d2": "𝑥 = 4 ou 𝑥 = -9",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(16) = 4",
+            "verification_rejet": "√(81) = 9 ≠ -9"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(5𝑥 + 36) = 𝑥",
+            "equation_carree": "𝑥² = 5𝑥 + 36",
+            "factorisation": "(𝑥 − 9)(𝑥 + 4) = 0",
+            "candidat_positif": "9",
+            "candidat_negatif": "-4",
+            "bonne": "𝑥 = 9 uniquement",
+            "d1": "𝑥 = -4 uniquement",
+            "d2": "𝑥 = 9 ou 𝑥 = -4",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(81) = 9",
+            "verification_rejet": "√(16) = 4 ≠ -4"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(30 − 7𝑥) = 𝑥",
+            "equation_carree": "𝑥² = 30 − 7𝑥",
+            "factorisation": "(𝑥 − 3)(𝑥 + 10) = 0",
+            "candidat_positif": "3",
+            "candidat_negatif": "-10",
+            "bonne": "𝑥 = 3 uniquement",
+            "d1": "𝑥 = -10 uniquement",
+            "d2": "𝑥 = 3 ou 𝑥 = -10",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(9) = 3",
+            "verification_rejet": "√(100) = 10 ≠ -10"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "equation": "√(7𝑥 + 30) = 𝑥",
+            "equation_carree": "𝑥² = 7𝑥 + 30",
+            "factorisation": "(𝑥 − 10)(𝑥 + 3) = 0",
+            "candidat_positif": "10",
+            "candidat_negatif": "-3",
+            "bonne": "𝑥 = 10 uniquement",
+            "d1": "𝑥 = -3 uniquement",
+            "d2": "𝑥 = 10 ou 𝑥 = -3",
+            "d3": "Aucune de ces deux valeurs",
+            "verification_bonne": "√(100) = 10",
+            "verification_rejet": "√(9) = 3 ≠ -3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSE-SYNTHESE-ETAPES",
+      "type": "qcm",
+      "enonce": "Dans un raisonnement par analyse-synthèse, quel enchaînement décrit correctement les deux étapes ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Analyse : supposer une solution et en déduire des candidats. Synthèse : vérifier les candidats dans le problème de départ."
+      },
+      "propositions": [
+        "Analyse : supposer une solution et en déduire des candidats. Synthèse : vérifier les candidats dans le problème de départ.",
+        "Analyse : essayer des valeurs au hasard. Synthèse : choisir celle qui semble la plus proche.",
+        "Analyse : vérifier une valeur. Synthèse : transformer ensuite l’équation pour trouver des candidats.",
+        "Analyse : remplacer chaque égalité par ⇔. Synthèse : recopier la dernière ligne."
+      ],
+      "correction": "L’analyse cherche des conditions nécessaires : toute solution doit appartenir à la liste des candidats obtenus. La synthèse revient au problème initial et détermine lesquels sont réellement solutions."
+    },
+    {
+      "id": "ANALYSE-SYNTHESE-EQUIVALENCE",
+      "type": "qcm",
+      "enonce": "On sait que √(𝑥 + 6) = 𝑥 implique 𝑥 + 6 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 6) = 𝑥 ⇔ 𝑥 + 6 = 𝑥² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ."
+      },
+      "propositions": [
+        "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ.",
+        "Oui : élever au carré donne toujours une équation équivalente.",
+        "Oui : le symbole ⇔ peut remplacer n’importe quelle suite de calculs.",
+        "Non : deux équations ne peuvent jamais être équivalentes."
+      ],
+      "correction": "Ici, l’équation au carré donne les candidats 3 et −2. Mais −2 ne vérifie pas √(𝑥 + 6) = 𝑥. L’implication utilisée pendant l’analyse ne suffit donc pas à établir une équivalence."
+    },
+    {
+      "id": "ANALYSE-SYNTHESE-BOITE",
+      "type": "qcm",
+      "enonce": "L’analyse de √(𝑥 + 6) = 𝑥 fournit les candidats 3 et −2. Dans la synthèse, on vérifie √(−2 + 6) = 2 ≠ −2. Quel candidat doit être placé dans □ comme solution conservée : 𝑥 = □ ?",
+      "presentation": {
+        "type": "boite"
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "3"
+      },
+      "propositions": [
+        "3",
+        "−2",
+        "2",
+        "−3"
+      ],
+      "correction": "Le candidat −2 est rejeté par la synthèse. Le candidat 3 vérifie √(3 + 6) = 3 : la solution est 𝑥 = 3."
+    },
+    {
+      "id": "ANALYSE-SYNTHESE-MOT-A-TROU",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on la première partie du raisonnement, dans laquelle on suppose qu’une solution existe et on cherche les conditions qu’elle doit vérifier ? Choisis le mot à trou.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "analyse": "a _ _ _ _ _ e",
+          "synthèse": "s _ _ _ _ _ _ e",
+          "équivalence": "é _ _ _ _ _ _ _ _ _ e",
+          "solution": "s _ _ _ _ _ _ n"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "analyse"
+      },
+      "propositions": [
+        "analyse",
+        "synthèse",
+        "équivalence",
+        "solution"
+      ],
+      "correction": "L’analyse part d’une solution supposée et en déduit des conditions nécessaires, donc une liste de candidats possibles."
+    },
+    {
+      "id": "ANALYSE-SYNTHESE-MOT-MASQUE",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on la relation entre deux équations qui ont exactement les mêmes solutions ? Choisis le mot masqué.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "équivalence": "É________E",
+          "implication": "I________N",
+          "analyse": "A________E",
+          "synthèse": "S________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "équivalence"
+      },
+      "propositions": [
+        "équivalence",
+        "implication",
+        "analyse",
+        "synthèse"
+      ],
+      "correction": "Deux équations sont équivalentes lorsqu’elles ont exactement le même ensemble de solutions. Le symbole ⇔ ne s’emploie que lorsque cette équivalence est justifiée."
+    }
+  ]
+}

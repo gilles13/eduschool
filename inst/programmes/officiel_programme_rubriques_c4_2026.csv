@@ -1,0 +1,404 @@
+rubrique_id;programme_id;theme_item_id;niveau;rubrique;texte_officiel_extrait;page_debut;page_fin;source_id;controle_formules
+ITM_MAT_C4_01_01_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_01;5E;AUTOMATISMES;"− Mobiliser les critères de divisibilité par 2, 5 et 10 vus en CM1 et CM2.
+− Déterminer le quotient et le reste dans une division euclidienne, par exemple, savoir que 17 = 3 × 5 + 2.
+− Utiliser les tables de multiplication pour factoriser des nombres entiers décomposables en produit de deux nombres différents de 1, par exemple, 21 = 3 × 7.
+− Savoir calculer des produits en lien avec les tables : 0,6 × 7 ; 40 × 0,03.
+− Multiplier et diviser par 10, 100, 1 000.
+− Additionner et soustraire des décimaux, par exemple, 2,7 + 1,4 ; 3,4 – 0,8.";7;7;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_01_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_01;5E;OBJECTIFS;"Additionner, soustraire, multiplier et diviser pour résoudre des problèmes et contrôler la vraisemblance de son résultat.
+Connaitre le sens et les situations d’emploi de ces opérations.
+Diviser par un nombre décimal.
+Enchainer des opérations.
+Traduire un problème, une succession donnée d’opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses.
+Nommer un calcul, distinguer sommes et produits, termes et facteurs.
+Connaitre et utiliser les priorités opératoires.
+Connaitre et utiliser la distributivité simple sur des exemples numériques.
+Utiliser les notions de multiples et diviseurs.
+Connaitre les critères de divisibilité par 3 et par 9.
+Mobiliser un algorithme dans le cadre du calcul numérique.";7;7;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_01_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_01;5E;PROLONGEMENTS;− Notion de nombre premier et développements sur ce thème (existence d’un nombre infini de nombres premiers, crible d’Ératosthène, etc.).;7;7;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_02_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_02;5E;AUTOMATISMES;"− Additionner, soustraire, multiplier des nombres décimaux à une ou deux décimales.
+− Savoir que pour compléter une addition à trou, on utilise une soustraction : 2 + ... = 7 se complète en calculant 7 – 2.";7;7;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_02_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_02;5E;OBJECTIFS;"Définir les nombres relatifs.
+Définir l’opposé et la valeur absolue d’un nombre.
+Définir la notion de nombre positif, strictement positif, négatif, strictement négatif.
+Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro
+(température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes.
+Lire l’abscisse d’un nombre relatif sur une droite graduée et placer un nombre relatif d’abscisse donnée.
+Comparer et ranger dans l’ordre croissant et décroissant des nombres décimaux relatifs.
+Additionner deux nombres décimaux relatifs.
+Additionner plusieurs nombres décimaux relatifs.
+Soustraire deux nombres décimaux relatifs.
+Connaitre et justifier les situations dans lesquelles des parenthèses sont indispensables au sens des écritures.
+Simplifier l’écriture de sommes comportant des parenthèses.
+Enchainer additions et soustractions de décimaux relatifs.
+Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs.";7;8;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_02_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_02;5E;PROLONGEMENTS;− Premières apparitions des nombres négatifs avec Brahmagupta (600), dont l’existence était toujours niée au XVIIe siècle.;8;8;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_03_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_03;5E;AUTOMATISMES;"− Entretenir la connaissance et l’utilisation des tables de multiplication.
+− Entretenir l’écriture décimale des fractions simples comme 1/2 ; 1/4 ; 3/4 ; 3/2 ; 4/2 ; 5/2 ; 1/10 ; 100/100 ; 7/1.
+− Faire vivre la notion de nombre quotient en complétant des multiplications à trou : 3 × … = 7 puis 3 × 7/3 = …
+− Lire l’abscisse d’un point sur une droite graduée en tiers, en quarts, en moitiés, en dixièmes.
+− Reconnaitre des fractions égales : 2/3 = …/15 ; 4/7 = …/14.
+− Comparer deux fractions : 2/7 et 5/7 ; 8/12 et 8/21 ; 3/4 et 7/18 ; 8/3 et 6/7.
+− Écrire une fraction sous la forme d’une somme d’un nombre entier et d’une fraction inférieure à 1 : 17/5 = 3 + 2/5.
+− Addition et soustraction de fractions simples : 3/5 + 4/5 ; 1 – 2/3 ; 4/7 – 2/21 ; 3 + 2/5 ; 2/5 + 1/4.
+− Prendre une fraction simple d’un nombre : le 1/3 de 18 ; le 1/4 de 12.
+− Prendre 1 %, 10 % ou 50 % d’un nombre, en lien avec la proportionnalité.
+− Écrire un même nombre sous de multiples formes, par exemple dire que 1,2 = 12/10 = 6/5 = 1 + 1/5 = 120 % = 120/100 etc.";8;8;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_03_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_03;5E;OBJECTIFS;"Comparer des fractions.
+Additionner et soustraire des fractions de dénominateurs quelconques.
+Résoudre des problèmes avec des additions et soustractions de fractions.";8;8;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_04_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_04;5E;AUTOMATISMES;"− Entretenir les tables de multiplications.
+− Connaitre les unités d’aires et de volume.";8;8;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_04_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_04;5E;OBJECTIFS;"Découvrir la notion de puissance d’un nombre et sa notation dans le cas du carré et du cube.
+Connaitre les carrés des entiers de 0 à 12.
+Connaitre le cube de 10.
+Savoir écrire un nombre sous la forme d’une puissance 2 ou 3.
+Calculer la valeur numérique d’expressions contenant des puissances simples, additions, soustractions et produits.
+Calculer la valeur d’une expression littérale contenant une puissance simple.";8;8;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_05_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_05;5E;AUTOMATISMES;"− Identifier des régularités et poursuivre une suite de motifs évolutive.
+− Trouver le nombre d’éléments pour une étape donnée dans une suite de motifs évolutive.
+− Identifier la structure d’un motif évolutif en repérant une régularité.
+− Nombre quotient.";8;8;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_05_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_05;5E;OBJECTIFS;"Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.).
+Calculer la valeur d’une expression littérale par substitution.
+Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse.
+Déterminer si une expression littérale est une somme ou un produit.
+Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale.
+Réduire une expression littérale de la forme a𝑥 + b, où a et b sont des nombres décimaux.
+Démontrer une propriété générale par le calcul littéral.
+Utiliser un contre-exemple pour démontrer qu’une assertion est fausse.
+Formuler des conjectures en s’appuyant sur un langage algorithmique ou un tableur.
+Donner à la lettre le statut d’inconnue.
+Modéliser des problèmes relevant des opérations à trous par des équations du type a𝑥 = c ou 𝑥 + b = c .
+Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses.";8;9;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_05_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_05;5E;PROLONGEMENTS;"− Lien avec Al Khwarizmi pour qui la résolution des problèmes fait appel à la « chose » qu’on cherche.
+− Spécificité de la résolution des équations du type 𝑥 + b = c (« Al-jabr ») et du type a𝑥 = c (« Al-hatt ») chez Al Khwarizmi.";9;9;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_06_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_06;4E;AUTOMATISMES;"− Manipulation de sommes et différences de nombre relatifs.
+− Opposé d’un nombre, somme des opposés.
+− Entretien des tables de multiplication.
+− Multiplier et diviser par 10, 100, 1 000.
+− Compléter des multiplications à trou : 5 × ... = 3 ; faire le lien entre multiplication et division.
+− Multiplication comme addition itérée : 3 + 3 + 3 + 3 = 4 × 3.";9;9;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_06_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_06;4E;OBJECTIFS;"Multiplier deux nombres relatifs : d’abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs.
+Diviser deux nombres relatifs.
+Savoir calculer un enchainement d’opérations avec des nombres relatifs.
+Utiliser le vocabulaire (somme, quotient, etc.) à partir d’un enchainement d’opérations dans un programme de calcul et inversement.";9;9;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_07_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;AUTOMATISMES;"− Addition et soustraction de fractions de dénominateurs quelconques mais simples.
+− Comparaison de fractions.
+− Savoir qu’une fraction est aussi le quotient : 3/7 (le nombre qui, multiplié par 7, donne 3, donc savoir que 7 × 3/7 = 3).
+− Savoir que prendre la fraction d’un nombre revient à multiplier la fraction par ce nombre.";9;9;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_07_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_07;4E;OBJECTIFS;"Simplifier une fraction.
+Définir la notion de nombre rationnel : le quotient de deux nombres entiers relatifs.
+Exprimer l’opposé d’un nombre rationnel.
+Calculer le produit de nombres rationnels.
+Calculer et représenter la fraction d’une fraction, d’un nombre, d’une quantité.
+Définir l’inverse d’un nombre et connaitre sa notation.
+Déterminer l’inverse d’une fraction.
+Diviser des fractions.
+Calculer la valeur d’expressions comportant plusieurs opérations avec des fractions.
+Résoudre des problèmes mobilisant les opérations sur les fractions : addition, soustraction, multiplication, division, inverse.";9;9;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_08_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_08;4E;AUTOMATISMES;"− Connaitre et reconnaitre les carrés parfaits des entiers de 0 à 12.
+− Multiplier et diviser par 10, 100, 1 000 ; savoir compléter 1 200 = 1,2 × …
+− Puissances simples : 2² = 4 ; 2³ = 8 ; 3³ = 27.
+− 10² = 100 ; 10³ = 1 000.";9;9;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_08_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_08;4E;OBJECTIFS;"Définir les puissances d’exposant positif d’un nombre a.
+Multiplier des puissances d’exposant entier naturel d’un même nombre entre elles.
+Multiplier des puissances d’un même exposant entier naturel de deux nombres entre elles.
+Résoudre des problèmes faisant intervenir des puissances.";10;10;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_09_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_09;4E;AUTOMATISMES;− Donner les carrés des nombres entiers compris entre 0 et 12.;10;10;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_09_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_09;4E;OBJECTIFS;"Comprendre et connaitre la définition de la racine carrée d’un nombre positif.
+Encadrer la racine carrée d’un entier par deux nombres entiers consécutifs.";10;10;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_09_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_09;4E;PROLONGEMENTS;"− Découverte de l’existence de nombres irrationnels (lien entre l’aire d’un carré et la longueur d’un de ses côtés).
+− √2 n’est pas décimal (démonstration par l’absurde en considérant le chiffre des unités).";10;10;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_10_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;AUTOMATISMES;"− Donner la valeur d’expressions numériques simples.
+− Résoudre des équations du type a𝑥 = c et 𝑥 + b = c, où a, b et c sont des nombres.
+− Écrire 3 × 𝑥 sous la forme 3𝑥 et savoir que 3𝑥 c’est 3 × 𝑥.
+− Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥².
+− Donner le double, le triple, la moitié, le prédécesseur, le successeur, le carré d’un nombre.
+− Tester si un nombre vérifie une égalité.";10;10;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_10_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_10;4E;OBJECTIFS;"Produire des formules et tester leur vraisemblance : aires de formes géométriques simples, nombres pairs/impairs, etc.
+Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique.
+Utiliser le calcul algébrique pour produire des démonstrations.
+Résoudre une équation du premier degré du type a𝑥 + b = c.
+Mettre en équation un problème et le résoudre à l’aide d’une équation du premier degré du type a𝑥 + b = c𝑥 + d.
+Formuler des conjectures à l’aide d’un algorithme ou d’un tableur pour résoudre de manière exacte ou approchée une équation.";10;10;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_11_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_11;3E;AUTOMATISMES;− Additionner, soustraire, multiplier et diviser des fractions.;10;10;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_11_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_11;3E;OBJECTIFS;"Mettre une fraction sous forme irréductible.
+Rendre irréductible une fraction.
+Résoudre des problèmes faisant appel à des fractions.";10;10;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_11_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_11;3E;PROLONGEMENTS;− Notation des ensembles des entiers naturels, des entiers relatifs, des décimaux, des rationnels.;10;10;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_12_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;AUTOMATISMES;"− Puissance comme multiplication itérée : 3 × 3 × 3 × 3 = 3⁴.
+− Multiplication de puissances d’exposant positif d’un nombre.
+− Multiplication de puissances de même exposant positif de deux nombres.";10;10;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_12_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;OBJECTIFS;"Définir les puissances d’exposant négatif d’un nombre.
+Multiplier et diviser des puissances.
+Déterminer la notation scientifique d’un nombre.
+Résoudre des problèmes notamment en utilisant la notation scientifique.";10;11;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_12_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_12;3E;PROLONGEMENTS;"− L’échiquier de Sissa.
+− Le papyrus de Rhind.";11;11;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_13_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_13;3E;AUTOMATISMES;− Donner les carrés des nombres entiers compris entre 0 et 12.;11;11;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_13_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_13;3E;OBJECTIFS;"Résoudre analytiquement et graphiquement des équations de la forme x² = a.
+Résoudre des problèmes utilisant la racine carrée.";11;11;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_13_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_13;3E;PROLONGEMENTS;"− Notion de parabole et de faisceaux convergents vers son foyer. Lien avec les paraboles pour capter les chaines de télévision.
+− Algorithmes d’extraction de racines carrées.";11;11;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_01_14_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_14;3E;AUTOMATISMES;"− Factoriser un nombre entier positif : 60 = 2² × 3 × 5.
+− Simplifier une fraction dont le numérateur et le dénominateur sont dans une même table de multiplication, par exemple 15/35 et 63/14.
+− Trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer.
+− Appliquer les critères de divisibilité par 2, 3, 5, 9.";11;11;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_15_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;AUTOMATISMES;"− Résoudre des équations du type a𝑥 = c, 𝑥 + b = c, a𝑥 + b = c.
+− Simplifier des expressions littérales.
+− Calculer la valeur d’une expression algébrique avec des puissances ou non.
+− Donner la nature d’une expression littérale : 3𝑥 + 2 est une somme, 5 (𝑥 + 4) est un produit.
+− Développer et factoriser une expression simple.
+− Donner l’expression générique d’un nombre pair, d’un nombre impair.
+− Prendre l’opposé d’une expression : savoir que – (5 – 4𝑥) = –5 + 4𝑥.";11;11;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_01_15_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;OBJECTIFS;"Simplifier des expressions produits ou des rapports comportant des facteurs communs.
+Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent.
+Résoudre analytiquement et graphiquement une inéquation du premier degré du type ax ⩾ b.
+Résoudre une équation produit nul.
+Manipuler les trois identités remarquables pour développer et factoriser :
+a² + 2ab + b² = (a + b)²
+a² – 2ab + b² = (a – b)²
+a² – b² = (a – b)(a + b)
+Pratiquer un raisonnement par analyse-synthèse dans le cadre d’une résolution d’équation.";11;11;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_01_15_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_01_15;3E;PROLONGEMENTS;− Étude de l’identité de Sophie Germain.;11;11;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_01_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_01;5E;AUTOMATISMES;"− Placer sur une demi-droite graduée un point dont l’abscisse est un nombre décimal.
+− Repérer un nombre décimal sur une demi-droite graduée.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_01_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_01;5E;OBJECTIFS;"Sur une droite graduée :
+- lire l’abscisse d’un point donné ;
+- placer un point d’abscisse donnée.
+Dans le plan muni d’un repère orthogonal :
+- lire les coordonnées d’un point donné ;
+- placer un point de coordonnées données.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_02_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_02;5E;AUTOMATISMES;"− Reconnaitre des vues (de dessus, dessous…) d’empilements de cubes.
+− Dénombrer des cubes dans des empilements.
+− Reconnaitre un cube, un pavé représenté en perspective cavalière.
+− Reconnaitre un patron d’un cube.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_02_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_02;5E;OBJECTIFS;"Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit.
+Savoir mettre en relation une représentation en perspective cavalière et un patron d’un pavé, d’un prisme droit ou d’un cylindre de révolution.
+Calculer le volume du cube, du pavé droit, du prisme droit.
+Connaitre et convertir des unités usuelles (volume et capacité).
+Calculer l’aire du disque, le volume du cylindre de révolution.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_02_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_02;5E;PROLONGEMENTS;"− Solides de Platon, formule d’Euler.
+− Tableaux d’Escher pour jouer sur la perception de l’espace et des volumes.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_03_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_03;5E;AUTOMATISMES;"− Reconnaitre et construire le symétrique d’une figure par symétrie axiale, dont l’axe est vertical, horizontal, ou en diagonale sur quadrillage.
+− Construire le symétrique, par rapport à un axe, d’un point, d’une figure, sur feuille blanche.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_03_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_03;5E;OBJECTIFS;"Définir le demi-tour, ou symétrie centrale.
+Connaitre les propriétés du demi-tour.";12;12;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_03_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_03;5E;PROLONGEMENTS;"− Rosaces et pavages dans l’art du Moyen Âge.
+− Lien avec les formes vues dans la nature : flocon, alvéoles d’abeilles, fleurs.";13;13;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_04_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_04;5E;AUTOMATISMES;"− Reconnaitre et citer sur une configuration géométrique des angles : angle plein, plat, nul, droit ; angles opposés par le sommet, adjacents, supplémentaires, aigus, obtus.
+− Savoir qu’un angle droit mesure 90°, qu’un angle plat mesure 180°.
+− Reconnaitre une bissectrice.
+− Connaitre les mesures des angles de l’équerre dont dispose l’élève (30° 60° 90° ou 45° 45° 90°).";13;13;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_02_04_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_04;5E;OBJECTIFS;Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants.;13;13;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_04_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_04;5E;PROLONGEMENTS;− Éléments d’Euclide (Livre I, proposition 27 ou 28).;13;13;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_02_05_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_05;5E;AUTOMATISMES;"− Reconnaitre un triangle isocèle, équilatéral ou rectangle à partir d’un schéma codé.
+− Connaitre la somme des angles d’un triangle, calculer le 3e angle d’un triangle connaissant les mesures des deux autres.
+− Connaitre la notion de médiatrice, de cercle circonscrit.";13;13;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_02_05_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_05;5E;OBJECTIFS;"Connaitre la somme des angles d’un triangle et savoir la démontrer.
+Construire des triangles à partir de données partielles.
+Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers.
+Calculer l’aire d’un triangle.
+Définir et tracer les hauteurs dans un triangle.
+Savoir que les hauteurs d’un triangle sont concourantes.
+Définir et tracer les médianes dans un triangle.
+Démontrer qu’une médiane partage un triangle en deux triangles d’aires égales.
+Utiliser ces propriétés dans le cas de triangles particuliers.";13;13;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_05_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_05;5E;PROLONGEMENTS;"− Droite d’Euler, cercle des neufs points.
+− En suivant un programme de construction donné, l’élève construit, à la règle et au compas, un pentagone régulier.
+− Construction d’ogives en lien avec l’art gothique.
+− Construction de rosaces trilobées, du triangle de Reuleaux.
+− Différents instruments de mesure.";13;13;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_06_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_06;5E;AUTOMATISMES;"− Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes.
+− Exploiter le codage d’une figure pour identifier des parallélogrammes particuliers.";13;13;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_06_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_06;5E;OBJECTIFS;"Définir le parallélogramme.
+Construire des parallélogrammes.
+Connaitre les propriétés caractéristiques des côtés opposés et des diagonales.
+Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère.
+Définir les parallélogrammes particuliers (rectangle, losange, carré).
+Connaitre les propriétés caractéristiques.
+Savoir calculer l’aire d’un parallélogramme et de figures complexes.
+Résoudre des problèmes faisant appel à des conversions d’unités de longueur et d’unités d’aires.";13;13;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_07_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_07;4E;AUTOMATISMES;− Construire le symétrique d’un point par demi-tour.;14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_08_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_08;4E;AUTOMATISMES;"− Placer sur une droite graduée un point dont l’abscisse est un nombre relatif.
+− Repérer un nombre relatif sur une droite graduée.
+− Dans le plan muni d’un repère orthogonal :
+• lire les coordonnées d’un point donné ;
+• placer un point de coordonnées données.";14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_09_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_09;4E;AUTOMATISMES;"− Reconnaitre les solides : cube, pavé, cylindre, prisme droit.
+− Connaitre et utiliser les formules du volume d’un cube, d’un pavé, d’un prisme, d’un cylindre.
+− Reconnaitre la base d’un prisme donné en perspective cavalière.
+− Savoir calculer l’aire des figures planes usuelles : triangle, rectangle, disque.";14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_09_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_09;4E;OBJECTIFS;"Reconnaitre des solides (pyramide, cône de révolution).
+Construire et mettre en relation différentes représentations des solides (pavé droit, cube, cylindre de révolution, prisme droit, pyramides et cônes de révolution).
+Connaitre le volume de la pyramide et du cône de révolution.";14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_09_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_09;4E;PROLONGEMENTS;− Lien avec la pyramide du Louvre, les pyramides égyptiennes.;14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_10_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_10;4E;AUTOMATISMES;"− Dire si des figures planes sont images l’une de l’autre par une symétrie axiale (dont on identifie l’axe) ou par un demi-tour (dont on identifie le centre).
+− Dans une configuration donnée, déterminer les images de figures, de droites, de segments, de points par une symétrie axiale ou un demi-tour.
+− Reconnaitre un parallélogramme à l’aide de sa définition ou d’une propriété caractéristique grâce aux codages.
+− Reconnaitre un parallélogramme particulier à partir de ses propriétés caractéristiques, notamment à partir des propriétés de ses diagonales.";14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_10_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_10;4E;OBJECTIFS;"Comprendre l’effet d’une translation.
+Faire le lien avec les parallélogrammes, les angles.
+Connaitre et utiliser les propriétés de conservations des translations.";14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_10_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_10;4E;PROLONGEMENTS;− Pavage d’Escher ou de l’Alhambra.;14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_11_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;AUTOMATISMES;− Reconnaitre des droites remarquables, y compris dans les triangles particuliers (médiatrices, médianes, hauteurs, bissectrices).;14;14;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_11_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;OBJECTIFS;"Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle.
+Connaitre le théorème de Pythagore, sa réciproque, sa contraposée.
+Mener un travail de logique sur la réciproque et la contraposée.
+Caractériser un triangle rectangle à l’aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle.
+Déterminer le centre du cercle circonscrit d’un triangle rectangle.
+Construire des rectangles sans équerre.";14;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_11_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_11;4E;PROLONGEMENTS;"− Théorème de Varignon : l’élève étudie la démonstration historique d’Euclide basée sur les aires.
+− Quelques repères historiques autour de Pythagore et son œuvre.";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_12_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_12;3E;AUTOMATISMES;"− Placer sur une droite graduée un point dont l’abscisse est un nombre relatif.
+− Repérer un nombre relatif sur une droite graduée.
+− Dans le plan muni d’un repère orthogonal :
+• lire les coordonnées d’un point donné ;
+• placer un point de coordonnées données.";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_13_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_13;3E;AUTOMATISMES;"− Reconnaitre des solides (pavé droit, cube, prisme droit, cylindre, pyramide, cône).
+− Connaitre et utiliser les formules du volume d’une pyramide ou d’un cône.
+− Donner la nature d’une face d’une pyramide représentée en perspective cavalière.
+− Identifier les patrons de pyramides données (par exemple inscrites dans un cube).";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_13_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_13;3E;OBJECTIFS;"Définir la boule et la sphère.
+Définir les grands cercles, le diamètre.
+Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d’une boule.
+Connaitre et utiliser la formule du volume d’une boule de rayon donné.";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_13_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_13;3E;PROLONGEMENTS;"− La formule du volume, trouvée au IIIe siècle avant J.-C., d’après une intuition d’Archimède comme étant 2/3 du cylindre qui contient la boule. Elle a été démontrée plus formellement par Newton au XVIIe.
+− Les cinq polyèdres réguliers de l’espace et les illustrations de Léonard de Vinci pour le traité mathématique De divina proportione de Luca Pacioli.";15;15;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_02_14_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_14;3E;AUTOMATISMES;"− Utiliser la propriété du triangle rectangle et de son cercle circonscrit.
+− Écrire l’égalité de Pythagore dans un triangle rectangle.
+− Utiliser la droite des milieux pour prouver que des droites sont parallèles, pour calculer une longueur, pour prouver qu’un point est le milieu d’un côté.";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_14_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_14;3E;OBJECTIFS;"Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon).
+Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente.";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_14_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_14;3E;PROLONGEMENTS;"− Repères historiques autour du théorème de Thalès, qui n’est pas appelé comme cela dans les autres pays.
+− Construction des polygones réguliers à la règle et au compas.";15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_15_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;AUTOMATISMES;− Mobiliser les connaissances sur la symétrie axiale, le demi-tour, la translation.;15;15;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_15_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;OBJECTIFS;"Définir et utiliser la translation : définition ponctuelle avec parallélogramme.
+Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d’opposé d’un vecteur.
+Définir et utiliser la somme de deux vecteurs par enchainement de deux translations.
+Découvrir et utiliser la relation de Chasles.";15;16;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_02_15_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_02_15;3E;PROLONGEMENTS;"− Savoir qu’un hexagone est obtenu à partir de triangles équilatéraux.
+− Lien avec les fractales comme les flocons de Von Koch ou les triangles de Sierpinski.";16;16;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_01_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_03_01;5E;OBJECTIFS;"Recueillir et organiser des données.
+Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage).
+Lire et interpréter des informations présentées sous forme de tableaux, de diagrammes et de graphiques.
+Représenter, sur papier ou à l’aide d’un tableur-grapheur, des données sous la forme d’un tableau, d’un diagramme
+(diagramme en barres, diagramme circulaire) ou d’un graphique cartésien.
+Choisir une représentation adaptée à ce qu’il convient de mettre en avant.
+Calculer et interpréter la moyenne simple d’une série de données.";16;16;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_01_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_03_01;5E;PROLONGEMENTS;− Étude des diagrammes de Florence Nightingale.;16;16;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_02_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_03_02;5E;AUTOMATISMES;"− Positionner sur une échelle de probabilité les évènements du type :
+• évènement impossible ;
+• évènement certain ;
+• obtenir pile en lançant une pièce équilibrée ;
+• obtenir une valeur donnée en lançant un dé équilibré ;
+• obtenir une couleur d’une boule lors du tirage dans une urne ;
+• ne pas obtenir la bonne combinaison au loto ;
+• obtenir 10 fois de suite la valeur 1 en lançant un dé à six faces.
+− Donner la probabilité sous diverses formes (fraction, décimale, pourcentage) pour les cinq premiers évènements ci-dessus.
+− Lier l’expression « une chance sur quatre » (par exemple) et la probabilité 1/4.";16;17;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_03_02_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_03_02;5E;OBJECTIFS;"Aborder les questions relatives au hasard à partir de problèmes simples.
+Utiliser le vocabulaire des probabilités dans des contextes concrets : expérience aléatoire, issue, évènement.
+Attribuer des probabilités dans des cas simples (équiprobabilité).
+Répéter matériellement une expérience aléatoire simple. Enregistrer les résultats observés dans un tableau d’effectifs et de fréquences.";17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_03_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;AUTOMATISMES;"− Calculer une moyenne pour un très petit nombre de valeurs.
+− Calculer un effectif manquant dans un tableau pour un petit nombre de valeurs.
+− Calculer une fréquence simple.";17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_03_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;OBJECTIFS;"Calculer une moyenne pondérée dans le cas d’une série discrète de petits effectifs présentée sous forme de données brutes, d’un tableau ou d’un diagramme en barres.
+Déterminer une médiane et l’interpréter dans le cas d’une série de petit effectif présentée sous forme de données brutes.
+Calculer et interpréter l’étendue d’une série présentée sous forme de données brutes, d’un tableau, d’un diagramme en barres, d’un diagramme circulaire.
+Comprendre l’évolution de la médiane et de la moyenne quand on ajoute une valeur extrême.
+Résoudre des problèmes faisant intervenir les différents indicateurs.
+Résoudre des problèmes de comparaison de séries statistiques.
+Utiliser le tableur pour calculer une moyenne, une médiane et l’étendue d’une série statistique.";17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_03_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_03_03;4E;PROLONGEMENTS;− Le premier traité des Essais d’arithmétique politique de Willem Kersseboom (XVIIIe s.).;17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_04_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_03_04;4E;OBJECTIFS;"Utiliser le vocabulaire et les notations ensemblistes pour décrire une expérience aléatoire dans des cas simples et définir la notion d’évènement.
+Définir : complémentaire, réunion, intersection, ensemble vide (évènement impossible).
+Calculer la probabilité d’un évènement et de l’évènement contraire.
+Exemples simples d’expériences aléatoires à deux épreuves (par exemple, lancer de deux pièces, d’une pièce et d’un dé, de deux dés, etc.).
+À partir de la répétition d’une expérience aléatoire, réalisée matériellement ou simulée, comparer des graphiques de distributions (fréquentielle et probabiliste).
+Observer la fluctuation des fréquences pour un nombre de répétitions fixé de l’expérience aléatoire.";17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_05_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;AUTOMATISMES;"− Calculer une moyenne.
+− Donner une médiane pour une série comportant un petit nombre de valeurs.
+− Calculer l’étendue d’une série.";17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_05_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_03_05;3E;OBJECTIFS;"Calculer des effectifs cumulés croissants.
+Donner les quartiles et la médiane d’une série donnée sous forme de tableau d’effectifs ou de diagramme en barres.
+Construire et utiliser des boites à moustache pour représenter les valeurs de position d’une série statistique.
+Comprendre et interpréter des données statistiques.
+Utiliser le tableur pour calculer une moyenne, une médiane et l’étendue d’une série statistique.";17;17;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_03_06_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_03_06;3E;OBJECTIFS;"Connaitre et savoir appliquer la relation 𝑃(𝐴 ∪ 𝐵) + 𝑃(𝐴 ∩ 𝐵) = 𝑃(𝐴) + 𝑃(𝐵).
+Simuler des expériences aléatoires indépendantes.
+Observer la stabilisation des fréquences lorsqu’on augmente le nombre de répétitions de l’expérience aléatoire, faire le lien entre fréquence et probabilité selon le nombre de répétitions.";18;18;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_03_06_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_03_06;3E;PROLONGEMENTS;− Problème de l’erreur de D’Alembert.;18;18;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_01_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_04_01;5E;AUTOMATISMES;"− Reconnaitre si une situation donnée entre dans le cadre de la proportionnalité ou non.
+− Dans des situations simples, mobiliser une procédure adaptée (propriété de linéarité pour la multiplication ou l’addition, retour à l’unité) pour résoudre un problème lié à la proportionnalité. Par exemple :
+• à partir d’une recette pour 4 personnes, on sait donner (ou verbaliser la procédure) les quantités lorsque l’on passe à 2, 8 ou 6 personnes ;
+• si l’on connait le prix d’un kilogramme de tomates, on sait comment calculer le prix de 3 kg ou de 4,3 kg de tomates ;
+• lors de l’élection des délégués de la classe, 4 élèves se présentent. Chaque élève a voté pour un seul candidat. Voici les résultats : Alexis : 6 ; Chloé : 12 ; Salma : 3 ; Djibril : 3 ; total : 24. Calculer le pourcentage de voix de chaque candidat.";18;18;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_04_01_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_04_01;5E;OBJECTIFS;"Utiliser des proportions, des pourcentages.
+Calculer, appliquer des proportions, des pourcentages.
+Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles).
+Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.).
+Représenter une situation de proportionnalité par un tableau ou un graphique.
+Reconnaitre une situation de proportionnalité à partir d’un tableau ou d’un graphique.
+Reconnaitre graphiquement qu’un nuage de points est ou n’est pas associé à une situation de proportionnalité entre données discrètes.";18;18;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_02_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_04_02;5E;OBJECTIFS;"Introduire l’expression : « en fonction de » dans des contextes concrets ou mathématiques.
+Produire un tableau de valeurs.
+Lire et interpréter un tableau de valeurs.
+Placer dans un repère orthogonal donné des points correspondant à un tableau de valeurs.
+Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points.
+Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule.
+Produire une formule simple représentant la dépendance de deux grandeurs.
+Caractériser graphiquement la proportionnalité.";19;19;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_03_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;AUTOMATISMES;"− Déterminer a % de c quand a vaut 100, 50, 25, 10, 1.
+− Compléter : 20 % de 120 = … ; 30 = (…/100) × 1 000.";19;19;SRC_BO_2026_10_MENE2602912A;RELU_PDF
+ITM_MAT_C4_04_03_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_04_03;4E;OBJECTIFS;"Utiliser des grandeurs quotients, avec ou sans unités.
+Comparer deux nombres ou deux grandeurs à l’aide de leur rapport ou ratio.
+Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio.
+Déterminer une quatrième proportionnelle.
+Calculer avec des pourcentages.
+Rendre compte d’une augmentation ou une diminution exprimée en pourcentages au moyen d’un coefficient multiplicateur
+Définir le coefficient multiplicateur.
+Résoudre des problèmes de partage proportionnel.";19;19;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_04_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_04_04;4E;OBJECTIFS;"Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable.
+Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple.
+Produire une formule littérale représentant la dépendance d’une grandeur en fonction d’une autre.
+Représenter l’expression d’une grandeur en fonction d’une autre par un graphique.
+Comprendre la dépendance d’une grandeur en fonction d’une autre.";19;19;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_05_AUTOMATISMES;PRG_MAT_C4_2026;ITM_MAT_C4_04_05;3E;AUTOMATISMES;"− Partager une somme en deux parts selon un certain ratio.
+− Partager une masse en trois parts selon un certain ratio.
+− Partager une somme entre deux personnes âgées de 20 et 30 ans proportionnellement à leur âge.
+− Calculer le pourcentage d’une quantité.
+− Calculer la distance réelle entre deux villes, connaissant la distance entre ces villes sur une carte routière dont l’échelle est connue.
+− Appliquer, dans des cas simples, une augmentation ou une diminution exprimée en pourcentages, en utilisant ou non le coefficient multiplicateur.";19;19;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_04_05_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_04_05;3E;OBJECTIFS;"Traduire une augmentation ou une diminution en pourcentages.
+Relier la représentation graphique d’une situation de proportionnalité avec le théorème de Thalès.
+Connaitre et utiliser les fonctions linéaires.";19;19;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_06_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;OBJECTIFS;"Utiliser les différentes représentations d’une fonction.
+Définir et connaitre le vocabulaire : image, antécédents.
+Définir et utiliser les fonctions linéaires.
+Résoudre graphiquement des équations et des inéquations linéaires.
+Relier fonctions linéaires et proportionnalité.
+Définir et utiliser les fonctions affines.
+Déterminer graphiquement les coefficients d’une fonction affine.
+Représenter la fonction carré.";19;20;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_04_06_PROLONGEMENTS;PRG_MAT_C4_2026;ITM_MAT_C4_04_06;3E;PROLONGEMENTS;− Méthode de simple fausse position (pour les problèmes du type 𝑦 = a𝑥).;20;20;SRC_BO_2026_10_MENE2602912A;A_VERIFIER
+ITM_MAT_C4_05_01_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_05_01;5E;OBJECTIFS;"Manipuler des instructions simples et les séquencer.
+Identifier les entrées et sorties d’un programme.
+Représenter des formules sous la forme d’une expression informatique dans un langage de programmation par blocs.
+Calculer la valeur de formules à l’aide d’une suite d’instruction dans un langage de programmation par blocs.
+Prévoir la valeur d’une expression informatique avant son exécution.
+Analyser un programme simple donné et modifier ses paramètres.
+Effectuer une boucle inconditionnelle simple permettant de répéter une séquence linéaire d’instructions un nombre précis de fois.";20;20;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_05_02_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_05_02;4E;OBJECTIFS;"Représenter des conditions simples.
+Écrire des instructions conditionnelles.
+Manipuler une variable.
+Écrire un programme simple donné pour réaliser un objectif ou résoudre un problème.
+Modifier un programme donné pour changer son comportement.";20;20;SRC_BO_2026_10_MENE2602912A;RELECTURE
+ITM_MAT_C4_05_03_OBJECTIFS;PRG_MAT_C4_2026;ITM_MAT_C4_05_03;3E;OBJECTIFS;"Approfondir la notion de variables.
+Utiliser des conditions composées.
+Utiliser une boucle conditionnelle.
+Structurer des programmes.
+Écrire un programme donné pour réaliser un objectif ou résoudre un problème.";20;21;SRC_BO_2026_10_MENE2602912A;RELECTURE

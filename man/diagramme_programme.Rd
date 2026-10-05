@@ -8,7 +8,8 @@ diagramme_programme(
   niveau = "6E",
   detail = c("synthetique", "officiel", "complet"),
   fichier = NULL,
-  ouvrir = interactive()
+  ouvrir = interactive(),
+  vue = "cartes"
 )
 }
 \arguments{
@@ -19,6 +20,8 @@ diagramme_programme(
 \item{fichier}{Fichier HTML de sortie ; NULL cree un fichier temporaire.}
 
 \item{ouvrir}{Ouvrir le document dans le navigateur.}
+
+\item{vue}{Organisation visuelle du diagramme. "cartes" reproduit la vue historique et constitue la valeur par defaut.}
 }
 \value{
 Invisiblement, le chemin absolu du document HTML produit.

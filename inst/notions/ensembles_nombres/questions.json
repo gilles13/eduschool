@@ -92,7 +92,7 @@
     {
       "id": "ENS-008",
       "type": "qcm",
-      "enonce": "Comment appelle-t-on la relation entre un élément x et un ensemble E lorsque x ∈ E ? Choisis le mot à trou correspondant.",
+      "enonce": "Comment appelle-t-on la relation entre un élément 𝑥 et un ensemble E lorsque 𝑥 ∈ E ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
         "masques": {

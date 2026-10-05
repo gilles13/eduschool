@@ -4,17 +4,10 @@
 objectif = c(`1` = 17L, `2` = 17L, `3` = 16L)
 valides = list()
 rejets = list()
-controle_affichage = function(...) {
-  textes = unlist(list(...), use.names = FALSE)
-  if (any(grepl("[\\^*]", textes)))
-    stop("Syntaxe moteur detectee dans un texte destine a l affichage.")
-  invisible(TRUE)
-}
 # A ADAPTER A LA NOTION :
 # - explorer un domaine candidat assez large ;
 # - construire une bonne reponse et des distracteurs plausibles ;
 # - associer un type pedagogique a chaque distracteur ;
-# - passer tous les textes destines a l eleve a controle_affichage() ;
 # - verifier l'unicite de la bonne reponse (Ryacas si pertinent) ;
 # - ajouter les variantes propres a valides ;
 # - ajouter les autres a rejets avec progression, source, bonne,

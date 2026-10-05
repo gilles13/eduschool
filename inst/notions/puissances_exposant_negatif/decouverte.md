@@ -1,31 +1,35 @@
-# Découvrir : Puissances d'exposant négatif
+# Découvrir : Puissances d’exposant négatif
 
-Pour une base non nulle, un exposant négatif permet d'écrire un inverse :
+::: {.edu-definition}
+**De quoi parle-t-on ?**
 
-$$a^{-n}=\frac{1}{a^n}.$$
+Une puissance d’exposant négatif représente l’inverse de la puissance d’exposant positif correspondante.
+:::
 
-Ainsi $10^{-3}=0{,}001$ et $4^{-1}=\dfrac14$.
+Cette notion aide à reconnaître les objets en jeu avant d’appliquer une technique de calcul.
 
-Avant de passer aux exposants négatifs, un repère simple est utile :
+## Première idée
 
-$$a^1=a.$$
+2⁻³ = 1/2³ = 1/8.
 
-Pour $a\neq0$, on pose aussi $a^0=1$. En descendant encore d'une unité dans les exposants, on obtient $a^{-1}=1/a$. On peut ainsi lire la continuité :
+## Comprendre la méthode
 
-$$a^2,\qquad a^1=a,\qquad a^0=1,\qquad a^{-1}=\frac1a,\qquad a^{-2}=\frac1{a^2}.$$
+Pour tout nombre non nul a et tout entier positif n : a⁻ⁿ = 1/aⁿ.
 
-Ces écritures prolongent les règles de calcul sur les puissances.
+## Vérifier
 
-**À essayer 1 — Passer à l'inverse :** écris $3^{-2}$ puis $10^{-4}$ sans exposant négatif.
+Reprendre le résultat dans l’expression ou la situation de départ permet de contrôler qu’il répond bien à la question.
 
-Pour une même base non nulle, on peut multiplier ou diviser des puissances :
+## À essayer
 
-$$a^m\times a^n=a^{m+n},\qquad \frac{a^m}{a^n}=a^{m-n}.$$
+**À essayer 1 — Un exemple immédiat :** explique avec tes mots pourquoi l’exemple ci-dessus est correct, puis construis un exemple du même type avec d’autres nombres.
 
-**À essayer 2 — Calculer avec les exposants :** simplifie $10^2\times10^{-5}$ puis $5^8/5^3$.
+## À retenir
+
+Il faut d’abord identifier la nature des nombres ou des expressions, puis choisir une propriété adaptée.
 
 ## Pour vérifier tes découvertes
 
-**1. Passer à l'inverse.** $3^{-2}=1/9$ et $10^{-4}=1/10\,000=0{,}0001$.
+**1. Un exemple immédiat**
 
-**2. Calculer avec les exposants.** $10^2\times10^{-5}=10^{-3}$ et $5^8/5^3=5^5$.
+L’explication doit utiliser la définition ou la propriété donnée dans la fiche. Un nouvel exemple est correct s’il respecte exactement la même propriété et si le résultat peut être vérifié en revenant au calcul de départ.

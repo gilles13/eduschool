@@ -1,0 +1,556 @@
+item_id;programme_id;parent_item_id;niveau;ordre;type;libelle;description;source_id
+ITM_MAT_C4_01;PRG_MAT_C4_2026;;C4;1;DOMAINE;Nombres et calculs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02;PRG_MAT_C4_2026;;C4;2;DOMAINE;Espace et géométrie;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03;PRG_MAT_C4_2026;;C4;3;DOMAINE;Organisation et gestion des données et probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04;PRG_MAT_C4_2026;;C4;4;DOMAINE;Proportionnalité et fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05;PRG_MAT_C4_2026;;C4;5;DOMAINE;Pensée informatique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_01;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;1;THEME;Opérations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_02;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;2;THEME;Nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_03;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;3;THEME;Nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_04;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;4;THEME;Puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_05;PRG_MAT_C4_2026;ITM_MAT_C4_01;5E;5;THEME;Calcul littéral et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_06;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;6;THEME;Opérations sur les nombres relatifs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_07;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;7;THEME;Nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_08;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;8;THEME;Puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_09;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;9;THEME;Racine carrée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_10;PRG_MAT_C4_2026;ITM_MAT_C4_01;4E;10;THEME;Calcul littéral et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_11;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;11;THEME;Nombres rationnels;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_12;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;12;THEME;Puissances;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_13;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;13;THEME;Racine carrée;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_14;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;14;THEME;Multiples et diviseurs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_01_15;PRG_MAT_C4_2026;ITM_MAT_C4_01;3E;15;THEME;Calcul littéral et algébrique;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_01;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;1;THEME;Repérage sur une droite et dans le plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_02;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;2;THEME;Représentation de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_03;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;3;THEME;Transformations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_04;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;4;THEME;Angles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_05;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;5;THEME;Triangles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_06;PRG_MAT_C4_2026;ITM_MAT_C4_02;5E;6;THEME;Parallélogrammes;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_07;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;7;THEME;Transformations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_08;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;8;THEME;Repérage sur une droite et dans le plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_09;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;9;THEME;Représentation de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_10;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;10;THEME;Parallélogrammes et translations;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_11;PRG_MAT_C4_2026;ITM_MAT_C4_02;4E;11;THEME;Triangles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_12;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;12;THEME;Repérage sur une droite et dans le plan;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_13;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;13;THEME;Représentation de l’espace;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_14;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;14;THEME;Triangles;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_02_15;PRG_MAT_C4_2026;ITM_MAT_C4_02;3E;15;THEME;Translations et vecteurs;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_01;PRG_MAT_C4_2026;ITM_MAT_C4_03;5E;1;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_02;PRG_MAT_C4_2026;ITM_MAT_C4_03;5E;2;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_03;PRG_MAT_C4_2026;ITM_MAT_C4_03;4E;3;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_04;PRG_MAT_C4_2026;ITM_MAT_C4_03;4E;4;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_05;PRG_MAT_C4_2026;ITM_MAT_C4_03;3E;5;THEME;Statistiques;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_03_06;PRG_MAT_C4_2026;ITM_MAT_C4_03;3E;6;THEME;Probabilités;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_01;PRG_MAT_C4_2026;ITM_MAT_C4_04;5E;1;THEME;Proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_02;PRG_MAT_C4_2026;ITM_MAT_C4_04;5E;2;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_03;PRG_MAT_C4_2026;ITM_MAT_C4_04;4E;3;THEME;Proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_04;PRG_MAT_C4_2026;ITM_MAT_C4_04;4E;4;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_05;PRG_MAT_C4_2026;ITM_MAT_C4_04;3E;5;THEME;Proportionnalité;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_04_06;PRG_MAT_C4_2026;ITM_MAT_C4_04;3E;6;THEME;Fonctions;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_01;PRG_MAT_C4_2026;ITM_MAT_C4_05;5E;1;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_02;PRG_MAT_C4_2026;ITM_MAT_C4_05;4E;2;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C4_05_03;PRG_MAT_C4_2026;ITM_MAT_C4_05;3E;3;THEME;Algorithmique et programmation;;SRC_BO_2026_10_MENE2602912A
+ITM_MAT_C3_01;PRG_MAT_C3_2025;;C3;1;DOMAINE;Nombres, calcul et résolution de problèmes;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_02;PRG_MAT_C3_2025;;C3;2;DOMAINE;Grandeurs et mesures;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_03;PRG_MAT_C3_2025;;C3;3;DOMAINE;Espace et géométrie;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_04;PRG_MAT_C3_2025;;C3;4;DOMAINE;Organisation et gestion de données et probabilités;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_05;PRG_MAT_C3_2025;;C3;5;DOMAINE;Proportionnalité;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_06;PRG_MAT_C3_2025;;C3;6;DOMAINE;Initiation à la pensée informatique;"Programme cycle 3 ; entrée en vigueur en sixième à partir de 2025-2026.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_01;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;1;THEME;Nombres entiers;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_02;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;2;THEME;Fractions;"Consolider les sens partage, mesure et nombre ; utiliser des fractions dès le début de l’année. Dénominateur au plus 20, sauf fractions décimales jusqu’à 100.";SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_03;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;3;THEME;Nombres décimaux;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_04;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;4;THEME;Calcul mental;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_05;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;5;THEME;Les quatre opérations;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_06;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;6;THEME;Résolution de problèmes;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_07;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM1;7;THEME;Algèbre;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_08;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM1;8;THEME;Longueurs;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_09;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM1;9;THEME;Masses;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_10;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM1;10;THEME;Contenances;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_11;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM1;11;THEME;Aires;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_12;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM1;12;THEME;Angles;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_13;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM1;13;THEME;Repérage dans le temps et durées;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_14;PRG_MAT_C3_2025;ITM_MAT_C3_03;CM1;14;THEME;Géométrie plane;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_15;PRG_MAT_C3_2025;ITM_MAT_C3_03;CM1;15;THEME;Solides;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_16;PRG_MAT_C3_2025;ITM_MAT_C3_03;CM1;16;THEME;Repérage dans l’espace;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_17;PRG_MAT_C3_2025;ITM_MAT_C3_04;CM1;17;THEME;Organisation et gestion de données;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_18;PRG_MAT_C3_2025;ITM_MAT_C3_04;CM1;18;THEME;Probabilités;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM1_19;PRG_MAT_C3_2025;ITM_MAT_C3_05;CM1;19;THEME;Proportionnalité;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_01;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;1;THEME;Nombres entiers;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_02;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;2;THEME;Fractions;Consolider les acquis du CM1 et étendre les calculs et l’usage opérateur. Dénominateur au plus 60, sauf fractions décimales jusqu’à 1000.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_03;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;3;THEME;Nombres décimaux;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_04;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;4;THEME;Calcul mental;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_05;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;5;THEME;Les quatre opérations;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_06;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;6;THEME;Résolution de problèmes;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_07;PRG_MAT_C3_2025;ITM_MAT_C3_01;CM2;7;THEME;Algèbre;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_08;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM2;8;THEME;Aires;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_09;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM2;9;THEME;Angles;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_10;PRG_MAT_C3_2025;ITM_MAT_C3_02;CM2;10;THEME;Repérage dans le temps et durées;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_11;PRG_MAT_C3_2025;ITM_MAT_C3_03;CM2;11;THEME;Géométrie plane;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_12;PRG_MAT_C3_2025;ITM_MAT_C3_03;CM2;12;THEME;Solides;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_13;PRG_MAT_C3_2025;ITM_MAT_C3_03;CM2;13;THEME;Déplacements dans l’espace;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_14;PRG_MAT_C3_2025;ITM_MAT_C3_04;CM2;14;THEME;Organisation et gestion de données;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_15;PRG_MAT_C3_2025;ITM_MAT_C3_04;CM2;15;THEME;Probabilités;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_CM2_16;PRG_MAT_C3_2025;ITM_MAT_C3_05;CM2;16;THEME;Proportionnalité;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_01;PRG_MAT_C3_2025;ITM_MAT_C3_01;6E;1;THEME;Nombres entiers et décimaux;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_02;PRG_MAT_C3_2025;ITM_MAT_C3_01;6E;2;THEME;Fractions;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_03;PRG_MAT_C3_2025;ITM_MAT_C3_01;6E;3;THEME;Algèbre;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_04;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;4;THEME;Longueurs;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_05;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;5;THEME;Aires;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_06;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;6;THEME;Volumes;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_07;PRG_MAT_C3_2025;ITM_MAT_C3_02;6E;7;THEME;Repérage dans le temps et durées;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_08;PRG_MAT_C3_2025;ITM_MAT_C3_03;6E;8;THEME;Étude de configurations planes;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_09;PRG_MAT_C3_2025;ITM_MAT_C3_03;6E;9;THEME;Vision dans l’espace;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_10;PRG_MAT_C3_2025;ITM_MAT_C3_04;6E;10;THEME;Organisation et gestion de données;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_11;PRG_MAT_C3_2025;ITM_MAT_C3_04;6E;11;THEME;Probabilités;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_12;PRG_MAT_C3_2025;ITM_MAT_C3_05;6E;12;THEME;Proportionnalité;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_C3_6E_13;PRG_MAT_C3_2025;ITM_MAT_C3_06;6E;13;THEME;Initiation à la pensée informatique;Thème du programme officiel de mathématiques du cycle 3.;SRC_BO_2025_16_MATH_C3
+ITM_MAT_2GT_2026_01;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_D00;2GT;0.01;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_02;PRG_MAT_2GT_2026;;2GT;2;DOMAINE;Algorithmique et programmation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_03;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_02;2GT;2.01;THEME;Variables et instructions élémentaires;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_04;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_02;2GT;2.02;THEME;Notion de fonction;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_05;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_D00;2GT;0.02;THEME;Automatismes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_06;PRG_MAT_2GT_2026;;2GT;6;DOMAINE;Nombres et calculs, algèbre;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_07;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_06;2GT;6.01;THEME;Arithmétique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_08;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_06;2GT;6.02;THEME;Nombres réels;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_09;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_06;2GT;6.03;THEME;Algèbre;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_10;PRG_MAT_2GT_2026;;2GT;10;DOMAINE;Géométrie;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_11;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_10;2GT;10.01;THEME;Vecteurs et problèmes de géométrie;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_12;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_10;2GT;10.02;THEME;Droites du plan;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_13;PRG_MAT_2GT_2026;;2GT;13;DOMAINE;Fonctions;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_14;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_13;2GT;13.01;THEME;Représentation algébrique et graphique des fonctions;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_15;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_13;2GT;13.02;THEME;Variations et extrémums d’une fonction;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_16;PRG_MAT_2GT_2026;;2GT;16;DOMAINE;Statistiques et probabilités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_17;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_16;2GT;16.01;THEME;Information chiffrée et statistique descriptive;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_18;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_16;2GT;16.02;THEME;Croisement de deux variables qualitatives;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_2GT_2026_19;PRG_MAT_2GT_2026;ITM_MAT_2GT_2026_16;2GT;16.03;THEME;Probabilités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_01;PRG_MATH_SCI_1G_2026;;1G;1;THEME;Automatismes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_02;PRG_MATH_SCI_1G_2026;;1G;2;THEME;Analyse de l’information chiffrée;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_03;PRG_MATH_SCI_1G_2026;;1G;3;THEME;Phénomènes aléatoires;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_04;PRG_MATH_SCI_1G_2026;;1G;4;THEME;Phénomènes d’évolution, modélisation par des fonctions;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_05;PRG_MATH_SCI_1G_2026;;1G;5;THEME;Variation linéaire;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_06;PRG_MATH_SCI_1G_2026;;1G;6;THEME;Modélisation quadratique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MATH_SCI_1G_2026_07;PRG_MATH_SCI_1G_2026;;1G;7;THEME;Variation exponentielle;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_01;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_D00;1G;0.01;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_02;PRG_MAT_SPEC_1G_2026;;1G;2;DOMAINE;Algorithmique et programmation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_03;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_02;1G;2.01;THEME;Notion de liste;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_04;PRG_MAT_SPEC_1G_2026;;1G;4;DOMAINE;Automatismes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_05;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_04;1G;4.01;THEME;Évolutions et variations;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_06;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_04;1G;4.02;THEME;Calcul numérique et algébrique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_07;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_04;1G;4.03;THEME;Fonctions et représentations;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_08;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_04;1G;4.04;THEME;Statistiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_09;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_04;1G;4.05;THEME;Probabilités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_10;PRG_MAT_SPEC_1G_2026;;1G;10;DOMAINE;Algèbre;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_11;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_10;1G;10.01;THEME;Suites numériques, modèles discrets;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_12;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_10;1G;10.02;THEME;Équations, fonctions polynômes du second degré;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_13;PRG_MAT_SPEC_1G_2026;;1G;13;DOMAINE;Analyse;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_14;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_13;1G;13.01;THEME;Dérivation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_15;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_13;1G;13.02;THEME;Variations et courbes représentatives des fonctions;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_16;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_13;1G;13.03;THEME;Fonction exponentielle;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_17;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_13;1G;13.04;THEME;Trigonométrie;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_18;PRG_MAT_SPEC_1G_2026;;1G;18;DOMAINE;Géométrie;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_19;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_18;1G;18.01;THEME;Calcul vectoriel et produit scalaire;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_20;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_18;1G;18.02;THEME;Géométrie repérée;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_21;PRG_MAT_SPEC_1G_2026;;1G;21;DOMAINE;Probabilités et statistiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_22;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_21;1G;21.01;THEME;Probabilités conditionnelles et indépendance;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_23;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_21;1G;21.02;THEME;Variables aléatoires réelles;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_24;PRG_MAT_SPEC_1G_2026;ITM_MAT_SPEC_1G_2026_21;1G;21.03;THEME;Expérimentations;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_01;PRG_MAT_1T_2026;;1T;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_02;PRG_MAT_1T_2026;;1T;2;THEME;Algorithmique et programmation (sauf série STD2A);;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_03;PRG_MAT_1T_2026;;1T;3;THEME;Activités géométriques (uniquement pour la série STD2A);;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_04;PRG_MAT_1T_2026;;1T;4;THEME;Géométrie plane;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_05;PRG_MAT_1T_2026;;1T;5;THEME;Géométrie dans l’espace;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_06;PRG_MAT_1T_2026;;1T;6;THEME;Automatismes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_07;PRG_MAT_1T_2026;;1T;7;THEME;Analyse;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_08;PRG_MAT_1T_2026;;1T;8;THEME;Suites numériques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_09;PRG_MAT_1T_2026;;1T;9;THEME;Fonctions de la variable réelle;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_10;PRG_MAT_1T_2026;;1T;10;THEME;Dérivation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_11;PRG_MAT_1T_2026;;1T;11;THEME;Statistiques et probabilités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_12;PRG_MAT_1T_2026;;1T;12;THEME;Séries statistiques à deux variables quantitatives;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_13;PRG_MAT_1T_2026;;1T;13;THEME;Probabilités conditionnelles : indépendance;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_14;PRG_MAT_1T_2026;;1T;14;THEME;Modèle associé à une expérience aléatoire à plusieurs épreuves indépendantes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_1T_2026_15;PRG_MAT_1T_2026;;1T;15;THEME;Variables aléatoires;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_01;PRG_MAT_TERM_G_2026;;TG;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_02;PRG_MAT_TERM_G_2026;;TG;2;THEME;Algorithmique et programmation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_03;PRG_MAT_TERM_G_2026;;TG;3;THEME;Histoire des mathématiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_04;PRG_MAT_TERM_G_2026;;TG;4;THEME;Algèbre et géométrie;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_05;PRG_MAT_TERM_G_2026;;TG;5;THEME;Objectifs;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_06;PRG_MAT_TERM_G_2026;;TG;6;THEME;Histoire des mathématiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_07;PRG_MAT_TERM_G_2026;;TG;7;THEME;Combinatoire et dénombrement;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_08;PRG_MAT_TERM_G_2026;;TG;8;THEME;Manipulation des vecteurs, des droites et des plans de l’espace;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_09;PRG_MAT_TERM_G_2026;;TG;9;THEME;Orthogonalité et distances dans l’espace;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_10;PRG_MAT_TERM_G_2026;;TG;10;THEME;Représentations paramétriques et équations cartésiennes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_11;PRG_MAT_TERM_G_2026;;TG;11;THEME;Analyse;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_12;PRG_MAT_TERM_G_2026;;TG;12;THEME;Objectifs;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_13;PRG_MAT_TERM_G_2026;;TG;13;THEME;Histoire des mathématiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_14;PRG_MAT_TERM_G_2026;;TG;14;THEME;Suites;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_15;PRG_MAT_TERM_G_2026;;TG;15;THEME;Limites des fonctions;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_16;PRG_MAT_TERM_G_2026;;TG;16;THEME;Compléments sur la dérivation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_17;PRG_MAT_TERM_G_2026;;TG;17;THEME;Continuité des fonctions d’une variable réelle;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_18;PRG_MAT_TERM_G_2026;;TG;18;THEME;Fonction logarithme;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_19;PRG_MAT_TERM_G_2026;;TG;19;THEME;Fonctions sinus et cosinus;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_20;PRG_MAT_TERM_G_2026;;TG;20;THEME;Primitives, équations différentielles;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_21;PRG_MAT_TERM_G_2026;;TG;21;THEME;Calcul intégral;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_22;PRG_MAT_TERM_G_2026;;TG;22;THEME;Probabilités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_23;PRG_MAT_TERM_G_2026;;TG;23;THEME;Objectifs;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_24;PRG_MAT_TERM_G_2026;;TG;24;THEME;Histoire des mathématiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_25;PRG_MAT_TERM_G_2026;;TG;25;THEME;Succession d’épreuves indépendantes, schéma de Bernoulli;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_26;PRG_MAT_TERM_G_2026;;TG;26;THEME;Sommes de variables aléatoires;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2026_27;PRG_MAT_TERM_G_2026;;TG;27;THEME;Concentration, loi des grands nombres;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_01;PRG_MAT_COMP_2026;;TG;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_02;PRG_MAT_COMP_2026;;TG;2;THEME;Thèmes d’étude;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_03;PRG_MAT_COMP_2026;;TG;3;THEME;Modèles définis par une fonction d’une variable;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_04;PRG_MAT_COMP_2026;;TG;4;THEME;Modèles d’évolution;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_05;PRG_MAT_COMP_2026;;TG;5;THEME;Approche historique de la fonction logarithme;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_06;PRG_MAT_COMP_2026;;TG;6;THEME;Calculs d’aires;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_07;PRG_MAT_COMP_2026;;TG;7;THEME;Répartition des richesses, inégalités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_08;PRG_MAT_COMP_2026;;TG;8;THEME;Inférence bayésienne;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_09;PRG_MAT_COMP_2026;;TG;9;THEME;Répétition d’expériences indépendantes, échantillonnage;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_10;PRG_MAT_COMP_2026;;TG;10;THEME;Temps d’attente;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_11;PRG_MAT_COMP_2026;;TG;11;THEME;Corrélation et causalité;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_12;PRG_MAT_COMP_2026;;TG;12;THEME;Contenus;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_13;PRG_MAT_COMP_2026;;TG;13;THEME;Analyse;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_14;PRG_MAT_COMP_2026;;TG;14;THEME;Objectifs;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_15;PRG_MAT_COMP_2026;;TG;15;THEME;Histoire des mathématiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_16;PRG_MAT_COMP_2026;;TG;16;THEME;Suites numériques, modèles discrets;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_17;PRG_MAT_COMP_2026;;TG;17;THEME;Fonctions : continuité, dérivabilité, limites, représentation graphique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_18;PRG_MAT_COMP_2026;;TG;18;THEME;Primitives et équations différentielles;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_19;PRG_MAT_COMP_2026;;TG;19;THEME;Fonctions convexes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_20;PRG_MAT_COMP_2026;;TG;20;THEME;Intégration;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_21;PRG_MAT_COMP_2026;;TG;21;THEME;Probabilités et statistique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_22;PRG_MAT_COMP_2026;;TG;22;THEME;Histoire des mathématiques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_23;PRG_MAT_COMP_2026;;TG;23;THEME;Lois discrètes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_24;PRG_MAT_COMP_2026;;TG;24;THEME;Lois à densité;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_25;PRG_MAT_COMP_2026;;TG;25;THEME;Statistique à deux variables quantitatives;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_COMP_2026_26;PRG_MAT_COMP_2026;;TG;26;THEME;Algorithmique et programmation;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_01;PRG_MAT_TT_2026;;TT;1;THEME;Vocabulaire ensembliste et logique;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_02;PRG_MAT_TT_2026;;TT;2;THEME;Algorithmique et programmation (sauf série STD2A);;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_03;PRG_MAT_TT_2026;;TT;3;THEME;Activités géométriques (uniquement pour la série STD2A);;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_04;PRG_MAT_TT_2026;;TT;4;THEME;Géométrie plane;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_05;PRG_MAT_TT_2026;;TT;5;THEME;Géométrie dans l’espace;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_06;PRG_MAT_TT_2026;;TT;6;THEME;Automatismes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_07;PRG_MAT_TT_2026;;TT;7;THEME;Analyse;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_08;PRG_MAT_TT_2026;;TT;8;THEME;Suites numériques;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_09;PRG_MAT_TT_2026;;TT;9;THEME;Fonctions exponentielles;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_10;PRG_MAT_TT_2026;;TT;10;THEME;Fonction logarithme décimal;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_11;PRG_MAT_TT_2026;;TT;11;THEME;Fonction inverse;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_12;PRG_MAT_TT_2026;;TT;12;THEME;Statistique et probabilités;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_13;PRG_MAT_TT_2026;;TT;13;THEME;Séries statistiques à deux variables quantitatives;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_14;PRG_MAT_TT_2026;;TT;14;THEME;Probabilités conditionnelles;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_15;PRG_MAT_TT_2026;;TT;15;THEME;Variables aléatoires discrètes finies;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_16;PRG_MAT_TT_2026;;TT;16;THEME;Thèmes d’étude;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TT_2026_17;PRG_MAT_TT_2026;;TT;17;THEME;Liste indicative de thèmes;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2019_01;PRG_MAT_TERM_G_2019;;TG;1;DOMAINE;Algèbre et géométrie;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02;PRG_MAT_TERM_G_2019;;TG;2;DOMAINE;Analyse;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_03;PRG_MAT_TERM_G_2019;;TG;3;DOMAINE;Probabilités;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_04;PRG_MAT_TERM_G_2019;;TG;4;DOMAINE;Algorithmique et programmation;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_D00;TG;0.01;THEME;Vocabulaire ensembliste et logique;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_01;PRG_MAT_COMP_2019;;TG;1;DOMAINE;Modèles définis par une fonction;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_02;PRG_MAT_COMP_2019;;TG;2;DOMAINE;Modèles d’évolution;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_03;PRG_MAT_COMP_2019;;TG;3;DOMAINE;Approche historique de la fonction logarithme;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_04;PRG_MAT_COMP_2019;;TG;4;DOMAINE;Calcul intégral;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_05;PRG_MAT_COMP_2019;;TG;5;DOMAINE;Probabilités et statistique;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_06;PRG_MAT_COMP_2019;;TG;6;DOMAINE;Algorithmique et programmation;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_01;PRG_MAT_EXP_2019;;TG;1;DOMAINE;Nombres complexes;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_02;PRG_MAT_EXP_2019;;TG;2;DOMAINE;Arithmétique;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_03;PRG_MAT_EXP_2019;;TG;3;DOMAINE;Graphes et matrices;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_01;PRG_MAT_TT_2019;;TT;1;DOMAINE;Nombres et calculs;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_02;PRG_MAT_TT_2019;;TT;2;DOMAINE;Fonctions;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_03;PRG_MAT_TT_2019;;TT;3;DOMAINE;Statistiques et probabilités;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TT_2019_04;PRG_MAT_TT_2019;;TT;4;DOMAINE;Algorithmique et programmation;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_01_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01;TG;01.01;THEME;Combinatoire et dénombrement;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_01_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01;TG;01.02;THEME;Manipulation des vecteurs, des droites et des plans de l’espace;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_01_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01;TG;01.03;THEME;Orthogonalité et distances dans l’espace;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_01_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_01;TG;01.04;THEME;Représentations paramétriques et équations cartésiennes;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.01;THEME;Suites numériques;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.02;THEME;Limites des fonctions;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.03;THEME;Compléments sur la dérivation;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_04;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.04;THEME;Continuité des fonctions d’une variable réelle;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_05;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.05;THEME;Fonction logarithme;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_06;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.06;THEME;Fonctions sinus et cosinus;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_07;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.07;THEME;Primitives, équations différentielles;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_02_08;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_02;TG;02.08;THEME;Calcul intégral;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_03_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03;TG;03.01;THEME;Succession d’épreuves indépendantes, schéma de Bernoulli;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_03_02;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03;TG;03.02;THEME;Sommes de variables aléatoires;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_03_03;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_03;TG;03.03;THEME;Concentration, loi des grands nombres;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_TERM_G_2019_04_01;PRG_MAT_TERM_G_2019;ITM_MAT_TERM_G_2019_04;TG;04.01;THEME;Notion de liste;Sous-thème du programme de spécialité de mathématiques de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_01_01;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_01;TG;1.01;THEME;Fonctions et modèles continus;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_02_01;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_02;TG;2.01;THEME;Suites et modèles discrets;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_03_01;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_03;TG;3.01;THEME;Logarithme et changements d’échelle;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_04_01;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_04;TG;4.01;THEME;Primitives, équations différentielles et intégration;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_05_01;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_05;TG;5.01;THEME;Lois discrètes et conditionnement;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_05_02;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_05;TG;5.02;THEME;Lois à densité;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_05_03;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_05;TG;5.03;THEME;Statistique à deux variables;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_COMP_2019_06_01;PRG_MAT_COMP_2019;ITM_MAT_COMP_2019_06;TG;6.01;THEME;Algorithmique pour les modèles;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_01_01;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_01;TG;1.01;THEME;Calcul algébrique complexe;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_01_02;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_01;TG;1.02;THEME;Géométrie et formes complexes;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_01_03;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_01;TG;1.03;THEME;Équations polynomiales et racines de l’unité;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_02_01;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_02;TG;2.01;THEME;Divisibilité, congruences et nombres premiers;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_03_01;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_03;TG;3.01;THEME;Graphes;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_MAT_EXP_2019_03_02;PRG_MAT_EXP_2019;ITM_MAT_EXP_2019_03;TG;3.02;THEME;Matrices et systèmes;Sous-thème structurant du programme optionnel de terminale générale applicable en 2026-2027.;SRC_BO_2019_08_MATH_OPTIONS
+ITM_FRA_6E_00;PRG_FRA_C3_2025;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_01;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;1;THEME;Lecture et compréhension;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_02;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;2;THEME;Culture littéraire et artistique;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_03;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;3;THEME;Écriture;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_04;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;4;THEME;Oral;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_05;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;5;THEME;Vocabulaire;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_FRA_6E_06;PRG_FRA_C3_2025;ITM_FRA_6E_00;6E;6;THEME;Grammaire et orthographe;Grand thème étudié en sixième.;SRC_BO_2025_16_FR_C3
+ITM_HG_6E_00;PRG_HG_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_01;PRG_HG_C3_2020;ITM_HG_6E_00;6E;1;THEME;La longue histoire de l’humanité et des migrations;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_02;PRG_HG_C3_2020;ITM_HG_6E_00;6E;2;THEME;Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_03;PRG_HG_C3_2020;ITM_HG_6E_00;6E;3;THEME;L’empire romain dans le monde antique;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_04;PRG_HG_C3_2020;ITM_HG_6E_00;6E;4;THEME;Habiter une métropole;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_05;PRG_HG_C3_2020;ITM_HG_6E_00;6E;5;THEME;Habiter un espace de faible densité;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_06;PRG_HG_C3_2020;ITM_HG_6E_00;6E;6;THEME;Habiter les littoraux;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_HG_6E_07;PRG_HG_C3_2020;ITM_HG_6E_00;6E;7;THEME;Le monde habité;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_SCI_6E_00;PRG_SCI_C3_2023;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_01;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;1;THEME;Matière, mouvement, énergie, information;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_02;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;2;THEME;Le vivant, sa diversité et les fonctions qui le caractérisent;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_03;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;3;THEME;Les objets techniques au cœur de la société;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_SCI_6E_04;PRG_SCI_C3_2023;ITM_SCI_6E_00;6E;4;THEME;La Terre, une planète peuplée par des êtres vivants;Grand thème étudié en sixième.;SRC_BO_2023_25_MENE2314101A
+ITM_LVE_6E_00;PRG_LVE_COLLEGE_2025;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_01;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;1;THEME;Repères culturels;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_02;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;2;THEME;Compréhension;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_03;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;3;THEME;Expression et interaction;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_6E_04;PRG_LVE_COLLEGE_2025;ITM_LVE_6E_00;6E;4;THEME;Outils linguistiques;Grand thème étudié en sixième.;SRC_BO_2025_22_MENE2504621A
+ITM_EMC_6E_00;PRG_EMC_2024;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_01;PRG_EMC_2024;ITM_EMC_6E_00;6E;1;THEME;Représenter les autres et servir l’intérêt général;Grand thème étudié en sixième.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_02;PRG_EMC_2024;ITM_EMC_6E_00;6E;2;THEME;La laïcité à l’École;Grand thème étudié en sixième.;SRC_BO_2024_24_EMC
+ITM_EMC_6E_03;PRG_EMC_2024;ITM_EMC_6E_00;6E;3;THEME;Droits de la personne et vie privée;Grand thème étudié en sixième.;SRC_BO_2024_24_EMC
+ITM_EPS_6E_00;PRG_EPS_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_01;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_02;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_03;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_EPS_6E_04;PRG_EPS_C3_2020;ITM_EPS_6E_00;6E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_00;PRG_ARTS_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_01;PRG_ARTS_C3_2020;ITM_ARTS_6E_00;6E;1;THEME;La représentation plastique et les dispositifs de présentation;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_02;PRG_ARTS_C3_2020;ITM_ARTS_6E_00;6E;2;THEME;Les fabrications et la relation entre l’objet et l’espace;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_ARTS_6E_03;PRG_ARTS_C3_2020;ITM_ARTS_6E_00;6E;3;THEME;La matérialité de la production plastique et la sensibilité aux constituants de l’œuvre;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_00;PRG_MUS_C3_2020;;6E;1;DOMAINE;Repères essentiels de sixième;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_01;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;1;THEME;Chanter et interpréter;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_02;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;2;THEME;Écouter, comparer et commenter;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_03;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_MUS_6E_04;PRG_MUS_C3_2020;ITM_MUS_6E_00;6E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en sixième.;SRC_BO_2020_31_MENE2018714A
+ITM_FRA_5E_00;PRG_FRA_C4_2026;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_01;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;1;THEME;Lecture et compréhension;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_02;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;2;THEME;Culture littéraire et artistique;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_03;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;3;THEME;Écriture;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_04;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;4;THEME;Oral;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_05;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;5;THEME;Vocabulaire;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_5E_06;PRG_FRA_C4_2026;ITM_FRA_5E_00;5E;6;THEME;Grammaire et orthographe;Grand thème étudié en 5e.;SRC_BO_2026_10_MENE2602912A
+ITM_FRA_4E_00;PRG_FRA_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_01;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;1;THEME;Lecture et compréhension;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_02;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;2;THEME;Culture littéraire et artistique;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_03;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;3;THEME;Écriture;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_04;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;4;THEME;Oral;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_05;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;5;THEME;Vocabulaire;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_4E_06;PRG_FRA_C4_2020;ITM_FRA_4E_00;4E;6;THEME;Grammaire et orthographe;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_00;PRG_FRA_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_01;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;1;THEME;Lecture et compréhension;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_02;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;2;THEME;Culture littéraire et artistique;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_03;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;3;THEME;Écriture;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_04;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;4;THEME;Oral;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_05;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;5;THEME;Vocabulaire;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_3E_06;PRG_FRA_C4_2020;ITM_FRA_3E_00;3E;6;THEME;Grammaire et orthographe;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_00;PRG_MAT_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_01;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;1;THEME;Nombres et calculs;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_02;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;2;THEME;Organisation et gestion de données, fonctions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_03;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;3;THEME;Grandeurs et mesures;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_04;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;4;THEME;Espace et géométrie;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_4E_05;PRG_MAT_C4_2020;ITM_MATOLD_4E_00;4E;5;THEME;Algorithmique et programmation;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_00;PRG_MAT_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_01;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;1;THEME;Nombres et calculs;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_02;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;2;THEME;Organisation et gestion de données, fonctions;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_03;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;3;THEME;Grandeurs et mesures;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_04;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;4;THEME;Espace et géométrie;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MATOLD_3E_05;PRG_MAT_C4_2020;ITM_MATOLD_3E_00;3E;5;THEME;Algorithmique et programmation;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVE_5E_00;PRG_LVE_COLLEGE_2025;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_01;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;1;THEME;Repères culturels;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_02;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;2;THEME;Compréhension;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_03;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;3;THEME;Expression et interaction;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVE_5E_04;PRG_LVE_COLLEGE_2025;ITM_LVE_5E_00;5E;4;THEME;Outils linguistiques;Grand thème étudié en 5e.;SRC_BO_2025_22_MENE2504621A
+ITM_LVEOLD_4E_00;PRG_LVE_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_01;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;1;THEME;Repères culturels;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_02;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;2;THEME;Compréhension;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_03;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;3;THEME;Expression et interaction;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_4E_04;PRG_LVE_C4_2020;ITM_LVEOLD_4E_00;4E;4;THEME;Outils linguistiques;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_00;PRG_LVE_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_01;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;1;THEME;Repères culturels;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_02;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;2;THEME;Compréhension;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_03;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;3;THEME;Expression et interaction;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_LVEOLD_3E_04;PRG_LVE_C4_2020;ITM_LVEOLD_3E_00;3E;4;THEME;Outils linguistiques;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_00;PRG_HG_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_01;PRG_HG_C4_2020;ITM_HG_5E_00;5E;1;THEME;Chrétientés et islam (VIe-XIIIe siècles);Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_02;PRG_HG_C4_2020;ITM_HG_5E_00;5E;2;THEME;Société, Église et pouvoir politique dans l’Occident féodal;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_03;PRG_HG_C4_2020;ITM_HG_5E_00;5E;3;THEME;Transformations de l’Europe et ouverture sur le monde;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_04;PRG_HG_C4_2020;ITM_HG_5E_00;5E;4;THEME;Question démographique et inégal développement;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_05;PRG_HG_C4_2020;ITM_HG_5E_00;5E;5;THEME;Ressources limitées, à gérer et à renouveler;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_5E_06;PRG_HG_C4_2020;ITM_HG_5E_00;5E;6;THEME;Prévenir les risques, s’adapter au changement global;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_00;PRG_HG_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_01;PRG_HG_C4_2020;ITM_HG_4E_00;4E;1;THEME;Le XVIIIe siècle : expansions, Lumières et révolutions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_02;PRG_HG_C4_2020;ITM_HG_4E_00;4E;2;THEME;L’Europe et le monde au XIXe siècle;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_03;PRG_HG_C4_2020;ITM_HG_4E_00;4E;3;THEME;Société, culture et politique dans la France du XIXe siècle;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_04;PRG_HG_C4_2020;ITM_HG_4E_00;4E;4;THEME;L’urbanisation du monde;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_05;PRG_HG_C4_2020;ITM_HG_4E_00;4E;5;THEME;Les mobilités humaines transnationales;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_4E_06;PRG_HG_C4_2020;ITM_HG_4E_00;4E;6;THEME;Des espaces transformés par la mondialisation;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_00;PRG_HG_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_01;PRG_HG_C4_2020;ITM_HG_3E_00;3E;1;THEME;L’Europe, un théâtre majeur des guerres totales;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_02;PRG_HG_C4_2020;ITM_HG_3E_00;3E;2;THEME;Le monde depuis 1945;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_03;PRG_HG_C4_2020;ITM_HG_3E_00;3E;3;THEME;Françaises et Français dans une République repensée;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_04;PRG_HG_C4_2020;ITM_HG_3E_00;3E;4;THEME;Dynamiques territoriales de la France contemporaine;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_05;PRG_HG_C4_2020;ITM_HG_3E_00;3E;5;THEME;Pourquoi et comment aménager le territoire ?;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_HG_3E_06;PRG_HG_C4_2020;ITM_HG_3E_00;3E;6;THEME;La France et l’Union européenne;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EMC_5E_00;PRG_EMC_2024;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_5E_01;PRG_EMC_2024;ITM_EMC_5E_00;5E;1;THEME;Égalité et lutte contre les discriminations;Grand thème étudié en 5e.;SRC_BO_2024_24_EMC
+ITM_EMC_5E_02;PRG_EMC_2024;ITM_EMC_5E_00;5E;2;THEME;Engagement et solidarité;Grand thème étudié en 5e.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_00;PRG_EMC_2024;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_01;PRG_EMC_2024;ITM_EMC_4E_00;4E;1;THEME;Droits et libertés;Grand thème étudié en 4e.;SRC_BO_2024_24_EMC
+ITM_EMC_4E_02;PRG_EMC_2024;ITM_EMC_4E_00;4E;2;THEME;Justice et État de droit;Grand thème étudié en 4e.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_00;PRG_EMC_2024;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_01;PRG_EMC_2024;ITM_EMC_3E_00;3E;1;THEME;Démocratie et institutions;Grand thème étudié en 3e.;SRC_BO_2024_24_EMC
+ITM_EMC_3E_02;PRG_EMC_2024;ITM_EMC_3E_00;3E;2;THEME;Citoyenneté et engagement;Grand thème étudié en 3e.;SRC_BO_2024_24_EMC
+ITM_PC_5E_00;PRG_PC_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_01;PRG_PC_C4_2020;ITM_PC_5E_00;5E;1;THEME;Organisation et transformations de la matière;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_02;PRG_PC_C4_2020;ITM_PC_5E_00;5E;2;THEME;Mouvements et interactions;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_03;PRG_PC_C4_2020;ITM_PC_5E_00;5E;3;THEME;L’énergie et ses conversions;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_5E_04;PRG_PC_C4_2020;ITM_PC_5E_00;5E;4;THEME;Des signaux pour observer et communiquer;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_00;PRG_SVT_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_01;PRG_SVT_C4_2020;ITM_SVT_5E_00;5E;1;THEME;La planète Terre, l’environnement et l’action humaine;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_02;PRG_SVT_C4_2020;ITM_SVT_5E_00;5E;2;THEME;Le vivant et son évolution;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_5E_03;PRG_SVT_C4_2020;ITM_SVT_5E_00;5E;3;THEME;Le corps humain et la santé;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_TECH_5E_00;PRG_TECH_C4_2024;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_01;PRG_TECH_C4_2024;ITM_TECH_5E_00;5E;1;THEME;Objets et systèmes techniques : usages et interactions;Grand thème étudié en 5e.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_02;PRG_TECH_C4_2024;ITM_TECH_5E_00;5E;2;THEME;Structure, fonctionnement et comportement des objets et systèmes techniques;Grand thème étudié en 5e.;SRC_BO_2024_09_TECH
+ITM_TECH_5E_03;PRG_TECH_C4_2024;ITM_TECH_5E_00;5E;3;THEME;Création, conception, réalisation et innovation;Grand thème étudié en 5e.;SRC_BO_2024_09_TECH
+ITM_EPS_5E_00;PRG_EPS_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_01;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_02;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_03;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_5E_04;PRG_EPS_C4_2020;ITM_EPS_5E_00;5E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_00;PRG_ARTS_PLAST_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_00;5E;1;THEME;"La représentation ; images, réalité et fiction";Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_02;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_00;5E;2;THEME;"La matérialité de l’œuvre ; l’objet et l’œuvre";Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_5E_03;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_5E_00;5E;3;THEME;L’œuvre, l’espace, l’auteur, le spectateur;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_00;PRG_EDUC_MUS_C4_2020;;5E;1;DOMAINE;Repères essentiels de 5e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_01;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;1;THEME;Réaliser des projets musicaux;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_02;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;2;THEME;Écouter, comparer et construire une culture musicale;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_03;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_5E_04;PRG_EDUC_MUS_C4_2020;ITM_MUS_5E_00;5E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en 5e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_00;PRG_PC_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_01;PRG_PC_C4_2020;ITM_PC_4E_00;4E;1;THEME;Organisation et transformations de la matière;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_02;PRG_PC_C4_2020;ITM_PC_4E_00;4E;2;THEME;Mouvements et interactions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_03;PRG_PC_C4_2020;ITM_PC_4E_00;4E;3;THEME;L’énergie et ses conversions;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_4E_04;PRG_PC_C4_2020;ITM_PC_4E_00;4E;4;THEME;Des signaux pour observer et communiquer;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_00;PRG_SVT_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_01;PRG_SVT_C4_2020;ITM_SVT_4E_00;4E;1;THEME;La planète Terre, l’environnement et l’action humaine;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_02;PRG_SVT_C4_2020;ITM_SVT_4E_00;4E;2;THEME;Le vivant et son évolution;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_4E_03;PRG_SVT_C4_2020;ITM_SVT_4E_00;4E;3;THEME;Le corps humain et la santé;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_TECH_4E_00;PRG_TECH_C4_2024;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_01;PRG_TECH_C4_2024;ITM_TECH_4E_00;4E;1;THEME;Objets et systèmes techniques : usages et interactions;Grand thème étudié en 4e.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_02;PRG_TECH_C4_2024;ITM_TECH_4E_00;4E;2;THEME;Structure, fonctionnement et comportement des objets et systèmes techniques;Grand thème étudié en 4e.;SRC_BO_2024_09_TECH
+ITM_TECH_4E_03;PRG_TECH_C4_2024;ITM_TECH_4E_00;4E;3;THEME;Création, conception, réalisation et innovation;Grand thème étudié en 4e.;SRC_BO_2024_09_TECH
+ITM_EPS_4E_00;PRG_EPS_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_01;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_02;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_03;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_4E_04;PRG_EPS_C4_2020;ITM_EPS_4E_00;4E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_00;PRG_ARTS_PLAST_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_00;4E;1;THEME;"La représentation ; images, réalité et fiction";Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_02;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_00;4E;2;THEME;"La matérialité de l’œuvre ; l’objet et l’œuvre";Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_4E_03;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_4E_00;4E;3;THEME;L’œuvre, l’espace, l’auteur, le spectateur;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_00;PRG_EDUC_MUS_C4_2020;;4E;1;DOMAINE;Repères essentiels de 4e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_01;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;1;THEME;Réaliser des projets musicaux;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_02;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;2;THEME;Écouter, comparer et construire une culture musicale;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_03;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_4E_04;PRG_EDUC_MUS_C4_2020;ITM_MUS_4E_00;4E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en 4e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_00;PRG_PC_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_01;PRG_PC_C4_2020;ITM_PC_3E_00;3E;1;THEME;Organisation et transformations de la matière;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_02;PRG_PC_C4_2020;ITM_PC_3E_00;3E;2;THEME;Mouvements et interactions;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_03;PRG_PC_C4_2020;ITM_PC_3E_00;3E;3;THEME;L’énergie et ses conversions;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_PC_3E_04;PRG_PC_C4_2020;ITM_PC_3E_00;3E;4;THEME;Des signaux pour observer et communiquer;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_00;PRG_SVT_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_01;PRG_SVT_C4_2020;ITM_SVT_3E_00;3E;1;THEME;La planète Terre, l’environnement et l’action humaine;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_02;PRG_SVT_C4_2020;ITM_SVT_3E_00;3E;2;THEME;Le vivant et son évolution;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_SVT_3E_03;PRG_SVT_C4_2020;ITM_SVT_3E_00;3E;3;THEME;Le corps humain et la santé;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_TECH_3E_00;PRG_TECH_C4_2024;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_01;PRG_TECH_C4_2024;ITM_TECH_3E_00;3E;1;THEME;Objets et systèmes techniques : usages et interactions;Grand thème étudié en 3e.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_02;PRG_TECH_C4_2024;ITM_TECH_3E_00;3E;2;THEME;Structure, fonctionnement et comportement des objets et systèmes techniques;Grand thème étudié en 3e.;SRC_BO_2024_09_TECH
+ITM_TECH_3E_03;PRG_TECH_C4_2024;ITM_TECH_3E_00;3E;3;THEME;Création, conception, réalisation et innovation;Grand thème étudié en 3e.;SRC_BO_2024_09_TECH
+ITM_EPS_3E_00;PRG_EPS_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_01;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;1;THEME;Produire une performance optimale, mesurable;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_02;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;2;THEME;Adapter ses déplacements à des environnements variés;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_03;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;3;THEME;S’exprimer devant les autres par une prestation artistique ou acrobatique;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_EPS_3E_04;PRG_EPS_C4_2020;ITM_EPS_3E_00;3E;4;THEME;Conduire et maîtriser un affrontement collectif ou interindividuel;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_00;PRG_ARTS_PLAST_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_01;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_00;3E;1;THEME;"La représentation ; images, réalité et fiction";Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_02;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_00;3E;2;THEME;"La matérialité de l’œuvre ; l’objet et l’œuvre";Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_ARTS_3E_03;PRG_ARTS_PLAST_C4_2020;ITM_ARTS_3E_00;3E;3;THEME;L’œuvre, l’espace, l’auteur, le spectateur;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_00;PRG_EDUC_MUS_C4_2020;;3E;1;DOMAINE;Repères essentiels de 3e;Sélection structurante pour la synthèse du niveau.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_01;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;1;THEME;Réaliser des projets musicaux;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_02;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;2;THEME;Écouter, comparer et construire une culture musicale;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_03;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;3;THEME;Explorer, imaginer et créer;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_MUS_3E_04;PRG_EDUC_MUS_C4_2020;ITM_MUS_3E_00;3E;4;THEME;Échanger, partager et argumenter;Grand thème étudié en 3e.;SRC_BO_2020_31_C4_PROGRAMMES
+ITM_FRA_LYCEE_2019_T01;PRG_FRA_LYCEE_2019;;1;;THEME;Lecture et interprétation;Lecture et interprétation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T02;PRG_FRA_LYCEE_2019;;2;;THEME;Écriture et argumentation;Écriture et argumentation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_FRA_LYCEE_2019_T03;PRG_FRA_LYCEE_2019;;3;;THEME;Langue et expression;Langue et expression : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T01;PRG_HG_LYCEE_2019;;1;;THEME;Sociétés et pouvoirs;Sociétés et pouvoirs : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T02;PRG_HG_LYCEE_2019;;2;;THEME;Territoires et mondialisation;Territoires et mondialisation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HG_LYCEE_2019_T03;PRG_HG_LYCEE_2019;;3;;THEME;Environnement et mobilités;Environnement et mobilités : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T01;PRG_EMC_LYCEE_2024;;1;;THEME;Liberté;Liberté : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T02;PRG_EMC_LYCEE_2024;;2;;THEME;Société;Société : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EMC_LYCEE_2024_T03;PRG_EMC_LYCEE_2024;;3;;THEME;Démocratie et citoyenneté;Démocratie et citoyenneté : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T01;PRG_LVE_LYCEE_2025;;1;;THEME;Compréhension et réception;Compréhension et réception : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T02;PRG_LVE_LYCEE_2025;;2;;THEME;Expression et interaction;Expression et interaction : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LVE_LYCEE_2025_T03;PRG_LVE_LYCEE_2025;;3;;THEME;Repères culturels et interculturels;Repères culturels et interculturels : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T01;PRG_EPS_LYCEE_2019;;1;;THEME;Réaliser une performance;Réaliser une performance : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T02;PRG_EPS_LYCEE_2019;;2;;THEME;Adapter ses déplacements;Adapter ses déplacements : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPS_LYCEE_2019_T03;PRG_EPS_LYCEE_2019;;3;;THEME;Conduire et maîtriser un affrontement;Conduire et maîtriser un affrontement : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T01;PRG_PC_2GT_2019;;1;;THEME;Constitution et transformations de la matière;Constitution et transformations de la matière : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T02;PRG_PC_2GT_2019;;2;;THEME;Mouvement et interactions;Mouvement et interactions : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_2GT_2019_T03;PRG_PC_2GT_2019;;3;;THEME;Ondes et signaux;Ondes et signaux : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T01;PRG_SVT_2GT_2019;;1;;THEME;Terre, vie et évolution;Terre, vie et évolution : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T02;PRG_SVT_2GT_2019;;2;;THEME;Enjeux contemporains de la planète;Enjeux contemporains de la planète : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_2GT_2019_T03;PRG_SVT_2GT_2019;;3;;THEME;Corps humain et santé;Corps humain et santé : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T01;PRG_SES_2GT_2019;;1;;THEME;Économie;Économie : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T02;PRG_SES_2GT_2019;;2;;THEME;Sociologie;Sociologie : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_2GT_2019_T03;PRG_SES_2GT_2019;;3;;THEME;Science politique et regards croisés;Science politique et regards croisés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T01;PRG_SNT_2GT_2019;;1;;THEME;Internet et Web;Internet et Web : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T02;PRG_SNT_2GT_2019;;2;;THEME;Données et informatique;Données et informatique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SNT_2GT_2019_T03;PRG_SNT_2GT_2019;;3;;THEME;Réseaux sociaux et objets connectés;Réseaux sociaux et objets connectés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T01;PRG_ENS_SCI_2019;;1;;THEME;Science, climat et énergie;Science, climat et énergie : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T02;PRG_ENS_SCI_2019;;2;;THEME;Histoire et méthodes des sciences;Histoire et méthodes des sciences : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ENS_SCI_2019_T03;PRG_ENS_SCI_2019;;3;;THEME;Numérique et connaissance scientifique;Numérique et connaissance scientifique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T01;PRG_PHILO_TERM_2019;;1;;THEME;Existence et culture;Existence et culture : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T02;PRG_PHILO_TERM_2019;;2;;THEME;Morale et politique;Morale et politique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PHILO_TERM_2019_T03;PRG_PHILO_TERM_2019;;3;;THEME;Connaissance et raison;Connaissance et raison : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T01;PRG_HGGSP_2019;;1;;THEME;Puissances et conflits;Puissances et conflits : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T02;PRG_HGGSP_2019;;2;;THEME;Information et opinion;Information et opinion : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HGGSP_2019_T03;PRG_HGGSP_2019;;3;;THEME;Environnement et patrimoine;Environnement et patrimoine : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T01;PRG_HLP_2019;;1;;THEME;Pouvoirs de la parole;Pouvoirs de la parole : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T02;PRG_HLP_2019;;2;;THEME;Représentations du monde;Représentations du monde : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_HLP_2019_T03;PRG_HLP_2019;;3;;THEME;Humanité en question;Humanité en question : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T01;PRG_LLCER_2019;;1;;THEME;Langue et communication;Langue et communication : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T02;PRG_LLCER_2019;;2;;THEME;Littérature et arts;Littérature et arts : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_LLCER_2019_T03;PRG_LLCER_2019;;3;;THEME;Cultures et sociétés;Cultures et sociétés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T01;PRG_NSI_2019;;1;;THEME;Données et algorithmique;Données et algorithmique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T02;PRG_NSI_2019;;2;;THEME;Architectures et réseaux;Architectures et réseaux : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_NSI_2019_T03;PRG_NSI_2019;;3;;THEME;Langages et programmation;Langages et programmation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T01;PRG_PC_SPEC_2019;;1;;THEME;Matière et transformations;Matière et transformations : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T02;PRG_PC_SPEC_2019;;2;;THEME;Mouvement, énergie et interactions;Mouvement, énergie et interactions : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_PC_SPEC_2019_T03;PRG_PC_SPEC_2019;;3;;THEME;Ondes, signaux et mesures;Ondes, signaux et mesures : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T01;PRG_SVT_SPEC_2019;;1;;THEME;Génétique et évolution;Génétique et évolution : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T02;PRG_SVT_SPEC_2019;;2;;THEME;Enjeux planétaires contemporains;Enjeux planétaires contemporains : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SVT_SPEC_2019_T03;PRG_SVT_SPEC_2019;;3;;THEME;Corps humain et santé;Corps humain et santé : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T01;PRG_SI_2019;;1;;THEME;Analyser les systèmes;Analyser les systèmes : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T02;PRG_SI_2019;;2;;THEME;Modéliser et simuler;Modéliser et simuler : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SI_2019_T03;PRG_SI_2019;;3;;THEME;Concevoir et expérimenter;Concevoir et expérimenter : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T01;PRG_SES_SPEC_2019;;1;;THEME;Science économique;Science économique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T02;PRG_SES_SPEC_2019;;2;;THEME;Sociologie et science politique;Sociologie et science politique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_SES_SPEC_2019_T03;PRG_SES_SPEC_2019;;3;;THEME;Regards croisés;Regards croisés : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T01;PRG_ARTS_SPEC_2019;;1;;THEME;Pratique et création;Pratique et création : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T02;PRG_ARTS_SPEC_2019;;2;;THEME;Culture artistique;Culture artistique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_ARTS_SPEC_2019_T03;PRG_ARTS_SPEC_2019;;3;;THEME;Projet et présentation;Projet et présentation : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T01;PRG_EPPCS_2021;;1;;THEME;Pratique physique et performance;Pratique physique et performance : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T02;PRG_EPPCS_2021;;2;;THEME;Culture sportive;Culture sportive : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_EPPCS_2021_T03;PRG_EPPCS_2021;;3;;THEME;Projet et analyse de pratique;Projet et analyse de pratique : repères structurants du programme.;SRC_EDUSCOL_LGT_PROGRAMMES_2026
+ITM_MAT_2GT_2026_D00;PRG_MAT_2GT_2026;;2GT;0;DOMAINE;Éléments transversaux;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_SPEC_1G_2026_D00;PRG_MAT_SPEC_1G_2026;;1G;0;DOMAINE;Éléments transversaux;;SRC_BO_2026_14_MATH_LYCEE
+ITM_MAT_TERM_G_2019_D00;PRG_MAT_TERM_G_2019;;TG;0;DOMAINE;Éléments transversaux;Programme en vigueur en 2026-2027 avant l’entrée en application du nouveau programme de terminale à la rentrée 2027-2028.;SRC_BO_2019_08_MATH_OPTIONS

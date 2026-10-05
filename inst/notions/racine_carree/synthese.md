@@ -1,19 +1,29 @@
-# Racines carrées : l'essentiel
+# L'essentiel : Racine carrée
 
-Pour $a\geqslant0$, $\sqrt a$ est l'unique nombre **positif ou nul** tel que $(\sqrt a)^2=a$.
+::: {.edu-definition}
+**De quoi parle-t-on ?**
 
-$$\sqrt0=0,\qquad \sqrt1=1,\qquad \sqrt{36}=6.$$
+Pour a positif, √a est l’unique nombre positif dont le carré vaut a.
+:::
 
-**Deux identités à distinguer :**
+## Principe
 
-$$(\sqrt a)^2=a\quad(a\geqslant0),\qquad \sqrt{a^2}=|a|\quad(a\in\mathbb R).$$
+Chercher √a revient à chercher le nombre positif qui, multiplié par lui-même, donne a.
 
-**Produits et quotients :** pour $a,b\geqslant0$ et $b>0$ dans le quotient,
+## Méthode
 
-$$\sqrt{ab}=\sqrt a\,\sqrt b,\qquad \sqrt{\frac ab}=\frac{\sqrt a}{\sqrt b}.$$
+1. Identifier les objets et l’opération demandée.
+2. Appliquer la propriété adaptée.
+3. Simplifier puis contrôler le résultat.
 
-Exemple : $\sqrt{72}=\sqrt{36\times2}=6\sqrt2$.
+## Exemple
 
-**Attention :** $\sqrt{a+b}$ n'est généralement **pas** égal à $\sqrt a+\sqrt b$. Dans les nombres réels, $\sqrt a$ n'est définie que pour $a\geqslant0$.
+√81 = 9 car 9² = 81.
 
-**Lien avec Pythagore :** dans un triangle rectangle dont les côtés de l'angle droit mesurent 3 et 4, l'hypoténuse mesure $\sqrt{3^2+4^2}=5$.
+## Vérification
+
+Contrôler le résultat en revenant à la définition ou à l’expression de départ.
+
+## À retenir
+
+Ne pas appliquer une règle avant d’avoir identifié ce qu’elle signifie et les conditions dans lesquelles elle est valable.

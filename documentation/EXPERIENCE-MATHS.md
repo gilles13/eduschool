@@ -11,10 +11,10 @@ pour l'instant une API de jointures niveau/thème/notion.
 Après installation du package, dans R :
 
 ```r
-eduschool::produire("addition_fractions", "decouverte", "sorties")
-eduschool::produire("addition_fractions", "synthese", "sorties")
-eduschool::produire("addition_fractions", "revision", "sorties")
-eduschool::produire("addition_fractions", "quiz", "sorties")
+eduschool::produire("fractions_addition", "decouverte", "sorties")
+eduschool::produire("fractions_addition", "synthese", "sorties")
+eduschool::produire("fractions_addition", "revision", "sorties")
+eduschool::produire("fractions_addition", "quiz", "sorties")
 eduschool::produire("pythagore", "decouverte", "sorties")
 eduschool::produire("pythagore", "synthese", "sorties")
 eduschool::produire("pythagore", "revision", "sorties")

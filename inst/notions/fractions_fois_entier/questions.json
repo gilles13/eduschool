@@ -1,0 +1,294 @@
+{
+  "notion_id": "fractions_fois_entier",
+  "questions": [
+    {
+      "id": "FRAC-MIG-FRACTION-FOIS-ENTIER-001",
+      "type": "qcm",
+      "enonce": "Calculer et simplifier : [[terme1]] × [[terme2]].",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "2",
+          "1/7"
+        ],
+        "format": "fraction",
+        "unite": ""
+      },
+      "propositions": [
+        "2/7",
+        "1/14",
+        "1/7",
+        "3/7"
+      ],
+      "correction": "2 × 1/7 = 2/7 : on multiplie le numérateur par 2, puis on simplifie si nécessaire."
+    },
+    {
+      "id": "FRAC-ENTIER-INVERSE-001",
+      "type": "qcm",
+      "enonce": "Par quel entier faut-il multiplier [[terme2]] pour obtenir [[terme1]] ?",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "division",
+        "termes": [
+          "10/7",
+          "2/7"
+        ],
+        "format": "integer",
+        "unite": ""
+      },
+      "propositions": [
+        "5",
+        "3",
+        "7",
+        "10"
+      ],
+      "correction": "Pour passer de 2 à 10 au numérateur sans changer le dénominateur, on multiplie par 5."
+    },
+    {
+      "id": "FRA-VAR-ENTIER-001",
+      "type": "qcm",
+      "enonce": "Calcule [[n]] × [[frac]] et donne le résultat sous forme simplifiée.",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "n": "2",
+            "frac": "1/5",
+            "bonne": "2/5",
+            "d1": "1/10",
+            "d2": "3/5",
+            "d3": "1/3",
+            "correction": "2 × 1/5 = 2/5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "3",
+            "frac": "2/7",
+            "bonne": "6/7",
+            "d1": "2/21",
+            "d2": "5/7",
+            "d3": "3/4",
+            "correction": "3 × 2/7 = 6/7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "4",
+            "frac": "3/8",
+            "bonne": "3/2",
+            "d1": "3/32",
+            "d2": "7/8",
+            "d3": "4/3",
+            "correction": "4 × 3/8 = 3/2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "5",
+            "frac": "2/9",
+            "bonne": "10/9",
+            "d1": "2/45",
+            "d2": "7/9",
+            "d3": "1",
+            "correction": "5 × 2/9 = 10/9."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "3",
+            "frac": "5/6",
+            "bonne": "5/2",
+            "d1": "5/18",
+            "d2": "4/3",
+            "d3": "15/7",
+            "correction": "3 × 5/6 = 5/2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "6",
+            "frac": "1/4",
+            "bonne": "3/2",
+            "d1": "1/24",
+            "d2": "7/4",
+            "d3": "6/5",
+            "correction": "6 × 1/4 = 3/2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "n": "4",
+            "frac": "5/7",
+            "bonne": "20/7",
+            "d1": "5/28",
+            "d2": "9/7",
+            "d3": "5/2",
+            "correction": "4 × 5/7 = 20/7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "7",
+            "frac": "3/10",
+            "bonne": "21/10",
+            "d1": "3/70",
+            "d2": "1",
+            "d3": "21/11",
+            "correction": "7 × 3/10 = 21/10."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "5",
+            "frac": "7/12",
+            "bonne": "35/12",
+            "d1": "7/60",
+            "d2": "1",
+            "d3": "35/13",
+            "correction": "5 × 7/12 = 35/12."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "8",
+            "frac": "5/14",
+            "bonne": "20/7",
+            "d1": "5/112",
+            "d2": "13/14",
+            "d3": "8/3",
+            "correction": "8 × 5/14 = 20/7."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "6",
+            "frac": "7/15",
+            "bonne": "14/5",
+            "d1": "7/90",
+            "d2": "13/15",
+            "d3": "21/8",
+            "correction": "6 × 7/15 = 14/5."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "9",
+            "frac": "4/11",
+            "bonne": "36/11",
+            "d1": "4/99",
+            "d2": "13/11",
+            "d3": "3",
+            "correction": "9 × 4/11 = 36/11."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "n": "7",
+            "frac": "8/21",
+            "bonne": "8/3",
+            "d1": "8/147",
+            "d2": "5/7",
+            "d3": "28/11",
+            "correction": "7 × 8/21 = 8/3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "10",
+            "frac": "9/25",
+            "bonne": "18/5",
+            "d1": "9/250",
+            "d2": "19/25",
+            "d3": "45/13",
+            "correction": "10 × 9/25 = 18/5."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "12",
+            "frac": "5/18",
+            "bonne": "10/3",
+            "d1": "5/216",
+            "d2": "17/18",
+            "d3": "60/19",
+            "correction": "12 × 5/18 = 10/3."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "11",
+            "frac": "7/20",
+            "bonne": "77/20",
+            "d1": "7/220",
+            "d2": "9/10",
+            "d3": "11/3",
+            "correction": "11 × 7/20 = 77/20."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "9",
+            "frac": "11/24",
+            "bonne": "33/8",
+            "d1": "11/216",
+            "d2": "5/6",
+            "d3": "99/25",
+            "correction": "9 × 11/24 = 33/8."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "n": "13",
+            "frac": "5/16",
+            "bonne": "65/16",
+            "d1": "5/208",
+            "d2": "9/8",
+            "d3": "65/17",
+            "correction": "13 × 5/16 = 65/16."
+          },
+          "progression": 3
+        }
+      ],
+      "presentation": {
+        "math": [
+          "frac",
+          "bonne",
+          "d1",
+          "d2",
+          "d3"
+        ]
+      }
+    }
+  ]
+}

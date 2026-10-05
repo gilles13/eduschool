@@ -22,7 +22,7 @@ eduschool = function() {
     cat(nom, ":\n", sep = "")
     cat("  ", paste(groupes[[nom]], collapse = "  |  "), "\n\n", sep = "")
   }
-  cat("Pour commencer : notions() puis produire(notion = \"addition_fractions\",\n",
+  cat("Pour commencer : notions() puis produire(notion = \"fractions_addition\",\n",
       "  support = \"quiz\", format = \"html\")\n", sep = "")
   cat("Guide imprimable : produire_cheatsheet()\n")
   invisible(groupes)

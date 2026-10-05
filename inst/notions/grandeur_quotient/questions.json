@@ -1,0 +1,605 @@
+{
+  "notion_id": "grandeur_quotient",
+  "questions": [
+    {
+      "id": "GQUOT-001",
+      "type": "qcm",
+      "enonce": "Un trajet de [[distance]] km dure [[temps]] h. Quelle est la vitesse moyenne ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Une vitesse moyenne est une grandeur quotient : distance divisée par durée.",
+      "variantes": [
+        {
+          "parametres": {
+            "distance": "40",
+            "temps": "2",
+            "bonne": "20 km/h",
+            "d1": "25 km/h",
+            "d2": "15 km/h",
+            "d3": "30 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "75",
+            "temps": "3",
+            "bonne": "25 km/h",
+            "d1": "30 km/h",
+            "d2": "20 km/h",
+            "d3": "35 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "120",
+            "temps": "4",
+            "bonne": "30 km/h",
+            "d1": "35 km/h",
+            "d2": "25 km/h",
+            "d3": "40 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "175",
+            "temps": "5",
+            "bonne": "35 km/h",
+            "d1": "40 km/h",
+            "d2": "30 km/h",
+            "d3": "45 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "240",
+            "temps": "6",
+            "bonne": "40 km/h",
+            "d1": "45 km/h",
+            "d2": "35 km/h",
+            "d3": "50 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "90",
+            "temps": "2",
+            "bonne": "45 km/h",
+            "d1": "50 km/h",
+            "d2": "40 km/h",
+            "d3": "55 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "150",
+            "temps": "3",
+            "bonne": "50 km/h",
+            "d1": "55 km/h",
+            "d2": "45 km/h",
+            "d3": "60 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "220",
+            "temps": "4",
+            "bonne": "55 km/h",
+            "d1": "60 km/h",
+            "d2": "50 km/h",
+            "d3": "65 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "300",
+            "temps": "5",
+            "bonne": "60 km/h",
+            "d1": "65 km/h",
+            "d2": "55 km/h",
+            "d3": "70 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "120",
+            "temps": "6",
+            "bonne": "20 km/h",
+            "d1": "25 km/h",
+            "d2": "15 km/h",
+            "d3": "30 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "50",
+            "temps": "2",
+            "bonne": "25 km/h",
+            "d1": "30 km/h",
+            "d2": "20 km/h",
+            "d3": "35 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "90",
+            "temps": "3",
+            "bonne": "30 km/h",
+            "d1": "35 km/h",
+            "d2": "25 km/h",
+            "d3": "40 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "140",
+            "temps": "4",
+            "bonne": "35 km/h",
+            "d1": "40 km/h",
+            "d2": "30 km/h",
+            "d3": "45 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "200",
+            "temps": "5",
+            "bonne": "40 km/h",
+            "d1": "45 km/h",
+            "d2": "35 km/h",
+            "d3": "50 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "270",
+            "temps": "6",
+            "bonne": "45 km/h",
+            "d1": "50 km/h",
+            "d2": "40 km/h",
+            "d3": "55 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "100",
+            "temps": "2",
+            "bonne": "50 km/h",
+            "d1": "55 km/h",
+            "d2": "45 km/h",
+            "d3": "60 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "165",
+            "temps": "3",
+            "bonne": "55 km/h",
+            "d1": "60 km/h",
+            "d2": "50 km/h",
+            "d3": "65 km/h"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "distance": "240",
+            "temps": "4",
+            "bonne": "60 km/h",
+            "d1": "65 km/h",
+            "d2": "55 km/h",
+            "d3": "70 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "100",
+            "temps": "5",
+            "bonne": "20 km/h",
+            "d1": "25 km/h",
+            "d2": "15 km/h",
+            "d3": "30 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "150",
+            "temps": "6",
+            "bonne": "25 km/h",
+            "d1": "30 km/h",
+            "d2": "20 km/h",
+            "d3": "35 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "60",
+            "temps": "2",
+            "bonne": "30 km/h",
+            "d1": "35 km/h",
+            "d2": "25 km/h",
+            "d3": "40 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "105",
+            "temps": "3",
+            "bonne": "35 km/h",
+            "d1": "40 km/h",
+            "d2": "30 km/h",
+            "d3": "45 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "160",
+            "temps": "4",
+            "bonne": "40 km/h",
+            "d1": "45 km/h",
+            "d2": "35 km/h",
+            "d3": "50 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "225",
+            "temps": "5",
+            "bonne": "45 km/h",
+            "d1": "50 km/h",
+            "d2": "40 km/h",
+            "d3": "55 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "300",
+            "temps": "6",
+            "bonne": "50 km/h",
+            "d1": "55 km/h",
+            "d2": "45 km/h",
+            "d3": "60 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "110",
+            "temps": "2",
+            "bonne": "55 km/h",
+            "d1": "60 km/h",
+            "d2": "50 km/h",
+            "d3": "65 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "180",
+            "temps": "3",
+            "bonne": "60 km/h",
+            "d1": "65 km/h",
+            "d2": "55 km/h",
+            "d3": "70 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "80",
+            "temps": "4",
+            "bonne": "20 km/h",
+            "d1": "25 km/h",
+            "d2": "15 km/h",
+            "d3": "30 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "125",
+            "temps": "5",
+            "bonne": "25 km/h",
+            "d1": "30 km/h",
+            "d2": "20 km/h",
+            "d3": "35 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "180",
+            "temps": "6",
+            "bonne": "30 km/h",
+            "d1": "35 km/h",
+            "d2": "25 km/h",
+            "d3": "40 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "70",
+            "temps": "2",
+            "bonne": "35 km/h",
+            "d1": "40 km/h",
+            "d2": "30 km/h",
+            "d3": "45 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "120",
+            "temps": "3",
+            "bonne": "40 km/h",
+            "d1": "45 km/h",
+            "d2": "35 km/h",
+            "d3": "50 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "180",
+            "temps": "4",
+            "bonne": "45 km/h",
+            "d1": "50 km/h",
+            "d2": "40 km/h",
+            "d3": "55 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "250",
+            "temps": "5",
+            "bonne": "50 km/h",
+            "d1": "55 km/h",
+            "d2": "45 km/h",
+            "d3": "60 km/h"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "distance": "330",
+            "temps": "6",
+            "bonne": "55 km/h",
+            "d1": "60 km/h",
+            "d2": "50 km/h",
+            "d3": "65 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "120",
+            "temps": "2",
+            "bonne": "60 km/h",
+            "d1": "65 km/h",
+            "d2": "55 km/h",
+            "d3": "70 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "60",
+            "temps": "3",
+            "bonne": "20 km/h",
+            "d1": "25 km/h",
+            "d2": "15 km/h",
+            "d3": "30 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "100",
+            "temps": "4",
+            "bonne": "25 km/h",
+            "d1": "30 km/h",
+            "d2": "20 km/h",
+            "d3": "35 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "150",
+            "temps": "5",
+            "bonne": "30 km/h",
+            "d1": "35 km/h",
+            "d2": "25 km/h",
+            "d3": "40 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "210",
+            "temps": "6",
+            "bonne": "35 km/h",
+            "d1": "40 km/h",
+            "d2": "30 km/h",
+            "d3": "45 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "80",
+            "temps": "2",
+            "bonne": "40 km/h",
+            "d1": "45 km/h",
+            "d2": "35 km/h",
+            "d3": "50 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "135",
+            "temps": "3",
+            "bonne": "45 km/h",
+            "d1": "50 km/h",
+            "d2": "40 km/h",
+            "d3": "55 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "200",
+            "temps": "4",
+            "bonne": "50 km/h",
+            "d1": "55 km/h",
+            "d2": "45 km/h",
+            "d3": "60 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "275",
+            "temps": "5",
+            "bonne": "55 km/h",
+            "d1": "60 km/h",
+            "d2": "50 km/h",
+            "d3": "65 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "360",
+            "temps": "6",
+            "bonne": "60 km/h",
+            "d1": "65 km/h",
+            "d2": "55 km/h",
+            "d3": "70 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "40",
+            "temps": "2",
+            "bonne": "20 km/h",
+            "d1": "25 km/h",
+            "d2": "15 km/h",
+            "d3": "30 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "75",
+            "temps": "3",
+            "bonne": "25 km/h",
+            "d1": "30 km/h",
+            "d2": "20 km/h",
+            "d3": "35 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "120",
+            "temps": "4",
+            "bonne": "30 km/h",
+            "d1": "35 km/h",
+            "d2": "25 km/h",
+            "d3": "40 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "175",
+            "temps": "5",
+            "bonne": "35 km/h",
+            "d1": "40 km/h",
+            "d2": "30 km/h",
+            "d3": "45 km/h"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "distance": "240",
+            "temps": "6",
+            "bonne": "40 km/h",
+            "d1": "45 km/h",
+            "d2": "35 km/h",
+            "d3": "50 km/h"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "GQUOT-002",
+      "type": "qcm",
+      "enonce": "Pourquoi une vitesse est-elle une grandeur quotient ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Elle est obtenue en divisant une distance par une durée."
+      },
+      "propositions": [
+        "Elle est obtenue en divisant une distance par une durée.",
+        "Elle est toujours exprimée sans unité.",
+        "Elle est obtenue en additionnant distance et durée.",
+        "Elle ne dépend que de la distance."
+      ],
+      "correction": "Une grandeur quotient compare deux grandeurs par une division."
+    },
+    {
+      "id": "GQUOT-003",
+      "type": "qcm",
+      "enonce": "Un débit de 6 L/min pendant 4 min fournit quel volume ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "24 L"
+      },
+      "propositions": [
+        "24 L",
+        "10 L",
+        "2 L",
+        "1,5 L"
+      ],
+      "correction": "Volume = débit × durée = 6 × 4 = 24 L."
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "notion_id": "statistiques_representations",
+  "questions": [
+    {
+      "id": "REP-STAT-001",
+      "type": "qcm",
+      "enonce": "On observe les effectifs suivants : [[tableau]]. Quelle lecture est correcte ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "On compare les effectifs catégorie par catégorie. Le total vaut [[total]], mais la question porte sur la catégorie la plus représentée.",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 3, B : 5, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (5).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 5.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "14"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 4, B : 7, C : 7, D : 7",
+            "bonne": "La catégorie B a l’effectif le plus élevé (7).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "25"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 5, B : 9, C : 4, D : 4",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "22"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 6, B : 11, C : 7, D : 9",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "33"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 7, B : 6, C : 4, D : 6",
+            "bonne": "La catégorie A a l’effectif le plus élevé (7).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "23"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 3, B : 8, C : 7, D : 3",
+            "bonne": "La catégorie B a l’effectif le plus élevé (8).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "21"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 4, B : 10, C : 4, D : 8",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "26"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 5, B : 5, C : 7, D : 5",
+            "bonne": "La catégorie C a l’effectif le plus élevé (7).",
+            "d1": "La catégorie D est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "22"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 6, B : 7, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (7).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "19"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 7, B : 9, C : 7, D : 7",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "30"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 3, B : 11, C : 4, D : 4",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "22"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 4, B : 6, C : 7, D : 9",
+            "bonne": "La catégorie D a l’effectif le plus élevé (9).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "26"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 5, B : 8, C : 4, D : 6",
+            "bonne": "La catégorie B a l’effectif le plus élevé (8).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "23"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 6, B : 10, C : 7, D : 3",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "26"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 7, B : 5, C : 4, D : 8",
+            "bonne": "La catégorie D a l’effectif le plus élevé (8).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 3, B : 7, C : 7, D : 5",
+            "bonne": "La catégorie B a l’effectif le plus élevé (7).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "22"
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "tableau": "A : 4, B : 9, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "19"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 5, B : 11, C : 7, D : 7",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "30"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 6, B : 6, C : 4, D : 4",
+            "bonne": "La catégorie A a l’effectif le plus élevé (6).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 6.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "20"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 7, B : 8, C : 7, D : 9",
+            "bonne": "La catégorie D a l’effectif le plus élevé (9).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "31"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 3, B : 10, C : 4, D : 6",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "23"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 4, B : 5, C : 7, D : 3",
+            "bonne": "La catégorie C a l’effectif le plus élevé (7).",
+            "d1": "La catégorie D est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "19"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 5, B : 7, C : 4, D : 8",
+            "bonne": "La catégorie D a l’effectif le plus élevé (8).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 6, B : 9, C : 7, D : 5",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "27"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 7, B : 11, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 3, B : 6, C : 7, D : 7",
+            "bonne": "La catégorie C a l’effectif le plus élevé (7).",
+            "d1": "La catégorie D est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "23"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 4, B : 8, C : 4, D : 4",
+            "bonne": "La catégorie B a l’effectif le plus élevé (8).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "20"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 5, B : 10, C : 7, D : 9",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "31"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 6, B : 5, C : 4, D : 6",
+            "bonne": "La catégorie A a l’effectif le plus élevé (6).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 6.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "21"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 7, B : 7, C : 7, D : 3",
+            "bonne": "La catégorie A a l’effectif le plus élevé (7).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 3, B : 9, C : 4, D : 8",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 4, B : 11, C : 7, D : 5",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "27"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 5, B : 6, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (6).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 6.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "17"
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "tableau": "A : 6, B : 8, C : 7, D : 7",
+            "bonne": "La catégorie B a l’effectif le plus élevé (8).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "28"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 7, B : 10, C : 4, D : 4",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "25"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 3, B : 5, C : 7, D : 9",
+            "bonne": "La catégorie D a l’effectif le plus élevé (9).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 4, B : 7, C : 4, D : 6",
+            "bonne": "La catégorie B a l’effectif le plus élevé (7).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "21"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 5, B : 9, C : 7, D : 3",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 6, B : 11, C : 4, D : 8",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "29"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 7, B : 6, C : 7, D : 5",
+            "bonne": "La catégorie A a l’effectif le plus élevé (7).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "25"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 3, B : 8, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (8).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "17"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 4, B : 10, C : 7, D : 7",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "28"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 5, B : 5, C : 4, D : 4",
+            "bonne": "La catégorie A a l’effectif le plus élevé (5).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 5.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "18"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 6, B : 7, C : 7, D : 9",
+            "bonne": "La catégorie D a l’effectif le plus élevé (9).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "29"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 7, B : 9, C : 4, D : 6",
+            "bonne": "La catégorie B a l’effectif le plus élevé (9).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 9.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "26"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 3, B : 11, C : 7, D : 3",
+            "bonne": "La catégorie B a l’effectif le plus élevé (11).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 11.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "24"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 4, B : 6, C : 4, D : 8",
+            "bonne": "La catégorie D a l’effectif le plus élevé (8).",
+            "d1": "La catégorie A est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "22"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 5, B : 8, C : 7, D : 5",
+            "bonne": "La catégorie B a l’effectif le plus élevé (8).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 8.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "25"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 6, B : 10, C : 4, D : 2",
+            "bonne": "La catégorie B a l’effectif le plus élevé (10).",
+            "d1": "La catégorie C est nécessairement majoritaire.",
+            "d2": "Le total est 10.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "22"
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "tableau": "A : 7, B : 5, C : 7, D : 7",
+            "bonne": "La catégorie A a l’effectif le plus élevé (7).",
+            "d1": "La catégorie B est nécessairement majoritaire.",
+            "d2": "Le total est 7.",
+            "d3": "On ne peut rien lire dans ce tableau.",
+            "total": "26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "REP-STAT-002",
+      "type": "qcm",
+      "enonce": "Quel graphique est particulièrement adapté pour comparer les effectifs de plusieurs catégories ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Un diagramme en barres"
+      },
+      "propositions": [
+        "Un diagramme en barres",
+        "Un graphique cartésien reliant forcément les points",
+        "Une droite graduée",
+        "Une boîte à moustaches"
+      ],
+      "correction": "Le diagramme en barres rend directement comparables les hauteurs associées aux catégories."
+    },
+    {
+      "id": "REP-STAT-003",
+      "type": "qcm",
+      "enonce": "Une fréquence de 0,35 correspond à…",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "35 %"
+      },
+      "propositions": [
+        "35 %",
+        "3,5 %",
+        "0,35 %",
+        "350 %"
+      ],
+      "correction": "Multiplier une fréquence décimale par 100 donne son écriture en pourcentage."
+    },
+    {
+      "id": "REP-STAT-004",
+      "type": "qcm",
+      "enonce": "Pourquoi choisit-on une représentation statistique ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Pour mettre en évidence l’information utile"
+      },
+      "propositions": [
+        "Pour mettre en évidence l’information utile",
+        "Parce qu’un seul graphique convient à toutes les données",
+        "Pour modifier les données",
+        "Pour éviter de calculer les effectifs"
+      ],
+      "correction": "Une représentation est un choix de lecture : elle doit rendre visible ce que l’on souhaite comparer ou suivre."
+    }
+  ]
+}

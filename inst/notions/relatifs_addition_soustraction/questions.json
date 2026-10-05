@@ -1,0 +1,29 @@
+{
+  "notion_id": "relatifs_addition_soustraction",
+  "questions": [
+    {
+      "id": "RELATIFS-ADD-001",
+      "type": "qcm",
+      "enonce": "Calcule −4 + 7.",
+      "reponse": {"mode": "editoriale", "valeur": "3"},
+      "propositions": ["3", "−3", "11", "−11"],
+      "correction": "Depuis −4, ajouter 7 revient à se déplacer de 7 unités vers la droite : on arrive à 3."
+    },
+    {
+      "id": "RELATIFS-SOUS-001",
+      "type": "qcm",
+      "enonce": "Quelle addition est équivalente à 3 − (−5) ?",
+      "reponse": {"mode": "editoriale", "valeur": "3 + 5"},
+      "propositions": ["3 + 5", "3 + (−5)", "−3 + 5", "−3 + (−5)"],
+      "correction": "Soustraire un nombre revient à ajouter son opposé. L’opposé de −5 est 5."
+    },
+    {
+      "id": "RELATIFS-SOUS-002",
+      "type": "qcm",
+      "enonce": "Calcule −6 − (−2).",
+      "reponse": {"mode": "editoriale", "valeur": "−4"},
+      "propositions": ["−4", "−8", "4", "8"],
+      "correction": "−6 − (−2) = −6 + 2 = −4."
+    }
+  ]
+}

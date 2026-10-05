@@ -5,8 +5,8 @@ Source de référence : annexe 2 du programme officiel publié au BO du 5 mars 2
 ## Résultat structurel
 
 - 45 thèmes contrôlés : 16 en 5e, 15 en 4e, 14 en 3e.
-- 99 rubriques officielles présentes dans `programme_rubriques_c4_2026.csv`.
-- Les 45 thèmes du sommaire officiel ont un correspondant dans `programme_items.csv`.
+- 99 rubriques officielles présentes dans `officiel_programme_rubriques_c4_2026.csv`.
+- Les 45 thèmes du sommaire officiel ont un correspondant dans `officiel_programme_items.csv`.
 - Les rubriques présentes ou absentes par thème concordent avec le PDF officiel.
 - Quatre thèmes ne comportent pas de rubrique `OBJECTIFS` distincte dans le PDF : Transformations (4e), Repérage sur une droite et dans le plan (4e), Multiples et diviseurs (3e), Repérage sur une droite et dans le plan (3e). Ils ne doivent pas être complétés artificiellement.
 
@@ -16,7 +16,7 @@ Le contrôle structurel ne transforme pas automatiquement les statuts éditoriau
 
 ## Capacités eduschool
 
-Les capacités de `programme_items.csv` restent des synthèses eduschool. Elles ne sont ni utilisées comme substitut au texte officiel ni déclarées exhaustives. Le diagramme distingue explicitement ces synthèses des rubriques officielles.
+Les capacités de `editorial_capacites.csv` restent des synthèses eduschool. Elles ne sont ni utilisées comme substitut au texte officiel ni déclarées exhaustives. Le diagramme distingue explicitement ces synthèses des rubriques officielles.
 
 ## Contrôle de segmentation des phrases
 

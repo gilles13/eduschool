@@ -1,0 +1,23 @@
+test_that("les rattachements editoriaux ciblent uniquement des items officiels", {
+  fichier_liens = system.file("editorial", "mathematiques", "editorial_notions_items.csv", package = "eduschool")
+  fichier_notions = system.file("editorial", "mathematiques", "editorial_notions.csv", package = "eduschool")
+  fichier_items = system.file("programmes", "officiel_programme_items.csv", package = "eduschool")
+  expect_true(nzchar(fichier_liens))
+  expect_true(nzchar(fichier_notions))
+  expect_true(nzchar(fichier_items))
+  liens = utils::read.csv2(fichier_liens, stringsAsFactors = FALSE, check.names = FALSE)
+  notions = utils::read.csv2(fichier_notions, stringsAsFactors = FALSE, check.names = FALSE)
+  items = utils::read.csv2(fichier_items, stringsAsFactors = FALSE, check.names = FALSE)
+  expect_true(all(liens$notion_id %in% notions$notion_id))
+  expect_true(all(liens$item_id %in% items$item_id))
+  expect_true(all(items$type %in% c("DOMAINE", "THEME")))
+  expect_false(any(grepl("^ITM_MATOLD_", liens$item_id)))
+})
+
+test_that("les capacites synthetiques restent explicitement editoriales", {
+  fichier = system.file("programmes", "editorial_capacites.csv", package = "eduschool")
+  expect_true(nzchar(fichier))
+  capacites = utils::read.csv2(fichier, stringsAsFactors = FALSE, check.names = FALSE)
+  expect_true(nrow(capacites) > 0L)
+  expect_true(all(capacites$type == "CAPACITE"))
+})

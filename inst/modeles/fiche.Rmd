@@ -1,7 +1,7 @@
 ---
 pagetitle: "eduschool"
 params:
-  notion: "addition_fractions"
+  notion: "fractions_addition"
   support: "decouverte"
   variantes: 5
   tirages: 5

@@ -1,0 +1,655 @@
+{
+  "notion_id": "ratio",
+  "questions": [
+    {
+      "id": "RATIO-001",
+      "type": "qcm",
+      "enonce": "Une quantité totale de [[total]] est partagée selon le ratio [[a]]:[[b]]. Quel partage convient ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Dans un ratio a:b, le total est partagé en a+b parts égales.",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "1",
+            "b": "2",
+            "total": "6",
+            "bonne": "2 et 4",
+            "d1": "3 et 4",
+            "d2": "2 et 5",
+            "d3": "4 et 2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "4",
+            "total": "18",
+            "bonne": "6 et 12",
+            "d1": "7 et 12",
+            "d2": "6 et 13",
+            "d3": "12 et 6"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "6",
+            "total": "36",
+            "bonne": "12 et 24",
+            "d1": "13 et 24",
+            "d2": "12 et 25",
+            "d3": "24 et 12"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "2",
+            "total": "30",
+            "bonne": "20 et 10",
+            "d1": "21 et 10",
+            "d2": "20 et 11",
+            "d3": "10 et 20"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "4",
+            "total": "54",
+            "bonne": "30 et 24",
+            "d1": "31 et 24",
+            "d2": "30 et 25",
+            "d3": "24 et 30"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "6",
+            "total": "49",
+            "bonne": "7 et 42",
+            "d1": "8 et 42",
+            "d2": "7 et 43",
+            "d3": "42 et 7"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "3",
+            "total": "40",
+            "bonne": "16 et 24",
+            "d1": "17 et 24",
+            "d2": "16 et 25",
+            "d3": "24 et 16"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "4",
+            "total": "63",
+            "bonne": "27 et 36",
+            "d1": "28 et 36",
+            "d2": "27 et 37",
+            "d3": "36 et 27"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "6",
+            "total": "100",
+            "bonne": "40 et 60",
+            "d1": "41 et 60",
+            "d2": "40 et 61",
+            "d3": "60 et 40"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "2",
+            "total": "14",
+            "bonne": "10 et 4",
+            "d1": "11 et 4",
+            "d2": "10 et 5",
+            "d3": "4 et 10"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "4",
+            "total": "15",
+            "bonne": "3 et 12",
+            "d1": "4 et 12",
+            "d2": "3 et 13",
+            "d3": "12 et 3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "6",
+            "total": "32",
+            "bonne": "8 et 24",
+            "d1": "9 et 24",
+            "d2": "8 et 25",
+            "d3": "24 et 8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "2",
+            "total": "25",
+            "bonne": "15 et 10",
+            "d1": "16 et 10",
+            "d2": "15 et 11",
+            "d3": "10 et 15"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "5",
+            "total": "54",
+            "bonne": "24 et 30",
+            "d1": "25 et 30",
+            "d2": "24 et 31",
+            "d3": "30 et 24"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "6",
+            "total": "77",
+            "bonne": "35 et 42",
+            "d1": "36 et 42",
+            "d2": "35 et 43",
+            "d3": "42 et 35"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "2",
+            "total": "24",
+            "bonne": "8 et 16",
+            "d1": "9 et 16",
+            "d2": "8 et 17",
+            "d3": "16 et 8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "4",
+            "total": "54",
+            "bonne": "18 et 36",
+            "d1": "19 et 36",
+            "d2": "18 et 37",
+            "d3": "36 et 18"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "6",
+            "total": "90",
+            "bonne": "30 et 60",
+            "d1": "31 et 60",
+            "d2": "30 et 61",
+            "d3": "60 et 30"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "2",
+            "total": "12",
+            "bonne": "8 et 4",
+            "d1": "9 et 4",
+            "d2": "8 et 5",
+            "d3": "4 et 8"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "4",
+            "total": "27",
+            "bonne": "15 et 12",
+            "d1": "16 et 12",
+            "d2": "15 et 13",
+            "d3": "12 et 15"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "6",
+            "total": "28",
+            "bonne": "4 et 24",
+            "d1": "5 et 24",
+            "d2": "4 et 25",
+            "d3": "24 et 4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "3",
+            "total": "25",
+            "bonne": "10 et 15",
+            "d1": "11 et 15",
+            "d2": "10 et 16",
+            "d3": "15 et 10"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "4",
+            "total": "42",
+            "bonne": "18 et 24",
+            "d1": "19 et 24",
+            "d2": "18 et 25",
+            "d3": "24 et 18"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "6",
+            "total": "70",
+            "bonne": "28 et 42",
+            "d1": "29 et 42",
+            "d2": "28 et 43",
+            "d3": "42 et 28"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "2",
+            "total": "56",
+            "bonne": "40 et 16",
+            "d1": "41 et 16",
+            "d2": "40 et 17",
+            "d3": "16 et 40"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "4",
+            "total": "45",
+            "bonne": "9 et 36",
+            "d1": "10 et 36",
+            "d2": "9 et 37",
+            "d3": "36 et 9"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "6",
+            "total": "80",
+            "bonne": "20 et 60",
+            "d1": "21 et 60",
+            "d2": "20 et 61",
+            "d3": "60 et 20"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "2",
+            "total": "10",
+            "bonne": "6 et 4",
+            "d1": "7 et 4",
+            "d2": "6 et 5",
+            "d3": "4 et 6"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "5",
+            "total": "27",
+            "bonne": "12 et 15",
+            "d1": "13 et 15",
+            "d2": "12 et 16",
+            "d3": "15 et 12"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "6",
+            "total": "44",
+            "bonne": "20 et 24",
+            "d1": "21 et 24",
+            "d2": "20 et 25",
+            "d3": "24 et 20"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "2",
+            "total": "15",
+            "bonne": "5 et 10",
+            "d1": "6 et 10",
+            "d2": "5 et 11",
+            "d3": "10 et 5"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "4",
+            "total": "36",
+            "bonne": "12 et 24",
+            "d1": "13 et 24",
+            "d2": "12 et 25",
+            "d3": "24 et 12"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "6",
+            "total": "63",
+            "bonne": "21 et 42",
+            "d1": "22 et 42",
+            "d2": "21 et 43",
+            "d3": "42 et 21"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "2",
+            "total": "48",
+            "bonne": "32 et 16",
+            "d1": "33 et 16",
+            "d2": "32 et 17",
+            "d3": "16 et 32"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "4",
+            "total": "81",
+            "bonne": "45 et 36",
+            "d1": "46 et 36",
+            "d2": "45 et 37",
+            "d3": "36 et 45"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "6",
+            "total": "70",
+            "bonne": "10 et 60",
+            "d1": "11 et 60",
+            "d2": "10 et 61",
+            "d3": "60 et 10"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "3",
+            "total": "10",
+            "bonne": "4 et 6",
+            "d1": "5 et 6",
+            "d2": "4 et 7",
+            "d3": "6 et 4"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "4",
+            "total": "21",
+            "bonne": "9 et 12",
+            "d1": "10 et 12",
+            "d2": "9 et 13",
+            "d3": "12 et 9"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "6",
+            "total": "40",
+            "bonne": "16 et 24",
+            "d1": "17 et 24",
+            "d2": "16 et 25",
+            "d3": "24 et 16"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "2",
+            "total": "35",
+            "bonne": "25 et 10",
+            "d1": "26 et 10",
+            "d2": "25 et 11",
+            "d3": "10 et 25"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "4",
+            "total": "30",
+            "bonne": "6 et 24",
+            "d1": "7 et 24",
+            "d2": "6 et 25",
+            "d3": "24 et 6"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "6",
+            "total": "56",
+            "bonne": "14 et 42",
+            "d1": "15 et 42",
+            "d2": "14 et 43",
+            "d3": "42 et 14"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "2",
+            "total": "40",
+            "bonne": "24 et 16",
+            "d1": "25 et 16",
+            "d2": "24 et 17",
+            "d3": "16 et 24"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "5",
+            "total": "81",
+            "bonne": "36 et 45",
+            "d1": "37 et 45",
+            "d2": "36 et 46",
+            "d3": "45 et 36"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "6",
+            "total": "110",
+            "bonne": "50 et 60",
+            "d1": "51 et 60",
+            "d2": "50 et 61",
+            "d3": "60 et 50"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "1",
+            "b": "2",
+            "total": "6",
+            "bonne": "2 et 4",
+            "d1": "3 et 4",
+            "d2": "2 et 5",
+            "d3": "4 et 2"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "4",
+            "total": "18",
+            "bonne": "6 et 12",
+            "d1": "7 et 12",
+            "d2": "6 et 13",
+            "d3": "12 et 6"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "3",
+            "b": "6",
+            "total": "36",
+            "bonne": "12 et 24",
+            "d1": "13 et 24",
+            "d2": "12 et 25",
+            "d3": "24 et 12"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "2",
+            "total": "30",
+            "bonne": "20 et 10",
+            "d1": "21 et 10",
+            "d2": "20 et 11",
+            "d3": "10 et 20"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "4",
+            "total": "54",
+            "bonne": "30 et 24",
+            "d1": "31 et 24",
+            "d2": "30 et 25",
+            "d3": "24 et 30"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "RATIO-002",
+      "type": "qcm",
+      "enonce": "Que compare le ratio 2:3 ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Deux quantités correspondant à 2 parts et 3 parts."
+      },
+      "propositions": [
+        "Deux quantités correspondant à 2 parts et 3 parts.",
+        "Deux quantités dont la somme vaut toujours 5.",
+        "Une fraction nécessairement égale à 2/5.",
+        "Deux quantités nécessairement mesurées dans des unités différentes."
+      ],
+      "correction": "Un ratio décrit les nombres de parts attribuées aux quantités comparées."
+    },
+    {
+      "id": "RATIO-003",
+      "type": "qcm",
+      "enonce": "Deux grandeurs sont dans le ratio 3:4. Si la première vaut 12, combien vaut la seconde ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "16"
+      },
+      "propositions": [
+        "16",
+        "9",
+        "15",
+        "48"
+      ],
+      "correction": "12 correspond à 3 parts, donc une part vaut 4 et 4 parts valent 16."
+    }
+  ]
+}

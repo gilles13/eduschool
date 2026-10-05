@@ -1,0 +1,144 @@
+{
+  "notion_id": "conversions_aires",
+  "questions": [
+    {
+      "id": "MES-CONVERSION_AIRES-001",
+      "type": "qcm",
+      "enonce": "[[quantite]] m² correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "1",
+          "10000"
+        ],
+        "format": "decimal",
+        "unite": "cm²",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "10 000 cm²",
+        "100 cm²",
+        "1 000 cm²",
+        "100 000 cm²"
+      ],
+      "correction": "Chaque côté du carré mesure 100 cm : 100 × 100 = 10 000."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-002",
+      "type": "qcm",
+      "enonce": "[[quantite]] m² correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "5/2",
+          "10000"
+        ],
+        "format": "decimal",
+        "unite": "cm²",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "25 000 cm²",
+        "250 cm²",
+        "2 500 cm²",
+        "250 000 cm²"
+      ],
+      "correction": "On multiplie par 10 000 pour passer de m² à cm²."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-003",
+      "type": "qcm",
+      "enonce": "[[quantite]] cm² correspondent à…",
+      "reponse": {
+        "mode": "calcul_fixe",
+        "moteur": "Ryacas",
+        "operation": "multiplication",
+        "termes": [
+          "300",
+          "1/100"
+        ],
+        "format": "decimal",
+        "unite": "dm²",
+        "source_format": "decimal"
+      },
+      "propositions": [
+        "3 dm²",
+        "30 dm²",
+        "0,3 dm²",
+        "300 dm²"
+      ],
+      "correction": "1 dm² = 100 cm²."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-VOCAB-TROU",
+      "type": "qcm",
+      "enonce": "Quelle grandeur exprime la surface d’un terrain ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "aire": "a _ _ e",
+          "périmètre": "p _ _ _ _ _ _ _ e",
+          "angle": "a _ _ _ e",
+          "arc": "a _ c"
+        }
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "aire"
+      },
+      "propositions": [
+        "aire",
+        "périmètre",
+        "angle",
+        "arc"
+      ],
+      "correction": "L’aire mesure une surface, contrairement au périmètre qui mesure une longueur."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-VOCAB-MASQUE",
+      "type": "qcm",
+      "enonce": "Quelle unité de surface vaut 10 000 m² ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "hectare": "H________E",
+          "hectomètre": "HE________E",
+          "kilomètre": "K________E",
+          "centimètre": "C________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "hectare"
+      },
+      "propositions": [
+        "hectare",
+        "hectomètre",
+        "kilomètre",
+        "centimètre"
+      ],
+      "correction": "Le terme recherché est « hectare »."
+    },
+    {
+      "id": "MES-CONVERSION_AIRES-APPLICATION",
+      "type": "qcm",
+      "enonce": "Un carré a un côté de 3 m. Quelle est son aire en cm² ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "90 000 cm²"
+      },
+      "propositions": [
+        "90 000 cm²",
+        "900 cm²",
+        "9 000 cm²",
+        "30 000 cm²"
+      ],
+      "correction": "3 × 3 = 9 m² ; 1 m² = 10 000 cm², donc 90 000 cm²."
+    }
+  ]
+}

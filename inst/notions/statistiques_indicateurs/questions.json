@@ -1,0 +1,571 @@
+{
+  "notion_id": "statistiques_indicateurs",
+  "questions": [
+    {
+      "id": "IND-STAT-001",
+      "type": "qcm",
+      "enonce": "Pour la série [[serie]], quelle ligne est correcte ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "La moyenne utilise toutes les valeurs ; la médiane partage la série ordonnée en deux groupes ; l’étendue vaut maximum − minimum.",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 8",
+            "bonne": "Moyenne = 6 ; médiane = 6 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 10",
+            "bonne": "Moyenne = 7.2 ; médiane = 7 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 12",
+            "bonne": "Moyenne = 8.4 ; médiane = 8 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 11",
+            "bonne": "Moyenne = 9 ; médiane = 9 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 13",
+            "bonne": "Moyenne = 10.2 ; médiane = 10 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 10",
+            "bonne": "Moyenne = 6.4 ; médiane = 6 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 9",
+            "bonne": "Moyenne = 7 ; médiane = 7 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 11",
+            "bonne": "Moyenne = 8.2 ; médiane = 8 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 13",
+            "bonne": "Moyenne = 9.4 ; médiane = 9 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 12",
+            "bonne": "Moyenne = 10 ; médiane = 10 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 9",
+            "bonne": "Moyenne = 6.2 ; médiane = 6 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 11",
+            "bonne": "Moyenne = 7.4 ; médiane = 7 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 10",
+            "bonne": "Moyenne = 8 ; médiane = 8 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 12",
+            "bonne": "Moyenne = 9.2 ; médiane = 9 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 14",
+            "bonne": "Moyenne = 10.4 ; médiane = 10 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 8",
+            "bonne": "Moyenne = 6 ; médiane = 6 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 10",
+            "bonne": "Moyenne = 7.2 ; médiane = 7 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 12",
+            "bonne": "Moyenne = 8.4 ; médiane = 8 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 11",
+            "bonne": "Moyenne = 9 ; médiane = 9 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 13",
+            "bonne": "Moyenne = 10.2 ; médiane = 10 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 10",
+            "bonne": "Moyenne = 6.4 ; médiane = 6 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 9",
+            "bonne": "Moyenne = 7 ; médiane = 7 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 11",
+            "bonne": "Moyenne = 8.2 ; médiane = 8 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 13",
+            "bonne": "Moyenne = 9.4 ; médiane = 9 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 12",
+            "bonne": "Moyenne = 10 ; médiane = 10 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 9",
+            "bonne": "Moyenne = 6.2 ; médiane = 6 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 11",
+            "bonne": "Moyenne = 7.4 ; médiane = 7 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 10",
+            "bonne": "Moyenne = 8 ; médiane = 8 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 12",
+            "bonne": "Moyenne = 9.2 ; médiane = 9 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 14",
+            "bonne": "Moyenne = 10.4 ; médiane = 10 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 8",
+            "bonne": "Moyenne = 6 ; médiane = 6 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 10",
+            "bonne": "Moyenne = 7.2 ; médiane = 7 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 12",
+            "bonne": "Moyenne = 8.4 ; médiane = 8 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 11",
+            "bonne": "Moyenne = 9 ; médiane = 9 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 13",
+            "bonne": "Moyenne = 10.2 ; médiane = 10 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 10",
+            "bonne": "Moyenne = 6.4 ; médiane = 6 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 9",
+            "bonne": "Moyenne = 7 ; médiane = 7 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 11",
+            "bonne": "Moyenne = 8.2 ; médiane = 8 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 13",
+            "bonne": "Moyenne = 9.4 ; médiane = 9 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 12",
+            "bonne": "Moyenne = 10 ; médiane = 10 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 9",
+            "bonne": "Moyenne = 6.2 ; médiane = 6 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 11",
+            "bonne": "Moyenne = 7.4 ; médiane = 7 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 10",
+            "bonne": "Moyenne = 8 ; médiane = 8 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 12",
+            "bonne": "Moyenne = 9.2 ; médiane = 9 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 14",
+            "bonne": "Moyenne = 10.4 ; médiane = 10 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "4; 5; 6; 7; 8",
+            "bonne": "Moyenne = 6 ; médiane = 6 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "5; 6; 7; 8; 10",
+            "bonne": "Moyenne = 7.2 ; médiane = 7 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "6; 7; 8; 9; 12",
+            "bonne": "Moyenne = 8.4 ; médiane = 8 ; étendue = 6",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "7; 8; 9; 10; 11",
+            "bonne": "Moyenne = 9 ; médiane = 9 ; étendue = 4",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "serie": "8; 9; 10; 11; 13",
+            "bonne": "Moyenne = 10.2 ; médiane = 10 ; étendue = 5",
+            "d1": "On peut prendre la médiane comme moyenne sans calcul.",
+            "d2": "L’étendue est égale à la plus grande valeur.",
+            "d3": "La moyenne est la somme des valeurs, sans division."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND-STAT-002",
+      "type": "qcm",
+      "enonce": "Une valeur très grande est ajoutée à une petite série. Quel indicateur est généralement le plus directement sensible à cette valeur extrême ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "La moyenne"
+      },
+      "propositions": [
+        "La moyenne",
+        "La médiane dans tous les cas",
+        "Le nombre de valeurs uniquement",
+        "Aucun indicateur"
+      ],
+      "correction": "La moyenne utilise la valeur numérique de chaque observation ; une valeur extrême peut donc la déplacer fortement."
+    },
+    {
+      "id": "IND-STAT-003",
+      "type": "qcm",
+      "enonce": "Dans un tableau de valeurs avec effectifs, comment calcule-t-on la moyenne ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "On pondère chaque valeur par son effectif"
+      },
+      "propositions": [
+        "On pondère chaque valeur par son effectif",
+        "On moyenne seulement les valeurs distinctes",
+        "On prend toujours la valeur centrale",
+        "On soustrait le minimum au maximum"
+      ],
+      "correction": "La moyenne pondérée est la somme valeur × effectif, divisée par l’effectif total."
+    },
+    {
+      "id": "IND-STAT-004",
+      "type": "qcm",
+      "enonce": "Que mesure l’étendue ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "L’écart entre la plus grande et la plus petite valeur"
+      },
+      "propositions": [
+        "L’écart entre la plus grande et la plus petite valeur",
+        "La valeur centrale",
+        "La somme des valeurs",
+        "La fréquence la plus grande"
+      ],
+      "correction": "Étendue = maximum − minimum."
+    }
+  ]
+}

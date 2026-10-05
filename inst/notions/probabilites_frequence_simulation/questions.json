@@ -1,0 +1,705 @@
+{
+  "notion_id": "probabilites_frequence_simulation",
+  "questions": [
+    {
+      "id": "FREQ-SIM-001",
+      "type": "qcm",
+      "enonce": "Une simulation répète [[n]] fois une expérience. L’événement apparaît [[obs]] fois : fréquence [[freq]], pour une probabilité théorique [[theo]]. Quelle interprétation est correcte ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Une fréquence est observée sur un nombre fini d’essais : elle fluctue. Quand le nombre de répétitions augmente, elle tend à se stabiliser autour de la probabilité.",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "20",
+            "obs": "8",
+            "freq": "0,400",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "30",
+            "obs": "9",
+            "freq": "0,300",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "40",
+            "obs": "20",
+            "freq": "0,500",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "50",
+            "obs": "18",
+            "freq": "0,360",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "60",
+            "obs": "32",
+            "freq": "0,533",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "70",
+            "obs": "21",
+            "freq": "0,300",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "80",
+            "obs": "39",
+            "freq": "0,487",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "90",
+            "obs": "30",
+            "freq": "0,333",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "20",
+            "obs": "11",
+            "freq": "0,550",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "30",
+            "obs": "12",
+            "freq": "0,400",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "40",
+            "obs": "18",
+            "freq": "0,450",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "50",
+            "obs": "16",
+            "freq": "0,320",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "60",
+            "obs": "30",
+            "freq": "0,500",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "70",
+            "obs": "24",
+            "freq": "0,343",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "80",
+            "obs": "42",
+            "freq": "0,525",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "90",
+            "obs": "28",
+            "freq": "0,311",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "n": "20",
+            "obs": "9",
+            "freq": "0,450",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "30",
+            "obs": "10",
+            "freq": "0,333",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "40",
+            "obs": "21",
+            "freq": "0,525",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "50",
+            "obs": "19",
+            "freq": "0,380",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "60",
+            "obs": "28",
+            "freq": "0,467",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "70",
+            "obs": "22",
+            "freq": "0,314",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "80",
+            "obs": "40",
+            "freq": "0,500",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "90",
+            "obs": "31",
+            "freq": "0,344",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "20",
+            "obs": "12",
+            "freq": "0,600",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "30",
+            "obs": "8",
+            "freq": "0,267",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "40",
+            "obs": "19",
+            "freq": "0,475",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "50",
+            "obs": "17",
+            "freq": "0,340",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "60",
+            "obs": "31",
+            "freq": "0,517",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "70",
+            "obs": "25",
+            "freq": "0,357",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "80",
+            "obs": "38",
+            "freq": "0,475",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "90",
+            "obs": "29",
+            "freq": "0,322",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "20",
+            "obs": "10",
+            "freq": "0,500",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "n": "30",
+            "obs": "11",
+            "freq": "0,367",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "40",
+            "obs": "22",
+            "freq": "0,550",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "50",
+            "obs": "15",
+            "freq": "0,300",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "60",
+            "obs": "29",
+            "freq": "0,483",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "70",
+            "obs": "23",
+            "freq": "0,329",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "80",
+            "obs": "41",
+            "freq": "0,512",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "90",
+            "obs": "32",
+            "freq": "0,356",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "20",
+            "obs": "8",
+            "freq": "0,400",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "30",
+            "obs": "9",
+            "freq": "0,300",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "40",
+            "obs": "20",
+            "freq": "0,500",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "50",
+            "obs": "18",
+            "freq": "0,360",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "60",
+            "obs": "32",
+            "freq": "0,533",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "70",
+            "obs": "21",
+            "freq": "0,300",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "80",
+            "obs": "39",
+            "freq": "0,487",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "90",
+            "obs": "30",
+            "freq": "0,333",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "20",
+            "obs": "11",
+            "freq": "0,550",
+            "theo": "0,5",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "n": "30",
+            "obs": "12",
+            "freq": "0,400",
+            "theo": "0,333…",
+            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
+            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
+            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
+            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FREQ-SIM-002",
+      "type": "qcm",
+      "enonce": "Qu’est-ce qui fluctue quand on recommence plusieurs séries de 50 lancers ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "La fréquence observée"
+      },
+      "propositions": [
+        "La fréquence observée",
+        "La probabilité théorique du dé équilibré",
+        "Le nombre de faces du dé",
+        "La définition de l’événement"
+      ],
+      "correction": "La probabilité appartient au modèle ; la fréquence dépend des résultats observés."
+    },
+    {
+      "id": "FREQ-SIM-003",
+      "type": "qcm",
+      "enonce": "À quoi sert principalement une simulation en probabilités ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "À observer expérimentalement des distributions et des fréquences"
+      },
+      "propositions": [
+        "À observer expérimentalement des distributions et des fréquences",
+        "À rendre aléatoire une probabilité déjà calculée",
+        "À garantir le prochain résultat",
+        "À supprimer le hasard"
+      ],
+      "correction": "La simulation répète une expérience selon un modèle pour étudier les résultats obtenus."
+    }
+  ]
+}

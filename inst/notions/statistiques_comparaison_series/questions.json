@@ -1,0 +1,655 @@
+{
+  "notion_id": "statistiques_comparaison_series",
+  "questions": [
+    {
+      "id": "COMP-STAT-001",
+      "type": "qcm",
+      "enonce": "Deux séries ont la même médiane [[m]]. Leur étendue vaut [[e1]] pour A et [[e2]] pour B. Quelle conclusion est justifiée ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "[[bonne]]"
+      },
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "Une valeur centrale commune ne signifie pas que les distributions sont identiques. L’étendue apporte une information de dispersion.",
+      "variantes": [
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "10",
+            "e1": "2",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "11",
+            "e1": "3",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "12",
+            "e1": "4",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "13",
+            "e1": "5",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "14",
+            "e1": "2",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "15",
+            "e1": "3",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "10",
+            "e1": "4",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "11",
+            "e1": "5",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "12",
+            "e1": "2",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "13",
+            "e1": "3",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "14",
+            "e1": "4",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "15",
+            "e1": "5",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "10",
+            "e1": "2",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "11",
+            "e1": "3",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "12",
+            "e1": "4",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "13",
+            "e1": "5",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 1,
+          "parametres": {
+            "m": "14",
+            "e1": "2",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "15",
+            "e1": "3",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "10",
+            "e1": "4",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "11",
+            "e1": "5",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "12",
+            "e1": "2",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "13",
+            "e1": "3",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "14",
+            "e1": "4",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "15",
+            "e1": "5",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "10",
+            "e1": "2",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "11",
+            "e1": "3",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "12",
+            "e1": "4",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "13",
+            "e1": "5",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "14",
+            "e1": "2",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "15",
+            "e1": "3",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "10",
+            "e1": "4",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "11",
+            "e1": "5",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "12",
+            "e1": "2",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 2,
+          "parametres": {
+            "m": "13",
+            "e1": "3",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "14",
+            "e1": "4",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "15",
+            "e1": "5",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "10",
+            "e1": "2",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "11",
+            "e1": "3",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "12",
+            "e1": "4",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "13",
+            "e1": "5",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "14",
+            "e1": "2",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "15",
+            "e1": "3",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "10",
+            "e1": "4",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "11",
+            "e1": "5",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "12",
+            "e1": "2",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "13",
+            "e1": "3",
+            "e2": "5",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (5) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 5.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "14",
+            "e1": "4",
+            "e2": "6",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (6) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 4 < 6.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "15",
+            "e1": "5",
+            "e2": "7",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (7) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 5 < 7.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "10",
+            "e1": "2",
+            "e2": "8",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (8) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 2 < 8.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        },
+        {
+          "progression": 3,
+          "parametres": {
+            "m": "11",
+            "e1": "3",
+            "e2": "9",
+            "bonne": "Les centres sont comparables, mais la série B est plus dispersée car son étendue (9) est plus grande.",
+            "d1": "Les deux séries sont identiques puisque leurs médianes sont égales.",
+            "d2": "La série A est plus dispersée car 3 < 9.",
+            "d3": "On peut comparer les séries uniquement si elles ont exactement les mêmes valeurs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "COMP-STAT-002",
+      "type": "qcm",
+      "enonce": "Deux séries ont la même moyenne. Peut-on conclure qu’elles se ressemblent ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Non, leur dispersion et leur répartition peuvent différer"
+      },
+      "propositions": [
+        "Non, leur dispersion et leur répartition peuvent différer",
+        "Oui, elles sont nécessairement identiques",
+        "Oui, elles ont nécessairement la même médiane",
+        "Oui, elles ont le même minimum"
+      ],
+      "correction": "Une moyenne identique n’impose ni les mêmes valeurs ni la même dispersion."
+    },
+    {
+      "id": "COMP-STAT-003",
+      "type": "qcm",
+      "enonce": "Pour comparer deux séries, quelle démarche est la plus solide ?",
+      "reponse": {
+        "mode": "editoriale",
+        "valeur": "Examiner plusieurs indicateurs et la représentation"
+      },
+      "propositions": [
+        "Examiner plusieurs indicateurs et la représentation",
+        "Comparer seulement le maximum",
+        "Comparer seulement l’effectif",
+        "Choisir l’indicateur qui confirme l’idée de départ"
+      ],
+      "correction": "Position, dispersion et représentation donnent des informations complémentaires."
+    }
+  ]
+}

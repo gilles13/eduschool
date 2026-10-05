@@ -26,7 +26,7 @@ remotes::install_github("gilles13/eduschool")
 library(eduschool)
 
 questions("fractions")
-produire("addition_fractions", "quiz", format = "html")
+produire("fractions_addition", "quiz", format = "html")
 ```
 
 </details>

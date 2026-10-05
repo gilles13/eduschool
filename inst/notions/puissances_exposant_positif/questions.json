@@ -170,7 +170,7 @@
         "masques": {
           "base": "b _ _ e",
           "exposant": "e _ _ _ _ _ _ t",
-          "produit": "p _ _ _ _ t",
+          "produit": "p _ _ _ _ _ t",
           "facteur": "f _ _ _ _ _ r"
         }
       },
@@ -215,7 +215,7 @@
     {
       "id": "PUI-029",
       "type": "qcm",
-      "enonce": "Quel nombre doit remplacer □ pour que 2³ × 2^□ = 2⁷ ?",
+      "enonce": "Quel nombre doit remplacer □ pour que 2³ × 2 à la puissance □ = 2⁷ ?",
       "presentation": {
         "type": "boite"
       },
@@ -234,7 +234,7 @@
     {
       "id": "PUI-030",
       "type": "qcm",
-      "enonce": "Quel nombre doit remplacer □ pour que (2 × 3)⁴ = 2^□ × 3⁴ ?",
+      "enonce": "Quel nombre doit remplacer □ pour que (2 × 3)⁴ = 2 à la puissance □ × 3⁴ ?",
       "presentation": {
         "type": "boite"
       },
