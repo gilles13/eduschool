@@ -10,7 +10,7 @@ produire(
   support = "tous",
   dossier = NULL,
   format = "html",
-  variantes = 5L,
+  variantes = 20L,
   ouvrir = TRUE,
   niveau = "",
   n = NULL,
@@ -24,7 +24,7 @@ produire(
 
 - notion:
 
-  Notion simple ou famille definie dans familles_notions.csv.
+  Notion simple ou famille definie dans editorial_familles_notions.csv.
 
 - support:
 

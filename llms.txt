@@ -67,6 +67,8 @@ library(eduschool)
   : Produire un diagramme HTML d'un programme de mathematiques
 - [`eduschool()`](https://gilles13.github.io/eduschool/reference/eduschool.md)
   : Decouvrir eduschool
+- [`formes_questions()`](https://gilles13.github.io/eduschool/reference/formes_questions.md)
+  : Formes de questions
 - [`graphique()`](https://gilles13.github.io/eduschool/reference/graphique.md)
   : Dessiner un graphique pedagogique reutilisable
 - [`illustrer_question()`](https://gilles13.github.io/eduschool/reference/illustrer_question.md)
@@ -82,13 +84,15 @@ library(eduschool)
 - [`produire_cheatsheet()`](https://gilles13.github.io/eduschool/reference/produire_cheatsheet.md)
   : Produire la cheatsheet eduschool
 - [`question()`](https://gilles13.github.io/eduschool/reference/question.md)
-  : Instancier une question (JSON local de confiance uniquement)
+  : Instancier une question finie
 - [`questions()`](https://gilles13.github.io/eduschool/reference/questions.md)
   : Lire les questions d'une notion pilote
 - [`series()`](https://gilles13.github.io/eduschool/reference/series.md)
   : Series du lycee (referentiel historique)
 - [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
   : Tables de multiplication
+- [`vocabulaire()`](https://gilles13.github.io/eduschool/reference/vocabulaire.md)
+  : Vocabulaire mathematique
 - [`voies()`](https://gilles13.github.io/eduschool/reference/voies.md) :
   Voies scolaires (referentiel historique)
 

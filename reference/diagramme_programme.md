@@ -13,7 +13,8 @@ diagramme_programme(
   niveau = "6E",
   detail = c("synthetique", "officiel", "complet"),
   fichier = NULL,
-  ouvrir = interactive()
+  ouvrir = interactive(),
+  vue = "cartes"
 )
 ```
 
@@ -34,6 +35,11 @@ diagramme_programme(
 - ouvrir:
 
   Ouvrir le document dans le navigateur.
+
+- vue:
+
+  Organisation visuelle du diagramme. "cartes" reproduit la vue
+  historique et constitue la valeur par defaut.
 
 ## Value
 

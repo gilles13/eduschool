@@ -1,6 +1,6 @@
-# Instancier une question (JSON local de confiance uniquement)
+# Instancier une question finie
 
-Instancier une question (JSON local de confiance uniquement)
+Instancier une question finie
 
 ## Usage
 

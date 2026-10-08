@@ -39,8 +39,8 @@ Lister les notions et familles, puis examiner leurs questions.
 
     notions()
     questions("fractions")
-    questions("addition_fractions")
-    question("addition_fractions")
+    questions("fractions_addition")
+    question("fractions_addition")
 
 ## 4 · Produire des maths
 
@@ -48,7 +48,7 @@ Choisir une notion, un support et un format. Les supports : decouverte,
 synthese, quiz ou tous.
 
     produire(
-      notion = "addition_fractions",
+      notion = "fractions_addition",
       support = "quiz",
       format = "html"
     )
@@ -58,7 +58,7 @@ synthese, quiz ou tous.
 Créer une fiche PDF, ou tous les supports disponibles.
 
     produire(
-      notion = "addition_fractions",
+      notion = "fractions_addition",
       support = "synthese",
       format = "pdf",
       dossier = "sorties"
