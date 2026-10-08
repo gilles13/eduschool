@@ -5,10 +5,7 @@
       "id": "FRP-VAR-001",
       "type": "qcm",
       "enonce": "Une collection contient [[total]] objets. On en utilise [[frac]]. Combien d’objets sont utilisés ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -20,613 +17,547 @@
         {
           "parametres": {
             "total": "24",
-            "frac": "1/2",
-            "bonne": "12",
-            "d1": "13",
-            "d2": "11",
-            "d3": "24",
-            "correction": "1/2 de 24 = 24 × 1/2 = 12."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(13\\)",
+            "d2": "\\(11\\)",
+            "d3": "\\(24\\)",
+            "correction": "Je partage 24 en 2 parts égales : 24 ÷ 2 = 12.\nJe prends 1 de ces parts : 12 × 1 = 12.\nDonc 1/2 de 24 vaut 12."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "24",
-            "frac": "1/3",
-            "bonne": "8",
-            "d1": "9",
-            "d2": "7",
-            "d3": "24",
-            "correction": "1/3 de 24 = 24 × 1/3 = 8."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(8\\)",
+            "d1": "\\(9\\)",
+            "d2": "\\(7\\)",
+            "d3": "\\(24\\)",
+            "correction": "Je partage 24 en 3 parts égales : 24 ÷ 3 = 8.\nJe prends 1 de ces parts : 8 × 1 = 8.\nDonc 1/3 de 24 vaut 8."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "24",
-            "frac": "2/3",
-            "bonne": "16",
-            "d1": "17",
-            "d2": "15",
-            "d3": "24",
-            "correction": "2/3 de 24 = 24 × 2/3 = 16."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(16\\)",
+            "d1": "\\(17\\)",
+            "d2": "\\(15\\)",
+            "d3": "\\(24\\)",
+            "correction": "Je partage 24 en 3 parts égales : 24 ÷ 3 = 8.\nJe prends 2 de ces parts : 8 × 2 = 16.\nDonc 2/3 de 24 vaut 16."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "24",
-            "frac": "3/4",
-            "bonne": "18",
-            "d1": "19",
-            "d2": "17",
-            "d3": "24",
-            "correction": "3/4 de 24 = 24 × 3/4 = 18."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(18\\)",
+            "d1": "\\(19\\)",
+            "d2": "\\(17\\)",
+            "d3": "\\(24\\)",
+            "correction": "Je partage 24 en 4 parts égales : 24 ÷ 4 = 6.\nJe prends 3 de ces parts : 6 × 3 = 18.\nDonc 3/4 de 24 vaut 18."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "30",
-            "frac": "1/2",
-            "bonne": "15",
-            "d1": "16",
-            "d2": "14",
-            "d3": "30",
-            "correction": "1/2 de 30 = 30 × 1/2 = 15."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(15\\)",
+            "d1": "\\(16\\)",
+            "d2": "\\(14\\)",
+            "d3": "\\(30\\)",
+            "correction": "Je partage 30 en 2 parts égales : 30 ÷ 2 = 15.\nJe prends 1 de ces parts : 15 × 1 = 15.\nDonc 1/2 de 30 vaut 15."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "30",
-            "frac": "1/3",
-            "bonne": "10",
-            "d1": "11",
-            "d2": "9",
-            "d3": "30",
-            "correction": "1/3 de 30 = 30 × 1/3 = 10."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(10\\)",
+            "d1": "\\(11\\)",
+            "d2": "\\(9\\)",
+            "d3": "\\(30\\)",
+            "correction": "Je partage 30 en 3 parts égales : 30 ÷ 3 = 10.\nJe prends 1 de ces parts : 10 × 1 = 10.\nDonc 1/3 de 30 vaut 10."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "30",
-            "frac": "2/3",
-            "bonne": "20",
-            "d1": "21",
-            "d2": "19",
-            "d3": "30",
-            "correction": "2/3 de 30 = 30 × 2/3 = 20."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(20\\)",
+            "d1": "\\(21\\)",
+            "d2": "\\(19\\)",
+            "d3": "\\(30\\)",
+            "correction": "Je partage 30 en 3 parts égales : 30 ÷ 3 = 10.\nJe prends 2 de ces parts : 10 × 2 = 20.\nDonc 2/3 de 30 vaut 20."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "30",
-            "frac": "2/5",
-            "bonne": "12",
-            "d1": "13",
-            "d2": "11",
-            "d3": "30",
-            "correction": "2/5 de 30 = 30 × 2/5 = 12."
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(13\\)",
+            "d2": "\\(11\\)",
+            "d3": "\\(30\\)",
+            "correction": "Je partage 30 en 5 parts égales : 30 ÷ 5 = 6.\nJe prends 2 de ces parts : 6 × 2 = 12.\nDonc 2/5 de 30 vaut 12."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "36",
-            "frac": "1/2",
-            "bonne": "18",
-            "d1": "19",
-            "d2": "17",
-            "d3": "36",
-            "correction": "1/2 de 36 = 36 × 1/2 = 18."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(18\\)",
+            "d1": "\\(19\\)",
+            "d2": "\\(17\\)",
+            "d3": "\\(36\\)",
+            "correction": "Je partage 36 en 2 parts égales : 36 ÷ 2 = 18.\nJe prends 1 de ces parts : 18 × 1 = 18.\nDonc 1/2 de 36 vaut 18."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "36",
-            "frac": "1/3",
-            "bonne": "12",
-            "d1": "13",
-            "d2": "11",
-            "d3": "36",
-            "correction": "1/3 de 36 = 36 × 1/3 = 12."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(13\\)",
+            "d2": "\\(11\\)",
+            "d3": "\\(36\\)",
+            "correction": "Je partage 36 en 3 parts égales : 36 ÷ 3 = 12.\nJe prends 1 de ces parts : 12 × 1 = 12.\nDonc 1/3 de 36 vaut 12."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "36",
-            "frac": "2/3",
-            "bonne": "24",
-            "d1": "25",
-            "d2": "23",
-            "d3": "36",
-            "correction": "2/3 de 36 = 36 × 2/3 = 24."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(25\\)",
+            "d2": "\\(23\\)",
+            "d3": "\\(36\\)",
+            "correction": "Je partage 36 en 3 parts égales : 36 ÷ 3 = 12.\nJe prends 2 de ces parts : 12 × 2 = 24.\nDonc 2/3 de 36 vaut 24."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "36",
-            "frac": "3/4",
-            "bonne": "27",
-            "d1": "28",
-            "d2": "26",
-            "d3": "36",
-            "correction": "3/4 de 36 = 36 × 3/4 = 27."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(27\\)",
+            "d1": "\\(28\\)",
+            "d2": "\\(26\\)",
+            "d3": "\\(36\\)",
+            "correction": "Je partage 36 en 4 parts égales : 36 ÷ 4 = 9.\nJe prends 3 de ces parts : 9 × 3 = 27.\nDonc 3/4 de 36 vaut 27."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "40",
-            "frac": "1/2",
-            "bonne": "20",
-            "d1": "21",
-            "d2": "19",
-            "d3": "40",
-            "correction": "1/2 de 40 = 40 × 1/2 = 20."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(20\\)",
+            "d1": "\\(21\\)",
+            "d2": "\\(19\\)",
+            "d3": "\\(40\\)",
+            "correction": "Je partage 40 en 2 parts égales : 40 ÷ 2 = 20.\nJe prends 1 de ces parts : 20 × 1 = 20.\nDonc 1/2 de 40 vaut 20."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "40",
-            "frac": "3/4",
-            "bonne": "30",
-            "d1": "31",
-            "d2": "29",
-            "d3": "40",
-            "correction": "3/4 de 40 = 40 × 3/4 = 30."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(31\\)",
+            "d2": "\\(29\\)",
+            "d3": "\\(40\\)",
+            "correction": "Je partage 40 en 4 parts égales : 40 ÷ 4 = 10.\nJe prends 3 de ces parts : 10 × 3 = 30.\nDonc 3/4 de 40 vaut 30."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "40",
-            "frac": "2/5",
-            "bonne": "16",
-            "d1": "17",
-            "d2": "15",
-            "d3": "40",
-            "correction": "2/5 de 40 = 40 × 2/5 = 16."
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(16\\)",
+            "d1": "\\(17\\)",
+            "d2": "\\(15\\)",
+            "d3": "\\(40\\)",
+            "correction": "Je partage 40 en 5 parts égales : 40 ÷ 5 = 8.\nJe prends 2 de ces parts : 8 × 2 = 16.\nDonc 2/5 de 40 vaut 16."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "48",
-            "frac": "1/2",
-            "bonne": "24",
-            "d1": "25",
-            "d2": "23",
-            "d3": "48",
-            "correction": "1/2 de 48 = 48 × 1/2 = 24."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(25\\)",
+            "d2": "\\(23\\)",
+            "d3": "\\(48\\)",
+            "correction": "Je partage 48 en 2 parts égales : 48 ÷ 2 = 24.\nJe prends 1 de ces parts : 24 × 1 = 24.\nDonc 1/2 de 48 vaut 24."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "48",
-            "frac": "1/3",
-            "bonne": "16",
-            "d1": "17",
-            "d2": "15",
-            "d3": "48",
-            "correction": "1/3 de 48 = 48 × 1/3 = 16."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(16\\)",
+            "d1": "\\(17\\)",
+            "d2": "\\(15\\)",
+            "d3": "\\(48\\)",
+            "correction": "Je partage 48 en 3 parts égales : 48 ÷ 3 = 16.\nJe prends 1 de ces parts : 16 × 1 = 16.\nDonc 1/3 de 48 vaut 16."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "48",
-            "frac": "2/3",
-            "bonne": "32",
-            "d1": "33",
-            "d2": "31",
-            "d3": "48",
-            "correction": "2/3 de 48 = 48 × 2/3 = 32."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(32\\)",
+            "d1": "\\(33\\)",
+            "d2": "\\(31\\)",
+            "d3": "\\(48\\)",
+            "correction": "Je partage 48 en 3 parts égales : 48 ÷ 3 = 16.\nJe prends 2 de ces parts : 16 × 2 = 32.\nDonc 2/3 de 48 vaut 32."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "48",
-            "frac": "3/4",
-            "bonne": "36",
-            "d1": "37",
-            "d2": "35",
-            "d3": "48",
-            "correction": "3/4 de 48 = 48 × 3/4 = 36."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(36\\)",
+            "d1": "\\(37\\)",
+            "d2": "\\(35\\)",
+            "d3": "\\(48\\)",
+            "correction": "Je partage 48 en 4 parts égales : 48 ÷ 4 = 12.\nJe prends 3 de ces parts : 12 × 3 = 36.\nDonc 3/4 de 48 vaut 36."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "54",
-            "frac": "1/2",
-            "bonne": "27",
-            "d1": "28",
-            "d2": "26",
-            "d3": "54",
-            "correction": "1/2 de 54 = 54 × 1/2 = 27."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(27\\)",
+            "d1": "\\(28\\)",
+            "d2": "\\(26\\)",
+            "d3": "\\(54\\)",
+            "correction": "Je partage 54 en 2 parts égales : 54 ÷ 2 = 27.\nJe prends 1 de ces parts : 27 × 1 = 27.\nDonc 1/2 de 54 vaut 27."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "54",
-            "frac": "1/3",
-            "bonne": "18",
-            "d1": "19",
-            "d2": "17",
-            "d3": "54",
-            "correction": "1/3 de 54 = 54 × 1/3 = 18."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(18\\)",
+            "d1": "\\(19\\)",
+            "d2": "\\(17\\)",
+            "d3": "\\(54\\)",
+            "correction": "Je partage 54 en 3 parts égales : 54 ÷ 3 = 18.\nJe prends 1 de ces parts : 18 × 1 = 18.\nDonc 1/3 de 54 vaut 18."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "54",
-            "frac": "2/3",
-            "bonne": "36",
-            "d1": "37",
-            "d2": "35",
-            "d3": "54",
-            "correction": "2/3 de 54 = 54 × 2/3 = 36."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(36\\)",
+            "d1": "\\(37\\)",
+            "d2": "\\(35\\)",
+            "d3": "\\(54\\)",
+            "correction": "Je partage 54 en 3 parts égales : 54 ÷ 3 = 18.\nJe prends 2 de ces parts : 18 × 2 = 36.\nDonc 2/3 de 54 vaut 36."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "60",
-            "frac": "1/2",
-            "bonne": "30",
-            "d1": "31",
-            "d2": "29",
-            "d3": "60",
-            "correction": "1/2 de 60 = 60 × 1/2 = 30."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(31\\)",
+            "d2": "\\(29\\)",
+            "d3": "\\(60\\)",
+            "correction": "Je partage 60 en 2 parts égales : 60 ÷ 2 = 30.\nJe prends 1 de ces parts : 30 × 1 = 30.\nDonc 1/2 de 60 vaut 30."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "60",
-            "frac": "1/3",
-            "bonne": "20",
-            "d1": "21",
-            "d2": "19",
-            "d3": "60",
-            "correction": "1/3 de 60 = 60 × 1/3 = 20."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(20\\)",
+            "d1": "\\(21\\)",
+            "d2": "\\(19\\)",
+            "d3": "\\(60\\)",
+            "correction": "Je partage 60 en 3 parts égales : 60 ÷ 3 = 20.\nJe prends 1 de ces parts : 20 × 1 = 20.\nDonc 1/3 de 60 vaut 20."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "60",
-            "frac": "2/3",
-            "bonne": "40",
-            "d1": "41",
-            "d2": "39",
-            "d3": "60",
-            "correction": "2/3 de 60 = 60 × 2/3 = 40."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(40\\)",
+            "d1": "\\(41\\)",
+            "d2": "\\(39\\)",
+            "d3": "\\(60\\)",
+            "correction": "Je partage 60 en 3 parts égales : 60 ÷ 3 = 20.\nJe prends 2 de ces parts : 20 × 2 = 40.\nDonc 2/3 de 60 vaut 40."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "60",
-            "frac": "3/4",
-            "bonne": "45",
-            "d1": "46",
-            "d2": "44",
-            "d3": "60",
-            "correction": "3/4 de 60 = 60 × 3/4 = 45."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(45\\)",
+            "d1": "\\(46\\)",
+            "d2": "\\(44\\)",
+            "d3": "\\(60\\)",
+            "correction": "Je partage 60 en 4 parts égales : 60 ÷ 4 = 15.\nJe prends 3 de ces parts : 15 × 3 = 45.\nDonc 3/4 de 60 vaut 45."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "60",
-            "frac": "2/5",
-            "bonne": "24",
-            "d1": "25",
-            "d2": "23",
-            "d3": "60",
-            "correction": "2/5 de 60 = 60 × 2/5 = 24."
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(25\\)",
+            "d2": "\\(23\\)",
+            "d3": "\\(60\\)",
+            "correction": "Je partage 60 en 5 parts égales : 60 ÷ 5 = 12.\nJe prends 2 de ces parts : 12 × 2 = 24.\nDonc 2/5 de 60 vaut 24."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "72",
-            "frac": "1/2",
-            "bonne": "36",
-            "d1": "37",
-            "d2": "35",
-            "d3": "72",
-            "correction": "1/2 de 72 = 72 × 1/2 = 36."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(36\\)",
+            "d1": "\\(37\\)",
+            "d2": "\\(35\\)",
+            "d3": "\\(72\\)",
+            "correction": "Je partage 72 en 2 parts égales : 72 ÷ 2 = 36.\nJe prends 1 de ces parts : 36 × 1 = 36.\nDonc 1/2 de 72 vaut 36."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "72",
-            "frac": "1/3",
-            "bonne": "24",
-            "d1": "25",
-            "d2": "23",
-            "d3": "72",
-            "correction": "1/3 de 72 = 72 × 1/3 = 24."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(25\\)",
+            "d2": "\\(23\\)",
+            "d3": "\\(72\\)",
+            "correction": "Je partage 72 en 3 parts égales : 72 ÷ 3 = 24.\nJe prends 1 de ces parts : 24 × 1 = 24.\nDonc 1/3 de 72 vaut 24."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "72",
-            "frac": "2/3",
-            "bonne": "48",
-            "d1": "49",
-            "d2": "47",
-            "d3": "72",
-            "correction": "2/3 de 72 = 72 × 2/3 = 48."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(48\\)",
+            "d1": "\\(49\\)",
+            "d2": "\\(47\\)",
+            "d3": "\\(72\\)",
+            "correction": "Je partage 72 en 3 parts égales : 72 ÷ 3 = 24.\nJe prends 2 de ces parts : 24 × 2 = 48.\nDonc 2/3 de 72 vaut 48."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "72",
-            "frac": "3/4",
-            "bonne": "54",
-            "d1": "55",
-            "d2": "53",
-            "d3": "72",
-            "correction": "3/4 de 72 = 72 × 3/4 = 54."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(54\\)",
+            "d1": "\\(55\\)",
+            "d2": "\\(53\\)",
+            "d3": "\\(72\\)",
+            "correction": "Je partage 72 en 4 parts égales : 72 ÷ 4 = 18.\nJe prends 3 de ces parts : 18 × 3 = 54.\nDonc 3/4 de 72 vaut 54."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "80",
-            "frac": "1/2",
-            "bonne": "40",
-            "d1": "41",
-            "d2": "39",
-            "d3": "80",
-            "correction": "1/2 de 80 = 80 × 1/2 = 40."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(40\\)",
+            "d1": "\\(41\\)",
+            "d2": "\\(39\\)",
+            "d3": "\\(80\\)",
+            "correction": "Je partage 80 en 2 parts égales : 80 ÷ 2 = 40.\nJe prends 1 de ces parts : 40 × 1 = 40.\nDonc 1/2 de 80 vaut 40."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "80",
-            "frac": "3/4",
-            "bonne": "60",
-            "d1": "61",
-            "d2": "59",
-            "d3": "80",
-            "correction": "3/4 de 80 = 80 × 3/4 = 60."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(60\\)",
+            "d1": "\\(61\\)",
+            "d2": "\\(59\\)",
+            "d3": "\\(80\\)",
+            "correction": "Je partage 80 en 4 parts égales : 80 ÷ 4 = 20.\nJe prends 3 de ces parts : 20 × 3 = 60.\nDonc 3/4 de 80 vaut 60."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "80",
-            "frac": "2/5",
-            "bonne": "32",
-            "d1": "33",
-            "d2": "31",
-            "d3": "80",
-            "correction": "2/5 de 80 = 80 × 2/5 = 32."
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(32\\)",
+            "d1": "\\(33\\)",
+            "d2": "\\(31\\)",
+            "d3": "\\(80\\)",
+            "correction": "Je partage 80 en 5 parts égales : 80 ÷ 5 = 16.\nJe prends 2 de ces parts : 16 × 2 = 32.\nDonc 2/5 de 80 vaut 32."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "90",
-            "frac": "1/2",
-            "bonne": "45",
-            "d1": "46",
-            "d2": "44",
-            "d3": "90",
-            "correction": "1/2 de 90 = 90 × 1/2 = 45."
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(45\\)",
+            "d1": "\\(46\\)",
+            "d2": "\\(44\\)",
+            "d3": "\\(90\\)",
+            "correction": "Je partage 90 en 2 parts égales : 90 ÷ 2 = 45.\nJe prends 1 de ces parts : 45 × 1 = 45.\nDonc 1/2 de 90 vaut 45."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "90",
-            "frac": "1/3",
-            "bonne": "30",
-            "d1": "31",
-            "d2": "29",
-            "d3": "90",
-            "correction": "1/3 de 90 = 90 × 1/3 = 30."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(31\\)",
+            "d2": "\\(29\\)",
+            "d3": "\\(90\\)",
+            "correction": "Je partage 90 en 3 parts égales : 90 ÷ 3 = 30.\nJe prends 1 de ces parts : 30 × 1 = 30.\nDonc 1/3 de 90 vaut 30."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "90",
-            "frac": "2/3",
-            "bonne": "60",
-            "d1": "61",
-            "d2": "59",
-            "d3": "90",
-            "correction": "2/3 de 90 = 90 × 2/3 = 60."
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(60\\)",
+            "d1": "\\(61\\)",
+            "d2": "\\(59\\)",
+            "d3": "\\(90\\)",
+            "correction": "Je partage 90 en 3 parts égales : 90 ÷ 3 = 30.\nJe prends 2 de ces parts : 30 × 2 = 60.\nDonc 2/3 de 90 vaut 60."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "90",
-            "frac": "2/5",
-            "bonne": "36",
-            "d1": "37",
-            "d2": "35",
-            "d3": "90",
-            "correction": "2/5 de 90 = 90 × 2/5 = 36."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "24",
-            "frac": "1/2",
-            "bonne": "12",
-            "d1": "13",
-            "d2": "11",
-            "d3": "24",
-            "correction": "1/2 de 24 = 24 × 1/2 = 12."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "24",
-            "frac": "1/3",
-            "bonne": "8",
-            "d1": "9",
-            "d2": "7",
-            "d3": "24",
-            "correction": "1/3 de 24 = 24 × 1/3 = 8."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "24",
-            "frac": "2/3",
-            "bonne": "16",
-            "d1": "17",
-            "d2": "15",
-            "d3": "24",
-            "correction": "2/3 de 24 = 24 × 2/3 = 16."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "24",
-            "frac": "3/4",
-            "bonne": "18",
-            "d1": "19",
-            "d2": "17",
-            "d3": "24",
-            "correction": "3/4 de 24 = 24 × 3/4 = 18."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "30",
-            "frac": "1/2",
-            "bonne": "15",
-            "d1": "16",
-            "d2": "14",
-            "d3": "30",
-            "correction": "1/2 de 30 = 30 × 1/2 = 15."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "30",
-            "frac": "1/3",
-            "bonne": "10",
-            "d1": "11",
-            "d2": "9",
-            "d3": "30",
-            "correction": "1/3 de 30 = 30 × 1/3 = 10."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "30",
-            "frac": "2/3",
-            "bonne": "20",
-            "d1": "21",
-            "d2": "19",
-            "d3": "30",
-            "correction": "2/3 de 30 = 30 × 2/3 = 20."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "30",
-            "frac": "2/5",
-            "bonne": "12",
-            "d1": "13",
-            "d2": "11",
-            "d3": "30",
-            "correction": "2/5 de 30 = 30 × 2/5 = 12."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "36",
-            "frac": "1/2",
-            "bonne": "18",
-            "d1": "19",
-            "d2": "17",
-            "d3": "36",
-            "correction": "1/2 de 36 = 36 × 1/2 = 18."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "36",
-            "frac": "1/3",
-            "bonne": "12",
-            "d1": "13",
-            "d2": "11",
-            "d3": "36",
-            "correction": "1/3 de 36 = 36 × 1/3 = 12."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "36",
-            "frac": "2/3",
-            "bonne": "24",
-            "d1": "25",
-            "d2": "23",
-            "d3": "36",
-            "correction": "2/3 de 36 = 36 × 2/3 = 24."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "total": "36",
-            "frac": "3/4",
-            "bonne": "27",
-            "d1": "28",
-            "d2": "26",
-            "d3": "36",
-            "correction": "3/4 de 36 = 36 × 3/4 = 27."
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(36\\)",
+            "d1": "\\(37\\)",
+            "d2": "\\(35\\)",
+            "d3": "\\(90\\)",
+            "correction": "Je partage 90 en 5 parts égales : 90 ÷ 5 = 18.\nJe prends 2 de ces parts : 18 × 2 = 36.\nDonc 2/5 de 90 vaut 36."
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRP-METHODE-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "presentation": {
-        "math": [
-          "frac",
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une classe compte 28 élèves et 3/7 participent à un atelier. Quel calcul permet de trouver le nombre de participants ?",
+            "reponse": "28 × 3/7",
+            "correction": "Calculer une fraction d’une quantité revient à multiplier la quantité par la fraction.",
+            "p1": "28 × 3/7",
+            "p2": "28 ÷ 3",
+            "p3": "28 + 3",
+            "p4": "28 × 7"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Une classe compte 30 élèves et 2/5 participent à un atelier. Quel calcul permet de trouver le nombre de participants ?",
+            "reponse": "30 × 2/5",
+            "correction": "Calculer une fraction d’une quantité revient à multiplier la quantité par la fraction.",
+            "p1": "30 × 2/5",
+            "p2": "30 ÷ 2",
+            "p3": "30 + 2",
+            "p4": "30 × 5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Une classe compte 32 élèves et 3/8 participent à un atelier. Quel calcul permet de trouver le nombre de participants ?",
+            "reponse": "32 × 3/8",
+            "correction": "Calculer une fraction d’une quantité revient à multiplier la quantité par la fraction.",
+            "p1": "32 × 3/8",
+            "p2": "32 ÷ 3",
+            "p3": "32 + 3",
+            "p4": "32 × 8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Une classe compte 36 élèves et 5/9 participent à un atelier. Quel calcul permet de trouver le nombre de participants ?",
+            "reponse": "36 × 5/9",
+            "correction": "Calculer une fraction d’une quantité revient à multiplier la quantité par la fraction.",
+            "p1": "36 × 5/9",
+            "p2": "36 ÷ 5",
+            "p3": "36 + 5",
+            "p4": "36 × 9"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Une classe compte 42 élèves et 4/7 participent à un atelier. Quel calcul permet de trouver le nombre de participants ?",
+            "reponse": "42 × 4/7",
+            "correction": "Calculer une fraction d’une quantité revient à multiplier la quantité par la fraction.",
+            "p1": "42 × 4/7",
+            "p2": "42 ÷ 4",
+            "p3": "42 + 4",
+            "p4": "42 × 7"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Une classe compte 48 élèves et 5/8 participent à un atelier. Quel calcul permet de trouver le nombre de participants ?",
+            "reponse": "48 × 5/8",
+            "correction": "Calculer une fraction d’une quantité revient à multiplier la quantité par la fraction.",
+            "p1": "48 × 5/8",
+            "p2": "48 ÷ 5",
+            "p3": "48 + 5",
+            "p4": "48 × 8"
+          },
+          "progression": 1
+        }
+      ]
     }
   ]
 }

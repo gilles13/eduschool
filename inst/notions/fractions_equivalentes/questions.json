@@ -2,31 +2,6 @@
   "notion_id": "fractions_equivalentes",
   "questions": [
     {
-      "id": "FRAC-MIG-FRACTIONS-EQUIVALENTES-001",
-      "type": "qcm",
-      "enonce": "Quelle fraction est équivalente à [[source]] ?",
-      "reponse": {
-        "mode": "relation_fixe",
-        "moteur": "Ryacas",
-        "relation": "equivalent",
-        "expression": "2/7",
-        "affichage": "2/7",
-        "candidats": {
-          "6/21": "6/21",
-          "7/21": "7/21",
-          "6/7": "6/7",
-          "2/21": "2/21"
-        }
-      },
-      "propositions": [
-        "6/21",
-        "7/21",
-        "6/7",
-        "2/21"
-      ],
-      "correction": "2/7 = (2 × 3)/(7 × 3) = 6/21 : multiplier numérateur et dénominateur par 3 conserve la valeur."
-    },
-    {
       "id": "FRAC-VOCAB-001",
       "type": "qcm",
       "enonce": "Comment appelle-t-on le nombre situé au-dessus de la barre de fraction ? Choisis le mot masqué correspondant.",
@@ -40,10 +15,7 @@
           "diviseur": "DI________R"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "numérateur"
-      },
+      "reponse": "numérateur",
       "propositions": [
         "numérateur",
         "dénominateur",
@@ -53,71 +25,206 @@
       "correction": "Le numérateur indique combien de parts sont considérées. Le dénominateur précise en combien de parts égales l’unité est divisée."
     },
     {
+      "id": "FRAC-VOCAB-DENOMINATEUR-001",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on le nombre situé sous la barre de fraction ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "dénominateur": "d é _ _ _ _ _ _ _ _ _ r",
+          "numérateur": "n u _ _ _ _ _ _ _ r",
+          "quotient": "q u _ _ _ _ _ t",
+          "diviseur": "d i _ _ _ _ _ r"
+        }
+      },
+      "reponse": "dénominateur",
+      "propositions": [
+        "dénominateur",
+        "numérateur",
+        "quotient",
+        "diviseur"
+      ],
+      "correction": "Le dénominateur est le nombre situé sous la barre de fraction.\nIl indique en combien de parts égales l’unité est partagée."
+    },
+    {
       "id": "FRAC-EQUIV-MANQUANT-001",
       "type": "qcm",
-      "enonce": "Quel numérateur complète l’égalité [[terme1]] = □/[[terme2]] ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "proportion",
-        "termes": [
-          "3/5",
-          "20"
-        ],
-        "format": "integer",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12",
-        "15",
-        "8",
-        "4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le dénominateur est multiplié par 4 : le numérateur aussi. 3 × 4 = 12."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel numérateur complète l’égalité \\(\\frac{2}{7}\\) = □/\\(28\\) ?",
+            "reponse": "8",
+            "correction": "Le dénominateur est multiplié par 4, donc le numérateur aussi : 2 × 4 = 8.",
+            "p1": "8",
+            "p2": "9",
+            "p3": "2",
+            "p4": "28"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel numérateur complète l’égalité \\(\\frac{3}{5}\\) = □/\\(20\\) ?",
+            "reponse": "12",
+            "correction": "Le dénominateur est multiplié par 4, donc le numérateur aussi : 3 × 4 = 12.",
+            "p1": "12",
+            "p2": "13",
+            "p3": "3",
+            "p4": "20"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel numérateur complète l’égalité \\(\\frac{4}{9}\\) = □/\\(36\\) ?",
+            "reponse": "16",
+            "correction": "Le dénominateur est multiplié par 4, donc le numérateur aussi : 4 × 4 = 16.",
+            "p1": "16",
+            "p2": "17",
+            "p3": "4",
+            "p4": "36"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel numérateur complète l’égalité \\(\\frac{5}{8}\\) = □/\\(32\\) ?",
+            "reponse": "20",
+            "correction": "Le dénominateur est multiplié par 4, donc le numérateur aussi : 5 × 4 = 20.",
+            "p1": "20",
+            "p2": "21",
+            "p3": "5",
+            "p4": "32"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel numérateur complète l’égalité \\(\\frac{3}{11}\\) = □/\\(44\\) ?",
+            "reponse": "12",
+            "correction": "Le dénominateur est multiplié par 4, donc le numérateur aussi : 3 × 4 = 12.",
+            "p1": "12",
+            "p2": "13",
+            "p3": "3",
+            "p4": "44"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel numérateur complète l’égalité \\(\\frac{7}{12}\\) = □/\\(48\\) ?",
+            "reponse": "28",
+            "correction": "Le dénominateur est multiplié par 4, donc le numérateur aussi : 7 × 4 = 28.",
+            "p1": "28",
+            "p2": "29",
+            "p3": "7",
+            "p4": "48"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRAC-EQUIV-ERREUR-001",
       "type": "qcm",
-      "enonce": "Quelle égalité de fractions est fausse ?",
-      "reponse": {
-        "mode": "relation_fixe",
-        "moteur": "Ryacas",
-        "relation": "egalite_fausse",
-        "candidats": {
-          "2/3 = 4/9": {
-            "gauche": "2/3",
-            "droite": "4/9"
-          },
-          "1/2 = 3/6": {
-            "gauche": "1/2",
-            "droite": "3/6"
-          },
-          "3/4 = 6/8": {
-            "gauche": "3/4",
-            "droite": "6/8"
-          },
-          "2/5 = 8/20": {
-            "gauche": "2/5",
-            "droite": "8/20"
-          }
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2/3 = 4/9",
-        "1/2 = 3/6",
-        "3/4 = 6/8",
-        "2/5 = 8/20"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour conserver une fraction, il faut multiplier son numérateur et son dénominateur par un même nombre : 2/3 = 6/9, pas 4/9."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "À propos de la fraction 2/7, quelle égalité est fausse ?",
+            "reponse": "2/7 = 3/8",
+            "correction": "Multiplier numérateur et dénominateur par le même nombre conserve la fraction ; ajouter 1 aux deux ne la conserve pas.",
+            "p1": "2/7 = 2/7",
+            "p2": "2/7 = 3/8",
+            "p3": "2/7 = 6/21",
+            "p4": "2/7 = 8/28"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de la fraction 3/5, quelle égalité est fausse ?",
+            "reponse": "3/5 = 2/3",
+            "correction": "Multiplier numérateur et dénominateur par le même nombre conserve la fraction ; ajouter 1 aux deux ne la conserve pas.",
+            "p1": "3/5 = 3/5",
+            "p2": "3/5 = 2/3",
+            "p3": "3/5 = 9/15",
+            "p4": "3/5 = 12/20"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de la fraction 4/9, quelle égalité est fausse ?",
+            "reponse": "4/9 = 1/2",
+            "correction": "Multiplier numérateur et dénominateur par le même nombre conserve la fraction ; ajouter 1 aux deux ne la conserve pas.",
+            "p1": "4/9 = 4/9",
+            "p2": "4/9 = 1/2",
+            "p3": "4/9 = 12/27",
+            "p4": "4/9 = 16/36"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de la fraction 5/8, quelle égalité est fausse ?",
+            "reponse": "5/8 = 2/3",
+            "correction": "Multiplier numérateur et dénominateur par le même nombre conserve la fraction ; ajouter 1 aux deux ne la conserve pas.",
+            "p1": "5/8 = 5/8",
+            "p2": "5/8 = 2/3",
+            "p3": "5/8 = 15/24",
+            "p4": "5/8 = 20/32"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de la fraction 3/11, quelle égalité est fausse ?",
+            "reponse": "3/11 = 1/3",
+            "correction": "Multiplier numérateur et dénominateur par le même nombre conserve la fraction ; ajouter 1 aux deux ne la conserve pas.",
+            "p1": "3/11 = 3/11",
+            "p2": "3/11 = 1/3",
+            "p3": "3/11 = 9/33",
+            "p4": "3/11 = 12/44"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de la fraction 7/12, quelle égalité est fausse ?",
+            "reponse": "7/12 = 8/13",
+            "correction": "Multiplier numérateur et dénominateur par le même nombre conserve la fraction ; ajouter 1 aux deux ne la conserve pas.",
+            "p1": "7/12 = 7/12",
+            "p2": "7/12 = 8/13",
+            "p3": "7/12 = 21/36",
+            "p4": "7/12 = 28/48"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRA-VAR-EQUIV-001",
       "type": "qcm",
       "enonce": "Quelle fraction est équivalente à [[source]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -128,212 +235,374 @@
       "variantes": [
         {
           "parametres": {
-            "source": "1/2",
-            "bonne": "2/4",
-            "d1": "2/5",
-            "d2": "3/4",
-            "d3": "1/4",
+            "source": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(\\frac{2}{4}\\)",
+            "d1": "\\(\\frac{2}{5}\\)",
+            "d2": "\\(\\frac{3}{4}\\)",
+            "d3": "\\(\\frac{1}{4}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 2 : 1/2 = 2/4."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "source": "2/3",
-            "bonne": "6/9",
-            "d1": "6/10",
-            "d2": "5/9",
-            "d3": "2/9",
+            "source": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(\\frac{6}{9}\\)",
+            "d1": "\\(\\frac{6}{10}\\)",
+            "d2": "\\(\\frac{5}{9}\\)",
+            "d3": "\\(\\frac{2}{9}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 3 : 2/3 = 6/9."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "source": "3/5",
-            "bonne": "6/10",
-            "d1": "6/11",
-            "d2": "5/10",
-            "d3": "3/10",
+            "source": "\\(\\frac{3}{5}\\)",
+            "bonne": "\\(\\frac{6}{10}\\)",
+            "d1": "\\(\\frac{6}{11}\\)",
+            "d2": "\\(\\frac{5}{10}\\)",
+            "d3": "\\(\\frac{3}{10}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 2 : 3/5 = 6/10."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "source": "4/7",
-            "bonne": "12/21",
-            "d1": "12/22",
-            "d2": "7/21",
-            "d3": "4/21",
+            "source": "\\(\\frac{4}{7}\\)",
+            "bonne": "\\(\\frac{12}{21}\\)",
+            "d1": "\\(\\frac{12}{22}\\)",
+            "d2": "\\(\\frac{7}{21}\\)",
+            "d3": "\\(\\frac{4}{21}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 3 : 4/7 = 12/21."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "source": "5/8",
-            "bonne": "20/32",
-            "d1": "20/33",
-            "d2": "9/32",
-            "d3": "5/32",
+            "source": "\\(\\frac{5}{8}\\)",
+            "bonne": "\\(\\frac{20}{32}\\)",
+            "d1": "\\(\\frac{20}{33}\\)",
+            "d2": "\\(\\frac{9}{32}\\)",
+            "d3": "\\(\\frac{5}{32}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 4 : 5/8 = 20/32."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "source": "2/9",
-            "bonne": "10/45",
-            "d1": "10/46",
-            "d2": "7/45",
-            "d3": "2/45",
+            "source": "\\(\\frac{2}{9}\\)",
+            "bonne": "\\(\\frac{10}{45}\\)",
+            "d1": "\\(\\frac{10}{46}\\)",
+            "d2": "\\(\\frac{7}{45}\\)",
+            "d3": "\\(\\frac{2}{45}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 5 : 2/9 = 10/45."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "source": "5/6",
-            "bonne": "15/18",
-            "d1": "15/19",
-            "d2": "8/18",
-            "d3": "5/18",
+            "source": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(\\frac{15}{18}\\)",
+            "d1": "\\(\\frac{15}{19}\\)",
+            "d2": "\\(\\frac{8}{18}\\)",
+            "d3": "\\(\\frac{5}{18}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 3 : 5/6 = 15/18."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "source": "7/10",
-            "bonne": "14/20",
-            "d1": "14/21",
-            "d2": "9/20",
-            "d3": "7/20",
+            "source": "\\(\\frac{7}{10}\\)",
+            "bonne": "\\(\\frac{14}{20}\\)",
+            "d1": "\\(\\frac{14}{21}\\)",
+            "d2": "\\(\\frac{9}{20}\\)",
+            "d3": "\\(\\frac{7}{20}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 2 : 7/10 = 14/20."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "source": "3/11",
-            "bonne": "12/44",
-            "d1": "12/45",
-            "d2": "7/44",
-            "d3": "3/44",
+            "source": "\\(\\frac{3}{11}\\)",
+            "bonne": "\\(\\frac{12}{44}\\)",
+            "d1": "\\(\\frac{12}{45}\\)",
+            "d2": "\\(\\frac{7}{44}\\)",
+            "d3": "\\(\\frac{3}{44}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 4 : 3/11 = 12/44."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "source": "8/15",
-            "bonne": "24/45",
-            "d1": "24/46",
-            "d2": "11/45",
-            "d3": "8/45",
+            "source": "\\(\\frac{8}{15}\\)",
+            "bonne": "\\(\\frac{24}{45}\\)",
+            "d1": "\\(\\frac{24}{46}\\)",
+            "d2": "\\(\\frac{11}{45}\\)",
+            "d3": "\\(\\frac{8}{45}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 3 : 8/15 = 24/45."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "source": "7/12",
-            "bonne": "35/60",
-            "d1": "35/61",
-            "d2": "12/60",
-            "d3": "7/60",
+            "source": "\\(\\frac{7}{12}\\)",
+            "bonne": "\\(\\frac{35}{60}\\)",
+            "d1": "\\(\\frac{35}{61}\\)",
+            "d2": "\\(\\frac{12}{60}\\)",
+            "d3": "\\(\\frac{7}{60}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 5 : 7/12 = 35/60."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "source": "11/14",
-            "bonne": "22/28",
-            "d1": "22/29",
-            "d2": "13/28",
-            "d3": "11/28",
+            "source": "\\(\\frac{11}{14}\\)",
+            "bonne": "\\(\\frac{22}{28}\\)",
+            "d1": "\\(\\frac{22}{29}\\)",
+            "d2": "\\(\\frac{13}{28}\\)",
+            "d3": "\\(\\frac{11}{28}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 2 : 11/14 = 22/28."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "source": "5/13",
-            "bonne": "30/78",
-            "d1": "30/79",
-            "d2": "11/78",
-            "d3": "5/78",
+            "source": "\\(\\frac{5}{13}\\)",
+            "bonne": "\\(\\frac{30}{78}\\)",
+            "d1": "\\(\\frac{30}{79}\\)",
+            "d2": "\\(\\frac{11}{78}\\)",
+            "d3": "\\(\\frac{5}{78}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 6 : 5/13 = 30/78."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "source": "9/16",
-            "bonne": "27/48",
-            "d1": "27/49",
-            "d2": "12/48",
-            "d3": "9/48",
+            "source": "\\(\\frac{9}{16}\\)",
+            "bonne": "\\(\\frac{27}{48}\\)",
+            "d1": "\\(\\frac{27}{49}\\)",
+            "d2": "\\(\\frac{12}{48}\\)",
+            "d3": "\\(\\frac{9}{48}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 3 : 9/16 = 27/48."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "source": "11/18",
-            "bonne": "44/72",
-            "d1": "44/73",
-            "d2": "15/72",
-            "d3": "11/72",
+            "source": "\\(\\frac{11}{18}\\)",
+            "bonne": "\\(\\frac{44}{72}\\)",
+            "d1": "\\(\\frac{44}{73}\\)",
+            "d2": "\\(\\frac{15}{72}\\)",
+            "d3": "\\(\\frac{11}{72}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 4 : 11/18 = 44/72."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "source": "13/20",
-            "bonne": "65/100",
-            "d1": "65/101",
-            "d2": "18/100",
-            "d3": "13/100",
+            "source": "\\(\\frac{13}{20}\\)",
+            "bonne": "\\(\\frac{65}{100}\\)",
+            "d1": "\\(\\frac{65}{101}\\)",
+            "d2": "\\(\\frac{18}{100}\\)",
+            "d3": "\\(\\frac{13}{100}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 5 : 13/20 = 65/100."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "source": "17/24",
-            "bonne": "51/72",
-            "d1": "51/73",
-            "d2": "20/72",
-            "d3": "17/72",
+            "source": "\\(\\frac{17}{24}\\)",
+            "bonne": "\\(\\frac{51}{72}\\)",
+            "d1": "\\(\\frac{51}{73}\\)",
+            "d2": "\\(\\frac{20}{72}\\)",
+            "d3": "\\(\\frac{17}{72}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 3 : 17/24 = 51/72."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "source": "19/30",
-            "bonne": "76/120",
-            "d1": "76/121",
-            "d2": "23/120",
-            "d3": "19/120",
+            "source": "\\(\\frac{19}{30}\\)",
+            "bonne": "\\(\\frac{76}{120}\\)",
+            "d1": "\\(\\frac{76}{121}\\)",
+            "d2": "\\(\\frac{23}{120}\\)",
+            "d3": "\\(\\frac{19}{120}\\)",
             "correction": "On multiplie le numérateur et le dénominateur par 4 : 19/30 = 76/120."
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRA-EQUIV-VISUEL-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "presentation": {
-        "math": [
-          "source",
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "barre_fraction",
+        "fraction": "[[ill_fraction]]",
+        "etiquette": "[[ill_etiquette]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "La barre représente 2/7. Quelle fraction proposée représente la même quantité ?",
+            "reponse": "2/7",
+            "correction": "2/7 est équivalente à 2/7.",
+            "p1": "2/7",
+            "p2": "3/7",
+            "p3": "2/8",
+            "p4": "7/2",
+            "ill_fraction": "2/7",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 3/5. Quelle fraction proposée représente la même quantité ?",
+            "reponse": "3/5",
+            "correction": "3/5 est équivalente à 3/5.",
+            "p1": "3/5",
+            "p2": "4/5",
+            "p3": "3/6",
+            "p4": "5/3",
+            "ill_fraction": "3/5",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 4/9. Quelle fraction proposée représente la même quantité ?",
+            "reponse": "4/9",
+            "correction": "4/9 est équivalente à 4/9.",
+            "p1": "4/9",
+            "p2": "5/9",
+            "p3": "4/10",
+            "p4": "9/4",
+            "ill_fraction": "4/9",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 5/8. Quelle fraction proposée représente la même quantité ?",
+            "reponse": "5/8",
+            "correction": "5/8 est équivalente à 5/8.",
+            "p1": "5/8",
+            "p2": "6/8",
+            "p3": "5/9",
+            "p4": "8/5",
+            "ill_fraction": "5/8",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 3/11. Quelle fraction proposée représente la même quantité ?",
+            "reponse": "3/11",
+            "correction": "3/11 est équivalente à 3/11.",
+            "p1": "3/11",
+            "p2": "4/11",
+            "p3": "3/12",
+            "p4": "11/3",
+            "ill_fraction": "3/11",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 7/12. Quelle fraction proposée représente la même quantité ?",
+            "reponse": "7/12",
+            "correction": "7/12 est équivalente à 7/12.",
+            "p1": "7/12",
+            "p2": "8/12",
+            "p3": "7/13",
+            "p4": "12/7",
+            "ill_fraction": "7/12",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-EQUIV-BINAIRE-001",
+      "type": "qcm",
+      "enonce": "Les fractions [[f1]] et [[f2]] sont-elles équivalentes ?",
+      "reponse": "[[bonne]]",
+      "propositions": [
+        "Oui",
+        "Non"
+      ],
+      "correction": "[[corr]]",
+      "variantes": [
+        {
+          "parametres": {
+            "f1": "\\(\\frac{2}{3}\\)",
+            "f2": "\\(\\frac{4}{6}\\)",
+            "bonne": "Oui",
+            "corr": "4/6 se simplifie en 2/3 : oui."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "\\(\\frac{3}{5}\\)",
+            "f2": "\\(\\frac{6}{10}\\)",
+            "bonne": "Oui",
+            "corr": "6/10 se simplifie en 3/5 : oui."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "\\(\\frac{2}{7}\\)",
+            "f2": "\\(\\frac{4}{15}\\)",
+            "bonne": "Non",
+            "corr": "2/7 et 4/15 n’ont pas la même valeur."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "\\(\\frac{5}{8}\\)",
+            "f2": "\\(\\frac{10}{16}\\)",
+            "bonne": "Oui",
+            "corr": "10/16 se simplifie en 5/8 : oui."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "\\(\\frac{4}{9}\\)",
+            "f2": "\\(\\frac{8}{17}\\)",
+            "bonne": "Non",
+            "corr": "8/17 n’est pas obtenu en multipliant numérateur et dénominateur de 4/9 par un même nombre."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "\\(\\frac{7}{10}\\)",
+            "f2": "\\(\\frac{14}{20}\\)",
+            "bonne": "Oui",
+            "corr": "14/20 se simplifie en 7/10 : oui."
+          },
+          "progression": 3
+        }
+      ]
     }
   ]
 }

@@ -5,10 +5,7 @@
       "id": "REP-STAT-001",
       "type": "qcm",
       "enonce": "On observe les effectifs suivants : [[tableau]]. Quelle lecture est correcte ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -573,10 +570,7 @@
       "id": "REP-STAT-002",
       "type": "qcm",
       "enonce": "Quel graphique est particulièrement adapté pour comparer les effectifs de plusieurs catégories ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Un diagramme en barres"
-      },
+      "reponse": "Un diagramme en barres",
       "propositions": [
         "Un diagramme en barres",
         "Un graphique cartésien reliant forcément les points",
@@ -588,27 +582,56 @@
     {
       "id": "REP-STAT-003",
       "type": "qcm",
-      "enonce": "Une fréquence de 0,35 correspond à…",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "35 %"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "35 %",
-        "3,5 %",
-        "0,35 %",
-        "350 %"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Multiplier une fréquence décimale par 100 donne son écriture en pourcentage."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une fréquence de 0,35 correspond à…",
+            "reponse": "35 %",
+            "correction": "Multiplier une fréquence décimale par 100 donne son écriture en pourcentage.",
+            "p1": "35 %",
+            "p2": "3,5 %",
+            "p3": "0,35 %",
+            "p4": "350 %"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une fréquence de 0,70 correspond à…",
+            "reponse": "70 %",
+            "correction": "La fréquence donnée correspond à 70 %.",
+            "p1": "70 %",
+            "p2": "7,0 %",
+            "p3": "0,70 %",
+            "p4": "700 %"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une fréquence de 1,05 correspond à…",
+            "reponse": "105 %",
+            "correction": "La fréquence donnée correspond à 105 %.",
+            "p1": "105 %",
+            "p2": "10,5 %",
+            "p3": "1,05 %",
+            "p4": "1050 %"
+          }
+        }
+      ]
     },
     {
       "id": "REP-STAT-004",
       "type": "qcm",
       "enonce": "Pourquoi choisit-on une représentation statistique ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Pour mettre en évidence l’information utile"
-      },
+      "reponse": "Pour mettre en évidence l’information utile",
       "propositions": [
         "Pour mettre en évidence l’information utile",
         "Parce qu’un seul graphique convient à toutes les données",

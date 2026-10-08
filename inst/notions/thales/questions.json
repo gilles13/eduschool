@@ -5,10 +5,7 @@
       "id": "THAL-CONF-001",
       "type": "qcm",
       "enonce": "Dans le triangle ABC, D appartient à [AB], E à [AC] et (DE) est parallèle à (BC). Quelle égalité est justifiée ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AD/AB = AE/AC = DE/BC"
-      },
+      "reponse": "AD/AB = AE/AC = DE/BC",
       "propositions": [
         "AD/AB = AE/AC = DE/BC",
         "AD/DB = AE/EC = DE/BC",
@@ -24,10 +21,7 @@
       "id": "THAL-CONF-002",
       "type": "qcm",
       "enonce": "Dans la configuration représentée, quelle hypothèse permet d’appliquer le théorème de Thalès ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "(DE) est parallèle à (BC)"
-      },
+      "reponse": "(DE) est parallèle à (BC)",
       "propositions": [
         "(DE) est parallèle à (BC)",
         "D et E semblent alignés horizontalement",
@@ -42,18 +36,15 @@
     {
       "id": "THAL-CALC-001",
       "type": "qcm",
-      "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, AB = 6 cm, AC = 8 cm. Combien mesure AE ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4 cm",
-        "2 cm",
-        "5 cm",
-        "16 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "AD/AB = AE/AC, donc 3/6 = AE/8 et AE = 4 cm.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "thales_triangle",
         "rapport": 0.5,
@@ -64,23 +55,55 @@
           "AC": "8 cm",
           "AE": "?"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, AB = 6 cm, AC = 8 cm. Combien mesure AE ?",
+            "reponse": "4 cm",
+            "correction": "AD/AB = AE/AC, donc 3/6 = AE/8 et AE = 4 cm.",
+            "p1": "4 cm",
+            "p2": "2 cm",
+            "p3": "5 cm",
+            "p4": "16 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 4 cm, AB = 8 cm, AC = 10 cm. Combien mesure AE ?",
+            "reponse": "5 cm",
+            "correction": "AD/AB = 1/2, donc AE = AC/2 = 5 cm.",
+            "p1": "5 cm",
+            "p2": "6 cm",
+            "p3": "8 cm",
+            "p4": "20 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, AB = 9 cm, AC = 12 cm. Combien mesure AE ?",
+            "reponse": "4 cm",
+            "correction": "AD/AB = 1/3, donc AE = AC/3 = 4 cm.",
+            "p1": "4 cm",
+            "p2": "6 cm",
+            "p3": "9 cm",
+            "p4": "36 cm"
+          }
+        }
+      ]
     },
     {
       "id": "THAL-CALC-002",
       "type": "qcm",
-      "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 2 cm, AB = 5 cm, BC = 10 cm. Combien mesure DE ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4 cm",
-        "2 cm",
-        "5 cm",
-        "25 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "DE/BC = AD/AB = 2/5, donc DE = 10 × 2/5 = 4 cm.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "thales_triangle",
         "rapport": 0.4,
@@ -91,23 +114,55 @@
           "BC": "10 cm",
           "DE": "?"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 2 cm, AB = 5 cm, BC = 10 cm. Combien mesure DE ?",
+            "reponse": "4 cm",
+            "correction": "DE/BC = AD/AB = 2/5, donc DE = 10 × 2/5 = 4 cm.",
+            "p1": "4 cm",
+            "p2": "2 cm",
+            "p3": "5 cm",
+            "p4": "25 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, AB = 6 cm, BC = 14 cm. Combien mesure DE ?",
+            "reponse": "7 cm",
+            "correction": "DE/BC = AD/AB = 1/2, donc DE = 7 cm.",
+            "p1": "7 cm",
+            "p2": "11 cm",
+            "p3": "28 cm",
+            "p4": "3 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 4 cm, AB = 10 cm, BC = 15 cm. Combien mesure DE ?",
+            "reponse": "6 cm",
+            "correction": "DE/BC = 4/10, donc DE = 6 cm.",
+            "p1": "6 cm",
+            "p2": "9 cm",
+            "p3": "37,5 cm",
+            "p4": "4 cm"
+          }
+        }
+      ]
     },
     {
       "id": "THAL-CALC-003",
       "type": "qcm",
-      "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, DB = 5 cm et AE = 6 cm. Combien mesure AC ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "16 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "16 cm",
-        "10 cm",
-        "8 cm",
-        "14 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "AB = AD + DB = 8 cm ; AE/AC = AD/AB, donc AC = 6 × 8/3 = 16 cm.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "thales_triangle",
         "rapport": 0.375,
@@ -118,16 +173,48 @@
           "AE": "6 cm",
           "AC": "?"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, DB = 5 cm et AE = 6 cm. Combien mesure AC ?",
+            "reponse": "16 cm",
+            "correction": "AB = AD + DB = 8 cm ; AE/AC = AD/AB, donc AC = 6 × 8/3 = 16 cm.",
+            "p1": "16 cm",
+            "p2": "10 cm",
+            "p3": "8 cm",
+            "p4": "14 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 4 cm, DB = 6 cm et AE = 8 cm. Combien mesure AC ?",
+            "reponse": "20 cm",
+            "correction": "AB=10 et AD/AB=4/10=2/5 ; AE/AC=2/5, donc AC=20 cm.",
+            "p1": "20 cm",
+            "p2": "12 cm",
+            "p3": "16 cm",
+            "p4": "10 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans ABC, D est sur [AB], E sur [AC] et (DE) // (BC). AD = 3 cm, DB = 6 cm et AE = 5 cm. Combien mesure AC ?",
+            "reponse": "15 cm",
+            "correction": "AB=9 et AD/AB=1/3 ; AE/AC=1/3, donc AC=15 cm.",
+            "p1": "15 cm",
+            "p2": "8 cm",
+            "p3": "10 cm",
+            "p4": "9 cm"
+          }
+        }
+      ]
     },
     {
       "id": "THAL-REC-001",
       "type": "qcm",
       "enonce": "D est sur [AB] et E sur [AC], avec AD/AB = AE/AC. Quelle conclusion donne la réciproque de Thalès ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "(DE) est parallèle à (BC)"
-      },
+      "reponse": "(DE) est parallèle à (BC)",
       "propositions": [
         "(DE) est parallèle à (BC)",
         "(DE) est perpendiculaire à (BC)",
@@ -142,18 +229,15 @@
     {
       "id": "THAL-REC-002",
       "type": "qcm",
-      "enonce": "D est sur [AB] et E sur [AC]. AD = 2 cm, AB = 6 cm, AE = 3 cm et AC = 9 cm. Que démontre la réciproque ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "(DE) est parallèle à (BC)"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "(DE) est parallèle à (BC)",
-        "(DE) est perpendiculaire à (BC)",
-        "DE = BC",
-        "A est le milieu de [BC]"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "AD/AB = 2/6 = 1/3 et AE/AC = 3/9 = 1/3. Les points étant dans le même ordre, la réciproque s’applique.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "thales_triangle",
         "rapport": 0.3333333333333333,
@@ -164,23 +248,55 @@
           "AE": "3 cm",
           "AC": "9 cm"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "D est sur [AB] et E sur [AC]. AD = 2 cm, AB = 6 cm, AE = 3 cm et AC = 9 cm. Que démontre la réciproque ?",
+            "reponse": "(DE) est parallèle à (BC)",
+            "correction": "AD/AB = 2/6 = 1/3 et AE/AC = 3/9 = 1/3. Les points étant dans le même ordre, la réciproque s’applique.",
+            "p1": "(DE) est parallèle à (BC)",
+            "p2": "(DE) est perpendiculaire à (BC)",
+            "p3": "DE = BC",
+            "p4": "A est le milieu de [BC]"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "D est sur [AB] et E sur [AC]. AD = 3 cm, AB = 9 cm, AE = 4 cm et AC = 12 cm. Que démontre la réciproque ?",
+            "reponse": "(DE) // (BC)",
+            "correction": "Les rapports AD/AB et AE/AC sont égaux à 1/3 : la réciproque permet de conclure au parallélisme.",
+            "p1": "(DE) // (BC)",
+            "p2": "(DE) ⟂ (BC)",
+            "p3": "D et E sont confondus",
+            "p4": "On ne peut rien conclure"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "D est sur [AB] et E sur [AC]. AD = 4 cm, AB = 10 cm, AE = 6 cm et AC = 15 cm. Que démontre la réciproque ?",
+            "reponse": "(DE) // (BC)",
+            "correction": "AD/AB = AE/AC = 2/5 : la réciproque permet de conclure au parallélisme.",
+            "p1": "(DE) // (BC)",
+            "p2": "(DE) ⟂ (BC)",
+            "p3": "D et E sont confondus",
+            "p4": "On ne peut rien conclure"
+          }
+        }
+      ]
     },
     {
       "id": "THAL-NONREC-001",
       "type": "qcm",
-      "enonce": "D est sur [AB] et E sur [AC]. AD = 2 cm, AB = 6 cm, AE = 4 cm et AC = 9 cm. Peut-on conclure que (DE) // (BC) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Non : les rapports ne sont pas égaux"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Non : les rapports ne sont pas égaux",
-        "Oui : les deux segments semblent parallèles",
-        "Oui : D et E appartiennent aux côtés du triangle",
-        "Oui : 2 + 4 = 6"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "AD/AB = 1/3, tandis que AE/AC = 4/9. Ces rapports sont différents : les droites ne sont pas parallèles.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "thales_triangle",
         "rapport": 0.3333333333333333,
@@ -191,16 +307,48 @@
           "AE": "4 cm",
           "AC": "9 cm"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "D est sur [AB] et E sur [AC]. AD = 2 cm, AB = 6 cm, AE = 4 cm et AC = 9 cm. Peut-on conclure que (DE) // (BC) ?",
+            "reponse": "Non : les rapports ne sont pas égaux",
+            "correction": "AD/AB = 1/3, tandis que AE/AC = 4/9. Ces rapports sont différents : les droites ne sont pas parallèles.",
+            "p1": "Non : les rapports ne sont pas égaux",
+            "p2": "Oui : les deux segments semblent parallèles",
+            "p3": "Oui : D et E appartiennent aux côtés du triangle",
+            "p4": "Oui : 2 + 4 = 6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "D est sur [AB] et E sur [AC]. AD = 3 cm, AB = 9 cm, AE = 5 cm et AC = 12 cm. Peut-on conclure que (DE) // (BC) ?",
+            "reponse": "Non, car les rapports ne sont pas égaux.",
+            "correction": "AD/AB = 1/3 tandis que AE/AC = 5/12 : les rapports diffèrent.",
+            "p1": "Non, car les rapports ne sont pas égaux.",
+            "p2": "Oui, par la réciproque de Thalès.",
+            "p3": "Oui, car D et E sont sur les deux côtés.",
+            "p4": "Oui, car toutes les longueurs sont positives."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "D est sur [AB] et E sur [AC]. AD = 4 cm, AB = 10 cm, AE = 5 cm et AC = 15 cm. Peut-on conclure que (DE) // (BC) ?",
+            "reponse": "Non, car les rapports ne sont pas égaux.",
+            "correction": "AD/AB = 2/5 tandis que AE/AC = 1/3 : les rapports diffèrent.",
+            "p1": "Non, car les rapports ne sont pas égaux.",
+            "p2": "Oui, par la réciproque de Thalès.",
+            "p3": "Oui, car D et E sont sur les deux côtés.",
+            "p4": "Oui, car toutes les longueurs sont positives."
+          }
+        }
+      ]
     },
     {
       "id": "THAL-PAP-001",
       "type": "qcm",
       "enonce": "Deux droites sécantes en O coupent deux droites parallèles (AB) et (CD), situées de part et d’autre de O. Quelle égalité est justifiée ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "OA/OD = OB/OC = AB/DC"
-      },
+      "reponse": "OA/OD = OB/OC = AB/DC",
       "propositions": [
         "OA/OD = OB/OC = AB/DC",
         "OA/OC = OB/OD = AB/DC",
@@ -216,10 +364,7 @@
       "id": "THAL-RAIS-001",
       "type": "qcm",
       "enonce": "Sur une figure à main levée, (DE) semble parallèle à (BC), sans codage ni hypothèse écrite. Peut-on appliquer Thalès ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Non, le dessin seul ne prouve pas le parallélisme"
-      },
+      "reponse": "Non, le dessin seul ne prouve pas le parallélisme",
       "propositions": [
         "Non, le dessin seul ne prouve pas le parallélisme",
         "Oui, les traits semblent parallèles",
@@ -232,10 +377,7 @@
       "id": "THAL-VOC-TROU-001",
       "type": "qcm",
       "enonce": "Quel mot désigne deux droites d’un même plan qui ne se coupent pas ? Choisis le mot à trou.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "parallèles"
-      },
+      "reponse": "parallèles",
       "propositions": [
         "parallèles",
         "sécantes",
@@ -257,10 +399,7 @@
       "id": "THAL-VOC-MASQUE-001",
       "type": "qcm",
       "enonce": "Dans une égalité de Thalès, quel mot désigne deux longueurs placées à la même position dans les deux triangles ? Choisis le mot masqué.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "correspondantes"
-      },
+      "reponse": "correspondantes",
       "propositions": [
         "correspondantes",
         "perpendiculaires",

@@ -95,7 +95,6 @@ fonctions_affine;ordonnée à l’origine
 fonctions_carree;fonction carré
 fonctions_carree;parabole
 fractions_irreductibles;irréductible
-fractions_irreductibles;diviseur commun
 fractions_irreductibles;PGCD
 fractions_problemes;fraction
 fractions_problemes;quantité
@@ -109,3 +108,22 @@ equations_carre_constante;solution
 simplification_expression_algebrique;expression algébrique
 simplification_expression_algebrique;facteur commun
 simplification_expression_algebrique;simplification
+fractions_equivalentes;fraction
+fractions_equivalentes;numérateur
+fractions_equivalentes;dénominateur
+fractions_equivalentes;équivalent
+fractions_irreductibles;diviseur
+fractions_quotient;fraction
+fractions_quotient;quotient
+fractions_division;inverse
+fractions_quantite;quantité
+fractions_comparaison;unité
+fractions_encadrement;unité
+triangles;sommet
+triangles;côté
+triangles;triangle isocèle
+triangles;triangle équilatéral
+triangles;médiatrice
+triangles;cercle circonscrit
+triangles;hauteur
+triangles;médiane

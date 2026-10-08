@@ -5,10 +5,7 @@
       "id": "DROIT_PERP_001",
       "type": "qcm",
       "enonce": "Le petit carré code un angle droit entre les droites (d) et (Δ). Que peut-on affirmer ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Les droites (d) et (Δ) sont perpendiculaires"
-      },
+      "reponse": "Les droites (d) et (Δ) sont perpendiculaires",
       "propositions": [
         "Les droites (d) et (Δ) sont perpendiculaires",
         "Les droites (d) et (Δ) sont parallèles",
@@ -24,10 +21,7 @@
       "id": "DROIT_PAR_001",
       "type": "qcm",
       "enonce": "On sait que (d) // (d'). Que signifie cette information ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Les droites (d) et (d') sont parallèles"
-      },
+      "reponse": "Les droites (d) et (d') sont parallèles",
       "propositions": [
         "Les droites (d) et (d') sont parallèles",
         "Les droites (d) et (d') sont perpendiculaires",
@@ -43,10 +37,7 @@
       "id": "DROIT_CODE_001",
       "type": "qcm",
       "enonce": "Les droites semblent presque perpendiculaires. Quelle information permet réellement de l'affirmer ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le codage de l'angle droit"
-      },
+      "reponse": "Le codage de l'angle droit",
       "propositions": [
         "Le codage de l'angle droit",
         "Le fait que les droites en aient l'air",
@@ -62,10 +53,7 @@
       "id": "DROIT_DED_001",
       "type": "qcm",
       "enonce": "Les codages indiquent que (d) ⟂ (Δ) et (d') ⟂ (Δ). Que peut-on en déduire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Les droites (d) et (d') sont parallèles"
-      },
+      "reponse": "Les droites (d) et (d') sont parallèles",
       "propositions": [
         "Les droites (d) et (d') sont parallèles",
         "Les droites (d) et (d') sont perpendiculaires",
@@ -90,10 +78,7 @@
           "confondues": "c _ _ _ _ _ _ _ _ s"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "perpendiculaires"
-      },
+      "reponse": "perpendiculaires",
       "propositions": [
         "perpendiculaires",
         "parallèles",
@@ -119,10 +104,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "parallèles"
-      },
+      "reponse": "parallèles",
       "propositions": [
         "parallèles",
         "perpendiculaires",

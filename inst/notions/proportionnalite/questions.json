@@ -5,10 +5,7 @@
       "id": "PROP-001",
       "type": "qcm",
       "enonce": "[[a]] objets coûtent [[paquet]] €. Au même prix unitaire, combien coûtent [[b]] objets ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -623,10 +620,7 @@
       "id": "PROP-002",
       "type": "qcm",
       "enonce": "Quel indice permet de reconnaître une situation de proportionnalité ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le quotient correspondant reste constant."
-      },
+      "reponse": "Le quotient correspondant reste constant.",
       "propositions": [
         "Le quotient correspondant reste constant.",
         "On ajoute toujours le même nombre.",
@@ -639,10 +633,7 @@
       "id": "PROP-003",
       "type": "qcm",
       "enonce": "Dans un tableau de proportionnalité, que représente le coefficient de proportionnalité ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le nombre par lequel on multiplie une grandeur pour obtenir l’autre."
-      },
+      "reponse": "Le nombre par lequel on multiplie une grandeur pour obtenir l’autre.",
       "propositions": [
         "Le nombre par lequel on multiplie une grandeur pour obtenir l’autre.",
         "La somme des deux grandeurs.",

@@ -5,10 +5,7 @@
       "id": "RAC-VAR-001",
       "type": "qcm",
       "enonce": "Quelle est la valeur de √[[a]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -126,793 +123,1022 @@
             "correction": "√121 = 11, car 11² = 121."
           },
           "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "4",
-            "bonne": "2",
-            "d1": "5",
-            "d2": "3",
-            "d3": "1",
-            "correction": "√4 = 2, car 2² = 4."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "9",
-            "bonne": "3",
-            "d1": "10",
-            "d2": "4",
-            "d3": "2",
-            "correction": "√9 = 3, car 3² = 9."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "16",
-            "bonne": "4",
-            "d1": "17",
-            "d2": "5",
-            "d3": "3",
-            "correction": "√16 = 4, car 4² = 16."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "25",
-            "bonne": "5",
-            "d1": "26",
-            "d2": "6",
-            "d3": "4",
-            "correction": "√25 = 5, car 5² = 25."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "36",
-            "bonne": "6",
-            "d1": "37",
-            "d2": "7",
-            "d3": "5",
-            "correction": "√36 = 6, car 6² = 36."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "49",
-            "bonne": "7",
-            "d1": "50",
-            "d2": "8",
-            "d3": "6",
-            "correction": "√49 = 7, car 7² = 49."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "64",
-            "bonne": "8",
-            "d1": "65",
-            "d2": "9",
-            "d3": "7",
-            "correction": "√64 = 8, car 8² = 64."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "a": "81",
-            "bonne": "9",
-            "d1": "82",
-            "d2": "10",
-            "d3": "8",
-            "correction": "√81 = 9, car 9² = 81."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "100",
-            "bonne": "10",
-            "d1": "101",
-            "d2": "11",
-            "d3": "9",
-            "correction": "√100 = 10, car 10² = 100."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "121",
-            "bonne": "11",
-            "d1": "122",
-            "d2": "12",
-            "d3": "10",
-            "correction": "√121 = 11, car 11² = 121."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "4",
-            "bonne": "2",
-            "d1": "5",
-            "d2": "3",
-            "d3": "1",
-            "correction": "√4 = 2, car 2² = 4."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "9",
-            "bonne": "3",
-            "d1": "10",
-            "d2": "4",
-            "d3": "2",
-            "correction": "√9 = 3, car 3² = 9."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "16",
-            "bonne": "4",
-            "d1": "17",
-            "d2": "5",
-            "d3": "3",
-            "correction": "√16 = 4, car 4² = 16."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "25",
-            "bonne": "5",
-            "d1": "26",
-            "d2": "6",
-            "d3": "4",
-            "correction": "√25 = 5, car 5² = 25."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "36",
-            "bonne": "6",
-            "d1": "37",
-            "d2": "7",
-            "d3": "5",
-            "correction": "√36 = 6, car 6² = 36."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "49",
-            "bonne": "7",
-            "d1": "50",
-            "d2": "8",
-            "d3": "6",
-            "correction": "√49 = 7, car 7² = 49."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "64",
-            "bonne": "8",
-            "d1": "65",
-            "d2": "9",
-            "d3": "7",
-            "correction": "√64 = 8, car 8² = 64."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "81",
-            "bonne": "9",
-            "d1": "82",
-            "d2": "10",
-            "d3": "8",
-            "correction": "√81 = 9, car 9² = 81."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "100",
-            "bonne": "10",
-            "d1": "101",
-            "d2": "11",
-            "d3": "9",
-            "correction": "√100 = 10, car 10² = 100."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "121",
-            "bonne": "11",
-            "d1": "122",
-            "d2": "12",
-            "d3": "10",
-            "correction": "√121 = 11, car 11² = 121."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "4",
-            "bonne": "2",
-            "d1": "5",
-            "d2": "3",
-            "d3": "1",
-            "correction": "√4 = 2, car 2² = 4."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "9",
-            "bonne": "3",
-            "d1": "10",
-            "d2": "4",
-            "d3": "2",
-            "correction": "√9 = 3, car 3² = 9."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "16",
-            "bonne": "4",
-            "d1": "17",
-            "d2": "5",
-            "d3": "3",
-            "correction": "√16 = 4, car 4² = 16."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "25",
-            "bonne": "5",
-            "d1": "26",
-            "d2": "6",
-            "d3": "4",
-            "correction": "√25 = 5, car 5² = 25."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "a": "36",
-            "bonne": "6",
-            "d1": "37",
-            "d2": "7",
-            "d3": "5",
-            "correction": "√36 = 6, car 6² = 36."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "49",
-            "bonne": "7",
-            "d1": "50",
-            "d2": "8",
-            "d3": "6",
-            "correction": "√49 = 7, car 7² = 49."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "64",
-            "bonne": "8",
-            "d1": "65",
-            "d2": "9",
-            "d3": "7",
-            "correction": "√64 = 8, car 8² = 64."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "81",
-            "bonne": "9",
-            "d1": "82",
-            "d2": "10",
-            "d3": "8",
-            "correction": "√81 = 9, car 9² = 81."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "100",
-            "bonne": "10",
-            "d1": "101",
-            "d2": "11",
-            "d3": "9",
-            "correction": "√100 = 10, car 10² = 100."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "121",
-            "bonne": "11",
-            "d1": "122",
-            "d2": "12",
-            "d3": "10",
-            "correction": "√121 = 11, car 11² = 121."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "4",
-            "bonne": "2",
-            "d1": "5",
-            "d2": "3",
-            "d3": "1",
-            "correction": "√4 = 2, car 2² = 4."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "9",
-            "bonne": "3",
-            "d1": "10",
-            "d2": "4",
-            "d3": "2",
-            "correction": "√9 = 3, car 3² = 9."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "16",
-            "bonne": "4",
-            "d1": "17",
-            "d2": "5",
-            "d3": "3",
-            "correction": "√16 = 4, car 4² = 16."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "25",
-            "bonne": "5",
-            "d1": "26",
-            "d2": "6",
-            "d3": "4",
-            "correction": "√25 = 5, car 5² = 25."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "36",
-            "bonne": "6",
-            "d1": "37",
-            "d2": "7",
-            "d3": "5",
-            "correction": "√36 = 6, car 6² = 36."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "49",
-            "bonne": "7",
-            "d1": "50",
-            "d2": "8",
-            "d3": "6",
-            "correction": "√49 = 7, car 7² = 49."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "64",
-            "bonne": "8",
-            "d1": "65",
-            "d2": "9",
-            "d3": "7",
-            "correction": "√64 = 8, car 8² = 64."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "81",
-            "bonne": "9",
-            "d1": "82",
-            "d2": "10",
-            "d3": "8",
-            "correction": "√81 = 9, car 9² = 81."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "100",
-            "bonne": "10",
-            "d1": "101",
-            "d2": "11",
-            "d3": "9",
-            "correction": "√100 = 10, car 10² = 100."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "121",
-            "bonne": "11",
-            "d1": "122",
-            "d2": "12",
-            "d3": "10",
-            "correction": "√121 = 11, car 11² = 121."
-          },
-          "progression": 3
         }
       ]
     },
     {
       "id": "RAC-001",
       "type": "qcm",
-      "enonce": "Que vaut √49 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "7"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "7",
-        "−7",
-        "14",
-        "24,5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "√49 désigne la racine carrée positive : 7² = 49."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √49 ?",
+            "reponse": "7",
+            "correction": "√49 désigne la racine carrée positive : 7² = 49.",
+            "p1": "7",
+            "p2": "−7",
+            "p3": "14",
+            "p4": "24,5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √64 ?",
+            "reponse": "8",
+            "correction": "La racine carrée positive de 64 vaut 8.",
+            "p1": "8",
+            "p2": "−8",
+            "p3": "16",
+            "p4": "32"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √121 ?",
+            "reponse": "11",
+            "correction": "La racine carrée positive de 121 vaut 11.",
+            "p1": "11",
+            "p2": "−11",
+            "p3": "22",
+            "p4": "60,5"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-002",
       "type": "qcm",
-      "enonce": "Que vaut √81 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "9"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "9",
-        "−9",
-        "18",
-        "40,5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "9² = 81 et la racine carrée est positive ou nulle."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √81 ?",
+            "reponse": "9",
+            "correction": "9² = 81 et la racine carrée est positive ou nulle.",
+            "p1": "9",
+            "p2": "−9",
+            "p3": "18",
+            "p4": "40,5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √100 ?",
+            "reponse": "10",
+            "correction": "La racine carrée positive de 100 vaut 10.",
+            "p1": "10",
+            "p2": "−10",
+            "p3": "20",
+            "p4": "50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √144 ?",
+            "reponse": "12",
+            "correction": "La racine carrée positive de 144 vaut 12.",
+            "p1": "12",
+            "p2": "−12",
+            "p3": "24",
+            "p4": "72"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-003",
       "type": "qcm",
-      "enonce": "Que vaut √0 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0",
-        "1",
-        "−1",
-        "Non défini"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le carré de 0 vaut 0."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √0 ?",
+            "reponse": "0",
+            "correction": "Le carré de 0 vaut 0.",
+            "p1": "0",
+            "p2": "1",
+            "p3": "−1",
+            "p4": "Non défini"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √0,00 ?",
+            "reponse": "0",
+            "correction": "La racine carrée de 0 vaut 0.",
+            "p1": "0",
+            "p2": "1",
+            "p3": "−1",
+            "p4": "Non défini"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre positif ou nul a pour carré 0 ?",
+            "reponse": "0",
+            "correction": "Seul 0 a pour carré 0.",
+            "p1": "0",
+            "p2": "1",
+            "p3": "−1",
+            "p4": "Aucun"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-004",
       "type": "qcm",
-      "enonce": "Que vaut √1 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1",
-        "−1",
-        "0",
-        "2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le nombre positif ou nul dont le carré vaut 1 est 1."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √1 ?",
+            "reponse": "1",
+            "correction": "Le nombre positif ou nul dont le carré vaut 1 est 1.",
+            "p1": "1",
+            "p2": "−1",
+            "p3": "0",
+            "p4": "2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre positif ou nul a pour carré 1 ?",
+            "reponse": "1",
+            "correction": "La racine carrée principale de 1 vaut 1.",
+            "p1": "1",
+            "p2": "−1",
+            "p3": "0",
+            "p4": "2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √(1²) ?",
+            "reponse": "1",
+            "correction": "√(1²)=|1|=1.",
+            "p1": "1",
+            "p2": "−1",
+            "p3": "0",
+            "p4": "2"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-005",
       "type": "qcm",
-      "enonce": "Quel entier est compris entre √20 et √30 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5",
-        "3",
-        "4",
-        "6"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "25 est compris entre 20 et 30, donc 5 est compris entre leurs racines carrées."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel entier est compris entre √20 et √30 ?",
+            "reponse": "5",
+            "correction": "25 est compris entre 20 et 30, donc 5 est compris entre leurs racines carrées.",
+            "p1": "5",
+            "p2": "3",
+            "p3": "4",
+            "p4": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel entier est compris entre √30 et √40 ?",
+            "reponse": "6",
+            "correction": "Comme 25 < 30 < 36 < 40 < 49, l’entier 6 est compris entre les deux racines.",
+            "p1": "6",
+            "p2": "4",
+            "p3": "5",
+            "p4": "7"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel entier est compris entre √42 et √55 ?",
+            "reponse": "7",
+            "correction": "Comme 36 < 42 < 49 < 55 < 64, l’entier 7 est compris entre les deux racines.",
+            "p1": "7",
+            "p2": "5",
+            "p3": "6",
+            "p4": "8"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-006",
       "type": "qcm",
-      "enonce": "Quel encadrement est correct ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4 < √20 < 5"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4 < √20 < 5",
-        "3 < √20 < 4",
-        "5 < √20 < 6",
-        "4 < √20 < 4,4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "16 < 20 < 25, donc 4 < √20 < 5 ; √20 est supérieur à 4,4."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel encadrement est correct ?",
+            "reponse": "4 < √20 < 5",
+            "correction": "16 < 20 < 25, donc 4 < √20 < 5 ; √20 est supérieur à 4,4.",
+            "p1": "4 < √20 < 5",
+            "p2": "3 < √20 < 4",
+            "p3": "5 < √20 < 6",
+            "p4": "4 < √20 < 4,4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement est correct ?",
+            "reponse": "5 < √30 < 6",
+            "correction": "25 < 30 < 36, donc 5 < √30 < 6.",
+            "p1": "5 < √30 < 6",
+            "p2": "4 < √30 < 5",
+            "p3": "6 < √30 < 7",
+            "p4": "5 < √30 < 5,4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement est correct ?",
+            "reponse": "6 < √45 < 7",
+            "correction": "36 < 45 < 49, donc 6 < √45 < 7.",
+            "p1": "6 < √45 < 7",
+            "p2": "5 < √45 < 6",
+            "p3": "7 < √45 < 8",
+            "p4": "6 < √45 < 6,4"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-007",
       "type": "qcm",
-      "enonce": "Que vaut (√13)² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "13"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "13",
-        "√26",
-        "169",
-        "26"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour un nombre positif, élever sa racine carrée au carré redonne le nombre."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut (√13)² ?",
+            "reponse": "13",
+            "correction": "Pour un nombre positif, élever sa racine carrée au carré redonne le nombre.",
+            "p1": "13",
+            "p2": "√26",
+            "p3": "169",
+            "p4": "26"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut (√17)² ?",
+            "reponse": "17",
+            "correction": "La racine carrée positive de 17 vaut 17.",
+            "p1": "17",
+            "p2": "√34",
+            "p3": "289",
+            "p4": "34"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut (√23)² ?",
+            "reponse": "23",
+            "correction": "La racine carrée positive de 23 vaut 23.",
+            "p1": "23",
+            "p2": "√46",
+            "p3": "529",
+            "p4": "46"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-008",
       "type": "qcm",
-      "enonce": "Que vaut √((−5)²) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5",
-        "−5",
-        "25",
-        "−25"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "√(a²) = |a| : la racine carrée principale est positive ou nulle."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √((−5)²) ?",
+            "reponse": "5",
+            "correction": "√(a²) = |a| : la racine carrée principale est positive ou nulle.",
+            "p1": "5",
+            "p2": "−5",
+            "p3": "25",
+            "p4": "−25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √((−7)²) ?",
+            "reponse": "7",
+            "correction": "La racine carrée positive de 7 vaut 7.",
+            "p1": "7",
+            "p2": "−7",
+            "p3": "49",
+            "p4": "−49"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √((−9)²) ?",
+            "reponse": "9",
+            "correction": "La racine carrée positive de 9 vaut 9.",
+            "p1": "9",
+            "p2": "−9",
+            "p3": "81",
+            "p4": "−81"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-009",
       "type": "qcm",
-      "enonce": "Combien de solutions réelles possède 𝑥² = 36 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Deux"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Deux",
-        "Aucune",
-        "Une",
-        "Une infinité"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les solutions sont −6 et 6, deux nombres distincts."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Combien de solutions réelles possède 𝑥² = 36 ?",
+            "reponse": "Deux",
+            "correction": "Les solutions sont −6 et 6, deux nombres distincts.",
+            "p1": "Deux",
+            "p2": "Aucune",
+            "p3": "Une",
+            "p4": "Une infinité"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Combien de solutions réelles possède 𝑥² = 49 ?",
+            "reponse": "Deux",
+            "correction": "Les solutions sont −7 et 7 : il y en a deux.",
+            "p1": "Deux",
+            "p2": "Aucune",
+            "p3": "Une",
+            "p4": "Une infinité"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Combien de solutions réelles possède 𝑥² = 64 ?",
+            "reponse": "Deux",
+            "correction": "Les solutions sont −8 et 8 : il y en a deux.",
+            "p1": "Deux",
+            "p2": "Aucune",
+            "p3": "Une",
+            "p4": "Une infinité"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-010",
       "type": "qcm",
-      "enonce": "Quelle est la solution positive de 𝑥² = 121 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "11"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "11",
-        "−11",
-        "22",
-        "60,5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "11² = 121 et 11 est positif."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle est la solution positive de 𝑥² = 121 ?",
+            "reponse": "11",
+            "correction": "11² = 121 et 11 est positif.",
+            "p1": "11",
+            "p2": "−11",
+            "p3": "22",
+            "p4": "60,5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la solution positive de 𝑥² = 144 ?",
+            "reponse": "12",
+            "correction": "La racine carrée positive de 144 vaut 12.",
+            "p1": "12",
+            "p2": "−12",
+            "p3": "24",
+            "p4": "72"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la solution positive de 𝑥² = 169 ?",
+            "reponse": "13",
+            "correction": "La racine carrée positive de 169 vaut 13.",
+            "p1": "13",
+            "p2": "−13",
+            "p3": "26",
+            "p4": "84,5"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-011",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie √50 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5√2"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5√2",
-        "25√2",
-        "2√5",
-        "10√5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "50 = 25 × 2, donc √50 = 5√2."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √50 ?",
+            "reponse": "5√2",
+            "correction": "50 = 25 × 2, donc √50 = 5√2.",
+            "p1": "5√2",
+            "p2": "25√2",
+            "p3": "2√5",
+            "p4": "10√5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √75 ?",
+            "reponse": "5√3",
+            "correction": "75 = 25 × 3, donc √75 = 5√3.",
+            "p1": "5√3",
+            "p2": "15√3",
+            "p3": "3√5",
+            "p4": "10√3"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √32 ?",
+            "reponse": "4√2",
+            "correction": "32 = 16 × 2, donc √32 = 4√2.",
+            "p1": "4√2",
+            "p2": "8√2",
+            "p3": "2√4",
+            "p4": "4√8"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-012",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie √72 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6√2"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6√2",
-        "8√2",
-        "3√8",
-        "12√2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "72 = 36 × 2, donc √72 = 6√2."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √72 ?",
+            "reponse": "6√2",
+            "correction": "72 = 36 × 2, donc √72 = 6√2.",
+            "p1": "6√2",
+            "p2": "8√2",
+            "p3": "3√8",
+            "p4": "12√2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √98 ?",
+            "reponse": "7√2",
+            "correction": "98 = 49 × 2, donc √98 = 7√2.",
+            "p1": "7√2",
+            "p2": "14√2",
+            "p3": "2√7",
+            "p4": "7√8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √32 ?",
+            "reponse": "4√2",
+            "correction": "32 = 16 × 2, donc √32 = 4√2.",
+            "p1": "4√2",
+            "p2": "8√2",
+            "p3": "2√4",
+            "p4": "4√8"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-013",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie √48 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4√3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4√3",
-        "3√4",
-        "8√3",
-        "4√12"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "48 = 16 × 3, donc √48 = 4√3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √48 ?",
+            "reponse": "4√3",
+            "correction": "48 = 16 × 3, donc √48 = 4√3.",
+            "p1": "4√3",
+            "p2": "3√4",
+            "p3": "8√3",
+            "p4": "4√12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √108 ?",
+            "reponse": "6√3",
+            "correction": "108 = 36 × 3, donc √108 = 6√3.",
+            "p1": "6√3",
+            "p2": "18√3",
+            "p3": "3√6",
+            "p4": "12√3"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √32 ?",
+            "reponse": "4√2",
+            "correction": "32 = 16 × 2, donc √32 = 4√2.",
+            "p1": "4√2",
+            "p2": "8√2",
+            "p3": "2√4",
+            "p4": "4√8"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-014",
       "type": "qcm",
-      "enonce": "Que vaut √9 × √16 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "12"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12",
-        "7",
-        "25",
-        "144"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour des nombres positifs, √9 × √16 = 3 × 4 = 12."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √9 × √16 ?",
+            "reponse": "12",
+            "correction": "Pour des nombres positifs, √9 × √16 = 3 × 4 = 12.",
+            "p1": "12",
+            "p2": "7",
+            "p3": "25",
+            "p4": "144"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √16 × √25 ?",
+            "reponse": "20",
+            "correction": "√16 = 4 et √25 = 5, donc le produit vaut 20.",
+            "p1": "20",
+            "p2": "9",
+            "p3": "41",
+            "p4": "400"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √25 × √36 ?",
+            "reponse": "30",
+            "correction": "√25 = 5 et √36 = 6, donc le produit vaut 30.",
+            "p1": "30",
+            "p2": "11",
+            "p3": "61",
+            "p4": "900"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-015",
       "type": "qcm",
-      "enonce": "Que vaut √(9 × 16) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "12"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12",
-        "7",
-        "25",
-        "144"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "√144 = 12 : la racine d’un produit positif est le produit des racines."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √(9 × 16) ?",
+            "reponse": "12",
+            "correction": "√144 = 12 : la racine d’un produit positif est le produit des racines.",
+            "p1": "12",
+            "p2": "7",
+            "p3": "25",
+            "p4": "144"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √(16 × 25) ?",
+            "reponse": "20",
+            "correction": "16 × 25 = 400 et √400 = 20.",
+            "p1": "20",
+            "p2": "9",
+            "p3": "41",
+            "p4": "400"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √(25 × 36) ?",
+            "reponse": "30",
+            "correction": "25 × 36 = 900 et √900 = 30.",
+            "p1": "30",
+            "p2": "11",
+            "p3": "61",
+            "p4": "900"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-016",
       "type": "qcm",
-      "enonce": "Que vaut √100 / √4 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5",
-        "25",
-        "20",
-        "10"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "√100 / √4 = 10 / 2 = 5."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √100 / √4 ?",
+            "reponse": "5",
+            "correction": "√100 / √4 = 10 / 2 = 5.",
+            "p1": "5",
+            "p2": "25",
+            "p3": "20",
+            "p4": "10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √144 / √9 ?",
+            "reponse": "4",
+            "correction": "√144 = 12 et √9 = 3, donc le quotient vaut 4.",
+            "p1": "4",
+            "p2": "16",
+            "p3": "12",
+            "p4": "48"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √196 / √4 ?",
+            "reponse": "7",
+            "correction": "√196 = 14 et √4 = 2, donc le quotient vaut 7.",
+            "p1": "7",
+            "p2": "49",
+            "p3": "14",
+            "p4": "98"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-017",
       "type": "qcm",
-      "enonce": "Que vaut √9 + √16 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "7"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "7",
-        "5",
-        "12",
-        "25"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "On calcule chaque racine séparément : 3 + 4 = 7."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √9 + √16 ?",
+            "reponse": "7",
+            "correction": "On calcule chaque racine séparément : 3 + 4 = 7.",
+            "p1": "7",
+            "p2": "5",
+            "p3": "12",
+            "p4": "25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √16 + √25 ?",
+            "reponse": "9",
+            "correction": "√16 = 4 et √25 = 5, donc la somme vaut 9.",
+            "p1": "9",
+            "p2": "6",
+            "p3": "20",
+            "p4": "41"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √25 + √36 ?",
+            "reponse": "11",
+            "correction": "√25 = 5 et √36 = 6, donc la somme vaut 11.",
+            "p1": "11",
+            "p2": "7",
+            "p3": "30",
+            "p4": "61"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-018",
       "type": "qcm",
-      "enonce": "Dans les réels, quelle expression n’est pas définie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "√(−4)"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "√(−4)",
-        "√0",
-        "√4",
-        "√(4²)"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Aucun réel n’a un carré négatif."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans les réels, quelle expression n’est pas définie ?",
+            "reponse": "√(−4)",
+            "correction": "Aucun réel n’a un carré négatif.",
+            "p1": "√(−4)",
+            "p2": "√0",
+            "p3": "√4",
+            "p4": "√(4²)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans les réels, quelle expression n’est pas définie ?",
+            "reponse": "√(−9)",
+            "correction": "Dans les réels, la racine carrée d’un nombre strictement négatif n’est pas définie.",
+            "p1": "√(−9)",
+            "p2": "√0",
+            "p3": "√9",
+            "p4": "√(9²)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans les réels, quelle expression n’est pas définie ?",
+            "reponse": "√(−16)",
+            "correction": "Dans les réels, la racine carrée d’un nombre strictement négatif n’est pas définie.",
+            "p1": "√(−16)",
+            "p2": "√0",
+            "p3": "√16",
+            "p4": "√(16²)"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-019",
       "type": "qcm",
-      "enonce": "Que vaut √(3²) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3",
-        "9",
-        "−3",
-        "6"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "√(3²) = |3| = 3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut √(3²) ?",
+            "reponse": "3",
+            "correction": "√(3²) = |3| = 3.",
+            "p1": "3",
+            "p2": "9",
+            "p3": "−3",
+            "p4": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √(4²) ?",
+            "reponse": "4",
+            "correction": "La racine carrée positive de 4 vaut 4.",
+            "p1": "4",
+            "p2": "16",
+            "p3": "−4",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut √(8²) ?",
+            "reponse": "8",
+            "correction": "La racine carrée positive de 8 vaut 8.",
+            "p1": "8",
+            "p2": "64",
+            "p3": "−8",
+            "p4": "16"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-020",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie 2√3 + 5√3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "7√3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "7√3",
-        "7√6",
-        "10√3",
-        "√21"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "On additionne les coefficients des radicaux identiques : (2 + 5)√3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 2√3 + 5√3 ?",
+            "reponse": "7√3",
+            "correction": "On additionne les coefficients des radicaux identiques : (2 + 5)√3.",
+            "p1": "7√3",
+            "p2": "7√6",
+            "p3": "10√3",
+            "p4": "√21"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 3√5 + 4√5 ?",
+            "reponse": "7√5",
+            "correction": "Les deux termes ont le même radical : (3 + 4)√5 = 7√5.",
+            "p1": "7√5",
+            "p2": "7√10",
+            "p3": "12√5",
+            "p4": "√35"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 6√2 + 5√2 ?",
+            "reponse": "11√2",
+            "correction": "Les deux termes ont le même radical : (6 + 5)√2 = 11√2.",
+            "p1": "11√2",
+            "p2": "11√4",
+            "p3": "30√2",
+            "p4": "√22"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-021",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie √8 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2√2"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2√2",
-        "4√2",
-        "2√4",
-        "8√2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "8 = 4 × 2, donc √8 = 2√2."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √8 ?",
+            "reponse": "2√2",
+            "correction": "8 = 4 × 2, donc √8 = 2√2.",
+            "p1": "2√2",
+            "p2": "4√2",
+            "p3": "2√4",
+            "p4": "8√2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √18 ?",
+            "reponse": "3√2",
+            "correction": "18 = 9 × 2, donc √18 = 3√2.",
+            "p1": "3√2",
+            "p2": "6√2",
+            "p3": "2√3",
+            "p4": "3√8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √32 ?",
+            "reponse": "4√2",
+            "correction": "32 = 16 × 2, donc √32 = 4√2.",
+            "p1": "4√2",
+            "p2": "8√2",
+            "p3": "2√4",
+            "p4": "4√8"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-022",
       "type": "qcm",
       "enonce": "Quelle expression est égale à √(a × b) pour a et b positifs ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "√a × √b"
-      },
+      "reponse": "√a × √b",
       "propositions": [
         "√a × √b",
         "√a + √b",
@@ -924,50 +1150,146 @@
     {
       "id": "RAC-023",
       "type": "qcm",
-      "enonce": "Un carré a une aire de 64 cm². Quelle est la longueur de son côté ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "8 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "8 cm",
-        "16 cm",
-        "32 cm",
-        "4 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le côté est la racine carrée de l’aire : √64 = 8 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 64 cm². Quelle est la longueur de son côté ?",
+            "reponse": "8 cm",
+            "correction": "Le côté est la racine carrée de l’aire : √64 = 8 cm.",
+            "p1": "8 cm",
+            "p2": "16 cm",
+            "p3": "32 cm",
+            "p4": "4 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 81 cm². Quelle est la longueur de son côté ?",
+            "reponse": "9 cm",
+            "correction": "La racine carrée positive de 81 vaut 9 cm.",
+            "p1": "9 cm",
+            "p2": "18 cm",
+            "p3": "40 cm",
+            "p4": "4 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 100 cm². Quelle est la longueur de son côté ?",
+            "reponse": "10 cm",
+            "correction": "La racine carrée positive de 100 vaut 10 cm.",
+            "p1": "10 cm",
+            "p2": "20 cm",
+            "p3": "50 cm",
+            "p4": "5 cm"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-024",
       "type": "qcm",
-      "enonce": "Un triangle rectangle a des côtés de l’angle droit de 6 cm et 8 cm. Quelle est son hypoténuse ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "10 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "10 cm",
-        "14 cm",
-        "7 cm",
-        "12 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Par Pythagore : √(6² + 8²) = √100 = 10 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un triangle rectangle a des côtés de l’angle droit de 6 cm et 8 cm. Quelle est son hypoténuse ?",
+            "reponse": "10 cm",
+            "correction": "Par Pythagore : √(6² + 8²) = √100 = 10 cm.",
+            "p1": "10 cm",
+            "p2": "14 cm",
+            "p3": "7 cm",
+            "p4": "12 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle rectangle a des côtés de l’angle droit de 5 cm et 12 cm. Quelle est son hypoténuse ?",
+            "reponse": "13 cm",
+            "correction": "Par Pythagore : √(5² + 12²) = √169 = 13 cm.",
+            "p1": "13 cm",
+            "p2": "17 cm",
+            "p3": "8,5 cm",
+            "p4": "15 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle rectangle a des côtés de l’angle droit de 8 cm et 15 cm. Quelle est son hypoténuse ?",
+            "reponse": "17 cm",
+            "correction": "Par Pythagore : √(8² + 15²) = √289 = 17 cm.",
+            "p1": "17 cm",
+            "p2": "23 cm",
+            "p3": "11,5 cm",
+            "p4": "19 cm"
+          }
+        }
+      ]
     },
     {
       "id": "RAC-025",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie √(25/9) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5/3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5/3",
-        "25/3",
-        "5/9",
-        "3/5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La racine du quotient positif vaut √25 / √9 = 5/3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √(25/9) ?",
+            "reponse": "5/3",
+            "correction": "La racine du quotient positif vaut √25 / √9 = 5/3.",
+            "p1": "5/3",
+            "p2": "25/3",
+            "p3": "5/9",
+            "p4": "3/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √(49/16) ?",
+            "reponse": "7/4",
+            "correction": "√(49/16) = √49 / √16 = 7/4.",
+            "p1": "7/4",
+            "p2": "49/4",
+            "p3": "7/16",
+            "p4": "4/7"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie √(81/25) ?",
+            "reponse": "9/5",
+            "correction": "√(81/25) = √81 / √25 = 9/5.",
+            "p1": "9/5",
+            "p2": "81/5",
+            "p3": "9/25",
+            "p4": "5/9"
+          }
+        }
+      ]
     }
   ]
 }

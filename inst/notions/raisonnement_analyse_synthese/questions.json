@@ -5,10 +5,7 @@
       "id": "ANALYSE-SYNTHESE-001",
       "type": "qcm",
       "enonce": "On veut résoudre [[equation]]. Dans l’analyse, on suppose que 𝑥 est solution. En élevant au carré puis en factorisant, on obtient [[factorisation]], donc les candidats [[candidat_positif]] et [[candidat_negatif]]. Que conclut la synthèse ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -823,10 +820,7 @@
       "id": "ANALYSE-SYNTHESE-ETAPES",
       "type": "qcm",
       "enonce": "Dans un raisonnement par analyse-synthèse, quel enchaînement décrit correctement les deux étapes ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Analyse : supposer une solution et en déduire des candidats. Synthèse : vérifier les candidats dans le problème de départ."
-      },
+      "reponse": "Analyse : supposer une solution et en déduire des candidats. Synthèse : vérifier les candidats dans le problème de départ.",
       "propositions": [
         "Analyse : supposer une solution et en déduire des candidats. Synthèse : vérifier les candidats dans le problème de départ.",
         "Analyse : essayer des valeurs au hasard. Synthèse : choisir celle qui semble la plus proche.",
@@ -838,18 +832,50 @@
     {
       "id": "ANALYSE-SYNTHESE-EQUIVALENCE",
       "type": "qcm",
-      "enonce": "On sait que √(𝑥 + 6) = 𝑥 implique 𝑥 + 6 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 6) = 𝑥 ⇔ 𝑥 + 6 = 𝑥² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ.",
-        "Oui : élever au carré donne toujours une équation équivalente.",
-        "Oui : le symbole ⇔ peut remplacer n’importe quelle suite de calculs.",
-        "Non : deux équations ne peuvent jamais être équivalentes."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Ici, l’équation au carré donne les candidats 3 et −2. Mais −2 ne vérifie pas √(𝑥 + 6) = 𝑥. L’implication utilisée pendant l’analyse ne suffit donc pas à établir une équivalence."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "On sait que √(𝑥 + 6) = 𝑥 implique 𝑥 + 6 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 6) = 𝑥 ⇔ 𝑥 + 6 = 𝑥² ?",
+            "reponse": "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ.",
+            "correction": "Ici, l’équation au carré donne les candidats 3 et −2. Mais −2 ne vérifie pas √(𝑥 + 6) = 𝑥. L’implication utilisée pendant l’analyse ne suffit donc pas à établir une équivalence.",
+            "p1": "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ.",
+            "p2": "Oui : élever au carré donne toujours une équation équivalente.",
+            "p3": "Oui : le symbole ⇔ peut remplacer n’importe quelle suite de calculs.",
+            "p4": "Non : deux équations ne peuvent jamais être équivalentes."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On sait que √(𝑥 + 8) = 𝑥 implique 𝑥 + 8 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 8) = 𝑥 ⇔ 𝑥 + 8 = 𝑥² ?",
+            "reponse": "Non, il faut vérifier les conditions et la réciproque.",
+            "correction": "Élever au carré donne ici une implication ; pour une équivalence, il faut contrôler les conditions, notamment x ≥ 0.",
+            "p1": "Non, il faut vérifier les conditions et la réciproque.",
+            "p2": "Oui, élever au carré donne toujours une équivalence.",
+            "p3": "Oui, car les deux équations ont le même nombre de symboles.",
+            "p4": "Non, car on ne peut jamais élever une égalité au carré."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On sait que √(𝑥 + 10) = 𝑥 implique 𝑥 + 10 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 10) = 𝑥 ⇔ 𝑥 + 10 = 𝑥² ?",
+            "reponse": "Non, il faut vérifier les conditions et la réciproque.",
+            "correction": "Il faut vérifier les conditions et la réciproque avant d’écrire une équivalence.",
+            "p1": "Non, il faut vérifier les conditions et la réciproque.",
+            "p2": "Oui, élever au carré donne toujours une équivalence.",
+            "p3": "Oui, car les deux équations ont le même nombre de symboles.",
+            "p4": "Non, car on ne peut jamais élever une égalité au carré."
+          }
+        }
+      ]
     },
     {
       "id": "ANALYSE-SYNTHESE-BOITE",
@@ -858,10 +884,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3"
-      },
+      "reponse": "3",
       "propositions": [
         "3",
         "−2",
@@ -883,10 +906,7 @@
           "solution": "s _ _ _ _ _ _ n"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "analyse"
-      },
+      "reponse": "analyse",
       "propositions": [
         "analyse",
         "synthèse",
@@ -909,10 +929,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "équivalence"
-      },
+      "reponse": "équivalence",
       "propositions": [
         "équivalence",
         "implication",

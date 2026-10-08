@@ -4,80 +4,269 @@
     {
       "id": "FRAC-MIG-SOUSTRACTION-FRACTIONS-001",
       "type": "qcm",
-      "enonce": "Calculer et simplifier : [[terme1]] − [[terme2]].",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "soustraction",
-        "termes": [
-          "3/4",
-          "1/2"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/4",
-        "2/2",
-        "3/4",
-        "1/2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Pour soustraire des fractions, on les écrit avec un dénominateur commun.\nJ’en déduis : 1/2 = 2/4 ; 3/4 − 2/4 = 1/4."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Calculer et simplifier : \\(\\frac{3}{4}\\) − \\(\\frac{1}{2}\\).",
+            "reponse": "\\(\\frac{1}{4}\\)",
+            "correction": "3/4 − 1/2 = 1/4.",
+            "p1": "\\(\\frac{1}{4}\\)",
+            "p2": "\\(\\frac{5}{4}\\)",
+            "p3": "\\(\\frac{3}{8}\\)",
+            "p4": "\\(\\frac{1}{2}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer et simplifier : \\(\\frac{5}{6}\\) − \\(\\frac{1}{3}\\).",
+            "reponse": "\\(\\frac{1}{2}\\)",
+            "correction": "5/6 − 1/3 = 1/2.",
+            "p1": "\\(\\frac{1}{2}\\)",
+            "p2": "\\(\\frac{7}{6}\\)",
+            "p3": "\\(\\frac{5}{18}\\)",
+            "p4": "\\(\\frac{1}{3}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer et simplifier : \\(\\frac{7}{8}\\) − \\(\\frac{1}{4}\\).",
+            "reponse": "\\(\\frac{5}{8}\\)",
+            "correction": "7/8 − 1/4 = 5/8.",
+            "p1": "\\(\\frac{5}{8}\\)",
+            "p2": "\\(\\frac{9}{8}\\)",
+            "p3": "\\(\\frac{7}{32}\\)",
+            "p4": "\\(\\frac{1}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer et simplifier : \\(\\frac{4}{5}\\) − \\(\\frac{3}{10}\\).",
+            "reponse": "\\(\\frac{1}{2}\\)",
+            "correction": "4/5 − 3/10 = 1/2.",
+            "p1": "\\(\\frac{1}{2}\\)",
+            "p2": "\\(\\frac{11}{10}\\)",
+            "p3": "\\(\\frac{6}{25}\\)",
+            "p4": "\\(\\frac{3}{10}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer et simplifier : \\(\\frac{11}{12}\\) − \\(\\frac{1}{6}\\).",
+            "reponse": "\\(\\frac{3}{4}\\)",
+            "correction": "11/12 − 1/6 = 3/4.",
+            "p1": "\\(\\frac{3}{4}\\)",
+            "p2": "\\(\\frac{13}{12}\\)",
+            "p3": "\\(\\frac{11}{72}\\)",
+            "p4": "\\(\\frac{1}{6}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer et simplifier : \\(\\frac{5}{7}\\) − \\(\\frac{2}{7}\\).",
+            "reponse": "\\(\\frac{3}{7}\\)",
+            "correction": "5/7 − 2/7 = 3/7.",
+            "p1": "\\(\\frac{3}{7}\\)",
+            "p2": "\\(1\\)",
+            "p3": "\\(\\frac{10}{49}\\)",
+            "p4": "\\(\\frac{2}{7}\\)"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRAC-MIG-SOUSTRACTION-FRACTIONS-002",
       "type": "qcm",
-      "enonce": "Quelle fraction simplifiée manque : [[terme1]] − □ = [[terme2]] ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "soustraction",
-        "termes": [
-          "3/4",
-          "1/2"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/4",
-        "1/2",
-        "2/3",
-        "3/8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Pour soustraire des fractions, on les écrit avec un dénominateur commun.\nJ’en déduis : La fraction manquante est 3/4 − 1/2 = 1/4."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : \\(\\frac{3}{4}\\) − □ = \\(\\frac{1}{2}\\) ?",
+            "reponse": "\\(\\frac{1}{4}\\)",
+            "correction": "3/4 − 1/2 = 1/4.",
+            "p1": "\\(\\frac{1}{4}\\)",
+            "p2": "\\(\\frac{1}{2}\\)",
+            "p3": "\\(\\frac{3}{4}\\)",
+            "p4": "\\(\\frac{5}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : \\(\\frac{5}{6}\\) − □ = \\(\\frac{1}{2}\\) ?",
+            "reponse": "\\(\\frac{1}{3}\\)",
+            "correction": "5/6 − 1/2 = 1/3.",
+            "p1": "\\(\\frac{1}{3}\\)",
+            "p2": "\\(\\frac{1}{2}\\)",
+            "p3": "\\(\\frac{5}{6}\\)",
+            "p4": "\\(\\frac{4}{3}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : \\(\\frac{5}{8}\\) − □ = \\(\\frac{1}{4}\\) ?",
+            "reponse": "\\(\\frac{3}{8}\\)",
+            "correction": "5/8 − 1/4 = 3/8.",
+            "p1": "\\(\\frac{3}{8}\\)",
+            "p2": "\\(\\frac{1}{4}\\)",
+            "p3": "\\(\\frac{5}{8}\\)",
+            "p4": "\\(\\frac{7}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : \\(\\frac{7}{10}\\) − □ = \\(\\frac{3}{10}\\) ?",
+            "reponse": "\\(\\frac{2}{5}\\)",
+            "correction": "7/10 − 3/10 = 2/5.",
+            "p1": "\\(\\frac{2}{5}\\)",
+            "p2": "\\(\\frac{3}{10}\\)",
+            "p3": "\\(\\frac{7}{10}\\)",
+            "p4": "\\(1\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : \\(\\frac{7}{12}\\) − □ = \\(\\frac{1}{6}\\) ?",
+            "reponse": "\\(\\frac{5}{12}\\)",
+            "correction": "7/12 − 1/6 = 5/12.",
+            "p1": "\\(\\frac{5}{12}\\)",
+            "p2": "\\(\\frac{1}{6}\\)",
+            "p3": "\\(\\frac{7}{12}\\)",
+            "p4": "\\(\\frac{3}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : \\(\\frac{5}{7}\\) − □ = \\(\\frac{3}{7}\\) ?",
+            "reponse": "\\(\\frac{2}{7}\\)",
+            "correction": "5/7 − 3/7 = 2/7.",
+            "p1": "\\(\\frac{2}{7}\\)",
+            "p2": "\\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{5}{7}\\)",
+            "p4": "\\(\\frac{8}{7}\\)"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRAC-MIG-SOUSTRACTION-FRACTIONS-003",
       "type": "qcm",
-      "enonce": "Quelle fraction simplifiée retirer de [[terme1]] pour obtenir [[terme2]] ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "soustraction",
-        "termes": [
-          "5/6",
-          "1/2"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/3",
-        "1/6",
-        "2/3",
-        "1/2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Pour soustraire des fractions, on les écrit avec un dénominateur commun.\nJ’en déduis : 5/6 − 1/2 = 5/6 − 3/6 = 2/6 = 1/3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée retirer de \\(\\frac{3}{4}\\) pour obtenir \\(\\frac{1}{2}\\) ?",
+            "reponse": "\\(\\frac{1}{4}\\)",
+            "correction": "3/4 − 1/2 = 1/4.",
+            "p1": "\\(\\frac{1}{4}\\)",
+            "p2": "\\(\\frac{1}{2}\\)",
+            "p3": "\\(\\frac{3}{4}\\)",
+            "p4": "\\(\\frac{5}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée retirer de \\(\\frac{5}{6}\\) pour obtenir \\(\\frac{1}{2}\\) ?",
+            "reponse": "\\(\\frac{1}{3}\\)",
+            "correction": "5/6 − 1/2 = 1/3.",
+            "p1": "\\(\\frac{1}{3}\\)",
+            "p2": "\\(\\frac{1}{2}\\)",
+            "p3": "\\(\\frac{5}{6}\\)",
+            "p4": "\\(\\frac{4}{3}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée retirer de \\(\\frac{5}{8}\\) pour obtenir \\(\\frac{1}{4}\\) ?",
+            "reponse": "\\(\\frac{3}{8}\\)",
+            "correction": "5/8 − 1/4 = 3/8.",
+            "p1": "\\(\\frac{3}{8}\\)",
+            "p2": "\\(\\frac{1}{4}\\)",
+            "p3": "\\(\\frac{5}{8}\\)",
+            "p4": "\\(\\frac{7}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée retirer de \\(\\frac{7}{10}\\) pour obtenir \\(\\frac{3}{10}\\) ?",
+            "reponse": "\\(\\frac{2}{5}\\)",
+            "correction": "7/10 − 3/10 = 2/5.",
+            "p1": "\\(\\frac{2}{5}\\)",
+            "p2": "\\(\\frac{3}{10}\\)",
+            "p3": "\\(\\frac{7}{10}\\)",
+            "p4": "\\(1\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée retirer de \\(\\frac{7}{12}\\) pour obtenir \\(\\frac{1}{6}\\) ?",
+            "reponse": "\\(\\frac{5}{12}\\)",
+            "correction": "7/12 − 1/6 = 5/12.",
+            "p1": "\\(\\frac{5}{12}\\)",
+            "p2": "\\(\\frac{1}{6}\\)",
+            "p3": "\\(\\frac{7}{12}\\)",
+            "p4": "\\(\\frac{3}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée retirer de \\(\\frac{5}{7}\\) pour obtenir \\(\\frac{3}{7}\\) ?",
+            "reponse": "\\(\\frac{2}{7}\\)",
+            "correction": "5/7 − 3/7 = 2/7.",
+            "p1": "\\(\\frac{2}{7}\\)",
+            "p2": "\\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{5}{7}\\)",
+            "p4": "\\(\\frac{8}{7}\\)"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRA-VAR-SUB-001",
       "type": "qcm",
       "enonce": "Calcule [[f1]] − [[f2]] et donne le résultat sous forme simplifiée.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -88,231 +277,395 @@
       "variantes": [
         {
           "parametres": {
-            "f1": "4/5",
-            "f2": "1/5",
-            "bonne": "3/5",
-            "d1": "1/2",
-            "d2": "1",
-            "d3": "8/5",
-            "correction": "4/5 - 1/5 = 3/5."
+            "f1": "\\(\\frac{4}{5}\\)",
+            "f2": "\\(\\frac{1}{5}\\)",
+            "bonne": "\\(\\frac{3}{5}\\)",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{8}{5}\\)",
+            "correction": "Les dénominateurs sont déjà identiques : 5.\n4/5 - 1/5 = 3/5.\n3/5 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "5/7",
-            "f2": "2/7",
-            "bonne": "3/7",
-            "d1": "1/2",
-            "d2": "1",
-            "d3": "10/7",
-            "correction": "5/7 - 2/7 = 3/7."
+            "f1": "\\(\\frac{5}{7}\\)",
+            "f2": "\\(\\frac{2}{7}\\)",
+            "bonne": "\\(\\frac{3}{7}\\)",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{10}{7}\\)",
+            "correction": "Les dénominateurs sont déjà identiques : 7.\n5/7 - 2/7 = 3/7.\n3/7 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "3/4",
-            "f2": "1/8",
-            "bonne": "5/8",
-            "d1": "1/3",
-            "d2": "1/8",
-            "d3": "1/2",
-            "correction": "3/4 - 1/8 = 5/8."
+            "f1": "\\(\\frac{3}{4}\\)",
+            "f2": "\\(\\frac{1}{8}\\)",
+            "bonne": "\\(\\frac{5}{8}\\)",
+            "d1": "\\(\\frac{1}{3}\\)",
+            "d2": "\\(\\frac{1}{8}\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "correction": "Je choisis 8 comme dénominateur commun.\n3/4 = 6/8 et 1/8 = 1/8.\n6/8 - 1/8 = 5/8.\n5/8 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "5/6",
-            "f2": "1/3",
-            "bonne": "1/2",
-            "d1": "2/3",
-            "d2": "1/3",
-            "d3": "4/3",
-            "correction": "5/6 - 1/3 = 1/2."
+            "f1": "\\(\\frac{5}{6}\\)",
+            "f2": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{2}{3}\\)",
+            "d2": "\\(\\frac{1}{3}\\)",
+            "d3": "\\(\\frac{4}{3}\\)",
+            "correction": "Je choisis 6 comme dénominateur commun.\n5/6 = 5/6 et 1/3 = 2/6.\n5/6 - 2/6 = 3/6.\nJe simplifie par 3 : 3/6 = 1/2."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "5/6",
-            "f2": "1/2",
-            "bonne": "1/3",
-            "d1": "3/4",
-            "d2": "1/2",
-            "d3": "1",
-            "correction": "5/6 - 1/2 = 1/3."
+            "f1": "\\(\\frac{5}{6}\\)",
+            "f2": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{3}{4}\\)",
+            "d2": "\\(\\frac{1}{2}\\)",
+            "d3": "\\(1\\)",
+            "correction": "Je choisis 6 comme dénominateur commun.\n5/6 = 5/6 et 1/2 = 3/6.\n5/6 - 3/6 = 2/6.\nJe simplifie par 2 : 2/6 = 1/3."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "7/8",
-            "f2": "2/5",
-            "bonne": "19/40",
-            "d1": "9/13",
-            "d2": "9/40",
-            "d3": "5/3",
-            "correction": "7/8 - 2/5 = 19/40."
+            "f1": "\\(\\frac{7}{8}\\)",
+            "f2": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(\\frac{19}{40}\\)",
+            "d1": "\\(\\frac{9}{13}\\)",
+            "d2": "\\(\\frac{9}{40}\\)",
+            "d3": "\\(\\frac{5}{3}\\)",
+            "correction": "Je choisis 40 comme dénominateur commun.\n7/8 = 35/40 et 2/5 = 16/40.\n35/40 - 16/40 = 19/40.\n19/40 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "11/12",
-            "f2": "1/4",
-            "bonne": "2/3",
-            "d1": "3/4",
-            "d2": "1/4",
-            "d3": "5/4",
-            "correction": "11/12 - 1/4 = 2/3."
+            "f1": "\\(\\frac{11}{12}\\)",
+            "f2": "\\(\\frac{1}{4}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{3}{4}\\)",
+            "d2": "\\(\\frac{1}{4}\\)",
+            "d3": "\\(\\frac{5}{4}\\)",
+            "correction": "Je choisis 12 comme dénominateur commun.\n11/12 = 11/12 et 1/4 = 3/12.\n11/12 - 3/12 = 8/12.\nJe simplifie par 4 : 8/12 = 2/3."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "8/9",
-            "f2": "1/6",
-            "bonne": "13/18",
-            "d1": "3/5",
-            "d2": "1/6",
-            "d3": "7/3",
-            "correction": "8/9 - 1/6 = 13/18."
+            "f1": "\\(\\frac{8}{9}\\)",
+            "f2": "\\(\\frac{1}{6}\\)",
+            "bonne": "\\(\\frac{13}{18}\\)",
+            "d1": "\\(\\frac{3}{5}\\)",
+            "d2": "\\(\\frac{1}{6}\\)",
+            "d3": "\\(\\frac{7}{3}\\)",
+            "correction": "Je choisis 54 comme dénominateur commun.\n8/9 = 48/54 et 1/6 = 9/54.\n48/54 - 9/54 = 39/54.\nJe simplifie par 3 : 39/54 = 13/18."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "11/12",
-            "f2": "3/8",
-            "bonne": "13/24",
-            "d1": "7/10",
-            "d2": "7/48",
-            "d3": "2",
-            "correction": "11/12 - 3/8 = 13/24."
+            "f1": "\\(\\frac{11}{12}\\)",
+            "f2": "\\(\\frac{3}{8}\\)",
+            "bonne": "\\(\\frac{13}{24}\\)",
+            "d1": "\\(\\frac{7}{10}\\)",
+            "d2": "\\(\\frac{7}{48}\\)",
+            "d3": "\\(2\\)",
+            "correction": "Je choisis 96 comme dénominateur commun.\n11/12 = 88/96 et 3/8 = 36/96.\n88/96 - 36/96 = 52/96.\nJe simplifie par 4 : 52/96 = 13/24."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "9/10",
-            "f2": "2/5",
-            "bonne": "1/2",
-            "d1": "11/15",
-            "d2": "11/50",
-            "d3": "7/5",
-            "correction": "9/10 - 2/5 = 1/2."
+            "f1": "\\(\\frac{9}{10}\\)",
+            "f2": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{11}{15}\\)",
+            "d2": "\\(\\frac{11}{50}\\)",
+            "d3": "\\(\\frac{7}{5}\\)",
+            "correction": "Je choisis 10 comme dénominateur commun.\n9/10 = 9/10 et 2/5 = 4/10.\n9/10 - 4/10 = 5/10.\nJe simplifie par 5 : 5/10 = 1/2."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "13/15",
-            "f2": "7/20",
-            "bonne": "31/60",
-            "d1": "4/7",
-            "d2": "1/15",
-            "d3": "6/5",
-            "correction": "13/15 - 7/20 = 31/60."
+            "f1": "\\(\\frac{13}{15}\\)",
+            "f2": "\\(\\frac{7}{20}\\)",
+            "bonne": "\\(\\frac{31}{60}\\)",
+            "d1": "\\(\\frac{4}{7}\\)",
+            "d2": "\\(\\frac{1}{15}\\)",
+            "d3": "\\(\\frac{6}{5}\\)",
+            "correction": "Je choisis 300 comme dénominateur commun.\n13/15 = 260/300 et 7/20 = 105/300.\n260/300 - 105/300 = 155/300.\nJe simplifie par 5 : 155/300 = 31/60."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "17/18",
-            "f2": "5/12",
-            "bonne": "19/36",
-            "d1": "11/15",
-            "d2": "11/108",
-            "d3": "2",
-            "correction": "17/18 - 5/12 = 19/36."
+            "f1": "\\(\\frac{17}{18}\\)",
+            "f2": "\\(\\frac{5}{12}\\)",
+            "bonne": "\\(\\frac{19}{36}\\)",
+            "d1": "\\(\\frac{11}{15}\\)",
+            "d2": "\\(\\frac{11}{108}\\)",
+            "d3": "\\(2\\)",
+            "correction": "Je choisis 216 comme dénominateur commun.\n17/18 = 204/216 et 5/12 = 90/216.\n204/216 - 90/216 = 114/216.\nJe simplifie par 6 : 114/216 = 19/36."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "4/5",
-            "f2": "3/7",
-            "bonne": "13/35",
-            "d1": "7/12",
-            "d2": "1/5",
-            "d3": "1/2",
-            "correction": "4/5 - 3/7 = 13/35."
+            "f1": "\\(\\frac{4}{5}\\)",
+            "f2": "\\(\\frac{3}{7}\\)",
+            "bonne": "\\(\\frac{13}{35}\\)",
+            "d1": "\\(\\frac{7}{12}\\)",
+            "d2": "\\(\\frac{1}{5}\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "correction": "Je choisis 35 comme dénominateur commun.\n4/5 = 28/35 et 3/7 = 15/35.\n28/35 - 15/35 = 13/35.\n13/35 est déjà sous forme simplifiée."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "7/8",
-            "f2": "2/9",
-            "bonne": "47/72",
-            "d1": "9/17",
-            "d2": "1/8",
-            "d3": "5",
-            "correction": "7/8 - 2/9 = 47/72."
+            "f1": "\\(\\frac{7}{8}\\)",
+            "f2": "\\(\\frac{2}{9}\\)",
+            "bonne": "\\(\\frac{47}{72}\\)",
+            "d1": "\\(\\frac{9}{17}\\)",
+            "d2": "\\(\\frac{1}{8}\\)",
+            "d3": "\\(5\\)",
+            "correction": "Je choisis 72 comme dénominateur commun.\n7/8 = 63/72 et 2/9 = 16/72.\n63/72 - 16/72 = 47/72.\n47/72 est déjà sous forme simplifiée."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "11/12",
-            "f2": "5/14",
-            "bonne": "47/84",
-            "d1": "8/13",
-            "d2": "2/21",
-            "d3": "3",
-            "correction": "11/12 - 5/14 = 47/84."
+            "f1": "\\(\\frac{11}{12}\\)",
+            "f2": "\\(\\frac{5}{14}\\)",
+            "bonne": "\\(\\frac{47}{84}\\)",
+            "d1": "\\(\\frac{8}{13}\\)",
+            "d2": "\\(\\frac{2}{21}\\)",
+            "d3": "\\(3\\)",
+            "correction": "Je choisis 168 comme dénominateur commun.\n11/12 = 154/168 et 5/14 = 60/168.\n154/168 - 60/168 = 94/168.\nJe simplifie par 2 : 94/168 = 47/84."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "14/15",
-            "f2": "7/20",
-            "bonne": "7/12",
-            "d1": "3/5",
-            "d2": "7/100",
-            "d3": "7/5",
-            "correction": "14/15 - 7/20 = 7/12."
+            "f1": "\\(\\frac{14}{15}\\)",
+            "f2": "\\(\\frac{7}{20}\\)",
+            "bonne": "\\(\\frac{7}{12}\\)",
+            "d1": "\\(\\frac{3}{5}\\)",
+            "d2": "\\(\\frac{7}{100}\\)",
+            "d3": "\\(\\frac{7}{5}\\)",
+            "correction": "Je choisis 300 comme dénominateur commun.\n14/15 = 280/300 et 7/20 = 105/300.\n280/300 - 105/300 = 175/300.\nJe simplifie par 25 : 175/300 = 7/12."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "7/8",
-            "f2": "5/6",
-            "bonne": "1/24",
-            "d1": "6/7",
-            "d2": "1/4",
-            "d3": "1",
-            "correction": "7/8 - 5/6 = 1/24."
+            "f1": "\\(\\frac{7}{8}\\)",
+            "f2": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(\\frac{1}{24}\\)",
+            "d1": "\\(\\frac{6}{7}\\)",
+            "d2": "\\(\\frac{1}{4}\\)",
+            "d3": "\\(1\\)",
+            "correction": "Je choisis 48 comme dénominateur commun.\n7/8 = 42/48 et 5/6 = 40/48.\n42/48 - 40/48 = 2/48.\nJe simplifie par 2 : 2/48 = 1/24."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "8/9",
-            "f2": "7/12",
-            "bonne": "11/36",
-            "d1": "5/7",
-            "d2": "5/36",
-            "d3": "1/3",
-            "correction": "8/9 - 7/12 = 11/36."
+            "f1": "\\(\\frac{8}{9}\\)",
+            "f2": "\\(\\frac{7}{12}\\)",
+            "bonne": "\\(\\frac{11}{36}\\)",
+            "d1": "\\(\\frac{5}{7}\\)",
+            "d2": "\\(\\frac{5}{36}\\)",
+            "d3": "\\(\\frac{1}{3}\\)",
+            "correction": "Je choisis 108 comme dénominateur commun.\n8/9 = 96/108 et 7/12 = 63/108.\n96/108 - 63/108 = 33/108.\nJe simplifie par 3 : 33/108 = 11/36."
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRA-SUB-METHODE-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "presentation": {
-        "math": [
-          "f1",
-          "f2",
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour calculer 3/4 − 1/2, quelle démarche est correcte ?",
+            "reponse": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "correction": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs.",
+            "p1": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "p2": "Soustraire séparément numérateurs et dénominateurs",
+            "p3": "Multiplier les deux fractions",
+            "p4": "Inverser la seconde fraction"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 5/6 − 1/3, quelle démarche est correcte ?",
+            "reponse": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "correction": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs.",
+            "p1": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "p2": "Soustraire séparément numérateurs et dénominateurs",
+            "p3": "Multiplier les deux fractions",
+            "p4": "Inverser la seconde fraction"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 7/8 − 1/4, quelle démarche est correcte ?",
+            "reponse": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "correction": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs.",
+            "p1": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "p2": "Soustraire séparément numérateurs et dénominateurs",
+            "p3": "Multiplier les deux fractions",
+            "p4": "Inverser la seconde fraction"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 4/5 − 3/10, quelle démarche est correcte ?",
+            "reponse": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "correction": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs.",
+            "p1": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "p2": "Soustraire séparément numérateurs et dénominateurs",
+            "p3": "Multiplier les deux fractions",
+            "p4": "Inverser la seconde fraction"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 11/12 − 1/6, quelle démarche est correcte ?",
+            "reponse": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "correction": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs.",
+            "p1": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "p2": "Soustraire séparément numérateurs et dénominateurs",
+            "p3": "Multiplier les deux fractions",
+            "p4": "Inverser la seconde fraction"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 5/7 − 2/7, quelle démarche est correcte ?",
+            "reponse": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "correction": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs.",
+            "p1": "Écrire les fractions avec un dénominateur commun puis soustraire les numérateurs",
+            "p2": "Soustraire séparément numérateurs et dénominateurs",
+            "p3": "Multiplier les deux fractions",
+            "p4": "Inverser la seconde fraction"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-SUB-ERREUR-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour calculer 3/4 − 1/2, quelle ligne contient une erreur ?",
+            "reponse": "3/4 − 1/2 = 2/2",
+            "correction": "La soustraction correcte donne 1/4.",
+            "p1": "3/4 − 1/2 = 1/4",
+            "p2": "3/4 − 1/2 = 2/2",
+            "p3": "3/4 = 3/4",
+            "p4": "1/2 = 1/2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 5/6 − 1/3, quelle ligne contient une erreur ?",
+            "reponse": "5/6 − 1/3 = 4/3",
+            "correction": "La soustraction correcte donne 1/2.",
+            "p1": "5/6 − 1/3 = 1/2",
+            "p2": "5/6 − 1/3 = 4/3",
+            "p3": "5/6 = 5/6",
+            "p4": "1/3 = 1/3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 7/8 − 1/4, quelle ligne contient une erreur ?",
+            "reponse": "7/8 − 1/4 = 6/4",
+            "correction": "La soustraction correcte donne 5/8.",
+            "p1": "7/8 − 1/4 = 5/8",
+            "p2": "7/8 − 1/4 = 6/4",
+            "p3": "7/8 = 7/8",
+            "p4": "1/4 = 1/4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 4/5 − 3/10, quelle ligne contient une erreur ?",
+            "reponse": "4/5 − 3/10 = 1/1",
+            "correction": "La soustraction correcte donne 1/2.",
+            "p1": "4/5 − 3/10 = 1/2",
+            "p2": "4/5 − 3/10 = 1/1",
+            "p3": "4/5 = 4/5",
+            "p4": "3/10 = 3/10"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 11/12 − 1/6, quelle ligne contient une erreur ?",
+            "reponse": "11/12 − 1/6 = 10/6",
+            "correction": "La soustraction correcte donne 3/4.",
+            "p1": "11/12 − 1/6 = 3/4",
+            "p2": "11/12 − 1/6 = 10/6",
+            "p3": "11/12 = 11/12",
+            "p4": "1/6 = 1/6"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 5/7 − 2/7, quelle ligne contient une erreur ?",
+            "reponse": "5/7 − 2/7 = 3/1",
+            "correction": "La soustraction correcte donne 3/7.",
+            "p1": "5/7 − 2/7 = 3/7",
+            "p2": "5/7 − 2/7 = 3/1",
+            "p3": "5/7 = 5/7",
+            "p4": "2/7 = 2/7"
+          },
+          "progression": 1
+        }
+      ]
     }
   ]
 }

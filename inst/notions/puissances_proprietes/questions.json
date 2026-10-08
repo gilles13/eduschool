@@ -5,10 +5,7 @@
       "id": "PUI-PROP-VAR",
       "type": "qcm",
       "enonce": "Simplifie [[expr]].",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -572,27 +569,56 @@
     {
       "id": "PUI-013",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie (3²)⁴ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3⁸"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3⁸",
-        "3⁶",
-        "3¹⁶",
-        "9⁶"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une puissance de puissance multiplie les exposants : 2 × 4 = 8."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie (3²)⁴ ?",
+            "reponse": "3⁸",
+            "correction": "Une puissance de puissance multiplie les exposants : 2 × 4 = 8.",
+            "p1": "3⁸",
+            "p2": "3⁶",
+            "p3": "3¹⁶",
+            "p4": "9⁶"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie (5²)³ ?",
+            "reponse": "5⁶",
+            "correction": "(a^m)^n = a^(mn), donc (5²)³ = 5⁶.",
+            "p1": "5⁶",
+            "p2": "5⁵",
+            "p3": "5¹²",
+            "p4": "25⁵"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie (2³)⁴ ?",
+            "reponse": "2¹²",
+            "correction": "(a^m)^n = a^(mn), donc (2³)⁴ = 2¹².",
+            "p1": "2¹²",
+            "p2": "2⁷",
+            "p3": "2²⁴",
+            "p4": "8⁷"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-021",
       "type": "qcm",
       "enonce": "Pour a et b non nuls, quelle égalité est toujours vraie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "(a / b)² = a² / b²"
-      },
+      "reponse": "(a / b)² = a² / b²",
       "propositions": [
         "(a / b)² = a² / b²",
         "(a + b)² = a² + b²",
@@ -604,18 +630,50 @@
     {
       "id": "PUI-024",
       "type": "qcm",
-      "enonce": "Quelle expression est égale à 8² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2⁶"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2⁶",
-        "2⁴",
-        "4³",
-        "16²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "8 = 2³, donc (2³)² = 2⁶."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à 8² ?",
+            "reponse": "2⁶",
+            "correction": "8 = 2³, donc (2³)² = 2⁶.",
+            "p1": "2⁶",
+            "p2": "2⁴",
+            "p3": "4³",
+            "p4": "16²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à 4³ ?",
+            "reponse": "2⁶",
+            "correction": "4³ = (2²)³ = 2⁶.",
+            "p1": "2⁶",
+            "p2": "2⁵",
+            "p3": "4²",
+            "p4": "8³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à 16² ?",
+            "reponse": "2⁸",
+            "correction": "16² = (2⁴)² = 2⁸.",
+            "p1": "2⁸",
+            "p2": "2⁶",
+            "p3": "4³",
+            "p4": "8²"
+          }
+        }
+      ]
     }
   ]
 }

@@ -5,10 +5,7 @@
       "id": "FAFF-001",
       "type": "qcm",
       "enonce": "Soit f(𝑥) = [[a]]𝑥 [[b]]. Quelle est l’image de [[x]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -622,34 +619,98 @@
     {
       "id": "FAFF-002",
       "type": "qcm",
-      "enonce": "Dans f(𝑥)=2𝑥+5, quel nombre est l’ordonnée à l’origine ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5",
-        "2",
-        "7",
-        "0"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Dans f(𝑥)=a𝑥+b, b est l’ordonnée à l’origine."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=2𝑥+5, quel nombre est l’ordonnée à l’origine ?",
+            "reponse": "5",
+            "correction": "Dans f(𝑥)=a𝑥+b, b est l’ordonnée à l’origine.",
+            "p1": "5",
+            "p2": "2",
+            "p3": "7",
+            "p4": "0"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=3𝑥+7, quel nombre est l’ordonnée à l’origine ?",
+            "reponse": "7",
+            "correction": "Dans f(x)=ax+b, l’ordonnée à l’origine est b : ici 7.",
+            "p1": "7",
+            "p2": "3",
+            "p3": "10",
+            "p4": "0"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=−2𝑥+4, quel nombre est l’ordonnée à l’origine ?",
+            "reponse": "4",
+            "correction": "Dans f(x)=ax+b, l’ordonnée à l’origine est b : ici 4.",
+            "p1": "4",
+            "p2": "−2",
+            "p3": "2",
+            "p4": "0"
+          }
+        }
+      ]
     },
     {
       "id": "FAFF-003",
       "type": "qcm",
-      "enonce": "Dans f(𝑥)=−3𝑥+2, quel nombre est le coefficient directeur ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "−3",
-        "2",
-        "−1",
-        "3"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Dans f(𝑥)=a𝑥+b, a est le coefficient directeur de la droite."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=−3𝑥+2, quel nombre est le coefficient directeur ?",
+            "reponse": "−3",
+            "correction": "Dans f(𝑥)=a𝑥+b, a est le coefficient directeur de la droite.",
+            "p1": "−3",
+            "p2": "2",
+            "p3": "−1",
+            "p4": "3"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=4𝑥−1, quel nombre est le coefficient directeur ?",
+            "reponse": "4",
+            "correction": "Dans f(x)=ax+b, le coefficient directeur est a : ici 4.",
+            "p1": "4",
+            "p2": "−1",
+            "p3": "3",
+            "p4": "−4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=−5𝑥+6, quel nombre est le coefficient directeur ?",
+            "reponse": "−5",
+            "correction": "Dans f(x)=ax+b, le coefficient directeur est a : ici −5.",
+            "p1": "−5",
+            "p2": "6",
+            "p3": "1",
+            "p4": "5"
+          }
+        }
+      ]
     }
   ]
 }

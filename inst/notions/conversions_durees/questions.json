@@ -4,74 +4,146 @@
     {
       "id": "MES-CONVERSION_DUREES-001",
       "type": "qcm",
-      "enonce": "[[quantite]] correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "165",
-          "1"
-        ],
-        "format": "decimal",
-        "unite": "min",
-        "source_format": "h_min"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "165 min",
-        "145 min",
-        "125 min",
-        "245 min"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "2 × 60 + 45 = 165 minutes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "2 h 45 min correspondent à…",
+            "reponse": "165 min",
+            "correction": "2 × 60 + 45 = 165 minutes.",
+            "p1": "165 min",
+            "p2": "145 min",
+            "p3": "125 min",
+            "p4": "245 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "3 h 20 min correspondent à…",
+            "reponse": "200 min",
+            "correction": "Conversion : 3 h 20 min = 200 min.",
+            "p1": "200 min",
+            "p2": "320 min",
+            "p3": "180 min",
+            "p4": "140 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1 h 35 min correspondent à…",
+            "reponse": "95 min",
+            "correction": "Conversion : 1 h 35 min = 95 min.",
+            "p1": "95 min",
+            "p2": "135 min",
+            "p3": "75 min",
+            "p4": "65 min"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_DUREES-002",
       "type": "qcm",
-      "enonce": "[[quantite]] min correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "135",
-          "1"
-        ],
-        "format": "h_min",
-        "unite": "",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 h 15 min",
-        "1 h 35 min",
-        "2 h 35 min",
-        "1 h 15 min"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "135 = 2 × 60 + 15."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "135 min correspondent à…",
+            "reponse": "2 h 15 min",
+            "correction": "135 = 2 × 60 + 15.",
+            "p1": "2 h 15 min",
+            "p2": "1 h 35 min",
+            "p3": "2 h 35 min",
+            "p4": "1 h 15 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "150 min correspondent à…",
+            "reponse": "2 h 30 min",
+            "correction": "Conversion : 150 min = 2 h 30 min.",
+            "p1": "2 h 30 min",
+            "p2": "1 h 50 min",
+            "p3": "2 h 50 min",
+            "p4": "1 h 30 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "95 min correspondent à…",
+            "reponse": "1 h 35 min",
+            "correction": "Conversion : 95 min = 1 h 35 min.",
+            "p1": "1 h 35 min",
+            "p2": "1 h 95 min",
+            "p3": "2 h 5 min",
+            "p4": "35 min"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_DUREES-003",
       "type": "qcm",
-      "enonce": "[[quantite]] h correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "3/4",
-          "60"
-        ],
-        "format": "decimal",
-        "unite": "min",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "45 min",
-        "75 min",
-        "30 min",
-        "15 min"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "0,75 × 60 = 45."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "0,75 h correspondent à…",
+            "reponse": "45 min",
+            "correction": "0,75 × 60 = 45.",
+            "p1": "45 min",
+            "p2": "75 min",
+            "p3": "30 min",
+            "p4": "15 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "0,5 h correspondent à…",
+            "reponse": "30 min",
+            "correction": "Conversion : 0,5 h = 30 min.",
+            "p1": "30 min",
+            "p2": "50 min",
+            "p3": "20 min",
+            "p4": "5 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1,25 h correspondent à…",
+            "reponse": "75 min",
+            "correction": "Conversion : 1,25 h = 75 min.",
+            "p1": "75 min",
+            "p2": "125 min",
+            "p3": "60 min",
+            "p4": "25 min"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_DUREES-VOCAB-TROU",
@@ -86,10 +158,7 @@
           "seconde": "s _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "durée"
-      },
+      "reponse": "durée",
       "propositions": [
         "durée",
         "heure",
@@ -112,10 +181,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "minute"
-      },
+      "reponse": "minute",
       "propositions": [
         "minute",
         "mesure",
@@ -127,18 +193,50 @@
     {
       "id": "MES-CONVERSION_DUREES-APPLICATION",
       "type": "qcm",
-      "enonce": "Un trajet dure 1 h 45 min. Quelle est sa durée en minutes ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "105 min"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "105 min",
-        "145 min",
-        "75 min",
-        "85 min"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 h = 60 min ; 60 + 45 = 105 min."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un trajet dure 1 h 45 min. Quelle est sa durée en minutes ?",
+            "reponse": "105 min",
+            "correction": "1 h = 60 min ; 60 + 45 = 105 min.",
+            "p1": "105 min",
+            "p2": "145 min",
+            "p3": "75 min",
+            "p4": "85 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un trajet dure 2 h 10 min. Quelle est sa durée en minutes ?",
+            "reponse": "130 min",
+            "correction": "Conversion : 2 h 10 min = 130 min.",
+            "p1": "130 min",
+            "p2": "210 min",
+            "p3": "120 min",
+            "p4": "110 min"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un trajet dure 1 h 20 min. Quelle est sa durée en minutes ?",
+            "reponse": "80 min",
+            "correction": "Conversion : 1 h 20 min = 80 min.",
+            "p1": "80 min",
+            "p2": "120 min",
+            "p3": "60 min",
+            "p4": "70 min"
+          }
+        }
+      ]
     }
   ]
 }

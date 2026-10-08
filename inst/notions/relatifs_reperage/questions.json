@@ -4,50 +4,146 @@
     {
       "id": "RELATIFS-REPERE-001",
       "type": "qcm",
-      "enonce": "Quel nombre est l’opposé de −6 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6",
-        "−6",
-        "0",
-        "1/6"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "L’opposé de −6 est 6 : ces deux nombres ont la même distance à 0 et leur somme vaut 0."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel nombre est l’opposé de −6 ?",
+            "reponse": "6",
+            "correction": "L’opposé de −6 est 6 : ces deux nombres ont la même distance à 0 et leur somme vaut 0.",
+            "p1": "6",
+            "p2": "−6",
+            "p3": "0",
+            "p4": "1/6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre est l’opposé de −9 ?",
+            "reponse": "9",
+            "correction": "L’opposé de −9 est 9.",
+            "p1": "9",
+            "p2": "−9",
+            "p3": "0",
+            "p4": "1/9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre est l’opposé de 7 ?",
+            "reponse": "−7",
+            "correction": "L’opposé de 7 est −7.",
+            "p1": "−7",
+            "p2": "7",
+            "p3": "0",
+            "p4": "1/7"
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-REPERE-002",
       "type": "qcm",
-      "enonce": "Quelle est la valeur absolue de −8 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "8"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "8",
-        "−8",
-        "0",
-        "−1/8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La valeur absolue est une distance à 0. La distance entre −8 et 0 vaut 8."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle est la valeur absolue de −8 ?",
+            "reponse": "8",
+            "correction": "La valeur absolue est une distance à 0. La distance entre −8 et 0 vaut 8.",
+            "p1": "8",
+            "p2": "−8",
+            "p3": "0",
+            "p4": "−1/8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la valeur absolue de −12 ?",
+            "reponse": "12",
+            "correction": "La valeur absolue est la distance à 0 : |−12|=12.",
+            "p1": "12",
+            "p2": "−12",
+            "p3": "0",
+            "p4": "−1/12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la valeur absolue de 15 ?",
+            "reponse": "15",
+            "correction": "|15|=15.",
+            "p1": "15",
+            "p2": "−15",
+            "p3": "0",
+            "p4": "1/15"
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-REPERE-003",
       "type": "qcm",
-      "enonce": "Quel rangement est correct ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−5 < −2 < 0 < 3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "−5 < −2 < 0 < 3",
-        "−2 < −5 < 0 < 3",
-        "3 < 0 < −2 < −5",
-        "−5 < 0 < −2 < 3"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les nombres augmentent de gauche à droite sur une droite graduée : −5 est à gauche de −2, puis viennent 0 et 3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel rangement est correct ?",
+            "reponse": "−5 < −2 < 0 < 3",
+            "correction": "Les nombres augmentent de gauche à droite sur une droite graduée : −5 est à gauche de −2, puis viennent 0 et 3.",
+            "p1": "−5 < −2 < 0 < 3",
+            "p2": "−2 < −5 < 0 < 3",
+            "p3": "3 < 0 < −2 < −5",
+            "p4": "−5 < 0 < −2 < 3"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel rangement est correct ?",
+            "reponse": "−8 < −3 < 0 < 4",
+            "correction": "Sur une droite graduée, −8 est avant −3, puis viennent 0 et 4.",
+            "p1": "−8 < −3 < 0 < 4",
+            "p2": "−3 < −8 < 0 < 4",
+            "p3": "4 < 0 < −3 < −8",
+            "p4": "−8 < 0 < −3 < 4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel rangement est correct ?",
+            "reponse": "−6 < −1 < 0 < 5",
+            "correction": "L’ordre croissant est −6, −1, 0, 5.",
+            "p1": "−6 < −1 < 0 < 5",
+            "p2": "−1 < −6 < 0 < 5",
+            "p3": "5 < 0 < −1 < −6",
+            "p4": "−6 < 0 < −1 < 5"
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-REPERE-VOCAB-001",
@@ -63,10 +159,7 @@
           "distance": "D________E"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "abscisse"
-      },
+      "reponse": "abscisse",
       "propositions": [
         "abscisse",
         "ordonnée",

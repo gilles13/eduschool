@@ -4,162 +4,482 @@
     {
       "id": "PUI-001",
       "type": "qcm",
-      "enonce": "Que vaut 2⁵ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "32"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "32",
-        "10",
-        "16",
-        "64"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 2⁵ ?",
+            "reponse": "32",
+            "correction": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32.",
+            "p1": "32",
+            "p2": "10",
+            "p3": "16",
+            "p4": "64"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 3⁴ ?",
+            "reponse": "81",
+            "correction": "Le calcul donne 81.",
+            "p1": "81",
+            "p2": "12",
+            "p3": "27",
+            "p4": "64"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 5³ ?",
+            "reponse": "125",
+            "correction": "Le calcul donne 125.",
+            "p1": "125",
+            "p2": "15",
+            "p3": "25",
+            "p4": "625"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-002",
       "type": "qcm",
-      "enonce": "Que vaut 3⁴ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "81"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "81",
-        "12",
-        "27",
-        "64"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "3⁴ = 3 × 3 × 3 × 3 = 81."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 3⁴ ?",
+            "reponse": "81",
+            "correction": "3⁴ = 3 × 3 × 3 × 3 = 81.",
+            "p1": "81",
+            "p2": "12",
+            "p3": "27",
+            "p4": "64"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 4³ ?",
+            "reponse": "64",
+            "correction": "Le calcul donne 64.",
+            "p1": "64",
+            "p2": "12",
+            "p3": "16",
+            "p4": "81"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 5⁴ ?",
+            "reponse": "625",
+            "correction": "Le calcul donne 625.",
+            "p1": "625",
+            "p2": "20",
+            "p3": "125",
+            "p4": "256"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-007",
       "type": "qcm",
-      "enonce": "Que vaut (−2)⁴ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "16"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "16",
-        "−16",
-        "−8",
-        "8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Dans (−2)⁴, le signe moins appartient à la base : (−2) × (−2) × (−2) × (−2) = 16."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut (−2)⁴ ?",
+            "reponse": "16",
+            "correction": "Dans (−2)⁴, le signe moins appartient à la base : (−2) × (−2) × (−2) × (−2) = 16.",
+            "p1": "16",
+            "p2": "−16",
+            "p3": "−8",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut (−3)⁴ ?",
+            "reponse": "81",
+            "correction": "Le calcul donne 81.",
+            "p1": "81",
+            "p2": "−81",
+            "p3": "12",
+            "p4": "−12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut (−2)⁶ ?",
+            "reponse": "64",
+            "correction": "Le calcul donne 64.",
+            "p1": "64",
+            "p2": "−64",
+            "p3": "12",
+            "p4": "−12"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-008",
       "type": "qcm",
-      "enonce": "Que vaut −2⁴, sans parenthèses autour de −2 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−16"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "−16",
-        "16",
-        "−8",
-        "8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Sans parenthèses, le signe moins n’appartient pas à la base : la puissance est calculée d’abord, donc −2⁴ = −(2⁴) = −16. À l’inverse, (−2)⁴ = 16."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut −2⁴, sans parenthèses autour de −2 ?",
+            "reponse": "−16",
+            "correction": "Sans parenthèses, le signe moins n’appartient pas à la base : la puissance est calculée d’abord, donc −2⁴ = −(2⁴) = −16. À l’inverse, (−2)⁴ = 16.",
+            "p1": "−16",
+            "p2": "16",
+            "p3": "−8",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut −3⁴ ?",
+            "reponse": "−81",
+            "correction": "Le calcul donne −81.",
+            "p1": "−81",
+            "p2": "81",
+            "p3": "−12",
+            "p4": "12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut −2⁶ ?",
+            "reponse": "−64",
+            "correction": "Le calcul donne −64.",
+            "p1": "−64",
+            "p2": "64",
+            "p3": "−12",
+            "p4": "12"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-009",
       "type": "qcm",
-      "enonce": "Que vaut (−3)³ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−27"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "−27",
-        "27",
-        "−9",
-        "9"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Trois facteurs négatifs donnent un produit négatif."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut (−3)³ ?",
+            "reponse": "−27",
+            "correction": "Trois facteurs négatifs donnent un produit négatif.",
+            "p1": "−27",
+            "p2": "27",
+            "p3": "−9",
+            "p4": "9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut (−2)³ ?",
+            "reponse": "−8",
+            "correction": "Le calcul donne −8.",
+            "p1": "−8",
+            "p2": "8",
+            "p3": "−6",
+            "p4": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut (−4)³ ?",
+            "reponse": "−64",
+            "correction": "Le calcul donne −64.",
+            "p1": "−64",
+            "p2": "64",
+            "p3": "−12",
+            "p4": "12"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-011",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie 2³ × 2⁴ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2⁷"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2⁷",
-        "2¹²",
-        "4⁷",
-        "2¹"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "On additionne les exposants lorsque les bases sont identiques dans un produit."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 2³ × 2⁴ ?",
+            "reponse": "2⁷",
+            "correction": "On additionne les exposants lorsque les bases sont identiques dans un produit.",
+            "p1": "2⁷",
+            "p2": "2¹²",
+            "p3": "4⁷",
+            "p4": "2¹"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 3² × 3⁵ ?",
+            "reponse": "3⁷",
+            "correction": "Le calcul donne 3⁷.",
+            "p1": "3⁷",
+            "p2": "3¹⁰",
+            "p3": "9⁷",
+            "p4": "3³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 5³ × 5² ?",
+            "reponse": "5⁵",
+            "correction": "Le calcul donne 5⁵.",
+            "p1": "5⁵",
+            "p2": "5⁶",
+            "p3": "25⁵",
+            "p4": "5¹"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-014",
       "type": "qcm",
-      "enonce": "Quelle expression est égale à (2 × 5)³ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2³ × 5³"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2³ × 5³",
-        "2³ + 5³",
-        "2 × 5³",
-        "2⁶ × 5³"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La puissance d’un produit est le produit des puissances de chaque facteur."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à (2 × 5)³ ?",
+            "reponse": "2³ × 5³",
+            "correction": "La puissance d’un produit est le produit des puissances de chaque facteur.",
+            "p1": "2³ × 5³",
+            "p2": "2³ + 5³",
+            "p3": "2 × 5³",
+            "p4": "2⁶ × 5³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à (3 × 4)² ?",
+            "reponse": "3² × 4²",
+            "correction": "Le calcul donne 3² × 4².",
+            "p1": "3² × 4²",
+            "p2": "3² × 4",
+            "p3": "3 × 4²",
+            "p4": "12⁴"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à (2 × 7)³ ?",
+            "reponse": "2³ × 7³",
+            "correction": "Le calcul donne 2³ × 7³.",
+            "p1": "2³ × 7³",
+            "p2": "2³ × 7",
+            "p3": "2 × 7³",
+            "p4": "14⁶"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-015",
       "type": "qcm",
-      "enonce": "Que vaut 2³ + 2² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "12"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12",
-        "2⁵",
-        "32",
-        "16"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "On calcule séparément : 8 + 4 = 12 ; la règle des exposants ne concerne pas une somme."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 2³ + 2² ?",
+            "reponse": "12",
+            "correction": "On calcule séparément : 8 + 4 = 12 ; la règle des exposants ne concerne pas une somme.",
+            "p1": "12",
+            "p2": "2⁵",
+            "p3": "32",
+            "p4": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 3³ + 3² ?",
+            "reponse": "36",
+            "correction": "Le calcul donne 36.",
+            "p1": "36",
+            "p2": "3⁵",
+            "p3": "18",
+            "p4": "81"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 4² + 4³ ?",
+            "reponse": "80",
+            "correction": "Le calcul donne 80.",
+            "p1": "80",
+            "p2": "4⁵",
+            "p3": "28",
+            "p4": "256"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-018",
       "type": "qcm",
-      "enonce": "Que vaut 10⁴ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "10 000"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "10 000",
-        "1 000",
-        "40",
-        "100 000"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "10⁴ est égal à 1 suivi de quatre zéros."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 10⁴ ?",
+            "reponse": "10 000",
+            "correction": "10⁴ est égal à 1 suivi de quatre zéros.",
+            "p1": "10 000",
+            "p2": "1 000",
+            "p3": "40",
+            "p4": "100 000"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 10³ ?",
+            "reponse": "1 000",
+            "correction": "Le calcul donne 1 000.",
+            "p1": "1 000",
+            "p2": "100",
+            "p3": "10 000",
+            "p4": "30"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 10⁵ ?",
+            "reponse": "100 000",
+            "correction": "Le calcul donne 100 000.",
+            "p1": "100 000",
+            "p2": "10 000",
+            "p3": "1 000 000",
+            "p4": "50"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-026",
       "type": "qcm",
-      "enonce": "À chaque étape, chaque branche se sépare en 3 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 4 étapes ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "81"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "81",
-        "12",
-        "64",
-        "27"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "À chacune des 4 étapes, le nombre de branches est multiplié par 3 : 3 × 3 × 3 × 3 = 3⁴ = 81."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "À chaque étape, chaque branche se sépare en 3 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 4 étapes ?",
+            "reponse": "81",
+            "correction": "À chacune des 4 étapes, le nombre de branches est multiplié par 3 : 3 × 3 × 3 × 3 = 3⁴ = 81.",
+            "p1": "81",
+            "p2": "12",
+            "p3": "64",
+            "p4": "27"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "À chaque étape, chaque branche se sépare en 2 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 5 étapes ?",
+            "reponse": "32",
+            "correction": "Le nombre de branches est 2^5 = 32.",
+            "p1": "32",
+            "p2": "16",
+            "p3": "64",
+            "p4": "10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "À chaque étape, chaque branche se sépare en 4 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 3 étapes ?",
+            "reponse": "64",
+            "correction": "Le nombre de branches est 4^3 = 64.",
+            "p1": "64",
+            "p2": "16",
+            "p3": "256",
+            "p4": "12"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-027",
@@ -174,10 +494,7 @@
           "facteur": "f _ _ _ _ _ r"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "base"
-      },
+      "reponse": "base",
       "propositions": [
         "base",
         "exposant",
@@ -200,10 +517,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "exposant"
-      },
+      "reponse": "exposant",
       "propositions": [
         "exposant",
         "facteur",
@@ -219,10 +533,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4"
-      },
+      "reponse": "4",
       "propositions": [
         "4",
         "10",
@@ -238,10 +549,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4"
-      },
+      "reponse": "4",
       "propositions": [
         "4",
         "8",

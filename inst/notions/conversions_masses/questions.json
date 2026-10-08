@@ -4,74 +4,146 @@
     {
       "id": "MES-CONVERSION_MASSES-001",
       "type": "qcm",
-      "enonce": "[[quantite]] kg correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "5/2",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "g",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 500 g",
-        "250 g",
-        "25 g",
-        "25 000 g"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un kilogramme contient 1 000 grammes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "2,5 kg correspondent à…",
+            "reponse": "2 500 g",
+            "correction": "Un kilogramme contient 1 000 grammes.",
+            "p1": "2 500 g",
+            "p2": "250 g",
+            "p3": "25 g",
+            "p4": "25 000 g"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "5,0 kg correspondent à…",
+            "reponse": "5 000 g",
+            "correction": "En convertissant dans l’unité demandée, on obtient 5 000 g.",
+            "p1": "5 000 g",
+            "p2": "500 g",
+            "p3": "50 g",
+            "p4": "50 000 g"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "7,5 kg correspondent à…",
+            "reponse": "7 500 g",
+            "correction": "En convertissant dans l’unité demandée, on obtient 7 500 g.",
+            "p1": "7 500 g",
+            "p2": "750 g",
+            "p3": "75 g",
+            "p4": "75 000 g"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_MASSES-002",
       "type": "qcm",
-      "enonce": "[[quantite]] g correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "750",
-          "1/1000"
-        ],
-        "format": "decimal",
-        "unite": "kg",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,75 kg",
-        "7,5 kg",
-        "75 kg",
-        "0,075 kg"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "750 ÷ 1 000 = 0,75."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "750 g correspondent à…",
+            "reponse": "0,75 kg",
+            "correction": "750 ÷ 1 000 = 0,75.",
+            "p1": "0,75 kg",
+            "p2": "7,5 kg",
+            "p3": "75 kg",
+            "p4": "0,075 kg"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1500 g correspondent à…",
+            "reponse": "1,50 kg",
+            "correction": "En convertissant dans l’unité demandée, on obtient 1,50 kg.",
+            "p1": "1,50 kg",
+            "p2": "15,0 kg",
+            "p3": "150 kg",
+            "p4": "0,150 kg"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "2250 g correspondent à…",
+            "reponse": "2,25 kg",
+            "correction": "En convertissant dans l’unité demandée, on obtient 2,25 kg.",
+            "p1": "2,25 kg",
+            "p2": "22,5 kg",
+            "p3": "225 kg",
+            "p4": "0,225 kg"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_MASSES-003",
       "type": "qcm",
-      "enonce": "[[quantite]] g correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "1/25",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "mg",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "40 mg",
-        "4 mg",
-        "400 mg",
-        "0,4 mg"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un gramme contient 1 000 milligrammes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "0,04 g correspondent à…",
+            "reponse": "40 mg",
+            "correction": "Un gramme contient 1 000 milligrammes.",
+            "p1": "40 mg",
+            "p2": "4 mg",
+            "p3": "400 mg",
+            "p4": "0,4 mg"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "0,08 g correspondent à…",
+            "reponse": "80 mg",
+            "correction": "En convertissant dans l’unité demandée, on obtient 80 mg.",
+            "p1": "80 mg",
+            "p2": "8 mg",
+            "p3": "800 mg",
+            "p4": "0,8 mg"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "0,12 g correspondent à…",
+            "reponse": "120 mg",
+            "correction": "En convertissant dans l’unité demandée, on obtient 120 mg.",
+            "p1": "120 mg",
+            "p2": "12 mg",
+            "p3": "1200 mg",
+            "p4": "1,2 mg"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_MASSES-VOCAB-TROU",
@@ -86,10 +158,7 @@
           "décagramme": "d _ _ _ _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "kilogramme"
-      },
+      "reponse": "kilogramme",
       "propositions": [
         "kilogramme",
         "milligramme",
@@ -112,10 +181,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "tonne"
-      },
+      "reponse": "tonne",
       "propositions": [
         "tonne",
         "gramme",
@@ -127,18 +193,50 @@
     {
       "id": "MES-CONVERSION_MASSES-APPLICATION",
       "type": "qcm",
-      "enonce": "Un sac pèse 2,5 kg. Quelle est sa masse en grammes ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2 500 g"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 500 g",
-        "250 g",
-        "25 000 g",
-        "2,5 g"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un sac pèse 2,5 kg. Quelle est sa masse en grammes ?",
+            "reponse": "2 500 g",
+            "correction": "1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g.",
+            "p1": "2 500 g",
+            "p2": "250 g",
+            "p3": "25 000 g",
+            "p4": "2,5 g"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un sac pèse 5,0 kg. Quelle est sa masse en grammes ?",
+            "reponse": "5 000 g",
+            "correction": "En convertissant dans l’unité demandée, on obtient 5 000 g.",
+            "p1": "5 000 g",
+            "p2": "500 g",
+            "p3": "50 000 g",
+            "p4": "5,0 g"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un sac pèse 7,5 kg. Quelle est sa masse en grammes ?",
+            "reponse": "7 500 g",
+            "correction": "En convertissant dans l’unité demandée, on obtient 7 500 g.",
+            "p1": "7 500 g",
+            "p2": "750 g",
+            "p3": "75 000 g",
+            "p4": "7,5 g"
+          }
+        }
+      ]
     }
   ]
 }

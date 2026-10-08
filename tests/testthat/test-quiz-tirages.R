@@ -14,10 +14,10 @@ test_that("les variantes ne se repetent pas avant epuisement", {
 
 test_that("une banque courte repete les definitions variables avant les fixes", {
   fixe = list(id = "FIXE", type = "qcm", enonce = "Question fixe.",
-               reponse = list(mode = "editoriale", valeur = "A"),
+               reponse = "A",
                propositions = c("A", "B"), correction = "A.")
   variable = list(id = "VARIABLE", type = "qcm", enonce = "Question [[n]].",
-                  reponse = list(mode = "editoriale", valeur = "A"),
+                  reponse = "A",
                   propositions = c("A", "B"), correction = "A.",
                   variantes = list(
                     list(parametres = list(n = "1")),
@@ -32,4 +32,36 @@ test_that("une banque courte repete les definitions variables avant les fixes", 
   expect_equal(sum(ids == "VARIABLE"), 3L)
   enonces = vapply(resultat[ids == "VARIABLE"], `[[`, character(1), "enonce")
   expect_length(unique(enonces), 3L)
+})
+
+test_that("un quiz ne repete pas un enonce quand la banque suffit", {
+  banque = questions("fractions_addition")
+  set.seed(123)
+  resultat = eduschool:::.tirer_questions_quiz_edu(
+    banque$questions, n = 20L, tirages = 5L, humour_ratio = 0
+  )
+  for (tirage in resultat) {
+    enonces = vapply(tirage, `[[`, character(1), "enonce")
+    expect_length(unique(enonces), 20L)
+  }
+})
+
+test_that("un quiz refuse de recycler une variante epuisee", {
+  variable = list(id = "VARIABLE", type = "qcm", enonce = "Question [[n]].",
+                  reponse = "A",
+                  propositions = c("A", "B"), correction = "A.",
+                  variantes = list(
+                    list(parametres = list(n = "1")),
+                    list(parametres = list(n = "2"))))
+  expect_error(
+    eduschool:::.tirer_questions_quiz_edu(
+      list(variable), n = 3L, tirages = 1L, humour_ratio = 0
+    ),
+    "Pas assez de questions distinctes"
+  )
+})
+
+
+test_that("produire pre-calcule vingt quiz HTML par defaut", {
+  expect_equal(formals(produire)$variantes, 20L)
 })

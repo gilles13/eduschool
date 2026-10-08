@@ -2,92 +2,262 @@
   "notion_id": "fractions_quantite",
   "questions": [
     {
-      "id": "FRAC-MIG-FRACTION-QUANTITE-001",
-      "type": "qcm",
-      "enonce": "Une boîte contient [[terme1]] objets. On en utilise [[terme2]]. Combien d’objets sont utilisés ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "12",
-          "2/3"
-        ],
-        "format": "integer",
-        "unite": ""
-      },
-      "propositions": [
-        "8",
-        "6",
-        "12",
-        "18"
-      ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Prendre une fraction d’une quantité consiste à multiplier cette quantité par la fraction.\nJ’en déduis : 12 ÷ 3 = 4 objets par tiers ; deux tiers représentent 8 objets.",
-      "humour": [
-        "Une fraction d'un nombre reste un nombre. Jusqu'ici, l'univers tient bon.",
-        "On ne prend qu'une fraction du nombre. Inutile d'appeler les secours."
-      ]
-    },
-    {
       "id": "FRAC-MIG-FRACTION-QUANTITE-002",
       "type": "qcm",
-      "enonce": "Quel nombre manque : [[terme2]] × □ = [[terme1]] ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "division",
-        "termes": [
-          "8",
-          "2/3"
-        ],
-        "format": "integer",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12",
-        "6",
-        "8",
-        "16"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Prendre une fraction d’une quantité consiste à multiplier cette quantité par la fraction.\nJ’en déduis : On calcule 8 ÷ (2/3) = 8 × 3/2 = 12.",
+      "correction": "[[correction]]",
       "humour": [
         "Une petite fraction, un grand calcul. Enfin... gardons le sens des proportions."
+      ],
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel nombre manque : \\(\\frac{3}{8}\\) × □ = \\(9\\) ?",
+            "reponse": "24",
+            "correction": "3/8 × 24 = 9.",
+            "p1": "24",
+            "p2": "9",
+            "p3": "8",
+            "p4": "32"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre manque : \\(\\frac{2}{5}\\) × □ = \\(12\\) ?",
+            "reponse": "30",
+            "correction": "2/5 × 30 = 12.",
+            "p1": "30",
+            "p2": "12",
+            "p3": "5",
+            "p4": "35"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre manque : \\(\\frac{3}{7}\\) × □ = \\(15\\) ?",
+            "reponse": "35",
+            "correction": "3/7 × 35 = 15.",
+            "p1": "35",
+            "p2": "15",
+            "p3": "7",
+            "p4": "42"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre manque : \\(\\frac{5}{7}\\) × □ = \\(30\\) ?",
+            "reponse": "42",
+            "correction": "5/7 × 42 = 30.",
+            "p1": "42",
+            "p2": "30",
+            "p3": "7",
+            "p4": "49"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre manque : \\(\\frac{3}{4}\\) × □ = \\(36\\) ?",
+            "reponse": "48",
+            "correction": "3/4 × 48 = 36.",
+            "p1": "48",
+            "p2": "36",
+            "p3": "4",
+            "p4": "52"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre manque : \\(\\frac{5}{9}\\) × □ = \\(30\\) ?",
+            "reponse": "54",
+            "correction": "5/9 × 54 = 30.",
+            "p1": "54",
+            "p2": "30",
+            "p3": "9",
+            "p4": "63"
+          },
+          "progression": 1
+        }
       ]
     },
     {
       "id": "FRAC-MIG-FRACTION-QUANTITE-003",
       "type": "qcm",
-      "enonce": "Un récipient contient [[terme1]] litres. On en utilise [[terme2]]. Combien de litres restent ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "reste",
-        "termes": [
-          "12",
-          "1/3"
-        ],
-        "format": "integer",
-        "unite": ""
-      },
+      "enonce": "Un récipient contient [[total]] litres. On en utilise [[frac]]. Combien de litres sont utilisés ?",
+      "reponse": "[[bonne]]",
       "propositions": [
-        "8",
-        "4",
-        "6",
-        "9"
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Prendre une fraction d’une quantité consiste à multiplier cette quantité par la fraction.\nJ’en déduis : On utilise 4 litres ; il en reste 12 − 4 = 8.",
+      "correction": "[[correction]]",
       "humour": [
         "Aucun nombre n'a été maltraité pendant la fabrication de cet exercice."
+      ],
+      "variantes": [
+        {
+          "parametres": {
+            "total": "12",
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(4\\)",
+            "d1": "\\(8\\)",
+            "d2": "\\(12\\)",
+            "d3": "\\(5\\)",
+            "correction": "1/3 de 12 = 12 × 1/3 = 4. Donc 4 litres sont utilisés."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "15",
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(6\\)",
+            "d1": "\\(9\\)",
+            "d2": "\\(3\\)",
+            "d3": "\\(15\\)",
+            "correction": "2/5 de 15 = 15 × 2/5 = 6. Donc 6 litres sont utilisés."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "16",
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(16\\)",
+            "d3": "\\(13\\)",
+            "correction": "3/4 de 16 = 16 × 3/4 = 12. Donc 12 litres sont utilisés."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "20",
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(8\\)",
+            "d1": "\\(12\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(20\\)",
+            "correction": "2/5 de 20 = 20 × 2/5 = 8. Donc 8 litres sont utilisés."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "24",
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(20\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(24\\)",
+            "d3": "\\(21\\)",
+            "correction": "5/6 de 24 = 24 × 5/6 = 20. Donc 20 litres sont utilisés."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "28",
+            "frac": "\\(\\frac{3}{7}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(16\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(28\\)",
+            "correction": "3/7 de 28 = 28 × 3/7 = 12. Donc 12 litres sont utilisés."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "30",
+            "frac": "\\(\\frac{4}{5}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(30\\)",
+            "d3": "\\(25\\)",
+            "correction": "4/5 de 30 = 30 × 4/5 = 24. Donc 24 litres sont utilisés."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "32",
+            "frac": "\\(\\frac{3}{8}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(20\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(32\\)",
+            "correction": "3/8 de 32 = 32 × 3/8 = 12. Donc 12 litres sont utilisés."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "36",
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(36\\)",
+            "d3": "\\(31\\)",
+            "correction": "5/6 de 36 = 36 × 5/6 = 30. Donc 30 litres sont utilisés."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "40",
+            "frac": "\\(\\frac{7}{10}\\)",
+            "bonne": "\\(28\\)",
+            "d1": "\\(12\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(40\\)",
+            "correction": "7/10 de 40 = 40 × 7/10 = 28. Donc 28 litres sont utilisés."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "48",
+            "frac": "\\(\\frac{7}{8}\\)",
+            "bonne": "\\(42\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(48\\)",
+            "d3": "\\(43\\)",
+            "correction": "7/8 de 48 = 48 × 7/8 = 42. Donc 42 litres sont utilisés."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "54",
+            "frac": "\\(\\frac{5}{9}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(24\\)",
+            "d2": "\\(6\\)",
+            "d3": "\\(54\\)",
+            "correction": "5/9 de 54 = 54 × 5/9 = 30. Donc 30 litres sont utilisés."
+          },
+          "progression": 3
+        }
       ]
     },
     {
-      "id": "FRA-VAR-QUANT-001",
+      "id": "FRA-QUANT-RESTE-001",
       "type": "qcm",
-      "enonce": "Calcule [[frac]] de [[total]].",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "enonce": "Un récipient contient [[total]] litres. On en utilise [[frac]]. Combien de litres restent ?",
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -99,229 +269,577 @@
         {
           "parametres": {
             "total": "12",
-            "frac": "1/2",
-            "bonne": "6",
-            "d1": "12",
-            "d2": "7",
-            "d3": "5",
-            "correction": "1/2 de 12 = 12 × 1/2 = 6."
+            "frac": "\\(\\frac{1}{3}\\)",
+            "bonne": "\\(8\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(12\\)",
+            "d3": "\\(9\\)",
+            "correction": "1/3 de 12 = 4 litres utilisés. Il reste donc 12 − 4 = 8 litres."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "total": "12",
-            "frac": "2/3",
-            "bonne": "8",
-            "d1": "4",
-            "d2": "24",
-            "d3": "9",
-            "correction": "2/3 de 12 = 12 × 2/3 = 8."
+            "total": "15",
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(9\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(3\\)",
+            "d3": "\\(15\\)",
+            "correction": "2/5 de 15 = 6 litres utilisés. Il reste donc 15 − 6 = 9 litres."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "16",
-            "frac": "3/4",
-            "bonne": "12",
-            "d1": "4",
-            "d2": "48",
-            "d3": "13",
-            "correction": "3/4 de 16 = 16 × 3/4 = 12."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(4\\)",
+            "d1": "\\(12\\)",
+            "d2": "\\(16\\)",
+            "d3": "\\(5\\)",
+            "correction": "3/4 de 16 = 12 litres utilisés. Il reste donc 16 − 12 = 4 litres."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "20",
-            "frac": "2/5",
-            "bonne": "8",
-            "d1": "4",
-            "d2": "40",
-            "d3": "12",
-            "correction": "2/5 de 20 = 20 × 2/5 = 8."
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(8\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(20\\)",
+            "correction": "2/5 de 20 = 8 litres utilisés. Il reste donc 20 − 8 = 12 litres."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "24",
-            "frac": "5/6",
-            "bonne": "20",
-            "d1": "4",
-            "d2": "120",
-            "d3": "21",
-            "correction": "5/6 de 24 = 24 × 5/6 = 20."
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(4\\)",
+            "d1": "\\(20\\)",
+            "d2": "\\(24\\)",
+            "d3": "\\(5\\)",
+            "correction": "5/6 de 24 = 20 litres utilisés. Il reste donc 24 − 20 = 4 litres."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "28",
-            "frac": "3/7",
-            "bonne": "12",
-            "d1": "4",
-            "d2": "84",
-            "d3": "16",
-            "correction": "3/7 de 28 = 28 × 3/7 = 12."
+            "frac": "\\(\\frac{3}{7}\\)",
+            "bonne": "\\(16\\)",
+            "d1": "\\(12\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(28\\)",
+            "correction": "3/7 de 28 = 12 litres utilisés. Il reste donc 28 − 12 = 16 litres."
           },
           "progression": 1
         },
         {
           "parametres": {
             "total": "30",
-            "frac": "4/5",
-            "bonne": "24",
-            "d1": "6",
-            "d2": "120",
-            "d3": "25",
-            "correction": "4/5 de 30 = 30 × 4/5 = 24."
+            "frac": "\\(\\frac{4}{5}\\)",
+            "bonne": "\\(6\\)",
+            "d1": "\\(24\\)",
+            "d2": "\\(30\\)",
+            "d3": "\\(7\\)",
+            "correction": "4/5 de 30 = 24 litres utilisés. Il reste donc 30 − 24 = 6 litres."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "32",
-            "frac": "3/8",
-            "bonne": "12",
-            "d1": "4",
-            "d2": "96",
-            "d3": "20",
-            "correction": "3/8 de 32 = 32 × 3/8 = 12."
+            "frac": "\\(\\frac{3}{8}\\)",
+            "bonne": "\\(20\\)",
+            "d1": "\\(12\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(32\\)",
+            "correction": "3/8 de 32 = 12 litres utilisés. Il reste donc 32 − 12 = 20 litres."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "36",
-            "frac": "5/6",
-            "bonne": "30",
-            "d1": "6",
-            "d2": "180",
-            "d3": "31",
-            "correction": "5/6 de 36 = 36 × 5/6 = 30."
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(6\\)",
+            "d1": "\\(30\\)",
+            "d2": "\\(36\\)",
+            "d3": "\\(7\\)",
+            "correction": "5/6 de 36 = 30 litres utilisés. Il reste donc 36 − 30 = 6 litres."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "40",
-            "frac": "7/10",
-            "bonne": "28",
-            "d1": "4",
-            "d2": "280",
-            "d3": "12",
-            "correction": "7/10 de 40 = 40 × 7/10 = 28."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "total": "42",
-            "frac": "5/7",
-            "bonne": "30",
-            "d1": "6",
-            "d2": "210",
-            "d3": "12",
-            "correction": "5/7 de 42 = 42 × 5/7 = 30."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "total": "45",
-            "frac": "2/9",
-            "bonne": "10",
-            "d1": "5",
-            "d2": "90",
-            "d3": "35",
-            "correction": "2/9 de 45 = 45 × 2/9 = 10."
+            "frac": "\\(\\frac{7}{10}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(28\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(40\\)",
+            "correction": "7/10 de 40 = 28 litres utilisés. Il reste donc 40 − 28 = 12 litres."
           },
           "progression": 2
         },
         {
           "parametres": {
             "total": "48",
-            "frac": "7/8",
-            "bonne": "42",
-            "d1": "6",
-            "d2": "336",
-            "d3": "43",
-            "correction": "7/8 de 48 = 48 × 7/8 = 42."
+            "frac": "\\(\\frac{7}{8}\\)",
+            "bonne": "\\(6\\)",
+            "d1": "\\(42\\)",
+            "d2": "\\(48\\)",
+            "d3": "\\(7\\)",
+            "correction": "7/8 de 48 = 42 litres utilisés. Il reste donc 48 − 42 = 6 litres."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "54",
-            "frac": "5/9",
-            "bonne": "30",
-            "d1": "6",
-            "d2": "270",
-            "d3": "24",
-            "correction": "5/9 de 54 = 54 × 5/9 = 30."
+            "frac": "\\(\\frac{5}{9}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(30\\)",
+            "d2": "\\(6\\)",
+            "d3": "\\(54\\)",
+            "correction": "5/9 de 54 = 30 litres utilisés. Il reste donc 54 − 30 = 24 litres."
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "FRA-VAR-QUANT-001",
+      "type": "qcm",
+      "enonce": "Calcule [[frac]] de [[total]].",
+      "reponse": "[[bonne]]",
+      "propositions": [
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "total": "12",
+            "frac": "\\(\\frac{1}{2}\\)",
+            "bonne": "\\(6\\)",
+            "d1": "\\(12\\)",
+            "d2": "\\(7\\)",
+            "d3": "\\(5\\)",
+            "correction": "Je partage 12 en 2 parts égales : 12 ÷ 2 = 6.\nJe prends 1 de ces parts : 6 × 1 = 6.\nDonc 1/2 de 12 vaut 6."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "12",
+            "frac": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(8\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(24\\)",
+            "d3": "\\(9\\)",
+            "correction": "Je partage 12 en 3 parts égales : 12 ÷ 3 = 4.\nJe prends 2 de ces parts : 4 × 2 = 8.\nDonc 2/3 de 12 vaut 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "16",
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(48\\)",
+            "d3": "\\(13\\)",
+            "correction": "Je partage 16 en 4 parts égales : 16 ÷ 4 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/4 de 16 vaut 12."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "20",
+            "frac": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(8\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(40\\)",
+            "d3": "\\(12\\)",
+            "correction": "Je partage 20 en 5 parts égales : 20 ÷ 5 = 4.\nJe prends 2 de ces parts : 4 × 2 = 8.\nDonc 2/5 de 20 vaut 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "24",
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(20\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(120\\)",
+            "d3": "\\(21\\)",
+            "correction": "Je partage 24 en 6 parts égales : 24 ÷ 6 = 4.\nJe prends 5 de ces parts : 4 × 5 = 20.\nDonc 5/6 de 24 vaut 20."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "28",
+            "frac": "\\(\\frac{3}{7}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(84\\)",
+            "d3": "\\(16\\)",
+            "correction": "Je partage 28 en 7 parts égales : 28 ÷ 7 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/7 de 28 vaut 12."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "total": "30",
+            "frac": "\\(\\frac{4}{5}\\)",
+            "bonne": "\\(24\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(120\\)",
+            "d3": "\\(25\\)",
+            "correction": "Je partage 30 en 5 parts égales : 30 ÷ 5 = 6.\nJe prends 4 de ces parts : 6 × 4 = 24.\nDonc 4/5 de 30 vaut 24."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "32",
+            "frac": "\\(\\frac{3}{8}\\)",
+            "bonne": "\\(12\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(96\\)",
+            "d3": "\\(20\\)",
+            "correction": "Je partage 32 en 8 parts égales : 32 ÷ 8 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/8 de 32 vaut 12."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "36",
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(180\\)",
+            "d3": "\\(31\\)",
+            "correction": "Je partage 36 en 6 parts égales : 36 ÷ 6 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/6 de 36 vaut 30."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "40",
+            "frac": "\\(\\frac{7}{10}\\)",
+            "bonne": "\\(28\\)",
+            "d1": "\\(4\\)",
+            "d2": "\\(280\\)",
+            "d3": "\\(12\\)",
+            "correction": "Je partage 40 en 10 parts égales : 40 ÷ 10 = 4.\nJe prends 7 de ces parts : 4 × 7 = 28.\nDonc 7/10 de 40 vaut 28."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "42",
+            "frac": "\\(\\frac{5}{7}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(210\\)",
+            "d3": "\\(12\\)",
+            "correction": "Je partage 42 en 7 parts égales : 42 ÷ 7 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/7 de 42 vaut 30."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "45",
+            "frac": "\\(\\frac{2}{9}\\)",
+            "bonne": "\\(10\\)",
+            "d1": "\\(5\\)",
+            "d2": "\\(90\\)",
+            "d3": "\\(35\\)",
+            "correction": "Je partage 45 en 9 parts égales : 45 ÷ 9 = 5.\nJe prends 2 de ces parts : 5 × 2 = 10.\nDonc 2/9 de 45 vaut 10."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "total": "48",
+            "frac": "\\(\\frac{7}{8}\\)",
+            "bonne": "\\(42\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(336\\)",
+            "d3": "\\(43\\)",
+            "correction": "Je partage 48 en 8 parts égales : 48 ÷ 8 = 6.\nJe prends 7 de ces parts : 6 × 7 = 42.\nDonc 7/8 de 48 vaut 42."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "total": "54",
+            "frac": "\\(\\frac{5}{9}\\)",
+            "bonne": "\\(30\\)",
+            "d1": "\\(6\\)",
+            "d2": "\\(270\\)",
+            "d3": "\\(24\\)",
+            "correction": "Je partage 54 en 9 parts égales : 54 ÷ 9 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/9 de 54 vaut 30."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "56",
-            "frac": "3/4",
-            "bonne": "42",
-            "d1": "14",
-            "d2": "168",
-            "d3": "43",
-            "correction": "3/4 de 56 = 56 × 3/4 = 42."
+            "frac": "\\(\\frac{3}{4}\\)",
+            "bonne": "\\(42\\)",
+            "d1": "\\(14\\)",
+            "d2": "\\(168\\)",
+            "d3": "\\(43\\)",
+            "correction": "Je partage 56 en 4 parts égales : 56 ÷ 4 = 14.\nJe prends 3 de ces parts : 14 × 3 = 42.\nDonc 3/4 de 56 vaut 42."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "60",
-            "frac": "11/12",
-            "bonne": "55",
-            "d1": "5",
-            "d2": "660",
-            "d3": "56",
-            "correction": "11/12 de 60 = 60 × 11/12 = 55."
+            "frac": "\\(\\frac{11}{12}\\)",
+            "bonne": "\\(55\\)",
+            "d1": "\\(5\\)",
+            "d2": "\\(660\\)",
+            "d3": "\\(56\\)",
+            "correction": "Je partage 60 en 12 parts égales : 60 ÷ 12 = 5.\nJe prends 11 de ces parts : 5 × 11 = 55.\nDonc 11/12 de 60 vaut 55."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "72",
-            "frac": "7/9",
-            "bonne": "56",
-            "d1": "8",
-            "d2": "504",
-            "d3": "16",
-            "correction": "7/9 de 72 = 72 × 7/9 = 56."
+            "frac": "\\(\\frac{7}{9}\\)",
+            "bonne": "\\(56\\)",
+            "d1": "\\(8\\)",
+            "d2": "\\(504\\)",
+            "d3": "\\(16\\)",
+            "correction": "Je partage 72 en 9 parts égales : 72 ÷ 9 = 8.\nJe prends 7 de ces parts : 8 × 7 = 56.\nDonc 7/9 de 72 vaut 56."
           },
           "progression": 3
         },
         {
           "parametres": {
             "total": "84",
-            "frac": "5/6",
-            "bonne": "70",
-            "d1": "14",
-            "d2": "420",
-            "d3": "71",
-            "correction": "5/6 de 84 = 84 × 5/6 = 70."
+            "frac": "\\(\\frac{5}{6}\\)",
+            "bonne": "\\(70\\)",
+            "d1": "\\(14\\)",
+            "d2": "\\(420\\)",
+            "d3": "\\(71\\)",
+            "correction": "Je partage 84 en 6 parts égales : 84 ÷ 6 = 14.\nJe prends 5 de ces parts : 14 × 5 = 70.\nDonc 5/6 de 84 vaut 70."
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRA-QUANT-TABLEAU-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "presentation": {
-        "math": [
-          "frac",
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_fraction_quantite",
+        "total": "[[ill_total]]",
+        "fraction": "[[ill_fraction]]",
+        "quantite": "[[ill_quantite]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Le tableau donne un total de 24 et la fraction 3/8. Quelle quantité manque ?",
+            "reponse": "9",
+            "correction": "3/8 de 24 vaut 9.",
+            "p1": "9",
+            "p2": "3",
+            "p3": "24",
+            "p4": "12",
+            "ill_total": "24",
+            "ill_fraction": "3/8",
+            "ill_quantite": "?"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Le tableau donne un total de 30 et la fraction 2/5. Quelle quantité manque ?",
+            "reponse": "12",
+            "correction": "2/5 de 30 vaut 12.",
+            "p1": "12",
+            "p2": "6",
+            "p3": "30",
+            "p4": "14",
+            "ill_total": "30",
+            "ill_fraction": "2/5",
+            "ill_quantite": "?"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Le tableau donne un total de 35 et la fraction 3/7. Quelle quantité manque ?",
+            "reponse": "15",
+            "correction": "3/7 de 35 vaut 15.",
+            "p1": "15",
+            "p2": "5",
+            "p3": "35",
+            "p4": "18",
+            "ill_total": "35",
+            "ill_fraction": "3/7",
+            "ill_quantite": "?"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Le tableau donne un total de 42 et la fraction 5/7. Quelle quantité manque ?",
+            "reponse": "30",
+            "correction": "5/7 de 42 vaut 30.",
+            "p1": "30",
+            "p2": "6",
+            "p3": "42",
+            "p4": "35",
+            "ill_total": "42",
+            "ill_fraction": "5/7",
+            "ill_quantite": "?"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Le tableau donne un total de 48 et la fraction 3/4. Quelle quantité manque ?",
+            "reponse": "36",
+            "correction": "3/4 de 48 vaut 36.",
+            "p1": "36",
+            "p2": "12",
+            "p3": "48",
+            "p4": "39",
+            "ill_total": "48",
+            "ill_fraction": "3/4",
+            "ill_quantite": "?"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Le tableau donne un total de 54 et la fraction 5/9. Quelle quantité manque ?",
+            "reponse": "30",
+            "correction": "5/9 de 54 vaut 30.",
+            "p1": "30",
+            "p2": "6",
+            "p3": "54",
+            "p4": "35",
+            "ill_total": "54",
+            "ill_fraction": "5/9",
+            "ill_quantite": "?"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-QUANT-INTERPRETER-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que signifie calculer 3/8 de 24 ?",
+            "reponse": "Partager 24 en 8 parts égales et en prendre 3",
+            "correction": "Le dénominateur 8 indique le nombre de parts égales ; le numérateur 3 indique combien on en prend.",
+            "p1": "Partager 24 en 8 parts égales et en prendre 3",
+            "p2": "Partager 24 en 3 parts égales et en prendre 8",
+            "p3": "Ajouter 3 puis diviser par 8",
+            "p4": "Multiplier 24 par 8 puis par 3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie calculer 2/5 de 30 ?",
+            "reponse": "Partager 30 en 5 parts égales et en prendre 2",
+            "correction": "Le dénominateur 5 indique le nombre de parts égales ; le numérateur 2 indique combien on en prend.",
+            "p1": "Partager 30 en 5 parts égales et en prendre 2",
+            "p2": "Partager 30 en 2 parts égales et en prendre 5",
+            "p3": "Ajouter 2 puis diviser par 5",
+            "p4": "Multiplier 30 par 5 puis par 2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie calculer 3/7 de 35 ?",
+            "reponse": "Partager 35 en 7 parts égales et en prendre 3",
+            "correction": "Le dénominateur 7 indique le nombre de parts égales ; le numérateur 3 indique combien on en prend.",
+            "p1": "Partager 35 en 7 parts égales et en prendre 3",
+            "p2": "Partager 35 en 3 parts égales et en prendre 7",
+            "p3": "Ajouter 3 puis diviser par 7",
+            "p4": "Multiplier 35 par 7 puis par 3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie calculer 5/7 de 42 ?",
+            "reponse": "Partager 42 en 7 parts égales et en prendre 5",
+            "correction": "Le dénominateur 7 indique le nombre de parts égales ; le numérateur 5 indique combien on en prend.",
+            "p1": "Partager 42 en 7 parts égales et en prendre 5",
+            "p2": "Partager 42 en 5 parts égales et en prendre 7",
+            "p3": "Ajouter 5 puis diviser par 7",
+            "p4": "Multiplier 42 par 7 puis par 5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie calculer 3/4 de 48 ?",
+            "reponse": "Partager 48 en 4 parts égales et en prendre 3",
+            "correction": "Le dénominateur 4 indique le nombre de parts égales ; le numérateur 3 indique combien on en prend.",
+            "p1": "Partager 48 en 4 parts égales et en prendre 3",
+            "p2": "Partager 48 en 3 parts égales et en prendre 4",
+            "p3": "Ajouter 3 puis diviser par 4",
+            "p4": "Multiplier 48 par 4 puis par 3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie calculer 5/9 de 54 ?",
+            "reponse": "Partager 54 en 9 parts égales et en prendre 5",
+            "correction": "Le dénominateur 9 indique le nombre de parts égales ; le numérateur 5 indique combien on en prend.",
+            "p1": "Partager 54 en 9 parts égales et en prendre 5",
+            "p2": "Partager 54 en 5 parts égales et en prendre 9",
+            "p3": "Ajouter 5 puis diviser par 9",
+            "p4": "Multiplier 54 par 9 puis par 5"
+          },
+          "progression": 1
+        }
+      ]
     }
   ]
 }

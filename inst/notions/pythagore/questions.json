@@ -5,10 +5,7 @@
       "id": "PYTH-COMP-001",
       "type": "comprehension",
       "enonce": "Sur une figure à main levée, quelle information permet d’affirmer que ABC est rectangle en A ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le codage de l’angle BAC indique un angle droit."
-      },
+      "reponse": "Le codage de l’angle BAC indique un angle droit.",
       "propositions": [
         "Le codage de l’angle BAC indique un angle droit.",
         "L’angle en A semble droit sur le dessin.",
@@ -22,31 +19,52 @@
     {
       "id": "PYTH-CALC-001",
       "type": "exercice",
-      "enonce": "ABC est rectangle en A, AB = [[terme1]] cm et AC = [[terme2]] cm. Calculer BC.",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "hypotenuse",
-        "termes": [
-          "3",
-          "4"
-        ]
-      },
-      "correction": "Appliquer le théorème de Pythagore : BC² = AB² + AC². BC est la racine carrée de cette somme.",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "correction": "[[correction]]",
       "propositions": [
-        "5",
-        "7",
-        "2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]"
+      ],
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = \\(3\\) cm et AC = \\(4\\) cm. Calculer BC.",
+            "reponse": "\\(5\\)",
+            "correction": "Appliquer le théorème de Pythagore : BC² = AB² + AC². BC est la racine carrée de cette somme.",
+            "p1": "\\(5\\)",
+            "p2": "\\(7\\)",
+            "p3": "\\(2\\)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = \\(6\\) cm et AC = \\(8\\) cm. Calculer BC.",
+            "reponse": "\\(10\\)",
+            "correction": "BC² = 6² + 8² = 100, donc BC = 10 cm.",
+            "p1": "\\(10\\)",
+            "p2": "\\(14\\)",
+            "p3": "\\(2\\)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = \\(5\\) cm et AC = \\(12\\) cm. Calculer BC.",
+            "reponse": "\\(13\\)",
+            "correction": "BC² = 5² + 12² = 169, donc BC = 13 cm.",
+            "p1": "\\(13\\)",
+            "p2": "\\(17\\)",
+            "p3": "\\(7\\)"
+          }
+        }
       ]
     },
     {
       "id": "PYTH_IDENT_001",
       "type": "qcm",
       "enonce": "ABC est un triangle rectangle en A. Quel côté est son hypoténuse ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "BC"
-      },
+      "reponse": "BC",
       "illustration": {
         "id": "triangle_rectangle_normal",
         "angle_droit": "A"
@@ -62,50 +80,146 @@
     {
       "id": "PYTH_HYP_001",
       "type": "qcm",
-      "enonce": "ABC est rectangle en A, avec AB = 3 cm et AC = 4 cm. Quelle relation permet de calculer BC ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "BC² = AB² + AC²"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "BC² = AB² + AC²",
-        "BC = AB + AC",
-        "AB² = AC² + BC²",
-        "BC² = AB² − AC²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "BC est opposé à l’angle droit en A : BC² = AB² + AC². Ici, BC² = 3² + 4²."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, avec AB = 3 cm et AC = 4 cm. Quelle relation permet de calculer BC ?",
+            "reponse": "BC² = AB² + AC²",
+            "correction": "BC est opposé à l’angle droit en A : BC² = AB² + AC². Ici, BC² = 3² + 4².",
+            "p1": "BC² = AB² + AC²",
+            "p2": "BC = AB + AC",
+            "p3": "AB² = AC² + BC²",
+            "p4": "BC² = AB² − AC²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, avec AB = 6 cm et AC = 8 cm. Quelle relation permet de calculer BC ?",
+            "reponse": "BC² = AB² + AC²",
+            "correction": "BC est opposé à l’angle droit en A : BC² = AB² + AC². Ici, BC² = 6² + 8².",
+            "p1": "BC² = AB² + AC²",
+            "p2": "BC = AB + AC",
+            "p3": "AB² = AC² + BC²",
+            "p4": "BC² = AB² − AC²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, avec AB = 5 cm et AC = 12 cm. Quelle relation permet de calculer BC ?",
+            "reponse": "BC² = AB² + AC²",
+            "correction": "BC est opposé à l’angle droit en A : BC² = AB² + AC². Ici, BC² = 5² + 12².",
+            "p1": "BC² = AB² + AC²",
+            "p2": "BC = AB + AC",
+            "p3": "AB² = AC² + BC²",
+            "p4": "BC² = AB² − AC²"
+          }
+        }
+      ]
     },
     {
       "id": "PYTH_COTE_001",
       "type": "qcm",
-      "enonce": "ABC est rectangle en A, avec AC = 4 cm et BC = 5 cm. Quelle relation permet de calculer AB ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AB² = BC² − AC²"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "AB² = BC² − AC²",
-        "AB² = BC² + AC²",
-        "AB² = AC² − BC²",
-        "AB = BC − AC"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "BC est l’hypoténuse : BC² = AB² + AC², donc AB² = BC² − AC² = 25 − 16 = 9, soit AB = 3 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, avec AC = 4 cm et BC = 5 cm. Quelle relation permet de calculer AB ?",
+            "reponse": "AB² = BC² − AC²",
+            "correction": "BC est l’hypoténuse : BC² = AB² + AC², donc AB² = BC² − AC² = 25 − 16 = 9, soit AB = 3 cm.",
+            "p1": "AB² = BC² − AC²",
+            "p2": "AB² = BC² + AC²",
+            "p3": "AB² = AC² − BC²",
+            "p4": "AB = BC − AC"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, avec AC = 8 cm et BC = 10 cm. Quelle relation permet de calculer AB ?",
+            "reponse": "AB² = BC² − AC²",
+            "correction": "BC est l’hypoténuse : AB² = BC² − AC² = 100 − 64 = 36, donc AB = 6 cm.",
+            "p1": "AB² = BC² − AC²",
+            "p2": "AB² = BC² + AC²",
+            "p3": "AB² = AC² − BC²",
+            "p4": "AB = BC − AC"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, avec AC = 12 cm et BC = 13 cm. Quelle relation permet de calculer AB ?",
+            "reponse": "AB² = BC² − AC²",
+            "correction": "BC est l’hypoténuse : AB² = BC² − AC² = 169 − 144 = 25, donc AB = 5 cm.",
+            "p1": "AB² = BC² − AC²",
+            "p2": "AB² = BC² + AC²",
+            "p3": "AB² = AC² − BC²",
+            "p4": "AB = BC − AC"
+          }
+        }
+      ]
     },
     {
       "id": "PYTH_DIAG_001",
       "type": "qcm",
-      "enonce": "Un rectangle mesure 4 cm de longueur et 3 cm de largeur. Pourquoi peut-on utiliser Pythagore pour calculer sa diagonale ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "La diagonale et deux côtés adjacents forment un triangle rectangle."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "La diagonale et deux côtés adjacents forment un triangle rectangle.",
-        "Le rectangle a quatre côtés.",
-        "Les côtés opposés du rectangle sont parallèles.",
-        "Les deux diagonales du rectangle ont la même longueur."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les deux côtés adjacents sont perpendiculaires : avec la diagonale, ils forment un triangle rectangle. La diagonale est l’hypoténuse ; sa longueur vaut √(4² + 3²) = 5 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 4 cm de longueur et 3 cm de largeur. Pourquoi peut-on utiliser Pythagore pour calculer sa diagonale ?",
+            "reponse": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+            "correction": "Les deux côtés adjacents sont perpendiculaires : avec la diagonale, ils forment un triangle rectangle. La diagonale est l’hypoténuse ; sa longueur vaut √(4² + 3²) = 5 cm.",
+            "p1": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+            "p2": "Le rectangle a quatre côtés.",
+            "p3": "Les côtés opposés du rectangle sont parallèles.",
+            "p4": "Les deux diagonales du rectangle ont la même longueur."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 8 cm de longueur et 6 cm de largeur. Pourquoi peut-on utiliser Pythagore pour calculer sa diagonale ?",
+            "reponse": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+            "correction": "Les côtés adjacents sont perpendiculaires ; la diagonale est l’hypoténuse et vaut √(8² + 6²) = 10 cm.",
+            "p1": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+            "p2": "Le rectangle a quatre côtés.",
+            "p3": "Les côtés opposés du rectangle sont parallèles.",
+            "p4": "Les deux diagonales du rectangle ont la même longueur."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 12 cm de longueur et 5 cm de largeur. Pourquoi peut-on utiliser Pythagore pour calculer sa diagonale ?",
+            "reponse": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+            "correction": "Les côtés adjacents sont perpendiculaires ; la diagonale est l’hypoténuse et vaut √(12² + 5²) = 13 cm.",
+            "p1": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
+            "p2": "Le rectangle a quatre côtés.",
+            "p3": "Les côtés opposés du rectangle sont parallèles.",
+            "p4": "Les deux diagonales du rectangle ont la même longueur."
+          }
+        }
+      ]
     }
   ]
 }

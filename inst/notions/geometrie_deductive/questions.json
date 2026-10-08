@@ -5,10 +5,7 @@
       "id": "GEO-001",
       "type": "qcm",
       "enonce": "Sur la figure à main levée, quelle information prouve que le triangle ABC est rectangle en A ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le codage de l’angle droit en A"
-      },
+      "reponse": "Le codage de l’angle droit en A",
       "propositions": [
         "Le codage de l’angle droit en A",
         "Le dessin semble montrer un angle droit",
@@ -24,10 +21,7 @@
       "id": "GEO-002",
       "type": "qcm",
       "enonce": "ABC est rectangle en A. Quelle relation peut-on déduire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "BC² = AB² + AC²"
-      },
+      "reponse": "BC² = AB² + AC²",
       "propositions": [
         "BC² = AB² + AC²",
         "AB² = BC² + AC²",
@@ -43,10 +37,7 @@
       "id": "GEO-003",
       "type": "qcm",
       "enonce": "Les diagonales d’un quadrilatère se coupent en leur milieu. Quelle conclusion est démontrée ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "C’est un parallélogramme"
-      },
+      "reponse": "C’est un parallélogramme",
       "propositions": [
         "C’est un parallélogramme",
         "C’est nécessairement un rectangle",
@@ -59,10 +50,7 @@
       "id": "GEO-004",
       "type": "qcm",
       "enonce": "Un quadrilatère a quatre angles droits. Quelle conclusion est démontrée ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "C’est un rectangle"
-      },
+      "reponse": "C’est un rectangle",
       "propositions": [
         "C’est un rectangle",
         "C’est nécessairement un carré",
@@ -75,10 +63,7 @@
       "id": "GEO-005",
       "type": "qcm",
       "enonce": "M appartient à la médiatrice de [AB]. Que peut-on déduire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "MA = MB"
-      },
+      "reponse": "MA = MB",
       "propositions": [
         "MA = MB",
         "MA est perpendiculaire à MB",
@@ -90,34 +75,56 @@
     {
       "id": "GEO-006",
       "type": "qcm",
-      "enonce": "Dans un triangle, deux angles mesurent [[terme1]]° et [[terme2]]°. Combien mesure le troisième ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "angle",
-        "termes": [
-          "45",
-          "65"
-        ],
-        "format": "integer",
-        "unite": "°"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "70°",
-        "80°",
-        "110°",
-        "180°"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La somme des angles vaut 180° : 180 − 45 − 65 = 70°."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent \\(45\\)° et \\(65\\)°. Combien mesure le troisième ?",
+            "reponse": "70°",
+            "correction": "La somme des angles vaut 180° : 180 − 45 − 65 = 70°.",
+            "p1": "70°",
+            "p2": "80°",
+            "p3": "110°",
+            "p4": "180°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent \\(35\\)° et \\(75\\)°. Combien mesure le troisième ?",
+            "reponse": "70°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 35 − 75 = 70°.",
+            "p1": "70°",
+            "p2": "80°",
+            "p3": "110°",
+            "p4": "180°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent \\(50\\)° et \\(60\\)°. Combien mesure le troisième ?",
+            "reponse": "70°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 50 − 60 = 70°.",
+            "p1": "70°",
+            "p2": "80°",
+            "p3": "110°",
+            "p4": "180°"
+          }
+        }
+      ]
     },
     {
       "id": "GEO-007",
       "type": "qcm",
       "enonce": "Un quadrilatère a ses côtés opposés parallèles deux à deux. Que peut-on démontrer ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "C’est un parallélogramme"
-      },
+      "reponse": "C’est un parallélogramme",
       "propositions": [
         "C’est un parallélogramme",
         "C’est nécessairement un rectangle",

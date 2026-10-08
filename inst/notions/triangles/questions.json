@@ -1,0 +1,604 @@
+{
+  "notion_id": "triangles",
+  "questions": [
+    {
+      "id": "TRI-VOCAB-001",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on les points A, B et C d'un triangle ABC ?",
+      "reponse": "Les sommets",
+      "propositions": [
+        "Les sommets",
+        "Les côtés",
+        "Les médiatrices",
+        "Les hauteurs"
+      ],
+      "correction": "A, B et C sont les sommets du triangle ; [AB], [BC] et [CA] sont ses côtés."
+    },
+    {
+      "id": "TRI-VOCAB-TROU-001",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on un point comme A, B ou C dans un triangle ABC ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "sommet": "s _ _ _ _ t",
+          "côté": "c _ _ é",
+          "hauteur": "h _ _ _ _ _ r",
+          "médiane": "m _ _ _ _ _ e"
+        }
+      },
+      "reponse": "sommet",
+      "propositions": [
+        "sommet",
+        "côté",
+        "hauteur",
+        "médiane"
+      ],
+      "correction": "A, B et C sont les sommets du triangle. Un côté relie deux sommets ; une hauteur et une médiane sont des droites remarquables du triangle."
+    },
+    {
+      "id": "TRI-VOCAB-MASQUE-001",
+      "type": "qcm",
+      "enonce": "Quelle droite est perpendiculaire à un côté et passe par le milieu de ce côté ? Choisis le mot masqué correspondant.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "médiatrice": "MÉ________CE",
+          "médiane": "MÉ________NE",
+          "hauteur": "HA________UR",
+          "sommet": "SO________ET"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": "médiatrice",
+      "propositions": [
+        "médiatrice",
+        "médiane",
+        "hauteur",
+        "sommet"
+      ],
+      "correction": "La médiatrice d’un côté est perpendiculaire à ce côté et passe par son milieu. La médiane passe par un sommet et le milieu du côté opposé ; la hauteur passe par un sommet et est perpendiculaire au côté opposé."
+    },
+    {
+      "id": "TRI-VOCAB-TROU-002",
+      "type": "qcm",
+      "enonce": "Un triangle possède trois côtés de même longueur. Quel adjectif le décrit ? Choisis le mot à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "isocèle": "i _ _ _ _ _ e",
+          "équilatéral": "é _ _ _ _ _ _ _ _ _ l",
+          "rectangle": "r _ _ _ _ _ _ _ e",
+          "quelconque": "q _ _ _ _ _ _ _ _ e"
+        }
+      },
+      "reponse": "équilatéral",
+      "propositions": [
+        "isocèle",
+        "équilatéral",
+        "rectangle",
+        "quelconque"
+      ],
+      "correction": "Un triangle équilatéral possède trois côtés de même longueur. Un triangle isocèle en possède au moins deux de même longueur ; « rectangle » décrit la présence d’un angle droit."
+    },
+    {
+      "id": "TRI-VOCAB-MASQUE-002",
+      "type": "qcm",
+      "enonce": "Un triangle possède deux côtés de même longueur. Quel adjectif permet de le décrire ? Choisis le mot masqué correspondant.",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "isocèle": "IS________LE",
+          "équilatéral": "ÉQ________AL",
+          "rectangle": "RE________LE",
+          "sommet": "SO________ET"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": "isocèle",
+      "propositions": [
+        "isocèle",
+        "équilatéral",
+        "rectangle",
+        "sommet"
+      ],
+      "correction": "Un triangle qui possède deux côtés de même longueur est isocèle. Un triangle équilatéral est donc aussi un cas particulier de triangle isocèle puisqu’il possède, entre autres, deux côtés de même longueur."
+    },
+    {
+      "id": "TRI-ISO-001",
+      "type": "qcm",
+      "enonce": "Observe uniquement les codages de la figure. Que peut-on affirmer avec certitude ?",
+      "reponse": "Le triangle ABC est isocèle en C",
+      "propositions": [
+        "Le triangle ABC est isocèle en C",
+        "Le triangle ABC est équilatéral",
+        "Le triangle ABC est rectangle en A",
+        "On ne peut rien affirmer sur la nature de ABC"
+      ],
+      "correction": "Les côtés [CA] et [CB] portent le même codage : ils ont donc la même longueur. Le triangle ABC est isocèle en C. Ici, ce sont les codages qui donnent l’information, pas l’apparence du dessin.",
+      "illustration": {
+        "id": "triangles",
+        "type": 4
+      }
+    },
+    {
+      "id": "TRI-EQUIL-001",
+      "type": "qcm",
+      "enonce": "Quelle information caractérise un triangle équilatéral ?",
+      "reponse": "Ses trois côtés ont la même longueur",
+      "propositions": [
+        "Ses trois côtés ont la même longueur",
+        "Deux côtés seulement ont la même longueur",
+        "Il possède un angle droit",
+        "Un côté est deux fois plus long qu'un autre"
+      ],
+      "correction": "Un triangle équilatéral possède trois côtés de même longueur."
+    },
+    {
+      "id": "TRI-ISO-ANGLES-001",
+      "type": "qcm",
+      "enonce": "ABC est isocèle en A. Que peut-on affirmer sur les angles à la base ?",
+      "reponse": "Les angles ABC et ACB sont égaux",
+      "propositions": [
+        "Les angles ABC et ACB sont égaux",
+        "Les angles BAC et ABC sont toujours égaux",
+        "Les trois angles sont toujours égaux",
+        "Aucun lien n'existe entre les angles"
+      ],
+      "correction": "Dans un triangle isocèle en A, les côtés [AB] et [AC] sont égaux ; les angles à la base B et C sont donc égaux."
+    },
+    {
+      "id": "TRI-MEDIATRICE-001",
+      "type": "qcm",
+      "enonce": "La droite en pointillés coupe [AB] en D. Que représente cette droite d’après les codages ?",
+      "reponse": "La médiatrice de [AB]",
+      "propositions": [
+        "La médiatrice de [AB]",
+        "La médiane issue de C",
+        "La hauteur issue de C",
+        "La bissectrice de l’angle ACB"
+      ],
+      "correction": "Les deux marques indiquent AD = DB : D est le milieu de [AB]. Le carré indique que la droite en pointillés est perpendiculaire à [AB]. Elle est donc la médiatrice de [AB].",
+      "illustration": {
+        "id": "triangles",
+        "type": 7
+      }
+    },
+    {
+      "id": "TRI-CIRCONSCRIT-001",
+      "type": "qcm",
+      "enonce": "Observe la figure et ses codages. Pourquoi le point O est-il le centre du cercle circonscrit au triangle ABC ?",
+      "reponse": "O est à l’intersection des médiatrices et OA = OB = OC",
+      "propositions": [
+        "O est à l’intersection des médiatrices et OA = OB = OC",
+        "O est le milieu de chacun des trois côtés",
+        "O appartient nécessairement à un côté du triangle",
+        "O est le sommet où se trouve l’angle droit"
+      ],
+      "correction": "Les droites en pointillés sont les médiatrices des trois côtés : elles sont perpendiculaires aux côtés en leurs milieux et se coupent en O. On lit aussi OA = OB = OC : le cercle de centre O passe donc par A, B et C.",
+      "illustration": {
+        "id": "triangles",
+        "type": 3
+      }
+    },
+    {
+      "id": "TRI-HAUTEUR-001",
+      "type": "qcm",
+      "enonce": "Sur la figure, que représente le segment [CH] ?",
+      "reponse": "Une hauteur du triangle ABC",
+      "propositions": [
+        "Une hauteur du triangle ABC",
+        "Une médiane du triangle ABC",
+        "La médiatrice de [AB]",
+        "Un côté de même longueur que [AB]"
+      ],
+      "correction": "[CH] part du sommet C et le carré en H indique CH ⟂ AB. C’est donc une hauteur du triangle ABC relative au côté [AB].",
+      "illustration": {
+        "id": "triangles",
+        "type": 6
+      }
+    },
+    {
+      "id": "TRI-MEDIANE-001",
+      "type": "qcm",
+      "enonce": "Sur la figure, les deux codages sur [AB] indiquent AD = DB. Que représente alors le segment [CD] ?",
+      "reponse": "Une médiane du triangle ABC",
+      "propositions": [
+        "Une médiane du triangle ABC",
+        "Une hauteur du triangle ABC",
+        "La médiatrice de [AB]",
+        "La bissectrice de l’angle ACB"
+      ],
+      "correction": "AD = DB signifie que D est le milieu de [AB]. Le segment [CD] relie le sommet C au milieu du côté opposé : c’est une médiane.",
+      "illustration": {
+        "id": "triangles",
+        "type": 5
+      }
+    },
+    {
+      "id": "TRI-ANGLES-001",
+      "type": "qcm",
+      "enonce": "Deux angles d'un triangle mesurent [[a]]° et [[b]]°. Combien mesure le troisième ?",
+      "reponse": "[[r]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[corr]]",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "45",
+            "b": "65",
+            "r": "70°",
+            "p1": "70°",
+            "p2": "80°",
+            "p3": "60°",
+            "p4": "135°",
+            "corr": "La somme des angles vaut 180° : 180 − 45 − 65 = 70°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "35",
+            "b": "75",
+            "r": "70°",
+            "p1": "70°",
+            "p2": "80°",
+            "p3": "60°",
+            "p4": "145°",
+            "corr": "La somme des angles vaut 180° : 180 − 35 − 75 = 70°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "50",
+            "b": "60",
+            "r": "70°",
+            "p1": "70°",
+            "p2": "80°",
+            "p3": "60°",
+            "p4": "130°",
+            "corr": "La somme des angles vaut 180° : 180 − 50 − 60 = 70°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "28",
+            "b": "92",
+            "r": "60°",
+            "p1": "60°",
+            "p2": "70°",
+            "p3": "50°",
+            "p4": "152°",
+            "corr": "La somme des angles vaut 180° : 180 − 28 − 92 = 60°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "72",
+            "b": "41",
+            "r": "67°",
+            "p1": "67°",
+            "p2": "77°",
+            "p3": "57°",
+            "p4": "108°",
+            "corr": "La somme des angles vaut 180° : 180 − 72 − 41 = 67°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "33",
+            "b": "84",
+            "r": "63°",
+            "p1": "63°",
+            "p2": "73°",
+            "p3": "53°",
+            "p4": "147°",
+            "corr": "La somme des angles vaut 180° : 180 − 33 − 84 = 63°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "58",
+            "b": "47",
+            "r": "75°",
+            "p1": "75°",
+            "p2": "85°",
+            "p3": "65°",
+            "p4": "122°",
+            "corr": "La somme des angles vaut 180° : 180 − 58 − 47 = 75°."
+          }
+        },
+        {
+          "parametres": {
+            "a": "25",
+            "b": "105",
+            "r": "50°",
+            "p1": "50°",
+            "p2": "60°",
+            "p3": "40°",
+            "p4": "155°",
+            "corr": "La somme des angles vaut 180° : 180 − 25 − 105 = 50°."
+          }
+        }
+      ]
+    },
+    {
+      "id": "TRI-ISO-PIEGE-001",
+      "type": "qcm",
+      "enonce": "Deux angles d’un triangle isocèle mesurent [[a]]° et [[b]]°. Combien mesure le troisième angle ?",
+      "reponse": "Aucune réponse ne convient",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "Aucune réponse ne convient"
+      ],
+      "correction": "[[corr]]",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "72",
+            "b": "41",
+            "p1": "67°",
+            "p2": "72°",
+            "p3": "41°",
+            "corr": "La somme des angles donne bien 180° − 72° − 41° = 67°. Ce calcul est juste, mais le raisonnement n’est pas terminé : un triangle isocèle doit avoir deux angles égaux. Or 72°, 41° et 67° sont trois mesures différentes. Les informations de l’énoncé sont donc incompatibles : un tel triangle isocèle n’existe pas. La bonne réponse est « Aucune réponse ne convient »."
+          }
+        },
+        {
+          "parametres": {
+            "a": "68",
+            "b": "47",
+            "p1": "65°",
+            "p2": "68°",
+            "p3": "47°",
+            "corr": "La somme des angles donne bien 180° − 68° − 47° = 65°. Ce calcul est juste, mais le raisonnement n’est pas terminé : un triangle isocèle doit avoir deux angles égaux. Or 68°, 47° et 65° sont trois mesures différentes. Les informations de l’énoncé sont donc incompatibles : un tel triangle isocèle n’existe pas. La bonne réponse est « Aucune réponse ne convient »."
+          }
+        },
+        {
+          "parametres": {
+            "a": "74",
+            "b": "39",
+            "p1": "67°",
+            "p2": "74°",
+            "p3": "39°",
+            "corr": "La somme des angles donne bien 180° − 74° − 39° = 67°. Ce calcul est juste, mais le raisonnement n’est pas terminé : un triangle isocèle doit avoir deux angles égaux. Or 74°, 39° et 67° sont trois mesures différentes. Les informations de l’énoncé sont donc incompatibles : un tel triangle isocèle n’existe pas. La bonne réponse est « Aucune réponse ne convient »."
+          }
+        },
+        {
+          "parametres": {
+            "a": "81",
+            "b": "44",
+            "p1": "55°",
+            "p2": "81°",
+            "p3": "44°",
+            "corr": "La somme des angles donne bien 180° − 81° − 44° = 55°. Ce calcul est juste, mais le raisonnement n’est pas terminé : un triangle isocèle doit avoir deux angles égaux. Or 81°, 44° et 55° sont trois mesures différentes. Les informations de l’énoncé sont donc incompatibles : un tel triangle isocèle n’existe pas. La bonne réponse est « Aucune réponse ne convient »."
+          }
+        },
+        {
+          "parametres": {
+            "a": "63",
+            "b": "52",
+            "p1": "65°",
+            "p2": "63°",
+            "p3": "52°",
+            "corr": "La somme des angles donne bien 180° − 63° − 52° = 65°. Ce calcul est juste, mais le raisonnement n’est pas terminé : un triangle isocèle doit avoir deux angles égaux. Or 63°, 52° et 65° sont trois mesures différentes. Les informations de l’énoncé sont donc incompatibles : un tel triangle isocèle n’existe pas. La bonne réponse est « Aucune réponse ne convient »."
+          }
+        },
+        {
+          "parametres": {
+            "a": "76",
+            "b": "43",
+            "p1": "61°",
+            "p2": "76°",
+            "p3": "43°",
+            "corr": "La somme des angles donne bien 180° − 76° − 43° = 61°. Ce calcul est juste, mais le raisonnement n’est pas terminé : un triangle isocèle doit avoir deux angles égaux. Or 76°, 43° et 61° sont trois mesures différentes. Les informations de l’énoncé sont donc incompatibles : un tel triangle isocèle n’existe pas. La bonne réponse est « Aucune réponse ne convient »."
+          }
+        }
+      ],
+      "apart_humour": "Le concepteur de cette question reconnaît avoir pris un petit plaisir sadique à la préparer. Mais c’était par amour de la connaissance et de ton apprentissage. Et le pire : il a maintenant une excellente excuse pour se déculpabiliser… c’était dans ton intérêt ! 😇"
+    },
+    {
+      "id": "TRI-EXISTENCE-001",
+      "type": "qcm",
+      "enonce": "Peut-on construire un triangle dont les côtés mesurent [[a]] cm, [[b]] cm et [[c]] cm ?",
+      "reponse": "[[r]]",
+      "propositions": [
+        "Oui",
+        "Non",
+        "Seulement s'il est rectangle",
+        "On ne peut jamais le savoir avec les longueurs"
+      ],
+      "correction": "[[corr]]",
+      "variantes": [
+        {
+          "parametres": {
+            "a": "3",
+            "b": "4",
+            "c": "8",
+            "r": "Non",
+            "corr": "Non : le plus grand côté vaut 8 cm et 3 + 4 = 7 n'est pas strictement supérieur à 8."
+          }
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "6",
+            "c": "9",
+            "r": "Oui",
+            "corr": "Oui : le plus grand côté vaut 9 cm et 4 + 6 = 10 > 9."
+          }
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "5",
+            "c": "9",
+            "r": "Oui",
+            "corr": "Oui : le plus grand côté vaut 9 cm et 5 + 5 = 10 > 9."
+          }
+        },
+        {
+          "parametres": {
+            "a": "2",
+            "b": "3",
+            "c": "5",
+            "r": "Non",
+            "corr": "Non : le plus grand côté vaut 5 cm et 2 + 3 = 5 n'est pas strictement supérieur à 5."
+          }
+        },
+        {
+          "parametres": {
+            "a": "6",
+            "b": "7",
+            "c": "10",
+            "r": "Oui",
+            "corr": "Oui : le plus grand côté vaut 10 cm et 6 + 7 = 13 > 10."
+          }
+        },
+        {
+          "parametres": {
+            "a": "4",
+            "b": "4",
+            "c": "9",
+            "r": "Non",
+            "corr": "Non : le plus grand côté vaut 9 cm et 4 + 4 = 8 n'est pas strictement supérieur à 9."
+          }
+        },
+        {
+          "parametres": {
+            "a": "7",
+            "b": "8",
+            "c": "12",
+            "r": "Oui",
+            "corr": "Oui : le plus grand côté vaut 12 cm et 7 + 8 = 15 > 12."
+          }
+        },
+        {
+          "parametres": {
+            "a": "5",
+            "b": "8",
+            "c": "14",
+            "r": "Non",
+            "corr": "Non : le plus grand côté vaut 14 cm et 5 + 8 = 13 n'est pas strictement supérieur à 14."
+          }
+        }
+      ]
+    },
+    {
+      "id": "TRI-AIRE-001",
+      "type": "qcm",
+      "enonce": "Un triangle a une base de [[b]] cm et la hauteur correspondante mesure [[h]] cm. Quelle est son aire ?",
+      "reponse": "[[r]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[corr]]",
+      "variantes": [
+        {
+          "parametres": {
+            "b": "6",
+            "h": "4",
+            "r": "12 cm²",
+            "p1": "12 cm²",
+            "p2": "24 cm²",
+            "p3": "10 cm²",
+            "p4": "20 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 6 × 4 ÷ 2 = 12 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "8",
+            "h": "5",
+            "r": "20 cm²",
+            "p1": "20 cm²",
+            "p2": "40 cm²",
+            "p3": "13 cm²",
+            "p4": "26 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 8 × 5 ÷ 2 = 20 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "10",
+            "h": "7",
+            "r": "35 cm²",
+            "p1": "35 cm²",
+            "p2": "70 cm²",
+            "p3": "17 cm²",
+            "p4": "34 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 10 × 7 ÷ 2 = 35 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "12",
+            "h": "3",
+            "r": "18 cm²",
+            "p1": "18 cm²",
+            "p2": "36 cm²",
+            "p3": "15 cm²",
+            "p4": "30 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 12 × 3 ÷ 2 = 18 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "9",
+            "h": "6",
+            "r": "27 cm²",
+            "p1": "27 cm²",
+            "p2": "54 cm²",
+            "p3": "15 cm²",
+            "p4": "30 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 9 × 6 ÷ 2 = 27 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "14",
+            "h": "5",
+            "r": "35 cm²",
+            "p1": "35 cm²",
+            "p2": "70 cm²",
+            "p3": "19 cm²",
+            "p4": "38 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 14 × 5 ÷ 2 = 35 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "16",
+            "h": "4",
+            "r": "32 cm²",
+            "p1": "32 cm²",
+            "p2": "64 cm²",
+            "p3": "20 cm²",
+            "p4": "40 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 16 × 4 ÷ 2 = 32 cm²."
+          }
+        },
+        {
+          "parametres": {
+            "b": "7",
+            "h": "8",
+            "r": "28 cm²",
+            "p1": "28 cm²",
+            "p2": "56 cm²",
+            "p3": "15 cm²",
+            "p4": "30 cm²",
+            "corr": "Aire = base × hauteur ÷ 2 = 7 × 8 ÷ 2 = 28 cm²."
+          }
+        }
+      ]
+    }
+  ]
+}

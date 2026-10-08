@@ -4,17 +4,9 @@
     {
       "id": "FRA-CALC-001",
       "type": "exercice",
-      "enonce": "Calculer [[terme1]] + [[terme2]] et donner une fraction simplifiée.",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "addition",
-        "termes": [
-          "1/2",
-          "1/3"
-        ]
-      },
-      "correction": "Pour additionner ces fractions, les écrire avec un dénominateur commun, additionner les numérateurs puis simplifier.",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "correction": "[[correction]]",
       "humour": [
         "Les dénominateurs ont accepté de coopérer. Merci de ne pas les brusquer.",
         "Le dénominateur commun : même les fractions finissent par trouver un terrain d'entente.",
@@ -22,184 +14,1712 @@
         "Encore une addition de fractions. Quelque part, un dénominateur cherche déjà un avocat."
       ],
       "propositions": [
-        "5/6",
-        "2/5",
-        "1/6",
-        "3/5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Calculer \\(\\frac{1}{3}\\) + \\(\\frac{1}{2}\\) et donner une fraction simplifiée.",
+            "reponse": "\\(\\frac{5}{6}\\)",
+            "correction": "1/3 + 1/2 = 5/6. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{5}{6}\\)",
+            "p2": "\\(\\frac{2}{5}\\)",
+            "p3": "\\(\\frac{1}{6}\\)",
+            "p4": "\\(\\frac{1}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer \\(\\frac{1}{4}\\) + \\(\\frac{3}{8}\\) et donner une fraction simplifiée.",
+            "reponse": "\\(\\frac{5}{8}\\)",
+            "correction": "1/4 + 3/8 = 5/8. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{5}{8}\\)",
+            "p2": "\\(\\frac{1}{3}\\)",
+            "p3": "\\(\\frac{1}{8}\\)",
+            "p4": "\\(\\frac{3}{32}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer \\(\\frac{2}{5}\\) + \\(\\frac{1}{2}\\) et donner une fraction simplifiée.",
+            "reponse": "\\(\\frac{9}{10}\\)",
+            "correction": "2/5 + 1/2 = 9/10. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{9}{10}\\)",
+            "p2": "\\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{1}{10}\\)",
+            "p4": "\\(\\frac{1}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer \\(\\frac{2}{3}\\) + \\(\\frac{1}{4}\\) et donner une fraction simplifiée.",
+            "reponse": "\\(\\frac{11}{12}\\)",
+            "correction": "2/3 + 1/4 = 11/12. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{11}{12}\\)",
+            "p2": "\\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{5}{12}\\)",
+            "p4": "\\(\\frac{1}{6}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer \\(\\frac{3}{5}\\) + \\(\\frac{1}{4}\\) et donner une fraction simplifiée.",
+            "reponse": "\\(\\frac{17}{20}\\)",
+            "correction": "3/5 + 1/4 = 17/20. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{17}{20}\\)",
+            "p2": "\\(\\frac{4}{9}\\)",
+            "p3": "\\(\\frac{7}{20}\\)",
+            "p4": "\\(\\frac{3}{20}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Calculer \\(\\frac{3}{8}\\) + \\(\\frac{1}{2}\\) et donner une fraction simplifiée.",
+            "reponse": "\\(\\frac{7}{8}\\)",
+            "correction": "3/8 + 1/2 = 7/8. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{7}{8}\\)",
+            "p2": "\\(\\frac{2}{5}\\)",
+            "p3": "\\(\\frac{1}{8}\\)",
+            "p4": "\\(\\frac{3}{16}\\)"
+          },
+          "progression": 1
+        }
       ]
     },
     {
       "id": "FRA-TROU-001",
       "type": "exercice",
-      "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + [[terme2]] = [[terme1]]",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "soustraction",
-        "termes": [
-          "5/6",
-          "1/3"
-        ]
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/2",
-        "1/3",
-        "2/3",
-        "7/6"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour retrouver le terme manquant, soustraire le terme connu du résultat, puis simplifier la fraction.",
+      "correction": "[[correction]]",
       "humour": [
         "Les fractions étaient irréconciliables. Puis quelqu'un a prononcé les mots dénominateur commun."
+      ],
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + \\(\\frac{1}{3}\\) = \\(\\frac{5}{6}\\)",
+            "reponse": "\\(\\frac{1}{2}\\)",
+            "correction": "Je calcule 5/6 − 1/3 = 1/2.",
+            "p1": "\\(\\frac{1}{2}\\)",
+            "p2": "\\(\\frac{1}{3}\\)",
+            "p3": "\\(\\frac{5}{6}\\)",
+            "p4": "\\(\\frac{7}{6}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + \\(\\frac{3}{8}\\) = \\(\\frac{5}{8}\\)",
+            "reponse": "\\(\\frac{1}{4}\\)",
+            "correction": "Je calcule 5/8 − 3/8 = 1/4.",
+            "p1": "\\(\\frac{1}{4}\\)",
+            "p2": "\\(\\frac{3}{8}\\)",
+            "p3": "\\(\\frac{5}{8}\\)",
+            "p4": "\\(1\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + \\(\\frac{1}{2}\\) = \\(\\frac{9}{10}\\)",
+            "reponse": "\\(\\frac{2}{5}\\)",
+            "correction": "Je calcule 9/10 − 1/2 = 2/5.",
+            "p1": "\\(\\frac{2}{5}\\)",
+            "p2": "\\(\\frac{1}{2}\\)",
+            "p3": "\\(\\frac{9}{10}\\)",
+            "p4": "\\(\\frac{7}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + \\(\\frac{2}{7}\\) = \\(\\frac{5}{7}\\)",
+            "reponse": "\\(\\frac{3}{7}\\)",
+            "correction": "Je calcule 5/7 − 2/7 = 3/7.",
+            "p1": "\\(\\frac{3}{7}\\)",
+            "p2": "\\(\\frac{2}{7}\\)",
+            "p3": "\\(\\frac{5}{7}\\)",
+            "p4": "\\(1\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + \\(\\frac{1}{4}\\) = \\(\\frac{7}{8}\\)",
+            "reponse": "\\(\\frac{5}{8}\\)",
+            "correction": "Je calcule 7/8 − 1/4 = 5/8.",
+            "p1": "\\(\\frac{5}{8}\\)",
+            "p2": "\\(\\frac{1}{4}\\)",
+            "p3": "\\(\\frac{7}{8}\\)",
+            "p4": "\\(\\frac{9}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée se cache dans la boîte ? □ + \\(\\frac{1}{6}\\) = \\(\\frac{5}{6}\\)",
+            "reponse": "\\(\\frac{2}{3}\\)",
+            "correction": "Je calcule 5/6 − 1/6 = 2/3.",
+            "p1": "\\(\\frac{2}{3}\\)",
+            "p2": "\\(\\frac{1}{6}\\)",
+            "p3": "\\(\\frac{5}{6}\\)",
+            "p4": "\\(1\\)"
+          },
+          "progression": 1
+        }
       ]
     },
     {
       "id": "FRA-ERREUR-001",
       "type": "comprehension",
-      "enonce": "Lina a écrit plusieurs égalités. Laquelle est incorrecte ?",
-      "reponse": {
-        "mode": "relation_fixe",
-        "moteur": "Ryacas",
-        "relation": "egalite_fausse",
-        "candidats": {
-          "1/2 + 1/3 = 2/5": {
-            "gauche": "1/2+1/3",
-            "droite": "2/5"
-          },
-          "1/2 = 3/6": {
-            "gauche": "1/2",
-            "droite": "3/6"
-          },
-          "1/3 = 2/6": {
-            "gauche": "1/3",
-            "droite": "2/6"
-          },
-          "3/6 + 2/6 = 5/6": {
-            "gauche": "3/6+2/6",
-            "droite": "5/6"
-          }
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/2 + 1/3 = 2/5",
-        "1/2 = 3/6",
-        "1/3 = 2/6",
-        "3/6 + 2/6 = 5/6"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : Lina a additionné les numérateurs et les dénominateurs dans 1/2 + 1/3 = 2/5. Je sais : pour additionner des fractions, les parts doivent avoir la même taille. J’en déduis : 1/2 = 3/6 et 1/3 = 2/6. Je calcule : 3/6 + 2/6 = 5/6, et non 2/5.",
+      "correction": "[[correction]]",
       "humour": [
         "Additionner les numérateurs directement serait tentant. Le piège aussi a trouvé l’idée excellente."
+      ],
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Lina travaille sur 1/3 + 1/2. Parmi ces égalités, laquelle est incorrecte ?",
+            "reponse": "1/3 + 1/2 = 2/5",
+            "correction": "Additionner séparément numérateurs et dénominateurs est faux : 1/3 + 1/2 = 5/6.",
+            "p1": "1/3 + 1/2 = 2/5",
+            "p2": "1/3 = 1/3",
+            "p3": "1/2 = 1/2",
+            "p4": "1/3 + 1/2 = 5/6"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Lina travaille sur 1/4 + 3/8. Parmi ces égalités, laquelle est incorrecte ?",
+            "reponse": "1/4 + 3/8 = 1/3",
+            "correction": "Additionner séparément numérateurs et dénominateurs est faux : 1/4 + 3/8 = 5/8.",
+            "p1": "1/4 + 3/8 = 1/3",
+            "p2": "1/4 = 1/4",
+            "p3": "3/8 = 3/8",
+            "p4": "1/4 + 3/8 = 5/8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Lina travaille sur 2/5 + 1/2. Parmi ces égalités, laquelle est incorrecte ?",
+            "reponse": "2/5 + 1/2 = 3/7",
+            "correction": "Additionner séparément numérateurs et dénominateurs est faux : 2/5 + 1/2 = 9/10.",
+            "p1": "2/5 + 1/2 = 3/7",
+            "p2": "2/5 = 2/5",
+            "p3": "1/2 = 1/2",
+            "p4": "2/5 + 1/2 = 9/10"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Lina travaille sur 2/3 + 1/4. Parmi ces égalités, laquelle est incorrecte ?",
+            "reponse": "2/3 + 1/4 = 3/7",
+            "correction": "Additionner séparément numérateurs et dénominateurs est faux : 2/3 + 1/4 = 11/12.",
+            "p1": "2/3 + 1/4 = 3/7",
+            "p2": "2/3 = 2/3",
+            "p3": "1/4 = 1/4",
+            "p4": "2/3 + 1/4 = 11/12"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Lina travaille sur 3/5 + 1/4. Parmi ces égalités, laquelle est incorrecte ?",
+            "reponse": "3/5 + 1/4 = 4/9",
+            "correction": "Additionner séparément numérateurs et dénominateurs est faux : 3/5 + 1/4 = 17/20.",
+            "p1": "3/5 + 1/4 = 4/9",
+            "p2": "3/5 = 3/5",
+            "p3": "1/4 = 1/4",
+            "p4": "3/5 + 1/4 = 17/20"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Lina travaille sur 3/8 + 1/2. Parmi ces égalités, laquelle est incorrecte ?",
+            "reponse": "3/8 + 1/2 = 2/5",
+            "correction": "Additionner séparément numérateurs et dénominateurs est faux : 3/8 + 1/2 = 7/8.",
+            "p1": "3/8 + 1/2 = 2/5",
+            "p2": "3/8 = 3/8",
+            "p3": "1/2 = 1/2",
+            "p4": "3/8 + 1/2 = 7/8"
+          },
+          "progression": 1
+        }
       ]
     },
     {
       "id": "FRAC_ADD_003",
       "type": "qcm",
-      "enonce": "Je pars de [[terme1]], puis j’ajoute [[terme2]]. Sur quelle fraction simplifiée est-ce que j’arrive ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "addition",
-        "termes": [
-          "1/4",
-          "1/2"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3/4",
-        "2/6",
-        "1/8",
-        "1/4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : les dénominateurs sont différents.\nJe sais : je transforme 1/2 en 2/4.\nJ’en déduis : je peux additionner les quarts.\nJe calcule : 1/4 + 2/4 = 3/4."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Je pars de \\(\\frac{1}{3}\\), puis j’ajoute \\(\\frac{1}{2}\\). Sur quelle fraction simplifiée est-ce que j’arrive ?",
+            "reponse": "\\(\\frac{5}{6}\\)",
+            "correction": "1/3 + 1/2 = 5/6. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{5}{6}\\)",
+            "p2": "\\(\\frac{2}{5}\\)",
+            "p3": "\\(\\frac{1}{6}\\)",
+            "p4": "\\(\\frac{1}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je pars de \\(\\frac{1}{4}\\), puis j’ajoute \\(\\frac{3}{8}\\). Sur quelle fraction simplifiée est-ce que j’arrive ?",
+            "reponse": "\\(\\frac{5}{8}\\)",
+            "correction": "1/4 + 3/8 = 5/8. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{5}{8}\\)",
+            "p2": "\\(\\frac{1}{3}\\)",
+            "p3": "\\(\\frac{1}{8}\\)",
+            "p4": "\\(\\frac{3}{32}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je pars de \\(\\frac{2}{5}\\), puis j’ajoute \\(\\frac{1}{2}\\). Sur quelle fraction simplifiée est-ce que j’arrive ?",
+            "reponse": "\\(\\frac{9}{10}\\)",
+            "correction": "2/5 + 1/2 = 9/10. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{9}{10}\\)",
+            "p2": "\\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{1}{10}\\)",
+            "p4": "\\(\\frac{1}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je pars de \\(\\frac{2}{3}\\), puis j’ajoute \\(\\frac{1}{4}\\). Sur quelle fraction simplifiée est-ce que j’arrive ?",
+            "reponse": "\\(\\frac{11}{12}\\)",
+            "correction": "2/3 + 1/4 = 11/12. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{11}{12}\\)",
+            "p2": "\\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{5}{12}\\)",
+            "p4": "\\(\\frac{1}{6}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je pars de \\(\\frac{3}{5}\\), puis j’ajoute \\(\\frac{1}{4}\\). Sur quelle fraction simplifiée est-ce que j’arrive ?",
+            "reponse": "\\(\\frac{17}{20}\\)",
+            "correction": "3/5 + 1/4 = 17/20. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{17}{20}\\)",
+            "p2": "\\(\\frac{4}{9}\\)",
+            "p3": "\\(\\frac{7}{20}\\)",
+            "p4": "\\(\\frac{3}{20}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je pars de \\(\\frac{3}{8}\\), puis j’ajoute \\(\\frac{1}{2}\\). Sur quelle fraction simplifiée est-ce que j’arrive ?",
+            "reponse": "\\(\\frac{7}{8}\\)",
+            "correction": "3/8 + 1/2 = 7/8. La fraction obtenue est sous forme simplifiée.",
+            "p1": "\\(\\frac{7}{8}\\)",
+            "p2": "\\(\\frac{2}{5}\\)",
+            "p3": "\\(\\frac{1}{8}\\)",
+            "p4": "\\(\\frac{3}{16}\\)"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-COMP-SOMME-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "fractions_addition",
+        "f1": "[[ill_f1]]",
+        "f2": "[[ill_f2]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Compare 1/3 + 1/2 à 1.",
+            "reponse": "<",
+            "correction": "1/3 + 1/2 = 5/6 : cette valeur est inférieure à 1.",
+            "p1": "<",
+            "p2": "=",
+            "p3": ">",
+            "ill_f1": "1/3",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Compare 1/4 + 3/8 à 1.",
+            "reponse": "<",
+            "correction": "1/4 + 3/8 = 5/8 : cette valeur est inférieure à 1.",
+            "p1": "<",
+            "p2": "=",
+            "p3": ">",
+            "ill_f1": "1/4",
+            "ill_f2": "3/8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Compare 2/5 + 1/2 à 1.",
+            "reponse": "<",
+            "correction": "2/5 + 1/2 = 9/10 : cette valeur est inférieure à 1.",
+            "p1": "<",
+            "p2": "=",
+            "p3": ">",
+            "ill_f1": "2/5",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Compare 2/3 + 1/4 à 1.",
+            "reponse": "<",
+            "correction": "2/3 + 1/4 = 11/12 : cette valeur est inférieure à 1.",
+            "p1": "<",
+            "p2": "=",
+            "p3": ">",
+            "ill_f1": "2/3",
+            "ill_f2": "1/4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Compare 3/5 + 1/4 à 1.",
+            "reponse": "<",
+            "correction": "3/5 + 1/4 = 17/20 : cette valeur est inférieure à 1.",
+            "p1": "<",
+            "p2": "=",
+            "p3": ">",
+            "ill_f1": "3/5",
+            "ill_f2": "1/4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Compare 3/8 + 1/2 à 1.",
+            "reponse": "<",
+            "correction": "3/8 + 1/2 = 7/8 : cette valeur est inférieure à 1.",
+            "p1": "<",
+            "p2": "=",
+            "p3": ">",
+            "ill_f1": "3/8",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-ETAPE-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "fractions_addition",
+        "f1": "[[ill_f1]]",
+        "f2": "[[ill_f2]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour calculer 1/4 + 1/2, quelle première transformation est correcte ?",
+            "reponse": "1/4 + 2/4",
+            "correction": "Le dénominateur 4 est un multiple de 2. On écrit 1/2 = 1/2.",
+            "p1": "1/4 + 2/4",
+            "p2": "1/4 + 1/2",
+            "p3": "1/8 + 1/8",
+            "p4": "1/4 + 1/4",
+            "ill_f1": "1/4",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 1/6 + 1/3, quelle première transformation est correcte ?",
+            "reponse": "1/6 + 2/6",
+            "correction": "Le dénominateur 6 est un multiple de 3. On écrit 1/3 = 1/3.",
+            "p1": "1/6 + 2/6",
+            "p2": "1/6 + 1/3",
+            "p3": "1/18 + 1/18",
+            "p4": "1/6 + 1/6",
+            "ill_f1": "1/6",
+            "ill_f2": "1/3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 3/8 + 1/4, quelle première transformation est correcte ?",
+            "reponse": "3/8 + 2/8",
+            "correction": "Le dénominateur 8 est un multiple de 4. On écrit 1/4 = 1/4.",
+            "p1": "3/8 + 2/8",
+            "p2": "3/8 + 1/4",
+            "p3": "3/32 + 3/32",
+            "p4": "3/8 + 3/8",
+            "ill_f1": "3/8",
+            "ill_f2": "1/4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 2/9 + 1/3, quelle première transformation est correcte ?",
+            "reponse": "2/9 + 3/9",
+            "correction": "Le dénominateur 9 est un multiple de 3. On écrit 1/3 = 1/3.",
+            "p1": "2/9 + 3/9",
+            "p2": "2/9 + 1/3",
+            "p3": "2/27 + 2/27",
+            "p4": "2/9 + 2/9",
+            "ill_f1": "2/9",
+            "ill_f2": "1/3"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 3/10 + 1/5, quelle première transformation est correcte ?",
+            "reponse": "3/10 + 2/10",
+            "correction": "Le dénominateur 10 est un multiple de 5. On écrit 1/5 = 1/5.",
+            "p1": "3/10 + 2/10",
+            "p2": "3/10 + 1/5",
+            "p3": "3/50 + 3/50",
+            "p4": "3/10 + 3/10",
+            "ill_f1": "3/10",
+            "ill_f2": "1/5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 5/12 + 1/6, quelle première transformation est correcte ?",
+            "reponse": "5/12 + 2/12",
+            "correction": "Le dénominateur 12 est un multiple de 6. On écrit 1/6 = 1/6.",
+            "p1": "5/12 + 2/12",
+            "p2": "5/12 + 1/6",
+            "p3": "5/72 + 5/72",
+            "p4": "5/12 + 5/12",
+            "ill_f1": "5/12",
+            "ill_f2": "1/6"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-REPRESENTATION-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "fractions_addition",
+        "f1": "[[ill_f1]]",
+        "f2": "[[ill_f2]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle addition décrivent les deux bandes ci-dessous ?",
+            "reponse": "1/3 + 1/2",
+            "correction": "La première bande représente 1/3 et la seconde 1/2.",
+            "p1": "1/3 + 1/2",
+            "p2": "1/2 + 1/2",
+            "p3": "1/3 + 1/3",
+            "p4": "5/6 + 1/2",
+            "ill_f1": "1/3",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle somme de fractions est illustrée par ces deux bandes ?",
+            "reponse": "1/4 + 3/8",
+            "correction": "La première bande représente 1/4 et la seconde 3/8.",
+            "p1": "1/4 + 3/8",
+            "p2": "3/8 + 3/8",
+            "p3": "1/4 + 1/4",
+            "p4": "5/8 + 3/8",
+            "ill_f1": "1/4",
+            "ill_f2": "3/8"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À quelle addition correspondent les deux bandes ?",
+            "reponse": "2/5 + 1/2",
+            "correction": "La première bande représente 2/5 et la seconde 1/2.",
+            "p1": "2/5 + 1/2",
+            "p2": "1/2 + 1/2",
+            "p3": "2/5 + 2/5",
+            "p4": "9/10 + 1/2",
+            "ill_f1": "2/5",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Lis les deux bandes : quelle addition représentent-elles ?",
+            "reponse": "2/3 + 1/4",
+            "correction": "La première bande représente 2/3 et la seconde 1/4.",
+            "p1": "2/3 + 1/4",
+            "p2": "1/4 + 1/4",
+            "p3": "2/3 + 2/3",
+            "p4": "11/12 + 1/4",
+            "ill_f1": "2/3",
+            "ill_f2": "1/4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle écriture additive correspond à ces deux bandes ?",
+            "reponse": "3/5 + 1/4",
+            "correction": "La première bande représente 3/5 et la seconde 1/4.",
+            "p1": "3/5 + 1/4",
+            "p2": "1/4 + 1/4",
+            "p3": "3/5 + 3/5",
+            "p4": "17/20 + 1/4",
+            "ill_f1": "3/5",
+            "ill_f2": "1/4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle addition peut-on lire sur les deux bandes ?",
+            "reponse": "3/8 + 1/2",
+            "correction": "La première bande représente 3/8 et la seconde 1/2.",
+            "p1": "3/8 + 1/2",
+            "p2": "1/2 + 1/2",
+            "p3": "3/8 + 3/8",
+            "p4": "7/8 + 1/2",
+            "ill_f1": "3/8",
+            "ill_f2": "1/2"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRA-VAR-ADD-MEME-DEN-001",
       "type": "qcm",
-      "enonce": "Calcule [[f1]] + [[f2]] et donne le résultat sous forme simplifiée.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[somme]]"
-      },
+      "enonce": "Calcule [[f1_affichage]] + [[f2_affichage]] et donne le résultat sous forme simplifiée.",
+      "reponse": "[[somme]]",
       "propositions": [
         "[[somme]]",
         "[[d1]]",
         "[[d2]]",
         "[[d3]]"
       ],
-      "correction": "Les dénominateurs sont déjà identiques.\nJ’additionne les numérateurs et je garde le même dénominateur.\n[[f1]] + [[f2]] = [[somme]].",
+      "correction": "Les dénominateurs sont déjà identiques.\nJ’additionne les numérateurs et je garde le même dénominateur.\n[[f1_affichage]] + [[f2_affichage]] = [[somme]].",
       "variantes": [
         {
           "parametres": {
+            "f1": "1/4",
+            "f2": "1/4",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{3}{4}\\)",
+            "somme": "\\(\\frac{1}{2}\\)",
+            "f1_affichage": "\\(\\frac{1}{4}\\)",
+            "f2_affichage": "\\(\\frac{1}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
             "f1": "1/5",
+            "f2": "1/5",
+            "d1": "\\(\\frac{1}{5}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{3}{5}\\)",
+            "somme": "\\(\\frac{2}{5}\\)",
+            "f1_affichage": "\\(\\frac{1}{5}\\)",
+            "f2_affichage": "\\(\\frac{1}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
             "f2": "2/5",
-            "d1": "3/10",
-            "d2": "1/5",
-            "d3": "8/5"
+            "d1": "\\(\\frac{2}{5}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(1\\)",
+            "somme": "\\(\\frac{4}{5}\\)",
+            "f1_affichage": "\\(\\frac{2}{5}\\)",
+            "f2_affichage": "\\(\\frac{2}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
+            "f2": "4/5",
+            "d1": "\\(\\frac{3}{5}\\)",
+            "d2": "\\(\\frac{2}{5}\\)",
+            "d3": "\\(\\frac{8}{5}\\)",
+            "somme": "\\(\\frac{6}{5}\\)",
+            "f1_affichage": "\\(\\frac{2}{5}\\)",
+            "f2_affichage": "\\(\\frac{4}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "4/5",
+            "f2": "4/5",
+            "d1": "\\(\\frac{4}{5}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{16}{5}\\)",
+            "somme": "\\(\\frac{8}{5}\\)",
+            "f1_affichage": "\\(\\frac{4}{5}\\)",
+            "f2_affichage": "\\(\\frac{4}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/6",
+            "f2": "5/6",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(\\frac{2}{3}\\)",
+            "d3": "\\(\\frac{5}{6}\\)",
+            "somme": "\\(1\\)",
+            "f1_affichage": "\\(\\frac{1}{6}\\)",
+            "f2_affichage": "\\(\\frac{5}{6}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/7",
+            "f2": "2/7",
+            "d1": "\\(\\frac{3}{14}\\)",
+            "d2": "\\(\\frac{1}{7}\\)",
+            "d3": "\\(\\frac{2}{7}\\)",
+            "somme": "\\(\\frac{3}{7}\\)",
+            "f1_affichage": "\\(\\frac{1}{7}\\)",
+            "f2_affichage": "\\(\\frac{2}{7}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/7",
+            "f2": "4/7",
+            "d1": "\\(\\frac{5}{14}\\)",
+            "d2": "\\(\\frac{3}{7}\\)",
+            "d3": "\\(\\frac{4}{7}\\)",
+            "somme": "\\(\\frac{5}{7}\\)",
+            "f1_affichage": "\\(\\frac{1}{7}\\)",
+            "f2_affichage": "\\(\\frac{4}{7}\\)"
           },
           "progression": 1
         },
         {
           "parametres": {
             "f1": "2/7",
-            "f2": "3/7",
-            "d1": "5/14",
-            "d2": "1/7",
-            "d3": "12/7"
+            "f2": "4/7",
+            "d1": "\\(\\frac{3}{7}\\)",
+            "d2": "\\(\\frac{2}{7}\\)",
+            "d3": "\\(\\frac{8}{7}\\)",
+            "somme": "\\(\\frac{6}{7}\\)",
+            "f1_affichage": "\\(\\frac{2}{7}\\)",
+            "f2_affichage": "\\(\\frac{4}{7}\\)"
           },
           "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/7",
+            "f2": "5/7",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(\\frac{3}{7}\\)",
+            "d3": "\\(\\frac{10}{7}\\)",
+            "somme": "\\(1\\)",
+            "f1_affichage": "\\(\\frac{2}{7}\\)",
+            "f2_affichage": "\\(\\frac{5}{7}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/7",
+            "f2": "5/7",
+            "d1": "\\(\\frac{4}{7}\\)",
+            "d2": "\\(\\frac{2}{7}\\)",
+            "d3": "\\(\\frac{15}{7}\\)",
+            "somme": "\\(\\frac{8}{7}\\)",
+            "f1_affichage": "\\(\\frac{3}{7}\\)",
+            "f2_affichage": "\\(\\frac{5}{7}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "4/7",
+            "f2": "5/7",
+            "d1": "\\(\\frac{9}{14}\\)",
+            "d2": "\\(\\frac{1}{7}\\)",
+            "d3": "\\(\\frac{20}{7}\\)",
+            "somme": "\\(\\frac{9}{7}\\)",
+            "f1_affichage": "\\(\\frac{4}{7}\\)",
+            "f2_affichage": "\\(\\frac{5}{7}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "5/7",
+            "f2": "5/7",
+            "d1": "\\(\\frac{5}{7}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{25}{7}\\)",
+            "somme": "\\(\\frac{10}{7}\\)",
+            "f1_affichage": "\\(\\frac{5}{7}\\)",
+            "f2_affichage": "\\(\\frac{5}{7}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/8",
+            "f2": "1/8",
+            "d1": "\\(\\frac{1}{8}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{3}{8}\\)",
+            "somme": "\\(\\frac{1}{4}\\)",
+            "f1_affichage": "\\(\\frac{1}{8}\\)",
+            "f2_affichage": "\\(\\frac{1}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/8",
+            "f2": "3/8",
+            "d1": "\\(\\frac{3}{8}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{9}{8}\\)",
+            "somme": "\\(\\frac{3}{4}\\)",
+            "f1_affichage": "\\(\\frac{3}{8}\\)",
+            "f2_affichage": "\\(\\frac{3}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/8",
+            "f2": "7/8",
+            "d1": "\\(\\frac{5}{8}\\)",
+            "d2": "\\(\\frac{1}{2}\\)",
+            "d3": "\\(\\frac{21}{8}\\)",
+            "somme": "\\(\\frac{5}{4}\\)",
+            "f1_affichage": "\\(\\frac{3}{8}\\)",
+            "f2_affichage": "\\(\\frac{7}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "7/8",
+            "f2": "7/8",
+            "d1": "\\(\\frac{7}{8}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{49}{8}\\)",
+            "somme": "\\(\\frac{7}{4}\\)",
+            "f1_affichage": "\\(\\frac{7}{8}\\)",
+            "f2_affichage": "\\(\\frac{7}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/9",
+            "f2": "1/9",
+            "d1": "\\(\\frac{1}{9}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{1}{3}\\)",
+            "somme": "\\(\\frac{2}{9}\\)",
+            "f1_affichage": "\\(\\frac{1}{9}\\)",
+            "f2_affichage": "\\(\\frac{1}{9}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "4/9",
+            "f2": "5/9",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(\\frac{1}{9}\\)",
+            "d3": "\\(\\frac{20}{9}\\)",
+            "somme": "\\(1\\)",
+            "f1_affichage": "\\(\\frac{4}{9}\\)",
+            "f2_affichage": "\\(\\frac{5}{9}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/10",
+            "f2": "3/10",
+            "d1": "\\(\\frac{1}{5}\\)",
+            "d2": "\\(\\frac{3}{10}\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "somme": "\\(\\frac{2}{5}\\)",
+            "f1_affichage": "\\(\\frac{1}{10}\\)",
+            "f2_affichage": "\\(\\frac{3}{10}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/11",
+            "f2": "2/11",
+            "d1": "\\(\\frac{3}{22}\\)",
+            "d2": "\\(\\frac{1}{11}\\)",
+            "d3": "\\(\\frac{2}{11}\\)",
+            "somme": "\\(\\frac{3}{11}\\)",
+            "f1_affichage": "\\(\\frac{1}{11}\\)",
+            "f2_affichage": "\\(\\frac{2}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/11",
+            "f2": "7/11",
+            "d1": "\\(\\frac{4}{11}\\)",
+            "d2": "\\(\\frac{6}{11}\\)",
+            "d3": "\\(\\frac{7}{11}\\)",
+            "somme": "\\(\\frac{8}{11}\\)",
+            "f1_affichage": "\\(\\frac{1}{11}\\)",
+            "f2_affichage": "\\(\\frac{7}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "4/11",
+            "f2": "6/11",
+            "d1": "\\(\\frac{5}{11}\\)",
+            "d2": "\\(\\frac{2}{11}\\)",
+            "d3": "\\(\\frac{24}{11}\\)",
+            "somme": "\\(\\frac{10}{11}\\)",
+            "f1_affichage": "\\(\\frac{4}{11}\\)",
+            "f2_affichage": "\\(\\frac{6}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "6/11",
+            "f2": "6/11",
+            "d1": "\\(\\frac{6}{11}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{36}{11}\\)",
+            "somme": "\\(\\frac{12}{11}\\)",
+            "f1_affichage": "\\(\\frac{6}{11}\\)",
+            "f2_affichage": "\\(\\frac{6}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "7/11",
+            "f2": "8/11",
+            "d1": "\\(\\frac{15}{22}\\)",
+            "d2": "\\(\\frac{1}{11}\\)",
+            "d3": "\\(\\frac{56}{11}\\)",
+            "somme": "\\(\\frac{15}{11}\\)",
+            "f1_affichage": "\\(\\frac{7}{11}\\)",
+            "f2_affichage": "\\(\\frac{8}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/12",
+            "f2": "1/12",
+            "d1": "\\(\\frac{1}{12}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{1}{4}\\)",
+            "somme": "\\(\\frac{1}{6}\\)",
+            "f1_affichage": "\\(\\frac{1}{12}\\)",
+            "f2_affichage": "\\(\\frac{1}{12}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/13",
+            "f2": "2/13",
+            "d1": "\\(\\frac{3}{26}\\)",
+            "d2": "\\(\\frac{1}{13}\\)",
+            "d3": "\\(\\frac{2}{13}\\)",
+            "somme": "\\(\\frac{3}{13}\\)",
+            "f1_affichage": "\\(\\frac{1}{13}\\)",
+            "f2_affichage": "\\(\\frac{2}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/13",
+            "f2": "7/13",
+            "d1": "\\(\\frac{4}{13}\\)",
+            "d2": "\\(\\frac{6}{13}\\)",
+            "d3": "\\(\\frac{7}{13}\\)",
+            "somme": "\\(\\frac{8}{13}\\)",
+            "f1_affichage": "\\(\\frac{1}{13}\\)",
+            "f2_affichage": "\\(\\frac{7}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "4/13",
+            "f2": "6/13",
+            "d1": "\\(\\frac{5}{13}\\)",
+            "d2": "\\(\\frac{2}{13}\\)",
+            "d3": "\\(\\frac{24}{13}\\)",
+            "somme": "\\(\\frac{10}{13}\\)",
+            "f1_affichage": "\\(\\frac{4}{13}\\)",
+            "f2_affichage": "\\(\\frac{6}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "5/13",
+            "f2": "7/13",
+            "d1": "\\(\\frac{6}{13}\\)",
+            "d2": "\\(\\frac{2}{13}\\)",
+            "d3": "\\(\\frac{35}{13}\\)",
+            "somme": "\\(\\frac{12}{13}\\)",
+            "f1_affichage": "\\(\\frac{5}{13}\\)",
+            "f2_affichage": "\\(\\frac{7}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "5/13",
+            "f2": "9/13",
+            "d1": "\\(\\frac{7}{13}\\)",
+            "d2": "\\(\\frac{4}{13}\\)",
+            "d3": "\\(\\frac{45}{13}\\)",
+            "somme": "\\(\\frac{14}{13}\\)",
+            "f1_affichage": "\\(\\frac{5}{13}\\)",
+            "f2_affichage": "\\(\\frac{9}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "6/13",
+            "f2": "10/13",
+            "d1": "\\(\\frac{8}{13}\\)",
+            "d2": "\\(\\frac{4}{13}\\)",
+            "d3": "\\(\\frac{60}{13}\\)",
+            "somme": "\\(\\frac{16}{13}\\)",
+            "f1_affichage": "\\(\\frac{6}{13}\\)",
+            "f2_affichage": "\\(\\frac{10}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "7/13",
+            "f2": "12/13",
+            "d1": "\\(\\frac{19}{26}\\)",
+            "d2": "\\(\\frac{5}{13}\\)",
+            "d3": "\\(\\frac{84}{13}\\)",
+            "somme": "\\(\\frac{19}{13}\\)",
+            "f1_affichage": "\\(\\frac{7}{13}\\)",
+            "f2_affichage": "\\(\\frac{12}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "12/13",
+            "f2": "12/13",
+            "d1": "\\(\\frac{12}{13}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{144}{13}\\)",
+            "somme": "\\(\\frac{24}{13}\\)",
+            "f1_affichage": "\\(\\frac{12}{13}\\)",
+            "f2_affichage": "\\(\\frac{12}{13}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/14",
+            "f2": "1/14",
+            "d1": "\\(\\frac{1}{14}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{3}{14}\\)",
+            "somme": "\\(\\frac{1}{7}\\)",
+            "f1_affichage": "\\(\\frac{1}{14}\\)",
+            "f2_affichage": "\\(\\frac{1}{14}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "2/15",
+            "f2": "8/15",
+            "d1": "\\(\\frac{1}{3}\\)",
+            "d2": "\\(\\frac{2}{5}\\)",
+            "d3": "\\(\\frac{16}{15}\\)",
+            "somme": "\\(\\frac{2}{3}\\)",
+            "f1_affichage": "\\(\\frac{2}{15}\\)",
+            "f2_affichage": "\\(\\frac{8}{15}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "1/16",
+            "f2": "7/16",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(\\frac{3}{8}\\)",
+            "d3": "\\(\\frac{7}{16}\\)",
+            "somme": "\\(\\frac{1}{2}\\)",
+            "f1_affichage": "\\(\\frac{1}{16}\\)",
+            "f2_affichage": "\\(\\frac{7}{16}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "13/16",
+            "f2": "15/16",
+            "d1": "\\(\\frac{7}{8}\\)",
+            "d2": "\\(\\frac{1}{8}\\)",
+            "d3": "\\(\\frac{195}{16}\\)",
+            "somme": "\\(\\frac{7}{4}\\)",
+            "f1_affichage": "\\(\\frac{13}{16}\\)",
+            "f2_affichage": "\\(\\frac{15}{16}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "5/17",
+            "f2": "6/17",
+            "d1": "\\(\\frac{11}{34}\\)",
+            "d2": "\\(\\frac{1}{17}\\)",
+            "d3": "\\(\\frac{30}{17}\\)",
+            "somme": "\\(\\frac{11}{17}\\)",
+            "f1_affichage": "\\(\\frac{5}{17}\\)",
+            "f2_affichage": "\\(\\frac{6}{17}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "4/17",
+            "f2": "12/17",
+            "d1": "\\(\\frac{8}{17}\\)",
+            "d2": "\\(\\frac{48}{17}\\)",
+            "d3": "\\(1\\)",
+            "somme": "\\(\\frac{16}{17}\\)",
+            "f1_affichage": "\\(\\frac{4}{17}\\)",
+            "f2_affichage": "\\(\\frac{12}{17}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "6/17",
+            "f2": "14/17",
+            "d1": "\\(\\frac{10}{17}\\)",
+            "d2": "\\(\\frac{8}{17}\\)",
+            "d3": "\\(\\frac{84}{17}\\)",
+            "somme": "\\(\\frac{20}{17}\\)",
+            "f1_affichage": "\\(\\frac{6}{17}\\)",
+            "f2_affichage": "\\(\\frac{14}{17}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "10/17",
+            "f2": "16/17",
+            "d1": "\\(\\frac{13}{17}\\)",
+            "d2": "\\(\\frac{6}{17}\\)",
+            "d3": "\\(\\frac{160}{17}\\)",
+            "somme": "\\(\\frac{26}{17}\\)",
+            "f1_affichage": "\\(\\frac{10}{17}\\)",
+            "f2_affichage": "\\(\\frac{16}{17}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "11/18",
+            "f2": "11/18",
+            "d1": "\\(\\frac{11}{18}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{121}{18}\\)",
+            "somme": "\\(\\frac{11}{9}\\)",
+            "f1_affichage": "\\(\\frac{11}{18}\\)",
+            "f2_affichage": "\\(\\frac{11}{18}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "5/19",
+            "f2": "5/19",
+            "d1": "\\(\\frac{5}{19}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{25}{19}\\)",
+            "somme": "\\(\\frac{10}{19}\\)",
+            "f1_affichage": "\\(\\frac{5}{19}\\)",
+            "f2_affichage": "\\(\\frac{5}{19}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "6/19",
+            "f2": "9/19",
+            "d1": "\\(\\frac{15}{38}\\)",
+            "d2": "\\(\\frac{3}{19}\\)",
+            "d3": "\\(\\frac{54}{19}\\)",
+            "somme": "\\(\\frac{15}{19}\\)",
+            "f1_affichage": "\\(\\frac{6}{19}\\)",
+            "f2_affichage": "\\(\\frac{9}{19}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "4/19",
+            "f2": "15/19",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(\\frac{11}{19}\\)",
+            "d3": "\\(\\frac{60}{19}\\)",
+            "somme": "\\(1\\)",
+            "f1_affichage": "\\(\\frac{4}{19}\\)",
+            "f2_affichage": "\\(\\frac{15}{19}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "5/19",
+            "f2": "18/19",
+            "d1": "\\(\\frac{23}{38}\\)",
+            "d2": "\\(\\frac{13}{19}\\)",
+            "d3": "\\(\\frac{90}{19}\\)",
+            "somme": "\\(\\frac{23}{19}\\)",
+            "f1_affichage": "\\(\\frac{5}{19}\\)",
+            "f2_affichage": "\\(\\frac{18}{19}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "13/19",
+            "f2": "14/19",
+            "d1": "\\(\\frac{27}{38}\\)",
+            "d2": "\\(\\frac{1}{19}\\)",
+            "d3": "\\(\\frac{182}{19}\\)",
+            "somme": "\\(\\frac{27}{19}\\)",
+            "f1_affichage": "\\(\\frac{13}{19}\\)",
+            "f2_affichage": "\\(\\frac{14}{19}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "3/20",
+            "f2": "7/20",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(\\frac{1}{5}\\)",
+            "d3": "\\(\\frac{21}{20}\\)",
+            "somme": "\\(\\frac{1}{2}\\)",
+            "f1_affichage": "\\(\\frac{3}{20}\\)",
+            "f2_affichage": "\\(\\frac{7}{20}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "19/20",
+            "f2": "19/20",
+            "d1": "\\(\\frac{19}{20}\\)",
+            "d2": "\\(0\\)",
+            "d3": "\\(\\frac{361}{20}\\)",
+            "somme": "\\(\\frac{19}{10}\\)",
+            "f1_affichage": "\\(\\frac{19}{20}\\)",
+            "f2_affichage": "\\(\\frac{19}{20}\\)"
+          },
+          "progression": 3
         }
       ],
-      "calculs": {
-        "somme": {
-          "moteur": "Ryacas",
-          "expression": "[[f1]]+[[f2]]"
-        }
-      },
-      "presentation": {
-        "math": [
-          "f1",
-          "f2",
-          "somme",
-          "d1",
-          "d2",
-          "d3"
-        ]
+      "illustration": {
+        "id": "fractions_addition",
+        "f1": "[[f1]]",
+        "f2": "[[f2]]"
       }
     },
     {
       "id": "FRA-VAR-ADD-001",
       "type": "qcm",
-      "enonce": "Calcule [[f1]] + [[f2]] et donne le résultat sous forme simplifiée.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[somme]]"
-      },
+      "enonce": "Calcule [[f1_affichage]] + [[f2_affichage]] et donne le résultat sous forme simplifiée.",
+      "reponse": "[[somme]]",
       "propositions": [
         "[[somme]]",
         "[[d1]]",
         "[[d2]]",
         "[[d3]]"
       ],
-      "correction": "Je cherche un dénominateur commun.\nMultiples de [[den1]] → [[multiples1]], ...\nMultiples de [[den2]] → [[multiples2]], ...\nLe premier multiple commun est [[commun]].\n\nJe transforme les fractions.\n[[f1]] → [[equiv1]] en multipliant numérateur et dénominateur par [[facteur1]].\n[[f2]] → [[equiv2]] en multipliant numérateur et dénominateur par [[facteur2]].\n\nJe calcule.\n[[equiv1]] + [[equiv2]] = [[somme]].",
+      "correction": "Je regarde d’abord les dénominateurs [[den1]] et [[den2]].\nSi l’un est un multiple de l’autre, je prends le plus grand. Sinon, je prends simplement leur produit.\nIci, je choisis [[commun]] comme dénominateur commun.\n\nJe transforme les fractions.\n[[f1_affichage]] → [[equiv1]] en multipliant numérateur et dénominateur par [[facteur1]].\n[[f2_affichage]] → [[equiv2]] en multipliant numérateur et dénominateur par [[facteur2]].\n\nJe calcule.\n[[equiv1]] + [[equiv2]] = [[somme]].",
       "variantes": [
         {
           "parametres": {
             "f1": "1/4",
             "f2": "3/8",
-            "d1": "1/3",
-            "d2": "1/8",
-            "d3": "1/2"
+            "d1": "\\(\\frac{1}{3}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "den1": "4",
+            "den2": "8",
+            "commun": "8",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "2",
+            "num2": "3",
+            "equiv1": "2/8",
+            "equiv2": "3/8",
+            "somme": "\\(\\frac{5}{8}\\)",
+            "f1_affichage": "\\(\\frac{1}{4}\\)",
+            "f2_affichage": "\\(\\frac{3}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/4",
+            "f2": "5/8",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{3}{4}\\)",
+            "den1": "4",
+            "den2": "8",
+            "commun": "8",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "2",
+            "num2": "5",
+            "equiv1": "2/8",
+            "equiv2": "5/8",
+            "somme": "\\(\\frac{7}{8}\\)",
+            "f1_affichage": "\\(\\frac{1}{4}\\)",
+            "f2_affichage": "\\(\\frac{5}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "5/6",
+            "f2": "1/18",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{1}{3}\\)",
+            "den1": "6",
+            "den2": "18",
+            "commun": "18",
+            "facteur1": "3",
+            "facteur2": "1",
+            "num1": "15",
+            "num2": "1",
+            "equiv1": "15/18",
+            "equiv2": "1/18",
+            "somme": "\\(\\frac{8}{9}\\)",
+            "f1_affichage": "\\(\\frac{5}{6}\\)",
+            "f2_affichage": "\\(\\frac{1}{18}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/4",
+            "f2": "7/12",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(2\\)",
+            "d3": "\\(\\frac{2}{3}\\)",
+            "den1": "4",
+            "den2": "12",
+            "commun": "12",
+            "facteur1": "3",
+            "facteur2": "1",
+            "num1": "3",
+            "num2": "7",
+            "equiv1": "3/12",
+            "equiv2": "7/12",
+            "somme": "\\(\\frac{5}{6}\\)",
+            "f1_affichage": "\\(\\frac{1}{4}\\)",
+            "f2_affichage": "\\(\\frac{7}{12}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/6",
+            "f2": "7/12",
+            "d1": "\\(\\frac{4}{9}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{2}{3}\\)",
+            "den1": "6",
+            "den2": "12",
+            "commun": "12",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "2",
+            "num2": "7",
+            "equiv1": "2/12",
+            "equiv2": "7/12",
+            "somme": "\\(\\frac{3}{4}\\)",
+            "f1_affichage": "\\(\\frac{1}{6}\\)",
+            "f2_affichage": "\\(\\frac{7}{12}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/3",
+            "f2": "7/15",
+            "d1": "\\(\\frac{4}{9}\\)",
+            "d2": "\\(\\frac{8}{3}\\)",
+            "d3": "\\(\\frac{8}{15}\\)",
+            "den1": "3",
+            "den2": "15",
+            "commun": "15",
+            "facteur1": "5",
+            "facteur2": "1",
+            "num1": "5",
+            "num2": "7",
+            "equiv1": "5/15",
+            "equiv2": "7/15",
+            "somme": "\\(\\frac{4}{5}\\)",
+            "f1_affichage": "\\(\\frac{1}{3}\\)",
+            "f2_affichage": "\\(\\frac{7}{15}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/5",
+            "f2": "1/15",
+            "d1": "\\(\\frac{1}{5}\\)",
+            "d2": "\\(\\frac{4}{5}\\)",
+            "d3": "\\(\\frac{4}{15}\\)",
+            "den1": "5",
+            "den2": "15",
+            "commun": "15",
+            "facteur1": "3",
+            "facteur2": "1",
+            "num1": "9",
+            "num2": "1",
+            "equiv1": "9/15",
+            "equiv2": "1/15",
+            "somme": "\\(\\frac{2}{3}\\)",
+            "f1_affichage": "\\(\\frac{3}{5}\\)",
+            "f2_affichage": "\\(\\frac{1}{15}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/2",
+            "f2": "3/16",
+            "d1": "\\(\\frac{2}{9}\\)",
+            "d2": "\\(2\\)",
+            "d3": "\\(\\frac{1}{4}\\)",
+            "den1": "2",
+            "den2": "16",
+            "commun": "16",
+            "facteur1": "8",
+            "facteur2": "1",
+            "num1": "8",
+            "num2": "3",
+            "equiv1": "8/16",
+            "equiv2": "3/16",
+            "somme": "\\(\\frac{11}{16}\\)",
+            "f1_affichage": "\\(\\frac{1}{2}\\)",
+            "f2_affichage": "\\(\\frac{3}{16}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/6",
+            "f2": "1/12",
+            "d1": "\\(\\frac{1}{9}\\)",
+            "d2": "\\(\\frac{1}{3}\\)",
+            "d3": "\\(\\frac{1}{6}\\)",
+            "den1": "6",
+            "den2": "12",
+            "commun": "12",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "2",
+            "num2": "1",
+            "equiv1": "2/12",
+            "equiv2": "1/12",
+            "somme": "\\(\\frac{1}{4}\\)",
+            "f1_affichage": "\\(\\frac{1}{6}\\)",
+            "f2_affichage": "\\(\\frac{1}{12}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
+            "f2": "1/15",
+            "d1": "\\(\\frac{3}{20}\\)",
+            "d2": "\\(\\frac{3}{5}\\)",
+            "d3": "\\(\\frac{1}{5}\\)",
+            "den1": "5",
+            "den2": "15",
+            "commun": "15",
+            "facteur1": "3",
+            "facteur2": "1",
+            "num1": "6",
+            "num2": "1",
+            "equiv1": "6/15",
+            "equiv2": "1/15",
+            "somme": "\\(\\frac{7}{15}\\)",
+            "f1_affichage": "\\(\\frac{2}{5}\\)",
+            "f2_affichage": "\\(\\frac{1}{15}\\)"
           },
           "progression": 1
         },
         {
           "parametres": {
             "f1": "2/3",
-            "f2": "1/6",
-            "d1": "1/3",
-            "d2": "1/6",
-            "d3": "11/6"
+            "f2": "13/18",
+            "d1": "\\(\\frac{5}{7}\\)",
+            "d2": "\\(5\\)",
+            "d3": "\\(\\frac{5}{6}\\)",
+            "den1": "3",
+            "den2": "18",
+            "commun": "18",
+            "facteur1": "6",
+            "facteur2": "1",
+            "num1": "12",
+            "num2": "13",
+            "equiv1": "12/18",
+            "equiv2": "13/18",
+            "somme": "\\(\\frac{25}{18}\\)",
+            "f1_affichage": "\\(\\frac{2}{3}\\)",
+            "f2_affichage": "\\(\\frac{13}{18}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "3/4",
+            "f2": "3/8",
+            "d1": "\\(\\frac{1}{2}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{3}{4}\\)",
+            "den1": "4",
+            "den2": "8",
+            "commun": "8",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "6",
+            "num2": "3",
+            "equiv1": "6/8",
+            "equiv2": "3/8",
+            "somme": "\\(\\frac{9}{8}\\)",
+            "f1_affichage": "\\(\\frac{3}{4}\\)",
+            "f2_affichage": "\\(\\frac{3}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/2",
+            "f2": "7/10",
+            "d1": "\\(\\frac{2}{3}\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(\\frac{4}{5}\\)",
+            "den1": "2",
+            "den2": "10",
+            "commun": "10",
+            "facteur1": "5",
+            "facteur2": "1",
+            "num1": "5",
+            "num2": "7",
+            "equiv1": "5/10",
+            "equiv2": "7/10",
+            "somme": "\\(\\frac{6}{5}\\)",
+            "f1_affichage": "\\(\\frac{1}{2}\\)",
+            "f2_affichage": "\\(\\frac{7}{10}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/3",
+            "f2": "11/18",
+            "d1": "\\(\\frac{13}{21}\\)",
+            "d2": "\\(\\frac{13}{3}\\)",
+            "d3": "\\(\\frac{13}{18}\\)",
+            "den1": "3",
+            "den2": "18",
+            "commun": "18",
+            "facteur1": "6",
+            "facteur2": "1",
+            "num1": "12",
+            "num2": "11",
+            "equiv1": "12/18",
+            "equiv2": "11/18",
+            "somme": "\\(\\frac{23}{18}\\)",
+            "f1_affichage": "\\(\\frac{2}{3}\\)",
+            "f2_affichage": "\\(\\frac{11}{18}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/5",
+            "f2": "9/10",
+            "d1": "\\(\\frac{2}{3}\\)",
+            "d2": "\\(2\\)",
+            "d3": "\\(1\\)",
+            "den1": "5",
+            "den2": "10",
+            "commun": "10",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "2",
+            "num2": "9",
+            "equiv1": "2/10",
+            "equiv2": "9/10",
+            "somme": "\\(\\frac{11}{10}\\)",
+            "f1_affichage": "\\(\\frac{1}{5}\\)",
+            "f2_affichage": "\\(\\frac{9}{10}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "1/3",
+            "f2": "2/15",
+            "d1": "\\(\\frac{1}{6}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{1}{5}\\)",
+            "den1": "3",
+            "den2": "15",
+            "commun": "15",
+            "facteur1": "5",
+            "facteur2": "1",
+            "num1": "5",
+            "num2": "2",
+            "equiv1": "5/15",
+            "equiv2": "2/15",
+            "somme": "\\(\\frac{7}{15}\\)",
+            "f1_affichage": "\\(\\frac{1}{3}\\)",
+            "f2_affichage": "\\(\\frac{2}{15}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
+            "f2": "3/10",
+            "d1": "\\(\\frac{1}{3}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "den1": "5",
+            "den2": "10",
+            "commun": "10",
+            "facteur1": "2",
+            "facteur2": "1",
+            "num1": "4",
+            "num2": "3",
+            "equiv1": "4/10",
+            "equiv2": "3/10",
+            "somme": "\\(\\frac{7}{10}\\)",
+            "f1_affichage": "\\(\\frac{2}{5}\\)",
+            "f2_affichage": "\\(\\frac{3}{10}\\)"
           },
           "progression": 1
         },
@@ -207,206 +1727,733 @@
           "parametres": {
             "f1": "1/2",
             "f2": "1/3",
-            "d1": "2/5",
-            "d2": "1/3",
-            "d3": "1"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "f1": "3/4",
-            "f2": "2/5",
-            "d1": "5/9",
-            "d2": "1/4",
-            "d3": "1"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "f1": "5/6",
-            "f2": "1/4",
-            "d1": "3/5",
-            "d2": "1/4",
-            "d3": "2"
+            "d1": "\\(\\frac{2}{5}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{2}{3}\\)",
+            "den1": "2",
+            "den2": "3",
+            "commun": "6",
+            "facteur1": "3",
+            "facteur2": "2",
+            "num1": "3",
+            "num2": "2",
+            "equiv1": "3/6",
+            "equiv2": "2/6",
+            "somme": "\\(\\frac{5}{6}\\)",
+            "f1_affichage": "\\(\\frac{1}{2}\\)",
+            "f2_affichage": "\\(\\frac{1}{3}\\)"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "2/9",
-            "f2": "5/6",
-            "d1": "7/15",
-            "d2": "7/54",
-            "d3": "1"
+            "f1": "5/7",
+            "f2": "1/10",
+            "d1": "\\(\\frac{6}{17}\\)",
+            "d2": "\\(\\frac{6}{7}\\)",
+            "d3": "\\(\\frac{3}{5}\\)",
+            "den1": "7",
+            "den2": "10",
+            "commun": "70",
+            "facteur1": "10",
+            "facteur2": "7",
+            "num1": "50",
+            "num2": "7",
+            "equiv1": "50/70",
+            "equiv2": "7/70",
+            "somme": "\\(\\frac{57}{70}\\)",
+            "f1_affichage": "\\(\\frac{5}{7}\\)",
+            "f2_affichage": "\\(\\frac{1}{10}\\)"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "3/8",
-            "f2": "7/12",
-            "d1": "1/2",
-            "d2": "5/48",
-            "d3": "1"
+            "f1": "2/7",
+            "f2": "2/9",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(\\frac{4}{7}\\)",
+            "d3": "\\(\\frac{4}{9}\\)",
+            "den1": "7",
+            "den2": "9",
+            "commun": "63",
+            "facteur1": "9",
+            "facteur2": "7",
+            "num1": "18",
+            "num2": "14",
+            "equiv1": "18/63",
+            "equiv2": "14/63",
+            "somme": "\\(\\frac{32}{63}\\)",
+            "f1_affichage": "\\(\\frac{2}{7}\\)",
+            "f2_affichage": "\\(\\frac{2}{9}\\)"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "4/5",
+            "f1": "2/7",
+            "f2": "1/10",
+            "d1": "\\(\\frac{3}{17}\\)",
+            "d2": "\\(\\frac{3}{7}\\)",
+            "d3": "\\(\\frac{3}{10}\\)",
+            "den1": "7",
+            "den2": "10",
+            "commun": "70",
+            "facteur1": "10",
+            "facteur2": "7",
+            "num1": "20",
+            "num2": "7",
+            "equiv1": "20/70",
+            "equiv2": "7/70",
+            "somme": "\\(\\frac{27}{70}\\)",
+            "f1_affichage": "\\(\\frac{2}{7}\\)",
+            "f2_affichage": "\\(\\frac{1}{10}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "2/7",
+            "f2": "5/12",
+            "d1": "\\(\\frac{7}{19}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{7}{12}\\)",
+            "den1": "7",
+            "den2": "12",
+            "commun": "84",
+            "facteur1": "12",
+            "facteur2": "7",
+            "num1": "24",
+            "num2": "35",
+            "equiv1": "24/84",
+            "equiv2": "35/84",
+            "somme": "\\(\\frac{59}{84}\\)",
+            "f1_affichage": "\\(\\frac{2}{7}\\)",
+            "f2_affichage": "\\(\\frac{5}{12}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/5",
+            "f2": "7/9",
+            "d1": "\\(\\frac{4}{7}\\)",
+            "d2": "\\(\\frac{8}{5}\\)",
+            "d3": "\\(\\frac{8}{9}\\)",
+            "den1": "5",
+            "den2": "9",
+            "commun": "45",
+            "facteur1": "9",
+            "facteur2": "5",
+            "num1": "9",
+            "num2": "35",
+            "equiv1": "9/45",
+            "equiv2": "35/45",
+            "somme": "\\(\\frac{44}{45}\\)",
+            "f1_affichage": "\\(\\frac{1}{5}\\)",
+            "f2_affichage": "\\(\\frac{7}{9}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
+            "f2": "1/6",
+            "d1": "\\(\\frac{3}{11}\\)",
+            "d2": "\\(\\frac{3}{5}\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "den1": "5",
+            "den2": "6",
+            "commun": "30",
+            "facteur1": "6",
+            "facteur2": "5",
+            "num1": "12",
+            "num2": "5",
+            "equiv1": "12/30",
+            "equiv2": "5/30",
+            "somme": "\\(\\frac{17}{30}\\)",
+            "f1_affichage": "\\(\\frac{2}{5}\\)",
+            "f2_affichage": "\\(\\frac{1}{6}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/3",
             "f2": "3/10",
-            "d1": "7/15",
-            "d2": "7/50",
-            "d3": "1/5"
+            "d1": "\\(\\frac{4}{13}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{2}{5}\\)",
+            "den1": "3",
+            "den2": "10",
+            "commun": "30",
+            "facteur1": "10",
+            "facteur2": "3",
+            "num1": "10",
+            "num2": "9",
+            "equiv1": "10/30",
+            "equiv2": "9/30",
+            "somme": "\\(\\frac{19}{30}\\)",
+            "f1_affichage": "\\(\\frac{1}{3}\\)",
+            "f2_affichage": "\\(\\frac{3}{10}\\)"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "5/12",
-            "f2": "7/18",
-            "d1": "2/5",
-            "d2": "1/18",
-            "d3": "1/3"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "f1": "7/10",
-            "f2": "11/15",
-            "d1": "18/25",
-            "d2": "3/25",
-            "d3": "4/5"
+            "f1": "2/7",
+            "f2": "6/11",
+            "d1": "\\(\\frac{4}{9}\\)",
+            "d2": "\\(\\frac{8}{7}\\)",
+            "d3": "\\(\\frac{8}{11}\\)",
+            "den1": "7",
+            "den2": "11",
+            "commun": "77",
+            "facteur1": "11",
+            "facteur2": "7",
+            "num1": "22",
+            "num2": "42",
+            "equiv1": "22/77",
+            "equiv2": "42/77",
+            "somme": "\\(\\frac{64}{77}\\)",
+            "f1_affichage": "\\(\\frac{2}{7}\\)",
+            "f2_affichage": "\\(\\frac{6}{11}\\)"
           },
           "progression": 2
         },
         {
           "parametres": {
             "f1": "3/5",
-            "f2": "4/7",
-            "d1": "7/12",
-            "d2": "1/5",
-            "d3": "1/2"
+            "f2": "4/11",
+            "d1": "\\(\\frac{7}{16}\\)",
+            "d2": "\\(\\frac{7}{5}\\)",
+            "d3": "\\(\\frac{7}{11}\\)",
+            "den1": "5",
+            "den2": "11",
+            "commun": "55",
+            "facteur1": "11",
+            "facteur2": "5",
+            "num1": "33",
+            "num2": "20",
+            "equiv1": "33/55",
+            "equiv2": "20/55",
+            "somme": "\\(\\frac{53}{55}\\)",
+            "f1_affichage": "\\(\\frac{3}{5}\\)",
+            "f2_affichage": "\\(\\frac{4}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "3/5",
+            "f2": "9/11",
+            "d1": "\\(\\frac{3}{4}\\)",
+            "d2": "\\(\\frac{12}{5}\\)",
+            "d3": "\\(\\frac{12}{11}\\)",
+            "den1": "5",
+            "den2": "11",
+            "commun": "55",
+            "facteur1": "11",
+            "facteur2": "5",
+            "num1": "33",
+            "num2": "45",
+            "equiv1": "33/55",
+            "equiv2": "45/55",
+            "somme": "\\(\\frac{78}{55}\\)",
+            "f1_affichage": "\\(\\frac{3}{5}\\)",
+            "f2_affichage": "\\(\\frac{9}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "5/8",
+            "f2": "4/9",
+            "d1": "\\(\\frac{9}{17}\\)",
+            "d2": "\\(\\frac{9}{8}\\)",
+            "d3": "\\(1\\)",
+            "den1": "8",
+            "den2": "9",
+            "commun": "72",
+            "facteur1": "9",
+            "facteur2": "8",
+            "num1": "45",
+            "num2": "32",
+            "equiv1": "45/72",
+            "equiv2": "32/72",
+            "somme": "\\(\\frac{77}{72}\\)",
+            "f1_affichage": "\\(\\frac{5}{8}\\)",
+            "f2_affichage": "\\(\\frac{4}{9}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "2/9",
+            "f2": "10/11",
+            "d1": "\\(\\frac{3}{5}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{12}{11}\\)",
+            "den1": "9",
+            "den2": "11",
+            "commun": "99",
+            "facteur1": "11",
+            "facteur2": "9",
+            "num1": "22",
+            "num2": "90",
+            "equiv1": "22/99",
+            "equiv2": "90/99",
+            "somme": "\\(\\frac{112}{99}\\)",
+            "f1_affichage": "\\(\\frac{2}{9}\\)",
+            "f2_affichage": "\\(\\frac{10}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "5/7",
+            "f2": "7/11",
+            "d1": "\\(\\frac{2}{3}\\)",
+            "d2": "\\(\\frac{12}{7}\\)",
+            "d3": "\\(\\frac{12}{11}\\)",
+            "den1": "7",
+            "den2": "11",
+            "commun": "77",
+            "facteur1": "11",
+            "facteur2": "7",
+            "num1": "55",
+            "num2": "49",
+            "equiv1": "55/77",
+            "equiv2": "49/77",
+            "somme": "\\(\\frac{104}{77}\\)",
+            "f1_affichage": "\\(\\frac{5}{7}\\)",
+            "f2_affichage": "\\(\\frac{7}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "7/8",
+            "f2": "5/9",
+            "d1": "\\(\\frac{12}{17}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{4}{3}\\)",
+            "den1": "8",
+            "den2": "9",
+            "commun": "72",
+            "facteur1": "9",
+            "facteur2": "8",
+            "num1": "63",
+            "num2": "40",
+            "equiv1": "63/72",
+            "equiv2": "40/72",
+            "somme": "\\(\\frac{103}{72}\\)",
+            "f1_affichage": "\\(\\frac{7}{8}\\)",
+            "f2_affichage": "\\(\\frac{5}{9}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "1/5",
+            "f2": "6/11",
+            "d1": "\\(\\frac{7}{16}\\)",
+            "d2": "\\(\\frac{7}{5}\\)",
+            "d3": "\\(\\frac{7}{11}\\)",
+            "den1": "5",
+            "den2": "11",
+            "commun": "55",
+            "facteur1": "11",
+            "facteur2": "5",
+            "num1": "11",
+            "num2": "30",
+            "equiv1": "11/55",
+            "equiv2": "30/55",
+            "somme": "\\(\\frac{41}{55}\\)",
+            "f1_affichage": "\\(\\frac{1}{5}\\)",
+            "f2_affichage": "\\(\\frac{6}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "2/5",
+            "f2": "2/11",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(\\frac{4}{5}\\)",
+            "d3": "\\(\\frac{4}{11}\\)",
+            "den1": "5",
+            "den2": "11",
+            "commun": "55",
+            "facteur1": "11",
+            "facteur2": "5",
+            "num1": "22",
+            "num2": "10",
+            "equiv1": "22/55",
+            "equiv2": "10/55",
+            "somme": "\\(\\frac{32}{55}\\)",
+            "f1_affichage": "\\(\\frac{2}{5}\\)",
+            "f2_affichage": "\\(\\frac{2}{11}\\)"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "f1": "3/8",
+            "f2": "1/12",
+            "d1": "\\(\\frac{1}{5}\\)",
+            "d2": "\\(\\frac{1}{2}\\)",
+            "d3": "\\(\\frac{1}{3}\\)",
+            "den1": "8",
+            "den2": "12",
+            "commun": "96",
+            "facteur1": "12",
+            "facteur2": "8",
+            "num1": "36",
+            "num2": "8",
+            "equiv1": "36/96",
+            "equiv2": "8/96",
+            "somme": "\\(\\frac{11}{24}\\)",
+            "f1_affichage": "\\(\\frac{3}{8}\\)",
+            "f2_affichage": "\\(\\frac{1}{12}\\)"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "5/8",
-            "f2": "7/9",
-            "d1": "12/17",
-            "d2": "1/6",
-            "d3": "2"
+            "f1": "8/15",
+            "f2": "1/18",
+            "d1": "\\(\\frac{3}{11}\\)",
+            "d2": "\\(\\frac{3}{5}\\)",
+            "d3": "\\(\\frac{1}{2}\\)",
+            "den1": "15",
+            "den2": "18",
+            "commun": "270",
+            "facteur1": "18",
+            "facteur2": "15",
+            "num1": "144",
+            "num2": "15",
+            "equiv1": "144/270",
+            "equiv2": "15/270",
+            "somme": "\\(\\frac{53}{90}\\)",
+            "f1_affichage": "\\(\\frac{8}{15}\\)",
+            "f2_affichage": "\\(\\frac{1}{18}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "9/10",
+            "f2": "1/14",
+            "d1": "\\(\\frac{5}{12}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{5}{7}\\)",
+            "den1": "10",
+            "den2": "14",
+            "commun": "140",
+            "facteur1": "14",
+            "facteur2": "10",
+            "num1": "126",
+            "num2": "10",
+            "equiv1": "126/140",
+            "equiv2": "10/140",
+            "somme": "\\(\\frac{34}{35}\\)",
+            "f1_affichage": "\\(\\frac{9}{10}\\)",
+            "f2_affichage": "\\(\\frac{1}{14}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "1/12",
+            "f2": "5/14",
+            "d1": "\\(\\frac{3}{13}\\)",
+            "d2": "\\(\\frac{1}{2}\\)",
+            "d3": "\\(\\frac{3}{7}\\)",
+            "den1": "12",
+            "den2": "14",
+            "commun": "168",
+            "facteur1": "14",
+            "facteur2": "12",
+            "num1": "14",
+            "num2": "60",
+            "equiv1": "14/168",
+            "equiv2": "60/168",
+            "somme": "\\(\\frac{37}{84}\\)",
+            "f1_affichage": "\\(\\frac{1}{12}\\)",
+            "f2_affichage": "\\(\\frac{5}{14}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "2/9",
+            "f2": "7/15",
+            "d1": "\\(\\frac{3}{8}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{3}{5}\\)",
+            "den1": "9",
+            "den2": "15",
+            "commun": "135",
+            "facteur1": "15",
+            "facteur2": "9",
+            "num1": "30",
+            "num2": "63",
+            "equiv1": "30/135",
+            "equiv2": "63/135",
+            "somme": "\\(\\frac{31}{45}\\)",
+            "f1_affichage": "\\(\\frac{2}{9}\\)",
+            "f2_affichage": "\\(\\frac{7}{15}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "7/10",
+            "f2": "1/14",
+            "d1": "\\(\\frac{1}{3}\\)",
+            "d2": "\\(\\frac{4}{5}\\)",
+            "d3": "\\(\\frac{4}{7}\\)",
+            "den1": "10",
+            "den2": "14",
+            "commun": "140",
+            "facteur1": "14",
+            "facteur2": "10",
+            "num1": "98",
+            "num2": "10",
+            "equiv1": "98/140",
+            "equiv2": "10/140",
+            "somme": "\\(\\frac{27}{35}\\)",
+            "f1_affichage": "\\(\\frac{7}{10}\\)",
+            "f2_affichage": "\\(\\frac{1}{14}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "1/4",
+            "f2": "1/14",
+            "d1": "\\(\\frac{1}{9}\\)",
+            "d2": "\\(\\frac{1}{2}\\)",
+            "d3": "\\(\\frac{1}{7}\\)",
+            "den1": "4",
+            "den2": "14",
+            "commun": "56",
+            "facteur1": "14",
+            "facteur2": "4",
+            "num1": "14",
+            "num2": "4",
+            "equiv1": "14/56",
+            "equiv2": "4/56",
+            "somme": "\\(\\frac{9}{28}\\)",
+            "f1_affichage": "\\(\\frac{1}{4}\\)",
+            "f2_affichage": "\\(\\frac{1}{14}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "1/12",
+            "f2": "4/15",
+            "d1": "\\(\\frac{5}{27}\\)",
+            "d2": "\\(\\frac{5}{12}\\)",
+            "d3": "\\(\\frac{1}{3}\\)",
+            "den1": "12",
+            "den2": "15",
+            "commun": "180",
+            "facteur1": "15",
+            "facteur2": "12",
+            "num1": "15",
+            "num2": "48",
+            "equiv1": "15/180",
+            "equiv2": "48/180",
+            "somme": "\\(\\frac{7}{20}\\)",
+            "f1_affichage": "\\(\\frac{1}{12}\\)",
+            "f2_affichage": "\\(\\frac{4}{15}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "4/15",
+            "f2": "11/18",
+            "d1": "\\(\\frac{5}{11}\\)",
+            "d2": "\\(1\\)",
+            "d3": "\\(\\frac{5}{6}\\)",
+            "den1": "15",
+            "den2": "18",
+            "commun": "270",
+            "facteur1": "18",
+            "facteur2": "15",
+            "num1": "72",
+            "num2": "165",
+            "equiv1": "72/270",
+            "equiv2": "165/270",
+            "somme": "\\(\\frac{79}{90}\\)",
+            "f1_affichage": "\\(\\frac{4}{15}\\)",
+            "f2_affichage": "\\(\\frac{11}{18}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "5/14",
+            "f2": "15/16",
+            "d1": "\\(\\frac{2}{3}\\)",
+            "d2": "\\(\\frac{10}{7}\\)",
+            "d3": "\\(\\frac{5}{4}\\)",
+            "den1": "14",
+            "den2": "16",
+            "commun": "224",
+            "facteur1": "16",
+            "facteur2": "14",
+            "num1": "80",
+            "num2": "210",
+            "equiv1": "80/224",
+            "equiv2": "210/224",
+            "somme": "\\(\\frac{145}{112}\\)",
+            "f1_affichage": "\\(\\frac{5}{14}\\)",
+            "f2_affichage": "\\(\\frac{15}{16}\\)"
           },
           "progression": 3
         },
         {
           "parametres": {
             "f1": "7/12",
-            "f2": "5/14",
-            "d1": "6/13",
-            "d2": "1/14",
-            "d3": "1"
+            "f2": "13/16",
+            "d1": "\\(\\frac{5}{7}\\)",
+            "d2": "\\(\\frac{5}{3}\\)",
+            "d3": "\\(\\frac{5}{4}\\)",
+            "den1": "12",
+            "den2": "16",
+            "commun": "192",
+            "facteur1": "16",
+            "facteur2": "12",
+            "num1": "112",
+            "num2": "156",
+            "equiv1": "112/192",
+            "equiv2": "156/192",
+            "somme": "\\(\\frac{67}{48}\\)",
+            "f1_affichage": "\\(\\frac{7}{12}\\)",
+            "f2_affichage": "\\(\\frac{13}{16}\\)"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "11/15",
-            "f2": "7/20",
-            "d1": "18/35",
-            "d2": "3/50",
-            "d3": "4/5"
+            "f1": "9/14",
+            "f2": "7/16",
+            "d1": "\\(\\frac{8}{15}\\)",
+            "d2": "\\(\\frac{8}{7}\\)",
+            "d3": "\\(1\\)",
+            "den1": "14",
+            "den2": "16",
+            "commun": "224",
+            "facteur1": "16",
+            "facteur2": "14",
+            "num1": "144",
+            "num2": "98",
+            "equiv1": "144/224",
+            "equiv2": "98/224",
+            "somme": "\\(\\frac{121}{112}\\)",
+            "f1_affichage": "\\(\\frac{9}{14}\\)",
+            "f2_affichage": "\\(\\frac{7}{16}\\)"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "5/6",
-            "f2": "7/8",
-            "d1": "6/7",
-            "d2": "1/4",
-            "d3": "1"
+            "f1": "3/4",
+            "f2": "13/18",
+            "d1": "\\(\\frac{8}{11}\\)",
+            "d2": "\\(4\\)",
+            "d3": "\\(\\frac{8}{9}\\)",
+            "den1": "4",
+            "den2": "18",
+            "commun": "72",
+            "facteur1": "18",
+            "facteur2": "4",
+            "num1": "54",
+            "num2": "52",
+            "equiv1": "54/72",
+            "equiv2": "52/72",
+            "somme": "\\(\\frac{53}{36}\\)",
+            "f1_affichage": "\\(\\frac{3}{4}\\)",
+            "f2_affichage": "\\(\\frac{13}{18}\\)"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "7/9",
-            "f2": "5/12",
-            "d1": "4/7",
-            "d2": "1/9",
-            "d3": "2/3"
+            "f1": "4/9",
+            "f2": "14/15",
+            "d1": "\\(\\frac{3}{4}\\)",
+            "d2": "\\(2\\)",
+            "d3": "\\(\\frac{6}{5}\\)",
+            "den1": "9",
+            "den2": "15",
+            "commun": "135",
+            "facteur1": "15",
+            "facteur2": "9",
+            "num1": "60",
+            "num2": "126",
+            "equiv1": "60/135",
+            "equiv2": "126/135",
+            "somme": "\\(\\frac{62}{45}\\)",
+            "f1_affichage": "\\(\\frac{4}{9}\\)",
+            "f2_affichage": "\\(\\frac{14}{15}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "11/12",
+            "f2": "3/14",
+            "d1": "\\(\\frac{7}{13}\\)",
+            "d2": "\\(\\frac{7}{6}\\)",
+            "d3": "\\(1\\)",
+            "den1": "12",
+            "den2": "14",
+            "commun": "168",
+            "facteur1": "14",
+            "facteur2": "12",
+            "num1": "154",
+            "num2": "36",
+            "equiv1": "154/168",
+            "equiv2": "36/168",
+            "somme": "\\(\\frac{95}{84}\\)",
+            "f1_affichage": "\\(\\frac{11}{12}\\)",
+            "f2_affichage": "\\(\\frac{3}{14}\\)"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "f1": "7/12",
+            "f2": "8/15",
+            "d1": "\\(\\frac{5}{9}\\)",
+            "d2": "\\(\\frac{5}{4}\\)",
+            "d3": "\\(1\\)",
+            "den1": "12",
+            "den2": "15",
+            "commun": "180",
+            "facteur1": "15",
+            "facteur2": "12",
+            "num1": "105",
+            "num2": "96",
+            "equiv1": "105/180",
+            "equiv2": "96/180",
+            "somme": "\\(\\frac{67}{60}\\)",
+            "f1_affichage": "\\(\\frac{7}{12}\\)",
+            "f2_affichage": "\\(\\frac{8}{15}\\)"
           },
           "progression": 3
         }
       ],
-      "presentation": {
-        "math": [
-          "f1",
-          "f2",
-          "somme",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      },
-      "calculs": {
-        "den1": {
-          "moteur": "Ryacas",
-          "expression": "Denom([[f1]])"
-        },
-        "den2": {
-          "moteur": "Ryacas",
-          "expression": "Denom([[f2]])"
-        },
-        "commun": {
-          "moteur": "Ryacas",
-          "expression": "Lcm([[den1]],[[den2]])"
-        },
-        "facteur1": {
-          "moteur": "Ryacas",
-          "expression": "Div([[commun]],[[den1]])"
-        },
-        "facteur2": {
-          "moteur": "Ryacas",
-          "expression": "Div([[commun]],[[den2]])"
-        },
-        "num1": {
-          "moteur": "Ryacas",
-          "expression": "Numer([[f1]])*[[facteur1]]"
-        },
-        "num2": {
-          "moteur": "Ryacas",
-          "expression": "Numer([[f2]])*[[facteur2]]"
-        },
-        "equiv1": {
-          "moteur": "Ryacas",
-          "expression": "[[num1]]/[[commun]]",
-          "format": "math_hold"
-        },
-        "equiv2": {
-          "moteur": "Ryacas",
-          "expression": "[[num2]]/[[commun]]",
-          "format": "math_hold"
-        },
-        "multiples1": {
-          "moteur": "Ryacas",
-          "expression": "Table([[den1]]*i,i,1,[[facteur1]],1)",
-          "format": "liste_entiers"
-        },
-        "multiples2": {
-          "moteur": "Ryacas",
-          "expression": "Table([[den2]]*i,i,1,[[facteur2]],1)",
-          "format": "liste_entiers"
-        },
-        "somme": {
-          "moteur": "Ryacas",
-          "expression": "[[f1]]+[[f2]]"
-        }
+      "illustration": {
+        "id": "fractions_addition",
+        "f1": "[[f1]]",
+        "f2": "[[f2]]"
       }
     }
   ]

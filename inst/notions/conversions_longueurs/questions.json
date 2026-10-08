@@ -4,74 +4,146 @@
     {
       "id": "MES-CONVERSION_LONGUEURS-001",
       "type": "qcm",
-      "enonce": "[[quantite]] m correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "16/5",
-          "100"
-        ],
-        "format": "decimal",
-        "unite": "cm",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "320 cm",
-        "32 cm",
-        "3 200 cm",
-        "0,032 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 m = 100 cm, donc 3,2 × 100 = 320."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "3,2 m correspondent à…",
+            "reponse": "320 cm",
+            "correction": "1 m = 100 cm, donc 3,2 × 100 = 320.",
+            "p1": "320 cm",
+            "p2": "32 cm",
+            "p3": "3 200 cm",
+            "p4": "0,032 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "6,4 m correspondent à…",
+            "reponse": "640 cm",
+            "correction": "En convertissant dans l’unité demandée, on obtient 640 cm.",
+            "p1": "640 cm",
+            "p2": "64 cm",
+            "p3": "6 400 cm",
+            "p4": "0,064 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "9,6 m correspondent à…",
+            "reponse": "960 cm",
+            "correction": "En convertissant dans l’unité demandée, on obtient 960 cm.",
+            "p1": "960 cm",
+            "p2": "96 cm",
+            "p3": "9 600 cm",
+            "p4": "0,096 cm"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-002",
       "type": "qcm",
-      "enonce": "[[quantite]] mm correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "450",
-          "1/10"
-        ],
-        "format": "decimal",
-        "unite": "cm",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "45 cm",
-        "4,5 cm",
-        "450 cm",
-        "4 500 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 cm = 10 mm, donc 450 ÷ 10 = 45."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "450 mm correspondent à…",
+            "reponse": "45 cm",
+            "correction": "1 cm = 10 mm, donc 450 ÷ 10 = 45.",
+            "p1": "45 cm",
+            "p2": "4,5 cm",
+            "p3": "450 cm",
+            "p4": "4 500 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "900 mm correspondent à…",
+            "reponse": "90 cm",
+            "correction": "En convertissant dans l’unité demandée, on obtient 90 cm.",
+            "p1": "90 cm",
+            "p2": "9,0 cm",
+            "p3": "900 cm",
+            "p4": "9 000 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1350 mm correspondent à…",
+            "reponse": "135 cm",
+            "correction": "En convertissant dans l’unité demandée, on obtient 135 cm.",
+            "p1": "135 cm",
+            "p2": "13,5 cm",
+            "p3": "1350 cm",
+            "p4": "13 500 cm"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-003",
       "type": "qcm",
-      "enonce": "[[quantite]] km correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "9/20",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "m",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "450 m",
-        "45 m",
-        "4 500 m",
-        "0,0045 m"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 km = 1 000 m, donc 0,45 × 1 000 = 450."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "0,45 km correspondent à…",
+            "reponse": "450 m",
+            "correction": "1 km = 1 000 m, donc 0,45 × 1 000 = 450.",
+            "p1": "450 m",
+            "p2": "45 m",
+            "p3": "4 500 m",
+            "p4": "0,0045 m"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "0,90 km correspondent à…",
+            "reponse": "900 m",
+            "correction": "En convertissant dans l’unité demandée, on obtient 900 m.",
+            "p1": "900 m",
+            "p2": "90 m",
+            "p3": "9 000 m",
+            "p4": "0,0090 m"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1,35 km correspondent à…",
+            "reponse": "1350 m",
+            "correction": "En convertissant dans l’unité demandée, on obtient 1350 m.",
+            "p1": "1350 m",
+            "p2": "135 m",
+            "p3": "13 500 m",
+            "p4": "0,0135 m"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-VOCAB-TROU",
@@ -86,10 +158,7 @@
           "décimètre": "d _ _ _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "kilomètre"
-      },
+      "reponse": "kilomètre",
       "propositions": [
         "kilomètre",
         "centimètre",
@@ -112,10 +181,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "mètre"
-      },
+      "reponse": "mètre",
       "propositions": [
         "mètre",
         "masse",
@@ -127,18 +193,50 @@
     {
       "id": "MES-CONVERSION_LONGUEURS-APPLICATION",
       "type": "qcm",
-      "enonce": "Une piste fait 1,25 km. Combien cela représente-t-il de mètres ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1 250 m"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1 250 m",
-        "125 m",
-        "12 500 m",
-        "1,25 m"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 km = 1 000 m, donc 1,25 km = 1 250 m."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une piste fait 1,25 km. Combien cela représente-t-il de mètres ?",
+            "reponse": "1 250 m",
+            "correction": "1 km = 1 000 m, donc 1,25 km = 1 250 m.",
+            "p1": "1 250 m",
+            "p2": "125 m",
+            "p3": "12 500 m",
+            "p4": "1,25 m"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une piste fait 2,50 km. Combien cela représente-t-il de mètres ?",
+            "reponse": "2 500 m",
+            "correction": "En convertissant dans l’unité demandée, on obtient 2 500 m.",
+            "p1": "2 500 m",
+            "p2": "250 m",
+            "p3": "25 000 m",
+            "p4": "2,50 m"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une piste fait 3,75 km. Combien cela représente-t-il de mètres ?",
+            "reponse": "3 750 m",
+            "correction": "En convertissant dans l’unité demandée, on obtient 3 750 m.",
+            "p1": "3 750 m",
+            "p2": "375 m",
+            "p3": "37 500 m",
+            "p4": "3,75 m"
+          }
+        }
+      ]
     }
   ]
 }

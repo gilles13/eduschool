@@ -5,10 +5,7 @@
       "id": "POURC-001",
       "type": "qcm",
       "enonce": "Combien représentent [[p]] % de [[total]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -572,34 +569,98 @@
     {
       "id": "POURC-002",
       "type": "qcm",
-      "enonce": "Que signifie 25 % ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "25 pour 100, soit 0,25."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "25 pour 100, soit 0,25.",
-        "25 fois la quantité.",
-        "Une augmentation obligatoire de 25.",
-        "25 unités quelle que soit la quantité."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un pourcentage exprime une proportion sur 100."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que signifie 25 % ?",
+            "reponse": "25 pour 100, soit 0,25.",
+            "correction": "Un pourcentage exprime une proportion sur 100.",
+            "p1": "25 pour 100, soit 0,25.",
+            "p2": "25 fois la quantité.",
+            "p3": "Une augmentation obligatoire de 25.",
+            "p4": "25 unités quelle que soit la quantité."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie 40 % ?",
+            "reponse": "40 pour 100, soit 0,40.",
+            "correction": "Un pourcentage exprime une proportion sur 100.",
+            "p1": "40 pour 100, soit 0,40.",
+            "p2": "40 fois la quantité.",
+            "p3": "Une augmentation obligatoire de 40.",
+            "p4": "40 unités quelle que soit la quantité."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que signifie 60 % ?",
+            "reponse": "60 pour 100, soit 0,60.",
+            "correction": "Un pourcentage exprime une proportion sur 100.",
+            "p1": "60 pour 100, soit 0,60.",
+            "p2": "60 fois la quantité.",
+            "p3": "Une augmentation obligatoire de 60.",
+            "p4": "60 unités quelle que soit la quantité."
+          }
+        }
+      ]
     },
     {
       "id": "POURC-003",
       "type": "qcm",
-      "enonce": "Pour calculer 12 % d’une quantité, par quel nombre peut-on la multiplier ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0,12"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,12",
-        "1,12",
-        "12",
-        "0,88"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "12 % = 12/100 = 0,12."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour calculer 12 % d’une quantité, par quel nombre peut-on la multiplier ?",
+            "reponse": "0,12",
+            "correction": "12 % = 12/100 = 0,12.",
+            "p1": "0,12",
+            "p2": "1,12",
+            "p3": "12",
+            "p4": "0,88"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 18 % d’une quantité, par quel nombre peut-on la multiplier ?",
+            "reponse": "0,18",
+            "correction": "18 % = 18/100 = 0,18.",
+            "p1": "0,18",
+            "p2": "1,18",
+            "p3": "18",
+            "p4": "0,82"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 35 % d’une quantité, par quel nombre peut-on la multiplier ?",
+            "reponse": "0,35",
+            "correction": "35 % = 35/100 = 0,35.",
+            "p1": "0,35",
+            "p2": "1,35",
+            "p3": "35",
+            "p4": "0,65"
+          }
+        }
+      ]
     }
   ]
 }

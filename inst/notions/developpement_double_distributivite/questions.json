@@ -4,19 +4,8 @@
     {
       "id": "DEV-DOUBLE-001",
       "type": "qcm",
-      "enonce": "Développer [[expression]].",
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "[[source]]",
-        "affichage": "[[produit]]",
-        "candidats": {
-          "[[bonne]]": "[[bonne_expression]]",
-          "[[d1]]": "[[d1_expression]]",
-          "[[d2]]": "[[d2_expression]]",
-          "[[d3]]": "[[d3_expression]]"
-        }
-      },
+      "enonce": "Développer [[produit]].",
+      "reponse": "[[reponse]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -37,7 +26,8 @@
             "d2_expression": "x^2 + 1",
             "d3": "𝑥² + 2𝑥 + 2",
             "d3_expression": "x^2 + 2*x + 2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 𝑥 = 2𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 𝑥 = 2𝑥.",
+            "reponse": "𝑥² + 2𝑥 + 1"
           },
           "progression": 1
         },
@@ -53,7 +43,8 @@
             "d2_expression": "x^2 + x + 2",
             "d3": "𝑥² + 3𝑥 + 3",
             "d3_expression": "x^2 + 3*x + 3",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 𝑥 = 3𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 𝑥 = 3𝑥.",
+            "reponse": "𝑥² + 3𝑥 + 2"
           },
           "progression": 1
         },
@@ -69,7 +60,8 @@
             "d2_expression": "x^2 + 2*x + 3",
             "d3": "𝑥² + 4𝑥 + 4",
             "d3_expression": "x^2 + 4*x + 4",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 𝑥 = 4𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 𝑥 = 4𝑥.",
+            "reponse": "𝑥² + 4𝑥 + 3"
           },
           "progression": 1
         },
@@ -85,7 +77,8 @@
             "d2_expression": "x^2 + 3*x + 4",
             "d3": "𝑥² + 5𝑥 + 5",
             "d3_expression": "x^2 + 5*x + 5",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 𝑥 = 5𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 𝑥 = 𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 𝑥 = 5𝑥.",
+            "reponse": "𝑥² + 5𝑥 + 4"
           },
           "progression": 1
         },
@@ -101,7 +94,8 @@
             "d2_expression": "2*x^2 - x + 1",
             "d3": "2𝑥² + 3𝑥 + 2",
             "d3_expression": "2*x^2 + 3*x + 2",
-            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 2𝑥 = 3𝑥."
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 2𝑥 = 3𝑥.",
+            "reponse": "2𝑥² + 3𝑥 + 1"
           },
           "progression": 1
         },
@@ -117,7 +111,8 @@
             "d2_expression": "2*x^2 + 2",
             "d3": "2𝑥² + 4𝑥 + 3",
             "d3_expression": "2*x^2 + 4*x + 3",
-            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 2𝑥 = 4𝑥."
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 2𝑥 = 4𝑥.",
+            "reponse": "2𝑥² + 4𝑥 + 2"
           },
           "progression": 1
         },
@@ -133,7 +128,8 @@
             "d2_expression": "2*x^2 + x + 3",
             "d3": "2𝑥² + 5𝑥 + 4",
             "d3_expression": "2*x^2 + 5*x + 4",
-            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 2𝑥 = 5𝑥."
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 2𝑥 = 5𝑥.",
+            "reponse": "2𝑥² + 5𝑥 + 3"
           },
           "progression": 1
         },
@@ -149,7 +145,8 @@
             "d2_expression": "2*x^2 + 2*x + 4",
             "d3": "2𝑥² + 6𝑥 + 5",
             "d3_expression": "2*x^2 + 6*x + 5",
-            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 2𝑥 = 6𝑥."
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 2𝑥 = 2𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 2𝑥 = 6𝑥.",
+            "reponse": "2𝑥² + 6𝑥 + 4"
           },
           "progression": 1
         },
@@ -165,7 +162,8 @@
             "d2_expression": "3*x^2 - 2*x + 1",
             "d3": "3𝑥² + 4𝑥 + 2",
             "d3_expression": "3*x^2 + 4*x + 2",
-            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 3𝑥 = 4𝑥."
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 1 = 𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 1 = 1. Les deux termes en 𝑥 donnent 𝑥 + 3𝑥 = 4𝑥.",
+            "reponse": "3𝑥² + 4𝑥 + 1"
           },
           "progression": 1
         },
@@ -181,7 +179,8 @@
             "d2_expression": "3*x^2 - x + 2",
             "d3": "3𝑥² + 5𝑥 + 3",
             "d3_expression": "3*x^2 + 5*x + 3",
-            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 3𝑥 = 5𝑥."
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 2 = 2𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 2 = 2. Les deux termes en 𝑥 donnent 2𝑥 + 3𝑥 = 5𝑥.",
+            "reponse": "3𝑥² + 5𝑥 + 2"
           },
           "progression": 1
         },
@@ -197,7 +196,8 @@
             "d2_expression": "3*x^2 + 3",
             "d3": "3𝑥² + 6𝑥 + 4",
             "d3_expression": "3*x^2 + 6*x + 4",
-            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 3𝑥 = 6𝑥."
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 3 = 3𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 3 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 3𝑥 = 6𝑥.",
+            "reponse": "3𝑥² + 6𝑥 + 3"
           },
           "progression": 1
         },
@@ -213,7 +213,8 @@
             "d2_expression": "3*x^2 + x + 4",
             "d3": "3𝑥² + 7𝑥 + 5",
             "d3_expression": "3*x^2 + 7*x + 5",
-            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 3𝑥 = 7𝑥."
+            "etapes": "𝑥 × 3𝑥 = 3𝑥² ; 𝑥 × 4 = 4𝑥 ; 1 × 3𝑥 = 3𝑥 ; 1 × 4 = 4. Les deux termes en 𝑥 donnent 4𝑥 + 3𝑥 = 7𝑥.",
+            "reponse": "3𝑥² + 7𝑥 + 4"
           },
           "progression": 1
         },
@@ -229,7 +230,8 @@
             "d2_expression": "x^2 - x + 2",
             "d3": "𝑥² + 3𝑥 + 3",
             "d3_expression": "x^2 + 3*x + 3",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 1 = 2. Les deux termes en 𝑥 donnent 𝑥 + 2𝑥 = 3𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 1 = 2. Les deux termes en 𝑥 donnent 𝑥 + 2𝑥 = 3𝑥.",
+            "reponse": "𝑥² + 3𝑥 + 2"
           },
           "progression": 1
         },
@@ -245,7 +247,8 @@
             "d2_expression": "x^2 + x + 6",
             "d3": "𝑥² + 5𝑥 + 5",
             "d3_expression": "x^2 + 5*x + 5",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 3 = 6. Les deux termes en 𝑥 donnent 3𝑥 + 2𝑥 = 5𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 3 = 6. Les deux termes en 𝑥 donnent 3𝑥 + 2𝑥 = 5𝑥.",
+            "reponse": "𝑥² + 5𝑥 + 6"
           },
           "progression": 1
         },
@@ -261,7 +264,8 @@
             "d2_expression": "x^2 + 2*x + 8",
             "d3": "𝑥² + 6𝑥 + 6",
             "d3_expression": "x^2 + 6*x + 6",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 4 = 8. Les deux termes en 𝑥 donnent 4𝑥 + 2𝑥 = 6𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; 2 × 𝑥 = 2𝑥 ; 2 × 4 = 8. Les deux termes en 𝑥 donnent 4𝑥 + 2𝑥 = 6𝑥.",
+            "reponse": "𝑥² + 6𝑥 + 8"
           },
           "progression": 1
         },
@@ -277,7 +281,8 @@
             "d2_expression": "2*x^2 - 3*x + 2",
             "d3": "2𝑥² + 5𝑥 + 3",
             "d3_expression": "2*x^2 + 5*x + 3",
-            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 1 = 𝑥 ; 2 × 2𝑥 = 4𝑥 ; 2 × 1 = 2. Les deux termes en 𝑥 donnent 𝑥 + 4𝑥 = 5𝑥."
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 1 = 𝑥 ; 2 × 2𝑥 = 4𝑥 ; 2 × 1 = 2. Les deux termes en 𝑥 donnent 𝑥 + 4𝑥 = 5𝑥.",
+            "reponse": "2𝑥² + 5𝑥 + 2"
           },
           "progression": 1
         },
@@ -293,7 +298,8 @@
             "d2_expression": "2*x^2 - x + 6",
             "d3": "2𝑥² + 7𝑥 + 5",
             "d3_expression": "2*x^2 + 7*x + 5",
-            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 3 = 3𝑥 ; 2 × 2𝑥 = 4𝑥 ; 2 × 3 = 6. Les deux termes en 𝑥 donnent 3𝑥 + 4𝑥 = 7𝑥."
+            "etapes": "𝑥 × 2𝑥 = 2𝑥² ; 𝑥 × 3 = 3𝑥 ; 2 × 2𝑥 = 4𝑥 ; 2 × 3 = 6. Les deux termes en 𝑥 donnent 3𝑥 + 4𝑥 = 7𝑥.",
+            "reponse": "2𝑥² + 7𝑥 + 6"
           },
           "progression": 1
         },
@@ -309,7 +315,8 @@
             "d2_expression": "x^2 + 6*x - 5",
             "d3": "𝑥² − 4𝑥 − 4",
             "d3_expression": "x^2 - 4*x - 4",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 1 = −5. Les deux termes en 𝑥 donnent 𝑥 + −5𝑥 = −4𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 1 = −5. Les deux termes en 𝑥 donnent 𝑥 + −5𝑥 = −4𝑥.",
+            "reponse": "𝑥² − 4𝑥 − 5"
           },
           "progression": 2
         },
@@ -325,7 +332,8 @@
             "d2_expression": "x^2 + 7*x - 10",
             "d3": "𝑥² − 3𝑥 − 3",
             "d3_expression": "x^2 - 3*x - 3",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 2 = −10. Les deux termes en 𝑥 donnent 2𝑥 + −5𝑥 = −3𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 2 = −10. Les deux termes en 𝑥 donnent 2𝑥 + −5𝑥 = −3𝑥.",
+            "reponse": "𝑥² − 3𝑥 − 10"
           },
           "progression": 2
         },
@@ -341,7 +349,8 @@
             "d2_expression": "x^2 + 8*x - 15",
             "d3": "𝑥² − 2𝑥 − 2",
             "d3_expression": "x^2 - 2*x - 2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 3 = −15. Les deux termes en 𝑥 donnent 3𝑥 + −5𝑥 = −2𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 3 = −15. Les deux termes en 𝑥 donnent 3𝑥 + −5𝑥 = −2𝑥.",
+            "reponse": "𝑥² − 2𝑥 − 15"
           },
           "progression": 2
         },
@@ -357,7 +366,8 @@
             "d2_expression": "x^2 + 9*x - 20",
             "d3": "𝑥² − 𝑥 − 1",
             "d3_expression": "x^2 - x - 1",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 4 = −20. Les deux termes en 𝑥 donnent 4𝑥 + −5𝑥 = −𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 4 = −20. Les deux termes en 𝑥 donnent 4𝑥 + −5𝑥 = −𝑥.",
+            "reponse": "𝑥² − 𝑥 − 20"
           },
           "progression": 2
         },
@@ -373,7 +383,8 @@
             "d2_expression": "x^2 + 10*x - 25",
             "d3": "𝑥²",
             "d3_expression": "x^2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 5 = −25. Les deux termes en 𝑥 donnent 5𝑥 + −5𝑥 = 0𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −5 × 𝑥 = −5𝑥 ; −5 × 5 = −25. Les deux termes en 𝑥 donnent 5𝑥 + −5𝑥 = 0𝑥.",
+            "reponse": "𝑥² − 25"
           },
           "progression": 2
         },
@@ -389,7 +400,8 @@
             "d2_expression": "x^2 + 5*x - 4",
             "d3": "𝑥² − 3𝑥 − 3",
             "d3_expression": "x^2 - 3*x - 3",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 1 = −4. Les deux termes en 𝑥 donnent 𝑥 + −4𝑥 = −3𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 1 = −4. Les deux termes en 𝑥 donnent 𝑥 + −4𝑥 = −3𝑥.",
+            "reponse": "𝑥² − 3𝑥 − 4"
           },
           "progression": 2
         },
@@ -405,7 +417,8 @@
             "d2_expression": "x^2 + 6*x - 8",
             "d3": "𝑥² − 2𝑥 − 2",
             "d3_expression": "x^2 - 2*x - 2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 2 = −8. Les deux termes en 𝑥 donnent 2𝑥 + −4𝑥 = −2𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 2 = −8. Les deux termes en 𝑥 donnent 2𝑥 + −4𝑥 = −2𝑥.",
+            "reponse": "𝑥² − 2𝑥 − 8"
           },
           "progression": 2
         },
@@ -421,7 +434,8 @@
             "d2_expression": "x^2 + 7*x - 12",
             "d3": "𝑥² − 𝑥 − 1",
             "d3_expression": "x^2 - x - 1",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 3 = −12. Les deux termes en 𝑥 donnent 3𝑥 + −4𝑥 = −𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 3 = −12. Les deux termes en 𝑥 donnent 3𝑥 + −4𝑥 = −𝑥.",
+            "reponse": "𝑥² − 𝑥 − 12"
           },
           "progression": 2
         },
@@ -437,7 +451,8 @@
             "d2_expression": "x^2 + 8*x - 16",
             "d3": "𝑥²",
             "d3_expression": "x^2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 4 = −16. Les deux termes en 𝑥 donnent 4𝑥 + −4𝑥 = 0𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 4 = −16. Les deux termes en 𝑥 donnent 4𝑥 + −4𝑥 = 0𝑥.",
+            "reponse": "𝑥² − 16"
           },
           "progression": 2
         },
@@ -453,7 +468,8 @@
             "d2_expression": "x^2 + 9*x - 20",
             "d3": "𝑥² + 𝑥 + 1",
             "d3_expression": "x^2 + x + 1",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 5 = −20. Les deux termes en 𝑥 donnent 5𝑥 + −4𝑥 = 𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −4 × 𝑥 = −4𝑥 ; −4 × 5 = −20. Les deux termes en 𝑥 donnent 5𝑥 + −4𝑥 = 𝑥.",
+            "reponse": "𝑥² + 𝑥 − 20"
           },
           "progression": 2
         },
@@ -469,7 +485,8 @@
             "d2_expression": "x^2 + 4*x - 3",
             "d3": "𝑥² − 2𝑥 − 2",
             "d3_expression": "x^2 - 2*x - 2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 1 = −3. Les deux termes en 𝑥 donnent 𝑥 + −3𝑥 = −2𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 1 = −3. Les deux termes en 𝑥 donnent 𝑥 + −3𝑥 = −2𝑥.",
+            "reponse": "𝑥² − 2𝑥 − 3"
           },
           "progression": 2
         },
@@ -485,7 +502,8 @@
             "d2_expression": "x^2 + 5*x - 6",
             "d3": "𝑥² − 𝑥 − 1",
             "d3_expression": "x^2 - x - 1",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 2 = −6. Les deux termes en 𝑥 donnent 2𝑥 + −3𝑥 = −𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 2 = −6. Les deux termes en 𝑥 donnent 2𝑥 + −3𝑥 = −𝑥.",
+            "reponse": "𝑥² − 𝑥 − 6"
           },
           "progression": 2
         },
@@ -501,7 +519,8 @@
             "d2_expression": "x^2 + 6*x - 9",
             "d3": "𝑥²",
             "d3_expression": "x^2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 3 = −9. Les deux termes en 𝑥 donnent 3𝑥 + −3𝑥 = 0𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 3 = 3𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 3 = −9. Les deux termes en 𝑥 donnent 3𝑥 + −3𝑥 = 0𝑥.",
+            "reponse": "𝑥² − 9"
           },
           "progression": 2
         },
@@ -517,7 +536,8 @@
             "d2_expression": "x^2 + 7*x - 12",
             "d3": "𝑥² + 𝑥 + 1",
             "d3_expression": "x^2 + x + 1",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 4 = −12. Les deux termes en 𝑥 donnent 4𝑥 + −3𝑥 = 𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 4 = 4𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 4 = −12. Les deux termes en 𝑥 donnent 4𝑥 + −3𝑥 = 𝑥.",
+            "reponse": "𝑥² + 𝑥 − 12"
           },
           "progression": 2
         },
@@ -533,7 +553,8 @@
             "d2_expression": "x^2 + 8*x - 15",
             "d3": "𝑥² + 2𝑥 + 2",
             "d3_expression": "x^2 + 2*x + 2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 5 = −15. Les deux termes en 𝑥 donnent 5𝑥 + −3𝑥 = 2𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 5 = 5𝑥 ; −3 × 𝑥 = −3𝑥 ; −3 × 5 = −15. Les deux termes en 𝑥 donnent 5𝑥 + −3𝑥 = 2𝑥.",
+            "reponse": "𝑥² + 2𝑥 − 15"
           },
           "progression": 2
         },
@@ -549,7 +570,8 @@
             "d2_expression": "x^2 + 3*x - 2",
             "d3": "𝑥² − 𝑥 − 1",
             "d3_expression": "x^2 - x - 1",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −2 × 𝑥 = −2𝑥 ; −2 × 1 = −2. Les deux termes en 𝑥 donnent 𝑥 + −2𝑥 = −𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 1 = 𝑥 ; −2 × 𝑥 = −2𝑥 ; −2 × 1 = −2. Les deux termes en 𝑥 donnent 𝑥 + −2𝑥 = −𝑥.",
+            "reponse": "𝑥² − 𝑥 − 2"
           },
           "progression": 2
         },
@@ -565,7 +587,8 @@
             "d2_expression": "x^2 + 4*x - 4",
             "d3": "𝑥²",
             "d3_expression": "x^2",
-            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −2 × 𝑥 = −2𝑥 ; −2 × 2 = −4. Les deux termes en 𝑥 donnent 2𝑥 + −2𝑥 = 0𝑥."
+            "etapes": "𝑥 × 𝑥 = 𝑥² ; 𝑥 × 2 = 2𝑥 ; −2 × 𝑥 = −2𝑥 ; −2 × 2 = −4. Les deux termes en 𝑥 donnent 2𝑥 + −2𝑥 = 0𝑥.",
+            "reponse": "𝑥² − 4"
           },
           "progression": 2
         },
@@ -581,7 +604,8 @@
             "d2_expression": "9*x^2 + 25",
             "d3": "9𝑥² + 30𝑥 − 10",
             "d3_expression": "9*x^2 + 30*x - 10",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −5 = 25. Les deux termes en 𝑥 donnent 15𝑥 + 15𝑥 = 30𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −5 = 25. Les deux termes en 𝑥 donnent 15𝑥 + 15𝑥 = 30𝑥.",
+            "reponse": "9𝑥² + 30𝑥 + 25"
           },
           "progression": 3
         },
@@ -597,7 +621,8 @@
             "d2_expression": "9*x^2 - 3*x + 20",
             "d3": "9𝑥² + 27𝑥 − 9",
             "d3_expression": "9*x^2 + 27*x - 9",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −4 = 20. Les deux termes en 𝑥 donnent 12𝑥 + 15𝑥 = 27𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −4 = 20. Les deux termes en 𝑥 donnent 12𝑥 + 15𝑥 = 27𝑥.",
+            "reponse": "9𝑥² + 27𝑥 + 20"
           },
           "progression": 3
         },
@@ -613,7 +638,8 @@
             "d2_expression": "9*x^2 - 6*x + 15",
             "d3": "9𝑥² + 24𝑥 − 8",
             "d3_expression": "9*x^2 + 24*x - 8",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −3 = 15. Les deux termes en 𝑥 donnent 9𝑥 + 15𝑥 = 24𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −3 = 15. Les deux termes en 𝑥 donnent 9𝑥 + 15𝑥 = 24𝑥.",
+            "reponse": "9𝑥² + 24𝑥 + 15"
           },
           "progression": 3
         },
@@ -629,7 +655,8 @@
             "d2_expression": "9*x^2 - 9*x + 10",
             "d3": "9𝑥² + 21𝑥 − 7",
             "d3_expression": "9*x^2 + 21*x - 7",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −2 = 10. Les deux termes en 𝑥 donnent 6𝑥 + 15𝑥 = 21𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −2 = 10. Les deux termes en 𝑥 donnent 6𝑥 + 15𝑥 = 21𝑥.",
+            "reponse": "9𝑥² + 21𝑥 + 10"
           },
           "progression": 3
         },
@@ -645,7 +672,8 @@
             "d2_expression": "9*x^2 - 12*x + 5",
             "d3": "9𝑥² + 18𝑥 − 6",
             "d3_expression": "9*x^2 + 18*x - 6",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −1 = 5. Les deux termes en 𝑥 donnent 3𝑥 + 15𝑥 = 18𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −5 × −3𝑥 = 15𝑥 ; −5 × −1 = 5. Les deux termes en 𝑥 donnent 3𝑥 + 15𝑥 = 18𝑥.",
+            "reponse": "9𝑥² + 18𝑥 + 5"
           },
           "progression": 3
         },
@@ -661,7 +689,8 @@
             "d2_expression": "9*x^2 + 3*x + 20",
             "d3": "9𝑥² + 27𝑥 − 9",
             "d3_expression": "9*x^2 + 27*x - 9",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −5 = 20. Les deux termes en 𝑥 donnent 15𝑥 + 12𝑥 = 27𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −5 = 20. Les deux termes en 𝑥 donnent 15𝑥 + 12𝑥 = 27𝑥.",
+            "reponse": "9𝑥² + 27𝑥 + 20"
           },
           "progression": 3
         },
@@ -677,7 +706,8 @@
             "d2_expression": "9*x^2 + 16",
             "d3": "9𝑥² + 24𝑥 − 8",
             "d3_expression": "9*x^2 + 24*x - 8",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −4 = 16. Les deux termes en 𝑥 donnent 12𝑥 + 12𝑥 = 24𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −4 = 16. Les deux termes en 𝑥 donnent 12𝑥 + 12𝑥 = 24𝑥.",
+            "reponse": "9𝑥² + 24𝑥 + 16"
           },
           "progression": 3
         },
@@ -693,7 +723,8 @@
             "d2_expression": "9*x^2 - 3*x + 12",
             "d3": "9𝑥² + 21𝑥 − 7",
             "d3_expression": "9*x^2 + 21*x - 7",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −3 = 12. Les deux termes en 𝑥 donnent 9𝑥 + 12𝑥 = 21𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −3 = 12. Les deux termes en 𝑥 donnent 9𝑥 + 12𝑥 = 21𝑥.",
+            "reponse": "9𝑥² + 21𝑥 + 12"
           },
           "progression": 3
         },
@@ -709,7 +740,8 @@
             "d2_expression": "9*x^2 - 6*x + 8",
             "d3": "9𝑥² + 18𝑥 − 6",
             "d3_expression": "9*x^2 + 18*x - 6",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −2 = 8. Les deux termes en 𝑥 donnent 6𝑥 + 12𝑥 = 18𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −2 = 8. Les deux termes en 𝑥 donnent 6𝑥 + 12𝑥 = 18𝑥.",
+            "reponse": "9𝑥² + 18𝑥 + 8"
           },
           "progression": 3
         },
@@ -725,7 +757,8 @@
             "d2_expression": "9*x^2 - 9*x + 4",
             "d3": "9𝑥² + 15𝑥 − 5",
             "d3_expression": "9*x^2 + 15*x - 5",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −1 = 4. Les deux termes en 𝑥 donnent 3𝑥 + 12𝑥 = 15𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −4 × −3𝑥 = 12𝑥 ; −4 × −1 = 4. Les deux termes en 𝑥 donnent 3𝑥 + 12𝑥 = 15𝑥.",
+            "reponse": "9𝑥² + 15𝑥 + 4"
           },
           "progression": 3
         },
@@ -741,7 +774,8 @@
             "d2_expression": "9*x^2 + 6*x + 15",
             "d3": "9𝑥² + 24𝑥 − 8",
             "d3_expression": "9*x^2 + 24*x - 8",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −5 = 15. Les deux termes en 𝑥 donnent 15𝑥 + 9𝑥 = 24𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −5 = 15. Les deux termes en 𝑥 donnent 15𝑥 + 9𝑥 = 24𝑥.",
+            "reponse": "9𝑥² + 24𝑥 + 15"
           },
           "progression": 3
         },
@@ -757,7 +791,8 @@
             "d2_expression": "9*x^2 + 3*x + 12",
             "d3": "9𝑥² + 21𝑥 − 7",
             "d3_expression": "9*x^2 + 21*x - 7",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −4 = 12. Les deux termes en 𝑥 donnent 12𝑥 + 9𝑥 = 21𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −4 = 12𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −4 = 12. Les deux termes en 𝑥 donnent 12𝑥 + 9𝑥 = 21𝑥.",
+            "reponse": "9𝑥² + 21𝑥 + 12"
           },
           "progression": 3
         },
@@ -773,7 +808,8 @@
             "d2_expression": "9*x^2 + 9",
             "d3": "9𝑥² + 18𝑥 − 6",
             "d3_expression": "9*x^2 + 18*x - 6",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −3 = 9. Les deux termes en 𝑥 donnent 9𝑥 + 9𝑥 = 18𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −3 = 9𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −3 = 9. Les deux termes en 𝑥 donnent 9𝑥 + 9𝑥 = 18𝑥.",
+            "reponse": "9𝑥² + 18𝑥 + 9"
           },
           "progression": 3
         },
@@ -789,7 +825,8 @@
             "d2_expression": "9*x^2 - 3*x + 6",
             "d3": "9𝑥² + 15𝑥 − 5",
             "d3_expression": "9*x^2 + 15*x - 5",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −2 = 6. Les deux termes en 𝑥 donnent 6𝑥 + 9𝑥 = 15𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −2 = 6𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −2 = 6. Les deux termes en 𝑥 donnent 6𝑥 + 9𝑥 = 15𝑥.",
+            "reponse": "9𝑥² + 15𝑥 + 6"
           },
           "progression": 3
         },
@@ -805,7 +842,8 @@
             "d2_expression": "9*x^2 - 6*x + 3",
             "d3": "9𝑥² + 12𝑥 − 4",
             "d3_expression": "9*x^2 + 12*x - 4",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −1 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 9𝑥 = 12𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −1 = 3𝑥 ; −3 × −3𝑥 = 9𝑥 ; −3 × −1 = 3. Les deux termes en 𝑥 donnent 3𝑥 + 9𝑥 = 12𝑥.",
+            "reponse": "9𝑥² + 12𝑥 + 3"
           },
           "progression": 3
         },
@@ -821,7 +859,8 @@
             "d2_expression": "9*x^2 + 9*x + 10",
             "d3": "9𝑥² + 21𝑥 − 7",
             "d3_expression": "9*x^2 + 21*x - 7",
-            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −2 × −3𝑥 = 6𝑥 ; −2 × −5 = 10. Les deux termes en 𝑥 donnent 15𝑥 + 6𝑥 = 21𝑥."
+            "etapes": "−3𝑥 × −3𝑥 = 9𝑥² ; −3𝑥 × −5 = 15𝑥 ; −2 × −3𝑥 = 6𝑥 ; −2 × −5 = 10. Les deux termes en 𝑥 donnent 15𝑥 + 6𝑥 = 21𝑥.",
+            "reponse": "9𝑥² + 21𝑥 + 10"
           },
           "progression": 3
         }
@@ -830,34 +869,98 @@
     {
       "id": "DEV-DOUBLE-QUATRE-PRODUITS",
       "type": "qcm",
-      "enonce": "Pour développer (2𝑥 + 3)(𝑥 + 4), quels produits faut-il calculer avant de réduire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4",
-        "2𝑥 × 𝑥 et 3 × 4 seulement",
-        "2𝑥 × 4 et 3 × 𝑥 seulement",
-        "2𝑥 × 𝑥, puis 3 × 4 et on additionne 3 et 4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La double distributivité fait intervenir chacun des deux termes de la première parenthèse avec chacun des deux termes de la seconde : il y a donc quatre produits."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour développer (2𝑥 + 3)(𝑥 + 4), quels produits faut-il calculer avant de réduire ?",
+            "reponse": "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4",
+            "correction": "La double distributivité fait intervenir chacun des deux termes de la première parenthèse avec chacun des deux termes de la seconde : il y a donc quatre produits.",
+            "p1": "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4",
+            "p2": "2𝑥 × 𝑥 et 3 × 4 seulement",
+            "p3": "2𝑥 × 4 et 3 × 𝑥 seulement",
+            "p4": "2𝑥 × 𝑥, puis 3 × 4 et on additionne 3 et 4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour développer (3𝑥 + 2)(𝑥 + 5), quels produits faut-il calculer avant de réduire ?",
+            "reponse": "3𝑥 × 𝑥, 3𝑥 × 5, 2 × 𝑥 et 2 × 5",
+            "correction": "La double distributivité impose les quatre produits.",
+            "p1": "3𝑥 × 𝑥, 3𝑥 × 5, 2 × 𝑥 et 2 × 5",
+            "p2": "3𝑥 × 𝑥 et 2 × 5 seulement",
+            "p3": "3𝑥 × 5 et 2 × 𝑥 seulement",
+            "p4": "3𝑥 × 𝑥, puis 2 × 5 et on additionne 2 et 5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour développer (4𝑥 + 3)(𝑥 + 2), quels produits faut-il calculer avant de réduire ?",
+            "reponse": "4𝑥 × 𝑥, 4𝑥 × 2, 3 × 𝑥 et 3 × 2",
+            "correction": "Il faut multiplier chaque terme du premier facteur par chaque terme du second.",
+            "p1": "4𝑥 × 𝑥, 4𝑥 × 2, 3 × 𝑥 et 3 × 2",
+            "p2": "4𝑥 × 𝑥 et 3 × 2 seulement",
+            "p3": "4𝑥 × 2 et 3 × 𝑥 seulement",
+            "p4": "4𝑥 × 𝑥, puis 3 × 2 et on additionne 3 et 2"
+          }
+        }
+      ]
     },
     {
       "id": "DEV-DOUBLE-TERME-CROISE",
       "type": "qcm",
-      "enonce": "Dans le développement de (𝑥 + 3)(𝑥 + 5), d’où vient le terme 8𝑥 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés",
-        "de 3 × 5",
-        "de 𝑥 × 𝑥",
-        "de 𝑥 + 3 + 𝑥 + 5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les produits croisés sont 𝑥 × 5 = 5𝑥 et 3 × 𝑥 = 3𝑥. Leur somme donne 8𝑥."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans le développement de (𝑥 + 3)(𝑥 + 5), d’où vient le terme 8𝑥 ?",
+            "reponse": "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés",
+            "correction": "Les produits croisés sont 𝑥 × 5 = 5𝑥 et 3 × 𝑥 = 3𝑥. Leur somme donne 8𝑥.",
+            "p1": "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés",
+            "p2": "de 3 × 5",
+            "p3": "de 𝑥 × 𝑥",
+            "p4": "de 𝑥 + 3 + 𝑥 + 5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans le développement de (𝑥 + 2)(𝑥 + 7), d’où vient le terme 9𝑥 ?",
+            "reponse": "de 7𝑥 + 2𝑥, obtenus par les deux produits croisés",
+            "correction": "Les produits croisés donnent 7x et 2x, soit 9x.",
+            "p1": "de 7𝑥 + 2𝑥, obtenus par les deux produits croisés",
+            "p2": "de 2 × 7",
+            "p3": "de 𝑥 × 𝑥",
+            "p4": "de 𝑥 + 2 + 𝑥 + 7"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans le développement de (𝑥 + 4)(𝑥 + 6), d’où vient le terme 10𝑥 ?",
+            "reponse": "de 6𝑥 + 4𝑥, obtenus par les deux produits croisés",
+            "correction": "Les deux produits croisés donnent 6x + 4x = 10x.",
+            "p1": "de 6𝑥 + 4𝑥, obtenus par les deux produits croisés",
+            "p2": "de 4 × 6",
+            "p3": "de 𝑥 × 𝑥",
+            "p4": "de 𝑥 + 4 + 𝑥 + 6"
+          }
+        }
+      ]
     },
     {
       "id": "DEV-DOUBLE-MOT-A-TROU",
@@ -872,10 +975,7 @@
           "équation": "é _ _ _ _ _ _ n"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "distributivité"
-      },
+      "reponse": "distributivité",
       "propositions": [
         "distributivité",
         "factorisation",
@@ -898,10 +998,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "réduction"
-      },
+      "reponse": "réduction",
       "propositions": [
         "réduction",
         "développement",
@@ -917,10 +1014,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[reponse]]"
-      },
+      "reponse": "[[reponse]]",
       "propositions": [
         "[[reponse]]",
         "[[d1]]",

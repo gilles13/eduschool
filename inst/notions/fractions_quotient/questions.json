@@ -5,53 +5,88 @@
       "id": "FRAC-MIG-FRACTION-QUOTIENT-001",
       "type": "qcm",
       "enonce": "Quel quotient est exactement représenté par [[fraction]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3 ÷ 4"
-      },
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 ÷ 4",
-        "4 ÷ 3",
-        "3 × 4",
-        "4 − 3"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Une fraction a/b, avec b non nul, représente exactement le quotient a ÷ b.\nJ’en déduis : Le numérateur est le dividende et le dénominateur est le diviseur.",
+      "correction": "[[correction]]",
       "variantes": [
         {
           "parametres": {
-            "fraction": "3/4"
+            "fraction": "\\(\\frac{3}{4}\\)",
+            "reponse": "3 ÷ 4",
+            "p1": "3 ÷ 4",
+            "p2": "4 ÷ 3",
+            "p3": "3 × 4",
+            "p4": "4 − 3",
+            "correction": "La fraction 3/4 est l’écriture exacte du quotient 3 ÷ 4."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "fraction": "\\(\\frac{2}{5}\\)",
+            "reponse": "2 ÷ 5",
+            "p1": "2 ÷ 5",
+            "p2": "5 ÷ 2",
+            "p3": "2 × 5",
+            "p4": "5 − 2",
+            "correction": "La fraction 2/5 est l’écriture exacte du quotient 2 ÷ 5."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "fraction": "\\(\\frac{5}{8}\\)",
+            "reponse": "5 ÷ 8",
+            "p1": "5 ÷ 8",
+            "p2": "8 ÷ 5",
+            "p3": "5 × 8",
+            "p4": "8 − 5",
+            "correction": "La fraction 5/8 est l’écriture exacte du quotient 5 ÷ 8."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "fraction": "\\(\\frac{4}{7}\\)",
+            "reponse": "4 ÷ 7",
+            "p1": "4 ÷ 7",
+            "p2": "7 ÷ 4",
+            "p3": "4 × 7",
+            "p4": "7 − 4",
+            "correction": "La fraction 4/7 est l’écriture exacte du quotient 4 ÷ 7."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "fraction": "\\(\\frac{7}{10}\\)",
+            "reponse": "7 ÷ 10",
+            "p1": "7 ÷ 10",
+            "p2": "10 ÷ 7",
+            "p3": "7 × 10",
+            "p4": "10 − 7",
+            "correction": "La fraction 7/10 est l’écriture exacte du quotient 7 ÷ 10."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "fraction": "\\(\\frac{5}{6}\\)",
+            "reponse": "5 ÷ 6",
+            "p1": "5 ÷ 6",
+            "p2": "6 ÷ 5",
+            "p3": "5 × 6",
+            "p4": "6 − 5",
+            "correction": "La fraction 5/6 est l’écriture exacte du quotient 5 ÷ 6."
           },
           "progression": 1
         }
-      ],
-      "presentation": {
-        "math": [
-          "fraction"
-        ]
-      }
-    },
-    {
-      "id": "FRAC-MIG-FRACTION-QUOTIENT-002",
-      "type": "qcm",
-      "enonce": "Quelle fraction représente exactement [[terme1]] ÷ [[terme2]] ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "division",
-        "termes": [
-          "5",
-          "8"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
-      "propositions": [
-        "5/8",
-        "8/5",
-        "5/13",
-        "8/13"
-      ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Une fraction a/b, avec b non nul, représente exactement le quotient a ÷ b.\nJ’en déduis : Le quotient 5 ÷ 8 s’écrit 5/8."
+      ]
     },
     {
       "id": "FRAC-VOCAB-002",
@@ -66,10 +101,7 @@
           "dividende": "d _ _ _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "quotient"
-      },
+      "reponse": "quotient",
       "propositions": [
         "quotient",
         "produit",
@@ -81,34 +113,167 @@
     {
       "id": "FRAC-QUOTIENT-PARTAGE-001",
       "type": "qcm",
-      "enonce": "On partage équitablement [[terme1]] litres de jus entre [[terme2]] personnes. Quelle quantité exacte reçoit chaque personne ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "division",
-        "termes": [
-          "3",
-          "4"
-        ],
-        "format": "fraction",
-        "unite": "L"
-      },
+      "enonce": "On partage équitablement \\([[litres]]\\) litres de jus entre \\([[personnes]]\\) personnes. Quelle quantité exacte reçoit chaque personne ?",
+      "reponse": "[[bonne]]",
       "propositions": [
-        "3/4 L",
-        "4/3 L",
-        "1/4 L",
-        "3/7 L"
+        "[[bonne]]",
+        "[[d1]]",
+        "[[d2]]",
+        "[[d3]]"
       ],
-      "correction": "Le partage correspond à la division 3 ÷ 4, soit exactement 3/4 de litre par personne."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "litres": "3",
+            "personnes": "4",
+            "bonne": "3/4 L",
+            "d1": "4/3 L",
+            "d2": "1/4 L",
+            "d3": "3/7 L",
+            "correction": "Le partage correspond à la division 3 ÷ 4, soit exactement 3/4 de litre par personne."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "litres": "2",
+            "personnes": "5",
+            "bonne": "2/5 L",
+            "d1": "5/2 L",
+            "d2": "1/5 L",
+            "d3": "2/7 L",
+            "correction": "Le partage correspond à la division 2 ÷ 5, soit exactement 2/5 de litre par personne."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "litres": "5",
+            "personnes": "8",
+            "bonne": "5/8 L",
+            "d1": "8/5 L",
+            "d2": "1/8 L",
+            "d3": "5/13 L",
+            "correction": "Le partage correspond à la division 5 ÷ 8, soit exactement 5/8 de litre par personne."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "litres": "4",
+            "personnes": "7",
+            "bonne": "4/7 L",
+            "d1": "7/4 L",
+            "d2": "1/7 L",
+            "d3": "4/11 L",
+            "correction": "Le partage correspond à la division 4 ÷ 7, soit exactement 4/7 de litre par personne."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "litres": "5",
+            "personnes": "6",
+            "bonne": "5/6 L",
+            "d1": "6/5 L",
+            "d2": "1/6 L",
+            "d3": "5/11 L",
+            "correction": "Le partage correspond à la division 5 ÷ 6, soit exactement 5/6 de litre par personne."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "litres": "7",
+            "personnes": "9",
+            "bonne": "7/9 L",
+            "d1": "9/7 L",
+            "d2": "1/9 L",
+            "d3": "7/16 L",
+            "correction": "Le partage correspond à la division 7 ÷ 9, soit exactement 7/9 de litre par personne."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "litres": "3",
+            "personnes": "8",
+            "bonne": "3/8 L",
+            "d1": "8/3 L",
+            "d2": "1/8 L",
+            "d3": "3/11 L",
+            "correction": "Le partage correspond à la division 3 ÷ 8, soit exactement 3/8 de litre par personne."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "litres": "7",
+            "personnes": "10",
+            "bonne": "7/10 L",
+            "d1": "10/7 L",
+            "d2": "1/10 L",
+            "d3": "7/17 L",
+            "correction": "Le partage correspond à la division 7 ÷ 10, soit exactement 7/10 de litre par personne."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "litres": "4",
+            "personnes": "9",
+            "bonne": "4/9 L",
+            "d1": "9/4 L",
+            "d2": "1/9 L",
+            "d3": "4/13 L",
+            "correction": "Le partage correspond à la division 4 ÷ 9, soit exactement 4/9 de litre par personne."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "litres": "5",
+            "personnes": "12",
+            "bonne": "5/12 L",
+            "d1": "12/5 L",
+            "d2": "1/12 L",
+            "d3": "5/17 L",
+            "correction": "Le partage correspond à la division 5 ÷ 12, soit exactement 5/12 de litre par personne."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "litres": "7",
+            "personnes": "12",
+            "bonne": "7/12 L",
+            "d1": "12/7 L",
+            "d2": "1/12 L",
+            "d3": "7/19 L",
+            "correction": "Le partage correspond à la division 7 ÷ 12, soit exactement 7/12 de litre par personne."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "litres": "8",
+            "personnes": "15",
+            "bonne": "8/15 L",
+            "d1": "15/8 L",
+            "d2": "1/15 L",
+            "d3": "8/23 L",
+            "correction": "Le partage correspond à la division 8 ÷ 15, soit exactement 8/15 de litre par personne."
+          },
+          "progression": 3
+        }
+      ]
     },
     {
       "id": "FRA-VAR-QUOT-001",
       "type": "qcm",
       "enonce": "Quelle fraction représente exactement [[a]] ÷ [[b]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -121,10 +286,10 @@
           "parametres": {
             "a": "1",
             "b": "2",
-            "bonne": "1/2",
-            "d1": "2/1",
-            "d2": "1/3",
-            "d3": "2/3",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{2}{1}\\)",
+            "d2": "\\(\\frac{1}{3}\\)",
+            "d3": "\\(\\frac{2}{3}\\)",
             "correction": "Le quotient 1 ÷ 2 s’écrit exactement 1/2."
           },
           "progression": 1
@@ -133,10 +298,10 @@
           "parametres": {
             "a": "2",
             "b": "3",
-            "bonne": "2/3",
-            "d1": "3/2",
-            "d2": "2/5",
-            "d3": "3/5",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{3}{2}\\)",
+            "d2": "\\(\\frac{2}{5}\\)",
+            "d3": "\\(\\frac{3}{5}\\)",
             "correction": "Le quotient 2 ÷ 3 s’écrit exactement 2/3."
           },
           "progression": 1
@@ -145,10 +310,10 @@
           "parametres": {
             "a": "3",
             "b": "4",
-            "bonne": "3/4",
-            "d1": "4/3",
-            "d2": "3/7",
-            "d3": "4/7",
+            "bonne": "\\(\\frac{3}{4}\\)",
+            "d1": "\\(\\frac{4}{3}\\)",
+            "d2": "\\(\\frac{3}{7}\\)",
+            "d3": "\\(\\frac{4}{7}\\)",
             "correction": "Le quotient 3 ÷ 4 s’écrit exactement 3/4."
           },
           "progression": 1
@@ -157,10 +322,10 @@
           "parametres": {
             "a": "4",
             "b": "5",
-            "bonne": "4/5",
-            "d1": "5/4",
-            "d2": "4/9",
-            "d3": "5/9",
+            "bonne": "\\(\\frac{4}{5}\\)",
+            "d1": "\\(\\frac{5}{4}\\)",
+            "d2": "\\(\\frac{4}{9}\\)",
+            "d3": "\\(\\frac{5}{9}\\)",
             "correction": "Le quotient 4 ÷ 5 s’écrit exactement 4/5."
           },
           "progression": 1
@@ -169,10 +334,10 @@
           "parametres": {
             "a": "5",
             "b": "8",
-            "bonne": "5/8",
-            "d1": "8/5",
-            "d2": "5/13",
-            "d3": "8/13",
+            "bonne": "\\(\\frac{5}{8}\\)",
+            "d1": "\\(\\frac{8}{5}\\)",
+            "d2": "\\(\\frac{5}{13}\\)",
+            "d3": "\\(\\frac{8}{13}\\)",
             "correction": "Le quotient 5 ÷ 8 s’écrit exactement 5/8."
           },
           "progression": 1
@@ -181,10 +346,10 @@
           "parametres": {
             "a": "7",
             "b": "10",
-            "bonne": "7/10",
-            "d1": "10/7",
-            "d2": "7/17",
-            "d3": "10/17",
+            "bonne": "\\(\\frac{7}{10}\\)",
+            "d1": "\\(\\frac{10}{7}\\)",
+            "d2": "\\(\\frac{7}{17}\\)",
+            "d3": "\\(\\frac{10}{17}\\)",
             "correction": "Le quotient 7 ÷ 10 s’écrit exactement 7/10."
           },
           "progression": 1
@@ -193,10 +358,10 @@
           "parametres": {
             "a": "3",
             "b": "7",
-            "bonne": "3/7",
-            "d1": "7/3",
-            "d2": "3/10",
-            "d3": "7/10",
+            "bonne": "\\(\\frac{3}{7}\\)",
+            "d1": "\\(\\frac{7}{3}\\)",
+            "d2": "\\(\\frac{3}{10}\\)",
+            "d3": "\\(\\frac{7}{10}\\)",
             "correction": "Le quotient 3 ÷ 7 s’écrit exactement 3/7."
           },
           "progression": 2
@@ -205,10 +370,10 @@
           "parametres": {
             "a": "5",
             "b": "12",
-            "bonne": "5/12",
-            "d1": "12/5",
-            "d2": "5/17",
-            "d3": "12/17",
+            "bonne": "\\(\\frac{5}{12}\\)",
+            "d1": "\\(\\frac{12}{5}\\)",
+            "d2": "\\(\\frac{5}{17}\\)",
+            "d3": "\\(\\frac{12}{17}\\)",
             "correction": "Le quotient 5 ÷ 12 s’écrit exactement 5/12."
           },
           "progression": 2
@@ -217,10 +382,10 @@
           "parametres": {
             "a": "7",
             "b": "9",
-            "bonne": "7/9",
-            "d1": "9/7",
-            "d2": "7/16",
-            "d3": "9/16",
+            "bonne": "\\(\\frac{7}{9}\\)",
+            "d1": "\\(\\frac{9}{7}\\)",
+            "d2": "\\(\\frac{7}{16}\\)",
+            "d3": "\\(\\frac{9}{16}\\)",
             "correction": "Le quotient 7 ÷ 9 s’écrit exactement 7/9."
           },
           "progression": 2
@@ -229,10 +394,10 @@
           "parametres": {
             "a": "8",
             "b": "15",
-            "bonne": "8/15",
-            "d1": "15/8",
-            "d2": "8/23",
-            "d3": "15/23",
+            "bonne": "\\(\\frac{8}{15}\\)",
+            "d1": "\\(\\frac{15}{8}\\)",
+            "d2": "\\(\\frac{8}{23}\\)",
+            "d3": "\\(\\frac{15}{23}\\)",
             "correction": "Le quotient 8 ÷ 15 s’écrit exactement 8/15."
           },
           "progression": 2
@@ -241,10 +406,10 @@
           "parametres": {
             "a": "11",
             "b": "14",
-            "bonne": "11/14",
-            "d1": "14/11",
-            "d2": "11/25",
-            "d3": "14/25",
+            "bonne": "\\(\\frac{11}{14}\\)",
+            "d1": "\\(\\frac{14}{11}\\)",
+            "d2": "\\(\\frac{11}{25}\\)",
+            "d3": "\\(\\frac{14}{25}\\)",
             "correction": "Le quotient 11 ÷ 14 s’écrit exactement 11/14."
           },
           "progression": 2
@@ -253,10 +418,10 @@
           "parametres": {
             "a": "13",
             "b": "20",
-            "bonne": "13/20",
-            "d1": "20/13",
-            "d2": "13/33",
-            "d3": "20/33",
+            "bonne": "\\(\\frac{13}{20}\\)",
+            "d1": "\\(\\frac{20}{13}\\)",
+            "d2": "\\(\\frac{13}{33}\\)",
+            "d3": "\\(\\frac{20}{33}\\)",
             "correction": "Le quotient 13 ÷ 20 s’écrit exactement 13/20."
           },
           "progression": 2
@@ -265,10 +430,10 @@
           "parametres": {
             "a": "7",
             "b": "16",
-            "bonne": "7/16",
-            "d1": "16/7",
-            "d2": "7/23",
-            "d3": "16/23",
+            "bonne": "\\(\\frac{7}{16}\\)",
+            "d1": "\\(\\frac{16}{7}\\)",
+            "d2": "\\(\\frac{7}{23}\\)",
+            "d3": "\\(\\frac{16}{23}\\)",
             "correction": "Le quotient 7 ÷ 16 s’écrit exactement 7/16."
           },
           "progression": 3
@@ -277,10 +442,10 @@
           "parametres": {
             "a": "9",
             "b": "22",
-            "bonne": "9/22",
-            "d1": "22/9",
-            "d2": "9/31",
-            "d3": "22/31",
+            "bonne": "\\(\\frac{9}{22}\\)",
+            "d1": "\\(\\frac{22}{9}\\)",
+            "d2": "\\(\\frac{9}{31}\\)",
+            "d3": "\\(\\frac{22}{31}\\)",
             "correction": "Le quotient 9 ÷ 22 s’écrit exactement 9/22."
           },
           "progression": 3
@@ -289,10 +454,10 @@
           "parametres": {
             "a": "11",
             "b": "25",
-            "bonne": "11/25",
-            "d1": "25/11",
-            "d2": "11/36",
-            "d3": "25/36",
+            "bonne": "\\(\\frac{11}{25}\\)",
+            "d1": "\\(\\frac{25}{11}\\)",
+            "d2": "\\(\\frac{11}{36}\\)",
+            "d3": "\\(\\frac{25}{36}\\)",
             "correction": "Le quotient 11 ÷ 25 s’écrit exactement 11/25."
           },
           "progression": 3
@@ -301,10 +466,10 @@
           "parametres": {
             "a": "13",
             "b": "28",
-            "bonne": "13/28",
-            "d1": "28/13",
-            "d2": "13/41",
-            "d3": "28/41",
+            "bonne": "\\(\\frac{13}{28}\\)",
+            "d1": "\\(\\frac{28}{13}\\)",
+            "d2": "\\(\\frac{13}{41}\\)",
+            "d3": "\\(\\frac{28}{41}\\)",
             "correction": "Le quotient 13 ÷ 28 s’écrit exactement 13/28."
           },
           "progression": 3
@@ -313,10 +478,10 @@
           "parametres": {
             "a": "17",
             "b": "30",
-            "bonne": "17/30",
-            "d1": "30/17",
-            "d2": "17/47",
-            "d3": "30/47",
+            "bonne": "\\(\\frac{17}{30}\\)",
+            "d1": "\\(\\frac{30}{17}\\)",
+            "d2": "\\(\\frac{17}{47}\\)",
+            "d3": "\\(\\frac{30}{47}\\)",
             "correction": "Le quotient 17 ÷ 30 s’écrit exactement 17/30."
           },
           "progression": 3
@@ -325,23 +490,192 @@
           "parametres": {
             "a": "19",
             "b": "32",
-            "bonne": "19/32",
-            "d1": "32/19",
-            "d2": "19/51",
-            "d3": "32/51",
+            "bonne": "\\(\\frac{19}{32}\\)",
+            "d1": "\\(\\frac{32}{19}\\)",
+            "d2": "\\(\\frac{19}{51}\\)",
+            "d3": "\\(\\frac{32}{51}\\)",
             "correction": "Le quotient 19 ÷ 32 s’écrit exactement 19/32."
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRA-QUOT-REPRESENTATION-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "presentation": {
-        "math": [
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "barre_fraction",
+        "fraction": "[[ill_fraction]]",
+        "etiquette": "[[ill_etiquette]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "La barre représente 3/4 d’une unité. Quel quotient exact correspond à cette fraction ?",
+            "reponse": "3 ÷ 4",
+            "correction": "3/4 est l’écriture fractionnaire du quotient 3 ÷ 4.",
+            "p1": "3 ÷ 4",
+            "p2": "4 ÷ 3",
+            "p3": "3 × 4",
+            "p4": "4 − 3",
+            "ill_fraction": "3/4",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 2/5 d’une unité. Quel quotient exact correspond à cette fraction ?",
+            "reponse": "2 ÷ 5",
+            "correction": "2/5 est l’écriture fractionnaire du quotient 2 ÷ 5.",
+            "p1": "2 ÷ 5",
+            "p2": "5 ÷ 2",
+            "p3": "2 × 5",
+            "p4": "5 − 2",
+            "ill_fraction": "2/5",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 5/8 d’une unité. Quel quotient exact correspond à cette fraction ?",
+            "reponse": "5 ÷ 8",
+            "correction": "5/8 est l’écriture fractionnaire du quotient 5 ÷ 8.",
+            "p1": "5 ÷ 8",
+            "p2": "8 ÷ 5",
+            "p3": "5 × 8",
+            "p4": "8 − 5",
+            "ill_fraction": "5/8",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 4/7 d’une unité. Quel quotient exact correspond à cette fraction ?",
+            "reponse": "4 ÷ 7",
+            "correction": "4/7 est l’écriture fractionnaire du quotient 4 ÷ 7.",
+            "p1": "4 ÷ 7",
+            "p2": "7 ÷ 4",
+            "p3": "4 × 7",
+            "p4": "7 − 4",
+            "ill_fraction": "4/7",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 7/10 d’une unité. Quel quotient exact correspond à cette fraction ?",
+            "reponse": "7 ÷ 10",
+            "correction": "7/10 est l’écriture fractionnaire du quotient 7 ÷ 10.",
+            "p1": "7 ÷ 10",
+            "p2": "10 ÷ 7",
+            "p3": "7 × 10",
+            "p4": "10 − 7",
+            "ill_fraction": "7/10",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "La barre représente 5/6 d’une unité. Quel quotient exact correspond à cette fraction ?",
+            "reponse": "5 ÷ 6",
+            "correction": "5/6 est l’écriture fractionnaire du quotient 5 ÷ 6.",
+            "p1": "5 ÷ 6",
+            "p2": "6 ÷ 5",
+            "p3": "5 × 6",
+            "p4": "6 − 5",
+            "ill_fraction": "5/6",
+            "ill_etiquette": "A"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-QUOT-BINAIRE-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "L’affirmation « 3/4 est le résultat exact de 3 ÷ 4 » est-elle vraie ?",
+            "reponse": "Vrai",
+            "correction": "Oui : 3/4 est l’écriture exacte de 3 ÷ 4.",
+            "p1": "Vrai",
+            "p2": "Faux"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "L’affirmation « 2/5 est le résultat exact de 2 ÷ 5 » est-elle vraie ?",
+            "reponse": "Vrai",
+            "correction": "Oui : 2/5 est l’écriture exacte de 2 ÷ 5.",
+            "p1": "Vrai",
+            "p2": "Faux"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "L’affirmation « 5/8 est le résultat exact de 5 ÷ 8 » est-elle vraie ?",
+            "reponse": "Vrai",
+            "correction": "Oui : 5/8 est l’écriture exacte de 5 ÷ 8.",
+            "p1": "Vrai",
+            "p2": "Faux"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "L’affirmation « 4/7 est le résultat exact de 4 ÷ 7 » est-elle vraie ?",
+            "reponse": "Vrai",
+            "correction": "Oui : 4/7 est l’écriture exacte de 4 ÷ 7.",
+            "p1": "Vrai",
+            "p2": "Faux"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "L’affirmation « 7/10 est le résultat exact de 7 ÷ 10 » est-elle vraie ?",
+            "reponse": "Vrai",
+            "correction": "Oui : 7/10 est l’écriture exacte de 7 ÷ 10.",
+            "p1": "Vrai",
+            "p2": "Faux"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "L’affirmation « 5/6 est le résultat exact de 5 ÷ 6 » est-elle vraie ?",
+            "reponse": "Vrai",
+            "correction": "Oui : 5/6 est l’écriture exacte de 5 ÷ 6.",
+            "p1": "Vrai",
+            "p2": "Faux"
+          },
+          "progression": 1
+        }
+      ]
     }
   ]
 }

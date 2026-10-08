@@ -4,90 +4,242 @@
     {
       "id": "ENS-001",
       "type": "qcm",
-      "enonce": "Avec E = {1, 2, 3}, quelle affirmation est vraie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2 ∈ E"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 ∈ E",
-        "4 ∈ E",
-        "2 ⊆ E",
-        "E ∈ 2"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un nombre est un élément : il appartient à E. L’inclusion concerne deux ensembles."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Avec E = {1, 2, 3}, quelle affirmation est vraie ?",
+            "reponse": "2 ∈ E",
+            "correction": "Un nombre est un élément : il appartient à E. L’inclusion concerne deux ensembles.",
+            "p1": "2 ∈ E",
+            "p2": "4 ∈ E",
+            "p3": "2 ⊆ E",
+            "p4": "E ∈ 2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Avec E = {11, 12, 13}, quelle affirmation est vraie ?",
+            "reponse": "12 ∈ E",
+            "correction": "Un nombre est un élément : il appartient à E. L’inclusion concerne deux ensembles.",
+            "p1": "12 ∈ E",
+            "p2": "14 ∈ E",
+            "p3": "12 ⊆ E",
+            "p4": "E ∈ 12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Avec E = {21, 22, 23}, quelle affirmation est vraie ?",
+            "reponse": "22 ∈ E",
+            "correction": "Un nombre est un élément : il appartient à E. L’inclusion concerne deux ensembles.",
+            "p1": "22 ∈ E",
+            "p2": "24 ∈ E",
+            "p3": "22 ⊆ E",
+            "p4": "E ∈ 22"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-002",
       "type": "qcm",
-      "enonce": "Avec A = {1, 2} et E = {1, 2, 3}, quelle affirmation est vraie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "A ⊆ E"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "A ⊆ E",
-        "E ⊆ A",
-        "A ∈ E",
-        "3 ∈ A"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Tous les éléments de A appartiennent à E : A est inclus dans E."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Avec A = {1, 2} et E = {1, 2, 3}, quelle affirmation est vraie ?",
+            "reponse": "A ⊆ E",
+            "correction": "Tous les éléments de A appartiennent à E : A est inclus dans E.",
+            "p1": "A ⊆ E",
+            "p2": "E ⊆ A",
+            "p3": "A ∈ E",
+            "p4": "3 ∈ A"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Avec A = {11, 12} et E = {11, 12, 13}, quelle affirmation est vraie ?",
+            "reponse": "A ⊆ E",
+            "correction": "Tous les éléments de A appartiennent à E : A est inclus dans E.",
+            "p1": "A ⊆ E",
+            "p2": "E ⊆ A",
+            "p3": "A ∈ E",
+            "p4": "13 ∈ A"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Avec A = {21, 22} et E = {21, 22, 23}, quelle affirmation est vraie ?",
+            "reponse": "A ⊆ E",
+            "correction": "Tous les éléments de A appartiennent à E : A est inclus dans E.",
+            "p1": "A ⊆ E",
+            "p2": "E ⊆ A",
+            "p3": "A ∈ E",
+            "p4": "23 ∈ A"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-005",
       "type": "qcm",
-      "enonce": "Combien de sous-ensembles possède E = {a, b} ?",
-      "reponse": {
-        "mode": "relation_fixe",
-        "moteur": "Ryacas",
-        "relation": "nombre",
-        "expression": "2^2",
-        "candidats": {
-          "4": "4",
-          "2": "2",
-          "3": "3",
-          "8": "8"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4",
-        "2",
-        "3",
-        "8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les sous-ensembles sont ∅, {a}, {b} et {a, b}."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Combien de sous-ensembles possède E = {a, b} ?",
+            "reponse": "4",
+            "correction": "Les sous-ensembles sont ∅, {a}, {b} et {a, b}.",
+            "p1": "4",
+            "p2": "2",
+            "p3": "3",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Combien de sous-ensembles possède E = {a, b, c} ?",
+            "reponse": "8",
+            "correction": "Un ensemble à 3 éléments possède 2³ = 8 sous-ensembles.",
+            "p1": "8",
+            "p2": "3",
+            "p3": "6",
+            "p4": "9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Combien de sous-ensembles possède E = {a, b, c, d} ?",
+            "reponse": "16",
+            "correction": "Un ensemble à 4 éléments possède 2⁴ = 16 sous-ensembles.",
+            "p1": "16",
+            "p2": "4",
+            "p3": "8",
+            "p4": "12"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-006",
       "type": "qcm",
-      "enonce": "Quelle affirmation décrit correctement l’ensemble vide ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "∅ ⊆ {1, 2}"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "∅ ⊆ {1, 2}",
-        "∅ ∈ {1, 2}",
-        "{1, 2} ⊆ ∅",
-        "1 ∈ ∅"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "L’ensemble vide est inclus dans tout ensemble, mais n’est pas automatiquement l’un de ses éléments."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle affirmation décrit correctement l’ensemble vide ?",
+            "reponse": "∅ ⊆ {1, 2}",
+            "correction": "L’ensemble vide est inclus dans tout ensemble, mais n’est pas automatiquement l’un de ses éléments.",
+            "p1": "∅ ⊆ {1, 2}",
+            "p2": "∅ ∈ {1, 2}",
+            "p3": "{1, 2} ⊆ ∅",
+            "p4": "1 ∈ ∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle affirmation décrit correctement l’ensemble vide ?",
+            "reponse": "∅ ⊆ {11, 12}",
+            "correction": "L’ensemble vide est inclus dans tout ensemble, mais n’est pas automatiquement l’un de ses éléments.",
+            "p1": "∅ ⊆ {11, 12}",
+            "p2": "∅ ∈ {11, 12}",
+            "p3": "{11, 12} ⊆ ∅",
+            "p4": "11 ∈ ∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle affirmation décrit correctement l’ensemble vide ?",
+            "reponse": "∅ ⊆ {21, 22}",
+            "correction": "L’ensemble vide est inclus dans tout ensemble, mais n’est pas automatiquement l’un de ses éléments.",
+            "p1": "∅ ⊆ {21, 22}",
+            "p2": "∅ ∈ {21, 22}",
+            "p3": "{21, 22} ⊆ ∅",
+            "p4": "21 ∈ ∅"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-007",
       "type": "qcm",
-      "enonce": "Quelle affirmation sur les ensembles de nombres est vraie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "ℕ ⊆ ℤ"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "ℕ ⊆ ℤ",
-        "ℤ ⊆ ℕ",
-        "π ∈ ℚ",
-        "1/2 ∈ ℤ"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Tout entier naturel est un entier relatif ; l’inverse n’est pas vrai."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle affirmation sur les ensembles de nombres est vraie ?",
+            "reponse": "ℕ ⊆ ℤ",
+            "correction": "Tout entier naturel est un entier relatif ; l’inverse n’est pas vrai.",
+            "p1": "ℕ ⊆ ℤ",
+            "p2": "ℤ ⊆ ℕ",
+            "p3": "π ∈ ℚ",
+            "p4": "1/2 ∈ ℤ"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle inclusion entre ensembles de nombres est vraie ?",
+            "reponse": "ℤ ⊆ ℚ",
+            "correction": "Tout entier est un nombre rationnel.",
+            "p1": "ℤ ⊆ ℚ",
+            "p2": "ℚ ⊆ ℤ",
+            "p3": "π ∈ ℚ",
+            "p4": "1/3 ∈ ℤ"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle affirmation sur les ensembles de nombres est vraie ?",
+            "reponse": "ℚ ⊆ ℝ",
+            "correction": "Tout rationnel est un réel.",
+            "p1": "ℚ ⊆ ℝ",
+            "p2": "ℝ ⊆ ℚ",
+            "p3": "π ∈ ℚ",
+            "p4": "√2 ∈ ℚ"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-008",
@@ -102,10 +254,7 @@
           "réunion": "r _ _ _ _ _ n"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "appartenance"
-      },
+      "reponse": "appartenance",
       "propositions": [
         "appartenance",
         "inclusion",
@@ -128,10 +277,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "rationnel"
-      },
+      "reponse": "rationnel",
       "propositions": [
         "rationnel",
         "naturel",
@@ -147,10 +293,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−3"
-      },
+      "reponse": "−3",
       "propositions": [
         "−3",
         "3",

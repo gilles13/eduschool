@@ -9,7 +9,7 @@ produire(
   support = "tous",
   dossier = NULL,
   format = "html",
-  variantes = 5L,
+  variantes = 20L,
   ouvrir = TRUE,
   niveau = "",
   n = NULL,

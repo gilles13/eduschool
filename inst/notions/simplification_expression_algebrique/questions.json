@@ -5,10 +5,7 @@
       "id": "ALG-VAR-001",
       "type": "qcm",
       "enonce": "Simplifie [[expr]].",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",

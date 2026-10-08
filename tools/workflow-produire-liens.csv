@@ -1,0 +1,35 @@
+de;vers;libelle
+atelier;ryacas;
+ryacas;distracteurs;
+distracteurs;validation;
+validation;selection;
+selection;json;
+json;produire;contenu fini
+produire;tous;support = tous
+produire;fiche;découverte / synthèse
+produire;quiz;quiz
+tous;fiche;
+tous;quiz;
+fiche;rendu;
+quiz;questions;
+questions;tirages;
+tirages;question;
+question;variante;
+variante;remplacer;si variante
+variante;controle;sans variante
+remplacer;controle;
+controle;melange;
+melange;forme;
+forme;standard;standard
+forme;boite;boîte
+forme;trou;mot à trou
+forme;masque;mot masqué
+standard;illustration;
+boite;illustration;
+trou;illustration;
+masque;illustration;
+illustration;rendu;
+rendu;html;HTML
+rendu;pdf;PDF
+html;fichier;
+pdf;fichier;

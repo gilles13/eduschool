@@ -44,3 +44,44 @@ test_that("les masques des QCM sont complets et distincts", {
     }
   }
 })
+
+test_that("les nouvelles banques respectent le contrat vocabulaire", {
+  # Dette historique explicite. Une nouvelle banque n'entre jamais ici.
+  # Retirer une notion de cette liste des que ses deux formes sont presentes.
+  legacy_sans_contrat = c(
+    "cercle_trigonometrique", "decomposition_facteurs_premiers", "developpement_identites", "equations_carre_constante",
+    "equations_produit_nul", "evolution_pourcentage", "factorisation_facteur_commun", "factorisation_identites",
+    "fonctions_affine", "fonctions_carree", "fonctions_definition", "fonctions_lineaire",
+    "fractions_addition", "fractions_comparaison", "fractions_division", "fractions_droite",
+    "fractions_encadrement", "fractions_fois_entier", "fractions_multiplication", "fractions_problemes",
+    "fractions_quantite", "fractions_quotient", "fractions_soustraction", "fractions_terme_manquant",
+    "geometrie_deductive", "grandeur_quotient", "intervalles_reels", "pourcentage",
+    "probabilites_deux_epreuves", "probabilites_evenements_operations", "probabilites_experience_aleatoire", "probabilites_frequence_simulation",
+    "proportionnalite", "puissances_carres_cubes", "puissances_exposant_negatif", "puissances_notation_scientifique",
+    "puissances_proprietes", "pythagore", "racine_carree", "ratio",
+    "relatifs_addition_soustraction", "relatifs_multiplication_division", "relatifs_reperage", "simplification_expression_algebrique",
+    "statistiques_comparaison_series", "statistiques_indicateurs", "statistiques_quartiles_boite_moustaches", "statistiques_representations",
+    "trigonometrie_triangle_rectangle"
+  )
+  racine = system.file("notions", package = "eduschool")
+  fichiers = list.files(racine, pattern = "^questions[.]json$",
+                        recursive = TRUE, full.names = TRUE)
+  erreurs = character()
+  encore_legacy = character()
+  for (fichier in fichiers) {
+    notion = basename(dirname(fichier))
+    banque = jsonlite::fromJSON(fichier, simplifyVector = FALSE)
+    formes = vapply(banque$questions, function(q) {
+      type = q$presentation$type
+      if (is.null(type)) "" else type
+    }, character(1))
+    manque = setdiff(c("mot_a_trou", "mot_masque"), formes)
+    if (notion %in% legacy_sans_contrat) {
+      if (!length(manque)) encore_legacy = c(encore_legacy, notion)
+    } else if (length(manque)) {
+      erreurs = c(erreurs, paste(notion, "manque", paste(manque, collapse = " + ")))
+    }
+  }
+  expect_equal(erreurs, character())
+  expect_equal(encore_legacy, character())
+})

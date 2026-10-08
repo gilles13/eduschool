@@ -1,0 +1,28 @@
+id;groupe;titre;description
+atelier;AMONT;Atelier local jetable;Choisir le geste pédagogique, explorer beaucoup de combinaisons et préparer les candidats.
+ryacas;AMONT;Ryacas / Yacas;Calculer, simplifier et vérifier les mathématiques avant le JSON.
+distracteurs;AMONT;Distracteurs;Appliquer des raisonnements faux plausibles pour produire les propositions fausses.
+validation;AMONT;Validation;Écarter collisions, équivalences parasites et cas avec zéro ou plusieurs bonnes réponses.
+selection;AMONT;Sélection pédagogique;Retenir un ensemble fini, varié et utile de questions et variantes.
+json;AMONT;questions.json;Stocker réponse, propositions, correction, affichage et variantes déjà validés. Aucun calcul mathématique à refaire.
+produire;PRODUIRE;produire();Choisir le support, le format et le dossier puis lancer le modèle R Markdown adapté.
+tous;PRODUIRE;support = tous;Repérer les supports disponibles puis rappeler produire() pour découverte, synthèse et quiz.
+fiche;PRODUIRE;Fiche;Utiliser fiche.Rmd avec le Markdown découverte ou synthèse.
+quiz;PRODUIRE;Quiz;Utiliser quiz.Rmd et préparer les tirages en R.
+questions;QUIZ;questions();Lire questions.json ou réunir les banques des notions d’une famille.
+tirages;QUIZ;.tirer_questions_quiz_edu();Choisir les définitions, respecter n et tirages et consommer les variantes sans remise avant épuisement.
+question;QUIZ;question();Transformer une définition JSON finie en question runtime et effectuer seulement les contrôles structurels.
+variante;QUIZ;.instancier_variante_edu();S’il existe des variantes, en choisir une, récupérer ses paramètres et sa progression, supprimer la liste des variantes puis demander la substitution.
+remplacer;QUIZ;.remplacer_parametres_edu();Parcourir récursivement textes, listes et noms de champs et remplacer littéralement [[nom]] par sa valeur. Aucun calcul mathématique.
+controle;QUIZ;Contrôles structurels;Vérifier réponse unique, au moins deux propositions, absence de doublon, masques cohérents et correction présente.
+melange;QUIZ;Mélange;Mélanger l’ordre des propositions puis ajouter éventuellement l’humour sans modifier la correction.
+forme;FORMES;Présentation;Le type qcm / exercice / compréhension est surtout éditorial. Les traitements particuliers viennent de presentation, illustration et variantes.
+standard;FORMES;Standard;Afficher directement l’énoncé et les propositions. Aucun traitement particulier.
+boite;FORMES;Boîte;Transformer le marqueur de boîte prévu par la présentation pour l’affichage. La réponse reste celle du QCM.
+trou;FORMES;Mot à trou;Afficher pour chaque proposition son masque avec les lettres manquantes aux positions prévues. La valeur réelle reste la proposition corrigée.
+masque;FORMES;Mot masqué;Afficher un masque graphique de longueur fixe et l’avertissement obligatoire : sa longueur ne révèle pas celle du mot.
+illustration;FORMES;Illustration;Si une illustration est déclarée, illustrer_question() appelle graphique() et le générateur de inst/graphiques.
+rendu;RENDU;rmarkdown::render();Produire le document HTML ou PDF.
+html;RENDU;HTML;Utiliser les tirages précalculés : valider corrige le tirage courant et nouveau quiz passe au tirage suivant.
+pdf;RENDU;PDF;Produire un tirage imprimable suivi de son corrigé.
+fichier;RENDU;Fichier produit;Retourner le chemin et ouvrir le document si ouvrir = TRUE.

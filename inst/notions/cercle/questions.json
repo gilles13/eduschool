@@ -5,10 +5,7 @@
       "id": "CERC_RAYON_001",
       "type": "qcm",
       "enonce": "Le cercle a pour centre O et A est un point du cercle. Comment appelle-t-on le segment [OA] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "rayon"
-      },
+      "reponse": "rayon",
       "propositions": [
         "rayon",
         "diamètre",
@@ -24,10 +21,7 @@
       "id": "CERC_DIAM_001",
       "type": "qcm",
       "enonce": "A et B sont sur le cercle et [AB] passe par son centre O. Quel est le nom le plus précis de [AB] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "diamètre"
-      },
+      "reponse": "diamètre",
       "propositions": [
         "diamètre",
         "rayon",
@@ -42,30 +36,59 @@
     {
       "id": "CERC_EGAL_001",
       "type": "qcm",
-      "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 3 cm. Que vaut OB ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 cm",
-        "1,5 cm",
-        "6 cm",
-        "On ne peut pas le savoir"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
       "illustration": {
         "id": "cercle_rayons_egaux"
       },
-      "correction": "OA et OB sont deux rayons du même cercle. Ils ont donc la même longueur : OB = 3 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 3 cm. Que vaut OB ?",
+            "reponse": "3 cm",
+            "correction": "OA et OB sont deux rayons du même cercle. Ils ont donc la même longueur : OB = 3 cm.",
+            "p1": "3 cm",
+            "p2": "1,5 cm",
+            "p3": "6 cm",
+            "p4": "On ne peut pas le savoir"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 5 cm. Que vaut OB ?",
+            "reponse": "5 cm",
+            "correction": "Deux rayons d’un même cercle ont la même longueur : OB = OA = 5 cm.",
+            "p1": "5 cm",
+            "p2": "2,5 cm",
+            "p3": "10 cm",
+            "p4": "On ne peut pas le savoir"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 8 cm. Que vaut OB ?",
+            "reponse": "8 cm",
+            "correction": "Deux rayons d’un même cercle ont la même longueur : OB = OA = 8 cm.",
+            "p1": "8 cm",
+            "p2": "4 cm",
+            "p3": "16 cm",
+            "p4": "On ne peut pas le savoir"
+          }
+        }
+      ]
     },
     {
       "id": "CERC_JUST_001",
       "type": "qcm",
       "enonce": "Sans mesurer la figure, pourquoi peut-on affirmer que OA = OB ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Parce que OA et OB sont des rayons du même cercle"
-      },
+      "reponse": "Parce que OA et OB sont des rayons du même cercle",
       "propositions": [
         "Parce que OA et OB sont des rayons du même cercle",
         "Parce que les deux segments semblent avoir la même longueur sur le dessin",
@@ -81,10 +104,7 @@
       "id": "CERC_CORDE_001",
       "type": "qcm",
       "enonce": "A et B sont deux points du cercle. Le segment [AB] ne passe pas par le centre O. Comment appelle-t-on [AB] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Une corde"
-      },
+      "reponse": "Une corde",
       "propositions": [
         "Une corde",
         "Un diamètre",
@@ -109,10 +129,7 @@
           "disque": "d _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "corde"
-      },
+      "reponse": "corde",
       "propositions": [
         "corde",
         "rayon",
@@ -138,10 +155,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "diamètre"
-      },
+      "reponse": "diamètre",
       "propositions": [
         "diamètre",
         "rayon",

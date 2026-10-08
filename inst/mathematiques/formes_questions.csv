@@ -1,0 +1,47 @@
+notion;forme;explication
+Transversal;Calcul direct;Effectuer un calcul et donner son résultat.
+Transversal;Boîte à trou;Retrouver une valeur ou une expression manquante dans une égalité ou une relation.
+Transversal;Choix binaire;Choisir entre deux réponses opposées comme oui/non, vrai/faux ou correct/incorrect.
+Transversal;Comparaison à trois choix;Comparer deux objets ou expressions et répondre plus petit, égal ou plus grand.
+Transversal;Toujours / parfois / jamais;Déterminer si une affirmation est toujours vraie, parfois vraie ou jamais vraie.
+Transversal;Repérer l'erreur;Identifier une erreur dans un calcul, une égalité ou un raisonnement proposé.
+Transversal;Choisir le bon résultat;Reconnaître parmi plusieurs propositions le résultat qui convient.
+Transversal;Choisir l'étape correcte;Identifier la transformation ou l'étape qui permet de poursuivre correctement.
+Transversal;Étape manquante;Retrouver une étape intermédiaire dans un calcul ou un raisonnement commencé.
+Transversal;Ordonner par choix;Choisir la proposition qui range correctement plusieurs objets selon l'ordre demandé.
+Transversal;Classer;Affecter un objet mathématique à la catégorie correcte.
+Transversal;Associer deux représentations;Reconnaître deux représentations d'un même objet mathématique.
+Transversal;Choisir la représentation correcte;Identifier la représentation correspondant à un objet ou une situation.
+Transversal;Choisir la méthode;Identifier parmi plusieurs démarches celle qui permet de résoudre le problème.
+Transversal;Même résultat ou non;Déterminer si deux méthodes, calculs ou expressions conduisent au même résultat.
+Transversal;Encadrer;Situer un nombre ou une expression entre deux valeurs ou bornes.
+Transversal;Valeur de référence;Comparer un objet à une valeur de référence simple.
+Transversal;Traduire en expression;Choisir l'expression mathématique correspondant à une situation ou une description.
+Transversal;Interpréter une expression;Choisir la situation ou la description correspondant à une expression mathématique.
+Transversal;Lecture d'information;Extraire une valeur ou une information d'un tableau, graphique, diagramme ou autre représentation.
+Transversal;Repérer une caractéristique;Identifier sur une représentation un maximum, minimum, zéro, intersection, tendance ou autre propriété remarquable.
+Transversal;Interpréter une représentation;Déduire ce qu'un tableau, graphique ou diagramme permet d'affirmer.
+Transversal;Détecter une représentation trompeuse;Repérer une échelle, un axe ou une construction graphique susceptible d'induire une mauvaise interprétation.
+fractions_comparaison;Comparaison à trois choix;Comparer une fraction à une autre fraction ou à une valeur de référence.
+fractions_comparaison;Lecture d'information;Lire une fraction représentée par une barre partagée en parts égales.
+fractions_encadrement;Encadrer;Situer une fraction entre deux entiers consécutifs, avec ou sans droite graduée.
+fractions_encadrement;Valeur de référence;Situer une fraction par rapport à 1 sans passer par une approximation décimale.
+fractions_equivalentes;Associer deux représentations;Relier une représentation graphique à une écriture fractionnaire équivalente.
+fractions_equivalentes;Choix binaire;Décider si deux fractions sont équivalentes.
+fractions_irreductibles;Choisir la méthode;Identifier le diviseur commun qui permet de rendre une fraction irréductible.
+fractions_irreductibles;Choix binaire;Décider si une fraction est déjà irréductible.
+fractions_quantite;Lecture d'information;Compléter une quantité manquante à partir d'un tableau total-fraction-quantité.
+fractions_quantite;Interpréter une expression;Expliquer ce que signifie prendre une fraction d'une quantité.
+fractions_problemes;Choisir la méthode;Choisir le calcul qui traduit un problème de fraction d'une quantité.
+fractions_problemes;Lecture d'information;Lire un tableau total-fraction-quantité pour résoudre un problème.
+fractions_quotient;Associer deux représentations;Relier une barre de fraction à l'écriture du quotient correspondant.
+fractions_quotient;Choix binaire;Reconnaître qu'une fraction représente exactement un quotient.
+fractions_soustraction;Choisir la méthode;Choisir la première démarche correcte pour soustraire deux fractions.
+fractions_soustraction;Repérer l'erreur;Identifier une égalité erronée dans un calcul de soustraction de fractions.
+fractions_multiplication;Choisir la méthode;Choisir la règle correcte pour multiplier deux fractions.
+fractions_multiplication;Repérer l'erreur;Identifier une égalité erronée dans un calcul de multiplication de fractions.
+fractions_division;Choisir la méthode;Reconnaître que diviser par une fraction revient à multiplier par son inverse.
+fractions_division;Repérer l'erreur;Identifier une inversion ou une égalité erronée dans une division de fractions.
+fractions_fois_entier;Choisir la méthode;Choisir une écriture utile pour multiplier un entier par une fraction.
+fractions_fois_entier;Repérer l'erreur;Identifier une égalité erronée dans le produit d'un entier par une fraction.
+fractions_terme_manquant;Choisir la méthode;Choisir l'opération inverse qui permet de retrouver le terme manquant.

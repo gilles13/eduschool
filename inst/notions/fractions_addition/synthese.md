@@ -12,9 +12,20 @@ On additionne des fractions après les avoir exprimées avec un même dénominat
 
 ## Méthode
 
-Chercher un dénominateur commun, écrire des fractions équivalentes, puis additionner les numérateurs. Le dénominateur commun reste inchangé.
+Commencer par regarder les deux dénominateurs :
 
-## Exemple
+- si l’un est un multiple de l’autre, prendre le plus grand ;
+- sinon, prendre simplement le produit des deux dénominateurs.
+
+Écrire ensuite des fractions équivalentes, additionner les numérateurs et simplifier le résultat si nécessaire.
+
+## Exemples
+
+Si un dénominateur convient déjà :
+
+$$\frac{1}{4}+\frac{3}{8}=\frac{2}{8}+\frac{3}{8}=\frac{5}{8}.$$
+
+Sinon, on peut multiplier les deux dénominateurs :
 
 $$\frac{1}{2}+\frac{1}{3}=\frac{3}{6}+\frac{2}{6}=\frac{5}{6}.$$
 

@@ -4,66 +4,194 @@
     {
       "id": "ENCADREMENT_DECIMAUX-001",
       "type": "qcm",
-      "enonce": "Quel encadrement par deux entiers consécutifs convient à 13,4 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "13 < 13,4 < 14"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "13 < 13,4 < 14",
-        "12 < 13,4 < 14",
-        "13 < 13,4 < 15",
-        "13,3 < 13,4 < 13,5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les deux bornes sont des entiers consécutifs."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel encadrement par deux entiers consécutifs convient à 13,4 ?",
+            "reponse": "13 < 13,4 < 14",
+            "correction": "Les deux bornes sont des entiers consécutifs.",
+            "p1": "13 < 13,4 < 14",
+            "p2": "12 < 13,4 < 14",
+            "p3": "13 < 13,4 < 15",
+            "p4": "13,3 < 13,4 < 13,5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement par deux entiers consécutifs convient à 23,4 ?",
+            "reponse": "23 < 23,4 < 24",
+            "correction": "Les deux bornes sont des entiers consécutifs.",
+            "p1": "23 < 23,4 < 24",
+            "p2": "22 < 23,4 < 24",
+            "p3": "23 < 23,4 < 25",
+            "p4": "23,3 < 23,4 < 23,5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement par deux entiers consécutifs convient à 33,4 ?",
+            "reponse": "33 < 33,4 < 34",
+            "correction": "Les deux bornes sont des entiers consécutifs.",
+            "p1": "33 < 33,4 < 34",
+            "p2": "32 < 33,4 < 34",
+            "p3": "33 < 33,4 < 35",
+            "p4": "33,3 < 33,4 < 33,5"
+          }
+        }
+      ]
     },
     {
       "id": "ENCADREMENT_DECIMAUX-002",
       "type": "qcm",
-      "enonce": "Quel encadrement par deux dixièmes consécutifs convient à 2,76 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2,7 < 2,76 < 2,8"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2,7 < 2,76 < 2,8",
-        "2,6 < 2,76 < 2,8",
-        "2,7 < 2,76 < 2,9",
-        "2,75 < 2,76 < 2,77"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les bornes 2,7 et 2,8 diffèrent d’un dixième."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel encadrement par deux dixièmes consécutifs convient à 2,76 ?",
+            "reponse": "2,7 < 2,76 < 2,8",
+            "correction": "Les bornes 2,7 et 2,8 diffèrent d’un dixième.",
+            "p1": "2,7 < 2,76 < 2,8",
+            "p2": "2,6 < 2,76 < 2,8",
+            "p3": "2,7 < 2,76 < 2,9",
+            "p4": "2,75 < 2,76 < 2,77"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement par deux dixièmes consécutifs convient à 12,76 ?",
+            "reponse": "12,7 < 12,76 < 12,8",
+            "correction": "Les bornes 12,7 et 12,8 diffèrent d’un dixième.",
+            "p1": "12,7 < 12,76 < 12,8",
+            "p2": "12,6 < 12,76 < 12,8",
+            "p3": "12,7 < 12,76 < 12,9",
+            "p4": "12,75 < 12,76 < 12,77"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement par deux dixièmes consécutifs convient à 22,76 ?",
+            "reponse": "22,7 < 22,76 < 22,8",
+            "correction": "Les bornes 22,7 et 22,8 diffèrent d’un dixième.",
+            "p1": "22,7 < 22,76 < 22,8",
+            "p2": "22,6 < 22,76 < 22,8",
+            "p3": "22,7 < 22,76 < 22,9",
+            "p4": "22,75 < 22,76 < 22,77"
+          }
+        }
+      ]
     },
     {
       "id": "ENCADREMENT_DECIMAUX-003",
       "type": "qcm",
-      "enonce": "Lequel de ces nombres appartient strictement à l’intervalle entre 6,2 et 6,3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6,25"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6,25",
-        "6,31",
-        "6,19",
-        "6,30"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "6,25 est plus grand que 6,2 et plus petit que 6,3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Lequel de ces nombres appartient strictement à l’intervalle entre 6,2 et 6,3 ?",
+            "reponse": "6,25",
+            "correction": "6,25 est plus grand que 6,2 et plus petit que 6,3.",
+            "p1": "6,25",
+            "p2": "6,31",
+            "p3": "6,19",
+            "p4": "6,30"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lequel de ces nombres appartient strictement à l’intervalle entre 16,2 et 16,3 ?",
+            "reponse": "16,25",
+            "correction": "16,25 est plus grand que 16,2 et plus petit que 16,3.",
+            "p1": "16,25",
+            "p2": "16,31",
+            "p3": "16,19",
+            "p4": "16,3"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lequel de ces nombres appartient strictement à l’intervalle entre 26,2 et 26,3 ?",
+            "reponse": "26,25",
+            "correction": "26,25 est plus grand que 26,2 et plus petit que 26,3.",
+            "p1": "26,25",
+            "p2": "26,31",
+            "p3": "26,19",
+            "p4": "26,3"
+          }
+        }
+      ]
     },
     {
       "id": "ENCADREMENT_DECIMAUX-004",
       "type": "qcm",
-      "enonce": "Quel encadrement au centième convient à 3,456 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3,45 < 3,456 < 3,46"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3,45 < 3,456 < 3,46",
-        "3,4 < 3,456 < 3,5",
-        "3,45 < 3,456 < 3,47",
-        "3,456 < 3,456 < 3,46"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les deux bornes consécutives au centième sont 3,45 et 3,46."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel encadrement au centième convient à 3,456 ?",
+            "reponse": "3,45 < 3,456 < 3,46",
+            "correction": "Les deux bornes consécutives au centième sont 3,45 et 3,46.",
+            "p1": "3,45 < 3,456 < 3,46",
+            "p2": "3,4 < 3,456 < 3,5",
+            "p3": "3,45 < 3,456 < 3,47",
+            "p4": "3,456 < 3,456 < 3,46"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement au centième convient à 13,456 ?",
+            "reponse": "13,45 < 13,456 < 13,46",
+            "correction": "Les deux bornes consécutives au centième sont 13,45 et 13,46.",
+            "p1": "13,45 < 13,456 < 13,46",
+            "p2": "13,4 < 13,456 < 13,5",
+            "p3": "13,45 < 13,456 < 13,47",
+            "p4": "13,456 < 13,456 < 13,46"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel encadrement au centième convient à 23,456 ?",
+            "reponse": "23,45 < 23,456 < 23,46",
+            "correction": "Les deux bornes consécutives au centième sont 23,45 et 23,46.",
+            "p1": "23,45 < 23,456 < 23,46",
+            "p2": "23,4 < 23,456 < 23,5",
+            "p3": "23,45 < 23,456 < 23,47",
+            "p4": "23,456 < 23,456 < 23,46"
+          }
+        }
+      ]
     },
     {
       "id": "ENCADREMENT_DECIMAUX-MOT_A_TROU",
@@ -78,10 +206,7 @@
           "quotient": "q _ _ _ _ _ _ t"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "encadrement"
-      },
+      "reponse": "encadrement",
       "propositions": [
         "encadrement",
         "arrondi",
@@ -104,10 +229,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "encadrement"
-      },
+      "reponse": "encadrement",
       "propositions": [
         "encadrement",
         "arrondi",

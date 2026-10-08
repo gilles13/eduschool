@@ -5,10 +5,7 @@
       "id": "ARI-VAR-001",
       "type": "qcm",
       "enonce": "Quelle est la décomposition en facteurs premiers de [[n]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",

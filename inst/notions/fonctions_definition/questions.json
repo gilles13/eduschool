@@ -5,10 +5,7 @@
       "id": "FONC-001",
       "type": "qcm",
       "enonce": "La fonction f est définie par f(𝑥) = [[a]]𝑥 [[b]]. Quelle est l’image de [[x]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -622,34 +619,98 @@
     {
       "id": "FONC-002",
       "type": "qcm",
-      "enonce": "Dans l’écriture f(3)=7, quel nombre est l’image de 3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "7"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "7",
-        "3",
-        "f",
-        "10"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "f(3)=7 signifie que la fonction associe 7 au nombre 3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans l’écriture f(3)=7, quel nombre est l’image de 3 ?",
+            "reponse": "7",
+            "correction": "f(3)=7 signifie que la fonction associe 7 au nombre 3.",
+            "p1": "7",
+            "p2": "3",
+            "p3": "f",
+            "p4": "10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans l’écriture f(5)=9, quel nombre est l’image de 5 ?",
+            "reponse": "9",
+            "correction": "Dans f(5)=9, l’image de 5 est 9.",
+            "p1": "9",
+            "p2": "5",
+            "p3": "14",
+            "p4": "4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans l’écriture f(−2)=6, quel nombre est l’image de −2 ?",
+            "reponse": "6",
+            "correction": "Dans f(−2)=6, l’image de −2 est 6.",
+            "p1": "6",
+            "p2": "−2",
+            "p3": "4",
+            "p4": "8"
+          }
+        }
+      ]
     },
     {
       "id": "FONC-003",
       "type": "qcm",
-      "enonce": "Dans l’écriture f(3)=7, que peut-on dire de 3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3 est un antécédent de 7."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 est un antécédent de 7.",
-        "3 est l’image de 7.",
-        "7 est un antécédent de 3.",
-        "3 est le coefficient de f."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un antécédent est une valeur de départ qui produit l’image considérée."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans l’écriture f(3)=7, que peut-on dire de 3 ?",
+            "reponse": "3 est un antécédent de 7.",
+            "correction": "Un antécédent est une valeur de départ qui produit l’image considérée.",
+            "p1": "3 est un antécédent de 7.",
+            "p2": "3 est l’image de 7.",
+            "p3": "7 est un antécédent de 3.",
+            "p4": "3 est le coefficient de f."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans l’écriture f(5)=9, que peut-on dire de 5 ?",
+            "reponse": "5 est un antécédent de 9.",
+            "correction": "L’écriture f(5)=9 signifie que 5 est un antécédent de 9.",
+            "p1": "5 est un antécédent de 9.",
+            "p2": "5 est l’image de 9.",
+            "p3": "9 est un antécédent de 5.",
+            "p4": "5 est forcément l’unique antécédent de 9."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans l’écriture f(−2)=6, que peut-on dire de −2 ?",
+            "reponse": "−2 est un antécédent de 6.",
+            "correction": "L’écriture f(−2)=6 signifie que −2 est un antécédent de 6.",
+            "p1": "−2 est un antécédent de 6.",
+            "p2": "−2 est l’image de 6.",
+            "p3": "6 est un antécédent de −2.",
+            "p4": "−2 est forcément l’unique antécédent de 6."
+          }
+        }
+      ]
     }
   ]
 }

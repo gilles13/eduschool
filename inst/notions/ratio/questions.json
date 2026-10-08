@@ -5,10 +5,7 @@
       "id": "RATIO-001",
       "type": "qcm",
       "enonce": "Une quantité totale de [[total]] est partagée selon le ratio [[a]]:[[b]]. Quel partage convient ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -556,100 +553,104 @@
             "d3": "60 et 50"
           },
           "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "1",
-            "b": "2",
-            "total": "6",
-            "bonne": "2 et 4",
-            "d1": "3 et 4",
-            "d2": "2 et 5",
-            "d3": "4 et 2"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "2",
-            "b": "4",
-            "total": "18",
-            "bonne": "6 et 12",
-            "d1": "7 et 12",
-            "d2": "6 et 13",
-            "d3": "12 et 6"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "3",
-            "b": "6",
-            "total": "36",
-            "bonne": "12 et 24",
-            "d1": "13 et 24",
-            "d2": "12 et 25",
-            "d3": "24 et 12"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "4",
-            "b": "2",
-            "total": "30",
-            "bonne": "20 et 10",
-            "d1": "21 et 10",
-            "d2": "20 et 11",
-            "d3": "10 et 20"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "a": "5",
-            "b": "4",
-            "total": "54",
-            "bonne": "30 et 24",
-            "d1": "31 et 24",
-            "d2": "30 et 25",
-            "d3": "24 et 30"
-          },
-          "progression": 3
         }
       ]
     },
     {
       "id": "RATIO-002",
       "type": "qcm",
-      "enonce": "Que compare le ratio 2:3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Deux quantités correspondant à 2 parts et 3 parts."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Deux quantités correspondant à 2 parts et 3 parts.",
-        "Deux quantités dont la somme vaut toujours 5.",
-        "Une fraction nécessairement égale à 2/5.",
-        "Deux quantités nécessairement mesurées dans des unités différentes."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un ratio décrit les nombres de parts attribuées aux quantités comparées."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que compare le ratio 2:3 ?",
+            "reponse": "Deux quantités correspondant à 2 parts et 3 parts.",
+            "correction": "Un ratio décrit les nombres de parts attribuées aux quantités comparées.",
+            "p1": "Deux quantités correspondant à 2 parts et 3 parts.",
+            "p2": "Deux quantités dont la somme vaut toujours 5.",
+            "p3": "Une fraction nécessairement égale à 2/5.",
+            "p4": "Deux quantités nécessairement mesurées dans des unités différentes."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que compare le ratio 4:6 ?",
+            "reponse": "Deux quantités correspondant à 4 parts et 6 parts.",
+            "correction": "Le rapport entre les quantités est conservé ; la réponse correcte est Deux quantités correspondant à 4 parts et 6 parts..",
+            "p1": "Deux quantités correspondant à 4 parts et 6 parts.",
+            "p2": "Deux quantités dont la somme vaut toujours 10.",
+            "p3": "Une fraction nécessairement égale à 4/10.",
+            "p4": "Deux quantités nécessairement mesurées dans des unités différentes."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que compare le ratio 6:9 ?",
+            "reponse": "Deux quantités correspondant à 6 parts et 9 parts.",
+            "correction": "Le rapport entre les quantités est conservé ; la réponse correcte est Deux quantités correspondant à 6 parts et 9 parts..",
+            "p1": "Deux quantités correspondant à 6 parts et 9 parts.",
+            "p2": "Deux quantités dont la somme vaut toujours 15.",
+            "p3": "Une fraction nécessairement égale à 6/15.",
+            "p4": "Deux quantités nécessairement mesurées dans des unités différentes."
+          }
+        }
+      ]
     },
     {
       "id": "RATIO-003",
       "type": "qcm",
-      "enonce": "Deux grandeurs sont dans le ratio 3:4. Si la première vaut 12, combien vaut la seconde ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "16"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "16",
-        "9",
-        "15",
-        "48"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "12 correspond à 3 parts, donc une part vaut 4 et 4 parts valent 16."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Deux grandeurs sont dans le ratio 3:4. Si la première vaut 12, combien vaut la seconde ?",
+            "reponse": "16",
+            "correction": "12 correspond à 3 parts, donc une part vaut 4 et 4 parts valent 16.",
+            "p1": "16",
+            "p2": "9",
+            "p3": "15",
+            "p4": "48"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux grandeurs sont dans le ratio 6:8. Si la première vaut 24, combien vaut la seconde ?",
+            "reponse": "32",
+            "correction": "Le rapport entre les quantités est conservé ; la réponse correcte est 32.",
+            "p1": "32",
+            "p2": "18",
+            "p3": "30",
+            "p4": "96"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux grandeurs sont dans le ratio 9:12. Si la première vaut 36, combien vaut la seconde ?",
+            "reponse": "48",
+            "correction": "Le rapport entre les quantités est conservé ; la réponse correcte est 48.",
+            "p1": "48",
+            "p2": "27",
+            "p3": "45",
+            "p4": "144"
+          }
+        }
+      ]
     }
   ]
 }

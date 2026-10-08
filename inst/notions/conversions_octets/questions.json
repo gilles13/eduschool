@@ -4,98 +4,194 @@
     {
       "id": "MES-CONVERSION_OCTETS-001",
       "type": "qcm",
-      "enonce": "[[quantite]] Mo correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "4",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "ko",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4 000 ko",
-        "400 ko",
-        "4 ko",
-        "40 000 ko"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 Mo = 1 000 ko, donc 4 Mo = 4 000 ko."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "4 Mo correspondent à…",
+            "reponse": "4 000 ko",
+            "correction": "1 Mo = 1 000 ko, donc 4 Mo = 4 000 ko.",
+            "p1": "4 000 ko",
+            "p2": "400 ko",
+            "p3": "4 ko",
+            "p4": "40 000 ko"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "8 Mo correspondent à…",
+            "reponse": "8 000 ko",
+            "correction": "En convertissant dans l’unité demandée, on obtient 8 000 ko.",
+            "p1": "8 000 ko",
+            "p2": "800 ko",
+            "p3": "8 ko",
+            "p4": "80 000 ko"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "12 Mo correspondent à…",
+            "reponse": "12 000 ko",
+            "correction": "En convertissant dans l’unité demandée, on obtient 12 000 ko.",
+            "p1": "12 000 ko",
+            "p2": "1200 ko",
+            "p3": "12 ko",
+            "p4": "120 000 ko"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_OCTETS-002",
       "type": "qcm",
-      "enonce": "[[quantite]] ko correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "2500",
-          "1/1000"
-        ],
-        "format": "decimal",
-        "unite": "Mo",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2,5 Mo",
-        "25 Mo",
-        "250 Mo",
-        "0,25 Mo"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "2 500 ÷ 1 000 = 2,5 Mo."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "2500 ko correspondent à…",
+            "reponse": "2,5 Mo",
+            "correction": "2 500 ÷ 1 000 = 2,5 Mo.",
+            "p1": "2,5 Mo",
+            "p2": "25 Mo",
+            "p3": "250 Mo",
+            "p4": "0,25 Mo"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "5000 ko correspondent à…",
+            "reponse": "5,0 Mo",
+            "correction": "En convertissant dans l’unité demandée, on obtient 5,0 Mo.",
+            "p1": "5,0 Mo",
+            "p2": "50 Mo",
+            "p3": "500 Mo",
+            "p4": "0,50 Mo"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "7500 ko correspondent à…",
+            "reponse": "7,5 Mo",
+            "correction": "En convertissant dans l’unité demandée, on obtient 7,5 Mo.",
+            "p1": "7,5 Mo",
+            "p2": "75 Mo",
+            "p3": "750 Mo",
+            "p4": "0,75 Mo"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_OCTETS-003",
       "type": "qcm",
-      "enonce": "[[quantite]] Go correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "3",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "Mo",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 000 Mo",
-        "300 Mo",
-        "30 Mo",
-        "3 Mo"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 Go = 1 000 Mo, donc 3 Go = 3 000 Mo."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "3 Go correspondent à…",
+            "reponse": "3 000 Mo",
+            "correction": "1 Go = 1 000 Mo, donc 3 Go = 3 000 Mo.",
+            "p1": "3 000 Mo",
+            "p2": "300 Mo",
+            "p3": "30 Mo",
+            "p4": "3 Mo"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "6 Go correspondent à…",
+            "reponse": "6 000 Mo",
+            "correction": "En convertissant dans l’unité demandée, on obtient 6 000 Mo.",
+            "p1": "6 000 Mo",
+            "p2": "600 Mo",
+            "p3": "60 Mo",
+            "p4": "6 Mo"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "9 Go correspondent à…",
+            "reponse": "9 000 Mo",
+            "correction": "En convertissant dans l’unité demandée, on obtient 9 000 Mo.",
+            "p1": "9 000 Mo",
+            "p2": "900 Mo",
+            "p3": "90 Mo",
+            "p4": "9 Mo"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_OCTETS-004",
       "type": "qcm",
-      "enonce": "Combien d’octets contient [[quantite]] Mo ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "1",
-          "1000000"
-        ],
-        "format": "decimal",
-        "unite": "o",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1 000 000 o",
-        "1 000 o",
-        "100 000 o",
-        "10 000 000 o"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 Mo = 1 000 ko et 1 ko = 1 000 o, donc 1 Mo = 1 000 000 o."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Combien d’octets contient 1 Mo ?",
+            "reponse": "1 000 000 o",
+            "correction": "1 Mo = 1 000 ko et 1 ko = 1 000 o, donc 1 Mo = 1 000 000 o.",
+            "p1": "1 000 000 o",
+            "p2": "1 000 o",
+            "p3": "100 000 o",
+            "p4": "10 000 000 o"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Combien d’octets contient 2 Mo ?",
+            "reponse": "2 000 000 o",
+            "correction": "En convertissant dans l’unité demandée, on obtient 2 000 000 o.",
+            "p1": "2 000 000 o",
+            "p2": "2 000 o",
+            "p3": "200 000 o",
+            "p4": "20 000 000 o"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Combien d’octets contient 3 Mo ?",
+            "reponse": "3 000 000 o",
+            "correction": "En convertissant dans l’unité demandée, on obtient 3 000 000 o.",
+            "p1": "3 000 000 o",
+            "p2": "3 000 o",
+            "p3": "300 000 o",
+            "p4": "30 000 000 o"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_OCTETS-VOCAB-TROU",
@@ -110,10 +206,7 @@
           "ordre": "o _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "octet"
-      },
+      "reponse": "octet",
       "propositions": [
         "octet",
         "bit",
@@ -136,10 +229,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "gigaoctet"
-      },
+      "reponse": "gigaoctet",
       "propositions": [
         "gigaoctet",
         "mégaoctet",
@@ -151,18 +241,50 @@
     {
       "id": "MES-CONVERSION_OCTETS-APPLICATION",
       "type": "qcm",
-      "enonce": "Dans le système décimal, un fichier fait 2,5 Mo. Combien cela représente-t-il de ko ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2 500 ko"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 500 ko",
-        "250 ko",
-        "25 000 ko",
-        "2,5 ko"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans le système décimal, un fichier fait 2,5 Mo. Combien cela représente-t-il de ko ?",
+            "reponse": "2 500 ko",
+            "correction": "Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko.",
+            "p1": "2 500 ko",
+            "p2": "250 ko",
+            "p3": "25 000 ko",
+            "p4": "2,5 ko"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans le système décimal, un fichier fait 5,0 Mo. Combien cela représente-t-il de ko ?",
+            "reponse": "5 000 ko",
+            "correction": "En convertissant dans l’unité demandée, on obtient 5 000 ko.",
+            "p1": "5 000 ko",
+            "p2": "500 ko",
+            "p3": "50 000 ko",
+            "p4": "5,0 ko"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans le système décimal, un fichier fait 7,5 Mo. Combien cela représente-t-il de ko ?",
+            "reponse": "7 500 ko",
+            "correction": "En convertissant dans l’unité demandée, on obtient 7 500 ko.",
+            "p1": "7 500 ko",
+            "p2": "750 ko",
+            "p3": "75 000 ko",
+            "p4": "7,5 ko"
+          }
+        }
+      ]
     }
   ]
 }

@@ -4,82 +4,269 @@
     {
       "id": "FRAC-MIG-DIVISION-FRACTIONS-001",
       "type": "qcm",
-      "enonce": "Quelle multiplication équivaut à [[source]] ?",
-      "reponse": {
-        "mode": "relation_fixe",
-        "moteur": "Ryacas",
-        "relation": "equivalent",
-        "expression": "(2/3)/(4/5)",
-        "affichage": "2/3 ÷ 4/5",
-        "candidats": {
-          "2/3 × 5/4": "(2/3)*(5/4)",
-          "2/3 × 4/5": "(2/3)*(4/5)",
-          "3/2 × 5/4": "(3/2)*(5/4)",
-          "2/3 × 5/3": "(2/3)*(5/3)"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2/3 × 5/4",
-        "2/3 × 4/5",
-        "3/2 × 5/4",
-        "2/3 × 5/3"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Diviser par une fraction non nulle revient à multiplier par son inverse.\nJ’en déduis : On conserve la première fraction et on multiplie par l’inverse de 4/5."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle multiplication équivaut à 2/3 ÷ 4/5 ?",
+            "reponse": "\\(\\frac{2}{3}\\) × \\(\\frac{5}{4}\\)",
+            "correction": "Diviser par 4/5 revient à multiplier par son inverse 5/4.",
+            "p1": "\\(\\frac{2}{3}\\) × \\(\\frac{5}{4}\\)",
+            "p2": "\\(\\frac{2}{3}\\) × \\(\\frac{4}{5}\\)",
+            "p3": "\\(\\frac{3}{2}\\) × \\(\\frac{5}{4}\\)",
+            "p4": "\\(\\frac{2}{3}\\) + \\(\\frac{5}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle multiplication équivaut à 3/4 ÷ 2/5 ?",
+            "reponse": "\\(\\frac{3}{4}\\) × \\(\\frac{5}{2}\\)",
+            "correction": "Diviser par 2/5 revient à multiplier par son inverse 5/2.",
+            "p1": "\\(\\frac{3}{4}\\) × \\(\\frac{5}{2}\\)",
+            "p2": "\\(\\frac{3}{4}\\) × \\(\\frac{2}{5}\\)",
+            "p3": "\\(\\frac{4}{3}\\) × \\(\\frac{5}{2}\\)",
+            "p4": "\\(\\frac{3}{4}\\) + \\(\\frac{5}{2}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle multiplication équivaut à 5/6 ÷ 3/7 ?",
+            "reponse": "\\(\\frac{5}{6}\\) × \\(\\frac{7}{3}\\)",
+            "correction": "Diviser par 3/7 revient à multiplier par son inverse 7/3.",
+            "p1": "\\(\\frac{5}{6}\\) × \\(\\frac{7}{3}\\)",
+            "p2": "\\(\\frac{5}{6}\\) × \\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{6}{5}\\) × \\(\\frac{7}{3}\\)",
+            "p4": "\\(\\frac{5}{6}\\) + \\(\\frac{7}{3}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle multiplication équivaut à 4/9 ÷ 2/3 ?",
+            "reponse": "\\(\\frac{4}{9}\\) × \\(\\frac{3}{2}\\)",
+            "correction": "Diviser par 2/3 revient à multiplier par son inverse 3/2.",
+            "p1": "\\(\\frac{4}{9}\\) × \\(\\frac{3}{2}\\)",
+            "p2": "\\(\\frac{4}{9}\\) × \\(\\frac{2}{3}\\)",
+            "p3": "\\(\\frac{9}{4}\\) × \\(\\frac{3}{2}\\)",
+            "p4": "\\(\\frac{4}{9}\\) + \\(\\frac{3}{2}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle multiplication équivaut à 7/8 ÷ 5/6 ?",
+            "reponse": "\\(\\frac{7}{8}\\) × \\(\\frac{6}{5}\\)",
+            "correction": "Diviser par 5/6 revient à multiplier par son inverse 6/5.",
+            "p1": "\\(\\frac{7}{8}\\) × \\(\\frac{6}{5}\\)",
+            "p2": "\\(\\frac{7}{8}\\) × \\(\\frac{5}{6}\\)",
+            "p3": "\\(\\frac{8}{7}\\) × \\(\\frac{6}{5}\\)",
+            "p4": "\\(\\frac{7}{8}\\) + \\(\\frac{6}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle multiplication équivaut à 3/5 ÷ 9/10 ?",
+            "reponse": "\\(\\frac{3}{5}\\) × \\(\\frac{10}{9}\\)",
+            "correction": "Diviser par 9/10 revient à multiplier par son inverse 10/9.",
+            "p1": "\\(\\frac{3}{5}\\) × \\(\\frac{10}{9}\\)",
+            "p2": "\\(\\frac{3}{5}\\) × \\(\\frac{9}{10}\\)",
+            "p3": "\\(\\frac{5}{3}\\) × \\(\\frac{10}{9}\\)",
+            "p4": "\\(\\frac{3}{5}\\) + \\(\\frac{10}{9}\\)"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRAC-MIG-DIVISION-FRACTIONS-002",
       "type": "qcm",
-      "enonce": "Quelle fraction simplifiée manque : □ ÷ [[terme2]] = [[terme1]] ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "2/3",
-          "3/4"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/2",
-        "8/9",
-        "3/4",
-        "2/3"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Diviser par une fraction non nulle revient à multiplier par son inverse.\nJ’en déduis : Le nombre de départ est 2/3 × 3/4 = 6/12 = 1/2."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : □ ÷ \\(\\frac{3}{4}\\) = \\(\\frac{2}{3}\\) ?",
+            "reponse": "\\(\\frac{1}{2}\\)",
+            "correction": "La fraction cherchée est 2/3 × 3/4 = 1/2.",
+            "p1": "\\(\\frac{1}{2}\\)",
+            "p2": "\\(\\frac{3}{4}\\)",
+            "p3": "\\(\\frac{2}{3}\\)",
+            "p4": "\\(\\frac{3}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : □ ÷ \\(\\frac{4}{7}\\) = \\(\\frac{7}{10}\\) ?",
+            "reponse": "\\(\\frac{2}{5}\\)",
+            "correction": "La fraction cherchée est 7/10 × 4/7 = 2/5.",
+            "p1": "\\(\\frac{2}{5}\\)",
+            "p2": "\\(\\frac{4}{7}\\)",
+            "p3": "\\(\\frac{7}{10}\\)",
+            "p4": "\\(\\frac{8}{35}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : □ ÷ \\(\\frac{5}{6}\\) = \\(\\frac{9}{20}\\) ?",
+            "reponse": "\\(\\frac{3}{8}\\)",
+            "correction": "La fraction cherchée est 9/20 × 5/6 = 3/8.",
+            "p1": "\\(\\frac{3}{8}\\)",
+            "p2": "\\(\\frac{5}{6}\\)",
+            "p3": "\\(\\frac{9}{20}\\)",
+            "p4": "\\(\\frac{5}{16}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : □ ÷ \\(\\frac{2}{3}\\) = \\(\\frac{2}{3}\\) ?",
+            "reponse": "\\(\\frac{4}{9}\\)",
+            "correction": "La fraction cherchée est 2/3 × 2/3 = 4/9.",
+            "p1": "\\(\\frac{4}{9}\\)",
+            "p2": "\\(\\frac{2}{3}\\)",
+            "p3": "\\(\\frac{3}{4}\\)",
+            "p4": "\\(\\frac{8}{27}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : □ ÷ \\(\\frac{7}{8}\\) = \\(\\frac{10}{21}\\) ?",
+            "reponse": "\\(\\frac{5}{12}\\)",
+            "correction": "La fraction cherchée est 10/21 × 7/8 = 5/12.",
+            "p1": "\\(\\frac{5}{12}\\)",
+            "p2": "\\(\\frac{7}{8}\\)",
+            "p3": "\\(\\frac{10}{21}\\)",
+            "p4": "\\(\\frac{35}{96}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction simplifiée manque : □ ÷ \\(\\frac{9}{10}\\) = \\(\\frac{1}{3}\\) ?",
+            "reponse": "\\(\\frac{3}{10}\\)",
+            "correction": "La fraction cherchée est 1/3 × 9/10 = 3/10.",
+            "p1": "\\(\\frac{3}{10}\\)",
+            "p2": "\\(\\frac{9}{10}\\)",
+            "p3": "\\(\\frac{1}{3}\\)",
+            "p4": "\\(\\frac{27}{100}\\)"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRAC-MIG-DIVISION-FRACTIONS-003",
       "type": "qcm",
-      "enonce": "Je divise une fraction par [[terme2]] et j’obtiens [[terme1]]. Quelle était cette fraction simplifiée ?",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "3/4",
-          "2/3"
-        ],
-        "format": "fraction",
-        "unite": ""
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/2",
-        "9/8",
-        "2/3",
-        "3/4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Je vois : je repère les données et ce que demande la question.\nJe sais : Diviser par une fraction non nulle revient à multiplier par son inverse.\nJ’en déduis : La fraction initiale vaut 3/4 × 2/3 = 6/12 = 1/2."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Je divise une fraction par \\(\\frac{3}{4}\\) et j’obtiens \\(\\frac{2}{3}\\). Quelle était cette fraction ?",
+            "reponse": "\\(\\frac{1}{2}\\)",
+            "correction": "La fraction cherchée est 2/3 × 3/4 = 1/2.",
+            "p1": "\\(\\frac{1}{2}\\)",
+            "p2": "\\(\\frac{3}{4}\\)",
+            "p3": "\\(\\frac{2}{3}\\)",
+            "p4": "\\(\\frac{3}{8}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je divise une fraction par \\(\\frac{4}{7}\\) et j’obtiens \\(\\frac{7}{10}\\). Quelle était cette fraction ?",
+            "reponse": "\\(\\frac{2}{5}\\)",
+            "correction": "La fraction cherchée est 7/10 × 4/7 = 2/5.",
+            "p1": "\\(\\frac{2}{5}\\)",
+            "p2": "\\(\\frac{4}{7}\\)",
+            "p3": "\\(\\frac{7}{10}\\)",
+            "p4": "\\(\\frac{8}{35}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je divise une fraction par \\(\\frac{5}{6}\\) et j’obtiens \\(\\frac{9}{20}\\). Quelle était cette fraction ?",
+            "reponse": "\\(\\frac{3}{8}\\)",
+            "correction": "La fraction cherchée est 9/20 × 5/6 = 3/8.",
+            "p1": "\\(\\frac{3}{8}\\)",
+            "p2": "\\(\\frac{5}{6}\\)",
+            "p3": "\\(\\frac{9}{20}\\)",
+            "p4": "\\(\\frac{5}{16}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je divise une fraction par \\(\\frac{2}{3}\\) et j’obtiens \\(\\frac{2}{3}\\). Quelle était cette fraction ?",
+            "reponse": "\\(\\frac{4}{9}\\)",
+            "correction": "La fraction cherchée est 2/3 × 2/3 = 4/9.",
+            "p1": "\\(\\frac{4}{9}\\)",
+            "p2": "\\(\\frac{2}{3}\\)",
+            "p3": "\\(\\frac{3}{4}\\)",
+            "p4": "\\(\\frac{8}{27}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je divise une fraction par \\(\\frac{7}{8}\\) et j’obtiens \\(\\frac{10}{21}\\). Quelle était cette fraction ?",
+            "reponse": "\\(\\frac{5}{12}\\)",
+            "correction": "La fraction cherchée est 10/21 × 7/8 = 5/12.",
+            "p1": "\\(\\frac{5}{12}\\)",
+            "p2": "\\(\\frac{7}{8}\\)",
+            "p3": "\\(\\frac{10}{21}\\)",
+            "p4": "\\(\\frac{35}{96}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Je divise une fraction par \\(\\frac{9}{10}\\) et j’obtiens \\(\\frac{1}{3}\\). Quelle était cette fraction ?",
+            "reponse": "\\(\\frac{3}{10}\\)",
+            "correction": "La fraction cherchée est 1/3 × 9/10 = 3/10.",
+            "p1": "\\(\\frac{3}{10}\\)",
+            "p2": "\\(\\frac{9}{10}\\)",
+            "p3": "\\(\\frac{1}{3}\\)",
+            "p4": "\\(\\frac{27}{100}\\)"
+          },
+          "progression": 1
+        }
+      ]
     },
     {
       "id": "FRA-VAR-DIV-001",
       "type": "qcm",
       "enonce": "Calcule [[f1]] ÷ [[f2]] et donne le résultat sous forme simplifiée.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -90,231 +277,395 @@
       "variantes": [
         {
           "parametres": {
-            "f1": "1/2",
-            "f2": "2/3",
-            "bonne": "3/4",
-            "d1": "1/3",
-            "d2": "4/3",
-            "d3": "7/4",
-            "correction": "1/2 ÷ 2/3 = 3/4."
+            "f1": "\\(\\frac{1}{2}\\)",
+            "f2": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(\\frac{3}{4}\\)",
+            "d1": "\\(\\frac{1}{3}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{7}{4}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 1/2 ÷ 2/3 = 1/2 × 3/2.\nJe multiplie : 1 × 3 = 3 et 2 × 2 = 4.\nJ’obtiens 3/4.\n3/4 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "2/3",
-            "f2": "4/5",
-            "bonne": "5/6",
-            "d1": "8/15",
-            "d2": "6/5",
-            "d3": "11/6",
-            "correction": "2/3 ÷ 4/5 = 5/6."
+            "f1": "\\(\\frac{2}{3}\\)",
+            "f2": "\\(\\frac{4}{5}\\)",
+            "bonne": "\\(\\frac{5}{6}\\)",
+            "d1": "\\(\\frac{8}{15}\\)",
+            "d2": "\\(\\frac{6}{5}\\)",
+            "d3": "\\(\\frac{11}{6}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 2/3 ÷ 4/5 = 2/3 × 5/4.\nJe multiplie : 2 × 5 = 10 et 3 × 4 = 12.\nJ’obtiens 10/12.\nJe simplifie par 2 : 10/12 = 5/6"
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "3/4",
-            "f2": "2/5",
-            "bonne": "15/8",
-            "d1": "3/10",
-            "d2": "8/15",
-            "d3": "23/8",
-            "correction": "3/4 ÷ 2/5 = 15/8."
+            "f1": "\\(\\frac{3}{4}\\)",
+            "f2": "\\(\\frac{2}{5}\\)",
+            "bonne": "\\(\\frac{15}{8}\\)",
+            "d1": "\\(\\frac{3}{10}\\)",
+            "d2": "\\(\\frac{8}{15}\\)",
+            "d3": "\\(\\frac{23}{8}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 3/4 ÷ 2/5 = 3/4 × 5/2.\nJe multiplie : 3 × 5 = 15 et 4 × 2 = 8.\nJ’obtiens 15/8.\n15/8 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "5/6",
-            "f2": "5/9",
-            "bonne": "3/2",
-            "d1": "25/54",
-            "d2": "2/3",
-            "d3": "5/2",
-            "correction": "5/6 ÷ 5/9 = 3/2."
+            "f1": "\\(\\frac{5}{6}\\)",
+            "f2": "\\(\\frac{5}{9}\\)",
+            "bonne": "\\(\\frac{3}{2}\\)",
+            "d1": "\\(\\frac{25}{54}\\)",
+            "d2": "\\(\\frac{2}{3}\\)",
+            "d3": "\\(\\frac{5}{2}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 5/6 ÷ 5/9 = 5/6 × 9/5.\nJe multiplie : 5 × 9 = 45 et 6 × 5 = 30.\nJ’obtiens 45/30.\nJe simplifie par 15 : 45/30 = 3/2"
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "2/5",
-            "f2": "3/7",
-            "bonne": "14/15",
-            "d1": "6/35",
-            "d2": "15/14",
-            "d3": "29/15",
-            "correction": "2/5 ÷ 3/7 = 14/15."
+            "f1": "\\(\\frac{2}{5}\\)",
+            "f2": "\\(\\frac{3}{7}\\)",
+            "bonne": "\\(\\frac{14}{15}\\)",
+            "d1": "\\(\\frac{6}{35}\\)",
+            "d2": "\\(\\frac{15}{14}\\)",
+            "d3": "\\(\\frac{29}{15}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 2/5 ÷ 3/7 = 2/5 × 7/3.\nJe multiplie : 2 × 7 = 14 et 5 × 3 = 15.\nJ’obtiens 14/15.\n14/15 est déjà sous forme simplifiée."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "3/7",
-            "f2": "9/14",
-            "bonne": "2/3",
-            "d1": "27/98",
-            "d2": "3/2",
-            "d3": "5/3",
-            "correction": "3/7 ÷ 9/14 = 2/3."
+            "f1": "\\(\\frac{3}{7}\\)",
+            "f2": "\\(\\frac{9}{14}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{27}{98}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{5}{3}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 3/7 ÷ 9/14 = 3/7 × 14/9.\nJe multiplie : 3 × 14 = 42 et 7 × 9 = 63.\nJ’obtiens 42/63.\nJe simplifie par 21 : 42/63 = 2/3"
           },
           "progression": 1
         },
         {
           "parametres": {
-            "f1": "4/9",
-            "f2": "2/3",
-            "bonne": "2/3",
-            "d1": "8/27",
-            "d2": "3/2",
-            "d3": "5/3",
-            "correction": "4/9 ÷ 2/3 = 2/3."
+            "f1": "\\(\\frac{4}{9}\\)",
+            "f2": "\\(\\frac{2}{3}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{8}{27}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{5}{3}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 4/9 ÷ 2/3 = 4/9 × 3/2.\nJe multiplie : 4 × 3 = 12 et 9 × 2 = 18.\nJ’obtiens 12/18.\nJe simplifie par 6 : 12/18 = 2/3"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "5/8",
-            "f2": "15/16",
-            "bonne": "2/3",
-            "d1": "75/128",
-            "d2": "3/2",
-            "d3": "5/3",
-            "correction": "5/8 ÷ 15/16 = 2/3."
+            "f1": "\\(\\frac{5}{8}\\)",
+            "f2": "\\(\\frac{15}{16}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{75}{128}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{5}{3}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 5/8 ÷ 15/16 = 5/8 × 16/15.\nJe multiplie : 5 × 16 = 80 et 8 × 15 = 120.\nJ’obtiens 80/120.\nJe simplifie par 40 : 80/120 = 2/3"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "7/10",
-            "f2": "14/25",
-            "bonne": "5/4",
-            "d1": "49/125",
-            "d2": "4/5",
-            "d3": "9/4",
-            "correction": "7/10 ÷ 14/25 = 5/4."
+            "f1": "\\(\\frac{7}{10}\\)",
+            "f2": "\\(\\frac{14}{25}\\)",
+            "bonne": "\\(\\frac{5}{4}\\)",
+            "d1": "\\(\\frac{49}{125}\\)",
+            "d2": "\\(\\frac{4}{5}\\)",
+            "d3": "\\(\\frac{9}{4}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 7/10 ÷ 14/25 = 7/10 × 25/14.\nJe multiplie : 7 × 25 = 175 et 10 × 14 = 140.\nJ’obtiens 175/140.\nJe simplifie par 35 : 175/140 = 5/4"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "8/15",
-            "f2": "4/9",
-            "bonne": "6/5",
-            "d1": "32/135",
-            "d2": "5/6",
-            "d3": "11/5",
-            "correction": "8/15 ÷ 4/9 = 6/5."
+            "f1": "\\(\\frac{8}{15}\\)",
+            "f2": "\\(\\frac{4}{9}\\)",
+            "bonne": "\\(\\frac{6}{5}\\)",
+            "d1": "\\(\\frac{32}{135}\\)",
+            "d2": "\\(\\frac{5}{6}\\)",
+            "d3": "\\(\\frac{11}{5}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 8/15 ÷ 4/9 = 8/15 × 9/4.\nJe multiplie : 8 × 9 = 72 et 15 × 4 = 60.\nJ’obtiens 72/60.\nJe simplifie par 12 : 72/60 = 6/5"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "11/12",
-            "f2": "22/15",
-            "bonne": "5/8",
-            "d1": "121/90",
-            "d2": "8/5",
-            "d3": "13/8",
-            "correction": "11/12 ÷ 22/15 = 5/8."
+            "f1": "\\(\\frac{11}{12}\\)",
+            "f2": "\\(\\frac{22}{15}\\)",
+            "bonne": "\\(\\frac{5}{8}\\)",
+            "d1": "\\(\\frac{121}{90}\\)",
+            "d2": "\\(\\frac{8}{5}\\)",
+            "d3": "\\(\\frac{13}{8}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 11/12 ÷ 22/15 = 11/12 × 15/22.\nJe multiplie : 11 × 15 = 165 et 12 × 22 = 264.\nJ’obtiens 165/264.\nJe simplifie par 33 : 165/264 = 5/8"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "9/14",
-            "f2": "3/7",
-            "bonne": "3/2",
-            "d1": "27/98",
-            "d2": "2/3",
-            "d3": "5/2",
-            "correction": "9/14 ÷ 3/7 = 3/2."
+            "f1": "\\(\\frac{9}{14}\\)",
+            "f2": "\\(\\frac{3}{7}\\)",
+            "bonne": "\\(\\frac{3}{2}\\)",
+            "d1": "\\(\\frac{27}{98}\\)",
+            "d2": "\\(\\frac{2}{3}\\)",
+            "d3": "\\(\\frac{5}{2}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 9/14 ÷ 3/7 = 9/14 × 7/3.\nJe multiplie : 9 × 7 = 63 et 14 × 3 = 42.\nJ’obtiens 63/42.\nJe simplifie par 21 : 63/42 = 3/2"
           },
           "progression": 2
         },
         {
           "parametres": {
-            "f1": "5/6",
-            "f2": "10/21",
-            "bonne": "7/4",
-            "d1": "25/63",
-            "d2": "4/7",
-            "d3": "11/4",
-            "correction": "5/6 ÷ 10/21 = 7/4."
+            "f1": "\\(\\frac{5}{6}\\)",
+            "f2": "\\(\\frac{10}{21}\\)",
+            "bonne": "\\(\\frac{7}{4}\\)",
+            "d1": "\\(\\frac{25}{63}\\)",
+            "d2": "\\(\\frac{4}{7}\\)",
+            "d3": "\\(\\frac{11}{4}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 5/6 ÷ 10/21 = 5/6 × 21/10.\nJe multiplie : 5 × 21 = 105 et 6 × 10 = 60.\nJ’obtiens 105/60.\nJe simplifie par 15 : 105/60 = 7/4"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "7/12",
-            "f2": "14/15",
-            "bonne": "5/8",
-            "d1": "49/90",
-            "d2": "8/5",
-            "d3": "13/8",
-            "correction": "7/12 ÷ 14/15 = 5/8."
+            "f1": "\\(\\frac{7}{12}\\)",
+            "f2": "\\(\\frac{14}{15}\\)",
+            "bonne": "\\(\\frac{5}{8}\\)",
+            "d1": "\\(\\frac{49}{90}\\)",
+            "d2": "\\(\\frac{8}{5}\\)",
+            "d3": "\\(\\frac{13}{8}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 7/12 ÷ 14/15 = 7/12 × 15/14.\nJe multiplie : 7 × 15 = 105 et 12 × 14 = 168.\nJ’obtiens 105/168.\nJe simplifie par 21 : 105/168 = 5/8"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "11/18",
-            "f2": "22/27",
-            "bonne": "3/4",
-            "d1": "121/243",
-            "d2": "4/3",
-            "d3": "7/4",
-            "correction": "11/18 ÷ 22/27 = 3/4."
+            "f1": "\\(\\frac{11}{18}\\)",
+            "f2": "\\(\\frac{22}{27}\\)",
+            "bonne": "\\(\\frac{3}{4}\\)",
+            "d1": "\\(\\frac{121}{243}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{7}{4}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 11/18 ÷ 22/27 = 11/18 × 27/22.\nJe multiplie : 11 × 27 = 297 et 18 × 22 = 396.\nJ’obtiens 297/396.\nJe simplifie par 99 : 297/396 = 3/4"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "13/20",
-            "f2": "26/35",
-            "bonne": "7/8",
-            "d1": "169/350",
-            "d2": "8/7",
-            "d3": "15/8",
-            "correction": "13/20 ÷ 26/35 = 7/8."
+            "f1": "\\(\\frac{13}{20}\\)",
+            "f2": "\\(\\frac{26}{35}\\)",
+            "bonne": "\\(\\frac{7}{8}\\)",
+            "d1": "\\(\\frac{169}{350}\\)",
+            "d2": "\\(\\frac{8}{7}\\)",
+            "d3": "\\(\\frac{15}{8}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 13/20 ÷ 26/35 = 13/20 × 35/26.\nJe multiplie : 13 × 35 = 455 et 20 × 26 = 520.\nJ’obtiens 455/520.\nJe simplifie par 65 : 455/520 = 7/8"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "17/24",
-            "f2": "34/45",
-            "bonne": "15/16",
-            "d1": "289/540",
-            "d2": "16/15",
-            "d3": "31/16",
-            "correction": "17/24 ÷ 34/45 = 15/16."
+            "f1": "\\(\\frac{17}{24}\\)",
+            "f2": "\\(\\frac{34}{45}\\)",
+            "bonne": "\\(\\frac{15}{16}\\)",
+            "d1": "\\(\\frac{289}{540}\\)",
+            "d2": "\\(\\frac{16}{15}\\)",
+            "d3": "\\(\\frac{31}{16}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 17/24 ÷ 34/45 = 17/24 × 45/34.\nJe multiplie : 17 × 45 = 765 et 24 × 34 = 816.\nJ’obtiens 765/816.\nJe simplifie par 51 : 765/816 = 15/16"
           },
           "progression": 3
         },
         {
           "parametres": {
-            "f1": "19/30",
-            "f2": "38/55",
-            "bonne": "11/12",
-            "d1": "361/825",
-            "d2": "12/11",
-            "d3": "23/12",
-            "correction": "19/30 ÷ 38/55 = 11/12."
+            "f1": "\\(\\frac{19}{30}\\)",
+            "f2": "\\(\\frac{38}{55}\\)",
+            "bonne": "\\(\\frac{11}{12}\\)",
+            "d1": "\\(\\frac{361}{825}\\)",
+            "d2": "\\(\\frac{12}{11}\\)",
+            "d3": "\\(\\frac{23}{12}\\)",
+            "correction": "Je remplace la division par une multiplication par l’inverse : 19/30 ÷ 38/55 = 19/30 × 55/38.\nJe multiplie : 19 × 55 = 1045 et 30 × 38 = 1140.\nJ’obtiens 1045/1140.\nJe simplifie par 95 : 1045/1140 = 11/12"
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRA-DIV-METHODE-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "presentation": {
-        "math": [
-          "f1",
-          "f2",
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour calculer 2/3 ÷ 4/5, quelle démarche est correcte ?",
+            "reponse": "\\(\\frac{2}{3}\\) × \\(\\frac{5}{4}\\)",
+            "correction": "Diviser par 4/5 revient à multiplier par son inverse 5/4.",
+            "p1": "\\(\\frac{2}{3}\\) × \\(\\frac{5}{4}\\)",
+            "p2": "\\(\\frac{2}{3}\\) × \\(\\frac{4}{5}\\)",
+            "p3": "\\(\\frac{3}{2}\\) × \\(\\frac{5}{4}\\)",
+            "p4": "\\(\\frac{2}{3}\\) + \\(\\frac{5}{4}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 3/4 ÷ 2/5, quelle démarche est correcte ?",
+            "reponse": "\\(\\frac{3}{4}\\) × \\(\\frac{5}{2}\\)",
+            "correction": "Diviser par 2/5 revient à multiplier par son inverse 5/2.",
+            "p1": "\\(\\frac{3}{4}\\) × \\(\\frac{5}{2}\\)",
+            "p2": "\\(\\frac{3}{4}\\) × \\(\\frac{2}{5}\\)",
+            "p3": "\\(\\frac{4}{3}\\) × \\(\\frac{5}{2}\\)",
+            "p4": "\\(\\frac{3}{4}\\) + \\(\\frac{5}{2}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 5/6 ÷ 3/7, quelle démarche est correcte ?",
+            "reponse": "\\(\\frac{5}{6}\\) × \\(\\frac{7}{3}\\)",
+            "correction": "Diviser par 3/7 revient à multiplier par son inverse 7/3.",
+            "p1": "\\(\\frac{5}{6}\\) × \\(\\frac{7}{3}\\)",
+            "p2": "\\(\\frac{5}{6}\\) × \\(\\frac{3}{7}\\)",
+            "p3": "\\(\\frac{6}{5}\\) × \\(\\frac{7}{3}\\)",
+            "p4": "\\(\\frac{5}{6}\\) + \\(\\frac{7}{3}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 4/9 ÷ 2/3, quelle démarche est correcte ?",
+            "reponse": "\\(\\frac{4}{9}\\) × \\(\\frac{3}{2}\\)",
+            "correction": "Diviser par 2/3 revient à multiplier par son inverse 3/2.",
+            "p1": "\\(\\frac{4}{9}\\) × \\(\\frac{3}{2}\\)",
+            "p2": "\\(\\frac{4}{9}\\) × \\(\\frac{2}{3}\\)",
+            "p3": "\\(\\frac{9}{4}\\) × \\(\\frac{3}{2}\\)",
+            "p4": "\\(\\frac{4}{9}\\) + \\(\\frac{3}{2}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 7/8 ÷ 5/6, quelle démarche est correcte ?",
+            "reponse": "\\(\\frac{7}{8}\\) × \\(\\frac{6}{5}\\)",
+            "correction": "Diviser par 5/6 revient à multiplier par son inverse 6/5.",
+            "p1": "\\(\\frac{7}{8}\\) × \\(\\frac{6}{5}\\)",
+            "p2": "\\(\\frac{7}{8}\\) × \\(\\frac{5}{6}\\)",
+            "p3": "\\(\\frac{8}{7}\\) × \\(\\frac{6}{5}\\)",
+            "p4": "\\(\\frac{7}{8}\\) + \\(\\frac{6}{5}\\)"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Pour calculer 3/5 ÷ 9/10, quelle démarche est correcte ?",
+            "reponse": "\\(\\frac{3}{5}\\) × \\(\\frac{10}{9}\\)",
+            "correction": "Diviser par 9/10 revient à multiplier par son inverse 10/9.",
+            "p1": "\\(\\frac{3}{5}\\) × \\(\\frac{10}{9}\\)",
+            "p2": "\\(\\frac{3}{5}\\) × \\(\\frac{9}{10}\\)",
+            "p3": "\\(\\frac{5}{3}\\) × \\(\\frac{10}{9}\\)",
+            "p4": "\\(\\frac{3}{5}\\) + \\(\\frac{10}{9}\\)"
+          },
+          "progression": 1
+        }
+      ]
+    },
+    {
+      "id": "FRA-DIV-ERREUR-001",
+      "type": "qcm",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "À propos de 2/3 ÷ 4/5, quelle égalité est fausse ?",
+            "reponse": "2/3 ÷ 4/5 = 8/15",
+            "correction": "Il faut multiplier par l’inverse : le résultat est 5/6.",
+            "p1": "2/3 ÷ 4/5 = 5/6",
+            "p2": "2/3 ÷ 4/5 = 8/15",
+            "p3": "2/3 ÷ 1 = 2/3",
+            "p4": "4/5 ÷ 4/5 = 1"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de 3/4 ÷ 2/5, quelle égalité est fausse ?",
+            "reponse": "3/4 ÷ 2/5 = 3/10",
+            "correction": "Il faut multiplier par l’inverse : le résultat est 15/8.",
+            "p1": "3/4 ÷ 2/5 = 15/8",
+            "p2": "3/4 ÷ 2/5 = 3/10",
+            "p3": "3/4 ÷ 1 = 3/4",
+            "p4": "2/5 ÷ 2/5 = 1"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de 5/6 ÷ 3/7, quelle égalité est fausse ?",
+            "reponse": "5/6 ÷ 3/7 = 5/14",
+            "correction": "Il faut multiplier par l’inverse : le résultat est 35/18.",
+            "p1": "5/6 ÷ 3/7 = 35/18",
+            "p2": "5/6 ÷ 3/7 = 5/14",
+            "p3": "5/6 ÷ 1 = 5/6",
+            "p4": "3/7 ÷ 3/7 = 1"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de 4/9 ÷ 2/3, quelle égalité est fausse ?",
+            "reponse": "4/9 ÷ 2/3 = 8/27",
+            "correction": "Il faut multiplier par l’inverse : le résultat est 2/3.",
+            "p1": "4/9 ÷ 2/3 = 2/3",
+            "p2": "4/9 ÷ 2/3 = 8/27",
+            "p3": "4/9 ÷ 1 = 4/9",
+            "p4": "2/3 ÷ 2/3 = 1"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de 7/8 ÷ 5/6, quelle égalité est fausse ?",
+            "reponse": "7/8 ÷ 5/6 = 35/48",
+            "correction": "Il faut multiplier par l’inverse : le résultat est 21/20.",
+            "p1": "7/8 ÷ 5/6 = 21/20",
+            "p2": "7/8 ÷ 5/6 = 35/48",
+            "p3": "7/8 ÷ 1 = 7/8",
+            "p4": "5/6 ÷ 5/6 = 1"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "À propos de 3/5 ÷ 9/10, quelle égalité est fausse ?",
+            "reponse": "3/5 ÷ 9/10 = 27/50",
+            "correction": "Il faut multiplier par l’inverse : le résultat est 2/3.",
+            "p1": "3/5 ÷ 9/10 = 2/3",
+            "p2": "3/5 ÷ 9/10 = 27/50",
+            "p3": "3/5 ÷ 1 = 3/5",
+            "p4": "9/10 ÷ 9/10 = 1"
+          },
+          "progression": 1
+        }
+      ]
     }
   ]
 }

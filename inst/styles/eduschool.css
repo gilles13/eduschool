@@ -4,7 +4,10 @@
   border:1px solid #8cbba1;border-left:5px solid #327a54;
   border-radius:.45em;font-size:1.1em;line-height:1.65}
 .edu-correction p {margin:.3em 0 .7em}
-.edu-humour {font-style:italic;border-top:1px dashed #8cbba1;padding-top:.6em}
+.edu-humour {margin-top:1em!important;padding:.65em .85em!important;font-style:italic;
+  background:#fff7e6;border-left:5px solid #d9822b}
+.edu-humour::before {content:"😈 Le petit mot du concepteur";display:block;
+  margin-bottom:.35em;font-style:normal;font-weight:700}
 .edu-question label {cursor:pointer;display:block;margin:.45em 0}
 .edu-avertissement {font-size:.88em;color:#555;font-style:italic}
 #edu-valider {background:#155da8;color:white;font-size:1.1em;font-weight:700;
@@ -18,4 +21,11 @@
 .edu-illustration {display:block;width:100%;height:auto;object-fit:contain}
 @media (max-width:600px) {
   .edu-reponses-illustrees {grid-template-columns:1fr}
+}
+
+.edu-niveau-question {
+  margin: -0.35rem 0 0.75rem;
+  font-size: 0.82em;
+  font-style: italic;
+  color: #666;
 }

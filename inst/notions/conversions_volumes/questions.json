@@ -4,74 +4,146 @@
     {
       "id": "MES-CONVERSION_VOLUMES-001",
       "type": "qcm",
-      "enonce": "[[quantite]] m³ correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "1/2",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "L",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "500 L",
-        "50 L",
-        "5 000 L",
-        "0,5 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 m³ = 1 000 L."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "0,5 m³ correspondent à…",
+            "reponse": "500 L",
+            "correction": "1 m³ = 1 000 L.",
+            "p1": "500 L",
+            "p2": "50 L",
+            "p3": "5 000 L",
+            "p4": "0,5 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "0,8 m³ correspondent à…",
+            "reponse": "800 L",
+            "correction": "0,8 m³ = 800 L.",
+            "p1": "800 L",
+            "p2": "80 L",
+            "p3": "8 000 L",
+            "p4": "0,8 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1,2 m³ correspondent à…",
+            "reponse": "1 200 L",
+            "correction": "1,2 m³ = 1 200 L.",
+            "p1": "1 200 L",
+            "p2": "120 L",
+            "p3": "12 000 L",
+            "p4": "1,2 L"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_VOLUMES-002",
       "type": "qcm",
-      "enonce": "[[quantite]] L correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "2",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "cm³",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 000 cm³",
-        "200 cm³",
-        "20 000 cm³",
-        "2 cm³"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 L = 1 000 cm³."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "2 L correspondent à…",
+            "reponse": "2 000 cm³",
+            "correction": "1 L = 1 000 cm³.",
+            "p1": "2 000 cm³",
+            "p2": "200 cm³",
+            "p3": "20 000 cm³",
+            "p4": "2 cm³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "3 L correspondent à…",
+            "reponse": "3 000 cm³",
+            "correction": "3 L = 3 000 cm³.",
+            "p1": "3 000 cm³",
+            "p2": "300 cm³",
+            "p3": "30 000 cm³",
+            "p4": "3 cm³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "4,5 L correspondent à…",
+            "reponse": "4 500 cm³",
+            "correction": "4,5 L = 4 500 cm³.",
+            "p1": "4 500 cm³",
+            "p2": "450 cm³",
+            "p3": "45 000 cm³",
+            "p4": "4,5 cm³"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_VOLUMES-003",
       "type": "qcm",
-      "enonce": "[[quantite]] cm³ correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "3000",
-          "1/1000"
-        ],
-        "format": "decimal",
-        "unite": "L",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 L",
-        "30 L",
-        "0,3 L",
-        "300 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 L = 1 000 cm³."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "3000 cm³ correspondent à…",
+            "reponse": "3 L",
+            "correction": "1 L = 1 000 cm³.",
+            "p1": "3 L",
+            "p2": "30 L",
+            "p3": "0,3 L",
+            "p4": "300 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "5000 cm³ correspondent à…",
+            "reponse": "5 L",
+            "correction": "5000 cm³ = 5 L.",
+            "p1": "5 L",
+            "p2": "50 L",
+            "p3": "0,5 L",
+            "p4": "500 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "7500 cm³ correspondent à…",
+            "reponse": "7,5 L",
+            "correction": "7500 cm³ = 7,5 L.",
+            "p1": "7,5 L",
+            "p2": "75 L",
+            "p3": "0,75 L",
+            "p4": "750 L"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_VOLUMES-VOCAB-TROU",
@@ -86,10 +158,7 @@
           "contenance": "c _ _ _ _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "volume"
-      },
+      "reponse": "volume",
       "propositions": [
         "volume",
         "surface",
@@ -112,10 +181,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "cube"
-      },
+      "reponse": "cube",
       "propositions": [
         "cube",
         "carré",
@@ -127,18 +193,50 @@
     {
       "id": "MES-CONVERSION_VOLUMES-APPLICATION",
       "type": "qcm",
-      "enonce": "Un cube a des arêtes de 2 dm. Quel est son volume en litres ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "8 L"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "8 L",
-        "4 L",
-        "6 L",
-        "80 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 2 dm. Quel est son volume en litres ?",
+            "reponse": "8 L",
+            "correction": "2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L.",
+            "p1": "8 L",
+            "p2": "4 L",
+            "p3": "6 L",
+            "p4": "80 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 3 dm. Quel est son volume en litres ?",
+            "reponse": "27 L",
+            "correction": "3³ = 27 dm³ et 1 dm³ = 1 L.",
+            "p1": "27 L",
+            "p2": "9 L",
+            "p3": "18 L",
+            "p4": "270 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 4 dm. Quel est son volume en litres ?",
+            "reponse": "64 L",
+            "correction": "4³ = 64 dm³ et 1 dm³ = 1 L.",
+            "p1": "64 L",
+            "p2": "16 L",
+            "p3": "48 L",
+            "p4": "640 L"
+          }
+        }
+      ]
     }
   ]
 }

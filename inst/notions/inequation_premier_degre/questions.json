@@ -5,10 +5,7 @@
       "id": "INEQ-1D-001",
       "type": "qcm",
       "enonce": "Résous [[inequation]].",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -572,18 +569,50 @@
     {
       "id": "INEQ-1D-SENS",
       "type": "qcm",
-      "enonce": "Pour résoudre −3𝑥 < 12, on divise les deux membres par −3. Pourquoi obtient-on 𝑥 > −4 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
-        "Parce que le signe de 𝑥 change toujours quand on le déplace.",
-        "Parce qu’une inéquation utilise toujours le signe > après une division.",
-        "Parce que 12 est positif et −3 est négatif."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Ajouter ou soustraire une même quantité conserve le sens de l’inégalité. En revanche, multiplier ou diviser les deux membres par un nombre négatif oblige à inverser ce sens."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour résoudre −3𝑥 < 12, on divise les deux membres par −3. Pourquoi obtient-on 𝑥 > −4 ?",
+            "reponse": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+            "correction": "Ajouter ou soustraire une même quantité conserve le sens de l’inégalité. En revanche, multiplier ou diviser les deux membres par un nombre négatif oblige à inverser ce sens.",
+            "p1": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+            "p2": "Parce que le signe de 𝑥 change toujours quand on le déplace.",
+            "p3": "Parce qu’une inéquation utilise toujours le signe > après une division.",
+            "p4": "Parce que 12 est positif et −3 est négatif."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour résoudre −4𝑥 < 20, on divise les deux membres par −4. Pourquoi obtient-on 𝑥 > −5 ?",
+            "reponse": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+            "correction": "Diviser une inégalité par un nombre négatif inverse son sens : −4x < 20 donne x > −5.",
+            "p1": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+            "p2": "Parce que le signe de 𝑥 change toujours quand on le déplace.",
+            "p3": "Parce qu’une inéquation utilise toujours le signe > après une division.",
+            "p4": "Parce que 20 est positif et −4 est négatif."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour résoudre −5𝑥 ≤ 15, on divise les deux membres par −5. Pourquoi obtient-on 𝑥 ≥ −3 ?",
+            "reponse": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+            "correction": "La division par −5 inverse ≤ en ≥ : x ≥ −3.",
+            "p1": "Parce qu’une multiplication ou une division par un nombre négatif inverse le sens de l’inégalité.",
+            "p2": "Parce que le signe de 𝑥 change toujours quand on le déplace.",
+            "p3": "Parce qu’une inéquation utilise toujours le signe ≥ après une division.",
+            "p4": "Parce que 15 est positif et −5 est négatif."
+          }
+        }
+      ]
     },
     {
       "id": "INEQ-1D-BOITE",
@@ -592,10 +621,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−5"
-      },
+      "reponse": "−5",
       "propositions": [
         "−5",
         "5",
@@ -617,10 +643,7 @@
           "expression": "e _ _ _ _ _ _ _ _ n"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "inéquation"
-      },
+      "reponse": "inéquation",
       "propositions": [
         "inéquation",
         "équation",
@@ -643,10 +666,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "solution"
-      },
+      "reponse": "solution",
       "propositions": [
         "solution",
         "inconnue",

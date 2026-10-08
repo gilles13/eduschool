@@ -4,66 +4,194 @@
     {
       "id": "FRACTIONS_DECIMALES-001",
       "type": "qcm",
-      "enonce": "Quelle fraction décimale représente 0,06 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6/100"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6/100",
-        "6/10",
-        "60/10",
-        "6/1000"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Six centièmes s’écrivent 6/100."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle fraction décimale représente 0,06 ?",
+            "reponse": "6/100",
+            "correction": "Six centièmes s’écrivent 6/100.",
+            "p1": "6/100",
+            "p2": "6/10",
+            "p3": "60/10",
+            "p4": "6/1000"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction décimale représente 0,08 ?",
+            "reponse": "8/100",
+            "correction": "0,08 représente huit centièmes : 8/100.",
+            "p1": "8/100",
+            "p2": "8/10",
+            "p3": "80/10",
+            "p4": "8/1000"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction décimale représente 0,37 ?",
+            "reponse": "37/100",
+            "correction": "0,37 représente trente-sept centièmes : 37/100.",
+            "p1": "37/100",
+            "p2": "37/10",
+            "p3": "370/10",
+            "p4": "37/1000"
+          }
+        }
+      ]
     },
     {
       "id": "FRACTIONS_DECIMALES-002",
       "type": "qcm",
-      "enonce": "Quelle écriture décimale correspond à 23/10 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2,3"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2,3",
-        "0,23",
-        "23,0",
-        "2,03"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "23 dixièmes font deux unités et trois dixièmes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle écriture décimale correspond à 23/10 ?",
+            "reponse": "2,3",
+            "correction": "23 dixièmes font deux unités et trois dixièmes.",
+            "p1": "2,3",
+            "p2": "0,23",
+            "p3": "23,0",
+            "p4": "2,03"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle écriture décimale correspond à 47/10 ?",
+            "reponse": "4,7",
+            "correction": "47/10 = 4,7.",
+            "p1": "4,7",
+            "p2": "0,47",
+            "p3": "47,0",
+            "p4": "4,07"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle écriture décimale correspond à 63/100 ?",
+            "reponse": "0,63",
+            "correction": "63/100 = 0,63.",
+            "p1": "0,63",
+            "p2": "6,3",
+            "p3": "63,0",
+            "p4": "0,063"
+          }
+        }
+      ]
     },
     {
       "id": "FRACTIONS_DECIMALES-003",
       "type": "qcm",
-      "enonce": "Quelle fraction vaut exactement 1,205 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1205/1000"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1205/1000",
-        "1205/100",
-        "125/100",
-        "1205/10"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Trois chiffres après la virgule correspondent à des millièmes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle fraction vaut exactement 1,205 ?",
+            "reponse": "1205/1000",
+            "correction": "Trois chiffres après la virgule correspondent à des millièmes.",
+            "p1": "1205/1000",
+            "p2": "1205/100",
+            "p3": "125/100",
+            "p4": "1205/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction vaut exactement 2,307 ?",
+            "reponse": "2307/1000",
+            "correction": "2,307 = 2307/1000.",
+            "p1": "2307/1000",
+            "p2": "2307/100",
+            "p3": "237/100",
+            "p4": "2307/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle fraction vaut exactement 0,425 ?",
+            "reponse": "425/1000",
+            "correction": "0,425 = 425/1000.",
+            "p1": "425/1000",
+            "p2": "425/100",
+            "p3": "45/100",
+            "p4": "425/10"
+          }
+        }
+      ]
     },
     {
       "id": "FRACTIONS_DECIMALES-004",
       "type": "qcm",
-      "enonce": "Un élève affirme que 4/100 = 0,4. Quelle égalité est correcte ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4/100 = 0,04"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4/100 = 0,04",
-        "4/100 = 0,4",
-        "4/100 = 4,00",
-        "4/100 = 0,004"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Quatre centièmes sont dix fois plus petits que quatre dixièmes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un élève affirme que 4/100 = 0,4. Quelle égalité est correcte ?",
+            "reponse": "4/100 = 0,04",
+            "correction": "Quatre centièmes sont dix fois plus petits que quatre dixièmes.",
+            "p1": "4/100 = 0,04",
+            "p2": "4/100 = 0,4",
+            "p3": "4/100 = 4,00",
+            "p4": "4/100 = 0,004"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un élève affirme que 7/100 = 0,7. Quelle égalité est correcte ?",
+            "reponse": "7/100 = 0,07",
+            "correction": "7/100 représente sept centièmes : 0,07.",
+            "p1": "7/100 = 0,07",
+            "p2": "7/100 = 0,7",
+            "p3": "7/100 = 7,00",
+            "p4": "7/100 = 0,007"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un élève affirme que 3/100 = 0,3. Quelle égalité est correcte ?",
+            "reponse": "3/100 = 0,03",
+            "correction": "3/100 représente trois centièmes : 0,03.",
+            "p1": "3/100 = 0,03",
+            "p2": "3/100 = 0,3",
+            "p3": "3/100 = 3,00",
+            "p4": "3/100 = 0,003"
+          }
+        }
+      ]
     },
     {
       "id": "FRACTIONS_DECIMALES-MOT_A_TROU",
@@ -78,10 +206,7 @@
           "unité": "u _ _ _ é"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "centième"
-      },
+      "reponse": "centième",
       "propositions": [
         "centième",
         "dixième",
@@ -104,10 +229,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "centième"
-      },
+      "reponse": "centième",
       "propositions": [
         "centième",
         "dixième",

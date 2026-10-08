@@ -5,10 +5,7 @@
       "id": "FREQ-SIM-001",
       "type": "qcm",
       "enonce": "Une simulation répète [[n]] fois une expérience. L’événement apparaît [[obs]] fois : fréquence [[freq]], pour une probabilité théorique [[theo]]. Quelle interprétation est correcte ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -536,163 +533,62 @@
             "d2": "La probabilité change pour devenir égale à la fréquence observée.",
             "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
           }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "20",
-            "obs": "8",
-            "freq": "0,400",
-            "theo": "0,5",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "30",
-            "obs": "9",
-            "freq": "0,300",
-            "theo": "0,333…",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "40",
-            "obs": "20",
-            "freq": "0,500",
-            "theo": "0,5",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "50",
-            "obs": "18",
-            "freq": "0,360",
-            "theo": "0,333…",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "60",
-            "obs": "32",
-            "freq": "0,533",
-            "theo": "0,5",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "70",
-            "obs": "21",
-            "freq": "0,300",
-            "theo": "0,333…",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "80",
-            "obs": "39",
-            "freq": "0,487",
-            "theo": "0,5",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "90",
-            "obs": "30",
-            "freq": "0,333",
-            "theo": "0,333…",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "20",
-            "obs": "11",
-            "freq": "0,550",
-            "theo": "0,5",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n": "30",
-            "obs": "12",
-            "freq": "0,400",
-            "theo": "0,333…",
-            "bonne": "La fréquence observée peut différer de la probabilité théorique ; en répétant davantage, on observe généralement une stabilisation autour de celle-ci.",
-            "d1": "La fréquence doit être exactement égale à la probabilité dès la première série.",
-            "d2": "La probabilité change pour devenir égale à la fréquence observée.",
-            "d3": "Une simulation prouve qu’un événement se produira au prochain essai."
-          }
         }
       ]
     },
     {
       "id": "FREQ-SIM-002",
       "type": "qcm",
-      "enonce": "Qu’est-ce qui fluctue quand on recommence plusieurs séries de 50 lancers ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "La fréquence observée"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "La fréquence observée",
-        "La probabilité théorique du dé équilibré",
-        "Le nombre de faces du dé",
-        "La définition de l’événement"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La probabilité appartient au modèle ; la fréquence dépend des résultats observés."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Qu’est-ce qui fluctue quand on recommence plusieurs séries de 50 lancers ?",
+            "reponse": "La fréquence observée",
+            "correction": "La probabilité appartient au modèle ; la fréquence dépend des résultats observés.",
+            "p1": "La fréquence observée",
+            "p2": "La probabilité théorique du dé équilibré",
+            "p3": "Le nombre de faces du dé",
+            "p4": "La définition de l’événement"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Qu’est-ce qui fluctue quand on recommence plusieurs séries de 100 lancers ?",
+            "reponse": "La fréquence observée",
+            "correction": "La fréquence observée varie d’une série à l’autre ; la probabilité théorique ne change pas.",
+            "p1": "La fréquence observée",
+            "p2": "La probabilité théorique du dé équilibré",
+            "p3": "Le nombre de faces du dé",
+            "p4": "La définition de l’événement"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Qu’est-ce qui peut changer entre deux séries de 200 lancers du même dé ?",
+            "reponse": "La fréquence observée",
+            "correction": "Les fréquences observées fluctuent avec l’échantillon.",
+            "p1": "La fréquence observée",
+            "p2": "La probabilité théorique",
+            "p3": "Le nombre de faces",
+            "p4": "La définition de l’événement"
+          }
+        }
+      ]
     },
     {
       "id": "FREQ-SIM-003",
       "type": "qcm",
       "enonce": "À quoi sert principalement une simulation en probabilités ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "À observer expérimentalement des distributions et des fréquences"
-      },
+      "reponse": "À observer expérimentalement des distributions et des fréquences",
       "propositions": [
         "À observer expérimentalement des distributions et des fréquences",
         "À rendre aléatoire une probabilité déjà calculée",

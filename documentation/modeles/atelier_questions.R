@@ -1,35 +1,45 @@
 # Modele d'atelier jetable pour une banque de questions parametrees.
-# Copier ce fichier hors du package et l'adapter a la notion.
+# Copier ce fichier dans un espace de travail et l'adapter a la notion.
 # Ne jamais sourcer cet atelier depuis eduschool.
+#
+# Ordre obligatoire :
+# 1. definir la bonne methode et les raisonnements faux a tester ;
+# 2. explorer les combinaisons candidates ;
+# 3. utiliser Ryacas/Yacas pour calculer et verifier ;
+# 4. appliquer chaque raisonnement faux pour produire une proposition fausse ;
+# 5. rejeter collisions, equivalences et ambiguite ;
+# 6. selectionner pedagogiquement les variantes ;
+# 7. seulement alors ecrire le JSON fini.
+#
+# VOCABULAIRE :
+# - distracteur = raisonnement faux plausible ;
+# - proposition fausse = reponse affichee produite par ce raisonnement ;
+# - ne jamais appeler "distracteur" une simple valeur fausse choisie au hasard.
 objectif = c(`1` = 17L, `2` = 17L, `3` = 16L)
 valides = list()
 rejets = list()
-# A ADAPTER A LA NOTION :
-# - explorer un domaine candidat assez large ;
-# - construire une bonne reponse et des distracteurs plausibles ;
-# - associer un type pedagogique a chaque distracteur ;
-# - verifier l'unicite de la bonne reponse (Ryacas si pertinent) ;
-# - ajouter les variantes propres a valides ;
-# - ajouter les autres a rejets avec progression, source, bonne,
-#   distracteurs, types_distracteurs, valides et raison.
-# Une combinaison rejetee n'est pas reparee si le domaine fournit assez
-# de variantes propres. Tous les rejets restent inspectables au REPL.
-# A la fin de l'exploration, selectionner le quota voulu dans chaque palier.
-# Le bilan ci-dessous est le format de sortie commun des ateliers.
+# A ADAPTER A LA NOTION.
+# Chaque element de valides devrait permettre d'inspecter au minimum :
+# progression, source, bonne, propositions_fausses, raisonnements_faux,
+# parametres et correction.
+#
+# Ryacas/Yacas doit verifier les faits mathematiques AVANT l'ajout a valides.
+# Le JSON final ne conserve ni les commandes Ryacas, ni les raisonnements faux :
+# il conserve la bonne reponse, les propositions affichees et le contenu fini.
 progression = vapply(valides, `[[`, integer(1), "progression")
-cat("\n================ DISTRACTEURS ================\n")
+cat("\n================ RAISONNEMENTS FAUX ================\n")
 for (p in sort(unique(progression))) {
   vp = valides[progression == p]
-  types = unlist(lapply(vp, `[[`, "types_distracteurs"), use.names = FALSE)
+  erreurs = unlist(lapply(vp, `[[`, "raisonnements_faux"), use.names = FALSE)
   cat("\nPalier", p, "-", length(vp), "variantes\n")
-  for (type in names(table(types)))
-    cat(" ", type, ":", unname(table(types)[[type]]), "\n")
+  for (erreur in names(table(erreurs)))
+    cat(" ", erreur, ":", unname(table(erreurs)[[erreur]]), "\n")
 }
-tous_types = unlist(lapply(valides, `[[`, "types_distracteurs"), use.names = FALSE)
+toutes_erreurs = unlist(lapply(valides, `[[`, "raisonnements_faux"), use.names = FALSE)
 cat("\nTOTAL\n")
-cat("Variantes              :", length(valides), "\n")
-cat("Distracteurs controles :", length(tous_types), "\n")
-cat("Types de distracteurs  :", length(unique(tous_types)), "\n")
+cat("Variantes                 :", length(valides), "\n")
+cat("Raisonnements faux testes :", length(toutes_erreurs), "\n")
+cat("Types d'erreurs           :", length(unique(toutes_erreurs)), "\n")
 cat("\n================ REJETS ================\n")
 cat("Total :", length(rejets), "\n")
 if (!length(rejets)) {

@@ -5,10 +5,7 @@
       "id": "GQUOT-001",
       "type": "qcm",
       "enonce": "Un trajet de [[distance]] km dure [[temps]] h. Quelle est la vitesse moyenne ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -511,61 +508,6 @@
             "d3": "70 km/h"
           },
           "progression": 3
-        },
-        {
-          "parametres": {
-            "distance": "40",
-            "temps": "2",
-            "bonne": "20 km/h",
-            "d1": "25 km/h",
-            "d2": "15 km/h",
-            "d3": "30 km/h"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "distance": "75",
-            "temps": "3",
-            "bonne": "25 km/h",
-            "d1": "30 km/h",
-            "d2": "20 km/h",
-            "d3": "35 km/h"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "distance": "120",
-            "temps": "4",
-            "bonne": "30 km/h",
-            "d1": "35 km/h",
-            "d2": "25 km/h",
-            "d3": "40 km/h"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "distance": "175",
-            "temps": "5",
-            "bonne": "35 km/h",
-            "d1": "40 km/h",
-            "d2": "30 km/h",
-            "d3": "45 km/h"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "distance": "240",
-            "temps": "6",
-            "bonne": "40 km/h",
-            "d1": "45 km/h",
-            "d2": "35 km/h",
-            "d3": "50 km/h"
-          },
-          "progression": 3
         }
       ]
     },
@@ -573,10 +515,7 @@
       "id": "GQUOT-002",
       "type": "qcm",
       "enonce": "Pourquoi une vitesse est-elle une grandeur quotient ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Elle est obtenue en divisant une distance par une durée."
-      },
+      "reponse": "Elle est obtenue en divisant une distance par une durée.",
       "propositions": [
         "Elle est obtenue en divisant une distance par une durée.",
         "Elle est toujours exprimée sans unité.",
@@ -588,18 +527,50 @@
     {
       "id": "GQUOT-003",
       "type": "qcm",
-      "enonce": "Un débit de 6 L/min pendant 4 min fournit quel volume ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "24 L"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "24 L",
-        "10 L",
-        "2 L",
-        "1,5 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Volume = débit × durée = 6 × 4 = 24 L."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un débit de 6 L/min pendant 4 min fournit quel volume ?",
+            "reponse": "24 L",
+            "correction": "Volume = débit × durée = 6 × 4 = 24 L.",
+            "p1": "24 L",
+            "p2": "10 L",
+            "p3": "2 L",
+            "p4": "1,5 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un débit de 8 L/min pendant 5 min fournit quel volume ?",
+            "reponse": "40 L",
+            "correction": "Volume = débit × durée = 8 × 5 = 40 L.",
+            "p1": "40 L",
+            "p2": "13 L",
+            "p3": "3 L",
+            "p4": "1,6 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un débit de 12 L/min pendant 3 min fournit quel volume ?",
+            "reponse": "36 L",
+            "correction": "Volume = débit × durée = 12 × 3 = 36 L.",
+            "p1": "36 L",
+            "p2": "15 L",
+            "p3": "9 L",
+            "p4": "4 L"
+          }
+        }
+      ]
     }
   ]
 }

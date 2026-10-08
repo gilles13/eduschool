@@ -101,132 +101,14 @@ questions = function(notion, niveau = "") {
   }
   if (nzchar(niveau) && length(.notions_famille(notion)))
     stop("Aucune notion disponible pour ce niveau : ", niveau)
-  jsonlite::fromJSON(.chemin_edu("notions", notion, "questions.json"),
-                     simplifyVector = FALSE)
-}
-
-# Mathematical display is delegated to Yacas: Hold preserves the source expression.
-.math_tex_edu = function(expression) {
-  if (!is.character(expression) || length(expression) != 1L ||
-      is.na(expression) || !nzchar(expression) ||
-      !grepl("^[A-Za-z0-9_+*/^(). <>=-]+$", expression))
-    stop("Expression mathematique invalide")
-  resultat = Ryacas::yac_str(paste0("TeXForm(Hold(", expression, "))"))
-  if (length(resultat) != 1L || is.na(resultat) || !nzchar(trimws(resultat)))
-    stop("Ryacas n'a pas produit de TeX")
-  trimws(resultat)
-}
-
-.math_inline_edu = function(expression) paste0("\\(", .math_tex_edu(expression), "\\)")
-
-# Fixed arithmetic only: the same two literals produce the question and answer.
-.calcul_fixe_edu = function(calcul) {
-  operations = c("addition", "soustraction", "multiplication", "division",
-                 "hypotenuse", "proportion", "reste", "angle")
-  if (!is.list(calcul) || !identical(calcul$moteur, "Ryacas") ||
-      !calcul$operation %in% operations) stop("Calcul fixe invalide")
-  termes = unlist(calcul$termes, use.names = FALSE)
-  if (length(termes) != 2L || !is.character(termes))
-    stop("Deux termes fixes requis")
-  # The input language is limited to integer and rational literals.
-  litteral = function(x) {
-    morceaux = strsplit(x, "/", fixed = TRUE)[[1L]]
-    if (length(morceaux) > 2L || any(!grepl("^[0-9]+$", morceaux)))
-      return(FALSE)
-    length(morceaux) == 1L || as.numeric(morceaux[[2L]]) > 0
-  }
-  if (!all(vapply(termes, litteral, logical(1))))
-    stop("Operandes fixes invalides")
-  x = paste0("(", termes[[1L]], ")")
-  y = paste0("(", termes[[2L]], ")")
-  expr = switch(calcul$operation,
-    addition = paste0(x, "+", y),
-    soustraction = paste0(x, "-", y),
-    multiplication = paste0(x, "*", y),
-    division = paste0(x, "/", y),
-    proportion = paste0(x, "*", y),
-    reste = paste0(x, "*(1-", y, ")"),
-    angle = paste0("180-", x, "-", y),
-    hypotenuse = paste0("Sqrt(", x, "^2+", y, "^2)"))
-  resultat = Ryacas::yac_str(paste0("Simplify(", expr, ")"))
-  if (length(resultat) != 1L || is.na(resultat) || !nzchar(resultat))
-    stop("Ryacas n'a pas produit de resultat")
-  # Decimal presentation is restricted to rational Ryacas results.
-  nombre = function(texte) {
-    if (!grepl("^[0-9]+(/[0-9]+)?$", texte))
-      stop("Resultat Ryacas non rationnel pour ce format : ", texte)
-    morceaux = strsplit(texte, "/", fixed = TRUE)[[1L]]
-    as.numeric(morceaux[[1L]]) /
-      if (length(morceaux) == 2L) as.numeric(morceaux[[2L]]) else 1
-  }
-  fmt = if (is.null(calcul$format)) "fraction" else calcul$format
-  unite = if (is.null(calcul$unite)) "" else calcul$unite
-  if (fmt %in% c("integer", "decimal", "h_min")) {
-    valeur = nombre(resultat)
-    if (identical(fmt, "integer") && valeur != trunc(valeur))
-      stop("Resultat non entier")
-    if (identical(fmt, "h_min")) {
-      if (valeur != trunc(valeur)) stop("Duree non entiere")
-      resultat = paste0(valeur %/% 60, " h ", valeur %% 60, " min")
-    } else {
-      resultat = format(valeur, scientific = FALSE, trim = TRUE,
-                        big.mark = " ", decimal.mark = ",")
-    }
-  }
-  if (nzchar(unite)) resultat = if (identical(unite, "\u00B0")) paste0(resultat, unite) else paste(resultat, unite)
-  quantite = NULL
-  if (!is.null(calcul$source_format)) {
-    if (!calcul$source_format %in% c("decimal", "h_min"))
-      stop("Format source interdit")
-    val = nombre(termes[[1L]])
-    if (identical(calcul$source_format, "h_min")) {
-      if (val != trunc(val)) stop("Duree source non entiere")
-      quantite = paste0(val %/% 60, " h ", val %% 60, " min")
-    } else {
-      quantite = format(val, scientific = FALSE, trim = TRUE,
-                        big.mark = " ", decimal.mark = ",")
-    }
-  }
-  list(termes = termes, reponse = resultat, quantite = quantite)
-}
-
-.calculer_parametres_yacas_edu = function(calculs, valeurs, id) {
-  if (is.null(calculs)) return(list(valeurs = valeurs, affichages = list()))
-  if (!is.list(calculs) || !length(calculs) || is.null(names(calculs)) ||
-      any(!nzchar(names(calculs))) || anyDuplicated(names(calculs)) ||
-      any(names(calculs) %in% names(valeurs)))
-    stop("Calculs Yacas invalides : ", id)
-  affichages = list()
-  rendus = list()
-  for (nom in names(calculs)) {
-    calcul = calculs[[nom]]
-    if (!is.list(calcul) || !identical(calcul$moteur, "Ryacas") ||
-        !is.character(calcul$expression) || length(calcul$expression) != 1L ||
-        is.na(calcul$expression)) stop("Calcul Yacas invalide : ", id)
-    expression = .remplacer_parametres_edu(calcul$expression, valeurs)
-    if (!grepl("^[A-Za-z0-9_+*/^()., <>=-]+$", expression))
-      stop("Expression Yacas invalide : ", id)
-    format = if (is.null(calcul$format)) "valeur" else calcul$format
-    if (identical(format, "math_hold")) {
-      valeurs[[nom]] = expression
-      rendus[[nom]] = .math_inline_edu(expression)
-      affichages[[expression]] = rendus[[nom]]
-      next
-    }
-    resultat = Ryacas::yac_str(expression)
-    if (length(resultat) != 1L || is.na(resultat) || !nzchar(trimws(resultat)))
-      stop("Ryacas n'a pas produit de resultat : ", id)
-    if (identical(format, "liste_entiers")) {
-      if (!grepl("^\\{[0-9]+(,[0-9]+)*\\}$", resultat))
-        stop("Liste Ryacas invalide : ", id)
-      resultat = substring(resultat, 2L, nchar(resultat) - 1L)
-      resultat = gsub(",", ", ", resultat, fixed = TRUE)
-    } else if (!identical(format, "valeur")) {
-      stop("Format Yacas invalide : ", id)
-    }
-    valeurs[[nom]] = trimws(resultat)
-  }
-  list(valeurs = valeurs, affichages = affichages, rendus = rendus)
+  banque = jsonlite::fromJSON(.chemin_edu("notions", notion, "questions.json"),
+                              simplifyVector = FALSE)
+  niveau_notion = .niveau_notion_ou_famille(notion)
+  banque$questions = lapply(banque$questions, function(definition) {
+    definition$niveau = niveau_notion
+    definition
+  })
+  banque
 }
 
 .remplacer_parametres_edu = function(x, valeurs) {
@@ -245,244 +127,33 @@ questions = function(notion, niveau = "") {
 }
 
 .instancier_variante_edu = function(definition) {
-  if (length(definition$parametres))
-    stop("Parametres dynamiques interdits : ", definition$id)
   if (!length(definition$variantes))
     return(list(definition = definition, parametres = list(), progression = NULL))
   variantes = definition$variantes
-  if (!is.list(variantes) || !length(variantes))
-    stop("Variantes invalides : ", definition$id)
   variante = variantes[[sample.int(length(variantes), 1L)]]
   valeurs = variante$parametres
   progression = variante$progression
-  if (!is.list(valeurs) || !length(valeurs) || is.null(names(valeurs)) ||
-      any(!nzchar(names(valeurs))) || anyDuplicated(names(valeurs)) ||
-      any(!vapply(valeurs, function(x) length(x) == 1L &&
-        (is.character(x) || is.numeric(x)) && !is.na(x), logical(1))))
-    stop("Parametres de variante invalides : ", definition$id)
-  if (!is.null(progression) &&
-      (!is.numeric(progression) || length(progression) != 1L ||
-       is.na(progression) || progression < 1 || progression %% 1 != 0))
-    stop("Progression de variante invalide : ", definition$id)
-  calcules = .calculer_parametres_yacas_edu(definition$calculs, valeurs, definition$id)
-  valeurs = calcules$valeurs
-  definition$calculs = NULL
-  math = unlist(definition$presentation$math, use.names = FALSE)
-  if (length(math) && (any(!math %in% names(valeurs)) || anyDuplicated(math)))
-    stop("Parametres mathematiques invalides : ", definition$id)
-  enonce = definition$enonce
-  correction = definition$correction
-  affichages = calcules$affichages
-  for (nom in names(calcules$rendus)) {
-    enonce = gsub(paste0("[[", nom, "]]"), calcules$rendus[[nom]], enonce, fixed = TRUE)
-    correction = gsub(paste0("[[", nom, "]]"), calcules$rendus[[nom]], correction, fixed = TRUE)
-  }
-  for (nom in math) {
-    valeur = as.character(valeurs[[nom]])
-    affichage = .math_inline_edu(valeur)
-    enonce = gsub(paste0("[[", nom, "]]"), affichage, enonce, fixed = TRUE)
-    correction = gsub(paste0("[[", nom, "]]"), affichage, correction, fixed = TRUE)
-    affichages[[valeur]] = affichage
-  }
   definition$variantes = NULL
   definition = .remplacer_parametres_edu(definition, valeurs)
-  definition$enonce = .remplacer_parametres_edu(enonce, valeurs)
-  definition$correction = .remplacer_parametres_edu(correction, valeurs)
-  list(definition = definition, parametres = valeurs, progression = progression,
-       affichages = affichages)
+  list(definition = definition, parametres = valeurs, progression = progression)
 }
 
-#' Instancier une question (JSON local de confiance uniquement)
+#' Instancier une question finie
 #' @param definition Element de questions(notion)$questions.
 #' @export
 question = function(definition) {
   instance = .instancier_variante_edu(definition)
   definition = instance$definition
-  valeurs = instance$parametres
-  progression = instance$progression
-  affichages = instance$affichages
-  if (is.null(affichages)) affichages = list()
-  if (length(definition$distracteurs$expressions))
-    stop("Parametres dynamiques interdits : ", definition$id)
-  if (identical(definition$reponse$mode, "calcul_fixe")) {
-    calcul = .calcul_fixe_edu(definition$reponse)
-    if (!is.null(definition$reponse$valeur) ||
-        !is.null(definition$reponse$attendue))
-      stop("Reponse calculee dupliquee : ", definition$id)
-    enonce = definition$enonce
-    if (is.null(definition$reponse$source_format) &&
-        grepl("[[quantite]]", enonce, fixed = TRUE))
-      stop("Quantite non definie : ", definition$id)
-    # Literal markers are replaced only for fixed operands declared here.
-    enonce = gsub("[[terme1]]", .math_inline_edu(calcul$termes[[1L]]), enonce, fixed = TRUE)
-    enonce = gsub("[[terme2]]", .math_inline_edu(calcul$termes[[2L]]), enonce, fixed = TRUE)
-    if (grepl("[[terme1]]", enonce, fixed = TRUE) ||
-        grepl("[[terme2]]", enonce, fixed = TRUE))
-      stop("Enonce incomplet : ", definition$id)
-    if (grepl("[[quantite]]", enonce, fixed = TRUE)) {
-      if (is.null(calcul$quantite)) stop("Quantite source absente : ", definition$id)
-      enonce = gsub("[[quantite]]", calcul$quantite, enonce, fixed = TRUE)
-    }
-    if (grepl("[[quantite]]", enonce, fixed = TRUE))
-      stop("Enonce incomplet : ", definition$id)
-    bonne = calcul$reponse
-  } else if (identical(definition$reponse$mode, "symbolique_fixe")) {
-    source = definition$reponse
-    if (!identical(source$moteur, "Ryacas") ||
-        length(definition$parametres) || length(definition$distracteurs$expressions) ||
-        !is.null(source$valeur) || !is.null(source$attendue))
-      stop("Definition symbolique invalide : ", definition$id)
-    if (!is.character(source$expression) || length(source$expression) != 1L ||
-        !grepl("^[a-z0-9+*/^() -]+$", source$expression) ||
-        !is.character(source$affichage) || length(source$affichage) != 1L ||
-        !grepl("[[expression]]", definition$enonce, fixed = TRUE))
-      stop("Source symbolique absente : ", definition$id)
-    candidats = source$candidats
-    choix = unlist(definition$propositions, use.names = FALSE)
-    if (!is.list(candidats) || !setequal(names(candidats), choix) ||
-        anyDuplicated(choix) || length(choix) < 2L)
-      stop("Candidats symboliques invalides : ", definition$id)
-    # A single Ryacas source determines which candidate is the answer.
-    # Subtracting and simplifying must yield exactly zero, not a heuristic
-    # comparison of displayed strings.
-    equivalence = function(expr) {
-      if (!is.character(expr) || length(expr) != 1L ||
-          !grepl("^[a-z0-9+*/^() -]+$", expr))
-        stop("Expression candidate invalide : ", definition$id)
-      resultat = Ryacas::yac_str(paste0("Simplify(Expand((",
-        source$expression, ")- (", expr, ")))"))
-      identical(trimws(resultat), "0")
-    }
-    valides = vapply(candidats, equivalence, logical(1))
-    if (sum(valides) != 1L)
-      stop("QCM symbolique ambigu : ", definition$id)
-    bonne = names(candidats)[valides]
-    enonce = gsub("[[expression]]", source$affichage,
-                  definition$enonce, fixed = TRUE)
-  } else if (identical(definition$reponse$mode, "relation_fixe")) {
-    source = definition$reponse
-    if (!identical(source$moteur, "Ryacas") ||
-        !is.null(source$valeur) || !is.null(source$attendue))
-      stop("Relation fixe invalide : ", definition$id)
-    # All candidate expressions are fixed data. Ryacas decides the result;
-    # the stored JSON contains no independent correct answer.
-    choix = unlist(definition$propositions, use.names = FALSE)
-    candidats = source$candidats
-    if (!is.list(candidats) || length(choix) < 2L ||
-        anyDuplicated(choix) || !setequal(names(candidats), choix))
-      stop("Candidats invalides : ", definition$id)
-    valeur = function(expr) {
-      if (!is.character(expr) || length(expr) != 1L ||
-          !grepl("^[0-9+*/^() -]+$", expr))
-        stop("Expression numerique invalide : ", definition$id)
-      resultat = Ryacas::yac_str(paste0("Simplify(", expr, ")"))
-      if (!grepl("^-?[0-9]+(/[1-9][0-9]*)?$", resultat))
-        stop("Resultat Ryacas non rationnel : ", definition$id)
-      morceaux = strsplit(resultat, "/", fixed = TRUE)[[1L]]
-      as.numeric(morceaux[[1L]]) /
-        if (length(morceaux) == 2L) as.numeric(morceaux[[2L]]) else 1
-    }
-    mode = source$relation
-    if (!mode %in% c("egalite_fausse", "equivalent", "comparaison",
-                     "encadrement", "nombre"))
-      stop("Relation inconnue : ", definition$id)
-    if (identical(mode, "egalite_fausse")) {
-      valides = vapply(candidats, function(x) {
-        if (!is.list(x) || !setequal(names(x), c("gauche", "droite")))
-          stop("Egalite invalide : ", definition$id)
-        valeur(x$gauche) != valeur(x$droite)
-      }, logical(1))
-    } else {
-      if (!is.character(source$expression) || length(source$expression) != 1L)
-        stop("Source absente : ", definition$id)
-      cible = valeur(source$expression)
-      if (identical(mode, "comparaison")) {
-        if (!is.character(source$autre) || length(source$autre) != 1L)
-          stop("Deuxieme terme absent : ", definition$id)
-        autre = valeur(source$autre)
-        valides = vapply(candidats, function(x) {
-          switch(x, "<" = cible < autre, ">" = cible > autre,
-                 "=" = cible == autre, "\u2265" = cible >= autre,
-                 stop("Signe inconnu : ", definition$id))
-        }, logical(1))
-      } else if (identical(mode, "encadrement")) {
-        valides = vapply(candidats, function(x) {
-          if (!is.list(x) || !setequal(names(x), c("borne_inf", "borne_sup")))
-            stop("Bornes invalides : ", definition$id)
-          bas = valeur(x$borne_inf)
-          haut = valeur(x$borne_sup)
-          bas < cible && cible < haut && haut - bas == 1
-        }, logical(1))
-      } else {
-        valides = vapply(candidats, function(x) valeur(x) == cible, logical(1))
-      }
-    }
-    if (sum(valides) != 1L)
-      stop("Relation ambigue : ", definition$id)
-    bonne = names(candidats)[valides]
-    enonce = definition$enonce
-    # Only declared fixed source expressions can appear in the question.
-    if (grepl("[[source]]", enonce, fixed = TRUE)) {
-      if (identical(mode, "comparaison")) {
-        source_affichage = paste(.math_inline_edu(source$expression), "et",
-                                 .math_inline_edu(source$autre))
-      } else if (identical(mode, "equivalent") && !is.null(source$affichage) &&
-                 grepl("\u00F7", source$affichage, fixed = TRUE)) {
-        source_affichage = source$affichage
-      } else {
-        source_affichage = .math_inline_edu(source$expression)
-      }
-      enonce = gsub("[[source]]", source_affichage, enonce, fixed = TRUE)
-    }
-  } else if (identical(definition$reponse$mode, "editoriale")) {
-    enonce = definition$enonce
-    bonne = as.character(definition$reponse$valeur)
-  } else stop("Mode de reponse interdit : ", definition$id)
+  bonne = as.character(definition$reponse)
+  propositions = unlist(definition$propositions, use.names = FALSE)
   if (length(bonne) != 1L || is.na(bonne) || !nzchar(bonne))
     stop("Reponse absente : ", definition$id)
-  propositions = unlist(definition$propositions, use.names = FALSE)
-  # Quiz strictly use QCM: reject any question without alternatives.
-  if (!length(propositions)) stop("QCM sans propositions : ", definition$id)
-  if (length(propositions)) {
-    propositions = unique(c(bonne, propositions))
-    propositions = propositions[nzchar(propositions)]
-    if (length(propositions) < 2L) stop("QCM sans alternative : ", definition$id)
-    propositions = sample(propositions)
-  }
-  if (identical(definition$reponse$mode, "calcul_fixe") &&
-      identical(if (is.null(definition$reponse$format)) "fraction" else definition$reponse$format, "fraction") &&
-      !nzchar(if (is.null(definition$reponse$unite)) "" else definition$reponse$unite)) {
-    for (valeur in unique(c(bonne, propositions)))
-      affichages[[valeur]] = .math_inline_edu(valeur)
-  }
-  if (identical(definition$reponse$mode, "relation_fixe")) {
-    if (identical(definition$reponse$relation, "egalite_fausse")) {
-      for (nom in names(definition$reponse$candidats)) {
-        candidat = definition$reponse$candidats[[nom]]
-        affichages[[nom]] = paste(.math_inline_edu(candidat$gauche), "=",
-                                  .math_inline_edu(candidat$droite))
-      }
-    } else if (identical(definition$reponse$relation, "equivalent")) {
-      for (nom in names(definition$reponse$candidats))
-        affichages[[nom]] = .math_inline_edu(definition$reponse$candidats[[nom]])
-    } else if (identical(definition$reponse$relation, "encadrement")) {
-      for (nom in names(definition$reponse$candidats)) affichages[[nom]] = .math_inline_edu(nom)
-    }
-  }
-  # Detect equivalent numerical proposals, not just equivalent answers.
-  numerique = function(x) {
-    if (!grepl("^-?[0-9]+(/[1-9][0-9]*)?$", x)) return(NA_real_)
-    morceaux = strsplit(x, "/", fixed = TRUE)[[1L]]
-    as.numeric(morceaux[1L]) / if (length(morceaux) == 2L) as.numeric(morceaux[2L]) else 1
-  }
-  if (length(propositions)) {
-    n = vapply(propositions, numerique, numeric(1))
-    chiffres = which(!is.na(n))
-    if (anyDuplicated(n[chiffres]))
-      stop("Propositions numeriques equivalentes : ", definition$id)
-    if (sum(propositions == bonne) != 1L)
-      stop("Reponse absente ou multiple : ", definition$id)
-  }
+  if (length(propositions) < 2L || anyNA(propositions) || any(!nzchar(propositions)))
+    stop("QCM sans alternatives : ", definition$id)
+  if (anyDuplicated(propositions))
+    stop("Propositions dupliquees : ", definition$id)
+  if (sum(propositions == bonne) != 1L)
+    stop("Reponse absente ou multiple : ", definition$id)
   if (!is.null(definition$presentation$masques)) {
     masques = unlist(definition$presentation$masques, use.names = TRUE)
     if (!all(propositions %in% names(masques)) ||
@@ -493,16 +164,12 @@ question = function(definition) {
   if (!is.character(correction) || length(correction) != 1L ||
       is.na(correction) || !nzchar(trimws(correction)))
     stop("Correction absente : ", definition$id)
-  propositions_affichage = vapply(propositions, function(x) {
-    if (!is.null(affichages[[x]])) affichages[[x]] else x
-  }, character(1))
-  reponse_affichage = if (!is.null(affichages[[bonne]])) affichages[[bonne]] else bonne
-  list(id = definition$id, enonce = enonce, reponse = bonne,
-       reponse_affichage = reponse_affichage, propositions = propositions,
-       propositions_affichage = propositions_affichage, correction = correction,
-       illustration = definition$illustration, parametres = valeurs,
-       progression = progression, presentation = definition$presentation,
-       humour = definition$humour)
+  list(id = definition$id, enonce = definition$enonce, reponse = bonne,
+       propositions = sample(propositions), correction = correction,
+       illustration = definition$illustration, parametres = instance$parametres,
+       progression = instance$progression, presentation = definition$presentation,
+       humour = definition$humour, apart_humour = definition$apart_humour,
+       niveau = definition$niveau)
 }
 
 .tirer_questions_quiz_edu = function(definitions, n = NULL, tirages = 1L,
@@ -521,12 +188,17 @@ question = function(definition) {
         variables = which(vapply(definitions, function(x) length(x$variantes) > 0L,
                                  logical(1)))
         supplement = n - length(definitions)
-        candidats = if (length(variables)) variables else seq_along(definitions)
-        if (length(candidats) == 1L) {
-          supplementaires = rep(candidats, supplement)
+        if (length(variables)) {
+          capacites = pmax(0L, vapply(definitions[variables], function(x)
+            length(x$variantes) - 1L, integer(1)))
+          candidats = rep(variables, capacites)
         } else {
-          supplementaires = sample(candidats, supplement, replace = TRUE)
+          candidats = integer()
         }
+        if (supplement > length(candidats))
+          stop("Pas assez de questions distinctes pour ce quiz")
+        supplementaires = if (supplement)
+          sample(candidats, supplement, replace = FALSE) else integer()
         resultat = c(resultat, supplementaires)
       }
       if (melanger) resultat = sample(resultat)
@@ -673,7 +345,7 @@ graphique = function(id, ...) {
 #' dans l'ordre du referentiel ; le quiz utilise leurs banques JSON.
 #' @export
 produire = function(notion, support = "tous", dossier = NULL, format = "html",
-                    variantes = 5L, ouvrir = TRUE, niveau = "", n = NULL, tirages = NULL,
+                    variantes = 20L, ouvrir = TRUE, niveau = "", n = NULL, tirages = NULL,
                     humour_ratio = 0.2, seed = NULL) {
   stopifnot(length(notion) == 1L, is.character(notion),
             grepl("^[a-z][a-z0-9_]*$", notion),

@@ -4,50 +4,146 @@
     {
       "id": "ENS-003",
       "type": "qcm",
-      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∩ B.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "{3}"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "{3}",
-        "{1, 2, 3, 4}",
-        "{1, 2}",
-        "∅"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "L’intersection rassemble les éléments communs aux deux ensembles. Le seul élément commun est 3 ; le résultat est un ensemble, donc A ∩ B = {3}, et non 3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∩ B.",
+            "reponse": "{3}",
+            "correction": "L’intersection rassemble les éléments communs aux deux ensembles. Le seul élément commun est 3 ; le résultat est un ensemble, donc A ∩ B = {3}, et non 3.",
+            "p1": "{3}",
+            "p2": "{1, 2, 3, 4}",
+            "p3": "{1, 2}",
+            "p4": "∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour A = {11, 12, 13} et B = {13, 14}, calculer A ∩ B.",
+            "reponse": "{13}",
+            "correction": "L’intersection rassemble les éléments communs aux deux ensembles. Le seul élément commun est 13 ; le résultat est un ensemble, donc A ∩ B = {13}, et non 13.",
+            "p1": "{13}",
+            "p2": "{11, 12, 13, 14}",
+            "p3": "{11, 12}",
+            "p4": "∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour A = {21, 22, 23} et B = {23, 24}, calculer A ∩ B.",
+            "reponse": "{23}",
+            "correction": "L’intersection rassemble les éléments communs aux deux ensembles. Le seul élément commun est 23 ; le résultat est un ensemble, donc A ∩ B = {23}, et non 23.",
+            "p1": "{23}",
+            "p2": "{21, 22, 23, 24}",
+            "p3": "{21, 22}",
+            "p4": "∅"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-004",
       "type": "qcm",
-      "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∪ B.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "{1, 2, 3, 4}"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "{1, 2, 3, 4}",
-        "{3}",
-        "{1, 2, 4}",
-        "∅"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles. On obtient {1, 2, 3, 4} : 3 n’est pas répété."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour A = {1, 2, 3} et B = {3, 4}, calculer A ∪ B.",
+            "reponse": "{1, 2, 3, 4}",
+            "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles. On obtient {1, 2, 3, 4} : 3 n’est pas répété.",
+            "p1": "{1, 2, 3, 4}",
+            "p2": "{3}",
+            "p3": "{1, 2, 4}",
+            "p4": "∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour A = {11, 12, 13} et B = {13, 14}, calculer A ∪ B.",
+            "reponse": "{11, 12, 13, 14}",
+            "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles. On obtient {11, 12, 13, 14} : 13 n’est pas répété.",
+            "p1": "{11, 12, 13, 14}",
+            "p2": "{13}",
+            "p3": "{11, 12, 14}",
+            "p4": "∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour A = {21, 22, 23} et B = {23, 24}, calculer A ∪ B.",
+            "reponse": "{21, 22, 23, 24}",
+            "correction": "La réunion rassemble les éléments présents dans au moins un des deux ensembles. On obtient {21, 22, 23, 24} : 23 n’est pas répété.",
+            "p1": "{21, 22, 23, 24}",
+            "p2": "{23}",
+            "p3": "{21, 22, 24}",
+            "p4": "∅"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-011",
       "type": "qcm",
-      "enonce": "Dans E = {1, 2, 3, 4, 5, 6}, avec A = {1, 2, 3}, quel est E \\ A ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "{4, 5, 6}"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "{4, 5, 6}",
-        "{1, 2, 3}",
-        "{1, 2, 3, 4, 5, 6}",
-        "∅"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "E \\ A contient les éléments de l’ensemble de référence E qui ne sont pas dans A : {4, 5, 6}."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans E = {1, 2, 3, 4, 5, 6}, avec A = {1, 2, 3}, quel est E \\ A ?",
+            "reponse": "{4, 5, 6}",
+            "correction": "E \\ A contient les éléments de l’ensemble de référence E qui ne sont pas dans A : {4, 5, 6}.",
+            "p1": "{4, 5, 6}",
+            "p2": "{1, 2, 3}",
+            "p3": "{1, 2, 3, 4, 5, 6}",
+            "p4": "∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans E = {11, 12, 13, 14, 15, 16}, avec A = {11, 12, 13}, quel est E \\ A ?",
+            "reponse": "{14, 15, 16}",
+            "correction": "E \\ A contient les éléments de l’ensemble de référence E qui ne sont pas dans A : {14, 15, 16}.",
+            "p1": "{14, 15, 16}",
+            "p2": "{11, 12, 13}",
+            "p3": "{11, 12, 13, 14, 15, 16}",
+            "p4": "∅"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans E = {21, 22, 23, 24, 25, 26}, avec A = {21, 22, 23}, quel est E \\ A ?",
+            "reponse": "{24, 25, 26}",
+            "correction": "E \\ A contient les éléments de l’ensemble de référence E qui ne sont pas dans A : {24, 25, 26}.",
+            "p1": "{24, 25, 26}",
+            "p2": "{21, 22, 23}",
+            "p3": "{21, 22, 23, 24, 25, 26}",
+            "p4": "∅"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-012",
@@ -56,10 +152,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "∅"
-      },
+      "reponse": "∅",
       "propositions": [
         "∅",
         "{∅}",
@@ -71,18 +164,50 @@
     {
       "id": "ENS-013",
       "type": "qcm",
-      "enonce": "Avec A = {1, 2, 3}, quelle égalité est correcte ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "A ∪ ∅ = A"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "A ∪ ∅ = A",
-        "A ∪ ∅ = {∅, 1, 2, 3}",
-        "A ∩ ∅ = A",
-        "A \\ A = {∅}"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "L’ensemble vide n’ajoute aucun élément : A ∪ ∅ = A. Et A ∩ ∅ = A \\ A = ∅. Il ne faut pas confondre ∅ avec {∅}."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Avec A = {1, 2, 3}, quelle égalité est correcte ?",
+            "reponse": "A ∪ ∅ = A",
+            "correction": "L’ensemble vide n’ajoute aucun élément : A ∪ ∅ = A. Et A ∩ ∅ = A \\ A = ∅. Il ne faut pas confondre ∅ avec {∅}.",
+            "p1": "A ∪ ∅ = A",
+            "p2": "A ∪ ∅ = {∅, 1, 2, 3}",
+            "p3": "A ∩ ∅ = A",
+            "p4": "A \\ A = {∅}"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Avec A = {11, 12, 13}, quelle égalité est correcte ?",
+            "reponse": "A ∪ ∅ = A",
+            "correction": "L’ensemble vide n’ajoute aucun élément : A ∪ ∅ = A. Et A ∩ ∅ = A \\ A = ∅. Il ne faut pas confondre ∅ avec {∅}.",
+            "p1": "A ∪ ∅ = A",
+            "p2": "A ∪ ∅ = {∅, 11, 12, 13}",
+            "p3": "A ∩ ∅ = A",
+            "p4": "A \\ A = {∅}"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Avec A = {21, 22, 23}, quelle égalité est correcte ?",
+            "reponse": "A ∪ ∅ = A",
+            "correction": "L’ensemble vide n’ajoute aucun élément : A ∪ ∅ = A. Et A ∩ ∅ = A \\ A = ∅. Il ne faut pas confondre ∅ avec {∅}.",
+            "p1": "A ∪ ∅ = A",
+            "p2": "A ∪ ∅ = {∅, 21, 22, 23}",
+            "p3": "A ∩ ∅ = A",
+            "p4": "A \\ A = {∅}"
+          }
+        }
+      ]
     },
     {
       "id": "ENS-014",
@@ -97,10 +222,7 @@
           "complémentaire": "c _ m p l _ m e n t a i r e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "intersection"
-      },
+      "reponse": "intersection",
       "propositions": [
         "intersection",
         "réunion",
@@ -123,10 +245,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "réunion"
-      },
+      "reponse": "réunion",
       "propositions": [
         "réunion",
         "intersection",
@@ -138,27 +257,56 @@
     {
       "id": "ENS-016",
       "type": "qcm",
-      "enonce": "Dans E = {1, 2, 3, 4, 5, 6}, avec A = {1, 2, 3}, pourquoi faut-il préciser E pour parler du complémentaire de A ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
-        "Parce que A doit toujours contenir E.",
-        "Parce que le complémentaire de A est toujours l’ensemble vide.",
-        "Parce que E et A doivent avoir le même nombre d’éléments."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le complémentaire dépend de l’univers de référence : changer E peut ajouter ou retirer des éléments au complémentaire de A."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans E = {1, 2, 3, 4, 5, 6}, avec A = {1, 2, 3}, pourquoi faut-il préciser E pour parler du complémentaire de A ?",
+            "reponse": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+            "correction": "Le complémentaire dépend de l’univers de référence : changer E peut ajouter ou retirer des éléments au complémentaire de A.",
+            "p1": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+            "p2": "Parce que A doit toujours contenir E.",
+            "p3": "Parce que le complémentaire de A est toujours l’ensemble vide.",
+            "p4": "Parce que E et A doivent avoir le même nombre d’éléments."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans E = {11, 12, 13, 14, 15, 16}, avec A = {11, 12, 13}, pourquoi faut-il préciser E pour parler du complémentaire de A ?",
+            "reponse": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+            "correction": "Le complémentaire dépend de l’univers de référence : changer E peut ajouter ou retirer des éléments au complémentaire de A.",
+            "p1": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+            "p2": "Parce que A doit toujours contenir E.",
+            "p3": "Parce que le complémentaire de A est toujours l’ensemble vide.",
+            "p4": "Parce que E et A doivent avoir le même nombre d’éléments."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans E = {21, 22, 23, 24, 25, 26}, avec A = {21, 22, 23}, pourquoi faut-il préciser E pour parler du complémentaire de A ?",
+            "reponse": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+            "correction": "Le complémentaire dépend de l’univers de référence : changer E peut ajouter ou retirer des éléments au complémentaire de A.",
+            "p1": "Parce que les éléments extérieurs à A dépendent de l’ensemble de référence.",
+            "p2": "Parce que A doit toujours contenir E.",
+            "p3": "Parce que le complémentaire de A est toujours l’ensemble vide.",
+            "p4": "Parce que E et A doivent avoir le même nombre d’éléments."
+          }
+        }
+      ]
     },
     {
       "id": "ENS-017",
       "type": "qcm",
       "enonce": "Avec un ensemble de référence E fixé, quelle égalité traduit une loi de De Morgan ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "E \\ (A ∩ B) = (E \\ A) ∪ (E \\ B)"
-      },
+      "reponse": "E \\ (A ∩ B) = (E \\ A) ∪ (E \\ B)",
       "propositions": [
         "E \\ (A ∩ B) = (E \\ A) ∪ (E \\ B)",
         "E \\ (A ∩ B) = (E \\ A) ∩ (E \\ B)",

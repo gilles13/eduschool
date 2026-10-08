@@ -4,27 +4,56 @@
     {
       "id": "MES-GRANDEURS_MESURES-001",
       "type": "qcm",
-      "enonce": "Quel énoncé est une mesure de longueur ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2,5 m"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2,5 m",
-        "2,5 kg",
-        "2,5 h",
-        "2,5 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le mètre est une unité de longueur."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel énoncé est une mesure de longueur ?",
+            "reponse": "2,5 m",
+            "correction": "Le mètre est une unité de longueur.",
+            "p1": "2,5 m",
+            "p2": "2,5 kg",
+            "p3": "2,5 h",
+            "p4": "2,5 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel énoncé est une mesure de longueur ?",
+            "reponse": "Une table mesure 1,8 m de long.",
+            "correction": "Le mètre est une unité de longueur.",
+            "p1": "Une table mesure 1,8 m de long.",
+            "p2": "Une bouteille contient 1,8 L.",
+            "p3": "Un sac pèse 1,8 kg.",
+            "p4": "Un trajet dure 1,8 h."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel énoncé est une mesure de longueur ?",
+            "reponse": "Une corde mesure 2,4 m.",
+            "correction": "Le mètre est une unité de longueur.",
+            "p1": "Une corde mesure 2,4 m.",
+            "p2": "Un bidon contient 2,4 L.",
+            "p3": "Un colis pèse 2,4 kg.",
+            "p4": "Une séance dure 2,4 h."
+          }
+        }
+      ]
     },
     {
       "id": "MES-GRANDEURS_MESURES-002",
       "type": "qcm",
       "enonce": "Quelle grandeur mesure-t-on en secondes ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "La durée"
-      },
+      "reponse": "La durée",
       "propositions": [
         "La durée",
         "La masse",
@@ -36,18 +65,50 @@
     {
       "id": "MES-GRANDEURS_MESURES-003",
       "type": "qcm",
-      "enonce": "Pour additionner 2 m et 30 cm, quelle méthode convient ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Convertir dans une unité commune"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Convertir dans une unité commune",
-        "Additionner 2 et 30 sans unité",
-        "Multiplier 2 par 30",
-        "Changer les deux valeurs en kg"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "2 m = 200 cm ; on obtient 230 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour additionner 2 m et 30 cm, quelle méthode convient ?",
+            "reponse": "Convertir dans une unité commune",
+            "correction": "2 m = 200 cm ; on obtient 230 cm.",
+            "p1": "Convertir dans une unité commune",
+            "p2": "Additionner 2 et 30 sans unité",
+            "p3": "Multiplier 2 par 30",
+            "p4": "Changer les deux valeurs en kg"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour additionner 3 m et 40 cm, quelle méthode convient ?",
+            "reponse": "Convertir d’abord dans la même unité.",
+            "correction": "On ne peut additionner directement que des mesures exprimées dans la même unité.",
+            "p1": "Convertir d’abord dans la même unité.",
+            "p2": "Additionner 3 et 40 pour obtenir 43 m.",
+            "p3": "Multiplier 3 par 40.",
+            "p4": "Changer seulement le symbole de l’unité."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour additionner 5 m et 25 cm, quelle méthode convient ?",
+            "reponse": "Convertir d’abord dans la même unité.",
+            "correction": "Il faut d’abord convertir les deux longueurs dans une même unité.",
+            "p1": "Convertir d’abord dans la même unité.",
+            "p2": "Additionner 5 et 25 pour obtenir 30 m.",
+            "p3": "Multiplier 5 par 25.",
+            "p4": "Changer seulement le symbole de l’unité."
+          }
+        }
+      ]
     },
     {
       "id": "MES-GRANDEURS_MESURES-VOCAB-TROU",
@@ -62,10 +123,7 @@
           "unité": "u _ _ _ é"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "grandeur"
-      },
+      "reponse": "grandeur",
       "propositions": [
         "grandeur",
         "mesure",
@@ -88,10 +146,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "mesure"
-      },
+      "reponse": "mesure",
       "propositions": [
         "mesure",
         "masse",
@@ -103,18 +158,50 @@
     {
       "id": "MES-GRANDEURS_MESURES-APPLICATION",
       "type": "qcm",
-      "enonce": "Un ruban mesure 80 cm et un autre 1,2 m. Quelle est leur longueur totale en mètres ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2 m"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 m",
-        "1,28 m",
-        "81,2 m",
-        "200 m"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "80 cm = 0,8 m ; 0,8 + 1,2 = 2 m."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un ruban mesure 80 cm et un autre 1,2 m. Quelle est leur longueur totale en mètres ?",
+            "reponse": "2 m",
+            "correction": "80 cm = 0,8 m ; 0,8 + 1,2 = 2 m.",
+            "p1": "2 m",
+            "p2": "1,28 m",
+            "p3": "81,2 m",
+            "p4": "200 m"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un ruban mesure 60 cm et un autre 1,4 m. Quelle est leur longueur totale en mètres ?",
+            "reponse": "2 m",
+            "correction": "60 cm = 0,6 m ; 0,6 + 1,4 = 2 m.",
+            "p1": "2 m",
+            "p2": "2,0 cm",
+            "p3": "1,46 m",
+            "p4": "7,4 m"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un ruban mesure 75 cm et un autre 1,25 m. Quelle est leur longueur totale en mètres ?",
+            "reponse": "2 m",
+            "correction": "75 cm = 0,75 m ; 0,75 + 1,25 = 2 m.",
+            "p1": "2 m",
+            "p2": "2,0 cm",
+            "p3": "1,325 m",
+            "p4": "8,75 m"
+          }
+        }
+      ]
     }
   ]
 }

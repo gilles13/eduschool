@@ -4,74 +4,146 @@
     {
       "id": "MES-CONVERSION_CONTENANCES-001",
       "type": "qcm",
-      "enonce": "[[quantite]] L correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "9/4",
-          "1000"
-        ],
-        "format": "decimal",
-        "unite": "mL",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2 250 mL",
-        "225 mL",
-        "22,5 mL",
-        "22 500 mL"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 L = 1 000 mL."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "2,25 L correspondent à…",
+            "reponse": "2 250 mL",
+            "correction": "1 L = 1 000 mL.",
+            "p1": "2 250 mL",
+            "p2": "225 mL",
+            "p3": "22,5 mL",
+            "p4": "22 500 mL"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "4,50 L correspondent à…",
+            "reponse": "4 500 mL",
+            "correction": "En convertissant dans l’unité demandée, on obtient 4 500 mL.",
+            "p1": "4 500 mL",
+            "p2": "450 mL",
+            "p3": "45,0 mL",
+            "p4": "45 000 mL"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "6,75 L correspondent à…",
+            "reponse": "6 750 mL",
+            "correction": "En convertissant dans l’unité demandée, on obtient 6 750 mL.",
+            "p1": "6 750 mL",
+            "p2": "675 mL",
+            "p3": "67,5 mL",
+            "p4": "67 500 mL"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_CONTENANCES-002",
       "type": "qcm",
-      "enonce": "[[quantite]] cL correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "75",
-          "1/100"
-        ],
-        "format": "decimal",
-        "unite": "L",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,75 L",
-        "7,5 L",
-        "75 L",
-        "0,075 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 L = 100 cL."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "75 cL correspondent à…",
+            "reponse": "0,75 L",
+            "correction": "1 L = 100 cL.",
+            "p1": "0,75 L",
+            "p2": "7,5 L",
+            "p3": "75 L",
+            "p4": "0,075 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "150 cL correspondent à…",
+            "reponse": "1,50 L",
+            "correction": "En convertissant dans l’unité demandée, on obtient 1,50 L.",
+            "p1": "1,50 L",
+            "p2": "15,0 L",
+            "p3": "150 L",
+            "p4": "0,150 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "225 cL correspondent à…",
+            "reponse": "2,25 L",
+            "correction": "En convertissant dans l’unité demandée, on obtient 2,25 L.",
+            "p1": "2,25 L",
+            "p2": "22,5 L",
+            "p3": "225 L",
+            "p4": "0,225 L"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_CONTENANCES-003",
       "type": "qcm",
-      "enonce": "[[quantite]] mL correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "250",
-          "1/10"
-        ],
-        "format": "decimal",
-        "unite": "cL",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "25 cL",
-        "2,5 cL",
-        "250 cL",
-        "0,25 cL"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 cL = 10 mL."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "250 mL correspondent à…",
+            "reponse": "25 cL",
+            "correction": "1 cL = 10 mL.",
+            "p1": "25 cL",
+            "p2": "2,5 cL",
+            "p3": "250 cL",
+            "p4": "0,25 cL"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "500 mL correspondent à…",
+            "reponse": "50 cL",
+            "correction": "En convertissant dans l’unité demandée, on obtient 50 cL.",
+            "p1": "50 cL",
+            "p2": "5,0 cL",
+            "p3": "500 cL",
+            "p4": "0,50 cL"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "750 mL correspondent à…",
+            "reponse": "75 cL",
+            "correction": "En convertissant dans l’unité demandée, on obtient 75 cL.",
+            "p1": "75 cL",
+            "p2": "7,5 cL",
+            "p3": "750 cL",
+            "p4": "0,75 cL"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_CONTENANCES-VOCAB-TROU",
@@ -86,10 +158,7 @@
           "heure": "h _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "litre"
-      },
+      "reponse": "litre",
       "propositions": [
         "litre",
         "mètre",
@@ -112,10 +181,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "centilitre"
-      },
+      "reponse": "centilitre",
       "propositions": [
         "centilitre",
         "millilitre",
@@ -127,18 +193,50 @@
     {
       "id": "MES-CONVERSION_CONTENANCES-APPLICATION",
       "type": "qcm",
-      "enonce": "Une bouteille contient 75 cL. Quelle est sa contenance en litres ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0,75 L"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,75 L",
-        "7,5 L",
-        "75 L",
-        "0,075 L"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "100 cL = 1 L ; 75 cL = 0,75 L."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une bouteille contient 75 cL. Quelle est sa contenance en litres ?",
+            "reponse": "0,75 L",
+            "correction": "100 cL = 1 L ; 75 cL = 0,75 L.",
+            "p1": "0,75 L",
+            "p2": "7,5 L",
+            "p3": "75 L",
+            "p4": "0,075 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une bouteille contient 150 cL. Quelle est sa contenance en litres ?",
+            "reponse": "1,50 L",
+            "correction": "En convertissant dans l’unité demandée, on obtient 1,50 L.",
+            "p1": "1,50 L",
+            "p2": "15,0 L",
+            "p3": "150 L",
+            "p4": "0,150 L"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une bouteille contient 225 cL. Quelle est sa contenance en litres ?",
+            "reponse": "2,25 L",
+            "correction": "En convertissant dans l’unité demandée, on obtient 2,25 L.",
+            "p1": "2,25 L",
+            "p2": "22,5 L",
+            "p3": "225 L",
+            "p4": "0,225 L"
+          }
+        }
+      ]
     }
   ]
 }

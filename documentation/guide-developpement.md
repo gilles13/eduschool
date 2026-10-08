@@ -2,6 +2,8 @@
 
 **À relire avant chaque intervention, notamment après une reprise de conversation ou une perte de contexte.** Ce document est la référence opérationnelle du projet ; ne jamais supposer que l'état mémorisé correspond au dépôt courant.
 
+**Toute API externe est vérifiée avant usage.** Avant d'introduire ou de modifier un appel à un package ou outil externe (`testthat`, Ryacas/Yacas, `jsonlite`, `ggplot2`, `rmarkdown`, etc.), vérifier la signature et le comportement dans la documentation de la version actuelle concernée. Ne jamais écrire un appel à partir d'un souvenir de syntaxe ni contourner une erreur en déplaçant le même argument vers une autre fonction sans vérification.
+
 ## Règle absolue : les donnees pedagogiques ne sont jamais codees en dur
 
 **Aucune liste de notions, familles, niveaux ou contenus pedagogiques dans les fonctions R.**
@@ -72,7 +74,7 @@ Ces modèles fixent la hiérarchie de présentation commune : titre principal, b
 ## 2. Architecture volontairement minimale
 
 - **CSV** : catalogue léger des notions et rattachements souples aux niveaux et thèmes. Une notion n'est pas prisonnière d'un programme scolaire.
-- **JSON** : questions, paramètres, réponses, distracteurs et corrections.
+- **JSON** : questions, variantes finies, réponses, propositions et corrections. Le JSON contient le produit fini de l’atelier, jamais le calcul ou la validation qui a permis de le fabriquer.
 - **Markdown** : contenu pédagogique.
 - **R Markdown** : production de fiches et de quiz en HTML et PDF.
 
@@ -89,20 +91,21 @@ Pas de réimportation de l'ancien moteur ni de l'ancien SI. Une abstraction nouv
 ## 3. Contrat pédagogique des quiz
 
 - Les quiz contiennent **uniquement des questions corrigibles automatiquement et sans ambiguïté**. Reformuler ou écarter une question libre qui ne satisfait pas ce critère ; ne pas ajouter de correction automatique de texte libre.
-- Chaque QCM doit avoir **une seule réponse mathématiquement correcte**. Avant toute migration ou génération transversale, auditer les distracteurs : deux écritures différentes d’une même fraction (ex. `1/2` et `2/4`) ne peuvent pas être proposées comme deux réponses distinctes dans un QCM à réponse unique. Chaque distracteur doit être explicitement faux dans les conditions de l'énoncé, y compris après tirage des paramètres. Vérifier les équivalences mathématiques, pas seulement l'identité des chaînes de caractères.
+- Chaque QCM doit avoir **une seule réponse mathématiquement correcte**. Un **distracteur est un raisonnement faux plausible que l’on veut tester**, pas la proposition fausse affichée à l’élève. L’atelier applique ce raisonnement à une combinaison et obtient une proposition fausse. Deux raisonnements faux peuvent produire accidentellement la même proposition ou une proposition équivalente à la bonne réponse : la combinaison doit alors être rejetée ou retravaillée **avant** l’écriture du JSON. Le JSON final conserve les propositions affichées, pas la mécanique des distracteurs. Vérifier les équivalences mathématiques, pas seulement l’identité des chaînes de caractères.
 - Favoriser la **diversité des raisonnements** plutôt que plusieurs formulations du même calcul.
+- **Une question numérique possède des variantes, dans toutes les notions et toutes les familles.** Dès que des valeurs numériques apparaissent dans une question active, l’atelier prépare plusieurs variantes finies. Les données d’exercice varient réellement ; réponses, propositions, corrections et illustrations restent cohérentes. Une constante mathématique (par exemple 0 pour un événement impossible, le rayon 1 du cercle trigonométrique ou l’exposant 0 dans `a^0 = 1`) reste vraie : la diversité porte alors sur le contexte ou la formulation, jamais sur une fausse variation de la constante. Ryacas/Yacas contrôle en amont les calculs et équivalences lorsqu’il peut faire le travail. Le runtime ne calcule rien : il choisit une variante déjà terminée. Une question numérique sans plusieurs variantes distinctes est une anomalie de contenu. Les questions de vocabulaire ou de définition sans valeur numérique ne sont pas concernées.
 - Une notion est un apprentissage, pas un format de question. Éviter les doublons artificiels. Les vestiges de migration et les données mortes ne restent pas dans les banques actives.
 - Autoriser une correction libre et directe : les étapes « Je vois / Je sais » sont facultatives.
 - Les questions portant sur une droite graduée doivent montrer une véritable droite dans les quiz HTML et PDF ; la figure ne révèle pas la réponse.
 - Un quiz transversal `fractions` mélange les questions de toutes les notions de fractions sans dupliquer les banques.
-- **Contrat impératif : questions de vocabulaire « mot à trou » et « mot masqué »**. Ce sont deux présentations de **QCM à propositions plausibles**, jamais des champs de saisie. L’élève sélectionne une proposition ; la correction est automatique par le moteur QCM existant. Ne jamais proposer de réponse libre, de reconnaissance textuelle ou un nouveau moteur de correction pour ces exercices.
+- **Contrat impératif : questions de vocabulaire « mot à trou » et « mot masqué »**. Toute nouvelle banque de notion contient **au moins un `mot_a_trou` et au moins un `mot_masque`** ; les deux peuvent porter sur le même terme. Les banques historiques encore incomplètes sont explicitement recensées comme dette de migration par le test correspondant : toute nouvelle banque non recensée échoue immédiatement si une des deux formes manque, et une banque historique sortie de dette doit être retirée de cette liste. Ce sont deux présentations de **QCM à propositions plausibles**, jamais des champs de saisie. L’élève sélectionne une proposition ; la correction est automatique par le moteur QCM existant. Ne jamais proposer de réponse libre, de reconnaissance textuelle ou un nouveau moteur de correction pour ces exercices.
   - **Mot à trou** : quelques lettres du terme recherché restent visibles et les emplacements cachés correspondent **exactement** aux lettres manquantes. Exemple pour « rayon » : `r _ _ _ n`. Le contrôle automatisé vérifie le nombre total de positions et la position de chaque lettre visible pour toutes les propositions.
   - **Mot masqué** : seules des lettres-indices éventuelles restent visibles ; le trait central a une **longueur graphique fixe, sans rapport avec le nombre de caractères**. Exemple pour « hypoténuse » : `H________E`. Afficher obligatoirement l’avertissement : « La longueur du trait ne correspond pas au nombre de caractères du mot recherché. » Utiliser un terme mathématique unique, pas une expression de plusieurs mots.
   - Dans **les deux variantes**, fournir plusieurs **propositions de mots mathématiques plausibles**, en lien avec la question et les confusions pédagogiques possibles. La question est affichée **une seule fois**, puis chaque proposition est affichée sous sa propre forme masquée (ne pas montrer les mots en clair avant correction). Le mot réel est conservé comme valeur interne pour la correction automatique. Les représentations affichées doivent permettre de distinguer les propositions : ne jamais produire des choix visuellement identiques ou une question ambiguë. Une seule proposition doit répondre à la définition posée. La correction révèle le mot choisi, la bonne réponse et une explication utile.
   - Conserver ces deux types lors des migrations de questions et vérifier leur présence dans les banques historiques avant de conclure qu’ils n’existaient pas. **Ne pas confondre** avec un nombre manquant dans une équation ni avec des mots masqués dans une correction.
 - Préserver les corrections pertinentes, notamment « Je vois / Je sais / J'en déduis » et « Je calcule » quand cela apporte réellement quelque chose. Ne pas imposer artificiellement ces étapes.
 - **Trois actions HTML distinctes, dans cet ordre** : « Valider mes réponses » corrige le tirage affiché ; « Relancer ce quiz » efface réponses et corrections **sans changer les questions, valeurs ni propositions** ; « Générer un nouveau quiz » affiche le prochain tirage pré-calculé. Après le dernier tirage, revenir au premier (boucle). Ne jamais confondre relance et nouveau tirage.
-- `produire(..., n = 10, tirages = 5)` signifie dix questions par quiz et cinq quiz pré-calculés ; `variantes` reste un ancien alias de `tirages`. Lorsqu'une même définition variable est utilisée plusieurs fois dans ces tirages, consommer ses variantes sans remise tant qu'il en reste ; une répétition n'est acceptable qu'après épuisement des variantes disponibles. Ne pas construire de détection générique de doublons sur les énoncés.
+- `produire(..., n = 10, tirages = 20)` signifie dix questions par quiz et vingt quiz pré-calculés ; `variantes` reste un ancien alias de `tirages`. Lorsqu'une même définition variable est utilisée plusieurs fois dans ces tirages, consommer ses variantes sans remise tant qu'il en reste ; une répétition n'est acceptable qu'après épuisement des variantes disponibles. Ne pas construire de détection générique de doublons sur les énoncés.
 - Les modèles R Markdown restent des modèles de rendu : la sélection et l'instanciation cohérente des questions sont réalisées par une petite fonction R dédiée et testable. Ne pas déplacer cette logique métier dans `quiz.Rmd`. Les tirages sont calculés en R lors de la génération, jamais par JavaScript dans le navigateur.
 - HTML : réponses sélectionnables, vérification/correction et relance. PDF : version imprimable avec corrigé. `produire()` doit ouvrir le document par défaut et permettre de désactiver l'ouverture lors des générations en série.
 - **Lisibilite des enonces** : lorsqu'un enonce contient plusieurs phrases, chaque nouvelle phrase commence sur une nouvelle ligne dans le rendu HTML et PDF. Cette regle est appliquee par le modele de quiz ; ne pas ajouter manuellement des retours a la ligne dans les JSON pour obtenir cet effet.
@@ -110,23 +113,40 @@ Pas de réimportation de l'ancien moteur ni de l'ancien SI. Une abstraction nouv
 
 ### Procédure fonctionnelle obligatoire avant de créer une banque de questions
 
-Avant de fabriquer la banque JSON d'une nouvelle notion paramétrée, partir d'une copie de `documentation/modeles/atelier_questions.R`. Adapter les domaines, les contrôles et les distracteurs à la notion ; ne pas reconstruire la mécanique commune de bilan. L'atelier reste un outil de fabrication hors package.
+**Cette section est un invariant d’architecture. La relire avant toute modification des questions ou du moteur.** Si une nouvelle notion semble exiger une exception dans le runtime, ne pas ajouter l’exception : revenir à cette procédure et revoir le fonctionnement général. Une difficulté rencontrée par une notion ou une famille est un signal pour réexaminer l’ensemble, jamais une raison d’empiler une branche spéciale.
 
-L'atelier explore un domaine plus large que la banque finale. Une combinaison invalide est journalisée puis rejetée ; elle n'a pas à être réparée si le domaine fournit suffisamment de variantes valides. Le bilan de l'atelier affiche la diversité des distracteurs, une synthèse des rejets avec trois exemples maximum, puis les effectifs retenus par palier. Les objets complets restent disponibles au REPL pour inspection.
+Pour toute nouvelle notion ou famille, **ne jamais commencer par remplir le JSON**. Partir d’une copie de `documentation/modeles/atelier_questions.R`, dans un espace de travail local. L’atelier est spécifique à la notion, jetable et n’est jamais appelé par eduschool.
 
-Pour toute nouvelle notion ou famille de questions, **ne pas commencer par remplir le JSON**. La préparation du contenu suit cet ordre :
+1. **Choisir d’abord ce que l’on veut faire raisonner.** Inventorier les formes déjà supportées par eduschool et retenir celles qui servent réellement la notion. Pour un QCM, définir la bonne méthode et quelques **raisonnements faux plausibles**. Un distracteur désigne ce raisonnement faux ; la valeur ou le texte qu’il produit est une **proposition fausse**.
+2. **Explorer un domaine large hors du runtime.** Le helper local génère des combinaisons candidates. Il peut être aussi spécifique que nécessaire à la notion ; cette complexité disparaît avec l’atelier et ne devient pas une API générique du package.
+3. **Faire les mathématiques avec Ryacas/Yacas en amont.** Avant d’implémenter un calcul, une transformation, une simplification, une équivalence ou un contrôle mathématique, vérifier sérieusement si Ryacas/Yacas sait le faire. L’atelier lui délègue le plus gros du travail.
+4. **Appliquer les raisonnements faux aux combinaisons.** L’atelier produit la bonne réponse et les propositions fausses correspondant aux erreurs pédagogiques choisies. Il ne fabrique pas trois valeurs fausses arbitraires uniquement pour remplir un QCM.
+5. **Valider avant toute écriture JSON.** Ryacas/Yacas contrôle les résultats, les équivalences et, lorsque c’est pertinent, les transformations symboliques. Rejeter toute combinaison avec zéro ou plusieurs bonnes réponses, collision entre propositions, proposition fausse équivalente à la bonne, résultat non admissible ou distracteur pédagogiquement inutilisable. Pour une notion paramétrée destinée à l’entraînement, vérifier qu’un domaine suffisamment riche peut fournir au moins 50 combinaisons valides et distinctes ; ce seuil ne justifie jamais une abstraction dans le moteur.
+6. **Sélectionner pédagogiquement.** Parmi les combinaisons valides, retenir un ensemble fini varié et utile, réparti si nécessaire par `progression`. La sélection humaine intervient après la validation mathématique, pas avant.
+7. **Préparer le contenu final.** Réponse, propositions, correction, affichage mathématique et paramètres nécessaires aux illustrations sont finalisés dans l’atelier. Le JSON ne contient ni expression à exécuter, ni candidat à tester, ni calcul dérivé à refaire.
+8. **Écrire seulement alors le JSON.** Une question fixe contient directement sa réponse finale. Une question variable contient une liste finie de variantes dont les paramètres sont déjà calculés, validés et relus. Le runtime ne découvre jamais la vérité mathématique.
+9. **Jeter l’atelier lorsqu’il n’a plus de travail.** Le modèle reste ; les helpers spécifiques n’entrent pas dans le moteur. Conserver ponctuellement un atelier dans `tools/` n’est justifié que s’il sert encore concrètement à fabriquer ou réviser la banque.
 
-1. **Relire ce guide et inventorier les types de questions déjà disponibles.** Examiner systématiquement si la notion se prête aux types existants : calcul ou résolution, mot à trou, mot masqué, boîte à valeur recherchée, QCM de raisonnement et autres types déjà documentés. Ne retenir que les formes pédagogiquement utiles, mais les intégrer dès le premier jet au lieu de produire une banque uniforme puis de la reprendre plusieurs fois.
-2. **Explorer les paramètres hors du package.** Utiliser au besoin des helpers R locaux, spécifiques et jetables pour construire le domaine admissible, repérer les cas pédagogiquement intéressants et sélectionner un ensemble fini de variantes. Ces helpers servent l'atelier éditorial ; ils n'entrent pas dans le moteur eduschool et ne deviennent pas une abstraction générique.
-3. **Contrôler les distracteurs en amont.** Les helpers peuvent fabriquer plusieurs erreurs plausibles, éliminer les valeurs non finies, les doublons et toute collision avec la réponse correcte, puis vérifier que chaque variante retenue dispose d'assez de distracteurs valides. Un distracteur s'adapte au domaine pédagogique ; le domaine pédagogique ne s'appauvrit pas pour sauver un distracteur.
-4. **Figer le contenu fini dans le JSON.** Le premier JSON doit déjà contenir la diversité pédagogique pertinente, les paramètres retenus, les distracteurs contrôlés et les étapes de correction ou de calcul nécessaires à la compréhension. Les écritures mathématiques exactes sont préférées aux approximations décimales lorsqu'elles sont disponibles.
-5. **Garder le moteur simple.** Autant que possible, l'intelligence de génération, d'exploration et de validation reste dans l'atelier de fabrication. Le runtime choisit et affiche du contenu fini, puis utilise les mécanismes de correction déjà existants. Ne créer un nouveau mécanisme que si aucun type existant ne répond proprement au besoin réel.
+La frontière est stricte :
 
-**Contrôle avant le premier patch JSON :** « Avons-nous exploré les paramètres, vérifié les collisions, regardé les types de questions déjà disponibles et inclus dès maintenant les formes réellement utiles à cette notion ? »
+```text
+ATELIER : générer → Ryacas/Yacas → valider → sélectionner → préparer l’affichage → JSON
+RUNTIME : lire → choisir → substituer → mélanger → afficher
+```
 
-Cette procédure doit permettre de traiter rapidement une nouvelle famille analogue sans rediscuter l'architecture à chaque notion. **La diversité pédagogique doit être dans le contenu, pas dans le moteur. Le contenu commande le code.**
+Le runtime ne calcule pas une réponse, ne recherche pas la bonne proposition, ne teste pas une équivalence mathématique, ne calcule pas un paramètre dérivé et ne reconstruit pas une écriture mathématique. Les contrôles permanents du package sont **structurels** : JSON lisible, réponse présente une fois dans les propositions, propositions textuellement distinctes, correction présente, variantes bien formées, placeholders résolus et illustrations référencées correctement.
 
-### Niveau affiché dans les quiz
+**Contrôle avant tout patch :** « Ce code aide-t-il à utiliser un contenu fini, ou essaie-t-il de fabriquer/valider les mathématiques pendant l’utilisation ? » Dans le second cas, il est au mauvais endroit.
+
+**Règle de complexité :** ne jamais ajouter une exception, un mode de réponse, une branche par notion ou un parseur de représentation pour sauver un cas particulier. Si le modèle général ne suffit plus, arrêter le patch et revoir le modèle général avant d’ajouter du code.
+
+### Fractions : choix du dénominateur commun (octobre 2026)
+
+Pour une addition ou une soustraction de fractions, eduschool privilégie une méthode élémentaire et reproductible plutôt que la recherche systématique du PPCM. Si les dénominateurs sont identiques, aucun changement n’est nécessaire. Si l’un est un multiple de l’autre, utiliser le plus grand. Sinon, utiliser simplement le produit des deux dénominateurs. Le résultat final est ensuite simplifié si nécessaire.
+
+Cette règle est éditoriale. Dans l’atelier de fabrication, les dénominateurs, facteurs, fractions équivalentes et résultats dérivables sont calculés autant que possible par Ryacas/Yacas, puis figés dans le JSON ; ne pas réimplémenter un algorithme de fractions dans le runtime R.
+
+## Niveau affiché dans les quiz
 
 L'en-tête d'un quiz affiche son niveau à partir de `inst/referentiels/editorial_familles_notions.csv`, sans liste parallèle dans le code. Pour une notion, afficher son niveau d'introduction. Pour une famille transversale couvrant plusieurs niveaux, afficher la plage du premier au dernier niveau, par exemple `6E à 3E`. Si `produire(..., niveau = ...)` demande explicitement un niveau, afficher ce niveau demandé. Ne jamais afficher un niveau absent ou `NA`.
 
@@ -205,21 +225,6 @@ Le travail en cours porte sur la diversité des questions, les quiz transversaux
 - `inst/styles/eduschool.css` porte les styles HTML du quiz, charges par `quiz.Rmd`. La grille place les petites figures a droite des propositions sur grand ecran et les empile sur petit ecran. Le PDF conserve sa disposition verticale.
 - Pas de nouvelle infrastructure de mise en page ; les figures definissent leurs dimensions via `eduschool_dimensions`.
 
-## P0 — calculs fixes (27 septembre 2026)
-
-Pour les calculs numeriques migres, `reponse.mode = calcul_fixe` contient
-uniquement deux litteraux rationnels fixes, une operation autorisee et le
-format d'affichage. Le moteur construit l'enonce a partir de ces valeurs et
-calcule la reponse avec Ryacas. Aucun resultat calcule n'est stocke dans le
-JSON ; aucune generation aleatoire de valeurs n'est autorisee. Le melange
-avec des `parametres` ou des `distracteurs.expressions` est interdit.
-
-Les conversions conservent leurs unites fixes et produisent la quantite
-source depuis le premier litteral. Les questions de connaissances et les
-questions symboliques non migrees restent editoriales : ne pas leur attribuer
-une garantie Ryacas. Les corrections en francais restent editoriales et
-ne doivent pas introduire de valeurs variables.
-
 ## Cercle trigonometrique et niveaux (septembre 2026)
 
 - Le CSV conserve `famille;notion;libelle_notion;niveau;etape_scolaire`.
@@ -286,23 +291,10 @@ hors du package ; le JSON ne conserve que les variantes relues et retenues.
 - Dans tout texte destine a l'eleve, la variable mathematique `x` s'affiche avec le caractere italique mathematique `\u1D465` (`𝑥`). Le `x` ASCII est reserve aux champs de calcul du moteur (`expression`, `source`, `*_expression`, etc.).
 - Le signe de multiplication s'affiche `×`, jamais avec la lettre `x`.
 
-## Regle d'or Ryacas (octobre 2026)
+## Règle d’or Ryacas et frontière de runtime (octobre 2026)
 
-Avant tout ajout de code mathematique dans eduschool, verifier systematiquement
-si Ryacas/Yacas peut faire le plus gros du travail. Lire et tester son API et sa
-documentation avant de reimplementer un calcul, une transformation, une
-simplification, un controle ou une representation mathematique. La complexite
-mathematique doit autant que possible rester dans le moteur de calcul formel ;
-eduschool orchestre le contenu pedagogique et reste simple.
+Ryacas/Yacas reste l’outil mathématique de référence d’eduschool, mais **dans l’atelier de fabrication**. Avant tout travail mathématique, vérifier systématiquement et sérieusement si Ryacas/Yacas peut effectuer le calcul, la transformation, la simplification, la représentation ou le contrôle attendu. Ne pas réimplémenter spontanément ces opérations en R.
 
-Pour l'affichage d'une expression canonique sans l'evaluer, utiliser Yacas :
-`TeXForm(Hold(...))`. Une expression mathematique derivable n'est pas stockee
-une seconde fois sous forme d'affichage. Les variantes declarent seulement les
-noms de leurs parametres mathematiques dans `presentation.math`; le moteur
-demande leur TeX a Ryacas. Une representation editoriale distincte reste
-legitime lorsqu'elle apporte une information pedagogique qui ne se deduit pas
-de l'expression canonique.
+Le résultat de ce travail est ensuite **figé dans le JSON**. Le runtime d’eduschool n’appelle pas Ryacas/Yacas et ne possède aucun mode `calcul_fixe`, `symbolique_fixe`, `relation_fixe`, aucun `calculs` dérivé et aucune reconstruction mathématique `presentation.math`. Une réponse finale est une donnée ; une variante finale ne contient que des données.
 
-## Parametres derives par Yacas (octobre 2026)
-
-Une question a variantes peut declarer des `calculs` nommes executes par Ryacas apres le choix de la variante. Ils servent a deriver des faits mathematiques necessaires a la reponse ou a la correction sans les dupliquer dans chaque variante. Les calculs sont evalues dans leur ordre de declaration et peuvent reutiliser les valeurs deja derivees. `format = "math_hold"` compose une expression mathematique pour l'affichage sans l'evaluer ; `format = "liste_entiers"` ne fait que presenter une liste d'entiers calculee par Yacas. Le JSON conserve les donnees initiales relues ; Yacas calcule les valeurs derivees et eduschool orchestre leur presentation pedagogique.
+Pour une représentation mathématique destinée à l’élève, l’atelier peut demander à Yacas une forme TeX (`TeXForm`, `Hold`, etc.) lorsqu’elle est adaptée, puis stocker la représentation finale nécessaire au contenu. **Ryacas fait les maths en amont ; eduschool utilise le contenu validé.**

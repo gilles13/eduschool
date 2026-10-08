@@ -4,66 +4,194 @@
     {
       "id": "COMPARAISON_DECIMAUX-001",
       "type": "qcm",
-      "enonce": "Quel est le plus grand nombre ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "7,08"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "7,08",
-        "7,008",
-        "7,0080",
-        "7,0008"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "7,08 possède huit centièmes, contre huit millièmes ou dix-millièmes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel est le plus grand nombre ?",
+            "reponse": "7,08",
+            "correction": "7,08 possède huit centièmes, contre huit millièmes ou dix-millièmes.",
+            "p1": "7,08",
+            "p2": "7,008",
+            "p3": "7,0080",
+            "p4": "7,0008"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel est le plus grand nombre ?",
+            "reponse": "17,08",
+            "correction": "17,08 possède huit centièmes, contre huit millièmes ou dix-millièmes.",
+            "p1": "17,08",
+            "p2": "17,008",
+            "p3": "17,0008",
+            "p4": "17,00008"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel est le plus grand nombre ?",
+            "reponse": "27,08",
+            "correction": "27,08 possède huit centièmes, contre huit millièmes ou dix-millièmes.",
+            "p1": "27,08",
+            "p2": "27,008",
+            "p3": "27,0008",
+            "p4": "27,00008"
+          }
+        }
+      ]
     },
     {
       "id": "COMPARAISON_DECIMAUX-002",
       "type": "qcm",
-      "enonce": "Quel rangement est croissant ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1,09 < 1,1 < 1,12"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1,09 < 1,1 < 1,12",
-        "1,1 < 1,09 < 1,12",
-        "1,12 < 1,1 < 1,09",
-        "1,09 < 1,12 < 1,1"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Comparer 1,09 ; 1,10 ; 1,12 permet de ranger."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel rangement est croissant ?",
+            "reponse": "1,09 < 1,1 < 1,12",
+            "correction": "Comparer 1,09 ; 1,10 ; 1,12 permet de ranger.",
+            "p1": "1,09 < 1,1 < 1,12",
+            "p2": "1,1 < 1,09 < 1,12",
+            "p3": "1,12 < 1,1 < 1,09",
+            "p4": "1,09 < 1,12 < 1,1"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel rangement est croissant ?",
+            "reponse": "11,09 < 11,1 < 11,12",
+            "correction": "Comparer 11,09 ; 11,1 ; 11,12 permet de ranger.",
+            "p1": "11,09 < 11,1 < 11,12",
+            "p2": "11,1 < 11,09 < 11,12",
+            "p3": "11,12 < 11,1 < 11,09",
+            "p4": "11,09 < 11,12 < 11,1"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel rangement est croissant ?",
+            "reponse": "21,09 < 21,1 < 21,12",
+            "correction": "Comparer 21,09 ; 21,1 ; 21,12 permet de ranger.",
+            "p1": "21,09 < 21,1 < 21,12",
+            "p2": "21,1 < 21,09 < 21,12",
+            "p3": "21,12 < 21,1 < 21,09",
+            "p4": "21,09 < 21,12 < 21,1"
+          }
+        }
+      ]
     },
     {
       "id": "COMPARAISON_DECIMAUX-003",
       "type": "qcm",
-      "enonce": "Quelle égalité est vraie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5,40 = 5,4"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5,40 = 5,4",
-        "5,40 = 5,04",
-        "5,40 = 5,4001",
-        "5,40 = 5,004"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les zéros finaux après la virgule ne modifient pas la valeur."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle égalité est vraie ?",
+            "reponse": "5,40 = 5,4",
+            "correction": "Les zéros finaux après la virgule ne modifient pas la valeur.",
+            "p1": "5,40 = 5,4",
+            "p2": "5,40 = 5,04",
+            "p3": "5,40 = 5,4001",
+            "p4": "5,40 = 5,004"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle égalité est vraie ?",
+            "reponse": "15,4 = 15,4",
+            "correction": "Les zéros finaux après la virgule ne modifient pas la valeur.",
+            "p1": "15,4 = 15,4",
+            "p2": "15,4 = 15,04",
+            "p3": "15,4 = 15,4001",
+            "p4": "15,4 = 15,004"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle égalité est vraie ?",
+            "reponse": "25,4 = 25,4",
+            "correction": "Les zéros finaux après la virgule ne modifient pas la valeur.",
+            "p1": "25,4 = 25,4",
+            "p2": "25,4 = 25,04",
+            "p3": "25,4 = 25,4001",
+            "p4": "25,4 = 25,004"
+          }
+        }
+      ]
     },
     {
       "id": "COMPARAISON_DECIMAUX-004",
       "type": "qcm",
-      "enonce": "Une règle mesure 12,08 cm et une autre 12,8 cm. Quelle affirmation est vraie ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "12,08 cm < 12,8 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12,08 cm < 12,8 cm",
-        "12,08 cm > 12,8 cm",
-        "12,08 cm = 12,8 cm",
-        "12,08 cm = 12,80 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "12,8 cm correspond à 12,80 cm."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une règle mesure 12,08 cm et une autre 12,8 cm. Quelle affirmation est vraie ?",
+            "reponse": "12,08 cm < 12,8 cm",
+            "correction": "12,8 cm correspond à 12,80 cm.",
+            "p1": "12,08 cm < 12,8 cm",
+            "p2": "12,08 cm > 12,8 cm",
+            "p3": "12,08 cm = 12,8 cm",
+            "p4": "12,08 cm = 12,80 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une règle mesure 22,08 cm et une autre 22,8 cm. Quelle affirmation est vraie ?",
+            "reponse": "22,08 cm < 22,8 cm",
+            "correction": "22,8 cm correspond à 22,8 cm.",
+            "p1": "22,08 cm < 22,8 cm",
+            "p2": "22,08 cm > 22,8 cm",
+            "p3": "22,08 cm = 22,8 cm",
+            "p4": "22,80 cm = 22,08 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une règle mesure 32,08 cm et une autre 32,8 cm. Quelle affirmation est vraie ?",
+            "reponse": "32,08 cm < 32,8 cm",
+            "correction": "32,8 cm correspond à 32,8 cm.",
+            "p1": "32,08 cm < 32,8 cm",
+            "p2": "32,08 cm > 32,8 cm",
+            "p3": "32,08 cm = 32,8 cm",
+            "p4": "32,80 cm = 32,08 cm"
+          }
+        }
+      ]
     },
     {
       "id": "COMPARAISON_DECIMAUX-MOT_A_TROU",
@@ -78,10 +206,7 @@
           "opposé": "o _ _ _ _ é"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "croissant"
-      },
+      "reponse": "croissant",
       "propositions": [
         "croissant",
         "décroissant",
@@ -104,10 +229,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "croissant"
-      },
+      "reponse": "croissant",
       "propositions": [
         "croissant",
         "décroissant",

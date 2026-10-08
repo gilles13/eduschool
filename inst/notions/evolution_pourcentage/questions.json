@@ -5,10 +5,7 @@
       "id": "EVOL-001",
       "type": "qcm",
       "enonce": "Une valeur [[initial]] [[sens]] de [[p]] %. Quelle nouvelle valeur et quel coefficient multiplicateur conviennent ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -160,496 +157,104 @@
             "d3": "107 (coefficient 0,7)"
           },
           "progression": 1
-        },
-        {
-          "parametres": {
-            "initial": "40",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "42 (coefficient 1,05)",
-            "d1": "43 (coefficient 1,05)",
-            "d2": "41 (coefficient 1,05)",
-            "d3": "44 (coefficient 1,05)"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "initial": "50",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "45 (coefficient 0,9)",
-            "d1": "46 (coefficient 0,9)",
-            "d2": "44 (coefficient 0,9)",
-            "d3": "47 (coefficient 0,9)"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "initial": "60",
-            "p": "15",
-            "sens": "augmente",
-            "bonne": "69 (coefficient 1,15)",
-            "d1": "70 (coefficient 1,15)",
-            "d2": "68 (coefficient 1,15)",
-            "d3": "71 (coefficient 1,15)"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "initial": "70",
-            "p": "20",
-            "sens": "diminue",
-            "bonne": "56 (coefficient 0,8)",
-            "d1": "57 (coefficient 0,8)",
-            "d2": "55 (coefficient 0,8)",
-            "d3": "58 (coefficient 0,8)"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "initial": "80",
-            "p": "25",
-            "sens": "augmente",
-            "bonne": "100 (coefficient 1,25)",
-            "d1": "101 (coefficient 1,25)",
-            "d2": "99 (coefficient 1,25)",
-            "d3": "102 (coefficient 1,25)"
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "initial": "90",
-            "p": "30",
-            "sens": "diminue",
-            "bonne": "63 (coefficient 0,7)",
-            "d1": "64 (coefficient 0,7)",
-            "d2": "62 (coefficient 0,7)",
-            "d3": "65 (coefficient 0,7)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "100",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "105 (coefficient 1,05)",
-            "d1": "106 (coefficient 1,05)",
-            "d2": "104 (coefficient 1,05)",
-            "d3": "107 (coefficient 1,05)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "110",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "99 (coefficient 0,9)",
-            "d1": "100 (coefficient 0,9)",
-            "d2": "98 (coefficient 0,9)",
-            "d3": "101 (coefficient 0,9)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "120",
-            "p": "15",
-            "sens": "augmente",
-            "bonne": "138 (coefficient 1,15)",
-            "d1": "139 (coefficient 1,15)",
-            "d2": "137 (coefficient 1,15)",
-            "d3": "140 (coefficient 1,15)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "130",
-            "p": "20",
-            "sens": "diminue",
-            "bonne": "104 (coefficient 0,8)",
-            "d1": "105 (coefficient 0,8)",
-            "d2": "103 (coefficient 0,8)",
-            "d3": "106 (coefficient 0,8)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "140",
-            "p": "25",
-            "sens": "augmente",
-            "bonne": "175 (coefficient 1,25)",
-            "d1": "176 (coefficient 1,25)",
-            "d2": "174 (coefficient 1,25)",
-            "d3": "177 (coefficient 1,25)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "150",
-            "p": "30",
-            "sens": "diminue",
-            "bonne": "105 (coefficient 0,7)",
-            "d1": "106 (coefficient 0,7)",
-            "d2": "104 (coefficient 0,7)",
-            "d3": "107 (coefficient 0,7)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "40",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "42 (coefficient 1,05)",
-            "d1": "43 (coefficient 1,05)",
-            "d2": "41 (coefficient 1,05)",
-            "d3": "44 (coefficient 1,05)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "50",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "45 (coefficient 0,9)",
-            "d1": "46 (coefficient 0,9)",
-            "d2": "44 (coefficient 0,9)",
-            "d3": "47 (coefficient 0,9)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "60",
-            "p": "15",
-            "sens": "augmente",
-            "bonne": "69 (coefficient 1,15)",
-            "d1": "70 (coefficient 1,15)",
-            "d2": "68 (coefficient 1,15)",
-            "d3": "71 (coefficient 1,15)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "70",
-            "p": "20",
-            "sens": "diminue",
-            "bonne": "56 (coefficient 0,8)",
-            "d1": "57 (coefficient 0,8)",
-            "d2": "55 (coefficient 0,8)",
-            "d3": "58 (coefficient 0,8)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "80",
-            "p": "25",
-            "sens": "augmente",
-            "bonne": "100 (coefficient 1,25)",
-            "d1": "101 (coefficient 1,25)",
-            "d2": "99 (coefficient 1,25)",
-            "d3": "102 (coefficient 1,25)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "90",
-            "p": "30",
-            "sens": "diminue",
-            "bonne": "63 (coefficient 0,7)",
-            "d1": "64 (coefficient 0,7)",
-            "d2": "62 (coefficient 0,7)",
-            "d3": "65 (coefficient 0,7)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "100",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "105 (coefficient 1,05)",
-            "d1": "106 (coefficient 1,05)",
-            "d2": "104 (coefficient 1,05)",
-            "d3": "107 (coefficient 1,05)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "110",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "99 (coefficient 0,9)",
-            "d1": "100 (coefficient 0,9)",
-            "d2": "98 (coefficient 0,9)",
-            "d3": "101 (coefficient 0,9)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "120",
-            "p": "15",
-            "sens": "augmente",
-            "bonne": "138 (coefficient 1,15)",
-            "d1": "139 (coefficient 1,15)",
-            "d2": "137 (coefficient 1,15)",
-            "d3": "140 (coefficient 1,15)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "130",
-            "p": "20",
-            "sens": "diminue",
-            "bonne": "104 (coefficient 0,8)",
-            "d1": "105 (coefficient 0,8)",
-            "d2": "103 (coefficient 0,8)",
-            "d3": "106 (coefficient 0,8)"
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "initial": "140",
-            "p": "25",
-            "sens": "augmente",
-            "bonne": "175 (coefficient 1,25)",
-            "d1": "176 (coefficient 1,25)",
-            "d2": "174 (coefficient 1,25)",
-            "d3": "177 (coefficient 1,25)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "150",
-            "p": "30",
-            "sens": "diminue",
-            "bonne": "105 (coefficient 0,7)",
-            "d1": "106 (coefficient 0,7)",
-            "d2": "104 (coefficient 0,7)",
-            "d3": "107 (coefficient 0,7)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "40",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "42 (coefficient 1,05)",
-            "d1": "43 (coefficient 1,05)",
-            "d2": "41 (coefficient 1,05)",
-            "d3": "44 (coefficient 1,05)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "50",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "45 (coefficient 0,9)",
-            "d1": "46 (coefficient 0,9)",
-            "d2": "44 (coefficient 0,9)",
-            "d3": "47 (coefficient 0,9)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "60",
-            "p": "15",
-            "sens": "augmente",
-            "bonne": "69 (coefficient 1,15)",
-            "d1": "70 (coefficient 1,15)",
-            "d2": "68 (coefficient 1,15)",
-            "d3": "71 (coefficient 1,15)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "70",
-            "p": "20",
-            "sens": "diminue",
-            "bonne": "56 (coefficient 0,8)",
-            "d1": "57 (coefficient 0,8)",
-            "d2": "55 (coefficient 0,8)",
-            "d3": "58 (coefficient 0,8)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "80",
-            "p": "25",
-            "sens": "augmente",
-            "bonne": "100 (coefficient 1,25)",
-            "d1": "101 (coefficient 1,25)",
-            "d2": "99 (coefficient 1,25)",
-            "d3": "102 (coefficient 1,25)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "90",
-            "p": "30",
-            "sens": "diminue",
-            "bonne": "63 (coefficient 0,7)",
-            "d1": "64 (coefficient 0,7)",
-            "d2": "62 (coefficient 0,7)",
-            "d3": "65 (coefficient 0,7)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "100",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "105 (coefficient 1,05)",
-            "d1": "106 (coefficient 1,05)",
-            "d2": "104 (coefficient 1,05)",
-            "d3": "107 (coefficient 1,05)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "110",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "99 (coefficient 0,9)",
-            "d1": "100 (coefficient 0,9)",
-            "d2": "98 (coefficient 0,9)",
-            "d3": "101 (coefficient 0,9)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "120",
-            "p": "15",
-            "sens": "augmente",
-            "bonne": "138 (coefficient 1,15)",
-            "d1": "139 (coefficient 1,15)",
-            "d2": "137 (coefficient 1,15)",
-            "d3": "140 (coefficient 1,15)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "130",
-            "p": "20",
-            "sens": "diminue",
-            "bonne": "104 (coefficient 0,8)",
-            "d1": "105 (coefficient 0,8)",
-            "d2": "103 (coefficient 0,8)",
-            "d3": "106 (coefficient 0,8)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "140",
-            "p": "25",
-            "sens": "augmente",
-            "bonne": "175 (coefficient 1,25)",
-            "d1": "176 (coefficient 1,25)",
-            "d2": "174 (coefficient 1,25)",
-            "d3": "177 (coefficient 1,25)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "150",
-            "p": "30",
-            "sens": "diminue",
-            "bonne": "105 (coefficient 0,7)",
-            "d1": "106 (coefficient 0,7)",
-            "d2": "104 (coefficient 0,7)",
-            "d3": "107 (coefficient 0,7)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "40",
-            "p": "5",
-            "sens": "augmente",
-            "bonne": "42 (coefficient 1,05)",
-            "d1": "43 (coefficient 1,05)",
-            "d2": "41 (coefficient 1,05)",
-            "d3": "44 (coefficient 1,05)"
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "initial": "50",
-            "p": "10",
-            "sens": "diminue",
-            "bonne": "45 (coefficient 0,9)",
-            "d1": "46 (coefficient 0,9)",
-            "d2": "44 (coefficient 0,9)",
-            "d3": "47 (coefficient 0,9)"
-          },
-          "progression": 3
         }
       ]
     },
     {
       "id": "EVOL-002",
       "type": "qcm",
-      "enonce": "Quel coefficient multiplicateur correspond à une hausse de 8 % ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1,08"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1,08",
-        "0,92",
-        "8",
-        "1,8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une hausse de 8 % donne 1 + 8/100 = 1,08."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel coefficient multiplicateur correspond à une hausse de 8 % ?",
+            "reponse": "1,08",
+            "correction": "Une hausse de 8 % donne 1 + 8/100 = 1,08.",
+            "p1": "1,08",
+            "p2": "0,92",
+            "p3": "8",
+            "p4": "1,8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel coefficient multiplicateur correspond à une hausse de 12 % ?",
+            "reponse": "1,12",
+            "correction": "Une hausse de 12 % donne 1 + 12/100 = 1,12.",
+            "p1": "1,12",
+            "p2": "0,88",
+            "p3": "12",
+            "p4": "1,2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel coefficient multiplicateur correspond à une hausse de 25 % ?",
+            "reponse": "1,25",
+            "correction": "Une hausse de 25 % donne 1 + 25/100 = 1,25.",
+            "p1": "1,25",
+            "p2": "0,75",
+            "p3": "25",
+            "p4": "1,5"
+          }
+        }
+      ]
     },
     {
       "id": "EVOL-003",
       "type": "qcm",
-      "enonce": "Quel coefficient multiplicateur correspond à une baisse de 20 % ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0,8"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,8",
-        "1,2",
-        "0,2",
-        "20"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une baisse de 20 % conserve 80 % de la valeur : coefficient 0,8."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel coefficient multiplicateur correspond à une baisse de 20 % ?",
+            "reponse": "0,8",
+            "correction": "Une baisse de 20 % conserve 80 % de la valeur : coefficient 0,8.",
+            "p1": "0,8",
+            "p2": "1,2",
+            "p3": "0,2",
+            "p4": "20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel coefficient multiplicateur correspond à une baisse de 15 % ?",
+            "reponse": "0,85",
+            "correction": "Une baisse de 15 % conserve 85 % de la valeur : coefficient 0,85.",
+            "p1": "0,85",
+            "p2": "1,15",
+            "p3": "0,15",
+            "p4": "15"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel coefficient multiplicateur correspond à une baisse de 35 % ?",
+            "reponse": "0,65",
+            "correction": "Une baisse de 35 % conserve 65 % de la valeur : coefficient 0,65.",
+            "p1": "0,65",
+            "p2": "1,35",
+            "p3": "0,35",
+            "p4": "35"
+          }
+        }
+      ]
     }
   ]
 }

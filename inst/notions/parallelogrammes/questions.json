@@ -5,10 +5,7 @@
       "id": "QUAD_RECT_001",
       "type": "qcm",
       "enonce": "ABCD est un parallélogramme. Le codage indique que l'angle DAB est droit. Que peux-tu en déduire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "ABCD est un rectangle"
-      },
+      "reponse": "ABCD est un rectangle",
       "propositions": [
         "ABCD est un rectangle",
         "ABCD est nécessairement un losange",
@@ -24,10 +21,7 @@
       "id": "QUAD_LOS_001",
       "type": "qcm",
       "enonce": "ABCD est un parallélogramme. Les quatre côtés portent le même codage de longueur. Que peux-tu en déduire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "ABCD est un losange"
-      },
+      "reponse": "ABCD est un losange",
       "propositions": [
         "ABCD est un losange",
         "ABCD est nécessairement un rectangle",
@@ -43,10 +37,7 @@
       "id": "QUAD_CARRE_001",
       "type": "qcm",
       "enonce": "ABCD est un parallélogramme. Un angle droit est codé et les quatre côtés portent le même codage de longueur. Quelle conclusion est la plus précise ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "ABCD est un carré"
-      },
+      "reponse": "ABCD est un carré",
       "propositions": [
         "ABCD est un carré",
         "ABCD est seulement un rectangle",
@@ -62,10 +53,7 @@
       "id": "QUAD_JUST_001",
       "type": "qcm",
       "enonce": "Le quadrilatère dessiné ne ressemble franchement pas à un carré. Pourtant les codages permettent de montrer qu'il en est un. Pourquoi peut-on faire confiance à cette conclusion ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Parce que les codages et les propriétés priment sur l'apparence du dessin"
-      },
+      "reponse": "Parce que les codages et les propriétés priment sur l'apparence du dessin",
       "propositions": [
         "Parce que les codages et les propriétés priment sur l'apparence du dessin",
         "Parce qu'un dessin de géométrie est toujours à l'échelle",
@@ -90,10 +78,7 @@
           "cerf-volant": "c _ _ _ - _ _ _ _ _ t"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "losange"
-      },
+      "reponse": "losange",
       "propositions": [
         "losange",
         "rectangle",
@@ -119,10 +104,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "rectangle"
-      },
+      "reponse": "rectangle",
       "propositions": [
         "rectangle",
         "losange",

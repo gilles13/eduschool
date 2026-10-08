@@ -4,82 +4,242 @@
     {
       "id": "NUM-DEC-001",
       "type": "qcm",
-      "enonce": "Quel est le rôle du chiffre 3 dans 345,67 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3 centaines"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 centaines",
-        "3 dizaines",
-        "3 unités",
-        "3 dixièmes"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le 3 est dans la colonne des centaines : il vaut 300."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel est le rôle du chiffre 3 dans 345,67 ?",
+            "reponse": "3 centaines",
+            "correction": "Le 3 est dans la colonne des centaines : il vaut 300.",
+            "p1": "3 centaines",
+            "p2": "3 dizaines",
+            "p3": "3 unités",
+            "p4": "3 dixièmes"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel est le rôle du chiffre 4 dans 482,51 ?",
+            "reponse": "4 centaines",
+            "correction": "Dans 482,51, le chiffre 4 est à la position des centaines.",
+            "p1": "4 centaines",
+            "p2": "4 dizaines",
+            "p3": "4 unités",
+            "p4": "4 dixièmes"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel est le rôle du chiffre 7 dans 731,26 ?",
+            "reponse": "7 centaines",
+            "correction": "Dans 731,26, le chiffre 7 est à la position des centaines.",
+            "p1": "7 centaines",
+            "p2": "7 dizaines",
+            "p3": "7 unités",
+            "p4": "7 dixièmes"
+          }
+        }
+      ]
     },
     {
       "id": "NUM-DEC-002",
       "type": "qcm",
-      "enonce": "Quelle est la valeur du chiffre 6 dans 345,67 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6 dixièmes"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6 dixièmes",
-        "6 unités",
-        "6 centièmes",
-        "6 dizaines"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le 6 est le premier chiffre après la virgule : il vaut 0,6."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle est la valeur du chiffre 6 dans 345,67 ?",
+            "reponse": "6 dixièmes",
+            "correction": "Le 6 est le premier chiffre après la virgule : il vaut 0,6.",
+            "p1": "6 dixièmes",
+            "p2": "6 unités",
+            "p3": "6 centièmes",
+            "p4": "6 dizaines"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la valeur du chiffre 5 dans 482,51 ?",
+            "reponse": "5 dixièmes",
+            "correction": "Le chiffre 5 est juste après la virgule : il représente cinq dixièmes.",
+            "p1": "5 dixièmes",
+            "p2": "5 unités",
+            "p3": "5 centièmes",
+            "p4": "5 dizaines"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la valeur du chiffre 2 dans 731,26 ?",
+            "reponse": "2 dixièmes",
+            "correction": "Le chiffre 2 est juste après la virgule : il représente deux dixièmes.",
+            "p1": "2 dixièmes",
+            "p2": "2 unités",
+            "p3": "2 centièmes",
+            "p4": "2 dizaines"
+          }
+        }
+      ]
     },
     {
       "id": "NUM-DEC-003",
       "type": "qcm",
-      "enonce": "Quelle décomposition correspond à 508,42 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "500 + 8 + 0,4 + 0,02"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "500 + 8 + 0,4 + 0,02",
-        "500 + 80 + 0,4 + 0,02",
-        "500 + 8 + 4 + 2",
-        "50 + 8 + 0,4 + 0,02"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "508,42 contient 5 centaines, 0 dizaine, 8 unités, 4 dixièmes et 2 centièmes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle décomposition correspond à 508,42 ?",
+            "reponse": "500 + 8 + 0,4 + 0,02",
+            "correction": "508,42 contient 5 centaines, 0 dizaine, 8 unités, 4 dixièmes et 2 centièmes.",
+            "p1": "500 + 8 + 0,4 + 0,02",
+            "p2": "500 + 80 + 0,4 + 0,02",
+            "p3": "500 + 8 + 4 + 2",
+            "p4": "50 + 8 + 0,4 + 0,02"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle décomposition correspond à 704,35 ?",
+            "reponse": "700 + 4 + 0,3 + 0,05",
+            "correction": "704,35 = 700 + 4 + 0,3 + 0,05.",
+            "p1": "700 + 4 + 0,3 + 0,05",
+            "p2": "700 + 40 + 0,3 + 0,05",
+            "p3": "700 + 4 + 3 + 5",
+            "p4": "70 + 4 + 0,3 + 0,05"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle décomposition correspond à 902,17 ?",
+            "reponse": "900 + 2 + 0,1 + 0,07",
+            "correction": "902,17 = 900 + 2 + 0,1 + 0,07.",
+            "p1": "900 + 2 + 0,1 + 0,07",
+            "p2": "900 + 20 + 0,1 + 0,07",
+            "p3": "900 + 2 + 1 + 7",
+            "p4": "90 + 2 + 0,1 + 0,07"
+          }
+        }
+      ]
     },
     {
       "id": "NUM-DEC-004",
       "type": "qcm",
-      "enonce": "Quel nombre correspond à 70 + 2 + 0,4 + 0,05 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "72,45"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "72,45",
-        "72,405",
-        "702,45",
-        "72,54"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "On place chaque chiffre dans sa colonne : dizaines, unités, dixièmes, centièmes."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 70 + 2 + 0,4 + 0,05 ?",
+            "reponse": "72,45",
+            "correction": "On place chaque chiffre dans sa colonne : dizaines, unités, dixièmes, centièmes.",
+            "p1": "72,45",
+            "p2": "72,405",
+            "p3": "702,45",
+            "p4": "72,54"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 50 + 6 + 0,3 + 0,08 ?",
+            "reponse": "56,38",
+            "correction": "50 + 6 + 0,3 + 0,08 = 56,38.",
+            "p1": "56,38",
+            "p2": "56,308",
+            "p3": "506,38",
+            "p4": "56,83"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 80 + 4 + 0,7 + 0,02 ?",
+            "reponse": "84,72",
+            "correction": "80 + 4 + 0,7 + 0,02 = 84,72.",
+            "p1": "84,72",
+            "p2": "84,702",
+            "p3": "804,72",
+            "p4": "84,27"
+          }
+        }
+      ]
     },
     {
       "id": "NUM-DEC-005",
       "type": "qcm",
-      "enonce": "En allant d’une colonne vers la droite dans un tableau de numération, la valeur est...",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "divisée par 10"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "divisée par 10",
-        "multipliée par 10",
-        "augmentée de 1",
-        "inchangée"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Chaque colonne vers la droite représente une unité dix fois plus petite."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "En allant d’une colonne vers la droite dans un tableau de numération, la valeur est...",
+            "reponse": "divisée par 10",
+            "correction": "Chaque colonne vers la droite représente une unité dix fois plus petite.",
+            "p1": "divisée par 10",
+            "p2": "multipliée par 10",
+            "p3": "augmentée de 1",
+            "p4": "inchangée"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "En allant de la colonne des unités à celle des dixièmes, par combien la valeur de position est-elle divisée ?",
+            "reponse": "10",
+            "correction": "Une colonne vers la droite divise la valeur de position par 10.",
+            "p1": "10",
+            "p2": "100",
+            "p3": "2",
+            "p4": "1"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "De la colonne des dixièmes à celle des centièmes, quel est le facteur de changement ?",
+            "reponse": "On divise par 10.",
+            "correction": "Chaque déplacement d’une colonne vers la droite divise par 10.",
+            "p1": "On divise par 10.",
+            "p2": "On multiplie par 10.",
+            "p3": "On ajoute 1.",
+            "p4": "On ne change rien."
+          }
+        }
+      ]
     },
     {
       "id": "NUM-DEC-VOCAB-MOT_A_TROU",
@@ -94,10 +254,7 @@
           "centième": "c _ _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "chiffre"
-      },
+      "reponse": "chiffre",
       "propositions": [
         "chiffre",
         "nombre",
@@ -120,10 +277,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "virgule"
-      },
+      "reponse": "virgule",
       "propositions": [
         "virgule",
         "chiffre",

@@ -5,10 +5,7 @@
       "id": "COMP-STAT-001",
       "type": "qcm",
       "enonce": "Deux séries ont la même médiane [[m]]. Leur étendue vaut [[e1]] pour A et [[e2]] pour B. Quelle conclusion est justifiée ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -623,10 +620,7 @@
       "id": "COMP-STAT-002",
       "type": "qcm",
       "enonce": "Deux séries ont la même moyenne. Peut-on conclure qu’elles se ressemblent ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Non, leur dispersion et leur répartition peuvent différer"
-      },
+      "reponse": "Non, leur dispersion et leur répartition peuvent différer",
       "propositions": [
         "Non, leur dispersion et leur répartition peuvent différer",
         "Oui, elles sont nécessairement identiques",
@@ -639,10 +633,7 @@
       "id": "COMP-STAT-003",
       "type": "qcm",
       "enonce": "Pour comparer deux séries, quelle démarche est la plus solide ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Examiner plusieurs indicateurs et la représentation"
-      },
+      "reponse": "Examiner plusieurs indicateurs et la représentation",
       "propositions": [
         "Examiner plusieurs indicateurs et la représentation",
         "Comparer seulement le maximum",

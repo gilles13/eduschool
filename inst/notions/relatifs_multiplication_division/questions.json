@@ -4,26 +4,146 @@
     {
       "id": "RELATIFS-MULT-001",
       "type": "qcm",
-      "enonce": "Calcule (−4) × 6.",
-      "reponse": {"mode": "editoriale", "valeur": "−24"},
-      "propositions": ["−24", "24", "−10", "10"],
-      "correction": "Les facteurs ont des signes différents : le produit est négatif. 4 × 6 = 24, donc (−4) × 6 = −24."
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Calcule (−4) × 6.",
+            "reponse": "−24",
+            "correction": "Les facteurs ont des signes différents : le produit est négatif. 4 × 6 = 24, donc (−4) × 6 = −24.",
+            "p1": "−24",
+            "p2": "24",
+            "p3": "−10",
+            "p4": "10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule (−5) × 7.",
+            "reponse": "−35",
+            "correction": "Un nombre négatif multiplié par un nombre positif donne un résultat négatif : 5 × 7 = 35.",
+            "p1": "−35",
+            "p2": "35",
+            "p3": "−12",
+            "p4": "12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule (−8) × 3.",
+            "reponse": "−24",
+            "correction": "Un nombre négatif multiplié par un nombre positif donne un résultat négatif : 8 × 3 = 24.",
+            "p1": "−24",
+            "p2": "24",
+            "p3": "−11",
+            "p4": "11"
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-MULT-002",
       "type": "qcm",
-      "enonce": "Pourquoi (−3) × (−5) doit-il valoir 15 ?",
-      "reponse": {"mode": "editoriale", "valeur": "Pour que (−3) × [5 + (−5)] reste égal à 0 par distributivité."},
-      "propositions": ["Pour que (−3) × [5 + (−5)] reste égal à 0 par distributivité.", "Parce que deux signes moins s’effacent toujours.", "Parce que 3 + 5 = 8.", "Parce qu’un produit est toujours positif."],
-      "correction": "5 + (−5) = 0, donc (−3) × [5 + (−5)] = 0. Par distributivité, −15 + (−3) × (−5) = 0 : le second produit vaut donc 15."
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pourquoi (−3) × (−5) doit-il valoir 15 ?",
+            "reponse": "Pour que (−3) × [5 + (−5)] reste égal à 0 par distributivité.",
+            "correction": "5 + (−5) = 0, donc (−3) × [5 + (−5)] = 0. Par distributivité, −15 + (−3) × (−5) = 0 : le second produit vaut donc 15.",
+            "p1": "Pour que (−3) × [5 + (−5)] reste égal à 0 par distributivité.",
+            "p2": "Parce que deux signes moins s’effacent toujours.",
+            "p3": "Parce que 3 + 5 = 8.",
+            "p4": "Parce qu’un produit est toujours positif."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pourquoi (−4) × (−6) doit-il valoir 24 ?",
+            "reponse": "Pour que (−4) × [6 + (−6)] reste égal à 0 par distributivité.",
+            "correction": "La distributivité impose (−4) × 6 + (−4) × (−6) = 0 ; comme le premier produit vaut −24, le second vaut 24.",
+            "p1": "Pour que (−4) × [6 + (−6)] reste égal à 0 par distributivité.",
+            "p2": "Parce que deux signes moins s’effacent toujours.",
+            "p3": "Parce que 4 + 6 = 10.",
+            "p4": "Parce qu’un produit est toujours positif."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pourquoi (−2) × (−7) doit-il valoir 14 ?",
+            "reponse": "Pour que (−2) × [7 + (−7)] reste égal à 0 par distributivité.",
+            "correction": "La distributivité impose (−2) × 7 + (−2) × (−7) = 0 ; comme le premier produit vaut −14, le second vaut 14.",
+            "p1": "Pour que (−2) × [7 + (−7)] reste égal à 0 par distributivité.",
+            "p2": "Parce que deux signes moins s’effacent toujours.",
+            "p3": "Parce que 2 + 7 = 9.",
+            "p4": "Parce qu’un produit est toujours positif."
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-DIV-001",
       "type": "qcm",
-      "enonce": "Calcule 36 ÷ (−9).",
-      "reponse": {"mode": "editoriale", "valeur": "−4"},
-      "propositions": ["−4", "4", "−27", "27"],
-      "correction": "36 ÷ (−9) = −4 car (−4) × (−9) = 36."
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Calcule 36 ÷ (−9).",
+            "reponse": "−4",
+            "correction": "36 ÷ (−9) = −4 car (−4) × (−9) = 36.",
+            "p1": "−4",
+            "p2": "4",
+            "p3": "−27",
+            "p4": "27"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule 42 ÷ (−7).",
+            "reponse": "−6",
+            "correction": "Un nombre positif divisé par un nombre négatif donne un résultat négatif : 42 ÷ 7 = 6.",
+            "p1": "−6",
+            "p2": "6",
+            "p3": "−35",
+            "p4": "35"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule 56 ÷ (−8).",
+            "reponse": "−7",
+            "correction": "Un nombre positif divisé par un nombre négatif donne un résultat négatif : 56 ÷ 8 = 7.",
+            "p1": "−7",
+            "p2": "7",
+            "p3": "−48",
+            "p4": "48"
+          }
+        }
+      ]
     }
   ]
 }

@@ -13,9 +13,10 @@ eduschool = function() {
     "Explorer le syst\u00e8me scolaire" = c("voies()", "series()",
       "maths_programmes()", "maths_parcours()"),
     "Produire des maths" = c("notions()", "questions()", "question()",
-      "produire()", "graphique()", "illustrer_question()",
+      "produire()", "formes_questions()", "vocabulaire()", "graphique()", "illustrer_question()",
       "table_multiplication()")
   )
+  cat("\n")
   cat("eduschool : comprendre, explorer et pratiquer les math\u00e9matiques\n")
   cat("Projet libre, gratuit et ouvert. Toujours ouvrir des portes.\n\n")
   for (nom in names(groupes)) {

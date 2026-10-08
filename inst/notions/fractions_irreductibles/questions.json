@@ -5,10 +5,7 @@
       "id": "FRI-VAR-001",
       "type": "qcm",
       "enonce": "Rends la fraction [[frac]] irréductible.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -19,564 +16,748 @@
       "variantes": [
         {
           "parametres": {
-            "frac": "2/4",
-            "bonne": "1/2",
-            "d1": "1/4",
-            "d2": "2/2",
-            "d3": "3/5",
-            "correction": "Le PGCD de 2 et 4 est 2. On divise numérateur et dénominateur par 2 : 1/2."
+            "frac": "\\(\\frac{2}{4}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{4}\\)",
+            "d2": "\\(\\frac{2}{2}\\)",
+            "d3": "\\(\\frac{3}{5}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 4 est 2. On divise numérateur et dénominateur par 2 : 1/2."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/6",
-            "bonne": "1/3",
-            "d1": "1/6",
-            "d2": "2/3",
-            "d3": "3/7",
-            "correction": "Le PGCD de 2 et 6 est 2. On divise numérateur et dénominateur par 2 : 1/3."
+            "frac": "\\(\\frac{2}{6}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{1}{6}\\)",
+            "d2": "\\(\\frac{2}{3}\\)",
+            "d3": "\\(\\frac{3}{7}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 6 est 2. On divise numérateur et dénominateur par 2 : 1/3."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/8",
-            "bonne": "1/4",
-            "d1": "1/8",
-            "d2": "2/4",
-            "d3": "3/9",
-            "correction": "Le PGCD de 2 et 8 est 2. On divise numérateur et dénominateur par 2 : 1/4."
+            "frac": "\\(\\frac{2}{8}\\)",
+            "bonne": "\\(\\frac{1}{4}\\)",
+            "d1": "\\(\\frac{1}{8}\\)",
+            "d2": "\\(\\frac{2}{4}\\)",
+            "d3": "\\(\\frac{3}{9}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 8 est 2. On divise numérateur et dénominateur par 2 : 1/4."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/10",
-            "bonne": "1/5",
-            "d1": "1/10",
-            "d2": "2/5",
-            "d3": "3/11",
-            "correction": "Le PGCD de 2 et 10 est 2. On divise numérateur et dénominateur par 2 : 1/5."
+            "frac": "\\(\\frac{2}{10}\\)",
+            "bonne": "\\(\\frac{1}{5}\\)",
+            "d1": "\\(\\frac{1}{10}\\)",
+            "d2": "\\(\\frac{2}{5}\\)",
+            "d3": "\\(\\frac{3}{11}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 10 est 2. On divise numérateur et dénominateur par 2 : 1/5."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/12",
-            "bonne": "1/6",
-            "d1": "1/12",
-            "d2": "2/6",
-            "d3": "3/13",
-            "correction": "Le PGCD de 2 et 12 est 2. On divise numérateur et dénominateur par 2 : 1/6."
+            "frac": "\\(\\frac{2}{12}\\)",
+            "bonne": "\\(\\frac{1}{6}\\)",
+            "d1": "\\(\\frac{1}{12}\\)",
+            "d2": "\\(\\frac{2}{6}\\)",
+            "d3": "\\(\\frac{3}{13}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 12 est 2. On divise numérateur et dénominateur par 2 : 1/6."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/14",
-            "bonne": "1/7",
-            "d1": "1/14",
-            "d2": "2/7",
-            "d3": "3/15",
-            "correction": "Le PGCD de 2 et 14 est 2. On divise numérateur et dénominateur par 2 : 1/7."
+            "frac": "\\(\\frac{2}{14}\\)",
+            "bonne": "\\(\\frac{1}{7}\\)",
+            "d1": "\\(\\frac{1}{14}\\)",
+            "d2": "\\(\\frac{2}{7}\\)",
+            "d3": "\\(\\frac{3}{15}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 14 est 2. On divise numérateur et dénominateur par 2 : 1/7."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/16",
-            "bonne": "1/8",
-            "d1": "1/16",
-            "d2": "2/8",
-            "d3": "3/17",
-            "correction": "Le PGCD de 2 et 16 est 2. On divise numérateur et dénominateur par 2 : 1/8."
+            "frac": "\\(\\frac{2}{16}\\)",
+            "bonne": "\\(\\frac{1}{8}\\)",
+            "d1": "\\(\\frac{1}{16}\\)",
+            "d2": "\\(\\frac{2}{8}\\)",
+            "d3": "\\(\\frac{3}{17}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 16 est 2. On divise numérateur et dénominateur par 2 : 1/8."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/18",
-            "bonne": "1/9",
-            "d1": "1/18",
-            "d2": "2/9",
-            "d3": "3/19",
-            "correction": "Le PGCD de 2 et 18 est 2. On divise numérateur et dénominateur par 2 : 1/9."
+            "frac": "\\(\\frac{2}{18}\\)",
+            "bonne": "\\(\\frac{1}{9}\\)",
+            "d1": "\\(\\frac{1}{18}\\)",
+            "d2": "\\(\\frac{2}{9}\\)",
+            "d3": "\\(\\frac{3}{19}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 18 est 2. On divise numérateur et dénominateur par 2 : 1/9."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/20",
-            "bonne": "1/10",
-            "d1": "1/20",
-            "d2": "2/10",
-            "d3": "3/21",
-            "correction": "Le PGCD de 2 et 20 est 2. On divise numérateur et dénominateur par 2 : 1/10."
+            "frac": "\\(\\frac{2}{20}\\)",
+            "bonne": "\\(\\frac{1}{10}\\)",
+            "d1": "\\(\\frac{1}{20}\\)",
+            "d2": "\\(\\frac{2}{10}\\)",
+            "d3": "\\(\\frac{3}{21}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 20 est 2. On divise numérateur et dénominateur par 2 : 1/10."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/22",
-            "bonne": "1/11",
-            "d1": "1/22",
-            "d2": "2/11",
-            "d3": "3/23",
-            "correction": "Le PGCD de 2 et 22 est 2. On divise numérateur et dénominateur par 2 : 1/11."
+            "frac": "\\(\\frac{2}{22}\\)",
+            "bonne": "\\(\\frac{1}{11}\\)",
+            "d1": "\\(\\frac{1}{22}\\)",
+            "d2": "\\(\\frac{2}{11}\\)",
+            "d3": "\\(\\frac{3}{23}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 22 est 2. On divise numérateur et dénominateur par 2 : 1/11."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "2/24",
-            "bonne": "1/12",
-            "d1": "1/24",
-            "d2": "2/12",
-            "d3": "3/25",
-            "correction": "Le PGCD de 2 et 24 est 2. On divise numérateur et dénominateur par 2 : 1/12."
+            "frac": "\\(\\frac{2}{24}\\)",
+            "bonne": "\\(\\frac{1}{12}\\)",
+            "d1": "\\(\\frac{1}{24}\\)",
+            "d2": "\\(\\frac{2}{12}\\)",
+            "d3": "\\(\\frac{3}{25}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 2 et 24 est 2. On divise numérateur et dénominateur par 2 : 1/12."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/6",
-            "bonne": "1/2",
-            "d1": "1/6",
-            "d2": "3/2",
-            "d3": "4/7",
-            "correction": "Le PGCD de 3 et 6 est 3. On divise numérateur et dénominateur par 3 : 1/2."
+            "frac": "\\(\\frac{3}{6}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{6}\\)",
+            "d2": "\\(\\frac{3}{2}\\)",
+            "d3": "\\(\\frac{4}{7}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 6 est 3. On divise numérateur et dénominateur par 3 : 1/2."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/9",
-            "bonne": "1/3",
-            "d1": "1/9",
-            "d2": "3/3",
-            "d3": "4/10",
-            "correction": "Le PGCD de 3 et 9 est 3. On divise numérateur et dénominateur par 3 : 1/3."
+            "frac": "\\(\\frac{3}{9}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{1}{9}\\)",
+            "d2": "\\(\\frac{3}{3}\\)",
+            "d3": "\\(\\frac{4}{10}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 9 est 3. On divise numérateur et dénominateur par 3 : 1/3."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/12",
-            "bonne": "1/4",
-            "d1": "1/12",
-            "d2": "3/4",
-            "d3": "4/13",
-            "correction": "Le PGCD de 3 et 12 est 3. On divise numérateur et dénominateur par 3 : 1/4."
+            "frac": "\\(\\frac{3}{12}\\)",
+            "bonne": "\\(\\frac{1}{4}\\)",
+            "d1": "\\(\\frac{1}{12}\\)",
+            "d2": "\\(\\frac{3}{4}\\)",
+            "d3": "\\(\\frac{4}{13}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 12 est 3. On divise numérateur et dénominateur par 3 : 1/4."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/15",
-            "bonne": "1/5",
-            "d1": "1/15",
-            "d2": "3/5",
-            "d3": "4/16",
-            "correction": "Le PGCD de 3 et 15 est 3. On divise numérateur et dénominateur par 3 : 1/5."
+            "frac": "\\(\\frac{3}{15}\\)",
+            "bonne": "\\(\\frac{1}{5}\\)",
+            "d1": "\\(\\frac{1}{15}\\)",
+            "d2": "\\(\\frac{3}{5}\\)",
+            "d3": "\\(\\frac{4}{16}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 15 est 3. On divise numérateur et dénominateur par 3 : 1/5."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/18",
-            "bonne": "1/6",
-            "d1": "1/18",
-            "d2": "3/6",
-            "d3": "4/19",
-            "correction": "Le PGCD de 3 et 18 est 3. On divise numérateur et dénominateur par 3 : 1/6."
+            "frac": "\\(\\frac{3}{18}\\)",
+            "bonne": "\\(\\frac{1}{6}\\)",
+            "d1": "\\(\\frac{1}{18}\\)",
+            "d2": "\\(\\frac{3}{6}\\)",
+            "d3": "\\(\\frac{4}{19}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 18 est 3. On divise numérateur et dénominateur par 3 : 1/6."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/21",
-            "bonne": "1/7",
-            "d1": "1/21",
-            "d2": "3/7",
-            "d3": "4/22",
-            "correction": "Le PGCD de 3 et 21 est 3. On divise numérateur et dénominateur par 3 : 1/7."
+            "frac": "\\(\\frac{3}{21}\\)",
+            "bonne": "\\(\\frac{1}{7}\\)",
+            "d1": "\\(\\frac{1}{21}\\)",
+            "d2": "\\(\\frac{3}{7}\\)",
+            "d3": "\\(\\frac{4}{22}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 21 est 3. On divise numérateur et dénominateur par 3 : 1/7."
           },
           "progression": 1
         },
         {
           "parametres": {
-            "frac": "3/24",
-            "bonne": "1/8",
-            "d1": "1/24",
-            "d2": "3/8",
-            "d3": "4/25",
-            "correction": "Le PGCD de 3 et 24 est 3. On divise numérateur et dénominateur par 3 : 1/8."
+            "frac": "\\(\\frac{3}{24}\\)",
+            "bonne": "\\(\\frac{1}{8}\\)",
+            "d1": "\\(\\frac{1}{24}\\)",
+            "d2": "\\(\\frac{3}{8}\\)",
+            "d3": "\\(\\frac{4}{25}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 3 et 24 est 3. On divise numérateur et dénominateur par 3 : 1/8."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/6",
-            "bonne": "2/3",
-            "d1": "2/6",
-            "d2": "4/3",
-            "d3": "5/7",
-            "correction": "Le PGCD de 4 et 6 est 2. On divise numérateur et dénominateur par 2 : 2/3."
+            "frac": "\\(\\frac{4}{6}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{2}{6}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{5}{7}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 6 est 2. On divise numérateur et dénominateur par 2 : 2/3."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/8",
-            "bonne": "1/2",
-            "d1": "1/8",
-            "d2": "4/2",
-            "d3": "5/9",
-            "correction": "Le PGCD de 4 et 8 est 4. On divise numérateur et dénominateur par 4 : 1/2."
+            "frac": "\\(\\frac{4}{8}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{8}\\)",
+            "d2": "\\(\\frac{4}{2}\\)",
+            "d3": "\\(\\frac{5}{9}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 8 est 4. On divise numérateur et dénominateur par 4 : 1/2."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/10",
-            "bonne": "2/5",
-            "d1": "2/10",
-            "d2": "4/5",
-            "d3": "5/11",
-            "correction": "Le PGCD de 4 et 10 est 2. On divise numérateur et dénominateur par 2 : 2/5."
+            "frac": "\\(\\frac{4}{10}\\)",
+            "bonne": "\\(\\frac{2}{5}\\)",
+            "d1": "\\(\\frac{2}{10}\\)",
+            "d2": "\\(\\frac{4}{5}\\)",
+            "d3": "\\(\\frac{5}{11}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 10 est 2. On divise numérateur et dénominateur par 2 : 2/5."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/12",
-            "bonne": "1/3",
-            "d1": "1/12",
-            "d2": "4/3",
-            "d3": "5/13",
-            "correction": "Le PGCD de 4 et 12 est 4. On divise numérateur et dénominateur par 4 : 1/3."
+            "frac": "\\(\\frac{4}{12}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{1}{12}\\)",
+            "d2": "\\(\\frac{4}{3}\\)",
+            "d3": "\\(\\frac{5}{13}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 12 est 4. On divise numérateur et dénominateur par 4 : 1/3."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/14",
-            "bonne": "2/7",
-            "d1": "2/14",
-            "d2": "4/7",
-            "d3": "5/15",
-            "correction": "Le PGCD de 4 et 14 est 2. On divise numérateur et dénominateur par 2 : 2/7."
+            "frac": "\\(\\frac{4}{14}\\)",
+            "bonne": "\\(\\frac{2}{7}\\)",
+            "d1": "\\(\\frac{2}{14}\\)",
+            "d2": "\\(\\frac{4}{7}\\)",
+            "d3": "\\(\\frac{5}{15}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 14 est 2. On divise numérateur et dénominateur par 2 : 2/7."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/16",
-            "bonne": "1/4",
-            "d1": "1/16",
-            "d2": "4/4",
-            "d3": "5/17",
-            "correction": "Le PGCD de 4 et 16 est 4. On divise numérateur et dénominateur par 4 : 1/4."
+            "frac": "\\(\\frac{4}{16}\\)",
+            "bonne": "\\(\\frac{1}{4}\\)",
+            "d1": "\\(\\frac{1}{16}\\)",
+            "d2": "\\(\\frac{4}{4}\\)",
+            "d3": "\\(\\frac{5}{17}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 16 est 4. On divise numérateur et dénominateur par 4 : 1/4."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/18",
-            "bonne": "2/9",
-            "d1": "2/18",
-            "d2": "4/9",
-            "d3": "5/19",
-            "correction": "Le PGCD de 4 et 18 est 2. On divise numérateur et dénominateur par 2 : 2/9."
+            "frac": "\\(\\frac{4}{18}\\)",
+            "bonne": "\\(\\frac{2}{9}\\)",
+            "d1": "\\(\\frac{2}{18}\\)",
+            "d2": "\\(\\frac{4}{9}\\)",
+            "d3": "\\(\\frac{5}{19}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 18 est 2. On divise numérateur et dénominateur par 2 : 2/9."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/20",
-            "bonne": "1/5",
-            "d1": "1/20",
-            "d2": "4/5",
-            "d3": "5/21",
-            "correction": "Le PGCD de 4 et 20 est 4. On divise numérateur et dénominateur par 4 : 1/5."
+            "frac": "\\(\\frac{4}{20}\\)",
+            "bonne": "\\(\\frac{1}{5}\\)",
+            "d1": "\\(\\frac{1}{20}\\)",
+            "d2": "\\(\\frac{4}{5}\\)",
+            "d3": "\\(\\frac{5}{21}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 20 est 4. On divise numérateur et dénominateur par 4 : 1/5."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/22",
-            "bonne": "2/11",
-            "d1": "2/22",
-            "d2": "4/11",
-            "d3": "5/23",
-            "correction": "Le PGCD de 4 et 22 est 2. On divise numérateur et dénominateur par 2 : 2/11."
+            "frac": "\\(\\frac{4}{22}\\)",
+            "bonne": "\\(\\frac{2}{11}\\)",
+            "d1": "\\(\\frac{2}{22}\\)",
+            "d2": "\\(\\frac{4}{11}\\)",
+            "d3": "\\(\\frac{5}{23}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 22 est 2. On divise numérateur et dénominateur par 2 : 2/11."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "4/24",
-            "bonne": "1/6",
-            "d1": "1/24",
-            "d2": "4/6",
-            "d3": "5/25",
-            "correction": "Le PGCD de 4 et 24 est 4. On divise numérateur et dénominateur par 4 : 1/6."
+            "frac": "\\(\\frac{4}{24}\\)",
+            "bonne": "\\(\\frac{1}{6}\\)",
+            "d1": "\\(\\frac{1}{24}\\)",
+            "d2": "\\(\\frac{4}{6}\\)",
+            "d3": "\\(\\frac{5}{25}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 4 et 24 est 4. On divise numérateur et dénominateur par 4 : 1/6."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "5/10",
-            "bonne": "1/2",
-            "d1": "1/10",
-            "d2": "5/2",
-            "d3": "6/11",
-            "correction": "Le PGCD de 5 et 10 est 5. On divise numérateur et dénominateur par 5 : 1/2."
+            "frac": "\\(\\frac{5}{10}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{10}\\)",
+            "d2": "\\(\\frac{5}{2}\\)",
+            "d3": "\\(\\frac{6}{11}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 5 et 10 est 5. On divise numérateur et dénominateur par 5 : 1/2."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "5/15",
-            "bonne": "1/3",
-            "d1": "1/15",
-            "d2": "5/3",
-            "d3": "6/16",
-            "correction": "Le PGCD de 5 et 15 est 5. On divise numérateur et dénominateur par 5 : 1/3."
+            "frac": "\\(\\frac{5}{15}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{1}{15}\\)",
+            "d2": "\\(\\frac{5}{3}\\)",
+            "d3": "\\(\\frac{6}{16}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 5 et 15 est 5. On divise numérateur et dénominateur par 5 : 1/3."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "5/20",
-            "bonne": "1/4",
-            "d1": "1/20",
-            "d2": "5/4",
-            "d3": "6/21",
-            "correction": "Le PGCD de 5 et 20 est 5. On divise numérateur et dénominateur par 5 : 1/4."
+            "frac": "\\(\\frac{5}{20}\\)",
+            "bonne": "\\(\\frac{1}{4}\\)",
+            "d1": "\\(\\frac{1}{20}\\)",
+            "d2": "\\(\\frac{5}{4}\\)",
+            "d3": "\\(\\frac{6}{21}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 5 et 20 est 5. On divise numérateur et dénominateur par 5 : 1/4."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "6/8",
-            "bonne": "3/4",
-            "d1": "3/8",
-            "d2": "6/4",
-            "d3": "7/9",
-            "correction": "Le PGCD de 6 et 8 est 2. On divise numérateur et dénominateur par 2 : 3/4."
+            "frac": "\\(\\frac{6}{8}\\)",
+            "bonne": "\\(\\frac{3}{4}\\)",
+            "d1": "\\(\\frac{3}{8}\\)",
+            "d2": "\\(\\frac{6}{4}\\)",
+            "d3": "\\(\\frac{7}{9}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 8 est 2. On divise numérateur et dénominateur par 2 : 3/4."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "6/9",
-            "bonne": "2/3",
-            "d1": "2/9",
-            "d2": "6/3",
-            "d3": "7/10",
-            "correction": "Le PGCD de 6 et 9 est 3. On divise numérateur et dénominateur par 3 : 2/3."
+            "frac": "\\(\\frac{6}{9}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{2}{9}\\)",
+            "d2": "\\(\\frac{6}{3}\\)",
+            "d3": "\\(\\frac{7}{10}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 9 est 3. On divise numérateur et dénominateur par 3 : 2/3."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "6/10",
-            "bonne": "3/5",
-            "d1": "3/10",
-            "d2": "6/5",
-            "d3": "7/11",
-            "correction": "Le PGCD de 6 et 10 est 2. On divise numérateur et dénominateur par 2 : 3/5."
+            "frac": "\\(\\frac{6}{10}\\)",
+            "bonne": "\\(\\frac{3}{5}\\)",
+            "d1": "\\(\\frac{3}{10}\\)",
+            "d2": "\\(\\frac{6}{5}\\)",
+            "d3": "\\(\\frac{7}{11}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 10 est 2. On divise numérateur et dénominateur par 2 : 3/5."
           },
           "progression": 2
         },
         {
           "parametres": {
-            "frac": "6/12",
-            "bonne": "1/2",
-            "d1": "1/12",
-            "d2": "6/2",
-            "d3": "7/13",
-            "correction": "Le PGCD de 6 et 12 est 6. On divise numérateur et dénominateur par 6 : 1/2."
+            "frac": "\\(\\frac{6}{12}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{12}\\)",
+            "d2": "\\(\\frac{6}{2}\\)",
+            "d3": "\\(\\frac{7}{13}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 12 est 6. On divise numérateur et dénominateur par 6 : 1/2."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/14",
-            "bonne": "3/7",
-            "d1": "3/14",
-            "d2": "6/7",
-            "d3": "7/15",
-            "correction": "Le PGCD de 6 et 14 est 2. On divise numérateur et dénominateur par 2 : 3/7."
+            "frac": "\\(\\frac{6}{14}\\)",
+            "bonne": "\\(\\frac{3}{7}\\)",
+            "d1": "\\(\\frac{3}{14}\\)",
+            "d2": "\\(\\frac{6}{7}\\)",
+            "d3": "\\(\\frac{7}{15}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 14 est 2. On divise numérateur et dénominateur par 2 : 3/7."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/15",
-            "bonne": "2/5",
-            "d1": "2/15",
-            "d2": "6/5",
-            "d3": "7/16",
-            "correction": "Le PGCD de 6 et 15 est 3. On divise numérateur et dénominateur par 3 : 2/5."
+            "frac": "\\(\\frac{6}{15}\\)",
+            "bonne": "\\(\\frac{2}{5}\\)",
+            "d1": "\\(\\frac{2}{15}\\)",
+            "d2": "\\(\\frac{6}{5}\\)",
+            "d3": "\\(\\frac{7}{16}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 15 est 3. On divise numérateur et dénominateur par 3 : 2/5."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/16",
-            "bonne": "3/8",
-            "d1": "3/16",
-            "d2": "6/8",
-            "d3": "7/17",
-            "correction": "Le PGCD de 6 et 16 est 2. On divise numérateur et dénominateur par 2 : 3/8."
+            "frac": "\\(\\frac{6}{16}\\)",
+            "bonne": "\\(\\frac{3}{8}\\)",
+            "d1": "\\(\\frac{3}{16}\\)",
+            "d2": "\\(\\frac{6}{8}\\)",
+            "d3": "\\(\\frac{7}{17}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 16 est 2. On divise numérateur et dénominateur par 2 : 3/8."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/18",
-            "bonne": "1/3",
-            "d1": "1/18",
-            "d2": "6/3",
-            "d3": "7/19",
-            "correction": "Le PGCD de 6 et 18 est 6. On divise numérateur et dénominateur par 6 : 1/3."
+            "frac": "\\(\\frac{6}{18}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{1}{18}\\)",
+            "d2": "\\(\\frac{6}{3}\\)",
+            "d3": "\\(\\frac{7}{19}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 18 est 6. On divise numérateur et dénominateur par 6 : 1/3."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/20",
-            "bonne": "3/10",
-            "d1": "3/20",
-            "d2": "6/10",
-            "d3": "7/21",
-            "correction": "Le PGCD de 6 et 20 est 2. On divise numérateur et dénominateur par 2 : 3/10."
+            "frac": "\\(\\frac{6}{20}\\)",
+            "bonne": "\\(\\frac{3}{10}\\)",
+            "d1": "\\(\\frac{3}{20}\\)",
+            "d2": "\\(\\frac{6}{10}\\)",
+            "d3": "\\(\\frac{7}{21}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 20 est 2. On divise numérateur et dénominateur par 2 : 3/10."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/21",
-            "bonne": "2/7",
-            "d1": "2/21",
-            "d2": "6/7",
-            "d3": "7/22",
-            "correction": "Le PGCD de 6 et 21 est 3. On divise numérateur et dénominateur par 3 : 2/7."
+            "frac": "\\(\\frac{6}{21}\\)",
+            "bonne": "\\(\\frac{2}{7}\\)",
+            "d1": "\\(\\frac{2}{21}\\)",
+            "d2": "\\(\\frac{6}{7}\\)",
+            "d3": "\\(\\frac{7}{22}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 21 est 3. On divise numérateur et dénominateur par 3 : 2/7."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/22",
-            "bonne": "3/11",
-            "d1": "3/22",
-            "d2": "6/11",
-            "d3": "7/23",
-            "correction": "Le PGCD de 6 et 22 est 2. On divise numérateur et dénominateur par 2 : 3/11."
+            "frac": "\\(\\frac{6}{22}\\)",
+            "bonne": "\\(\\frac{3}{11}\\)",
+            "d1": "\\(\\frac{3}{22}\\)",
+            "d2": "\\(\\frac{6}{11}\\)",
+            "d3": "\\(\\frac{7}{23}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 22 est 2. On divise numérateur et dénominateur par 2 : 3/11."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "6/24",
-            "bonne": "1/4",
-            "d1": "1/24",
-            "d2": "6/4",
-            "d3": "7/25",
-            "correction": "Le PGCD de 6 et 24 est 6. On divise numérateur et dénominateur par 6 : 1/4."
+            "frac": "\\(\\frac{6}{24}\\)",
+            "bonne": "\\(\\frac{1}{4}\\)",
+            "d1": "\\(\\frac{1}{24}\\)",
+            "d2": "\\(\\frac{6}{4}\\)",
+            "d3": "\\(\\frac{7}{25}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 6 et 24 est 6. On divise numérateur et dénominateur par 6 : 1/4."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "7/14",
-            "bonne": "1/2",
-            "d1": "1/14",
-            "d2": "7/2",
-            "d3": "8/15",
-            "correction": "Le PGCD de 7 et 14 est 7. On divise numérateur et dénominateur par 7 : 1/2."
+            "frac": "\\(\\frac{7}{14}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{14}\\)",
+            "d2": "\\(\\frac{7}{2}\\)",
+            "d3": "\\(\\frac{8}{15}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 7 et 14 est 7. On divise numérateur et dénominateur par 7 : 1/2."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "7/21",
-            "bonne": "1/3",
-            "d1": "1/21",
-            "d2": "7/3",
-            "d3": "8/22",
-            "correction": "Le PGCD de 7 et 21 est 7. On divise numérateur et dénominateur par 7 : 1/3."
+            "frac": "\\(\\frac{7}{21}\\)",
+            "bonne": "\\(\\frac{1}{3}\\)",
+            "d1": "\\(\\frac{1}{21}\\)",
+            "d2": "\\(\\frac{7}{3}\\)",
+            "d3": "\\(\\frac{8}{22}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 7 et 21 est 7. On divise numérateur et dénominateur par 7 : 1/3."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "8/10",
-            "bonne": "4/5",
-            "d1": "4/10",
-            "d2": "8/5",
-            "d3": "9/11",
-            "correction": "Le PGCD de 8 et 10 est 2. On divise numérateur et dénominateur par 2 : 4/5."
+            "frac": "\\(\\frac{8}{10}\\)",
+            "bonne": "\\(\\frac{4}{5}\\)",
+            "d1": "\\(\\frac{4}{10}\\)",
+            "d2": "\\(\\frac{8}{5}\\)",
+            "d3": "\\(\\frac{9}{11}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 8 et 10 est 2. On divise numérateur et dénominateur par 2 : 4/5."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "8/12",
-            "bonne": "2/3",
-            "d1": "2/12",
-            "d2": "8/3",
-            "d3": "9/13",
-            "correction": "Le PGCD de 8 et 12 est 4. On divise numérateur et dénominateur par 4 : 2/3."
+            "frac": "\\(\\frac{8}{12}\\)",
+            "bonne": "\\(\\frac{2}{3}\\)",
+            "d1": "\\(\\frac{2}{12}\\)",
+            "d2": "\\(\\frac{8}{3}\\)",
+            "d3": "\\(\\frac{9}{13}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 8 et 12 est 4. On divise numérateur et dénominateur par 4 : 2/3."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "8/14",
-            "bonne": "4/7",
-            "d1": "4/14",
-            "d2": "8/7",
-            "d3": "9/15",
-            "correction": "Le PGCD de 8 et 14 est 2. On divise numérateur et dénominateur par 2 : 4/7."
+            "frac": "\\(\\frac{8}{14}\\)",
+            "bonne": "\\(\\frac{4}{7}\\)",
+            "d1": "\\(\\frac{4}{14}\\)",
+            "d2": "\\(\\frac{8}{7}\\)",
+            "d3": "\\(\\frac{9}{15}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 8 et 14 est 2. On divise numérateur et dénominateur par 2 : 4/7."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "8/16",
-            "bonne": "1/2",
-            "d1": "1/16",
-            "d2": "8/2",
-            "d3": "9/17",
-            "correction": "Le PGCD de 8 et 16 est 8. On divise numérateur et dénominateur par 8 : 1/2."
+            "frac": "\\(\\frac{8}{16}\\)",
+            "bonne": "\\(\\frac{1}{2}\\)",
+            "d1": "\\(\\frac{1}{16}\\)",
+            "d2": "\\(\\frac{8}{2}\\)",
+            "d3": "\\(\\frac{9}{17}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 8 et 16 est 8. On divise numérateur et dénominateur par 8 : 1/2."
           },
           "progression": 3
         },
         {
           "parametres": {
-            "frac": "8/18",
-            "bonne": "4/9",
-            "d1": "4/18",
-            "d2": "8/9",
-            "d3": "9/19",
-            "correction": "Le PGCD de 8 et 18 est 2. On divise numérateur et dénominateur par 2 : 4/9."
+            "frac": "\\(\\frac{8}{18}\\)",
+            "bonne": "\\(\\frac{4}{9}\\)",
+            "d1": "\\(\\frac{4}{18}\\)",
+            "d2": "\\(\\frac{8}{9}\\)",
+            "d3": "\\(\\frac{9}{19}\\)",
+            "correction": "Le PGCD (plus grand commun diviseur) de 8 et 18 est 2. On divise numérateur et dénominateur par 2 : 4/9."
           },
           "progression": 3
         }
+      ]
+    },
+    {
+      "id": "FRI-PGCD-001",
+      "type": "qcm",
+      "enonce": "Pour rendre [[frac]] irréductible, par quel nombre faut-il diviser le numérateur et le dénominateur ?",
+      "reponse": "[[pgcd]]",
+      "propositions": [
+        "[[pgcd]]",
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]"
       ],
+      "correction": "Le PGCD (plus grand commun diviseur) de [[num]] et [[den]] vaut [[pgcd]].\nJe divise le numérateur et le dénominateur par [[pgcd]].\nJ’obtiens la fraction simplifiée.",
+      "variantes": [
+        {
+          "parametres": {
+            "frac": "\\(\\frac{8}{12}\\)",
+            "num": "8",
+            "den": "12",
+            "pgcd": "4",
+            "p1": "2",
+            "p2": "3",
+            "p3": "5"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{15}{25}\\)",
+            "num": "15",
+            "den": "25",
+            "pgcd": "5",
+            "p1": "2",
+            "p2": "3",
+            "p3": "4"
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{18}{24}\\)",
+            "num": "18",
+            "den": "24",
+            "pgcd": "6",
+            "p1": "2",
+            "p2": "3",
+            "p3": "4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{21}{28}\\)",
+            "num": "21",
+            "den": "28",
+            "pgcd": "7",
+            "p1": "2",
+            "p2": "3",
+            "p3": "4"
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{16}{20}\\)",
+            "num": "16",
+            "den": "20",
+            "pgcd": "4",
+            "p1": "2",
+            "p2": "3",
+            "p3": "5"
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{27}{36}\\)",
+            "num": "27",
+            "den": "36",
+            "pgcd": "9",
+            "p1": "2",
+            "p2": "3",
+            "p3": "4"
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "FRI-BINAIRE-001",
+      "type": "qcm",
+      "enonce": "La fraction [[frac]] est-elle déjà irréductible ?",
+      "reponse": "[[bonne]]",
+      "propositions": [
+        "Oui",
+        "Non"
+      ],
+      "correction": "[[corr]]",
+      "variantes": [
+        {
+          "parametres": {
+            "frac": "\\(\\frac{3}{7}\\)",
+            "bonne": "Oui",
+            "corr": "3 et 7 n’ont aucun diviseur commun autre que 1."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{4}{10}\\)",
+            "bonne": "Non",
+            "corr": "4 et 10 sont tous deux divisibles par 2."
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{5}{12}\\)",
+            "bonne": "Oui",
+            "corr": "5 et 12 sont premiers entre eux."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{9}{15}\\)",
+            "bonne": "Non",
+            "corr": "9 et 15 sont tous deux divisibles par 3."
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{7}{18}\\)",
+            "bonne": "Oui",
+            "corr": "7 et 18 sont premiers entre eux."
+          },
+          "progression": 3
+        },
+        {
+          "parametres": {
+            "frac": "\\(\\frac{14}{21}\\)",
+            "bonne": "Non",
+            "corr": "14 et 21 sont tous deux divisibles par 7."
+          },
+          "progression": 3
+        }
+      ]
+    },
+    {
+      "id": "FRI-VOCAB-IRREDUCTIBLE-001",
+      "type": "qcm",
+      "enonce": "Comment appelle-t-on une fraction dont le numérateur et le dénominateur n’ont aucun diviseur commun supérieur à 1 ? Choisis le mot masqué correspondant.",
       "presentation": {
-        "math": [
-          "frac",
-          "bonne",
-          "d1",
-          "d2",
-          "d3"
-        ]
-      }
+        "type": "mot_masque",
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché.",
+        "masques": {
+          "irréductible": "IR________E",
+          "équivalente": "ÉQ________E",
+          "décimale": "DÉ________E",
+          "inverse": "IN________E"
+        }
+      },
+      "reponse": "irréductible",
+      "propositions": [
+        "irréductible",
+        "équivalente",
+        "décimale",
+        "inverse"
+      ],
+      "correction": "Une fraction irréductible ne peut plus être simplifiée par un entier supérieur à 1.\nSon numérateur et son dénominateur n’ont aucun diviseur commun supérieur à 1 ; leur PGCD (plus grand commun diviseur) vaut 1."
+    },
+    {
+      "id": "FRI-VOCAB-PGCD-001",
+      "type": "qcm",
+      "enonce": "Quel sigle désigne le plus grand entier qui divise exactement deux nombres ? Choisis le sigle à trou correspondant.",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "PGCD": "P G _ D",
+          "PPCM": "P P _ M",
+          "PGDC": "P G _ C",
+          "PPCD": "P P _ D"
+        }
+      },
+      "reponse": "PGCD",
+      "propositions": [
+        "PGCD",
+        "PPCM",
+        "PGDC",
+        "PPCD"
+      ],
+      "correction": "PGCD signifie « plus grand commun diviseur ».\nPour vérifier qu’une fraction est irréductible, on peut calculer le PGCD de son numérateur et de son dénominateur : s’il vaut 1, la fraction est irréductible."
     }
   ]
 }

@@ -5,10 +5,7 @@
       "id": "PUI-NEG-VAR",
       "type": "qcm",
       "enonce": "Quelle écriture est égale à [[expr]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -572,146 +569,434 @@
     {
       "id": "PUI-005",
       "type": "qcm",
-      "enonce": "Que vaut 10⁻³ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0,001"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,001",
-        "0,01",
-        "0,0001",
-        "−1 000"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "10⁻³ = 1 / 10³ = 0,001."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 10⁻³ ?",
+            "reponse": "0,001",
+            "correction": "10⁻³ = 1 / 10³ = 0,001.",
+            "p1": "0,001",
+            "p2": "0,01",
+            "p3": "0,0001",
+            "p4": "−1 000"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 10⁻² ?",
+            "reponse": "0,01",
+            "correction": "En appliquant les règles sur les puissances, on obtient 0,01.",
+            "p1": "0,01",
+            "p2": "0,1",
+            "p3": "0,001",
+            "p4": "−100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 10⁻⁴ ?",
+            "reponse": "0,0001",
+            "correction": "En appliquant les règles sur les puissances, on obtient 0,0001.",
+            "p1": "0,0001",
+            "p2": "0,001",
+            "p3": "0,00001",
+            "p4": "−10 000"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-006",
       "type": "qcm",
-      "enonce": "Pour a non nul, que vaut a⁰ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1",
-        "0",
-        "a",
-        "−a"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Toute base non nulle à la puissance zéro vaut 1."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour a non nul, que vaut a⁰ ?",
+            "reponse": "1",
+            "correction": "Toute base non nulle à la puissance zéro vaut 1.",
+            "p1": "1",
+            "p2": "0",
+            "p3": "a",
+            "p4": "−a"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour x non nul, que vaut x⁰ ?",
+            "reponse": "1",
+            "correction": "Toute puissance d’exposant nul d’un nombre non nul vaut 1.",
+            "p1": "1",
+            "p2": "0",
+            "p3": "x",
+            "p4": "−x"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour b ≠ 0, quelle est la valeur de b⁰ ?",
+            "reponse": "1",
+            "correction": "b⁰ = 1 pour b non nul.",
+            "p1": "1",
+            "p2": "0",
+            "p3": "b",
+            "p4": "1/b"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-010",
       "type": "qcm",
-      "enonce": "Que vaut 4⁻¹ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1/4"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/4",
-        "−4",
-        "4",
-        "−1/4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une puissance d’exposant −1 désigne l’inverse de la base non nulle."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 4⁻¹ ?",
+            "reponse": "1/4",
+            "correction": "Une puissance d’exposant −1 désigne l’inverse de la base non nulle.",
+            "p1": "1/4",
+            "p2": "−4",
+            "p3": "4",
+            "p4": "−1/4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 5⁻¹ ?",
+            "reponse": "1/5",
+            "correction": "En appliquant les règles sur les puissances, on obtient 1/5.",
+            "p1": "1/5",
+            "p2": "−5",
+            "p3": "5",
+            "p4": "−1/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 8⁻¹ ?",
+            "reponse": "1/8",
+            "correction": "En appliquant les règles sur les puissances, on obtient 1/8.",
+            "p1": "1/8",
+            "p2": "−8",
+            "p3": "8",
+            "p4": "−1/8"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-012",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie 5⁸ / 5³ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5⁵"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5⁵",
-        "5¹¹",
-        "1⁵",
-        "5²⁴"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour une division de puissances de même base non nulle, on soustrait les exposants."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 5⁸ / 5³ ?",
+            "reponse": "5⁵",
+            "correction": "Pour une division de puissances de même base non nulle, on soustrait les exposants.",
+            "p1": "5⁵",
+            "p2": "5¹¹",
+            "p3": "1⁵",
+            "p4": "5²⁴"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 4⁷ / 4² ?",
+            "reponse": "4⁵",
+            "correction": "En appliquant les règles sur les puissances, on obtient 4⁵.",
+            "p1": "4⁵",
+            "p2": "4⁹",
+            "p3": "1⁵",
+            "p4": "4¹⁴"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 3⁹ / 3⁴ ?",
+            "reponse": "3⁵",
+            "correction": "En appliquant les règles sur les puissances, on obtient 3⁵.",
+            "p1": "3⁵",
+            "p2": "3¹³",
+            "p3": "1⁵",
+            "p4": "3³⁶"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-020",
       "type": "qcm",
-      "enonce": "Quelle expression est égale à 3⁻² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "1/9"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "1/9",
-        "−9",
-        "−6",
-        "9"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "3⁻² = 1 / 3² = 1/9."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à 3⁻² ?",
+            "reponse": "1/9",
+            "correction": "3⁻² = 1 / 3² = 1/9.",
+            "p1": "1/9",
+            "p2": "−9",
+            "p3": "−6",
+            "p4": "9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 4⁻² ?",
+            "reponse": "1/16",
+            "correction": "En appliquant les règles sur les puissances, on obtient 1/16.",
+            "p1": "1/16",
+            "p2": "−16",
+            "p3": "−8",
+            "p4": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 5⁻² ?",
+            "reponse": "1/25",
+            "correction": "En appliquant les règles sur les puissances, on obtient 1/25.",
+            "p1": "1/25",
+            "p2": "−25",
+            "p3": "−10",
+            "p4": "25"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-022",
       "type": "qcm",
-      "enonce": "Que vaut 2⁰ + 3⁰ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "2"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "2",
-        "0",
-        "1",
-        "5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Chaque nombre non nul élevé à la puissance zéro vaut 1 : 1 + 1 = 2."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Que vaut 2⁰ + 3⁰ ?",
+            "reponse": "2",
+            "correction": "Chaque nombre non nul élevé à la puissance zéro vaut 1 : 1 + 1 = 2.",
+            "p1": "2",
+            "p2": "0",
+            "p3": "1",
+            "p4": "5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 4⁰ + 7⁰ ?",
+            "reponse": "2",
+            "correction": "En appliquant les règles sur les puissances, on obtient 2.",
+            "p1": "2",
+            "p2": "0",
+            "p3": "1",
+            "p4": "11"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Que vaut 5⁰ + 9⁰ ?",
+            "reponse": "2",
+            "correction": "En appliquant les règles sur les puissances, on obtient 2.",
+            "p1": "2",
+            "p2": "0",
+            "p3": "1",
+            "p4": "14"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-023",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie 10² × 10⁻⁵ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "10⁻³"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "10⁻³",
-        "10⁻¹⁰",
-        "10³",
-        "10⁷"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les exposants s’additionnent : 2 + (−5) = −3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 10² × 10⁻⁵ ?",
+            "reponse": "10⁻³",
+            "correction": "Les exposants s’additionnent : 2 + (−5) = −3.",
+            "p1": "10⁻³",
+            "p2": "10⁻¹⁰",
+            "p3": "10³",
+            "p4": "10⁷"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 10³ × 10⁻⁷ ?",
+            "reponse": "10⁻⁴",
+            "correction": "En appliquant les règles sur les puissances, on obtient 10⁻⁴.",
+            "p1": "10⁻⁴",
+            "p2": "10⁻²¹",
+            "p3": "10⁴",
+            "p4": "10¹⁰"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 10⁵ × 10⁻² ?",
+            "reponse": "10³",
+            "correction": "En appliquant les règles sur les puissances, on obtient 10³.",
+            "p1": "10³",
+            "p2": "10⁻¹⁰",
+            "p3": "10⁻³",
+            "p4": "10⁷"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-025",
       "type": "qcm",
-      "enonce": "Quel calcul représente 4³ / 4² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4",
-        "1",
-        "4⁵",
-        "16"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "4³ / 4² = 4¹ = 4."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel calcul représente 4³ / 4² ?",
+            "reponse": "4",
+            "correction": "4³ / 4² = 4¹ = 4.",
+            "p1": "4",
+            "p2": "1",
+            "p3": "4⁵",
+            "p4": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 5⁴ / 5³ ?",
+            "reponse": "5",
+            "correction": "En appliquant les règles sur les puissances, on obtient 5.",
+            "p1": "5",
+            "p2": "1",
+            "p3": "5⁷",
+            "p4": "25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 7³ / 7² ?",
+            "reponse": "7",
+            "correction": "En appliquant les règles sur les puissances, on obtient 7.",
+            "p1": "7",
+            "p2": "1",
+            "p3": "7⁵",
+            "p4": "49"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-031",
       "type": "qcm",
-      "enonce": "Pour tout nombre a, que vaut a¹ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "a"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "a",
-        "1",
-        "0",
-        "a × a"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "L’exposant 1 signifie qu’il y a un seul facteur a : a¹ = a."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour tout nombre a, que vaut a¹ ?",
+            "reponse": "a",
+            "correction": "L’exposant 1 signifie qu’il y a un seul facteur a : a¹ = a.",
+            "p1": "a",
+            "p2": "1",
+            "p3": "0",
+            "p4": "a × a"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour tout nombre x, que vaut x¹ ?",
+            "reponse": "x",
+            "correction": "Une puissance d’exposant 1 est le nombre lui-même.",
+            "p1": "x",
+            "p2": "1",
+            "p3": "0",
+            "p4": "x × x"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression est égale à b¹ ?",
+            "reponse": "b",
+            "correction": "b¹=b.",
+            "p1": "b",
+            "p2": "1",
+            "p3": "0",
+            "p4": "b²"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-032",
@@ -726,10 +1011,7 @@
           "quotient": "q _ _ _ _ _ _ t"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "inverse"
-      },
+      "reponse": "inverse",
       "propositions": [
         "inverse",
         "opposé",
@@ -745,10 +1027,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−3"
-      },
+      "reponse": "−3",
       "propositions": [
         "−3",
         "3",
@@ -760,34 +1039,98 @@
     {
       "id": "PUI-034",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie 3⁻² × 3⁵ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3³"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3³",
-        "3⁻¹⁰",
-        "3⁻⁷",
-        "9³"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour un produit de puissances de même base, on additionne les exposants : −2 + 5 = 3."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 3⁻² × 3⁵ ?",
+            "reponse": "3³",
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : −2 + 5 = 3.",
+            "p1": "3³",
+            "p2": "3⁻¹⁰",
+            "p3": "3⁻⁷",
+            "p4": "9³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 4⁻³ × 4⁵ ?",
+            "reponse": "4²",
+            "correction": "En appliquant les règles sur les puissances, on obtient 4².",
+            "p1": "4²",
+            "p2": "4⁻¹⁵",
+            "p3": "4⁻⁸",
+            "p4": "16²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 2⁻⁴ × 2⁷ ?",
+            "reponse": "2³",
+            "correction": "En appliquant les règles sur les puissances, on obtient 2³.",
+            "p1": "2³",
+            "p2": "2⁻²⁸",
+            "p3": "2⁻¹¹",
+            "p4": "4³"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-035",
       "type": "qcm",
-      "enonce": "Quelle expression simplifie 10⁻² / 10³ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "10⁻⁵"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "10⁻⁵",
-        "10¹",
-        "10⁻⁶",
-        "1"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour un quotient de puissances de même base non nulle, on soustrait les exposants : −2 − 3 = −5."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 10⁻² / 10³ ?",
+            "reponse": "10⁻⁵",
+            "correction": "Pour un quotient de puissances de même base non nulle, on soustrait les exposants : −2 − 3 = −5.",
+            "p1": "10⁻⁵",
+            "p2": "10¹",
+            "p3": "10⁻⁶",
+            "p4": "1"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 10⁻³ / 10² ?",
+            "reponse": "10⁻⁵",
+            "correction": "En appliquant les règles sur les puissances, on obtient 10⁻⁵.",
+            "p1": "10⁻⁵",
+            "p2": "10⁻¹",
+            "p3": "10⁻⁶",
+            "p4": "1"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle expression simplifie 10⁻⁴ / 10⁵ ?",
+            "reponse": "10⁻⁹",
+            "correction": "En appliquant les règles sur les puissances, on obtient 10⁻⁹.",
+            "p1": "10⁻⁹",
+            "p2": "10¹",
+            "p3": "10⁻²⁰",
+            "p4": "1"
+          }
+        }
+      ]
     }
   ]
 }

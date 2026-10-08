@@ -4,74 +4,146 @@
     {
       "id": "MES-CONVERSION_AIRES-001",
       "type": "qcm",
-      "enonce": "[[quantite]] m² correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "1",
-          "10000"
-        ],
-        "format": "decimal",
-        "unite": "cm²",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "10 000 cm²",
-        "100 cm²",
-        "1 000 cm²",
-        "100 000 cm²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Chaque côté du carré mesure 100 cm : 100 × 100 = 10 000."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "1 m² correspondent à…",
+            "reponse": "10 000 cm²",
+            "correction": "Chaque côté du carré mesure 100 cm : 100 × 100 = 10 000.",
+            "p1": "10 000 cm²",
+            "p2": "100 cm²",
+            "p3": "1 000 cm²",
+            "p4": "100 000 cm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "3 m² correspondent à…",
+            "reponse": "30 000 cm²",
+            "correction": "3 m² = 30 000 cm².",
+            "p1": "30 000 cm²",
+            "p2": "300 cm²",
+            "p3": "3 000 cm²",
+            "p4": "300 000 cm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "5 m² correspondent à…",
+            "reponse": "50 000 cm²",
+            "correction": "5 m² = 50 000 cm².",
+            "p1": "50 000 cm²",
+            "p2": "500 cm²",
+            "p3": "5 000 cm²",
+            "p4": "500 000 cm²"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_AIRES-002",
       "type": "qcm",
-      "enonce": "[[quantite]] m² correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "5/2",
-          "10000"
-        ],
-        "format": "decimal",
-        "unite": "cm²",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "25 000 cm²",
-        "250 cm²",
-        "2 500 cm²",
-        "250 000 cm²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "On multiplie par 10 000 pour passer de m² à cm²."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "2,5 m² correspondent à…",
+            "reponse": "25 000 cm²",
+            "correction": "On multiplie par 10 000 pour passer de m² à cm².",
+            "p1": "25 000 cm²",
+            "p2": "250 cm²",
+            "p3": "2 500 cm²",
+            "p4": "250 000 cm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "1,5 m² correspondent à…",
+            "reponse": "15 000 cm²",
+            "correction": "1,5 m² = 15 000 cm².",
+            "p1": "15 000 cm²",
+            "p2": "150 cm²",
+            "p3": "1 500 cm²",
+            "p4": "150 000 cm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "4,2 m² correspondent à…",
+            "reponse": "42 000 cm²",
+            "correction": "4,2 m² = 42 000 cm².",
+            "p1": "42 000 cm²",
+            "p2": "420 cm²",
+            "p3": "4 200 cm²",
+            "p4": "420 000 cm²"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_AIRES-003",
       "type": "qcm",
-      "enonce": "[[quantite]] cm² correspondent à…",
-      "reponse": {
-        "mode": "calcul_fixe",
-        "moteur": "Ryacas",
-        "operation": "multiplication",
-        "termes": [
-          "300",
-          "1/100"
-        ],
-        "format": "decimal",
-        "unite": "dm²",
-        "source_format": "decimal"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3 dm²",
-        "30 dm²",
-        "0,3 dm²",
-        "300 dm²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1 dm² = 100 cm²."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "300 cm² correspondent à…",
+            "reponse": "3 dm²",
+            "correction": "1 dm² = 100 cm².",
+            "p1": "3 dm²",
+            "p2": "30 dm²",
+            "p3": "0,3 dm²",
+            "p4": "300 dm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "500 cm² correspondent à…",
+            "reponse": "5 dm²",
+            "correction": "500 cm² = 5 dm².",
+            "p1": "5 dm²",
+            "p2": "50 dm²",
+            "p3": "0,5 dm²",
+            "p4": "500 dm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "850 cm² correspondent à…",
+            "reponse": "8,5 dm²",
+            "correction": "850 cm² = 8,5 dm².",
+            "p1": "8,5 dm²",
+            "p2": "85 dm²",
+            "p3": "0,85 dm²",
+            "p4": "850 dm²"
+          }
+        }
+      ]
     },
     {
       "id": "MES-CONVERSION_AIRES-VOCAB-TROU",
@@ -86,10 +158,7 @@
           "arc": "a _ c"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "aire"
-      },
+      "reponse": "aire",
       "propositions": [
         "aire",
         "périmètre",
@@ -112,10 +181,7 @@
         },
         "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "hectare"
-      },
+      "reponse": "hectare",
       "propositions": [
         "hectare",
         "hectomètre",
@@ -127,18 +193,50 @@
     {
       "id": "MES-CONVERSION_AIRES-APPLICATION",
       "type": "qcm",
-      "enonce": "Un carré a un côté de 3 m. Quelle est son aire en cm² ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "90 000 cm²"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "90 000 cm²",
-        "900 cm²",
-        "9 000 cm²",
-        "30 000 cm²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "3 × 3 = 9 m² ; 1 m² = 10 000 cm², donc 90 000 cm²."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 3 m. Quelle est son aire en cm² ?",
+            "reponse": "90 000 cm²",
+            "correction": "3 × 3 = 9 m² ; 1 m² = 10 000 cm², donc 90 000 cm².",
+            "p1": "90 000 cm²",
+            "p2": "900 cm²",
+            "p3": "9 000 cm²",
+            "p4": "30 000 cm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 4 m. Quelle est son aire en cm² ?",
+            "reponse": "160 000 cm²",
+            "correction": "4 m = 400 cm ; 400² = 160 000 cm².",
+            "p1": "160 000 cm²",
+            "p2": "1 600 cm²",
+            "p3": "16 000 cm²",
+            "p4": "40 000 cm²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 5 m. Quelle est son aire en cm² ?",
+            "reponse": "250 000 cm²",
+            "correction": "5 m = 500 cm ; 500² = 250 000 cm².",
+            "p1": "250 000 cm²",
+            "p2": "2 500 cm²",
+            "p3": "25 000 cm²",
+            "p4": "50 000 cm²"
+          }
+        }
+      ]
     }
   ]
 }

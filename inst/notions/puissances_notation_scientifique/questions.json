@@ -5,10 +5,7 @@
       "id": "PUI-SCI-VAR",
       "type": "qcm",
       "enonce": "Quelle est la notation scientifique de [[nombre]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -41,39 +38,6 @@
         },
         {
           "parametres": {
-            "nombre": "1 200",
-            "bonne": "1,2 × 10^3",
-            "d1": "1,2 × 10^4",
-            "d2": "12,0 × 10^3",
-            "d3": "1,2 × 10^2",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^3."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "0,0012",
-            "bonne": "1,2 × 10^-3",
-            "d1": "1,2 × 10^-2",
-            "d2": "12,0 × 10^-3",
-            "d3": "1,2 × 10^-4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^-3."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "1 200",
-            "bonne": "1,2 × 10^3",
-            "d1": "1,2 × 10^4",
-            "d2": "12,0 × 10^3",
-            "d3": "1,2 × 10^2",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^3."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
             "nombre": "25 000",
             "bonne": "2,5 × 10^4",
             "d1": "2,5 × 10^5",
@@ -91,39 +55,6 @@
             "d2": "25,0 × 10^-4",
             "d3": "2,5 × 10^-5",
             "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^-4."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "25 000",
-            "bonne": "2,5 × 10^4",
-            "d1": "2,5 × 10^5",
-            "d2": "25,0 × 10^4",
-            "d3": "2,5 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^4."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "0,00025",
-            "bonne": "2,5 × 10^-4",
-            "d1": "2,5 × 10^-3",
-            "d2": "25,0 × 10^-4",
-            "d3": "2,5 × 10^-5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^-4."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "25 000",
-            "bonne": "2,5 × 10^4",
-            "d1": "2,5 × 10^5",
-            "d2": "25,0 × 10^4",
-            "d3": "2,5 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^4."
           },
           "progression": 1
         },
@@ -151,39 +82,6 @@
         },
         {
           "parametres": {
-            "nombre": "360 000",
-            "bonne": "3,6 × 10^5",
-            "d1": "3,6 × 10^6",
-            "d2": "36,0 × 10^5",
-            "d3": "3,6 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^5."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "0,000036",
-            "bonne": "3,6 × 10^-5",
-            "d1": "3,6 × 10^-4",
-            "d2": "36,0 × 10^-5",
-            "d3": "3,6 × 10^-6",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^-5."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
-            "nombre": "360 000",
-            "bonne": "3,6 × 10^5",
-            "d1": "3,6 × 10^6",
-            "d2": "36,0 × 10^5",
-            "d3": "3,6 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^5."
-          },
-          "progression": 1
-        },
-        {
-          "parametres": {
             "nombre": "4 800 000",
             "bonne": "4,8 × 10^6",
             "d1": "4,8 × 10^7",
@@ -206,39 +104,6 @@
         },
         {
           "parametres": {
-            "nombre": "4 800 000",
-            "bonne": "4,8 × 10^6",
-            "d1": "4,8 × 10^7",
-            "d2": "48,0 × 10^6",
-            "d3": "4,8 × 10^5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^6."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "0,0000048",
-            "bonne": "4,8 × 10^-6",
-            "d1": "4,8 × 10^-5",
-            "d2": "48,0 × 10^-6",
-            "d3": "4,8 × 10^-7",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^-6."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "4 800 000",
-            "bonne": "4,8 × 10^6",
-            "d1": "4,8 × 10^7",
-            "d2": "48,0 × 10^6",
-            "d3": "4,8 × 10^5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^6."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
             "nombre": "7 200",
             "bonne": "7,2 × 10^3",
             "d1": "7,2 × 10^4",
@@ -256,39 +121,6 @@
             "d2": "72,0 × 10^-3",
             "d3": "7,2 × 10^-4",
             "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^-3."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "7 200",
-            "bonne": "7,2 × 10^3",
-            "d1": "7,2 × 10^4",
-            "d2": "72,0 × 10^3",
-            "d3": "7,2 × 10^2",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^3."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "0,0072",
-            "bonne": "7,2 × 10^-3",
-            "d1": "7,2 × 10^-2",
-            "d2": "72,0 × 10^-3",
-            "d3": "7,2 × 10^-4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^-3."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "7 200",
-            "bonne": "7,2 × 10^3",
-            "d1": "7,2 × 10^4",
-            "d2": "72,0 × 10^3",
-            "d3": "7,2 × 10^2",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^3."
           },
           "progression": 2
         },
@@ -316,39 +148,6 @@
         },
         {
           "parametres": {
-            "nombre": "64 000",
-            "bonne": "6,4 × 10^4",
-            "d1": "6,4 × 10^5",
-            "d2": "64,0 × 10^4",
-            "d3": "6,4 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^4."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "0,00064",
-            "bonne": "6,4 × 10^-4",
-            "d1": "6,4 × 10^-3",
-            "d2": "64,0 × 10^-4",
-            "d3": "6,4 × 10^-5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^-4."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "64 000",
-            "bonne": "6,4 × 10^4",
-            "d1": "6,4 × 10^5",
-            "d2": "64,0 × 10^4",
-            "d3": "6,4 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^4."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
             "nombre": "810 000",
             "bonne": "8,1 × 10^5",
             "d1": "8,1 × 10^6",
@@ -371,39 +170,6 @@
         },
         {
           "parametres": {
-            "nombre": "810 000",
-            "bonne": "8,1 × 10^5",
-            "d1": "8,1 × 10^6",
-            "d2": "81,0 × 10^5",
-            "d3": "8,1 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^5."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "0,000081",
-            "bonne": "8,1 × 10^-5",
-            "d1": "8,1 × 10^-4",
-            "d2": "81,0 × 10^-5",
-            "d3": "8,1 × 10^-6",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^-5."
-          },
-          "progression": 2
-        },
-        {
-          "parametres": {
-            "nombre": "810 000",
-            "bonne": "8,1 × 10^5",
-            "d1": "8,1 × 10^6",
-            "d2": "81,0 × 10^5",
-            "d3": "8,1 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^5."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
             "nombre": "9 500 000",
             "bonne": "9,5 × 10^6",
             "d1": "9,5 × 10^7",
@@ -421,39 +187,6 @@
             "d2": "95,0 × 10^-6",
             "d3": "9,5 × 10^-7",
             "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^-6."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "9 500 000",
-            "bonne": "9,5 × 10^6",
-            "d1": "9,5 × 10^7",
-            "d2": "95,0 × 10^6",
-            "d3": "9,5 × 10^5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^6."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "0,0000095",
-            "bonne": "9,5 × 10^-6",
-            "d1": "9,5 × 10^-5",
-            "d2": "95,0 × 10^-6",
-            "d3": "9,5 × 10^-7",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^-6."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "9 500 000",
-            "bonne": "9,5 × 10^6",
-            "d1": "9,5 × 10^7",
-            "d2": "95,0 × 10^6",
-            "d3": "9,5 × 10^5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^6."
           },
           "progression": 3
         },
@@ -481,39 +214,6 @@
         },
         {
           "parametres": {
-            "nombre": "17 000",
-            "bonne": "1,7 × 10^4",
-            "d1": "1,7 × 10^5",
-            "d2": "17,0 × 10^4",
-            "d3": "1,7 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^4."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "0,00017",
-            "bonne": "1,7 × 10^-4",
-            "d1": "1,7 × 10^-3",
-            "d2": "17,0 × 10^-4",
-            "d3": "1,7 × 10^-5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^-4."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "17 000",
-            "bonne": "1,7 × 10^4",
-            "d1": "1,7 × 10^5",
-            "d2": "17,0 × 10^4",
-            "d3": "1,7 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^4."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
             "nombre": "530 000",
             "bonne": "5,3 × 10^5",
             "d1": "5,3 × 10^6",
@@ -531,39 +231,6 @@
             "d2": "53,0 × 10^-5",
             "d3": "5,3 × 10^-6",
             "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^-5."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "530 000",
-            "bonne": "5,3 × 10^5",
-            "d1": "5,3 × 10^6",
-            "d2": "53,0 × 10^5",
-            "d3": "5,3 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^5."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "0,000053",
-            "bonne": "5,3 × 10^-5",
-            "d1": "5,3 × 10^-4",
-            "d2": "53,0 × 10^-5",
-            "d3": "5,3 × 10^-6",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^-5."
-          },
-          "progression": 3
-        },
-        {
-          "parametres": {
-            "nombre": "530 000",
-            "bonne": "5,3 × 10^5",
-            "d1": "5,3 × 10^6",
-            "d2": "53,0 × 10^5",
-            "d3": "5,3 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^5."
           },
           "progression": 3
         }
@@ -572,34 +239,98 @@
     {
       "id": "PUI-016",
       "type": "qcm",
-      "enonce": "Quelle est l’écriture scientifique de 45 000 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4,5 × 10⁴"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4,5 × 10⁴",
-        "45 × 10³",
-        "0,45 × 10⁵",
-        "4,5 × 10³"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "4,5 × 10⁴ = 45 000 et son coefficient 4,5 est compris entre 1 inclus et 10 exclu. 45 × 10³ et 0,45 × 10⁵ valent eux aussi 45 000, mais ce ne sont pas des écritures scientifiques : leurs coefficients 45 et 0,45 ne respectent pas cette condition."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle est l’écriture scientifique de 45 000 ?",
+            "reponse": "4,5 × 10⁴",
+            "correction": "4,5 × 10⁴ = 45 000 et son coefficient 4,5 est compris entre 1 inclus et 10 exclu. 45 × 10³ et 0,45 × 10⁵ valent eux aussi 45 000, mais ce ne sont pas des écritures scientifiques : leurs coefficients 45 et 0,45 ne respectent pas cette condition.",
+            "p1": "4,5 × 10⁴",
+            "p2": "45 × 10³",
+            "p3": "0,45 × 10⁵",
+            "p4": "4,5 × 10³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est l’écriture scientifique de 72 000 ?",
+            "reponse": "7,2 × 10⁴",
+            "correction": "L’écriture correcte est 7,2 × 10⁴.",
+            "p1": "7,2 × 10⁴",
+            "p2": "72 × 10³",
+            "p3": "0,72 × 10⁵",
+            "p4": "7,2 × 10³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est l’écriture scientifique de 830 000 ?",
+            "reponse": "8,3 × 10⁵",
+            "correction": "L’écriture correcte est 8,3 × 10⁵.",
+            "p1": "8,3 × 10⁵",
+            "p2": "83 × 10⁴",
+            "p3": "0,83 × 10⁶",
+            "p4": "8,3 × 10⁴"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-017",
       "type": "qcm",
-      "enonce": "Quelle est l’écriture scientifique de 0,0062 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6,2 × 10⁻³"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6,2 × 10⁻³",
-        "6,2 × 10³",
-        "0,62 × 10⁻²",
-        "62 × 10⁻³"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "6,2 × 10⁻³ = 0,0062 et son coefficient 6,2 est compris entre 1 inclus et 10 exclu. Le coefficient d’une écriture scientifique doit rester dans cet intervalle."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle est l’écriture scientifique de 0,0062 ?",
+            "reponse": "6,2 × 10⁻³",
+            "correction": "6,2 × 10⁻³ = 0,0062 et son coefficient 6,2 est compris entre 1 inclus et 10 exclu. Le coefficient d’une écriture scientifique doit rester dans cet intervalle.",
+            "p1": "6,2 × 10⁻³",
+            "p2": "6,2 × 10³",
+            "p3": "0,62 × 10⁻²",
+            "p4": "62 × 10⁻³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est l’écriture scientifique de 0,0045 ?",
+            "reponse": "4,5 × 10⁻³",
+            "correction": "L’écriture correcte est 4,5 × 10⁻³.",
+            "p1": "4,5 × 10⁻³",
+            "p2": "4,5 × 10³",
+            "p3": "0,45 × 10⁻²",
+            "p4": "45 × 10⁻³"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est l’écriture scientifique de 0,00072 ?",
+            "reponse": "7,2 × 10⁻⁴",
+            "correction": "L’écriture correcte est 7,2 × 10⁻⁴.",
+            "p1": "7,2 × 10⁻⁴",
+            "p2": "7,2 × 10⁴",
+            "p3": "0,72 × 10⁻³",
+            "p4": "72 × 10⁻⁴"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-036",
@@ -614,10 +345,7 @@
           "inverse": "i _ _ _ _ _ e"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "coefficient"
-      },
+      "reponse": "coefficient",
       "propositions": [
         "coefficient",
         "exposant",
@@ -633,10 +361,7 @@
       "presentation": {
         "type": "boite"
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "−4"
-      },
+      "reponse": "−4",
       "propositions": [
         "−4",
         "4",
@@ -648,50 +373,146 @@
     {
       "id": "PUI-038",
       "type": "qcm",
-      "enonce": "Quel nombre est égal à 3,6 × 10⁵ ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "360 000"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "360 000",
-        "36 000",
-        "3 600 000",
-        "0,000036"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Multiplier par 10⁵ décale la virgule de cinq rangs vers la droite : 3,6 × 10⁵ = 360 000."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel nombre est égal à 3,6 × 10⁵ ?",
+            "reponse": "360 000",
+            "correction": "Multiplier par 10⁵ décale la virgule de cinq rangs vers la droite : 3,6 × 10⁵ = 360 000.",
+            "p1": "360 000",
+            "p2": "36 000",
+            "p3": "3 600 000",
+            "p4": "0,000036"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre est égal à 4,2 × 10⁴ ?",
+            "reponse": "42 000",
+            "correction": "L’écriture correcte est 42 000.",
+            "p1": "42 000",
+            "p2": "4 200",
+            "p3": "420 000",
+            "p4": "0,000042"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre est égal à 7,5 × 10⁶ ?",
+            "reponse": "7 500 000",
+            "correction": "L’écriture correcte est 7 500 000.",
+            "p1": "7 500 000",
+            "p2": "750 000",
+            "p3": "75 000 000",
+            "p4": "0,0000075"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-039",
       "type": "qcm",
-      "enonce": "La distance parcourue est 1,5 × 10⁸ km. Quelle écriture représente la même distance ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "150 000 000 km"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "150 000 000 km",
-        "15 000 000 km",
-        "1 500 000 000 km",
-        "0,000000015 km"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "1,5 × 10⁸ = 150 000 000. La notation scientifique permet ici d’écrire plus compactement une grande distance."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "La distance parcourue est 1,5 × 10⁸ km. Quelle écriture représente la même distance ?",
+            "reponse": "150 000 000 km",
+            "correction": "1,5 × 10⁸ = 150 000 000. La notation scientifique permet ici d’écrire plus compactement une grande distance.",
+            "p1": "150 000 000 km",
+            "p2": "15 000 000 km",
+            "p3": "1 500 000 000 km",
+            "p4": "0,000000015 km"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La distance parcourue est 2,4 × 10⁷ km. Quelle écriture représente la même distance ?",
+            "reponse": "24 000 000 km",
+            "correction": "L’écriture correcte est 24 000 000 km.",
+            "p1": "24 000 000 km",
+            "p2": "2 400 000 km",
+            "p3": "240 000 000 km",
+            "p4": "0,00000024 km"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La distance parcourue est 6,2 × 10⁶ km. Quelle écriture représente la même distance ?",
+            "reponse": "6 200 000 km",
+            "correction": "L’écriture correcte est 6 200 000 km.",
+            "p1": "6 200 000 km",
+            "p2": "620 000 km",
+            "p3": "62 000 000 km",
+            "p4": "0,0000062 km"
+          }
+        }
+      ]
     },
     {
       "id": "PUI-040",
       "type": "qcm",
-      "enonce": "Parmi ces écritures de 0,00053, laquelle est une notation scientifique ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "5,3 × 10⁻⁴"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "5,3 × 10⁻⁴",
-        "53 × 10⁻⁵",
-        "0,53 × 10⁻³",
-        "530 × 10⁻⁶"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les quatre écritures valent 0,00053, mais seule 5,3 × 10⁻⁴ a un coefficient dont la valeur absolue est comprise entre 1 inclus et 10 exclu."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Parmi ces écritures de 0,00053, laquelle est une notation scientifique ?",
+            "reponse": "5,3 × 10⁻⁴",
+            "correction": "Les quatre écritures valent 0,00053, mais seule 5,3 × 10⁻⁴ a un coefficient dont la valeur absolue est comprise entre 1 inclus et 10 exclu.",
+            "p1": "5,3 × 10⁻⁴",
+            "p2": "53 × 10⁻⁵",
+            "p3": "0,53 × 10⁻³",
+            "p4": "530 × 10⁻⁶"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Parmi ces écritures de 0,00084, laquelle est une notation scientifique ?",
+            "reponse": "8,4 × 10⁻⁴",
+            "correction": "L’écriture correcte est 8,4 × 10⁻⁴.",
+            "p1": "8,4 × 10⁻⁴",
+            "p2": "84 × 10⁻⁵",
+            "p3": "0,84 × 10⁻³",
+            "p4": "840 × 10⁻⁶"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Parmi ces écritures de 0,0071, laquelle est une notation scientifique ?",
+            "reponse": "7,1 × 10⁻³",
+            "correction": "L’écriture correcte est 7,1 × 10⁻³.",
+            "p1": "7,1 × 10⁻³",
+            "p2": "71 × 10⁻⁴",
+            "p3": "0,71 × 10⁻²",
+            "p4": "710 × 10⁻⁵"
+          }
+        }
+      ]
     }
   ]
 }

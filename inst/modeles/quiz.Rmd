@@ -3,7 +3,7 @@ pagetitle: "eduschool"
 params:
   notion: "fractions_addition"
   support: "quiz"
-  tirages: 5
+  tirages: 20
   n: null
   niveau: ""
   humour_ratio: 0.2
@@ -137,6 +137,10 @@ if (html) {
       const bloc = document.createElement("section");
       bloc.className = "edu-question";
       enonceLisible(q, i + 1, bloc);
+      if (q.niveau) {
+        const niveau = noeud("p", "Niveau : " + q.niveau, bloc);
+        niveau.className = "edu-niveau-question";
+      }
       if (q.presentation && q.presentation.avertissement) {
         noeud("p", q.presentation.avertissement, bloc).className = "edu-avertissement";
       }
@@ -152,8 +156,7 @@ if (html) {
           bouton.value = p; bouton.id = "edu-q" + i + "-" + j;
           etiquette.appendChild(bouton);
           const masque = q.presentation && q.presentation.masques && q.presentation.masques[p];
-          const affichage = q.propositions_affichage && q.propositions_affichage[j];
-          noeud("span", " " + (masque || affichage || p), etiquette);
+          noeud("span", " " + (masque || p), etiquette);
           choix.appendChild(etiquette);
         });
       } else {
@@ -187,7 +190,7 @@ if (html) {
       const juste = valeur === String(q.reponse).trim();
       if (valeur) { total++; if (juste) bonnes++; }
       const correction = bloc.querySelector(".edu-correction");
-      correctionLisible((juste ? "Bonne réponse." : "Réponse attendue : " + (q.reponse_affichage || q.reponse) + ".") +
+      correctionLisible((juste ? "Bonne réponse." : "Réponse attendue : " + q.reponse + ".") +
         "\\n" + (q.correction || ""), correction);
       if (q.apart_humour) {
         const apart = noeud("p", q.apart_humour, correction);
@@ -203,9 +206,15 @@ if (html) {
   document.getElementById("edu-relancer").addEventListener("click", () => {
     afficher();
   });
-  document.getElementById("edu-nouveau").addEventListener("click", () => {
-    tour = (tour + 1) % tirages.length;
+  const nouveau = document.getElementById("edu-nouveau");
+  nouveau.addEventListener("click", () => {
+    if (tour + 1 >= tirages.length) return;
+    tour++;
     afficher();
+    if (tour + 1 >= tirages.length) {
+      nouveau.disabled = true;
+      nouveau.textContent = "Plus de quiz pré-calculé";
+    }
   });
   afficher();
 })();\n', '</script>\n', sep = '')
@@ -259,6 +268,8 @@ if (!html) {
     enonce = .math_unicode_pdf(q$enonce)
     enonce = gsub("\\. +", ".\n\n", enonce)
     cat("\n## Question ", i, "\n\n", enonce, "\n\n", sep = "")
+    if (!is.null(q$niveau) && nzchar(q$niveau))
+      cat("*Niveau : ", q$niveau, "*\n\n", sep = "")
     figure = eduschool::illustrer_question(q)
     if (!is.null(figure)) {
       png = tempfile(fileext = ".png")
@@ -273,9 +284,7 @@ if (!html) {
     if (length(q$propositions)) {
       for (p in q$propositions) {
         masque = q$presentation$masques[[p]]
-        j = match(p, q$propositions)
-        affichage = q$propositions_affichage[[j]]
-        proposition = if (is.null(masque)) affichage else masque
+        proposition = if (is.null(masque)) p else masque
         cat("- ", .math_unicode_pdf(proposition), "\n", sep = "")
       }
       cat("\n")
@@ -284,9 +293,9 @@ if (!html) {
   cat("\n\\newpage\n\n# Corrige\n\n")
   for (i in seq_along(tirages[[1L]])) {
     q = tirages[[1L]][[i]]
-    cat("\n## Question ", i, "\n\n**Reponse :** ", .math_unicode_pdf(q$reponse_affichage),
+    cat("\n## Question ", i, "\n\n**Reponse :** ", .math_unicode_pdf(q$reponse),
         "\n\n**Correction :**\n\n", .math_unicode_pdf(.raisonnement_edu(q$correction)), "\n\n",
-        if (!is.null(q$apart_humour)) paste0("*", q$apart_humour, "*\n\n") else "", sep = "")
+        if (!is.null(q$apart_humour)) paste0("\n\n**😈 Le petit mot du concepteur**\n\n*", q$apart_humour, "*\n\n") else "", sep = "")
   }
 }
 ```

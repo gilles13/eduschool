@@ -5,10 +5,7 @@
       "id": "TRIG-VOC-001",
       "type": "qcm",
       "enonce": "ABC est rectangle en A. Quel côté est l’hypoténuse ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "BC"
-      },
+      "reponse": "BC",
       "propositions": [
         "BC",
         "AB",
@@ -24,10 +21,7 @@
       "id": "TRIG-VOC-002",
       "type": "qcm",
       "enonce": "ABC est rectangle en A. Pour l’angle en B, quel côté est opposé ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AC"
-      },
+      "reponse": "AC",
       "propositions": [
         "AC",
         "AB",
@@ -43,10 +37,7 @@
       "id": "TRIG-VOC-003",
       "type": "qcm",
       "enonce": "ABC est rectangle en A. Pour l’angle en B, quel côté est adjacent (hors hypoténuse) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AB"
-      },
+      "reponse": "AB",
       "propositions": [
         "AB",
         "AC",
@@ -62,10 +53,7 @@
       "id": "TRIG-RAP-001",
       "type": "qcm",
       "enonce": "Dans ABC rectangle en A, quelle expression vaut sin(B) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AC/BC"
-      },
+      "reponse": "AC/BC",
       "propositions": [
         "AC/BC",
         "AB/BC",
@@ -81,10 +69,7 @@
       "id": "TRIG-RAP-002",
       "type": "qcm",
       "enonce": "Dans ABC rectangle en A, quelle expression vaut cos(B) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AB/BC"
-      },
+      "reponse": "AB/BC",
       "propositions": [
         "AB/BC",
         "AC/BC",
@@ -100,10 +85,7 @@
       "id": "TRIG-RAP-003",
       "type": "qcm",
       "enonce": "Dans ABC rectangle en A, quelle expression vaut tan(B) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "AC/AB"
-      },
+      "reponse": "AC/AB",
       "propositions": [
         "AC/AB",
         "AB/AC",
@@ -119,10 +101,7 @@
       "id": "TRIG-CHOIX-001",
       "type": "qcm",
       "enonce": "On connaît un angle aigu et la longueur de son côté adjacent ; on cherche son côté opposé. Quel rapport choisir ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "La tangente"
-      },
+      "reponse": "La tangente",
       "propositions": [
         "La tangente",
         "Le sinus",
@@ -135,10 +114,7 @@
       "id": "TRIG-CHOIX-002",
       "type": "qcm",
       "enonce": "On connaît un angle aigu et l’hypoténuse ; on cherche son côté opposé. Quel rapport choisir ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le sinus"
-      },
+      "reponse": "Le sinus",
       "propositions": [
         "Le sinus",
         "Le cosinus",
@@ -150,18 +126,15 @@
     {
       "id": "TRIG-CALC-001",
       "type": "qcm",
-      "enonce": "ABC est rectangle en A, AB = 4 cm, AC = 3 cm, BC = 5 cm. Combien vaut sin(B) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3/5"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3/5",
-        "4/5",
-        "3/4",
-        "5/3"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Pour l’angle en B, AC = 3 est opposé et BC = 5 est l’hypoténuse.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle",
         "longueurs": {
@@ -169,23 +142,55 @@
           "AC": "3 cm",
           "BC": "5 cm"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 4 cm, AC = 3 cm, BC = 5 cm. Combien vaut sin(B) ?",
+            "reponse": "3/5",
+            "correction": "Pour l’angle en B, AC = 3 est opposé et BC = 5 est l’hypoténuse.",
+            "p1": "3/5",
+            "p2": "4/5",
+            "p3": "3/4",
+            "p4": "5/3"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 12 cm, AC = 5 cm, BC = 13 cm. Combien vaut sin(B) ?",
+            "reponse": "5/13",
+            "correction": "Pour l’angle B, le côté opposé est AC et l’hypoténuse BC : sin(B)=5/13.",
+            "p1": "5/13",
+            "p2": "12/13",
+            "p3": "5/12",
+            "p4": "12/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 8 cm, AC = 15 cm, BC = 17 cm. Combien vaut sin(B) ?",
+            "reponse": "15/17",
+            "correction": "sin(B)=AC/BC=15/17.",
+            "p1": "15/17",
+            "p2": "8/17",
+            "p3": "15/8",
+            "p4": "8/15"
+          }
+        }
+      ]
     },
     {
       "id": "TRIG-CALC-002",
       "type": "qcm",
-      "enonce": "ABC est rectangle en A, AB = 4 cm, AC = 3 cm, BC = 5 cm. Combien vaut tan(B) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "3/4"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "3/4",
-        "4/3",
-        "3/5",
-        "4/5"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "La tangente vaut opposé / adjacent, soit AC/AB = 3/4.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle",
         "longueurs": {
@@ -193,23 +198,55 @@
           "AC": "3 cm",
           "BC": "5 cm"
         }
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 4 cm, AC = 3 cm, BC = 5 cm. Combien vaut tan(B) ?",
+            "reponse": "3/4",
+            "correction": "La tangente vaut opposé / adjacent, soit AC/AB = 3/4.",
+            "p1": "3/4",
+            "p2": "4/3",
+            "p3": "3/5",
+            "p4": "4/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 12 cm, AC = 5 cm, BC = 13 cm. Combien vaut tan(B) ?",
+            "reponse": "5/12",
+            "correction": "tan(B)=AC/AB=5/12.",
+            "p1": "5/12",
+            "p2": "12/5",
+            "p3": "5/13",
+            "p4": "12/13"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 8 cm, AC = 15 cm, BC = 17 cm. Combien vaut tan(B) ?",
+            "reponse": "15/8",
+            "correction": "tan(B)=AC/AB=15/8.",
+            "p1": "15/8",
+            "p2": "8/15",
+            "p3": "15/17",
+            "p4": "8/17"
+          }
+        }
+      ]
     },
     {
       "id": "TRIG-ANGLE-001",
       "type": "qcm",
-      "enonce": "ABC est rectangle en A, AB = 4 cm et AC = 4 cm. Quelle mesure a l’angle en B ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "45°"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "45°",
-        "30°",
-        "60°",
-        "90°"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Les deux côtés de l’angle droit sont égaux : les angles aigus en B et C valent chacun 45°.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle",
         "longueurs": {
@@ -218,23 +255,55 @@
           "BC": ""
         },
         "angle_B": "?"
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 4 cm et AC = 4 cm. Quelle mesure a l’angle en B ?",
+            "reponse": "45°",
+            "correction": "Les deux côtés de l’angle droit sont égaux : les angles aigus en B et C valent chacun 45°.",
+            "p1": "45°",
+            "p2": "30°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 7 cm et AC = 7 cm. Quelle mesure a l’angle en B ?",
+            "reponse": "45°",
+            "correction": "Les deux côtés de l’angle droit sont égaux : le triangle est rectangle isocèle, donc les deux angles aigus valent 45°.",
+            "p1": "45°",
+            "p2": "30°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, AB = 10 cm et AC = 10 cm. Quelle mesure a l’angle en B ?",
+            "reponse": "45°",
+            "correction": "Le triangle est rectangle isocèle : l’angle B vaut 45°.",
+            "p1": "45°",
+            "p2": "30°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        }
+      ]
     },
     {
       "id": "TRIG-CALC-003",
       "type": "qcm",
-      "enonce": "ABC est rectangle en A, l’angle en B vaut 45° et AB = 6 cm. Combien mesure AC ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "6 cm"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "6 cm",
-        "3 cm",
-        "12 cm",
-        "6√2 cm"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "tan(45°) = AC/AB = 1, donc AC = AB = 6 cm.",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle",
         "longueurs": {
@@ -243,42 +312,106 @@
           "BC": ""
         },
         "angle_B": "45°"
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, l’angle en B vaut 45° et AB = 6 cm. Combien mesure AC ?",
+            "reponse": "6 cm",
+            "correction": "tan(45°) = AC/AB = 1, donc AC = AB = 6 cm.",
+            "p1": "6 cm",
+            "p2": "3 cm",
+            "p3": "12 cm",
+            "p4": "6√2 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, l’angle en B vaut 45° et AB = 9 cm. Combien mesure AC ?",
+            "reponse": "9 cm",
+            "correction": "tan(45°)=1, donc AC/AB=1 et AC=9 cm.",
+            "p1": "9 cm",
+            "p2": "4,5 cm",
+            "p3": "18 cm",
+            "p4": "9√2 cm"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "ABC est rectangle en A, l’angle en B vaut 45° et AB = 12 cm. Combien mesure AC ?",
+            "reponse": "12 cm",
+            "correction": "tan(45°)=1, donc AC=AB=12 cm.",
+            "p1": "12 cm",
+            "p2": "6 cm",
+            "p3": "24 cm",
+            "p4": "12√2 cm"
+          }
+        }
+      ]
     },
     {
       "id": "TRIG-ARC-001",
       "type": "qcm",
-      "enonce": "Un immeuble dépasse la hauteur des yeux de 15 m. On se tient à 20 m horizontalement de sa façade. Quel angle de visée vers son sommet obtient-on, au dixième de degré ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "36,9°"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "36,9°",
-        "53,1°",
-        "41,4°",
-        "48,6°"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le rapport opposé/adjacent vaut 15/20 = 0,75. Donc l’angle vaut arctan(0,75) ≈ 36,9° (calculatrice en mode degrés).",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_immeuble"
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un immeuble dépasse la hauteur des yeux de 15 m. On se tient à 20 m horizontalement de sa façade. Quel angle de visée vers son sommet obtient-on, au dixième de degré ?",
+            "reponse": "36,9°",
+            "correction": "Le rapport opposé/adjacent vaut 15/20 = 0,75. Donc l’angle vaut arctan(0,75) ≈ 36,9° (calculatrice en mode degrés).",
+            "p1": "36,9°",
+            "p2": "53,1°",
+            "p3": "41,4°",
+            "p4": "48,6°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un immeuble dépasse la hauteur des yeux de 10 m. On se tient à 10 m horizontalement de sa façade. Quel angle de visée vers son sommet obtient-on, au dixième de degré ?",
+            "reponse": "45,0°",
+            "correction": "tan(α)=10/10=1, donc α=45,0°.",
+            "p1": "45,0°",
+            "p2": "30,0°",
+            "p3": "60,0°",
+            "p4": "90,0°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un immeuble dépasse la hauteur des yeux de 10 m. On se tient à 17,3 m horizontalement de sa façade. Quel angle de visée vers son sommet obtient-on, au dixième de degré ?",
+            "reponse": "30,0°",
+            "correction": "tan(α)≈10/17,3≈0,578, donc α≈30,0°.",
+            "p1": "30,0°",
+            "p2": "45,0°",
+            "p3": "60,0°",
+            "p4": "17,3°"
+          }
+        }
+      ]
     },
     {
       "id": "TRIG-ARC-002",
       "type": "qcm",
-      "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté opposé mesure 3 cm et l’hypoténuse 6 cm. Quel angle α obtient-on ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "30°"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "30°",
-        "45°",
-        "60°",
-        "90°"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "sin(α) = opposé/hypoténuse = 3/6 = 0,5. Donc α = arcsin(0,5) = 30° (mode degrés).",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle",
         "longueurs": {
@@ -287,23 +420,55 @@
           "BC": "6 cm"
         },
         "angle_B": "?"
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté opposé mesure 3 cm et l’hypoténuse 6 cm. Quel angle α obtient-on ?",
+            "reponse": "30°",
+            "correction": "sin(α) = opposé/hypoténuse = 3/6 = 0,5. Donc α = arcsin(0,5) = 30° (mode degrés).",
+            "p1": "30°",
+            "p2": "45°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté opposé mesure 5 cm et l’hypoténuse 10 cm. Quel angle α obtient-on ?",
+            "reponse": "30°",
+            "correction": "sin(α)=5/10=1/2, donc α=30°.",
+            "p1": "30°",
+            "p2": "45°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté opposé mesure 7 cm et l’hypoténuse 9,9 cm. Quel angle α obtient-on au degré près ?",
+            "reponse": "45°",
+            "correction": "sin(α)≈7/9,9≈0,707, donc α≈45°.",
+            "p1": "45°",
+            "p2": "30°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        }
+      ]
     },
     {
       "id": "TRIG-ARC-003",
       "type": "qcm",
-      "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté adjacent mesure 5 cm et l’hypoténuse 10 cm. Quel angle α obtient-on ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "60°"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "60°",
-        "30°",
-        "45°",
-        "90°"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "cos(α) = adjacent/hypoténuse = 5/10 = 0,5. Donc α = arccos(0,5) = 60° (mode degrés).",
+      "correction": "[[correction]]",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle",
         "longueurs": {
@@ -312,7 +477,42 @@
           "BC": "10 cm"
         },
         "angle_B": "?"
-      }
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté adjacent mesure 5 cm et l’hypoténuse 10 cm. Quel angle α obtient-on ?",
+            "reponse": "60°",
+            "correction": "cos(α) = adjacent/hypoténuse = 5/10 = 0,5. Donc α = arccos(0,5) = 60° (mode degrés).",
+            "p1": "60°",
+            "p2": "30°",
+            "p3": "45°",
+            "p4": "90°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté adjacent mesure 5 cm et l’hypoténuse 10 cm. Quel angle α obtient-on ?",
+            "reponse": "60°",
+            "correction": "cos(α)=5/10=1/2, donc α=60°.",
+            "p1": "60°",
+            "p2": "30°",
+            "p3": "45°",
+            "p4": "90°"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle rectangle, pour un angle aigu α, le côté adjacent mesure 7 cm et l’hypoténuse 9,9 cm. Quel angle α obtient-on au degré près ?",
+            "reponse": "45°",
+            "correction": "cos(α)≈7/9,9≈0,707, donc α≈45°.",
+            "p1": "45°",
+            "p2": "30°",
+            "p3": "60°",
+            "p4": "90°"
+          }
+        }
+      ]
     }
   ]
 }

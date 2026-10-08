@@ -5,10 +5,7 @@
       "id": "DEUX-EP-001",
       "type": "qcm",
       "enonce": "Une première épreuve a [[n1]] issues équiprobables dont [[f1]] favorables. Une seconde, indépendante, a [[n2]] issues équiprobables dont [[f2]] favorables. Quelle est la probabilité d’obtenir un résultat favorable aux deux épreuves ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -226,19 +223,6 @@
           }
         },
         {
-          "progression": 1,
-          "parametres": {
-            "n1": "2",
-            "n2": "2",
-            "f1": "1",
-            "f2": "1",
-            "bonne": "1/4",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
           "progression": 2,
           "parametres": {
             "n1": "3",
@@ -246,19 +230,6 @@
             "f1": "3",
             "f2": "1",
             "bonne": "1/2",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "n1": "4",
-            "n2": "2",
-            "f1": "3",
-            "f2": "1",
-            "bonne": "3/8",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
             "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
@@ -332,37 +303,11 @@
         {
           "progression": 2,
           "parametres": {
-            "n1": "2",
-            "n2": "4",
-            "f1": "1",
-            "f2": "1",
-            "bonne": "1/8",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
             "n1": "3",
             "n2": "4",
             "f1": "2",
             "f2": "3",
             "bonne": "1/2",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "n1": "4",
-            "n2": "4",
-            "f1": "3",
-            "f2": "1",
-            "bonne": "3/16",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
             "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
@@ -436,37 +381,11 @@
         {
           "progression": 2,
           "parametres": {
-            "n1": "2",
-            "n2": "2",
-            "f1": "1",
-            "f2": "1",
-            "bonne": "1/4",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
             "n1": "3",
             "n2": "2",
             "f1": "1",
             "f2": "1",
             "bonne": "1/6",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n1": "4",
-            "n2": "2",
-            "f1": "3",
-            "f2": "1",
-            "bonne": "3/8",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
             "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
@@ -540,37 +459,11 @@
         {
           "progression": 3,
           "parametres": {
-            "n1": "2",
-            "n2": "4",
-            "f1": "1",
-            "f2": "1",
-            "bonne": "1/8",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
             "n1": "3",
             "n2": "4",
             "f1": "3",
             "f2": "3",
             "bonne": "3/4",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n1": "4",
-            "n2": "4",
-            "f1": "3",
-            "f2": "1",
-            "bonne": "3/16",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
             "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
@@ -640,32 +533,6 @@
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
             "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
           }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n1": "2",
-            "n2": "2",
-            "f1": "1",
-            "f2": "1",
-            "bonne": "1/4",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "n1": "3",
-            "n2": "2",
-            "f1": "2",
-            "f2": "1",
-            "bonne": "1/3",
-            "d1": "On additionne les deux probabilités favorables.",
-            "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
-          }
         }
       ]
     },
@@ -673,10 +540,7 @@
       "id": "DEUX-EP-002",
       "type": "qcm",
       "enonce": "Pourquoi un arbre est-il utile pour une expérience à deux épreuves ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Il organise les chemins possibles successifs"
-      },
+      "reponse": "Il organise les chemins possibles successifs",
       "propositions": [
         "Il organise les chemins possibles successifs",
         "Il rend les issues certaines",
@@ -688,18 +552,50 @@
     {
       "id": "DEUX-EP-003",
       "type": "qcm",
-      "enonce": "On lance deux pièces équilibrées. Combien y a-t-il de couples d’issues équiprobables ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "4"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4",
-        "2",
-        "3",
-        "8"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "PP, PF, FP et FF : quatre couples."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "On lance deux pièces équilibrées. Combien y a-t-il de couples d’issues équiprobables ?",
+            "reponse": "4",
+            "correction": "PP, PF, FP et FF : quatre couples.",
+            "p1": "4",
+            "p2": "2",
+            "p3": "3",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On lance deux dés équilibrés à deux faces numérotées 1 et 2. Combien y a-t-il de couples d’issues équiprobables ?",
+            "reponse": "4",
+            "correction": "Chaque dé a 2 issues : 2 × 2 = 4 couples.",
+            "p1": "4",
+            "p2": "2",
+            "p3": "6",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On tire successivement deux jetons avec remise parmi 3 couleurs équiprobables. Combien y a-t-il de couples de couleurs possibles ?",
+            "reponse": "9",
+            "correction": "Il y a 3 choix au premier tirage et 3 au second : 3 × 3 = 9.",
+            "p1": "9",
+            "p2": "3",
+            "p3": "6",
+            "p4": "12"
+          }
+        }
+      ]
     }
   ]
 }

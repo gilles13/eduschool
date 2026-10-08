@@ -5,10 +5,7 @@
       "id": "FLIN-001",
       "type": "qcm",
       "enonce": "Soit f(𝑥) = [[a]]𝑥. Quelle est l’image de [[x]] ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -573,10 +570,7 @@
       "id": "FLIN-002",
       "type": "qcm",
       "enonce": "Quelle propriété graphique caractérise une fonction linéaire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Sa représentation est une droite passant par l’origine."
-      },
+      "reponse": "Sa représentation est une droite passant par l’origine.",
       "propositions": [
         "Sa représentation est une droite passant par l’origine.",
         "Sa représentation est toujours horizontale.",
@@ -588,18 +582,50 @@
     {
       "id": "FLIN-003",
       "type": "qcm",
-      "enonce": "Dans f(𝑥)=3𝑥, que représente 3 ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Le coefficient de proportionnalité."
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Le coefficient de proportionnalité.",
-        "L’ordonnée à l’origine.",
-        "Un antécédent obligatoire.",
-        "L’image de 0."
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une fonction linéaire est la traduction fonctionnelle d’une proportionnalité."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=3𝑥, que représente 3 ?",
+            "reponse": "Le coefficient de proportionnalité.",
+            "correction": "Une fonction linéaire est la traduction fonctionnelle d’une proportionnalité.",
+            "p1": "Le coefficient de proportionnalité.",
+            "p2": "L’ordonnée à l’origine.",
+            "p3": "Un antécédent obligatoire.",
+            "p4": "L’image de 0."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=5𝑥, que représente 5 ?",
+            "reponse": "Le coefficient de proportionnalité.",
+            "correction": "Pour une fonction linéaire f(x)=ax, a est le coefficient de proportionnalité.",
+            "p1": "Le coefficient de proportionnalité.",
+            "p2": "L’ordonnée à l’origine.",
+            "p3": "Un antécédent obligatoire.",
+            "p4": "L’image de 0."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans f(𝑥)=−2𝑥, que représente −2 ?",
+            "reponse": "Le coefficient de proportionnalité.",
+            "correction": "Pour une fonction linéaire f(x)=ax, a est le coefficient de proportionnalité.",
+            "p1": "Le coefficient de proportionnalité.",
+            "p2": "L’ordonnée à l’origine.",
+            "p3": "Un antécédent obligatoire.",
+            "p4": "L’image de 0."
+          }
+        }
+      ]
     }
   ]
 }

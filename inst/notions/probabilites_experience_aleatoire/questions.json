@@ -5,10 +5,7 @@
       "id": "PROBA-BASE-001",
       "type": "qcm",
       "enonce": "Dans une expérience équiprobable, [[favorables]] issues sur [[total]] réalisent l’événement A. Quelle est P(A) ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -119,17 +116,6 @@
         {
           "progression": 1,
           "parametres": {
-            "favorables": "1",
-            "total": "4",
-            "bonne": "1/4",
-            "d1": "3/4",
-            "d2": "1/5",
-            "d3": "4/1"
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
             "favorables": "3",
             "total": "5",
             "bonne": "3/5",
@@ -186,17 +172,6 @@
           "progression": 1,
           "parametres": {
             "favorables": "7",
-            "total": "10",
-            "bonne": "7/10",
-            "d1": "3/10",
-            "d2": "7/11",
-            "d3": "10/7"
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "favorables": "7",
             "total": "11",
             "bonne": "7/11",
             "d1": "4/11",
@@ -213,17 +188,6 @@
             "d1": "5/12",
             "d2": "7/13",
             "d3": "12/7"
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "favorables": "1",
-            "total": "4",
-            "bonne": "1/4",
-            "d1": "3/4",
-            "d2": "1/5",
-            "d3": "4/1"
           }
         },
         {
@@ -251,17 +215,6 @@
         {
           "progression": 2,
           "parametres": {
-            "favorables": "4",
-            "total": "7",
-            "bonne": "4/7",
-            "d1": "3/7",
-            "d2": "4/8",
-            "d3": "7/4"
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
             "favorables": "2",
             "total": "8",
             "bonne": "1/4",
@@ -279,17 +232,6 @@
             "d1": "1/9",
             "d2": "8/10",
             "d3": "9/8"
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "favorables": "7",
-            "total": "10",
-            "bonne": "7/10",
-            "d1": "3/10",
-            "d2": "7/11",
-            "d3": "10/7"
           }
         },
         {
@@ -318,17 +260,6 @@
           "progression": 2,
           "parametres": {
             "favorables": "1",
-            "total": "4",
-            "bonne": "1/4",
-            "d1": "3/4",
-            "d2": "1/5",
-            "d3": "4/1"
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "favorables": "1",
             "total": "5",
             "bonne": "1/5",
             "d1": "4/5",
@@ -345,17 +276,6 @@
             "d1": "1/6",
             "d2": "5/7",
             "d3": "6/5"
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "favorables": "1",
-            "total": "7",
-            "bonne": "1/7",
-            "d1": "6/7",
-            "d2": "1/8",
-            "d3": "7/1"
           }
         },
         {
@@ -378,17 +298,6 @@
             "d1": "8/9",
             "d2": "1/10",
             "d3": "9/1"
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "favorables": "7",
-            "total": "10",
-            "bonne": "7/10",
-            "d1": "3/10",
-            "d2": "7/11",
-            "d3": "10/7"
           }
         },
         {
@@ -416,45 +325,12 @@
         {
           "progression": 3,
           "parametres": {
-            "favorables": "1",
-            "total": "4",
-            "bonne": "1/4",
-            "d1": "3/4",
-            "d2": "1/5",
-            "d3": "4/1"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "2",
-            "total": "5",
-            "bonne": "2/5",
-            "d1": "3/5",
-            "d2": "2/6",
-            "d3": "5/2"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
             "favorables": "4",
             "total": "6",
             "bonne": "2/3",
             "d1": "2/6",
             "d2": "4/7",
             "d3": "6/4"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "4",
-            "total": "7",
-            "bonne": "4/7",
-            "d1": "3/7",
-            "d2": "4/8",
-            "d3": "7/4"
           }
         },
         {
@@ -477,17 +353,6 @@
             "d1": "7/9",
             "d2": "2/10",
             "d3": "9/2"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "7",
-            "total": "10",
-            "bonne": "7/10",
-            "d1": "3/10",
-            "d2": "7/11",
-            "d3": "10/7"
           }
         },
         {
@@ -516,50 +381,6 @@
           "progression": 3,
           "parametres": {
             "favorables": "1",
-            "total": "4",
-            "bonne": "1/4",
-            "d1": "3/4",
-            "d2": "1/5",
-            "d3": "4/1"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "3",
-            "total": "5",
-            "bonne": "3/5",
-            "d1": "2/5",
-            "d2": "3/6",
-            "d3": "5/3"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "3",
-            "total": "6",
-            "bonne": "1/2",
-            "d1": "3/6",
-            "d2": "3/7",
-            "d3": "6/3"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "1",
-            "total": "7",
-            "bonne": "1/7",
-            "d1": "6/7",
-            "d2": "1/8",
-            "d3": "7/1"
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "favorables": "1",
             "total": "8",
             "bonne": "1/8",
             "d1": "7/8",
@@ -573,10 +394,7 @@
       "id": "PROBA-BASE-002",
       "type": "qcm",
       "enonce": "Qu’est-ce qu’une issue ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Un résultat possible d’une expérience aléatoire"
-      },
+      "reponse": "Un résultat possible d’une expérience aléatoire",
       "propositions": [
         "Un résultat possible d’une expérience aléatoire",
         "Une expérience certaine",
@@ -588,34 +406,98 @@
     {
       "id": "PROBA-BASE-003",
       "type": "qcm",
-      "enonce": "Quelle valeur peut être une probabilité ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0,35"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0,35",
-        "-0,2",
-        "1,4",
-        "135 %"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une probabilité est comprise entre 0 et 1."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle valeur peut être une probabilité ?",
+            "reponse": "0,35",
+            "correction": "Une probabilité est comprise entre 0 et 1.",
+            "p1": "0,35",
+            "p2": "-0,2",
+            "p3": "1,4",
+            "p4": "135 %"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Parmi ces nombres, lequel peut représenter une probabilité ?",
+            "reponse": "0,62",
+            "correction": "Une probabilité est comprise entre 0 et 1.",
+            "p1": "0,62",
+            "p2": "−0,1",
+            "p3": "1,2",
+            "p4": "162 %"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle valeur est admissible pour une probabilité ?",
+            "reponse": "0,08",
+            "correction": "0,08 est compris entre 0 et 1.",
+            "p1": "0,08",
+            "p2": "−0,08",
+            "p3": "1,08",
+            "p4": "108 %"
+          }
+        }
+      ]
     },
     {
       "id": "PROBA-BASE-004",
       "type": "qcm",
-      "enonce": "Un événement impossible a pour probabilité…",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "0"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "0",
-        "1",
-        "1/2",
-        "-1"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Impossible signifie qu’aucune issue ne réalise l’événement."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un événement impossible a pour probabilité…",
+            "reponse": "0",
+            "correction": "Impossible signifie qu’aucune issue ne réalise l’événement.",
+            "p1": "0",
+            "p2": "1",
+            "p3": "1/2",
+            "p4": "-1"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle est la probabilité d’obtenir 7 avec un dé classique à six faces ?",
+            "reponse": "0",
+            "correction": "L’événement est impossible : sa probabilité vaut 0.",
+            "p1": "0",
+            "p2": "1",
+            "p3": "1/6",
+            "p4": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une urne ne contient que des boules rouges. Quelle est la probabilité de tirer une boule bleue ?",
+            "reponse": "0",
+            "correction": "L’événement est impossible, donc sa probabilité vaut 0.",
+            "p1": "0",
+            "p2": "1",
+            "p3": "1/2",
+            "p4": "−1"
+          }
+        }
+      ]
     }
   ]
 }

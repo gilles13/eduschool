@@ -5,10 +5,7 @@
       "id": "QUART-001",
       "type": "qcm",
       "enonce": "La série ordonnée est : [[serie]]. Quelle proposition est correcte ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "[[bonne]]"
-      },
+      "reponse": "[[bonne]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -116,406 +113,6 @@
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
             "d3": "La médiane est toujours égale à la moyenne."
           }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12",
-            "bonne": "Q1 = 3 ; médiane = 6.5 ; Q3 = 9",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 4 ; médiane = 8 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 5 ; médiane = 8.5 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 6 ; médiane = 10 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 7 ; médiane = 10.5 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 3 ; médiane = 7 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 1,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 4 ; médiane = 7.5 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 5 ; médiane = 9 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 6 ; médiane = 9.5 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 12; 13; 14; 15; 16; 17",
-            "bonne": "Q1 = 7 ; médiane = 11 ; Q3 = 14",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12",
-            "bonne": "Q1 = 3 ; médiane = 6.5 ; Q3 = 9",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 4 ; médiane = 8 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 5 ; médiane = 8.5 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 6 ; médiane = 10 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 7 ; médiane = 10.5 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 3 ; médiane = 7 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 4 ; médiane = 7.5 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 5 ; médiane = 9 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 6 ; médiane = 9.5 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 12; 13; 14; 15; 16; 17",
-            "bonne": "Q1 = 7 ; médiane = 11 ; Q3 = 14",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12",
-            "bonne": "Q1 = 3 ; médiane = 6.5 ; Q3 = 9",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 4 ; médiane = 8 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 5 ; médiane = 8.5 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 2,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 6 ; médiane = 10 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 7 ; médiane = 10.5 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 3 ; médiane = 7 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 4 ; médiane = 7.5 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 5 ; médiane = 9 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 6 ; médiane = 9.5 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 12; 13; 14; 15; 16; 17",
-            "bonne": "Q1 = 7 ; médiane = 11 ; Q3 = 14",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12",
-            "bonne": "Q1 = 3 ; médiane = 6.5 ; Q3 = 9",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 4 ; médiane = 8 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14",
-            "bonne": "Q1 = 5 ; médiane = 8.5 ; Q3 = 11",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 6 ; médiane = 10 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16",
-            "bonne": "Q1 = 7 ; médiane = 10.5 ; Q3 = 13",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "1; 2; 3; 4; 5; 6; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 3 ; médiane = 7 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13",
-            "bonne": "Q1 = 4 ; médiane = 7.5 ; Q3 = 10",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "3; 4; 5; 6; 7; 8; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 5 ; médiane = 9 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15",
-            "bonne": "Q1 = 6 ; médiane = 9.5 ; Q3 = 12",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
-        },
-        {
-          "progression": 3,
-          "parametres": {
-            "serie": "5; 6; 7; 8; 9; 10; 12; 13; 14; 15; 16; 17",
-            "bonne": "Q1 = 7 ; médiane = 11 ; Q3 = 14",
-            "d1": "Q1 est le minimum et Q3 est le maximum.",
-            "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
-          }
         }
       ]
     },
@@ -523,10 +120,7 @@
       "id": "QUART-002",
       "type": "qcm",
       "enonce": "Que représente une boîte à moustaches ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Des repères de position et de dispersion d’une série"
-      },
+      "reponse": "Des repères de position et de dispersion d’une série",
       "propositions": [
         "Des repères de position et de dispersion d’une série",
         "Chaque valeur individuelle avec son nom",
@@ -538,18 +132,50 @@
     {
       "id": "QUART-003",
       "type": "qcm",
-      "enonce": "Si Q1 = 12, que peut-on dire ?",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "Au moins un quart des valeurs sont inférieures ou égales à 12"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "Au moins un quart des valeurs sont inférieures ou égales à 12",
-        "Toutes les valeurs valent 12",
-        "La moyenne vaut 12",
-        "Trois quarts des valeurs sont strictement inférieures à 12"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le premier quartile est un seuil de position dans la série ordonnée."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Si Q1 = 12, que peut-on dire ?",
+            "reponse": "Au moins un quart des valeurs sont inférieures ou égales à 12",
+            "correction": "Le premier quartile est un seuil de position dans la série ordonnée.",
+            "p1": "Au moins un quart des valeurs sont inférieures ou égales à 12",
+            "p2": "Toutes les valeurs valent 12",
+            "p3": "La moyenne vaut 12",
+            "p4": "Trois quarts des valeurs sont strictement inférieures à 12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Si Q1 = 18, que peut-on dire ?",
+            "reponse": "Au moins 25 % des valeurs sont inférieures ou égales à 18.",
+            "correction": "Le premier quartile Q1 est une valeur telle qu’au moins 25 % des données lui sont inférieures ou égales.",
+            "p1": "Au moins 25 % des valeurs sont inférieures ou égales à 18.",
+            "p2": "Toutes les valeurs valent 18.",
+            "p3": "75 % des valeurs sont forcément égales à 18.",
+            "p4": "18 est forcément la moyenne."
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Si Q1 = 7, que peut-on dire ?",
+            "reponse": "Au moins 25 % des valeurs sont inférieures ou égales à 7.",
+            "correction": "Q1 repère le premier quart des données ordonnées.",
+            "p1": "Au moins 25 % des valeurs sont inférieures ou égales à 7.",
+            "p2": "Toutes les valeurs valent 7.",
+            "p3": "75 % des valeurs sont forcément égales à 7.",
+            "p4": "7 est forcément la moyenne."
+          }
+        }
+      ]
     }
   ]
 }

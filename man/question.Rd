@@ -2,7 +2,7 @@
 % Please edit documentation in R/mathematiques.R
 \name{question}
 \alias{question}
-\title{Instancier une question (JSON local de confiance uniquement)}
+\title{Instancier une question finie}
 \usage{
 question(definition)
 }
@@ -10,5 +10,5 @@ question(definition)
 \item{definition}{Element de questions(notion)$questions.}
 }
 \description{
-Instancier une question (JSON local de confiance uniquement)
+Instancier une question finie
 }

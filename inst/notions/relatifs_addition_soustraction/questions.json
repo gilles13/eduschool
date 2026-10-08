@@ -4,26 +4,146 @@
     {
       "id": "RELATIFS-ADD-001",
       "type": "qcm",
-      "enonce": "Calcule −4 + 7.",
-      "reponse": {"mode": "editoriale", "valeur": "3"},
-      "propositions": ["3", "−3", "11", "−11"],
-      "correction": "Depuis −4, ajouter 7 revient à se déplacer de 7 unités vers la droite : on arrive à 3."
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Calcule −4 + 7.",
+            "reponse": "3",
+            "correction": "Depuis −4, ajouter 7 revient à se déplacer de 7 unités vers la droite : on arrive à 3.",
+            "p1": "3",
+            "p2": "−3",
+            "p3": "11",
+            "p4": "−11"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule −6 + 9.",
+            "reponse": "3",
+            "correction": "−6 + 9 = 3.",
+            "p1": "3",
+            "p2": "−3",
+            "p3": "15",
+            "p4": "−15"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule −8 + 5.",
+            "reponse": "−3",
+            "correction": "−8 + 5 = −3.",
+            "p1": "−3",
+            "p2": "3",
+            "p3": "13",
+            "p4": "−13"
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-SOUS-001",
       "type": "qcm",
-      "enonce": "Quelle addition est équivalente à 3 − (−5) ?",
-      "reponse": {"mode": "editoriale", "valeur": "3 + 5"},
-      "propositions": ["3 + 5", "3 + (−5)", "−3 + 5", "−3 + (−5)"],
-      "correction": "Soustraire un nombre revient à ajouter son opposé. L’opposé de −5 est 5."
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle addition est équivalente à 3 − (−5) ?",
+            "reponse": "3 + 5",
+            "correction": "Soustraire un nombre revient à ajouter son opposé. L’opposé de −5 est 5.",
+            "p1": "3 + 5",
+            "p2": "3 + (−5)",
+            "p3": "−3 + 5",
+            "p4": "−3 + (−5)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle addition est équivalente à 5 − (−4) ?",
+            "reponse": "5 + 4",
+            "correction": "Soustraire −4 revient à ajouter 4.",
+            "p1": "5 + 4",
+            "p2": "5 − 4",
+            "p3": "−5 + 4",
+            "p4": "−5 − 4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle addition est équivalente à 7 − (−2) ?",
+            "reponse": "7 + 2",
+            "correction": "Soustraire −2 revient à ajouter 2.",
+            "p1": "7 + 2",
+            "p2": "7 − 2",
+            "p3": "−7 + 2",
+            "p4": "−7 − 2"
+          }
+        }
+      ]
     },
     {
       "id": "RELATIFS-SOUS-002",
       "type": "qcm",
-      "enonce": "Calcule −6 − (−2).",
-      "reponse": {"mode": "editoriale", "valeur": "−4"},
-      "propositions": ["−4", "−8", "4", "8"],
-      "correction": "−6 − (−2) = −6 + 2 = −4."
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Calcule −6 − (−2).",
+            "reponse": "−4",
+            "correction": "−6 − (−2) = −6 + 2 = −4.",
+            "p1": "−4",
+            "p2": "−8",
+            "p3": "4",
+            "p4": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule −9 − (−4).",
+            "reponse": "−5",
+            "correction": "−9 − (−4) = −9 + 4 = −5.",
+            "p1": "−5",
+            "p2": "5",
+            "p3": "−13",
+            "p4": "13"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Calcule −7 − (−10).",
+            "reponse": "3",
+            "correction": "−7 − (−10) = −7 + 10 = 3.",
+            "p1": "3",
+            "p2": "−3",
+            "p3": "−17",
+            "p4": "17"
+          }
+        }
+      ]
     }
   ]
 }

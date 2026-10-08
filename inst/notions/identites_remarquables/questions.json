@@ -4,31 +4,55 @@
     {
       "id": "IR-001",
       "type": "qcm",
-      "enonce": "Quelle identité permet de développer [[expression]] ?",
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "(a+b)^2",
-        "affichage": "(a + b)²",
-        "candidats": {
-          "a² + 2ab + b²": "a^2+2*a*b+b^2",
-          "a² + b²": "a^2+b^2",
-          "a² − 2ab + b²": "a^2-2*a*b+b^2",
-          "2a² + 2b²": "2*a^2+2*b^2"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "a² + 2ab + b²",
-        "a² + b²",
-        "a² − 2ab + b²",
-        "2a² + 2b²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "**Identité remarquable : carré d’une somme.**\n\n(a + b)² = a² + 2ab + b².\n\nOn partage le carré en deux carrés et deux rectangles : le **double produit** 2ab est indispensable."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle identité permet de développer (a + b)² ?",
+            "reponse": "a² + 2ab + b²",
+            "correction": "**Identité remarquable : carré d’une somme.**\n\n(a + b)² = a² + 2ab + b².\n\nOn partage le carré en deux carrés et deux rectangles : le **double produit** 2ab est indispensable.",
+            "p1": "a² + 2ab + b²",
+            "p2": "a² + b²",
+            "p3": "a² − 2ab + b²",
+            "p4": "2a² + 2b²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle identité permet de développer (u + v)² ?",
+            "reponse": "u² + 2uv + v²",
+            "correction": "(u+v)² = u² + 2uv + v².",
+            "p1": "u² + 2uv + v²",
+            "p2": "u² + v²",
+            "p3": "u² − 2uv + v²",
+            "p4": "2u² + 2v²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle identité permet de développer (m + n)² ?",
+            "reponse": "m² + 2mn + n²",
+            "correction": "(m+n)² = m² + 2mn + n².",
+            "p1": "m² + 2mn + n²",
+            "p2": "m² + n²",
+            "p3": "m² − 2mn + n²",
+            "p4": "2m² + 2n²"
+          }
+        }
+      ]
     },
     {
       "id": "IR-002",
       "type": "qcm",
-      "enonce": "Développer [[expression]].",
+      "enonce": "Développer [[affichage_source]].",
       "variantes": [
         {
           "parametres": {
@@ -41,7 +65,8 @@
             "d2": "𝑥² − 4𝑥 + 4",
             "d2_expression": "1*x^2-4*x+4",
             "d3": "𝑥² + 4",
-            "d3_expression": "1*x^2+4"
+            "d3_expression": "1*x^2+4",
+            "reponse": "𝑥² + 4𝑥 + 4"
           },
           "progression": 1
         },
@@ -56,7 +81,8 @@
             "d2": "𝑥² + 4𝑥 + 4",
             "d2_expression": "1*x^2+4*x+4",
             "d3": "𝑥² + 4",
-            "d3_expression": "1*x^2+4"
+            "d3_expression": "1*x^2+4",
+            "reponse": "𝑥² − 4𝑥 + 4"
           },
           "progression": 1
         },
@@ -71,7 +97,8 @@
             "d2": "𝑥² − 6𝑥 + 9",
             "d2_expression": "1*x^2-6*x+9",
             "d3": "𝑥² + 9",
-            "d3_expression": "1*x^2+9"
+            "d3_expression": "1*x^2+9",
+            "reponse": "𝑥² + 6𝑥 + 9"
           },
           "progression": 1
         },
@@ -86,7 +113,8 @@
             "d2": "𝑥² + 6𝑥 + 9",
             "d2_expression": "1*x^2+6*x+9",
             "d3": "𝑥² + 9",
-            "d3_expression": "1*x^2+9"
+            "d3_expression": "1*x^2+9",
+            "reponse": "𝑥² − 6𝑥 + 9"
           },
           "progression": 1
         },
@@ -101,7 +129,8 @@
             "d2": "𝑥² − 8𝑥 + 16",
             "d2_expression": "1*x^2-8*x+16",
             "d3": "𝑥² + 16",
-            "d3_expression": "1*x^2+16"
+            "d3_expression": "1*x^2+16",
+            "reponse": "𝑥² + 8𝑥 + 16"
           },
           "progression": 1
         },
@@ -116,7 +145,8 @@
             "d2": "𝑥² + 8𝑥 + 16",
             "d2_expression": "1*x^2+8*x+16",
             "d3": "𝑥² + 16",
-            "d3_expression": "1*x^2+16"
+            "d3_expression": "1*x^2+16",
+            "reponse": "𝑥² − 8𝑥 + 16"
           },
           "progression": 1
         },
@@ -131,7 +161,8 @@
             "d2": "𝑥² − 10𝑥 + 25",
             "d2_expression": "1*x^2-10*x+25",
             "d3": "𝑥² + 25",
-            "d3_expression": "1*x^2+25"
+            "d3_expression": "1*x^2+25",
+            "reponse": "𝑥² + 10𝑥 + 25"
           },
           "progression": 1
         },
@@ -146,7 +177,8 @@
             "d2": "𝑥² + 10𝑥 + 25",
             "d2_expression": "1*x^2+10*x+25",
             "d3": "𝑥² + 25",
-            "d3_expression": "1*x^2+25"
+            "d3_expression": "1*x^2+25",
+            "reponse": "𝑥² − 10𝑥 + 25"
           },
           "progression": 1
         },
@@ -161,7 +193,8 @@
             "d2": "𝑥² − 12𝑥 + 36",
             "d2_expression": "1*x^2-12*x+36",
             "d3": "𝑥² + 36",
-            "d3_expression": "1*x^2+36"
+            "d3_expression": "1*x^2+36",
+            "reponse": "𝑥² + 12𝑥 + 36"
           },
           "progression": 1
         },
@@ -176,7 +209,8 @@
             "d2": "𝑥² + 12𝑥 + 36",
             "d2_expression": "1*x^2+12*x+36",
             "d3": "𝑥² + 36",
-            "d3_expression": "1*x^2+36"
+            "d3_expression": "1*x^2+36",
+            "reponse": "𝑥² − 12𝑥 + 36"
           },
           "progression": 1
         },
@@ -191,7 +225,8 @@
             "d2": "𝑥² − 14𝑥 + 49",
             "d2_expression": "1*x^2-14*x+49",
             "d3": "𝑥² + 49",
-            "d3_expression": "1*x^2+49"
+            "d3_expression": "1*x^2+49",
+            "reponse": "𝑥² + 14𝑥 + 49"
           },
           "progression": 1
         },
@@ -206,7 +241,8 @@
             "d2": "𝑥² + 14𝑥 + 49",
             "d2_expression": "1*x^2+14*x+49",
             "d3": "𝑥² + 49",
-            "d3_expression": "1*x^2+49"
+            "d3_expression": "1*x^2+49",
+            "reponse": "𝑥² − 14𝑥 + 49"
           },
           "progression": 1
         },
@@ -221,7 +257,8 @@
             "d2": "𝑥² − 16𝑥 + 64",
             "d2_expression": "1*x^2-16*x+64",
             "d3": "𝑥² + 64",
-            "d3_expression": "1*x^2+64"
+            "d3_expression": "1*x^2+64",
+            "reponse": "𝑥² + 16𝑥 + 64"
           },
           "progression": 1
         },
@@ -236,7 +273,8 @@
             "d2": "𝑥² + 16𝑥 + 64",
             "d2_expression": "1*x^2+16*x+64",
             "d3": "𝑥² + 64",
-            "d3_expression": "1*x^2+64"
+            "d3_expression": "1*x^2+64",
+            "reponse": "𝑥² − 16𝑥 + 64"
           },
           "progression": 1
         },
@@ -251,7 +289,8 @@
             "d2": "𝑥² − 18𝑥 + 81",
             "d2_expression": "1*x^2-18*x+81",
             "d3": "𝑥² + 81",
-            "d3_expression": "1*x^2+81"
+            "d3_expression": "1*x^2+81",
+            "reponse": "𝑥² + 18𝑥 + 81"
           },
           "progression": 1
         },
@@ -266,7 +305,8 @@
             "d2": "𝑥² + 18𝑥 + 81",
             "d2_expression": "1*x^2+18*x+81",
             "d3": "𝑥² + 81",
-            "d3_expression": "1*x^2+81"
+            "d3_expression": "1*x^2+81",
+            "reponse": "𝑥² − 18𝑥 + 81"
           },
           "progression": 1
         },
@@ -281,7 +321,8 @@
             "d2": "𝑥² − 20𝑥 + 100",
             "d2_expression": "1*x^2-20*x+100",
             "d3": "𝑥² + 100",
-            "d3_expression": "1*x^2+100"
+            "d3_expression": "1*x^2+100",
+            "reponse": "𝑥² + 20𝑥 + 100"
           },
           "progression": 1
         },
@@ -296,7 +337,8 @@
             "d2": "4𝑥² − 4𝑥 + 1",
             "d2_expression": "4*x^2-4*x+1",
             "d3": "4𝑥² + 1",
-            "d3_expression": "4*x^2+1"
+            "d3_expression": "4*x^2+1",
+            "reponse": "4𝑥² + 4𝑥 + 1"
           },
           "progression": 2
         },
@@ -311,7 +353,8 @@
             "d2": "4𝑥² + 4𝑥 + 1",
             "d2_expression": "4*x^2+4*x+1",
             "d3": "4𝑥² + 1",
-            "d3_expression": "4*x^2+1"
+            "d3_expression": "4*x^2+1",
+            "reponse": "4𝑥² − 4𝑥 + 1"
           },
           "progression": 2
         },
@@ -326,7 +369,8 @@
             "d2": "4𝑥² − 8𝑥 + 4",
             "d2_expression": "4*x^2-8*x+4",
             "d3": "4𝑥² + 4",
-            "d3_expression": "4*x^2+4"
+            "d3_expression": "4*x^2+4",
+            "reponse": "4𝑥² + 8𝑥 + 4"
           },
           "progression": 2
         },
@@ -341,7 +385,8 @@
             "d2": "4𝑥² + 8𝑥 + 4",
             "d2_expression": "4*x^2+8*x+4",
             "d3": "4𝑥² + 4",
-            "d3_expression": "4*x^2+4"
+            "d3_expression": "4*x^2+4",
+            "reponse": "4𝑥² − 8𝑥 + 4"
           },
           "progression": 2
         },
@@ -356,7 +401,8 @@
             "d2": "4𝑥² − 12𝑥 + 9",
             "d2_expression": "4*x^2-12*x+9",
             "d3": "4𝑥² + 9",
-            "d3_expression": "4*x^2+9"
+            "d3_expression": "4*x^2+9",
+            "reponse": "4𝑥² + 12𝑥 + 9"
           },
           "progression": 2
         },
@@ -371,7 +417,8 @@
             "d2": "4𝑥² + 12𝑥 + 9",
             "d2_expression": "4*x^2+12*x+9",
             "d3": "4𝑥² + 9",
-            "d3_expression": "4*x^2+9"
+            "d3_expression": "4*x^2+9",
+            "reponse": "4𝑥² − 12𝑥 + 9"
           },
           "progression": 2
         },
@@ -386,7 +433,8 @@
             "d2": "4𝑥² − 16𝑥 + 16",
             "d2_expression": "4*x^2-16*x+16",
             "d3": "4𝑥² + 16",
-            "d3_expression": "4*x^2+16"
+            "d3_expression": "4*x^2+16",
+            "reponse": "4𝑥² + 16𝑥 + 16"
           },
           "progression": 2
         },
@@ -401,7 +449,8 @@
             "d2": "4𝑥² + 16𝑥 + 16",
             "d2_expression": "4*x^2+16*x+16",
             "d3": "4𝑥² + 16",
-            "d3_expression": "4*x^2+16"
+            "d3_expression": "4*x^2+16",
+            "reponse": "4𝑥² − 16𝑥 + 16"
           },
           "progression": 2
         },
@@ -416,7 +465,8 @@
             "d2": "4𝑥² − 20𝑥 + 25",
             "d2_expression": "4*x^2-20*x+25",
             "d3": "4𝑥² + 25",
-            "d3_expression": "4*x^2+25"
+            "d3_expression": "4*x^2+25",
+            "reponse": "4𝑥² + 20𝑥 + 25"
           },
           "progression": 2
         },
@@ -431,7 +481,8 @@
             "d2": "4𝑥² + 20𝑥 + 25",
             "d2_expression": "4*x^2+20*x+25",
             "d3": "4𝑥² + 25",
-            "d3_expression": "4*x^2+25"
+            "d3_expression": "4*x^2+25",
+            "reponse": "4𝑥² − 20𝑥 + 25"
           },
           "progression": 2
         },
@@ -446,7 +497,8 @@
             "d2": "4𝑥² − 24𝑥 + 36",
             "d2_expression": "4*x^2-24*x+36",
             "d3": "4𝑥² + 36",
-            "d3_expression": "4*x^2+36"
+            "d3_expression": "4*x^2+36",
+            "reponse": "4𝑥² + 24𝑥 + 36"
           },
           "progression": 2
         },
@@ -461,7 +513,8 @@
             "d2": "4𝑥² + 24𝑥 + 36",
             "d2_expression": "4*x^2+24*x+36",
             "d3": "4𝑥² + 36",
-            "d3_expression": "4*x^2+36"
+            "d3_expression": "4*x^2+36",
+            "reponse": "4𝑥² − 24𝑥 + 36"
           },
           "progression": 2
         },
@@ -476,7 +529,8 @@
             "d2": "9𝑥² − 6𝑥 + 1",
             "d2_expression": "9*x^2-6*x+1",
             "d3": "9𝑥² + 1",
-            "d3_expression": "9*x^2+1"
+            "d3_expression": "9*x^2+1",
+            "reponse": "9𝑥² + 6𝑥 + 1"
           },
           "progression": 2
         },
@@ -491,7 +545,8 @@
             "d2": "9𝑥² + 6𝑥 + 1",
             "d2_expression": "9*x^2+6*x+1",
             "d3": "9𝑥² + 1",
-            "d3_expression": "9*x^2+1"
+            "d3_expression": "9*x^2+1",
+            "reponse": "9𝑥² − 6𝑥 + 1"
           },
           "progression": 2
         },
@@ -506,7 +561,8 @@
             "d2": "9𝑥² − 12𝑥 + 4",
             "d2_expression": "9*x^2-12*x+4",
             "d3": "9𝑥² + 4",
-            "d3_expression": "9*x^2+4"
+            "d3_expression": "9*x^2+4",
+            "reponse": "9𝑥² + 12𝑥 + 4"
           },
           "progression": 2
         },
@@ -521,7 +577,8 @@
             "d2": "9𝑥² + 12𝑥 + 4",
             "d2_expression": "9*x^2+12*x+4",
             "d3": "9𝑥² + 4",
-            "d3_expression": "9*x^2+4"
+            "d3_expression": "9*x^2+4",
+            "reponse": "9𝑥² − 12𝑥 + 4"
           },
           "progression": 2
         },
@@ -536,7 +593,8 @@
             "d2": "9𝑥² − 18𝑥 + 9",
             "d2_expression": "9*x^2-18*x+9",
             "d3": "9𝑥² + 9",
-            "d3_expression": "9*x^2+9"
+            "d3_expression": "9*x^2+9",
+            "reponse": "9𝑥² + 18𝑥 + 9"
           },
           "progression": 2
         },
@@ -551,7 +609,8 @@
             "d2": "𝑥² − 2𝑥 + 1",
             "d2_expression": "1*x^2-2*x+1",
             "d3": "𝑥² + 2𝑥 + 1",
-            "d3_expression": "1*x^2+2*x+1"
+            "d3_expression": "1*x^2+2*x+1",
+            "reponse": "𝑥² − 1"
           },
           "progression": 3
         },
@@ -566,7 +625,8 @@
             "d2": "𝑥² − 4𝑥 + 4",
             "d2_expression": "1*x^2-4*x+4",
             "d3": "𝑥² + 4𝑥 + 4",
-            "d3_expression": "1*x^2+4*x+4"
+            "d3_expression": "1*x^2+4*x+4",
+            "reponse": "𝑥² − 4"
           },
           "progression": 3
         },
@@ -581,7 +641,8 @@
             "d2": "𝑥² − 6𝑥 + 9",
             "d2_expression": "1*x^2-6*x+9",
             "d3": "𝑥² + 6𝑥 + 9",
-            "d3_expression": "1*x^2+6*x+9"
+            "d3_expression": "1*x^2+6*x+9",
+            "reponse": "𝑥² − 9"
           },
           "progression": 3
         },
@@ -596,7 +657,8 @@
             "d2": "𝑥² − 8𝑥 + 16",
             "d2_expression": "1*x^2-8*x+16",
             "d3": "𝑥² + 8𝑥 + 16",
-            "d3_expression": "1*x^2+8*x+16"
+            "d3_expression": "1*x^2+8*x+16",
+            "reponse": "𝑥² − 16"
           },
           "progression": 3
         },
@@ -611,7 +673,8 @@
             "d2": "𝑥² − 10𝑥 + 25",
             "d2_expression": "1*x^2-10*x+25",
             "d3": "𝑥² + 10𝑥 + 25",
-            "d3_expression": "1*x^2+10*x+25"
+            "d3_expression": "1*x^2+10*x+25",
+            "reponse": "𝑥² − 25"
           },
           "progression": 3
         },
@@ -626,7 +689,8 @@
             "d2": "𝑥² − 12𝑥 + 36",
             "d2_expression": "1*x^2-12*x+36",
             "d3": "𝑥² + 12𝑥 + 36",
-            "d3_expression": "1*x^2+12*x+36"
+            "d3_expression": "1*x^2+12*x+36",
+            "reponse": "𝑥² − 36"
           },
           "progression": 3
         },
@@ -641,7 +705,8 @@
             "d2": "𝑥² − 14𝑥 + 49",
             "d2_expression": "1*x^2-14*x+49",
             "d3": "𝑥² + 14𝑥 + 49",
-            "d3_expression": "1*x^2+14*x+49"
+            "d3_expression": "1*x^2+14*x+49",
+            "reponse": "𝑥² − 49"
           },
           "progression": 3
         },
@@ -656,7 +721,8 @@
             "d2": "4𝑥² − 4𝑥 + 1",
             "d2_expression": "4*x^2-4*x+1",
             "d3": "4𝑥² + 4𝑥 + 1",
-            "d3_expression": "4*x^2+4*x+1"
+            "d3_expression": "4*x^2+4*x+1",
+            "reponse": "4𝑥² − 1"
           },
           "progression": 3
         },
@@ -671,7 +737,8 @@
             "d2": "4𝑥² − 8𝑥 + 4",
             "d2_expression": "4*x^2-8*x+4",
             "d3": "4𝑥² + 8𝑥 + 4",
-            "d3_expression": "4*x^2+8*x+4"
+            "d3_expression": "4*x^2+8*x+4",
+            "reponse": "4𝑥² − 4"
           },
           "progression": 3
         },
@@ -686,7 +753,8 @@
             "d2": "4𝑥² − 12𝑥 + 9",
             "d2_expression": "4*x^2-12*x+9",
             "d3": "4𝑥² + 12𝑥 + 9",
-            "d3_expression": "4*x^2+12*x+9"
+            "d3_expression": "4*x^2+12*x+9",
+            "reponse": "4𝑥² − 9"
           },
           "progression": 3
         },
@@ -701,7 +769,8 @@
             "d2": "4𝑥² − 16𝑥 + 16",
             "d2_expression": "4*x^2-16*x+16",
             "d3": "4𝑥² + 16𝑥 + 16",
-            "d3_expression": "4*x^2+16*x+16"
+            "d3_expression": "4*x^2+16*x+16",
+            "reponse": "4𝑥² − 16"
           },
           "progression": 3
         },
@@ -716,7 +785,8 @@
             "d2": "4𝑥² − 20𝑥 + 25",
             "d2_expression": "4*x^2-20*x+25",
             "d3": "4𝑥² + 20𝑥 + 25",
-            "d3_expression": "4*x^2+20*x+25"
+            "d3_expression": "4*x^2+20*x+25",
+            "reponse": "4𝑥² − 25"
           },
           "progression": 3
         },
@@ -731,7 +801,8 @@
             "d2": "4𝑥² − 24𝑥 + 36",
             "d2_expression": "4*x^2-24*x+36",
             "d3": "4𝑥² + 24𝑥 + 36",
-            "d3_expression": "4*x^2+24*x+36"
+            "d3_expression": "4*x^2+24*x+36",
+            "reponse": "4𝑥² − 36"
           },
           "progression": 3
         },
@@ -746,7 +817,8 @@
             "d2": "4𝑥² − 28𝑥 + 49",
             "d2_expression": "4*x^2-28*x+49",
             "d3": "4𝑥² + 28𝑥 + 49",
-            "d3_expression": "4*x^2+28*x+49"
+            "d3_expression": "4*x^2+28*x+49",
+            "reponse": "4𝑥² − 49"
           },
           "progression": 3
         },
@@ -761,7 +833,8 @@
             "d2": "9𝑥² − 6𝑥 + 1",
             "d2_expression": "9*x^2-6*x+1",
             "d3": "9𝑥² + 6𝑥 + 1",
-            "d3_expression": "9*x^2+6*x+1"
+            "d3_expression": "9*x^2+6*x+1",
+            "reponse": "9𝑥² − 1"
           },
           "progression": 3
         },
@@ -776,23 +849,13 @@
             "d2": "9𝑥² − 12𝑥 + 4",
             "d2_expression": "9*x^2-12*x+4",
             "d3": "9𝑥² + 12𝑥 + 4",
-            "d3_expression": "9*x^2+12*x+4"
+            "d3_expression": "9*x^2+12*x+4",
+            "reponse": "9𝑥² − 4"
           },
           "progression": 3
         }
       ],
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "[[source]]",
-        "affichage": "[[affichage_source]]",
-        "candidats": {
-          "[[bonne]]": "[[bonne_expression]]",
-          "[[d1]]": "[[d1_expression]]",
-          "[[d2]]": "[[d2_expression]]",
-          "[[d3]]": "[[d3_expression]]"
-        }
-      },
+      "reponse": "[[reponse]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -804,7 +867,7 @@
     {
       "id": "IR-003",
       "type": "qcm",
-      "enonce": "Factoriser [[expression]].",
+      "enonce": "Factoriser [[affichage_source]].",
       "variantes": [
         {
           "parametres": {
@@ -817,7 +880,8 @@
             "d2": "(𝑥 − 2)(𝑥 + 2)",
             "d2_expression": "(1*x-2)*(1*x+2)",
             "d3": "𝑥(𝑥 + 4)",
-            "d3_expression": "1*x*(1*x+4)"
+            "d3_expression": "1*x*(1*x+4)",
+            "reponse": "(𝑥 + 2)²"
           },
           "progression": 1
         },
@@ -832,7 +896,8 @@
             "d2": "(𝑥 − 2)(𝑥 + 2)",
             "d2_expression": "(1*x-2)*(1*x+2)",
             "d3": "𝑥(𝑥 − 4)",
-            "d3_expression": "1*x*(1*x-4)"
+            "d3_expression": "1*x*(1*x-4)",
+            "reponse": "(𝑥 − 2)²"
           },
           "progression": 1
         },
@@ -847,7 +912,8 @@
             "d2": "(𝑥 − 3)(𝑥 + 3)",
             "d2_expression": "(1*x-3)*(1*x+3)",
             "d3": "𝑥(𝑥 + 6)",
-            "d3_expression": "1*x*(1*x+6)"
+            "d3_expression": "1*x*(1*x+6)",
+            "reponse": "(𝑥 + 3)²"
           },
           "progression": 1
         },
@@ -862,7 +928,8 @@
             "d2": "(𝑥 − 3)(𝑥 + 3)",
             "d2_expression": "(1*x-3)*(1*x+3)",
             "d3": "𝑥(𝑥 − 6)",
-            "d3_expression": "1*x*(1*x-6)"
+            "d3_expression": "1*x*(1*x-6)",
+            "reponse": "(𝑥 − 3)²"
           },
           "progression": 1
         },
@@ -877,7 +944,8 @@
             "d2": "(𝑥 − 4)(𝑥 + 4)",
             "d2_expression": "(1*x-4)*(1*x+4)",
             "d3": "𝑥(𝑥 + 8)",
-            "d3_expression": "1*x*(1*x+8)"
+            "d3_expression": "1*x*(1*x+8)",
+            "reponse": "(𝑥 + 4)²"
           },
           "progression": 1
         },
@@ -892,7 +960,8 @@
             "d2": "(𝑥 − 4)(𝑥 + 4)",
             "d2_expression": "(1*x-4)*(1*x+4)",
             "d3": "𝑥(𝑥 − 8)",
-            "d3_expression": "1*x*(1*x-8)"
+            "d3_expression": "1*x*(1*x-8)",
+            "reponse": "(𝑥 − 4)²"
           },
           "progression": 1
         },
@@ -907,7 +976,8 @@
             "d2": "(𝑥 − 5)(𝑥 + 5)",
             "d2_expression": "(1*x-5)*(1*x+5)",
             "d3": "𝑥(𝑥 + 10)",
-            "d3_expression": "1*x*(1*x+10)"
+            "d3_expression": "1*x*(1*x+10)",
+            "reponse": "(𝑥 + 5)²"
           },
           "progression": 1
         },
@@ -922,7 +992,8 @@
             "d2": "(𝑥 − 5)(𝑥 + 5)",
             "d2_expression": "(1*x-5)*(1*x+5)",
             "d3": "𝑥(𝑥 − 10)",
-            "d3_expression": "1*x*(1*x-10)"
+            "d3_expression": "1*x*(1*x-10)",
+            "reponse": "(𝑥 − 5)²"
           },
           "progression": 1
         },
@@ -937,7 +1008,8 @@
             "d2": "(𝑥 − 6)(𝑥 + 6)",
             "d2_expression": "(1*x-6)*(1*x+6)",
             "d3": "𝑥(𝑥 + 12)",
-            "d3_expression": "1*x*(1*x+12)"
+            "d3_expression": "1*x*(1*x+12)",
+            "reponse": "(𝑥 + 6)²"
           },
           "progression": 1
         },
@@ -952,7 +1024,8 @@
             "d2": "(𝑥 − 6)(𝑥 + 6)",
             "d2_expression": "(1*x-6)*(1*x+6)",
             "d3": "𝑥(𝑥 − 12)",
-            "d3_expression": "1*x*(1*x-12)"
+            "d3_expression": "1*x*(1*x-12)",
+            "reponse": "(𝑥 − 6)²"
           },
           "progression": 1
         },
@@ -967,7 +1040,8 @@
             "d2": "(𝑥 − 7)(𝑥 + 7)",
             "d2_expression": "(1*x-7)*(1*x+7)",
             "d3": "𝑥(𝑥 + 14)",
-            "d3_expression": "1*x*(1*x+14)"
+            "d3_expression": "1*x*(1*x+14)",
+            "reponse": "(𝑥 + 7)²"
           },
           "progression": 1
         },
@@ -982,7 +1056,8 @@
             "d2": "(𝑥 − 7)(𝑥 + 7)",
             "d2_expression": "(1*x-7)*(1*x+7)",
             "d3": "𝑥(𝑥 − 14)",
-            "d3_expression": "1*x*(1*x-14)"
+            "d3_expression": "1*x*(1*x-14)",
+            "reponse": "(𝑥 − 7)²"
           },
           "progression": 1
         },
@@ -997,7 +1072,8 @@
             "d2": "(𝑥 − 8)(𝑥 + 8)",
             "d2_expression": "(1*x-8)*(1*x+8)",
             "d3": "𝑥(𝑥 + 16)",
-            "d3_expression": "1*x*(1*x+16)"
+            "d3_expression": "1*x*(1*x+16)",
+            "reponse": "(𝑥 + 8)²"
           },
           "progression": 1
         },
@@ -1012,7 +1088,8 @@
             "d2": "(𝑥 − 8)(𝑥 + 8)",
             "d2_expression": "(1*x-8)*(1*x+8)",
             "d3": "𝑥(𝑥 − 16)",
-            "d3_expression": "1*x*(1*x-16)"
+            "d3_expression": "1*x*(1*x-16)",
+            "reponse": "(𝑥 − 8)²"
           },
           "progression": 1
         },
@@ -1027,7 +1104,8 @@
             "d2": "(𝑥 − 9)(𝑥 + 9)",
             "d2_expression": "(1*x-9)*(1*x+9)",
             "d3": "𝑥(𝑥 + 18)",
-            "d3_expression": "1*x*(1*x+18)"
+            "d3_expression": "1*x*(1*x+18)",
+            "reponse": "(𝑥 + 9)²"
           },
           "progression": 1
         },
@@ -1042,7 +1120,8 @@
             "d2": "(𝑥 − 9)(𝑥 + 9)",
             "d2_expression": "(1*x-9)*(1*x+9)",
             "d3": "𝑥(𝑥 − 18)",
-            "d3_expression": "1*x*(1*x-18)"
+            "d3_expression": "1*x*(1*x-18)",
+            "reponse": "(𝑥 − 9)²"
           },
           "progression": 1
         },
@@ -1057,7 +1136,8 @@
             "d2": "(𝑥 − 10)(𝑥 + 10)",
             "d2_expression": "(1*x-10)*(1*x+10)",
             "d3": "𝑥(𝑥 + 20)",
-            "d3_expression": "1*x*(1*x+20)"
+            "d3_expression": "1*x*(1*x+20)",
+            "reponse": "(𝑥 + 10)²"
           },
           "progression": 1
         },
@@ -1072,7 +1152,8 @@
             "d2": "(2𝑥 − 1)(2𝑥 + 1)",
             "d2_expression": "(2*x-1)*(2*x+1)",
             "d3": "2𝑥(2𝑥 + 2)",
-            "d3_expression": "2*x*(2*x+2)"
+            "d3_expression": "2*x*(2*x+2)",
+            "reponse": "(2𝑥 + 1)²"
           },
           "progression": 2
         },
@@ -1087,7 +1168,8 @@
             "d2": "(2𝑥 − 1)(2𝑥 + 1)",
             "d2_expression": "(2*x-1)*(2*x+1)",
             "d3": "2𝑥(2𝑥 − 2)",
-            "d3_expression": "2*x*(2*x-2)"
+            "d3_expression": "2*x*(2*x-2)",
+            "reponse": "(2𝑥 − 1)²"
           },
           "progression": 2
         },
@@ -1102,7 +1184,8 @@
             "d2": "(2𝑥 − 2)(2𝑥 + 2)",
             "d2_expression": "(2*x-2)*(2*x+2)",
             "d3": "2𝑥(2𝑥 + 4)",
-            "d3_expression": "2*x*(2*x+4)"
+            "d3_expression": "2*x*(2*x+4)",
+            "reponse": "(2𝑥 + 2)²"
           },
           "progression": 2
         },
@@ -1117,7 +1200,8 @@
             "d2": "(2𝑥 − 2)(2𝑥 + 2)",
             "d2_expression": "(2*x-2)*(2*x+2)",
             "d3": "2𝑥(2𝑥 − 4)",
-            "d3_expression": "2*x*(2*x-4)"
+            "d3_expression": "2*x*(2*x-4)",
+            "reponse": "(2𝑥 − 2)²"
           },
           "progression": 2
         },
@@ -1132,7 +1216,8 @@
             "d2": "(2𝑥 − 3)(2𝑥 + 3)",
             "d2_expression": "(2*x-3)*(2*x+3)",
             "d3": "2𝑥(2𝑥 + 6)",
-            "d3_expression": "2*x*(2*x+6)"
+            "d3_expression": "2*x*(2*x+6)",
+            "reponse": "(2𝑥 + 3)²"
           },
           "progression": 2
         },
@@ -1147,7 +1232,8 @@
             "d2": "(2𝑥 − 3)(2𝑥 + 3)",
             "d2_expression": "(2*x-3)*(2*x+3)",
             "d3": "2𝑥(2𝑥 − 6)",
-            "d3_expression": "2*x*(2*x-6)"
+            "d3_expression": "2*x*(2*x-6)",
+            "reponse": "(2𝑥 − 3)²"
           },
           "progression": 2
         },
@@ -1162,7 +1248,8 @@
             "d2": "(2𝑥 − 4)(2𝑥 + 4)",
             "d2_expression": "(2*x-4)*(2*x+4)",
             "d3": "2𝑥(2𝑥 + 8)",
-            "d3_expression": "2*x*(2*x+8)"
+            "d3_expression": "2*x*(2*x+8)",
+            "reponse": "(2𝑥 + 4)²"
           },
           "progression": 2
         },
@@ -1177,7 +1264,8 @@
             "d2": "(2𝑥 − 4)(2𝑥 + 4)",
             "d2_expression": "(2*x-4)*(2*x+4)",
             "d3": "2𝑥(2𝑥 − 8)",
-            "d3_expression": "2*x*(2*x-8)"
+            "d3_expression": "2*x*(2*x-8)",
+            "reponse": "(2𝑥 − 4)²"
           },
           "progression": 2
         },
@@ -1192,7 +1280,8 @@
             "d2": "(2𝑥 − 5)(2𝑥 + 5)",
             "d2_expression": "(2*x-5)*(2*x+5)",
             "d3": "2𝑥(2𝑥 + 10)",
-            "d3_expression": "2*x*(2*x+10)"
+            "d3_expression": "2*x*(2*x+10)",
+            "reponse": "(2𝑥 + 5)²"
           },
           "progression": 2
         },
@@ -1207,7 +1296,8 @@
             "d2": "(2𝑥 − 5)(2𝑥 + 5)",
             "d2_expression": "(2*x-5)*(2*x+5)",
             "d3": "2𝑥(2𝑥 − 10)",
-            "d3_expression": "2*x*(2*x-10)"
+            "d3_expression": "2*x*(2*x-10)",
+            "reponse": "(2𝑥 − 5)²"
           },
           "progression": 2
         },
@@ -1222,7 +1312,8 @@
             "d2": "(2𝑥 − 6)(2𝑥 + 6)",
             "d2_expression": "(2*x-6)*(2*x+6)",
             "d3": "2𝑥(2𝑥 + 12)",
-            "d3_expression": "2*x*(2*x+12)"
+            "d3_expression": "2*x*(2*x+12)",
+            "reponse": "(2𝑥 + 6)²"
           },
           "progression": 2
         },
@@ -1237,7 +1328,8 @@
             "d2": "(2𝑥 − 6)(2𝑥 + 6)",
             "d2_expression": "(2*x-6)*(2*x+6)",
             "d3": "2𝑥(2𝑥 − 12)",
-            "d3_expression": "2*x*(2*x-12)"
+            "d3_expression": "2*x*(2*x-12)",
+            "reponse": "(2𝑥 − 6)²"
           },
           "progression": 2
         },
@@ -1252,7 +1344,8 @@
             "d2": "(3𝑥 − 1)(3𝑥 + 1)",
             "d2_expression": "(3*x-1)*(3*x+1)",
             "d3": "3𝑥(3𝑥 + 2)",
-            "d3_expression": "3*x*(3*x+2)"
+            "d3_expression": "3*x*(3*x+2)",
+            "reponse": "(3𝑥 + 1)²"
           },
           "progression": 2
         },
@@ -1267,7 +1360,8 @@
             "d2": "(3𝑥 − 1)(3𝑥 + 1)",
             "d2_expression": "(3*x-1)*(3*x+1)",
             "d3": "3𝑥(3𝑥 − 2)",
-            "d3_expression": "3*x*(3*x-2)"
+            "d3_expression": "3*x*(3*x-2)",
+            "reponse": "(3𝑥 − 1)²"
           },
           "progression": 2
         },
@@ -1282,7 +1376,8 @@
             "d2": "(3𝑥 − 2)(3𝑥 + 2)",
             "d2_expression": "(3*x-2)*(3*x+2)",
             "d3": "3𝑥(3𝑥 + 4)",
-            "d3_expression": "3*x*(3*x+4)"
+            "d3_expression": "3*x*(3*x+4)",
+            "reponse": "(3𝑥 + 2)²"
           },
           "progression": 2
         },
@@ -1297,7 +1392,8 @@
             "d2": "(3𝑥 − 2)(3𝑥 + 2)",
             "d2_expression": "(3*x-2)*(3*x+2)",
             "d3": "3𝑥(3𝑥 − 4)",
-            "d3_expression": "3*x*(3*x-4)"
+            "d3_expression": "3*x*(3*x-4)",
+            "reponse": "(3𝑥 − 2)²"
           },
           "progression": 2
         },
@@ -1312,7 +1408,8 @@
             "d2": "(3𝑥 − 3)(3𝑥 + 3)",
             "d2_expression": "(3*x-3)*(3*x+3)",
             "d3": "3𝑥(3𝑥 + 6)",
-            "d3_expression": "3*x*(3*x+6)"
+            "d3_expression": "3*x*(3*x+6)",
+            "reponse": "(3𝑥 + 3)²"
           },
           "progression": 2
         },
@@ -1327,7 +1424,8 @@
             "d2": "(𝑥 + 1)²",
             "d2_expression": "(1*x+1)^2",
             "d3": "𝑥(𝑥 − 1)",
-            "d3_expression": "1*x*(1*x-1)"
+            "d3_expression": "1*x*(1*x-1)",
+            "reponse": "(𝑥 − 1)(𝑥 + 1)"
           },
           "progression": 3
         },
@@ -1342,7 +1440,8 @@
             "d2": "(𝑥 + 2)²",
             "d2_expression": "(1*x+2)^2",
             "d3": "𝑥(𝑥 − 4)",
-            "d3_expression": "1*x*(1*x-4)"
+            "d3_expression": "1*x*(1*x-4)",
+            "reponse": "(𝑥 − 2)(𝑥 + 2)"
           },
           "progression": 3
         },
@@ -1357,7 +1456,8 @@
             "d2": "(𝑥 + 3)²",
             "d2_expression": "(1*x+3)^2",
             "d3": "𝑥(𝑥 − 9)",
-            "d3_expression": "1*x*(1*x-9)"
+            "d3_expression": "1*x*(1*x-9)",
+            "reponse": "(𝑥 − 3)(𝑥 + 3)"
           },
           "progression": 3
         },
@@ -1372,7 +1472,8 @@
             "d2": "(𝑥 + 4)²",
             "d2_expression": "(1*x+4)^2",
             "d3": "𝑥(𝑥 − 16)",
-            "d3_expression": "1*x*(1*x-16)"
+            "d3_expression": "1*x*(1*x-16)",
+            "reponse": "(𝑥 − 4)(𝑥 + 4)"
           },
           "progression": 3
         },
@@ -1387,7 +1488,8 @@
             "d2": "(𝑥 + 5)²",
             "d2_expression": "(1*x+5)^2",
             "d3": "𝑥(𝑥 − 25)",
-            "d3_expression": "1*x*(1*x-25)"
+            "d3_expression": "1*x*(1*x-25)",
+            "reponse": "(𝑥 − 5)(𝑥 + 5)"
           },
           "progression": 3
         },
@@ -1402,7 +1504,8 @@
             "d2": "(𝑥 + 6)²",
             "d2_expression": "(1*x+6)^2",
             "d3": "𝑥(𝑥 − 36)",
-            "d3_expression": "1*x*(1*x-36)"
+            "d3_expression": "1*x*(1*x-36)",
+            "reponse": "(𝑥 − 6)(𝑥 + 6)"
           },
           "progression": 3
         },
@@ -1417,7 +1520,8 @@
             "d2": "(𝑥 + 7)²",
             "d2_expression": "(1*x+7)^2",
             "d3": "𝑥(𝑥 − 49)",
-            "d3_expression": "1*x*(1*x-49)"
+            "d3_expression": "1*x*(1*x-49)",
+            "reponse": "(𝑥 − 7)(𝑥 + 7)"
           },
           "progression": 3
         },
@@ -1432,7 +1536,8 @@
             "d2": "(2𝑥 + 1)²",
             "d2_expression": "(2*x+1)^2",
             "d3": "2𝑥(2𝑥 − 1)",
-            "d3_expression": "2*x*(2*x-1)"
+            "d3_expression": "2*x*(2*x-1)",
+            "reponse": "(2𝑥 − 1)(2𝑥 + 1)"
           },
           "progression": 3
         },
@@ -1447,7 +1552,8 @@
             "d2": "(2𝑥 + 2)²",
             "d2_expression": "(2*x+2)^2",
             "d3": "2𝑥(2𝑥 − 4)",
-            "d3_expression": "2*x*(2*x-4)"
+            "d3_expression": "2*x*(2*x-4)",
+            "reponse": "(2𝑥 − 2)(2𝑥 + 2)"
           },
           "progression": 3
         },
@@ -1462,7 +1568,8 @@
             "d2": "(2𝑥 + 3)²",
             "d2_expression": "(2*x+3)^2",
             "d3": "2𝑥(2𝑥 − 9)",
-            "d3_expression": "2*x*(2*x-9)"
+            "d3_expression": "2*x*(2*x-9)",
+            "reponse": "(2𝑥 − 3)(2𝑥 + 3)"
           },
           "progression": 3
         },
@@ -1477,7 +1584,8 @@
             "d2": "(2𝑥 + 4)²",
             "d2_expression": "(2*x+4)^2",
             "d3": "2𝑥(2𝑥 − 16)",
-            "d3_expression": "2*x*(2*x-16)"
+            "d3_expression": "2*x*(2*x-16)",
+            "reponse": "(2𝑥 − 4)(2𝑥 + 4)"
           },
           "progression": 3
         },
@@ -1492,7 +1600,8 @@
             "d2": "(2𝑥 + 5)²",
             "d2_expression": "(2*x+5)^2",
             "d3": "2𝑥(2𝑥 − 25)",
-            "d3_expression": "2*x*(2*x-25)"
+            "d3_expression": "2*x*(2*x-25)",
+            "reponse": "(2𝑥 − 5)(2𝑥 + 5)"
           },
           "progression": 3
         },
@@ -1507,7 +1616,8 @@
             "d2": "(2𝑥 + 6)²",
             "d2_expression": "(2*x+6)^2",
             "d3": "2𝑥(2𝑥 − 36)",
-            "d3_expression": "2*x*(2*x-36)"
+            "d3_expression": "2*x*(2*x-36)",
+            "reponse": "(2𝑥 − 6)(2𝑥 + 6)"
           },
           "progression": 3
         },
@@ -1522,7 +1632,8 @@
             "d2": "(2𝑥 + 7)²",
             "d2_expression": "(2*x+7)^2",
             "d3": "2𝑥(2𝑥 − 49)",
-            "d3_expression": "2*x*(2*x-49)"
+            "d3_expression": "2*x*(2*x-49)",
+            "reponse": "(2𝑥 − 7)(2𝑥 + 7)"
           },
           "progression": 3
         },
@@ -1537,7 +1648,8 @@
             "d2": "(3𝑥 + 1)²",
             "d2_expression": "(3*x+1)^2",
             "d3": "3𝑥(3𝑥 − 1)",
-            "d3_expression": "3*x*(3*x-1)"
+            "d3_expression": "3*x*(3*x-1)",
+            "reponse": "(3𝑥 − 1)(3𝑥 + 1)"
           },
           "progression": 3
         },
@@ -1552,23 +1664,13 @@
             "d2": "(3𝑥 + 2)²",
             "d2_expression": "(3*x+2)^2",
             "d3": "3𝑥(3𝑥 − 4)",
-            "d3_expression": "3*x*(3*x-4)"
+            "d3_expression": "3*x*(3*x-4)",
+            "reponse": "(3𝑥 − 2)(3𝑥 + 2)"
           },
           "progression": 3
         }
       ],
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "[[source]]",
-        "affichage": "[[affichage_source]]",
-        "candidats": {
-          "[[bonne]]": "[[bonne_expression]]",
-          "[[d1]]": "[[d1_expression]]",
-          "[[d2]]": "[[d2_expression]]",
-          "[[d3]]": "[[d3_expression]]"
-        }
-      },
+      "reponse": "[[reponse]]",
       "propositions": [
         "[[bonne]]",
         "[[d1]]",
@@ -1580,115 +1682,242 @@
     {
       "id": "IR-004",
       "type": "qcm",
-      "enonce": "Quel est le terme du milieu dans [[expression]] ?",
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "2*(2*x)*3",
-        "affichage": "(2𝑥 + 3)²",
-        "candidats": {
-          "12𝑥": "12*x",
-          "6𝑥": "6*x",
-          "5𝑥": "5*x",
-          "12𝑥²": "12*x^2"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "12𝑥",
-        "6𝑥",
-        "5𝑥",
-        "12𝑥²"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le double produit vaut 2 × 2𝑥 × 3 = 12𝑥."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel est le terme du milieu dans (2𝑥 + 3)² ?",
+            "reponse": "12𝑥",
+            "correction": "Le double produit vaut 2 × 2𝑥 × 3 = 12𝑥.",
+            "p1": "12𝑥",
+            "p2": "6𝑥",
+            "p3": "5𝑥",
+            "p4": "12𝑥²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel est le terme du milieu dans (3𝑥 + 2)² ?",
+            "reponse": "12𝑥",
+            "correction": "Le terme du milieu vaut 2 × 3x × 2 = 12x.",
+            "p1": "12𝑥",
+            "p2": "6𝑥",
+            "p3": "5𝑥",
+            "p4": "12𝑥²"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel est le terme du milieu dans (4𝑥 + 5)² ?",
+            "reponse": "40𝑥",
+            "correction": "Le terme du milieu vaut 2 × 4x × 5 = 40x.",
+            "p1": "40𝑥",
+            "p2": "20𝑥",
+            "p3": "9𝑥",
+            "p4": "40𝑥²"
+          }
+        }
+      ]
     },
     {
       "id": "IR-005",
       "type": "qcm",
-      "enonce": "Quelle égalité développe correctement [[expression]] pour tout 𝑥 réel ?",
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "(x+2)^2",
-        "affichage": "(𝑥 + 2)²",
-        "candidats": {
-          "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4": "x^2+4*x+4",
-          "(𝑥 + 2)² = 𝑥² + 4": "x^2+4",
-          "(𝑥 + 2)² = 𝑥² − 4": "x^2-4",
-          "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4": "x^2+2*x+4"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4",
-        "(𝑥 + 2)² = 𝑥² + 4",
-        "(𝑥 + 2)² = 𝑥² − 4",
-        "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Une identité est vraie pour toute valeur admise. Le double produit 2 × 𝑥 × 2 ne doit pas être oublié."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quelle égalité développe correctement (𝑥 + 2)² pour tout 𝑥 réel ?",
+            "reponse": "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4",
+            "correction": "Une identité est vraie pour toute valeur admise. Le double produit 2 × 𝑥 × 2 ne doit pas être oublié.",
+            "p1": "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4",
+            "p2": "(𝑥 + 2)² = 𝑥² + 4",
+            "p3": "(𝑥 + 2)² = 𝑥² − 4",
+            "p4": "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle égalité développe correctement (𝑥 + 3)² pour tout 𝑥 réel ?",
+            "reponse": "(𝑥 + 3)² = 𝑥² + 6𝑥 + 9",
+            "correction": "(x+3)² = x² + 2×3x + 9 = x² + 6x + 9.",
+            "p1": "(𝑥 + 3)² = 𝑥² + 6𝑥 + 9",
+            "p2": "(𝑥 + 3)² = 𝑥² + 9",
+            "p3": "(𝑥 + 3)² = 𝑥² − 9",
+            "p4": "(𝑥 + 3)² = 𝑥² + 3𝑥 + 9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quelle égalité développe correctement (𝑥 + 5)² pour tout 𝑥 réel ?",
+            "reponse": "(𝑥 + 5)² = 𝑥² + 10𝑥 + 25",
+            "correction": "(x+5)² = x² + 10x + 25.",
+            "p1": "(𝑥 + 5)² = 𝑥² + 10𝑥 + 25",
+            "p2": "(𝑥 + 5)² = 𝑥² + 25",
+            "p3": "(𝑥 + 5)² = 𝑥² − 25",
+            "p4": "(𝑥 + 5)² = 𝑥² + 5𝑥 + 25"
+          }
+        }
+      ]
     },
     {
       "id": "IR-006",
       "type": "qcm",
-      "enonce": "Développer [[expression]].",
-      "reponse": {
-        "mode": "symbolique_fixe",
-        "moteur": "Ryacas",
-        "expression": "(3*x-2)*(3*x+2)",
-        "affichage": "(3𝑥 − 2)(3𝑥 + 2)",
-        "candidats": {
-          "9𝑥² − 4": "9*x^2-4",
-          "9𝑥² + 4": "9*x^2+4",
-          "3𝑥² − 4": "3*x^2-4",
-          "9𝑥² − 12𝑥 + 4": "9*x^2-12*x+4"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "9𝑥² − 4",
-        "9𝑥² + 4",
-        "3𝑥² − 4",
-        "9𝑥² − 12𝑥 + 4"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Produit de deux expressions conjuguées : (a − b)(a + b) = a² − b²."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Développer (3𝑥 − 2)(3𝑥 + 2).",
+            "reponse": "9𝑥² − 4",
+            "correction": "Produit de deux expressions conjuguées : (a − b)(a + b) = a² − b².",
+            "p1": "9𝑥² − 4",
+            "p2": "9𝑥² + 4",
+            "p3": "3𝑥² − 4",
+            "p4": "9𝑥² − 12𝑥 + 4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Développer (4𝑥 − 3)(4𝑥 + 3).",
+            "reponse": "16𝑥² − 9",
+            "correction": "(a-b)(a+b)=a²-b² : (4x)²−3²=16x²−9.",
+            "p1": "16𝑥² − 9",
+            "p2": "16𝑥² + 9",
+            "p3": "4𝑥² − 9",
+            "p4": "16𝑥² − 24𝑥 + 9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Développer (5𝑥 − 2)(5𝑥 + 2).",
+            "reponse": "25𝑥² − 4",
+            "correction": "(5x)²−2²=25x²−4.",
+            "p1": "25𝑥² − 4",
+            "p2": "25𝑥² + 4",
+            "p3": "5𝑥² − 4",
+            "p4": "25𝑥² − 20𝑥 + 4"
+          }
+        }
+      ]
     },
     {
       "id": "IR-007",
       "type": "qcm",
-      "enonce": "Quel calcul donne directement [[source]] ?",
-      "reponse": {
-        "mode": "relation_fixe",
-        "moteur": "Ryacas",
-        "relation": "equivalent",
-        "expression": "99^2",
-        "affichage": "99²",
-        "candidats": {
-          "(100 − 1)² = 10000 − 200 + 1": "10000-200+1",
-          "10000 − 1": "10000-1",
-          "10000 − 100 + 1": "10000-100+1",
-          "10000 − 200 − 1": "10000-200-1"
-        }
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "(100 − 1)² = 10000 − 200 + 1",
-        "10000 − 1",
-        "10000 − 100 + 1",
-        "10000 − 200 − 1"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "L’identité du carré d’une différence permet un calcul mental exact."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel calcul donne directement \\(99^2\\) ?",
+            "reponse": "\\(10000-200+1\\)",
+            "correction": "L’identité du carré d’une différence permet un calcul mental exact.",
+            "p1": "\\(10000-200+1\\)",
+            "p2": "\\(10000-1\\)",
+            "p3": "\\(10000-100+1\\)",
+            "p4": "\\(10000-200-1\\)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel calcul donne directement \\(98^2\\) ?",
+            "reponse": "\\(10000-400+4\\)",
+            "correction": "98²=(100−2)²=10000−400+4.",
+            "p1": "\\(10000-400+4\\)",
+            "p2": "\\(10000-2\\)",
+            "p3": "\\(9604-4\\)",
+            "p4": "\\(98\\times100\\)"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel calcul donne directement \\(97^2\\) ?",
+            "reponse": "\\(10000-600+9\\)",
+            "correction": "97²=(100−3)²=10000−600+9.",
+            "p1": "\\(10000-600+9\\)",
+            "p2": "\\(10000-3\\)",
+            "p3": "\\(9409-9\\)",
+            "p4": "\\(97\\times100\\)"
+          }
+        }
+      ]
     },
     {
       "id": "IR-BOITE",
       "type": "qcm",
-      "enonce": "Compléter le terme manquant : (𝑥 + 4)² = 𝑥² + □𝑥 + 16.",
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "8"
-      },
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "4",
-        "8",
-        "12",
-        "16"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Le terme du milieu est le double produit : 2 × 𝑥 × 4 = 8𝑥. La boîte vaut donc 8."
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Compléter le terme manquant : (𝑥 + 4)² = 𝑥² + □𝑥 + 16.",
+            "reponse": "8",
+            "correction": "Le terme du milieu est le double produit : 2 × 𝑥 × 4 = 8𝑥. La boîte vaut donc 8.",
+            "p1": "4",
+            "p2": "8",
+            "p3": "12",
+            "p4": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Compléter le terme manquant : (𝑥 + 5)² = 𝑥² + □𝑥 + 25.",
+            "reponse": "10",
+            "correction": "Le terme du milieu est 2×5x=10x.",
+            "p1": "10",
+            "p2": "5",
+            "p3": "25",
+            "p4": "20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Compléter le terme manquant : (𝑥 + 7)² = 𝑥² + □𝑥 + 49.",
+            "reponse": "14",
+            "correction": "Le terme du milieu est 2×7x=14x.",
+            "p1": "14",
+            "p2": "7",
+            "p3": "49",
+            "p4": "28"
+          }
+        }
+      ]
     },
     {
       "id": "IR-MOT-A-TROU",
@@ -1703,10 +1932,7 @@
           "facteur": "f _ c _ e _ r"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "identité"
-      },
+      "reponse": "identité",
       "propositions": [
         "identité",
         "équation",
@@ -1729,10 +1955,7 @@
           "associées": "A________S"
         }
       },
-      "reponse": {
-        "mode": "editoriale",
-        "valeur": "conjuguées"
-      },
+      "reponse": "conjuguées",
       "propositions": [
         "conjuguées",
         "opposées",
