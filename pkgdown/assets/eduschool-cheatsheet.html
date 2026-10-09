@@ -20,34 +20,41 @@ code{font-family:Consolas,"Liberation Mono",monospace;font-size:7.5pt;line-heigh
 @media print{html,body{background:white}.page{margin:0;width:auto;min-height:194mm;box-shadow:none}}
 @media screen and (max-width:1000px){.page{width:auto;min-height:0;margin:0;padding:18px}.entete{height:auto;grid-template-columns:40px 1fr 40px}.logo-boussole,.logo-hexa{max-width:35px;max-height:35px}.titre{text-align:left;padding:10px 0}.colonnes,.bulles{grid-template-columns:1fr}.pied{position:static;margin-top:18px}}
 </style></head><body><main class="page">
-<header class="entete"><img class="logo-boussole" src="{{BOUSSOLE}}" alt="Boussole eduschool"><div class="titre"><h1>eduschool · Cheatsheet</h1><p>Quelques commandes pour explorer, comprendre et s'exercer</p></div><img class="logo-hexa" src="{{HEXA}}" alt="Logo eduschool"></header>
+<header class="entete"><img class="logo-boussole" src="{{BOUSSOLE}}" alt="Boussole eduschool"><div class="titre"><h1>eduschool · Cheatsheet</h1><p>Un point de départ pour découvrir, comprendre et s’exercer</p></div><img class="logo-hexa" src="{{HEXA}}" alt="Logo eduschool"></header>
 <div class="colonnes">
 <div class="colonne">
-<section class="bloc"><h2>1 · Découvrir eduschool</h2><p>Commencer ici : comprendre le projet et retrouver toutes les portes d’entrée.</p><pre><code>library(eduschool)
+<section class="bloc"><h2>1 · Découvrir eduschool</h2><p>Pour faire connaissance avec le projet et garder cette boussole à portée de main.</p><pre><code>library(eduschool)
 eduschool()
 produire_cheatsheet()</code></pre></section>
-<section class="bloc"><h2>2 · Explorer le système scolaire</h2><p>Consulter les parcours et référentiels historiques : vérifier les textes officiels actuels.</p><pre><code>voies()
+<section class="bloc"><h2>2 · Explorer le système scolaire</h2><p>Repérer les parcours et les programmes. Pour une décision scolaire, consulter les textes officiels en vigueur.</p><pre><code>voies()
 series()
 maths_programmes()
 maths_programmes("6E")
 maths_parcours()
-diagramme_programme("6E") # vue synthétique par défaut
-diagramme_programme("4E", detail = "officiel")
-diagramme_programme("4E", detail = "complet")</code></pre></section>
+# Vue synthétique par défaut
+diagramme_programme("6E")
+diagramme_programme(
+  "4E",
+  detail = "officiel"
+)
+diagramme_programme(
+  "4E",
+  detail = "complet"
+)</code></pre></section>
 </div>
 <div class="colonne">
-<section class="bloc"><h2>3 · Trouver ses mathématiques</h2><p>Lister les notions et familles, puis examiner leurs questions.</p><pre><code>notions()
+<section class="bloc"><h2>3 · Trouver ses mathématiques</h2><p>Choisir un sujet, parcourir les questions disponibles et en afficher une.</p><pre><code>notions()
 questions("fractions")
 questions("fractions_addition")
 question("fractions_addition")</code></pre></section>
-<section class="bloc"><h2>4 · Produire des maths</h2><p>Choisir une notion, un support et un format. Les supports : decouverte, synthese, quiz ou tous.</p><pre><code>produire(
+<section class="bloc"><h2>4 · Créer une fiche ou un quiz</h2><p>Choisir un sujet et créer un quiz à ouvrir dans son navigateur.</p><pre><code>produire(
   notion = "fractions_addition",
   support = "quiz",
   format = "html"
 )</code></pre></section>
 </div>
 <div class="colonne">
-<section class="bloc"><h2>5 · Varier les supports</h2><p>Créer une fiche PDF, ou tous les supports disponibles.</p><pre><code>produire(
+<section class="bloc"><h2>5 · Découvrir et réviser</h2><p>Préparer une synthèse à imprimer, ou retrouver tous les supports d’une famille.</p><pre><code>produire(
   notion = "fractions_addition",
   support = "synthese",
   format = "pdf",
@@ -58,13 +65,16 @@ produire(
   support = "tous",
   format = "html"
 )</code></pre></section>
-<section class="bloc"><h2>6 · Figures et outils</h2><p>Visualiser, illustrer, s’entraîner.</p><pre><code>graphique("cercle_trigonometrique", angle = 45)
+<section class="bloc"><h2>6 · Figures et outils</h2><p>Une figure pour voir autrement ; une table pour s’entraîner.</p><pre><code>graphique(
+  "cercle_trigonometrique",
+  angle = 45
+)
 table_multiplication(9)</code></pre></section>
 </div>
 </div>
 <div class="bulles">
-<section class="bloc manifeste"><h2>Toujours ouvrir des portes</h2><p>Une notion peut mener vers une autre, sans obliger à franchir la porte. Le savoir reste libre, gratuit et ouvert.</p></section>
-<section class="bloc contribuer"><h2>Contribuer</h2><p>Améliorer une explication, proposer un exercice, corriger une source : le savoir se partage.</p></section>
+<section class="bloc manifeste"><h2>Toujours ouvrir des portes</h2><p>Comprendre une notion, c’est aussi découvrir ses liens avec d’autres. Chacun avance à son rythme ; le savoir reste libre, gratuit et ouvert.</p></section>
+<section class="bloc contribuer"><h2>Contribuer</h2><p>Une explication plus claire, une question à proposer, une source à corriger ? Le savoir grandit quand on le partage.</p></section>
 </div>
 <footer class="pied"><span><strong>eduschool</strong> · libre · gratuit · ouvert · tente d’être <span class="transparent-progressif">transparent</span></span><span>gilles13.github.io/eduschool</span></footer>
 </main></body></html>
