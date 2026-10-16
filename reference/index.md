@@ -28,6 +28,8 @@
   : Lire les questions d'une notion pilote
 - [`series()`](https://gilles13.github.io/eduschool/reference/series.md)
   : Series du lycee (referentiel historique)
+- [`suivi_du_taf_restant()`](https://gilles13.github.io/eduschool/reference/suivi_du_taf_restant.md)
+  : Afficher le travail restant
 - [`table_multiplication()`](https://gilles13.github.io/eduschool/reference/table_multiplication.md)
   : Tables de multiplication
 - [`vocabulaire()`](https://gilles13.github.io/eduschool/reference/vocabulaire.md)

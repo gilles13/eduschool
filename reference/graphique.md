@@ -5,7 +5,7 @@ Dessiner un graphique pedagogique reutilisable
 ## Usage
 
 ``` r
-graphique(id, ...)
+graphique(id, ..., main_levee = FALSE)
 ```
 
 ## Arguments
@@ -17,3 +17,8 @@ graphique(id, ...)
 - ...:
 
   Parametres de la fonction graphique.
+
+- main_levee:
+
+  Rendre les geometries compatibles avec un trait esquisse (ggplot2
+  uniquement).
