@@ -95,6 +95,7 @@ questions = function(notion, niveau = "") {
             grepl("^[a-z][a-z0-9_]*$", notion))
   membres = .notions_famille(notion, niveau = niveau)
   if (length(membres)) {
+    membres = membres[file.exists(file.path(.chemin_edu("notions"), membres, "questions.json"))]
     banques = lapply(membres, questions)
     return(list(notion_id = notion,
       questions = unlist(lapply(banques, `[[`, "questions"), recursive = FALSE)))
@@ -260,7 +261,8 @@ illustrer_question = function(q) {
   if (any(vapply(illustration, function(x) is.character(x) &&
                  length(x) == 1L && startsWith(x, "{"), logical(1))))
     stop("Illustration non figee : ", q$id)
-  graphique(illustration$id, illustration = illustration)
+  graphique(illustration$id, illustration = illustration,
+           main_levee = isTRUE(illustration$main_levee))
 }
 
 #' Dessiner un graphique pedagogique reutilisable
@@ -268,8 +270,9 @@ illustrer_question = function(q) {
 #' @importFrom ggsketch geom_sketch_segment
 #' @param id Identifiant unique du graphique.
 #' @param ... Parametres de la fonction graphique.
+#' @param main_levee Rendre les geometries compatibles avec un trait esquisse (ggplot2 uniquement).
 #' @export
-graphique = function(id, ...) {
+graphique = function(id, ..., main_levee = FALSE) {
   stopifnot(length(id) == 1L, is.character(id),
             grepl("^[a-z][A-Za-z0-9_]*$", id))
   fichier = .chemin_edu("graphiques", paste0(id, ".R"))
@@ -280,7 +283,40 @@ graphique = function(id, ...) {
   fonction = paste0("graphique_", id)
   if (!exists(fonction, envir = environnement, inherits = FALSE))
     stop("Fonction graphique absente : ", fonction)
-  environnement[[fonction]](...)
+  figure = environnement[[fonction]](...)
+  if (!is.logical(main_levee) || length(main_levee) != 1L || is.na(main_levee))
+    stop("main_levee doit etre TRUE ou FALSE")
+  if (!main_levee) return(figure)
+  if (!inherits(figure, "ggplot"))
+    stop("Mode main_levee non pris en charge pour ce graphique")
+  .esquisser_figure(figure)
+}
+
+.esquisser_figure = function(figure) {
+  # Only geometry layers are roughened; text and labels stay readable.
+  correspondances = list(
+    GeomSegment = ggsketch::GeomSketchSegment,
+    GeomPath = ggsketch::GeomSketchPath,
+    GeomLine = ggsketch::GeomSketchLine,
+    GeomPolygon = ggsketch::GeomSketchPolygon,
+    GeomRect = ggsketch::GeomSketchRect,
+    GeomCurve = ggsketch::GeomSketchCurve,
+    GeomPoint = ggsketch::GeomSketchPoint)
+  for (i in seq_along(figure$layers)) {
+    couche = figure$layers[[i]]
+    classe = class(couche$geom)[[1L]]
+    remplacement = correspondances[[classe]]
+    if (is.null(remplacement)) next
+    couche$geom = remplacement
+    parametres = list(roughness = 1.5, seed = 2110L + i)
+    if (classe != "GeomPoint")
+      parametres = c(parametres, list(bowing = 0.5, n_passes = 2L))
+    if (classe %in% c("GeomPolygon", "GeomRect"))
+      parametres$fill_style = "solid"
+    couche$geom_params = utils::modifyList(couche$geom_params, parametres)
+    figure$layers[[i]] = couche
+  }
+  figure
 }
 
 # Convert simple editorial markers into ordinary Markdown images.
@@ -308,12 +344,21 @@ graphique = function(id, ...) {
     id = elements[[1L]]
     arguments = list()
     for (element in elements[-1L]) {
-      if (!grepl("^[a-z][A-Za-z0-9_]*=-?[0-9]+([.][0-9]+)?$", element))
+      if (!grepl("^[a-z][A-Za-z0-9_]*=[A-Za-z0-9.-]+$", element))
         stop("Parametre graphique invalide : ", element)
       paire = strsplit(element, "=", fixed = TRUE)[[1L]]
       if (paire[[1L]] %in% names(arguments))
         stop("Parametre graphique repete : ", paire[[1L]])
-      arguments[[paire[[1L]]]] = as.numeric(paire[[2L]])
+      valeur = paire[[2L]]
+      if (valeur %in% c("TRUE", "FALSE")) {
+        arguments[[paire[[1L]]]] = identical(valeur, "TRUE")
+      } else if (grepl("^-?[0-9]+([.][0-9]+)?$", valeur)) {
+        arguments[[paire[[1L]]]] = as.numeric(valeur)
+      } else if (grepl("^[A-Z]$", valeur)) {
+        arguments[[paire[[1L]]]] = valeur
+      } else {
+        stop("Parametre graphique invalide : ", element)
+      }
     }
     figure = do.call(graphique, c(list(id = id), arguments))
     chemin = tempfile(pattern = paste0("eduschool-", id, "-"), fileext = ".png")

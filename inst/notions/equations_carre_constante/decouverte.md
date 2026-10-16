@@ -1,16 +1,16 @@
-# Découvrir : Équation 𝑥² = a
+# Découvrir : Équation $x^2 = a$
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Résoudre 𝑥² = a consiste à chercher les nombres réels dont le carré vaut a.
+Résoudre $x^2 = a$ consiste à chercher les nombres réels dont le carré vaut a.
 :::
 
 Cette notion aide à reconnaître les objets en jeu avant d’appliquer une technique de calcul.
 
 ## Première idée
 
-𝑥² = 25 a deux solutions : −5 et 5.
+$x^2 = 25$ a deux solutions : −5 et 5.
 
 ## Comprendre la méthode
 

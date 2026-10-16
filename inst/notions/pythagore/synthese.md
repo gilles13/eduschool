@@ -2,7 +2,7 @@
 
 **Condition :** le triangle est rectangle.
 
-<!-- graphique: triangle_rectangle_A -->
+<!-- graphique: triangle_rectangle angle=A -->
 
 **Propriété :** le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés.
 

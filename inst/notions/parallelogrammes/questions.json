@@ -13,7 +13,8 @@
         "On ne peut rien déduire"
       ],
       "illustration": {
-        "id": "parallelogramme_angle_droit"
+        "id": "parallelogramme",
+        "codage": "angle_droit"
       },
       "correction": "Un parallélogramme qui possède un angle droit est un rectangle. Le dessin n'a pas besoin de ressembler à un rectangle."
     },
@@ -29,7 +30,8 @@
         "On ne peut rien déduire"
       ],
       "illustration": {
-        "id": "parallelogramme_cotes_egaux"
+        "id": "parallelogramme",
+        "codage": "cotes_egaux"
       },
       "correction": "Un parallélogramme dont les quatre côtés ont la même longueur est un losange."
     },
@@ -45,7 +47,8 @@
         "Le dessin est trop irrégulier pour conclure"
       ],
       "illustration": {
-        "id": "parallelogramme_carre_code"
+        "id": "parallelogramme",
+        "codage": "carre"
       },
       "correction": "L'angle droit permet de conclure rectangle ; les quatre côtés égaux permettent de conclure losange. ABCD est donc à la fois rectangle et losange : c'est un carré."
     },
@@ -61,7 +64,10 @@
         "Parce qu'il suffit qu'une figure ressemble à peu près à un carré"
       ],
       "illustration": {
-        "id": "parallelogramme_carre_main_levee"
+        "id": "parallelogramme",
+        "codage": "carre",
+        "approximation": true,
+        "main_levee": true
       },
       "correction": "Exactement : le dessin aide à se repérer, mais la démonstration s'appuie sur les données, les codages et les propriétés."
     },
@@ -87,7 +93,8 @@
       ],
       "correction": "Un losange possède quatre côtés de même longueur. Un carré est un losange particulier.",
       "illustration": {
-        "id": "parallelogramme_cotes_egaux"
+        "id": "parallelogramme",
+        "codage": "cotes_egaux"
       }
     },
     {
@@ -113,7 +120,8 @@
       ],
       "correction": "Un parallélogramme avec un angle droit est un rectangle ; il n’est pas nécessairement un carré.",
       "illustration": {
-        "id": "parallelogramme_angle_droit"
+        "id": "parallelogramme",
+        "codage": "angle_droit"
       }
     }
   ]

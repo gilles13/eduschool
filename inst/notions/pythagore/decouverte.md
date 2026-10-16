@@ -2,7 +2,7 @@
 
 Un triangle rectangle possède un angle droit. Le **codage** d’un angle droit apporte une information mathématique ; l’apparence d’un dessin à main levée ne suffit pas.
 
-<!-- graphique: triangle_rectangle_A -->
+<!-- graphique: triangle_rectangle angle=A -->
 
 Dans un triangle ABC rectangle en A, le côté opposé à l’angle droit est $BC$ : c’est l’hypoténuse.
 

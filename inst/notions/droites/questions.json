@@ -13,7 +13,8 @@
         "On ne peut rien affirmer"
       ],
       "illustration": {
-        "id": "droites_perpendiculaires"
+        "id": "droites",
+        "configuration": "perpendiculaires"
       },
       "correction": "Le petit carré code un angle droit : les droites (d) et (Δ) sont donc perpendiculaires."
     },
@@ -29,7 +30,8 @@
         "Les droites (d) et (d') ont la même longueur"
       ],
       "illustration": {
-        "id": "droites_paralleles"
+        "id": "droites",
+        "configuration": "paralleles"
       },
       "correction": "La notation (d) // (d') indique que les deux droites sont parallèles."
     },
@@ -45,7 +47,9 @@
         "Le fait qu'elles se coupent"
       ],
       "illustration": {
-        "id": "droites_presque_perpendiculaires"
+        "id": "droites",
+        "configuration": "presque_perpendiculaires",
+        "main_levee": true
       },
       "correction": "C'est le petit carré de l'angle droit qui permet d'affirmer la perpendicularité."
     },
@@ -61,7 +65,8 @@
         "On ne peut rien déduire"
       ],
       "illustration": {
-        "id": "droites_perpendiculaires_meme_droite"
+        "id": "droites",
+        "configuration": "perpendiculaires_meme_droite"
       },
       "correction": "[[Je vois]]\nLes droites (d) et (d') sont perpendiculaires à (Δ).\n[[Je sais]]\nDeux droites perpendiculaires à une même droite sont parallèles entre elles.\n[[J'en déduis]]\n(d) // (d')"
     },
@@ -87,7 +92,8 @@
       ],
       "correction": "Des droites perpendiculaires forment un angle droit ; être simplement sécantes ne suffit pas.",
       "illustration": {
-        "id": "droites_perpendiculaires"
+        "id": "droites",
+        "configuration": "perpendiculaires"
       }
     },
     {
@@ -113,7 +119,8 @@
       ],
       "correction": "Deux droites parallèles distinctes d’un même plan ne se rencontrent pas.",
       "illustration": {
-        "id": "droites_paralleles"
+        "id": "droites",
+        "configuration": "paralleles"
       }
     }
   ]

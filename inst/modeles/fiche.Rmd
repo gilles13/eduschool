@@ -21,6 +21,7 @@ if (knitr::is_html_output()) {
   cat('<style>\n',
       '.main-container .edu-definition { max-width:42em; margin:1.4em auto; padding:.8em 1.1em; text-align:center; background:#f4f8f5; border:1px solid #34483b; border-radius:.45em; }\n',
       '.main-container .edu-definition p { margin:.25em 0; }\n',
+      '.main-container img { max-height:260px; object-fit:contain; }\n',
       '</style>\n', sep = '')
 }
 if (knitr::is_html_output() && identical(params$support, "decouverte")) {

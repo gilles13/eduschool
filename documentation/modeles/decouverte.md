@@ -22,8 +22,12 @@ Montrer comment contrôler le résultat ou le raisonnement lorsque cela a du sen
 
 ## À essayer
 
-Proposer, si utile, une situation courte permettant de réutiliser immédiatement l'idée découverte.
+Proposer les activités vérifiables sous la forme **À essayer N — titre :**, avec une numérotation continue.
 
 ## À retenir
 
 Résumer en quelques phrases l'idée essentielle de la découverte.
+
+## Pour vérifier tes découvertes
+
+Donner les corrections de chaque **À essayer N**, dans le même ordre, sous la forme **N. titre**. Expliquer le raisonnement.

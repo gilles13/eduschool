@@ -1,0 +1,253 @@
+rubrique_id;programme_id;theme_item_id;niveau;rubrique;texte_officiel_extrait;page_debut;page_fin;source_id;controle_formules
+ITM_MATH_SCI_1G_2026_01_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_01;1G;TEXTE_OFFICIEL;"Cette partie du programme vise à construire et à entretenir des habiletés dans les domaines du calcul, de l’information chiffrée
+et des représentations graphiques. Il s’agit d'automatiser le recours à des connaissances, des procédures, des méthodes et des
+stratégies, afin de permettre aux élèves de les mobiliser plus rapidement et de favoriser leur réussite dans l’apprentissage des
+mathématiques. Leur acquisition développe également l’esprit critique des élèves par une meilleure maitrise des chiffres et du
+calcul et leur permet une meilleure lecture et compréhension des représentations de données dont les graphiques.
+Les capacités attendues énoncées ci-dessous n’ont pas vocation à faire l’objet d’un chapitre d’enseignement spécifique car les
+notions qui les sous-tendent ont été travaillées dans les classes antérieures et doivent être entretenues et consolidées au cours
+de l’année. Cependant les nouvelles notions du programme peuvent donner lieu également à un travail d’automatisation tout
+le long de l’année Elles relèvent d’un entrainement régulier privilégiant l'activité mentale. Les différents thèmes proposés
+doivent être travaillés tout au long de l’année et la présentation par blocs thématiques ne signifie pas, bien au contraire, qu’il
+faille les aborder les uns après les autres. Les modalités de mise en œuvre peuvent être variées, prendre appui sur différents
+supports et ne pas se limiter au format de QCM. Les entrainements peuvent se faire à l’oral, à l’écrit, individuellement ou en
+groupe, utilisant éventuellement des outils numériques de vidéoprojection, de recensement instantané des réponses, etc.
+À la liste ci-dessous s’ajoute la liste des automatismes travaillés en classe de seconde, qui doivent être entretenus en classe de
+première.
+Évolutions et variations
+− Appliquer un taux d’évolution pour calculer une valeur finale ou initiale.
+− Calculer un taux d’évolution, l’exprimer en pourcentage.
+− Calculer le taux d’évolution équivalent à plusieurs évolutions successives.
+− Calculer un taux d’évolution réciproque.
+Calcul numérique et algébrique
+− Déterminer les solutions d’une équation produit nul.
+− Déterminer le signe d’une expression du premier degré, d’une expression factorisée du second degré.
+− Développer, factoriser, réduire une expression algébrique simple.
+Fonctions et représentations
+− Résoudre graphiquement une équation, une inéquation du type : ƒ (𝑥) = k, ƒ (𝑥) < k, etc.
+− Déterminer graphiquement le signe d’une fonction ou son tableau de variations.
+− Tracer une droite donnée par son équation réduite ou par un point et son coefficient directeur.
+− Lire graphiquement l’équation réduite d’une droite.
+− Déterminer le coefficient directeur d’une droite à partir des coordonnées de deux de ses points.
+Statistiques
+− Lire un graphique, un histogramme, un diagramme en barres ou circulaire, un diagramme en boite ou toute autre
+représentation (repérer l’origine du repère, les unités de graduations ou les échelles, etc.).
+− Passer du graphique aux données et vice-versa.
+− Calculer et interpréter des indicateurs statistiques pour une série statistique.
+Probabilités
+− Calculer des probabilités conditionnelles lorsque les évènements sont présentés sous forme de tableau croisé d’effectifs
+ou d’arbres pondérés.
+− Distinguer P(A ∩ B), PA (B), PB (A).";3;4;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_02_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_02;1G;TEXTE_OFFICIEL;"L'analyse de l'information chiffrée portant sur des problématiques d'actualité (développement durable, changement
+climatique, biodiversité, économie, démographie, santé publique, etc.) permet d'éclairer les élèves sur certains débats actuels
+et de développer le sens critique.
+En prolongement des programmes des classes antérieures dans lesquels ont été introduits des indicateurs utiles pour l'analyse
+d'un unique caractère statistique, cette partie aborde l'analyse statistique bivariée. Il s'agit d'une première sensibilisation aux
+bases de données.
+Certaines données étudiées peuvent être issues de ressources d'autres enseignements dispensés au lycée (enseignement
+scientifique, enseignement moral et civique, enseignement de spécialité). Les possibilités offertes par l'informatique
+permettent le stockage et la manipulation de données massives. Certaines de ces données sont disponibles sur des sites
+institutionnels comme ceux de l'Institut national de la statistique et des études économiques (Insee), de l'Institut national
+d'études démographiques (Ined) ou dans le catalogue data.gouv des données de l'administration. D'autres figurent dans des
+rapports publics comme ceux du Groupe d'experts intergouvernemental sur l'évolution du climat (Giec).
+L'analyse bivariée cherche à étudier les éventuelles relations entre deux caractères. Elle doit s'illustrer en utilisant des
+représentations de données réelles, qui peuvent aussi s'obtenir par le traitement à l'aide d'un tableur de fichiers d'une taille
+raisonnable.
+Situations et problèmes
+Contenus mathématiques
+Analyse croisée de couples de caractères (exemples : genre, âge,
+revenus, indicateurs de santé, indicateurs financiers,
+température, niveau des océans, proportion de gaz à effet de
+serre, etc., avec regroupement par classes pour les caractères
+quantitatifs).
+Les données peuvent être présentées sous la forme d'un tableau
+ou d'un diagramme obtenu à partir d'un fichier de données en
+utilisant un tableur.
+Les données peuvent être issues des domaines de la santé, de
+l’économie, de la gestion, des sciences sociales, etc. ; elles
+peuvent être chronologiques (par exemple l’évolution de la
+population d’une ville en fonction du temps).
+Analyse statistique de deux caractères qualitatifs.
+Tableau croisé d'effectifs.
+Exemples d'analyse du croisement de deux caractères par
+représentation graphique (diagrammes en barres, diagrammes
+circulaires).
+Analyse statistique de deux caractères quantitatifs.
+Représentation par un nuage de points.
+Ajustement affine, point moyen.
+Interpolation, extrapolation.";4;4;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_02_CAPACITES_ATTENDUES_02;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_02;1G;CAPACITÉS ATTENDUES;"− Utiliser un tableur pour représenter des données sous forme de tableau ou de diagramme.
+− Déterminer et utiliser un ajustement affine pour interpoler ou extrapoler des valeurs inconnues.
+− Savoir calculer les coordonnées d’un point moyen.
+Plusieurs ajustements sont proposés (au jugé, droite de Mayer, moindres carrés) mais aucune connaissance théorique n’est
+attendue.";4;4;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_03_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_03;1G;TEXTE_OFFICIEL;"La notion de probabilité conditionnelle permet d'introduire de manière intuitive celle de l'indépendance : deux évènements A
+et B sont dits indépendants si la probabilité conditionnelle de A sachant B est égale à la probabilité de A (sous réserve de la
+non-nullité de celle de B).
+Grâce à des outils numériques, on simule une succession de tirages aléatoires indépendants (par exemple, des tirages avec
+remise dans une urne) afin de poursuivre l'approche vulgarisée de la loi des grands nombres initiée en classe de seconde.
+Comme en classe de seconde, on insiste sur le fait qu’une loi de probabilité est une hypothèse du modèle choisi et ne se
+démontre pas. Le choix du modèle peut résulter d’hypothèses implicites d’équiprobabilité ou d’une application d’une version
+vulgarisée de la loi des grands nombres. Dans tous les cas, on distingue nettement le modèle probabiliste abstrait et la situation
+réelle.
+La possibilité de présenter des problèmes simples relatifs à des jeux de hasard datant du XVIIIe siècle confère à cette partie
+une dimension historique.
+Situations et problèmes
+Contenus mathématiques
+Sciences de la vie
+Tests médicaux : faux positifs et faux négatifs.
+Théorie des jeux
+Modélisation ou simulation de jeux simples : pile ou face, jeu de
+« croix ou pile » de d'Alembert, jeu de pierre-feuille-ciseaux, jeu
+du lièvre et de la tortue, jeu du « passe-dix » (problème du
+grand-duc de Toscane).
+Stratégie gagnante au jeu de Monty Hall.
+Histoire des mathématiques
+Traduction en langage des probabilités de la correspondance
+épistolaire entre Fermat et Pascal à propos du problème des
+partis.
+Probabilité conditionnelle.
+Indépendance de deux évènements.
+Probabilité associée à la répétition d’épreuves aléatoires
+identiques et indépendantes de Bernoulli.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_03_CAPACITES_ATTENDUES_02;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_03;1G;CAPACITÉS ATTENDUES;"− Calculer des probabilités conditionnelles à l'aide d'un tableau croisé d'effectifs ou d'un arbre pondéré.
+− Représenter par un arbre de probabilités la répétition de n épreuves aléatoires identiques et indépendantes de Bernoulli
+avec n ⩽ 4 afin de calculer des probabilités.
+− Savoir utiliser ou justifier l’indépendance de deux évènements.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_04_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_04;1G;TEXTE_OFFICIEL;"Cette partie est consacrée à des notions mathématiques permettant de modéliser des phénomènes en évolution : les suites,
+qui modélisent des grandeurs dont l'évolution est discrète, et les fonctions, qui modélisent des grandeurs dont l'évolution est
+continue.
+L'objectif est d'appréhender plusieurs modèles classiques d'évolution, la variation linéaire, la modélisation quadratique et la
+variation exponentielle, sans exclure la présentation d'autres modèles.
+La compréhension et l'interrogation critique des modèles étudiés permettent de développer des capacités de raisonnement et
+d'argumentation. Leur mise en pratique, tant dans des situations internes qu'externes aux mathématiques, permet de consolider
+des habiletés en matière de calcul, d'analyse et de production de graphiques ainsi que dans l'utilisation d'outils numériques.
+Les deux modes de génération d'une suite, par récurrence et explicite, peuvent être introduits lors de la résolution de
+problèmes. On peut, par exemple, prendre appui sur des motifs géométriques ou sur un contexte historique, comme le
+problème de remboursement d'une dette posé par Euler dans Introduction à l'analyse infinitésimale.
+Lors des premières modélisations d'une grandeur discrète par une suite, on veille à utiliser la notation fonctionnelle 𝑢(𝑛),
+préalablement à la notation indicielle 𝑢𝑛 .";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_05_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_05;1G;TEXTE_OFFICIEL;"Les suites arithmétiques et les fonctions affines modélisent des grandeurs discrètes ou continues dont le taux d'accroissement
+est constant. Les fonctions affines, déjà étudiées en classe de seconde, peuvent faire l'objet d'un travail succinct. Les
+professeurs peuvent mettre en parallèle le sens de variation des fonctions affines et celui des suites arithmétiques.
+Situations et problèmes
+Contenus mathématiques
+Éducation économique, financière et budgétaire
+Placement à intérêts simples, croissance d'un poste budgétaire.
+Dénombrement.
+Motifs géométriques évolutifs en forme de T ou de croix, carré
+bordé.
+Suites arithmétiques
+Définition par la relation de récurrence.
+Explicitation du terme de rang 𝑛.
+Sens de variation.
+Représentation graphique.
+Physique
+Correspondance entre degrés Celsius et Fahrenheit.
+Fonctions affines
+L'objectif est de remobiliser les connaissances abordées en
+classe de seconde : représentation graphique, sens de
+Économie
+Modélisation de l'offre et de la demande par des fonctions
+affines, point d'équilibre.
+Enseignement moral et civique
+Modélisation du barème de l'impôt sur le revenu par une
+fonction affine par morceaux (taux marginal, taux moyen).
+Sciences de la Terre
+Modèle linéaire de l'évolution du niveau moyen des océans.
+variation, lien entre le taux d'accroissement et le coefficient
+directeur de la droite représentative.";5;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_05_CAPACITES_ATTENDUES_02;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_05;1G;CAPACITÉS ATTENDUES;"− Reconnaitre un phénomène discret ou continu de croissance linéaire et savoir le modéliser.
+− Calculer un terme de rang donné d'une suite arithmétique définie par une relation fonctionnelle ou une relation de
+récurrence.
+− Réaliser et exploiter la représentation graphique des termes d'une suite arithmétique ou d'une fonction affine.
+− Résoudre un problème de seuil dans le cas d'une croissance linéaire.";6;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_06_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_06;1G;TEXTE_OFFICIEL;"Les fonctions polynômes de degré 2 permettent de modéliser des dépendances non linéaires simples. Elles présentent l’intérêt
+d’offrir des exemples de non monotonie, de maximum ou de minimum.
+Situations et problèmes
+Contenus mathématiques
+Physique
+Mouvement parabolique
+Architecture-art
+Forme d’un pont suspendu, filin qui soutient le tablier d’un pont,
+arche d’un viaduc
+Économie
+Évolution d’un chiffre d’affaires en fonction du prix unitaire
+Sciences de la vie
+Croissance puis décroissance d’une population, sur un intervalle
+de temps restreint
+Enseignement moral et civique
+Modèle simple de fiscalité
+Fonctions polynômes de degré 2 :
+- Éléments caractéristiques de la courbe : allure de la courbe,
+axe de symétrie, coordonnées du sommet en lien avec la
+symétrie, tableau de variation de la fonction.
+- Racines et signe d’un polynôme de degré 2 donné sous forme
+factorisée (le calcul des racines à l’aide du discriminant ne
+figure pas au programme).";6;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_06_CAPACITES_ATTENDUES_02;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_06;1G;CAPACITÉS ATTENDUES;"− Associer une parabole à une expression algébrique de degré 2, pour les fonctions de la forme : 𝑥 ↦ a𝑥², 𝑥 ↦ a𝑥² + c,
+𝑥 ↦ a (𝑥 – 𝑥1) (𝑥 – 𝑥2).
+− Déterminer des éléments caractéristiques de la fonction 𝑥 ↦ a𝑥² + b𝑥 + c. Aucune formule n’est attendue. On
+déterminera l’axe de symétrie par exemple en résolvant l’équation ƒ (𝑥) = c.
+− Utiliser la forme factorisée (en produit de facteurs du premier degré) d’un polynôme de degré 2 pour trouver ses racines et
+étudier son signe.";6;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_07_TEXTE_OFFICIEL_01;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_07;1G;TEXTE_OFFICIEL;"Les suites géométriques modélisent des grandeurs discrètes dont le taux d'évolution est constant. Les fonctions exponentielles
+sont présentées comme un prolongement des suites géométriques de raison positive à des valeurs non entières positives.
+Dans le cadre d'une approche différenciée de cette introduction, il est possible :
+− de se limiter au recours à la calculatrice pour obtenir la valeur de a𝑥 pour tout réel positif 𝑥 ;
+− de « compléter » le nuage de points représentant une suite géométrique pour obtenir la courbe d'une fonction
+continue ;
+− d'ajouter des « points intermédiaires » à ce nuage par dichotomies successives (moyenne arithmétique des abscisses et
+moyenne géométrique des ordonnées) à l'aide d'un tableur ;
+− de commencer par définir la racine 𝑛-ième d'un réel positif, puis de construire les puissances à exposant rationnel positif
+afin de conserver les propriétés des fonctions puissances entières étudiées en seconde.
+Les propriétés algébriques des fonctions exponentielles sont admises, par extension des propriétés des puissances entières.
+Les professeurs peuvent mettre en parallèle le sens de variation des fonctions exponentielles et celui des suites géométriques.
+Situations et problèmes
+Contenus mathématiques
+Sciences de la vie
+Élimination d'une substance dans le sang.
+Dénombrement
+Motifs géométriques évolutifs (triangle de Sierpinski, etc.).
+Éducation économique, financière et budgétaire.
+Emprunt, placement à intérêts composés, gestion d'une dette,
+croissance d'un poste budgétaire.
+Suites géométriques à termes strictement positifs
+Définition par relation de récurrence.
+Explicitation du terme de rang 𝑛.
+Sens de variation.
+Représentation graphique.
+Éducation économique, financière et budgétaire
+Valeur au bout d'une fraction d'annuité d'un capital placé à
+intérêts composés à taux annuel constant.
+Économie, géographie
+Analyse comparée de l'accroissement d'une population et des
+ressources alimentaires (modèle de Malthus).
+Sciences sociales
+Modélisation simplifiée de la propagation d'une rumeur
+(cascades verticales).
+Physique et sciences de la vie et de la Terre
+Nombre de noyaux radioactifs présents dans un échantillon au
+bout d'une fraction de demi-vie.
+Applications à la médecine et à la datation par le carbone 14.
+Sciences de la vie
+Taux de reproduction R0 d'un virus lors d'une épidémie.
+Fonctions exponentielles
+Introduction de la fonction 𝑥 ↦ a𝑥 (a > 0, 𝑥 ⩾ 0).
+Propriétés algébriques (admises, par extension des propriétés
+des puissances entières).
+Variations.
+Représentation graphique.
+Cas particulier de l'exposant
+1
+𝑛.
+Taux d'évolution moyen correspondant à 𝑛 évolutions
+successives.";6;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MATH_SCI_1G_2026_07_CAPACITES_ATTENDUES_02;PRG_MATH_SCI_1G_2026;ITM_MATH_SCI_1G_2026_07;1G;CAPACITÉS ATTENDUES;"− Reconnaitre un phénomène discret ou continu de croissance ou décroissance exponentielle et savoir le modéliser.
+− Calculer un terme de rang donné d'une suite géométrique définie par une relation fonctionnelle ou une relation de
+récurrence.
+− Calculer un taux d'évolution moyen.
+− Réaliser et exploiter la représentation graphique des termes d'une suite géométrique ou d'une fonction exponentielle.
+− Estimer les ordres de grandeur d’une quantité en croissance ou décroissance exponentielle.
+− Résoudre un problème de seuil dans le cas d'une croissance ou décroissance exponentielle par le calcul, à l'aide d'une
+représentation graphique ou en utilisant un outil numérique.";7;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF

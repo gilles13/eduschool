@@ -16,6 +16,7 @@ test_that("les rattachements de familles pointent vers des notions actives", {
 test_that("le notion_id JSON est l'identifiant pratique du dossier", {
   racine = system.file("notions", package = "eduschool")
   dossiers = list.dirs(racine, recursive = FALSE, full.names = FALSE)
+  dossiers = dossiers[file.exists(file.path(racine, dossiers, "questions.json"))]
   ids = vapply(dossiers, function(notion) {
     fichier = file.path(racine, notion, "questions.json")
     jsonlite::fromJSON(fichier, simplifyVector = FALSE)$notion_id

@@ -4,12 +4,14 @@
 \alias{graphique}
 \title{Dessiner un graphique pedagogique reutilisable}
 \usage{
-graphique(id, ...)
+graphique(id, ..., main_levee = FALSE)
 }
 \arguments{
 \item{id}{Identifiant unique du graphique.}
 
 \item{...}{Parametres de la fonction graphique.}
+
+\item{main_levee}{Rendre les geometries compatibles avec un trait esquisse (ggplot2 uniquement).}
 }
 \description{
 Dessiner un graphique pedagogique reutilisable

@@ -1,0 +1,105 @@
+notion;libelle_notion;famille;niveau;etape_scolaire;todo_decouverte;todo_synthese
+fractions_addition;Addition de fractions;fractions;6E;college;0;0
+fractions_soustraction;Soustraction de fractions;fractions;6E;college;0;0
+fractions_multiplication;Multiplication de fractions;fractions;5E;college;0;0
+fractions_division;Division de fractions;fractions;5E;college;0;0
+fractions_comparaison;Comparer des fractions;fractions;6E;college;0;0
+fractions_equivalentes;Fractions équivalentes;fractions;6E;college;0;0
+fractions_droite;Fractions sur une droite graduée;fractions;6E;college;0;0
+fractions_encadrement;Encadrer une fraction;fractions;6E;college;0;0
+fractions_fois_entier;Multiplier une fraction par un entier;fractions;6E;college;0;0
+fractions_quantite;Fraction d’une quantité;fractions;6E;college;0;0
+fractions_quotient;Fraction et quotient;fractions;6E;college;0;0
+fractions_terme_manquant;Terme manquant dans une fraction;fractions;6E;college;0;0
+grandeurs_mesures;Grandeurs mesures;grandeurs_mesures_conversions;6E;college;0;0
+conversions_longueurs;Conversion longueurs;grandeurs_mesures_conversions;6E;college;0;0
+conversions_masses;Conversion masses;grandeurs_mesures_conversions;6E;college;0;0
+conversions_contenances;Conversion contenances;grandeurs_mesures_conversions;6E;college;0;0
+conversions_aires;Conversion aires;grandeurs_mesures_conversions;6E;college;0;0
+conversions_volumes;Conversion volumes;grandeurs_mesures_conversions;5E;college;0;0
+conversions_durees;Conversion durees;grandeurs_mesures_conversions;6E;college;0;0
+conversions_octets;Conversion octets;grandeurs_mesures_conversions;6E;college;0;0
+cercle;Cercle;geometrie;6E;college;1;1
+droites;Droites;geometrie;6E;college;1;1
+parallelogrammes;Parallélogrammes;geometrie;5E;college;1;1
+geometrie_deductive;Géométrie déductive;geometrie;6E;college;0;0
+thales;Thalès;geometrie;3E;college;0;0
+pythagore;Théorème de Pythagore;geometrie;4E;college;0;0
+trigonometrie_triangle_rectangle;Trigonométrie dans le triangle rectangle;geometrie;3E;college;0;0
+developpement_identites;Développement avec les identités remarquables;calcul_litteral;3E;college;0;0
+factorisation_identites;Factorisation avec les identités remarquables;calcul_litteral;3E;college;0;0
+identites_remarquables;Identités remarquables : reconnaissance et applications;calcul_litteral;3E;college;0;0
+cercle_trigonometrique;Cercle trigonométrique;trigonometrie;2GT;lycee;0;0
+decimaux_numeration;Numération des nombres entiers et décimaux;nombres_entiers_et_decimaux;6E;college;0;0
+decimaux_decomposition;Décomposer et recomposer des nombres;nombres_entiers_et_decimaux;6E;college;0;0
+decimaux_fractions;Fractions décimales;nombres_entiers_et_decimaux;6E;college;0;0
+decimaux_comparaison;Comparer et ranger des décimaux;nombres_entiers_et_decimaux;6E;college;0;0
+decimaux_encadrement;Encadrer des nombres décimaux;nombres_entiers_et_decimaux;6E;college;0;0
+decimaux_arrondis;Arrondir des nombres décimaux;nombres_entiers_et_decimaux;6E;college;0;0
+decimaux_droite_graduee;Repérer des décimaux sur une droite graduée;nombres_entiers_et_decimaux;6E;college;0;0
+relatifs_reperage;Comprendre et repérer les nombres relatifs;nombres_relatifs;5E;college;0;0
+relatifs_addition_soustraction;Additionner et soustraire des nombres relatifs;nombres_relatifs;5E;college;0;0
+relatifs_multiplication_division;Multiplier et diviser des nombres relatifs;nombres_relatifs;4E;college;0;0
+puissances_carres_cubes;Carrés et cubes;calcul_avec_puissances;5E;college;0;0
+puissances_exposant_positif;Puissances d’exposant positif;calcul_avec_puissances;4E;college;0;0
+puissances_exposant_negatif;Puissances d’exposant négatif;calcul_avec_puissances;3E;college;0;0
+puissances_notation_scientifique;Notation scientifique;calcul_avec_puissances;3E;college;0;0
+puissances_proprietes;Propriétés complémentaires des puissances;calcul_avec_puissances;3E;college;0;0
+racine_carree;Racine carrée;calcul_avec_puissances;3E;college;0;0
+ensembles_nombres;Ensembles de nombres;ensembles_et_intervalles;2GT;lycee;0;0
+ensembles_operations;Opérations sur les ensembles;ensembles_et_intervalles;2GT;lycee;0;0
+intervalles_reels;Intervalles réels;ensembles_et_intervalles;2GT;lycee;0;0
+equations_produit_nul;Équation et produit nul;equations;3E;college;0;0
+equations_inconnue_deux_membres;Équation à inconnue dans les deux membres;equations;4E;college;0;0
+factorisation_facteur_commun;Factorisation par facteur commun;calcul_litteral;4E;college;0;0
+developpement_double_distributivite;Développement par double distributivité;calcul_litteral;3E;college;0;0
+inequation_premier_degre;Inéquation du premier degré;calcul_litteral;3E;college;0;0
+raisonnement_analyse_synthese;Raisonnement par analyse-synthèse;equations;3E;college;0;0
+statistiques_representations;Représentations statistiques;statistiques;5E;college;0;0
+statistiques_indicateurs;Indicateurs statistiques;statistiques;5E;college;0;0
+statistiques_comparaison_series;Comparer des séries statistiques;statistiques;4E;college;0;0
+statistiques_quartiles_boite_moustaches;Quartiles et boîte à moustaches;statistiques;3E;college;0;0
+probabilites_experience_aleatoire;Expérience aléatoire et probabilité;probabilites;5E;college;0;0
+probabilites_evenements_operations;Événements et opérations sur les probabilités;probabilites;4E;college;0;0
+probabilites_deux_epreuves;Expérience aléatoire à deux épreuves;probabilites;4E;college;0;0
+probabilites_frequence_simulation;Fréquence, simulation et probabilité;probabilites;4E;college;0;0
+proportionnalite;Proportionnalité;rapports_et_proportions;5E;college;0;0
+pourcentage;Pourcentage;rapports_et_proportions;5E;college;0;0
+ratio;Rapport et ratio;rapports_et_proportions;4E;college;0;0
+grandeur_quotient;Grandeur quotient;rapports_et_proportions;4E;college;0;0
+evolution_pourcentage;Évolution en pourcentage;rapports_et_proportions;4E;college;0;0
+fonctions_definition;Notion de fonction;fonctions;5E;college;0;0
+fonctions_lineaire;Fonction linéaire;fonctions;3E;college;0;0
+fonctions_affine;Fonction affine;fonctions;3E;college;0;0
+fonctions_carree;Fonction carré;fonctions;3E;college;0;0
+fractions_irreductibles;Fraction irréductible;fractions;3E;college;0;0
+fractions_problemes;Problèmes avec des fractions;fractions;3E;college;0;0
+decomposition_facteurs_premiers;Décomposition en facteurs premiers;arithmetique;3E;college;0;0
+equations_carre_constante;Équation carré égal à une constante;equations;3E;college;0;0
+simplification_expression_algebrique;Simplification d’expressions algébriques;calcul_litteral;3E;college;0;0
+triangles;Triangles;geometrie;6E;college;0;0
+aires;Aires;grandeurs_mesures_conversions;6E;college;1;1
+perimetres;Longueurs et périmètres;grandeurs_mesures_conversions;6E;college;1;1
+volumes;Volumes;grandeurs_mesures_conversions;6E;college;1;1
+angles;Angles;geometrie;5E;college;1;1
+translations_vecteurs;Translations et vecteurs;geometrie;3E;college;1;1
+geometrie_espace;Représentation de l’espace;geometrie;5E;college;1;1
+algorithmique_programmation;Algorithmique et programmation;algorithmique;5E;college;1;1
+fonctions_exponentielles;Fonction exponentielle;fonctions;1G;lycee;1;1
+fonction_logarithme;Fonction logarithme;fonctions;TG;lycee;1;1
+suites_numeriques;Suites numériques;suites;TG;lycee;1;1
+derivation;Dérivation;fonctions;1G;lycee;1;1
+limites_fonctions;Limites des fonctions;fonctions;TG;lycee;1;1
+continuite_fonctions;Continuité des fonctions d’une variable réelle;fonctions;TG;lycee;1;1
+integrale;Calcul intégral;analyse;TG;lycee;1;1
+primitives_equations_differentielles;Primitives, équations différentielles;analyse;TG;lycee;1;1
+fonctions_trigonometriques;Fonctions sinus et cosinus;trigonometrie;TG;lycee;1;1
+denombrement;Combinatoire et dénombrement;probabilites;TG;lycee;1;1
+loi_binomiale;Succession d’épreuves indépendantes, schéma de Bernoulli;probabilites;TG;lycee;1;1
+loi_grands_nombres;Concentration, loi des grands nombres;probabilites;TG;lycee;1;1
+vecteurs_plan;Calcul vectoriel et produit scalaire;geometrie;1G;lycee;1;1
+vecteurs_espace;Manipulation des vecteurs, des droites et des plans de l’espace;geometrie;TG;lycee;1;1
+orthogonalite_espace;Orthogonalité et distances dans l’espace;geometrie;TG;lycee;1;1
+equations_droites_plans;Représentations paramétriques et équations cartésiennes;geometrie;TG;lycee;1;1
+polynomes_second_degre;Équations, fonctions polynômes du second degré;fonctions;1G;lycee;1;1
+variations_extremums;Variations et extrémums d’une fonction;fonctions;2GT;lycee;1;1

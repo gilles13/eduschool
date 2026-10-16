@@ -1,9 +1,9 @@
-# L'essentiel : Équation 𝑥² = a
+# L'essentiel : Équation $x^2 = a$
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Résoudre 𝑥² = a consiste à chercher les nombres réels dont le carré vaut a.
+Résoudre $x^2 = a$ consiste à chercher les nombres réels dont le carré vaut a.
 :::
 
 ## Principe
@@ -18,7 +18,7 @@ Si a > 0, les solutions sont −√a et √a ; si a = 0, la seule solution est 0
 
 ## Exemple
 
-𝑥² = 25 a deux solutions : −5 et 5.
+$x^2 = 25$ a deux solutions : −5 et 5.
 
 ## Vérification
 

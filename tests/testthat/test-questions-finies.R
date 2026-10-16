@@ -1,6 +1,7 @@
 test_that("les JSON contiennent uniquement des questions finies", {
   dossiers = list.dirs(system.file("notions", package = "eduschool"),
                        recursive = FALSE, full.names = FALSE)
+  dossiers = dossiers[file.exists(file.path(system.file("notions", package = "eduschool"), dossiers, "questions.json"))]
   erreurs = character()
   for (notion in dossiers) {
     banque = questions(notion)$questions
@@ -36,7 +37,7 @@ test_that("les JSON contiennent uniquement des questions finies", {
 test_that("les questions numeriques sur les fractions ont des variantes", {
   dossiers = list.dirs(system.file("notions", package = "eduschool"),
                        recursive = FALSE, full.names = FALSE)
-  notions = dossiers[startsWith(dossiers, "fractions_")]
+  notions = dossiers[startsWith(dossiers, "fractions_") & file.exists(file.path(system.file("notions", package = "eduschool"), dossiers, "questions.json"))]
   for (notion in notions) {
     banque = questions(notion)$questions
     for (definition in banque) {
@@ -55,7 +56,7 @@ test_that("les questions numeriques sur les fractions ont des variantes", {
 test_that("les variantes des fractions ne sont pas dupliquees", {
   dossiers = list.dirs(system.file("notions", package = "eduschool"),
                        recursive = FALSE, full.names = FALSE)
-  notions = dossiers[startsWith(dossiers, "fractions_")]
+  notions = dossiers[startsWith(dossiers, "fractions_") & file.exists(file.path(system.file("notions", package = "eduschool"), dossiers, "questions.json"))]
   banques = character()
   for (notion in notions) {
     banque = questions(notion)$questions

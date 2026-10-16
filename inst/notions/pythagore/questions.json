@@ -12,7 +12,10 @@
         "AB semble vertical et AC horizontal."
       ],
       "illustration": {
-        "id": "triangle_rectangle_A"
+        "id": "triangle_rectangle",
+        "angle": "A",
+        "approximation": true,
+        "main_levee": true
       },
       "correction": "Le codage est une information ; l’apparence du dessin n’est pas une preuve."
     },
@@ -66,8 +69,8 @@
       "enonce": "ABC est un triangle rectangle en A. Quel côté est son hypoténuse ?",
       "reponse": "BC",
       "illustration": {
-        "id": "triangle_rectangle_normal",
-        "angle_droit": "A"
+        "id": "triangle_rectangle",
+        "angle": "A"
       },
       "propositions": [
         "AB",

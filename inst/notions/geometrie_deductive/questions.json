@@ -13,7 +13,10 @@
         "Le côté BC semble le plus long"
       ],
       "illustration": {
-        "id": "triangle_rectangle_A"
+        "id": "triangle_rectangle",
+        "angle": "A",
+        "approximation": true,
+        "main_levee": true
       },
       "correction": "Un codage fournit une hypothèse ; l’apparence du dessin ne constitue pas une démonstration."
     },
@@ -29,7 +32,7 @@
         "AC² = AB² + BC²"
       ],
       "illustration": {
-        "id": "triangle_rectangle_normal"
+        "id": "triangle_rectangle"
       },
       "correction": "Identifier d’abord l’hypoténuse BC, opposée à l’angle droit, puis appliquer Pythagore."
     },

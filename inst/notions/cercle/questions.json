@@ -13,7 +13,8 @@
         "tangente"
       ],
       "illustration": {
-        "id": "cercle_rayon"
+        "id": "cercle",
+        "construction": "rayon"
       },
       "correction": "[OA] relie le centre O à un point A du cercle : c'est un rayon."
     },
@@ -29,7 +30,8 @@
         "sécante"
       ],
       "illustration": {
-        "id": "cercle_diametre_corde"
+        "id": "cercle",
+        "construction": "diametre_corde"
       },
       "correction": "[AB] est une corde puisqu'il relie deux points du cercle. Comme il passe aussi par le centre O, c'est plus précisément un diamètre : tout diamètre est une corde, mais toute corde n'est pas un diamètre."
     },
@@ -45,7 +47,8 @@
         "[[p4]]"
       ],
       "illustration": {
-        "id": "cercle_rayons_egaux"
+        "id": "cercle",
+        "construction": "rayons_egaux"
       },
       "correction": "[[correction]]",
       "variantes": [
@@ -96,7 +99,8 @@
         "Parce que O est placé à peu près au milieu du dessin"
       ],
       "illustration": {
-        "id": "cercle_rayons_egaux"
+        "id": "cercle",
+        "construction": "rayons_egaux"
       },
       "correction": "A et B sont sur le même cercle de centre O : OA et OB sont des rayons de ce cercle, donc ils ont la même longueur."
     },
@@ -112,7 +116,8 @@
         "Une tangente"
       ],
       "illustration": {
-        "id": "cercle_corde"
+        "id": "cercle",
+        "construction": "corde"
       },
       "correction": "Une corde est un segment reliant deux points du cercle. [AB] ne passe pas par O : ce n'est donc pas un diamètre. Un diamètre est une corde particulière qui passe par le centre."
     },
@@ -138,7 +143,8 @@
       ],
       "correction": "Une corde relie deux points du cercle ; elle ne passe pas nécessairement par le centre.",
       "illustration": {
-        "id": "cercle_corde"
+        "id": "cercle",
+        "construction": "corde"
       }
     },
     {
@@ -164,7 +170,8 @@
       ],
       "correction": "Un diamètre est une corde particulière passant par le centre.",
       "illustration": {
-        "id": "cercle_diametre_corde"
+        "id": "cercle",
+        "construction": "diametre_corde"
       }
     }
   ]

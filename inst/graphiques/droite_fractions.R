@@ -22,24 +22,29 @@ graphique_droite_fractions = function(illustration = NULL, denominateur = NULL,
     etiquettes = "A"
   }
   limite = max(1L, ceiling(a / b))
-  graduations = data.frame(x = seq(0, limite, by = 1 / b))
-  unites = data.frame(x = 0:limite, etiquette = as.character(0:limite))
-  reperes = data.frame(x = points / b, etiquette = etiquettes)
-  figure = ggplot2::ggplot() +
-    ggplot2::geom_segment(ggplot2::aes(x = 0, xend = limite + 0.06,
-                                      y = 0, yend = 0), linewidth = 0.35) +
-    ggplot2::geom_segment(data = graduations,
-      ggplot2::aes(x = x, xend = x, y = -0.025, yend = 0.025),
-      linewidth = 0.35) +
-    ggplot2::geom_point(data = reperes, ggplot2::aes(x = x, y = 0), size = 2.0) +
-    ggplot2::geom_text(data = reperes,
-      ggplot2::aes(x = x, y = 0.11, label = etiquette), size = 9) +
-    ggplot2::geom_text(data = unites,
-      ggplot2::aes(x = x, y = -0.055, label = etiquette), size = 2.9) +
-    ggplot2::coord_fixed(ratio = 1, xlim = c(-0.07, limite + 0.09),
-      ylim = c(-0.13, 0.20), expand = FALSE) +
-    ggplot2::theme_void() +
-    ggplot2::theme(plot.margin = ggplot2::margin(1, 3, 1, 3))
+  # Draw directly as a grid grob; ggsave can export it unchanged.
+  x = function(v) 0.08 + 0.84 * v / limite
+  graduations = seq.int(0L, limite * b) / b
+  reperes = points / b
+  figure = grid::gTree(children = grid::gList(
+    grid::segmentsGrob(x0 = grid::unit(x(0), "npc"),
+      x1 = grid::unit(x(limite + 0.06), "npc"),
+      y0 = grid::unit(0.48, "npc"), y1 = grid::unit(0.48, "npc"),
+      gp = grid::gpar(lwd = 1)),
+    grid::segmentsGrob(x0 = grid::unit(x(graduations), "npc"),
+      x1 = grid::unit(x(graduations), "npc"),
+      y0 = grid::unit(0.45, "npc"), y1 = grid::unit(0.51, "npc"),
+      gp = grid::gpar(lwd = 1)),
+    grid::pointsGrob(x = grid::unit(x(reperes), "npc"),
+      y = grid::unit(rep(0.48, length(reperes)), "npc"),
+      pch = 16, size = grid::unit(2, "mm")),
+    grid::textGrob(etiquettes, x = grid::unit(x(reperes), "npc"),
+      y = grid::unit(rep(0.76, length(reperes)), "npc"),
+      gp = grid::gpar(fontsize = 20)),
+    grid::textGrob(as.character(0:limite),
+      x = grid::unit(x(0:limite), "npc"), y = grid::unit(0.30, "npc"),
+      gp = grid::gpar(fontsize = 12))
+  ))
   attr(figure, "eduschool_dimensions") = c(4.6, 1.25)
   figure
 }

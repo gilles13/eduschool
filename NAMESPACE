@@ -19,3 +19,4 @@ export(maths_parcours)
 export(diagramme_programme)
 
 export(table_multiplication)
+export(suivi_du_taf_restant)

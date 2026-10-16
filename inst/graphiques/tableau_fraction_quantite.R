@@ -5,15 +5,17 @@ graphique_tableau_fraction_quantite = function(illustration = NULL, total = NULL
   valeurs = c(as.character(illustration$total), as.character(illustration$fraction),
               as.character(illustration$quantite))
   stopifnot(length(valeurs) == 3L, all(nzchar(valeurs)))
-  d = data.frame(x = 1:3, titre = c("Total", "Fraction", "Quantit\u00e9"), valeur = valeurs)
-  figure = ggplot2::ggplot(d) +
-    ggplot2::geom_rect(ggplot2::aes(xmin = x - 0.5, xmax = x + 0.5, ymin = 0, ymax = 1),
-                       fill = "white", colour = "#555555", linewidth = 0.35) +
-    ggplot2::geom_text(ggplot2::aes(x = x, y = 0.72, label = titre), size = 4.5) +
-    ggplot2::geom_text(ggplot2::aes(x = x, y = 0.30, label = valeur), size = 5.2) +
-    ggplot2::coord_cartesian(xlim = c(0.45, 3.55), ylim = c(-0.04, 1.04), expand = FALSE) +
-    ggplot2::theme_void() +
-    ggplot2::theme(plot.margin = ggplot2::margin(2, 3, 2, 3))
+  figure = grid::gTree(children = grid::gList(
+    grid::rectGrob(x = grid::unit(c(1, 3, 5) / 6, "npc"),
+      y = grid::unit(rep(0.5, 3), "npc"),
+      width = grid::unit(rep(1 / 3, 3), "npc"), height = grid::unit(0.88, "npc"),
+      gp = grid::gpar(fill = "white", col = "#555555", lwd = 1)),
+    grid::textGrob(c("Total", "Fraction", "Quantit\u00e9"),
+      x = grid::unit(c(1, 3, 5) / 6, "npc"), y = grid::unit(0.72, "npc"),
+      gp = grid::gpar(fontsize = 14)),
+    grid::textGrob(valeurs, x = grid::unit(c(1, 3, 5) / 6, "npc"),
+      y = grid::unit(0.30, "npc"), gp = grid::gpar(fontsize = 16))
+  ))
   attr(figure, "eduschool_dimensions") = c(4.6, 1.45)
   figure
 }

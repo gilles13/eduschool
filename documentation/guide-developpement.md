@@ -180,9 +180,10 @@ Le travail en cours porte sur la diversité des questions, les quiz transversaux
 
 ## 8. Graphiques et fichiers de sortie
 
-- Un graphique = un identifiant unique. Le code des figures réside dans `inst/graphiques/` ; les paramètres règlent ses variantes. Les JSON utilisent `triangle_rectangle_A` (pas d’alias `triangle_angle_droit_A`).
+- Un graphique = un identifiant unique. Le code des figures réside dans `inst/graphiques/` ; les paramètres règlent ses variantes. Les JSON utilisent `triangle_rectangle` avec `angle`, `approximation` et `main_levee` lorsque necessaire.
 - `illustrer_question()` délègue aux fonctions graphiques ; `graphique(id, ...)` permet leur réutilisation dans les fiches. Ne pas dupliquer le code des figures dans les modèles Rmd.
-- Les fiches declarent les figures a leur emplacement avec `<!-- graphique: id parametre=nombre -->`. Seuls les scalaires numeriques sont admis. Le meme rendu s applique aux fiches simples et familiales, HTML et PDF. Aucune condition par notion dans les modeles.
+- `graphique(id, ..., main_levee = FALSE)` conserve le rendu existant ; `TRUE` remplace les geometries compatibles (segments, chemins, lignes, polygones, rectangles, courbes, points) des figures ggplot2 par les equivalents ggsketch. Les objets grid ne sont pas encore pris en charge. Le wrapper ne modifie pas les coordonnees de la figure : une deformation pedagogique volontaire reste distincte d un simple style de trait.
+- Les fiches declarent les figures a leur emplacement avec `<!-- graphique: id parametre=nombre -->`. Les parametres admis sont des nombres, TRUE/FALSE et une lettre majuscule (sommet). Le meme rendu s applique aux fiches simples et familiales, HTML et PDF. Aucune condition par notion dans les modeles.
 - Les figures de fiche ont une largeur documentaire commune de 65 %. Le script de chaque figure peut definir `attr(figure, "eduschool_dimensions") = c(largeur, hauteur)` pour ses proportions ; le rendu ne connait aucune notion. Les dimensions sont de presentation, jamais des donnees pedagogiques.
 - `produire()` génère un fichier au nom unique dans `tempdir()` sans `dossier` explicite. Avec `dossier`, le fichier est enregistré à l’emplacement demandé. Le chemin complet est affiché par `message()` et retourné invisiblement pour les scripts. Un fichier temporaire n’est pas une archive.
 
@@ -220,7 +221,7 @@ Le travail en cours porte sur la diversité des questions, les quiz transversaux
 
 ## Quiz : illustrations compactes (septembre 2026)
 
-- Les graphiques des questions utilisent `illustrer_question()` et les scripts existants dans `inst/graphiques/`. `triangle_rectangle_normal` accepte `angle_droit` (A, B ou C) ; ne pas remplacer le triangle dessine a main levee, qui a un autre objectif.
+- Les graphiques des questions utilisent `illustrer_question()` et les scripts existants dans `inst/graphiques/`. `triangle_rectangle` accepte `angle` (A, B ou C), `approximation` pour une geometrie volontairement non a l echelle et `main_levee` pour le style.
 - Une valeur d'illustration JSON `{sommet}` est resolue a partir des parametres tires de la question, sans condition liee a la notion.
 - `inst/styles/eduschool.css` porte les styles HTML du quiz, charges par `quiz.Rmd`. La grille place les petites figures a droite des propositions sur grand ecran et les empile sur petit ecran. Le PDF conserve sa disposition verticale.
 - Pas de nouvelle infrastructure de mise en page ; les figures definissent leurs dimensions via `eduschool_dimensions`.

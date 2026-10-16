@@ -1,0 +1,308 @@
+rubrique_id;programme_id;theme_item_id;niveau;rubrique;texte_officiel_extrait;page_debut;page_fin;source_id;controle_formules
+ITM_MAT_1T_2026_01_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_01;1T;TEXTE_OFFICIEL;"L'apprentissage des notations mathématiques et de la logique est transversal à tous les chapitres du programme. Aussi, il
+importe d'y travailler d’abord dans des contextes où ils se présentent naturellement, puis de prévoir des temps où les concepts
+et types de raisonnement sont étudiés, après avoir été́  rencontrés plusieurs fois en situation.
+Les élèves doivent connaitre les notions d’élément d’un ensemble, de sous-ensemble, d’ensemble vide, d’appartenance et
+d’inclusion, de réunion, d’intersection et de complémentaire et savoir utiliser les symboles de base correspondants : ∅, ∈, ⊂, ⋂,
+⋃, {… }, ainsi que la notation des ensembles de nombres et des intervalles. Ils rencontrent également la notion de couple et
+celle de produit cartésien de deux ensembles.
+Pour le complémentaire d’un sous-ensemble 𝐴 de 𝐸, on utilise la notation 𝐴̅ des probabilités, ou la notation 𝐸 \ 𝐴. On utilise la
+notation Card(𝐴) pour le cardinal (nombre d’éléments) d’un ensemble fini 𝐴.
+Pour ce qui concerne le raisonnement logique, les élèves s’exercent :
+− à utiliser correctement les connecteurs logiques « et », « ou » ;
+− à identifier le statut d’une égalité (identité, équation) et celui de la ou des lettres utilisées (variable, indéterminée,
+inconnue, paramètre) ;
+− à utiliser un contre-exemple pour infirmer une proposition universelle ;
+− à distinguer une proposition de sa réciproque, de sa contraposée ;
+− à utiliser à bon escient les expressions « condition nécessaire », « condition suffisante », « équivalence logique ».";4;4;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_01_COMMENTAIRES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_01;1T;COMMENTAIRES;"− La construction de conditions logiques en algorithmique à l’aide des opérateurs ET, OU, NON et la création de filtres en
+analyse de données sont l’occasion de travailler la logique.
+− Dans le cours de mathématiques, les professeurs sont attentifs à expliciter la nature des raisonnements conduits
+(raisonnement par disjonction des cas, recours à la contraposée, raisonnement par l’absurde) ainsi que les quantificateurs à
+l’œuvre, en langage naturel et sans formalisme.";4;4;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_02_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_02;1T;TEXTE_OFFICIEL;"La pratique de l’algorithmique et de la programmation se poursuit au cycle terminal. En continuité avec la classe de seconde, le
+langage utilisé est Python.
+Le programme vise la consolidation des notions de variable, d’instruction conditionnelle et de boucle ainsi que l’utilisation des
+fonctions. La seule notion nouvelle est celle de liste qui trouve naturellement sa place dans de nombreuses parties du
+programme et aide à la compréhension de notions mathématiques telles que les suites numériques, les tableaux de valeurs, les
+séries statistiques, etc.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_02_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_02;1T;CAPACITÉS ATTENDUES;"Variables
+− Utiliser un générateur de nombres aléatoires entre 0 et 1 pour simuler une loi de Bernoulli de paramètre p.
+− Utiliser la notion de compteur.
+− Utiliser le principe d’accumulateur pour calculer une somme, un produit.
+Fonctions
+− Identifier les entrées et les sorties d’une fonction.
+− Structurer un programme en ayant recours aux fonctions.
+Listes
+− Générer une liste (en extension, par ajouts successifs, en compréhension).
+− Manipuler des éléments d’une liste (ajouter, supprimer, etc.) et leurs indices.
+− Itérer sur les éléments d’une liste.
+Sélection de données
+− Traiter un fichier contenant des données réelles pour en extraire de l’information et l’analyser.
+− Réaliser un tableau croisé de données sur deux critères à partir de données brutes.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_02_COMMENTAIRES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_02;1T;COMMENTAIRES;"− Les notions relatives aux types de variables et à l’affectation sont consolidées. Comme en classe de seconde, on utilise le
+symbole « ← » pour désigner l’affectation dans un algorithme écrit en langage naturel.
+− L’accent est mis sur la programmation modulaire qui permet de découper une tâche complexe en tâches plus simples.
+− La génération des listes en compréhension et en extension est mise en lien avec la notion d’ensemble. Les conditions
+apparaissant dans les listes définies en compréhension permettent de travailler la logique.
+− Afin d’éviter des confusions, il est recommandé de se limiter aux listes sans présenter d’autres types de collections.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_03_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_03;1T;TEXTE_OFFICIEL;"Cette partie du programme vise essentiellement à entretenir une pratique et une vision géométriques en lien avec la spécialité
+« design et arts appliqués ». Il s’agit moins d’une étude abstraite et académique de la géométrie que d’un dialogue entre
+observation, analyse et création artistique. Les activités proposées gagnent à être mises en lien avec la partie modélisation 3D
+de l’enseignement « outils et langages numériques ».
+Les quelques notions nouvelles qui figurent au programme sont introduites uniquement en vue d’être mobilisées dans des
+activités portant sur des situations concrètes et variées : motifs réguliers sur des tissus, rosaces, mosaïques, objets décoratifs,
+structures architecturales, etc. Les professeurs peuvent aborder d’autres notions si la situation étudiée le nécessite.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_04_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_04;1T;CONTENUS;"Figures régulières
+− Exemples de polygones réguliers.
+− Exemples de frises ou de pavages.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_04_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_04;1T;CAPACITÉS ATTENDUES;"− Analyser et construire des polygones réguliers à l’aide d’un motif élémentaire et de transformations du plan.
+− Calculer des distances, des angles, des aires et des périmètres associés aux polygones réguliers.
+− Créer une figure à partir d’un motif élémentaire par répétition d’une ou de deux transformations simples.
+− Analyser une frise ou un pavage et en rechercher un motif élémentaire.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_04_COMMENTAIRES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_04;1T;COMMENTAIRES;"− Selon les cas, le motif élémentaire d’une frise ou d’un pavage peut être pris sous la forme d’un triangle rectangle ou
+isocèle, d’un parallélogramme ou d’un rectangle.
+− La classification des types de frises ou de pavages n’est pas un attendu du programme.
+− Dans le cadre de raccordements faisant intervenir un arc de cercle, on exploite la notion géométrique de tangente à un
+cercle.";5;5;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_05_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_05;1T;CONTENUS;"Repérage
+− Coordonnées d’un point dans un repère orthonormal de l’espace.
+− Distance entre deux points.
+Perspective cavalière
+− Projection sur un plan parallèlement à une droite.
+− Propriétés conservées (milieux, contacts, rapports de longueurs) et non conservées (longueurs, angles) par une projection
+parallèle.
+Solides
+− Cylindres de révolution.
+− Sections planes d’un cube.
+− Sections planes d’un cylindre de révolution ; ellipses.";6;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_05_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_05;1T;CAPACITÉS ATTENDUES;"− Utiliser la représentation en perspective cavalière d’un quadrillage ou d’un cube pour représenter d’autres objets.
+− Représenter en perspective ou en vraie grandeur des sections planes.
+− Construire des sections planes de cubes et de cylindres de révolution.
+− Construire un parallélogramme circonscrit à une ellipse.
+− Construire l’image perspective d’un cercle à partir d’un carré circonscrit au cercle.";6;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_06_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_06;1T;TEXTE_OFFICIEL;"Cette partie du programme vise à construire et à entretenir des habiletés dans les domaines du calcul, de l’information chiffrée
+et des représentations graphiques. Il s’agit d'automatiser le recours à des connaissances, des procédures, des méthodes et des
+stratégies afin de permettre aux élèves de les mobiliser plus rapidement. Leur acquisition permet aux élèves une meilleure
+réussite dans l’apprentissage des mathématiques, participe du développement de leur esprit critique par une meilleure
+maitrise des chiffres et du calcul et leur permet une meilleure lecture et compréhension des représentations de données dont
+les graphiques.
+Les capacités attendues énoncées ci-dessous n’ont pas vocation à faire l’objet d’un chapitre d’enseignement spécifique car les
+notions qui les sous-tendent ont été travaillées dans les classes antérieures et doivent être entretenues et consolidées au cours
+de l’année. Cependant les nouvelles notions du programme peuvent donner lieu également à un travail d’automatisation tout
+le long de l’année. Elles relèvent d’un entrainement régulier privilégiant l'activité mentale. Les différents thèmes proposés
+doivent être travaillés tout au long de l’année et la présentation par blocs thématiques ne signifie pas, bien au contraire, qu’il
+faille les aborder les uns après les autres. Les modalités de mise en œuvre peuvent être variées et prendre appui sur différents
+supports : à l’oral, à l’écrit, individuellement ou en groupe, utilisant éventuellement des outils numériques de vidéo-projection,
+de recensement instantané des réponses, etc.
+À la liste ci-dessous s’ajoute la liste des automatismes travaillés en classe de seconde, qui doivent être entretenus en classe de
+première.";6;6;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_06_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_06;1T;CAPACITÉS ATTENDUES;"Évolutions et variations
+− Appliquer un taux d’évolution pour calculer une valeur finale ou initiale.
+− Calculer un taux d’évolution, l’exprimer en pourcentage.
+− Calculer le taux d’évolution équivalent à plusieurs évolutions successives.
+− Calculer un taux d’évolution réciproque.
+Calcul numérique et algébrique
+− Résoudre une équation produit nul.
+− Déterminer le signe d’une expression du premier degré, d’une expression factorisée du second degré.
+− Développer, factoriser, réduire une expression algébrique simple.
+Fonctions et représentations
+− Résoudre graphiquement une équation, une inéquation du type : 𝑓(𝑥) =  𝑘, 𝑓(𝑥) <  𝑘, etc.
+− Déterminer graphiquement le signe d’une fonction ou son tableau de variations.
+− Tracer une droite donnée par son équation réduite ou par un point et son coefficient directeur.
+− Lire graphiquement l’équation réduite d’une droite.
+− Déterminer le coefficient directeur d’une droite à partir des coordonnées de deux de ses points.
+Statistiques
+− Lire un graphique, un histogramme, un diagramme en barres ou circulaire, un diagramme en boite ou toute autre
+représentation (repérer l’origine du repère, les unités de graduations ou les échelle, etc.).
+− Passer du graphique aux données et vice-versa.
+− Calculer et interpréter des indicateurs statistiques pour une série statistique.
+Probabilités
+− Calculer des probabilités conditionnelles lorsque les évènements sont présentés sous forme de tableau croisé d’effectifs
+ou d’arbres pondérés.
+− Distinguer 𝑃(𝐴∩𝐵), 𝑃𝐴(𝐵), 𝑃𝐵(𝐴).";6;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_07_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_07;1T;TEXTE_OFFICIEL;"Le programme d’analyse permet à la fois de conforter l’acquisition de connaissances et de méthodes déjà étudiées (fonctions
+et problèmes du premier degré, fonctions carré et cube) et d’introduire des notions nouvelles (polynômes de degré 2 ou 3,
+suites, dérivées). La plupart de ces notions peuvent être présentées à partir de contextes familiers aux élèves (emprunts,
+placements, couts, vitesses, etc.) ou de représentations fournies par les outils numériques (calculatrice, tableur, logiciel de
+géométrie dynamique) avant d’être définies de manière formelle et générale. Cette démarche inductive facilite l’accès
+progressif à l’abstraction qui est l’un des enjeux de l’enseignement des mathématiques au cycle terminal. La mise en
+application des modèles d’analyse étudiés, tant dans des situations internes qu’externes aux mathématiques, permet à la fois
+de consolider les habiletés en calcul, de développer les capacités de raisonnement et d’étudier des systèmes évolutifs de
+différentes natures.
+Cette partie du programme s’organise autour de trois grands axes :
+− les suites numériques comme modèles mathématiques d’évolutions discrètes ;
+− les fonctions numériques de la variable réelle comme modèles mathématiques d’évolutions continues ;
+− la dérivation comme concept mathématique traduisant une évolution instantanée.";7;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_08_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_08;1T;CONTENUS;"Les suites comme modèles mathématiques d’évolutions discrètes
+− Différents modes de génération d’une suite numérique.
+− Sens de variation.
+− Représentation graphique : nuage de points (𝑛, 𝑢(𝑛)).
+Les suites arithmétiques comme modèles discrets d’évolutions absolues constantes (croissance linéaire) et les suites
+géométriques (à termes strictement positifs) comme modèles discrets d’évolutions relatives constantes (croissance
+exponentielle)
+− Relation de récurrence.
+− Explicitation du terme de rang 𝑛.
+− Sens de variation.
+− Représentation graphique.";7;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_08_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_08;1T;CAPACITÉS ATTENDUES;"− Modéliser une situation à l’aide d’une suite.
+− Reconnaitre si une situation relève d’un modèle discret de variation linéaire ou exponentielle.
+− Calculer un terme de rang donné d’une suite définie par une relation fonctionnelle ou une relation de récurrence.
+− Réaliser et exploiter la représentation graphique des termes d'une suite.
+− Conjecturer, à partir de sa représentation graphique, la nature arithmétique ou géométrique d’une suite.
+− Démontrer qu’une suite est arithmétique ou géométrique.
+− Déterminer le sens de variation d’une suite arithmétique ou géométrique à l’aide de la raison.";7;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_08_COMMENTAIRES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_08;1T;COMMENTAIRES;"− L’utilisation d’un tableur pour calculer des termes d’une suite favorise la compréhension des différents modes de
+génération.
+− L’objectif est de modéliser des situations discrètes simples, choisies notamment en lien avec les autres enseignements de
+la série (évolution ou actualisation d’un capital, évolution d’une colonie bactérienne, etc.).
+− En lien avec l’écriture fonctionnelle, on utilise la notation 𝑢(𝑛) préalablement à celle de 𝑢𝑛.
+− L’étude des suites arithmétiques et géométriques permet de comparer différents types de croissance.
+− En classe de première, il convient de faire fonctionner la définition par récurrence d’une suite géométrique ou
+arithmétique.
+− On s’attache à présenter des suites qui ne sont ni arithmétiques ni géométriques.
+Situations algorithmiques (sauf série STD2A)
+− Calculer un terme de rang donné d’une suite, une somme finie de termes.
+− Déterminer une liste de termes d’une suite et les représenter.
+− Déterminer le rang à partir duquel les termes d'une suite sont supérieurs ou inférieurs à un seuil donné, ou aux termes de
+même rang d'une autre suite.";7;7;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_09_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_09;1T;CONTENUS;"Les fonctions comme modèles mathématiques d’évolutions continues
+− Différents modes de représentation d’une fonction : expression littérale, représentation graphique.
+− Notations 𝑦 =  𝑓(𝑥) et 𝑥 ↦ 𝑓(𝑥).
+− Taux de variation, entre deux valeurs de la variable 𝑥, d’une grandeur 𝑦 vérifiant 𝑦= 𝑓(𝑥).
+− Fonctions monotones sur un intervalle, lien avec le signe du taux de variation.
+Fonctions polynômes de degré 2
+− Éléments caractéristiques de la courbe : allure, axe de symétrie, coordonnées du sommet en lien avec la symétrie et
+tableau de variation de la fonction.
+− Racines et signe d’un polynôme de degré 2 donné sous forme factorisée (le calcul des racines à l’aide du discriminant ne
+figure pas au programme).";8;8;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_09_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_09;1T;CAPACITÉS ATTENDUES;"− Modéliser la dépendance entre deux grandeurs à l’aide d’une fonction.
+− Résoudre graphiquement une équation du type 𝑓(𝑥) = 𝑘 ou une inéquation de la forme 𝑓(𝑥) <  𝑘 ou 𝑓(𝑥) >  𝑘.
+− Interpréter le taux de variation comme pente de la sécante à la courbe passant par deux points distincts.
+− Associer une parabole à une expression algébrique de degré 2, pour les fonctions de la forme : 𝑥 ↦ 𝑎𝑥2, 𝑥 ↦ 𝑎𝑥2 +  𝑐,
+𝑥 ↦ 𝑎(𝑥−𝑥1)(𝑥−𝑥2).
+− Déterminer des éléments caractéristiques de la fonction 𝑥 ↦ 𝑎𝑥2 + 𝑏𝑥+ 𝑐. Aucune formule n’est attendue. On
+déterminera l’axe de symétrie par exemple en résolvant l’équation 𝑓(𝑥) = 𝑐.
+− Vérifier qu’une valeur conjecturée est racine d’un polynôme de degré 2.
+− Savoir factoriser, dans des cas simples, une expression du second degré connaissant au moins une de ses racines.
+− Utiliser la forme factorisée (en produit de facteurs du premier degré) d’un polynôme de degré 2 pour trouver ses racines et
+étudier son signe.";8;8;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_09_COMMENTAIRES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_09;1T;COMMENTAIRES;"− Les fonctions polynômes de degré 2 fournissent des occasions de pratiquer le calcul numérique (image d’un nombre
+donné) et littéral (développement, factorisation) et de travailler sur les représentations graphiques.
+− Les exemples prennent appui sur des situations réelles (impôts, hauteurs de marée, tarifs de courrier, évolution de
+l’émission de CO2, etc.) et internes aux mathématiques (problèmes d’optimisation dans un cadre géométrique, etc.).
+− Les professeurs utilisent différentes notations pour la variable : t, u, etc. et habituent les élèves à lire des graphiques reliant
+une grandeur 𝑦 à une grandeur composée (𝑥2,1/𝑥, etc.), ce qui permet notamment de donner sens à l’expression
+« grandeurs inversement proportionnelles ».
+− La recherche systématique des racines d’un polynôme de degré 2 ne figurant pas au programme, on privilégie les situations
+où les racines sont évidentes ainsi que les interprétations graphiques. En cas de besoin, la résolution d’une équation du
+second degré peut se faire à l’aide d’un solveur.
+Situations algorithmiques (sauf série STD2A)
+− Calculer une valeur approchée d’une solution d’une équation par balayage.";8;8;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_10_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_10;1T;CONTENUS;"Point de vue local : approche graphique de la notion de nombre dérivé
+− Sécantes à une courbe passant par un point donné ; taux de variation en un point.
+− Tangente à une courbe en un point, définie comme position limite des sécantes passant par ce point.
+− Nombre dérivé en un point défini comme limite du taux de variation en ce point.
+− Équation réduite de la tangente en un point.
+Point de vue global
+− Fonction dérivée ;
+− Fonctions dérivées de : 𝑥 ↦ 𝑥2, 𝑥 ↦ 𝑥3.
+− Dérivée d’une somme, dérivée de 𝑘𝑓 (𝑘∈ℝ), dérivée d’un polynôme de degré inférieur ou égal à 3.
+− Sens de variation d’une fonction, lien avec le signe de la dérivée.
+− Tableau de variations, extrémums.";8;8;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_10_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_10;1T;CAPACITÉS ATTENDUES;"− Interpréter géométriquement le nombre dérivé comme coefficient directeur de la tangente.
+− Construire la tangente à une courbe en un point.
+− Déterminer l’équation réduite de la tangente à une courbe en un point.
+− Calculer la dérivée d’une fonction polynôme de degré inférieur ou égal à trois.
+− Déterminer le sens de variation et les extrémums d’une fonction polynôme de degré inférieur ou égal à 3.";8;8;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_10_COMMENTAIRES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_10;1T;COMMENTAIRES;"− La notion de nombre dérivé gagne à être illustrée dans des contextes variés :
+− dans le cadre d’un mouvement rectiligne, il est possible d’interpréter le taux de variation de la position du point mobile
+entre deux instants comme une vitesse moyenne et le nombre dérivé comme une vitesse instantanée ;
+− dans un cadre économique, le nombre dérivé est relié au coût marginal.
+− À l’aide d’un logiciel de géométrie dynamique, on visualise la position limite des sécantes à une courbe en un point.
+− Il est recommandé de ne pas donner la définition formelle de la notion de limite et de s’en tenir à une approche intuitive à
+partir d’exemples. Le vocabulaire et la notation correspondants sont introduits à l’occasion du travail sur la notion de
+nombre dérivé.
+− Il est possible de démontrer que la dérivée d’une fonction monotone est de signe constant. La réciproque (admise)
+s’appuie sur l’interprétation géométrique du nombre dérivé comme coefficient directeur de la tangente.";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_11_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_11;1T;TEXTE_OFFICIEL;"En statistiques, à la suite des couples de variables qualitatives étudiés en classe de seconde, on introduit en première
+technologique l’étude des séries statistiques à deux variables quantitatives.
+En probabilités, les objectifs sont les suivants :
+− utiliser la notion de probabilité conditionnelle pour définir l’indépendance de deux évènements ;
+− modéliser des cas simples d’expériences aléatoires à plusieurs épreuves indépendantes ;
+− introduire la notion de variable aléatoire.
+La simulation est une composante importante de l’apprentissage des probabilités au cycle terminal. Elle permet d’observer la
+fluctuation d’échantillonnage et de traiter des situations fréquemment rencontrées dans la vie sociale (sondages d’opinion,
+données socioéconomiques, jeux de hasard, etc.) ou en sciences expérimentales (incertitude de mesure), tout en se prêtant à
+des activités de programmation instructives.
+Des activités de programmation, au tableur ou en langage Python, permettent d’automatiser certains calculs et d’obtenir des
+résultats inaccessibles à la main.";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_12_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_12;1T;TEXTE_OFFICIEL;"Alors que le programme de la classe de seconde est consacré, dans sa partie relative aux statistiques, à l’étude de couples de
+variables qualitatives, celui de la classe première technologique aborde l’étude de variables quantitatives, représentées par des
+nuages de points. On procède à la recherche d’ajustements pertinents affines de ces nuages, dans le but de réaliser des
+interpolations ou des extrapolations.";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_12_CONTENUS_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_12;1T;CONTENUS;"− Nuage de points associé à une série statistique à deux variables quantitatives.
+− Ajustement affine, point moyen.";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_12_CAPACITES_ATTENDUES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_12;1T;CAPACITÉS ATTENDUES;"− Représenter un nuage de points.
+− Savoir calculer les coordonnées du point moyen.
+− Déterminer et utiliser un ajustement affine.
+− Interpoler ou extrapoler des valeurs inconnues à l’aide d’un ajustement affine.";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_12_COMMENTAIRES_04;PRG_MAT_1T_2026;ITM_MAT_1T_2026_12;1T;COMMENTAIRES;"− Plusieurs ajustements sont proposés (au jugé, droite de Mayer, moindres carrés) mais aucune connaissance théorique n’est
+attendue. L’appréciation de leur qualité peut faire l’objet d’une discussion au sein de la classe.
+− La méthode des moindres carrés est présentée : recherche d’une droite d’équation 𝑦 =  𝑎𝑥 +  𝑏 réalisant le minimum de
+∑(𝑦𝑖−(𝑎𝑥𝑖+ 𝑏)
+𝑖
+)2 pour le nuage de points (𝑥𝑖, 𝑦𝑖).
+− Les situations ou contextes réels, en lien notamment avec les enseignements de spécialité, sont privilégiés :
+− données issues des domaines de la santé, de l’économie, de la gestion, des sciences sociales, etc. ;
+− mesures expérimentales de grandeurs liées par une relation linéaire en physique-chimie (intensité et tension ; droite
+d’étalonnage d’une concentration, etc.), en biotechnologies ou en sciences de l’ingénieur dans tous les domaines
+(industriels, génie civil, etc.).
+− Les élèves sont entrainés à exercer leur esprit critique sur la pertinence, au regard des données et de la situation étudiée,
+d’une modélisation par ajustement affine et sur les limites des extrapolations faites dans ce cadre.";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_13_TEXTE_OFFICIEL_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_13;1T;TEXTE_OFFICIEL;"La notion de probabilité conditionnelle permet d'introduire de manière intuitive l’indépendance de deux évènements : deux
+évènements 𝐴 et 𝐵 sont dits indépendants si la probabilité conditionnelle de 𝐴 sachant 𝐵 est égale à la probabilité de 𝐴 (sous
+réserve de la non-nullité de celle de 𝐵).";9;9;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_13_CONTENUS_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_13;1T;CONTENUS;"− Indépendance de deux évènements.
+− Formule des probabilités totales.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_13_CAPACITES_ATTENDUES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_13;1T;CAPACITÉS ATTENDUES;"− Savoir utiliser ou justifier l’indépendance de deux évènements.
+− Dans les cas simples, calculer une probabilité à l’aide de la formule des probabilités totales.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_13_COMMENTAIRES_04;PRG_MAT_1T_2026;ITM_MAT_1T_2026_13;1T;COMMENTAIRES;"− L’indépendance de deux évènements repose sur la définition suivante : pour un évènement A de probabilité non nulle, 𝐵
+est indépendant de 𝐴 si 𝑃𝐴(𝐵) =  𝑃(𝐵). On démontre que la propriété d’indépendance est symétrique lorsque 𝐴 et 𝐵 sont
+de probabilités non nulles.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_14_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_14;1T;CONTENUS;− Probabilité associée à la répétition d’épreuves aléatoires identiques et indépendantes de Bernoulli.;10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_14_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_14;1T;CAPACITÉS ATTENDUES;"− Représenter par un arbre de probabilités la répétition de 𝑛 épreuves aléatoires identiques et indépendantes de Bernoulli
+avec 𝑛⩽4 afin de calculer des probabilités.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_15_CONTENUS_01;PRG_MAT_1T_2026;ITM_MAT_1T_2026_15;1T;CONTENUS;"− Variable aléatoire discrète : loi de probabilité, espérance.
+− Loi de Bernoulli (0,1) de paramètre 𝑝, espérance.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_15_CAPACITES_ATTENDUES_02;PRG_MAT_1T_2026;ITM_MAT_1T_2026_15;1T;CAPACITÉS ATTENDUES;"− Interpréter en situation les écritures {𝑋 =  𝑎}, {𝑋 ⩽ 𝑎} où 𝑋 désigne une variable aléatoire et calculer les probabilités
+correspondantes 𝑃(𝑋 =  𝑎), 𝑃(𝑋 ⩽ 𝑎).
+− Calculer et interpréter en contexte l'espérance d'une variable aléatoire discrète.
+− Reconnaitre une situation aléatoire modélisée par une loi de Bernoulli.
+− Simuler 𝑁 échantillons de taille 𝑛 d’une loi de Bernoulli et représenter les fréquences observées des 1 par un histogramme
+ou un nuage de points.
+− Interpréter sur des exemples la distance à 𝑝 de la fréquence observée des 1 dans un échantillon de taille 𝑛 d’une loi de
+Bernoulli de paramètre 𝑝.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
+ITM_MAT_1T_2026_15_COMMENTAIRES_03;PRG_MAT_1T_2026;ITM_MAT_1T_2026_15;1T;COMMENTAIRES;"− On s’abstient de tout formalisme sur les variables aléatoires. Elles sont essentiellement manipulées en contexte pour
+modéliser des situations dans lesquelles les issues sont des nombres aléatoires.
+− La simulation d'échantillons de taille 𝑛 d'une loi de Bernoulli de paramètre 𝑝 permet d’observer la fluctuation
+d’échantillonnage.
+− Sur des simulations de 𝑁 échantillons (𝑁 de l’ordre de plusieurs centaines), on évalue le pourcentage d’échantillons dont la
+fréquence observée des 1 se situe à une distance 𝑠, 2𝑠 ou 3𝑠 de 𝑝 où 𝑠 désigne l’écart-type de la série des fréquences
+observées. Sans développer de théorie de décision ou de test, et en prenant appui sur des simulations et des
+représentations (histogramme, nuage de points), on fait percevoir, pour une observation donnée, la diversité des
+interprétations possibles de la distance à 𝑝 (paramètre du modèle) de la fréquence des 1 : situation fréquente ou situation
+rare dans le cadre du modèle.
+− Sur des simulations, on constate que la série des fréquences observées des 1 dans 𝑁 échantillons de taille 𝑛 d’une loi de
+Bernoulli a un écart-type de l’ordre de
+1
+√𝑛. Pour plusieurs valeurs de 𝑛 on représente
+1
+√𝑛 en abscisse et, en ordonnée,
+l’écart-type s des fréquences observées des 1 dans 𝑁 échantillons (plusieurs centaines) de taille 𝑛. On peut commenter ce
+résultat en observant que pour diviser la dispersion par 𝑘 il faut multiplier la taille de l’échantillon par 𝑘2.
+Situations algorithmiques (sauf série STD2A)
+− Simuler des échantillons de taille 𝑛 d’une loi de Bernoulli à partir d’un générateur de nombres aléatoires entre 0 et 1.
+− Représenter par un histogramme ou par un nuage de points les fréquences observées des 1 dans 𝑁 échantillons de taille 𝑛
+d’une loi de Bernoulli.
+Compter le nombre de valeurs situées dans un intervalle de la forme [𝑝 - 𝑘𝑠 ;  𝑝 +  𝑘𝑠] pour 𝑘∈{1; 2; 3}.";10;10;SRC_BO_2026_14_MATH_LYCEE;A_VERIFIER_PDF
