@@ -1,5 +1,5 @@
-# Prototype autonome : trois squelettes de problemes de brevet.
-# Utilise uniquement R de base. Source ASCII.
+# Modeles mathematiques de problemes de brevet.
+# R de base. Source ASCII.
 proche = function(x, y, tol = 1e-9) isTRUE(all.equal(as.numeric(x), as.numeric(y), tolerance = tol))
 distance = function(P, Q) sqrt(sum((P - Q)^2))
 croix = function(u, v) u[1] * v[2] - u[2] * v[1]
@@ -66,14 +66,4 @@ probleme_C = function(echelle = 1, seuil = 25) {
        questions = c("Calculer BC par Pythagore.", "Calculer l'angle ABC au dixieme de degre.",
                      "La condition sur l'angle est-elle respectee ? Justifier."),
        points = c(3, 4, 3))
-}
-banque = list(probleme_A(1, 1 / 2), probleme_A(2, 1 / 3),
-              probleme_B(1), probleme_B(2),
-              probleme_C(1, 25), probleme_C(2, 20))
-for (p in banque) {
-  verifier(length(p$questions) == length(p$points), "Bareme incoherent")
-  verifier(sum(p$points) == 10, "Bareme different de 10 points")
-  cat("\n", p$id, " : ", paste(p$questions, collapse = " | "), "\n", sep = "")
-  print(p$donnees)
-  print(p$resultats)
 }
