@@ -30,6 +30,6 @@ Il faut d’abord identifier la nature des nombres ou des expressions, puis choi
 
 ## Pour vérifier tes découvertes
 
-**1. Un exemple immédiat**
+1. **Un exemple immédiat :**
 
 L’explication doit utiliser la définition ou la propriété donnée dans la fiche. Un nouvel exemple est correct s’il respecte exactement la même propriété et si le résultat peut être vérifié en revenant au calcul de départ.

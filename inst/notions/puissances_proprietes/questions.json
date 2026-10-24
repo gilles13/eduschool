@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PUI-PROP-VAR",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Simplifie [[expr]].",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -21,7 +22,12 @@
             "d1": "2^6",
             "d2": "2^1",
             "d3": "4^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5.",
+            "base_exploitable": 2,
+            "exposant_1": 2,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 1
         },
@@ -32,7 +38,12 @@
             "d1": "2^6",
             "d2": "2^1",
             "d3": "4^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5.",
+            "base_exploitable": 2,
+            "exposant_1": 3,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 1
         },
@@ -43,7 +54,12 @@
             "d1": "2^12",
             "d2": "2^1",
             "d3": "4^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7.",
+            "base_exploitable": 2,
+            "exposant_1": 4,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 1
         },
@@ -54,7 +70,12 @@
             "d1": "2^10",
             "d2": "2^3",
             "d3": "4^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7.",
+            "base_exploitable": 2,
+            "exposant_1": 5,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 1
         },
@@ -65,7 +86,12 @@
             "d1": "2^12",
             "d2": "2^1",
             "d3": "4^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7.",
+            "base_exploitable": 2,
+            "exposant_1": 3,
+            "exposant_2": 4,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 1
         },
@@ -76,7 +102,12 @@
             "d1": "2^12",
             "d2": "2^4",
             "d3": "4^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8.",
+            "base_exploitable": 2,
+            "exposant_1": 6,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 1
         },
@@ -87,7 +118,12 @@
             "d1": "2^15",
             "d2": "2^2",
             "d3": "4^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8.",
+            "base_exploitable": 2,
+            "exposant_1": 5,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 1
         },
@@ -98,7 +134,12 @@
             "d1": "2^20",
             "d2": "2^1",
             "d3": "4^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9.",
+            "base_exploitable": 2,
+            "exposant_1": 4,
+            "exposant_2": 5,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 1
         },
@@ -109,7 +150,12 @@
             "d1": "2^14",
             "d2": "2^5",
             "d3": "4^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9.",
+            "base_exploitable": 2,
+            "exposant_1": 7,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 1
         },
@@ -120,7 +166,12 @@
             "d1": "2^18",
             "d2": "2^3",
             "d3": "4^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9.",
+            "base_exploitable": 2,
+            "exposant_1": 6,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 1
         },
@@ -131,7 +182,12 @@
             "d1": "3^6",
             "d2": "3^1",
             "d3": "6^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5.",
+            "base_exploitable": 3,
+            "exposant_1": 2,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 1
         },
@@ -142,7 +198,12 @@
             "d1": "3^6",
             "d2": "3^1",
             "d3": "6^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5.",
+            "base_exploitable": 3,
+            "exposant_1": 3,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 1
         },
@@ -153,7 +214,12 @@
             "d1": "3^12",
             "d2": "3^1",
             "d3": "6^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7.",
+            "base_exploitable": 3,
+            "exposant_1": 4,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 1
         },
@@ -164,7 +230,12 @@
             "d1": "3^10",
             "d2": "3^3",
             "d3": "6^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7.",
+            "base_exploitable": 3,
+            "exposant_1": 5,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 1
         },
@@ -175,7 +246,12 @@
             "d1": "3^12",
             "d2": "3^1",
             "d3": "6^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7.",
+            "base_exploitable": 3,
+            "exposant_1": 3,
+            "exposant_2": 4,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 1
         },
@@ -186,7 +262,12 @@
             "d1": "3^12",
             "d2": "3^4",
             "d3": "6^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8.",
+            "base_exploitable": 3,
+            "exposant_1": 6,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 1
         },
@@ -197,7 +278,12 @@
             "d1": "3^15",
             "d2": "3^2",
             "d3": "6^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8.",
+            "base_exploitable": 3,
+            "exposant_1": 5,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 1
         },
@@ -208,7 +294,12 @@
             "d1": "3^20",
             "d2": "3^1",
             "d3": "6^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9.",
+            "base_exploitable": 3,
+            "exposant_1": 4,
+            "exposant_2": 5,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 2
         },
@@ -219,7 +310,12 @@
             "d1": "3^14",
             "d2": "3^5",
             "d3": "6^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9.",
+            "base_exploitable": 3,
+            "exposant_1": 7,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 2
         },
@@ -230,7 +326,12 @@
             "d1": "3^18",
             "d2": "3^3",
             "d3": "6^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9.",
+            "base_exploitable": 3,
+            "exposant_1": 6,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 2
         },
@@ -241,7 +342,12 @@
             "d1": "4^6",
             "d2": "4^1",
             "d3": "8^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5.",
+            "base_exploitable": 4,
+            "exposant_1": 2,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 2
         },
@@ -252,7 +358,12 @@
             "d1": "4^6",
             "d2": "4^1",
             "d3": "8^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5.",
+            "base_exploitable": 4,
+            "exposant_1": 3,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 2
         },
@@ -263,7 +374,12 @@
             "d1": "4^12",
             "d2": "4^1",
             "d3": "8^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7.",
+            "base_exploitable": 4,
+            "exposant_1": 4,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 2
         },
@@ -274,7 +390,12 @@
             "d1": "4^10",
             "d2": "4^3",
             "d3": "8^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7.",
+            "base_exploitable": 4,
+            "exposant_1": 5,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 2
         },
@@ -285,7 +406,12 @@
             "d1": "4^12",
             "d2": "4^1",
             "d3": "8^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7.",
+            "base_exploitable": 4,
+            "exposant_1": 3,
+            "exposant_2": 4,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 2
         },
@@ -296,7 +422,12 @@
             "d1": "4^12",
             "d2": "4^4",
             "d3": "8^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8.",
+            "base_exploitable": 4,
+            "exposant_1": 6,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 2
         },
@@ -307,7 +438,12 @@
             "d1": "4^15",
             "d2": "4^2",
             "d3": "8^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8.",
+            "base_exploitable": 4,
+            "exposant_1": 5,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 2
         },
@@ -318,7 +454,12 @@
             "d1": "4^20",
             "d2": "4^1",
             "d3": "8^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9.",
+            "base_exploitable": 4,
+            "exposant_1": 4,
+            "exposant_2": 5,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 2
         },
@@ -329,7 +470,12 @@
             "d1": "4^14",
             "d2": "4^5",
             "d3": "8^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9.",
+            "base_exploitable": 4,
+            "exposant_1": 7,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 2
         },
@@ -340,7 +486,12 @@
             "d1": "4^18",
             "d2": "4^3",
             "d3": "8^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9.",
+            "base_exploitable": 4,
+            "exposant_1": 6,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 2
         },
@@ -351,7 +502,12 @@
             "d1": "5^6",
             "d2": "5^1",
             "d3": "10^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5.",
+            "base_exploitable": 5,
+            "exposant_1": 2,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 2
         },
@@ -362,7 +518,12 @@
             "d1": "5^6",
             "d2": "5^1",
             "d3": "10^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5.",
+            "base_exploitable": 5,
+            "exposant_1": 3,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 2
         },
@@ -373,7 +534,12 @@
             "d1": "5^12",
             "d2": "5^1",
             "d3": "10^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7.",
+            "base_exploitable": 5,
+            "exposant_1": 4,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 2
         },
@@ -384,7 +550,12 @@
             "d1": "5^10",
             "d2": "5^3",
             "d3": "10^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7.",
+            "base_exploitable": 5,
+            "exposant_1": 5,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 2
         },
@@ -395,7 +566,12 @@
             "d1": "5^12",
             "d2": "5^1",
             "d3": "10^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7.",
+            "base_exploitable": 5,
+            "exposant_1": 3,
+            "exposant_2": 4,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 3
         },
@@ -406,7 +582,12 @@
             "d1": "5^12",
             "d2": "5^4",
             "d3": "10^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8.",
+            "base_exploitable": 5,
+            "exposant_1": 6,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 3
         },
@@ -417,7 +598,12 @@
             "d1": "5^15",
             "d2": "5^2",
             "d3": "10^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8.",
+            "base_exploitable": 5,
+            "exposant_1": 5,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 3
         },
@@ -428,7 +614,12 @@
             "d1": "5^20",
             "d2": "5^1",
             "d3": "10^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9.",
+            "base_exploitable": 5,
+            "exposant_1": 4,
+            "exposant_2": 5,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 3
         },
@@ -439,7 +630,12 @@
             "d1": "5^14",
             "d2": "5^5",
             "d3": "10^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9.",
+            "base_exploitable": 5,
+            "exposant_1": 7,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 3
         },
@@ -450,7 +646,12 @@
             "d1": "5^18",
             "d2": "5^3",
             "d3": "10^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9.",
+            "base_exploitable": 5,
+            "exposant_1": 6,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 3
         },
@@ -461,7 +662,12 @@
             "d1": "7^6",
             "d2": "7^1",
             "d3": "14^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 2 + 3 = 5.",
+            "base_exploitable": 7,
+            "exposant_1": 2,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 3
         },
@@ -472,7 +678,12 @@
             "d1": "7^6",
             "d2": "7^1",
             "d3": "14^5",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 2 = 5.",
+            "base_exploitable": 7,
+            "exposant_1": 3,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 5
           },
           "progression": 3
         },
@@ -483,7 +694,12 @@
             "d1": "7^12",
             "d2": "7^1",
             "d3": "14^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 3 = 7.",
+            "base_exploitable": 7,
+            "exposant_1": 4,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 3
         },
@@ -494,7 +710,12 @@
             "d1": "7^10",
             "d2": "7^3",
             "d3": "14^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 2 = 7.",
+            "base_exploitable": 7,
+            "exposant_1": 5,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 3
         },
@@ -505,7 +726,12 @@
             "d1": "7^12",
             "d2": "7^1",
             "d3": "14^7",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 3 + 4 = 7.",
+            "base_exploitable": 7,
+            "exposant_1": 3,
+            "exposant_2": 4,
+            "operation_exploitable": 1,
+            "exposant_resultat": 7
           },
           "progression": 3
         },
@@ -516,7 +742,12 @@
             "d1": "7^12",
             "d2": "7^4",
             "d3": "14^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 2 = 8.",
+            "base_exploitable": 7,
+            "exposant_1": 6,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 3
         },
@@ -527,7 +758,12 @@
             "d1": "7^15",
             "d2": "7^2",
             "d3": "14^8",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 5 + 3 = 8.",
+            "base_exploitable": 7,
+            "exposant_1": 5,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 8
           },
           "progression": 3
         },
@@ -538,7 +774,12 @@
             "d1": "7^20",
             "d2": "7^1",
             "d3": "14^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 4 + 5 = 9.",
+            "base_exploitable": 7,
+            "exposant_1": 4,
+            "exposant_2": 5,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 3
         },
@@ -549,7 +790,12 @@
             "d1": "7^14",
             "d2": "7^5",
             "d3": "14^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 7 + 2 = 9.",
+            "base_exploitable": 7,
+            "exposant_1": 7,
+            "exposant_2": 2,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 3
         },
@@ -560,15 +806,24 @@
             "d1": "7^18",
             "d2": "7^3",
             "d3": "14^9",
-            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9."
+            "correction": "Pour un produit de puissances de même base, on additionne les exposants : 6 + 3 = 9.",
+            "base_exploitable": 7,
+            "exposant_1": 6,
+            "exposant_2": 3,
+            "operation_exploitable": 1,
+            "exposant_resultat": 9
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "exposant_1 + operation_exploitable * exposant_2",
+      "reponse_exploitable": "exposant_resultat",
+      "moteur": "R"
     },
     {
       "id": "PUI-013",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -581,6 +836,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": 2,
+            "valeur_3": 4,
+            "resultat_exploitable": 6561,
             "enonce": "Quelle expression simplifie (3²)⁴ ?",
             "reponse": "3⁸",
             "correction": "Une puissance de puissance multiplie les exposants : 2 × 4 = 8.",
@@ -592,6 +851,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": 2,
+            "valeur_3": 3,
+            "resultat_exploitable": 15625,
             "enonce": "Quelle expression simplifie (5²)³ ?",
             "reponse": "5⁶",
             "correction": "(a^m)^n = a^(mn), donc (5²)³ = 5⁶.",
@@ -603,6 +866,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": 3,
+            "valeur_3": 4,
+            "resultat_exploitable": 4096,
             "enonce": "Quelle expression simplifie (2³)⁴ ?",
             "reponse": "2¹²",
             "correction": "(a^m)^n = a^(mn), donc (2³)⁴ = 2¹².",
@@ -612,11 +879,15 @@
             "p4": "8⁷"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 * valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-021",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "Pour a et b non nuls, quelle égalité est toujours vraie ?",
       "reponse": "(a / b)² = a² / b²",
       "propositions": [
@@ -625,11 +896,15 @@
         "a² + a³ = a⁵",
         "a² / b² = a / b"
       ],
-      "correction": "La puissance d’un quotient est le quotient des puissances lorsque le dénominateur est non nul."
+      "correction": "La puissance d’un quotient est le quotient des puissances lorsque le dénominateur est non nul.",
+      "enonce_exploitable": "(a/b)^2",
+      "reponse_exploitable": "a^2/b^2",
+      "moteur": "Ryacas"
     },
     {
       "id": "PUI-024",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -642,6 +917,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 8,
+            "valeur_2": 2,
+            "resultat_exploitable": 64,
             "enonce": "Quelle expression est égale à 8² ?",
             "reponse": "2⁶",
             "correction": "8 = 2³, donc (2³)² = 2⁶.",
@@ -653,6 +931,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": 3,
+            "resultat_exploitable": 64,
             "enonce": "Quelle expression est égale à 4³ ?",
             "reponse": "2⁶",
             "correction": "4³ = (2²)³ = 2⁶.",
@@ -664,6 +945,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 16,
+            "valeur_2": 2,
+            "resultat_exploitable": 256,
             "enonce": "Quelle expression est égale à 16² ?",
             "reponse": "2⁸",
             "correction": "16² = (2⁴)² = 2⁸.",
@@ -673,7 +957,10 @@
             "p4": "8²"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

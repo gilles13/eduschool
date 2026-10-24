@@ -1,4 +1,10 @@
-# L’essentiel : Comparer et ranger des décimaux
+# L'essentiel : Comparer et ranger des décimaux
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Comparer des décimaux consiste à établir leur ordre ou leur égalité.
+:::
 
 4,09 < 4,9 car 4,09 < 4,90. Attention : compter les chiffres après la virgule ne suffit pas.
 

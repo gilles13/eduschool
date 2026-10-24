@@ -1,4 +1,4 @@
-# Découvrir l'équation et le produit nul
+# Découvrir : l'équation et le produit nul
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

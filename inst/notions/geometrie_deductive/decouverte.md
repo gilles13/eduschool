@@ -1,4 +1,10 @@
-# De la figure au raisonnement
+# Découvrir : De la figure au raisonnement
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+En **géométrie déductive**, on justifie une conclusion à partir des données et de propriétés mathématiques établies, plutôt qu’en se fiant à l’apparence d’une figure.
+:::
 
 Une figure à main levée **suggère** ; les codages et l’énoncé **donnent des informations**. On ne démontre pas qu’un angle est droit parce qu’il en a l’air.
 

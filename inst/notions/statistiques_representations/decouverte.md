@@ -28,6 +28,6 @@ Une bonne représentation ne change pas les données : elle aide à voir une inf
 
 ## Pour vérifier tes découvertes
 
-**1. Fréquence**
+1. **Fréquence :**
 
 La fréquence est $10/25=0,4$, soit 40 %.

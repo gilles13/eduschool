@@ -1,4 +1,10 @@
-# Théorème de Pythagore : l’essentiel
+# L'essentiel : Théorème de Pythagore : l’essentiel
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Dans un triangle rectangle, le carré de l’hypoténuse est la somme des carrés des deux autres côtés.
+:::
 
 **Condition :** le triangle est rectangle.
 

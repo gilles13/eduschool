@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : la fonction carré associe à tout nombre réel son carré : f(𝑥)=𝑥². Vérifie ensuite ton exemple avec la méthode de la fiche : calculer le carré et exploiter la symétrie entre 𝑥 et −𝑥.

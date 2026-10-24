@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "ENCADREMENT_DECIMAUX-001",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,11 @@
             "p1": "13 < 13,4 < 14",
             "p2": "12 < 13,4 < 14",
             "p3": "13 < 13,4 < 15",
-            "p4": "13,3 < 13,4 < 13,5"
+            "p4": "13,3 < 13,4 < 13,5",
+            "borne_inf_exploitable": 13,
+            "nombre_exploitable": 13.4,
+            "borne_sup_exploitable": 14,
+            "result_exploitable": 0.4
           }
         },
         {
@@ -33,7 +38,11 @@
             "p1": "23 < 23,4 < 24",
             "p2": "22 < 23,4 < 24",
             "p3": "23 < 23,4 < 25",
-            "p4": "23,3 < 23,4 < 23,5"
+            "p4": "23,3 < 23,4 < 23,5",
+            "borne_inf_exploitable": 23,
+            "nombre_exploitable": 23.4,
+            "borne_sup_exploitable": 24,
+            "result_exploitable": 0.4
           }
         },
         {
@@ -44,14 +53,22 @@
             "p1": "33 < 33,4 < 34",
             "p2": "32 < 33,4 < 34",
             "p3": "33 < 33,4 < 35",
-            "p4": "33,3 < 33,4 < 33,5"
+            "p4": "33,3 < 33,4 < 33,5",
+            "borne_inf_exploitable": 33,
+            "nombre_exploitable": 33.4,
+            "borne_sup_exploitable": 34,
+            "result_exploitable": 0.4
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "min(nombre_exploitable - borne_inf_exploitable, borne_sup_exploitable - nombre_exploitable)",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ENCADREMENT_DECIMAUX-002",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +87,11 @@
             "p1": "2,7 < 2,76 < 2,8",
             "p2": "2,6 < 2,76 < 2,8",
             "p3": "2,7 < 2,76 < 2,9",
-            "p4": "2,75 < 2,76 < 2,77"
+            "p4": "2,75 < 2,76 < 2,77",
+            "borne_inf_exploitable": 2.7,
+            "nombre_exploitable": 2.76,
+            "borne_sup_exploitable": 2.8,
+            "result_exploitable": 0.04
           }
         },
         {
@@ -81,7 +102,11 @@
             "p1": "12,7 < 12,76 < 12,8",
             "p2": "12,6 < 12,76 < 12,8",
             "p3": "12,7 < 12,76 < 12,9",
-            "p4": "12,75 < 12,76 < 12,77"
+            "p4": "12,75 < 12,76 < 12,77",
+            "borne_inf_exploitable": 12.7,
+            "nombre_exploitable": 12.76,
+            "borne_sup_exploitable": 12.8,
+            "result_exploitable": 0.04
           }
         },
         {
@@ -92,14 +117,22 @@
             "p1": "22,7 < 22,76 < 22,8",
             "p2": "22,6 < 22,76 < 22,8",
             "p3": "22,7 < 22,76 < 22,9",
-            "p4": "22,75 < 22,76 < 22,77"
+            "p4": "22,75 < 22,76 < 22,77",
+            "borne_inf_exploitable": 22.7,
+            "nombre_exploitable": 22.76,
+            "borne_sup_exploitable": 22.8,
+            "result_exploitable": 0.04
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "min(nombre_exploitable - borne_inf_exploitable, borne_sup_exploitable - nombre_exploitable)",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ENCADREMENT_DECIMAUX-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +151,11 @@
             "p1": "6,25",
             "p2": "6,31",
             "p3": "6,19",
-            "p4": "6,30"
+            "p4": "6,30",
+            "borne_inf_exploitable": 6.2,
+            "nombre_exploitable": 6.25,
+            "borne_sup_exploitable": 6.3,
+            "result_exploitable": 0.05
           }
         },
         {
@@ -129,7 +166,11 @@
             "p1": "16,25",
             "p2": "16,31",
             "p3": "16,19",
-            "p4": "16,3"
+            "p4": "16,3",
+            "borne_inf_exploitable": 16.2,
+            "nombre_exploitable": 16.25,
+            "borne_sup_exploitable": 16.3,
+            "result_exploitable": 0.05
           }
         },
         {
@@ -140,14 +181,22 @@
             "p1": "26,25",
             "p2": "26,31",
             "p3": "26,19",
-            "p4": "26,3"
+            "p4": "26,3",
+            "borne_inf_exploitable": 26.2,
+            "nombre_exploitable": 26.25,
+            "borne_sup_exploitable": 26.3,
+            "result_exploitable": 0.05
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "min(nombre_exploitable - borne_inf_exploitable, borne_sup_exploitable - nombre_exploitable)",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ENCADREMENT_DECIMAUX-004",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -166,7 +215,11 @@
             "p1": "3,45 < 3,456 < 3,46",
             "p2": "3,4 < 3,456 < 3,5",
             "p3": "3,45 < 3,456 < 3,47",
-            "p4": "3,456 < 3,456 < 3,46"
+            "p4": "3,456 < 3,456 < 3,46",
+            "borne_inf_exploitable": 3.45,
+            "nombre_exploitable": 3.456,
+            "borne_sup_exploitable": 3.46,
+            "result_exploitable": 0.004
           }
         },
         {
@@ -177,7 +230,11 @@
             "p1": "13,45 < 13,456 < 13,46",
             "p2": "13,4 < 13,456 < 13,5",
             "p3": "13,45 < 13,456 < 13,47",
-            "p4": "13,456 < 13,456 < 13,46"
+            "p4": "13,456 < 13,456 < 13,46",
+            "borne_inf_exploitable": 13.45,
+            "nombre_exploitable": 13.456,
+            "borne_sup_exploitable": 13.46,
+            "result_exploitable": 0.004
           }
         },
         {
@@ -188,14 +245,22 @@
             "p1": "23,45 < 23,456 < 23,46",
             "p2": "23,4 < 23,456 < 23,5",
             "p3": "23,45 < 23,456 < 23,47",
-            "p4": "23,456 < 23,456 < 23,46"
+            "p4": "23,456 < 23,456 < 23,46",
+            "borne_inf_exploitable": 23.45,
+            "nombre_exploitable": 23.456,
+            "borne_sup_exploitable": 23.46,
+            "result_exploitable": 0.004
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "min(nombre_exploitable - borne_inf_exploitable, borne_sup_exploitable - nombre_exploitable)",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ENCADREMENT_DECIMAUX-MOT_A_TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on le fait de placer un nombre entre une borne inférieure et une borne supérieure ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -213,11 +278,15 @@
         "classement",
         "quotient"
       ],
-      "correction": "Un encadrement donne deux bornes situées de part et d’autre du nombre."
+      "correction": "Un encadrement donne deux bornes situées de part et d’autre du nombre.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ENCADREMENT_DECIMAUX-MOT_MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on le fait de placer un nombre entre une borne inférieure et une borne supérieure ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -236,7 +305,1606 @@
         "classement",
         "quotient"
       ],
-      "correction": "Un encadrement donne deux bornes situées de part et d’autre du nombre."
+      "correction": "Un encadrement donne deux bornes situées de part et d’autre du nombre.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "TRANSVERSAL_DECIMAUX-DECOMPOSITION-ENCADREMENT-001",
+      "capacite": "comparer",
+      "type_question": "classique",
+      "portee": "famille",
+      "niveau": "6E",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "unites": 12,
+            "dixiemes": 4,
+            "borne_inf": 12,
+            "borne_sup": 13,
+            "resultat_exploitable": 12.4,
+            "enonce": "Un nombre se décompose en 12 unités et 4 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "12 < 12,4 < 13",
+            "correction": "12 unités et 4 dixièmes donnent 12,4, strictement compris entre 12 et 13.",
+            "p1": "12 < 12,4 < 13",
+            "p2": "11 < 12,4 < 13",
+            "p3": "12 < 12,4 < 14",
+            "p4": "13 < 12,4 < 14"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 13,
+            "dixiemes": 2,
+            "borne_inf": 13,
+            "borne_sup": 14,
+            "resultat_exploitable": 13.2,
+            "enonce": "Un nombre se décompose en 13 unités et 2 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "13 < 13,2 < 14",
+            "correction": "13 unités et 2 dixièmes donnent 13,2, strictement compris entre 13 et 14.",
+            "p1": "13 < 13,2 < 14",
+            "p2": "12 < 13,2 < 14",
+            "p3": "13 < 13,2 < 15",
+            "p4": "14 < 13,2 < 15"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 14,
+            "dixiemes": 9,
+            "borne_inf": 14,
+            "borne_sup": 15,
+            "resultat_exploitable": 14.9,
+            "enonce": "Un nombre se décompose en 14 unités et 9 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "14 < 14,9 < 15",
+            "correction": "14 unités et 9 dixièmes donnent 14,9, strictement compris entre 14 et 15.",
+            "p1": "14 < 14,9 < 15",
+            "p2": "13 < 14,9 < 15",
+            "p3": "14 < 14,9 < 16",
+            "p4": "15 < 14,9 < 16"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 15,
+            "dixiemes": 7,
+            "borne_inf": 15,
+            "borne_sup": 16,
+            "resultat_exploitable": 15.7,
+            "enonce": "Un nombre se décompose en 15 unités et 7 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "15 < 15,7 < 16",
+            "correction": "15 unités et 7 dixièmes donnent 15,7, strictement compris entre 15 et 16.",
+            "p1": "15 < 15,7 < 16",
+            "p2": "14 < 15,7 < 16",
+            "p3": "15 < 15,7 < 17",
+            "p4": "16 < 15,7 < 17"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 16,
+            "dixiemes": 5,
+            "borne_inf": 16,
+            "borne_sup": 17,
+            "resultat_exploitable": 16.5,
+            "enonce": "Un nombre se décompose en 16 unités et 5 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "16 < 16,5 < 17",
+            "correction": "16 unités et 5 dixièmes donnent 16,5, strictement compris entre 16 et 17.",
+            "p1": "16 < 16,5 < 17",
+            "p2": "15 < 16,5 < 17",
+            "p3": "16 < 16,5 < 18",
+            "p4": "17 < 16,5 < 18"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 17,
+            "dixiemes": 3,
+            "borne_inf": 17,
+            "borne_sup": 18,
+            "resultat_exploitable": 17.3,
+            "enonce": "Un nombre se décompose en 17 unités et 3 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "17 < 17,3 < 18",
+            "correction": "17 unités et 3 dixièmes donnent 17,3, strictement compris entre 17 et 18.",
+            "p1": "17 < 17,3 < 18",
+            "p2": "16 < 17,3 < 18",
+            "p3": "17 < 17,3 < 19",
+            "p4": "18 < 17,3 < 19"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 18,
+            "dixiemes": 1,
+            "borne_inf": 18,
+            "borne_sup": 19,
+            "resultat_exploitable": 18.1,
+            "enonce": "Un nombre se décompose en 18 unités et 1 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "18 < 18,1 < 19",
+            "correction": "18 unités et 1 dixièmes donnent 18,1, strictement compris entre 18 et 19.",
+            "p1": "18 < 18,1 < 19",
+            "p2": "17 < 18,1 < 19",
+            "p3": "18 < 18,1 < 20",
+            "p4": "19 < 18,1 < 20"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 19,
+            "dixiemes": 8,
+            "borne_inf": 19,
+            "borne_sup": 20,
+            "resultat_exploitable": 19.8,
+            "enonce": "Un nombre se décompose en 19 unités et 8 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "19 < 19,8 < 20",
+            "correction": "19 unités et 8 dixièmes donnent 19,8, strictement compris entre 19 et 20.",
+            "p1": "19 < 19,8 < 20",
+            "p2": "18 < 19,8 < 20",
+            "p3": "19 < 19,8 < 21",
+            "p4": "20 < 19,8 < 21"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 20,
+            "dixiemes": 6,
+            "borne_inf": 20,
+            "borne_sup": 21,
+            "resultat_exploitable": 20.6,
+            "enonce": "Un nombre se décompose en 20 unités et 6 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "20 < 20,6 < 21",
+            "correction": "20 unités et 6 dixièmes donnent 20,6, strictement compris entre 20 et 21.",
+            "p1": "20 < 20,6 < 21",
+            "p2": "19 < 20,6 < 21",
+            "p3": "20 < 20,6 < 22",
+            "p4": "21 < 20,6 < 22"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 21,
+            "dixiemes": 4,
+            "borne_inf": 21,
+            "borne_sup": 22,
+            "resultat_exploitable": 21.4,
+            "enonce": "Un nombre se décompose en 21 unités et 4 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "21 < 21,4 < 22",
+            "correction": "21 unités et 4 dixièmes donnent 21,4, strictement compris entre 21 et 22.",
+            "p1": "21 < 21,4 < 22",
+            "p2": "20 < 21,4 < 22",
+            "p3": "21 < 21,4 < 23",
+            "p4": "22 < 21,4 < 23"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 22,
+            "dixiemes": 2,
+            "borne_inf": 22,
+            "borne_sup": 23,
+            "resultat_exploitable": 22.2,
+            "enonce": "Un nombre se décompose en 22 unités et 2 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "22 < 22,2 < 23",
+            "correction": "22 unités et 2 dixièmes donnent 22,2, strictement compris entre 22 et 23.",
+            "p1": "22 < 22,2 < 23",
+            "p2": "21 < 22,2 < 23",
+            "p3": "22 < 22,2 < 24",
+            "p4": "23 < 22,2 < 24"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 23,
+            "dixiemes": 9,
+            "borne_inf": 23,
+            "borne_sup": 24,
+            "resultat_exploitable": 23.9,
+            "enonce": "Un nombre se décompose en 23 unités et 9 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "23 < 23,9 < 24",
+            "correction": "23 unités et 9 dixièmes donnent 23,9, strictement compris entre 23 et 24.",
+            "p1": "23 < 23,9 < 24",
+            "p2": "22 < 23,9 < 24",
+            "p3": "23 < 23,9 < 25",
+            "p4": "24 < 23,9 < 25"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 24,
+            "dixiemes": 7,
+            "borne_inf": 24,
+            "borne_sup": 25,
+            "resultat_exploitable": 24.7,
+            "enonce": "Un nombre se décompose en 24 unités et 7 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "24 < 24,7 < 25",
+            "correction": "24 unités et 7 dixièmes donnent 24,7, strictement compris entre 24 et 25.",
+            "p1": "24 < 24,7 < 25",
+            "p2": "23 < 24,7 < 25",
+            "p3": "24 < 24,7 < 26",
+            "p4": "25 < 24,7 < 26"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 25,
+            "dixiemes": 5,
+            "borne_inf": 25,
+            "borne_sup": 26,
+            "resultat_exploitable": 25.5,
+            "enonce": "Un nombre se décompose en 25 unités et 5 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "25 < 25,5 < 26",
+            "correction": "25 unités et 5 dixièmes donnent 25,5, strictement compris entre 25 et 26.",
+            "p1": "25 < 25,5 < 26",
+            "p2": "24 < 25,5 < 26",
+            "p3": "25 < 25,5 < 27",
+            "p4": "26 < 25,5 < 27"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 26,
+            "dixiemes": 3,
+            "borne_inf": 26,
+            "borne_sup": 27,
+            "resultat_exploitable": 26.3,
+            "enonce": "Un nombre se décompose en 26 unités et 3 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "26 < 26,3 < 27",
+            "correction": "26 unités et 3 dixièmes donnent 26,3, strictement compris entre 26 et 27.",
+            "p1": "26 < 26,3 < 27",
+            "p2": "25 < 26,3 < 27",
+            "p3": "26 < 26,3 < 28",
+            "p4": "27 < 26,3 < 28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 27,
+            "dixiemes": 1,
+            "borne_inf": 27,
+            "borne_sup": 28,
+            "resultat_exploitable": 27.1,
+            "enonce": "Un nombre se décompose en 27 unités et 1 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "27 < 27,1 < 28",
+            "correction": "27 unités et 1 dixièmes donnent 27,1, strictement compris entre 27 et 28.",
+            "p1": "27 < 27,1 < 28",
+            "p2": "26 < 27,1 < 28",
+            "p3": "27 < 27,1 < 29",
+            "p4": "28 < 27,1 < 29"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 28,
+            "dixiemes": 8,
+            "borne_inf": 28,
+            "borne_sup": 29,
+            "resultat_exploitable": 28.8,
+            "enonce": "Un nombre se décompose en 28 unités et 8 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "28 < 28,8 < 29",
+            "correction": "28 unités et 8 dixièmes donnent 28,8, strictement compris entre 28 et 29.",
+            "p1": "28 < 28,8 < 29",
+            "p2": "27 < 28,8 < 29",
+            "p3": "28 < 28,8 < 30",
+            "p4": "29 < 28,8 < 30"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 29,
+            "dixiemes": 6,
+            "borne_inf": 29,
+            "borne_sup": 30,
+            "resultat_exploitable": 29.6,
+            "enonce": "Un nombre se décompose en 29 unités et 6 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "29 < 29,6 < 30",
+            "correction": "29 unités et 6 dixièmes donnent 29,6, strictement compris entre 29 et 30.",
+            "p1": "29 < 29,6 < 30",
+            "p2": "28 < 29,6 < 30",
+            "p3": "29 < 29,6 < 31",
+            "p4": "30 < 29,6 < 31"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 30,
+            "dixiemes": 4,
+            "borne_inf": 30,
+            "borne_sup": 31,
+            "resultat_exploitable": 30.4,
+            "enonce": "Un nombre se décompose en 30 unités et 4 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "30 < 30,4 < 31",
+            "correction": "30 unités et 4 dixièmes donnent 30,4, strictement compris entre 30 et 31.",
+            "p1": "30 < 30,4 < 31",
+            "p2": "29 < 30,4 < 31",
+            "p3": "30 < 30,4 < 32",
+            "p4": "31 < 30,4 < 32"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 31,
+            "dixiemes": 2,
+            "borne_inf": 31,
+            "borne_sup": 32,
+            "resultat_exploitable": 31.2,
+            "enonce": "Un nombre se décompose en 31 unités et 2 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "31 < 31,2 < 32",
+            "correction": "31 unités et 2 dixièmes donnent 31,2, strictement compris entre 31 et 32.",
+            "p1": "31 < 31,2 < 32",
+            "p2": "30 < 31,2 < 32",
+            "p3": "31 < 31,2 < 33",
+            "p4": "32 < 31,2 < 33"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 32,
+            "dixiemes": 9,
+            "borne_inf": 32,
+            "borne_sup": 33,
+            "resultat_exploitable": 32.9,
+            "enonce": "Un nombre se décompose en 32 unités et 9 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "32 < 32,9 < 33",
+            "correction": "32 unités et 9 dixièmes donnent 32,9, strictement compris entre 32 et 33.",
+            "p1": "32 < 32,9 < 33",
+            "p2": "31 < 32,9 < 33",
+            "p3": "32 < 32,9 < 34",
+            "p4": "33 < 32,9 < 34"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 33,
+            "dixiemes": 7,
+            "borne_inf": 33,
+            "borne_sup": 34,
+            "resultat_exploitable": 33.7,
+            "enonce": "Un nombre se décompose en 33 unités et 7 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "33 < 33,7 < 34",
+            "correction": "33 unités et 7 dixièmes donnent 33,7, strictement compris entre 33 et 34.",
+            "p1": "33 < 33,7 < 34",
+            "p2": "32 < 33,7 < 34",
+            "p3": "33 < 33,7 < 35",
+            "p4": "34 < 33,7 < 35"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 34,
+            "dixiemes": 5,
+            "borne_inf": 34,
+            "borne_sup": 35,
+            "resultat_exploitable": 34.5,
+            "enonce": "Un nombre se décompose en 34 unités et 5 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "34 < 34,5 < 35",
+            "correction": "34 unités et 5 dixièmes donnent 34,5, strictement compris entre 34 et 35.",
+            "p1": "34 < 34,5 < 35",
+            "p2": "33 < 34,5 < 35",
+            "p3": "34 < 34,5 < 36",
+            "p4": "35 < 34,5 < 36"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 35,
+            "dixiemes": 3,
+            "borne_inf": 35,
+            "borne_sup": 36,
+            "resultat_exploitable": 35.3,
+            "enonce": "Un nombre se décompose en 35 unités et 3 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "35 < 35,3 < 36",
+            "correction": "35 unités et 3 dixièmes donnent 35,3, strictement compris entre 35 et 36.",
+            "p1": "35 < 35,3 < 36",
+            "p2": "34 < 35,3 < 36",
+            "p3": "35 < 35,3 < 37",
+            "p4": "36 < 35,3 < 37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 36,
+            "dixiemes": 1,
+            "borne_inf": 36,
+            "borne_sup": 37,
+            "resultat_exploitable": 36.1,
+            "enonce": "Un nombre se décompose en 36 unités et 1 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "36 < 36,1 < 37",
+            "correction": "36 unités et 1 dixièmes donnent 36,1, strictement compris entre 36 et 37.",
+            "p1": "36 < 36,1 < 37",
+            "p2": "35 < 36,1 < 37",
+            "p3": "36 < 36,1 < 38",
+            "p4": "37 < 36,1 < 38"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 37,
+            "dixiemes": 8,
+            "borne_inf": 37,
+            "borne_sup": 38,
+            "resultat_exploitable": 37.8,
+            "enonce": "Un nombre se décompose en 37 unités et 8 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "37 < 37,8 < 38",
+            "correction": "37 unités et 8 dixièmes donnent 37,8, strictement compris entre 37 et 38.",
+            "p1": "37 < 37,8 < 38",
+            "p2": "36 < 37,8 < 38",
+            "p3": "37 < 37,8 < 39",
+            "p4": "38 < 37,8 < 39"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 38,
+            "dixiemes": 6,
+            "borne_inf": 38,
+            "borne_sup": 39,
+            "resultat_exploitable": 38.6,
+            "enonce": "Un nombre se décompose en 38 unités et 6 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "38 < 38,6 < 39",
+            "correction": "38 unités et 6 dixièmes donnent 38,6, strictement compris entre 38 et 39.",
+            "p1": "38 < 38,6 < 39",
+            "p2": "37 < 38,6 < 39",
+            "p3": "38 < 38,6 < 40",
+            "p4": "39 < 38,6 < 40"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 39,
+            "dixiemes": 4,
+            "borne_inf": 39,
+            "borne_sup": 40,
+            "resultat_exploitable": 39.4,
+            "enonce": "Un nombre se décompose en 39 unités et 4 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "39 < 39,4 < 40",
+            "correction": "39 unités et 4 dixièmes donnent 39,4, strictement compris entre 39 et 40.",
+            "p1": "39 < 39,4 < 40",
+            "p2": "38 < 39,4 < 40",
+            "p3": "39 < 39,4 < 41",
+            "p4": "40 < 39,4 < 41"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 40,
+            "dixiemes": 2,
+            "borne_inf": 40,
+            "borne_sup": 41,
+            "resultat_exploitable": 40.2,
+            "enonce": "Un nombre se décompose en 40 unités et 2 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "40 < 40,2 < 41",
+            "correction": "40 unités et 2 dixièmes donnent 40,2, strictement compris entre 40 et 41.",
+            "p1": "40 < 40,2 < 41",
+            "p2": "39 < 40,2 < 41",
+            "p3": "40 < 40,2 < 42",
+            "p4": "41 < 40,2 < 42"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 41,
+            "dixiemes": 9,
+            "borne_inf": 41,
+            "borne_sup": 42,
+            "resultat_exploitable": 41.9,
+            "enonce": "Un nombre se décompose en 41 unités et 9 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "41 < 41,9 < 42",
+            "correction": "41 unités et 9 dixièmes donnent 41,9, strictement compris entre 41 et 42.",
+            "p1": "41 < 41,9 < 42",
+            "p2": "40 < 41,9 < 42",
+            "p3": "41 < 41,9 < 43",
+            "p4": "42 < 41,9 < 43"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 42,
+            "dixiemes": 7,
+            "borne_inf": 42,
+            "borne_sup": 43,
+            "resultat_exploitable": 42.7,
+            "enonce": "Un nombre se décompose en 42 unités et 7 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "42 < 42,7 < 43",
+            "correction": "42 unités et 7 dixièmes donnent 42,7, strictement compris entre 42 et 43.",
+            "p1": "42 < 42,7 < 43",
+            "p2": "41 < 42,7 < 43",
+            "p3": "42 < 42,7 < 44",
+            "p4": "43 < 42,7 < 44"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 43,
+            "dixiemes": 5,
+            "borne_inf": 43,
+            "borne_sup": 44,
+            "resultat_exploitable": 43.5,
+            "enonce": "Un nombre se décompose en 43 unités et 5 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "43 < 43,5 < 44",
+            "correction": "43 unités et 5 dixièmes donnent 43,5, strictement compris entre 43 et 44.",
+            "p1": "43 < 43,5 < 44",
+            "p2": "42 < 43,5 < 44",
+            "p3": "43 < 43,5 < 45",
+            "p4": "44 < 43,5 < 45"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 44,
+            "dixiemes": 3,
+            "borne_inf": 44,
+            "borne_sup": 45,
+            "resultat_exploitable": 44.3,
+            "enonce": "Un nombre se décompose en 44 unités et 3 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "44 < 44,3 < 45",
+            "correction": "44 unités et 3 dixièmes donnent 44,3, strictement compris entre 44 et 45.",
+            "p1": "44 < 44,3 < 45",
+            "p2": "43 < 44,3 < 45",
+            "p3": "44 < 44,3 < 46",
+            "p4": "45 < 44,3 < 46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 45,
+            "dixiemes": 1,
+            "borne_inf": 45,
+            "borne_sup": 46,
+            "resultat_exploitable": 45.1,
+            "enonce": "Un nombre se décompose en 45 unités et 1 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "45 < 45,1 < 46",
+            "correction": "45 unités et 1 dixièmes donnent 45,1, strictement compris entre 45 et 46.",
+            "p1": "45 < 45,1 < 46",
+            "p2": "44 < 45,1 < 46",
+            "p3": "45 < 45,1 < 47",
+            "p4": "46 < 45,1 < 47"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 46,
+            "dixiemes": 8,
+            "borne_inf": 46,
+            "borne_sup": 47,
+            "resultat_exploitable": 46.8,
+            "enonce": "Un nombre se décompose en 46 unités et 8 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "46 < 46,8 < 47",
+            "correction": "46 unités et 8 dixièmes donnent 46,8, strictement compris entre 46 et 47.",
+            "p1": "46 < 46,8 < 47",
+            "p2": "45 < 46,8 < 47",
+            "p3": "46 < 46,8 < 48",
+            "p4": "47 < 46,8 < 48"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 47,
+            "dixiemes": 6,
+            "borne_inf": 47,
+            "borne_sup": 48,
+            "resultat_exploitable": 47.6,
+            "enonce": "Un nombre se décompose en 47 unités et 6 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "47 < 47,6 < 48",
+            "correction": "47 unités et 6 dixièmes donnent 47,6, strictement compris entre 47 et 48.",
+            "p1": "47 < 47,6 < 48",
+            "p2": "46 < 47,6 < 48",
+            "p3": "47 < 47,6 < 49",
+            "p4": "48 < 47,6 < 49"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 48,
+            "dixiemes": 4,
+            "borne_inf": 48,
+            "borne_sup": 49,
+            "resultat_exploitable": 48.4,
+            "enonce": "Un nombre se décompose en 48 unités et 4 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "48 < 48,4 < 49",
+            "correction": "48 unités et 4 dixièmes donnent 48,4, strictement compris entre 48 et 49.",
+            "p1": "48 < 48,4 < 49",
+            "p2": "47 < 48,4 < 49",
+            "p3": "48 < 48,4 < 50",
+            "p4": "49 < 48,4 < 50"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 49,
+            "dixiemes": 2,
+            "borne_inf": 49,
+            "borne_sup": 50,
+            "resultat_exploitable": 49.2,
+            "enonce": "Un nombre se décompose en 49 unités et 2 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "49 < 49,2 < 50",
+            "correction": "49 unités et 2 dixièmes donnent 49,2, strictement compris entre 49 et 50.",
+            "p1": "49 < 49,2 < 50",
+            "p2": "48 < 49,2 < 50",
+            "p3": "49 < 49,2 < 51",
+            "p4": "50 < 49,2 < 51"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 50,
+            "dixiemes": 9,
+            "borne_inf": 50,
+            "borne_sup": 51,
+            "resultat_exploitable": 50.9,
+            "enonce": "Un nombre se décompose en 50 unités et 9 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "50 < 50,9 < 51",
+            "correction": "50 unités et 9 dixièmes donnent 50,9, strictement compris entre 50 et 51.",
+            "p1": "50 < 50,9 < 51",
+            "p2": "49 < 50,9 < 51",
+            "p3": "50 < 50,9 < 52",
+            "p4": "51 < 50,9 < 52"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 51,
+            "dixiemes": 7,
+            "borne_inf": 51,
+            "borne_sup": 52,
+            "resultat_exploitable": 51.7,
+            "enonce": "Un nombre se décompose en 51 unités et 7 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "51 < 51,7 < 52",
+            "correction": "51 unités et 7 dixièmes donnent 51,7, strictement compris entre 51 et 52.",
+            "p1": "51 < 51,7 < 52",
+            "p2": "50 < 51,7 < 52",
+            "p3": "51 < 51,7 < 53",
+            "p4": "52 < 51,7 < 53"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 52,
+            "dixiemes": 5,
+            "borne_inf": 52,
+            "borne_sup": 53,
+            "resultat_exploitable": 52.5,
+            "enonce": "Un nombre se décompose en 52 unités et 5 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "52 < 52,5 < 53",
+            "correction": "52 unités et 5 dixièmes donnent 52,5, strictement compris entre 52 et 53.",
+            "p1": "52 < 52,5 < 53",
+            "p2": "51 < 52,5 < 53",
+            "p3": "52 < 52,5 < 54",
+            "p4": "53 < 52,5 < 54"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 53,
+            "dixiemes": 3,
+            "borne_inf": 53,
+            "borne_sup": 54,
+            "resultat_exploitable": 53.3,
+            "enonce": "Un nombre se décompose en 53 unités et 3 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "53 < 53,3 < 54",
+            "correction": "53 unités et 3 dixièmes donnent 53,3, strictement compris entre 53 et 54.",
+            "p1": "53 < 53,3 < 54",
+            "p2": "52 < 53,3 < 54",
+            "p3": "53 < 53,3 < 55",
+            "p4": "54 < 53,3 < 55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 54,
+            "dixiemes": 1,
+            "borne_inf": 54,
+            "borne_sup": 55,
+            "resultat_exploitable": 54.1,
+            "enonce": "Un nombre se décompose en 54 unités et 1 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "54 < 54,1 < 55",
+            "correction": "54 unités et 1 dixièmes donnent 54,1, strictement compris entre 54 et 55.",
+            "p1": "54 < 54,1 < 55",
+            "p2": "53 < 54,1 < 55",
+            "p3": "54 < 54,1 < 56",
+            "p4": "55 < 54,1 < 56"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 55,
+            "dixiemes": 8,
+            "borne_inf": 55,
+            "borne_sup": 56,
+            "resultat_exploitable": 55.8,
+            "enonce": "Un nombre se décompose en 55 unités et 8 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "55 < 55,8 < 56",
+            "correction": "55 unités et 8 dixièmes donnent 55,8, strictement compris entre 55 et 56.",
+            "p1": "55 < 55,8 < 56",
+            "p2": "54 < 55,8 < 56",
+            "p3": "55 < 55,8 < 57",
+            "p4": "56 < 55,8 < 57"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 56,
+            "dixiemes": 6,
+            "borne_inf": 56,
+            "borne_sup": 57,
+            "resultat_exploitable": 56.6,
+            "enonce": "Un nombre se décompose en 56 unités et 6 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "56 < 56,6 < 57",
+            "correction": "56 unités et 6 dixièmes donnent 56,6, strictement compris entre 56 et 57.",
+            "p1": "56 < 56,6 < 57",
+            "p2": "55 < 56,6 < 57",
+            "p3": "56 < 56,6 < 58",
+            "p4": "57 < 56,6 < 58"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 57,
+            "dixiemes": 4,
+            "borne_inf": 57,
+            "borne_sup": 58,
+            "resultat_exploitable": 57.4,
+            "enonce": "Un nombre se décompose en 57 unités et 4 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "57 < 57,4 < 58",
+            "correction": "57 unités et 4 dixièmes donnent 57,4, strictement compris entre 57 et 58.",
+            "p1": "57 < 57,4 < 58",
+            "p2": "56 < 57,4 < 58",
+            "p3": "57 < 57,4 < 59",
+            "p4": "58 < 57,4 < 59"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 58,
+            "dixiemes": 2,
+            "borne_inf": 58,
+            "borne_sup": 59,
+            "resultat_exploitable": 58.2,
+            "enonce": "Un nombre se décompose en 58 unités et 2 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "58 < 58,2 < 59",
+            "correction": "58 unités et 2 dixièmes donnent 58,2, strictement compris entre 58 et 59.",
+            "p1": "58 < 58,2 < 59",
+            "p2": "57 < 58,2 < 59",
+            "p3": "58 < 58,2 < 60",
+            "p4": "59 < 58,2 < 60"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 59,
+            "dixiemes": 9,
+            "borne_inf": 59,
+            "borne_sup": 60,
+            "resultat_exploitable": 59.9,
+            "enonce": "Un nombre se décompose en 59 unités et 9 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "59 < 59,9 < 60",
+            "correction": "59 unités et 9 dixièmes donnent 59,9, strictement compris entre 59 et 60.",
+            "p1": "59 < 59,9 < 60",
+            "p2": "58 < 59,9 < 60",
+            "p3": "59 < 59,9 < 61",
+            "p4": "60 < 59,9 < 61"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 60,
+            "dixiemes": 7,
+            "borne_inf": 60,
+            "borne_sup": 61,
+            "resultat_exploitable": 60.7,
+            "enonce": "Un nombre se décompose en 60 unités et 7 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "60 < 60,7 < 61",
+            "correction": "60 unités et 7 dixièmes donnent 60,7, strictement compris entre 60 et 61.",
+            "p1": "60 < 60,7 < 61",
+            "p2": "59 < 60,7 < 61",
+            "p3": "60 < 60,7 < 62",
+            "p4": "61 < 60,7 < 62"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 61,
+            "dixiemes": 5,
+            "borne_inf": 61,
+            "borne_sup": 62,
+            "resultat_exploitable": 61.5,
+            "enonce": "Un nombre se décompose en 61 unités et 5 dixièmes. Quel est son encadrement entre deux entiers consécutifs ?",
+            "reponse": "61 < 61,5 < 62",
+            "correction": "61 unités et 5 dixièmes donnent 61,5, strictement compris entre 61 et 62.",
+            "p1": "61 < 61,5 < 62",
+            "p2": "60 < 61,5 < 62",
+            "p3": "61 < 61,5 < 63",
+            "p4": "62 < 61,5 < 63"
+          }
+        }
+      ],
+      "liens_notions": "décomposition, encadrement",
+      "demarche": "Recomposer le nombre pour le situer entre deux bornes.",
+      "enonce_exploitable": "unites + dixiemes / 10",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "TRANSVERSAL_DECIMAUX-ENCADREMENT-CENTIEMES-001",
+      "capacite": "identifier",
+      "type_question": "classique",
+      "portee": "famille",
+      "niveau": "6E",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "unites": 5,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 5.11,
+            "enonce": "On cherche un nombre compris entre 5,1 et 5,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "5,11",
+            "correction": "5,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "5,11",
+            "p2": "5,12",
+            "p3": "5,13",
+            "p4": "6,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 6,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 6.46,
+            "enonce": "On cherche un nombre compris entre 6,4 et 6,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "6,46",
+            "correction": "6,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "6,46",
+            "p2": "6,64",
+            "p3": "6,48",
+            "p4": "7,46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 7,
+            "dixiemes": 7,
+            "centiemes": 3,
+            "resultat_exploitable": 7.73,
+            "enonce": "On cherche un nombre compris entre 7,7 et 7,8 dont le chiffre des centièmes est 3. Lequel convient ?",
+            "reponse": "7,73",
+            "correction": "7,73 possède 7 dixièmes et 3 centièmes, et respecte l’encadrement.",
+            "p1": "7,73",
+            "p2": "7,37",
+            "p3": "7,75",
+            "p4": "8,73"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 8,
+            "dixiemes": 2,
+            "centiemes": 8,
+            "resultat_exploitable": 8.28,
+            "enonce": "On cherche un nombre compris entre 8,2 et 8,3 dont le chiffre des centièmes est 8. Lequel convient ?",
+            "reponse": "8,28",
+            "correction": "8,28 possède 2 dixièmes et 8 centièmes, et respecte l’encadrement.",
+            "p1": "8,28",
+            "p2": "8,82",
+            "p3": "8,30",
+            "p4": "9,28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 9,
+            "dixiemes": 5,
+            "centiemes": 5,
+            "resultat_exploitable": 9.55,
+            "enonce": "On cherche un nombre compris entre 9,5 et 9,6 dont le chiffre des centièmes est 5. Lequel convient ?",
+            "reponse": "9,55",
+            "correction": "9,55 possède 5 dixièmes et 5 centièmes, et respecte l’encadrement.",
+            "p1": "9,55",
+            "p2": "9,56",
+            "p3": "9,57",
+            "p4": "10,55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 10,
+            "dixiemes": 8,
+            "centiemes": 2,
+            "resultat_exploitable": 10.82,
+            "enonce": "On cherche un nombre compris entre 10,8 et 10,9 dont le chiffre des centièmes est 2. Lequel convient ?",
+            "reponse": "10,82",
+            "correction": "10,82 possède 8 dixièmes et 2 centièmes, et respecte l’encadrement.",
+            "p1": "10,82",
+            "p2": "10,28",
+            "p3": "10,84",
+            "p4": "11,82"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 11,
+            "dixiemes": 3,
+            "centiemes": 7,
+            "resultat_exploitable": 11.37,
+            "enonce": "On cherche un nombre compris entre 11,3 et 11,4 dont le chiffre des centièmes est 7. Lequel convient ?",
+            "reponse": "11,37",
+            "correction": "11,37 possède 3 dixièmes et 7 centièmes, et respecte l’encadrement.",
+            "p1": "11,37",
+            "p2": "11,73",
+            "p3": "11,39",
+            "p4": "12,37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 12,
+            "dixiemes": 6,
+            "centiemes": 4,
+            "resultat_exploitable": 12.64,
+            "enonce": "On cherche un nombre compris entre 12,6 et 12,7 dont le chiffre des centièmes est 4. Lequel convient ?",
+            "reponse": "12,64",
+            "correction": "12,64 possède 6 dixièmes et 4 centièmes, et respecte l’encadrement.",
+            "p1": "12,64",
+            "p2": "12,46",
+            "p3": "12,66",
+            "p4": "13,64"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 13,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 13.11,
+            "enonce": "On cherche un nombre compris entre 13,1 et 13,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "13,11",
+            "correction": "13,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "13,11",
+            "p2": "13,12",
+            "p3": "13,13",
+            "p4": "14,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 14,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 14.46,
+            "enonce": "On cherche un nombre compris entre 14,4 et 14,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "14,46",
+            "correction": "14,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "14,46",
+            "p2": "14,64",
+            "p3": "14,48",
+            "p4": "15,46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 15,
+            "dixiemes": 7,
+            "centiemes": 3,
+            "resultat_exploitable": 15.73,
+            "enonce": "On cherche un nombre compris entre 15,7 et 15,8 dont le chiffre des centièmes est 3. Lequel convient ?",
+            "reponse": "15,73",
+            "correction": "15,73 possède 7 dixièmes et 3 centièmes, et respecte l’encadrement.",
+            "p1": "15,73",
+            "p2": "15,37",
+            "p3": "15,75",
+            "p4": "16,73"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 16,
+            "dixiemes": 2,
+            "centiemes": 8,
+            "resultat_exploitable": 16.28,
+            "enonce": "On cherche un nombre compris entre 16,2 et 16,3 dont le chiffre des centièmes est 8. Lequel convient ?",
+            "reponse": "16,28",
+            "correction": "16,28 possède 2 dixièmes et 8 centièmes, et respecte l’encadrement.",
+            "p1": "16,28",
+            "p2": "16,82",
+            "p3": "16,30",
+            "p4": "17,28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 17,
+            "dixiemes": 5,
+            "centiemes": 5,
+            "resultat_exploitable": 17.55,
+            "enonce": "On cherche un nombre compris entre 17,5 et 17,6 dont le chiffre des centièmes est 5. Lequel convient ?",
+            "reponse": "17,55",
+            "correction": "17,55 possède 5 dixièmes et 5 centièmes, et respecte l’encadrement.",
+            "p1": "17,55",
+            "p2": "17,56",
+            "p3": "17,57",
+            "p4": "18,55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 18,
+            "dixiemes": 8,
+            "centiemes": 2,
+            "resultat_exploitable": 18.82,
+            "enonce": "On cherche un nombre compris entre 18,8 et 18,9 dont le chiffre des centièmes est 2. Lequel convient ?",
+            "reponse": "18,82",
+            "correction": "18,82 possède 8 dixièmes et 2 centièmes, et respecte l’encadrement.",
+            "p1": "18,82",
+            "p2": "18,28",
+            "p3": "18,84",
+            "p4": "19,82"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 19,
+            "dixiemes": 3,
+            "centiemes": 7,
+            "resultat_exploitable": 19.37,
+            "enonce": "On cherche un nombre compris entre 19,3 et 19,4 dont le chiffre des centièmes est 7. Lequel convient ?",
+            "reponse": "19,37",
+            "correction": "19,37 possède 3 dixièmes et 7 centièmes, et respecte l’encadrement.",
+            "p1": "19,37",
+            "p2": "19,73",
+            "p3": "19,39",
+            "p4": "20,37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 20,
+            "dixiemes": 6,
+            "centiemes": 4,
+            "resultat_exploitable": 20.64,
+            "enonce": "On cherche un nombre compris entre 20,6 et 20,7 dont le chiffre des centièmes est 4. Lequel convient ?",
+            "reponse": "20,64",
+            "correction": "20,64 possède 6 dixièmes et 4 centièmes, et respecte l’encadrement.",
+            "p1": "20,64",
+            "p2": "20,46",
+            "p3": "20,66",
+            "p4": "21,64"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 21,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 21.11,
+            "enonce": "On cherche un nombre compris entre 21,1 et 21,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "21,11",
+            "correction": "21,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "21,11",
+            "p2": "21,12",
+            "p3": "21,13",
+            "p4": "22,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 22,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 22.46,
+            "enonce": "On cherche un nombre compris entre 22,4 et 22,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "22,46",
+            "correction": "22,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "22,46",
+            "p2": "22,64",
+            "p3": "22,48",
+            "p4": "23,46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 23,
+            "dixiemes": 7,
+            "centiemes": 3,
+            "resultat_exploitable": 23.73,
+            "enonce": "On cherche un nombre compris entre 23,7 et 23,8 dont le chiffre des centièmes est 3. Lequel convient ?",
+            "reponse": "23,73",
+            "correction": "23,73 possède 7 dixièmes et 3 centièmes, et respecte l’encadrement.",
+            "p1": "23,73",
+            "p2": "23,37",
+            "p3": "23,75",
+            "p4": "24,73"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 24,
+            "dixiemes": 2,
+            "centiemes": 8,
+            "resultat_exploitable": 24.28,
+            "enonce": "On cherche un nombre compris entre 24,2 et 24,3 dont le chiffre des centièmes est 8. Lequel convient ?",
+            "reponse": "24,28",
+            "correction": "24,28 possède 2 dixièmes et 8 centièmes, et respecte l’encadrement.",
+            "p1": "24,28",
+            "p2": "24,82",
+            "p3": "24,30",
+            "p4": "25,28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 25,
+            "dixiemes": 5,
+            "centiemes": 5,
+            "resultat_exploitable": 25.55,
+            "enonce": "On cherche un nombre compris entre 25,5 et 25,6 dont le chiffre des centièmes est 5. Lequel convient ?",
+            "reponse": "25,55",
+            "correction": "25,55 possède 5 dixièmes et 5 centièmes, et respecte l’encadrement.",
+            "p1": "25,55",
+            "p2": "25,56",
+            "p3": "25,57",
+            "p4": "26,55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 26,
+            "dixiemes": 8,
+            "centiemes": 2,
+            "resultat_exploitable": 26.82,
+            "enonce": "On cherche un nombre compris entre 26,8 et 26,9 dont le chiffre des centièmes est 2. Lequel convient ?",
+            "reponse": "26,82",
+            "correction": "26,82 possède 8 dixièmes et 2 centièmes, et respecte l’encadrement.",
+            "p1": "26,82",
+            "p2": "26,28",
+            "p3": "26,84",
+            "p4": "27,82"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 27,
+            "dixiemes": 3,
+            "centiemes": 7,
+            "resultat_exploitable": 27.37,
+            "enonce": "On cherche un nombre compris entre 27,3 et 27,4 dont le chiffre des centièmes est 7. Lequel convient ?",
+            "reponse": "27,37",
+            "correction": "27,37 possède 3 dixièmes et 7 centièmes, et respecte l’encadrement.",
+            "p1": "27,37",
+            "p2": "27,73",
+            "p3": "27,39",
+            "p4": "28,37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 28,
+            "dixiemes": 6,
+            "centiemes": 4,
+            "resultat_exploitable": 28.64,
+            "enonce": "On cherche un nombre compris entre 28,6 et 28,7 dont le chiffre des centièmes est 4. Lequel convient ?",
+            "reponse": "28,64",
+            "correction": "28,64 possède 6 dixièmes et 4 centièmes, et respecte l’encadrement.",
+            "p1": "28,64",
+            "p2": "28,46",
+            "p3": "28,66",
+            "p4": "29,64"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 29,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 29.11,
+            "enonce": "On cherche un nombre compris entre 29,1 et 29,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "29,11",
+            "correction": "29,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "29,11",
+            "p2": "29,12",
+            "p3": "29,13",
+            "p4": "30,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 30,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 30.46,
+            "enonce": "On cherche un nombre compris entre 30,4 et 30,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "30,46",
+            "correction": "30,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "30,46",
+            "p2": "30,64",
+            "p3": "30,48",
+            "p4": "31,46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 31,
+            "dixiemes": 7,
+            "centiemes": 3,
+            "resultat_exploitable": 31.73,
+            "enonce": "On cherche un nombre compris entre 31,7 et 31,8 dont le chiffre des centièmes est 3. Lequel convient ?",
+            "reponse": "31,73",
+            "correction": "31,73 possède 7 dixièmes et 3 centièmes, et respecte l’encadrement.",
+            "p1": "31,73",
+            "p2": "31,37",
+            "p3": "31,75",
+            "p4": "32,73"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 32,
+            "dixiemes": 2,
+            "centiemes": 8,
+            "resultat_exploitable": 32.28,
+            "enonce": "On cherche un nombre compris entre 32,2 et 32,3 dont le chiffre des centièmes est 8. Lequel convient ?",
+            "reponse": "32,28",
+            "correction": "32,28 possède 2 dixièmes et 8 centièmes, et respecte l’encadrement.",
+            "p1": "32,28",
+            "p2": "32,82",
+            "p3": "32,30",
+            "p4": "33,28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 33,
+            "dixiemes": 5,
+            "centiemes": 5,
+            "resultat_exploitable": 33.55,
+            "enonce": "On cherche un nombre compris entre 33,5 et 33,6 dont le chiffre des centièmes est 5. Lequel convient ?",
+            "reponse": "33,55",
+            "correction": "33,55 possède 5 dixièmes et 5 centièmes, et respecte l’encadrement.",
+            "p1": "33,55",
+            "p2": "33,56",
+            "p3": "33,57",
+            "p4": "34,55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 34,
+            "dixiemes": 8,
+            "centiemes": 2,
+            "resultat_exploitable": 34.82,
+            "enonce": "On cherche un nombre compris entre 34,8 et 34,9 dont le chiffre des centièmes est 2. Lequel convient ?",
+            "reponse": "34,82",
+            "correction": "34,82 possède 8 dixièmes et 2 centièmes, et respecte l’encadrement.",
+            "p1": "34,82",
+            "p2": "34,28",
+            "p3": "34,84",
+            "p4": "35,82"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 35,
+            "dixiemes": 3,
+            "centiemes": 7,
+            "resultat_exploitable": 35.37,
+            "enonce": "On cherche un nombre compris entre 35,3 et 35,4 dont le chiffre des centièmes est 7. Lequel convient ?",
+            "reponse": "35,37",
+            "correction": "35,37 possède 3 dixièmes et 7 centièmes, et respecte l’encadrement.",
+            "p1": "35,37",
+            "p2": "35,73",
+            "p3": "35,39",
+            "p4": "36,37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 36,
+            "dixiemes": 6,
+            "centiemes": 4,
+            "resultat_exploitable": 36.64,
+            "enonce": "On cherche un nombre compris entre 36,6 et 36,7 dont le chiffre des centièmes est 4. Lequel convient ?",
+            "reponse": "36,64",
+            "correction": "36,64 possède 6 dixièmes et 4 centièmes, et respecte l’encadrement.",
+            "p1": "36,64",
+            "p2": "36,46",
+            "p3": "36,66",
+            "p4": "37,64"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 37,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 37.11,
+            "enonce": "On cherche un nombre compris entre 37,1 et 37,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "37,11",
+            "correction": "37,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "37,11",
+            "p2": "37,12",
+            "p3": "37,13",
+            "p4": "38,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 38,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 38.46,
+            "enonce": "On cherche un nombre compris entre 38,4 et 38,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "38,46",
+            "correction": "38,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "38,46",
+            "p2": "38,64",
+            "p3": "38,48",
+            "p4": "39,46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 39,
+            "dixiemes": 7,
+            "centiemes": 3,
+            "resultat_exploitable": 39.73,
+            "enonce": "On cherche un nombre compris entre 39,7 et 39,8 dont le chiffre des centièmes est 3. Lequel convient ?",
+            "reponse": "39,73",
+            "correction": "39,73 possède 7 dixièmes et 3 centièmes, et respecte l’encadrement.",
+            "p1": "39,73",
+            "p2": "39,37",
+            "p3": "39,75",
+            "p4": "40,73"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 40,
+            "dixiemes": 2,
+            "centiemes": 8,
+            "resultat_exploitable": 40.28,
+            "enonce": "On cherche un nombre compris entre 40,2 et 40,3 dont le chiffre des centièmes est 8. Lequel convient ?",
+            "reponse": "40,28",
+            "correction": "40,28 possède 2 dixièmes et 8 centièmes, et respecte l’encadrement.",
+            "p1": "40,28",
+            "p2": "40,82",
+            "p3": "40,30",
+            "p4": "41,28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 41,
+            "dixiemes": 5,
+            "centiemes": 5,
+            "resultat_exploitable": 41.55,
+            "enonce": "On cherche un nombre compris entre 41,5 et 41,6 dont le chiffre des centièmes est 5. Lequel convient ?",
+            "reponse": "41,55",
+            "correction": "41,55 possède 5 dixièmes et 5 centièmes, et respecte l’encadrement.",
+            "p1": "41,55",
+            "p2": "41,56",
+            "p3": "41,57",
+            "p4": "42,55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 42,
+            "dixiemes": 8,
+            "centiemes": 2,
+            "resultat_exploitable": 42.82,
+            "enonce": "On cherche un nombre compris entre 42,8 et 42,9 dont le chiffre des centièmes est 2. Lequel convient ?",
+            "reponse": "42,82",
+            "correction": "42,82 possède 8 dixièmes et 2 centièmes, et respecte l’encadrement.",
+            "p1": "42,82",
+            "p2": "42,28",
+            "p3": "42,84",
+            "p4": "43,82"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 43,
+            "dixiemes": 3,
+            "centiemes": 7,
+            "resultat_exploitable": 43.37,
+            "enonce": "On cherche un nombre compris entre 43,3 et 43,4 dont le chiffre des centièmes est 7. Lequel convient ?",
+            "reponse": "43,37",
+            "correction": "43,37 possède 3 dixièmes et 7 centièmes, et respecte l’encadrement.",
+            "p1": "43,37",
+            "p2": "43,73",
+            "p3": "43,39",
+            "p4": "44,37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 44,
+            "dixiemes": 6,
+            "centiemes": 4,
+            "resultat_exploitable": 44.64,
+            "enonce": "On cherche un nombre compris entre 44,6 et 44,7 dont le chiffre des centièmes est 4. Lequel convient ?",
+            "reponse": "44,64",
+            "correction": "44,64 possède 6 dixièmes et 4 centièmes, et respecte l’encadrement.",
+            "p1": "44,64",
+            "p2": "44,46",
+            "p3": "44,66",
+            "p4": "45,64"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 45,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 45.11,
+            "enonce": "On cherche un nombre compris entre 45,1 et 45,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "45,11",
+            "correction": "45,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "45,11",
+            "p2": "45,12",
+            "p3": "45,13",
+            "p4": "46,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 46,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 46.46,
+            "enonce": "On cherche un nombre compris entre 46,4 et 46,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "46,46",
+            "correction": "46,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "46,46",
+            "p2": "46,64",
+            "p3": "46,48",
+            "p4": "47,46"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 47,
+            "dixiemes": 7,
+            "centiemes": 3,
+            "resultat_exploitable": 47.73,
+            "enonce": "On cherche un nombre compris entre 47,7 et 47,8 dont le chiffre des centièmes est 3. Lequel convient ?",
+            "reponse": "47,73",
+            "correction": "47,73 possède 7 dixièmes et 3 centièmes, et respecte l’encadrement.",
+            "p1": "47,73",
+            "p2": "47,37",
+            "p3": "47,75",
+            "p4": "48,73"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 48,
+            "dixiemes": 2,
+            "centiemes": 8,
+            "resultat_exploitable": 48.28,
+            "enonce": "On cherche un nombre compris entre 48,2 et 48,3 dont le chiffre des centièmes est 8. Lequel convient ?",
+            "reponse": "48,28",
+            "correction": "48,28 possède 2 dixièmes et 8 centièmes, et respecte l’encadrement.",
+            "p1": "48,28",
+            "p2": "48,82",
+            "p3": "48,30",
+            "p4": "49,28"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 49,
+            "dixiemes": 5,
+            "centiemes": 5,
+            "resultat_exploitable": 49.55,
+            "enonce": "On cherche un nombre compris entre 49,5 et 49,6 dont le chiffre des centièmes est 5. Lequel convient ?",
+            "reponse": "49,55",
+            "correction": "49,55 possède 5 dixièmes et 5 centièmes, et respecte l’encadrement.",
+            "p1": "49,55",
+            "p2": "49,56",
+            "p3": "49,57",
+            "p4": "50,55"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 50,
+            "dixiemes": 8,
+            "centiemes": 2,
+            "resultat_exploitable": 50.82,
+            "enonce": "On cherche un nombre compris entre 50,8 et 50,9 dont le chiffre des centièmes est 2. Lequel convient ?",
+            "reponse": "50,82",
+            "correction": "50,82 possède 8 dixièmes et 2 centièmes, et respecte l’encadrement.",
+            "p1": "50,82",
+            "p2": "50,28",
+            "p3": "50,84",
+            "p4": "51,82"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 51,
+            "dixiemes": 3,
+            "centiemes": 7,
+            "resultat_exploitable": 51.37,
+            "enonce": "On cherche un nombre compris entre 51,3 et 51,4 dont le chiffre des centièmes est 7. Lequel convient ?",
+            "reponse": "51,37",
+            "correction": "51,37 possède 3 dixièmes et 7 centièmes, et respecte l’encadrement.",
+            "p1": "51,37",
+            "p2": "51,73",
+            "p3": "51,39",
+            "p4": "52,37"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 52,
+            "dixiemes": 6,
+            "centiemes": 4,
+            "resultat_exploitable": 52.64,
+            "enonce": "On cherche un nombre compris entre 52,6 et 52,7 dont le chiffre des centièmes est 4. Lequel convient ?",
+            "reponse": "52,64",
+            "correction": "52,64 possède 6 dixièmes et 4 centièmes, et respecte l’encadrement.",
+            "p1": "52,64",
+            "p2": "52,46",
+            "p3": "52,66",
+            "p4": "53,64"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 53,
+            "dixiemes": 1,
+            "centiemes": 1,
+            "resultat_exploitable": 53.11,
+            "enonce": "On cherche un nombre compris entre 53,1 et 53,2 dont le chiffre des centièmes est 1. Lequel convient ?",
+            "reponse": "53,11",
+            "correction": "53,11 possède 1 dixièmes et 1 centièmes, et respecte l’encadrement.",
+            "p1": "53,11",
+            "p2": "53,12",
+            "p3": "53,13",
+            "p4": "54,11"
+          }
+        },
+        {
+          "parametres": {
+            "unites": 54,
+            "dixiemes": 4,
+            "centiemes": 6,
+            "resultat_exploitable": 54.46,
+            "enonce": "On cherche un nombre compris entre 54,4 et 54,5 dont le chiffre des centièmes est 6. Lequel convient ?",
+            "reponse": "54,46",
+            "correction": "54,46 possède 4 dixièmes et 6 centièmes, et respecte l’encadrement.",
+            "p1": "54,46",
+            "p2": "54,64",
+            "p3": "54,48",
+            "p4": "55,46"
+          }
+        }
+      ],
+      "liens_notions": "encadrement, comparaison",
+      "demarche": "Comparer les chiffres de même rang pour choisir les bornes.",
+      "enonce_exploitable": "unites + dixiemes / 10 + centiemes / 100",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

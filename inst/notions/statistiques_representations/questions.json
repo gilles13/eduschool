@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "REP-STAT-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "On observe les effectifs suivants : [[tableau]]. Quelle lecture est correcte ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -22,7 +23,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 5.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "14"
+            "total": "14",
+            "effectif_a": 3,
+            "effectif_b": 5,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -33,7 +39,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "25"
+            "total": "25",
+            "effectif_a": 4,
+            "effectif_b": 7,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 2
           }
         },
         {
@@ -44,7 +55,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "22"
+            "total": "22",
+            "effectif_a": 5,
+            "effectif_b": 9,
+            "effectif_c": 4,
+            "effectif_d": 4,
+            "categorie_reponse": 2
           }
         },
         {
@@ -55,7 +71,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "33"
+            "total": "33",
+            "effectif_a": 6,
+            "effectif_b": 11,
+            "effectif_c": 7,
+            "effectif_d": 9,
+            "categorie_reponse": 2
           }
         },
         {
@@ -66,7 +87,12 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "23"
+            "total": "23",
+            "effectif_a": 7,
+            "effectif_b": 6,
+            "effectif_c": 4,
+            "effectif_d": 6,
+            "categorie_reponse": 1
           }
         },
         {
@@ -77,7 +103,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "21"
+            "total": "21",
+            "effectif_a": 3,
+            "effectif_b": 8,
+            "effectif_c": 7,
+            "effectif_d": 3,
+            "categorie_reponse": 2
           }
         },
         {
@@ -88,7 +119,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "26"
+            "total": "26",
+            "effectif_a": 4,
+            "effectif_b": 10,
+            "effectif_c": 4,
+            "effectif_d": 8,
+            "categorie_reponse": 2
           }
         },
         {
@@ -99,7 +135,12 @@
             "d1": "La catégorie D est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "22"
+            "total": "22",
+            "effectif_a": 5,
+            "effectif_b": 5,
+            "effectif_c": 7,
+            "effectif_d": 5,
+            "categorie_reponse": 3
           }
         },
         {
@@ -110,7 +151,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "19"
+            "total": "19",
+            "effectif_a": 6,
+            "effectif_b": 7,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -121,7 +167,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "30"
+            "total": "30",
+            "effectif_a": 7,
+            "effectif_b": 9,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 2
           }
         },
         {
@@ -132,7 +183,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "22"
+            "total": "22",
+            "effectif_a": 3,
+            "effectif_b": 11,
+            "effectif_c": 4,
+            "effectif_d": 4,
+            "categorie_reponse": 2
           }
         },
         {
@@ -143,7 +199,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "26"
+            "total": "26",
+            "effectif_a": 4,
+            "effectif_b": 6,
+            "effectif_c": 7,
+            "effectif_d": 9,
+            "categorie_reponse": 4
           }
         },
         {
@@ -154,7 +215,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "23"
+            "total": "23",
+            "effectif_a": 5,
+            "effectif_b": 8,
+            "effectif_c": 4,
+            "effectif_d": 6,
+            "categorie_reponse": 2
           }
         },
         {
@@ -165,7 +231,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "26"
+            "total": "26",
+            "effectif_a": 6,
+            "effectif_b": 10,
+            "effectif_c": 7,
+            "effectif_d": 3,
+            "categorie_reponse": 2
           }
         },
         {
@@ -176,7 +247,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 7,
+            "effectif_b": 5,
+            "effectif_c": 4,
+            "effectif_d": 8,
+            "categorie_reponse": 4
           }
         },
         {
@@ -187,7 +263,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "22"
+            "total": "22",
+            "effectif_a": 3,
+            "effectif_b": 7,
+            "effectif_c": 7,
+            "effectif_d": 5,
+            "categorie_reponse": 2
           }
         },
         {
@@ -198,7 +279,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "19"
+            "total": "19",
+            "effectif_a": 4,
+            "effectif_b": 9,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -209,7 +295,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "30"
+            "total": "30",
+            "effectif_a": 5,
+            "effectif_b": 11,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 2
           }
         },
         {
@@ -220,7 +311,12 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 6.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "20"
+            "total": "20",
+            "effectif_a": 6,
+            "effectif_b": 6,
+            "effectif_c": 4,
+            "effectif_d": 4,
+            "categorie_reponse": 1
           }
         },
         {
@@ -231,7 +327,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "31"
+            "total": "31",
+            "effectif_a": 7,
+            "effectif_b": 8,
+            "effectif_c": 7,
+            "effectif_d": 9,
+            "categorie_reponse": 4
           }
         },
         {
@@ -242,7 +343,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "23"
+            "total": "23",
+            "effectif_a": 3,
+            "effectif_b": 10,
+            "effectif_c": 4,
+            "effectif_d": 6,
+            "categorie_reponse": 2
           }
         },
         {
@@ -253,7 +359,12 @@
             "d1": "La catégorie D est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "19"
+            "total": "19",
+            "effectif_a": 4,
+            "effectif_b": 5,
+            "effectif_c": 7,
+            "effectif_d": 3,
+            "categorie_reponse": 3
           }
         },
         {
@@ -264,7 +375,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 5,
+            "effectif_b": 7,
+            "effectif_c": 4,
+            "effectif_d": 8,
+            "categorie_reponse": 4
           }
         },
         {
@@ -275,7 +391,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "27"
+            "total": "27",
+            "effectif_a": 6,
+            "effectif_b": 9,
+            "effectif_c": 7,
+            "effectif_d": 5,
+            "categorie_reponse": 2
           }
         },
         {
@@ -286,7 +407,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 7,
+            "effectif_b": 11,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -297,7 +423,12 @@
             "d1": "La catégorie D est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "23"
+            "total": "23",
+            "effectif_a": 3,
+            "effectif_b": 6,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 3
           }
         },
         {
@@ -308,7 +439,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "20"
+            "total": "20",
+            "effectif_a": 4,
+            "effectif_b": 8,
+            "effectif_c": 4,
+            "effectif_d": 4,
+            "categorie_reponse": 2
           }
         },
         {
@@ -319,7 +455,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "31"
+            "total": "31",
+            "effectif_a": 5,
+            "effectif_b": 10,
+            "effectif_c": 7,
+            "effectif_d": 9,
+            "categorie_reponse": 2
           }
         },
         {
@@ -330,7 +471,12 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 6.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "21"
+            "total": "21",
+            "effectif_a": 6,
+            "effectif_b": 5,
+            "effectif_c": 4,
+            "effectif_d": 6,
+            "categorie_reponse": 1
           }
         },
         {
@@ -341,7 +487,12 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 7,
+            "effectif_b": 7,
+            "effectif_c": 7,
+            "effectif_d": 3,
+            "categorie_reponse": 1
           }
         },
         {
@@ -352,7 +503,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 3,
+            "effectif_b": 9,
+            "effectif_c": 4,
+            "effectif_d": 8,
+            "categorie_reponse": 2
           }
         },
         {
@@ -363,7 +519,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "27"
+            "total": "27",
+            "effectif_a": 4,
+            "effectif_b": 11,
+            "effectif_c": 7,
+            "effectif_d": 5,
+            "categorie_reponse": 2
           }
         },
         {
@@ -374,7 +535,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 6.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "17"
+            "total": "17",
+            "effectif_a": 5,
+            "effectif_b": 6,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -385,7 +551,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "28"
+            "total": "28",
+            "effectif_a": 6,
+            "effectif_b": 8,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 2
           }
         },
         {
@@ -396,7 +567,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "25"
+            "total": "25",
+            "effectif_a": 7,
+            "effectif_b": 10,
+            "effectif_c": 4,
+            "effectif_d": 4,
+            "categorie_reponse": 2
           }
         },
         {
@@ -407,7 +583,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 3,
+            "effectif_b": 5,
+            "effectif_c": 7,
+            "effectif_d": 9,
+            "categorie_reponse": 4
           }
         },
         {
@@ -418,7 +599,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "21"
+            "total": "21",
+            "effectif_a": 4,
+            "effectif_b": 7,
+            "effectif_c": 4,
+            "effectif_d": 6,
+            "categorie_reponse": 2
           }
         },
         {
@@ -429,7 +615,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 5,
+            "effectif_b": 9,
+            "effectif_c": 7,
+            "effectif_d": 3,
+            "categorie_reponse": 2
           }
         },
         {
@@ -440,7 +631,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "29"
+            "total": "29",
+            "effectif_a": 6,
+            "effectif_b": 11,
+            "effectif_c": 4,
+            "effectif_d": 8,
+            "categorie_reponse": 2
           }
         },
         {
@@ -451,7 +647,12 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "25"
+            "total": "25",
+            "effectif_a": 7,
+            "effectif_b": 6,
+            "effectif_c": 7,
+            "effectif_d": 5,
+            "categorie_reponse": 1
           }
         },
         {
@@ -462,7 +663,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "17"
+            "total": "17",
+            "effectif_a": 3,
+            "effectif_b": 8,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -473,7 +679,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "28"
+            "total": "28",
+            "effectif_a": 4,
+            "effectif_b": 10,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 2
           }
         },
         {
@@ -484,7 +695,12 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 5.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "18"
+            "total": "18",
+            "effectif_a": 5,
+            "effectif_b": 5,
+            "effectif_c": 4,
+            "effectif_d": 4,
+            "categorie_reponse": 1
           }
         },
         {
@@ -495,7 +711,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "29"
+            "total": "29",
+            "effectif_a": 6,
+            "effectif_b": 7,
+            "effectif_c": 7,
+            "effectif_d": 9,
+            "categorie_reponse": 4
           }
         },
         {
@@ -506,7 +727,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 9.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "26"
+            "total": "26",
+            "effectif_a": 7,
+            "effectif_b": 9,
+            "effectif_c": 4,
+            "effectif_d": 6,
+            "categorie_reponse": 2
           }
         },
         {
@@ -517,7 +743,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 11.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "24"
+            "total": "24",
+            "effectif_a": 3,
+            "effectif_b": 11,
+            "effectif_c": 7,
+            "effectif_d": 3,
+            "categorie_reponse": 2
           }
         },
         {
@@ -528,7 +759,12 @@
             "d1": "La catégorie A est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "22"
+            "total": "22",
+            "effectif_a": 4,
+            "effectif_b": 6,
+            "effectif_c": 4,
+            "effectif_d": 8,
+            "categorie_reponse": 4
           }
         },
         {
@@ -539,7 +775,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 8.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "25"
+            "total": "25",
+            "effectif_a": 5,
+            "effectif_b": 8,
+            "effectif_c": 7,
+            "effectif_d": 5,
+            "categorie_reponse": 2
           }
         },
         {
@@ -550,7 +791,12 @@
             "d1": "La catégorie C est nécessairement majoritaire.",
             "d2": "Le total est 10.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "22"
+            "total": "22",
+            "effectif_a": 6,
+            "effectif_b": 10,
+            "effectif_c": 4,
+            "effectif_d": 2,
+            "categorie_reponse": 2
           }
         },
         {
@@ -561,14 +807,23 @@
             "d1": "La catégorie B est nécessairement majoritaire.",
             "d2": "Le total est 7.",
             "d3": "On ne peut rien lire dans ce tableau.",
-            "total": "26"
+            "total": "26",
+            "effectif_a": 7,
+            "effectif_b": 5,
+            "effectif_c": 7,
+            "effectif_d": 7,
+            "categorie_reponse": 1
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(which.max(c(effectif_a,effectif_b,effectif_c,effectif_d)) == categorie_reponse)",
+      "reponse_exploitable": 1,
+      "moteur": "R"
     },
     {
       "id": "REP-STAT-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Quel graphique est particulièrement adapté pour comparer les effectifs de plusieurs catégories ?",
       "reponse": "Un diagramme en barres",
       "propositions": [
@@ -577,11 +832,15 @@
         "Une droite graduée",
         "Une boîte à moustaches"
       ],
-      "correction": "Le diagramme en barres rend directement comparables les hauteurs associées aux catégories."
+      "correction": "Le diagramme en barres rend directement comparables les hauteurs associées aux catégories.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "REP-STAT-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -594,6 +853,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 0.35,
+            "resultat_exploitable": 35,
             "enonce": "Une fréquence de 0,35 correspond à…",
             "reponse": "35 %",
             "correction": "Multiplier une fréquence décimale par 100 donne son écriture en pourcentage.",
@@ -605,6 +866,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 0.7,
+            "resultat_exploitable": 70,
             "enonce": "Une fréquence de 0,70 correspond à…",
             "reponse": "70 %",
             "correction": "La fréquence donnée correspond à 70 %.",
@@ -616,6 +879,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 1.05,
+            "resultat_exploitable": 105,
             "enonce": "Une fréquence de 1,05 correspond à…",
             "reponse": "105 %",
             "correction": "La fréquence donnée correspond à 105 %.",
@@ -625,11 +890,15 @@
             "p4": "1050 %"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 * 100",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "REP-STAT-004",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Pourquoi choisit-on une représentation statistique ?",
       "reponse": "Pour mettre en évidence l’information utile",
       "propositions": [
@@ -638,7 +907,10 @@
         "Pour modifier les données",
         "Pour éviter de calculer les effectifs"
       ],
-      "correction": "Une représentation est un choix de lecture : elle doit rendre visible ce que l’on souhaite comparer ou suivre."
+      "correction": "Une représentation est un choix de lecture : elle doit rendre visible ce que l’on souhaite comparer ou suivre.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

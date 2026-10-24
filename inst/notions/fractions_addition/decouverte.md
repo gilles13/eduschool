@@ -26,12 +26,13 @@ Le résultat doit être cohérent avec les fractions de départ et être simplif
 
 **À essayer 2 — Aucun dénominateur commun n’apparaît immédiatement :** calcule $\frac{3}{5}+\frac{4}{7}$.
 
-## Pour vérifier tes découvertes
-
-**1. Un dénominateur apparaît immédiatement.** Comme $8$ est un multiple de $4$, on garde $8$ : $\frac{1}{4}=\frac{2}{8}$, donc $\frac{1}{4}+\frac{3}{8}=\frac{5}{8}$.
-
-**2. Aucun dénominateur commun n’apparaît immédiatement.** On peut prendre $5\times7=35$ : $\frac{3}{5}=\frac{21}{35}$ et $\frac{4}{7}=\frac{20}{35}$, donc $\frac{3}{5}+\frac{4}{7}=\frac{41}{35}$.
-
 ## À retenir
 
 On additionne des fractions après les avoir exprimées avec un même dénominateur.
+
+## Pour vérifier tes découvertes
+
+1. **Un dénominateur apparaît immédiatement :** Comme $8$ est un multiple de $4$, on garde $8$ : $\frac{1}{4}=\frac{2}{8}$, donc $\frac{1}{4}+\frac{3}{8}=\frac{5}{8}$.
+
+2. **Aucun dénominateur commun n’apparaît immédiatement :** On peut prendre $5\times7=35$ : $\frac{3}{5}=\frac{21}{35}$ et $\frac{4}{7}=\frac{20}{35}$, donc $\frac{3}{5}+\frac{4}{7}=\frac{41}{35}$.
+

@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "ENS-001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,11 @@
             "p1": "2 ∈ E",
             "p2": "4 ∈ E",
             "p3": "2 ⊆ E",
-            "p4": "E ∈ 2"
+            "p4": "E ∈ 2",
+            "e1": 1,
+            "e2": 2,
+            "e3": 3,
+            "element": 2
           }
         },
         {
@@ -33,7 +38,11 @@
             "p1": "12 ∈ E",
             "p2": "14 ∈ E",
             "p3": "12 ⊆ E",
-            "p4": "E ∈ 12"
+            "p4": "E ∈ 12",
+            "e1": 11,
+            "e2": 12,
+            "e3": 13,
+            "element": 12
           }
         },
         {
@@ -44,14 +53,22 @@
             "p1": "22 ∈ E",
             "p2": "24 ∈ E",
             "p3": "22 ⊆ E",
-            "p4": "E ∈ 22"
+            "p4": "E ∈ 22",
+            "e1": 21,
+            "e2": 22,
+            "e3": 23,
+            "element": 22
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(element %in% c(e1, e2, e3))",
+      "reponse_exploitable": 1,
+      "moteur": "Ryacas"
     },
     {
       "id": "ENS-002",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +87,12 @@
             "p1": "A ⊆ E",
             "p2": "E ⊆ A",
             "p3": "A ∈ E",
-            "p4": "3 ∈ A"
+            "p4": "3 ∈ A",
+            "a1": 1,
+            "a2": 2,
+            "e1": 1,
+            "e2": 2,
+            "e3": 3
           }
         },
         {
@@ -81,7 +103,12 @@
             "p1": "A ⊆ E",
             "p2": "E ⊆ A",
             "p3": "A ∈ E",
-            "p4": "13 ∈ A"
+            "p4": "13 ∈ A",
+            "a1": 11,
+            "a2": 12,
+            "e1": 11,
+            "e2": 12,
+            "e3": 13
           }
         },
         {
@@ -92,14 +119,23 @@
             "p1": "A ⊆ E",
             "p2": "E ⊆ A",
             "p3": "A ∈ E",
-            "p4": "23 ∈ A"
+            "p4": "23 ∈ A",
+            "a1": 21,
+            "a2": 22,
+            "e1": 21,
+            "e2": 22,
+            "e3": 23
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(all(c(a1, a2) %in% c(e1, e2, e3)))",
+      "reponse_exploitable": 1,
+      "moteur": "Ryacas"
     },
     {
       "id": "ENS-005",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +154,9 @@
             "p1": "4",
             "p2": "2",
             "p3": "3",
-            "p4": "8"
+            "p4": "8",
+            "nombre_elements": 2,
+            "resultat_exploitable": 4
           }
         },
         {
@@ -129,7 +167,9 @@
             "p1": "8",
             "p2": "3",
             "p3": "6",
-            "p4": "9"
+            "p4": "9",
+            "nombre_elements": 3,
+            "resultat_exploitable": 8
           }
         },
         {
@@ -140,14 +180,20 @@
             "p1": "16",
             "p2": "4",
             "p3": "8",
-            "p4": "12"
+            "p4": "12",
+            "nombre_elements": 4,
+            "resultat_exploitable": 16
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "2^nombre_elements",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ENS-006",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -166,7 +212,9 @@
             "p1": "∅ ⊆ {1, 2}",
             "p2": "∅ ∈ {1, 2}",
             "p3": "{1, 2} ⊆ ∅",
-            "p4": "1 ∈ ∅"
+            "p4": "1 ∈ ∅",
+            "e1": 1,
+            "e2": 2
           }
         },
         {
@@ -177,7 +225,9 @@
             "p1": "∅ ⊆ {11, 12}",
             "p2": "∅ ∈ {11, 12}",
             "p3": "{11, 12} ⊆ ∅",
-            "p4": "11 ∈ ∅"
+            "p4": "11 ∈ ∅",
+            "e1": 11,
+            "e2": 12
           }
         },
         {
@@ -188,14 +238,20 @@
             "p1": "∅ ⊆ {21, 22}",
             "p2": "∅ ∈ {21, 22}",
             "p3": "{21, 22} ⊆ ∅",
-            "p4": "21 ∈ ∅"
+            "p4": "21 ∈ ∅",
+            "e1": 21,
+            "e2": 22
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(all(numeric(0) %in% c(e1, e2)))",
+      "reponse_exploitable": 1,
+      "moteur": "R"
     },
     {
       "id": "ENS-007",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -239,11 +295,15 @@
             "p4": "√2 ∈ ℚ"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ENS-008",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on la relation entre un élément 𝑥 et un ensemble E lorsque 𝑥 ∈ E ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -261,11 +321,15 @@
         "intersection",
         "réunion"
       ],
-      "correction": "Le symbole ∈ exprime l’appartenance d’un élément à un ensemble. L’inclusion, notée ⊆, relie deux ensembles."
+      "correction": "Le symbole ∈ exprime l’appartenance d’un élément à un ensemble. L’inclusion, notée ⊆, relie deux ensembles.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ENS-009",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on un nombre qui peut s’écrire comme quotient de deux entiers, avec un dénominateur non nul ? Choisis le mot masqué correspondant.",
       "presentation": {
         "type": "mot_masque",
@@ -284,11 +348,15 @@
         "décimal",
         "réel"
       ],
-      "correction": "Un nombre rationnel peut s’écrire comme quotient de deux entiers, avec un dénominateur non nul."
+      "correction": "Un nombre rationnel peut s’écrire comme quotient de deux entiers, avec un dénominateur non nul.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ENS-010",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Quel nombre doit remplacer □ pour que □ ∈ ℤ mais □ ∉ ℕ ?",
       "presentation": {
         "type": "boite"
@@ -300,7 +368,10 @@
         "1/2",
         "π"
       ],
-      "correction": "−3 est un entier relatif, donc −3 ∈ ℤ, mais ce n’est pas un entier naturel : −3 ∉ ℕ."
+      "correction": "−3 est un entier relatif, donc −3 ∈ ℤ, mais ce n’est pas un entier naturel : −3 ∉ ℕ.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

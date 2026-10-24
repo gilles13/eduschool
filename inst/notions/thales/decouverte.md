@@ -1,4 +1,10 @@
-# Découvrir le théorème de Thalès
+# Découvrir : le théorème de Thalès
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Le **théorème de Thalès** relie des longueurs proportionnelles dans une configuration de droites parallèles. Il permet notamment de calculer une longueur inconnue.
+:::
 
 Deux droites parallèles peuvent créer des triangles dont les longueurs sont **proportionnelles**. C’est ce que permet d’exploiter le théorème de Thalès.
 
@@ -24,4 +30,4 @@ Dans cette configuration « en papillon », si $(AB)$ et $(DC)$ sont parallèles
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver le parallélisme.** Oui, avec ces positions des points sur les côtés du triangle, l’égalité des rapports permet d’appliquer la réciproque du théorème de Thalès : $(DE)\parallel(BC)$. Les positions et l’ordre des points sont indispensables.
+1. **Retrouver le parallélisme :** Oui, avec ces positions des points sur les côtés du triangle, l’égalité des rapports permet d’appliquer la réciproque du théorème de Thalès : $(DE)\parallel(BC)$. Les positions et l’ordre des points sont indispensables.

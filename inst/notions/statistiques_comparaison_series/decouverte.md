@@ -28,6 +28,6 @@ Même centre ne signifie pas même dispersion.
 
 ## Pour vérifier tes découvertes
 
-**1. Même moyenne**
+1. **Même moyenne :**
 
 Les deux moyennes valent 10. L’étendue de A vaut 2 ; celle de B vaut 16 : B est beaucoup plus dispersée.

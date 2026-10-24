@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "EVOL-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Une valeur [[initial]] [[sens]] de [[p]] %. Quelle nouvelle valeur et quel coefficient multiplicateur conviennent ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -16,6 +17,10 @@
       "variantes": [
         {
           "parametres": {
+            "initial_num": 40,
+            "pourcentage_num": 5,
+            "signe_variation": 1,
+            "resultat_exploitable": 42,
             "initial": "40",
             "p": "5",
             "sens": "augmente",
@@ -28,6 +33,10 @@
         },
         {
           "parametres": {
+            "initial_num": 50,
+            "pourcentage_num": 10,
+            "signe_variation": -1,
+            "resultat_exploitable": 45,
             "initial": "50",
             "p": "10",
             "sens": "diminue",
@@ -40,6 +49,10 @@
         },
         {
           "parametres": {
+            "initial_num": 60,
+            "pourcentage_num": 15,
+            "signe_variation": 1,
+            "resultat_exploitable": 69,
             "initial": "60",
             "p": "15",
             "sens": "augmente",
@@ -52,6 +65,10 @@
         },
         {
           "parametres": {
+            "initial_num": 70,
+            "pourcentage_num": 20,
+            "signe_variation": -1,
+            "resultat_exploitable": 56,
             "initial": "70",
             "p": "20",
             "sens": "diminue",
@@ -64,6 +81,10 @@
         },
         {
           "parametres": {
+            "initial_num": 80,
+            "pourcentage_num": 25,
+            "signe_variation": 1,
+            "resultat_exploitable": 100,
             "initial": "80",
             "p": "25",
             "sens": "augmente",
@@ -76,6 +97,10 @@
         },
         {
           "parametres": {
+            "initial_num": 90,
+            "pourcentage_num": 30,
+            "signe_variation": -1,
+            "resultat_exploitable": 63,
             "initial": "90",
             "p": "30",
             "sens": "diminue",
@@ -88,6 +113,10 @@
         },
         {
           "parametres": {
+            "initial_num": 100,
+            "pourcentage_num": 5,
+            "signe_variation": 1,
+            "resultat_exploitable": 105,
             "initial": "100",
             "p": "5",
             "sens": "augmente",
@@ -100,6 +129,10 @@
         },
         {
           "parametres": {
+            "initial_num": 110,
+            "pourcentage_num": 10,
+            "signe_variation": -1,
+            "resultat_exploitable": 99,
             "initial": "110",
             "p": "10",
             "sens": "diminue",
@@ -112,6 +145,10 @@
         },
         {
           "parametres": {
+            "initial_num": 120,
+            "pourcentage_num": 15,
+            "signe_variation": 1,
+            "resultat_exploitable": 138,
             "initial": "120",
             "p": "15",
             "sens": "augmente",
@@ -124,6 +161,10 @@
         },
         {
           "parametres": {
+            "initial_num": 130,
+            "pourcentage_num": 20,
+            "signe_variation": -1,
+            "resultat_exploitable": 104,
             "initial": "130",
             "p": "20",
             "sens": "diminue",
@@ -136,6 +177,10 @@
         },
         {
           "parametres": {
+            "initial_num": 140,
+            "pourcentage_num": 25,
+            "signe_variation": 1,
+            "resultat_exploitable": 175,
             "initial": "140",
             "p": "25",
             "sens": "augmente",
@@ -148,6 +193,10 @@
         },
         {
           "parametres": {
+            "initial_num": 150,
+            "pourcentage_num": 30,
+            "signe_variation": -1,
+            "resultat_exploitable": 105,
             "initial": "150",
             "p": "30",
             "sens": "diminue",
@@ -158,11 +207,15 @@
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "initial_num * (1 + signe_variation * pourcentage_num / 100)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "EVOL-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -175,6 +228,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 8,
+            "resultat_exploitable": 1.08,
             "enonce": "Quel coefficient multiplicateur correspond à une hausse de 8 % ?",
             "reponse": "1,08",
             "correction": "Une hausse de 8 % donne 1 + 8/100 = 1,08.",
@@ -186,6 +241,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 12,
+            "resultat_exploitable": 1.12,
             "enonce": "Quel coefficient multiplicateur correspond à une hausse de 12 % ?",
             "reponse": "1,12",
             "correction": "Une hausse de 12 % donne 1 + 12/100 = 1,12.",
@@ -197,6 +254,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 25,
+            "resultat_exploitable": 1.25,
             "enonce": "Quel coefficient multiplicateur correspond à une hausse de 25 % ?",
             "reponse": "1,25",
             "correction": "Une hausse de 25 % donne 1 + 25/100 = 1,25.",
@@ -206,11 +265,15 @@
             "p4": "1,5"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "1 + valeur_1 / 100",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "EVOL-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -223,6 +286,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 20,
+            "resultat_exploitable": 0.8,
             "enonce": "Quel coefficient multiplicateur correspond à une baisse de 20 % ?",
             "reponse": "0,8",
             "correction": "Une baisse de 20 % conserve 80 % de la valeur : coefficient 0,8.",
@@ -234,6 +299,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 15,
+            "resultat_exploitable": 0.85,
             "enonce": "Quel coefficient multiplicateur correspond à une baisse de 15 % ?",
             "reponse": "0,85",
             "correction": "Une baisse de 15 % conserve 85 % de la valeur : coefficient 0,85.",
@@ -245,6 +312,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 35,
+            "resultat_exploitable": 0.65,
             "enonce": "Quel coefficient multiplicateur correspond à une baisse de 35 % ?",
             "reponse": "0,65",
             "correction": "Une baisse de 35 % conserve 65 % de la valeur : coefficient 0,65.",
@@ -254,7 +323,10 @@
             "p4": "35"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "1 - valeur_1 / 100",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

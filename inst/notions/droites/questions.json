@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "DROIT_PERP_001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "Le petit carré code un angle droit entre les droites (d) et (Δ). Que peut-on affirmer ?",
       "reponse": "Les droites (d) et (Δ) sont perpendiculaires",
       "propositions": [
@@ -16,11 +17,15 @@
         "id": "droites",
         "configuration": "perpendiculaires"
       },
-      "correction": "Le petit carré code un angle droit : les droites (d) et (Δ) sont donc perpendiculaires."
+      "correction": "Le petit carré code un angle droit : les droites (d) et (Δ) sont donc perpendiculaires.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DROIT_PAR_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "On sait que (d) // (d'). Que signifie cette information ?",
       "reponse": "Les droites (d) et (d') sont parallèles",
       "propositions": [
@@ -33,11 +38,15 @@
         "id": "droites",
         "configuration": "paralleles"
       },
-      "correction": "La notation (d) // (d') indique que les deux droites sont parallèles."
+      "correction": "La notation (d) // (d') indique que les deux droites sont parallèles.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DROIT_CODE_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Les droites semblent presque perpendiculaires. Quelle information permet réellement de l'affirmer ?",
       "reponse": "Le codage de l'angle droit",
       "propositions": [
@@ -51,11 +60,15 @@
         "configuration": "presque_perpendiculaires",
         "main_levee": true
       },
-      "correction": "C'est le petit carré de l'angle droit qui permet d'affirmer la perpendicularité."
+      "correction": "C'est le petit carré de l'angle droit qui permet d'affirmer la perpendicularité.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DROIT_DED_001",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Les codages indiquent que (d) ⟂ (Δ) et (d') ⟂ (Δ). Que peut-on en déduire ?",
       "reponse": "Les droites (d) et (d') sont parallèles",
       "propositions": [
@@ -68,11 +81,16 @@
         "id": "droites",
         "configuration": "perpendiculaires_meme_droite"
       },
-      "correction": "[[Je vois]]\nLes droites (d) et (d') sont perpendiculaires à (Δ).\n[[Je sais]]\nDeux droites perpendiculaires à une même droite sont parallèles entre elles.\n[[J'en déduis]]\n(d) // (d')"
+      "correction": "Je vois :\nLes droites (d) et (d') sont perpendiculaires à (Δ).\nOr :\nDeux droites perpendiculaires à une même droite sont parallèles entre elles.\nDonc :\n(d) // (d')",
+      "categorie": "raisonnement",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     },
     {
       "id": "DROIT-VOCAB-TROU-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Deux droites qui forment un angle droit sont dites… Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -94,11 +112,15 @@
       "illustration": {
         "id": "droites",
         "configuration": "perpendiculaires"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DROIT-VOCAB-MASQUE-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on deux droites d’un même plan qui ne se coupent pas ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -121,7 +143,114 @@
       "illustration": {
         "id": "droites",
         "configuration": "paralleles"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "DROITES-ANGLES-DROITS",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "La droite (d) est perpendiculaire à (e). Quel est l’angle formé par ces deux droites ?",
+            "reponse": "90°",
+            "p1": "90°",
+            "p2": "45°",
+            "p3": "180°",
+            "p4": "0°",
+            "correction": "Deux droites perpendiculaires forment quatre angles droits, de 90°.",
+            "angle_droit": 90,
+            "resultat_exploitable": 90
+          }
+        }
+      ],
+      "illustration": {
+        "id": "droites",
+        "configuration": "perpendiculaires"
+      },
+      "enonce_exploitable": "angle_droit",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "DROITES-PARALLELES-TRANSITIVITE",
+      "capacite": "justifier",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Les droites (d) et (e) sont parallèles. La droite (f) est parallèle à (e). Quelle relation unit (d) et (f) ?",
+            "reponse": "Elles sont parallèles",
+            "p1": "Elles sont parallèles",
+            "p2": "Elles sont perpendiculaires",
+            "p3": "Elles sont confondues nécessairement",
+            "p4": "Elles sont sécantes nécessairement",
+            "correction": "Deux droites parallèles à une même droite sont parallèles entre elles."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "droites",
+        "configuration": "paralleles"
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
+    },
+    {
+      "id": "DROITES-PERP-PAR",
+      "capacite": "justifier",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "(d) est perpendiculaire à (e), et (f) est parallèle à (e). Quelle relation unit (d) et (f) ?",
+            "reponse": "Elles sont perpendiculaires",
+            "p1": "Elles sont perpendiculaires",
+            "p2": "Elles sont parallèles",
+            "p3": "Elles sont nécessairement confondues",
+            "p4": "Elles ne peuvent pas se couper",
+            "correction": "Une droite perpendiculaire à l’une de deux droites parallèles est aussi perpendiculaire à l’autre."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "droites",
+        "configuration": "perpendiculaires"
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     }
   ]
 }

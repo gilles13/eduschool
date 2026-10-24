@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FONC-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "La fonction f est définie par f(𝑥) = [[a]]𝑥 [[b]]. Quelle est l’image de [[x]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -614,11 +615,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "a * x + b",
+      "reponse_exploitable": "as.numeric(bonne)",
+      "moteur": "R"
     },
     {
       "id": "FONC-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -631,6 +636,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 7,
+            "resultat_exploitable": 7,
             "enonce": "Dans l’écriture f(3)=7, quel nombre est l’image de 3 ?",
             "reponse": "7",
             "correction": "f(3)=7 signifie que la fonction associe 7 au nombre 3.",
@@ -642,6 +649,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 9,
+            "resultat_exploitable": 9,
             "enonce": "Dans l’écriture f(5)=9, quel nombre est l’image de 5 ?",
             "reponse": "9",
             "correction": "Dans f(5)=9, l’image de 5 est 9.",
@@ -653,6 +662,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 6,
+            "resultat_exploitable": 6,
             "enonce": "Dans l’écriture f(−2)=6, quel nombre est l’image de −2 ?",
             "reponse": "6",
             "correction": "Dans f(−2)=6, l’image de −2 est 6.",
@@ -662,11 +673,15 @@
             "p4": "8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FONC-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -710,7 +725,10 @@
             "p4": "−2 est forcément l’unique antécédent de 6."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

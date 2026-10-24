@@ -30,8 +30,17 @@ graphique_triangles = function(type = 1, illustration = NULL) {
       marque("\u00c9quilat\u00e9ral", c(0, 0), c(4, 0)),
       data.frame(type = factor(c("Rectangle", "Rectangle"), levels = levels(points$type)),
         x = c(.3, .3), y = c(0, .3), xend = c(.3, 0), yend = c(.3, .3)))
+    sommets = do.call(rbind, lapply(levels(points$type), function(nom) {
+      z = points[as.character(points$type) == nom, ][1:3, ]
+      z$label = c("A", "B", "C")
+      z$lx = z$x + c(-.2, .2, 0)
+      z$ly = z$y + c(-.2, -.2, .2)
+      z
+    }))
     p = ggplot2::ggplot(points, ggplot2::aes(x, y, group = type)) +
       ggplot2::geom_path(linewidth = .65) +
+      ggplot2::geom_point(data = sommets, ggplot2::aes(x, y), inherit.aes = FALSE, size = 1.5) +
+      ggplot2::geom_text(data = sommets, ggplot2::aes(x = lx, y = ly, label = label), inherit.aes = FALSE, size = 3.2) +
       ggplot2::geom_segment(data = codages, inherit.aes = FALSE,
         ggplot2::aes(x = x, y = y, xend = xend, yend = yend), linewidth = .55) +
       ggplot2::facet_wrap(~type, nrow = 1) +
@@ -68,8 +77,17 @@ graphique_triangles = function(type = 1, illustration = NULL) {
       x = c(2, 2.25, 1.2, 1.45), y = c(.25, .25, .25, .25),
       xend = c(2.25, 2.25, 1.45, 1.45), yend = c(.25, 0, .25, 0))
     codages = rbind(marques_milieu, angles_droits)
+    sommets = do.call(rbind, lapply(types, function(nom) {
+      D = if (nom == "Hauteur") 1.2 else 2
+      data.frame(type = factor(rep(nom, 4), levels = types),
+        x = c(0, 4, 1.2, D), y = c(0, 0, 3, 0),
+        label = c("A", "B", "C", if (nom == "Hauteur") "H" else "M"),
+        lx = c(-.2, 4.2, 1.2, D), ly = c(-.2, -.2, 3.2, -.23))
+    }))
     p = ggplot2::ggplot() +
       ggplot2::geom_path(data = fond, ggplot2::aes(x, y, group = type), linewidth = .65) +
+      ggplot2::geom_point(data = sommets, ggplot2::aes(x, y), size = 1.5) +
+      ggplot2::geom_text(data = sommets, ggplot2::aes(x = lx, y = ly, label = label), size = 3.2) +
       ggplot2::geom_segment(data = droites,
         ggplot2::aes(x = x, y = y, xend = xend, yend = yend),
         linewidth = .75, linetype = 2) +
@@ -147,6 +165,7 @@ graphique_triangles = function(type = 1, illustration = NULL) {
         ggplot2::aes(x = x, y = y, xend = xend, yend = yend), linewidth = .7) +
       ggplot2::geom_segment(data = angles,
         ggplot2::aes(x = x, y = y, xend = xend, yend = yend), linewidth = .55) +
+      ggplot2::geom_point(data = sommets, ggplot2::aes(x, y), size = 1.5) +
       ggplot2::geom_point(data = data.frame(x = O[1], y = O[2]),
         ggplot2::aes(x, y), size = 2) +
       ggplot2::geom_text(data = etiquettes, ggplot2::aes(x, y, label = label), size = 3.5) +
@@ -218,12 +237,41 @@ graphique_triangles = function(type = 1, illustration = NULL) {
       }
     }
     p = p +
+      ggplot2::geom_point(data = triangle[1:3, ], ggplot2::aes(x, y), size = 1.5) +
       ggplot2::geom_text(data = etiquettes,
         ggplot2::aes(x, y, label = label), size = 3.8) +
       ggplot2::coord_fixed(xlim = c(-.5, 4.5), ylim = c(-.55, 3.55)) +
       ggplot2::theme_void()
     attr(p, "eduschool_dimensions") = c(4.6, 3.6)
     attr(p, "eduschool_display_width") = "60%"
+    return(p)
+  }
+  if (type == 8) {
+    # Triangle ABC, base BC = 6 cm, hauteur AH = 3 cm.
+    triangle = data.frame(x = c(2, 0, 6, 2), y = c(3, 0, 0, 3))
+    sommets = data.frame(x = c(2, 0, 6, 2), y = c(3, 0, 0, 0),
+      label = c("A", "B", "C", "H"),
+      lx = c(2, -.2, 6.2, 1.8), ly = c(3.25, -.23, -.23, -.23))
+    hauteur = data.frame(x = 2, y = 3, xend = 2, yend = 0)
+    angle = data.frame(x = c(2, 2.25), y = c(.25, .25),
+      xend = c(2.25, 2.25), yend = c(.25, 0))
+    p = ggplot2::ggplot() +
+      ggplot2::geom_path(data = triangle, ggplot2::aes(x, y), linewidth = .75) +
+      ggplot2::geom_segment(data = hauteur,
+        ggplot2::aes(x = x, y = y, xend = xend, yend = yend),
+        colour = "#b14b4b", linewidth = .65, linetype = 2) +
+      ggplot2::geom_segment(data = angle,
+        ggplot2::aes(x = x, y = y, xend = xend, yend = yend), linewidth = .55) +
+      ggplot2::geom_point(data = sommets, ggplot2::aes(x, y), size = 1.7) +
+      ggplot2::geom_text(data = sommets,
+        ggplot2::aes(x = lx, y = ly, label = label), size = 3.8) +
+      ggplot2::annotate("text", x = 3, y = -.65, label = "BC = 6 cm", size = 3.8) +
+      ggplot2::annotate("text", x = 1.1, y = 1.5, label = "AH = 3 cm", size = 3.8,
+        colour = "#b14b4b") +
+      ggplot2::coord_fixed(xlim = c(-.8, 6.8), ylim = c(-.9, 3.7)) +
+      ggplot2::theme_void()
+    attr(p, "eduschool_dimensions") = c(5.5, 3.3)
+    attr(p, "eduschool_display_width") = "65%"
     return(p)
   }
   stop("type de graphique triangles inconnu")

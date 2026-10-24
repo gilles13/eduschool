@@ -1,5 +1,11 @@
 # Découvrir : Multiplier et diviser des nombres relatifs
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Multiplier ou diviser des nombres relatifs** demande de calculer la valeur du résultat et de déterminer son signe.
+:::
+
 Pour un produit de nombres relatifs, la valeur du produit et son signe sont deux questions différentes. Le cas qui surprend le plus est souvent : **pourquoi le produit de deux nombres négatifs est-il positif ?**
 
 ## Un seul facteur négatif
@@ -40,8 +46,8 @@ De même, (−20) ÷ (−5) = 4 parce que 4 × (−5) = −20.
 
 ## Pour vérifier tes découvertes
 
-**1. Addition répétée.** 5 × (−2) = (−2) + (−2) + (−2) + (−2) + (−2) = −10.
+1. **Addition répétée :** 5 × (−2) = (−2) + (−2) + (−2) + (−2) + (−2) = −10.
 
-**2. Même raisonnement.** Le résultat doit être 24 : −24 + 24 = 0. Donc (−4) × (−6) = 24.
+2. **Même raisonnement :** Le résultat doit être 24 : −24 + 24 = 0. Donc (−4) × (−6) = 24.
 
-**3. Opération inverse.** 36 ÷ (−9) = −4, car (−4) × (−9) = 36.
+3. **Opération inverse :** 36 ÷ (−9) = −4, car (−4) × (−9) = 36.

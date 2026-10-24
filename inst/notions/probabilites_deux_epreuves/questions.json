@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "DEUX-EP-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Une première épreuve a [[n1]] issues équiprobables dont [[f1]] favorables. Une seconde, indépendante, a [[n2]] issues équiprobables dont [[f2]] favorables. Quelle est la probabilité d’obtenir un résultat favorable aux deux épreuves ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -24,7 +25,8 @@
             "bonne": "1/4",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.25
           }
         },
         {
@@ -37,7 +39,8 @@
             "bonne": "1/3",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.3333333333333333
           }
         },
         {
@@ -50,7 +53,8 @@
             "bonne": "3/8",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.375
           }
         },
         {
@@ -63,7 +67,8 @@
             "bonne": "2/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.4
           }
         },
         {
@@ -76,7 +81,8 @@
             "bonne": "1/2",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5
           }
         },
         {
@@ -89,7 +95,8 @@
             "bonne": "2/3",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.6666666666666666
           }
         },
         {
@@ -102,7 +109,8 @@
             "bonne": "1/4",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.25
           }
         },
         {
@@ -115,7 +123,8 @@
             "bonne": "3/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.6
           }
         },
         {
@@ -128,7 +137,8 @@
             "bonne": "1/8",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.125
           }
         },
         {
@@ -141,7 +151,8 @@
             "bonne": "1/4",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.25
           }
         },
         {
@@ -154,7 +165,8 @@
             "bonne": "3/16",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.1875
           }
         },
         {
@@ -167,7 +179,8 @@
             "bonne": "3/10",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.3
           }
         },
         {
@@ -180,7 +193,8 @@
             "bonne": "1/2",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5
           }
         },
         {
@@ -193,7 +207,8 @@
             "bonne": "4/15",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.26666666666666666
           }
         },
         {
@@ -206,7 +221,8 @@
             "bonne": "3/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.6
           }
         },
         {
@@ -219,7 +235,8 @@
             "bonne": "1/25",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.04
           }
         },
         {
@@ -232,7 +249,8 @@
             "bonne": "1/2",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5
           }
         },
         {
@@ -245,7 +263,8 @@
             "bonne": "1/2",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5
           }
         },
         {
@@ -258,7 +277,8 @@
             "bonne": "1/3",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.3333333333333333
           }
         },
         {
@@ -271,7 +291,8 @@
             "bonne": "1/9",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.1111111111111111
           }
         },
         {
@@ -284,7 +305,8 @@
             "bonne": "3/4",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.75
           }
         },
         {
@@ -297,7 +319,8 @@
             "bonne": "8/15",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5333333333333333
           }
         },
         {
@@ -310,7 +333,8 @@
             "bonne": "1/2",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5
           }
         },
         {
@@ -323,7 +347,8 @@
             "bonne": "9/20",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.45
           }
         },
         {
@@ -336,7 +361,8 @@
             "bonne": "1/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.2
           }
         },
         {
@@ -349,7 +375,8 @@
             "bonne": "4/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.8
           }
         },
         {
@@ -362,7 +389,8 @@
             "bonne": "3/20",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.15
           }
         },
         {
@@ -375,7 +403,8 @@
             "bonne": "6/25",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.24
           }
         },
         {
@@ -388,7 +417,8 @@
             "bonne": "1/6",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.16666666666666666
           }
         },
         {
@@ -401,7 +431,8 @@
             "bonne": "1/10",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.1
           }
         },
         {
@@ -414,7 +445,8 @@
             "bonne": "1/6",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.16666666666666666
           }
         },
         {
@@ -427,7 +459,8 @@
             "bonne": "2/3",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.6666666666666666
           }
         },
         {
@@ -440,7 +473,8 @@
             "bonne": "1/2",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.5
           }
         },
         {
@@ -453,7 +487,8 @@
             "bonne": "1/3",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.3333333333333333
           }
         },
         {
@@ -466,7 +501,8 @@
             "bonne": "3/4",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.75
           }
         },
         {
@@ -479,7 +515,8 @@
             "bonne": "3/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.6
           }
         },
         {
@@ -492,7 +529,8 @@
             "bonne": "2/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.4
           }
         },
         {
@@ -505,7 +543,8 @@
             "bonne": "1/15",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.06666666666666667
           }
         },
         {
@@ -518,7 +557,8 @@
             "bonne": "9/20",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.45
           }
         },
         {
@@ -531,14 +571,19 @@
             "bonne": "3/5",
             "d1": "On additionne les deux probabilités favorables.",
             "d2": "On divise le nombre de cas favorables de la première épreuve par le nombre total de la seconde.",
-            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves."
+            "d3": "La probabilité vaut toujours 1/2 dès qu’il y a deux épreuves.",
+            "resultat": 0.6
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "f1 * f2 / (n1 * n2)",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
     },
     {
       "id": "DEUX-EP-002",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Pourquoi un arbre est-il utile pour une expérience à deux épreuves ?",
       "reponse": "Il organise les chemins possibles successifs",
       "propositions": [
@@ -547,11 +592,15 @@
         "Il remplace toute probabilité par une moyenne",
         "Il supprime les issues défavorables"
       ],
-      "correction": "Chaque chemin correspond à une succession de résultats."
+      "correction": "Chaque chemin correspond à une succession de résultats.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DEUX-EP-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -570,7 +619,10 @@
             "p1": "4",
             "p2": "2",
             "p3": "3",
-            "p4": "8"
+            "p4": "8",
+            "issues_premiere": 2,
+            "issues_seconde": 2,
+            "resultat_exploitable": 4
           }
         },
         {
@@ -581,7 +633,10 @@
             "p1": "4",
             "p2": "2",
             "p3": "6",
-            "p4": "8"
+            "p4": "8",
+            "issues_premiere": 2,
+            "issues_seconde": 2,
+            "resultat_exploitable": 4
           }
         },
         {
@@ -592,10 +647,16 @@
             "p1": "9",
             "p2": "3",
             "p3": "6",
-            "p4": "12"
+            "p4": "12",
+            "issues_premiere": 3,
+            "issues_seconde": 3,
+            "resultat_exploitable": 9
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "issues_premiere*issues_seconde",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

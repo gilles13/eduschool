@@ -1,4 +1,4 @@
-# L’essentiel : Reconnaître des fractions équivalentes
+# L'essentiel : Reconnaître des fractions équivalentes
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

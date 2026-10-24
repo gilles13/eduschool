@@ -1,9 +1,9 @@
-# L’essentiel : Rendre une fraction irréductible
+# L'essentiel : Rendre une fraction irréductible
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une fraction irréductible ne peut plus être simplifiée : son numérateur et son dénominateur n’ont plus de diviseur commun supérieur à 1.
+**Une fraction irréductible ne** peut plus être simplifiée : son numérateur et son dénominateur n’ont plus de diviseur commun supérieur à 1.
 :::
 
 ## Principe

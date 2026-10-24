@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "DECOMPOSITION_DECIMALE-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,11 @@
             "p1": "600 + 4 + 0,08",
             "p2": "600 + 40 + 0,08",
             "p3": "600 + 4 + 0,8",
-            "p4": "60 + 4 + 0,08"
+            "p4": "60 + 4 + 0,08",
+            "a_exploitable": 600,
+            "b_exploitable": 4,
+            "c_exploitable": 0.08,
+            "result_exploitable": 604.08
           }
         },
         {
@@ -33,7 +38,11 @@
             "p1": "700 + 5 + 0,06",
             "p2": "70 + 5 + 0,6",
             "p3": "700 + 50 + 0,06",
-            "p4": "705 + 0,6"
+            "p4": "705 + 0,6",
+            "a_exploitable": 700,
+            "b_exploitable": 5,
+            "c_exploitable": 0.06,
+            "result_exploitable": 705.06
           }
         },
         {
@@ -44,14 +53,22 @@
             "p1": "300 + 2 + 0,09",
             "p2": "30 + 2 + 0,9",
             "p3": "300 + 20 + 0,09",
-            "p4": "302 + 0,9"
+            "p4": "302 + 0,9",
+            "a_exploitable": 300,
+            "b_exploitable": 2,
+            "c_exploitable": 0.09,
+            "result_exploitable": 302.09
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a_exploitable + b_exploitable + c_exploitable",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DECOMPOSITION_DECIMALE-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +87,9 @@
             "p1": "500,27",
             "p2": "502,7",
             "p3": "500,207",
-            "p4": "520,7"
+            "p4": "520,7",
+            "calcul_exploitable": "5*100+2*0.1+7*0.01",
+            "resultat_exploitable": "50027/100"
           }
         },
         {
@@ -81,7 +100,9 @@
             "p1": "400,38",
             "p2": "403,8",
             "p3": "43,8",
-            "p4": "400,038"
+            "p4": "400,038",
+            "calcul_exploitable": "4*100+3*0.1+8*0.01",
+            "resultat_exploitable": "20019/50"
           }
         },
         {
@@ -92,14 +113,20 @@
             "p1": "700,52",
             "p2": "705,2",
             "p3": "75,2",
-            "p4": "700,052"
+            "p4": "700,052",
+            "calcul_exploitable": "7*100+5*0.1+2*0.01",
+            "resultat_exploitable": "17513/25"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DECOMPOSITION_DECIMALE-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +145,14 @@
             "p1": "4 × 10 + 2 × 1 + 3 × 0,1",
             "p2": "4 × 100 + 2 + 3 × 0,1",
             "p3": "4 × 10 + 2 + 3 × 0,01",
-            "p4": "4 + 2 × 10 + 3 × 0,1"
+            "p4": "4 + 2 × 10 + 3 × 0,1",
+            "a_exploitable": 4,
+            "b_exploitable": 10,
+            "c_exploitable": 2,
+            "d_exploitable": 1,
+            "e_exploitable": 3,
+            "f_exploitable": 0.1,
+            "result_exploitable": 42.3
           }
         },
         {
@@ -129,7 +163,14 @@
             "p1": "5 × 10 + 3 × 1 + 7 × 0,1",
             "p2": "5 × 1 + 3 × 10 + 7 × 0,1",
             "p3": "53 × 10 + 7 × 0,1",
-            "p4": "5 × 10 + 3 × 1 + 7 × 1"
+            "p4": "5 × 10 + 3 × 1 + 7 × 1",
+            "a_exploitable": 5,
+            "b_exploitable": 10,
+            "c_exploitable": 3,
+            "d_exploitable": 1,
+            "e_exploitable": 7,
+            "f_exploitable": 0.1,
+            "result_exploitable": 53.7
           }
         },
         {
@@ -140,14 +181,25 @@
             "p1": "8 × 10 + 1 × 1 + 4 × 0,1",
             "p2": "8 × 1 + 1 × 10 + 4 × 0,1",
             "p3": "81 × 10 + 4 × 0,1",
-            "p4": "8 × 10 + 1 × 1 + 4 × 1"
+            "p4": "8 × 10 + 1 × 1 + 4 × 1",
+            "a_exploitable": 8,
+            "b_exploitable": 10,
+            "c_exploitable": 1,
+            "d_exploitable": 1,
+            "e_exploitable": 4,
+            "f_exploitable": 0.1,
+            "result_exploitable": 81.4
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a_exploitable * b_exploitable + c_exploitable * d_exploitable + e_exploitable * f_exploitable",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DECOMPOSITION_DECIMALE-004",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -166,7 +218,11 @@
             "p1": "300 + 5 + 0,04",
             "p2": "300 + 50 + 0,04",
             "p3": "300 + 5 + 0,004",
-            "p4": "30 + 5 + 0,04"
+            "p4": "30 + 5 + 0,04",
+            "a_exploitable": 300,
+            "b_exploitable": 5,
+            "c_exploitable": 0.04,
+            "result_exploitable": 305.04
           }
         },
         {
@@ -177,7 +233,11 @@
             "p1": "407,03 = 400 + 7 + 0,03",
             "p2": "407,03 = 400 + 7 + 0,3",
             "p3": "407,03 = 40 + 7 + 0,03",
-            "p4": "407,03 = 400 + 70 + 0,03"
+            "p4": "407,03 = 400 + 70 + 0,03",
+            "a_exploitable": 400,
+            "b_exploitable": 7,
+            "c_exploitable": 0.03,
+            "result_exploitable": 407.03
           }
         },
         {
@@ -188,14 +248,22 @@
             "p1": "602,05 = 600 + 2 + 0,05",
             "p2": "602,05 = 600 + 2 + 0,5",
             "p3": "602,05 = 60 + 2 + 0,05",
-            "p4": "602,05 = 600 + 20 + 0,05"
+            "p4": "602,05 = 600 + 20 + 0,05",
+            "a_exploitable": 600,
+            "b_exploitable": 2,
+            "c_exploitable": 0.05,
+            "result_exploitable": 602.05
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a_exploitable + b_exploitable + c_exploitable",
+      "reponse_exploitable": "[[result_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DECOMPOSITION_DECIMALE-MOT_A_TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on l’écriture d’un nombre sous la forme d’une somme de valeurs positionnelles ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -213,30 +281,2231 @@
         "encadrement",
         "numération"
       ],
-      "correction": "Décomposer revient à exprimer le nombre comme une somme de valeurs."
+      "correction": "Décomposer revient à exprimer le nombre comme une somme de valeurs.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
-      "id": "DECOMPOSITION_DECIMALE-MOT_MASQUE",
-      "type": "qcm",
-      "enonce": "Comment appelle-t-on l’écriture d’un nombre sous la forme d’une somme de valeurs positionnelles ? Choisis le mot masqué.",
-      "presentation": {
-        "type": "mot_masque",
-        "masques": {
-          "décomposition": "D________N",
-          "comparaison": "C________N",
-          "encadrement": "E________T",
-          "numération": "N________N"
-        },
-        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
-      },
-      "reponse": "décomposition",
+      "id": "DECOMPOSITION_DECIMALE-VISUEL-001",
+      "capacite": "transformer",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "décomposition",
-        "comparaison",
-        "encadrement",
-        "numération"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Décomposer revient à exprimer le nombre comme une somme de valeurs."
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_numeration",
+        "nombre": "[[nombre]]",
+        "rang": "[[rang]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "nombre_exploitable": 101.11,
+            "resultat_exploitable": 101.11,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 1 + 0,1 + 0,01",
+            "correction": "Le nombre comporte 1 centaine(s), 1 unité(s), 1 dixième(s) et 1 centième(s).",
+            "p1": "100 + 1 + 0,1 + 0,01",
+            "p2": "10 + 1 + 0,1 + 0,01",
+            "p3": "100 + 10 + 0,11",
+            "p4": "100 + 1 + 1 + 0,1",
+            "nombre": 101.11,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 204.86,
+            "resultat_exploitable": 204.86,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 4 + 0,8 + 0,06",
+            "correction": "Le nombre comporte 2 centaine(s), 4 unité(s), 8 dixième(s) et 6 centième(s).",
+            "p1": "200 + 4 + 0,8 + 0,06",
+            "p2": "200 + 4 + 8 + 0,6",
+            "p3": "200 + 40 + 0,86",
+            "p4": "20 + 4 + 0,8 + 0,06",
+            "nombre": 204.86,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 307.62,
+            "resultat_exploitable": 307.62,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "300 + 7 + 0,6 + 0,02",
+            "correction": "Le nombre comporte 3 centaine(s), 7 unité(s), 6 dixième(s) et 2 centième(s).",
+            "p1": "300 + 7 + 0,6 + 0,02",
+            "p2": "300 + 7 + 6 + 0,2",
+            "p3": "30 + 7 + 0,6 + 0,02",
+            "p4": "300 + 70 + 0,62",
+            "nombre": 307.62,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 401.47,
+            "resultat_exploitable": 401.47,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "400 + 1 + 0,4 + 0,07",
+            "correction": "Le nombre comporte 4 centaine(s), 1 unité(s), 4 dixième(s) et 7 centième(s).",
+            "p1": "400 + 1 + 4 + 0,7",
+            "p2": "400 + 10 + 0,47",
+            "p3": "400 + 1 + 0,4 + 0,07",
+            "p4": "40 + 1 + 0,4 + 0,07",
+            "nombre": 401.47,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 504.23,
+            "resultat_exploitable": 504.23,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "500 + 4 + 0,2 + 0,03",
+            "correction": "Le nombre comporte 5 centaine(s), 4 unité(s), 2 dixième(s) et 3 centième(s).",
+            "p1": "500 + 4 + 2 + 0,3",
+            "p2": "500 + 40 + 0,23",
+            "p3": "50 + 4 + 0,2 + 0,03",
+            "p4": "500 + 4 + 0,2 + 0,03",
+            "nombre": 504.23,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 607.98,
+            "resultat_exploitable": 607.98,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "600 + 7 + 0,9 + 0,08",
+            "correction": "Le nombre comporte 6 centaine(s), 7 unité(s), 9 dixième(s) et 8 centième(s).",
+            "p1": "600 + 7 + 0,9 + 0,08",
+            "p2": "600 + 7 + 9 + 0,8",
+            "p3": "60 + 7 + 0,9 + 0,08",
+            "p4": "600 + 70 + 0,98",
+            "nombre": 607.98,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 701.74,
+            "resultat_exploitable": 701.74,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "700 + 1 + 0,7 + 0,04",
+            "correction": "Le nombre comporte 7 centaine(s), 1 unité(s), 7 dixième(s) et 4 centième(s).",
+            "p1": "700 + 1 + 7 + 0,4",
+            "p2": "70 + 1 + 0,7 + 0,04",
+            "p3": "700 + 10 + 0,74",
+            "p4": "700 + 1 + 0,7 + 0,04",
+            "nombre": 701.74,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 804.59,
+            "resultat_exploitable": 804.59,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "800 + 4 + 0,5 + 0,09",
+            "correction": "Le nombre comporte 8 centaine(s), 4 unité(s), 5 dixième(s) et 9 centième(s).",
+            "p1": "800 + 40 + 0,59",
+            "p2": "800 + 4 + 0,5 + 0,09",
+            "p3": "800 + 4 + 5 + 0,9",
+            "p4": "80 + 4 + 0,5 + 0,09",
+            "nombre": 804.59,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 107.35,
+            "resultat_exploitable": 107.35,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 7 + 0,3 + 0,05",
+            "correction": "Le nombre comporte 1 centaine(s), 7 unité(s), 3 dixième(s) et 5 centième(s).",
+            "p1": "100 + 7 + 0,3 + 0,05",
+            "p2": "100 + 7 + 3 + 0,5",
+            "p3": "10 + 7 + 0,3 + 0,05",
+            "p4": "100 + 70 + 0,35",
+            "nombre": 107.35,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 201.11,
+            "resultat_exploitable": 201.11,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 1 + 0,1 + 0,01",
+            "correction": "Le nombre comporte 2 centaine(s), 1 unité(s), 1 dixième(s) et 1 centième(s).",
+            "p1": "200 + 1 + 0,1 + 0,01",
+            "p2": "200 + 1 + 1 + 0,1",
+            "p3": "20 + 1 + 0,1 + 0,01",
+            "p4": "200 + 10 + 0,11",
+            "nombre": 201.11,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 304.86,
+            "resultat_exploitable": 304.86,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "300 + 4 + 0,8 + 0,06",
+            "correction": "Le nombre comporte 3 centaine(s), 4 unité(s), 8 dixième(s) et 6 centième(s).",
+            "p1": "300 + 4 + 8 + 0,6",
+            "p2": "300 + 40 + 0,86",
+            "p3": "30 + 4 + 0,8 + 0,06",
+            "p4": "300 + 4 + 0,8 + 0,06",
+            "nombre": 304.86,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 407.62,
+            "resultat_exploitable": 407.62,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "400 + 7 + 0,6 + 0,02",
+            "correction": "Le nombre comporte 4 centaine(s), 7 unité(s), 6 dixième(s) et 2 centième(s).",
+            "p1": "400 + 7 + 6 + 0,2",
+            "p2": "400 + 70 + 0,62",
+            "p3": "400 + 7 + 0,6 + 0,02",
+            "p4": "40 + 7 + 0,6 + 0,02",
+            "nombre": 407.62,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 501.47,
+            "resultat_exploitable": 501.47,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "500 + 1 + 0,4 + 0,07",
+            "correction": "Le nombre comporte 5 centaine(s), 1 unité(s), 4 dixième(s) et 7 centième(s).",
+            "p1": "500 + 1 + 0,4 + 0,07",
+            "p2": "500 + 10 + 0,47",
+            "p3": "500 + 1 + 4 + 0,7",
+            "p4": "50 + 1 + 0,4 + 0,07",
+            "nombre": 501.47,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 604.23,
+            "resultat_exploitable": 604.23,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "600 + 4 + 0,2 + 0,03",
+            "correction": "Le nombre comporte 6 centaine(s), 4 unité(s), 2 dixième(s) et 3 centième(s).",
+            "p1": "600 + 4 + 2 + 0,3",
+            "p2": "600 + 4 + 0,2 + 0,03",
+            "p3": "600 + 40 + 0,23",
+            "p4": "60 + 4 + 0,2 + 0,03",
+            "nombre": 604.23,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 707.98,
+            "resultat_exploitable": 707.98,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "700 + 7 + 0,9 + 0,08",
+            "correction": "Le nombre comporte 7 centaine(s), 7 unité(s), 9 dixième(s) et 8 centième(s).",
+            "p1": "700 + 70 + 0,98",
+            "p2": "70 + 7 + 0,9 + 0,08",
+            "p3": "700 + 7 + 0,9 + 0,08",
+            "p4": "700 + 7 + 9 + 0,8",
+            "nombre": 707.98,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 801.74,
+            "resultat_exploitable": 801.74,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "800 + 1 + 0,7 + 0,04",
+            "correction": "Le nombre comporte 8 centaine(s), 1 unité(s), 7 dixième(s) et 4 centième(s).",
+            "p1": "80 + 1 + 0,7 + 0,04",
+            "p2": "800 + 10 + 0,74",
+            "p3": "800 + 1 + 7 + 0,4",
+            "p4": "800 + 1 + 0,7 + 0,04",
+            "nombre": 801.74,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 104.59,
+            "resultat_exploitable": 104.59,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 4 + 0,5 + 0,09",
+            "correction": "Le nombre comporte 1 centaine(s), 4 unité(s), 5 dixième(s) et 9 centième(s).",
+            "p1": "100 + 4 + 0,5 + 0,09",
+            "p2": "100 + 4 + 5 + 0,9",
+            "p3": "10 + 4 + 0,5 + 0,09",
+            "p4": "100 + 40 + 0,59",
+            "nombre": 104.59,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 207.35,
+            "resultat_exploitable": 207.35,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 7 + 0,3 + 0,05",
+            "correction": "Le nombre comporte 2 centaine(s), 7 unité(s), 3 dixième(s) et 5 centième(s).",
+            "p1": "200 + 7 + 0,3 + 0,05",
+            "p2": "20 + 7 + 0,3 + 0,05",
+            "p3": "200 + 7 + 3 + 0,5",
+            "p4": "200 + 70 + 0,35",
+            "nombre": 207.35,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 301.11,
+            "resultat_exploitable": 301.11,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "300 + 1 + 0,1 + 0,01",
+            "correction": "Le nombre comporte 3 centaine(s), 1 unité(s), 1 dixième(s) et 1 centième(s).",
+            "p1": "300 + 1 + 0,1 + 0,01",
+            "p2": "30 + 1 + 0,1 + 0,01",
+            "p3": "300 + 10 + 0,11",
+            "p4": "300 + 1 + 1 + 0,1",
+            "nombre": 301.11,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 404.86,
+            "resultat_exploitable": 404.86,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "400 + 4 + 0,8 + 0,06",
+            "correction": "Le nombre comporte 4 centaine(s), 4 unité(s), 8 dixième(s) et 6 centième(s).",
+            "p1": "400 + 40 + 0,86",
+            "p2": "40 + 4 + 0,8 + 0,06",
+            "p3": "400 + 4 + 8 + 0,6",
+            "p4": "400 + 4 + 0,8 + 0,06",
+            "nombre": 404.86,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 507.62,
+            "resultat_exploitable": 507.62,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "500 + 7 + 0,6 + 0,02",
+            "correction": "Le nombre comporte 5 centaine(s), 7 unité(s), 6 dixième(s) et 2 centième(s).",
+            "p1": "500 + 70 + 0,62",
+            "p2": "500 + 7 + 6 + 0,2",
+            "p3": "500 + 7 + 0,6 + 0,02",
+            "p4": "50 + 7 + 0,6 + 0,02",
+            "nombre": 507.62,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 601.47,
+            "resultat_exploitable": 601.47,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "600 + 1 + 0,4 + 0,07",
+            "correction": "Le nombre comporte 6 centaine(s), 1 unité(s), 4 dixième(s) et 7 centième(s).",
+            "p1": "600 + 1 + 4 + 0,7",
+            "p2": "60 + 1 + 0,4 + 0,07",
+            "p3": "600 + 10 + 0,47",
+            "p4": "600 + 1 + 0,4 + 0,07",
+            "nombre": 601.47,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 704.23,
+            "resultat_exploitable": 704.23,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "700 + 4 + 0,2 + 0,03",
+            "correction": "Le nombre comporte 7 centaine(s), 4 unité(s), 2 dixième(s) et 3 centième(s).",
+            "p1": "700 + 4 + 2 + 0,3",
+            "p2": "700 + 4 + 0,2 + 0,03",
+            "p3": "70 + 4 + 0,2 + 0,03",
+            "p4": "700 + 40 + 0,23",
+            "nombre": 704.23,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 807.98,
+            "resultat_exploitable": 807.98,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "800 + 7 + 0,9 + 0,08",
+            "correction": "Le nombre comporte 8 centaine(s), 7 unité(s), 9 dixième(s) et 8 centième(s).",
+            "p1": "800 + 70 + 0,98",
+            "p2": "80 + 7 + 0,9 + 0,08",
+            "p3": "800 + 7 + 9 + 0,8",
+            "p4": "800 + 7 + 0,9 + 0,08",
+            "nombre": 807.98,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 101.74,
+            "resultat_exploitable": 101.74,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 1 + 0,7 + 0,04",
+            "correction": "Le nombre comporte 1 centaine(s), 1 unité(s), 7 dixième(s) et 4 centième(s).",
+            "p1": "100 + 1 + 7 + 0,4",
+            "p2": "100 + 1 + 0,7 + 0,04",
+            "p3": "100 + 10 + 0,74",
+            "p4": "10 + 1 + 0,7 + 0,04",
+            "nombre": 101.74,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 204.59,
+            "resultat_exploitable": 204.59,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 4 + 0,5 + 0,09",
+            "correction": "Le nombre comporte 2 centaine(s), 4 unité(s), 5 dixième(s) et 9 centième(s).",
+            "p1": "200 + 4 + 0,5 + 0,09",
+            "p2": "20 + 4 + 0,5 + 0,09",
+            "p3": "200 + 40 + 0,59",
+            "p4": "200 + 4 + 5 + 0,9",
+            "nombre": 204.59,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 307.35,
+            "resultat_exploitable": 307.35,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "300 + 7 + 0,3 + 0,05",
+            "correction": "Le nombre comporte 3 centaine(s), 7 unité(s), 3 dixième(s) et 5 centième(s).",
+            "p1": "300 + 7 + 0,3 + 0,05",
+            "p2": "30 + 7 + 0,3 + 0,05",
+            "p3": "300 + 7 + 3 + 0,5",
+            "p4": "300 + 70 + 0,35",
+            "nombre": 307.35,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 401.11,
+            "resultat_exploitable": 401.11,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "400 + 1 + 0,1 + 0,01",
+            "correction": "Le nombre comporte 4 centaine(s), 1 unité(s), 1 dixième(s) et 1 centième(s).",
+            "p1": "400 + 1 + 1 + 0,1",
+            "p2": "400 + 10 + 0,11",
+            "p3": "400 + 1 + 0,1 + 0,01",
+            "p4": "40 + 1 + 0,1 + 0,01",
+            "nombre": 401.11,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 504.86,
+            "resultat_exploitable": 504.86,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "500 + 4 + 0,8 + 0,06",
+            "correction": "Le nombre comporte 5 centaine(s), 4 unité(s), 8 dixième(s) et 6 centième(s).",
+            "p1": "50 + 4 + 0,8 + 0,06",
+            "p2": "500 + 4 + 0,8 + 0,06",
+            "p3": "500 + 40 + 0,86",
+            "p4": "500 + 4 + 8 + 0,6",
+            "nombre": 504.86,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 607.62,
+            "resultat_exploitable": 607.62,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "600 + 7 + 0,6 + 0,02",
+            "correction": "Le nombre comporte 6 centaine(s), 7 unité(s), 6 dixième(s) et 2 centième(s).",
+            "p1": "600 + 7 + 0,6 + 0,02",
+            "p2": "600 + 70 + 0,62",
+            "p3": "60 + 7 + 0,6 + 0,02",
+            "p4": "600 + 7 + 6 + 0,2",
+            "nombre": 607.62,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 701.47,
+            "resultat_exploitable": 701.47,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "700 + 1 + 0,4 + 0,07",
+            "correction": "Le nombre comporte 7 centaine(s), 1 unité(s), 4 dixième(s) et 7 centième(s).",
+            "p1": "70 + 1 + 0,4 + 0,07",
+            "p2": "700 + 1 + 4 + 0,7",
+            "p3": "700 + 1 + 0,4 + 0,07",
+            "p4": "700 + 10 + 0,47",
+            "nombre": 701.47,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 804.23,
+            "resultat_exploitable": 804.23,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "800 + 4 + 0,2 + 0,03",
+            "correction": "Le nombre comporte 8 centaine(s), 4 unité(s), 2 dixième(s) et 3 centième(s).",
+            "p1": "80 + 4 + 0,2 + 0,03",
+            "p2": "800 + 4 + 2 + 0,3",
+            "p3": "800 + 40 + 0,23",
+            "p4": "800 + 4 + 0,2 + 0,03",
+            "nombre": 804.23,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 107.98,
+            "resultat_exploitable": 107.98,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 7 + 0,9 + 0,08",
+            "correction": "Le nombre comporte 1 centaine(s), 7 unité(s), 9 dixième(s) et 8 centième(s).",
+            "p1": "100 + 7 + 9 + 0,8",
+            "p2": "100 + 7 + 0,9 + 0,08",
+            "p3": "10 + 7 + 0,9 + 0,08",
+            "p4": "100 + 70 + 0,98",
+            "nombre": 107.98,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 201.74,
+            "resultat_exploitable": 201.74,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 1 + 0,7 + 0,04",
+            "correction": "Le nombre comporte 2 centaine(s), 1 unité(s), 7 dixième(s) et 4 centième(s).",
+            "p1": "20 + 1 + 0,7 + 0,04",
+            "p2": "200 + 10 + 0,74",
+            "p3": "200 + 1 + 0,7 + 0,04",
+            "p4": "200 + 1 + 7 + 0,4",
+            "nombre": 201.74,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 304.59,
+            "resultat_exploitable": 304.59,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "300 + 4 + 0,5 + 0,09",
+            "correction": "Le nombre comporte 3 centaine(s), 4 unité(s), 5 dixième(s) et 9 centième(s).",
+            "p1": "300 + 4 + 5 + 0,9",
+            "p2": "30 + 4 + 0,5 + 0,09",
+            "p3": "300 + 40 + 0,59",
+            "p4": "300 + 4 + 0,5 + 0,09",
+            "nombre": 304.59,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 407.35,
+            "resultat_exploitable": 407.35,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "400 + 7 + 0,3 + 0,05",
+            "correction": "Le nombre comporte 4 centaine(s), 7 unité(s), 3 dixième(s) et 5 centième(s).",
+            "p1": "400 + 70 + 0,35",
+            "p2": "400 + 7 + 0,3 + 0,05",
+            "p3": "40 + 7 + 0,3 + 0,05",
+            "p4": "400 + 7 + 3 + 0,5",
+            "nombre": 407.35,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 501.11,
+            "resultat_exploitable": 501.11,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "500 + 1 + 0,1 + 0,01",
+            "correction": "Le nombre comporte 5 centaine(s), 1 unité(s), 1 dixième(s) et 1 centième(s).",
+            "p1": "50 + 1 + 0,1 + 0,01",
+            "p2": "500 + 1 + 0,1 + 0,01",
+            "p3": "500 + 1 + 1 + 0,1",
+            "p4": "500 + 10 + 0,11",
+            "nombre": 501.11,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 604.86,
+            "resultat_exploitable": 604.86,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "600 + 4 + 0,8 + 0,06",
+            "correction": "Le nombre comporte 6 centaine(s), 4 unité(s), 8 dixième(s) et 6 centième(s).",
+            "p1": "600 + 4 + 0,8 + 0,06",
+            "p2": "600 + 40 + 0,86",
+            "p3": "60 + 4 + 0,8 + 0,06",
+            "p4": "600 + 4 + 8 + 0,6",
+            "nombre": 604.86,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 707.62,
+            "resultat_exploitable": 707.62,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "700 + 7 + 0,6 + 0,02",
+            "correction": "Le nombre comporte 7 centaine(s), 7 unité(s), 6 dixième(s) et 2 centième(s).",
+            "p1": "700 + 70 + 0,62",
+            "p2": "70 + 7 + 0,6 + 0,02",
+            "p3": "700 + 7 + 6 + 0,2",
+            "p4": "700 + 7 + 0,6 + 0,02",
+            "nombre": 707.62,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 801.47,
+            "resultat_exploitable": 801.47,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "800 + 1 + 0,4 + 0,07",
+            "correction": "Le nombre comporte 8 centaine(s), 1 unité(s), 4 dixième(s) et 7 centième(s).",
+            "p1": "800 + 1 + 4 + 0,7",
+            "p2": "80 + 1 + 0,4 + 0,07",
+            "p3": "800 + 1 + 0,4 + 0,07",
+            "p4": "800 + 10 + 0,47",
+            "nombre": 801.47,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 104.23,
+            "resultat_exploitable": 104.23,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 4 + 0,2 + 0,03",
+            "correction": "Le nombre comporte 1 centaine(s), 4 unité(s), 2 dixième(s) et 3 centième(s).",
+            "p1": "100 + 40 + 0,23",
+            "p2": "100 + 4 + 2 + 0,3",
+            "p3": "100 + 4 + 0,2 + 0,03",
+            "p4": "10 + 4 + 0,2 + 0,03",
+            "nombre": 104.23,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 207.98,
+            "resultat_exploitable": 207.98,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 7 + 0,9 + 0,08",
+            "correction": "Le nombre comporte 2 centaine(s), 7 unité(s), 9 dixième(s) et 8 centième(s).",
+            "p1": "200 + 7 + 9 + 0,8",
+            "p2": "200 + 7 + 0,9 + 0,08",
+            "p3": "20 + 7 + 0,9 + 0,08",
+            "p4": "200 + 70 + 0,98",
+            "nombre": 207.98,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 301.74,
+            "resultat_exploitable": 301.74,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "300 + 1 + 0,7 + 0,04",
+            "correction": "Le nombre comporte 3 centaine(s), 1 unité(s), 7 dixième(s) et 4 centième(s).",
+            "p1": "300 + 10 + 0,74",
+            "p2": "300 + 1 + 0,7 + 0,04",
+            "p3": "300 + 1 + 7 + 0,4",
+            "p4": "30 + 1 + 0,7 + 0,04",
+            "nombre": 301.74,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 404.59,
+            "resultat_exploitable": 404.59,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "400 + 4 + 0,5 + 0,09",
+            "correction": "Le nombre comporte 4 centaine(s), 4 unité(s), 5 dixième(s) et 9 centième(s).",
+            "p1": "400 + 4 + 5 + 0,9",
+            "p2": "400 + 4 + 0,5 + 0,09",
+            "p3": "40 + 4 + 0,5 + 0,09",
+            "p4": "400 + 40 + 0,59",
+            "nombre": 404.59,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 507.35,
+            "resultat_exploitable": 507.35,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "500 + 7 + 0,3 + 0,05",
+            "correction": "Le nombre comporte 5 centaine(s), 7 unité(s), 3 dixième(s) et 5 centième(s).",
+            "p1": "500 + 7 + 3 + 0,5",
+            "p2": "500 + 7 + 0,3 + 0,05",
+            "p3": "50 + 7 + 0,3 + 0,05",
+            "p4": "500 + 70 + 0,35",
+            "nombre": 507.35,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 601.11,
+            "resultat_exploitable": 601.11,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "600 + 1 + 0,1 + 0,01",
+            "correction": "Le nombre comporte 6 centaine(s), 1 unité(s), 1 dixième(s) et 1 centième(s).",
+            "p1": "60 + 1 + 0,1 + 0,01",
+            "p2": "600 + 1 + 1 + 0,1",
+            "p3": "600 + 10 + 0,11",
+            "p4": "600 + 1 + 0,1 + 0,01",
+            "nombre": 601.11,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 704.86,
+            "resultat_exploitable": 704.86,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "700 + 4 + 0,8 + 0,06",
+            "correction": "Le nombre comporte 7 centaine(s), 4 unité(s), 8 dixième(s) et 6 centième(s).",
+            "p1": "700 + 40 + 0,86",
+            "p2": "700 + 4 + 0,8 + 0,06",
+            "p3": "700 + 4 + 8 + 0,6",
+            "p4": "70 + 4 + 0,8 + 0,06",
+            "nombre": 704.86,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 807.62,
+            "resultat_exploitable": 807.62,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "800 + 7 + 0,6 + 0,02",
+            "correction": "Le nombre comporte 8 centaine(s), 7 unité(s), 6 dixième(s) et 2 centième(s).",
+            "p1": "800 + 7 + 6 + 0,2",
+            "p2": "800 + 70 + 0,62",
+            "p3": "800 + 7 + 0,6 + 0,02",
+            "p4": "80 + 7 + 0,6 + 0,02",
+            "nombre": 807.62,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 101.47,
+            "resultat_exploitable": 101.47,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "100 + 1 + 0,4 + 0,07",
+            "correction": "Le nombre comporte 1 centaine(s), 1 unité(s), 4 dixième(s) et 7 centième(s).",
+            "p1": "10 + 1 + 0,4 + 0,07",
+            "p2": "100 + 1 + 4 + 0,7",
+            "p3": "100 + 1 + 0,4 + 0,07",
+            "p4": "100 + 10 + 0,47",
+            "nombre": 101.47,
+            "rang": 2
+          }
+        },
+        {
+          "parametres": {
+            "nombre_exploitable": 204.23,
+            "resultat_exploitable": 204.23,
+            "enonce": "Quelle décomposition correspond au nombre représenté dans le tableau ?",
+            "reponse": "200 + 4 + 0,2 + 0,03",
+            "correction": "Le nombre comporte 2 centaine(s), 4 unité(s), 2 dixième(s) et 3 centième(s).",
+            "p1": "200 + 4 + 0,2 + 0,03",
+            "p2": "20 + 4 + 0,2 + 0,03",
+            "p3": "200 + 40 + 0,23",
+            "p4": "200 + 4 + 2 + 0,3",
+            "nombre": 204.23,
+            "rang": 2
+          }
+        }
+      ],
+      "enonce_exploitable": "nombre_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "DECOMPOSITION_DECIMALE-LIENS-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_numeration",
+        "nombre": "[[nombre]]",
+        "rang": "[[rang]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 1/10 + 1/100 ?",
+            "reponse": "1,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 1,11.",
+            "p1": "0,111",
+            "p2": "1,12",
+            "p3": "1,21",
+            "p4": "1,11",
+            "nombre": 1.11,
+            "rang": 2,
+            "calcul_exploitable": "1+1/10+1/100",
+            "resultat_exploitable": "111/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 2/10 + 4/100 ?",
+            "reponse": "1,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 1,24.",
+            "p1": "1,34",
+            "p2": "0,124",
+            "p3": "1,24",
+            "p4": "1,25",
+            "nombre": 1.24,
+            "rang": 2,
+            "calcul_exploitable": "1+2/10+4/100",
+            "resultat_exploitable": "31/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 3/10 + 7/100 ?",
+            "reponse": "1,37",
+            "correction": "3/10 vaut 0,3 et 7/100 vaut 0,07 : la somme est 1,37.",
+            "p1": "1,38",
+            "p2": "1,47",
+            "p3": "0,137",
+            "p4": "1,37",
+            "nombre": 1.37,
+            "rang": 2,
+            "calcul_exploitable": "1+3/10+7/100",
+            "resultat_exploitable": "137/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 4/10 + 2/100 ?",
+            "reponse": "1,42",
+            "correction": "4/10 vaut 0,4 et 2/100 vaut 0,02 : la somme est 1,42.",
+            "p1": "1,43",
+            "p2": "1,42",
+            "p3": "0,142",
+            "p4": "1,52",
+            "nombre": 1.42,
+            "rang": 2,
+            "calcul_exploitable": "1+4/10+2/100",
+            "resultat_exploitable": "71/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 5/10 + 5/100 ?",
+            "reponse": "1,55",
+            "correction": "5/10 vaut 0,5 et 5/100 vaut 0,05 : la somme est 1,55.",
+            "p1": "1,55",
+            "p2": "1,56",
+            "p3": "0,155",
+            "p4": "1,65",
+            "nombre": 1.55,
+            "rang": 2,
+            "calcul_exploitable": "1+5/10+5/100",
+            "resultat_exploitable": "31/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 6/10 + 8/100 ?",
+            "reponse": "1,68",
+            "correction": "6/10 vaut 0,6 et 8/100 vaut 0,08 : la somme est 1,68.",
+            "p1": "1,78",
+            "p2": "1,68",
+            "p3": "1,69",
+            "p4": "0,168",
+            "nombre": 1.68,
+            "rang": 2,
+            "calcul_exploitable": "1+6/10+8/100",
+            "resultat_exploitable": "42/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 7/10 + 3/100 ?",
+            "reponse": "1,73",
+            "correction": "7/10 vaut 0,7 et 3/100 vaut 0,03 : la somme est 1,73.",
+            "p1": "1,73",
+            "p2": "1,74",
+            "p3": "1,83",
+            "p4": "0,173",
+            "nombre": 1.73,
+            "rang": 2,
+            "calcul_exploitable": "1+7/10+3/100",
+            "resultat_exploitable": "173/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 1 + 8/10 + 6/100 ?",
+            "reponse": "1,86",
+            "correction": "8/10 vaut 0,8 et 6/100 vaut 0,06 : la somme est 1,86.",
+            "p1": "1,87",
+            "p2": "1,96",
+            "p3": "1,86",
+            "p4": "0,186",
+            "nombre": 1.86,
+            "rang": 2,
+            "calcul_exploitable": "1+8/10+6/100",
+            "resultat_exploitable": "93/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 1/10 + 1/100 ?",
+            "reponse": "2,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 2,11.",
+            "p1": "2,12",
+            "p2": "2,11",
+            "p3": "2,21",
+            "p4": "0,211",
+            "nombre": 2.11,
+            "rang": 2,
+            "calcul_exploitable": "2+1/10+1/100",
+            "resultat_exploitable": "211/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 2/10 + 4/100 ?",
+            "reponse": "2,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 2,24.",
+            "p1": "2,25",
+            "p2": "0,224",
+            "p3": "2,24",
+            "p4": "2,34",
+            "nombre": 2.24,
+            "rang": 2,
+            "calcul_exploitable": "2+2/10+4/100",
+            "resultat_exploitable": "56/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 3/10 + 7/100 ?",
+            "reponse": "2,37",
+            "correction": "3/10 vaut 0,3 et 7/100 vaut 0,07 : la somme est 2,37.",
+            "p1": "2,38",
+            "p2": "0,237",
+            "p3": "2,47",
+            "p4": "2,37",
+            "nombre": 2.37,
+            "rang": 2,
+            "calcul_exploitable": "2+3/10+7/100",
+            "resultat_exploitable": "237/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 4/10 + 2/100 ?",
+            "reponse": "2,42",
+            "correction": "4/10 vaut 0,4 et 2/100 vaut 0,02 : la somme est 2,42.",
+            "p1": "2,52",
+            "p2": "2,42",
+            "p3": "2,43",
+            "p4": "0,242",
+            "nombre": 2.42,
+            "rang": 2,
+            "calcul_exploitable": "2+4/10+2/100",
+            "resultat_exploitable": "121/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 5/10 + 5/100 ?",
+            "reponse": "2,55",
+            "correction": "5/10 vaut 0,5 et 5/100 vaut 0,05 : la somme est 2,55.",
+            "p1": "2,56",
+            "p2": "2,65",
+            "p3": "2,55",
+            "p4": "0,255",
+            "nombre": 2.55,
+            "rang": 2,
+            "calcul_exploitable": "2+5/10+5/100",
+            "resultat_exploitable": "51/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 6/10 + 8/100 ?",
+            "reponse": "2,68",
+            "correction": "6/10 vaut 0,6 et 8/100 vaut 0,08 : la somme est 2,68.",
+            "p1": "2,69",
+            "p2": "0,268",
+            "p3": "2,78",
+            "p4": "2,68",
+            "nombre": 2.68,
+            "rang": 2,
+            "calcul_exploitable": "2+6/10+8/100",
+            "resultat_exploitable": "67/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 7/10 + 3/100 ?",
+            "reponse": "2,73",
+            "correction": "7/10 vaut 0,7 et 3/100 vaut 0,03 : la somme est 2,73.",
+            "p1": "2,73",
+            "p2": "2,74",
+            "p3": "0,273",
+            "p4": "2,83",
+            "nombre": 2.73,
+            "rang": 2,
+            "calcul_exploitable": "2+7/10+3/100",
+            "resultat_exploitable": "273/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 2 + 8/10 + 6/100 ?",
+            "reponse": "2,86",
+            "correction": "8/10 vaut 0,8 et 6/100 vaut 0,06 : la somme est 2,86.",
+            "p1": "2,87",
+            "p2": "0,286",
+            "p3": "2,86",
+            "p4": "2,96",
+            "nombre": 2.86,
+            "rang": 2,
+            "calcul_exploitable": "2+8/10+6/100",
+            "resultat_exploitable": "143/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 1/10 + 1/100 ?",
+            "reponse": "3,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 3,11.",
+            "p1": "0,311",
+            "p2": "3,12",
+            "p3": "3,21",
+            "p4": "3,11",
+            "nombre": 3.11,
+            "rang": 2,
+            "calcul_exploitable": "3+1/10+1/100",
+            "resultat_exploitable": "311/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 2/10 + 4/100 ?",
+            "reponse": "3,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 3,24.",
+            "p1": "3,34",
+            "p2": "3,25",
+            "p3": "3,24",
+            "p4": "0,324",
+            "nombre": 3.24,
+            "rang": 2,
+            "calcul_exploitable": "3+2/10+4/100",
+            "resultat_exploitable": "81/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 3/10 + 7/100 ?",
+            "reponse": "3,37",
+            "correction": "3/10 vaut 0,3 et 7/100 vaut 0,07 : la somme est 3,37.",
+            "p1": "3,47",
+            "p2": "3,37",
+            "p3": "3,38",
+            "p4": "0,337",
+            "nombre": 3.37,
+            "rang": 2,
+            "calcul_exploitable": "3+3/10+7/100",
+            "resultat_exploitable": "337/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 4/10 + 2/100 ?",
+            "reponse": "3,42",
+            "correction": "4/10 vaut 0,4 et 2/100 vaut 0,02 : la somme est 3,42.",
+            "p1": "3,52",
+            "p2": "0,342",
+            "p3": "3,43",
+            "p4": "3,42",
+            "nombre": 3.42,
+            "rang": 2,
+            "calcul_exploitable": "3+4/10+2/100",
+            "resultat_exploitable": "171/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 5/10 + 5/100 ?",
+            "reponse": "3,55",
+            "correction": "5/10 vaut 0,5 et 5/100 vaut 0,05 : la somme est 3,55.",
+            "p1": "0,355",
+            "p2": "3,56",
+            "p3": "3,65",
+            "p4": "3,55",
+            "nombre": 3.55,
+            "rang": 2,
+            "calcul_exploitable": "3+5/10+5/100",
+            "resultat_exploitable": "71/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 6/10 + 8/100 ?",
+            "reponse": "3,68",
+            "correction": "6/10 vaut 0,6 et 8/100 vaut 0,08 : la somme est 3,68.",
+            "p1": "3,69",
+            "p2": "0,368",
+            "p3": "3,78",
+            "p4": "3,68",
+            "nombre": 3.68,
+            "rang": 2,
+            "calcul_exploitable": "3+6/10+8/100",
+            "resultat_exploitable": "92/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 7/10 + 3/100 ?",
+            "reponse": "3,73",
+            "correction": "7/10 vaut 0,7 et 3/100 vaut 0,03 : la somme est 3,73.",
+            "p1": "3,74",
+            "p2": "3,73",
+            "p3": "0,373",
+            "p4": "3,83",
+            "nombre": 3.73,
+            "rang": 2,
+            "calcul_exploitable": "3+7/10+3/100",
+            "resultat_exploitable": "373/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 3 + 8/10 + 6/100 ?",
+            "reponse": "3,86",
+            "correction": "8/10 vaut 0,8 et 6/100 vaut 0,06 : la somme est 3,86.",
+            "p1": "3,96",
+            "p2": "3,86",
+            "p3": "0,386",
+            "p4": "3,87",
+            "nombre": 3.86,
+            "rang": 2,
+            "calcul_exploitable": "3+8/10+6/100",
+            "resultat_exploitable": "193/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 1/10 + 1/100 ?",
+            "reponse": "4,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 4,11.",
+            "p1": "4,21",
+            "p2": "4,11",
+            "p3": "0,411",
+            "p4": "4,12",
+            "nombre": 4.11,
+            "rang": 2,
+            "calcul_exploitable": "4+1/10+1/100",
+            "resultat_exploitable": "411/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 2/10 + 4/100 ?",
+            "reponse": "4,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 4,24.",
+            "p1": "4,24",
+            "p2": "4,25",
+            "p3": "4,34",
+            "p4": "0,424",
+            "nombre": 4.24,
+            "rang": 2,
+            "calcul_exploitable": "4+2/10+4/100",
+            "resultat_exploitable": "106/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 3/10 + 7/100 ?",
+            "reponse": "4,37",
+            "correction": "3/10 vaut 0,3 et 7/100 vaut 0,07 : la somme est 4,37.",
+            "p1": "0,437",
+            "p2": "4,47",
+            "p3": "4,37",
+            "p4": "4,38",
+            "nombre": 4.37,
+            "rang": 2,
+            "calcul_exploitable": "4+3/10+7/100",
+            "resultat_exploitable": "437/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 4/10 + 2/100 ?",
+            "reponse": "4,42",
+            "correction": "4/10 vaut 0,4 et 2/100 vaut 0,02 : la somme est 4,42.",
+            "p1": "4,52",
+            "p2": "4,43",
+            "p3": "4,42",
+            "p4": "0,442",
+            "nombre": 4.42,
+            "rang": 2,
+            "calcul_exploitable": "4+4/10+2/100",
+            "resultat_exploitable": "221/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 5/10 + 5/100 ?",
+            "reponse": "4,55",
+            "correction": "5/10 vaut 0,5 et 5/100 vaut 0,05 : la somme est 4,55.",
+            "p1": "4,55",
+            "p2": "0,455",
+            "p3": "4,56",
+            "p4": "4,65",
+            "nombre": 4.55,
+            "rang": 2,
+            "calcul_exploitable": "4+5/10+5/100",
+            "resultat_exploitable": "91/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 6/10 + 8/100 ?",
+            "reponse": "4,68",
+            "correction": "6/10 vaut 0,6 et 8/100 vaut 0,08 : la somme est 4,68.",
+            "p1": "0,468",
+            "p2": "4,68",
+            "p3": "4,78",
+            "p4": "4,69",
+            "nombre": 4.68,
+            "rang": 2,
+            "calcul_exploitable": "4+6/10+8/100",
+            "resultat_exploitable": "117/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 7/10 + 3/100 ?",
+            "reponse": "4,73",
+            "correction": "7/10 vaut 0,7 et 3/100 vaut 0,03 : la somme est 4,73.",
+            "p1": "4,74",
+            "p2": "4,83",
+            "p3": "4,73",
+            "p4": "0,473",
+            "nombre": 4.73,
+            "rang": 2,
+            "calcul_exploitable": "4+7/10+3/100",
+            "resultat_exploitable": "473/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 4 + 8/10 + 6/100 ?",
+            "reponse": "4,86",
+            "correction": "8/10 vaut 0,8 et 6/100 vaut 0,06 : la somme est 4,86.",
+            "p1": "4,86",
+            "p2": "4,96",
+            "p3": "0,486",
+            "p4": "4,87",
+            "nombre": 4.86,
+            "rang": 2,
+            "calcul_exploitable": "4+8/10+6/100",
+            "resultat_exploitable": "243/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 1/10 + 1/100 ?",
+            "reponse": "5,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 5,11.",
+            "p1": "5,11",
+            "p2": "5,12",
+            "p3": "0,511",
+            "p4": "5,21",
+            "nombre": 5.11,
+            "rang": 2,
+            "calcul_exploitable": "5+1/10+1/100",
+            "resultat_exploitable": "511/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 2/10 + 4/100 ?",
+            "reponse": "5,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 5,24.",
+            "p1": "5,25",
+            "p2": "0,524",
+            "p3": "5,24",
+            "p4": "5,34",
+            "nombre": 5.24,
+            "rang": 2,
+            "calcul_exploitable": "5+2/10+4/100",
+            "resultat_exploitable": "131/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 3/10 + 7/100 ?",
+            "reponse": "5,37",
+            "correction": "3/10 vaut 0,3 et 7/100 vaut 0,07 : la somme est 5,37.",
+            "p1": "5,47",
+            "p2": "5,38",
+            "p3": "0,537",
+            "p4": "5,37",
+            "nombre": 5.37,
+            "rang": 2,
+            "calcul_exploitable": "5+3/10+7/100",
+            "resultat_exploitable": "537/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 4/10 + 2/100 ?",
+            "reponse": "5,42",
+            "correction": "4/10 vaut 0,4 et 2/100 vaut 0,02 : la somme est 5,42.",
+            "p1": "0,542",
+            "p2": "5,52",
+            "p3": "5,42",
+            "p4": "5,43",
+            "nombre": 5.42,
+            "rang": 2,
+            "calcul_exploitable": "5+4/10+2/100",
+            "resultat_exploitable": "271/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 5/10 + 5/100 ?",
+            "reponse": "5,55",
+            "correction": "5/10 vaut 0,5 et 5/100 vaut 0,05 : la somme est 5,55.",
+            "p1": "5,56",
+            "p2": "5,65",
+            "p3": "5,55",
+            "p4": "0,555",
+            "nombre": 5.55,
+            "rang": 2,
+            "calcul_exploitable": "5+5/10+5/100",
+            "resultat_exploitable": "111/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 6/10 + 8/100 ?",
+            "reponse": "5,68",
+            "correction": "6/10 vaut 0,6 et 8/100 vaut 0,08 : la somme est 5,68.",
+            "p1": "0,568",
+            "p2": "5,69",
+            "p3": "5,68",
+            "p4": "5,78",
+            "nombre": 5.68,
+            "rang": 2,
+            "calcul_exploitable": "5+6/10+8/100",
+            "resultat_exploitable": "142/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 7/10 + 3/100 ?",
+            "reponse": "5,73",
+            "correction": "7/10 vaut 0,7 et 3/100 vaut 0,03 : la somme est 5,73.",
+            "p1": "5,74",
+            "p2": "5,73",
+            "p3": "5,83",
+            "p4": "0,573",
+            "nombre": 5.73,
+            "rang": 2,
+            "calcul_exploitable": "5+7/10+3/100",
+            "resultat_exploitable": "573/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 5 + 8/10 + 6/100 ?",
+            "reponse": "5,86",
+            "correction": "8/10 vaut 0,8 et 6/100 vaut 0,06 : la somme est 5,86.",
+            "p1": "5,86",
+            "p2": "5,87",
+            "p3": "0,586",
+            "p4": "5,96",
+            "nombre": 5.86,
+            "rang": 2,
+            "calcul_exploitable": "5+8/10+6/100",
+            "resultat_exploitable": "293/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 1/10 + 1/100 ?",
+            "reponse": "6,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 6,11.",
+            "p1": "6,11",
+            "p2": "6,21",
+            "p3": "0,611",
+            "p4": "6,12",
+            "nombre": 6.11,
+            "rang": 2,
+            "calcul_exploitable": "6+1/10+1/100",
+            "resultat_exploitable": "611/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 2/10 + 4/100 ?",
+            "reponse": "6,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 6,24.",
+            "p1": "6,25",
+            "p2": "0,624",
+            "p3": "6,24",
+            "p4": "6,34",
+            "nombre": 6.24,
+            "rang": 2,
+            "calcul_exploitable": "6+2/10+4/100",
+            "resultat_exploitable": "156/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 3/10 + 7/100 ?",
+            "reponse": "6,37",
+            "correction": "3/10 vaut 0,3 et 7/100 vaut 0,07 : la somme est 6,37.",
+            "p1": "6,47",
+            "p2": "0,637",
+            "p3": "6,38",
+            "p4": "6,37",
+            "nombre": 6.37,
+            "rang": 2,
+            "calcul_exploitable": "6+3/10+7/100",
+            "resultat_exploitable": "637/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 4/10 + 2/100 ?",
+            "reponse": "6,42",
+            "correction": "4/10 vaut 0,4 et 2/100 vaut 0,02 : la somme est 6,42.",
+            "p1": "6,42",
+            "p2": "0,642",
+            "p3": "6,43",
+            "p4": "6,52",
+            "nombre": 6.42,
+            "rang": 2,
+            "calcul_exploitable": "6+4/10+2/100",
+            "resultat_exploitable": "321/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 5/10 + 5/100 ?",
+            "reponse": "6,55",
+            "correction": "5/10 vaut 0,5 et 5/100 vaut 0,05 : la somme est 6,55.",
+            "p1": "6,55",
+            "p2": "6,56",
+            "p3": "6,65",
+            "p4": "0,655",
+            "nombre": 6.55,
+            "rang": 2,
+            "calcul_exploitable": "6+5/10+5/100",
+            "resultat_exploitable": "131/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 6/10 + 8/100 ?",
+            "reponse": "6,68",
+            "correction": "6/10 vaut 0,6 et 8/100 vaut 0,08 : la somme est 6,68.",
+            "p1": "0,668",
+            "p2": "6,69",
+            "p3": "6,78",
+            "p4": "6,68",
+            "nombre": 6.68,
+            "rang": 2,
+            "calcul_exploitable": "6+6/10+8/100",
+            "resultat_exploitable": "167/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 7/10 + 3/100 ?",
+            "reponse": "6,73",
+            "correction": "7/10 vaut 0,7 et 3/100 vaut 0,03 : la somme est 6,73.",
+            "p1": "6,83",
+            "p2": "6,73",
+            "p3": "6,74",
+            "p4": "0,673",
+            "nombre": 6.73,
+            "rang": 2,
+            "calcul_exploitable": "6+7/10+3/100",
+            "resultat_exploitable": "673/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 6 + 8/10 + 6/100 ?",
+            "reponse": "6,86",
+            "correction": "8/10 vaut 0,8 et 6/100 vaut 0,06 : la somme est 6,86.",
+            "p1": "6,86",
+            "p2": "0,686",
+            "p3": "6,96",
+            "p4": "6,87",
+            "nombre": 6.86,
+            "rang": 2,
+            "calcul_exploitable": "6+8/10+6/100",
+            "resultat_exploitable": "343/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 7 + 1/10 + 1/100 ?",
+            "reponse": "7,11",
+            "correction": "1/10 vaut 0,1 et 1/100 vaut 0,01 : la somme est 7,11.",
+            "p1": "7,12",
+            "p2": "0,711",
+            "p3": "7,21",
+            "p4": "7,11",
+            "nombre": 7.11,
+            "rang": 2,
+            "calcul_exploitable": "7+1/10+1/100",
+            "resultat_exploitable": "711/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Quel nombre correspond à 7 + 2/10 + 4/100 ?",
+            "reponse": "7,24",
+            "correction": "2/10 vaut 0,2 et 4/100 vaut 0,04 : la somme est 7,24.",
+            "p1": "7,34",
+            "p2": "0,724",
+            "p3": "7,25",
+            "p4": "7,24",
+            "nombre": 7.24,
+            "rang": 2,
+            "calcul_exploitable": "7+2/10+4/100",
+            "resultat_exploitable": "181/25"
+          }
+        }
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "TRANSVERSAL_DECIMAUX-NUMERATION-DECOMPOSITION-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "portee": "famille",
+      "niveau": "6E",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 2 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "2,11",
+            "correction": "On additionne 2 + 1/10 + 1/100 = 2,11. La position des chiffres compte.",
+            "p1": "2,11",
+            "p2": "2,12",
+            "p3": "2,01",
+            "p4": "3,11",
+            "calcul_exploitable": "2 + 1/10 + 1/100",
+            "resultat_exploitable": "211/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 3 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "3,48",
+            "correction": "On additionne 3 + 4/10 + 8/100 = 3,48. La position des chiffres compte.",
+            "p1": "3,48",
+            "p2": "3,84",
+            "p3": "3,05",
+            "p4": "4,48",
+            "calcul_exploitable": "3 + 4/10 + 8/100",
+            "resultat_exploitable": "87/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 4 unités, 7 dixièmes et 7 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "4,77",
+            "correction": "On additionne 4 + 7/10 + 7/100 = 4,77. La position des chiffres compte.",
+            "p1": "4,77",
+            "p2": "4,78",
+            "p3": "4,08",
+            "p4": "5,77",
+            "calcul_exploitable": "4 + 7/10 + 7/100",
+            "resultat_exploitable": "477/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 5 unités, 2 dixièmes et 6 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "5,26",
+            "correction": "On additionne 5 + 2/10 + 6/100 = 5,26. La position des chiffres compte.",
+            "p1": "5,26",
+            "p2": "5,62",
+            "p3": "5,03",
+            "p4": "6,26",
+            "calcul_exploitable": "5 + 2/10 + 6/100",
+            "resultat_exploitable": "263/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 6 unités, 5 dixièmes et 5 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "6,55",
+            "correction": "On additionne 6 + 5/10 + 5/100 = 6,55. La position des chiffres compte.",
+            "p1": "6,55",
+            "p2": "6,56",
+            "p3": "6,05",
+            "p4": "7,55",
+            "calcul_exploitable": "6 + 5/10 + 5/100",
+            "resultat_exploitable": "131/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 7 unités, 8 dixièmes et 4 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "7,84",
+            "correction": "On additionne 7 + 8/10 + 4/100 = 7,84. La position des chiffres compte.",
+            "p1": "7,84",
+            "p2": "7,48",
+            "p3": "7,08",
+            "p4": "8,84",
+            "calcul_exploitable": "7 + 8/10 + 4/100",
+            "resultat_exploitable": "196/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 8 unités, 3 dixièmes et 3 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "8,33",
+            "correction": "On additionne 8 + 3/10 + 3/100 = 8,33. La position des chiffres compte.",
+            "p1": "8,33",
+            "p2": "8,34",
+            "p3": "8,03",
+            "p4": "9,33",
+            "calcul_exploitable": "8 + 3/10 + 3/100",
+            "resultat_exploitable": "833/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 9 unités, 6 dixièmes et 2 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "9,62",
+            "correction": "On additionne 9 + 6/10 + 2/100 = 9,62. La position des chiffres compte.",
+            "p1": "9,62",
+            "p2": "9,26",
+            "p3": "9,06",
+            "p4": "10,62",
+            "calcul_exploitable": "9 + 6/10 + 2/100",
+            "resultat_exploitable": "481/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 10 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "10,11",
+            "correction": "On additionne 10 + 1/10 + 1/100 = 10,11. La position des chiffres compte.",
+            "p1": "10,11",
+            "p2": "10,12",
+            "p3": "10,01",
+            "p4": "11,11",
+            "calcul_exploitable": "10 + 1/10 + 1/100",
+            "resultat_exploitable": "1011/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 11 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "11,48",
+            "correction": "On additionne 11 + 4/10 + 8/100 = 11,48. La position des chiffres compte.",
+            "p1": "11,48",
+            "p2": "11,84",
+            "p3": "11,05",
+            "p4": "12,48",
+            "calcul_exploitable": "11 + 4/10 + 8/100",
+            "resultat_exploitable": "287/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 12 unités, 7 dixièmes et 7 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "12,77",
+            "correction": "On additionne 12 + 7/10 + 7/100 = 12,77. La position des chiffres compte.",
+            "p1": "12,77",
+            "p2": "12,78",
+            "p3": "12,08",
+            "p4": "13,77",
+            "calcul_exploitable": "12 + 7/10 + 7/100",
+            "resultat_exploitable": "1277/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 13 unités, 2 dixièmes et 6 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "13,26",
+            "correction": "On additionne 13 + 2/10 + 6/100 = 13,26. La position des chiffres compte.",
+            "p1": "13,26",
+            "p2": "13,62",
+            "p3": "13,03",
+            "p4": "14,26",
+            "calcul_exploitable": "13 + 2/10 + 6/100",
+            "resultat_exploitable": "663/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 14 unités, 5 dixièmes et 5 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "14,55",
+            "correction": "On additionne 14 + 5/10 + 5/100 = 14,55. La position des chiffres compte.",
+            "p1": "14,55",
+            "p2": "14,56",
+            "p3": "14,06",
+            "p4": "15,55",
+            "calcul_exploitable": "14 + 5/10 + 5/100",
+            "resultat_exploitable": "291/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 15 unités, 8 dixièmes et 4 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "15,84",
+            "correction": "On additionne 15 + 8/10 + 4/100 = 15,84. La position des chiffres compte.",
+            "p1": "15,84",
+            "p2": "15,48",
+            "p3": "15,08",
+            "p4": "16,84",
+            "calcul_exploitable": "15 + 8/10 + 4/100",
+            "resultat_exploitable": "396/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 16 unités, 3 dixièmes et 3 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "16,33",
+            "correction": "On additionne 16 + 3/10 + 3/100 = 16,33. La position des chiffres compte.",
+            "p1": "16,33",
+            "p2": "16,34",
+            "p3": "16,03",
+            "p4": "17,33",
+            "calcul_exploitable": "16 + 3/10 + 3/100",
+            "resultat_exploitable": "1633/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 17 unités, 6 dixièmes et 2 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "17,62",
+            "correction": "On additionne 17 + 6/10 + 2/100 = 17,62. La position des chiffres compte.",
+            "p1": "17,62",
+            "p2": "17,26",
+            "p3": "17,06",
+            "p4": "18,62",
+            "calcul_exploitable": "17 + 6/10 + 2/100",
+            "resultat_exploitable": "881/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 18 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "18,11",
+            "correction": "On additionne 18 + 1/10 + 1/100 = 18,11. La position des chiffres compte.",
+            "p1": "18,11",
+            "p2": "18,12",
+            "p3": "18,01",
+            "p4": "19,11",
+            "calcul_exploitable": "18 + 1/10 + 1/100",
+            "resultat_exploitable": "1811/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 19 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "19,48",
+            "correction": "On additionne 19 + 4/10 + 8/100 = 19,48. La position des chiffres compte.",
+            "p1": "19,48",
+            "p2": "19,84",
+            "p3": "19,05",
+            "p4": "20,48",
+            "calcul_exploitable": "19 + 4/10 + 8/100",
+            "resultat_exploitable": "487/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 20 unités, 7 dixièmes et 7 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "20,77",
+            "correction": "On additionne 20 + 7/10 + 7/100 = 20,77. La position des chiffres compte.",
+            "p1": "20,77",
+            "p2": "20,78",
+            "p3": "20,08",
+            "p4": "21,77",
+            "calcul_exploitable": "20 + 7/10 + 7/100",
+            "resultat_exploitable": "2077/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 21 unités, 2 dixièmes et 6 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "21,26",
+            "correction": "On additionne 21 + 2/10 + 6/100 = 21,26. La position des chiffres compte.",
+            "p1": "21,26",
+            "p2": "21,62",
+            "p3": "21,03",
+            "p4": "22,26",
+            "calcul_exploitable": "21 + 2/10 + 6/100",
+            "resultat_exploitable": "1063/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 22 unités, 5 dixièmes et 5 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "22,55",
+            "correction": "On additionne 22 + 5/10 + 5/100 = 22,55. La position des chiffres compte.",
+            "p1": "22,55",
+            "p2": "22,56",
+            "p3": "22,05",
+            "p4": "23,55",
+            "calcul_exploitable": "22 + 5/10 + 5/100",
+            "resultat_exploitable": "451/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 23 unités, 8 dixièmes et 4 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "23,84",
+            "correction": "On additionne 23 + 8/10 + 4/100 = 23,84. La position des chiffres compte.",
+            "p1": "23,84",
+            "p2": "23,48",
+            "p3": "23,08",
+            "p4": "24,84",
+            "calcul_exploitable": "23 + 8/10 + 4/100",
+            "resultat_exploitable": "596/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 24 unités, 3 dixièmes et 3 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "24,33",
+            "correction": "On additionne 24 + 3/10 + 3/100 = 24,33. La position des chiffres compte.",
+            "p1": "24,33",
+            "p2": "24,34",
+            "p3": "24,03",
+            "p4": "25,33",
+            "calcul_exploitable": "24 + 3/10 + 3/100",
+            "resultat_exploitable": "2433/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 25 unités, 6 dixièmes et 2 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "25,62",
+            "correction": "On additionne 25 + 6/10 + 2/100 = 25,62. La position des chiffres compte.",
+            "p1": "25,62",
+            "p2": "25,26",
+            "p3": "25,06",
+            "p4": "26,62",
+            "calcul_exploitable": "25 + 6/10 + 2/100",
+            "resultat_exploitable": "1281/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 26 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "26,11",
+            "correction": "On additionne 26 + 1/10 + 1/100 = 26,11. La position des chiffres compte.",
+            "p1": "26,11",
+            "p2": "26,12",
+            "p3": "26,01",
+            "p4": "27,11",
+            "calcul_exploitable": "26 + 1/10 + 1/100",
+            "resultat_exploitable": "2611/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 27 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "27,48",
+            "correction": "On additionne 27 + 4/10 + 8/100 = 27,48. La position des chiffres compte.",
+            "p1": "27,48",
+            "p2": "27,84",
+            "p3": "27,05",
+            "p4": "28,48",
+            "calcul_exploitable": "27 + 4/10 + 8/100",
+            "resultat_exploitable": "687/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 28 unités, 7 dixièmes et 7 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "28,77",
+            "correction": "On additionne 28 + 7/10 + 7/100 = 28,77. La position des chiffres compte.",
+            "p1": "28,77",
+            "p2": "28,78",
+            "p3": "28,08",
+            "p4": "29,77",
+            "calcul_exploitable": "28 + 7/10 + 7/100",
+            "resultat_exploitable": "2877/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 29 unités, 2 dixièmes et 6 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "29,26",
+            "correction": "On additionne 29 + 2/10 + 6/100 = 29,26. La position des chiffres compte.",
+            "p1": "29,26",
+            "p2": "29,62",
+            "p3": "29,03",
+            "p4": "30,26",
+            "calcul_exploitable": "29 + 2/10 + 6/100",
+            "resultat_exploitable": "1463/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 30 unités, 5 dixièmes et 5 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "30,55",
+            "correction": "On additionne 30 + 5/10 + 5/100 = 30,55. La position des chiffres compte.",
+            "p1": "30,55",
+            "p2": "30,56",
+            "p3": "30,05",
+            "p4": "31,55",
+            "calcul_exploitable": "30 + 5/10 + 5/100",
+            "resultat_exploitable": "611/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 31 unités, 8 dixièmes et 4 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "31,84",
+            "correction": "On additionne 31 + 8/10 + 4/100 = 31,84. La position des chiffres compte.",
+            "p1": "31,84",
+            "p2": "31,48",
+            "p3": "31,08",
+            "p4": "32,84",
+            "calcul_exploitable": "31 + 8/10 + 4/100",
+            "resultat_exploitable": "796/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 32 unités, 3 dixièmes et 3 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "32,33",
+            "correction": "On additionne 32 + 3/10 + 3/100 = 32,33. La position des chiffres compte.",
+            "p1": "32,33",
+            "p2": "32,34",
+            "p3": "32,03",
+            "p4": "33,33",
+            "calcul_exploitable": "32 + 3/10 + 3/100",
+            "resultat_exploitable": "3233/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 33 unités, 6 dixièmes et 2 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "33,62",
+            "correction": "On additionne 33 + 6/10 + 2/100 = 33,62. La position des chiffres compte.",
+            "p1": "33,62",
+            "p2": "33,26",
+            "p3": "33,06",
+            "p4": "34,62",
+            "calcul_exploitable": "33 + 6/10 + 2/100",
+            "resultat_exploitable": "1681/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 34 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "34,11",
+            "correction": "On additionne 34 + 1/10 + 1/100 = 34,11. La position des chiffres compte.",
+            "p1": "34,11",
+            "p2": "34,12",
+            "p3": "34,01",
+            "p4": "35,11",
+            "calcul_exploitable": "34 + 1/10 + 1/100",
+            "resultat_exploitable": "3411/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 35 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "35,48",
+            "correction": "On additionne 35 + 4/10 + 8/100 = 35,48. La position des chiffres compte.",
+            "p1": "35,48",
+            "p2": "35,84",
+            "p3": "35,05",
+            "p4": "36,48",
+            "calcul_exploitable": "35 + 4/10 + 8/100",
+            "resultat_exploitable": "887/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 36 unités, 7 dixièmes et 7 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "36,77",
+            "correction": "On additionne 36 + 7/10 + 7/100 = 36,77. La position des chiffres compte.",
+            "p1": "36,77",
+            "p2": "36,78",
+            "p3": "36,08",
+            "p4": "37,77",
+            "calcul_exploitable": "36 + 7/10 + 7/100",
+            "resultat_exploitable": "3677/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 37 unités, 2 dixièmes et 6 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "37,26",
+            "correction": "On additionne 37 + 2/10 + 6/100 = 37,26. La position des chiffres compte.",
+            "p1": "37,26",
+            "p2": "37,62",
+            "p3": "37,03",
+            "p4": "38,26",
+            "calcul_exploitable": "37 + 2/10 + 6/100",
+            "resultat_exploitable": "1863/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 38 unités, 5 dixièmes et 5 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "38,55",
+            "correction": "On additionne 38 + 5/10 + 5/100 = 38,55. La position des chiffres compte.",
+            "p1": "38,55",
+            "p2": "38,56",
+            "p3": "38,05",
+            "p4": "39,55",
+            "calcul_exploitable": "38 + 5/10 + 5/100",
+            "resultat_exploitable": "771/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 39 unités, 8 dixièmes et 4 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "39,84",
+            "correction": "On additionne 39 + 8/10 + 4/100 = 39,84. La position des chiffres compte.",
+            "p1": "39,84",
+            "p2": "39,48",
+            "p3": "39,08",
+            "p4": "40,84",
+            "calcul_exploitable": "39 + 8/10 + 4/100",
+            "resultat_exploitable": "996/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 40 unités, 3 dixièmes et 3 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "40,33",
+            "correction": "On additionne 40 + 3/10 + 3/100 = 40,33. La position des chiffres compte.",
+            "p1": "40,33",
+            "p2": "40,34",
+            "p3": "40,03",
+            "p4": "41,33",
+            "calcul_exploitable": "40 + 3/10 + 3/100",
+            "resultat_exploitable": "4033/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 41 unités, 6 dixièmes et 2 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "41,62",
+            "correction": "On additionne 41 + 6/10 + 2/100 = 41,62. La position des chiffres compte.",
+            "p1": "41,62",
+            "p2": "41,26",
+            "p3": "41,06",
+            "p4": "42,62",
+            "calcul_exploitable": "41 + 6/10 + 2/100",
+            "resultat_exploitable": "2081/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 42 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "42,11",
+            "correction": "On additionne 42 + 1/10 + 1/100 = 42,11. La position des chiffres compte.",
+            "p1": "42,11",
+            "p2": "42,12",
+            "p3": "42,01",
+            "p4": "43,11",
+            "calcul_exploitable": "42 + 1/10 + 1/100",
+            "resultat_exploitable": "4211/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 43 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "43,48",
+            "correction": "On additionne 43 + 4/10 + 8/100 = 43,48. La position des chiffres compte.",
+            "p1": "43,48",
+            "p2": "43,84",
+            "p3": "43,05",
+            "p4": "44,48",
+            "calcul_exploitable": "43 + 4/10 + 8/100",
+            "resultat_exploitable": "1087/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 44 unités, 7 dixièmes et 7 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "44,77",
+            "correction": "On additionne 44 + 7/10 + 7/100 = 44,77. La position des chiffres compte.",
+            "p1": "44,77",
+            "p2": "44,78",
+            "p3": "44,08",
+            "p4": "45,77",
+            "calcul_exploitable": "44 + 7/10 + 7/100",
+            "resultat_exploitable": "4477/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 45 unités, 2 dixièmes et 6 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "45,26",
+            "correction": "On additionne 45 + 2/10 + 6/100 = 45,26. La position des chiffres compte.",
+            "p1": "45,26",
+            "p2": "45,62",
+            "p3": "45,03",
+            "p4": "46,26",
+            "calcul_exploitable": "45 + 2/10 + 6/100",
+            "resultat_exploitable": "2263/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 46 unités, 5 dixièmes et 5 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "46,55",
+            "correction": "On additionne 46 + 5/10 + 5/100 = 46,55. La position des chiffres compte.",
+            "p1": "46,55",
+            "p2": "46,56",
+            "p3": "46,05",
+            "p4": "47,55",
+            "calcul_exploitable": "46 + 5/10 + 5/100",
+            "resultat_exploitable": "931/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 47 unités, 8 dixièmes et 4 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "47,84",
+            "correction": "On additionne 47 + 8/10 + 4/100 = 47,84. La position des chiffres compte.",
+            "p1": "47,84",
+            "p2": "47,48",
+            "p3": "47,08",
+            "p4": "48,84",
+            "calcul_exploitable": "47 + 8/10 + 4/100",
+            "resultat_exploitable": "1196/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 48 unités, 3 dixièmes et 3 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "48,33",
+            "correction": "On additionne 48 + 3/10 + 3/100 = 48,33. La position des chiffres compte.",
+            "p1": "48,33",
+            "p2": "48,34",
+            "p3": "48,03",
+            "p4": "49,33",
+            "calcul_exploitable": "48 + 3/10 + 3/100",
+            "resultat_exploitable": "4833/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 49 unités, 6 dixièmes et 2 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "49,62",
+            "correction": "On additionne 49 + 6/10 + 2/100 = 49,62. La position des chiffres compte.",
+            "p1": "49,62",
+            "p2": "49,26",
+            "p3": "49,06",
+            "p4": "50,62",
+            "calcul_exploitable": "49 + 6/10 + 2/100",
+            "resultat_exploitable": "2481/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 50 unités, 1 dixièmes et 1 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "50,11",
+            "correction": "On additionne 50 + 1/10 + 1/100 = 50,11. La position des chiffres compte.",
+            "p1": "50,11",
+            "p2": "50,12",
+            "p3": "50,01",
+            "p4": "51,11",
+            "calcul_exploitable": "50 + 1/10 + 1/100",
+            "resultat_exploitable": "5011/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre comporte 51 unités, 4 dixièmes et 8 centièmes. Quelle écriture décimale lui correspond ?",
+            "reponse": "51,48",
+            "correction": "On additionne 51 + 4/10 + 8/100 = 51,48. La position des chiffres compte.",
+            "p1": "51,48",
+            "p2": "51,84",
+            "p3": "51,05",
+            "p4": "52,48",
+            "calcul_exploitable": "51 + 4/10 + 8/100",
+            "resultat_exploitable": "1287/25"
+          }
+        }
+      ],
+      "liens_notions": "numération, décomposition",
+      "demarche": "Utiliser la valeur de chaque chiffre pour reconstruire le nombre.",
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

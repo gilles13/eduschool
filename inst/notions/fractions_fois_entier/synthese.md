@@ -1,4 +1,4 @@
-# L’essentiel : Multiplier une fraction par un entier
+# L'essentiel : Multiplier une fraction par un entier
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

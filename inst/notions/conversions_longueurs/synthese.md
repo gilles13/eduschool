@@ -1,4 +1,10 @@
-# Synthèse : Conversions de longueurs
+# L'essentiel : Synthèse : Conversions de longueurs
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une conversion de longueur change l’unité, pas la longueur mesurée.
+:::
 
 Deux unités de longueur voisines dans le tableau métrique diffèrent d'un facteur 10.
 

@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "IR-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,8 @@
             "p1": "a² + 2ab + b²",
             "p2": "a² + b²",
             "p3": "a² − 2ab + b²",
-            "p4": "2a² + 2b²"
+            "p4": "2a² + 2b²",
+            "resultat_exploitable": 0
           }
         },
         {
@@ -33,7 +35,8 @@
             "p1": "u² + 2uv + v²",
             "p2": "u² + v²",
             "p3": "u² − 2uv + v²",
-            "p4": "2u² + 2v²"
+            "p4": "2u² + 2v²",
+            "resultat_exploitable": 0
           }
         },
         {
@@ -44,14 +47,19 @@
             "p1": "m² + 2mn + n²",
             "p2": "m² + n²",
             "p3": "m² − 2mn + n²",
-            "p4": "2m² + 2n²"
+            "p4": "2m² + 2n²",
+            "resultat_exploitable": 0
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(a + b)^2 - (a^2 + 2*a*b + b^2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-002",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Développer [[affichage_source]].",
       "variantes": [
         {
@@ -862,11 +870,15 @@
         "[[d2]]",
         "[[d3]]"
       ],
-      "correction": "On reconnaît une identité remarquable, puis on l’applique en conservant le double produit lorsqu’il existe. On obtient [[bonne]]."
+      "correction": "On reconnaît une identité remarquable, puis on l’applique en conservant le double produit lorsqu’il existe. On obtient [[bonne]].",
+      "enonce_exploitable": "[[source]]",
+      "reponse_exploitable": "[[bonne_expression]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Factoriser [[affichage_source]].",
       "variantes": [
         {
@@ -1677,11 +1689,15 @@
         "[[d2]]",
         "[[d3]]"
       ],
-      "correction": "On lit l’identité remarquable dans le sens de la factorisation. On obtient [[bonne]]."
+      "correction": "On lit l’identité remarquable dans le sens de la factorisation. On obtient [[bonne]].",
+      "enonce_exploitable": "[[source]]",
+      "reponse_exploitable": "[[bonne_expression]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1700,7 +1716,10 @@
             "p1": "12𝑥",
             "p2": "6𝑥",
             "p3": "5𝑥",
-            "p4": "12𝑥²"
+            "p4": "12𝑥²",
+            "a": 2,
+            "b": 3,
+            "resultat_exploitable": 12
           }
         },
         {
@@ -1711,7 +1730,10 @@
             "p1": "12𝑥",
             "p2": "6𝑥",
             "p3": "5𝑥",
-            "p4": "12𝑥²"
+            "p4": "12𝑥²",
+            "a": 3,
+            "b": 2,
+            "resultat_exploitable": 12
           }
         },
         {
@@ -1722,14 +1744,21 @@
             "p1": "40𝑥",
             "p2": "20𝑥",
             "p3": "9𝑥",
-            "p4": "40𝑥²"
+            "p4": "40𝑥²",
+            "a": 4,
+            "b": 5,
+            "resultat_exploitable": 40
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "2 * a * b",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-005",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1748,7 +1777,9 @@
             "p1": "(𝑥 + 2)² = 𝑥² + 4𝑥 + 4",
             "p2": "(𝑥 + 2)² = 𝑥² + 4",
             "p3": "(𝑥 + 2)² = 𝑥² − 4",
-            "p4": "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4"
+            "p4": "(𝑥 + 2)² = 𝑥² + 2𝑥 + 4",
+            "b": 2,
+            "resultat_exploitable": 0
           }
         },
         {
@@ -1759,7 +1790,9 @@
             "p1": "(𝑥 + 3)² = 𝑥² + 6𝑥 + 9",
             "p2": "(𝑥 + 3)² = 𝑥² + 9",
             "p3": "(𝑥 + 3)² = 𝑥² − 9",
-            "p4": "(𝑥 + 3)² = 𝑥² + 3𝑥 + 9"
+            "p4": "(𝑥 + 3)² = 𝑥² + 3𝑥 + 9",
+            "b": 3,
+            "resultat_exploitable": 0
           }
         },
         {
@@ -1770,14 +1803,20 @@
             "p1": "(𝑥 + 5)² = 𝑥² + 10𝑥 + 25",
             "p2": "(𝑥 + 5)² = 𝑥² + 25",
             "p3": "(𝑥 + 5)² = 𝑥² − 25",
-            "p4": "(𝑥 + 5)² = 𝑥² + 5𝑥 + 25"
+            "p4": "(𝑥 + 5)² = 𝑥² + 5𝑥 + 25",
+            "b": 5,
+            "resultat_exploitable": 0
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(x + b)^2 - (x^2 + 2*b*x + b^2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-006",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1796,7 +1835,10 @@
             "p1": "9𝑥² − 4",
             "p2": "9𝑥² + 4",
             "p3": "3𝑥² − 4",
-            "p4": "9𝑥² − 12𝑥 + 4"
+            "p4": "9𝑥² − 12𝑥 + 4",
+            "a": 3,
+            "b": 2,
+            "resultat_exploitable": 0
           }
         },
         {
@@ -1807,7 +1849,10 @@
             "p1": "16𝑥² − 9",
             "p2": "16𝑥² + 9",
             "p3": "4𝑥² − 9",
-            "p4": "16𝑥² − 24𝑥 + 9"
+            "p4": "16𝑥² − 24𝑥 + 9",
+            "a": 4,
+            "b": 3,
+            "resultat_exploitable": 0
           }
         },
         {
@@ -1818,14 +1863,21 @@
             "p1": "25𝑥² − 4",
             "p2": "25𝑥² + 4",
             "p3": "5𝑥² − 4",
-            "p4": "25𝑥² − 20𝑥 + 4"
+            "p4": "25𝑥² − 20𝑥 + 4",
+            "a": 5,
+            "b": 2,
+            "resultat_exploitable": 0
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(a*x - b)*(a*x + b) - (a^2*x^2 - b^2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-007",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1844,7 +1896,9 @@
             "p1": "\\(10000-200+1\\)",
             "p2": "\\(10000-1\\)",
             "p3": "\\(10000-100+1\\)",
-            "p4": "\\(10000-200-1\\)"
+            "p4": "\\(10000-200-1\\)",
+            "n": 99,
+            "resultat_exploitable": 9801
           }
         },
         {
@@ -1855,7 +1909,9 @@
             "p1": "\\(10000-400+4\\)",
             "p2": "\\(10000-2\\)",
             "p3": "\\(9604-4\\)",
-            "p4": "\\(98\\times100\\)"
+            "p4": "\\(98\\times100\\)",
+            "n": 98,
+            "resultat_exploitable": 9604
           }
         },
         {
@@ -1866,14 +1922,20 @@
             "p1": "\\(10000-600+9\\)",
             "p2": "\\(10000-3\\)",
             "p3": "\\(9409-9\\)",
-            "p4": "\\(97\\times100\\)"
+            "p4": "\\(97\\times100\\)",
+            "n": 97,
+            "resultat_exploitable": 9409
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "n^2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-BOITE",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1892,7 +1954,10 @@
             "p1": "4",
             "p2": "8",
             "p3": "12",
-            "p4": "16"
+            "p4": "16",
+            "a": 1,
+            "b": 4,
+            "resultat_exploitable": 8
           }
         },
         {
@@ -1903,7 +1968,10 @@
             "p1": "10",
             "p2": "5",
             "p3": "25",
-            "p4": "20"
+            "p4": "20",
+            "a": 1,
+            "b": 5,
+            "resultat_exploitable": 10
           }
         },
         {
@@ -1914,14 +1982,21 @@
             "p1": "14",
             "p2": "7",
             "p3": "49",
-            "p4": "28"
+            "p4": "28",
+            "a": 1,
+            "b": 7,
+            "resultat_exploitable": 14
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "2 * a * b",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "IR-MOT-A-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on une égalité algébrique vraie pour toutes les valeurs admises ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -1939,11 +2014,15 @@
         "produit",
         "facteur"
       ],
-      "correction": "Une **identité** est une égalité vraie pour toutes les valeurs admises."
+      "correction": "Une **identité** est une égalité vraie pour toutes les valeurs admises.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "IR-MOT-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on les deux expressions (a − b) et (a + b) qui apparaissent dans la troisième identité remarquable ?",
       "presentation": {
         "type": "mot_masque",
@@ -1962,7 +2041,10 @@
         "semblables",
         "associées"
       ],
-      "correction": "Les expressions (a − b) et (a + b) sont dites **conjuguées**. Leur produit vaut a² − b²."
+      "correction": "Les expressions (a − b) et (a + b) sont dites **conjuguées**. Leur produit vaut a² − b².",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

@@ -1,4 +1,10 @@
-# L’essentiel : Encadrer des nombres décimaux
+# L'essentiel : Encadrer des nombres décimaux
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Un encadrement situe un nombre entre une borne inférieure et une borne supérieure.
+:::
 
 5 < 5,37 < 6 et 5,3 < 5,37 < 5,4. Le pas choisi change la précision de l’encadrement.
 

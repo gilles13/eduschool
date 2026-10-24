@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FACT-COMMUN-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Quelle factorisation de [[affichage_source]] est correcte ?",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -864,11 +865,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "[[source]]",
+      "reponse_exploitable": "[[bonne_expression]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FACT-COMMUN-BOITE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "valeur_recherchee",
       "enonce": "Dans [[affichage_source]], quel est le facteur commun aux deux termes ?",
       "presentation": {
         "type": "boite"
@@ -888,7 +893,9 @@
             "facteur": "3",
             "d1": "6",
             "d2": "9",
-            "d3": "𝑥"
+            "d3": "𝑥",
+            "expression_source": "6*x+9",
+            "expression_factorisee": "3*(2*x+3)"
           },
           "progression": 1
         },
@@ -898,7 +905,9 @@
             "facteur": "4𝑥",
             "d1": "4",
             "d2": "𝑥²",
-            "d3": "12𝑥"
+            "d3": "12𝑥",
+            "expression_source": "8*x^2+12*x",
+            "expression_factorisee": "4*x*(2*x+3)"
           },
           "progression": 2
         },
@@ -908,15 +917,21 @@
             "facteur": "𝑥 - 4",
             "d1": "𝑥",
             "d2": "𝑥 - 6",
-            "d3": "6"
+            "d3": "6",
+            "expression_source": "x*(x-4)-6*(x-4)",
+            "expression_factorisee": "(x-4)*(x-6)"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "[[expression_source]]",
+      "reponse_exploitable": "[[expression_factorisee]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FACT-COMMUN-SENS",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Factoriser une expression, c’est principalement…",
       "reponse": "écrire une somme ou une différence sous la forme d’un produit",
       "propositions": [
@@ -925,11 +940,15 @@
         "remplacer une lettre par un nombre",
         "résoudre une équation"
       ],
-      "correction": "Factoriser consiste à transformer une somme ou une différence en produit. Développer réalise l’opération inverse."
+      "correction": "Factoriser consiste à transformer une somme ou une différence en produit. Développer réalise l’opération inverse.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "FACT-COMMUN-MOT-A-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Dans 6𝑥 + 9 = 3(2𝑥 + 3), comment appelle-t-on 3, présent dans les deux termes avant factorisation ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -947,7 +966,10 @@
         "coefficient",
         "solution"
       ],
-      "correction": "3 est un facteur commun aux deux termes : 6𝑥 = 3 × 2𝑥 et 9 = 3 × 3."
+      "correction": "3 est un facteur commun aux deux termes : 6𝑥 = 3 × 2𝑥 et 9 = 3 × 3.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "POURC-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Combien représentent [[p]] % de [[total]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -564,11 +565,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "p * total / 100",
+      "reponse_exploitable": "as.numeric(bonne)",
+      "moteur": "R"
     },
     {
       "id": "POURC-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -612,11 +617,15 @@
             "p4": "60 unités quelle que soit la quantité."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "POURC-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -660,7 +669,10 @@
             "p4": "0,65"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

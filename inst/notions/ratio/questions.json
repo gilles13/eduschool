@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "RATIO-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Une quantité totale de [[total]] est partagée selon le ratio [[a]]:[[b]]. Quel partage convient ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -16,6 +17,11 @@
       "variantes": [
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 2,
+            "total_num": 6,
+            "resultat_second": 4,
+            "resultat_exploitable": 2,
             "a": "1",
             "b": "2",
             "total": "6",
@@ -28,6 +34,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 4,
+            "total_num": 18,
+            "resultat_second": 12,
+            "resultat_exploitable": 6,
             "a": "2",
             "b": "4",
             "total": "18",
@@ -40,6 +51,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 6,
+            "total_num": 36,
+            "resultat_second": 24,
+            "resultat_exploitable": 12,
             "a": "3",
             "b": "6",
             "total": "36",
@@ -52,6 +68,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 2,
+            "total_num": 30,
+            "resultat_second": 10,
+            "resultat_exploitable": 20,
             "a": "4",
             "b": "2",
             "total": "30",
@@ -64,6 +85,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 4,
+            "total_num": 54,
+            "resultat_second": 24,
+            "resultat_exploitable": 30,
             "a": "5",
             "b": "4",
             "total": "54",
@@ -76,6 +102,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 6,
+            "total_num": 49,
+            "resultat_second": 42,
+            "resultat_exploitable": 7,
             "a": "1",
             "b": "6",
             "total": "49",
@@ -88,6 +119,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 3,
+            "total_num": 40,
+            "resultat_second": 24,
+            "resultat_exploitable": 16,
             "a": "2",
             "b": "3",
             "total": "40",
@@ -100,6 +136,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 4,
+            "total_num": 63,
+            "resultat_second": 36,
+            "resultat_exploitable": 27,
             "a": "3",
             "b": "4",
             "total": "63",
@@ -112,6 +153,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 6,
+            "total_num": 100,
+            "resultat_second": 60,
+            "resultat_exploitable": 40,
             "a": "4",
             "b": "6",
             "total": "100",
@@ -124,6 +170,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 2,
+            "total_num": 14,
+            "resultat_second": 4,
+            "resultat_exploitable": 10,
             "a": "5",
             "b": "2",
             "total": "14",
@@ -136,6 +187,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 4,
+            "total_num": 15,
+            "resultat_second": 12,
+            "resultat_exploitable": 3,
             "a": "1",
             "b": "4",
             "total": "15",
@@ -148,6 +204,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 6,
+            "total_num": 32,
+            "resultat_second": 24,
+            "resultat_exploitable": 8,
             "a": "2",
             "b": "6",
             "total": "32",
@@ -160,6 +221,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 2,
+            "total_num": 25,
+            "resultat_second": 10,
+            "resultat_exploitable": 15,
             "a": "3",
             "b": "2",
             "total": "25",
@@ -172,6 +238,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 5,
+            "total_num": 54,
+            "resultat_second": 30,
+            "resultat_exploitable": 24,
             "a": "4",
             "b": "5",
             "total": "54",
@@ -184,6 +255,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 6,
+            "total_num": 77,
+            "resultat_second": 42,
+            "resultat_exploitable": 35,
             "a": "5",
             "b": "6",
             "total": "77",
@@ -196,6 +272,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 2,
+            "total_num": 24,
+            "resultat_second": 16,
+            "resultat_exploitable": 8,
             "a": "1",
             "b": "2",
             "total": "24",
@@ -208,6 +289,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 4,
+            "total_num": 54,
+            "resultat_second": 36,
+            "resultat_exploitable": 18,
             "a": "2",
             "b": "4",
             "total": "54",
@@ -220,6 +306,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 6,
+            "total_num": 90,
+            "resultat_second": 60,
+            "resultat_exploitable": 30,
             "a": "3",
             "b": "6",
             "total": "90",
@@ -232,6 +323,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 2,
+            "total_num": 12,
+            "resultat_second": 4,
+            "resultat_exploitable": 8,
             "a": "4",
             "b": "2",
             "total": "12",
@@ -244,6 +340,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 4,
+            "total_num": 27,
+            "resultat_second": 12,
+            "resultat_exploitable": 15,
             "a": "5",
             "b": "4",
             "total": "27",
@@ -256,6 +357,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 6,
+            "total_num": 28,
+            "resultat_second": 24,
+            "resultat_exploitable": 4,
             "a": "1",
             "b": "6",
             "total": "28",
@@ -268,6 +374,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 3,
+            "total_num": 25,
+            "resultat_second": 15,
+            "resultat_exploitable": 10,
             "a": "2",
             "b": "3",
             "total": "25",
@@ -280,6 +391,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 4,
+            "total_num": 42,
+            "resultat_second": 24,
+            "resultat_exploitable": 18,
             "a": "3",
             "b": "4",
             "total": "42",
@@ -292,6 +408,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 6,
+            "total_num": 70,
+            "resultat_second": 42,
+            "resultat_exploitable": 28,
             "a": "4",
             "b": "6",
             "total": "70",
@@ -304,6 +425,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 2,
+            "total_num": 56,
+            "resultat_second": 16,
+            "resultat_exploitable": 40,
             "a": "5",
             "b": "2",
             "total": "56",
@@ -316,6 +442,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 4,
+            "total_num": 45,
+            "resultat_second": 36,
+            "resultat_exploitable": 9,
             "a": "1",
             "b": "4",
             "total": "45",
@@ -328,6 +459,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 6,
+            "total_num": 80,
+            "resultat_second": 60,
+            "resultat_exploitable": 20,
             "a": "2",
             "b": "6",
             "total": "80",
@@ -340,6 +476,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 2,
+            "total_num": 10,
+            "resultat_second": 4,
+            "resultat_exploitable": 6,
             "a": "3",
             "b": "2",
             "total": "10",
@@ -352,6 +493,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 5,
+            "total_num": 27,
+            "resultat_second": 15,
+            "resultat_exploitable": 12,
             "a": "4",
             "b": "5",
             "total": "27",
@@ -364,6 +510,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 6,
+            "total_num": 44,
+            "resultat_second": 24,
+            "resultat_exploitable": 20,
             "a": "5",
             "b": "6",
             "total": "44",
@@ -376,6 +527,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 2,
+            "total_num": 15,
+            "resultat_second": 10,
+            "resultat_exploitable": 5,
             "a": "1",
             "b": "2",
             "total": "15",
@@ -388,6 +544,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 4,
+            "total_num": 36,
+            "resultat_second": 24,
+            "resultat_exploitable": 12,
             "a": "2",
             "b": "4",
             "total": "36",
@@ -400,6 +561,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 6,
+            "total_num": 63,
+            "resultat_second": 42,
+            "resultat_exploitable": 21,
             "a": "3",
             "b": "6",
             "total": "63",
@@ -412,6 +578,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 2,
+            "total_num": 48,
+            "resultat_second": 16,
+            "resultat_exploitable": 32,
             "a": "4",
             "b": "2",
             "total": "48",
@@ -424,6 +595,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 4,
+            "total_num": 81,
+            "resultat_second": 36,
+            "resultat_exploitable": 45,
             "a": "5",
             "b": "4",
             "total": "81",
@@ -436,6 +612,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 6,
+            "total_num": 70,
+            "resultat_second": 60,
+            "resultat_exploitable": 10,
             "a": "1",
             "b": "6",
             "total": "70",
@@ -448,6 +629,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 3,
+            "total_num": 10,
+            "resultat_second": 6,
+            "resultat_exploitable": 4,
             "a": "2",
             "b": "3",
             "total": "10",
@@ -460,6 +646,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 4,
+            "total_num": 21,
+            "resultat_second": 12,
+            "resultat_exploitable": 9,
             "a": "3",
             "b": "4",
             "total": "21",
@@ -472,6 +663,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 6,
+            "total_num": 40,
+            "resultat_second": 24,
+            "resultat_exploitable": 16,
             "a": "4",
             "b": "6",
             "total": "40",
@@ -484,6 +680,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 2,
+            "total_num": 35,
+            "resultat_second": 10,
+            "resultat_exploitable": 25,
             "a": "5",
             "b": "2",
             "total": "35",
@@ -496,6 +697,11 @@
         },
         {
           "parametres": {
+            "part_a": 1,
+            "part_b": 4,
+            "total_num": 30,
+            "resultat_second": 24,
+            "resultat_exploitable": 6,
             "a": "1",
             "b": "4",
             "total": "30",
@@ -508,6 +714,11 @@
         },
         {
           "parametres": {
+            "part_a": 2,
+            "part_b": 6,
+            "total_num": 56,
+            "resultat_second": 42,
+            "resultat_exploitable": 14,
             "a": "2",
             "b": "6",
             "total": "56",
@@ -520,6 +731,11 @@
         },
         {
           "parametres": {
+            "part_a": 3,
+            "part_b": 2,
+            "total_num": 40,
+            "resultat_second": 16,
+            "resultat_exploitable": 24,
             "a": "3",
             "b": "2",
             "total": "40",
@@ -532,6 +748,11 @@
         },
         {
           "parametres": {
+            "part_a": 4,
+            "part_b": 5,
+            "total_num": 81,
+            "resultat_second": 45,
+            "resultat_exploitable": 36,
             "a": "4",
             "b": "5",
             "total": "81",
@@ -544,6 +765,11 @@
         },
         {
           "parametres": {
+            "part_a": 5,
+            "part_b": 6,
+            "total_num": 110,
+            "resultat_second": 60,
+            "resultat_exploitable": 50,
             "a": "5",
             "b": "6",
             "total": "110",
@@ -554,11 +780,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "total_num * part_a / (part_a + part_b)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RATIO-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -602,11 +832,15 @@
             "p4": "Deux quantités nécessairement mesurées dans des unités différentes."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "RATIO-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -619,6 +853,10 @@
       "variantes": [
         {
           "parametres": {
+            "part_premiere": 3,
+            "part_seconde": 4,
+            "premiere": 12,
+            "resultat_exploitable": 16,
             "enonce": "Deux grandeurs sont dans le ratio 3:4. Si la première vaut 12, combien vaut la seconde ?",
             "reponse": "16",
             "correction": "12 correspond à 3 parts, donc une part vaut 4 et 4 parts valent 16.",
@@ -630,6 +868,10 @@
         },
         {
           "parametres": {
+            "part_premiere": 6,
+            "part_seconde": 8,
+            "premiere": 24,
+            "resultat_exploitable": 32,
             "enonce": "Deux grandeurs sont dans le ratio 6:8. Si la première vaut 24, combien vaut la seconde ?",
             "reponse": "32",
             "correction": "Le rapport entre les quantités est conservé ; la réponse correcte est 32.",
@@ -641,6 +883,10 @@
         },
         {
           "parametres": {
+            "part_premiere": 9,
+            "part_seconde": 12,
+            "premiere": 36,
+            "resultat_exploitable": 48,
             "enonce": "Deux grandeurs sont dans le ratio 9:12. Si la première vaut 36, combien vaut la seconde ?",
             "reponse": "48",
             "correction": "Le rapport entre les quantités est conservé ; la réponse correcte est 48.",
@@ -650,7 +896,10 @@
             "p4": "144"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "premiere * part_seconde / part_premiere",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

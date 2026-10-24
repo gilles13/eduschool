@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "ARRONDIS_DECIMAUX-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "8,5",
             "p2": "8,4",
             "p3": "8,47",
-            "p4": "8,0"
+            "p4": "8,0",
+            "calcul_exploitable": "floor(8.47 * 10 + 0.5) / 10",
+            "resultat_exploitable": "17/2"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "6,7",
             "p2": "6,8",
             "p3": "6,73",
-            "p4": "6,0"
+            "p4": "6,0",
+            "calcul_exploitable": "floor(6.73 * 10 + 0.5) / 10",
+            "resultat_exploitable": "67/10"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "14,9",
             "p2": "14,8",
             "p3": "14,86",
-            "p4": "15,0"
+            "p4": "15,0",
+            "calcul_exploitable": "floor(14.86 * 10 + 0.5) / 10",
+            "resultat_exploitable": "149/10"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ARRONDIS_DECIMAUX-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +81,9 @@
             "p1": "12,35",
             "p2": "12,34",
             "p3": "12,3",
-            "p4": "12,349"
+            "p4": "12,349",
+            "calcul_exploitable": "floor(12.349 * 100 + 0.5) / 100",
+            "resultat_exploitable": "247/20"
           }
         },
         {
@@ -81,7 +94,9 @@
             "p1": "7,26",
             "p2": "7,27",
             "p3": "7,3",
-            "p4": "7,264"
+            "p4": "7,264",
+            "calcul_exploitable": "floor(7.264 * 100 + 0.5) / 100",
+            "resultat_exploitable": "363/50"
           }
         },
         {
@@ -92,14 +107,20 @@
             "p1": "18,38",
             "p2": "18,37",
             "p3": "18,4",
-            "p4": "18,378"
+            "p4": "18,378",
+            "calcul_exploitable": "floor(18.378 * 100 + 0.5) / 100",
+            "resultat_exploitable": "919/50"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ARRONDIS_DECIMAUX-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +139,9 @@
             "p1": "6 €",
             "p2": "7 €",
             "p3": "6,1 €",
-            "p4": "6,12 €"
+            "p4": "6,12 €",
+            "prix": 6.12,
+            "resultat_exploitable": 6
           }
         },
         {
@@ -129,7 +152,9 @@
             "p1": "9 €",
             "p2": "8 €",
             "p3": "8,6 €",
-            "p4": "8,62 €"
+            "p4": "8,62 €",
+            "prix": 8.62,
+            "resultat_exploitable": 9
           }
         },
         {
@@ -140,14 +165,20 @@
             "p1": "13 €",
             "p2": "14 €",
             "p3": "13,3 €",
-            "p4": "13,27 €"
+            "p4": "13,27 €",
+            "prix": 13.27,
+            "resultat_exploitable": 13
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "floor(prix + 0.5)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ARRONDIS_DECIMAUX-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -166,7 +197,9 @@
             "p1": "1,00",
             "p2": "0,99",
             "p3": "0,995",
-            "p4": "0,90"
+            "p4": "0,90",
+            "calcul_exploitable": "floor(0.995 * 100 + 0.5) / 100",
+            "resultat_exploitable": "1"
           }
         },
         {
@@ -177,7 +210,9 @@
             "p1": "3,00",
             "p2": "2,99",
             "p3": "2,996",
-            "p4": "2,90"
+            "p4": "2,90",
+            "calcul_exploitable": "floor(2.996 * 100 + 0.5) / 100",
+            "resultat_exploitable": "3"
           }
         },
         {
@@ -188,14 +223,20 @@
             "p1": "5,00",
             "p2": "4,99",
             "p3": "4,995",
-            "p4": "4,90"
+            "p4": "4,90",
+            "calcul_exploitable": "floor(4.995 * 100 + 0.5) / 100",
+            "resultat_exploitable": "5"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "ARRONDIS_DECIMAUX-MOT_A_TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on une valeur approchée obtenue à une précision demandée ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -213,30 +254,4971 @@
         "décomposition",
         "quotient"
       ],
-      "correction": "Un arrondi est une approximation à la précision choisie."
+      "correction": "Un arrondi est une approximation à la précision choisie.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
-      "id": "ARRONDIS_DECIMAUX-MOT_MASQUE",
-      "type": "qcm",
-      "enonce": "Comment appelle-t-on une valeur approchée obtenue à une précision demandée ? Choisis le mot masqué.",
-      "presentation": {
-        "type": "mot_masque",
-        "masques": {
-          "arrondi": "A________I",
-          "encadrement": "E________T",
-          "décomposition": "D________N",
-          "quotient": "Q________T"
-        },
-        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
-      },
-      "reponse": "arrondi",
+      "id": "ARRONDIS_DECIMAUX-PROCEDES-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
       "propositions": [
-        "arrondi",
-        "encadrement",
-        "décomposition",
-        "quotient"
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
       ],
-      "correction": "Un arrondi est une approximation à la précision choisie."
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_numeration",
+        "nombre": "[[nombre]]",
+        "rang": "[[rang]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour 1,122, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,12",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "1,11",
+            "p2": "1,12",
+            "p3": "1,13",
+            "p4": "1,14",
+            "nombre": 1.122,
+            "rang": 2,
+            "resultat_exploitable": "28/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,495, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,50",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "2,50",
+            "p2": "2,49",
+            "p3": "2,48",
+            "p4": "2,51",
+            "nombre": 2.495,
+            "rang": 2,
+            "resultat_exploitable": "5/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,768, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,77",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "3,77",
+            "p2": "3,76",
+            "p3": "3,78",
+            "p4": "3,75",
+            "nombre": 3.768,
+            "rang": 2,
+            "resultat_exploitable": "377/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,032, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,03",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "5,02",
+            "p2": "5,04",
+            "p3": "5,03",
+            "p4": "5,05",
+            "nombre": 5.032,
+            "rang": 2,
+            "resultat_exploitable": "503/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,305, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,31",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "6,29",
+            "p2": "6,30",
+            "p3": "6,32",
+            "p4": "6,31",
+            "nombre": 6.305,
+            "rang": 2,
+            "resultat_exploitable": "631/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,678, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,68",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "7,69",
+            "p2": "7,67",
+            "p3": "7,66",
+            "p4": "7,68",
+            "nombre": 7.678,
+            "rang": 2,
+            "resultat_exploitable": "192/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,842, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,84",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "1,85",
+            "p2": "1,83",
+            "p3": "1,86",
+            "p4": "1,84",
+            "nombre": 1.842,
+            "rang": 2,
+            "resultat_exploitable": "46/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,115, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,12",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "3,10",
+            "p2": "3,13",
+            "p3": "3,12",
+            "p4": "3,11",
+            "nombre": 3.115,
+            "rang": 2,
+            "resultat_exploitable": "78/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,488, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "4,49",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "4,50",
+            "p2": "4,48",
+            "p3": "4,49",
+            "p4": "4,47",
+            "nombre": 4.488,
+            "rang": 2,
+            "resultat_exploitable": "449/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,752, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,75",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "5,74",
+            "p2": "5,77",
+            "p3": "5,76",
+            "p4": "5,75",
+            "nombre": 5.752,
+            "rang": 2,
+            "resultat_exploitable": "23/4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,025, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,03",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "7,04",
+            "p2": "7,01",
+            "p3": "7,03",
+            "p4": "7,02",
+            "nombre": 7.025,
+            "rang": 2,
+            "resultat_exploitable": "703/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,298, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,30",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "1,31",
+            "p2": "1,28",
+            "p3": "1,29",
+            "p4": "1,30",
+            "nombre": 1.298,
+            "rang": 2,
+            "resultat_exploitable": "13/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,562, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,56",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "2,55",
+            "p2": "2,56",
+            "p3": "2,58",
+            "p4": "2,57",
+            "nombre": 2.562,
+            "rang": 2,
+            "resultat_exploitable": "64/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,835, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,84",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "3,83",
+            "p2": "3,85",
+            "p3": "3,84",
+            "p4": "3,82",
+            "nombre": 3.835,
+            "rang": 2,
+            "resultat_exploitable": "96/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,108, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,11",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "5,09",
+            "p2": "5,10",
+            "p3": "5,11",
+            "p4": "5,12",
+            "nombre": 5.108,
+            "rang": 2,
+            "resultat_exploitable": "511/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,472, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,47",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "6,47",
+            "p2": "6,49",
+            "p3": "6,48",
+            "p4": "6,46",
+            "nombre": 6.472,
+            "rang": 2,
+            "resultat_exploitable": "647/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,745, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,75",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "7,76",
+            "p2": "7,74",
+            "p3": "7,73",
+            "p4": "7,75",
+            "nombre": 7.745,
+            "rang": 2,
+            "resultat_exploitable": "31/4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,918, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,92",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "1,93",
+            "p2": "1,92",
+            "p3": "1,91",
+            "p4": "1,90",
+            "nombre": 1.918,
+            "rang": 2,
+            "resultat_exploitable": "48/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,282, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,28",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "3,28",
+            "p2": "3,29",
+            "p3": "3,30",
+            "p4": "3,27",
+            "nombre": 3.282,
+            "rang": 2,
+            "resultat_exploitable": "82/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,555, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "4,56",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "4,55",
+            "p2": "4,54",
+            "p3": "4,57",
+            "p4": "4,56",
+            "nombre": 4.555,
+            "rang": 2,
+            "resultat_exploitable": "114/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,828, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,83",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "5,83",
+            "p2": "5,84",
+            "p3": "5,82",
+            "p4": "5,81",
+            "nombre": 5.828,
+            "rang": 2,
+            "resultat_exploitable": "583/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,192, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,19",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "7,21",
+            "p2": "7,19",
+            "p3": "7,18",
+            "p4": "7,20",
+            "nombre": 7.192,
+            "rang": 2,
+            "resultat_exploitable": "719/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,365, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,37",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "1,38",
+            "p2": "1,35",
+            "p3": "1,36",
+            "p4": "1,37",
+            "nombre": 1.365,
+            "rang": 2,
+            "resultat_exploitable": "137/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,638, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,64",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "2,65",
+            "p2": "2,62",
+            "p3": "2,64",
+            "p4": "2,63",
+            "nombre": 2.638,
+            "rang": 2,
+            "resultat_exploitable": "66/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,902, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,90",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "3,89",
+            "p2": "3,92",
+            "p3": "3,91",
+            "p4": "3,90",
+            "nombre": 3.902,
+            "rang": 2,
+            "resultat_exploitable": "39/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,275, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,28",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "5,26",
+            "p2": "5,28",
+            "p3": "5,29",
+            "p4": "5,27",
+            "nombre": 5.275,
+            "rang": 2,
+            "resultat_exploitable": "132/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,548, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,55",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "6,56",
+            "p2": "6,54",
+            "p3": "6,55",
+            "p4": "6,53",
+            "nombre": 6.548,
+            "rang": 2,
+            "resultat_exploitable": "131/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,812, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,81",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "7,80",
+            "p2": "7,82",
+            "p3": "7,81",
+            "p4": "7,83",
+            "nombre": 7.812,
+            "rang": 2,
+            "resultat_exploitable": "781/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,085, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,09",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "2,08",
+            "p2": "2,10",
+            "p3": "2,09",
+            "p4": "2,07",
+            "nombre": 2.085,
+            "rang": 2,
+            "resultat_exploitable": "209/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,358, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,36",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "3,37",
+            "p2": "3,34",
+            "p3": "3,36",
+            "p4": "3,35",
+            "nombre": 3.358,
+            "rang": 2,
+            "resultat_exploitable": "84/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,622, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "4,62",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "4,63",
+            "p2": "4,61",
+            "p3": "4,62",
+            "p4": "4,64",
+            "nombre": 4.622,
+            "rang": 2,
+            "resultat_exploitable": "231/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,995, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,00",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "6,00",
+            "p2": "5,98",
+            "p3": "6,01",
+            "p4": "5,99",
+            "nombre": 5.995,
+            "rang": 2,
+            "resultat_exploitable": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,268, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,27",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "7,26",
+            "p2": "7,25",
+            "p3": "7,28",
+            "p4": "7,27",
+            "nombre": 7.268,
+            "rang": 2,
+            "resultat_exploitable": "727/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,432, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,43",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "1,43",
+            "p2": "1,44",
+            "p3": "1,45",
+            "p4": "1,42",
+            "nombre": 1.432,
+            "rang": 2,
+            "resultat_exploitable": "143/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,705, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,71",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "2,71",
+            "p2": "2,70",
+            "p3": "2,72",
+            "p4": "2,69",
+            "nombre": 2.705,
+            "rang": 2,
+            "resultat_exploitable": "271/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,078, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "4,08",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "4,09",
+            "p2": "4,07",
+            "p3": "4,06",
+            "p4": "4,08",
+            "nombre": 4.078,
+            "rang": 2,
+            "resultat_exploitable": "102/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,342, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,34",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "5,33",
+            "p2": "5,36",
+            "p3": "5,34",
+            "p4": "5,35",
+            "nombre": 5.342,
+            "rang": 2,
+            "resultat_exploitable": "267/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,615, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,62",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "6,60",
+            "p2": "6,63",
+            "p3": "6,62",
+            "p4": "6,61",
+            "nombre": 6.615,
+            "rang": 2,
+            "resultat_exploitable": "331/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,988, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,99",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "7,99",
+            "p2": "7,97",
+            "p3": "8,00",
+            "p4": "7,98",
+            "nombre": 7.988,
+            "rang": 2,
+            "resultat_exploitable": "799/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,152, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,15",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "2,14",
+            "p2": "2,17",
+            "p3": "2,16",
+            "p4": "2,15",
+            "nombre": 2.152,
+            "rang": 2,
+            "resultat_exploitable": "43/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,425, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "3,43",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "3,42",
+            "p2": "3,44",
+            "p3": "3,43",
+            "p4": "3,41",
+            "nombre": 3.425,
+            "rang": 2,
+            "resultat_exploitable": "343/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,798, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "4,80",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "4,78",
+            "p2": "4,81",
+            "p3": "4,79",
+            "p4": "4,80",
+            "nombre": 4.798,
+            "rang": 2,
+            "resultat_exploitable": "24/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,062, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,06",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "6,08",
+            "p2": "6,06",
+            "p3": "6,07",
+            "p4": "6,05",
+            "nombre": 6.062,
+            "rang": 2,
+            "resultat_exploitable": "303/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,335, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "7,34",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "7,35",
+            "p2": "7,32",
+            "p3": "7,33",
+            "p4": "7,34",
+            "nombre": 7.335,
+            "rang": 2,
+            "resultat_exploitable": "367/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,508, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "1,51",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "1,51",
+            "p2": "1,49",
+            "p3": "1,52",
+            "p4": "1,50",
+            "nombre": 1.508,
+            "rang": 2,
+            "resultat_exploitable": "151/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,872, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "2,87",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "2,87",
+            "p2": "2,86",
+            "p3": "2,89",
+            "p4": "2,88",
+            "nombre": 2.872,
+            "rang": 2,
+            "resultat_exploitable": "287/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,145, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "4,15",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "4,16",
+            "p2": "4,15",
+            "p3": "4,13",
+            "p4": "4,14",
+            "nombre": 4.145,
+            "rang": 2,
+            "resultat_exploitable": "83/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,418, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "5,42",
+            "correction": "Le millième est 8 : le centième augmente de 1.",
+            "p1": "5,41",
+            "p2": "5,43",
+            "p3": "5,40",
+            "p4": "5,42",
+            "nombre": 5.418,
+            "rang": 2,
+            "resultat_exploitable": "271/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,782, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "6,78",
+            "correction": "Le millième est 2 : le centième reste inchangé.",
+            "p1": "6,79",
+            "p2": "6,77",
+            "p3": "6,78",
+            "p4": "6,80",
+            "nombre": 6.782,
+            "rang": 2,
+            "resultat_exploitable": "339/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 8,055, quelle est la valeur obtenue par arrondi au plus proche au centième ?",
+            "reponse": "8,06",
+            "correction": "Le millième est 5 : le centième augmente de 1.",
+            "p1": "8,04",
+            "p2": "8,06",
+            "p3": "8,07",
+            "p4": "8,05",
+            "nombre": 8.055,
+            "rang": 2,
+            "resultat_exploitable": "403/50"
+          }
+        }
+      ],
+      "enonce_exploitable": "floor(nombre * 10^rang + 0.5) / 10^rang",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-PROCEDES-002",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_numeration",
+        "nombre": "[[nombre]]",
+        "rang": "[[rang]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour 1,122, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,12",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,14",
+            "p2": "1,13",
+            "p3": "1,11",
+            "p4": "1,12",
+            "nombre": 1.122,
+            "rang": 2,
+            "resultat_exploitable": "28/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,495, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,49",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,48",
+            "p2": "2,50",
+            "p3": "2,51",
+            "p4": "2,49",
+            "nombre": 2.495,
+            "rang": 2,
+            "resultat_exploitable": "249/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,768, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,76",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,78",
+            "p2": "3,77",
+            "p3": "3,76",
+            "p4": "3,75",
+            "nombre": 3.768,
+            "rang": 2,
+            "resultat_exploitable": "94/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,032, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,03",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,05",
+            "p2": "5,03",
+            "p3": "5,04",
+            "p4": "5,02",
+            "nombre": 5.032,
+            "rang": 2,
+            "resultat_exploitable": "503/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,305, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "6,30",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,32",
+            "p2": "6,29",
+            "p3": "6,31",
+            "p4": "6,30",
+            "nombre": 6.305,
+            "rang": 2,
+            "resultat_exploitable": "63/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,678, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,67",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,68",
+            "p2": "7,67",
+            "p3": "7,66",
+            "p4": "7,69",
+            "nombre": 7.678,
+            "rang": 2,
+            "resultat_exploitable": "767/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,842, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,84",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,86",
+            "p2": "1,83",
+            "p3": "1,85",
+            "p4": "1,84",
+            "nombre": 1.842,
+            "rang": 2,
+            "resultat_exploitable": "46/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,115, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,11",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,10",
+            "p2": "3,12",
+            "p3": "3,11",
+            "p4": "3,13",
+            "nombre": 3.115,
+            "rang": 2,
+            "resultat_exploitable": "311/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,488, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "4,48",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "4,48",
+            "p2": "4,50",
+            "p3": "4,49",
+            "p4": "4,47",
+            "nombre": 4.488,
+            "rang": 2,
+            "resultat_exploitable": "112/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,752, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,75",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,74",
+            "p2": "5,76",
+            "p3": "5,75",
+            "p4": "5,77",
+            "nombre": 5.752,
+            "rang": 2,
+            "resultat_exploitable": "23/4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,025, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,02",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,03",
+            "p2": "7,02",
+            "p3": "7,01",
+            "p4": "7,04",
+            "nombre": 7.025,
+            "rang": 2,
+            "resultat_exploitable": "351/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,298, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,29",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,28",
+            "p2": "1,31",
+            "p3": "1,29",
+            "p4": "1,30",
+            "nombre": 1.298,
+            "rang": 2,
+            "resultat_exploitable": "129/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,562, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,56",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,57",
+            "p2": "2,56",
+            "p3": "2,55",
+            "p4": "2,58",
+            "nombre": 2.562,
+            "rang": 2,
+            "resultat_exploitable": "64/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,835, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,83",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,84",
+            "p2": "3,82",
+            "p3": "3,83",
+            "p4": "3,85",
+            "nombre": 3.835,
+            "rang": 2,
+            "resultat_exploitable": "383/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,108, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,10",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,12",
+            "p2": "5,10",
+            "p3": "5,09",
+            "p4": "5,11",
+            "nombre": 5.108,
+            "rang": 2,
+            "resultat_exploitable": "51/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,472, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "6,47",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,47",
+            "p2": "6,49",
+            "p3": "6,48",
+            "p4": "6,46",
+            "nombre": 6.472,
+            "rang": 2,
+            "resultat_exploitable": "647/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,745, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,74",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,75",
+            "p2": "7,74",
+            "p3": "7,73",
+            "p4": "7,76",
+            "nombre": 7.745,
+            "rang": 2,
+            "resultat_exploitable": "387/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,918, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,91",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,92",
+            "p2": "1,93",
+            "p3": "1,90",
+            "p4": "1,91",
+            "nombre": 1.918,
+            "rang": 2,
+            "resultat_exploitable": "191/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,282, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,28",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,30",
+            "p2": "3,28",
+            "p3": "3,29",
+            "p4": "3,27",
+            "nombre": 3.282,
+            "rang": 2,
+            "resultat_exploitable": "82/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,555, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "4,55",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "4,55",
+            "p2": "4,54",
+            "p3": "4,56",
+            "p4": "4,57",
+            "nombre": 4.555,
+            "rang": 2,
+            "resultat_exploitable": "91/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,828, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,82",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,81",
+            "p2": "5,82",
+            "p3": "5,84",
+            "p4": "5,83",
+            "nombre": 5.828,
+            "rang": 2,
+            "resultat_exploitable": "291/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,192, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,19",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,21",
+            "p2": "7,19",
+            "p3": "7,20",
+            "p4": "7,18",
+            "nombre": 7.192,
+            "rang": 2,
+            "resultat_exploitable": "719/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,365, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,36",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,37",
+            "p2": "1,35",
+            "p3": "1,38",
+            "p4": "1,36",
+            "nombre": 1.365,
+            "rang": 2,
+            "resultat_exploitable": "34/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,638, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,63",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,64",
+            "p2": "2,63",
+            "p3": "2,65",
+            "p4": "2,62",
+            "nombre": 2.638,
+            "rang": 2,
+            "resultat_exploitable": "263/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,902, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,90",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,91",
+            "p2": "3,90",
+            "p3": "3,89",
+            "p4": "3,92",
+            "nombre": 3.902,
+            "rang": 2,
+            "resultat_exploitable": "39/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,275, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,27",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,27",
+            "p2": "5,26",
+            "p3": "5,28",
+            "p4": "5,29",
+            "nombre": 5.275,
+            "rang": 2,
+            "resultat_exploitable": "527/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,548, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "6,54",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,53",
+            "p2": "6,54",
+            "p3": "6,56",
+            "p4": "6,55",
+            "nombre": 6.548,
+            "rang": 2,
+            "resultat_exploitable": "327/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,812, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,81",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,82",
+            "p2": "7,81",
+            "p3": "7,83",
+            "p4": "7,80",
+            "nombre": 7.812,
+            "rang": 2,
+            "resultat_exploitable": "781/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,085, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,08",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,10",
+            "p2": "2,08",
+            "p3": "2,07",
+            "p4": "2,09",
+            "nombre": 2.085,
+            "rang": 2,
+            "resultat_exploitable": "52/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,358, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,35",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,36",
+            "p2": "3,34",
+            "p3": "3,35",
+            "p4": "3,37",
+            "nombre": 3.358,
+            "rang": 2,
+            "resultat_exploitable": "67/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,622, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "4,62",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "4,62",
+            "p2": "4,61",
+            "p3": "4,63",
+            "p4": "4,64",
+            "nombre": 4.622,
+            "rang": 2,
+            "resultat_exploitable": "231/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,995, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,99",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,00",
+            "p2": "5,98",
+            "p3": "5,99",
+            "p4": "6,01",
+            "nombre": 5.995,
+            "rang": 2,
+            "resultat_exploitable": "599/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,268, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,26",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,25",
+            "p2": "7,27",
+            "p3": "7,26",
+            "p4": "7,28",
+            "nombre": 7.268,
+            "rang": 2,
+            "resultat_exploitable": "363/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,432, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,43",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,42",
+            "p2": "1,45",
+            "p3": "1,43",
+            "p4": "1,44",
+            "nombre": 1.432,
+            "rang": 2,
+            "resultat_exploitable": "143/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,705, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,70",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,69",
+            "p2": "2,70",
+            "p3": "2,72",
+            "p4": "2,71",
+            "nombre": 2.705,
+            "rang": 2,
+            "resultat_exploitable": "27/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,078, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "4,07",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "4,09",
+            "p2": "4,06",
+            "p3": "4,07",
+            "p4": "4,08",
+            "nombre": 4.078,
+            "rang": 2,
+            "resultat_exploitable": "407/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,342, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,34",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,35",
+            "p2": "5,34",
+            "p3": "5,33",
+            "p4": "5,36",
+            "nombre": 5.342,
+            "rang": 2,
+            "resultat_exploitable": "267/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,615, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "6,61",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,61",
+            "p2": "6,62",
+            "p3": "6,60",
+            "p4": "6,63",
+            "nombre": 6.615,
+            "rang": 2,
+            "resultat_exploitable": "661/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,988, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,98",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,97",
+            "p2": "7,98",
+            "p3": "7,99",
+            "p4": "8,00",
+            "nombre": 7.988,
+            "rang": 2,
+            "resultat_exploitable": "399/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,152, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,15",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,14",
+            "p2": "2,17",
+            "p3": "2,15",
+            "p4": "2,16",
+            "nombre": 2.152,
+            "rang": 2,
+            "resultat_exploitable": "43/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,425, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "3,42",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "3,44",
+            "p2": "3,42",
+            "p3": "3,43",
+            "p4": "3,41",
+            "nombre": 3.425,
+            "rang": 2,
+            "resultat_exploitable": "171/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,798, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "4,79",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "4,81",
+            "p2": "4,80",
+            "p3": "4,79",
+            "p4": "4,78",
+            "nombre": 4.798,
+            "rang": 2,
+            "resultat_exploitable": "479/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,062, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "6,06",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,08",
+            "p2": "6,07",
+            "p3": "6,05",
+            "p4": "6,06",
+            "nombre": 6.062,
+            "rang": 2,
+            "resultat_exploitable": "303/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,335, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "7,33",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "7,33",
+            "p2": "7,35",
+            "p3": "7,32",
+            "p4": "7,34",
+            "nombre": 7.335,
+            "rang": 2,
+            "resultat_exploitable": "733/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,508, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "1,50",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "1,49",
+            "p2": "1,51",
+            "p3": "1,50",
+            "p4": "1,52",
+            "nombre": 1.508,
+            "rang": 2,
+            "resultat_exploitable": "3/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,872, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "2,87",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "2,87",
+            "p2": "2,88",
+            "p3": "2,89",
+            "p4": "2,86",
+            "nombre": 2.872,
+            "rang": 2,
+            "resultat_exploitable": "287/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,145, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "4,14",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "4,14",
+            "p2": "4,15",
+            "p3": "4,16",
+            "p4": "4,13",
+            "nombre": 4.145,
+            "rang": 2,
+            "resultat_exploitable": "207/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,418, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "5,41",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "5,40",
+            "p2": "5,42",
+            "p3": "5,41",
+            "p4": "5,43",
+            "nombre": 5.418,
+            "rang": 2,
+            "resultat_exploitable": "541/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,782, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "6,78",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "6,78",
+            "p2": "6,80",
+            "p3": "6,77",
+            "p4": "6,79",
+            "nombre": 6.782,
+            "rang": 2,
+            "resultat_exploitable": "339/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 8,055, quelle est la valeur obtenue par troncature au centième ?",
+            "reponse": "8,05",
+            "correction": "La troncature supprime le millième sans modifier les centièmes.",
+            "p1": "8,05",
+            "p2": "8,07",
+            "p3": "8,06",
+            "p4": "8,04",
+            "nombre": 8.055,
+            "rang": 2,
+            "resultat_exploitable": "161/20"
+          }
+        }
+      ],
+      "enonce_exploitable": "trunc(nombre * 10^rang) / 10^rang",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-PROCEDES-003",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_numeration",
+        "nombre": "[[nombre]]",
+        "rang": "[[rang]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour 1,122, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,13",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,13",
+            "p2": "1,11",
+            "p3": "1,14",
+            "p4": "1,12",
+            "nombre": 1.122,
+            "rang": 2,
+            "resultat_exploitable": "113/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,495, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,50",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,49",
+            "p2": "2,51",
+            "p3": "2,50",
+            "p4": "2,48",
+            "nombre": 2.495,
+            "rang": 2,
+            "resultat_exploitable": "5/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,768, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,77",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,78",
+            "p2": "3,75",
+            "p3": "3,76",
+            "p4": "3,77",
+            "nombre": 3.768,
+            "rang": 2,
+            "resultat_exploitable": "377/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,032, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,04",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,02",
+            "p2": "5,03",
+            "p3": "5,05",
+            "p4": "5,04",
+            "nombre": 5.032,
+            "rang": 2,
+            "resultat_exploitable": "126/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,305, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,31",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,29",
+            "p2": "6,30",
+            "p3": "6,31",
+            "p4": "6,32",
+            "nombre": 6.305,
+            "rang": 2,
+            "resultat_exploitable": "631/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,678, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,68",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,67",
+            "p2": "7,66",
+            "p3": "7,68",
+            "p4": "7,69",
+            "nombre": 7.678,
+            "rang": 2,
+            "resultat_exploitable": "192/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,842, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,85",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,84",
+            "p2": "1,86",
+            "p3": "1,83",
+            "p4": "1,85",
+            "nombre": 1.842,
+            "rang": 2,
+            "resultat_exploitable": "37/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,115, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,12",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,13",
+            "p2": "3,11",
+            "p3": "3,12",
+            "p4": "3,10",
+            "nombre": 3.115,
+            "rang": 2,
+            "resultat_exploitable": "78/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,488, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "4,49",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "4,50",
+            "p2": "4,49",
+            "p3": "4,47",
+            "p4": "4,48",
+            "nombre": 4.488,
+            "rang": 2,
+            "resultat_exploitable": "449/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,752, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,76",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,74",
+            "p2": "5,75",
+            "p3": "5,76",
+            "p4": "5,77",
+            "nombre": 5.752,
+            "rang": 2,
+            "resultat_exploitable": "144/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,025, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,03",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,02",
+            "p2": "7,04",
+            "p3": "7,01",
+            "p4": "7,03",
+            "nombre": 7.025,
+            "rang": 2,
+            "resultat_exploitable": "703/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,298, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,30",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,30",
+            "p2": "1,29",
+            "p3": "1,28",
+            "p4": "1,31",
+            "nombre": 1.298,
+            "rang": 2,
+            "resultat_exploitable": "13/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,562, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,57",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,55",
+            "p2": "2,56",
+            "p3": "2,58",
+            "p4": "2,57",
+            "nombre": 2.562,
+            "rang": 2,
+            "resultat_exploitable": "257/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,835, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,84",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,84",
+            "p2": "3,85",
+            "p3": "3,83",
+            "p4": "3,82",
+            "nombre": 3.835,
+            "rang": 2,
+            "resultat_exploitable": "96/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,108, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,11",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,10",
+            "p2": "5,11",
+            "p3": "5,12",
+            "p4": "5,09",
+            "nombre": 5.108,
+            "rang": 2,
+            "resultat_exploitable": "511/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,472, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,48",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,48",
+            "p2": "6,46",
+            "p3": "6,47",
+            "p4": "6,49",
+            "nombre": 6.472,
+            "rang": 2,
+            "resultat_exploitable": "162/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,745, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,75",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,75",
+            "p2": "7,73",
+            "p3": "7,74",
+            "p4": "7,76",
+            "nombre": 7.745,
+            "rang": 2,
+            "resultat_exploitable": "31/4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,918, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,92",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,92",
+            "p2": "1,93",
+            "p3": "1,90",
+            "p4": "1,91",
+            "nombre": 1.918,
+            "rang": 2,
+            "resultat_exploitable": "48/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,282, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,29",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,28",
+            "p2": "3,27",
+            "p3": "3,30",
+            "p4": "3,29",
+            "nombre": 3.282,
+            "rang": 2,
+            "resultat_exploitable": "329/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,555, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "4,56",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "4,57",
+            "p2": "4,55",
+            "p3": "4,56",
+            "p4": "4,54",
+            "nombre": 4.555,
+            "rang": 2,
+            "resultat_exploitable": "114/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,828, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,83",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,81",
+            "p2": "5,83",
+            "p3": "5,84",
+            "p4": "5,82",
+            "nombre": 5.828,
+            "rang": 2,
+            "resultat_exploitable": "583/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,192, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,20",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,18",
+            "p2": "7,19",
+            "p3": "7,21",
+            "p4": "7,20",
+            "nombre": 7.192,
+            "rang": 2,
+            "resultat_exploitable": "36/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,365, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,37",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,35",
+            "p2": "1,38",
+            "p3": "1,36",
+            "p4": "1,37",
+            "nombre": 1.365,
+            "rang": 2,
+            "resultat_exploitable": "137/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,638, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,64",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,64",
+            "p2": "2,62",
+            "p3": "2,63",
+            "p4": "2,65",
+            "nombre": 2.638,
+            "rang": 2,
+            "resultat_exploitable": "66/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,902, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,91",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,91",
+            "p2": "3,89",
+            "p3": "3,90",
+            "p4": "3,92",
+            "nombre": 3.902,
+            "rang": 2,
+            "resultat_exploitable": "391/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,275, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,28",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,26",
+            "p2": "5,28",
+            "p3": "5,29",
+            "p4": "5,27",
+            "nombre": 5.275,
+            "rang": 2,
+            "resultat_exploitable": "132/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,548, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,55",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,55",
+            "p2": "6,54",
+            "p3": "6,56",
+            "p4": "6,53",
+            "nombre": 6.548,
+            "rang": 2,
+            "resultat_exploitable": "131/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,812, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,82",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,81",
+            "p2": "7,83",
+            "p3": "7,82",
+            "p4": "7,80",
+            "nombre": 7.812,
+            "rang": 2,
+            "resultat_exploitable": "391/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,085, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,09",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,07",
+            "p2": "2,08",
+            "p3": "2,09",
+            "p4": "2,10",
+            "nombre": 2.085,
+            "rang": 2,
+            "resultat_exploitable": "209/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,358, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,36",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,36",
+            "p2": "3,34",
+            "p3": "3,37",
+            "p4": "3,35",
+            "nombre": 3.358,
+            "rang": 2,
+            "resultat_exploitable": "84/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,622, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "4,63",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "4,61",
+            "p2": "4,62",
+            "p3": "4,64",
+            "p4": "4,63",
+            "nombre": 4.622,
+            "rang": 2,
+            "resultat_exploitable": "463/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,995, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,00",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,01",
+            "p2": "5,98",
+            "p3": "6,00",
+            "p4": "5,99",
+            "nombre": 5.995,
+            "rang": 2,
+            "resultat_exploitable": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,268, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,27",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,27",
+            "p2": "7,28",
+            "p3": "7,25",
+            "p4": "7,26",
+            "nombre": 7.268,
+            "rang": 2,
+            "resultat_exploitable": "727/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,432, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,44",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,45",
+            "p2": "1,43",
+            "p3": "1,44",
+            "p4": "1,42",
+            "nombre": 1.432,
+            "rang": 2,
+            "resultat_exploitable": "36/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,705, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,71",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,70",
+            "p2": "2,69",
+            "p3": "2,72",
+            "p4": "2,71",
+            "nombre": 2.705,
+            "rang": 2,
+            "resultat_exploitable": "271/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,078, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "4,08",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "4,07",
+            "p2": "4,06",
+            "p3": "4,09",
+            "p4": "4,08",
+            "nombre": 4.078,
+            "rang": 2,
+            "resultat_exploitable": "102/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,342, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,35",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,33",
+            "p2": "5,36",
+            "p3": "5,35",
+            "p4": "5,34",
+            "nombre": 5.342,
+            "rang": 2,
+            "resultat_exploitable": "107/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,615, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,62",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,63",
+            "p2": "6,61",
+            "p3": "6,60",
+            "p4": "6,62",
+            "nombre": 6.615,
+            "rang": 2,
+            "resultat_exploitable": "331/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,988, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,99",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,99",
+            "p2": "8,00",
+            "p3": "7,97",
+            "p4": "7,98",
+            "nombre": 7.988,
+            "rang": 2,
+            "resultat_exploitable": "799/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,152, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,16",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,17",
+            "p2": "2,16",
+            "p3": "2,14",
+            "p4": "2,15",
+            "nombre": 2.152,
+            "rang": 2,
+            "resultat_exploitable": "54/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,425, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "3,43",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "3,42",
+            "p2": "3,44",
+            "p3": "3,43",
+            "p4": "3,41",
+            "nombre": 3.425,
+            "rang": 2,
+            "resultat_exploitable": "343/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,798, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "4,80",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "4,81",
+            "p2": "4,78",
+            "p3": "4,80",
+            "p4": "4,79",
+            "nombre": 4.798,
+            "rang": 2,
+            "resultat_exploitable": "24/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,062, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,07",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,07",
+            "p2": "6,08",
+            "p3": "6,06",
+            "p4": "6,05",
+            "nombre": 6.062,
+            "rang": 2,
+            "resultat_exploitable": "607/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,335, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "7,34",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "7,35",
+            "p2": "7,34",
+            "p3": "7,33",
+            "p4": "7,32",
+            "nombre": 7.335,
+            "rang": 2,
+            "resultat_exploitable": "367/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,508, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "1,51",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "1,51",
+            "p2": "1,49",
+            "p3": "1,52",
+            "p4": "1,50",
+            "nombre": 1.508,
+            "rang": 2,
+            "resultat_exploitable": "151/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,872, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "2,88",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "2,87",
+            "p2": "2,86",
+            "p3": "2,88",
+            "p4": "2,89",
+            "nombre": 2.872,
+            "rang": 2,
+            "resultat_exploitable": "72/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,145, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "4,15",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "4,16",
+            "p2": "4,15",
+            "p3": "4,14",
+            "p4": "4,13",
+            "nombre": 4.145,
+            "rang": 2,
+            "resultat_exploitable": "83/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,418, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "5,42",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "5,43",
+            "p2": "5,40",
+            "p3": "5,42",
+            "p4": "5,41",
+            "nombre": 5.418,
+            "rang": 2,
+            "resultat_exploitable": "271/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,782, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "6,79",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "6,79",
+            "p2": "6,78",
+            "p3": "6,80",
+            "p4": "6,77",
+            "nombre": 6.782,
+            "rang": 2,
+            "resultat_exploitable": "679/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 8,055, quelle est la valeur obtenue par approximation par excès au centième ?",
+            "reponse": "8,06",
+            "correction": "On choisit le plus petit centième supérieur ou égal au nombre.",
+            "p1": "8,06",
+            "p2": "8,04",
+            "p3": "8,05",
+            "p4": "8,07",
+            "nombre": 8.055,
+            "rang": 2,
+            "resultat_exploitable": "403/50"
+          }
+        }
+      ],
+      "enonce_exploitable": "ceiling(nombre * 10^rang) / 10^rang",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-PROCEDES-004",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "tableau_numeration",
+        "nombre": "[[nombre]]",
+        "rang": "[[rang]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Pour 1,122, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,12",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,11",
+            "p2": "1,13",
+            "p3": "1,14",
+            "p4": "1,12",
+            "nombre": 1.122,
+            "rang": 2,
+            "resultat_exploitable": "28/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,495, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,49",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,51",
+            "p2": "2,49",
+            "p3": "2,48",
+            "p4": "2,50",
+            "nombre": 2.495,
+            "rang": 2,
+            "resultat_exploitable": "249/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,768, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,76",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,75",
+            "p2": "3,78",
+            "p3": "3,76",
+            "p4": "3,77",
+            "nombre": 3.768,
+            "rang": 2,
+            "resultat_exploitable": "94/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,032, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,03",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,04",
+            "p2": "5,03",
+            "p3": "5,02",
+            "p4": "5,05",
+            "nombre": 5.032,
+            "rang": 2,
+            "resultat_exploitable": "503/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,305, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "6,30",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,29",
+            "p2": "6,30",
+            "p3": "6,32",
+            "p4": "6,31",
+            "nombre": 6.305,
+            "rang": 2,
+            "resultat_exploitable": "63/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,678, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,67",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,68",
+            "p2": "7,69",
+            "p3": "7,67",
+            "p4": "7,66",
+            "nombre": 7.678,
+            "rang": 2,
+            "resultat_exploitable": "767/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,842, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,84",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,83",
+            "p2": "1,86",
+            "p3": "1,85",
+            "p4": "1,84",
+            "nombre": 1.842,
+            "rang": 2,
+            "resultat_exploitable": "46/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,115, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,11",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,12",
+            "p2": "3,10",
+            "p3": "3,11",
+            "p4": "3,13",
+            "nombre": 3.115,
+            "rang": 2,
+            "resultat_exploitable": "311/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,488, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "4,48",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "4,48",
+            "p2": "4,50",
+            "p3": "4,49",
+            "p4": "4,47",
+            "nombre": 4.488,
+            "rang": 2,
+            "resultat_exploitable": "112/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,752, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,75",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,77",
+            "p2": "5,74",
+            "p3": "5,76",
+            "p4": "5,75",
+            "nombre": 5.752,
+            "rang": 2,
+            "resultat_exploitable": "23/4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,025, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,02",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,02",
+            "p2": "7,01",
+            "p3": "7,03",
+            "p4": "7,04",
+            "nombre": 7.025,
+            "rang": 2,
+            "resultat_exploitable": "351/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,298, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,29",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,28",
+            "p2": "1,30",
+            "p3": "1,31",
+            "p4": "1,29",
+            "nombre": 1.298,
+            "rang": 2,
+            "resultat_exploitable": "129/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,562, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,56",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,58",
+            "p2": "2,55",
+            "p3": "2,56",
+            "p4": "2,57",
+            "nombre": 2.562,
+            "rang": 2,
+            "resultat_exploitable": "64/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,835, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,83",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,82",
+            "p2": "3,84",
+            "p3": "3,85",
+            "p4": "3,83",
+            "nombre": 3.835,
+            "rang": 2,
+            "resultat_exploitable": "383/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,108, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,10",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,10",
+            "p2": "5,09",
+            "p3": "5,11",
+            "p4": "5,12",
+            "nombre": 5.108,
+            "rang": 2,
+            "resultat_exploitable": "51/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,472, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "6,47",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,48",
+            "p2": "6,49",
+            "p3": "6,47",
+            "p4": "6,46",
+            "nombre": 6.472,
+            "rang": 2,
+            "resultat_exploitable": "647/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,745, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,74",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,73",
+            "p2": "7,75",
+            "p3": "7,74",
+            "p4": "7,76",
+            "nombre": 7.745,
+            "rang": 2,
+            "resultat_exploitable": "387/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,918, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,91",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,93",
+            "p2": "1,92",
+            "p3": "1,91",
+            "p4": "1,90",
+            "nombre": 1.918,
+            "rang": 2,
+            "resultat_exploitable": "191/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,282, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,28",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,28",
+            "p2": "3,29",
+            "p3": "3,27",
+            "p4": "3,30",
+            "nombre": 3.282,
+            "rang": 2,
+            "resultat_exploitable": "82/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,555, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "4,55",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "4,54",
+            "p2": "4,55",
+            "p3": "4,56",
+            "p4": "4,57",
+            "nombre": 4.555,
+            "rang": 2,
+            "resultat_exploitable": "91/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,828, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,82",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,83",
+            "p2": "5,82",
+            "p3": "5,84",
+            "p4": "5,81",
+            "nombre": 5.828,
+            "rang": 2,
+            "resultat_exploitable": "291/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,192, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,19",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,19",
+            "p2": "7,20",
+            "p3": "7,18",
+            "p4": "7,21",
+            "nombre": 7.192,
+            "rang": 2,
+            "resultat_exploitable": "719/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,365, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,36",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,35",
+            "p2": "1,38",
+            "p3": "1,37",
+            "p4": "1,36",
+            "nombre": 1.365,
+            "rang": 2,
+            "resultat_exploitable": "34/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,638, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,63",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,65",
+            "p2": "2,62",
+            "p3": "2,63",
+            "p4": "2,64",
+            "nombre": 2.638,
+            "rang": 2,
+            "resultat_exploitable": "263/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,902, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,90",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,91",
+            "p2": "3,92",
+            "p3": "3,90",
+            "p4": "3,89",
+            "nombre": 3.902,
+            "rang": 2,
+            "resultat_exploitable": "39/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,275, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,27",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,27",
+            "p2": "5,28",
+            "p3": "5,29",
+            "p4": "5,26",
+            "nombre": 5.275,
+            "rang": 2,
+            "resultat_exploitable": "527/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,548, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "6,54",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,56",
+            "p2": "6,53",
+            "p3": "6,55",
+            "p4": "6,54",
+            "nombre": 6.548,
+            "rang": 2,
+            "resultat_exploitable": "327/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,812, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,81",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,83",
+            "p2": "7,80",
+            "p3": "7,82",
+            "p4": "7,81",
+            "nombre": 7.812,
+            "rang": 2,
+            "resultat_exploitable": "781/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,085, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,08",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,08",
+            "p2": "2,07",
+            "p3": "2,09",
+            "p4": "2,10",
+            "nombre": 2.085,
+            "rang": 2,
+            "resultat_exploitable": "52/25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,358, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,35",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,36",
+            "p2": "3,34",
+            "p3": "3,37",
+            "p4": "3,35",
+            "nombre": 3.358,
+            "rang": 2,
+            "resultat_exploitable": "67/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,622, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "4,62",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "4,63",
+            "p2": "4,64",
+            "p3": "4,61",
+            "p4": "4,62",
+            "nombre": 4.622,
+            "rang": 2,
+            "resultat_exploitable": "231/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,995, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,99",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,00",
+            "p2": "6,01",
+            "p3": "5,98",
+            "p4": "5,99",
+            "nombre": 5.995,
+            "rang": 2,
+            "resultat_exploitable": "599/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,268, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,26",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,27",
+            "p2": "7,28",
+            "p3": "7,26",
+            "p4": "7,25",
+            "nombre": 7.268,
+            "rang": 2,
+            "resultat_exploitable": "363/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,432, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,43",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,44",
+            "p2": "1,43",
+            "p3": "1,42",
+            "p4": "1,45",
+            "nombre": 1.432,
+            "rang": 2,
+            "resultat_exploitable": "143/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,705, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,70",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,69",
+            "p2": "2,71",
+            "p3": "2,72",
+            "p4": "2,70",
+            "nombre": 2.705,
+            "rang": 2,
+            "resultat_exploitable": "27/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,078, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "4,07",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "4,06",
+            "p2": "4,08",
+            "p3": "4,09",
+            "p4": "4,07",
+            "nombre": 4.078,
+            "rang": 2,
+            "resultat_exploitable": "407/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,342, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,34",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,36",
+            "p2": "5,35",
+            "p3": "5,33",
+            "p4": "5,34",
+            "nombre": 5.342,
+            "rang": 2,
+            "resultat_exploitable": "267/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,615, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "6,61",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,62",
+            "p2": "6,61",
+            "p3": "6,63",
+            "p4": "6,60",
+            "nombre": 6.615,
+            "rang": 2,
+            "resultat_exploitable": "661/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,988, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,98",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,99",
+            "p2": "7,97",
+            "p3": "7,98",
+            "p4": "8,00",
+            "nombre": 7.988,
+            "rang": 2,
+            "resultat_exploitable": "399/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,152, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,15",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,17",
+            "p2": "2,16",
+            "p3": "2,15",
+            "p4": "2,14",
+            "nombre": 2.152,
+            "rang": 2,
+            "resultat_exploitable": "43/20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 3,425, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "3,42",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "3,43",
+            "p2": "3,44",
+            "p3": "3,42",
+            "p4": "3,41",
+            "nombre": 3.425,
+            "rang": 2,
+            "resultat_exploitable": "171/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,798, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "4,79",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "4,78",
+            "p2": "4,80",
+            "p3": "4,81",
+            "p4": "4,79",
+            "nombre": 4.798,
+            "rang": 2,
+            "resultat_exploitable": "479/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,062, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "6,06",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,06",
+            "p2": "6,08",
+            "p3": "6,07",
+            "p4": "6,05",
+            "nombre": 6.062,
+            "rang": 2,
+            "resultat_exploitable": "303/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 7,335, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "7,33",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "7,33",
+            "p2": "7,32",
+            "p3": "7,35",
+            "p4": "7,34",
+            "nombre": 7.335,
+            "rang": 2,
+            "resultat_exploitable": "733/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 1,508, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "1,50",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "1,50",
+            "p2": "1,52",
+            "p3": "1,49",
+            "p4": "1,51",
+            "nombre": 1.508,
+            "rang": 2,
+            "resultat_exploitable": "3/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 2,872, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "2,87",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "2,87",
+            "p2": "2,88",
+            "p3": "2,86",
+            "p4": "2,89",
+            "nombre": 2.872,
+            "rang": 2,
+            "resultat_exploitable": "287/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 4,145, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "4,14",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "4,16",
+            "p2": "4,14",
+            "p3": "4,13",
+            "p4": "4,15",
+            "nombre": 4.145,
+            "rang": 2,
+            "resultat_exploitable": "207/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 5,418, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "5,41",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "5,40",
+            "p2": "5,42",
+            "p3": "5,41",
+            "p4": "5,43",
+            "nombre": 5.418,
+            "rang": 2,
+            "resultat_exploitable": "541/100"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 6,782, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "6,78",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "6,80",
+            "p2": "6,78",
+            "p3": "6,79",
+            "p4": "6,77",
+            "nombre": 6.782,
+            "rang": 2,
+            "resultat_exploitable": "339/50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Pour 8,055, quelle est la valeur obtenue par approximation par défaut au centième ?",
+            "reponse": "8,05",
+            "correction": "On choisit le plus grand centième inférieur ou égal au nombre.",
+            "p1": "8,04",
+            "p2": "8,05",
+            "p3": "8,07",
+            "p4": "8,06",
+            "nombre": 8.055,
+            "rang": 2,
+            "resultat_exploitable": "161/20"
+          }
+        }
+      ],
+      "enonce_exploitable": "floor(nombre * 10^rang) / 10^rang",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ARRONDIS_DECIMAUX-RAISONNEMENT-001",
+      "capacite": "verifier",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,00 et 2,01. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,00.",
+            "correction": "Tout nombre de cet intervalle a 2,00 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 2,1.",
+            "p2": "Son approximation par excès au centième est 2,00.",
+            "p3": "Son approximation par défaut au centième est 2,01.",
+            "p4": "Son approximation par défaut au centième est 2,00.",
+            "borne_inf": 2.0,
+            "borne_sup": 2.01,
+            "resultat_exploitable": 2.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,07 et 2,08. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,07.",
+            "correction": "Tout nombre de cet intervalle a 2,07 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 2,08.",
+            "p2": "Son approximation par défaut au centième est 2,07.",
+            "p3": "Sa troncature au dixième est 2,1.",
+            "p4": "Son approximation par excès au centième est 2,07.",
+            "borne_inf": 2.07,
+            "borne_sup": 2.08,
+            "resultat_exploitable": 2.07
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,14 et 2,15. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,14.",
+            "correction": "Tout nombre de cet intervalle a 2,14 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 2,15.",
+            "p2": "Sa troncature au dixième est 2,2.",
+            "p3": "Son approximation par défaut au centième est 2,14.",
+            "p4": "Son approximation par excès au centième est 2,14.",
+            "borne_inf": 2.14,
+            "borne_sup": 2.15,
+            "resultat_exploitable": 2.14
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,21 et 2,22. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,21.",
+            "correction": "Tout nombre de cet intervalle a 2,21 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 2,21.",
+            "p2": "Son approximation par défaut au centième est 2,21.",
+            "p3": "Sa troncature au dixième est 2,3.",
+            "p4": "Son approximation par défaut au centième est 2,22.",
+            "borne_inf": 2.21,
+            "borne_sup": 2.22,
+            "resultat_exploitable": 2.21
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,28 et 2,29. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,28.",
+            "correction": "Tout nombre de cet intervalle a 2,28 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 2,28.",
+            "p2": "Son approximation par défaut au centième est 2,28.",
+            "p3": "Sa troncature au dixième est 2,3.",
+            "p4": "Son approximation par défaut au centième est 2,29.",
+            "borne_inf": 2.28,
+            "borne_sup": 2.29,
+            "resultat_exploitable": 2.28
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,35 et 2,36. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,35.",
+            "correction": "Tout nombre de cet intervalle a 2,35 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 2,36.",
+            "p2": "Sa troncature au dixième est 2,4.",
+            "p3": "Son approximation par défaut au centième est 2,35.",
+            "p4": "Son approximation par excès au centième est 2,35.",
+            "borne_inf": 2.35,
+            "borne_sup": 2.36,
+            "resultat_exploitable": 2.35
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,42 et 2,43. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,42.",
+            "correction": "Tout nombre de cet intervalle a 2,42 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 2,42.",
+            "p2": "Son approximation par défaut au centième est 2,43.",
+            "p3": "Sa troncature au dixième est 2,5.",
+            "p4": "Son approximation par défaut au centième est 2,42.",
+            "borne_inf": 2.42,
+            "borne_sup": 2.43,
+            "resultat_exploitable": 2.42
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,49 et 2,50. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,49.",
+            "correction": "Tout nombre de cet intervalle a 2,49 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 2,50.",
+            "p2": "Son approximation par défaut au centième est 2,49.",
+            "p3": "Sa troncature au dixième est 2,5.",
+            "p4": "Son approximation par excès au centième est 2,49.",
+            "borne_inf": 2.49,
+            "borne_sup": 2.5,
+            "resultat_exploitable": 2.49
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,56 et 2,57. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,56.",
+            "correction": "Tout nombre de cet intervalle a 2,56 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 2,56.",
+            "p2": "Sa troncature au dixième est 2,6.",
+            "p3": "Son approximation par défaut au centième est 2,56.",
+            "p4": "Son approximation par défaut au centième est 2,57.",
+            "borne_inf": 2.56,
+            "borne_sup": 2.57,
+            "resultat_exploitable": 2.56
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,63 et 2,64. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,63.",
+            "correction": "Tout nombre de cet intervalle a 2,63 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 2,7.",
+            "p2": "Son approximation par défaut au centième est 2,64.",
+            "p3": "Son approximation par excès au centième est 2,63.",
+            "p4": "Son approximation par défaut au centième est 2,63.",
+            "borne_inf": 2.63,
+            "borne_sup": 2.64,
+            "resultat_exploitable": 2.63
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,70 et 2,71. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,70.",
+            "correction": "Tout nombre de cet intervalle a 2,70 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 2,8.",
+            "p2": "Son approximation par excès au centième est 2,70.",
+            "p3": "Son approximation par défaut au centième est 2,71.",
+            "p4": "Son approximation par défaut au centième est 2,70.",
+            "borne_inf": 2.7,
+            "borne_sup": 2.71,
+            "resultat_exploitable": 2.7
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,77 et 2,78. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,77.",
+            "correction": "Tout nombre de cet intervalle a 2,77 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 2,78.",
+            "p2": "Son approximation par défaut au centième est 2,77.",
+            "p3": "Son approximation par excès au centième est 2,77.",
+            "p4": "Sa troncature au dixième est 2,8.",
+            "borne_inf": 2.77,
+            "borne_sup": 2.78,
+            "resultat_exploitable": 2.77
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,84 et 2,85. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,84.",
+            "correction": "Tout nombre de cet intervalle a 2,84 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 2,9.",
+            "p2": "Son approximation par excès au centième est 2,84.",
+            "p3": "Son approximation par défaut au centième est 2,84.",
+            "p4": "Son approximation par défaut au centième est 2,85.",
+            "borne_inf": 2.84,
+            "borne_sup": 2.85,
+            "resultat_exploitable": 2.84
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,91 et 2,92. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,91.",
+            "correction": "Tout nombre de cet intervalle a 2,91 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 3,0.",
+            "p2": "Son approximation par défaut au centième est 2,91.",
+            "p3": "Son approximation par excès au centième est 2,91.",
+            "p4": "Son approximation par défaut au centième est 2,92.",
+            "borne_inf": 2.91,
+            "borne_sup": 2.92,
+            "resultat_exploitable": 2.91
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 2,98 et 2,99. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 2,98.",
+            "correction": "Tout nombre de cet intervalle a 2,98 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 3,0.",
+            "p2": "Son approximation par défaut au centième est 2,99.",
+            "p3": "Son approximation par défaut au centième est 2,98.",
+            "p4": "Son approximation par excès au centième est 2,98.",
+            "borne_inf": 2.98,
+            "borne_sup": 2.99,
+            "resultat_exploitable": 2.98
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,05 et 3,06. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,05.",
+            "correction": "Tout nombre de cet intervalle a 3,05 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 3,05.",
+            "p2": "Son approximation par excès au centième est 3,05.",
+            "p3": "Son approximation par défaut au centième est 3,06.",
+            "p4": "Sa troncature au dixième est 3,1.",
+            "borne_inf": 3.05,
+            "borne_sup": 3.06,
+            "resultat_exploitable": 3.05
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,12 et 3,13. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,12.",
+            "correction": "Tout nombre de cet intervalle a 3,12 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 3,12.",
+            "p2": "Son approximation par défaut au centième est 3,13.",
+            "p3": "Sa troncature au dixième est 3,2.",
+            "p4": "Son approximation par défaut au centième est 3,12.",
+            "borne_inf": 3.12,
+            "borne_sup": 3.13,
+            "resultat_exploitable": 3.12
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,19 et 3,20. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,19.",
+            "correction": "Tout nombre de cet intervalle a 3,19 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 3,19.",
+            "p2": "Son approximation par excès au centième est 3,19.",
+            "p3": "Sa troncature au dixième est 3,2.",
+            "p4": "Son approximation par défaut au centième est 3,20.",
+            "borne_inf": 3.19,
+            "borne_sup": 3.2,
+            "resultat_exploitable": 3.19
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,26 et 3,27. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,26.",
+            "correction": "Tout nombre de cet intervalle a 3,26 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 3,26.",
+            "p2": "Sa troncature au dixième est 3,3.",
+            "p3": "Son approximation par défaut au centième est 3,27.",
+            "p4": "Son approximation par excès au centième est 3,26.",
+            "borne_inf": 3.26,
+            "borne_sup": 3.27,
+            "resultat_exploitable": 3.26
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,33 et 3,34. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,33.",
+            "correction": "Tout nombre de cet intervalle a 3,33 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 3,33.",
+            "p2": "Son approximation par défaut au centième est 3,34.",
+            "p3": "Sa troncature au dixième est 3,4.",
+            "p4": "Son approximation par excès au centième est 3,33.",
+            "borne_inf": 3.33,
+            "borne_sup": 3.34,
+            "resultat_exploitable": 3.33
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,40 et 3,41. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,40.",
+            "correction": "Tout nombre de cet intervalle a 3,40 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 3,41.",
+            "p2": "Sa troncature au dixième est 3,5.",
+            "p3": "Son approximation par excès au centième est 3,40.",
+            "p4": "Son approximation par défaut au centième est 3,40.",
+            "borne_inf": 3.4,
+            "borne_sup": 3.41,
+            "resultat_exploitable": 3.4
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,47 et 3,48. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,47.",
+            "correction": "Tout nombre de cet intervalle a 3,47 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 3,5.",
+            "p2": "Son approximation par défaut au centième est 3,47.",
+            "p3": "Son approximation par excès au centième est 3,47.",
+            "p4": "Son approximation par défaut au centième est 3,48.",
+            "borne_inf": 3.47,
+            "borne_sup": 3.48,
+            "resultat_exploitable": 3.47
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,54 et 3,55. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,54.",
+            "correction": "Tout nombre de cet intervalle a 3,54 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 3,54.",
+            "p2": "Son approximation par défaut au centième est 3,55.",
+            "p3": "Son approximation par défaut au centième est 3,54.",
+            "p4": "Sa troncature au dixième est 3,6.",
+            "borne_inf": 3.54,
+            "borne_sup": 3.55,
+            "resultat_exploitable": 3.54
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,61 et 3,62. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,61.",
+            "correction": "Tout nombre de cet intervalle a 3,61 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 3,61.",
+            "p2": "Son approximation par défaut au centième est 3,62.",
+            "p3": "Son approximation par défaut au centième est 3,61.",
+            "p4": "Sa troncature au dixième est 3,7.",
+            "borne_inf": 3.61,
+            "borne_sup": 3.62,
+            "resultat_exploitable": 3.61
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,68 et 3,69. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,68.",
+            "correction": "Tout nombre de cet intervalle a 3,68 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 3,68.",
+            "p2": "Son approximation par défaut au centième est 3,68.",
+            "p3": "Sa troncature au dixième est 3,7.",
+            "p4": "Son approximation par défaut au centième est 3,69.",
+            "borne_inf": 3.68,
+            "borne_sup": 3.69,
+            "resultat_exploitable": 3.68
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,75 et 3,76. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,75.",
+            "correction": "Tout nombre de cet intervalle a 3,75 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 3,75.",
+            "p2": "Son approximation par défaut au centième est 3,76.",
+            "p3": "Son approximation par défaut au centième est 3,75.",
+            "p4": "Sa troncature au dixième est 3,8.",
+            "borne_inf": 3.75,
+            "borne_sup": 3.76,
+            "resultat_exploitable": 3.75
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,82 et 3,83. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,82.",
+            "correction": "Tout nombre de cet intervalle a 3,82 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 3,9.",
+            "p2": "Son approximation par défaut au centième est 3,83.",
+            "p3": "Son approximation par excès au centième est 3,82.",
+            "p4": "Son approximation par défaut au centième est 3,82.",
+            "borne_inf": 3.82,
+            "borne_sup": 3.83,
+            "resultat_exploitable": 3.82
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,89 et 3,90. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,89.",
+            "correction": "Tout nombre de cet intervalle a 3,89 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 3,89.",
+            "p2": "Son approximation par défaut au centième est 3,90.",
+            "p3": "Sa troncature au dixième est 3,9.",
+            "p4": "Son approximation par défaut au centième est 3,89.",
+            "borne_inf": 3.89,
+            "borne_sup": 3.9,
+            "resultat_exploitable": 3.89
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 3,96 et 3,97. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 3,96.",
+            "correction": "Tout nombre de cet intervalle a 3,96 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 3,97.",
+            "p2": "Son approximation par excès au centième est 3,96.",
+            "p3": "Sa troncature au dixième est 4,0.",
+            "p4": "Son approximation par défaut au centième est 3,96.",
+            "borne_inf": 3.96,
+            "borne_sup": 3.97,
+            "resultat_exploitable": 3.96
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,03 et 4,04. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,03.",
+            "correction": "Tout nombre de cet intervalle a 4,03 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 4,04.",
+            "p2": "Son approximation par excès au centième est 4,03.",
+            "p3": "Sa troncature au dixième est 4,1.",
+            "p4": "Son approximation par défaut au centième est 4,03.",
+            "borne_inf": 4.03,
+            "borne_sup": 4.04,
+            "resultat_exploitable": 4.03
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,10 et 4,11. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,10.",
+            "correction": "Tout nombre de cet intervalle a 4,10 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 4,10.",
+            "p2": "Sa troncature au dixième est 4,2.",
+            "p3": "Son approximation par défaut au centième est 4,10.",
+            "p4": "Son approximation par défaut au centième est 4,11.",
+            "borne_inf": 4.1,
+            "borne_sup": 4.11,
+            "resultat_exploitable": 4.1
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,17 et 4,18. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,17.",
+            "correction": "Tout nombre de cet intervalle a 4,17 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 4,18.",
+            "p2": "Son approximation par défaut au centième est 4,17.",
+            "p3": "Sa troncature au dixième est 4,2.",
+            "p4": "Son approximation par excès au centième est 4,17.",
+            "borne_inf": 4.17,
+            "borne_sup": 4.18,
+            "resultat_exploitable": 4.17
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,24 et 4,25. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,24.",
+            "correction": "Tout nombre de cet intervalle a 4,24 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 4,24.",
+            "p2": "Sa troncature au dixième est 4,3.",
+            "p3": "Son approximation par défaut au centième est 4,25.",
+            "p4": "Son approximation par excès au centième est 4,24.",
+            "borne_inf": 4.24,
+            "borne_sup": 4.25,
+            "resultat_exploitable": 4.24
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,31 et 4,32. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,31.",
+            "correction": "Tout nombre de cet intervalle a 4,31 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 4,31.",
+            "p2": "Son approximation par défaut au centième est 4,31.",
+            "p3": "Son approximation par défaut au centième est 4,32.",
+            "p4": "Sa troncature au dixième est 4,4.",
+            "borne_inf": 4.31,
+            "borne_sup": 4.32,
+            "resultat_exploitable": 4.31
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,38 et 4,39. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,38.",
+            "correction": "Tout nombre de cet intervalle a 4,38 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 4,38.",
+            "p2": "Son approximation par défaut au centième est 4,38.",
+            "p3": "Son approximation par défaut au centième est 4,39.",
+            "p4": "Sa troncature au dixième est 4,4.",
+            "borne_inf": 4.38,
+            "borne_sup": 4.39,
+            "resultat_exploitable": 4.38
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,45 et 4,46. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,45.",
+            "correction": "Tout nombre de cet intervalle a 4,45 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 4,5.",
+            "p2": "Son approximation par défaut au centième est 4,45.",
+            "p3": "Son approximation par défaut au centième est 4,46.",
+            "p4": "Son approximation par excès au centième est 4,45.",
+            "borne_inf": 4.45,
+            "borne_sup": 4.46,
+            "resultat_exploitable": 4.45
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,52 et 4,53. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,52.",
+            "correction": "Tout nombre de cet intervalle a 4,52 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 4,6.",
+            "p2": "Son approximation par défaut au centième est 4,53.",
+            "p3": "Son approximation par défaut au centième est 4,52.",
+            "p4": "Son approximation par excès au centième est 4,52.",
+            "borne_inf": 4.52,
+            "borne_sup": 4.53,
+            "resultat_exploitable": 4.52
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,59 et 4,60. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,59.",
+            "correction": "Tout nombre de cet intervalle a 4,59 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 4,60.",
+            "p2": "Son approximation par défaut au centième est 4,59.",
+            "p3": "Sa troncature au dixième est 4,6.",
+            "p4": "Son approximation par excès au centième est 4,59.",
+            "borne_inf": 4.59,
+            "borne_sup": 4.6,
+            "resultat_exploitable": 4.59
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,66 et 4,67. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,66.",
+            "correction": "Tout nombre de cet intervalle a 4,66 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 4,67.",
+            "p2": "Son approximation par défaut au centième est 4,66.",
+            "p3": "Son approximation par excès au centième est 4,66.",
+            "p4": "Sa troncature au dixième est 4,7.",
+            "borne_inf": 4.66,
+            "borne_sup": 4.67,
+            "resultat_exploitable": 4.66
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,73 et 4,74. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,73.",
+            "correction": "Tout nombre de cet intervalle a 4,73 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 4,73.",
+            "p2": "Sa troncature au dixième est 4,8.",
+            "p3": "Son approximation par défaut au centième est 4,74.",
+            "p4": "Son approximation par défaut au centième est 4,73.",
+            "borne_inf": 4.73,
+            "borne_sup": 4.74,
+            "resultat_exploitable": 4.73
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,80 et 4,81. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,80.",
+            "correction": "Tout nombre de cet intervalle a 4,80 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 4,9.",
+            "p2": "Son approximation par excès au centième est 4,80.",
+            "p3": "Son approximation par défaut au centième est 4,81.",
+            "p4": "Son approximation par défaut au centième est 4,80.",
+            "borne_inf": 4.8,
+            "borne_sup": 4.81,
+            "resultat_exploitable": 4.8
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,87 et 4,88. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,87.",
+            "correction": "Tout nombre de cet intervalle a 4,87 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 4,87.",
+            "p2": "Son approximation par excès au centième est 4,87.",
+            "p3": "Son approximation par défaut au centième est 4,88.",
+            "p4": "Sa troncature au dixième est 4,9.",
+            "borne_inf": 4.87,
+            "borne_sup": 4.88,
+            "resultat_exploitable": 4.87
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 4,94 et 4,95. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 4,94.",
+            "correction": "Tout nombre de cet intervalle a 4,94 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 5,0.",
+            "p2": "Son approximation par excès au centième est 4,94.",
+            "p3": "Son approximation par défaut au centième est 4,95.",
+            "p4": "Son approximation par défaut au centième est 4,94.",
+            "borne_inf": 4.94,
+            "borne_sup": 4.95,
+            "resultat_exploitable": 4.94
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,01 et 5,02. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,01.",
+            "correction": "Tout nombre de cet intervalle a 5,01 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 5,02.",
+            "p2": "Son approximation par défaut au centième est 5,01.",
+            "p3": "Son approximation par excès au centième est 5,01.",
+            "p4": "Sa troncature au dixième est 5,1.",
+            "borne_inf": 5.01,
+            "borne_sup": 5.02,
+            "resultat_exploitable": 5.01
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,08 et 5,09. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,08.",
+            "correction": "Tout nombre de cet intervalle a 5,08 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 5,08.",
+            "p2": "Son approximation par défaut au centième est 5,09.",
+            "p3": "Sa troncature au dixième est 5,1.",
+            "p4": "Son approximation par excès au centième est 5,08.",
+            "borne_inf": 5.08,
+            "borne_sup": 5.09,
+            "resultat_exploitable": 5.08
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,15 et 5,16. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,15.",
+            "correction": "Tout nombre de cet intervalle a 5,15 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 5,2.",
+            "p2": "Son approximation par défaut au centième est 5,15.",
+            "p3": "Son approximation par excès au centième est 5,15.",
+            "p4": "Son approximation par défaut au centième est 5,16.",
+            "borne_inf": 5.15,
+            "borne_sup": 5.16,
+            "resultat_exploitable": 5.15
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,22 et 5,23. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,22.",
+            "correction": "Tout nombre de cet intervalle a 5,22 pour approximation par défaut au centième.",
+            "p1": "Sa troncature au dixième est 5,3.",
+            "p2": "Son approximation par défaut au centième est 5,22.",
+            "p3": "Son approximation par défaut au centième est 5,23.",
+            "p4": "Son approximation par excès au centième est 5,22.",
+            "borne_inf": 5.22,
+            "borne_sup": 5.23,
+            "resultat_exploitable": 5.22
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,29 et 5,30. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,29.",
+            "correction": "Tout nombre de cet intervalle a 5,29 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 5,30.",
+            "p2": "Son approximation par défaut au centième est 5,29.",
+            "p3": "Sa troncature au dixième est 5,3.",
+            "p4": "Son approximation par excès au centième est 5,29.",
+            "borne_inf": 5.29,
+            "borne_sup": 5.3,
+            "resultat_exploitable": 5.29
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,36 et 5,37. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,36.",
+            "correction": "Tout nombre de cet intervalle a 5,36 pour approximation par défaut au centième.",
+            "p1": "Son approximation par défaut au centième est 5,36.",
+            "p2": "Sa troncature au dixième est 5,4.",
+            "p3": "Son approximation par défaut au centième est 5,37.",
+            "p4": "Son approximation par excès au centième est 5,36.",
+            "borne_inf": 5.36,
+            "borne_sup": 5.37,
+            "resultat_exploitable": 5.36
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un nombre est strictement compris entre 5,43 et 5,44. Quelle affirmation est nécessairement vraie ?",
+            "reponse": "Son approximation par défaut au centième est 5,43.",
+            "correction": "Tout nombre de cet intervalle a 5,43 pour approximation par défaut au centième.",
+            "p1": "Son approximation par excès au centième est 5,43.",
+            "p2": "Sa troncature au dixième est 5,5.",
+            "p3": "Son approximation par défaut au centième est 5,43.",
+            "p4": "Son approximation par défaut au centième est 5,44.",
+            "borne_inf": 5.43,
+            "borne_sup": 5.44,
+            "resultat_exploitable": 5.43
+          }
+        }
+      ],
+      "enonce_exploitable": "floor(borne_inf * 100) / 100",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "TRANSVERSAL_DECIMAUX-COMPARAISON-ARRONDI-001",
+      "capacite": "comparer",
+      "type_question": "classique",
+      "portee": "famille",
+      "niveau": "6E",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Le nombre 10,8 est plus proche de quel entier ?",
+            "reponse": "11",
+            "correction": "10,8 est compris entre 10 et 11 et sa partie décimale vaut au moins 0,6 : il est plus proche de 11.",
+            "p1": "11",
+            "p2": "10",
+            "p3": "12",
+            "p4": "9",
+            "calcul_exploitable": "floor(10.8 + 0.5)",
+            "resultat_exploitable": "11"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 11,7 est plus proche de quel entier ?",
+            "reponse": "12",
+            "correction": "11,7 est compris entre 11 et 12 et sa partie décimale vaut au moins 0,6 : il est plus proche de 12.",
+            "p1": "12",
+            "p2": "11",
+            "p3": "13",
+            "p4": "10",
+            "calcul_exploitable": "floor(11.7 + 0.5)",
+            "resultat_exploitable": "12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 12,6 est plus proche de quel entier ?",
+            "reponse": "13",
+            "correction": "12,6 est compris entre 12 et 13 et sa partie décimale vaut au moins 0,6 : il est plus proche de 13.",
+            "p1": "13",
+            "p2": "12",
+            "p3": "14",
+            "p4": "11",
+            "calcul_exploitable": "floor(12.6 + 0.5)",
+            "resultat_exploitable": "13"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 13,9 est plus proche de quel entier ?",
+            "reponse": "14",
+            "correction": "13,9 est compris entre 13 et 14 et sa partie décimale vaut au moins 0,6 : il est plus proche de 14.",
+            "p1": "14",
+            "p2": "13",
+            "p3": "15",
+            "p4": "12",
+            "calcul_exploitable": "floor(13.9 + 0.5)",
+            "resultat_exploitable": "14"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 14,8 est plus proche de quel entier ?",
+            "reponse": "15",
+            "correction": "14,8 est compris entre 14 et 15 et sa partie décimale vaut au moins 0,6 : il est plus proche de 15.",
+            "p1": "15",
+            "p2": "14",
+            "p3": "16",
+            "p4": "13",
+            "calcul_exploitable": "floor(14.8 + 0.5)",
+            "resultat_exploitable": "15"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 15,7 est plus proche de quel entier ?",
+            "reponse": "16",
+            "correction": "15,7 est compris entre 15 et 16 et sa partie décimale vaut au moins 0,6 : il est plus proche de 16.",
+            "p1": "16",
+            "p2": "15",
+            "p3": "17",
+            "p4": "14",
+            "calcul_exploitable": "floor(15.7 + 0.5)",
+            "resultat_exploitable": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 16,6 est plus proche de quel entier ?",
+            "reponse": "17",
+            "correction": "16,6 est compris entre 16 et 17 et sa partie décimale vaut au moins 0,6 : il est plus proche de 17.",
+            "p1": "17",
+            "p2": "16",
+            "p3": "18",
+            "p4": "15",
+            "calcul_exploitable": "floor(16.6 + 0.5)",
+            "resultat_exploitable": "17"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 17,9 est plus proche de quel entier ?",
+            "reponse": "18",
+            "correction": "17,9 est compris entre 17 et 18 et sa partie décimale vaut au moins 0,6 : il est plus proche de 18.",
+            "p1": "18",
+            "p2": "17",
+            "p3": "19",
+            "p4": "16",
+            "calcul_exploitable": "floor(17.9 + 0.5)",
+            "resultat_exploitable": "18"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 18,8 est plus proche de quel entier ?",
+            "reponse": "19",
+            "correction": "18,8 est compris entre 18 et 19 et sa partie décimale vaut au moins 0,6 : il est plus proche de 19.",
+            "p1": "19",
+            "p2": "18",
+            "p3": "20",
+            "p4": "17",
+            "calcul_exploitable": "floor(18.8 + 0.5)",
+            "resultat_exploitable": "19"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 19,7 est plus proche de quel entier ?",
+            "reponse": "20",
+            "correction": "19,7 est compris entre 19 et 20 et sa partie décimale vaut au moins 0,6 : il est plus proche de 20.",
+            "p1": "20",
+            "p2": "19",
+            "p3": "21",
+            "p4": "18",
+            "calcul_exploitable": "floor(19.7 + 0.5)",
+            "resultat_exploitable": "20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 20,6 est plus proche de quel entier ?",
+            "reponse": "21",
+            "correction": "20,6 est compris entre 20 et 21 et sa partie décimale vaut au moins 0,6 : il est plus proche de 21.",
+            "p1": "21",
+            "p2": "20",
+            "p3": "22",
+            "p4": "19",
+            "calcul_exploitable": "floor(20.6 + 0.5)",
+            "resultat_exploitable": "21"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 21,9 est plus proche de quel entier ?",
+            "reponse": "22",
+            "correction": "21,9 est compris entre 21 et 22 et sa partie décimale vaut au moins 0,6 : il est plus proche de 22.",
+            "p1": "22",
+            "p2": "21",
+            "p3": "23",
+            "p4": "20",
+            "calcul_exploitable": "floor(21.9 + 0.5)",
+            "resultat_exploitable": "22"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 22,8 est plus proche de quel entier ?",
+            "reponse": "23",
+            "correction": "22,8 est compris entre 22 et 23 et sa partie décimale vaut au moins 0,6 : il est plus proche de 23.",
+            "p1": "23",
+            "p2": "22",
+            "p3": "24",
+            "p4": "21",
+            "calcul_exploitable": "floor(22.8 + 0.5)",
+            "resultat_exploitable": "23"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 23,7 est plus proche de quel entier ?",
+            "reponse": "24",
+            "correction": "23,7 est compris entre 23 et 24 et sa partie décimale vaut au moins 0,6 : il est plus proche de 24.",
+            "p1": "24",
+            "p2": "23",
+            "p3": "25",
+            "p4": "22",
+            "calcul_exploitable": "floor(23.7 + 0.5)",
+            "resultat_exploitable": "24"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 24,6 est plus proche de quel entier ?",
+            "reponse": "25",
+            "correction": "24,6 est compris entre 24 et 25 et sa partie décimale vaut au moins 0,6 : il est plus proche de 25.",
+            "p1": "25",
+            "p2": "24",
+            "p3": "26",
+            "p4": "23",
+            "calcul_exploitable": "floor(24.6 + 0.5)",
+            "resultat_exploitable": "25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 25,9 est plus proche de quel entier ?",
+            "reponse": "26",
+            "correction": "25,9 est compris entre 25 et 26 et sa partie décimale vaut au moins 0,6 : il est plus proche de 26.",
+            "p1": "26",
+            "p2": "25",
+            "p3": "27",
+            "p4": "24",
+            "calcul_exploitable": "floor(25.9 + 0.5)",
+            "resultat_exploitable": "26"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 26,8 est plus proche de quel entier ?",
+            "reponse": "27",
+            "correction": "26,8 est compris entre 26 et 27 et sa partie décimale vaut au moins 0,6 : il est plus proche de 27.",
+            "p1": "27",
+            "p2": "26",
+            "p3": "28",
+            "p4": "25",
+            "calcul_exploitable": "floor(26.8 + 0.5)",
+            "resultat_exploitable": "27"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 27,7 est plus proche de quel entier ?",
+            "reponse": "28",
+            "correction": "27,7 est compris entre 27 et 28 et sa partie décimale vaut au moins 0,6 : il est plus proche de 28.",
+            "p1": "28",
+            "p2": "27",
+            "p3": "29",
+            "p4": "26",
+            "calcul_exploitable": "floor(27.7 + 0.5)",
+            "resultat_exploitable": "28"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 28,6 est plus proche de quel entier ?",
+            "reponse": "29",
+            "correction": "28,6 est compris entre 28 et 29 et sa partie décimale vaut au moins 0,6 : il est plus proche de 29.",
+            "p1": "29",
+            "p2": "28",
+            "p3": "30",
+            "p4": "27",
+            "calcul_exploitable": "floor(28.6 + 0.5)",
+            "resultat_exploitable": "29"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 29,9 est plus proche de quel entier ?",
+            "reponse": "30",
+            "correction": "29,9 est compris entre 29 et 30 et sa partie décimale vaut au moins 0,6 : il est plus proche de 30.",
+            "p1": "30",
+            "p2": "29",
+            "p3": "31",
+            "p4": "28",
+            "calcul_exploitable": "floor(29.9 + 0.5)",
+            "resultat_exploitable": "30"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 30,8 est plus proche de quel entier ?",
+            "reponse": "31",
+            "correction": "30,8 est compris entre 30 et 31 et sa partie décimale vaut au moins 0,6 : il est plus proche de 31.",
+            "p1": "31",
+            "p2": "30",
+            "p3": "32",
+            "p4": "29",
+            "calcul_exploitable": "floor(30.8 + 0.5)",
+            "resultat_exploitable": "31"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 31,7 est plus proche de quel entier ?",
+            "reponse": "32",
+            "correction": "31,7 est compris entre 31 et 32 et sa partie décimale vaut au moins 0,6 : il est plus proche de 32.",
+            "p1": "32",
+            "p2": "31",
+            "p3": "33",
+            "p4": "30",
+            "calcul_exploitable": "floor(31.7 + 0.5)",
+            "resultat_exploitable": "32"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 32,6 est plus proche de quel entier ?",
+            "reponse": "33",
+            "correction": "32,6 est compris entre 32 et 33 et sa partie décimale vaut au moins 0,6 : il est plus proche de 33.",
+            "p1": "33",
+            "p2": "32",
+            "p3": "34",
+            "p4": "31",
+            "calcul_exploitable": "floor(32.6 + 0.5)",
+            "resultat_exploitable": "33"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 33,9 est plus proche de quel entier ?",
+            "reponse": "34",
+            "correction": "33,9 est compris entre 33 et 34 et sa partie décimale vaut au moins 0,6 : il est plus proche de 34.",
+            "p1": "34",
+            "p2": "33",
+            "p3": "35",
+            "p4": "32",
+            "calcul_exploitable": "floor(33.9 + 0.5)",
+            "resultat_exploitable": "34"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 34,8 est plus proche de quel entier ?",
+            "reponse": "35",
+            "correction": "34,8 est compris entre 34 et 35 et sa partie décimale vaut au moins 0,6 : il est plus proche de 35.",
+            "p1": "35",
+            "p2": "34",
+            "p3": "36",
+            "p4": "33",
+            "calcul_exploitable": "floor(34.8 + 0.5)",
+            "resultat_exploitable": "35"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 35,7 est plus proche de quel entier ?",
+            "reponse": "36",
+            "correction": "35,7 est compris entre 35 et 36 et sa partie décimale vaut au moins 0,6 : il est plus proche de 36.",
+            "p1": "36",
+            "p2": "35",
+            "p3": "37",
+            "p4": "34",
+            "calcul_exploitable": "floor(35.7 + 0.5)",
+            "resultat_exploitable": "36"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 36,6 est plus proche de quel entier ?",
+            "reponse": "37",
+            "correction": "36,6 est compris entre 36 et 37 et sa partie décimale vaut au moins 0,6 : il est plus proche de 37.",
+            "p1": "37",
+            "p2": "36",
+            "p3": "38",
+            "p4": "35",
+            "calcul_exploitable": "floor(36.6 + 0.5)",
+            "resultat_exploitable": "37"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 37,9 est plus proche de quel entier ?",
+            "reponse": "38",
+            "correction": "37,9 est compris entre 37 et 38 et sa partie décimale vaut au moins 0,6 : il est plus proche de 38.",
+            "p1": "38",
+            "p2": "37",
+            "p3": "39",
+            "p4": "36",
+            "calcul_exploitable": "floor(37.9 + 0.5)",
+            "resultat_exploitable": "38"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 38,8 est plus proche de quel entier ?",
+            "reponse": "39",
+            "correction": "38,8 est compris entre 38 et 39 et sa partie décimale vaut au moins 0,6 : il est plus proche de 39.",
+            "p1": "39",
+            "p2": "38",
+            "p3": "40",
+            "p4": "37",
+            "calcul_exploitable": "floor(38.8 + 0.5)",
+            "resultat_exploitable": "39"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 39,7 est plus proche de quel entier ?",
+            "reponse": "40",
+            "correction": "39,7 est compris entre 39 et 40 et sa partie décimale vaut au moins 0,6 : il est plus proche de 40.",
+            "p1": "40",
+            "p2": "39",
+            "p3": "41",
+            "p4": "38",
+            "calcul_exploitable": "floor(39.7 + 0.5)",
+            "resultat_exploitable": "40"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 40,6 est plus proche de quel entier ?",
+            "reponse": "41",
+            "correction": "40,6 est compris entre 40 et 41 et sa partie décimale vaut au moins 0,6 : il est plus proche de 41.",
+            "p1": "41",
+            "p2": "40",
+            "p3": "42",
+            "p4": "39",
+            "calcul_exploitable": "floor(40.6 + 0.5)",
+            "resultat_exploitable": "41"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 41,9 est plus proche de quel entier ?",
+            "reponse": "42",
+            "correction": "41,9 est compris entre 41 et 42 et sa partie décimale vaut au moins 0,6 : il est plus proche de 42.",
+            "p1": "42",
+            "p2": "41",
+            "p3": "43",
+            "p4": "40",
+            "calcul_exploitable": "floor(41.9 + 0.5)",
+            "resultat_exploitable": "42"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 42,8 est plus proche de quel entier ?",
+            "reponse": "43",
+            "correction": "42,8 est compris entre 42 et 43 et sa partie décimale vaut au moins 0,6 : il est plus proche de 43.",
+            "p1": "43",
+            "p2": "42",
+            "p3": "44",
+            "p4": "41",
+            "calcul_exploitable": "floor(42.8 + 0.5)",
+            "resultat_exploitable": "43"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 43,7 est plus proche de quel entier ?",
+            "reponse": "44",
+            "correction": "43,7 est compris entre 43 et 44 et sa partie décimale vaut au moins 0,6 : il est plus proche de 44.",
+            "p1": "44",
+            "p2": "43",
+            "p3": "45",
+            "p4": "42",
+            "calcul_exploitable": "floor(43.7 + 0.5)",
+            "resultat_exploitable": "44"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 44,6 est plus proche de quel entier ?",
+            "reponse": "45",
+            "correction": "44,6 est compris entre 44 et 45 et sa partie décimale vaut au moins 0,6 : il est plus proche de 45.",
+            "p1": "45",
+            "p2": "44",
+            "p3": "46",
+            "p4": "43",
+            "calcul_exploitable": "floor(44.6 + 0.5)",
+            "resultat_exploitable": "45"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 45,9 est plus proche de quel entier ?",
+            "reponse": "46",
+            "correction": "45,9 est compris entre 45 et 46 et sa partie décimale vaut au moins 0,6 : il est plus proche de 46.",
+            "p1": "46",
+            "p2": "45",
+            "p3": "47",
+            "p4": "44",
+            "calcul_exploitable": "floor(45.9 + 0.5)",
+            "resultat_exploitable": "46"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 46,8 est plus proche de quel entier ?",
+            "reponse": "47",
+            "correction": "46,8 est compris entre 46 et 47 et sa partie décimale vaut au moins 0,6 : il est plus proche de 47.",
+            "p1": "47",
+            "p2": "46",
+            "p3": "48",
+            "p4": "45",
+            "calcul_exploitable": "floor(46.8 + 0.5)",
+            "resultat_exploitable": "47"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 47,7 est plus proche de quel entier ?",
+            "reponse": "48",
+            "correction": "47,7 est compris entre 47 et 48 et sa partie décimale vaut au moins 0,6 : il est plus proche de 48.",
+            "p1": "48",
+            "p2": "47",
+            "p3": "49",
+            "p4": "46",
+            "calcul_exploitable": "floor(47.7 + 0.5)",
+            "resultat_exploitable": "48"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 48,6 est plus proche de quel entier ?",
+            "reponse": "49",
+            "correction": "48,6 est compris entre 48 et 49 et sa partie décimale vaut au moins 0,6 : il est plus proche de 49.",
+            "p1": "49",
+            "p2": "48",
+            "p3": "50",
+            "p4": "47",
+            "calcul_exploitable": "floor(48.6 + 0.5)",
+            "resultat_exploitable": "49"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 49,9 est plus proche de quel entier ?",
+            "reponse": "50",
+            "correction": "49,9 est compris entre 49 et 50 et sa partie décimale vaut au moins 0,6 : il est plus proche de 50.",
+            "p1": "50",
+            "p2": "49",
+            "p3": "51",
+            "p4": "48",
+            "calcul_exploitable": "floor(49.9 + 0.5)",
+            "resultat_exploitable": "50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 50,8 est plus proche de quel entier ?",
+            "reponse": "51",
+            "correction": "50,8 est compris entre 50 et 51 et sa partie décimale vaut au moins 0,6 : il est plus proche de 51.",
+            "p1": "51",
+            "p2": "50",
+            "p3": "52",
+            "p4": "49",
+            "calcul_exploitable": "floor(50.8 + 0.5)",
+            "resultat_exploitable": "51"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 51,7 est plus proche de quel entier ?",
+            "reponse": "52",
+            "correction": "51,7 est compris entre 51 et 52 et sa partie décimale vaut au moins 0,6 : il est plus proche de 52.",
+            "p1": "52",
+            "p2": "51",
+            "p3": "53",
+            "p4": "50",
+            "calcul_exploitable": "floor(51.7 + 0.5)",
+            "resultat_exploitable": "52"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 52,6 est plus proche de quel entier ?",
+            "reponse": "53",
+            "correction": "52,6 est compris entre 52 et 53 et sa partie décimale vaut au moins 0,6 : il est plus proche de 53.",
+            "p1": "53",
+            "p2": "52",
+            "p3": "54",
+            "p4": "51",
+            "calcul_exploitable": "floor(52.6 + 0.5)",
+            "resultat_exploitable": "53"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 53,9 est plus proche de quel entier ?",
+            "reponse": "54",
+            "correction": "53,9 est compris entre 53 et 54 et sa partie décimale vaut au moins 0,6 : il est plus proche de 54.",
+            "p1": "54",
+            "p2": "53",
+            "p3": "55",
+            "p4": "52",
+            "calcul_exploitable": "floor(53.9 + 0.5)",
+            "resultat_exploitable": "54"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 54,8 est plus proche de quel entier ?",
+            "reponse": "55",
+            "correction": "54,8 est compris entre 54 et 55 et sa partie décimale vaut au moins 0,6 : il est plus proche de 55.",
+            "p1": "55",
+            "p2": "54",
+            "p3": "56",
+            "p4": "53",
+            "calcul_exploitable": "floor(54.8 + 0.5)",
+            "resultat_exploitable": "55"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 55,7 est plus proche de quel entier ?",
+            "reponse": "56",
+            "correction": "55,7 est compris entre 55 et 56 et sa partie décimale vaut au moins 0,6 : il est plus proche de 56.",
+            "p1": "56",
+            "p2": "55",
+            "p3": "57",
+            "p4": "54",
+            "calcul_exploitable": "floor(55.7 + 0.5)",
+            "resultat_exploitable": "56"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 56,6 est plus proche de quel entier ?",
+            "reponse": "57",
+            "correction": "56,6 est compris entre 56 et 57 et sa partie décimale vaut au moins 0,6 : il est plus proche de 57.",
+            "p1": "57",
+            "p2": "56",
+            "p3": "58",
+            "p4": "55",
+            "calcul_exploitable": "floor(56.6 + 0.5)",
+            "resultat_exploitable": "57"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 57,9 est plus proche de quel entier ?",
+            "reponse": "58",
+            "correction": "57,9 est compris entre 57 et 58 et sa partie décimale vaut au moins 0,6 : il est plus proche de 58.",
+            "p1": "58",
+            "p2": "57",
+            "p3": "59",
+            "p4": "56",
+            "calcul_exploitable": "floor(57.9 + 0.5)",
+            "resultat_exploitable": "58"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 58,8 est plus proche de quel entier ?",
+            "reponse": "59",
+            "correction": "58,8 est compris entre 58 et 59 et sa partie décimale vaut au moins 0,6 : il est plus proche de 59.",
+            "p1": "59",
+            "p2": "58",
+            "p3": "60",
+            "p4": "57",
+            "calcul_exploitable": "floor(58.8 + 0.5)",
+            "resultat_exploitable": "59"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le nombre 59,7 est plus proche de quel entier ?",
+            "reponse": "60",
+            "correction": "59,7 est compris entre 59 et 60 et sa partie décimale vaut au moins 0,6 : il est plus proche de 60.",
+            "p1": "60",
+            "p2": "59",
+            "p3": "61",
+            "p4": "58",
+            "calcul_exploitable": "floor(59.7 + 0.5)",
+            "resultat_exploitable": "60"
+          }
+        }
+      ],
+      "liens_notions": "comparaison, arrondi",
+      "demarche": "Comparer un nombre puis choisir son arrondi à l’entier.",
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "TRANSVERSAL_DECIMAUX-ERREUR-ARRONDI-001",
+      "capacite": "comparer",
+      "type_question": "classique",
+      "portee": "famille",
+      "niveau": "6E",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 4,1 s’arrondit à 5 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "4",
+            "correction": "La distance à 4 est 1/10, inférieure à la distance à 5 (9/10).",
+            "p1": "4",
+            "p2": "5",
+            "p3": "6",
+            "p4": "3",
+            "calcul_exploitable": "floor(4.1 + 0.5)",
+            "resultat_exploitable": "4"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 5,2 s’arrondit à 6 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "5",
+            "correction": "La distance à 5 est 2/10, inférieure à la distance à 6 (8/10).",
+            "p1": "5",
+            "p2": "6",
+            "p3": "7",
+            "p4": "4",
+            "calcul_exploitable": "floor(5.2 + 0.5)",
+            "resultat_exploitable": "5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 6,3 s’arrondit à 7 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "6",
+            "correction": "La distance à 6 est 3/10, inférieure à la distance à 7 (7/10).",
+            "p1": "6",
+            "p2": "7",
+            "p3": "8",
+            "p4": "5",
+            "calcul_exploitable": "floor(6.3 + 0.5)",
+            "resultat_exploitable": "6"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 7,4 s’arrondit à 8 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "7",
+            "correction": "La distance à 7 est 4/10, inférieure à la distance à 8 (6/10).",
+            "p1": "7",
+            "p2": "8",
+            "p3": "9",
+            "p4": "6",
+            "calcul_exploitable": "floor(7.4 + 0.5)",
+            "resultat_exploitable": "7"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 8,1 s’arrondit à 9 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "8",
+            "correction": "La distance à 8 est 1/10, inférieure à la distance à 9 (9/10).",
+            "p1": "8",
+            "p2": "9",
+            "p3": "10",
+            "p4": "7",
+            "calcul_exploitable": "floor(8.1 + 0.5)",
+            "resultat_exploitable": "8"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 9,2 s’arrondit à 10 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "9",
+            "correction": "La distance à 9 est 2/10, inférieure à la distance à 10 (8/10).",
+            "p1": "9",
+            "p2": "10",
+            "p3": "11",
+            "p4": "8",
+            "calcul_exploitable": "floor(9.2 + 0.5)",
+            "resultat_exploitable": "9"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 10,3 s’arrondit à 11 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "10",
+            "correction": "La distance à 10 est 3/10, inférieure à la distance à 11 (7/10).",
+            "p1": "10",
+            "p2": "11",
+            "p3": "12",
+            "p4": "9",
+            "calcul_exploitable": "floor(10.3 + 0.5)",
+            "resultat_exploitable": "10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 11,4 s’arrondit à 12 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "11",
+            "correction": "La distance à 11 est 4/10, inférieure à la distance à 12 (6/10).",
+            "p1": "11",
+            "p2": "12",
+            "p3": "13",
+            "p4": "10",
+            "calcul_exploitable": "floor(11.4 + 0.5)",
+            "resultat_exploitable": "11"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 12,1 s’arrondit à 13 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "12",
+            "correction": "La distance à 12 est 1/10, inférieure à la distance à 13 (9/10).",
+            "p1": "12",
+            "p2": "13",
+            "p3": "14",
+            "p4": "11",
+            "calcul_exploitable": "floor(12.1 + 0.5)",
+            "resultat_exploitable": "12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 13,2 s’arrondit à 14 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "13",
+            "correction": "La distance à 13 est 2/10, inférieure à la distance à 14 (8/10).",
+            "p1": "13",
+            "p2": "14",
+            "p3": "15",
+            "p4": "12",
+            "calcul_exploitable": "floor(13.2 + 0.5)",
+            "resultat_exploitable": "13"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 14,3 s’arrondit à 15 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "14",
+            "correction": "La distance à 14 est 3/10, inférieure à la distance à 15 (7/10).",
+            "p1": "14",
+            "p2": "15",
+            "p3": "16",
+            "p4": "13",
+            "calcul_exploitable": "floor(14.3 + 0.5)",
+            "resultat_exploitable": "14"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 15,4 s’arrondit à 16 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "15",
+            "correction": "La distance à 15 est 4/10, inférieure à la distance à 16 (6/10).",
+            "p1": "15",
+            "p2": "16",
+            "p3": "17",
+            "p4": "14",
+            "calcul_exploitable": "floor(15.4 + 0.5)",
+            "resultat_exploitable": "15"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 16,1 s’arrondit à 17 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "16",
+            "correction": "La distance à 16 est 1/10, inférieure à la distance à 17 (9/10).",
+            "p1": "16",
+            "p2": "17",
+            "p3": "18",
+            "p4": "15",
+            "calcul_exploitable": "floor(16.1 + 0.5)",
+            "resultat_exploitable": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 17,2 s’arrondit à 18 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "17",
+            "correction": "La distance à 17 est 2/10, inférieure à la distance à 18 (8/10).",
+            "p1": "17",
+            "p2": "18",
+            "p3": "19",
+            "p4": "16",
+            "calcul_exploitable": "floor(17.2 + 0.5)",
+            "resultat_exploitable": "17"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 18,3 s’arrondit à 19 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "18",
+            "correction": "La distance à 18 est 3/10, inférieure à la distance à 19 (7/10).",
+            "p1": "18",
+            "p2": "19",
+            "p3": "20",
+            "p4": "17",
+            "calcul_exploitable": "floor(18.3 + 0.5)",
+            "resultat_exploitable": "18"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 19,4 s’arrondit à 20 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "19",
+            "correction": "La distance à 19 est 4/10, inférieure à la distance à 20 (6/10).",
+            "p1": "19",
+            "p2": "20",
+            "p3": "21",
+            "p4": "18",
+            "calcul_exploitable": "floor(19.4 + 0.5)",
+            "resultat_exploitable": "19"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 20,1 s’arrondit à 21 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "20",
+            "correction": "La distance à 20 est 1/10, inférieure à la distance à 21 (9/10).",
+            "p1": "20",
+            "p2": "21",
+            "p3": "22",
+            "p4": "19",
+            "calcul_exploitable": "floor(20.1 + 0.5)",
+            "resultat_exploitable": "20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 21,2 s’arrondit à 22 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "21",
+            "correction": "La distance à 21 est 2/10, inférieure à la distance à 22 (8/10).",
+            "p1": "21",
+            "p2": "22",
+            "p3": "23",
+            "p4": "20",
+            "calcul_exploitable": "floor(21.2 + 0.5)",
+            "resultat_exploitable": "21"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 22,3 s’arrondit à 23 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "22",
+            "correction": "La distance à 22 est 3/10, inférieure à la distance à 23 (7/10).",
+            "p1": "22",
+            "p2": "23",
+            "p3": "24",
+            "p4": "21",
+            "calcul_exploitable": "floor(22.3 + 0.5)",
+            "resultat_exploitable": "22"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 23,4 s’arrondit à 24 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "23",
+            "correction": "La distance à 23 est 4/10, inférieure à la distance à 24 (6/10).",
+            "p1": "23",
+            "p2": "24",
+            "p3": "25",
+            "p4": "22",
+            "calcul_exploitable": "floor(23.4 + 0.5)",
+            "resultat_exploitable": "23"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 24,1 s’arrondit à 25 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "24",
+            "correction": "La distance à 24 est 1/10, inférieure à la distance à 25 (9/10).",
+            "p1": "24",
+            "p2": "25",
+            "p3": "26",
+            "p4": "23",
+            "calcul_exploitable": "floor(24.1 + 0.5)",
+            "resultat_exploitable": "24"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 25,2 s’arrondit à 26 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "25",
+            "correction": "La distance à 25 est 2/10, inférieure à la distance à 26 (8/10).",
+            "p1": "25",
+            "p2": "26",
+            "p3": "27",
+            "p4": "24",
+            "calcul_exploitable": "floor(25.2 + 0.5)",
+            "resultat_exploitable": "25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 26,3 s’arrondit à 27 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "26",
+            "correction": "La distance à 26 est 3/10, inférieure à la distance à 27 (7/10).",
+            "p1": "26",
+            "p2": "27",
+            "p3": "28",
+            "p4": "25",
+            "calcul_exploitable": "floor(26.3 + 0.5)",
+            "resultat_exploitable": "26"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 27,4 s’arrondit à 28 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "27",
+            "correction": "La distance à 27 est 4/10, inférieure à la distance à 28 (6/10).",
+            "p1": "27",
+            "p2": "28",
+            "p3": "29",
+            "p4": "26",
+            "calcul_exploitable": "floor(27.4 + 0.5)",
+            "resultat_exploitable": "27"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 28,1 s’arrondit à 29 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "28",
+            "correction": "La distance à 28 est 1/10, inférieure à la distance à 29 (9/10).",
+            "p1": "28",
+            "p2": "29",
+            "p3": "30",
+            "p4": "27",
+            "calcul_exploitable": "floor(28.1 + 0.5)",
+            "resultat_exploitable": "28"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 29,2 s’arrondit à 30 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "29",
+            "correction": "La distance à 29 est 2/10, inférieure à la distance à 30 (8/10).",
+            "p1": "29",
+            "p2": "30",
+            "p3": "31",
+            "p4": "28",
+            "calcul_exploitable": "floor(29.2 + 0.5)",
+            "resultat_exploitable": "29"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 30,3 s’arrondit à 31 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "30",
+            "correction": "La distance à 30 est 3/10, inférieure à la distance à 31 (7/10).",
+            "p1": "30",
+            "p2": "31",
+            "p3": "32",
+            "p4": "29",
+            "calcul_exploitable": "floor(30.3 + 0.5)",
+            "resultat_exploitable": "30"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 31,4 s’arrondit à 32 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "31",
+            "correction": "La distance à 31 est 4/10, inférieure à la distance à 32 (6/10).",
+            "p1": "31",
+            "p2": "32",
+            "p3": "33",
+            "p4": "30",
+            "calcul_exploitable": "floor(31.4 + 0.5)",
+            "resultat_exploitable": "31"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 32,1 s’arrondit à 33 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "32",
+            "correction": "La distance à 32 est 1/10, inférieure à la distance à 33 (9/10).",
+            "p1": "32",
+            "p2": "33",
+            "p3": "34",
+            "p4": "31",
+            "calcul_exploitable": "floor(32.1 + 0.5)",
+            "resultat_exploitable": "32"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 33,2 s’arrondit à 34 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "33",
+            "correction": "La distance à 33 est 2/10, inférieure à la distance à 34 (8/10).",
+            "p1": "33",
+            "p2": "34",
+            "p3": "35",
+            "p4": "32",
+            "calcul_exploitable": "floor(33.2 + 0.5)",
+            "resultat_exploitable": "33"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 34,3 s’arrondit à 35 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "34",
+            "correction": "La distance à 34 est 3/10, inférieure à la distance à 35 (7/10).",
+            "p1": "34",
+            "p2": "35",
+            "p3": "36",
+            "p4": "33",
+            "calcul_exploitable": "floor(34.3 + 0.5)",
+            "resultat_exploitable": "34"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 35,4 s’arrondit à 36 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "35",
+            "correction": "La distance à 35 est 4/10, inférieure à la distance à 36 (6/10).",
+            "p1": "35",
+            "p2": "36",
+            "p3": "37",
+            "p4": "34",
+            "calcul_exploitable": "floor(35.4 + 0.5)",
+            "resultat_exploitable": "35"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 36,1 s’arrondit à 37 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "36",
+            "correction": "La distance à 36 est 1/10, inférieure à la distance à 37 (9/10).",
+            "p1": "36",
+            "p2": "37",
+            "p3": "38",
+            "p4": "35",
+            "calcul_exploitable": "floor(36.1 + 0.5)",
+            "resultat_exploitable": "36"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 37,2 s’arrondit à 38 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "37",
+            "correction": "La distance à 37 est 2/10, inférieure à la distance à 38 (8/10).",
+            "p1": "37",
+            "p2": "38",
+            "p3": "39",
+            "p4": "36",
+            "calcul_exploitable": "floor(37.2 + 0.5)",
+            "resultat_exploitable": "37"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 38,3 s’arrondit à 39 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "38",
+            "correction": "La distance à 38 est 3/10, inférieure à la distance à 39 (7/10).",
+            "p1": "38",
+            "p2": "39",
+            "p3": "40",
+            "p4": "37",
+            "calcul_exploitable": "floor(38.3 + 0.5)",
+            "resultat_exploitable": "38"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 39,4 s’arrondit à 40 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "39",
+            "correction": "La distance à 39 est 4/10, inférieure à la distance à 40 (6/10).",
+            "p1": "39",
+            "p2": "40",
+            "p3": "41",
+            "p4": "38",
+            "calcul_exploitable": "floor(39.4 + 0.5)",
+            "resultat_exploitable": "39"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 40,1 s’arrondit à 41 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "40",
+            "correction": "La distance à 40 est 1/10, inférieure à la distance à 41 (9/10).",
+            "p1": "40",
+            "p2": "41",
+            "p3": "42",
+            "p4": "39",
+            "calcul_exploitable": "floor(40.1 + 0.5)",
+            "resultat_exploitable": "40"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 41,2 s’arrondit à 42 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "41",
+            "correction": "La distance à 41 est 2/10, inférieure à la distance à 42 (8/10).",
+            "p1": "41",
+            "p2": "42",
+            "p3": "43",
+            "p4": "40",
+            "calcul_exploitable": "floor(41.2 + 0.5)",
+            "resultat_exploitable": "41"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 42,3 s’arrondit à 43 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "42",
+            "correction": "La distance à 42 est 3/10, inférieure à la distance à 43 (7/10).",
+            "p1": "42",
+            "p2": "43",
+            "p3": "44",
+            "p4": "41",
+            "calcul_exploitable": "floor(42.3 + 0.5)",
+            "resultat_exploitable": "42"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 43,4 s’arrondit à 44 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "43",
+            "correction": "La distance à 43 est 4/10, inférieure à la distance à 44 (6/10).",
+            "p1": "43",
+            "p2": "44",
+            "p3": "45",
+            "p4": "42",
+            "calcul_exploitable": "floor(43.4 + 0.5)",
+            "resultat_exploitable": "43"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 44,1 s’arrondit à 45 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "44",
+            "correction": "La distance à 44 est 1/10, inférieure à la distance à 45 (9/10).",
+            "p1": "44",
+            "p2": "45",
+            "p3": "46",
+            "p4": "43",
+            "calcul_exploitable": "floor(44.1 + 0.5)",
+            "resultat_exploitable": "44"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 45,2 s’arrondit à 46 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "45",
+            "correction": "La distance à 45 est 2/10, inférieure à la distance à 46 (8/10).",
+            "p1": "45",
+            "p2": "46",
+            "p3": "47",
+            "p4": "44",
+            "calcul_exploitable": "floor(45.2 + 0.5)",
+            "resultat_exploitable": "45"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 46,3 s’arrondit à 47 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "46",
+            "correction": "La distance à 46 est 3/10, inférieure à la distance à 47 (7/10).",
+            "p1": "46",
+            "p2": "47",
+            "p3": "48",
+            "p4": "45",
+            "calcul_exploitable": "floor(46.3 + 0.5)",
+            "resultat_exploitable": "46"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 47,4 s’arrondit à 48 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "47",
+            "correction": "La distance à 47 est 4/10, inférieure à la distance à 48 (6/10).",
+            "p1": "47",
+            "p2": "48",
+            "p3": "49",
+            "p4": "46",
+            "calcul_exploitable": "floor(47.4 + 0.5)",
+            "resultat_exploitable": "47"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 48,1 s’arrondit à 49 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "48",
+            "correction": "La distance à 48 est 1/10, inférieure à la distance à 49 (9/10).",
+            "p1": "48",
+            "p2": "49",
+            "p3": "50",
+            "p4": "47",
+            "calcul_exploitable": "floor(48.1 + 0.5)",
+            "resultat_exploitable": "48"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 49,2 s’arrondit à 50 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "49",
+            "correction": "La distance à 49 est 2/10, inférieure à la distance à 50 (8/10).",
+            "p1": "49",
+            "p2": "50",
+            "p3": "51",
+            "p4": "48",
+            "calcul_exploitable": "floor(49.2 + 0.5)",
+            "resultat_exploitable": "49"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 50,3 s’arrondit à 51 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "50",
+            "correction": "La distance à 50 est 3/10, inférieure à la distance à 51 (7/10).",
+            "p1": "50",
+            "p2": "51",
+            "p3": "52",
+            "p4": "49",
+            "calcul_exploitable": "floor(50.3 + 0.5)",
+            "resultat_exploitable": "50"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 51,4 s’arrondit à 52 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "51",
+            "correction": "La distance à 51 est 4/10, inférieure à la distance à 52 (6/10).",
+            "p1": "51",
+            "p2": "52",
+            "p3": "53",
+            "p4": "50",
+            "calcul_exploitable": "floor(51.4 + 0.5)",
+            "resultat_exploitable": "51"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 52,1 s’arrondit à 53 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "52",
+            "correction": "La distance à 52 est 1/10, inférieure à la distance à 53 (9/10).",
+            "p1": "52",
+            "p2": "53",
+            "p3": "54",
+            "p4": "51",
+            "calcul_exploitable": "floor(52.1 + 0.5)",
+            "resultat_exploitable": "52"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Lucie affirme que 53,2 s’arrondit à 54 à l’unité. Quel entier est réellement le plus proche de ce nombre ?",
+            "reponse": "53",
+            "correction": "La distance à 53 est 2/10, inférieure à la distance à 54 (8/10).",
+            "p1": "53",
+            "p2": "54",
+            "p3": "55",
+            "p4": "52",
+            "calcul_exploitable": "floor(53.2 + 0.5)",
+            "resultat_exploitable": "53"
+          }
+        }
+      ],
+      "liens_notions": "valeur de position, arrondi",
+      "demarche": "Vérifier le chiffre qui commande l’arrondi avant de juger une affirmation.",
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

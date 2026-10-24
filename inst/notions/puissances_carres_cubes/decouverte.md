@@ -1,5 +1,11 @@
 # Découvrir : Carrés et cubes
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Le **carré** d’un nombre est son produit par lui-même ; son **cube** est le produit de trois facteurs égaux à ce nombre.
+:::
+
 Une puissance permet d'écrire plus simplement certains produits répétés. En 5e, on commence par deux cas particuliers : le **carré** et le **cube**.
 
 $$a^2=a\times a,\qquad a^3=a\times a\times a.$$
@@ -14,6 +20,6 @@ Attention : $5^3$ ne signifie ni $5\times3$, ni $5+5+5$.
 
 ## Pour vérifier tes découvertes
 
-**1. Lire.** $5^2=5\times5$ et $4^3=4\times4\times4$.
+1. **Lire :** $5^2=5\times5$ et $4^3=4\times4\times4$.
 
-**2. Calculer.** $6^2=36$, $10^3=1\,000$ et $2^3+3^2=8+9=17$.
+2. **Calculer :** $6^2=36$, $10^3=1\,000$ et $2^3+3^2=8+9=17$.

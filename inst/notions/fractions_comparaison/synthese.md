@@ -1,4 +1,4 @@
-# L’essentiel : Comparer des fractions
+# L'essentiel : Comparer des fractions
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

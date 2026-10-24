@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une identité remarquable est une égalité algébrique vraie pour toutes les valeurs admises. Elle peut être utilisée pour développer ou, en sens inverse, pour factoriser.
+**Une identité remarquable** est une égalité algébrique vraie pour toutes les valeurs admises. Elle peut être utilisée pour développer ou, en sens inverse, pour factoriser.
 :::
 
 ## Principe

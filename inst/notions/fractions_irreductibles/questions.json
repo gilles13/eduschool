@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FRI-VAR-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Rends la fraction [[frac]] irréductible.",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -16,6 +17,10 @@
       "variantes": [
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 4,
+            "pgcd": 2,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{2}{4}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{4}\\)",
@@ -27,6 +32,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 6,
+            "pgcd": 2,
+            "resultat_exploitable": 0.3333333333333333,
             "frac": "\\(\\frac{2}{6}\\)",
             "bonne": "\\(\\frac{1}{3}\\)",
             "d1": "\\(\\frac{1}{6}\\)",
@@ -38,6 +47,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 8,
+            "pgcd": 2,
+            "resultat_exploitable": 0.25,
             "frac": "\\(\\frac{2}{8}\\)",
             "bonne": "\\(\\frac{1}{4}\\)",
             "d1": "\\(\\frac{1}{8}\\)",
@@ -49,6 +62,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 10,
+            "pgcd": 2,
+            "resultat_exploitable": 0.2,
             "frac": "\\(\\frac{2}{10}\\)",
             "bonne": "\\(\\frac{1}{5}\\)",
             "d1": "\\(\\frac{1}{10}\\)",
@@ -60,6 +77,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 12,
+            "pgcd": 2,
+            "resultat_exploitable": 0.16666666666666666,
             "frac": "\\(\\frac{2}{12}\\)",
             "bonne": "\\(\\frac{1}{6}\\)",
             "d1": "\\(\\frac{1}{12}\\)",
@@ -71,6 +92,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 14,
+            "pgcd": 2,
+            "resultat_exploitable": 0.14285714285714285,
             "frac": "\\(\\frac{2}{14}\\)",
             "bonne": "\\(\\frac{1}{7}\\)",
             "d1": "\\(\\frac{1}{14}\\)",
@@ -82,6 +107,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 16,
+            "pgcd": 2,
+            "resultat_exploitable": 0.125,
             "frac": "\\(\\frac{2}{16}\\)",
             "bonne": "\\(\\frac{1}{8}\\)",
             "d1": "\\(\\frac{1}{16}\\)",
@@ -93,6 +122,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 18,
+            "pgcd": 2,
+            "resultat_exploitable": 0.1111111111111111,
             "frac": "\\(\\frac{2}{18}\\)",
             "bonne": "\\(\\frac{1}{9}\\)",
             "d1": "\\(\\frac{1}{18}\\)",
@@ -104,6 +137,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 20,
+            "pgcd": 2,
+            "resultat_exploitable": 0.1,
             "frac": "\\(\\frac{2}{20}\\)",
             "bonne": "\\(\\frac{1}{10}\\)",
             "d1": "\\(\\frac{1}{20}\\)",
@@ -115,6 +152,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 22,
+            "pgcd": 2,
+            "resultat_exploitable": 0.09090909090909091,
             "frac": "\\(\\frac{2}{22}\\)",
             "bonne": "\\(\\frac{1}{11}\\)",
             "d1": "\\(\\frac{1}{22}\\)",
@@ -126,6 +167,10 @@
         },
         {
           "parametres": {
+            "numerateur": 2,
+            "denominateur": 24,
+            "pgcd": 2,
+            "resultat_exploitable": 0.08333333333333333,
             "frac": "\\(\\frac{2}{24}\\)",
             "bonne": "\\(\\frac{1}{12}\\)",
             "d1": "\\(\\frac{1}{24}\\)",
@@ -137,6 +182,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 6,
+            "pgcd": 3,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{3}{6}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{6}\\)",
@@ -148,6 +197,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 9,
+            "pgcd": 3,
+            "resultat_exploitable": 0.3333333333333333,
             "frac": "\\(\\frac{3}{9}\\)",
             "bonne": "\\(\\frac{1}{3}\\)",
             "d1": "\\(\\frac{1}{9}\\)",
@@ -159,6 +212,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 12,
+            "pgcd": 3,
+            "resultat_exploitable": 0.25,
             "frac": "\\(\\frac{3}{12}\\)",
             "bonne": "\\(\\frac{1}{4}\\)",
             "d1": "\\(\\frac{1}{12}\\)",
@@ -170,6 +227,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 15,
+            "pgcd": 3,
+            "resultat_exploitable": 0.2,
             "frac": "\\(\\frac{3}{15}\\)",
             "bonne": "\\(\\frac{1}{5}\\)",
             "d1": "\\(\\frac{1}{15}\\)",
@@ -181,6 +242,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 18,
+            "pgcd": 3,
+            "resultat_exploitable": 0.16666666666666666,
             "frac": "\\(\\frac{3}{18}\\)",
             "bonne": "\\(\\frac{1}{6}\\)",
             "d1": "\\(\\frac{1}{18}\\)",
@@ -192,6 +257,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 21,
+            "pgcd": 3,
+            "resultat_exploitable": 0.14285714285714285,
             "frac": "\\(\\frac{3}{21}\\)",
             "bonne": "\\(\\frac{1}{7}\\)",
             "d1": "\\(\\frac{1}{21}\\)",
@@ -203,6 +272,10 @@
         },
         {
           "parametres": {
+            "numerateur": 3,
+            "denominateur": 24,
+            "pgcd": 3,
+            "resultat_exploitable": 0.125,
             "frac": "\\(\\frac{3}{24}\\)",
             "bonne": "\\(\\frac{1}{8}\\)",
             "d1": "\\(\\frac{1}{24}\\)",
@@ -214,6 +287,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 6,
+            "pgcd": 2,
+            "resultat_exploitable": 0.6666666666666666,
             "frac": "\\(\\frac{4}{6}\\)",
             "bonne": "\\(\\frac{2}{3}\\)",
             "d1": "\\(\\frac{2}{6}\\)",
@@ -225,6 +302,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 8,
+            "pgcd": 4,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{4}{8}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{8}\\)",
@@ -236,6 +317,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 10,
+            "pgcd": 2,
+            "resultat_exploitable": 0.4,
             "frac": "\\(\\frac{4}{10}\\)",
             "bonne": "\\(\\frac{2}{5}\\)",
             "d1": "\\(\\frac{2}{10}\\)",
@@ -247,6 +332,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 12,
+            "pgcd": 4,
+            "resultat_exploitable": 0.3333333333333333,
             "frac": "\\(\\frac{4}{12}\\)",
             "bonne": "\\(\\frac{1}{3}\\)",
             "d1": "\\(\\frac{1}{12}\\)",
@@ -258,6 +347,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 14,
+            "pgcd": 2,
+            "resultat_exploitable": 0.2857142857142857,
             "frac": "\\(\\frac{4}{14}\\)",
             "bonne": "\\(\\frac{2}{7}\\)",
             "d1": "\\(\\frac{2}{14}\\)",
@@ -269,6 +362,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 16,
+            "pgcd": 4,
+            "resultat_exploitable": 0.25,
             "frac": "\\(\\frac{4}{16}\\)",
             "bonne": "\\(\\frac{1}{4}\\)",
             "d1": "\\(\\frac{1}{16}\\)",
@@ -280,6 +377,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 18,
+            "pgcd": 2,
+            "resultat_exploitable": 0.2222222222222222,
             "frac": "\\(\\frac{4}{18}\\)",
             "bonne": "\\(\\frac{2}{9}\\)",
             "d1": "\\(\\frac{2}{18}\\)",
@@ -291,6 +392,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 20,
+            "pgcd": 4,
+            "resultat_exploitable": 0.2,
             "frac": "\\(\\frac{4}{20}\\)",
             "bonne": "\\(\\frac{1}{5}\\)",
             "d1": "\\(\\frac{1}{20}\\)",
@@ -302,6 +407,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 22,
+            "pgcd": 2,
+            "resultat_exploitable": 0.18181818181818182,
             "frac": "\\(\\frac{4}{22}\\)",
             "bonne": "\\(\\frac{2}{11}\\)",
             "d1": "\\(\\frac{2}{22}\\)",
@@ -313,6 +422,10 @@
         },
         {
           "parametres": {
+            "numerateur": 4,
+            "denominateur": 24,
+            "pgcd": 4,
+            "resultat_exploitable": 0.16666666666666666,
             "frac": "\\(\\frac{4}{24}\\)",
             "bonne": "\\(\\frac{1}{6}\\)",
             "d1": "\\(\\frac{1}{24}\\)",
@@ -324,6 +437,10 @@
         },
         {
           "parametres": {
+            "numerateur": 5,
+            "denominateur": 10,
+            "pgcd": 5,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{5}{10}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{10}\\)",
@@ -335,6 +452,10 @@
         },
         {
           "parametres": {
+            "numerateur": 5,
+            "denominateur": 15,
+            "pgcd": 5,
+            "resultat_exploitable": 0.3333333333333333,
             "frac": "\\(\\frac{5}{15}\\)",
             "bonne": "\\(\\frac{1}{3}\\)",
             "d1": "\\(\\frac{1}{15}\\)",
@@ -346,6 +467,10 @@
         },
         {
           "parametres": {
+            "numerateur": 5,
+            "denominateur": 20,
+            "pgcd": 5,
+            "resultat_exploitable": 0.25,
             "frac": "\\(\\frac{5}{20}\\)",
             "bonne": "\\(\\frac{1}{4}\\)",
             "d1": "\\(\\frac{1}{20}\\)",
@@ -357,6 +482,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 8,
+            "pgcd": 2,
+            "resultat_exploitable": 0.75,
             "frac": "\\(\\frac{6}{8}\\)",
             "bonne": "\\(\\frac{3}{4}\\)",
             "d1": "\\(\\frac{3}{8}\\)",
@@ -368,6 +497,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 9,
+            "pgcd": 3,
+            "resultat_exploitable": 0.6666666666666666,
             "frac": "\\(\\frac{6}{9}\\)",
             "bonne": "\\(\\frac{2}{3}\\)",
             "d1": "\\(\\frac{2}{9}\\)",
@@ -379,6 +512,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 10,
+            "pgcd": 2,
+            "resultat_exploitable": 0.6,
             "frac": "\\(\\frac{6}{10}\\)",
             "bonne": "\\(\\frac{3}{5}\\)",
             "d1": "\\(\\frac{3}{10}\\)",
@@ -390,6 +527,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 12,
+            "pgcd": 6,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{6}{12}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{12}\\)",
@@ -401,6 +542,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 14,
+            "pgcd": 2,
+            "resultat_exploitable": 0.42857142857142855,
             "frac": "\\(\\frac{6}{14}\\)",
             "bonne": "\\(\\frac{3}{7}\\)",
             "d1": "\\(\\frac{3}{14}\\)",
@@ -412,6 +557,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 15,
+            "pgcd": 3,
+            "resultat_exploitable": 0.4,
             "frac": "\\(\\frac{6}{15}\\)",
             "bonne": "\\(\\frac{2}{5}\\)",
             "d1": "\\(\\frac{2}{15}\\)",
@@ -423,6 +572,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 16,
+            "pgcd": 2,
+            "resultat_exploitable": 0.375,
             "frac": "\\(\\frac{6}{16}\\)",
             "bonne": "\\(\\frac{3}{8}\\)",
             "d1": "\\(\\frac{3}{16}\\)",
@@ -434,6 +587,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 18,
+            "pgcd": 6,
+            "resultat_exploitable": 0.3333333333333333,
             "frac": "\\(\\frac{6}{18}\\)",
             "bonne": "\\(\\frac{1}{3}\\)",
             "d1": "\\(\\frac{1}{18}\\)",
@@ -445,6 +602,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 20,
+            "pgcd": 2,
+            "resultat_exploitable": 0.3,
             "frac": "\\(\\frac{6}{20}\\)",
             "bonne": "\\(\\frac{3}{10}\\)",
             "d1": "\\(\\frac{3}{20}\\)",
@@ -456,6 +617,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 21,
+            "pgcd": 3,
+            "resultat_exploitable": 0.2857142857142857,
             "frac": "\\(\\frac{6}{21}\\)",
             "bonne": "\\(\\frac{2}{7}\\)",
             "d1": "\\(\\frac{2}{21}\\)",
@@ -467,6 +632,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 22,
+            "pgcd": 2,
+            "resultat_exploitable": 0.2727272727272727,
             "frac": "\\(\\frac{6}{22}\\)",
             "bonne": "\\(\\frac{3}{11}\\)",
             "d1": "\\(\\frac{3}{22}\\)",
@@ -478,6 +647,10 @@
         },
         {
           "parametres": {
+            "numerateur": 6,
+            "denominateur": 24,
+            "pgcd": 6,
+            "resultat_exploitable": 0.25,
             "frac": "\\(\\frac{6}{24}\\)",
             "bonne": "\\(\\frac{1}{4}\\)",
             "d1": "\\(\\frac{1}{24}\\)",
@@ -489,6 +662,10 @@
         },
         {
           "parametres": {
+            "numerateur": 7,
+            "denominateur": 14,
+            "pgcd": 7,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{7}{14}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{14}\\)",
@@ -500,6 +677,10 @@
         },
         {
           "parametres": {
+            "numerateur": 7,
+            "denominateur": 21,
+            "pgcd": 7,
+            "resultat_exploitable": 0.3333333333333333,
             "frac": "\\(\\frac{7}{21}\\)",
             "bonne": "\\(\\frac{1}{3}\\)",
             "d1": "\\(\\frac{1}{21}\\)",
@@ -511,6 +692,10 @@
         },
         {
           "parametres": {
+            "numerateur": 8,
+            "denominateur": 10,
+            "pgcd": 2,
+            "resultat_exploitable": 0.8,
             "frac": "\\(\\frac{8}{10}\\)",
             "bonne": "\\(\\frac{4}{5}\\)",
             "d1": "\\(\\frac{4}{10}\\)",
@@ -522,6 +707,10 @@
         },
         {
           "parametres": {
+            "numerateur": 8,
+            "denominateur": 12,
+            "pgcd": 4,
+            "resultat_exploitable": 0.6666666666666666,
             "frac": "\\(\\frac{8}{12}\\)",
             "bonne": "\\(\\frac{2}{3}\\)",
             "d1": "\\(\\frac{2}{12}\\)",
@@ -533,6 +722,10 @@
         },
         {
           "parametres": {
+            "numerateur": 8,
+            "denominateur": 14,
+            "pgcd": 2,
+            "resultat_exploitable": 0.5714285714285714,
             "frac": "\\(\\frac{8}{14}\\)",
             "bonne": "\\(\\frac{4}{7}\\)",
             "d1": "\\(\\frac{4}{14}\\)",
@@ -544,6 +737,10 @@
         },
         {
           "parametres": {
+            "numerateur": 8,
+            "denominateur": 16,
+            "pgcd": 8,
+            "resultat_exploitable": 0.5,
             "frac": "\\(\\frac{8}{16}\\)",
             "bonne": "\\(\\frac{1}{2}\\)",
             "d1": "\\(\\frac{1}{16}\\)",
@@ -555,6 +752,10 @@
         },
         {
           "parametres": {
+            "numerateur": 8,
+            "denominateur": 18,
+            "pgcd": 2,
+            "resultat_exploitable": 0.4444444444444444,
             "frac": "\\(\\frac{8}{18}\\)",
             "bonne": "\\(\\frac{4}{9}\\)",
             "d1": "\\(\\frac{4}{18}\\)",
@@ -564,11 +765,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur / pgcd / (denominateur / pgcd)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRI-PGCD-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Pour rendre [[frac]] irréductible, par quel nombre faut-il diviser le numérateur et le dénominateur ?",
       "reponse": "[[pgcd]]",
       "propositions": [
@@ -587,7 +792,12 @@
             "pgcd": "4",
             "p1": "2",
             "p2": "3",
-            "p3": "5"
+            "p3": "5",
+            "numerateur_exploitable": 8,
+            "denominateur_exploitable": 12,
+            "pgcd_exploitable": 4,
+            "resultat_numerateur_exploitable": 2,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -599,7 +809,12 @@
             "pgcd": "5",
             "p1": "2",
             "p2": "3",
-            "p3": "4"
+            "p3": "4",
+            "numerateur_exploitable": 15,
+            "denominateur_exploitable": 25,
+            "pgcd_exploitable": 5,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -611,7 +826,12 @@
             "pgcd": "6",
             "p1": "2",
             "p2": "3",
-            "p3": "4"
+            "p3": "4",
+            "numerateur_exploitable": 18,
+            "denominateur_exploitable": 24,
+            "pgcd_exploitable": 6,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 2
         },
@@ -623,7 +843,12 @@
             "pgcd": "7",
             "p1": "2",
             "p2": "3",
-            "p3": "4"
+            "p3": "4",
+            "numerateur_exploitable": 21,
+            "denominateur_exploitable": 28,
+            "pgcd_exploitable": 7,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 2
         },
@@ -635,7 +860,12 @@
             "pgcd": "4",
             "p1": "2",
             "p2": "3",
-            "p3": "5"
+            "p3": "5",
+            "numerateur_exploitable": 16,
+            "denominateur_exploitable": 20,
+            "pgcd_exploitable": 4,
+            "resultat_numerateur_exploitable": 4,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 3
         },
@@ -647,15 +877,24 @@
             "pgcd": "9",
             "p1": "2",
             "p2": "3",
-            "p3": "4"
+            "p3": "4",
+            "numerateur_exploitable": 27,
+            "denominateur_exploitable": 36,
+            "pgcd_exploitable": 9,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur_exploitable / pgcd_exploitable",
+      "reponse_exploitable": "[[resultat_numerateur_exploitable]] / [[resultat_denominateur_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRI-BINAIRE-001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "La fraction [[frac]] est-elle déjà irréductible ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -668,7 +907,12 @@
           "parametres": {
             "frac": "\\(\\frac{3}{7}\\)",
             "bonne": "Oui",
-            "corr": "3 et 7 n’ont aucun diviseur commun autre que 1."
+            "corr": "3 et 7 n’ont aucun diviseur commun autre que 1.",
+            "numerateur_exploitable": 3,
+            "denominateur_exploitable": 7,
+            "pgcd_exploitable": 1,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -676,7 +920,12 @@
           "parametres": {
             "frac": "\\(\\frac{4}{10}\\)",
             "bonne": "Non",
-            "corr": "4 et 10 sont tous deux divisibles par 2."
+            "corr": "4 et 10 sont tous deux divisibles par 2.",
+            "numerateur_exploitable": 4,
+            "denominateur_exploitable": 10,
+            "pgcd_exploitable": 2,
+            "resultat_numerateur_exploitable": 2,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -684,7 +933,12 @@
           "parametres": {
             "frac": "\\(\\frac{5}{12}\\)",
             "bonne": "Oui",
-            "corr": "5 et 12 sont premiers entre eux."
+            "corr": "5 et 12 sont premiers entre eux.",
+            "numerateur_exploitable": 5,
+            "denominateur_exploitable": 12,
+            "pgcd_exploitable": 1,
+            "resultat_numerateur_exploitable": 5,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 2
         },
@@ -692,7 +946,12 @@
           "parametres": {
             "frac": "\\(\\frac{9}{15}\\)",
             "bonne": "Non",
-            "corr": "9 et 15 sont tous deux divisibles par 3."
+            "corr": "9 et 15 sont tous deux divisibles par 3.",
+            "numerateur_exploitable": 9,
+            "denominateur_exploitable": 15,
+            "pgcd_exploitable": 3,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 2
         },
@@ -700,7 +959,12 @@
           "parametres": {
             "frac": "\\(\\frac{7}{18}\\)",
             "bonne": "Oui",
-            "corr": "7 et 18 sont premiers entre eux."
+            "corr": "7 et 18 sont premiers entre eux.",
+            "numerateur_exploitable": 7,
+            "denominateur_exploitable": 18,
+            "pgcd_exploitable": 1,
+            "resultat_numerateur_exploitable": 7,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 3
         },
@@ -708,15 +972,24 @@
           "parametres": {
             "frac": "\\(\\frac{14}{21}\\)",
             "bonne": "Non",
-            "corr": "14 et 21 sont tous deux divisibles par 7."
+            "corr": "14 et 21 sont tous deux divisibles par 7.",
+            "numerateur_exploitable": 14,
+            "denominateur_exploitable": 21,
+            "pgcd_exploitable": 7,
+            "resultat_numerateur_exploitable": 2,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur_exploitable / pgcd_exploitable",
+      "reponse_exploitable": "[[resultat_numerateur_exploitable]] / [[resultat_denominateur_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRI-VOCAB-IRREDUCTIBLE-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on une fraction dont le numérateur et le dénominateur n’ont aucun diviseur commun supérieur à 1 ? Choisis le mot masqué correspondant.",
       "presentation": {
         "type": "mot_masque",
@@ -735,11 +1008,15 @@
         "décimale",
         "inverse"
       ],
-      "correction": "Une fraction irréductible ne peut plus être simplifiée par un entier supérieur à 1.\nSon numérateur et son dénominateur n’ont aucun diviseur commun supérieur à 1 ; leur PGCD (plus grand commun diviseur) vaut 1."
+      "correction": "Une fraction irréductible ne peut plus être simplifiée par un entier supérieur à 1.\nSon numérateur et son dénominateur n’ont aucun diviseur commun supérieur à 1 ; leur PGCD (plus grand commun diviseur) vaut 1.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "FRI-VOCAB-PGCD-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quel sigle désigne le plus grand entier qui divise exactement deux nombres ? Choisis le sigle à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -757,7 +1034,10 @@
         "PGDC",
         "PPCD"
       ],
-      "correction": "PGCD signifie « plus grand commun diviseur ».\nPour vérifier qu’une fraction est irréductible, on peut calculer le PGCD de son numérateur et de son dénominateur : s’il vaut 1, la fraction est irréductible."
+      "correction": "PGCD signifie « plus grand commun diviseur ».\nPour vérifier qu’une fraction est irréductible, on peut calculer le PGCD de son numérateur et de son dénominateur : s’il vaut 1, la fraction est irréductible.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

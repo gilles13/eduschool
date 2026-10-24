@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "RELATIFS-REPERE-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -16,6 +17,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -6,
+            "resultat_exploitable": 6,
             "enonce": "Quel nombre est l’opposé de −6 ?",
             "reponse": "6",
             "correction": "L’opposé de −6 est 6 : ces deux nombres ont la même distance à 0 et leur somme vaut 0.",
@@ -27,6 +30,8 @@
         },
         {
           "parametres": {
+            "valeur_1": -9,
+            "resultat_exploitable": 9,
             "enonce": "Quel nombre est l’opposé de −9 ?",
             "reponse": "9",
             "correction": "L’opposé de −9 est 9.",
@@ -38,6 +43,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 7,
+            "resultat_exploitable": -7,
             "enonce": "Quel nombre est l’opposé de 7 ?",
             "reponse": "−7",
             "correction": "L’opposé de 7 est −7.",
@@ -47,11 +54,15 @@
             "p4": "1/7"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "-valeur_1",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RELATIFS-REPERE-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -64,6 +75,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -8,
+            "resultat_exploitable": 8,
             "enonce": "Quelle est la valeur absolue de −8 ?",
             "reponse": "8",
             "correction": "La valeur absolue est une distance à 0. La distance entre −8 et 0 vaut 8.",
@@ -75,6 +88,8 @@
         },
         {
           "parametres": {
+            "valeur_1": -12,
+            "resultat_exploitable": 12,
             "enonce": "Quelle est la valeur absolue de −12 ?",
             "reponse": "12",
             "correction": "La valeur absolue est la distance à 0 : |−12|=12.",
@@ -86,6 +101,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 15,
+            "resultat_exploitable": 15,
             "enonce": "Quelle est la valeur absolue de 15 ?",
             "reponse": "15",
             "correction": "|15|=15.",
@@ -95,11 +112,15 @@
             "p4": "1/15"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "abs(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RELATIFS-REPERE-003",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +139,11 @@
             "p1": "−5 < −2 < 0 < 3",
             "p2": "−2 < −5 < 0 < 3",
             "p3": "3 < 0 < −2 < −5",
-            "p4": "−5 < 0 < −2 < 3"
+            "p4": "−5 < 0 < −2 < 3",
+            "n1": -5,
+            "n2": -2,
+            "n3": 0,
+            "n4": 3
           }
         },
         {
@@ -129,7 +154,11 @@
             "p1": "−8 < −3 < 0 < 4",
             "p2": "−3 < −8 < 0 < 4",
             "p3": "4 < 0 < −3 < −8",
-            "p4": "−8 < 0 < −3 < 4"
+            "p4": "−8 < 0 < −3 < 4",
+            "n1": -8,
+            "n2": -3,
+            "n3": 0,
+            "n4": 4
           }
         },
         {
@@ -140,14 +169,22 @@
             "p1": "−6 < −1 < 0 < 5",
             "p2": "−1 < −6 < 0 < 5",
             "p3": "5 < 0 < −1 < −6",
-            "p4": "−6 < 0 < −1 < 5"
+            "p4": "−6 < 0 < −1 < 5",
+            "n1": -6,
+            "n2": -1,
+            "n3": 0,
+            "n4": 5
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(n1 < n2 && n2 < n3 && n3 < n4)",
+      "reponse_exploitable": 1,
+      "moteur": "R"
     },
     {
       "id": "RELATIFS-REPERE-VOCAB-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on le nombre qui repère un point sur une droite graduée ? Choisis le mot masqué correspondant.",
       "presentation": {
         "type": "mot_masque",
@@ -166,7 +203,10 @@
         "relatif",
         "distance"
       ],
-      "correction": "Sur une droite graduée, chaque point est repéré par un nombre appelé son abscisse. Par exemple, si le point A est placé sur −3, l’abscisse de A est −3. Dans un repère, on retrouve cette idée sur l’axe horizontal, appelé axe des abscisses."
+      "correction": "Sur une droite graduée, chaque point est repéré par un nombre appelé son abscisse. Par exemple, si le point A est placé sur −3, l’abscisse de A est −3. Dans un repère, on retrouve cette idée sur l’axe horizontal, appelé axe des abscisses.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

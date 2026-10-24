@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FRAC-MIG-COMPARAISON-FRACTIONS-001",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,10 @@
             "p1": "<",
             "p2": ">",
             "p3": "=",
-            "p4": "≥"
+            "p4": "≥",
+            "a": 0.5,
+            "b": 0.6666666666666666,
+            "resultat_exploitable": -1
           },
           "progression": 1
         },
@@ -34,7 +38,10 @@
             "p1": ">",
             "p2": "<",
             "p3": "=",
-            "p4": "≥"
+            "p4": "≥",
+            "a": 0.75,
+            "b": 0.625,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -46,7 +53,10 @@
             "p1": "<",
             "p2": ">",
             "p3": "=",
-            "p4": "≥"
+            "p4": "≥",
+            "a": 0.4,
+            "b": 0.6,
+            "resultat_exploitable": -1
           },
           "progression": 1
         },
@@ -58,7 +68,10 @@
             "p1": ">",
             "p2": "<",
             "p3": "=",
-            "p4": "≥"
+            "p4": "≥",
+            "a": 0.8333333333333334,
+            "b": 0.7777777777777778,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -70,7 +83,10 @@
             "p1": "<",
             "p2": ">",
             "p3": "=",
-            "p4": "≥"
+            "p4": "≥",
+            "a": 0.42857142857142855,
+            "b": 0.4444444444444444,
+            "resultat_exploitable": -1
           },
           "progression": 1
         },
@@ -82,15 +98,22 @@
             "p1": ">",
             "p2": "<",
             "p3": "=",
-            "p4": "≥"
+            "p4": "≥",
+            "a": 0.875,
+            "b": 0.8333333333333334,
+            "resultat_exploitable": 1
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "sign(a - b)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-VAR-COMP-001",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "Quelle comparaison entre [[f1]] et [[f2]] est correcte ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -109,7 +132,10 @@
             "d1": "\\(\\frac{1}{2} > \\frac{2}{3}\\)",
             "d2": "\\(\\frac{1}{2} = \\frac{2}{3}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 1/2 = 3/6 et 2/3 = 4/6.\nJe compare les numérateurs : 3 < 4.\nDonc 1/2 < 2/3."
+            "correction": "Je mets les deux fractions au même dénominateur : 1/2 = 3/6 et 2/3 = 4/6.\nJe compare les numérateurs : 3 < 4.\nDonc 1/2 < 2/3.",
+            "a": 0.5,
+            "b": 0.6666666666666666,
+            "resultat_exploitable": -1
           },
           "progression": 1
         },
@@ -121,7 +147,10 @@
             "d1": "\\(\\frac{3}{4} < \\frac{5}{8}\\)",
             "d2": "\\(\\frac{3}{4} = \\frac{5}{8}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 3/4 = 6/8 et 5/8 = 5/8.\nJe compare les numérateurs : 6 > 5.\nDonc 3/4 > 5/8."
+            "correction": "Je mets les deux fractions au même dénominateur : 3/4 = 6/8 et 5/8 = 5/8.\nJe compare les numérateurs : 6 > 5.\nDonc 3/4 > 5/8.",
+            "a": 0.75,
+            "b": 0.625,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -133,7 +162,10 @@
             "d1": "\\(\\frac{2}{5} < \\frac{2}{5}\\)",
             "d2": "\\(\\frac{2}{5} > \\frac{2}{5}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 2/5 = 2/5 et 2/5 = 2/5.\nJe compare les numérateurs : 2 = 2.\nDonc 2/5 = 2/5."
+            "correction": "Je mets les deux fractions au même dénominateur : 2/5 = 2/5 et 2/5 = 2/5.\nJe compare les numérateurs : 2 = 2.\nDonc 2/5 = 2/5.",
+            "a": 0.4,
+            "b": 0.4,
+            "resultat_exploitable": 0
           },
           "progression": 1
         },
@@ -145,7 +177,10 @@
             "d1": "\\(\\frac{5}{6} < \\frac{7}{9}\\)",
             "d2": "\\(\\frac{5}{6} = \\frac{7}{9}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 5/6 = 45/54 et 7/9 = 42/54.\nJe compare les numérateurs : 45 > 42.\nDonc 5/6 > 7/9."
+            "correction": "Je mets les deux fractions au même dénominateur : 5/6 = 45/54 et 7/9 = 42/54.\nJe compare les numérateurs : 45 > 42.\nDonc 5/6 > 7/9.",
+            "a": 0.8333333333333334,
+            "b": 0.7777777777777778,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -157,7 +192,10 @@
             "d1": "\\(\\frac{3}{7} > \\frac{4}{9}\\)",
             "d2": "\\(\\frac{3}{7} = \\frac{4}{9}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 3/7 = 27/63 et 4/9 = 28/63.\nJe compare les numérateurs : 27 < 28.\nDonc 3/7 < 4/9."
+            "correction": "Je mets les deux fractions au même dénominateur : 3/7 = 27/63 et 4/9 = 28/63.\nJe compare les numérateurs : 27 < 28.\nDonc 3/7 < 4/9.",
+            "a": 0.42857142857142855,
+            "b": 0.4444444444444444,
+            "resultat_exploitable": -1
           },
           "progression": 1
         },
@@ -169,7 +207,10 @@
             "d1": "\\(\\frac{7}{8} < \\frac{13}{16}\\)",
             "d2": "\\(\\frac{7}{8} = \\frac{13}{16}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 7/8 = 14/16 et 13/16 = 13/16.\nJe compare les numérateurs : 14 > 13.\nDonc 7/8 > 13/16."
+            "correction": "Je mets les deux fractions au même dénominateur : 7/8 = 14/16 et 13/16 = 13/16.\nJe compare les numérateurs : 14 > 13.\nDonc 7/8 > 13/16.",
+            "a": 0.875,
+            "b": 0.8125,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -181,7 +222,10 @@
             "d1": "\\(\\frac{5}{12} < \\frac{3}{8}\\)",
             "d2": "\\(\\frac{5}{12} = \\frac{3}{8}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 5/12 = 40/96 et 3/8 = 36/96.\nJe compare les numérateurs : 40 > 36.\nDonc 5/12 > 3/8."
+            "correction": "Je mets les deux fractions au même dénominateur : 5/12 = 40/96 et 3/8 = 36/96.\nJe compare les numérateurs : 40 > 36.\nDonc 5/12 > 3/8.",
+            "a": 0.4166666666666667,
+            "b": 0.375,
+            "resultat_exploitable": 1
           },
           "progression": 2
         },
@@ -193,7 +237,10 @@
             "d1": "\\(\\frac{4}{5} > \\frac{9}{10}\\)",
             "d2": "\\(\\frac{4}{5} = \\frac{9}{10}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 4/5 = 8/10 et 9/10 = 9/10.\nJe compare les numérateurs : 8 < 9.\nDonc 4/5 < 9/10."
+            "correction": "Je mets les deux fractions au même dénominateur : 4/5 = 8/10 et 9/10 = 9/10.\nJe compare les numérateurs : 8 < 9.\nDonc 4/5 < 9/10.",
+            "a": 0.8,
+            "b": 0.9,
+            "resultat_exploitable": -1
           },
           "progression": 2
         },
@@ -205,7 +252,10 @@
             "d1": "\\(\\frac{7}{15} < \\frac{7}{15}\\)",
             "d2": "\\(\\frac{7}{15} > \\frac{7}{15}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 7/15 = 7/15 et 7/15 = 7/15.\nJe compare les numérateurs : 7 = 7.\nDonc 7/15 = 7/15."
+            "correction": "Je mets les deux fractions au même dénominateur : 7/15 = 7/15 et 7/15 = 7/15.\nJe compare les numérateurs : 7 = 7.\nDonc 7/15 = 7/15.",
+            "a": 0.4666666666666667,
+            "b": 0.4666666666666667,
+            "resultat_exploitable": 0
           },
           "progression": 2
         },
@@ -217,7 +267,10 @@
             "d1": "\\(\\frac{11}{12} < \\frac{10}{11}\\)",
             "d2": "\\(\\frac{11}{12} = \\frac{10}{11}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 11/12 = 121/132 et 10/11 = 120/132.\nJe compare les numérateurs : 121 > 120.\nDonc 11/12 > 10/11."
+            "correction": "Je mets les deux fractions au même dénominateur : 11/12 = 121/132 et 10/11 = 120/132.\nJe compare les numérateurs : 121 > 120.\nDonc 11/12 > 10/11.",
+            "a": 0.9166666666666666,
+            "b": 0.9090909090909091,
+            "resultat_exploitable": 1
           },
           "progression": 2
         },
@@ -229,7 +282,10 @@
             "d1": "\\(\\frac{5}{9} > \\frac{7}{12}\\)",
             "d2": "\\(\\frac{5}{9} = \\frac{7}{12}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 5/9 = 60/108 et 7/12 = 63/108.\nJe compare les numérateurs : 60 < 63.\nDonc 5/9 < 7/12."
+            "correction": "Je mets les deux fractions au même dénominateur : 5/9 = 60/108 et 7/12 = 63/108.\nJe compare les numérateurs : 60 < 63.\nDonc 5/9 < 7/12.",
+            "a": 0.5555555555555556,
+            "b": 0.5833333333333334,
+            "resultat_exploitable": -1
           },
           "progression": 2
         },
@@ -241,7 +297,10 @@
             "d1": "\\(\\frac{13}{20} > \\frac{2}{3}\\)",
             "d2": "\\(\\frac{13}{20} = \\frac{2}{3}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 13/20 = 39/60 et 2/3 = 40/60.\nJe compare les numérateurs : 39 < 40.\nDonc 13/20 < 2/3."
+            "correction": "Je mets les deux fractions au même dénominateur : 13/20 = 39/60 et 2/3 = 40/60.\nJe compare les numérateurs : 39 < 40.\nDonc 13/20 < 2/3.",
+            "a": 0.65,
+            "b": 0.6666666666666666,
+            "resultat_exploitable": -1
           },
           "progression": 2
         },
@@ -253,7 +312,10 @@
             "d1": "\\(\\frac{8}{15} > \\frac{5}{9}\\)",
             "d2": "\\(\\frac{8}{15} = \\frac{5}{9}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 8/15 = 72/135 et 5/9 = 75/135.\nJe compare les numérateurs : 72 < 75.\nDonc 8/15 < 5/9."
+            "correction": "Je mets les deux fractions au même dénominateur : 8/15 = 72/135 et 5/9 = 75/135.\nJe compare les numérateurs : 72 < 75.\nDonc 8/15 < 5/9.",
+            "a": 0.5333333333333333,
+            "b": 0.5555555555555556,
+            "resultat_exploitable": -1
           },
           "progression": 3
         },
@@ -265,7 +327,10 @@
             "d1": "\\(\\frac{17}{24} < \\frac{7}{10}\\)",
             "d2": "\\(\\frac{17}{24} = \\frac{7}{10}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 17/24 = 170/240 et 7/10 = 168/240.\nJe compare les numérateurs : 170 > 168.\nDonc 17/24 > 7/10."
+            "correction": "Je mets les deux fractions au même dénominateur : 17/24 = 170/240 et 7/10 = 168/240.\nJe compare les numérateurs : 170 > 168.\nDonc 17/24 > 7/10.",
+            "a": 0.7083333333333334,
+            "b": 0.7,
+            "resultat_exploitable": 1
           },
           "progression": 3
         },
@@ -277,7 +342,10 @@
             "d1": "\\(\\frac{9}{14} < \\frac{13}{21}\\)",
             "d2": "\\(\\frac{9}{14} = \\frac{13}{21}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 9/14 = 189/294 et 13/21 = 182/294.\nJe compare les numérateurs : 189 > 182.\nDonc 9/14 > 13/21."
+            "correction": "Je mets les deux fractions au même dénominateur : 9/14 = 189/294 et 13/21 = 182/294.\nJe compare les numérateurs : 189 > 182.\nDonc 9/14 > 13/21.",
+            "a": 0.6428571428571429,
+            "b": 0.6190476190476191,
+            "resultat_exploitable": 1
           },
           "progression": 3
         },
@@ -289,7 +357,10 @@
             "d1": "\\(\\frac{19}{30} < \\frac{5}{8}\\)",
             "d2": "\\(\\frac{19}{30} = \\frac{5}{8}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 19/30 = 152/240 et 5/8 = 150/240.\nJe compare les numérateurs : 152 > 150.\nDonc 19/30 > 5/8."
+            "correction": "Je mets les deux fractions au même dénominateur : 19/30 = 152/240 et 5/8 = 150/240.\nJe compare les numérateurs : 152 > 150.\nDonc 19/30 > 5/8.",
+            "a": 0.6333333333333333,
+            "b": 0.625,
+            "resultat_exploitable": 1
           },
           "progression": 3
         },
@@ -301,7 +372,10 @@
             "d1": "\\(\\frac{11}{18} < \\frac{7}{12}\\)",
             "d2": "\\(\\frac{11}{18} = \\frac{7}{12}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 11/18 = 132/216 et 7/12 = 126/216.\nJe compare les numérateurs : 132 > 126.\nDonc 11/18 > 7/12."
+            "correction": "Je mets les deux fractions au même dénominateur : 11/18 = 132/216 et 7/12 = 126/216.\nJe compare les numérateurs : 132 > 126.\nDonc 11/18 > 7/12.",
+            "a": 0.6111111111111112,
+            "b": 0.5833333333333334,
+            "resultat_exploitable": 1
           },
           "progression": 3
         },
@@ -313,15 +387,22 @@
             "d1": "\\(\\frac{23}{35} < \\frac{13}{20}\\)",
             "d2": "\\(\\frac{23}{35} = \\frac{13}{20}\\)",
             "d3": "Ces deux fractions ne sont pas comparables",
-            "correction": "Je mets les deux fractions au même dénominateur : 23/35 = 460/700 et 13/20 = 455/700.\nJe compare les numérateurs : 460 > 455.\nDonc 23/35 > 13/20."
+            "correction": "Je mets les deux fractions au même dénominateur : 23/35 = 460/700 et 13/20 = 455/700.\nJe compare les numérateurs : 460 > 455.\nDonc 23/35 > 13/20.",
+            "a": 0.6571428571428571,
+            "b": 0.65,
+            "resultat_exploitable": 1
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "sign(a - b)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-COMP-UN-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Compare [[f]] à 1.",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -335,7 +416,10 @@
           "parametres": {
             "f": "\\(\\frac{2}{5}\\)",
             "corr": "2/5 est inférieur à 1.",
-            "reponse": "<"
+            "reponse": "<",
+            "numerateur_exploitable": 2,
+            "denominateur_exploitable": 5,
+            "comparaison_exploitable": -1
           },
           "progression": 1
         },
@@ -343,7 +427,10 @@
           "parametres": {
             "f": "\\(\\frac{7}{7}\\)",
             "corr": "7/7 est égal à 1.",
-            "reponse": "="
+            "reponse": "=",
+            "numerateur_exploitable": 7,
+            "denominateur_exploitable": 7,
+            "comparaison_exploitable": 0
           },
           "progression": 1
         },
@@ -351,7 +438,10 @@
           "parametres": {
             "f": "\\(\\frac{9}{7}\\)",
             "corr": "9/7 est supérieur à 1.",
-            "reponse": ">"
+            "reponse": ">",
+            "numerateur_exploitable": 9,
+            "denominateur_exploitable": 7,
+            "comparaison_exploitable": 1
           },
           "progression": 2
         },
@@ -359,7 +449,10 @@
           "parametres": {
             "f": "\\(\\frac{5}{6}\\)",
             "corr": "5/6 est inférieur à 1.",
-            "reponse": "<"
+            "reponse": "<",
+            "numerateur_exploitable": 5,
+            "denominateur_exploitable": 6,
+            "comparaison_exploitable": -1
           },
           "progression": 2
         },
@@ -367,7 +460,10 @@
           "parametres": {
             "f": "\\(\\frac{8}{8}\\)",
             "corr": "8/8 est égal à 1.",
-            "reponse": "="
+            "reponse": "=",
+            "numerateur_exploitable": 8,
+            "denominateur_exploitable": 8,
+            "comparaison_exploitable": 0
           },
           "progression": 3
         },
@@ -375,15 +471,22 @@
           "parametres": {
             "f": "\\(\\frac{11}{6}\\)",
             "corr": "11/6 est supérieur à 1.",
-            "reponse": ">"
+            "reponse": ">",
+            "numerateur_exploitable": 11,
+            "denominateur_exploitable": 6,
+            "comparaison_exploitable": 1
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "sign(numerateur_exploitable - denominateur_exploitable)",
+      "reponse_exploitable": "comparaison_exploitable",
+      "moteur": "R"
     },
     {
       "id": "FRA-COMP-VISUEL-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -409,7 +512,10 @@
             "p3": "\\(\\frac{2}{3}\\)",
             "p4": "\\(\\frac{1}{3}\\)",
             "ill_fraction": "1/2",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 1,
+            "denominateur": 2,
+            "resultat_exploitable": 0.5
           },
           "progression": 1
         },
@@ -423,7 +529,10 @@
             "p3": "\\(\\frac{1}{3}\\)",
             "p4": "\\(\\frac{1}{2}\\)",
             "ill_fraction": "2/3",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 2,
+            "denominateur": 3,
+            "resultat_exploitable": 0.6666666666666666
           },
           "progression": 1
         },
@@ -437,7 +546,10 @@
             "p3": "\\(\\frac{1}{2}\\)",
             "p4": "\\(\\frac{3}{5}\\)",
             "ill_fraction": "3/4",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 3,
+            "denominateur": 4,
+            "resultat_exploitable": 0.75
           },
           "progression": 1
         },
@@ -451,7 +563,10 @@
             "p3": "\\(\\frac{1}{5}\\)",
             "p4": "\\(\\frac{1}{3}\\)",
             "ill_fraction": "2/5",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 2,
+            "denominateur": 5,
+            "resultat_exploitable": 0.4
           },
           "progression": 1
         },
@@ -465,7 +580,10 @@
             "p3": "\\(\\frac{2}{3}\\)",
             "p4": "\\(\\frac{5}{7}\\)",
             "ill_fraction": "5/6",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 5,
+            "denominateur": 6,
+            "resultat_exploitable": 0.8333333333333334
           },
           "progression": 1
         },
@@ -479,11 +597,17 @@
             "p3": "\\(\\frac{1}{4}\\)",
             "p4": "\\(\\frac{1}{3}\\)",
             "ill_fraction": "3/8",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 3,
+            "denominateur": 8,
+            "resultat_exploitable": 0.375
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur / denominateur",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     }
   ]
 }

@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "GEO-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Sur la figure à main levée, quelle information prouve que le triangle ABC est rectangle en A ?",
       "reponse": "Le codage de l’angle droit en A",
       "propositions": [
@@ -18,11 +19,15 @@
         "approximation": true,
         "main_levee": true
       },
-      "correction": "Un codage fournit une hypothèse ; l’apparence du dessin ne constitue pas une démonstration."
+      "correction": "Un codage fournit une hypothèse ; l’apparence du dessin ne constitue pas une démonstration.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "GEO-002",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "ABC est rectangle en A. Quelle relation peut-on déduire ?",
       "reponse": "BC² = AB² + AC²",
       "propositions": [
@@ -34,11 +39,15 @@
       "illustration": {
         "id": "triangle_rectangle"
       },
-      "correction": "Identifier d’abord l’hypoténuse BC, opposée à l’angle droit, puis appliquer Pythagore."
+      "correction": "Identifier d’abord l’hypoténuse BC, opposée à l’angle droit, puis appliquer Pythagore.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     },
     {
       "id": "GEO-003",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Les diagonales d’un quadrilatère se coupent en leur milieu. Quelle conclusion est démontrée ?",
       "reponse": "C’est un parallélogramme",
       "propositions": [
@@ -47,11 +56,15 @@
         "C’est nécessairement un losange",
         "C’est nécessairement un carré"
       ],
-      "correction": "La réciproque de la propriété des diagonales du parallélogramme suffit ; elle ne prouve pas un angle droit ni des côtés égaux."
+      "correction": "La réciproque de la propriété des diagonales du parallélogramme suffit ; elle ne prouve pas un angle droit ni des côtés égaux.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     },
     {
       "id": "GEO-004",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Un quadrilatère a quatre angles droits. Quelle conclusion est démontrée ?",
       "reponse": "C’est un rectangle",
       "propositions": [
@@ -60,11 +73,15 @@
         "C’est nécessairement un losange non carré",
         "Ses diagonales sont perpendiculaires"
       ],
-      "correction": "Quatre angles droits caractérisent un rectangle ; aucune égalité des quatre côtés n’est donnée."
+      "correction": "Quatre angles droits caractérisent un rectangle ; aucune égalité des quatre côtés n’est donnée.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     },
     {
       "id": "GEO-005",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "M appartient à la médiatrice de [AB]. Que peut-on déduire ?",
       "reponse": "MA = MB",
       "propositions": [
@@ -73,11 +90,15 @@
         "M est le milieu de [AB]",
         "AB = MA + MB"
       ],
-      "correction": "La médiatrice est l’ensemble des points équidistants des extrémités du segment."
+      "correction": "La médiatrice est l’ensemble des points équidistants des extrémités du segment.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     },
     {
       "id": "GEO-006",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -96,7 +117,10 @@
             "p1": "70°",
             "p2": "80°",
             "p3": "110°",
-            "p4": "180°"
+            "p4": "180°",
+            "angle1": 45,
+            "angle2": 65,
+            "resultat_exploitable": 70
           }
         },
         {
@@ -107,7 +131,10 @@
             "p1": "70°",
             "p2": "80°",
             "p3": "110°",
-            "p4": "180°"
+            "p4": "180°",
+            "angle1": 35,
+            "angle2": 75,
+            "resultat_exploitable": 70
           }
         },
         {
@@ -118,14 +145,21 @@
             "p1": "70°",
             "p2": "80°",
             "p3": "110°",
-            "p4": "180°"
+            "p4": "180°",
+            "angle1": 50,
+            "angle2": 60,
+            "resultat_exploitable": 70
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "180 - angle1 - angle2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "GEO-007",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Un quadrilatère a ses côtés opposés parallèles deux à deux. Que peut-on démontrer ?",
       "reponse": "C’est un parallélogramme",
       "propositions": [
@@ -134,7 +168,10 @@
         "C’est nécessairement un carré",
         "Ses diagonales sont perpendiculaires"
       ],
-      "correction": "C’est la définition du parallélogramme. Les autres propriétés exigent des hypothèses supplémentaires."
+      "correction": "C’est la définition du parallélogramme. Les autres propriétés exigent des hypothèses supplémentaires.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     }
   ]
 }

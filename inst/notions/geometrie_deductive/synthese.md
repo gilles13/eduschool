@@ -1,4 +1,10 @@
-# Géométrie déductive : propriétés utiles
+# L'essentiel : Géométrie déductive : propriétés utiles
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une démonstration géométrique relie les données à une conclusion grâce à des propriétés connues.
+:::
 
 - Un point sur la médiatrice de $[AB]$ est à égale distance de $A$ et $B$.
 - Les diagonales d’un parallélogramme se coupent en leur milieu ; la réciproque est vraie.

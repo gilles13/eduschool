@@ -1,4 +1,4 @@
-# L’essentiel : Encadrer une fraction
+# L'essentiel : Encadrer une fraction
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

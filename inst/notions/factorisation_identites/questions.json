@@ -2,8 +2,9 @@
   "notion_id": "factorisation_identites",
   "questions": [
     {
-      "id": "IR-003",
-      "type": "qcm",
+      "id": "FAC-IR-003",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Factoriser [[affichage_source]].",
       "variantes": [
         {
@@ -814,7 +815,10 @@
         "[[d2]]",
         "[[d3]]"
       ],
-      "correction": "On lit l’identité remarquable dans le sens de la factorisation. On obtient [[bonne]]."
+      "correction": "On lit l’identité remarquable dans le sens de la factorisation. On obtient [[bonne]].",
+      "enonce_exploitable": "[[source]]",
+      "reponse_exploitable": "[[bonne_expression]]",
+      "moteur": "Ryacas"
     }
   ]
 }

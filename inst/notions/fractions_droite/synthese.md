@@ -1,9 +1,9 @@
-# L’essentiel : Repérer des fractions sur une droite graduée
+# L'essentiel : Repérer des fractions sur une droite graduée
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une fraction peut être l’abscisse d’un point sur une droite graduée.
+**Une fraction** peut être l’abscisse d’un point sur une droite graduée.
 :::
 
 ## Principe

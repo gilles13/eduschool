@@ -1,35 +1,27 @@
-graphique_tableau_numeration = function() {
-  donnees = data.frame(
-    x = seq_len(5),
-    position = c("Centaines", "Dizaines", "Unit\u00e9s", "Dixi\u00e8mes", "Centi\u00e8mes"),
-    chiffre = c("3", "4", "5", "6", "7"),
-    valeur = c("300", "40", "5", "0,6", "0,07")
-  )
-  figure = ggplot2::ggplot(donnees) +
-    ggplot2::geom_rect(ggplot2::aes(xmin = x - .47, xmax = x + .47,
-                                   ymin = .7, ymax = 1.35, fill = position),
-                       color = "grey45", show.legend = FALSE) +
-    ggplot2::scale_fill_manual(values = c(
-      "Centaines" = "#C8DFEE", "Dizaines" = "#DAEAF4",
-      "Unit\u00e9s" = "#E9F3F8", "Dixi\u00e8mes" = "#FBE3C6",
-      "Centi\u00e8mes" = "#F8D4B2"
-    )) +
-    ggplot2::geom_text(ggplot2::aes(x = x, y = 1.14, label = chiffre),
-                       fontface = "bold", size = 8) +
-    ggplot2::geom_text(ggplot2::aes(x = x, y = .84, label = position),
-                       size = 3.4) +
-    ggplot2::geom_text(ggplot2::aes(x = x, y = .47, label = valeur),
-                       size = 5) +
-    ggplot2::annotate("segment", x = 3.5, xend = 3.5,
-                       y = .65, yend = 1.4,
-                          linetype = "dashed", linewidth = .8) +
-    ggplot2::annotate("text", x = 3.5, y = 1.52, label = "Virgule", size = 4) +
-    ggplot2::coord_cartesian(xlim = c(.4, 5.6), ylim = c(.25, 1.65),
-                             expand = FALSE) +
-    ggplot2::labs(caption = "345,67 = 300 + 40 + 5 + 0,6 + 0,07") +
-    ggplot2::theme_void() +
-    ggplot2::theme(plot.caption = ggplot2::element_text(hjust = .5, size = 10))
-  attr(figure, "eduschool_dimensions") = c(8, 2.5)
-  attr(figure, "eduschool_display_width") = "65%"
+graphique_tableau_numeration = function(illustration = NULL, nombre = 12.347, rang = 2) {
+  if (!is.null(illustration)) {
+    nombre = illustration$nombre
+    rang = illustration$rang
+  }
+  stopifnot(is.numeric(nombre), length(nombre) == 1L, is.finite(nombre),
+            nombre >= 0, nombre < 1000, is.numeric(rang), length(rang) == 1L,
+            rang %in% 0:3)
+  chiffres = sprintf("%03d.%03d", floor(nombre + 1e-9),
+                    round((nombre - floor(nombre + 1e-9)) * 1000))
+  chiffres = strsplit(gsub("\\.", "", chiffres), "", fixed = TRUE)[[1L]]
+  noms = c("Centaines", "Dizaines", "Unit\u00e9s", "Dixi\u00e8mes", "Centi\u00e8mes", "Milli\u00e8mes")
+  cible = 3L + rang
+  x = seq(.09, .91, length.out = 6)
+  fonds = lapply(seq_along(x), function(i) grid::rectGrob(
+    x = grid::unit(x[i], "npc"), y = grid::unit(.52, "npc"),
+    width = grid::unit(.135, "npc"), height = grid::unit(.65, "npc"),
+    gp = grid::gpar(fill = if (i == cible) "#dcecf7" else "#f1f3f5", col = "#777777")))
+  figure = grid::gTree(children = do.call(grid::gList, c(fonds, list(
+    grid::textGrob(noms, x = grid::unit(x, "npc"), y = grid::unit(.67, "npc"),
+                   gp = grid::gpar(fontsize = 10)),
+    grid::textGrob(chiffres, x = grid::unit(x, "npc"), y = grid::unit(.41, "npc"),
+                   gp = grid::gpar(fontsize = 19, fontface = "bold"))
+  ))))
+  attr(figure, "eduschool_dimensions") = c(7, 1.5)
   figure
 }

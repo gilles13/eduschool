@@ -45,3 +45,12 @@ fractions_division;Repérer l'erreur;Identifier une inversion ou une égalité e
 fractions_fois_entier;Choisir la méthode;Choisir une écriture utile pour multiplier un entier par une fraction.
 fractions_fois_entier;Repérer l'erreur;Identifier une égalité erronée dans le produit d'un entier par une fraction.
 fractions_terme_manquant;Choisir la méthode;Choisir l'opération inverse qui permet de retrouver le terme manquant.
+decimaux_comparaison;Repérer l'erreur;Débusquer la confusion entre la longueur de la partie décimale et la valeur du nombre.
+decimaux_comparaison;Ordonner par choix;Justifier un classement croissant de nombres décimaux.
+decimaux_decomposition;Associer deux représentations;Relier une décomposition à une écriture décimale ou fractionnaire.
+decimaux_numeration;Étape manquante;Retrouver un chiffre à partir de sa valeur de position.
+decimaux_droite_graduee;Lecture d'information;Lire un nombre décimal sur une droite subdivisée.
+decimaux_fractions;Associer deux représentations;Passer entre fraction décimale et écriture à virgule.
+decimaux_encadrement;Encadrer;Trouver les bornes correspondant à un nombre décimal.
+decimaux_arrondis;Repérer l'erreur;Expliquer une erreur d'arrondi à partir de la valeur des chiffres.
+decimaux_arrondis;Choisir la méthode;Distinguer arrondi et encadrement selon la question posée.

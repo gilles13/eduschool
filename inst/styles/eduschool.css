@@ -1,9 +1,20 @@
 /* Quiz layout. Keep presentation separate from editorial R Markdown. */
 .edu-question {margin:1.4em 0;padding:1em;border:1px solid #bbb}
+.edu-question-raisonnement {background:#fff0f0;border:1px solid #e7b5b5;
+  border-left:7px solid #a52d38;border-radius:.35em}
+.edu-raisonnement-titre {display:block;color:#85232d;font-size:.92em;
+  margin-bottom:.55em}
+.edu-question-transversale {background:#eaf6ff;border:1px solid #a8cfe9;
+  border-left:7px solid #2476b5;border-radius:.35em}
+.edu-transversal-titre {display:block;color:#165b90;font-size:.92em;
+  margin-bottom:.55em}
 .edu-correction {margin-top:1em;padding:1em 1.2em;background:#eef7f2;
   border:1px solid #8cbba1;border-left:5px solid #327a54;
   border-radius:.45em;font-size:1.1em;line-height:1.65}
 .edu-correction p {margin:.3em 0 .7em}
+.edu-liens-notions {margin-top:1em;padding:.7em 1em;background:#edf5ec;
+  border-left:4px solid #56845d;border-radius:.3em;color:#365e3b}
+.edu-liens-notions p {margin:.25em 0}
 .edu-humour {margin-top:1em!important;padding:.65em .85em!important;font-style:italic;
   background:#fff7e6;border-left:5px solid #d9822b}
 .edu-humour::before {content:"😈 Le petit mot du concepteur";display:block;

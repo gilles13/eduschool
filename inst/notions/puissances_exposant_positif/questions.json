@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PUI-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "32",
             "p2": "10",
             "p3": "16",
-            "p4": "64"
+            "p4": "64",
+            "calcul_exploitable": "2^5",
+            "resultat_exploitable": "32"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "81",
             "p2": "12",
             "p3": "27",
-            "p4": "64"
+            "p4": "64",
+            "calcul_exploitable": "3^4",
+            "resultat_exploitable": "81"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "125",
             "p2": "15",
             "p3": "25",
-            "p4": "625"
+            "p4": "625",
+            "calcul_exploitable": "5^3",
+            "resultat_exploitable": "125"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +81,9 @@
             "p1": "81",
             "p2": "12",
             "p3": "27",
-            "p4": "64"
+            "p4": "64",
+            "calcul_exploitable": "3^4",
+            "resultat_exploitable": "81"
           }
         },
         {
@@ -81,7 +94,9 @@
             "p1": "64",
             "p2": "12",
             "p3": "16",
-            "p4": "81"
+            "p4": "81",
+            "calcul_exploitable": "4^3",
+            "resultat_exploitable": "64"
           }
         },
         {
@@ -92,14 +107,20 @@
             "p1": "625",
             "p2": "20",
             "p3": "125",
-            "p4": "256"
+            "p4": "256",
+            "calcul_exploitable": "5^4",
+            "resultat_exploitable": "625"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-007",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -112,6 +133,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -2,
+            "valeur_2": 4,
+            "resultat_exploitable": 16,
             "enonce": "Que vaut (−2)⁴ ?",
             "reponse": "16",
             "correction": "Dans (−2)⁴, le signe moins appartient à la base : (−2) × (−2) × (−2) × (−2) = 16.",
@@ -123,6 +147,9 @@
         },
         {
           "parametres": {
+            "valeur_1": -3,
+            "valeur_2": 4,
+            "resultat_exploitable": 81,
             "enonce": "Que vaut (−3)⁴ ?",
             "reponse": "81",
             "correction": "Le calcul donne 81.",
@@ -134,6 +161,9 @@
         },
         {
           "parametres": {
+            "valeur_1": -2,
+            "valeur_2": 6,
+            "resultat_exploitable": 64,
             "enonce": "Que vaut (−2)⁶ ?",
             "reponse": "64",
             "correction": "Le calcul donne 64.",
@@ -143,11 +173,15 @@
             "p4": "−12"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-008",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -160,6 +194,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -2,
+            "valeur_2": 4,
+            "resultat_exploitable": -16,
             "enonce": "Que vaut −2⁴, sans parenthèses autour de −2 ?",
             "reponse": "−16",
             "correction": "Sans parenthèses, le signe moins n’appartient pas à la base : la puissance est calculée d’abord, donc −2⁴ = −(2⁴) = −16. À l’inverse, (−2)⁴ = 16.",
@@ -171,6 +208,9 @@
         },
         {
           "parametres": {
+            "valeur_1": -3,
+            "valeur_2": 4,
+            "resultat_exploitable": -81,
             "enonce": "Que vaut −3⁴ ?",
             "reponse": "−81",
             "correction": "Le calcul donne −81.",
@@ -182,6 +222,9 @@
         },
         {
           "parametres": {
+            "valeur_1": -2,
+            "valeur_2": 6,
+            "resultat_exploitable": -64,
             "enonce": "Que vaut −2⁶ ?",
             "reponse": "−64",
             "correction": "Le calcul donne −64.",
@@ -191,11 +234,15 @@
             "p4": "12"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "-abs(valeur_1) ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-009",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -208,6 +255,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -3,
+            "valeur_2": 3,
+            "resultat_exploitable": -27,
             "enonce": "Que vaut (−3)³ ?",
             "reponse": "−27",
             "correction": "Trois facteurs négatifs donnent un produit négatif.",
@@ -219,6 +269,9 @@
         },
         {
           "parametres": {
+            "valeur_1": -2,
+            "valeur_2": 3,
+            "resultat_exploitable": -8,
             "enonce": "Que vaut (−2)³ ?",
             "reponse": "−8",
             "correction": "Le calcul donne −8.",
@@ -230,6 +283,9 @@
         },
         {
           "parametres": {
+            "valeur_1": -4,
+            "valeur_2": 3,
+            "resultat_exploitable": -64,
             "enonce": "Que vaut (−4)³ ?",
             "reponse": "−64",
             "correction": "Le calcul donne −64.",
@@ -239,11 +295,15 @@
             "p4": "12"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-011",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -256,6 +316,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": 3,
+            "valeur_3": 4,
+            "resultat_exploitable": 128,
             "enonce": "Quelle expression simplifie 2³ × 2⁴ ?",
             "reponse": "2⁷",
             "correction": "On additionne les exposants lorsque les bases sont identiques dans un produit.",
@@ -267,6 +331,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": 2,
+            "valeur_3": 5,
+            "resultat_exploitable": 2187,
             "enonce": "Quelle expression simplifie 3² × 3⁵ ?",
             "reponse": "3⁷",
             "correction": "Le calcul donne 3⁷.",
@@ -278,6 +346,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": 3,
+            "valeur_3": 2,
+            "resultat_exploitable": 3125,
             "enonce": "Quelle expression simplifie 5³ × 5² ?",
             "reponse": "5⁵",
             "correction": "Le calcul donne 5⁵.",
@@ -287,11 +359,15 @@
             "p4": "5¹"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 + valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-014",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -304,6 +380,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": 5,
+            "valeur_3": 3,
+            "resultat_exploitable": 1000,
             "enonce": "Quelle expression est égale à (2 × 5)³ ?",
             "reponse": "2³ × 5³",
             "correction": "La puissance d’un produit est le produit des puissances de chaque facteur.",
@@ -315,6 +395,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": 4,
+            "valeur_3": 2,
+            "resultat_exploitable": 144,
             "enonce": "Quelle expression est égale à (3 × 4)² ?",
             "reponse": "3² × 4²",
             "correction": "Le calcul donne 3² × 4².",
@@ -326,6 +410,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": 7,
+            "valeur_3": 3,
+            "resultat_exploitable": 2744,
             "enonce": "Quelle expression est égale à (2 × 7)³ ?",
             "reponse": "2³ × 7³",
             "correction": "Le calcul donne 2³ × 7³.",
@@ -335,11 +423,15 @@
             "p4": "14⁶"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(valeur_1 * valeur_2) ^ valeur_3",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-015",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -358,7 +450,9 @@
             "p1": "12",
             "p2": "2⁵",
             "p3": "32",
-            "p4": "16"
+            "p4": "16",
+            "calcul_exploitable": "2^3+2^2",
+            "resultat_exploitable": "12"
           }
         },
         {
@@ -369,7 +463,9 @@
             "p1": "36",
             "p2": "3⁵",
             "p3": "18",
-            "p4": "81"
+            "p4": "81",
+            "calcul_exploitable": "3^3+3^2",
+            "resultat_exploitable": "36"
           }
         },
         {
@@ -380,14 +476,20 @@
             "p1": "80",
             "p2": "4⁵",
             "p3": "28",
-            "p4": "256"
+            "p4": "256",
+            "calcul_exploitable": "4^2+4^3",
+            "resultat_exploitable": "80"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-018",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -406,7 +508,9 @@
             "p1": "10 000",
             "p2": "1 000",
             "p3": "40",
-            "p4": "100 000"
+            "p4": "100 000",
+            "calcul_exploitable": "10^4",
+            "resultat_exploitable": "10000"
           }
         },
         {
@@ -417,7 +521,9 @@
             "p1": "1 000",
             "p2": "100",
             "p3": "10 000",
-            "p4": "30"
+            "p4": "30",
+            "calcul_exploitable": "10^3",
+            "resultat_exploitable": "1000"
           }
         },
         {
@@ -428,14 +534,20 @@
             "p1": "100 000",
             "p2": "10 000",
             "p3": "1 000 000",
-            "p4": "50"
+            "p4": "50",
+            "calcul_exploitable": "10^5",
+            "resultat_exploitable": "100000"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-026",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -448,6 +560,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": 4,
+            "resultat_exploitable": 81,
             "enonce": "À chaque étape, chaque branche se sépare en 3 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 4 étapes ?",
             "reponse": "81",
             "correction": "À chacune des 4 étapes, le nombre de branches est multiplié par 3 : 3 × 3 × 3 × 3 = 3⁴ = 81.",
@@ -459,6 +574,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": 5,
+            "resultat_exploitable": 32,
             "enonce": "À chaque étape, chaque branche se sépare en 2 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 5 étapes ?",
             "reponse": "32",
             "correction": "Le nombre de branches est 2^5 = 32.",
@@ -470,6 +588,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": 3,
+            "resultat_exploitable": 64,
             "enonce": "À chaque étape, chaque branche se sépare en 4 nouvelles branches. En partant d’une branche, combien obtient-on de branches terminales après 3 étapes ?",
             "reponse": "64",
             "correction": "Le nombre de branches est 4^3 = 64.",
@@ -479,11 +600,15 @@
             "p4": "12"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-027",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Dans l’écriture 3⁵, comment appelle-t-on le nombre 3 ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -501,11 +626,15 @@
         "produit",
         "facteur"
       ],
-      "correction": "Dans 3⁵, 3 est la base : c’est le nombre qui est multiplié par lui-même."
+      "correction": "Dans 3⁵, 3 est la base : c’est le nombre qui est multiplié par lui-même.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PUI-028",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Dans l’écriture 3⁵, comment appelle-t-on le nombre 5 ? Choisis le mot masqué correspondant.",
       "presentation": {
         "type": "mot_masque",
@@ -524,11 +653,15 @@
         "produit",
         "puissance"
       ],
-      "correction": "Dans 3⁵, 5 est l’exposant : il indique que la base 3 apparaît cinq fois comme facteur."
+      "correction": "Dans 3⁵, 5 est l’exposant : il indique que la base 3 apparaît cinq fois comme facteur.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PUI-029",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Quel nombre doit remplacer □ pour que 2³ × 2 à la puissance □ = 2⁷ ?",
       "presentation": {
         "type": "boite"
@@ -540,11 +673,15 @@
         "21",
         "3"
       ],
-      "correction": "Pour multiplier des puissances de même base, on additionne les exposants : 3 + □ = 7, donc □ = 4."
+      "correction": "Pour multiplier des puissances de même base, on additionne les exposants : 3 + □ = 7, donc □ = 4.",
+      "enonce_exploitable": "7 - 3",
+      "reponse_exploitable": "4",
+      "moteur": "R"
     },
     {
       "id": "PUI-030",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Quel nombre doit remplacer □ pour que (2 × 3)⁴ = 2 à la puissance □ × 3⁴ ?",
       "presentation": {
         "type": "boite"
@@ -556,7 +693,10 @@
         "3",
         "12"
       ],
-      "correction": "La puissance d’un produit s’applique à chacun de ses facteurs : (2 × 3)⁴ = 2⁴ × 3⁴. La boîte vaut donc 4."
+      "correction": "La puissance d’un produit s’applique à chacun de ses facteurs : (2 × 3)⁴ = 2⁴ × 3⁴. La boîte vaut donc 4.",
+      "enonce_exploitable": "log((2 * 3) ^ 4 / 3 ^ 4, base = 2)",
+      "reponse_exploitable": "4",
+      "moteur": "R"
     }
   ]
 }

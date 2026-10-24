@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-La notation scientifique écrit un nombre sous la forme a × 10ⁿ avec 1 ≤ |a| < 10.
+La notation scientifique écrit un nombre sous la forme a × 10ⁿ avec 1 $\leq$ |a| < 10.
 :::
 
 ## Principe

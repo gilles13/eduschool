@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une fonction associe à chaque valeur admise de départ une unique valeur d’arrivée appelée image.
+**Une fonction** associe à chaque valeur admise de départ une unique valeur d’arrivée appelée image.
 :::
 
 ## Principe

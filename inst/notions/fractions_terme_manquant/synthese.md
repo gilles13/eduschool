@@ -1,9 +1,9 @@
-# L’essentiel : Trouver un terme manquant avec des fractions
+# L'essentiel : Trouver un terme manquant avec des fractions
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Un terme manquant dans une égalité peut être retrouvé en utilisant l’opération inverse.
+**Un terme manquant dans une égalité** peut être retrouvé en utilisant l’opération inverse.
 :::
 
 ## Principe

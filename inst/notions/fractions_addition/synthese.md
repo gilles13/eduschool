@@ -1,4 +1,4 @@
-# L’essentiel : Additionner des fractions
+# L'essentiel : Additionner des fractions
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

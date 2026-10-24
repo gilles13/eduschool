@@ -1,4 +1,10 @@
-# Thalès — l’essentiel
+# L'essentiel : Thalès — l’essentiel
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Le théorème de Thalès établit des rapports de longueurs égaux dans une configuration de parallèles.
+:::
 
 **Théorème.** Si $D\in[AB]$, $E\in[AC]$ et $(DE)\parallel(BC)$, alors :
 

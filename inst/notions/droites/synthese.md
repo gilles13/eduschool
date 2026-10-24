@@ -1,29 +1,29 @@
 # L'essentiel : Droites
 
-> **TODO — FICHE À RÉDIGER** — Squelette documentaire, aucun contenu pédagogique validé.
-
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-TODO — Définition courte permettant de retrouver immédiatement l'objet étudié.
+Une **droite** est une ligne rectiligne qui se prolonge indéfiniment dans les deux sens. Un **segment** est une portion de droite limitée par deux points ; une **demi-droite** a une origine et se prolonge dans un seul sens.
 :::
 
 ## Principe
 
-TODO — Énoncer la propriété, le raisonnement ou la règle essentielle.
+Dans le plan, deux droites parallèles distinctes ne se coupent pas ; deux droites perpendiculaires forment un angle droit.
 
 ## Méthode
 
-TODO — Présenter les étapes utiles de façon courte lorsque la notion comporte une méthode.
+Identifier la relation donnée, puis utiliser une propriété. Ne pas conclure à partir du seul aspect du dessin.
+
+<!-- graphique: droites -->
 
 ## Exemple
 
-TODO — Donner un exemple complet mais compact.
+Si $(d)\perp(f)$ et $(e)\perp(f)$, alors $(d)\parallel(e)$.
 
 ## Vérification
 
-TODO — Indiquer, lorsque cela a du sens, comment contrôler le résultat.
+Vérifier le codage de l'angle droit ou les données qui justifient la relation.
 
 ## À retenir
 
-TODO — Conserver seulement les repères indispensables pour réviser rapidement.
+$(AB)$ : droite ; $[AB]$ : segment ; $AB$ : longueur. Parallèles : même direction ; perpendiculaires : angle droit.

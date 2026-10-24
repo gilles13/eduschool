@@ -1,5 +1,11 @@
 # Découvrir : Grandeur, mesure et unité
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une **grandeur** est une propriété que l’on peut mesurer, comme une longueur, une masse ou une durée. Sa **mesure** s’exprime par un nombre et une unité.
+:::
+
 Une **grandeur** est ce que l'on cherche à mesurer : une longueur, une masse, une durée, une aire... Une **mesure** est un nombre accompagné d'une **unité**. « 3 » ne suffit pas : 3 mètres et 3 secondes ne décrivent pas la même chose.
 
 ## Observons
@@ -14,4 +20,4 @@ Avant toute conversion, posons trois questions : **quelle grandeur ? quelle unit
 
 ## Pour vérifier tes découvertes
 
-**1. Une situation concrète.** 80 cm = 0,8 m ; 0,8 + 1,2 = 2 m.
+1. **Une situation concrète :** 80 cm = 0,8 m ; 0,8 + 1,2 = 2 m.

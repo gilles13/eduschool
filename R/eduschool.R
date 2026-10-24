@@ -11,7 +11,7 @@ eduschool = function() {
   groupes = list(
     "D\u00e9couvrir eduschool" = c("eduschool()", "produire_cheatsheet()"),
     "Explorer le syst\u00e8me scolaire" = c("voies()", "series()",
-      "maths_programmes()", "maths_parcours()"),
+      "maths_programmes()", "maths_parcours()", "consulter_bo()", "texte_officiel()", "produire_bo()"),
     "Produire des maths" = c("notions()", "questions()", "question()",
       "produire()", "formes_questions()", "vocabulaire()", "graphique()", "illustrer_question()",
       "table_multiplication()")

@@ -1,4 +1,10 @@
-# Synthèse : Conversions d'octets
+# L'essentiel : Synthèse : Conversions d'octets
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+L’octet est une unité de quantité d’information numérique.
+:::
 
 Dans le système **décimal**, chaque unité voisine diffère d'un facteur **1 000**.
 

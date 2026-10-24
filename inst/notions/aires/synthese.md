@@ -1,29 +1,38 @@
 # L'essentiel : Aires
 
-> **TODO — FICHE À RÉDIGER** — Squelette documentaire, aucun contenu pédagogique validé.
-
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-TODO — Définition courte permettant de retrouver immédiatement l'objet étudié.
+L'aire est la mesure de la surface d'une figure plane, exprimée en unités carrées.
 :::
 
 ## Principe
 
-TODO — Énoncer la propriété, le raisonnement ou la règle essentielle.
+On mesure la surface, et non la longueur du contour. Une aire en centimètres se note en **cm²**.
 
 ## Méthode
 
-TODO — Présenter les étapes utiles de façon courte lorsque la notion comporte une méthode.
+- Rectangle : longueur × largeur.
+- Carré : côté × côté.
+- Triangle : (base × hauteur correspondante) ÷ 2.
+- Figure découpée : aire de départ − aire retirée.
+
+<!-- graphique: aires type=1 -->
+
+<!-- graphique: triangles type=8 -->
+
+Sur le triangle, **BC = 6 cm** est la base et **AH = 3 cm** est la hauteur correspondante (perpendiculaire à BC, indiquée par l’angle droit en H). La hauteur est donnée : il n’est pas nécessaire de la calculer. L’aire du triangle vaut donc (6 × 3) ÷ 2 = **9 cm²**.
 
 ## Exemple
 
-TODO — Donner un exemple complet mais compact.
+Un rectangle de 7 cm sur 4 cm a une aire de 7 × 4 = **28 cm²**.
+
+<!-- graphique: aires type=2 -->
 
 ## Vérification
 
-TODO — Indiquer, lorsque cela a du sens, comment contrôler le résultat.
+Le résultat doit être exprimé en unités carrées. Une aire retirée diminue la surface restante.
 
 ## À retenir
 
-TODO — Conserver seulement les repères indispensables pour réviser rapidement.
+Pour calculer une aire, identifier la figure, les dimensions utiles et l'unité carrée.

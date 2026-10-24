@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "QUART-001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "La série ordonnée est : [[serie]]. Quelle proposition est correcte ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -21,7 +22,24 @@
             "bonne": "Q1 = 3 ; médiane = 6.5 ; Q3 = 9",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "q1": 3.0,
+            "mediane": 6.5,
+            "q3": 9.0
           }
         },
         {
@@ -31,7 +49,24 @@
             "bonne": "Q1 = 4 ; médiane = 8 ; Q3 = 11",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "q1": 4.0,
+            "mediane": 8.0,
+            "q3": 11.0
           }
         },
         {
@@ -41,7 +76,24 @@
             "bonne": "Q1 = 5 ; médiane = 8.5 ; Q3 = 11",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "q1": 5.0,
+            "mediane": 8.5,
+            "q3": 11.0
           }
         },
         {
@@ -51,7 +103,24 @@
             "bonne": "Q1 = 6 ; médiane = 10 ; Q3 = 13",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "q1": 6.0,
+            "mediane": 10.0,
+            "q3": 13.0
           }
         },
         {
@@ -61,7 +130,24 @@
             "bonne": "Q1 = 7 ; médiane = 10.5 ; Q3 = 13",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "q1": 7.0,
+            "mediane": 10.5,
+            "q3": 13.0
           }
         },
         {
@@ -71,7 +157,24 @@
             "bonne": "Q1 = 3 ; médiane = 7 ; Q3 = 10",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "q1": 3.0,
+            "mediane": 7.0,
+            "q3": 10.0
           }
         },
         {
@@ -81,7 +184,24 @@
             "bonne": "Q1 = 4 ; médiane = 7.5 ; Q3 = 10",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "q1": 4.0,
+            "mediane": 7.5,
+            "q3": 10.0
           }
         },
         {
@@ -91,7 +211,24 @@
             "bonne": "Q1 = 5 ; médiane = 9 ; Q3 = 12",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "q1": 5.0,
+            "mediane": 9.0,
+            "q3": 12.0
           }
         },
         {
@@ -101,7 +238,24 @@
             "bonne": "Q1 = 6 ; médiane = 9.5 ; Q3 = 12",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "q1": 6.0,
+            "mediane": 9.5,
+            "q3": 12.0
           }
         },
         {
@@ -111,14 +265,35 @@
             "bonne": "Q1 = 7 ; médiane = 11 ; Q3 = 14",
             "d1": "Q1 est le minimum et Q3 est le maximum.",
             "d2": "Q1 et Q3 sont obtenus en partageant l’étendue en quatre longueurs égales.",
-            "d3": "La médiane est toujours égale à la moyenne."
+            "d3": "La médiane est toujours égale à la moyenne.",
+            "serie_numerique": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "q1": 7.0,
+            "mediane": 11.0,
+            "q3": 14.0
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(q1 == serie_numerique[ceiling(length(serie_numerique)/4)] && mediane == median(serie_numerique) && q3 == serie_numerique[ceiling(3*length(serie_numerique)/4)])",
+      "reponse_exploitable": 1,
+      "moteur": "R"
     },
     {
       "id": "QUART-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Que représente une boîte à moustaches ?",
       "reponse": "Des repères de position et de dispersion d’une série",
       "propositions": [
@@ -127,11 +302,15 @@
         "Uniquement la moyenne",
         "Uniquement l’effectif total"
       ],
-      "correction": "Elle synthétise notamment minimum, quartiles, médiane et maximum."
+      "correction": "Elle synthétise notamment minimum, quartiles, médiane et maximum.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "QUART-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -175,7 +354,10 @@
             "p4": "7 est forcément la moyenne."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

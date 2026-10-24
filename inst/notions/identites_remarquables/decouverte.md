@@ -38,6 +38,6 @@ Dans les deux carrés, le terme du milieu est un **double produit**. Dans la dif
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver une identité.** $(a-3)^2=(a-3)(a-3)=a^2-3a-3a+9=a^2-6a+9$. On retrouve $(a-b)^2=a^2-2ab+b^2$ avec $b=3$.
+1. **Retrouver une identité :** $(a-3)^2=(a-3)(a-3)=a^2-3a-3a+9=a^2-6a+9$. On retrouve $(a-b)^2=a^2-2ab+b^2$ avec $b=3$.
 
-**2. Lire dans l'autre sens.** $x^2-10x+25=(x-5)^2$ car $25=5^2$ et $10x=2\times x\times5$. De même, $9x^2-16=(3x)^2-4^2=(3x-4)(3x+4)$.
+2. **Lire dans l'autre sens :** $x^2-10x+25=(x-5)^2$ car $25=5^2$ et $10x=2\times x\times5$. De même, $9x^2-16=(3x)^2-4^2=(3x-4)(3x+4)$.

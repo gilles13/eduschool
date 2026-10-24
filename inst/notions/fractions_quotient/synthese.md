@@ -1,9 +1,9 @@
-# L’essentiel : Relier fraction et quotient
+# L'essentiel : Relier fraction et quotient
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une fraction est une écriture exacte d’un quotient.
+**Une fraction** est une écriture exacte d’un quotient.
 :::
 
 ## Principe

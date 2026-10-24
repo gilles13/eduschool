@@ -1,4 +1,10 @@
-# Synthèse : Conversions de volumes
+# L'essentiel : Synthèse : Conversions de volumes
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une conversion de volume exprime le même espace occupé dans une autre unité cubique.
+:::
 
 - Un volume est une grandeur de dimension 3.
 - 1 m³ = 1 000 dm³ = 1 000 000 cm³.

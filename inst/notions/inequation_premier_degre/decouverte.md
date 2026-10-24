@@ -87,7 +87,7 @@ On transforme une inéquation comme une équation tant que l'on effectue la mêm
 
 ## Pour vérifier tes découvertes
 
-**1. Coefficient positif**
+1. **Coefficient positif :**
 
 $$
 4x-3\leq9
@@ -99,7 +99,7 @@ $$
 x\leq3.
 $$
 
-**2. Coefficient négatif**
+2. **Coefficient négatif :**
 
 $$
 -2x+1>7
@@ -111,7 +111,7 @@ $$
 x<-3.
 $$
 
-**3. Inconnue dans les deux membres**
+3. **Inconnue dans les deux membres :**
 
 $$
 3x+1<x-9

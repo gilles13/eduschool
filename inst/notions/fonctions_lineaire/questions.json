@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FLIN-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Soit f(𝑥) = [[a]]𝑥. Quelle est l’image de [[x]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -564,11 +565,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "a * x",
+      "reponse_exploitable": "as.numeric(bonne)",
+      "moteur": "R"
     },
     {
       "id": "FLIN-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Quelle propriété graphique caractérise une fonction linéaire ?",
       "reponse": "Sa représentation est une droite passant par l’origine.",
       "propositions": [
@@ -577,11 +582,15 @@
         "Sa représentation est une parabole.",
         "Sa représentation est une droite qui ne passe jamais par l’origine."
       ],
-      "correction": "Une fonction linéaire traduit une proportionnalité ; sa droite passe donc par l’origine."
+      "correction": "Une fonction linéaire traduit une proportionnalité ; sa droite passe donc par l’origine.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "FLIN-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -625,7 +634,10 @@
             "p4": "L’image de 0."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

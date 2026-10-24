@@ -1,0 +1,815 @@
+{
+  "notion_id": "angles",
+  "questions": [
+    {
+      "id": "ANGLES-TRIANGLE-MANQUANT",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 20° et 60°. Combien mesure le troisième ?",
+            "reponse": "100°",
+            "p1": "100°",
+            "p2": "80°",
+            "p3": "160°",
+            "p4": "70°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 20 − 60 = 100°.",
+            "a": 20,
+            "b": 60,
+            "resultat": 100
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 25° et 60°. Combien mesure le troisième ?",
+            "reponse": "95°",
+            "p1": "95°",
+            "p2": "85°",
+            "p3": "155°",
+            "p4": "65°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 25 − 60 = 95°.",
+            "a": 25,
+            "b": 60,
+            "resultat": 95
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 35° et 60°. Combien mesure le troisième ?",
+            "reponse": "85°",
+            "p1": "85°",
+            "p2": "95°",
+            "p3": "145°",
+            "p4": "55°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 35 − 60 = 85°.",
+            "a": 35,
+            "b": 60,
+            "resultat": 85
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 40° et 60°. Combien mesure le troisième ?",
+            "reponse": "80°",
+            "p1": "80°",
+            "p2": "100°",
+            "p3": "140°",
+            "p4": "50°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 40 − 60 = 80°.",
+            "a": 40,
+            "b": 60,
+            "resultat": 80
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 45° et 60°. Combien mesure le troisième ?",
+            "reponse": "75°",
+            "p1": "75°",
+            "p2": "105°",
+            "p3": "135°",
+            "p4": "45°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 45 − 60 = 75°.",
+            "a": 45,
+            "b": 60,
+            "resultat": 75
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 50° et 60°. Combien mesure le troisième ?",
+            "reponse": "70°",
+            "p1": "70°",
+            "p2": "110°",
+            "p3": "130°",
+            "p4": "40°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 50 − 60 = 70°.",
+            "a": 50,
+            "b": 60,
+            "resultat": 70
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 55° et 60°. Combien mesure le troisième ?",
+            "reponse": "65°",
+            "p1": "65°",
+            "p2": "115°",
+            "p3": "125°",
+            "p4": "35°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 55 − 60 = 65°.",
+            "a": 55,
+            "b": 60,
+            "resultat": 65
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 65° et 60°. Combien mesure le troisième ?",
+            "reponse": "55°",
+            "p1": "55°",
+            "p2": "125°",
+            "p3": "115°",
+            "p4": "25°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 65 − 60 = 55°.",
+            "a": 65,
+            "b": 60,
+            "resultat": 55
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Dans un triangle, deux angles mesurent 70° et 60°. Combien mesure le troisième ?",
+            "reponse": "50°",
+            "p1": "50°",
+            "p2": "130°",
+            "p3": "110°",
+            "p4": "20°",
+            "correction": "La somme des angles d’un triangle vaut 180° : 180 − 70 − 60 = 50°.",
+            "a": 70,
+            "b": 60,
+            "resultat": 50
+          }
+        }
+      ],
+      "niveau": "6E",
+      "enonce_exploitable": "180 - a - b",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-PLAT-COMPLEMENT",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 21°. Quelle est la mesure du second ?",
+            "reponse": "159°",
+            "p1": "159°",
+            "p2": "21°",
+            "p3": "69°",
+            "p4": "138°",
+            "correction": "Ils totalisent 180° : 180 − 21 = 159°.",
+            "a": 21,
+            "resultat": 159
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 28°. Quelle est la mesure du second ?",
+            "reponse": "152°",
+            "p1": "152°",
+            "p2": "28°",
+            "p3": "62°",
+            "p4": "124°",
+            "correction": "Ils totalisent 180° : 180 − 28 = 152°.",
+            "a": 28,
+            "resultat": 152
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 35°. Quelle est la mesure du second ?",
+            "reponse": "145°",
+            "p1": "145°",
+            "p2": "35°",
+            "p3": "55°",
+            "p4": "110°",
+            "correction": "Ils totalisent 180° : 180 − 35 = 145°.",
+            "a": 35,
+            "resultat": 145
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 42°. Quelle est la mesure du second ?",
+            "reponse": "138°",
+            "p1": "138°",
+            "p2": "42°",
+            "p3": "48°",
+            "p4": "96°",
+            "correction": "Ils totalisent 180° : 180 − 42 = 138°.",
+            "a": 42,
+            "resultat": 138
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 49°. Quelle est la mesure du second ?",
+            "reponse": "131°",
+            "p1": "131°",
+            "p2": "49°",
+            "p3": "41°",
+            "p4": "82°",
+            "correction": "Ils totalisent 180° : 180 − 49 = 131°.",
+            "a": 49,
+            "resultat": 131
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 56°. Quelle est la mesure du second ?",
+            "reponse": "124°",
+            "p1": "124°",
+            "p2": "56°",
+            "p3": "34°",
+            "p4": "68°",
+            "correction": "Ils totalisent 180° : 180 − 56 = 124°.",
+            "a": 56,
+            "resultat": 124
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 63°. Quelle est la mesure du second ?",
+            "reponse": "117°",
+            "p1": "117°",
+            "p2": "63°",
+            "p3": "27°",
+            "p4": "54°",
+            "correction": "Ils totalisent 180° : 180 − 63 = 117°.",
+            "a": 63,
+            "resultat": 117
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 70°. Quelle est la mesure du second ?",
+            "reponse": "110°",
+            "p1": "110°",
+            "p2": "70°",
+            "p3": "20°",
+            "p4": "40°",
+            "correction": "Ils totalisent 180° : 180 − 70 = 110°.",
+            "a": 70,
+            "resultat": 110
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 77°. Quelle est la mesure du second ?",
+            "reponse": "103°",
+            "p1": "103°",
+            "p2": "77°",
+            "p3": "13°",
+            "p4": "26°",
+            "correction": "Ils totalisent 180° : 180 − 77 = 103°.",
+            "a": 77,
+            "resultat": 103
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Deux angles adjacents forment un angle plat. Le premier mesure 84°. Quelle est la mesure du second ?",
+            "reponse": "96°",
+            "p1": "96°",
+            "p2": "84°",
+            "p3": "6°",
+            "p4": "12°",
+            "correction": "Ils totalisent 180° : 180 − 84 = 96°.",
+            "a": 84,
+            "resultat": 96
+          }
+        }
+      ],
+      "niveau": "6E",
+      "enonce_exploitable": "180 - a",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-DROIT-COMPLEMENT",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 15°. Quelle est la mesure de l’autre ?",
+            "reponse": "75°",
+            "p1": "75°",
+            "p2": "165°",
+            "p3": "15°",
+            "p4": "105°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 15 = 75°.",
+            "a": 15,
+            "resultat": 75
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 20°. Quelle est la mesure de l’autre ?",
+            "reponse": "70°",
+            "p1": "70°",
+            "p2": "160°",
+            "p3": "20°",
+            "p4": "110°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 20 = 70°.",
+            "a": 20,
+            "resultat": 70
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 25°. Quelle est la mesure de l’autre ?",
+            "reponse": "65°",
+            "p1": "65°",
+            "p2": "155°",
+            "p3": "25°",
+            "p4": "115°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 25 = 65°.",
+            "a": 25,
+            "resultat": 65
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 30°. Quelle est la mesure de l’autre ?",
+            "reponse": "60°",
+            "p1": "60°",
+            "p2": "150°",
+            "p3": "30°",
+            "p4": "120°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 30 = 60°.",
+            "a": 30,
+            "resultat": 60
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 35°. Quelle est la mesure de l’autre ?",
+            "reponse": "55°",
+            "p1": "55°",
+            "p2": "145°",
+            "p3": "35°",
+            "p4": "125°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 35 = 55°.",
+            "a": 35,
+            "resultat": 55
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 40°. Quelle est la mesure de l’autre ?",
+            "reponse": "50°",
+            "p1": "50°",
+            "p2": "140°",
+            "p3": "40°",
+            "p4": "130°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 40 = 50°.",
+            "a": 40,
+            "resultat": 50
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 50°. Quelle est la mesure de l’autre ?",
+            "reponse": "40°",
+            "p1": "40°",
+            "p2": "130°",
+            "p3": "50°",
+            "p4": "140°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 50 = 40°.",
+            "a": 50,
+            "resultat": 40
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 55°. Quelle est la mesure de l’autre ?",
+            "reponse": "35°",
+            "p1": "35°",
+            "p2": "125°",
+            "p3": "55°",
+            "p4": "145°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 55 = 35°.",
+            "a": 55,
+            "resultat": 35
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un angle droit est partagé en deux angles. L’un mesure 60°. Quelle est la mesure de l’autre ?",
+            "reponse": "30°",
+            "p1": "30°",
+            "p2": "120°",
+            "p3": "60°",
+            "p4": "150°",
+            "correction": "Les deux mesures totalisent 90° : 90 − 60 = 30°.",
+            "a": 60,
+            "resultat": 30
+          }
+        }
+      ],
+      "niveau": "6E",
+      "enonce_exploitable": "90 - a",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-RAISONNEMENT-001",
+      "capacite": "verifier",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "Dans un triangle, deux angles mesurent 90° et 35°. Quelle affirmation est nécessairement vraie ?",
+      "reponse": "Le troisième angle mesure 55°",
+      "propositions": [
+        "Le troisième angle mesure 55°",
+        "Le troisième angle mesure 65°",
+        "Le troisième angle mesure 90°",
+        "Le troisième angle mesure 145°"
+      ],
+      "correction": "Je vois : deux angles mesurent 90° et 35°. Or : la somme des angles d’un triangle est égale à 180°. Donc : le troisième angle mesure 180° − 90° − 35° = 55°.",
+      "niveau": "6E",
+      "enonce_exploitable": "180 - 90 - 35",
+      "reponse_exploitable": "55",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-CORRESPONDANTS-5E",
+      "niveau": "5E",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "resultat_exploitable": 42,
+            "inclinaison": 35,
+            "mesure": 42,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle mesure 42°. Combien mesure son angle correspondant ?",
+            "reponse": "42°",
+            "p1": "42°",
+            "p2": "138°",
+            "p3": "90°",
+            "p4": "57°",
+            "correction": "Les angles correspondants formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 42°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 58,
+            "inclinaison": 45,
+            "mesure": 58,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle mesure 58°. Combien mesure son angle correspondant ?",
+            "reponse": "58°",
+            "p1": "58°",
+            "p2": "122°",
+            "p3": "90°",
+            "p4": "73°",
+            "correction": "Les angles correspondants formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 58°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 67,
+            "inclinaison": 55,
+            "mesure": 67,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle mesure 67°. Combien mesure son angle correspondant ?",
+            "reponse": "67°",
+            "p1": "67°",
+            "p2": "113°",
+            "p3": "90°",
+            "p4": "82°",
+            "correction": "Les angles correspondants formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 67°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 73,
+            "inclinaison": 65,
+            "mesure": 73,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle mesure 73°. Combien mesure son angle correspondant ?",
+            "reponse": "73°",
+            "p1": "73°",
+            "p2": "107°",
+            "p3": "90°",
+            "p4": "88°",
+            "correction": "Les angles correspondants formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 73°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 108,
+            "inclinaison": 40,
+            "mesure": 108,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle mesure 108°. Combien mesure son angle correspondant ?",
+            "reponse": "108°",
+            "p1": "108°",
+            "p2": "72°",
+            "p3": "90°",
+            "p4": "123°",
+            "correction": "Les angles correspondants formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 108°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 124,
+            "inclinaison": 50,
+            "mesure": 124,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle mesure 124°. Combien mesure son angle correspondant ?",
+            "reponse": "124°",
+            "p1": "124°",
+            "p2": "56°",
+            "p3": "90°",
+            "p4": "139°",
+            "correction": "Les angles correspondants formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 124°."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "droites",
+        "configuration": "paralleles_secante",
+        "codage": "correspondants",
+        "angle": "[[inclinaison]]",
+        "mesure": "[[mesure]]",
+        "inconnue": true
+      },
+      "enonce_exploitable": "mesure",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-ALTERNES-5E",
+      "niveau": "5E",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "resultat_exploitable": 37,
+            "inclinaison": 35,
+            "mesure": 37,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle intérieur mesure 37°. Combien mesure son angle alterne-interne ?",
+            "reponse": "37°",
+            "p1": "37°",
+            "p2": "143°",
+            "p3": "90°",
+            "p4": "52°",
+            "correction": "Les angles alternes-internes formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 37°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 49,
+            "inclinaison": 45,
+            "mesure": 49,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle intérieur mesure 49°. Combien mesure son angle alterne-interne ?",
+            "reponse": "49°",
+            "p1": "49°",
+            "p2": "131°",
+            "p3": "90°",
+            "p4": "64°",
+            "correction": "Les angles alternes-internes formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 49°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 64,
+            "inclinaison": 55,
+            "mesure": 64,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle intérieur mesure 64°. Combien mesure son angle alterne-interne ?",
+            "reponse": "64°",
+            "p1": "64°",
+            "p2": "116°",
+            "p3": "90°",
+            "p4": "79°",
+            "correction": "Les angles alternes-internes formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 64°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 76,
+            "inclinaison": 65,
+            "mesure": 76,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle intérieur mesure 76°. Combien mesure son angle alterne-interne ?",
+            "reponse": "76°",
+            "p1": "76°",
+            "p2": "104°",
+            "p3": "90°",
+            "p4": "91°",
+            "correction": "Les angles alternes-internes formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 76°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 112,
+            "inclinaison": 40,
+            "mesure": 112,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle intérieur mesure 112°. Combien mesure son angle alterne-interne ?",
+            "reponse": "112°",
+            "p1": "112°",
+            "p2": "68°",
+            "p3": "90°",
+            "p4": "127°",
+            "correction": "Les angles alternes-internes formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 112°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 133,
+            "inclinaison": 50,
+            "mesure": 133,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Un angle intérieur mesure 133°. Combien mesure son angle alterne-interne ?",
+            "reponse": "133°",
+            "p1": "133°",
+            "p2": "47°",
+            "p3": "90°",
+            "p4": "148°",
+            "correction": "Les angles alternes-internes formés par une sécante avec deux droites parallèles ont la même mesure. La mesure recherchée est 133°."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "droites",
+        "configuration": "paralleles_secante",
+        "codage": "alternes_internes",
+        "angle": "[[inclinaison]]",
+        "mesure": "[[mesure]]",
+        "inconnue": true
+      },
+      "enonce_exploitable": "mesure",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-SUPPLEMENT-PARALLELES-5E",
+      "niveau": "5E",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "resultat_exploitable": 145,
+            "inclinaison": 35,
+            "mesure": 35,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Deux angles intérieurs situés du même côté de la sécante sont supplémentaires. Si l’un mesure 35°, combien mesure l’autre ?",
+            "reponse": "145°",
+            "p1": "145°",
+            "p2": "35°",
+            "p3": "90°",
+            "p4": "160°",
+            "correction": "Ces deux angles intérieurs du même côté de la sécante sont supplémentaires : leur somme vaut 180°. La mesure recherchée est 145°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 132,
+            "inclinaison": 45,
+            "mesure": 48,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Deux angles intérieurs situés du même côté de la sécante sont supplémentaires. Si l’un mesure 48°, combien mesure l’autre ?",
+            "reponse": "132°",
+            "p1": "132°",
+            "p2": "48°",
+            "p3": "90°",
+            "p4": "147°",
+            "correction": "Ces deux angles intérieurs du même côté de la sécante sont supplémentaires : leur somme vaut 180°. La mesure recherchée est 132°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 115,
+            "inclinaison": 55,
+            "mesure": 65,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Deux angles intérieurs situés du même côté de la sécante sont supplémentaires. Si l’un mesure 65°, combien mesure l’autre ?",
+            "reponse": "115°",
+            "p1": "115°",
+            "p2": "65°",
+            "p3": "90°",
+            "p4": "130°",
+            "correction": "Ces deux angles intérieurs du même côté de la sécante sont supplémentaires : leur somme vaut 180°. La mesure recherchée est 115°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 106,
+            "inclinaison": 65,
+            "mesure": 74,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Deux angles intérieurs situés du même côté de la sécante sont supplémentaires. Si l’un mesure 74°, combien mesure l’autre ?",
+            "reponse": "106°",
+            "p1": "106°",
+            "p2": "74°",
+            "p3": "90°",
+            "p4": "121°",
+            "correction": "Ces deux angles intérieurs du même côté de la sécante sont supplémentaires : leur somme vaut 180°. La mesure recherchée est 106°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 75,
+            "inclinaison": 40,
+            "mesure": 105,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Deux angles intérieurs situés du même côté de la sécante sont supplémentaires. Si l’un mesure 105°, combien mesure l’autre ?",
+            "reponse": "75°",
+            "p1": "75°",
+            "p2": "105°",
+            "p3": "90°",
+            "p4": "60°",
+            "correction": "Ces deux angles intérieurs du même côté de la sécante sont supplémentaires : leur somme vaut 180°. La mesure recherchée est 75°."
+          }
+        },
+        {
+          "parametres": {
+            "resultat_exploitable": 54,
+            "inclinaison": 50,
+            "mesure": 126,
+            "enonce": "Deux droites parallèles sont coupées par une sécante. Deux angles intérieurs situés du même côté de la sécante sont supplémentaires. Si l’un mesure 126°, combien mesure l’autre ?",
+            "reponse": "54°",
+            "p1": "54°",
+            "p2": "126°",
+            "p3": "90°",
+            "p4": "69°",
+            "correction": "Ces deux angles intérieurs du même côté de la sécante sont supplémentaires : leur somme vaut 180°. La mesure recherchée est 54°."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "droites",
+        "configuration": "paralleles_secante",
+        "codage": "interieurs_meme_cote",
+        "angle": "[[inclinaison]]",
+        "mesure": "[[mesure]]",
+        "inconnue": true
+      },
+      "enonce_exploitable": "180 - mesure",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ANGLES-RECIPROQUE-5E",
+      "niveau": "5E",
+      "capacite": "justifier",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "Deux droites sont coupées par une sécante. Deux angles correspondants mesurent chacun 68°. Que peut-on démontrer ?",
+      "reponse": "Les deux droites sont parallèles.",
+      "propositions": [
+        "Les deux droites sont parallèles.",
+        "Les deux droites sont perpendiculaires.",
+        "Les deux droites sont confondues.",
+        "On ne peut rien déduire sur ces droites."
+      ],
+      "correction": "La réciproque de la propriété des angles correspondants permet de démontrer le parallélisme lorsque ces angles ont la même mesure.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
+    }
+  ]
+}

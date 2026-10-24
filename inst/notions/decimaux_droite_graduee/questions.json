@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "DROITE_GRADUEE_DECIMAUX-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,10 @@
             "p1": "4,8",
             "p2": "4,71",
             "p3": "5,7",
-            "p4": "4,07"
+            "p4": "4,07",
+            "depart": 4.7,
+            "pas": 0.1,
+            "resultat_exploitable": 4.8
           }
         },
         {
@@ -33,7 +37,10 @@
             "p1": "6,4",
             "p2": "6,31",
             "p3": "7,3",
-            "p4": "6,03"
+            "p4": "6,03",
+            "depart": 6.3,
+            "pas": 0.1,
+            "resultat_exploitable": 6.4
           }
         },
         {
@@ -44,14 +51,21 @@
             "p1": "8,7",
             "p2": "8,61",
             "p3": "9,6",
-            "p4": "8,06"
+            "p4": "8,06",
+            "depart": 8.6,
+            "pas": 0.1,
+            "resultat_exploitable": 8.7
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "depart + pas",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DROITE_GRADUEE_DECIMAUX-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +84,10 @@
             "p1": "2,5",
             "p2": "2,05",
             "p3": "7",
-            "p4": "2,005"
+            "p4": "2,005",
+            "depart": 2,
+            "dixiemes": 5,
+            "resultat_exploitable": 2.5
           }
         },
         {
@@ -81,7 +98,10 @@
             "p1": "4,3",
             "p2": "4,03",
             "p3": "7",
-            "p4": "4,003"
+            "p4": "4,003",
+            "depart": 4,
+            "dixiemes": 3,
+            "resultat_exploitable": 4.3
           }
         },
         {
@@ -92,14 +112,21 @@
             "p1": "5,7",
             "p2": "5,07",
             "p3": "12",
-            "p4": "5,007"
+            "p4": "5,007",
+            "depart": 5,
+            "dixiemes": 7,
+            "resultat_exploitable": 5.7
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "depart + dixiemes / 10",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DROITE_GRADUEE_DECIMAUX-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +145,11 @@
             "p1": "0,01",
             "p2": "0,1",
             "p3": "0,001",
-            "p4": "1"
+            "p4": "1",
+            "borne_inf": 1,
+            "borne_sup": 2,
+            "subdivisions": 100,
+            "resultat_exploitable": 0.01
           }
         },
         {
@@ -129,7 +160,11 @@
             "p1": "0,1",
             "p2": "0,01",
             "p3": "0,001",
-            "p4": "1"
+            "p4": "1",
+            "borne_inf": 2,
+            "borne_sup": 3,
+            "subdivisions": 10,
+            "resultat_exploitable": 0.1
           }
         },
         {
@@ -140,14 +175,22 @@
             "p1": "0,001",
             "p2": "0,01",
             "p3": "0,1",
-            "p4": "1"
+            "p4": "1",
+            "borne_inf": 4,
+            "borne_sup": 5,
+            "subdivisions": 1000,
+            "resultat_exploitable": 0.001
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(borne_sup - borne_inf) / subdivisions",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DROITE_GRADUEE_DECIMAUX-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -166,7 +209,10 @@
             "p1": "3,6",
             "p2": "3,5",
             "p3": "3,42",
-            "p4": "3,8"
+            "p4": "3,8",
+            "depart": 3.4,
+            "pas": 0.2,
+            "resultat_exploitable": 3.6
           }
         },
         {
@@ -177,7 +223,10 @@
             "p1": "2,7",
             "p2": "2,5",
             "p3": "2,43",
-            "p4": "3,0"
+            "p4": "3,0",
+            "depart": 2.4,
+            "pas": 0.3,
+            "resultat_exploitable": 2.7
           }
         },
         {
@@ -188,14 +237,21 @@
             "p1": "5,6",
             "p2": "5,3",
             "p3": "5,24",
-            "p4": "6,0"
+            "p4": "6,0",
+            "depart": 5.2,
+            "pas": 0.4,
+            "resultat_exploitable": 5.6
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "depart + pas",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "DROITE_GRADUEE_DECIMAUX-MOT_A_TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on le nombre qui repère la position d’un point sur une droite graduée ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -213,30 +269,2562 @@
         "unité",
         "graduation"
       ],
-      "correction": "L’abscisse est le nombre associé à la position du point."
+      "correction": "L’abscisse est le nombre associé à la position du point.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
-      "id": "DROITE_GRADUEE_DECIMAUX-MOT_MASQUE",
-      "type": "qcm",
-      "enonce": "Comment appelle-t-on le nombre qui repère la position d’un point sur une droite graduée ? Choisis le mot masqué.",
-      "presentation": {
-        "type": "mot_masque",
-        "masques": {
-          "abscisse": "A________E",
-          "origine": "O________E",
-          "unité": "U________É",
-          "graduation": "G________N"
-        },
-        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
-      },
-      "reponse": "abscisse",
+      "id": "DROITE_GRADUEE_DECIMAUX-VISUEL-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "Quelle est l’abscisse du point A sur la droite graduée ?",
+      "reponse": "2,4",
       "propositions": [
-        "abscisse",
-        "origine",
-        "unité",
-        "graduation"
+        "2,4",
+        "2,04",
+        "2,5",
+        "2,6"
       ],
-      "correction": "L’abscisse est le nombre associé à la position du point."
+      "correction": "De 2 à 3, chaque petit intervalle vaut un dixième. A est placé quatre intervalles après 2 : son abscisse est 2,4.",
+      "illustration": {
+        "id": "droite_graduee",
+        "debut": 2,
+        "fin": 3,
+        "pas": 0.1,
+        "point": 2.4,
+        "etiquette": "A"
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "DROITE_GRADUEE_DECIMAUX-VISUEL-002",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "droite_graduee",
+        "debut": "[[debut]]",
+        "fin": "[[fin]]",
+        "pas": "[[pas]]",
+        "point": "[[point]]",
+        "etiquette": "[[etiquette]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 0.1,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "0,1",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 1 graduation(s) après 0,00.",
+            "p1": "0,0",
+            "p2": "0,2",
+            "p3": "0,1",
+            "p4": "0,01",
+            "debut": 0,
+            "fin": 1,
+            "pas": 0.1,
+            "point": 0.1,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 1.2,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "1,2",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 2 graduation(s) après 1,00.",
+            "p1": "1,3",
+            "p2": "1,2",
+            "p3": "1,1",
+            "p4": "1,02",
+            "debut": 1,
+            "fin": 2,
+            "pas": 0.1,
+            "point": 1.2,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 2.3,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "2,3",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 3 graduation(s) après 2,00.",
+            "p1": "2,03",
+            "p2": "2,4",
+            "p3": "2,2",
+            "p4": "2,3",
+            "debut": 2,
+            "fin": 3,
+            "pas": 0.1,
+            "point": 2.3,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 3.4,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "3,4",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 4 graduation(s) après 3,00.",
+            "p1": "3,3",
+            "p2": "3,4",
+            "p3": "3,04",
+            "p4": "3,5",
+            "debut": 3,
+            "fin": 4,
+            "pas": 0.1,
+            "point": 3.4,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 4.5,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "4,5",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 5 graduation(s) après 4,00.",
+            "p1": "4,4",
+            "p2": "4,05",
+            "p3": "4,5",
+            "p4": "4,6",
+            "debut": 4,
+            "fin": 5,
+            "pas": 0.1,
+            "point": 4.5,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 5.6,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "5,6",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 6 graduation(s) après 5,00.",
+            "p1": "5,06",
+            "p2": "5,5",
+            "p3": "5,7",
+            "p4": "5,6",
+            "debut": 5,
+            "fin": 6,
+            "pas": 0.1,
+            "point": 5.6,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 6.7,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "6,7",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 7 graduation(s) après 6,00.",
+            "p1": "6,7",
+            "p2": "6,6",
+            "p3": "6,07",
+            "p4": "6,8",
+            "debut": 6,
+            "fin": 7,
+            "pas": 0.1,
+            "point": 6.7,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 7.8,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "7,8",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 8 graduation(s) après 7,00.",
+            "p1": "7,9",
+            "p2": "7,7",
+            "p3": "7,8",
+            "p4": "7,08",
+            "debut": 7,
+            "fin": 8,
+            "pas": 0.1,
+            "point": 7.8,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 8.9,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "8,9",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 9 graduation(s) après 8,00.",
+            "p1": "8,8",
+            "p2": "8,9",
+            "p3": "9,0",
+            "p4": "8,09",
+            "debut": 8,
+            "fin": 9,
+            "pas": 0.1,
+            "point": 8.9,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 9.1,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "9,1",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 1 graduation(s) après 9,00.",
+            "p1": "9,2",
+            "p2": "9,01",
+            "p3": "9,0",
+            "p4": "9,1",
+            "debut": 9,
+            "fin": 10,
+            "pas": 0.1,
+            "point": 9.1,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 10.2,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "10,2",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 2 graduation(s) après 10,00.",
+            "p1": "10,2",
+            "p2": "10,1",
+            "p3": "10,3",
+            "p4": "10,02",
+            "debut": 10,
+            "fin": 11,
+            "pas": 0.1,
+            "point": 10.2,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 11.3,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "11,3",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 3 graduation(s) après 11,00.",
+            "p1": "11,4",
+            "p2": "11,2",
+            "p3": "11,3",
+            "p4": "11,03",
+            "debut": 11,
+            "fin": 12,
+            "pas": 0.1,
+            "point": 11.3,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 12.4,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "12,4",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 4 graduation(s) après 12,00.",
+            "p1": "12,5",
+            "p2": "12,3",
+            "p3": "12,4",
+            "p4": "12,04",
+            "debut": 12,
+            "fin": 13,
+            "pas": 0.1,
+            "point": 12.4,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 13.5,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "13,5",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 5 graduation(s) après 13,00.",
+            "p1": "13,6",
+            "p2": "13,5",
+            "p3": "13,4",
+            "p4": "13,05",
+            "debut": 13,
+            "fin": 14,
+            "pas": 0.1,
+            "point": 13.5,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 14.6,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "14,6",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 6 graduation(s) après 14,00.",
+            "p1": "14,6",
+            "p2": "14,5",
+            "p3": "14,06",
+            "p4": "14,7",
+            "debut": 14,
+            "fin": 15,
+            "pas": 0.1,
+            "point": 14.6,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 15.7,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "15,7",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 7 graduation(s) après 15,00.",
+            "p1": "15,07",
+            "p2": "15,8",
+            "p3": "15,6",
+            "p4": "15,7",
+            "debut": 15,
+            "fin": 16,
+            "pas": 0.1,
+            "point": 15.7,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 16.8,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "16,8",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 8 graduation(s) après 16,00.",
+            "p1": "16,7",
+            "p2": "16,8",
+            "p3": "16,08",
+            "p4": "16,9",
+            "debut": 16,
+            "fin": 17,
+            "pas": 0.1,
+            "point": 16.8,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 17.9,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "17,9",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 9 graduation(s) après 17,00.",
+            "p1": "17,09",
+            "p2": "17,9",
+            "p3": "18,0",
+            "p4": "17,8",
+            "debut": 17,
+            "fin": 18,
+            "pas": 0.1,
+            "point": 17.9,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 18.1,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "18,1",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 1 graduation(s) après 18,00.",
+            "p1": "18,1",
+            "p2": "18,2",
+            "p3": "18,0",
+            "p4": "18,01",
+            "debut": 18,
+            "fin": 19,
+            "pas": 0.1,
+            "point": 18.1,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 19.2,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "19,2",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 2 graduation(s) après 19,00.",
+            "p1": "19,02",
+            "p2": "19,2",
+            "p3": "19,1",
+            "p4": "19,3",
+            "debut": 19,
+            "fin": 20,
+            "pas": 0.1,
+            "point": 19.2,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 0.3,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "0,3",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 3 graduation(s) après 0,00.",
+            "p1": "0,03",
+            "p2": "0,3",
+            "p3": "0,2",
+            "p4": "0,4",
+            "debut": 0,
+            "fin": 1,
+            "pas": 0.1,
+            "point": 0.3,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 1.4,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "1,4",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 4 graduation(s) après 1,00.",
+            "p1": "1,3",
+            "p2": "1,04",
+            "p3": "1,4",
+            "p4": "1,5",
+            "debut": 1,
+            "fin": 2,
+            "pas": 0.1,
+            "point": 1.4,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 2.5,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "2,5",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 5 graduation(s) après 2,00.",
+            "p1": "2,4",
+            "p2": "2,05",
+            "p3": "2,5",
+            "p4": "2,6",
+            "debut": 2,
+            "fin": 3,
+            "pas": 0.1,
+            "point": 2.5,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 3.6,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "3,6",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 6 graduation(s) après 3,00.",
+            "p1": "3,7",
+            "p2": "3,5",
+            "p3": "3,6",
+            "p4": "3,06",
+            "debut": 3,
+            "fin": 4,
+            "pas": 0.1,
+            "point": 3.6,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 4.7,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "4,7",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 7 graduation(s) après 4,00.",
+            "p1": "4,6",
+            "p2": "4,7",
+            "p3": "4,8",
+            "p4": "4,07",
+            "debut": 4,
+            "fin": 5,
+            "pas": 0.1,
+            "point": 4.7,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 5.8,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "5,8",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 8 graduation(s) après 5,00.",
+            "p1": "5,7",
+            "p2": "5,08",
+            "p3": "5,9",
+            "p4": "5,8",
+            "debut": 5,
+            "fin": 6,
+            "pas": 0.1,
+            "point": 5.8,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 6.9,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "6,9",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 9 graduation(s) après 6,00.",
+            "p1": "6,8",
+            "p2": "6,09",
+            "p3": "7,0",
+            "p4": "6,9",
+            "debut": 6,
+            "fin": 7,
+            "pas": 0.1,
+            "point": 6.9,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 7.1,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "7,1",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 1 graduation(s) après 7,00.",
+            "p1": "7,1",
+            "p2": "7,2",
+            "p3": "7,0",
+            "p4": "7,01",
+            "debut": 7,
+            "fin": 8,
+            "pas": 0.1,
+            "point": 7.1,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 8.2,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "8,2",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 2 graduation(s) après 8,00.",
+            "p1": "8,2",
+            "p2": "8,1",
+            "p3": "8,3",
+            "p4": "8,02",
+            "debut": 8,
+            "fin": 9,
+            "pas": 0.1,
+            "point": 8.2,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 9.3,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "9,3",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 3 graduation(s) après 9,00.",
+            "p1": "9,3",
+            "p2": "9,2",
+            "p3": "9,03",
+            "p4": "9,4",
+            "debut": 9,
+            "fin": 10,
+            "pas": 0.1,
+            "point": 9.3,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 10.4,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "10,4",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 4 graduation(s) après 10,00.",
+            "p1": "10,4",
+            "p2": "10,5",
+            "p3": "10,04",
+            "p4": "10,3",
+            "debut": 10,
+            "fin": 11,
+            "pas": 0.1,
+            "point": 10.4,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 11.5,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "11,5",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 5 graduation(s) après 11,00.",
+            "p1": "11,4",
+            "p2": "11,5",
+            "p3": "11,05",
+            "p4": "11,6",
+            "debut": 11,
+            "fin": 12,
+            "pas": 0.1,
+            "point": 11.5,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 12.6,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "12,6",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 6 graduation(s) après 12,00.",
+            "p1": "12,06",
+            "p2": "12,5",
+            "p3": "12,6",
+            "p4": "12,7",
+            "debut": 12,
+            "fin": 13,
+            "pas": 0.1,
+            "point": 12.6,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 13.7,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "13,7",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 7 graduation(s) après 13,00.",
+            "p1": "13,6",
+            "p2": "13,7",
+            "p3": "13,8",
+            "p4": "13,07",
+            "debut": 13,
+            "fin": 14,
+            "pas": 0.1,
+            "point": 13.7,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 14.8,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "14,8",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 8 graduation(s) après 14,00.",
+            "p1": "14,8",
+            "p2": "14,08",
+            "p3": "14,9",
+            "p4": "14,7",
+            "debut": 14,
+            "fin": 15,
+            "pas": 0.1,
+            "point": 14.8,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 15.9,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "15,9",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 9 graduation(s) après 15,00.",
+            "p1": "15,09",
+            "p2": "15,9",
+            "p3": "16,0",
+            "p4": "15,8",
+            "debut": 15,
+            "fin": 16,
+            "pas": 0.1,
+            "point": 15.9,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 16.1,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "16,1",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 1 graduation(s) après 16,00.",
+            "p1": "16,2",
+            "p2": "16,01",
+            "p3": "16,0",
+            "p4": "16,1",
+            "debut": 16,
+            "fin": 17,
+            "pas": 0.1,
+            "point": 16.1,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 17.2,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "17,2",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 2 graduation(s) après 17,00.",
+            "p1": "17,1",
+            "p2": "17,02",
+            "p3": "17,2",
+            "p4": "17,3",
+            "debut": 17,
+            "fin": 18,
+            "pas": 0.1,
+            "point": 17.2,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 18.3,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "18,3",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 3 graduation(s) après 18,00.",
+            "p1": "18,3",
+            "p2": "18,03",
+            "p3": "18,4",
+            "p4": "18,2",
+            "debut": 18,
+            "fin": 19,
+            "pas": 0.1,
+            "point": 18.3,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 19.4,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "19,4",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 4 graduation(s) après 19,00.",
+            "p1": "19,04",
+            "p2": "19,5",
+            "p3": "19,3",
+            "p4": "19,4",
+            "debut": 19,
+            "fin": 20,
+            "pas": 0.1,
+            "point": 19.4,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 0.5,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "0,5",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 5 graduation(s) après 0,00.",
+            "p1": "0,05",
+            "p2": "0,5",
+            "p3": "0,4",
+            "p4": "0,6",
+            "debut": 0,
+            "fin": 1,
+            "pas": 0.1,
+            "point": 0.5,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 1.6,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "1,6",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 6 graduation(s) après 1,00.",
+            "p1": "1,6",
+            "p2": "1,06",
+            "p3": "1,5",
+            "p4": "1,7",
+            "debut": 1,
+            "fin": 2,
+            "pas": 0.1,
+            "point": 1.6,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 2.7,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "2,7",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 7 graduation(s) après 2,00.",
+            "p1": "2,07",
+            "p2": "2,8",
+            "p3": "2,6",
+            "p4": "2,7",
+            "debut": 2,
+            "fin": 3,
+            "pas": 0.1,
+            "point": 2.7,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 3.8,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "3,8",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 8 graduation(s) après 3,00.",
+            "p1": "3,7",
+            "p2": "3,08",
+            "p3": "3,9",
+            "p4": "3,8",
+            "debut": 3,
+            "fin": 4,
+            "pas": 0.1,
+            "point": 3.8,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 4.9,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "4,9",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 9 graduation(s) après 4,00.",
+            "p1": "4,09",
+            "p2": "5,0",
+            "p3": "4,9",
+            "p4": "4,8",
+            "debut": 4,
+            "fin": 5,
+            "pas": 0.1,
+            "point": 4.9,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 5.1,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "5,1",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 1 graduation(s) après 5,00.",
+            "p1": "5,2",
+            "p2": "5,01",
+            "p3": "5,1",
+            "p4": "5,0",
+            "debut": 5,
+            "fin": 6,
+            "pas": 0.1,
+            "point": 5.1,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 6.2,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "6,2",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 2 graduation(s) après 6,00.",
+            "p1": "6,2",
+            "p2": "6,1",
+            "p3": "6,3",
+            "p4": "6,02",
+            "debut": 6,
+            "fin": 7,
+            "pas": 0.1,
+            "point": 6.2,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 7.3,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "7,3",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 3 graduation(s) après 7,00.",
+            "p1": "7,2",
+            "p2": "7,4",
+            "p3": "7,03",
+            "p4": "7,3",
+            "debut": 7,
+            "fin": 8,
+            "pas": 0.1,
+            "point": 7.3,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 8.4,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "8,4",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 4 graduation(s) après 8,00.",
+            "p1": "8,3",
+            "p2": "8,4",
+            "p3": "8,04",
+            "p4": "8,5",
+            "debut": 8,
+            "fin": 9,
+            "pas": 0.1,
+            "point": 8.4,
+            "etiquette": "B"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 9.5,
+            "enonce": "Quelle est l’abscisse du point B sur cette droite graduée ?",
+            "reponse": "9,5",
+            "correction": "Chaque graduation vaut 0,10 ; le point B est à 5 graduation(s) après 9,00.",
+            "p1": "9,4",
+            "p2": "9,5",
+            "p3": "9,6",
+            "p4": "9,05",
+            "debut": 9,
+            "fin": 10,
+            "pas": 0.1,
+            "point": 9.5,
+            "etiquette": "B"
+          }
+        }
+      ],
+      "enonce_exploitable": "debut + indice * pas",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "DROITE_GRADUEE_DECIMAUX-VISUEL-003",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "illustration": {
+        "id": "droite_graduee",
+        "debut": "[[debut]]",
+        "fin": "[[fin]]",
+        "pas": "[[pas]]",
+        "point": "[[point]]",
+        "etiquette": "[[etiquette]]"
+      },
+      "variantes": [
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 0.05,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "0,05",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 1 graduation(s) après 0,00.",
+            "p1": "0,00",
+            "p2": "0,10",
+            "p3": "0,005",
+            "p4": "0,05",
+            "debut": 0.0,
+            "fin": 0.5,
+            "pas": 0.05,
+            "point": 0.05,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 0.9,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "0,90",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 8 graduation(s) après 0,50.",
+            "p1": "0,85",
+            "p2": "0,540",
+            "p3": "0,90",
+            "p4": "0,95",
+            "debut": 0.5,
+            "fin": 1.0,
+            "pas": 0.05,
+            "point": 0.9,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 1.3,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "1,30",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 6 graduation(s) après 1,00.",
+            "p1": "1,30",
+            "p2": "1,25",
+            "p3": "1,030",
+            "p4": "1,35",
+            "debut": 1.0,
+            "fin": 1.5,
+            "pas": 0.05,
+            "point": 1.3,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 1.7,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "1,70",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 4 graduation(s) après 1,50.",
+            "p1": "1,65",
+            "p2": "1,75",
+            "p3": "1,70",
+            "p4": "1,520",
+            "debut": 1.5,
+            "fin": 2.0,
+            "pas": 0.05,
+            "point": 1.7,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 2.1,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "2,10",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 2 graduation(s) après 2,00.",
+            "p1": "2,15",
+            "p2": "2,010",
+            "p3": "2,10",
+            "p4": "2,05",
+            "debut": 2.0,
+            "fin": 2.5,
+            "pas": 0.05,
+            "point": 2.1,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 2.95,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "2,95",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 9 graduation(s) après 2,50.",
+            "p1": "2,545",
+            "p2": "2,95",
+            "p3": "3,00",
+            "p4": "2,90",
+            "debut": 2.5,
+            "fin": 3.0,
+            "pas": 0.05,
+            "point": 2.95,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 3.35,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "3,35",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 7 graduation(s) après 3,00.",
+            "p1": "3,035",
+            "p2": "3,35",
+            "p3": "3,30",
+            "p4": "3,40",
+            "debut": 3.0,
+            "fin": 3.5,
+            "pas": 0.05,
+            "point": 3.35,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 3.75,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "3,75",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 5 graduation(s) après 3,50.",
+            "p1": "3,80",
+            "p2": "3,70",
+            "p3": "3,525",
+            "p4": "3,75",
+            "debut": 3.5,
+            "fin": 4.0,
+            "pas": 0.05,
+            "point": 3.75,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 4.15,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "4,15",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 3 graduation(s) après 4,00.",
+            "p1": "4,20",
+            "p2": "4,015",
+            "p3": "4,15",
+            "p4": "4,10",
+            "debut": 4.0,
+            "fin": 4.5,
+            "pas": 0.05,
+            "point": 4.15,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 4.55,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "4,55",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 1 graduation(s) après 4,50.",
+            "p1": "4,50",
+            "p2": "4,55",
+            "p3": "4,505",
+            "p4": "4,60",
+            "debut": 4.5,
+            "fin": 5.0,
+            "pas": 0.05,
+            "point": 4.55,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 5.4,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "5,40",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 8 graduation(s) après 5,00.",
+            "p1": "5,35",
+            "p2": "5,45",
+            "p3": "5,40",
+            "p4": "5,040",
+            "debut": 5.0,
+            "fin": 5.5,
+            "pas": 0.05,
+            "point": 5.4,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 5.8,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "5,80",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 6 graduation(s) après 5,50.",
+            "p1": "5,85",
+            "p2": "5,530",
+            "p3": "5,75",
+            "p4": "5,80",
+            "debut": 5.5,
+            "fin": 6.0,
+            "pas": 0.05,
+            "point": 5.8,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 6.2,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "6,20",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 4 graduation(s) après 6,00.",
+            "p1": "6,15",
+            "p2": "6,25",
+            "p3": "6,20",
+            "p4": "6,020",
+            "debut": 6.0,
+            "fin": 6.5,
+            "pas": 0.05,
+            "point": 6.2,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 6.6,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "6,60",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 2 graduation(s) après 6,50.",
+            "p1": "6,55",
+            "p2": "6,510",
+            "p3": "6,60",
+            "p4": "6,65",
+            "debut": 6.5,
+            "fin": 7.0,
+            "pas": 0.05,
+            "point": 6.6,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 7.45,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "7,45",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 9 graduation(s) après 7,00.",
+            "p1": "7,50",
+            "p2": "7,40",
+            "p3": "7,45",
+            "p4": "7,045",
+            "debut": 7.0,
+            "fin": 7.5,
+            "pas": 0.05,
+            "point": 7.45,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 7.85,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "7,85",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 7 graduation(s) après 7,50.",
+            "p1": "7,80",
+            "p2": "7,535",
+            "p3": "7,85",
+            "p4": "7,90",
+            "debut": 7.5,
+            "fin": 8.0,
+            "pas": 0.05,
+            "point": 7.85,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 8.25,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "8,25",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 5 graduation(s) après 8,00.",
+            "p1": "8,20",
+            "p2": "8,25",
+            "p3": "8,30",
+            "p4": "8,025",
+            "debut": 8.0,
+            "fin": 8.5,
+            "pas": 0.05,
+            "point": 8.25,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 8.65,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "8,65",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 3 graduation(s) après 8,50.",
+            "p1": "8,65",
+            "p2": "8,70",
+            "p3": "8,60",
+            "p4": "8,515",
+            "debut": 8.5,
+            "fin": 9.0,
+            "pas": 0.05,
+            "point": 8.65,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 9.05,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "9,05",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 1 graduation(s) après 9,00.",
+            "p1": "9,005",
+            "p2": "9,00",
+            "p3": "9,05",
+            "p4": "9,10",
+            "debut": 9.0,
+            "fin": 9.5,
+            "pas": 0.05,
+            "point": 9.05,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 9.9,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "9,90",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 8 graduation(s) après 9,50.",
+            "p1": "9,90",
+            "p2": "9,95",
+            "p3": "9,85",
+            "p4": "9,540",
+            "debut": 9.5,
+            "fin": 10.0,
+            "pas": 0.05,
+            "point": 9.9,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 0.3,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "0,30",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 6 graduation(s) après 0,00.",
+            "p1": "0,030",
+            "p2": "0,25",
+            "p3": "0,35",
+            "p4": "0,30",
+            "debut": 0.0,
+            "fin": 0.5,
+            "pas": 0.05,
+            "point": 0.3,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 0.7,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "0,70",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 4 graduation(s) après 0,50.",
+            "p1": "0,70",
+            "p2": "0,65",
+            "p3": "0,520",
+            "p4": "0,75",
+            "debut": 0.5,
+            "fin": 1.0,
+            "pas": 0.05,
+            "point": 0.7,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 1.1,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "1,10",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 2 graduation(s) après 1,00.",
+            "p1": "1,15",
+            "p2": "1,10",
+            "p3": "1,05",
+            "p4": "1,010",
+            "debut": 1.0,
+            "fin": 1.5,
+            "pas": 0.05,
+            "point": 1.1,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 1.95,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "1,95",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 9 graduation(s) après 1,50.",
+            "p1": "1,545",
+            "p2": "2,00",
+            "p3": "1,95",
+            "p4": "1,90",
+            "debut": 1.5,
+            "fin": 2.0,
+            "pas": 0.05,
+            "point": 1.95,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 2.35,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "2,35",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 7 graduation(s) après 2,00.",
+            "p1": "2,30",
+            "p2": "2,35",
+            "p3": "2,035",
+            "p4": "2,40",
+            "debut": 2.0,
+            "fin": 2.5,
+            "pas": 0.05,
+            "point": 2.35,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 2.75,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "2,75",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 5 graduation(s) après 2,50.",
+            "p1": "2,70",
+            "p2": "2,80",
+            "p3": "2,75",
+            "p4": "2,525",
+            "debut": 2.5,
+            "fin": 3.0,
+            "pas": 0.05,
+            "point": 2.75,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 3.15,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "3,15",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 3 graduation(s) après 3,00.",
+            "p1": "3,15",
+            "p2": "3,20",
+            "p3": "3,015",
+            "p4": "3,10",
+            "debut": 3.0,
+            "fin": 3.5,
+            "pas": 0.05,
+            "point": 3.15,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 3.55,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "3,55",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 1 graduation(s) après 3,50.",
+            "p1": "3,505",
+            "p2": "3,50",
+            "p3": "3,55",
+            "p4": "3,60",
+            "debut": 3.5,
+            "fin": 4.0,
+            "pas": 0.05,
+            "point": 3.55,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 4.4,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "4,40",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 8 graduation(s) après 4,00.",
+            "p1": "4,040",
+            "p2": "4,40",
+            "p3": "4,35",
+            "p4": "4,45",
+            "debut": 4.0,
+            "fin": 4.5,
+            "pas": 0.05,
+            "point": 4.4,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 4.8,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "4,80",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 6 graduation(s) après 4,50.",
+            "p1": "4,80",
+            "p2": "4,530",
+            "p3": "4,85",
+            "p4": "4,75",
+            "debut": 4.5,
+            "fin": 5.0,
+            "pas": 0.05,
+            "point": 4.8,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 5.2,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "5,20",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 4 graduation(s) après 5,00.",
+            "p1": "5,25",
+            "p2": "5,020",
+            "p3": "5,20",
+            "p4": "5,15",
+            "debut": 5.0,
+            "fin": 5.5,
+            "pas": 0.05,
+            "point": 5.2,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 5.6,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "5,60",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 2 graduation(s) après 5,50.",
+            "p1": "5,60",
+            "p2": "5,55",
+            "p3": "5,65",
+            "p4": "5,510",
+            "debut": 5.5,
+            "fin": 6.0,
+            "pas": 0.05,
+            "point": 5.6,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 6.45,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "6,45",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 9 graduation(s) après 6,00.",
+            "p1": "6,40",
+            "p2": "6,045",
+            "p3": "6,50",
+            "p4": "6,45",
+            "debut": 6.0,
+            "fin": 6.5,
+            "pas": 0.05,
+            "point": 6.45,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 6.85,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "6,85",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 7 graduation(s) après 6,50.",
+            "p1": "6,85",
+            "p2": "6,80",
+            "p3": "6,535",
+            "p4": "6,90",
+            "debut": 6.5,
+            "fin": 7.0,
+            "pas": 0.05,
+            "point": 6.85,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 7.25,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "7,25",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 5 graduation(s) après 7,00.",
+            "p1": "7,025",
+            "p2": "7,30",
+            "p3": "7,20",
+            "p4": "7,25",
+            "debut": 7.0,
+            "fin": 7.5,
+            "pas": 0.05,
+            "point": 7.25,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 7.65,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "7,65",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 3 graduation(s) après 7,50.",
+            "p1": "7,60",
+            "p2": "7,515",
+            "p3": "7,65",
+            "p4": "7,70",
+            "debut": 7.5,
+            "fin": 8.0,
+            "pas": 0.05,
+            "point": 7.65,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 8.05,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "8,05",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 1 graduation(s) après 8,00.",
+            "p1": "8,00",
+            "p2": "8,10",
+            "p3": "8,005",
+            "p4": "8,05",
+            "debut": 8.0,
+            "fin": 8.5,
+            "pas": 0.05,
+            "point": 8.05,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 8.9,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "8,90",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 8 graduation(s) après 8,50.",
+            "p1": "8,95",
+            "p2": "8,540",
+            "p3": "8,85",
+            "p4": "8,90",
+            "debut": 8.5,
+            "fin": 9.0,
+            "pas": 0.05,
+            "point": 8.9,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 9.3,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "9,30",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 6 graduation(s) après 9,00.",
+            "p1": "9,030",
+            "p2": "9,35",
+            "p3": "9,25",
+            "p4": "9,30",
+            "debut": 9.0,
+            "fin": 9.5,
+            "pas": 0.05,
+            "point": 9.3,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 9.7,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "9,70",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 4 graduation(s) après 9,50.",
+            "p1": "9,70",
+            "p2": "9,520",
+            "p3": "9,75",
+            "p4": "9,65",
+            "debut": 9.5,
+            "fin": 10.0,
+            "pas": 0.05,
+            "point": 9.7,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 0.1,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "0,10",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 2 graduation(s) après 0,00.",
+            "p1": "0,05",
+            "p2": "0,15",
+            "p3": "0,010",
+            "p4": "0,10",
+            "debut": 0.0,
+            "fin": 0.5,
+            "pas": 0.05,
+            "point": 0.1,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 9,
+            "resultat_exploitable": 0.95,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "0,95",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 9 graduation(s) après 0,50.",
+            "p1": "0,545",
+            "p2": "0,90",
+            "p3": "0,95",
+            "p4": "1,00",
+            "debut": 0.5,
+            "fin": 1.0,
+            "pas": 0.05,
+            "point": 0.95,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 7,
+            "resultat_exploitable": 1.35,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "1,35",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 7 graduation(s) après 1,00.",
+            "p1": "1,035",
+            "p2": "1,35",
+            "p3": "1,40",
+            "p4": "1,30",
+            "debut": 1.0,
+            "fin": 1.5,
+            "pas": 0.05,
+            "point": 1.35,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 5,
+            "resultat_exploitable": 1.75,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "1,75",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 5 graduation(s) après 1,50.",
+            "p1": "1,80",
+            "p2": "1,75",
+            "p3": "1,525",
+            "p4": "1,70",
+            "debut": 1.5,
+            "fin": 2.0,
+            "pas": 0.05,
+            "point": 1.75,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 3,
+            "resultat_exploitable": 2.15,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "2,15",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 3 graduation(s) après 2,00.",
+            "p1": "2,20",
+            "p2": "2,15",
+            "p3": "2,10",
+            "p4": "2,015",
+            "debut": 2.0,
+            "fin": 2.5,
+            "pas": 0.05,
+            "point": 2.15,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 1,
+            "resultat_exploitable": 2.55,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "2,55",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 1 graduation(s) après 2,50.",
+            "p1": "2,55",
+            "p2": "2,505",
+            "p3": "2,50",
+            "p4": "2,60",
+            "debut": 2.5,
+            "fin": 3.0,
+            "pas": 0.05,
+            "point": 2.55,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 8,
+            "resultat_exploitable": 3.4,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "3,40",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 8 graduation(s) après 3,00.",
+            "p1": "3,040",
+            "p2": "3,35",
+            "p3": "3,40",
+            "p4": "3,45",
+            "debut": 3.0,
+            "fin": 3.5,
+            "pas": 0.05,
+            "point": 3.4,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 6,
+            "resultat_exploitable": 3.8,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "3,80",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 6 graduation(s) après 3,50.",
+            "p1": "3,80",
+            "p2": "3,530",
+            "p3": "3,85",
+            "p4": "3,75",
+            "debut": 3.5,
+            "fin": 4.0,
+            "pas": 0.05,
+            "point": 3.8,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 4,
+            "resultat_exploitable": 4.2,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "4,20",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 4 graduation(s) après 4,00.",
+            "p1": "4,15",
+            "p2": "4,25",
+            "p3": "4,020",
+            "p4": "4,20",
+            "debut": 4.0,
+            "fin": 4.5,
+            "pas": 0.05,
+            "point": 4.2,
+            "etiquette": "C"
+          }
+        },
+        {
+          "parametres": {
+            "indice": 2,
+            "resultat_exploitable": 4.6,
+            "enonce": "Quelle est l’abscisse du point C sur cette droite graduée ?",
+            "reponse": "4,60",
+            "correction": "Chaque graduation vaut 0,05 ; le point C est à 2 graduation(s) après 4,50.",
+            "p1": "4,65",
+            "p2": "4,55",
+            "p3": "4,60",
+            "p4": "4,510",
+            "debut": 4.5,
+            "fin": 5.0,
+            "pas": 0.05,
+            "point": 4.6,
+            "etiquette": "C"
+          }
+        }
+      ],
+      "enonce_exploitable": "debut + indice * pas",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "TRANSVERSAL_DECIMAUX-DROITE-DIXIEMES-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "portee": "famille",
+      "niveau": "6E",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 3. Quelle est son abscisse ?",
+            "reponse": "3,1",
+            "correction": "Chaque graduation vaut 0,1 : 3 + 1/10 = 3,1.",
+            "p1": "3,1",
+            "p2": "3,2",
+            "p3": "3,0",
+            "p4": "4,1",
+            "calcul_exploitable": "3 + 1/10",
+            "resultat_exploitable": "31/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 4. Quelle est son abscisse ?",
+            "reponse": "4,4",
+            "correction": "Chaque graduation vaut 0,1 : 4 + 4/10 = 4,4.",
+            "p1": "4,4",
+            "p2": "4,5",
+            "p3": "4,3",
+            "p4": "5,4",
+            "calcul_exploitable": "4 + 4/10",
+            "resultat_exploitable": "22/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 7 graduations après 5. Quelle est son abscisse ?",
+            "reponse": "5,7",
+            "correction": "Chaque graduation vaut 0,1 : 5 + 7/10 = 5,7.",
+            "p1": "5,7",
+            "p2": "5,8",
+            "p3": "5,6",
+            "p4": "6,7",
+            "calcul_exploitable": "5 + 7/10",
+            "resultat_exploitable": "57/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 2 graduations après 6. Quelle est son abscisse ?",
+            "reponse": "6,2",
+            "correction": "Chaque graduation vaut 0,1 : 6 + 2/10 = 6,2.",
+            "p1": "6,2",
+            "p2": "6,3",
+            "p3": "6,1",
+            "p4": "7,2",
+            "calcul_exploitable": "6 + 2/10",
+            "resultat_exploitable": "31/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 5 graduations après 7. Quelle est son abscisse ?",
+            "reponse": "7,5",
+            "correction": "Chaque graduation vaut 0,1 : 7 + 5/10 = 7,5.",
+            "p1": "7,5",
+            "p2": "7,6",
+            "p3": "7,4",
+            "p4": "8,5",
+            "calcul_exploitable": "7 + 5/10",
+            "resultat_exploitable": "15/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 8 graduations après 8. Quelle est son abscisse ?",
+            "reponse": "8,8",
+            "correction": "Chaque graduation vaut 0,1 : 8 + 8/10 = 8,8.",
+            "p1": "8,8",
+            "p2": "8,9",
+            "p3": "8,7",
+            "p4": "9,8",
+            "calcul_exploitable": "8 + 8/10",
+            "resultat_exploitable": "44/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 3 graduations après 9. Quelle est son abscisse ?",
+            "reponse": "9,3",
+            "correction": "Chaque graduation vaut 0,1 : 9 + 3/10 = 9,3.",
+            "p1": "9,3",
+            "p2": "9,4",
+            "p3": "9,2",
+            "p4": "10,3",
+            "calcul_exploitable": "9 + 3/10",
+            "resultat_exploitable": "93/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 6 graduations après 10. Quelle est son abscisse ?",
+            "reponse": "10,6",
+            "correction": "Chaque graduation vaut 0,1 : 10 + 6/10 = 10,6.",
+            "p1": "10,6",
+            "p2": "10,7",
+            "p3": "10,5",
+            "p4": "11,6",
+            "calcul_exploitable": "10 + 6/10",
+            "resultat_exploitable": "53/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 11. Quelle est son abscisse ?",
+            "reponse": "11,1",
+            "correction": "Chaque graduation vaut 0,1 : 11 + 1/10 = 11,1.",
+            "p1": "11,1",
+            "p2": "11,2",
+            "p3": "11,0",
+            "p4": "12,1",
+            "calcul_exploitable": "11 + 1/10",
+            "resultat_exploitable": "111/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 12. Quelle est son abscisse ?",
+            "reponse": "12,4",
+            "correction": "Chaque graduation vaut 0,1 : 12 + 4/10 = 12,4.",
+            "p1": "12,4",
+            "p2": "12,5",
+            "p3": "12,3",
+            "p4": "13,4",
+            "calcul_exploitable": "12 + 4/10",
+            "resultat_exploitable": "62/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 7 graduations après 13. Quelle est son abscisse ?",
+            "reponse": "13,7",
+            "correction": "Chaque graduation vaut 0,1 : 13 + 7/10 = 13,7.",
+            "p1": "13,7",
+            "p2": "13,8",
+            "p3": "13,6",
+            "p4": "14,7",
+            "calcul_exploitable": "13 + 7/10",
+            "resultat_exploitable": "137/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 2 graduations après 14. Quelle est son abscisse ?",
+            "reponse": "14,2",
+            "correction": "Chaque graduation vaut 0,1 : 14 + 2/10 = 14,2.",
+            "p1": "14,2",
+            "p2": "14,3",
+            "p3": "14,1",
+            "p4": "15,2",
+            "calcul_exploitable": "14 + 2/10",
+            "resultat_exploitable": "71/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 5 graduations après 15. Quelle est son abscisse ?",
+            "reponse": "15,5",
+            "correction": "Chaque graduation vaut 0,1 : 15 + 5/10 = 15,5.",
+            "p1": "15,5",
+            "p2": "15,6",
+            "p3": "15,4",
+            "p4": "16,5",
+            "calcul_exploitable": "15 + 5/10",
+            "resultat_exploitable": "31/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 8 graduations après 16. Quelle est son abscisse ?",
+            "reponse": "16,8",
+            "correction": "Chaque graduation vaut 0,1 : 16 + 8/10 = 16,8.",
+            "p1": "16,8",
+            "p2": "16,9",
+            "p3": "16,7",
+            "p4": "17,8",
+            "calcul_exploitable": "16 + 8/10",
+            "resultat_exploitable": "84/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 3 graduations après 17. Quelle est son abscisse ?",
+            "reponse": "17,3",
+            "correction": "Chaque graduation vaut 0,1 : 17 + 3/10 = 17,3.",
+            "p1": "17,3",
+            "p2": "17,4",
+            "p3": "17,2",
+            "p4": "18,3",
+            "calcul_exploitable": "17 + 3/10",
+            "resultat_exploitable": "173/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 6 graduations après 18. Quelle est son abscisse ?",
+            "reponse": "18,6",
+            "correction": "Chaque graduation vaut 0,1 : 18 + 6/10 = 18,6.",
+            "p1": "18,6",
+            "p2": "18,7",
+            "p3": "18,5",
+            "p4": "19,6",
+            "calcul_exploitable": "18 + 6/10",
+            "resultat_exploitable": "93/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 19. Quelle est son abscisse ?",
+            "reponse": "19,1",
+            "correction": "Chaque graduation vaut 0,1 : 19 + 1/10 = 19,1.",
+            "p1": "19,1",
+            "p2": "19,2",
+            "p3": "19,0",
+            "p4": "20,1",
+            "calcul_exploitable": "19 + 1/10",
+            "resultat_exploitable": "191/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 20. Quelle est son abscisse ?",
+            "reponse": "20,4",
+            "correction": "Chaque graduation vaut 0,1 : 20 + 4/10 = 20,4.",
+            "p1": "20,4",
+            "p2": "20,5",
+            "p3": "20,3",
+            "p4": "21,4",
+            "calcul_exploitable": "20 + 4/10",
+            "resultat_exploitable": "102/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 7 graduations après 21. Quelle est son abscisse ?",
+            "reponse": "21,7",
+            "correction": "Chaque graduation vaut 0,1 : 21 + 7/10 = 21,7.",
+            "p1": "21,7",
+            "p2": "21,8",
+            "p3": "21,6",
+            "p4": "22,7",
+            "calcul_exploitable": "21 + 7/10",
+            "resultat_exploitable": "217/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 2 graduations après 22. Quelle est son abscisse ?",
+            "reponse": "22,2",
+            "correction": "Chaque graduation vaut 0,1 : 22 + 2/10 = 22,2.",
+            "p1": "22,2",
+            "p2": "22,3",
+            "p3": "22,1",
+            "p4": "23,2",
+            "calcul_exploitable": "22 + 2/10",
+            "resultat_exploitable": "111/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 5 graduations après 23. Quelle est son abscisse ?",
+            "reponse": "23,5",
+            "correction": "Chaque graduation vaut 0,1 : 23 + 5/10 = 23,5.",
+            "p1": "23,5",
+            "p2": "23,6",
+            "p3": "23,4",
+            "p4": "24,5",
+            "calcul_exploitable": "23 + 5/10",
+            "resultat_exploitable": "47/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 8 graduations après 24. Quelle est son abscisse ?",
+            "reponse": "24,8",
+            "correction": "Chaque graduation vaut 0,1 : 24 + 8/10 = 24,8.",
+            "p1": "24,8",
+            "p2": "24,9",
+            "p3": "24,7",
+            "p4": "25,8",
+            "calcul_exploitable": "24 + 8/10",
+            "resultat_exploitable": "124/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 3 graduations après 25. Quelle est son abscisse ?",
+            "reponse": "25,3",
+            "correction": "Chaque graduation vaut 0,1 : 25 + 3/10 = 25,3.",
+            "p1": "25,3",
+            "p2": "25,4",
+            "p3": "25,2",
+            "p4": "26,3",
+            "calcul_exploitable": "25 + 3/10",
+            "resultat_exploitable": "253/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 6 graduations après 26. Quelle est son abscisse ?",
+            "reponse": "26,6",
+            "correction": "Chaque graduation vaut 0,1 : 26 + 6/10 = 26,6.",
+            "p1": "26,6",
+            "p2": "26,7",
+            "p3": "26,5",
+            "p4": "27,6",
+            "calcul_exploitable": "26 + 6/10",
+            "resultat_exploitable": "133/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 27. Quelle est son abscisse ?",
+            "reponse": "27,1",
+            "correction": "Chaque graduation vaut 0,1 : 27 + 1/10 = 27,1.",
+            "p1": "27,1",
+            "p2": "27,2",
+            "p3": "27,0",
+            "p4": "28,1",
+            "calcul_exploitable": "27 + 1/10",
+            "resultat_exploitable": "271/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 28. Quelle est son abscisse ?",
+            "reponse": "28,4",
+            "correction": "Chaque graduation vaut 0,1 : 28 + 4/10 = 28,4.",
+            "p1": "28,4",
+            "p2": "28,5",
+            "p3": "28,3",
+            "p4": "29,4",
+            "calcul_exploitable": "28 + 4/10",
+            "resultat_exploitable": "142/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 7 graduations après 29. Quelle est son abscisse ?",
+            "reponse": "29,7",
+            "correction": "Chaque graduation vaut 0,1 : 29 + 7/10 = 29,7.",
+            "p1": "29,7",
+            "p2": "29,8",
+            "p3": "29,6",
+            "p4": "30,7",
+            "calcul_exploitable": "29 + 7/10",
+            "resultat_exploitable": "297/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 2 graduations après 30. Quelle est son abscisse ?",
+            "reponse": "30,2",
+            "correction": "Chaque graduation vaut 0,1 : 30 + 2/10 = 30,2.",
+            "p1": "30,2",
+            "p2": "30,3",
+            "p3": "30,1",
+            "p4": "31,2",
+            "calcul_exploitable": "30 + 2/10",
+            "resultat_exploitable": "151/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 5 graduations après 31. Quelle est son abscisse ?",
+            "reponse": "31,5",
+            "correction": "Chaque graduation vaut 0,1 : 31 + 5/10 = 31,5.",
+            "p1": "31,5",
+            "p2": "31,6",
+            "p3": "31,4",
+            "p4": "32,5",
+            "calcul_exploitable": "31 + 5/10",
+            "resultat_exploitable": "63/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 8 graduations après 32. Quelle est son abscisse ?",
+            "reponse": "32,8",
+            "correction": "Chaque graduation vaut 0,1 : 32 + 8/10 = 32,8.",
+            "p1": "32,8",
+            "p2": "32,9",
+            "p3": "32,7",
+            "p4": "33,8",
+            "calcul_exploitable": "32 + 8/10",
+            "resultat_exploitable": "164/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 3 graduations après 33. Quelle est son abscisse ?",
+            "reponse": "33,3",
+            "correction": "Chaque graduation vaut 0,1 : 33 + 3/10 = 33,3.",
+            "p1": "33,3",
+            "p2": "33,4",
+            "p3": "33,2",
+            "p4": "34,3",
+            "calcul_exploitable": "33 + 3/10",
+            "resultat_exploitable": "333/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 6 graduations après 34. Quelle est son abscisse ?",
+            "reponse": "34,6",
+            "correction": "Chaque graduation vaut 0,1 : 34 + 6/10 = 34,6.",
+            "p1": "34,6",
+            "p2": "34,7",
+            "p3": "34,5",
+            "p4": "35,6",
+            "calcul_exploitable": "34 + 6/10",
+            "resultat_exploitable": "173/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 35. Quelle est son abscisse ?",
+            "reponse": "35,1",
+            "correction": "Chaque graduation vaut 0,1 : 35 + 1/10 = 35,1.",
+            "p1": "35,1",
+            "p2": "35,2",
+            "p3": "35,0",
+            "p4": "36,1",
+            "calcul_exploitable": "35 + 1/10",
+            "resultat_exploitable": "351/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 36. Quelle est son abscisse ?",
+            "reponse": "36,4",
+            "correction": "Chaque graduation vaut 0,1 : 36 + 4/10 = 36,4.",
+            "p1": "36,4",
+            "p2": "36,5",
+            "p3": "36,3",
+            "p4": "37,4",
+            "calcul_exploitable": "36 + 4/10",
+            "resultat_exploitable": "182/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 7 graduations après 37. Quelle est son abscisse ?",
+            "reponse": "37,7",
+            "correction": "Chaque graduation vaut 0,1 : 37 + 7/10 = 37,7.",
+            "p1": "37,7",
+            "p2": "37,8",
+            "p3": "37,6",
+            "p4": "38,7",
+            "calcul_exploitable": "37 + 7/10",
+            "resultat_exploitable": "377/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 2 graduations après 38. Quelle est son abscisse ?",
+            "reponse": "38,2",
+            "correction": "Chaque graduation vaut 0,1 : 38 + 2/10 = 38,2.",
+            "p1": "38,2",
+            "p2": "38,3",
+            "p3": "38,1",
+            "p4": "39,2",
+            "calcul_exploitable": "38 + 2/10",
+            "resultat_exploitable": "191/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 5 graduations après 39. Quelle est son abscisse ?",
+            "reponse": "39,5",
+            "correction": "Chaque graduation vaut 0,1 : 39 + 5/10 = 39,5.",
+            "p1": "39,5",
+            "p2": "39,6",
+            "p3": "39,4",
+            "p4": "40,5",
+            "calcul_exploitable": "39 + 5/10",
+            "resultat_exploitable": "79/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 8 graduations après 40. Quelle est son abscisse ?",
+            "reponse": "40,8",
+            "correction": "Chaque graduation vaut 0,1 : 40 + 8/10 = 40,8.",
+            "p1": "40,8",
+            "p2": "40,9",
+            "p3": "40,7",
+            "p4": "41,8",
+            "calcul_exploitable": "40 + 8/10",
+            "resultat_exploitable": "204/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 3 graduations après 41. Quelle est son abscisse ?",
+            "reponse": "41,3",
+            "correction": "Chaque graduation vaut 0,1 : 41 + 3/10 = 41,3.",
+            "p1": "41,3",
+            "p2": "41,4",
+            "p3": "41,2",
+            "p4": "42,3",
+            "calcul_exploitable": "41 + 3/10",
+            "resultat_exploitable": "413/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 6 graduations après 42. Quelle est son abscisse ?",
+            "reponse": "42,6",
+            "correction": "Chaque graduation vaut 0,1 : 42 + 6/10 = 42,6.",
+            "p1": "42,6",
+            "p2": "42,7",
+            "p3": "42,5",
+            "p4": "43,6",
+            "calcul_exploitable": "42 + 6/10",
+            "resultat_exploitable": "213/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 43. Quelle est son abscisse ?",
+            "reponse": "43,1",
+            "correction": "Chaque graduation vaut 0,1 : 43 + 1/10 = 43,1.",
+            "p1": "43,1",
+            "p2": "43,2",
+            "p3": "43,0",
+            "p4": "44,1",
+            "calcul_exploitable": "43 + 1/10",
+            "resultat_exploitable": "431/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 44. Quelle est son abscisse ?",
+            "reponse": "44,4",
+            "correction": "Chaque graduation vaut 0,1 : 44 + 4/10 = 44,4.",
+            "p1": "44,4",
+            "p2": "44,5",
+            "p3": "44,3",
+            "p4": "45,4",
+            "calcul_exploitable": "44 + 4/10",
+            "resultat_exploitable": "222/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 7 graduations après 45. Quelle est son abscisse ?",
+            "reponse": "45,7",
+            "correction": "Chaque graduation vaut 0,1 : 45 + 7/10 = 45,7.",
+            "p1": "45,7",
+            "p2": "45,8",
+            "p3": "45,6",
+            "p4": "46,7",
+            "calcul_exploitable": "45 + 7/10",
+            "resultat_exploitable": "457/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 2 graduations après 46. Quelle est son abscisse ?",
+            "reponse": "46,2",
+            "correction": "Chaque graduation vaut 0,1 : 46 + 2/10 = 46,2.",
+            "p1": "46,2",
+            "p2": "46,3",
+            "p3": "46,1",
+            "p4": "47,2",
+            "calcul_exploitable": "46 + 2/10",
+            "resultat_exploitable": "231/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 5 graduations après 47. Quelle est son abscisse ?",
+            "reponse": "47,5",
+            "correction": "Chaque graduation vaut 0,1 : 47 + 5/10 = 47,5.",
+            "p1": "47,5",
+            "p2": "47,6",
+            "p3": "47,4",
+            "p4": "48,5",
+            "calcul_exploitable": "47 + 5/10",
+            "resultat_exploitable": "95/2"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 8 graduations après 48. Quelle est son abscisse ?",
+            "reponse": "48,8",
+            "correction": "Chaque graduation vaut 0,1 : 48 + 8/10 = 48,8.",
+            "p1": "48,8",
+            "p2": "48,9",
+            "p3": "48,7",
+            "p4": "49,8",
+            "calcul_exploitable": "48 + 8/10",
+            "resultat_exploitable": "244/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 3 graduations après 49. Quelle est son abscisse ?",
+            "reponse": "49,3",
+            "correction": "Chaque graduation vaut 0,1 : 49 + 3/10 = 49,3.",
+            "p1": "49,3",
+            "p2": "49,4",
+            "p3": "49,2",
+            "p4": "50,3",
+            "calcul_exploitable": "49 + 3/10",
+            "resultat_exploitable": "493/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 6 graduations après 50. Quelle est son abscisse ?",
+            "reponse": "50,6",
+            "correction": "Chaque graduation vaut 0,1 : 50 + 6/10 = 50,6.",
+            "p1": "50,6",
+            "p2": "50,7",
+            "p3": "50,5",
+            "p4": "51,6",
+            "calcul_exploitable": "50 + 6/10",
+            "resultat_exploitable": "253/5"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 1 graduations après 51. Quelle est son abscisse ?",
+            "reponse": "51,1",
+            "correction": "Chaque graduation vaut 0,1 : 51 + 1/10 = 51,1.",
+            "p1": "51,1",
+            "p2": "51,2",
+            "p3": "51,0",
+            "p4": "52,1",
+            "calcul_exploitable": "51 + 1/10",
+            "resultat_exploitable": "511/10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Sur une droite graduée en dixièmes, le point P est situé 4 graduations après 52. Quelle est son abscisse ?",
+            "reponse": "52,4",
+            "correction": "Chaque graduation vaut 0,1 : 52 + 4/10 = 52,4.",
+            "p1": "52,4",
+            "p2": "52,5",
+            "p3": "52,3",
+            "p4": "53,4",
+            "calcul_exploitable": "52 + 4/10",
+            "resultat_exploitable": "262/5"
+          }
+        }
+      ],
+      "liens_notions": "droite graduée, numération décimale",
+      "demarche": "Lire l’unité et les subdivisions pour identifier la position.",
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

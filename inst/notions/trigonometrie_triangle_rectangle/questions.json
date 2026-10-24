@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "TRIG-VOC-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "ABC est rectangle en A. Quel côté est l’hypoténuse ?",
       "reponse": "BC",
       "propositions": [
@@ -15,11 +16,15 @@
       "correction": "L’hypoténuse est toujours opposée à l’angle droit, ici en A.",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-VOC-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "ABC est rectangle en A. Pour l’angle en B, quel côté est opposé ?",
       "reponse": "AC",
       "propositions": [
@@ -31,11 +36,15 @@
       "correction": "Le côté AC ne touche pas le sommet B : il est opposé à l’angle en B.",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-VOC-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "ABC est rectangle en A. Pour l’angle en B, quel côté est adjacent (hors hypoténuse) ?",
       "reponse": "AB",
       "propositions": [
@@ -47,11 +56,15 @@
       "correction": "AB touche B et n’est pas l’hypoténuse.",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-RAP-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Dans ABC rectangle en A, quelle expression vaut sin(B) ?",
       "reponse": "AC/BC",
       "propositions": [
@@ -63,11 +76,15 @@
       "correction": "Le sinus est le rapport côté opposé / hypoténuse.",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-RAP-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Dans ABC rectangle en A, quelle expression vaut cos(B) ?",
       "reponse": "AB/BC",
       "propositions": [
@@ -79,11 +96,15 @@
       "correction": "Le cosinus est le rapport côté adjacent / hypoténuse.",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-RAP-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Dans ABC rectangle en A, quelle expression vaut tan(B) ?",
       "reponse": "AC/AB",
       "propositions": [
@@ -95,11 +116,15 @@
       "correction": "La tangente est le rapport côté opposé / côté adjacent.",
       "illustration": {
         "id": "trigonometrie_triangle_rectangle"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-CHOIX-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "On connaît un angle aigu et la longueur de son côté adjacent ; on cherche son côté opposé. Quel rapport choisir ?",
       "reponse": "La tangente",
       "propositions": [
@@ -108,11 +133,15 @@
         "Le cosinus",
         "Le théorème de Thalès"
       ],
-      "correction": "La tangente relie directement opposé et adjacent."
+      "correction": "La tangente relie directement opposé et adjacent.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-CHOIX-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "On connaît un angle aigu et l’hypoténuse ; on cherche son côté opposé. Quel rapport choisir ?",
       "reponse": "Le sinus",
       "propositions": [
@@ -121,11 +150,15 @@
         "La tangente",
         "Le périmètre"
       ],
-      "correction": "Le sinus relie directement opposé et hypoténuse."
+      "correction": "Le sinus relie directement opposé et hypoténuse.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "TRIG-CALC-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -152,7 +185,10 @@
             "p1": "3/5",
             "p2": "4/5",
             "p3": "3/4",
-            "p4": "5/3"
+            "p4": "5/3",
+            "oppose": 3.0,
+            "denominateur": 5.0,
+            "resultat_exploitable": 0.6
           }
         },
         {
@@ -163,7 +199,10 @@
             "p1": "5/13",
             "p2": "12/13",
             "p3": "5/12",
-            "p4": "12/5"
+            "p4": "12/5",
+            "oppose": 5.0,
+            "denominateur": 13.0,
+            "resultat_exploitable": 0.38461538461538464
           }
         },
         {
@@ -174,14 +213,21 @@
             "p1": "15/17",
             "p2": "8/17",
             "p3": "15/8",
-            "p4": "8/15"
+            "p4": "8/15",
+            "oppose": 15.0,
+            "denominateur": 17.0,
+            "resultat_exploitable": 0.8823529411764706
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "oppose / denominateur",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "TRIG-CALC-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -208,7 +254,10 @@
             "p1": "3/4",
             "p2": "4/3",
             "p3": "3/5",
-            "p4": "4/5"
+            "p4": "4/5",
+            "oppose": 3.0,
+            "denominateur": 4.0,
+            "resultat_exploitable": 0.75
           }
         },
         {
@@ -219,7 +268,10 @@
             "p1": "5/12",
             "p2": "12/5",
             "p3": "5/13",
-            "p4": "12/13"
+            "p4": "12/13",
+            "oppose": 5.0,
+            "denominateur": 12.0,
+            "resultat_exploitable": 0.4166666666666667
           }
         },
         {
@@ -230,14 +282,21 @@
             "p1": "15/8",
             "p2": "8/15",
             "p3": "15/17",
-            "p4": "8/17"
+            "p4": "8/17",
+            "oppose": 15.0,
+            "denominateur": 8.0,
+            "resultat_exploitable": 1.875
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "oppose / denominateur",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "TRIG-ANGLE-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -265,7 +324,10 @@
             "p1": "45°",
             "p2": "30°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "oppose": 4.0,
+            "adjacent": 4.0,
+            "resultat_exploitable": 45
           }
         },
         {
@@ -276,7 +338,10 @@
             "p1": "45°",
             "p2": "30°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "oppose": 7.0,
+            "adjacent": 7.0,
+            "resultat_exploitable": 45
           }
         },
         {
@@ -287,14 +352,21 @@
             "p1": "45°",
             "p2": "30°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "oppose": 10.0,
+            "adjacent": 10.0,
+            "resultat_exploitable": 45
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "atan(oppose / adjacent) * 180 / pi",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "TRIG-CALC-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -322,7 +394,9 @@
             "p1": "6 cm",
             "p2": "3 cm",
             "p3": "12 cm",
-            "p4": "6√2 cm"
+            "p4": "6√2 cm",
+            "adjacent": 6.0,
+            "resultat_exploitable": 6
           }
         },
         {
@@ -333,7 +407,9 @@
             "p1": "9 cm",
             "p2": "4,5 cm",
             "p3": "18 cm",
-            "p4": "9√2 cm"
+            "p4": "9√2 cm",
+            "adjacent": 9.0,
+            "resultat_exploitable": 9
           }
         },
         {
@@ -344,14 +420,20 @@
             "p1": "12 cm",
             "p2": "6 cm",
             "p3": "24 cm",
-            "p4": "12√2 cm"
+            "p4": "12√2 cm",
+            "adjacent": 12.0,
+            "resultat_exploitable": 12
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "adjacent * tan(pi / 4)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "TRIG-ARC-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -373,7 +455,10 @@
             "p1": "36,9°",
             "p2": "53,1°",
             "p3": "41,4°",
-            "p4": "48,6°"
+            "p4": "48,6°",
+            "oppose": 15.0,
+            "adjacent": 20.0,
+            "resultat_exploitable": 36.9
           }
         },
         {
@@ -384,7 +469,10 @@
             "p1": "45,0°",
             "p2": "30,0°",
             "p3": "60,0°",
-            "p4": "90,0°"
+            "p4": "90,0°",
+            "oppose": 10.0,
+            "adjacent": 10.0,
+            "resultat_exploitable": 45.0
           }
         },
         {
@@ -395,14 +483,21 @@
             "p1": "30,0°",
             "p2": "45,0°",
             "p3": "60,0°",
-            "p4": "17,3°"
+            "p4": "17,3°",
+            "oppose": 10.0,
+            "adjacent": 17.3,
+            "resultat_exploitable": 30.0
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "round(atan(oppose / adjacent) * 180 / pi, 1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "TRIG-ARC-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -430,7 +525,10 @@
             "p1": "30°",
             "p2": "45°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "cote": 3.0,
+            "hypotenuse": 6.0,
+            "resultat_exploitable": 30
           }
         },
         {
@@ -441,7 +539,10 @@
             "p1": "30°",
             "p2": "45°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "cote": 5.0,
+            "hypotenuse": 10.0,
+            "resultat_exploitable": 30
           }
         },
         {
@@ -452,14 +553,21 @@
             "p1": "45°",
             "p2": "30°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "cote": 7.0,
+            "hypotenuse": 9.9,
+            "resultat_exploitable": 45
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "round(asin(cote / hypotenuse) * 180 / pi)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "TRIG-ARC-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -487,7 +595,10 @@
             "p1": "60°",
             "p2": "30°",
             "p3": "45°",
-            "p4": "90°"
+            "p4": "90°",
+            "cote": 5.0,
+            "hypotenuse": 10.0,
+            "resultat_exploitable": 60
           }
         },
         {
@@ -498,7 +609,10 @@
             "p1": "60°",
             "p2": "30°",
             "p3": "45°",
-            "p4": "90°"
+            "p4": "90°",
+            "cote": 5.0,
+            "hypotenuse": 10.0,
+            "resultat_exploitable": 60
           }
         },
         {
@@ -509,10 +623,16 @@
             "p1": "45°",
             "p2": "30°",
             "p3": "60°",
-            "p4": "90°"
+            "p4": "90°",
+            "cote": 7.0,
+            "hypotenuse": 9.9,
+            "resultat_exploitable": 45
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "round(acos(cote / hypotenuse) * 180 / pi)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

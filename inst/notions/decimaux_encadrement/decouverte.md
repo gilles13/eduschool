@@ -1,5 +1,11 @@
 # Découvrir : Encadrer des nombres décimaux
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Encadrer un nombre**, c’est trouver une valeur plus petite et une valeur plus grande entre lesquelles il se situe.
+:::
+
 Encadrer un nombre consiste à trouver une valeur inférieure et une valeur supérieure. On peut choisir deux entiers ou deux dixièmes consécutifs.
 
 ## Observons

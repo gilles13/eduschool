@@ -1,5 +1,11 @@
 # Découvrir : Conversions de masses
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Convertir une masse, c’est exprimer **la même masse** dans une autre unité, par exemple en kilogrammes ou en grammes.
+:::
+
 La masse s'exprime notamment en kilogrammes (kg), grammes (g) et milligrammes (mg). Dans le tableau métrique, chaque changement de colonne vaut un facteur **10**.
 
 | kg | hg | dag | g | dg | cg | mg |
@@ -14,6 +20,6 @@ La masse s'exprime notamment en kilogrammes (kg), grammes (g) et milligrammes (m
 
 ## Pour vérifier tes découvertes
 
-**1. Grammes et kilogrammes.** $1\,\mathrm{kg}=1\,000\,\mathrm{g}$ : $750\div1\,000=0{,}75$, donc **750 g = 0,75 kg**.
+1. **Grammes et kilogrammes :** $1\,\mathrm{kg}=1\,000\,\mathrm{g}$ : $750\div1\,000=0{,}75$, donc **750 g = 0,75 kg**.
 
-**2. Une situation concrète.** 1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g.
+2. **Une situation concrète :** 1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g.

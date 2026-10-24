@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une grandeur quotient est obtenue en divisant une grandeur par une autre.
+**Une grandeur quotient** est obtenue en divisant une grandeur par une autre.
 :::
 
 ## Principe

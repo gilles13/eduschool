@@ -1,10 +1,18 @@
 # Découvrir : Repérer des décimaux sur une droite graduée
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une **droite graduée** associe des nombres à des points régulièrement espacés selon une unité choisie. Elle permet de placer et de comparer des décimaux.
+:::
+
 Une droite graduée possède une origine, une unité et des graduations régulières. Un nombre correspond à une position appelée abscisse.
 
 ## Observons
 
 Entre 2 et 3, dix intervalles égaux représentent chacun un dixième. Le point situé au quatrième intervalle après 2 a pour abscisse 2,4.
+
+<!-- graphique: droite_graduee debut=2 fin=3 pas=0.1 point=2.4 etiquette=A -->
 
 **À essayer 1 —** Sur une droite graduée en dixièmes, quelle position suit 3,6 ?
 

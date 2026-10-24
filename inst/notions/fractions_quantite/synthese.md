@@ -1,4 +1,4 @@
-# L’essentiel : Prendre une fraction d’une quantité
+# L'essentiel : Prendre une fraction d’une quantité
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

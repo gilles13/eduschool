@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FRAC-VOCAB-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on le nombre situé au-dessus de la barre de fraction ? Choisis le mot masqué correspondant.",
       "presentation": {
         "type": "mot_masque",
@@ -22,11 +23,15 @@
         "quotient",
         "diviseur"
       ],
-      "correction": "Le numérateur indique combien de parts sont considérées. Le dénominateur précise en combien de parts égales l’unité est divisée."
+      "correction": "Le numérateur indique combien de parts sont considérées. Le dénominateur précise en combien de parts égales l’unité est divisée.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "FRAC-VOCAB-DENOMINATEUR-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on le nombre situé sous la barre de fraction ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -44,11 +49,15 @@
         "quotient",
         "diviseur"
       ],
-      "correction": "Le dénominateur est le nombre situé sous la barre de fraction.\nIl indique en combien de parts égales l’unité est partagée."
+      "correction": "Le dénominateur est le nombre situé sous la barre de fraction.\nIl indique en combien de parts égales l’unité est partagée.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "FRAC-EQUIV-MANQUANT-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -67,7 +76,10 @@
             "p1": "8",
             "p2": "9",
             "p3": "2",
-            "p4": "28"
+            "p4": "28",
+            "a_exploitable": "2/7",
+            "b_exploitable": "28",
+            "resultat_exploitable": "8"
           },
           "progression": 1
         },
@@ -79,7 +91,10 @@
             "p1": "12",
             "p2": "13",
             "p3": "3",
-            "p4": "20"
+            "p4": "20",
+            "a_exploitable": "3/5",
+            "b_exploitable": "20",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -91,7 +106,10 @@
             "p1": "16",
             "p2": "17",
             "p3": "4",
-            "p4": "36"
+            "p4": "36",
+            "a_exploitable": "4/9",
+            "b_exploitable": "36",
+            "resultat_exploitable": "16"
           },
           "progression": 1
         },
@@ -103,7 +121,10 @@
             "p1": "20",
             "p2": "21",
             "p3": "5",
-            "p4": "32"
+            "p4": "32",
+            "a_exploitable": "5/8",
+            "b_exploitable": "32",
+            "resultat_exploitable": "20"
           },
           "progression": 1
         },
@@ -115,7 +136,10 @@
             "p1": "12",
             "p2": "13",
             "p3": "3",
-            "p4": "44"
+            "p4": "44",
+            "a_exploitable": "3/11",
+            "b_exploitable": "44",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -127,15 +151,22 @@
             "p1": "28",
             "p2": "29",
             "p3": "7",
-            "p4": "48"
+            "p4": "48",
+            "a_exploitable": "7/12",
+            "b_exploitable": "48",
+            "resultat_exploitable": "28"
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "a_exploitable * b_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRAC-EQUIV-ERREUR-001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -154,7 +185,13 @@
             "p1": "2/7 = 2/7",
             "p2": "2/7 = 3/8",
             "p3": "2/7 = 6/21",
-            "p4": "2/7 = 8/28"
+            "p4": "2/7 = 8/28",
+            "numerateur_1_exploitable": 2,
+            "denominateur_1_exploitable": 7,
+            "numerateur_2_exploitable": 3,
+            "denominateur_2_exploitable": 8,
+            "resultat_numerateur_exploitable": -5,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -166,7 +203,13 @@
             "p1": "3/5 = 3/5",
             "p2": "3/5 = 2/3",
             "p3": "3/5 = 9/15",
-            "p4": "3/5 = 12/20"
+            "p4": "3/5 = 12/20",
+            "numerateur_1_exploitable": 3,
+            "denominateur_1_exploitable": 5,
+            "numerateur_2_exploitable": 2,
+            "denominateur_2_exploitable": 3,
+            "resultat_numerateur_exploitable": -1,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -178,7 +221,13 @@
             "p1": "4/9 = 4/9",
             "p2": "4/9 = 1/2",
             "p3": "4/9 = 12/27",
-            "p4": "4/9 = 16/36"
+            "p4": "4/9 = 16/36",
+            "numerateur_1_exploitable": 4,
+            "denominateur_1_exploitable": 9,
+            "numerateur_2_exploitable": 1,
+            "denominateur_2_exploitable": 2,
+            "resultat_numerateur_exploitable": -1,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -190,7 +239,13 @@
             "p1": "5/8 = 5/8",
             "p2": "5/8 = 2/3",
             "p3": "5/8 = 15/24",
-            "p4": "5/8 = 20/32"
+            "p4": "5/8 = 20/32",
+            "numerateur_1_exploitable": 5,
+            "denominateur_1_exploitable": 8,
+            "numerateur_2_exploitable": 2,
+            "denominateur_2_exploitable": 3,
+            "resultat_numerateur_exploitable": -1,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -202,7 +257,13 @@
             "p1": "3/11 = 3/11",
             "p2": "3/11 = 1/3",
             "p3": "3/11 = 9/33",
-            "p4": "3/11 = 12/44"
+            "p4": "3/11 = 12/44",
+            "numerateur_1_exploitable": 3,
+            "denominateur_1_exploitable": 11,
+            "numerateur_2_exploitable": 1,
+            "denominateur_2_exploitable": 3,
+            "resultat_numerateur_exploitable": -2,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -214,15 +275,25 @@
             "p1": "7/12 = 7/12",
             "p2": "7/12 = 8/13",
             "p3": "7/12 = 21/36",
-            "p4": "7/12 = 28/48"
+            "p4": "7/12 = 28/48",
+            "numerateur_1_exploitable": 7,
+            "denominateur_1_exploitable": 12,
+            "numerateur_2_exploitable": 8,
+            "denominateur_2_exploitable": 13,
+            "resultat_numerateur_exploitable": -5,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur_1_exploitable * denominateur_2_exploitable - numerateur_2_exploitable * denominateur_1_exploitable",
+      "reponse_exploitable": "[[resultat_numerateur_exploitable]] / [[resultat_denominateur_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRA-VAR-EQUIV-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Quelle fraction est équivalente à [[source]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -240,7 +311,11 @@
             "d1": "\\(\\frac{2}{5}\\)",
             "d2": "\\(\\frac{3}{4}\\)",
             "d3": "\\(\\frac{1}{4}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 2 : 1/2 = 2/4."
+            "correction": "On multiplie le numérateur et le dénominateur par 2 : 1/2 = 2/4.",
+            "a_exploitable": 1,
+            "b_exploitable": 2,
+            "c_exploitable": 2,
+            "d_exploitable": 4
           },
           "progression": 1
         },
@@ -251,7 +326,11 @@
             "d1": "\\(\\frac{6}{10}\\)",
             "d2": "\\(\\frac{5}{9}\\)",
             "d3": "\\(\\frac{2}{9}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 3 : 2/3 = 6/9."
+            "correction": "On multiplie le numérateur et le dénominateur par 3 : 2/3 = 6/9.",
+            "a_exploitable": 2,
+            "b_exploitable": 3,
+            "c_exploitable": 6,
+            "d_exploitable": 9
           },
           "progression": 1
         },
@@ -262,7 +341,11 @@
             "d1": "\\(\\frac{6}{11}\\)",
             "d2": "\\(\\frac{5}{10}\\)",
             "d3": "\\(\\frac{3}{10}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 2 : 3/5 = 6/10."
+            "correction": "On multiplie le numérateur et le dénominateur par 2 : 3/5 = 6/10.",
+            "a_exploitable": 3,
+            "b_exploitable": 5,
+            "c_exploitable": 6,
+            "d_exploitable": 10
           },
           "progression": 1
         },
@@ -273,7 +356,11 @@
             "d1": "\\(\\frac{12}{22}\\)",
             "d2": "\\(\\frac{7}{21}\\)",
             "d3": "\\(\\frac{4}{21}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 3 : 4/7 = 12/21."
+            "correction": "On multiplie le numérateur et le dénominateur par 3 : 4/7 = 12/21.",
+            "a_exploitable": 4,
+            "b_exploitable": 7,
+            "c_exploitable": 12,
+            "d_exploitable": 21
           },
           "progression": 1
         },
@@ -284,7 +371,11 @@
             "d1": "\\(\\frac{20}{33}\\)",
             "d2": "\\(\\frac{9}{32}\\)",
             "d3": "\\(\\frac{5}{32}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 4 : 5/8 = 20/32."
+            "correction": "On multiplie le numérateur et le dénominateur par 4 : 5/8 = 20/32.",
+            "a_exploitable": 5,
+            "b_exploitable": 8,
+            "c_exploitable": 20,
+            "d_exploitable": 32
           },
           "progression": 1
         },
@@ -295,7 +386,11 @@
             "d1": "\\(\\frac{10}{46}\\)",
             "d2": "\\(\\frac{7}{45}\\)",
             "d3": "\\(\\frac{2}{45}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 5 : 2/9 = 10/45."
+            "correction": "On multiplie le numérateur et le dénominateur par 5 : 2/9 = 10/45.",
+            "a_exploitable": 2,
+            "b_exploitable": 9,
+            "c_exploitable": 10,
+            "d_exploitable": 45
           },
           "progression": 1
         },
@@ -306,7 +401,11 @@
             "d1": "\\(\\frac{15}{19}\\)",
             "d2": "\\(\\frac{8}{18}\\)",
             "d3": "\\(\\frac{5}{18}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 3 : 5/6 = 15/18."
+            "correction": "On multiplie le numérateur et le dénominateur par 3 : 5/6 = 15/18.",
+            "a_exploitable": 5,
+            "b_exploitable": 6,
+            "c_exploitable": 15,
+            "d_exploitable": 18
           },
           "progression": 2
         },
@@ -317,7 +416,11 @@
             "d1": "\\(\\frac{14}{21}\\)",
             "d2": "\\(\\frac{9}{20}\\)",
             "d3": "\\(\\frac{7}{20}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 2 : 7/10 = 14/20."
+            "correction": "On multiplie le numérateur et le dénominateur par 2 : 7/10 = 14/20.",
+            "a_exploitable": 7,
+            "b_exploitable": 10,
+            "c_exploitable": 14,
+            "d_exploitable": 20
           },
           "progression": 2
         },
@@ -328,7 +431,11 @@
             "d1": "\\(\\frac{12}{45}\\)",
             "d2": "\\(\\frac{7}{44}\\)",
             "d3": "\\(\\frac{3}{44}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 4 : 3/11 = 12/44."
+            "correction": "On multiplie le numérateur et le dénominateur par 4 : 3/11 = 12/44.",
+            "a_exploitable": 3,
+            "b_exploitable": 11,
+            "c_exploitable": 12,
+            "d_exploitable": 44
           },
           "progression": 2
         },
@@ -339,7 +446,11 @@
             "d1": "\\(\\frac{24}{46}\\)",
             "d2": "\\(\\frac{11}{45}\\)",
             "d3": "\\(\\frac{8}{45}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 3 : 8/15 = 24/45."
+            "correction": "On multiplie le numérateur et le dénominateur par 3 : 8/15 = 24/45.",
+            "a_exploitable": 8,
+            "b_exploitable": 15,
+            "c_exploitable": 24,
+            "d_exploitable": 45
           },
           "progression": 2
         },
@@ -350,7 +461,11 @@
             "d1": "\\(\\frac{35}{61}\\)",
             "d2": "\\(\\frac{12}{60}\\)",
             "d3": "\\(\\frac{7}{60}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 5 : 7/12 = 35/60."
+            "correction": "On multiplie le numérateur et le dénominateur par 5 : 7/12 = 35/60.",
+            "a_exploitable": 7,
+            "b_exploitable": 12,
+            "c_exploitable": 35,
+            "d_exploitable": 60
           },
           "progression": 2
         },
@@ -361,7 +476,11 @@
             "d1": "\\(\\frac{22}{29}\\)",
             "d2": "\\(\\frac{13}{28}\\)",
             "d3": "\\(\\frac{11}{28}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 2 : 11/14 = 22/28."
+            "correction": "On multiplie le numérateur et le dénominateur par 2 : 11/14 = 22/28.",
+            "a_exploitable": 11,
+            "b_exploitable": 14,
+            "c_exploitable": 22,
+            "d_exploitable": 28
           },
           "progression": 2
         },
@@ -372,7 +491,11 @@
             "d1": "\\(\\frac{30}{79}\\)",
             "d2": "\\(\\frac{11}{78}\\)",
             "d3": "\\(\\frac{5}{78}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 6 : 5/13 = 30/78."
+            "correction": "On multiplie le numérateur et le dénominateur par 6 : 5/13 = 30/78.",
+            "a_exploitable": 5,
+            "b_exploitable": 13,
+            "c_exploitable": 30,
+            "d_exploitable": 78
           },
           "progression": 3
         },
@@ -383,7 +506,11 @@
             "d1": "\\(\\frac{27}{49}\\)",
             "d2": "\\(\\frac{12}{48}\\)",
             "d3": "\\(\\frac{9}{48}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 3 : 9/16 = 27/48."
+            "correction": "On multiplie le numérateur et le dénominateur par 3 : 9/16 = 27/48.",
+            "a_exploitable": 9,
+            "b_exploitable": 16,
+            "c_exploitable": 27,
+            "d_exploitable": 48
           },
           "progression": 3
         },
@@ -394,7 +521,11 @@
             "d1": "\\(\\frac{44}{73}\\)",
             "d2": "\\(\\frac{15}{72}\\)",
             "d3": "\\(\\frac{11}{72}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 4 : 11/18 = 44/72."
+            "correction": "On multiplie le numérateur et le dénominateur par 4 : 11/18 = 44/72.",
+            "a_exploitable": 11,
+            "b_exploitable": 18,
+            "c_exploitable": 44,
+            "d_exploitable": 72
           },
           "progression": 3
         },
@@ -405,7 +536,11 @@
             "d1": "\\(\\frac{65}{101}\\)",
             "d2": "\\(\\frac{18}{100}\\)",
             "d3": "\\(\\frac{13}{100}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 5 : 13/20 = 65/100."
+            "correction": "On multiplie le numérateur et le dénominateur par 5 : 13/20 = 65/100.",
+            "a_exploitable": 13,
+            "b_exploitable": 20,
+            "c_exploitable": 65,
+            "d_exploitable": 100
           },
           "progression": 3
         },
@@ -416,7 +551,11 @@
             "d1": "\\(\\frac{51}{73}\\)",
             "d2": "\\(\\frac{20}{72}\\)",
             "d3": "\\(\\frac{17}{72}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 3 : 17/24 = 51/72."
+            "correction": "On multiplie le numérateur et le dénominateur par 3 : 17/24 = 51/72.",
+            "a_exploitable": 17,
+            "b_exploitable": 24,
+            "c_exploitable": 51,
+            "d_exploitable": 72
           },
           "progression": 3
         },
@@ -427,15 +566,23 @@
             "d1": "\\(\\frac{76}{121}\\)",
             "d2": "\\(\\frac{23}{120}\\)",
             "d3": "\\(\\frac{19}{120}\\)",
-            "correction": "On multiplie le numérateur et le dénominateur par 4 : 19/30 = 76/120."
+            "correction": "On multiplie le numérateur et le dénominateur par 4 : 19/30 = 76/120.",
+            "a_exploitable": 19,
+            "b_exploitable": 30,
+            "c_exploitable": 76,
+            "d_exploitable": 120
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "a_exploitable / b_exploitable",
+      "reponse_exploitable": "c_exploitable / d_exploitable",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRA-EQUIV-VISUEL-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -461,7 +608,11 @@
             "p3": "2/8",
             "p4": "7/2",
             "ill_fraction": "2/7",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur_exploitable": 2,
+            "denominateur_exploitable": 7,
+            "resultat_numerateur_exploitable": 2,
+            "resultat_denominateur_exploitable": 7
           },
           "progression": 1
         },
@@ -475,7 +626,11 @@
             "p3": "3/6",
             "p4": "5/3",
             "ill_fraction": "3/5",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur_exploitable": 3,
+            "denominateur_exploitable": 5,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 5
           },
           "progression": 1
         },
@@ -489,7 +644,11 @@
             "p3": "4/10",
             "p4": "9/4",
             "ill_fraction": "4/9",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur_exploitable": 4,
+            "denominateur_exploitable": 9,
+            "resultat_numerateur_exploitable": 4,
+            "resultat_denominateur_exploitable": 9
           },
           "progression": 1
         },
@@ -503,7 +662,11 @@
             "p3": "5/9",
             "p4": "8/5",
             "ill_fraction": "5/8",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur_exploitable": 5,
+            "denominateur_exploitable": 8,
+            "resultat_numerateur_exploitable": 5,
+            "resultat_denominateur_exploitable": 8
           },
           "progression": 1
         },
@@ -517,7 +680,11 @@
             "p3": "3/12",
             "p4": "11/3",
             "ill_fraction": "3/11",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur_exploitable": 3,
+            "denominateur_exploitable": 11,
+            "resultat_numerateur_exploitable": 3,
+            "resultat_denominateur_exploitable": 11
           },
           "progression": 1
         },
@@ -531,15 +698,23 @@
             "p3": "7/13",
             "p4": "12/7",
             "ill_fraction": "7/12",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur_exploitable": 7,
+            "denominateur_exploitable": 12,
+            "resultat_numerateur_exploitable": 7,
+            "resultat_denominateur_exploitable": 12
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur_exploitable / denominateur_exploitable",
+      "reponse_exploitable": "[[resultat_numerateur_exploitable]] / [[resultat_denominateur_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRA-EQUIV-BINAIRE-001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "Les fractions [[f1]] et [[f2]] sont-elles équivalentes ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -553,7 +728,12 @@
             "f1": "\\(\\frac{2}{3}\\)",
             "f2": "\\(\\frac{4}{6}\\)",
             "bonne": "Oui",
-            "corr": "4/6 se simplifie en 2/3 : oui."
+            "corr": "4/6 se simplifie en 2/3 : oui.",
+            "f1_num": 2,
+            "f1_den": 3,
+            "f2_num": 4,
+            "f2_den": 6,
+            "equivalent_exploitable": true
           },
           "progression": 1
         },
@@ -562,7 +742,12 @@
             "f1": "\\(\\frac{3}{5}\\)",
             "f2": "\\(\\frac{6}{10}\\)",
             "bonne": "Oui",
-            "corr": "6/10 se simplifie en 3/5 : oui."
+            "corr": "6/10 se simplifie en 3/5 : oui.",
+            "f1_num": 3,
+            "f1_den": 5,
+            "f2_num": 6,
+            "f2_den": 10,
+            "equivalent_exploitable": true
           },
           "progression": 1
         },
@@ -571,7 +756,12 @@
             "f1": "\\(\\frac{2}{7}\\)",
             "f2": "\\(\\frac{4}{15}\\)",
             "bonne": "Non",
-            "corr": "2/7 et 4/15 n’ont pas la même valeur."
+            "corr": "2/7 et 4/15 n’ont pas la même valeur.",
+            "f1_num": 2,
+            "f1_den": 7,
+            "f2_num": 4,
+            "f2_den": 15,
+            "equivalent_exploitable": false
           },
           "progression": 2
         },
@@ -580,7 +770,12 @@
             "f1": "\\(\\frac{5}{8}\\)",
             "f2": "\\(\\frac{10}{16}\\)",
             "bonne": "Oui",
-            "corr": "10/16 se simplifie en 5/8 : oui."
+            "corr": "10/16 se simplifie en 5/8 : oui.",
+            "f1_num": 5,
+            "f1_den": 8,
+            "f2_num": 10,
+            "f2_den": 16,
+            "equivalent_exploitable": true
           },
           "progression": 2
         },
@@ -589,7 +784,12 @@
             "f1": "\\(\\frac{4}{9}\\)",
             "f2": "\\(\\frac{8}{17}\\)",
             "bonne": "Non",
-            "corr": "8/17 n’est pas obtenu en multipliant numérateur et dénominateur de 4/9 par un même nombre."
+            "corr": "8/17 n’est pas obtenu en multipliant numérateur et dénominateur de 4/9 par un même nombre.",
+            "f1_num": 4,
+            "f1_den": 9,
+            "f2_num": 8,
+            "f2_den": 17,
+            "equivalent_exploitable": false
           },
           "progression": 3
         },
@@ -598,11 +798,19 @@
             "f1": "\\(\\frac{7}{10}\\)",
             "f2": "\\(\\frac{14}{20}\\)",
             "bonne": "Oui",
-            "corr": "14/20 se simplifie en 7/10 : oui."
+            "corr": "14/20 se simplifie en 7/10 : oui.",
+            "f1_num": 7,
+            "f1_den": 10,
+            "f2_num": 14,
+            "f2_den": 20,
+            "equivalent_exploitable": true
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "f1_num / f1_den == f2_num / f2_den",
+      "reponse_exploitable": "equivalent_exploitable",
+      "moteur": "Ryacas"
     }
   ]
 }

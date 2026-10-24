@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "MES-CONVERSION_MASSES-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "2 500 g",
             "p2": "250 g",
             "p3": "25 g",
-            "p4": "25 000 g"
+            "p4": "25 000 g",
+            "calcul_exploitable": "(5 / 2) * 1000",
+            "resultat_exploitable": "2500"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "5 000 g",
             "p2": "500 g",
             "p3": "50 g",
-            "p4": "50 000 g"
+            "p4": "50 000 g",
+            "calcul_exploitable": "5 * 1000",
+            "resultat_exploitable": "5000"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "7 500 g",
             "p2": "750 g",
             "p3": "75 g",
-            "p4": "75 000 g"
+            "p4": "75 000 g",
+            "calcul_exploitable": "(15 / 2) * 1000",
+            "resultat_exploitable": "7500"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_MASSES-002",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +81,9 @@
             "p1": "0,75 kg",
             "p2": "7,5 kg",
             "p3": "75 kg",
-            "p4": "0,075 kg"
+            "p4": "0,075 kg",
+            "calcul_exploitable": "750 * (1 / 1000)",
+            "resultat_exploitable": "(3 / 4)"
           }
         },
         {
@@ -81,7 +94,9 @@
             "p1": "1,50 kg",
             "p2": "15,0 kg",
             "p3": "150 kg",
-            "p4": "0,150 kg"
+            "p4": "0,150 kg",
+            "calcul_exploitable": "1500 * (1 / 1000)",
+            "resultat_exploitable": "(3 / 2)"
           }
         },
         {
@@ -92,14 +107,20 @@
             "p1": "2,25 kg",
             "p2": "22,5 kg",
             "p3": "225 kg",
-            "p4": "0,225 kg"
+            "p4": "0,225 kg",
+            "calcul_exploitable": "2250 * (1 / 1000)",
+            "resultat_exploitable": "(9 / 4)"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_MASSES-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +139,9 @@
             "p1": "40 mg",
             "p2": "4 mg",
             "p3": "400 mg",
-            "p4": "0,4 mg"
+            "p4": "0,4 mg",
+            "calcul_exploitable": "(1 / 25) * 1000",
+            "resultat_exploitable": "40"
           }
         },
         {
@@ -129,7 +152,9 @@
             "p1": "80 mg",
             "p2": "8 mg",
             "p3": "800 mg",
-            "p4": "0,8 mg"
+            "p4": "0,8 mg",
+            "calcul_exploitable": "(2 / 25) * 1000",
+            "resultat_exploitable": "80"
           }
         },
         {
@@ -140,14 +165,20 @@
             "p1": "120 mg",
             "p2": "12 mg",
             "p3": "1200 mg",
-            "p4": "1,2 mg"
+            "p4": "1,2 mg",
+            "calcul_exploitable": "(3 / 25) * 1000",
+            "resultat_exploitable": "120"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_MASSES-VOCAB-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quelle unité est adaptée pour exprimer la masse d’un camion ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -165,11 +196,15 @@
         "centigramme",
         "décagramme"
       ],
-      "correction": "La tonne est une unité adaptée aux masses élevées."
+      "correction": "La tonne est une unité adaptée aux masses élevées.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_MASSES-VOCAB-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quelle unité de masse vaut 1 000 kg ?",
       "presentation": {
         "type": "mot_masque",
@@ -188,11 +223,15 @@
         "masse",
         "minute"
       ],
-      "correction": "Le terme recherché est « tonne »."
+      "correction": "Le terme recherché est « tonne ».",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_MASSES-APPLICATION",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -205,6 +244,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 2.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 2500,
             "enonce": "Un sac pèse 2,5 kg. Quelle est sa masse en grammes ?",
             "reponse": "2 500 g",
             "correction": "1 kg = 1 000 g ; 2,5 × 1 000 = 2 500 g.",
@@ -216,6 +258,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 5.0,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 5000,
             "enonce": "Un sac pèse 5,0 kg. Quelle est sa masse en grammes ?",
             "reponse": "5 000 g",
             "correction": "En convertissant dans l’unité demandée, on obtient 5 000 g.",
@@ -227,6 +272,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 7.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 7500,
             "enonce": "Un sac pèse 7,5 kg. Quelle est sa masse en grammes ?",
             "reponse": "7 500 g",
             "correction": "En convertissant dans l’unité demandée, on obtient 7 500 g.",
@@ -236,7 +284,10 @@
             "p4": "7,5 g"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

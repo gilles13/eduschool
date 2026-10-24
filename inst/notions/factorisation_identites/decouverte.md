@@ -28,4 +28,4 @@ Factoriser demande d'abord de **reconnaître** la structure. Les identités ne c
 
 ## Pour vérifier tes découvertes
 
-**1. Reconnaître la structure.** $x^2-8x+16=(x-4)^2$. Et $25x^2-9=(5x)^2-3^2=(5x-3)(5x+3)$.
+1. **Reconnaître la structure :** $x^2-8x+16=(x-4)^2$. Et $25x^2-9=(5x)^2-3^2=(5x-3)(5x+3)$.

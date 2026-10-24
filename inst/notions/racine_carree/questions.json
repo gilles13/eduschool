@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "RAC-VAR-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Quelle est la valeur de √[[a]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -124,11 +125,15 @@
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(a)",
+      "reponse_exploitable": "as.numeric(bonne)",
+      "moteur": "R"
     },
     {
       "id": "RAC-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -147,7 +152,9 @@
             "p1": "7",
             "p2": "−7",
             "p3": "14",
-            "p4": "24,5"
+            "p4": "24,5",
+            "calcul_exploitable": "sqrt(49)",
+            "resultat_exploitable": "7"
           }
         },
         {
@@ -158,7 +165,9 @@
             "p1": "8",
             "p2": "−8",
             "p3": "16",
-            "p4": "32"
+            "p4": "32",
+            "calcul_exploitable": "sqrt(64)",
+            "resultat_exploitable": "8"
           }
         },
         {
@@ -169,14 +178,20 @@
             "p1": "11",
             "p2": "−11",
             "p3": "22",
-            "p4": "60,5"
+            "p4": "60,5",
+            "calcul_exploitable": "sqrt(121)",
+            "resultat_exploitable": "11"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -195,7 +210,9 @@
             "p1": "9",
             "p2": "−9",
             "p3": "18",
-            "p4": "40,5"
+            "p4": "40,5",
+            "calcul_exploitable": "sqrt(81)",
+            "resultat_exploitable": "9"
           }
         },
         {
@@ -206,7 +223,9 @@
             "p1": "10",
             "p2": "−10",
             "p3": "20",
-            "p4": "50"
+            "p4": "50",
+            "calcul_exploitable": "sqrt(100)",
+            "resultat_exploitable": "10"
           }
         },
         {
@@ -217,14 +236,20 @@
             "p1": "12",
             "p2": "−12",
             "p3": "24",
-            "p4": "72"
+            "p4": "72",
+            "calcul_exploitable": "sqrt(144)",
+            "resultat_exploitable": "12"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -237,6 +262,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 0.0,
+            "resultat_exploitable": 0.0,
             "enonce": "Que vaut √0 ?",
             "reponse": "0",
             "correction": "Le carré de 0 vaut 0.",
@@ -248,6 +275,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 0.0,
+            "resultat_exploitable": 0.0,
             "enonce": "Que vaut √0,00 ?",
             "reponse": "0",
             "correction": "La racine carrée de 0 vaut 0.",
@@ -259,6 +288,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 0.0,
+            "resultat_exploitable": 0.0,
             "enonce": "Quel nombre positif ou nul a pour carré 0 ?",
             "reponse": "0",
             "correction": "Seul 0 a pour carré 0.",
@@ -268,11 +299,15 @@
             "p4": "Aucun"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -291,7 +326,9 @@
             "p1": "1",
             "p2": "−1",
             "p3": "0",
-            "p4": "2"
+            "p4": "2",
+            "radicande": 1,
+            "resultat_exploitable": 1
           }
         },
         {
@@ -302,7 +339,9 @@
             "p1": "1",
             "p2": "−1",
             "p3": "0",
-            "p4": "2"
+            "p4": "2",
+            "radicande": 1,
+            "resultat_exploitable": 1
           }
         },
         {
@@ -313,14 +352,20 @@
             "p1": "1",
             "p2": "−1",
             "p3": "0",
-            "p4": "2"
+            "p4": "2",
+            "radicande": 1,
+            "resultat_exploitable": 1
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(radicande)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-005",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -333,6 +378,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 20,
+            "valeur_2": 30,
+            "resultat_exploitable": 5,
             "enonce": "Quel entier est compris entre √20 et √30 ?",
             "reponse": "5",
             "correction": "25 est compris entre 20 et 30, donc 5 est compris entre leurs racines carrées.",
@@ -344,6 +392,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 30,
+            "valeur_2": 40,
+            "resultat_exploitable": 6,
             "enonce": "Quel entier est compris entre √30 et √40 ?",
             "reponse": "6",
             "correction": "Comme 25 < 30 < 36 < 40 < 49, l’entier 6 est compris entre les deux racines.",
@@ -355,6 +406,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 42,
+            "valeur_2": 55,
+            "resultat_exploitable": 7,
             "enonce": "Quel entier est compris entre √42 et √55 ?",
             "reponse": "7",
             "correction": "Comme 36 < 42 < 49 < 55 < 64, l’entier 7 est compris entre les deux racines.",
@@ -364,11 +418,15 @@
             "p4": "8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "floor(sqrt(valeur_2))",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-006",
-      "type": "qcm",
+      "capacite": "comparer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -387,7 +445,11 @@
             "p1": "4 < √20 < 5",
             "p2": "3 < √20 < 4",
             "p3": "5 < √20 < 6",
-            "p4": "4 < √20 < 4,4"
+            "p4": "4 < √20 < 4,4",
+            "borne_inf": 4,
+            "radicande": 20,
+            "borne_sup": 5,
+            "resultat_exploitable": 1
           }
         },
         {
@@ -398,7 +460,11 @@
             "p1": "5 < √30 < 6",
             "p2": "4 < √30 < 5",
             "p3": "6 < √30 < 7",
-            "p4": "5 < √30 < 5,4"
+            "p4": "5 < √30 < 5,4",
+            "borne_inf": 5,
+            "radicande": 30,
+            "borne_sup": 6,
+            "resultat_exploitable": 1
           }
         },
         {
@@ -409,14 +475,22 @@
             "p1": "6 < √45 < 7",
             "p2": "5 < √45 < 6",
             "p3": "7 < √45 < 8",
-            "p4": "6 < √45 < 6,4"
+            "p4": "6 < √45 < 6,4",
+            "borne_inf": 6,
+            "radicande": 45,
+            "borne_sup": 7,
+            "resultat_exploitable": 1
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.integer(borne_inf^2 < radicande & radicande < borne_sup^2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-007",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -429,6 +503,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 13,
+            "resultat_exploitable": 13,
             "enonce": "Que vaut (√13)² ?",
             "reponse": "13",
             "correction": "Pour un nombre positif, élever sa racine carrée au carré redonne le nombre.",
@@ -440,6 +516,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 17,
+            "resultat_exploitable": 17,
             "enonce": "Que vaut (√17)² ?",
             "reponse": "17",
             "correction": "La racine carrée positive de 17 vaut 17.",
@@ -451,6 +529,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 23,
+            "resultat_exploitable": 23,
             "enonce": "Que vaut (√23)² ?",
             "reponse": "23",
             "correction": "La racine carrée positive de 23 vaut 23.",
@@ -460,11 +540,15 @@
             "p4": "46"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-008",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -477,6 +561,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -5,
+            "resultat_exploitable": 5,
             "enonce": "Que vaut √((−5)²) ?",
             "reponse": "5",
             "correction": "√(a²) = |a| : la racine carrée principale est positive ou nulle.",
@@ -488,6 +574,8 @@
         },
         {
           "parametres": {
+            "valeur_1": -7,
+            "resultat_exploitable": 7,
             "enonce": "Que vaut √((−7)²) ?",
             "reponse": "7",
             "correction": "La racine carrée positive de 7 vaut 7.",
@@ -499,6 +587,8 @@
         },
         {
           "parametres": {
+            "valeur_1": -9,
+            "resultat_exploitable": 9,
             "enonce": "Que vaut √((−9)²) ?",
             "reponse": "9",
             "correction": "La racine carrée positive de 9 vaut 9.",
@@ -508,11 +598,15 @@
             "p4": "−81"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "abs(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-009",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -531,7 +625,9 @@
             "p1": "Deux",
             "p2": "Aucune",
             "p3": "Une",
-            "p4": "Une infinité"
+            "p4": "Une infinité",
+            "radicande": 36,
+            "resultat_exploitable": 2
           }
         },
         {
@@ -542,7 +638,9 @@
             "p1": "Deux",
             "p2": "Aucune",
             "p3": "Une",
-            "p4": "Une infinité"
+            "p4": "Une infinité",
+            "radicande": 49,
+            "resultat_exploitable": 2
           }
         },
         {
@@ -553,14 +651,20 @@
             "p1": "Deux",
             "p2": "Aucune",
             "p3": "Une",
-            "p4": "Une infinité"
+            "p4": "Une infinité",
+            "radicande": 64,
+            "resultat_exploitable": 2
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "ifelse(radicande > 0, 2, ifelse(radicande == 0, 1, 0))",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-010",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -573,6 +677,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 121,
+            "resultat_exploitable": 11,
             "enonce": "Quelle est la solution positive de 𝑥² = 121 ?",
             "reponse": "11",
             "correction": "11² = 121 et 11 est positif.",
@@ -584,6 +690,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 144,
+            "resultat_exploitable": 12,
             "enonce": "Quelle est la solution positive de 𝑥² = 144 ?",
             "reponse": "12",
             "correction": "La racine carrée positive de 144 vaut 12.",
@@ -595,6 +703,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 169,
+            "resultat_exploitable": 13,
             "enonce": "Quelle est la solution positive de 𝑥² = 169 ?",
             "reponse": "13",
             "correction": "La racine carrée positive de 169 vaut 13.",
@@ -604,11 +714,15 @@
             "p4": "84,5"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-011",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -621,6 +735,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 50,
+            "resultat_exploitable": 7.0710678118654755,
             "enonce": "Quelle expression simplifie √50 ?",
             "reponse": "5√2",
             "correction": "50 = 25 × 2, donc √50 = 5√2.",
@@ -632,6 +748,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 75,
+            "resultat_exploitable": 8.660254037844387,
             "enonce": "Quelle expression simplifie √75 ?",
             "reponse": "5√3",
             "correction": "75 = 25 × 3, donc √75 = 5√3.",
@@ -643,6 +761,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 32,
+            "resultat_exploitable": 5.656854249492381,
             "enonce": "Quelle expression simplifie √32 ?",
             "reponse": "4√2",
             "correction": "32 = 16 × 2, donc √32 = 4√2.",
@@ -652,11 +772,15 @@
             "p4": "4√8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-012",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -669,6 +793,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 72,
+            "resultat_exploitable": 8.48528137423857,
             "enonce": "Quelle expression simplifie √72 ?",
             "reponse": "6√2",
             "correction": "72 = 36 × 2, donc √72 = 6√2.",
@@ -680,6 +806,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 98,
+            "resultat_exploitable": 9.899494936611665,
             "enonce": "Quelle expression simplifie √98 ?",
             "reponse": "7√2",
             "correction": "98 = 49 × 2, donc √98 = 7√2.",
@@ -691,6 +819,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 32,
+            "resultat_exploitable": 5.656854249492381,
             "enonce": "Quelle expression simplifie √32 ?",
             "reponse": "4√2",
             "correction": "32 = 16 × 2, donc √32 = 4√2.",
@@ -700,11 +830,15 @@
             "p4": "4√8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-013",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -717,6 +851,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 48,
+            "resultat_exploitable": 6.928203230275509,
             "enonce": "Quelle expression simplifie √48 ?",
             "reponse": "4√3",
             "correction": "48 = 16 × 3, donc √48 = 4√3.",
@@ -728,6 +864,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 108,
+            "resultat_exploitable": 10.392304845413264,
             "enonce": "Quelle expression simplifie √108 ?",
             "reponse": "6√3",
             "correction": "108 = 36 × 3, donc √108 = 6√3.",
@@ -739,6 +877,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 32,
+            "resultat_exploitable": 5.656854249492381,
             "enonce": "Quelle expression simplifie √32 ?",
             "reponse": "4√2",
             "correction": "32 = 16 × 2, donc √32 = 4√2.",
@@ -748,11 +888,15 @@
             "p4": "4√8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-014",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -765,6 +909,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 9,
+            "valeur_2": 16,
+            "resultat_exploitable": 12,
             "enonce": "Que vaut √9 × √16 ?",
             "reponse": "12",
             "correction": "Pour des nombres positifs, √9 × √16 = 3 × 4 = 12.",
@@ -776,6 +923,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 16,
+            "valeur_2": 25,
+            "resultat_exploitable": 20,
             "enonce": "Que vaut √16 × √25 ?",
             "reponse": "20",
             "correction": "√16 = 4 et √25 = 5, donc le produit vaut 20.",
@@ -787,6 +937,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 25,
+            "valeur_2": 36,
+            "resultat_exploitable": 30,
             "enonce": "Que vaut √25 × √36 ?",
             "reponse": "30",
             "correction": "√25 = 5 et √36 = 6, donc le produit vaut 30.",
@@ -796,11 +949,15 @@
             "p4": "900"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1) * sqrt(valeur_2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-015",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -813,6 +970,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 9,
+            "valeur_2": 16,
+            "resultat_exploitable": 12,
             "enonce": "Que vaut √(9 × 16) ?",
             "reponse": "12",
             "correction": "√144 = 12 : la racine d’un produit positif est le produit des racines.",
@@ -824,6 +984,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 16,
+            "valeur_2": 25,
+            "resultat_exploitable": 20,
             "enonce": "Que vaut √(16 × 25) ?",
             "reponse": "20",
             "correction": "16 × 25 = 400 et √400 = 20.",
@@ -835,6 +998,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 25,
+            "valeur_2": 36,
+            "resultat_exploitable": 30,
             "enonce": "Que vaut √(25 × 36) ?",
             "reponse": "30",
             "correction": "25 × 36 = 900 et √900 = 30.",
@@ -844,11 +1010,15 @@
             "p4": "900"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1 * valeur_2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-016",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -867,7 +1037,9 @@
             "p1": "5",
             "p2": "25",
             "p3": "20",
-            "p4": "10"
+            "p4": "10",
+            "calcul_exploitable": "sqrt(100) / sqrt(4)",
+            "resultat_exploitable": "5"
           }
         },
         {
@@ -878,7 +1050,9 @@
             "p1": "4",
             "p2": "16",
             "p3": "12",
-            "p4": "48"
+            "p4": "48",
+            "calcul_exploitable": "sqrt(144) / sqrt(9)",
+            "resultat_exploitable": "4"
           }
         },
         {
@@ -889,14 +1063,20 @@
             "p1": "7",
             "p2": "49",
             "p3": "14",
-            "p4": "98"
+            "p4": "98",
+            "calcul_exploitable": "sqrt(196) / sqrt(4)",
+            "resultat_exploitable": "7"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-017",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -915,7 +1095,9 @@
             "p1": "7",
             "p2": "5",
             "p3": "12",
-            "p4": "25"
+            "p4": "25",
+            "calcul_exploitable": "sqrt(9) + sqrt(16)",
+            "resultat_exploitable": "7"
           }
         },
         {
@@ -926,7 +1108,9 @@
             "p1": "9",
             "p2": "6",
             "p3": "20",
-            "p4": "41"
+            "p4": "41",
+            "calcul_exploitable": "sqrt(16) + sqrt(25)",
+            "resultat_exploitable": "9"
           }
         },
         {
@@ -937,14 +1121,20 @@
             "p1": "11",
             "p2": "7",
             "p3": "30",
-            "p4": "61"
+            "p4": "61",
+            "calcul_exploitable": "sqrt(25) + sqrt(36)",
+            "resultat_exploitable": "11"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-018",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -963,7 +1153,9 @@
             "p1": "√(−4)",
             "p2": "√0",
             "p3": "√4",
-            "p4": "√(4²)"
+            "p4": "√(4²)",
+            "radicande": -4,
+            "resultat_exploitable": 1
           }
         },
         {
@@ -974,7 +1166,9 @@
             "p1": "√(−9)",
             "p2": "√0",
             "p3": "√9",
-            "p4": "√(9²)"
+            "p4": "√(9²)",
+            "radicande": -9,
+            "resultat_exploitable": 1
           }
         },
         {
@@ -985,14 +1179,20 @@
             "p1": "√(−16)",
             "p2": "√0",
             "p3": "√16",
-            "p4": "√(16²)"
+            "p4": "√(16²)",
+            "radicande": -16,
+            "resultat_exploitable": 1
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.integer(radicande < 0)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-019",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1005,6 +1205,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 3,
+            "resultat_exploitable": 3,
             "enonce": "Que vaut √(3²) ?",
             "reponse": "3",
             "correction": "√(3²) = |3| = 3.",
@@ -1016,6 +1218,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "resultat_exploitable": 4,
             "enonce": "Que vaut √(4²) ?",
             "reponse": "4",
             "correction": "La racine carrée positive de 4 vaut 4.",
@@ -1027,6 +1231,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 8,
+            "resultat_exploitable": 8,
             "enonce": "Que vaut √(8²) ?",
             "reponse": "8",
             "correction": "La racine carrée positive de 8 vaut 8.",
@@ -1036,11 +1242,15 @@
             "p4": "16"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1 ^ 2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-020",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1053,6 +1263,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": 3,
+            "valeur_3": 5,
+            "resultat_exploitable": 12.12435565298214,
             "enonce": "Quelle expression simplifie 2√3 + 5√3 ?",
             "reponse": "7√3",
             "correction": "On additionne les coefficients des radicaux identiques : (2 + 5)√3.",
@@ -1064,6 +1278,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": 5,
+            "valeur_3": 4,
+            "resultat_exploitable": 15.652475842498529,
             "enonce": "Quelle expression simplifie 3√5 + 4√5 ?",
             "reponse": "7√5",
             "correction": "Les deux termes ont le même radical : (3 + 4)√5 = 7√5.",
@@ -1075,6 +1293,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 6,
+            "valeur_2": 2,
+            "valeur_3": 5,
+            "resultat_exploitable": 15.556349186104047,
             "enonce": "Quelle expression simplifie 6√2 + 5√2 ?",
             "reponse": "11√2",
             "correction": "Les deux termes ont le même radical : (6 + 5)√2 = 11√2.",
@@ -1084,11 +1306,15 @@
             "p4": "√22"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(valeur_1 + valeur_3) * sqrt(valeur_2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-021",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1101,6 +1327,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 8,
+            "resultat_exploitable": 2.8284271247461903,
             "enonce": "Quelle expression simplifie √8 ?",
             "reponse": "2√2",
             "correction": "8 = 4 × 2, donc √8 = 2√2.",
@@ -1112,6 +1340,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 18,
+            "resultat_exploitable": 4.242640687119285,
             "enonce": "Quelle expression simplifie √18 ?",
             "reponse": "3√2",
             "correction": "18 = 9 × 2, donc √18 = 3√2.",
@@ -1123,6 +1353,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 32,
+            "resultat_exploitable": 5.656854249492381,
             "enonce": "Quelle expression simplifie √32 ?",
             "reponse": "4√2",
             "correction": "32 = 16 × 2, donc √32 = 4√2.",
@@ -1132,11 +1364,15 @@
             "p4": "4√8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-022",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "Quelle expression est égale à √(a × b) pour a et b positifs ?",
       "reponse": "√a × √b",
       "propositions": [
@@ -1145,11 +1381,15 @@
         "a × √b",
         "√a × b"
       ],
-      "correction": "La racine carrée d’un produit de nombres positifs est le produit de leurs racines."
+      "correction": "La racine carrée d’un produit de nombres positifs est le produit de leurs racines.",
+      "enonce_exploitable": "sqrt(a*b)",
+      "reponse_exploitable": "sqrt(a)*sqrt(b)",
+      "moteur": "R"
     },
     {
       "id": "RAC-023",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1162,6 +1402,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 64,
+            "resultat_exploitable": 8,
             "enonce": "Un carré a une aire de 64 cm². Quelle est la longueur de son côté ?",
             "reponse": "8 cm",
             "correction": "Le côté est la racine carrée de l’aire : √64 = 8 cm.",
@@ -1173,6 +1415,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 81,
+            "resultat_exploitable": 9,
             "enonce": "Un carré a une aire de 81 cm². Quelle est la longueur de son côté ?",
             "reponse": "9 cm",
             "correction": "La racine carrée positive de 81 vaut 9 cm.",
@@ -1184,6 +1428,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 100,
+            "resultat_exploitable": 10,
             "enonce": "Un carré a une aire de 100 cm². Quelle est la longueur de son côté ?",
             "reponse": "10 cm",
             "correction": "La racine carrée positive de 100 vaut 10 cm.",
@@ -1193,11 +1439,15 @@
             "p4": "5 cm"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-024",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1210,6 +1460,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 6,
+            "valeur_2": 8,
+            "resultat_exploitable": 10,
             "enonce": "Un triangle rectangle a des côtés de l’angle droit de 6 cm et 8 cm. Quelle est son hypoténuse ?",
             "reponse": "10 cm",
             "correction": "Par Pythagore : √(6² + 8²) = √100 = 10 cm.",
@@ -1221,6 +1474,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": 12,
+            "resultat_exploitable": 13,
             "enonce": "Un triangle rectangle a des côtés de l’angle droit de 5 cm et 12 cm. Quelle est son hypoténuse ?",
             "reponse": "13 cm",
             "correction": "Par Pythagore : √(5² + 12²) = √169 = 13 cm.",
@@ -1232,6 +1488,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 8,
+            "valeur_2": 15,
+            "resultat_exploitable": 17,
             "enonce": "Un triangle rectangle a des côtés de l’angle droit de 8 cm et 15 cm. Quelle est son hypoténuse ?",
             "reponse": "17 cm",
             "correction": "Par Pythagore : √(8² + 15²) = √289 = 17 cm.",
@@ -1241,11 +1500,15 @@
             "p4": "19 cm"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1 ^ 2 + valeur_2 ^ 2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RAC-025",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1258,6 +1521,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 25,
+            "valeur_2": 9,
+            "resultat_exploitable": 1.6666666666666667,
             "enonce": "Quelle expression simplifie √(25/9) ?",
             "reponse": "5/3",
             "correction": "La racine du quotient positif vaut √25 / √9 = 5/3.",
@@ -1269,6 +1535,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 49,
+            "valeur_2": 16,
+            "resultat_exploitable": 1.75,
             "enonce": "Quelle expression simplifie √(49/16) ?",
             "reponse": "7/4",
             "correction": "√(49/16) = √49 / √16 = 7/4.",
@@ -1280,6 +1549,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 81,
+            "valeur_2": 25,
+            "resultat_exploitable": 1.8,
             "enonce": "Quelle expression simplifie √(81/25) ?",
             "reponse": "9/5",
             "correction": "√(81/25) = √81 / √25 = 9/5.",
@@ -1289,7 +1561,10 @@
             "p4": "5/9"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(valeur_1 / valeur_2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

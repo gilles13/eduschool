@@ -1,4 +1,4 @@
-# L’essentiel : Multiplier des fractions
+# L'essentiel : Multiplier des fractions
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

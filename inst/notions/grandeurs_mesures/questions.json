@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "MES-GRANDEURS_MESURES-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -47,11 +48,15 @@
             "p4": "Une séance dure 2,4 h."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-GRANDEURS_MESURES-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Quelle grandeur mesure-t-on en secondes ?",
       "reponse": "La durée",
       "propositions": [
@@ -60,11 +65,15 @@
         "La longueur",
         "L’aire"
       ],
-      "correction": "La seconde est une unité de durée."
+      "correction": "La seconde est une unité de durée.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-GRANDEURS_MESURES-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -108,11 +117,15 @@
             "p4": "Changer seulement le symbole de l’unité."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-GRANDEURS_MESURES-VOCAB-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment nomme-t-on la propriété que l’on cherche à mesurer ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -130,11 +143,15 @@
         "longueur",
         "unité"
       ],
-      "correction": "Une grandeur est une propriété mesurable ; sa mesure est un nombre associé à une unité."
+      "correction": "Une grandeur est une propriété mesurable ; sa mesure est un nombre associé à une unité.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-GRANDEURS_MESURES-VOCAB-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on le nombre accompagné de son unité qui exprime une grandeur ?",
       "presentation": {
         "type": "mot_masque",
@@ -153,11 +170,15 @@
         "minute",
         "mètre"
       ],
-      "correction": "Le terme recherché est « mesure »."
+      "correction": "Le terme recherché est « mesure ».",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-GRANDEURS_MESURES-APPLICATION",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -176,7 +197,10 @@
             "p1": "2 m",
             "p2": "1,28 m",
             "p3": "81,2 m",
-            "p4": "200 m"
+            "p4": "200 m",
+            "longueur_cm": 80,
+            "longueur_m": 1.2,
+            "resultat_exploitable": 2.0
           }
         },
         {
@@ -187,7 +211,10 @@
             "p1": "2 m",
             "p2": "2,0 cm",
             "p3": "1,46 m",
-            "p4": "7,4 m"
+            "p4": "7,4 m",
+            "longueur_cm": 60,
+            "longueur_m": 1.4,
+            "resultat_exploitable": 2.0
           }
         },
         {
@@ -198,10 +225,16 @@
             "p1": "2 m",
             "p2": "2,0 cm",
             "p3": "1,325 m",
-            "p4": "8,75 m"
+            "p4": "8,75 m",
+            "longueur_cm": 75,
+            "longueur_m": 1.25,
+            "resultat_exploitable": 2.0
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "longueur_cm/100+longueur_m",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

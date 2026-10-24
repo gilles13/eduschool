@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FRAC-MIG-FRACTION-QUANTITE-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -25,7 +26,12 @@
             "p1": "24",
             "p2": "9",
             "p3": "8",
-            "p4": "32"
+            "p4": "32",
+            "numerateur_exploitable": 3,
+            "denominateur_exploitable": 8,
+            "produit_exploitable": 9,
+            "resultat_numerateur_exploitable": 24,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -37,7 +43,12 @@
             "p1": "30",
             "p2": "12",
             "p3": "5",
-            "p4": "35"
+            "p4": "35",
+            "numerateur_exploitable": 2,
+            "denominateur_exploitable": 5,
+            "produit_exploitable": 12,
+            "resultat_numerateur_exploitable": 30,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -49,7 +60,12 @@
             "p1": "35",
             "p2": "15",
             "p3": "7",
-            "p4": "42"
+            "p4": "42",
+            "numerateur_exploitable": 3,
+            "denominateur_exploitable": 7,
+            "produit_exploitable": 15,
+            "resultat_numerateur_exploitable": 35,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -61,7 +77,12 @@
             "p1": "42",
             "p2": "30",
             "p3": "7",
-            "p4": "49"
+            "p4": "49",
+            "numerateur_exploitable": 5,
+            "denominateur_exploitable": 7,
+            "produit_exploitable": 30,
+            "resultat_numerateur_exploitable": 42,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -73,7 +94,12 @@
             "p1": "48",
             "p2": "36",
             "p3": "4",
-            "p4": "52"
+            "p4": "52",
+            "numerateur_exploitable": 3,
+            "denominateur_exploitable": 4,
+            "produit_exploitable": 36,
+            "resultat_numerateur_exploitable": 48,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         },
@@ -85,15 +111,24 @@
             "p1": "54",
             "p2": "30",
             "p3": "9",
-            "p4": "63"
+            "p4": "63",
+            "numerateur_exploitable": 5,
+            "denominateur_exploitable": 9,
+            "produit_exploitable": 30,
+            "resultat_numerateur_exploitable": 54,
+            "resultat_denominateur_exploitable": 1
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "produit_exploitable * denominateur_exploitable / numerateur_exploitable",
+      "reponse_exploitable": "[[resultat_numerateur_exploitable]] / [[resultat_denominateur_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRAC-MIG-FRACTION-QUANTITE-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Un récipient contient [[total]] litres. On en utilise [[frac]]. Combien de litres sont utilisés ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -115,7 +150,10 @@
             "d1": "\\(8\\)",
             "d2": "\\(12\\)",
             "d3": "\\(5\\)",
-            "correction": "1/3 de 12 = 12 × 1/3 = 4. Donc 4 litres sont utilisés."
+            "correction": "1/3 de 12 = 12 × 1/3 = 4. Donc 4 litres sont utilisés.",
+            "total_exploitable": "12",
+            "fraction_exploitable": "1/3",
+            "resultat_exploitable": "4"
           },
           "progression": 1
         },
@@ -127,7 +165,10 @@
             "d1": "\\(9\\)",
             "d2": "\\(3\\)",
             "d3": "\\(15\\)",
-            "correction": "2/5 de 15 = 15 × 2/5 = 6. Donc 6 litres sont utilisés."
+            "correction": "2/5 de 15 = 15 × 2/5 = 6. Donc 6 litres sont utilisés.",
+            "total_exploitable": "15",
+            "fraction_exploitable": "2/5",
+            "resultat_exploitable": "6"
           },
           "progression": 1
         },
@@ -139,7 +180,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(16\\)",
             "d3": "\\(13\\)",
-            "correction": "3/4 de 16 = 16 × 3/4 = 12. Donc 12 litres sont utilisés."
+            "correction": "3/4 de 16 = 16 × 3/4 = 12. Donc 12 litres sont utilisés.",
+            "total_exploitable": "16",
+            "fraction_exploitable": "3/4",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -151,7 +195,10 @@
             "d1": "\\(12\\)",
             "d2": "\\(4\\)",
             "d3": "\\(20\\)",
-            "correction": "2/5 de 20 = 20 × 2/5 = 8. Donc 8 litres sont utilisés."
+            "correction": "2/5 de 20 = 20 × 2/5 = 8. Donc 8 litres sont utilisés.",
+            "total_exploitable": "20",
+            "fraction_exploitable": "2/5",
+            "resultat_exploitable": "8"
           },
           "progression": 1
         },
@@ -163,7 +210,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(24\\)",
             "d3": "\\(21\\)",
-            "correction": "5/6 de 24 = 24 × 5/6 = 20. Donc 20 litres sont utilisés."
+            "correction": "5/6 de 24 = 24 × 5/6 = 20. Donc 20 litres sont utilisés.",
+            "total_exploitable": "24",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "20"
           },
           "progression": 1
         },
@@ -175,7 +225,10 @@
             "d1": "\\(16\\)",
             "d2": "\\(4\\)",
             "d3": "\\(28\\)",
-            "correction": "3/7 de 28 = 28 × 3/7 = 12. Donc 12 litres sont utilisés."
+            "correction": "3/7 de 28 = 28 × 3/7 = 12. Donc 12 litres sont utilisés.",
+            "total_exploitable": "28",
+            "fraction_exploitable": "3/7",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -187,7 +240,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(30\\)",
             "d3": "\\(25\\)",
-            "correction": "4/5 de 30 = 30 × 4/5 = 24. Donc 24 litres sont utilisés."
+            "correction": "4/5 de 30 = 30 × 4/5 = 24. Donc 24 litres sont utilisés.",
+            "total_exploitable": "30",
+            "fraction_exploitable": "4/5",
+            "resultat_exploitable": "24"
           },
           "progression": 2
         },
@@ -199,7 +255,10 @@
             "d1": "\\(20\\)",
             "d2": "\\(4\\)",
             "d3": "\\(32\\)",
-            "correction": "3/8 de 32 = 32 × 3/8 = 12. Donc 12 litres sont utilisés."
+            "correction": "3/8 de 32 = 32 × 3/8 = 12. Donc 12 litres sont utilisés.",
+            "total_exploitable": "32",
+            "fraction_exploitable": "3/8",
+            "resultat_exploitable": "12"
           },
           "progression": 2
         },
@@ -211,7 +270,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(36\\)",
             "d3": "\\(31\\)",
-            "correction": "5/6 de 36 = 36 × 5/6 = 30. Donc 30 litres sont utilisés."
+            "correction": "5/6 de 36 = 36 × 5/6 = 30. Donc 30 litres sont utilisés.",
+            "total_exploitable": "36",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "30"
           },
           "progression": 2
         },
@@ -223,7 +285,10 @@
             "d1": "\\(12\\)",
             "d2": "\\(4\\)",
             "d3": "\\(40\\)",
-            "correction": "7/10 de 40 = 40 × 7/10 = 28. Donc 28 litres sont utilisés."
+            "correction": "7/10 de 40 = 40 × 7/10 = 28. Donc 28 litres sont utilisés.",
+            "total_exploitable": "40",
+            "fraction_exploitable": "7/10",
+            "resultat_exploitable": "28"
           },
           "progression": 2
         },
@@ -235,7 +300,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(48\\)",
             "d3": "\\(43\\)",
-            "correction": "7/8 de 48 = 48 × 7/8 = 42. Donc 42 litres sont utilisés."
+            "correction": "7/8 de 48 = 48 × 7/8 = 42. Donc 42 litres sont utilisés.",
+            "total_exploitable": "48",
+            "fraction_exploitable": "7/8",
+            "resultat_exploitable": "42"
           },
           "progression": 3
         },
@@ -247,15 +315,22 @@
             "d1": "\\(24\\)",
             "d2": "\\(6\\)",
             "d3": "\\(54\\)",
-            "correction": "5/9 de 54 = 54 × 5/9 = 30. Donc 30 litres sont utilisés."
+            "correction": "5/9 de 54 = 54 × 5/9 = 30. Donc 30 litres sont utilisés.",
+            "total_exploitable": "54",
+            "fraction_exploitable": "5/9",
+            "resultat_exploitable": "30"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "total_exploitable * fraction_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-QUANT-RESTE-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Un récipient contient [[total]] litres. On en utilise [[frac]]. Combien de litres restent ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -274,7 +349,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(12\\)",
             "d3": "\\(9\\)",
-            "correction": "1/3 de 12 = 4 litres utilisés. Il reste donc 12 − 4 = 8 litres."
+            "correction": "1/3 de 12 = 4 litres utilisés. Il reste donc 12 − 4 = 8 litres.",
+            "total_exploitable": "12",
+            "fraction_exploitable": "1/3",
+            "resultat_exploitable": "8"
           },
           "progression": 1
         },
@@ -286,7 +364,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(3\\)",
             "d3": "\\(15\\)",
-            "correction": "2/5 de 15 = 6 litres utilisés. Il reste donc 15 − 6 = 9 litres."
+            "correction": "2/5 de 15 = 6 litres utilisés. Il reste donc 15 − 6 = 9 litres.",
+            "total_exploitable": "15",
+            "fraction_exploitable": "2/5",
+            "resultat_exploitable": "9"
           },
           "progression": 1
         },
@@ -298,7 +379,10 @@
             "d1": "\\(12\\)",
             "d2": "\\(16\\)",
             "d3": "\\(5\\)",
-            "correction": "3/4 de 16 = 12 litres utilisés. Il reste donc 16 − 12 = 4 litres."
+            "correction": "3/4 de 16 = 12 litres utilisés. Il reste donc 16 − 12 = 4 litres.",
+            "total_exploitable": "16",
+            "fraction_exploitable": "3/4",
+            "resultat_exploitable": "4"
           },
           "progression": 1
         },
@@ -310,7 +394,10 @@
             "d1": "\\(8\\)",
             "d2": "\\(4\\)",
             "d3": "\\(20\\)",
-            "correction": "2/5 de 20 = 8 litres utilisés. Il reste donc 20 − 8 = 12 litres."
+            "correction": "2/5 de 20 = 8 litres utilisés. Il reste donc 20 − 8 = 12 litres.",
+            "total_exploitable": "20",
+            "fraction_exploitable": "2/5",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -322,7 +409,10 @@
             "d1": "\\(20\\)",
             "d2": "\\(24\\)",
             "d3": "\\(5\\)",
-            "correction": "5/6 de 24 = 20 litres utilisés. Il reste donc 24 − 20 = 4 litres."
+            "correction": "5/6 de 24 = 20 litres utilisés. Il reste donc 24 − 20 = 4 litres.",
+            "total_exploitable": "24",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "4"
           },
           "progression": 1
         },
@@ -334,7 +424,10 @@
             "d1": "\\(12\\)",
             "d2": "\\(4\\)",
             "d3": "\\(28\\)",
-            "correction": "3/7 de 28 = 12 litres utilisés. Il reste donc 28 − 12 = 16 litres."
+            "correction": "3/7 de 28 = 12 litres utilisés. Il reste donc 28 − 12 = 16 litres.",
+            "total_exploitable": "28",
+            "fraction_exploitable": "3/7",
+            "resultat_exploitable": "16"
           },
           "progression": 1
         },
@@ -346,7 +439,10 @@
             "d1": "\\(24\\)",
             "d2": "\\(30\\)",
             "d3": "\\(7\\)",
-            "correction": "4/5 de 30 = 24 litres utilisés. Il reste donc 30 − 24 = 6 litres."
+            "correction": "4/5 de 30 = 24 litres utilisés. Il reste donc 30 − 24 = 6 litres.",
+            "total_exploitable": "30",
+            "fraction_exploitable": "4/5",
+            "resultat_exploitable": "6"
           },
           "progression": 2
         },
@@ -358,7 +454,10 @@
             "d1": "\\(12\\)",
             "d2": "\\(4\\)",
             "d3": "\\(32\\)",
-            "correction": "3/8 de 32 = 12 litres utilisés. Il reste donc 32 − 12 = 20 litres."
+            "correction": "3/8 de 32 = 12 litres utilisés. Il reste donc 32 − 12 = 20 litres.",
+            "total_exploitable": "32",
+            "fraction_exploitable": "3/8",
+            "resultat_exploitable": "20"
           },
           "progression": 2
         },
@@ -370,7 +469,10 @@
             "d1": "\\(30\\)",
             "d2": "\\(36\\)",
             "d3": "\\(7\\)",
-            "correction": "5/6 de 36 = 30 litres utilisés. Il reste donc 36 − 30 = 6 litres."
+            "correction": "5/6 de 36 = 30 litres utilisés. Il reste donc 36 − 30 = 6 litres.",
+            "total_exploitable": "36",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "6"
           },
           "progression": 2
         },
@@ -382,7 +484,10 @@
             "d1": "\\(28\\)",
             "d2": "\\(4\\)",
             "d3": "\\(40\\)",
-            "correction": "7/10 de 40 = 28 litres utilisés. Il reste donc 40 − 28 = 12 litres."
+            "correction": "7/10 de 40 = 28 litres utilisés. Il reste donc 40 − 28 = 12 litres.",
+            "total_exploitable": "40",
+            "fraction_exploitable": "7/10",
+            "resultat_exploitable": "12"
           },
           "progression": 2
         },
@@ -394,7 +499,10 @@
             "d1": "\\(42\\)",
             "d2": "\\(48\\)",
             "d3": "\\(7\\)",
-            "correction": "7/8 de 48 = 42 litres utilisés. Il reste donc 48 − 42 = 6 litres."
+            "correction": "7/8 de 48 = 42 litres utilisés. Il reste donc 48 − 42 = 6 litres.",
+            "total_exploitable": "48",
+            "fraction_exploitable": "7/8",
+            "resultat_exploitable": "6"
           },
           "progression": 3
         },
@@ -406,15 +514,22 @@
             "d1": "\\(30\\)",
             "d2": "\\(6\\)",
             "d3": "\\(54\\)",
-            "correction": "5/9 de 54 = 30 litres utilisés. Il reste donc 54 − 30 = 24 litres."
+            "correction": "5/9 de 54 = 30 litres utilisés. Il reste donc 54 − 30 = 24 litres.",
+            "total_exploitable": "54",
+            "fraction_exploitable": "5/9",
+            "resultat_exploitable": "24"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "total_exploitable * (1 - fraction_exploitable)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-VAR-QUANT-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Calcule [[frac]] de [[total]].",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -433,7 +548,10 @@
             "d1": "\\(12\\)",
             "d2": "\\(7\\)",
             "d3": "\\(5\\)",
-            "correction": "Je partage 12 en 2 parts égales : 12 ÷ 2 = 6.\nJe prends 1 de ces parts : 6 × 1 = 6.\nDonc 1/2 de 12 vaut 6."
+            "correction": "Je partage 12 en 2 parts égales : 12 ÷ 2 = 6.\nJe prends 1 de ces parts : 6 × 1 = 6.\nDonc 1/2 de 12 vaut 6.",
+            "total_exploitable": "12",
+            "fraction_exploitable": "1/2",
+            "resultat_exploitable": "6"
           },
           "progression": 1
         },
@@ -445,7 +563,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(24\\)",
             "d3": "\\(9\\)",
-            "correction": "Je partage 12 en 3 parts égales : 12 ÷ 3 = 4.\nJe prends 2 de ces parts : 4 × 2 = 8.\nDonc 2/3 de 12 vaut 8."
+            "correction": "Je partage 12 en 3 parts égales : 12 ÷ 3 = 4.\nJe prends 2 de ces parts : 4 × 2 = 8.\nDonc 2/3 de 12 vaut 8.",
+            "total_exploitable": "12",
+            "fraction_exploitable": "2/3",
+            "resultat_exploitable": "8"
           },
           "progression": 1
         },
@@ -457,7 +578,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(48\\)",
             "d3": "\\(13\\)",
-            "correction": "Je partage 16 en 4 parts égales : 16 ÷ 4 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/4 de 16 vaut 12."
+            "correction": "Je partage 16 en 4 parts égales : 16 ÷ 4 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/4 de 16 vaut 12.",
+            "total_exploitable": "16",
+            "fraction_exploitable": "3/4",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -469,7 +593,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(40\\)",
             "d3": "\\(12\\)",
-            "correction": "Je partage 20 en 5 parts égales : 20 ÷ 5 = 4.\nJe prends 2 de ces parts : 4 × 2 = 8.\nDonc 2/5 de 20 vaut 8."
+            "correction": "Je partage 20 en 5 parts égales : 20 ÷ 5 = 4.\nJe prends 2 de ces parts : 4 × 2 = 8.\nDonc 2/5 de 20 vaut 8.",
+            "total_exploitable": "20",
+            "fraction_exploitable": "2/5",
+            "resultat_exploitable": "8"
           },
           "progression": 1
         },
@@ -481,7 +608,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(120\\)",
             "d3": "\\(21\\)",
-            "correction": "Je partage 24 en 6 parts égales : 24 ÷ 6 = 4.\nJe prends 5 de ces parts : 4 × 5 = 20.\nDonc 5/6 de 24 vaut 20."
+            "correction": "Je partage 24 en 6 parts égales : 24 ÷ 6 = 4.\nJe prends 5 de ces parts : 4 × 5 = 20.\nDonc 5/6 de 24 vaut 20.",
+            "total_exploitable": "24",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "20"
           },
           "progression": 1
         },
@@ -493,7 +623,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(84\\)",
             "d3": "\\(16\\)",
-            "correction": "Je partage 28 en 7 parts égales : 28 ÷ 7 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/7 de 28 vaut 12."
+            "correction": "Je partage 28 en 7 parts égales : 28 ÷ 7 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/7 de 28 vaut 12.",
+            "total_exploitable": "28",
+            "fraction_exploitable": "3/7",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -505,7 +638,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(120\\)",
             "d3": "\\(25\\)",
-            "correction": "Je partage 30 en 5 parts égales : 30 ÷ 5 = 6.\nJe prends 4 de ces parts : 6 × 4 = 24.\nDonc 4/5 de 30 vaut 24."
+            "correction": "Je partage 30 en 5 parts égales : 30 ÷ 5 = 6.\nJe prends 4 de ces parts : 6 × 4 = 24.\nDonc 4/5 de 30 vaut 24.",
+            "total_exploitable": "30",
+            "fraction_exploitable": "4/5",
+            "resultat_exploitable": "24"
           },
           "progression": 2
         },
@@ -517,7 +653,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(96\\)",
             "d3": "\\(20\\)",
-            "correction": "Je partage 32 en 8 parts égales : 32 ÷ 8 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/8 de 32 vaut 12."
+            "correction": "Je partage 32 en 8 parts égales : 32 ÷ 8 = 4.\nJe prends 3 de ces parts : 4 × 3 = 12.\nDonc 3/8 de 32 vaut 12.",
+            "total_exploitable": "32",
+            "fraction_exploitable": "3/8",
+            "resultat_exploitable": "12"
           },
           "progression": 2
         },
@@ -529,7 +668,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(180\\)",
             "d3": "\\(31\\)",
-            "correction": "Je partage 36 en 6 parts égales : 36 ÷ 6 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/6 de 36 vaut 30."
+            "correction": "Je partage 36 en 6 parts égales : 36 ÷ 6 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/6 de 36 vaut 30.",
+            "total_exploitable": "36",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "30"
           },
           "progression": 2
         },
@@ -541,7 +683,10 @@
             "d1": "\\(4\\)",
             "d2": "\\(280\\)",
             "d3": "\\(12\\)",
-            "correction": "Je partage 40 en 10 parts égales : 40 ÷ 10 = 4.\nJe prends 7 de ces parts : 4 × 7 = 28.\nDonc 7/10 de 40 vaut 28."
+            "correction": "Je partage 40 en 10 parts égales : 40 ÷ 10 = 4.\nJe prends 7 de ces parts : 4 × 7 = 28.\nDonc 7/10 de 40 vaut 28.",
+            "total_exploitable": "40",
+            "fraction_exploitable": "7/10",
+            "resultat_exploitable": "28"
           },
           "progression": 2
         },
@@ -553,7 +698,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(210\\)",
             "d3": "\\(12\\)",
-            "correction": "Je partage 42 en 7 parts égales : 42 ÷ 7 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/7 de 42 vaut 30."
+            "correction": "Je partage 42 en 7 parts égales : 42 ÷ 7 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/7 de 42 vaut 30.",
+            "total_exploitable": "42",
+            "fraction_exploitable": "5/7",
+            "resultat_exploitable": "30"
           },
           "progression": 2
         },
@@ -565,7 +713,10 @@
             "d1": "\\(5\\)",
             "d2": "\\(90\\)",
             "d3": "\\(35\\)",
-            "correction": "Je partage 45 en 9 parts égales : 45 ÷ 9 = 5.\nJe prends 2 de ces parts : 5 × 2 = 10.\nDonc 2/9 de 45 vaut 10."
+            "correction": "Je partage 45 en 9 parts égales : 45 ÷ 9 = 5.\nJe prends 2 de ces parts : 5 × 2 = 10.\nDonc 2/9 de 45 vaut 10.",
+            "total_exploitable": "45",
+            "fraction_exploitable": "2/9",
+            "resultat_exploitable": "10"
           },
           "progression": 2
         },
@@ -577,7 +728,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(336\\)",
             "d3": "\\(43\\)",
-            "correction": "Je partage 48 en 8 parts égales : 48 ÷ 8 = 6.\nJe prends 7 de ces parts : 6 × 7 = 42.\nDonc 7/8 de 48 vaut 42."
+            "correction": "Je partage 48 en 8 parts égales : 48 ÷ 8 = 6.\nJe prends 7 de ces parts : 6 × 7 = 42.\nDonc 7/8 de 48 vaut 42.",
+            "total_exploitable": "48",
+            "fraction_exploitable": "7/8",
+            "resultat_exploitable": "42"
           },
           "progression": 3
         },
@@ -589,7 +743,10 @@
             "d1": "\\(6\\)",
             "d2": "\\(270\\)",
             "d3": "\\(24\\)",
-            "correction": "Je partage 54 en 9 parts égales : 54 ÷ 9 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/9 de 54 vaut 30."
+            "correction": "Je partage 54 en 9 parts égales : 54 ÷ 9 = 6.\nJe prends 5 de ces parts : 6 × 5 = 30.\nDonc 5/9 de 54 vaut 30.",
+            "total_exploitable": "54",
+            "fraction_exploitable": "5/9",
+            "resultat_exploitable": "30"
           },
           "progression": 3
         },
@@ -601,7 +758,10 @@
             "d1": "\\(14\\)",
             "d2": "\\(168\\)",
             "d3": "\\(43\\)",
-            "correction": "Je partage 56 en 4 parts égales : 56 ÷ 4 = 14.\nJe prends 3 de ces parts : 14 × 3 = 42.\nDonc 3/4 de 56 vaut 42."
+            "correction": "Je partage 56 en 4 parts égales : 56 ÷ 4 = 14.\nJe prends 3 de ces parts : 14 × 3 = 42.\nDonc 3/4 de 56 vaut 42.",
+            "total_exploitable": "56",
+            "fraction_exploitable": "3/4",
+            "resultat_exploitable": "42"
           },
           "progression": 3
         },
@@ -613,7 +773,10 @@
             "d1": "\\(5\\)",
             "d2": "\\(660\\)",
             "d3": "\\(56\\)",
-            "correction": "Je partage 60 en 12 parts égales : 60 ÷ 12 = 5.\nJe prends 11 de ces parts : 5 × 11 = 55.\nDonc 11/12 de 60 vaut 55."
+            "correction": "Je partage 60 en 12 parts égales : 60 ÷ 12 = 5.\nJe prends 11 de ces parts : 5 × 11 = 55.\nDonc 11/12 de 60 vaut 55.",
+            "total_exploitable": "60",
+            "fraction_exploitable": "11/12",
+            "resultat_exploitable": "55"
           },
           "progression": 3
         },
@@ -625,7 +788,10 @@
             "d1": "\\(8\\)",
             "d2": "\\(504\\)",
             "d3": "\\(16\\)",
-            "correction": "Je partage 72 en 9 parts égales : 72 ÷ 9 = 8.\nJe prends 7 de ces parts : 8 × 7 = 56.\nDonc 7/9 de 72 vaut 56."
+            "correction": "Je partage 72 en 9 parts égales : 72 ÷ 9 = 8.\nJe prends 7 de ces parts : 8 × 7 = 56.\nDonc 7/9 de 72 vaut 56.",
+            "total_exploitable": "72",
+            "fraction_exploitable": "7/9",
+            "resultat_exploitable": "56"
           },
           "progression": 3
         },
@@ -637,15 +803,22 @@
             "d1": "\\(14\\)",
             "d2": "\\(420\\)",
             "d3": "\\(71\\)",
-            "correction": "Je partage 84 en 6 parts égales : 84 ÷ 6 = 14.\nJe prends 5 de ces parts : 14 × 5 = 70.\nDonc 5/6 de 84 vaut 70."
+            "correction": "Je partage 84 en 6 parts égales : 84 ÷ 6 = 14.\nJe prends 5 de ces parts : 14 × 5 = 70.\nDonc 5/6 de 84 vaut 70.",
+            "total_exploitable": "84",
+            "fraction_exploitable": "5/6",
+            "resultat_exploitable": "70"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "total_exploitable * fraction_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-QUANT-TABLEAU-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -673,7 +846,10 @@
             "p4": "12",
             "ill_total": "24",
             "ill_fraction": "3/8",
-            "ill_quantite": "?"
+            "ill_quantite": "?",
+            "total_exploitable": "24",
+            "fraction_exploitable": "3/8",
+            "resultat_exploitable": "9"
           },
           "progression": 1
         },
@@ -688,7 +864,10 @@
             "p4": "14",
             "ill_total": "30",
             "ill_fraction": "2/5",
-            "ill_quantite": "?"
+            "ill_quantite": "?",
+            "total_exploitable": "30",
+            "fraction_exploitable": "2/5",
+            "resultat_exploitable": "12"
           },
           "progression": 1
         },
@@ -703,7 +882,10 @@
             "p4": "18",
             "ill_total": "35",
             "ill_fraction": "3/7",
-            "ill_quantite": "?"
+            "ill_quantite": "?",
+            "total_exploitable": "35",
+            "fraction_exploitable": "3/7",
+            "resultat_exploitable": "15"
           },
           "progression": 1
         },
@@ -718,7 +900,10 @@
             "p4": "35",
             "ill_total": "42",
             "ill_fraction": "5/7",
-            "ill_quantite": "?"
+            "ill_quantite": "?",
+            "total_exploitable": "42",
+            "fraction_exploitable": "5/7",
+            "resultat_exploitable": "30"
           },
           "progression": 1
         },
@@ -733,7 +918,10 @@
             "p4": "39",
             "ill_total": "48",
             "ill_fraction": "3/4",
-            "ill_quantite": "?"
+            "ill_quantite": "?",
+            "total_exploitable": "48",
+            "fraction_exploitable": "3/4",
+            "resultat_exploitable": "36"
           },
           "progression": 1
         },
@@ -748,15 +936,22 @@
             "p4": "35",
             "ill_total": "54",
             "ill_fraction": "5/9",
-            "ill_quantite": "?"
+            "ill_quantite": "?",
+            "total_exploitable": "54",
+            "fraction_exploitable": "5/9",
+            "resultat_exploitable": "30"
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "total_exploitable * fraction_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-QUANT-INTERPRETER-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -839,7 +1034,10 @@
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Les quartiles sont des valeurs de position qui partagent une série ordonnée ; une boîte à moustaches les représente avec la médiane et les extrêmes.
+**Les quartiles** sont des valeurs de position qui partagent une série ordonnée ; une boîte à moustaches les représente avec la médiane et les extrêmes.
 :::
 
 ## Principe

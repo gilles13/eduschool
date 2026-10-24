@@ -66,7 +66,7 @@ Pour développer deux parenthèses, chaque terme de la première multiplie chaqu
 
 ## Pour vérifier tes découvertes
 
-**1. Quatre produits.** On distribue les deux termes :
+1. **Quatre produits :** On distribue les deux termes :
 
 $$
 (3x+2)(x-4)=3x\times x+3x\times(-4)+2\times x+2\times(-4).

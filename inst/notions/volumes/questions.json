@@ -1,0 +1,1554 @@
+{
+  "notion_id": "volumes",
+  "questions": [
+    {
+      "id": "VOL-CUBE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 10 cm. Quel est son volume ?",
+            "reponse": "1000 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 10 × 10 × 10 = 1000 cm³.",
+            "p1": "1000 cm³",
+            "p2": "100 cm³",
+            "p3": "600 cm³",
+            "p4": "30 cm³",
+            "longueur": 10,
+            "largeur": 10,
+            "hauteur": 10,
+            "resultat": 1000
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 37 cm. Quel est son volume ?",
+            "reponse": "50653 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 37 × 37 × 37 = 50653 cm³.",
+            "p1": "50653 cm³",
+            "p2": "1369 cm³",
+            "p3": "8214 cm³",
+            "p4": "111 cm³",
+            "longueur": 37,
+            "largeur": 37,
+            "hauteur": 37,
+            "resultat": 50653
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 21 cm. Quel est son volume ?",
+            "reponse": "9261 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 21 × 21 × 21 = 9261 cm³.",
+            "p1": "9261 cm³",
+            "p2": "441 cm³",
+            "p3": "2646 cm³",
+            "p4": "63 cm³",
+            "longueur": 21,
+            "largeur": 21,
+            "hauteur": 21,
+            "resultat": 9261
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 51 cm. Quel est son volume ?",
+            "reponse": "132651 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 51 × 51 × 51 = 132651 cm³.",
+            "p1": "132651 cm³",
+            "p2": "2601 cm³",
+            "p3": "15606 cm³",
+            "p4": "153 cm³",
+            "longueur": 51,
+            "largeur": 51,
+            "hauteur": 51,
+            "resultat": 132651
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 47 cm. Quel est son volume ?",
+            "reponse": "103823 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 47 × 47 × 47 = 103823 cm³.",
+            "p1": "103823 cm³",
+            "p2": "2209 cm³",
+            "p3": "13254 cm³",
+            "p4": "141 cm³",
+            "longueur": 47,
+            "largeur": 47,
+            "hauteur": 47,
+            "resultat": 103823
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 48 cm. Quel est son volume ?",
+            "reponse": "110592 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 48 × 48 × 48 = 110592 cm³.",
+            "p1": "110592 cm³",
+            "p2": "2304 cm³",
+            "p3": "13824 cm³",
+            "p4": "144 cm³",
+            "longueur": 48,
+            "largeur": 48,
+            "hauteur": 48,
+            "resultat": 110592
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 62 cm. Quel est son volume ?",
+            "reponse": "238328 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 62 × 62 × 62 = 238328 cm³.",
+            "p1": "238328 cm³",
+            "p2": "3844 cm³",
+            "p3": "23064 cm³",
+            "p4": "186 cm³",
+            "longueur": 62,
+            "largeur": 62,
+            "hauteur": 62,
+            "resultat": 238328
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 65 cm. Quel est son volume ?",
+            "reponse": "274625 cm³",
+            "correction": "Le volume d’un cube vaut côté × côté × côté : 65 × 65 × 65 = 274625 cm³.",
+            "p1": "274625 cm³",
+            "p2": "4225 cm³",
+            "p3": "25350 cm³",
+            "p4": "195 cm³",
+            "longueur": 65,
+            "largeur": 65,
+            "hauteur": 65,
+            "resultat": 274625
+          },
+          "progression": 1
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur": "[[hauteur]]",
+        "cube": true
+      },
+      "enonce_exploitable": "longueur * largeur * hauteur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "VOL-PAVE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 12 cm de long, 2 cm de large et 6 cm de haut. Quel est son volume ?",
+            "reponse": "144 cm³",
+            "correction": "On multiplie les trois dimensions : 12 × 2 × 6 = 144 cm³.",
+            "p1": "144 cm³",
+            "p2": "24 cm³",
+            "p3": "216 cm³",
+            "p4": "20 cm³",
+            "longueur": 12,
+            "largeur": 2,
+            "hauteur": 6,
+            "resultat": 144
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 3 cm de long, 8 cm de large et 8 cm de haut. Quel est son volume ?",
+            "reponse": "192 cm³",
+            "correction": "On multiplie les trois dimensions : 3 × 8 × 8 = 192 cm³.",
+            "p1": "192 cm³",
+            "p2": "24 cm³",
+            "p3": "224 cm³",
+            "p4": "19 cm³",
+            "longueur": 3,
+            "largeur": 8,
+            "hauteur": 8,
+            "resultat": 192
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 13 cm de long, 10 cm de large et 5 cm de haut. Quel est son volume ?",
+            "reponse": "650 cm³",
+            "correction": "On multiplie les trois dimensions : 13 × 10 × 5 = 650 cm³.",
+            "p1": "650 cm³",
+            "p2": "130 cm³",
+            "p3": "490 cm³",
+            "p4": "28 cm³",
+            "longueur": 13,
+            "largeur": 10,
+            "hauteur": 5,
+            "resultat": 650
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 9 cm de long, 11 cm de large et 7 cm de haut. Quel est son volume ?",
+            "reponse": "693 cm³",
+            "correction": "On multiplie les trois dimensions : 9 × 11 × 7 = 693 cm³.",
+            "p1": "693 cm³",
+            "p2": "99 cm³",
+            "p3": "478 cm³",
+            "p4": "27 cm³",
+            "longueur": 9,
+            "largeur": 11,
+            "hauteur": 7,
+            "resultat": 693
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 12 cm de long, 5 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "120 cm³",
+            "correction": "On multiplie les trois dimensions : 12 × 5 × 2 = 120 cm³.",
+            "p1": "120 cm³",
+            "p2": "60 cm³",
+            "p3": "188 cm³",
+            "p4": "19 cm³",
+            "longueur": 12,
+            "largeur": 5,
+            "hauteur": 2,
+            "resultat": 120
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 11 cm de long, 9 cm de large et 4 cm de haut. Quel est son volume ?",
+            "reponse": "396 cm³",
+            "correction": "On multiplie les trois dimensions : 11 × 9 × 4 = 396 cm³.",
+            "p1": "396 cm³",
+            "p2": "99 cm³",
+            "p3": "358 cm³",
+            "p4": "24 cm³",
+            "longueur": 11,
+            "largeur": 9,
+            "hauteur": 4,
+            "resultat": 396
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 11 cm de long, 2 cm de large et 8 cm de haut. Quel est son volume ?",
+            "reponse": "176 cm³",
+            "correction": "On multiplie les trois dimensions : 11 × 2 × 8 = 176 cm³.",
+            "p1": "176 cm³",
+            "p2": "22 cm³",
+            "p3": "252 cm³",
+            "p4": "21 cm³",
+            "longueur": 11,
+            "largeur": 2,
+            "hauteur": 8,
+            "resultat": 176
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 6 cm de long, 2 cm de large et 7 cm de haut. Quel est son volume ?",
+            "reponse": "84 cm³",
+            "correction": "On multiplie les trois dimensions : 6 × 2 × 7 = 84 cm³.",
+            "p1": "84 cm³",
+            "p2": "12 cm³",
+            "p3": "136 cm³",
+            "p4": "15 cm³",
+            "longueur": 6,
+            "largeur": 2,
+            "hauteur": 7,
+            "resultat": 84
+          },
+          "progression": 1
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur": "[[hauteur]]"
+      },
+      "enonce_exploitable": "longueur * largeur * hauteur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "VOL-COUCHES-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 2 couches identiques de 12 rangées de 3 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "72 cm³",
+            "correction": "Chaque couche contient 12 × 3 = 36 cubes. Pour 2 couches : 36 × 2 = 72 cm³.",
+            "p1": "72 cm³",
+            "p2": "36 cm³",
+            "p3": "38 cm³",
+            "p4": "34 cm³",
+            "couches": 2,
+            "rangees": 12,
+            "cubes_par_rangee": 3,
+            "resultat_exploitable": 72
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 6 couches identiques de 5 rangées de 11 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "330 cm³",
+            "correction": "Chaque couche contient 5 × 11 = 55 cubes. Pour 6 couches : 55 × 6 = 330 cm³.",
+            "p1": "330 cm³",
+            "p2": "55 cm³",
+            "p3": "61 cm³",
+            "p4": "44 cm³",
+            "couches": 6,
+            "rangees": 5,
+            "cubes_par_rangee": 11,
+            "resultat_exploitable": 330
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 5 couches identiques de 11 rangées de 2 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "110 cm³",
+            "correction": "Chaque couche contient 11 × 2 = 22 cubes. Pour 5 couches : 22 × 5 = 110 cm³.",
+            "p1": "110 cm³",
+            "p2": "22 cm³",
+            "p3": "27 cm³",
+            "p4": "36 cm³",
+            "couches": 5,
+            "rangees": 11,
+            "cubes_par_rangee": 2,
+            "resultat_exploitable": 110
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 8 couches identiques de 5 rangées de 5 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "200 cm³",
+            "correction": "Chaque couche contient 5 × 5 = 25 cubes. Pour 8 couches : 25 × 8 = 200 cm³.",
+            "p1": "200 cm³",
+            "p2": "25 cm³",
+            "p3": "33 cm³",
+            "p4": "36 cm³",
+            "couches": 8,
+            "rangees": 5,
+            "cubes_par_rangee": 5,
+            "resultat_exploitable": 200
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 5 couches identiques de 4 rangées de 4 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "80 cm³",
+            "correction": "Chaque couche contient 4 × 4 = 16 cubes. Pour 5 couches : 16 × 5 = 80 cm³.",
+            "p1": "80 cm³",
+            "p2": "16 cm³",
+            "p3": "21 cm³",
+            "p4": "26 cm³",
+            "couches": 5,
+            "rangees": 4,
+            "cubes_par_rangee": 4,
+            "resultat_exploitable": 80
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 4 couches identiques de 11 rangées de 9 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "396 cm³",
+            "correction": "Chaque couche contient 11 × 9 = 99 cubes. Pour 4 couches : 99 × 4 = 396 cm³.",
+            "p1": "396 cm³",
+            "p2": "99 cm³",
+            "p3": "103 cm³",
+            "p4": "48 cm³",
+            "couches": 4,
+            "rangees": 11,
+            "cubes_par_rangee": 9,
+            "resultat_exploitable": 396
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 6 couches identiques de 7 rangées de 3 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "126 cm³",
+            "correction": "Chaque couche contient 7 × 3 = 21 cubes. Pour 6 couches : 21 × 6 = 126 cm³.",
+            "p1": "126 cm³",
+            "p2": "21 cm³",
+            "p3": "27 cm³",
+            "p4": "32 cm³",
+            "couches": 6,
+            "rangees": 7,
+            "cubes_par_rangee": 3,
+            "resultat_exploitable": 126
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un solide est formé de 10 couches identiques de 10 rangées de 4 cubes de 1 cm de côté. Quel est son volume ?",
+            "reponse": "400 cm³",
+            "correction": "Chaque couche contient 10 × 4 = 40 cubes. Pour 10 couches : 40 × 10 = 400 cm³.",
+            "p1": "400 cm³",
+            "p2": "40 cm³",
+            "p3": "50 cm³",
+            "p4": "48 cm³",
+            "couches": 10,
+            "rangees": 10,
+            "cubes_par_rangee": 4,
+            "resultat_exploitable": 400
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "couches * rangees * cubes_par_rangee",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "VOL-HAUTEUR-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 1080 cm³. Sa base mesure 15 cm sur 9 cm. Quelle est sa hauteur ?",
+            "reponse": "8 cm",
+            "correction": "L’aire de la base vaut 15 × 9 = 135 cm². La hauteur est 1080 ÷ 135 = 8 cm.",
+            "p1": "8 cm",
+            "p2": "135 cm",
+            "p3": "32 cm",
+            "p4": "16 cm",
+            "longueur": 15,
+            "largeur": 9,
+            "volume": 1080,
+            "resultat_exploitable": 8
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 312 cm³. Sa base mesure 6 cm sur 4 cm. Quelle est sa hauteur ?",
+            "reponse": "13 cm",
+            "correction": "L’aire de la base vaut 6 × 4 = 24 cm². La hauteur est 312 ÷ 24 = 13 cm.",
+            "p1": "13 cm",
+            "p2": "24 cm",
+            "p3": "23 cm",
+            "p4": "26 cm",
+            "longueur": 6,
+            "largeur": 4,
+            "volume": 312,
+            "resultat_exploitable": 13
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 560 cm³. Sa base mesure 14 cm sur 8 cm. Quelle est sa hauteur ?",
+            "reponse": "5 cm",
+            "correction": "L’aire de la base vaut 14 × 8 = 112 cm². La hauteur est 560 ÷ 112 = 5 cm.",
+            "p1": "5 cm",
+            "p2": "112 cm",
+            "p3": "27 cm",
+            "p4": "10 cm",
+            "longueur": 14,
+            "largeur": 8,
+            "volume": 560,
+            "resultat_exploitable": 5
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 576 cm³. Sa base mesure 9 cm sur 8 cm. Quelle est sa hauteur ?",
+            "reponse": "8 cm",
+            "correction": "L’aire de la base vaut 9 × 8 = 72 cm². La hauteur est 576 ÷ 72 = 8 cm.",
+            "p1": "8 cm",
+            "p2": "72 cm",
+            "p3": "25 cm",
+            "p4": "16 cm",
+            "longueur": 9,
+            "largeur": 8,
+            "volume": 576,
+            "resultat_exploitable": 8
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 936 cm³. Sa base mesure 13 cm sur 6 cm. Quelle est sa hauteur ?",
+            "reponse": "12 cm",
+            "correction": "L’aire de la base vaut 13 × 6 = 78 cm². La hauteur est 936 ÷ 78 = 12 cm.",
+            "p1": "12 cm",
+            "p2": "78 cm",
+            "p3": "31 cm",
+            "p4": "24 cm",
+            "longueur": 13,
+            "largeur": 6,
+            "volume": 936,
+            "resultat_exploitable": 12
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 660 cm³. Sa base mesure 12 cm sur 5 cm. Quelle est sa hauteur ?",
+            "reponse": "11 cm",
+            "correction": "L’aire de la base vaut 12 × 5 = 60 cm². La hauteur est 660 ÷ 60 = 11 cm.",
+            "p1": "11 cm",
+            "p2": "60 cm",
+            "p3": "28 cm",
+            "p4": "22 cm",
+            "longueur": 12,
+            "largeur": 5,
+            "volume": 660,
+            "resultat_exploitable": 11
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 720 cm³. Sa base mesure 15 cm sur 8 cm. Quelle est sa hauteur ?",
+            "reponse": "6 cm",
+            "correction": "L’aire de la base vaut 15 × 8 = 120 cm². La hauteur est 720 ÷ 120 = 6 cm.",
+            "p1": "6 cm",
+            "p2": "120 cm",
+            "p3": "29 cm",
+            "p4": "12 cm",
+            "longueur": 15,
+            "largeur": 8,
+            "volume": 720,
+            "resultat_exploitable": 6
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a un volume de 588 cm³. Sa base mesure 14 cm sur 7 cm. Quelle est sa hauteur ?",
+            "reponse": "6 cm",
+            "correction": "L’aire de la base vaut 14 × 7 = 98 cm². La hauteur est 588 ÷ 98 = 6 cm.",
+            "p1": "6 cm",
+            "p2": "98 cm",
+            "p3": "27 cm",
+            "p4": "12 cm",
+            "longueur": 14,
+            "largeur": 7,
+            "volume": 588,
+            "resultat_exploitable": 6
+          },
+          "progression": 1
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur_inconnue": true
+      },
+      "enonce_exploitable": "volume / (longueur * largeur)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "VOL-REMPLISSAGE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 6 cm × 10 cm × 6 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "45 cubes",
+            "correction": "Je vois : La boîte mesure 6 × 10 × 6 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 360 cm³ et chaque cube 8 cm³.\nDonc : 360 ÷ 8 = 45 cubes.",
+            "p1": "45 cubes",
+            "p2": "360 cubes",
+            "p3": "180 cubes",
+            "p4": "11 cubes",
+            "longueur": 6,
+            "largeur": 10,
+            "hauteur": 6,
+            "cote_cube": 2,
+            "resultat_exploitable": 45
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 14 cm × 10 cm × 10 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "175 cubes",
+            "correction": "Je vois : La boîte mesure 14 × 10 × 10 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 1400 cm³ et chaque cube 8 cm³.\nDonc : 1400 ÷ 8 = 175 cubes.",
+            "p1": "175 cubes",
+            "p2": "1400 cubes",
+            "p3": "700 cubes",
+            "p4": "17 cubes",
+            "longueur": 14,
+            "largeur": 10,
+            "hauteur": 10,
+            "cote_cube": 2,
+            "resultat_exploitable": 175
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 12 cm × 8 cm × 12 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "144 cubes",
+            "correction": "Je vois : La boîte mesure 12 × 8 × 12 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 1152 cm³ et chaque cube 8 cm³.\nDonc : 1152 ÷ 8 = 144 cubes.",
+            "p1": "144 cubes",
+            "p2": "1152 cubes",
+            "p3": "576 cubes",
+            "p4": "16 cubes",
+            "longueur": 12,
+            "largeur": 8,
+            "hauteur": 12,
+            "cote_cube": 2,
+            "resultat_exploitable": 144
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 10 cm × 16 cm × 4 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "80 cubes",
+            "correction": "Je vois : La boîte mesure 10 × 16 × 4 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 640 cm³ et chaque cube 8 cm³.\nDonc : 640 ÷ 8 = 80 cubes.",
+            "p1": "80 cubes",
+            "p2": "640 cubes",
+            "p3": "320 cubes",
+            "p4": "15 cubes",
+            "longueur": 10,
+            "largeur": 16,
+            "hauteur": 4,
+            "cote_cube": 2,
+            "resultat_exploitable": 80
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 6 cm × 8 cm × 6 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "36 cubes",
+            "correction": "Je vois : La boîte mesure 6 × 8 × 6 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 288 cm³ et chaque cube 8 cm³.\nDonc : 288 ÷ 8 = 36 cubes.",
+            "p1": "36 cubes",
+            "p2": "288 cubes",
+            "p3": "144 cubes",
+            "p4": "10 cubes",
+            "longueur": 6,
+            "largeur": 8,
+            "hauteur": 6,
+            "cote_cube": 2,
+            "resultat_exploitable": 36
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 8 cm × 4 cm × 4 cm. On la remplit sans vide avec des cubes de 4 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "2 cubes",
+            "correction": "Je vois : La boîte mesure 8 × 4 × 4 cm et les petits cubes ont une arête de 4 cm.\nOr : La boîte contient 128 cm³ et chaque cube 64 cm³.\nDonc : 128 ÷ 64 = 2 cubes.",
+            "p1": "2 cubes",
+            "p2": "128 cubes",
+            "p3": "32 cubes",
+            "p4": "4 cubes",
+            "longueur": 8,
+            "largeur": 4,
+            "hauteur": 4,
+            "cote_cube": 4,
+            "resultat_exploitable": 2
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 8 cm × 14 cm × 8 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "112 cubes",
+            "correction": "Je vois : La boîte mesure 8 × 14 × 8 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 896 cm³ et chaque cube 8 cm³.\nDonc : 896 ÷ 8 = 112 cubes.",
+            "p1": "112 cubes",
+            "p2": "896 cubes",
+            "p3": "448 cubes",
+            "p4": "15 cubes",
+            "longueur": 8,
+            "largeur": 14,
+            "hauteur": 8,
+            "cote_cube": 2,
+            "resultat_exploitable": 112
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une boîte mesure intérieurement 14 cm × 4 cm × 12 cm. On la remplit sans vide avec des cubes de 2 cm de côté. Combien de cubes contient-elle ?",
+            "reponse": "84 cubes",
+            "correction": "Je vois : La boîte mesure 14 × 4 × 12 cm et les petits cubes ont une arête de 2 cm.\nOr : La boîte contient 672 cm³ et chaque cube 8 cm³.\nDonc : 672 ÷ 8 = 84 cubes.",
+            "p1": "84 cubes",
+            "p2": "672 cubes",
+            "p3": "336 cubes",
+            "p4": "15 cubes",
+            "longueur": 14,
+            "largeur": 4,
+            "hauteur": 12,
+            "cote_cube": 2,
+            "resultat_exploitable": 84
+          },
+          "progression": 2
+        }
+      ],
+      "categorie": "raisonnement",
+      "enonce_exploitable": "longueur * largeur * hauteur / cote_cube^3",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "VOL-SUPERPOSITION-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 7 cm × 10 cm, de hauteurs 6 cm et 2 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "560 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 7 cm sur 10 cm et des hauteurs de 6 cm et 2 cm.\nOr : Leurs volumes sont 420 cm³ et 140 cm³.\nDonc : Le volume total vaut 420 + 140 = 560 cm³.",
+            "p1": "560 cm³",
+            "p2": "420 cm³",
+            "p3": "140 cm³",
+            "p4": "630 cm³",
+            "longueur": 7,
+            "largeur": 10,
+            "hauteur1": 6,
+            "hauteur2": 2,
+            "resultat_exploitable": 560
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 14 cm × 10 cm, de hauteurs 3 cm et 1 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "560 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 14 cm sur 10 cm et des hauteurs de 3 cm et 1 cm.\nOr : Leurs volumes sont 420 cm³ et 140 cm³.\nDonc : Le volume total vaut 420 + 140 = 560 cm³.",
+            "p1": "560 cm³",
+            "p2": "420 cm³",
+            "p3": "140 cm³",
+            "p4": "700 cm³",
+            "longueur": 14,
+            "largeur": 10,
+            "hauteur1": 3,
+            "hauteur2": 1,
+            "resultat_exploitable": 560
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 15 cm × 7 cm, de hauteurs 7 cm et 1 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "840 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 15 cm sur 7 cm et des hauteurs de 7 cm et 1 cm.\nOr : Leurs volumes sont 735 cm³ et 105 cm³.\nDonc : Le volume total vaut 735 + 105 = 840 cm³.",
+            "p1": "840 cm³",
+            "p2": "735 cm³",
+            "p3": "105 cm³",
+            "p4": "945 cm³",
+            "longueur": 15,
+            "largeur": 7,
+            "hauteur1": 7,
+            "hauteur2": 1,
+            "resultat_exploitable": 840
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 7 cm × 12 cm, de hauteurs 7 cm et 1 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "672 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 7 cm sur 12 cm et des hauteurs de 7 cm et 1 cm.\nOr : Leurs volumes sont 588 cm³ et 84 cm³.\nDonc : Le volume total vaut 588 + 84 = 672 cm³.",
+            "p1": "672 cm³",
+            "p2": "588 cm³",
+            "p3": "84 cm³",
+            "p4": "756 cm³",
+            "longueur": 7,
+            "largeur": 12,
+            "hauteur1": 7,
+            "hauteur2": 1,
+            "resultat_exploitable": 672
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 15 cm × 12 cm, de hauteurs 6 cm et 1 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "1260 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 15 cm sur 12 cm et des hauteurs de 6 cm et 1 cm.\nOr : Leurs volumes sont 1080 cm³ et 180 cm³.\nDonc : Le volume total vaut 1080 + 180 = 1260 cm³.",
+            "p1": "1260 cm³",
+            "p2": "1080 cm³",
+            "p3": "180 cm³",
+            "p4": "1440 cm³",
+            "longueur": 15,
+            "largeur": 12,
+            "hauteur1": 6,
+            "hauteur2": 1,
+            "resultat_exploitable": 1260
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 14 cm × 3 cm, de hauteurs 5 cm et 6 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "462 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 14 cm sur 3 cm et des hauteurs de 5 cm et 6 cm.\nOr : Leurs volumes sont 210 cm³ et 252 cm³.\nDonc : Le volume total vaut 210 + 252 = 462 cm³.",
+            "p1": "462 cm³",
+            "p2": "210 cm³",
+            "p3": "252 cm³",
+            "p4": "504 cm³",
+            "longueur": 14,
+            "largeur": 3,
+            "hauteur1": 5,
+            "hauteur2": 6,
+            "resultat_exploitable": 462
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 4 cm × 10 cm, de hauteurs 7 cm et 5 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "480 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 4 cm sur 10 cm et des hauteurs de 7 cm et 5 cm.\nOr : Leurs volumes sont 280 cm³ et 200 cm³.\nDonc : Le volume total vaut 280 + 200 = 480 cm³.",
+            "p1": "480 cm³",
+            "p2": "280 cm³",
+            "p3": "200 cm³",
+            "p4": "520 cm³",
+            "longueur": 4,
+            "largeur": 10,
+            "hauteur1": 7,
+            "hauteur2": 5,
+            "resultat_exploitable": 480
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "On superpose deux pavés droits de même base 4 cm × 12 cm, de hauteurs 2 cm et 4 cm, sans chevauchement. Quel est le volume total ?",
+            "reponse": "288 cm³",
+            "correction": "Je vois : Les deux solides ont la même base de 4 cm sur 12 cm et des hauteurs de 2 cm et 4 cm.\nOr : Leurs volumes sont 96 cm³ et 192 cm³.\nDonc : Le volume total vaut 96 + 192 = 288 cm³.",
+            "p1": "288 cm³",
+            "p2": "96 cm³",
+            "p3": "192 cm³",
+            "p4": "336 cm³",
+            "longueur": 4,
+            "largeur": 12,
+            "hauteur1": 2,
+            "hauteur2": 4,
+            "resultat_exploitable": 288
+          },
+          "progression": 2
+        }
+      ],
+      "categorie": "raisonnement",
+      "enonce_exploitable": "longueur * largeur * (hauteur1 + hauteur2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "VOL-VOCAB-TROU-001",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
+      "enonce": "Quel terme désigne la mesure de l’espace occupé par un solide ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "volume": "v _ _ _ _ e",
+          "contenance": "c _ _ _ _ _ _ _ _ e",
+          "aire": "a _ _ e",
+          "périmètre": "p _ _ _ _ _ _ _ e"
+        }
+      },
+      "reponse": "volume",
+      "propositions": [
+        "volume",
+        "contenance",
+        "aire",
+        "périmètre"
+      ],
+      "correction": "Le volume mesure l’espace occupé par un solide.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "VOL-VOCAB-MASQUE-001",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
+      "enonce": "Quel solide possède six faces carrées identiques ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "cube": "C________E",
+          "pavé": "P________É",
+          "sphère": "S________E",
+          "prisme": "P________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": "cube",
+      "propositions": [
+        "cube",
+        "pavé",
+        "prisme",
+        "sphère"
+      ],
+      "correction": "Un cube possède six faces carrées identiques.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "VOLUMES-CUBE-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 3 cm. Quel est son volume ?",
+            "reponse": "27 cm³",
+            "p1": "27 cm³",
+            "p2": "9 cm³",
+            "p3": "54 cm³",
+            "p4": "36 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 3³ = 27 cm³.",
+            "longueur": 3,
+            "largeur": 3,
+            "hauteur": 3,
+            "resultat": 27
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 4 cm. Quel est son volume ?",
+            "reponse": "64 cm³",
+            "p1": "64 cm³",
+            "p2": "16 cm³",
+            "p3": "96 cm³",
+            "p4": "48 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 4³ = 64 cm³.",
+            "longueur": 4,
+            "largeur": 4,
+            "hauteur": 4,
+            "resultat": 64
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 5 cm. Quel est son volume ?",
+            "reponse": "125 cm³",
+            "p1": "125 cm³",
+            "p2": "25 cm³",
+            "p3": "150 cm³",
+            "p4": "60 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 5³ = 125 cm³.",
+            "longueur": 5,
+            "largeur": 5,
+            "hauteur": 5,
+            "resultat": 125
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 7 cm. Quel est son volume ?",
+            "reponse": "343 cm³",
+            "p1": "343 cm³",
+            "p2": "49 cm³",
+            "p3": "294 cm³",
+            "p4": "84 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 7³ = 343 cm³.",
+            "longueur": 7,
+            "largeur": 7,
+            "hauteur": 7,
+            "resultat": 343
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 8 cm. Quel est son volume ?",
+            "reponse": "512 cm³",
+            "p1": "512 cm³",
+            "p2": "64 cm³",
+            "p3": "384 cm³",
+            "p4": "96 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 8³ = 512 cm³.",
+            "longueur": 8,
+            "largeur": 8,
+            "hauteur": 8,
+            "resultat": 512
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 9 cm. Quel est son volume ?",
+            "reponse": "729 cm³",
+            "p1": "729 cm³",
+            "p2": "81 cm³",
+            "p3": "486 cm³",
+            "p4": "108 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 9³ = 729 cm³.",
+            "longueur": 9,
+            "largeur": 9,
+            "hauteur": 9,
+            "resultat": 729
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 10 cm. Quel est son volume ?",
+            "reponse": "1000 cm³",
+            "p1": "1000 cm³",
+            "p2": "100 cm³",
+            "p3": "600 cm³",
+            "p4": "120 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 10³ = 1000 cm³.",
+            "longueur": 10,
+            "largeur": 10,
+            "hauteur": 10,
+            "resultat": 1000
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 11 cm. Quel est son volume ?",
+            "reponse": "1331 cm³",
+            "p1": "1331 cm³",
+            "p2": "121 cm³",
+            "p3": "726 cm³",
+            "p4": "132 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 11³ = 1331 cm³.",
+            "longueur": 11,
+            "largeur": 11,
+            "hauteur": 11,
+            "resultat": 1331
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 13 cm. Quel est son volume ?",
+            "reponse": "2197 cm³",
+            "p1": "2197 cm³",
+            "p2": "169 cm³",
+            "p3": "1014 cm³",
+            "p4": "156 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 13³ = 2197 cm³.",
+            "longueur": 13,
+            "largeur": 13,
+            "hauteur": 13,
+            "resultat": 2197
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a une arête de 14 cm. Quel est son volume ?",
+            "reponse": "2744 cm³",
+            "p1": "2744 cm³",
+            "p2": "196 cm³",
+            "p3": "1176 cm³",
+            "p4": "168 cm³",
+            "correction": "Le volume d’un cube est côté × côté × côté : 14³ = 2744 cm³.",
+            "longueur": 14,
+            "largeur": 14,
+            "hauteur": 14,
+            "resultat": 2744
+          }
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur": "[[hauteur]]",
+        "cube": true
+      },
+      "enonce_exploitable": "longueur * largeur * hauteur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "VOLUMES-PAVE-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 3 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "36 cm³",
+            "p1": "36 cm³",
+            "p2": "12 cm³",
+            "p3": "21 cm³",
+            "p4": "20 cm³",
+            "correction": "V = 3 × 4 × 3 = 36 cm³.",
+            "longueur": 3,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 36
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 4 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "48 cm³",
+            "p1": "48 cm³",
+            "p2": "16 cm³",
+            "p3": "28 cm³",
+            "p4": "22 cm³",
+            "correction": "V = 4 × 4 × 3 = 48 cm³.",
+            "longueur": 4,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 48
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 5 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "60 cm³",
+            "p1": "60 cm³",
+            "p2": "20 cm³",
+            "p3": "35 cm³",
+            "p4": "24 cm³",
+            "correction": "V = 5 × 4 × 3 = 60 cm³.",
+            "longueur": 5,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 60
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 6 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "72 cm³",
+            "p1": "72 cm³",
+            "p2": "24 cm³",
+            "p3": "42 cm³",
+            "p4": "26 cm³",
+            "correction": "V = 6 × 4 × 3 = 72 cm³.",
+            "longueur": 6,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 72
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 8 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "96 cm³",
+            "p1": "96 cm³",
+            "p2": "32 cm³",
+            "p3": "56 cm³",
+            "p4": "30 cm³",
+            "correction": "V = 8 × 4 × 3 = 96 cm³.",
+            "longueur": 8,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 96
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 9 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "108 cm³",
+            "p1": "108 cm³",
+            "p2": "36 cm³",
+            "p3": "63 cm³",
+            "p4": "32 cm³",
+            "correction": "V = 9 × 4 × 3 = 108 cm³.",
+            "longueur": 9,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 108
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 10 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "120 cm³",
+            "p1": "120 cm³",
+            "p2": "40 cm³",
+            "p3": "70 cm³",
+            "p4": "34 cm³",
+            "correction": "V = 10 × 4 × 3 = 120 cm³.",
+            "longueur": 10,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 120
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 11 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "132 cm³",
+            "p1": "132 cm³",
+            "p2": "44 cm³",
+            "p3": "77 cm³",
+            "p4": "36 cm³",
+            "correction": "V = 11 × 4 × 3 = 132 cm³.",
+            "longueur": 11,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 132
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 12 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "144 cm³",
+            "p1": "144 cm³",
+            "p2": "48 cm³",
+            "p3": "84 cm³",
+            "p4": "38 cm³",
+            "correction": "V = 12 × 4 × 3 = 144 cm³.",
+            "longueur": 12,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 144
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 13 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "156 cm³",
+            "p1": "156 cm³",
+            "p2": "52 cm³",
+            "p3": "91 cm³",
+            "p4": "40 cm³",
+            "correction": "V = 13 × 4 × 3 = 156 cm³.",
+            "longueur": 13,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 156
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 14 cm de long, 4 cm de large et 3 cm de haut. Quel est son volume ?",
+            "reponse": "168 cm³",
+            "p1": "168 cm³",
+            "p2": "56 cm³",
+            "p3": "98 cm³",
+            "p4": "42 cm³",
+            "correction": "V = 14 × 4 × 3 = 168 cm³.",
+            "longueur": 14,
+            "largeur": 4,
+            "hauteur": 3,
+            "resultat": 168
+          }
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur": "[[hauteur]]"
+      },
+      "enonce_exploitable": "longueur * largeur * hauteur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "VOLUMES-HAUTEUR-INVERSE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 5 cm par 4 cm et un volume de 60 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "5 cm",
+            "p3": "20 cm",
+            "p4": "9 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 60 ÷ (5 × 4) = 3 cm.",
+            "longueur": 5,
+            "largeur": 4,
+            "volume": 60,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 6 cm par 4 cm et un volume de 72 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "6 cm",
+            "p3": "24 cm",
+            "p4": "10 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 72 ÷ (6 × 4) = 3 cm.",
+            "longueur": 6,
+            "largeur": 4,
+            "volume": 72,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 7 cm par 4 cm et un volume de 84 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "7 cm",
+            "p3": "28 cm",
+            "p4": "11 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 84 ÷ (7 × 4) = 3 cm.",
+            "longueur": 7,
+            "largeur": 4,
+            "volume": 84,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 8 cm par 4 cm et un volume de 96 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "8 cm",
+            "p3": "32 cm",
+            "p4": "12 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 96 ÷ (8 × 4) = 3 cm.",
+            "longueur": 8,
+            "largeur": 4,
+            "volume": 96,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 9 cm par 4 cm et un volume de 108 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "9 cm",
+            "p3": "36 cm",
+            "p4": "13 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 108 ÷ (9 × 4) = 3 cm.",
+            "longueur": 9,
+            "largeur": 4,
+            "volume": 108,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 10 cm par 4 cm et un volume de 120 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "10 cm",
+            "p3": "40 cm",
+            "p4": "14 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 120 ÷ (10 × 4) = 3 cm.",
+            "longueur": 10,
+            "largeur": 4,
+            "volume": 120,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 11 cm par 4 cm et un volume de 132 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "11 cm",
+            "p3": "44 cm",
+            "p4": "15 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 132 ÷ (11 × 4) = 3 cm.",
+            "longueur": 11,
+            "largeur": 4,
+            "volume": 132,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 12 cm par 4 cm et un volume de 144 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "12 cm",
+            "p3": "48 cm",
+            "p4": "16 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 144 ÷ (12 × 4) = 3 cm.",
+            "longueur": 12,
+            "largeur": 4,
+            "volume": 144,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 13 cm par 4 cm et un volume de 156 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "13 cm",
+            "p3": "52 cm",
+            "p4": "17 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 156 ÷ (13 × 4) = 3 cm.",
+            "longueur": 13,
+            "largeur": 4,
+            "volume": 156,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 14 cm par 4 cm et un volume de 168 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "14 cm",
+            "p3": "56 cm",
+            "p4": "18 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 168 ÷ (14 × 4) = 3 cm.",
+            "longueur": 14,
+            "largeur": 4,
+            "volume": 168,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 15 cm par 4 cm et un volume de 180 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "15 cm",
+            "p3": "60 cm",
+            "p4": "19 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 180 ÷ (15 × 4) = 3 cm.",
+            "longueur": 15,
+            "largeur": 4,
+            "volume": 180,
+            "resultat_exploitable": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit a une base rectangulaire de 16 cm par 4 cm et un volume de 192 cm³. Quelle est sa hauteur ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "16 cm",
+            "p3": "64 cm",
+            "p4": "20 cm",
+            "correction": "La hauteur vaut volume ÷ aire de base : 192 ÷ (16 × 4) = 3 cm.",
+            "longueur": 16,
+            "largeur": 4,
+            "volume": 192,
+            "resultat_exploitable": 3
+          }
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur_inconnue": true
+      },
+      "enonce_exploitable": "volume / (longueur * largeur)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    }
+  ]
+}

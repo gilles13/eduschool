@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Un triangle est une figure plane à trois sommets et trois côtés.
+**Un triangle** est une figure plane à trois sommets et trois côtés.
 :::
 
 ## Triangles particuliers

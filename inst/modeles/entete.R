@@ -68,15 +68,3 @@
     cat('\\end{minipage}\n\\par\\smallskip\\hrule\\smallskip\n```\n\n')
   }
 }
-
-# Chaque étape du raisonnement sur sa propre ligne, sans cadre imposé.
-.raisonnement_edu = function(x, html = FALSE) {
-  if (is.null(x) || !nzchar(x)) return("")
-  etapes = "(Je vois|Je sais|J.en déduis|Je calcule)\\s*:"
-  if (html) {
-    x = gsub(etapes, "\\n\\1 :", x, perl = TRUE)
-  } else {
-    x = gsub(etapes, "\\n\\n**\\1 :** ", x, perl = TRUE)
-  }
-  trimws(x)
-}

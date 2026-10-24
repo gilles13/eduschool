@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-La fréquence est une proportion observée dans des essais réalisés ; la probabilité appartient au modèle de l’expérience aléatoire.
+**La fréquence** est une proportion observée dans des essais réalisés ; la probabilité appartient au modèle de l’expérience aléatoire.
 :::
 
 ## Principe

@@ -1,4 +1,4 @@
-# L’essentiel : Soustraire des fractions
+# L'essentiel : Soustraire des fractions
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

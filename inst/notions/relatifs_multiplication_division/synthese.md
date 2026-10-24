@@ -1,4 +1,10 @@
-# L’essentiel : Multiplication et division de nombres relatifs
+# L'essentiel : Multiplication et division de nombres relatifs
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Le produit ou le quotient de deux relatifs dépend de leurs valeurs et de leurs signes.
+:::
 
 Pour multiplier ou diviser deux nombres relatifs :
 

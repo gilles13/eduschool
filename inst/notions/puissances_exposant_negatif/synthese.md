@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une puissance d’exposant négatif représente l’inverse de la puissance d’exposant positif correspondante.
+**Une puissance d’exposant négatif** représente l’inverse de la puissance d’exposant positif correspondante.
 :::
 
 ## Principe

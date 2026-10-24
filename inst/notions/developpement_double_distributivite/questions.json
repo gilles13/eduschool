@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "DEV-DOUBLE-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Développer [[produit]].",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -864,11 +865,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "[[source]]",
+      "reponse_exploitable": "[[bonne_expression]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "DEV-DOUBLE-QUATRE-PRODUITS",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -887,7 +892,11 @@
             "p1": "2𝑥 × 𝑥, 2𝑥 × 4, 3 × 𝑥 et 3 × 4",
             "p2": "2𝑥 × 𝑥 et 3 × 4 seulement",
             "p3": "2𝑥 × 4 et 3 × 𝑥 seulement",
-            "p4": "2𝑥 × 𝑥, puis 3 × 4 et on additionne 3 et 4"
+            "p4": "2𝑥 × 𝑥, puis 3 × 4 et on additionne 3 et 4",
+            "a": 2,
+            "b": 3,
+            "c": 1,
+            "d": 4
           }
         },
         {
@@ -898,7 +907,11 @@
             "p1": "3𝑥 × 𝑥, 3𝑥 × 5, 2 × 𝑥 et 2 × 5",
             "p2": "3𝑥 × 𝑥 et 2 × 5 seulement",
             "p3": "3𝑥 × 5 et 2 × 𝑥 seulement",
-            "p4": "3𝑥 × 𝑥, puis 2 × 5 et on additionne 2 et 5"
+            "p4": "3𝑥 × 𝑥, puis 2 × 5 et on additionne 2 et 5",
+            "a": 3,
+            "b": 2,
+            "c": 1,
+            "d": 5
           }
         },
         {
@@ -909,14 +922,22 @@
             "p1": "4𝑥 × 𝑥, 4𝑥 × 2, 3 × 𝑥 et 3 × 2",
             "p2": "4𝑥 × 𝑥 et 3 × 2 seulement",
             "p3": "4𝑥 × 2 et 3 × 𝑥 seulement",
-            "p4": "4𝑥 × 𝑥, puis 3 × 2 et on additionne 3 et 2"
+            "p4": "4𝑥 × 𝑥, puis 3 × 2 et on additionne 3 et 2",
+            "a": 4,
+            "b": 3,
+            "c": 1,
+            "d": 2
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(a*x+b)*(c*x+d)",
+      "reponse_exploitable": "a*c*x^2+(a*d+b*c)*x+b*d",
+      "moteur": "Ryacas"
     },
     {
       "id": "DEV-DOUBLE-TERME-CROISE",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -935,7 +956,11 @@
             "p1": "de 5𝑥 + 3𝑥, obtenus par les deux produits croisés",
             "p2": "de 3 × 5",
             "p3": "de 𝑥 × 𝑥",
-            "p4": "de 𝑥 + 3 + 𝑥 + 5"
+            "p4": "de 𝑥 + 3 + 𝑥 + 5",
+            "a": 1,
+            "b": 3,
+            "c": 1,
+            "d": 5
           }
         },
         {
@@ -946,7 +971,11 @@
             "p1": "de 7𝑥 + 2𝑥, obtenus par les deux produits croisés",
             "p2": "de 2 × 7",
             "p3": "de 𝑥 × 𝑥",
-            "p4": "de 𝑥 + 2 + 𝑥 + 7"
+            "p4": "de 𝑥 + 2 + 𝑥 + 7",
+            "a": 1,
+            "b": 2,
+            "c": 1,
+            "d": 7
           }
         },
         {
@@ -957,14 +986,22 @@
             "p1": "de 6𝑥 + 4𝑥, obtenus par les deux produits croisés",
             "p2": "de 4 × 6",
             "p3": "de 𝑥 × 𝑥",
-            "p4": "de 𝑥 + 4 + 𝑥 + 6"
+            "p4": "de 𝑥 + 4 + 𝑥 + 6",
+            "a": 1,
+            "b": 4,
+            "c": 1,
+            "d": 6
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(a*x+b)*(c*x+d)",
+      "reponse_exploitable": "a*c*x^2+(a*d+b*c)*x+b*d",
+      "moteur": "Ryacas"
     },
     {
       "id": "DEV-DOUBLE-MOT-A-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Pour développer (a + b)(c + d), on multiplie chaque terme de la première parenthèse par chaque terme de la seconde. Quel mot désigne cette propriété ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -982,11 +1019,15 @@
         "réduction",
         "équation"
       ],
-      "correction": "La distributivité permet de multiplier chaque terme d’une parenthèse par les termes de l’autre. Avec deux termes dans chaque parenthèse, on obtient quatre produits avant réduction."
+      "correction": "La distributivité permet de multiplier chaque terme d’une parenthèse par les termes de l’autre. Avec deux termes dans chaque parenthèse, on obtient quatre produits avant réduction.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DEV-DOUBLE-MOT-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Après un développement, quelle opération consiste à regrouper les termes de même nature pour simplifier l’expression ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -1005,11 +1046,15 @@
         "factorisation",
         "distributivité"
       ],
-      "correction": "La réduction consiste à regrouper les termes de même nature. Après la double distributivité, on peut par exemple regrouper 8𝑥 et 3𝑥 pour obtenir 11𝑥."
+      "correction": "La réduction consiste à regrouper les termes de même nature. Après la double distributivité, on peut par exemple regrouper 8𝑥 et 3𝑥 pour obtenir 11𝑥.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "DEV-DOUBLE-BOITE-PRODUIT",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Soit le développement de [[produit]]. Quel terme doit remplacer □ dans [[developpement_trou]] ?",
       "presentation": {
         "type": "boite"
@@ -1031,7 +1076,11 @@
             "d1": "6𝑥",
             "d2": "4𝑥",
             "d3": "8",
-            "calcul": "2𝑥 × 4 = 8𝑥"
+            "calcul": "2𝑥 × 4 = 8𝑥",
+            "a": 2,
+            "b": 3,
+            "c": 1,
+            "d": 4
           },
           "progression": 1
         },
@@ -1043,7 +1092,11 @@
             "d1": "4𝑥",
             "d2": "−10𝑥",
             "d3": "−4",
-            "calcul": "−2 × 2𝑥 = −4𝑥"
+            "calcul": "−2 × 2𝑥 = −4𝑥",
+            "a": 3,
+            "b": -2,
+            "c": 2,
+            "d": 5
           },
           "progression": 2
         },
@@ -1055,7 +1108,11 @@
             "d1": "−8𝑥",
             "d2": "12𝑥",
             "d3": "8",
-            "calcul": "−2𝑥 × (−4) = 8𝑥"
+            "calcul": "−2𝑥 × (−4) = 8𝑥",
+            "a": -2,
+            "b": 3,
+            "c": 3,
+            "d": -4
           },
           "progression": 3
         },
@@ -1067,11 +1124,18 @@
             "d1": "−10𝑥",
             "d2": "−15𝑥",
             "d3": "10",
-            "calcul": "−5 × (−2𝑥) = 10𝑥"
+            "calcul": "−5 × (−2𝑥) = 10𝑥",
+            "a": 4,
+            "b": -5,
+            "c": -2,
+            "d": 3
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "(a*x+b)*(c*x+d)",
+      "reponse_exploitable": "a*c*x^2+(a*d+b*c)*x+b*d",
+      "moteur": "Ryacas"
     }
   ]
 }

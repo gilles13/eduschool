@@ -1,29 +1,31 @@
 # L'essentiel : Représentation de l’espace
 
-> **TODO — FICHE À RÉDIGER** — Squelette documentaire, aucun contenu pédagogique validé.
-
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-TODO — Définition courte permettant de retrouver immédiatement l'objet étudié.
+La **géométrie dans l'espace** étudie les solides et leurs éléments : sommets, arêtes et faces. Un dessin sur une feuille n'est qu'une représentation d'un objet à trois dimensions.
 :::
 
 ## Principe
 
-TODO — Énoncer la propriété, le raisonnement ou la règle essentielle.
+<!-- graphique: volumes type=1 -->
+
+Sur ce pavé droit, les arêtes en pointillés sont **cachées**, mais existent bien. Les arêtes parallèles du solide restent parallèles sur le dessin ; les longueurs et les angles apparents ne sont pas tous conservés.
+
+Une face est une surface du solide ; une arête est une intersection de deux faces ; un sommet est un point où se rejoignent des arêtes.
 
 ## Méthode
 
-TODO — Présenter les étapes utiles de façon courte lorsque la notion comporte une méthode.
+Identifier le solide, compter ses éléments, puis distinguer les dimensions réelles des traits de perspective. Pour un patron, imaginer les plis et les faces adjacentes.
 
 ## Exemple
 
-TODO — Donner un exemple complet mais compact.
+Une boîte en forme de pavé droit possède **6 faces**, **12 arêtes** et **8 sommets**.
 
 ## Vérification
 
-TODO — Indiquer, lorsque cela a du sens, comment contrôler le résultat.
+Sur un cube, chaque face est carrée et chaque sommet appartient à trois arêtes.
 
 ## À retenir
 
-TODO — Conserver seulement les repères indispensables pour réviser rapidement.
+Cube : 6 faces carrées, 12 arêtes, 8 sommets. Perspective : représentation plane ; patron : découpage à plier.

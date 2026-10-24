@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "MES-CONVERSION_OCTETS-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "4 000 ko",
             "p2": "400 ko",
             "p3": "4 ko",
-            "p4": "40 000 ko"
+            "p4": "40 000 ko",
+            "calcul_exploitable": "4 * 1000",
+            "resultat_exploitable": "4000"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "8 000 ko",
             "p2": "800 ko",
             "p3": "8 ko",
-            "p4": "80 000 ko"
+            "p4": "80 000 ko",
+            "calcul_exploitable": "8 * 1000",
+            "resultat_exploitable": "8000"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "12 000 ko",
             "p2": "1200 ko",
             "p3": "12 ko",
-            "p4": "120 000 ko"
+            "p4": "120 000 ko",
+            "calcul_exploitable": "12 * 1000",
+            "resultat_exploitable": "12000"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_OCTETS-002",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +81,9 @@
             "p1": "2,5 Mo",
             "p2": "25 Mo",
             "p3": "250 Mo",
-            "p4": "0,25 Mo"
+            "p4": "0,25 Mo",
+            "calcul_exploitable": "2500 * (1 / 1000)",
+            "resultat_exploitable": "(5 / 2)"
           }
         },
         {
@@ -81,7 +94,9 @@
             "p1": "5,0 Mo",
             "p2": "50 Mo",
             "p3": "500 Mo",
-            "p4": "0,50 Mo"
+            "p4": "0,50 Mo",
+            "calcul_exploitable": "5000 * (1 / 1000)",
+            "resultat_exploitable": "5"
           }
         },
         {
@@ -92,14 +107,20 @@
             "p1": "7,5 Mo",
             "p2": "75 Mo",
             "p3": "750 Mo",
-            "p4": "0,75 Mo"
+            "p4": "0,75 Mo",
+            "calcul_exploitable": "7500 * (1 / 1000)",
+            "resultat_exploitable": "(15 / 2)"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_OCTETS-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +139,9 @@
             "p1": "3 000 Mo",
             "p2": "300 Mo",
             "p3": "30 Mo",
-            "p4": "3 Mo"
+            "p4": "3 Mo",
+            "calcul_exploitable": "3 * 1000",
+            "resultat_exploitable": "3000"
           }
         },
         {
@@ -129,7 +152,9 @@
             "p1": "6 000 Mo",
             "p2": "600 Mo",
             "p3": "60 Mo",
-            "p4": "6 Mo"
+            "p4": "6 Mo",
+            "calcul_exploitable": "6 * 1000",
+            "resultat_exploitable": "6000"
           }
         },
         {
@@ -140,14 +165,20 @@
             "p1": "9 000 Mo",
             "p2": "900 Mo",
             "p3": "90 Mo",
-            "p4": "9 Mo"
+            "p4": "9 Mo",
+            "calcul_exploitable": "9 * 1000",
+            "resultat_exploitable": "9000"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_OCTETS-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -160,6 +191,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 1.0,
+            "facteur_conversion": 1000000,
+            "resultat_exploitable": 1000000,
             "enonce": "Combien d’octets contient 1 Mo ?",
             "reponse": "1 000 000 o",
             "correction": "1 Mo = 1 000 ko et 1 ko = 1 000 o, donc 1 Mo = 1 000 000 o.",
@@ -171,6 +205,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 2.0,
+            "facteur_conversion": 1000000,
+            "resultat_exploitable": 2000000,
             "enonce": "Combien d’octets contient 2 Mo ?",
             "reponse": "2 000 000 o",
             "correction": "En convertissant dans l’unité demandée, on obtient 2 000 000 o.",
@@ -182,6 +219,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 3.0,
+            "facteur_conversion": 1000000,
+            "resultat_exploitable": 3000000,
             "enonce": "Combien d’octets contient 3 Mo ?",
             "reponse": "3 000 000 o",
             "correction": "En convertissant dans l’unité demandée, on obtient 3 000 000 o.",
@@ -191,11 +231,15 @@
             "p4": "30 000 000 o"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_OCTETS-VOCAB-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quelle unité mesure couramment la taille d’un fichier informatique ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -213,11 +257,15 @@
         "option",
         "ordre"
       ],
-      "correction": "L’octet sert à exprimer des quantités de données numériques."
+      "correction": "L’octet sert à exprimer des quantités de données numériques.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_OCTETS-VOCAB-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quelle unité décimale de données vaut un milliard d’octets ?",
       "presentation": {
         "type": "mot_masque",
@@ -236,11 +284,15 @@
         "kilooctet",
         "téraoctet"
       ],
-      "correction": "Le terme recherché est « gigaoctet »."
+      "correction": "Le terme recherché est « gigaoctet ».",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_OCTETS-APPLICATION",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -253,6 +305,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 2.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 2500,
             "enonce": "Dans le système décimal, un fichier fait 2,5 Mo. Combien cela représente-t-il de ko ?",
             "reponse": "2 500 ko",
             "correction": "Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko.",
@@ -264,6 +319,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 5.0,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 5000,
             "enonce": "Dans le système décimal, un fichier fait 5,0 Mo. Combien cela représente-t-il de ko ?",
             "reponse": "5 000 ko",
             "correction": "En convertissant dans l’unité demandée, on obtient 5 000 ko.",
@@ -275,6 +333,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 7.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 7500,
             "enonce": "Dans le système décimal, un fichier fait 7,5 Mo. Combien cela représente-t-il de ko ?",
             "reponse": "7 500 ko",
             "correction": "En convertissant dans l’unité demandée, on obtient 7 500 ko.",
@@ -284,7 +345,10 @@
             "p4": "7,5 ko"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

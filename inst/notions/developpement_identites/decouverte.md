@@ -28,4 +28,4 @@ Ne jamais oublier le double produit dans $(a+b)^2$ et $(a-b)^2$. Dans $(a-b)(a+b
 
 ## Pour vérifier tes découvertes
 
-**1. Choisir la bonne identité.** $(x-5)^2=x^2-10x+25$. Et $(2x-3)(2x+3)=(2x)^2-3^2=4x^2-9$.
+1. **Choisir la bonne identité :** $(x-5)^2=x^2-10x+25$. Et $(2x-3)(2x+3)=(2x)^2-3^2=4x^2-9$.

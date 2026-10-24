@@ -1,5 +1,11 @@
 # Découvrir : Conversions de longueurs
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Convertir une longueur, c’est exprimer **la même longueur** dans une autre unité, par exemple en mètres ou en centimètres.
+:::
+
 Le mètre (m) est une unité de longueur. Chaque colonne voisine du tableau métrique change d'un facteur **10**.
 
 | km | hm | dam | m | dm | cm | mm |
@@ -14,6 +20,6 @@ Ici, **2,30 m = 230 cm**. On ne déplace pas la virgule par magie : on change la
 
 ## Pour vérifier tes découvertes
 
-**1. Kilomètres et mètres.** Comme $1\,\mathrm{km}=1\,000\,\mathrm{m}$, $0{,}45\times1\,000=450$ : **0,45 km = 450 m**.
+1. **Kilomètres et mètres :** Comme $1\,\mathrm{km}=1\,000\,\mathrm{m}$, $0{,}45\times1\,000=450$ : **0,45 km = 450 m**.
 
-**2. Une situation concrète.** 1 km = 1 000 m, donc 1,25 km = 1 250 m.
+2. **Une situation concrète :** 1 km = 1 000 m, donc 1,25 km = 1 250 m.

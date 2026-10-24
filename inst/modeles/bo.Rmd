@@ -1,0 +1,33 @@
+---
+title: "eduschool"
+params:
+  titre: "Bulletin officiel"
+  contenu: ""
+output:
+  html_document: default
+  pdf_document:
+    latex_engine: xelatex
+geometry: margin=1.6cm
+header-includes:
+  - |
+    \IfFontExistsTF{DejaVu Serif}{\setmainfont{DejaVu Serif}}{\PackageWarning{eduschool}{DejaVu Serif unavailable; mathematical Unicode characters may be missing}}
+    \makeatletter
+    \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}{3.25ex \@plus 1ex \@minus .2ex}{1ex \@plus .2ex}{\normalfont\normalsize\bfseries}}
+    \makeatother
+---
+
+```{r entete, echo=FALSE, results='asis'}
+source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
+.entete_edu(list(support = "divers", titre = params$titre),
+            knitr::is_html_output())
+```
+
+```{r sommaire_pdf, echo=FALSE, results='asis'}
+if (knitr::is_latex_output()) {
+  cat("```{=latex}\n\\setcounter{tocdepth}{5}\n\\tableofcontents\n\\clearpage\n```\n")
+}
+```
+
+```{r contenu, echo=FALSE, results='asis'}
+cat(params$contenu, "\n")
+```

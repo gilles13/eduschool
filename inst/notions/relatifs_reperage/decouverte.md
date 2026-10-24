@@ -1,5 +1,11 @@
 # Découvrir : Les nombres relatifs
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Un **nombre relatif** peut être positif, négatif ou nul. Son signe permet notamment de repérer une position par rapport à une origine.
+:::
+
 Les nombres positifs ne suffisent pas toujours. Une température peut descendre sous 0 °C, un étage peut être sous le rez-de-chaussée et une altitude sous le niveau de la mer. Les **nombres relatifs** permettent de décrire ces situations sans changer les règles des nombres déjà connus.
 
 ## De l’autre côté de zéro
@@ -24,8 +30,8 @@ Un nombre relatif possède donc à la fois une position par rapport à zéro et 
 
 ## Pour vérifier tes découvertes
 
-**1. Deux côtés de zéro.** L’opposé de −7 est 7. Sa valeur absolue est 7, car −7 est à 7 unités de 0.
+1. **Deux côtés de zéro :** L’opposé de −7 est 7. Sa valeur absolue est 7, car −7 est à 7 unités de 0.
 
-**2. Température.** 2 °C est plus élevé que −4 °C. L’écart est de 6 °C : il faut parcourir 4 unités de −4 à 0, puis 2 unités de 0 à 2.
+2. **Température :** 2 °C est plus élevé que −4 °C. L’écart est de 6 °C : il faut parcourir 4 unités de −4 à 0, puis 2 unités de 0 à 2.
 
-**3. Ranger.** −6 < −1 < 0 < 3 < 5. Sur une droite graduée, cet ordre se lit simplement de gauche à droite.
+3. **Ranger :** −6 < −1 < 0 < 3 < 5. Sur une droite graduée, cet ordre se lit simplement de gauche à droite.

@@ -1,5 +1,11 @@
 # Découvrir : Puissances d'exposant positif
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une **puissance d’exposant entier positif** est une écriture abrégée d’un produit de plusieurs facteurs égaux.
+:::
+
 Après le carré et le cube, on généralise l'écriture. Pour un entier $n\geqslant1$,
 
 $$a^n=\underbrace{a\times a\times\cdots\times a}_{n\text{ facteurs}}.$$
@@ -22,8 +28,8 @@ $$(ab)^n=a^nb^n.$$
 
 ## Pour vérifier tes découvertes
 
-**1. Augmenter l'exposant.** $3^2=9$, $3^3=27$ et $3^4=81$. Chaque étape multiplie le résultat précédent par 3.
+1. **Augmenter l'exposant :** $3^2=9$, $3^3=27$ et $3^4=81$. Chaque étape multiplie le résultat précédent par 3.
 
-**2. Regrouper.** $2^3\times2^4=2^7$ et $(2\times5)^3=2^3\times5^3$.
+2. **Regrouper :** $2^3\times2^4=2^7$ et $(2\times5)^3=2^3\times5^3$.
 
-**3. Parenthèses ou pas ?** $(-2)^4=(-2)\times(-2)\times(-2)\times(-2)=16$. En revanche, dans $-2^4$, la puissance est calculée avant le signe placé devant : $-2^4=-(2^4)=-16$. Les parenthèses déterminent donc si le signe moins appartient ou non à la base.
+3. **Parenthèses ou pas ? :** $(-2)^4=(-2)\times(-2)\times(-2)\times(-2)=16$. En revanche, dans $-2^4$, la puissance est calculée avant le signe placé devant : $-2^4=-(2^4)=-16$. Les parenthèses déterminent donc si le signe moins appartient ou non à la base.

@@ -1,5 +1,11 @@
 # L'essentiel : Puissances d'exposant positif
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Une puissance d’exposant entier positif** représente un produit de facteurs égaux.
+:::
+
 Pour un entier $n\geqslant1$, $a^n$ est le produit de $n$ facteurs égaux à $a$.
 
 **Même base :**

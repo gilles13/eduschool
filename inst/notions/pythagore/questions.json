@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PYTH-COMP-001",
-      "type": "comprehension",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Sur une figure à main levée, quelle information permet d’affirmer que ABC est rectangle en A ?",
       "reponse": "Le codage de l’angle BAC indique un angle droit.",
       "propositions": [
@@ -17,11 +18,15 @@
         "approximation": true,
         "main_levee": true
       },
-      "correction": "Le codage est une information ; l’apparence du dessin n’est pas une preuve."
+      "correction": "Le codage est une information ; l’apparence du dessin n’est pas une preuve.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PYTH-CALC-001",
-      "type": "exercice",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "correction": "[[correction]]",
@@ -38,7 +43,10 @@
             "correction": "Appliquer le théorème de Pythagore : BC² = AB² + AC². BC est la racine carrée de cette somme.",
             "p1": "\\(5\\)",
             "p2": "\\(7\\)",
-            "p3": "\\(2\\)"
+            "p3": "\\(2\\)",
+            "ab": 3,
+            "ac": 4,
+            "resultat_exploitable": 5
           }
         },
         {
@@ -48,7 +56,10 @@
             "correction": "BC² = 6² + 8² = 100, donc BC = 10 cm.",
             "p1": "\\(10\\)",
             "p2": "\\(14\\)",
-            "p3": "\\(2\\)"
+            "p3": "\\(2\\)",
+            "ab": 6,
+            "ac": 8,
+            "resultat_exploitable": 10
           }
         },
         {
@@ -58,14 +69,21 @@
             "correction": "BC² = 5² + 12² = 169, donc BC = 13 cm.",
             "p1": "\\(13\\)",
             "p2": "\\(17\\)",
-            "p3": "\\(7\\)"
+            "p3": "\\(7\\)",
+            "ab": 5,
+            "ac": 12,
+            "resultat_exploitable": 13
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "sqrt(ab^2 + ac^2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PYTH_IDENT_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "ABC est un triangle rectangle en A. Quel côté est son hypoténuse ?",
       "reponse": "BC",
       "illustration": {
@@ -78,11 +96,15 @@
         "BC",
         "On ne peut pas savoir"
       ],
-      "correction": "Le triangle est rectangle en A. Le côté opposé à l’angle droit A est BC : c’est l’hypoténuse."
+      "correction": "Le triangle est rectangle en A. Le côté opposé à l’angle droit A est BC : c’est l’hypoténuse.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PYTH_HYP_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -101,7 +123,10 @@
             "p1": "BC² = AB² + AC²",
             "p2": "BC = AB + AC",
             "p3": "AB² = AC² + BC²",
-            "p4": "BC² = AB² − AC²"
+            "p4": "BC² = AB² − AC²",
+            "AB": 3,
+            "AC": 4,
+            "resultat_exploitable": 25
           }
         },
         {
@@ -112,7 +137,10 @@
             "p1": "BC² = AB² + AC²",
             "p2": "BC = AB + AC",
             "p3": "AB² = AC² + BC²",
-            "p4": "BC² = AB² − AC²"
+            "p4": "BC² = AB² − AC²",
+            "AB": 6,
+            "AC": 8,
+            "resultat_exploitable": 100
           }
         },
         {
@@ -123,14 +151,21 @@
             "p1": "BC² = AB² + AC²",
             "p2": "BC = AB + AC",
             "p3": "AB² = AC² + BC²",
-            "p4": "BC² = AB² − AC²"
+            "p4": "BC² = AB² − AC²",
+            "AB": 5,
+            "AC": 12,
+            "resultat_exploitable": 169
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "AB^2+AC^2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PYTH_COTE_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -149,7 +184,10 @@
             "p1": "AB² = BC² − AC²",
             "p2": "AB² = BC² + AC²",
             "p3": "AB² = AC² − BC²",
-            "p4": "AB = BC − AC"
+            "p4": "AB = BC − AC",
+            "AC": 4,
+            "BC": 5,
+            "resultat_exploitable": 9
           }
         },
         {
@@ -160,7 +198,10 @@
             "p1": "AB² = BC² − AC²",
             "p2": "AB² = BC² + AC²",
             "p3": "AB² = AC² − BC²",
-            "p4": "AB = BC − AC"
+            "p4": "AB = BC − AC",
+            "AC": 8,
+            "BC": 10,
+            "resultat_exploitable": 36
           }
         },
         {
@@ -171,14 +212,21 @@
             "p1": "AB² = BC² − AC²",
             "p2": "AB² = BC² + AC²",
             "p3": "AB² = AC² − BC²",
-            "p4": "AB = BC − AC"
+            "p4": "AB = BC − AC",
+            "AC": 12,
+            "BC": 13,
+            "resultat_exploitable": 25
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "BC^2-AC^2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PYTH_DIAG_001",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -197,7 +245,10 @@
             "p1": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
             "p2": "Le rectangle a quatre côtés.",
             "p3": "Les côtés opposés du rectangle sont parallèles.",
-            "p4": "Les deux diagonales du rectangle ont la même longueur."
+            "p4": "Les deux diagonales du rectangle ont la même longueur.",
+            "longueur": 4,
+            "largeur": 3,
+            "resultat_exploitable": 25
           }
         },
         {
@@ -208,7 +259,10 @@
             "p1": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
             "p2": "Le rectangle a quatre côtés.",
             "p3": "Les côtés opposés du rectangle sont parallèles.",
-            "p4": "Les deux diagonales du rectangle ont la même longueur."
+            "p4": "Les deux diagonales du rectangle ont la même longueur.",
+            "longueur": 8,
+            "largeur": 6,
+            "resultat_exploitable": 100
           }
         },
         {
@@ -219,10 +273,16 @@
             "p1": "La diagonale et deux côtés adjacents forment un triangle rectangle.",
             "p2": "Le rectangle a quatre côtés.",
             "p3": "Les côtés opposés du rectangle sont parallèles.",
-            "p4": "Les deux diagonales du rectangle ont la même longueur."
+            "p4": "Les deux diagonales du rectangle ont la même longueur.",
+            "longueur": 12,
+            "largeur": 5,
+            "resultat_exploitable": 169
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "longueur^2+largeur^2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

@@ -1,35 +1,45 @@
 # Découvrir : Droites
 
-> **TODO — FICHE À RÉDIGER** — Squelette documentaire, aucun contenu pédagogique validé.
-
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-TODO — Définition simple et concrète de la notion.
+Une **droite** est une ligne rectiligne qui se prolonge indéfiniment dans les deux sens. Un **segment** est une portion de droite limitée par deux points ; une **demi-droite** a une origine et se prolonge dans un seul sens.
 :::
 
-TODO — Introduction courte : ce que l'on cherche à comprendre et pourquoi la notion est utile.
+Deux points distincts déterminent une seule droite. Avec plusieurs droites, on peut étudier des positions particulières.
 
 ## Première idée
 
-TODO — Construire le sens avec un exemple simple.
+Une droite passant par A et B se note $(AB)$ ; le segment limité par A et B se note $[AB]$. La longueur du segment se note $AB$. Les trois écritures ne désignent pas le même objet.
 
 ## Comprendre la méthode
 
-TODO — Faire apparaître le raisonnement avant la recette de calcul.
+Deux droites **parallèles** ne se rencontrent pas dans le plan.
+
+Deux droites **perpendiculaires** se coupent en formant un angle droit.
+
+<!-- graphique: droites -->
+
+On utilise la règle pour tracer une droite et l'équerre pour vérifier ou construire un angle droit. Deux droites perpendiculaires à une même droite sont parallèles.
 
 ## Vérifier
 
-TODO — Montrer comment contrôler le résultat ou le raisonnement lorsque cela a du sens.
+Une figure peut être approximative : pour affirmer que deux droites sont perpendiculaires, cherche un codage d'angle droit ou une donnée de l'énoncé, pas seulement une impression visuelle.
 
 ## À essayer
 
-TODO — Prévoir les activités vérifiables sous la forme **À essayer N — titre :**, numérotées dans l’ordre.
+**À essayer 1 — Notations :** Comment note-t-on la droite passant par A et B ? Et le segment d'extrémités A et B ?
+
+**À essayer 2 — Perpendiculaires :** Les droites $(d)$ et $(e)$ sont toutes deux perpendiculaires à $(f)$. Quelle relation peut-on déduire entre $(d)$ et $(e)$ ?
+
+**À essayer 3 — Lecture :** Deux droites se coupent en un angle de 60°. Sont-elles perpendiculaires ?
 
 ## À retenir
 
-TODO — Résumer en quelques phrases l'idée essentielle de la découverte.
+Une droite n'a pas d'extrémités ; un segment en a deux. Parallèle ne signifie pas perpendiculaire : les premières ne se coupent pas, les secondes forment un angle droit.
 
 ## Pour vérifier tes découvertes
 
-TODO — Donner les corrections de chaque **À essayer N**, dans le même ordre, sous la forme **N. titre**. Expliquer le raisonnement.
+1. **Notations :** Droite $(AB)$ ; segment $[AB]$.
+2. **Perpendiculaires :** Elles sont **parallèles**, car elles sont perpendiculaires à la même droite.
+3. **Lecture :** Non : un angle droit mesure **90°**, pas 60°.

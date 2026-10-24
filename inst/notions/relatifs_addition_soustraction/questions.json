@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "RELATIFS-ADD-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "3",
             "p2": "−3",
             "p3": "11",
-            "p4": "−11"
+            "p4": "−11",
+            "calcul_exploitable": "-4+7",
+            "resultat_exploitable": "3"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "3",
             "p2": "−3",
             "p3": "15",
-            "p4": "−15"
+            "p4": "−15",
+            "calcul_exploitable": "-6+9",
+            "resultat_exploitable": "3"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "−3",
             "p2": "3",
             "p3": "13",
-            "p4": "−13"
+            "p4": "−13",
+            "calcul_exploitable": "-8+5",
+            "resultat_exploitable": "-3"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RELATIFS-SOUS-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +81,10 @@
             "p1": "3 + 5",
             "p2": "3 + (−5)",
             "p3": "−3 + 5",
-            "p4": "−3 + (−5)"
+            "p4": "−3 + (−5)",
+            "a": 3,
+            "b": 5,
+            "resultat_exploitable": 8
           }
         },
         {
@@ -81,7 +95,10 @@
             "p1": "5 + 4",
             "p2": "5 − 4",
             "p3": "−5 + 4",
-            "p4": "−5 − 4"
+            "p4": "−5 − 4",
+            "a": 5,
+            "b": 4,
+            "resultat_exploitable": 9
           }
         },
         {
@@ -92,14 +109,21 @@
             "p1": "7 + 2",
             "p2": "7 − 2",
             "p3": "−7 + 2",
-            "p4": "−7 − 2"
+            "p4": "−7 − 2",
+            "a": 7,
+            "b": 2,
+            "resultat_exploitable": 9
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a - (-b)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "RELATIFS-SOUS-002",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +142,9 @@
             "p1": "−4",
             "p2": "−8",
             "p3": "4",
-            "p4": "8"
+            "p4": "8",
+            "calcul_exploitable": "-6-(-2)",
+            "resultat_exploitable": "-4"
           }
         },
         {
@@ -129,7 +155,9 @@
             "p1": "−5",
             "p2": "5",
             "p3": "−13",
-            "p4": "13"
+            "p4": "13",
+            "calcul_exploitable": "-9-(-4)",
+            "resultat_exploitable": "-5"
           }
         },
         {
@@ -140,10 +168,15 @@
             "p1": "3",
             "p2": "−3",
             "p3": "−17",
-            "p4": "17"
+            "p4": "17",
+            "calcul_exploitable": "-7-(-10)",
+            "resultat_exploitable": "3"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

@@ -1,5 +1,11 @@
 # Découvrir : Les unités informatiques (octets)
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Un **octet** est une unité de quantité d’information numérique. Convertir des octets, c’est exprimer la même quantité dans une autre unité.
+:::
+
 Un **octet (o)** est une unité utilisée pour mesurer une quantité de données informatiques. Un octet contient **8 bits**.
 
 Pour les unités décimales, on utilise les préfixes habituels :
@@ -19,6 +25,6 @@ Pour les unités décimales, on utilise les préfixes habituels :
 
 ## Pour vérifier tes découvertes
 
-**1. Mégaoctets et kilooctets.** Dans les unités décimales présentées ici, $1\,\mathrm{Mo}=1\,000\,\mathrm{ko}$, donc **3,5 Mo = 3 500 ko**.
+1. **Mégaoctets et kilooctets :** Dans les unités décimales présentées ici, $1\,\mathrm{Mo}=1\,000\,\mathrm{ko}$, donc **3,5 Mo = 3 500 ko**.
 
-**2. Une situation concrète.** Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko.
+2. **Une situation concrète :** Dans le système décimal, 1 Mo = 1 000 ko ; 2,5 Mo = 2 500 ko.

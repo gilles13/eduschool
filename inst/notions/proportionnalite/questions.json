@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PROP-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[a]] objets coûtent [[paquet]] €. Au même prix unitaire, combien coûtent [[b]] objets ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -614,11 +615,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "paquet * b / a",
+      "reponse_exploitable": "as.numeric(bonne)",
+      "moteur": "R"
     },
     {
       "id": "PROP-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Quel indice permet de reconnaître une situation de proportionnalité ?",
       "reponse": "Le quotient correspondant reste constant.",
       "propositions": [
@@ -627,11 +632,15 @@
         "Les deux grandeurs sont toujours égales.",
         "Le graphique est toujours horizontal."
       ],
-      "correction": "Une proportionnalité se caractérise par un coefficient multiplicatif constant."
+      "correction": "Une proportionnalité se caractérise par un coefficient multiplicatif constant.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PROP-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Dans un tableau de proportionnalité, que représente le coefficient de proportionnalité ?",
       "reponse": "Le nombre par lequel on multiplie une grandeur pour obtenir l’autre.",
       "propositions": [
@@ -640,7 +649,10 @@
         "La différence entre deux colonnes.",
         "Le plus grand nombre du tableau."
       ],
-      "correction": "Le coefficient relie les valeurs correspondantes par une multiplication."
+      "correction": "Le coefficient relie les valeurs correspondantes par une multiplication.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

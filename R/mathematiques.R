@@ -90,25 +90,37 @@ notions = function() {
 #' @param notion Identifiant d'une notion ou d'une famille.
 #' @param niveau Niveau scolaire facultatif pour filtrer les notions d'une famille.
 #' @export
-questions = function(notion, niveau = "") {
+questions = function(notion, niveau = "", .membre = FALSE) {
   stopifnot(length(notion) == 1L, is.character(notion),
             grepl("^[a-z][a-z0-9_]*$", notion))
   membres = .notions_famille(notion, niveau = niveau)
-  if (length(membres)) {
+  if (length(membres) && !.membre) {
     membres = membres[file.exists(file.path(.chemin_edu("notions"), membres, "questions.json"))]
-    banques = lapply(membres, questions)
+    banques = lapply(membres, function(m) questions(m, niveau = niveau, .membre = TRUE))
     return(list(notion_id = notion,
       questions = unlist(lapply(banques, `[[`, "questions"), recursive = FALSE)))
   }
-  if (nzchar(niveau) && length(.notions_famille(notion)))
+  if (nzchar(niveau) && !.membre && length(.notions_famille(notion)))
     stop("Aucune notion disponible pour ce niveau : ", niveau)
   banque = jsonlite::fromJSON(.chemin_edu("notions", notion, "questions.json"),
                               simplifyVector = FALSE)
   niveau_notion = .niveau_notion_ou_famille(notion)
   banque$questions = lapply(banque$questions, function(definition) {
-    definition$niveau = niveau_notion
+    if (is.null(definition$niveau)) definition$niveau = niveau_notion
     definition
   })
+  if (nzchar(niveau)) {
+    ordre = c("CP", "CE1", "CE2", "CM1", "CM2", "6E", "5E", "4E", "3E", "2GT", "1G", "TG")
+    cible = match(niveau, ordre)
+    if (is.na(cible)) stop("Niveau inconnu : ", niveau)
+    niveaux = vapply(banque$questions, function(q) q$niveau, character(1))
+    positions = match(niveaux, ordre)
+    banque$questions = banque$questions[!is.na(positions) & positions <= cible]
+  }
+  if (!.membre) {
+    banque$questions = Filter(function(q) !identical(q$portee, "famille"),
+                              banque$questions)
+  }
   banque
 }
 
@@ -136,6 +148,14 @@ questions = function(notion, niveau = "") {
   progression = variante$progression
   definition$variantes = NULL
   definition = .remplacer_parametres_edu(definition, valeurs)
+  if (!is.null(definition$illustration)) {
+    for (nom in c("nombre", "rang", "debut", "fin", "pas", "point")) {
+      valeur = definition$illustration[[nom]]
+      if (is.character(valeur) && length(valeur) == 1L &&
+          !is.na(suppressWarnings(as.numeric(valeur))))
+        definition$illustration[[nom]] = as.numeric(valeur)
+    }
+  }
   list(definition = definition, parametres = valeurs, progression = progression)
 }
 
@@ -168,7 +188,10 @@ question = function(definition) {
   list(id = definition$id, enonce = definition$enonce, reponse = bonne,
        propositions = sample(propositions), correction = correction,
        illustration = definition$illustration, parametres = instance$parametres,
-       progression = instance$progression, presentation = definition$presentation,
+       progression = instance$progression, categorie = definition$categorie,
+       portee = definition$portee, liens_notions = definition$liens_notions,
+       demarche = definition$demarche,
+       presentation = definition$presentation,
        humour = definition$humour, apart_humour = definition$apart_humour,
        niveau = definition$niveau)
 }
@@ -204,6 +227,16 @@ question = function(definition) {
       }
       if (melanger) resultat = sample(resultat)
       return(resultat)
+    }
+    if (melanger) {
+      transversales = which(vapply(definitions, function(x)
+        identical(x$portee, "famille"), logical(1)))
+      ordinaires = setdiff(seq_along(definitions), transversales)
+      cible = min(length(transversales), round(n / 3))
+      cible = max(cible, n - length(ordinaires))
+      selection = c(if (cible) sample(transversales, cible) else integer(),
+                    if (n > cible) sample(ordinaires, n - cible) else integer())
+      return(sample(selection))
     }
     sample.int(length(definitions), size = n, replace = FALSE)
   })
@@ -308,9 +341,9 @@ graphique = function(id, ..., main_levee = FALSE) {
     remplacement = correspondances[[classe]]
     if (is.null(remplacement)) next
     couche$geom = remplacement
-    parametres = list(roughness = 1.5, seed = 2110L + i)
+    parametres = list(roughness = 0.3, seed = if (is.null(couche$geom_params$seed)) 2110L + i else couche$geom_params$seed)
     if (classe != "GeomPoint")
-      parametres = c(parametres, list(bowing = 0.5, n_passes = 2L))
+      parametres = c(parametres, list(bowing = 1, n_passes = 2L))
     if (classe %in% c("GeomPolygon", "GeomRect"))
       parametres$fill_style = "solid"
     couche$geom_params = utils::modifyList(couche$geom_params, parametres)
@@ -344,18 +377,19 @@ graphique = function(id, ..., main_levee = FALSE) {
     id = elements[[1L]]
     arguments = list()
     for (element in elements[-1L]) {
-      if (!grepl("^[a-z][A-Za-z0-9_]*=[A-Za-z0-9.-]+$", element))
-        stop("Parametre graphique invalide : ", element)
       paire = strsplit(element, "=", fixed = TRUE)[[1L]]
-      if (paire[[1L]] %in% names(arguments))
-        stop("Parametre graphique repete : ", paire[[1L]])
+      if (length(paire) != 2L || !grepl("^[a-z][A-Za-z0-9_]*$", paire[[1L]]) || !nzchar(paire[[2L]]))
+        stop("Parametre graphique invalide : ", element)
+      nom = paire[[1L]]
+      if (nom %in% names(arguments))
+        stop("Parametre graphique repete : ", nom)
       valeur = paire[[2L]]
       if (valeur %in% c("TRUE", "FALSE")) {
-        arguments[[paire[[1L]]]] = identical(valeur, "TRUE")
+        arguments[[nom]] = identical(valeur, "TRUE")
       } else if (grepl("^-?[0-9]+([.][0-9]+)?$", valeur)) {
-        arguments[[paire[[1L]]]] = as.numeric(valeur)
-      } else if (grepl("^[A-Z]$", valeur)) {
-        arguments[[paire[[1L]]]] = valeur
+        arguments[[nom]] = as.numeric(valeur)
+      } else if (grepl("^[A-Za-z][A-Za-z0-9_]*$", valeur)) {
+        arguments[[nom]] = valeur
       } else {
         stop("Parametre graphique invalide : ", element)
       }

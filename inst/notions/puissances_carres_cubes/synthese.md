@@ -1,5 +1,11 @@
 # L'essentiel : Carrés et cubes
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Le carré de a** est a × a ; son cube est a × a × a.
+:::
+
 Le **carré** d'un nombre est son produit par lui-même : $a^2=a\times a$.
 
 Le **cube** d'un nombre est le produit de trois facteurs égaux : $a^3=a\times a\times a$.

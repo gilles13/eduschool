@@ -2,8 +2,9 @@
   "notion_id": "developpement_identites",
   "questions": [
     {
-      "id": "IR-002",
-      "type": "qcm",
+      "id": "DEV-IR-002",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Développer [[affichage_source]].",
       "variantes": [
         {
@@ -814,11 +815,15 @@
         "[[d2]]",
         "[[d3]]"
       ],
-      "correction": "On reconnaît une identité remarquable, puis on l’applique en conservant le double produit lorsqu’il existe. On obtient [[bonne]]."
+      "correction": "On reconnaît une identité remarquable, puis on l’applique en conservant le double produit lorsqu’il existe. On obtient [[bonne]].",
+      "enonce_exploitable": "[[source]]",
+      "reponse_exploitable": "[[bonne_expression]]",
+      "moteur": "Ryacas"
     },
     {
-      "id": "IR-006",
-      "type": "qcm",
+      "id": "DEV-IR-006",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -832,6 +837,8 @@
         {
           "parametres": {
             "enonce": "Développer (3𝑥 − 2)(3𝑥 + 2).",
+          "a": 3,
+          "b": 2,
             "reponse": "9𝑥² − 4",
             "correction": "Produit de deux expressions conjuguées : (a − b)(a + b) = a² − b².",
             "p1": "9𝑥² − 4",
@@ -843,6 +850,8 @@
         {
           "parametres": {
             "enonce": "Développer (4𝑥 − 3)(4𝑥 + 3).",
+          "a": 4,
+          "b": 3,
             "reponse": "16𝑥² − 9",
             "correction": "(a-b)(a+b)=a²-b² : (4x)²−3²=16x²−9.",
             "p1": "16𝑥² − 9",
@@ -854,6 +863,8 @@
         {
           "parametres": {
             "enonce": "Développer (5𝑥 − 2)(5𝑥 + 2).",
+          "a": 5,
+          "b": 2,
             "reponse": "25𝑥² − 4",
             "correction": "(5x)²−2²=25x²−4.",
             "p1": "25𝑥² − 4",
@@ -862,7 +873,10 @@
             "p4": "25𝑥² − 20𝑥 + 4"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "(a*x-b)*(a*x+b)",
+      "reponse_exploitable": "a^2*x^2-b^2",
+      "moteur": "Ryacas"
     }
   ]
 }

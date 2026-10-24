@@ -1,5 +1,11 @@
 # Découvrir : Comparer et ranger des décimaux
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Comparer deux nombres décimaux**, c’est déterminer lequel est le plus petit, le plus grand, ou s’ils sont égaux.
+:::
+
 Pour comparer deux décimaux, compare d’abord leurs parties entières, puis leurs dixièmes, centièmes, etc. Ajouter des zéros à droite ne change pas la valeur.
 
 ## Observons

@@ -1,0 +1,533 @@
+{
+  "notion_id": "geometrie_espace",
+  "questions": [
+    {
+      "id": "GEOMETRIE_ESPACE-CUBE-ARETES",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 3 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "36 cm",
+            "p1": "36 cm",
+            "p2": "18 cm",
+            "p3": "24 cm",
+            "p4": "9 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 3 = 36 cm.",
+            "cote": 3,
+            "resultat": 36
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 4 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "48 cm",
+            "p1": "48 cm",
+            "p2": "24 cm",
+            "p3": "32 cm",
+            "p4": "16 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 4 = 48 cm.",
+            "cote": 4,
+            "resultat": 48
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 5 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "60 cm",
+            "p1": "60 cm",
+            "p2": "30 cm",
+            "p3": "40 cm",
+            "p4": "25 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 5 = 60 cm.",
+            "cote": 5,
+            "resultat": 60
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 7 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "84 cm",
+            "p1": "84 cm",
+            "p2": "42 cm",
+            "p3": "56 cm",
+            "p4": "49 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 7 = 84 cm.",
+            "cote": 7,
+            "resultat": 84
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 9 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "108 cm",
+            "p1": "108 cm",
+            "p2": "54 cm",
+            "p3": "72 cm",
+            "p4": "81 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 9 = 108 cm.",
+            "cote": 9,
+            "resultat": 108
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 10 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "120 cm",
+            "p1": "120 cm",
+            "p2": "60 cm",
+            "p3": "80 cm",
+            "p4": "100 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 10 = 120 cm.",
+            "cote": 10,
+            "resultat": 120
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 11 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "132 cm",
+            "p1": "132 cm",
+            "p2": "66 cm",
+            "p3": "88 cm",
+            "p4": "121 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 11 = 132 cm.",
+            "cote": 11,
+            "resultat": 132
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 13 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "156 cm",
+            "p1": "156 cm",
+            "p2": "78 cm",
+            "p3": "104 cm",
+            "p4": "169 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 13 = 156 cm.",
+            "cote": 13,
+            "resultat": 156
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un cube a des arêtes de 14 cm. Quelle est la somme des longueurs de ses douze arêtes ?",
+            "reponse": "168 cm",
+            "p1": "168 cm",
+            "p2": "84 cm",
+            "p3": "112 cm",
+            "p4": "196 cm",
+            "correction": "Un cube a 12 arêtes de même longueur : 12 × 14 = 168 cm.",
+            "cote": 14,
+            "resultat": 168
+          }
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "cube": true,
+        "longueur": "[[cote]]",
+        "largeur": "[[cote]]",
+        "hauteur": "[[cote]]"
+      },
+      "enonce_exploitable": "12 * cote",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "GEOMETRIE_ESPACE-PAVE-VOLUME",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 3 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "18 cm³",
+            "p1": "18 cm³",
+            "p2": "15 cm³",
+            "p3": "16 cm³",
+            "p4": "9 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 3 × 3 × 2 = 18 cm³.",
+            "longueur": 3,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 18
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 4 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "24 cm³",
+            "p1": "24 cm³",
+            "p2": "20 cm³",
+            "p3": "18 cm³",
+            "p4": "12 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 4 × 3 × 2 = 24 cm³.",
+            "longueur": 4,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 24
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 5 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "30 cm³",
+            "p1": "30 cm³",
+            "p2": "25 cm³",
+            "p3": "20 cm³",
+            "p4": "15 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 5 × 3 × 2 = 30 cm³.",
+            "longueur": 5,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 30
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 6 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "36 cm³",
+            "p1": "36 cm³",
+            "p2": "30 cm³",
+            "p3": "22 cm³",
+            "p4": "18 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 6 × 3 × 2 = 36 cm³.",
+            "longueur": 6,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 36
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 7 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "42 cm³",
+            "p1": "42 cm³",
+            "p2": "35 cm³",
+            "p3": "24 cm³",
+            "p4": "21 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 7 × 3 × 2 = 42 cm³.",
+            "longueur": 7,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 42
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 8 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "48 cm³",
+            "p1": "48 cm³",
+            "p2": "40 cm³",
+            "p3": "26 cm³",
+            "p4": "24 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 8 × 3 × 2 = 48 cm³.",
+            "longueur": 8,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 48
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 9 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "54 cm³",
+            "p1": "54 cm³",
+            "p2": "45 cm³",
+            "p3": "28 cm³",
+            "p4": "27 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 9 × 3 × 2 = 54 cm³.",
+            "longueur": 9,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 54
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 11 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "66 cm³",
+            "p1": "66 cm³",
+            "p2": "55 cm³",
+            "p3": "32 cm³",
+            "p4": "33 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 11 × 3 × 2 = 66 cm³.",
+            "longueur": 11,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 66
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 12 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "72 cm³",
+            "p1": "72 cm³",
+            "p2": "60 cm³",
+            "p3": "34 cm³",
+            "p4": "36 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 12 × 3 × 2 = 72 cm³.",
+            "longueur": 12,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 72
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 13 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "78 cm³",
+            "p1": "78 cm³",
+            "p2": "65 cm³",
+            "p3": "36 cm³",
+            "p4": "39 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 13 × 3 × 2 = 78 cm³.",
+            "longueur": 13,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 78
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un pavé droit mesure 14 cm de long, 3 cm de large et 2 cm de haut. Quel est son volume ?",
+            "reponse": "84 cm³",
+            "p1": "84 cm³",
+            "p2": "70 cm³",
+            "p3": "38 cm³",
+            "p4": "42 cm³",
+            "correction": "Volume = longueur × largeur × hauteur = 14 × 3 × 2 = 84 cm³.",
+            "longueur": 14,
+            "largeur": 3,
+            "hauteur": 2,
+            "resultat": 84
+          }
+        }
+      ],
+      "illustration": {
+        "id": "volumes",
+        "type": 1,
+        "longueur": "[[longueur]]",
+        "largeur": "[[largeur]]",
+        "hauteur": "[[hauteur]]"
+      },
+      "enonce_exploitable": "longueur * largeur * hauteur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "GEOMETRIE_ESPACE-CUBE-FACES",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "On assemble 3 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "14",
+            "p1": "14",
+            "p2": "18",
+            "p3": "12",
+            "p4": "15",
+            "correction": "Il y a 18 faces au départ ; les 2 jonctions cachent chacune deux faces : 18 − 2 × 2 = 14.",
+            "cubes": 3,
+            "resultat_exploitable": 14
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 4 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "18",
+            "p1": "18",
+            "p2": "24",
+            "p3": "16",
+            "p4": "20",
+            "correction": "Il y a 24 faces au départ ; les 3 jonctions cachent chacune deux faces : 24 − 2 × 3 = 18.",
+            "cubes": 4,
+            "resultat_exploitable": 18
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 5 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "22",
+            "p1": "22",
+            "p2": "30",
+            "p3": "20",
+            "p4": "25",
+            "correction": "Il y a 30 faces au départ ; les 4 jonctions cachent chacune deux faces : 30 − 2 × 4 = 22.",
+            "cubes": 5,
+            "resultat_exploitable": 22
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 6 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "26",
+            "p1": "26",
+            "p2": "36",
+            "p3": "24",
+            "p4": "30",
+            "correction": "Il y a 36 faces au départ ; les 5 jonctions cachent chacune deux faces : 36 − 2 × 5 = 26.",
+            "cubes": 6,
+            "resultat_exploitable": 26
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 7 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "30",
+            "p1": "30",
+            "p2": "42",
+            "p3": "28",
+            "p4": "35",
+            "correction": "Il y a 42 faces au départ ; les 6 jonctions cachent chacune deux faces : 42 − 2 × 6 = 30.",
+            "cubes": 7,
+            "resultat_exploitable": 30
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 8 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "34",
+            "p1": "34",
+            "p2": "48",
+            "p3": "32",
+            "p4": "40",
+            "correction": "Il y a 48 faces au départ ; les 7 jonctions cachent chacune deux faces : 48 − 2 × 7 = 34.",
+            "cubes": 8,
+            "resultat_exploitable": 34
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 9 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "38",
+            "p1": "38",
+            "p2": "54",
+            "p3": "36",
+            "p4": "45",
+            "correction": "Il y a 54 faces au départ ; les 8 jonctions cachent chacune deux faces : 54 − 2 × 8 = 38.",
+            "cubes": 9,
+            "resultat_exploitable": 38
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 10 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "42",
+            "p1": "42",
+            "p2": "60",
+            "p3": "40",
+            "p4": "50",
+            "correction": "Il y a 60 faces au départ ; les 9 jonctions cachent chacune deux faces : 60 − 2 × 9 = 42.",
+            "cubes": 10,
+            "resultat_exploitable": 42
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 11 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "46",
+            "p1": "46",
+            "p2": "66",
+            "p3": "44",
+            "p4": "55",
+            "correction": "Il y a 66 faces au départ ; les 10 jonctions cachent chacune deux faces : 66 − 2 × 10 = 46.",
+            "cubes": 11,
+            "resultat_exploitable": 46
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 12 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "50",
+            "p1": "50",
+            "p2": "72",
+            "p3": "48",
+            "p4": "60",
+            "correction": "Il y a 72 faces au départ ; les 11 jonctions cachent chacune deux faces : 72 − 2 × 11 = 50.",
+            "cubes": 12,
+            "resultat_exploitable": 50
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 13 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "54",
+            "p1": "54",
+            "p2": "78",
+            "p3": "52",
+            "p4": "65",
+            "correction": "Il y a 78 faces au départ ; les 12 jonctions cachent chacune deux faces : 78 − 2 × 12 = 54.",
+            "cubes": 13,
+            "resultat_exploitable": 54
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "On assemble 14 cubes identiques en une rangée rectiligne, face contre face. Combien de faces carrées restent visibles sur l’ensemble (sans compter les faces collées) ?",
+            "reponse": "58",
+            "p1": "58",
+            "p2": "84",
+            "p3": "56",
+            "p4": "70",
+            "correction": "Il y a 84 faces au départ ; les 13 jonctions cachent chacune deux faces : 84 − 2 × 13 = 58.",
+            "cubes": 14,
+            "resultat_exploitable": 58
+          }
+        }
+      ],
+      "enonce_exploitable": "6 * cubes - 2 * (cubes - 1)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "GEOMETRIE-ESPACE-RAISONNEMENT-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "On colle deux cubes identiques face contre face, sans chevauchement. Combien de faces carrées restent visibles à l’extérieur ?",
+      "reponse": "10",
+      "propositions": [
+        "10",
+        "12",
+        "8",
+        "6"
+      ],
+      "correction": "Je vois : chaque cube possède six faces, mais les deux faces collées deviennent intérieures. Or : seules les faces extérieures sont visibles. Donc : 6 + 6 − 2 = 10 faces.",
+      "enonce_exploitable": "2 * 6 - 2",
+      "reponse_exploitable": "10",
+      "moteur": "R"
+    }
+  ]
+}

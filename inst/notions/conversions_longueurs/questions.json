@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "MES-CONVERSION_LONGUEURS-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "320 cm",
             "p2": "32 cm",
             "p3": "3 200 cm",
-            "p4": "0,032 cm"
+            "p4": "0,032 cm",
+            "calcul_exploitable": "(16 / 5) * 100",
+            "resultat_exploitable": "320"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "640 cm",
             "p2": "64 cm",
             "p3": "6 400 cm",
-            "p4": "0,064 cm"
+            "p4": "0,064 cm",
+            "calcul_exploitable": "(32 / 5) * 100",
+            "resultat_exploitable": "640"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "960 cm",
             "p2": "96 cm",
             "p3": "9 600 cm",
-            "p4": "0,096 cm"
+            "p4": "0,096 cm",
+            "calcul_exploitable": "(48 / 5) * 100",
+            "resultat_exploitable": "960"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-002",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +81,9 @@
             "p1": "45 cm",
             "p2": "4,5 cm",
             "p3": "450 cm",
-            "p4": "4 500 cm"
+            "p4": "4 500 cm",
+            "calcul_exploitable": "450 * (1 / 10)",
+            "resultat_exploitable": "45"
           }
         },
         {
@@ -81,7 +94,9 @@
             "p1": "90 cm",
             "p2": "9,0 cm",
             "p3": "900 cm",
-            "p4": "9 000 cm"
+            "p4": "9 000 cm",
+            "calcul_exploitable": "900 * (1 / 10)",
+            "resultat_exploitable": "90"
           }
         },
         {
@@ -92,14 +107,20 @@
             "p1": "135 cm",
             "p2": "13,5 cm",
             "p3": "1350 cm",
-            "p4": "13 500 cm"
+            "p4": "13 500 cm",
+            "calcul_exploitable": "1350 * (1 / 10)",
+            "resultat_exploitable": "135"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +139,9 @@
             "p1": "450 m",
             "p2": "45 m",
             "p3": "4 500 m",
-            "p4": "0,0045 m"
+            "p4": "0,0045 m",
+            "calcul_exploitable": "(9 / 20) * 1000",
+            "resultat_exploitable": "450"
           }
         },
         {
@@ -129,7 +152,9 @@
             "p1": "900 m",
             "p2": "90 m",
             "p3": "9 000 m",
-            "p4": "0,0090 m"
+            "p4": "0,0090 m",
+            "calcul_exploitable": "(9 / 10) * 1000",
+            "resultat_exploitable": "900"
           }
         },
         {
@@ -140,14 +165,20 @@
             "p1": "1350 m",
             "p2": "135 m",
             "p3": "13 500 m",
-            "p4": "0,0135 m"
+            "p4": "0,0135 m",
+            "calcul_exploitable": "(27 / 20) * 1000",
+            "resultat_exploitable": "1350"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-VOCAB-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quelle unité convient pour exprimer la distance entre deux villes ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -165,11 +196,15 @@
         "millimètre",
         "décimètre"
       ],
-      "correction": "Le kilomètre est adapté aux grandes distances."
+      "correction": "Le kilomètre est adapté aux grandes distances.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-VOCAB-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quelle unité de longueur est l’unité de référence du système métrique ?",
       "presentation": {
         "type": "mot_masque",
@@ -188,11 +223,15 @@
         "minute",
         "mesure"
       ],
-      "correction": "Le terme recherché est « mètre »."
+      "correction": "Le terme recherché est « mètre ».",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_LONGUEURS-APPLICATION",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -205,6 +244,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 1.25,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 1250,
             "enonce": "Une piste fait 1,25 km. Combien cela représente-t-il de mètres ?",
             "reponse": "1 250 m",
             "correction": "1 km = 1 000 m, donc 1,25 km = 1 250 m.",
@@ -216,6 +258,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 2.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 2500,
             "enonce": "Une piste fait 2,50 km. Combien cela représente-t-il de mètres ?",
             "reponse": "2 500 m",
             "correction": "En convertissant dans l’unité demandée, on obtient 2 500 m.",
@@ -227,6 +272,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 3.75,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 3750,
             "enonce": "Une piste fait 3,75 km. Combien cela représente-t-il de mètres ?",
             "reponse": "3 750 m",
             "correction": "En convertissant dans l’unité demandée, on obtient 3 750 m.",
@@ -236,7 +284,10 @@
             "p4": "3,75 m"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : un ratio compare des quantités en indiquant combien de parts correspondent à chacune. Vérifie ensuite ton exemple avec la méthode de la fiche : additionner les nombres de parts puis déterminer la valeur d’une part.

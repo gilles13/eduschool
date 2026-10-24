@@ -1,29 +1,29 @@
 # L'essentiel : Cercle
 
-> **TODO — FICHE À RÉDIGER** — Squelette documentaire, aucun contenu pédagogique validé.
-
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-TODO — Définition courte permettant de retrouver immédiatement l'objet étudié.
+Un **cercle** de centre O et de rayon r est l'ensemble des points situés à la même distance r de O. Le **disque** comprend aussi tous les points à l'intérieur du cercle.
 :::
 
 ## Principe
 
-TODO — Énoncer la propriété, le raisonnement ou la règle essentielle.
+Tous les points du cercle sont à la même distance du centre. Le diamètre vaut deux fois le rayon : $d=2r$.
 
 ## Méthode
 
-TODO — Présenter les étapes utiles de façon courte lorsque la notion comporte une méthode.
+Repérer le centre et le rayon ; pour un diamètre, multiplier le rayon par 2 ; pour retrouver le rayon, diviser le diamètre par 2.
+
+<!-- graphique: cercle -->
 
 ## Exemple
 
-TODO — Donner un exemple complet mais compact.
+Un cercle de diamètre 10 cm a un rayon de **5 cm**.
 
 ## Vérification
 
-TODO — Indiquer, lorsque cela a du sens, comment contrôler le résultat.
+Le diamètre est plus long que le rayon et vaut exactement deux rayons.
 
 ## À retenir
 
-TODO — Conserver seulement les repères indispensables pour réviser rapidement.
+**Cercle** : contour à distance constante du centre. **Disque** : intérieur et contour. **Diamètre = 2 × rayon**.

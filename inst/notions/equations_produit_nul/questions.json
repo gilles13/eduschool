@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "EQ-PRODUIT-NUL-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Résoudre 𝑥(𝑥 [[signe_a]] [[abs_a]]) = [[b]](𝑥 [[signe_a]] [[abs_a]]).",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -714,7 +715,10 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "x*(x-a)-b*(x-a)",
+      "reponse_exploitable": "(x-a)*(x-b)",
+      "moteur": "Ryacas"
     }
   ]
 }

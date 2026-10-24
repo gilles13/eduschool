@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "GQUOT-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Un trajet de [[distance]] km dure [[temps]] h. Quelle est la vitesse moyenne ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -21,7 +22,8 @@
             "bonne": "20 km/h",
             "d1": "25 km/h",
             "d2": "15 km/h",
-            "d3": "30 km/h"
+            "d3": "30 km/h",
+            "resultat": 20
           },
           "progression": 1
         },
@@ -32,7 +34,8 @@
             "bonne": "25 km/h",
             "d1": "30 km/h",
             "d2": "20 km/h",
-            "d3": "35 km/h"
+            "d3": "35 km/h",
+            "resultat": 25
           },
           "progression": 1
         },
@@ -43,7 +46,8 @@
             "bonne": "30 km/h",
             "d1": "35 km/h",
             "d2": "25 km/h",
-            "d3": "40 km/h"
+            "d3": "40 km/h",
+            "resultat": 30
           },
           "progression": 1
         },
@@ -54,7 +58,8 @@
             "bonne": "35 km/h",
             "d1": "40 km/h",
             "d2": "30 km/h",
-            "d3": "45 km/h"
+            "d3": "45 km/h",
+            "resultat": 35
           },
           "progression": 1
         },
@@ -65,7 +70,8 @@
             "bonne": "40 km/h",
             "d1": "45 km/h",
             "d2": "35 km/h",
-            "d3": "50 km/h"
+            "d3": "50 km/h",
+            "resultat": 40
           },
           "progression": 1
         },
@@ -76,7 +82,8 @@
             "bonne": "45 km/h",
             "d1": "50 km/h",
             "d2": "40 km/h",
-            "d3": "55 km/h"
+            "d3": "55 km/h",
+            "resultat": 45
           },
           "progression": 1
         },
@@ -87,7 +94,8 @@
             "bonne": "50 km/h",
             "d1": "55 km/h",
             "d2": "45 km/h",
-            "d3": "60 km/h"
+            "d3": "60 km/h",
+            "resultat": 50
           },
           "progression": 1
         },
@@ -98,7 +106,8 @@
             "bonne": "55 km/h",
             "d1": "60 km/h",
             "d2": "50 km/h",
-            "d3": "65 km/h"
+            "d3": "65 km/h",
+            "resultat": 55
           },
           "progression": 1
         },
@@ -109,7 +118,8 @@
             "bonne": "60 km/h",
             "d1": "65 km/h",
             "d2": "55 km/h",
-            "d3": "70 km/h"
+            "d3": "70 km/h",
+            "resultat": 60
           },
           "progression": 1
         },
@@ -120,7 +130,8 @@
             "bonne": "20 km/h",
             "d1": "25 km/h",
             "d2": "15 km/h",
-            "d3": "30 km/h"
+            "d3": "30 km/h",
+            "resultat": 20
           },
           "progression": 1
         },
@@ -131,7 +142,8 @@
             "bonne": "25 km/h",
             "d1": "30 km/h",
             "d2": "20 km/h",
-            "d3": "35 km/h"
+            "d3": "35 km/h",
+            "resultat": 25
           },
           "progression": 1
         },
@@ -142,7 +154,8 @@
             "bonne": "30 km/h",
             "d1": "35 km/h",
             "d2": "25 km/h",
-            "d3": "40 km/h"
+            "d3": "40 km/h",
+            "resultat": 30
           },
           "progression": 1
         },
@@ -153,7 +166,8 @@
             "bonne": "35 km/h",
             "d1": "40 km/h",
             "d2": "30 km/h",
-            "d3": "45 km/h"
+            "d3": "45 km/h",
+            "resultat": 35
           },
           "progression": 1
         },
@@ -164,7 +178,8 @@
             "bonne": "40 km/h",
             "d1": "45 km/h",
             "d2": "35 km/h",
-            "d3": "50 km/h"
+            "d3": "50 km/h",
+            "resultat": 40
           },
           "progression": 1
         },
@@ -175,7 +190,8 @@
             "bonne": "45 km/h",
             "d1": "50 km/h",
             "d2": "40 km/h",
-            "d3": "55 km/h"
+            "d3": "55 km/h",
+            "resultat": 45
           },
           "progression": 1
         },
@@ -186,7 +202,8 @@
             "bonne": "50 km/h",
             "d1": "55 km/h",
             "d2": "45 km/h",
-            "d3": "60 km/h"
+            "d3": "60 km/h",
+            "resultat": 50
           },
           "progression": 1
         },
@@ -197,7 +214,8 @@
             "bonne": "55 km/h",
             "d1": "60 km/h",
             "d2": "50 km/h",
-            "d3": "65 km/h"
+            "d3": "65 km/h",
+            "resultat": 55
           },
           "progression": 1
         },
@@ -208,7 +226,8 @@
             "bonne": "60 km/h",
             "d1": "65 km/h",
             "d2": "55 km/h",
-            "d3": "70 km/h"
+            "d3": "70 km/h",
+            "resultat": 60
           },
           "progression": 2
         },
@@ -219,7 +238,8 @@
             "bonne": "20 km/h",
             "d1": "25 km/h",
             "d2": "15 km/h",
-            "d3": "30 km/h"
+            "d3": "30 km/h",
+            "resultat": 20
           },
           "progression": 2
         },
@@ -230,7 +250,8 @@
             "bonne": "25 km/h",
             "d1": "30 km/h",
             "d2": "20 km/h",
-            "d3": "35 km/h"
+            "d3": "35 km/h",
+            "resultat": 25
           },
           "progression": 2
         },
@@ -241,7 +262,8 @@
             "bonne": "30 km/h",
             "d1": "35 km/h",
             "d2": "25 km/h",
-            "d3": "40 km/h"
+            "d3": "40 km/h",
+            "resultat": 30
           },
           "progression": 2
         },
@@ -252,7 +274,8 @@
             "bonne": "35 km/h",
             "d1": "40 km/h",
             "d2": "30 km/h",
-            "d3": "45 km/h"
+            "d3": "45 km/h",
+            "resultat": 35
           },
           "progression": 2
         },
@@ -263,7 +286,8 @@
             "bonne": "40 km/h",
             "d1": "45 km/h",
             "d2": "35 km/h",
-            "d3": "50 km/h"
+            "d3": "50 km/h",
+            "resultat": 40
           },
           "progression": 2
         },
@@ -274,7 +298,8 @@
             "bonne": "45 km/h",
             "d1": "50 km/h",
             "d2": "40 km/h",
-            "d3": "55 km/h"
+            "d3": "55 km/h",
+            "resultat": 45
           },
           "progression": 2
         },
@@ -285,7 +310,8 @@
             "bonne": "50 km/h",
             "d1": "55 km/h",
             "d2": "45 km/h",
-            "d3": "60 km/h"
+            "d3": "60 km/h",
+            "resultat": 50
           },
           "progression": 2
         },
@@ -296,7 +322,8 @@
             "bonne": "55 km/h",
             "d1": "60 km/h",
             "d2": "50 km/h",
-            "d3": "65 km/h"
+            "d3": "65 km/h",
+            "resultat": 55
           },
           "progression": 2
         },
@@ -307,7 +334,8 @@
             "bonne": "60 km/h",
             "d1": "65 km/h",
             "d2": "55 km/h",
-            "d3": "70 km/h"
+            "d3": "70 km/h",
+            "resultat": 60
           },
           "progression": 2
         },
@@ -318,7 +346,8 @@
             "bonne": "20 km/h",
             "d1": "25 km/h",
             "d2": "15 km/h",
-            "d3": "30 km/h"
+            "d3": "30 km/h",
+            "resultat": 20
           },
           "progression": 2
         },
@@ -329,7 +358,8 @@
             "bonne": "25 km/h",
             "d1": "30 km/h",
             "d2": "20 km/h",
-            "d3": "35 km/h"
+            "d3": "35 km/h",
+            "resultat": 25
           },
           "progression": 2
         },
@@ -340,7 +370,8 @@
             "bonne": "30 km/h",
             "d1": "35 km/h",
             "d2": "25 km/h",
-            "d3": "40 km/h"
+            "d3": "40 km/h",
+            "resultat": 30
           },
           "progression": 2
         },
@@ -351,7 +382,8 @@
             "bonne": "35 km/h",
             "d1": "40 km/h",
             "d2": "30 km/h",
-            "d3": "45 km/h"
+            "d3": "45 km/h",
+            "resultat": 35
           },
           "progression": 2
         },
@@ -362,7 +394,8 @@
             "bonne": "40 km/h",
             "d1": "45 km/h",
             "d2": "35 km/h",
-            "d3": "50 km/h"
+            "d3": "50 km/h",
+            "resultat": 40
           },
           "progression": 2
         },
@@ -373,7 +406,8 @@
             "bonne": "45 km/h",
             "d1": "50 km/h",
             "d2": "40 km/h",
-            "d3": "55 km/h"
+            "d3": "55 km/h",
+            "resultat": 45
           },
           "progression": 2
         },
@@ -384,7 +418,8 @@
             "bonne": "50 km/h",
             "d1": "55 km/h",
             "d2": "45 km/h",
-            "d3": "60 km/h"
+            "d3": "60 km/h",
+            "resultat": 50
           },
           "progression": 2
         },
@@ -395,7 +430,8 @@
             "bonne": "55 km/h",
             "d1": "60 km/h",
             "d2": "50 km/h",
-            "d3": "65 km/h"
+            "d3": "65 km/h",
+            "resultat": 55
           },
           "progression": 3
         },
@@ -406,7 +442,8 @@
             "bonne": "60 km/h",
             "d1": "65 km/h",
             "d2": "55 km/h",
-            "d3": "70 km/h"
+            "d3": "70 km/h",
+            "resultat": 60
           },
           "progression": 3
         },
@@ -417,7 +454,8 @@
             "bonne": "20 km/h",
             "d1": "25 km/h",
             "d2": "15 km/h",
-            "d3": "30 km/h"
+            "d3": "30 km/h",
+            "resultat": 20
           },
           "progression": 3
         },
@@ -428,7 +466,8 @@
             "bonne": "25 km/h",
             "d1": "30 km/h",
             "d2": "20 km/h",
-            "d3": "35 km/h"
+            "d3": "35 km/h",
+            "resultat": 25
           },
           "progression": 3
         },
@@ -439,7 +478,8 @@
             "bonne": "30 km/h",
             "d1": "35 km/h",
             "d2": "25 km/h",
-            "d3": "40 km/h"
+            "d3": "40 km/h",
+            "resultat": 30
           },
           "progression": 3
         },
@@ -450,7 +490,8 @@
             "bonne": "35 km/h",
             "d1": "40 km/h",
             "d2": "30 km/h",
-            "d3": "45 km/h"
+            "d3": "45 km/h",
+            "resultat": 35
           },
           "progression": 3
         },
@@ -461,7 +502,8 @@
             "bonne": "40 km/h",
             "d1": "45 km/h",
             "d2": "35 km/h",
-            "d3": "50 km/h"
+            "d3": "50 km/h",
+            "resultat": 40
           },
           "progression": 3
         },
@@ -472,7 +514,8 @@
             "bonne": "45 km/h",
             "d1": "50 km/h",
             "d2": "40 km/h",
-            "d3": "55 km/h"
+            "d3": "55 km/h",
+            "resultat": 45
           },
           "progression": 3
         },
@@ -483,7 +526,8 @@
             "bonne": "50 km/h",
             "d1": "55 km/h",
             "d2": "45 km/h",
-            "d3": "60 km/h"
+            "d3": "60 km/h",
+            "resultat": 50
           },
           "progression": 3
         },
@@ -494,7 +538,8 @@
             "bonne": "55 km/h",
             "d1": "60 km/h",
             "d2": "50 km/h",
-            "d3": "65 km/h"
+            "d3": "65 km/h",
+            "resultat": 55
           },
           "progression": 3
         },
@@ -505,15 +550,20 @@
             "bonne": "60 km/h",
             "d1": "65 km/h",
             "d2": "55 km/h",
-            "d3": "70 km/h"
+            "d3": "70 km/h",
+            "resultat": 60
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "distance / temps",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
     },
     {
       "id": "GQUOT-002",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Pourquoi une vitesse est-elle une grandeur quotient ?",
       "reponse": "Elle est obtenue en divisant une distance par une durée.",
       "propositions": [
@@ -522,11 +572,15 @@
         "Elle est obtenue en additionnant distance et durée.",
         "Elle ne dépend que de la distance."
       ],
-      "correction": "Une grandeur quotient compare deux grandeurs par une division."
+      "correction": "Une grandeur quotient compare deux grandeurs par une division.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "GQUOT-003",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -545,7 +599,10 @@
             "p1": "24 L",
             "p2": "10 L",
             "p3": "2 L",
-            "p4": "1,5 L"
+            "p4": "1,5 L",
+            "debit": 6,
+            "duree": 4,
+            "resultat_exploitable": 24
           }
         },
         {
@@ -556,7 +613,10 @@
             "p1": "40 L",
             "p2": "13 L",
             "p3": "3 L",
-            "p4": "1,6 L"
+            "p4": "1,6 L",
+            "debit": 8,
+            "duree": 5,
+            "resultat_exploitable": 40
           }
         },
         {
@@ -567,10 +627,16 @@
             "p1": "36 L",
             "p2": "15 L",
             "p3": "9 L",
-            "p4": "4 L"
+            "p4": "4 L",
+            "debit": 12,
+            "duree": 3,
+            "resultat_exploitable": 36
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "debit*duree",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

@@ -1,4 +1,10 @@
-# L’essentiel : Addition et soustraction de nombres relatifs
+# L'essentiel : Addition et soustraction de nombres relatifs
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+L’addition et la soustraction des relatifs prennent en compte les signes des nombres.
+:::
 
 Ajouter un nombre positif déplace vers la droite sur une droite graduée ; ajouter un nombre négatif déplace vers la gauche.
 

@@ -16,7 +16,7 @@ Ordonner les données, déterminer les rangs de $Q_1$, de la médiane et de $Q_3
 
 ## Vérifier
 
-On doit avoir minimum ≤ $Q_1$ ≤ médiane ≤ $Q_3$ ≤ maximum.
+On doit avoir minimum $\leq$ $Q_1$ $\leq$ médiane $\leq$ $Q_3$ $\leq$ maximum.
 
 ## À essayer
 
@@ -28,6 +28,6 @@ La boîte à moustaches permet surtout de comparer rapidement position et disper
 
 ## Pour vérifier tes découvertes
 
-**1. Lire les positions**
+1. **Lire les positions :**
 
 Avec 8 valeurs, le rang de $Q_1$ est 2 et celui de $Q_3$ est 6 : $Q_1=2$ et $Q_3=6$.

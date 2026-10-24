@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "CERC_RAYON_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Le cercle a pour centre O et A est un point du cercle. Comment appelle-t-on le segment [OA] ?",
       "reponse": "rayon",
       "propositions": [
@@ -16,11 +17,15 @@
         "id": "cercle",
         "construction": "rayon"
       },
-      "correction": "[OA] relie le centre O à un point A du cercle : c'est un rayon."
+      "correction": "[OA] relie le centre O à un point A du cercle : c'est un rayon.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "CERC_DIAM_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "A et B sont sur le cercle et [AB] passe par son centre O. Quel est le nom le plus précis de [AB] ?",
       "reponse": "diamètre",
       "propositions": [
@@ -31,13 +36,17 @@
       ],
       "illustration": {
         "id": "cercle",
-        "construction": "diametre_corde"
+        "construction": "diametre"
       },
-      "correction": "[AB] est une corde puisqu'il relie deux points du cercle. Comme il passe aussi par le centre O, c'est plus précisément un diamètre : tout diamètre est une corde, mais toute corde n'est pas un diamètre."
+      "correction": "[AB] est une corde puisqu'il relie deux points du cercle. Comme il passe aussi par le centre O, c'est plus précisément un diamètre : tout diamètre est une corde, mais toute corde n'est pas un diamètre.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "CERC_EGAL_001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -54,6 +63,8 @@
       "variantes": [
         {
           "parametres": {
+            "rayon": 3,
+            "resultat_exploitable": 3,
             "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 3 cm. Que vaut OB ?",
             "reponse": "3 cm",
             "correction": "OA et OB sont deux rayons du même cercle. Ils ont donc la même longueur : OB = 3 cm.",
@@ -65,6 +76,8 @@
         },
         {
           "parametres": {
+            "rayon": 5,
+            "resultat_exploitable": 5,
             "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 5 cm. Que vaut OB ?",
             "reponse": "5 cm",
             "correction": "Deux rayons d’un même cercle ont la même longueur : OB = OA = 5 cm.",
@@ -76,6 +89,8 @@
         },
         {
           "parametres": {
+            "rayon": 8,
+            "resultat_exploitable": 8,
             "enonce": "A et B appartiennent au même cercle de centre O. On sait que OA = 8 cm. Que vaut OB ?",
             "reponse": "8 cm",
             "correction": "Deux rayons d’un même cercle ont la même longueur : OB = OA = 8 cm.",
@@ -85,11 +100,15 @@
             "p4": "On ne peut pas le savoir"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "rayon",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "CERC_JUST_001",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "Sans mesurer la figure, pourquoi peut-on affirmer que OA = OB ?",
       "reponse": "Parce que OA et OB sont des rayons du même cercle",
       "propositions": [
@@ -102,11 +121,16 @@
         "id": "cercle",
         "construction": "rayons_egaux"
       },
-      "correction": "A et B sont sur le même cercle de centre O : OA et OB sont des rayons de ce cercle, donc ils ont la même longueur."
+      "correction": "Je vois : A et B sont sur le cercle de centre O. Or : tous les rayons d’un même cercle ont la même longueur. Donc : OA = OB.",
+      "categorie": "raisonnement",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
     },
     {
       "id": "CERC_CORDE_001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "A et B sont deux points du cercle. Le segment [AB] ne passe pas par le centre O. Comment appelle-t-on [AB] ?",
       "reponse": "Une corde",
       "propositions": [
@@ -119,11 +143,15 @@
         "id": "cercle",
         "construction": "corde"
       },
-      "correction": "Une corde est un segment reliant deux points du cercle. [AB] ne passe pas par O : ce n'est donc pas un diamètre. Un diamètre est une corde particulière qui passe par le centre."
+      "correction": "Une corde est un segment reliant deux points du cercle. [AB] ne passe pas par O : ce n'est donc pas un diamètre. Un diamètre est une corde particulière qui passe par le centre.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "CERC-VOCAB-TROU-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quel nom désigne un segment reliant deux points du cercle ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -145,11 +173,15 @@
       "illustration": {
         "id": "cercle",
         "construction": "corde"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "CERC-VOCAB-MASQUE-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quel nom désigne une corde passant par le centre du cercle ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -171,8 +203,548 @@
       "correction": "Un diamètre est une corde particulière passant par le centre.",
       "illustration": {
         "id": "cercle",
-        "construction": "diametre_corde"
-      }
+        "construction": "diametre"
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "CERCLE-DIAMETRE-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "rayon": 3,
+            "resultat_exploitable": 6,
+            "enonce": "Un cercle a pour rayon 3 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "3 cm",
+            "p3": "5 cm",
+            "p4": "9 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 3 = 6 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 4,
+            "resultat_exploitable": 8,
+            "enonce": "Un cercle a pour rayon 4 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "8 cm",
+            "p1": "8 cm",
+            "p2": "4 cm",
+            "p3": "6 cm",
+            "p4": "12 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 4 = 8 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 5,
+            "resultat_exploitable": 10,
+            "enonce": "Un cercle a pour rayon 5 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "10 cm",
+            "p1": "10 cm",
+            "p2": "5 cm",
+            "p3": "7 cm",
+            "p4": "15 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 5 = 10 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 6,
+            "resultat_exploitable": 12,
+            "enonce": "Un cercle a pour rayon 6 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "12 cm",
+            "p1": "12 cm",
+            "p2": "6 cm",
+            "p3": "8 cm",
+            "p4": "18 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 6 = 12 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 7,
+            "resultat_exploitable": 14,
+            "enonce": "Un cercle a pour rayon 7 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "14 cm",
+            "p1": "14 cm",
+            "p2": "7 cm",
+            "p3": "9 cm",
+            "p4": "21 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 7 = 14 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 8,
+            "resultat_exploitable": 16,
+            "enonce": "Un cercle a pour rayon 8 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "16 cm",
+            "p1": "16 cm",
+            "p2": "8 cm",
+            "p3": "10 cm",
+            "p4": "24 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 8 = 16 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 9,
+            "resultat_exploitable": 18,
+            "enonce": "Un cercle a pour rayon 9 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "18 cm",
+            "p1": "18 cm",
+            "p2": "9 cm",
+            "p3": "11 cm",
+            "p4": "27 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 9 = 18 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 10,
+            "resultat_exploitable": 20,
+            "enonce": "Un cercle a pour rayon 10 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "20 cm",
+            "p1": "20 cm",
+            "p2": "10 cm",
+            "p3": "12 cm",
+            "p4": "30 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 10 = 20 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 11,
+            "resultat_exploitable": 22,
+            "enonce": "Un cercle a pour rayon 11 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "22 cm",
+            "p1": "22 cm",
+            "p2": "11 cm",
+            "p3": "13 cm",
+            "p4": "33 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 11 = 22 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 12,
+            "resultat_exploitable": 24,
+            "enonce": "Un cercle a pour rayon 12 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "24 cm",
+            "p1": "24 cm",
+            "p2": "12 cm",
+            "p3": "14 cm",
+            "p4": "36 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 12 = 24 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 13,
+            "resultat_exploitable": 26,
+            "enonce": "Un cercle a pour rayon 13 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "26 cm",
+            "p1": "26 cm",
+            "p2": "13 cm",
+            "p3": "15 cm",
+            "p4": "39 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 13 = 26 cm."
+          }
+        },
+        {
+          "parametres": {
+            "rayon": 14,
+            "resultat_exploitable": 28,
+            "enonce": "Un cercle a pour rayon 14 cm. Quelle est la longueur de son diamètre ?",
+            "reponse": "28 cm",
+            "p1": "28 cm",
+            "p2": "14 cm",
+            "p3": "16 cm",
+            "p4": "42 cm",
+            "correction": "Un diamètre mesure deux rayons : 2 × 14 = 28 cm."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "cercle",
+        "construction": "diametre"
+      },
+      "enonce_exploitable": "2 * rayon",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "CERCLE-POINT-INTERIEUR",
+      "capacite": "identifier",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 3 cm. Le point M est à 2 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 2 cm est strictement inférieur au rayon 3 cm, mais non nul.",
+            "rayon": 3,
+            "distance_centre": 2
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 4 cm. Le point M est à 3 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 3 cm est strictement inférieur au rayon 4 cm, mais non nul.",
+            "rayon": 4,
+            "distance_centre": 3
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 5 cm. Le point M est à 4 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 4 cm est strictement inférieur au rayon 5 cm, mais non nul.",
+            "rayon": 5,
+            "distance_centre": 4
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 6 cm. Le point M est à 5 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 5 cm est strictement inférieur au rayon 6 cm, mais non nul.",
+            "rayon": 6,
+            "distance_centre": 5
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 7 cm. Le point M est à 6 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 6 cm est strictement inférieur au rayon 7 cm, mais non nul.",
+            "rayon": 7,
+            "distance_centre": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 8 cm. Le point M est à 7 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 7 cm est strictement inférieur au rayon 8 cm, mais non nul.",
+            "rayon": 8,
+            "distance_centre": 7
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 9 cm. Le point M est à 8 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 8 cm est strictement inférieur au rayon 9 cm, mais non nul.",
+            "rayon": 9,
+            "distance_centre": 8
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 10 cm. Le point M est à 9 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 9 cm est strictement inférieur au rayon 10 cm, mais non nul.",
+            "rayon": 10,
+            "distance_centre": 9
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 11 cm. Le point M est à 10 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 10 cm est strictement inférieur au rayon 11 cm, mais non nul.",
+            "rayon": 11,
+            "distance_centre": 10
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 12 cm. Le point M est à 11 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 11 cm est strictement inférieur au rayon 12 cm, mais non nul.",
+            "rayon": 12,
+            "distance_centre": 11
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 13 cm. Le point M est à 12 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 12 cm est strictement inférieur au rayon 13 cm, mais non nul.",
+            "rayon": 13,
+            "distance_centre": 12
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le cercle de centre O a un rayon de 14 cm. Le point M est à 13 cm de O. Où se trouve M ?",
+            "reponse": "Dans le disque, sans être sur le cercle",
+            "p1": "Dans le disque, sans être sur le cercle",
+            "p2": "Sur le cercle",
+            "p3": "À l’extérieur du disque",
+            "p4": "Au centre du cercle",
+            "correction": "OM = 13 cm est strictement inférieur au rayon 14 cm, mais non nul.",
+            "rayon": 14,
+            "distance_centre": 13
+          }
+        }
+      ],
+      "illustration": {
+        "id": "cercle",
+        "construction": "rayon"
+      },
+      "enonce_exploitable": "as.numeric(distance_centre < rayon)",
+      "reponse_exploitable": 1,
+      "moteur": "R"
+    },
+    {
+      "id": "CERCLE-RAYON-DIAMETRE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "diametre": 6,
+            "resultat_exploitable": 3,
+            "enonce": "Le segment [AB] est un diamètre de 6 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "6 cm",
+            "p3": "9 cm",
+            "p4": "2 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 6 ÷ 2 = 3 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 8,
+            "resultat_exploitable": 4,
+            "enonce": "Le segment [AB] est un diamètre de 8 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "4 cm",
+            "p1": "4 cm",
+            "p2": "8 cm",
+            "p3": "12 cm",
+            "p4": "3 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 8 ÷ 2 = 4 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 10,
+            "resultat_exploitable": 5,
+            "enonce": "Le segment [AB] est un diamètre de 10 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "5 cm",
+            "p1": "5 cm",
+            "p2": "10 cm",
+            "p3": "15 cm",
+            "p4": "4 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 10 ÷ 2 = 5 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 12,
+            "resultat_exploitable": 6,
+            "enonce": "Le segment [AB] est un diamètre de 12 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "12 cm",
+            "p3": "18 cm",
+            "p4": "5 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 12 ÷ 2 = 6 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 14,
+            "resultat_exploitable": 7,
+            "enonce": "Le segment [AB] est un diamètre de 14 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "7 cm",
+            "p1": "7 cm",
+            "p2": "14 cm",
+            "p3": "21 cm",
+            "p4": "6 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 14 ÷ 2 = 7 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 16,
+            "resultat_exploitable": 8,
+            "enonce": "Le segment [AB] est un diamètre de 16 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "8 cm",
+            "p1": "8 cm",
+            "p2": "16 cm",
+            "p3": "24 cm",
+            "p4": "7 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 16 ÷ 2 = 8 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 18,
+            "resultat_exploitable": 9,
+            "enonce": "Le segment [AB] est un diamètre de 18 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "9 cm",
+            "p1": "9 cm",
+            "p2": "18 cm",
+            "p3": "27 cm",
+            "p4": "8 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 18 ÷ 2 = 9 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 20,
+            "resultat_exploitable": 10,
+            "enonce": "Le segment [AB] est un diamètre de 20 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "10 cm",
+            "p1": "10 cm",
+            "p2": "20 cm",
+            "p3": "30 cm",
+            "p4": "9 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 20 ÷ 2 = 10 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 22,
+            "resultat_exploitable": 11,
+            "enonce": "Le segment [AB] est un diamètre de 22 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "11 cm",
+            "p1": "11 cm",
+            "p2": "22 cm",
+            "p3": "33 cm",
+            "p4": "10 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 22 ÷ 2 = 11 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 24,
+            "resultat_exploitable": 12,
+            "enonce": "Le segment [AB] est un diamètre de 24 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "12 cm",
+            "p1": "12 cm",
+            "p2": "24 cm",
+            "p3": "36 cm",
+            "p4": "11 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 24 ÷ 2 = 12 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 26,
+            "resultat_exploitable": 13,
+            "enonce": "Le segment [AB] est un diamètre de 26 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "13 cm",
+            "p1": "13 cm",
+            "p2": "26 cm",
+            "p3": "39 cm",
+            "p4": "12 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 26 ÷ 2 = 13 cm."
+          }
+        },
+        {
+          "parametres": {
+            "diametre": 28,
+            "resultat_exploitable": 14,
+            "enonce": "Le segment [AB] est un diamètre de 28 cm d’un cercle de centre O. O appartient à [AB]. Quelle est la longueur OA ?",
+            "reponse": "14 cm",
+            "p1": "14 cm",
+            "p2": "28 cm",
+            "p3": "42 cm",
+            "p4": "13 cm",
+            "correction": "Le centre est le milieu du diamètre : OA = 28 ÷ 2 = 14 cm."
+          }
+        }
+      ],
+      "illustration": {
+        "id": "cercle",
+        "construction": "diametre"
+      },
+      "enonce_exploitable": "diametre / 2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

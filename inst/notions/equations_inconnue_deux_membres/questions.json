@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Résoudre [[equation]].",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -16,6 +17,11 @@
       "variantes": [
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 3,
+            "coefficient_droite": 3,
+            "constante_droite": 0,
+            "resultat_exploitable": 3,
             "equation": "2𝑥 + 3 = 3𝑥",
             "equation_reduite": "-𝑥 = -3",
             "solution": "3",
@@ -30,6 +36,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 4,
+            "constante_gauche": 2,
+            "coefficient_droite": 1,
+            "constante_droite": 5,
+            "resultat_exploitable": 1,
             "equation": "4𝑥 + 2 = 𝑥 + 5",
             "solution": "1",
             "distracteur_1": "7/3",
@@ -44,6 +55,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 5,
+            "constante_gauche": 0,
+            "coefficient_droite": 4,
+            "constante_droite": 2,
+            "resultat_exploitable": 2,
             "equation": "5𝑥 = 4𝑥 + 2",
             "solution": "2",
             "distracteur_1": "-2",
@@ -58,6 +74,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 3,
+            "constante_gauche": 5,
+            "coefficient_droite": 4,
+            "constante_droite": 1,
+            "resultat_exploitable": 4,
             "equation": "3𝑥 + 5 = 4𝑥 + 1",
             "solution": "4",
             "distracteur_1": "-6",
@@ -72,6 +93,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 3,
+            "constante_gauche": 5,
+            "coefficient_droite": 5,
+            "constante_droite": 3,
+            "resultat_exploitable": 1,
             "equation": "3𝑥 + 5 = 5𝑥 + 3",
             "solution": "1",
             "distracteur_1": "-4",
@@ -86,6 +112,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 6,
+            "constante_gauche": 0,
+            "coefficient_droite": 5,
+            "constante_droite": 5,
+            "resultat_exploitable": 5,
             "equation": "6𝑥 = 5𝑥 + 5",
             "solution": "5",
             "distracteur_1": "-5",
@@ -100,6 +131,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 4,
+            "constante_gauche": 5,
+            "coefficient_droite": 3,
+            "constante_droite": 6,
+            "resultat_exploitable": 1,
             "equation": "4𝑥 + 5 = 3𝑥 + 6",
             "solution": "1",
             "distracteur_1": "11",
@@ -114,6 +150,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 4,
+            "constante_gauche": 1,
+            "coefficient_droite": 3,
+            "constante_droite": 7,
+            "resultat_exploitable": 6,
             "equation": "4𝑥 + 1 = 3𝑥 + 7",
             "solution": "6",
             "distracteur_1": "8",
@@ -128,6 +169,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 5,
+            "constante_gauche": 1,
+            "coefficient_droite": 3,
+            "constante_droite": 7,
+            "resultat_exploitable": 3,
             "equation": "5𝑥 + 1 = 3𝑥 + 7",
             "solution": "3",
             "distracteur_1": "4",
@@ -142,6 +188,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 8,
+            "coefficient_droite": 4,
+            "constante_droite": 4,
+            "resultat_exploitable": 2,
             "equation": "2𝑥 + 8 = 4𝑥 + 4",
             "solution": "2",
             "distracteur_1": "-6",
@@ -156,6 +207,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 7,
+            "coefficient_droite": 1,
+            "constante_droite": 8,
+            "resultat_exploitable": 1,
             "equation": "2𝑥 + 7 = 𝑥 + 8",
             "solution": "1",
             "distracteur_1": "15",
@@ -170,6 +226,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 5,
+            "constante_gauche": 5,
+            "coefficient_droite": 4,
+            "constante_droite": 8,
+            "resultat_exploitable": 3,
             "equation": "5𝑥 + 5 = 4𝑥 + 8",
             "solution": "3",
             "distracteur_1": "13",
@@ -184,6 +245,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 4,
+            "constante_gauche": 0,
+            "coefficient_droite": 3,
+            "constante_droite": 9,
+            "resultat_exploitable": 9,
             "equation": "4𝑥 = 3𝑥 + 9",
             "solution": "9",
             "distracteur_1": "-9",
@@ -198,6 +264,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 1,
+            "constante_gauche": 10,
+            "coefficient_droite": 2,
+            "constante_droite": 2,
+            "resultat_exploitable": 8,
             "equation": "𝑥 + 10 = 2𝑥 + 2",
             "solution": "8",
             "distracteur_1": "-12",
@@ -212,6 +283,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 3,
+            "coefficient_droite": 1,
+            "constante_droite": 10,
+            "resultat_exploitable": 7,
             "equation": "2𝑥 + 3 = 𝑥 + 10",
             "solution": "7",
             "distracteur_1": "13",
@@ -226,6 +302,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 4,
+            "constante_gauche": 10,
+            "coefficient_droite": 5,
+            "constante_droite": 2,
+            "resultat_exploitable": 8,
             "equation": "4𝑥 + 10 = 5𝑥 + 2",
             "solution": "8",
             "distracteur_1": "-12",
@@ -240,6 +321,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 10,
+            "coefficient_droite": 6,
+            "constante_droite": 2,
+            "resultat_exploitable": 2,
             "equation": "2𝑥 + 10 = 6𝑥 + 2",
             "solution": "2",
             "distracteur_1": "-3",
@@ -254,6 +340,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 1,
+            "constante_gauche": -1,
+            "coefficient_droite": 4,
+            "constante_droite": -4,
+            "resultat_exploitable": 1,
             "equation": "𝑥 - 1 = 4𝑥 - 4",
             "solution": "1",
             "distracteur_1": "5/3",
@@ -268,6 +359,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -2,
+            "constante_gauche": -6,
+            "coefficient_droite": -4,
+            "constante_droite": -4,
+            "resultat_exploitable": 1,
             "equation": "-2𝑥 - 6 = -4𝑥 - 4",
             "solution": "1",
             "distracteur_1": "-5",
@@ -282,6 +378,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 6,
+            "constante_gauche": -6,
+            "coefficient_droite": 5,
+            "constante_droite": -5,
+            "resultat_exploitable": 1,
             "equation": "6𝑥 - 6 = 5𝑥 - 5",
             "solution": "1",
             "distracteur_1": "-11",
@@ -296,6 +397,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -6,
+            "constante_gauche": 0,
+            "coefficient_droite": -4,
+            "constante_droite": -4,
+            "resultat_exploitable": 2,
             "equation": "-6𝑥 = -4𝑥 - 4",
             "solution": "2",
             "distracteur_1": "-2",
@@ -310,6 +416,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -6,
+            "constante_gauche": 6,
+            "coefficient_droite": -3,
+            "constante_droite": 3,
+            "resultat_exploitable": 1,
             "equation": "-6𝑥 + 6 = -3𝑥 + 3",
             "solution": "1",
             "distracteur_1": "-3",
@@ -324,6 +435,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 6,
+            "constante_gauche": -5,
+            "coefficient_droite": 5,
+            "constante_droite": -2,
+            "resultat_exploitable": 3,
             "equation": "6𝑥 - 5 = 5𝑥 - 2",
             "solution": "3",
             "distracteur_1": "-7",
@@ -338,6 +454,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 6,
+            "constante_gauche": -4,
+            "coefficient_droite": 5,
+            "constante_droite": -1,
+            "resultat_exploitable": 3,
             "equation": "6𝑥 - 4 = 5𝑥 - 1",
             "solution": "3",
             "distracteur_1": "-5",
@@ -352,6 +473,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -3,
+            "constante_gauche": -1,
+            "coefficient_droite": -2,
+            "constante_droite": -7,
+            "resultat_exploitable": 6,
             "equation": "-3𝑥 - 1 = -2𝑥 - 7",
             "solution": "6",
             "distracteur_1": "8",
@@ -366,6 +492,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -5,
+            "constante_gauche": -7,
+            "coefficient_droite": -4,
+            "constante_droite": -8,
+            "resultat_exploitable": 1,
             "equation": "-5𝑥 - 7 = -4𝑥 - 8",
             "solution": "1",
             "distracteur_1": "15",
@@ -380,6 +511,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -3,
+            "constante_gauche": 8,
+            "coefficient_droite": -2,
+            "constante_droite": 2,
+            "resultat_exploitable": 6,
             "equation": "-3𝑥 + 8 = -2𝑥 + 2",
             "solution": "6",
             "distracteur_1": "-10",
@@ -394,6 +530,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -5,
+            "constante_gauche": 8,
+            "coefficient_droite": -4,
+            "constante_droite": 1,
+            "resultat_exploitable": 7,
             "equation": "-5𝑥 + 8 = -4𝑥 + 1",
             "solution": "7",
             "distracteur_1": "-9",
@@ -408,6 +549,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -3,
+            "constante_gauche": 6,
+            "coefficient_droite": -4,
+            "constante_droite": 9,
+            "resultat_exploitable": 3,
             "equation": "-3𝑥 + 6 = -4𝑥 + 9",
             "solution": "3",
             "distracteur_1": "15",
@@ -422,6 +568,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -3,
+            "constante_gauche": -9,
+            "coefficient_droite": -4,
+            "constante_droite": 0,
+            "resultat_exploitable": 9,
             "equation": "-3𝑥 - 9 = -4𝑥",
             "solution": "9",
             "distracteur_1": "-9",
@@ -436,6 +587,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -6,
+            "constante_gauche": 0,
+            "coefficient_droite": -3,
+            "constante_droite": -9,
+            "resultat_exploitable": 3,
             "equation": "-6𝑥 = -3𝑥 - 9",
             "solution": "3",
             "distracteur_1": "-3",
@@ -450,6 +606,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 3,
+            "constante_gauche": -10,
+            "coefficient_droite": 1,
+            "constante_droite": -2,
+            "resultat_exploitable": 4,
             "equation": "3𝑥 - 10 = 𝑥 - 2",
             "solution": "4",
             "distracteur_1": "-6",
@@ -464,6 +625,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 3,
+            "constante_gauche": -10,
+            "coefficient_droite": 1,
+            "constante_droite": 0,
+            "resultat_exploitable": 5,
             "equation": "3𝑥 - 10 = 𝑥",
             "solution": "5",
             "distracteur_1": "-5",
@@ -478,6 +644,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -2,
+            "constante_gauche": 0,
+            "coefficient_droite": -4,
+            "constante_droite": 10,
+            "resultat_exploitable": 5,
             "equation": "-2𝑥 = -4𝑥 + 10",
             "solution": "5",
             "distracteur_1": "-5",
@@ -492,6 +663,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -1,
+            "constante_gauche": 3,
+            "coefficient_droite": 3,
+            "constante_droite": 3,
+            "resultat_exploitable": 0,
             "equation": "-𝑥 + 3 = 3𝑥 + 3",
             "solution": "0",
             "distracteur_1": "-3/2",
@@ -506,6 +682,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -1,
+            "constante_gauche": -2,
+            "coefficient_droite": 1,
+            "constante_droite": -4,
+            "resultat_exploitable": 1,
             "equation": "-𝑥 - 2 = 𝑥 - 4",
             "solution": "1",
             "distracteur_1": "3",
@@ -520,6 +701,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 0,
+            "coefficient_droite": 4,
+            "constante_droite": 4,
+            "resultat_exploitable": -2,
             "equation": "2𝑥 = 4𝑥 + 4",
             "solution": "-2",
             "distracteur_1": "2",
@@ -534,6 +720,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -1,
+            "constante_gauche": 4,
+            "coefficient_droite": 3,
+            "constante_droite": 4,
+            "resultat_exploitable": 0,
             "equation": "-𝑥 + 4 = 3𝑥 + 4",
             "solution": "0",
             "distracteur_1": "-2",
@@ -548,6 +739,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -1,
+            "constante_gauche": -2,
+            "coefficient_droite": -4,
+            "constante_droite": 1,
+            "resultat_exploitable": 1,
             "equation": "-𝑥 - 2 = -4𝑥 + 1",
             "solution": "1",
             "distracteur_1": "-1/3",
@@ -562,6 +758,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 4,
+            "constante_gauche": 0,
+            "coefficient_droite": 5,
+            "constante_droite": 2,
+            "resultat_exploitable": -2,
             "equation": "4𝑥 = 5𝑥 + 2",
             "solution": "-2",
             "distracteur_1": "2",
@@ -576,6 +777,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": -1,
+            "coefficient_droite": 5,
+            "constante_droite": -1,
+            "resultat_exploitable": 0,
             "equation": "2𝑥 - 1 = 5𝑥 - 1",
             "solution": "0",
             "distracteur_1": "2/3",
@@ -590,6 +796,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -1,
+            "constante_gauche": -5,
+            "coefficient_droite": 5,
+            "constante_droite": -5,
+            "resultat_exploitable": 0,
             "equation": "-𝑥 - 5 = 5𝑥 - 5",
             "solution": "0",
             "distracteur_1": "5/3",
@@ -604,6 +815,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 5,
+            "constante_gauche": 7,
+            "coefficient_droite": -2,
+            "constante_droite": 7,
+            "resultat_exploitable": 0,
             "equation": "5𝑥 + 7 = -2𝑥 + 7",
             "solution": "0",
             "distracteur_1": "2",
@@ -618,6 +834,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 1,
+            "constante_gauche": 8,
+            "coefficient_droite": -1,
+            "constante_droite": -6,
+            "resultat_exploitable": -7,
             "equation": "𝑥 + 8 = -𝑥 - 6",
             "solution": "-7",
             "distracteur_1": "1",
@@ -632,6 +853,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -6,
+            "constante_gauche": -2,
+            "coefficient_droite": 4,
+            "constante_droite": 8,
+            "resultat_exploitable": -1,
             "equation": "-6𝑥 - 2 = 4𝑥 + 8",
             "solution": "-1",
             "distracteur_1": "-3/5",
@@ -646,6 +872,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 9,
+            "coefficient_droite": 1,
+            "constante_droite": 2,
+            "resultat_exploitable": -7,
             "equation": "2𝑥 + 9 = 𝑥 + 2",
             "solution": "-7",
             "distracteur_1": "11",
@@ -660,6 +891,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 2,
+            "constante_gauche": 7,
+            "coefficient_droite": 3,
+            "constante_droite": 9,
+            "resultat_exploitable": -2,
             "equation": "2𝑥 + 7 = 3𝑥 + 9",
             "solution": "-2",
             "distracteur_1": "-16",
@@ -674,6 +910,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 6,
+            "constante_gauche": 6,
+            "coefficient_droite": 1,
+            "constante_droite": -9,
+            "resultat_exploitable": -3,
             "equation": "6𝑥 + 6 = 𝑥 - 9",
             "solution": "-3",
             "distracteur_1": "-3/5",
@@ -688,6 +929,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": -2,
+            "constante_gauche": 9,
+            "coefficient_droite": 3,
+            "constante_droite": -6,
+            "resultat_exploitable": 3,
             "equation": "-2𝑥 + 9 = 3𝑥 - 6",
             "solution": "3",
             "distracteur_1": "-3/5",
@@ -702,6 +948,11 @@
         },
         {
           "parametres": {
+            "coefficient_gauche": 1,
+            "constante_gauche": -10,
+            "coefficient_droite": 6,
+            "constante_droite": 0,
+            "resultat_exploitable": -2,
             "equation": "𝑥 - 10 = 6𝑥",
             "solution": "-2",
             "distracteur_1": "2",
@@ -714,11 +965,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "(constante_droite - constante_gauche) / (coefficient_gauche - coefficient_droite)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-BOITE-REGROUPEMENT",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Dans [[equation]], quel terme doit remplacer □ pour écrire [[regroupement_trou]] ?",
       "presentation": {
         "type": "boite"
@@ -740,7 +995,11 @@
             "reponse": "𝑥",
             "d1": "4𝑥",
             "d2": "2",
-            "d3": "5"
+            "d3": "5",
+            "a": 4,
+            "b": 1,
+            "c": 2,
+            "d": 5
           }
         },
         {
@@ -751,7 +1010,11 @@
             "reponse": "5𝑥",
             "d1": "3𝑥",
             "d2": "5",
-            "d3": "3"
+            "d3": "3",
+            "a": 3,
+            "b": 5,
+            "c": 5,
+            "d": 3
           }
         },
         {
@@ -762,7 +1025,11 @@
             "reponse": "3𝑥",
             "d1": "5𝑥",
             "d2": "1",
-            "d3": "7"
+            "d3": "7",
+            "a": 5,
+            "b": 3,
+            "c": 1,
+            "d": 7
           }
         },
         {
@@ -773,7 +1040,11 @@
             "reponse": "4𝑥",
             "d1": "2𝑥",
             "d2": "8",
-            "d3": "4"
+            "d3": "4",
+            "a": 2,
+            "b": 4,
+            "c": 8,
+            "d": 4
           }
         },
         {
@@ -784,7 +1055,11 @@
             "reponse": "2𝑥",
             "d1": "𝑥",
             "d2": "10",
-            "d3": "2"
+            "d3": "2",
+            "a": 1,
+            "b": 2,
+            "c": 10,
+            "d": 2
           }
         },
         {
@@ -795,14 +1070,22 @@
             "reponse": "6𝑥",
             "d1": "2𝑥",
             "d2": "10",
-            "d3": "2"
+            "d3": "2",
+            "a": 2,
+            "b": 6,
+            "c": 10,
+            "d": 2
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a*x+c-(b*x+d)",
+      "reponse_exploitable": "(a-b)*x+(c-d)",
+      "moteur": "Ryacas"
     },
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-BOITE-CONSTANTE",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Dans [[equation]], quel nombre doit remplacer □ dans [[regroupement_trou]] ?",
       "presentation": {
         "type": "boite"
@@ -823,7 +1106,11 @@
             "regroupement": "2𝑥 - 3𝑥 = 0 - 3",
             "d1": "3",
             "d2": "2",
-            "d3": "-3"
+            "d3": "-3",
+            "a": 2,
+            "b": 3,
+            "c": 3,
+            "d": 0
           }
         },
         {
@@ -833,7 +1120,11 @@
             "regroupement": "5𝑥 - 4𝑥 = 2 - 0",
             "d1": "2",
             "d2": "4",
-            "d3": "5"
+            "d3": "5",
+            "a": 5,
+            "b": 4,
+            "c": 0,
+            "d": 2
           }
         },
         {
@@ -843,7 +1134,11 @@
             "regroupement": "6𝑥 - 5𝑥 = 5 - 0",
             "d1": "5",
             "d2": "6",
-            "d3": "-5"
+            "d3": "-5",
+            "a": 6,
+            "b": 5,
+            "c": 0,
+            "d": 5
           }
         },
         {
@@ -853,14 +1148,22 @@
             "regroupement": "4𝑥 - 3𝑥 = 9 - 0",
             "d1": "9",
             "d2": "3",
-            "d3": "4"
+            "d3": "4",
+            "a": 4,
+            "b": 3,
+            "c": 0,
+            "d": 9
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a*x+c-(b*x+d)",
+      "reponse_exploitable": "(a-b)*x+(c-d)",
+      "moteur": "Ryacas"
     },
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-BOITE-DIVISION",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Après regroupement, on obtient [[equation_reduite]]. Quel nombre doit remplacer □ dans [[division_trou]] ?",
       "presentation": {
         "type": "boite"
@@ -882,7 +1185,11 @@
             "diviseur": "3",
             "d1": "12",
             "d2": "4",
-            "d3": "-3"
+            "d3": "-3",
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 12
           }
         },
         {
@@ -893,7 +1200,11 @@
             "diviseur": "2",
             "d1": "6",
             "d2": "3",
-            "d3": "-2"
+            "d3": "-2",
+            "a": 2,
+            "b": 0,
+            "c": 0,
+            "d": 6
           }
         },
         {
@@ -904,7 +1215,11 @@
             "diviseur": "-2",
             "d1": "-4",
             "d2": "2",
-            "d3": "4"
+            "d3": "4",
+            "a": -2,
+            "b": 0,
+            "c": 0,
+            "d": -4
           }
         },
         {
@@ -915,7 +1230,11 @@
             "diviseur": "-4",
             "d1": "-8",
             "d2": "4",
-            "d3": "2"
+            "d3": "2",
+            "a": -4,
+            "b": 0,
+            "c": 0,
+            "d": -8
           }
         },
         {
@@ -926,7 +1245,11 @@
             "diviseur": "2",
             "d1": "1",
             "d2": "-2",
-            "d3": "4"
+            "d3": "4",
+            "a": 2,
+            "b": 0,
+            "c": 0,
+            "d": 2
           }
         },
         {
@@ -937,14 +1260,22 @@
             "diviseur": "-3",
             "d1": "3",
             "d2": "-1",
-            "d3": "1"
+            "d3": "1",
+            "a": -3,
+            "b": 0,
+            "c": 0,
+            "d": -3
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a*x+c-(b*x+d)",
+      "reponse_exploitable": "(a-b)*x+(c-d)",
+      "moteur": "Ryacas"
     },
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-TRANSFORMATION",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Pour résoudre [[equation]], quel regroupement est correct ?",
       "reponse": "[[correct]]",
       "propositions": [
@@ -962,7 +1293,11 @@
             "d1": "-2𝑥 + 3𝑥 = -6 + 9",
             "d2": "-2𝑥 - 3𝑥 = -6 + 9",
             "d3": "-2𝑥 + 3𝑥 = -6 - 9",
-            "reduction": "-5𝑥 = -15, donc 𝑥 = 3"
+            "reduction": "-5𝑥 = -15, donc 𝑥 = 3",
+            "a": -2,
+            "b": 3,
+            "c": 9,
+            "d": -6
           }
         },
         {
@@ -972,7 +1307,11 @@
             "d1": "4𝑥 + 𝑥 = 5 + 2",
             "d2": "4𝑥 - 𝑥 = 5 + 2",
             "d3": "4𝑥 + 𝑥 = 5 - 2",
-            "reduction": "3𝑥 = 3, donc 𝑥 = 1"
+            "reduction": "3𝑥 = 3, donc 𝑥 = 1",
+            "a": 4,
+            "b": 1,
+            "c": 2,
+            "d": 5
           }
         },
         {
@@ -982,7 +1321,11 @@
             "d1": "3𝑥 + 5𝑥 = 3 + 5",
             "d2": "3𝑥 - 5𝑥 = 3 + 5",
             "d3": "3𝑥 + 5𝑥 = 3 - 5",
-            "reduction": "-2𝑥 = -2, donc 𝑥 = 1"
+            "reduction": "-2𝑥 = -2, donc 𝑥 = 1",
+            "a": 3,
+            "b": 5,
+            "c": 5,
+            "d": 3
           }
         },
         {
@@ -992,7 +1335,11 @@
             "d1": "5𝑥 + 3𝑥 = 7 + 1",
             "d2": "5𝑥 - 3𝑥 = 7 + 1",
             "d3": "5𝑥 + 3𝑥 = 7 - 1",
-            "reduction": "2𝑥 = 6, donc 𝑥 = 3"
+            "reduction": "2𝑥 = 6, donc 𝑥 = 3",
+            "a": 5,
+            "b": 3,
+            "c": 1,
+            "d": 7
           }
         },
         {
@@ -1002,7 +1349,11 @@
             "d1": "2𝑥 + 4𝑥 = 4 + 8",
             "d2": "2𝑥 - 4𝑥 = 4 + 8",
             "d3": "2𝑥 + 4𝑥 = 4 - 8",
-            "reduction": "-2𝑥 = -4, donc 𝑥 = 2"
+            "reduction": "-2𝑥 = -4, donc 𝑥 = 2",
+            "a": 2,
+            "b": 4,
+            "c": 8,
+            "d": 4
           }
         },
         {
@@ -1012,14 +1363,22 @@
             "d1": "𝑥 + 2𝑥 = 2 + 10",
             "d2": "𝑥 - 2𝑥 = 2 + 10",
             "d3": "𝑥 + 2𝑥 = 2 - 10",
-            "reduction": "-𝑥 = -8, donc 𝑥 = 8"
+            "reduction": "-𝑥 = -8, donc 𝑥 = 8",
+            "a": 1,
+            "b": 2,
+            "c": 10,
+            "d": 2
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "a*x+c-(b*x+d)",
+      "reponse_exploitable": "(a-b)*x+(c-d)",
+      "moteur": "Ryacas"
     },
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-MOT-A-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Dans l'équation 4𝑥 + 2 = 𝑥 + 5, comment appelle-t-on 𝑥, dont on cherche la valeur ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -1037,11 +1396,15 @@
         "membre",
         "coefficient"
       ],
-      "correction": "𝑥 est l'inconnue : c'est la quantité dont on cherche la valeur. Une solution est une valeur de 𝑥 qui rend l'égalité vraie."
+      "correction": "𝑥 est l'inconnue : c'est la quantité dont on cherche la valeur. Une solution est une valeur de 𝑥 qui rend l'égalité vraie.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "EQ-INCONNUE-DEUX-MEMBRES-MOT-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Dans une équation, comment appelle-t-on chacune des deux expressions situées de part et d'autre du signe = ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -1060,7 +1423,10 @@
         "coefficient",
         "solution"
       ],
-      "correction": "Une équation comporte deux membres, séparés par le signe =. Un membre peut lui-même contenir plusieurs termes."
+      "correction": "Une équation comporte deux membres, séparés par le signe =. Un membre peut lui-même contenir plusieurs termes.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

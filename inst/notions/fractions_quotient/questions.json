@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FRAC-MIG-FRACTION-QUOTIENT-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Quel quotient est exactement représenté par [[fraction]] ?",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,11 @@
             "p2": "4 ÷ 3",
             "p3": "3 × 4",
             "p4": "4 − 3",
-            "correction": "La fraction 3/4 est l’écriture exacte du quotient 3 ÷ 4."
+            "correction": "La fraction 3/4 est l’écriture exacte du quotient 3 ÷ 4.",
+            "numerateur": 3,
+            "denominateur": 4,
+            "quotient_numerateur": 3,
+            "quotient_denominateur": 4
           },
           "progression": 1
         },
@@ -34,7 +39,11 @@
             "p2": "5 ÷ 2",
             "p3": "2 × 5",
             "p4": "5 − 2",
-            "correction": "La fraction 2/5 est l’écriture exacte du quotient 2 ÷ 5."
+            "correction": "La fraction 2/5 est l’écriture exacte du quotient 2 ÷ 5.",
+            "numerateur": 2,
+            "denominateur": 5,
+            "quotient_numerateur": 2,
+            "quotient_denominateur": 5
           },
           "progression": 1
         },
@@ -46,7 +55,11 @@
             "p2": "8 ÷ 5",
             "p3": "5 × 8",
             "p4": "8 − 5",
-            "correction": "La fraction 5/8 est l’écriture exacte du quotient 5 ÷ 8."
+            "correction": "La fraction 5/8 est l’écriture exacte du quotient 5 ÷ 8.",
+            "numerateur": 5,
+            "denominateur": 8,
+            "quotient_numerateur": 5,
+            "quotient_denominateur": 8
           },
           "progression": 1
         },
@@ -58,7 +71,11 @@
             "p2": "7 ÷ 4",
             "p3": "4 × 7",
             "p4": "7 − 4",
-            "correction": "La fraction 4/7 est l’écriture exacte du quotient 4 ÷ 7."
+            "correction": "La fraction 4/7 est l’écriture exacte du quotient 4 ÷ 7.",
+            "numerateur": 4,
+            "denominateur": 7,
+            "quotient_numerateur": 4,
+            "quotient_denominateur": 7
           },
           "progression": 1
         },
@@ -70,7 +87,11 @@
             "p2": "10 ÷ 7",
             "p3": "7 × 10",
             "p4": "10 − 7",
-            "correction": "La fraction 7/10 est l’écriture exacte du quotient 7 ÷ 10."
+            "correction": "La fraction 7/10 est l’écriture exacte du quotient 7 ÷ 10.",
+            "numerateur": 7,
+            "denominateur": 10,
+            "quotient_numerateur": 7,
+            "quotient_denominateur": 10
           },
           "progression": 1
         },
@@ -82,15 +103,23 @@
             "p2": "6 ÷ 5",
             "p3": "5 × 6",
             "p4": "6 − 5",
-            "correction": "La fraction 5/6 est l’écriture exacte du quotient 5 ÷ 6."
+            "correction": "La fraction 5/6 est l’écriture exacte du quotient 5 ÷ 6.",
+            "numerateur": 5,
+            "denominateur": 6,
+            "quotient_numerateur": 5,
+            "quotient_denominateur": 6
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur / denominateur",
+      "reponse_exploitable": "quotient_numerateur / quotient_denominateur",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRAC-VOCAB-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on le résultat exact d’une division ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -108,11 +137,15 @@
         "diviseur",
         "dividende"
       ],
-      "correction": "Le quotient est le résultat de la division ; le dividende est le nombre divisé et le diviseur celui par lequel on divise."
+      "correction": "Le quotient est le résultat de la division ; le dividende est le nombre divisé et le diviseur celui par lequel on divise.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "FRAC-QUOTIENT-PARTAGE-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "On partage équitablement \\([[litres]]\\) litres de jus entre \\([[personnes]]\\) personnes. Quelle quantité exacte reçoit chaque personne ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -131,7 +164,10 @@
             "d1": "4/3 L",
             "d2": "1/4 L",
             "d3": "3/7 L",
-            "correction": "Le partage correspond à la division 3 ÷ 4, soit exactement 3/4 de litre par personne."
+            "correction": "Le partage correspond à la division 3 ÷ 4, soit exactement 3/4 de litre par personne.",
+            "litres_exploitable": "3",
+            "personnes_exploitable": "4",
+            "resultat_exploitable": "3/4"
           },
           "progression": 1
         },
@@ -143,7 +179,10 @@
             "d1": "5/2 L",
             "d2": "1/5 L",
             "d3": "2/7 L",
-            "correction": "Le partage correspond à la division 2 ÷ 5, soit exactement 2/5 de litre par personne."
+            "correction": "Le partage correspond à la division 2 ÷ 5, soit exactement 2/5 de litre par personne.",
+            "litres_exploitable": "2",
+            "personnes_exploitable": "5",
+            "resultat_exploitable": "2/5"
           },
           "progression": 1
         },
@@ -155,7 +194,10 @@
             "d1": "8/5 L",
             "d2": "1/8 L",
             "d3": "5/13 L",
-            "correction": "Le partage correspond à la division 5 ÷ 8, soit exactement 5/8 de litre par personne."
+            "correction": "Le partage correspond à la division 5 ÷ 8, soit exactement 5/8 de litre par personne.",
+            "litres_exploitable": "5",
+            "personnes_exploitable": "8",
+            "resultat_exploitable": "5/8"
           },
           "progression": 1
         },
@@ -167,7 +209,10 @@
             "d1": "7/4 L",
             "d2": "1/7 L",
             "d3": "4/11 L",
-            "correction": "Le partage correspond à la division 4 ÷ 7, soit exactement 4/7 de litre par personne."
+            "correction": "Le partage correspond à la division 4 ÷ 7, soit exactement 4/7 de litre par personne.",
+            "litres_exploitable": "4",
+            "personnes_exploitable": "7",
+            "resultat_exploitable": "4/7"
           },
           "progression": 1
         },
@@ -179,7 +224,10 @@
             "d1": "6/5 L",
             "d2": "1/6 L",
             "d3": "5/11 L",
-            "correction": "Le partage correspond à la division 5 ÷ 6, soit exactement 5/6 de litre par personne."
+            "correction": "Le partage correspond à la division 5 ÷ 6, soit exactement 5/6 de litre par personne.",
+            "litres_exploitable": "5",
+            "personnes_exploitable": "6",
+            "resultat_exploitable": "5/6"
           },
           "progression": 2
         },
@@ -191,7 +239,10 @@
             "d1": "9/7 L",
             "d2": "1/9 L",
             "d3": "7/16 L",
-            "correction": "Le partage correspond à la division 7 ÷ 9, soit exactement 7/9 de litre par personne."
+            "correction": "Le partage correspond à la division 7 ÷ 9, soit exactement 7/9 de litre par personne.",
+            "litres_exploitable": "7",
+            "personnes_exploitable": "9",
+            "resultat_exploitable": "7/9"
           },
           "progression": 2
         },
@@ -203,7 +254,10 @@
             "d1": "8/3 L",
             "d2": "1/8 L",
             "d3": "3/11 L",
-            "correction": "Le partage correspond à la division 3 ÷ 8, soit exactement 3/8 de litre par personne."
+            "correction": "Le partage correspond à la division 3 ÷ 8, soit exactement 3/8 de litre par personne.",
+            "litres_exploitable": "3",
+            "personnes_exploitable": "8",
+            "resultat_exploitable": "3/8"
           },
           "progression": 2
         },
@@ -215,7 +269,10 @@
             "d1": "10/7 L",
             "d2": "1/10 L",
             "d3": "7/17 L",
-            "correction": "Le partage correspond à la division 7 ÷ 10, soit exactement 7/10 de litre par personne."
+            "correction": "Le partage correspond à la division 7 ÷ 10, soit exactement 7/10 de litre par personne.",
+            "litres_exploitable": "7",
+            "personnes_exploitable": "10",
+            "resultat_exploitable": "7/10"
           },
           "progression": 2
         },
@@ -227,7 +284,10 @@
             "d1": "9/4 L",
             "d2": "1/9 L",
             "d3": "4/13 L",
-            "correction": "Le partage correspond à la division 4 ÷ 9, soit exactement 4/9 de litre par personne."
+            "correction": "Le partage correspond à la division 4 ÷ 9, soit exactement 4/9 de litre par personne.",
+            "litres_exploitable": "4",
+            "personnes_exploitable": "9",
+            "resultat_exploitable": "4/9"
           },
           "progression": 3
         },
@@ -239,7 +299,10 @@
             "d1": "12/5 L",
             "d2": "1/12 L",
             "d3": "5/17 L",
-            "correction": "Le partage correspond à la division 5 ÷ 12, soit exactement 5/12 de litre par personne."
+            "correction": "Le partage correspond à la division 5 ÷ 12, soit exactement 5/12 de litre par personne.",
+            "litres_exploitable": "5",
+            "personnes_exploitable": "12",
+            "resultat_exploitable": "5/12"
           },
           "progression": 3
         },
@@ -251,7 +314,10 @@
             "d1": "12/7 L",
             "d2": "1/12 L",
             "d3": "7/19 L",
-            "correction": "Le partage correspond à la division 7 ÷ 12, soit exactement 7/12 de litre par personne."
+            "correction": "Le partage correspond à la division 7 ÷ 12, soit exactement 7/12 de litre par personne.",
+            "litres_exploitable": "7",
+            "personnes_exploitable": "12",
+            "resultat_exploitable": "7/12"
           },
           "progression": 3
         },
@@ -263,15 +329,22 @@
             "d1": "15/8 L",
             "d2": "1/15 L",
             "d3": "8/23 L",
-            "correction": "Le partage correspond à la division 8 ÷ 15, soit exactement 8/15 de litre par personne."
+            "correction": "Le partage correspond à la division 8 ÷ 15, soit exactement 8/15 de litre par personne.",
+            "litres_exploitable": "8",
+            "personnes_exploitable": "15",
+            "resultat_exploitable": "8/15"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "litres_exploitable / personnes_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-VAR-QUOT-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Quelle fraction représente exactement [[a]] ÷ [[b]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -290,7 +363,10 @@
             "d1": "\\(\\frac{2}{1}\\)",
             "d2": "\\(\\frac{1}{3}\\)",
             "d3": "\\(\\frac{2}{3}\\)",
-            "correction": "Le quotient 1 ÷ 2 s’écrit exactement 1/2."
+            "correction": "Le quotient 1 ÷ 2 s’écrit exactement 1/2.",
+            "numerateur_exploitable": "1",
+            "denominateur_exploitable": "2",
+            "resultat_exploitable": "1/2"
           },
           "progression": 1
         },
@@ -302,7 +378,10 @@
             "d1": "\\(\\frac{3}{2}\\)",
             "d2": "\\(\\frac{2}{5}\\)",
             "d3": "\\(\\frac{3}{5}\\)",
-            "correction": "Le quotient 2 ÷ 3 s’écrit exactement 2/3."
+            "correction": "Le quotient 2 ÷ 3 s’écrit exactement 2/3.",
+            "numerateur_exploitable": "2",
+            "denominateur_exploitable": "3",
+            "resultat_exploitable": "2/3"
           },
           "progression": 1
         },
@@ -314,7 +393,10 @@
             "d1": "\\(\\frac{4}{3}\\)",
             "d2": "\\(\\frac{3}{7}\\)",
             "d3": "\\(\\frac{4}{7}\\)",
-            "correction": "Le quotient 3 ÷ 4 s’écrit exactement 3/4."
+            "correction": "Le quotient 3 ÷ 4 s’écrit exactement 3/4.",
+            "numerateur_exploitable": "3",
+            "denominateur_exploitable": "4",
+            "resultat_exploitable": "3/4"
           },
           "progression": 1
         },
@@ -326,7 +408,10 @@
             "d1": "\\(\\frac{5}{4}\\)",
             "d2": "\\(\\frac{4}{9}\\)",
             "d3": "\\(\\frac{5}{9}\\)",
-            "correction": "Le quotient 4 ÷ 5 s’écrit exactement 4/5."
+            "correction": "Le quotient 4 ÷ 5 s’écrit exactement 4/5.",
+            "numerateur_exploitable": "4",
+            "denominateur_exploitable": "5",
+            "resultat_exploitable": "4/5"
           },
           "progression": 1
         },
@@ -338,7 +423,10 @@
             "d1": "\\(\\frac{8}{5}\\)",
             "d2": "\\(\\frac{5}{13}\\)",
             "d3": "\\(\\frac{8}{13}\\)",
-            "correction": "Le quotient 5 ÷ 8 s’écrit exactement 5/8."
+            "correction": "Le quotient 5 ÷ 8 s’écrit exactement 5/8.",
+            "numerateur_exploitable": "5",
+            "denominateur_exploitable": "8",
+            "resultat_exploitable": "5/8"
           },
           "progression": 1
         },
@@ -350,7 +438,10 @@
             "d1": "\\(\\frac{10}{7}\\)",
             "d2": "\\(\\frac{7}{17}\\)",
             "d3": "\\(\\frac{10}{17}\\)",
-            "correction": "Le quotient 7 ÷ 10 s’écrit exactement 7/10."
+            "correction": "Le quotient 7 ÷ 10 s’écrit exactement 7/10.",
+            "numerateur_exploitable": "7",
+            "denominateur_exploitable": "10",
+            "resultat_exploitable": "7/10"
           },
           "progression": 1
         },
@@ -362,7 +453,10 @@
             "d1": "\\(\\frac{7}{3}\\)",
             "d2": "\\(\\frac{3}{10}\\)",
             "d3": "\\(\\frac{7}{10}\\)",
-            "correction": "Le quotient 3 ÷ 7 s’écrit exactement 3/7."
+            "correction": "Le quotient 3 ÷ 7 s’écrit exactement 3/7.",
+            "numerateur_exploitable": "3",
+            "denominateur_exploitable": "7",
+            "resultat_exploitable": "3/7"
           },
           "progression": 2
         },
@@ -374,7 +468,10 @@
             "d1": "\\(\\frac{12}{5}\\)",
             "d2": "\\(\\frac{5}{17}\\)",
             "d3": "\\(\\frac{12}{17}\\)",
-            "correction": "Le quotient 5 ÷ 12 s’écrit exactement 5/12."
+            "correction": "Le quotient 5 ÷ 12 s’écrit exactement 5/12.",
+            "numerateur_exploitable": "5",
+            "denominateur_exploitable": "12",
+            "resultat_exploitable": "5/12"
           },
           "progression": 2
         },
@@ -386,7 +483,10 @@
             "d1": "\\(\\frac{9}{7}\\)",
             "d2": "\\(\\frac{7}{16}\\)",
             "d3": "\\(\\frac{9}{16}\\)",
-            "correction": "Le quotient 7 ÷ 9 s’écrit exactement 7/9."
+            "correction": "Le quotient 7 ÷ 9 s’écrit exactement 7/9.",
+            "numerateur_exploitable": "7",
+            "denominateur_exploitable": "9",
+            "resultat_exploitable": "7/9"
           },
           "progression": 2
         },
@@ -398,7 +498,10 @@
             "d1": "\\(\\frac{15}{8}\\)",
             "d2": "\\(\\frac{8}{23}\\)",
             "d3": "\\(\\frac{15}{23}\\)",
-            "correction": "Le quotient 8 ÷ 15 s’écrit exactement 8/15."
+            "correction": "Le quotient 8 ÷ 15 s’écrit exactement 8/15.",
+            "numerateur_exploitable": "8",
+            "denominateur_exploitable": "15",
+            "resultat_exploitable": "8/15"
           },
           "progression": 2
         },
@@ -410,7 +513,10 @@
             "d1": "\\(\\frac{14}{11}\\)",
             "d2": "\\(\\frac{11}{25}\\)",
             "d3": "\\(\\frac{14}{25}\\)",
-            "correction": "Le quotient 11 ÷ 14 s’écrit exactement 11/14."
+            "correction": "Le quotient 11 ÷ 14 s’écrit exactement 11/14.",
+            "numerateur_exploitable": "11",
+            "denominateur_exploitable": "14",
+            "resultat_exploitable": "11/14"
           },
           "progression": 2
         },
@@ -422,7 +528,10 @@
             "d1": "\\(\\frac{20}{13}\\)",
             "d2": "\\(\\frac{13}{33}\\)",
             "d3": "\\(\\frac{20}{33}\\)",
-            "correction": "Le quotient 13 ÷ 20 s’écrit exactement 13/20."
+            "correction": "Le quotient 13 ÷ 20 s’écrit exactement 13/20.",
+            "numerateur_exploitable": "13",
+            "denominateur_exploitable": "20",
+            "resultat_exploitable": "13/20"
           },
           "progression": 2
         },
@@ -434,7 +543,10 @@
             "d1": "\\(\\frac{16}{7}\\)",
             "d2": "\\(\\frac{7}{23}\\)",
             "d3": "\\(\\frac{16}{23}\\)",
-            "correction": "Le quotient 7 ÷ 16 s’écrit exactement 7/16."
+            "correction": "Le quotient 7 ÷ 16 s’écrit exactement 7/16.",
+            "numerateur_exploitable": "7",
+            "denominateur_exploitable": "16",
+            "resultat_exploitable": "7/16"
           },
           "progression": 3
         },
@@ -446,7 +558,10 @@
             "d1": "\\(\\frac{22}{9}\\)",
             "d2": "\\(\\frac{9}{31}\\)",
             "d3": "\\(\\frac{22}{31}\\)",
-            "correction": "Le quotient 9 ÷ 22 s’écrit exactement 9/22."
+            "correction": "Le quotient 9 ÷ 22 s’écrit exactement 9/22.",
+            "numerateur_exploitable": "9",
+            "denominateur_exploitable": "22",
+            "resultat_exploitable": "9/22"
           },
           "progression": 3
         },
@@ -458,7 +573,10 @@
             "d1": "\\(\\frac{25}{11}\\)",
             "d2": "\\(\\frac{11}{36}\\)",
             "d3": "\\(\\frac{25}{36}\\)",
-            "correction": "Le quotient 11 ÷ 25 s’écrit exactement 11/25."
+            "correction": "Le quotient 11 ÷ 25 s’écrit exactement 11/25.",
+            "numerateur_exploitable": "11",
+            "denominateur_exploitable": "25",
+            "resultat_exploitable": "11/25"
           },
           "progression": 3
         },
@@ -470,7 +588,10 @@
             "d1": "\\(\\frac{28}{13}\\)",
             "d2": "\\(\\frac{13}{41}\\)",
             "d3": "\\(\\frac{28}{41}\\)",
-            "correction": "Le quotient 13 ÷ 28 s’écrit exactement 13/28."
+            "correction": "Le quotient 13 ÷ 28 s’écrit exactement 13/28.",
+            "numerateur_exploitable": "13",
+            "denominateur_exploitable": "28",
+            "resultat_exploitable": "13/28"
           },
           "progression": 3
         },
@@ -482,7 +603,10 @@
             "d1": "\\(\\frac{30}{17}\\)",
             "d2": "\\(\\frac{17}{47}\\)",
             "d3": "\\(\\frac{30}{47}\\)",
-            "correction": "Le quotient 17 ÷ 30 s’écrit exactement 17/30."
+            "correction": "Le quotient 17 ÷ 30 s’écrit exactement 17/30.",
+            "numerateur_exploitable": "17",
+            "denominateur_exploitable": "30",
+            "resultat_exploitable": "17/30"
           },
           "progression": 3
         },
@@ -494,15 +618,22 @@
             "d1": "\\(\\frac{32}{19}\\)",
             "d2": "\\(\\frac{19}{51}\\)",
             "d3": "\\(\\frac{32}{51}\\)",
-            "correction": "Le quotient 19 ÷ 32 s’écrit exactement 19/32."
+            "correction": "Le quotient 19 ÷ 32 s’écrit exactement 19/32.",
+            "numerateur_exploitable": "19",
+            "denominateur_exploitable": "32",
+            "resultat_exploitable": "19/32"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur_exploitable / denominateur_exploitable",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FRA-QUOT-REPRESENTATION-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -528,7 +659,11 @@
             "p3": "3 × 4",
             "p4": "4 − 3",
             "ill_fraction": "3/4",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 3,
+            "denominateur": 4,
+            "quotient_numerateur": 3,
+            "quotient_denominateur": 4
           },
           "progression": 1
         },
@@ -542,7 +677,11 @@
             "p3": "2 × 5",
             "p4": "5 − 2",
             "ill_fraction": "2/5",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 2,
+            "denominateur": 5,
+            "quotient_numerateur": 2,
+            "quotient_denominateur": 5
           },
           "progression": 1
         },
@@ -556,7 +695,11 @@
             "p3": "5 × 8",
             "p4": "8 − 5",
             "ill_fraction": "5/8",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 5,
+            "denominateur": 8,
+            "quotient_numerateur": 5,
+            "quotient_denominateur": 8
           },
           "progression": 1
         },
@@ -570,7 +713,11 @@
             "p3": "4 × 7",
             "p4": "7 − 4",
             "ill_fraction": "4/7",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 4,
+            "denominateur": 7,
+            "quotient_numerateur": 4,
+            "quotient_denominateur": 7
           },
           "progression": 1
         },
@@ -584,7 +731,11 @@
             "p3": "7 × 10",
             "p4": "10 − 7",
             "ill_fraction": "7/10",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 7,
+            "denominateur": 10,
+            "quotient_numerateur": 7,
+            "quotient_denominateur": 10
           },
           "progression": 1
         },
@@ -598,15 +749,23 @@
             "p3": "5 × 6",
             "p4": "6 − 5",
             "ill_fraction": "5/6",
-            "ill_etiquette": "A"
+            "ill_etiquette": "A",
+            "numerateur": 5,
+            "denominateur": 6,
+            "quotient_numerateur": 5,
+            "quotient_denominateur": 6
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur / denominateur",
+      "reponse_exploitable": "quotient_numerateur / quotient_denominateur",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRA-QUOT-BINAIRE-001",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -621,7 +780,12 @@
             "reponse": "Vrai",
             "correction": "Oui : 3/4 est l’écriture exacte de 3 ÷ 4.",
             "p1": "Vrai",
-            "p2": "Faux"
+            "p2": "Faux",
+            "numerateur": 3,
+            "denominateur": 4,
+            "quotient_numerateur": 3,
+            "quotient_denominateur": 4,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -631,7 +795,12 @@
             "reponse": "Vrai",
             "correction": "Oui : 2/5 est l’écriture exacte de 2 ÷ 5.",
             "p1": "Vrai",
-            "p2": "Faux"
+            "p2": "Faux",
+            "numerateur": 2,
+            "denominateur": 5,
+            "quotient_numerateur": 2,
+            "quotient_denominateur": 5,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -641,7 +810,12 @@
             "reponse": "Vrai",
             "correction": "Oui : 5/8 est l’écriture exacte de 5 ÷ 8.",
             "p1": "Vrai",
-            "p2": "Faux"
+            "p2": "Faux",
+            "numerateur": 5,
+            "denominateur": 8,
+            "quotient_numerateur": 5,
+            "quotient_denominateur": 8,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -651,7 +825,12 @@
             "reponse": "Vrai",
             "correction": "Oui : 4/7 est l’écriture exacte de 4 ÷ 7.",
             "p1": "Vrai",
-            "p2": "Faux"
+            "p2": "Faux",
+            "numerateur": 4,
+            "denominateur": 7,
+            "quotient_numerateur": 4,
+            "quotient_denominateur": 7,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -661,7 +840,12 @@
             "reponse": "Vrai",
             "correction": "Oui : 7/10 est l’écriture exacte de 7 ÷ 10.",
             "p1": "Vrai",
-            "p2": "Faux"
+            "p2": "Faux",
+            "numerateur": 7,
+            "denominateur": 10,
+            "quotient_numerateur": 7,
+            "quotient_denominateur": 10,
+            "resultat_exploitable": 1
           },
           "progression": 1
         },
@@ -671,11 +855,19 @@
             "reponse": "Vrai",
             "correction": "Oui : 5/6 est l’écriture exacte de 5 ÷ 6.",
             "p1": "Vrai",
-            "p2": "Faux"
+            "p2": "Faux",
+            "numerateur": 5,
+            "denominateur": 6,
+            "quotient_numerateur": 5,
+            "quotient_denominateur": 6,
+            "resultat_exploitable": 1
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "numerateur * quotient_denominateur == denominateur * quotient_numerateur",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     }
   ]
 }

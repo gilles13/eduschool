@@ -1,4 +1,4 @@
-# L’essentiel : Diviser des fractions
+# L'essentiel : Diviser des fractions
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

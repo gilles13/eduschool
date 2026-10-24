@@ -1,4 +1,10 @@
-# Synthèse : Conversions de contenances
+# L'essentiel : Synthèse : Conversions de contenances
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**La contenance mesure ce qu’un récipient** peut contenir, notamment en litres.
+:::
 
 - 1 L = 10 dL = 100 cL = 1 000 mL.
 - 1 mL = 1 cm³ ; 1 L = 1 dm³.

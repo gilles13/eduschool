@@ -1,5 +1,13 @@
 # Découvrir : Décomposer et recomposer des nombres
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Décomposer un nombre décimal**, c’est l’écrire comme une somme de valeurs correspondant à ses chiffres : unités, dixièmes, centièmes, etc.
+:::
+
+<!-- graphique: tableau_numeration nombre=304.27 rang=2 -->
+
 Décomposer un nombre, c’est montrer la valeur de chaque chiffre. On peut utiliser une somme ou des produits par 10, 100, 1/10, etc.
 
 ## Observons

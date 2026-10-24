@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-La fonction carré associe à tout nombre réel son carré : f(𝑥)=𝑥².
+**La fonction carré** associe à tout nombre réel son carré : f(𝑥)=𝑥².
 :::
 
 ## Principe

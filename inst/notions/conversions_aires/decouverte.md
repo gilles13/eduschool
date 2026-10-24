@@ -1,5 +1,11 @@
 # Découvrir : Conversions d’aires
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une **aire** mesure la surface d’une figure. Convertir une aire, c’est exprimer cette même surface dans une autre unité, par exemple en m² ou en cm².
+:::
+
 Une aire mesure une surface : elle s'exprime en **unités carrées**. Un carré de 1 m de côté contient 100 carrés de 1 dm de côté.
 
 Ainsi **1 m² = 100 dm² = 10 000 cm²**. Chaque saut d'unité voisine multiplie ou divise par **100**, et non par 10.
@@ -16,4 +22,4 @@ Ce tableau rappelle que chaque unité d'aire occupe **deux positions décimales*
 
 ## Pour vérifier tes découvertes
 
-**1. Une situation concrète.** 3 × 3 = 9 m² ; 1 m² = 10 000 cm², donc 90 000 cm².
+1. **Une situation concrète :** 3 × 3 = 9 m² ; 1 m² = 10 000 cm², donc 90 000 cm².

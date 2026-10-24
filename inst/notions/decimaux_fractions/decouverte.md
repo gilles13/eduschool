@@ -1,5 +1,13 @@
 # Découvrir : Fractions décimales
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une **fraction décimale** a pour dénominateur 10, 100, 1 000, etc. Elle permet d’écrire exactement un nombre décimal.
+:::
+
+<!-- graphique: tableau_numeration nombre=0.47 rang=2 -->
+
 Une fraction décimale possède un dénominateur égal à 10, 100, 1 000, etc. Elle exprime des dixièmes, centièmes ou millièmes.
 
 ## Observons

@@ -1,4 +1,10 @@
-# Synthèse : Conversions de durées
+# L'essentiel : Synthèse : Conversions de durées
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Une durée mesure un temps écoulé ; elle** peut s’exprimer en heures, minutes ou secondes.
+:::
 
 - 1 min = 60 s ; 1 h = 60 min = 3 600 s ; 1 j = 24 h.
 - Pour passer des heures aux minutes, multiplier par 60.

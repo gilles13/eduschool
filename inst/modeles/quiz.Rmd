@@ -32,6 +32,7 @@ tirages = eduschool:::.tirer_questions_quiz_edu(
 
 ```{r entete, echo=FALSE, results='asis'}
 source(system.file("modeles", "entete.R", package = "eduschool"), local = TRUE)
+source(system.file("modeles", "raisonnement.R", package = "eduschool"), local = TRUE)
 .entete_edu(params, knitr::is_html_output())
 ```
 
@@ -89,10 +90,15 @@ if (html) {
   function correctionLisible(texte, cible) {
     cible.replaceChildren();
     const lignes = String(texte || "")
-      .replace(/\\s*(Je vois|Je sais|J.en déduis|Je calcule)\\s*:/g, "\\n$1 :")
+      .replace(/\\s*(Je vois|Or|Donc)\\s*:/g, "\\n$1 :")
       .split(/\\n+|(?<=\\.)\\s+(?=[A-ZÀ-Ý])/u).map(x => x.trim()).filter(Boolean);
     lignes.forEach(ligne => {
       const p = document.createElement("p");
+      const etape = /^(Je vois|Or|Donc)\s*:/.exec(ligne);
+      if (etape) {
+        noeud("strong", etape[1] + " :", p);
+        ligne = ligne.slice(etape[0].length);
+      }
       const motifs = /(\\*\\*([^*]+)\\*\\*|\\[([^\\]]+)\\]\\(([^)]+)\\))/g;
       let precedent = 0, match;
       while ((match = motifs.exec(ligne)) !== null) {
@@ -136,9 +142,17 @@ if (html) {
     tirages[tour].forEach((q, i) => {
       const bloc = document.createElement("section");
       bloc.className = "edu-question";
+      if (q.portee === "famille") {
+        bloc.classList.add("edu-question-transversale");
+        noeud("strong", "Transversal", bloc).className = "edu-transversal-titre";
+      }
+      if (q.categorie === "raisonnement") {
+        bloc.classList.add("edu-question-raisonnement");
+        noeud("strong", "Raisonnement", bloc).className = "edu-raisonnement-titre";
+      }
       enonceLisible(q, i + 1, bloc);
       if (q.niveau) {
-        const niveau = noeud("p", "Niveau : " + q.niveau, bloc);
+        const niveau = noeud("p", "Niveau : " + q.niveau + (q.portee === "famille" ? " — transversal" : ""), bloc);
         niveau.className = "edu-niveau-question";
       }
       if (q.presentation && q.presentation.avertissement) {
@@ -192,6 +206,13 @@ if (html) {
       const correction = bloc.querySelector(".edu-correction");
       correctionLisible((juste ? "Bonne réponse." : "Réponse attendue : " + q.reponse + ".") +
         "\\n" + (q.correction || ""), correction);
+      if (q.portee === "famille" && q.liens_notions && q.demarche) {
+        const liens = noeud("div", "", correction);
+        liens.className = "edu-liens-notions";
+        noeud("strong", "Pour comprendre le raisonnement", liens);
+        noeud("p", "Notions reliées : " + q.liens_notions, liens);
+        noeud("p", "Ce que tu as appris à faire : " + q.demarche, liens);
+      }
       if (q.apart_humour) {
         const apart = noeud("p", q.apart_humour, correction);
         apart.className = "edu-humour";
@@ -267,9 +288,14 @@ if (!html) {
     q = tirages[[1L]][[i]]
     enonce = .math_unicode_pdf(q$enonce)
     enonce = gsub("\\. +", ".\n\n", enonce)
-    cat("\n## Question ", i, "\n\n", enonce, "\n\n", sep = "")
+    cat("\n## Question ", i, "\n\n",
+        if (identical(q$portee, "famille")) "**Transversal**\n\n" else "",
+        if (identical(q$categorie, "raisonnement")) "**Raisonnement**\n\n" else "",
+        enonce, "\n\n", sep = "")
     if (!is.null(q$niveau) && nzchar(q$niveau))
-      cat("*Niveau : ", q$niveau, "*\n\n", sep = "")
+      cat("*Niveau : ", q$niveau,
+          if (identical(q$portee, "famille")) " - transversal" else "",
+          "*\n\n", sep = "")
     figure = eduschool::illustrer_question(q)
     if (!is.null(figure)) {
       png = tempfile(fileext = ".png")
@@ -295,6 +321,9 @@ if (!html) {
     q = tirages[[1L]][[i]]
     cat("\n## Question ", i, "\n\n**Reponse :** ", .math_unicode_pdf(q$reponse),
         "\n\n**Correction :**\n\n", .math_unicode_pdf(.raisonnement_edu(q$correction)), "\n\n",
+        if (identical(q$portee, "famille") && !is.null(q$liens_notions) && !is.null(q$demarche))
+          paste0("**Pour comprendre le raisonnement**\n\n**Notions reli\u00e9es :** ", q$liens_notions,
+                 "\n\n**Ce que tu as appris \u00e0 faire :** ", q$demarche, "\n\n") else "",
         if (!is.null(q$apart_humour)) paste0("\n\n**😈 Le petit mot du concepteur**\n\n*", q$apart_humour, "*\n\n") else "", sep = "")
   }
 }

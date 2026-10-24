@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "ANALYSE-SYNTHESE-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "On veut résoudre [[equation]]. Dans l’analyse, on suppose que 𝑥 est solution. En élevant au carré puis en factorisant, on obtient [[factorisation]], donc les candidats [[candidat_positif]] et [[candidat_negatif]]. Que conclut la synthèse ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -27,7 +28,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 0,
+            "b": 1,
+            "solution": 1,
+            "rejet": -1
           }
         },
         {
@@ -43,7 +48,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": -1,
+            "b": 2,
+            "solution": 1,
+            "rejet": -2
           }
         },
         {
@@ -59,7 +68,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 1,
+            "b": 2,
+            "solution": 2,
+            "rejet": -1
           }
         },
         {
@@ -75,7 +88,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 0,
+            "b": 4,
+            "solution": 2,
+            "rejet": -2
           }
         },
         {
@@ -91,7 +108,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": -2,
+            "b": 3,
+            "solution": 1,
+            "rejet": -3
           }
         },
         {
@@ -107,7 +128,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 2,
+            "b": 3,
+            "solution": 3,
+            "rejet": -1
           }
         },
         {
@@ -123,7 +148,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": -1,
+            "b": 6,
+            "solution": 2,
+            "rejet": -3
           }
         },
         {
@@ -139,7 +168,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 1,
+            "b": 6,
+            "solution": 3,
+            "rejet": -2
           }
         },
         {
@@ -155,7 +188,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -4",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(16) = 4 ≠ -4"
+            "verification_rejet": "√(16) = 4 ≠ -4",
+            "a": -3,
+            "b": 4,
+            "solution": 1,
+            "rejet": -4
           }
         },
         {
@@ -171,7 +208,11 @@
             "d2": "𝑥 = 4 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(16) = 4",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 3,
+            "b": 4,
+            "solution": 4,
+            "rejet": -1
           }
         },
         {
@@ -187,7 +228,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": 0,
+            "b": 9,
+            "solution": 3,
+            "rejet": -3
           }
         },
         {
@@ -203,7 +248,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -4",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(16) = 4 ≠ -4"
+            "verification_rejet": "√(16) = 4 ≠ -4",
+            "a": -2,
+            "b": 8,
+            "solution": 2,
+            "rejet": -4
           }
         },
         {
@@ -219,7 +268,11 @@
             "d2": "𝑥 = 4 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(16) = 4",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 2,
+            "b": 8,
+            "solution": 4,
+            "rejet": -2
           }
         },
         {
@@ -235,7 +288,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -5",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(25) = 5 ≠ -5"
+            "verification_rejet": "√(25) = 5 ≠ -5",
+            "a": -4,
+            "b": 5,
+            "solution": 1,
+            "rejet": -5
           }
         },
         {
@@ -251,7 +308,11 @@
             "d2": "𝑥 = 5 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(25) = 5",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 4,
+            "b": 5,
+            "solution": 5,
+            "rejet": -1
           }
         },
         {
@@ -267,7 +328,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -4",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(16) = 4 ≠ -4"
+            "verification_rejet": "√(16) = 4 ≠ -4",
+            "a": -1,
+            "b": 12,
+            "solution": 3,
+            "rejet": -4
           }
         },
         {
@@ -283,7 +348,11 @@
             "d2": "𝑥 = 4 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(16) = 4",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": 1,
+            "b": 12,
+            "solution": 4,
+            "rejet": -3
           }
         },
         {
@@ -299,7 +368,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -6",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(36) = 6 ≠ -6"
+            "verification_rejet": "√(36) = 6 ≠ -6",
+            "a": -5,
+            "b": 6,
+            "solution": 1,
+            "rejet": -6
           }
         },
         {
@@ -315,7 +388,11 @@
             "d2": "𝑥 = 6 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(36) = 6",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 5,
+            "b": 6,
+            "solution": 6,
+            "rejet": -1
           }
         },
         {
@@ -331,7 +408,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -6",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(36) = 6 ≠ -6"
+            "verification_rejet": "√(36) = 6 ≠ -6",
+            "a": -4,
+            "b": 12,
+            "solution": 2,
+            "rejet": -6
           }
         },
         {
@@ -347,7 +428,11 @@
             "d2": "𝑥 = 6 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(36) = 6",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 4,
+            "b": 12,
+            "solution": 6,
+            "rejet": -2
           }
         },
         {
@@ -363,7 +448,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -7",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(49) = 7 ≠ -7"
+            "verification_rejet": "√(49) = 7 ≠ -7",
+            "a": -6,
+            "b": 7,
+            "solution": 1,
+            "rejet": -7
           }
         },
         {
@@ -379,7 +468,11 @@
             "d2": "𝑥 = 7 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(49) = 7",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 6,
+            "b": 7,
+            "solution": 7,
+            "rejet": -1
           }
         },
         {
@@ -395,7 +488,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -6",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(36) = 6 ≠ -6"
+            "verification_rejet": "√(36) = 6 ≠ -6",
+            "a": -3,
+            "b": 18,
+            "solution": 3,
+            "rejet": -6
           }
         },
         {
@@ -411,7 +508,11 @@
             "d2": "𝑥 = 6 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(36) = 6",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": 3,
+            "b": 18,
+            "solution": 6,
+            "rejet": -3
           }
         },
         {
@@ -427,7 +528,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -7",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(49) = 7 ≠ -7"
+            "verification_rejet": "√(49) = 7 ≠ -7",
+            "a": -5,
+            "b": 14,
+            "solution": 2,
+            "rejet": -7
           }
         },
         {
@@ -443,7 +548,11 @@
             "d2": "𝑥 = 7 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(49) = 7",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 5,
+            "b": 14,
+            "solution": 7,
+            "rejet": -2
           }
         },
         {
@@ -459,7 +568,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -8",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(64) = 8 ≠ -8"
+            "verification_rejet": "√(64) = 8 ≠ -8",
+            "a": -7,
+            "b": 8,
+            "solution": 1,
+            "rejet": -8
           }
         },
         {
@@ -475,7 +588,11 @@
             "d2": "𝑥 = 8 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(64) = 8",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 7,
+            "b": 8,
+            "solution": 8,
+            "rejet": -1
           }
         },
         {
@@ -491,7 +608,11 @@
             "d2": "𝑥 = 4 ou 𝑥 = -6",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(16) = 4",
-            "verification_rejet": "√(36) = 6 ≠ -6"
+            "verification_rejet": "√(36) = 6 ≠ -6",
+            "a": -2,
+            "b": 24,
+            "solution": 4,
+            "rejet": -6
           }
         },
         {
@@ -507,7 +628,11 @@
             "d2": "𝑥 = 6 ou 𝑥 = -4",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(36) = 6",
-            "verification_rejet": "√(16) = 4 ≠ -4"
+            "verification_rejet": "√(16) = 4 ≠ -4",
+            "a": 2,
+            "b": 24,
+            "solution": 6,
+            "rejet": -4
           }
         },
         {
@@ -523,7 +648,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -7",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(49) = 7 ≠ -7"
+            "verification_rejet": "√(49) = 7 ≠ -7",
+            "a": -4,
+            "b": 21,
+            "solution": 3,
+            "rejet": -7
           }
         },
         {
@@ -539,7 +668,11 @@
             "d2": "𝑥 = 7 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(49) = 7",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": 4,
+            "b": 21,
+            "solution": 7,
+            "rejet": -3
           }
         },
         {
@@ -555,7 +688,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -8",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(64) = 8 ≠ -8"
+            "verification_rejet": "√(64) = 8 ≠ -8",
+            "a": -6,
+            "b": 16,
+            "solution": 2,
+            "rejet": -8
           }
         },
         {
@@ -571,7 +708,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -9",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(81) = 9 ≠ -9"
+            "verification_rejet": "√(81) = 9 ≠ -9",
+            "a": -8,
+            "b": 9,
+            "solution": 1,
+            "rejet": -9
           }
         },
         {
@@ -587,7 +728,11 @@
             "d2": "𝑥 = 9 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(81) = 9",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 8,
+            "b": 9,
+            "solution": 9,
+            "rejet": -1
           }
         },
         {
@@ -603,7 +748,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -9",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(81) = 9 ≠ -9"
+            "verification_rejet": "√(81) = 9 ≠ -9",
+            "a": -7,
+            "b": 18,
+            "solution": 2,
+            "rejet": -9
           }
         },
         {
@@ -619,7 +768,11 @@
             "d2": "𝑥 = 9 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(81) = 9",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 7,
+            "b": 18,
+            "solution": 9,
+            "rejet": -2
           }
         },
         {
@@ -635,7 +788,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -10",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(100) = 10 ≠ -10"
+            "verification_rejet": "√(100) = 10 ≠ -10",
+            "a": -9,
+            "b": 10,
+            "solution": 1,
+            "rejet": -10
           }
         },
         {
@@ -651,7 +808,11 @@
             "d2": "𝑥 = 10 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(100) = 10",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 9,
+            "b": 10,
+            "solution": 10,
+            "rejet": -1
           }
         },
         {
@@ -667,7 +828,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -9",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(81) = 9 ≠ -9"
+            "verification_rejet": "√(81) = 9 ≠ -9",
+            "a": -6,
+            "b": 27,
+            "solution": 3,
+            "rejet": -9
           }
         },
         {
@@ -683,7 +848,11 @@
             "d2": "𝑥 = 9 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(81) = 9",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": 6,
+            "b": 27,
+            "solution": 9,
+            "rejet": -3
           }
         },
         {
@@ -699,7 +868,11 @@
             "d2": "𝑥 = 2 ou 𝑥 = -10",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(4) = 2",
-            "verification_rejet": "√(100) = 10 ≠ -10"
+            "verification_rejet": "√(100) = 10 ≠ -10",
+            "a": -8,
+            "b": 20,
+            "solution": 2,
+            "rejet": -10
           }
         },
         {
@@ -715,7 +888,11 @@
             "d2": "𝑥 = 10 ou 𝑥 = -2",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(100) = 10",
-            "verification_rejet": "√(4) = 2 ≠ -2"
+            "verification_rejet": "√(4) = 2 ≠ -2",
+            "a": 8,
+            "b": 20,
+            "solution": 10,
+            "rejet": -2
           }
         },
         {
@@ -731,7 +908,11 @@
             "d2": "𝑥 = 1 ou 𝑥 = -11",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(1) = 1",
-            "verification_rejet": "√(121) = 11 ≠ -11"
+            "verification_rejet": "√(121) = 11 ≠ -11",
+            "a": -10,
+            "b": 11,
+            "solution": 1,
+            "rejet": -11
           }
         },
         {
@@ -747,7 +928,11 @@
             "d2": "𝑥 = 11 ou 𝑥 = -1",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(121) = 11",
-            "verification_rejet": "√(1) = 1 ≠ -1"
+            "verification_rejet": "√(1) = 1 ≠ -1",
+            "a": 10,
+            "b": 11,
+            "solution": 11,
+            "rejet": -1
           }
         },
         {
@@ -763,7 +948,11 @@
             "d2": "𝑥 = 4 ou 𝑥 = -9",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(16) = 4",
-            "verification_rejet": "√(81) = 9 ≠ -9"
+            "verification_rejet": "√(81) = 9 ≠ -9",
+            "a": -5,
+            "b": 36,
+            "solution": 4,
+            "rejet": -9
           }
         },
         {
@@ -779,7 +968,11 @@
             "d2": "𝑥 = 9 ou 𝑥 = -4",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(81) = 9",
-            "verification_rejet": "√(16) = 4 ≠ -4"
+            "verification_rejet": "√(16) = 4 ≠ -4",
+            "a": 5,
+            "b": 36,
+            "solution": 9,
+            "rejet": -4
           }
         },
         {
@@ -795,7 +988,11 @@
             "d2": "𝑥 = 3 ou 𝑥 = -10",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(9) = 3",
-            "verification_rejet": "√(100) = 10 ≠ -10"
+            "verification_rejet": "√(100) = 10 ≠ -10",
+            "a": -7,
+            "b": 30,
+            "solution": 3,
+            "rejet": -10
           }
         },
         {
@@ -811,14 +1008,22 @@
             "d2": "𝑥 = 10 ou 𝑥 = -3",
             "d3": "Aucune de ces deux valeurs",
             "verification_bonne": "√(100) = 10",
-            "verification_rejet": "√(9) = 3 ≠ -3"
+            "verification_rejet": "√(9) = 3 ≠ -3",
+            "a": 7,
+            "b": 30,
+            "solution": 10,
+            "rejet": -3
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "as.numeric(sqrt(a * solution + b) == solution && sqrt(a * rejet + b) != rejet)",
+      "reponse_exploitable": 1,
+      "moteur": "Ryacas"
     },
     {
       "id": "ANALYSE-SYNTHESE-ETAPES",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Dans un raisonnement par analyse-synthèse, quel enchaînement décrit correctement les deux étapes ?",
       "reponse": "Analyse : supposer une solution et en déduire des candidats. Synthèse : vérifier les candidats dans le problème de départ.",
       "propositions": [
@@ -827,11 +1032,15 @@
         "Analyse : vérifier une valeur. Synthèse : transformer ensuite l’équation pour trouver des candidats.",
         "Analyse : remplacer chaque égalité par ⇔. Synthèse : recopier la dernière ligne."
       ],
-      "correction": "L’analyse cherche des conditions nécessaires : toute solution doit appartenir à la liste des candidats obtenus. La synthèse revient au problème initial et détermine lesquels sont réellement solutions."
+      "correction": "L’analyse cherche des conditions nécessaires : toute solution doit appartenir à la liste des candidats obtenus. La synthèse revient au problème initial et détermine lesquels sont réellement solutions.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ANALYSE-SYNTHESE-EQUIVALENCE",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -844,6 +1053,7 @@
       "variantes": [
         {
           "parametres": {
+            "a": 6,
             "enonce": "On sait que √(𝑥 + 6) = 𝑥 implique 𝑥 + 6 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 6) = 𝑥 ⇔ 𝑥 + 6 = 𝑥² ?",
             "reponse": "Non : l’équation obtenue peut avoir des solutions qui ne vérifient pas l’équation de départ.",
             "correction": "Ici, l’équation au carré donne les candidats 3 et −2. Mais −2 ne vérifie pas √(𝑥 + 6) = 𝑥. L’implication utilisée pendant l’analyse ne suffit donc pas à établir une équivalence.",
@@ -855,6 +1065,7 @@
         },
         {
           "parametres": {
+            "a": 8,
             "enonce": "On sait que √(𝑥 + 8) = 𝑥 implique 𝑥 + 8 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 8) = 𝑥 ⇔ 𝑥 + 8 = 𝑥² ?",
             "reponse": "Non, il faut vérifier les conditions et la réciproque.",
             "correction": "Élever au carré donne ici une implication ; pour une équivalence, il faut contrôler les conditions, notamment x ≥ 0.",
@@ -866,6 +1077,7 @@
         },
         {
           "parametres": {
+            "a": 10,
             "enonce": "On sait que √(𝑥 + 10) = 𝑥 implique 𝑥 + 10 = 𝑥². Peut-on écrire immédiatement √(𝑥 + 10) = 𝑥 ⇔ 𝑥 + 10 = 𝑥² ?",
             "reponse": "Non, il faut vérifier les conditions et la réciproque.",
             "correction": "Il faut vérifier les conditions et la réciproque avant d’écrire une équivalence.",
@@ -875,11 +1087,15 @@
             "p4": "Non, car on ne peut jamais élever une égalité au carré."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ANALYSE-SYNTHESE-BOITE",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "valeur_recherchee",
       "enonce": "L’analyse de √(𝑥 + 6) = 𝑥 fournit les candidats 3 et −2. Dans la synthèse, on vérifie √(−2 + 6) = 2 ≠ −2. Quel candidat doit être placé dans □ comme solution conservée : 𝑥 = □ ?",
       "presentation": {
         "type": "boite"
@@ -891,11 +1107,15 @@
         "2",
         "−3"
       ],
-      "correction": "Le candidat −2 est rejeté par la synthèse. Le candidat 3 vérifie √(3 + 6) = 3 : la solution est 𝑥 = 3."
+      "correction": "Le candidat −2 est rejeté par la synthèse. Le candidat 3 vérifie √(3 + 6) = 3 : la solution est 𝑥 = 3.",
+      "enonce_exploitable": "sqrt(3 + 6)",
+      "reponse_exploitable": "3",
+      "moteur": "Ryacas"
     },
     {
       "id": "ANALYSE-SYNTHESE-MOT-A-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on la première partie du raisonnement, dans laquelle on suppose qu’une solution existe et on cherche les conditions qu’elle doit vérifier ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -913,11 +1133,15 @@
         "équivalence",
         "solution"
       ],
-      "correction": "L’analyse part d’une solution supposée et en déduit des conditions nécessaires, donc une liste de candidats possibles."
+      "correction": "L’analyse part d’une solution supposée et en déduit des conditions nécessaires, donc une liste de candidats possibles.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "ANALYSE-SYNTHESE-MOT-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on la relation entre deux équations qui ont exactement les mêmes solutions ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -936,7 +1160,10 @@
         "analyse",
         "synthèse"
       ],
-      "correction": "Deux équations sont équivalentes lorsqu’elles ont exactement le même ensemble de solutions. Le symbole ⇔ ne s’emploie que lorsque cette équivalence est justifiée."
+      "correction": "Deux équations sont équivalentes lorsqu’elles ont exactement le même ensemble de solutions. Le symbole ⇔ ne s’emploie que lorsque cette équivalence est justifiée.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

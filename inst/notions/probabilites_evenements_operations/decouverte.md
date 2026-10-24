@@ -28,6 +28,6 @@ Le mot « ou » en probabilités inclut le cas où les deux événements se réa
 
 ## Pour vérifier tes découvertes
 
-**1. Réunion**
+1. **Réunion :**
 
 $P(A\cup B)=0,4+0,5-0,2=0,7$.

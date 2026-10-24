@@ -1,0 +1,1405 @@
+{
+  "notion_id": "aires",
+  "questions": [
+    {
+      "id": "AIR-RECT-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 7 cm sur 11 cm. Quelle est son aire ?",
+            "reponse": "77 cm²",
+            "correction": "On multiplie longueur et largeur : 7 × 11 = 77 cm².",
+            "p1": "77 cm²",
+            "p2": "36 cm²",
+            "p3": "18 cm²",
+            "p4": "154 cm²",
+            "longueur": 7,
+            "largeur": 11,
+            "resultat": 77
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 6 cm sur 14 cm. Quelle est son aire ?",
+            "reponse": "84 cm²",
+            "correction": "On multiplie longueur et largeur : 6 × 14 = 84 cm².",
+            "p1": "84 cm²",
+            "p2": "40 cm²",
+            "p3": "20 cm²",
+            "p4": "168 cm²",
+            "longueur": 6,
+            "largeur": 14,
+            "resultat": 84
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 20 cm sur 11 cm. Quelle est son aire ?",
+            "reponse": "220 cm²",
+            "correction": "On multiplie longueur et largeur : 20 × 11 = 220 cm².",
+            "p1": "220 cm²",
+            "p2": "62 cm²",
+            "p3": "31 cm²",
+            "p4": "440 cm²",
+            "longueur": 20,
+            "largeur": 11,
+            "resultat": 220
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 9 cm sur 14 cm. Quelle est son aire ?",
+            "reponse": "126 cm²",
+            "correction": "On multiplie longueur et largeur : 9 × 14 = 126 cm².",
+            "p1": "126 cm²",
+            "p2": "46 cm²",
+            "p3": "23 cm²",
+            "p4": "252 cm²",
+            "longueur": 9,
+            "largeur": 14,
+            "resultat": 126
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 7 cm sur 15 cm. Quelle est son aire ?",
+            "reponse": "105 cm²",
+            "correction": "On multiplie longueur et largeur : 7 × 15 = 105 cm².",
+            "p1": "105 cm²",
+            "p2": "44 cm²",
+            "p3": "22 cm²",
+            "p4": "210 cm²",
+            "longueur": 7,
+            "largeur": 15,
+            "resultat": 105
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 8 cm sur 3 cm. Quelle est son aire ?",
+            "reponse": "24 cm²",
+            "correction": "On multiplie longueur et largeur : 8 × 3 = 24 cm².",
+            "p1": "24 cm²",
+            "p2": "22 cm²",
+            "p3": "11 cm²",
+            "p4": "48 cm²",
+            "longueur": 8,
+            "largeur": 3,
+            "resultat": 24
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 19 cm sur 10 cm. Quelle est son aire ?",
+            "reponse": "190 cm²",
+            "correction": "On multiplie longueur et largeur : 19 × 10 = 190 cm².",
+            "p1": "190 cm²",
+            "p2": "58 cm²",
+            "p3": "29 cm²",
+            "p4": "380 cm²",
+            "longueur": 19,
+            "largeur": 10,
+            "resultat": 190
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 17 cm sur 9 cm. Quelle est son aire ?",
+            "reponse": "153 cm²",
+            "correction": "On multiplie longueur et largeur : 17 × 9 = 153 cm².",
+            "p1": "153 cm²",
+            "p2": "52 cm²",
+            "p3": "26 cm²",
+            "p4": "306 cm²",
+            "longueur": 17,
+            "largeur": 9,
+            "resultat": 153
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "longueur * largeur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIR-CARRE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 32 cm. Quelle est son aire ?",
+            "reponse": "1024 cm²",
+            "correction": "On multiplie le côté par lui-même : 32 × 32 = 1024 cm².",
+            "p1": "1024 cm²",
+            "p2": "128 cm²",
+            "p3": "64 cm²",
+            "p4": "2048 cm²",
+            "cote": 32,
+            "resultat": 1024
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 35 cm. Quelle est son aire ?",
+            "reponse": "1225 cm²",
+            "correction": "On multiplie le côté par lui-même : 35 × 35 = 1225 cm².",
+            "p1": "1225 cm²",
+            "p2": "140 cm²",
+            "p3": "70 cm²",
+            "p4": "2450 cm²",
+            "cote": 35,
+            "resultat": 1225
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 30 cm. Quelle est son aire ?",
+            "reponse": "900 cm²",
+            "correction": "On multiplie le côté par lui-même : 30 × 30 = 900 cm².",
+            "p1": "900 cm²",
+            "p2": "120 cm²",
+            "p3": "60 cm²",
+            "p4": "1800 cm²",
+            "cote": 30,
+            "resultat": 900
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 64 cm. Quelle est son aire ?",
+            "reponse": "4096 cm²",
+            "correction": "On multiplie le côté par lui-même : 64 × 64 = 4096 cm².",
+            "p1": "4096 cm²",
+            "p2": "256 cm²",
+            "p3": "128 cm²",
+            "p4": "8192 cm²",
+            "cote": 64,
+            "resultat": 4096
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 45 cm. Quelle est son aire ?",
+            "reponse": "2025 cm²",
+            "correction": "On multiplie le côté par lui-même : 45 × 45 = 2025 cm².",
+            "p1": "2025 cm²",
+            "p2": "180 cm²",
+            "p3": "90 cm²",
+            "p4": "4050 cm²",
+            "cote": 45,
+            "resultat": 2025
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 48 cm. Quelle est son aire ?",
+            "reponse": "2304 cm²",
+            "correction": "On multiplie le côté par lui-même : 48 × 48 = 2304 cm².",
+            "p1": "2304 cm²",
+            "p2": "192 cm²",
+            "p3": "96 cm²",
+            "p4": "4608 cm²",
+            "cote": 48,
+            "resultat": 2304
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 15 cm. Quelle est son aire ?",
+            "reponse": "225 cm²",
+            "correction": "On multiplie le côté par lui-même : 15 × 15 = 225 cm².",
+            "p1": "225 cm²",
+            "p2": "60 cm²",
+            "p3": "30 cm²",
+            "p4": "450 cm²",
+            "cote": 15,
+            "resultat": 225
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a un côté de 42 cm. Quelle est son aire ?",
+            "reponse": "1764 cm²",
+            "correction": "On multiplie le côté par lui-même : 42 × 42 = 1764 cm².",
+            "p1": "1764 cm²",
+            "p2": "168 cm²",
+            "p3": "84 cm²",
+            "p4": "3528 cm²",
+            "cote": 42,
+            "resultat": 1764
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "cote^2",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIR-TRI-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 6 cm et une hauteur correspondante de 11 cm. Quelle est son aire ?",
+            "reponse": "33 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (6 × 11) ÷ 2 = 33 cm².",
+            "p1": "33 cm²",
+            "p2": "66 cm²",
+            "p3": "17 cm²",
+            "p4": "34 cm²",
+            "base": 6,
+            "hauteur": 11,
+            "resultat": 33.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 12 cm et une hauteur correspondante de 17 cm. Quelle est son aire ?",
+            "reponse": "102 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (12 × 17) ÷ 2 = 102 cm².",
+            "p1": "102 cm²",
+            "p2": "204 cm²",
+            "p3": "29 cm²",
+            "p4": "58 cm²",
+            "base": 12,
+            "hauteur": 17,
+            "resultat": 102.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 10 cm et une hauteur correspondante de 18 cm. Quelle est son aire ?",
+            "reponse": "90 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (10 × 18) ÷ 2 = 90 cm².",
+            "p1": "90 cm²",
+            "p2": "180 cm²",
+            "p3": "28 cm²",
+            "p4": "56 cm²",
+            "base": 10,
+            "hauteur": 18,
+            "resultat": 90.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 8 cm et une hauteur correspondante de 17 cm. Quelle est son aire ?",
+            "reponse": "68 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (8 × 17) ÷ 2 = 68 cm².",
+            "p1": "68 cm²",
+            "p2": "136 cm²",
+            "p3": "25 cm²",
+            "p4": "50 cm²",
+            "base": 8,
+            "hauteur": 17,
+            "resultat": 68.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 26 cm et une hauteur correspondante de 4 cm. Quelle est son aire ?",
+            "reponse": "52 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (26 × 4) ÷ 2 = 52 cm².",
+            "p1": "52 cm²",
+            "p2": "104 cm²",
+            "p3": "30 cm²",
+            "p4": "60 cm²",
+            "base": 26,
+            "hauteur": 4,
+            "resultat": 52.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 16 cm et une hauteur correspondante de 4 cm. Quelle est son aire ?",
+            "reponse": "32 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (16 × 4) ÷ 2 = 32 cm².",
+            "p1": "32 cm²",
+            "p2": "64 cm²",
+            "p3": "20 cm²",
+            "p4": "40 cm²",
+            "base": 16,
+            "hauteur": 4,
+            "resultat": 32.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 16 cm et une hauteur correspondante de 7 cm. Quelle est son aire ?",
+            "reponse": "56 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (16 × 7) ÷ 2 = 56 cm².",
+            "p1": "56 cm²",
+            "p2": "112 cm²",
+            "p3": "23 cm²",
+            "p4": "46 cm²",
+            "base": 16,
+            "hauteur": 7,
+            "resultat": 56.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 6 cm et une hauteur correspondante de 9 cm. Quelle est son aire ?",
+            "reponse": "27 cm²",
+            "correction": "On prend la moitié du produit base × hauteur : (6 × 9) ÷ 2 = 27 cm².",
+            "p1": "27 cm²",
+            "p2": "54 cm²",
+            "p3": "15 cm²",
+            "p4": "30 cm²",
+            "base": 6,
+            "hauteur": 9,
+            "resultat": 27.0
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "base * hauteur / 2",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIR-INVERSE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 128 cm² et une longueur de 16 cm. Quelle est sa largeur ?",
+            "reponse": "8 cm",
+            "correction": "La largeur multipliée par 16 doit donner 128 : 128 ÷ 16 = 8 cm.",
+            "p1": "8 cm",
+            "p2": "112 cm",
+            "p3": "16 cm",
+            "p4": "24 cm",
+            "aire": 128,
+            "longueur": 16,
+            "resultat": 8.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 50 cm² et une longueur de 10 cm. Quelle est sa largeur ?",
+            "reponse": "5 cm",
+            "correction": "La largeur multipliée par 10 doit donner 50 : 50 ÷ 10 = 5 cm.",
+            "p1": "5 cm",
+            "p2": "40 cm",
+            "p3": "10 cm",
+            "p4": "15 cm",
+            "aire": 50,
+            "longueur": 10,
+            "resultat": 5.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 75 cm² et une longueur de 15 cm. Quelle est sa largeur ?",
+            "reponse": "5 cm",
+            "correction": "La largeur multipliée par 15 doit donner 75 : 75 ÷ 15 = 5 cm.",
+            "p1": "5 cm",
+            "p2": "60 cm",
+            "p3": "10 cm",
+            "p4": "20 cm",
+            "aire": 75,
+            "longueur": 15,
+            "resultat": 5.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 35 cm² et une longueur de 5 cm. Quelle est sa largeur ?",
+            "reponse": "7 cm",
+            "correction": "La largeur multipliée par 5 doit donner 35 : 35 ÷ 5 = 7 cm.",
+            "p1": "7 cm",
+            "p2": "30 cm",
+            "p3": "14 cm",
+            "p4": "12 cm",
+            "aire": 35,
+            "longueur": 5,
+            "resultat": 7.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 24 cm² et une longueur de 3 cm. Quelle est sa largeur ?",
+            "reponse": "8 cm",
+            "correction": "La largeur multipliée par 3 doit donner 24 : 24 ÷ 3 = 8 cm.",
+            "p1": "8 cm",
+            "p2": "21 cm",
+            "p3": "16 cm",
+            "p4": "11 cm",
+            "aire": 24,
+            "longueur": 3,
+            "resultat": 8.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 128 cm² et une longueur de 8 cm. Quelle est sa largeur ?",
+            "reponse": "16 cm",
+            "correction": "La largeur multipliée par 8 doit donner 128 : 128 ÷ 8 = 16 cm.",
+            "p1": "16 cm",
+            "p2": "120 cm",
+            "p3": "32 cm",
+            "p4": "24 cm",
+            "aire": 128,
+            "longueur": 8,
+            "resultat": 16.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 306 cm² et une longueur de 18 cm. Quelle est sa largeur ?",
+            "reponse": "17 cm",
+            "correction": "La largeur multipliée par 18 doit donner 306 : 306 ÷ 18 = 17 cm.",
+            "p1": "17 cm",
+            "p2": "288 cm",
+            "p3": "34 cm",
+            "p4": "35 cm",
+            "aire": 306,
+            "longueur": 18,
+            "resultat": 17.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a une aire de 224 cm² et une longueur de 14 cm. Quelle est sa largeur ?",
+            "reponse": "16 cm",
+            "correction": "La largeur multipliée par 14 doit donner 224 : 224 ÷ 14 = 16 cm.",
+            "p1": "16 cm",
+            "p2": "210 cm",
+            "p3": "32 cm",
+            "p4": "30 cm",
+            "aire": 224,
+            "longueur": 14,
+            "resultat": 16.0
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "aire / longueur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIR-CARRELAGE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 8 dm sur 12 dm. On la recouvre sans découpe avec des carreaux carrés de 4 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "6 carreaux",
+            "correction": "Je vois : La surface mesure 8 dm sur 12 dm ; chaque carreau a un côté de 4 dm.\nOr : La surface mesure 96 dm² et chaque carreau couvre 16 dm².\nDonc : 96 ÷ 16 = 6 carreaux.",
+            "p1": "6 carreaux",
+            "p2": "96 carreaux",
+            "p3": "5 carreaux",
+            "p4": "10 carreaux",
+            "longueur": 8,
+            "largeur": 12,
+            "cote": 4,
+            "resultat": 6.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 9 dm sur 12 dm. On la recouvre sans découpe avec des carreaux carrés de 3 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "12 carreaux",
+            "correction": "Je vois : La surface mesure 9 dm sur 12 dm ; chaque carreau a un côté de 3 dm.\nOr : La surface mesure 108 dm² et chaque carreau couvre 9 dm².\nDonc : 108 ÷ 9 = 12 carreaux.",
+            "p1": "12 carreaux",
+            "p2": "108 carreaux",
+            "p3": "7 carreaux",
+            "p4": "14 carreaux",
+            "longueur": 9,
+            "largeur": 12,
+            "cote": 3,
+            "resultat": 12.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 12 dm sur 4 dm. On la recouvre sans découpe avec des carreaux carrés de 4 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "3 carreaux",
+            "correction": "Je vois : La surface mesure 12 dm sur 4 dm ; chaque carreau a un côté de 4 dm.\nOr : La surface mesure 48 dm² et chaque carreau couvre 16 dm².\nDonc : 48 ÷ 16 = 3 carreaux.",
+            "p1": "3 carreaux",
+            "p2": "48 carreaux",
+            "p3": "4 carreaux",
+            "p4": "8 carreaux",
+            "longueur": 12,
+            "largeur": 4,
+            "cote": 4,
+            "resultat": 3.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 18 dm sur 6 dm. On la recouvre sans découpe avec des carreaux carrés de 2 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "27 carreaux",
+            "correction": "Je vois : La surface mesure 18 dm sur 6 dm ; chaque carreau a un côté de 2 dm.\nOr : La surface mesure 108 dm² et chaque carreau couvre 4 dm².\nDonc : 108 ÷ 4 = 27 carreaux.",
+            "p1": "27 carreaux",
+            "p2": "108 carreaux",
+            "p3": "12 carreaux",
+            "p4": "24 carreaux",
+            "longueur": 18,
+            "largeur": 6,
+            "cote": 2,
+            "resultat": 27.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 16 dm sur 18 dm. On la recouvre sans découpe avec des carreaux carrés de 2 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "72 carreaux",
+            "correction": "Je vois : La surface mesure 16 dm sur 18 dm ; chaque carreau a un côté de 2 dm.\nOr : La surface mesure 288 dm² et chaque carreau couvre 4 dm².\nDonc : 288 ÷ 4 = 72 carreaux.",
+            "p1": "72 carreaux",
+            "p2": "288 carreaux",
+            "p3": "17 carreaux",
+            "p4": "34 carreaux",
+            "longueur": 16,
+            "largeur": 18,
+            "cote": 2,
+            "resultat": 72.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 16 dm sur 16 dm. On la recouvre sans découpe avec des carreaux carrés de 2 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "64 carreaux",
+            "correction": "Je vois : La surface mesure 16 dm sur 16 dm ; chaque carreau a un côté de 2 dm.\nOr : La surface mesure 256 dm² et chaque carreau couvre 4 dm².\nDonc : 256 ÷ 4 = 64 carreaux.",
+            "p1": "64 carreaux",
+            "p2": "256 carreaux",
+            "p3": "16 carreaux",
+            "p4": "32 carreaux",
+            "longueur": 16,
+            "largeur": 16,
+            "cote": 2,
+            "resultat": 64.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 6 dm sur 8 dm. On la recouvre sans découpe avec des carreaux carrés de 2 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "12 carreaux",
+            "correction": "Je vois : La surface mesure 6 dm sur 8 dm ; chaque carreau a un côté de 2 dm.\nOr : La surface mesure 48 dm² et chaque carreau couvre 4 dm².\nDonc : 48 ÷ 4 = 12 carreaux.",
+            "p1": "12 carreaux",
+            "p2": "48 carreaux",
+            "p3": "7 carreaux",
+            "p4": "14 carreaux",
+            "longueur": 6,
+            "largeur": 8,
+            "cote": 2,
+            "resultat": 12.0
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une surface rectangulaire mesure 8 dm sur 10 dm. On la recouvre sans découpe avec des carreaux carrés de 2 dm de côté. Combien de carreaux faut-il ?",
+            "reponse": "20 carreaux",
+            "correction": "Je vois : La surface mesure 8 dm sur 10 dm ; chaque carreau a un côté de 2 dm.\nOr : La surface mesure 80 dm² et chaque carreau couvre 4 dm².\nDonc : 80 ÷ 4 = 20 carreaux.",
+            "p1": "20 carreaux",
+            "p2": "80 carreaux",
+            "p3": "9 carreaux",
+            "p4": "18 carreaux",
+            "longueur": 8,
+            "largeur": 10,
+            "cote": 2,
+            "resultat": 20.0
+          },
+          "progression": 2
+        }
+      ],
+      "categorie": "raisonnement",
+      "enonce_exploitable": "(longueur * largeur) / cote^2",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIR-DECOUPE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 14 cm sur 12 cm. On retire dans un coin un rectangle de 8 cm sur 4 cm. Quelle aire reste-t-il ?",
+            "reponse": "136 cm²",
+            "correction": "Je vois : La plaque entière mesure 14 cm sur 12 cm ; on retire une partie de 8 cm sur 4 cm.\nOr : L’aire entière vaut 168 cm² et l’aire retirée 32 cm².\nDonc : L’aire restante est 168 − 32 = 136 cm².",
+            "p1": "136 cm²",
+            "p2": "168 cm²",
+            "p3": "32 cm²",
+            "p4": "200 cm²",
+            "longueur": 14,
+            "largeur": 12,
+            "retrait_longueur": 8,
+            "retrait_largeur": 4,
+            "resultat": 136
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 15 cm sur 16 cm. On retire dans un coin un rectangle de 11 cm sur 4 cm. Quelle aire reste-t-il ?",
+            "reponse": "196 cm²",
+            "correction": "Je vois : La plaque entière mesure 15 cm sur 16 cm ; on retire une partie de 11 cm sur 4 cm.\nOr : L’aire entière vaut 240 cm² et l’aire retirée 44 cm².\nDonc : L’aire restante est 240 − 44 = 196 cm².",
+            "p1": "196 cm²",
+            "p2": "240 cm²",
+            "p3": "44 cm²",
+            "p4": "284 cm²",
+            "longueur": 15,
+            "largeur": 16,
+            "retrait_longueur": 11,
+            "retrait_largeur": 4,
+            "resultat": 196
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 17 cm sur 13 cm. On retire dans un coin un rectangle de 4 cm sur 9 cm. Quelle aire reste-t-il ?",
+            "reponse": "185 cm²",
+            "correction": "Je vois : La plaque entière mesure 17 cm sur 13 cm ; on retire une partie de 4 cm sur 9 cm.\nOr : L’aire entière vaut 221 cm² et l’aire retirée 36 cm².\nDonc : L’aire restante est 221 − 36 = 185 cm².",
+            "p1": "185 cm²",
+            "p2": "221 cm²",
+            "p3": "36 cm²",
+            "p4": "257 cm²",
+            "longueur": 17,
+            "largeur": 13,
+            "retrait_longueur": 4,
+            "retrait_largeur": 9,
+            "resultat": 185
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 15 cm sur 9 cm. On retire dans un coin un rectangle de 6 cm sur 2 cm. Quelle aire reste-t-il ?",
+            "reponse": "123 cm²",
+            "correction": "Je vois : La plaque entière mesure 15 cm sur 9 cm ; on retire une partie de 6 cm sur 2 cm.\nOr : L’aire entière vaut 135 cm² et l’aire retirée 12 cm².\nDonc : L’aire restante est 135 − 12 = 123 cm².",
+            "p1": "123 cm²",
+            "p2": "135 cm²",
+            "p3": "12 cm²",
+            "p4": "147 cm²",
+            "longueur": 15,
+            "largeur": 9,
+            "retrait_longueur": 6,
+            "retrait_largeur": 2,
+            "resultat": 123
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 13 cm sur 7 cm. On retire dans un coin un rectangle de 6 cm sur 3 cm. Quelle aire reste-t-il ?",
+            "reponse": "73 cm²",
+            "correction": "Je vois : La plaque entière mesure 13 cm sur 7 cm ; on retire une partie de 6 cm sur 3 cm.\nOr : L’aire entière vaut 91 cm² et l’aire retirée 18 cm².\nDonc : L’aire restante est 91 − 18 = 73 cm².",
+            "p1": "73 cm²",
+            "p2": "91 cm²",
+            "p3": "18 cm²",
+            "p4": "109 cm²",
+            "longueur": 13,
+            "largeur": 7,
+            "retrait_longueur": 6,
+            "retrait_largeur": 3,
+            "resultat": 73
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 19 cm sur 12 cm. On retire dans un coin un rectangle de 15 cm sur 6 cm. Quelle aire reste-t-il ?",
+            "reponse": "138 cm²",
+            "correction": "Je vois : La plaque entière mesure 19 cm sur 12 cm ; on retire une partie de 15 cm sur 6 cm.\nOr : L’aire entière vaut 228 cm² et l’aire retirée 90 cm².\nDonc : L’aire restante est 228 − 90 = 138 cm².",
+            "p1": "138 cm²",
+            "p2": "228 cm²",
+            "p3": "90 cm²",
+            "p4": "318 cm²",
+            "longueur": 19,
+            "largeur": 12,
+            "retrait_longueur": 15,
+            "retrait_largeur": 6,
+            "resultat": 138
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 16 cm sur 14 cm. On retire dans un coin un rectangle de 7 cm sur 9 cm. Quelle aire reste-t-il ?",
+            "reponse": "161 cm²",
+            "correction": "Je vois : La plaque entière mesure 16 cm sur 14 cm ; on retire une partie de 7 cm sur 9 cm.\nOr : L’aire entière vaut 224 cm² et l’aire retirée 63 cm².\nDonc : L’aire restante est 224 − 63 = 161 cm².",
+            "p1": "161 cm²",
+            "p2": "224 cm²",
+            "p3": "63 cm²",
+            "p4": "287 cm²",
+            "longueur": 16,
+            "largeur": 14,
+            "retrait_longueur": 7,
+            "retrait_largeur": 9,
+            "resultat": 161
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une plaque rectangulaire mesure 14 cm sur 16 cm. On retire dans un coin un rectangle de 5 cm sur 13 cm. Quelle aire reste-t-il ?",
+            "reponse": "159 cm²",
+            "correction": "Je vois : La plaque entière mesure 14 cm sur 16 cm ; on retire une partie de 5 cm sur 13 cm.\nOr : L’aire entière vaut 224 cm² et l’aire retirée 65 cm².\nDonc : L’aire restante est 224 − 65 = 159 cm².",
+            "p1": "159 cm²",
+            "p2": "224 cm²",
+            "p3": "65 cm²",
+            "p4": "289 cm²",
+            "longueur": 14,
+            "largeur": 16,
+            "retrait_longueur": 5,
+            "retrait_largeur": 13,
+            "resultat": 159
+          },
+          "progression": 2
+        }
+      ],
+      "categorie": "raisonnement",
+      "enonce_exploitable": "longueur * largeur - retrait_longueur * retrait_largeur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIR-VOCAB-TROU-001",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
+      "enonce": "Quel terme désigne la mesure de la surface occupée par une figure plane ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "aire": "a _ _ e",
+          "surface": "s _ _ _ _ _ e",
+          "périmètre": "p _ _ _ _ _ _ _ e",
+          "volume": "v _ _ _ _ e"
+        }
+      },
+      "reponse": "aire",
+      "propositions": [
+        "aire",
+        "surface",
+        "périmètre",
+        "volume"
+      ],
+      "correction": "L’aire mesure la surface d’une figure plane.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "AIR-VOCAB-MASQUE-001",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
+      "enonce": "Quel terme désigne une figure plane à quatre côtés égaux et quatre angles droits ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "carré": "C________É",
+          "rectangle": "R________E",
+          "triangle": "T________E",
+          "disque": "D________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": "carré",
+      "propositions": [
+        "carré",
+        "rectangle",
+        "triangle",
+        "disque"
+      ],
+      "correction": "Un carré possède quatre côtés égaux et quatre angles droits.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "AIRES-RECTANGLE-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 3 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "12 cm²",
+            "p1": "12 cm²",
+            "p2": "14 cm²",
+            "p3": "7 cm²",
+            "p4": "6 cm²",
+            "correction": "Aire = longueur × largeur = 3 × 4 = 12 cm².",
+            "longueur": 3,
+            "largeur": 4,
+            "resultat": 12
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 5 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "20 cm²",
+            "p1": "20 cm²",
+            "p2": "18 cm²",
+            "p3": "9 cm²",
+            "p4": "10 cm²",
+            "correction": "Aire = longueur × largeur = 5 × 4 = 20 cm².",
+            "longueur": 5,
+            "largeur": 4,
+            "resultat": 20
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 6 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "24 cm²",
+            "p1": "24 cm²",
+            "p2": "20 cm²",
+            "p3": "10 cm²",
+            "p4": "12 cm²",
+            "correction": "Aire = longueur × largeur = 6 × 4 = 24 cm².",
+            "longueur": 6,
+            "largeur": 4,
+            "resultat": 24
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 7 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "28 cm²",
+            "p1": "28 cm²",
+            "p2": "22 cm²",
+            "p3": "11 cm²",
+            "p4": "14 cm²",
+            "correction": "Aire = longueur × largeur = 7 × 4 = 28 cm².",
+            "longueur": 7,
+            "largeur": 4,
+            "resultat": 28
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 8 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "32 cm²",
+            "p1": "32 cm²",
+            "p2": "24 cm²",
+            "p3": "12 cm²",
+            "p4": "16 cm²",
+            "correction": "Aire = longueur × largeur = 8 × 4 = 32 cm².",
+            "longueur": 8,
+            "largeur": 4,
+            "resultat": 32
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 9 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "36 cm²",
+            "p1": "36 cm²",
+            "p2": "26 cm²",
+            "p3": "13 cm²",
+            "p4": "18 cm²",
+            "correction": "Aire = longueur × largeur = 9 × 4 = 36 cm².",
+            "longueur": 9,
+            "largeur": 4,
+            "resultat": 36
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 10 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "40 cm²",
+            "p1": "40 cm²",
+            "p2": "28 cm²",
+            "p3": "14 cm²",
+            "p4": "20 cm²",
+            "correction": "Aire = longueur × largeur = 10 × 4 = 40 cm².",
+            "longueur": 10,
+            "largeur": 4,
+            "resultat": 40
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 11 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "44 cm²",
+            "p1": "44 cm²",
+            "p2": "30 cm²",
+            "p3": "15 cm²",
+            "p4": "22 cm²",
+            "correction": "Aire = longueur × largeur = 11 × 4 = 44 cm².",
+            "longueur": 11,
+            "largeur": 4,
+            "resultat": 44
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 12 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "48 cm²",
+            "p1": "48 cm²",
+            "p2": "32 cm²",
+            "p3": "16 cm²",
+            "p4": "24 cm²",
+            "correction": "Aire = longueur × largeur = 12 × 4 = 48 cm².",
+            "longueur": 12,
+            "largeur": 4,
+            "resultat": 48
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 13 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "52 cm²",
+            "p1": "52 cm²",
+            "p2": "34 cm²",
+            "p3": "17 cm²",
+            "p4": "26 cm²",
+            "correction": "Aire = longueur × largeur = 13 × 4 = 52 cm².",
+            "longueur": 13,
+            "largeur": 4,
+            "resultat": 52
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 14 cm de long et 4 cm de large. Quelle est son aire ?",
+            "reponse": "56 cm²",
+            "p1": "56 cm²",
+            "p2": "36 cm²",
+            "p3": "18 cm²",
+            "p4": "28 cm²",
+            "correction": "Aire = longueur × largeur = 14 × 4 = 56 cm².",
+            "longueur": 14,
+            "largeur": 4,
+            "resultat": 56
+          }
+        }
+      ],
+      "enonce_exploitable": "longueur * largeur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIRES-TRIANGLE-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 8 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "12 cm²",
+            "p1": "12 cm²",
+            "p2": "24 cm²",
+            "p3": "11 cm²",
+            "p4": "15 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 8 × 3 ÷ 2 = 12 cm².",
+            "base": 8,
+            "hauteur": 3,
+            "resultat": 12.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 10 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "15 cm²",
+            "p1": "15 cm²",
+            "p2": "30 cm²",
+            "p3": "13 cm²",
+            "p4": "18 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 10 × 3 ÷ 2 = 15 cm².",
+            "base": 10,
+            "hauteur": 3,
+            "resultat": 15.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 12 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "18 cm²",
+            "p1": "18 cm²",
+            "p2": "36 cm²",
+            "p3": "15 cm²",
+            "p4": "21 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 12 × 3 ÷ 2 = 18 cm².",
+            "base": 12,
+            "hauteur": 3,
+            "resultat": 18.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 14 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "21 cm²",
+            "p1": "21 cm²",
+            "p2": "42 cm²",
+            "p3": "17 cm²",
+            "p4": "24 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 14 × 3 ÷ 2 = 21 cm².",
+            "base": 14,
+            "hauteur": 3,
+            "resultat": 21.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 16 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "24 cm²",
+            "p1": "24 cm²",
+            "p2": "48 cm²",
+            "p3": "19 cm²",
+            "p4": "27 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 16 × 3 ÷ 2 = 24 cm².",
+            "base": 16,
+            "hauteur": 3,
+            "resultat": 24.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 18 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "27 cm²",
+            "p1": "27 cm²",
+            "p2": "54 cm²",
+            "p3": "21 cm²",
+            "p4": "30 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 18 × 3 ÷ 2 = 27 cm².",
+            "base": 18,
+            "hauteur": 3,
+            "resultat": 27.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 20 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "30 cm²",
+            "p1": "30 cm²",
+            "p2": "60 cm²",
+            "p3": "23 cm²",
+            "p4": "33 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 20 × 3 ÷ 2 = 30 cm².",
+            "base": 20,
+            "hauteur": 3,
+            "resultat": 30.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 22 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "33 cm²",
+            "p1": "33 cm²",
+            "p2": "66 cm²",
+            "p3": "25 cm²",
+            "p4": "36 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 22 × 3 ÷ 2 = 33 cm².",
+            "base": 22,
+            "hauteur": 3,
+            "resultat": 33.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 24 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "36 cm²",
+            "p1": "36 cm²",
+            "p2": "72 cm²",
+            "p3": "27 cm²",
+            "p4": "39 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 24 × 3 ÷ 2 = 36 cm².",
+            "base": 24,
+            "hauteur": 3,
+            "resultat": 36.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 26 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "39 cm²",
+            "p1": "39 cm²",
+            "p2": "78 cm²",
+            "p3": "29 cm²",
+            "p4": "42 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 26 × 3 ÷ 2 = 39 cm².",
+            "base": 26,
+            "hauteur": 3,
+            "resultat": 39.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a une base de 28 cm et une hauteur correspondante de 3 cm. Quelle est son aire ?",
+            "reponse": "42 cm²",
+            "p1": "42 cm²",
+            "p2": "84 cm²",
+            "p3": "31 cm²",
+            "p4": "45 cm²",
+            "correction": "Aire = base × hauteur ÷ 2 = 28 × 3 ÷ 2 = 42 cm².",
+            "base": 28,
+            "hauteur": 3,
+            "resultat": 42.0
+          }
+        }
+      ],
+      "enonce_exploitable": "base * hauteur / 2",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "AIRES-COTE-CARRE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 9 cm². Quelle est la longueur de son côté ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "6 cm",
+            "p3": "12 cm",
+            "p4": "4 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 9 : 3 × 3 = 9.",
+            "aire": 9,
+            "resultat": 3.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 25 cm². Quelle est la longueur de son côté ?",
+            "reponse": "5 cm",
+            "p1": "5 cm",
+            "p2": "10 cm",
+            "p3": "20 cm",
+            "p4": "12 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 25 : 5 × 5 = 25.",
+            "aire": 25,
+            "resultat": 5.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 36 cm². Quelle est la longueur de son côté ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "12 cm",
+            "p3": "24 cm",
+            "p4": "18 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 36 : 6 × 6 = 36.",
+            "aire": 36,
+            "resultat": 6.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 49 cm². Quelle est la longueur de son côté ?",
+            "reponse": "7 cm",
+            "p1": "7 cm",
+            "p2": "14 cm",
+            "p3": "28 cm",
+            "p4": "24 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 49 : 7 × 7 = 49.",
+            "aire": 49,
+            "resultat": 7.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 81 cm². Quelle est la longueur de son côté ?",
+            "reponse": "9 cm",
+            "p1": "9 cm",
+            "p2": "18 cm",
+            "p3": "36 cm",
+            "p4": "40 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 81 : 9 × 9 = 81.",
+            "aire": 81,
+            "resultat": 9.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 100 cm². Quelle est la longueur de son côté ?",
+            "reponse": "10 cm",
+            "p1": "10 cm",
+            "p2": "20 cm",
+            "p3": "40 cm",
+            "p4": "50 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 100 : 10 × 10 = 100.",
+            "aire": 100,
+            "resultat": 10.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 121 cm². Quelle est la longueur de son côté ?",
+            "reponse": "11 cm",
+            "p1": "11 cm",
+            "p2": "22 cm",
+            "p3": "44 cm",
+            "p4": "60 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 121 : 11 × 11 = 121.",
+            "aire": 121,
+            "resultat": 11.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 144 cm². Quelle est la longueur de son côté ?",
+            "reponse": "12 cm",
+            "p1": "12 cm",
+            "p2": "24 cm",
+            "p3": "48 cm",
+            "p4": "72 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 144 : 12 × 12 = 144.",
+            "aire": 144,
+            "resultat": 12.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 169 cm². Quelle est la longueur de son côté ?",
+            "reponse": "13 cm",
+            "p1": "13 cm",
+            "p2": "26 cm",
+            "p3": "52 cm",
+            "p4": "84 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 169 : 13 × 13 = 169.",
+            "aire": 169,
+            "resultat": 13.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un carré a une aire de 196 cm². Quelle est la longueur de son côté ?",
+            "reponse": "14 cm",
+            "p1": "14 cm",
+            "p2": "28 cm",
+            "p3": "56 cm",
+            "p4": "98 cm",
+            "correction": "Le côté du carré est le nombre positif dont le carré vaut 196 : 14 × 14 = 196.",
+            "aire": 196,
+            "resultat": 14.0
+          }
+        }
+      ],
+      "enonce_exploitable": "sqrt(aire)",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    }
+  ]
+}

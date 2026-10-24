@@ -28,6 +28,6 @@ La fréquence fluctue ; avec beaucoup de répétitions, elle se stabilise géné
 
 ## Pour vérifier tes découvertes
 
-**1. Fréquence**
+1. **Fréquence :**
 
 $47/100=0,47$. Cette fréquence observée n’a aucune obligation d’être exactement égale à la probabilité théorique.

@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : un pourcentage exprime une proportion sur 100. Vérifie ensuite ton exemple avec la méthode de la fiche : multiplier la quantité par p/100.

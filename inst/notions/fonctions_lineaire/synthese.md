@@ -3,7 +3,7 @@
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-Une fonction linéaire est une fonction de la forme f(𝑥)=a𝑥.
+**Une fonction linéaire** est une fonction de la forme f(𝑥)=a𝑥.
 :::
 
 ## Principe

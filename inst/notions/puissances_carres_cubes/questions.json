@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PUI-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,10 @@
             "p1": "3",
             "p2": "7",
             "p3": "21",
-            "p4": "343"
+            "p4": "343",
+            "base": 7,
+            "exposant": 3,
+            "resultat_exploitable": 3
           }
         },
         {
@@ -33,7 +37,10 @@
             "p1": "4",
             "p2": "5",
             "p3": "20",
-            "p4": "625"
+            "p4": "625",
+            "base": 5,
+            "exposant": 4,
+            "resultat_exploitable": 4
           }
         },
         {
@@ -44,14 +51,21 @@
             "p1": "7",
             "p2": "2",
             "p3": "14",
-            "p4": "128"
+            "p4": "128",
+            "base": 2,
+            "exposant": 7,
+            "resultat_exploitable": 7
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "exposant",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-004",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +84,10 @@
             "p1": "5 × 5 × 5",
             "p2": "5 × 3",
             "p3": "5 + 5 + 5",
-            "p4": "3 × 3 × 3 × 3 × 3"
+            "p4": "3 × 3 × 3 × 3 × 3",
+            "base": 5,
+            "exposant": 3,
+            "resultat_exploitable": 125
           }
         },
         {
@@ -81,7 +98,10 @@
             "p1": "4 × 4 × 4",
             "p2": "4 × 3",
             "p3": "4 + 4 + 4",
-            "p4": "3 × 3 × 3 × 3"
+            "p4": "3 × 3 × 3 × 3",
+            "base": 4,
+            "exposant": 3,
+            "resultat_exploitable": 64
           }
         },
         {
@@ -92,14 +112,21 @@
             "p1": "2 × 2 × 2 × 2 × 2",
             "p2": "2 × 5",
             "p3": "2 + 2 + 2 + 2 + 2",
-            "p4": "5 × 5"
+            "p4": "5 × 5",
+            "base": 2,
+            "exposant": 5,
+            "resultat_exploitable": 32
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "base^exposant",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-019",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +145,9 @@
             "p1": "36",
             "p2": "12",
             "p3": "18",
-            "p4": "216"
+            "p4": "216",
+            "calcul_exploitable": "6^2",
+            "resultat_exploitable": "36"
           }
         },
         {
@@ -129,7 +158,9 @@
             "p1": "49",
             "p2": "14",
             "p3": "21",
-            "p4": "343"
+            "p4": "343",
+            "calcul_exploitable": "7^2",
+            "resultat_exploitable": "49"
           }
         },
         {
@@ -140,10 +171,15 @@
             "p1": "81",
             "p2": "18",
             "p3": "27",
-            "p4": "729"
+            "p4": "729",
+            "calcul_exploitable": "9^2",
+            "resultat_exploitable": "81"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

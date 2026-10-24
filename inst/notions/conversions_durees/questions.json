@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "MES-CONVERSION_DUREES-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,9 @@
             "p1": "165 min",
             "p2": "145 min",
             "p3": "125 min",
-            "p4": "245 min"
+            "p4": "245 min",
+            "calcul_exploitable": "2 * 60 + 45",
+            "resultat_exploitable": "165"
           }
         },
         {
@@ -33,7 +36,9 @@
             "p1": "200 min",
             "p2": "320 min",
             "p3": "180 min",
-            "p4": "140 min"
+            "p4": "140 min",
+            "calcul_exploitable": "3 * 60 + 20",
+            "resultat_exploitable": "200"
           }
         },
         {
@@ -44,14 +49,20 @@
             "p1": "95 min",
             "p2": "135 min",
             "p3": "75 min",
-            "p4": "65 min"
+            "p4": "65 min",
+            "calcul_exploitable": "1 * 60 + 35",
+            "resultat_exploitable": "95"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_DUREES-002",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -64,6 +75,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 135,
+            "resultat_exploitable": 135,
             "enonce": "135 min correspondent à…",
             "reponse": "2 h 15 min",
             "correction": "135 = 2 × 60 + 15.",
@@ -75,6 +88,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 150,
+            "resultat_exploitable": 150,
             "enonce": "150 min correspondent à…",
             "reponse": "2 h 30 min",
             "correction": "Conversion : 150 min = 2 h 30 min.",
@@ -86,6 +101,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 95,
+            "resultat_exploitable": 95,
             "enonce": "95 min correspondent à…",
             "reponse": "1 h 35 min",
             "correction": "Conversion : 95 min = 1 h 35 min.",
@@ -95,11 +112,15 @@
             "p4": "35 min"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_DUREES-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +139,9 @@
             "p1": "45 min",
             "p2": "75 min",
             "p3": "30 min",
-            "p4": "15 min"
+            "p4": "15 min",
+            "calcul_exploitable": "(3 / 4) * 60",
+            "resultat_exploitable": "45"
           }
         },
         {
@@ -129,7 +152,9 @@
             "p1": "30 min",
             "p2": "50 min",
             "p3": "20 min",
-            "p4": "5 min"
+            "p4": "5 min",
+            "calcul_exploitable": "(1 / 2) * 60",
+            "resultat_exploitable": "30"
           }
         },
         {
@@ -140,14 +165,20 @@
             "p1": "75 min",
             "p2": "125 min",
             "p3": "60 min",
-            "p4": "25 min"
+            "p4": "25 min",
+            "calcul_exploitable": "(5 / 4) * 60",
+            "resultat_exploitable": "75"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_DUREES-VOCAB-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on le temps écoulé entre deux événements ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -165,11 +196,15 @@
         "minute",
         "seconde"
       ],
-      "correction": "La durée est un intervalle de temps, à distinguer d’un horaire."
+      "correction": "La durée est un intervalle de temps, à distinguer d’un horaire.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_DUREES-VOCAB-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quelle unité de durée vaut 60 secondes ?",
       "presentation": {
         "type": "mot_masque",
@@ -188,11 +223,15 @@
         "mètre",
         "masse"
       ],
-      "correction": "Le terme recherché est « minute »."
+      "correction": "Le terme recherché est « minute ».",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_DUREES-APPLICATION",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -211,7 +250,9 @@
             "p1": "105 min",
             "p2": "145 min",
             "p3": "75 min",
-            "p4": "85 min"
+            "p4": "85 min",
+            "calcul_exploitable": "1 * 60 + 45",
+            "resultat_exploitable": "105"
           }
         },
         {
@@ -222,7 +263,9 @@
             "p1": "130 min",
             "p2": "210 min",
             "p3": "120 min",
-            "p4": "110 min"
+            "p4": "110 min",
+            "calcul_exploitable": "2 * 60 + 10",
+            "resultat_exploitable": "130"
           }
         },
         {
@@ -233,10 +276,15 @@
             "p1": "80 min",
             "p2": "120 min",
             "p3": "60 min",
-            "p4": "70 min"
+            "p4": "70 min",
+            "calcul_exploitable": "1 * 60 + 20",
+            "resultat_exploitable": "80"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

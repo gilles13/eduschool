@@ -1,4 +1,10 @@
-# Trigonométrie du triangle rectangle — l'essentiel
+# L'essentiel : Trigonométrie du triangle rectangle — l'essentiel
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Sinus, cosinus et tangente sont des rapports de côtés associés à un angle aigu d’un triangle rectangle.
+:::
 
 **Condition :** on travaille dans un triangle rectangle. Identifier d'abord l'angle étudié.
 

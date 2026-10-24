@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : une grandeur quotient est obtenue en divisant une grandeur par une autre. Vérifie ensuite ton exemple avec la méthode de la fiche : identifier le numérateur, le dénominateur et l’unité obtenue.

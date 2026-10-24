@@ -1,4 +1,10 @@
-# Découvrir la trigonométrie : mesurer sans grimper
+# Découvrir : la trigonométrie : mesurer sans grimper
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Dans un **triangle rectangle**, le sinus, le cosinus et la tangente d’un angle aigu sont des **rapports de longueurs** de côtés.
+:::
 
 ## Mission impossible ?
 
@@ -81,8 +87,8 @@ Pour retrouver les trois formules d'un seul coup d'œil, consulte la **fiche syn
 
 ## Pour vérifier tes découvertes
 
-**1. Comparer deux triangles.** $3/4=0{,}75$ et $6/8=0{,}75$ : les rapports sont égaux. Les côtés du second triangle sont deux fois plus longs.
+1. **Comparer deux triangles :** $3/4=0{,}75$ et $6/8=0{,}75$ : les rapports sont égaux. Les côtés du second triangle sont deux fois plus longs.
 
-**2. Reculer devant l’immeuble.** L’angle diminue : à hauteur constante, la tangente vaut hauteur divisée par distance horizontale. Quand la distance augmente, ce rapport diminue, donc l’angle aigu diminue.
+2. **Reculer devant l’immeuble :** L’angle diminue : à hauteur constante, la tangente vaut hauteur divisée par distance horizontale. Quand la distance augmente, ce rapport diminue, donc l’angle aigu diminue.
 
-**3. Retrouver un angle.** $\sin(\alpha)=3/6=0{,}5$, donc $\alpha=\arcsin(0{,}5)=30°$. Vérifie le mode degrés de la calculatrice.
+3. **Retrouver un angle :** $\sin(\alpha)=3/6=0{,}5$, donc $\alpha=\arcsin(0{,}5)=30°$. Vérifie le mode degrés de la calculatrice.

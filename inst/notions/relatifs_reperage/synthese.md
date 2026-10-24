@@ -1,4 +1,10 @@
-# L’essentiel : Les nombres relatifs
+# L'essentiel : Les nombres relatifs
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Les nombres relatifs permettent de situer des valeurs de part et d’autre de zéro.
+:::
 
 Un **nombre relatif** peut être positif, négatif ou nul. Sur une droite graduée, les nombres augmentent de gauche à droite.
 

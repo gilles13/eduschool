@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FRA-VAR-MANQ-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Quelle fraction simplifiée manque : □ + [[connu]] = [[resultat]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -22,7 +23,13 @@
             "d1": "\\(\\frac{1}{3}\\)",
             "d2": "\\(\\frac{5}{6}\\)",
             "d3": "\\(\\frac{7}{6}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 6 comme dénominateur commun.\n5/6 = 5/6 et 1/3 = 2/6.\n5/6 - 2/6 = 3/6.\nJe simplifie par 3 : 3/6 = 1/2."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 6 comme dénominateur commun.\n5/6 = 5/6 et 1/3 = 2/6.\n5/6 - 2/6 = 3/6.\nJe simplifie par 3 : 3/6 = 1/2.",
+            "resultat_num": 5,
+            "resultat_den": 6,
+            "connu_num": 1,
+            "connu_den": 3,
+            "bonne_num": 1,
+            "bonne_den": 2
           },
           "progression": 1
         },
@@ -34,7 +41,13 @@
             "d1": "\\(\\frac{1}{4}\\)",
             "d2": "\\(\\frac{3}{4}\\)",
             "d3": "\\(1\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nLes dénominateurs sont déjà identiques : 4.\n3/4 - 1/4 = 2/4.\nJe simplifie par 2 : 2/4 = 1/2."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nLes dénominateurs sont déjà identiques : 4.\n3/4 - 1/4 = 2/4.\nJe simplifie par 2 : 2/4 = 1/2.",
+            "resultat_num": 3,
+            "resultat_den": 4,
+            "connu_num": 1,
+            "connu_den": 4,
+            "bonne_num": 1,
+            "bonne_den": 2
           },
           "progression": 1
         },
@@ -46,7 +59,13 @@
             "d1": "\\(\\frac{3}{8}\\)",
             "d2": "\\(\\frac{7}{8}\\)",
             "d3": "\\(\\frac{5}{4}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nLes dénominateurs sont déjà identiques : 8.\n7/8 - 3/8 = 4/8.\nJe simplifie par 4 : 4/8 = 1/2."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nLes dénominateurs sont déjà identiques : 8.\n7/8 - 3/8 = 4/8.\nJe simplifie par 4 : 4/8 = 1/2.",
+            "resultat_num": 7,
+            "resultat_den": 8,
+            "connu_num": 3,
+            "connu_den": 8,
+            "bonne_num": 1,
+            "bonne_den": 2
           },
           "progression": 1
         },
@@ -58,7 +77,13 @@
             "d1": "\\(\\frac{1}{5}\\)",
             "d2": "\\(\\frac{4}{5}\\)",
             "d3": "\\(1\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nLes dénominateurs sont déjà identiques : 5.\n4/5 - 1/5 = 3/5.\n3/5 est déjà sous forme simplifiée."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nLes dénominateurs sont déjà identiques : 5.\n4/5 - 1/5 = 3/5.\n3/5 est déjà sous forme simplifiée.",
+            "resultat_num": 4,
+            "resultat_den": 5,
+            "connu_num": 1,
+            "connu_den": 5,
+            "bonne_num": 3,
+            "bonne_den": 5
           },
           "progression": 1
         },
@@ -70,7 +95,13 @@
             "d1": "\\(\\frac{1}{2}\\)",
             "d2": "\\(\\frac{5}{6}\\)",
             "d3": "\\(\\frac{4}{3}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 6 comme dénominateur commun.\n5/6 = 5/6 et 1/2 = 3/6.\n5/6 - 3/6 = 2/6.\nJe simplifie par 2 : 2/6 = 1/3."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 6 comme dénominateur commun.\n5/6 = 5/6 et 1/2 = 3/6.\n5/6 - 3/6 = 2/6.\nJe simplifie par 2 : 2/6 = 1/3.",
+            "resultat_num": 5,
+            "resultat_den": 6,
+            "connu_num": 1,
+            "connu_den": 2,
+            "bonne_num": 1,
+            "bonne_den": 3
           },
           "progression": 1
         },
@@ -82,7 +113,13 @@
             "d1": "\\(\\frac{1}{3}\\)",
             "d2": "\\(\\frac{11}{12}\\)",
             "d3": "\\(\\frac{5}{4}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 12 comme dénominateur commun.\n11/12 = 11/12 et 1/3 = 4/12.\n11/12 - 4/12 = 7/12.\n7/12 est déjà sous forme simplifiée."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 12 comme dénominateur commun.\n11/12 = 11/12 et 1/3 = 4/12.\n11/12 - 4/12 = 7/12.\n7/12 est déjà sous forme simplifiée.",
+            "resultat_num": 11,
+            "resultat_den": 12,
+            "connu_num": 1,
+            "connu_den": 3,
+            "bonne_num": 7,
+            "bonne_den": 12
           },
           "progression": 1
         },
@@ -94,7 +131,13 @@
             "d1": "\\(\\frac{1}{5}\\)",
             "d2": "\\(\\frac{7}{10}\\)",
             "d3": "\\(\\frac{9}{10}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 10 comme dénominateur commun.\n7/10 = 7/10 et 1/5 = 2/10.\n7/10 - 2/10 = 5/10.\nJe simplifie par 5 : 5/10 = 1/2."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 10 comme dénominateur commun.\n7/10 = 7/10 et 1/5 = 2/10.\n7/10 - 2/10 = 5/10.\nJe simplifie par 5 : 5/10 = 1/2.",
+            "resultat_num": 7,
+            "resultat_den": 10,
+            "connu_num": 1,
+            "connu_den": 5,
+            "bonne_num": 1,
+            "bonne_den": 2
           },
           "progression": 2
         },
@@ -106,7 +149,13 @@
             "d1": "\\(\\frac{2}{5}\\)",
             "d2": "\\(\\frac{13}{15}\\)",
             "d3": "\\(\\frac{19}{15}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 15 comme dénominateur commun.\n13/15 = 13/15 et 2/5 = 6/15.\n13/15 - 6/15 = 7/15.\n7/15 est déjà sous forme simplifiée."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 15 comme dénominateur commun.\n13/15 = 13/15 et 2/5 = 6/15.\n13/15 - 6/15 = 7/15.\n7/15 est déjà sous forme simplifiée.",
+            "resultat_num": 13,
+            "resultat_den": 15,
+            "connu_num": 2,
+            "connu_den": 5,
+            "bonne_num": 7,
+            "bonne_den": 15
           },
           "progression": 2
         },
@@ -118,7 +167,13 @@
             "d1": "\\(\\frac{5}{9}\\)",
             "d2": "\\(\\frac{17}{18}\\)",
             "d3": "\\(\\frac{3}{2}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 18 comme dénominateur commun.\n17/18 = 17/18 et 5/9 = 10/18.\n17/18 - 10/18 = 7/18.\n7/18 est déjà sous forme simplifiée."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 18 comme dénominateur commun.\n17/18 = 17/18 et 5/9 = 10/18.\n17/18 - 10/18 = 7/18.\n7/18 est déjà sous forme simplifiée.",
+            "resultat_num": 17,
+            "resultat_den": 18,
+            "connu_num": 5,
+            "connu_den": 9,
+            "bonne_num": 7,
+            "bonne_den": 18
           },
           "progression": 2
         },
@@ -130,7 +185,13 @@
             "d1": "\\(\\frac{3}{8}\\)",
             "d2": "\\(\\frac{11}{12}\\)",
             "d3": "\\(\\frac{31}{24}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 96 comme dénominateur commun.\n11/12 = 88/96 et 3/8 = 36/96.\n88/96 - 36/96 = 52/96.\nJe simplifie par 4 : 52/96 = 13/24."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 96 comme dénominateur commun.\n11/12 = 88/96 et 3/8 = 36/96.\n88/96 - 36/96 = 52/96.\nJe simplifie par 4 : 52/96 = 13/24.",
+            "resultat_num": 11,
+            "resultat_den": 12,
+            "connu_num": 3,
+            "connu_den": 8,
+            "bonne_num": 13,
+            "bonne_den": 24
           },
           "progression": 2
         },
@@ -142,7 +203,13 @@
             "d1": "\\(\\frac{7}{10}\\)",
             "d2": "\\(\\frac{19}{20}\\)",
             "d3": "\\(\\frac{33}{20}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 20 comme dénominateur commun.\n19/20 = 19/20 et 7/10 = 14/20.\n19/20 - 14/20 = 5/20.\nJe simplifie par 5 : 5/20 = 1/4."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 20 comme dénominateur commun.\n19/20 = 19/20 et 7/10 = 14/20.\n19/20 - 14/20 = 5/20.\nJe simplifie par 5 : 5/20 = 1/4.",
+            "resultat_num": 19,
+            "resultat_den": 20,
+            "connu_num": 7,
+            "connu_den": 10,
+            "bonne_num": 1,
+            "bonne_den": 4
           },
           "progression": 2
         },
@@ -154,7 +221,13 @@
             "d1": "\\(\\frac{3}{7}\\)",
             "d2": "\\(\\frac{13}{14}\\)",
             "d3": "\\(\\frac{19}{14}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 14 comme dénominateur commun.\n13/14 = 13/14 et 3/7 = 6/14.\n13/14 - 6/14 = 7/14.\nJe simplifie par 7 : 7/14 = 1/2."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 14 comme dénominateur commun.\n13/14 = 13/14 et 3/7 = 6/14.\n13/14 - 6/14 = 7/14.\nJe simplifie par 7 : 7/14 = 1/2.",
+            "resultat_num": 13,
+            "resultat_den": 14,
+            "connu_num": 3,
+            "connu_den": 7,
+            "bonne_num": 1,
+            "bonne_den": 2
           },
           "progression": 2
         },
@@ -166,7 +239,13 @@
             "d1": "\\(\\frac{5}{8}\\)",
             "d2": "\\(\\frac{23}{24}\\)",
             "d3": "\\(\\frac{19}{12}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 24 comme dénominateur commun.\n23/24 = 23/24 et 5/8 = 15/24.\n23/24 - 15/24 = 8/24.\nJe simplifie par 8 : 8/24 = 1/3."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 24 comme dénominateur commun.\n23/24 = 23/24 et 5/8 = 15/24.\n23/24 - 15/24 = 8/24.\nJe simplifie par 8 : 8/24 = 1/3.",
+            "resultat_num": 23,
+            "resultat_den": 24,
+            "connu_num": 5,
+            "connu_den": 8,
+            "bonne_num": 1,
+            "bonne_den": 3
           },
           "progression": 3
         },
@@ -178,7 +257,13 @@
             "d1": "\\(\\frac{3}{10}\\)",
             "d2": "\\(\\frac{17}{20}\\)",
             "d3": "\\(\\frac{23}{20}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 20 comme dénominateur commun.\n17/20 = 17/20 et 3/10 = 6/20.\n17/20 - 6/20 = 11/20.\n11/20 est déjà sous forme simplifiée."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 20 comme dénominateur commun.\n17/20 = 17/20 et 3/10 = 6/20.\n17/20 - 6/20 = 11/20.\n11/20 est déjà sous forme simplifiée.",
+            "resultat_num": 17,
+            "resultat_den": 20,
+            "connu_num": 3,
+            "connu_den": 10,
+            "bonne_num": 11,
+            "bonne_den": 20
           },
           "progression": 3
         },
@@ -190,7 +275,13 @@
             "d1": "\\(\\frac{7}{15}\\)",
             "d2": "\\(\\frac{29}{30}\\)",
             "d3": "\\(\\frac{43}{30}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 30 comme dénominateur commun.\n29/30 = 29/30 et 7/15 = 14/30.\n29/30 - 14/30 = 15/30.\nJe simplifie par 15 : 15/30 = 1/2."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 30 comme dénominateur commun.\n29/30 = 29/30 et 7/15 = 14/30.\n29/30 - 14/30 = 15/30.\nJe simplifie par 15 : 15/30 = 1/2.",
+            "resultat_num": 29,
+            "resultat_den": 30,
+            "connu_num": 7,
+            "connu_den": 15,
+            "bonne_num": 1,
+            "bonne_den": 2
           },
           "progression": 3
         },
@@ -202,7 +293,13 @@
             "d1": "\\(\\frac{5}{12}\\)",
             "d2": "\\(\\frac{31}{36}\\)",
             "d3": "\\(\\frac{23}{18}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 36 comme dénominateur commun.\n31/36 = 31/36 et 5/12 = 15/36.\n31/36 - 15/36 = 16/36.\nJe simplifie par 4 : 16/36 = 4/9."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 36 comme dénominateur commun.\n31/36 = 31/36 et 5/12 = 15/36.\n31/36 - 15/36 = 16/36.\nJe simplifie par 4 : 16/36 = 4/9.",
+            "resultat_num": 31,
+            "resultat_den": 36,
+            "connu_num": 5,
+            "connu_den": 12,
+            "bonne_num": 4,
+            "bonne_den": 9
           },
           "progression": 3
         },
@@ -214,7 +311,13 @@
             "d1": "\\(\\frac{11}{20}\\)",
             "d2": "\\(\\frac{37}{40}\\)",
             "d3": "\\(\\frac{59}{40}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 40 comme dénominateur commun.\n37/40 = 37/40 et 11/20 = 22/40.\n37/40 - 22/40 = 15/40.\nJe simplifie par 5 : 15/40 = 3/8."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 40 comme dénominateur commun.\n37/40 = 37/40 et 11/20 = 22/40.\n37/40 - 22/40 = 15/40.\nJe simplifie par 5 : 15/40 = 3/8.",
+            "resultat_num": 37,
+            "resultat_den": 40,
+            "connu_num": 11,
+            "connu_den": 20,
+            "bonne_num": 3,
+            "bonne_den": 8
           },
           "progression": 3
         },
@@ -226,15 +329,25 @@
             "d1": "\\(\\frac{4}{7}\\)",
             "d2": "\\(\\frac{41}{42}\\)",
             "d3": "\\(\\frac{65}{42}\\)",
-            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 42 comme dénominateur commun.\n41/42 = 41/42 et 4/7 = 24/42.\n41/42 - 24/42 = 17/42.\n17/42 est déjà sous forme simplifiée."
+            "correction": "Pour retrouver le terme manquant, je soustrais le terme connu au résultat.\nJe choisis 42 comme dénominateur commun.\n41/42 = 41/42 et 4/7 = 24/42.\n41/42 - 24/42 = 17/42.\n17/42 est déjà sous forme simplifiée.",
+            "resultat_num": 41,
+            "resultat_den": 42,
+            "connu_num": 4,
+            "connu_den": 7,
+            "bonne_num": 17,
+            "bonne_den": 42
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "resultat_num / resultat_den - connu_num / connu_den",
+      "reponse_exploitable": "bonne_num / bonne_den",
+      "moteur": "Ryacas"
     },
     {
       "id": "FRA-MANQ-METHODE-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -253,7 +366,12 @@
             "p1": "5/6 − 1/3",
             "p2": "5/6 + 1/3",
             "p3": "1/3 − 5/6",
-            "p4": "5/6 × 1/3"
+            "p4": "5/6 × 1/3",
+            "numerateur_total": 5,
+            "denominateur_total": 6,
+            "numerateur_connu": 1,
+            "denominateur_connu": 3,
+            "resultat_exploitable": 0.5
           },
           "progression": 1
         },
@@ -265,7 +383,12 @@
             "p1": "7/8 − 1/4",
             "p2": "7/8 + 1/4",
             "p3": "1/4 − 7/8",
-            "p4": "7/8 × 1/4"
+            "p4": "7/8 × 1/4",
+            "numerateur_total": 7,
+            "denominateur_total": 8,
+            "numerateur_connu": 1,
+            "denominateur_connu": 4,
+            "resultat_exploitable": 0.625
           },
           "progression": 1
         },
@@ -277,7 +400,12 @@
             "p1": "9/10 − 2/5",
             "p2": "9/10 + 2/5",
             "p3": "2/5 − 9/10",
-            "p4": "9/10 × 2/5"
+            "p4": "9/10 × 2/5",
+            "numerateur_total": 9,
+            "denominateur_total": 10,
+            "numerateur_connu": 2,
+            "denominateur_connu": 5,
+            "resultat_exploitable": 0.5
           },
           "progression": 1
         },
@@ -289,7 +417,12 @@
             "p1": "6/7 − 3/7",
             "p2": "6/7 + 3/7",
             "p3": "3/7 − 6/7",
-            "p4": "6/7 × 3/7"
+            "p4": "6/7 × 3/7",
+            "numerateur_total": 6,
+            "denominateur_total": 7,
+            "numerateur_connu": 3,
+            "denominateur_connu": 7,
+            "resultat_exploitable": 0.42857142857142855
           },
           "progression": 1
         },
@@ -301,7 +434,12 @@
             "p1": "5/6 − 1/6",
             "p2": "5/6 + 1/6",
             "p3": "1/6 − 5/6",
-            "p4": "5/6 × 1/6"
+            "p4": "5/6 × 1/6",
+            "numerateur_total": 5,
+            "denominateur_total": 6,
+            "numerateur_connu": 1,
+            "denominateur_connu": 6,
+            "resultat_exploitable": 0.6666666666666666
           },
           "progression": 1
         },
@@ -313,11 +451,19 @@
             "p1": "7/8 − 3/8",
             "p2": "7/8 + 3/8",
             "p3": "3/8 − 7/8",
-            "p4": "7/8 × 3/8"
+            "p4": "7/8 × 3/8",
+            "numerateur_total": 7,
+            "denominateur_total": 8,
+            "numerateur_connu": 3,
+            "denominateur_connu": 8,
+            "resultat_exploitable": 0.5
           },
           "progression": 1
         }
-      ]
+      ],
+      "enonce_exploitable": "(numerateur_total / denominateur_total) - (numerateur_connu / denominateur_connu)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "Ryacas"
     }
   ]
 }

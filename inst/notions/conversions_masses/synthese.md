@@ -1,4 +1,10 @@
-# Synthèse : Conversions de masses
+# L'essentiel : Synthèse : Conversions de masses
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une conversion de masse change l’unité, pas la masse mesurée.
+:::
 
 - 1 t = 1 000 kg.
 - 1 kg = 1 000 g ; 1 g = 1 000 mg.

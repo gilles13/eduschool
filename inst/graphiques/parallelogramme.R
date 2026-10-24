@@ -1,6 +1,32 @@
-graphique_parallelogramme = function(illustration = NULL, codage = "angle_droit", approximation = FALSE) {
+graphique_parallelogramme = function(illustration = NULL, codage = "angle_droit", approximation = FALSE, type = NULL) {
+  if (!is.null(type)) {
+    stopifnot(length(type) == 1L, type %in% c(1, 2))
+    codage = c("angle_droit", "cotes_egaux")[[type]]
+  }
   if (!is.null(illustration$codage)) codage = illustration$codage
-  stopifnot(length(codage) == 1L, codage %in% c("angle_droit", "cotes_egaux", "carre"))
+  stopifnot(length(codage) == 1L, codage %in% c("angle_droit", "cotes_egaux", "carre", "diagonales_raisonnement"))
+  if (codage == "diagonales_raisonnement") {
+    sommets = data.frame(x = c(0, 2.5, 3, .5, 0), y = c(0, -.5, 2, 2.5, 0))
+    lettres = data.frame(x = c(-.2, 2.7, 3.2, .35, 1.65), y = c(-.2, -.7, 2.2, 2.75, .85), nom = c("A", "B", "C", "D", "O"))
+    # AC = (3, 2), BD = (-2, 3): produit scalaire nul.
+    # O = (1.5, 1) est le milieu des deux diagonales.
+    angle = data.frame(x = c(1.5 + .15 * 3 / sqrt(13),
+                             1.5 + .15 * (3 - 2) / sqrt(13),
+                             1.5 - .15 * 2 / sqrt(13)),
+                       y = c(1 + .15 * 2 / sqrt(13),
+                             1 + .15 * (2 + 3) / sqrt(13),
+                             1 + .15 * 3 / sqrt(13)))
+    p = ggplot2::ggplot() +
+      ggplot2::geom_path(data = sommets, ggplot2::aes(x = x, y = y), linewidth = .5) +
+      ggplot2::annotate("segment", x = 0, y = 0, xend = 3, yend = 2, linewidth = .45) +
+      ggplot2::annotate("segment", x = 2.5, y = -.5, xend = .5, yend = 2.5, linewidth = .45) +
+      ggplot2::geom_path(data = angle, ggplot2::aes(x = x, y = y), linewidth = .4) +
+      ggplot2::geom_text(data = lettres, ggplot2::aes(x = x, y = y, label = nom), size = 4) +
+      ggplot2::coord_fixed(xlim = c(-.6, 3.5), ylim = c(-1, 3)) +
+      ggplot2::theme_void()
+    attr(p, "eduschool_dimensions") = c(4.5, 3.2)
+    return(p)
+  }
   if (codage == "angle_droit") {
     p = ggplot2::ggplot() +
       ggplot2::annotate("segment", x=0, y=0, xend=3.5, yend=0, linewidth=.6) +

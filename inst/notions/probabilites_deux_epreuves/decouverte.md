@@ -28,6 +28,6 @@ Le nombre total de chemins doit correspondre au produit des nombres de possibili
 
 ## Pour vérifier tes découvertes
 
-**1. Deux pièces**
+1. **Deux pièces :**
 
 Les chemins favorables sont PF et FP parmi quatre chemins : $2/4=1/2$.

@@ -28,6 +28,6 @@ Une probabilité porte sur un événement, c’est-à-dire un ensemble d’issue
 
 ## Pour vérifier tes découvertes
 
-**1. Dé équilibré**
+1. **Dé équilibré :**
 
 Les issues favorables sont 3 et 6 : $P=2/6=1/3$.

@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "FAFF-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Soit f(𝑥) = [[a]]𝑥 [[b]]. Quelle est l’image de [[x]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -614,11 +615,15 @@
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "a * x + b",
+      "reponse_exploitable": "as.numeric(bonne)",
+      "moteur": "R"
     },
     {
       "id": "FAFF-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -631,6 +636,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 5,
+            "resultat_exploitable": 5,
             "enonce": "Dans f(𝑥)=2𝑥+5, quel nombre est l’ordonnée à l’origine ?",
             "reponse": "5",
             "correction": "Dans f(𝑥)=a𝑥+b, b est l’ordonnée à l’origine.",
@@ -642,6 +649,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 7,
+            "resultat_exploitable": 7,
             "enonce": "Dans f(𝑥)=3𝑥+7, quel nombre est l’ordonnée à l’origine ?",
             "reponse": "7",
             "correction": "Dans f(x)=ax+b, l’ordonnée à l’origine est b : ici 7.",
@@ -653,6 +662,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "resultat_exploitable": 4,
             "enonce": "Dans f(𝑥)=−2𝑥+4, quel nombre est l’ordonnée à l’origine ?",
             "reponse": "4",
             "correction": "Dans f(x)=ax+b, l’ordonnée à l’origine est b : ici 4.",
@@ -662,11 +673,15 @@
             "p4": "0"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "FAFF-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -679,6 +694,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": -3,
+            "resultat_exploitable": -3,
             "enonce": "Dans f(𝑥)=−3𝑥+2, quel nombre est le coefficient directeur ?",
             "reponse": "−3",
             "correction": "Dans f(𝑥)=a𝑥+b, a est le coefficient directeur de la droite.",
@@ -690,6 +707,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "resultat_exploitable": 4,
             "enonce": "Dans f(𝑥)=4𝑥−1, quel nombre est le coefficient directeur ?",
             "reponse": "4",
             "correction": "Dans f(x)=ax+b, le coefficient directeur est a : ici 4.",
@@ -701,6 +720,8 @@
         },
         {
           "parametres": {
+            "valeur_1": -5,
+            "resultat_exploitable": -5,
             "enonce": "Dans f(𝑥)=−5𝑥+6, quel nombre est le coefficient directeur ?",
             "reponse": "−5",
             "correction": "Dans f(x)=ax+b, le coefficient directeur est a : ici −5.",
@@ -710,7 +731,10 @@
             "p4": "5"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

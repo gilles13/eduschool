@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "MES-CONVERSION_VOLUMES-001",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -16,6 +17,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 0.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 500,
             "enonce": "0,5 m³ correspondent à…",
             "reponse": "500 L",
             "correction": "1 m³ = 1 000 L.",
@@ -27,6 +31,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 0.8,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 800,
             "enonce": "0,8 m³ correspondent à…",
             "reponse": "800 L",
             "correction": "0,8 m³ = 800 L.",
@@ -38,6 +45,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 1.2,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 1200,
             "enonce": "1,2 m³ correspondent à…",
             "reponse": "1 200 L",
             "correction": "1,2 m³ = 1 200 L.",
@@ -47,11 +57,15 @@
             "p4": "1,2 L"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_VOLUMES-002",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -64,6 +78,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 2.0,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 2000,
             "enonce": "2 L correspondent à…",
             "reponse": "2 000 cm³",
             "correction": "1 L = 1 000 cm³.",
@@ -75,6 +92,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 3.0,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 3000,
             "enonce": "3 L correspondent à…",
             "reponse": "3 000 cm³",
             "correction": "3 L = 3 000 cm³.",
@@ -86,6 +106,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 4.5,
+            "facteur_conversion": 1000,
+            "resultat_exploitable": 4500,
             "enonce": "4,5 L correspondent à…",
             "reponse": "4 500 cm³",
             "correction": "4,5 L = 4 500 cm³.",
@@ -95,11 +118,15 @@
             "p4": "4,5 cm³"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_VOLUMES-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -112,6 +139,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 3000.0,
+            "facteur_conversion": 0.001,
+            "resultat_exploitable": 3,
             "enonce": "3000 cm³ correspondent à…",
             "reponse": "3 L",
             "correction": "1 L = 1 000 cm³.",
@@ -123,6 +153,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 5000.0,
+            "facteur_conversion": 0.001,
+            "resultat_exploitable": 5,
             "enonce": "5000 cm³ correspondent à…",
             "reponse": "5 L",
             "correction": "5000 cm³ = 5 L.",
@@ -134,6 +167,9 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 7500.0,
+            "facteur_conversion": 0.001,
+            "resultat_exploitable": 7.5,
             "enonce": "7500 cm³ correspondent à…",
             "reponse": "7,5 L",
             "correction": "7500 cm³ = 7,5 L.",
@@ -143,11 +179,15 @@
             "p4": "750 L"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale * facteur_conversion",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "MES-CONVERSION_VOLUMES-VOCAB-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quelle grandeur mesure l’espace occupé par un solide ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -165,11 +205,15 @@
         "longueur",
         "contenance"
       ],
-      "correction": "Le volume mesure l’espace occupé par un solide."
+      "correction": "Le volume mesure l’espace occupé par un solide.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_VOLUMES-VOCAB-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quel solide possède six faces carrées identiques ?",
       "presentation": {
         "type": "mot_masque",
@@ -188,11 +232,15 @@
         "cercle",
         "cône"
       ],
-      "correction": "Le terme recherché est « cube »."
+      "correction": "Le terme recherché est « cube ».",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "MES-CONVERSION_VOLUMES-APPLICATION",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -205,6 +253,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 2,
+            "resultat_exploitable": 8,
             "enonce": "Un cube a des arêtes de 2 dm. Quel est son volume en litres ?",
             "reponse": "8 L",
             "correction": "2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L.",
@@ -216,6 +266,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 3,
+            "resultat_exploitable": 27,
             "enonce": "Un cube a des arêtes de 3 dm. Quel est son volume en litres ?",
             "reponse": "27 L",
             "correction": "3³ = 27 dm³ et 1 dm³ = 1 L.",
@@ -227,6 +279,8 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "resultat_exploitable": 64,
             "enonce": "Un cube a des arêtes de 4 dm. Quel est son volume en litres ?",
             "reponse": "64 L",
             "correction": "4³ = 64 dm³ et 1 dm³ = 1 L.",
@@ -236,7 +290,10 @@
             "p4": "640 L"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ 3",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

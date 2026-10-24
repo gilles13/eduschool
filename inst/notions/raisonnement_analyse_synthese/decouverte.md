@@ -118,7 +118,7 @@ Une suite d’implications n’est pas automatiquement une suite d’équivalenc
 
 ## Pour vérifier tes découvertes
 
-**1. distinguer candidat et solution**
+1. **distinguer candidat et solution :**
 
 Les candidats sont $3$ et $-1$. On revient à l’équation de départ :
 
@@ -134,6 +134,6 @@ $$
 
 Ainsi, seule la valeur $3$ est solution.
 
-**2. reconnaître le raisonnement**
+2. **reconnaître le raisonnement :**
 
 La transformation de l’équation et la recherche des trois valeurs possibles constituent l’**analyse** : elles produisent des candidats. Le retour à l’équation de départ pour tester ces valeurs constitue la **synthèse**.

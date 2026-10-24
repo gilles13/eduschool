@@ -91,7 +91,7 @@ Le facteur commun peut être un nombre, contenir une lettre ou être lui-même u
 
 ## Pour vérifier tes découvertes
 
-#**À essayer 1 — Mettre un facteur commun en évidence :**
+**1. Mettre un facteur commun en évidence :**
 
 Le facteur commun à $8x^2$ et $12x$ est $4x$ :
 

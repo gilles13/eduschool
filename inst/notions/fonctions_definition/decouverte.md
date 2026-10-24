@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : une fonction associe à chaque valeur admise de départ une unique valeur d’arrivée appelée image. Vérifie ensuite ton exemple avec la méthode de la fiche : lire ou calculer une image ; chercher les valeurs de départ pour les antécédents.

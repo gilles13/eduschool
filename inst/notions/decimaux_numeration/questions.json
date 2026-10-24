@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "NUM-DEC-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -22,7 +23,10 @@
             "p1": "3 centaines",
             "p2": "3 dizaines",
             "p3": "3 unités",
-            "p4": "3 dixièmes"
+            "p4": "3 dixièmes",
+            "chiffre": 3,
+            "position": 100,
+            "resultat_exploitable": 300
           }
         },
         {
@@ -33,7 +37,10 @@
             "p1": "4 centaines",
             "p2": "4 dizaines",
             "p3": "4 unités",
-            "p4": "4 dixièmes"
+            "p4": "4 dixièmes",
+            "chiffre": 4,
+            "position": 100,
+            "resultat_exploitable": 400
           }
         },
         {
@@ -44,14 +51,21 @@
             "p1": "7 centaines",
             "p2": "7 dizaines",
             "p3": "7 unités",
-            "p4": "7 dixièmes"
+            "p4": "7 dixièmes",
+            "chiffre": 7,
+            "position": 100,
+            "resultat_exploitable": 700
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "chiffre * position",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "NUM-DEC-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -70,7 +84,10 @@
             "p1": "6 dixièmes",
             "p2": "6 unités",
             "p3": "6 centièmes",
-            "p4": "6 dizaines"
+            "p4": "6 dizaines",
+            "chiffre": 6,
+            "position": 10,
+            "resultat_exploitable": 0.6
           }
         },
         {
@@ -81,7 +98,10 @@
             "p1": "5 dixièmes",
             "p2": "5 unités",
             "p3": "5 centièmes",
-            "p4": "5 dizaines"
+            "p4": "5 dizaines",
+            "chiffre": 5,
+            "position": 10,
+            "resultat_exploitable": 0.5
           }
         },
         {
@@ -92,14 +112,21 @@
             "p1": "2 dixièmes",
             "p2": "2 unités",
             "p3": "2 centièmes",
-            "p4": "2 dizaines"
+            "p4": "2 dizaines",
+            "chiffre": 2,
+            "position": 10,
+            "resultat_exploitable": 0.2
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "chiffre / position",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "NUM-DEC-003",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -118,7 +145,12 @@
             "p1": "500 + 8 + 0,4 + 0,02",
             "p2": "500 + 80 + 0,4 + 0,02",
             "p3": "500 + 8 + 4 + 2",
-            "p4": "50 + 8 + 0,4 + 0,02"
+            "p4": "50 + 8 + 0,4 + 0,02",
+            "t1": 500.0,
+            "t2": 8.0,
+            "t3": 0.4,
+            "t4": 0.02,
+            "resultat_exploitable": 508.42
           }
         },
         {
@@ -129,7 +161,12 @@
             "p1": "700 + 4 + 0,3 + 0,05",
             "p2": "700 + 40 + 0,3 + 0,05",
             "p3": "700 + 4 + 3 + 5",
-            "p4": "70 + 4 + 0,3 + 0,05"
+            "p4": "70 + 4 + 0,3 + 0,05",
+            "t1": 700.0,
+            "t2": 4.0,
+            "t3": 0.3,
+            "t4": 0.05,
+            "resultat_exploitable": 704.35
           }
         },
         {
@@ -140,14 +177,23 @@
             "p1": "900 + 2 + 0,1 + 0,07",
             "p2": "900 + 20 + 0,1 + 0,07",
             "p3": "900 + 2 + 1 + 7",
-            "p4": "90 + 2 + 0,1 + 0,07"
+            "p4": "90 + 2 + 0,1 + 0,07",
+            "t1": 900.0,
+            "t2": 2.0,
+            "t3": 0.1,
+            "t4": 0.07,
+            "resultat_exploitable": 902.17
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "t1 + t2 + t3 + t4",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "NUM-DEC-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -166,7 +212,12 @@
             "p1": "72,45",
             "p2": "72,405",
             "p3": "702,45",
-            "p4": "72,54"
+            "p4": "72,54",
+            "t1": 70.0,
+            "t2": 2.0,
+            "t3": 0.4,
+            "t4": 0.05,
+            "resultat_exploitable": 72.45
           }
         },
         {
@@ -177,7 +228,12 @@
             "p1": "56,38",
             "p2": "56,308",
             "p3": "506,38",
-            "p4": "56,83"
+            "p4": "56,83",
+            "t1": 50.0,
+            "t2": 6.0,
+            "t3": 0.3,
+            "t4": 0.08,
+            "resultat_exploitable": 56.38
           }
         },
         {
@@ -188,14 +244,23 @@
             "p1": "84,72",
             "p2": "84,702",
             "p3": "804,72",
-            "p4": "84,27"
+            "p4": "84,27",
+            "t1": 80.0,
+            "t2": 4.0,
+            "t3": 0.7,
+            "t4": 0.02,
+            "resultat_exploitable": 84.72
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "t1 + t2 + t3 + t4",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "NUM-DEC-005",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -214,7 +279,9 @@
             "p1": "divisée par 10",
             "p2": "multipliée par 10",
             "p3": "augmentée de 1",
-            "p4": "inchangée"
+            "p4": "inchangée",
+            "facteur": 10,
+            "resultat_exploitable": 10
           }
         },
         {
@@ -225,7 +292,9 @@
             "p1": "10",
             "p2": "100",
             "p3": "2",
-            "p4": "1"
+            "p4": "1",
+            "facteur": 10,
+            "resultat_exploitable": 10
           }
         },
         {
@@ -236,14 +305,20 @@
             "p1": "On divise par 10.",
             "p2": "On multiplie par 10.",
             "p3": "On ajoute 1.",
-            "p4": "On ne change rien."
+            "p4": "On ne change rien.",
+            "facteur": 10,
+            "resultat_exploitable": 10
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "facteur",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "NUM-DEC-VOCAB-MOT_A_TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on chacun des dix symboles de 0 à 9 utilisés pour écrire un nombre ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -261,11 +336,15 @@
         "dizaine",
         "centième"
       ],
-      "correction": "Un chiffre est un symbole de 0 à 9."
+      "correction": "Un chiffre est un symbole de 0 à 9.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "NUM-DEC-VOCAB-MOT_MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on le signe qui sépare partie entière et partie décimale dans une écriture décimale ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -284,7 +363,10 @@
         "dixième",
         "centième"
       ],
-      "correction": "La virgule sépare les unités des dixièmes dans l’écriture décimale."
+      "correction": "La virgule sépare les unités des dixièmes dans l’écriture décimale.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

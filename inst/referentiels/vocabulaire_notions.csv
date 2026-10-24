@@ -127,3 +127,33 @@ triangles;médiatrice
 triangles;cercle circonscrit
 triangles;hauteur
 triangles;médiane
+decimaux_numeration;chiffre
+decimaux_numeration;nombre
+decimaux_numeration;rang
+decimaux_numeration;valeur de position
+decimaux_numeration;partie entière
+decimaux_numeration;partie décimale
+decimaux_numeration;dixième
+decimaux_numeration;centième
+decimaux_numeration;millième
+decimaux_fractions;fraction décimale
+decimaux_fractions;numérateur
+decimaux_fractions;dénominateur
+decimaux_fractions;écriture décimale
+decimaux_decomposition;décomposition
+decimaux_decomposition;unité
+decimaux_decomposition;dizaine
+decimaux_decomposition;centaine
+decimaux_comparaison;ordre croissant
+decimaux_comparaison;ordre décroissant
+decimaux_comparaison;comparaison
+decimaux_encadrement;encadrement
+decimaux_encadrement;borne inférieure
+decimaux_encadrement;borne supérieure
+decimaux_arrondis;arrondi
+decimaux_arrondis;valeur approchée
+decimaux_arrondis;approximation par défaut
+decimaux_arrondis;approximation par excès
+decimaux_droite_graduee;droite graduée
+decimaux_droite_graduee;graduation
+decimaux_droite_graduee;abscisse

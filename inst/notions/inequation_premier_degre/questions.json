@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "INEQ-1D-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "Résous [[inequation]].",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -21,7 +22,12 @@
             "d1": "𝑥 > −5",
             "d2": "𝑥 < 5",
             "d3": "𝑥 > 5",
-            "etapes": "On soustrait 1 aux deux membres : 2𝑥 < −10. On divise les deux membres par 2 : 𝑥 < −5."
+            "etapes": "On soustrait 1 aux deux membres : 2𝑥 < −10. On divise les deux membres par 2 : 𝑥 < −5.",
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "d": -9,
+            "borne": -5
           },
           "progression": 1
         },
@@ -32,7 +38,12 @@
             "d1": "𝑥 < −3",
             "d2": "𝑥 > 3",
             "d3": "𝑥 < 3",
-            "etapes": "On ajoute 2 aux deux membres : 3𝑥 > −9. On divise les deux membres par 3 : 𝑥 > −3."
+            "etapes": "On ajoute 2 aux deux membres : 3𝑥 > −9. On divise les deux membres par 3 : 𝑥 > −3.",
+            "a": 3,
+            "b": -2,
+            "c": 0,
+            "d": -11,
+            "borne": -3
           },
           "progression": 1
         },
@@ -43,7 +54,12 @@
             "d1": "𝑥 ≥ −2",
             "d2": "𝑥 ≤ 2",
             "d3": "𝑥 ≥ 2",
-            "etapes": "On soustrait 3 aux deux membres : 4𝑥 ≤ −8. On divise les deux membres par 4 : 𝑥 ≤ −2."
+            "etapes": "On soustrait 3 aux deux membres : 4𝑥 ≤ −8. On divise les deux membres par 4 : 𝑥 ≤ −2.",
+            "a": 4,
+            "b": 3,
+            "c": 0,
+            "d": -5,
+            "borne": -2
           },
           "progression": 1
         },
@@ -54,7 +70,12 @@
             "d1": "𝑥 ≤ 2",
             "d2": "𝑥 ≥ −2",
             "d3": "𝑥 ≤ −2",
-            "etapes": "On ajoute 4 aux deux membres : 5𝑥 ≥ 10. On divise les deux membres par 5 : 𝑥 ≥ 2."
+            "etapes": "On ajoute 4 aux deux membres : 5𝑥 ≥ 10. On divise les deux membres par 5 : 𝑥 ≥ 2.",
+            "a": 5,
+            "b": -4,
+            "c": 0,
+            "d": 6,
+            "borne": 2
           },
           "progression": 1
         },
@@ -65,7 +86,12 @@
             "d1": "𝑥 > 3",
             "d2": "𝑥 < −3",
             "d3": "𝑥 > −3",
-            "etapes": "On soustrait 1 aux deux membres : 3𝑥 < 9. On divise les deux membres par 3 : 𝑥 < 3."
+            "etapes": "On soustrait 1 aux deux membres : 3𝑥 < 9. On divise les deux membres par 3 : 𝑥 < 3.",
+            "a": 3,
+            "b": 1,
+            "c": 0,
+            "d": 10,
+            "borne": 3
           },
           "progression": 1
         },
@@ -76,7 +102,12 @@
             "d1": "𝑥 < 4",
             "d2": "𝑥 > −4",
             "d3": "𝑥 < −4",
-            "etapes": "On ajoute 2 aux deux membres : 4𝑥 > 16. On divise les deux membres par 4 : 𝑥 > 4."
+            "etapes": "On ajoute 2 aux deux membres : 4𝑥 > 16. On divise les deux membres par 4 : 𝑥 > 4.",
+            "a": 4,
+            "b": -2,
+            "c": 0,
+            "d": 14,
+            "borne": 4
           },
           "progression": 1
         },
@@ -87,7 +118,12 @@
             "d1": "𝑥 ≥ 5",
             "d2": "𝑥 ≤ −5",
             "d3": "𝑥 ≥ −5",
-            "etapes": "On soustrait 3 aux deux membres : 5𝑥 ≤ 25. On divise les deux membres par 5 : 𝑥 ≤ 5."
+            "etapes": "On soustrait 3 aux deux membres : 5𝑥 ≤ 25. On divise les deux membres par 5 : 𝑥 ≤ 5.",
+            "a": 5,
+            "b": 3,
+            "c": 0,
+            "d": 28,
+            "borne": 5
           },
           "progression": 1
         },
@@ -98,7 +134,12 @@
             "d1": "𝑥 ≤ −4",
             "d2": "𝑥 ≥ 4",
             "d3": "𝑥 ≤ 4",
-            "etapes": "On ajoute 4 aux deux membres : 2𝑥 ≥ −8. On divise les deux membres par 2 : 𝑥 ≥ −4."
+            "etapes": "On ajoute 4 aux deux membres : 2𝑥 ≥ −8. On divise les deux membres par 2 : 𝑥 ≥ −4.",
+            "a": 2,
+            "b": -4,
+            "c": 0,
+            "d": -12,
+            "borne": -4
           },
           "progression": 1
         },
@@ -109,7 +150,12 @@
             "d1": "𝑥 > −3",
             "d2": "𝑥 < 3",
             "d3": "𝑥 > 3",
-            "etapes": "On soustrait 1 aux deux membres : 4𝑥 < −12. On divise les deux membres par 4 : 𝑥 < −3."
+            "etapes": "On soustrait 1 aux deux membres : 4𝑥 < −12. On divise les deux membres par 4 : 𝑥 < −3.",
+            "a": 4,
+            "b": 1,
+            "c": 0,
+            "d": -11,
+            "borne": -3
           },
           "progression": 1
         },
@@ -120,7 +166,12 @@
             "d1": "𝑥 < −2",
             "d2": "𝑥 > 2",
             "d3": "𝑥 < 2",
-            "etapes": "On ajoute 2 aux deux membres : 5𝑥 > −10. On divise les deux membres par 5 : 𝑥 > −2."
+            "etapes": "On ajoute 2 aux deux membres : 5𝑥 > −10. On divise les deux membres par 5 : 𝑥 > −2.",
+            "a": 5,
+            "b": -2,
+            "c": 0,
+            "d": -12,
+            "borne": -2
           },
           "progression": 1
         },
@@ -131,7 +182,12 @@
             "d1": "𝑥 ≥ 2",
             "d2": "𝑥 ≤ −2",
             "d3": "𝑥 ≥ −2",
-            "etapes": "On soustrait 3 aux deux membres : 2𝑥 ≤ 4. On divise les deux membres par 2 : 𝑥 ≤ 2."
+            "etapes": "On soustrait 3 aux deux membres : 2𝑥 ≤ 4. On divise les deux membres par 2 : 𝑥 ≤ 2.",
+            "a": 2,
+            "b": 3,
+            "c": 0,
+            "d": 7,
+            "borne": 2
           },
           "progression": 1
         },
@@ -142,7 +198,12 @@
             "d1": "𝑥 ≤ 4",
             "d2": "𝑥 ≥ −4",
             "d3": "𝑥 ≤ −4",
-            "etapes": "On ajoute 4 aux deux membres : 3𝑥 ≥ 12. On divise les deux membres par 3 : 𝑥 ≥ 4."
+            "etapes": "On ajoute 4 aux deux membres : 3𝑥 ≥ 12. On divise les deux membres par 3 : 𝑥 ≥ 4.",
+            "a": 3,
+            "b": -4,
+            "c": 0,
+            "d": 8,
+            "borne": 4
           },
           "progression": 1
         },
@@ -153,7 +214,12 @@
             "d1": "𝑥 > 3",
             "d2": "𝑥 < −3",
             "d3": "𝑥 > −3",
-            "etapes": "On soustrait 1 aux deux membres : 5𝑥 < 15. On divise les deux membres par 5 : 𝑥 < 3."
+            "etapes": "On soustrait 1 aux deux membres : 5𝑥 < 15. On divise les deux membres par 5 : 𝑥 < 3.",
+            "a": 5,
+            "b": 1,
+            "c": 0,
+            "d": 16,
+            "borne": 3
           },
           "progression": 1
         },
@@ -164,7 +230,12 @@
             "d1": "𝑥 < 5",
             "d2": "𝑥 > −5",
             "d3": "𝑥 < −5",
-            "etapes": "On ajoute 2 aux deux membres : 2𝑥 > 10. On divise les deux membres par 2 : 𝑥 > 5."
+            "etapes": "On ajoute 2 aux deux membres : 2𝑥 > 10. On divise les deux membres par 2 : 𝑥 > 5.",
+            "a": 2,
+            "b": -2,
+            "c": 0,
+            "d": 8,
+            "borne": 5
           },
           "progression": 1
         },
@@ -175,7 +246,12 @@
             "d1": "𝑥 ≥ −5",
             "d2": "𝑥 ≤ 5",
             "d3": "𝑥 ≥ 5",
-            "etapes": "On soustrait 3 aux deux membres : 3𝑥 ≤ −15. On divise les deux membres par 3 : 𝑥 ≤ −5."
+            "etapes": "On soustrait 3 aux deux membres : 3𝑥 ≤ −15. On divise les deux membres par 3 : 𝑥 ≤ −5.",
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "d": -12,
+            "borne": -5
           },
           "progression": 1
         },
@@ -186,7 +262,12 @@
             "d1": "𝑥 ≤ 2",
             "d2": "𝑥 ≥ −2",
             "d3": "𝑥 ≤ −2",
-            "etapes": "On ajoute 4 aux deux membres : 4𝑥 ≥ 8. On divise les deux membres par 4 : 𝑥 ≥ 2."
+            "etapes": "On ajoute 4 aux deux membres : 4𝑥 ≥ 8. On divise les deux membres par 4 : 𝑥 ≥ 2.",
+            "a": 4,
+            "b": -4,
+            "c": 0,
+            "d": 4,
+            "borne": 2
           },
           "progression": 1
         },
@@ -197,7 +278,12 @@
             "d1": "𝑥 > 4",
             "d2": "𝑥 < −4",
             "d3": "𝑥 > −4",
-            "etapes": "On ajoute 1 aux deux membres : 5𝑥 < 20. On divise les deux membres par 5 : 𝑥 < 4."
+            "etapes": "On ajoute 1 aux deux membres : 5𝑥 < 20. On divise les deux membres par 5 : 𝑥 < 4.",
+            "a": 5,
+            "b": -1,
+            "c": 0,
+            "d": 19,
+            "borne": 4
           },
           "progression": 1
         },
@@ -208,7 +294,12 @@
             "d1": "𝑥 < −5",
             "d2": "𝑥 > 5",
             "d3": "𝑥 < 5",
-            "etapes": "On soustrait 1 aux deux membres : −2𝑥 < 10. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > −5."
+            "etapes": "On soustrait 1 aux deux membres : −2𝑥 < 10. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > −5.",
+            "a": -2,
+            "b": 1,
+            "c": 0,
+            "d": 11,
+            "borne": -5
           },
           "progression": 2
         },
@@ -219,7 +310,12 @@
             "d1": "𝑥 > −3",
             "d2": "𝑥 < 3",
             "d3": "𝑥 > 3",
-            "etapes": "On ajoute 2 aux deux membres : −3𝑥 > 9. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −3."
+            "etapes": "On ajoute 2 aux deux membres : −3𝑥 > 9. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −3.",
+            "a": -3,
+            "b": -2,
+            "c": 0,
+            "d": 7,
+            "borne": -3
           },
           "progression": 2
         },
@@ -230,7 +326,12 @@
             "d1": "𝑥 ≤ −2",
             "d2": "𝑥 ≥ 2",
             "d3": "𝑥 ≤ 2",
-            "etapes": "On soustrait 3 aux deux membres : −4𝑥 ≤ 8. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −2."
+            "etapes": "On soustrait 3 aux deux membres : −4𝑥 ≤ 8. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −2.",
+            "a": -4,
+            "b": 3,
+            "c": 0,
+            "d": 11,
+            "borne": -2
           },
           "progression": 2
         },
@@ -241,7 +342,12 @@
             "d1": "𝑥 ≥ 2",
             "d2": "𝑥 ≤ −2",
             "d3": "𝑥 ≥ −2",
-            "etapes": "On ajoute 4 aux deux membres : −5𝑥 ≥ −10. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2."
+            "etapes": "On ajoute 4 aux deux membres : −5𝑥 ≥ −10. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2.",
+            "a": -5,
+            "b": -4,
+            "c": 0,
+            "d": -14,
+            "borne": 2
           },
           "progression": 2
         },
@@ -252,7 +358,12 @@
             "d1": "𝑥 < 3",
             "d2": "𝑥 > −3",
             "d3": "𝑥 < −3",
-            "etapes": "On soustrait 1 aux deux membres : −3𝑥 < −9. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3."
+            "etapes": "On soustrait 1 aux deux membres : −3𝑥 < −9. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3.",
+            "a": -3,
+            "b": 1,
+            "c": 0,
+            "d": -8,
+            "borne": 3
           },
           "progression": 2
         },
@@ -263,7 +374,12 @@
             "d1": "𝑥 > 4",
             "d2": "𝑥 < −4",
             "d3": "𝑥 > −4",
-            "etapes": "On ajoute 2 aux deux membres : −4𝑥 > −16. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < 4."
+            "etapes": "On ajoute 2 aux deux membres : −4𝑥 > −16. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < 4.",
+            "a": -4,
+            "b": -2,
+            "c": 0,
+            "d": -18,
+            "borne": 4
           },
           "progression": 2
         },
@@ -274,7 +390,12 @@
             "d1": "𝑥 ≤ 5",
             "d2": "𝑥 ≥ −5",
             "d3": "𝑥 ≤ −5",
-            "etapes": "On soustrait 3 aux deux membres : −5𝑥 ≤ −25. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 5."
+            "etapes": "On soustrait 3 aux deux membres : −5𝑥 ≤ −25. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 5.",
+            "a": -5,
+            "b": 3,
+            "c": 0,
+            "d": -22,
+            "borne": 5
           },
           "progression": 2
         },
@@ -285,7 +406,12 @@
             "d1": "𝑥 ≥ −4",
             "d2": "𝑥 ≤ 4",
             "d3": "𝑥 ≥ 4",
-            "etapes": "On ajoute 4 aux deux membres : −2𝑥 ≥ 8. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ −4."
+            "etapes": "On ajoute 4 aux deux membres : −2𝑥 ≥ 8. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ −4.",
+            "a": -2,
+            "b": -4,
+            "c": 0,
+            "d": 4,
+            "borne": -4
           },
           "progression": 2
         },
@@ -296,7 +422,12 @@
             "d1": "𝑥 < −3",
             "d2": "𝑥 > 3",
             "d3": "𝑥 < 3",
-            "etapes": "On soustrait 1 aux deux membres : −4𝑥 < 12. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > −3."
+            "etapes": "On soustrait 1 aux deux membres : −4𝑥 < 12. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > −3.",
+            "a": -4,
+            "b": 1,
+            "c": 0,
+            "d": 13,
+            "borne": -3
           },
           "progression": 2
         },
@@ -307,7 +438,12 @@
             "d1": "𝑥 > −2",
             "d2": "𝑥 < 2",
             "d3": "𝑥 > 2",
-            "etapes": "On ajoute 2 aux deux membres : −5𝑥 > 10. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −2."
+            "etapes": "On ajoute 2 aux deux membres : −5𝑥 > 10. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −2.",
+            "a": -5,
+            "b": -2,
+            "c": 0,
+            "d": 8,
+            "borne": -2
           },
           "progression": 2
         },
@@ -318,7 +454,12 @@
             "d1": "𝑥 ≤ 2",
             "d2": "𝑥 ≥ −2",
             "d3": "𝑥 ≤ −2",
-            "etapes": "On soustrait 3 aux deux membres : −2𝑥 ≤ −4. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 2."
+            "etapes": "On soustrait 3 aux deux membres : −2𝑥 ≤ −4. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 2.",
+            "a": -2,
+            "b": 3,
+            "c": 0,
+            "d": -1,
+            "borne": 2
           },
           "progression": 2
         },
@@ -329,7 +470,12 @@
             "d1": "𝑥 ≥ 4",
             "d2": "𝑥 ≤ −4",
             "d3": "𝑥 ≥ −4",
-            "etapes": "On ajoute 4 aux deux membres : −3𝑥 ≥ −12. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 4."
+            "etapes": "On ajoute 4 aux deux membres : −3𝑥 ≥ −12. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 4.",
+            "a": -3,
+            "b": -4,
+            "c": 0,
+            "d": -16,
+            "borne": 4
           },
           "progression": 2
         },
@@ -340,7 +486,12 @@
             "d1": "𝑥 < 3",
             "d2": "𝑥 > −3",
             "d3": "𝑥 < −3",
-            "etapes": "On soustrait 1 aux deux membres : −5𝑥 < −15. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3."
+            "etapes": "On soustrait 1 aux deux membres : −5𝑥 < −15. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3.",
+            "a": -5,
+            "b": 1,
+            "c": 0,
+            "d": -14,
+            "borne": 3
           },
           "progression": 2
         },
@@ -351,7 +502,12 @@
             "d1": "𝑥 > 5",
             "d2": "𝑥 < −5",
             "d3": "𝑥 > −5",
-            "etapes": "On ajoute 2 aux deux membres : −2𝑥 > −10. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < 5."
+            "etapes": "On ajoute 2 aux deux membres : −2𝑥 > −10. On divise les deux membres par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < 5.",
+            "a": -2,
+            "b": -2,
+            "c": 0,
+            "d": -12,
+            "borne": 5
           },
           "progression": 2
         },
@@ -362,7 +518,12 @@
             "d1": "𝑥 ≤ −5",
             "d2": "𝑥 ≥ 5",
             "d3": "𝑥 ≤ 5",
-            "etapes": "On soustrait 3 aux deux membres : −3𝑥 ≤ 15. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −5."
+            "etapes": "On soustrait 3 aux deux membres : −3𝑥 ≤ 15. On divise les deux membres par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −5.",
+            "a": -3,
+            "b": 3,
+            "c": 0,
+            "d": 18,
+            "borne": -5
           },
           "progression": 2
         },
@@ -373,7 +534,12 @@
             "d1": "𝑥 ≥ 2",
             "d2": "𝑥 ≤ −2",
             "d3": "𝑥 ≥ −2",
-            "etapes": "On ajoute 4 aux deux membres : −4𝑥 ≥ −8. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2."
+            "etapes": "On ajoute 4 aux deux membres : −4𝑥 ≥ −8. On divise les deux membres par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2.",
+            "a": -4,
+            "b": -4,
+            "c": 0,
+            "d": -12,
+            "borne": 2
           },
           "progression": 2
         },
@@ -384,7 +550,12 @@
             "d1": "𝑥 < 4",
             "d2": "𝑥 > −4",
             "d3": "𝑥 < −4",
-            "etapes": "On ajoute 1 aux deux membres : −5𝑥 < −20. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 4."
+            "etapes": "On ajoute 1 aux deux membres : −5𝑥 < −20. On divise les deux membres par −5. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 4.",
+            "a": -5,
+            "b": -1,
+            "c": 0,
+            "d": -21,
+            "borne": 4
           },
           "progression": 2
         },
@@ -395,7 +566,12 @@
             "d1": "𝑥 > −5",
             "d2": "𝑥 < 5",
             "d3": "𝑥 > 5",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 < −10. On divise par 2 : 𝑥 < −5."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 < −10. On divise par 2 : 𝑥 < −5.",
+            "a": 3,
+            "b": 1,
+            "c": 1,
+            "d": -9,
+            "borne": -5
           },
           "progression": 3
         },
@@ -406,7 +582,12 @@
             "d1": "𝑥 > −4",
             "d2": "𝑥 < 4",
             "d3": "𝑥 > 4",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 > 8. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −4."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 > 8. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −4.",
+            "a": 1,
+            "b": -2,
+            "c": 3,
+            "d": 6,
+            "borne": -4
           },
           "progression": 3
         },
@@ -417,7 +598,12 @@
             "d1": "𝑥 ≥ −3",
             "d2": "𝑥 ≤ 3",
             "d3": "𝑥 ≥ 3",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≤ −9. On divise par 3 : 𝑥 ≤ −3."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≤ −9. On divise par 3 : 𝑥 ≤ −3.",
+            "a": 4,
+            "b": 3,
+            "c": 1,
+            "d": -6,
+            "borne": -3
           },
           "progression": 3
         },
@@ -428,7 +614,12 @@
             "d1": "𝑥 ≥ −2",
             "d2": "𝑥 ≤ 2",
             "d3": "𝑥 ≥ 2",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≥ 6. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ −2."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≥ 6. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ −2.",
+            "a": 1,
+            "b": -4,
+            "c": 4,
+            "d": 2,
+            "borne": -2
           },
           "progression": 3
         },
@@ -439,7 +630,12 @@
             "d1": "𝑥 < 2",
             "d2": "𝑥 > −2",
             "d3": "𝑥 < −2",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 > 4. On divise par 2 : 𝑥 > 2."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 > 4. On divise par 2 : 𝑥 > 2.",
+            "a": -1,
+            "b": 2,
+            "c": -3,
+            "d": 6,
+            "borne": 2
           },
           "progression": 3
         },
@@ -450,7 +646,12 @@
             "d1": "𝑥 < 3",
             "d2": "𝑥 > −3",
             "d3": "𝑥 < −3",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 < −6. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 < −6. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 3.",
+            "a": -3,
+            "b": -1,
+            "c": -1,
+            "d": -7,
+            "borne": 3
           },
           "progression": 3
         },
@@ -461,7 +662,12 @@
             "d1": "𝑥 ≤ 4",
             "d2": "𝑥 ≥ −4",
             "d3": "𝑥 ≤ −4",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≥ 12. On divise par 3 : 𝑥 ≥ 4."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≥ 12. On divise par 3 : 𝑥 ≥ 4.",
+            "a": 2,
+            "b": 4,
+            "c": -1,
+            "d": 16,
+            "borne": 4
           },
           "progression": 3
         },
@@ -472,7 +678,12 @@
             "d1": "𝑥 ≤ 5",
             "d2": "𝑥 ≥ −5",
             "d3": "𝑥 ≤ −5",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≤ −15. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 5."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≤ −15. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ 5.",
+            "a": -2,
+            "b": -3,
+            "c": 1,
+            "d": -18,
+            "borne": 5
           },
           "progression": 3
         },
@@ -483,7 +694,12 @@
             "d1": "𝑥 > −4",
             "d2": "𝑥 < 4",
             "d3": "𝑥 > 4",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 < −12. On divise par 3 : 𝑥 < −4."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 < −12. On divise par 3 : 𝑥 < −4.",
+            "a": 5,
+            "b": -2,
+            "c": 2,
+            "d": -14,
+            "borne": -4
           },
           "progression": 3
         },
@@ -494,7 +710,12 @@
             "d1": "𝑥 > −3",
             "d2": "𝑥 < 3",
             "d3": "𝑥 > 3",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 > 9. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −3."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 > 9. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 < −3.",
+            "a": 2,
+            "b": 3,
+            "c": 5,
+            "d": 12,
+            "borne": -3
           },
           "progression": 3
         },
@@ -505,7 +726,12 @@
             "d1": "𝑥 ≥ −2",
             "d2": "𝑥 ≤ 2",
             "d3": "𝑥 ≥ 2",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≤ −6. On divise par 3 : 𝑥 ≤ −2."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 3𝑥 ≤ −6. On divise par 3 : 𝑥 ≤ −2.",
+            "a": -1,
+            "b": -4,
+            "c": -4,
+            "d": -10,
+            "borne": -2
           },
           "progression": 3
         },
@@ -516,7 +742,12 @@
             "d1": "𝑥 ≥ 2",
             "d2": "𝑥 ≤ −2",
             "d3": "𝑥 ≥ −2",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≥ −6. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −3𝑥 ≥ −6. On divise par −3. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≤ 2.",
+            "a": -4,
+            "b": 1,
+            "c": -1,
+            "d": -5,
+            "borne": 2
           },
           "progression": 3
         },
@@ -527,7 +758,12 @@
             "d1": "𝑥 < 3",
             "d2": "𝑥 > −3",
             "d3": "𝑥 < −3",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 4𝑥 > 12. On divise par 4 : 𝑥 > 3."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 4𝑥 > 12. On divise par 4 : 𝑥 > 3.",
+            "a": 3,
+            "b": -3,
+            "c": -1,
+            "d": 9,
+            "borne": 3
           },
           "progression": 3
         },
@@ -538,7 +774,12 @@
             "d1": "𝑥 < 4",
             "d2": "𝑥 > −4",
             "d3": "𝑥 < −4",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −4𝑥 < −16. On divise par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 4."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −4𝑥 < −16. On divise par −4. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 > 4.",
+            "a": -3,
+            "b": 2,
+            "c": 1,
+            "d": -14,
+            "borne": 4
           },
           "progression": 3
         },
@@ -549,7 +790,12 @@
             "d1": "𝑥 ≤ 5",
             "d2": "𝑥 ≥ −5",
             "d3": "𝑥 ≤ −5",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 ≥ 10. On divise par 2 : 𝑥 ≥ 5."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : 2𝑥 ≥ 10. On divise par 2 : 𝑥 ≥ 5.",
+            "a": 4,
+            "b": -1,
+            "c": 2,
+            "d": 9,
+            "borne": 5
           },
           "progression": 3
         },
@@ -560,15 +806,24 @@
             "d1": "𝑥 ≤ −5",
             "d2": "𝑥 ≥ 5",
             "d3": "𝑥 ≤ 5",
-            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 ≤ 10. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −5."
+            "etapes": "On regroupe les termes en 𝑥 dans un membre et les constantes dans l’autre : −2𝑥 ≤ 10. On divise par −2. Comme ce nombre est négatif, on inverse le sens de l’inégalité : 𝑥 ≥ −5.",
+            "a": 2,
+            "b": 4,
+            "c": 4,
+            "d": 14,
+            "borne": -5
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "(d-b)/(a-c)",
+      "reponse_exploitable": "[[borne]]",
+      "moteur": "Ryacas"
     },
     {
       "id": "INEQ-1D-SENS",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -612,11 +867,15 @@
             "p4": "Parce que 15 est positif et −5 est négatif."
           }
         }
-      ]
+      ],
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "INEQ-1D-BOITE",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Soit −4𝑥 ≥ 20. Après division par −4, on obtient 𝑥 ≤ □. Quel nombre doit remplacer □ ?",
       "presentation": {
         "type": "boite"
@@ -628,11 +887,15 @@
         "−4",
         "4"
       ],
-      "correction": "20 ÷ (−4) = −5. Comme on divise par un nombre négatif, ≥ devient ≤. On obtient donc 𝑥 ≤ −5."
+      "correction": "20 ÷ (−4) = −5. Comme on divise par un nombre négatif, ≥ devient ≤. On obtient donc 𝑥 ≤ −5.",
+      "enonce_exploitable": "20 / (-4)",
+      "reponse_exploitable": "-5",
+      "moteur": "Ryacas"
     },
     {
       "id": "INEQ-1D-MOT-TROU",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Comment appelle-t-on une comparaison contenant une inconnue et un signe comme <, >, ≤ ou ≥ ?",
       "presentation": {
         "type": "mot_a_trou",
@@ -650,11 +913,15 @@
         "égalité",
         "expression"
       ],
-      "correction": "Une inéquation compare deux expressions à l’aide d’un signe d’inégalité et peut contenir une inconnue."
+      "correction": "Une inéquation compare deux expressions à l’aide d’un signe d’inégalité et peut contenir une inconnue.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "INEQ-1D-MOT-MASQUE",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Comment appelle-t-on une valeur de l’inconnue qui rend une inéquation vraie ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -673,7 +940,10 @@
         "intervalle",
         "coefficient"
       ],
-      "correction": "Une solution d’une inéquation est une valeur de l’inconnue pour laquelle l’inégalité est vraie. Une inéquation peut avoir plusieurs solutions."
+      "correction": "Une solution d’une inéquation est une valeur de l’inconnue pour laquelle l’inégalité est vraie. Une inéquation peut avoir plusieurs solutions.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     }
   ]
 }

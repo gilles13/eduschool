@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PUI-NEG-VAR",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Quelle écriture est égale à [[expr]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -21,7 +22,10 @@
             "d1": "−2^1",
             "d2": "2^1",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻1 = 1/2^1."
+            "correction": "Un exposant négatif indique un inverse : 2⁻1 = 1/2^1.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 1,
+            "resultat_exploitable": "1/2"
           },
           "progression": 1
         },
@@ -32,7 +36,10 @@
             "d1": "−2^2",
             "d2": "2^2",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻2 = 1/2^2."
+            "correction": "Un exposant négatif indique un inverse : 2⁻2 = 1/2^2.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 2,
+            "resultat_exploitable": "1/4"
           },
           "progression": 1
         },
@@ -43,7 +50,10 @@
             "d1": "−2^3",
             "d2": "2^3",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻3 = 1/2^3."
+            "correction": "Un exposant négatif indique un inverse : 2⁻3 = 1/2^3.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 3,
+            "resultat_exploitable": "1/8"
           },
           "progression": 1
         },
@@ -54,7 +64,10 @@
             "d1": "−2^4",
             "d2": "2^4",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻4 = 1/2^4."
+            "correction": "Un exposant négatif indique un inverse : 2⁻4 = 1/2^4.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 4,
+            "resultat_exploitable": "1/16"
           },
           "progression": 1
         },
@@ -65,7 +78,10 @@
             "d1": "−2^5",
             "d2": "2^5",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻5 = 1/2^5."
+            "correction": "Un exposant négatif indique un inverse : 2⁻5 = 1/2^5.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 5,
+            "resultat_exploitable": "1/32"
           },
           "progression": 1
         },
@@ -76,7 +92,10 @@
             "d1": "−2^6",
             "d2": "2^6",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻6 = 1/2^6."
+            "correction": "Un exposant négatif indique un inverse : 2⁻6 = 1/2^6.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 6,
+            "resultat_exploitable": "1/64"
           },
           "progression": 1
         },
@@ -87,7 +106,10 @@
             "d1": "−2^7",
             "d2": "2^7",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻7 = 1/2^7."
+            "correction": "Un exposant négatif indique un inverse : 2⁻7 = 1/2^7.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 7,
+            "resultat_exploitable": "1/128"
           },
           "progression": 1
         },
@@ -98,7 +120,10 @@
             "d1": "−2^8",
             "d2": "2^8",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻8 = 1/2^8."
+            "correction": "Un exposant négatif indique un inverse : 2⁻8 = 1/2^8.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 8,
+            "resultat_exploitable": "1/256"
           },
           "progression": 1
         },
@@ -109,7 +134,10 @@
             "d1": "−2^9",
             "d2": "2^9",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻9 = 1/2^9."
+            "correction": "Un exposant négatif indique un inverse : 2⁻9 = 1/2^9.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 9,
+            "resultat_exploitable": "1/512"
           },
           "progression": 1
         },
@@ -120,7 +148,10 @@
             "d1": "−2^10",
             "d2": "2^10",
             "d3": "1/3",
-            "correction": "Un exposant négatif indique un inverse : 2⁻10 = 1/2^10."
+            "correction": "Un exposant négatif indique un inverse : 2⁻10 = 1/2^10.",
+            "base_exploitable": 2,
+            "exposant_exploitable": 10,
+            "resultat_exploitable": "1/1024"
           },
           "progression": 1
         },
@@ -131,7 +162,10 @@
             "d1": "−3^1",
             "d2": "3^1",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻1 = 1/3^1."
+            "correction": "Un exposant négatif indique un inverse : 3⁻1 = 1/3^1.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 1,
+            "resultat_exploitable": "1/3"
           },
           "progression": 1
         },
@@ -142,7 +176,10 @@
             "d1": "−3^2",
             "d2": "3^2",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻2 = 1/3^2."
+            "correction": "Un exposant négatif indique un inverse : 3⁻2 = 1/3^2.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 2,
+            "resultat_exploitable": "1/9"
           },
           "progression": 1
         },
@@ -153,7 +190,10 @@
             "d1": "−3^3",
             "d2": "3^3",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻3 = 1/3^3."
+            "correction": "Un exposant négatif indique un inverse : 3⁻3 = 1/3^3.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 3,
+            "resultat_exploitable": "1/27"
           },
           "progression": 1
         },
@@ -164,7 +204,10 @@
             "d1": "−3^4",
             "d2": "3^4",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻4 = 1/3^4."
+            "correction": "Un exposant négatif indique un inverse : 3⁻4 = 1/3^4.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 4,
+            "resultat_exploitable": "1/81"
           },
           "progression": 1
         },
@@ -175,7 +218,10 @@
             "d1": "−3^5",
             "d2": "3^5",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻5 = 1/3^5."
+            "correction": "Un exposant négatif indique un inverse : 3⁻5 = 1/3^5.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 5,
+            "resultat_exploitable": "1/243"
           },
           "progression": 1
         },
@@ -186,7 +232,10 @@
             "d1": "−3^6",
             "d2": "3^6",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻6 = 1/3^6."
+            "correction": "Un exposant négatif indique un inverse : 3⁻6 = 1/3^6.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 6,
+            "resultat_exploitable": "1/729"
           },
           "progression": 1
         },
@@ -197,7 +246,10 @@
             "d1": "−3^7",
             "d2": "3^7",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻7 = 1/3^7."
+            "correction": "Un exposant négatif indique un inverse : 3⁻7 = 1/3^7.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 7,
+            "resultat_exploitable": "1/2187"
           },
           "progression": 1
         },
@@ -208,7 +260,10 @@
             "d1": "−3^8",
             "d2": "3^8",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻8 = 1/3^8."
+            "correction": "Un exposant négatif indique un inverse : 3⁻8 = 1/3^8.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 8,
+            "resultat_exploitable": "1/6561"
           },
           "progression": 2
         },
@@ -219,7 +274,10 @@
             "d1": "−3^9",
             "d2": "3^9",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻9 = 1/3^9."
+            "correction": "Un exposant négatif indique un inverse : 3⁻9 = 1/3^9.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 9,
+            "resultat_exploitable": "1/19683"
           },
           "progression": 2
         },
@@ -230,7 +288,10 @@
             "d1": "−3^10",
             "d2": "3^10",
             "d3": "1/4",
-            "correction": "Un exposant négatif indique un inverse : 3⁻10 = 1/3^10."
+            "correction": "Un exposant négatif indique un inverse : 3⁻10 = 1/3^10.",
+            "base_exploitable": 3,
+            "exposant_exploitable": 10,
+            "resultat_exploitable": "1/59049"
           },
           "progression": 2
         },
@@ -241,7 +302,10 @@
             "d1": "−4^1",
             "d2": "4^1",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻1 = 1/4^1."
+            "correction": "Un exposant négatif indique un inverse : 4⁻1 = 1/4^1.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 1,
+            "resultat_exploitable": "1/4"
           },
           "progression": 2
         },
@@ -252,7 +316,10 @@
             "d1": "−4^2",
             "d2": "4^2",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻2 = 1/4^2."
+            "correction": "Un exposant négatif indique un inverse : 4⁻2 = 1/4^2.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 2,
+            "resultat_exploitable": "1/16"
           },
           "progression": 2
         },
@@ -263,7 +330,10 @@
             "d1": "−4^3",
             "d2": "4^3",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻3 = 1/4^3."
+            "correction": "Un exposant négatif indique un inverse : 4⁻3 = 1/4^3.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 3,
+            "resultat_exploitable": "1/64"
           },
           "progression": 2
         },
@@ -274,7 +344,10 @@
             "d1": "−4^4",
             "d2": "4^4",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻4 = 1/4^4."
+            "correction": "Un exposant négatif indique un inverse : 4⁻4 = 1/4^4.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 4,
+            "resultat_exploitable": "1/256"
           },
           "progression": 2
         },
@@ -285,7 +358,10 @@
             "d1": "−4^5",
             "d2": "4^5",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻5 = 1/4^5."
+            "correction": "Un exposant négatif indique un inverse : 4⁻5 = 1/4^5.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 5,
+            "resultat_exploitable": "1/1024"
           },
           "progression": 2
         },
@@ -296,7 +372,10 @@
             "d1": "−4^6",
             "d2": "4^6",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻6 = 1/4^6."
+            "correction": "Un exposant négatif indique un inverse : 4⁻6 = 1/4^6.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 6,
+            "resultat_exploitable": "1/4096"
           },
           "progression": 2
         },
@@ -307,7 +386,10 @@
             "d1": "−4^7",
             "d2": "4^7",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻7 = 1/4^7."
+            "correction": "Un exposant négatif indique un inverse : 4⁻7 = 1/4^7.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 7,
+            "resultat_exploitable": "1/16384"
           },
           "progression": 2
         },
@@ -318,7 +400,10 @@
             "d1": "−4^8",
             "d2": "4^8",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻8 = 1/4^8."
+            "correction": "Un exposant négatif indique un inverse : 4⁻8 = 1/4^8.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 8,
+            "resultat_exploitable": "1/65536"
           },
           "progression": 2
         },
@@ -329,7 +414,10 @@
             "d1": "−4^9",
             "d2": "4^9",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻9 = 1/4^9."
+            "correction": "Un exposant négatif indique un inverse : 4⁻9 = 1/4^9.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 9,
+            "resultat_exploitable": "1/262144"
           },
           "progression": 2
         },
@@ -340,7 +428,10 @@
             "d1": "−4^10",
             "d2": "4^10",
             "d3": "1/5",
-            "correction": "Un exposant négatif indique un inverse : 4⁻10 = 1/4^10."
+            "correction": "Un exposant négatif indique un inverse : 4⁻10 = 1/4^10.",
+            "base_exploitable": 4,
+            "exposant_exploitable": 10,
+            "resultat_exploitable": "1/1048576"
           },
           "progression": 2
         },
@@ -351,7 +442,10 @@
             "d1": "−5^1",
             "d2": "5^1",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻1 = 1/5^1."
+            "correction": "Un exposant négatif indique un inverse : 5⁻1 = 1/5^1.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 1,
+            "resultat_exploitable": "1/5"
           },
           "progression": 2
         },
@@ -362,7 +456,10 @@
             "d1": "−5^2",
             "d2": "5^2",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻2 = 1/5^2."
+            "correction": "Un exposant négatif indique un inverse : 5⁻2 = 1/5^2.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 2,
+            "resultat_exploitable": "1/25"
           },
           "progression": 2
         },
@@ -373,7 +470,10 @@
             "d1": "−5^3",
             "d2": "5^3",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻3 = 1/5^3."
+            "correction": "Un exposant négatif indique un inverse : 5⁻3 = 1/5^3.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 3,
+            "resultat_exploitable": "1/125"
           },
           "progression": 2
         },
@@ -384,7 +484,10 @@
             "d1": "−5^4",
             "d2": "5^4",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻4 = 1/5^4."
+            "correction": "Un exposant négatif indique un inverse : 5⁻4 = 1/5^4.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 4,
+            "resultat_exploitable": "1/625"
           },
           "progression": 2
         },
@@ -395,7 +498,10 @@
             "d1": "−5^5",
             "d2": "5^5",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻5 = 1/5^5."
+            "correction": "Un exposant négatif indique un inverse : 5⁻5 = 1/5^5.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 5,
+            "resultat_exploitable": "1/3125"
           },
           "progression": 3
         },
@@ -406,7 +512,10 @@
             "d1": "−5^6",
             "d2": "5^6",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻6 = 1/5^6."
+            "correction": "Un exposant négatif indique un inverse : 5⁻6 = 1/5^6.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 6,
+            "resultat_exploitable": "1/15625"
           },
           "progression": 3
         },
@@ -417,7 +526,10 @@
             "d1": "−5^7",
             "d2": "5^7",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻7 = 1/5^7."
+            "correction": "Un exposant négatif indique un inverse : 5⁻7 = 1/5^7.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 7,
+            "resultat_exploitable": "1/78125"
           },
           "progression": 3
         },
@@ -428,7 +540,10 @@
             "d1": "−5^8",
             "d2": "5^8",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻8 = 1/5^8."
+            "correction": "Un exposant négatif indique un inverse : 5⁻8 = 1/5^8.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 8,
+            "resultat_exploitable": "1/390625"
           },
           "progression": 3
         },
@@ -439,7 +554,10 @@
             "d1": "−5^9",
             "d2": "5^9",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻9 = 1/5^9."
+            "correction": "Un exposant négatif indique un inverse : 5⁻9 = 1/5^9.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 9,
+            "resultat_exploitable": "1/1953125"
           },
           "progression": 3
         },
@@ -450,7 +568,10 @@
             "d1": "−5^10",
             "d2": "5^10",
             "d3": "1/6",
-            "correction": "Un exposant négatif indique un inverse : 5⁻10 = 1/5^10."
+            "correction": "Un exposant négatif indique un inverse : 5⁻10 = 1/5^10.",
+            "base_exploitable": 5,
+            "exposant_exploitable": 10,
+            "resultat_exploitable": "1/9765625"
           },
           "progression": 3
         },
@@ -461,7 +582,10 @@
             "d1": "−10^1",
             "d2": "10^1",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻1 = 1/10^1."
+            "correction": "Un exposant négatif indique un inverse : 10⁻1 = 1/10^1.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 1,
+            "resultat_exploitable": "1/10"
           },
           "progression": 3
         },
@@ -472,7 +596,10 @@
             "d1": "−10^2",
             "d2": "10^2",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻2 = 1/10^2."
+            "correction": "Un exposant négatif indique un inverse : 10⁻2 = 1/10^2.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 2,
+            "resultat_exploitable": "1/100"
           },
           "progression": 3
         },
@@ -483,7 +610,10 @@
             "d1": "−10^3",
             "d2": "10^3",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻3 = 1/10^3."
+            "correction": "Un exposant négatif indique un inverse : 10⁻3 = 1/10^3.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 3,
+            "resultat_exploitable": "1/1000"
           },
           "progression": 3
         },
@@ -494,7 +624,10 @@
             "d1": "−10^4",
             "d2": "10^4",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻4 = 1/10^4."
+            "correction": "Un exposant négatif indique un inverse : 10⁻4 = 1/10^4.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 4,
+            "resultat_exploitable": "1/10000"
           },
           "progression": 3
         },
@@ -505,7 +638,10 @@
             "d1": "−10^5",
             "d2": "10^5",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻5 = 1/10^5."
+            "correction": "Un exposant négatif indique un inverse : 10⁻5 = 1/10^5.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 5,
+            "resultat_exploitable": "1/100000"
           },
           "progression": 3
         },
@@ -516,7 +652,10 @@
             "d1": "−10^6",
             "d2": "10^6",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻6 = 1/10^6."
+            "correction": "Un exposant négatif indique un inverse : 10⁻6 = 1/10^6.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 6,
+            "resultat_exploitable": "1/1000000"
           },
           "progression": 3
         },
@@ -527,7 +666,10 @@
             "d1": "−10^7",
             "d2": "10^7",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻7 = 1/10^7."
+            "correction": "Un exposant négatif indique un inverse : 10⁻7 = 1/10^7.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 7,
+            "resultat_exploitable": "1/10000000"
           },
           "progression": 3
         },
@@ -538,7 +680,10 @@
             "d1": "−10^8",
             "d2": "10^8",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻8 = 1/10^8."
+            "correction": "Un exposant négatif indique un inverse : 10⁻8 = 1/10^8.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 8,
+            "resultat_exploitable": "1/100000000"
           },
           "progression": 3
         },
@@ -549,7 +694,10 @@
             "d1": "−10^9",
             "d2": "10^9",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻9 = 1/10^9."
+            "correction": "Un exposant négatif indique un inverse : 10⁻9 = 1/10^9.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 9,
+            "resultat_exploitable": "1/1000000000"
           },
           "progression": 3
         },
@@ -560,15 +708,22 @@
             "d1": "−10^10",
             "d2": "10^10",
             "d3": "1/11",
-            "correction": "Un exposant négatif indique un inverse : 10⁻10 = 1/10^10."
+            "correction": "Un exposant négatif indique un inverse : 10⁻10 = 1/10^10.",
+            "base_exploitable": 10,
+            "exposant_exploitable": 10,
+            "resultat_exploitable": "1/10000000000"
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "base_exploitable ^ (-exposant_exploitable)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-005",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -581,6 +736,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": -3,
+            "resultat_exploitable": 0.001,
             "enonce": "Que vaut 10⁻³ ?",
             "reponse": "0,001",
             "correction": "10⁻³ = 1 / 10³ = 0,001.",
@@ -592,6 +750,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": -2,
+            "resultat_exploitable": 0.01,
             "enonce": "Que vaut 10⁻² ?",
             "reponse": "0,01",
             "correction": "En appliquant les règles sur les puissances, on obtient 0,01.",
@@ -603,6 +764,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": -4,
+            "resultat_exploitable": 0.0001,
             "enonce": "Que vaut 10⁻⁴ ?",
             "reponse": "0,0001",
             "correction": "En appliquant les règles sur les puissances, on obtient 0,0001.",
@@ -612,11 +776,15 @@
             "p4": "−10 000"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-006",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -660,11 +828,15 @@
             "p4": "1/b"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "2 ^ 0",
+      "reponse_exploitable": "1",
+      "moteur": "R"
     },
     {
       "id": "PUI-010",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -677,6 +849,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": -1,
+            "resultat_exploitable": 0.25,
             "enonce": "Que vaut 4⁻¹ ?",
             "reponse": "1/4",
             "correction": "Une puissance d’exposant −1 désigne l’inverse de la base non nulle.",
@@ -688,6 +863,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": -1,
+            "resultat_exploitable": 0.2,
             "enonce": "Que vaut 5⁻¹ ?",
             "reponse": "1/5",
             "correction": "En appliquant les règles sur les puissances, on obtient 1/5.",
@@ -699,6 +877,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 8,
+            "valeur_2": -1,
+            "resultat_exploitable": 0.125,
             "enonce": "Que vaut 8⁻¹ ?",
             "reponse": "1/8",
             "correction": "En appliquant les règles sur les puissances, on obtient 1/8.",
@@ -708,11 +889,15 @@
             "p4": "−1/8"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-012",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -725,6 +910,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": 8,
+            "valeur_3": 3,
+            "resultat_exploitable": 3125,
             "enonce": "Quelle expression simplifie 5⁸ / 5³ ?",
             "reponse": "5⁵",
             "correction": "Pour une division de puissances de même base non nulle, on soustrait les exposants.",
@@ -736,6 +925,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": 7,
+            "valeur_3": 2,
+            "resultat_exploitable": 1024,
             "enonce": "Quelle expression simplifie 4⁷ / 4² ?",
             "reponse": "4⁵",
             "correction": "En appliquant les règles sur les puissances, on obtient 4⁵.",
@@ -747,6 +940,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": 9,
+            "valeur_3": 4,
+            "resultat_exploitable": 243,
             "enonce": "Quelle expression simplifie 3⁹ / 3⁴ ?",
             "reponse": "3⁵",
             "correction": "En appliquant les règles sur les puissances, on obtient 3⁵.",
@@ -756,11 +953,15 @@
             "p4": "3³⁶"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 - valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-020",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -773,6 +974,9 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": -2,
+            "resultat_exploitable": 0.1111111111111111,
             "enonce": "Quelle expression est égale à 3⁻² ?",
             "reponse": "1/9",
             "correction": "3⁻² = 1 / 3² = 1/9.",
@@ -784,6 +988,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": -2,
+            "resultat_exploitable": 0.0625,
             "enonce": "Que vaut 4⁻² ?",
             "reponse": "1/16",
             "correction": "En appliquant les règles sur les puissances, on obtient 1/16.",
@@ -795,6 +1002,9 @@
         },
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": -2,
+            "resultat_exploitable": 0.04,
             "enonce": "Que vaut 5⁻² ?",
             "reponse": "1/25",
             "correction": "En appliquant les règles sur les puissances, on obtient 1/25.",
@@ -804,11 +1014,15 @@
             "p4": "25"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ valeur_2",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-022",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -827,7 +1041,9 @@
             "p1": "2",
             "p2": "0",
             "p3": "1",
-            "p4": "5"
+            "p4": "5",
+            "calcul_exploitable": "2^0+3^0",
+            "resultat_exploitable": "2"
           }
         },
         {
@@ -838,7 +1054,9 @@
             "p1": "2",
             "p2": "0",
             "p3": "1",
-            "p4": "11"
+            "p4": "11",
+            "calcul_exploitable": "4^0+7^0",
+            "resultat_exploitable": "2"
           }
         },
         {
@@ -849,14 +1067,20 @@
             "p1": "2",
             "p2": "0",
             "p3": "1",
-            "p4": "14"
+            "p4": "14",
+            "calcul_exploitable": "5^0+9^0",
+            "resultat_exploitable": "2"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "[[calcul_exploitable]]",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-023",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -869,6 +1093,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": 2,
+            "valeur_3": -5,
+            "resultat_exploitable": 0.001,
             "enonce": "Quelle expression simplifie 10² × 10⁻⁵ ?",
             "reponse": "10⁻³",
             "correction": "Les exposants s’additionnent : 2 + (−5) = −3.",
@@ -880,6 +1108,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": 3,
+            "valeur_3": -7,
+            "resultat_exploitable": 0.0001,
             "enonce": "Quelle expression simplifie 10³ × 10⁻⁷ ?",
             "reponse": "10⁻⁴",
             "correction": "En appliquant les règles sur les puissances, on obtient 10⁻⁴.",
@@ -891,6 +1123,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": 5,
+            "valeur_3": -2,
+            "resultat_exploitable": 1000,
             "enonce": "Quelle expression simplifie 10⁵ × 10⁻² ?",
             "reponse": "10³",
             "correction": "En appliquant les règles sur les puissances, on obtient 10³.",
@@ -900,11 +1136,15 @@
             "p4": "10⁷"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 + valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-025",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -917,6 +1157,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": 3,
+            "valeur_3": 2,
+            "resultat_exploitable": 4,
             "enonce": "Quel calcul représente 4³ / 4² ?",
             "reponse": "4",
             "correction": "4³ / 4² = 4¹ = 4.",
@@ -928,6 +1172,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 5,
+            "valeur_2": 4,
+            "valeur_3": 3,
+            "resultat_exploitable": 5,
             "enonce": "Quelle expression simplifie 5⁴ / 5³ ?",
             "reponse": "5",
             "correction": "En appliquant les règles sur les puissances, on obtient 5.",
@@ -939,6 +1187,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 7,
+            "valeur_2": 3,
+            "valeur_3": 2,
+            "resultat_exploitable": 7,
             "enonce": "Quelle expression simplifie 7³ / 7² ?",
             "reponse": "7",
             "correction": "En appliquant les règles sur les puissances, on obtient 7.",
@@ -948,11 +1200,15 @@
             "p4": "49"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 - valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-031",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -971,7 +1227,8 @@
             "p1": "a",
             "p2": "1",
             "p3": "0",
-            "p4": "a × a"
+            "p4": "a × a",
+            "valeur": 2
           }
         },
         {
@@ -982,7 +1239,8 @@
             "p1": "x",
             "p2": "1",
             "p3": "0",
-            "p4": "x × x"
+            "p4": "x × x",
+            "valeur": -3
           }
         },
         {
@@ -993,14 +1251,19 @@
             "p1": "b",
             "p2": "1",
             "p3": "0",
-            "p4": "b²"
+            "p4": "b²",
+            "valeur": 5
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur^1",
+      "reponse_exploitable": "[[valeur]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-032",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Dans l’égalité 5⁻² = 1 / 5², quel mot décrit la relation entre 5⁻² et 5² ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -1018,11 +1281,15 @@
         "produit",
         "quotient"
       ],
-      "correction": "5⁻² = 1 / 5² : une puissance d’exposant négatif s’écrit comme l’inverse de la puissance d’exposant positif correspondante."
+      "correction": "5⁻² = 1 / 5² : une puissance d’exposant négatif s’écrit comme l’inverse de la puissance d’exposant positif correspondante.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PUI-033",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Quel nombre doit remplacer □ pour que 2 à la puissance □ = 1/8 ?",
       "presentation": {
         "type": "boite"
@@ -1034,11 +1301,15 @@
         "−8",
         "1/3"
       ],
-      "correction": "1/8 = 1 / 2³ = 2⁻³. La boîte vaut donc −3."
+      "correction": "1/8 = 1 / 2³ = 2⁻³. La boîte vaut donc −3.",
+      "enonce_exploitable": "log(1 / 8, base = 2)",
+      "reponse_exploitable": "-3",
+      "moteur": "R"
     },
     {
       "id": "PUI-034",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1051,6 +1322,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 3,
+            "valeur_2": -2,
+            "valeur_3": 5,
+            "resultat_exploitable": 27,
             "enonce": "Quelle expression simplifie 3⁻² × 3⁵ ?",
             "reponse": "3³",
             "correction": "Pour un produit de puissances de même base, on additionne les exposants : −2 + 5 = 3.",
@@ -1062,6 +1337,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 4,
+            "valeur_2": -3,
+            "valeur_3": 5,
+            "resultat_exploitable": 16,
             "enonce": "Quelle expression simplifie 4⁻³ × 4⁵ ?",
             "reponse": "4²",
             "correction": "En appliquant les règles sur les puissances, on obtient 4².",
@@ -1073,6 +1352,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 2,
+            "valeur_2": -4,
+            "valeur_3": 7,
+            "resultat_exploitable": 8,
             "enonce": "Quelle expression simplifie 2⁻⁴ × 2⁷ ?",
             "reponse": "2³",
             "correction": "En appliquant les règles sur les puissances, on obtient 2³.",
@@ -1082,11 +1365,15 @@
             "p4": "4³"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 + valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-035",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -1099,6 +1386,10 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": -2,
+            "valeur_3": 3,
+            "resultat_exploitable": 1e-05,
             "enonce": "Quelle expression simplifie 10⁻² / 10³ ?",
             "reponse": "10⁻⁵",
             "correction": "Pour un quotient de puissances de même base non nulle, on soustrait les exposants : −2 − 3 = −5.",
@@ -1110,6 +1401,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": -3,
+            "valeur_3": 2,
+            "resultat_exploitable": 1e-05,
             "enonce": "Quelle expression simplifie 10⁻³ / 10² ?",
             "reponse": "10⁻⁵",
             "correction": "En appliquant les règles sur les puissances, on obtient 10⁻⁵.",
@@ -1121,6 +1416,10 @@
         },
         {
           "parametres": {
+            "valeur_1": 10,
+            "valeur_2": -4,
+            "valeur_3": 5,
+            "resultat_exploitable": 1e-09,
             "enonce": "Quelle expression simplifie 10⁻⁴ / 10⁵ ?",
             "reponse": "10⁻⁹",
             "correction": "En appliquant les règles sur les puissances, on obtient 10⁻⁹.",
@@ -1130,7 +1429,10 @@
             "p4": "1"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_1 ^ (valeur_2 - valeur_3)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

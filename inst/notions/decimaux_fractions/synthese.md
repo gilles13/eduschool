@@ -1,4 +1,12 @@
-# L’essentiel : Fractions décimales
+# L'essentiel : Fractions décimales
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une fraction décimale a pour dénominateur une puissance de 10.
+:::
+
+<!-- graphique: tableau_numeration nombre=0.47 rang=2 -->
 
 7/10 = 0,7 ; 35/100 = 0,35 ; 125/100 = 1,25. On peut partager une unité en dix, cent ou mille parts égales.
 

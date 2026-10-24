@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : une évolution en pourcentage compare une variation à la valeur initiale. Vérifie ensuite ton exemple avec la méthode de la fiche : utiliser le coefficient 1+p/100 pour une hausse et 1−p/100 pour une baisse.

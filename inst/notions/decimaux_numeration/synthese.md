@@ -1,4 +1,10 @@
-# L’essentiel : numération décimale
+# L'essentiel : numération décimale
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Un nombre décimal possède une écriture décimale finie ; la position des chiffres détermine leur valeur.
+:::
 
 **À retenir :** chaque chiffre a une valeur liée à sa position. D’une colonne à la suivante vers la droite, l’unité de numération est divisée par 10.
 

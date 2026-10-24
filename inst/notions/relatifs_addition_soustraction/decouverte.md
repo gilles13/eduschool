@@ -1,5 +1,11 @@
 # Découvrir : Additionner et soustraire des nombres relatifs
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Additionner ou soustraire des nombres relatifs**, c’est effectuer des calculs en tenant compte de leur signe et de leur valeur.
+:::
+
 Additionner un nombre relatif peut se lire comme un **déplacement** sur une droite graduée : ajouter un nombre positif fait avancer vers la droite ; ajouter un nombre négatif fait avancer vers la gauche.
 
 ## Additionner : partir, puis se déplacer
@@ -28,8 +34,8 @@ Une somme peut être simplifiée en remplaçant chaque soustraction par l’addi
 
 ## Pour vérifier tes découvertes
 
-**1. Déplacement.** −4 + 7 = 3. Depuis −4, sept unités vers la droite conduisent à 3.
+1. **Déplacement :** −4 + 7 = 3. Depuis −4, sept unités vers la droite conduisent à 3.
 
-**2. Deux écritures.** −3 − 4 = −3 + (−4) = −7. Soustraire 4 revient à ajouter son opposé −4.
+2. **Deux écritures :** −3 − 4 = −3 + (−4) = −7. Soustraire 4 revient à ajouter son opposé −4.
 
-**3. Attention aux signes.** −6 − (−2) = −6 + 2 = −4. Soustraire −2 revient à ajouter l’opposé de −2, c’est-à-dire 2.
+3. **Attention aux signes :** −6 − (−2) = −6 + 2 = −4. Soustraire −2 revient à ajouter l’opposé de −2, c’est-à-dire 2.

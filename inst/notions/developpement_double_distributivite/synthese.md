@@ -1,4 +1,4 @@
-# L’essentiel : Développement par double distributivité
+# L'essentiel : Développement par double distributivité
 
 ::: {.edu-definition}
 **De quoi parle-t-on ?**

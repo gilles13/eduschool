@@ -1,4 +1,10 @@
-# Synthèse : Conversions d’aires
+# L'essentiel : Synthèse : Conversions d’aires
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Une conversion d’aire exprime la même surface dans une autre unité carrée.
+:::
 
 - L'aire est une grandeur de dimension 2.
 - 1 m² = 100 dm² = 10 000 cm².

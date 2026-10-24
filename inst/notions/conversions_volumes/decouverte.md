@@ -1,5 +1,11 @@
 # Découvrir : Conversions de volumes
 
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Le **volume** mesure l’espace occupé par un solide. Convertir un volume, c’est exprimer cet espace dans une autre unité, par exemple en m³ ou en cm³.
+:::
+
 Un volume mesure l'espace occupé. Il s'exprime en **unités cubes**. Un cube de 1 m de côté contient 10 × 10 × 10 cubes de 1 dm de côté.
 
 **1 m³ = 1 000 dm³.** Chaque saut entre unités cubiques voisines correspond à un facteur **1 000**.
@@ -12,6 +18,6 @@ Deux passerelles essentielles : **1 dm³ = 1 L** et **1 cm³ = 1 mL**. On en dé
 
 ## Pour vérifier tes découvertes
 
-**1. Un cube d’un litre.** $10\times10\times10=1\,000\,\mathrm{cm}^3=1\,\mathrm{dm}^3=1\,\mathrm{L}$.
+1. **Un cube d’un litre :** $10\times10\times10=1\,000\,\mathrm{cm}^3=1\,\mathrm{dm}^3=1\,\mathrm{L}$.
 
-**2. Une situation concrète.** 2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L.
+2. **Une situation concrète :** 2 × 2 × 2 = 8 dm³ et 1 dm³ = 1 L.

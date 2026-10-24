@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "PUI-SCI-VAR",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "Quelle est la notation scientifique de [[nombre]] ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -21,7 +22,10 @@
             "d1": "1,2 × 10^4",
             "d2": "12,0 × 10^3",
             "d3": "1,2 × 10^2",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^3."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^3.",
+            "valeur_exploitable": 1200.0,
+            "coefficient_exploitable": 1.2,
+            "exposant_exploitable": 3
           },
           "progression": 1
         },
@@ -32,7 +36,10 @@
             "d1": "1,2 × 10^-2",
             "d2": "12,0 × 10^-3",
             "d3": "1,2 × 10^-4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^-3."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,2 × 10^-3.",
+            "valeur_exploitable": 0.0012,
+            "coefficient_exploitable": 1.2,
+            "exposant_exploitable": -3
           },
           "progression": 1
         },
@@ -43,7 +50,10 @@
             "d1": "2,5 × 10^5",
             "d2": "25,0 × 10^4",
             "d3": "2,5 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^4."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^4.",
+            "valeur_exploitable": 25000.0,
+            "coefficient_exploitable": 2.5,
+            "exposant_exploitable": 4
           },
           "progression": 1
         },
@@ -54,7 +64,10 @@
             "d1": "2,5 × 10^-3",
             "d2": "25,0 × 10^-4",
             "d3": "2,5 × 10^-5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^-4."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 2,5 × 10^-4.",
+            "valeur_exploitable": 0.00025,
+            "coefficient_exploitable": 2.5,
+            "exposant_exploitable": -4
           },
           "progression": 1
         },
@@ -65,7 +78,10 @@
             "d1": "3,6 × 10^6",
             "d2": "36,0 × 10^5",
             "d3": "3,6 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^5."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^5.",
+            "valeur_exploitable": 360000.0,
+            "coefficient_exploitable": 3.6,
+            "exposant_exploitable": 5
           },
           "progression": 1
         },
@@ -76,7 +92,10 @@
             "d1": "3,6 × 10^-4",
             "d2": "36,0 × 10^-5",
             "d3": "3,6 × 10^-6",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^-5."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 3,6 × 10^-5.",
+            "valeur_exploitable": 3.6e-05,
+            "coefficient_exploitable": 3.6,
+            "exposant_exploitable": -5
           },
           "progression": 1
         },
@@ -87,7 +106,10 @@
             "d1": "4,8 × 10^7",
             "d2": "48,0 × 10^6",
             "d3": "4,8 × 10^5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^6."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^6.",
+            "valeur_exploitable": 4800000.0,
+            "coefficient_exploitable": 4.8,
+            "exposant_exploitable": 6
           },
           "progression": 1
         },
@@ -98,7 +120,10 @@
             "d1": "4,8 × 10^-5",
             "d2": "48,0 × 10^-6",
             "d3": "4,8 × 10^-7",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^-6."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 4,8 × 10^-6.",
+            "valeur_exploitable": 4.8e-06,
+            "coefficient_exploitable": 4.8,
+            "exposant_exploitable": -6
           },
           "progression": 1
         },
@@ -109,7 +134,10 @@
             "d1": "7,2 × 10^4",
             "d2": "72,0 × 10^3",
             "d3": "7,2 × 10^2",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^3."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^3.",
+            "valeur_exploitable": 7200.0,
+            "coefficient_exploitable": 7.2,
+            "exposant_exploitable": 3
           },
           "progression": 2
         },
@@ -120,7 +148,10 @@
             "d1": "7,2 × 10^-2",
             "d2": "72,0 × 10^-3",
             "d3": "7,2 × 10^-4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^-3."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 7,2 × 10^-3.",
+            "valeur_exploitable": 0.0072,
+            "coefficient_exploitable": 7.2,
+            "exposant_exploitable": -3
           },
           "progression": 2
         },
@@ -131,7 +162,10 @@
             "d1": "6,4 × 10^5",
             "d2": "64,0 × 10^4",
             "d3": "6,4 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^4."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^4.",
+            "valeur_exploitable": 64000.0,
+            "coefficient_exploitable": 6.4,
+            "exposant_exploitable": 4
           },
           "progression": 2
         },
@@ -142,7 +176,10 @@
             "d1": "6,4 × 10^-3",
             "d2": "64,0 × 10^-4",
             "d3": "6,4 × 10^-5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^-4."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 6,4 × 10^-4.",
+            "valeur_exploitable": 0.00064,
+            "coefficient_exploitable": 6.4,
+            "exposant_exploitable": -4
           },
           "progression": 2
         },
@@ -153,7 +190,10 @@
             "d1": "8,1 × 10^6",
             "d2": "81,0 × 10^5",
             "d3": "8,1 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^5."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^5.",
+            "valeur_exploitable": 810000.0,
+            "coefficient_exploitable": 8.1,
+            "exposant_exploitable": 5
           },
           "progression": 2
         },
@@ -164,7 +204,10 @@
             "d1": "8,1 × 10^-4",
             "d2": "81,0 × 10^-5",
             "d3": "8,1 × 10^-6",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^-5."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 8,1 × 10^-5.",
+            "valeur_exploitable": 8.1e-05,
+            "coefficient_exploitable": 8.1,
+            "exposant_exploitable": -5
           },
           "progression": 2
         },
@@ -175,7 +218,10 @@
             "d1": "9,5 × 10^7",
             "d2": "95,0 × 10^6",
             "d3": "9,5 × 10^5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^6."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^6.",
+            "valeur_exploitable": 9500000.0,
+            "coefficient_exploitable": 9.5,
+            "exposant_exploitable": 6
           },
           "progression": 3
         },
@@ -186,7 +232,10 @@
             "d1": "9,5 × 10^-5",
             "d2": "95,0 × 10^-6",
             "d3": "9,5 × 10^-7",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^-6."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 9,5 × 10^-6.",
+            "valeur_exploitable": 9.5e-06,
+            "coefficient_exploitable": 9.5,
+            "exposant_exploitable": -6
           },
           "progression": 3
         },
@@ -197,7 +246,10 @@
             "d1": "1,7 × 10^5",
             "d2": "17,0 × 10^4",
             "d3": "1,7 × 10^3",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^4."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^4.",
+            "valeur_exploitable": 17000.0,
+            "coefficient_exploitable": 1.7,
+            "exposant_exploitable": 4
           },
           "progression": 3
         },
@@ -208,7 +260,10 @@
             "d1": "1,7 × 10^-3",
             "d2": "17,0 × 10^-4",
             "d3": "1,7 × 10^-5",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^-4."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 1,7 × 10^-4.",
+            "valeur_exploitable": 0.00017,
+            "coefficient_exploitable": 1.7,
+            "exposant_exploitable": -4
           },
           "progression": 3
         },
@@ -219,7 +274,10 @@
             "d1": "5,3 × 10^6",
             "d2": "53,0 × 10^5",
             "d3": "5,3 × 10^4",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^5."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^5.",
+            "valeur_exploitable": 530000.0,
+            "coefficient_exploitable": 5.3,
+            "exposant_exploitable": 5
           },
           "progression": 3
         },
@@ -230,15 +288,22 @@
             "d1": "5,3 × 10^-4",
             "d2": "53,0 × 10^-5",
             "d3": "5,3 × 10^-6",
-            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^-5."
+            "correction": "En notation scientifique, le coefficient est compris entre 1 et 10. Ici : 5,3 × 10^-5.",
+            "valeur_exploitable": 5.3e-05,
+            "coefficient_exploitable": 5.3,
+            "exposant_exploitable": -5
           },
           "progression": 3
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_exploitable",
+      "reponse_exploitable": "coefficient_exploitable * 10^exposant_exploitable",
+      "moteur": "R"
     },
     {
       "id": "PUI-016",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -251,6 +316,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 45000.0,
+            "resultat_exploitable": 45000.0,
             "enonce": "Quelle est l’écriture scientifique de 45 000 ?",
             "reponse": "4,5 × 10⁴",
             "correction": "4,5 × 10⁴ = 45 000 et son coefficient 4,5 est compris entre 1 inclus et 10 exclu. 45 × 10³ et 0,45 × 10⁵ valent eux aussi 45 000, mais ce ne sont pas des écritures scientifiques : leurs coefficients 45 et 0,45 ne respectent pas cette condition.",
@@ -262,6 +329,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 72000.0,
+            "resultat_exploitable": 72000.0,
             "enonce": "Quelle est l’écriture scientifique de 72 000 ?",
             "reponse": "7,2 × 10⁴",
             "correction": "L’écriture correcte est 7,2 × 10⁴.",
@@ -273,6 +342,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 830000.0,
+            "resultat_exploitable": 830000.0,
             "enonce": "Quelle est l’écriture scientifique de 830 000 ?",
             "reponse": "8,3 × 10⁵",
             "correction": "L’écriture correcte est 8,3 × 10⁵.",
@@ -282,11 +353,15 @@
             "p4": "8,3 × 10⁴"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-017",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -299,6 +374,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 0.0062,
+            "resultat_exploitable": 0.0062,
             "enonce": "Quelle est l’écriture scientifique de 0,0062 ?",
             "reponse": "6,2 × 10⁻³",
             "correction": "6,2 × 10⁻³ = 0,0062 et son coefficient 6,2 est compris entre 1 inclus et 10 exclu. Le coefficient d’une écriture scientifique doit rester dans cet intervalle.",
@@ -310,6 +387,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 0.0045,
+            "resultat_exploitable": 0.0045,
             "enonce": "Quelle est l’écriture scientifique de 0,0045 ?",
             "reponse": "4,5 × 10⁻³",
             "correction": "L’écriture correcte est 4,5 × 10⁻³.",
@@ -321,6 +400,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 0.00072,
+            "resultat_exploitable": 0.00072,
             "enonce": "Quelle est l’écriture scientifique de 0,00072 ?",
             "reponse": "7,2 × 10⁻⁴",
             "correction": "L’écriture correcte est 7,2 × 10⁻⁴.",
@@ -330,11 +411,15 @@
             "p4": "72 × 10⁻⁴"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-036",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Dans 6,2 × 10⁻³, comment appelle-t-on le nombre 6,2 ? Choisis le mot à trou correspondant.",
       "presentation": {
         "type": "mot_a_trou",
@@ -352,11 +437,15 @@
         "produit",
         "inverse"
       ],
-      "correction": "Dans une écriture scientifique a × 10ⁿ, a est le coefficient. Sa valeur absolue est comprise entre 1 inclus et 10 exclu."
+      "correction": "Dans une écriture scientifique a × 10ⁿ, a est le coefficient. Sa valeur absolue est comprise entre 1 inclus et 10 exclu.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "PUI-037",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "valeur_recherchee",
       "enonce": "Quel nombre doit remplacer □ pour que 0,00072 = 7,2 × 10 à la puissance □ ?",
       "presentation": {
         "type": "boite"
@@ -368,11 +457,15 @@
         "−5",
         "5"
       ],
-      "correction": "Pour passer de 7,2 à 0,00072, la virgule se déplace de quatre rangs vers la gauche : 0,00072 = 7,2 × 10⁻⁴."
+      "correction": "Pour passer de 7,2 à 0,00072, la virgule se déplace de quatre rangs vers la gauche : 0,00072 = 7,2 × 10⁻⁴.",
+      "enonce_exploitable": "log(0.00072 / 7.2, base = 10)",
+      "reponse_exploitable": "-4",
+      "moteur": "R"
     },
     {
       "id": "PUI-038",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -385,6 +478,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 360000.0,
+            "resultat_exploitable": 360000.0,
             "enonce": "Quel nombre est égal à 3,6 × 10⁵ ?",
             "reponse": "360 000",
             "correction": "Multiplier par 10⁵ décale la virgule de cinq rangs vers la droite : 3,6 × 10⁵ = 360 000.",
@@ -396,6 +491,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 42000.0,
+            "resultat_exploitable": 42000.0,
             "enonce": "Quel nombre est égal à 4,2 × 10⁴ ?",
             "reponse": "42 000",
             "correction": "L’écriture correcte est 42 000.",
@@ -407,6 +504,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 7500000.0,
+            "resultat_exploitable": 7500000.0,
             "enonce": "Quel nombre est égal à 7,5 × 10⁶ ?",
             "reponse": "7 500 000",
             "correction": "L’écriture correcte est 7 500 000.",
@@ -416,11 +515,15 @@
             "p4": "0,0000075"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-039",
-      "type": "qcm",
+      "capacite": "transformer",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -439,7 +542,10 @@
             "p1": "150 000 000 km",
             "p2": "15 000 000 km",
             "p3": "1 500 000 000 km",
-            "p4": "0,000000015 km"
+            "p4": "0,000000015 km",
+            "coefficient": 1.5,
+            "exposant": 8,
+            "resultat_exploitable": 150000000
           }
         },
         {
@@ -450,7 +556,10 @@
             "p1": "24 000 000 km",
             "p2": "2 400 000 km",
             "p3": "240 000 000 km",
-            "p4": "0,00000024 km"
+            "p4": "0,00000024 km",
+            "coefficient": 2.4,
+            "exposant": 7,
+            "resultat_exploitable": 24000000
           }
         },
         {
@@ -461,14 +570,21 @@
             "p1": "6 200 000 km",
             "p2": "620 000 km",
             "p3": "62 000 000 km",
-            "p4": "0,0000062 km"
+            "p4": "0,0000062 km",
+            "coefficient": 6.2,
+            "exposant": 6,
+            "resultat_exploitable": 6200000
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "coefficient*10^exposant",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "PUI-040",
-      "type": "qcm",
+      "capacite": "verifier",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -481,6 +597,8 @@
       "variantes": [
         {
           "parametres": {
+            "valeur_initiale": 0.00053,
+            "resultat_exploitable": 0.00053,
             "enonce": "Parmi ces écritures de 0,00053, laquelle est une notation scientifique ?",
             "reponse": "5,3 × 10⁻⁴",
             "correction": "Les quatre écritures valent 0,00053, mais seule 5,3 × 10⁻⁴ a un coefficient dont la valeur absolue est comprise entre 1 inclus et 10 exclu.",
@@ -492,6 +610,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 0.00084,
+            "resultat_exploitable": 0.00084,
             "enonce": "Parmi ces écritures de 0,00084, laquelle est une notation scientifique ?",
             "reponse": "8,4 × 10⁻⁴",
             "correction": "L’écriture correcte est 8,4 × 10⁻⁴.",
@@ -503,6 +623,8 @@
         },
         {
           "parametres": {
+            "valeur_initiale": 0.0071,
+            "resultat_exploitable": 0.0071,
             "enonce": "Parmi ces écritures de 0,0071, laquelle est une notation scientifique ?",
             "reponse": "7,1 × 10⁻³",
             "correction": "L’écriture correcte est 7,1 × 10⁻³.",
@@ -512,7 +634,10 @@
             "p4": "710 × 10⁻⁵"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "valeur_initiale",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

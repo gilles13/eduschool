@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "EVT-OPS-001",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "On sait que P(A) = [[pa]], P(B) = [[pb]] et P(A ∩ B) = [[pi]]. Quelle est P(A ∪ B) ?",
       "reponse": "[[bonne]]",
       "propositions": [
@@ -23,7 +24,8 @@
             "bonne": "10/20",
             "d1": "11/20",
             "d2": "1/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "1/2"
           }
         },
         {
@@ -35,7 +37,8 @@
             "bonne": "12/20",
             "d1": "14/20",
             "d2": "2/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "3/5"
           }
         },
         {
@@ -47,7 +50,8 @@
             "bonne": "14/20",
             "d1": "17/20",
             "d2": "3/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "7/10"
           }
         },
         {
@@ -59,7 +63,8 @@
             "bonne": "14/20",
             "d1": "15/20",
             "d2": "1/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "7/10"
           }
         },
         {
@@ -71,7 +76,8 @@
             "bonne": "16/20",
             "d1": "18/20",
             "d2": "2/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "4/5"
           }
         },
         {
@@ -83,7 +89,8 @@
             "bonne": "8/20",
             "d1": "11/20",
             "d2": "3/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "2/5"
           }
         },
         {
@@ -95,7 +102,8 @@
             "bonne": "13/20",
             "d1": "14/20",
             "d2": "1/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "13/20"
           }
         },
         {
@@ -107,7 +115,8 @@
             "bonne": "15/20",
             "d1": "17/20",
             "d2": "2/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "3/4"
           }
         },
         {
@@ -119,7 +128,8 @@
             "bonne": "12/20",
             "d1": "15/20",
             "d2": "3/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "3/5"
           }
         },
         {
@@ -131,7 +141,8 @@
             "bonne": "17/20",
             "d1": "18/20",
             "d2": "1/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "17/20"
           }
         },
         {
@@ -143,7 +154,8 @@
             "bonne": "9/20",
             "d1": "11/20",
             "d2": "2/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "9/20"
           }
         },
         {
@@ -155,7 +167,8 @@
             "bonne": "11/20",
             "d1": "14/20",
             "d2": "3/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "11/20"
           }
         },
         {
@@ -167,7 +180,8 @@
             "bonne": "16/20",
             "d1": "17/20",
             "d2": "1/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "4/5"
           }
         },
         {
@@ -179,7 +193,8 @@
             "bonne": "13/20",
             "d1": "15/20",
             "d2": "2/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "13/20"
           }
         },
         {
@@ -191,14 +206,19 @@
             "bonne": "15/20",
             "d1": "18/20",
             "d2": "3/20",
-            "d3": "1 − P(A ∩ B)"
+            "d3": "1 − P(A ∩ B)",
+            "resultat_exploitable": "3/4"
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "pa + pb - pi",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "EVT-OPS-002",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Que signifie A ∩ B ?",
       "reponse": "A et B se réalisent tous les deux",
       "propositions": [
@@ -207,11 +227,15 @@
         "A ne se réalise pas",
         "A et B sont impossibles"
       ],
-      "correction": "L’intersection contient les issues communes aux deux événements."
+      "correction": "L’intersection contient les issues communes aux deux événements.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "EVT-OPS-003",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "classique",
       "enonce": "Que signifie A ∪ B ?",
       "reponse": "Au moins l’un des événements A ou B se réalise",
       "propositions": [
@@ -220,11 +244,15 @@
         "Ni A ni B",
         "Seulement A mais jamais B"
       ],
-      "correction": "La réunion rassemble les issues appartenant à A ou à B, éventuellement aux deux."
+      "correction": "La réunion rassemble les issues appartenant à A ou à B, éventuellement aux deux.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "EVT-OPS-004",
-      "type": "qcm",
+      "capacite": "determiner",
+      "type_question": "classique",
       "enonce": "[[enonce]]",
       "reponse": "[[reponse]]",
       "propositions": [
@@ -243,7 +271,9 @@
             "p1": "0,7",
             "p2": "0,3",
             "p3": "1,3",
-            "p4": "-0,3"
+            "p4": "-0,3",
+            "probabilite_a": 0.3,
+            "resultat_exploitable": 0.7
           }
         },
         {
@@ -254,7 +284,9 @@
             "p1": "0,75",
             "p2": "0,25",
             "p3": "1,25",
-            "p4": "−0,25"
+            "p4": "−0,25",
+            "probabilite_a": 0.25,
+            "resultat_exploitable": 0.75
           }
         },
         {
@@ -265,10 +297,15 @@
             "p1": "0,4",
             "p2": "0,6",
             "p3": "1,6",
-            "p4": "−0,6"
+            "p4": "−0,6",
+            "probabilite_a": 0.6,
+            "resultat_exploitable": 0.4
           }
         }
-      ]
+      ],
+      "enonce_exploitable": "1 - probabilite_a",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

@@ -28,6 +28,6 @@ Un seul indicateur ne raconte pas toute une série.
 
 ## Pour vérifier tes découvertes
 
-**1. Trois indicateurs**
+1. **Trois indicateurs :**
 
 Moyenne : $25/5=5$. Médiane : 4. Étendue : $10-2=8$.

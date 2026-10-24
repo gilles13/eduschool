@@ -3,7 +3,8 @@
   "questions": [
     {
       "id": "QUAD_RECT_001",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "ABCD est un parallélogramme. Le codage indique que l'angle DAB est droit. Que peux-tu en déduire ?",
       "reponse": "ABCD est un rectangle",
       "propositions": [
@@ -16,11 +17,15 @@
         "id": "parallelogramme",
         "codage": "angle_droit"
       },
-      "correction": "Un parallélogramme qui possède un angle droit est un rectangle. Le dessin n'a pas besoin de ressembler à un rectangle."
+      "correction": "Un parallélogramme qui possède un angle droit est un rectangle. Le dessin n'a pas besoin de ressembler à un rectangle.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "QUAD_LOS_001",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "ABCD est un parallélogramme. Les quatre côtés portent le même codage de longueur. Que peux-tu en déduire ?",
       "reponse": "ABCD est un losange",
       "propositions": [
@@ -33,11 +38,15 @@
         "id": "parallelogramme",
         "codage": "cotes_egaux"
       },
-      "correction": "Un parallélogramme dont les quatre côtés ont la même longueur est un losange."
+      "correction": "Un parallélogramme dont les quatre côtés ont la même longueur est un losange.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "QUAD_CARRE_001",
-      "type": "qcm",
+      "capacite": "justifier",
+      "type_question": "classique",
       "enonce": "ABCD est un parallélogramme. Un angle droit est codé et les quatre côtés portent le même codage de longueur. Quelle conclusion est la plus précise ?",
       "reponse": "ABCD est un carré",
       "propositions": [
@@ -50,30 +59,183 @@
         "id": "parallelogramme",
         "codage": "carre"
       },
-      "correction": "L'angle droit permet de conclure rectangle ; les quatre côtés égaux permettent de conclure losange. ABCD est donc à la fois rectangle et losange : c'est un carré."
+      "correction": "L'angle droit permet de conclure rectangle ; les quatre côtés égaux permettent de conclure losange. ABCD est donc à la fois rectangle et losange : c'est un carré.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
-      "id": "QUAD_JUST_001",
-      "type": "qcm",
-      "enonce": "Le quadrilatère dessiné ne ressemble franchement pas à un carré. Pourtant les codages permettent de montrer qu'il en est un. Pourquoi peut-on faire confiance à cette conclusion ?",
-      "reponse": "Parce que les codages et les propriétés priment sur l'apparence du dessin",
+      "id": "QUAD-RAISONNEMENT-DIAGONALES-001",
+      "capacite": "justifier",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "ABCD est un quadrilatère tracé à main levée. Ses diagonales [AC] et [BD] se coupent en O. On sait que OA = OC, OB = OD, AC = BD et (AC) est perpendiculaire à (BD). Quelle est la nature la plus précise de ABCD ?",
+      "reponse": "ABCD est un carré",
       "propositions": [
-        "Parce que les codages et les propriétés priment sur l'apparence du dessin",
-        "Parce qu'un dessin de géométrie est toujours à l'échelle",
-        "Parce que tout parallélogramme est un carré",
-        "Parce qu'il suffit qu'une figure ressemble à peu près à un carré"
+        "ABCD est un carré",
+        "ABCD est un rectangle, mais pas un carré",
+        "ABCD est un losange, mais pas un carré",
+        "ABCD est un parallélogramme, mais ni un rectangle ni un losange"
       ],
       "illustration": {
         "id": "parallelogramme",
-        "codage": "carre",
-        "approximation": true,
+        "codage": "diagonales_raisonnement",
         "main_levee": true
       },
-      "correction": "Exactement : le dessin aide à se repérer, mais la démonstration s'appuie sur les données, les codages et les propriétés."
+      "correction": "Je vois : OA = OC et OB = OD ; les diagonales se coupent donc en leur milieu. Or un quadrilatère dont les diagonales se coupent en leur milieu est un parallélogramme. Je vois aussi que AC = BD : ce parallélogramme est un rectangle. Enfin, ses diagonales sont perpendiculaires : c’est aussi un losange. Donc ABCD est à la fois un rectangle et un losange : c’est un carré.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
+    },
+    {
+      "id": "QUAD-DIAGONALES-MILIEU-001",
+      "capacite": "verifier",
+      "type_question": "classique",
+      "enonce": "ABCD est un parallélogramme. Ses diagonales [AC] et [BD] se coupent en O. Quelle égalité est nécessairement vraie ?",
+      "reponse": "OA = OC",
+      "propositions": [
+        "OA = OC",
+        "OA = OB",
+        "AC = BD"
+      ],
+      "correction": "Les diagonales d’un parallélogramme se coupent en leur milieu : O est le milieu de [AC], donc OA = OC.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
+    },
+    {
+      "id": "QUAD-DIAGONALES-RECIPROQUE-001",
+      "capacite": "verifier",
+      "type_question": "classique",
+      "enonce": "Dans un quadrilatère ABCD, les diagonales [AC] et [BD] se coupent en O et OA = OC, OB = OD. Peut-on conclure que ABCD est un parallélogramme ?",
+      "reponse": "Oui, car ses diagonales se coupent en leur milieu",
+      "propositions": [
+        "Oui, car ses diagonales se coupent en leur milieu",
+        "Non, il faut aussi que les diagonales soient égales"
+      ],
+      "correction": "La réciproque de la propriété des diagonales suffit : si les diagonales d’un quadrilatère se coupent en leur milieu, ce quadrilatère est un parallélogramme.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": null
+    },
+    {
+      "id": "QUAD-DIAGONALES-CALCUL-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "demi_diagonale": 3,
+            "resultat_exploitable": 6,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 3 cm. Combien mesure AC ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "3 cm",
+            "p3": "9 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 3 = 6 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 4,
+            "resultat_exploitable": 8,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 4 cm. Combien mesure AC ?",
+            "reponse": "8 cm",
+            "p1": "8 cm",
+            "p2": "4 cm",
+            "p3": "12 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 4 = 8 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 5,
+            "resultat_exploitable": 10,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 5 cm. Combien mesure AC ?",
+            "reponse": "10 cm",
+            "p1": "10 cm",
+            "p2": "5 cm",
+            "p3": "15 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 5 = 10 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 6,
+            "resultat_exploitable": 12,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 6 cm. Combien mesure AC ?",
+            "reponse": "12 cm",
+            "p1": "12 cm",
+            "p2": "6 cm",
+            "p3": "18 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 6 = 12 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 7,
+            "resultat_exploitable": 14,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 7 cm. Combien mesure AC ?",
+            "reponse": "14 cm",
+            "p1": "14 cm",
+            "p2": "7 cm",
+            "p3": "21 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 7 = 14 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 8,
+            "resultat_exploitable": 16,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 8 cm. Combien mesure AC ?",
+            "reponse": "16 cm",
+            "p1": "16 cm",
+            "p2": "8 cm",
+            "p3": "24 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 8 = 16 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 9,
+            "resultat_exploitable": 18,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 9 cm. Combien mesure AC ?",
+            "reponse": "18 cm",
+            "p1": "18 cm",
+            "p2": "9 cm",
+            "p3": "27 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 9 = 18 cm."
+          }
+        },
+        {
+          "parametres": {
+            "demi_diagonale": 10,
+            "resultat_exploitable": 20,
+            "enonce": "ABCD est un parallélogramme. Ses diagonales se coupent en O et OA = 10 cm. Combien mesure AC ?",
+            "reponse": "20 cm",
+            "p1": "20 cm",
+            "p2": "10 cm",
+            "p3": "30 cm",
+            "correction": "O est le milieu de [AC] : AC = 2 × OA = 2 × 10 = 20 cm."
+          }
+        }
+      ],
+      "enonce_exploitable": "2 * demi_diagonale",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     },
     {
       "id": "QUAD-VOCAB-TROU-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
       "enonce": "Quel quadrilatère possède quatre côtés de même longueur ? Choisis le mot à trou.",
       "presentation": {
         "type": "mot_a_trou",
@@ -95,11 +257,15 @@
       "illustration": {
         "id": "parallelogramme",
         "codage": "cotes_egaux"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
     },
     {
       "id": "QUAD-VOCAB-MASQUE-001",
-      "type": "qcm",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
       "enonce": "Quel nom donne-t-on à un parallélogramme qui possède un angle droit ? Choisis le mot masqué.",
       "presentation": {
         "type": "mot_masque",
@@ -122,7 +288,372 @@
       "illustration": {
         "id": "parallelogramme",
         "codage": "angle_droit"
-      }
+      },
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "PARALLELOGRAMMES-COTES-OPPOSES",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "cote_oppose": 3,
+            "resultat_exploitable": 3,
+            "enonce": "ABCD est un parallélogramme, AB = 3 cm et BC = 6 cm. Quelle est la longueur CD ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "6 cm",
+            "p3": "9 cm",
+            "p4": "12 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 3 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 4,
+            "resultat_exploitable": 4,
+            "enonce": "ABCD est un parallélogramme, AB = 4 cm et BC = 7 cm. Quelle est la longueur CD ?",
+            "reponse": "4 cm",
+            "p1": "4 cm",
+            "p2": "7 cm",
+            "p3": "11 cm",
+            "p4": "14 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 4 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 5,
+            "resultat_exploitable": 5,
+            "enonce": "ABCD est un parallélogramme, AB = 5 cm et BC = 8 cm. Quelle est la longueur CD ?",
+            "reponse": "5 cm",
+            "p1": "5 cm",
+            "p2": "8 cm",
+            "p3": "13 cm",
+            "p4": "16 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 5 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 6,
+            "resultat_exploitable": 6,
+            "enonce": "ABCD est un parallélogramme, AB = 6 cm et BC = 9 cm. Quelle est la longueur CD ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "9 cm",
+            "p3": "15 cm",
+            "p4": "18 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 6 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 7,
+            "resultat_exploitable": 7,
+            "enonce": "ABCD est un parallélogramme, AB = 7 cm et BC = 10 cm. Quelle est la longueur CD ?",
+            "reponse": "7 cm",
+            "p1": "7 cm",
+            "p2": "10 cm",
+            "p3": "17 cm",
+            "p4": "20 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 7 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 8,
+            "resultat_exploitable": 8,
+            "enonce": "ABCD est un parallélogramme, AB = 8 cm et BC = 11 cm. Quelle est la longueur CD ?",
+            "reponse": "8 cm",
+            "p1": "8 cm",
+            "p2": "11 cm",
+            "p3": "19 cm",
+            "p4": "22 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 8 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 9,
+            "resultat_exploitable": 9,
+            "enonce": "ABCD est un parallélogramme, AB = 9 cm et BC = 12 cm. Quelle est la longueur CD ?",
+            "reponse": "9 cm",
+            "p1": "9 cm",
+            "p2": "12 cm",
+            "p3": "21 cm",
+            "p4": "24 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 9 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 10,
+            "resultat_exploitable": 10,
+            "enonce": "ABCD est un parallélogramme, AB = 10 cm et BC = 13 cm. Quelle est la longueur CD ?",
+            "reponse": "10 cm",
+            "p1": "10 cm",
+            "p2": "13 cm",
+            "p3": "23 cm",
+            "p4": "26 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 10 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 11,
+            "resultat_exploitable": 11,
+            "enonce": "ABCD est un parallélogramme, AB = 11 cm et BC = 14 cm. Quelle est la longueur CD ?",
+            "reponse": "11 cm",
+            "p1": "11 cm",
+            "p2": "14 cm",
+            "p3": "25 cm",
+            "p4": "28 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 11 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 12,
+            "resultat_exploitable": 12,
+            "enonce": "ABCD est un parallélogramme, AB = 12 cm et BC = 15 cm. Quelle est la longueur CD ?",
+            "reponse": "12 cm",
+            "p1": "12 cm",
+            "p2": "15 cm",
+            "p3": "27 cm",
+            "p4": "30 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 12 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 13,
+            "resultat_exploitable": 13,
+            "enonce": "ABCD est un parallélogramme, AB = 13 cm et BC = 16 cm. Quelle est la longueur CD ?",
+            "reponse": "13 cm",
+            "p1": "13 cm",
+            "p2": "16 cm",
+            "p3": "29 cm",
+            "p4": "32 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 13 cm."
+          }
+        },
+        {
+          "parametres": {
+            "cote_oppose": 14,
+            "resultat_exploitable": 14,
+            "enonce": "ABCD est un parallélogramme, AB = 14 cm et BC = 17 cm. Quelle est la longueur CD ?",
+            "reponse": "14 cm",
+            "p1": "14 cm",
+            "p2": "17 cm",
+            "p3": "31 cm",
+            "p4": "34 cm",
+            "correction": "Dans un parallélogramme, les côtés opposés sont égaux : CD = AB = 14 cm."
+          }
+        }
+      ],
+      "enonce_exploitable": "cote_oppose",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "PARALLELOGRAMMES-PERIMETRE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 3 cm et 6 cm. Quel est son périmètre ?",
+            "reponse": "18 cm",
+            "p1": "18 cm",
+            "p2": "9 cm",
+            "p3": "19 cm",
+            "p4": "15 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (3 + 6) = 18 cm.",
+            "cote_a_exploitable": 3,
+            "cote_b_exploitable": 6,
+            "resultat_exploitable": 18
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 4 cm et 7 cm. Quel est son périmètre ?",
+            "reponse": "22 cm",
+            "p1": "22 cm",
+            "p2": "11 cm",
+            "p3": "29 cm",
+            "p4": "19 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (4 + 7) = 22 cm.",
+            "cote_a_exploitable": 4,
+            "cote_b_exploitable": 7,
+            "resultat_exploitable": 22
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 5 cm et 8 cm. Quel est son périmètre ?",
+            "reponse": "26 cm",
+            "p1": "26 cm",
+            "p2": "13 cm",
+            "p3": "41 cm",
+            "p4": "23 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (5 + 8) = 26 cm.",
+            "cote_a_exploitable": 5,
+            "cote_b_exploitable": 8,
+            "resultat_exploitable": 26
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 6 cm et 9 cm. Quel est son périmètre ?",
+            "reponse": "30 cm",
+            "p1": "30 cm",
+            "p2": "15 cm",
+            "p3": "55 cm",
+            "p4": "27 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (6 + 9) = 30 cm.",
+            "cote_a_exploitable": 6,
+            "cote_b_exploitable": 9,
+            "resultat_exploitable": 30
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 7 cm et 10 cm. Quel est son périmètre ?",
+            "reponse": "34 cm",
+            "p1": "34 cm",
+            "p2": "17 cm",
+            "p3": "71 cm",
+            "p4": "31 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (7 + 10) = 34 cm.",
+            "cote_a_exploitable": 7,
+            "cote_b_exploitable": 10,
+            "resultat_exploitable": 34
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 8 cm et 11 cm. Quel est son périmètre ?",
+            "reponse": "38 cm",
+            "p1": "38 cm",
+            "p2": "19 cm",
+            "p3": "89 cm",
+            "p4": "35 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (8 + 11) = 38 cm.",
+            "cote_a_exploitable": 8,
+            "cote_b_exploitable": 11,
+            "resultat_exploitable": 38
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 9 cm et 12 cm. Quel est son périmètre ?",
+            "reponse": "42 cm",
+            "p1": "42 cm",
+            "p2": "21 cm",
+            "p3": "109 cm",
+            "p4": "39 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (9 + 12) = 42 cm.",
+            "cote_a_exploitable": 9,
+            "cote_b_exploitable": 12,
+            "resultat_exploitable": 42
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 10 cm et 13 cm. Quel est son périmètre ?",
+            "reponse": "46 cm",
+            "p1": "46 cm",
+            "p2": "23 cm",
+            "p3": "131 cm",
+            "p4": "43 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (10 + 13) = 46 cm.",
+            "cote_a_exploitable": 10,
+            "cote_b_exploitable": 13,
+            "resultat_exploitable": 46
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 11 cm et 14 cm. Quel est son périmètre ?",
+            "reponse": "50 cm",
+            "p1": "50 cm",
+            "p2": "25 cm",
+            "p3": "155 cm",
+            "p4": "47 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (11 + 14) = 50 cm.",
+            "cote_a_exploitable": 11,
+            "cote_b_exploitable": 14,
+            "resultat_exploitable": 50
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 12 cm et 15 cm. Quel est son périmètre ?",
+            "reponse": "54 cm",
+            "p1": "54 cm",
+            "p2": "27 cm",
+            "p3": "181 cm",
+            "p4": "51 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (12 + 15) = 54 cm.",
+            "cote_a_exploitable": 12,
+            "cote_b_exploitable": 15,
+            "resultat_exploitable": 54
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 13 cm et 16 cm. Quel est son périmètre ?",
+            "reponse": "58 cm",
+            "p1": "58 cm",
+            "p2": "29 cm",
+            "p3": "209 cm",
+            "p4": "55 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (13 + 16) = 58 cm.",
+            "cote_a_exploitable": 13,
+            "cote_b_exploitable": 16,
+            "resultat_exploitable": 58
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un parallélogramme a deux côtés consécutifs de 14 cm et 17 cm. Quel est son périmètre ?",
+            "reponse": "62 cm",
+            "p1": "62 cm",
+            "p2": "31 cm",
+            "p3": "239 cm",
+            "p4": "59 cm",
+            "correction": "Les côtés opposés sont égaux : P = 2 × (14 + 17) = 62 cm.",
+            "cote_a_exploitable": 14,
+            "cote_b_exploitable": 17,
+            "resultat_exploitable": 62
+          }
+        }
+      ],
+      "enonce_exploitable": "2 * (cote_a_exploitable + cote_b_exploitable)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
     }
   ]
 }

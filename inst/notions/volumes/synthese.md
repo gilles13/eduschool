@@ -1,29 +1,34 @@
 # L'essentiel : Volumes
 
-> **TODO — FICHE À RÉDIGER** — Squelette documentaire, aucun contenu pédagogique validé.
-
 ::: {.edu-definition}
 **De quoi parle-t-on ?**
 
-TODO — Définition courte permettant de retrouver immédiatement l'objet étudié.
+Le volume mesure l'espace occupé par un solide, exprimé en unités cubiques.
 :::
 
 ## Principe
 
-TODO — Énoncer la propriété, le raisonnement ou la règle essentielle.
+On peut imaginer remplir un solide avec des cubes unités de 1 cm³.
 
 ## Méthode
 
-TODO — Présenter les étapes utiles de façon courte lorsque la notion comporte une méthode.
+- Pavé droit : longueur × largeur × hauteur.
+- Cube : côté × côté × côté.
+- Deux solides sans chevauchement : additionner leurs volumes.
+- Hauteur inconnue d'un pavé droit : volume ÷ aire de la base.
+
+<!-- graphique: volumes type=1 -->
 
 ## Exemple
 
-TODO — Donner un exemple complet mais compact.
+Un pavé droit de 5 cm sur 3 cm sur 4 cm a un volume de 5 × 3 × 4 = **60 cm³**.
+
+<!-- graphique: volumes type=2 -->
 
 ## Vérification
 
-TODO — Indiquer, lorsque cela a du sens, comment contrôler le résultat.
+Vérifier que les dimensions sont exprimées dans la même unité et que le résultat est en unités cubiques.
 
 ## À retenir
 
-TODO — Conserver seulement les repères indispensables pour réviser rapidement.
+Le volume concerne l'espace occupé. Pour un pavé droit, trois dimensions sont nécessaires.

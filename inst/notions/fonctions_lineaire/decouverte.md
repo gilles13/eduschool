@@ -30,6 +30,6 @@ Ne commence pas par une formule : identifie d’abord ce qui est comparé ou ass
 
 ## Pour vérifier tes découvertes
 
-**1. Retrouver l’idée**
+1. **Retrouver l’idée :**
 
 Ton exemple doit respecter cette définition : une fonction linéaire est une fonction de la forme f(𝑥)=a𝑥. Vérifie ensuite ton exemple avec la méthode de la fiche : multiplier l’antécédent par a ; graphiquement, lire une droite passant par l’origine.

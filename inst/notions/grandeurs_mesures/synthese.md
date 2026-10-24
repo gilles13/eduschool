@@ -1,4 +1,10 @@
-# Synthèse : Grandeur, mesure et unité
+# L'essentiel : Synthèse : Grandeur, mesure et unité
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+**Une grandeur** est une propriété mesurable ; sa mesure associe un nombre et une unité.
+:::
 
 - Une grandeur décrit une propriété mesurable.
 - Une mesure s'écrit **nombre + unité**.

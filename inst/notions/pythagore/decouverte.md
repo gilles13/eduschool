@@ -1,4 +1,10 @@
-# Découvrir le théorème de Pythagore
+# Découvrir : le théorème de Pythagore
+
+::: {.edu-definition}
+**De quoi parle-t-on ?**
+
+Dans un **triangle rectangle**, le **théorème de Pythagore** relie les carrés des longueurs des trois côtés : le carré de l’hypoténuse égale la somme des carrés des deux autres côtés.
+:::
 
 Un triangle rectangle possède un angle droit. Le **codage** d’un angle droit apporte une information mathématique ; l’apparence d’un dessin à main levée ne suffit pas.
 
@@ -30,4 +36,4 @@ Le théorème sert à **calculer** dans un triangle dont on sait qu'il est recta
 
 ## Pour vérifier tes découvertes
 
-**1. Reconnaître un triangle rectangle.** Le plus grand côté mesure 10 cm. Or $6^2+8^2=36+64=100=10^2$. D’après la réciproque de Pythagore, le triangle est rectangle, et 10 cm est son hypoténuse.
+1. **Reconnaître un triangle rectangle :** Le plus grand côté mesure 10 cm. Or $6^2+8^2=36+64=100=10^2$. D’après la réciproque de Pythagore, le triangle est rectangle, et 10 cm est son hypoténuse.

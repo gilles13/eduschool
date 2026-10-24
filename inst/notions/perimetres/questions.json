@@ -1,0 +1,1566 @@
+{
+  "notion_id": "perimetres",
+  "questions": [
+    {
+      "id": "PER-TRI-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 6 cm, 13 cm et 15 cm. Quel est son périmètre ?",
+            "reponse": "34 cm",
+            "correction": "On additionne les trois côtés : 6 + 13 + 15 = 34 cm.",
+            "p1": "34 cm",
+            "p2": "19 cm",
+            "p3": "68 cm",
+            "p4": "78 cm",
+            "a": 6,
+            "b": 13,
+            "c": 15,
+            "resultat": 34
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 4 cm, 13 cm et 14 cm. Quel est son périmètre ?",
+            "reponse": "31 cm",
+            "correction": "On additionne les trois côtés : 4 + 13 + 14 = 31 cm.",
+            "p1": "31 cm",
+            "p2": "17 cm",
+            "p3": "62 cm",
+            "p4": "52 cm",
+            "a": 4,
+            "b": 13,
+            "c": 14,
+            "resultat": 31
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 10 cm, 12 cm et 16 cm. Quel est son périmètre ?",
+            "reponse": "38 cm",
+            "correction": "On additionne les trois côtés : 10 + 12 + 16 = 38 cm.",
+            "p1": "38 cm",
+            "p2": "22 cm",
+            "p3": "76 cm",
+            "p4": "120 cm",
+            "a": 10,
+            "b": 12,
+            "c": 16,
+            "resultat": 38
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 4 cm, 9 cm et 9 cm. Quel est son périmètre ?",
+            "reponse": "22 cm",
+            "correction": "On additionne les trois côtés : 4 + 9 + 9 = 22 cm.",
+            "p1": "22 cm",
+            "p2": "13 cm",
+            "p3": "44 cm",
+            "p4": "36 cm",
+            "a": 4,
+            "b": 9,
+            "c": 9,
+            "resultat": 22
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 5 cm, 6 cm et 6 cm. Quel est son périmètre ?",
+            "reponse": "17 cm",
+            "correction": "On additionne les trois côtés : 5 + 6 + 6 = 17 cm.",
+            "p1": "17 cm",
+            "p2": "11 cm",
+            "p3": "34 cm",
+            "p4": "30 cm",
+            "a": 5,
+            "b": 6,
+            "c": 6,
+            "resultat": 17
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 4 cm, 11 cm et 14 cm. Quel est son périmètre ?",
+            "reponse": "29 cm",
+            "correction": "On additionne les trois côtés : 4 + 11 + 14 = 29 cm.",
+            "p1": "29 cm",
+            "p2": "15 cm",
+            "p3": "58 cm",
+            "p4": "44 cm",
+            "a": 4,
+            "b": 11,
+            "c": 14,
+            "resultat": 29
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 11 cm, 13 cm et 13 cm. Quel est son périmètre ?",
+            "reponse": "37 cm",
+            "correction": "On additionne les trois côtés : 11 + 13 + 13 = 37 cm.",
+            "p1": "37 cm",
+            "p2": "24 cm",
+            "p3": "74 cm",
+            "p4": "143 cm",
+            "a": 11,
+            "b": 13,
+            "c": 13,
+            "resultat": 37
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a des côtés de 8 cm, 10 cm et 16 cm. Quel est son périmètre ?",
+            "reponse": "34 cm",
+            "correction": "On additionne les trois côtés : 8 + 10 + 16 = 34 cm.",
+            "p1": "34 cm",
+            "p2": "18 cm",
+            "p3": "68 cm",
+            "p4": "80 cm",
+            "a": 8,
+            "b": 10,
+            "c": 16,
+            "resultat": 34
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "a + b + c",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-RECT-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 17 cm de long et 14 cm de large. Quel est son périmètre ?",
+            "reponse": "62 cm",
+            "correction": "On additionne les quatre côtés : 2 × (17 + 14) = 62 cm.",
+            "p1": "62 cm",
+            "p2": "31 cm",
+            "p3": "238 cm",
+            "p4": "48 cm",
+            "longueur": 17,
+            "largeur": 14,
+            "resultat": 62
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 17 cm de long et 10 cm de large. Quel est son périmètre ?",
+            "reponse": "54 cm",
+            "correction": "On additionne les quatre côtés : 2 × (17 + 10) = 54 cm.",
+            "p1": "54 cm",
+            "p2": "27 cm",
+            "p3": "170 cm",
+            "p4": "44 cm",
+            "longueur": 17,
+            "largeur": 10,
+            "resultat": 54
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 20 cm de long et 13 cm de large. Quel est son périmètre ?",
+            "reponse": "66 cm",
+            "correction": "On additionne les quatre côtés : 2 × (20 + 13) = 66 cm.",
+            "p1": "66 cm",
+            "p2": "33 cm",
+            "p3": "260 cm",
+            "p4": "53 cm",
+            "longueur": 20,
+            "largeur": 13,
+            "resultat": 66
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 17 cm de long et 2 cm de large. Quel est son périmètre ?",
+            "reponse": "38 cm",
+            "correction": "On additionne les quatre côtés : 2 × (17 + 2) = 38 cm.",
+            "p1": "38 cm",
+            "p2": "19 cm",
+            "p3": "34 cm",
+            "p4": "36 cm",
+            "longueur": 17,
+            "largeur": 2,
+            "resultat": 38
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 21 cm de long et 7 cm de large. Quel est son périmètre ?",
+            "reponse": "56 cm",
+            "correction": "On additionne les quatre côtés : 2 × (21 + 7) = 56 cm.",
+            "p1": "56 cm",
+            "p2": "28 cm",
+            "p3": "147 cm",
+            "p4": "49 cm",
+            "longueur": 21,
+            "largeur": 7,
+            "resultat": 56
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 23 cm de long et 8 cm de large. Quel est son périmètre ?",
+            "reponse": "62 cm",
+            "correction": "On additionne les quatre côtés : 2 × (23 + 8) = 62 cm.",
+            "p1": "62 cm",
+            "p2": "31 cm",
+            "p3": "184 cm",
+            "p4": "54 cm",
+            "longueur": 23,
+            "largeur": 8,
+            "resultat": 62
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 16 cm de long et 10 cm de large. Quel est son périmètre ?",
+            "reponse": "52 cm",
+            "correction": "On additionne les quatre côtés : 2 × (16 + 10) = 52 cm.",
+            "p1": "52 cm",
+            "p2": "26 cm",
+            "p3": "160 cm",
+            "p4": "42 cm",
+            "longueur": 16,
+            "largeur": 10,
+            "resultat": 52
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 9 cm de long et 5 cm de large. Quel est son périmètre ?",
+            "reponse": "28 cm",
+            "correction": "On additionne les quatre côtés : 2 × (9 + 5) = 28 cm.",
+            "p1": "28 cm",
+            "p2": "14 cm",
+            "p3": "45 cm",
+            "p4": "23 cm",
+            "longueur": 9,
+            "largeur": 5,
+            "resultat": 28
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "2 * (longueur + largeur)",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-MANQUANT-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 46 cm et une longueur de 17 cm. Quelle est sa largeur ?",
+            "reponse": "6 cm",
+            "correction": "La moitié du périmètre vaut 23 cm ; la largeur vaut 23 − 17 = 6 cm.",
+            "p1": "6 cm",
+            "p2": "29 cm",
+            "p3": "23 cm",
+            "p4": "17 cm",
+            "perimetre": 46,
+            "longueur": 17,
+            "resultat": 6.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 52 cm et une longueur de 16 cm. Quelle est sa largeur ?",
+            "reponse": "10 cm",
+            "correction": "La moitié du périmètre vaut 26 cm ; la largeur vaut 26 − 16 = 10 cm.",
+            "p1": "10 cm",
+            "p2": "36 cm",
+            "p3": "26 cm",
+            "p4": "16 cm",
+            "perimetre": 52,
+            "longueur": 16,
+            "resultat": 10.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 50 cm et une longueur de 16 cm. Quelle est sa largeur ?",
+            "reponse": "9 cm",
+            "correction": "La moitié du périmètre vaut 25 cm ; la largeur vaut 25 − 16 = 9 cm.",
+            "p1": "9 cm",
+            "p2": "34 cm",
+            "p3": "25 cm",
+            "p4": "16 cm",
+            "perimetre": 50,
+            "longueur": 16,
+            "resultat": 9.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 64 cm et une longueur de 21 cm. Quelle est sa largeur ?",
+            "reponse": "11 cm",
+            "correction": "La moitié du périmètre vaut 32 cm ; la largeur vaut 32 − 21 = 11 cm.",
+            "p1": "11 cm",
+            "p2": "43 cm",
+            "p3": "32 cm",
+            "p4": "21 cm",
+            "perimetre": 64,
+            "longueur": 21,
+            "resultat": 11.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 44 cm et une longueur de 12 cm. Quelle est sa largeur ?",
+            "reponse": "10 cm",
+            "correction": "La moitié du périmètre vaut 22 cm ; la largeur vaut 22 − 12 = 10 cm.",
+            "p1": "10 cm",
+            "p2": "32 cm",
+            "p3": "22 cm",
+            "p4": "12 cm",
+            "perimetre": 44,
+            "longueur": 12,
+            "resultat": 10.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 62 cm et une longueur de 25 cm. Quelle est sa largeur ?",
+            "reponse": "6 cm",
+            "correction": "La moitié du périmètre vaut 31 cm ; la largeur vaut 31 − 25 = 6 cm.",
+            "p1": "6 cm",
+            "p2": "37 cm",
+            "p3": "31 cm",
+            "p4": "25 cm",
+            "perimetre": 62,
+            "longueur": 25,
+            "resultat": 6.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 46 cm et une longueur de 12 cm. Quelle est sa largeur ?",
+            "reponse": "11 cm",
+            "correction": "La moitié du périmètre vaut 23 cm ; la largeur vaut 23 − 12 = 11 cm.",
+            "p1": "11 cm",
+            "p2": "34 cm",
+            "p3": "23 cm",
+            "p4": "12 cm",
+            "perimetre": 46,
+            "longueur": 12,
+            "resultat": 11.0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle a un périmètre de 54 cm et une longueur de 21 cm. Quelle est sa largeur ?",
+            "reponse": "6 cm",
+            "correction": "La moitié du périmètre vaut 27 cm ; la largeur vaut 27 − 21 = 6 cm.",
+            "p1": "6 cm",
+            "p2": "33 cm",
+            "p3": "27 cm",
+            "p4": "21 cm",
+            "perimetre": 54,
+            "longueur": 21,
+            "resultat": 6.0
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "perimetre / 2 - longueur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-DISQUE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 56 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "175,84 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 56 = 175,84 cm.",
+            "p1": "175,84 cm",
+            "p2": "87,92 cm",
+            "p3": "351,68 cm",
+            "p4": "3136 cm",
+            "diametre": 56,
+            "resultat": 175.84
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 26 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "81,64 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 26 = 81,64 cm.",
+            "p1": "81,64 cm",
+            "p2": "40,82 cm",
+            "p3": "163,28 cm",
+            "p4": "676 cm",
+            "diametre": 26,
+            "resultat": 81.64
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 73 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "229,22 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 73 = 229,22 cm.",
+            "p1": "229,22 cm",
+            "p2": "114,61 cm",
+            "p3": "458,44 cm",
+            "p4": "5329 cm",
+            "diametre": 73,
+            "resultat": 229.22
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 22 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "69,08 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 22 = 69,08 cm.",
+            "p1": "69,08 cm",
+            "p2": "34,54 cm",
+            "p3": "138,16 cm",
+            "p4": "484 cm",
+            "diametre": 22,
+            "resultat": 69.08
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 57 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "178,98 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 57 = 178,98 cm.",
+            "p1": "178,98 cm",
+            "p2": "89,49 cm",
+            "p3": "357,96 cm",
+            "p4": "3249 cm",
+            "diametre": 57,
+            "resultat": 178.98000000000002
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 71 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "222,94 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 71 = 222,94 cm.",
+            "p1": "222,94 cm",
+            "p2": "111,47 cm",
+            "p3": "445,88 cm",
+            "p4": "5041 cm",
+            "diametre": 71,
+            "resultat": 222.94
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 86 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "270,04 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 86 = 270,04 cm.",
+            "p1": "270,04 cm",
+            "p2": "135,02 cm",
+            "p3": "540,08 cm",
+            "p4": "7396 cm",
+            "diametre": 86,
+            "resultat": 270.04
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un disque a un diamètre de 25 cm. En prenant π ≈ 3,14, quelle est la longueur de son cercle ?",
+            "reponse": "78,5 cm",
+            "correction": "Le périmètre vaut π × diamètre, soit 3,14 × 25 = 78,5 cm.",
+            "p1": "78,5 cm",
+            "p2": "39,25 cm",
+            "p3": "157 cm",
+            "p4": "625 cm",
+            "diametre": 25,
+            "resultat": 78.5
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "3.14 * diametre",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-CONTOUR-001",
+      "capacite": "comparer",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 11 cm sur 2 cm, un autre 9 cm sur 4 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (11 + 2) = 26 cm et 2 × (9 + 4) = 26 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 11,
+            "largeur1": 2,
+            "longueur2": 9,
+            "largeur2": 4,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 5 cm sur 4 cm, un autre 7 cm sur 2 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (5 + 4) = 18 cm et 2 × (7 + 2) = 18 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 5,
+            "largeur1": 4,
+            "longueur2": 7,
+            "largeur2": 2,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 11 cm sur 4 cm, un autre 9 cm sur 6 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (11 + 4) = 30 cm et 2 × (9 + 6) = 30 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 11,
+            "largeur1": 4,
+            "longueur2": 9,
+            "largeur2": 6,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 9 cm sur 5 cm, un autre 11 cm sur 3 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (9 + 5) = 28 cm et 2 × (11 + 3) = 28 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 9,
+            "largeur1": 5,
+            "longueur2": 11,
+            "largeur2": 3,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 6 cm sur 2 cm, un autre 5 cm sur 3 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (6 + 2) = 16 cm et 2 × (5 + 3) = 16 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 6,
+            "largeur1": 2,
+            "longueur2": 5,
+            "largeur2": 3,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 10 cm sur 3 cm, un autre 11 cm sur 2 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (10 + 3) = 26 cm et 2 × (11 + 2) = 26 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 10,
+            "largeur1": 3,
+            "longueur2": 11,
+            "largeur2": 2,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 10 cm sur 5 cm, un autre 8 cm sur 7 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (10 + 5) = 30 cm et 2 × (8 + 7) = 30 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 10,
+            "largeur1": 5,
+            "longueur2": 8,
+            "largeur2": 7,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 12 cm sur 6 cm, un autre 10 cm sur 8 cm. Que peut-on dire de leurs périmètres ?",
+            "reponse": "Ils ont le même périmètre.",
+            "correction": "Leurs périmètres valent 2 × (12 + 6) = 36 cm et 2 × (10 + 8) = 36 cm.",
+            "p1": "Ils ont le même périmètre.",
+            "p2": "Le premier a un périmètre plus grand.",
+            "p3": "Le second a un périmètre plus grand.",
+            "p4": "Leur périmètre est impossible à calculer.",
+            "longueur1": 12,
+            "largeur1": 6,
+            "longueur2": 10,
+            "largeur2": 8,
+            "resultat_exploitable": 0
+          },
+          "progression": 1
+        }
+      ],
+      "enonce_exploitable": "2*(longueur1+largeur1)-2*(longueur2+largeur2)",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-JARDIN-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 10 m sur 6 m. On laisse une ouverture de 4 m pour un portail. Le grillage est vendu en rouleaux de 5 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "6 rouleaux",
+            "correction": "Je vois : Le jardin mesure 10 m sur 6 m. On laisse une ouverture de 4 m pour un portail. Le grillage est vendu en rouleaux de 5 m.\nOr : Le périmètre vaut 2 × (10 + 6) = 32 m. On retire 4 m pour le portail : il faut 28 m de grillage.\nDonc : 5 rouleaux fournissent 25 m, ce qui ne suffit pas ; 6 rouleaux fournissent 30 m.",
+            "p1": "6 rouleaux",
+            "p2": "7 rouleaux",
+            "p3": "5 rouleaux",
+            "p4": "4 rouleaux",
+            "longueur": 10,
+            "largeur": 6,
+            "ouverture": 4,
+            "rouleau": 5,
+            "resultat": 6
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 10 m sur 7 m. On laisse une ouverture de 5 m pour un portail. Le grillage est vendu en rouleaux de 4 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "8 rouleaux",
+            "correction": "Je vois : Le jardin mesure 10 m sur 7 m. On laisse une ouverture de 5 m pour un portail. Le grillage est vendu en rouleaux de 4 m.\nOr : Le périmètre vaut 2 × (10 + 7) = 34 m. On retire 5 m pour le portail : il faut 29 m de grillage.\nDonc : 7 rouleaux fournissent 28 m, ce qui ne suffit pas ; 8 rouleaux fournissent 32 m.",
+            "p1": "8 rouleaux",
+            "p2": "9 rouleaux",
+            "p3": "7 rouleaux",
+            "p4": "5 rouleaux",
+            "longueur": 10,
+            "largeur": 7,
+            "ouverture": 5,
+            "rouleau": 4,
+            "resultat": 8
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 10 m sur 9 m. On laisse une ouverture de 6 m pour un portail. Le grillage est vendu en rouleaux de 6 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "6 rouleaux",
+            "correction": "Je vois : Le jardin mesure 10 m sur 9 m. On laisse une ouverture de 6 m pour un portail. Le grillage est vendu en rouleaux de 6 m.\nOr : Le périmètre vaut 2 × (10 + 9) = 38 m. On retire 6 m pour le portail : il faut 32 m de grillage.\nDonc : 5 rouleaux fournissent 30 m, ce qui ne suffit pas ; 6 rouleaux fournissent 36 m.",
+            "p1": "6 rouleaux",
+            "p2": "7 rouleaux",
+            "p3": "5 rouleaux",
+            "p4": "4 rouleaux",
+            "longueur": 10,
+            "largeur": 9,
+            "ouverture": 6,
+            "rouleau": 6,
+            "resultat": 6
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 10 m sur 8 m. On laisse une ouverture de 3 m pour un portail. Le grillage est vendu en rouleaux de 5 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "7 rouleaux",
+            "correction": "Je vois : Le jardin mesure 10 m sur 8 m. On laisse une ouverture de 3 m pour un portail. Le grillage est vendu en rouleaux de 5 m.\nOr : Le périmètre vaut 2 × (10 + 8) = 36 m. On retire 3 m pour le portail : il faut 33 m de grillage.\nDonc : 6 rouleaux fournissent 30 m, ce qui ne suffit pas ; 7 rouleaux fournissent 35 m.",
+            "p1": "7 rouleaux",
+            "p2": "8 rouleaux",
+            "p3": "6 rouleaux",
+            "p4": "4 rouleaux",
+            "longueur": 10,
+            "largeur": 8,
+            "ouverture": 3,
+            "rouleau": 5,
+            "resultat": 7
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 11 m sur 6 m. On laisse une ouverture de 5 m pour un portail. Le grillage est vendu en rouleaux de 6 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "5 rouleaux",
+            "correction": "Je vois : Le jardin mesure 11 m sur 6 m. On laisse une ouverture de 5 m pour un portail. Le grillage est vendu en rouleaux de 6 m.\nOr : Le périmètre vaut 2 × (11 + 6) = 34 m. On retire 5 m pour le portail : il faut 29 m de grillage.\nDonc : 4 rouleaux fournissent 24 m, ce qui ne suffit pas ; 5 rouleaux fournissent 30 m.",
+            "p1": "5 rouleaux",
+            "p2": "6 rouleaux",
+            "p3": "4 rouleaux",
+            "p4": "3 rouleaux",
+            "longueur": 11,
+            "largeur": 6,
+            "ouverture": 5,
+            "rouleau": 6,
+            "resultat": 5
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 10 m sur 5 m. On laisse une ouverture de 4 m pour un portail. Le grillage est vendu en rouleaux de 4 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "7 rouleaux",
+            "correction": "Je vois : Le jardin mesure 10 m sur 5 m. On laisse une ouverture de 4 m pour un portail. Le grillage est vendu en rouleaux de 4 m.\nOr : Le périmètre vaut 2 × (10 + 5) = 30 m. On retire 4 m pour le portail : il faut 26 m de grillage.\nDonc : 6 rouleaux fournissent 24 m, ce qui ne suffit pas ; 7 rouleaux fournissent 28 m.",
+            "p1": "7 rouleaux",
+            "p2": "8 rouleaux",
+            "p3": "6 rouleaux",
+            "p4": "4 rouleaux",
+            "longueur": 10,
+            "largeur": 5,
+            "ouverture": 4,
+            "rouleau": 4,
+            "resultat": 7
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 11 m sur 8 m. On laisse une ouverture de 6 m pour un portail. Le grillage est vendu en rouleaux de 5 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "7 rouleaux",
+            "correction": "Je vois : Le jardin mesure 11 m sur 8 m. On laisse une ouverture de 6 m pour un portail. Le grillage est vendu en rouleaux de 5 m.\nOr : Le périmètre vaut 2 × (11 + 8) = 38 m. On retire 6 m pour le portail : il faut 32 m de grillage.\nDonc : 6 rouleaux fournissent 30 m, ce qui ne suffit pas ; 7 rouleaux fournissent 35 m.",
+            "p1": "7 rouleaux",
+            "p2": "8 rouleaux",
+            "p3": "6 rouleaux",
+            "p4": "4 rouleaux",
+            "longueur": 11,
+            "largeur": 8,
+            "ouverture": 6,
+            "rouleau": 5,
+            "resultat": 7
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Un jardin rectangulaire mesure 11 m sur 5 m. On laisse une ouverture de 3 m pour un portail. Le grillage est vendu en rouleaux de 6 m. Combien de rouleaux faut-il acheter au minimum ?",
+            "reponse": "5 rouleaux",
+            "correction": "Je vois : Le jardin mesure 11 m sur 5 m. On laisse une ouverture de 3 m pour un portail. Le grillage est vendu en rouleaux de 6 m.\nOr : Le périmètre vaut 2 × (11 + 5) = 32 m. On retire 3 m pour le portail : il faut 29 m de grillage.\nDonc : 4 rouleaux fournissent 24 m, ce qui ne suffit pas ; 5 rouleaux fournissent 30 m.",
+            "p1": "5 rouleaux",
+            "p2": "6 rouleaux",
+            "p3": "4 rouleaux",
+            "p4": "3 rouleaux",
+            "longueur": 11,
+            "largeur": 5,
+            "ouverture": 3,
+            "rouleau": 6,
+            "resultat": 5
+          },
+          "progression": 2
+        }
+      ],
+      "categorie": "raisonnement",
+      "enonce_exploitable": "ceiling((2 * (longueur + largeur) - ouverture) / rouleau)",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-ENCOCHE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une figure est obtenue à partir du contour d’un rectangle de 8 cm sur 6 cm : sur son côté supérieur, on découpe une encoche rectangulaire de 2 cm de large et 1 cm de profondeur. Quel est le périmètre du nouveau contour ?",
+            "reponse": "30 cm",
+            "correction": "Je vois : Le contour initial est celui d’un rectangle avec une encoche sur son côté supérieur.\nOr : Le rectangle initial a un périmètre de 2 × (8 + 6) = 28 cm. Le segment de 2 cm retiré est remplacé par trois segments de 1 cm, 2 cm et 1 cm : le contour gagne donc 2 cm.\nDonc : Périmètre : 30 cm.",
+            "p1": "30 cm",
+            "p2": "28 cm",
+            "p3": "32 cm",
+            "p4": "26 cm",
+            "longueur": 8,
+            "largeur": 6,
+            "largeur_encoche": 2,
+            "profondeur": 1,
+            "resultat": 30
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une figure est obtenue à partir du contour d’un rectangle de 8 cm sur 5 cm : sur son côté supérieur, on découpe une encoche rectangulaire de 3 cm de large et 2 cm de profondeur. Quel est le périmètre du nouveau contour ?",
+            "reponse": "30 cm",
+            "correction": "Je vois : Le contour initial est celui d’un rectangle avec une encoche sur son côté supérieur.\nOr : Le rectangle initial a un périmètre de 2 × (8 + 5) = 26 cm. Le segment de 3 cm retiré est remplacé par trois segments de 2 cm, 3 cm et 2 cm : le contour gagne donc 4 cm.\nDonc : Périmètre : 30 cm.",
+            "p1": "30 cm",
+            "p2": "26 cm",
+            "p3": "32 cm",
+            "p4": "24 cm",
+            "longueur": 8,
+            "largeur": 5,
+            "largeur_encoche": 3,
+            "profondeur": 2,
+            "resultat": 30
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une figure est obtenue à partir du contour d’un rectangle de 8 cm sur 7 cm : sur son côté supérieur, on découpe une encoche rectangulaire de 4 cm de large et 3 cm de profondeur. Quel est le périmètre du nouveau contour ?",
+            "reponse": "36 cm",
+            "correction": "Je vois : Le contour initial est celui d’un rectangle avec une encoche sur son côté supérieur.\nOr : Le rectangle initial a un périmètre de 2 × (8 + 7) = 30 cm. Le segment de 4 cm retiré est remplacé par trois segments de 3 cm, 4 cm et 3 cm : le contour gagne donc 6 cm.\nDonc : Périmètre : 36 cm.",
+            "p1": "36 cm",
+            "p2": "30 cm",
+            "p3": "38 cm",
+            "p4": "28 cm",
+            "longueur": 8,
+            "largeur": 7,
+            "largeur_encoche": 4,
+            "profondeur": 3,
+            "resultat": 36
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une figure est obtenue à partir du contour d’un rectangle de 8 cm sur 8 cm : sur son côté supérieur, on découpe une encoche rectangulaire de 5 cm de large et 4 cm de profondeur. Quel est le périmètre du nouveau contour ?",
+            "reponse": "40 cm",
+            "correction": "Je vois : Le contour initial est celui d’un rectangle avec une encoche sur son côté supérieur.\nOr : Le rectangle initial a un périmètre de 2 × (8 + 8) = 32 cm. Le segment de 5 cm retiré est remplacé par trois segments de 4 cm, 5 cm et 4 cm : le contour gagne donc 8 cm.\nDonc : Périmètre : 40 cm.",
+            "p1": "40 cm",
+            "p2": "32 cm",
+            "p3": "42 cm",
+            "p4": "30 cm",
+            "longueur": 8,
+            "largeur": 8,
+            "largeur_encoche": 5,
+            "profondeur": 4,
+            "resultat": 40
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une figure est obtenue à partir du contour d’un rectangle de 8 cm sur 9 cm : sur son côté supérieur, on découpe une encoche rectangulaire de 6 cm de large et 5 cm de profondeur. Quel est le périmètre du nouveau contour ?",
+            "reponse": "44 cm",
+            "correction": "Je vois : Le contour initial est celui d’un rectangle avec une encoche sur son côté supérieur.\nOr : Le rectangle initial a un périmètre de 2 × (8 + 9) = 34 cm. Le segment de 6 cm retiré est remplacé par trois segments de 5 cm, 6 cm et 5 cm : le contour gagne donc 10 cm.\nDonc : Périmètre : 44 cm.",
+            "p1": "44 cm",
+            "p2": "34 cm",
+            "p3": "46 cm",
+            "p4": "32 cm",
+            "longueur": 8,
+            "largeur": 9,
+            "largeur_encoche": 6,
+            "profondeur": 5,
+            "resultat": 44
+          },
+          "progression": 2
+        },
+        {
+          "parametres": {
+            "enonce": "Une figure est obtenue à partir du contour d’un rectangle de 8 cm sur 10 cm : sur son côté supérieur, on découpe une encoche rectangulaire de 7 cm de large et 6 cm de profondeur. Quel est le périmètre du nouveau contour ?",
+            "reponse": "48 cm",
+            "correction": "Je vois : Le contour initial est celui d’un rectangle avec une encoche sur son côté supérieur.\nOr : Le rectangle initial a un périmètre de 2 × (8 + 10) = 36 cm. Le segment de 7 cm retiré est remplacé par trois segments de 6 cm, 7 cm et 6 cm : le contour gagne donc 12 cm.\nDonc : Périmètre : 48 cm.",
+            "p1": "48 cm",
+            "p2": "36 cm",
+            "p3": "50 cm",
+            "p4": "34 cm",
+            "longueur": 8,
+            "largeur": 10,
+            "largeur_encoche": 7,
+            "profondeur": 6,
+            "resultat": 48
+          },
+          "progression": 2
+        }
+      ],
+      "categorie": "raisonnement",
+      "enonce_exploitable": "2 * (longueur + largeur) + 2 * profondeur",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PER-VOCAB-TROU-001",
+      "capacite": "identifier",
+      "type_question": "mot_a_trou",
+      "enonce": "Quel terme désigne la longueur du contour d’une figure plane ?",
+      "presentation": {
+        "type": "mot_a_trou",
+        "masques": {
+          "périmètre": "p _ _ _ _ _ _ _ e",
+          "diamètre": "d _ _ _ _ _ _ e",
+          "diagonale": "d _ _ _ _ _ _ _ e",
+          "rayon": "r _ _ _ n"
+        }
+      },
+      "reponse": "périmètre",
+      "propositions": [
+        "périmètre",
+        "diamètre",
+        "diagonale",
+        "rayon"
+      ],
+      "correction": "Le périmètre est la longueur du contour d’une figure plane.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "PER-VOCAB-MASQUE-001",
+      "capacite": "identifier",
+      "type_question": "mot_masque",
+      "enonce": "Quel terme désigne le segment qui relie le centre d’un cercle à un point du cercle ?",
+      "presentation": {
+        "type": "mot_masque",
+        "masques": {
+          "rayon": "R________N",
+          "diamètre": "D________E",
+          "corde": "C________E",
+          "tangente": "T________E"
+        },
+        "avertissement": "La longueur du trait ne correspond pas au nombre de caractères du mot recherché."
+      },
+      "reponse": "rayon",
+      "propositions": [
+        "rayon",
+        "diamètre",
+        "corde",
+        "tangente"
+      ],
+      "correction": "Le rayon relie le centre à un point du cercle.",
+      "enonce_exploitable": null,
+      "reponse_exploitable": null,
+      "moteur": "aucun"
+    },
+    {
+      "id": "PERIMETRES-RECTANGLE-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 3 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "14 m",
+            "p1": "14 m",
+            "p2": "12 m",
+            "p3": "7 m",
+            "p4": "10 m",
+            "correction": "P = 2 × (3 + 4) = 14 m.",
+            "longueur": 3,
+            "largeur": 4,
+            "resultat": 14
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 5 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "18 m",
+            "p1": "18 m",
+            "p2": "20 m",
+            "p3": "9 m",
+            "p4": "14 m",
+            "correction": "P = 2 × (5 + 4) = 18 m.",
+            "longueur": 5,
+            "largeur": 4,
+            "resultat": 18
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 6 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "20 m",
+            "p1": "20 m",
+            "p2": "24 m",
+            "p3": "10 m",
+            "p4": "16 m",
+            "correction": "P = 2 × (6 + 4) = 20 m.",
+            "longueur": 6,
+            "largeur": 4,
+            "resultat": 20
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 7 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "22 m",
+            "p1": "22 m",
+            "p2": "28 m",
+            "p3": "11 m",
+            "p4": "18 m",
+            "correction": "P = 2 × (7 + 4) = 22 m.",
+            "longueur": 7,
+            "largeur": 4,
+            "resultat": 22
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 8 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "24 m",
+            "p1": "24 m",
+            "p2": "32 m",
+            "p3": "12 m",
+            "p4": "20 m",
+            "correction": "P = 2 × (8 + 4) = 24 m.",
+            "longueur": 8,
+            "largeur": 4,
+            "resultat": 24
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 9 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "26 m",
+            "p1": "26 m",
+            "p2": "36 m",
+            "p3": "13 m",
+            "p4": "22 m",
+            "correction": "P = 2 × (9 + 4) = 26 m.",
+            "longueur": 9,
+            "largeur": 4,
+            "resultat": 26
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 10 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "28 m",
+            "p1": "28 m",
+            "p2": "40 m",
+            "p3": "14 m",
+            "p4": "24 m",
+            "correction": "P = 2 × (10 + 4) = 28 m.",
+            "longueur": 10,
+            "largeur": 4,
+            "resultat": 28
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 11 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "30 m",
+            "p1": "30 m",
+            "p2": "44 m",
+            "p3": "15 m",
+            "p4": "26 m",
+            "correction": "P = 2 × (11 + 4) = 30 m.",
+            "longueur": 11,
+            "largeur": 4,
+            "resultat": 30
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 12 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "32 m",
+            "p1": "32 m",
+            "p2": "48 m",
+            "p3": "16 m",
+            "p4": "28 m",
+            "correction": "P = 2 × (12 + 4) = 32 m.",
+            "longueur": 12,
+            "largeur": 4,
+            "resultat": 32
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 13 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "34 m",
+            "p1": "34 m",
+            "p2": "52 m",
+            "p3": "17 m",
+            "p4": "30 m",
+            "correction": "P = 2 × (13 + 4) = 34 m.",
+            "longueur": 13,
+            "largeur": 4,
+            "resultat": 34
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un rectangle mesure 14 m de long et 4 m de large. Quel est son périmètre ?",
+            "reponse": "36 m",
+            "p1": "36 m",
+            "p2": "56 m",
+            "p3": "18 m",
+            "p4": "32 m",
+            "correction": "P = 2 × (14 + 4) = 36 m.",
+            "longueur": 14,
+            "largeur": 4,
+            "resultat": 36
+          }
+        }
+      ],
+      "enonce_exploitable": "2 * (longueur + largeur)",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PERIMETRES-CARRE-COTE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 12 cm. Quelle est la longueur de son côté ?",
+            "reponse": "3 cm",
+            "p1": "3 cm",
+            "p2": "6 cm",
+            "p3": "12 cm",
+            "p4": "7 cm",
+            "correction": "Un carré a quatre côtés égaux : 12 ÷ 4 = 3 cm.",
+            "perimetre": 12,
+            "resultat": 3.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 20 cm. Quelle est la longueur de son côté ?",
+            "reponse": "5 cm",
+            "p1": "5 cm",
+            "p2": "10 cm",
+            "p3": "20 cm",
+            "p4": "9 cm",
+            "correction": "Un carré a quatre côtés égaux : 20 ÷ 4 = 5 cm.",
+            "perimetre": 20,
+            "resultat": 5.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 24 cm. Quelle est la longueur de son côté ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "12 cm",
+            "p3": "24 cm",
+            "p4": "10 cm",
+            "correction": "Un carré a quatre côtés égaux : 24 ÷ 4 = 6 cm.",
+            "perimetre": 24,
+            "resultat": 6.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 28 cm. Quelle est la longueur de son côté ?",
+            "reponse": "7 cm",
+            "p1": "7 cm",
+            "p2": "14 cm",
+            "p3": "28 cm",
+            "p4": "11 cm",
+            "correction": "Un carré a quatre côtés égaux : 28 ÷ 4 = 7 cm.",
+            "perimetre": 28,
+            "resultat": 7.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 32 cm. Quelle est la longueur de son côté ?",
+            "reponse": "8 cm",
+            "p1": "8 cm",
+            "p2": "16 cm",
+            "p3": "32 cm",
+            "p4": "12 cm",
+            "correction": "Un carré a quatre côtés égaux : 32 ÷ 4 = 8 cm.",
+            "perimetre": 32,
+            "resultat": 8.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 36 cm. Quelle est la longueur de son côté ?",
+            "reponse": "9 cm",
+            "p1": "9 cm",
+            "p2": "18 cm",
+            "p3": "36 cm",
+            "p4": "13 cm",
+            "correction": "Un carré a quatre côtés égaux : 36 ÷ 4 = 9 cm.",
+            "perimetre": 36,
+            "resultat": 9.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 40 cm. Quelle est la longueur de son côté ?",
+            "reponse": "10 cm",
+            "p1": "10 cm",
+            "p2": "20 cm",
+            "p3": "40 cm",
+            "p4": "14 cm",
+            "correction": "Un carré a quatre côtés égaux : 40 ÷ 4 = 10 cm.",
+            "perimetre": 40,
+            "resultat": 10.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 44 cm. Quelle est la longueur de son côté ?",
+            "reponse": "11 cm",
+            "p1": "11 cm",
+            "p2": "22 cm",
+            "p3": "44 cm",
+            "p4": "15 cm",
+            "correction": "Un carré a quatre côtés égaux : 44 ÷ 4 = 11 cm.",
+            "perimetre": 44,
+            "resultat": 11.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 48 cm. Quelle est la longueur de son côté ?",
+            "reponse": "12 cm",
+            "p1": "12 cm",
+            "p2": "24 cm",
+            "p3": "48 cm",
+            "p4": "16 cm",
+            "correction": "Un carré a quatre côtés égaux : 48 ÷ 4 = 12 cm.",
+            "perimetre": 48,
+            "resultat": 12.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 52 cm. Quelle est la longueur de son côté ?",
+            "reponse": "13 cm",
+            "p1": "13 cm",
+            "p2": "26 cm",
+            "p3": "52 cm",
+            "p4": "17 cm",
+            "correction": "Un carré a quatre côtés égaux : 52 ÷ 4 = 13 cm.",
+            "perimetre": 52,
+            "resultat": 13.0
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Le périmètre d’un carré est 56 cm. Quelle est la longueur de son côté ?",
+            "reponse": "14 cm",
+            "p1": "14 cm",
+            "p2": "28 cm",
+            "p3": "56 cm",
+            "p4": "18 cm",
+            "correction": "Un carré a quatre côtés égaux : 56 ÷ 4 = 14 cm.",
+            "perimetre": 56,
+            "resultat": 14.0
+          }
+        }
+      ],
+      "enonce_exploitable": "perimetre / 4",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    },
+    {
+      "id": "PERIMETRES-TRIANGLE-COTE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 17 cm. Deux côtés mesurent 4 cm et 7 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "10 cm",
+            "p3": "14 cm",
+            "p4": "7 cm",
+            "correction": "On soustrait les deux côtés connus : 17 − 4 − 7 = 6 cm.",
+            "perimetre": 17,
+            "a": 4,
+            "b": 7,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 19 cm. Deux côtés mesurent 5 cm et 8 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "11 cm",
+            "p3": "16 cm",
+            "p4": "8 cm",
+            "correction": "On soustrait les deux côtés connus : 19 − 5 − 8 = 6 cm.",
+            "perimetre": 19,
+            "a": 5,
+            "b": 8,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 21 cm. Deux côtés mesurent 6 cm et 9 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "12 cm",
+            "p3": "18 cm",
+            "p4": "9 cm",
+            "correction": "On soustrait les deux côtés connus : 21 − 6 − 9 = 6 cm.",
+            "perimetre": 21,
+            "a": 6,
+            "b": 9,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 23 cm. Deux côtés mesurent 7 cm et 10 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "13 cm",
+            "p3": "20 cm",
+            "p4": "10 cm",
+            "correction": "On soustrait les deux côtés connus : 23 − 7 − 10 = 6 cm.",
+            "perimetre": 23,
+            "a": 7,
+            "b": 10,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 25 cm. Deux côtés mesurent 8 cm et 11 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "14 cm",
+            "p3": "22 cm",
+            "p4": "11 cm",
+            "correction": "On soustrait les deux côtés connus : 25 − 8 − 11 = 6 cm.",
+            "perimetre": 25,
+            "a": 8,
+            "b": 11,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 27 cm. Deux côtés mesurent 9 cm et 12 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "15 cm",
+            "p3": "24 cm",
+            "p4": "12 cm",
+            "correction": "On soustrait les deux côtés connus : 27 − 9 − 12 = 6 cm.",
+            "perimetre": 27,
+            "a": 9,
+            "b": 12,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 29 cm. Deux côtés mesurent 10 cm et 13 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "16 cm",
+            "p3": "26 cm",
+            "p4": "13 cm",
+            "correction": "On soustrait les deux côtés connus : 29 − 10 − 13 = 6 cm.",
+            "perimetre": 29,
+            "a": 10,
+            "b": 13,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 31 cm. Deux côtés mesurent 11 cm et 14 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "17 cm",
+            "p3": "28 cm",
+            "p4": "14 cm",
+            "correction": "On soustrait les deux côtés connus : 31 − 11 − 14 = 6 cm.",
+            "perimetre": 31,
+            "a": 11,
+            "b": 14,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 33 cm. Deux côtés mesurent 12 cm et 15 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "18 cm",
+            "p3": "30 cm",
+            "p4": "15 cm",
+            "correction": "On soustrait les deux côtés connus : 33 − 12 − 15 = 6 cm.",
+            "perimetre": 33,
+            "a": 12,
+            "b": 15,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 35 cm. Deux côtés mesurent 13 cm et 16 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "19 cm",
+            "p3": "32 cm",
+            "p4": "16 cm",
+            "correction": "On soustrait les deux côtés connus : 35 − 13 − 16 = 6 cm.",
+            "perimetre": 35,
+            "a": 13,
+            "b": 16,
+            "resultat": 6
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un triangle a un périmètre de 37 cm. Deux côtés mesurent 14 cm et 17 cm. Quelle est la longueur du troisième ?",
+            "reponse": "6 cm",
+            "p1": "6 cm",
+            "p2": "20 cm",
+            "p3": "34 cm",
+            "p4": "17 cm",
+            "correction": "On soustrait les deux côtés connus : 37 − 14 − 17 = 6 cm.",
+            "perimetre": 37,
+            "a": 14,
+            "b": 17,
+            "resultat": 6
+          }
+        }
+      ],
+      "enonce_exploitable": "perimetre - a - b",
+      "reponse_exploitable": "resultat",
+      "moteur": "R"
+    }
+  ]
+}

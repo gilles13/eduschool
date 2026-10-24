@@ -1,0 +1,758 @@
+{
+  "notion_id": "algorithmique_programmation",
+  "questions": [
+    {
+      "id": "ALGORITHMIQUE_PROGRAMMATION-PROGRAMME-CALCUL",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 3, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "13",
+            "p1": "13",
+            "p2": "21",
+            "p3": "10",
+            "p4": "15",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 3 + 4 = 13.",
+            "depart": "3",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "13"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 4, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "16",
+            "p1": "16",
+            "p2": "24",
+            "p3": "11",
+            "p4": "19",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 4 + 4 = 16.",
+            "depart": "4",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 5, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "19",
+            "p1": "19",
+            "p2": "27",
+            "p3": "12",
+            "p4": "23",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 5 + 4 = 19.",
+            "depart": "5",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "19"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 6, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "22",
+            "p1": "22",
+            "p2": "30",
+            "p3": "13",
+            "p4": "27",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 6 + 4 = 22.",
+            "depart": "6",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "22"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 7, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "25",
+            "p1": "25",
+            "p2": "33",
+            "p3": "14",
+            "p4": "31",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 7 + 4 = 25.",
+            "depart": "7",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "25"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 8, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "28",
+            "p1": "28",
+            "p2": "36",
+            "p3": "15",
+            "p4": "35",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 8 + 4 = 28.",
+            "depart": "8",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "28"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 10, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "34",
+            "p1": "34",
+            "p2": "42",
+            "p3": "17",
+            "p4": "43",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 10 + 4 = 34.",
+            "depart": "10",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "34"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 11, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "37",
+            "p1": "37",
+            "p2": "45",
+            "p3": "18",
+            "p4": "47",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 11 + 4 = 37.",
+            "depart": "11",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "37"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 12, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "40",
+            "p1": "40",
+            "p2": "48",
+            "p3": "19",
+            "p4": "51",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 12 + 4 = 40.",
+            "depart": "12",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "40"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 13, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "43",
+            "p1": "43",
+            "p2": "51",
+            "p3": "20",
+            "p4": "55",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 13 + 4 = 43.",
+            "depart": "13",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "43"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Un programme prend le nombre 14, le multiplie par 3 puis ajoute 4. Quel résultat affiche-t-il ?",
+            "reponse": "46",
+            "p1": "46",
+            "p2": "54",
+            "p3": "21",
+            "p4": "59",
+            "correction": "On effectue les instructions dans l’ordre : 3 × 14 + 4 = 46.",
+            "depart": "14",
+            "multiplicateur": "3",
+            "ajout": "4",
+            "resultat_exploitable": "46"
+          }
+        }
+      ],
+      "enonce_exploitable": "depart * multiplicateur + ajout",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ALGORITHMIQUE_PROGRAMMATION-BOUCLE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 4 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "12",
+            "p1": "12",
+            "p2": "7",
+            "p3": "15",
+            "p4": "16",
+            "correction": "L’instruction est répétée 4 fois : 4 × 3 = 12 pas.",
+            "repetitions": "4",
+            "pas": "3",
+            "resultat_exploitable": "12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 5 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "15",
+            "p1": "15",
+            "p2": "8",
+            "p3": "18",
+            "p4": "25",
+            "correction": "L’instruction est répétée 5 fois : 5 × 3 = 15 pas.",
+            "repetitions": "5",
+            "pas": "3",
+            "resultat_exploitable": "15"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 6 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "18",
+            "p1": "18",
+            "p2": "9",
+            "p3": "21",
+            "p4": "36",
+            "correction": "L’instruction est répétée 6 fois : 6 × 3 = 18 pas.",
+            "repetitions": "6",
+            "pas": "3",
+            "resultat_exploitable": "18"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 7 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "21",
+            "p1": "21",
+            "p2": "10",
+            "p3": "24",
+            "p4": "49",
+            "correction": "L’instruction est répétée 7 fois : 7 × 3 = 21 pas.",
+            "repetitions": "7",
+            "pas": "3",
+            "resultat_exploitable": "21"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 8 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "24",
+            "p1": "24",
+            "p2": "11",
+            "p3": "27",
+            "p4": "64",
+            "correction": "L’instruction est répétée 8 fois : 8 × 3 = 24 pas.",
+            "repetitions": "8",
+            "pas": "3",
+            "resultat_exploitable": "24"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 9 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "27",
+            "p1": "27",
+            "p2": "12",
+            "p3": "30",
+            "p4": "81",
+            "correction": "L’instruction est répétée 9 fois : 9 × 3 = 27 pas.",
+            "repetitions": "9",
+            "pas": "3",
+            "resultat_exploitable": "27"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 10 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "30",
+            "p1": "30",
+            "p2": "13",
+            "p3": "33",
+            "p4": "100",
+            "correction": "L’instruction est répétée 10 fois : 10 × 3 = 30 pas.",
+            "repetitions": "10",
+            "pas": "3",
+            "resultat_exploitable": "30"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 11 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "33",
+            "p1": "33",
+            "p2": "14",
+            "p3": "36",
+            "p4": "121",
+            "correction": "L’instruction est répétée 11 fois : 11 × 3 = 33 pas.",
+            "repetitions": "11",
+            "pas": "3",
+            "resultat_exploitable": "33"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 12 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "36",
+            "p1": "36",
+            "p2": "15",
+            "p3": "39",
+            "p4": "144",
+            "correction": "L’instruction est répétée 12 fois : 12 × 3 = 36 pas.",
+            "repetitions": "12",
+            "pas": "3",
+            "resultat_exploitable": "36"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 13 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "39",
+            "p1": "39",
+            "p2": "16",
+            "p3": "42",
+            "p4": "169",
+            "correction": "L’instruction est répétée 13 fois : 13 × 3 = 39 pas.",
+            "repetitions": "13",
+            "pas": "3",
+            "resultat_exploitable": "39"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "Une boucle répète 14 fois l’instruction « avancer de 3 pas ». De combien de pas avance-t-on au total ?",
+            "reponse": "42",
+            "p1": "42",
+            "p2": "17",
+            "p3": "45",
+            "p4": "196",
+            "correction": "L’instruction est répétée 14 fois : 14 × 3 = 42 pas.",
+            "repetitions": "14",
+            "pas": "3",
+            "resultat_exploitable": "42"
+          }
+        }
+      ],
+      "enonce_exploitable": "repetitions * pas",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ALGORITHMIQUE_PROGRAMMATION-VARIABLE",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "enonce": "[[enonce]]",
+      "reponse": "[[reponse]]",
+      "propositions": [
+        "[[p1]]",
+        "[[p2]]",
+        "[[p3]]",
+        "[[p4]]"
+      ],
+      "correction": "[[correction]]",
+      "variantes": [
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 3. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "10",
+            "p1": "10",
+            "p2": "8",
+            "p3": "7",
+            "p4": "11",
+            "correction": "Après la première instruction, x = 5 ; après la seconde, x = 10.",
+            "depart": "3",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "10"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 4. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "12",
+            "p1": "12",
+            "p2": "10",
+            "p3": "8",
+            "p4": "14",
+            "correction": "Après la première instruction, x = 6 ; après la seconde, x = 12.",
+            "depart": "4",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "12"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 5. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "14",
+            "p1": "14",
+            "p2": "12",
+            "p3": "9",
+            "p4": "17",
+            "correction": "Après la première instruction, x = 7 ; après la seconde, x = 14.",
+            "depart": "5",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "14"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 6. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "16",
+            "p1": "16",
+            "p2": "14",
+            "p3": "10",
+            "p4": "20",
+            "correction": "Après la première instruction, x = 8 ; après la seconde, x = 16.",
+            "depart": "6",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "16"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 7. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "18",
+            "p1": "18",
+            "p2": "16",
+            "p3": "11",
+            "p4": "23",
+            "correction": "Après la première instruction, x = 9 ; après la seconde, x = 18.",
+            "depart": "7",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "18"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 8. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "20",
+            "p1": "20",
+            "p2": "18",
+            "p3": "12",
+            "p4": "26",
+            "correction": "Après la première instruction, x = 10 ; après la seconde, x = 20.",
+            "depart": "8",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "20"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 9. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "22",
+            "p1": "22",
+            "p2": "20",
+            "p3": "13",
+            "p4": "29",
+            "correction": "Après la première instruction, x = 11 ; après la seconde, x = 22.",
+            "depart": "9",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "22"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 10. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "24",
+            "p1": "24",
+            "p2": "22",
+            "p3": "14",
+            "p4": "32",
+            "correction": "Après la première instruction, x = 12 ; après la seconde, x = 24.",
+            "depart": "10",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "24"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 11. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "26",
+            "p1": "26",
+            "p2": "24",
+            "p3": "15",
+            "p4": "35",
+            "correction": "Après la première instruction, x = 13 ; après la seconde, x = 26.",
+            "depart": "11",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "26"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 12. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "28",
+            "p1": "28",
+            "p2": "26",
+            "p3": "16",
+            "p4": "38",
+            "correction": "Après la première instruction, x = 14 ; après la seconde, x = 28.",
+            "depart": "12",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "28"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 13. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "30",
+            "p1": "30",
+            "p2": "28",
+            "p3": "17",
+            "p4": "41",
+            "correction": "Après la première instruction, x = 15 ; après la seconde, x = 30.",
+            "depart": "13",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "30"
+          }
+        },
+        {
+          "parametres": {
+            "enonce": "La variable x vaut 14. On exécute « x ← x + 2 » puis « x ← 2 × (x) ». Quelle est la nouvelle valeur de x ?",
+            "reponse": "32",
+            "p1": "32",
+            "p2": "30",
+            "p3": "18",
+            "p4": "44",
+            "correction": "Après la première instruction, x = 16 ; après la seconde, x = 32.",
+            "depart": "14",
+            "ajout": "2",
+            "multiplicateur": "2",
+            "resultat_exploitable": "32"
+          }
+        }
+      ],
+      "enonce_exploitable": "(depart + ajout) * multiplicateur",
+      "reponse_exploitable": "[[resultat_exploitable]]",
+      "moteur": "R"
+    },
+    {
+      "id": "ALGORITHMIQUE-RAISONNEMENT-001",
+      "capacite": "transformer",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "Un programme ajoute 2 à un nombre puis multiplie le résultat par 3. Quel autre programme donne toujours le même résultat ?",
+      "reponse": "Multiplier le nombre par 3 puis ajouter 6",
+      "propositions": [
+        "Multiplier le nombre par 3 puis ajouter 6",
+        "Multiplier le nombre par 3 puis ajouter 2",
+        "Multiplier le nombre par 6 puis ajouter 3",
+        "Ajouter 6 au nombre puis multiplier par 3"
+      ],
+      "correction": "Je vois : pour un nombre x, le programme donne 3 × (x + 2). Or : la distributivité donne 3 × (x + 2) = 3x + 6. Donc : multiplier par 3 puis ajouter 6 donne toujours le même résultat.",
+      "enonce_exploitable": "3 * (x + 2) - (3 * x + 6)",
+      "reponse_exploitable": 0,
+      "moteur": "R"
+    },
+    {
+      "id": "ALGO-BOUCLE-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "Quelle valeur le programme affiche-t-il ?",
+      "reponse": "33",
+      "propositions": [
+        "17",
+        "29",
+        "33",
+        "35"
+      ],
+      "correction": "On commence avec x = 3, puis on ajoute 2 : x = 5. La boucle est executee trois fois : x = 9, puis 17, puis 33. La valeur 17 correspond a deux repetitions seulement.",
+      "illustration": {
+        "id": "algo_scratch",
+        "blocs": [
+          {
+            "type": "evenement",
+            "niveau": 0,
+            "texte": "Quand le drapeau est clique"
+          },
+          {
+            "type": "variable",
+            "niveau": 0,
+            "texte": "Mettre x a 3"
+          },
+          {
+            "type": "variable",
+            "niveau": 0,
+            "texte": "Ajouter 2 a x"
+          },
+          {
+            "type": "controle",
+            "niveau": 0,
+            "fin": 5,
+            "texte": "Repeter 3 fois :"
+          },
+          {
+            "type": "variable",
+            "niveau": 1,
+            "texte": "Remplacer x par 2 × (x) - 1"
+          },
+          {
+            "type": "apparence",
+            "niveau": 0,
+            "texte": "Afficher x"
+          }
+        ]
+      },
+      "enonce_exploitable": "2 * (2 * (2 * (3 + 2) - 1) - 1) - 1",
+      "reponse_exploitable": "33",
+      "moteur": "R"
+    },
+    {
+      "id": "ALGO-CONDITION-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "Quelle valeur le programme affiche-t-il ?",
+      "reponse": "38",
+      "propositions": [
+        "16",
+        "19",
+        "25",
+        "38"
+      ],
+      "correction": "On commence avec x = 2. Tour 1 : x = 5, la condition x > 7 est fausse. Tour 2 : x = 8, la condition est vraie, donc x = 16. Tour 3 : x = 19, la condition est vraie, donc x = 38.",
+      "illustration": {
+        "id": "algo_scratch",
+        "blocs": [
+          {
+            "type": "evenement",
+            "niveau": 0,
+            "texte": "Quand le drapeau est clique"
+          },
+          {
+            "type": "variable",
+            "niveau": 0,
+            "texte": "Mettre x a 2"
+          },
+          {
+            "type": "controle",
+            "niveau": 0,
+            "fin": 6,
+            "texte": "Repeter 3 fois :"
+          },
+          {
+            "type": "variable",
+            "niveau": 1,
+            "texte": "Ajouter 3 a x"
+          },
+          {
+            "type": "controle",
+            "niveau": 1,
+            "fin": 6,
+            "texte": "Si x > 7 :"
+          },
+          {
+            "type": "variable",
+            "niveau": 2,
+            "texte": "Remplacer x par 2 × (x)"
+          },
+          {
+            "type": "apparence",
+            "niveau": 0,
+            "texte": "Afficher x"
+          }
+        ]
+      },
+      "enonce_exploitable": "2 * (2 * (2 + 3 + 3) + 3)",
+      "reponse_exploitable": "38",
+      "moteur": "R"
+    },
+    {
+      "id": "ALGO-SPECIAL-PAPA-001",
+      "capacite": "determiner",
+      "type_question": "classique",
+      "categorie": "raisonnement",
+      "enonce": "Défi spécial : quelle valeur le programme affiche-t-il à la fin ?",
+      "reponse": "8",
+      "propositions": [
+        "4",
+        "8",
+        "9",
+        "18"
+      ],
+      "correction": "Au départ, x = 2. Tour 1 : 2 + 3 = 5 (condition fausse). Tour 2 : 5 + 3 = 8 (condition fausse : 8 n’est pas strictement supérieur à 8). Tour 3 : 8 + 3 = 11, puis 11 - 5 = 6. Tour 4 : 6 + 3 = 9, puis 9 - 5 = 4. La boucle est terminée : on double x une seule fois, donc 2 × 4 = 8.",
+      "illustration": {
+        "id": "algo_scratch",
+        "blocs": [
+          {
+            "type": "evenement",
+            "niveau": 0,
+            "texte": "Quand le drapeau est clique"
+          },
+          {
+            "type": "variable",
+            "niveau": 0,
+            "texte": "Mettre x a 2"
+          },
+          {
+            "type": "controle",
+            "niveau": 0,
+            "fin": 6,
+            "texte": "Repeter 4 fois :"
+          },
+          {
+            "type": "variable",
+            "niveau": 1,
+            "texte": "Ajouter 3 a x"
+          },
+          {
+            "type": "controle",
+            "niveau": 1,
+            "fin": 6,
+            "texte": "Si x > 8 :"
+          },
+          {
+            "type": "variable",
+            "niveau": 2,
+            "texte": "Remplacer x par x - 5"
+          },
+          {
+            "type": "variable",
+            "niveau": 0,
+            "texte": "Remplacer x par le double de sa valeur"
+          },
+          {
+            "type": "apparence",
+            "niveau": 0,
+            "texte": "Afficher x"
+          }
+        ]
+      },
+      "enonce_exploitable": "2 * (((2 + 3 + 3 + 3 - 5) + 3) - 5)",
+      "reponse_exploitable": "8",
+      "moteur": "R"
+    }
+  ]
+}
