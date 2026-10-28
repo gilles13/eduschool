@@ -1,0 +1,86 @@
+{
+  "famille": "PROP-A",
+  "exercices": [
+    {
+      "id": "PROP-A-001",
+      "donnees": {
+        "nombre_billets": 4,
+        "prix_lot": 28,
+        "nombre_demande": 9,
+        "budget": 80
+      },
+      "resultats": {
+        "prix_unitaire": 7,
+        "prix_demande": 63,
+        "nombre_max": 11,
+        "reste": 3
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "prix_demande",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "nombre_max",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROP-A-002",
+      "donnees": {
+        "nombre_billets": 3,
+        "prix_lot": 18,
+        "nombre_demande": 8,
+        "budget": 55
+      },
+      "resultats": {
+        "prix_unitaire": 6,
+        "prix_demande": 48,
+        "nombre_max": 9,
+        "reste": 1
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "prix_demande",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "nombre_max",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROP-A-003",
+      "donnees": {
+        "nombre_billets": 5,
+        "prix_lot": 40,
+        "nombre_demande": 12,
+        "budget": 110
+      },
+      "resultats": {
+        "prix_unitaire": 8,
+        "prix_demande": 96,
+        "nombre_max": 13,
+        "reste": 6
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "prix_demande",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "nombre_max",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

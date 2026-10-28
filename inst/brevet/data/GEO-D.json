@@ -1,0 +1,101 @@
+{
+  "famille": "GEO-D",
+  "exercices": [
+    {
+      "id": "GEO-D-001",
+      "modele": "assemblage_cylindre_demi_boule",
+      "donnees": {
+        "rayon_cylindre": 2,
+        "rayon_demi_sphere": 4,
+        "hauteur": 6
+      },
+      "resultats": {
+        "aire_cylindre_coefficient_pi": 32,
+        "aire_demi_boule_coefficient_pi": 48,
+        "aire_contact_coefficient_pi": 4,
+        "aire_exterieure_coefficient_pi": 72
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "aire_cylindre_coefficient_pi",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_demi_boule_coefficient_pi",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "aire_exterieure_coefficient_pi",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "GEO-D-002",
+      "modele": "assemblage_cylindre_demi_boule",
+      "donnees": {
+        "rayon_cylindre": 3,
+        "rayon_demi_sphere": 3,
+        "hauteur": 5
+      },
+      "resultats": {
+        "aire_cylindre_coefficient_pi": 48,
+        "aire_demi_boule_coefficient_pi": 27,
+        "aire_contact_coefficient_pi": 9,
+        "aire_exterieure_coefficient_pi": 57
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "aire_cylindre_coefficient_pi",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_demi_boule_coefficient_pi",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "aire_exterieure_coefficient_pi",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "GEO-D-003",
+      "modele": "assemblage_cylindre_demi_boule",
+      "donnees": {
+        "rayon_cylindre": 2,
+        "rayon_demi_sphere": 5,
+        "hauteur": 8
+      },
+      "resultats": {
+        "aire_cylindre_coefficient_pi": 40,
+        "aire_demi_boule_coefficient_pi": 75,
+        "aire_contact_coefficient_pi": 4,
+        "aire_exterieure_coefficient_pi": 107
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "aire_cylindre_coefficient_pi",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_demi_boule_coefficient_pi",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "aire_exterieure_coefficient_pi",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

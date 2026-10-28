@@ -1,0 +1,45 @@
+{
+  "famille": "GEO-C",
+  "exercices": [
+    {
+      "id": "GEO-C-001",
+      "modele": "probleme_D",
+      "parametres": {
+        "echelle": 1
+      },
+      "donnees": {
+        "AB": 8,
+        "BC": 6,
+        "AD": 4
+      },
+      "resultats": {
+        "AC": 10,
+        "paralleles_DE_BC": true,
+        "DE": 3,
+        "aire_DBCE": 18
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "AC",
+          "points": 1.5
+        },
+        {
+          "numero": 2,
+          "resultat": "paralleles_DE_BC",
+          "points": 1.5
+        },
+        {
+          "numero": 3,
+          "resultat": "DE",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_DBCE",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "famille": "PROBA-A",
+  "exercices": [
+    {
+      "id": "PROBA-A-001",
+      "donnees": {
+        "rouges": 3,
+        "bleues": 5,
+        "vertes": 2
+      },
+      "resultats": {
+        "total": 10,
+        "p_rouge": 0.3,
+        "p_non_bleue": 0.5,
+        "p_verte": 0.2
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_rouge",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_non_bleue",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_verte",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROBA-A-002",
+      "donnees": {
+        "rouges": 4,
+        "bleues": 3,
+        "vertes": 5
+      },
+      "resultats": {
+        "total": 12,
+        "p_rouge": 0.3333333333333333,
+        "p_non_bleue": 0.75,
+        "p_verte": 0.4166666666666667
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_rouge",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_non_bleue",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_verte",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROBA-A-003",
+      "donnees": {
+        "rouges": 6,
+        "bleues": 4,
+        "vertes": 5
+      },
+      "resultats": {
+        "total": 15,
+        "p_rouge": 0.4,
+        "p_non_bleue": 0.7333333333333333,
+        "p_verte": 0.3333333333333333
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_rouge",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_non_bleue",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_verte",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

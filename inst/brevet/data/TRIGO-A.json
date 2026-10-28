@@ -1,0 +1,101 @@
+{
+  "famille": "TRIGO-A",
+  "exercices": [
+    {
+      "id": "TRIGO-A-001",
+      "donnees": {
+        "hypotenuse": 10,
+        "angle_degres": 30,
+        "unite": "cm",
+        "arrondi_decimales": 1,
+        "figure_AB": 8.660254037844387,
+        "figure_BC": 4.999999999999999,
+        "figure_etiquette_AB": "?",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "10 cm",
+        "figure_angle_A": "30°",
+        "figure_AC": 10.0
+      },
+      "resultats": {
+        "longueur_AB": 8.7,
+        "longueur_BC": 5.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur_AB",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "longueur_BC",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-A-002",
+      "donnees": {
+        "hypotenuse": 12,
+        "angle_degres": 40,
+        "unite": "cm",
+        "arrondi_decimales": 1,
+        "figure_AB": 9.192533317427737,
+        "figure_BC": 7.713451316238471,
+        "figure_etiquette_AB": "?",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "12 cm",
+        "figure_angle_A": "40°",
+        "figure_AC": 12.0
+      },
+      "resultats": {
+        "longueur_AB": 9.2,
+        "longueur_BC": 7.7
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur_AB",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "longueur_BC",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-A-003",
+      "donnees": {
+        "hypotenuse": 15,
+        "angle_degres": 35,
+        "unite": "cm",
+        "arrondi_decimales": 1,
+        "figure_AB": 12.287280664334878,
+        "figure_BC": 8.60364654526569,
+        "figure_etiquette_AB": "?",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "15 cm",
+        "figure_angle_A": "35°",
+        "figure_AC": 15.0
+      },
+      "resultats": {
+        "longueur_AB": 12.3,
+        "longueur_BC": 8.6
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur_AB",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "longueur_BC",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

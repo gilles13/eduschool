@@ -4,7 +4,7 @@
 \alias{questions}
 \title{Lire les questions d'une notion pilote}
 \usage{
-questions(notion, niveau = "")
+questions(notion, niveau = "", .membre = FALSE)
 }
 \arguments{
 \item{notion}{Identifiant d'une notion ou d'une famille.}

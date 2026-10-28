@@ -1,0 +1,143 @@
+{
+  "famille": "FONC-A",
+  "exercices": [
+    {
+      "id": "FONC-A-001",
+      "donnees": {
+        "fixe": 12,
+        "tarif_a": 3,
+        "tarif_b": 6,
+        "duree": 3,
+        "xmax": 8
+      },
+      "resultats": {
+        "cout_a": 21,
+        "expression_a": "12 + 3x",
+        "intersection": 4,
+        "cout_egal": 24,
+        "offre_1h": "B",
+        "offre_8h": "A",
+        "seuil_a": 5
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "cout_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "expression_a",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "intersection",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "offre_1h",
+          "points": 0.5
+        },
+        {
+          "numero": 5,
+          "resultat": "seuil_a",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "FONC-A-002",
+      "donnees": {
+        "fixe": 6,
+        "tarif_a": 3,
+        "tarif_b": 6,
+        "duree": 3,
+        "xmax": 8
+      },
+      "resultats": {
+        "cout_a": 15,
+        "expression_a": "6 + 3x",
+        "intersection": 2,
+        "cout_egal": 12,
+        "offre_1h": "B",
+        "offre_8h": "A",
+        "seuil_a": 3
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "cout_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "expression_a",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "intersection",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "offre_1h",
+          "points": 0.5
+        },
+        {
+          "numero": 5,
+          "resultat": "seuil_a",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "FONC-A-003",
+      "donnees": {
+        "fixe": 21,
+        "tarif_a": 3,
+        "tarif_b": 6,
+        "duree": 3,
+        "xmax": 8
+      },
+      "resultats": {
+        "cout_a": 30,
+        "expression_a": "21 + 3x",
+        "intersection": 7,
+        "cout_egal": 42,
+        "offre_1h": "B",
+        "offre_8h": "A",
+        "seuil_a": 8
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "cout_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "expression_a",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "intersection",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "offre_1h",
+          "points": 0.5
+        },
+        {
+          "numero": 5,
+          "resultat": "seuil_a",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

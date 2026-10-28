@@ -1,0 +1,140 @@
+{
+  "famille": "FONC-B",
+  "exercices": [
+    {
+      "id": "FONC-B-001",
+      "donnees": {
+        "cloture": 20,
+        "largeur_test": 3,
+        "largeur_affirmation": 8,
+        "aire_affirmee": 40
+      },
+      "resultats": {
+        "longueur_expression": "20 - 2x",
+        "aire_expression": "20x - 2x^2",
+        "aire_test": 42,
+        "largeur_optimale": 5,
+        "aire_maximale": 50,
+        "aire_affirmation_reelle": 32,
+        "affirmation_correcte": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur_expression",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_expression",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "aire_test",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_maximale",
+          "points": 1
+        },
+        {
+          "numero": 5,
+          "resultat": "affirmation_correcte",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "FONC-B-002",
+      "donnees": {
+        "cloture": 24,
+        "largeur_test": 4,
+        "largeur_affirmation": 9,
+        "aire_affirmee": 60
+      },
+      "resultats": {
+        "longueur_expression": "24 - 2x",
+        "aire_expression": "24x - 2x^2",
+        "aire_test": 64,
+        "largeur_optimale": 6,
+        "aire_maximale": 72,
+        "aire_affirmation_reelle": 54,
+        "affirmation_correcte": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur_expression",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_expression",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "aire_test",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_maximale",
+          "points": 1
+        },
+        {
+          "numero": 5,
+          "resultat": "affirmation_correcte",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "FONC-B-003",
+      "donnees": {
+        "cloture": 28,
+        "largeur_test": 5,
+        "largeur_affirmation": 10,
+        "aire_affirmee": 90
+      },
+      "resultats": {
+        "longueur_expression": "28 - 2x",
+        "aire_expression": "28x - 2x^2",
+        "aire_test": 90,
+        "largeur_optimale": 7,
+        "aire_maximale": 98,
+        "aire_affirmation_reelle": 80,
+        "affirmation_correcte": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur_expression",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_expression",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "aire_test",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_maximale",
+          "points": 1
+        },
+        {
+          "numero": 5,
+          "resultat": "affirmation_correcte",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

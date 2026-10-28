@@ -1,0 +1,146 @@
+{
+  "famille": "TRIGO-C",
+  "exercices": [
+    {
+      "id": "TRIGO-C-001",
+      "donnees": {
+        "distance_initiale": 40,
+        "rapprochement": 12,
+        "angle_initial_degres": 35,
+        "hauteur_yeux": 1.6,
+        "unite": "m",
+        "arrondi_longueur_decimales": 1,
+        "arrondi_angle_degres": 1,
+        "figure_AB": 40,
+        "figure_BC": 28.008301528388387,
+        "figure_etiquette_AB": "40 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "ligne de visee",
+        "figure_angle_A": "35°",
+        "figure_AC": 48.83098355045824
+      },
+      "resultats": {
+        "distance_finale": 28,
+        "hauteur_au_dessus_des_yeux": 28.0,
+        "hauteur_batiment": 29.6,
+        "angle_final": 45
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "distance_finale",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "hauteur_au_dessus_des_yeux",
+          "points": 1.5
+        },
+        {
+          "numero": 3,
+          "resultat": "hauteur_batiment",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "angle_final",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-C-002",
+      "donnees": {
+        "distance_initiale": 35,
+        "rapprochement": 10,
+        "angle_initial_degres": 40,
+        "hauteur_yeux": 1.5,
+        "unite": "m",
+        "arrondi_longueur_decimales": 1,
+        "arrondi_angle_degres": 1,
+        "figure_AB": 35,
+        "figure_BC": 29.3684870912048,
+        "figure_etiquette_AB": "35 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "ligne de visee",
+        "figure_angle_A": "40°",
+        "figure_AC": 45.68925512662975
+      },
+      "resultats": {
+        "distance_finale": 25,
+        "hauteur_au_dessus_des_yeux": 29.4,
+        "hauteur_batiment": 30.9,
+        "angle_final": 50
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "distance_finale",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "hauteur_au_dessus_des_yeux",
+          "points": 1.5
+        },
+        {
+          "numero": 3,
+          "resultat": "hauteur_batiment",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "angle_final",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-C-003",
+      "donnees": {
+        "distance_initiale": 50,
+        "rapprochement": 15,
+        "angle_initial_degres": 30,
+        "hauteur_yeux": 1.7,
+        "unite": "m",
+        "arrondi_longueur_decimales": 1,
+        "arrondi_angle_degres": 1,
+        "figure_AB": 50,
+        "figure_BC": 28.867513459481287,
+        "figure_etiquette_AB": "50 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "ligne de visee",
+        "figure_angle_A": "30°",
+        "figure_AC": 57.735026918962575
+      },
+      "resultats": {
+        "distance_finale": 35,
+        "hauteur_au_dessus_des_yeux": 28.9,
+        "hauteur_batiment": 30.6,
+        "angle_final": 40
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "distance_finale",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "hauteur_au_dessus_des_yeux",
+          "points": 1.5
+        },
+        {
+          "numero": 3,
+          "resultat": "hauteur_batiment",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "angle_final",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "famille": "GEO-B",
+  "exercices": [
+    {
+      "id": "GEO-B-001",
+      "modele": "probleme_B",
+      "parametres": {
+        "echelle": 1
+      },
+      "donnees": {
+        "OB": 3,
+        "AB": 4,
+        "OD": 6
+      },
+      "resultats": {
+        "OA": 5,
+        "paralleles_AB_CD": true,
+        "CD": 8,
+        "aire_OCD": 24
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "OA",
+          "points": 1.5
+        },
+        {
+          "numero": 2,
+          "resultat": "paralleles_AB_CD",
+          "points": 2
+        },
+        {
+          "numero": 3,
+          "resultats": [
+            "CD",
+            "aire_OCD"
+          ],
+          "points": 2.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "famille": "PROBA-C",
+  "exercices": [
+    {
+      "id": "PROBA-C-001",
+      "donnees": {
+        "a_rouges": 4,
+        "a_bleues": 6,
+        "b_rouges": 3,
+        "b_bleues": 9,
+        "ajout_rouges_b": 3
+      },
+      "resultats": {
+        "total_a": 10,
+        "total_b": 12,
+        "p_rouge_a": 0.4,
+        "p_rouge_b": 0.25,
+        "comparaison": "A",
+        "total_b_apres": 15,
+        "p_rouge_b_apres": 0.4
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_rouge_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_rouge_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "comparaison",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "p_rouge_b_apres",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "PROBA-C-002",
+      "donnees": {
+        "a_rouges": 6,
+        "a_bleues": 9,
+        "b_rouges": 3,
+        "b_bleues": 9,
+        "ajout_rouges_b": 3
+      },
+      "resultats": {
+        "total_a": 15,
+        "total_b": 12,
+        "p_rouge_a": 0.4,
+        "p_rouge_b": 0.25,
+        "comparaison": "A",
+        "total_b_apres": 15,
+        "p_rouge_b_apres": 0.4
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_rouge_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_rouge_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "comparaison",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "p_rouge_b_apres",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "PROBA-C-003",
+      "donnees": {
+        "a_rouges": 8,
+        "a_bleues": 12,
+        "b_rouges": 4,
+        "b_bleues": 12,
+        "ajout_rouges_b": 4
+      },
+      "resultats": {
+        "total_a": 20,
+        "total_b": 16,
+        "p_rouge_a": 0.4,
+        "p_rouge_b": 0.25,
+        "comparaison": "A",
+        "total_b_apres": 20,
+        "p_rouge_b_apres": 0.4
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_rouge_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_rouge_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "comparaison",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "p_rouge_b_apres",
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

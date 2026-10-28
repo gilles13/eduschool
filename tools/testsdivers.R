@@ -2,10 +2,13 @@
 
 library("dplyr")
 library("tidyr")
+# library("eduschool")
 
 setwd("~/repogit/eduschool/")
 
 devtools::load_all()
+devtools::document()
+# devtools::install()
 
 racine = system.file("notions", package = "eduschool")
 
@@ -21,11 +24,6 @@ length(fichiers)
 basename(dirname(fichiers))
 
 # 2. Charger un fichier, par chemin ou par index.
-# charger_questions = function(fichier) {
-#   if (is.numeric(fichier)) fichier = fichiers[[fichier]]
-#   jsonlite::read_json(fichier, simplifyVector = FALSE)
-# }
-
 charger_questions = function(fichier) {
   if (is.numeric(fichier)) fichier = fichiers[[fichier]]
   if (file.exists(fichier)) {
@@ -41,7 +39,6 @@ charger_questions = function(fichier) {
 }
 
 banque = charger_questions(fichiers[1L])
-str(banque, max.level = 2)
 
 # 3. Inventaire global, sans modifier les banques.
 inventaire = do.call(rbind, lapply(fichiers, function(f) {
@@ -70,16 +67,17 @@ modeles = do.call(rbind, lapply(fichiers, function(f) {
 
 modeles |> count(capacite, .drop = FALSE)
 
-xtabs(~ famille + capacite, data = modeles)
-xtabs(variantes ~ capacite, data = modeles)
-
-modeles |> 
-    group_by(capacite) |> 
-    count(variantes) |> 
-    mutate(tot = variantes*n) |> 
-    ungroup() |> 
-    group_by(capacite) |> 
-    summarise(tot = sum(tot), .groups = "drop")
+# xtabs(~ famille + capacite, data = modeles)
+# xtabs(variantes ~ capacite, data = modeles)
+# 
+# modeles |> 
+#     group_by(capacite) |> 
+#     count(variantes) |> 
+#     mutate(tot = variantes*n) |> 
+#     ungroup() |> 
+#     group_by(capacite) |> 
+#     summarise(tot = sum(tot), .groups = "drop")
+# 
 
 # 4. Une famille de proprietes generiques pour TOUS les QCM.
 # Les marqueurs [[nom]] sont substitues par correspondance litterale.
@@ -151,33 +149,11 @@ nrow(resultats)
 length(unique(resultats$id))
 length(unique(resultats$famille))
 
-modeles |>
-  dplyr::filter(duplicated(id) | duplicated(id, fromLast = TRUE))
-
 # stat desc
 data.frame(
   indicateur = c("Modeles", "Modeles avec variantes", "Modeles sans variantes", "Variantes"),
   nombre = c(nrow(modeles), sum(modeles$variantes > 0L),
     sum(modeles$variantes == 0L), sum(modeles$variantes))
-)
-
-# verif params des variantes
-parametres_valides = unlist(lapply(fichiers, function(f) {
-  b = charger_questions(f)
-  unlist(lapply(b$questions, function(m) {
-    vapply(m$variantes, function(v) {
-      is.list(v$parametres) &&
-        !is.null(names(v$parametres)) &&
-        all(nzchar(names(v$parametres)))
-    }, logical(1))
-  }))
-}))
-
-data.frame(
-  propriete = "Parametres des variantes renseignes",
-  controles = length(parametres_valides),
-  conformes = sum(parametres_valides),
-  anomalies = sum(!parametres_valides)
 )
 
 # 7. Marqueurs non resolus dans les questions
@@ -232,8 +208,6 @@ stats =
     dplyr::arrange(dplyr::desc(modeles), champ)
 
 stats |> knitr::kable()
-
-modeles |> tibble()
 
 # champs humour/apart_humour
 selection = Filter(\(q) "apart_humour" %in% names(q), questions)
@@ -296,54 +270,6 @@ reponses = lapply(questions, \(q) {
   )}) |> dplyr::bind_rows() |>
   dplyr::mutate(classe = vapply(reponse, classer_reponse, character(1)))
 
-reponses |>
-  dplyr::count(classe, sort = TRUE)
-
-reponses |>
-    as_tibble() |> 
-    dplyr::count(reponse, sort = TRUE) |>
-    print(n = 30)
-
-q = questions[[which(vapply(questions, \(q) q$reponse == "[[reponse]]", logical(1)))[1]]]
-str(q, max.level = 3)
-
-reponses = lapply(questions, \(q) {
-  variantes = q$variantes
-  if (is.null(variantes) || length(variantes) == 0L) variantes = list(list(parametres = list()))
-  data.frame(
-    id = q$id,
-    reponse = vapply(variantes, \(v) substituer(q$reponse, v$parametres), character(1))
-  )
-}) |>
-  dplyr::bind_rows() |>
-  dplyr::mutate(classe = vapply(reponse, classer_reponse, character(1)))
-
-reponses |> 
-    as_tibble() |> 
-    dplyr::count(classe, sort = TRUE)
-
-reponses |>
-    as_tibble() |> 
-    dplyr::count(reponse, sort = TRUE) |>
-    head(20)
-
-reponses |>
-  dplyr::as_tibble() |>
-  dplyr::count(classe, sort = TRUE)
-
-reponses |>
-  dplyr::filter(grepl("[[", reponse, fixed = TRUE))
-
-reponses |>
-  dplyr::as_tibble() |>
-  dplyr::filter(classe == "texte") |>
-  dplyr::count(reponse, sort = TRUE) |>
-  print(n = 50)
-
-readr::read_lines("inst/notions/decimaux_fractions/questions.json") |>
-  tibble::enframe(name = "ligne", value = "texte") |>
-  dplyr::filter(stringr::str_detect(texte, stringr::fixed('\\"')))
-
 # questions dont moteur == null
 
 questions = tibble(fichier = fs::dir_ls("inst/notions", recurse = TRUE, glob = "*/questions.json")) |>
@@ -363,94 +289,8 @@ questions |>
 
 # tests divers
 
-banquevol = charger_questions(fichiers[86L])
-str(banque, max.level = 2)
-
-f = "inst/notions/volumes/questions.json"
-q = jsonlite::fromJSON(f, simplifyVector = FALSE)$questions
-
-controle = tibble(question = q) |>
-  mutate(
-    id = purrr::map_chr(question, "id"),
-    moteur = purrr::map_chr(question, \(x) if (is.null(x$moteur)) NA_character_ else x$moteur),
-    expression = purrr::map_chr(question, \(x) if (is.null(x$enonce_exploitable)) NA_character_ else x$enonce_exploitable),
-    attendu = purrr::map_chr(question, \(x) if (is.null(x$reponse_exploitable)) NA_character_ else x$reponse_exploitable),
-    variantes = purrr::map(question, "variantes")
-  ) |>
-  filter(moteur == "R", !is.na(expression), !is.na(attendu)) |>
-  unnest_longer(variantes) |>
-  group_by(id) |>
-  mutate(variante = row_number()) |>
-  ungroup() |>
-  mutate(parametres = purrr::map(variantes, "parametres")) |>
-  select(id, variante, expression, attendu, parametres)
-
-substituer = function(expr, p) {
-  for (nom in names(p)) {
-    if (is.numeric(p[[nom]]) && length(p[[nom]]) == 1) {
-      expr = stringr::str_replace_all(expr, stringr::fixed(paste0("[[", nom, "]]")), as.character(p[[nom]]))
-      expr = stringr::str_replace_all(expr, paste0("\\b", nom, "\\b"), as.character(p[[nom]]))
-    }
-  }
-  expr
-}
-
-controle = controle |>
-  mutate(
-    calcul = purrr::map2_chr(expression, parametres, substituer),
-    reponse = purrr::map2_chr(attendu, parametres, substituer),
-    ecart = purrr::map2_chr(calcul, reponse, \(a, b) Ryacas::yac_str(paste0("(", a, ")-(", b, ")"))),
-    valide = ecart == "0")
-
-controle |>
-  select(id, variante, calcul, reponse, ecart, valide) |>
-  print(n = Inf)
-
-# Controle COMP-STAT
-
-f = "inst/notions/statistiques_comparaison_series/questions.json"
-questions = jsonlite::fromJSON(f, simplifyVector = FALSE)$questions
-q = Filter(\(x) identical(x$id, "COMP-STAT-001"), questions)[[1]]
-q$enonce_exploitable
-q$reponse_exploitable
-length(q$variantes)
-
-controle = do.call(rbind, lapply(seq_along(q$variantes), \(i) {
-  p = q$variantes[[i]]$parametres
-  data.frame(
-    variante = i,
-    etendue_a = p$etendue_a,
-    etendue_b = p$etendue_b,
-    calcule = as.numeric(p$etendue_b > p$etendue_a),
-    attendu = as.numeric(q$reponse_exploitable)
-  )
-}))
-
-controle$valide = controle$calcule == controle$attendu
-
-table(controle$valide)
-
-# mot a trou et mot masque : moteur == "aucun" ?
-
-questions = lapply(fichiers, function(f) {
-  x = jsonlite::fromJSON(f, simplifyVector = FALSE)
-  lapply(x$questions, function(q) {
-    data.frame(
-      fichier = f,
-      id = q$id,
-      type_question = q$type_question,
-      moteur = if (is.null(q$moteur)) NA_character_ else q$moteur
-    )
-  }) |> dplyr::bind_rows()
-}) |> dplyr::bind_rows()
-
-questions |>
-  dplyr::filter(type_question %in% c("mot_a_trou", "mot_masque"), is.na(moteur) | moteur != "aucun")
-
 charger_questions("TRIG-RAP-001")
-# charger_questions("ENS-017")
-# charger_questions("FCAR-003")
-# charger_questions("TRI-ISO-ANGLES-001")
 charger_questions("INEQ-1D-SENS")
 charger_questions("ANALYSE-SYNTHESE-EQUIVALENCE")
 charger_questions("ENS-010")
+

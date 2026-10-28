@@ -1,0 +1,152 @@
+{
+  "famille": "MIX-C",
+  "exercices": [
+    {
+      "id": "MIX-C-001",
+      "donnees": {
+        "effectifs_connus": [
+          18,
+          42,
+          36,
+          6
+        ],
+        "total": 120,
+        "duree_nouveaux": 35,
+        "moyenne_cible": 23
+      },
+      "resultats": {
+        "effectif_manquant": 18,
+        "classe_61": 3,
+        "probabilite_numerateur": 24,
+        "probabilite_denominateur": 120,
+        "moyenne": 21.0,
+        "nouveaux_eleves": 20
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "effectif_manquant",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "classe_61",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "probabilite_numerateur",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "moyenne",
+          "points": 1
+        },
+        {
+          "numero": 5,
+          "resultat": "nouveaux_eleves",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-C-002",
+      "donnees": {
+        "effectifs_connus": [
+          24,
+          30,
+          42,
+          6
+        ],
+        "total": 120,
+        "duree_nouveaux": 35,
+        "moyenne_cible": 23
+      },
+      "resultats": {
+        "effectif_manquant": 18,
+        "classe_61": 3,
+        "probabilite_numerateur": 24,
+        "probabilite_denominateur": 120,
+        "moyenne": 21.0,
+        "nouveaux_eleves": 20
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "effectif_manquant",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "classe_61",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "probabilite_numerateur",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "moyenne",
+          "points": 1
+        },
+        {
+          "numero": 5,
+          "resultat": "nouveaux_eleves",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-C-003",
+      "donnees": {
+        "effectifs_connus": [
+          12,
+          54,
+          30,
+          6
+        ],
+        "total": 120,
+        "duree_nouveaux": 35,
+        "moyenne_cible": 23
+      },
+      "resultats": {
+        "effectif_manquant": 18,
+        "classe_61": 2,
+        "probabilite_numerateur": 24,
+        "probabilite_denominateur": 120,
+        "moyenne": 21.0,
+        "nouveaux_eleves": 20
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "effectif_manquant",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "classe_61",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "probabilite_numerateur",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "moyenne",
+          "points": 1
+        },
+        {
+          "numero": 5,
+          "resultat": "nouveaux_eleves",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

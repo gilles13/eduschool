@@ -1,0 +1,122 @@
+{
+  "famille": "MIX-B",
+  "exercices": [
+    {
+      "id": "MIX-B-001",
+      "donnees": {
+        "hauteur_a": 6,
+        "hauteur_b": 9,
+        "ecart_b": 2,
+        "solution": 6
+      },
+      "resultats": {
+        "aire_a": 36,
+        "aire_b": 36,
+        "x": 6,
+        "perimetre_a": 24,
+        "perimetre_b": 26,
+        "difference_cloture": 2
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "aire_a",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_b",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "x",
+          "points": 2
+        },
+        {
+          "numero": 4,
+          "resultat": "difference_cloture",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "MIX-B-002",
+      "donnees": {
+        "hauteur_a": 4,
+        "hauteur_b": 6,
+        "ecart_b": 3,
+        "solution": 9
+      },
+      "resultats": {
+        "aire_a": 36,
+        "aire_b": 36,
+        "x": 9,
+        "perimetre_a": 26,
+        "perimetre_b": 24,
+        "difference_cloture": 2
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "aire_a",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_b",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "x",
+          "points": 2
+        },
+        {
+          "numero": 4,
+          "resultat": "difference_cloture",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "MIX-B-003",
+      "donnees": {
+        "hauteur_a": 5,
+        "hauteur_b": 8,
+        "ecart_b": 6,
+        "solution": 16
+      },
+      "resultats": {
+        "aire_a": 80,
+        "aire_b": 80,
+        "x": 16,
+        "perimetre_a": 42,
+        "perimetre_b": 36,
+        "difference_cloture": 6
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "aire_a",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "aire_b",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "x",
+          "points": 2
+        },
+        {
+          "numero": 4,
+          "resultat": "difference_cloture",
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

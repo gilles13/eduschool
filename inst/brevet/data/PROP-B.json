@@ -1,0 +1,131 @@
+{
+  "famille": "PROP-B",
+  "exercices": [
+    {
+      "id": "PROP-B-001",
+      "donnees": {
+        "annee_depart": 2023,
+        "visiteurs_depart": 12000,
+        "hausse": 15,
+        "baisse": 20
+      },
+      "resultats": {
+        "visiteurs_annee_2": 13800,
+        "visiteurs_annee_3": 11040,
+        "evolution_globale_pourcent": -8.0,
+        "hausse_retour_pourcent": 8.69565217
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "visiteurs_annee_2",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "visiteurs_annee_3",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "evolution_globale_pourcent",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "evolution_globale_pourcent",
+          "points": 0.5
+        },
+        {
+          "numero": 5,
+          "resultat": "hausse_retour_pourcent",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROP-B-002",
+      "donnees": {
+        "annee_depart": 2023,
+        "visiteurs_depart": 8000,
+        "hausse": 20,
+        "baisse": 25
+      },
+      "resultats": {
+        "visiteurs_annee_2": 9600,
+        "visiteurs_annee_3": 7200,
+        "evolution_globale_pourcent": -10.0,
+        "hausse_retour_pourcent": 11.11111111
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "visiteurs_annee_2",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "visiteurs_annee_3",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "evolution_globale_pourcent",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "evolution_globale_pourcent",
+          "points": 0.5
+        },
+        {
+          "numero": 5,
+          "resultat": "hausse_retour_pourcent",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROP-B-003",
+      "donnees": {
+        "annee_depart": 2023,
+        "visiteurs_depart": 15000,
+        "hausse": 10,
+        "baisse": 20
+      },
+      "resultats": {
+        "visiteurs_annee_2": 16500,
+        "visiteurs_annee_3": 13200,
+        "evolution_globale_pourcent": -12.0,
+        "hausse_retour_pourcent": 13.63636364
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "visiteurs_annee_2",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "visiteurs_annee_3",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "evolution_globale_pourcent",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "evolution_globale_pourcent",
+          "points": 0.5
+        },
+        {
+          "numero": 5,
+          "resultat": "hausse_retour_pourcent",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

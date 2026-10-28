@@ -1,0 +1,128 @@
+{
+  "famille": "EQ-C",
+  "exercices": [
+    {
+      "id": "EQ-C-001",
+      "donnees": {
+        "racine_a": 3,
+        "racine_b": -4
+      },
+      "resultats": {
+        "solution_a": 3,
+        "solution_b": -4,
+        "nombre_solutions": 2,
+        "produit_a": 0,
+        "produit_b": 0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "produit_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "produit_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "nombre_solutions",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "solution_a",
+          "points": 2
+        },
+        {
+          "numero": 5,
+          "resultat": "solution_b",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EQ-C-002",
+      "donnees": {
+        "racine_a": 5,
+        "racine_b": -2
+      },
+      "resultats": {
+        "solution_a": 5,
+        "solution_b": -2,
+        "nombre_solutions": 2,
+        "produit_a": 0,
+        "produit_b": 0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "produit_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "produit_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "nombre_solutions",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "solution_a",
+          "points": 2
+        },
+        {
+          "numero": 5,
+          "resultat": "solution_b",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EQ-C-003",
+      "donnees": {
+        "racine_a": 4,
+        "racine_b": -6
+      },
+      "resultats": {
+        "solution_a": 4,
+        "solution_b": -6,
+        "nombre_solutions": 2,
+        "produit_a": 0,
+        "produit_b": 0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "produit_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "produit_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "nombre_solutions",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "solution_a",
+          "points": 2
+        },
+        {
+          "numero": 5,
+          "resultat": "solution_b",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "famille": "MIX-A",
+  "exercices": [
+    {
+      "id": "MIX-A-001",
+      "donnees": {
+        "diametre": 1,
+        "hauteur": 2,
+        "remplissage": 80,
+        "surface": 60,
+        "consommation": 15,
+        "pi": 3.14
+      },
+      "resultats": {
+        "rayon": 0.5,
+        "volume_m3": 1.57,
+        "capacite_litres": 1570.0,
+        "eau_disponible": 1256.0,
+        "eau_necessaire": 900,
+        "arrosage_possible": true,
+        "eau_restante": 356.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "capacite_litres",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "eau_disponible",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "eau_necessaire",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultats": [
+            "arrosage_possible",
+            "eau_restante"
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "MIX-A-002",
+      "donnees": {
+        "diametre": 2,
+        "hauteur": 1.5,
+        "remplissage": 60,
+        "surface": 120,
+        "consommation": 18,
+        "pi": 3.14
+      },
+      "resultats": {
+        "rayon": 1.0,
+        "volume_m3": 4.71,
+        "capacite_litres": 4710.0,
+        "eau_disponible": 2826.0,
+        "eau_necessaire": 2160,
+        "arrosage_possible": true,
+        "eau_restante": 666.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "capacite_litres",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "eau_disponible",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "eau_necessaire",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultats": [
+            "arrosage_possible",
+            "eau_restante"
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "MIX-A-003",
+      "donnees": {
+        "diametre": 2,
+        "hauteur": 1,
+        "remplissage": 50,
+        "surface": 100,
+        "consommation": 18,
+        "pi": 3.14
+      },
+      "resultats": {
+        "rayon": 1.0,
+        "volume_m3": 3.14,
+        "capacite_litres": 3140.0,
+        "eau_disponible": 1570.0,
+        "eau_necessaire": 1800,
+        "arrosage_possible": false,
+        "eau_restante": 0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "capacite_litres",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "eau_disponible",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "eau_necessaire",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultats": [
+            "arrosage_possible",
+            "eau_restante"
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

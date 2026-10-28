@@ -1,0 +1,104 @@
+{
+  "famille": "PROBA-B",
+  "exercices": [
+    {
+      "id": "PROBA-B-001",
+      "donnees": {
+        "rouges": 5,
+        "bleues": 4,
+        "vertes": 3,
+        "ajout_vertes": 3
+      },
+      "resultats": {
+        "total": 12,
+        "p_bleue": 0.3333333333333333,
+        "p_non_rouge": 0.5833333333333334,
+        "total_apres": 15,
+        "p_verte_apres": 0.4
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_bleue",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_non_rouge",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_verte_apres",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROBA-B-002",
+      "donnees": {
+        "rouges": 6,
+        "bleues": 5,
+        "vertes": 4,
+        "ajout_vertes": 5
+      },
+      "resultats": {
+        "total": 15,
+        "p_bleue": 0.3333333333333333,
+        "p_non_rouge": 0.6,
+        "total_apres": 20,
+        "p_verte_apres": 0.45
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_bleue",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_non_rouge",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_verte_apres",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROBA-B-003",
+      "donnees": {
+        "rouges": 8,
+        "bleues": 6,
+        "vertes": 4,
+        "ajout_vertes": 2
+      },
+      "resultats": {
+        "total": 18,
+        "p_bleue": 0.3333333333333333,
+        "p_non_rouge": 0.5555555555555556,
+        "total_apres": 20,
+        "p_verte_apres": 0.3
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_bleue",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_non_rouge",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_verte_apres",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

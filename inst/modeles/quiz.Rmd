@@ -94,7 +94,7 @@ if (html) {
       .split(/\\n+|(?<=\\.)\\s+(?=[A-ZÀ-Ý])/u).map(x => x.trim()).filter(Boolean);
     lignes.forEach(ligne => {
       const p = document.createElement("p");
-      const etape = /^(Je vois|Or|Donc)\s*:/.exec(ligne);
+      const etape = /^(Je vois|Or|Donc)\\s*:/.exec(ligne);
       if (etape) {
         noeud("strong", etape[1] + " :", p);
         ligne = ligne.slice(etape[0].length);

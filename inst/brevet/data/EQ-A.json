@@ -1,0 +1,110 @@
+{
+  "famille": "EQ-A",
+  "exercices": [
+    {
+      "id": "EQ-A-001",
+      "donnees": {
+        "ecart": 7,
+        "perimetre": 46
+      },
+      "resultats": {
+        "largeur": 8,
+        "longueur": 15,
+        "demi_perimetre": 23,
+        "erreur_noah": 23
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "largeur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "demi_perimetre",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "longueur",
+          "points": 2
+        },
+        {
+          "numero": 4,
+          "resultat": "erreur_noah",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EQ-A-002",
+      "donnees": {
+        "ecart": 5,
+        "perimetre": 46
+      },
+      "resultats": {
+        "largeur": 9,
+        "longueur": 14,
+        "demi_perimetre": 23,
+        "erreur_noah": 23
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "largeur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "demi_perimetre",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "longueur",
+          "points": 2
+        },
+        {
+          "numero": 4,
+          "resultat": "erreur_noah",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EQ-A-003",
+      "donnees": {
+        "ecart": 9,
+        "perimetre": 42
+      },
+      "resultats": {
+        "largeur": 6,
+        "longueur": 15,
+        "demi_perimetre": 21,
+        "erreur_noah": 21
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "largeur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "demi_perimetre",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "longueur",
+          "points": 2
+        },
+        {
+          "numero": 4,
+          "resultat": "erreur_noah",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

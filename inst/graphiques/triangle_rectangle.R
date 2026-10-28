@@ -1,10 +1,11 @@
-graphique_triangle_rectangle = function(illustration = NULL, angle = "A", approximation = FALSE, longueurs = NULL, unite = "", etiquettes = NULL, parallele = NULL) {
+graphique_triangle_rectangle = function(illustration = NULL, angle = "A", approximation = FALSE, longueurs = NULL, unite = "", etiquettes = NULL, parallele = NULL, angles = NULL) {
   if (!is.null(illustration$angle)) angle = illustration$angle
   if (!is.null(illustration$approximation)) approximation = illustration$approximation
   if (!is.null(illustration$longueurs)) longueurs = illustration$longueurs
   if (!is.null(illustration$unite)) unite = illustration$unite
   if (!is.null(illustration$etiquettes)) etiquettes = illustration$etiquettes
   if (!is.null(illustration$parallele)) parallele = illustration$parallele
+  if (!is.null(illustration$angles)) angles = illustration$angles
   stopifnot(is.character(angle), length(angle) == 1L, angle %in% c("A", "B", "C"))
   stopifnot(is.logical(approximation), length(approximation) == 1L, !is.na(approximation))
   stopifnot(is.character(unite), length(unite) == 1L, !is.na(unite))
@@ -65,12 +66,28 @@ graphique_triangle_rectangle = function(illustration = NULL, angle = "A", approx
       codage$x = codage$x * base / 4
       codage$y = codage$y * hauteur / 2.75
     }
+  }
+  codage_angle = if (approximation) {
+    ggplot2::geom_path(data = codage, ggplot2::aes(x = x, y = y), linewidth = .35)
   } else {
-    codage = data.frame(x = c(0, rayon, rayon, 0), y = c(rayon, rayon, 0, 0))
+    coder_angle_droit(c(x[2], y[2]), c(x[1], y[1]), c(x[3], y[3]), taille = rayon)
   }
   figure = ggplot2::ggplot() +
     ggplot2::geom_path(data = points[c(1, 2, 3, 1), ], ggplot2::aes(x = x, y = y), linewidth = .45) +
-    ggplot2::geom_path(data = codage, ggplot2::aes(x = x, y = y), linewidth = .35)
+    codage_angle
+  if (!is.null(angles)) {
+    if (!is.character(angles) || is.null(names(angles)) || anyNA(angles) || any(!nzchar(angles)) || anyDuplicated(names(angles)) || !all(names(angles) %in% sommets) || angle %in% names(angles)) stop("Angles a coder invalides.")
+    for (sommet in names(angles)) {
+      i = match(sommet, points$sommet)
+      autres_indices = setdiff(seq_len(nrow(points)), i)
+      figure = figure + coder_angle(
+        c(points$x[autres_indices[1]], points$y[autres_indices[1]]),
+        c(points$x[i], points$y[i]),
+        c(points$x[autres_indices[2]], points$y[autres_indices[2]]),
+        etiquette = unname(angles[[sommet]])
+      )
+    }
+  }
   cotes_intermediaires = NULL
   noms_interieurs = NULL
   if (!is.null(parallele)) {

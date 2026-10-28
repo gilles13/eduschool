@@ -1,5 +1,49 @@
 # Outils communs
 
+# Codage d'un angle droit, avec B comme sommet.
+coder_angle_droit = function(A, B, C, taille = NULL) {
+  points = list(A = A, B = B, C = C)
+  if (!all(vapply(points, function(x) is.numeric(x) && length(x) == 2L && all(is.finite(x)), logical(1)))) stop("Points invalides pour le codage de l'angle droit.")
+  u = A - B
+  v = C - B
+  nu = sqrt(sum(u^2))
+  nv = sqrt(sum(v^2))
+  if (nu <= 0 || nv <= 0) stop("Les cotes de l'angle doivent etre non nuls.")
+  u = u / nu
+  v = v / nv
+  if (abs(sum(u * v)) > 1e-8) stop("Les deux cotes ne sont pas perpendiculaires.")
+  if (is.null(taille)) taille = .06 * min(nu, nv)
+  if (!is.numeric(taille) || length(taille) != 1L || !is.finite(taille) || taille <= 0 || taille >= min(nu, nv)) stop("Taille de codage invalide.")
+  codage = rbind(B + taille * u, B + taille * (u + v), B + taille * v)
+  ggplot2::geom_path(data = data.frame(x = codage[, 1], y = codage[, 2]), ggplot2::aes(x = x, y = y), linewidth = .35)
+}
+
+# Arc et etiquette d'un angle, avec B comme sommet.
+coder_angle = function(A, B, C, etiquette, rayon = NULL) {
+  points = list(A = A, B = B, C = C)
+  if (!all(vapply(points, function(x) is.numeric(x) && length(x) == 2L && all(is.finite(x)), logical(1)))) stop("Points invalides pour le codage de l'angle.")
+  if (!is.character(etiquette) || length(etiquette) != 1L || is.na(etiquette) || !nzchar(etiquette)) stop("Etiquette d'angle invalide.")
+  u = A - B
+  v = C - B
+  nu = sqrt(sum(u^2))
+  nv = sqrt(sum(v^2))
+  if (nu <= 0 || nv <= 0) stop("Les cotes de l'angle doivent etre non nuls.")
+  if (is.null(rayon)) rayon = .16 * min(nu, nv)
+  if (!is.numeric(rayon) || length(rayon) != 1L || !is.finite(rayon) || rayon <= 0 || rayon >= min(nu, nv)) stop("Rayon de codage invalide.")
+  debut = atan2(u[2], u[1])
+  fin = atan2(v[2], v[1])
+  ecart = (fin - debut + pi) %% (2 * pi) - pi
+  if (abs(ecart) < 1e-8 || abs(abs(ecart) - pi) < 1e-8) stop("Angle invalide.")
+  theta = seq(debut, debut + ecart, length.out = 41L)
+  arc = data.frame(x = B[1] + rayon * cos(theta), y = B[2] + rayon * sin(theta))
+  milieu = debut + ecart / 2
+  position = B + 1.65 * rayon * c(cos(milieu), sin(milieu))
+  list(
+    ggplot2::geom_path(data = arc, ggplot2::aes(x = x, y = y), linewidth = .35),
+    ggplot2::geom_text(data = data.frame(x = position[1], y = position[2], label = etiquette), ggplot2::aes(x = x, y = y, label = label), size = 3.7)
+  )
+}
+
 ## labels
 ######################################################################
 placer_labels = function(points, segments, distance = NULL) {

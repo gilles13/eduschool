@@ -1,0 +1,119 @@
+{
+  "famille": "EQ-B",
+  "exercices": [
+    {
+      "id": "EQ-B-001",
+      "donnees": {
+        "cloture": 48,
+        "ecart": 6,
+        "largeur_proposee": 11,
+        "aire_minimale": 120
+      },
+      "resultats": {
+        "largeur": 9,
+        "longueur": 15,
+        "aire": 135,
+        "proposition_valide": false,
+        "aire_suffisante": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "largeur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "longueur",
+          "points": 2
+        },
+        {
+          "numero": 3,
+          "resultat": "proposition_valide",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_suffisante",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EQ-B-002",
+      "donnees": {
+        "cloture": 56,
+        "ecart": 8,
+        "largeur_proposee": 12,
+        "aire_minimale": 150
+      },
+      "resultats": {
+        "largeur": 10,
+        "longueur": 18,
+        "aire": 180,
+        "proposition_valide": false,
+        "aire_suffisante": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "largeur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "longueur",
+          "points": 2
+        },
+        {
+          "numero": 3,
+          "resultat": "proposition_valide",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_suffisante",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EQ-B-003",
+      "donnees": {
+        "cloture": 52,
+        "ecart": 4,
+        "largeur_proposee": 13,
+        "aire_minimale": 150
+      },
+      "resultats": {
+        "largeur": 11,
+        "longueur": 15,
+        "aire": 165,
+        "proposition_valide": false,
+        "aire_suffisante": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "largeur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "longueur",
+          "points": 2
+        },
+        {
+          "numero": 3,
+          "resultat": "proposition_valide",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "aire_suffisante",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

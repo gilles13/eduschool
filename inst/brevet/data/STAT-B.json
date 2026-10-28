@@ -1,0 +1,59 @@
+{
+  "famille": "STAT-B",
+  "exercices": [
+    {
+      "id": "STAT-B-001",
+      "donnees": {
+        "notes": [
+          8,
+          12,
+          15,
+          11,
+          17,
+          14,
+          9,
+          16
+        ],
+        "coefficients": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          2,
+          1,
+          4
+        ],
+        "nouveau_coefficient": 4,
+        "objectif": 14,
+        "note_entiere": true
+      },
+      "resultats": {
+        "somme_ponderee": 223,
+        "total_coefficients": 16,
+        "moyenne": 13.9375,
+        "moyenne_arrondie": 13.94,
+        "etendue": 9,
+        "seuil_note": 14.25,
+        "note_minimale": 15
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "moyenne_arrondie",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "etendue",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "note_minimale",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

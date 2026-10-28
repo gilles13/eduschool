@@ -1,0 +1,69 @@
+sujet;capacites
+GEO-A-001;Longueurs dans un triangle rectangle | Parallélisme | Proportionnalité des longueurs | Aires
+GEO-B-001;Longueurs dans un triangle rectangle | Parallélisme | Proportionnalité des longueurs | Aires
+GEO-C-001;Longueurs dans un triangle rectangle | Parallélisme | Proportionnalité des longueurs | Aires
+STAT-A-001;Moyenne | Médiane | Effectifs | Pourcentage
+STAT-B-001;Moyenne pondérée | Étendue | Inéquation
+PROBA-A-001;Probabilités | Équiprobabilité | Événement contraire
+PROBA-A-002;Probabilités | Équiprobabilité | Événement contraire
+PROBA-A-003;Probabilités | Équiprobabilité | Événement contraire
+ALGO-A-001;Boucles | Variables | Calcul litteral | Algorithmique
+ALGO-A-002;Boucles | Variables | Calcul litteral | Algorithmique
+ALGO-A-003;Boucles | Variables | Calcul litteral | Algorithmique
+FONC-A-001;Fonctions affines | Lecture graphique | Comparaison de tarifs
+FONC-A-002;Fonctions affines | Lecture graphique | Comparaison de tarifs
+FONC-A-003;Fonctions affines | Lecture graphique | Comparaison de tarifs
+PROP-A-001;Proportionnalité | Prix unitaire | Budget
+PROP-A-002;Proportionnalité | Prix unitaire | Budget
+PROP-A-003;Proportionnalité | Prix unitaire | Budget
+TRIGO-A-001;Trigonometrie | Calcul de longueurs
+TRIGO-A-002;Trigonometrie | Calcul de longueurs
+TRIGO-A-003;Trigonometrie | Calcul de longueurs
+TRIGO-B-001;Trigonometrie | Calcul d angles | Pythagore
+TRIGO-B-002;Trigonometrie | Calcul d angles | Pythagore
+TRIGO-B-003;Trigonometrie | Calcul d angles | Pythagore
+TRIGO-C-001;Trigonometrie | Angles | Hauteurs | Problemes
+TRIGO-C-002;Trigonometrie | Angles | Hauteurs | Problemes
+TRIGO-C-003;Trigonometrie | Angles | Hauteurs | Problemes
+PROBA-B-001;Probabilites | Evenement contraire | Modification des effectifs
+PROBA-B-002;Probabilites | Evenement contraire | Modification des effectifs
+PROBA-B-003;Probabilites | Evenement contraire | Modification des effectifs
+PROBA-C-001;Probabilites | Comparaison de deux sacs | Modification des effectifs
+PROBA-C-002;Probabilites | Comparaison de deux sacs | Modification des effectifs
+PROBA-C-003;Probabilites | Comparaison de deux sacs | Modification des effectifs
+PROBA-D-001;Probabilites | Boules numerotees | Nombres premiers | Comparaison
+PROBA-D-002;Probabilites | Boules numerotees | Nombres premiers | Comparaison
+PROBA-D-003;Probabilites | Boules numerotees | Nombres premiers | Comparaison
+EQ-A-001;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-A-002;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-A-003;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-B-001;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-B-002;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-B-003;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-C-001;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-C-002;Mise en equation | Raisonnement algebrique | Verification des solutions
+EQ-C-003;Mise en equation | Raisonnement algebrique | Verification des solutions
+MIX-A-001;Volumes | Pourcentages | Proportionnalite | Conversions
+MIX-A-002;Volumes | Pourcentages | Proportionnalite | Conversions
+MIX-A-003;Volumes | Pourcentages | Proportionnalite | Conversions
+MIX-B-001;Equations | Calcul litteral | Aires | Perimetres
+MIX-B-002;Equations | Calcul litteral | Aires | Perimetres
+MIX-B-003;Equations | Calcul litteral | Aires | Perimetres
+GEO-D-001;Aires de solides | Surface de contact | Assemblage de solides
+GEO-D-002;Aires de solides | Surface de contact | Assemblage de solides
+GEO-D-003;Aires de solides | Surface de contact | Assemblage de solides
+MIX-C-001;Statistiques | Probabilités | Moyenne pondérée | Équations
+MIX-C-002;Statistiques | Probabilités | Moyenne pondérée | Équations
+MIX-C-003;Statistiques | Probabilités | Moyenne pondérée | Équations
+MIX-D-001;Arithmétique | Diviseurs communs | Calcul littéral | Équations
+MIX-D-002;Arithmétique | Diviseurs communs | Calcul littéral | Équations
+MIX-D-003;Arithmétique | Diviseurs communs | Calcul littéral | Équations
+FONC-B-001;Fonctions | Calcul litteral | Lecture graphique | Aire du rectangle
+FONC-B-002;Fonctions | Calcul litteral | Lecture graphique | Aire du rectangle
+FONC-B-003;Fonctions | Calcul litteral | Lecture graphique | Aire du rectangle
+PROP-B-001;Pourcentages | Evolutions successives | Taux global
+PROP-B-002;Pourcentages | Evolutions successives | Taux global
+PROP-B-003;Pourcentages | Evolutions successives | Taux global
+ALGO-B-001;Boucles conditionnelles | Variables | Algorithmique
+ALGO-B-002;Boucles conditionnelles | Variables | Algorithmique
+ALGO-B-003;Boucles conditionnelles | Variables | Algorithmique

@@ -1,0 +1,119 @@
+{
+  "famille": "ALGO-B",
+  "exercices": [
+    {
+      "id": "ALGO-B-001",
+      "donnees": {
+        "depart": 100,
+        "ajout": 20,
+        "seuil": 1000,
+        "nouvel_ajout": 30,
+        "nouveau_seuil": 1500
+      },
+      "resultats": {
+        "total_jour_3": 360,
+        "jour_final": 7,
+        "jour_modifie": 6,
+        "seuil_modifie": 1500
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "total_jour_3",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "jour_final",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "jour_modifie",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "seuil_modifie",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "ALGO-B-002",
+      "donnees": {
+        "depart": 80,
+        "ajout": 20,
+        "seuil": 900,
+        "nouvel_ajout": 30,
+        "nouveau_seuil": 1300
+      },
+      "resultats": {
+        "total_jour_3": 300,
+        "jour_final": 7,
+        "jour_modifie": 6,
+        "seuil_modifie": 1300
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "total_jour_3",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "jour_final",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "jour_modifie",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "seuil_modifie",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "ALGO-B-003",
+      "donnees": {
+        "depart": 120,
+        "ajout": 30,
+        "seuil": 1300,
+        "nouvel_ajout": 40,
+        "nouveau_seuil": 1800
+      },
+      "resultats": {
+        "total_jour_3": 450,
+        "jour_final": 7,
+        "jour_modifie": 6,
+        "seuil_modifie": 1800
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "total_jour_3",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "jour_final",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "jour_modifie",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "seuil_modifie",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

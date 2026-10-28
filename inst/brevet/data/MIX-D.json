@@ -1,0 +1,140 @@
+{
+  "famille": "MIX-D",
+  "exercices": [
+    {
+      "id": "MIX-D-001",
+      "donnees": {
+        "jetons_rouges": 84,
+        "jetons_bleus": 126,
+        "score_initial": 10,
+        "gain_bonne": 3,
+        "perte_mauvaise": 2,
+        "nombre_questions": 12,
+        "score_cible": 31,
+        "score_autre": 26
+      },
+      "resultats": {
+        "nombre_sachets": 42,
+        "rouges_par_sachet": 2,
+        "bleus_par_sachet": 3,
+        "coefficient_score": 5,
+        "constant_score": -14,
+        "bonnes_cible": 9,
+        "bonnes_autre": 8,
+        "affirmation_correcte": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "nombre_sachets",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "rouges_par_sachet",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "bonnes_cible",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "bonnes_autre",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-D-002",
+      "donnees": {
+        "jetons_rouges": 72,
+        "jetons_bleus": 108,
+        "score_initial": 8,
+        "gain_bonne": 4,
+        "perte_mauvaise": 1,
+        "nombre_questions": 10,
+        "score_cible": 33,
+        "score_autre": 28
+      },
+      "resultats": {
+        "nombre_sachets": 36,
+        "rouges_par_sachet": 2,
+        "bleus_par_sachet": 3,
+        "coefficient_score": 5,
+        "constant_score": -2,
+        "bonnes_cible": 7,
+        "bonnes_autre": 6,
+        "affirmation_correcte": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "nombre_sachets",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "rouges_par_sachet",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "bonnes_cible",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "bonnes_autre",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-D-003",
+      "donnees": {
+        "jetons_rouges": 96,
+        "jetons_bleus": 120,
+        "score_initial": 12,
+        "gain_bonne": 2,
+        "perte_mauvaise": 3,
+        "nombre_questions": 14,
+        "score_cible": 20,
+        "score_autre": 15
+      },
+      "resultats": {
+        "nombre_sachets": 24,
+        "rouges_par_sachet": 4,
+        "bleus_par_sachet": 5,
+        "coefficient_score": 5,
+        "constant_score": -30,
+        "bonnes_cible": 10,
+        "bonnes_autre": 9,
+        "affirmation_correcte": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "nombre_sachets",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "rouges_par_sachet",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "bonnes_cible",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "bonnes_autre",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

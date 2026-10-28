@@ -1,0 +1,116 @@
+{
+  "famille": "ALGO-A",
+  "exercices": [
+    {
+      "id": "ALGO-A-001",
+      "donnees": {
+        "depart": 2,
+        "ajout": 3,
+        "repetitions": 2,
+        "cible": 25
+      },
+      "resultats": {
+        "apres_ajout": 5,
+        "apres_premier": 9,
+        "final": 17,
+        "depart_cible": 4
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "apres_ajout",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "apres_premier",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "final",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "depart_cible",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "ALGO-A-002",
+      "donnees": {
+        "depart": 3,
+        "ajout": 2,
+        "repetitions": 3,
+        "cible": 49
+      },
+      "resultats": {
+        "apres_ajout": 5,
+        "apres_premier": 9,
+        "final": 33,
+        "depart_cible": 5
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "apres_ajout",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "apres_premier",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "final",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "depart_cible",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "ALGO-A-003",
+      "donnees": {
+        "depart": 2,
+        "ajout": 1,
+        "repetitions": 3,
+        "cible": 33
+      },
+      "resultats": {
+        "apres_ajout": 3,
+        "apres_premier": 5,
+        "final": 17,
+        "depart_cible": 4
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "apres_ajout",
+          "points": 0.5
+        },
+        {
+          "numero": 2,
+          "resultat": "apres_premier",
+          "points": 0.5
+        },
+        {
+          "numero": 3,
+          "resultat": "final",
+          "points": 0.5
+        },
+        {
+          "numero": 4,
+          "resultat": "depart_cible",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

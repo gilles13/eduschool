@@ -204,10 +204,12 @@ Cette fois, $\varnothing\in\mathcal{P}(E)$ : l'ensemble vide est bien l'un des �
 
 ## Une toute petite porte : Cantor
 
-En anglais, **cantor** désigne notamment une personne qui conduit le chant. C’est aussi le nom de **Georg Cantor**, l’un des fondateurs de la théorie des ensembles.
+En anglais, *cantor* désigne notamment un **chantre**, une personne chargée de conduire le chant lors d'une cérémonie religieuse. C'est lui qui donne le départ, guide les voix et veille à leur harmonie. Une sorte de maître de cérémonie du chant.
 
-En étudiant les ensembles, Cantor a ouvert une question étonnante : **tous les infinis ont-ils la même taille ?**
+C'est aussi le nom de **Georg Cantor**, mathématicien qui a profondément transformé notre manière de comprendre les ensembles et l'infini.
 
-Pas besoin d’y répondre ici. La porte est simplement entrouverte.
+Il a notamment montré une chose surprenante : **tous les infinis n'ont pas la même taille !**
+
+Pas besoin d'aller plus loin ici. La porte est simplement entrouverte.
 
 <!-- graphique: ensembles_nombres -->

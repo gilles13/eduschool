@@ -1,0 +1,134 @@
+{
+  "famille": "PROBA-D",
+  "exercices": [
+    {
+      "id": "PROBA-D-001",
+      "donnees": {
+        "nombre_boules": 12
+      },
+      "resultats": {
+        "nombre_pairs": 6,
+        "nombre_multiples_3": 4,
+        "nombre_premiers": 5,
+        "p_pair": 0.5,
+        "p_multiple_3": 0.3333333333333333,
+        "p_premier": 0.4166666666666667,
+        "comparaison": "pairs",
+        "p_non_multiple_3": 0.6666666666666666
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_pair",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_multiple_3",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_premier",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 2
+        },
+        {
+          "numero": 5,
+          "resultat": "p_non_multiple_3",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROBA-D-002",
+      "donnees": {
+        "nombre_boules": 15
+      },
+      "resultats": {
+        "nombre_pairs": 7,
+        "nombre_multiples_3": 5,
+        "nombre_premiers": 6,
+        "p_pair": 0.4666666666666667,
+        "p_multiple_3": 0.3333333333333333,
+        "p_premier": 0.4,
+        "comparaison": "pairs",
+        "p_non_multiple_3": 0.6666666666666666
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_pair",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_multiple_3",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_premier",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 2
+        },
+        {
+          "numero": 5,
+          "resultat": "p_non_multiple_3",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "PROBA-D-003",
+      "donnees": {
+        "nombre_boules": 18
+      },
+      "resultats": {
+        "nombre_pairs": 9,
+        "nombre_multiples_3": 6,
+        "nombre_premiers": 7,
+        "p_pair": 0.5,
+        "p_multiple_3": 0.3333333333333333,
+        "p_premier": 0.3888888888888889,
+        "comparaison": "pairs",
+        "p_non_multiple_3": 0.6666666666666666
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "p_pair",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "p_multiple_3",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "p_premier",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 2
+        },
+        {
+          "numero": 5,
+          "resultat": "p_non_multiple_3",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

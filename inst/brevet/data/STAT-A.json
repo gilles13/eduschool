@@ -1,0 +1,47 @@
+{
+  "famille": "STAT-A",
+  "exercices": [
+    {
+      "id": "STAT-A-001",
+      "donnees": {
+        "notes": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "effectifs": [
+          3,
+          6,
+          8,
+          3
+        ],
+        "seuil": 15
+      },
+      "resultats": {
+        "total": 20,
+        "moyenne": 12.75,
+        "mediane": 15,
+        "effectif_au_moins_seuil": 11,
+        "pourcentage_au_moins_seuil": 55
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "moyenne",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "mediane",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pourcentage_au_moins_seuil",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

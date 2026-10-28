@@ -25,6 +25,6 @@ modalites_bo("programmes").}
 Chemin du document genere (invisible).
 }
 \description{
-Utilise le Markdown associe a un programme et le modele commun eduschool.
+Utilise le Markdown associe a un programme et un modele BO dedie.
 Le PDF officiel reste la source de reference.
 }

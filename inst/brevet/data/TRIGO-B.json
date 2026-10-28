@@ -1,0 +1,125 @@
+{
+  "famille": "TRIGO-B",
+  "exercices": [
+    {
+      "id": "TRIGO-B-001",
+      "donnees": {
+        "cote_adjacent": 8,
+        "cote_oppose": 6,
+        "unite": "cm",
+        "arrondi_angle_degres": 1,
+        "arrondi_longueur_decimales": 1,
+        "figure_AB": 8,
+        "figure_BC": 6,
+        "figure_etiquette_AB": "8 cm",
+        "figure_etiquette_BC": "6 cm",
+        "figure_etiquette_AC": "?",
+        "figure_angle_A": "?",
+        "figure_angle_C": "?",
+        "figure_AC": 10.0
+      },
+      "resultats": {
+        "hypotenuse": 10.0,
+        "angle_A": 37,
+        "angle_C": 53
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "hypotenuse",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "angle_A",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "angle_C",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-B-002",
+      "donnees": {
+        "cote_adjacent": 12,
+        "cote_oppose": 5,
+        "unite": "cm",
+        "arrondi_angle_degres": 1,
+        "arrondi_longueur_decimales": 1,
+        "figure_AB": 12,
+        "figure_BC": 5,
+        "figure_etiquette_AB": "12 cm",
+        "figure_etiquette_BC": "5 cm",
+        "figure_etiquette_AC": "?",
+        "figure_angle_A": "?",
+        "figure_angle_C": "?",
+        "figure_AC": 13.0
+      },
+      "resultats": {
+        "hypotenuse": 13.0,
+        "angle_A": 23,
+        "angle_C": 67
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "hypotenuse",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "angle_A",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "angle_C",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-B-003",
+      "donnees": {
+        "cote_adjacent": 9,
+        "cote_oppose": 12,
+        "unite": "cm",
+        "arrondi_angle_degres": 1,
+        "arrondi_longueur_decimales": 1,
+        "figure_AB": 9,
+        "figure_BC": 12,
+        "figure_etiquette_AB": "9 cm",
+        "figure_etiquette_BC": "12 cm",
+        "figure_etiquette_AC": "?",
+        "figure_angle_A": "?",
+        "figure_angle_C": "?",
+        "figure_AC": 15.0
+      },
+      "resultats": {
+        "hypotenuse": 15.0,
+        "angle_A": 53,
+        "angle_C": 37
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "hypotenuse",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "angle_A",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "angle_C",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}
