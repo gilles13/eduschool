@@ -40,28 +40,16 @@ La liste des sujets disponibles est fournie par notions().
     formes_questions()
     vocabulaire()
 
-## 04 · Examiner les textes officiels
+## 04 · Textes officiels (BO)
 
-Les BO du collège sont organisés par cycles C3 et C4. Deux catalogues
-distincts : notions pratiques et notions documentaires.
+Consulter les programmes et leurs transcriptions.
 
     consulter_bo("C3")
-    consulter_bo("C4")
-    consulter_bo("TG")
-    # Identifiants pratiques : notions()
     texte_officiel("aires")
-    # Identifiants MAT_* : catalogue documentaire
-    modalites_bo("notions_documentaires")
-    texte_officiel("MAT_AIRES")
-
-## 05 · Produire un BO
-
-Retrouver les identifiants des transcriptions réellement disponibles.
-
     modalites_bo("programmes")
     produire_bo("PRG_MAT_C3_2025", format = "html")
 
-## 06 · Fiches et quiz
+## 05 · Fiches et quiz
 
 Produire une découverte, une synthèse ou un quiz.
 
@@ -71,6 +59,16 @@ Produire une découverte, une synthèse ou un quiz.
     produire("fractions_addition", "quiz",
              format = "html")
     produire("fractions", "tous")
+
+## 06 · Brevet des collèges
+
+Consulter les identifiants disponibles, puis produire un exercice ou un
+sujet.
+
+    modalites_brevet()
+    produire_brevet("GEO-A-001")
+    produire_brevet(c("GEO-A-001", "ALGO-B-001"),
+                   format = "pdf", mode = "sujet")
 
 ## 07 · Figures et outils
 

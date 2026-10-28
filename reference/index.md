@@ -24,6 +24,8 @@
   : Programmes de mathematiques documentes dans la sauvegarde v1
 - [`modalites_bo()`](https://gilles13.github.io/eduschool/reference/modalites_bo.md)
   : Modalites documentaires des Bulletins officiels
+- [`modalites_brevet()`](https://gilles13.github.io/eduschool/reference/modalites_brevet.md)
+  : Identifiants des exercices du brevet
 - [`notions()`](https://gilles13.github.io/eduschool/reference/notions.md)
   : Reperer les notions et familles disponibles
 - [`produire()`](https://gilles13.github.io/eduschool/reference/produire.md)
