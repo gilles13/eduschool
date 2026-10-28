@@ -5,7 +5,7 @@ Lire les questions d'une notion pilote
 ## Usage
 
 ``` r
-questions(notion, niveau = "")
+questions(notion, niveau = "", .membre = FALSE)
 ```
 
 ## Arguments
