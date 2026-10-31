@@ -10,7 +10,7 @@ construire_exercice = function(env, dossier, sujet, afficher_formules = getOptio
   figure = file.path(dossier, paste0(sujet, ".png"))
   figure_corrige = file.path(dossier, paste0(sujet, "-contact.png"))
   tracer = function(chemin, contact) {
-    p = graphique_cylindre_demi_sphere(rayon_cylindre = rc, rayon_demi_sphere = rs, hauteur = h, disque_contact = contact, couleur_contact = "red")
+    p = graphique("cylindre_demi_sphere", rayon_cylindre = rc, rayon_demi_sphere = rs, hauteur = h, disque_contact = contact, couleur_contact = "red")
     ragg::agg_png(chemin, width = 500, height = 600, res = 150)
     tryCatch(print(p), finally = grDevices::dev.off())
   }

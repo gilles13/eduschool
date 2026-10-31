@@ -1,0 +1,131 @@
+{
+  "famille": "TRIGO-D",
+  "exercices": [
+    {
+      "id": "TRIGO-D-001",
+      "donnees": {
+        "a": 4,
+        "b": 3,
+        "unite": "m",
+        "figure_AB": 4,
+        "figure_BC": 3,
+        "figure_AC": 5.0,
+        "figure_etiquette_AB": "4 m",
+        "figure_etiquette_BC": "3 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 37,
+        "hypotenuse": 5.0,
+        "aire": 6.0,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "hypotenuse",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "aire",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-D-002",
+      "donnees": {
+        "a": 6,
+        "b": 4,
+        "unite": "m",
+        "figure_AB": 6,
+        "figure_BC": 4,
+        "figure_AC": 7.211102550927978,
+        "figure_etiquette_AB": "6 m",
+        "figure_etiquette_BC": "4 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 34,
+        "hypotenuse": 7.2,
+        "aire": 12.0,
+        "comparaison": "non"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "hypotenuse",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "aire",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-D-003",
+      "donnees": {
+        "a": 8,
+        "b": 6,
+        "unite": "m",
+        "figure_AB": 8,
+        "figure_BC": 6,
+        "figure_AC": 10.0,
+        "figure_etiquette_AB": "8 m",
+        "figure_etiquette_BC": "6 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 37,
+        "hypotenuse": 10.0,
+        "aire": 24.0,
+        "comparaison": "non"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "hypotenuse",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "aire",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

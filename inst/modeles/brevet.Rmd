@@ -1,0 +1,55 @@
+---
+title: ""
+output:
+  pdf_document:
+    keep_tex: true
+params:
+  titre: "Diplôme national du brevet (version eduschool)"
+  mode: "sujet"
+  partie1: ""
+  partie2: ""
+  corrige1: ""
+  corrige2: ""
+  logo: ""
+header-includes:
+  - |
+    \makeatletter
+    \def\ps@brevet{%
+      \def\@oddhead{\vbox{\hbox to\textwidth{\rightmark\hfill\brevetlogo}\vskip 2mm\hrule}}%
+      \let\@evenhead\@oddhead
+      \def\@oddfoot{\hfill\thepage\hfill}%
+      \let\@evenfoot\@oddfoot
+    }
+    \newcommand{\brevetlogo}{}
+    \makeatother
+---
+
+```{r configuration, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+logo = normalizePath(params$logo, winslash = "/", mustWork = TRUE)
+```
+
+```{r couverture, results='asis'}
+cat("\\renewcommand{\\brevetlogo}{\\includegraphics[height=9mm]{\\detokenize{", logo, "}}}\n", sep = "")
+cat("\\thispagestyle{empty}\n\\begin{center}\n\\vspace*{35mm}\n")
+cat("{\\LARGE\\bfseries Diplôme national du brevet\\par}\n\\vspace{5mm}\n{\\Large Épreuve de mathématiques\\par}\n\\vspace{4mm}\n{(version eduschool)\\par}\n\\vspace{8mm}\n{\\large Durée : 2h - 20 points\\par}\n")
+cat("\\vspace{22mm}\n\\includegraphics[width=45mm]{\\detokenize{", logo, "}}\n", sep = "")
+cat("\\end{center}\n")
+```
+
+```{r parties, results='asis'}
+parties = if (params$mode == "corrige") {
+  list("Corrigé : Partie 1" = params$corrige1, "Corrigé : Partie 2" = params$corrige2)
+} else {
+  c(list("Partie 1 : Automatismes" = params$partie1,
+         "Partie 2 : Raisonnement et résolution de problèmes" = params$partie2),
+    if (params$mode == "sujet_corrige") list("Corrigé : Partie 1" = params$corrige1,
+                                              "Corrigé : Partie 2" = params$corrige2))
+}
+for (i in seq_along(parties)) {
+  if (!nzchar(parties[[i]])) next
+  cat("\\clearpage\n\\pagestyle{brevet}\n\\markright{", names(parties)[i], "}\n", sep = "")
+  cat(knitr::knit_child(text = parties[[i]], quiet = TRUE), sep = "\n")
+  cat("\n")
+}
+```

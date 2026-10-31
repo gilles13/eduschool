@@ -42,29 +42,28 @@ assembler_brevet = function(exercices, mode, fmt, largeur_figure) {
   }, character(1))
   corriges = vapply(seq_along(exercices), function(i) {
     x = exercices[[i]]
-    sub("^## Corrigé - Exercice 1", paste0("## Corrigé - Exercice ", i), x$correction)
+    sub("^## Corrig\u00e9 - Exercice 1", paste0("## Corrig\u00e9 - Exercice ", i), x$correction)
   }, character(1))
-  separation = if (fmt == "html") '<div style="break-before:page;page-break-before:always;"></div>' else "\\newpage"
-  sujet = paste(sujets, collapse = "\n\n")
-  corrige = paste(corriges, collapse = "\n\n")
-  switch(mode, sujet = sujet, corrige = corrige, sujet_corrige = paste(sujet, separation, corrige, sep = "\n\n"))
+  automatique = startsWith(vapply(exercices, function(x) x$id, character(1)), "AUTO-")
+  joindre = function(blocs, selection) paste(blocs[selection], collapse = "\n\n")
+  list(
+    partie1 = joindre(sujets, automatique),
+    partie2 = joindre(sujets, !automatique),
+    corrige1 = joindre(corriges, automatique),
+    corrige2 = joindre(corriges, !automatique)
+  )
 }
 
 
 rendre_brevet = function(exercices, sujets, format, format_auto, mode, dossier, largeur_figure) {
-  modele = system.file("modeles", "divers.Rmd", package = "eduschool")
-  if (!nzchar(modele)) stop("Modele divers.Rmd introuvable", call. = FALSE)
-  capacites = read.csv(system.file("brevet", "brevet_capacites.csv", package = "eduschool"),
-                       sep = ";", fileEncoding = "UTF-8", stringsAsFactors = FALSE)
-  mots = unlist(strsplit(capacites$capacites[match(sujets, capacites$sujet)], " | ", fixed = TRUE), use.names = FALSE)
-  mots = unique(trimws(mots[!is.na(mots)]))
-  titre = "Brevet - Mathématiques"
-  # Sous-titre dans le contenu : aucun changement au modele commun.
-  entete_capacites = if (length(mots)) paste0("*", paste(mots, collapse = " | "), "*") else ""
+  modele = system.file("modeles", "brevet.Rmd", package = "eduschool")
+  if (!nzchar(modele)) stop("Modele brevet.Rmd introuvable", call. = FALSE)
+  titre = "Dipl\u00f4me national du brevet (version eduschool)"
+  logo = system.file("assets", "logo-hexa.png", package = "eduschool")
+  if (!nzchar(logo) || !file.exists(logo)) stop("Logo hexa introuvable", call. = FALSE)
   generer = function(fmt) {
     contenu = assembler_brevet(exercices, mode, fmt, largeur_figure)
-    if (nzchar(entete_capacites)) contenu = paste(entete_capacites, contenu, sep = "\n\n")
-    rmarkdown::render(input = modele, output_format = paste0(fmt, "_document"), output_file = paste0(paste(sujets, collapse = "_"), "-", mode, ".", fmt), output_dir = dossier, params = list(titre = titre, contenu = contenu), envir = new.env(parent = globalenv()), quiet = TRUE)
+    rmarkdown::render(input = modele, output_format = paste0(fmt, "_document"), output_file = paste0(paste(sujets, collapse = "_"), "-", mode, ".", fmt), output_dir = dossier, params = c(list(titre = titre, mode = mode, logo = logo), contenu), envir = new.env(parent = globalenv()), quiet = TRUE)
   }
   sorties = character()
   for (fmt in format) {

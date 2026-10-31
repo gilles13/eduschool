@@ -1,0 +1,131 @@
+{
+  "famille": "MIX-K",
+  "exercices": [
+    {
+      "id": "MIX-K-001",
+      "donnees": {
+        "a": 300,
+        "b": 400,
+        "unite": "m",
+        "figure_AB": 300,
+        "figure_BC": 500.0,
+        "figure_AC": 400,
+        "figure_etiquette_AB": "300 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "400 m"
+      },
+      "resultats": {
+        "angle": 53,
+        "direct": 500,
+        "economie": 200,
+        "pourcentage": 28.6
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "direct",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "economie",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "pourcentage",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-K-002",
+      "donnees": {
+        "a": 500,
+        "b": 1200,
+        "unite": "m",
+        "figure_AB": 500,
+        "figure_BC": 1300.0,
+        "figure_AC": 1200,
+        "figure_etiquette_AB": "500 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "1200 m"
+      },
+      "resultats": {
+        "angle": 67,
+        "direct": 1300,
+        "economie": 400,
+        "pourcentage": 23.5
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "direct",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "economie",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "pourcentage",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-K-003",
+      "donnees": {
+        "a": 800,
+        "b": 600,
+        "unite": "m",
+        "figure_AB": 800,
+        "figure_BC": 1000.0,
+        "figure_AC": 600,
+        "figure_etiquette_AB": "800 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "600 m"
+      },
+      "resultats": {
+        "angle": 37,
+        "direct": 1000,
+        "economie": 400,
+        "pourcentage": 28.6
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "direct",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "economie",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "pourcentage",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

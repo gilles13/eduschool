@@ -1,0 +1,118 @@
+---
+title: ""
+output:
+  pdf_document:
+    latex_engine: pdflatex
+    keep_tex: true
+    number_sections: false
+    toc: false
+geometry: "a4paper,margin=12mm"
+header-includes:
+  - \usepackage[most]{tcolorbox}
+  - \usepackage{multicol}
+  - \usepackage{pdflscape}
+  - \usepackage{xcolor}
+  - \definecolor{edubleu}{HTML}{2F6B9A}
+  - \definecolor{eduturquoise}{HTML}{2A9D8F}
+  - \definecolor{educorail}{HTML}{E76F51}
+  - \definecolor{eduencre}{HTML}{18344E}
+  - \tcbset{edubox/.style={enhanced,colback=white,colframe=edubleu,boxrule=0.6pt,arc=2mm,left=2mm,right=2mm,top=1.5mm,bottom=1.5mm,before skip=0pt,after skip=3mm}}
+params:
+  niveau: "3E"
+  domaine: "espace_et_geometrie"
+  orientation: "paysage"
+  colonnes: 2
+  description: "Connaissances indispensables"
+  dossier: ""
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+niveau = params$niveau
+if (!niveau %in% c("6E", "5E", "4E", "3E")) stop("Niveau invalide.")
+if (!params$orientation %in% c("portrait", "paysage")) stop("Orientation invalide.")
+if (!params$colonnes %in% 1:3) stop("Le nombre de colonnes doit etre compris entre 1 et 3.")
+cycle = if (niveau == "6E") "cycle3" else "cycle4"
+racine = params$dossier
+if (!nzchar(racine)) racine = system.file("revisions", package = "eduschool")
+if (!nzchar(racine) && dir.exists("inst/revisions"))
+  racine = normalizePath("inst/revisions", mustWork = TRUE)
+if (!nzchar(racine)) stop("Dossier de revisions introuvable.")
+niveaux = c("6E", "5E", "4E", "3E")
+niveaux = niveaux[seq_len(match(niveau, niveaux))]
+fichiers = unlist(lapply(niveaux, function(n) {
+  c = if (n == "6E") "cycle3" else "cycle4"
+  domaines_courts = c(
+    initiation_a_la_pensee_informatique = "informatique",
+    nombres_calcul_et_resolution_de_problemes = "nombres_calcul",
+    organisation_et_gestion_de_donnees_et_probabilites = "donnees_probabilites",
+    organisation_et_gestion_des_donnees_et_probabilites = "donnees_probabilites"
+  )
+  domaine = params$domaine
+  if (domaine %in% names(domaines_courts)) domaine = unname(domaines_courts[domaine])
+  d = file.path(racine, c, n, domaine)
+  if (!dir.exists(d)) return(character())
+  sort(list.files(d, pattern = "\\.md$", full.names = TRUE))
+}), use.names = FALSE)
+if (!length(fichiers)) stop("Aucune connaissance trouvee pour ce domaine.")
+extraire = function(fichier) {
+  lignes = readLines(fichier, warn = FALSE, encoding = "UTF-8")
+  debut = grep("^## Connaissances indispensables\\s*$", lignes)
+  if (length(debut) != 1L) stop("Section connaissances absente : ", fichier)
+  fin = grep("^## ", lignes)
+  fin = fin[fin > debut]
+  limite = if (length(fin)) min(fin) - 1L else length(lignes)
+  contenu = lignes[seq.int(debut + 1L, limite)]
+  if (!any(nzchar(trimws(contenu)))) stop("Connaissances vides : ", fichier)
+  titre = sub("^#\\s+", "", grep("^# ", lignes, value = TRUE)[1L])
+  list(titre = titre, contenu = contenu)
+}
+# Une seule boite par notion, avec les acquis des niveaux successifs.
+cles = tools::file_path_sans_ext(basename(fichiers))
+notions = unique(cles)
+blocs = lapply(notions, function(cle) {
+  indices = which(cles == cle)
+  extraits = lapply(fichiers[indices], extraire)
+  contenus = unlist(lapply(seq_along(indices), function(j) {
+    niveau_source = basename(dirname(dirname(fichiers[indices[j]])))
+    c(paste0("**", niveau_source, "**"), "", extraits[[j]]$contenu, "")
+  }), use.names = FALSE)
+  list(titre = extraits[[1L]]$titre, contenu = contenus)
+})
+echapper = function(x) {
+  for (ch in c("&", "%", "$", "#", "_", "{", "}"))
+    x = gsub(ch, paste0("\\", ch), x, fixed = TRUE)
+  x
+}
+```
+
+```{r page, results='asis'}
+if (params$orientation == "paysage") cat("```{=latex}\n\\begin{landscape}\n```\n\n")
+entete = system.file("modeles", "entete.R", package = "eduschool")
+if (!nzchar(entete)) entete = "inst/modeles/entete.R"
+source(entete, local = TRUE)
+libelles_domaines = c(
+  espace_et_geometrie = "Espace et géométrie",
+  nombres_et_calculs = "Nombres et calculs",
+  nombres_calcul_et_resolution_de_problemes = "Nombres, calcul et résolution de problèmes",
+  grandeurs_et_mesures = "Grandeurs et mesures",
+  organisation_et_gestion_de_donnees_et_probabilites = "Organisation et gestion de données et probabilités",
+  organisation_et_gestion_des_donnees_et_probabilites = "Organisation et gestion des données et probabilités",
+  proportionnalite = "Proportionnalité",
+  proportionnalite_et_fonctions = "Proportionnalité et fonctions",
+  pensee_informatique = "Pensée informatique",
+  initiation_a_la_pensee_informatique = "Initiation à la pensée informatique"
+)
+libelle_domaine = unname(libelles_domaines[params$domaine])
+if (is.na(libelle_domaine)) libelle_domaine = params$domaine
+.entete_edu(list(support = "revisions", theme = libelle_domaine, niveau = niveau), html = FALSE)
+cat("```{=latex}\n\\noindent\\textcolor{eduencre}{", echapper(params$description), "}\\par\\medskip\n\\begin{multicols}{", params$colonnes, "}\n```\n\n", sep = "")
+for (i in seq_along(blocs)) {
+  b = blocs[[i]]
+  couleur = c("edubleu", "eduturquoise", "educorail")[(i - 1L) %% 3L + 1L]
+  cat("```{=latex}\n\\begin{tcolorbox}[edubox,colframe=", couleur, ",title={", echapper(b$titre), "}]\n```\n\n", sep = "")
+  cat(paste(b$contenu, collapse = "\n"), "\n\n", sep = "")
+  cat("```{=latex}\n\\end{tcolorbox}\n```\n\n")
+}
+cat("```{=latex}\n\\end{multicols}\n```\n\n")
+if (params$orientation == "paysage") cat("```{=latex}\n\\end{landscape}\n```\n\n")
+```

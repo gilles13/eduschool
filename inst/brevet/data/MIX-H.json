@@ -1,0 +1,122 @@
+{
+  "famille": "MIX-H",
+  "exercices": [
+    {
+      "id": "MIX-H-001",
+      "donnees": {
+        "longueur": 30,
+        "largeur": 20,
+        "decoupe": 4,
+        "volume_min": 900,
+        "carton_max": 550
+      },
+      "resultats": {
+        "base_longueur": 22,
+        "base_largeur": 12,
+        "volume": 1056,
+        "carton": 536,
+        "conforme": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "base_longueur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "base_largeur",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "volume",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "carton",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-H-002",
+      "donnees": {
+        "longueur": 40,
+        "largeur": 25,
+        "decoupe": 5,
+        "volume_min": 2200,
+        "carton_max": 880
+      },
+      "resultats": {
+        "base_longueur": 30,
+        "base_largeur": 15,
+        "volume": 2250,
+        "carton": 900,
+        "conforme": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "base_longueur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "base_largeur",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "volume",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "carton",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-H-003",
+      "donnees": {
+        "longueur": 36,
+        "largeur": 24,
+        "decoupe": 4,
+        "volume_min": 1700,
+        "carton_max": 810
+      },
+      "resultats": {
+        "base_longueur": 28,
+        "base_largeur": 16,
+        "volume": 1792,
+        "carton": 800,
+        "conforme": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "base_longueur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "base_largeur",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "volume",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "carton",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

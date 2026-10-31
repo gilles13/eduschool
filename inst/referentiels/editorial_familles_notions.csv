@@ -87,7 +87,7 @@ grandeurs_mesures_conversions;Grandeurs, mesures et conversions;volumes;Volumes;
 grandeurs_mesures_conversions;Grandeurs, mesures et conversions;boule_sphere;Boule et sphère;3E;college
 figures_constructions;Figures et constructions;angles;Angles;5E;college
 transformations_vecteurs;Transformations et vecteurs;translations_vecteurs;Translations et vecteurs;3E;college
-geometrie_espace;Géométrie dans l’espace;geometrie_espace;Représentation de l’espace;5E;college
+geometrie_dans_espace;Géométrie dans l’espace;geometrie_espace;Représentation de l’espace;5E;college
 algorithmique;Algorithmique;algorithmique_programmation;Algorithmique et programmation;5E;college
 fonctions;Fonctions;fonctions_exponentielles;Fonction exponentielle;1G;lycee
 fonctions;Fonctions;fonction_logarithme;Fonction logarithme;TG;lycee
@@ -102,8 +102,8 @@ probabilites;Probabilités;denombrement;Combinatoire et dénombrement;TG;lycee
 probabilites;Probabilités;loi_binomiale;Succession d’épreuves indépendantes, schéma de Bernoulli;TG;lycee
 probabilites;Probabilités;loi_grands_nombres;Concentration, loi des grands nombres;TG;lycee
 transformations_vecteurs;Transformations et vecteurs;vecteurs_plan;Calcul vectoriel et produit scalaire;1G;lycee
-geometrie_espace;Géométrie dans l’espace;vecteurs_espace;Manipulation des vecteurs, des droites et des plans de l’espace;TG;lycee
-geometrie_espace;Géométrie dans l’espace;orthogonalite_espace;Orthogonalité et distances dans l’espace;TG;lycee
+geometrie_dans_espace;Géométrie dans l’espace;vecteurs_espace;Manipulation des vecteurs, des droites et des plans de l’espace;TG;lycee
+geometrie_dans_espace;Géométrie dans l’espace;orthogonalite_espace;Orthogonalité et distances dans l’espace;TG;lycee
 geometrie_analytique;Géométrie analytique;equations_droites_plans;Représentations paramétriques et équations cartésiennes;TG;lycee
 fonctions;Fonctions;polynomes_second_degre;Équations, fonctions polynômes du second degré;1G;lycee
 fonctions;Fonctions;variations_extremums;Variations et extrémums d’une fonction;2GT;lycee

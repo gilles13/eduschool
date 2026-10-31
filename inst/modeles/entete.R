@@ -1,6 +1,7 @@
 # Présentation commune aux quatre supports, sans dépendance LaTeX supplémentaire.
 .entete_edu = function(params, html) {
   divers = identical(params$support, "divers")
+  revisions = identical(params$support, "revisions")
   if (divers) {
     if (!is.character(params$titre) || length(params$titre) != 1L ||
         is.na(params$titre) || !nzchar(trimws(params$titre)))
@@ -8,6 +9,10 @@
     type = params$titre
     niveau = ""
     notion = ""
+  } else if (revisions) {
+    type = "Révisions"
+    niveau = params$niveau
+    notion = params$theme
   } else {
   supports = c(decouverte = "Découverte", synthese = "Synthèse",
                quiz = "Quiz")
@@ -25,7 +30,7 @@
       if (ch %in% names(substitutions)) substitutions[[ch]] else ch
     }, character(1L)), collapse = "")
   }
-  logo = system.file("figures", "logo-hexa.png", package = "eduschool")
+  logo = system.file("assets", "logo-hexa.png", package = "eduschool")
   # Le logo historique est facultatif : ne pas casser les distributions réduites.
   if (html) {
     echapper = function(x) {
@@ -35,8 +40,8 @@
     }
     cat('<header class="edu-entete"><div class="edu-identite">',
         '<strong class="edu-type">', echapper(type), '</strong><br>',
-        if (nzchar(niveau)) paste0('Niveau : ', echapper(niveau), '<br>') else '',
-        if (!divers) paste0('Notion : ', echapper(notion)) else '',
+        if (nzchar(niveau) && !revisions) paste0('Niveau : ', echapper(niveau), '<br>') else '',
+        if (revisions) paste0('Thème : ', echapper(notion), '<br>Niveau : ', echapper(niveau)) else if (!divers) paste0('Notion : ', echapper(notion)) else '',
         '</div>', sep = '')
     if (nzchar(logo))
       cat('<img class="edu-logo" alt="Logo eduschool" src="',
@@ -58,8 +63,8 @@
         '\\noindent\\begin{minipage}[t]{0.74\\textwidth}\n',
         '\\vspace{0pt}\n',
         '{\\large\\bfseries ', latex_edu(type), '}', strrep('\\', 2L), '\n',
-        if (nzchar(niveau)) paste0('Niveau : ', latex_edu(niveau), strrep('\\', 2L), '\n') else '',
-        if (!divers) paste0('Notion : ', latex_edu(notion), '\n') else '', sep = '')
+        if (nzchar(niveau) && !revisions) paste0('Niveau : ', latex_edu(niveau), strrep('\\', 2L), '\n') else '',
+        if (revisions) paste0('Thème : ', latex_edu(notion), strrep('\\', 2L), '\nNiveau : ', latex_edu(niveau), '\n') else if (!divers) paste0('Notion : ', latex_edu(notion), '\n') else '', sep = '')
     cat('\\end{minipage}%\n\\hfill\\begin{minipage}[t]{0.20\\textwidth}\n',
         '\\vspace{0pt}\n\\raggedleft\n')
     if (nzchar(logo)) cat('\\includegraphics[width=0.36\\linewidth]{',

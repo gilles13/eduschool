@@ -1,0 +1,122 @@
+{
+  "famille": "MIX-G",
+  "exercices": [
+    {
+      "id": "MIX-G-001",
+      "donnees": {
+        "juniors_licencies": 24,
+        "juniors_non_licencies": 16,
+        "seniors_licencies": 18,
+        "seniors_non_licencies": 42
+      },
+      "resultats": {
+        "total": 100,
+        "licencies": 42,
+        "proba_licencies": 0.42,
+        "proba_junior": 0.6,
+        "part_junior": 60.0,
+        "part_senior": 30.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "total",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "licencies",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "proba_licencies",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "proba_junior",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-G-002",
+      "donnees": {
+        "juniors_licencies": 30,
+        "juniors_non_licencies": 20,
+        "seniors_licencies": 24,
+        "seniors_non_licencies": 36
+      },
+      "resultats": {
+        "total": 110,
+        "licencies": 54,
+        "proba_licencies": 0.4909090909090909,
+        "proba_junior": 0.6,
+        "part_junior": 60.0,
+        "part_senior": 40.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "total",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "licencies",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "proba_licencies",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "proba_junior",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-G-003",
+      "donnees": {
+        "juniors_licencies": 36,
+        "juniors_non_licencies": 24,
+        "seniors_licencies": 20,
+        "seniors_non_licencies": 30
+      },
+      "resultats": {
+        "total": 110,
+        "licencies": 56,
+        "proba_licencies": 0.509090909090909,
+        "proba_junior": 0.6,
+        "part_junior": 60.0,
+        "part_senior": 40.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "total",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "licencies",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "proba_licencies",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "proba_junior",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

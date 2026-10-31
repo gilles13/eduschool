@@ -1,0 +1,131 @@
+{
+  "famille": "TRIGO-F",
+  "exercices": [
+    {
+      "id": "TRIGO-F-001",
+      "donnees": {
+        "a": 6000,
+        "b": 300,
+        "unite": "m",
+        "figure_AB": 6000,
+        "figure_BC": 300,
+        "figure_AC": 6007.495318350236,
+        "figure_etiquette_AB": "6000 m",
+        "figure_etiquette_BC": "300 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 2.9,
+        "trajectoire": 6007,
+        "pente": 5.0,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "trajectoire",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pente",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-F-002",
+      "donnees": {
+        "a": 8000,
+        "b": 560,
+        "unite": "m",
+        "figure_AB": 8000,
+        "figure_BC": 560,
+        "figure_AC": 8019.576048644965,
+        "figure_etiquette_AB": "8000 m",
+        "figure_etiquette_BC": "560 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 4.0,
+        "trajectoire": 8020,
+        "pente": 7.0,
+        "comparaison": "non"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "trajectoire",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pente",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-F-003",
+      "donnees": {
+        "a": 9000,
+        "b": 450,
+        "unite": "m",
+        "figure_AB": 9000,
+        "figure_BC": 450,
+        "figure_AC": 9011.242977525353,
+        "figure_etiquette_AB": "9000 m",
+        "figure_etiquette_BC": "450 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 2.9,
+        "trajectoire": 9011,
+        "pente": 5.0,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "trajectoire",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pente",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

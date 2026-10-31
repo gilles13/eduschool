@@ -1,0 +1,131 @@
+{
+  "famille": "MIX-J",
+  "exercices": [
+    {
+      "id": "MIX-J-001",
+      "donnees": {
+        "a": 1200,
+        "b": 500,
+        "unite": "m",
+        "figure_AB": 1200,
+        "figure_BC": 500,
+        "figure_AC": 1300.0,
+        "figure_etiquette_AB": "1200 m",
+        "figure_etiquette_BC": "500 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 23,
+        "cable": 1300,
+        "duree": 260,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "cable",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "duree",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-J-002",
+      "donnees": {
+        "a": 900,
+        "b": 400,
+        "unite": "m",
+        "figure_AB": 900,
+        "figure_BC": 400,
+        "figure_AC": 984.8857801796105,
+        "figure_etiquette_AB": "900 m",
+        "figure_etiquette_BC": "400 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 24,
+        "cable": 985,
+        "duree": 197,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "cable",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "duree",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-J-003",
+      "donnees": {
+        "a": 1500,
+        "b": 800,
+        "unite": "m",
+        "figure_AB": 1500,
+        "figure_BC": 800,
+        "figure_AC": 1700.0,
+        "figure_etiquette_AB": "1500 m",
+        "figure_etiquette_BC": "800 m",
+        "figure_etiquette_AC": "?"
+      },
+      "resultats": {
+        "angle": 28,
+        "cable": 1700,
+        "duree": 340,
+        "comparaison": "non"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "cable",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "duree",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

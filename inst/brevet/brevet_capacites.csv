@@ -67,3 +67,21 @@ PROP-B-003;Pourcentages | Evolutions successives | Taux global
 ALGO-B-001;Boucles conditionnelles | Variables | Algorithmique
 ALGO-B-002;Boucles conditionnelles | Variables | Algorithmique
 ALGO-B-003;Boucles conditionnelles | Variables | Algorithmique
+MIX-E-001;Statistiques | Moyenne | Médiane | Étendue | Comparaison de séries | Justification
+MIX-E-002;Statistiques | Moyenne | Médiane | Étendue | Comparaison de séries | Justification
+MIX-E-003;Statistiques | Moyenne | Médiane | Étendue | Comparaison de séries | Justification
+MIX-F-001;Algorithmique | Boucles | Géométrie plane | Calcul littéral | Vérification
+MIX-F-002;Algorithmique | Boucles | Géométrie plane | Calcul littéral | Vérification
+MIX-F-003;Algorithmique | Boucles | Géométrie plane | Calcul littéral | Vérification
+MIX-G-001;Probabilités | Tableau à double entrée | Proportions | Comparaison
+MIX-G-002;Probabilités | Tableau à double entrée | Proportions | Comparaison
+MIX-G-003;Probabilités | Tableau à double entrée | Proportions | Comparaison
+MIX-H-001;Patron | Volume | Aire | Géométrie dans l’espace | Vérification de contraintes
+MIX-H-002;Patron | Volume | Aire | Géométrie dans l’espace | Vérification de contraintes
+MIX-H-003;Patron | Volume | Aire | Géométrie dans l’espace | Vérification de contraintes
+MIX-I-001;Lecture de réseau | Comparaison de trajets | Vitesse | Pourcentages | Justification
+MIX-I-002;Lecture de réseau | Comparaison de trajets | Vitesse | Pourcentages | Justification
+MIX-I-003;Lecture de réseau | Comparaison de trajets | Vitesse | Pourcentages | Justification
+AUTO-A-001;Fractions | Nombres relatifs | Pourcentages | Calcul littéral | Puissances | Probabilités
+AUTO-A-002;Fractions | Nombres relatifs | Pourcentages | Calcul littéral | Puissances | Probabilités
+AUTO-A-003;Fractions | Nombres relatifs | Pourcentages | Calcul littéral | Puissances | Probabilités

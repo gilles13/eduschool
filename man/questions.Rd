@@ -10,6 +10,8 @@ questions(notion, niveau = "", .membre = FALSE)
 \item{notion}{Identifiant d'une notion ou d'une famille.}
 
 \item{niveau}{Niveau scolaire facultatif pour filtrer les notions d'une famille.}
+
+\item{.membre}{Indicateur interne de chargement d'une notion membre.}
 }
 \description{
 Lire les questions d'une notion pilote

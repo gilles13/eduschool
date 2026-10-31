@@ -1,0 +1,131 @@
+{
+  "famille": "TRIGO-E",
+  "exercices": [
+    {
+      "id": "TRIGO-E-001",
+      "donnees": {
+        "a": 300,
+        "b": 400,
+        "unite": "m",
+        "figure_AB": 300,
+        "figure_BC": 264.5751311064591,
+        "figure_AC": 400,
+        "figure_etiquette_AB": "300 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "400 m"
+      },
+      "resultats": {
+        "angle": 41,
+        "denivele": 264.6,
+        "pente": 88.2,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "denivele",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pente",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-E-002",
+      "donnees": {
+        "a": 480,
+        "b": 600,
+        "unite": "m",
+        "figure_AB": 480,
+        "figure_BC": 360.0,
+        "figure_AC": 600,
+        "figure_etiquette_AB": "480 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "600 m"
+      },
+      "resultats": {
+        "angle": 37,
+        "denivele": 360.0,
+        "pente": 75.0,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "denivele",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pente",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "TRIGO-E-003",
+      "donnees": {
+        "a": 500,
+        "b": 650,
+        "unite": "m",
+        "figure_AB": 500,
+        "figure_BC": 415.33119314590374,
+        "figure_AC": 650,
+        "figure_etiquette_AB": "500 m",
+        "figure_etiquette_BC": "?",
+        "figure_etiquette_AC": "650 m"
+      },
+      "resultats": {
+        "angle": 40,
+        "denivele": 415.3,
+        "pente": 83.1,
+        "comparaison": "oui"
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "angle",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "denivele",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "pente",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "comparaison",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

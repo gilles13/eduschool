@@ -1,0 +1,155 @@
+{
+  "famille": "MIX-E",
+  "exercices": [
+    {
+      "id": "MIX-E-001",
+      "donnees": {
+        "cible": 20,
+        "machine_a": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "machine_b": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      "resultats": {
+        "moyenne_a": 20.0,
+        "moyenne_b": 20.0,
+        "mediane_a": 20,
+        "mediane_b": 20,
+        "etendue_a": 4,
+        "etendue_b": 20
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "moyenne_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "moyenne_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "mediane_a",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "mediane_b",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-E-002",
+      "donnees": {
+        "cible": 30,
+        "machine_a": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "machine_b": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      "resultats": {
+        "moyenne_a": 30.0,
+        "moyenne_b": 30.0,
+        "mediane_a": 30,
+        "mediane_b": 30,
+        "etendue_a": 4,
+        "etendue_b": 20
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "moyenne_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "moyenne_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "mediane_a",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "mediane_b",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-E-003",
+      "donnees": {
+        "cible": 40,
+        "machine_a": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "machine_b": [
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      "resultats": {
+        "moyenne_a": 40.0,
+        "moyenne_b": 40.0,
+        "mediane_a": 40,
+        "mediane_b": 40,
+        "etendue_a": 4,
+        "etendue_b": 20
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "moyenne_a",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "moyenne_b",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "mediane_a",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "mediane_b",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}

@@ -35,7 +35,7 @@ produire_cheatsheet = function(fichier = NULL, ouvrir = TRUE) {
   html = paste(readLines(modele, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
   for (nom in c("BOUSSOLE", "HEXA")) {
     element = c(BOUSSOLE = "boussole_5.png", HEXA = "logo-hexa.png")[[nom]]
-    image = system.file("figures", element, package = "eduschool")
+    image = system.file("assets", element, package = "eduschool")
     if (!nzchar(image)) stop("Illustration manquante : ", element, call. = FALSE)
     contenu = readBin(image, what = "raw", n = file.info(image)$size)
     html = gsub(paste0("{{", nom, "}}"),

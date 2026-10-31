@@ -89,6 +89,7 @@ notions = function() {
 #' Lire les questions d'une notion pilote
 #' @param notion Identifiant d'une notion ou d'une famille.
 #' @param niveau Niveau scolaire facultatif pour filtrer les notions d'une famille.
+#' @param .membre Indicateur interne de chargement d'une notion membre.
 #' @export
 questions = function(notion, niveau = "", .membre = FALSE) {
   stopifnot(length(notion) == 1L, is.character(notion),
@@ -126,9 +127,14 @@ questions = function(notion, niveau = "", .membre = FALSE) {
 
 .remplacer_parametres_edu = function(x, valeurs) {
   if (is.character(x)) {
-    for (nom in names(valeurs))
-      x = gsub(paste0("[[", nom, "]]"), as.character(valeurs[[nom]]),
-               x, fixed = TRUE)
+    for (nom in names(valeurs)) {
+      marqueur = paste0("[[", nom, "]]")
+      if (!any(grepl(marqueur, x, fixed = TRUE))) next
+      valeur = valeurs[[nom]]
+      if (length(valeur) != 1L || is.list(valeur) || is.na(valeur))
+        stop("Parametre non scalaire pour substitution : ", nom)
+      x = gsub(marqueur, as.character(valeur), x, fixed = TRUE)
+    }
     return(x)
   }
   if (is.list(x)) {
@@ -428,9 +434,42 @@ produire = function(notion, support = "tous", dossier = NULL, format = "html",
                     humour_ratio = 0.2, seed = NULL) {
   stopifnot(length(notion) == 1L, is.character(notion),
             grepl("^[a-z][a-z0-9_]*$", notion),
-            length(support) == 1L, support %in% c("decouverte", "synthese", "quiz", "tous"),
+            length(support) == 1L, support %in% c("decouverte", "synthese", "quiz", "revisions", "tous"),
             format %in% c("html", "pdf"),
             length(variantes) == 1L, !is.na(variantes), variantes >= 1L)
+  if (identical(support, "revisions")) {
+    if (!niveau %in% c("6E", "5E", "4E", "3E"))
+      stop("Le support revisions exige niveau = '6E', '5E', '4E' ou '3E'.")
+    if (!identical(format, "pdf") && !identical(format, "html"))
+      stop("Format invalide.")
+    if (!identical(format, "pdf"))
+      message("Le support revisions est genere au format PDF.")
+    temporaire = is.null(dossier)
+    if (temporaire) dossier = tempdir()
+    if (!dir.exists(dossier)) dir.create(dossier, recursive = TRUE)
+    if (!dir.exists(dossier)) stop("Dossier de sortie inaccessible : ", dossier)
+    dossier = normalizePath(dossier, mustWork = TRUE)
+    fichier = rmarkdown::render(
+      input = .chemin_edu("modeles", "revision.Rmd"),
+      output_file = if (temporaire) basename(tempfile(
+        pattern = paste0("revisions-", niveau, "-", notion, "-"),
+        tmpdir = dossier, fileext = ".pdf"))
+      else paste0("revisions-", niveau, "-", notion, ".pdf"),
+      output_dir = dossier,
+      params = list(niveau = niveau, domaine = notion,
+                    orientation = "paysage", colonnes = 2L,
+                    description = "Connaissances indispensables", dossier = ""),
+      envir = new.env(parent = globalenv()), quiet = TRUE)
+    fichier = normalizePath(fichier, mustWork = TRUE)
+    if (isTRUE(ouvrir)) {
+      if (identical(Sys.info()[["sysname"]], "Linux"))
+        system2("xdg-open", shQuote(fichier), wait = FALSE)
+      else utils::browseURL(fichier)
+    }
+    message("Fichier genere : ", fichier,
+            if (temporaire) " (temporaire)" else "")
+    return(invisible(fichier))
+  }
   if (!is.null(n)) stopifnot(length(n) == 1L, is.numeric(n),
                              is.finite(n), n >= 1L, n == as.integer(n))
   if (!is.null(tirages)) stopifnot(length(tirages) == 1L, is.numeric(tirages),

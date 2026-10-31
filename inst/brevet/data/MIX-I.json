@@ -1,0 +1,221 @@
+{
+  "famille": "MIX-I",
+  "exercices": [
+    {
+      "id": "MIX-I-001",
+      "donnees": {
+        "distances": [
+          3,
+          4,
+          5,
+          6,
+          5
+        ],
+        "vitesse": 12,
+        "batterie": 80,
+        "consommation": 1,
+        "sommets": [
+          {
+            "nom": "A",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "nom": "B",
+            "x": 0,
+            "y": 3
+          },
+          {
+            "nom": "C",
+            "x": 4,
+            "y": 0
+          },
+          {
+            "nom": "D",
+            "x": 4,
+            "y": 6
+          }
+        ]
+      },
+      "resultats": {
+        "longueurs": [
+          8,
+          10,
+          14,
+          14
+        ],
+        "distance_min": 8,
+        "duree_minutes": 40.0,
+        "batterie_aller_retour": 16,
+        "batterie_restante": 64,
+        "retour_possible": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueurs",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "distance_min",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "duree_minutes",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "retour_possible",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "MIX-I-002",
+      "donnees": {
+        "distances": [
+          6,
+          8,
+          16,
+          10,
+          10
+        ],
+        "vitesse": 15,
+        "batterie": 85,
+        "consommation": 1,
+        "sommets": [
+          {
+            "nom": "A",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "nom": "B",
+            "x": 6,
+            "y": 0
+          },
+          {
+            "nom": "C",
+            "x": 0,
+            "y": 8
+          },
+          {
+            "nom": "D",
+            "x": 6,
+            "y": 16
+          }
+        ]
+      },
+      "resultats": {
+        "longueurs": [
+          22,
+          18,
+          26,
+          34
+        ],
+        "distance_min": 18,
+        "duree_minutes": 72.0,
+        "batterie_aller_retour": 36,
+        "batterie_restante": 49,
+        "retour_possible": true
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueurs",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "distance_min",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "duree_minutes",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "retour_possible",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "MIX-I-003",
+      "donnees": {
+        "distances": [
+          12,
+          5,
+          10,
+          13,
+          13
+        ],
+        "vitesse": 18,
+        "batterie": 30,
+        "consommation": 1,
+        "sommets": [
+          {
+            "nom": "A",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "nom": "B",
+            "x": 0,
+            "y": 12
+          },
+          {
+            "nom": "C",
+            "x": 5,
+            "y": 0
+          },
+          {
+            "nom": "D",
+            "x": 10,
+            "y": 12
+          }
+        ]
+      },
+      "resultats": {
+        "longueurs": [
+          22,
+          18,
+          38,
+          28
+        ],
+        "distance_min": 18,
+        "duree_minutes": 60.0,
+        "batterie_aller_retour": 36,
+        "batterie_restante": -6,
+        "retour_possible": false
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueurs",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "distance_min",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "duree_minutes",
+          "points": 1
+        },
+        {
+          "numero": 4,
+          "resultat": "retour_possible",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

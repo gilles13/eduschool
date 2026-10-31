@@ -4,14 +4,16 @@
 # remotes::install_github(repo = "https://github.com/gilles13/eduschool/", force = TRUE)
 # library("eduschool")
 # ls("package:eduschool", pattern = "fiche|exercice|quiz")
+# source("~/Documents/wip/eduschool/fun.R", local = TRUE)
 
-source("~/Documents/wip/eduschool/fun.R", local = TRUE)
 setwd("~/repogit/eduschool/")
 
 devtools::load_all()
 devtools::document()
 devtools::test()
 devtools::check()
+
+# testthat::set_max_fails(Inf)
 
 # tools::showNonASCIIfile("R/mathematiques.R")
 # source("~/repogit/eduschool/tools/atelier_double_distributivite.R")
@@ -27,7 +29,6 @@ pkgdown::build_site()
 pkgdown::preview_site()
 
 pkgdown::build_article("fiche-mathematiques-6e")
-pkgdown::build_article("fiches-decouvertes")
 pkgdown::build_article("zero-est-ce-vraiment-rien")
 
 # FICHES DECOUVERTES

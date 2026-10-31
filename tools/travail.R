@@ -1,7 +1,11 @@
 # eduschool
 
-library("eduschool")
+######################################################################
+# BASE
+######################################################################
 
+library("dplyr")
+library("eduschool")
 eduschool()
 
 # CHEATSHEET 
@@ -19,17 +23,18 @@ voies()
 maths_programmes()
 maths_programmes("3E")
 maths_parcours()
-maths_parcours("parcours.png", ouvrir = TRUE)
 maths_parcours("parcours.pdf", ouvrir = TRUE)
 
-# taf = suivi_du_taf_restant()
-
-# # FORMES DES QUESTIONS & VOCABULAIRE
-# formes_questions()  |> 
-#     tibble::as_tibble() |> 
-#     print(n = 50)
+# FORMES DES QUESTIONS & VOCABULAIRE
+formes_questions()  |> 
+    tibble::as_tibble() |> 
+    print(n = 50)
 
 # vocabulaire()
+
+######################################################################
+# GRAPHIQUES
+######################################################################
 
 # GRAPHIQUES
 graphique("sphere", pas = 24, azimut = 15, centre = TRUE, segment = "rayon")
@@ -107,6 +112,7 @@ produire("calcul_avec_puissances")
 
 # FAMILLE ENSEMBLES ET INTERVALLES
 produire("ensembles_et_intervalles")
+produire("ensembles_et_intervalles", support = "synthese")
 
 produire("ensembles_nombres", support = "decouverte")
 produire("ensembles_nombres", support = "synthese", format = "pdf")
@@ -242,11 +248,6 @@ produire("aires", "synthese")
 produire("aires", "synthese", format = "pdf")
 produire("aires", "quiz", n = 15)
 
-produire("perimetres", "decouverte")
-produire("perimetres", "synthese")
-produire("perimetres", "synthese", format = "pdf")
-produire("perimetres", "quiz", n = 15)
-
 produire("volumes", "decouverte")
 produire("volumes", "synthese")
 produire("volumes", "synthese", format = "pdf")
@@ -322,6 +323,15 @@ produire_brevet("MIX-A-001")
 produire_brevet("MIX-B-001")
 produire_brevet("MIX-C-001")
 produire_brevet("MIX-D-001")
+produire_brevet("MIX-E-001")
+produire_brevet("MIX-F-001")
+produire_brevet("MIX-G-001")
+produire_brevet("MIX-H-001")
+produire_brevet("MIX-I-001")
+produire_brevet("MIX-I-002")
+produire_brevet("MIX-I-003")
+produire_brevet("MIX-J-001")
+produire_brevet("MIX-K-001")
 
 
 source("inst/brevet/controles/audit.R")
@@ -333,10 +343,73 @@ produire_brevet(c("GEO-A-001", "STAT-B-001",
                 format = "pdf")
 
 
+produire_brevet("AUTO-A-001")
+produire_brevet("AUTO-A-002")
+produire_brevet("AUTO-A-003")
+
+produire_brevet(
+  c("AUTO-A-001", "MIX-I-001", "MIX-A-002", "MIX-E-003"),
+#   mode = "sujet_corrige",
+  mode = "sujet",
+  ouvrir = TRUE
+)
+
+fichiers = list.files("inst/brevet/data", pattern = "\\.json$", full.names = TRUE)
+baremes = lapply(fichiers, \(f) {
+  x = jsonlite::fromJSON(f, simplifyVector = FALSE)
+  dplyr::bind_rows(lapply(x$exercices, \(e) {
+    if (startsWith(e$id, "AUTO-")) return(NULL)
+    tibble::tibble(
+      exercice = e$id,
+      question = vapply(e$questions, \(q) q$numero, integer(1)),
+      points = vapply(e$questions, \(q) q$points, numeric(1))
+    )
+  }))
+}) |>
+  dplyr::bind_rows() |>
+  dplyr::group_by(exercice) |>
+  dplyr::mutate(total = sum(points)) |>
+  dplyr::ungroup() |>
+  dplyr::arrange(exercice, question)
+
+# print(baremes, n = Inf)
+
+baremes |>
+  dplyr::distinct(exercice, total) |>
+  print(n = 100)
 
 
+######################################################################
+# REVISIONS
+######################################################################
 
+produire(
+    notion = "espace_et_geometrie",
+    dossier = "~/",
+    support = "revisions",
+    niveau = "3E")
 
+# system2("zathura", "~/revisions-3E-espace_et_geometrie.pdf")
 
+######################################################################
+# AUDIT
+######################################################################
 
+charger_audit = function(dossier = "documentation/data") {
+  fichiers = list.files(dossier, pattern = "\\.csv$", full.names = TRUE)
+  donnees = lapply(fichiers, \(f) read.csv(f, sep = ";", fileEncoding = "UTF-8", check.names = FALSE))
+  names(donnees) = tools::file_path_sans_ext(basename(fichiers))
+  donnees
+}
+
+audit = charger_audit()
+names(audit)
+lapply(audit, dim)
+lapply(audit, names)
+
+attendus = audit$inventaire_officiel_detaille_C3_C4_eduschool
+
+######################################################################
+# TODO
+######################################################################
 

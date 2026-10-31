@@ -1,0 +1,113 @@
+{
+  "famille": "MIX-F",
+  "exercices": [
+    {
+      "id": "MIX-F-001",
+      "donnees": {
+        "cote": 3,
+        "segment": 4,
+        "longueur_cible": 64
+      },
+      "resultats": {
+        "longueur": 64,
+        "expression_coefficient": 16,
+        "expression_constante": 16,
+        "solution": 3.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "expression_coefficient",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "expression_constante",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "solution",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-F-002",
+      "donnees": {
+        "cote": 5,
+        "segment": 6,
+        "longueur_cible": 104
+      },
+      "resultats": {
+        "longueur": 104,
+        "expression_coefficient": 16,
+        "expression_constante": 24,
+        "solution": 5.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "expression_coefficient",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "expression_constante",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "solution",
+          "points": 1.5
+        }
+      ]
+    },
+    {
+      "id": "MIX-F-003",
+      "donnees": {
+        "cote": 7,
+        "segment": 8,
+        "longueur_cible": 144
+      },
+      "resultats": {
+        "longueur": 144,
+        "expression_coefficient": 16,
+        "expression_constante": 32,
+        "solution": 7.0
+      },
+      "questions": [
+        {
+          "numero": 1,
+          "resultat": "longueur",
+          "points": 1
+        },
+        {
+          "numero": 2,
+          "resultat": "expression_coefficient",
+          "points": 1
+        },
+        {
+          "numero": 3,
+          "resultat": "expression_constante",
+          "points": 1.5
+        },
+        {
+          "numero": 4,
+          "resultat": "solution",
+          "points": 1.5
+        }
+      ]
+    }
+  ]
+}
