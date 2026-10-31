@@ -17,3 +17,7 @@ questions(notion, niveau = "", .membre = FALSE)
 - niveau:
 
   Niveau scolaire facultatif pour filtrer les notions d'une famille.
+
+- .membre:
+
+  Indicateur interne de chargement d'une notion membre.

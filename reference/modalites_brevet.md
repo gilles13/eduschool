@@ -1,6 +1,6 @@
 # Identifiants des exercices du brevet
 
-Liste les exercices du brevet disponibles dans les donnees embarquees.
+Liste les exercices disponibles dans les donnees embarquees.
 
 ## Usage
 
@@ -10,4 +10,4 @@ modalites_brevet()
 
 ## Value
 
-Un data.frame avec les colonnes famille et id.
+Un data.frame avec la famille et l'identifiant de chaque exercice.

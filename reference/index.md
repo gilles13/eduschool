@@ -12,10 +12,6 @@
   : Formes de questions
 - [`graphique()`](https://gilles13.github.io/eduschool/reference/graphique.md)
   : Dessiner un graphique pedagogique reutilisable
-- [`graphique_cylindre_demi_sphere()`](https://gilles13.github.io/eduschool/reference/graphique_cylindre_demi_sphere.md)
-  : Cylindre surmonte d'une demi-sphere
-- [`graphique_demi_sphere()`](https://gilles13.github.io/eduschool/reference/graphique_demi_sphere.md)
-  : Demi-sphere en perspective
 - [`illustrer_question()`](https://gilles13.github.io/eduschool/reference/illustrer_question.md)
   : Dessiner une illustration de question
 - [`maths_parcours()`](https://gilles13.github.io/eduschool/reference/maths_parcours.md)
